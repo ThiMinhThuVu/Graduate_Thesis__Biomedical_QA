@@ -1,19 +1,14 @@
-def load_prompt(prompt_type="search_keyword", question=None, dataset="medhop", type_q='compositional', context=None):
+def load_prompt_gen_sub(is_seq=False, question=None, dataset="medhop", type_q='compositional', context=None):
     if question:
-        if prompt_type == "search_keyword":
-            messages = _load_search_keyword_prompt(question, dataset, type_q)
-        elif prompt_type == "subquestion":
+        if is_seq:
             messages = _load_subquestion_prompt(question, dataset, type_q)
-        elif prompt_type == "no_context":
-            messages = _load_no_context_prompt(question)
-        elif prompt_type == "long_answer" and context:
-            messages = _load_long_answer_prompt(question, context)
-        elif prompt_type == "short_answer" and context:
-            messages = _load_short_answer_prompt(question, context)
         else:
-            raise ValueError(f"Unknown prompt type: {prompt_type}")
-    else:
-        raise ValueError("Missing question input for prompt generation.")
+            messages = _load_search_keyword_prompt(question, dataset, type_q)            
+      
+    return messages
+
+def load_prompt_gen_ans():
+    messages = []
     return messages
 
 def _load_search_keyword_prompt(question, dataset='medhop', type_q='compositional'):
