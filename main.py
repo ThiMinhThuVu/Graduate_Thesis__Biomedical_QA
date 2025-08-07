@@ -234,7 +234,7 @@ if __name__ == "__main__":
             preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":
-        raw_data_file = "data/wiki/train/train_compositional_100q.json"
+        # raw_data_file = "data/wiki/train/train_compositional_100q.json"
         raw_data = load_json(raw_data_file)
         
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):

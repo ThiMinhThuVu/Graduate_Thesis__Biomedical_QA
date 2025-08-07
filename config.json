@@ -145,7 +145,7 @@
     "wiki": {
         "chrunk_mapping_file": "",
         "raw_data_file": {
-            "b1": "data/wiki/test.json"
+            "b1": "data/wiki/train/train_comparison_100q.json"
         },
         "R1": {
             "dataset": "wiki_", 
