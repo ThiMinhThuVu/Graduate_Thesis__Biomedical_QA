@@ -3,4 +3,17 @@ wiki_results
 
 src/api_key.py
 
+# Cache files
 data/wikipedia_cache.pkl
+*.pkl
+*.cache
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large data files
+*.h5
+*.hdf5
+*.parquet
