@@ -2,7 +2,7 @@ from src.prompt import *
 from src.gpt_request import *
 import json
 
-def generate_answer(question, key_entities, relevant_info, dataset="medhop", model="o3-mini"):    
+def generate_answer(question, key_entities, relevant_info, dataset=None, model="o3-mini"):    
     prompt = load_prompt_gen_ans(question, key_entities, relevant_info, dataset=dataset)
     if dataset in ["cwq", "wiki"]:
         messages = [
@@ -46,8 +46,8 @@ def generate_answer(question, key_entities, relevant_info, dataset="medhop", mod
         "short_answer": short_answer
     }
 
-def gen_ans_compare_wiki(question, context, dataset='wiki', model = "o3-mini"):
-    prompt = prompt_gen_answer_wiki_step_3b_comparison(question, context)
+def generate_combine_parallel_answers(question, context, dataset='wiki', model="o3-mini"):
+    prompt = prompt_gen_combine_parallel_answers(question, context)
         
     messages = [
         {"role": "system", "content": "You are an expert in general knowledge. Your task is to provide accurate answers based on the provided information. Please only output the choice (without additional explanations)"},

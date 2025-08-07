@@ -326,8 +326,8 @@ def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
         "wiki_crawl": os.path.join(dirs["retrieval"], f"step_2_crawl_wiki_{sample_id}.json"),
         "paragraphs": os.path.join(dirs["retrieval"], f"step_2_paragraphs_{sample_id}.json"),
         "ner": os.path.join(dirs["ner"], f"{run}_step_3_ner_{sample_id}.json"),
-        "final_answer": os.path.join(dirs["results"], f"{run}_step_3b_ans_{sample_id}.json"),
-        "all_answers": os.path.join(dirs["all_ans"], f"{run}_step_3b_all_ans_{sample_id}.json")
+        "qi_answer": os.path.join(dirs["results"], f"{run}_step_3b_ans_{sample_id}.json"),
+        "final_answer": os.path.join(dirs["all_ans"], f"{run}_step_3b_all_ans_{sample_id}.json")
     }
     return paths
 

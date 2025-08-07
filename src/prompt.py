@@ -1,4 +1,4 @@
-def load_prompt_gen_sub(question=None, is_seq=False, dataset="medhop", type_q='compositional', context=None):
+def load_prompt_gen_sub(question=None, is_seq=False, dataset=None, type_q=None, context=None):
     if question:
         if is_seq:
             messages = _load_subquestion_prompt(question, dataset, type_q)
@@ -7,7 +7,7 @@ def load_prompt_gen_sub(question=None, is_seq=False, dataset="medhop", type_q='c
       
     return messages
 
-def load_prompt_gen_ans(question, key_entities, relevant_info, dataset='medhop'):
+def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None):
     if dataset == "medhop":
         prompt = prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info)
     elif dataset == "bioasq":
@@ -17,9 +17,9 @@ def load_prompt_gen_ans(question, key_entities, relevant_info, dataset='medhop')
     elif dataset == "wiki":
         prompt = prompt_gen_answer_wiki_step_3b(question, key_entities, relevant_info)
 
-    return messages
+    return prompt
 
-def _load_search_keyword_prompt(question, dataset='medhop', type_q='compositional'):
+def _load_search_keyword_prompt(question, dataset=None, type_q=None):
     if dataset == 'medhop':
         messages = [
             {
@@ -512,7 +512,7 @@ def _load_search_keyword_prompt(question, dataset='medhop', type_q='compositiona
 
     return messages
 
-def _load_subquestion_prompt(question, dataset='medhop', type_q='compositional'):
+def _load_subquestion_prompt(question, dataset=None, type_q=None):
     if dataset == 'medhop':
         messages = [
             {
@@ -1545,7 +1545,7 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context):
 
     return prompt
 
-def prompt_gen_answer_wiki_step_3b_comparison(question, key_entities, context):
+def prompt_gen_combine_parallel_answers(question, context):
     prompt = f"""Question: {question}
         Instructions:
         1. Analyze the question and the provided information to determine the answer.
@@ -1564,7 +1564,6 @@ def prompt_gen_answer_wiki_step_3b_comparison(question, key_entities, context):
         3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
 
         Information:
-        Key entities: {key_entities}
         Context: {context}
 
         Response (strict JSON):

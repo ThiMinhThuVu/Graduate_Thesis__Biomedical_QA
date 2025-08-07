@@ -4,7 +4,7 @@
         "Question": "Which film came out first, The Love Route or Engal Aasan?",
         "answer": "The Love Route",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "The Love Route",
@@ -108,7 +108,7 @@
         "Question": "Are Matraville Sports High School and Wabash High School both located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Wabash High School",
@@ -236,7 +236,7 @@
         "Question": "Are Alison Skipper and Diane Gilliam Fisher from the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Diane Gilliam Fisher",
@@ -374,7 +374,7 @@
         "Question": "Do the movies Bloody Birthday and The Beckoning Silence, originate from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "The Beckoning Silence",
@@ -471,7 +471,7 @@
         "Question": "Are both businesses, Vakıfbank and Infopro Sdn Bhd, located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "VakıfBank",
@@ -603,7 +603,7 @@
         "Question": "Does Mukasa Mbidde have the same nationality as Erich Maas?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Mukasa Mbidde",
@@ -711,7 +711,7 @@
         "Question": "Does Ted Swinford have the same nationality as Nirmala Sheoran?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Ted Swinford",
@@ -828,7 +828,7 @@
         "Question": "Which film was released more recently, Die schöne Lurette or Sabhash?",
         "answer": "Sabhash",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Sabhash",
@@ -928,7 +928,7 @@
         "Question": "Do Rhescuporis Ii and Mcallister Hull share the same nationality?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Rhescuporis II",
@@ -1090,7 +1090,7 @@
         "Question": "Are both Tengboche and Estarm, Kerman located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Estarm, Kerman",
@@ -1201,7 +1201,7 @@
         "Question": "Are Arcata–Eureka Airport and Lake Charles Regional Airport both located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Arcata–Eureka Airport",
@@ -1329,7 +1329,7 @@
         "Question": "Are Malian, Hamadan and Chahar Taq, Markazi located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Malian, Hamadan",
@@ -1430,7 +1430,7 @@
         "Question": "Are Samalá River and Itter (Eder) located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Samalá River",
@@ -1543,7 +1543,7 @@
         "Question": "Did the movies Pony Express (Film) and The Da Vinci Code (Film), originate from the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Pony Express (film)",
@@ -1668,7 +1668,7 @@
         "Question": "Are Sam Earle and Felix Luckeneder from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Sam Earle",
@@ -1771,7 +1771,7 @@
         "Question": "Are both Lesser Slave Lake and Medeweger See located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Lesser Slave Lake",
@@ -1882,7 +1882,7 @@
         "Question": "Are Alsino And The Condor and 1922 (2017 Film) both from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Alsino and the Condor",
@@ -2009,7 +2009,7 @@
         "Question": "Are the bands Cinematic Sunrise and Kingston Falls, from the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Cinematic Sunrise",
@@ -2118,7 +2118,7 @@
         "Question": "Are the movies Carnival Of Souls and Uvanga, from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Carnival of Souls",
@@ -2229,7 +2229,7 @@
         "Question": "Are J. Lee and Pete Carril from the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "J. Lee",
@@ -2354,7 +2354,7 @@
         "Question": "Are St. Mary High School (Rutherford, New Jersey) and Mother Teresa High School both located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Mother Teresa High School",
@@ -2459,7 +2459,7 @@
         "Question": "Are Takamatsu Airport and Freehold Airport located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Freehold Airport",
@@ -2559,7 +2559,7 @@
         "Question": "Did John Agoglia and John E. Toews have the same nationality?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "John Agoglia",
@@ -2692,7 +2692,7 @@
         "Question": "Are both buildings, Santa María De Santa Cruz De La Serós and Newcastle Cruise Terminal, located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Santa María de Santa Cruz de la Serós",
@@ -2791,7 +2791,7 @@
         "Question": "Are both schools, Salt Brook Academy and Model Technical Higher Secondary Schools, located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Salt Brook Academy",
@@ -2905,7 +2905,7 @@
         "Question": "Are Belcher Channel and Glunze located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Glunze",
@@ -3005,7 +3005,7 @@
         "Question": "Are both Chapan-E Olya and Cwrt Y Gollen located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Chapan-e Olya",
@@ -3106,7 +3106,7 @@
         "Question": "Do the movies Bedtime With Rosie and Timecode (2000 Film), originate from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Bedtime with Rosie",
@@ -3202,7 +3202,7 @@
         "Question": "Do Mireille Delunsch and Richard J. Zaborski share the same nationality?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Mireille Delunsch",
@@ -3306,7 +3306,7 @@
         "Question": "Does Tim Reid have the same nationality as Devon Martinus?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Tim Reid",
@@ -3408,7 +3408,7 @@
         "Question": "Are Rudy Halmaert and Han Xin of the same nationality?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Rudy Halmaert",
@@ -3542,7 +3542,7 @@
         "Question": "Were Dallin Malmgren and A.B.M. Fazle Karim Chowdhury of the same nationality?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Dallin Malmgren",
@@ -3656,7 +3656,7 @@
         "Question": "Are Marc Dutroux and Joaquim Pimentel of the same nationality?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Marc Dutroux",
@@ -3781,7 +3781,7 @@
         "Question": "Are You Came Along and Our House (2018 Film) both from the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "You Came Along",
@@ -3891,7 +3891,7 @@
         "Question": "Who died later, Chuck Turner or Mohamed Abdelaziz (Sahrawi Politician)?",
         "answer": "Chuck Turner",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Chuck Turner",
@@ -3988,7 +3988,7 @@
         "Question": "Are the movies Commissioner Eyck and 3 Indian Tales, from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Commissioner Eyck",
@@ -4103,7 +4103,7 @@
         "Question": "Are Shokrab, Kermanshah and Pis-Losap both located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Shokrab, Kermanshah",
@@ -4201,7 +4201,7 @@
         "Question": "Who is younger, Andrea Vaturi or Hamdan Bin Rashid Al Maktoum?",
         "answer": "Andrea Vaturi",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Andrea Vaturi",
@@ -4315,7 +4315,7 @@
         "Question": "Did Jo Beth Taylor and Rudolf Wanner have the same nationality?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Jo Beth Taylor",
@@ -4418,7 +4418,7 @@
         "Question": "Are both Qaleh Dokhtar, Kohgiluyeh And Boyer-Ahmad and Bokat located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Qaleh Dokhtar, Kohgiluyeh and Boyer-Ahmad",
@@ -4519,7 +4519,7 @@
         "Question": "Are both villages, Beliševo and Datow Naseri, located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Beliševo",
@@ -4623,7 +4623,7 @@
         "Question": "Are Prakanongpittayalai School and International School Of Koje located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Prakanongpittayalai School",
@@ -4728,7 +4728,7 @@
         "Question": "Are both airports, Lemnos International Airport and Bindja Airport, located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Lemnos International Airport",
@@ -4827,7 +4827,7 @@
         "Question": "Were Heinrich Gerhard Kuhn and Elfie Pertramer from the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Heinrich Gerhard Kuhn",
@@ -4948,7 +4948,7 @@
         "Question": "Which film was released earlier, The Pervert'S Guide To Ideology or La Vida Alrededor?",
         "answer": "La Vida Alrededor",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "The Pervert's Guide to Ideology",
@@ -5056,7 +5056,7 @@
         "Question": "Are the movies Shadows of the West and The Matchmaker (1934 film), from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "The Matchmaker (1934 film)",
@@ -5154,7 +5154,7 @@
         "Question": "Which film came out first, A Hill In Korea or Ek Anek Aur Ekta?",
         "answer": "A Hill In Korea",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "A Hill in Korea",
@@ -5287,7 +5287,7 @@
         "Question": "Did the movies Find the Woman and Two Is a Family, originate from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Two Is a Family",
@@ -5382,7 +5382,7 @@
         "Question": "Who was born first out of Michelle Tong and Eugene Mcdowell?",
         "answer": "Eugene Mcdowell",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Michelle Tong",
@@ -5484,7 +5484,7 @@
         "Question": "Are both Lateh Choqa Sayyadan and Cheshmeh-Ye Mirza Hoseyn located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Lateh Choqa Sayyadan",
@@ -5585,7 +5585,7 @@
         "Question": "Are Valiabad, Chalus and Mazraeh-Ye Ali Shafi both located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Valiabad, Chalus",
@@ -5686,7 +5686,7 @@
         "Question": "Who was born first out of Skip Hicks and Sergei Parajanov?",
         "answer": "Sergei Parajanov",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Skip Hicks",
@@ -5804,7 +5804,7 @@
         "Question": "Who was born later, Joseph Haboush or Alexander Argüelles?",
         "answer": "Joseph Haboush",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Joseph Haboush",
@@ -5902,7 +5902,7 @@
         "Question": "Are Shahrak-E Shomali and Taqiabad, Mazandaran both located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Shahrak-e Shomali",
@@ -5997,7 +5997,7 @@
         "Question": "Does Mario Beaulieu (Senator) have the same nationality as Ebenezer Porter?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Mario Beaulieu (senator)",
@@ -6118,7 +6118,7 @@
         "Question": "Are Long Branch (Troublesome Creek) and Jenipapo River both located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Long Branch (Troublesome Creek)",
@@ -6229,7 +6229,7 @@
         "Question": "Who was born first, David Hanson (Politician) or Jane Wagner?",
         "answer": "Jane Wagner",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "David Hanson (politician)",
@@ -6324,7 +6324,7 @@
         "Question": "Are Arcangelo Di Cola and Tarik Tissoudali both from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Arcangelo di Cola",
@@ -6436,7 +6436,7 @@
         "Question": "Are Nishiki River and Bullskin Run located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Bullskin Run",
@@ -6534,7 +6534,7 @@
         "Question": "Are both villages, Mazraeh-Ye Ruansar and Qalandar-E Sofla, located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Mazraeh-ye Ruansar",
@@ -6630,7 +6630,7 @@
         "Question": "Was Ali Akbar Salehi or Stefano Dall'Acqua born first?",
         "answer": "Ali Akbar Salehi",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Ali Akbar Salehi",
@@ -6735,7 +6735,7 @@
         "Question": "Are Fernand Backes and Tom Carew both from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Fernand Backes",
@@ -6866,7 +6866,7 @@
         "Question": "Are Puka Q'Asa (Huancavelica) and Horsetooth Mountain both located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Puka Q'asa (Huancavelica)",
@@ -6981,7 +6981,7 @@
         "Question": "Are the movies Made (2001 Film) and Proud Flesh (Film), from the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Made (2001 film)",
@@ -7074,7 +7074,7 @@
         "Question": "Which film came out earlier, Mi Viudo Y Yo or El Siete Machos?",
         "answer": "El Siete Machos",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Mi viudo y yo",
@@ -7165,7 +7165,7 @@
         "Question": "Which film was released more recently, Pottu Amman (Film) or Raja Manthiri?",
         "answer": "Raja Manthiri",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Pottu Amman (film)",
@@ -7272,7 +7272,7 @@
         "Question": "Are Berkeh-Ye Khalaf and Rostam Beyg located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Berkeh-ye Khalaf",
@@ -7373,7 +7373,7 @@
         "Question": "Did Frederick Joseph Loftus-Tottenham and Arban Severin have the same nationality?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Frederick Joseph Loftus-Tottenham",
@@ -7486,7 +7486,7 @@
         "Question": "Who was born first, Makarios Djan or Janiel Simon?",
         "answer": "Makarios Djan",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Makarios Djan",
@@ -7588,7 +7588,7 @@
         "Question": "Who lived longer, Constance Keys or Anthony De Jasay?",
         "answer": "Anthony De Jasay",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Constance Keys",
@@ -7696,7 +7696,7 @@
         "Question": "Did the magazines Reef Hobbyist Magazine and Investment Executive, originate from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Investment Executive",
@@ -7796,7 +7796,7 @@
         "Question": "Are Schnitt Acht and Falconer (Band) from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Schnitt Acht",
@@ -7889,7 +7889,7 @@
         "Question": "Do the movies Sunshine State (Film) and Massive Retaliation (Film), originate from the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Sunshine State (film)",
@@ -7995,7 +7995,7 @@
         "Question": "Who died later, Clyde Dickey or Turid Karlsen Seim?",
         "answer": "Turid Karlsen Seim",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Clyde Dickey",
@@ -8110,7 +8110,7 @@
         "Question": "Do the movies The 10th Victim and Bunker Bean, originate from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Bunker Bean",
@@ -8220,7 +8220,7 @@
         "Question": "Does Terry Stembridge have the same nationality as Grace English?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Terry Stembridge",
@@ -8322,7 +8322,7 @@
         "Question": "Are Ekaterina Voronina and Beatriz Villacañas of the same nationality?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Ekaterina Voronina",
@@ -8446,7 +8446,7 @@
         "Question": "Are the bands Chateaux (Band) and Stormy Six, from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Chateaux (band)",
@@ -8558,7 +8558,7 @@
         "Question": "Are both villages, Vukpalaj and Ano Lechonia, located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Vukpalaj",
@@ -8674,7 +8674,7 @@
         "Question": "Are both Ingur Railway Station and Colo Vale Railway Station, New South Wales located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Ingur railway station",
@@ -8782,7 +8782,7 @@
         "Question": "Which song came out earlier, Apocalypse Please or Skelewu?",
         "answer": "Apocalypse Please",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Apocalypse Please",
@@ -8901,7 +8901,7 @@
         "Question": "Which film was released first, Such Great Foolishness or Film Geek?",
         "answer": "Such Great Foolishness",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Such Great Foolishness",
@@ -9011,7 +9011,7 @@
         "Question": "Does Bill Wallace (Writer) have the same nationality as P.O?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Bill Wallace (writer)",
@@ -9119,7 +9119,7 @@
         "Question": "Which film was released earlier, Lake Placid Serenade or Odd Couple (Film)?",
         "answer": "Lake Placid Serenade",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Lake Placid Serenade",
@@ -9229,7 +9229,7 @@
         "Question": "Who was born first, Eupremio Carruezzo or Bruno Millienne?",
         "answer": "Bruno Millienne",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Bruno Millienne",
@@ -9332,7 +9332,7 @@
         "Question": "Do the movies 23 (Film) and Omg... We'Re In A Horror Movie!!!, originate from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "23 (film)",
@@ -9434,7 +9434,7 @@
         "Question": "Are both lakes, Mary Lake (Ontario) and Lago Di Fimon, located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Mary Lake (Ontario)",
@@ -9535,7 +9535,7 @@
         "Question": "Are both high schools, Fort Zumwalt South High School and West Chester East High School, located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Fort Zumwalt South High School",
@@ -9650,7 +9650,7 @@
         "Question": "Are both villages, Halvehhani and Aq Bolagh, Qazvin, located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Halvehhani",
@@ -9751,7 +9751,7 @@
         "Question": "Which film came out earlier, Zehreela Insaan or Bert: The Last Virgin?",
         "answer": "Zehreela Insaan",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Zehreela Insaan",
@@ -9888,7 +9888,7 @@
         "Question": "Which film was released more recently, Gautam Govinda or Danur 2: Maddah?",
         "answer": "Danur 2: Maddah",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Gautam Govinda",
@@ -9994,7 +9994,7 @@
         "Question": "Do Yaman Okay and Mike Fiers have the same nationality?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Yaman Okay",
@@ -10106,7 +10106,7 @@
         "Question": "Are both villages, Khalti and Chah-E Chaheh, located in the same country?",
         "answer": "yes",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Khalti",
@@ -10208,7 +10208,7 @@
         "Question": "Did Mohammad Fariduddin and Dick Wearmouth have the same nationality?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Mohammad Fariduddin",
@@ -10321,7 +10321,7 @@
         "Question": "Are the bands The Blakes and Big Supreme, from the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "The Blakes",
@@ -10431,7 +10431,7 @@
         "Question": "Are Carfury and Albu Shahbaz located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Albu Shahbaz",
@@ -10539,7 +10539,7 @@
         "Question": "Are both Kandry and Salash-E Disam located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Kandry",
@@ -10639,7 +10639,7 @@
         "Question": "Are both villages, Peniki and Goleh Dun, located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Peniki",
@@ -10741,7 +10741,7 @@
         "Question": "Are Shaveh, Markazi and Brajićevići located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Shaveh, Markazi",
@@ -10852,7 +10852,7 @@
         "Question": "Are both villages, Yamn and Galinheiro, located in the same country?",
         "answer": "no",
         "type": "comparison",
-        "is_sequence": true,
+        "is_sequence": false,
         "supporting_facts": [
             [
                 "Yamn",

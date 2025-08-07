@@ -185,7 +185,7 @@ def perform_retrieval(sample, search_kw, step, paths, settings):
     retrieval_information = ""
     
     if 'wiki' in settings['dataset']: 
-        if settings['context_2wiki']: 
+        if settings['get_context_2wiki'] == "True": 
             retrieval_information += retrieval_context_2wiki(search_kw, sample)
                
         if settings['get_wiki'] == "True":
