@@ -89,7 +89,6 @@ def save_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
         
-
 def get_search_result(id, folder_path):
     filepath = f"{folder_path}/step_3a_{id}.json"
     print("filepath: ", filepath)
@@ -305,8 +304,33 @@ def get_paragraphs_wiki_result(results, subquestion, max_docs_token=300):
     
     return output_paragraph, all_context
 
-
+def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
+    """Tạo thư mục và trả về một dictionary chứa tất cả các đường dẫn file cần thiết."""
+    dataset = settings['dataset']
+    run = settings['run']
+    dirs = {
+        "results": f"{dataset}results{q_i}",
+        "decomp": f"{dataset}preprocessing/step1{q_i}",
+        "retrieval": f"{dataset}preprocessing/step2{q_i}",
+        "ner": f"{dataset}preprocessing/step3{q_i}",
+        "all_ans": f"{dataset}results/all_ans",
+    }
     
+    for d in dirs.values():
+        os.makedirs(d, exist_ok=True)
+
+    paths = {
+        "decomp": os.path.join(dirs["decomp"], f"step_1_{sample_id}.json"),
+        "gg_search": os.path.join(dirs["retrieval"], f"step_2_gg_{sample_id}.json"),
+        "wiki_search": os.path.join(dirs["retrieval"], f"step_2_wiki_{sample_id}.json"),
+        "wiki_crawl": os.path.join(dirs["retrieval"], f"step_2_crawl_wiki_{sample_id}.json"),
+        "paragraphs": os.path.join(dirs["retrieval"], f"step_2_paragraphs_{sample_id}.json"),
+        "ner": os.path.join(dirs["ner"], f"{run}_step_3_ner_{sample_id}.json"),
+        "final_answer": os.path.join(dirs["results"], f"{run}_step_3b_ans_{sample_id}.json"),
+        "all_answers": os.path.join(dirs["all_ans"], f"{run}_step_3b_all_ans_{sample_id}.json")
+    }
+    return paths
+
 class DisableKeyboardInterrupt:
     def __enter__(self):
         self.signal_received = False

@@ -50,12 +50,10 @@ def request_api(messages, model, temperature=0):
         except Exception as e:
             print(f"Error with API {current_api_index}: {e}")
 
-        # Chuyển sang API tiếp theo trong danh sách
         current_api_index = (current_api_index + 1) % len(API_LIST)
         print(f"Retrying with next API in {retry_delay} seconds...")
         time.sleep(retry_delay)
 
-    # Nếu tất cả các API đều thất bại sau nhiều lần thử
     raise RuntimeError("All APIs failed after multiple retries.")
 
 def search_google(query, before_date="2021-04-07"):
@@ -94,7 +92,7 @@ def search_google(query, before_date="2021-04-07"):
             if attempt < max_retries - 1:
                 time.sleep(retry_delay)
             else:
-                raise e  # Dừng chương trình nếu hết số lần thử
+                raise e  
 
 if __name__ == "__main__":    
     result = search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?")

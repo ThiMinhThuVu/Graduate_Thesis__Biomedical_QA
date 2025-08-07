@@ -1,4 +1,4 @@
-def load_prompt_gen_sub(is_seq=False, question=None, dataset="medhop", type_q='compositional', context=None):
+def load_prompt_gen_sub(question=None, is_seq=False, dataset="medhop", type_q='compositional', context=None):
     if question:
         if is_seq:
             messages = _load_subquestion_prompt(question, dataset, type_q)
@@ -7,8 +7,16 @@ def load_prompt_gen_sub(is_seq=False, question=None, dataset="medhop", type_q='c
       
     return messages
 
-def load_prompt_gen_ans():
-    messages = []
+def load_prompt_gen_ans(question, key_entities, relevant_info, dataset='medhop'):
+    if dataset == "medhop":
+        prompt = prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info)
+    elif dataset == "bioasq":
+        prompt = prompt_gen_answer_bioasq_step_3b(question, key_entities, relevant_info)
+    elif dataset == "cwq":
+        prompt = prompt_gen_answer_cwq_step_3b(question, key_entities, relevant_info)
+    elif dataset == "wiki":
+        prompt = prompt_gen_answer_wiki_step_3b(question, key_entities, relevant_info)
+
     return messages
 
 def _load_search_keyword_prompt(question, dataset='medhop', type_q='compositional'):
@@ -1420,7 +1428,7 @@ Answer: Oxford University Press
 
     return messages
 
-def prompt_gen_answer_medhop_step_3b(question, context):
+def prompt_gen_answer_medhop_step_3b(question, key_entities, context):
     prompt = f"""Question: {question}
         Instructions:
         1. Determine the question type from the question text.
@@ -1437,7 +1445,8 @@ def prompt_gen_answer_medhop_step_3b(question, context):
         3. Do not add any extra commentary or text outside the JSON.
 
         Information:  
-        {context}
+        Key entities: {key_entities}
+        Context: {context}
 
         Response format (strict JSON):
         {{  
@@ -1447,7 +1456,7 @@ def prompt_gen_answer_medhop_step_3b(question, context):
         """
     return prompt
 
-def prompt_gen_answer_bioasq_step_3b(question, context):
+def prompt_gen_answer_bioasq_step_3b(question, key_entities, context):
     prompt = f"""Question: {question}
         Instructions:
         1. Determine the question type from the question text.
@@ -1468,8 +1477,8 @@ def prompt_gen_answer_bioasq_step_3b(question, context):
 
 
         Information: 
-        {context}
-
+        Key entities: {key_entities}
+        Context: {context}
 
         Response format (strict JSON):
         {{ 
@@ -1481,7 +1490,7 @@ def prompt_gen_answer_bioasq_step_3b(question, context):
     return prompt
 
 
-def prompt_gen_answer_cwq_step_3b(question, context):
+def prompt_gen_answer_cwq_step_3b(question, key_entities, context):
     prompt = f"""Question: {question}
      Instructions:
      1. Analyze the question and the provided information to determine the answer.
@@ -1498,7 +1507,8 @@ def prompt_gen_answer_cwq_step_3b(question, context):
      3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
 
      Information:
-     {context}
+     Key entities: {key_entities}
+     Context: {context}
 
      Response (strict JSON):
      {{
@@ -1508,7 +1518,7 @@ def prompt_gen_answer_cwq_step_3b(question, context):
      """
     return prompt
 
-def prompt_gen_answer_wiki_step_3b(question, context):
+def prompt_gen_answer_wiki_step_3b(question, key_entities, context):
     prompt = f"""Question: {question}
         Instructions:
         1. Analyze the question and the provided information to determine the answer.
@@ -1523,7 +1533,8 @@ def prompt_gen_answer_wiki_step_3b(question, context):
         3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
 
         Information:
-        {context}
+        Key entities: {key_entities}
+        Context: {context}
 
         Response (strict JSON):
         {{
@@ -1534,7 +1545,7 @@ def prompt_gen_answer_wiki_step_3b(question, context):
 
     return prompt
 
-def prompt_gen_answer_wiki_step_3b_comparison(question, context):
+def prompt_gen_answer_wiki_step_3b_comparison(question, key_entities, context):
     prompt = f"""Question: {question}
         Instructions:
         1. Analyze the question and the provided information to determine the answer.
@@ -1553,7 +1564,8 @@ def prompt_gen_answer_wiki_step_3b_comparison(question, context):
         3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
 
         Information:
-        {context}
+        Key entities: {key_entities}
+        Context: {context}
 
         Response (strict JSON):
         {{
