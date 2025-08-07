@@ -85,7 +85,6 @@ def generate_combine_parallel_answers(question, context, dataset='wiki', model="
         "short_answer": short_answer
     }
 
-
 def gen_ans_multiple_choice(question, context, dataset='medhop', model = "o3-mini"):
     prompt = f"""Question: {question}
         Instructions:

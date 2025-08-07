@@ -95,6 +95,9 @@ def search_google(query, before_date="2021-04-07"):
                 raise e  
 
 if __name__ == "__main__":    
-    result = search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?")
-   
+    # result = search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?")
+    result = request_api(
+        messages=[{"role": "user", "content": "What is the capital of France?"}],
+        model="o3-mini"
+    )
     print(result)

@@ -70,9 +70,29 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
 
         if os.path.exists(ans_filepath):
             qi_final_answers = load_json(ans_filepath)
-            step_last = max(qi_final_answers.keys())
-            short_ans = qi_final_answers[step_last]["short_answer"]
-            long_ans = qi_final_answers[step_last]["long_answer"]
+            
+            for step, item in subq_output.items():
+                step = str(step)
+                subquestion = item['subquestion']
+                search_kw_subq = item['search_keyword']
+                
+                if settings['search_key_entity'] == "True": 
+                    if item['key_entity'] == "" or item['key_entity'] == None: 
+                        key_entities = short_ans
+                    else:
+                        key_entities = item['key_entity']        
+                else:
+                    key_entities = search_kw_subq + " " + short_ans
+                
+                short_ans = qi_final_answers[step]["short_answer"]
+                long_ans = qi_final_answers[step]["long_answer"]
+                
+                dict_ans[q_i][step] = {}
+                dict_ans[q_i][step]["question"] = subquestion
+                dict_ans[q_i][step]["search_keyword"] = search_kw_subq
+                dict_ans[q_i][step]["key_entity"] = key_entities
+                dict_ans[q_i][step]["short_answer"] = short_ans
+                dict_ans[q_i][step]["long_answer"] = long_ans               
         else:
             short_ans = ""
             qi_final_answers = {}
@@ -90,7 +110,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                 else:
                     key_entities = search_kw_subq + " " + short_ans
                
-                print(f"\n--- Processing Step {step}: {subquestion} ---")
+                print(f"\n--- Processing Step {step}: {subquestion} ---")        
                 
                 retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)        
                 answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, dataset=dataset)
@@ -101,28 +121,29 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                 print(f"Short Answer for Step {step}: {short_ans}")
 
                 dict_ans[q_i][step] = {}
-                dict_ans[q_i][step]["question"] = question
+                dict_ans[q_i][step]["question"] = subquestion
                 dict_ans[q_i][step]["search_keyword"] = search_kw_subq
                 dict_ans[q_i][step]["key_entity"] = key_entities
                 dict_ans[q_i][step]["short_answer"] = short_ans
                 dict_ans[q_i][step]["long_answer"] = long_ans
                 
-            # Lấy output step cuối cùng của qi:
-            dict_ans[q_i]['final_qi']["question"] = question
-            dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
-            dict_ans[q_i]['final_qi']["key_entity"] = key_entities
-            dict_ans[q_i]['final_qi']["short_answer"] = short_ans
-            dict_ans[q_i]['final_qi']["long_answer"] = long_ans
+        # Lấy output step cuối cùng của qi:
+        dict_ans[q_i]['final_qi']["question"] = question
+        dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
+        dict_ans[q_i]['final_qi']["key_entity"] = key_entities
+        dict_ans[q_i]['final_qi']["short_answer"] = short_ans
+        dict_ans[q_i]['final_qi']["long_answer"] = long_ans
 
-        all_context += f"{q_i}.{question}: {short_ans}, {long_ans}\n\n"
+        all_context += f"{q_i}.{question} - {short_ans}, {long_ans}\n\n"
         save_json(qi_final_answers, ans_filepath)
         print(f"\nFinal answer saved to {ans_filepath}")
     
     if n_qi > 1:
-        combine_parallel_ans = generate_combine_parallel_answers(question, all_context, dataset=dataset, model="o3-mini")
+        combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
         dict_ans['final_answer'] = combine_parallel_ans
         save_json(dict_ans, file_all_ans)
         print(f"Final answer: {combine_parallel_ans['short_answer']}")
+        print(f"\nSaved to {file_all_ans}")
     else:
         dict_ans['final_answer'] = {
             'long_answer': dict_ans[1]['final_qi']['long_answer'],
@@ -130,6 +151,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         }
         save_json(dict_ans, file_all_ans)
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
+        print(f"\nSaved to {file_all_ans}")
         
     
 if __name__ == "__main__":
@@ -212,7 +234,7 @@ if __name__ == "__main__":
             preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":
-        raw_data_file = "data/wiki/train/train_comparison_100q.json"
+        raw_data_file = "data/wiki/train/train_compositional_100q.json"
         raw_data = load_json(raw_data_file)
         
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
@@ -221,8 +243,6 @@ if __name__ == "__main__":
             
             type_q = sample['type']
             is_seq = sample["is_sequence"]
-            # comparison sau khi tách thành q1,q2 -> là non-seq
-            # bridge_comparison sau khi tách thành q1,q2 -> là seq
             
             if run == "R5":
                 is_seq = False
