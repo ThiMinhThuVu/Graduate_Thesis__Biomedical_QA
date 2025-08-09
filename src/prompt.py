@@ -1444,7 +1444,7 @@ def prompt_gen_combine_parallel_answers(question, context):
     return prompt
 
 
-def prompt_gen_evidences(context):
+def _prompt_gen_evidences(context):
     allowed_relations = {
         'father', 'mother', 'sibling', 'spouse', 
         'director', 'performer', 'composer', 
@@ -1525,6 +1525,110 @@ def prompt_gen_evidences(context):
                 ]
             }}
             ```
+        ---
+        **YOUR TASK:**
+
+        Now, process the following `INPUT CONTEXT` and generate the corresponding `OUTPUT JSON`.
+
+        * INPUT CONTEXT:
+            ```
+            {context}
+            ```
+        * OUTPUT JSON:
+        """
+
+    messages = [
+        {"role": "system", "content": system_prompt.strip()},
+        {"role": "user", "content": user_prompt.strip()}
+    ]
+    
+    return messages
+def prompt_gen_evidences(context):
+    allowed_relations = {
+        'father', 'mother', 'sibling', 'spouse',
+        'director', 'performer', 'composer',
+        'educated at', 'founded by',
+        'date of birth', 'place of birth',
+        'date of death', 'place of death', 'cause of death',
+        'place of burial',
+        'country', 'country of origin', 'country of citizenship',
+        'publication date'
+    }
+    
+    relations_str = ", ".join(sorted(list(allowed_relations)))
+
+    system_prompt = f"""You are an AI expert in structured data extraction. Your task is to analyze the user's input, parse each line, and convert it into a single, valid JSON object of factual triples.
+
+        **INPUT FORMAT:**
+        `[index] entity_1; question; entity_2`
+
+        **OUTPUT FORMAT:**
+        A single JSON object: `{{"evidences": [[Entity1, Relation, Entity2], ...]}}`
+
+        **TRANSFORMATION RULES:**
+        1. Extract `Entity1` and `Entity2`.
+        2. Extract `Relation` from the `question`. The `Relation` MUST BE one of the following:
+           `{relations_str}`
+        3. **CRITICAL RULE FOR COUNTRIES:** Your choice of relation for country-related questions depends on the **type of the entity**:
+           - For **Creative Works** (films, books): A question about their country implies their production origin -> Use **`country of origin`**.
+           - For **People** (directors, senators, etc.): A question about their country or nationality implies citizenship -> Use **`country of citizenship`**.
+           - For **Geographical Locations** (mountains, villages, etc.): A question with "located in" implies physical placement -> Use **`country`**.
+        4. If no relation fits, use `null`.
+        """
+
+    user_prompt = f"""Here are some examples. Based on these, process the final `INPUT CONTEXT`.
+        **EXAMPLE 1 (Basic):**
+        * INPUT CONTEXT:
+            ```
+            [0] Mina Gerhardsen; Who is the father of Mina Gerhardsen?; Rune Gerhardsen
+            ```
+        * OUTPUT JSON:
+            ```json
+            {{
+                "evidences": [["Mina Gerhardsen", "father", "Rune Gerhardsen"]]
+            }}
+            ```
+            
+        **EXAMPLE 2 (Rule for Locations -> `country`):**
+        * INPUT CONTEXT:
+            ```
+            [0] Puka Q'Asa (Huancavelica); In which country is this mountain located?; Peru
+            ```
+        * OUTPUT JSON:
+            ```json
+            {{
+                "evidences": [["Puka Q'Asa (Huancavelica)", "country", "Peru"]]
+            }}
+            ```
+
+        **EXAMPLE 3 (Rule for Creative Works -> `country of origin`):**
+        * INPUT CONTEXT:
+            ```
+            [0] Shadows of the West; What is the country of this movie?; United States
+            ```
+        * OUTPUT JSON:
+            ```json
+            {{
+                "evidences": [["Shadows of the West", "country of origin", "United States"]]
+            }}
+            ```
+
+        **EXAMPLE 4 (Rule for People -> `country of citizenship`):**
+        * INPUT CONTEXT:
+            ```
+            [0] Fernand Backes; What is this person's nationality?; Luxembourgian
+            [1] Tom Carew; What country is this person from?; Irish
+            ```
+        * OUTPUT JSON:
+            ```json
+            {{
+                "evidences": [
+                    ["Fernand Backes", "country of citizenship", "Luxembourgian"],
+                    ["Tom Carew", "country of citizenship", "Irish"]
+                ]
+            }}
+            ```
+            
         ---
         **YOUR TASK:**
 

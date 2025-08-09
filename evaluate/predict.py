@@ -2,12 +2,8 @@ import os
 import re
 import json
 
-run = 'compositional_r11'
-q_type = 'compositional'
-
-wiki_result_directory = 'wiki_results/all_ans'
-pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
-os.makedirs(os.path.dirname(pred_path), exist_ok=True)
+wiki_result_directory = f'run/evidence/wiki_results/all_ans'
+pred_path = f'run/evidence/pred.json'
 
 def load_json(fname, mode="r", encoding="utf-8"):
     if "b" in mode:
@@ -45,21 +41,18 @@ predict_dict = {
     'answer': {},
     'sp': {},
     'evidence': {}
-}
+} 
 
 for filename in os.listdir(wiki_result_directory):
     id = extract_id(filename)
     file_path = os.path.join(wiki_result_directory, filename)
     
     data = load_json(file_path)
-    if filename_format(filename) == 'ans':
-        last_step_key = max(data.keys(), key=int)
-    elif filename_format(filename) == 'all_ans':
-        last_step_key = 'final_answer'
-    else:
-        print(f'Có lỗi nhận dạng file: {filename}')
-    predict = data[last_step_key]['short_answer']
-    predict_dict['answer'][id] = predict
+    predict_dict['answer'][id] = data['final_answer']['short_answer']
+    predict_dict['evidence'][id] = data['evidence']
+
+for id, evidences in predict_dict['evidence'].items():
+    predict_dict['evidence'][id] = [[ev if ev is not None else '' for ev in evidence] for evidence in evidences]
 
 with open(pred_path, 'w', encoding='utf-8') as f:
     json.dump(predict_dict, f) 
