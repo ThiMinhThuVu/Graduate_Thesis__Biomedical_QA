@@ -1,10 +1,11 @@
 import json
 
-run = 'minh_r11'
-q_type = 'inference'
-input_path = 'data/train.json' 
-pred_path = f'run/{run}/pred_{q_type}.json'
-output_file_path = f'run/{run}/gold_{q_type}.json'
+run = 'compositional_r11'
+q_type = 'compositional'
+
+input_path = 'data/wiki/train.json' 
+pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
+output_file_path = f'evaluate/run/{run}/gold_{q_type}.json'
 
 gold_data = {} 
 with open(input_path, 'r', encoding='utf-8') as file:

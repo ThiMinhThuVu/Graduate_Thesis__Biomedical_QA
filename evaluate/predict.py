@@ -2,10 +2,12 @@ import os
 import re
 import json
 
-run = 'minh_r11'
-wiki_result_directory = f'run/{run}/wiki_results'
-q_type = 'inference'
-pred_path = f'run/{run}/pred_{q_type}.json'
+run = 'compositional_r11'
+q_type = 'compositional'
+
+wiki_result_directory = 'wiki_results/all_ans'
+pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
+os.makedirs(os.path.dirname(pred_path), exist_ok=True)
 
 def load_json(fname, mode="r", encoding="utf-8"):
     if "b" in mode:
@@ -53,7 +55,7 @@ for filename in os.listdir(wiki_result_directory):
     if filename_format(filename) == 'ans':
         last_step_key = max(data.keys(), key=int)
     elif filename_format(filename) == 'all_ans':
-        last_step_key = 'ans_cmp'
+        last_step_key = 'final_answer'
     else:
         print(f'Có lỗi nhận dạng file: {filename}')
     predict = data[last_step_key]['short_answer']

@@ -1,15 +1,16 @@
 import sys 
-import ujson as json
+import json
 import re
 import string
 from collections import Counter
 
-run = 'minh_r11'
-type_name = 'inference'
-pred_file = f'run/{run}/pred_{type_name}.json'
-gold_file = f'run/{run}/gold_{type_name}.json'
-question_scores_path = f'run/{run}/question_scores_{type_name}.json'
-alias_file = 'data/id_aliases.json'
+run = 'compositional_r11'
+type_name = 'compositional'
+
+pred_file = f'evaluate/run/{run}/pred_{type_name}.json'
+gold_file = f'evaluate/run/{run}/gold_{type_name}.json'
+question_scores_path = f'evaluate/run/{run}/question_scores_{type_name}.json'
+alias_file = 'data/wiki/id_aliases.json'
 
 def normalize_answer(s):
     def remove_articles(text):

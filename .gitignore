@@ -4,9 +4,11 @@ wiki_results
 src/api_key.py
 
 # Cache files
+data/wiki/output
 data/wikipedia_cache.pkl
 *.pkl
 *.cache
+*.json
 
 # Python cache
 __pycache__/

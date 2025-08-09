@@ -4,6 +4,8 @@ from utils.abstract_wiki import crawl_abstract_wiki
 import json
 import os
 from utils.utils import *
+from thefuzz import fuzz
+
 
 def retrieval_google(search_kw, step, filepath):
     if os.path.exists(filepath):
@@ -149,8 +151,14 @@ def similarity(search, golden, threshold=0.9):
     vectorizer = TfidfVectorizer()
     tfidf_matrix = vectorizer.fit_transform([search, golden])
     similarity_matrix = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])
+    # Chuyên dùng để tìm sự tương đồng tên người
+    score_fuzz = fuzz.token_set_ratio(search, golden)
     
     if similarity_matrix[0][0] > threshold:
+        return True
+    elif score_fuzz > 90:
+        return True
+    elif similarity_matrix[0][0] > 0.70 and (golden.lower() in search.lower() or search.lower() in golden.lower()):
         return True
     else:
         return False    

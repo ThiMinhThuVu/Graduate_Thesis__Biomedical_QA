@@ -314,6 +314,7 @@ def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
         "retrieval": f"{dataset}preprocessing/step2{q_i}",
         "ner": f"{dataset}preprocessing/step3{q_i}",
         "all_ans": f"{dataset}results/all_ans",
+        "evidence": f"{dataset}results/evidence"
     }
     
     for d in dirs.values():
@@ -327,7 +328,8 @@ def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
         "paragraphs": os.path.join(dirs["retrieval"], f"step_2_paragraphs_{sample_id}.json"),
         "ner": os.path.join(dirs["ner"], f"{run}_step_3_ner_{sample_id}.json"),
         "qi_answer": os.path.join(dirs["results"], f"{run}_step_3b_ans_{sample_id}.json"),
-        "final_answer": os.path.join(dirs["all_ans"], f"{run}_step_3b_all_ans_{sample_id}.json")
+        "final_answer": os.path.join(dirs["all_ans"], f"{run}_step_3b_all_ans_{sample_id}.json"),
+        "evidence": os.path.join(dirs["evidence"], f"{run}_evidence_{sample_id}.json")
     }
     return paths
 

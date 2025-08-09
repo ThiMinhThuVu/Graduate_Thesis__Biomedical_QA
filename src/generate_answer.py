@@ -1,5 +1,6 @@
 from src.prompt import *
 from src.gpt_request import *
+from utils.utils import load_json
 import json
 
 def generate_answer(question, key_entities, relevant_info, dataset=None, model="o3-mini"):    
@@ -110,3 +111,35 @@ def gen_ans_multiple_choice(question, context, dataset='medhop', model = "o3-min
     
     return result_json
 
+def gen_evidences(data, model="gpt-4o-mini"):    
+    numeric_keys = sorted([k for k in data.keys() if k.isdigit()], key=int)
+
+    context_evidences = ""
+    cnt_evd = 1
+
+    for k in numeric_keys:
+        k = str(k)
+        subdata = data[k]
+        steps = sorted([ki for ki in subdata.keys() if ki.isdigit()], key=int)
+        for step in steps:
+            step = str(step)
+            e1 = subdata[step]['key_entity']
+            e2 = subdata[step]['short_answer']
+            relation = subdata[step]['question']
+            context_evidences += f"[{cnt_evd}]. {e1}; {relation}; {e2}\n"
+            cnt_evd += 1
+            
+    messages = prompt_gen_evidences(context_evidences)
+    result_json = request_api(messages, model)
+    
+    start_idx = result_json.find("[")
+    end_idx = result_json.rfind("]") + 1
+    result_json = result_json[start_idx:end_idx]
+    
+    try:
+        result_dict = json.loads(result_json)
+    except Exception as e:
+        print(f"Error parsing JSON response: {e}")
+        print(f"Raw response: {result_json}")
+        
+    return result_dict
