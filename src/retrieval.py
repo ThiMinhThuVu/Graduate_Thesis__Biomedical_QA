@@ -176,16 +176,6 @@ def retrieval_context_2wiki(search_kw, sample):
                 
             result += "\n\n"
         
-    if result == "":
-        for item in all_context:
-            key_entities = item[0]
-            if search_kw.lower() in key_entities.lower():
-                result += key_entities + ": "
-                for sent in item[1]:
-                    result += sent + " "
-                    
-                result += "\n\n"
-        
     return result.strip()
             
 def perform_retrieval(sample, search_kw, step, paths, settings):

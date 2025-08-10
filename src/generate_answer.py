@@ -3,8 +3,8 @@ from src.gpt_request import *
 from utils.utils import load_json
 import json
 
-def generate_answer(question, key_entities, relevant_info, dataset=None, model="o3-mini"):    
-    prompt = load_prompt_gen_ans(question, key_entities, relevant_info, dataset=dataset)
+def generate_answer(question, key_entities, relevant_info, dataset=None, type_q=None, model="o3-mini"):    
+    prompt = load_prompt_gen_ans(question, key_entities, relevant_info, dataset=dataset, type_q=type_q)
     if dataset in ["cwq", "wiki"]:
         messages = [
             {"role": "system", "content": "You are an expert in general knowledge. Your task is to provide accurate answers based on the provided information."},

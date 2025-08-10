@@ -1,14 +1,24 @@
 wiki_preprocessing
+medhop_important_preprocessing
+medhop_unconfused_preprocessing
+medhop_confused_preprocessing
+
 wiki_results
+medhop_important_results
+medhop_unconfused_results
+medhop_confused_results
+
 
 src/api_key.py
 
 # Cache files
 data/wiki/output
 data/wikipedia_cache.pkl
+data/wiki/train.json
+
+evaluate/run
 *.pkl
 *.cache
-*.json
 
 # Python cache
 __pycache__/

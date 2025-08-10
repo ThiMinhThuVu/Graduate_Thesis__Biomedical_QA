@@ -7,7 +7,7 @@ def load_prompt_gen_sub(question=None, is_seq=False, dataset=None, type_q=None, 
       
     return messages
 
-def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None):
+def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None, type_q=None):
     if dataset == "medhop":
         prompt = prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info)
     elif dataset == "bioasq":
@@ -15,7 +15,7 @@ def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None):
     elif dataset == "cwq":
         prompt = prompt_gen_answer_cwq_step_3b(question, key_entities, relevant_info)
     elif dataset == "wiki":
-        prompt = prompt_gen_answer_wiki_step_3b(question, key_entities, relevant_info)
+        prompt = prompt_gen_answer_wiki_step_3b(question, key_entities, relevant_info, type_q=type_q)
 
     return prompt
 
@@ -1326,43 +1326,37 @@ def prompt_gen_answer_cwq_step_3b(question, key_entities, context):
      """
     return prompt
 
-def prompt_gen_answer_wiki_step_3b(question, key_entities, context):
-    # prompt = f"""Question: {question}
-    #     Instructions:
-    #     1. Analyze the question and the provided information to determine the answer.
-    #     2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
-    #     - long_answer: A detailed explanation synthesized from the information.
-    #     - short_answer: A single string with the direct answer. Strictly follow these rules:
-    #         * **1. Yes/No Questions:** For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No".
-    #         * **2. Default - Single Answer:** For all other questions, provide only the single, most direct answer from the information given.
-    #             - The entity type must precisely match what and how specific the question asks for.
-    #             - *Example (Location):* If multiple place names are given, select ONLY the city or state-level location (e.g., London from Kensington, London, UK). If no city or state is available, use ONLY the smallest location level mentioned.
+def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None):
+    if type_q in ["bridge_comparison", "comparison", "inference"]:
+        prompt = f"""Question: {question}
+           Instructions:
+           1. Analyze the question and the provided information to determine the answer.
+           2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
+           - long_answer: A detailed explanation synthesized from the information.
+           - short_answer: A single string with the direct answer. Strictly follow these rules:
+           * **1. Yes/No Questions:** For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No".
+           * **2. Default - Single Answer:** For all other questions, provide only the single, most direct answer from the information given.
+               - The entity type must precisely match what and how specific the question asks for.
+               - *Example (Location):* If multiple place names are given, select ONLY the city or state-level location (e.g. London from Kensington, London, UK). If no city or state is available, use ONLY the smallest location level mentioned.
+               - *Example (Person):* Do not answer with title of the person (e.g. "Tsar Alexander III of Russia" should be "Alexander III of Russia").
+               - Do not add any additional information in parentheses.
+           * **3. Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
 
-    #     3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
+       3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
 
-    #     Information:
-    #     Key entities: {key_entities}
-    #     Context: {context}
+       Information:
+       Key entities: {key_entities}
+       Context: {context}
 
-    #     Response (strict JSON):
-    #     {{
-    #     "long_answer": "detailed explanation",
-    #     "short_answer": "answer as per rules"
-    #     }}
-    #     """
-        
-    # - **Rule D (Inferring Location of Birth/Death - NEW):**
-    #               * If a question asks for a place of birth or death and it is NOT explicitly stated, you may infer the location based on the STRONGEST available evidence in the context.
-    #               * **Priority of Evidence:**
-    #                 * **1. Last Known Long-Term Residence/Work:** The city or country where the person is last known to have lived or primarily worked. This is the strongest evidence.
-    #                   * *Example:* Context says "Moved to Buenos Aires at a young age and worked there for 40 years." -> Inferred place of death is "Buenos Aires".
-    #                 * **2. Place of Governance:** For a monarch or ruler, the territory they governed.
-    #                   * *Example:* Context says "From 1226, he governed Transylvania as Duke." -> Inferred place of death is "Transylvania".
-    #                 * **3. Place of Birth (Fallback):** The person's place of birth, ONLY if no other information about migration or long-term residence is mentioned.
-    #                   * *Example:* Context says "Born in Athens in 1916" with no other location details. -> Inferred place of death is "Athens".
-    #               * If none of this evidence exists, answer that the information is not available.
-        
-    prompt = f"""Question: {question}
+       Response (strict JSON):
+       {{
+       "long_answer": "detailed explanation",
+       "short_answer": "answer as per rules"
+       }}
+       """
+       
+    elif type_q == "compositional":
+        prompt = f"""Question: {question}
         Instructions:
         Your task is to act as an expert intelligence analyst. Your primary goal is to provide the **single most probable answer** to the question. Generate a single, valid JSON object.
 
@@ -1385,7 +1379,7 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context):
                 * *Example:* For an old film, if the context only mentions "screenplay by Alfred Sterling" and no director is named, "Alfred Sterling" IS the inferred director.
             * **(iii) Place of Birth (as Fallback):** If the only location clue is a birthplace and there's no mention of migration, that is the inferred answer.
 
-        3.  **"Information Not Available":** Use this response ONLY as a last resort, if there is absolutely NO explicit information AND NO strong clues for inference.
+        3.  **Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
 
         ### OUTPUT FORMATTING (CRITICAL) ###
         After finding the answer, the `short_answer` MUST be formatted to be as concise and specific as possible by following these non-negotiable principles:
@@ -1410,7 +1404,7 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context):
         "short_answer": "The single most probable answer, formatted according to the critical output rules."
         }}
         """
-        
+                
     return prompt
 
 
@@ -1444,105 +1438,6 @@ def prompt_gen_combine_parallel_answers(question, context):
     return prompt
 
 
-def _prompt_gen_evidences(context):
-    allowed_relations = {
-        'father', 'mother', 'sibling', 'spouse', 
-        'director', 'performer', 'composer', 
-        'educated at', 'founded by', 
-        'date of birth', 'place of birth', 
-        'date of death', 'place of death', 'cause of death',
-        'place of burial',
-        'country', 'country of origin', 'country of citizenship',
-        'publication date'
-    }
-    
-    # Format the set of allowed relations into a clean, readable string for the prompt
-    relations_str = ", ".join(sorted(list(allowed_relations)))
-
-    # The System Prompt is updated with the new rule for relations.
-    system_prompt = f"""You are an AI expert in structured data extraction. Your task is to analyze the user's input, parse each line, and convert it into a single, valid JSON object of factual triples.
-
-        **INPUT FORMAT:**
-        The user's input is a multi-line text block. Each line starts with an index `[index]` and contains three parts separated by a semicolon (`;`):
-        `[index] entity_1; question; entity_2`
-
-        **OUTPUT FORMAT:**
-        The output MUST be a single, valid JSON object with one key: `"evidences"`. The value must be a list of lists, where each inner list is a triple: `[Entity1, Relation, Entity2]`. Do not include any other text or explanations outside the JSON object.
-
-        **TRANSFORMATION RULES:**
-        For each line in the input context:
-        1. `Entity1` is the first part, before the first semicolon.
-        2. `Entity2` is the last part, after the second semicolon.
-        3. `Relation` must be extracted from the `question` (the middle part) and **MUST BE one of the following allowed values**:
-        `{relations_str}`
-        You must choose the best-fitting relation from this list. If no relation from the list accurately describes the question, use `null` as the relation value.
-        """
-
-    user_prompt = f"""Here are some examples. Based on these, process the final `INPUT CONTEXT`.
-        **EXAMPLE 1:**
-        * INPUT CONTEXT:
-            ```
-            [0] Mina Gerhardsen; Who is the father of Mina Gerhardsen?; Rune Gerhardsen
-            [1] Rune Gerhardsen; What is the date of birth of that person?; 13 June 1946
-            ```
-        * OUTPUT JSON:
-            ```json
-            {{
-                "evidences": [
-                    [
-                        "Mina Gerhardsen",
-                        "father",
-                        "Rune Gerhardsen"
-                    ],
-                    [
-                        "Rune Gerhardsen",
-                        "date of birth",
-                        "13 June 1946"
-                    ]
-                ]
-            }}
-            ```
-        **EXAMPLE 2:**
-        * INPUT CONTEXT:
-            ```
-            [0] Borunbabur Bondhu; Who is the director of the film Borunbabur Bondhu?; Anik Dutta
-            [1] Anik Dutta; What is the nationality of that director?; Indian
-            ```
-        * OUTPUT JSON:
-            ```json
-            {{
-                "evidences": [
-                    [
-                        "Borunbabur Bondhu",
-                        "director",
-                        "Anik Dutta"
-                    ],
-                    [
-                        "Anik Dutta",
-                        "country of citizenship",
-                        "Indian"
-                    ]
-                ]
-            }}
-            ```
-        ---
-        **YOUR TASK:**
-
-        Now, process the following `INPUT CONTEXT` and generate the corresponding `OUTPUT JSON`.
-
-        * INPUT CONTEXT:
-            ```
-            {context}
-            ```
-        * OUTPUT JSON:
-        """
-
-    messages = [
-        {"role": "system", "content": system_prompt.strip()},
-        {"role": "user", "content": user_prompt.strip()}
-    ]
-    
-    return messages
 def prompt_gen_evidences(context):
     allowed_relations = {
         'father', 'mother', 'sibling', 'spouse',

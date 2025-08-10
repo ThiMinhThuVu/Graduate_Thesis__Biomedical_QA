@@ -21,9 +21,9 @@ except:
 
 nlp_standard = spacy.load("en_core_web_lg")  # Standard English model
 
-def generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, dataset="medhop"):
+def generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, dataset=None, type_q=None):
     if dataset in ["wiki", "cwq"]:
-        return generate_answer(subquestion, key_entities, retrieval_information, dataset=dataset)
+        return generate_answer(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
     else:
         ner_filepath = paths['ner']
         output_ner = load_json(ner_filepath) if os.path.exists(ner_filepath) else {}
@@ -37,148 +37,139 @@ def generate_answer_for_subq(subquestion, key_entities, retrieval_information, s
             bio_entities = extract_with_models(query_for_ner, nlp_bio, nlp_standard, dataset=dataset)
             output_ner[step] = bio_entities
             save_json(output_ner, ner_filepath)
+            key_entities += " BioEntities: " + ", ".join(bio_entities)
 
-        return generate_answer(subquestion, key_entities, retrieval_information, dataset=dataset)
+        return generate_answer(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
 
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None):
     sample_id = str(sample['QIDX']) 
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
-    evidence_file = paths['evidence']
     
     if os.path.exists(file_all_ans):
         print(f"All answers file already exists: {file_all_ans}")
-        dict_ans = load_json(file_all_ans)
+        return
+    
+    if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
+        original_question = settings['chrunk_mapping'][sample_id]
     else:
+        original_question = sample['Question']
+        
+    #DECOMPOSITION Question
+    list_qi = question_decomposition(original_question, dataset=dataset, type_q=type_q)
+    n_qi = len(list_qi)
     
-        if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
-            original_question = settings['chrunk_mapping'][sample_id]
-        else:
-            original_question = sample['Question']
+    dict_ans = {
+        "QIDX": sample_id,
+        "original_question": original_question
+    }
+    all_context = ""
+    for q_i, question in enumerate(list_qi, start=1):
+        qi_number = f"/{q_i}"
+        paths = setup_paths(settings, sample_id, qi_number)
+        ans_filepath = paths['qi_answer']
+        dict_ans[q_i] = {"final_qi": {}}
+    
+        subq_output = generate_subquestion(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
+
+        if os.path.exists(ans_filepath):
+            qi_final_answers = load_json(ans_filepath)
             
-        #DECOMPOSITION Question
-        list_qi = question_decomposition(original_question, dataset=dataset, type_q=type_q)
-        n_qi = len(list_qi)
-        
-        dict_ans = {
-            "QIDX": sample_id,
-            "original_question": original_question
-        }
-        all_context = ""
-        for q_i, question in enumerate(list_qi, start=1):
-            qi_number = f"/{q_i}"
-            paths = setup_paths(settings, sample_id, qi_number)
-            ans_filepath = paths['qi_answer']
-            dict_ans[q_i] = {"final_qi": {}}
-        
-            subq_output = generate_subquestion(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
-
-            if os.path.exists(ans_filepath):
-                qi_final_answers = load_json(ans_filepath)
+            for step, item in subq_output.items():
+                step = str(step)
+                subquestion = item['subquestion']
+                search_kw_subq = item['search_keyword']
                 
-                for step, item in subq_output.items():
-                    step = str(step)
-                    subquestion = item['subquestion']
-                    search_kw_subq = item['search_keyword']
-                    
-                    if settings['search_key_entity'] == "True": 
-                        if item['key_entity'] == "" or item['key_entity'] == None: 
-                            key_entities = short_ans
-                        else:
-                            key_entities = item['key_entity']        
+                if settings['search_key_entity'] == "True": 
+                    if item['key_entity'] == "" or item['key_entity'] == None: 
+                        key_entities = short_ans
                     else:
-                        key_entities = search_kw_subq + " " + short_ans
-                    
-                    short_ans = qi_final_answers[step]["short_answer"]
-                    long_ans = qi_final_answers[step]["long_answer"]
-                    
-                    dict_ans[q_i][step] = {}
-                    dict_ans[q_i][step]["question"] = subquestion
-                    dict_ans[q_i][step]["search_keyword"] = search_kw_subq
-                    dict_ans[q_i][step]["key_entity"] = key_entities
-                    dict_ans[q_i][step]["short_answer"] = short_ans
-                    dict_ans[q_i][step]["long_answer"] = long_ans               
-            else:
-                short_ans = ""
-                qi_final_answers = {}
+                        key_entities = item['key_entity']        
+                else:
+                    key_entities = search_kw_subq + " " + short_ans
                 
-                for step, item in subq_output.items():
-                    step = str(step)
-                    subquestion = item['subquestion']
-                    search_kw_subq = item['search_keyword']
-                    
-                    if settings['search_key_entity'] == "True": 
-                        if item['key_entity'] == "" or item['key_entity'] == None: 
-                            key_entities = short_ans
-                        else:
-                            key_entities = item['key_entity']        
-                    else:
-                        key_entities = search_kw_subq + " " + short_ans
+                short_ans = qi_final_answers[step]["short_answer"]
+                long_ans = qi_final_answers[step]["long_answer"]
                 
-                    print(f"\n--- Processing Step {step}: {subquestion} ---")        
-                    
-                    retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)        
-                    answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, dataset=dataset)
-                    
-                    qi_final_answers[step] = answer_generation
-                    short_ans = answer_generation["short_answer"]
-                    long_ans = answer_generation["long_answer"]
-                    print(f"Short Answer for Step {step}: {short_ans}")
-
-                    dict_ans[q_i][step] = {}
-                    dict_ans[q_i][step]["question"] = subquestion
-                    dict_ans[q_i][step]["search_keyword"] = search_kw_subq
-                    dict_ans[q_i][step]["key_entity"] = key_entities
-                    dict_ans[q_i][step]["short_answer"] = short_ans
-                    dict_ans[q_i][step]["long_answer"] = long_ans
-                    
-            # Lấy output step cuối cùng của qi:
-            dict_ans[q_i]['final_qi']["question"] = question
-            dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
-            dict_ans[q_i]['final_qi']["key_entity"] = key_entities
-            dict_ans[q_i]['final_qi']["short_answer"] = short_ans
-            dict_ans[q_i]['final_qi']["long_answer"] = long_ans
-
-            all_context += f"{q_i}.{question} - {short_ans}, {long_ans}\n\n"
-            save_json(qi_final_answers, ans_filepath)
-            print(f"\nFinal answer saved to {ans_filepath}")
-        
-        if n_qi > 1:
-            combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
-            dict_ans['final_answer'] = combine_parallel_ans
-            save_json(dict_ans, file_all_ans)
-            print(f"Final answer: {combine_parallel_ans['short_answer']}")
-            print(f"\nSaved to {file_all_ans}")
+                dict_ans[q_i][step] = {}
+                dict_ans[q_i][step]["question"] = subquestion
+                dict_ans[q_i][step]["search_keyword"] = search_kw_subq
+                dict_ans[q_i][step]["key_entity"] = key_entities
+                dict_ans[q_i][step]["short_answer"] = short_ans
+                dict_ans[q_i][step]["long_answer"] = long_ans               
         else:
-            dict_ans['final_answer'] = {
-                'long_answer': dict_ans[1]['final_qi']['long_answer'],
-                'short_answer': dict_ans[1]['final_qi']['short_answer']
-            }
-            save_json(dict_ans, file_all_ans)
-            print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
-            print(f"\nSaved to {file_all_ans}")
+            short_ans = ""
+            qi_final_answers = {}
+            
+            for step, item in subq_output.items():
+                step = str(step)
+                subquestion = item['subquestion']
+                search_kw_subq = item['search_keyword']
+                
+                if settings['search_key_entity'] == "True": 
+                    if item['key_entity'] == "" or item['key_entity'] == None: 
+                        key_entities = short_ans
+                    else:
+                        key_entities = item['key_entity']        
+                else:
+                    key_entities = search_kw_subq + " " + short_ans
+               
+                print(f"\n--- Processing Step {step}: {subquestion} ---")        
+                
+                retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)        
+                answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, dataset=dataset, type_q=type_q)
+                
+                qi_final_answers[step] = answer_generation
+                short_ans = answer_generation["short_answer"]
+                long_ans = answer_generation["long_answer"]
+                print(f"Short Answer for Step {step}: {short_ans}")
+
+                dict_ans[q_i][step] = {}
+                dict_ans[q_i][step]["question"] = subquestion
+                dict_ans[q_i][step]["search_keyword"] = search_kw_subq
+                dict_ans[q_i][step]["key_entity"] = key_entities
+                dict_ans[q_i][step]["short_answer"] = short_ans
+                dict_ans[q_i][step]["long_answer"] = long_ans
+                
+        # Lấy output step cuối cùng của qi:
+        dict_ans[q_i]['final_qi']["question"] = question
+        dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
+        dict_ans[q_i]['final_qi']["key_entity"] = key_entities
+        dict_ans[q_i]['final_qi']["short_answer"] = short_ans
+        dict_ans[q_i]['final_qi']["long_answer"] = long_ans
+
+        all_context += f"{q_i}.{question} - {short_ans}, {long_ans}\n\n"
+        save_json(qi_final_answers, ans_filepath)
+        print(f"\nFinal answer saved to {ans_filepath}")
+    
+    if n_qi > 1:
+        combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
+        dict_ans['final_answer'] = combine_parallel_ans
+        save_json(dict_ans, file_all_ans)
+        print(f"Final answer: {combine_parallel_ans['short_answer']}")
+        print(f"\nSaved to {file_all_ans}")
+    else:
+        dict_ans['final_answer'] = {
+            'long_answer': dict_ans[1]['final_qi']['long_answer'],
+            'short_answer': dict_ans[1]['final_qi']['short_answer']
+        }
+        save_json(dict_ans, file_all_ans)
+        print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
+        print(f"\nSaved to {file_all_ans}")
         
-    
-    evidence_predict = gen_evidences(dict_ans)
-    save_json(evidence_predict, evidence_file)
-    
-    dict_ans['evidence'] = evidence_predict
-    save_json(dict_ans, file_all_ans)
-    print(f"Evidence saved to {evidence_file}")
-    
 if __name__ == "__main__":
     config_path = "config.json"
     configs = load_json(config_path)
-    datasets = ["bioasq", "medhop", "cwq", "wiki"]
+    datasets = ["medhop", "bioasq", "cwq", "wiki"]
     batchs = ["b1", "b2", "b3", "b4"] # medhop chỉ có 2 batch (unconfused, confused)
     runs = ["R1", "R4", "R5", "R6", "R10", "R11", "R12"]
     
     #edit config
     run = runs[5]  #5 = R11
-    threads = [0, 50] # Điền threads vào đây: ví dụ [0, 100]
-    dataset = datasets[3] # Chọn dataset: bioasq, medhop, cwq, wiki
+    threads = [0, 4] # Điền threads vào đây: ví dụ [0, 100]
+    dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
-    important = True # Chỉ dùng cho medhop
+    important = False # False or True: Chỉ dùng cho medhop
     
     settings = configs[dataset][run]
     settings["wiki_cache"] = wiki_cache_data
@@ -246,25 +237,12 @@ if __name__ == "__main__":
             preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":
-        raw_data_file = "data/wiki/train/train_bridge_comparison_100q.json"
         raw_data = load_json(raw_data_file)
-        
-        # list_ID = [
-        #     "084ccc420bdb11eba7f7acde48001122",
-        #     "2035e7e80bdc11eba7f7acde48001122",
-        #     "7660cc5a0bdc11eba7f7acde48001122",
-        #     "93ef8ba40bdb11eba7f7acde48001122",
-        #     "d346d3540bd911eba7f7acde48001122",
-        # ]
         
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
             if not (threads[0] <= idx < threads[1]):
                 continue 
             
-            # if ID not in list_ID:
-            #     # print(ID)
-            #     continue
-       
             type_q = sample['type']
             is_seq = sample["is_sequence"]
             
