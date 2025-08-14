@@ -1,7 +1,7 @@
 import json
 
 run = 'R11'
-q_type = 'bridge_comparison'
+q_type = 'inference'
 
 input_path = 'data/wiki/train.json' 
 pred_path = f'evaluate/run/{run}/pred_{q_type}.json'

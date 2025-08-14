@@ -196,7 +196,7 @@ if __name__ == "__main__":
     
     #edit config
     run = runs[5]  #5 = R11
-    threads = [0, 1000] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 3000] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = False # False or True: Chỉ dùng cho medhop
@@ -276,7 +276,7 @@ if __name__ == "__main__":
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
             if not (threads[0] <= idx < threads[1]):
                 continue 
-                        
+            
             type_q = sample['type']
             is_seq = sample["is_sequence"]
             

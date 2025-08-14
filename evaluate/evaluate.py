@@ -5,7 +5,7 @@ import string
 from collections import Counter
 
 run = 'R11'
-type_name = 'bridge_comparison'
+type_name = 'inference'
 
 pred_file = f'evaluate/run/{run}/pred_{type_name}.json'
 gold_file = f'evaluate/run/{run}/gold_{type_name}.json'

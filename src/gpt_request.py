@@ -8,8 +8,8 @@ current_api_index = 0
 
 def request_api(messages, model, temperature=0):
     global current_api_index
-    max_retries = 10
-    retry_delay = 1
+    max_retries = 30
+    retry_delay = 5
     
     if model == "gpt-4o-mini":
         API_LIST = API_LIST_4O

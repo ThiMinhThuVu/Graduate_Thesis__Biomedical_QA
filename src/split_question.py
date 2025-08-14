@@ -362,11 +362,8 @@ def split_comparison_question(question: str) -> List[str]:
                 continue 
 
     return [question]
-
-def split_bridge_comparison_question(question):
     
-    return [question]
 if __name__ == "__main__":
     # question = "Which film has the director died later, Men Without Souls or Yes Or No?"
-    question = "Which film has the director born later, The Esp Couple or The Filth And The Fury?"
+    question = "Are The Louisiana Hussy and Tate'S Voyage both from the same country?"
     print(split_comparison_question(question))

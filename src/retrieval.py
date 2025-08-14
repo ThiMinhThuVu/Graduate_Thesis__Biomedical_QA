@@ -206,12 +206,13 @@ def normalize_text(text):
     return text.strip()
 
 def retrieval_context_2wiki(search_kw, sample, cos_threshold=0.7, fuzz_threshold=0.7):
+    search_kw = search_kw.lower()
     all_context = sample['context']   
     high_score_matches = []
     fuzz_fallback_matches = []
     
     for item in all_context:
-        key_context = item[0]
+        key_context = item[0].lower()
         scores = caculate_scores(search_kw, key_context)
         if scores['cosine'] >= cos_threshold:
             high_score_matches.append({'score': scores['cosine'], 'context_item': item})
@@ -225,14 +226,16 @@ def retrieval_context_2wiki(search_kw, sample, cos_threshold=0.7, fuzz_threshold
         best_match_item = max(fuzz_fallback_matches, key=lambda x: x['score'])['context_item']
     else:
         for item in all_context:
-            key_context = normalize_text(item[0])
+            key_context = normalize_text(item[0].lower())
             scores = caculate_scores(search_kw, key_context)
             
-            if search_kw in key_context and scores['cosine'] >= 0.5:
+            if search_kw in key_context:
                 high_score_matches.append({'score': scores['cosine'], 'context_item': item})
-            elif scores['fuzz'] >= fuzz_threshold:
+            elif key_context in search_kw:
+                high_score_matches.append({'score': scores['cosine'], 'context_item': item})
+            elif scores['fuzz'] >= 0.6:
                 fuzz_fallback_matches.append({'score': scores['fuzz'], 'context_item': item})
-            elif scores['cosine'] >= cos_threshold:
+            elif scores['cosine'] >= 0.6:
                 high_score_matches.append({'score': scores['cosine'], 'context_item': item})
                 
         if high_score_matches:
@@ -259,28 +262,6 @@ def retrieval_context_2wiki(search_kw, sample, cos_threshold=0.7, fuzz_threshold
     else:
         return "", 0
     
-# def retrieval_context_2wiki(search_kw, sample):
-#     all_context = sample['context']
-#     result = ""
-    
-#     cnt_k_context = 0
-#     for item in all_context:
-#         key_entities = item[0]
-        
-#         if similarity(search_kw, key_entities):
-#             result += key_entities + ": "
-#             for sent in item[1]:
-#                 result += sent + " "
-#             result += "\n\n"
-
-#             sp = sample['supporting_facts']
-#             for item in sp:
-#                 if key_entities == item[0]:
-#                     cnt_k_context += 1
-
-#     return result.strip(), cnt_k_context
-            
-
 
 def perform_retrieval(sample, search_kw, step, paths, settings):
     """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""

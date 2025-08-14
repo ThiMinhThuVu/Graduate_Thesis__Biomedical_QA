@@ -1346,10 +1346,7 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
         ---
         Apply these rules in the following order of priority:
 
-        **Rule 1: Insufficient Information**
-        - If the answer cannot be found in the provided information, the value must be exactly "Insufficient information".
-
-        **Rule 2: Royal & Noble Figures**
+        **Rule 1: Royal & Noble Figures**
         - If the question asks for a royal or noble person, construct their name precisely as follows:
             * **A. START WITH:** The person's full name and regnal number (e.g., "Christian V", "Alexander III").
             * **B. ALWAYS INCLUDE (if available):**
@@ -1367,9 +1364,12 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
                 -  Input: "Emperor Meiji of Japan" -> Output: "Meiji of Japan"
                 -  Input: "Frederick William, Elector of Brandenburg" -> Output: "Frederick William, Elector of Brandenburg"
 
-        **Rule 3: All Other Questions (Default Rule)**
+        **Rule 2: All Other Questions (Default Rule)**
         - For any question not covered by the rules above, provide only the single, most direct answer found in the information.
         - The entity type must match what the question asks for.
+        
+        **Rule 3: Insufficient Information**
+        - If the answer cannot be found in the provided information, the value must be exactly "Insufficient information".
         ---
         Information:
         Key entities: {key_entities}
