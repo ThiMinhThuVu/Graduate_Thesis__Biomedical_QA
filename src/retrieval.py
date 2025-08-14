@@ -183,7 +183,8 @@ def caculate_scores(search, golden):
     if search.lower() == golden.lower():
         return {'cosine': 1.0, 'fuzz': 1.0}
     
-    vectorizer = TfidfVectorizer()
+    # vectorizer = TfidfVectorizer()
+    vectorizer = TfidfVectorizer(analyzer='char_wb', ngram_range=(2, 5))
     try:
         tfidf_matrix = vectorizer.fit_transform([search, golden])
         cosine_sim = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])[0][0]
@@ -194,6 +195,15 @@ def caculate_scores(search, golden):
     score_fuzz = fuzz.token_set_ratio(search, golden) / 100.0
     
     return {'cosine': cosine_sim, 'fuzz': score_fuzz}
+
+import re
+
+def normalize_text(text):
+    """Loại bỏ nội dung trong ngoặc đơn và các khoảng trắng thừa."""
+    # Loại bỏ nội dung trong ngoặc đơn, ví dụ: " (composer)"
+    text = re.sub(r'\s*\([^)]*\)\s*', '', text)
+    # Loại bỏ khoảng trắng thừa ở đầu và cuối
+    return text.strip()
 
 def retrieval_context_2wiki(search_kw, sample, cos_threshold=0.7, fuzz_threshold=0.7):
     all_context = sample['context']   
@@ -215,12 +225,21 @@ def retrieval_context_2wiki(search_kw, sample, cos_threshold=0.7, fuzz_threshold
         best_match_item = max(fuzz_fallback_matches, key=lambda x: x['score'])['context_item']
     else:
         for item in all_context:
-            key_context = item[0]
+            key_context = normalize_text(item[0])
             scores = caculate_scores(search_kw, key_context)
             
             if search_kw in key_context and scores['cosine'] >= 0.5:
                 high_score_matches.append({'score': scores['cosine'], 'context_item': item})
-
+            elif scores['fuzz'] >= fuzz_threshold:
+                fuzz_fallback_matches.append({'score': scores['fuzz'], 'context_item': item})
+            elif scores['cosine'] >= cos_threshold:
+                high_score_matches.append({'score': scores['cosine'], 'context_item': item})
+                
+        if high_score_matches:
+            best_match_item = max(high_score_matches, key=lambda x: x['score'])['context_item']
+        elif fuzz_fallback_matches:
+            best_match_item = max(fuzz_fallback_matches, key=lambda x: x['score'])['context_item']
+                    
     if best_match_item:
         result = ""
         key_entities = best_match_item[0]

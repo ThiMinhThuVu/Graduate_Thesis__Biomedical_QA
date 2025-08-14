@@ -270,9 +270,6 @@ if __name__ == "__main__":
         # type_ = "comparison"
         # settings['dataset'] = f"wiki_{type_}_"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"
-        # list_ID = [
-        #     "857ae19c087311ebbd66ac1f6bf848b6",
-        # ]
              
         raw_data = load_json(raw_data_file)
         

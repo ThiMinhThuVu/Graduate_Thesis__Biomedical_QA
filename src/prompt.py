@@ -420,7 +420,7 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
                     JSON desired output format:
                     [
                         {{ 
-                            "search_keyword": "Carnival Of Souls country of origin",
+                            "search_keyword": "'Carnival Of Souls' country of origin",
                             "key_entity": "Carnival Of Souls"
                         }}
                     ]
@@ -432,7 +432,7 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
                     JSON desired output format:
                     [
                         {{
-                            "search_keyword": "Engal Aasan publication date",
+                            "search_keyword": "'Engal Aasan' publication date",
                             "key_entity": "Engal Aasan"
                         }}
                     ]
@@ -444,7 +444,7 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
                     JSON desired output format:
                     [
                         {{
-                            "search_keyword": "Michelle Tong (Writer) date of birth",
+                            "search_keyword": "'Michelle Tong (Writer)' date of birth",
                             "key_entity": "Michelle Tong (Writer)"
                         }}
                     ]
@@ -456,7 +456,7 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
                     JSON desired output format:
                     [
                         {{
-                            "search_keyword": "William C. White country of citizenship",
+                            "search_keyword": "'William C. White' country of citizenship",
                             "key_entity": "William C. White"
                         }}
                     ]
@@ -1058,7 +1058,7 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                     [
                     {{
                         "subquestion": "Who is the director of the movie Parasite?",
-                        "search_keyword": “director of the movie Parasite",
+                        "search_keyword": “director of the movie 'Parasite'",
                         "key_entity": “Parasite"
                     }},
                     {{
@@ -1070,7 +1070,7 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
 
                     ---
                     **Example 2:**
-                    When is Ada Lovelace (1815–1852)'s father's birthday?
+                    When is Ada Lovelace (1815–1852)'s father birthday?
                     JSON desired output format:
                     [
                     {{
@@ -1079,8 +1079,8 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                         "key_entity": "Ada Lovelace (1815–1852)"
                     }},
                     {{
-                        "subquestion": "When is that person's birthday?",
-                        "search_keyword": "father birthday",
+                        "subquestion": "When is that person date of birth?",
+                        "search_keyword": "date of birth",
                         "key_entity": ""
                     }}
                     ]
@@ -1091,16 +1091,32 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                     [
                     {{
                         "subquestion":"Who was the director of film Doctor Strange (2016 film)",
-                        "search_keyword": "director of film Doctor Strange (2016 film)",
+                        "search_keyword": "director of film 'Doctor Strange (2016 film)'",
                         "key_entity": "Doctor Strange (2016 film)"
                     }},
                     {{
                         "subquestion": "Where was director born?",
-                        "search_keyword": "director place of birth",
+                        "search_keyword": "place of birth",
                         "key_entity": ""
                     }}
                     ]
-
+                    ---
+                    **Example 4:**
+                    "Which country the director of film Web Of Suspicion is from?"
+                    JSON desired output format:
+                    [
+                    {{
+                        "subquestion":"Who was the director of film Web Of Suspicion?",
+                        "search_keyword": "director of film 'Web Of Suspicion'",
+                        "key_entity": "Web Of Suspicion"
+                    }},
+                    {{
+                        "subquestion": "Which country of citizenship is that director from?",
+                        "search_keyword": "country of citizenship",
+                        "key_entity": ""
+                    }}
+                    ]
+                    ---
                     Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
                     Remember the strict formatting requirements:
                     1.  The entire output MUST be a valid JSON array.
@@ -1302,9 +1318,7 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
            * **1. Yes/No Questions:** For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No".
            * **2. Default - Single Answer:** For all other questions, provide only the single, most direct answer from the information given.
                - The entity type must precisely match what and how specific the question asks for.
-               - *Example (Location):* If multiple place names are given, select ONLY the city or state-level location (e.g. London from Kensington, London, UK). If no city or state is available, use ONLY the smallest location level mentioned.
-               - *Example (Person):* Do not answer with title of the person (e.g. "Tsar Alexander III of Russia" should be "Alexander III of Russia").
-               - Do not add any additional information in parentheses.
+               - *Example (Location):* If multiple place names are given, select ONLY the city or state-level location (e.g. London from Kensington, London, UK). If no city or state is available, use ONLY the smallest location level mentioned.               - Do not add any additional information in parentheses.
            * **3. Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
 
        3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
@@ -1321,31 +1335,52 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
        """
     elif type_q == "inference":
         prompt = f"""Question: {question}
-           Instructions:
-           1. Analyze the question and the provided information to determine the answer.
-           2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
-           - long_answer: A detailed explanation synthesized from the information.
-           - short_answer: A single string with the direct answer. Strictly follow these rules:
-           * **1. Yes/No Questions:** For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No".
-           * **2. Default - Single Answer:** For all other questions, provide only the single, most direct answer from the information given.
-               - The entity type must precisely match what and how specific the question asks for.
-               - *Example (Location):* If multiple place names are given, select ONLY the city or state-level location (e.g. London from Kensington, London, UK). If no city or state is available, use ONLY the smallest location level mentioned.
-               - *Example (Person):* Do not answer with title of the person (e.g. "Tsar Alexander III of Russia" should be "Alexander III of Russia").
-               - Do not add any additional information in parentheses.
-           * **3. Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
+        Instructions:
+        1. Analyze the provided Information (Key entities, Context) to answer the Question.
+        2. Your entire response MUST be a single, valid JSON object and nothing else. Do not add any commentary before or after it.
+        3. The JSON object must contain two keys: "long_answer" and "short_answer".
+           - "long_answer": A detailed explanation synthesized from the information.
+           - "short_answer": A single string with the direct answer, generated by strictly following the Rules for Short Answer below in order.
+        ---
+        RULES FOR SHORT ANSWER:
+        ---
+        Apply these rules in the following order of priority:
 
-       3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
+        **Rule 1: Insufficient Information**
+        - If the answer cannot be found in the provided information, the value must be exactly "Insufficient information".
 
-       Information:
-       Key entities: {key_entities}
-       Context: {context}
+        **Rule 2: Royal & Noble Figures**
+        - If the question asks for a royal or noble person, construct their name precisely as follows:
+            * **A. START WITH:** The person's full name and regnal number (e.g., "Christian V", "Alexander III").
+            * **B. ALWAYS INCLUDE (if available):**
+                -   Territorial domain (e.g., "of Denmark", "of Russia").
+                -   Numbered hereditary titles, prefixed with a comma (e.g., ", 2nd Earl of Stafford", ", 3rd Duke of Suffolk").
+                -   Other key titles that are part of the common name, prefixed with a comma (e.g., ", Duke of Cieszyn").
+            * **C. ALWAYS EXCLUDE:**
+                -   General honorifics like "King", "Queen", "Tsar", "Sultan", "Prince", "Paduka Sri", "Countess".
+            * **D. PARENTHESES RULE:**
+                -   The final answer string must NOT contain parentheses.
+                -   However, you MUST analyze text inside parentheses in the Context to find the correct name or title.
+            * **E. Examples:**
+                -  Input: "Christian V of Denmark-Norway" -> Output: "Christian V of Denmark"
+                -  Input: "Queen Elizabeth II of the United Kingdom" -> Output: "Elizabeth II of the United Kingdom"
+                -  Input: "Emperor Meiji of Japan" -> Output: "Meiji of Japan"
+                -  Input: "Frederick William, Elector of Brandenburg" -> Output: "Frederick William, Elector of Brandenburg"
 
-       Response (strict JSON):
-       {{
-       "long_answer": "detailed explanation",
-       "short_answer": "answer as per rules"
-       }}
-       """
+        **Rule 3: All Other Questions (Default Rule)**
+        - For any question not covered by the rules above, provide only the single, most direct answer found in the information.
+        - The entity type must match what the question asks for.
+        ---
+        Information:
+        Key entities: {key_entities}
+        Context: {context}
+
+        Response (strict JSON only):
+        {{
+            "long_answer": "detailed explanation",
+            "short_answer": "answer as per rules"
+        }}
+        """
     elif type_q == "compositional":
         prompt = f"""Question: {question}
         Instructions:
@@ -1364,13 +1399,19 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
         ### ANSWER DERIVATION RULES ###
         1.  **Search for an Explicit Answer First:** If the context directly states the answer, use that information.
 
-        2.  **MANDATORY INFERENCE (If no explicit answer):** If no explicit answer exists, you MUST provide an inferred answer if there are strong clues. Strong clues include, in order of priority:
+        ### ANSWER DERIVATION RULES ###
+        1.  **Search for an Explicit Answer First:** If the context directly states the answer, use that information.
+
+        2.  **NEW: Tie-Breaker for Multiple Explicit Answers:** If you find multiple valid, explicit answers for the same question (e.g., a performer has won multiple awards), you MUST apply a hierarchy to select the single best answer.
+            * **For Awards:** An induction into a **Hall of Fame** or a **Lifetime Achievement Award** MUST be prioritized over any other annual or one-time award. If awards are of similar stature, select the most recent one.
+
+        3.  **MANDATORY INFERENCE (If no explicit answer):** If no explicit answer exists, you MUST provide an inferred answer if there are strong clues. Strong clues include, in order of priority:
             * **(i) Long-Term Residence/Work:** This is the strongest clue. If a person lived or worked in a location for most of their life, that is the inferred answer.
             * **(ii) Implied Professional Roles:** A related creative or leadership role is a strong clue if the specific role in the question is not mentioned.
                 * *Example:* For an old film, if the context only mentions "screenplay by Alfred Sterling" and no director is named, "Alfred Sterling" IS the inferred director.
             * **(iii) Place of Birth (as Fallback):** If the only location clue is a birthplace and there's no mention of migration, that is the inferred answer.
 
-        3.  **Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
+        4.  **Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
 
         ### OUTPUT FORMATTING (CRITICAL) ###
         After finding the answer, the `short_answer` MUST be formatted to be as concise and specific as possible by following these non-negotiable principles:
@@ -1381,9 +1422,12 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
 
         2.  **For General Terms, Use the Broadest Category:**
             * ***Example:*** Use "cancer" instead of "bowel cancer".
+        
+        3.  **For Nationalities, follow this strict priority order:**
+            * **(i) For patterns like "X-born Y" (e.g., "Spanish-born Brazilian"), the answer is ALWAYS "X".**
+            * **(ii) For hyphenated nationalities like "X-Y" (e.g., "Mexican-American"), the answer is "X".**
+            * **(iii) For non-hyphenated dual nationalities like "X Y" (e.g., "German Italian"), the answer is "Y".**
 
-        3.  **For Nationalities, Follow Specific Conversions:**
-            * ***Example:*** Convert "Sicilian" to "Italian"; keep "Welsh" as "Welsh".
         ---
         Information:
         Key entities: {key_entities}
@@ -1395,7 +1439,7 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
         "short_answer": "The single most probable answer, formatted according to the critical output rules."
         }}
         """
-                
+   
     return prompt
 
 
