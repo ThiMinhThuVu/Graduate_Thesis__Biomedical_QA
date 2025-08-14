@@ -1,13 +1,33 @@
 wiki_preprocessing
+wiki_comparison_preprocessing
+wiki_bridge_comparison_preprocessing
+wiki_compositional_preprocessing
+wiki_inference_preprocessing
+
+wiki_comparison_v2_preprocessing
+wiki_bridge_comparison_v2_preprocessing
+wiki_compositional_v2_preprocessing
+wiki_inference_v2_preprocessing
+
 medhop_important_preprocessing
 medhop_unconfused_preprocessing
 medhop_confused_preprocessing
 
 wiki_results
+wiki_comparison_results
+wiki_bridge_comparison_results
+wiki_compositional_results
+wiki_inference_results
+
+wiki_comparison_v2_results
+wiki_bridge_comparison_v2_results
+wiki_compositional_v2_results
+wiki_inference_v2_results
+
+
 medhop_important_results
 medhop_unconfused_results
 medhop_confused_results
-
 
 src/api_key.py
 

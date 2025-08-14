@@ -41,6 +41,7 @@ def generate_answer_for_subq(subquestion, key_entities, retrieval_information, s
 
         return generate_answer(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
 
+list_k_context = []
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None):
     sample_id = str(sample['QIDX']) 
     paths = setup_paths(settings, sample_id)
@@ -64,84 +65,113 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         "original_question": original_question
     }
     all_context = ""
+    
     for q_i, question in enumerate(list_qi, start=1):
         qi_number = f"/{q_i}"
         paths = setup_paths(settings, sample_id, qi_number)
         ans_filepath = paths['qi_answer']
         dict_ans[q_i] = {"final_qi": {}}
     
-        subq_output = generate_subquestion(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
-
-        if os.path.exists(ans_filepath):
-            qi_final_answers = load_json(ans_filepath)
+        path_subq_output, n_path = generate_subquestion(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
+        
+        for path_i in range(n_path):
+            subq_output = path_subq_output[str(path_i)]
             
-            for step, item in subq_output.items():
-                step = str(step)
-                subquestion = item['subquestion']
-                search_kw_subq = item['search_keyword']
+            if os.path.exists(ans_filepath):
+                qi_final_answers = load_json(ans_filepath)
                 
-                if settings['search_key_entity'] == "True": 
-                    if item['key_entity'] == "" or item['key_entity'] == None: 
-                        key_entities = short_ans
+                for step, item in subq_output.items():
+                    step = str(step)
+                    subquestion = item['subquestion']
+                    search_kw_subq = item['search_keyword']
+                    
+                    if settings['search_key_entity'] == "True": 
+                        if item['key_entity'] == "" or item['key_entity'] == None: 
+                            key_entities = short_ans
+                        else:
+                            key_entities = item['key_entity']        
                     else:
-                        key_entities = item['key_entity']        
-                else:
-                    key_entities = search_kw_subq + " " + short_ans
+                        key_entities = search_kw_subq + " " + short_ans
+                    
+                    retrieval_information, cnt_k_context = perform_retrieval(sample, key_entities, step, paths, settings)  
+                    list_k_context.append(cnt_k_context)
+                    
+                    short_ans = qi_final_answers[step]["short_answer"]
+                    long_ans = qi_final_answers[step]["long_answer"]
+                    
+                    dict_ans[q_i][step] = {}
+                    dict_ans[q_i][step]["question"] = subquestion
+                    dict_ans[q_i][step]["search_keyword"] = search_kw_subq
+                    dict_ans[q_i][step]["key_entity"] = key_entities
+                    dict_ans[q_i][step]["short_answer"] = short_ans
+                    dict_ans[q_i][step]["long_answer"] = long_ans               
+            else:
+                short_ans = ""
+                qi_final_answers = {}
                 
-                short_ans = qi_final_answers[step]["short_answer"]
-                long_ans = qi_final_answers[step]["long_answer"]
+                for step, item in subq_output.items():
+                    step = str(step)
+                    subquestion = item['subquestion']
+                    search_kw_subq = item['search_keyword']
+                    
+                    if settings['search_key_entity'] == "True": 
+                        if item['key_entity'] == "" or item['key_entity'] == None: 
+                            key_entities = short_ans
+                        else:
+                            key_entities = item['key_entity']        
+                    else:
+                        key_entities = search_kw_subq + " " + short_ans
                 
-                dict_ans[q_i][step] = {}
-                dict_ans[q_i][step]["question"] = subquestion
-                dict_ans[q_i][step]["search_keyword"] = search_kw_subq
-                dict_ans[q_i][step]["key_entity"] = key_entities
-                dict_ans[q_i][step]["short_answer"] = short_ans
-                dict_ans[q_i][step]["long_answer"] = long_ans               
-        else:
-            short_ans = ""
-            qi_final_answers = {}
+                    print(f"\n--- Processing Step {step}: {subquestion} ---")        
+                    
+                    retrieval_information, cnt_k_context = perform_retrieval(sample, key_entities, step, paths, settings)  
+                    # list_k_context.append(cnt_k_context)
+                    
+                    answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, dataset=dataset, type_q=type_q)
+                    short_ans = answer_generation["short_answer"]
+                    long_ans = answer_generation["long_answer"]
+                    
+                    if short_ans.lower() == "insufficient information": # sang path tiếp theo 
+                        print(f"{path_i}-Step {step}-Insufficient information: {subquestion}")
+                        break
+                    
+                    qi_final_answers[step] = answer_generation
+                    
+                    print(f"Short Answer for Step {step}: {short_ans}")
+
+                    dict_ans[q_i][step] = {}
+                    dict_ans[q_i][step]["question"] = subquestion
+                    dict_ans[q_i][step]["search_keyword"] = search_kw_subq
+                    dict_ans[q_i][step]["key_entity"] = key_entities
+                    dict_ans[q_i][step]["short_answer"] = short_ans
+                    dict_ans[q_i][step]["long_answer"] = long_ans
+
+            if short_ans.lower() == "insufficient information": # sang path tiếp theo
+                print(f"{path_i}-Insufficient information")
+                continue
             
-            for step, item in subq_output.items():
-                step = str(step)
-                subquestion = item['subquestion']
-                search_kw_subq = item['search_keyword']
-                
-                if settings['search_key_entity'] == "True": 
-                    if item['key_entity'] == "" or item['key_entity'] == None: 
-                        key_entities = short_ans
-                    else:
-                        key_entities = item['key_entity']        
-                else:
-                    key_entities = search_kw_subq + " " + short_ans
-               
-                print(f"\n--- Processing Step {step}: {subquestion} ---")        
-                
-                retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)        
-                answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, dataset=dataset, type_q=type_q)
-                
-                qi_final_answers[step] = answer_generation
-                short_ans = answer_generation["short_answer"]
-                long_ans = answer_generation["long_answer"]
-                print(f"Short Answer for Step {step}: {short_ans}")
+            # Lấy output step cuối cùng của qi:
+            dict_ans[q_i]['final_qi']["question"] = question
+            dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
+            dict_ans[q_i]['final_qi']["key_entity"] = key_entities
+            dict_ans[q_i]['final_qi']["short_answer"] = short_ans
+            dict_ans[q_i]['final_qi']["long_answer"] = long_ans
 
-                dict_ans[q_i][step] = {}
-                dict_ans[q_i][step]["question"] = subquestion
-                dict_ans[q_i][step]["search_keyword"] = search_kw_subq
-                dict_ans[q_i][step]["key_entity"] = key_entities
-                dict_ans[q_i][step]["short_answer"] = short_ans
-                dict_ans[q_i][step]["long_answer"] = long_ans
-                
-        # Lấy output step cuối cùng của qi:
-        dict_ans[q_i]['final_qi']["question"] = question
-        dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
-        dict_ans[q_i]['final_qi']["key_entity"] = key_entities
-        dict_ans[q_i]['final_qi']["short_answer"] = short_ans
-        dict_ans[q_i]['final_qi']["long_answer"] = long_ans
-
-        all_context += f"{q_i}.{question} - {short_ans}, {long_ans}\n\n"
-        save_json(qi_final_answers, ans_filepath)
-        print(f"\nFinal answer saved to {ans_filepath}")
-    
+            all_context += f"{q_i}.{question} - {short_ans}, {long_ans}\n\n"
+            save_json(qi_final_answers, ans_filepath)
+            print(f"\nFinal answer saved to {ans_filepath}")
+            
+    if dict_ans[q_i]['final_qi'] == {}:
+        print(f"All path - Insufficient information")
+        dict_ans['final_answer'] = {
+            'long_answer': "Insufficient information",
+            'short_answer': "Insufficient information"
+        }
+        save_json(dict_ans, file_all_ans)
+        print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
+        print(f"\nSaved to {file_all_ans}")
+        return
+        
     if n_qi > 1:
         combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
         dict_ans['final_answer'] = combine_parallel_ans
@@ -166,7 +196,7 @@ if __name__ == "__main__":
     
     #edit config
     run = runs[5]  #5 = R11
-    threads = [0, 4] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 1] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = False # False or True: Chỉ dùng cho medhop
@@ -236,13 +266,13 @@ if __name__ == "__main__":
                 
             preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
-    elif dataset == "wiki":
+    elif dataset == "wiki":        
         raw_data = load_json(raw_data_file)
         
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
             if not (threads[0] <= idx < threads[1]):
                 continue 
-            
+                        
             type_q = sample['type']
             is_seq = sample["is_sequence"]
             
@@ -250,3 +280,5 @@ if __name__ == "__main__":
                 is_seq = False
                 
             preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q)
+            
+    

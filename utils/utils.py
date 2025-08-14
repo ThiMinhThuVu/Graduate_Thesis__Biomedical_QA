@@ -8,6 +8,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import signal
 import re
 import requests
+import matplotlib.pyplot as plt
+from collections import Counter
 
 move_section_list = [
     "table of contents",
@@ -333,6 +335,25 @@ def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
     }
     return paths
 
+def plot_k_context(list_k_context):
+    count_dict = Counter(list_k_context)
+
+    contexts = sorted(count_dict.keys())
+    frequencies = [count_dict[c] for c in contexts]
+
+    plt.figure(figsize=(8, 6)) 
+    bars = plt.bar(contexts, frequencies)
+    plt.xlabel("Số context")
+    plt.ylabel("Số lượng sub-question")
+    plt.title("Phân bố số lượng context")
+    plt.xticks(contexts) 
+    
+    for bar in bars:
+        yval = bar.get_height()
+        plt.text(bar.get_x() + bar.get_width()/2.0, yval, int(yval), va='bottom', ha='center') # va='bottom' để số nằm trên cột
+
+    plt.show()
+    
 class DisableKeyboardInterrupt:
     def __enter__(self):
         self.signal_received = False

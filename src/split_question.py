@@ -111,12 +111,20 @@ def split_comparison_question(question: str) -> List[str]:
             ]
         ),
         (
-            re.compile(r"Do (?P<entity1>.+) and (?P<entity2>.+) (?:have|share) the same (?P<property>\w+)\?", re.IGNORECASE),
+            # Rule mới, cụ thể cho cấu trúc "Do both directors of films..."
+            re.compile(r"Do both directors of films (?P<entity1>.+?) and (?P<entity2>.+?) share the same (?P<property>\w+)\?", re.IGNORECASE),
             lambda m: [
-                f"What is the {m.group('property')} of {m.group('entity1').strip()}?",
-                f"What is the {m.group('property')} of {m.group('entity2').strip()}?"
+                f"What is the {m.group('property')} of the director of film {m.group('entity1').strip()}?",
+                f"What is the {m.group('property')} of the director of film {m.group('entity2').strip()}?"
             ]
         ),
+        # (
+        #     re.compile(r"Do (?P<entity1>.+) and (?P<entity2>.+) (?:have|share) the same (?P<property>\w+)\?", re.IGNORECASE),
+        #     lambda m: [
+        #         f"What is the {m.group('property')} of {m.group('entity1').strip()}?",
+        #         f"What is the {m.group('property')} of {m.group('entity2').strip()}?"
+        #     ]
+        # ),
         (
             re.compile(r"Are (?P<entity1>.+) and (?P<entity2>.+) from the same (?P<property>\w+)\?", re.IGNORECASE),
             lambda m: [
@@ -159,11 +167,25 @@ def split_comparison_question(question: str) -> List[str]:
                 f"When was {m.group('entity2').strip()} born?"
             ]
         ),
+        # (
+        #     re.compile(r"Who (?:was born|died) (first|earlier|later), (?P<entity1>.+) or (?P<entity2>.+)\?", re.IGNORECASE),
+        #     lambda m: [
+        #         f"When was {m.group('entity1').strip()} born?" if 'born' in m.group(1) else f"When did {m.group('entity1').strip()} die?",
+        #         f"When was {m.group('entity2').strip()} born?" if 'born' in m.group(1) else f"When did {m.group('entity2').strip()} die?"
+        #     ]
+        # ),
         (
-            re.compile(r"Who (?:was born|died) (first|earlier|later), (?P<entity1>.+) or (?P<entity2>.+)\?", re.IGNORECASE),
+            re.compile(r"Who was born (first|earlier|later), (?P<entity1>.+) or (?P<entity2>.+)\?", re.IGNORECASE),
             lambda m: [
-                f"When was {m.group('entity1').strip()} born?" if 'born' in m.group(1) else f"When did {m.group('entity1').strip()} die?",
-                f"When was {m.group('entity2').strip()} born?" if 'born' in m.group(1) else f"When did {m.group('entity2').strip()} die?"
+                f"When was {m.group('entity1').strip()} born?",
+                f"When was {m.group('entity2').strip()} born?"
+            ]
+        ),
+        (
+            re.compile(r"Who died (first|earlier|later), (?P<entity1>.+) or (?P<entity2>.+)\?", re.IGNORECASE),
+            lambda m: [
+                f"When did {m.group('entity1').strip()} die?",
+                f"When did {m.group('entity2').strip()} die?"
             ]
         ),
         (
@@ -340,3 +362,11 @@ def split_comparison_question(question: str) -> List[str]:
                 continue 
 
     return [question]
+
+def split_bridge_comparison_question(question):
+    
+    return [question]
+if __name__ == "__main__":
+    # question = "Which film has the director died later, Men Without Souls or Yes Or No?"
+    question = "Which film has the director born later, The Esp Couple or The Filth And The Fury?"
+    print(split_comparison_question(question))

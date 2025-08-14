@@ -1,8 +1,11 @@
 import json
 
-input_path = 'data/train.json' 
-pred_path = f'run/evidence/pred.json'
-output_file_path = f'run/evidence/gold.json'
+run = 'R11'
+q_type = 'bridge_comparison'
+
+input_path = 'data/wiki/train.json' 
+pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
+output_file_path = f'evaluate/run/{run}/gold_{q_type}.json'
 
 gold_data = {} 
 with open(input_path, 'r', encoding='utf-8') as file:
@@ -17,15 +20,12 @@ with open(pred_path, 'r', encoding='utf-8') as file:
     pred_data = json.load(file)
 
 golden = []
-for id in pred_data['answer']: 
+for id in pred_data['answer']:
     if id in gold_data:
         golden.append({
             "_id": id,
             "answer": gold_data[id]['answer'],
-            'answer_id': gold_data[id]['answer_id'],
-            'supporting_facts': gold_data[id]['supporting_facts'],
-            'evidences': gold_data[id]['evidences'],
-            'evidences_id': gold_data[id]['evidences_id']
+            'answer_id': gold_data[id]['answer_id']
         })
 
 with open(output_file_path, 'w', encoding='utf-8') as f:

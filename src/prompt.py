@@ -282,6 +282,100 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
             ]
     elif dataset == 'wiki':
         if type_q == "comparison":
+            # messages = [
+            #     {
+            #         "role": "system",
+            #         "content": """You are an expert in generating ONLY 1 concise and effective Google search query to help answer a complex question.
+            #         Your goal is to provide a single, keyword-based query string that best targets the core information needed from the original question.
+
+            #         Key principles for the single query:
+            #         1. The query should be a distillation of the original complex question, focusing on essential keywords, proper names, and the core relationship being asked about.
+            #         2. The query MUST be concise, using specific nouns and terms critical to answering the question, and should omit conversational parts like "Who is the".
+            #         3. The key entity is the main subject (person, place, thing, or concept) the question is about.
+
+            #         The final output MUST be a JSON array containing a single object. This object must contain two keys:
+            #         - "search_keyword": The generated Google search query string.
+            #         - "key_entity": The primary subject extracted from the question.
+            #         """
+            #     },
+            #     {
+            #         "role": "user",
+            #         "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is a JSON array containing a single object with a "search_keyword" field holding the Google search query string.
+
+            #         ---
+            #         **Example 1:**
+
+            #         Question: "Who directed the (1957 Film) 'Just Once A Great Lady'?"
+
+            #         JSON desired output format:
+            #         [
+            #             {{
+            #                 "search_keyword": "director 'Just Once A Great Lady (1957 Film)'",
+            #                 "key_entity": "Just Once A Great Lady (1957 Film)"
+            #             }}
+            #         ]
+            #         ---
+            #         **Example 2:**
+
+            #         Question: "In which country is Carnival Of Souls located??"
+
+            #         JSON desired output format:
+            #         [
+            #             {{ 
+            #                 "search_keyword": "Carnival Of Souls country",
+            #                 "key_entity": "Carnival Of Souls"
+            #             }}
+            #         ]
+            #         ---
+            #         **Example 3:**
+
+            #         Question: "When was the film Engal Aasan released?"
+
+            #         JSON desired output format:
+            #         [
+            #             {{
+            #                 "search_keyword": "Engal Aasan release date",
+            #                 "key_entity": "Engal Aasan"
+            #             }}
+            #         ]
+            #         ---
+            #         **Example 4:**
+
+            #         Question: "When was Michelle Tong (Writer) born?"
+
+            #         JSON desired output format:
+            #         [
+            #             {{
+            #                 "search_keyword": "Michelle Tong (Writer) birth date",
+            #                 "key_entity": "Michelle Tong (Writer)"
+            #             }}
+            #         ]
+            #         ---
+            #         **Example 5:**
+
+            #         Question: "Who is William C. White's father?"
+
+            #         JSON desired output format:
+            #         [
+            #             {{
+            #                 "search_keyword": "William C. White father",
+            #                 "key_entity": "William C. White"
+            #             }}
+            #         ]
+            #         ---
+            #         Now, process the following:
+            #         Question: "{question}"
+            #         Task: Generate ONLY 1 effective Google search query that distills the core of the given question.
+            #         Return a JSON array containing a single object with the keys "search_keyword" and "key_entity", following the format of the examples above.
+            #         [
+            #             {{ 
+            #                 "search_keyword": "...",
+            #                 "key_entity": "..." 
+            #             }}
+            #         ]
+            #         """
+            #     }
+            # ]
             messages = [
                 {
                     "role": "system",
@@ -292,6 +386,10 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
                     1. The query should be a distillation of the original complex question, focusing on essential keywords, proper names, and the core relationship being asked about.
                     2. The query MUST be concise, using specific nouns and terms critical to answering the question, and should omit conversational parts like "Who is the".
                     3. The key entity is the main subject (person, place, thing, or concept) the question is about.
+                    4. **Adapt relation keywords based on the key entity's type.** This is crucial for avoiding ambiguity. For example:
+                    - For a **Person** (Human), use specific relations like: `country of citizenship`, `date of birth`, `occupation`,...
+                    - For a **Creative Work** (Film, Album, Song), use relations like: `country of origin`, `publication date`, `director`, `producer`,...
+                    - For a **Location or Organization** (Building, Museum, University, Mountain), use relations like: `country`, `inception`,...
 
                     The final output MUST be a JSON array containing a single object. This object must contain two keys:
                     - "search_keyword": The generated Google search query string.
@@ -300,7 +398,7 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
                 },
                 {
                     "role": "user",
-                    "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is a JSON array containing a single object with a "search_keyword" field holding the Google search query string.
+                    "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is a JSON array containing a single object with a "search_keyword" and "key_entity" field.
 
                     ---
                     **Example 1:**
@@ -317,12 +415,12 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
                     ---
                     **Example 2:**
 
-                    Question: "In which country is Carnival Of Souls located??"
+                    Question: "In which country is the film Carnival Of Souls from?"
 
                     JSON desired output format:
                     [
                         {{ 
-                            "search_keyword": "Carnival Of Souls country",
+                            "search_keyword": "Carnival Of Souls country of origin",
                             "key_entity": "Carnival Of Souls"
                         }}
                     ]
@@ -334,7 +432,7 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
                     JSON desired output format:
                     [
                         {{
-                            "search_keyword": "Engal Aasan release date",
+                            "search_keyword": "Engal Aasan publication date",
                             "key_entity": "Engal Aasan"
                         }}
                     ]
@@ -346,19 +444,19 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
                     JSON desired output format:
                     [
                         {{
-                            "search_keyword": "Michelle Tong (Writer) birth date",
+                            "search_keyword": "Michelle Tong (Writer) date of birth",
                             "key_entity": "Michelle Tong (Writer)"
                         }}
                     ]
                     ---
                     **Example 5:**
 
-                    Question: "Who is William C. White's father?"
+                    Question: "What is the nationality of the writer William C. White?"
 
                     JSON desired output format:
                     [
                         {{
-                            "search_keyword": "William C. White father",
+                            "search_keyword": "William C. White country of citizenship",
                             "key_entity": "William C. White"
                         }}
                     ]
@@ -376,139 +474,8 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
                     """
                 }
             ]
-        elif type_q == "compositional":
-            messages = [
-            {
-                "role": "system",
-                "content": """You are an expert in generating ONLY 1 concise and effective Google search query to help answer a complex question.
-                Your goal is to provide a single, keyword-based query string that best targets the core information needed from the original question.
-
-                Key principles for the single query:
-                1. The query should be a distillation of the original complex question, focusing on essential keywords, proper names, and the core relationship being asked about.
-                2. The query MUST be concise, using specific nouns and terms critical to answering the question. 
-                3. Queries should remove conversational elements (e.g., "Who is the") but retain role titles or label (e.g., "director", "singer", "novel") and disambiguators like Charles Darwin (1809–1882).
-                4. The key entity is the main subject (person, place, thing, or concept) the question is about.
-
-                The final output MUST be a JSON array containing a single object. This object must contain two keys:
-                - "search_keyword": The generated Google search query string.
-                - "key_entity": The primary subject extracted from the question.
-                """
-            },
-            {
-                "role": "user",
-                "content": f"""Here are some examples demonstrating the desired JSON output format, which is a JSON array containing a single object with a "search_keyword" field holding the Google search query string.
-                ---
-                **Example 1:**
-                Question: "Who is William C. White's father?"
-                JSON desired output format:
-                [
-                    {{
-                        "search_keyword": "William C. White father",
-                        "key_entity": "William C. White"
-                    }}
-                ]
-                ---
-                **Example 2:**
-                Question: "Who is Charles Darwin (1809–1882)'s grandfather?"
-                JSON desired output format:
-                [
-                    {{
-                        "search_keyword": "Charles Darwin (1809–1882) grandfather",
-                        "key_entity": "Charles Darwin (1809–1882)"
-                    }}
-                ]
-                ---
-                **Example 3:**
-                Question: "Where did singer Nina Simone die?"
-                JSON desired output format:
-                [
-                    {{
-                        "search_keyword": "singer Nina Simone place of death",
-                        "key_entity": "singer Nina Simone"
-                    }}
-                ]
-                ---
-                **Example 4:**
-                Question: Who is the author of the novel "The Silence of the Lambs"?
-                JSON desired output format:
-                [
-                    {{
-                        "search_keyword": "author of novel The Silence of the Lambs"
-                        "key_entity": "The Silence of the Lambs"
-                    }}
-                ]
-                Now, process the following:
-                Question: "{question}"
-                Task: Generate ONLY 1 effective Google search query that distills the core of the given question.
-                Return a JSON array containing a single object with the keys "search_keyword" and "key_entity", following the format of the examples above.
-                [
-                    {{
-                        "search_keyword": "...",
-                        "key_entity": "..."
-                    }}
-                ]
-                """
-            }
-        ]
-        elif type_q == "inference":
-            messages = [
-               {
-                   "role": "system",
-                   "content": """You are an expert in generating ONLY 1 concise and effective Google search query to help answer a complex question.
-                   Your goal is to provide a single, keyword-based query string that best targets the core information needed from the original question.
-
-                   Key principles for the single query:
-                   1. The query should be a distillation of the original complex question, focusing on essential keywords, proper names, and the core relationship being asked about.
-                   2. The query MUST be concise, using specific nouns and terms critical to answering the question, and should omit conversational parts like "Who is the".
-                   3. The key entity is the main subject (person, place, thing, or concept) the question is about.
-
-                    The final output MUST be a JSON array containing a single object. This object must contain two keys:
-                    - "search_keyword": The generated Google search query string.
-                    - "key_entity": The primary subject extracted from the question.
-                   """
-               },
-               {
-                   "role": "user",
-                   "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is a JSON array containing two objects: one with a "search_keyword" field and another with a "key_entity" field.
-                   ---
-                   **Example 1:**
-
-                   Question: "Who is William C. White's father?"
-
-                   JSON desired output format:
-                   [
-                       {{ 
-                            "search_keyword": "father of William C. White",
-                            "key_entity": "William C. White"
-                       }}                   ]
-                   ---
-                   **Example 2:**
-
-                   Question: "Who is the father of Savivanh Savang?"
-
-                   JSON desired output format:
-                   [
-                       {{ 
-                            "search_keyword": "father of Savivanh Savang",
-                            "key_entity": "Savivanh Savang" 
-                        }}                   
-                    ]
-                   ---                  
-                   Now, process the following:
-
-                   Question: "{question}"
-
-                   Task: Generate ONLY 1 effective Google search query that distills the core of the given question, and identify the key entity.
-                    Return a JSON array containing a single object with the keys "search_keyword" and "key_entity", following the format of the examples above.
-                    [
-                        {{ 
-                            "search_keyword": "...",
-                            "key_entity": "..." 
-                        }}
-                    ]
-                   """
-               }
-           ]
+        else:
+            messages = None
 
     return messages
 
@@ -938,7 +905,7 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                 {
                     "role": "user",
                     "content": f"""
-            Here are 5 examples demonstrating the desired JSON output format and decomposition logic.
+            Here are 6 examples demonstrating the desired JSON output format and decomposition logic.
 
             ---
             **Example 1:**
@@ -952,8 +919,8 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                     "key_entity": "Move (1970 Film)"
                 }},
                 {{
-                    "subquestion": "What country is that film director from?",
-                    "search_keyword": "country director",
+                    "subquestion": "What country of citizenship is that film director from?",
+                    "search_keyword": "country of citizenship director",
                     "key_entity": ""
                 }}
             ]
@@ -1027,6 +994,22 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                 }}
             ]
             ---
+            **Example 6:**
+            "When was the producer of "My Friends Told Me About You" born?"
+            JSON desired output format:
+            [
+                {{
+                    "subquestion": "Who produced the 'My Friends Told Me About You'?",
+                    "search_keyword": "producer 'My Friends Told Me About You'",
+                    "key_entity": "My Friends Told Me About You"
+                }},
+                {{
+                    "subquestion": "When was that producer born?",
+                    "search_keyword": "date of birth",
+                    "key_entity": ""
+                }}
+            ]
+            ---
             Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
             Remember the strict formatting requirements:
             1.  The entire output MUST be a valid JSON array.
@@ -1070,17 +1053,17 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                     Here are 3 examples demonstrating the desired JSON output format and decomposition logic.
                     ---
                     **Example 1:**
-                    "Who is Ethelreda, Daughter Of Gospatric's mother-in-law?"
+                    "Which award did the director of the movie Parasite receive at the Oscars?"
                     JSON desired output format:
                     [
                     {{
-                        "subquestion": "Who was the spouse of Ethelreda, Daughter Of Gospatric?",
-                        "search_keyword": "Ethelreda, Daughter Of Gospatric spouse",
-                        "key_entity": "Ethelreda, Daughter Of Gospatric"
+                        "subquestion": "Who is the director of the movie Parasite?",
+                        "search_keyword": “director of the movie Parasite",
+                        "key_entity": “Parasite"
                     }},
                     {{
-                        "subquestion": "Who was the mother of that person?",
-                        "search_keyword": "mother",
+                        "subquestion": "Which award did that director receive at the Oscars?",
+                        "search_keyword": "award receive at Oscars",
                         "key_entity": ""
                     }}
                     ]
@@ -1128,111 +1111,93 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                 }
             ]
         elif type_q == "inference":
-           messages = [
+            messages = [
             {
-           "role": "system",
-           "content": f"""You are a highly specialized AI assistant. Your expertise is in analyzing questions that contain hidden sequential logic, particularly those involving relationships within social or organizational structures (e.g., family trees, corporate hierarchies). Your primary goal is to decompose these complex questions into a sequence of simpler, interconnected natural language sub-questions, creating a logical, step-by-step plan that reveals the reasoning process required to find the answer.
+                "role": "system",
+                "content": """You are an expert in indentifying a key entity and key relation in a question.
+            
+            Key principles for identifying key entities and relations include:
+            1. Look for the main subject and object in the question.
+            2. Identify the action or relationship being asked.
+            3. Consider the context and any additional information provided.
 
-            **Core Instructions for Decomposition:**
-            0.  **Faithful Reasoning via Decomposition**: Your primary task is to externalize the reasoning process by breaking the `Original Complex Question` into a series of sub-questions. This decomposition itself forms the transparent and explainable path to the solution.
-            1.  **Step-by-Step Plan**: Generate a sequence of sub-questions.
-            2.  **Dynamic and Dependent Sub-questions**: Your sub-questions form a dynamic plan that will be executed step-by-step, where the results of one step are used in the next.
-            *Sub-question Formulation*: A sub-question must be a template that depends on the answer from a previous step.
-            * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question.
-            *Search Keyword Formulation*: Similarly, the search_keyword is a template (e.g., "date of birth of," "spouse of"). This template is designed to be combined with the result of a prior step to create the final, precise search query. This structure creates a powerful, multi-step reasoning plan.
-            3.  **Logical Dependency**:
-            * The answer to one sub-question will be used to formulate the subsequent sub-question.
-            * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question.
-            4.  **Sub-question Properties**: For each step in your decomposition:
-            * **`subquestion`**: State the sub-question in clear, natural language.
-            * **`search_keyword`**: Provide a concise, keyword-based search query that captures the essence of the sub-question.
-            * **`key_entity`**: Identify the primary subject of the sub-question. If the subject is a placeholder for a result from a previous step (e.g., "that person"), leave this field as an empty string.
-            5.  **Efficiency and Necessity**:
-            * Decompose the question into the **minimum number of steps absolutely necessary** to logically arrive at the final answer.
-            * If the original complex question can be directly and unambiguously answered by a single, well-formulated search query, provide a single-step decomposition.
-            6.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid array of step objects.
-
-            Original Complex Question: '{question}'
+            The final output MUST be a JSON object. This object must contain keys: "key_entity", "key_relation".
             """
-                },
-                {
-                    "role": "user",
-                    "content": f"""
-            Here are 4 examples demonstrating the desired JSON output format and decomposition logic.
+            },
+            {
+                "role": "user",
+                "content": f"""Here are the examples demonstrating the desired JSON output format, which is an array containing a single object with "key_entity" and "key_relation" fields:
+
             ---
             **Example 1:**
-            "Who is Ethelreda, Daughter Of Gospatric's mother-in-law?"
+
+            Question: "Who is Giselda Volodi's sibling-in-law?"
+
             JSON desired output format:
             [
                 {{
-                    "subquestion": "Who was the spouse of Ethelreda, Daughter Of Gospatric?",
-                    "search_keyword": "spouse of Ethelreda, Daughter Of Gospatric",
-                    "key_entity": "Ethelreda, Daughter Of Gospatric"
-                }},
-                {{
-                    "subquestion": "Who was the mother of that person?",
-                    "search_keyword": "mother of",
-                    "key_entity": ""
+                    "key_entity": "Giselda Volodi",
+                    "key_relation": "sibling-in-law"
                 }}
             ]
+
             ---
             **Example 2:**
-            "Who is Wenceslaus Of Krosno's paternal grandfather?"
+
+            Question: "Who is Humphrey Of Montfort's maternal grandmother?"
+
             JSON desired output format:
             [
                 {{
-                    "subquestion": "Who was the father of Wenceslaus Of Krosno?",
-                    "search_keyword": "father of Wenceslaus Of Krosno",
-                    "key_entity": "Wenceslaus Of Krosno"
-                }},
-                {{
-                    "subquestion": "Who was the father of that person?",
-                    "search_keyword": "father of",
-                    "key_entity": ""
+                    "key_entity": "Humphrey Of Montfort",
+                    "key_relation": "maternal grandmother"
                 }}
             ]
+
             ---
             **Example 3:**
-            "Who is the uncle of Manuel Komnenos (Kouropalates)?"
+
+            Question: "Who is the aunt of Margaretta Taylor?"
+
             JSON desired output format:
             [
                 {{
-                    "subquestion": "Who was the father of Manuel Komnenos (Kouropalates)?",
-                    "search_keyword": "father of Manuel Komnenos (Kouropalates)",
-                    "key_entity": "Manuel Komnenos (Kouropalates)"
-                }},
-                {{
-                    "subquestion": "Who was the brother of that person?",
-                    "search_keyword": "brother of",
-                    "key_entity": ""
+                    "key_entity": "Margaretta Taylor",
+                    "key_relation": "aunt"
                 }}
             ]
+
             ---
             **Example 4:**
-            "Who is Narasimhavarman I's grandchild?"
+
+            Question: "What is the field of work of Fred Diamond?"
+
             JSON desired output format:
             [
                 {{
-                    "subquestion": "Who was the child of Narasimhavarman I?",
-                    "search_keyword": "child of Narasimhavarman I",
-                    "key_entity": "Narasimhavarman I"
-                }},
-                {{
-                    "subquestion": "Who was the child of that person?",
-                    "search_keyword": "child of",
-                    "key_entity": ""
+                    "key_entity": "Fred Diamond",
+                    "key_relation": "field of work"
                 }}
             ]
-            Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
-            Remember the strict formatting requirements:
-            1.  The entire output MUST be a valid array.
-            2.  Ensure each sub-question logically follows the previous one and directly contributes to answering the original complex question.
 
-            Here is the original complex question: "{question}"
+            ---
+
+            Now, process the following:
+
+            Question: "{question}"
+            
+            Return a JSON array containing a single object. This object must contain a single key "search_keyword", whose value is the Google search query string. For example:
+
+            [
+                {{
+                    "key_entity": "...",
+                    "key_relation": "..."
+                }}
+            ]
             """
             }
         ]
-        
+
     return messages
 
 
@@ -1327,7 +1292,7 @@ def prompt_gen_answer_cwq_step_3b(question, key_entities, context):
     return prompt
 
 def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None):
-    if type_q in ["bridge_comparison", "comparison", "inference"]:
+    if type_q in ["bridge_comparison", "comparison"]:
         prompt = f"""Question: {question}
            Instructions:
            1. Analyze the question and the provided information to determine the answer.
@@ -1354,7 +1319,33 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
        "short_answer": "answer as per rules"
        }}
        """
-       
+    elif type_q == "inference":
+        prompt = f"""Question: {question}
+           Instructions:
+           1. Analyze the question and the provided information to determine the answer.
+           2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
+           - long_answer: A detailed explanation synthesized from the information.
+           - short_answer: A single string with the direct answer. Strictly follow these rules:
+           * **1. Yes/No Questions:** For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No".
+           * **2. Default - Single Answer:** For all other questions, provide only the single, most direct answer from the information given.
+               - The entity type must precisely match what and how specific the question asks for.
+               - *Example (Location):* If multiple place names are given, select ONLY the city or state-level location (e.g. London from Kensington, London, UK). If no city or state is available, use ONLY the smallest location level mentioned.
+               - *Example (Person):* Do not answer with title of the person (e.g. "Tsar Alexander III of Russia" should be "Alexander III of Russia").
+               - Do not add any additional information in parentheses.
+           * **3. Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
+
+       3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
+
+       Information:
+       Key entities: {key_entities}
+       Context: {context}
+
+       Response (strict JSON):
+       {{
+       "long_answer": "detailed explanation",
+       "short_answer": "answer as per rules"
+       }}
+       """
     elif type_q == "compositional":
         prompt = f"""Question: {question}
         Instructions:
@@ -1541,4 +1532,60 @@ def prompt_gen_evidences(context):
         {"role": "user", "content": user_prompt.strip()}
     ]
     
+    return messages
+
+
+def prompt_split_question(question, type_q=None):
+    system_prompt = """You are an AI assistant that splits a complex comparative question into a list of two simple sub-questions. Your response must only be a valid JSON array of two strings."""
+
+    if type_q == "bridge_comparison":
+        user_prompt = f"""
+        ### EXAMPLE 1: Complex question: "Do both directors of films The Bird of Happiness (film) and Bunco Squad share the same nationality?"
+
+        JSON array result:
+        [
+        "What is the nationality of the director of The Bird of Happiness (film)?",
+        "What is the nationality of the director of Bunco Squad?"
+        ]
+
+        ### EXAMPLE 2: Complex question: "Which film has the director who is older than the other, Tiny Times 3 or Being Rose?"
+
+        JSON array result:
+        [
+        "When was the director of Tiny Times 3 born?",
+        "When was the director of Being Rose born?"
+        ]
+        
+        ### TASK: Complex question: "{question}"
+        
+        JSON array result:
+        """
+    else:
+        user_prompt = f"""
+        ### EXAMPLE 1: Complex question: "Are both high schools, York High School (Virginia) and Cornwall Collegiate and Vocational School, located in the same country?"
+        
+        JSON array result:
+        [
+            "What is the location of York High School (Virginia)?",
+            "What is the location of Cornwall Collegiate and Vocational School?"
+        ]
+        
+        ### EXAMPLE 2: Complex question: "Who has a wider scope of profession, Axel Siefer or John Judge (Politician)?"
+        
+        JSON array result:
+        [
+            "What is the profession of Axel Siefer?",
+            "What is the profession of John Judge (Politician)?"    
+        ]
+    
+        ### TASK: Complex question: "{question}"
+        
+        JSON array result:
+        """
+        
+    messages = [
+        {"role": "system", "content": system_prompt.strip()},
+        {"role": "user", "content": user_prompt.strip()}
+    ]
+
     return messages
