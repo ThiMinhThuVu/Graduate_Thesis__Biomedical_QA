@@ -267,12 +267,12 @@ if __name__ == "__main__":
             preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        type_ = "comparison"
-        settings['dataset'] = f"wiki_{type_}_"
-        raw_data_file = f"data/wiki/test/test_{type_}.json"
-        list_ID = [
-            "857ae19c087311ebbd66ac1f6bf848b6",
-        ]
+        # type_ = "comparison"
+        # settings['dataset'] = f"wiki_{type_}_"
+        # raw_data_file = f"data/wiki/test/test_{type_}.json"
+        # list_ID = [
+        #     "857ae19c087311ebbd66ac1f6bf848b6",
+        # ]
              
         raw_data = load_json(raw_data_file)
         
