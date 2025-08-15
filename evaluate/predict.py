@@ -3,9 +3,9 @@ import re
 import json
 
 run = 'R11'
-q_type = 'inference'
+q_type = 'compositional'
 
-wiki_result_directory = f'wiki_{q_type}_v4_results/all_ans'
+wiki_result_directory = f'wiki_{q_type}_results/all_ans'
 pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
 os.makedirs(os.path.dirname(pred_path), exist_ok=True)
 

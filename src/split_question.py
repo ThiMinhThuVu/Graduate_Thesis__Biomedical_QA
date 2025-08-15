@@ -362,8 +362,30 @@ def split_comparison_question(question: str) -> List[str]:
                 continue 
 
     return [question]
+
+def split_bridge_comparison_fallback(question):
+    pattern = re.compile(
+        r"Do (?P<entity1>.*) and (?P<entity2>.*) have the same (?P<property>.*)\?", 
+        re.IGNORECASE
+    )
     
+    match = pattern.search(question)
+    
+    if match:
+        entity1 = match.group("entity1").strip()
+        entity2 = match.group("entity2").strip()
+        property = match.group("property").strip()
+        
+        subquestion1 = f"What is the {property} of {entity1}?"
+        subquestion2 = f"What is the {property} of {entity2}?"
+        
+        return [subquestion1, subquestion2]
+    
+    return [question]
+
 if __name__ == "__main__":
     # question = "Which film has the director died later, Men Without Souls or Yes Or No?"
-    question = "Are The Louisiana Hussy and Tate'S Voyage both from the same country?"
-    print(split_comparison_question(question))
+    # question = "Are The Louisiana Hussy and Tate'S Voyage both from the same country?"
+    question = "Do director of film Social Genocide and director of film Así No Hay Cama Que Aguante have the same nationality?"
+
+    print(split_bridge_comparison_fallback(question))

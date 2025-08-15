@@ -1,6 +1,6 @@
 from src.gpt_request import request_api
 from src.prompt import load_prompt_gen_sub, prompt_split_question
-from src.split_question import split_comparison_question
+from src.split_question import split_comparison_question, split_bridge_comparison_fallback
 from utils.utils import load_json, save_json
 import json
 import os 
@@ -83,6 +83,15 @@ RELATION_PATHS = {
         ("spouse", "child"),
         ("child", "sibling")
     ],
+     #Ngoại các rule khác
+    "married to": [
+        ("child", "father"),
+        ("child", "mother")
+    ],
+    "married": [
+        ("child", "father"),
+        ("child", "mother")
+    ],
 
     # Quan hệ học thuật/công việc (Academic/Work)
     "employer": [
@@ -94,6 +103,10 @@ RELATION_PATHS = {
     "field of work": [
         ("doctoral advisor", "field of work"),
         ("doctoral student", "field of work")
+    ],
+    "field of study": [
+        ("doctoral advisor", "field of study"),
+        ("doctoral student", "field of study")
     ]
 }
 
@@ -190,11 +203,13 @@ def generate_subquestion(question, sample_id, filepath, is_seq=True, dataset=Non
 def split_bridge_comparison_question(question, type_q=None):
     messages = prompt_split_question(question, type_q=type_q)
     response = request_api(messages, model='gpt-4o-mini')
+        
     try:
         response = json.loads(response)
     except json.JSONDecodeError:
-        print("Lỗi: Không thể phân tích JSON từ phản hồi của LLM.")
-        response = []
+        # print("Lỗi: Không thể phân tích JSON từ phản hồi của LLM.")
+        print("Dùng Regex để tách câu hỏi")
+        response = split_bridge_comparison_fallback(question)
     return response
 
 def question_decomposition(question, dataset=None, type_q=None):
@@ -209,3 +224,10 @@ def question_decomposition(question, dataset=None, type_q=None):
         return [question]
         
     
+if __name__ == "__main__":
+    # Example usage
+    question = "Do director of film Social Genocide and director of film Así No Hay Cama Que Aguante have the same nationality?"
+    type_q = "bridge_comparison"
+
+    # print(split_bridge_comparison_fallback(question))
+    print(question_decomposition(question, dataset='wiki', type_q=type_q))

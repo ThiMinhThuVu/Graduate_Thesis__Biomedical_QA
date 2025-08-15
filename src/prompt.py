@@ -1580,52 +1580,30 @@ def prompt_gen_evidences(context):
 
 
 def prompt_split_question(question, type_q=None):
-    system_prompt = """You are an AI assistant that splits a complex comparative question into a list of two simple sub-questions. Your response must only be a valid JSON array of two strings."""
+    # system_prompt = """You are an AI assistant that splits a complex comparative question into a list of two simple sub-questions. Your response must only be a valid JSON array of two strings."""
+    system_prompt = """You are an AI assistant that splits a complex comparative question into a list of two simple sub-questions. Your response must ONLY be a valid JSON array of two strings. Do not include any explanation, introductory text, or markdown formatting. Your entire response must start with '[' and end with ']'."""
 
-    if type_q == "bridge_comparison":
-        user_prompt = f"""
-        ### EXAMPLE 1: Complex question: "Do both directors of films The Bird of Happiness (film) and Bunco Squad share the same nationality?"
+    user_prompt = f"""
+    ### EXAMPLE 1: Complex question: "Do both directors of films The Bird of Happiness (film) and Bunco Squad share the same nationality?"
 
-        JSON array result:
-        [
-        "What is the nationality of the director of The Bird of Happiness (film)?",
-        "What is the nationality of the director of Bunco Squad?"
-        ]
+    JSON array result:
+    [
+    "What is the nationality of the director of The Bird of Happiness (film)?",
+    "What is the nationality of the director of Bunco Squad?"
+    ]
 
-        ### EXAMPLE 2: Complex question: "Which film has the director who is older than the other, Tiny Times 3 or Being Rose?"
+    ### EXAMPLE 2: Complex question: "Which film has the director who is older than the other, Tiny Times 3 or Being Rose?"
 
-        JSON array result:
-        [
-        "When was the director of Tiny Times 3 born?",
-        "When was the director of Being Rose born?"
-        ]
-        
-        ### TASK: Complex question: "{question}"
-        
-        JSON array result:
-        """
-    else:
-        user_prompt = f"""
-        ### EXAMPLE 1: Complex question: "Are both high schools, York High School (Virginia) and Cornwall Collegiate and Vocational School, located in the same country?"
-        
-        JSON array result:
-        [
-            "What is the location of York High School (Virginia)?",
-            "What is the location of Cornwall Collegiate and Vocational School?"
-        ]
-        
-        ### EXAMPLE 2: Complex question: "Who has a wider scope of profession, Axel Siefer or John Judge (Politician)?"
-        
-        JSON array result:
-        [
-            "What is the profession of Axel Siefer?",
-            "What is the profession of John Judge (Politician)?"    
-        ]
+    JSON array result:
+    [
+    "When was the director of Tiny Times 3 born?",
+    "When was the director of Being Rose born?"
+    ]
     
-        ### TASK: Complex question: "{question}"
-        
-        JSON array result:
-        """
+    ### TASK: Complex question: "{question}"
+    
+    JSON array result:
+    """
         
     messages = [
         {"role": "system", "content": system_prompt.strip()},
