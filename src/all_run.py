@@ -1,7 +1,7 @@
 from src.retrieval import *
 from src.generate_answer import gen_ans_multiple_choice, generate_combine_parallel_answers
 from src.decomposition import *
-from main_test import generate_answer_for_subq
+from main import generate_answer_for_subq
 
 def process_answer_with_snippet_removal(sample, search_kw, step, paths, settings, R4_output_for_step, dataset=None):
     """
