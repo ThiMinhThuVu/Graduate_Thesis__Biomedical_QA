@@ -118,13 +118,6 @@ def split_comparison_question(question: str) -> List[str]:
                 f"What is the {m.group('property')} of the director of film {m.group('entity2').strip()}?"
             ]
         ),
-        # (
-        #     re.compile(r"Do (?P<entity1>.+) and (?P<entity2>.+) (?:have|share) the same (?P<property>\w+)\?", re.IGNORECASE),
-        #     lambda m: [
-        #         f"What is the {m.group('property')} of {m.group('entity1').strip()}?",
-        #         f"What is the {m.group('property')} of {m.group('entity2').strip()}?"
-        #     ]
-        # ),
         (
             re.compile(r"Are (?P<entity1>.+) and (?P<entity2>.+) from the same (?P<property>\w+)\?", re.IGNORECASE),
             lambda m: [
@@ -167,13 +160,6 @@ def split_comparison_question(question: str) -> List[str]:
                 f"When was {m.group('entity2').strip()} born?"
             ]
         ),
-        # (
-        #     re.compile(r"Who (?:was born|died) (first|earlier|later), (?P<entity1>.+) or (?P<entity2>.+)\?", re.IGNORECASE),
-        #     lambda m: [
-        #         f"When was {m.group('entity1').strip()} born?" if 'born' in m.group(1) else f"When did {m.group('entity1').strip()} die?",
-        #         f"When was {m.group('entity2').strip()} born?" if 'born' in m.group(1) else f"When did {m.group('entity2').strip()} die?"
-        #     ]
-        # ),
         (
             re.compile(r"Who was born (first|earlier|later), (?P<entity1>.+) or (?P<entity2>.+)\?", re.IGNORECASE),
             lambda m: [
@@ -349,6 +335,20 @@ def split_comparison_question(question: str) -> List[str]:
                 f"What is the {m.group('property')} of origin of the magazine {m.group('entity2').strip()}"
             ]
         ),
+        # (
+        #     re.compile(r"Do (?P<entity1>.+) and (?P<entity2>.+) share the same (?P<property>\w+)\?", re.IGNORECASE),
+        #     lambda m: [
+        #         f"What is the {m.group('property')} of {m.group('entity1').strip()}?",
+        #         f"What is the {m.group('property')} of {m.group('entity2').strip()}?"
+        #     ]
+        # )
+        (
+            re.compile(r"(?:Do|Were|Are) (?P<entity1>.+?) and (?P<entity2>.+?) (?:have|share)?(?:of)? the same (?P<property>\w+)\?", re.IGNORECASE),
+            lambda m: [
+                f"What is the {m.group('property')} of {m.group('entity1').strip()}?",
+                f"What is the {m.group('property')} of {m.group('entity2').strip()}?"
+            ]
+        )
     ]
 
     for pattern, formatter in rules:
@@ -386,6 +386,6 @@ def split_bridge_comparison_fallback(question):
 if __name__ == "__main__":
     # question = "Which film has the director died later, Men Without Souls or Yes Or No?"
     # question = "Are The Louisiana Hussy and Tate'S Voyage both from the same country?"
-    question = "Do director of film Social Genocide and director of film Así No Hay Cama Que Aguante have the same nationality?"
-
-    print(split_bridge_comparison_fallback(question))
+    question = "Were John Baillie Mcintosh and Daniel I. Block of the same nationality?"
+    print(split_comparison_question(question))
+    # print(split_bridge_comparison_fallback(question))

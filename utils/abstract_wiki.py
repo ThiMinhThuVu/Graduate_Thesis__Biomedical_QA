@@ -60,16 +60,6 @@ def crawl_abstract_wiki(title, article_url, lang="en"):
 
     return get_wiki_abstract(article_url)
 
-# def crawl_abstract_wiki(title, url, lang="en"):
-#     title = title.replace(' ', '_')
-#     url = f"https://{lang}.wikipedia.org/api/rest_v1/page/summary/{title}"
-#     response = requests.get(url)
-#     if response.status_code == 200:
-#         data = response.json()
-#         return data.get("extract")  # Trả về abstract
-#     else:
-#         return get_wiki_abstract(url)
-
 if __name__ == "__main__":
     link = "https://en.wikipedia.org/wiki/Move_(1970_film)"
     title = "Move (1970 film)"

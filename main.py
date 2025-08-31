@@ -7,7 +7,9 @@ from src.decomposition import *
 from src.retrieval import *
 from src.extract_ner import *
 from src.generate_answer import *
+from src.all_run import *
 import pandas as pd
+
 
 with open('data/wikipedia_cache.pkl', 'rb') as f:
     wiki_cache_data = pickle.load(f)
@@ -21,15 +23,14 @@ except:
 
 nlp_standard = spacy.load("en_core_web_lg")  # Standard English model
 
-def generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, dataset=None, type_q=None):
+def generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, settings, paths, dataset=None, type_q=None):
     if dataset in ["wiki", "cwq"]:
         return generate_answer(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
     else:
         ner_filepath = paths['ner']
         output_ner = load_json(ner_filepath) if os.path.exists(ner_filepath) else {}
         
-        if step in output_ner:
-            print(f"Cache hit for NER step {step}.")
+        if step in output_ner and settings['run'] != "R7":
             bio_entities = output_ner[step]
         else:
             print(f"Extracting entities.")
@@ -41,7 +42,6 @@ def generate_answer_for_subq(subquestion, key_entities, retrieval_information, s
 
         return generate_answer(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
 
-list_k_context = []
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None):
     sample_id = str(sample['QIDX']) 
     paths = setup_paths(settings, sample_id)
@@ -75,11 +75,18 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         path_subq_output, n_path = generate_subquestion(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
         
         for path_i in range(n_path):
-            subq_output = path_subq_output[str(path_i)]
+            path_i = str(path_i)
+            subq_output = path_subq_output[path_i]
+            dict_ans[q_i][path_i] = {}
+            qi_final_answers = {}
+            check_path_i = False
             
             if os.path.exists(ans_filepath):
                 qi_final_answers = load_json(ans_filepath)
-                
+                if path_i in qi_final_answers:
+                    check_path_i = True
+                    
+            if check_path_i:
                 for step, item in subq_output.items():
                     step = str(step)
                     subquestion = item['subquestion']
@@ -93,21 +100,22 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     else:
                         key_entities = search_kw_subq + " " + short_ans
                     
-                    retrieval_information, cnt_k_context = perform_retrieval(sample, key_entities, step, paths, settings)  
-                    list_k_context.append(cnt_k_context)
+                    retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)  
                     
-                    short_ans = qi_final_answers[step]["short_answer"]
-                    long_ans = qi_final_answers[step]["long_answer"]
+                    short_ans = qi_final_answers[path_i][step]["short_answer"]
+                    long_ans = qi_final_answers[path_i][step]["long_answer"]
                     
-                    dict_ans[q_i][step] = {}
-                    dict_ans[q_i][step]["question"] = subquestion
-                    dict_ans[q_i][step]["search_keyword"] = search_kw_subq
-                    dict_ans[q_i][step]["key_entity"] = key_entities
-                    dict_ans[q_i][step]["short_answer"] = short_ans
-                    dict_ans[q_i][step]["long_answer"] = long_ans               
+                    if step not in dict_ans[q_i][path_i]:
+                        dict_ans[q_i][path_i][step] = {}
+                    dict_ans[q_i][path_i][step]["question"] = subquestion
+                    dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq
+                    dict_ans[q_i][path_i][step]["key_entity"] = key_entities
+                    dict_ans[q_i][path_i][step]["short_answer"] = short_ans
+                    dict_ans[q_i][path_i][step]["long_answer"] = long_ans
+                    dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
             else:
                 short_ans = ""
-                qi_final_answers = {}
+                qi_final_answers[path_i] = {}
                 
                 for step, item in subq_output.items():
                     step = str(step)
@@ -124,31 +132,26 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                 
                     print(f"\n--- Processing Step {step}: {subquestion} ---")        
                     
-                    retrieval_information, cnt_k_context = perform_retrieval(sample, key_entities, step, paths, settings)  
-                    # list_k_context.append(cnt_k_context)
+                    retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)  
                     
-                    answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, dataset=dataset, type_q=type_q)
+                    answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
                     short_ans = answer_generation["short_answer"]
                     long_ans = answer_generation["long_answer"]
-                    
-                    if short_ans.lower() == "insufficient information": # sang path tiếp theo 
-                        print(f"{path_i}-Step {step}-Insufficient information: {subquestion}")
-                        break
-                    
-                    qi_final_answers[step] = answer_generation
+                                        
+                    qi_final_answers[path_i][step] = answer_generation
                     
                     print(f"Short Answer for Step {step}: {short_ans}")
 
-                    dict_ans[q_i][step] = {}
-                    dict_ans[q_i][step]["question"] = subquestion
-                    dict_ans[q_i][step]["search_keyword"] = search_kw_subq
-                    dict_ans[q_i][step]["key_entity"] = key_entities
-                    dict_ans[q_i][step]["short_answer"] = short_ans
-                    dict_ans[q_i][step]["long_answer"] = long_ans
-
-            if short_ans.lower() == "insufficient information": # sang path tiếp theo
-                print(f"{path_i}-Insufficient information")
-                continue
+                    dict_ans[q_i][path_i][step] = {}
+                    dict_ans[q_i][path_i][step]["question"] = subquestion
+                    dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq
+                    dict_ans[q_i][path_i][step]["key_entity"] = key_entities
+                    dict_ans[q_i][path_i][step]["short_answer"] = short_ans
+                    dict_ans[q_i][path_i][step]["long_answer"] = long_ans
+                    dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
+                    
+                    if short_ans.lower() == "insufficient information": # sang path tiếp theo 
+                        break
             
             # Lấy output step cuối cùng của qi:
             dict_ans[q_i]['final_qi']["question"] = question
@@ -160,17 +163,6 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
             all_context += f"{q_i}.{question} - {short_ans}, {long_ans}\n\n"
             save_json(qi_final_answers, ans_filepath)
             print(f"\nFinal answer saved to {ans_filepath}")
-            
-    if dict_ans[q_i]['final_qi'] == {}:
-        print(f"All path - Insufficient information")
-        dict_ans['final_answer'] = {
-            'long_answer': "Insufficient information",
-            'short_answer': "Insufficient information"
-        }
-        save_json(dict_ans, file_all_ans)
-        print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
-        print(f"\nSaved to {file_all_ans}")
-        return
         
     if n_qi > 1:
         combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
@@ -192,14 +184,14 @@ if __name__ == "__main__":
     configs = load_json(config_path)
     datasets = ["medhop", "bioasq", "cwq", "wiki"]
     batchs = ["b1", "b2", "b3", "b4"] # medhop chỉ có 2 batch (unconfused, confused)
-    runs = ["R1", "R4", "R5", "R6", "R10", "R11", "R12"]
+    runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12"]
     
     #edit config
-    run = runs[5]  #5 = R11
-    threads = [0, 0] # Điền threads vào đây: ví dụ [0, 100]
+    run = runs[6]  #1: R4, 4: R7,  6: R11, 7: R12
+    threads = [0, 3] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
-    important = False # False or True: Chỉ dùng cho medhop
+    important = True # False or True: Chỉ dùng cho medhop
     
     settings = configs[dataset][run]
     settings["wiki_cache"] = wiki_cache_data
@@ -220,10 +212,14 @@ if __name__ == "__main__":
                     continue 
                 
                 is_seq = sample["is_sequence"]
-                if run == "R5":
-                    is_seq = False
+                sample['type'] = ''
                 
-                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
+                if run == "R5":
+                    is_seq = False                
+                if run == "R7":
+                    preprocess_sample_R7(sample, settings, dataset=dataset)
+                else:
+                    preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
         else:
             if batch == "b1":
                 settings['dataset'] = "medhop_unconfused_"
@@ -232,11 +228,15 @@ if __name__ == "__main__":
             raw_data = pd.read_csv(raw_data_file)
                 
             for index, sample in raw_data.iloc[threads[0]:threads[1]].iterrows():       
-                is_seq = sample["is_sequence"]                
+                is_seq = sample["is_sequence"]     
+                sample['type'] = ''
+                           
                 if run == "R5":
                     is_seq = False
-                
-                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
+                if run == "R7":
+                    preprocess_sample_R7(sample, settings, dataset=dataset)
+                else:
+                    preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
         
     elif dataset == "bioasq":
         raw_data = load_json(raw_data_file)
@@ -247,11 +247,15 @@ if __name__ == "__main__":
             
             settings["context"] = sample["context"]       
             is_seq = sample["is_sequence"]            
+            sample['type'] = ''
+            
             if run == "R5":
                 is_seq = False
-                
-            preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
-           
+            if run == "R7":
+                preprocess_sample_R7(sample, settings, dataset=dataset)
+            else:
+                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
+
     elif dataset == "cwq":
         raw_data_file = configs[dataset]["raw_data_file"]
         raw_data = load_json(raw_data_file)
@@ -261,28 +265,30 @@ if __name__ == "__main__":
                 continue
 
             is_seq = sample["is_sequence"]
+            sample['type'] = ''
+            
             if run == "R5":
                 is_seq = False
-                
-            preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
+            if run == "R7":
+                preprocess_sample_R7(sample, settings, dataset=dataset)
+            else:
+                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        # type_ = "inference"
-        # settings['dataset'] = f"wiki_{type_}_"
-        # raw_data_file = f"data/wiki/test/test_{type_}.json"
-             
         raw_data = load_json(raw_data_file)
-        
+       
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
             if not (threads[0] <= idx < threads[1]):
                 continue 
-        
+            
             type_q = sample['type']
             is_seq = sample["is_sequence"]
             
             if run == "R5":
                 is_seq = False
-                
-            preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q)
-            
-    
+            if run == "R7":
+                preprocess_sample_R7(sample, settings, dataset=dataset)
+            if run == "R12":
+                preprocess_sample_R12(sample, settings, dataset=dataset, type_q=type_q)
+            else:
+                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q)

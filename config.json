@@ -105,6 +105,16 @@
             "search_key_entity": "False",
             "get_context_2wiki": "False"
         },
+        "R7": {
+            "dataset": "medhop_", 
+            "get_gg": "True",
+            "get_wiki": "True",
+            "get_crawl_wiki": "True",
+            "run": "R7",
+            "context": "",
+            "search_key_entity": "False",
+            "get_context_2wiki": "False"
+        },
         "R10": {
             "dataset": "medhop_", 
             "get_gg": "False",
@@ -175,7 +185,7 @@
     "wiki": {
         "chrunk_mapping_file": "",
         "raw_data_file": {
-            "b1": "data/wiki/train/path.json"
+            "b1": "data/wiki/dev/path.json"
         },
         "R1": {
             "dataset": "wiki_", 
@@ -217,6 +227,16 @@
             "search_key_entity": "False",
             "get_context_2wiki": "False"
         },
+        "R7": {
+            "dataset": "wiki_", 
+            "get_gg": "False",
+            "get_wiki": "True",
+            "get_crawl_wiki": "False",
+            "run": "R7",
+            "context": "",
+            "search_key_entity": "True",
+            "get_context_2wiki": "True"
+        },
         "R10": {
             "dataset": "wiki_", 
             "get_gg": "False",
@@ -239,8 +259,8 @@
         },
         "R12": {
             "dataset": "wiki_", 
-            "get_gg": "False",
-            "get_wiki": "True",
+            "get_gg": "True",
+            "get_wiki": "False",
             "get_crawl_wiki": "False",
             "run": "R12",
             "context": "",

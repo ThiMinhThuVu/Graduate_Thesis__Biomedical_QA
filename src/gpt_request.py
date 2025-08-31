@@ -60,13 +60,10 @@ def request_api(messages, model, temperature=0):
 
     raise RuntimeError("All APIs failed after multiple retries.")
 
-def search_google(query, before_date="2021-04-07"):
+def search_google(query):
     max_retries = 10
     retry_delay = 2
-    
-    if before_date:
-        query = f"{query} before:{before_date}"
-        
+   
     for attempt in range(max_retries):
         try:
             response = requests.post(

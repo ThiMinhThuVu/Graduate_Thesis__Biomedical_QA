@@ -143,3 +143,5 @@ def gen_evidences(data, model="gpt-4o-mini"):
         print(f"Raw response: {result_json}")
         
     return result_dict
+
+

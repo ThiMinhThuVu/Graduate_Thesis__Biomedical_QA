@@ -10,6 +10,7 @@ import re
 import requests
 import matplotlib.pyplot as plt
 from collections import Counter
+from utils.crawl_wikipage import crawl_wikipedia_page
 
 move_section_list = [
     "table of contents",
@@ -331,7 +332,8 @@ def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
         "ner": os.path.join(dirs["ner"], f"{run}_step_3_ner_{sample_id}.json"),
         "qi_answer": os.path.join(dirs["results"], f"{run}_step_3b_ans_{sample_id}.json"),
         "final_answer": os.path.join(dirs["all_ans"], f"{run}_step_3b_all_ans_{sample_id}.json"),
-        "evidence": os.path.join(dirs["evidence"], f"{run}_evidence_{sample_id}.json")
+        "evidence": os.path.join(dirs["evidence"], f"{run}_evidence_{sample_id}.json"),
+        "ans_old": os.path.join(dirs["all_ans"], f"R11_step_3b_all_ans_{sample_id}.json"),
     }
     return paths
 
@@ -354,6 +356,40 @@ def plot_k_context(list_k_context):
 
     plt.show()
     
+    
+
+def R7_crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, wiki_file_crawl, paragraph_file, step, topk = 3):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
+    step = str(step)
+    results = {}    
+    cnt_wiki = 0
+    
+    for result in wiki_search: # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
+        link = result['link']
+        if 'list' in link.lower():
+            continue
+
+        cnt_wiki += 1
+        if cnt_wiki > topk:
+            break
+
+        if link in wiki_cache_data:
+            wiki_content = wiki_cache_data[link]
+        else:
+            print(f"Crawling Wikipedia page: {link}")
+            wiki_content = crawl_wikipedia_page(link)
+
+            if len(wiki_content['content']) != 0:
+                wiki_content = wiki_pre_processing(wiki_content)
+                wiki_cache_data[link] = wiki_content
+
+        if wiki_content:
+            results[link] = wiki_content
+
+    output_paragraph, all_context = get_paragraphs_wiki_result(results, search_kw)    
+
+    return all_context
+
+
 class DisableKeyboardInterrupt:
     def __enter__(self):
         self.signal_received = False

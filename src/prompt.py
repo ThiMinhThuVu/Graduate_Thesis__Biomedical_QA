@@ -920,7 +920,7 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                 }},
                 {{
                     "subquestion": "What country of citizenship is that film director from?",
-                    "search_keyword": "country of citizenship director",
+                    "search_keyword": "country of citizenship",
                     "key_entity": ""
                 }}
             ]
@@ -936,7 +936,7 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                     "key_entity": "Blindfold (1966 Film)"
                 }},
                 {{
-                    "subquestion": "When was that director born?",
+                    "subquestion": "When was that person born?",
                     "search_keyword": "date of birth",
                     "key_entity": ""
                 }}
@@ -971,8 +971,8 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                     
                 }},
                 {{
-                    "subquestion": "Where did that director die?",
-                    "search_keyword": "place of death director",
+                    "subquestion": "Where did that person die?",
+                    "search_keyword": "place of death",
                     "key_entity": ""
                 }}
             ]
@@ -988,8 +988,8 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                     "key_entity": "Just Once A Great Lady (1957 Film)"
                 }},
                 {{
-                    "subquestion": "Who was the spouse of that director?",
-                    "search_keyword": "spouse of director",
+                    "subquestion": "Who was the spouse of that person?",
+                    "search_keyword": "spouse of",
                     "key_entity": ""
                 }}
             ]
@@ -1004,7 +1004,7 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
                     "key_entity": "My Friends Told Me About You"
                 }},
                 {{
-                    "subquestion": "When was that producer born?",
+                    "subquestion": "When was that person born?",
                     "search_keyword": "date of birth",
                     "key_entity": ""
                 }}
@@ -1309,30 +1309,57 @@ def prompt_gen_answer_cwq_step_3b(question, key_entities, context):
 
 def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None):
     if type_q in ["bridge_comparison", "comparison"]:
+    #     prompt = f"""Question: {question}
+    #        Instructions:
+    #        1. Analyze the question and the provided information to determine the answer.
+    #        2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
+    #        - long_answer: A detailed explanation synthesized from the information.
+    #        - short_answer: A single string with the direct answer. Strictly follow these rules:
+    #        * **1. Yes/No Questions:** For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No".
+    #        * **2. Default - Single Answer:** For all other questions, provide only the single, most direct answer from the information given.
+    #            - The entity type must precisely match what and how specific the question asks for.
+    #            - *Example (Location):* If multiple place names are given, select ONLY the city or state-level location (e.g. London from Kensington, London, UK). If no city or state is available, use ONLY the smallest location level mentioned.               - Do not add any additional information in parentheses.
+    #        * **3. Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
+
+    #    3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
+
+    #    Information:
+    #    Key entities: {key_entities}
+    #    Context: {context}
+
+    #    Response (strict JSON):
+    #    {{
+    #    "long_answer": "detailed explanation",
+    #    "short_answer": "answer as per rules"
+    #    }}
+    #    """
         prompt = f"""Question: {question}
-           Instructions:
-           1. Analyze the question and the provided information to determine the answer.
-           2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
-           - long_answer: A detailed explanation synthesized from the information.
-           - short_answer: A single string with the direct answer. Strictly follow these rules:
-           * **1. Yes/No Questions:** For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No".
-           * **2. Default - Single Answer:** For all other questions, provide only the single, most direct answer from the information given.
-               - The entity type must precisely match what and how specific the question asks for.
-               - *Example (Location):* If multiple place names are given, select ONLY the city or state-level location (e.g. London from Kensington, London, UK). If no city or state is available, use ONLY the smallest location level mentioned.               - Do not add any additional information in parentheses.
-           * **3. Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
+            Instructions:
+            1. Analyze the question and the provided information to determine the answer.
+            2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
+            - long_answer: A detailed explanation synthesized from the information.
+            - short_answer: A single string with the direct answer. Strictly follow these rules:
+            * **1. Yes/No Questions:** For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No".
+            * **2. Default - Single Answer:** For all other questions, provide only the single, most direct answer.
+            - First, identify the person whose role matches the role in the question (e.g., director, footballer).
+            - If no specific role is mentioned or if the requested role is not explicitly stated but the context describes a person performing multiple key roles (like writing, producing, and starring in a film), infer that this person is the subject of the question.
+            - Then, find the requested information (e.g., date of birth) for that person.
+            - The answer must be a direct value from the context.
+            - Do not add any additional information in parentheses.
+            * **3. Insufficient information:** If the question cannot be answered because the requested information is not present for any person in the context, output exactly “Insufficient information”.
 
-       3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
+            3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
 
-       Information:
-       Key entities: {key_entities}
-       Context: {context}
+            Information:
+            Key entities: {key_entities}
+            Context: {context}
 
-       Response (strict JSON):
-       {{
-       "long_answer": "detailed explanation",
-       "short_answer": "answer as per rules"
-       }}
-       """
+            Response (strict JSON):
+            {{
+            "long_answer": "lời giải thích chi tiết",
+            "short_answer": "câu trả lời theo quy tắc"
+            }}
+            """
     elif type_q == "inference":
         prompt = f"""Question: {question}
         Instructions:
@@ -1382,64 +1409,116 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
         }}
         """
     elif type_q == "compositional":
-        prompt = f"""Question: {question}
-        Instructions:
-        Your task is to act as an expert intelligence analyst. Your primary goal is to provide the **single most probable answer** to the question. Generate a single, valid JSON object.
+        # prompt = f"""Question: {question}
+        # Instructions:
+        # Your task is to act as an expert intelligence analyst. Your primary goal is to provide the **single most probable answer** to the question. Generate a single, valid JSON object.
 
-        ### MASTER INSTRUCTION: SYNTHESIZE ALL CONTEXT ###
-        This is the most important rule. The `context` you receive is a LIST of multiple documents. You are REQUIRED to:
-        1.  **Read all provided documents** to understand the full picture.
-        2.  **Actively connect clues between documents.** The final answer is often found by combining a piece of information from one document with a fact from another.
-        3.  **Treat Synonyms as the Same Entity:** If Document A mentions "John Doe" and Document B states "Jean Doe is often credited as John Doe", you MUST recognize they are the same person.
-            * **Crucial Example:** To find the mother of "John Daumery" (director of "Blind Spot"), you must connect the "Blind Spot" document (which names him) with the "Jean Daumery" document (which links the names and names the mother, "Carrie Daumery").
+        # ### MASTER INSTRUCTION: SYNTHESIZE ALL CONTEXT ###
+        # This is the most important rule. The `context` you receive is a LIST of multiple documents. You are REQUIRED to:
+        # 1.  **Read all provided documents** to understand the full picture.
+        # 2.  **Actively connect clues between documents.** The final answer is often found by combining a piece of information from one document with a fact from another.
+        # 3.  **Treat Synonyms as the Same Entity:** If Document A mentions "John Doe" and Document B states "Jean Doe is often credited as John Doe", you MUST recognize they are the same person.
+        #     * **Crucial Example:** To find the mother of "John Daumery" (director of "Blind Spot"), you must connect the "Blind Spot" document (which names him) with the "Jean Daumery" document (which links the names and names the mother, "Carrie Daumery").
 
-        ### CORE DIRECTIVE ###
-        You must determine if the answer is **Explicit** (directly stated) or **Inferred** (logically deduced). An inferred answer from strong evidence is REQUIRED and is considered a correct answer. Do not be overly cautious.
+        # ### CORE DIRECTIVE ###
+        # You must determine if the answer is **Explicit** (directly stated) or **Inferred** (logically deduced). An inferred answer from strong evidence is REQUIRED and is considered a correct answer. Do not be overly cautious.
 
-        ### ANSWER DERIVATION RULES ###
-        1.  **Search for an Explicit Answer First:** If the context directly states the answer, use that information.
+        # ### ANSWER DERIVATION RULES ###
+        # 1.  **Search for an Explicit Answer First:** If the context directly states the answer, use that information.
 
-        ### ANSWER DERIVATION RULES ###
-        1.  **Search for an Explicit Answer First:** If the context directly states the answer, use that information.
+        # ### ANSWER DERIVATION RULES ###
+        # 1.  **Search for an Explicit Answer First:** If the context directly states the answer, use that information.
 
-        2.  **NEW: Tie-Breaker for Multiple Explicit Answers:** If you find multiple valid, explicit answers for the same question (e.g., a performer has won multiple awards), you MUST apply a hierarchy to select the single best answer.
-            * **For Awards:** An induction into a **Hall of Fame** or a **Lifetime Achievement Award** MUST be prioritized over any other annual or one-time award. If awards are of similar stature, select the most recent one.
+        # 2.  **NEW: Tie-Breaker for Multiple Explicit Answers:** If you find multiple valid, explicit answers for the same question (e.g., a performer has won multiple awards), you MUST apply a hierarchy to select the single best answer.
+        #     * **For Awards:** An induction into a **Hall of Fame** or a **Lifetime Achievement Award** MUST be prioritized over any other annual or one-time award. If awards are of similar stature, select the most recent one.
 
-        3.  **MANDATORY INFERENCE (If no explicit answer):** If no explicit answer exists, you MUST provide an inferred answer if there are strong clues. Strong clues include, in order of priority:
-            * **(i) Long-Term Residence/Work:** This is the strongest clue. If a person lived or worked in a location for most of their life, that is the inferred answer.
-            * **(ii) Implied Professional Roles:** A related creative or leadership role is a strong clue if the specific role in the question is not mentioned.
-                * *Example:* For an old film, if the context only mentions "screenplay by Alfred Sterling" and no director is named, "Alfred Sterling" IS the inferred director.
-            * **(iii) Place of Birth (as Fallback):** If the only location clue is a birthplace and there's no mention of migration, that is the inferred answer.
+        # 3.  **MANDATORY INFERENCE (If no explicit answer):** If no explicit answer exists, you MUST provide an inferred answer if there are strong clues. Strong clues include, in order of priority:
+        #     * **(i) Long-Term Residence/Work:** This is the strongest clue. If a person lived or worked in a location for most of their life, that is the inferred answer.
+        #     * **(ii) Implied Professional Roles:** A related creative or leadership role is a strong clue if the specific role in the question is not mentioned.
+        #         * *Example:* For an old film, if the context only mentions "screenplay by Alfred Sterling" and no director is named, "Alfred Sterling" IS the inferred director.
+        #     * **(iii) Place of Birth (as Fallback):** If the only location clue is a birthplace and there's no mention of migration, that is the inferred answer.
 
-        4.  **Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
+        # 4.  **Insufficient information:** If the question cannot be answered with the given information, output exactly “Insufficient information”.
 
-        ### OUTPUT FORMATTING (CRITICAL) ###
-        After finding the answer, the `short_answer` MUST be formatted to be as concise and specific as possible by following these non-negotiable principles:
+        # ### OUTPUT FORMATTING (CRITICAL) ###
+        # After finding the answer, the `short_answer` MUST be formatted to be as concise and specific as possible by following these non-negotiable principles:
 
-        1.  **For Locations, Extract the MOST Specific Entity:**
-            * This is the highest priority formatting rule. You MUST return ONLY the smallest unit mentioned (the specific place, town, or city). Discard all larger regions like states or countries.
-            * ***Examples:*** **"Valoria, Republic of Eldoria" -> "Valoria"; "Silver Creek, Lunara Province" -> "Silver Creek"; "Starfall Ranch, Starlight City" -> "Starfall Ranch".**
+        # 1.  **For Locations, Extract the MOST Specific Entity:**
+        #     * This is the highest priority formatting rule. You MUST return ONLY the smallest unit mentioned (the specific place, town, or city). Discard all larger regions like states or countries.
+        #     * ***Examples:*** **"Valoria, Republic of Eldoria" -> "Valoria"; "Silver Creek, Lunara Province" -> "Silver Creek"; "Starfall Ranch, Starlight City" -> "Starfall Ranch".**
 
-        2.  **For General Terms, Use the Broadest Category:**
-            * ***Example:*** Use "cancer" instead of "bowel cancer".
+        # 2.  **For General Terms, Use the Broadest Category:**
+        #     * ***Example:*** Use "cancer" instead of "bowel cancer".
         
-        3.  **For Nationalities, follow this strict priority order:**
-            * **(i) For patterns like "X-born Y" (e.g., "Spanish-born Brazilian"), the answer is ALWAYS "X".**
-            * **(ii) For hyphenated nationalities like "X-Y" (e.g., "Mexican-American"), the answer is "X".**
-            * **(iii) For non-hyphenated dual nationalities like "X Y" (e.g., "German Italian"), the answer is "Y".**
+        # 3.  **For Nationalities, follow this strict priority order:**
+        #     * **(i) For patterns like "X-born Y" (e.g., "Spanish-born Brazilian"), the answer is ALWAYS "X".**
+        #     * **(ii) For hyphenated nationalities like "X-Y" (e.g., "Mexican-American"), the answer is "X".**
+        #     * **(iii) For non-hyphenated dual nationalities like "X Y" (e.g., "German Italian"), the answer is "Y".**
 
-        ---
-        Information:
-        Key entities: {key_entities}
-        Context: {context}
+        # ---
+        # Information:
+        # Key entities: {key_entities}
+        # Context: {context}
 
-        Response (strict JSON):
-        {{
-        "long_answer": "Explain your reasoning, stating clearly if the answer was explicit or inferred from evidence, and which documents were used.",
-        "short_answer": "The single most probable answer, formatted according to the critical output rules."
-        }}
-        """
-   
+        # Response (strict JSON):
+        # {{
+        # "long_answer": "Explain your reasoning, stating clearly if the answer was explicit or inferred from evidence, and which documents were used.",
+        # "short_answer": "The single most probable answer, formatted according to the critical output rules."
+        # }}
+        # """
+        
+        prompt = f"""Question: {question}
+            Instructions:
+            You are an expert intelligence analyst. Your goal is to provide the **single most probable answer** to the question. Generate a single, valid JSON object.
+
+            ### MASTER INSTRUCTION: SYNTHESIZE ALL CONTEXT ###
+            - Read ALL documents carefully.
+            - Connect information across documents (e.g., if one doc names a person and another doc gives details under a synonym, link them).
+            - Synonyms or alternate names MUST be treated as the same entity.
+
+            ### CORE DIRECTIVE ###
+            - You must decide if the answer is **Explicit** (directly stated) or **Inferred** (logically deduced). If explicit evidence exists, use it.  
+            - If not, you are REQUIRED to infer from strong clues instead of saying "unknown", unless absolutely no clue exists.
+            - Do NOT generate names of cities, regions, or countries unless they are present in the context text itself.
+
+            ### ANSWER DERIVATION RULES ###
+            1. **Explicit first**: If the answer is directly stated, use it.
+            2. **Tie-breaker**: If multiple explicit answers exist, choose the most significant one (e.g., Hall of Fame > annual award, or the most recent).
+            3. **Mandatory inference** (if no explicit answer):
+            * (i) Long-term residence or workplace (strongest clue).
+            * (ii) Professional role implied by context.
+            * (iii) Nationality-based inference (fallback for “Where” questions):
+                - If context only gives nationality (e.g., "Indian composer") and no other location clues, infer birthplace or death place as that country.
+                - If there is evidence of migration, use the most consistent location clue instead of nationality.
+            4. **Insufficient information**: If no explicit answer and no strong inference clues, output exactly "Insufficient information".
+
+            ### RULES FOR “WHERE” QUESTIONS ###
+            - Always output the **most specific location** available (city/town > state/province > country).
+            - If birthplace or death place is not directly mentioned:
+            * Use nationality ⇒ country as a fallback.
+            * Clearly mark the answer as **inferred** in the long_answer explanation.
+            
+
+            ### OUTPUT FORMATTING (CRITICAL) ###
+            - For **locations**, return the most specific unit (town/city, not country, unless only country is available).
+            - For **general categories**, choose the broadest category (e.g., "cancer" not "bowel cancer").
+            - For **nationalities**:
+            * If "X-born Y" ⇒ answer "X".
+            * If "X-Y" nationality ⇒ answer "X".
+            * If "X Y" nationality ⇒ answer "Y".
+
+            ---
+            Information:
+            Key entities: {key_entities}
+            Context: {context}
+
+            Response (strict JSON):
+            {{
+            "long_answer": "Explain reasoning, clearly state if explicit or inferred, and cite which clues/documents were used.",
+            "short_answer": "The single most probable answer, formatted according to the output rules."
+            }}
+            """
+          
     return prompt
 
 
@@ -1579,7 +1658,7 @@ def prompt_gen_evidences(context):
     return messages
 
 
-def prompt_split_question(question, type_q=None):
+def prompt_split_question(question):
     # system_prompt = """You are an AI assistant that splits a complex comparative question into a list of two simple sub-questions. Your response must only be a valid JSON array of two strings."""
     system_prompt = """You are an AI assistant that splits a complex comparative question into a list of two simple sub-questions. Your response must ONLY be a valid JSON array of two strings. Do not include any explanation, introductory text, or markdown formatting. Your entire response must start with '[' and end with ']'."""
 
@@ -1588,18 +1667,18 @@ def prompt_split_question(question, type_q=None):
 
     JSON array result:
     [
-    "What is the nationality of the director of The Bird of Happiness (film)?",
-    "What is the nationality of the director of Bunco Squad?"
+    "What is the nationality of the director of 'The Bird of Happiness (film)'?",
+    "What is the nationality of the director of'Bunco Squad'?"
     ]
 
     ### EXAMPLE 2: Complex question: "Which film has the director who is older than the other, Tiny Times 3 or Being Rose?"
 
     JSON array result:
     [
-    "When was the director of Tiny Times 3 born?",
-    "When was the director of Being Rose born?"
+    "What is the date of birth of the director of 'Tiny Times 3'?",
+    "What is the date of birth of the director of 'Being Rose'?"
     ]
-    
+
     ### TASK: Complex question: "{question}"
     
     JSON array result:
@@ -1609,5 +1688,5 @@ def prompt_split_question(question, type_q=None):
         {"role": "system", "content": system_prompt.strip()},
         {"role": "user", "content": user_prompt.strip()}
     ]
-
+         
     return messages

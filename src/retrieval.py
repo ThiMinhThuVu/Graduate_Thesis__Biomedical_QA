@@ -1,10 +1,14 @@
 from src.gpt_request import search_google
 from utils.crawl_wikipage import crawl_wikipedia_page
 from utils.abstract_wiki import crawl_abstract_wiki
+from utils.get_abs_wiki_history import get_abs_wiki_history
 import json
 import os
 from utils.utils import *
 from thefuzz import fuzz
+import re
+from sentence_transformers import SentenceTransformer
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
 
 def retrieval_google(search_kw, step, filepath):
@@ -97,6 +101,7 @@ def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, wiki_file_crawl, pa
 
     return all_context
 
+
 def format_search_results(search_results, topk=5):
     context_parts = []
     for i, result in enumerate(search_results):            
@@ -106,6 +111,7 @@ def format_search_results(search_results, topk=5):
         context_parts.append(f"- {result['title']} {result['snippet']}")
                                        
     return "\n".join(context_parts)
+
 
 def format_search_results_wiki_abs(search_results, step, filepath, topk=5):
     context_parts = []
@@ -135,7 +141,8 @@ def format_search_results_wiki_abs(search_results, step, filepath, topk=5):
         url = result['link']
         if "List_" in url:
             continue
-        abs_wiki = crawl_abstract_wiki(title, url)
+
+        abs_wiki = get_abs_wiki_history(title)
         context_parts.append(f"- {title}: {result['snippet']} {abs_wiki}")
         
         output_wiki[step]["dict_para"][result['link']] = {'title': title,
@@ -144,40 +151,6 @@ def format_search_results_wiki_abs(search_results, step, filepath, topk=5):
     save_json(output_wiki, filepath)
     return "\n".join(context_parts)
 
-# def similarity(search, golden, threshold=0.9):
-#     if search.lower() == golden.lower():
-#         return True
-    
-#     vectorizer = TfidfVectorizer()
-#     tfidf_matrix = vectorizer.fit_transform([search, golden])
-#     similarity_matrix = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])
-#     # Chuyên dùng để tìm sự tương đồng tên người
-#     score_fuzz = fuzz.token_set_ratio(search, golden)
-    
-#     if similarity_matrix[0][0] > threshold:
-#         return True
-#     elif score_fuzz > 90:
-#         return True
-#     elif similarity_matrix[0][0] > 0.70 and (golden.lower() in search.lower() or search.lower() in golden.lower()):
-#         return True
-#     else:
-#         return False    
-    
-
-# def retrieval_context_2wiki(search_kw, sample):
-#     all_context = sample['context']
-#     result = ""
-        
-#     for item in all_context:
-#         key_entities = item[0]
-#         if similarity(search_kw, key_entities):
-#             result += key_entities + ": "
-#             for sent in item[1]:
-#                 result += sent + " "
-                
-#             result += "\n\n"
-        
-#     return result.strip()
 
 def caculate_scores(search, golden):
     if search.lower() == golden.lower():
@@ -196,7 +169,6 @@ def caculate_scores(search, golden):
     
     return {'cosine': cosine_sim, 'fuzz': score_fuzz}
 
-import re
 
 def normalize_text(text):
     """Loại bỏ nội dung trong ngoặc đơn và các khoảng trắng thừa."""
@@ -205,11 +177,12 @@ def normalize_text(text):
     # Loại bỏ khoảng trắng thừa ở đầu và cuối
     return text.strip()
 
-def retrieval_context_2wiki(search_kw, sample, cos_threshold=0.7, fuzz_threshold=0.7):
+def retrieval_context_2wiki(search_kw, sample, vec_embed=False, top_k=1, cos_threshold=0.7, fuzz_threshold=0.7, vecembed_threshold=0.45):
     search_kw = search_kw.lower()
     all_context = sample['context']   
     high_score_matches = []
     fuzz_fallback_matches = []
+    result = ""
     
     for item in all_context:
         key_context = item[0].lower()
@@ -233,43 +206,75 @@ def retrieval_context_2wiki(search_kw, sample, cos_threshold=0.7, fuzz_threshold
                 high_score_matches.append({'score': scores['cosine'], 'context_item': item})
             elif key_context in search_kw:
                 high_score_matches.append({'score': scores['cosine'], 'context_item': item})
-            elif scores['fuzz'] >= 0.6:
+            elif scores['fuzz'] >= 0.5:
                 fuzz_fallback_matches.append({'score': scores['fuzz'], 'context_item': item})
-            elif scores['cosine'] >= 0.6:
+            elif scores['cosine'] >= 0.5:
                 high_score_matches.append({'score': scores['cosine'], 'context_item': item})
                 
         if high_score_matches:
             best_match_item = max(high_score_matches, key=lambda x: x['score'])['context_item']
         elif fuzz_fallback_matches:
             best_match_item = max(fuzz_fallback_matches, key=lambda x: x['score'])['context_item']
-                    
+                
     if best_match_item:
-        result = ""
         key_entities = best_match_item[0]
         result += key_entities + ": "
         for sent in best_match_item[1]:
             result += sent + " "
-            
-        result += "\n\n"
-        
-        cnt_k_context = 0
-        sp = sample.get('supporting_facts', [])
-        for item_sp in sp:
-            if key_entities == item_sp[0]:
-                cnt_k_context += 1
-
-        return result.strip(), cnt_k_context
+        result += "\n\n" 
     else:
-        return "", 0
+        key_entities = None
     
-
-def perform_retrieval(sample, search_kw, step, paths, settings):
+    # Vector Embedding (Semantic Search)
+    if vec_embed:
+        for item in all_context:
+            title = item[0]
+            sentences = item[1]
+            if title == key_entities:
+                continue
+            
+            query_vec = model.encode(search_kw)
+            sent_vecs = model.encode(sentences)
+            sims = cosine_similarity([query_vec], sent_vecs)[0]
+            
+            sentences_with_scores = []
+            for i, sent in enumerate(sentences):
+                sentences_with_scores.append({
+                    "sent": sent,
+                    "score": sims[i],
+                    "pos": i
+                })
+                
+            sorted_sentences = sorted(sentences_with_scores, key=lambda x: x["score"], reverse=True)
+            top_k_sentences = [s for s in sorted_sentences if s["score"] >= vecembed_threshold][:top_k]
+            
+            if top_k_sentences:
+                # Lưu các chỉ số của câu cần lấy
+                indices_to_extract = set()
+                for s_info in top_k_sentences:
+                    pos = s_info["pos"]
+                    indices_to_extract.add(pos)
+                    if pos > 0:
+                        indices_to_extract.add(pos - 1)
+                    if pos < len(sentences) - 1:
+                        indices_to_extract.add(pos + 1)
+                
+                sorted_indices = sorted(list(indices_to_extract))
+                selected_sents_text = [sentences[i] for i in sorted_indices]
+                
+                result += f"{title}: "
+                result += " ".join(selected_sents_text) + "\n\n"
+                
+    return result.strip()
+   
+    
+def perform_retrieval(sample, search_kw, step, paths, settings, R7_info=None):
     """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""
     retrieval_information = ""
     
     if 'wiki' in settings['dataset']: 
         if settings['get_context_2wiki'] == "True": 
-            retrieval_information, cnt_k_context = retrieval_context_2wiki(search_kw, sample)
+            retrieval_information = retrieval_context_2wiki(search_kw, sample)
 
         if settings['get_wiki'] == "True":
             results_wiki_search = retrieval_wiki(search_kw, step, paths['wiki_search'])
@@ -279,12 +284,31 @@ def perform_retrieval(sample, search_kw, step, paths, settings):
             results_gg_search = retrieval_google(search_kw, step, paths['gg_search'])            
             retrieval_information += format_search_results(results_gg_search, topk=1) + "\n\n"
             
-        return retrieval_information, cnt_k_context
-    
+        return retrieval_information
     
     if 'bioasq' in settings['dataset']:
         retrieval_information += settings['context']
     
+    if settings['run'] == 'R7':
+        ans_old = R7_info["ans_old"]        
+        results_gg_search, status_gg = del_snippet(R7_info["results_gg_search"], ans_old)        
+        results_wiki_search, status_wiki = del_snippet(R7_info["results_wiki_search"], ans_old)
+        
+        if status_gg or status_wiki:
+            status = True            
+            retrieval_information += format_search_results(results_gg_search) + "\n\n"
+            retrieval_information += format_search_results(results_wiki_search) + "\n\n"
+            
+            crawl_wiki_context = R7_crawl_wiki_page(
+                results_wiki_search, search_kw, settings['wiki_cache'],
+                paths['wiki_crawl'], paths['paragraphs'], step
+            )
+            retrieval_information += crawl_wiki_context
+        else:
+            status = False
+            
+        return retrieval_information, status, results_gg_search ,results_wiki_search
+            
     if settings['get_gg'] == "True":
         results_gg_search = retrieval_google(search_kw, step, paths['gg_search'])            
         retrieval_information += format_search_results(results_gg_search, topk=5) + "\n\n"
@@ -300,4 +324,21 @@ def perform_retrieval(sample, search_kw, step, paths, settings):
             )
             retrieval_information += crawl_wiki_context
         
+    return retrieval_information
+
+
+
+    
+def perform_retrieval_R12(sample, search_kw, step, paths, settings, type_context=None):
+    """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""
+    retrieval_information = ""
+    
+    if 'wiki' in settings['dataset']: 
+        if type_context == "vec_embed":
+            retrieval_information = retrieval_context_2wiki(search_kw, sample, vec_embed=True)
+
+        if type_context == "only_gg":
+            results_gg_search = retrieval_google(search_kw, step, paths['gg_search'])            
+            retrieval_information += format_search_results(results_gg_search, topk=5) + "\n\n"
+                        
     return retrieval_information

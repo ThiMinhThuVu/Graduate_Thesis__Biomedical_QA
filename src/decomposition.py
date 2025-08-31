@@ -200,8 +200,8 @@ def generate_subquestion(question, sample_id, filepath, is_seq=True, dataset=Non
         print(f"Raw response: {result_json}")
         raise ValueError(f"Invalid JSON response from API: {result_json}")
     
-def split_bridge_comparison_question(question, type_q=None):
-    messages = prompt_split_question(question, type_q=type_q)
+def split_bridge_comparison_question(question):
+    messages = prompt_split_question(question)
     response = request_api(messages, model='gpt-4o-mini')
         
     try:
@@ -219,7 +219,7 @@ def question_decomposition(question, dataset=None, type_q=None):
     if type_q == 'comparison':
         return split_comparison_question(question)
     elif type_q == 'bridge_comparison':
-        return split_bridge_comparison_question(question, type_q=type_q)
+        return split_bridge_comparison_question(question)
     else:
         return [question]
         
