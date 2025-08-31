@@ -188,7 +188,7 @@ if __name__ == "__main__":
     
     #edit config
     run = runs[6]  #1: R4, 4: R7,  6: R11, 7: R12
-    threads = [0, 3] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 250] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -275,6 +275,10 @@ if __name__ == "__main__":
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
+        type_ = "inference"
+        settings['dataset'] = f"wiki_{type_}_"
+        raw_data_file = f"data/wiki/dev/dev_{type_}.json"
+             
         raw_data = load_json(raw_data_file)
        
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
