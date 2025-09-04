@@ -327,8 +327,46 @@ def perform_retrieval(sample, search_kw, step, paths, settings, R7_info=None):
     return retrieval_information
 
 
-
+def norm_entity_with_keycontext(entity, sample, cos_threshold=0.7, fuzz_threshold=0.7):
+    all_context = sample['context']   
+    high_score_matches = []
+    fuzz_fallback_matches = []
     
+    for item in all_context:
+        key_context = item[0].lower()
+        scores = caculate_scores(entity, key_context)
+        if scores['cosine'] >= cos_threshold:
+            high_score_matches.append({'score': scores['cosine'], 'context_item': item})
+        if scores['fuzz'] >= fuzz_threshold:
+            fuzz_fallback_matches.append({'score': scores['fuzz'], 'context_item': item})
+
+    best_match_item = None
+    if high_score_matches:
+        best_match_item = max(high_score_matches, key=lambda x: x['score'])['context_item']
+    elif fuzz_fallback_matches:
+        best_match_item = max(fuzz_fallback_matches, key=lambda x: x['score'])['context_item']
+    else:
+        for item in all_context:
+            key_context = normalize_text(item[0].lower())
+            scores = caculate_scores(entity, key_context)
+            
+            if entity in key_context:
+                high_score_matches.append({'score': scores['cosine'], 'context_item': item})
+            elif key_context in entity:
+                high_score_matches.append({'score': scores['cosine'], 'context_item': item})
+            elif scores['fuzz'] >= 0.5:
+                fuzz_fallback_matches.append({'score': scores['fuzz'], 'context_item': item})
+            elif scores['cosine'] >= 0.5:
+                high_score_matches.append({'score': scores['cosine'], 'context_item': item})
+                
+        if high_score_matches:
+            best_match_item = max(high_score_matches, key=lambda x: x['score'])['context_item']
+        elif fuzz_fallback_matches:
+            best_match_item = max(fuzz_fallback_matches, key=lambda x: x['score'])['context_item']
+    if best_match_item:
+        best_match_item = best_match_item[0]
+    return best_match_item
+
 def perform_retrieval_R12(sample, search_kw, step, paths, settings, type_context=None):
     """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""
     retrieval_information = ""

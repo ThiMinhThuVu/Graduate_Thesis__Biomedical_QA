@@ -1375,21 +1375,25 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
 
         **Rule 1: Royal & Noble Figures**
         - If the question asks for a royal or noble person, construct their name precisely as follows:
-            * **A. START WITH:** The person's full name and regnal number (e.g., "Christian V", "Alexander III").
-            * **B. ALWAYS INCLUDE (if available):**
-                -   Territorial domain (e.g., "of Denmark", "of Russia").
-                -   Numbered hereditary titles, prefixed with a comma (e.g., ", 2nd Earl of Stafford", ", 3rd Duke of Suffolk").
-                -   Other key titles that are part of the common name, prefixed with a comma (e.g., ", Duke of Cieszyn").
-            * **C. ALWAYS EXCLUDE:**
-                -   General honorifics like "King", "Queen", "Tsar", "Sultan", "Prince", "Paduka Sri", "Countess".
-            * **D. PARENTHESES RULE:**
-                -   The final answer string must NOT contain parentheses.
-                -   However, you MUST analyze text inside parentheses in the Context to find the correct name or title.
-            * **E. Examples:**
-                -  Input: "Christian V of Denmark-Norway" -> Output: "Christian V of Denmark"
-                -  Input: "Queen Elizabeth II of the United Kingdom" -> Output: "Elizabeth II of the United Kingdom"
-                -  Input: "Emperor Meiji of Japan" -> Output: "Meiji of Japan"
-                -  Input: "Frederick William, Elector of Brandenburg" -> Output: "Frederick William, Elector of Brandenburg"
+
+            * **A. START WITH:** 
+              - The person's full name and regnal number.  
+              - Example: "Christian V", "Alexander III".
+
+            * **B. ALWAYS INCLUDE (if available):** 
+              - Numbered hereditary titles, prefixed with a comma.  
+                - Example: "John Stafford, 2nd Earl of Stafford", "Charles Brandon, 3rd Duke of Suffolk".  
+              - Other hereditary or noble titles that are part of the common name, prefixed with a comma or as prefixes.  
+                - Example: "Sir Matthew Deane", "Princess Luisa Carlotta of Naples and Sicily", "Sir Matthew Deane, 3rd Baronet".
+              - Royal Prefixes: King/Queen, Emperor/Empress, Prince/Princess, Duke/Duchess, Marquess/Marchioness, Earl/Countess, Viscount/Viscountess, Baron/Baroness, Sir/Dame, Lord/Lady"
+            * **C. ALWAYS EXCLUDE:** 
+              - Territorial/estate designations based only on land ownership (not peerage or noble titles).  
+              - Example: Input: "Archibald James Hamilton, 12th of Orbiston" -> Output: "Archibald James Hamilton".  
+
+            * **D. PARENTHESES RULE:** 
+              - The final answer string must NOT contain parentheses.  
+              - However, you MUST analyze text inside parentheses in the Context to find the correct name or title.  
+              - Example: Input: "Christian V (King of Denmark and Norway)" -> Output: "Christian V of Denmark".  
 
         **Rule 2: All Other Questions (Default Rule)**
         - For any question not covered by the rules above, provide only the single, most direct answer found in the information.
@@ -1551,110 +1555,91 @@ def prompt_gen_combine_parallel_answers(question, context):
         """
     return prompt
 
+import json
+def prompt_gen_relation(list_subquestion, type_q):
+    if type_q == "inference":
+        allowed_relations = {
+            'father', 'mother', 'sibling', 'spouse', 'child',
+            'doctoral student', 'educated at', 'field of work',
+            'doctoral advisor', 'employer'
+        }
+    elif type_q == "compositional":
+        allowed_relations = {
+            'father', 'mother', 'sibling', 'spouse',
+            'director', 'performer', 'composer',
+            'educated at', 'founded by',
+            'date of birth', 'place of birth',
+            'date of death', 'place of death', 'cause of death',
+            'place of burial',
+            'country', 'country of origin', 'country of citizenship',
+            'publication date'
+        }
+    elif type_q == "comparison":
+        allowed_relations = set()
+        data = {
+            'Human': ['date of birth', 'date of death', 'date of birth and date of death (year old)', 'occupation', 'country of citizenship', 'place of birth'],
+            'Film': ['publication date', 'director', 'producer', 'country of origin'],
+            'Album': ['publication date', 'producer'],
+            'Musical group': ['inception', 'country of origin'],
+            'Song': ['publication date'],
+            'General entities': ['inception', 'country'],
+            'Topography': ['country']
+        }
+        for relations_list in data.values():
+            allowed_relations.update(relations_list)
 
-def prompt_gen_evidences(context):
-    allowed_relations = {
-        'father', 'mother', 'sibling', 'spouse',
-        'director', 'performer', 'composer',
-        'educated at', 'founded by',
-        'date of birth', 'place of birth',
-        'date of death', 'place of death', 'cause of death',
-        'place of burial',
-        'country', 'country of origin', 'country of citizenship',
-        'publication date'
-    }
-    
-    relations_str = ", ".join(sorted(list(allowed_relations)))
+    elif type_q == "bridge_comparison":
+        allowed_relations = {
+            "director date of birth", "director date of death", "director country of citizenship",
+            "producer date of birth", "producer date of death", "producer country of citizenship"
+        }
+    else:
+        raise ValueError("Invalid question type. Please choose one of the following: inference, compositional, comparison, bridge_comparison.")
 
-    system_prompt = f"""You are an AI expert in structured data extraction. Your task is to analyze the user's input, parse each line, and convert it into a single, valid JSON object of factual triples.
+    system_prompt = f"""
+        You are a relation extraction tool. Your task is to receive a list of sub-questions and a question type, and then identify the single relevant relation for each question from the list.
 
-        **INPUT FORMAT:**
-        `[index] entity_1; question; entity_2`
+        ### Instructions
+        1.  **Output Format**: Your only output must be a JSON list of strings.
+        2.  **Relation Selection**: Based on the provided `type_q`, you must **only** extract relations from the following allowed set: {list(allowed_relations)}.
+        3.  **One-to-One Mapping**: The number of relations in the output list **must exactly match** the number of sub-questions in the input list. The relations should be in the same order as the sub-questions.
+        4.  **No Extraneous Text**: Do not include any additional text, explanations, or conversational phrases outside of the JSON output.
 
-        **OUTPUT FORMAT:**
-        A single JSON object: `{{"evidences": [[Entity1, Relation, Entity2], ...]}}`
-
-        **TRANSFORMATION RULES:**
-        1. Extract `Entity1` and `Entity2`.
-        2. Extract `Relation` from the `question`. The `Relation` MUST BE one of the following:
-           `{relations_str}`
-        3. **CRITICAL RULE FOR COUNTRIES:** Your choice of relation for country-related questions depends on the **type of the entity**:
-           - For **Creative Works** (films, books): A question about their country implies their production origin -> Use **`country of origin`**.
-           - For **People** (directors, senators, etc.): A question about their country or nationality implies citizenship -> Use **`country of citizenship`**.
-           - For **Geographical Locations** (mountains, villages, etc.): A question with "located in" implies physical placement -> Use **`country`**.
-        4. If no relation fits, use `null`.
-        """
-
-    user_prompt = f"""Here are some examples. Based on these, process the final `INPUT CONTEXT`.
-        **EXAMPLE 1 (Basic):**
-        * INPUT CONTEXT:
-            ```
-            [0] Mina Gerhardsen; Who is the father of Mina Gerhardsen?; Rune Gerhardsen
-            ```
-        * OUTPUT JSON:
-            ```json
-            {{
-                "evidences": [["Mina Gerhardsen", "father", "Rune Gerhardsen"]]
-            }}
-            ```
-            
-        **EXAMPLE 2 (Rule for Locations -> `country`):**
-        * INPUT CONTEXT:
-            ```
-            [0] Puka Q'Asa (Huancavelica); In which country is this mountain located?; Peru
-            ```
-        * OUTPUT JSON:
-            ```json
-            {{
-                "evidences": [["Puka Q'Asa (Huancavelica)", "country", "Peru"]]
-            }}
-            ```
-
-        **EXAMPLE 3 (Rule for Creative Works -> `country of origin`):**
-        * INPUT CONTEXT:
-            ```
-            [0] Shadows of the West; What is the country of this movie?; United States
-            ```
-        * OUTPUT JSON:
-            ```json
-            {{
-                "evidences": [["Shadows of the West", "country of origin", "United States"]]
-            }}
-            ```
-
-        **EXAMPLE 4 (Rule for People -> `country of citizenship`):**
-        * INPUT CONTEXT:
-            ```
-            [0] Fernand Backes; What is this person's nationality?; Luxembourgian
-            [1] Tom Carew; What country is this person from?; Irish
-            ```
-        * OUTPUT JSON:
-            ```json
-            {{
-                "evidences": [
-                    ["Fernand Backes", "country of citizenship", "Luxembourgian"],
-                    ["Tom Carew", "country of citizenship", "Irish"]
-                ]
-            }}
-            ```
-            
+        ### Examples
+        Example 1: If the input is:
+        {{
+        "list_subquestion": [
+            "Who directed the movie 'Parasite'?",
+            "When was the movie 'Parasite' published?",
+            "What country is the movie 'Parasite' from?"
+        ],
+        "type_q": "compositional"
+        }}
+        The correct output is:
+        ["director", "publication date", "country of origin"]
         ---
-        **YOUR TASK:**
-
-        Now, process the following `INPUT CONTEXT` and generate the corresponding `OUTPUT JSON`.
-
-        * INPUT CONTEXT:
-            ```
-            {context}
-            ```
-        * OUTPUT JSON:
+        Example 2: If the input is:
+        {{
+        "list_subquestion": [
+            "Who is the father of Sir William Gore, 3Rd Baronet?",
+            "Who is the father of that person?"
+        ],
+        "type_q": "inference"
+        }}
+        The correct output is:
+        ["father", "father"]
         """
+
+    user_prompt = {
+        "list_subquestion": list_subquestion,
+        "type_q": type_q
+    }
 
     messages = [
         {"role": "system", "content": system_prompt.strip()},
-        {"role": "user", "content": user_prompt.strip()}
+        {"role": "user", "content": json.dumps(user_prompt, ensure_ascii=False, indent=2)}
     ]
-    
+
     return messages
 
 

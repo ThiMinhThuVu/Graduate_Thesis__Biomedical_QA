@@ -1,5 +1,6 @@
 from src.prompt import *
 from src.gpt_request import *
+from src.retrieval import norm_entity_with_keycontext
 from utils.utils import load_json
 import json
 
@@ -111,25 +112,34 @@ def gen_ans_multiple_choice(question, context, dataset='medhop', model = "o3-min
     
     return result_json
 
-def gen_evidences(data, model="gpt-4o-mini"):    
-    numeric_keys = sorted([k for k in data.keys() if k.isdigit()], key=int)
-
-    context_evidences = ""
-    cnt_evd = 1
-
-    for k in numeric_keys:
-        k = str(k)
-        subdata = data[k]
-        steps = sorted([ki for ki in subdata.keys() if ki.isdigit()], key=int)
-        for step in steps:
-            step = str(step)
-            e1 = subdata[step]['key_entity']
-            e2 = subdata[step]['short_answer']
-            relation = subdata[step]['question']
-            context_evidences += f"[{cnt_evd}]. {e1}; {relation}; {e2}\n"
-            cnt_evd += 1
+def gen_evidences(sample, data, type_q, model="gpt-4o-mini"):    
+    q_ids = sorted([k for k in data.keys() if k.isdigit()], key=int)
+    list_subquestion = []
+    dict_evidences = {}
+    cnt_evd = 0
+    
+    for q_id in q_ids:
+        q_id = str(q_id)
+        subdata = data[q_id]
+        last_path = str(len(subdata.keys()) - 2)
+        datapath = subdata[str(last_path)]
+        last_step = str(len(datapath.keys()) - 1)
+        
+        for step, subitem in datapath.items():
+            e1 = subitem['key_entity']
+            e2 = subitem['short_answer']
+            list_subquestion.append(subitem['question'])
+            e1 = norm_entity_with_keycontext(e1, sample)
+            if step != last_step:
+                e2 = norm_entity_with_keycontext(e2, sample)
             
-    messages = prompt_gen_evidences(context_evidences)
+            dict_evidences[str(cnt_evd)] = {
+                "e1": e1,
+                "e2": e2
+            }
+            cnt_evd += 1
+
+    messages = prompt_gen_relation(list_subquestion, type_q)
     result_json = request_api(messages, model)
     
     start_idx = result_json.find("[")
@@ -137,11 +147,14 @@ def gen_evidences(data, model="gpt-4o-mini"):
     result_json = result_json[start_idx:end_idx]
     
     try:
-        result_dict = json.loads(result_json)
+        relation_predict = json.loads(result_json)
     except Exception as e:
         print(f"Error parsing JSON response: {e}")
         print(f"Raw response: {result_json}")
-        
-    return result_dict
+    
+    list_evidences = []
+    for idx, item in dict_evidences.items():
+        rel = relation_predict[int(idx)]
+        list_evidences.append([item['e1'], rel, item['e2']])
 
-
+    return list_evidences

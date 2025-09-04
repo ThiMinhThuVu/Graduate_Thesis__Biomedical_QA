@@ -1,8 +1,9 @@
 import json
 
-input_path = 'data/train.json' 
-pred_path = f'run/evidence/pred.json'
-output_file_path = f'run/evidence/gold.json'
+type_q = "inference"
+input_path = 'data/wiki/dev.json' 
+pred_path = f'evaluate/run/evidence/pred_{type_q}.json'
+output_file_path = f'evaluate/run/evidence/gold_{type_q}.json'
 
 gold_data = {} 
 with open(input_path, 'r', encoding='utf-8') as file:

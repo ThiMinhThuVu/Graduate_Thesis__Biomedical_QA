@@ -1,9 +1,9 @@
 import json
 
 run = 'R11'
-q_type = 'compositional'
+q_type = 'inference'
 
-input_path = 'data/wiki/train.json' 
+input_path = 'data/wiki/dev.json' 
 pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
 output_file_path = f'evaluate/run/{run}/gold_{q_type}.json'
 

@@ -1,14 +1,15 @@
 import sys
-import ujson as json
+import json
 import re
 import string
 from collections import Counter
 import itertools
 
-pred_file = f'run/evidence/pred.json'
-gold_file = f'run/evidence/gold.json'
-question_score_path = f'run/evidence/question_score.json'
-alias_file = 'data/id_aliases.json'
+type_q = "inference"
+pred_file = f'evaluate/run/evidence/pred_{type_q}.json'
+gold_file = f'evaluate/run/evidence/gold_{type_q}.json'
+question_score_path = f'evaluate/run/evidence/question_{type_q}_score.json'
+alias_file = 'data/wiki/id_aliases.json'
 
 def normalize_answer(s):
     def remove_articles(text):

@@ -46,10 +46,21 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
     sample_id = str(sample['QIDX']) 
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
+    evidence_file = paths['evidence']
+    
+    if os.path.exists(evidence_file):
+        print(f"All answers file already exists: {evidence_file}")
+        return
     
     if os.path.exists(file_all_ans):
-        print(f"All answers file already exists: {file_all_ans}")
-        return
+        dict_ans = load_json(file_all_ans)
+        evidence_predict = gen_evidences(sample, dict_ans, type_q)
+        save_json(evidence_predict, evidence_file)
+        
+        dict_ans['evidence'] = evidence_predict
+        save_json(dict_ans, file_all_ans)
+        print(f"Evidence saved to {evidence_file}")
+        return 
     
     if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
         original_question = settings['chrunk_mapping'][sample_id]
@@ -179,6 +190,13 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
         print(f"\nSaved to {file_all_ans}")
         
+    evidence_predict = gen_evidences(sample, dict_ans, type_q)
+    save_json(evidence_predict, evidence_file)
+    
+    dict_ans['evidence'] = evidence_predict
+    save_json(dict_ans, file_all_ans)
+    print(f"Evidence saved to {evidence_file}")
+        
 if __name__ == "__main__":
     config_path = "config.json"
     configs = load_json(config_path)
@@ -188,7 +206,7 @@ if __name__ == "__main__":
     
     #edit config
     run = runs[6]  #1: R4, 4: R7,  6: R11, 7: R12
-    threads = [0, 250] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 100] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -278,13 +296,28 @@ if __name__ == "__main__":
         type_ = "inference"
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/dev/dev_{type_}.json"
-             
+        list_ID = ["054fb79c0baf11ebab90acde48001122",
+                   "06d117e00bb011ebab90acde48001122",
+                   "129b312e0baf11ebab90acde48001122",
+                #    "1d03457e0bb011ebab90acde48001122",
+                #    "285939380bb011ebab90acde48001122",
+                #    "347300820bb011ebab90acde48001122",
+                #    "3705552a0bb011ebab90acde48001122",
+                #    "47431af40baf11ebab90acde48001122",
+                #    "54a7772a0bb011ebab90acde48001122",
+                #    "6b713cc60baf11ebab90acde48001122",
+                #    "6c80bc4e0bb011ebab90acde48001122",
+                #    "71a1099a0bb011ebab90acde48001122"
+]
         raw_data = load_json(raw_data_file)
-       
+        
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
             if not (threads[0] <= idx < threads[1]):
                 continue 
             
+            # if ID not in list_ID:
+            #     continue
+
             type_q = sample['type']
             is_seq = sample["is_sequence"]
             

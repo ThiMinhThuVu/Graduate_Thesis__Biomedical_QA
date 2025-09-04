@@ -3,9 +3,9 @@ import re
 import json
 
 run = 'R11'
-q_type = 'ALL_TEST'
+q_type = 'inference'
 
-wiki_result_directory = r"E:\Test_2wiki\test_wiki_result_v0\all_ans" # f'wiki_{q_type}_results/all_ans'
+wiki_result_directory = f'wiki_{q_type}_results/all_ans' #r"E:\Test_2wiki\test_wiki_result_v0\all_ans" # f'wiki_{q_type}_results/all_ans'
 pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
 os.makedirs(os.path.dirname(pred_path), exist_ok=True)
 
