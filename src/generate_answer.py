@@ -1,7 +1,7 @@
 from src.prompt import *
 from src.gpt_request import *
 from src.retrieval import norm_entity_with_keycontext
-from utils.utils import load_json
+from utils.util import load_json
 import json
 
 def generate_answer(question, key_entities, relevant_info, dataset=None, type_q=None, model="o3-mini"):    
@@ -21,8 +21,8 @@ def generate_answer(question, key_entities, relevant_info, dataset=None, type_q=
     
     try:
         result_dict = json.loads(result_json)
-        long_answer = result_dict.get("long_answer", "")
-        short_answer = result_dict.get("short_answer", "")
+        # long_answer = result_dict.get("long_answer", "")
+        # short_answer = result_dict.get("short_answer", "")
     except Exception as e:
         print(f"Error parsing JSON response: {e}")
         print(f"Raw response: {result_json}")
@@ -38,15 +38,16 @@ def generate_answer(question, key_entities, relevant_info, dataset=None, type_q=
                     answers = remaining.split("short_answer")
                     long_answer = answers[0].strip().strip('":').strip()
                     short_answer = answers[1].strip().strip('":').strip()
-        
-        if not long_answer:
-            long_answer = result_json
-            short_answer = "No relevant answer found"
-    
-    return {
-        "long_answer": long_answer,
-        "short_answer": short_answer
-    }
+        result_dict = {
+            "long_answer": long_answer,
+            "short_answer": short_answer
+        }
+ 
+    # return {
+    #     "long_answer": long_answer,
+    #     "short_answer": short_answer
+    # }
+    return result_dict
 
 def generate_combine_parallel_answers(question, context, dataset='wiki', model="o3-mini"):
     prompt = prompt_gen_combine_parallel_answers(question, context)

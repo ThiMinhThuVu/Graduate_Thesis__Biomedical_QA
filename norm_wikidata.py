@@ -2,7 +2,7 @@ import re
 import os
 import time
 import requests
-from utils.utils import load_json, save_json
+from utils.util import load_json, save_json
 from SPARQLWrapper import SPARQLWrapper, JSON
 from utils.get_head_title_wikidata import get_wikidata_history_info
 
@@ -307,10 +307,12 @@ if __name__ == "__main__":
     for file in list_file:
         file_path = os.path.join(folder, file)
         sample = load_json(file_path)
+        if sample["QIDX"] != "50ba732e0bb011ebab90acde48001122":
+            continue
         
         if "final_qi" in sample["1"]:
-            if "normalized_ans" in sample["1"]["final_qi"]:
-                continue
+            # if "normalized_ans" in sample["1"]["final_qi"]:
+            #     continue
             
             entity_1 = sample["1"]["final_qi"]["key_entity"]
             q_relation = sample["1"]["final_qi"]["search_keyword"]

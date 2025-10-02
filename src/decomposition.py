@@ -1,7 +1,7 @@
 from src.gpt_request import request_api
 from src.prompt import load_prompt_gen_sub, prompt_split_question
 from src.split_question import split_comparison_question, split_bridge_comparison_fallback
-from utils.utils import load_json, save_json
+from utils.util import load_json, save_json
 import json
 import os 
 

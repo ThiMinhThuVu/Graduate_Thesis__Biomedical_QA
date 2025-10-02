@@ -4,7 +4,7 @@ from utils.abstract_wiki import crawl_abstract_wiki
 from utils.get_abs_wiki_history import get_abs_wiki_history
 import json
 import os
-from utils.utils import *
+from utils.util import *
 from thefuzz import fuzz
 import re
 from sentence_transformers import SentenceTransformer

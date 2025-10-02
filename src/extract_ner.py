@@ -1,4 +1,4 @@
-from utils.utils import *
+from utils.util import *
 
 CWQ_LABELS_EXPANDED = {
     'PERSON',      # Người, diễn viên, cầu thủ...

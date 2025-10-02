@@ -1,6 +1,6 @@
 import os
 import spacy
-from utils.utils import *
+from utils.util import *
 import pickle
 from tqdm import tqdm
 from src.decomposition import *
@@ -46,21 +46,21 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
     sample_id = str(sample['QIDX']) 
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
-    evidence_file = paths['evidence']
-    
-    if os.path.exists(evidence_file):
-        print(f"All answers file already exists: {evidence_file}")
-        return
+    # evidence_file = paths['evidence']
     
     if os.path.exists(file_all_ans):
-        dict_ans = load_json(file_all_ans)
-        evidence_predict = gen_evidences(sample, dict_ans, type_q)
-        save_json(evidence_predict, evidence_file)
+        print(f"All answers file already exists: {file_all_ans}")
+        return
+    
+    # if os.path.exists(file_all_ans):
+    #     dict_ans = load_json(file_all_ans)
+    #     evidence_predict = gen_evidences(sample, dict_ans, type_q)
+    #     save_json(evidence_predict, evidence_file)
         
-        dict_ans['evidence'] = evidence_predict
-        save_json(dict_ans, file_all_ans)
-        print(f"Evidence saved to {evidence_file}")
-        return 
+    #     dict_ans['evidence'] = evidence_predict
+    #     save_json(dict_ans, file_all_ans)
+    #     print(f"Evidence saved to {evidence_file}")
+    #     return 
     
     if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
         original_question = settings['chrunk_mapping'][sample_id]
@@ -81,7 +81,17 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         qi_number = f"/{q_i}"
         paths = setup_paths(settings, sample_id, qi_number)
         ans_filepath = paths['qi_answer']
-        dict_ans[q_i] = {"final_qi": {}}
+        dict_ans[q_i] = {"final_qi": {
+            "question": "",
+            "search_keyword": "",
+            "key_entity": "",
+            "short_answer": "",
+            "long_answer": "",
+            "retrieval_information": "",
+            "prefix": "",
+            "name": "",
+            "suffix": ""
+        }}
     
         path_subq_output, n_path = generate_subquestion(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
         
@@ -98,8 +108,20 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     check_path_i = True
                     
             if check_path_i:
+                if len(subq_output.keys()) != len(qi_final_answers[path_i].keys()):
+                    print("Path này không tìm được answer, bỏ qua")
+                    dict_ans[q_i][path_i]['0'] = qi_final_answers[path_i]['0']
+                    dict_ans[q_i][path_i]['0']['question'] = subq_output['0']['subquestion']
+                    dict_ans[q_i][path_i]['0']['search_keyword'] = subq_output['0']['search_keyword']
+                    dict_ans[q_i][path_i]['0']['key_entity'] = subq_output['0']['key_entity']
+                    continue
                 for step, item in subq_output.items():
                     step = str(step)
+                    # if step not in qi_final_answers[path_i]:
+                    #     continue
+                    short_ans = qi_final_answers[path_i][step]["short_answer"]
+                    long_ans = qi_final_answers[path_i][step]["long_answer"]
+                    
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword']
                     
@@ -112,9 +134,11 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                         key_entities = search_kw_subq + " " + short_ans
                     
                     retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)  
-                    
-                    short_ans = qi_final_answers[path_i][step]["short_answer"]
-                    long_ans = qi_final_answers[path_i][step]["long_answer"]
+                                        
+                    if type_q == "inference" and dataset == "wiki":
+                        prefix_ans = qi_final_answers[path_i][step]['prefix']
+                        name_ans = qi_final_answers[path_i][step]['name']
+                        suffix_ans = qi_final_answers[path_i][step]['suffix']
                     
                     if step not in dict_ans[q_i][path_i]:
                         dict_ans[q_i][path_i][step] = {}
@@ -124,6 +148,12 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     dict_ans[q_i][path_i][step]["short_answer"] = short_ans
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
+                    
+                    if type_q == "inference" and dataset == "wiki":
+                        dict_ans[q_i][path_i][step]['prefix'] = prefix_ans
+                        dict_ans[q_i][path_i][step]['name'] = name_ans
+                        dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
+
             else:
                 short_ans = ""
                 qi_final_answers[path_i] = {}
@@ -148,7 +178,12 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
                     short_ans = answer_generation["short_answer"]
                     long_ans = answer_generation["long_answer"]
-                                        
+                    
+                    if type_q == "inference" and dataset == "wiki":
+                        prefix_ans = answer_generation['prefix']
+                        name_ans = answer_generation['name']
+                        suffix_ans = answer_generation['suffix']
+
                     qi_final_answers[path_i][step] = answer_generation
                     
                     print(f"Short Answer for Step {step}: {short_ans}")
@@ -160,16 +195,26 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     dict_ans[q_i][path_i][step]["short_answer"] = short_ans
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
+                    if type_q == "inference" and dataset == "wiki":
+                        dict_ans[q_i][path_i][step]['prefix'] = prefix_ans
+                        dict_ans[q_i][path_i][step]['name'] = name_ans
+                        dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
                     
                     if short_ans.lower() == "insufficient information": # sang path tiếp theo 
                         break
             
-            # Lấy output step cuối cùng của qi:
-            dict_ans[q_i]['final_qi']["question"] = question
-            dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
-            dict_ans[q_i]['final_qi']["key_entity"] = key_entities
-            dict_ans[q_i]['final_qi']["short_answer"] = short_ans
-            dict_ans[q_i]['final_qi']["long_answer"] = long_ans
+            # Lấy output step cuối cùng của 1 path duy nhất của qi:
+            if short_ans.lower() != "insufficient information":
+                dict_ans[q_i]['final_qi']["question"] = question
+                dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
+                dict_ans[q_i]['final_qi']["key_entity"] = key_entities
+                dict_ans[q_i]['final_qi']["short_answer"] = short_ans
+                dict_ans[q_i]['final_qi']["long_answer"] = long_ans
+                dict_ans[q_i]['final_qi']["retrieval_information"] = retrieval_information
+                if type_q == "inference" and dataset == "wiki":
+                    dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
+                    dict_ans[q_i]['final_qi']['name'] = name_ans
+                    dict_ans[q_i]['final_qi']['suffix'] = suffix_ans
 
             all_context += f"{q_i}.{question} - {short_ans}, {long_ans}\n\n"
             save_json(qi_final_answers, ans_filepath)
@@ -184,18 +229,23 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
     else:
         dict_ans['final_answer'] = {
             'long_answer': dict_ans[1]['final_qi']['long_answer'],
-            'short_answer': dict_ans[1]['final_qi']['short_answer']
+            'short_answer': dict_ans[1]['final_qi']['short_answer'],
+            'retrieval_information': dict_ans[1]['final_qi']['retrieval_information']
         }
+        if type_q == "inference" and dataset == "wiki":
+            dict_ans['final_answer']['prefix'] = dict_ans[1]['final_qi']['prefix']
+            dict_ans['final_answer']['name'] = dict_ans[1]['final_qi']['name']
+            dict_ans['final_answer']['suffix'] = dict_ans[1]['final_qi']['suffix']
         save_json(dict_ans, file_all_ans)
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
         print(f"\nSaved to {file_all_ans}")
         
-    evidence_predict = gen_evidences(sample, dict_ans, type_q)
-    save_json(evidence_predict, evidence_file)
+    # evidence_predict = gen_evidences(sample, dict_ans, type_q)
+    # save_json(evidence_predict, evidence_file)
     
-    dict_ans['evidence'] = evidence_predict
-    save_json(dict_ans, file_all_ans)
-    print(f"Evidence saved to {evidence_file}")
+    # dict_ans['evidence'] = evidence_predict
+    # save_json(dict_ans, file_all_ans)
+    # print(f"Evidence saved to {evidence_file}")
         
 if __name__ == "__main__":
     config_path = "config.json"
@@ -206,7 +256,7 @@ if __name__ == "__main__":
     
     #edit config
     run = runs[6]  #1: R4, 4: R7,  6: R11, 7: R12
-    threads = [0, 100] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 250] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -296,9 +346,9 @@ if __name__ == "__main__":
         type_ = "inference"
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/dev/dev_{type_}.json"
-        list_ID = ["054fb79c0baf11ebab90acde48001122",
-                   "06d117e00bb011ebab90acde48001122",
-                   "129b312e0baf11ebab90acde48001122",
+        # list_ID = ["054fb79c0baf11ebab90acde48001122",
+        #            "06d117e00bb011ebab90acde48001122",
+        #            "129b312e0baf11ebab90acde48001122",
                 #    "1d03457e0bb011ebab90acde48001122",
                 #    "285939380bb011ebab90acde48001122",
                 #    "347300820bb011ebab90acde48001122",
@@ -308,7 +358,7 @@ if __name__ == "__main__":
                 #    "6b713cc60baf11ebab90acde48001122",
                 #    "6c80bc4e0bb011ebab90acde48001122",
                 #    "71a1099a0bb011ebab90acde48001122"
-]
+# ]
         raw_data = load_json(raw_data_file)
         
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):

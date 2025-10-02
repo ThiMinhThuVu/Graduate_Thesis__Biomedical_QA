@@ -58,7 +58,21 @@ for filename in os.listdir(wiki_result_directory):
         last_step_key = 'final_answer'
     else:
         print(f'Có lỗi nhận dạng file: {filename}')
-    predict = data[last_step_key]['short_answer']
+    # predict = data[last_step_key]['short_answer']
+    predict = ''
+    if 'normalized_ans' in data[last_step_key]:
+        predict = data[last_step_key]['normalized_ans']['full_name']
+        if predict == '':
+            predict = data[last_step_key]['normalized_ans']['suffix']
+        
+        if predict == '':
+            predict = data[last_step_key]['normalized_ans']['name']
+        # if predict == '':
+        #     predict = data[last_step_key]['normalized_ans']['prefix']
+        
+    if predict == '':
+        predict = data[last_step_key]['short_answer']
+        
     predict_dict['answer'][id] = predict
 
 with open(pred_path, 'w', encoding='utf-8') as f:
