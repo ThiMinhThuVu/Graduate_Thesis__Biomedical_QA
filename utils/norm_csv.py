@@ -7,17 +7,20 @@ def json_to_csv(input_folder, output_csv):
     # Define the columns for the CSV
     csv_columns = [
         "QIDX", 
-        "original_question", 
+        "hop",
+        "question", 
+        "search_keyword", 
+        "key_entity",
         "long_answer", 
         "short_answer", 
         "retrieval_information", 
         "prefix", 
         "name", 
         "suffix", 
-        "normalized_full_name", 
-        "normalized_name", 
-        "normalized_prefix", 
-        "normalized_suffix"
+        "normalized_verify", 
+        # "normalized_name", 
+        # "normalized_prefix", 
+        # "normalized_suffix"
     ]
 
     # Open the CSV file for writing
@@ -33,19 +36,69 @@ def json_to_csv(input_folder, output_csv):
                     try:
                         data = json.load(jsonfile)
                         # Extract the required fields
+                        # row = {
+                        #     "QIDX": data.get("QIDX", ""),
+                        #     "original_question": data.get("original_question", ""),
+                        #     "long_answer": data.get("final_answer", {}).get("long_answer", ""),
+                        #     "short_answer": data.get("final_answer", {}).get("short_answer", ""),
+                        #     "retrieval_information": data.get("final_answer", {}).get("retrieval_information", ""),
+                        #     "prefix": data.get("final_answer", {}).get("prefix", ""),
+                        #     "name": data.get("final_answer", {}).get("name", ""),
+                        #     "suffix": data.get("final_answer", {}).get("suffix", ""),
+                        #     "normalized_full_name": data.get("final_answer", {}).get("normalized_ans", {}).get("full_name", ""),
+                        #     "normalized_name": data.get("final_answer", {}).get("normalized_ans", {}).get("name", ""),
+                        #     "normalized_prefix": data.get("final_answer", {}).get("normalized_ans", {}).get("prefix", ""),
+                        #     "normalized_suffix": data.get("final_answer", {}).get("normalized_ans", {}).get("suffix", ""),
+                        # }
+                        data_final = data.get("final_answer", {})
+                        qidx = data.get("QIDX", "")
+                        # print(qidx)
+                        path_i = str(len(data["1"])-2)
+                        if "1" in data["1"][str(path_i)]:
+                            hop = 1
+                            data = data["1"][str(path_i)]["1"]
+                        else:
+                            hop = 0
+                            data = data["1"][str(path_i)]["0"]
+                        # row = {
+                        #     "QIDX": qidx,
+                        #     "hop": hop,
+                        #     "question": data.get("question", ""),
+                        #     "search_keyword": data.get("search_keyword", ""),
+                        #     "key_entity": data.get("key_entity", ""),
+                        #     "long_answer": data.get("long_answer", ""),
+                        #     "short_answer": data.get("short_answer", ""),
+                        #     "prefix": data.get("prefix", ""),
+                        #     "name": data.get("name", ""),
+                        #     "suffix": data.get("suffix", ""),
+                        #     "retrieval_information": data.get("retrieval_information", ""),                            
+                        #     "normalized_full_name": data_final.get("normalized_ans", {}).get("full_name", ""),
+                        #     "normalized_name": data_final.get("normalized_ans", {}).get("name", ""),
+                        #     "normalized_prefix": data_final.get("normalized_ans", {}).get("prefix", ""),
+                        #     "normalized_suffix": data_final.get("normalized_ans", {}).get("suffix", ""),
+                        # }
+                        if data_final['normalized_v2'] is None:
+                            verify = None
+                        elif "normalized_v2" in data_final and len(data_final["normalized_v2"]['verify']) > 0:
+                            verify = data_final["normalized_v2"]['verify'][0]
+                        else:
+                            verify = None
                         row = {
-                            "QIDX": data.get("QIDX", ""),
-                            "original_question": data.get("original_question", ""),
-                            "long_answer": data.get("final_answer", {}).get("long_answer", ""),
-                            "short_answer": data.get("final_answer", {}).get("short_answer", ""),
-                            "retrieval_information": data.get("final_answer", {}).get("retrieval_information", ""),
-                            "prefix": data.get("final_answer", {}).get("prefix", ""),
-                            "name": data.get("final_answer", {}).get("name", ""),
-                            "suffix": data.get("final_answer", {}).get("suffix", ""),
-                            "normalized_full_name": data.get("final_answer", {}).get("normalized_ans", {}).get("full_name", ""),
-                            "normalized_name": data.get("final_answer", {}).get("normalized_ans", {}).get("name", ""),
-                            "normalized_prefix": data.get("final_answer", {}).get("normalized_ans", {}).get("prefix", ""),
-                            "normalized_suffix": data.get("final_answer", {}).get("normalized_ans", {}).get("suffix", ""),
+                            "QIDX": qidx,
+                            "hop": hop,
+                            "question": data.get("question", ""),
+                            "search_keyword": data.get("search_keyword", ""),
+                            "key_entity": data.get("key_entity", ""),
+                            "long_answer": data.get("long_answer", ""),
+                            "short_answer": data.get("short_answer", ""),
+                            "prefix": data.get("prefix", ""),
+                            "name": data.get("name", ""),
+                            "suffix": data.get("suffix", ""),
+                            "retrieval_information": data.get("retrieval_information", ""),                            
+                            "normalized_verify": verify,
+                            # "normalized_parent": data_final.get("normalized_v2", {}).get("name", ""),
+                            # "normalized_prefix": data_final.get("normalized_v2", {}).get("prefix", ""),
+                            # "normalized_suffix": data_final.get("normalized_v2", {}).get("suffix", ""),
                         }
                         writer.writerow(row)
                     except json.JSONDecodeError:

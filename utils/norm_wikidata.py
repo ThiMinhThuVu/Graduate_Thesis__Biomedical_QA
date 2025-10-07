@@ -3,7 +3,6 @@ import os
 import time
 import requests
 from utils.util import load_json, save_json
-from SPARQLWrapper import SPARQLWrapper, JSON
 from utils.get_head_title_wikidata import get_wikidata_history_info
 
 dict_relation = {

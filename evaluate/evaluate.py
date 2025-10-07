@@ -112,7 +112,7 @@ def eval(prediction_file, gold_file, alias_file):
 
     N = len(gold)
     for k in metrics.keys():
-        metrics[k] = round(metrics[k] / N * 100, 2)
+        metrics[k] =  round(metrics[k] / N * 100, 2)
 
     print(f'{type_name}: {json.dumps(metrics, indent=4)}')
     

@@ -60,16 +60,35 @@ for filename in os.listdir(wiki_result_directory):
         print(f'Có lỗi nhận dạng file: {filename}')
     # predict = data[last_step_key]['short_answer']
     predict = ''
+    retrieval = data[last_step_key]['retrieval_information']
     if 'normalized_ans' in data[last_step_key]:
         predict = data[last_step_key]['normalized_ans']['full_name']
+        if predict != '':
+            if predict not in retrieval:
+                predict = ''
+                
         if predict == '':
             predict = data[last_step_key]['normalized_ans']['suffix']
+            # if predict != '':
+            #     if predict not in retrieval:
+            #         predict = ''
         
         if predict == '':
             predict = data[last_step_key]['normalized_ans']['name']
-        # if predict == '':
-        #     predict = data[last_step_key]['normalized_ans']['prefix']
-        
+            # if predict != '':
+            #     if predict not in retrieval:
+            #         predict = ''
+            
+        if predict == '':
+            predict = data[last_step_key]['normalized_ans']['prefix']
+            # if predict != '':
+            #     if predict not in retrieval:
+            #         predict = ''
+    
+    # if predict != '':
+    #     if predict not in retrieval:
+    #         predict = ''
+                
     if predict == '':
         predict = data[last_step_key]['short_answer']
         
