@@ -116,12 +116,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     dict_ans[q_i][path_i]['0']['key_entity'] = subq_output['0']['key_entity']
                     continue
                 for step, item in subq_output.items():
-                    step = str(step)
-                    # if step not in qi_final_answers[path_i]:
-                    #     continue
-                    short_ans = qi_final_answers[path_i][step]["short_answer"]
-                    long_ans = qi_final_answers[path_i][step]["long_answer"]
-                    
+                    step = str(step)   
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword']
                     
@@ -134,6 +129,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                         key_entities = search_kw_subq + " " + short_ans
                     
                     retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)  
+                    short_ans = qi_final_answers[path_i][step]["short_answer"]
+                    long_ans = qi_final_answers[path_i][step]["long_answer"]
                                         
                     if type_q == "inference" and dataset == "wiki":
                         prefix_ans = qi_final_answers[path_i][step]['prefix']
@@ -142,6 +139,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     
                     if step not in dict_ans[q_i][path_i]:
                         dict_ans[q_i][path_i][step] = {}
+                        
                     dict_ans[q_i][path_i][step]["question"] = subquestion
                     dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq
                     dict_ans[q_i][path_i][step]["key_entity"] = key_entities
@@ -343,9 +341,10 @@ if __name__ == "__main__":
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        type_ = "inference"
+        type_ = "compositional" #"inference"
         settings['dataset'] = f"wiki_{type_}_"
-        raw_data_file = f"data/wiki/dev/dev_{type_}.json"
+        # raw_data_file = f"data/wiki/dev/dev_{type_}.json"
+        raw_data_file = f"data/wiki/test/test_{type_}.json"
         # list_ID = ["054fb79c0baf11ebab90acde48001122",
         #            "06d117e00bb011ebab90acde48001122",
         #            "129b312e0baf11ebab90acde48001122",
@@ -364,6 +363,8 @@ if __name__ == "__main__":
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
             if not (threads[0] <= idx < threads[1]):
                 continue 
+            if ID != "447eaa100bda11eba7f7acde48001122":
+                continue
             
             # if ID not in list_ID:
             #     continue
