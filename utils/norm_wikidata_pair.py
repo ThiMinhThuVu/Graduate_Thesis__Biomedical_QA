@@ -4,13 +4,56 @@ import time
 import requests
 from utils.util import load_json, save_json
 
-dict_relation = {
-    "P22": "father",       
-    "P25": "mother",       
-    "P26": "spouse",       
-    "P40": "child",       
-    "P106": "occupation",  
-    "P3373": "sibling"     
+
+PROPERTY_MAPPINGS = {
+    "birth": "P19",
+    "place of birth": "P19",
+    "death": "P20",
+    "place of death": "P20",
+    "burial": "P119",
+    "place of burial": "P119",
+    "graduation": "P69",
+    "education": "P69",
+    "educated at": "P69",
+    "studied": "P69",
+    "nationality": "P27",
+    "country of citizenship": "P27",
+    "citizen": "P27",
+    "occupation": "P106",
+    "work": "P106",
+    "employer": "P108",
+    "spouse": "P26",
+    "partner": "P26",
+    "married": "P26",
+    "child": "P40",
+    "children": "P40",
+    "parent": "P22",
+    "mother": "P25",
+    "father": "P22",
+    "sibling": "P3373",
+    "award": "P166",
+    "award received": "P166",
+    "prize": "P166",
+    "position": "P39",
+    "position held": "P39",
+    "office": "P39",
+    "member": "P463",
+    "member of": "P463",
+    "affiliation": "P463",
+    "residence": "P551",
+    "located": "P276",
+    "location": "P276",
+    "headquarter": "P159",
+    "headquarters location": "P159",
+    "founded": "P571",
+    "inception": "P571",
+    "creator": "P170",
+    "author": "P50",
+    "director": "P57",
+    "producer": "P162",
+    "cast": "P161",
+    "cast member": "P161",
+    "genre": "P136",
 }
 
 dict_p_relation = {
@@ -21,6 +64,9 @@ dict_p_relation = {
     "occupation": "P106",
     "sibling": "P3373"
 }
+
+# Bidirectional relationship properties (require verification)
+BIDIRECTIONAL_PROPERTIES = set(dict_p_relation.values())
 
 API_KEY_GG = 'Bearer 5C776EC6-9757-45BF-B13E-85F3C4860C18'
 
@@ -77,9 +123,48 @@ def norm_keyentity_wikidata_api(results, topk=1):
 def tokenize(text):
     return set(re.findall(r"\w+", text.lower()))
 
+def normalize_text(text):
+    """Normalize text for comparison."""
+    return " ".join(text.lower().split())
+
 def remove_of_phrase(title):
     # Loại bỏ cụm "of ..." (vd: of Berg)
     return re.sub(r'\s+of\s+.*', '', title, flags=re.IGNORECASE).strip()
+
+def find_property_id(search_keyword):
+    """Find Wikidata property ID based on search keyword."""
+    search_normalized = normalize_text(search_keyword)
+    
+    # Direct match in PROPERTY_MAPPINGS
+    if search_normalized in PROPERTY_MAPPINGS:
+        return PROPERTY_MAPPINGS[search_normalized]
+    
+    # Partial match in PROPERTY_MAPPINGS
+    for keyword, prop_id in PROPERTY_MAPPINGS.items():
+        if keyword in search_normalized or search_normalized in keyword:
+            return prop_id
+    
+    return None
+
+def query_wikidata_property(qid, property_id):
+    """Query Wikidata for a specific property of an entity using SPARQL."""
+    query = f"""
+    SELECT ?value ?valueLabel WHERE {{
+      wd:{qid} wdt:{property_id} ?value .
+      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+    }}
+    """
+    
+    results = send_sparql_request(query)
+    values = []
+    
+    for result in results:
+        if "valueLabel" in result:
+            label = result["valueLabel"]["value"]
+            if label and not label.startswith("Q"):  # Exclude QID itself
+                values.append(label)
+    
+    return values
 
 def search_sparql(title):
     endpoint_url = "https://query.wikidata.org/sparql"
@@ -334,49 +419,104 @@ def verify_relations(dict_output):
     dict_output["verify"] = verify_list
     return dict_output
 
-def query_hop2_with_wikidata(q_key_entity , last_key_entity, q_relation, c_relation, retrieval_inf, last_retrieval_inf):
-    dict_output = {"id": {},
-                   "hop_0": {},
-                   "hop_1": {},
-                   "parent": {}, 
-                   "verify": {}}
+def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_entity, q_relation, c_relation, 
+                             retrieval_inf, last_retrieval_inf):
+    """
+    Integrated query function supporting both bidirectional and unidirectional property queries.
+    
+    IMPORTANT: Unidirectional mode is ONLY enabled for type_q == "compositional".
+    For type_q == "inference" or any other type, bidirectional mode is ALWAYS used.
+    
+    Args:
+        type_q: Type of question ("inference", "compositional", etc.)
+                - "compositional": Allows both bidirectional and unidirectional based on property
+                - "inference" or other: Forces bidirectional mode for all queries
+        original_question: The original question text (for special case handling)
+        q_key_entity: The main entity to query (hop 1)
+        last_key_entity: The related entity for verification (hop 0)
+        q_relation: The relationship keyword for hop 1
+        c_relation: The relationship keyword for hop 0 (for verification)
+        retrieval_inf: Retrieval information for hop 1
+        last_retrieval_inf: Retrieval information for hop 0
+    
+    Returns:
+        dict_output with answer, source, and verification information
+    """
+    dict_output = {
+        "id": {},
+        "hop_0": {},
+        "hop_1": {},
+        "parent": {}, 
+        "verify": {},
+        "is_bidirectional": False
+    }
+    
+    # Check if this is a bidirectional or unidirectional query
+    property_id = find_property_id(q_relation)
+    
+    # Unidirectional mode is ONLY allowed for compositional questions
+    # For inference questions, always use bidirectional mode
+    if type_q == "compositional":
+        is_bidirectional = property_id in BIDIRECTIONAL_PROPERTIES if property_id else False
+    else:
+        # For inference or other types, force bidirectional
+        is_bidirectional = True
+    
+    dict_output["is_bidirectional"] = is_bidirectional
+    
+    # For bidirectional queries, use the existing relation-based approach
+    if is_bidirectional:
+        all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation)
         
-    all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation)
+        if all_relation is None:
+            return dict_output
+        
+        dict_output["id"]["pid"] = pid_relation
+        dict_output["id"]["cid"] = cid_relation
+    else:
+        # For unidirectional queries (compositional only), we won't do bidirectional verification
+        all_relation = None
+        pid_relation = [property_id] if property_id else []
+        cid_relation = []
+        
+        dict_output["id"]["pid"] = pid_relation
+        dict_output["id"]["cid"] = cid_relation
     
-    if all_relation is None:
-        return dict_output  
-    
-    
-    key_entity = norm_key_entity(q_key_entity , retrieval_inf)
+    # Normalize and search for hop 1 entity (main entity)
+    key_entity = norm_key_entity(q_key_entity, retrieval_inf)
     print("norm key_entity: ", key_entity)
     
-    list_parent = []
     list_qid = search_sparql(key_entity)
 
     if len(list_qid) == 0:
         q_search_wikidata = search_google(key_entity)
-        if len(q_search_wikidata) == 0:
+        if q_search_wikidata and len(q_search_wikidata) == 0:
             q_search_wikidata = search_google(q_key_entity)
-            
-        list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata) #q_key_entity
-        key_entity = list_norm_title_parent[0] if list_norm_title_parent else key_entity
-        for title in list_norm_title_parent:
-            list_qid.extend(search_sparql(title))
-            
-    norm_last_key_entity = norm_key_entity(last_key_entity , last_retrieval_inf)
+        
+        if q_search_wikidata:
+            list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata)
+            key_entity = list_norm_title_parent[0] if list_norm_title_parent else key_entity
+            for title in list_norm_title_parent:
+                list_qid.extend(search_sparql(title))
+    
+    # Normalize and search for hop 0 entity (for verification, if bidirectional)
+    norm_last_key_entity = norm_key_entity(last_key_entity, last_retrieval_inf) if last_key_entity else None
+    list_qid_last_key = []
+    
+    if is_bidirectional and norm_last_key_entity:
+        list_qid_last_key = search_sparql(norm_last_key_entity)
 
-    list_qid_last_key = search_sparql(norm_last_key_entity)
+        if len(list_qid_last_key) == 0:
+            q_search_wikidata = search_google(norm_last_key_entity)
+            if q_search_wikidata and len(q_search_wikidata) == 0:
+                q_search_wikidata = search_google(last_key_entity)
 
-    if len(list_qid_last_key) == 0:
-        q_search_wikidata = search_google(norm_last_key_entity)
-        if len(q_search_wikidata) == 0:
-            q_search_wikidata = search_google(last_key_entity)
-
-        list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata) #q_key_entity
-        norm_last_key_entity = list_norm_title_parent[0] if list_norm_title_parent else last_key_entity
-        for title in list_norm_title_parent:
-            list_qid_last_key.extend(search_sparql(title))
-      
+            if q_search_wikidata:
+                list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata)
+                norm_last_key_entity = list_norm_title_parent[0] if list_norm_title_parent else last_key_entity
+                for title in list_norm_title_parent:
+                    list_qid_last_key.extend(search_sparql(title))
+    
     dict_output["hop_0"] = {
         "key_entity": norm_last_key_entity,
         "list_qid": list_qid_last_key,
@@ -386,26 +526,88 @@ def query_hop2_with_wikidata(q_key_entity , last_key_entity, q_relation, c_relat
         "list_qid": list_qid,
     }
     
-    # print(list_qid)
+    # Query properties for each candidate QID
     check_qid_parent = set()
     for item in list_qid:
         qid = extract_qid(item["item"]["value"])
         if not re.match(r"^Q\d+$", qid):
-            print(f"'{qid}' là link wikipedia")
+            print(f"'{qid}' is a wikipedia link")
             continue
-        else:
-            if qid in check_qid_parent:
-                continue
-            check_qid_parent.add(qid)
-            
-        parent = sparql_find_parent(qid, all_relation)
-        list_parent.extend(parent)        
-        dict_output["parent"][qid] = parent
         
-    dict_output["id"]["pid"] = pid_relation
-    dict_output["id"]["cid"] = cid_relation
-    # print(dict_output)
-    return verify_hop2(dict_output)
+        if qid in check_qid_parent:
+            continue
+        check_qid_parent.add(qid)
+        
+        # For bidirectional: use the all_relation approach
+        if is_bidirectional and all_relation:
+            parent = sparql_find_parent(qid, all_relation)
+            dict_output["parent"][qid] = parent
+        # For unidirectional: query the specific property directly
+        elif property_id:
+            # Query the property values directly
+            property_values = query_wikidata_property(qid, property_id)
+            
+            # Handle special cases for questions
+            if original_question:
+                if 'work at' in original_question.lower():
+                    employer_id = find_property_id('employer')
+                    if employer_id:
+                        property_values = query_wikidata_property(qid, employer_id)
+                elif 'nationality' in original_question.lower():
+                    # Try both nationality and country of origin
+                    if not property_values:
+                        alt_property_id = find_property_id('country of origin')
+                        if alt_property_id:
+                            property_values = query_wikidata_property(qid, alt_property_id)
+            
+            # If we found values, match with retrieval info or take first value
+            if property_values:
+                short_answer = ''
+                
+                # Match with retrieval_inf if provided
+                if retrieval_inf:
+                    for val in property_values:
+                        if val and val.lower() in retrieval_inf.lower():
+                            short_answer = val
+                            break
+                
+                # If no match or no retrieval_inf, take first value
+                if not short_answer:
+                    short_answer = property_values[0]
+                
+                # Store result and return immediately for unidirectional
+                dict_output["parent"][qid] = [
+                    {
+                        "Pid": {"value": f"http://www.wikidata.org/entity/{property_id}"},
+                        "property": {"value": f"http://www.wikidata.org/entity/{qid}"},
+                        "propertyLabel": {"value": short_answer}
+                    }
+                ]
+                dict_output["verify"] = [{
+                    "qid": qid,
+                    "parent_relations": {
+                        property_id: {
+                            "qid": qid,
+                            "value": short_answer
+                        }
+                    },
+                    "child_relations": {}
+                }]
+                dict_output['long_answer'] = ''
+                dict_output['short_answer'] = short_answer
+                
+                # For unidirectional, return immediately without verify_hop2
+                return dict_output
+    
+    # For bidirectional queries, verify and extract answer
+    if is_bidirectional:
+        return verify_hop2(dict_output)
+    
+    # If unidirectional but no answer found, return empty result
+    dict_output['long_answer'] = ''
+    dict_output['short_answer'] = ''
+    dict_output["verify"] = []
+    return dict_output
 
 def verify_hop2(dict_output):
     verify_list = []
