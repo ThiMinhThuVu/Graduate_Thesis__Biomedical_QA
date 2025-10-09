@@ -422,7 +422,7 @@ def query_hop2_with_wikidata(q_key_entity , last_key_entity, q_relation, c_relat
         
     dict_output["id"]["pid"] = pid_relation
     dict_output["id"]["cid"] = cid_relation
-    print(dict_output)
+    # print(dict_output)
     return verify_hop2(dict_output)
 
 def verify_hop2(dict_output):
