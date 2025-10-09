@@ -2,7 +2,6 @@ import re
 import os
 import time
 import requests
-from utils.util import load_json, save_json
 
 
 PROPERTY_MAPPINGS = {
@@ -131,41 +130,6 @@ def remove_of_phrase(title):
     # Loại bỏ cụm "of ..." (vd: of Berg)
     return re.sub(r'\s+of\s+.*', '', title, flags=re.IGNORECASE).strip()
 
-def find_property_id(search_keyword):
-    """Find Wikidata property ID based on search keyword."""
-    search_normalized = normalize_text(search_keyword)
-    
-    # Direct match in PROPERTY_MAPPINGS
-    if search_normalized in PROPERTY_MAPPINGS:
-        return PROPERTY_MAPPINGS[search_normalized]
-    
-    # Partial match in PROPERTY_MAPPINGS
-    for keyword, prop_id in PROPERTY_MAPPINGS.items():
-        if keyword in search_normalized or search_normalized in keyword:
-            return prop_id
-    
-    return None
-
-def query_wikidata_property(qid, property_id):
-    """Query Wikidata for a specific property of an entity using SPARQL."""
-    query = f"""
-    SELECT ?value ?valueLabel WHERE {{
-      wd:{qid} wdt:{property_id} ?value .
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-    }}
-    """
-    
-    results = send_sparql_request(query)
-    values = []
-    
-    for result in results:
-        if "valueLabel" in result:
-            label = result["valueLabel"]["value"]
-            if label and not label.startswith("Q"):  # Exclude QID itself
-                values.append(label)
-    
-    return values
-
 def search_sparql(title):
     endpoint_url = "https://query.wikidata.org/sparql"
     headers = {
@@ -261,68 +225,110 @@ def send_sparql_request(query, max_retries=10):
     return []
 
 def get_relation_id(q_relation, q_relation_child=None):
-    #find parent
-    if "father" in q_relation.lower():
-        q_relation = "father"
-    elif "mother" in q_relation.lower():
-        q_relation = "mother"
-    elif "spouse" in q_relation.lower() or "wife" in q_relation.lower() or "husband" in q_relation.lower():
-        q_relation = "spouse"
-    elif "child" in q_relation.lower() or "son" in q_relation.lower() or "daughter" in q_relation.lower():
-        q_relation = "child"
-    elif "sibling" in q_relation.lower() or "brother" in q_relation.lower() or "sister" in q_relation.lower():
-        q_relation = "sibling"
-    elif "work" in q_relation.lower():
-        q_relation = "occupation"
+    """
+    Unified function to find property IDs and determine query mode.
+    
+    This function integrates property finding logic and determines whether a query
+    should use bidirectional (relationship) or unidirectional (property) mode.
+    
+    Returns:
+        - For bidirectional properties (in dict_p_relation):
+          (all_relation_string, [parent_property_id], [child_property_ids])
+        - For unidirectional properties (in PROPERTY_MAPPINGS but not dict_p_relation):
+          (None, [property_id], [])
+        - For unknown properties:
+          (None, [], [])
+    """
+    # First, try to find property ID from PROPERTY_MAPPINGS
+    search_normalized = normalize_text(q_relation)
+    
+    # Direct match in PROPERTY_MAPPINGS
+    property_id = None
+    if search_normalized in PROPERTY_MAPPINGS:
+        property_id = PROPERTY_MAPPINGS[search_normalized]
     else:
-        return None, [], []
-
-    p_relation = dict_p_relation.get(q_relation.lower())
-    print("p_relation: ", p_relation)
-    if not p_relation:
+        # Partial match in PROPERTY_MAPPINGS
+        for keyword, prop_id in PROPERTY_MAPPINGS.items():
+            if keyword in search_normalized or search_normalized in keyword:
+                property_id = prop_id
+                break
+    
+    # If no property found, return empty
+    if not property_id:
         return None, [], []
     
-    #find child
-    if "father" in q_relation_child.lower() or "mother" in q_relation_child.lower():
-        c_relation = ["child"]
-    elif "spouse" in q_relation_child.lower() or "wife" in q_relation_child.lower() or "husband" in q_relation_child.lower():
-        c_relation = ["spouse"]
-    elif "child" in q_relation_child.lower() or "son" in q_relation_child.lower() or "daughter" in q_relation_child.lower():
-        c_relation = ["mother", "father"]
-    elif "sibling" in q_relation_child.lower() or "brother" in q_relation_child.lower() or "sister" in q_relation_child.lower():
-        c_relation = ["sibling"]
-    elif "work" in q_relation_child.lower():
-        c_relation = ["occupation"]
-    else:
-        c_relation == None
+    # Check if this is a bidirectional property (requires relationship verification)
+    if property_id in BIDIRECTIONAL_PROPERTIES:
+        # Bidirectional mode - find parent relation keyword
+        if "father" in q_relation.lower():
+            q_relation = "father"
+        elif "mother" in q_relation.lower():
+            q_relation = "mother"
+        elif "spouse" in q_relation.lower() or "wife" in q_relation.lower() or "husband" in q_relation.lower():
+            q_relation = "spouse"
+        elif "child" in q_relation.lower() or "son" in q_relation.lower() or "daughter" in q_relation.lower():
+            q_relation = "child"
+        elif "sibling" in q_relation.lower() or "brother" in q_relation.lower() or "sister" in q_relation.lower():
+            q_relation = "sibling"
+        elif "work" in q_relation.lower():
+            q_relation = "occupation"
+        else:
+            return None, [], []
 
-    all_relation = "wd:" + p_relation
-    cid_relation = []
-    if c_relation:
-        for r in c_relation:
-            if r == q_relation:
-                continue
-            cid = dict_p_relation.get(r.lower())
-            all_relation += " wd:" + cid
-            cid_relation.append(cid)
-    return all_relation, [p_relation], cid_relation
+        p_relation = dict_p_relation.get(q_relation.lower())
+        print("p_relation: ", p_relation)
+        if not p_relation:
+            return None, [], []
+        
+        # Find child relation if provided
+        c_relation = []
+        if q_relation_child:
+            if "father" in q_relation_child.lower() or "mother" in q_relation_child.lower():
+                c_relation = ["child"]
+            elif "spouse" in q_relation_child.lower() or "wife" in q_relation_child.lower() or "husband" in q_relation_child.lower():
+                c_relation = ["spouse"]
+            elif "child" in q_relation_child.lower() or "son" in q_relation_child.lower() or "daughter" in q_relation_child.lower():
+                c_relation = ["mother", "father"]
+            elif "sibling" in q_relation_child.lower() or "brother" in q_relation_child.lower() or "sister" in q_relation_child.lower():
+                c_relation = ["sibling"]
+            elif "work" in q_relation_child.lower():
+                c_relation = ["occupation"]
+
+        # Build SPARQL relation string
+        all_relation = "wd:" + p_relation
+        cid_relation = []
+        if c_relation:
+            for r in c_relation:
+                if r == q_relation:
+                    continue
+                cid = dict_p_relation.get(r.lower())
+                if cid:
+                    all_relation += " wd:" + cid
+                    cid_relation.append(cid)
+        
+        return all_relation, [p_relation], cid_relation
+    else:
+        # Unidirectional mode - just return the property ID
+        return None, [property_id], []
 
 def sparql_find_parent(qid, all_relation):
-    # query = f"""
-    # SELECT ?property ?propertyLabel
-    # WHERE {{
-    #     wd:{qid} wdt:{p_relation} ?property .
-    #     SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-    # }}
-    # """
+    """
+    Unified SPARQL query function for both bidirectional and unidirectional property queries.
     
-    # query = f"""
-    # SELECT ?property ?propertyLabel
-    # WHERE {{
-    #     wd:{qid} wdt:{p_relation}|wdt:{c_relation} ?property .
-    #     SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-    # }}
-    # """
+    This single query format works for both single and multiple property IDs.
+    
+    Args:
+        qid: Wikidata entity ID (e.g., "Q272899")
+        all_relation: Property ID(s) with "wd:" prefix:
+            - Single property: "wd:P19"
+            - Multiple properties: "wd:P22 wd:P25" (space-separated)
+    
+    Returns:
+        List of SPARQL query results with ?Pid, ?PidLabel, ?property, ?propertyLabel
+    """
+    # Ensure all_relation has wd: prefix
+    if not all_relation.startswith('wd:'):
+        all_relation = 'wd:' + all_relation
     
     query = f"""
     SELECT ?Pid ?PidLabel ?property ?propertyLabel
@@ -424,7 +430,7 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
     """
     Integrated query function supporting both bidirectional and unidirectional property queries.
     
-    IMPORTANT: Unidirectional mode is ONLY enabled for type_q == "compositional".
+    Unidirectional mode is ONLY enabled for type_q == "compositional".
     For type_q == "inference" or any other type, bidirectional mode is ALWAYS used.
     
     Args:
@@ -451,36 +457,29 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
         "is_bidirectional": False
     }
     
-    # Check if this is a bidirectional or unidirectional query
-    property_id = find_property_id(q_relation)
+    # Get relation/property information using unified function
+    all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation)
     
+    # Determine if this should be bidirectional or unidirectional
     # Unidirectional mode is ONLY allowed for compositional questions
-    # For inference questions, always use bidirectional mode
     if type_q == "compositional":
-        is_bidirectional = property_id in BIDIRECTIONAL_PROPERTIES if property_id else False
+        # all_relation will be None for unidirectional properties
+        is_bidirectional = all_relation is not None
     else:
         # For inference or other types, force bidirectional
         is_bidirectional = True
     
     dict_output["is_bidirectional"] = is_bidirectional
     
-    # For bidirectional queries, use the existing relation-based approach
-    if is_bidirectional:
-        all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation)
-        
-        if all_relation is None:
-            return dict_output
-        
-        dict_output["id"]["pid"] = pid_relation
-        dict_output["id"]["cid"] = cid_relation
-    else:
-        # For unidirectional queries (compositional only), we won't do bidirectional verification
-        all_relation = None
-        pid_relation = [property_id] if property_id else []
-        cid_relation = []
-        
-        dict_output["id"]["pid"] = pid_relation
-        dict_output["id"]["cid"] = cid_relation
+    # If no valid property found, return empty result with required keys
+    if not pid_relation:
+        dict_output['long_answer'] = ''
+        dict_output['short_answer'] = ''
+        dict_output["verify"] = []
+        return dict_output
+    
+    dict_output["id"]["pid"] = pid_relation
+    dict_output["id"]["cid"] = cid_relation
     
     # Normalize and search for hop 1 entity (main entity)
     key_entity = norm_key_entity(q_key_entity, retrieval_inf)
@@ -543,22 +542,45 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
             parent = sparql_find_parent(qid, all_relation)
             dict_output["parent"][qid] = parent
         # For unidirectional: query the specific property directly
-        elif property_id:
-            # Query the property values directly
-            property_values = query_wikidata_property(qid, property_id)
+        elif not is_bidirectional and pid_relation:
+            # Get the property ID from pid_relation and add wd: prefix
+            property_id = pid_relation[0]
+            # Query the property values directly using sparql_find_parent
+            results = sparql_find_parent(qid, f"wd:{property_id}")
+            
+            # Extract label values from SPARQL results (using propertyLabel, not valueLabel)
+            property_values = []
+            for result in results:
+                if "propertyLabel" in result:
+                    label = result["propertyLabel"]["value"]
+                    if label and not label.startswith("Q"):  # Exclude QID itself
+                        property_values.append(label)
             
             # Handle special cases for questions
             if original_question:
                 if 'work at' in original_question.lower():
-                    employer_id = find_property_id('employer')
-                    if employer_id:
-                        property_values = query_wikidata_property(qid, employer_id)
+                    # Use get_relation_id to find employer property
+                    _, employer_ids, _ = get_relation_id('employer')
+                    if employer_ids:
+                        results = sparql_find_parent(qid, f"wd:{employer_ids[0]}")
+                        property_values = []
+                        for result in results:
+                            if "propertyLabel" in result:
+                                label = result["propertyLabel"]["value"]
+                                if label and not label.startswith("Q"):
+                                    property_values.append(label)
                 elif 'nationality' in original_question.lower():
                     # Try both nationality and country of origin
                     if not property_values:
-                        alt_property_id = find_property_id('country of origin')
-                        if alt_property_id:
-                            property_values = query_wikidata_property(qid, alt_property_id)
+                        _, alt_property_ids, _ = get_relation_id('country of origin')
+                        if alt_property_ids:
+                            results = sparql_find_parent(qid, f"wd:{alt_property_ids[0]}")
+                            property_values = []
+                            for result in results:
+                                if "propertyLabel" in result:
+                                    label = result["propertyLabel"]["value"]
+                                    if label and not label.startswith("Q"):
+                                        property_values.append(label)
             
             # If we found values, match with retrieval info or take first value
             if property_values:
@@ -662,4 +684,10 @@ def verify_hop2(dict_output):
     return dict_output
 
 if __name__ == "__main__":
+    # Test bidirectional mode (multiple properties)
+    print("Bidirectional query:")
     print(sparql_find_parent("Q272899", "wd:P22 wd:P25"))
+    
+    # Test unidirectional mode (single property)
+    print("\nUnidirectional query:")
+    print(sparql_find_parent("Q272899", "wd:P19"))

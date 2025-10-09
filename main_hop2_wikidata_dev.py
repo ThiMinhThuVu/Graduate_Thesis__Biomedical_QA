@@ -141,7 +141,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     if step == '1':
                         if dataset == "wiki" and query_wikidata==True: 
                             q_relation_parent = search_kw_subq
-                            answer_generation = query_hop2_with_wikidata(key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)     
+                            answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)
                             normalized_v2 = answer_generation
                             short_ans = answer_generation["short_answer"]
                             long_ans = answer_generation["long_answer"]
@@ -149,7 +149,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         else:
                             short_ans = qi_final_answers[path_i][step]["short_answer"]
                             long_ans = qi_final_answers[path_i][step]["long_answer"]
-                    
+
                         if type_q == "inference" and dataset == "wiki":
                             prefix_ans = ""
                             name_ans = ""
@@ -168,10 +168,10 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     if type_q == "inference" and dataset == "wiki" and query_wikidata==True:
                         if step == '1':
                             dict_ans[q_i][path_i][step]['normalized_v2'] = normalized_v2
-                    else:
-                        dict_ans[q_i][path_i][step]['prefix'] = prefix_ans
-                        dict_ans[q_i][path_i][step]['name'] = name_ans
-                        dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
+                    # else:
+                    #     dict_ans[q_i][path_i][step]['prefix'] = prefix_ans
+                    #     dict_ans[q_i][path_i][step]['name'] = name_ans
+                    #     dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
                         
             else:
                 short_ans = ""
@@ -211,7 +211,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     elif step == '1':
                         if dataset == "wiki": 
                             q_relation_parent = search_kw_subq
-                            answer_generation = query_hop2_with_wikidata(key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)     
+                            answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)     
                             normalized_v2 = answer_generation
                         else:
                             answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
@@ -254,10 +254,10 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                 
                 if type_q == "inference" and dataset == "wiki" and query_wikidata==True:           
                     dict_ans[q_i]['final_qi']['normalized_v2'] = normalized_v2
-                else:
-                    dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
-                    dict_ans[q_i]['final_qi']['name'] = name_ans
-                    dict_ans[q_i]['final_qi']['suffix'] = suffix_ans   
+                # else:
+                #     dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
+                #     dict_ans[q_i]['final_qi']['name'] = name_ans
+                #     dict_ans[q_i]['final_qi']['suffix'] = suffix_ans   
                     
             all_context += f"{q_i}.{question} - {short_ans}, {long_ans}\n\n"
             save_json(qi_final_answers, ans_filepath)
@@ -388,13 +388,13 @@ if __name__ == "__main__":
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        type_ = "inference" #"inference"
+        type_ = "compositional" #"inference"
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/dev/dev_{type_}.json"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"
-        list_ID = ["362fbfec0baf11ebab90acde48001122",
-                   "5898d4e60bb011ebab90acde48001122",
-                   "772cba800bb011ebab90acde48001122",
+        # list_ID = ["362fbfec0baf11ebab90acde48001122",
+                #    "5898d4e60bb011ebab90acde48001122",
+                #    "772cba800bb011ebab90acde48001122",
                 #    "1d03457e0bb011ebab90acde48001122",
                 #    "285939380bb011ebab90acde48001122",
                 #    "347300820bb011ebab90acde48001122",
@@ -404,7 +404,7 @@ if __name__ == "__main__":
                 #    "6b713cc60baf11ebab90acde48001122",
                 #    "6c80bc4e0bb011ebab90acde48001122",
                 #    "71a1099a0bb011ebab90acde48001122"
-        ]
+        # ]
         raw_data = load_json(raw_data_file)
         
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
