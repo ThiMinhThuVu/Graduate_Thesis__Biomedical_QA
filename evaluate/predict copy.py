@@ -59,55 +59,55 @@ for filename in os.listdir(wiki_result_directory):
     else:
         print(f'Có lỗi nhận dạng file: {filename}')
     # predict = data[last_step_key]['short_answer']
-    predict = ''
-    retrieval = data[last_step_key]['retrieval_information']
-    if 'normalized_v2' in data[last_step_key] and data[last_step_key]['normalized_v2'] is not None:
-        verify = data[last_step_key]['normalized_v2']['verify']
-        if len(verify) > 0 and 'parent_label' in verify[0]:
-            predict = verify[0]['parent_label']
+    # predict = ''
+    # retrieval = data[last_step_key]['retrieval_information']
+    # if 'normalized_v2' in data[last_step_key] and data[last_step_key]['normalized_v2'] is not None:
+    #     verify = data[last_step_key]['normalized_v2']['verify']
+    #     if len(verify) > 0 and 'parent_label' in verify[0]:
+    #         predict = verify[0]['parent_label']
             
-        if predict == '':
-            list_predict = []
-            dict_parent = data[last_step_key]['normalized_v2']['parent']
-            for parent_id, parent in dict_parent.items():
-                if len(parent) > 0 and 'propertyLabel' in parent[0]:
-                    list_predict.append(parent[0]['propertyLabel']['value'])
+    #     if predict == '':
+    #         list_predict = []
+    #         dict_parent = data[last_step_key]['normalized_v2']['parent']
+    #         for parent_id, parent in dict_parent.items():
+    #             if len(parent) > 0 and 'propertyLabel' in parent[0]:
+    #                 list_predict.append(parent[0]['propertyLabel']['value'])
                     
-            # if len(list_predict) > 0:
-            #     predict = list_predict[0]
-            for p in list_predict:
-                if p in retrieval:
-                    predict = p
-                    break        
+    #         # if len(list_predict) > 0:
+    #         #     predict = list_predict[0]
+    #         for p in list_predict:
+    #             if p in retrieval:
+    #                 predict = p
+    #                 break        
 
-    if predict == '' and 'normalized_ans' in data[last_step_key]:
-        predict = data[last_step_key]['normalized_ans']['full_name']
-        if predict != '':
-            if predict not in retrieval:
-                predict = ''
+    # if predict == '' and 'normalized_ans' in data[last_step_key]:
+    #     predict = data[last_step_key]['normalized_ans']['full_name']
+    #     if predict != '':
+    #         if predict not in retrieval:
+    #             predict = ''
                 
-        if predict == '':
-            predict = data[last_step_key]['normalized_ans']['suffix']
-            # if predict != '':
-            #     if predict not in retrieval:
-            #         predict = ''
+    #     if predict == '':
+    #         predict = data[last_step_key]['normalized_ans']['suffix']
+    #         # if predict != '':
+    #         #     if predict not in retrieval:
+    #         #         predict = ''
         
-        if predict == '':
-            predict = data[last_step_key]['normalized_ans']['name']
-            # if predict != '':
-            #     if predict not in retrieval:
-            #         predict = ''
+    #     if predict == '':
+    #         predict = data[last_step_key]['normalized_ans']['name']
+    #         # if predict != '':
+    #         #     if predict not in retrieval:
+    #         #         predict = ''
             
-        if predict == '':
-            predict = data[last_step_key]['normalized_ans']['prefix']
-            # if predict != '':
-            #     if predict not in retrieval:
-            #         predict = ''
+    #     if predict == '':
+    #         predict = data[last_step_key]['normalized_ans']['prefix']
+    #         # if predict != '':
+    #         #     if predict not in retrieval:
+    #         #         predict = ''
     
    
-    if predict == '' or predict not in retrieval:
-        predict = data[last_step_key]['short_answer']
-        
+    # if predict == '' or predict not in retrieval:
+        # predict = data[last_step_key]['short_answer']
+    predict = data[last_step_key]['short_answer']  
     predict_dict['answer'][id] = predict
 
 with open(pred_path, 'w', encoding='utf-8') as f:
