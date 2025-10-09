@@ -22,9 +22,78 @@ dict_p_relation = {
     "sibling": "P3373"
 }
 
+API_KEY_GG = 'Bearer 5C776EC6-9757-45BF-B13E-85F3C4860C18'
+
+def search_google(query):
+    query += " site:wikidata.org"
+    
+    max_retries = 30
+    retry_delay = 30
+   
+    for attempt in range(max_retries):
+        try:
+            response = requests.post(
+                'https://api.search1api.com/search',
+                headers={
+                    'Content-Type': 'application/json',
+                    'Authorization': API_KEY_GG 
+                },
+                json={
+                    "query": query,
+                    "search_service": "google",
+                    "max_results": 10,
+                    "crawl_results": 0,
+                    "image": False,
+                    "language": "en"
+                },
+                timeout=30
+            )
+
+            if response.status_code in [200, 404]:
+                return response.json().get("results", [])
+            else:
+                raise RuntimeError(f"Search API failed with status code {response.status_code}: {response.text}")
+
+        except Exception as e:
+            print(f"Error (attempt {attempt + 1}/{max_retries}): {e}")
+            if attempt < max_retries - 1:
+                time.sleep(retry_delay)
+            else:
+                raise e 
+            
+def qid_google_results(results, topk = 1):
+    """
+    Filter Google search results to keep only relevant Wikidata QIDs.
+    - results: list of dicts with 'title', 'link', 'snippet'
+    - entity_name: the original entity string
+    """
+    if not results:
+        return []  
+
+    filtered = []
+
+    for r in results[0:topk]:
+        if "wikidata.org/wiki/" in r['link']:
+            qid = r['link'].split("/")[-1]
+            filtered.append(qid)    
+    
+    return filtered
+
+def norm_keyentity_wikidata_api(results, topk=1):   
+    if not results:
+        return []  
+
+    filtered = []
+
+    for idx, r in enumerate(results[0:topk]):
+        if "wikidata.org/wiki/" in r['link']:
+            title = r['title']
+            filtered.append(title)    
+    
+    return filtered
+
 def tokenize(text):
     return set(re.findall(r"\w+", text.lower()))
-    
 
 def remove_of_phrase(title):
     # Loại bỏ cụm "of ..." (vd: of Berg)
@@ -67,53 +136,65 @@ def search_sparql(title):
     }}
     """
     
-    try:
-        response_1 = requests.get(endpoint_url, params={"query": query_1}, headers=headers)
-        response_1.raise_for_status()
-        results = response_1.json()["results"]["bindings"]
-        
-        res_output = []
-        for res in results:
-            if 'entity/Q' in res['item']['value']:
-                res_output.append(res)
-                
-        if res_output:
-            return res_output
+    results = send_sparql_request(query_1)
+    res_output = [r for r in results if 'entity/Q' in r['item']['value']]
+    if res_output:
+        return res_output
 
-    except requests.exceptions.RequestException as e:
-        print(f"Error executing query 1: {e}")
-        return []
-    except KeyError:
-        print("Error parsing JSON for query 1.")
-        return []
-        
-    try:
-        response_2 = requests.get(endpoint_url, params={"query": query_2}, headers=headers)
-        response_2.raise_for_status()
-        results = response_2.json()["results"]["bindings"]
-        
-        res_output = []
-        for res in results:
-            if 'entity/Q' in res['item']['value']:
-                res_output.append(res)
-                
-        if res_output:
-            return res_output
-        
-    except requests.exceptions.RequestException as e:
-        print(f"Error executing query 2: {e}")
-        return []
-    except KeyError:
-        print("Error parsing JSON for query 2.")
-        return []
+    results = send_sparql_request(query_2)
+    res_output = [r for r in results if 'entity/Q' in r['item']['value']]
+    if res_output:
+        return res_output
 
     print("No results found after both searches.")
     return []
-
+    
 def extract_qid(url):
     return url.split('/')[-1]
 
-def sparql_find_parent(qid, q_relation):
+def send_sparql_request(query, max_retries=10):
+    endpoint_url = "https://query.wikidata.org/sparql"
+    headers = {
+        "Accept": "application/sparql-results+json",
+        "User-Agent": "MyWikidataSearchApp/1.0"
+    }
+
+    for attempt in range(max_retries):
+        try:
+            response = requests.get(endpoint_url, params={"query": query}, headers=headers)
+            
+            # nếu thành công
+            if response.status_code == 200:
+                return response.json()["results"]["bindings"]
+            
+            # nếu bị rate-limit (429)
+            elif response.status_code == 429:
+                wait_time = 2 ** attempt
+                print(f"⚠️ Rate limit (429). Waiting {wait_time}s before retry...")
+                time.sleep(wait_time)
+                continue
+            
+            # nếu là lỗi tạm thời khác (5xx)
+            elif 500 <= response.status_code < 600:
+                wait_time = 2 ** attempt
+                print(f"⚠️ Server error {response.status_code}. Retrying in {wait_time}s...")
+                time.sleep(wait_time)
+                continue
+            
+            else:
+                print(f"❌ Query failed with status {response.status_code}: {response.text}")
+                return []
+
+        except requests.exceptions.RequestException as e:
+            print(f"❌ Connection error: {e}. Retrying...")
+            time.sleep(2 ** attempt)
+            continue
+
+    print("❌ Max retries reached. Returning empty result.")
+    return []
+
+def get_relation_id(q_relation, q_relation_child=None):
+    #find parent
     if "father" in q_relation.lower():
         q_relation = "father"
     elif "mother" in q_relation.lower():
@@ -127,111 +208,66 @@ def sparql_find_parent(qid, q_relation):
     elif "work" in q_relation.lower():
         q_relation = "occupation"
     else:
-        return False
-    
+        return None, [], []
+
     p_relation = dict_p_relation.get(q_relation.lower())
     print("p_relation: ", p_relation)
     if not p_relation:
-        return None
+        return None, [], []
     
+    #find child
+    if "father" in q_relation_child.lower() or "mother" in q_relation_child.lower():
+        c_relation = ["child"]
+    elif "spouse" in q_relation_child.lower() or "wife" in q_relation_child.lower() or "husband" in q_relation_child.lower():
+        c_relation = ["spouse"]
+    elif "child" in q_relation_child.lower() or "son" in q_relation_child.lower() or "daughter" in q_relation_child.lower():
+        c_relation = ["mother", "father"]
+    elif "sibling" in q_relation_child.lower() or "brother" in q_relation_child.lower() or "sister" in q_relation_child.lower():
+        c_relation = ["sibling"]
+    elif "work" in q_relation_child.lower():
+        c_relation = ["occupation"]
+    else:
+        c_relation == None
+
+    all_relation = "wd:" + p_relation
+    cid_relation = []
+    if c_relation:
+        for r in c_relation:
+            if r == q_relation:
+                continue
+            cid = dict_p_relation.get(r.lower())
+            all_relation += " wd:" + cid
+            cid_relation.append(cid)
+    return all_relation, [p_relation], cid_relation
+
+def sparql_find_parent(qid, all_relation):
+    # query = f"""
+    # SELECT ?property ?propertyLabel
+    # WHERE {{
+    #     wd:{qid} wdt:{p_relation} ?property .
+    #     SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+    # }}
+    # """
     
-    
-    endpoint_url = "https://query.wikidata.org/sparql"
+    # query = f"""
+    # SELECT ?property ?propertyLabel
+    # WHERE {{
+    #     wd:{qid} wdt:{p_relation}|wdt:{c_relation} ?property .
+    #     SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+    # }}
+    # """
     
     query = f"""
-    SELECT ?property ?propertyLabel
+    SELECT ?Pid ?PidLabel ?property ?propertyLabel
     WHERE {{
-        wd:{qid} wdt:{p_relation} ?property .
+        wd:{qid} ?propIRI ?property .
+        ?Pid wikibase:directClaim ?propIRI .
+        VALUES ?Pid {{ { all_relation } }}
         SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
     }}
     """
     
-    headers = {
-        "Accept": "application/sparql-results+json",
-        "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-    }
-    response = requests.get(endpoint_url, params={"query": query}, headers=headers)
-    # time.sleep(1)
-    if response.status_code == 200:
-        results = response.json()["results"]["bindings"]
-        return results  
-    else:
-        raise Exception(f"Query failed with status {response.status_code}. Full response: {response.text}")
-
-
-def sparql_find_child(item_id, q_relation):
-    if "father" in q_relation.lower() or "mother" in q_relation.lower():
-        relation = ["child"]
-    elif "spouse" in q_relation.lower() or "wife" in q_relation.lower() or "husband" in q_relation.lower():
-        relation = ["spouse"]
-    elif "child" in q_relation.lower() or "son" in q_relation.lower() or "daughter" in q_relation.lower():
-        relation = ["mother", "father"]
-    elif "sibling" in q_relation.lower() or "brother" in q_relation.lower() or "sister" in q_relation.lower():
-        relation = ["sibling"]
-    elif "work" in q_relation.lower():
-        relation = ["occupation"]
-    else:
-        return False
-    
-    list_results = []
-    for r in relation:
-        q_relation = r        
-        p_relation = dict_p_relation.get(q_relation.lower())
-        print("p_relation: ", p_relation)
-        if not p_relation:
-            return None
-        
-        qid = extract_qid(item_id)
-        if not re.match(r"^Q\d+$", qid):
-            print(f"'{qid}' là link wikipedia")
-            return None
-        
-        endpoint_url = "https://query.wikidata.org/sparql"
-        
-        query = f"""
-        SELECT ?property ?propertyLabel
-        WHERE {{
-            wd:{qid} wdt:{p_relation} ?property .
-            SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-        }}
-        """
-        
-        headers = {
-            "Accept": "application/sparql-results+json",
-            "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        }
-        response = requests.get(endpoint_url, params={"query": query}, headers=headers)
-        # time.sleep(1)
-        if response.status_code == 200:
-            results = response.json()["results"]["bindings"]
-            list_results.extend(results)
-        else:
-            raise Exception(f"Query failed with status {response.status_code}. Full response: {response.text}")
-    return list_results
-
-def get_best_match_by_overlap(candidates, short_answer):
-    """
-    Chọn wikidata title có độ overlap token cao nhất với short_answer.
-    """
-    short_tokens = tokenize(short_answer)
-
-    best_score = -1
-    best_match = None
-
-    for cand in candidates:
-        cand_label = cand.get("itemLabel", {}).get("value", "")
-        cand_tokens = tokenize(cand_label)
-        if not cand_tokens:
-            continue
-        overlap = len(cand_tokens & short_tokens)
-        union = len(cand_tokens | short_tokens)
-        score = overlap / union if union else 0
-        if score > best_score:
-            best_score = score
-            best_match = cand
-
-    return best_match
-
+    return send_sparql_request(query)
 
 def get_nom_qid(sample, date_string="2021-04-07"):
     """
@@ -316,72 +352,241 @@ def verify_relations(dict_output):
     dict_output["verify"] = verify_list
     return dict_output
 
+def query_hop2_with_wikidata(q_key_entity , last_key_entity, q_relation, c_relation, retrieval_inf, last_retrieval_inf):
+    dict_output = {"id": {},
+                   "hop_0": {},
+                   "hop_1": {},
+                   "parent": {}, 
+                   "verify": {}}
+        
+    all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation)
+    
+    if all_relation is None:
+        return dict_output  
+    
+    
+    key_entity = norm_key_entity(q_key_entity , retrieval_inf)
+    print("norm key_entity: ", key_entity)
+    
+    list_parent = []
+    list_qid = search_sparql(key_entity)
+
+    if len(list_qid) == 0:
+        q_search_wikidata = search_google(key_entity)
+        if len(q_search_wikidata) == 0:
+            q_search_wikidata = search_google(q_key_entity)
+            
+        list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata) #q_key_entity
+        key_entity = list_norm_title_parent[0] if list_norm_title_parent else key_entity
+        for title in list_norm_title_parent:
+            list_qid.extend(search_sparql(title))
+            
+    norm_last_key_entity = norm_key_entity(last_key_entity , last_retrieval_inf)
+
+    list_qid_last_key = search_sparql(norm_last_key_entity)
+
+    if len(list_qid_last_key) == 0:
+        q_search_wikidata = search_google(norm_last_key_entity)
+        if len(q_search_wikidata) == 0:
+            q_search_wikidata = search_google(last_key_entity)
+
+        list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata) #q_key_entity
+        norm_last_key_entity = list_norm_title_parent[0] if list_norm_title_parent else last_key_entity
+        for title in list_norm_title_parent:
+            list_qid_last_key.extend(search_sparql(title))
+      
+    dict_output["hop_0"] = {
+        "key_entity": norm_last_key_entity,
+        "list_qid": list_qid_last_key,
+    }
+    dict_output["hop_1"] = {
+        "key_entity": key_entity,
+        "list_qid": list_qid,
+    }
+    
+    # print(list_qid)
+    check_qid_parent = set()
+    for item in list_qid:
+        qid = extract_qid(item["item"]["value"])
+        if not re.match(r"^Q\d+$", qid):
+            print(f"'{qid}' là link wikipedia")
+            continue
+        else:
+            if qid in check_qid_parent:
+                continue
+            check_qid_parent.add(qid)
+            
+        parent = sparql_find_parent(qid, all_relation)
+        list_parent.extend(parent)        
+        dict_output["parent"][qid] = parent
+        
+    dict_output["id"]["pid"] = pid_relation
+    dict_output["id"]["cid"] = cid_relation
+    print(dict_output)
+    return verify_hop2(dict_output)
+
+def verify_hop2(dict_output):
+    verify_list = []
+    parent_id = dict_output["id"]["pid"]
+    child_id = dict_output["id"]["cid"]
+    child_info = dict_output['hop_0']
+    short_answer  = ''
+    # duyệt qua từng parent và danh sách con của nó
+    for parent_qid, sample in dict_output.get("parent", {}).items():
+        p_value = {}
+        c_value = {}
+        # ok = 0
+        for item in sample:
+            pid = item["Pid"]["value"].split("/")[-1] # lấy Pid
+            qid = item["property"]["value"].split("/")[-1] # lấy QID của child
+            propertyLabel = item["propertyLabel"]["value"] if "propertyLabel" in item else None
+            ok = 0
+            if pid in parent_id:
+                p_value[pid] = {
+                    "qid": qid,
+                    "value": propertyLabel
+                }
+                tmp_ans = propertyLabel
+                for item_c in sample:
+                    pid = item_c["Pid"]["value"].split("/")[-1] # lấy Pid
+                    qid = item_c["property"]["value"].split("/")[-1] # lấy QID của child
+                    propertyLabel = item_c["propertyLabel"]["value"] if "propertyLabel" in item_c else None
+                    
+                    if pid in child_id:                
+                        if propertyLabel.lower() == child_info['key_entity'].lower():
+                            ok = 1
+                            short_answer = tmp_ans
+                            c_value[pid] = {
+                                "qid": qid,
+                                "value": propertyLabel
+                            }
+                            break
+                    
+            if ok == 1:
+                verify_list.append({
+                    "qid": parent_qid,
+                    "parent_relations": p_value,
+                    "child_relations": c_value
+                })   
+                break
+
+    # thêm vào dict_output
+    dict_output["verify"] = verify_list
+    dict_output['long_answer'] = ''
+    dict_output['short_answer'] = short_answer
+    
+    return dict_output
 
 if __name__ == "__main__":
-    type_q = "inference"
-    folder = fr"E:\UETQuintet\wiki_{type_q}_results\all_ans"
-    # golden_data = load_json(r'data\wiki\dev\dev_inference.json')
-    list_file = os.listdir(folder)
+    # type_q = "inference"
+    # folder = fr"E:\UETQuintet\wiki_{type_q}_results\all_ans"
+    # # golden_data = load_json(r'data\wiki\dev\dev_inference.json')
+    # list_file = os.listdir(folder)
     
-    for file in list_file:
-        file_path = os.path.join(folder, file)
-        sample = load_json(file_path)
-        if sample["QIDX"] != "054fb79c0baf11ebab90acde48001122": #0bad718c0bb011ebab90acde48001122
-            continue
+    # for index, file in enumerate(list_file):
+    #     print(index)
+    #     file_path = os.path.join(folder, file)
+    #     res_file_path = os.path.join(folder, file)
+    #     sample = load_json(file_path)
         
-        if "final_qi" in sample["1"]:
-            # if "normalized_ans" in sample["1"]["final_qi"]:
-            #     continue
-            key_entity = sample["1"]["final_qi"]["key_entity"]
-            q_relation = sample["1"]["final_qi"]["search_keyword"]
-            short_ans = sample["1"]["final_qi"]["short_answer"]
-            retrieval_inf = sample["1"]["final_qi"]["retrieval_information"]
-            print("key_entity: ", key_entity)
-            dict_output = {"parent": {}, "child": {}}
+    #     if "final_qi" in sample["1"]:
+    #         if "normalized_v2" in sample["1"]["final_qi"]:
+    #             if sample["1"]["final_qi"]["normalized_v2"] is not None:
+    #                 # print((sample["1"]["final_qi"]["normalized_v2"]["verify"]))
+    #                 if len(sample["1"]["final_qi"]["normalized_v2"]["verify"]) > 0:
+    #                     save_json(sample, res_file_path)
+    #                     continue
+                        
+    #         print(sample['QIDX'])
+    #         q_key_entity = sample["1"]["final_qi"]["key_entity"]
+    #         q_relation = sample["1"]["final_qi"]["search_keyword"]
+    #         short_ans = sample["1"]["final_qi"]["short_answer"]
+    #         retrieval_inf = sample["1"]["final_qi"]["retrieval_information"]
             
-            key_entity = norm_key_entity(key_entity, retrieval_inf)
-            print("norm key_entity: ", key_entity)
-            #find parent
-            list_parent = []
-            list_qid = search_sparql(key_entity)
+    #         if q_key_entity == '':
+    #             sample["1"]["final_qi"]["normalized_v2"] = None
+    #             sample['final_answer']["normalized_v2"] = None
+    #             save_json(sample, res_file_path)
+    #             continue
+                
+    #         # print("key_entity: ", q_key_entity)
+    #         dict_output = {"parent": {}, "child": {}}
             
-            # print(list_qid)
-            check_qid_parent = set()
-            for item in list_qid:
-                qid = extract_qid(item["item"]["value"])
-                if not re.match(r"^Q\d+$", qid):
-                    print(f"'{qid}' là link wikipedia")
-                    continue
-                else:
-                    if qid in check_qid_parent:
-                        continue
-                    check_qid_parent.add(qid)
+    #         key_entity = norm_key_entity(q_key_entity, retrieval_inf)
+    #         # print("norm key_entity: ", key_entity)
+    #         #find parent
+    #         list_parent = []
+    #         list_qid = search_sparql(key_entity)
 
-                parent = sparql_find_parent(qid, q_relation)
-                list_parent.extend(parent)
-                dict_output["parent"][qid] = parent
+    #         if len(list_qid) == 0:
+    #             q_search_wikidata = search_google(key_entity)
+    #             if len(q_search_wikidata) == 0:
+    #                 q_search_wikidata = search_google(q_key_entity)
+                    
+    #             list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata) #q_key_entity
+
+    #             for title in list_norm_title_parent:
+    #                 list_qid.extend(search_sparql(title))
+            
+    #         # print(list_qid)
+    #         check_qid_parent = set()
+    #         valid_child_qids = set()
+            
+    #         for item in list_qid:
+    #             qid = extract_qid(item["item"]["value"])
+    #             if not re.match(r"^Q\d+$", qid):
+    #                 print(f"'{qid}' là link wikipedia")
+    #                 continue
+    #             else:
+    #                 if qid in check_qid_parent:
+    #                     continue
+    #                 check_qid_parent.add(qid)
+
+    #             parent = sparql_find_parent(qid, q_relation)
+    #             list_parent.extend(parent)
+    #             dict_output["parent"][qid] = parent
+    #             # print("parent: ", parent)
+
+    #             #✅ Lấy danh sách các child thực sự xuất hiện trong parent (để lọc)        
+    #             for children in parent:
+    #                 child_qid = extract_qid(children["property"]["value"])
+    #                 valid_child_qids.add(child_qid)
+
+    #         # === FIND CHILD ===
+    #         list_child = []
+    #         list_qid_c = get_nom_qid(sample)
+    #         check_qid_child = set()
+
+    #         if len(list_qid_c) == 0:
+    #             ans_search_wikidata = search_google(short_ans)            
+    #             list_norm_title_c = norm_keyentity_wikidata_api(ans_search_wikidata) 
+
+    #             for title in list_norm_title_c:
+    #                 list_qid_c.extend(search_sparql(title))
+
+    #         for item in list_qid_c:
+    #             qid = extract_qid(item["item"]["value"])
+    #             if not re.match(r"^Q\d+$", qid):
+    #                 print(f"'{qid}' là link wikipedia")
+    #                 continue
+    #             if qid in check_qid_child:
+    #                 continue
+    #             check_qid_child.add(qid)
+
+    #             # 🔹 chỉ tìm child nếu qid nằm trong danh sách valid_child_qids
+    #             if qid not in valid_child_qids:
+    #                 # print(f"Bỏ qua {qid} vì không phải con của QID parent đã xác định.")
+    #                 continue
+
+    #             child = sparql_find_child(qid, q_relation)
+    #             list_child.extend(child)
+    #             dict_output["child"][qid] = child
                 
-            # print("list_parent: ", list_parent)
-                
-            #find child
-            list_child = []
-            list_qid = get_nom_qid(sample)
-            check_qid_child = set()
-            # print(list_qid)
-            for item in list_qid:
-                qid = extract_qid(item["item"]["value"])
-                if not re.match(r"^Q\d+$", qid):
-                    print(f"'{qid}' là link wikipedia")
-                    continue
-                else:
-                    if qid in check_qid_child:
-                        continue
-                    check_qid_child.add(qid)
+    #         dict_output = verify_relations(dict_output)
+    #         print("dict_output: ", dict_output['verify'])
 
-                child = sparql_find_child(qid, q_relation)
-                list_child.extend(child)
-                dict_output["child"][qid] = child
-
-            # print("list_child: ", list_child)
-            dict_output = verify_relations(dict_output)
-            print("dict_output: ", dict_output)
+    #     sample["1"]["final_qi"]["normalized_v2"] = dict_output
+    #     sample['final_answer']["normalized_v2"] = dict_output
+    #     save_json(sample, res_file_path)
+    
+    print(sparql_find_parent("Q272899", "wd:P22 wd:P25"))
