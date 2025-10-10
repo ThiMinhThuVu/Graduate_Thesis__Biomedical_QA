@@ -57,3 +57,13 @@ __pycache__/
 *.h5
 *.hdf5
 *.parquet
+/all_ans_compositional_test
+/results_better
+/results_dev
+/step_compositional_test
+/results
+/results_oldid
+*.pyc
+.DS_Store
+/src/__pycache__
+/utils/__pycache__
