@@ -649,7 +649,7 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
             if original_question:
                 if 'work at' in original_question.lower():
                     # Use get_relation_id to find employer property
-                    _, employer_ids, _ = get_relation_id('employer')
+                    _, employer_ids, _ = get_relation_id('employer', type_q='compositional')
                     if employer_ids:
                         results = sparql_find_parent(qid, f"wd:{employer_ids[0]}")
                         property_values = []
@@ -661,7 +661,7 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
                 elif 'nationality' in original_question.lower():
                     # Try both nationality and country of origin
                     if not property_values:
-                        _, alt_property_ids, _ = get_relation_id('country of origin')
+                        _, alt_property_ids, _ = get_relation_id('country of origin', type_q='compositional')
                         if alt_property_ids:
                             results = sparql_find_parent(qid, f"wd:{alt_property_ids[0]}")
                             property_values = []
