@@ -119,6 +119,77 @@ def norm_keyentity_wikidata_api(results, topk=1):
     
     return filtered
 
+def search_wikidata_for_normalized_name(query, topk=5):
+    """
+    Search Wikidata API to find normalized text form (labels) of entities.
+    Returns a list of normalized entity names (NOT QIDs).
+    
+    Args:
+        query: The search query string
+        topk: Maximum number of results to return (default: 5)
+    
+    Returns:
+        List of normalized entity labels (text strings)
+    """
+    endpoint_url = "https://www.wikidata.org/w/api.php"
+    
+    params = {
+        "action": "wbsearchentities",
+        "search": query,
+        "language": "en",
+        "format": "json",
+        "limit": topk,
+        "type": "item"
+    }
+    
+    headers = {
+        "User-Agent": "UETQuintet/1.0 (Research Project; Python/requests)",
+        "Accept": "application/json"
+    }
+    
+    max_retries = 10
+    retry_delay = 2
+    
+    for attempt in range(max_retries):
+        try:
+            response = requests.get(endpoint_url, params=params, headers=headers, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                results = []
+                
+                if "search" in data:
+                    for item in data["search"]:
+                        # Get the label (normalized name)
+                        if "label" in item:
+                            results.append(item["label"])
+                
+                return results
+            
+            elif response.status_code == 429:
+                wait_time = retry_delay * (2 ** attempt)
+                print(f"⚠️ Rate limit (429). Waiting {wait_time}s before retry...")
+                time.sleep(wait_time)
+                continue
+            
+            elif response.status_code == 403:
+                wait_time = retry_delay * (2 ** attempt)
+                print(f"⚠️ Access forbidden (403). Adding delay {wait_time}s before retry...")
+                time.sleep(wait_time)
+                continue
+            
+            else:
+                print(f"❌ Wikidata API failed with status {response.status_code}: {response.text[:200]}")
+                return []
+        
+        except requests.exceptions.RequestException as e:
+            print(f"❌ Connection error: {e}. Retrying...")
+            time.sleep(retry_delay * (2 ** attempt))
+            continue
+    
+    print("❌ Max retries reached. Returning empty result.")
+    return []
+
 def tokenize(text):
     return set(re.findall(r"\w+", text.lower()))
 
@@ -487,7 +558,7 @@ def verify_relations(dict_output):
     return dict_output
 
 def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_entity, q_relation, c_relation, 
-                             retrieval_inf, last_retrieval_inf):
+                             retrieval_inf, last_retrieval_inf, use_google_search=False):
     """
     Integrated query function supporting both bidirectional and unidirectional property queries.
     
@@ -508,6 +579,8 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
         c_relation: The relationship keyword for hop 0 (for bidirectional verification)
         retrieval_inf: Retrieval information for hop 1
         last_retrieval_inf: Retrieval information for hop 0 (for bidirectional verification)
+        use_google_search: If True, use Google Search API for entity normalization.
+                          If False, use Wikidata API directly (default: False)
     
     Returns:
         dict_output with answer, source, and verification information
@@ -572,15 +645,27 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
     list_qid = search_sparql(key_entity)
 
     if len(list_qid) == 0:
-        q_search_wikidata = search_google(key_entity)
-        if q_search_wikidata and len(q_search_wikidata) == 0:
-            q_search_wikidata = search_google(q_key_entity)
-        
-        if q_search_wikidata:
-            list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata)
-            key_entity = list_norm_title_parent[0] if list_norm_title_parent else key_entity
-            for title in list_norm_title_parent:
-                list_qid.extend(search_sparql(title))
+        if use_google_search:
+            # Use Google Search API (original method)
+            q_search_wikidata = search_google(key_entity)
+            if q_search_wikidata and len(q_search_wikidata) == 0:
+                q_search_wikidata = search_google(q_key_entity)
+            
+            if q_search_wikidata:
+                list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata)
+                key_entity = list_norm_title_parent[0] if list_norm_title_parent else key_entity
+                for title in list_norm_title_parent:
+                    list_qid.extend(search_sparql(title))
+        else:
+            # Use Wikidata API directly (no Google API key needed)
+            list_norm_title_parent = search_wikidata_for_normalized_name(key_entity)
+            if not list_norm_title_parent:
+                list_norm_title_parent = search_wikidata_for_normalized_name(q_key_entity)
+            
+            if list_norm_title_parent:
+                key_entity = list_norm_title_parent[0]
+                for title in list_norm_title_parent:
+                    list_qid.extend(search_sparql(title))
     
     # Normalize and search for hop 0 entity (for verification, if bidirectional)
     norm_last_key_entity = None
@@ -595,15 +680,27 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
             list_qid_last_key = search_sparql(norm_last_key_entity)
 
             if len(list_qid_last_key) == 0:
-                q_search_wikidata = search_google(norm_last_key_entity)
-                if q_search_wikidata and len(q_search_wikidata) == 0:
-                    q_search_wikidata = search_google(last_key_entity)
+                if use_google_search:
+                    # Use Google Search API (original method)
+                    q_search_wikidata = search_google(norm_last_key_entity)
+                    if q_search_wikidata and len(q_search_wikidata) == 0:
+                        q_search_wikidata = search_google(last_key_entity)
 
-                if q_search_wikidata:
-                    list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata)
-                    norm_last_key_entity = list_norm_title_parent[0] if list_norm_title_parent else last_key_entity
-                    for title in list_norm_title_parent:
-                        list_qid_last_key.extend(search_sparql(title))
+                    if q_search_wikidata:
+                        list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata)
+                        norm_last_key_entity = list_norm_title_parent[0] if list_norm_title_parent else last_key_entity
+                        for title in list_norm_title_parent:
+                            list_qid_last_key.extend(search_sparql(title))
+                else:
+                    # Use Wikidata API directly (no Google API key needed)
+                    list_norm_title_parent = search_wikidata_for_normalized_name(norm_last_key_entity)
+                    if not list_norm_title_parent:
+                        list_norm_title_parent = search_wikidata_for_normalized_name(last_key_entity)
+
+                    if list_norm_title_parent:
+                        norm_last_key_entity = list_norm_title_parent[0]
+                        for title in list_norm_title_parent:
+                            list_qid_last_key.extend(search_sparql(title))
     
     dict_output["hop_0"] = {
         "key_entity": norm_last_key_entity,
@@ -632,19 +729,6 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
             dict_output["parent"][qid] = parent
         # For unidirectional: query the specific property directly
         elif not is_bidirectional and pid_relation:
-            # Get the property ID from pid_relation and add wd: prefix
-            property_id = pid_relation[0]
-            # Query the property values directly using sparql_find_parent
-            results = sparql_find_parent(qid, f"wd:{property_id}")
-            
-            # Extract label values from SPARQL results (using propertyLabel, not valueLabel)
-            property_values = []
-            for result in results:
-                if "propertyLabel" in result:
-                    label = result["propertyLabel"]["value"]
-                    if label and not label.startswith("Q"):  # Exclude QID itself
-                        property_values.append(label)
-            
             # Handle special cases for questions
             if original_question:
                 if 'work at' in original_question.lower():
@@ -671,6 +755,19 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
                                     if label and not label.startswith("Q"):
                                         property_values.append(label)
             
+            # Get the property ID from pid_relation and add wd: prefix
+            property_id = pid_relation[0]
+            # Query the property values directly using sparql_find_parent
+            results = sparql_find_parent(qid, f"wd:{property_id}")
+            
+            # Extract label values from SPARQL results (using propertyLabel, not valueLabel)
+            property_values = []
+            for result in results:
+                if "propertyLabel" in result:
+                    label = result["propertyLabel"]["value"]
+                    if label and not label.startswith("Q"):  # Exclude QID itself
+                        property_values.append(label)
+
             # If we found values, match with retrieval info or take first value
             if property_values:
                 short_answer = ''
@@ -748,7 +845,7 @@ def verify_hop2(dict_output):
                     propertyLabel = item_c["propertyLabel"]["value"] if "propertyLabel" in item_c else None
                     
                     if pid in child_id:                
-                        if propertyLabel.lower() == child_info['key_entity'].lower():
+                        if propertyLabel and child_info.get('key_entity') and propertyLabel.lower() == child_info['key_entity'].lower():
                             ok = 1
                             short_answer = tmp_ans
                             c_value[pid] = {
