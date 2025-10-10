@@ -224,42 +224,29 @@ def send_sparql_request(query, max_retries=10):
     print("❌ Max retries reached. Returning empty result.")
     return []
 
-def get_relation_id(q_relation, q_relation_child=None):
+def get_relation_id(q_relation, q_relation_child=None, type_q=None):
     """
-    Unified function to find property IDs and determine query mode.
-    
-    This function integrates property finding logic and determines whether a query
-    should use bidirectional (relationship) or unidirectional (property) mode.
+    Args:
+        q_relation: The main relation keyword to search for
+        q_relation_child: Optional child relation keyword for bidirectional queries
+        type_q: Type of question ("inference" or "compositional")
+                - "inference": Uses dict_p_relation (bidirectional properties only)
+                - "compositional": Uses PROPERTY_MAPPINGS, but switches to bidirectional
+                  if the property matches dict_p_relation (P22, P25, P26, P40, P106, P3373)
     
     Returns:
-        - For bidirectional properties (in dict_p_relation):
+        - For bidirectional properties:
           (all_relation_string, [parent_property_id], [child_property_ids])
-        - For unidirectional properties (in PROPERTY_MAPPINGS but not dict_p_relation):
+        - For unidirectional properties:
           (None, [property_id], [])
         - For unknown properties:
           (None, [], [])
     """
-    # First, try to find property ID from PROPERTY_MAPPINGS
     search_normalized = normalize_text(q_relation)
     
-    # Direct match in PROPERTY_MAPPINGS
-    property_id = None
-    if search_normalized in PROPERTY_MAPPINGS:
-        property_id = PROPERTY_MAPPINGS[search_normalized]
-    else:
-        # Partial match in PROPERTY_MAPPINGS
-        for keyword, prop_id in PROPERTY_MAPPINGS.items():
-            if keyword in search_normalized or search_normalized in keyword:
-                property_id = prop_id
-                break
-    
-    # If no property found, return empty
-    if not property_id:
-        return None, [], []
-    
-    # Check if this is a bidirectional property (requires relationship verification)
-    if property_id in BIDIRECTIONAL_PROPERTIES:
-        # Bidirectional mode - find parent relation keyword
+    # For inference questions: use dict_p_relation (bidirectional)
+    if type_q == "inference":
+        # Find parent relation keyword from dict_p_relation
         if "father" in q_relation.lower():
             q_relation = "father"
         elif "mother" in q_relation.lower():
@@ -275,7 +262,7 @@ def get_relation_id(q_relation, q_relation_child=None):
         else:
             return None, [], []
 
-        p_relation = dict_p_relation.get(q_relation.lower())
+        p_relation = dict_p_relation.get(q_relation)
         print("p_relation: ", p_relation)
         if not p_relation:
             return None, [], []
@@ -307,9 +294,83 @@ def get_relation_id(q_relation, q_relation_child=None):
                     cid_relation.append(cid)
         
         return all_relation, [p_relation], cid_relation
-    else:
+    
+    # For compositional questions: use PROPERTY_MAPPINGS (unidirectional)
+    elif type_q == "compositional":
+        # Direct match in PROPERTY_MAPPINGS
+        property_id = None
+        if search_normalized in PROPERTY_MAPPINGS:
+            property_id = PROPERTY_MAPPINGS[search_normalized]
+        else:
+            # Partial match in PROPERTY_MAPPINGS
+            for keyword, prop_id in PROPERTY_MAPPINGS.items():
+                if keyword in search_normalized or search_normalized in keyword:
+                    property_id = prop_id
+                    break
+        
+        # If no property found, return empty
+        if not property_id:
+            return None, [], []
+        
+        # Check if this property is a bidirectional property (in dict_p_relation)
+        # If yes, use bidirectional mode for compositional as well
+        if property_id in BIDIRECTIONAL_PROPERTIES:
+            # This is a bidirectional property, treat it like inference
+            # Normalize q_relation to match dict_p_relation keys
+            if "father" in q_relation.lower():
+                q_relation = "father"
+            elif "mother" in q_relation.lower():
+                q_relation = "mother"
+            elif "spouse" in q_relation.lower() or "wife" in q_relation.lower() or "husband" in q_relation.lower():
+                q_relation = "spouse"
+            elif "child" in q_relation.lower() or "son" in q_relation.lower() or "daughter" in q_relation.lower():
+                q_relation = "child"
+            elif "sibling" in q_relation.lower() or "brother" in q_relation.lower() or "sister" in q_relation.lower():
+                q_relation = "sibling"
+            elif "work" in q_relation.lower() or "occupation" in q_relation.lower():
+                q_relation = "occupation"
+            else:
+                # Property is bidirectional but relation not recognized, use unidirectional
+                return None, [property_id], []
+            
+            p_relation = dict_p_relation.get(q_relation)
+            if not p_relation:
+                return None, [property_id], []
+            
+            # Find child relation if provided
+            c_relation = []
+            if q_relation_child:
+                if "father" in q_relation_child.lower() or "mother" in q_relation_child.lower():
+                    c_relation = ["child"]
+                elif "spouse" in q_relation_child.lower() or "wife" in q_relation_child.lower() or "husband" in q_relation_child.lower():
+                    c_relation = ["spouse"]
+                elif "child" in q_relation_child.lower() or "son" in q_relation_child.lower() or "daughter" in q_relation_child.lower():
+                    c_relation = ["mother", "father"]
+                elif "sibling" in q_relation_child.lower() or "brother" in q_relation_child.lower() or "sister" in q_relation_child.lower():
+                    c_relation = ["sibling"]
+                elif "work" in q_relation_child.lower():
+                    c_relation = ["occupation"]
+            
+            # Build SPARQL relation string (bidirectional mode)
+            all_relation = "wd:" + p_relation
+            cid_relation = []
+            if c_relation:
+                for r in c_relation:
+                    if r == q_relation:
+                        continue
+                    cid = dict_p_relation.get(r.lower())
+                    if cid:
+                        all_relation += " wd:" + cid
+                        cid_relation.append(cid)
+            
+            return all_relation, [p_relation], cid_relation
+        
         # Unidirectional mode - just return the property ID
         return None, [property_id], []
+    
+    # Unknown type_q
+    else:
+        return None, [], []
 
 def sparql_find_parent(qid, all_relation):
     """
@@ -430,20 +491,23 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
     """
     Integrated query function supporting both bidirectional and unidirectional property queries.
     
-    Unidirectional mode is ONLY enabled for type_q == "compositional".
-    For type_q == "inference" or any other type, bidirectional mode is ALWAYS used.
+    Query mode is determined by question type and property characteristics:
+    - "inference": Always uses bidirectional mode (dict_p_relation only)
+    - "compositional": Intelligently selects mode based on property:
+      * Bidirectional if property matches dict_p_relation (father, mother, spouse, child, sibling, occupation)
+      * Unidirectional otherwise (uses PROPERTY_MAPPINGS for other properties)
     
     Args:
-        type_q: Type of question ("inference", "compositional", etc.)
-                - "compositional": Allows both bidirectional and unidirectional based on property
-                - "inference" or other: Forces bidirectional mode for all queries
+        type_q: Type of question ("inference" or "compositional")
+                - "inference": Forces bidirectional mode with verification
+                - "compositional": Auto-selects mode based on property type
         original_question: The original question text (for special case handling)
         q_key_entity: The main entity to query (hop 1)
-        last_key_entity: The related entity for verification (hop 0)
-        q_relation: The relationship keyword for hop 1
-        c_relation: The relationship keyword for hop 0 (for verification)
+        last_key_entity: The related entity for verification (hop 0, required for bidirectional)
+        q_relation: The relationship/property keyword for hop 1
+        c_relation: The relationship keyword for hop 0 (for bidirectional verification)
         retrieval_inf: Retrieval information for hop 1
-        last_retrieval_inf: Retrieval information for hop 0
+        last_retrieval_inf: Retrieval information for hop 0 (for bidirectional verification)
     
     Returns:
         dict_output with answer, source, and verification information
@@ -458,16 +522,36 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
     }
     
     # Get relation/property information using unified function
-    all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation)
+    # Pass type_q to get_relation_id so it knows which mapping to use
+    all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation, type_q=type_q)
     
     # Determine if this should be bidirectional or unidirectional
-    # Unidirectional mode is ONLY allowed for compositional questions
-    if type_q == "compositional":
-        # all_relation will be None for unidirectional properties
+    # - "inference": always bidirectional (uses dict_p_relation)
+    # - "compositional": can be bidirectional OR unidirectional
+    #   * bidirectional if property matches dict_p_relation (all_relation is not None)
+    #   * unidirectional otherwise (all_relation is None)
+    if type_q == "inference":
+        # For inference, all_relation must be present (bidirectional mode)
+        if all_relation is None:
+            # Property not recognized as bidirectional - return empty for inference
+            dict_output["is_bidirectional"] = False
+            dict_output['long_answer'] = ''
+            dict_output['short_answer'] = ''
+            dict_output["verify"] = []
+            return dict_output
+        is_bidirectional = True
+    elif type_q == "compositional":
+        # For compositional, check if all_relation is present
+        # If present, it's a bidirectional property (matches dict_p_relation)
+        # If None, it's a unidirectional property
         is_bidirectional = all_relation is not None
     else:
-        # For inference or other types, force bidirectional
-        is_bidirectional = True
+        # Unknown type_q
+        dict_output["is_bidirectional"] = False
+        dict_output['long_answer'] = ''
+        dict_output['short_answer'] = ''
+        dict_output["verify"] = []
+        return dict_output
     
     dict_output["is_bidirectional"] = is_bidirectional
     
@@ -499,22 +583,27 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
                 list_qid.extend(search_sparql(title))
     
     # Normalize and search for hop 0 entity (for verification, if bidirectional)
-    norm_last_key_entity = norm_key_entity(last_key_entity, last_retrieval_inf) if last_key_entity else None
+    norm_last_key_entity = None
     list_qid_last_key = []
     
-    if is_bidirectional and norm_last_key_entity:
-        list_qid_last_key = search_sparql(norm_last_key_entity)
+    if is_bidirectional:
+        # For bidirectional mode, we must have last_key_entity
+        if not last_key_entity:
+            print("Warning: Bidirectional mode requires last_key_entity, but it's missing")
+        else:
+            norm_last_key_entity = norm_key_entity(last_key_entity, last_retrieval_inf)
+            list_qid_last_key = search_sparql(norm_last_key_entity)
 
-        if len(list_qid_last_key) == 0:
-            q_search_wikidata = search_google(norm_last_key_entity)
-            if q_search_wikidata and len(q_search_wikidata) == 0:
-                q_search_wikidata = search_google(last_key_entity)
+            if len(list_qid_last_key) == 0:
+                q_search_wikidata = search_google(norm_last_key_entity)
+                if q_search_wikidata and len(q_search_wikidata) == 0:
+                    q_search_wikidata = search_google(last_key_entity)
 
-            if q_search_wikidata:
-                list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata)
-                norm_last_key_entity = list_norm_title_parent[0] if list_norm_title_parent else last_key_entity
-                for title in list_norm_title_parent:
-                    list_qid_last_key.extend(search_sparql(title))
+                if q_search_wikidata:
+                    list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata)
+                    norm_last_key_entity = list_norm_title_parent[0] if list_norm_title_parent else last_key_entity
+                    for title in list_norm_title_parent:
+                        list_qid_last_key.extend(search_sparql(title))
     
     dict_output["hop_0"] = {
         "key_entity": norm_last_key_entity,
