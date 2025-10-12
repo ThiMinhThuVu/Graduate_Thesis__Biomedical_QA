@@ -242,11 +242,11 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         dict_ans[q_i][path_i][step]['name'] = name_ans
                         dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
                     
-                    if short_ans.lower() == "insufficient information": # sang path tiếp theo 
+                    if short_ans.lower() == "insufficient information": # sang path tiếp theo
                         break
             
-            # Lấy output step cuối cùng của 1 path duy nhất của qi:
-            if short_ans.lower() != "insufficient information":
+            # If the current path was successful, update the final answer for this sub-question (qi).
+            if short_ans.lower() != "insufficient information" and short_ans != "":
                 dict_ans[q_i]['final_qi']["question"] = question
                 dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
                 dict_ans[q_i]['final_qi']["key_entity"] = key_entities
@@ -260,10 +260,14 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                 #     dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
                 #     dict_ans[q_i]['final_qi']['name'] = name_ans
                 #     dict_ans[q_i]['final_qi']['suffix'] = suffix_ans   
-                    
-            all_context += f"{q_i}.{question} - {short_ans}, {long_ans}\n\n"
-            save_json(qi_final_answers, ans_filepath)
-            print(f"\nFinal answer saved to {ans_filepath}")
+
+                # For 'inference' questions, the first valid path is sufficient.
+                if type_q == "inference":
+                    break
+        
+        all_context += f"{q_i}.{question} - {dict_ans[q_i]['final_qi']['short_answer']}, {dict_ans[q_i]['final_qi']['long_answer']}\n\n"
+        save_json(qi_final_answers, ans_filepath)
+        print(f"\nFinal answer saved to {ans_filepath}")
         
     if n_qi > 1:
         combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
@@ -284,7 +288,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
             dict_ans['final_answer']['normalized_v2'] = dict_ans[1]['final_qi']['normalized_v2']
             
         save_json(dict_ans, file_all_ans)
-        print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
+        print(f" {dict_ans['final_answer']['short_answer']}")
         print(f"\nSaved to {file_all_ans}")
         
     # evidence_predict = gen_evidences(sample, dict_ans, type_q)
@@ -292,8 +296,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
     
     # dict_ans['evidence'] = evidence_predict
     # save_json(dict_ans, file_all_ans)
-    # print(f"Evidence saved to {evidence_file}")
-        
+    # print(f"Evidence saved to {evidence_file}")     
+
 if __name__ == "__main__":
     config_path = "config.json"
     configs = load_json(config_path)
