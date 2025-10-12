@@ -139,7 +139,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         last_retrieval_information = retrieval_information
                         q_relation_child = search_kw_subq
                     if step == '1':
-                        if dataset == "wiki" and query_wikidata==True: 
+                        if type_q in ["inference", "compositional"] and dataset == "wiki" and query_wikidata==True: 
                             q_relation_parent = search_kw_subq
                             use_google_search = settings.get('norm_wikidata_google_search', False)
                             answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information, use_google_search=use_google_search)
@@ -165,8 +165,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     dict_ans[q_i][path_i][step]["short_answer"] = short_ans
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
-                    
-                    if type_q == "inference" and dataset == "wiki" and query_wikidata==True:
+
+                    if type_q in ["inference", "compositional"] and dataset == "wiki" and query_wikidata==True:
                         if step == '1':
                             dict_ans[q_i][path_i][step]['normalized_v2'] = normalized_v2
                     # else:
@@ -253,8 +253,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                 dict_ans[q_i]['final_qi']["short_answer"] = short_ans
                 dict_ans[q_i]['final_qi']["long_answer"] = long_ans
                 dict_ans[q_i]['final_qi']["retrieval_information"] = retrieval_information
-                
-                if type_q == "inference" and dataset == "wiki" and query_wikidata==True:           
+
+                if type_q in ["inference", "compositional"] and dataset == "wiki" and query_wikidata==True:
                     dict_ans[q_i]['final_qi']['normalized_v2'] = normalized_v2
                 # else:
                 #     dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
