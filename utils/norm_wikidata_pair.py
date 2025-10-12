@@ -19,7 +19,7 @@ PROPERTY_MAPPINGS = {
     "country of citizenship": "P27",
     "citizen": "P27",
     "occupation": "P106",
-    "work": "P106",
+    # "work": "P106",
     "employer": "P108",
     "spouse": "P26",
     "partner": "P26",
@@ -53,6 +53,12 @@ PROPERTY_MAPPINGS = {
     "cast": "P161",
     "cast member": "P161",
     "genre": "P136",
+    "date of birth": "P569",
+    "date of death": "P570",
+    "work at": "P108",
+    'place of study': "P69",
+    "work place": "P108",
+    "work location": "P108"
 }
 
 dict_p_relation = {
@@ -729,44 +735,47 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
             dict_output["parent"][qid] = parent
         # For unidirectional: query the specific property directly
         elif not is_bidirectional and pid_relation:
-            # Handle special cases for questions
-            if original_question:
-                if 'work at' in original_question.lower():
-                    # Use get_relation_id to find employer property
-                    _, employer_ids, _ = get_relation_id('employer', type_q='compositional')
-                    if employer_ids:
-                        results = sparql_find_parent(qid, f"wd:{employer_ids[0]}")
-                        property_values = []
-                        for result in results:
-                            if "propertyLabel" in result:
-                                label = result["propertyLabel"]["value"]
-                                if label and not label.startswith("Q"):
-                                    property_values.append(label)
-                elif 'nationality' in original_question.lower():
-                    # Try both nationality and country of origin
-                    if not property_values:
-                        _, alt_property_ids, _ = get_relation_id('country of origin', type_q='compositional')
-                        if alt_property_ids:
-                            results = sparql_find_parent(qid, f"wd:{alt_property_ids[0]}")
-                            property_values = []
-                            for result in results:
-                                if "propertyLabel" in result:
-                                    label = result["propertyLabel"]["value"]
-                                    if label and not label.startswith("Q"):
-                                        property_values.append(label)
+            def extract_property_labels(sparql_results):
+                """Helper function to extract non-QID labels from SPARQL results."""
+                labels = []
+                for result in sparql_results:
+                    if "propertyLabel" in result:
+                        label = result["propertyLabel"]["value"]
+                        if label and not label.startswith("Q"):
+                            labels.append(label)
+                return labels
+            
+            def query_property(entity_qid, property_keyword):
+                """Helper function to query a property and extract labels."""
+                _, property_ids, _ = get_relation_id(property_keyword, type_q='compositional')
+                if property_ids:
+                    results = sparql_find_parent(entity_qid, f"wd:{property_ids[0]}")
+                    return extract_property_labels(results)
+                return []
             
             # Get the property ID from pid_relation and add wd: prefix
             property_id = pid_relation[0]
-            # Query the property values directly using sparql_find_parent
-            results = sparql_find_parent(qid, f"wd:{property_id}")
             
-            # Extract label values from SPARQL results (using propertyLabel, not valueLabel)
-            property_values = []
-            for result in results:
-                if "propertyLabel" in result:
-                    label = result["propertyLabel"]["value"]
-                    if label and not label.startswith("Q"):  # Exclude QID itself
-                        property_values.append(label)
+            # Handle special cases based on question content
+            property_keyword = None
+            fallback_keyword = None
+            if original_question:
+                question_lower = original_question.lower()
+                if 'work at' in question_lower:
+                    property_keyword = 'employer'
+                elif 'nationality' in question_lower:
+                    property_keyword = 'country of origin'
+                    fallback_keyword = 'country of citizenship'
+            
+            # Query the appropriate property
+            if property_keyword:
+                property_values = query_property(qid, property_keyword)
+                # Try fallback if no results and fallback is defined
+                if not property_values and fallback_keyword:
+                    property_values = query_property(qid, fallback_keyword)
+            else:
+                results = sparql_find_parent(qid, f"wd:{property_id}")
+                property_values = extract_property_labels(results)
 
             # If we found values, match with retrieval info or take first value
             if property_values:
@@ -802,6 +811,18 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
                     "child_relations": {}
                 }]
                 dict_output['long_answer'] = ''
+                # Check if short_answer exists and matches the ISO 8601 format
+                if short_answer and re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", short_answer):
+                    try:
+                        from datetime import datetime
+                        dt = datetime.strptime(short_answer, "%Y-%m-%dT%H:%M:%SZ")
+                        short_answer = dt.strftime("%d %B %Y")
+                        # Remove leading zero from day if present
+                        if short_answer.startswith('0'):
+                            short_answer = short_answer[1:]
+                    except ValueError:
+                        pass
+                
                 dict_output['short_answer'] = short_answer
                 
                 # For unidirectional, return immediately without verify_hop2
@@ -844,7 +865,7 @@ def verify_hop2(dict_output):
                     qid = item_c["property"]["value"].split("/")[-1] # lấy QID của child
                     propertyLabel = item_c["propertyLabel"]["value"] if "propertyLabel" in item_c else None
                     
-                    if pid in child_id:                
+                    if pid in child_id:
                         if propertyLabel and child_info.get('key_entity') and propertyLabel.lower() == child_info['key_entity'].lower():
                             ok = 1
                             short_answer = tmp_ans
