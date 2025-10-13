@@ -5,62 +5,57 @@ import requests
 
 
 PROPERTY_MAPPINGS = {
-    "birth": "P19",
     "place of birth": "P19",
-    "death": "P20",
+    "birth": "P19",
     "place of death": "P20",
-    "burial": "P119",
+    "death": "P20",
     "place of burial": "P119",
+    "burial": "P119",
     "graduation": "P69",
-    "education": "P69",
     "educated at": "P69",
+    "education": "P69",
     "studied": "P69",
-    "nationality": "P27",
-    "nationality of": "P27",
+    "country of origin": "P495",
     "country of citizenship": "P27",
     "country of nationality": "P27",
-    "country of origin": "P495",
+    "nationality of": "P27",
+    "nationality": "P27",
     "citizen": "P27",
     "occupation": "P106",
-    # "work": "P106",
+    "work at": "P106",
     "employer": "P108",
-    "spouse": "P26",
     "spouse of": "P26",
+    "spouse": "P26",
     "partner": "P26",
     "married": "P26",
-    "child": "P40",
     "child of": "P40",
+    "child": "P40",
     "children": "P40",
     "parent": "P22",
     "mother": "P25",
     "father": "P22",
     "sibling": "P3373",
-    "award": "P166",
     "award received": "P166",
+    "award": "P166",
     "prize": "P166",
-    "position": "P39",
     "position held": "P39",
+    "position": "P39",
     "office": "P39",
-    "member": "P463",
     "member of": "P463",
+    "member": "P463",
     "affiliation": "P463",
     "residence": "P551",
     "located": "P276",
     "location": "P276",
-    "headquarter": "P159",
     "headquarters location": "P159",
+    "headquarter": "P159",
     "founded": "P571",
     "inception": "P571",
-    "creator": "P170",
-    "author": "P50",
-    "director": "P57",
-    "producer": "P162",
-    "cast": "P161",
     "cast member": "P161",
+    "cast": "P161",
     "genre": "P136",
     "date of birth": "P569",
     "date of death": "P570",
-    "work at": "P108",
     'place of study': "P69",
     "work place": "P108",
     "work location": "P108",
@@ -70,7 +65,6 @@ PROPERTY_MAPPINGS = {
     "prison": "P2632",
     "cause of death": "P509",
     "founder of": "P112",
-
 }
 
 dict_p_relation = {
@@ -392,9 +386,9 @@ def get_relation_id(q_relation, q_relation_child=None, type_q=None):
             property_id = PROPERTY_MAPPINGS[search_normalized]
         else:
             # Partial match in PROPERTY_MAPPINGS
-            for keyword, prop_id in PROPERTY_MAPPINGS.items():
-                if keyword in search_normalized or search_normalized in keyword:
-                    property_id = prop_id
+            for keyword in sorted(PROPERTY_MAPPINGS.keys(), key=len, reverse=True):
+                if keyword in search_normalized:
+                    property_id = PROPERTY_MAPPINGS[keyword]
                     break
         
         # If no property found, return empty
@@ -635,7 +629,10 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
         # For compositional, check if all_relation is present
         # If present, it's a bidirectional property (matches dict_p_relation)
         # If None, it's a unidirectional property
-        is_bidirectional = all_relation is not None
+        # is_bidirectional = all_relation is not None
+        # if is_bidirectional:
+        #     all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation, type_q="inference")
+        is_bidirectional = False
     else:
         # Unknown type_q
         dict_output["is_bidirectional"] = False
