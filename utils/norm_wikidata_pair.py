@@ -16,15 +16,20 @@ PROPERTY_MAPPINGS = {
     "educated at": "P69",
     "studied": "P69",
     "nationality": "P27",
+    "nationality of": "P27",
     "country of citizenship": "P27",
+    "country of nationality": "P27",
+    "country of origin": "P495",
     "citizen": "P27",
     "occupation": "P106",
     # "work": "P106",
     "employer": "P108",
     "spouse": "P26",
+    "spouse of": "P26",
     "partner": "P26",
     "married": "P26",
     "child": "P40",
+    "child of": "P40",
     "children": "P40",
     "parent": "P22",
     "mother": "P25",
@@ -58,7 +63,14 @@ PROPERTY_MAPPINGS = {
     "work at": "P108",
     'place of study': "P69",
     "work place": "P108",
-    "work location": "P108"
+    "work location": "P108",
+    "birthday": "P569",
+    "study": "P69",
+    "place of detention": "P2632",
+    "prison": "P2632",
+    "cause of death": "P509",
+    "founder of": "P112",
+
 }
 
 dict_p_relation = {
@@ -643,6 +655,10 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
     
     dict_output["id"]["pid"] = pid_relation
     dict_output["id"]["cid"] = cid_relation
+
+    # Omit (...) in entity names
+    q_key_entity = re.sub(r'\s*\(.*?\)\s*', '', q_key_entity).strip()
+    last_key_entity = re.sub(r'\s*\(.*?\)\s*', '', last_key_entity).strip() if last_key_entity else None
     
     # Normalize and search for hop 1 entity (main entity)
     key_entity = norm_key_entity(q_key_entity, retrieval_inf)
@@ -763,7 +779,7 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
                 question_lower = original_question.lower()
                 if 'work at' in question_lower:
                     property_keyword = 'employer'
-                elif 'nationality' in question_lower:
+                elif any(keyword in question_lower for keyword in ['nationality', 'country of origin', 'country of citizenship']):
                     property_keyword = 'country of origin'
                     fallback_keyword = 'country of citizenship'
             
