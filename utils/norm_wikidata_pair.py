@@ -1,6 +1,7 @@
 import re
 import os
 import time
+from bs4 import BeautifulSoup
 import requests
 
 
@@ -606,17 +607,16 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
         "is_bidirectional": False
     }
     
+    print(f"Querying Wikidata for entity '{q_key_entity}' with relation '{q_relation}' (type: {type_q})")
+
     # Get relation/property information using unified function
-    # Pass type_q to get_relation_id so it knows which mapping to use
     all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation, type_q=type_q)
     
     # Determine if this should be bidirectional or unidirectional
-    # - "inference": always bidirectional (uses dict_p_relation)
-    # - "compositional": can be bidirectional OR unidirectional
-    #   * bidirectional if property matches dict_p_relation (all_relation is not None)
-    #   * unidirectional otherwise (all_relation is None)
+    # - "inference": bidirectional (uses dict_p_relation)
+    # - "compositional": unidirectional
     if type_q == "inference":
-        # For inference, all_relation must be present (bidirectional mode)
+        # For inference, all_relation must be present
         if all_relation is None:
             # Property not recognized as bidirectional - return empty for inference
             dict_output["is_bidirectional"] = False
@@ -626,13 +626,10 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
             return dict_output
         is_bidirectional = True
     elif type_q == "compositional":
-        # For compositional, check if all_relation is present
-        # If present, it's a bidirectional property (matches dict_p_relation)
-        # If None, it's a unidirectional property
-        # is_bidirectional = all_relation is not None
-        # if is_bidirectional:
-        #     all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation, type_q="inference")
         is_bidirectional = False
+        c_relation = None
+        if 'date' in q_relation.lower():
+            print("Special case: 'date' in relation, crawling HTML document.")
     else:
         # Unknown type_q
         dict_output["is_bidirectional"] = False
@@ -676,7 +673,7 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
                 for title in list_norm_title_parent:
                     list_qid.extend(search_sparql(title))
         else:
-            # Use Wikidata API directly (no Google API key needed)
+            # Use Wikidata API directly
             list_norm_title_parent = search_wikidata_for_normalized_name(key_entity)
             if not list_norm_title_parent:
                 list_norm_title_parent = search_wikidata_for_normalized_name(q_key_entity)
@@ -766,6 +763,33 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
                     return extract_property_labels(results)
                 return []
             
+            def extract_property_value_from_html(entity_qid, property_id):
+                """Special case for date properties - crawl HTML document."""
+                url = f"https://www.wikidata.org/wiki/{entity_qid}"
+                try:
+                    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'}
+                    response = requests.get(url, headers=headers, timeout=10)
+                    
+                    if response.status_code == 200:
+                        soup = BeautifulSoup(response.text, 'html.parser')
+                        
+                        # 1. Find the main DIV for the property (e.g., P569 for date of birth)
+                        prop_div = soup.find('div', {'data-property-id': property_id})
+                        
+                        if prop_div:
+                            # 2. From there, find the DIV that holds the human-readable value
+                            value_div = prop_div.find('div', {'class': 'wikibase-snakview-value'})
+                            if value_div:
+                                # 3. Get the text from that DIV and clean it
+                                date_text = value_div.get_text(strip=True)
+                                # Remove calendar type suffixes (Gregorian, Julian, etc.)
+                                date_text = re.sub(r'(Gregorian|Julian|Hebrew|Islamic|Chinese)$', '', date_text).strip()
+                                return [date_text] if date_text else []
+                    return []
+                except requests.RequestException as e:
+                    print(f"Error fetching HTML for {entity_qid}: {e}")
+                    return []
+                
             # Get the property ID from pid_relation and add wd: prefix
             property_id = pid_relation[0]
             
@@ -781,29 +805,48 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
                     fallback_keyword = 'country of citizenship'
             
             # Query the appropriate property
-            if property_keyword:
-                property_values = query_property(qid, property_keyword)
-                # Try fallback if no results and fallback is defined
-                if not property_values and fallback_keyword:
-                    property_values = query_property(qid, fallback_keyword)
+            is_date_property = 'date' in q_relation.lower()
+            if is_date_property:
+                # Special case for date properties - crawl HTML document
+                property_values = extract_property_value_from_html(qid, property_id)
             else:
-                results = sparql_find_parent(qid, f"wd:{property_id}")
-                property_values = extract_property_labels(results)
+                if property_keyword:
+                    property_values = query_property(qid, property_keyword)
+                    # Try fallback if no results and fallback is defined
+                    if not property_values and fallback_keyword:
+                        property_values = query_property(qid, fallback_keyword)
+                else:
+                    results = sparql_find_parent(qid, f"wd:{property_id}")
+                    property_values = extract_property_labels(results)
 
             # If we found values, match with retrieval info or take first value
             if property_values:
                 short_answer = ''
                 
-                # Match with retrieval_inf if provided
-                if retrieval_inf:
+                # Initialize short_answer
+                short_answer = ''
+
+                # 1. First, try to find a contextual match using word intersection
+                if retrieval_inf and property_values:
+                    retrieval_words = set(re.findall(r'\b\w+\b', retrieval_inf.lower()))
                     for val in property_values:
-                        if val and val.lower() in retrieval_inf.lower():
+                        if not val:
+                            continue
+                        
+                        val_words = set(re.findall(r'\b\w+\b', val.lower()))
+                        if val_words & retrieval_words:  # Check for intersection
                             short_answer = val
-                            break
-                
-                # If no match or no retrieval_inf, take first value
-                if not short_answer:
+                            break # Stop after the first match
+
+                # 2. If no contextual match was found, fall back to the first available answer
+                if not short_answer and property_values:
                     short_answer = property_values[0]
+                
+                # Only return if we found a match or it's a date property
+                # If no match and not a date, continue to next QID
+                if not short_answer:
+                    # Skip this QID and try the next one
+                    continue
                 
                 # Store result and return immediately for unidirectional
                 dict_output["parent"][qid] = [
@@ -839,6 +882,7 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
                 dict_output['short_answer'] = short_answer
                 
                 # For unidirectional, return immediately without verify_hop2
+                print(dict_output)
                 return dict_output
     
     # For bidirectional queries, verify and extract answer
@@ -905,9 +949,23 @@ def verify_hop2(dict_output):
 
 if __name__ == "__main__":
     # Test bidirectional mode (multiple properties)
-    print("Bidirectional query:")
-    print(sparql_find_parent("Q272899", "wd:P22 wd:P25"))
+    # print("Bidirectional query:")
+    # print(sparql_find_parent("Q272899", "wd:P22 wd:P25"))
     
     # Test unidirectional mode (single property)
-    print("\nUnidirectional query:")
-    print(sparql_find_parent("Q272899", "wd:P19"))
+    # print("\nUnidirectional query:")
+    # print(sparql_find_parent("Q272899", "wd:P19"))
+
+    # Test date property (unidirectional with HTML crawl)
+    print("\nDate property query:")
+    print(query_hop2_with_wikidata(
+        type_q="compositional",
+        original_question="What is the date of birth of that director??",
+        q_key_entity="Vyacheslav Zaytsev",
+        last_key_entity="",
+        q_relation="country of citizenship",
+        c_relation="",
+        retrieval_inf="Soviet Union",
+        last_retrieval_inf="",
+        use_google_search=False
+    ))
