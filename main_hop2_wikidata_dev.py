@@ -242,11 +242,11 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         dict_ans[q_i][path_i][step]['name'] = name_ans
                         dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
                     
-                    if short_ans.lower() == "insufficient information": # sang path tiếp theo
+                    if short_ans.lower() == "insufficient information": # sang path tiếp theo 
                         break
             
-            # If the current path was successful, update the final answer for this sub-question (qi).
-            if short_ans.lower() != "insufficient information" and short_ans != "":
+            # Lấy output step cuối cùng của 1 path duy nhất của qi:
+            if short_ans.lower() != "insufficient information":
                 dict_ans[q_i]['final_qi']["question"] = question
                 dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
                 dict_ans[q_i]['final_qi']["key_entity"] = key_entities
@@ -281,14 +281,14 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
             'short_answer': dict_ans[1]['final_qi']['short_answer'],
             'retrieval_information': dict_ans[1]['final_qi']['retrieval_information']
         }
-        if type_q == "inference" and dataset == "wiki" and query_wikidata==True:
+        if type_q in ["inference", "compositional"] and dataset == "wiki" and query_wikidata==True:
             dict_ans['final_answer']['prefix'] = dict_ans[1]['final_qi']['prefix']
             dict_ans['final_answer']['name'] = dict_ans[1]['final_qi']['name']
             dict_ans['final_answer']['suffix'] = dict_ans[1]['final_qi']['suffix']
             dict_ans['final_answer']['normalized_v2'] = dict_ans[1]['final_qi']['normalized_v2']
             
         save_json(dict_ans, file_all_ans)
-        print(f" {dict_ans['final_answer']['short_answer']}")
+        print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
         print(f"\nSaved to {file_all_ans}")
         
     # evidence_predict = gen_evidences(sample, dict_ans, type_q)
@@ -307,7 +307,7 @@ if __name__ == "__main__":
     
     #edit config
     run = runs[6]  #1: R4, 4: R7,  6: R11, 7: R12
-    threads = [0, 775] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 2618] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -394,7 +394,7 @@ if __name__ == "__main__":
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        type_ = "inference" #"inference"
+        type_ = "compositional" #"inference"
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/dev/dev_{type_}.json"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"
@@ -416,7 +416,9 @@ if __name__ == "__main__":
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
             if not (threads[0] <= idx < threads[1]):
                 continue 
-            # if ID != "447eaa100bda11eba7f7acde48001122":
+
+            # skip_id = 'b0f2c5c00bdd11eba7f7acde48001122'
+            # if ID != skip_id:
             #     continue
             
             # if ID not in list_ID:
@@ -433,3 +435,6 @@ if __name__ == "__main__":
                 preprocess_sample_R12(sample, settings, dataset=dataset, type_q=type_q)
             else:
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=True)
+
+            # if ID == skip_id:
+            #     break
