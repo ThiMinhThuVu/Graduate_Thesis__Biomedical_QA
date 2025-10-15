@@ -2,7 +2,9 @@ import re
 import os
 import time
 import requests
+
 from nltk.corpus import stopwords
+STOPWORDS = set(stopwords.words('english'))
 
 
 PROPERTY_MAPPINGS = {
@@ -611,21 +613,153 @@ def format_date_with_matching(date_string, retrieval_inf=None):
     except ValueError:
         return (date_string, False) if retrieval_inf else date_string
     
+def _create_empty_result():
+    return {
+        "id": {}, "hop_0": {}, "hop_1": {}, "parent": {}, "verify": [], "is_bidirectional": False,
+        "long_answer": "", "short_answer": ""
+    }
+
+def _search_entity_with_fallback(entity_name, original_name, use_google_search):
+    # Clean entity names
+    entity_name = re.sub(r'\s*\(.*?\)\s*', '', entity_name).strip()
+    original_name = re.sub(r'\s*\(.*?\)\s*', '', original_name).strip() if original_name else None
+    
+    # Try SPARQL first
+    list_qid = search_sparql(entity_name)
+    if list_qid:
+        return entity_name, list_qid
+    
+    # Fallback search strategies
+    if use_google_search:
+        search_results = search_google(entity_name) or search_google(original_name)
+        if search_results:
+            normalized_titles = norm_keyentity_wikidata_api(search_results)
+            if normalized_titles:
+                entity_name = normalized_titles[0]
+                for title in normalized_titles:
+                    list_qid.extend(search_sparql(title))
+    else:
+        # Use Wikidata API
+        api_results = search_wikidata_for_normalized_name(entity_name) or search_wikidata_for_normalized_name(original_name)
+        if api_results:
+            entity_name = api_results[0][0]  # Use first result's label
+            # Convert API results to expected format
+            for label, qid, description in api_results:
+                list_qid.append({
+                    "item": {"type": "uri", "value": f"http://www.wikidata.org/entity/{qid}"},
+                    "itemLabel": {"xml:lang": "en", "type": "literal", "value": label},
+                    "description": {"xml:lang": "en", "type": "literal", "value": description}
+                })
+    
+    return entity_name, list_qid
+
+def _extract_property_labels(sparql_results):
+    labels = []
+    for result in sparql_results:
+        if "propertyLabel" in result:
+            label = result["propertyLabel"]["value"]
+            # Filter out QIDs but keep real labels that start with Q
+            if label and not re.match(r'^Q\d+$', label):
+                labels.append(label)
+    return labels
+
+def _group_results_by_property(sparql_results):
+    grouped = {}
+    for result in sparql_results:
+        pid = result["Pid"]["value"].split("/")[-1]
+        label = result["propertyLabel"]["value"] if "propertyLabel" in result else None
+        if label and not re.match(r'^Q\d+$', label):
+            if pid not in grouped:
+                grouped[pid] = []
+            grouped[pid].append(label)
+    return grouped
+
+def _find_contextual_match(values_by_pid, property_order, retrieval_inf, heuristic_name):
+    print(f"    Using {heuristic_name} heuristic...")
+    retrieval_words = set(re.findall(r'\b\w+\b', retrieval_inf.lower())) - STOPWORDS if retrieval_inf else set()
+    
+    for pid in property_order:
+        if pid not in values_by_pid:
+            continue
+            
+        print(f"      Property {pid}: {len(values_by_pid[pid])} values")
+        
+        # Try contextual matching first
+        if retrieval_words:
+            for val in values_by_pid[pid]:
+                val_words = set(re.findall(r'\b\w+\b', val.lower())) - STOPWORDS
+                if val_words & retrieval_words:
+                    print(f"      ✓ Matched '{val}' from {pid}")
+                    return [val], pid
+        
+        # Use first value as fallback
+        if values_by_pid[pid]:
+            print(f"      Using first value from {pid}: '{values_by_pid[pid][0]}'")
+            return [values_by_pid[pid][0]], pid
+    
+    return [], None
+
+def _find_best_answer_match(property_values, retrieval_inf, q_relation):
+    if not property_values:
+        return '', False
+    
+    is_date_property = any(keyword in q_relation.lower() for keyword in ['date', 'birthday'])
+    
+    if not retrieval_inf:
+        return property_values[0], False
+    
+    retrieval_words = set(re.findall(r'\b\w+\b', retrieval_inf.lower())) - STOPWORDS
+    
+    # Special handling for date properties
+    if is_date_property:
+        for val in property_values:
+            if not val:
+                continue
+            # Try date formatting with matching
+            formatted_date, has_match = format_date_with_matching(val, retrieval_inf)
+            if has_match:
+                return formatted_date, True
+            # Try exact substring matching for non-ISO dates
+            elif not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", val):
+                if val.lower() in retrieval_inf.lower():
+                    return val, True
+    else:
+        # Standard word matching for non-date properties
+        for val in property_values:
+            if not val:
+                continue
+            val_words = set(re.findall(r'\b\w+\b', val.lower())) - STOPWORDS
+            if val_words & retrieval_words:
+                return val, True
+    
+    # Fallback to first value
+    return property_values[0], False
+
+def _create_result_entry(qid, property_id, answer):
+    return [{
+        "Pid": {"value": f"http://www.wikidata.org/entity/{property_id}"},
+        "property": {"value": f"http://www.wikidata.org/entity/{qid}"},
+        "propertyLabel": {"value": answer}
+    }]
+
+def _create_verify_entry(qid, property_id, answer):
+    return [{
+        "qid": qid,
+        "parent_relations": {property_id: {"qid": qid, "value": answer}},
+        "child_relations": {}
+    }]
+
 def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_entity, q_relation, c_relation, 
                              retrieval_inf, last_retrieval_inf, use_google_search=False):
     """
-    Integrated query function supporting both bidirectional and unidirectional property queries.
+    Integrated query function supporting bidirectional and unidirectional property queries.
     
     Query mode is determined by question type and property characteristics:
     - "inference": Always uses bidirectional mode (dict_p_relation only)
-    - "compositional": Intelligently selects mode based on property:
-      * Bidirectional if property matches dict_p_relation (father, mother, spouse, child, sibling, occupation)
-      * Unidirectional otherwise (uses PROPERTY_MAPPINGS for other properties)
+    - "compositional": Intelligently selects mode based on property type
     
     Args:
         type_q: Type of question ("inference" or "compositional")
-                - "inference": Forces bidirectional mode with verification
-                - "compositional": Auto-selects mode based on property type
         original_question: The original question text (for special case handling)
         q_key_entity: The main entity to query (hop 1)
         last_key_entity: The related entity for verification (hop 0, required for bidirectional)
@@ -633,397 +767,147 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
         c_relation: The relationship keyword for hop 0 (for bidirectional verification)
         retrieval_inf: Retrieval information for hop 1
         last_retrieval_inf: Retrieval information for hop 0 (for bidirectional verification)
-        use_google_search: If True, use Google Search API for entity normalization.
-                          If False, use Wikidata API directly (default: False)
+        use_google_search: If True, use Google Search API for entity normalization
     
     Returns:
         dict_output with answer, source, and verification information
     """
-    dict_output = {
-        "id": {},
-        "hop_0": {},
-        "hop_1": {},
-        "parent": {}, 
-        "verify": {},
-        "is_bidirectional": False
-    }
-
+    # Early validation
     if q_key_entity.lower() == "insufficient information":
         print(f"Insufficient information for q_key_entity {q_key_entity}")
-        dict_output['long_answer'] = ''
-        dict_output['short_answer'] = ''
-        dict_output["verify"] = []
-        return dict_output
+        return _create_empty_result()
     
     print(f"Querying Wikidata for entity '{q_key_entity}' with relation '{q_relation}' (type: {type_q})")
 
-    # Get relation/property information using unified function
+    # Get relation/property information
     all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation, type_q=type_q)
     
-    # Determine if this should be bidirectional or unidirectional
-    # - "inference": bidirectional (uses dict_p_relation)
-    # - "compositional": unidirectional
+    # Determine query mode
     if type_q == "inference":
-        # For inference, all_relation must be present
         if all_relation is None:
-            dict_output["is_bidirectional"] = False
-            dict_output['long_answer'] = ''
-            dict_output['short_answer'] = ''
-            dict_output["verify"] = []
-            return dict_output
+            return _create_empty_result()
         is_bidirectional = True
     elif type_q == "compositional":
         is_bidirectional = False
         c_relation = None
     else:
-        dict_output["is_bidirectional"] = False
-        dict_output['long_answer'] = ''
-        dict_output['short_answer'] = ''
-        dict_output["verify"] = []
-        return dict_output
-    
-    dict_output["is_bidirectional"] = is_bidirectional
+        return _create_empty_result()
     
     if not pid_relation:
-        dict_output['long_answer'] = ''
-        dict_output['short_answer'] = ''
-        dict_output["verify"] = []
-        return dict_output
+        return _create_empty_result()
     
-    dict_output["id"]["pid"] = pid_relation
-    dict_output["id"]["cid"] = cid_relation
+    # Initialize result structure
+    dict_output = _create_empty_result()
+    dict_output["is_bidirectional"] = is_bidirectional
+    dict_output["id"] = {"pid": pid_relation, "cid": cid_relation}
 
-    q_key_entity = re.sub(r'\s*\(.*?\)\s*', '', q_key_entity).strip()
-    last_key_entity = re.sub(r'\s*\(.*?\)\s*', '', last_key_entity).strip() if last_key_entity else None
-    
-    # Normalize and search for hop 1 entity (main entity)
-    key_entity = norm_key_entity(q_key_entity, retrieval_inf)
+    # Search for main entity (hop 1)
+    key_entity, list_qid = _search_entity_with_fallback(
+        norm_key_entity(q_key_entity, retrieval_inf), q_key_entity, use_google_search
+    )
     print("norm key_entity: ", key_entity)
     
-    list_qid = search_sparql(key_entity)
-
-    if len(list_qid) == 0:
-        if use_google_search:
-            q_search_wikidata = search_google(key_entity)
-            if q_search_wikidata and len(q_search_wikidata) == 0:
-                q_search_wikidata = search_google(q_key_entity)
-            
-            if q_search_wikidata:
-                list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata)
-                key_entity = list_norm_title_parent[0] if list_norm_title_parent else key_entity
-                for title in list_norm_title_parent:
-                    list_qid.extend(search_sparql(title))
-        else:
-            # Use Wikidata API directly - returns list of (label, qid, description) tuples
-            api_results = search_wikidata_for_normalized_name(key_entity)
-            if not api_results:
-                api_results = search_wikidata_for_normalized_name(q_key_entity)
-            
-            if api_results:
-                # Use the first result's label as the normalized entity name
-                key_entity = api_results[0][0]  # (label, qid, description)
-                
-                # Convert API results to list_qid format
-                for label, qid, description in api_results:
-                    list_qid.append({
-                        "item": {"type": "uri", "value": f"http://www.wikidata.org/entity/{qid}"},
-                        "itemLabel": {"xml:lang": "en", "type": "literal", "value": label},
-                        "description": {"xml:lang": "en", "type": "literal", "value": description}
-                    })
+    # Search for verification entity (hop 0) if bidirectional
+    norm_last_key_entity, list_qid_last_key = None, []
+    if is_bidirectional and last_key_entity:
+        norm_last_key_entity, list_qid_last_key = _search_entity_with_fallback(
+            norm_key_entity(last_key_entity, last_retrieval_inf), last_key_entity, use_google_search
+        )
+    elif is_bidirectional:
+        print("Warning: Bidirectional mode requires last_key_entity, but it's missing")
     
-    # Normalize and search for hop 0 entity (for verification, if bidirectional)
-    norm_last_key_entity = None
-    list_qid_last_key = []
+    # Store entity information
+    dict_output["hop_0"] = {"key_entity": norm_last_key_entity, "list_qid": list_qid_last_key}
+    dict_output["hop_1"] = {"key_entity": key_entity, "list_qid": list_qid}
     
-    if is_bidirectional:
-        if not last_key_entity:
-            print("Warning: Bidirectional mode requires last_key_entity, but it's missing")
-        else:
-            norm_last_key_entity = norm_key_entity(last_key_entity, last_retrieval_inf)
-            list_qid_last_key = search_sparql(norm_last_key_entity)
-
-            if len(list_qid_last_key) == 0:
-                if use_google_search:
-                    q_search_wikidata = search_google(norm_last_key_entity)
-                    if q_search_wikidata and len(q_search_wikidata) == 0:
-                        q_search_wikidata = search_google(last_key_entity)
-
-                    if q_search_wikidata:
-                        list_norm_title_parent = norm_keyentity_wikidata_api(q_search_wikidata)
-                        norm_last_key_entity = list_norm_title_parent[0] if list_norm_title_parent else last_key_entity
-                        for title in list_norm_title_parent:
-                            list_qid_last_key.extend(search_sparql(title))
-                else:
-                    # Use Wikidata API directly (no Google API key needed) - returns list of (label, qid, description) tuples
-                    api_results = search_wikidata_for_normalized_name(norm_last_key_entity)
-                    if not api_results:
-                        api_results = search_wikidata_for_normalized_name(last_key_entity)
-
-                    if api_results:
-                        # Use the first result's label as the normalized entity name
-                        norm_last_key_entity = api_results[0][0]  # (label, qid, description)
-                        
-                        # Convert API results to list_qid format
-                        for label, qid, description in api_results:
-                            list_qid_last_key.append({
-                                "item": {"type": "uri", "value": f"http://www.wikidata.org/entity/{qid}"},
-                                "itemLabel": {"xml:lang": "en", "type": "literal", "value": label},
-                                "description": {"xml:lang": "en", "type": "literal", "value": description}
-                            })
-    
-    dict_output["hop_0"] = {
-        "key_entity": norm_last_key_entity,
-        "list_qid": list_qid_last_key,
-    }
-    dict_output["hop_1"] = {
-        "key_entity": key_entity,
-        "list_qid": list_qid,
-    }
-    
-    # Query properties for each candidate QID
+    # Process each candidate QID
     check_qid_parent = set()
-    property_id = pid_relation[0] if pid_relation else None  # Define property_id early for fallback usage
+    property_id = pid_relation[0] if pid_relation else None
     
     for item in list_qid:
         qid = extract_qid(item["item"]["value"])
-        if not re.match(r"^Q\d+$", qid):
-            print(f"'{qid}' is a wikipedia link")
-            continue
-        
-        if qid in check_qid_parent:
+        if not re.match(r"^Q\d+$", qid) or qid in check_qid_parent:
             continue
         check_qid_parent.add(qid)
         
-        # For bidirectional: use the all_relation approach
+        # Handle bidirectional queries
         if is_bidirectional and all_relation:
             parent = sparql_find_parent(qid, all_relation)
             dict_output["parent"][qid] = parent
-        # For unidirectional: query the specific property directly
-        elif not is_bidirectional and pid_relation:
-            def extract_property_labels(sparql_results):
-                """Helper function to extract non-QID labels from SPARQL results."""
-                labels = []
-                for result in sparql_results:
-                    if "propertyLabel" in result:
-                        label = result["propertyLabel"]["value"]
-                        # Filter out QIDs (e.g., "Q8733") but keep labels starting with Q (e.g., "Qing dynasty")
-                        is_qid = re.match(r'^Q\d+$', label)
-                        if label and not is_qid:
-                            labels.append(label)
-                return labels
-            
-            # Get the property ID from pid_relation
+            continue
+        
+        # Handle unidirectional queries with specialized heuristics
+        if not is_bidirectional and pid_relation:
             property_id = pid_relation[0]
             
-            # Determine question type for specialized handling
-            is_work_question = False
-            is_nationality_question = False
+            # Determine question type
+            question_lower = original_question.lower() if original_question else ''
+            is_work_question = 'work' in question_lower or 'work at' in question_lower
+            is_nationality_question = any(kw in question_lower for kw in ['nationality', 'country of citizenship', 'country of origin'])
             
-            if original_question:
-                question_lower = original_question.lower()
-                is_work_question = 'work' in question_lower or 'work at' in question_lower
-                is_nationality_question = any(kw in question_lower for kw in ['nationality', 'country of citizenship', 'country of origin']) or 'nationality' in q_relation.lower()
-            
-            # === SPECIALIZED HEURISTIC FOR WORK-RELATED QUESTIONS ===
+            # Apply specialized heuristics
             if is_work_question:
-                print("    Using WORK heuristic...")
-                # For work questions: try P108 (employer) → P101 (field of work) → P106 (occupation)
-                work_properties = ['P108', 'P101', 'P106']
-                batched_work_props = " ".join([f"wd:{pid}" for pid in work_properties])
-                work_results = sparql_find_parent(qid, batched_work_props)
+                work_properties = ['P108', 'P101', 'P106']  # employer -> field of work -> occupation
+                batched_props = " ".join([f"wd:{pid}" for pid in work_properties])
+                results = sparql_find_parent(qid, batched_props)
+                values_by_pid = _group_results_by_property(results)
+                property_values, property_id = _find_contextual_match(values_by_pid, work_properties, retrieval_inf, "WORK")
                 
-                # Extract and group by property
-                work_values_by_pid = {}
-                for result in work_results:
-                    pid = result["Pid"]["value"].split("/")[-1]
-                    label = result["propertyLabel"]["value"] if "propertyLabel" in result else None
-                    if label and not re.match(r'^Q\d+$', label):
-                        if pid not in work_values_by_pid:
-                            work_values_by_pid[pid] = []
-                        work_values_by_pid[pid].append(label)
-                
-                # Try to find contextual match in order of preference
-                property_values = []
-                retrieval_words = set(re.findall(r'\b\w+\b', retrieval_inf.lower())) - set(stopwords.words('english')) if retrieval_inf else set()
-                
-                for work_pid in work_properties:
-                    if work_pid in work_values_by_pid:
-                        print(f"      Property {work_pid}: {len(work_values_by_pid[work_pid])} values")
-                        # Try contextual matching first
-                        if retrieval_words:
-                            for val in work_values_by_pid[work_pid]:
-                                val_words = set(re.findall(r'\b\w+\b', val.lower())) - set(stopwords.words('english'))
-                                if val_words & retrieval_words:
-                                    property_values = [val]
-                                    property_id = work_pid
-                                    print(f"      ✓ Matched '{val}' from {work_pid}")
-                                    break
-                        # If no match yet, use first value from this property
-                        if not property_values and work_values_by_pid[work_pid]:
-                            property_values = [work_values_by_pid[work_pid][0]]
-                            property_id = work_pid
-                            print(f"      Using first value from {work_pid}: '{property_values[0]}'")
-                            break
-                    if property_values:
-                        break
-            
-            # === SPECIALIZED HEURISTIC FOR NATIONALITY QUESTIONS ===
             elif is_nationality_question:
-                print("    Using NATIONALITY heuristic...")
-                # For nationality: try P27 (citizenship) → P495 (country of origin) → P17 (country)
-                nationality_properties = ['P27', 'P495', 'P17']
-                batched_nat_props = " ".join([f"wd:{pid}" for pid in nationality_properties])
-                nat_results = sparql_find_parent(qid, batched_nat_props)
+                nationality_properties = ['P27', 'P495', 'P17']  # citizenship -> country of origin -> country
+                batched_props = " ".join([f"wd:{pid}" for pid in nationality_properties])
+                results = sparql_find_parent(qid, batched_props)
+                values_by_pid = _group_results_by_property(results)
+                property_values, property_id = _find_contextual_match(values_by_pid, nationality_properties, retrieval_inf, "NATIONALITY")
                 
-                # Extract and group by property
-                nat_values_by_pid = {}
-                for result in nat_results:
-                    pid = result["Pid"]["value"].split("/")[-1]
-                    label = result["propertyLabel"]["value"] if "propertyLabel" in result else None
-                    if label and not re.match(r'^Q\d+$', label):
-                        if pid not in nat_values_by_pid:
-                            nat_values_by_pid[pid] = []
-                        nat_values_by_pid[pid].append(label)
-                
-                # Try to find contextual match in order of preference
-                property_values = []
-                retrieval_words = set(re.findall(r'\b\w+\b', retrieval_inf.lower())) - set(stopwords.words('english')) if retrieval_inf else set()
-                
-                for nat_pid in nationality_properties:
-                    if nat_pid in nat_values_by_pid:
-                        print(f"      Property {nat_pid}: {len(nat_values_by_pid[nat_pid])} values")
-                        # Try contextual matching first
-                        if retrieval_words:
-                            for val in nat_values_by_pid[nat_pid]:
-                                val_words = set(re.findall(r'\b\w+\b', val.lower())) - set(stopwords.words('english'))
-                                if val_words & retrieval_words:
-                                    property_values = [val]
-                                    property_id = nat_pid
-                                    print(f"      ✓ Matched '{val}' from {nat_pid}")
-                                    break
-                        # If no match yet, use first value from this property
-                        if not property_values and nat_values_by_pid[nat_pid]:
-                            property_values = [nat_values_by_pid[nat_pid][0]]
-                            property_id = nat_pid
-                            print(f"      Using first value from {nat_pid}: '{property_values[0]}'")
-                            break
-                    if property_values:
-                        break
-            
-            # === STANDARD PROPERTY QUERY FOR OTHER QUESTIONS ===
             else:
+                # Standard property query
                 print(f"    Using STANDARD property query for {property_id}...")
                 results = sparql_find_parent(qid, f"wd:{property_id}")
-                property_values = extract_property_labels(results)
+                property_values = _extract_property_labels(results)
                 print(f"      Found {len(property_values)} values")
-
-            # If we found values, match with retrieval info or take first value
+            
+            # Find best answer match
             if property_values:
-                short_answer = ''
-                retrieval_words = set()
-                stop_words = set(stopwords.words('english'))
-                has_contextual_match = False
-                is_date_property = any(keyword in q_relation.lower() for keyword in ['date', 'birthday'])
-
-                # For work and nationality questions, matching was already done in the specialized heuristics
+                # For specialized heuristics, answer is already contextually matched
                 if is_work_question or is_nationality_question:
-                    short_answer = property_values[0] if property_values else ''
-                    has_contextual_match = True  # Already matched in specialized logic
+                    short_answer, has_contextual_match = property_values[0], True
+                else:
+                    short_answer, has_contextual_match = _find_best_answer_match(property_values, retrieval_inf, q_relation)
                 
-                # For other questions, try to find a contextual match
-                elif retrieval_inf:
-                    retrieval_words = set(re.findall(r'\b\w+\b', retrieval_inf.lower())) - stop_words
-                    
-                    # Special handling for date properties - try multiple formats
-                    if is_date_property:
-                        for val in property_values:
-                            if not val: continue
-                            
-                            # Use helper function to format and match dates (uses exact substring matching)
-                            formatted_date, has_match = format_date_with_matching(val, retrieval_inf)
-                            if has_match:
-                                short_answer = formatted_date
-                                has_contextual_match = True
-                                break
-                            elif not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", val):
-                                # If not ISO format, try exact substring matching
-                                if val.lower() in retrieval_inf.lower():
-                                    short_answer = val
-                                    has_contextual_match = True
-                                    break
-                    else:
-                        # Non-date properties: use standard word matching
-                        for val in property_values:
-                            if not val: continue
-                            val_words = set(re.findall(r'\b\w+\b', val.lower())) - stop_words
-                            matching_words = val_words & retrieval_words
-                            if matching_words:
-                                short_answer = val
-                                has_contextual_match = True
-                                break
-
-                # Fallback: use first value if no contextual match found
-                if not short_answer and property_values:
-                    short_answer = property_values[0]
-                
-                # Store result for this QID
+                # Store result
                 if short_answer:
-                    dict_output["parent"][qid] = [
-                        {
-                            "Pid": {"value": f"http://www.wikidata.org/entity/{property_id}"},
-                            "property": {"value": f"http://www.wikidata.org/entity/{qid}"},
-                            "propertyLabel": {"value": short_answer}
-                        }
-                    ]
+                    dict_output["parent"][qid] = _create_result_entry(qid, property_id, short_answer)
                     
-                    # If we found a contextual match, return immediately
+                    # Return immediately if we found a contextual match
                     if has_contextual_match:
-                        dict_output["verify"] = [{
-                            "qid": qid,
-                            "parent_relations": {
-                                property_id: {
-                                    "qid": qid,
-                                    "value": short_answer
-                                }
-                            },
-                            "child_relations": {}
-                        }]
-                        dict_output['long_answer'] = ''
+                        dict_output["verify"] = _create_verify_entry(qid, property_id, short_answer)
                         dict_output['short_answer'] = short_answer
                         return dict_output
     
-    # After checking all QIDs, return the first found answer (fallback)
+    # Handle fallback results
     if not is_bidirectional and dict_output.get("parent"):
         first_qid = list(dict_output["parent"].keys())[0]
         first_answer = dict_output["parent"][first_qid][0]["propertyLabel"]["value"]
-        dict_output["verify"] = [{
-            "qid": first_qid,
-            "parent_relations": {
-                property_id: {
-                    "qid": first_qid,
-                    "value": first_answer
-                }
-            },
-            "child_relations": {}
-        }]
-        dict_output['long_answer'] = ''
-        # Apply date formatting if this is a date property
+        
+        # Apply date formatting if needed
         if any(keyword in q_relation.lower() for keyword in ['date', 'birthday', 'birth', 'death']):
-            first_answer = format_date_with_matching(first_answer) if re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", first_answer) else first_answer
+            if re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", first_answer):
+                first_answer = format_date_with_matching(first_answer)
+        
+        dict_output["verify"] = _create_verify_entry(first_qid, property_id, first_answer)
         dict_output['short_answer'] = first_answer
+        
         import json
         print(json.dumps(dict_output, indent=2))
         return dict_output
     
-    # For bidirectional queries, verify and extract answer
+    # For bidirectional queries, use verification
     if is_bidirectional:
         return verify_hop2(dict_output)
     
-    # If unidirectional but no answer found, return empty result
-    dict_output['long_answer'] = ''
-    dict_output['short_answer'] = ''
-    dict_output["verify"] = []
-    return dict_output
+    # No results found
+    return _create_empty_result()
 
 def verify_hop2(dict_output):
     verify_list = []
