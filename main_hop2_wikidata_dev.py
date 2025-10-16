@@ -415,9 +415,9 @@ if __name__ == "__main__":
             if not (threads[0] <= idx < threads[1]):
                 continue 
 
-            skip_id = '80cf01340baf11ebab90acde48001122'
-            if ID != skip_id:
-                continue
+            # skip_id = '80cf01340baf11ebab90acde48001122'
+            # if ID != skip_id:
+            #     continue
             
             # if ID not in list_ID:
             #     continue
@@ -434,5 +434,5 @@ if __name__ == "__main__":
             else:
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=True)
 
-            if ID == skip_id:
-                break
+            # if ID == skip_id:
+            #     break
