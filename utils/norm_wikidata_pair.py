@@ -2,6 +2,7 @@ import re
 import os
 import time
 import requests
+from datetime import datetime
 
 from nltk.corpus import stopwords
 STOPWORDS = set(stopwords.words('english'))
@@ -538,38 +539,35 @@ def verify_relations(dict_output):
     return dict_output
 
 def format_date_with_matching(date_string, retrieval_inf=None):
-    # The regex ensures the input string is in the expected ISO format.
+    # Ensure ISO 8601 format like "2024-05-03T00:00:00Z"
     if not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", date_string):
         return (date_string, False) if retrieval_inf else date_string
-    
-    try:
-        from datetime import datetime
-        date_obj = datetime.strptime(date_string, "%Y-%m-%dT%H:%M:%SZ")
-        
-        # Extract the year as an integer from the datetime object.
-        # This prevents strftime's %Y from adding leading zeros to years before 1000.
-        year_val = date_obj.year
-        
-        # Format 1: "3 February 1833" (date month year)
-        format1 = f"{date_obj.strftime('%-d %B')} {year_val}"
-        # Format 2: "June 5, 1962" (month date, year)
-        format2 = f"{date_obj.strftime('%B %-d,')} {year_val}"
-        # Format 3: "1389" (year only)
-        format3 = str(year_val)
-        
-        # If no retrieval info, return default format
-        if not retrieval_inf:
-            return format1
-        
-        retrieval_lower = retrieval_inf.lower()
-        if format1.lower() in retrieval_lower: return (format1, True)
-        if format2.lower() in retrieval_lower: return (format2, True)
-        if format3 in retrieval_lower: return (format3, True)
 
-        return (format1, False)
-        
-    except ValueError:
-        return (date_string, False) if retrieval_inf else date_string
+    date_obj = datetime.strptime(date_string, "%Y-%m-%dT%H:%M:%SZ")
+
+    day = date_obj.day
+    month = date_obj.strftime("%B")
+    year = date_obj.year
+
+    # Format 1: "3 February 1833"
+    format1 = f"{day} {month} {year}"
+    # Format 2: "February 3, 1833"
+    format2 = f"{month} {day}, {year}"
+    # Format 3: "1833"
+    format3 = str(year)
+
+    if not retrieval_inf:
+        return format1
+
+    retrieval_lower = retrieval_inf.lower()
+    if format1.lower() in retrieval_lower:
+        return (format1, True)
+    if format2.lower() in retrieval_lower:
+        return (format2, True)
+    if format3 in retrieval_lower:
+        return (format3, True)
+
+    return (format1, False)
     
 def create_empty_result():
     return {
