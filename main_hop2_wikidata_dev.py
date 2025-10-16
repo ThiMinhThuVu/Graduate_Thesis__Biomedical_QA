@@ -141,8 +141,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     if step == '1':
                         if type_q in ["inference", "compositional"] and dataset == "wiki" and query_wikidata==True: 
                             q_relation_parent = search_kw_subq
-                            use_google_search = settings.get('norm_wikidata_google_search', False)
-                            answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information, use_google_search=use_google_search)
+                            answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)
                             normalized_v2 = answer_generation
                             short_ans = answer_generation["short_answer"]
                             long_ans = answer_generation["long_answer"]
@@ -212,8 +211,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     elif step == '1':
                         if dataset == "wiki": 
                             q_relation_parent = search_kw_subq
-                            use_google_search = settings.get('norm_wikidata_google_search', False)
-                            answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information, use_google_search=use_google_search)     
+                            answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)     
                             normalized_v2 = answer_generation
                         else:
                             answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
@@ -307,7 +305,7 @@ if __name__ == "__main__":
     
     #edit config
     run = runs[6]  #1: R4, 4: R7,  6: R11, 7: R12
-    threads = [0, 2618] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 775] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -394,7 +392,7 @@ if __name__ == "__main__":
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        type_ = "compositional" #"inference"
+        type_ = "inference" #"inference"
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/dev/dev_{type_}.json"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"
@@ -417,9 +415,9 @@ if __name__ == "__main__":
             if not (threads[0] <= idx < threads[1]):
                 continue 
 
-            # skip_id = 'b0f2c5c00bdd11eba7f7acde48001122'
-            # if ID != skip_id:
-            #     continue
+            skip_id = '80cf01340baf11ebab90acde48001122'
+            if ID != skip_id:
+                continue
             
             # if ID not in list_ID:
             #     continue
@@ -436,5 +434,5 @@ if __name__ == "__main__":
             else:
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=True)
 
-            # if ID == skip_id:
-            #     break
+            if ID == skip_id:
+                break

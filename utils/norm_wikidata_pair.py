@@ -571,13 +571,13 @@ def format_date_with_matching(date_string, retrieval_inf=None):
     except ValueError:
         return (date_string, False) if retrieval_inf else date_string
     
-def _create_empty_result():
+def create_empty_result():
     return {
         "id": {}, "hop_0": {}, "hop_1": {}, "parent": {}, "verify": [], "is_bidirectional": False,
         "long_answer": "", "short_answer": ""
     }
 
-def _search_entity_with_fallback(entity_name, original_name):
+def search_entity_with_fallback(entity_name, original_name):
     # Clean entity names
     entity_name = re.sub(r'\s*\(.*?\)\s*', '', entity_name).strip()
     original_name = re.sub(r'\s*\(.*?\)\s*', '', original_name).strip() if original_name else None
@@ -601,7 +601,7 @@ def _search_entity_with_fallback(entity_name, original_name):
     
     return entity_name, list_qid
 
-def _extract_property_labels(sparql_results):
+def extract_property_labels(sparql_results):
     labels = []
     for result in sparql_results:
         if "propertyLabel" in result:
@@ -611,7 +611,7 @@ def _extract_property_labels(sparql_results):
                 labels.append(label)
     return labels
 
-def _group_results_by_property(sparql_results):
+def group_results_by_property(sparql_results):
     grouped = {}
     for result in sparql_results:
         pid = result["Pid"]["value"].split("/")[-1]
@@ -622,7 +622,7 @@ def _group_results_by_property(sparql_results):
             grouped[pid].append(label)
     return grouped
 
-def _find_contextual_match(values_by_pid, property_order, retrieval_inf, heuristic_name):
+def find_contextual_match(values_by_pid, property_order, retrieval_inf, heuristic_name):
     print(f"    Using {heuristic_name} heuristic...")
     retrieval_words = set(re.findall(r'\b\w+\b', retrieval_inf.lower())) - STOPWORDS if retrieval_inf else set()
     
@@ -647,7 +647,7 @@ def _find_contextual_match(values_by_pid, property_order, retrieval_inf, heurist
     
     return [], None
 
-def _find_best_answer_match(property_values, retrieval_inf, q_relation):
+def find_best_answer_match(property_values, retrieval_inf, q_relation):
     if not property_values:
         return '', False
     
@@ -683,179 +683,19 @@ def _find_best_answer_match(property_values, retrieval_inf, q_relation):
     # Fallback to first value
     return property_values[0], False
 
-def _create_result_entry(qid, property_id, answer):
+def create_result_entry(qid, property_id, answer):
     return [{
         "Pid": {"value": f"http://www.wikidata.org/entity/{property_id}"},
         "property": {"value": f"http://www.wikidata.org/entity/{qid}"},
         "propertyLabel": {"value": answer}
     }]
 
-def _create_verify_entry(qid, property_id, answer):
+def create_verify_entry(qid, property_id, answer):
     return [{
         "qid": qid,
         "parent_relations": {property_id: {"qid": qid, "value": answer}},
         "child_relations": {}
     }]
-
-def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_entity, q_relation, c_relation, 
-                             retrieval_inf, last_retrieval_inf):
-    """
-    Integrated query function supporting bidirectional and unidirectional property queries.
-    
-    Query mode is determined by question type and property characteristics:
-    - "inference": unidirectional or bidirectional mode
-    - "compositional": unidirectional mode
-    
-    Args:
-        type_q: Type of question ("inference" | "compositional")
-        original_question: The original question text (for special case handling)
-        q_key_entity: The main entity to query (hop 1)
-        last_key_entity: The related entity for verification (hop 0, required for bidirectional)
-        q_relation: The relationship/property keyword for hop 1
-        c_relation: The relationship keyword for hop 0 (for bidirectional verification)
-        retrieval_inf: Retrieval information for hop 1
-        last_retrieval_inf: Retrieval information for hop 0 (for bidirectional verification)
-        use_google_search: If True, use Google Search API for entity normalization
-    
-    Returns:
-        dict_output with answer, source, and verification information
-    """
-    # Early validation
-    if q_key_entity.lower().strip() == "insufficient information":
-        print(f"Insufficient information for q_key_entity {q_key_entity}")
-        return _create_empty_result()
-    
-    print(f"Querying Wikidata for entity '{q_key_entity}' with relation '{q_relation}' (type: {type_q})")
-
-    # Get relation/property information
-    all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation, type_q=type_q)
-    
-    # Determine query mode
-    if type_q == "inference":
-        if all_relation is None:
-            return _create_empty_result()
-        is_bidirectional = True
-    elif type_q == "compositional":
-        is_bidirectional = False
-        c_relation = None
-    else:
-        return _create_empty_result()
-    
-    if not pid_relation:
-        return _create_empty_result()
-    
-    # Initialize result structure
-    dict_output = _create_empty_result()
-    dict_output["is_bidirectional"] = is_bidirectional
-    dict_output["id"] = {"pid": pid_relation, "cid": cid_relation}
-
-    # Search for main entity (hop 1)
-    key_entity, list_qid = _search_entity_with_fallback(
-        norm_key_entity(q_key_entity, retrieval_inf), q_key_entity
-    )
-    print("norm key_entity: ", key_entity)
-    
-    # Search for verification entity (hop 0) if bidirectional
-    norm_last_key_entity, list_qid_last_key = None, []
-    if is_bidirectional and last_key_entity:
-        norm_last_key_entity, list_qid_last_key = _search_entity_with_fallback(
-            norm_key_entity(last_key_entity, last_retrieval_inf), last_key_entity
-        )
-    elif is_bidirectional:
-        print("Warning: Bidirectional mode requires last_key_entity, but it's missing")
-    
-    # Store entity information
-    dict_output["hop_0"] = {"key_entity": norm_last_key_entity, "list_qid": list_qid_last_key}
-    dict_output["hop_1"] = {"key_entity": key_entity, "list_qid": list_qid}
-    
-    # Process each candidate QID
-    check_qid_parent = set()
-    property_id = pid_relation[0] if pid_relation else None
-    
-    for item in list_qid:
-        qid = extract_qid(item["item"]["value"])
-        if not re.match(r"^Q\d+$", qid) or qid in check_qid_parent:
-            continue
-        check_qid_parent.add(qid)
-        
-        # Handle bidirectional queries
-        if is_bidirectional and all_relation:
-            parent = sparql_find_parent(qid, all_relation)
-            dict_output["parent"][qid] = parent
-            continue
-        
-        # Handle unidirectional queries with specialized heuristics
-        if not is_bidirectional and pid_relation:
-            property_id = pid_relation[0]
-            
-            # Determine question type
-            question_lower = original_question.lower() if original_question else ''
-            is_work_question = 'work' in question_lower or 'work at' in question_lower
-            is_nationality_question = any(kw in question_lower for kw in ['nationality', 'country of citizenship', 'country of origin'])
-            
-            # Apply specialized heuristics
-            if is_work_question:
-                work_properties = ['P108', 'P101', 'P106']  # employer -> field of work -> occupation
-                batched_props = " ".join([f"wd:{pid}" for pid in work_properties])
-                results = sparql_find_parent(qid, batched_props)
-                values_by_pid = _group_results_by_property(results)
-                property_values, property_id = _find_contextual_match(values_by_pid, work_properties, retrieval_inf, "WORK")
-                
-            elif is_nationality_question:
-                nationality_properties = ['P27', 'P495', 'P17']  # citizenship -> country of origin -> country
-                batched_props = " ".join([f"wd:{pid}" for pid in nationality_properties])
-                results = sparql_find_parent(qid, batched_props)
-                values_by_pid = _group_results_by_property(results)
-                property_values, property_id = _find_contextual_match(values_by_pid, nationality_properties, retrieval_inf, "NATIONALITY")
-                
-            else:
-                # Standard property query
-                print(f"    Using STANDARD property query for {property_id}...")
-                results = sparql_find_parent(qid, f"wd:{property_id}")
-                property_values = _extract_property_labels(results)
-                print(f"      Found {len(property_values)} values")
-            
-            # Find best answer match
-            if property_values:
-                # For specialized heuristics, answer is already contextually matched
-                if is_work_question or is_nationality_question:
-                    short_answer, has_contextual_match = property_values[0], True
-                else:
-                    short_answer, has_contextual_match = _find_best_answer_match(property_values, retrieval_inf, q_relation)
-                
-                # Store result
-                if short_answer:
-                    dict_output["parent"][qid] = _create_result_entry(qid, property_id, short_answer)
-                    
-                    # Return immediately if we found a contextual match
-                    if has_contextual_match:
-                        dict_output["verify"] = _create_verify_entry(qid, property_id, short_answer)
-                        dict_output['short_answer'] = short_answer
-                        return dict_output
-    
-    # Handle fallback results
-    if not is_bidirectional and dict_output.get("parent"):
-        first_qid = list(dict_output["parent"].keys())[0]
-        first_answer = dict_output["parent"][first_qid][0]["propertyLabel"]["value"]
-        
-        # Apply date formatting if needed
-        if any(keyword in q_relation.lower() for keyword in ['date', 'birthday', 'birth', 'death']):
-            if re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", first_answer):
-                first_answer = format_date_with_matching(first_answer)
-        
-        dict_output["verify"] = _create_verify_entry(first_qid, property_id, first_answer)
-        dict_output['short_answer'] = first_answer
-        
-        import json
-        print(json.dumps(dict_output, indent=2))
-        return dict_output
-    
-    # For bidirectional queries, use verification
-    if is_bidirectional:
-        return verify_hop2(dict_output)
-    
-    # No results found
-    return _create_empty_result()
 
 def verify_hop2(dict_output):
     verify_list = []
@@ -901,6 +741,21 @@ def verify_hop2(dict_output):
                     "child_relations": c_value
                 })   
                 break
+            
+    if len(verify_list) == 0:
+        pid = parent_id[0]
+        parent = dict_output['parent']
+        ok = 0
+        for parent_id, parent in parent.items():
+            if ok == 1:
+                break
+            for item in parent:
+                if pid in item['Pid']['value']:
+                    short_answer = item['propertyLabel']['value']
+                    if short_answer is None:
+                        short_answer = ''
+                    ok = 1
+                    break
 
     # thêm vào dict_output
     dict_output["verify"] = verify_list
@@ -909,15 +764,175 @@ def verify_hop2(dict_output):
     
     return dict_output
 
+def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_entity, q_relation, c_relation, 
+                             retrieval_inf, last_retrieval_inf):
+    """
+    Integrated query function supporting bidirectional and unidirectional property queries.
+    
+    Query mode is determined by question type and property characteristics:
+    - "inference": unidirectional or bidirectional mode
+    - "compositional": unidirectional mode
+    
+    Args:
+        type_q: Type of question ("inference" | "compositional")
+        original_question: The original question text (for special case handling)
+        q_key_entity: The main entity to query (hop 1)
+        last_key_entity: The related entity for verification (hop 0, required for bidirectional)
+        q_relation: The relationship/property keyword for hop 1
+        c_relation: The relationship keyword for hop 0 (for bidirectional verification)
+        retrieval_inf: Retrieval information for hop 1
+        last_retrieval_inf: Retrieval information for hop 0 (for bidirectional verification)
+        use_google_search: If True, use Google Search API for entity normalization
+    
+    Returns:
+        dict_output with answer, source, and verification information
+    """
+    # Early validation
+    if q_key_entity.lower().strip() == "insufficient information":
+        print(f"Insufficient information for q_key_entity {q_key_entity}")
+        return create_empty_result()
+    
+    print(f"Querying Wikidata for entity '{q_key_entity}' with relation '{q_relation}' (type: {type_q})")
+
+    # Get relation/property information
+    all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation, type_q=type_q)
+    
+    # Determine query mode
+    if type_q == "inference":
+        if all_relation is None:
+            return create_empty_result()
+        is_bidirectional = True
+    elif type_q == "compositional":
+        is_bidirectional = False
+        c_relation = None
+    else:
+        return create_empty_result()
+    
+    if not pid_relation:
+        return create_empty_result()
+    
+    # Initialize result structure
+    dict_output = create_empty_result()
+    dict_output["is_bidirectional"] = is_bidirectional
+    dict_output["id"] = {"pid": pid_relation, "cid": cid_relation}
+
+    # Search for main entity (hop 1)
+    key_entity, list_qid = search_entity_with_fallback(
+        norm_key_entity(q_key_entity, retrieval_inf), q_key_entity
+    )
+    print("norm key_entity: ", key_entity)
+    
+    # Search for verification entity (hop 0) if bidirectional
+    norm_last_key_entity, list_qid_last_key = None, []
+    if is_bidirectional and last_key_entity:
+        norm_last_key_entity, list_qid_last_key = search_entity_with_fallback(
+            norm_key_entity(last_key_entity, last_retrieval_inf), last_key_entity
+        )
+    elif is_bidirectional:
+        print("Warning: Bidirectional mode requires last_key_entity, but it's missing")
+    
+    # Store entity information
+    dict_output["hop_0"] = {"key_entity": norm_last_key_entity, "list_qid": list_qid_last_key}
+    dict_output["hop_1"] = {"key_entity": key_entity, "list_qid": list_qid}
+    
+    # Process each candidate QID
+    check_qid_parent = set()
+    property_id = pid_relation[0] if pid_relation else None
+    
+    for item in list_qid:
+        qid = extract_qid(item["item"]["value"])
+        if not re.match(r"^Q\d+$", qid) or qid in check_qid_parent:
+            continue
+        check_qid_parent.add(qid)
+        
+        # Handle bidirectional queries
+        if is_bidirectional and all_relation:
+            parent = sparql_find_parent(qid, all_relation)
+            dict_output["parent"][qid] = parent
+            continue
+        
+        # Handle unidirectional queries with specialized heuristics
+        if not is_bidirectional and pid_relation:
+            property_id = pid_relation[0]
+            
+            # Determine question type
+            question_lower = original_question.lower() if original_question else ''
+            is_work_question = 'work' in question_lower or 'work at' in question_lower
+            is_nationality_question = any(kw in question_lower for kw in ['nationality', 'country of citizenship', 'country of origin'])
+            
+            # Apply specialized heuristics
+            if is_work_question:
+                work_properties = ['P108', 'P101', 'P106']  # employer -> field of work -> occupation
+                batched_props = " ".join([f"wd:{pid}" for pid in work_properties])
+                results = sparql_find_parent(qid, batched_props)
+                values_by_pid = group_results_by_property(results)
+                property_values, property_id = find_contextual_match(values_by_pid, work_properties, retrieval_inf, "WORK")
+                
+            elif is_nationality_question:
+                nationality_properties = ['P27', 'P495', 'P17']  # citizenship -> country of origin -> country
+                batched_props = " ".join([f"wd:{pid}" for pid in nationality_properties])
+                results = sparql_find_parent(qid, batched_props)
+                values_by_pid = group_results_by_property(results)
+                property_values, property_id = find_contextual_match(values_by_pid, nationality_properties, retrieval_inf, "NATIONALITY")
+                
+            else:
+                # Standard property query
+                print(f"    Using STANDARD property query for {property_id}...")
+                results = sparql_find_parent(qid, f"wd:{property_id}")
+                property_values = extract_property_labels(results)
+                print(f"      Found {len(property_values)} values")
+            
+            # Find best answer match
+            if property_values:
+                # For specialized heuristics, answer is already contextually matched
+                if is_work_question or is_nationality_question:
+                    short_answer, has_contextual_match = property_values[0], True
+                else:
+                    short_answer, has_contextual_match = find_best_answer_match(property_values, retrieval_inf, q_relation)
+                
+                # Store result
+                if short_answer:
+                    dict_output["parent"][qid] = create_result_entry(qid, property_id, short_answer)
+                    
+                    # Return immediately if we found a contextual match
+                    if has_contextual_match:
+                        dict_output["verify"] = create_verify_entry(qid, property_id, short_answer)
+                        dict_output['short_answer'] = short_answer
+                        return dict_output
+    
+    # Handle fallback results
+    if not is_bidirectional and dict_output.get("parent"):
+        first_qid = list(dict_output["parent"].keys())[0]
+        first_answer = dict_output["parent"][first_qid][0]["propertyLabel"]["value"]
+        
+        # Apply date formatting if needed
+        if any(keyword in q_relation.lower() for keyword in ['date', 'birthday', 'birth', 'death']):
+            if re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", first_answer):
+                first_answer = format_date_with_matching(first_answer)
+        
+        dict_output["verify"] = create_verify_entry(first_qid, property_id, first_answer)
+        dict_output['short_answer'] = first_answer
+        
+        import json
+        print(json.dumps(dict_output, indent=2))
+        return dict_output
+    
+    # For bidirectional queries, use verification
+    if is_bidirectional:
+        return verify_hop2(dict_output)
+    
+    # No results found
+    return create_empty_result()
+
+
 if __name__ == "__main__":
     print(query_hop2_with_wikidata(
-        type_q="compositional",
-        original_question="What is the date of birth of that person??",
-        q_key_entity="Susanna Nicchiarelli",
-        last_key_entity="",
-        q_relation="director birthday",
-        c_relation="",
-        retrieval_inf="""Susanna Nicchiarelli: Susanna Nicchiarelli (born 6 May 1975) is an Italian director, actress and screenwriter.""",
-        last_retrieval_inf="",
-        use_google_search=False
+        type_q="inference",
+        original_question="Who did Philip Carteret Frs marry?",
+        q_key_entity="George Carteret, 1st Baron Carteret",
+        last_key_entity="Philip Carteret Frs",
+        q_relation="father of",
+        c_relation="child of Philip Carteret Frs",
+        retrieval_inf="""George Carteret, 1st Baron Carteret: George Carteret, 1st Baron Carteret (July 1667 – 22 September 1695) was son of Sir Philip Carteret (died 1672) and the grandson of George Carteret. His mother was Lady Jemima Montagu, daughter of Edward Montagu, 1st Earl of Sandwich. He was left an orphan at the age of five, and was raised by his paternal grandparents. He married Lady Grace Granville (daughter of John Granville, 1st Earl of Bath and created Countess Granville in 1715), and by her was the father of John Carteret, 2nd Earl Granville. He was ennobled as Baron Carteret of Hawnes in 1681 in recognition of his grandfather's long career of loyalty to the English Crown, both during the English Civil War and after the Restoration of Charles II. He died in 1695, aged only 26; his widow outlived him by half a century.""",
+        last_retrieval_inf=""""Philip Carteret FRS: Sir Philip Carteret, FRS (1641 – 1672), was the eldest son of Sir George Carteret and his wife and cousin Elizabeth de Cartetet. Philip was elected Fellow of the Royal Society on 15 February 1665. He married Jemima Montagu, daughter of Edward Montagu, 1st Earl of Sandwich and Jemima Crewe, in an arranged marriage on 31 July 1665. Samuel Pepys had a hand in the marriage and wrote of it at some length in his diary. Jemima had only known of Philip some fourteen days before their marriage: Pepys did ask her if she could like Philip as a husband, and was relieved when she answered that she thought she could like him very well. It was noted that Jemima failed to arrive in time for the ceremony at the church, but the marriage is thought to have been reasonably happy. Jemima died in childbirth in 1671. Philip was father of four children, including George Carteret, 1st Baron Carteret. Knighted in 1667, he became Gentleman of the King's Chamber in 1670. Philip died along with his father-in-law the Earl of Sandwich when their ship, the ""Prince Royal"", was grappled by a Dutch fire ship in the Battle of Solebay."""
     ))
