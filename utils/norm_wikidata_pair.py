@@ -86,45 +86,7 @@ dict_p_relation = {
 # Bidirectional relationship properties (require verification)
 BIDIRECTIONAL_PROPERTIES = set(dict_p_relation.values())
 
-API_KEY_GG = 'Bearer 5C776EC6-9757-45BF-B13E-85F3C4860C18'
 
-def search_google(query):
-    query += " site:wikidata.org"
-    
-    max_retries = 30
-    retry_delay = 30
-   
-    for attempt in range(max_retries):
-        try:
-            response = requests.post(
-                'https://api.search1api.com/search',
-                headers={
-                    'Content-Type': 'application/json',
-                    'Authorization': API_KEY_GG 
-                },
-                json={
-                    "query": query,
-                    "search_service": "google",
-                    "max_results": 10,
-                    "crawl_results": 0,
-                    "image": False,
-                    "language": "en"
-                },
-                timeout=30
-            )
-
-            if response.status_code in [200, 404]:
-                return response.json().get("results", [])
-            else:
-                raise RuntimeError(f"Search API failed with status code {response.status_code}: {response.text}")
-
-        except Exception as e:
-            print(f"Error (attempt {attempt + 1}/{max_retries}): {e}")
-            if attempt < max_retries - 1:
-                time.sleep(retry_delay)
-            else:
-                raise e 
-            
 def norm_keyentity_wikidata_api(results, topk=1):   
     if not results:
         return []  
@@ -214,10 +176,6 @@ def search_wikidata_for_normalized_name(query, topk=5):
 
 def tokenize(text):
     return set(re.findall(r"\w+", text.lower()))
-
-def normalize_text(text):
-    """Normalize text for comparison."""
-    return " ".join(text.lower().split())
 
 def remove_of_phrase(title):
     # Loại bỏ cụm "of ..." (vd: of Berg)
@@ -335,7 +293,7 @@ def get_relation_id(q_relation, q_relation_child=None, type_q=None):
         - For unknown properties:
           (None, [], [])
     """
-    search_normalized = normalize_text(q_relation)
+    search_normalized = q_relation.lower().strip()
     
     # For inference questions: use dict_p_relation (bidirectional)
     if type_q == "inference":
@@ -619,7 +577,7 @@ def _create_empty_result():
         "long_answer": "", "short_answer": ""
     }
 
-def _search_entity_with_fallback(entity_name, original_name, use_google_search):
+def _search_entity_with_fallback(entity_name, original_name):
     # Clean entity names
     entity_name = re.sub(r'\s*\(.*?\)\s*', '', entity_name).strip()
     original_name = re.sub(r'\s*\(.*?\)\s*', '', original_name).strip() if original_name else None
@@ -629,27 +587,17 @@ def _search_entity_with_fallback(entity_name, original_name, use_google_search):
     if list_qid:
         return entity_name, list_qid
     
-    # Fallback search strategies
-    if use_google_search:
-        search_results = search_google(entity_name) or search_google(original_name)
-        if search_results:
-            normalized_titles = norm_keyentity_wikidata_api(search_results)
-            if normalized_titles:
-                entity_name = normalized_titles[0]
-                for title in normalized_titles:
-                    list_qid.extend(search_sparql(title))
-    else:
-        # Use Wikidata API
-        api_results = search_wikidata_for_normalized_name(entity_name) or search_wikidata_for_normalized_name(original_name)
-        if api_results:
-            entity_name = api_results[0][0]  # Use first result's label
-            # Convert API results to expected format
-            for label, qid, description in api_results:
-                list_qid.append({
-                    "item": {"type": "uri", "value": f"http://www.wikidata.org/entity/{qid}"},
-                    "itemLabel": {"xml:lang": "en", "type": "literal", "value": label},
-                    "description": {"xml:lang": "en", "type": "literal", "value": description}
-                })
+    # Use Wikidata API
+    api_results = search_wikidata_for_normalized_name(entity_name) or search_wikidata_for_normalized_name(original_name)
+    if api_results:
+        entity_name = api_results[0][0]  # Use first result's label
+        # Convert API results to expected format
+        for label, qid, description in api_results:
+            list_qid.append({
+                "item": {"type": "uri", "value": f"http://www.wikidata.org/entity/{qid}"},
+                "itemLabel": {"xml:lang": "en", "type": "literal", "value": label},
+                "description": {"xml:lang": "en", "type": "literal", "value": description}
+            })
     
     return entity_name, list_qid
 
@@ -750,16 +698,16 @@ def _create_verify_entry(qid, property_id, answer):
     }]
 
 def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_entity, q_relation, c_relation, 
-                             retrieval_inf, last_retrieval_inf, use_google_search=False):
+                             retrieval_inf, last_retrieval_inf):
     """
     Integrated query function supporting bidirectional and unidirectional property queries.
     
     Query mode is determined by question type and property characteristics:
-    - "inference": Always uses bidirectional mode (dict_p_relation only)
-    - "compositional": Intelligently selects mode based on property type
+    - "inference": unidirectional or bidirectional mode
+    - "compositional": unidirectional mode
     
     Args:
-        type_q: Type of question ("inference" or "compositional")
+        type_q: Type of question ("inference" | "compositional")
         original_question: The original question text (for special case handling)
         q_key_entity: The main entity to query (hop 1)
         last_key_entity: The related entity for verification (hop 0, required for bidirectional)
@@ -773,7 +721,7 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
         dict_output with answer, source, and verification information
     """
     # Early validation
-    if q_key_entity.lower() == "insufficient information":
+    if q_key_entity.lower().strip() == "insufficient information":
         print(f"Insufficient information for q_key_entity {q_key_entity}")
         return _create_empty_result()
     
@@ -803,7 +751,7 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
 
     # Search for main entity (hop 1)
     key_entity, list_qid = _search_entity_with_fallback(
-        norm_key_entity(q_key_entity, retrieval_inf), q_key_entity, use_google_search
+        norm_key_entity(q_key_entity, retrieval_inf), q_key_entity
     )
     print("norm key_entity: ", key_entity)
     
@@ -811,7 +759,7 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
     norm_last_key_entity, list_qid_last_key = None, []
     if is_bidirectional and last_key_entity:
         norm_last_key_entity, list_qid_last_key = _search_entity_with_fallback(
-            norm_key_entity(last_key_entity, last_retrieval_inf), last_key_entity, use_google_search
+            norm_key_entity(last_key_entity, last_retrieval_inf), last_key_entity
         )
     elif is_bidirectional:
         print("Warning: Bidirectional mode requires last_key_entity, but it's missing")
