@@ -301,11 +301,12 @@ if __name__ == "__main__":
     configs = load_json(config_path)
     datasets = ["medhop", "bioasq", "cwq", "wiki"]
     batchs = ["b1", "b2", "b3", "b4"] # medhop chỉ có 2 batch (unconfused, confused)
-    runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12"]
+    runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12", "R13"]
     
     #edit config
-    run = runs[6]  #1: R4, 4: R7,  6: R11, 7: R12
-    threads = [0, 775] # Điền threads vào đây: ví dụ [0, 100]
+    query_hop2_with_wikidata = True #False
+    run = runs[8]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13
+    threads = [0, 0] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -394,7 +395,7 @@ if __name__ == "__main__":
     elif dataset == "wiki":   
         type_ = "inference" #"inference"
         settings['dataset'] = f"wiki_{type_}_"
-        raw_data_file = f"data/wiki/dev/dev_{type_}.json"
+        raw_data_file = f"data/wiki/test/test_{type_}.json"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"
         # list_ID = ["362fbfec0baf11ebab90acde48001122",
                 #    "5898d4e60bb011ebab90acde48001122",
@@ -415,7 +416,7 @@ if __name__ == "__main__":
             if not (threads[0] <= idx < threads[1]):
                 continue 
 
-            # skip_id = '80cf01340baf11ebab90acde48001122'
+            # skip_id = '0faaa99e0bdd11eba7f7acde48001122'
             # if ID != skip_id:
             #     continue
             
@@ -432,7 +433,7 @@ if __name__ == "__main__":
             if run == "R12":
                 preprocess_sample_R12(sample, settings, dataset=dataset, type_q=type_q)
             else:
-                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=True)
+                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=query_hop2_with_wikidata)
 
             # if ID == skip_id:
             #     break

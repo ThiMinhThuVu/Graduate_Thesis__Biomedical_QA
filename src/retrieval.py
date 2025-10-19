@@ -280,6 +280,17 @@ def perform_retrieval(sample, search_kw, step, paths, settings, R7_info=None):
             results_wiki_search = retrieval_wiki(search_kw, step, paths['wiki_search'])
             retrieval_information += format_search_results_wiki_abs(results_wiki_search, step, paths['paragraphs'], topk=1) + "\n\n"
         
+        if settings['get_crawl_wiki'] == "True":
+            crawl_wiki_context = crawl_wiki_page(
+                results_wiki_search, search_kw, settings['wiki_cache'],
+                paths['wiki_crawl'], paths['paragraphs'], step
+            )
+            retrieval_information += crawl_wiki_context
+        
+        if settings['get_abs_wiki'] == "True":
+            results_wiki_search = ... 
+            retrieval_information += results_wiki_search
+        
         if settings['get_gg'] == "True":
             results_gg_search = retrieval_google(search_kw, step, paths['gg_search'])            
             retrieval_information += format_search_results(results_gg_search, topk=1) + "\n\n"

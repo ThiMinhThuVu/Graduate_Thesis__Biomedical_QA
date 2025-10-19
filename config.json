@@ -266,6 +266,17 @@
             "context": "",
             "search_key_entity": "True",
             "get_context_2wiki": "True"
+        },
+        "R13": {
+            "dataset": "wiki_", 
+            "get_gg": "False",
+            "get_wiki": "False",
+            "get_crawl_wiki": "False",
+            "get_abs_wiki": "True",
+            "run": "R13",
+            "context": "",
+            "search_key_entity": "False",
+            "get_context_2wiki": "False"
         }
     }
 }
