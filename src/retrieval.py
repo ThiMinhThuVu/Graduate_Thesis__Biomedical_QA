@@ -266,7 +266,26 @@ def retrieval_context_2wiki(search_kw, sample, vec_embed=False, top_k=1, cos_thr
                 result += " ".join(selected_sents_text) + "\n\n"
                 
     return result.strip()
-   
+
+def retrieval_abstract_wiki(search_kw):
+    # if os.path.exists(filepath):
+    #     output = load_json(filepath)
+    #     step = str(step)
+    #     if step in output:
+    #         print(f"Cache hit for Google Search step {step}. Loading from file.")
+    #         return output[step]['search_results']
+    # else:
+    #     output = {}
+            
+    result = crawl_abstract_wiki(search_kw)
+    # output[step] = {
+    #     'search_kw': search_kw,
+    #     "search_results": result                
+    # }
+  
+    # save_json(output, filepath)        
+    return result
+
     
 def perform_retrieval(sample, search_kw, step, paths, settings, R7_info=None):
     """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""
@@ -288,8 +307,7 @@ def perform_retrieval(sample, search_kw, step, paths, settings, R7_info=None):
             retrieval_information += crawl_wiki_context
         
         if settings['get_abs_wiki'] == "True":
-            results_wiki_search = ... 
-            retrieval_information += results_wiki_search
+            retrieval_information = retrieval_abstract_wiki(search_kw)
         
         if settings['get_gg'] == "True":
             results_gg_search = retrieval_google(search_kw, step, paths['gg_search'])            

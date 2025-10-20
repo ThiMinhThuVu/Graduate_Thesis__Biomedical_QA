@@ -73,3 +73,7 @@ utils/norm_wikidata_pair_t.py
 utils/patch_inference.py
 data/wiki/dev/dev.json
 data/wiki/dev/gold_dev.json
+
+# Analyse dir
+analysis
+pred_test

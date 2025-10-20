@@ -5,8 +5,8 @@ import json
 run = 'R11'
 q_type = 'inference'
 
-wiki_result_directory = f'wiki_{q_type}_results/all_ans' #r"E:\Test_2wiki\test_wiki_result_v0\all_ans" # f'wiki_{q_type}_results/all_ans'
-pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
+wiki_result_directory = f'pred_test/17-10-2025/inference[0-1550]/wiki_{q_type}_results/all_ans'
+pred_path = f'pred_test/pred_{q_type}.json'
 os.makedirs(os.path.dirname(pred_path), exist_ok=True)
 
 def load_json(fname, mode="r", encoding="utf-8"):

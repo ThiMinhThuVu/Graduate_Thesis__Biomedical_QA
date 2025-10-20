@@ -1,8 +1,17 @@
 import requests
-import requests
+import re
+from urllib.parse import quote
 from bs4 import BeautifulSoup
 
-def get_wiki_abstract(url): 
+headers = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/110.0.0.0 Safari/537.36"
+    )
+}
+
+def get_wiki_abstract(url):
     """
     Lấy phần tóm tắt (abstract) của một bài viết từ Wikipedia tiếng Anh.
 
@@ -10,12 +19,12 @@ def get_wiki_abstract(url):
     trước khi đến mục lục hoặc tiêu đề chính đầu tiên (<h2>).
     """
     try:
-        response = requests.get(url, timeout=5)
+        response = requests.get(url, headers=headers, timeout=5)
         response.raise_for_status()
 
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        content_div = soup.find('div', class_='mw-parser-output')
+        content_div = soup.find("div", {"class": "mw-content-ltr mw-parser-output"})
         if not content_div:
             return None
 
@@ -25,49 +34,75 @@ def get_wiki_abstract(url):
                 break
             
             if element.name == 'p':
-                # Bỏ qua các đoạn trống hoặc chỉ chứa toạ độ (thường có class đặc biệt)
                 if 'geo-nondefault' in element.get('class', []):
                     continue
-                abstract_paragraphs.append(element.get_text(strip=True))
+                abstract_paragraphs.append(element.get_text(separator=" ", strip=True))
 
         if not abstract_paragraphs:
             print(url)
             print("❌ Lỗi: Không tìm thấy đoạn văn nào trong phần tóm tắt.")
             return None
 
-        return '\n\n'.join(abstract_paragraphs)
+        abstract_text = ' '.join(abstract_paragraphs)
+        # Loại bỏ các ký hiệu [1], [2], ...
+        abstract_text = re.sub(r'\[\s*[0-9a-zA-Z]+\s*\]', '', abstract_text)
+        # Xóa khoảng trắng thừa:
+        abstract_text = re.sub(r'\s{2,}', ' ', abstract_text).strip()
 
+        return abstract_text
+    
     except requests.exceptions.RequestException as req_err:
         return None
 
-def crawl_abstract_wiki(title, article_url, lang="en"):
-    # Chuẩn hóa tiêu đề để dùng cho URL
-    formatted_title = title.replace(' ', '_')
+def crawl_abstract_wiki(title, lang="en"):
+    formatted_title = quote(title)
+    print(formatted_title)
 
-    # 1. Thử dùng API chính thức 
-    api_url = f"https://{lang}.wikipedia.org/api/rest_v1/page/summary/{formatted_title}"
+    # API này lấy snippet
+    # api_url = f"https://{lang}.wikipedia.org/api/rest_v1/page/summary/{formatted_title}"
+    # try:
+    #     response = requests.get(api_url, headers=headers, timeout=30)
+    #     if response.status_code == 200:
+    #         data = response.json()
+    #         extract = data.get("extract")
+    #         if extract:
+    #             return extract
+    # except requests.exceptions.RequestException as e:
+    #     print(title)
+    #     print(article_url)
+    #     print(f"Lỗi khi gọi API: {e}. Chuyển sang phương pháp scraping...")
+
+    # Có thể lấy được abstract
+    api_url = f"https://{lang}.wikipedia.org/w/api.php"
+    params = {
+        "action": "query",
+        "prop": "extracts",
+        "exintro": True,      # chỉ phần mở đầu
+        "explaintext": True,  # chỉ text, không HTML
+        "titles": formatted_title,
+        "format": "json"
+    }
     try:
-        response = requests.get(api_url, timeout=30)
-        if response.status_code == 200:
+        response = requests.get(api_url, headers=headers, params=params)
+        if response == 200:
             data = response.json()
-            extract = data.get("extract")
-            if extract:
-                return extract
+            page = next(iter(data["query"]["pages"].values()))
+            return page.get("extract", "")       
+    
     except requests.exceptions.RequestException as e:
         print(title)
-        print(article_url)
         print(f"Lỗi khi gọi API: {e}. Chuyển sang phương pháp scraping...")
 
+    article_url = f"https://en.wikipedia.org/wiki/{formatted_title}"
     return get_wiki_abstract(article_url)
 
 if __name__ == "__main__":
-    link = "https://en.wikipedia.org/wiki/Move_(1970_film)"
-    title = "Move (1970 film)"
-    # abstract = get_wiki_abstract(link)
-    abstract = crawl_abstract_wiki(title, link, lang="en")
-    print("\n--- Tóm tắt cho:", link, "---\n")
-    print(abstract)
+    test_entities = ["director of film 'Ritoma'"]
 
-    print("\n" + "="*50 + "\n")
+    for title in test_entities:
+        print("\n" + "="*80)
+        print(f"🔹 {title}")
+        abstract = crawl_abstract_wiki(title)
+        print(f"➡️ Abstract:\n{abstract or '[Không có]'}")
 
    

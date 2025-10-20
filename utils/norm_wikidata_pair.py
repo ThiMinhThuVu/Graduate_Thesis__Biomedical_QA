@@ -790,6 +790,9 @@ def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_e
         print(f"Insufficient information for q_key_entity {q_key_entity}")
         return create_empty_result()
     
+    if retrieval_inf is None:
+        return create_empty_result()
+
     print(f"Querying Wikidata for entity '{q_key_entity}' with relation '{q_relation}' (type: {type_q})")
 
     # Get relation/property information

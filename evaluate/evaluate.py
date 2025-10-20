@@ -7,9 +7,9 @@ from collections import Counter
 run = 'R11'
 type_name = 'inference'
 
-pred_file = f'evaluate/run/{run}/pred_{type_name}.json'
-gold_file = f'evaluate/run/{run}/gold_{type_name}.json'
-question_scores_path = f'evaluate/run/{run}/question_scores_{type_name}.json'
+pred_file = f'pred_test/17-10-2025/pred_inf_uet_v4_norm_ans_oldid.json'
+gold_file = f'analysis/beam_uet/golden_beam_test_{type_name}.json'
+question_scores_path = f'pred_test/17-10-2025/question_scores_{type_name}_uet_v4_norm_ans_oldid.json'
 alias_file = 'data/wiki/id_aliases.json'
 
 def normalize_answer(s):

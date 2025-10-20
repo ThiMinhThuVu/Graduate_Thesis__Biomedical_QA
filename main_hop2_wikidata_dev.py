@@ -82,18 +82,20 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
         qi_number = f"/{q_i}"
         paths = setup_paths(settings, sample_id, qi_number)
         ans_filepath = paths['qi_answer']
-        dict_ans[q_i] = {"final_qi": {
-            "question": "",
-            "search_keyword": "",
-            "key_entity": "",
-            "short_answer": "",
-            "long_answer": "",
-            "retrieval_information": "",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
-            "normalized_v2": ""
-        }}
+        dict_ans[q_i] = {
+            "final_qi": {
+                "question": "",
+                "search_keyword": "",
+                "key_entity": "",
+                "short_answer": "",
+                "long_answer": "",
+                "retrieval_information": "",
+                "prefix": "",
+                "name": "",
+                "suffix": "",
+                "normalized_v2": ""
+            }
+        }
     
         path_subq_output, n_path = generate_subquestion(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
         
@@ -130,7 +132,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     else:
                         key_entities = search_kw_subq + " " + short_ans
                     
-                    retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)  
+                    retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)
 
                     if step == '0':
                         short_ans = qi_final_answers[path_i][step]["short_answer"]
@@ -192,7 +194,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                 
                     print(f"\n--- Processing Step {step}: {subquestion} ---")        
                     retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings) 
-                    
+                    # print(f'Retrieval info: {retrieval_information}')
+
                     if query_wikidata and step == '0':
                         answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
                         short_ans = answer_generation["short_answer"]
@@ -304,9 +307,9 @@ if __name__ == "__main__":
     runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12", "R13"]
     
     #edit config
-    query_hop2_with_wikidata = True #False
+    query_hop2_use_wikidata = True #False
     run = runs[8]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13
-    threads = [0, 0] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 5] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -389,26 +392,16 @@ if __name__ == "__main__":
                 is_seq = False
             if run == "R7":
                 preprocess_sample_R7(sample, settings, dataset=dataset)
-            else:
+            else:   
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        type_ = "inference" #"inference"
+        type_ = "compositional" #"inference"
         settings['dataset'] = f"wiki_{type_}_"
-        raw_data_file = f"data/wiki/test/test_{type_}.json"
+        raw_data_file = f"data/wiki/dev/dev_{type_}.json"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"
-        # list_ID = ["362fbfec0baf11ebab90acde48001122",
-                #    "5898d4e60bb011ebab90acde48001122",
-                #    "772cba800bb011ebab90acde48001122",
-                #    "1d03457e0bb011ebab90acde48001122",
-                #    "285939380bb011ebab90acde48001122",
-                #    "347300820bb011ebab90acde48001122",
-                #    "3705552a0bb011ebab90acde48001122",
-                #    "47431af40baf11ebab90acde48001122",
-                #    "54a7772a0bb011ebab90acde48001122",
-                #    "6b713cc60baf11ebab90acde48001122",
-                #    "6c80bc4e0bb011ebab90acde48001122",
-                #    "71a1099a0bb011ebab90acde48001122"
+        # list_ID = [   
+        #     "0faaa99e0bdd11eba7f7acde48001122"
         # ]
         raw_data = load_json(raw_data_file)
         
@@ -433,7 +426,7 @@ if __name__ == "__main__":
             if run == "R12":
                 preprocess_sample_R12(sample, settings, dataset=dataset, type_q=type_q)
             else:
-                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=query_hop2_with_wikidata)
+                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=query_hop2_use_wikidata)
 
             # if ID == skip_id:
             #     break
