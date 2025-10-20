@@ -64,7 +64,7 @@ important = True     # Chỉ dùng cho medhop
 
 ### Các dataset có sẵn
 
-1. **BioASQ** (`datasets[0]`): y sinh 
+1. **BioASQ** (`datasets[0]`): y sinh
 2. **MedHop** (`datasets[1]`): Multi-hop medical reasoning
 3. **CWQ** (`datasets[2]`): Complex Web Questions
 4. **Wiki** (`datasets[3]`): 2Wikimultihop
@@ -77,7 +77,7 @@ important = True     # Chỉ dùng cho medhop
 - **R6**: Wikipedia + Crawl Wikipedia (không Google)
 - **R10**: Không sử dụng external retrieval
 - **R11**: Key entity search + Context từ 2Wiki
-- **R12**: Key entity search + Context từ 2Wiki + Wikipedia 
+- **R12**: Key entity search + Context từ 2Wiki + Wikipedia
 
 ### Chạy chương trình
 
@@ -88,6 +88,7 @@ python main.py
 ### Chạy với các dataset cụ thể
 
 #### 1. MedHop Dataset
+
 ```python
 # Trong main.py
 dataset = datasets[1]  # medhop
@@ -97,6 +98,7 @@ threads = [0, 20]      # Xử lý 20 samples
 ```
 
 #### 2. BioASQ Dataset
+
 ```python
 # Trong main.py
 dataset = datasets[0]  # bioasq
@@ -105,6 +107,7 @@ threads = [0, 5]       # Xử lý 5 câu hỏi đầu tiên
 ```
 
 #### 3. CWQ Dataset
+
 ```python
 # Trong main.py
 dataset = datasets[2]  # cwq
@@ -113,6 +116,7 @@ threads = [0, 10]      # Xử lý 10 câu hỏi đầu tiên
 ```
 
 #### 4. Wiki Dataset
+
 ```python
 # Trong main.py
 dataset = datasets[3]  # wiki
@@ -125,6 +129,7 @@ threads = [0, 10]      # Xử lý 10 câu hỏi đầu tiên
 ### Output structure
 
 Kết quả được lưu trong các thư mục:
+
 - `wiki_preprocessing/`: Kết quả phân tách câu hỏi
 - `wiki_results/`: Kết quả cuối cùng
 - Cấu trúc: `{dataset}_{run}_step_{step}_{type}_{sample_id}.json`
@@ -141,7 +146,7 @@ File này chứa cấu hình cho từng dataset và run:
     "R11": {
       "dataset": "wiki_",
       "get_gg": "False",
-      "get_wiki": "False", 
+      "get_wiki": "False",
       "get_crawl_wiki": "False",
       "search_key_entity": "True",
       "get_context_2wiki": "True"
