@@ -276,8 +276,9 @@ def retrieval_abstract_wiki(search_kw):
     #         return output[step]['search_results']
     # else:
     #     output = {}
-            
-    result = crawl_abstract_wiki(search_kw)
+
+    abstract_text, page_title = crawl_abstract_wiki(search_kw)
+    result = f"{page_title}: {abstract_text}" 
     # output[step] = {
     #     'search_kw': search_kw,
     #     "search_results": result                

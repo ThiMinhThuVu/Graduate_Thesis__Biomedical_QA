@@ -23,6 +23,13 @@ def get_wiki_abstract(url):
         response.raise_for_status()
 
         soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Lấy tiêu đề trang (title trong <h1> hoặc <title>)
+        h1_tag = soup.find("h1")
+        if h1_tag:
+            page_title = h1_tag.get_text(strip=True)
+        else:
+            page_title = soup.title.string.strip() if soup.title else None
 
         content_div = soup.find("div", {"class": "mw-content-ltr mw-parser-output"})
         if not content_div:
@@ -49,10 +56,10 @@ def get_wiki_abstract(url):
         # Xóa khoảng trắng thừa:
         abstract_text = re.sub(r'\s{2,}', ' ', abstract_text).strip()
 
-        return abstract_text
+        return abstract_text, page_title
     
     except requests.exceptions.RequestException as req_err:
-        return None
+        return None, None
 
 def crawl_abstract_wiki(title, lang="en"):
     formatted_title = quote(title)
@@ -94,15 +101,18 @@ def crawl_abstract_wiki(title, lang="en"):
         print(f"Lỗi khi gọi API: {e}. Chuyển sang phương pháp scraping...")
 
     article_url = f"https://en.wikipedia.org/wiki/{formatted_title}"
-    return get_wiki_abstract(article_url)
+    abstract_text, page_title = get_wiki_abstract(article_url)
+    return abstract_text, page_title
 
 if __name__ == "__main__":
-    test_entities = ["director of film 'Ritoma'"]
+    test_entities = ["director of film 'Ritoma'",
+                     "Nurse Betty",
+                     "'Nurse Betty' publication date"]
 
     for title in test_entities:
         print("\n" + "="*80)
         print(f"🔹 {title}")
-        abstract = crawl_abstract_wiki(title)
+        abstract, page_title = crawl_abstract_wiki(title)
         print(f"➡️ Abstract:\n{abstract or '[Không có]'}")
-
+        print(f"➡️ Page Title: {page_title or '[Không có]'}")
    

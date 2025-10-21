@@ -196,42 +196,54 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings) 
                     # print(f'Retrieval info: {retrieval_information}')
 
-                    if query_wikidata and step == '0':
+                    if query_wikidata:
+                        if step == '0':
+                            answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
+                            short_ans = answer_generation["short_answer"]
+                            long_ans = answer_generation["long_answer"]
+                        
+                            if type_q == "inference" and dataset == "wiki":
+                                prefix_ans = answer_generation['prefix']
+                                name_ans = answer_generation['name']
+                                suffix_ans = answer_generation['suffix']
+                            
+                            if dataset == "wiki": 
+                                q_relation_child = search_kw_subq
+                                last_key_entity = key_entities
+                                last_retrieval_information = retrieval_information
+                                
+                        elif step == '1':
+                            if dataset == "wiki": 
+                                q_relation_parent = search_kw_subq
+                                answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)     
+                                normalized_v2 = answer_generation
+                            else:
+                                answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
+                            
+                            short_ans = answer_generation["short_answer"]
+                            long_ans = answer_generation["long_answer"]
+                        
+                            if type_q == "inference" and dataset == "wiki":
+                                prefix_ans = ""
+                                name_ans = ""
+                                suffix_ans = ""
+                    else:
+                        retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)  
+                    
                         answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
                         short_ans = answer_generation["short_answer"]
                         long_ans = answer_generation["long_answer"]
-                    
+                        
                         if type_q == "inference" and dataset == "wiki":
                             prefix_ans = answer_generation['prefix']
                             name_ans = answer_generation['name']
                             suffix_ans = answer_generation['suffix']
-                        
-                        if dataset == "wiki": 
-                            q_relation_child = search_kw_subq
-                            last_key_entity = key_entities
-                            last_retrieval_information = retrieval_information
-                            
-                    elif step == '1':
-                        if dataset == "wiki": 
-                            q_relation_parent = search_kw_subq
-                            answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)     
-                            normalized_v2 = answer_generation
-                        else:
-                            answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
-                           
-                        short_ans = answer_generation["short_answer"]
-                        long_ans = answer_generation["long_answer"]
-                    
-                        if type_q == "inference" and dataset == "wiki":
-                            prefix_ans = ""
-                            name_ans = ""
-                            suffix_ans = ""
-                            
-                    qi_final_answers[path_i][step] = answer_generation
+
+                        qi_final_answers[path_i][step] = answer_generation
                     
                     print(f"Short Answer for Step {step}: {short_ans}")
 
-                    dict_ans[q_i][path_i][step] = {}
+                    dict_ans[q_i][path_i][step] = {} 
                     dict_ans[q_i][path_i][step]["question"] = subquestion
                     dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq
                     dict_ans[q_i][path_i][step]["key_entity"] = key_entities
@@ -307,9 +319,9 @@ if __name__ == "__main__":
     runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12", "R13"]
     
     #edit config
-    query_hop2_use_wikidata = True #False
+    query_hop2_use_wikidata = False #True #False
     run = runs[8]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13
-    threads = [0, 5] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 2] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -396,7 +408,7 @@ if __name__ == "__main__":
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        type_ = "compositional" #"inference"
+        type_ = "compositional" #"compositional" #"inference"
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/dev/dev_{type_}.json"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"
