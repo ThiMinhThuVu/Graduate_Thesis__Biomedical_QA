@@ -2,6 +2,7 @@ from src.gpt_request import search_google
 from utils.crawl_wikipage import crawl_wikipedia_page
 from utils.abstract_wiki import crawl_abstract_wiki
 from utils.get_abs_wiki_history import get_abs_wiki_history
+from utils.crawl_sparql import find_sparql_context
 import json
 import os
 from utils.util import *
@@ -268,52 +269,39 @@ def retrieval_context_2wiki(search_kw, sample, vec_embed=False, top_k=1, cos_thr
     return result.strip()
 
 def retrieval_abstract_wiki(search_kw):
-    # if os.path.exists(filepath):
-    #     output = load_json(filepath)
-    #     step = str(step)
-    #     if step in output:
-    #         print(f"Cache hit for Google Search step {step}. Loading from file.")
-    #         return output[step]['search_results']
-    # else:
-    #     output = {}
-
     abstract_text, page_title = crawl_abstract_wiki(search_kw)
-    result = f"{page_title}: {abstract_text}" 
-    # output[step] = {
-    #     'search_kw': search_kw,
-    #     "search_results": result                
-    # }
-  
-    # save_json(output, filepath)        
+    result = f"{page_title}: {abstract_text}"  
     return result
 
-    
-def perform_retrieval(sample, search_kw, step, paths, settings, R7_info=None):
+def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_info=None):
     """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""
     retrieval_information = ""
     
     if 'wiki' in settings['dataset']: 
         if settings['get_context_2wiki'] == "True": 
-            retrieval_information = retrieval_context_2wiki(search_kw, sample)
+            retrieval_information = retrieval_context_2wiki(key_entity, sample)
 
         if settings['get_wiki'] == "True":
-            results_wiki_search = retrieval_wiki(search_kw, step, paths['wiki_search'])
+            results_wiki_search = retrieval_wiki(key_entity, step, paths['wiki_search'])
             retrieval_information += format_search_results_wiki_abs(results_wiki_search, step, paths['paragraphs'], topk=1) + "\n\n"
-        
+         
         if settings['get_crawl_wiki'] == "True":
             crawl_wiki_context = crawl_wiki_page(
-                results_wiki_search, search_kw, settings['wiki_cache'],
+                results_wiki_search, key_entity, settings['wiki_cache'],
                 paths['wiki_crawl'], paths['paragraphs'], step
             )
             retrieval_information += crawl_wiki_context
         
         if settings['get_abs_wiki'] == "True":
-            retrieval_information = retrieval_abstract_wiki(search_kw)
+            retrieval_information = retrieval_abstract_wiki(key_entity)
         
         if settings['get_gg'] == "True":
-            results_gg_search = retrieval_google(search_kw, step, paths['gg_search'])            
+            results_gg_search = retrieval_google(key_entity, step, paths['gg_search'])            
             retrieval_information += format_search_results(results_gg_search, topk=1) + "\n\n"
-            
+        
+        if settings["get_sparql_context"] == "True":
+            retrieval_information += find_sparql_context(key_entity, search_kw)
+
         return retrieval_information
     
     if 'bioasq' in settings['dataset']:

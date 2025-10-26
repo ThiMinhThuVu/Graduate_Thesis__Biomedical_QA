@@ -120,6 +120,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                 #     dict_ans[q_i][path_i]['0']['key_entity'] = subq_output['0']['key_entity']
                 #     continue
                 
+                short_ans = ""
+                long_ans = ""
                 for step, item in subq_output.items():
                     step = str(step)   
                     subquestion = item['subquestion']
@@ -132,7 +134,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     else:
                         key_entities = search_kw_subq + " " + short_ans
                     
-                    retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)
+                    retrieval_information = perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings)
 
                     if step == '0':
                         short_ans = qi_final_answers[path_i][step]["short_answer"]
@@ -149,6 +151,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                             long_ans = answer_generation["long_answer"]
                             qi_final_answers[path_i][step] = answer_generation
                         else:
+                            if step not in qi_final_answers[path_i]:
+                                continue
                             short_ans = qi_final_answers[path_i][step]["short_answer"]
                             long_ans = qi_final_answers[path_i][step]["long_answer"]
 
@@ -192,8 +196,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     else:
                         key_entities = search_kw_subq + " " + short_ans
                 
-                    print(f"\n--- Processing Step {step}: {subquestion} ---")        
-                    retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings) 
+                    print(f"\n--- Processing Step {step}: {subquestion} ---")
+                    retrieval_information = perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings)
                     # print(f'Retrieval info: {retrieval_information}')
 
                     if query_wikidata:
@@ -228,7 +232,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                                 name_ans = ""
                                 suffix_ans = ""
                     else:
-                        retrieval_information = perform_retrieval(sample, key_entities, step, paths, settings)  
+                        retrieval_information = perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings)
                     
                         answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
                         short_ans = answer_generation["short_answer"]
@@ -316,12 +320,12 @@ if __name__ == "__main__":
     configs = load_json(config_path)
     datasets = ["medhop", "bioasq", "cwq", "wiki"]
     batchs = ["b1", "b2", "b3", "b4"] # medhop chỉ có 2 batch (unconfused, confused)
-    runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12", "R13"]
+    runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12", "R13", "R14"]
     
     #edit config
     query_hop2_use_wikidata = False #True #False
-    run = runs[8]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13
-    threads = [0, 2] # Điền threads vào đây: ví dụ [0, 100]
+    run = runs[9]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13, 9: R14
+    threads = [0, 5] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -408,7 +412,7 @@ if __name__ == "__main__":
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        type_ = "compositional" #"compositional" #"inference"
+        type_ = "bridge_comparison" # bridge_comparison # comparison # compositional # inference
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/dev/dev_{type_}.json"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"

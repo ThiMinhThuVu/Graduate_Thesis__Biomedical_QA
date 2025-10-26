@@ -133,7 +133,7 @@ def create_relation_path_inference(entity, relation, sample_id):
                     "subquestion": sub0,
                     "search_keyword": s0,
                     "key_entity": entity
-                },
+                }, 
                 "1": {
                     "QIDX": sample_id,
                     "step_number": 1,

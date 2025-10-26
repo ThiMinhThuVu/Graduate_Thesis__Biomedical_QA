@@ -277,6 +277,18 @@
       "context": "",
       "search_key_entity": "True",
       "get_context_2wiki": "False"
+    },
+    "R14": {
+      "dataset": "wiki_",
+      "get_gg": "False",
+      "get_wiki": "False",
+      "get_crawl_wiki": "False",
+      "get_abs_wiki": "False",
+      "run": "R14",
+      "context": "",
+      "get_sparql_context": "True",
+      "search_key_entity": "True",
+      "get_context_2wiki": "False"
     }
   }
 }

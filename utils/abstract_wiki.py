@@ -105,9 +105,7 @@ def crawl_abstract_wiki(title, lang="en"):
     return abstract_text, page_title
 
 if __name__ == "__main__":
-    test_entities = ["director of film 'Ritoma'",
-                     "Nurse Betty",
-                     "'Nurse Betty' publication date"]
+    test_entities = ["Prince Henri, Duke of Aumale"]
 
     for title in test_entities:
         print("\n" + "="*80)
