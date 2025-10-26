@@ -33,7 +33,7 @@ def get_wiki_abstract(url):
 
         content_div = soup.find("div", {"class": "mw-content-ltr mw-parser-output"})
         if not content_div:
-            return None
+            return None, None
 
         abstract_paragraphs = []
         for element in content_div.children:
@@ -48,7 +48,7 @@ def get_wiki_abstract(url):
         if not abstract_paragraphs:
             print(url)
             print("❌ Lỗi: Không tìm thấy đoạn văn nào trong phần tóm tắt.")
-            return None
+            return None, None
 
         abstract_text = ' '.join(abstract_paragraphs)
         # Loại bỏ các ký hiệu [1], [2], ...
