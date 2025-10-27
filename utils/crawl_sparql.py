@@ -9,78 +9,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+from utils.util import *
 from src.retrieval import *
 model = SentenceTransformer("all-MiniLM-L6-v2")
-
-PROPERTY_MAPPINGS = {
-    "place of birth": "P19",
-    "birth": "P19",
-    "place of death": "P20",
-    "death": "P20",
-    "place of burial": "P119",
-    "burial": "P119",
-    "graduation": "P69",
-    "educated at": "P69",
-    "education": "P69",
-    "studied": "P69",
-    "country of origin": "P495",
-    "country of citizenship": "P27",
-    "country of nationality": "P27",
-    "nationality": "P27",
-    "country": "P17",
-    "occupation": "P106",
-    "work at": "P108",
-    "workplace": "P108",
-    "work place": "P108",
-    "work location": "P108",
-    "employer": "P108",
-    "field of work": "P101",
-    "spouse of": "P26",
-    "spouse": "P26",
-    "partner": "P26",
-    "married": "P26",
-    "child of": "P40",
-    "child": "P40",
-    "children": "P40",
-    "parent": "P22",
-    "mother": "P25",
-    "father": "P22",
-    "sibling": "P3373",
-    "award received": "P166",
-    "award": "P166",
-    "prize": "P166",
-    "position held": "P39",
-    "position": "P39",
-    "office": "P39",
-    "member of": "P463",
-    "member": "P463",
-    "affiliation": "P463",
-    "residence": "P551",
-    "located": "P276",
-    "location": "P276",
-    "headquarters location": "P159",
-    "headquarter": "P159",
-    "founded": "P571",
-    "inception": "P571",
-    "cast member": "P161",
-    "cast": "P161",
-    "genre": "P136",
-    "date of birth": "P569",
-    "date of death": "P570",
-    "date of foundation": "P571",
-    'place of study': "P69",
-    "study location": "P69",
-    "educated at": "P69",
-    "study": "P69",
-    "birthday": "P569",
-    "place of detention": "P2632",
-    "prison": "P2632",
-    "cause of death": "P509",
-    "founder of": "P112",
-    "director": "P57",
-    "publication date": "P577",
-    "producer": "P162",
-}
 
 headers = {
     "User-Agent": (
@@ -132,8 +63,8 @@ def normalize_text(text):
     text = re.sub(r'\s*\([^)]*\)\s*', '', text)
     return text.strip()
 
-def norm_key_entity(search_kw, lang="en", cos_threshold=0.4, fuzz_threshold=0.4):
-    api_url = f"https://{lang}.wikipedia.org/w/api.php"
+def norm_key_entity(search_kw, cos_threshold=0.7, fuzz_threshold=0.7):
+    api_url = "https://en.wikipedia.org/w/api.php"
 
     params = {
         "action": "query",
@@ -174,18 +105,18 @@ def norm_key_entity(search_kw, lang="en", cos_threshold=0.4, fuzz_threshold=0.4)
     if best["cosine"] < cos_threshold and best["fuzz"] < fuzz_threshold:
         return {"error": f"Không có entity nào đủ giống '{search_kw}'."}
     
-    print(f'Các entity: {entities} -> Chọn "{best["entity"]}" với điểm cosine {best["cosine"]:.4f} và fuzz {best["fuzz"]:.4f}')
+    print(f'Các entity: {entities} -> Chọn "{best["entity"]}"')
     return best["entity"]
 
 def extract_qid(url):
     return url.split("/")[-1]
 
-def find_all_qid(key_entity, lang="en"):
+def find_all_qid(key_entity):
     search_url = "https://www.wikidata.org/w/api.php"
     params = {
         "action": "wbsearchentities",
         "search": key_entity,
-        "language": lang,
+        "language": "en",
         "format": "json"
     }
     try:
@@ -204,16 +135,14 @@ def find_all_qid(key_entity, lang="en"):
     for item in search_data["search"]:
         qid = item.get("id")
         label = item.get("label", "")
-        description = item.get("description", "")
         qid_info.append({
             "qid": qid,
-            "label": label,
-            "description": description
+            "label": label
         })
 
     return qid_info
 
-def best_match_qid(qid_info, key_entity, lang="en"):
+def best_match_qid(qid_info, key_entity):
     # print(f"🔍 Các qid: {qid_info}")
     best_score = -1
     best_qid = None
@@ -222,7 +151,6 @@ def best_match_qid(qid_info, key_entity, lang="en"):
     for info in qid_info:
         qid = info["qid"]
         label = info["label"]
-        description = info["description"]
         scores = caculate_scores(label, key_entity)
 
         final_score = (scores["cosine"] + scores["fuzz"]) / 2
@@ -230,72 +158,70 @@ def best_match_qid(qid_info, key_entity, lang="en"):
             best_score = final_score
             best_qid = qid
 
-    print(f"✅ Chọn QID tốt nhất: {best_qid} với điểm số {best_score:.4f}")
+    print(f"✅ Chọn QID tốt nhất: {best_qid}")
     return best_qid
 
-def find_sparql_context(entity, search_kw, lang="en"):
-    key_entity = norm_key_entity(entity, lang=lang)
+def find_sparql_context(entity):
+    key_entity = norm_key_entity(entity)
     if not key_entity or isinstance(key_entity, dict) and "error" in key_entity:
         print(f"❌ Không chuẩn hóa được entity: {entity}")
         key_entity = entity
 
-    qids = find_all_qid(key_entity, lang=lang)
+    qids = find_all_qid(key_entity)
     if not qids:
         return ""
 
-    qid_value = best_match_qid(qids, key_entity, lang=lang)
+    qid_value = best_match_qid(qids, key_entity)
     if not qid_value.startswith("wd:"):
         qid_value = f"wd:{qid_value}"
     
     sparql_context = []
 
-    relation, relation_id = None, None
-    for rel_text, rel_id in PROPERTY_MAPPINGS.items():
-        if rel_text in search_kw.lower():
-            relation = rel_text
-            relation_id = rel_id
-            break
-    if not relation:
-        print(f"⚠️ Không tìm thấy mapping cho câu hỏi")
-        return ""
-
-    print(f"🔍 Tìm quan hệ '{relation}' với ID '{relation_id}' cho {key_entity}: {qid_value}")
     query = f"""
-    SELECT ?item ?itemLabel ?itemDescription WHERE {{
+    SELECT ?property ?propertyLabel ?valueLabel ?valueDescription
+    WHERE {{
         VALUES ?entity {{ {qid_value} }}
-        ?entity wdt:{relation_id} ?item .
-        SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang},en". }}
+
+        ?entity ?p ?statement .
+        ?property wikibase:claim ?p .
+
+        ?statement ?ps ?value .
+        ?property wikibase:statementProperty ?ps .
+
+        SERVICE wikibase:label {{ 
+            bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" .
+        }}
     }}
     """
 
     result = send_sparql_request(query)
+
+    for item in result:
+        property_label = item.get("propertyLabel", {}).get("value", "")
+        value_label = item.get("valueLabel", {}).get("value", "")
+        value_description = item.get("valueDescription", {}).get("value", "")
+        sparql_context.append(property_label + " " + value_label + ", description: " + value_description)
+
+    return sparql_context 
+
+def select_top_documents(key_entity, ranked_docs, max_tokens=300):
+    selected = []
+    total_tokens = 0
+
+    for item in ranked_docs:
+        text = item['text']
+        num_tokens = len(text.split())
+
+        if total_tokens + num_tokens > max_tokens:
+            break
+
+        selected.append(text)
+        total_tokens += num_tokens
     
-    for row in result:
-        item_uri = row["item"]["value"]
-        item_qid = extract_qid(item_uri)
-        title = row.get("itemLabel", {}).get("value", "")
-        desc = row.get("itemDescription", {}).get("value", "")
-
-        if desc == "":
-            continue
-
-        sparql_context.append({
-            "relation": relation,
-            "qid": item_qid,
-            "title": title,
-            "description": desc
-        })
-
-    # 5️⃣ Kiểm tra kết quả cuối
-    if not sparql_context:
-        print(f"⚠️ Không có kết quả SPARQL nào cho {key_entity}: {qid_value}")
-        return ""
-    else:
-        print(f"✅ Tìm thấy {len(sparql_context)} kết quả cho {key_entity}")
-        return key_entity + ": " + relation + " " + sparql_context[0]['title'] + ", " + sparql_context[0]['description']
+    return key_entity + ": " + "; ".join(selected)
 
 if __name__ == "__main__":
     # id = "ef32ebf40bdc11eba7f7acde48001122"
-    # result = find_sparql_context("George Dewhurst", "place of death George Dewhurst", "Where did that director die?", lang="en")
-    result = find_sparql_context("Bigas Luna", "place of death", "Where did that director die?")
-    print(result)
+    result = find_sparql_context("Bigas Luna")
+    ranked_docs = find_most_relevant_doc("place of death", result)
+    print(select_top_documents("Bigas Luna", ranked_docs))

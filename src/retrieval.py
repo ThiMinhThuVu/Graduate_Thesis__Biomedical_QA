@@ -2,7 +2,7 @@ from src.gpt_request import search_google
 from utils.crawl_wikipage import crawl_wikipedia_page
 from utils.abstract_wiki import crawl_abstract_wiki
 from utils.get_abs_wiki_history import get_abs_wiki_history
-from utils.crawl_sparql import find_sparql_context
+from utils.crawl_sparql import find_sparql_context, select_top_documents
 import json
 import os
 from utils.util import *
@@ -273,6 +273,14 @@ def retrieval_abstract_wiki(search_kw):
     result = f"{page_title}: {abstract_text}"  
     return result
 
+def retrieval_sparql(key_entity, search_kw):
+    list_context = find_sparql_context(key_entity)
+    ranked_docs = find_most_relevant_doc(search_kw, list_context)
+    selected_context = select_top_documents(key_entity, ranked_docs)
+
+    return selected_context
+    
+
 def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_info=None):
     """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""
     retrieval_information = ""
@@ -300,7 +308,7 @@ def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_i
             retrieval_information += format_search_results(results_gg_search, topk=1) + "\n\n"
         
         if settings["get_sparql_context"] == "True":
-            retrieval_information += find_sparql_context(key_entity, search_kw)
+            retrieval_information += retrieval_sparql(key_entity, search_kw)
 
         return retrieval_information
     
@@ -318,7 +326,7 @@ def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_i
             retrieval_information += format_search_results(results_wiki_search) + "\n\n"
             
             crawl_wiki_context = R7_crawl_wiki_page(
-                results_wiki_search, search_kw, settings['wiki_cache'],
+                results_wiki_search, key_entity, settings['wiki_cache'],
                 paths['wiki_crawl'], paths['paragraphs'], step
             )
             retrieval_information += crawl_wiki_context
@@ -328,16 +336,16 @@ def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_i
         return retrieval_information, status, results_gg_search ,results_wiki_search
             
     if settings['get_gg'] == "True":
-        results_gg_search = retrieval_google(search_kw, step, paths['gg_search'])            
+        results_gg_search = retrieval_google(key_entity, step, paths['gg_search'])            
         retrieval_information += format_search_results(results_gg_search, topk=5) + "\n\n"
         
     if settings['get_wiki'] == "True":
-        results_wiki_search = retrieval_wiki(search_kw, step, paths['wiki_search'])
+        results_wiki_search = retrieval_wiki(key_entity, step, paths['wiki_search'])
         retrieval_information += format_search_results(results_wiki_search, topk=5) + "\n\n"
         
         if settings['get_crawl_wiki'] == "True":
             crawl_wiki_context = crawl_wiki_page(
-                results_wiki_search, search_kw, settings['wiki_cache'],
+                results_wiki_search, key_entity, settings['wiki_cache'],
                 paths['wiki_crawl'], paths['paragraphs'], step
             )
             retrieval_information += crawl_wiki_context
