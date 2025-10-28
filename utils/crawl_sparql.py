@@ -22,7 +22,7 @@ headers = {
     )
 }
 
-def get_last_oldid_before_date(title: str, date: str = "2021-06-01"):
+def get_last_oldid_before_date(title: str, date: str = "2021-04-07"):
     """
     Lấy oldid cuối cùng trước ngày date (YYYY-MM-DD) của entity (title = Qxxx).
     """
@@ -50,12 +50,17 @@ def get_last_oldid_before_date(title: str, date: str = "2021-06-01"):
         revisions = page.get("revisions", [])
         if revisions:
             rev = revisions[0]
-            return rev["revid"], rev["timestamp"]
+            return rev["revid"]
 
-    return None, None
+    return None
 
 def get_properties_values(qid, dict_pid_date):
-    url = f"https://www.wikidata.org/wiki/{qid}"
+    oldid = get_last_oldid_before_date(qid)
+    if oldid:
+        print(f"Oldid cuối cùng: {oldid}")
+        url = f"https://www.wikidata.org/w/index.php?title={qid}&oldid={oldid}"
+    else:
+        url = f"https://www.wikidata.org/wiki/{qid}"
     headers = {"User-Agent": "Mozilla/5.0"}
     res = requests.get(url, headers=headers)
     soup = BeautifulSoup(res.text, "html.parser")
@@ -172,51 +177,6 @@ def norm_key_entity(entity_name, cos_threshold=0.5, fuzz_threshold=0.5):
     # print(f'Các entity: {entities} -> Chọn "{best["entity"]}"')
     return best["entity"]
 
-def dat_norm_key_entity(search_kw, cos_threshold=0.7, fuzz_threshold=0.7):
-    api_url = "https://en.wikipedia.org/w/api.php"
-
-    params = {
-        "action": "query",
-        "list": "search",
-        "srsearch": search_kw,
-        "format": "json"
-    }
-
-    try:
-        response = requests.get(api_url, headers=headers, params=params)
-        response.raise_for_status()
-        data = response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"Lỗi khi gọi API: {e}")
-        return None
-
-    search_results = data.get("query", {}).get("search", [])
-    if not search_results:
-        print(f"Không tìm thấy kết quả cho '{search_kw}'.")
-        return None
-
-    entities = [normalize_text(res["title"]) for res in search_results]
-
-    scored_entities = []
-    for ent in entities:
-        scores = caculate_scores(search_kw, ent)
-        avg_score = (scores["cosine"] + scores["fuzz"]) / 2
-        scored_entities.append({
-            "entity": ent,
-            "cosine": scores["cosine"],
-            "fuzz": scores["fuzz"],
-            "avg": avg_score
-        })
-
-    scored_entities.sort(key=lambda x: x["avg"], reverse=True)
-    best = scored_entities[0]
-
-    if best["cosine"] < cos_threshold and best["fuzz"] < fuzz_threshold:
-        return {"error": f"Không có entity nào đủ giống '{search_kw}'."}
-    
-    print(f'Các entity: {entities} -> Chọn "{best["entity"]}"')
-    return best["entity"]
-
 def extract_qid(url):
     return url.split("/")[-1]
 
@@ -282,6 +242,7 @@ def find_sparql_context(entity):
 
     qid_value = best_match_qid(qids, key_entity)
     best_qid = qid_value
+        
     if not qid_value.startswith("wd:"):
         qid_value = f"wd:{qid_value}"
     
@@ -311,36 +272,37 @@ def find_sparql_context(entity):
         property_label = item.get("propertyLabel", {}).get("value", "")
         value_label = item.get("valueLabel", {}).get("value", "")
         value_description = item.get("valueDescription", {}).get("value", "")
-        if 'date' in property_label.lower():
-            pid_property = item.get("property", {}).get("value", "").split("/")[-1]
-            dict_pid_date[pid_property] = {
-                'property_label': property_label,
-                'value_label': value_label,
-                'value_description': value_description
-            }
-        else:
-            if value_description == "":
-                triple = entity + " " + property_label + " " + value_label
-            else:
-                triple = entity + " " + property_label + " " + value_label + ", description: " + value_description
-            sparql_context.append(triple)
-
+        # Lấy pid từ sparql, lấy value từ html
+        # if 'date' in property_label.lower():
+        pid_property = item.get("property", {}).get("value", "").split("/")[-1]
+        dict_pid_date[pid_property] = {
+            'property_label': property_label,
+            'value_label': value_label,
+            'value_description': value_description
+        }
+        
+        # else:
+        #     if value_description == "":
+        #         triple = entity + " " + property_label + " " + value_label
+        #     else:
+        #         triple = entity + " " + property_label + " " + value_label + ", description: " + value_description
+        #     sparql_context.append(triple)
     
-    #norm date values
+    #norm values with wikidata api
     if dict_pid_date:
         # pids = list(dict_pid_date.keys())
         dict_pid_date = get_properties_values(best_qid, dict_pid_date)
-        print(dict_pid_date)
+
         for pid, item in dict_pid_date.items():
             if pid in dict_pid_date:
-                date_value = item['norm_values'][0] if item['norm_values'] else ""
-                if date_value:
+                norm_value = item['norm_values'][0] if item['norm_values'] else ""
+                if norm_value:
                     property_label = item['property_label']
                     value_description = item['value_description']
                     if value_description == "":
-                        triple = entity + " " + property_label + " " + date_value
+                        triple = entity + " " + property_label + " " + norm_value
                     else:
-                        triple = entity + " " + property_label + " " + date_value + ", description: " + value_description
+                        triple = entity + " " + property_label + " " + norm_value + ", description: " + value_description
                     sparql_context.append(triple)
                     
     return sparql_context 
@@ -388,11 +350,11 @@ def select_top_documents(key_entity, ranked_docs, max_tokens=300):
 
 if __name__ == "__main__":
     # id = "ef32ebf40bdc11eba7f7acde48001122"
-    entity = "Princess Rosemary of Salm-Salm" #"Emich, 5th Prince of Leiningen"
+    entity = "Archduke Hubert Salvator of Austria" #"Princess Rosemary of Salm-Salm" #"Emich, 5th Prince of Leiningen"
     result = find_sparql_context(entity)
-    ranked_docs = find_most_relevant_doc_embedding("Who was the husband of Princess Rosemary Of Salm-Salm?", result)
+    
+    # ranked_docs = find_most_relevant_doc_embedding("husband of Princess Rosemary of Salm-Salm", result)
+    # ranked_docs = find_most_relevant_doc("spouse, husband of Princess Rosemary of Salm-Salm", result)
+    
+    ranked_docs = find_most_relevant_doc("place of burial", result)
     print(select_top_documents(entity, ranked_docs))
-
-    # pids = ["P569", "P570", "P19"]  # date of birth, date of death, place of birth
-    # vals = get_properties_values("Q468785", pids)
-    # print(vals)

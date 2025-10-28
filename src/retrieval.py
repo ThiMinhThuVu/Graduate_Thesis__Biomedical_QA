@@ -275,8 +275,8 @@ def retrieval_abstract_wiki(search_kw):
 
 def retrieval_sparql(key_entity, search_kw):
     list_context = find_sparql_context(key_entity)
-    # ranked_docs = find_most_relevant_doc(search_kw, list_context)
-    ranked_docs = find_most_relevant_doc_embedding(search_kw, list_context)
+    ranked_docs = find_most_relevant_doc(search_kw, list_context)
+    # ranked_docs = find_most_relevant_doc_embedding(search_kw, list_context)
     selected_context = select_top_documents(key_entity, ranked_docs)
 
     return selected_context
