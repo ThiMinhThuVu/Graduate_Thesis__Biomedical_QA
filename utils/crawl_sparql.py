@@ -21,6 +21,34 @@ headers = {
     )
 }
 
+import requests
+from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup
+import requests
+
+def get_properties_values(qid, dict_pid_date):
+    url = f"https://www.wikidata.org/wiki/{qid}"
+    headers = {"User-Agent": "Mozilla/5.0"}
+    res = requests.get(url, headers=headers)
+    soup = BeautifulSoup(res.text, "html.parser")
+    
+    for pid, item in dict_pid_date.items():
+        group = soup.find("div", {"id": pid})
+        values = []
+        if not group:
+            item['norm_values'] = values
+            continue
+        
+        mainsnaks = group.find_all("div", class_="wikibase-statementview-mainsnak-container")
+        for snak in mainsnaks:
+            val_div = snak.find("div", class_="wikibase-snakview-value")
+            if val_div:
+                values.append(val_div.get_text(strip=True))
+        item['norm_values'] = values
+
+    return dict_pid_date
+
+
 def send_sparql_request(query, max_retries=5):
     endpoint_url = "https://query.wikidata.org/sparql"
     headers = {
@@ -172,6 +200,7 @@ def find_sparql_context(entity):
         return ""
 
     qid_value = best_match_qid(qids, key_entity)
+    best_qid = qid_value
     if not qid_value.startswith("wd:"):
         qid_value = f"wd:{qid_value}"
     
@@ -196,12 +225,43 @@ def find_sparql_context(entity):
 
     result = send_sparql_request(query)
 
+    dict_pid_date = {}
     for item in result:
         property_label = item.get("propertyLabel", {}).get("value", "")
         value_label = item.get("valueLabel", {}).get("value", "")
         value_description = item.get("valueDescription", {}).get("value", "")
-        sparql_context.append(property_label + " " + value_label + ", description: " + value_description)
+        if 'date' in property_label.lower():
+            pid_property = item.get("property", {}).get("value", "").split("/")[-1]
+            dict_pid_date[pid_property] = {
+                'property_label': property_label,
+                'value_label': value_label,
+                'value_description': value_description
+            }
+        else:
+            if value_description == "":
+                triple = entity + " " + property_label + " " + value_label
+            else:
+                triple = entity + " " + property_label + " " + value_label + ", description: " + value_description
+            sparql_context.append(triple)
 
+    
+    #norm date values
+    if dict_pid_date:
+        # pids = list(dict_pid_date.keys())
+        dict_pid_date = get_properties_values(best_qid, dict_pid_date)
+        print(dict_pid_date)
+        for pid, item in dict_pid_date.items():
+            if pid in dict_pid_date:
+                date_value = item['norm_values'][0] if item['norm_values'] else ""
+                if date_value:
+                    property_label = item['property_label']
+                    value_description = item['value_description']
+                    if value_description == "":
+                        triple = entity + " " + property_label + " " + date_value
+                    else:
+                        triple = entity + " " + property_label + " " + date_value + ", description: " + value_description
+                    sparql_context.append(triple)
+                    
     return sparql_context 
 
 def select_top_documents(key_entity, ranked_docs, max_tokens=300):
@@ -225,3 +285,7 @@ if __name__ == "__main__":
     result = find_sparql_context("Bigas Luna")
     ranked_docs = find_most_relevant_doc("place of death", result)
     print(select_top_documents("Bigas Luna", ranked_docs))
+    
+    # pids = ["P569", "P570", "P19"]  # date of birth, date of death, place of birth
+    # vals = get_properties_values("Q468785", pids)
+    # print(vals)
