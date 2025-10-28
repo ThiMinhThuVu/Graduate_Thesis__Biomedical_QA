@@ -325,7 +325,7 @@ if __name__ == "__main__":
     #edit config
     query_hop2_use_wikidata = False #True #False
     run = runs[9]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13, 9: R14
-    threads = [0, 5] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 20000] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -412,25 +412,23 @@ if __name__ == "__main__":
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        type_ = "inference" #"bridge_comparison" #"comparison" #"compositional" #"inference"
+        type_ = "compositional" #"bridge_comparison" #"comparison" #"compositional" #"inference"
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/dev/dev_{type_}.json"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"
-        # list_ID = [   
-        #     "0faaa99e0bdd11eba7f7acde48001122"
-        # ]
+        list_ID = [   
+            "dfe496880bdd11eba7f7acde48001122",
+            "0051fad20bde11eba7f7acde48001122",
+            "6ebdbede0bde11eba7f7acde48001122"
+        ]
         raw_data = load_json(raw_data_file)
         
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
             if not (threads[0] <= idx < threads[1]):
                 continue 
-
-            # skip_id = '0faaa99e0bdd11eba7f7acde48001122'
-            # if ID != skip_id:
-            #     continue
             
-            # if ID not in list_ID:
-            #     continue
+            if ID not in list_ID:
+                continue
 
             type_q = sample['type']
             is_seq = sample["is_sequence"]
@@ -443,6 +441,3 @@ if __name__ == "__main__":
                 preprocess_sample_R12(sample, settings, dataset=dataset, type_q=type_q)
             else:
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=query_hop2_use_wikidata)
-
-            # if ID == skip_id:
-            #     break

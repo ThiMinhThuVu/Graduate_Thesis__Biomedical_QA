@@ -3,6 +3,7 @@ import requests
 import time
 import sys
 import os
+from bs4 import BeautifulSoup
 from thefuzz import fuzz
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -21,10 +22,37 @@ headers = {
     )
 }
 
-import requests
-from bs4 import BeautifulSoup
-from bs4 import BeautifulSoup
-import requests
+def get_last_oldid_before_date(title: str, date: str = "2021-06-01"):
+    """
+    Lấy oldid cuối cùng trước ngày date (YYYY-MM-DD) của entity (title = Qxxx).
+    """
+    url = "https://www.wikidata.org/w/api.php"
+    params = {
+        "action": "query",
+        "prop": "revisions",
+        "titles": title,
+        "rvlimit": 1,
+        "rvprop": "ids|timestamp",
+        "rvdir": "older",   # lấy bản cũ hơn so với rvstart
+        "rvstart": date + "T00:00:00Z",
+        "format": "json"
+    }
+    headers = {
+        "User-Agent": "MinhThu/1.0 (https://22028116@vnu.edu.vn)"
+    }
+
+    res = requests.get(url, params=params, headers=headers)
+    res.raise_for_status()
+    data = res.json()
+
+    pages = data.get("query", {}).get("pages", {})
+    for _, page in pages.items():
+        revisions = page.get("revisions", [])
+        if revisions:
+            rev = revisions[0]
+            return rev["revid"], rev["timestamp"]
+
+    return None, None
 
 def get_properties_values(qid, dict_pid_date):
     url = f"https://www.wikidata.org/wiki/{qid}"
@@ -91,7 +119,60 @@ def normalize_text(text):
     text = re.sub(r'\s*\([^)]*\)\s*', '', text)
     return text.strip()
 
-def norm_key_entity(search_kw, cos_threshold=0.7, fuzz_threshold=0.7):
+def norm_key_entity(entity_name, cos_threshold=0.5, fuzz_threshold=0.5):
+    """
+    Chuẩn hóa tên entity bằng cách tìm trên Wikidata, tính điểm cosine/fuzzy và chọn entity tốt nhất.
+    """
+    url = "https://www.wikidata.org/w/api.php"
+    params = {
+        "action": "wbsearchentities",
+        "search": entity_name,
+        "language": "en",
+        "format": "json",
+        "limit": 10
+    }
+    headers = {"User-Agent": "Mozilla/5.0"}
+
+    response = requests.get(url, params=params, headers=headers, timeout=60)
+    data_entity = response.json().get("search", [])
+    if not data_entity:
+        print(f"Không tìm thấy entity nào cho '{entity_name}'.")
+        return {"error": f"Không tìm thấy entity nào cho '{entity_name}'."}
+    
+    # 2. Lấy label của từng QID (tên hiển thị)
+    headers = {"User-Agent": "Mozilla/5.0"}
+    entities = []
+    for item in data_entity:
+        qid = item["id"]
+        label = item["label"]
+        entities.append(label)
+    
+
+    if not entities:
+        return {"error": f"Không lấy được label của bất kỳ entity nào cho '{entity_name}'."}
+
+    # 3. Tính điểm cosine/fuzzy và chọn entity tốt nhất
+    scored_entities = []
+    for ent in entities:
+        scores = caculate_scores(entity_name, ent)
+        avg_score = (scores["cosine"] + scores["fuzz"]) / 2
+        scored_entities.append({
+            "entity": ent,
+            "cosine": scores["cosine"],
+            "fuzz": scores["fuzz"],
+            "avg": avg_score
+        })
+
+    scored_entities.sort(key=lambda x: x["avg"], reverse=True)
+    best = scored_entities[0]
+
+    if best["cosine"] < cos_threshold and best["fuzz"] < fuzz_threshold:
+        return {"error": f"Không tìm thấy entity nào cho '{entity_name}'."}
+    
+    # print(f'Các entity: {entities} -> Chọn "{best["entity"]}"')
+    return best["entity"]
+
+def dat_norm_key_entity(search_kw, cos_threshold=0.7, fuzz_threshold=0.7):
     api_url = "https://en.wikipedia.org/w/api.php"
 
     params = {
@@ -224,7 +305,7 @@ def find_sparql_context(entity):
     """
 
     result = send_sparql_request(query)
-
+    # print(result)
     dict_pid_date = {}
     for item in result:
         property_label = item.get("propertyLabel", {}).get("value", "")
@@ -264,6 +345,31 @@ def find_sparql_context(entity):
                     
     return sparql_context 
 
+def find_most_relevant_doc_embedding(input_text, documents):
+    """
+    Tìm document liên quan nhất với input_text dựa trên SentenceTransformer embeddings.
+    """
+    # Encode input_text và documents thành embedding vectors
+    all_texts = [input_text] + documents
+    embeddings = model.encode(all_texts, convert_to_tensor=False)  # numpy array
+
+    # Tính cosine similarity giữa input_text (vị trí 0) với documents
+    similarities = cosine_similarity([embeddings[0]], embeddings[1:]).flatten()
+
+    # Tạo danh sách các document với score
+    ranked_docs = []
+    for i, score in enumerate(similarities):
+        ranked_docs.append({
+            "index": i,
+            "score": float(score),
+            "text": documents[i]
+        })
+    
+    # Sắp xếp theo similarity giảm dần
+    ranked_docs = sorted(ranked_docs, key=lambda x: x["score"], reverse=True)
+
+    return ranked_docs
+
 def select_top_documents(key_entity, ranked_docs, max_tokens=300):
     selected = []
     total_tokens = 0
@@ -278,14 +384,15 @@ def select_top_documents(key_entity, ranked_docs, max_tokens=300):
         selected.append(text)
         total_tokens += num_tokens
     
-    return key_entity + ": " + "; ".join(selected)
+    return key_entity + ": " + "\n".join(selected)
 
 if __name__ == "__main__":
     # id = "ef32ebf40bdc11eba7f7acde48001122"
-    result = find_sparql_context("Bigas Luna")
-    ranked_docs = find_most_relevant_doc("place of death", result)
-    print(select_top_documents("Bigas Luna", ranked_docs))
-    
+    entity = "Princess Rosemary of Salm-Salm" #"Emich, 5th Prince of Leiningen"
+    result = find_sparql_context(entity)
+    ranked_docs = find_most_relevant_doc_embedding("Who was the husband of Princess Rosemary Of Salm-Salm?", result)
+    print(select_top_documents(entity, ranked_docs))
+
     # pids = ["P569", "P570", "P19"]  # date of birth, date of death, place of birth
     # vals = get_properties_values("Q468785", pids)
     # print(vals)
