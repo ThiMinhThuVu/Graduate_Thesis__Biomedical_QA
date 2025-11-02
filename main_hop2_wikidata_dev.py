@@ -325,7 +325,7 @@ if __name__ == "__main__":
     #edit config
     query_hop2_use_wikidata = False #True #False
     run = runs[9]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13, 9: R14
-    threads = [0, 20000] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [0, 350] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
@@ -412,7 +412,7 @@ if __name__ == "__main__":
                 preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
             
     elif dataset == "wiki":   
-        type_ = "compositional" #"bridge_comparison" #"comparison" #"compositional" #"inference"
+        type_ = "inference" #"bridge_comparison" #"comparison" #"compositional" #"inference"
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/dev/dev_{type_}.json"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"
@@ -428,8 +428,8 @@ if __name__ == "__main__":
             if not (threads[0] <= idx < threads[1]):
                 continue 
             
-            if ID not in list_ID:
-                continue
+            # if ID not in list_ID:
+            #     continue
 
             type_q = sample['type']
             is_seq = sample["is_sequence"]
