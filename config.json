@@ -288,7 +288,8 @@
       "context": "",
       "get_sparql_context": "True",
       "search_key_entity": "True",
-      "get_context_2wiki": "False"
+      "get_context_2wiki": "False",
+      "multiple_choice_per_hop": "True"
     }
   }
 }

@@ -419,7 +419,8 @@ if __name__ == "__main__":
         list_ID = [   
             "dfe496880bdd11eba7f7acde48001122",
             "0051fad20bde11eba7f7acde48001122",
-            "6ebdbede0bde11eba7f7acde48001122"
+            "6ebdbede0bde11eba7f7acde48001122",
+            "0189caf20bdd11eba7f7acde48001122"
         ]
         raw_data = load_json(raw_data_file)
         

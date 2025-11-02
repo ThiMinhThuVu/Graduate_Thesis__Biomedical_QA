@@ -8,8 +8,10 @@ from thefuzz import fuzz
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
+import torch
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+from sentence_transformers import SentenceTransformer
 from utils.util import *
 from src.retrieval import *
 model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -180,14 +182,22 @@ def norm_key_entity(entity_name, cos_threshold=0.5, fuzz_threshold=0.5):
 def extract_qid(url):
     return url.split("/")[-1]
 
-def find_all_qid(key_entity):
+def remove_parentheses(text):
+    cleaned = re.sub(r"\s*\([^)]*\)", "", text).strip()
+    return cleaned
+
+def find_all_qid(key_entity, limit=30):  # add description
+    key_entity = remove_parentheses(key_entity)
+    
     search_url = "https://www.wikidata.org/w/api.php"
     params = {
         "action": "wbsearchentities",
         "search": key_entity,
         "language": "en",
-        "format": "json"
+        "format": "json",
+        "limit": limit  
     }
+
     try:
         resp = requests.get(search_url, headers=headers, params=params)
         resp.raise_for_status()
@@ -204,13 +214,19 @@ def find_all_qid(key_entity):
     for item in search_data["search"]:
         qid = item.get("id")
         label = item.get("label", "")
+        description = item.get("description", "")
+        url = item.get("concepturi", "")  
+
         qid_info.append({
             "qid": qid,
-            "label": label
+            "label": label,
+            "description": description,
+            "url": url
         })
 
     return qid_info
 
+            
 def best_match_qid(qid_info, key_entity):
     # print(f"🔍 Các qid: {qid_info}")
     best_score = -1
@@ -350,11 +366,13 @@ def select_top_documents(key_entity, ranked_docs, max_tokens=300):
 
 if __name__ == "__main__":
     # id = "ef32ebf40bdc11eba7f7acde48001122"
-    entity = "Archduke Hubert Salvator of Austria" #"Princess Rosemary of Salm-Salm" #"Emich, 5th Prince of Leiningen"
-    result = find_sparql_context(entity)
+    # entity = "Archduke Hubert Salvator of Austria" #"Princess Rosemary of Salm-Salm" #"Emich, 5th Prince of Leiningen"
+    # result = find_sparql_context(entity)
     
-    # ranked_docs = find_most_relevant_doc_embedding("husband of Princess Rosemary of Salm-Salm", result)
-    # ranked_docs = find_most_relevant_doc("spouse, husband of Princess Rosemary of Salm-Salm", result)
+    # # ranked_docs = find_most_relevant_doc_embedding("husband of Princess Rosemary of Salm-Salm", result)
+    # # ranked_docs = find_most_relevant_doc("spouse, husband of Princess Rosemary of Salm-Salm", result)
     
-    ranked_docs = find_most_relevant_doc("place of burial", result)
-    print(select_top_documents(entity, ranked_docs))
+    # ranked_docs = find_most_relevant_doc("place of burial", result)
+    # print(select_top_documents(entity, ranked_docs))
+    q_relation = "father of Salm-Salm"
+    

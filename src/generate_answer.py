@@ -1,7 +1,5 @@
 from src.prompt import *
 from src.gpt_request import *
-from src.retrieval import norm_entity_with_keycontext
-from utils.util import load_json
 import json
 
 def generate_answer(question, key_entities, relevant_info, dataset=None, type_q=None, model="o3-mini"):    
@@ -98,7 +96,7 @@ def gen_ans_multiple_choice(question, context, dataset='medhop', model = "o3-min
         Context:
         {context}
         Please provide your short answer to the question based on the context above."""
-    if dataset in ['cwq', 'wiki']:
+    if dataset == 'wiki':
         messages = [
             {"role": "system", "content": "You are an expert in general knowledge. Your task is to provide accurate answers based on the provided information. Please only output the choice (without additional explanations)"},
             {"role": "user", "content": prompt}
@@ -113,49 +111,49 @@ def gen_ans_multiple_choice(question, context, dataset='medhop', model = "o3-min
     
     return result_json
 
-def gen_evidences(sample, data, type_q, model="gpt-4o-mini"):    
-    q_ids = sorted([k for k in data.keys() if k.isdigit()], key=int)
-    list_subquestion = []
-    dict_evidences = {}
-    cnt_evd = 0
+# def gen_evidences(sample, data, type_q, model="gpt-4o-mini"):    
+#     q_ids = sorted([k for k in data.keys() if k.isdigit()], key=int)
+#     list_subquestion = []
+#     dict_evidences = {}
+#     cnt_evd = 0
     
-    for q_id in q_ids:
-        q_id = str(q_id)
-        subdata = data[q_id]
-        last_path = str(len(subdata.keys()) - 2)
-        datapath = subdata[str(last_path)]
-        last_step = str(len(datapath.keys()) - 1)
+#     for q_id in q_ids:
+#         q_id = str(q_id)
+#         subdata = data[q_id]
+#         last_path = str(len(subdata.keys()) - 2)
+#         datapath = subdata[str(last_path)]
+#         last_step = str(len(datapath.keys()) - 1)
         
-        for step, subitem in datapath.items():
-            e1 = subitem['key_entity']
-            e2 = subitem['short_answer']
-            list_subquestion.append(subitem['question'])
-            e1 = norm_entity_with_keycontext(e1, sample)
-            if step != last_step:
-                e2 = norm_entity_with_keycontext(e2, sample)
+#         for step, subitem in datapath.items():
+#             e1 = subitem['key_entity']
+#             e2 = subitem['short_answer']
+#             list_subquestion.append(subitem['question'])
+#             e1 = norm_entity_with_keycontext(e1, sample)
+#             if step != last_step:
+#                 e2 = norm_entity_with_keycontext(e2, sample)
             
-            dict_evidences[str(cnt_evd)] = {
-                "e1": e1,
-                "e2": e2
-            }
-            cnt_evd += 1
+#             dict_evidences[str(cnt_evd)] = {
+#                 "e1": e1,
+#                 "e2": e2
+#             }
+#             cnt_evd += 1
 
-    messages = prompt_gen_relation(list_subquestion, type_q)
-    result_json = request_api(messages, model)
+#     messages = prompt_gen_relation(list_subquestion, type_q)
+#     result_json = request_api(messages, model)
     
-    start_idx = result_json.find("[")
-    end_idx = result_json.rfind("]") + 1
-    result_json = result_json[start_idx:end_idx]
+#     start_idx = result_json.find("[")
+#     end_idx = result_json.rfind("]") + 1
+#     result_json = result_json[start_idx:end_idx]
     
-    try:
-        relation_predict = json.loads(result_json)
-    except Exception as e:
-        print(f"Error parsing JSON response: {e}")
-        print(f"Raw response: {result_json}")
+#     try:
+#         relation_predict = json.loads(result_json)
+#     except Exception as e:
+#         print(f"Error parsing JSON response: {e}")
+#         print(f"Raw response: {result_json}")
     
-    list_evidences = []
-    for idx, item in dict_evidences.items():
-        rel = relation_predict[int(idx)]
-        list_evidences.append([item['e1'], rel, item['e2']])
+#     list_evidences = []
+#     for idx, item in dict_evidences.items():
+#         rel = relation_predict[int(idx)]
+#         list_evidences.append([item['e1'], rel, item['e2']])
 
-    return list_evidences
+#     return list_evidences

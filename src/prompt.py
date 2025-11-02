@@ -1356,8 +1356,8 @@ def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None)
 
             Response (strict JSON):
             {{
-            "long_answer": "lời giải thích chi tiết",
-            "short_answer": "câu trả lời theo quy tắc"
+            "long_answer": "Explain reasoning, clearly state if explicit or inferred, and cite which clues/documents were used.",
+            "short_answer": "The single most probable answer, formatted according to the output rules."
             }}
             """
     elif type_q == "inference":

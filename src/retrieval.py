@@ -2,7 +2,9 @@ from src.gpt_request import search_google
 from utils.crawl_wikipage import crawl_wikipedia_page
 from utils.abstract_wiki import crawl_abstract_wiki
 from utils.get_abs_wiki_history import get_abs_wiki_history
-from utils.crawl_sparql import find_sparql_context, select_top_documents, find_most_relevant_doc_embedding
+# from utils.crawl_sparql import find_sparql_context, select_top_documents, find_most_relevant_doc
+
+from utils.process_wikidata_api import process_fillter_wikidata_api
 import json
 import os
 from utils.util import *
@@ -273,14 +275,14 @@ def retrieval_abstract_wiki(search_kw):
     result = f"{page_title}: {abstract_text}"  
     return result
 
-def retrieval_sparql(key_entity, search_kw):
-    list_context = find_sparql_context(key_entity)
-    ranked_docs = find_most_relevant_doc(search_kw, list_context)
-    # ranked_docs = find_most_relevant_doc_embedding(search_kw, list_context)
-    selected_context = select_top_documents(key_entity, ranked_docs)
+# def retrieval_sparql(key_entity, search_kw):
+#     list_context = find_sparql_context(key_entity)
+#     ranked_docs = find_most_relevant_doc(search_kw, list_context)
+#     # ranked_docs = find_most_relevant_doc_embedding(search_kw, list_context)
+#     selected_context = select_top_documents(key_entity, ranked_docs)
 
-    return selected_context
-    
+#     return selected_context
+
 
 def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_info=None):
     """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""
@@ -309,7 +311,7 @@ def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_i
             retrieval_information += format_search_results(results_gg_search, topk=1) + "\n\n"
         
         if settings["get_sparql_context"] == "True":
-            retrieval_information += retrieval_sparql(key_entity, search_kw)
+            retrieval_information += process_fillter_wikidata_api(search_kw, key_entity)
 
         return retrieval_information
     
