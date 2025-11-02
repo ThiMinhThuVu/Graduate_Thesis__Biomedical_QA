@@ -311,7 +311,10 @@ def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_i
             retrieval_information += format_search_results(results_gg_search, topk=1) + "\n\n"
         
         if settings["get_sparql_context"] == "True":
-            retrieval_information += process_fillter_wikidata_api(search_kw, key_entity)
+            context = process_fillter_wikidata_api(search_kw, key_entity)
+            if context is None:
+                return ""
+            retrieval_information += context
 
         return retrieval_information
     
