@@ -119,6 +119,7 @@ def get_pid_value(qid, pid):
 
 def process_fillter_wikidata_api(q_relation, key_entity, limit=20):
     qid_info = find_all_qid(key_entity, limit)
+    print(qid_info)
     print(f"🔍 Found {len(qid_info)} QID for entity: {key_entity}")
     if not qid_info:
         print(f"No QID found for entity: {key_entity}")
@@ -156,7 +157,7 @@ from src.generate_answer import gen_ans_multiple_choice
 if __name__ == "__main__":
     question = "What is the place of birth of that performer?"
     q_relation = "place of birth"
-    key_entity = "Pandora"
+    key_entity = "When the Stars Go Blue"
     context = process_fillter_wikidata_api(q_relation, key_entity)
     
     print(f"QID: {context}")

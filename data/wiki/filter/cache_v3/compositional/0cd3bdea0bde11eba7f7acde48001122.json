@@ -1,0 +1,187 @@
+{
+    "A": "Wearing Velvet Slippers under a Golden Umbrella",
+    "A_id": "Q19364079",
+    "all_qid_A": [
+        "Q19364079"
+    ],
+    "topk_A": 1,
+    "R1": "director",
+    "R1_id": "P57",
+    "A_all_relation": [
+        "P31",
+        "P57",
+        "P345",
+        "P577",
+        "P495",
+        "P462",
+        "P646",
+        "P8411",
+        "P2704"
+    ],
+    "topk_A_R1": 2,
+    "B_hop1": "Wunna",
+    "B_hop2": "Wunna",
+    "B_id": "Q8039261",
+    "qid_ans_B": [
+        "Q8039261"
+    ],
+    "topk_A_R1_B": 1,
+    "all_qid_B_hop1": [
+        "Q55613105",
+        "Q2594962",
+        "Q13591670",
+        "Q8039261",
+        "Q95979380",
+        "Q96415607",
+        "Q114269382",
+        "Q15334026",
+        "Q34939896",
+        "Q99465928",
+        "Q339081",
+        "Q7946030",
+        "Q33104113",
+        "Q12645304",
+        "Q108628963",
+        "Q8039263",
+        "Q108647960",
+        "Q27696822",
+        "Q123658397",
+        "Q114269251"
+    ],
+    "all_qid_B_hop2": [
+        "Q55613105",
+        "Q2594962",
+        "Q13591670",
+        "Q8039261",
+        "Q95979380",
+        "Q96415607",
+        "Q114269382",
+        "Q15334026",
+        "Q34939896",
+        "Q99465928",
+        "Q339081",
+        "Q7946030",
+        "Q33104113",
+        "Q12645304",
+        "Q108628963",
+        "Q8039263",
+        "Q108647960",
+        "Q27696822",
+        "Q123658397",
+        "Q114269251"
+    ],
+    "topk_B": 4,
+    "R2": "award received",
+    "R2_id": "P166",
+    "B_all_relation": [
+        "P31",
+        "P19",
+        "P20",
+        "P166",
+        "P570",
+        "P21",
+        "P509",
+        "P106",
+        "P569",
+        "P27",
+        "P1196",
+        "P345",
+        "P2605",
+        "P3373",
+        "P214",
+        "P646",
+        "P3368",
+        "P227",
+        "P10832"
+    ],
+    "topk_B_R2": 4,
+    "C": "Myanmar Motion Picture Academy Awards",
+    "C_id": "Q11024975",
+    "qid_ans_C": [
+        "Q11024975"
+    ],
+    "topk_B_R2_C": 1,
+    "A_bindings": [
+        {
+            "property": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/prop/direct/P57"
+            },
+            "value": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/entity/Q8039261"
+            },
+            "propertyLabel": {
+                "type": "literal",
+                "value": "http://www.wikidata.org/prop/direct/P57"
+            },
+            "valueLabel": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "Wunna"
+            },
+            "valueDescription": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "Burmese film director (1945-2011)"
+            }
+        }
+    ],
+    "filtered_qid_A": [],
+    "topk_A_filter": "Insufficient",
+    "B_hop1_bindings": [
+        {
+            "property": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/prop/direct/P166"
+            },
+            "value": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/entity/Q11024975"
+            },
+            "propertyLabel": {
+                "type": "literal",
+                "value": "http://www.wikidata.org/prop/direct/P166"
+            },
+            "valueLabel": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "Myanmar Motion Picture Academy Awards"
+            },
+            "valueDescription": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "Annual cinematic award"
+            }
+        }
+    ],
+    "filtered_qid_B_hop1": [],
+    "B_hop2_bindings": [
+        {
+            "property": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/prop/direct/P166"
+            },
+            "value": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/entity/Q11024975"
+            },
+            "propertyLabel": {
+                "type": "literal",
+                "value": "http://www.wikidata.org/prop/direct/P166"
+            },
+            "valueLabel": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "Myanmar Motion Picture Academy Awards"
+            },
+            "valueDescription": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "Annual cinematic award"
+            }
+        }
+    ],
+    "filtered_qid_B_hop2": [],
+    "topk_B_filter": "Insufficient"
+}

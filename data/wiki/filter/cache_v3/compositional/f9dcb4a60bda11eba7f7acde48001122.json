@@ -1,0 +1,536 @@
+{
+    "A": "Ronnie Rocket",
+    "A_id": "Q7365970",
+    "all_qid_A": [
+        "Q7365970",
+        "Q20653209",
+        "Q2166030"
+    ],
+    "topk_A": 1,
+    "R1": "director",
+    "R1_id": "P57",
+    "A_all_relation": [
+        "P31",
+        "P57",
+        "P161",
+        "P364",
+        "P58",
+        "P1476",
+        "P495",
+        "P2671"
+    ],
+    "topk_A_R1": 2,
+    "B_hop1": "David Lynch",
+    "B_hop2": "David Lynch",
+    "B_id": "Q2071",
+    "qid_ans_B": [
+        "Q2071"
+    ],
+    "topk_A_R1_B": 1,
+    "all_qid_B_hop1": [
+        "Q2071",
+        "Q20863434",
+        "Q17102597",
+        "Q1175355",
+        "Q106827932",
+        "Q102887323",
+        "Q5236852",
+        "Q125662714",
+        "Q115804251",
+        "Q130948099",
+        "Q60618339",
+        "Q88676277",
+        "Q6622077",
+        "Q89215265",
+        "Q86167267",
+        "Q89896294",
+        "Q116148272",
+        "Q5236849",
+        "Q134066854",
+        "Q5229238"
+    ],
+    "all_qid_B_hop2": [
+        "Q2071",
+        "Q20863434",
+        "Q17102597",
+        "Q1175355",
+        "Q106827932",
+        "Q102887323",
+        "Q5236852",
+        "Q125662714",
+        "Q115804251",
+        "Q130948099",
+        "Q60618339",
+        "Q88676277",
+        "Q6622077",
+        "Q89215265",
+        "Q86167267",
+        "Q89896294",
+        "Q116148272",
+        "Q5236849",
+        "Q134066854",
+        "Q5229238"
+    ],
+    "topk_B": 1,
+    "R2": "place of birth",
+    "R2_id": "P19",
+    "B_all_relation": [
+        "P21",
+        "P373",
+        "P268",
+        "P227",
+        "P244",
+        "P349",
+        "P213",
+        "P106",
+        "P166",
+        "P27",
+        "P434",
+        "P345",
+        "P18",
+        "P569",
+        "P691",
+        "P31",
+        "P910",
+        "P856",
+        "P40",
+        "P646",
+        "P935",
+        "P451",
+        "P735",
+        "P650",
+        "P1284",
+        "P245",
+        "P1741",
+        "P1263",
+        "P1819",
+        "P1971",
+        "P1953",
+        "P1728",
+        "P2002",
+        "P2042",
+        "P734",
+        "P1266",
+        "P2019",
+        "P26",
+        "P69",
+        "P2168",
+        "P2435",
+        "P1411",
+        "P2174",
+        "P2387",
+        "P2605",
+        "P2639",
+        "P2626",
+        "P2604",
+        "P2519",
+        "P2013",
+        "P950",
+        "P39",
+        "P1417",
+        "P3305",
+        "P3430",
+        "P1477",
+        "P19",
+        "P136",
+        "P1343",
+        "P3417",
+        "P551",
+        "P3017",
+        "P2750",
+        "P4003",
+        "P2924",
+        "P3219",
+        "P5068",
+        "P3987",
+        "P5035",
+        "P4985",
+        "P1280",
+        "P3984",
+        "P2722",
+        "P5534",
+        "P1412",
+        "P3478",
+        "P5284",
+        "P214",
+        "P409",
+        "P1273",
+        "P906",
+        "P269",
+        "P1207",
+        "P1015",
+        "P949",
+        "P1006",
+        "P2163",
+        "P135",
+        "P3846",
+        "P3280",
+        "P5034",
+        "P1375",
+        "P3065",
+        "P1368",
+        "P4619",
+        "P271",
+        "P1315",
+        "P5361",
+        "P1580",
+        "P6002",
+        "P3222",
+        "P5882",
+        "P3283",
+        "P1258",
+        "P5905",
+        "P6262",
+        "P7119",
+        "P7084",
+        "P1296",
+        "P7214",
+        "P7029",
+        "P6849",
+        "P1559",
+        "P2688",
+        "P3056",
+        "P5587",
+        "P5019",
+        "P6844",
+        "P6903",
+        "P3630",
+        "P4663",
+        "P6275",
+        "P7704",
+        "P7902",
+        "P1005",
+        "P7369",
+        "P3788",
+        "P7293",
+        "P8189",
+        "P3348",
+        "P1695",
+        "P1890",
+        "P5739",
+        "P2600",
+        "P7699",
+        "P8179",
+        "P2638",
+        "P358",
+        "P4432",
+        "P1283",
+        "P7803",
+        "P7763",
+        "P6150",
+        "P3373",
+        "P6870",
+        "P9037",
+        "P8971",
+        "P8672",
+        "P4342",
+        "P5617",
+        "P7666",
+        "P6298",
+        "P8625",
+        "P5421",
+        "P9720",
+        "P7212",
+        "P9918",
+        "P6886",
+        "P9984",
+        "P9463",
+        "P10069",
+        "P10242",
+        "P7982",
+        "P8313",
+        "P9995",
+        "P10297",
+        "P1977",
+        "P7305",
+        "P3368",
+        "P109",
+        "P10553",
+        "P10372",
+        "P9670",
+        "P6379",
+        "P4666",
+        "P1424",
+        "P9965",
+        "P7341",
+        "P7445",
+        "P3204",
+        "P10266",
+        "P10780",
+        "P3569",
+        "P9251",
+        "P3114",
+        "P10302",
+        "P3980",
+        "P4438",
+        "P5340",
+        "P8687",
+        "P11496",
+        "P2607",
+        "P1902",
+        "P2850",
+        "P2397",
+        "P4576",
+        "P6276",
+        "P7277",
+        "P6972",
+        "P11686",
+        "P11683",
+        "P10565",
+        "P1617",
+        "P7003",
+        "P7286",
+        "P463",
+        "P6603",
+        "P9371",
+        "P5356",
+        "P12098",
+        "P10706",
+        "P12385",
+        "P11386",
+        "P12426",
+        "P12458",
+        "P12153",
+        "P10298",
+        "P2949",
+        "P12597",
+        "P10832",
+        "P2963",
+        "P12674",
+        "P12836",
+        "P9171",
+        "P2048",
+        "P13049",
+        "P800",
+        "P9707",
+        "P10608",
+        "P10883",
+        "P570",
+        "P1472",
+        "P535",
+        "P2032",
+        "P509",
+        "P1196",
+        "P2031",
+        "P2003",
+        "P8309",
+        "P9937",
+        "P6868",
+        "P9885",
+        "P2581",
+        "P6839",
+        "P8895",
+        "P1889",
+        "P20",
+        "P101",
+        "P2889",
+        "P22",
+        "P4789",
+        "P990",
+        "P25",
+        "P9964",
+        "P9662",
+        "P119",
+        "P5319",
+        "P396",
+        "P9493",
+        "P10387",
+        "P12854",
+        "P648",
+        "P13627",
+        "P2909",
+        "P13591",
+        "P7184",
+        "P6385",
+        "P13797",
+        "P5404",
+        "P7050",
+        "P3106"
+    ],
+    "topk_B_R2": 57,
+    "C": "Missoula, Montana",
+    "C_id": "Q189602",
+    "qid_ans_C": [
+        "Q189602"
+    ],
+    "topk_B_R2_C": 1,
+    "A_bindings": [
+        {
+            "property": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/prop/direct/P57"
+            },
+            "value": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/entity/Q2071"
+            },
+            "propertyLabel": {
+                "type": "literal",
+                "value": "http://www.wikidata.org/prop/direct/P57"
+            },
+            "valueLabel": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "David Lynch"
+            },
+            "valueDescription": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "American filmmaker, visual artist, musician, and actor (1946–2025)"
+            }
+        }
+    ],
+    "filtered_qid_A": [],
+    "topk_A_filter": "Insufficient",
+    "B_hop1_bindings": [
+        {
+            "property": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "value": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/entity/Q189602"
+            },
+            "propertyLabel": {
+                "type": "literal",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "valueLabel": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "Missoula"
+            },
+            "valueDescription": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "county seat of Missoula County, Montana, United States"
+            }
+        },
+        {
+            "property": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "value": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/entity/Q1012076"
+            },
+            "propertyLabel": {
+                "type": "literal",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "valueLabel": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "Richmond"
+            },
+            "valueDescription": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "suburb of Melbourne, Victoria, Australia"
+            }
+        },
+        {
+            "property": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "value": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/entity/Q38022"
+            },
+            "propertyLabel": {
+                "type": "literal",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "valueLabel": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "St. Louis"
+            },
+            "valueDescription": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "independent city in Missouri, United States"
+            }
+        }
+    ],
+    "filtered_qid_B_hop1": [],
+    "B_hop2_bindings": [
+        {
+            "property": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "value": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/entity/Q189602"
+            },
+            "propertyLabel": {
+                "type": "literal",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "valueLabel": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "Missoula"
+            },
+            "valueDescription": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "county seat of Missoula County, Montana, United States"
+            }
+        },
+        {
+            "property": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "value": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/entity/Q1012076"
+            },
+            "propertyLabel": {
+                "type": "literal",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "valueLabel": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "Richmond"
+            },
+            "valueDescription": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "suburb of Melbourne, Victoria, Australia"
+            }
+        },
+        {
+            "property": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "value": {
+                "type": "uri",
+                "value": "http://www.wikidata.org/entity/Q38022"
+            },
+            "propertyLabel": {
+                "type": "literal",
+                "value": "http://www.wikidata.org/prop/direct/P19"
+            },
+            "valueLabel": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "St. Louis"
+            },
+            "valueDescription": {
+                "xml:lang": "en",
+                "type": "literal",
+                "value": "independent city in Missouri, United States"
+            }
+        }
+    ],
+    "filtered_qid_B_hop2": [],
+    "topk_B_filter": "Insufficient"
+}
