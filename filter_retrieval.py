@@ -204,12 +204,26 @@ def filter_qids_by_properties(qids: List[str], property_ids: List[str], batch_si
         
         qid_values = " ".join([f"wd:{qid}" for qid in batch])
 
+        # query = f"""
+        # SELECT ?property ?propertyLabel ?value ?valueLabel ?valueDescription
+        # WHERE {{
+        #     VALUES ?entity {{ {qid_values} }}
+        #     VALUES ?property {{ {prop_values} }}
+            
+        #     ?entity ?property ?value .
+            
+        #     SERVICE wikibase:label {{
+        #         bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" .
+        #     }}
+        # }}
+        # """
         query = f"""
-        SELECT ?property ?propertyLabel ?value ?valueLabel ?valueDescription
+        SELECT ?qid ?property ?propertyLabel ?value ?valueLabel ?valueDescription
         WHERE {{
             VALUES ?entity {{ {qid_values} }}
             VALUES ?property {{ {prop_values} }}
             
+            BIND(?entity AS ?qid)
             ?entity ?property ?value .
             
             SERVICE wikibase:label {{
@@ -233,7 +247,7 @@ def filter_qids_by_properties(qids: List[str], property_ids: List[str], batch_si
                 bindings = data.get('results', {}).get('bindings', [])
                 for binding in bindings:
                     try:
-                        qid = binding['property']['value'].split('/')[-1]
+                        qid = binding['qid']['value'].split('/')[-1]
                         p_value = binding['valueLabel']['value']
                         if p_value != "" or p_value is not None:
                             filtered_qids.append(qid)
@@ -298,7 +312,7 @@ if __name__ == "__main__":
     cache_path = f"data/wiki/{'filter' if is_filter else 'unfilter'}/cache_{version}"
     os.makedirs(cache_path, exist_ok=True)
 
-    threads = [0, 775]
+    threads = [400, 775]
     # dev_compositional có 5236 câu
     # dev_inference có 1549 câu
 
