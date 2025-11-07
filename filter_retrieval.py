@@ -292,13 +292,13 @@ def top_in_list(qid, entities_id):
 if __name__ == "__main__":
     qtypes = ['compositional', 'inference']
     is_filter = True
-    qtype = qtypes[0]
-    version = 'v3'
+    qtype = qtypes[1]
+    version = 'inference'
     file_path = f"data/wiki/dev/dev_{qtype}.json"
     cache_path = f"data/wiki/{'filter' if is_filter else 'unfilter'}/cache_{version}"
     os.makedirs(cache_path, exist_ok=True)
 
-    threads = [0, 5]
+    threads = [0, 775]
     # dev_compositional có 5236 câu
     # dev_inference có 1549 câu
 
