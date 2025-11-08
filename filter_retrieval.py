@@ -312,7 +312,7 @@ if __name__ == "__main__":
     cache_path = f"data/wiki/{'filter' if is_filter else 'unfilter'}/cache_{version}"
     os.makedirs(cache_path, exist_ok=True)
 
-    threads = [400, 775]
+    threads = [150, 300]
     # dev_compositional có 5236 câu
     # dev_inference có 1549 câu
 

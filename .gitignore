@@ -48,6 +48,7 @@ evaluate/run
 *.pkl
 *.cache
 
+data/wiki/dev/convert.py
 # Python cache
 __pycache__/
 *.py[cod]

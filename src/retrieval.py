@@ -3,7 +3,7 @@ from utils.crawl_wikipage import crawl_wikipedia_page
 from utils.abstract_wiki import crawl_abstract_wiki
 from utils.get_abs_wiki_history import get_abs_wiki_history
 # from utils.crawl_sparql import find_sparql_context, select_top_documents, find_most_relevant_doc
-
+from utils.util import load_pickle, save_pickle
 from utils.process_wikidata_api import process_fillter_wikidata_api
 import json
 import os
@@ -284,7 +284,7 @@ def retrieval_abstract_wiki(search_kw):
 #     return selected_context
 
 
-def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_info=None):
+def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_info=None, sparql_cache="data/wiki/sparql_cache.pkl"):
     """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""
     retrieval_information = ""
     
@@ -311,7 +311,17 @@ def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_i
             retrieval_information += format_search_results(results_gg_search, topk=1) + "\n\n"
         
         if settings["get_sparql_context"] == "True":
-            context = process_fillter_wikidata_api(search_kw, key_entity)
+            context, dict_result = process_fillter_wikidata_api(search_kw, key_entity)
+            
+            if sparql_cache:
+                QIDX = sample['QIDX']
+                sparql_cache_data = load_pickle(sparql_cache)
+                if QIDX in sparql_cache_data:
+                    sparql_cache_data[QIDX].append(dict_result)
+                else:
+                    sparql_cache_data[QIDX] = [dict_result]
+                save_pickle(sparql_cache_data, sparql_cache)
+            
             if context is None:
                 return ""
             retrieval_information += context

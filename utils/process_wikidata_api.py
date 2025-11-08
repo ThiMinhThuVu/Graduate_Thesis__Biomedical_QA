@@ -27,9 +27,18 @@ headers = {
 def match_relation_id(q_relation):
     search_normalized = q_relation.lower().strip()
     
+    if any(keyword in search_normalized for keyword in ['work', 'occupation', 'employer']):
+        print(f"  Detected work question, using work heuristic")
+        return ['P108', 'P101', 'P106'], ['work at or employer', 'field of work', 'occupation']  # employer, field of work, occupation
+    
+    if any(keyword in search_normalized for keyword in ['nationality', 'country', 'citizenship']):
+        print(f"  Detected nationality question, using nationality heuristic")
+        return ['P27', 'P495', 'P17'], ['country of citizenship or nationality', 'country of origin', 'country']  # citizenship, country of origin, country
+
+    
     # Exact match
     if search_normalized in PROPERTY_MAPPINGS:
-        return PROPERTY_MAPPINGS[search_normalized], search_normalized
+        return [PROPERTY_MAPPINGS[search_normalized]], [search_normalized]
 
     # Semantic similarity
     keys = list(PROPERTY_MAPPINGS.keys())
@@ -42,7 +51,9 @@ def match_relation_id(q_relation):
     best_score = cos_sim[best_idx].item()
     
     print(f"Best match for '{q_relation}' → '{best_key}' (score={best_score:.3f})")
-    return PROPERTY_MAPPINGS[best_key], best_key
+    
+    return [PROPERTY_MAPPINGS[best_key]], [best_key]
+    
 
 def get_best_match_qid(qid_info, key_entity_relation, topk=20):
     scored_qids = []
@@ -125,33 +136,43 @@ def process_fillter_wikidata_api(q_relation, key_entity, limit=20):
         print(f"No QID found for entity: {key_entity}")
         return None
 
-    relation_id, relation_value = match_relation_id(q_relation)
-    print(f"🔍 Relation ID: {relation_id}")
-
-    result = request_sparql(relation_id, qid_info)
-    print(f"🔍 Found {len(result)} results")
+    list_relation_id, list_relation_value = match_relation_id(q_relation) # trả về [], []
     dict_result = {}
     all_context = ""
-    for idx, item in enumerate(result):
-        id = item['item']['value'].split('/')[-1]
-        label = item['itemLabel']['value'] 
-        description = item.get('itemDescription', {}).get('value', '')
-        prop_value = item['propertyValue']['value'].split('/')[-1]
-        prop_value_label = item.get('propertyValueLabel', {}).get('value', '')
-
-        prop_value_label_history = get_pid_value(id, relation_id)
-
-        dict_result[id] = {
-            "label": label,
-            "description": description,
-            "property_value": prop_value,
-            "property_value_label": prop_value_label,
-            "prop_value_label_history": prop_value_label_history
-        }
+    
+    for relation_id, relation_value in zip(list_relation_id, list_relation_value):
+        result = request_sparql(relation_id, qid_info)
+        print(f"🔍 Found {len(result)} results")
         
-        select = chr(idx + 65)
-        all_context += f"{select}. {label} (description: {description}) - {relation_value}: {prop_value_label_history} (source: {prop_value})\n"
-    return all_context
+        for idx, item in enumerate(result):
+            id = item['item']['value'].split('/')[-1]
+            label = item['itemLabel']['value'] 
+            description = item.get('itemDescription', {}).get('value', '')
+            prop_value = item['propertyValue']['value'].split('/')[-1]
+            prop_value_label = item.get('propertyValueLabel', {}).get('value', '')
+
+            prop_value_label_history = get_pid_value(id, relation_id)
+            
+            if id in dict_result:
+                dict_result[id].append({
+                    "label": label,
+                    "description": description,
+                    "property_value": prop_value,
+                    "property_value_label": prop_value_label,
+                    "prop_value_label_history": prop_value_label_history
+                })
+            else:
+                dict_result[id] = [{
+                    "label": label,
+                    "description": description,
+                    "property_value": prop_value,
+                    "property_value_label": prop_value_label,
+                    "prop_value_label_history": prop_value_label_history
+                }]
+            
+            select = chr(idx + 65)
+            all_context += f"{select}. {label} (description: {description}) - {relation_value}: {prop_value_label_history} (source: {prop_value})\n"
+    return all_context, dict_result
 
 from src.generate_answer import gen_ans_multiple_choice
 if __name__ == "__main__":

@@ -11,6 +11,7 @@ import requests
 import matplotlib.pyplot as plt
 from collections import Counter
 from utils.crawl_wikipage import crawl_wikipedia_page
+import pickle
 
 move_section_list = [
     "table of contents",
@@ -25,6 +26,19 @@ move_section_list = [
     "category:", 
     "categories",    
 ]
+
+def load_pickle(file_path):
+    if not os.path.exists(file_path):
+        return {}
+    
+    with open(file_path, "rb") as f:
+        sparql_cache = pickle.load(f)
+        
+    return sparql_cache
+
+def save_pickle(data, file_path):
+    with open(file_path, "wb") as f:
+        pickle.dump(data, f)
 
 def extract_all_context(search_context_old):
     """
