@@ -131,10 +131,9 @@ def get_pid_value(qid, pid):
 def process_fillter_wikidata_api(q_relation, key_entity, limit=20, filter_topk=5):
     qid_info = find_all_qid(key_entity, limit)
     print(qid_info)
-    print(f"🔍 Found {len(qid_info)} QID for entity: {key_entity}")
     if not qid_info:
         print(f"No QID found for entity: {key_entity}")
-        return None
+        return None, None
 
     list_relation_id, list_relation_value = match_relation_id(q_relation) # trả về [], []
     dict_result = {}
