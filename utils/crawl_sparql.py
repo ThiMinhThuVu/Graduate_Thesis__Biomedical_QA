@@ -183,8 +183,28 @@ def extract_qid(url):
     return url.split("/")[-1]
 
 def remove_parentheses(text):
-    cleaned = re.sub(r"\s*\([^)]*\)", "", text).strip()
-    return cleaned
+    # cleaned = re.sub(r"\s*\([^)]*\)", "", text).strip()
+    # return cleaned
+    
+    # 1. Xóa nội dung trong dấu ngoặc đơn () VÀ chính dấu ngoặc đơn đó.
+    #    Regex: r'\s*\([^)]*\)' tìm kiếm () và nội dung bên trong, bao gồm cả khoảng trắng trước đó.
+    cleaned_parentheses = re.sub(r'\s*\([^)]*\)', '', text)
+    
+    # 2. Xóa các ký tự đặc biệt khác: ", \, *, / (Lưu ý: giữ lại dấu phẩy ,)
+    #    Lớp ký tự: [\"\\*/]
+    #    Thay thế các ký tự này bằng MỘT KHOẢNG TRẮNG để tránh gộp từ.
+    cleaned_chars = re.sub(r'["\\*/]', ' ', cleaned_parentheses)
+    
+    # 3. Xử lý trường hợp chỉ có dấu mở ngoặc đơn '(' (và các ký tự sau đó)
+    #    Tìm dấu '(' và xóa toàn bộ phần còn lại của chuỗi.
+    if '(' in cleaned_chars:
+        cleaned_chars = cleaned_chars.split('(')[0]
+    
+    # 4. Chuẩn hóa khoảng trắng: thay thế nhiều khoảng trắng thành một và xóa khoảng trắng ở đầu/cuối.
+    #    Bước này khắc phục vấn đề "EricViking" bị gộp.
+    final_cleaned = re.sub(r'\s+', ' ', cleaned_chars).strip()
+    
+    return final_cleaned
 
 def find_all_qid(key_entity, limit=30):  # add description
     key_entity = remove_parentheses(key_entity)
@@ -375,4 +395,12 @@ if __name__ == "__main__":
     # ranked_docs = find_most_relevant_doc("place of burial", result)
     # print(select_top_documents(entity, ranked_docs))
     q_relation = "father of Salm-Salm"
+    entity_names = [
+    'Eric Longlegs, Lord of Langeland',
+    '\"Greatest Love',
+    'Eric (The Great)/Viking',
+    'Item with (missing close'
+]
+    for item in entity_names:
+        print(remove_parentheses(item))
     

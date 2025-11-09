@@ -111,7 +111,7 @@ def dump_json(data, file_path):
         json.dump(data, f, ensure_ascii=False, indent=4)
  
 # Từ entity, query để thu về list các qid
-def find_all_entity(entity_name, k=20):
+def find_all_entity(entity_name, k=40):
     url = "https://www.wikidata.org/w/api.php"
     params = {
         "action": "wbsearchentities",
@@ -306,15 +306,30 @@ def top_in_list(qid, entities_id):
 if __name__ == "__main__":
     qtypes = ['compositional', 'inference']
     is_filter = True
-    qtype = qtypes[1]
-    version = 'inference'
+    qtype = qtypes[0]
+    version = 'compositional'
     file_path = f"data/wiki/dev/dev_{qtype}.json"
     cache_path = f"data/wiki/{'filter' if is_filter else 'unfilter'}/cache_{version}"
     os.makedirs(cache_path, exist_ok=True)
 
-    threads = [150, 300]
+    threads = [0, 5236]
     # dev_compositional có 5236 câu
     # dev_inference có 1549 câu
+    
+    list_ID = [
+    "05be9a0c0bde11eba7f7acde48001122",
+    "20a713da0bde11eba7f7acde48001122",
+    "20b818ba0bde11eba7f7acde48001122",
+    "292b6e2e0bda11eba7f7acde48001122",
+    "2982f22c0bdd11eba7f7acde48001122",
+    "343506fc0bdc11eba7f7acde48001122",
+    "35ecba540bdb11eba7f7acde48001122",
+    "3e6de09c0bd911eba7f7acde48001122",
+    "43828fba0bde11eba7f7acde48001122",
+    "4b1b91720bde11eba7f7acde48001122",
+    "5854d5380bd911eba7f7acde48001122",
+  
+]
 
     data = load_json(file_path)
 
@@ -325,6 +340,9 @@ if __name__ == "__main__":
 
         id = query['_id']
         qtype = query['type']
+        
+        if id not in list_ID:
+            continue
 
         cache_type = os.path.join(cache_path, f'{qtype}')
         os.makedirs(cache_type, exist_ok=True)

@@ -128,7 +128,7 @@ def get_pid_value(qid, pid):
             
     return values
 
-def process_fillter_wikidata_api(q_relation, key_entity, limit=20):
+def process_fillter_wikidata_api(q_relation, key_entity, limit=20, filter_topk=5):
     qid_info = find_all_qid(key_entity, limit)
     print(qid_info)
     print(f"🔍 Found {len(qid_info)} QID for entity: {key_entity}")
@@ -140,7 +140,7 @@ def process_fillter_wikidata_api(q_relation, key_entity, limit=20):
     dict_result = {}
     all_context = ""
     
-    for relation_id, relation_value in zip(list_relation_id, list_relation_value):
+    for relation_id, relation_value in zip(list_relation_id[:filter_topk], list_relation_value[:filter_topk]):
         result = request_sparql(relation_id, qid_info)
         print(f"🔍 Found {len(result)} results")
         
@@ -172,6 +172,7 @@ def process_fillter_wikidata_api(q_relation, key_entity, limit=20):
             
             select = chr(idx + 65)
             all_context += f"{select}. {label} (description: {description}) - {relation_value}: {prop_value_label_history} (source: {prop_value})\n"
+            
     return all_context, dict_result
 
 from src.generate_answer import gen_ans_multiple_choice
