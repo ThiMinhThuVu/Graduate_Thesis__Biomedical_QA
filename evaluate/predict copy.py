@@ -2,8 +2,8 @@ import os
 import re
 import json
 
-run = 'R11'
-q_type = 'inference'
+run = 'R14'
+q_type = 'comparison'
 
 wiki_result_directory = f'wiki_{q_type}_results/all_ans' #r"E:\Test_2wiki\test_wiki_result_v0\all_ans" # f'wiki_{q_type}_results/all_ans'
 pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
@@ -16,8 +16,8 @@ def load_json(fname, mode="r", encoding="utf-8"):
         return json.load(f)
 
 def filename_format(filename):
-    ans_file_pattern = r'R11_step_3b_ans_(.+)\.json'
-    all_ans_file_pattern = r'R11_step_3b_all_ans_(.+)\.json'
+    ans_file_pattern = fr'{run}_step_3b_ans_(.+)\.json'
+    all_ans_file_pattern = fr'{run}_step_3b_all_ans_(.+)\.json'
 
     ans_match = re.match(ans_file_pattern, filename)
     all_ans_file_match = re.match(all_ans_file_pattern, filename)
@@ -29,8 +29,8 @@ def filename_format(filename):
     return None
 
 def extract_id(filename):
-    pattern1 = r'R11_step_3b_ans_(.+)\.json'
-    pattern2 = r'R11_step_3b_all_ans_(.+)\.json'
+    pattern1 = fr'{run}_step_3b_ans_(.+)\.json'
+    pattern2 = fr'{run}_step_3b_all_ans_(.+)\.json'
     
     match1 = re.match(pattern1, filename)
     match2 = re.match(pattern2, filename)

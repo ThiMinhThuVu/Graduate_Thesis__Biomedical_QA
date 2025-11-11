@@ -1,9 +1,9 @@
 import json
 
-run = 'R11'
-q_type = 'inference'
+run = 'R14'
+q_type = 'comparison'
 
-input_path = 'data/wiki/test.json' 
+input_path = 'data/wiki/dev.json' 
 pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
 output_file_path = f'evaluate/run/{run}/gold_{q_type}.json'
 

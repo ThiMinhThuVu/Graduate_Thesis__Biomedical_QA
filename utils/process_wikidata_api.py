@@ -102,6 +102,7 @@ def request_sparql(pid, qid_info):
             }}
         }}
         """
+    # print("Querry\n:", query)
     result = send_sparql_request(query)
 
     return result
@@ -136,6 +137,7 @@ def process_fillter_wikidata_api(q_relation, key_entity, limit=20, filter_topk=5
         return None, None
 
     list_relation_id, list_relation_value = match_relation_id(q_relation) # trả về [], []
+    # print(len(list_relation_id), len(list_relation_value))
     dict_result = {}
     all_context = ""
     
@@ -175,10 +177,20 @@ def process_fillter_wikidata_api(q_relation, key_entity, limit=20, filter_topk=5
     return all_context, dict_result
 
 from src.generate_answer import gen_ans_multiple_choice
+def test():
+    question = "Who is the director of the film Days Of Betrayal?"
+    q_relation = "director of film 'Days Of Betrayal"
+    key_entity = "Days of Betrayal"
+    context = process_fillter_wikidata_api(q_relation, key_entity)
+    
+    print(f"QID: {context}")
+    res = gen_ans_multiple_choice(question + f", {key_entity}", context, dataset='wiki', model="o3-mini")
+    print(f"Answer: {res}")
+    
 if __name__ == "__main__":
-    question = "What is the place of birth of that performer?"
-    q_relation = "place of birth"
-    key_entity = "When the Stars Go Blue"
+    question = "Who is the director of the film Days Of Betrayal?"
+    q_relation = "director of film 'Days Of Betrayal"
+    key_entity = "Days of Betrayal"
     context = process_fillter_wikidata_api(q_relation, key_entity)
     
     print(f"QID: {context}")

@@ -3,10 +3,11 @@ import re
 import json
 
 run = 'R11'
-q_type = 'compositional'
+q_type = 'inference'
 
-wiki_result_directory = f'pred_test/17-10-2025/compositional[0-5262]/wiki_{q_type}_results/all_ans'
-pred_path = f'pred_test/17-10-2025/pred_{q_type}.json'
+wiki_result_directory = f'wiki_{q_type}_results/all_ans'
+pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
+
 os.makedirs(os.path.dirname(pred_path), exist_ok=True)
 
 def load_json(fname, mode="r", encoding="utf-8"):
@@ -58,39 +59,41 @@ for filename in os.listdir(wiki_result_directory):
         last_step_key = 'final_answer'
     else:
         print(f'Có lỗi nhận dạng file: {filename}')
-    # predict = data[last_step_key]['short_answer']
-    predict = ''
-    retrieval = data[last_step_key]['retrieval_information']
-    if 'normalized_ans' in data[last_step_key]:
-        predict = data[last_step_key]['normalized_ans']['full_name']
-        if predict != '':
-            if predict not in retrieval:
-                predict = ''
-                
-        if predict == '':
-            predict = data[last_step_key]['normalized_ans']['suffix']
-            # if predict != '':
-            #     if predict not in retrieval:
-            #         predict = ''
         
-        if predict == '':
-            predict = data[last_step_key]['normalized_ans']['name']
-            # if predict != '':
-            #     if predict not in retrieval:
-            #         predict = ''
-            
-        if predict == '':
-            predict = data[last_step_key]['normalized_ans']['prefix']
-            # if predict != '':
-            #     if predict not in retrieval:
-            #         predict = ''
+    predict = data[last_step_key]['short_answer']
     
-    # if predict != '':
-    #     if predict not in retrieval:
-    #         predict = ''
+    # predict = ''
+    # retrieval = data[last_step_key]['retrieval_information']
+    # if 'normalized_ans' in data[last_step_key]:
+    #     predict = data[last_step_key]['normalized_ans']['full_name']
+    #     if predict != '':
+    #         if predict not in retrieval:
+    #             predict = ''
                 
-    if predict == '':
-        predict = data[last_step_key]['short_answer']
+    #     if predict == '':
+    #         predict = data[last_step_key]['normalized_ans']['suffix']
+    #         # if predict != '':
+    #         #     if predict not in retrieval:
+    #         #         predict = ''
+        
+    #     if predict == '':
+    #         predict = data[last_step_key]['normalized_ans']['name']
+    #         # if predict != '':
+    #         #     if predict not in retrieval:
+    #         #         predict = ''
+            
+    #     if predict == '':
+    #         predict = data[last_step_key]['normalized_ans']['prefix']
+    #         # if predict != '':
+    #         #     if predict not in retrieval:
+    #         #         predict = ''
+    
+    # # if predict != '':
+    # #     if predict not in retrieval:
+    # #         predict = ''
+                
+    # if predict == '':
+    #     predict = data[last_step_key]['short_answer']
         
     predict_dict['answer'][id] = predict
 

@@ -185,7 +185,14 @@ def extract_qid(url):
 def remove_parentheses(text):
     # cleaned = re.sub(r"\s*\([^)]*\)", "", text).strip()
     # return cleaned
+    if text is None:
+        return ""
+    if not isinstance(text, str):
+        text = str(text)
     
+    # Kiểm tra nếu string rỗng
+    if not text.strip():
+        return ""
     # 1. Xóa nội dung trong dấu ngoặc đơn () VÀ chính dấu ngoặc đơn đó.
     #    Regex: r'\s*\([^)]*\)' tìm kiếm () và nội dung bên trong, bao gồm cả khoảng trắng trước đó.
     cleaned_parentheses = re.sub(r'\s*\([^)]*\)', '', text)
