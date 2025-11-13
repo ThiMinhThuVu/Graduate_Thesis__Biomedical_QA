@@ -325,7 +325,7 @@ if __name__ == "__main__":
     #edit config
     query_hop2_use_wikidata = False #True #False
     run = runs[9]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13, 9: R14
-    threads = [760, 1000] # Điền threads vào đây: ví dụ [0, 100]
+    threads = [760, 1520] # Điền threads vào đây: ví dụ [0, 100]
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
