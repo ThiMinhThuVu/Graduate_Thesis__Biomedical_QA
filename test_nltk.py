@@ -1,4 +1,64 @@
-from utils.process_wikidata_api import test
+# from utils.process_wikidata_api import test
+import json
+import time
+from SPARQLWrapper import JSON, SPARQLWrapper
+
+def fill_all_qid_search_sparql(keyword, language="en", limit=20, retries=5, delay=5):
+    safe_keyword = keyword.replace("\\", "\\\\").replace('"', '\\"').strip()
+    if not safe_keyword:
+        return []
+
+    sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
+
+    query = f"""
+    SELECT ?item ?itemLabel ?itemDescription WHERE {{
+      SERVICE wikibase:mwapi {{
+        bd:serviceParam wikibase:endpoint "www.wikidata.org";
+                        wikibase:api "EntitySearch";
+                        mwapi:search "{safe_keyword}";
+                        mwapi:language "{language}".
+        ?item wikibase:apiOutputItem mwapi:item.
+      }}
+      SERVICE wikibase:label {{
+        bd:serviceParam wikibase:language "{language}".
+      }}
+    }}
+    LIMIT {limit}
+    """
+
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+
+    for attempt in range(1, retries + 1):
+        try:
+            results = sparql.query().convert()
+            break
+        except Exception as e:
+            print(f"[WARN] Attempt {attempt}/{retries} failed for keyword: {keyword}\n→ {e}")
+            if attempt < retries:
+                time.sleep(delay * attempt)
+            else:
+                return []
+    else:
+        return []
+
+    entities = []
+    for result in results.get("results", {}).get("bindings", []):
+        entity_id = result["item"]["value"].split("/")[-1]
+        label = result.get("itemLabel", {}).get("value", "")
+        description = result.get("itemDescription", {}).get("value", "")
+        entities.append({
+            "id": entity_id,
+            "label": label,
+            "description": description
+        })
+
+    time.sleep(delay)
+
+    return entities
+
+res = json.dumps(fill_all_qid_search_sparql("Paulo Centurión", limit=20), indent=4)
+print(res)
 
 # import nltk
 
