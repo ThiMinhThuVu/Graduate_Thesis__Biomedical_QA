@@ -1,0 +1,908 @@
+import re
+import os
+import time
+import requests
+from datetime import datetime
+
+from nltk.corpus import stopwords
+STOPWORDS = set(stopwords.words('english'))
+
+PROPERTY_MAPPINGS = {
+    "award received": "P166",
+    "cause of death": "P509",
+    "child": "P40",
+    "composer": "P86",
+    "country": "P17",
+    "country of citizenship": "P27",
+    "country of origin": "P495",
+    "creator": "P170",
+    "date of birth": "P569",
+    "date of death": "P570",
+    "director": "P57",
+    "doctoral advisor": "P184",
+    "editor": "P98",
+    "educated at": "P69",
+    "employer": "P108",
+    "father": "P22",
+    "founded by": "P112",
+    "has part": "P527",
+    "inception": "P571",
+    "manufacturer": "P176",
+    "mother": "P25",
+    "occupation": "P106",
+    "performer": "P175",
+    "place of birth": "P19",
+    "place of burial": "P119",
+    "place of death": "P20",
+    "place of detention": "P2632",
+    "presenter": "P371",
+    "producer": "P162",
+    "publication date": "P577",
+    "publisher": "P123",
+    "sibling": "P3373",
+    "spouse": "P26",
+    "student of": "P1066"
+}
+
+dict_p_relation = {
+    "father": "P22",       
+    "mother": "P25",
+    "spouse": "P26",
+    "child": "P40",
+    "occupation": "P106",
+    "sibling": "P3373"
+}
+
+# Bidirectional relationship properties (require verification)
+BIDIRECTIONAL_PROPERTIES = set(dict_p_relation.values())
+
+
+def norm_keyentity_wikidata_api(results, topk=1):   
+    if not results:
+        return []  
+
+    filtered = []
+
+    for idx, r in enumerate(results[0:topk]):
+        if "wikidata.org/wiki/" in r['link']:
+            title = r['title']
+            filtered.append(title)    
+    
+    return filtered
+
+def search_wikidata_for_normalized_name(query, topk=5):
+    """
+    Search Wikidata API to find entities and return QIDs with labels.
+    Returns a list of tuples: (label, qid, description)
+    
+    Args:
+        query: The search query string
+        topk: Maximum number of results to return (default: 5)
+    
+    Returns:
+        List of tuples: (label, qid, description)
+    """
+    endpoint_url = "https://www.wikidata.org/w/api.php"
+    
+    params = {
+        "action": "wbsearchentities",
+        "search": query,
+        "language": "en",
+        "format": "json",
+        "limit": topk,
+        "type": "item"
+    }
+    
+    headers = {
+        "User-Agent": "UETQuintet/1.0 (Research Project; Python/requests)",
+        "Accept": "application/json"
+    }
+    
+    max_retries = 10
+    retry_delay = 2
+    
+    for attempt in range(max_retries):
+        try:
+            response = requests.get(endpoint_url, params=params, headers=headers, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                results = []
+                
+                if "search" in data:
+                    for item in data["search"]:
+                        # Get QID, label, and description
+                        qid = item.get("id", "")
+                        label = item.get("label", qid)  # Use QID as fallback if no label
+                        description = item.get("description", "")
+                        if qid:
+                            results.append((label, qid, description))
+                
+                return results
+            
+            elif response.status_code == 429:
+                wait_time = retry_delay * (2 ** attempt)
+                print(f"⚠️ Rate limit (429). Waiting {wait_time}s before retry...")
+                time.sleep(wait_time)
+                continue
+            
+            elif response.status_code == 403:
+                wait_time = retry_delay * (2 ** attempt)
+                print(f"⚠️ Access forbidden (403). Adding delay {wait_time}s before retry...")
+                time.sleep(wait_time)
+                continue
+            
+            else:
+                print(f"❌ Wikidata API failed with status {response.status_code}: {response.text[:200]}")
+                return []
+        
+        except requests.exceptions.RequestException as e:
+            print(f"❌ Connection error: {e}. Retrying...")
+            time.sleep(retry_delay * (2 ** attempt))
+            continue
+    
+    print("❌ Max retries reached. Returning empty result.")
+    return []
+
+def tokenize(text):
+    return set(re.findall(r"\w+", text.lower()))
+
+def remove_of_phrase(title):
+    # Loại bỏ cụm "of ..." (vd: of Berg)
+    return re.sub(r'\s+of\s+.*', '', title, flags=re.IGNORECASE).strip()
+
+def search_sparql(title):
+    endpoint_url = "https://query.wikidata.org/sparql"
+    headers = {
+        "Accept": "application/sparql-results+json",
+        "User-Agent": "MyWikidataSearchApp/1.0"
+    }
+
+    query_1 = f"""
+    SELECT ?item ?itemLabel ?description
+    WHERE {{
+      ?item ?label "{title}"@en .
+      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+      OPTIONAL {{ ?item schema:description ?description FILTER (LANG(?description) = "en") }}
+    }}
+    """
+
+    query_2 = f"""
+    SELECT ?item ?itemLabel ?description WHERE {{
+      {{
+        ?item rdfs:label "{title}"@en .
+      }}
+      UNION
+      {{
+        ?item skos:altLabel "{title}"@en .
+      }}
+      
+      SERVICE wikibase:label {{ 
+        bd:serviceParam wikibase:language "en". 
+      }}
+      
+      OPTIONAL {{ 
+        ?item schema:description ?description 
+        FILTER (LANG(?description) = "en") 
+      }}
+    }}
+    """
+    
+    results = send_sparql_request(query_1)
+    res_output = [r for r in results if 'entity/Q' in r['item']['value']]
+    if res_output:
+        return res_output
+
+    results = send_sparql_request(query_2)
+    res_output = [r for r in results if 'entity/Q' in r['item']['value']]
+    if res_output:
+        return res_output
+
+    print("No results found after both searches.")
+    return []
+    
+def extract_qid(url):
+    return url.split('/')[-1]
+
+def send_sparql_request(query, max_retries=10):
+    endpoint_url = "https://query.wikidata.org/sparql"
+    headers = {
+        "Accept": "application/sparql-results+json",
+        "User-Agent": "MyWikidataSearchApp/1.0"
+    }
+
+    for attempt in range(max_retries):
+        try:
+            response = requests.get(endpoint_url, params={"query": query}, headers=headers)
+            
+            # nếu thành công
+            if response.status_code == 200:
+                return response.json()["results"]["bindings"]
+            
+            # nếu bị rate-limit (429)
+            elif response.status_code == 429:
+                wait_time = 2 ** attempt
+                print(f"⚠️ Rate limit (429). Waiting {wait_time}s before retry...")
+                time.sleep(wait_time)
+                continue
+            
+            # nếu là lỗi tạm thời khác (5xx)
+            elif 500 <= response.status_code < 600:
+                wait_time = 2 ** attempt
+                print(f"⚠️ Server error {response.status_code}. Retrying in {wait_time}s...")
+                time.sleep(wait_time)
+                continue
+            
+            else:
+                print(f"❌ Query failed with status {response.status_code}: {response.text}")
+                return []
+
+        except requests.exceptions.RequestException as e:
+            print(f"❌ Connection error: {e}. Retrying...")
+            time.sleep(2 ** attempt)
+            continue
+
+    print("❌ Max retries reached. Returning empty result.")
+    return []
+
+def get_relation_id(q_relation, q_relation_child=None, type_q=None):
+    """
+    Args:
+        q_relation: The main relation keyword to search for
+        q_relation_child: Optional child relation keyword for bidirectional queries
+        type_q: Type of question ("inference" or "compositional")
+                - "inference": Uses dict_p_relation (bidirectional properties only)
+                - "compositional": Uses PROPERTY_MAPPINGS, but switches to bidirectional
+                  if the property matches dict_p_relation (P22, P25, P26, P40, P106, P3373)
+    
+    Returns:
+        - For bidirectional properties:
+          (all_relation_string, [parent_property_id], [child_property_ids])
+        - For unidirectional properties:
+          (None, [property_id], [])
+        - For unknown properties:
+          (None, [], [])
+    """
+    search_normalized = q_relation.lower().strip()
+    
+    # For inference questions: use dict_p_relation (bidirectional)
+    if type_q == "inference":
+        # Find parent relation keyword from dict_p_relation
+        if "father" in q_relation.lower():
+            q_relation = "father"
+        elif "mother" in q_relation.lower():
+            q_relation = "mother"
+        elif "spouse" in q_relation.lower() or "wife" in q_relation.lower() or "husband" in q_relation.lower():
+            q_relation = "spouse"
+        elif "child" in q_relation.lower() or "son" in q_relation.lower() or "daughter" in q_relation.lower():
+            q_relation = "child"
+        elif "sibling" in q_relation.lower() or "brother" in q_relation.lower() or "sister" in q_relation.lower():
+            q_relation = "sibling"
+        elif "work" in q_relation.lower():
+            q_relation = "occupation"
+        else:
+            return None, [], []
+
+        p_relation = dict_p_relation.get(q_relation)
+        print("p_relation: ", p_relation)
+        if not p_relation:
+            return None, [], []
+        
+        # Find child relation if provided
+        c_relation = []
+        if q_relation_child:
+            if "father" in q_relation_child.lower() or "mother" in q_relation_child.lower():
+                c_relation = ["child"]
+            elif "spouse" in q_relation_child.lower() or "wife" in q_relation_child.lower() or "husband" in q_relation_child.lower():
+                c_relation = ["spouse"]
+            elif "child" in q_relation_child.lower() or "son" in q_relation_child.lower() or "daughter" in q_relation_child.lower():
+                c_relation = ["mother", "father"]
+            elif "sibling" in q_relation_child.lower() or "brother" in q_relation_child.lower() or "sister" in q_relation_child.lower():
+                c_relation = ["sibling"]
+            elif "work" in q_relation_child.lower():
+                c_relation = ["occupation"]
+
+        # Build SPARQL relation string
+        all_relation = "wd:" + p_relation
+        cid_relation = []
+        if c_relation:
+            for r in c_relation:
+                if r == q_relation:
+                    continue
+                cid = dict_p_relation.get(r.lower())
+                if cid:
+                    all_relation += " wd:" + cid
+                    cid_relation.append(cid)
+        
+        return all_relation, [p_relation], cid_relation
+    
+    # For compositional questions: use PROPERTY_MAPPINGS (unidirectional)
+    elif type_q == "compositional":
+        # Direct match in PROPERTY_MAPPINGS
+        property_id = None
+        if search_normalized in PROPERTY_MAPPINGS:
+            property_id = PROPERTY_MAPPINGS[search_normalized]
+        else:
+            # Partial match in PROPERTY_MAPPINGS
+            for keyword in sorted(PROPERTY_MAPPINGS.keys(), key=len, reverse=True):
+                if keyword in search_normalized:
+                    property_id = PROPERTY_MAPPINGS[keyword]
+                    break
+        
+        # If no property found, return empty
+        if not property_id:
+            return None, [], []
+        
+        # Check if this property is a bidirectional property (in dict_p_relation)
+        # If yes, use bidirectional mode for compositional as well
+        if property_id in BIDIRECTIONAL_PROPERTIES:
+            # This is a bidirectional property, treat it like inference
+            # Normalize q_relation to match dict_p_relation keys
+            if "father" in q_relation.lower():
+                q_relation = "father"
+            elif "mother" in q_relation.lower():
+                q_relation = "mother"
+            elif "spouse" in q_relation.lower() or "wife" in q_relation.lower() or "husband" in q_relation.lower():
+                q_relation = "spouse"
+            elif "child" in q_relation.lower() or "son" in q_relation.lower() or "daughter" in q_relation.lower():
+                q_relation = "child"
+            elif "sibling" in q_relation.lower() or "brother" in q_relation.lower() or "sister" in q_relation.lower():
+                q_relation = "sibling"
+            elif "work" in q_relation.lower() or "occupation" in q_relation.lower():
+                q_relation = "occupation"
+            else:
+                # Property is bidirectional but relation not recognized, use unidirectional
+                return None, [property_id], []
+            
+            p_relation = dict_p_relation.get(q_relation)
+            if not p_relation:
+                return None, [property_id], []
+            
+            # Find child relation if provided
+            c_relation = []
+            if q_relation_child:
+                if "father" in q_relation_child.lower() or "mother" in q_relation_child.lower():
+                    c_relation = ["child"]
+                elif "spouse" in q_relation_child.lower() or "wife" in q_relation_child.lower() or "husband" in q_relation_child.lower():
+                    c_relation = ["spouse"]
+                elif "child" in q_relation_child.lower() or "son" in q_relation_child.lower() or "daughter" in q_relation_child.lower():
+                    c_relation = ["mother", "father"]
+                elif "sibling" in q_relation_child.lower() or "brother" in q_relation_child.lower() or "sister" in q_relation_child.lower():
+                    c_relation = ["sibling"]
+                elif "work" in q_relation_child.lower():
+                    c_relation = ["occupation"]
+            
+            # Build SPARQL relation string (bidirectional mode)
+            all_relation = "wd:" + p_relation
+            cid_relation = []
+            if c_relation:
+                for r in c_relation:
+                    if r == q_relation:
+                        continue
+                    cid = dict_p_relation.get(r.lower())
+                    if cid:
+                        all_relation += " wd:" + cid
+                        cid_relation.append(cid)
+            
+            return all_relation, [p_relation], cid_relation
+        
+        # Unidirectional mode - just return the property ID
+        return None, [property_id], []
+    
+    # Unknown type_q
+    else:
+        return None, [], []
+
+def sparql_find_parent(qid, all_relation):
+    """
+    Unified SPARQL query function for both bidirectional and unidirectional property queries.
+    
+    This single query format works for both single and multiple property IDs.
+    
+    Args:
+        qid: Wikidata entity ID (e.g., "Q272899")
+        all_relation: Property ID(s) with "wd:" prefix:
+            - Single property: "wd:P19"
+            - Multiple properties: "wd:P22 wd:P25" (space-separated)
+    
+    Returns:
+        List of SPARQL query results with ?Pid, ?PidLabel, ?property, ?propertyLabel
+    """
+    # Ensure all_relation has wd: prefix
+    if not all_relation.startswith('wd:'):
+        all_relation = 'wd:' + all_relation
+    
+    query = f"""
+    SELECT ?Pid ?PidLabel ?property ?propertyLabel
+    WHERE {{
+        wd:{qid} ?propIRI ?property .
+        ?Pid wikibase:directClaim ?propIRI .
+        VALUES ?Pid {{ { all_relation } }}
+        SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+    }}
+    """
+    
+    return send_sparql_request(query)
+
+def get_nom_qid(sample, date_string="2021-04-07"):
+    """
+    Chuẩn hóa một tiêu đề để tìm QID tương ứng trên Wikidata.
+    """
+    full_name = sample["1"]["final_qi"]["short_answer"]
+    prefix = sample["1"]["final_qi"]['prefix']
+    name = sample["1"]["final_qi"]['name']
+    suffix = sample["1"]["final_qi"]['suffix']
+ 
+    list_qid = []
+    #KB1: chạy full name
+    results = search_sparql(full_name)
+    
+    if results:
+        list_qid.extend(results) 
+    
+    #Kb2: chỉ name
+    if name != full_name:
+        results = search_sparql(name)
+        if results:
+            list_qid.extend(results) 
+
+    #kb3: chỉ prefix + name
+    if prefix != "NAN":
+        name_tmp = prefix + " " + name
+        if name_tmp != full_name:
+            results = search_sparql(name_tmp)
+            if results:
+                list_qid.extend(results) 
+
+    #kb4: chỉ name + suffix
+    if suffix != "NAN":
+        name_tmp = name + " " + suffix
+        ok = 0
+        if name_tmp != full_name:
+            results = search_sparql(name_tmp)
+            if results:
+                ok = 1
+                list_qid.extend(results)
+
+        if ok == 0:
+            name_tmp = name + ", " + suffix
+            if name_tmp != full_name:
+                results = search_sparql(name_tmp)
+                if results:
+                    list_qid.extend(results) 
+
+    return list_qid
+
+def norm_key_entity(entity, data):
+    match = re.match(r"^(.*?):", data)
+    if match:
+        result = match.group(1)
+        entity = result
+    
+    return entity
+
+def verify_relations(dict_output):
+    verify_list = []
+
+    # duyệt qua từng parent và danh sách con của nó
+    for parent_qid, children in dict_output.get("parent", {}).items():
+        for child_entry in children:
+            child_qid = child_entry["property"]["value"].split("/")[-1]  # lấy QID của child
+            
+            # kiểm tra trong child có chứa parent ngược lại không
+            if child_qid in dict_output.get("child", {}):
+                for possible_parent in dict_output["child"][child_qid]:
+                    qid_back = possible_parent["property"]["value"].split("/")[-1]
+                    
+                    # nếu có liên kết ngược (child -> parent)
+                    if qid_back == parent_qid:
+                        verify_list.append({
+                            "parent_qid": child_qid,
+                            "parent_label": child_entry["propertyLabel"]["value"] if "propertyLabel" in child_entry else None,
+                            "child_qid": parent_qid,
+                            "child_label": possible_parent["propertyLabel"]["value"] if "propertyLabel" in possible_parent else None
+                        })
+
+    # thêm vào dict_output
+    dict_output["verify"] = verify_list
+    return dict_output
+
+def format_date_with_matching(date_string, retrieval_inf=None):
+    # Ensure ISO 8601 format like "2024-05-03T00:00:00Z"
+    if not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", date_string):
+        return (date_string, False) if retrieval_inf else date_string
+
+    date_obj = datetime.strptime(date_string, "%Y-%m-%dT%H:%M:%SZ")
+
+    day = date_obj.day
+    month = date_obj.strftime("%B")
+    year = date_obj.year
+
+    # Format 1: "3 February 1833"
+    format1 = f"{day} {month} {year}"
+    # Format 2: "February 3, 1833"
+    format2 = f"{month} {day}, {year}"
+    # Format 3: "1833"
+    format3 = str(year)
+
+    if not retrieval_inf:
+        return format1
+
+    retrieval_lower = retrieval_inf.lower()
+    if format1.lower() in retrieval_lower:
+        return (format1, True)
+    if format2.lower() in retrieval_lower:
+        return (format2, True)
+    if format3 in retrieval_lower:
+        return (format3, True)
+
+    return (format1, False)
+    
+def create_empty_result():
+    return {
+        "id": {}, "hop_0": {}, "hop_1": {}, "parent": {}, "verify": [], "is_bidirectional": False,
+        "long_answer": "", "short_answer": ""
+    }
+
+def search_entity_with_fallback(entity_name, original_name):
+    # Clean entity names
+    entity_name = re.sub(r'\s*\(.*?\)\s*', '', entity_name).strip()
+    original_name = re.sub(r'\s*\(.*?\)\s*', '', original_name).strip() if original_name else None
+    
+    # Try SPARQL first
+    list_qid = search_sparql(entity_name)
+    if list_qid:
+        return entity_name, list_qid
+    
+    # Use Wikidata API
+    api_results = search_wikidata_for_normalized_name(entity_name) or search_wikidata_for_normalized_name(original_name)
+    if api_results:
+        entity_name = api_results[0][0]  # Use first result's label
+        # Convert API results to expected format
+        for label, qid, description in api_results:
+            list_qid.append({
+                "item": {"type": "uri", "value": f"http://www.wikidata.org/entity/{qid}"},
+                "itemLabel": {"xml:lang": "en", "type": "literal", "value": label},
+                "description": {"xml:lang": "en", "type": "literal", "value": description}
+            })
+    
+    return entity_name, list_qid
+
+def extract_property_labels(sparql_results):
+    labels = []
+    for result in sparql_results:
+        if "propertyLabel" in result:
+            label = result["propertyLabel"]["value"]
+            # Filter out QIDs but keep real labels that start with Q
+            if label and not re.match(r'^Q\d+$', label):
+                labels.append(label)
+    return labels
+
+def group_results_by_property(sparql_results):
+    grouped = {}
+    for result in sparql_results:
+        pid = result["Pid"]["value"].split("/")[-1]
+        label = result["propertyLabel"]["value"] if "propertyLabel" in result else None
+        if label and not re.match(r'^Q\d+$', label):
+            if pid not in grouped:
+                grouped[pid] = []
+            grouped[pid].append(label)
+    return grouped
+
+def find_contextual_match(values_by_pid, property_order, retrieval_inf, heuristic_name):
+    print(f"    Using {heuristic_name} heuristic...")
+    retrieval_words = set(re.findall(r'\b\w+\b', retrieval_inf.lower())) - STOPWORDS if retrieval_inf else set()
+    
+    for pid in property_order:
+        if pid not in values_by_pid:
+            continue
+            
+        print(f"      Property {pid}: {len(values_by_pid[pid])} values")
+        
+        # Try contextual matching first
+        if retrieval_words:
+            for val in values_by_pid[pid]:
+                val_words = set(re.findall(r'\b\w+\b', val.lower())) - STOPWORDS
+                if val_words & retrieval_words:
+                    print(f"      ✓ Matched '{val}' from {pid}")
+                    return [val], pid
+        
+        # Use first value as fallback
+        if values_by_pid[pid]:
+            print(f"      Using first value from {pid}: '{values_by_pid[pid][0]}'")
+            return [values_by_pid[pid][0]], pid
+    
+    return [], None
+
+def find_best_answer_match(property_values, retrieval_inf, q_relation):
+    if not property_values:
+        return '', False
+    
+    is_date_property = any(keyword in q_relation.lower() for keyword in ['date', 'birthday'])
+    
+    if not retrieval_inf:
+        return property_values[0], False
+    
+    retrieval_words = set(re.findall(r'\b\w+\b', retrieval_inf.lower())) - STOPWORDS
+    
+    # Special handling for date properties
+    if is_date_property:
+        for val in property_values:
+            if not val:
+                continue
+            # Try date formatting with matching
+            formatted_date, has_match = format_date_with_matching(val, retrieval_inf)
+            if has_match:
+                return formatted_date, True
+            # Try exact substring matching for non-ISO dates
+            elif not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", val):
+                if val.lower() in retrieval_inf.lower():
+                    return val, True
+    else:
+        # Standard word matching for non-date properties
+        for val in property_values:
+            if not val:
+                continue
+            val_words = set(re.findall(r'\b\w+\b', val.lower())) - STOPWORDS
+            if val_words & retrieval_words:
+                return val, True
+    
+    # Fallback to first value
+    return property_values[0], False
+
+def create_result_entry(qid, property_id, answer):
+    return [{
+        "Pid": {"value": f"http://www.wikidata.org/entity/{property_id}"},
+        "property": {"value": f"http://www.wikidata.org/entity/{qid}"},
+        "propertyLabel": {"value": answer}
+    }]
+
+def create_verify_entry(qid, property_id, answer):
+    return [{
+        "qid": qid,
+        "parent_relations": {property_id: {"qid": qid, "value": answer}},
+        "child_relations": {}
+    }]
+
+def verify_hop2(dict_output):
+    verify_list = []
+    parent_id = dict_output["id"]["pid"]
+    child_id = dict_output["id"]["cid"]
+    child_info = dict_output['hop_0']
+    short_answer  = ''
+    # duyệt qua từng parent và danh sách con của nó
+    for parent_qid, sample in dict_output.get("parent", {}).items():
+        p_value = {}
+        c_value = {}
+        # ok = 0
+        for item in sample:
+            pid = item["Pid"]["value"].split("/")[-1] # lấy Pid
+            qid = item["property"]["value"].split("/")[-1] # lấy QID của child
+            propertyLabel = item["propertyLabel"]["value"] if "propertyLabel" in item else None
+            ok = 0
+            if pid in parent_id:
+                p_value[pid] = {
+                    "qid": qid,
+                    "value": propertyLabel
+                }
+                tmp_ans = propertyLabel
+                for item_c in sample:
+                    pid = item_c["Pid"]["value"].split("/")[-1] # lấy Pid
+                    qid = item_c["property"]["value"].split("/")[-1] # lấy QID của child
+                    propertyLabel = item_c["propertyLabel"]["value"] if "propertyLabel" in item_c else None
+                    
+                    if pid in child_id:
+                        if propertyLabel and child_info.get('key_entity') and propertyLabel.lower() == child_info['key_entity'].lower():
+                            ok = 1
+                            short_answer = tmp_ans
+                            c_value[pid] = {
+                                "qid": qid,
+                                "value": propertyLabel
+                            }
+                            break
+                    
+            if ok == 1:
+                verify_list.append({
+                    "qid": parent_qid,
+                    "parent_relations": p_value,
+                    "child_relations": c_value
+                })   
+                break
+            
+    if len(verify_list) == 0:
+        pid = parent_id[0]
+        parent = dict_output['parent']
+        ok = 0
+        for parent_id, parent in parent.items():
+            if ok == 1:
+                break
+            for item in parent:
+                if pid in item['Pid']['value']:
+                    short_answer = item['propertyLabel']['value']
+                    if short_answer is None:
+                        short_answer = ''
+                    ok = 1
+                    break
+
+    # thêm vào dict_output
+    dict_output["verify"] = verify_list
+    dict_output['long_answer'] = ''
+    dict_output['short_answer'] = short_answer
+    
+    return dict_output
+
+def query_hop2_with_wikidata(type_q, original_question, q_key_entity, last_key_entity, q_relation, c_relation, 
+                             retrieval_inf, last_retrieval_inf):
+    """
+    Integrated query function supporting bidirectional and unidirectional property queries.
+    
+    Query mode is determined by question type and property characteristics:
+    - "inference": unidirectional or bidirectional mode
+    - "compositional": unidirectional mode
+    
+    Args:
+        type_q: Type of question ("inference" | "compositional")
+        original_question: The original question text (for special case handling)
+        q_key_entity: The main entity to query (hop 1)
+        last_key_entity: The related entity for verification (hop 0, required for bidirectional)
+        q_relation: The relationship/property keyword for hop 1
+        c_relation: The relationship keyword for hop 0 (for bidirectional verification)
+        retrieval_inf: Retrieval information for hop 1
+        last_retrieval_inf: Retrieval information for hop 0 (for bidirectional verification)
+        use_google_search: If True, use Google Search API for entity normalization
+    
+    Returns:
+        dict_output with answer, source, and verification information
+    """
+    # Early validation
+    if q_key_entity.lower().strip() == "insufficient information":
+        print(f"Insufficient information for q_key_entity {q_key_entity}")
+        return create_empty_result()
+    
+    if retrieval_inf is None:
+        return create_empty_result()
+
+    print(f"Querying Wikidata for entity '{q_key_entity}' with relation '{q_relation}' (type: {type_q})")
+
+    # Get relation/property information
+    all_relation, pid_relation, cid_relation = get_relation_id(q_relation, c_relation, type_q=type_q)
+    
+    # Determine query mode
+    if type_q == "inference":
+        if all_relation is None:
+            return create_empty_result()
+        is_bidirectional = True
+    elif type_q == "compositional":
+        is_bidirectional = False
+        c_relation = None
+    else:
+        return create_empty_result()
+    
+    if not pid_relation:
+        return create_empty_result()
+    
+    # Initialize result structure
+    dict_output = create_empty_result()
+    dict_output["is_bidirectional"] = is_bidirectional
+    dict_output["id"] = {"pid": pid_relation, "cid": cid_relation}
+
+    # Search for main entity (hop 1)
+    key_entity, list_qid = search_entity_with_fallback(
+        norm_key_entity(q_key_entity, retrieval_inf), q_key_entity
+    )
+    print("norm key_entity: ", key_entity)
+    
+    # Search for verification entity (hop 0) if bidirectional
+    norm_last_key_entity, list_qid_last_key = None, []
+    if is_bidirectional and last_key_entity:
+        norm_last_key_entity, list_qid_last_key = search_entity_with_fallback(
+            norm_key_entity(last_key_entity, last_retrieval_inf), last_key_entity
+        )
+    elif is_bidirectional:
+        print("Warning: Bidirectional mode requires last_key_entity, but it's missing")
+    
+    # Store entity information
+    dict_output["hop_0"] = {"key_entity": norm_last_key_entity, "list_qid": list_qid_last_key}
+    dict_output["hop_1"] = {"key_entity": key_entity, "list_qid": list_qid}
+    
+    # Process each candidate QID
+    check_qid_parent = set()
+    property_id = pid_relation[0] if pid_relation else None
+    
+    for item in list_qid:
+        qid = extract_qid(item["item"]["value"])
+        if not re.match(r"^Q\d+$", qid) or qid in check_qid_parent:
+            continue
+        check_qid_parent.add(qid)
+        
+        # Handle bidirectional queries
+        if is_bidirectional and all_relation:
+            parent = sparql_find_parent(qid, all_relation)
+            dict_output["parent"][qid] = parent
+            continue
+        
+        # Handle unidirectional queries with specialized heuristics
+        if not is_bidirectional and pid_relation:
+            property_id = pid_relation[0]
+            
+            # Determine question type
+            question_lower = original_question.lower() if original_question else ''
+            is_work_question = 'work' in question_lower or 'work at' in question_lower
+            is_nationality_question = any(kw in question_lower for kw in ['nationality', 'country of citizenship', 'country of origin'])
+            
+            # Apply specialized heuristics
+            if is_work_question:
+                work_properties = ['P108', 'P101', 'P106']  # employer -> field of work -> occupation
+                batched_props = " ".join([f"wd:{pid}" for pid in work_properties])
+                results = sparql_find_parent(qid, batched_props)
+                values_by_pid = group_results_by_property(results)
+                property_values, property_id = find_contextual_match(values_by_pid, work_properties, retrieval_inf, "WORK")
+                
+            elif is_nationality_question:
+                nationality_properties = ['P27', 'P495', 'P17']  # citizenship -> country of origin -> country
+                batched_props = " ".join([f"wd:{pid}" for pid in nationality_properties])
+                results = sparql_find_parent(qid, batched_props)
+                values_by_pid = group_results_by_property(results)
+                property_values, property_id = find_contextual_match(values_by_pid, nationality_properties, retrieval_inf, "NATIONALITY")
+                
+            else:
+                # Standard property query
+                print(f"    Using STANDARD property query for {property_id}...")
+                results = sparql_find_parent(qid, f"wd:{property_id}")
+                property_values = extract_property_labels(results)
+                print(f"      Found {len(property_values)} values")
+            
+            # Find best answer match
+            if property_values:
+                # For specialized heuristics, answer is already contextually matched
+                if is_work_question or is_nationality_question:
+                    short_answer, has_contextual_match = property_values[0], True
+                else:
+                    short_answer, has_contextual_match = find_best_answer_match(property_values, retrieval_inf, q_relation)
+                
+                # Store result
+                if short_answer:
+                    dict_output["parent"][qid] = create_result_entry(qid, property_id, short_answer)
+                    
+                    # Return immediately if we found a contextual match
+                    if has_contextual_match:
+                        dict_output["verify"] = create_verify_entry(qid, property_id, short_answer)
+                        dict_output['short_answer'] = short_answer
+                        return dict_output
+    
+    # Handle fallback results
+    if not is_bidirectional and dict_output.get("parent"):
+        first_qid = list(dict_output["parent"].keys())[0]
+        first_answer = dict_output["parent"][first_qid][0]["propertyLabel"]["value"]
+        
+        # Apply date formatting if needed
+        if any(keyword in q_relation.lower() for keyword in ['date', 'birthday', 'birth', 'death']):
+            if re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$", first_answer):
+                first_answer = format_date_with_matching(first_answer)
+        
+        dict_output["verify"] = create_verify_entry(first_qid, property_id, first_answer)
+        dict_output['short_answer'] = first_answer
+        
+        import json
+        print(json.dumps(dict_output, indent=2))
+        return dict_output
+    
+    # For bidirectional queries, use verification
+    if is_bidirectional:
+        return verify_hop2(dict_output)
+    
+    # No results found
+    return create_empty_result()
+
+
+if __name__ == "__main__":
+    print(query_hop2_with_wikidata(
+        type_q="inference",
+        original_question="Who did Philip Carteret Frs marry?",
+        q_key_entity="George Carteret, 1st Baron Carteret",
+        last_key_entity="Philip Carteret Frs",
+        q_relation="father of",
+        c_relation="child of Philip Carteret Frs",
+        retrieval_inf="""George Carteret, 1st Baron Carteret: George Carteret, 1st Baron Carteret (July 1667 – 22 September 1695) was son of Sir Philip Carteret (died 1672) and the grandson of George Carteret. His mother was Lady Jemima Montagu, daughter of Edward Montagu, 1st Earl of Sandwich. He was left an orphan at the age of five, and was raised by his paternal grandparents. He married Lady Grace Granville (daughter of John Granville, 1st Earl of Bath and created Countess Granville in 1715), and by her was the father of John Carteret, 2nd Earl Granville. He was ennobled as Baron Carteret of Hawnes in 1681 in recognition of his grandfather's long career of loyalty to the English Crown, both during the English Civil War and after the Restoration of Charles II. He died in 1695, aged only 26; his widow outlived him by half a century.""",
+        last_retrieval_inf=""""Philip Carteret FRS: Sir Philip Carteret, FRS (1641 – 1672), was the eldest son of Sir George Carteret and his wife and cousin Elizabeth de Cartetet. Philip was elected Fellow of the Royal Society on 15 February 1665. He married Jemima Montagu, daughter of Edward Montagu, 1st Earl of Sandwich and Jemima Crewe, in an arranged marriage on 31 July 1665. Samuel Pepys had a hand in the marriage and wrote of it at some length in his diary. Jemima had only known of Philip some fourteen days before their marriage: Pepys did ask her if she could like Philip as a husband, and was relieved when she answered that she thought she could like him very well. It was noted that Jemima failed to arrive in time for the ceremony at the church, but the marriage is thought to have been reasonably happy. Jemima died in childbirth in 1671. Philip was father of four children, including George Carteret, 1st Baron Carteret. Knighted in 1667, he became Gentleman of the King's Chamber in 1670. Philip died along with his father-in-law the Earl of Sandwich when their ship, the ""Prince Royal"", was grappled by a Dutch fire ship in the Battle of Solebay."""
+    ))

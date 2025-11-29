@@ -1,0 +1,10 @@
+# Required packages for running the question answering pipeline
+requests>=2.25.0
+beautifulsoup4>=4.9.0
+networkx>=2.6.0
+matplotlib>=3.4.0
+pathy==0.11.0
+# Download these models separately:
+# python -m spacy download en_core_web_lg
+# pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_ner_bc5cdr_md-0.5.1.tar.gz
+# pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.4.1/en_core_web_lg-3.4.1-py3-none-any.whl
