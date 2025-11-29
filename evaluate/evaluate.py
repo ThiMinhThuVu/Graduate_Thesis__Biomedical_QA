@@ -4,8 +4,8 @@ import re
 import string
 from collections import Counter
 
-run = 'R14'
-type_name = 'comparison'
+run = 'R11' #'R14'
+type_name = 'compositional' #'comparison'
 
 pred_file = f'evaluate/run/{run}/pred_{type_name}.json'
 gold_file = f'evaluate/run/{run}/gold_{type_name}.json'

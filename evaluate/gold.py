@@ -1,7 +1,7 @@
 import json
 
-run = 'R14'
-q_type = 'comparison'
+run = 'R11' #'R14'
+q_type = 'compositional' #'comparison'
 
 input_path = 'data/wiki/dev.json' 
 pred_path = f'evaluate/run/{run}/pred_{q_type}.json'
