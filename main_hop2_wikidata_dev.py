@@ -397,21 +397,11 @@ if __name__ == "__main__":
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/{data_type}/{data_type}_{type_}.json"
         raw_data = load_json(raw_data_file)
-        
-        list_ID = [   
-            "dfe496880bdd11eba7f7acde48001122",
-            "0051fad20bde11eba7f7acde48001122",
-            "6ebdbede0bde11eba7f7acde48001122",
-            "0189caf20bdd11eba7f7acde48001122"
-        ]
-                
+                        
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
             if not (threads[0] <= idx < threads[1]):
                 continue 
             
-            # if ID not in list_ID:
-            #     continue
-
             type_q = sample['type']
             is_seq = sample["is_sequence"]
             
