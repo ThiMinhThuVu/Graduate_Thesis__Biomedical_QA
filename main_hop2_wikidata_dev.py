@@ -12,18 +12,30 @@ from utils.util import *
 
 import pandas as pd
 
+global wiki_cache_data
+global nlp_bio
+global nlp_standard
+wiki_cache_data = None
+nlp_bio = None
+nlp_standard = None
 
-with open('data/wikipedia_cache.pkl', 'rb') as f:
-    wiki_cache_data = pickle.load(f)
-    
-try:
-    nlp_bio = spacy.load("en_ner_bc5cdr_md")  # Biomedical NER model
-    print("Loaded biomedical NER model")
-except:
-    print("Biomedical NER model not found. Please install it with: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_ner_bc5cdr_md-0.5.1.tar.gz")
-    nlp_bio = None
+def load_spacy_model():
+    global wiki_cache_data
+    global nlp_bio
+    global nlp_standard
 
-nlp_standard = spacy.load("en_core_web_lg")  # Standard English model
+    with open('data/wikipedia_cache.pkl', 'rb') as f:
+        wiki_cache_data = pickle.load(f)
+        
+    try:
+        nlp_bio = spacy.load("en_ner_bc5cdr_md")  # Biomedical NER model
+        print("Loaded biomedical NER model")
+    except:
+        print("Biomedical NER model not found. Please install it with: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_ner_bc5cdr_md-0.5.1.tar.gz")
+        nlp_bio = None
+
+    nlp_standard = spacy.load("en_core_web_lg")  # Standard English model
+
 
 def generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, settings, paths, dataset=None, type_q=None):
     if dataset in ["wiki", "cwq"]:
@@ -322,6 +334,8 @@ if __name__ == "__main__":
     datasets = ["medhop", "bioasq", "cwq", "wiki"]
     batchs = ["b1", "b2", "b3", "b4"] # medhop chỉ có 2 batch (unconfused, confused)
     runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12", "R13", "R14"]
+    list_type = ["bridge_comparison", "comparison", "compositional", "inference"]
+    type_dataset = ['dev', 'test']
     
     #edit config
     query_hop2_use_wikidata = False #True #False
@@ -330,13 +344,16 @@ if __name__ == "__main__":
     dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
     batch = batchs[0]    
     important = True # False or True: Chỉ dùng cho medhop
+    type_ = list_type[0] # Chọn loại câu hỏi: bridge_comparison, comparison, compositional, inference
+    data_type = type_dataset[0]  # dev or test
     
     settings = configs[dataset][run]
     settings["wiki_cache"] = wiki_cache_data
     raw_data_file = configs[dataset]["raw_data_file"][batch]
     
-    
+        
     if dataset == "medhop":
+        load_spacy_model()
         important_file = configs[dataset]["important_file"]
         chrunk_mapping_file = configs[dataset]["chrunk_mapping_file"]
         chrunk_mapping = load_json(chrunk_mapping_file)
@@ -377,11 +394,9 @@ if __name__ == "__main__":
                     preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
                     
     elif dataset == "wiki":   
-        type_ = "comparison" #"bridge_comparison" #"comparison" #"compositional" #"inference"
-        
         settings['dataset'] = f"wiki_{type_}_"
-        raw_data_file = f"data/wiki/dev/dev_{type_}.json"
-        # raw_data_file = f"data/wiki/test/test_{type_}.json"
+        raw_data_file = f"data/wiki/{data_type}/{data_type}_{type_}.json"
+        raw_data = load_json(raw_data_file)
         
         list_ID = [   
             "dfe496880bdd11eba7f7acde48001122",
@@ -389,8 +404,7 @@ if __name__ == "__main__":
             "6ebdbede0bde11eba7f7acde48001122",
             "0189caf20bdd11eba7f7acde48001122"
         ]
-        raw_data = load_json(raw_data_file)
-        
+                
         for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
             if not (threads[0] <= idx < threads[1]):
                 continue 
