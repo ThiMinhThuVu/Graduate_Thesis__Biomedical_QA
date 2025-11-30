@@ -13,8 +13,7 @@ import torch
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from sentence_transformers import SentenceTransformer
-from utils.util import *
-from src.retrieval import *
+
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 headers = {

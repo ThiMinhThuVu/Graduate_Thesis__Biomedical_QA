@@ -1,6 +1,5 @@
 import os
 import spacy
-from utils.util import *
 import pickle
 from tqdm import tqdm
 from src.decomposition import *
@@ -9,6 +8,8 @@ from src.extract_ner import *
 from src.generate_answer import *
 from src.all_run import *
 from utils.norm_wikidata_pair import *
+from utils.util import *
+
 import pandas as pd
 
 
@@ -374,48 +375,14 @@ if __name__ == "__main__":
                     preprocess_sample_R7(sample, settings, dataset=dataset)
                 else:
                     preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
-        
-    elif dataset == "bioasq":
-        raw_data = load_json(raw_data_file)
-        
-        for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
-            if not (threads[0] <= idx < threads[1]):
-                continue 
-            
-            settings["context"] = sample["context"]       
-            is_seq = sample["is_sequence"]            
-            sample['type'] = ''
-            
-            if run == "R5":
-                is_seq = False
-            if run == "R7":
-                preprocess_sample_R7(sample, settings, dataset=dataset)
-            else:
-                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
-
-    elif dataset == "cwq":
-        raw_data_file = configs[dataset]["raw_data_file"]
-        raw_data = load_json(raw_data_file)
-        
-        for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
-            if not (threads[0] <= idx < threads[1]):
-                continue
-
-            is_seq = sample["is_sequence"]
-            sample['type'] = ''
-            
-            if run == "R5":
-                is_seq = False
-            if run == "R7":
-                preprocess_sample_R7(sample, settings, dataset=dataset)
-            else:   
-                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
-            
+                    
     elif dataset == "wiki":   
-        type_ = "bridge_comparison" #"bridge_comparison" #"comparison" #"compositional" #"inference"
+        type_ = "comparison" #"bridge_comparison" #"comparison" #"compositional" #"inference"
+        
         settings['dataset'] = f"wiki_{type_}_"
         raw_data_file = f"data/wiki/dev/dev_{type_}.json"
         # raw_data_file = f"data/wiki/test/test_{type_}.json"
+        
         list_ID = [   
             "dfe496880bdd11eba7f7acde48001122",
             "0051fad20bde11eba7f7acde48001122",

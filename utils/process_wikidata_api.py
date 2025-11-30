@@ -15,6 +15,7 @@ from sentence_transformers import SentenceTransformer, util
 from utils.norm_wikidata_pair import PROPERTY_MAPPINGS
 from utils.crawl_sparql import get_last_oldid_before_date, send_sparql_request, find_all_qid, caculate_scores, fill_all_qid_search_sparql
 model = SentenceTransformer("all-MiniLM-L6-v2")
+import inspect
 
 headers = {
     "User-Agent": (
@@ -130,6 +131,12 @@ def get_pid_value(qid, pid):
     return values
 
 def process_fillter_wikidata_api(q_relation, key_entity, limit=20, filter_topk=5):
+    # Debug: print caller info to detect duplicated calls
+    call_id = time.time()
+    stack = inspect.stack()
+    caller = stack[1]
+    print(f"[DEBUG] process_fillter_wikidata_api called (id={call_id:.6f}) by {caller.function} in {os.path.basename(caller.filename)}:{caller.lineno}")
+
     # qid_info = find_all_qid(key_entity, limit)
     qid_info = fill_all_qid_search_sparql(key_entity, limit=limit)
     print(qid_info)
