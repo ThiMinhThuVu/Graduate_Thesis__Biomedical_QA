@@ -1,0 +1,9 @@
+inf_cache: "data/cache/{dataset}/{qidx}_inf_cache"
+gg_search: "data/cache/{dataset}/{qidx}_gg_search.json"
+wiki_search: "data/cache/{dataset}/{qidx}_wiki_search.json"
+wiki_crawl: "data/cache/{dataset}/{qidx}_wiki_crawl.json"
+paragraphs: "data/cache/{dataset}/{qidx}_paragraphs.json"
+
+cluster_context: "data/cache/{dataset}/{qidx}_cluster.json"
+history: "data/cache/{dataset}/{qidx}_history.json"
+evidence: "data/cache/{dataset}/{qidx}_evidence.json"

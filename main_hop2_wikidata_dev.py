@@ -9,7 +9,7 @@ from src.generate_answer import *
 from src.all_run import *
 from utils.norm_wikidata_pair import *
 from utils.util import *
-
+from classification.classification import load_model, classify_question
 import pandas as pd
 
 global wiki_cache_data
@@ -76,10 +76,10 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
     #     print(f"Evidence saved to {evidence_file}")
     #     return 
     
-    if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
-        original_question = settings['chrunk_mapping'][sample_id]
-    else:
-        original_question = sample['Question']
+    # if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
+    #     original_question = settings['chrunk_mapping'][sample_id]
+    # else:
+    original_question = sample['Question']
         
     #DECOMPOSITION Question
     list_qi = question_decomposition(original_question, dataset=dataset, type_q=type_q)
@@ -329,87 +329,48 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
     # print(f"Evidence saved to {evidence_file}")     
 
 if __name__ == "__main__":
-    config_path = "config.json"
-    configs = load_json(config_path)
-    datasets = ["medhop", "bioasq", "cwq", "wiki"]
-    batchs = ["b1", "b2", "b3", "b4"] # medhop chỉ có 2 batch (unconfused, confused)
+    config_path = "config/config.yaml"
+    configs = load_yaml(config_path)
     runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12", "R13", "R14"]
     list_type = ["bridge_comparison", "comparison", "compositional", "inference"]
-    type_dataset = ['dev', 'test']
+    query_hop2_use_wikidata = None
     
     #edit config
-    query_hop2_use_wikidata = False #True #False
-    run = runs[9]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13, 9: R14
-    threads = [0, 1] # Điền threads vào đây: ví dụ [0, 100]
-    dataset = datasets[3] # Chọn dataset: medhop, bioasq, cwq, wiki
-    batch = batchs[0]    
-    important = True # False or True: Chỉ dùng cho medhop
-    type_ = list_type[0] # Chọn loại câu hỏi: bridge_comparison, comparison, compositional, inference
-    data_type = type_dataset[0]  # dev or test
+    run = runs[6]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13, 9: R14
+    threads = configs['run']['threads'] 
+    dataset = configs['run']['dataset']
+    data_type = configs['run']['data_split']  
     
-    settings = configs[dataset][run]
+    model_path = configs['classification'][dataset]['model_path']
+    tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
+
+    model, tokenizer, device = load_model(dataset, model_path, tokenizer_dir)
+    
+    settings = configs['type_run'][run]
     settings["wiki_cache"] = wiki_cache_data
-    raw_data_file = configs[dataset]["raw_data_file"][batch]
-    
+    raw_data_file = configs['dataset'][dataset][data_type]
+    raw_data = load_json(raw_data_file)
         
     if dataset == "medhop":
         load_spacy_model()
-        important_file = configs[dataset]["important_file"]
-        chrunk_mapping_file = configs[dataset]["chrunk_mapping_file"]
-        chrunk_mapping = load_json(chrunk_mapping_file)
-        settings["chrunk_mapping"] = chrunk_mapping 
-        
-        if important:
-            settings['dataset'] = "medhop_important_"
-            raw_data = load_json(important_file)
-            for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
-                if not (threads[0] <= idx < threads[1]):
-                    continue 
-                
-                is_seq = sample["is_sequence"]
-                sample['type'] = ''
-                
-                if run == "R5":
-                    is_seq = False                
-                if run == "R7":
-                    preprocess_sample_R7(sample, settings, dataset=dataset)
-                else:
-                    preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
+                  
+    for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
+        if not (threads[0] <= idx < threads[1]):
+            continue 
+        question = sample['Question']
+        # type_q = sample.get('type', '')
+        type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+        if type_q in ['non-sequence', 'comparison']:
+            is_seq = False
         else:
-            if batch == "b1":
-                settings['dataset'] = "medhop_unconfused_"
-            elif batch == "b2":
-                settings['dataset'] = "medhop_confused_"
-            raw_data = pd.read_csv(raw_data_file)
-                
-            for index, sample in raw_data.iloc[threads[0]:threads[1]].iterrows():       
-                is_seq = sample["is_sequence"]     
-                sample['type'] = ''
-                           
-                if run == "R5":
-                    is_seq = False
-                if run == "R7":
-                    preprocess_sample_R7(sample, settings, dataset=dataset)
-                else:
-                    preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q='')
-                    
-    elif dataset == "wiki":   
-        settings['dataset'] = f"wiki_{type_}_"
-        raw_data_file = f"data/wiki/{data_type}/{data_type}_{type_}.json"
-        raw_data = load_json(raw_data_file)
-                        
-        for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
-            if not (threads[0] <= idx < threads[1]):
-                continue 
-            
-            type_q = sample['type']
-            is_seq = sample["is_sequence"]
-            
-            if run == "R5":
-                is_seq = False
-            if run == "R7":
-                preprocess_sample_R7(sample, settings, dataset=dataset)
-            if run == "R12":
-                preprocess_sample_R12(sample, settings, dataset=dataset, type_q=type_q)
-            else:
-                preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=query_hop2_use_wikidata)
+            is_seq = True
+        # is_seq = sample["is_sequence"]
+        
+        if run == "R5":
+            is_seq = False
+        if run == "R7":
+            preprocess_sample_R7(sample, settings, dataset=dataset)
+        if run == "R12":
+            preprocess_sample_R12(sample, settings, dataset=dataset, type_q=type_q)
+        else:
+            preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=query_hop2_use_wikidata)

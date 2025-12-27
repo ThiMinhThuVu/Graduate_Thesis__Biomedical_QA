@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.append(os.path.join(os.path.dirname(__file__), "UETQUINTET"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "MAS_UETQUINTET"))
 
 import json
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from utils.crawl_wikipage import crawl_wikipedia_page
 import pickle
+import yaml
 
 move_section_list = [
     "table of contents",
@@ -26,6 +27,11 @@ move_section_list = [
     "category:", 
     "categories",    
 ]
+
+def load_yaml(path):
+    with open(path, "r", encoding="utf-8") as f:
+        configs = yaml.safe_load(f)
+    return configs
 
 def load_pickle(file_path):
     if not os.path.exists(file_path):
