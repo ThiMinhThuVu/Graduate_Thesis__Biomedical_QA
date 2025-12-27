@@ -15,10 +15,15 @@ import pandas as pd
 global wiki_cache_data
 global nlp_bio
 global nlp_standard
-wiki_cache_data = None
+wiki_cache_data = {}
 nlp_bio = None
-nlp_standard = None
-
+# nlp_standard = None
+try:
+    nlp_standard = spacy.load("en_core_web_lg")
+except:
+    print("Standard English model not found. Please install it with: python -m spacy download en_core_web_lg")
+    nlp_standard = None
+    
 def load_spacy_model():
     global wiki_cache_data
     global nlp_bio
@@ -37,9 +42,10 @@ def load_spacy_model():
     nlp_standard = spacy.load("en_core_web_lg")  # Standard English model
 
 
-def generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, settings, paths, dataset=None, type_q=None):
+def generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=None, type_q=None):
     if dataset in ["wiki", "cwq"]:
-        return generate_answer(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
+        # retrieval_information = [retrieval_information]
+        return generate_answer_new(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
     else:
         ner_filepath = paths['ner']
         output_ner = load_json(ner_filepath) if os.path.exists(ner_filepath) else {}
@@ -53,8 +59,8 @@ def generate_answer_for_subq(subquestion, key_entities, retrieval_information, s
             output_ner[step] = bio_entities
             save_json(output_ner, ner_filepath)
             key_entities += " BioEntities: " + ", ".join(bio_entities)
-
-        return generate_answer(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
+        # retrieval_information = [retrieval_information]
+        return generate_answer_new(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
 
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None, query_wikidata=None):
     sample_id = str(sample['QIDX']) 
@@ -347,6 +353,7 @@ if __name__ == "__main__":
     model, tokenizer, device = load_model(dataset, model_path, tokenizer_dir)
     
     settings = configs['type_run'][run]
+    settings["dataset"] = f"{dataset}_"
     settings["wiki_cache"] = wiki_cache_data
     raw_data_file = configs['dataset'][dataset][data_type]
     raw_data = load_json(raw_data_file)
@@ -358,17 +365,16 @@ if __name__ == "__main__":
         if not (threads[0] <= idx < threads[1]):
             continue 
         question = sample['Question']
-        # type_q = sample.get('type', '')
         type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
         if type_q in ['non-sequence', 'comparison']:
             is_seq = False
         else:
             is_seq = True
-        # is_seq = sample["is_sequence"]
         
         if run == "R5":
             is_seq = False
         if run == "R7":
+            sample['type'] = type_q
             preprocess_sample_R7(sample, settings, dataset=dataset)
         if run == "R12":
             preprocess_sample_R12(sample, settings, dataset=dataset, type_q=type_q)

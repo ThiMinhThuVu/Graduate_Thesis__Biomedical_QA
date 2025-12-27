@@ -37,7 +37,8 @@ def process_answer_with_snippet_removal(sample, search_kw, step, paths, settings
             'results_gg_search': results_gg_search,
             'results_wiki_search': results_wiki_search
         }
-        retrieval_information, status, results_gg_search ,results_wiki_search = perform_retrieval(sample, search_kw, step, paths, settings, R7_info=R7_info)
+        key_entity = ""
+        retrieval_information, status, results_gg_search ,results_wiki_search = perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_info=R7_info)
         
         if status: # Nếu có sự thay đổi snippet hoặc tìm thấy snippet mới để xóa
             answer_generation = generate_answer_for_subq(question, search_kw, retrieval_information, step, paths, settings, dataset=dataset, type_q=sample['type'])

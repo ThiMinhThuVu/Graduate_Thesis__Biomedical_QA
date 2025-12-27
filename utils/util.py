@@ -347,6 +347,7 @@ def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
         "decomp": os.path.join(dirs["decomp"], f"step_1_{sample_id}.json"),
         "gg_search": os.path.join(dirs["retrieval"], f"step_2_gg_{sample_id}.json"),
         "wiki_search": os.path.join(dirs["retrieval"], f"step_2_wiki_{sample_id}.json"),
+        "wiki_abs": os.path.join(dirs["retrieval"], f"step_2_wiki_abs_{sample_id}.json"),
         "wiki_crawl": os.path.join(dirs["retrieval"], f"step_2_crawl_wiki_{sample_id}.json"),
         "paragraphs": os.path.join(dirs["retrieval"], f"step_2_paragraphs_{sample_id}.json"),
         "ner": os.path.join(dirs["ner"], f"{run}_step_3_ner_{sample_id}.json"),

@@ -1,6 +1,6 @@
 import requests
 import time
-from src.api_key import API_LIST_4O, API_LIST_O3, API_KEY_GG
+from src.api_key import API_LIST_4O, API_LIST_O3, API_KEY_GG, API_KEY_serp
 
 API_URL = "https://cf.mnapi.com/v1/chat/completions"  
 
@@ -60,7 +60,7 @@ def request_api(messages, model, temperature=0):
 
     raise RuntimeError("All APIs failed after multiple retries.")
 
-def search_google(query):
+def _search_google(query):
     max_retries = 10
     retry_delay = 2
    
@@ -94,6 +94,51 @@ def search_google(query):
                 time.sleep(retry_delay)
             else:
                 raise e  
+
+from serpapi import GoogleSearch
+
+def search_google(
+    query: str,
+    num_results: int = 10,
+    language: str = "en",
+    country: str = "us"
+):
+    """
+    Search Google using SerpAPI.
+
+    Args:
+        query (str): Search query
+        api_key (str): SerpAPI API key
+        num_results (int): Number of results to return
+        language (str): Language code (default: en)
+        country (str): Country code (default: us)
+
+    Returns:
+        list[dict]: Search results (title, snippet, link)
+    """
+
+    params = {
+        "engine": "google",
+        "q": query,
+        "api_key": API_KEY_serp,
+        "hl": language,
+        "gl": country,
+        "num": num_results
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+
+    output = []
+    for item in results.get("organic_results", []):
+        output.append({
+            "title": item.get("title"),
+            "snippet": item.get("snippet"),
+            "link": item.get("link")
+        })
+
+    return output
+
 
 if __name__ == "__main__":    
     # result = search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?")

@@ -60,9 +60,12 @@ def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, wiki_file_crawl, pa
     else:
         output_para = {}    
         
-    if step in output_para:
+    if step in output_para and isinstance(output_para[step], dict) and "selected_paragraphs" in output_para[step]:
         all_context = output_para[step]["selected_paragraphs"]
         return all_context
+    elif step in output_para:
+        print(f"Warning: paragraph cache for step {step} exists but missing 'selected_paragraphs', will recompute.")
+ 
     
     if os.path.exists(wiki_file_crawl):
         results_wiki = load_json(wiki_file_crawl)
@@ -275,61 +278,8 @@ def retrieval_abstract_wiki(search_kw):
     result = f"{page_title}: {abstract_text}"  
     return result
 
-# def retrieval_sparql(key_entity, search_kw):
-#     list_context = find_sparql_context(key_entity)
-#     ranked_docs = find_most_relevant_doc(search_kw, list_context)
-#     # ranked_docs = find_most_relevant_doc_embedding(search_kw, list_context)
-#     selected_context = select_top_documents(key_entity, ranked_docs)
-
-#     return selected_context
-
-
 def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_info=None, sparql_cache="data/wiki/sparql_cache.pkl"):
-    """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""
     retrieval_information = ""
-    
-    if 'wiki' in settings['dataset']: 
-        if settings['get_context_2wiki'] == "True": 
-            retrieval_information = retrieval_context_2wiki(key_entity, sample)
-
-        if settings['get_wiki'] == "True":
-            results_wiki_search = retrieval_wiki(key_entity, step, paths['wiki_search'])
-            retrieval_information += format_search_results_wiki_abs(results_wiki_search, step, paths['paragraphs'], topk=1) + "\n\n"
-         
-        if settings['get_crawl_wiki'] == "True":
-            crawl_wiki_context = crawl_wiki_page(
-                results_wiki_search, key_entity, settings['wiki_cache'],
-                paths['wiki_crawl'], paths['paragraphs'], step
-            )
-            retrieval_information += crawl_wiki_context
-        
-        if settings['get_abs_wiki'] == "True":
-            retrieval_information = retrieval_abstract_wiki(key_entity)
-        
-        if settings['get_gg'] == "True":
-            results_gg_search = retrieval_google(key_entity, step, paths['gg_search'])            
-            retrieval_information += format_search_results(results_gg_search, topk=1) + "\n\n"
-        
-        if settings["get_sparql_context"] == "True":
-            context, dict_result = process_fillter_wikidata_api(search_kw, key_entity)
-            
-            if sparql_cache:
-                QIDX = sample['QIDX']
-                sparql_cache_data = load_pickle(sparql_cache)
-                if QIDX in sparql_cache_data:
-                    sparql_cache_data[QIDX].append(dict_result)
-                else:
-                    sparql_cache_data[QIDX] = [dict_result]
-                save_pickle(sparql_cache_data, sparql_cache)
-            
-            if context is None:
-                return ""
-            retrieval_information += context
-
-        return retrieval_information
-    
-    if 'bioasq' in settings['dataset']:
-        retrieval_information += settings['context']
     
     if settings['run'] == 'R7':
         ans_old = R7_info["ans_old"]        
@@ -350,7 +300,31 @@ def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_i
             status = False
             
         return retrieval_information, status, results_gg_search ,results_wiki_search
+    
+    if 'wiki' in settings['dataset']: 
+        if settings['get_context_2wiki'] == "True": 
+            retrieval_information = retrieval_context_2wiki(key_entity, sample)
+
+        if settings['get_abs_wiki'] == "True": # = get_wiki + abstract
+            results_wiki_search = retrieval_wiki(key_entity, step, paths['wiki_search'])
+            retrieval_information += format_search_results_wiki_abs(results_wiki_search, step, paths['wiki_abs'], topk=1) + "\n\n"
+                 
+        if settings["get_sparql_context"] == "True":
+            context, dict_result = process_fillter_wikidata_api(search_kw, key_entity)
             
+            if sparql_cache:
+                QIDX = sample['QIDX']
+                sparql_cache_data = load_pickle(sparql_cache)
+                if QIDX in sparql_cache_data:
+                    sparql_cache_data[QIDX].append(dict_result)
+                else:
+                    sparql_cache_data[QIDX] = [dict_result]
+                save_pickle(sparql_cache_data, sparql_cache)
+            
+            if context is None:
+                context = ""
+            retrieval_information += context
+                
     if settings['get_gg'] == "True":
         results_gg_search = retrieval_google(key_entity, step, paths['gg_search'])            
         retrieval_information += format_search_results(results_gg_search, topk=5) + "\n\n"
@@ -358,13 +332,15 @@ def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_i
     if settings['get_wiki'] == "True":
         results_wiki_search = retrieval_wiki(key_entity, step, paths['wiki_search'])
         retrieval_information += format_search_results(results_wiki_search, topk=5) + "\n\n"
-        
+    
+    if settings['get_wiki'] == "True" or settings['get_abs_wiki'] == "True":
         if settings['get_crawl_wiki'] == "True":
             crawl_wiki_context = crawl_wiki_page(
                 results_wiki_search, key_entity, settings['wiki_cache'],
                 paths['wiki_crawl'], paths['paragraphs'], step
             )
             retrieval_information += crawl_wiki_context
+                
         
     return retrieval_information
 

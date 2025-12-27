@@ -1,7 +1,7 @@
 run:
-  dataset: "medhop" #"wiki"
+  dataset: "medhop" #"medhop" #"wiki"
   question_type: "bridge_comparison"
-  threads: [0, 1]
+  threads: [5, 6]
   data_split: "test"
   
 dataset:
@@ -23,47 +23,41 @@ classification:
     model_path: "classification/model/medhop/biobert_classifier.pth"
     tokenizer_dir: "classification/model/medhop/seq_tokenizer"
 
-output_path:
-  # templates use placeholders {sample_id} and {run}; replace with real values in code
-  gg_search: "{retrieval}/step_2_gg_{sample_id}.json"
-  wiki_search: "{retrieval}/step_2_wiki_{sample_id}.json"
-  wiki_crawl: "{retrieval}/step_2_crawl_wiki_{sample_id}.json"
-  paragraphs: "{retrieval}/step_2_paragraphs_{sample_id}.json"
-  inf_cache: "{retrieval}/inf_cache_{sample_id}.json"
-  qi_answer: "{results}/{run}_step_3b_ans_{sample_id}.json"
-  final_answer: "{all_ans}/{run}_step_3b_all_ans_{sample_id}.json"
-  evidence: "{evidence}/{run}_evidence_{sample_id}.json"
-  ans_old: "{all_ans}/R11_step_3b_all_ans_{sample_id}.json"
-
 type_run:
   R4: {
-      "dataset": "medhop_",
+      "dataset": "{dataset}_",
       "get_gg": "True",
       "get_wiki": "True",
+      "get_abs_wiki": "False",
       "get_crawl_wiki": "True",
       "run": "R4",
       "context": "",
       "search_key_entity": "False",
-      "get_context_2wiki": "False"
+      "get_context_2wiki": "False",
+      "get_sparql_context": "False"
     }
   R7: {
-      "dataset": "medhop_",
+      "dataset": "{dataset}_",
       "get_gg": "True",
       "get_wiki": "True",
+      "get_abs_wiki": "False",
       "get_crawl_wiki": "True",
       "run": "R7",
       "context": "",
       "search_key_entity": "False",
-      "get_context_2wiki": "False"
+      "get_context_2wiki": "False",
+      "get_sparql_context": "False"
     }
   R11: {
-      "dataset": "medhop_",
+      "dataset": "{dataset}_",
       "get_gg": "True",
       "get_wiki": "True",
-      "get_crawl_wiki": "True",
+      "get_abs_wiki": "False", #chỉ chọn 1 trong 2: get_abs_wiki | get_wiki
+      "get_crawl_wiki": "True",      
       "run": "R11",
       "context": "",
-      "search_key_entity": "False",
-      "get_context_2wiki": "False"
+      "search_key_entity": "True",
+      "get_context_2wiki": "False",
+      "get_sparql_context": "False"
     }
   

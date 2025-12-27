@@ -1,3 +1,6 @@
+from typing import Optional, List, Dict, Any
+import json
+
 def load_prompt_gen_sub(question=None, is_seq=False, dataset=None, type_q=None, context=None):
     if question:
         if is_seq:
@@ -1738,6 +1741,7 @@ def prompt_split_question(question):
 
     ### TASK: Complex question: "{question}"
     
+    
     JSON array result:
     """
         
@@ -1746,4 +1750,784 @@ def prompt_split_question(question):
         {"role": "user", "content": user_prompt.strip()}
     ]
          
+    return messages
+
+
+# ============================================================================
+# ANSWER GENERATION PROMPTS - Extracted from gen_ans.py
+# ============================================================================
+
+def get_answer_generation_system_prompt(dataset: Optional[str] = None) -> str:
+    """
+    Get system message for answer generation with injected rules.
+    
+    Args:
+        dataset: Dataset context (medhop, bioasq, cwq, wiki)
+        
+    Returns:
+        System message string
+    """
+    if dataset in ["medhop", "bioasq"]:
+        domain_context = "You are an expert in medical and scientific knowledge."
+    else:
+        domain_context = "You are an expert in general knowledge."
+    
+    return f"""{domain_context} Your task is to:
+1. Analyze the provided context carefully
+2. Identify explicit facts first, then make logical inferences when needed
+3. Generate accurate answers following the EXACT formatting rules provided
+4. Output a valid JSON response
+
+CRITICAL: Follow the formatting rules PRECISELY. The answer format must match the rules exactly."""
+
+
+def get_answer_generation_context_synthesis_rules() -> str:
+    """
+    Get context synthesis rules for answer generation.
+    
+    Returns:
+        Rules section string for prompt injection
+    """
+    return """
+### CONTEXT SYNTHESIS RULES ###
+- Read ALL provided context carefully
+- Connect information across documents
+- Treat synonyms/alternate names as the same entity
+- Prioritize explicit evidence over inference
+- Do NOT generate information (especially locations, names) not present in context
+- If no explicit answer exists, infer from strong clues:
+  * Long-term residence/workplace (strongest clue)
+  * Professional role implied by context
+  * Place of birth/nationality as fallback for location questions
+- Mark inferred answers clearly in long_answer
+"""
+
+
+def get_answer_generation_type_specific_rules(type_q: Optional[str] = None, dataset: Optional[str] = None) -> str:
+    """
+    Get type-specific rules for answer generation based on question type and dataset.
+    
+    For MedHopQA (medhop): Returns biomedical-specific rules.
+    For 2WikiMultiHopQA (wiki): Returns rules based on type_q (inference, compositional, 
+    comparison, bridge_comparison).
+    
+    Args:
+        type_q: Question type for 2WikiMultiHopQA (inference, compositional, comparison, 
+                bridge_comparison). Not used for MedHopQA.
+        dataset: Dataset context (medhop, wiki)
+        
+    Returns:
+        Type-specific rules string for prompt injection
+    """
+    # =========================================================================
+    # MEDHOP (Biomedical Domain)
+    # =========================================================================
+    if dataset == "medhop":
+        return """
+### BIOMEDICAL DOMAIN RULES ###
+
+**Answer Format by Question Pattern:**
+
+1. COUNT Questions ("how many", "number of"):
+   - Return ONLY a number or numeric phrase
+   - Examples: '10', 'ten', 'twenty-five'
+
+2. TIME/DURATION Questions ("how long", "duration"):
+   - Return concise time value with units
+   - Examples: '36 hours', '3 days', '2 weeks'
+
+3. YES/NO Questions ("is", "are", "does", "can"):
+   - Return exactly 'Yes' or 'No'
+   - No additional explanation in short_answer
+
+4. ENTITY Questions ("what", "which"):
+   - Return the FULL biomedical noun phrase
+   - Include complete terminology, not abbreviations alone
+   - Examples: 'chromosome X', 'interleukin-6', 'dopamine receptor D2'
+
+5. ORGANISM Questions ("what organism", "what type"):
+   - Return the organism type/classification
+   - Examples: 'bacterium', 'fungus', 'virus', 'mammal'
+
+6. RANGE/INTERVAL Questions ("range", "between"):
+   - Return numeric range with units
+   - Examples: '300-330 msec', '10-20%', '5-10 days'
+
+7. DEFAULT (other questions):
+   - Provide the most direct, specific answer from context
+   - Use complete biomedical terminology
+"""
+
+    # =========================================================================
+    # 2WikiMultiHopQA (wiki) - Based on type_q
+    # =========================================================================
+    if dataset == "wiki":
+        if type_q == "inference":
+            return """
+### INFERENCE TYPE RULES ###
+
+This question involves family relationships or royal/noble figures.
+
+**For ROYAL/NOBLE Figures:**
+- Format answer as: prefix|name|suffix
+- INCLUDE:
+  * Royal prefixes: King, Queen, Prince, Princess, Duke, Duchess, Sir, Dame, Lord, Lady
+  * Numbered hereditary titles: '2nd Earl of Stafford', 'III'
+- EXCLUDE:
+  * Territorial designations based only on land ownership
+  * Parentheses in final answer
+
+**Examples:**
+- "King|William IV|"
+- "Princess|Luisa Carlotta|of Naples and Sicily"
+- "|Thomas Monck|MP"
+- "|Henrietta Susanna Tracy|"
+
+**For Non-Royal Figures:**
+- Return the full name as found in context
+"""
+
+        elif type_q == "compositional":
+            return """
+### COMPOSITIONAL TYPE RULES ###
+
+This question requires connecting facts across multiple documents.
+
+**Core Requirements:**
+- MUST synthesize information from different sources
+- Treat synonyms/alternate names as the same entity
+  * Example: "John Doe" = "Jean Doe" = same person
+
+**Location Answers:**
+- Return MOST SPECIFIC location available (city > state > country)
+- Do NOT generate locations not present in context
+- If only nationality is available, use as country fallback and mark as INFERRED
+
+**Nationality Answers:**
+- "X-born Y" (e.g., "Spanish-born Brazilian") → answer is "X" (Spanish)
+- "X-Y" nationality (e.g., "Mexican-American") → answer is "X" (Mexican)
+- "X Y" nationality (e.g., "German Italian") → answer is "Y" (Italian)
+
+**General Categories:**
+- Use the broadest applicable term
+- Example: "cancer" instead of "bowel cancer"
+
+**Compound Answers:**
+- For multiple concepts, join with pipe '|' separator
+- Example: "Presidential|Unitary|Democratic"
+"""
+
+        elif type_q in ["comparison", "bridge_comparison"]:
+            return """
+### COMPARISON TYPE RULES ###
+
+This question compares two or more entities.
+
+**Choice Questions (Which/Who is older/younger/later/earlier/first/last):**
+- Return the NAME of the chosen option extracted EXACTLY from the question
+- Do NOT return computed values like dates
+- Example: "Which film has director born later, A Flame In My Heart or Butcher, Baker?" 
+  → Answer is "A Flame In My Heart" or "Butcher, Baker", NOT a date
+
+**Confirmation Questions (Are/Do both X and Y the same...):**
+- Return 'yes' or 'no' (lowercase only)
+- Do NOT include additional explanation in short_answer
+- Example: "Are both directors from the same country?" → "yes" or "no"
+"""
+
+    # No specific rules for unknown dataset/type
+    return ""
+
+
+def get_answer_generation_output_format(type_q: Optional[str] = None, is_royal_noble: bool = False) -> str:
+
+    if type_q == "inference" or is_royal_noble:
+        return """{
+    "long_answer": "Step-by-step explanation with evidence citations",
+    "short_answer": "Answer following formatting rules",
+    "prefix": "Royal/noble prefix or NAN",
+    "name": "Core personal name",
+    "suffix": "Titles after name or NAN"
+}"""
+    else:
+        return """{
+    "long_answer": "Step-by-step explanation with evidence citations",
+    "short_answer": "Answer following formatting rules exactly"
+}"""
+
+
+def get_answer_generation_user_prompt(
+    question: str,
+    context_str: str,
+    rules_text: str,
+    output_format: str,
+    key_entity: Optional[str] = None
+) -> str:
+    
+    key_entity_text = f"\nKey Entity: {key_entity}" if key_entity else ""
+    
+    return f"""Task: Answer the following question based on the provided context.
+
+Question: {question}{key_entity_text}
+
+{rules_text}
+
+Context:
+{context_str}
+
+Output Format (strict JSON only):
+{output_format}
+
+IMPORTANT: 
+- Your entire response must be ONLY the JSON object
+- If information is not available, use "Insufficient information" as the short_answer
+- Follow the formatting rules EXACTLY"""
+
+
+# ============================================================================
+# ANSWER RULES PREDICTION PROMPTS - Extracted from predict_ans_rules.py
+# ============================================================================
+
+def get_answer_rules_prediction_system_prompt() -> str:
+    
+    return """You are an expert in natural language understanding and question analysis.
+
+Your task is to analyze questions and determine the best answer formatting rules to apply.
+
+Consider:
+- Question patterns (yes/no, comparison, choice, etc.)
+- Entity types being asked about (person, place, biomedical, etc.)
+- Special cases (royal/noble figures, compound answers, etc.)"""
+
+
+def get_answer_rules_prediction_user_prompt(
+    question: str,
+    rules_reference: str,
+    dataset: Optional[str] = None,
+    type_q: Optional[str] = None
+) -> str:
+    """
+    Build user prompt for answer rules prediction.
+    
+    Args:
+        question: The question to analyze
+        rules_reference: JSON string of available rules
+        dataset: Dataset context (medhop, bioasq, cwq, wiki)
+        type_q: Question type hint (inference, compositional, comparison, bridge_comparison)
+        
+    Returns:
+        Complete user prompt string
+    """
+    context_info = ""
+    if dataset:
+        context_info += f"\nDataset: {dataset}"
+        if dataset in ["medhop", "bioasq"]:
+            context_info += " (biomedical/scientific domain)"
+        elif dataset == "wiki":
+            context_info += " (general knowledge, Wikipedia-based)"
+        elif dataset == "cwq":
+            context_info += " (complex web questions)"
+    
+    if type_q:
+        context_info += f"\nQuestion Type Hint: {type_q}"
+        if type_q == "inference":
+            context_info += " (family relationships, royal/noble figures)"
+        elif type_q == "compositional":
+            context_info += " (multi-hop facts about entities)"
+        elif type_q in ["comparison", "bridge_comparison"]:
+            context_info += " (comparing two entities)"
+
+    return f"""Analyze this question and determine the appropriate answer formatting rules.
+
+Question: "{question}"
+{context_info}
+
+Available Rules Reference:
+{rules_reference}
+
+Task: Analyze the question and output a JSON object with:
+1. "question_type": The primary type of question (from the rules reference keys)
+2. "primary_rule": The main rule name that should be applied
+3. "secondary_rules": Array of additional rule names that may also apply
+4. "formatting_instructions": Specific formatting instructions for this question
+5. "examples": 2-3 example answers that would follow the rules
+6. "reasoning": Brief explanation of why these rules were chosen
+
+Output ONLY valid JSON, no additional text."""
+
+
+# ============================================================================
+# ANSWER SELECTION PROMPTS - Extracted from handle_multi_choice.py
+# ============================================================================
+
+def get_answer_selection_user_prompt(
+    question: str,
+    answers: List[Dict[str, Any]]
+) -> str:
+    """
+    Build user prompt for answer selection from multiple candidates.
+    
+    Optimized for o3-mini: minimalist and constraint-focused.
+    
+    Args:
+        question: The question being answered
+        answers: List of answer dicts with 'short_answer' and 'long_answer'
+        
+    Returns:
+        Complete user prompt string
+    """
+    # Format answers for comparison
+    formatted_answers = "\n\n".join([
+        f"[{idx + 1}] Short: {ans.get('short_answer', 'N/A')}\n    Long: {ans.get('long_answer', 'N/A')}"
+        for idx, ans in enumerate(answers)
+    ])
+    
+    return f"""Goal: Select the single best answer to the question from {len(answers)} candidates.
+
+Constraints:
+- Output valid JSON only
+- Choose exactly one answer (1-{len(answers)})
+- Selection criteria (in priority order):
+  1. Accuracy: Answer correctly addresses the question
+  2. Specificity: Answer is appropriately detailed/specific
+  3. Evidence quality: Reasoning in long_answer is well-supported
+  4. Consistency: Answer is internally consistent
+- For identical/equivalent answers, prefer the one with better reasoning
+- For conflicting answers, choose based on evidence strength
+
+Question: {question}
+
+Candidates:
+{formatted_answers}
+
+Required JSON format:
+{{
+    "answer_index": <1 to {len(answers)}>,
+    "reasoning": "Brief explanation of why this answer is best",
+    "confidence": "high|medium|low"
+}}"""
+
+
+# ============================================================================
+# LEGACY PROMPTS - Extracted from generate_answer.py
+# ============================================================================
+
+def get_parallel_answers_combination_prompt(question: str, context: str) -> str:
+    """
+    Get prompt for combining parallel answers from multiple sources.
+    
+    Used in generate_combine_parallel_answers().
+    
+    Args:
+        question: The question being answered
+        context: Combined context from multiple sources
+        
+    Returns:
+        Prompt string
+    """
+    return f"""Question: {question}
+Instructions:
+1. Analyze the question and the provided information to determine the answer.
+2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
+- long_answer: A detailed explanation synthesized from the information.
+- short_answer: A single string with the direct answer. Strictly follow these rules:
+    * **1. Choice Questions (Which/Who/...):**
+    - When the question asks to choose an option based on a criterion (e.g., younger, first, more recently, older, later, ...).
+    - The `short_answer` must be the name of the chosen option, **extracted exactly** from the question.
+    - Example: For "Which film has the director born later, A Flame In My Heart or Butcher, Baker, Nightmare Maker?", the short_answer is "A Flame In My Heart".
+
+    * **2. Confirmation Questions (Are/Do/...):**
+    - When the question asks to confirm a fact (e.g., same country, same nationality).
+    - The `short_answer` must be **"yes"** or **"no"** (lowercase).
+    - Example: For "Are director of film Move (1970 Film) and director of film Méditerranée (1963 Film) from the same country?", the short_answer is "no".
+3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
+
+Information:
+Context: {context}
+
+Response (strict JSON):
+{{
+"long_answer": "detailed explanation",
+"short_answer": "answer as per rules"
+}}
+"""
+
+
+def get_multiple_choice_selection_prompt(question: str, context: str) -> str:
+    """
+    Get prompt for selecting answer from multiple choice options.
+    
+    Used in gen_ans_multiple_choice().
+    
+    Args:
+        question: The question being answered
+        context: Context containing multiple choice options
+        
+    Returns:
+        Prompt string
+    """
+    return f"""Question: {question}
+Instructions:
+- Please base your answer ONLY on the context provided.
+- Please only choose the given answers (without additional explanations). For example: "A", "B", "C", "D", "E", "F", "G".
+- Do not include anything else aside from your answer.
+
+Context:
+{context}
+Please provide your short answer to the question based on the context above."""
+
+
+# ============================================================================
+# COMPREHENSIVE ANSWER VALIDATION RULES - Generic Rule Definitions
+# ============================================================================
+
+COMPREHENSIVE_VALIDATION_RULES = {
+    "question_type_detection": {
+        "description": "Identify and match question type patterns",
+        "categories": {
+            "count": {
+                "keywords": ["how many", "how much", "number of", "total"],
+                "format": "ONLY a number or numeric phrase (e.g., '10', 'ten')",
+                "rule": "No extra text allowed"
+            },
+            "time_duration": {
+                "keywords": ["how long", "duration", "how many hours", "how many days"],
+                "format": "Concise time value (e.g., '36 hours', '3 days')",
+                "rule": "Must be time-specific"
+            },
+            "yes_no": {
+                "keywords": ["is ", "are ", "do ", "does ", "can ", "could ", "will ", "would ", "should "],
+                "format": "Exactly 'Yes' or 'No'",
+                "rule": "Binary answer only"
+            },
+            "entity_biomedical": {
+                "keywords": ["what", "who", "which"],
+                "domain": "biomedical/scientific",
+                "format": "FULL noun phrase (e.g., 'chromosome X', 'interleukin-6', 'dopamine receptor D2')",
+                "rule": "Must be complete biomedical terminology"
+            },
+            "entity_general": {
+                "keywords": ["what", "who", "which"],
+                "domain": "general knowledge/people/films/places",
+                "format": "Proper names are VALID (e.g., 'Manuel Romero', 'Paris')",
+                "rule": "Context determines biomedical vs general"
+            },
+            "organism": {
+                "keywords": ["what organism", "what type of organism"],
+                "format": "Organism type (e.g., 'bacterium', 'fungus')",
+                "rule": "Must be organism classification"
+            },
+            "range_interval": {
+                "keywords": ["range", "between", "from", "to"],
+                "format": "Numeric range (e.g., '300-330 msec', '10-20%')",
+                "rule": "Must be interval format"
+            },
+            "comparison": {
+                "keywords": ["older", "younger", "later", "earlier", "which", "who has"],
+                "format": "NAME of chosen option extracted EXACTLY from question",
+                "rule": "Return option name, NOT computed value (not a date for older/younger)"
+            },
+            "confirmation": {
+                "keywords": ["are ", "is ", "same", "different", "both"],
+                "format": "'yes' or 'no' (lowercase)",
+                "rule": "Binary confirmation only"
+            },
+            "inference_royal_noble": {
+                "keywords": ["father", "mother", "son", "daughter", "king", "queen", "prince", "princess"],
+                "format": "prefix|name|suffix (e.g., 'King|William IV|')",
+                "rule": "Include royal prefixes and hereditary titles, EXCLUDE territorial designations"
+            },
+            "compositional": {
+                "keywords": ["where", "nationality", "education", "occupation"],
+                "format": "Entity-specific (most specific location: city > state > country)",
+                "rule": "Connect facts across multiple documents"
+            }
+        }
+    },
+    "medhop_biomedical_rules": {
+        "description": "Rules specific to MedHop/BioASQ biomedical domain",
+        "count_questions": {
+            "rule": "Answer must be ONLY a number or numeric phrase",
+            "examples": ["10", "ten", "twenty-five"],
+            "violations": ["extra text", "non-numeric content"]
+        },
+        "time_duration_questions": {
+            "rule": "Answer must be concise time value",
+            "examples": ["36 hours", "3 days", "2 weeks"],
+            "violations": ["imprecise duration", "narrative time references"]
+        },
+        "yes_no_questions": {
+            "rule": "Answer must be exactly 'Yes' or 'No'",
+            "violations": ["yes/no with explanation", "maybe", "uncertain"]
+        },
+        "entity_questions": {
+            "rule": "Return FULL noun phrase for biomedical/scientific entities",
+            "examples": ["chromosome X", "interleukin-6", "dopamine receptor D2"],
+            "violations": ["partial names", "abbreviations without full form"]
+        },
+        "organism_questions": {
+            "rule": "Return organism type/classification",
+            "examples": ["bacterium", "fungus", "virus"],
+            "violations": ["specific organism name instead of type"]
+        },
+        "range_questions": {
+            "rule": "Return numeric range with units",
+            "examples": ["300-330 msec", "10-20%"],
+            "violations": ["single value instead of range"]
+        }
+    },
+    "wiki_general_knowledge_rules": {
+        "description": "Rules for Wikipedia/general knowledge domain",
+        "comparison_questions": {
+            "rule": "Answer must be the NAME of chosen option extracted EXACTLY from question",
+            "examples": [
+                "Question: 'Which film has director born later, A Flame In My Heart or Butcher, Baker?'",
+                "Answer: 'A Flame In My Heart' (NOT a date)"
+            ],
+            "violations": ["computed value", "date instead of option name", "paraphrased option"]
+        },
+        "confirmation_questions": {
+            "rule": "Answer must be 'yes' or 'no' (lowercase)",
+            "examples": ["yes", "no"],
+            "violations": ["Yes/No (capitalized)", "explanation after yes/no"]
+        },
+        "inference_royal_noble": {
+            "rule": "Format: prefix|name|suffix with mandatory royal prefixes",
+            "prefixes_required": ["King", "Queen", "Prince", "Princess", "Duke", "Duchess", "Sir", "Dame", "Lord", "Lady"],
+            "include": ["numbered hereditary titles: '2nd Earl of Stafford'"],
+            "exclude": ["territorial designations based only on land ownership"],
+            "examples": ["King|William IV|", "Princess|Luisa Carlotta|of Naples and Sicily"],
+            "violations": ["missing royal prefix", "parentheses in answer", "territorial designations"]
+        },
+        "compound_answers": {
+            "rule": "Deconstruct multiple concepts, join with pipe '|' separator",
+            "examples": ["Presidential|Unitary|Democratic", "Drawing|Painting|Photography"],
+            "violations": ["unseparated concepts", "single compound noun"]
+        }
+    },
+    "location_rules": {
+        "description": "Rules for location/geography answers",
+        "specificity": "Use MOST SPECIFIC (city > state > country)",
+        "generation": "Do NOT generate location names not in context",
+        "fallback": {
+            "rule": "For birthplace/death without explicit mention: nationality → country as fallback",
+            "must_mark": "Clearly mark as INFERRED if using nationality fallback"
+        },
+        "violations": ["too general location", "hallucinated place", "incorrect specificity"]
+    },
+    "nationality_rules": {
+        "description": "Rules for nationality/citizenship answers",
+        "patterns": {
+            "x_born_y": {"pattern": "X-born Y", "answer": "X"},
+            "x_y_nationality": {"pattern": "X-Y nationality", "answer": "X"},
+            "x_y_space": {"pattern": "X Y nationality", "answer": "Y"}
+        }
+    },
+    "content_validation": {
+        "description": "General content validation rules",
+        "requirements": [
+            "No hallucinated entities/locations",
+            "Synonyms/alternate names treated as same entity",
+            "Evidence properly cited in long_answer",
+            "Explicit evidence prioritized over inference",
+            "'Insufficient information' is VALID answer when context truly lacks information"
+        ],
+        "long_answer_requirements": {
+            "flexibility": "Accept any reasonable explanation connecting evidence to answer",
+            "optional": ["citing document IDs", "step-by-step format", "rigid structure"],
+            "priority": "Check that long_answer is consistent with short_answer and contains reasoning",
+            "strict": False
+        }
+    },
+    "insufficient_information": {
+        "description": "Rules for 'Insufficient information' answers",
+        "when_valid": "Context truly lacks needed information",
+        "short_answer": "Insufficient information",
+        "long_answer": "Should explain why information is unavailable, but be flexible with format",
+        "content_check": "SKIP strict content checks for this answer type"
+    }
+}
+
+
+def get_rules_for_question(question: str, dataset: Optional[str] = None, type_q: Optional[str] = None) -> Dict[str, Any]:
+    """
+    Get all applicable rules for a question without using if-else logic.
+    
+    This function analyzes the question and returns matching rules from COMPREHENSIVE_VALIDATION_RULES
+    based on keyword matching and patterns, allowing for generalization across question types.
+    
+    Args:
+        question: The question text to analyze
+        dataset: Optional dataset context (medhop, bioasq, cwq, wiki)
+        type_q: Optional question type hint (inference, compositional, comparison, bridge_comparison)
+        
+    Returns:
+        Dict containing all relevant rules, question detection, and formatting requirements
+    """
+    question_lower = question.lower()
+    applicable_rules = {}
+    
+    # Detect question type by keyword matching (no if-else)
+    question_type_detection = COMPREHENSIVE_VALIDATION_RULES["question_type_detection"]
+    matched_types = []
+    
+    for qtype, qtype_info in question_type_detection["categories"].items():
+        keywords = qtype_info.get("keywords", [])
+        if any(kw in question_lower for kw in keywords):
+            matched_types.append({
+                "type": qtype,
+                "format": qtype_info.get("format", ""),
+                "rule": qtype_info.get("rule", ""),
+                "keywords_matched": [kw for kw in keywords if kw in question_lower]
+            })
+    
+    applicable_rules["detected_question_types"] = matched_types
+    
+    # Apply domain-specific rules based on dataset
+    if dataset in ["medhop", "bioasq"]:
+        applicable_rules["domain"] = "biomedical"
+        applicable_rules["domain_rules"] = COMPREHENSIVE_VALIDATION_RULES["medhop_biomedical_rules"]
+    elif dataset in ["cwq", "wiki"]:
+        applicable_rules["domain"] = "general_knowledge"
+        applicable_rules["domain_rules"] = COMPREHENSIVE_VALIDATION_RULES["wiki_general_knowledge_rules"]
+    else:
+        applicable_rules["domain"] = "unknown"
+    
+    # Add universal rules
+    applicable_rules["location_rules"] = COMPREHENSIVE_VALIDATION_RULES["location_rules"]
+    applicable_rules["nationality_rules"] = COMPREHENSIVE_VALIDATION_RULES["nationality_rules"]
+    applicable_rules["content_validation"] = COMPREHENSIVE_VALIDATION_RULES["content_validation"]
+    applicable_rules["insufficient_information"] = COMPREHENSIVE_VALIDATION_RULES["insufficient_information"]
+    
+    # Add type-specific hint if provided
+    if type_q:
+        applicable_rules["type_q_hint"] = type_q
+    
+    return applicable_rules
+
+
+def get_prompt_for_answer_validation(question: str, answer: dict, dataset: str = "", type_q: str = "") -> List[Dict[str, str]]:
+    """
+    Generate validation prompt for checking if answer follows normalization rules.
+    Uses comprehensive validation checklist covering all question types and domains.
+    NO IF-ELSE LOGIC - All rules embedded in prompt for LLM to detect and apply.
+    
+    Args:
+        question: The question being answered
+        answer: Dictionary with 'short_answer' and 'long_answer' keys
+        dataset: Dataset name (optional, for context only - not used for conditional logic)
+        type_q: Question type (optional, for context only - not used for conditional logic)
+    
+    Returns:
+        List of message dictionaries for GPT API
+    
+    Example:
+        >>> messages = get_prompt_for_answer_validation(
+        ...     question="How many genes are involved?",
+        ...     answer={"short_answer": "5", "long_answer": "Based on the evidence..."}
+        ... )
+        >>> response = gpt_request(messages, model="gpt-4o-mini")
+    """
+    system_message = """You are an expert answer validator for multi-hop question answering systems. Your task is to validate answers against comprehensive normalization rules covering biomedical, general knowledge, and specialized question types."""
+    
+    user_prompt = f"""Task: Validate if this answer follows all normalization rules. Think step-by-step.
+
+Question: {question}
+Short Answer: {answer.get('short_answer', '')}
+Long Answer: {answer.get('long_answer', '')}
+
+COMPREHENSIVE VALIDATION CHECKLIST:
+
+1. QUESTION TYPE DETECTION:
+   - Identify question type: count ("how many"), time/duration, yes/no, entity (Who/Which/What), organism, comparison, inference, compositional
+   - Verify answer format matches detected type
+
+2. BIOMEDICAL RULES:
+   a) Count Questions:
+      - Answer must be ONLY a number or numeric phrase (e.g., "10", "ten")
+      - No extra text allowed
+   
+   b) Time/Duration Questions:
+      - Answer must be concise time value (e.g., "36 hours", "3 days")
+   
+   c) Yes/No Questions:
+      - Answer must be exactly "Yes" or "No"
+   
+   d) Entity Questions (Who/Which/What):
+      - For BIOMEDICAL/SCIENTIFIC entities: Must return FULL noun phrase (e.g., "chromosome X", "interleukin-6", "dopamine receptor D2")
+      - For GENERAL KNOWLEDGE (people/films/places): Proper names are VALID (e.g., "Manuel Romero", "Paris")
+      - Check context to determine if question is biomedical or general knowledge
+   
+   e) Organism Questions:
+      - Return organism type (e.g., "bacterium", "fungus")
+   
+   f) Range/Interval Questions:
+      - Return numeric range (e.g., "300-330 msec", "10-20%")
+   
+   g) Lists:
+      - If none of above apply, provide concise comma-separated items
+
+3. WIKI/GENERAL KNOWLEDGE RULES:
+   a) Comparison Questions (Which/Who...older/younger/later/earlier):
+      - Answer must be the NAME of chosen option extracted EXACTLY from question
+      - Example: For "Which film has director born later, A or B?", answer is "A" NOT a date
+   
+   b) Confirmation Questions (Are/Do...same):
+      - Answer must be "yes" or "no" (lowercase)
+   
+   c) Inference Questions (Royal/Noble Figures):
+      - Royal prefix required if applicable: King/Queen, Prince/Princess, Duke/Duchess, etc.
+      - Include numbered hereditary titles: "2nd Earl of Stafford"
+      - Include honorifics: Sir/Dame/Lord/Lady
+      - EXCLUDE territorial designations based only on land ownership
+      - NO parentheses in final answer (but analyze them for context)
+      - Format for royal/noble: "prefix|name|suffix" (e.g., "King|William IV|")
+   
+   d) Compound Answers:
+      - Multiple concepts MUST be deconstructed
+      - Join with pipe "|" separator
+      - Example: "Presidential unitary democratic republic" → "Presidential|Unitary|Democratic"
+
+4. LOCATION RULES:
+   - Always use MOST SPECIFIC location (city > state > country)
+   - Do NOT generate location names not in context
+   - For birthplace/death without explicit mention: use nationality → country as fallback
+   - Clearly mark as INFERRED if using nationality fallback
+
+5. NATIONALITY RULES:
+   - "X-born Y" → answer "X"
+   - "X-Y nationality" → answer "X"
+   - "X Y nationality" → answer "Y"
+
+6. CONTENT VALIDATION:
+   - No hallucinated entities/locations
+   - Synonyms/alternate names treated as same entity
+   - Evidence properly cited in long_answer
+   - Explicit evidence prioritized over inference
+   - "Insufficient information" is a VALID answer when the context truly lacks needed information
+
+7. SPECIAL CASE - "Insufficient information":
+   - Short answer = "Insufficient information" → SKIP strict content checks
+   - Long_answer should explain why information is unavailable, but be flexible with format
+
+8. LONG ANSWER VALIDATION (FLEXIBLE):
+   - Long answer should generally support the short answer with reasoning
+   - Accept any reasonable explanation that connects evidence to the answer
+   - Citing document IDs (like Q6752853) or specific evidence sources is good but not required
+   - Step-by-step explanations are encouraged but not mandatory
+   - PRIORITY: Check only that long_answer is consistent with short_answer and contains some reasoning
+   - Do NOT enforce rigid formatting requirements on the long answer
+
+Output Format (strict JSON):
+{{
+  "is_valid": true/false,
+  "violations": ["list of specific rule violations found with rule category, empty if valid"],
+  "additional_rules": "Specific corrective instructions to inject into generator prompt (only if is_valid=false, otherwise empty string)"
+}}"""
+    
+    messages = [
+        {"role": "system", "content": system_message},
+        {"role": "user", "content": user_prompt}
+    ]
+    
     return messages
