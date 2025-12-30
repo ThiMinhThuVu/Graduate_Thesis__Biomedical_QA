@@ -17,12 +17,12 @@ global nlp_bio
 global nlp_standard
 wiki_cache_data = {}
 nlp_bio = None
-# nlp_standard = None
-try:
-    nlp_standard = spacy.load("en_core_web_lg")
-except:
-    print("Standard English model not found. Please install it with: python -m spacy download en_core_web_lg")
-    nlp_standard = None
+nlp_standard = None
+# try:
+#     nlp_standard = spacy.load("en_core_web_lg")
+# except:
+#     print("Standard English model not found. Please install it with: python -m spacy download en_core_web_lg")
+#     nlp_standard = None
     
 def load_spacy_model():
     global wiki_cache_data
@@ -42,7 +42,7 @@ def load_spacy_model():
     nlp_standard = spacy.load("en_core_web_lg")  # Standard English model
 
 
-def generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=None, type_q=None):
+def _generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=None, type_q=None):
     if dataset in ["wiki", "cwq"]:
         # retrieval_information = [retrieval_information]
         return generate_answer_new(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
@@ -61,6 +61,23 @@ def generate_answer_for_subq(subquestion, key_entities, retrieval_information, s
             key_entities += " BioEntities: " + ", ".join(bio_entities)
         # retrieval_information = [retrieval_information]
         return generate_answer_new(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
+
+def generate_answer_for_subq(subquestion, key_entities, retrieval_information, target_label, step, paths, settings, dataset=None, type_q=None):
+    ner_filepath = paths['ner']
+    output_ner = load_json(ner_filepath) if os.path.exists(ner_filepath) else {}
+    
+    if step in output_ner and settings['run'] != "R7":
+        list_entities = output_ner[step]
+    else:
+        print(f"Extracting entities.")
+        query_for_ner = subquestion + " " + retrieval_information
+        list_entities = extract_with_models(query_for_ner, nlp_bio, nlp_standard, target_label, dataset=dataset)
+        output_ner[step] = list_entities
+        save_json(output_ner, ner_filepath)
+      
+    key_entities += f" {target_label} Entities: " + ", ".join(list_entities)
+    
+    return generate_answer_new(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
 
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None, query_wikidata=None):
     sample_id = str(sample['QIDX']) 
@@ -145,6 +162,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     step = str(step)   
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword']
+                    target_labels = item['target_labels']
                     if settings['search_key_entity'] == "True": 
                         if item['key_entity'] == "" or item['key_entity'] == None: 
                             key_entities = short_ans
@@ -186,6 +204,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     dict_ans[q_i][path_i][step]["question"] = subquestion
                     dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq
                     dict_ans[q_i][path_i][step]["key_entity"] = key_entities
+                    dict_ans[q_i][path_i][step]["target_labels"] = target_labels
                     dict_ans[q_i][path_i][step]["short_answer"] = short_ans
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
@@ -206,6 +225,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     step = str(step)
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword']
+                    target_labels = item['target_labels']
                     
                     if settings['search_key_entity'] == "True": 
                         if item['key_entity'] == "" or item['key_entity'] == None: 
@@ -221,7 +241,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
 
                     if query_wikidata:
                         if step == '0':
-                            answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
+                            answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, target_labels, step, paths, settings, dataset=dataset, type_q=type_q)
                             short_ans = answer_generation["short_answer"]
                             long_ans = answer_generation["long_answer"]
                         
@@ -241,7 +261,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                                 answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)     
                                 normalized_v2 = answer_generation
                             else:
-                                answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
+                                answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, target_labels, step, paths, settings, dataset=dataset, type_q=type_q)
                             
                             short_ans = answer_generation["short_answer"]
                             long_ans = answer_generation["long_answer"]
@@ -253,7 +273,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     else:
                         retrieval_information = perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings)
                     
-                        answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=dataset, type_q=type_q)
+                        answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, target_labels, step, paths, settings, dataset=dataset, type_q=type_q)
                         short_ans = answer_generation["short_answer"]
                         long_ans = answer_generation["long_answer"]
                         
@@ -270,6 +290,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     dict_ans[q_i][path_i][step]["question"] = subquestion
                     dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq
                     dict_ans[q_i][path_i][step]["key_entity"] = key_entities
+                    dict_ans[q_i][path_i][step]["target_labels"] = target_labels
                     dict_ans[q_i][path_i][step]["short_answer"] = short_ans
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
@@ -286,6 +307,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                 dict_ans[q_i]['final_qi']["question"] = question
                 dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
                 dict_ans[q_i]['final_qi']["key_entity"] = key_entities
+                dict_ans[q_i]['final_qi']["target_labels"] = target_labels
                 dict_ans[q_i]['final_qi']["short_answer"] = short_ans
                 dict_ans[q_i]['final_qi']["long_answer"] = long_ans
                 dict_ans[q_i]['final_qi']["retrieval_information"] = retrieval_information
@@ -338,7 +360,6 @@ if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)
     runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12", "R13", "R14"]
-    list_type = ["bridge_comparison", "comparison", "compositional", "inference"]
     query_hop2_use_wikidata = None
     
     #edit config
@@ -358,8 +379,8 @@ if __name__ == "__main__":
     raw_data_file = configs['dataset'][dataset][data_type]
     raw_data = load_json(raw_data_file)
         
-    if dataset == "medhop":
-        load_spacy_model()
+    # if dataset == "medhop":
+    load_spacy_model()
                   
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):

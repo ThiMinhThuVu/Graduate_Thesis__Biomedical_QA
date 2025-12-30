@@ -1,14 +1,14 @@
 run:
-  dataset: "medhop" #"medhop" #"wiki"
-  question_type: "bridge_comparison"
-  threads: [5, 6]
+  dataset: "wiki" #"medhop" #"wiki"
+  question_type: "inference"
+  threads: [0, 2]
   data_split: "test"
   
 dataset:
   wiki: 
-    test: "data/raw/wiki/test.json"
+    # test: "data/raw/wiki/test.json"
     # dev: "data/raw/wiki/dev/dev_{question_type}.json"
-    # test: "data/raw/wiki/test/test_{question_type}.json"
+    test: "data/raw/wiki/test/test_compositional.json"
     # train: "data/raw/wiki/train/train__{question_type}.json"
   
   medhop:
@@ -56,7 +56,7 @@ type_run:
       "get_crawl_wiki": "True",      
       "run": "R11",
       "context": "",
-      "search_key_entity": "True",
+      "search_key_entity": "False", #wiki moi True, medhop thi la False
       "get_context_2wiki": "False",
       "get_sparql_context": "False"
     }

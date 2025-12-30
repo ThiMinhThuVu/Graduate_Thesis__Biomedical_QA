@@ -110,7 +110,7 @@ RELATION_PATHS = {
     ]
 }
 
-def create_relation_path_inference(entity, relation, sample_id):
+def create_relation_path_inference(entity, relation, sample_id, target_label):
     output = {}
     n_path = 0
     if relation in RELATION_PATHS:
@@ -120,9 +120,11 @@ def create_relation_path_inference(entity, relation, sample_id):
             sub0 = f"Who is the {r[0]} of {entity}?"
             if relation in ['employer', 'educated at', 'field of work']:
                 sub1 = f"What is the {r[1]} of that person?"
+                target_label = ['ORG']
             else:
                 sub1 = f"Who is the {r[1]} of that person?"
-                        
+                target_label = ['PERSON'] 
+                   
             s0 = f"{r[0]} of {entity}"
             s1 = f"{r[1]} of"
             
@@ -132,14 +134,16 @@ def create_relation_path_inference(entity, relation, sample_id):
                     "step_number": 0,
                     "subquestion": sub0,
                     "search_keyword": s0,
-                    "key_entity": entity
+                    "key_entity": entity,
+                    "target_labels": target_label
                 }, 
                 "1": {
                     "QIDX": sample_id,
                     "step_number": 1,
                     "subquestion": sub1,
                     "search_keyword": s1,
-                    "key_entity": ""
+                    "key_entity": "",
+                    "target_labels": target_label
                 }
             }
     else:
@@ -169,7 +173,8 @@ def generate_subquestion(question, sample_id, filepath, is_seq=True, dataset=Non
         if type_q == "inference":
             key_entity = search_results[0]['key_entity']
             relation_entity = search_results[0]['key_relation']
-            output, n_path = create_relation_path_inference(key_entity, relation_entity, sample_id)
+            target_label = search_results[0]['target_labels']
+            output, n_path = create_relation_path_inference(key_entity, relation_entity, sample_id, target_label)
         else:
             n_path = 1
             output = {"0": {}}
@@ -190,7 +195,8 @@ def generate_subquestion(question, sample_id, filepath, is_seq=True, dataset=Non
                     "step_number": step,
                     "subquestion": subquestion,
                     "search_keyword": sub['search_keyword'],
-                    "key_entity": key_entity
+                    "key_entity": key_entity,
+                    "target_labels": sub["target_labels"]
                 }
                 
         save_json(output, filepath)

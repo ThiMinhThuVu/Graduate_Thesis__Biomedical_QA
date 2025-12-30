@@ -14,9 +14,27 @@ CWQ_LABELS_EXPANDED = {
     'LANGUAGE'    
 }
 
-BIO_LABELS = {'DISEASE', 'CHEMICAL', 'DRUG', 'GENE', 'BODY_PART'}
+WIKI_LABELS = ["PERSON", "WORK_OF_ART", "GPE", "ORG", "LOC", "EVENT", "CARDINAL", "NORP", "LANGUAGE"]
+BIO_LABELS = ['DISEASE', 'CHEMICAL', 'DRUG', 'GENE', 'BODY_PART', "GPE", "ORG"]
 
-def extract_with_models(query, nlp_bio, nlp_standard, dataset="medhop"):
+def extract_with_models(query, nlp_bio, nlp_standard, target_labels, dataset="medhop"):
+    entities_set = set()
+    if dataset == "wiki":
+        doc_standard = nlp_standard(query)
+        for ent in doc_standard.ents:
+            if ent.label_ in target_labels:
+                entities_set.add(ent.text)
+
+    if dataset == "medhop":
+        doc_bio = nlp_bio(query)
+        for ent in doc_bio.ents:
+            if ent.label_ in target_labels:
+                entities_set.add(ent.text)
+
+    return list(entities_set)
+
+
+def _extract_with_models(query, nlp_bio, nlp_standard, dataset="medhop"):
     entities_set = set()
 
     target_labels = CWQ_LABELS_EXPANDED if dataset == "cwq" else BIO_LABELS

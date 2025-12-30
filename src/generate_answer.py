@@ -139,6 +139,7 @@ def generate_answer_new(
         
         # Step 3: Normalize if needed
         if normalize and rules.get("needs_normalization", True):
+            print("Need normalize with wikipedia")
             normalized_answer = normalize_answer_with_wikipedia(raw_answer, should_normalize=True)
         else:
             normalized_answer = raw_answer.copy()
