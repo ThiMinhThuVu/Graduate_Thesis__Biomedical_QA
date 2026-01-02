@@ -213,10 +213,10 @@ def remove_parentheses(text):
     
     return final_cleaned
 
-def fill_all_qid_search_sparql(keyword, language="en", limit=20, retries=5, delay=5):
+def fill_all_qid_search_sparql(keyword, limit=20, retries=5, delay=5, language="en",):
     safe_keyword = keyword.replace("\\", "\\\\").replace('"', '\\"').strip()
     if not safe_keyword:
-        return []
+        return [], ""
 
     sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
 
@@ -248,11 +248,12 @@ def fill_all_qid_search_sparql(keyword, language="en", limit=20, retries=5, dela
             if attempt < retries:
                 time.sleep(delay * attempt)
             else:
-                return []
+                return [], ""
     else:
-        return []
+        return [], ""
 
     entities = []
+    qid_description = ""
     for result in results.get("results", {}).get("bindings", []):
         entity_id = result["item"]["value"].split("/")[-1]
         label = result.get("itemLabel", {}).get("value", "")
@@ -262,10 +263,12 @@ def fill_all_qid_search_sparql(keyword, language="en", limit=20, retries=5, dela
             "label": label,
             "description": description
         })
+        if description != '':
+            qid_description += f"- {description}\n"
 
     time.sleep(delay)
 
-    return entities
+    return entities, qid_description
 
 def find_all_qid(key_entity, limit=20):  # add description
     key_entity = remove_parentheses(key_entity)

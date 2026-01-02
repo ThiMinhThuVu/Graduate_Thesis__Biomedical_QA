@@ -31,13 +31,15 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
     Your goal is to:
     1. Provide a single, keyword-based search query string that best targets the core information needed from the original question.
     2. Identify a list of target entity types (target_labels) that need to be extracted from the context to answer the question. The "target_labels" MUST be selected ONLY from this list: [{labels_str}].
-    
+    3. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question. 
+
     Key principles for the single query:
     1. The query should be a distillation of the original complex question, focusing on essential keywords.
     2. The query MUST be concise, using specific keywords INCLUDING IMPORTANT BIOMEDICAL KEYWORD, nouns, and technical terms critical to answering the question.
     3. The "target_labels" should contain the entity type(s) that represent the expected answer or the core subject of the question.
-
-    The final output MUST be a JSON array containing a single object. This object must contain a single key "search_keyword", whose value is the Google search query string and "target_labels" (a list of strings).
+    4. The "key_entity" list of specific. Exclude generic or abstract concepts that are not useful for information retrieval (e.g., “medication”, “drug”, “treatment”).
+         
+    The final output MUST be a JSON array containing a single object. This object must contain a single key "search_keyword", whose value is the Google search query string and "target_labels" (a list of strings) and "key_entity".
     """
             },
             {
@@ -53,7 +55,11 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
     [
         {{ 
             "search_keyword": "Smith-Fineman-Myers syndrome mutated gene helicase domain",
-            "target_labels": ["GENE", "DISEASE"]
+            "target_labels": ["GENE"],
+            "key_entity": [
+                "Smith-Fineman-Myers syndrome",
+                "helicase domain"
+            ]
         }}
     ]
     ---
@@ -65,7 +71,11 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
     [
         {{ 
             "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
-            "target_labels": ["CHEMICAL", "BODY_PART"]
+            "target_labels": ["CHEMICAL"],
+            "key_entity": [
+                "lactate dehydrogenase tetramer",
+                "nervous system"
+            ]
         }}
     ]
     ---
@@ -77,7 +87,11 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
     [
         {{ 
             "search_keyword": "Ehlers Danlos syndromes named after along with Edvard Ehlers",
-            "target_labels": ["DISEASE"]
+            "target_labels": ["DISEASE"],
+            "key_entity": [
+                "Ehlers-Danlos syndrome",
+                "Edvard Ehlers"
+            ]            
         }}
     ]
     ---
@@ -89,7 +103,12 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
     [
         {{ 
             "search_keyword": "benign autosomal recessive hyperbilirubinemia UGT1A1 gene mutation chromosome 2",
-            "target_labels": ["DISEASE", "GENE"]
+            "target_labels": ["DISEASE", "GENE"],
+            "key_entity": [
+                "benign autosomal recessive hyperbilirubinemia",
+                "UGT1A1 gene",
+                "chromosome 2"
+            ]
         }}
     ]
     ---
@@ -101,7 +120,13 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
     [
         {{ 
             "search_keyword": "osteochondritis type uneven vertebral growth kyphosis adolescence",
-            "target_labels": ["DISEASE"]
+            "target_labels": ["DISEASE"],
+            "key_entity": [
+                "osteochondritis",
+                "vertebral growth",
+                "kyphosis",
+                "adolescence"
+            ]
         }}
     ]
     ---
@@ -116,7 +141,8 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
     [
         {{ 
             "search_keyword": "...",
-            "target_labels": [...]
+            "target_labels": [...],
+            "key_entity": [...],
         }}
     ]
     """
@@ -258,6 +284,7 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
             * **`subquestion`**: State the sub-question in clear, natural language, adhering to the self-contained principle and clarity of result.
             * **`search_keyword`**: Provide a concise, keyword-based search query that captures the essence of the sub-question. This should be a distilled version of the sub-question, focusing on the key biomedical terms and concepts necessary to retrieve relevant information. The `search_keyword` should be a direct, searchable query that can be used to find the answer to the sub-question. It should not include unnecessary words or context that does not contribute to the search.
             * **`target_labels`**: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
+            * **`key_entity`**: Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question. Exclude generic or abstract concepts that are not useful for information retrieval (e.g., “medication”, “drug”, “treatment”).
         5.  **Efficiency and Necessity & Defining Question Types**:
             * Decompose the question into the **minimum number of steps absolutely necessary** to logically arrive at the final answer.
             * **Multi-step Question Definition**: A multi-step question typically involves a chain of information retrieval where intermediate entities or properties must be resolved sequentially. One piece of information is needed to find the next, eventually leading to the final answer.
@@ -283,19 +310,16 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
         JSON desired output format:
         [
             {{
-                "subquestion": "Which enzyme can inactivate antithrombin?",
-                "search_keyword": "enzyme inactivate antithrombin",
-                "target_labels": ["CHEMICAL"]
-            }},
-            {{
-                "subquestion": "Which gene encode that enzyme?",
+                "subquestion": "Which gene encode enzyme can inactivate antithrombin?",
                 "search_keyword": "gene encode enzyme inactivate antithrombin",
-                "target_labels": ["GENE"]
+                "target_labels": ["GENE"],
+                "key_entity": ["antithrombin"]
             }},
             {{
                 "subquestion": "Which human chromosome contains that gene?",
                 "search_keyword": "human chromosome gene encode enzyme inactivate antithrombin",
-                "target_labels": ["BODY_PART"]
+                "target_labels": ["BODY_PART"],
+                "key_entity": []
             }}
         ]
 
@@ -308,12 +332,14 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "What is the primary organ of the human nervous system?",
                 "search_keyword": "primary organ human nervous system",
-                "target_labels": ["BODY_PART"]
+                "target_labels": ["BODY_PART"],
+                "key_entity": ["nervous system"]
             }},
             {{
                 "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
                 "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
-                "target_labels": ["CHEMICAL"]
+                "target_labels": ["CHEMICAL"],
+                "key_entity": []
             }}
         ]
 
@@ -326,12 +352,19 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "Which syndrome is characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
                 "search_keyword": "syndrome flattened deformed vertebrae developmental delay lens coloboma",
-                "target_labels": ["DISEASE"]
+                "target_labels": ["DISEASE"],
+                "key_entity": [
+                    "flattened vertebrae",
+                    "deformed vertebrae",
+                    "developmental delay",
+                    "lens coloboma"
+                ]
             }},
             {{
                 "subquestion": "Which gene mutation is responsible for that syndrome?",
                 "search_keyword": "gene mutation syndrome flattened deformed vertebrae developmental delay lens coloboma",
-                "target_labels": ["GENE"]
+                "target_labels": ["GENE"],
+                "key_entity": []
             }}
         ]
 
@@ -344,30 +377,39 @@ def _load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "Which pioneering institutions influenced John Langdon Down's work at Earlswood Asylum?",
                 "search_keyword": "pioneering institutions John Langdon Down Earlswood Asylum",
-                "target_labels": ["ORG"]
+                "target_labels": ["ORG"],
+                "key_entity": [
+                    "John Langdon Down",
+                    "Earlswood Asylum"
+                ]
             }},
             {{
                 "subquestion": "In which London suburb was that pioneering institution located?",
                 "search_keyword": "London location pioneering institution John Langdon Down Earlswood Asylum",
-                "target_labels": ["GPE"]
+                "target_labels": ["GPE"],
+                "key_entity": []
             }}
         ]
 
         ---
         **Example 5:**
-        "Which gene mutation is primarily responsible for a syndromic microphthalmia that includes nasal abnormalities?"
+        "On which chromosome is the gene responsible for Carpenter syndrome, which is associated with brachydactyly, located?"
 
         JSON desired output format:
         [
             {{
-                "subquestion": "What are the syndromic forms of microphthalmia that present with nasal abnormalities?",
-                "search_keyword": "syndromic microphthalmia nasal abnormalities",
-                "target_labels": ["DISEASE"]
+                "subquestion": "Which gene is responsible for Carpenter syndrome?",
+                "search_keyword": "gene responsible Carpenter syndrome",
+                "target_labels": ["GENE"],
+                "key_entity": [
+                    "Carpenter syndrome"
+                ]
             }},
             {{
-                "subquestion": "Which gene mutation is most commonly identified as the primary cause for that disease?",
-                "search_keyword": "gene mutation primary cause syndromic microphthalmia nasal abnormalities",
-                "target_labels": ["GENE"]
+                "subquestion": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "target_labels": ["BODY_PART"],
+                "key_entity": []
             }}
         ]
 

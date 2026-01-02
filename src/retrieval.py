@@ -3,7 +3,7 @@ from utils.crawl_wikipage import crawl_wikipedia_page
 from utils.abstract_wiki import crawl_abstract_wiki
 from utils.get_abs_wiki_history import get_abs_wiki_history
 from utils.util import load_pickle, save_pickle
-from utils.process_wikidata_api import process_fillter_wikidata_api
+from utils.process_wikidata_api import process_fillter_wikidata_api, match_relation_id
 import json
 import os
 from utils.util import *
@@ -277,9 +277,10 @@ def retrieval_abstract_wiki(search_kw):
     result = f"{page_title}: {abstract_text}"  
     return result
 
-def perform_retrieval(sample, key_entity, search_kw_subq, step, paths, settings, R7_info=None, sparql_cache="data/wiki/sparql_cache.pkl"):
+def perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings):
+    # key_entities: List
     retrieval_information = ""
-  
+    
     if settings['get_context_2wiki'] == "True": #Only 2wiki dataset
         retrieval_information = retrieval_context_2wiki(search_kw_subq, sample)
             
@@ -303,21 +304,25 @@ def perform_retrieval(sample, key_entity, search_kw_subq, step, paths, settings,
             retrieval_information += crawl_wiki_context
 
     if settings["get_sparql_context"] == "True":
-        context, dict_result = process_fillter_wikidata_api(search_kw_subq, key_entity)
-        
-        if sparql_cache:
-            QIDX = sample['QIDX']
-            sparql_cache_data = load_pickle(sparql_cache)
-            if QIDX in sparql_cache_data:
-                sparql_cache_data[QIDX].append(dict_result)
-            else:
-                sparql_cache_data[QIDX] = [dict_result]
-            save_pickle(sparql_cache_data, sparql_cache)
-        
-        if context is None:
-            context = ""
-        retrieval_information += context
-                
+        if os.path.exists(paths['sparql']):
+            history = load_json(paths['sparql'])
+        else:
+            history = {}
+        if step in history and 'retrieval_information' in history[step]:
+            retrieval_information += history[step]['retrieval_information']
+        else:
+            history[step] = {}
+            dict_relation_id = match_relation_id(search_kw_subq, top_k=settings['sparql_r_topk'], retry_topk=settings['sparql_r_retry_topk']) # trả về []
+            for key_entity in key_entities:
+                context, dict_result = process_fillter_wikidata_api(search_kw_subq, key_entity, settings['get_history_old_id'], dict_relation_id)
+                if context is None:
+                    context = ""
+                if context != "":
+                    retrieval_information += f"\n{key_entity}: {context}"
+                history[step][key_entity] = {"context": context, "dict_result": dict_result}
+            history[step]['retrieval_information'] = retrieval_information
+            save_json(history, paths['sparql'])
+            
     return retrieval_information
 
 
@@ -360,20 +365,6 @@ def norm_entity_with_keycontext(entity, sample, cos_threshold=0.7, fuzz_threshol
     if best_match_item:
         best_match_item = best_match_item[0]
     return best_match_item
-
-def perform_retrieval_R12(sample, search_kw, step, paths, settings, type_context=None):
-    """Thực hiện tất cả các bước truy xuất thông tin và trả về context."""
-    retrieval_information = ""
-    
-    if 'wiki' in settings['dataset']: 
-        if type_context == "vec_embed":
-            retrieval_information = retrieval_context_2wiki(search_kw, sample, vec_embed=True)
-
-        if type_context == "only_gg":
-            results_gg_search = retrieval_google(search_kw, step, paths['gg_search'])            
-            retrieval_information += format_search_results(results_gg_search, topk=5) + "\n\n"
-                        
-    return retrieval_information
 
 def remove_perform_retrieval(current_retrieval: str, current_short: str):
     if not current_retrieval or not current_short:

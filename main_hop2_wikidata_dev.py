@@ -47,12 +47,14 @@ def generate_answer_for_subq(subquestion, key_entities, retrieval_information, t
         list_entities = extract_with_models(query_for_ner, nlp_bio, nlp_standard, target_label, dataset=dataset)
         output_ner[step] = list_entities
         save_json(output_ner, ner_filepath)
-    if key_entities is None:
-        key_entities = ""
+   
+    all_key_entities = ""
+    for item in key_entities:
+        all_key_entities += f"{item}, "
     
-    key_entities += f" {target_label} Entities: " + ", ".join(list_entities)
+    all_key_entities += f"{target_label} Entities: " + ", ".join(list_entities)
     
-    return generate_answer_new(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
+    return generate_answer_new(subquestion, all_key_entities, retrieval_information, dataset=dataset, type_q=type_q)
 
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None):
     sample_id = str(sample['QIDX']) 
@@ -129,20 +131,24 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     step = str(step)   
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword'] + f" {short_ans}"
+                    search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
                     target_labels = item['target_labels']
                     
                     if step == "0":
                         key_entities = item['key_entity']   
                     else:
-                        key_entities = short_ans
+                        key_entities = [short_ans]
                                             
-                    retrieval_information = perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings)
+                    retrieval_information = perform_retrieval(sample, key_entities, search_kw_subq_retrieval, step, paths, settings)
 
                     if step not in qi_final_answers[path_i]:
                         continue
                     short_ans = qi_final_answers[path_i][step]["short_answer"]
                     long_ans = qi_final_answers[path_i][step]["long_answer"]     
-                    candidates = qi_final_answers[path_i][step]["candidate"] 
+                    if 'candidate' in qi_final_answers[path_i][step]:
+                        candidates = qi_final_answers[path_i][step]["candidate"] 
+                    else:
+                        candidates = []
                     if step not in dict_ans[q_i][path_i]:
                         dict_ans[q_i][path_i][step] = {}
                         
@@ -162,27 +168,30 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                 for step, item in subq_output.items():
                     step = str(step)
                     subquestion = item['subquestion']
-                    search_kw_subq = item['search_keyword'] + f" {short_ans}"
+                    search_kw_subq = item['search_keyword'] 
+                    search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
                     target_labels = item['target_labels']
                     
                     if step == "0":
                         key_entities = item['key_entity']   
                     else:
-                        key_entities = short_ans
+                        key_entities = [short_ans]
                 
                     print(f"\n--- Processing Step {step}: {subquestion} ---")
                     
                     # Multiple Choice
                     candidates = []
-                    mc_status = True
                     idx_del = 0
                     max_candidates = 10
-                    current_retrieval = perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings)
-                    while mc_status and len(candidates) < max_candidates:
+                    current_retrieval = perform_retrieval(sample, key_entities, search_kw_subq_retrieval, step, paths, settings)
+                    while idx_del < max_candidates:
+                        if current_retrieval == "" or current_retrieval == []:
+                            break
+                            
                         ans_gen = generate_answer_for_subq(subquestion, key_entities, current_retrieval, target_labels, step, paths, settings, dataset=dataset, type_q=type_q)
                         
                         current_short = ans_gen["short_answer"]
-                        
+                        print("Current answer: ", current_short)
                         # Kiểm tra nếu đáp án mới này đã tồn tại trong list candidates chưa
                         is_duplicate = any(c['short_answer'].lower().strip() == current_short.lower().strip() for c in candidates)
                         
@@ -196,7 +205,14 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                         else:
                             break
                         
-                        current_retrieval = remove_perform_retrieval(current_retrieval, current_short)
+                        if current_short.lower() in ['yes', 'no']:
+                            break
+                        
+                        new_retrieval = remove_perform_retrieval(current_retrieval, current_short)
+                        if new_retrieval == current_retrieval:
+                            break
+                        else:
+                            current_retrieval = new_retrieval
                         idx_del += 1
                     
                     # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES ---
@@ -325,10 +341,7 @@ if __name__ == "__main__":
 
     model, tokenizer, device = load_model(dataset, model_path, tokenizer_dir)
     
-    settings = configs['type_run']
-    # TỰ ĐẶT RUN ĐỂ LƯU FILE
-    settings['run'] = "R1"
-    
+    settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
     settings["wiki_cache"] = wiki_cache_data
     raw_data_file = configs['dataset'][dataset][data_type]

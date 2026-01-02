@@ -134,7 +134,7 @@ def create_relation_path_inference(entity, relation, sample_id, target_label):
                     "step_number": 0,
                     "subquestion": sub0,
                     "search_keyword": s0,
-                    "key_entity": entity,
+                    "key_entity": [entity],
                     "target_labels": target_label
                 }, 
                 "1": {
@@ -142,7 +142,7 @@ def create_relation_path_inference(entity, relation, sample_id, target_label):
                     "step_number": 1,
                     "subquestion": sub1,
                     "search_keyword": s1,
-                    "key_entity": "",
+                    "key_entity": [],
                     "target_labels": target_label
                 }
             }
@@ -180,10 +180,10 @@ def generate_subquestion(question, sample_id, filepath, is_seq=True, dataset=Non
             output = {"0": {}}
             
             for step, sub in enumerate(search_results):
-                if "key_entity" in sub:
-                    key_entity = sub["key_entity"]
+                if "key_entity" in sub and sub['key_entity'] != "":
+                    key_entity = [sub["key_entity"]]
                 else:
-                    key_entity = None
+                    key_entity = []
                 
                 if "subquestion" in sub:
                     subquestion = sub["subquestion"]

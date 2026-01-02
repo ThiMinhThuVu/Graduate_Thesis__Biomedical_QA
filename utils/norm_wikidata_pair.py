@@ -41,7 +41,45 @@ PROPERTY_MAPPINGS = {
     "publisher": "P123",
     "sibling": "P3373",
     "spouse": "P26",
-    "student of": "P1066"
+    "student of": "P1066",
+    # Disease
+    "has symptom": "P780",
+    "has cause": "P828",
+    "immediate cause of": "P1536",
+    "risk factor": "P5642",
+    "mode of inheritance": "P1199",
+    "OMIM ID": "P492",
+    "Orphanet ID": "P1550",
+    "health specialty": "P1995",
+    # Gene
+    "encoded by": "P688",
+    "Entrez Gene ID": "P351",
+    "HGNC ID": "P354",
+    "UniProt ID": "P352",
+    "genetic association": "P2293",
+    "chromosome": "P1057",
+    "cytogenetic location": "P4196",
+    "strand orientation": "P2548",
+    "encodes": "P688",
+    
+    # Drug
+    "used to treat": "P2175",
+    "side effect": "P1909",
+    "mechanism of action": "P2554",
+    "DrugBank ID": "P715",
+    "drug or therapy used for treatment": "P2176",
+    # Anatomy
+    "affected anatomical structure": "P927",
+    "innervates": "P3189",
+    
+    "publication date": "P577",
+    "published in": "P1433",
+    "produced by": "P2849",
+    "physically interacts with": "P129",
+    "mass": "P2067",
+    "subject has role": "P2868",
+    "fabrication method": "P2079",
+    
 }
 
 dict_p_relation = {
@@ -317,7 +355,7 @@ def get_relation_id(q_relation, q_relation_child=None, type_q=None):
         return all_relation, [p_relation], cid_relation
     
     # For compositional questions: use PROPERTY_MAPPINGS (unidirectional)
-    elif type_q == "compositional":
+    else:
         # Direct match in PROPERTY_MAPPINGS
         property_id = None
         if search_normalized in PROPERTY_MAPPINGS:
@@ -389,10 +427,6 @@ def get_relation_id(q_relation, q_relation_child=None, type_q=None):
         # Unidirectional mode - just return the property ID
         return None, [property_id], []
     
-    # Unknown type_q
-    else:
-        return None, [], []
-
 def sparql_find_parent(qid, all_relation):
     """
     Unified SPARQL query function for both bidirectional and unidirectional property queries.
