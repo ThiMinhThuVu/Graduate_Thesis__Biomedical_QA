@@ -6,7 +6,6 @@ from src.decomposition import *
 from src.retrieval import *
 from src.extract_ner import *
 from src.generate_answer import *
-from src.all_run import *
 from utils.norm_wikidata_pair import *
 from utils.util import *
 from classification.classification import load_model, classify_question
@@ -18,12 +17,7 @@ global nlp_standard
 wiki_cache_data = {}
 nlp_bio = None
 nlp_standard = None
-# try:
-#     nlp_standard = spacy.load("en_core_web_lg")
-# except:
-#     print("Standard English model not found. Please install it with: python -m spacy download en_core_web_lg")
-#     nlp_standard = None
-    
+
 def load_spacy_model():
     global wiki_cache_data
     global nlp_bio
@@ -41,32 +35,11 @@ def load_spacy_model():
 
     nlp_standard = spacy.load("en_core_web_lg")  # Standard English model
 
-
-def _generate_answer_for_subq(subquestion, key_entities, retrieval_information, step, paths, settings, dataset=None, type_q=None):
-    if dataset in ["wiki", "cwq"]:
-        # retrieval_information = [retrieval_information]
-        return generate_answer_new(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
-    else:
-        ner_filepath = paths['ner']
-        output_ner = load_json(ner_filepath) if os.path.exists(ner_filepath) else {}
-        
-        if step in output_ner and settings['run'] != "R7":
-            bio_entities = output_ner[step]
-        else:
-            print(f"Extracting entities.")
-            query_for_ner = subquestion + " " + retrieval_information
-            bio_entities = extract_with_models(query_for_ner, nlp_bio, nlp_standard, dataset=dataset)
-            output_ner[step] = bio_entities
-            save_json(output_ner, ner_filepath)
-            key_entities += " BioEntities: " + ", ".join(bio_entities)
-        # retrieval_information = [retrieval_information]
-        return generate_answer_new(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
-
 def generate_answer_for_subq(subquestion, key_entities, retrieval_information, target_label, step, paths, settings, dataset=None, type_q=None):
     ner_filepath = paths['ner']
     output_ner = load_json(ner_filepath) if os.path.exists(ner_filepath) else {}
     
-    if step in output_ner and settings['run'] != "R7":
+    if step in output_ner:
         list_entities = output_ner[step]
     else:
         print(f"Extracting entities.")
@@ -74,12 +47,14 @@ def generate_answer_for_subq(subquestion, key_entities, retrieval_information, t
         list_entities = extract_with_models(query_for_ner, nlp_bio, nlp_standard, target_label, dataset=dataset)
         output_ner[step] = list_entities
         save_json(output_ner, ner_filepath)
-      
+    if key_entities is None:
+        key_entities = ""
+    
     key_entities += f" {target_label} Entities: " + ", ".join(list_entities)
     
     return generate_answer_new(subquestion, key_entities, retrieval_information, dataset=dataset, type_q=type_q)
 
-def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None, query_wikidata=None):
+def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None):
     sample_id = str(sample['QIDX']) 
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
@@ -99,10 +74,10 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
     #     print(f"Evidence saved to {evidence_file}")
     #     return 
     
-    # if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
-    #     original_question = settings['chrunk_mapping'][sample_id]
-    # else:
-    original_question = sample['Question']
+    if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
+        original_question = settings['chrunk_mapping'][sample_id]
+    else:
+        original_question = sample['Question']
         
     #DECOMPOSITION Question
     list_qi = question_decomposition(original_question, dataset=dataset, type_q=type_q)
@@ -148,56 +123,26 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     check_path_i = True
                     
             if check_path_i:
-                # if len(subq_output.keys()) != len(qi_final_answers[path_i].keys()):
-                #     print("Path này không tìm được answer, bỏ qua")
-                #     dict_ans[q_i][path_i]['0'] = qi_final_answers[path_i]['0']
-                #     dict_ans[q_i][path_i]['0']['question'] = subq_output['0']['subquestion']
-                #     dict_ans[q_i][path_i]['0']['search_keyword'] = subq_output['0']['search_keyword']
-                #     dict_ans[q_i][path_i]['0']['key_entity'] = subq_output['0']['key_entity']
-                #     continue
-                
                 short_ans = ""
                 long_ans = ""
                 for step, item in subq_output.items():
                     step = str(step)   
                     subquestion = item['subquestion']
-                    search_kw_subq = item['search_keyword']
+                    search_kw_subq = item['search_keyword'] + f" {short_ans}"
                     target_labels = item['target_labels']
-                    if settings['search_key_entity'] == "True": 
-                        if item['key_entity'] == "" or item['key_entity'] == None: 
-                            key_entities = short_ans
-                        else:
-                            key_entities = item['key_entity']        
-                    else:
-                        key_entities = search_kw_subq + " " + short_ans
                     
+                    if step == "0":
+                        key_entities = item['key_entity']   
+                    else:
+                        key_entities = short_ans
+                                            
                     retrieval_information = perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings)
 
-                    if step == '0':
-                        short_ans = qi_final_answers[path_i][step]["short_answer"]
-                        long_ans = qi_final_answers[path_i][step]["long_answer"]     
-                        last_key_entity = key_entities                  
-                        last_retrieval_information = retrieval_information
-                        q_relation_child = search_kw_subq
-                    if step == '1':
-                        if type_q in ["inference", "compositional"] and dataset == "wiki" and query_wikidata==True: 
-                            q_relation_parent = search_kw_subq
-                            answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)
-                            normalized_v2 = answer_generation
-                            short_ans = answer_generation["short_answer"]
-                            long_ans = answer_generation["long_answer"]
-                            qi_final_answers[path_i][step] = answer_generation
-                        else:
-                            if step not in qi_final_answers[path_i]:
-                                continue
-                            short_ans = qi_final_answers[path_i][step]["short_answer"]
-                            long_ans = qi_final_answers[path_i][step]["long_answer"]
-
-                        if type_q == "inference" and dataset == "wiki":
-                            prefix_ans = ""
-                            name_ans = ""
-                            suffix_ans = ""
-                            
+                    if step not in qi_final_answers[path_i]:
+                        continue
+                    short_ans = qi_final_answers[path_i][step]["short_answer"]
+                    long_ans = qi_final_answers[path_i][step]["long_answer"]     
+                    candidates = qi_final_answers[path_i][step]["candidate"] 
                     if step not in dict_ans[q_i][path_i]:
                         dict_ans[q_i][path_i][step] = {}
                         
@@ -208,15 +153,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     dict_ans[q_i][path_i][step]["short_answer"] = short_ans
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
-
-                    if type_q in ["inference", "compositional"] and dataset == "wiki" and query_wikidata==True:
-                        if step == '1':
-                            dict_ans[q_i][path_i][step]['normalized_v2'] = normalized_v2
-                    # else:
-                    #     dict_ans[q_i][path_i][step]['prefix'] = prefix_ans
-                    #     dict_ans[q_i][path_i][step]['name'] = name_ans
-                    #     dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
-                        
+                    dict_ans[q_i][path_i][step]["candidate"] = candidates
+                    dict_ans[q_i][path_i][step]['normalized_v2'] = normalized_v2                                
             else:
                 short_ans = ""
                 qi_final_answers[path_i] = {}
@@ -224,66 +162,84 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                 for step, item in subq_output.items():
                     step = str(step)
                     subquestion = item['subquestion']
-                    search_kw_subq = item['search_keyword']
+                    search_kw_subq = item['search_keyword'] + f" {short_ans}"
                     target_labels = item['target_labels']
                     
-                    if settings['search_key_entity'] == "True": 
-                        if item['key_entity'] == "" or item['key_entity'] == None: 
-                            key_entities = short_ans
-                        else:
-                            key_entities = item['key_entity']        
+                    if step == "0":
+                        key_entities = item['key_entity']   
                     else:
-                        key_entities = search_kw_subq + " " + short_ans
+                        key_entities = short_ans
                 
                     print(f"\n--- Processing Step {step}: {subquestion} ---")
-                    retrieval_information = perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings)
-                    # print(f'Retrieval info: {retrieval_information}')
-
-                    if query_wikidata:
-                        if step == '0':
-                            answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, target_labels, step, paths, settings, dataset=dataset, type_q=type_q)
-                            short_ans = answer_generation["short_answer"]
-                            long_ans = answer_generation["long_answer"]
+                    
+                    # Multiple Choice
+                    candidates = []
+                    mc_status = True
+                    idx_del = 0
+                    max_candidates = 10
+                    current_retrieval = perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings)
+                    while mc_status and len(candidates) < max_candidates:
+                        ans_gen = generate_answer_for_subq(subquestion, key_entities, current_retrieval, target_labels, step, paths, settings, dataset=dataset, type_q=type_q)
                         
-                            if type_q == "inference" and dataset == "wiki":
-                                prefix_ans = answer_generation['prefix']
-                                name_ans = answer_generation['name']
-                                suffix_ans = answer_generation['suffix']
+                        current_short = ans_gen["short_answer"]
+                        
+                        # Kiểm tra nếu đáp án mới này đã tồn tại trong list candidates chưa
+                        is_duplicate = any(c['short_answer'].lower().strip() == current_short.lower().strip() for c in candidates)
+                        
+                        if not is_duplicate and current_short.lower() != "insufficient information":
+                            candidates.append({
+                                "short_answer": current_short,
+                                "long_answer": ans_gen["long_answer"],
+                                "retrieval_information": current_retrieval,
+                                "full_data": ans_gen # Lưu lại để dùng sau khi chọn
+                            })
+                        else:
+                            break
+                        
+                        current_retrieval = remove_perform_retrieval(current_retrieval, current_short)
+                        idx_del += 1
+                    
+                    # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES ---
+                    if len(candidates) > 1:
+                        # Build context cho Multiple Choice
+                        mc_options_text = ""
+                        for i, cand in enumerate(candidates):
+                            label = chr(ord('A') + i)
+                            mc_options_text += f"{label}. {cand['short_answer']}\nReason: {cand['long_answer']}\n\n"
+                        try:
+                            selected_label = gen_ans_multiple_choice(subquestion, mc_options_text, dataset=dataset)
                             
-                            if dataset == "wiki": 
-                                q_relation_child = search_kw_subq
-                                last_key_entity = key_entities
-                                last_retrieval_information = retrieval_information
-                                
-                        elif step == '1':
-                            if dataset == "wiki": 
-                                q_relation_parent = search_kw_subq
-                                answer_generation = query_hop2_with_wikidata(type_q, original_question, key_entities, last_key_entity, q_relation_parent, q_relation_child, retrieval_information, last_retrieval_information)     
-                                normalized_v2 = answer_generation
+                            idx_selected = ord(selected_label[0].upper()) - ord('A')
+                            if 0 <= idx_selected < len(candidates):
+                                final_candidate = candidates[idx_selected]
+                                answer_generation = final_candidate["full_data"]
+                                retrieval_information = final_candidate["retrieval_information"]
                             else:
-                                answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, target_labels, step, paths, settings, dataset=dataset, type_q=type_q)
+                                answer_generation = candidates[0]["full_data"]
+                                retrieval_information = candidates[0]["retrieval_information"]
+                        except Exception as e:
+                            print(f"Error in MC selection: {e}")
+                            answer_generation = candidates[0]["full_data"]
+                            retrieval_information = candidates[0]["retrieval_information"]
                             
-                            short_ans = answer_generation["short_answer"]
-                            long_ans = answer_generation["long_answer"]
-                        
-                            if type_q == "inference" and dataset == "wiki":
-                                prefix_ans = ""
-                                name_ans = ""
-                                suffix_ans = ""
+                    elif len(candidates) == 1:
+                        answer_generation = candidates[0]["full_data"]
+                        retrieval_information = candidates[0]["retrieval_information"]
                     else:
-                        retrieval_information = perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings)
-                    
-                        answer_generation = generate_answer_for_subq(subquestion, key_entities, retrieval_information, target_labels, step, paths, settings, dataset=dataset, type_q=type_q)
-                        short_ans = answer_generation["short_answer"]
-                        long_ans = answer_generation["long_answer"]
-                        
-                        if type_q == "inference" and dataset == "wiki":
-                            prefix_ans = answer_generation['prefix']
-                            name_ans = answer_generation['name']
-                            suffix_ans = answer_generation['suffix']
+                        # Trường hợp không tìm thấy gì (insufficient)
+                        answer_generation = {"short_answer": "insufficient information", "long_answer": "No snippets found."}
+                        retrieval_information = []               
+                           
+                    short_ans = answer_generation["short_answer"]
+                    long_ans = answer_generation["long_answer"]
+    
+                    if type_q == "inference":
+                        prefix_ans = answer_generation['prefix']
+                        name_ans = answer_generation['name']
+                        suffix_ans = answer_generation['suffix']
 
-                        qi_final_answers[path_i][step] = answer_generation
-                    
+                    qi_final_answers[path_i][step] = answer_generation
+                
                     print(f"Short Answer for Step {step}: {short_ans}")
 
                     dict_ans[q_i][path_i][step] = {} 
@@ -293,8 +249,9 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     dict_ans[q_i][path_i][step]["target_labels"] = target_labels
                     dict_ans[q_i][path_i][step]["short_answer"] = short_ans
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
+                    dict_ans[q_i][path_i][step]["candidate"] = candidates
                     dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
-                    if type_q == "inference" and dataset == "wiki":
+                    if type_q == "inference":
                         dict_ans[q_i][path_i][step]['prefix'] = prefix_ans
                         dict_ans[q_i][path_i][step]['name'] = name_ans
                         dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
@@ -311,16 +268,14 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                 dict_ans[q_i]['final_qi']["short_answer"] = short_ans
                 dict_ans[q_i]['final_qi']["long_answer"] = long_ans
                 dict_ans[q_i]['final_qi']["retrieval_information"] = retrieval_information
-
-                if type_q in ["inference", "compositional"] and dataset == "wiki" and query_wikidata==True:
-                    dict_ans[q_i]['final_qi']['normalized_v2'] = normalized_v2
-                # else:
-                #     dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
-                #     dict_ans[q_i]['final_qi']['name'] = name_ans
-                #     dict_ans[q_i]['final_qi']['suffix'] = suffix_ans   
-
-                # For 'inference' questions, the first valid path is sufficient.
+                dict_ans[q_i][path_i][step]["candidate"] = candidates
+                dict_ans[q_i]['final_qi']['normalized_v2'] = normalized_v2
                 if type_q == "inference":
+                    dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
+                    dict_ans[q_i]['final_qi']['name'] = name_ans
+                    dict_ans[q_i]['final_qi']['suffix'] = suffix_ans   
+
+                    # For 'inference' questions, the first valid path is sufficient.
                     break
         
         all_context += f"{q_i}.{question} - {dict_ans[q_i]['final_qi']['short_answer']}, {dict_ans[q_i]['final_qi']['long_answer']}\n\n"
@@ -339,7 +294,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
             'short_answer': dict_ans[1]['final_qi']['short_answer'],
             'retrieval_information': dict_ans[1]['final_qi']['retrieval_information']
         }
-        if type_q in ["inference", "compositional"] and dataset == "wiki" and query_wikidata==True:
+        if type_q == "inference":
             dict_ans['final_answer']['prefix'] = dict_ans[1]['final_qi']['prefix']
             dict_ans['final_answer']['name'] = dict_ans[1]['final_qi']['name']
             dict_ans['final_answer']['suffix'] = dict_ans[1]['final_qi']['suffix']
@@ -359,11 +314,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
 if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)
-    runs = ["R1", "R4", "R5", "R6", "R7", "R10", "R11", "R12", "R13", "R14"]
-    query_hop2_use_wikidata = None
     
     #edit config
-    run = runs[6]  #1: R4, 4: R7,  6: R11, 7: R12, 8: R13, 9: R14
     threads = configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -373,13 +325,18 @@ if __name__ == "__main__":
 
     model, tokenizer, device = load_model(dataset, model_path, tokenizer_dir)
     
-    settings = configs['type_run'][run]
+    settings = configs['type_run']
+    # TỰ ĐẶT RUN ĐỂ LƯU FILE
+    settings['run'] = "R1"
+    
     settings["dataset"] = f"{dataset}_"
     settings["wiki_cache"] = wiki_cache_data
     raw_data_file = configs['dataset'][dataset][data_type]
     raw_data = load_json(raw_data_file)
         
-    # if dataset == "medhop":
+    if dataset == "medhop":
+        settings['chrunk_mapping'] = load_json(r'data\raw\medhop\shrunk_mapping.json')
+        
     load_spacy_model()
                   
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
@@ -391,13 +348,5 @@ if __name__ == "__main__":
             is_seq = False
         else:
             is_seq = True
-        
-        if run == "R5":
-            is_seq = False
-        if run == "R7":
-            sample['type'] = type_q
-            preprocess_sample_R7(sample, settings, dataset=dataset)
-        if run == "R12":
-            preprocess_sample_R12(sample, settings, dataset=dataset, type_q=type_q)
-        else:
-            preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, query_wikidata=query_hop2_use_wikidata)
+    
+        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q)

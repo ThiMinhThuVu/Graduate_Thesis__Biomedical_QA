@@ -2,7 +2,6 @@ from src.gpt_request import search_google
 from utils.crawl_wikipage import crawl_wikipedia_page
 from utils.abstract_wiki import crawl_abstract_wiki
 from utils.get_abs_wiki_history import get_abs_wiki_history
-# from utils.crawl_sparql import find_sparql_context, select_top_documents, find_most_relevant_doc
 from utils.util import load_pickle, save_pickle
 from utils.process_wikidata_api import process_fillter_wikidata_api
 import json
@@ -278,70 +277,47 @@ def retrieval_abstract_wiki(search_kw):
     result = f"{page_title}: {abstract_text}"  
     return result
 
-def perform_retrieval(sample, key_entity, search_kw, step, paths, settings, R7_info=None, sparql_cache="data/wiki/sparql_cache.pkl"):
+def perform_retrieval(sample, key_entity, search_kw_subq, step, paths, settings, R7_info=None, sparql_cache="data/wiki/sparql_cache.pkl"):
     retrieval_information = ""
-    
-    if settings['run'] == 'R7':
-        ans_old = R7_info["ans_old"]        
-        results_gg_search, status_gg = del_snippet(R7_info["results_gg_search"], ans_old)        
-        results_wiki_search, status_wiki = del_snippet(R7_info["results_wiki_search"], ans_old)
-        
-        if status_gg or status_wiki:
-            status = True            
-            retrieval_information += format_search_results(results_gg_search) + "\n\n"
-            retrieval_information += format_search_results(results_wiki_search) + "\n\n"
+  
+    if settings['get_context_2wiki'] == "True": #Only 2wiki dataset
+        retrieval_information = retrieval_context_2wiki(search_kw_subq, sample)
             
-            crawl_wiki_context = R7_crawl_wiki_page(
-                results_wiki_search, key_entity, settings['wiki_cache'],
-                paths['wiki_crawl'], paths['paragraphs'], step
-            )
-            retrieval_information += crawl_wiki_context
-        else:
-            status = False
-            
-        return retrieval_information, status, results_gg_search ,results_wiki_search
-    
-    if 'wiki' in settings['dataset']: 
-        if settings['get_context_2wiki'] == "True": 
-            retrieval_information = retrieval_context_2wiki(key_entity, sample)
-
-        if settings['get_abs_wiki'] == "True": # = get_wiki + abstract
-            results_wiki_search = retrieval_wiki(key_entity, step, paths['wiki_search'])
-            retrieval_information += format_search_results_wiki_abs(results_wiki_search, step, paths['wiki_abs'], topk=1) + "\n\n"
-                 
-        if settings["get_sparql_context"] == "True":
-            context, dict_result = process_fillter_wikidata_api(search_kw, key_entity)
-            
-            if sparql_cache:
-                QIDX = sample['QIDX']
-                sparql_cache_data = load_pickle(sparql_cache)
-                if QIDX in sparql_cache_data:
-                    sparql_cache_data[QIDX].append(dict_result)
-                else:
-                    sparql_cache_data[QIDX] = [dict_result]
-                save_pickle(sparql_cache_data, sparql_cache)
-            
-            if context is None:
-                context = ""
-            retrieval_information += context
-                
     if settings['get_gg'] == "True":
-        results_gg_search = retrieval_google(key_entity, step, paths['gg_search'])            
+        results_gg_search = retrieval_google(search_kw_subq, step, paths['gg_search'])            
         retrieval_information += format_search_results(results_gg_search, topk=5) + "\n\n"
         
     if settings['get_wiki'] == "True":
-        results_wiki_search = retrieval_wiki(key_entity, step, paths['wiki_search'])
+        results_wiki_search = retrieval_wiki(search_kw_subq, step, paths['wiki_search'])
         retrieval_information += format_search_results(results_wiki_search, topk=5) + "\n\n"
-    
+    elif settings['get_abs_wiki'] == "True": # = get_wiki + abstract
+        results_wiki_search = retrieval_wiki(search_kw_subq, step, paths['wiki_search'])
+        retrieval_information += format_search_results_wiki_abs(results_wiki_search, step, paths['wiki_abs'], topk=1) + "\n\n"
+
     if settings['get_wiki'] == "True" or settings['get_abs_wiki'] == "True":
         if settings['get_crawl_wiki'] == "True":
             crawl_wiki_context = crawl_wiki_page(
-                results_wiki_search, key_entity, settings['wiki_cache'],
+                results_wiki_search, search_kw_subq, settings['wiki_cache'],
                 paths['wiki_crawl'], paths['paragraphs'], step
             )
             retrieval_information += crawl_wiki_context
-                
+
+    if settings["get_sparql_context"] == "True":
+        context, dict_result = process_fillter_wikidata_api(search_kw_subq, key_entity)
         
+        if sparql_cache:
+            QIDX = sample['QIDX']
+            sparql_cache_data = load_pickle(sparql_cache)
+            if QIDX in sparql_cache_data:
+                sparql_cache_data[QIDX].append(dict_result)
+            else:
+                sparql_cache_data[QIDX] = [dict_result]
+            save_pickle(sparql_cache_data, sparql_cache)
+        
+        if context is None:
+            context = ""
+        retrieval_information += context
+                
     return retrieval_information
 
 
@@ -398,3 +374,20 @@ def perform_retrieval_R12(sample, search_kw, step, paths, settings, type_context
             retrieval_information += format_search_results(results_gg_search, topk=5) + "\n\n"
                         
     return retrieval_information
+
+def remove_perform_retrieval(current_retrieval: str, current_short: str):
+    if not current_retrieval or not current_short:
+        return current_retrieval, False
+
+    # Escape regex characters in short answer
+    escaped_short = re.escape(current_short.strip())
+
+    # Remove ALL occurrences (case-insensitive)
+    new_retrieval = re.sub(escaped_short, "", current_retrieval, flags=re.IGNORECASE)
+
+    # Cleanup whitespace artifacts
+    new_retrieval = re.sub(r'\s{2,}', ' ', new_retrieval)
+    new_retrieval = re.sub(r'\n\s*\n+', '\n\n', new_retrieval)
+    new_retrieval = new_retrieval.strip()
+
+    return new_retrieval

@@ -1,6 +1,5 @@
 run:
-  dataset: "wiki" #"medhop" #"wiki"
-  question_type: "inference"
+  dataset: "medhop" #"medhop" #"wiki"
   threads: [0, 2]
   data_split: "test"
   
@@ -23,40 +22,12 @@ classification:
     model_path: "classification/model/medhop/biobert_classifier.pth"
     tokenizer_dir: "classification/model/medhop/seq_tokenizer"
 
-type_run:
-  R4: {
-      "dataset": "{dataset}_",
-      "get_gg": "True",
-      "get_wiki": "True",
-      "get_abs_wiki": "False",
-      "get_crawl_wiki": "True",
-      "run": "R4",
-      "context": "",
-      "search_key_entity": "False",
-      "get_context_2wiki": "False",
-      "get_sparql_context": "False"
-    }
-  R7: {
-      "dataset": "{dataset}_",
-      "get_gg": "True",
-      "get_wiki": "True",
-      "get_abs_wiki": "False",
-      "get_crawl_wiki": "True",
-      "run": "R7",
-      "context": "",
-      "search_key_entity": "False",
-      "get_context_2wiki": "False",
-      "get_sparql_context": "False"
-    }
-  R11: {
+type_run: {
       "dataset": "{dataset}_",
       "get_gg": "True",
       "get_wiki": "True",
       "get_abs_wiki": "False", #chỉ chọn 1 trong 2: get_abs_wiki | get_wiki
       "get_crawl_wiki": "True",      
-      "run": "R11",
-      "context": "",
-      "search_key_entity": "False", #wiki moi True, medhop thi la False
       "get_context_2wiki": "False",
       "get_sparql_context": "False"
     }

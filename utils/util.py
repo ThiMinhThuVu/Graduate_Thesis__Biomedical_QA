@@ -14,6 +14,8 @@ from utils.crawl_wikipage import crawl_wikipedia_page
 import pickle
 import yaml
 
+from utils.crawl_sparql import find_most_relevant_doc_embedding
+
 move_section_list = [
     "table of contents",
     "see also",
@@ -219,7 +221,8 @@ def get_paragraphs_wiki_result(results, subquestion, max_docs_token=300):
         if len(list_para_text) == 0:
             continue
             
-        similarity = find_most_relevant_doc(subquestion, list_para_text)
+        # similarity = find_most_relevant_doc(subquestion, list_para_text)
+        similarity = find_most_relevant_doc_embedding(subquestion, list_para_text)
         count_token = 0
         selected_idx_sentences = []
         
