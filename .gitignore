@@ -65,7 +65,7 @@ data/wiki/dev/convert.py
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.vscode
 # Large data files
 *.h5
 *.hdf5
