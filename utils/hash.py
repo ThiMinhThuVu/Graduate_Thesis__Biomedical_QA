@@ -8,8 +8,7 @@ def hash_query(query: str, hash_len: int = 32) -> str:
     """
     Hash a query string into a stable ID
     """
-    normalized = normalize_query(query)
-    digest = hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+    digest = hashlib.sha256(query.encode("utf-8")).hexdigest()
     return digest[:hash_len]   # rút gọn cho tên file
 
 def make_cache_filename(query: str) -> str:
@@ -23,7 +22,7 @@ def register_query_cache(query: str, cache_index: dict) -> str:
     Register query into cache dict.
     Return cache filename.
     """
-    query = query.lower()
+    query = normalize_query(query.lower())
     if query in cache_index:
         return cache_index[query], cache_index
 
