@@ -1,20 +1,30 @@
 run:
   dataset: "medhop" #"medhop" #"wiki"
-  threads: [7, 10]
+  threads: [0, 10]
   data_split: "test"
 
 type_run: {
       "dataset": "{dataset}_", 
-      "get_gg": "True", #True
-      "get_wiki": "True",
-      "get_abs_wiki": "False", #chỉ chọn 1 trong 2: get_abs_wiki | get_wiki
-      "get_crawl_wiki": "True",      
-      "get_context_2wiki": "False",
-      "get_sparql_context": "True",
-      "get_history_old_id": "False", # only True with 2wiki
-      "sparql_r_topk": 3, # wiki nên dùng 1-2, medhop: 3
-      "sparql_r_retry_topk": 5, # wiki 3 là đủ dùng;  medhop:5
-      "run": "R4", # TỰ ĐẶT RUN ĐỂ LƯU FILE
+      "get_gg": False, #False
+      "get_wiki": False,
+      "get_abs_wiki": False, #chỉ chọn 1 trong 2: get_abs_wiki | get_wiki
+      "get_crawl_wiki": False,      
+      "get_context_2wiki": False,
+      "get_sparql_context": True,
+      "get_history_old_id": False, # only True with 2wiki
+
+      "retrieval_topk": {
+          "google":  5,
+          "wiki": 5,
+          "wiki_abs": 3,
+          "wiki_crawl": 3,
+          "crawl_max_token": 300,
+          "sparql_r_topk": 3, # wiki nên dùng 1-2, medhop: 3
+          "sparql_r_retry_topk": 5, # wiki 3 là đủ dùng;  medhop:5
+          "k_percent": 0.5,
+      },
+      "run": "R2", # TỰ ĐẶT RUN ĐỂ LƯU FILE
+      "normalize": True, # Tự đặt 
     }
 
 

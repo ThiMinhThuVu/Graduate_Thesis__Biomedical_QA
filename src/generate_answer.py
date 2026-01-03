@@ -461,7 +461,8 @@ def generate_answer_with_rules(
     question: str,
     context: Union[str, List[str]],
     rules: Dict,
-    key_entity: Optional[str] = None,
+    q_key_entity: Optional[str] = None,
+    evidence_key_entity: Optional[str] = None,
     dataset: Optional[str] = None,
     type_q: Optional[str] = None,
     additional_instructions: str = "",
@@ -515,7 +516,7 @@ def generate_answer_with_rules(
     output_format = get_answer_generation_output_format(type_q, rules.get("primary_rule") == "royal_noble")
     
     # Build user prompt
-    user_prompt = get_answer_generation_user_prompt(question, context_str, full_instructions, output_format, key_entity)
+    user_prompt = get_answer_generation_user_prompt(question, context_str, full_instructions, output_format, q_key_entity, evidence_key_entity)
 
     messages = [
         {"role": "system", "content": system_message},

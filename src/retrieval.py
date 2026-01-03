@@ -1,17 +1,11 @@
 from src.gpt_request import search_google
 from utils.crawl_wikipage import crawl_wikipedia_page
-from utils.abstract_wiki import crawl_abstract_wiki
 from utils.get_abs_wiki_history import get_abs_wiki_history
-from utils.util import load_pickle, save_pickle
 from utils.process_wikidata_api import process_fillter_wikidata_api, match_relation_id
-import json
-import os
 from utils.util import *
-from thefuzz import fuzz
 import re
-from sentence_transformers import SentenceTransformer
-model = SentenceTransformer('all-MiniLM-L6-v2')
-
+import os
+import math
 
 def retrieval_google(search_kw, step, filepath):
     if os.path.exists(filepath):
@@ -52,7 +46,197 @@ def retrieval_wiki(search_kw, step, filepath):
     save_json(output, filepath)        
     return result
 
-def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, wiki_file_crawl, paragraph_file, step, topk = 3):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
+
+def format_search_results(search_results, topk=5):
+    context_parts = []
+    for i, result in enumerate(search_results):            
+        if i == topk:
+            break
+        
+        context_parts.append(f"- {result['title']} {result['snippet']}")
+                                       
+    return "\n".join(context_parts)
+
+
+def format_results_wiki_abs(search_results, step, filepath, topk=5, bf_ts=None):
+    context_parts = []
+    cnt = 0
+    if os.path.exists(filepath):
+        output_wiki = load_json(filepath)
+        if step in output_wiki:
+            for link, item in output_wiki[step]['dict_para'].items():
+                if cnt == topk:
+                    break
+                if "List_"  in link:
+                    continue                
+                context_parts.append(f"- {item['title']}: {item['abstract']}")
+                cnt += 1
+                
+            return "\n".join(context_parts)
+    else:
+        output_wiki = {}
+        
+    output_wiki[step] = {}
+    output_wiki[step]["dict_para"] = {}
+    
+    for i, result in enumerate(search_results):            
+        if i == topk:
+            break
+        title = result['title']
+        url = result['link']
+        if "List_" in url:
+            continue
+
+        abs_wiki = get_abs_wiki_history(title, bf_ts)
+        context_parts.append(f"- {title}: {abs_wiki}")
+        
+        output_wiki[step]["dict_para"][result['link']] = {'title': title,
+                                                        'snippet': result['snippet'],
+                                                        'abstract': abs_wiki}
+    save_json(output_wiki, filepath)
+    return "\n".join(context_parts)
+
+
+def get_paragraphs_wiki_result(results, subquestion, embedding_model, max_docs_token=300):    
+    # Lấy paragraph
+    dict_para = {}
+    all_context = ""
+    
+    for link, sample in results.items():
+        list_para_sim = {}
+        list_para_text = []
+        index_doc = 0
+        key_section = sample['sections'].keys()
+        key_section = [section for section in key_section if section.lower() not in move_section_list]
+        
+        for heading, item in sample['sections'].items():
+            if heading.lower() in move_section_list:
+                continue
+            
+            for idx, p in enumerate(item['content']):
+                list_para_sim[index_doc] = {
+                    "link": link,
+                    "idx": idx,
+                    "heading": heading,
+                    "text": p
+                }
+                index_doc += 1
+                list_para_text.append(p)
+        
+        if len(list_para_text) == 0:
+            continue
+            
+        # similarity = find_most_relevant_doc(subquestion, list_para_text)
+        similarity = find_most_relevant_doc_embedding(subquestion, list_para_text, embedding_model)
+        count_token = 0
+        selected_idx_sentences = []
+        
+        for item in similarity:
+            if count_token >= max_docs_token:
+                break
+            
+            score = item["score"]
+            idx = item["index"]
+            para = list_para_sim[idx]["text"]
+            selected_idx_sentences.append({
+                "idx": idx,
+                "score": score,
+                "text": para,
+            })
+            count_token += len(para.split())
+            
+            # THêm hàng xóm
+            index_section = list_para_sim[idx]["idx"]
+            selected_idx_set = {s["idx"] for s in selected_idx_sentences}
+            
+            if index_section > 0:
+                idx_nbr = idx-1
+                if idx_nbr not in selected_idx_set:
+                    nbr_para = list_para_sim[idx_nbr]["text"]
+                    selected_idx_sentences.append({
+                        "idx": idx_nbr,#idx của doc
+                        "score": score,
+                        "text": nbr_para,
+                    })
+                    count_token += len(nbr_para.split())
+            
+            if index_section < len(sample['sections'][list_para_sim[idx]["heading"]]['content']) - 1:
+                idx_nbr = idx + 1
+                if idx_nbr not in selected_idx_set:
+                    nbr_para = list_para_sim[idx_nbr]["text"]
+                    selected_idx_sentences.append({
+                        "idx": idx_nbr,#idx của doc
+                        "score": score,
+                        "text": nbr_para,
+                    })
+                    count_token += len(nbr_para.split())
+                    
+        list_idx = [s["idx"] for s in selected_idx_sentences]
+
+        # thêm li
+        last_section = key_section[-1]
+        cnt_li = 0
+        list_idx_last_sect = []
+        
+        for idx, item in list_para_sim.items():
+            if idx not in list_idx and item["text"].strip().startswith("<info>"):
+                heading = item["heading"]
+                if heading.lower() in move_section_list:
+                    continue
+                
+                if heading == last_section:                    
+                    cnt_li += 1
+                    list_idx_last_sect.append(idx)
+                       
+                selected_idx_sentences.append({
+                    "idx": idx,
+                    "score": None,  
+                    "text": item["text"],
+                })
+        
+        # Nếu section cuối có > 30 li thì xóa các li của section cuối
+        if cnt_li > 30:
+            selected_idx_sentences = [item for item in selected_idx_sentences if item["idx"] not in list_idx_last_sect]
+                        
+        selected_idx_sentences = sorted(selected_idx_sentences, key=lambda x: x["idx"])      
+        
+        res_paragraphs = ""
+        res_output = {}
+        
+        # xếp theo thứ tự của doc, section
+        for head in key_section:
+            text_sec = ""
+            for item in selected_idx_sentences:
+                idx = item["idx"]
+                text = item["text"]
+                heading = list_para_sim[idx]["heading"]
+                
+                if head == heading:
+                    if item["text"].strip().startswith("<info>"):
+                        text = text.replace("<info>", "", 1).strip()
+                    text_sec += f"{text.strip()} "
+            if text_sec != "" and len(text_sec.split(" ")) < 1000:
+                res_output[head] = text_sec      
+                        
+        for head, sec_text in res_output.items():
+            res_paragraphs += f"Section: {head}\n"
+            res_paragraphs += f"{sec_text.strip()}\n"
+          
+        dict_para[link] = {
+            "paragraphs": res_paragraphs.strip(),
+        }
+        
+        all_context += "Information about: {}".format(sample["title"]) + "\n" +  res_paragraphs + "-------------------"
+        
+    output_paragraph = {
+        "dict_para": dict_para,
+        "selected_paragraphs": all_context,
+    }
+    
+    return output_paragraph, all_context
+
+
+def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, wiki_file_crawl, paragraph_file, step, embedding_model, topk=3, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
     step = str(step)
     if os.path.exists(paragraph_file):
         output_para = load_json(paragraph_file)
@@ -100,89 +284,14 @@ def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, wiki_file_crawl, pa
     results_wiki[step] = results
     save_json(results_wiki, wiki_file_crawl)
 
-    output_paragraph, all_context = get_paragraphs_wiki_result(results, search_kw)    
+    output_paragraph, all_context = get_paragraphs_wiki_result(results, search_kw, embedding_model, max_token)    
     output_para[step] = output_paragraph
     save_json(output_para, paragraph_file)
 
     return all_context
 
 
-def format_search_results(search_results, topk=5):
-    context_parts = []
-    for i, result in enumerate(search_results):            
-        if i == topk:
-            break
-        
-        context_parts.append(f"- {result['title']} {result['snippet']}")
-                                       
-    return "\n".join(context_parts)
-
-
-def format_search_results_wiki_abs(search_results, step, filepath, topk=5):
-    context_parts = []
-    cnt = 0
-    if os.path.exists(filepath):
-        output_wiki = load_json(filepath)
-        if step in output_wiki:
-            for link, item in output_wiki[step]['dict_para'].items():
-                if cnt == topk:
-                    break
-                if "List_"  in link:
-                    continue                
-                context_parts.append(f"- {item['title']}: {item['snippet']} {item['abstract']}")
-                cnt += 1
-                
-            return "\n".join(context_parts)
-    else:
-        output_wiki = {}
-        
-    output_wiki[step] = {}
-    output_wiki[step]["dict_para"] = {}
-    
-    for i, result in enumerate(search_results):            
-        if i == topk:
-            break
-        title = result['title']
-        url = result['link']
-        if "List_" in url:
-            continue
-
-        abs_wiki = get_abs_wiki_history(title)
-        context_parts.append(f"- {title}: {result['snippet']} {abs_wiki}")
-        
-        output_wiki[step]["dict_para"][result['link']] = {'title': title,
-                                                        'snippet': result['snippet'],
-                                                        'abstract': abs_wiki}
-    save_json(output_wiki, filepath)
-    return "\n".join(context_parts)
-
-
-def caculate_scores(search, golden):
-    if search.lower() == golden.lower():
-        return {'cosine': 1.0, 'fuzz': 1.0}
-    
-    # vectorizer = TfidfVectorizer()
-    vectorizer = TfidfVectorizer(analyzer='char_wb', ngram_range=(2, 5))
-    try:
-        tfidf_matrix = vectorizer.fit_transform([search, golden])
-        cosine_sim = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])[0][0]
-    except ValueError:
-        cosine_sim = 0.0
-    
-    # Tính điểm fuzz (chuẩn hóa về thang 0-1)
-    score_fuzz = fuzz.token_set_ratio(search, golden) / 100.0
-    
-    return {'cosine': cosine_sim, 'fuzz': score_fuzz}
-
-
-def normalize_text(text):
-    """Loại bỏ nội dung trong ngoặc đơn và các khoảng trắng thừa."""
-    # Loại bỏ nội dung trong ngoặc đơn, ví dụ: " (composer)"
-    text = re.sub(r'\s*\([^)]*\)\s*', '', text)
-    # Loại bỏ khoảng trắng thừa ở đầu và cuối
-    return text.strip()
-
-def retrieval_context_2wiki(search_kw, sample, vec_embed=False, top_k=1, cos_threshold=0.7, fuzz_threshold=0.7, vecembed_threshold=0.45):
+def retrieval_context_2wiki(search_kw, sample, embedding_model, vec_embed=False, top_k=1, cos_threshold=0.7, fuzz_threshold=0.7, vecembed_threshold=0.45):
     search_kw = search_kw.lower()
     all_context = sample['context']   
     high_score_matches = []
@@ -191,7 +300,7 @@ def retrieval_context_2wiki(search_kw, sample, vec_embed=False, top_k=1, cos_thr
     
     for item in all_context:
         key_context = item[0].lower()
-        scores = caculate_scores(search_kw, key_context)
+        scores = caculate_scores(search_kw, key_context, embedding_model)
         if scores['cosine'] >= cos_threshold:
             high_score_matches.append({'score': scores['cosine'], 'context_item': item})
         if scores['fuzz'] >= fuzz_threshold:
@@ -205,7 +314,7 @@ def retrieval_context_2wiki(search_kw, sample, vec_embed=False, top_k=1, cos_thr
     else:
         for item in all_context:
             key_context = normalize_text(item[0].lower())
-            scores = caculate_scores(search_kw, key_context)
+            scores = caculate_scores(search_kw, key_context, embedding_model)
             
             if search_kw in key_context:
                 high_score_matches.append({'score': scores['cosine'], 'context_item': item})
@@ -232,14 +341,14 @@ def retrieval_context_2wiki(search_kw, sample, vec_embed=False, top_k=1, cos_thr
     
     # Vector Embedding (Semantic Search)
     if vec_embed:
+        query_vec = embedding_model.encode(search_kw)
         for item in all_context:
             title = item[0]
             sentences = item[1]
             if title == key_entities:
                 continue
             
-            query_vec = model.encode(search_kw)
-            sent_vecs = model.encode(sentences)
+            sent_vecs = embedding_model.encode(sentences)
             sims = cosine_similarity([query_vec], sent_vecs)[0]
             
             sentences_with_scores = []
@@ -272,38 +381,34 @@ def retrieval_context_2wiki(search_kw, sample, vec_embed=False, top_k=1, cos_thr
                 
     return result.strip()
 
-def retrieval_abstract_wiki(search_kw):
-    abstract_text, page_title = crawl_abstract_wiki(search_kw)
-    result = f"{page_title}: {abstract_text}"  
-    return result
 
-def perform_retrieval(sample, key_entities, search_kw_subq, step, paths, settings):
+def retrieve_evidence(sample, key_entities, search_kw_subq, step, paths, settings, embedding_model):
     # key_entities: List
     retrieval_information = ""
+    retrieval_topk = settings['retrieval_topk']
     
-    if settings['get_context_2wiki'] == "True": #Only 2wiki dataset
-        retrieval_information = retrieval_context_2wiki(search_kw_subq, sample)
+    if settings['get_context_2wiki']: #Only 2wiki dataset
+        retrieval_information = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
             
-    if settings['get_gg'] == "True":
+    if settings['get_gg']:
         results_gg_search = retrieval_google(search_kw_subq, step, paths['gg_search'])            
-        retrieval_information += format_search_results(results_gg_search, topk=5) + "\n\n"
-        
-    if settings['get_wiki'] == "True":
+        retrieval_information += format_search_results(results_gg_search, topk=retrieval_topk['google']) + "\n\n"
+    
+    if settings['get_wiki'] or settings['get_abs_wiki']:
         results_wiki_search = retrieval_wiki(search_kw_subq, step, paths['wiki_search'])
-        retrieval_information += format_search_results(results_wiki_search, topk=5) + "\n\n"
-    elif settings['get_abs_wiki'] == "True": # = get_wiki + abstract
-        results_wiki_search = retrieval_wiki(search_kw_subq, step, paths['wiki_search'])
-        retrieval_information += format_search_results_wiki_abs(results_wiki_search, step, paths['wiki_abs'], topk=1) + "\n\n"
+    
+        if settings['get_wiki']:
+            retrieval_information += format_search_results(results_wiki_search, topk=retrieval_topk['wiki']) + "\n\n"
+        else:
+            retrieval_information += format_results_wiki_abs(results_wiki_search, step, paths['wiki_abs'], topk=retrieval_topk['wiki_abs']) + "\n\n"
 
-    if settings['get_wiki'] == "True" or settings['get_abs_wiki'] == "True":
-        if settings['get_crawl_wiki'] == "True":
+        if settings['get_crawl_wiki']:
             crawl_wiki_context = crawl_wiki_page(
-                results_wiki_search, search_kw_subq, settings['wiki_cache'],
-                paths['wiki_crawl'], paths['paragraphs'], step
-            )
+                results_wiki_search, search_kw_subq, settings['wiki_cache'], paths['wiki_crawl'], paths['paragraphs'], 
+                step, embedding_model, topk=retrieval_topk['wiki_crawl'], max_token=retrieval_topk['crawl_max_token'])
             retrieval_information += crawl_wiki_context
 
-    if settings["get_sparql_context"] == "True":
+    if settings["get_sparql_context"]:
         if os.path.exists(paths['sparql']):
             history = load_json(paths['sparql'])
         else:
@@ -312,61 +417,42 @@ def perform_retrieval(sample, key_entities, search_kw_subq, step, paths, setting
             retrieval_information += history[step]['retrieval_information']
         else:
             history[step] = {}
-            dict_relation_id = match_relation_id(search_kw_subq, top_k=settings['sparql_r_topk'], retry_topk=settings['sparql_r_retry_topk']) # trả về []
+            dict_relation_id = match_relation_id(search_kw_subq, top_k=retrieval_topk['sparql_r_topk'], retry_topk=retrieval_topk['sparql_r_retry_topk']) # trả về []
+            desc_sims = []
             for key_entity in key_entities:
-                context, dict_result = process_fillter_wikidata_api(search_kw_subq, key_entity, settings['get_history_old_id'], dict_relation_id)
-                if context is None:
-                    context = ""
-                if context != "":
-                    retrieval_information += f"\n{key_entity}: {context}"
-                history[step][key_entity] = {"context": context, "dict_result": dict_result}
+                context, dict_result, description = process_fillter_wikidata_api(key_entity, settings['get_history_old_id'], dict_relation_id)
+                history[step][key_entity] = {"description": description, "context": context, "dict_result": dict_result}
+                # Tính cosine giữa search_kw_subq và description 
+                if description and isinstance(description, str) and len(description.strip()) > 0:
+                    try:
+                        embeddings = embedding_model.encode([search_kw_subq, description], normalize_embeddings=True)
+                        cosine = float(np.dot(embeddings[0], embeddings[1]))
+                    except Exception:
+                        cosine = 0.0
+                else:
+                    cosine = 0.0
+                desc_sims.append({"key_entity": key_entity, "cosine": cosine, "context": context})
+
+            # Chọn k_percent key_entity có cosine cao nhất
+            if desc_sims:
+                desc_sims_sorted = sorted(desc_sims, key=lambda x: x["cosine"], reverse=True)
+                if len(key_entities) > 5:
+                    n_select = max(1, math.ceil(len(desc_sims_sorted) * retrieval_topk['k_percent']))
+                    top_entities = desc_sims_sorted[:n_select]
+                else:                    
+                    top_entities = desc_sims_sorted
+                    
+                for ent in top_entities:
+                    if ent["context"] and ent["context"].strip():
+                        retrieval_information += f"\n{ent['key_entity']}: {ent['context']}"
+
             history[step]['retrieval_information'] = retrieval_information
             save_json(history, paths['sparql'])
             
     return retrieval_information
 
 
-def norm_entity_with_keycontext(entity, sample, cos_threshold=0.7, fuzz_threshold=0.7):
-    all_context = sample['context']   
-    high_score_matches = []
-    fuzz_fallback_matches = []
-    
-    for item in all_context:
-        key_context = item[0].lower()
-        scores = caculate_scores(entity, key_context)
-        if scores['cosine'] >= cos_threshold:
-            high_score_matches.append({'score': scores['cosine'], 'context_item': item})
-        if scores['fuzz'] >= fuzz_threshold:
-            fuzz_fallback_matches.append({'score': scores['fuzz'], 'context_item': item})
-
-    best_match_item = None
-    if high_score_matches:
-        best_match_item = max(high_score_matches, key=lambda x: x['score'])['context_item']
-    elif fuzz_fallback_matches:
-        best_match_item = max(fuzz_fallback_matches, key=lambda x: x['score'])['context_item']
-    else:
-        for item in all_context:
-            key_context = normalize_text(item[0].lower())
-            scores = caculate_scores(entity, key_context)
-            
-            if entity in key_context:
-                high_score_matches.append({'score': scores['cosine'], 'context_item': item})
-            elif key_context in entity:
-                high_score_matches.append({'score': scores['cosine'], 'context_item': item})
-            elif scores['fuzz'] >= 0.5:
-                fuzz_fallback_matches.append({'score': scores['fuzz'], 'context_item': item})
-            elif scores['cosine'] >= 0.5:
-                high_score_matches.append({'score': scores['cosine'], 'context_item': item})
-                
-        if high_score_matches:
-            best_match_item = max(high_score_matches, key=lambda x: x['score'])['context_item']
-        elif fuzz_fallback_matches:
-            best_match_item = max(fuzz_fallback_matches, key=lambda x: x['score'])['context_item']
-    if best_match_item:
-        best_match_item = best_match_item[0]
-    return best_match_item
-
-def remove_perform_retrieval(current_retrieval: str, current_short: str):
+def remove_retrieve_evidence(current_retrieval: str, current_short: str):
     if not current_retrieval or not current_short:
         return current_retrieval, False
 

@@ -65,20 +65,6 @@ def crawl_abstract_wiki(title, lang="en"):
     formatted_title = quote(title)
     print(formatted_title)
 
-    # API này lấy snippet
-    # api_url = f"https://{lang}.wikipedia.org/api/rest_v1/page/summary/{formatted_title}"
-    # try:
-    #     response = requests.get(api_url, headers=headers, timeout=30)
-    #     if response.status_code == 200:
-    #         data = response.json()
-    #         extract = data.get("extract")
-    #         if extract:
-    #             return extract
-    # except requests.exceptions.RequestException as e:
-    #     print(title)
-    #     print(article_url)
-    #     print(f"Lỗi khi gọi API: {e}. Chuyển sang phương pháp scraping...")
-
     # Có thể lấy được abstract
     api_url = f"https://{lang}.wikipedia.org/w/api.php"
     params = {

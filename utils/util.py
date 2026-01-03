@@ -7,14 +7,12 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import signal
 import re
-import requests
 import matplotlib.pyplot as plt
 from collections import Counter
-from utils.crawl_wikipage import crawl_wikipedia_page
 import pickle
 import yaml
-
-from utils.crawl_sparql import find_most_relevant_doc_embedding
+from thefuzz import fuzz
+import numpy as np
 
 move_section_list = [
     "table of contents",
@@ -29,6 +27,72 @@ move_section_list = [
     "category:", 
     "categories",    
 ]
+
+def caculate_scores(search, golden, embedding_model, is_tfidf = False):
+    if search.strip().lower() == golden.strip().lower():
+        return {"cosine": 1.0, "fuzz": 1.0}
+
+    if is_tfidf:
+        vectorizer = TfidfVectorizer(
+            analyzer="char_wb",
+            ngram_range=(2, 5)
+        )
+        try:
+            tfidf_matrix = vectorizer.fit_transform([search, golden])
+            cosine_sim = cosine_similarity(
+                tfidf_matrix[0:1],
+                tfidf_matrix[1:2]
+            )[0][0]
+        except ValueError:
+            cosine_sim = 0.0
+
+        fuzz_score = fuzz.token_set_ratio(search, golden) / 100.0
+
+        return {
+            "cosine": float(cosine_sim),
+            "fuzz": float(fuzz_score)
+        }
+
+    try:
+        embeddings = embedding_model.encode(
+            [search, golden],
+            normalize_embeddings=True
+        )
+        cosine_sim = float(np.dot(embeddings[0], embeddings[1]))
+    except Exception:
+        cosine_sim = 0.0
+
+    fuzz_score = fuzz.token_set_ratio(search, golden) / 100.0
+
+    return {
+        "cosine": cosine_sim,
+        "fuzz": fuzz_score
+    }
+    
+def find_most_relevant_doc_embedding(input_text, documents, embedding_model):
+    """
+    Tìm document liên quan nhất với input_text dựa trên SentenceTransformer embeddings.
+    """
+    # Encode input_text và documents thành embedding vectors
+    all_texts = [input_text] + documents
+    embeddings = embedding_model.encode(all_texts, convert_to_tensor=False)  # numpy array
+
+    # Tính cosine similarity giữa input_text (vị trí 0) với documents
+    similarities = cosine_similarity([embeddings[0]], embeddings[1:]).flatten()
+
+    # Tạo danh sách các document với score
+    ranked_docs = []
+    for i, score in enumerate(similarities):
+        ranked_docs.append({
+            "index": i,
+            "score": float(score),
+            "text": documents[i]
+        })
+    
+    # Sắp xếp theo similarity giảm dần
+    ranked_docs = sorted(ranked_docs, key=lambda x: x["score"], reverse=True)
+
+    return ranked_docs
 
 def load_yaml(path):
     with open(path, "r", encoding="utf-8") as f:
@@ -47,6 +111,13 @@ def load_pickle(file_path):
 def save_pickle(data, file_path):
     with open(file_path, "wb") as f:
         pickle.dump(data, f)
+
+def normalize_text(text):
+    """Loại bỏ nội dung trong ngoặc đơn và các khoảng trắng thừa."""
+    # Loại bỏ nội dung trong ngoặc đơn, ví dụ: " (composer)"
+    text = re.sub(r'\s*\([^)]*\)\s*', '', text)
+    # Loại bỏ khoảng trắng thừa ở đầu và cuối
+    return text.strip()
 
 def extract_all_context(search_context_old):
     """
@@ -192,143 +263,6 @@ def wiki_pre_processing(content):
             }
     return new_content
 
-def get_paragraphs_wiki_result(results, subquestion, max_docs_token=300):    
-    # Lấy paragraph
-    dict_para = {}
-    all_context = ""
-    
-    for link, sample in results.items():
-        list_para_sim = {}
-        list_para_text = []
-        index_doc = 0
-        key_section = sample['sections'].keys()
-        key_section = [section for section in key_section if section.lower() not in move_section_list]
-        
-        for heading, item in sample['sections'].items():
-            if heading.lower() in move_section_list:
-                continue
-            
-            for idx, p in enumerate(item['content']):
-                list_para_sim[index_doc] = {
-                    "link": link,
-                    "idx": idx,
-                    "heading": heading,
-                    "text": p
-                }
-                index_doc += 1
-                list_para_text.append(p)
-        
-        if len(list_para_text) == 0:
-            continue
-            
-        # similarity = find_most_relevant_doc(subquestion, list_para_text)
-        similarity = find_most_relevant_doc_embedding(subquestion, list_para_text)
-        count_token = 0
-        selected_idx_sentences = []
-        
-        for item in similarity:
-            if count_token >= max_docs_token:
-                break
-            
-            score = item["score"]
-            idx = item["index"]
-            para = list_para_sim[idx]["text"]
-            selected_idx_sentences.append({
-                "idx": idx,
-                "score": score,
-                "text": para,
-            })
-            count_token += len(para.split())
-            
-            # THêm hàng xóm
-            index_section = list_para_sim[idx]["idx"]
-            selected_idx_set = {s["idx"] for s in selected_idx_sentences}
-            
-            if index_section > 0:
-                idx_nbr = idx-1
-                if idx_nbr not in selected_idx_set:
-                    nbr_para = list_para_sim[idx_nbr]["text"]
-                    selected_idx_sentences.append({
-                        "idx": idx_nbr,#idx của doc
-                        "score": score,
-                        "text": nbr_para,
-                    })
-                    count_token += len(nbr_para.split())
-            
-            if index_section < len(sample['sections'][list_para_sim[idx]["heading"]]['content']) - 1:
-                idx_nbr = idx + 1
-                if idx_nbr not in selected_idx_set:
-                    nbr_para = list_para_sim[idx_nbr]["text"]
-                    selected_idx_sentences.append({
-                        "idx": idx_nbr,#idx của doc
-                        "score": score,
-                        "text": nbr_para,
-                    })
-                    count_token += len(nbr_para.split())
-                    
-        list_idx = [s["idx"] for s in selected_idx_sentences]
-
-        # thêm li
-        last_section = key_section[-1]
-        cnt_li = 0
-        list_idx_last_sect = []
-        
-        for idx, item in list_para_sim.items():
-            if idx not in list_idx and item["text"].strip().startswith("<info>"):
-                heading = item["heading"]
-                if heading.lower() in move_section_list:
-                    continue
-                
-                if heading == last_section:                    
-                    cnt_li += 1
-                    list_idx_last_sect.append(idx)
-                       
-                selected_idx_sentences.append({
-                    "idx": idx,
-                    "score": None,  
-                    "text": item["text"],
-                })
-        
-        # Nếu section cuối có > 30 li thì xóa các li của section cuối
-        if cnt_li > 30:
-            selected_idx_sentences = [item for item in selected_idx_sentences if item["idx"] not in list_idx_last_sect]
-                        
-        selected_idx_sentences = sorted(selected_idx_sentences, key=lambda x: x["idx"])      
-        
-        res_paragraphs = ""
-        res_output = {}
-        
-        # xếp theo thứ tự của doc, section
-        for head in key_section:
-            text_sec = ""
-            for item in selected_idx_sentences:
-                idx = item["idx"]
-                text = item["text"]
-                heading = list_para_sim[idx]["heading"]
-                
-                if head == heading:
-                    if item["text"].strip().startswith("<info>"):
-                        text = text.replace("<info>", "", 1).strip()
-                    text_sec += f"{text.strip()} "
-            if text_sec != "" and len(text_sec.split(" ")) < 1000:
-                res_output[head] = text_sec      
-                        
-        for head, sec_text in res_output.items():
-            res_paragraphs += f"Section: {head}\n"
-            res_paragraphs += f"{sec_text.strip()}\n"
-          
-        dict_para[link] = {
-            "paragraphs": res_paragraphs.strip(),
-        }
-        
-        all_context += "Information about: {}".format(sample["title"]) + "\n" +  res_paragraphs + "-------------------"
-        
-    output_paragraph = {
-        "dict_para": dict_para,
-        "selected_paragraphs": all_context,
-    }
-    
-    return output_paragraph, all_context
 
 def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
     """Tạo thư mục và trả về một dictionary chứa tất cả các đường dẫn file cần thiết."""
@@ -382,39 +316,6 @@ def plot_k_context(list_k_context):
     plt.show()
     
     
-
-def R7_crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, wiki_file_crawl, paragraph_file, step, topk = 3):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
-    step = str(step)
-    results = {}    
-    cnt_wiki = 0
-    
-    for result in wiki_search: # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
-        link = result['link']
-        if 'list' in link.lower():
-            continue
-
-        cnt_wiki += 1
-        if cnt_wiki > topk:
-            break
-
-        if link in wiki_cache_data:
-            wiki_content = wiki_cache_data[link]
-        else:
-            print(f"Crawling Wikipedia page: {link}")
-            wiki_content = crawl_wikipedia_page(link)
-
-            if len(wiki_content['content']) != 0:
-                wiki_content = wiki_pre_processing(wiki_content)
-                wiki_cache_data[link] = wiki_content
-
-        if wiki_content:
-            results[link] = wiki_content
-
-    output_paragraph, all_context = get_paragraphs_wiki_result(results, search_kw)    
-
-    return all_context
-
-
 class DisableKeyboardInterrupt:
     def __enter__(self):
         self.signal_received = False

@@ -4,17 +4,15 @@ import time
 import sys
 import os
 from bs4 import BeautifulSoup
-from thefuzz import fuzz
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
-import torch
 import string
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from sentence_transformers import SentenceTransformer, util
 from utils.norm_wikidata_pair import PROPERTY_MAPPINGS
-from utils.crawl_sparql import get_last_oldid_before_date, send_sparql_request, find_all_qid, caculate_scores, fill_all_qid_search_sparql
+from utils.crawl_sparql import get_last_oldid_before_date, send_sparql_request, fill_all_qid_search_sparql
 model = SentenceTransformer("all-MiniLM-L6-v2")
 import inspect
 
@@ -177,7 +175,7 @@ def get_pid_value(qid, pid):
             
     return values
 
-def process_fillter_wikidata_api(q_relation, key_entity, get_history_old_id = 'False', dict_relation_id={}, limit=20):
+def process_fillter_wikidata_api(key_entity, get_history_old_id=False, dict_relation_id={}, limit=20):
     # Debug: print caller info to detect duplicated calls
     call_id = time.time()
     stack = inspect.stack()
@@ -190,7 +188,7 @@ def process_fillter_wikidata_api(q_relation, key_entity, get_history_old_id = 'F
     # print(qid_info)
     if not qid_info:
         print(f"No QID found for entity: {key_entity}")
-        return None, None
+        return "", None, ""
 
     dict_result = {}
     all_context = qid_description
@@ -207,10 +205,10 @@ def process_fillter_wikidata_api(q_relation, key_entity, get_history_old_id = 'F
         relation_id = item['pLabel']['value'].split('/')[-1]
         relation_value = dict_relation_id[relation_id]
         
-        if get_history_old_id == "False":
-            prop_value_label_history = prop_value_label
-        else:
+        if get_history_old_id:
             prop_value_label_history = get_pid_value(id, relation_id)
+        else:
+            prop_value_label_history = prop_value_label
         
         if id in dict_result:
             dict_result[id].append({
@@ -231,7 +229,7 @@ def process_fillter_wikidata_api(q_relation, key_entity, get_history_old_id = 'F
         
         all_context += f"- {label} (description: {description}) - {relation_value}: {prop_value_label_history} (source: {prop_value})\n"
         
-    return all_context, dict_result
+    return all_context, dict_result, qid_description
 
 # from src.generate_answer import gen_ans_multiple_choice
 # def test():

@@ -22,7 +22,7 @@ def load_config(config_path):
     with open(config_path, 'r', encoding='utf-8') as f:
         return yaml.safe_load(f)
 
-def load_model(model_type, model_path, tokenizer_dir):
+def load_model_classification(model_type, model_path, tokenizer_dir):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     if model_type == 'wiki':
         model = BERTClassifier(model_name='bert-base-uncased', num_classes=4)
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     model_path = config['classification'][model_type]['model_path']
     tokenizer_dir = config['classification'][model_type]['tokenizer_dir']
 
-    model, tokenizer, device = load_model(model_type, model_path, tokenizer_dir)
+    model, tokenizer, device = load_model_classification(model_type, model_path, tokenizer_dir)
 
     # Ví dụ câu hỏi
     question = "What is a common risk factor for both ectopic pregnancy and endometriosis?"

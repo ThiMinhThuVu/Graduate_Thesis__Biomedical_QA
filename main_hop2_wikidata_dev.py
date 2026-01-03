@@ -2,87 +2,59 @@ import os
 import spacy
 import pickle
 from tqdm import tqdm
-from src.decomposition import *
-from src.retrieval import *
-from src.extract_ner import *
+from src.decomposition import decompose_question_parallel, decompose_question_sequential
+from src.retrieval import retrieve_evidence, remove_retrieve_evidence
+from src.extract_ner import extract_entities_from_evidence
 from src.generate_answer import *
-from utils.norm_wikidata_pair import *
 from utils.util import *
-from classification.classification import load_model, classify_question
-import pandas as pd
+from classification.classification import load_model_classification, classify_question
+from sentence_transformers import SentenceTransformer
 
 global wiki_cache_data
-global nlp_bio
-global nlp_standard
+global extractor_model
+global embedding_model
 wiki_cache_data = {}
-nlp_bio = None
-nlp_standard = None
+extractor_model = None
 
-def load_spacy_model():
+def load_model(dataset=None):
     global wiki_cache_data
-    global nlp_bio
-    global nlp_standard
+    global extractor_model
+    global embedding_model
 
-    with open('data/wikipedia_cache.pkl', 'rb') as f:
+    with open("data/wikipedia_cache.pkl", "rb") as f:
         wiki_cache_data = pickle.load(f)
-        
-    try:
-        nlp_bio = spacy.load("en_ner_bc5cdr_md")  # Biomedical NER model
-        print("Loaded biomedical NER model")
-    except:
-        print("Biomedical NER model not found. Please install it with: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_ner_bc5cdr_md-0.5.1.tar.gz")
-        nlp_bio = None
 
-    nlp_standard = spacy.load("en_core_web_lg")  # Standard English model
+    if dataset == "medhop":
+        # Biomedical NER
+        extractor_model = spacy.load("en_ner_bc5cdr_md")
+        # Biomedical embedding
+        embedding_model = SentenceTransformer("dmis-lab/biobert-base-cased-v1.1") #pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb
+        print("Loaded biomedical NER + embedding model")
 
-def generate_answer_for_subq(subquestion, key_entities, retrieval_information, target_label, step, paths, settings, dataset=None, type_q=None):
-    ner_filepath = paths['ner']
-    output_ner = load_json(ner_filepath) if os.path.exists(ner_filepath) else {}
-    
-    if step in output_ner:
-        list_entities = output_ner[step]
+    elif dataset == "wiki":
+        extractor_model = spacy.load("en_core_web_lg")
+        embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+        print("Loaded general NER + embedding model")
+
     else:
-        print(f"Extracting entities.")
-        query_for_ner = subquestion + " " + retrieval_information
-        list_entities = extract_with_models(query_for_ner, nlp_bio, nlp_standard, target_label, dataset=dataset)
-        output_ner[step] = list_entities
-        save_json(output_ner, ner_filepath)
-   
-    all_key_entities = ""
-    for item in key_entities:
-        all_key_entities += f"{item}, "
-    
-    all_key_entities += f"{target_label} Entities: " + ", ".join(list_entities)
-    
-    return generate_answer_new(subquestion, all_key_entities, retrieval_information, dataset=dataset, type_q=type_q)
+        raise ValueError(f"Unsupported dataset: {dataset}")
 
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None):
     sample_id = str(sample['QIDX']) 
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
-    # evidence_file = paths['evidence']
     
     if os.path.exists(file_all_ans):
         print(f"All answers file already exists: {file_all_ans}")
         return
-    
-    # if os.path.exists(file_all_ans):
-    #     dict_ans = load_json(file_all_ans)
-    #     evidence_predict = gen_evidences(sample, dict_ans, type_q)
-    #     save_json(evidence_predict, evidence_file)
         
-    #     dict_ans['evidence'] = evidence_predict
-    #     save_json(dict_ans, file_all_ans)
-    #     print(f"Evidence saved to {evidence_file}")
-    #     return 
-    
     if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
         original_question = settings['chrunk_mapping'][sample_id]
     else:
         original_question = sample['Question']
         
     #DECOMPOSITION Question
-    list_qi = question_decomposition(original_question, dataset=dataset, type_q=type_q)
+    list_qi = decompose_question_parallel(original_question, dataset=dataset, type_q=type_q)
     n_qi = len(list_qi)
     
     dict_ans = {
@@ -106,19 +78,19 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                 "prefix": "",
                 "name": "",
                 "suffix": "",
-                "normalized_v2": ""
+                "normalized_ans": ""
             }
         }
     
-        path_subq_output, n_path = generate_subquestion(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
+        path_output, n_path = decompose_question_sequential(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
         
         for path_i in range(n_path):
             path_i = str(path_i)
-            subq_output = path_subq_output[path_i]
+            subq_output = path_output[path_i]
             dict_ans[q_i][path_i] = {}
             qi_final_answers = {}
             check_path_i = False
-            normalized_v2 = None
+            normalized_ans = None
             if os.path.exists(ans_filepath):
                 qi_final_answers = load_json(ans_filepath)
                 if path_i in qi_final_answers:
@@ -130,7 +102,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                 for step, item in subq_output.items():
                     step = str(step)   
                     subquestion = item['subquestion']
-                    search_kw_subq = item['search_keyword'] + f" {short_ans}"
+                    search_kw_subq = item['search_keyword']
                     search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
                     target_labels = item['target_labels']
                     
@@ -139,7 +111,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     else:
                         key_entities = [short_ans]
                                             
-                    retrieval_information = perform_retrieval(sample, key_entities, search_kw_subq_retrieval, step, paths, settings)
+                    retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, step, paths, settings, embedding_model)
 
                     if step not in qi_final_answers[path_i]:
                         continue
@@ -160,7 +132,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
                     dict_ans[q_i][path_i][step]["candidate"] = candidates
-                    dict_ans[q_i][path_i][step]['normalized_v2'] = normalized_v2                                
+                    dict_ans[q_i][path_i][step]['normalized_ans'] = normalized_ans                                
             else:
                 short_ans = ""
                 qi_final_answers[path_i] = {}
@@ -182,25 +154,45 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     # Multiple Choice
                     candidates = []
                     idx_del = 0
-                    max_candidates = 10
-                    current_retrieval = perform_retrieval(sample, key_entities, search_kw_subq_retrieval, step, paths, settings)
+                    max_candidates = 5
+                    current_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, step, paths, settings, embedding_model)
                     while idx_del < max_candidates:
                         if current_retrieval == "" or current_retrieval == []:
                             break
-                            
-                        ans_gen = generate_answer_for_subq(subquestion, key_entities, current_retrieval, target_labels, step, paths, settings, dataset=dataset, type_q=type_q)
                         
-                        current_short = ans_gen["short_answer"]
+                        evidence_ner = extract_entities_from_evidence(extractor_model, key_entities, current_retrieval, target_labels, step, paths)  
+                        norm_rules = predict_answer_rules(question=subquestion,dataset=dataset,type_q=type_q)
+                        raw_answer = generate_answer_with_rules(subquestion, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
+                        
+                        # Normalize if needed: wikipedia API
+                        if settings['normalize'] and norm_rules.get("needs_normalization", True):
+                            normalized_answer = normalize_answer_with_wikipedia(
+                                raw_answer,
+                                should_normalize=True
+                            )
+                        else:
+                            normalized_answer = raw_answer.copy()
+                            normalized_answer["normalization"] = {
+                                "was_normalized": False,
+                                "skip_reason": "Normalization disabled or not needed"
+                            }
+                        normalized_answer["metadata"] = {
+                            "rules_applied": norm_rules.get("primary_rule"),
+                            "normalized": settings['normalize'] and norm_rules.get("needs_normalization", True),
+                        }
+                                                
+                        current_short = normalized_answer["short_answer"]
                         print("Current answer: ", current_short)
+                        
                         # Kiểm tra nếu đáp án mới này đã tồn tại trong list candidates chưa
                         is_duplicate = any(c['short_answer'].lower().strip() == current_short.lower().strip() for c in candidates)
                         
                         if not is_duplicate and current_short.lower() != "insufficient information":
                             candidates.append({
                                 "short_answer": current_short,
-                                "long_answer": ans_gen["long_answer"],
+                                "long_answer": normalized_answer["long_answer"],
                                 "retrieval_information": current_retrieval,
-                                "full_data": ans_gen # Lưu lại để dùng sau khi chọn
+                                "full_data": normalized_answer # Lưu lại để dùng sau khi chọn
                             })
                         else:
                             break
@@ -208,7 +200,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                         if current_short.lower() in ['yes', 'no']:
                             break
                         
-                        new_retrieval = remove_perform_retrieval(current_retrieval, current_short)
+                        new_retrieval = remove_retrieve_evidence(current_retrieval, current_short)
                         if new_retrieval == current_retrieval:
                             break
                         else:
@@ -285,7 +277,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                 dict_ans[q_i]['final_qi']["long_answer"] = long_ans
                 dict_ans[q_i]['final_qi']["retrieval_information"] = retrieval_information
                 dict_ans[q_i][path_i][step]["candidate"] = candidates
-                dict_ans[q_i]['final_qi']['normalized_v2'] = normalized_v2
+                dict_ans[q_i]['final_qi']['normalized_ans'] = normalized_ans
                 if type_q == "inference":
                     dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
                     dict_ans[q_i]['final_qi']['name'] = name_ans
@@ -314,7 +306,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
             dict_ans['final_answer']['prefix'] = dict_ans[1]['final_qi']['prefix']
             dict_ans['final_answer']['name'] = dict_ans[1]['final_qi']['name']
             dict_ans['final_answer']['suffix'] = dict_ans[1]['final_qi']['suffix']
-            dict_ans['final_answer']['normalized_v2'] = dict_ans[1]['final_qi']['normalized_v2']
+            dict_ans['final_answer']['normalized_ans'] = dict_ans[1]['final_qi']['normalized_ans']
             
         save_json(dict_ans, file_all_ans)
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
@@ -339,7 +331,7 @@ if __name__ == "__main__":
     model_path = configs['classification'][dataset]['model_path']
     tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
 
-    model, tokenizer, device = load_model(dataset, model_path, tokenizer_dir)
+    model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
     
     settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
@@ -349,8 +341,9 @@ if __name__ == "__main__":
         
     if dataset == "medhop":
         settings['chrunk_mapping'] = load_json(r'data\raw\medhop\shrunk_mapping.json')
+        settings['normalize'] = True
         
-    load_spacy_model()
+    load_model(dataset)
                   
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):

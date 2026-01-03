@@ -5,16 +5,8 @@ import time
 import sys
 import os
 from bs4 import BeautifulSoup
-from thefuzz import fuzz
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-from sentence_transformers import SentenceTransformer
-import torch
+from utils.util import caculate_scores
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-from sentence_transformers import SentenceTransformer
-
-model = SentenceTransformer("all-MiniLM-L6-v2")
 
 headers = {
     "User-Agent": (
@@ -108,25 +100,11 @@ def send_sparql_request(query, max_retries=5):
             time.sleep(2 ** attempt)
     return []
 
-def caculate_scores(search, golden):
-    if search.lower() == golden.lower():
-        return {'cosine': 1.0, 'fuzz': 1.0}
-
-    vectorizer = TfidfVectorizer(analyzer='char_wb', ngram_range=(2, 5))
-    try:
-        tfidf_matrix = vectorizer.fit_transform([search, golden])
-        cosine_sim = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])[0][0]
-    except ValueError:
-        cosine_sim = 0.0
-
-    score_fuzz = fuzz.token_set_ratio(search, golden) / 100.0
-    return {'cosine': cosine_sim, 'fuzz': score_fuzz}
-
 def normalize_text(text):
     text = re.sub(r'\s*\([^)]*\)\s*', '', text)
     return text.strip()
 
-def norm_key_entity(entity_name, cos_threshold=0.5, fuzz_threshold=0.5):
+def norm_key_entity_search(entity_name, cos_threshold=0.5, fuzz_threshold=0.5):
     """
     Chuẩn hóa tên entity bằng cách tìm trên Wikidata, tính điểm cosine/fuzzy và chọn entity tốt nhất.
     """
@@ -331,7 +309,7 @@ def best_match_qid(qid_info, key_entity):
     return best_qid
 
 def find_sparql_context(entity):
-    key_entity = norm_key_entity(entity)
+    key_entity = norm_key_entity_search(entity)
     if not key_entity or isinstance(key_entity, dict) and "error" in key_entity:
         print(f"❌ Không chuẩn hóa được entity: {entity}")
         key_entity = entity
@@ -407,30 +385,6 @@ def find_sparql_context(entity):
                     
     return sparql_context 
 
-def find_most_relevant_doc_embedding(input_text, documents):
-    """
-    Tìm document liên quan nhất với input_text dựa trên SentenceTransformer embeddings.
-    """
-    # Encode input_text và documents thành embedding vectors
-    all_texts = [input_text] + documents
-    embeddings = model.encode(all_texts, convert_to_tensor=False)  # numpy array
-
-    # Tính cosine similarity giữa input_text (vị trí 0) với documents
-    similarities = cosine_similarity([embeddings[0]], embeddings[1:]).flatten()
-
-    # Tạo danh sách các document với score
-    ranked_docs = []
-    for i, score in enumerate(similarities):
-        ranked_docs.append({
-            "index": i,
-            "score": float(score),
-            "text": documents[i]
-        })
-    
-    # Sắp xếp theo similarity giảm dần
-    ranked_docs = sorted(ranked_docs, key=lambda x: x["score"], reverse=True)
-
-    return ranked_docs
 
 def select_top_documents(key_entity, ranked_docs, max_tokens=300):
     selected = []

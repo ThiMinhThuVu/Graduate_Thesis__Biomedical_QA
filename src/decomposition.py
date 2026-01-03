@@ -151,7 +151,7 @@ def create_relation_path_inference(entity, relation, sample_id, target_label):
     
     return output, n_path
     
-def generate_subquestion(question, sample_id, filepath, is_seq=True, dataset=None, type_q=None, model="gpt-4o-mini"):
+def decompose_question_sequential(question, sample_id, filepath, is_seq=True, dataset=None, type_q=None, model="gpt-4o-mini"):
     if os.path.exists(filepath):
         output = load_json(filepath)
         n_path = len(output.keys())
@@ -181,7 +181,11 @@ def generate_subquestion(question, sample_id, filepath, is_seq=True, dataset=Non
             
             for step, sub in enumerate(search_results):
                 if "key_entity" in sub and sub['key_entity'] != "":
-                    key_entity = [sub["key_entity"]]
+                    
+                    if isinstance(sub["key_entity"], list):
+                        key_entity = sub["key_entity"]
+                    else:
+                        key_entity = [sub["key_entity"]]
                 else:
                     key_entity = []
                 
@@ -218,7 +222,7 @@ def split_bridge_comparison_question(question):
         response = split_bridge_comparison_fallback(question)
     return response
 
-def question_decomposition(question, dataset=None, type_q=None):
+def decompose_question_parallel(question, dataset=None, type_q=None):
     if dataset != 'wiki':
         return [question]
     
@@ -236,4 +240,4 @@ if __name__ == "__main__":
     type_q = "bridge_comparison"
 
     # print(split_bridge_comparison_fallback(question))
-    print(question_decomposition(question, dataset='wiki', type_q=type_q))
+    print(decompose_question_parallel(question, dataset='wiki', type_q=type_q))

@@ -1,7 +1,8 @@
 import requests
 import json
 from bs4 import BeautifulSoup
-from urllib.parse import urlparse, unquote
+from urllib.parse import unquote
+from utils.abstract_wiki import crawl_abstract_wiki
 import re
 
 URL = "https://en.wikipedia.org/w/api.php"
@@ -110,12 +111,15 @@ def extract_abstract_from_wikitext(wikitext: str) -> str:
 
     return lead
 
-def get_abs_wiki_history(title):
+def get_abs_wiki_history(title, bf_ts=None):
     if is_bad_wiki_url(title):
         print(f"Skip bad wiki title/url: {title}")
         return ""
     
-    revision_id = get_revision_id(title)
+    if bf_ts is None:
+        return crawl_abstract_wiki(title)
+    
+    revision_id = get_revision_id(title, bf_ts)
     if not revision_id:
         return ""
 

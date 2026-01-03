@@ -1322,14 +1322,16 @@ def get_answer_generation_user_prompt(
     context_str: str,
     rules_text: str,
     output_format: str,
-    key_entity: Optional[str] = None
+    q_key_entity: Optional[str] = None,
+    evidence_key_entity: Optional[str] = None
 ) -> str:
     
-    key_entity_text = f"\nKey Entity: {key_entity}" if key_entity else ""
+    key_entity_text = f"\nKey Entity: {evidence_key_entity}" if evidence_key_entity else ""
     
     return f"""Task: Answer the following question based on the provided context.
 
-        Question: {question}{key_entity_text}
+        Question: {question} {q_key_entity}
+        {key_entity_text}
 
         {rules_text}
 
