@@ -1,14 +1,14 @@
 run:
   dataset: "medhop" #"medhop" #"wiki"
-  threads: [0, 10]
+  threads: [2, 10]
   data_split: "test"
 
 type_run: {
       "dataset": "{dataset}_", 
-      "get_gg": False, #False
-      "get_wiki": False,
+      "get_gg": True, #False
+      "get_wiki": True,
       "get_abs_wiki": False, #chỉ chọn 1 trong 2: get_abs_wiki | get_wiki
-      "get_crawl_wiki": False,      
+      "get_crawl_wiki": True,      
       "get_context_2wiki": False,
       "get_sparql_context": True,
       "get_history_old_id": False, # only True with 2wiki
@@ -23,8 +23,12 @@ type_run: {
           "sparql_r_retry_topk": 5, # wiki 3 là đủ dùng;  medhop:5
           "k_percent": 0.5,
       },
-      "run": "R2", # TỰ ĐẶT RUN ĐỂ LƯU FILE
+      "run": "R4", # TỰ ĐẶT RUN ĐỂ LƯU FILE
       "normalize": True, # Tự đặt 
+
+      "cache": {
+        "retrieval": "data/cache/retrieval",
+      }
     }
 
 

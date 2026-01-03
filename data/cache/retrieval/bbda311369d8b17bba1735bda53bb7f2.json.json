@@ -1,0 +1,103 @@
+{
+    "google": {
+        "search_kw": "long bones hands feet abnormal shapes syndrome deafness onychodystrophy osteodystrophy intellectual disability DOOR syndrome",
+        "search_results": [
+            {
+                "title": "DOORS syndrome - Genetics",
+                "snippet": "DOORS syndrome is a disorder involving multiple abnormalities that are present from birth (congenital).",
+                "link": "https://medlineplus.gov/genetics/condition/doors-syndrome/"
+            },
+            {
+                "title": "DOOR syndrome: clinical report, literature review and ...",
+                "snippet": "DOOR syndrome is a neurometabolic disorder with recognizable facial features and a progressive natural history.",
+                "link": "https://pubmed.ncbi.nlm.nih.gov/17994565/"
+            },
+            {
+                "title": "DOORS Syndrome - Symptoms, Causes, Treatment | NORD",
+                "snippet": "DOORS syndrome is a rare multisystem genetic disorder that is typically recognized shortly after birth.",
+                "link": "https://rarediseases.org/rare-diseases/door-syndrome/"
+            },
+            {
+                "title": "The genetic basis of DOORS syndrome: an exome ...",
+                "snippet": "Deafness, onychodystrophy, osteodystrophy, mental retardation, and seizures (DOORS) syndrome is a rare autosomal recessive disorder of unknown cause. We aimed ...",
+                "link": "https://www.sciencedirect.com/science/article/pii/S1474442213702655"
+            },
+            {
+                "title": "Deafness, Onychodystrophy, Osteodystrophy, Impaired ...",
+                "snippet": "DOORS syndrome is a disorder involving multiple abnormalities that are present from birth (congenital). \"DOORS\" is an abbreviation for the major features of ...",
+                "link": "https://www.malacards.org/card/deafness_onychodystrophy_osteodystrophy_impaired_intellectual_development_and_seizures_syndrome"
+            },
+            {
+                "title": "DOOR syndrome",
+                "snippet": "DOOR syndrome is characterized by intellectual disability, sensorineural deafness, abnormal nails and phalanges of the hands and feet, and variable seizures.",
+                "link": "https://en.wikipedia.org/wiki/DOOR_syndrome"
+            },
+            {
+                "title": "Doors Syndrome: Case Report",
+                "snippet": "DOORS syndrome is a rare genetic disorder with an acronym for characteristic abnormalities associated with classical symptoms such as congenital deafness, ...",
+                "link": "https://journals.lww.com/ijd/fulltext/2022/67020/doors_syndrome__case_report.13.aspx"
+            },
+            {
+                "title": "DOORS syndrome",
+                "snippet": "A rare multiple congenital anomalies-intellectual disability syndrome characterized by sensorineural hearing loss (deafness), onychodystrophy, osteodystrophy.",
+                "link": "https://www.orpha.net/en/disease/detail/79500"
+            },
+            {
+                "title": "Deafness, onychodystrophy, osteodystrophy, mental ...",
+                "snippet": "The deafness in DOORS syndrome is characterized by total or partial congenital sensorineural hearing loss in both ears due to malformation of ...",
+                "link": "https://stm.cairn.info/revue-european-journal-of-dermatology-2020-4-page-404?lang=fr"
+            },
+            {
+                "title": "FDNA™ Door Syndrome: Symptoms, Causes and Diagnosis",
+                "snippet": "The main symptoms of the syndrome include deafness (related to the inner ears), short or absent nails, short fingers and toes as well as intellectual disability ...",
+                "link": "https://fdna.com/health/resource-center/deafness-onychodystrophy-osteodystrophy-mental-retardation-and-seizures-syndrome-doors/"
+            }
+        ]
+    },
+    "wiki": {
+        "search_kw": "long bones hands feet abnormal shapes syndrome deafness onychodystrophy osteodystrophy intellectual disability DOOR syndrome",
+        "search_results": []
+    },
+    "crawl_wiki": {
+        "html_page": {},
+        "filter": {
+            "dict_para": {},
+            "selected_paragraphs": ""
+        }
+    },
+    "sparql": {
+        "DOOR syndrome": {
+            "description": "- human disease\n",
+            "context": "- human disease\n- DOOR syndrome (description: human disease) - health specialty: medical genetics (source: Q1071953)\n- DOOR syndrome (description: human disease) - genetic association: TBC1D24 (source: Q18043053)\n",
+            "dict_result": {
+                "Q1154764": [
+                    {
+                        "label": "DOOR syndrome",
+                        "description": "human disease",
+                        "property_value": "Q1071953",
+                        "property_value_label": "medical genetics",
+                        "prop_value_label_history": "medical genetics"
+                    },
+                    {
+                        "label": "DOOR syndrome",
+                        "description": "human disease",
+                        "property_value": "Q18043053",
+                        "property_value_label": "TBC1D24",
+                        "prop_value_label_history": "TBC1D24"
+                    }
+                ]
+            }
+        },
+        "desc_sims_sorted": [
+            {
+                "key_entity": "DOOR syndrome",
+                "cosine": 0.7048839330673218,
+                "context": "- human disease\n- DOOR syndrome (description: human disease) - health specialty: medical genetics (source: Q1071953)\n- DOOR syndrome (description: human disease) - genetic association: TBC1D24 (source: Q18043053)\n"
+            }
+        ],
+        "retrieval_information": "- DOORS syndrome - Genetics DOORS syndrome is a disorder involving multiple abnormalities that are present from birth (congenital).\n- DOOR syndrome: clinical report, literature review and ... DOOR syndrome is a neurometabolic disorder with recognizable facial features and a progressive natural history.\n- DOORS Syndrome - Symptoms, Causes, Treatment | NORD DOORS syndrome is a rare multisystem genetic disorder that is typically recognized shortly after birth.\n- The genetic basis of DOORS syndrome: an exome ... Deafness, onychodystrophy, osteodystrophy, mental retardation, and seizures (DOORS) syndrome is a rare autosomal recessive disorder of unknown cause. We aimed ...\n- Deafness, Onychodystrophy, Osteodystrophy, Impaired ... DOORS syndrome is a disorder involving multiple abnormalities that are present from birth (congenital). \"DOORS\" is an abbreviation for the major features of ...\n\n\n\n\nDOOR syndrome: - human disease\n- DOOR syndrome (description: human disease) - health specialty: medical genetics (source: Q1071953)\n- DOOR syndrome (description: human disease) - genetic association: TBC1D24 (source: Q18043053)\n"
+    },
+    "ner": {
+        "R4": []
+    }
+}

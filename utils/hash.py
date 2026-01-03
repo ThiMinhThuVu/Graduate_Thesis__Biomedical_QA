@@ -1,4 +1,5 @@
 import hashlib
+from utils.util import save_json
 
 def normalize_query(query: str) -> str:
     return " ".join(query.lower().strip().split())
@@ -22,17 +23,20 @@ def register_query_cache(query: str, cache_index: dict) -> str:
     Register query into cache dict.
     Return cache filename.
     """
+    query = query.lower()
     if query in cache_index:
-        return cache_index[query]
+        return cache_index[query], cache_index
 
     filename = make_cache_filename(query)
     cache_index[query] = filename
-    return filename
+    save_json(cache_index, "data/cache/hash_id.json")
+    
+    return filename, cache_index
 
 if __name__ == "__main__":
     query = "chromosome location gene responsible Carpenter syndrome MEGF8, RAB23"
     cache_index = {}
-    cache_file = register_query_cache(query, cache_index)
+    cache_file, cache_index = register_query_cache(query, cache_index)
 
     print(cache_file)
     print(cache_index)

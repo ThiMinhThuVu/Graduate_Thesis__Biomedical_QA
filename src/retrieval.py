@@ -3,22 +3,22 @@ from utils.crawl_wikipage import crawl_wikipedia_page
 from utils.get_abs_wiki_history import get_abs_wiki_history
 from utils.process_wikidata_api import process_fillter_wikidata_api, match_relation_id
 from utils.util import *
+from utils.hash import register_query_cache
 import re
 import os
 import math
 
-def retrieval_google(search_kw, step, filepath):
+def retrieval_google(search_kw, filepath):
     if os.path.exists(filepath):
         output = load_json(filepath)
-        step = str(step)
-        if step in output:
-            print(f"Cache hit for Google Search step {step}. Loading from file.")
-            return output[step]['search_results']
+        if 'google' in output:
+            print(f"Cache hit Google Search. Loading from file.")
+            return output['google']['search_results']
     else:
         output = {}
             
     result = search_google(search_kw)     
-    output[step] = {
+    output['google'] = {
         'search_kw': search_kw,
         "search_results": result                
     }
@@ -26,19 +26,18 @@ def retrieval_google(search_kw, step, filepath):
     save_json(output, filepath)        
     return result
 
-def retrieval_wiki(search_kw, step, filepath):
+def retrieval_wiki(search_kw, filepath):
     if os.path.exists(filepath):
         output = load_json(filepath)
-        step = str(step)
-        if step in output:
-            print(f"Cache hit for Wiki Search step {step}. Loading from file.")
-            return output[step]['search_results']
+        if 'wiki' in output:
+            print(f"Cache hit Google Search. Loading from file.")
+            return output['wiki']['search_results']
     else:
         output = {}
      
     result = search_google(search_kw + " site:wikipedia.org")           
     
-    output[step] = {
+    output['wiki'] = {
         'search_kw': search_kw,
         "search_results": result                
     }
@@ -58,26 +57,28 @@ def format_search_results(search_results, topk=5):
     return "\n".join(context_parts)
 
 
-def format_results_wiki_abs(search_results, step, filepath, topk=5, bf_ts=None):
+def format_results_wiki_abs(search_results, filepath, topk=5, bf_ts=None):
     context_parts = []
     cnt = 0
     if os.path.exists(filepath):
-        output_wiki = load_json(filepath)
-        if step in output_wiki:
-            for link, item in output_wiki[step]['dict_para'].items():
-                if cnt == topk:
-                    break
-                if "List_"  in link:
-                    continue                
-                context_parts.append(f"- {item['title']}: {item['abstract']}")
-                cnt += 1
-                
-            return "\n".join(context_parts)
+        output = load_json(filepath)
     else:
-        output_wiki = {}
+        output = {}
         
-    output_wiki[step] = {}
-    output_wiki[step]["dict_para"] = {}
+    if 'wiki' in output:
+        for link, item in output['wiki']['dict_abs'].items():
+            if cnt == topk:
+                break
+            if "List_"  in link:
+                continue                
+            context_parts.append(f"- {item['title']}: {item['abstract']}")
+            cnt += 1
+            
+        return "\n".join(context_parts)
+    else:       
+        output['wiki'] = {}
+        
+    output['wiki']["dict_abs"] = {}
     
     for i, result in enumerate(search_results):            
         if i == topk:
@@ -90,10 +91,10 @@ def format_results_wiki_abs(search_results, step, filepath, topk=5, bf_ts=None):
         abs_wiki = get_abs_wiki_history(title, bf_ts)
         context_parts.append(f"- {title}: {abs_wiki}")
         
-        output_wiki[step]["dict_para"][result['link']] = {'title': title,
+        output['wiki']["dict_abs"][result['link']] = {'title': title,
                                                         'snippet': result['snippet'],
                                                         'abstract': abs_wiki}
-    save_json(output_wiki, filepath)
+    save_json(output, filepath)
     return "\n".join(context_parts)
 
 
@@ -236,25 +237,19 @@ def get_paragraphs_wiki_result(results, subquestion, embedding_model, max_docs_t
     return output_paragraph, all_context
 
 
-def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, wiki_file_crawl, paragraph_file, step, embedding_model, topk=3, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
-    step = str(step)
-    if os.path.exists(paragraph_file):
-        output_para = load_json(paragraph_file)
+def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, cache_filepath_retrieval, embedding_model, topk=3, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
+    if os.path.exists(cache_filepath_retrieval):
+        output = load_json(cache_filepath_retrieval)
+        
+    if 'crawl_wiki' in output:  
+        output_para = output['crawl_wiki'] #selected_paragraphs; html_page
     else:
         output_para = {}    
         
-    if step in output_para and isinstance(output_para[step], dict) and "selected_paragraphs" in output_para[step]:
-        all_context = output_para[step]["selected_paragraphs"]
+    if "filter" in output_para and 'selected_paragraphs' in output_para["filter"]:
+        all_context = output_para["filter"]["selected_paragraphs"]
         return all_context
-    elif step in output_para:
-        print(f"Warning: paragraph cache for step {step} exists but missing 'selected_paragraphs', will recompute.")
- 
-    
-    if os.path.exists(wiki_file_crawl):
-        results_wiki = load_json(wiki_file_crawl)
-    else:
-        results_wiki = {}
-        
+       
     results = {}    
     cnt_wiki = 0
     
@@ -281,12 +276,13 @@ def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, wiki_file_crawl, pa
             results[link] = wiki_content
             cnt_wiki += 1
             
-    results_wiki[step] = results
-    save_json(results_wiki, wiki_file_crawl)
+    output_para['html_page'] = results
 
     output_paragraph, all_context = get_paragraphs_wiki_result(results, search_kw, embedding_model, max_token)    
-    output_para[step] = output_paragraph
-    save_json(output_para, paragraph_file)
+    output_para['filter'] = output_paragraph
+    
+    output['crawl_wiki'] = output_para
+    save_json(output, cache_filepath_retrieval)
 
     return all_context
 
@@ -382,46 +378,54 @@ def retrieval_context_2wiki(search_kw, sample, embedding_model, vec_embed=False,
     return result.strip()
 
 
-def retrieve_evidence(sample, key_entities, search_kw_subq, step, paths, settings, embedding_model):
+def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_model, hash_id_cache):
     # key_entities: List
     retrieval_information = ""
     retrieval_topk = settings['retrieval_topk']
+        
+    hash_id, hash_id_cache = register_query_cache(search_kw_subq, hash_id_cache)
+    cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}.json"
     
     if settings['get_context_2wiki']: #Only 2wiki dataset
         retrieval_information = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
             
     if settings['get_gg']:
-        results_gg_search = retrieval_google(search_kw_subq, step, paths['gg_search'])            
+        results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval)            
         retrieval_information += format_search_results(results_gg_search, topk=retrieval_topk['google']) + "\n\n"
     
     if settings['get_wiki'] or settings['get_abs_wiki']:
-        results_wiki_search = retrieval_wiki(search_kw_subq, step, paths['wiki_search'])
+        results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval)
     
         if settings['get_wiki']:
             retrieval_information += format_search_results(results_wiki_search, topk=retrieval_topk['wiki']) + "\n\n"
-        else:
-            retrieval_information += format_results_wiki_abs(results_wiki_search, step, paths['wiki_abs'], topk=retrieval_topk['wiki_abs']) + "\n\n"
+        elif settings['get_abs_wiki']:
+            retrieval_information += format_results_wiki_abs(results_wiki_search, cache_filepath_retrieval, topk=retrieval_topk['wiki_abs']) + "\n\n"
 
         if settings['get_crawl_wiki']:
             crawl_wiki_context = crawl_wiki_page(
-                results_wiki_search, search_kw_subq, settings['wiki_cache'], paths['wiki_crawl'], paths['paragraphs'], 
-                step, embedding_model, topk=retrieval_topk['wiki_crawl'], max_token=retrieval_topk['crawl_max_token'])
+                results_wiki_search, search_kw_subq, settings['wiki_cache'], cache_filepath_retrieval, 
+                embedding_model, topk=retrieval_topk['wiki_crawl'], max_token=retrieval_topk['crawl_max_token'])
             retrieval_information += crawl_wiki_context
 
     if settings["get_sparql_context"]:
-        if os.path.exists(paths['sparql']):
-            history = load_json(paths['sparql'])
+        if os.path.exists(cache_filepath_retrieval):
+            all_data_retrieval = load_json(cache_filepath_retrieval)
+        else:
+            all_data_retrieval = {}
+            
+        if 'sparql' in all_data_retrieval:
+            history = all_data_retrieval['sparql']
         else:
             history = {}
-        if step in history and 'retrieval_information' in history[step]:
-            retrieval_information += history[step]['retrieval_information']
+            
+        if 'retrieval_information' in history:
+            retrieval_information += history['retrieval_information']
         else:
-            history[step] = {}
             dict_relation_id = match_relation_id(search_kw_subq, top_k=retrieval_topk['sparql_r_topk'], retry_topk=retrieval_topk['sparql_r_retry_topk']) # trả về []
             desc_sims = []
             for key_entity in key_entities:
                 context, dict_result, description = process_fillter_wikidata_api(key_entity, settings['get_history_old_id'], dict_relation_id)
-                history[step][key_entity] = {"description": description, "context": context, "dict_result": dict_result}
+                history[key_entity] = {"description": description, "context": context, "dict_result": dict_result}
                 # Tính cosine giữa search_kw_subq và description 
                 if description and isinstance(description, str) and len(description.strip()) > 0:
                     try:
@@ -445,11 +449,13 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, step, paths, setting
                 for ent in top_entities:
                     if ent["context"] and ent["context"].strip():
                         retrieval_information += f"\n{ent['key_entity']}: {ent['context']}"
-
-            history[step]['retrieval_information'] = retrieval_information
-            save_json(history, paths['sparql'])
+                history['desc_sims_sorted'] = desc_sims_sorted
+                
+            history['retrieval_information'] = retrieval_information
+            all_data_retrieval['sparql'] = history
+            save_json(all_data_retrieval, cache_filepath_retrieval)
             
-    return retrieval_information
+    return retrieval_information, cache_filepath_retrieval
 
 
 def remove_retrieve_evidence(current_retrieval: str, current_short: str):

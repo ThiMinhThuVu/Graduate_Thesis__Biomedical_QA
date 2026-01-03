@@ -1,6 +1,5 @@
 import os
 import spacy
-import pickle
 from tqdm import tqdm
 from src.decomposition import decompose_question_parallel, decompose_question_sequential
 from src.retrieval import retrieve_evidence, remove_retrieve_evidence
@@ -10,6 +9,7 @@ from utils.util import *
 from classification.classification import load_model_classification, classify_question
 from sentence_transformers import SentenceTransformer
 
+global hash_id_cache
 global wiki_cache_data
 global extractor_model
 global embedding_model
@@ -17,12 +17,13 @@ wiki_cache_data = {}
 extractor_model = None
 
 def load_model(dataset=None):
+    global hash_id_cache
     global wiki_cache_data
     global extractor_model
     global embedding_model
 
-    with open("data/wikipedia_cache.pkl", "rb") as f:
-        wiki_cache_data = pickle.load(f)
+    wiki_cache_data = load_pickle("data/wikipedia_cache.pkl")
+    hash_id_cache = load_json("data/cache/hash_id.json")
 
     if dataset == "medhop":
         # Biomedical NER
@@ -111,7 +112,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     else:
                         key_entities = [short_ans]
                                             
-                    retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, step, paths, settings, embedding_model)
+                    retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
 
                     if step not in qi_final_answers[path_i]:
                         continue
@@ -155,12 +156,14 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     candidates = []
                     idx_del = 0
                     max_candidates = 5
-                    current_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, step, paths, settings, embedding_model)
+                    current_retrieval, cache_filepath_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
+                    print("Retrieval_path: ", cache_filepath_retrieval)
+                    
                     while idx_del < max_candidates:
                         if current_retrieval == "" or current_retrieval == []:
                             break
                         
-                        evidence_ner = extract_entities_from_evidence(extractor_model, key_entities, current_retrieval, target_labels, step, paths)  
+                        evidence_ner = extract_entities_from_evidence(extractor_model, current_retrieval, target_labels, cache_filepath_retrieval, settings)  
                         norm_rules = predict_answer_rules(question=subquestion,dataset=dataset,type_q=type_q)
                         raw_answer = generate_answer_with_rules(subquestion, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
                         
@@ -311,14 +314,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         save_json(dict_ans, file_all_ans)
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
         print(f"\nSaved to {file_all_ans}")
-        
-    # evidence_predict = gen_evidences(sample, dict_ans, type_q)
-    # save_json(evidence_predict, evidence_file)
     
-    # dict_ans['evidence'] = evidence_predict
-    # save_json(dict_ans, file_all_ans)
-    # print(f"Evidence saved to {evidence_file}")     
-
+    
 if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)

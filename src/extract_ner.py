@@ -11,22 +11,22 @@ def extract_with_models(query, extractor_model, target_labels):
 
     return list(entities_set)
 
-def extract_entities_from_evidence(extractor_model, key_entities, retrieval_information, target_label, step, paths):
-    ner_filepath = paths['ner']
-    output_ner = load_json(ner_filepath) if os.path.exists(ner_filepath) else {}
-    
-    if step in output_ner:
-        list_entities = output_ner[step]
+def extract_entities_from_evidence(extractor_model, retrieval_information, target_label, cache_filepath_retrieval, settings):
+    output = load_json(cache_filepath_retrieval) if os.path.exists(cache_filepath_retrieval) else {}
+    if 'ner' in output:
+        output_ner = output['ner']
+    else:
+        output_ner = {}
+        
+    if settings['run'] in output_ner:
+        list_entities = output_ner[settings['run']]
     else:
         print(f"Extracting entities.")
         list_entities = extract_with_models(retrieval_information, extractor_model, target_label)
-        output_ner[step] = list_entities
-        save_json(output_ner, ner_filepath)
-   
-    # all_key_entities = ""
-    # for item in key_entities:
-    #     all_key_entities += f"{item}, "
-    
+        output_ner[settings['run']] = list_entities
+        output['ner'] = output_ner
+        save_json(output, cache_filepath_retrieval)
+       
     all_key_entities = f"{target_label} Entities: " + ", ".join(list_entities)
     
     return all_key_entities
