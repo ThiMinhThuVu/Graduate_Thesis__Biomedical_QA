@@ -1,6 +1,6 @@
 run:
   dataset: "medhop" #"medhop" #"wiki"
-  threads: [2, 10]
+  threads: [10, 20]
   data_split: "test"
 
 type_run: {
@@ -23,19 +23,20 @@ type_run: {
           "sparql_r_retry_topk": 5, # wiki 3 là đủ dùng;  medhop:5
           "k_percent": 0.5,
       },
-      "run": "R4", # TỰ ĐẶT RUN ĐỂ LƯU FILE
-      "normalize": True, # Tự đặt 
-
+      
       "cache": {
         "retrieval": "data/cache/retrieval",
-      }
+      },
+      "run": "R4", # TỰ ĐẶT RUN ĐỂ LƯU FILE
+      "normalize": True, # Tự đặt 
+      "max_candidates": 5,
     }
-
 
 # R1: get_gg
 # R2: get_sparql_context
 # R3: get_gg, get_wiki, get_crawl_wiki
 # R4: get_gg, get_wiki, get_crawl_wiki, get_sparql_context
+
 dataset:
   wiki: 
     # test: "data/raw/wiki/test.json"
@@ -45,6 +46,11 @@ dataset:
   
   medhop:
     test: "data/raw/medhop/test.json"
+    chrunk_mapping: "data/raw/medhop/shrunk_mapping.json"
+  
+cache: 
+  wiki_cache_data: "data/wikipedia_cache.pkl"
+  hash_id_cache: "data/cache/hash_id.json"
 
 classification:
   wiki: 

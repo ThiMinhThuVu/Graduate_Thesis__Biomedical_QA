@@ -16,14 +16,14 @@ global embedding_model
 wiki_cache_data = {}
 extractor_model = None
 
-def load_model(dataset=None):
+def load_model(dataset, configs):
     global hash_id_cache
     global wiki_cache_data
     global extractor_model
     global embedding_model
 
-    wiki_cache_data = load_pickle("data/wikipedia_cache.pkl")
-    hash_id_cache = load_json("data/cache/hash_id.json")
+    wiki_cache_data = load_pickle(configs['cache']['wiki_cache_data'])
+    hash_id_cache = load_json(configs['cache']['hash_id_cache'])
 
     if dataset == "medhop":
         # Biomedical NER
@@ -54,7 +54,6 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
     else:
         original_question = sample['Question']
         
-    #DECOMPOSITION Question
     list_qi = decompose_question_parallel(original_question, dataset=dataset, type_q=type_q)
     n_qi = len(list_qi)
     
@@ -78,8 +77,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                 "retrieval_information": "",
                 "prefix": "",
                 "name": "",
-                "suffix": "",
-                "normalized_ans": ""
+                "suffix": ""
             }
         }
     
@@ -91,7 +89,6 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
             dict_ans[q_i][path_i] = {}
             qi_final_answers = {}
             check_path_i = False
-            normalized_ans = None
             if os.path.exists(ans_filepath):
                 qi_final_answers = load_json(ans_filepath)
                 if path_i in qi_final_answers:
@@ -133,7 +130,6 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
                     dict_ans[q_i][path_i][step]["candidate"] = candidates
-                    dict_ans[q_i][path_i][step]['normalized_ans'] = normalized_ans                                
             else:
                 short_ans = ""
                 qi_final_answers[path_i] = {}
@@ -155,19 +151,18 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     # Multiple Choice
                     candidates = []
                     idx_del = 0
-                    max_candidates = 5
                     current_retrieval, cache_filepath_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
                     print("Retrieval_path: ", cache_filepath_retrieval)
                     
-                    while idx_del < max_candidates:
+                    while idx_del < settings['max_candidates']:
                         if current_retrieval == "" or current_retrieval == []:
                             break
                         
                         evidence_ner = extract_entities_from_evidence(extractor_model, current_retrieval, target_labels, cache_filepath_retrieval, settings)  
-                        norm_rules = predict_answer_rules(question=subquestion,dataset=dataset,type_q=type_q)
-                        raw_answer = generate_answer_with_rules(subquestion, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
+                        norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
+                        raw_answer = generate_answer(subquestion, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
                         
-                        # Normalize if needed: wikipedia API
+                        # Normalize if needed
                         if settings['normalize'] and norm_rules.get("needs_normalization", True):
                             normalized_answer = normalize_answer_with_wikipedia(
                                 raw_answer,
@@ -280,7 +275,6 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                 dict_ans[q_i]['final_qi']["long_answer"] = long_ans
                 dict_ans[q_i]['final_qi']["retrieval_information"] = retrieval_information
                 dict_ans[q_i][path_i][step]["candidate"] = candidates
-                dict_ans[q_i]['final_qi']['normalized_ans'] = normalized_ans
                 if type_q == "inference":
                     dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
                     dict_ans[q_i]['final_qi']['name'] = name_ans
@@ -309,7 +303,6 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
             dict_ans['final_answer']['prefix'] = dict_ans[1]['final_qi']['prefix']
             dict_ans['final_answer']['name'] = dict_ans[1]['final_qi']['name']
             dict_ans['final_answer']['suffix'] = dict_ans[1]['final_qi']['suffix']
-            dict_ans['final_answer']['normalized_ans'] = dict_ans[1]['final_qi']['normalized_ans']
             
         save_json(dict_ans, file_all_ans)
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
@@ -337,10 +330,10 @@ if __name__ == "__main__":
     raw_data = load_json(raw_data_file)
         
     if dataset == "medhop":
-        settings['chrunk_mapping'] = load_json(r'data\raw\medhop\shrunk_mapping.json')
+        settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
         settings['normalize'] = True
         
-    load_model(dataset)
+    load_model(dataset, configs)
                   
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):

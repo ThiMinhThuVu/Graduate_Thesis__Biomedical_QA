@@ -4,8 +4,8 @@ Main entry points:
 - generate_answer(): LEGACY (kept for backward compatibility)
 
 Helper functions also available:
-- generate_answer_with_rules(): Generate with pre-computed rules
-- predict_answer_rules(): Get formatting rules for questions (returns primary + multiple secondary rules)
+- generate_answer(): Generate with pre-computed rules
+- apply_answer_normalization_rules(): Get formatting rules for questions (returns primary + multiple secondary rules)
 - select_best_answer(): Select from multiple candidate answers
 - normalize_answer_with_wikipedia(): Normalize using Wikipedia API
 """
@@ -28,17 +28,7 @@ import json
 import time
 from typing import List, Dict, Any, Optional, Union
 
-
-def generate_answer(question, key_entities, relevant_info, dataset=None, type_q=None, model="o3-mini"):
-    """
-    LEGACY FUNCTION - Uses old prompt-based approach.
-    
-    For new code, use generate_answer_new() which uses the pipeline with:
-    - predict_ans_rules for rule detection
-    - gen_ans with rule injection
-    - get_head_title_wikidata for normalization
-    - handle_multi_choice for answer selection
-    """
+def _generate_answer(question, key_entities, relevant_info, dataset=None, type_q=None, model="o3-mini"):
     prompt = load_prompt_gen_ans(question, key_entities, relevant_info, dataset=dataset, type_q=type_q)
     if dataset in ["cwq", "wiki"]:
         messages = [
@@ -76,111 +66,6 @@ def generate_answer(question, key_entities, relevant_info, dataset=None, type_q=
         }
  
     return result_dict
-
-
-def generate_answer_new(
-    question: str,
-    contexts: list,
-    key_entity: str = None,
-    dataset: str = None,
-    type_q: str = None,
-    normalize: bool = True,
-    gen_model: str = "gpt-4o-mini",
-    select_model: str = "o3-mini",
-    temperature: float = 0
-) -> dict:
-    """
-    NEW PIPELINE APPROACH - Use this for new code.
-    
-    Full pipeline: predict_ans_rules → gen_ans → normalize → handle_multi_choice
-    
-    This consolidates the functionality from:
-    - predict_ans_rules.py: Rule prediction
-    - gen_ans.py: Answer generation with rules
-    - handle_multi_choice.py: Answer selection
-    - norm_ans_with_wiki.py: Wikipedia normalization
-    
-    Args:
-        question: The question to answer
-        contexts: List of context strings or single context string
-        key_entity: Optional key entity being asked about
-        dataset: Dataset context (medhop, bioasq, cwq, wiki)
-        type_q: Question type (inference, compositional, comparison)
-        normalize: Whether to normalize answers with Wikipedia
-        gen_model: Model for answer generation
-        select_model: Model for multi-choice selection
-        temperature: Temperature for generation
-        
-    Returns:
-        Dict with short_answer, long_answer, and pipeline metadata
-    """
-    # Convert contexts to list if needed
-    if isinstance(contexts, str):
-        contexts = [contexts]
-    elif isinstance(contexts, list) and len(contexts) > 0 and isinstance(contexts[0], list):
-        contexts = [" ".join(ctx) if isinstance(ctx, list) else ctx for ctx in contexts]
-    
-    # Step 1: Predict rules
-    rules = predict_answer_rules(question, dataset, type_q, gen_model, temperature)
-    
-    # Step 2: Generate answers for each context
-    answers = []
-    for context in contexts:
-        raw_answer = generate_answer_with_rules(
-            question=question,
-            context=context,
-            rules=rules,
-            key_entity=key_entity,
-            dataset=dataset,
-            type_q=type_q,
-            model=gen_model,
-            temperature=temperature
-        )
-        
-        # Step 3: Normalize if needed
-        if normalize and rules.get("needs_normalization", True):
-            print("Need normalize with wikipedia")
-            normalized_answer = normalize_answer_with_wikipedia(raw_answer, should_normalize=True)
-        else:
-            normalized_answer = raw_answer.copy()
-            normalized_answer["normalization"] = {
-                "was_normalized": False,
-                "skip_reason": "Normalization disabled or not needed"
-            }
-        
-        answers.append(normalized_answer)
-    
-    # Step 4: Select best answer if multiple contexts
-    if len(answers) == 1:
-        final_result = answers[0]
-        final_result["selection"] = {
-            "num_candidates": 1,
-            "selected_index": 1,
-            "reasoning": "Single context"
-        }
-    else:
-        selection_result = select_best_answer(question, answers, select_model, temperature)
-        final_result = selection_result["chosen_answer"]
-        final_result["selection"] = {
-            "num_candidates": len(answers),
-            "selected_index": selection_result["answer_index"],
-            "reasoning": selection_result["reasoning"],
-            "confidence": selection_result["confidence"]
-        }
-    
-    # Add pipeline metadata
-    final_result["pipeline_metadata"] = {
-        "question": question,
-        "dataset": dataset,
-        "type_q": type_q,
-        "rules_applied": rules.get("primary_rule"),
-        "normalized": normalize and rules.get("needs_normalization", True),
-        "num_contexts": len(contexts),
-        "gen_model": gen_model,
-        "select_model": select_model if len(answers) > 1 else None
-    }
-    
-    return final_result
 
 def generate_combine_parallel_answers(question, context, dataset='wiki', model="o3-mini"):
     prompt = get_parallel_answers_combination_prompt(question, context)
@@ -238,92 +123,76 @@ def gen_ans_multiple_choice(question, context, dataset='medhop', model = "o3-min
     
     return result_json
 
-
-# ============================================================================
-# NEW PIPELINE HELPER FUNCTIONS (from gen_ans.py, predict_ans_rules.py, handle_multi_choice.py)
-# ============================================================================
-
-# From predict_ans_rules.py
 ANSWER_RULES = {
-    "count": {
-        "description": "Questions asking 'how many' or about counts",
-        "format": "Return ONLY a number or numeric phrase (e.g., '10', 'ten')",
-        "examples": ["10", "ten", "three hundred"]
-    },
-    "range": {
-        "description": "Questions asking for a range or estimated interval",
-        "format": "Return the numeric range (e.g., '300-330 msec', '10-20%')",
-        "examples": ["300-330 msec", "10-20%", "5-10 days"]
-    },
-    "time_duration": {
-        "description": "Questions asking about time or duration",
-        "format": "Return a concise time value (e.g., '36 hours', '3 days')",
-        "examples": ["36 hours", "3 days", "2 weeks"]
-    },
-    "yes_no": {
-        "description": "Yes/no questions",
-        "format": "Return exactly 'Yes' or 'No'",
-        "examples": ["Yes", "No"]
-    },
-    "biomedical_entity": {
-        "description": "Questions about biomedical/scientific entities (genes, proteins, diseases, etc.)",
-        "format": "Return the FULL noun phrase naming the entity",
-        "examples": ["chromosome X", "interleukin-6", "dopamine receptor D2"]
-    },
-    "general_entity": {
-        "description": "Questions about general entities (people, places, films, etc.)",
-        "format": "Return the proper name directly",
-        "examples": ["Manuel Romero", "Paris", "The Godfather"]
-    },
-    "organism": {
-        "description": "Questions asking about organism type",
-        "format": "Return the organism type",
-        "examples": ["bacterium", "fungus", "virus"]
-    },
-    "comparison_choice": {
-        "description": "Comparison questions asking to choose (Which/Who...older/younger/later/earlier)",
-        "format": "Return the NAME of the chosen option extracted EXACTLY from the question",
-        "examples": ["A Flame In My Heart", "Butcher, Baker, Nightmare Maker"]
-    },
-    "confirmation": {
-        "description": "Confirmation questions (Are/Do...same)",
-        "format": "Return 'yes' or 'no' (lowercase)",
-        "examples": ["yes", "no"]
-    },
-    "royal_noble": {
-        "description": "Questions about royal or noble figures",
-        "format": "Include royal prefixes (King/Queen, Prince/Princess, etc.), numbered hereditary titles, but EXCLUDE territorial designations. Format as prefix|name|suffix",
-        "examples": ["King|William IV|", "Princess|Luisa Carlotta|of Naples and Sicily", "|Thomas Monck|MP"]
-    },
-    "compound": {
-        "description": "Answers with multiple concepts",
-        "format": "Deconstruct and join with pipe '|' separator",
-        "examples": ["Presidential|Unitary|Democratic", "Drawing|Painting|Photography"]
-    },
-    "location": {
-        "description": "Questions asking about locations",
-        "format": "Return the MOST SPECIFIC location (city > state > country). Do NOT generate locations not in context",
-        "examples": ["Valoria", "Silver Creek", "London"]
-    },
-    "nationality": {
-        "description": "Questions about nationality",
-        "format": "'X-born Y' → 'X'; 'X-Y nationality' → 'X'; 'X Y nationality' → 'Y'",
-        "examples": ["Spanish", "Mexican", "German"]
-    },
-    "default": {
-        "description": "Default rule for other questions",
-        "format": "Provide a concise, direct answer matching what the question asks for",
-        "examples": []
-    },
-    "insufficient_info": {
-        "description": "When information is not available in context",
-        "format": "Return exactly 'Insufficient information'",
-        "examples": ["Insufficient information"]
-    }
+   "count": {
+       "description": "Questions asking 'how many' or about counts",
+       "format": "Return ONLY a number or numeric phrase (e.g., '10', 'ten')",
+       "examples": ["10", "ten", "three hundred"]
+   },
+   "range": {
+       "description": "Questions asking for a range or estimated interval",
+       "format": "Return the numeric range (e.g., '300-330 msec', '10-20%')",
+       "examples": ["300-330 msec", "10-20%", "5-10 days"]
+   },
+   "time_duration": {
+       "description": "Questions asking about time or duration",
+       "format": "Return a concise time value (e.g., '36 hours', '3 days')",
+       "examples": ["36 hours", "3 days", "2 weeks"]
+   },
+   "yes_no": {
+       "description": "Yes/no questions",
+       "format": "Return exactly 'Yes' or 'No'",
+       "examples": ["Yes", "No"]
+   },
+   "biomedical_entity": {
+       "description": "Questions about biomedical/scientific entities (genes, proteins, diseases, etc.)",
+       "format": "Return ONLY the SINGLE most probable entity as a FULL noun phrase. NO lists or separators. MAX 3 words.",
+       "examples": ["chromosome X", "interleukin-6", "dopamine receptor"]
+   },
+   "general_entity": {
+       "description": "Questions about general entities (people, places, films, etc.)",
+       "format": "Return the proper name directly",
+       "examples": ["Manuel Romero", "Paris", "The Godfather"]
+   },
+   "organism": {
+       "description": "Questions asking about organism type",
+       "format": "Return the organism type",
+       "examples": ["bacterium", "fungus", "virus"]
+   },
+   "comparison_choice": {
+       "description": "Comparison questions asking to choose (Which/Who...older/younger/later/earlier)",
+       "format": "Return the NAME of the chosen option extracted EXACTLY from the question",
+       "examples": ["A Flame In My Heart", "Butcher, Baker, Nightmare Maker"]
+   },
+   "compound": {
+       "description": "Answers with multiple concepts",
+       "format": "Select ONLY the SINGLE most probable answer. DO NOT use list or separator. MAX 3 words.",
+       "examples": ["Presidential", "Ectodermal dysplasia", "HLA-B51", "Interleukin-6"]
+   },
+   "location": {
+       "description": "Questions asking about locations",
+       "format": "Return the MOST SPECIFIC location (city > state > country). Do NOT generate locations not in context",
+       "examples": ["Valoria", "Silver Creek", "London"]
+   },
+   "nationality": {
+       "description": "Questions about nationality",
+       "format": "'X-born Y' → 'X'; 'X-Y nationality' → 'X'; 'X Y nationality' → 'Y'",
+       "examples": ["Spanish", "Mexican", "German"]
+   },
+   "default": {
+       "description": "Default rule for other questions",
+       "format": "Select ONLY the SINGLE most probable answer. NO lists, NO separators. MAX 3 words.",
+       "examples": []
+   },
+   "insufficient_info": {
+       "description": "When information is not available in context",
+       "format": "Return exactly 'Insufficient information'",
+       "examples": ["Insufficient information"]
+   }
 }
 
 
-def predict_answer_rules(
+def apply_answer_normalization_rules(
     question: str,
     dataset: Optional[str] = None,
     type_q: Optional[str] = None,
@@ -361,7 +230,7 @@ def predict_answer_rules(
     result = request_api(messages=messages, model=model, temperature=int(temperature))
     
     if not result or not result.strip():
-        return _get_default_rules(question, dataset, type_q)
+        return get_default_rules(question, dataset, type_q)
     
     try:
         parsed_result = json.loads(result)
@@ -377,15 +246,15 @@ def predict_answer_rules(
         ]
         
         # Determine if normalization is needed
-        parsed_result["needs_normalization"] = _should_normalize(primary_rule_name, secondary_rules)
+        parsed_result["needs_normalization"] = should_normalize(primary_rule_name, secondary_rules)
         
         return parsed_result
         
     except json.JSONDecodeError:
-        return _get_default_rules(question, dataset, type_q)
+        return get_default_rules(question, dataset, type_q)
 
 
-def _should_normalize(primary_rule: str, secondary_rules: List[str]) -> bool:
+def should_normalize(primary_rule: str, secondary_rules: List[str]) -> bool:
     """Determine if the answer should be normalized with Wikipedia."""
     non_normalizable_rules = {
         "count", "range", "time_duration", "yes_no", "confirmation", "insufficient_info"
@@ -393,7 +262,7 @@ def _should_normalize(primary_rule: str, secondary_rules: List[str]) -> bool:
     return primary_rule not in non_normalizable_rules
 
 
-def _get_default_rules(question: str, dataset: Optional[str], type_q: Optional[str]) -> Dict:
+def get_default_rules(question: str, dataset: Optional[str], type_q: Optional[str]) -> Dict:
     """Generate default rules based on simple heuristics when LLM fails."""
     question_lower = question.lower()
     
@@ -426,11 +295,11 @@ def _get_default_rules(question: str, dataset: Optional[str], type_q: Optional[s
         "reasoning": "Default heuristic-based rule detection",
         "primary_rule_details": ANSWER_RULES.get(primary_rule, ANSWER_RULES["default"]),
         "secondary_rule_details": [ANSWER_RULES["insufficient_info"]],
-        "needs_normalization": _should_normalize(primary_rule, ["insufficient_info"])
+        "needs_normalization": should_normalize(primary_rule, ["insufficient_info"])
     }
 
 
-def _get_rules_for_prompt(rules: Dict) -> str:
+def get_rules_for_prompt(rules: Dict) -> str:
     """Convert rules dict to a formatted string for injection into answer generation prompt."""
     primary_details = rules.get("primary_rule_details", {})
     formatting = rules.get("formatting_instructions", "")
@@ -456,8 +325,7 @@ Format: {formatting}
     
     return rules_text
 
-
-def generate_answer_with_rules(
+def generate_answer(
     question: str,
     context: Union[str, List[str]],
     rules: Dict,
@@ -475,7 +343,7 @@ def generate_answer_with_rules(
     Args:
         question: The question to answer
         context: Context information (string or list of strings)
-        rules: Rules dictionary from predict_answer_rules
+        rules: Rules dictionary from apply_answer_normalization_rules
         key_entity: Optional key entity being asked about
         dataset: Dataset context (medhop, bioasq, cwq, wiki)
         type_q: Question type hint
@@ -493,7 +361,7 @@ def generate_answer_with_rules(
         context_str = context
     
     # Get formatted rules for prompt
-    rules_text = _get_rules_for_prompt(rules)
+    rules_text = get_rules_for_prompt(rules)
     
     # Build system message
     system_message = get_answer_generation_system_prompt(dataset)
@@ -536,10 +404,10 @@ def generate_answer_with_rules(
             answer["long_answer"] = "Unable to generate explanation."
         return answer
     except json.JSONDecodeError:
-        return _parse_fallback_answer(result)
+        return parse_fallback_answer(result)
 
 
-def _parse_fallback_answer(result: str) -> Dict[str, str]:
+def parse_fallback_answer(result: str) -> Dict[str, str]:
     """Try to parse answer from malformed response."""
     long_answer = ""
     short_answer = ""
@@ -562,78 +430,6 @@ def _parse_fallback_answer(result: str) -> Dict[str, str]:
         short_answer = "Insufficient information"
     
     return {"long_answer": long_answer, "short_answer": short_answer}
-
-
-def select_best_answer(
-    question: str,
-    answers: List[Dict[str, Any]],
-    model: str = "o3-mini",
-    temperature: float = 0
-) -> Dict[str, Any]:
-    """
-    Select the best answer from multiple candidates using LLM.
-    
-    Args:
-        question: The original question
-        answers: List of answer dicts with short_answer, long_answer
-        model: LLM model to use
-        temperature: Temperature for generation
-        
-    Returns:
-        Dict containing chosen_answer, answer_index, reasoning, confidence
-    """
-    if not answers:
-        return {
-            "chosen_answer": {"short_answer": "No answer", "long_answer": "No answers provided"},
-            "answer_index": 0,
-            "reasoning": "No candidate answers provided",
-            "confidence": "low"
-        }
-    
-    if len(answers) == 1:
-        return {
-            "chosen_answer": answers[0],
-            "answer_index": 1,
-            "reasoning": "Only one candidate answer available",
-            "confidence": "medium"
-        }
-    
-    # Get formatted user prompt
-    user_prompt = get_answer_selection_user_prompt(question, answers)
-
-    messages = [{"role": "user", "content": user_prompt}]
-    
-    result = request_api(messages=messages, model=model, temperature=int(temperature))
-    
-    if not result or not result.strip():
-        return {
-            "chosen_answer": answers[0],
-            "answer_index": 1,
-            "reasoning": "Default selection due to API error",
-            "confidence": "low"
-        }
-    
-    try:
-        parsed_result = json.loads(result)
-        answer_index = parsed_result.get("answer_index", 1)
-        
-        if not isinstance(answer_index, int) or answer_index < 1 or answer_index > len(answers):
-            answer_index = 1
-        
-        return {
-            "chosen_answer": answers[answer_index - 1],
-            "answer_index": answer_index,
-            "reasoning": parsed_result.get("reasoning", "Selected by model"),
-            "confidence": parsed_result.get("confidence", "medium")
-        }
-    except json.JSONDecodeError:
-        return {
-            "chosen_answer": answers[0],
-            "answer_index": 1,
-            "reasoning": "Default selection due to parsing error",
-            "confidence": "low"
-        }
-
 
 def normalize_answer_with_wikipedia(
     answer: Dict[str, str],
@@ -755,50 +551,3 @@ def normalize_answer_with_wikipedia(
         time.sleep(0.5)
     
     return result
-
-# def gen_evidences(sample, data, type_q, model="gpt-4o-mini"):    
-#     q_ids = sorted([k for k in data.keys() if k.isdigit()], key=int)
-#     list_subquestion = []
-#     dict_evidences = {}
-#     cnt_evd = 0
-    
-#     for q_id in q_ids:
-#         q_id = str(q_id)
-#         subdata = data[q_id]
-#         last_path = str(len(subdata.keys()) - 2)
-#         datapath = subdata[str(last_path)]
-#         last_step = str(len(datapath.keys()) - 1)
-        
-#         for step, subitem in datapath.items():
-#             e1 = subitem['key_entity']
-#             e2 = subitem['short_answer']
-#             list_subquestion.append(subitem['question'])
-#             e1 = norm_entity_with_keycontext(e1, sample)
-#             if step != last_step:
-#                 e2 = norm_entity_with_keycontext(e2, sample)
-            
-#             dict_evidences[str(cnt_evd)] = {
-#                 "e1": e1,
-#                 "e2": e2
-#             }
-#             cnt_evd += 1
-
-#     messages = prompt_gen_relation(list_subquestion, type_q)
-#     result_json = request_api(messages, model)
-    
-#     start_idx = result_json.find("[")
-#     end_idx = result_json.rfind("]") + 1
-#     result_json = result_json[start_idx:end_idx]
-    
-#     try:
-#         relation_predict = json.loads(result_json)
-#     except Exception as e:
-#         print(f"Error parsing JSON response: {e}")
-#         print(f"Raw response: {result_json}")
-    
-#     list_evidences = []
-#     for idx, item in dict_evidences.items():
-#         rel = relation_predict[int(idx)]
-#         list_evidences.append([item['e1'], rel, item['e2']])
-
-#     return list_evidences

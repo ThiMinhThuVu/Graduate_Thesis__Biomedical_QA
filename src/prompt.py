@@ -1123,27 +1123,36 @@ def prompt_split_question(question):
     return messages
 
 def get_answer_generation_system_prompt(dataset: Optional[str] = None) -> str:
-    """
-    Get system message for answer generation with injected rules.
-    
-    Args:
-        dataset: Dataset context (medhop, bioasq, cwq, wiki)
-        
-    Returns:
-        System message string
-    """
-    if dataset in ["medhop", "bioasq"]:
-        domain_context = "You are an expert in medical and scientific knowledge."
-    else:
-        domain_context = "You are an expert in general knowledge."
-    
-    return f"""{domain_context} Your task is to:
+   """
+   Get system message for answer generation with injected rules.
+  
+   Args:
+       dataset: Dataset context (medhop, bioasq, cwq, wiki)
+      
+   Returns:
+       System message string
+   """
+   if dataset in ["medhop", "bioasq"]:
+       domain_context = "You are an expert in medical and scientific knowledge."
+   else:
+       domain_context = "You are an expert in general knowledge."
+  
+   return f"""{domain_context} Your task is to:
 1. Analyze the provided context carefully
 2. Identify explicit facts first, then make logical inferences when needed
 3. Generate accurate answers following the EXACT formatting rules provided
 4. Output a valid JSON response
 
-CRITICAL: Follow the formatting rules PRECISELY. The answer format must match the rules exactly."""
+
+CRITICAL CONSTRAINT:
+- Select ONLY the SINGLE most probable answer
+- short_answer must be MAX 3 words
+- If the question asks for multiple things, select ONLY the most prominent one
+
+
+Follow the formatting rules PRECISELY. The answer format must match the rules exactly."""
+
+
 
 
 def get_answer_generation_context_synthesis_rules() -> str:
@@ -1167,89 +1176,90 @@ def get_answer_generation_context_synthesis_rules() -> str:
 - Mark inferred answers clearly in long_answer
 """
 
-
 def get_answer_generation_type_specific_rules(type_q: Optional[str] = None, dataset: Optional[str] = None) -> str:
-    """
-    Get type-specific rules for answer generation based on question type and dataset.
-    
-    For MedHopQA (medhop): Returns biomedical-specific rules.
-    For 2WikiMultiHopQA (wiki): Returns rules based on type_q (inference, compositional, 
-    comparison, bridge_comparison).
-    
-    Args:
-        type_q: Question type for 2WikiMultiHopQA (inference, compositional, comparison, 
-                bridge_comparison). Not used for MedHopQA.
-        dataset: Dataset context (medhop, wiki)
-        
-    Returns:
-        Type-specific rules string for prompt injection
-    """
-    # =========================================================================
-    # MEDHOP (Biomedical Domain)
-    # =========================================================================
-    if dataset == "medhop":
-        return """
+   """
+   Get type-specific rules for answer generation based on question type and dataset.
+  
+   For MedHopQA (medhop): Returns biomedical-specific rules.
+   For 2WikiMultiHopQA (wiki): Returns rules based on type_q (inference, compositional,
+   comparison, bridge_comparison).
+  
+   Args:
+       type_q: Question type for 2WikiMultiHopQA (inference, compositional, comparison,
+               bridge_comparison). Not used for MedHopQA.
+       dataset: Dataset context (medhop, wiki)
+      
+   Returns:
+       Type-specific rules string for prompt injection
+   """
+   # =========================================================================
+   # MEDHOP (Biomedical Domain)
+   # =========================================================================
+   if dataset == "medhop":
+       return """
 ### BIOMEDICAL DOMAIN RULES ###
 
 **Answer Format by Question Pattern:**
 
 1. COUNT Questions ("how many", "number of"):
-   - Return ONLY a number or numeric phrase
-   - Examples: '10', 'ten', 'twenty-five'
+  - Return ONLY a number or numeric phrase
+  - Examples: '10', 'ten', 'twenty-five'
 
 2. TIME/DURATION Questions ("how long", "duration"):
-   - Return concise time value with units
-   - Examples: '36 hours', '3 days', '2 weeks'
+  - Return concise time value with units
+  - Examples: '36 hours', '3 days', '2 weeks'
 
 3. YES/NO Questions ("is", "are", "does", "can"):
-   - Return exactly 'Yes' or 'No'
-   - No additional explanation in short_answer
+  - Return exactly 'Yes' or 'No'
+  - No additional explanation in short_answer
 
 4. ENTITY Questions ("what", "which"):
-   - Return the FULL biomedical noun phrase
-   - Include complete terminology, not abbreviations alone
-   - Examples: 'chromosome X', 'interleukin-6', 'dopamine receptor D2'
+  - Return the FULL biomedical noun phrase
+  - Include complete terminology, not abbreviations alone
+  - Examples: 'chromosome X', 'interleukin-6', 'dopamine receptor D2'
 
 5. ORGANISM Questions ("what organism", "what type"):
-   - Return the organism type/classification
-   - Examples: 'bacterium', 'fungus', 'virus', 'mammal'
+  - Return the organism type/classification
+  - Examples: 'bacterium', 'fungus', 'virus', 'mammal'
 
 6. RANGE/INTERVAL Questions ("range", "between"):
-   - Return numeric range with units
-   - Examples: '300-330 msec', '10-20%', '5-10 days'
+  - Return numeric range with units
+  - Examples: '300-330 msec', '10-20%', '5-10 days'
 
 7. DEFAULT (other questions):
-   - Provide the most direct, specific answer from context
-   - Use complete biomedical terminology
+  - Provide the most direct, specific answer from context
+  - Use complete biomedical terminology
+
+**CRITICAL CONSTRAINT (ALL QUESTIONS):**
+- Select ONLY the SINGLE most probable answer
+- MAX 3 words for short_answer
 """
-    if dataset == "wiki":
-        if type_q == "inference":
-            return """
+
+   if dataset == "wiki":
+       if type_q == "inference":
+           return """
 ### INFERENCE TYPE RULES ###
+
 
 This question involves family relationships or royal/noble figures.
 
 **For ROYAL/NOBLE Figures:**
-- Format answer as: prefix|name|suffix
-- INCLUDE:
-  * Royal prefixes: King, Queen, Prince, Princess, Duke, Duchess, Sir, Dame, Lord, Lady
-  * Numbered hereditary titles: '2nd Earl of Stafford', 'III'
-- EXCLUDE:
-  * Territorial designations based only on land ownership
-  * Parentheses in final answer
+- Return the full name with royal prefixes (King, Queen, Prince, Princess, Duke, Duchess, Sir, Dame, Lord, Lady)
+- Include numbered hereditary titles if present
+- EXCLUDE: Territorial designations based only on land ownership, Parentheses
+- Return as a SINGLE string (MAX 3 words)
 
 **Examples:**
-- "King|William IV|"
-- "Princess|Luisa Carlotta|of Naples and Sicily"
-- "|Thomas Monck|MP"
-- "|Henrietta Susanna Tracy|"
+- "King William IV"
+- "Princess Luisa"
+- "Sir Thomas Monck"
 
 **For Non-Royal Figures:**
-- Return the full name as found in context
+- Return the full name as found in context (MAX 3 words)
 """
 
-        elif type_q == "compositional":
-            return """
+       elif type_q == "compositional":
+           return """
 ### COMPOSITIONAL TYPE RULES ###
 
 This question requires connecting facts across multiple documents.
@@ -1257,7 +1267,7 @@ This question requires connecting facts across multiple documents.
 **Core Requirements:**
 - MUST synthesize information from different sources
 - Treat synonyms/alternate names as the same entity
-  * Example: "John Doe" = "Jean Doe" = same person
+ * Example: "John Doe" = "Jean Doe" = same person
 
 **Location Answers:**
 - Return MOST SPECIFIC location available (city > state > country)
@@ -1272,14 +1282,10 @@ This question requires connecting facts across multiple documents.
 **General Categories:**
 - Use the broadest applicable term
 - Example: "cancer" instead of "bowel cancer"
-
-**Compound Answers:**
-- For multiple concepts, join with pipe '|' separator
-- Example: "Presidential|Unitary|Democratic"
 """
 
-        elif type_q in ["comparison", "bridge_comparison"]:
-            return """
+       elif type_q in ["comparison", "bridge_comparison"]:
+           return """
 ### COMPARISON TYPE RULES ###
 
 This question compares two or more entities.
@@ -1287,25 +1293,23 @@ This question compares two or more entities.
 **Choice Questions (Which/Who is older/younger/later/earlier/first/last):**
 - Return the NAME of the chosen option extracted EXACTLY from the question
 - Do NOT return computed values like dates
-- Example: "Which film has director born later, A Flame In My Heart or Butcher, Baker?" 
-  → Answer is "A Flame In My Heart" or "Butcher, Baker", NOT a date
+- Example: "Which film has director born later, A Flame In My Heart or Butcher, Baker?"
+ → Answer is "A Flame In My Heart" or "Butcher, Baker", NOT a date
 
 **Confirmation Questions (Are/Do both X and Y the same...):**
 - Return 'yes' or 'no' (lowercase only)
 - Do NOT include additional explanation in short_answer
 - Example: "Are both directors from the same country?" → "yes" or "no"
 """
-
-    # No specific rules for unknown dataset/type
-    return ""
+   # No specific rules for unknown dataset/type
+   return ""
 
 
 def get_answer_generation_output_format(type_q: Optional[str] = None, is_royal_noble: bool = False) -> str:
-
     if type_q == "inference" or is_royal_noble:
         return """{
     "long_answer": "Step-by-step explanation with evidence citations",
-    "short_answer": "Answer following formatting rules",
+    "short_answer": "Answer following formatting rules, SINGLE most probable answer (NO lists/separators)",
     "prefix": "Royal/noble prefix or NAN",
     "name": "Core personal name",
     "suffix": "Titles after name or NAN"
@@ -1313,7 +1317,7 @@ def get_answer_generation_output_format(type_q: Optional[str] = None, is_royal_n
     else:
         return """{
     "long_answer": "Step-by-step explanation with evidence citations",
-    "short_answer": "Answer following formatting rules exactly"
+    "short_answer": "Answer following formatting rules exactly, SINGLE most probable answer (NO lists/separators)"
 }"""
 
 
