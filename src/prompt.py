@@ -7,9 +7,9 @@ WIKI_LABELS_LIST = ["PERSON", "WORK_OF_ART", "GPE", "ORG", "LOC", "EVENT", "CARD
 def load_prompt_gen_sub(question=None, is_seq=False, dataset=None, type_q=None, context=None):
     if question:
         if is_seq:
-            messages = _load_subquestion_prompt(question, dataset, type_q)
+            messages = load_subquestion_prompt(question, dataset, type_q)
         else:
-            messages = _load_search_keyword_prompt(question, dataset, type_q)            
+            messages = load_search_keyword_prompt(question, dataset, type_q)            
       
     return messages
 
@@ -21,7 +21,7 @@ def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None, typ
 
     return prompt
 
-def _load_search_keyword_prompt(question, dataset=None, type_q=None):
+def load_search_keyword_prompt(question, dataset=None, type_q=None):
     if dataset == 'medhop':
         labels_str = ", ".join(BIO_LABELS_LIST)
         messages = [
@@ -262,7 +262,7 @@ def _load_search_keyword_prompt(question, dataset=None, type_q=None):
 
     return messages
 
-def _load_subquestion_prompt(question, dataset=None, type_q=None):
+def load_subquestion_prompt(question, dataset=None, type_q=None):
     if dataset == 'medhop':
         labels_str = ", ".join(BIO_LABELS_LIST)
         messages = [

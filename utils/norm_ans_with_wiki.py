@@ -154,46 +154,6 @@ def is_valid_query(query):
 
     return True
 
-def bioasq():
-    raw_data_path = r"data\bioasq_12b\output_B2.csv"
-    raw_data = pd.read_csv(raw_data_path)
-    
-    raw_data['title_wiki'] = ''
-    for i, row in raw_data.iterrows():
-        short_ans = row['short_answers']
-        
-        if pd.isna(short_ans): 
-            raw_data.at[i, 'title_wiki'] = ''
-            continue
-        
-        list_ans = short_ans.split('|')
-        
-        wiki_titles = []
-        for ans in list_ans:
-            
-            ans = ans.strip()
-            if ans:
-                print(f"Processing answer: {ans}")
-                title = get_title_1(ans)
-                if not title:
-                    title = get_title_2(ans)
-                if not title:
-                    title = get_title_3(ans)
-                if not title:
-                    title = get_title_4(ans)
-                    
-                if title:
-                    print(f"Found title: {title}\n")
-                    wiki_titles.append(title)                    
-                else:
-                    print("No title found.\n")
-            time.sleep(3)
-        raw_data.at[i, 'title_wiki'] = '|'.join(wiki_titles) if wiki_titles else ''
-    
-    output_file = r"data\bioasq_12b\output_B2_with_wiki.csv"
-    raw_data.to_csv(output_file, index=False)
-    print(f"File đã được lưu tại: {output_file}")
-    
 def medhop():
     raw_data_path = r"data\bioasq_12b\output_B2.csv"
     raw_data = pd.read_csv(raw_data_path)
@@ -265,71 +225,6 @@ def diff_medhop():
     with open(file, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
-def cwq(batch_size=50): 
-    raw_data_file = "data/CWQ/cwq_ans_1000q.json"
-    wiki_file = "data/CWQ/cwq_1000q_wiki_title.json"
-    
-    try:
-        with open(wiki_file, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        print(f"Resuming from existing file: {wiki_file}")
-    except FileNotFoundError:
-        with open(raw_data_file, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        print(f"Starting new processing from: {raw_data_file}")
-    
-    processed_count = 0
-    total_items = len(data)
-
-    for ID, item in tqdm(data.items(), desc = "processing", total=total_items):
-        
-        if "New Wiki Title" in item:
-            processed_count += 1
-            continue
-
-        short_ans = item.get("short_ans") 
-        
-        if pd.isna(short_ans): 
-            item["wiki_title"] = None
-            continue
-        
-        list_ans = short_ans.split(',')
-        
-        wiki_titles = []
-        for ans in list_ans:
-            ans = ans.strip()
-            
-            if not is_valid_query(ans):
-                print(f"ID: {ID}, Original Title: {ans}, Invalid query format.")
-            else:
-                print(f"Processing answer: {ans}")
-                title = get_title_1(ans)
-                if not title:
-                    title = get_title_2(ans)
-                if not title:
-                    title = get_title_3(ans)
-                if not title:
-                    title = get_title_4(ans)
-                
-                if title:
-                    print(f"Found title: {title}\n")
-                    wiki_titles.append(title)
-                else:
-                    print("No title found.\n")
-                time.sleep(5) 
-                    
-        item["New Wiki Title"] = wiki_titles
-        
-        processed_count += 1
-        if processed_count % batch_size == 0:
-            print(f"\n--- Batch save: Processed {processed_count}/{total_items} items. Saving to {wiki_file} ---")
-            with open(wiki_file, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=4)
-    
-    print(f"\n--- Final save: Processing complete. Saving all data to {wiki_file} ---")
-    with open(wiki_file, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
-    print("Done!")
 
 def wikimultihop(batch_size=50):
     raw_data_file = r"data\wiki\dev\dev_compositional.csv"
@@ -398,7 +293,6 @@ def wikimultihop(batch_size=50):
 
     
 if __name__ == "__main__":
-    # bioasq()
-    # cwq(batch_size=50)
-    wikimultihop()
+    
+    medhop()
     
