@@ -384,7 +384,7 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
     retrieval_topk = settings['retrieval_topk']
         
     hash_id, hash_id_cache = register_query_cache(search_kw_subq, hash_id_cache)
-    cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}.json"
+    cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}"
     
     if settings['get_context_2wiki']: #Only 2wiki dataset
         retrieval_information = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
