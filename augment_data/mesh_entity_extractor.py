@@ -25,7 +25,7 @@ def load_mesh_data(path: str = None, seed: int = None):
     if seed:
         random.seed(seed)
     
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         data = json.load(f)
     
     _entities_by_cat = {}

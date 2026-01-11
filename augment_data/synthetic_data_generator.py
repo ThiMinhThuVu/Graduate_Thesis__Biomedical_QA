@@ -87,7 +87,7 @@ def log(message: str, qtype: str = None):
     LOG_FILE.parent.mkdir(exist_ok=True)
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     prefix = f"[{qtype}]" if qtype else ""
-    with open(LOG_FILE, "a") as f:
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(f"{timestamp} {prefix} {message}\n")
 
 
@@ -153,7 +153,7 @@ def load_cache(qtype: str, version: str = None) -> dict:
     
     cache_path = get_cache_path(qtype, version)
     if cache_path.exists():
-        with open(cache_path) as f:
+        with open(cache_path, encoding="utf-8") as f:
             return json.load(f)
     
     return {"version": version, "patterns": {}, "topics": {}, "total": 0, "created": datetime.now().isoformat()}
@@ -165,8 +165,8 @@ def save_cache(qtype: str, cache: dict):
     version = cache.get("version", "1")
     cache_path = get_cache_path(qtype, version)
     cache["updated"] = datetime.now().isoformat()
-    with open(cache_path, "w") as f:
-        json.dump(cache, f, indent=2)
+    with open(cache_path, "w", encoding="utf-8") as f:
+        json.dump(cache, f, indent=2, ensure_ascii=False)
 
 
 def init_cache(qtype: str, reset: bool = False) -> dict:

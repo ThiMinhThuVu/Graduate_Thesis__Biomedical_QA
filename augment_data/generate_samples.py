@@ -65,7 +65,7 @@ def call_llm(messages, model="gpt-4o-mini"):
 
 
 def load_config():
-    with open(Path(__file__).parent / "config.yml") as f:
+    with open(Path(__file__).parent / "config.yml", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
 
@@ -292,7 +292,7 @@ def main():
         "prompt_template": sample_prompt  # Save the prompt used
     }
     
-    with open(output, "w") as f:
+    with open(output, "w", encoding="utf-8") as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
     
     print(f"\n{'='*50}")
