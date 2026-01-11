@@ -90,8 +90,14 @@ def get_entities(qtype: str, batch_size: int) -> list:
 def build_prompt(qtype: str, num: int, entities: list, cache: dict):
     """Build prompt with starting entities and template info."""
     
-    templates = TEMPLATES.get(qtype, [])[:4]
-    templates_str = json.dumps(templates, indent=2)
+    all_templates = TEMPLATES.get(qtype, [])
+    pattern_usage = cache.get("patterns", {})
+    
+    # Sort templates by usage (least used first) for better balance
+    sorted_templates = sorted(all_templates, key=lambda t: pattern_usage.get(t["pattern"], 0))
+    
+    # Show all templates but highlight underused ones
+    templates_str = json.dumps(sorted_templates, indent=2)
     entities_str = "\n".join(f"- {e}" for e in entities[:num + 10])
     
     rules = {
@@ -100,13 +106,24 @@ def build_prompt(qtype: str, num: int, entities: list, cache: dict):
         "parallel": "Use 2 entities to compare, find what they share or differ"
     }
 
-    pattern_usage = cache.get("patterns", {})
-    underused = [t["pattern"] for t in templates if pattern_usage.get(t["pattern"], 0) < 3]
-    hint = f"Prioritize patterns: {underused[:3]}" if underused else ""
+    # Build balance hint with usage stats
+    underused = [t["pattern"] for t in sorted_templates if pattern_usage.get(t["pattern"], 0) < 3]
+    overused = [t["pattern"] for t in sorted_templates if pattern_usage.get(t["pattern"], 0) > 5]
+    
+    balance_hint = ""
+    if underused:
+        balance_hint += f"\n⚠️ MUST USE these underused patterns: {underused[:4]}"
+    if overused:
+        balance_hint += f"\n⚠️ AVOID overused patterns: {overused[:3]}"
+    
+    # Calculate ideal distribution
+    ideal_per_pattern = max(1, num // len(all_templates))
+    balance_hint += f"\n📊 Target: ~{ideal_per_pattern} questions per pattern for balance"
 
     system = f"""You are a biomedical QA expert creating diverse, natural-sounding questions.
 Your goal: Generate {num} unique {qtype} questions that sound like real exam or research questions.
-Key: Follow the REASONING STRUCTURE of templates, but REPHRASE with varied wording."""
+Key: Follow the REASONING STRUCTURE of templates, but REPHRASE with varied wording.
+IMPORTANT: Distribute questions EVENLY across ALL {len(all_templates)} template patterns."""
 
     user = f"""Generate exactly {num} {qtype} biomedical questions.
 
@@ -134,7 +151,7 @@ Example variations for "What drug treats [disease] caused by [gene] mutations?":
 - "Name the therapeutic agent used to manage the disease linked to [gene] defects."
 - "What is the standard treatment for patients with [gene]-related [disease]?"
 
-{hint}
+{balance_hint}
 
 OUTPUT (JSON array of {num} objects):
 [{{"question": "...", "short_answer": "1-3 words", "reasoning": "step-by-step", "topic": "Pathophysiology|Treatment|Diagnosis|Prevention", "pattern": "template_pattern_name", "entities_used": ["given", "answer"]}}]
@@ -187,7 +204,7 @@ def main():
         sys.exit(1)
     
     qtype = qtype_config
-    num_samples = gen.get("num_samples", 500)
+    num_samples = gen.get("num_samples", 50)
     batch_size = gen.get("batch_size", 25)
     reset_version = gen.get("reset_version", False)
     
