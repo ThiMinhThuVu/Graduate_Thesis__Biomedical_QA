@@ -122,12 +122,18 @@ Chain: [SYMPTOM] → [DISEASE] → [GENE] → [CHROMOSOME]
 "On which chromosome is the gene causing the disease with [SYMPTOM]?"
 ```
 
-### Parallel (4 templates)
+### Parallel (16 templates)
 Comparison questions with independent branches.
 
 ```
 Branches: [DISEASE_A] → gene, [DISEASE_B] → gene
 "Is the gene mutated in [A] from the same family as in [B]?"
+
+Branches: [DISEASE_A] → symptoms ∩ [DISEASE_B] → symptoms
+"What symptom is shared by both [A] and [B]?"
+
+Branches: [DRUG_A] → mechanism vs [DRUG_B] → mechanism
+"Do [A] and [B] work through the same mechanism?"
 ```
 
 ## CLI Commands
