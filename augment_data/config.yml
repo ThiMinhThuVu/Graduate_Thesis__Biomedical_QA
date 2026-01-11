@@ -1,0 +1,53 @@
+# =============================================================================
+# Synthetic Data Generation Pipeline Configuration
+# =============================================================================
+
+# LLM settings
+llm:
+  model: "gpt-4o-mini"
+  temperature: 0.7
+
+# Generation Settings - ONE TYPE AT A TIME
+generation:
+  # Single question type to generate (run script multiple times for each type)
+  question_type: sequential  # direct | sequential | parallel
+  
+  # Number of samples to generate
+  num_samples: 500
+  
+  # Batch size per API call
+  batch_size: 25
+  
+  # Version control:
+  # - false: Create persistent version (v1 → v1_0 → v1_1 → ...)
+  # - true: Reset to new major version (v1 → v2)
+  reset_version: false
+
+# Entity source
+entity_source: "mesh"
+
+# =============================================================================
+# VERSION BEHAVIOR
+# =============================================================================
+# 
+# Each question type has its own version history:
+#   output/cache/direct_v1.json
+#   output/cache/direct_v1_0.json
+#   output/cache/direct_v1_1.json
+#   output/cache/sequential_v1.json
+#   ...
+#
+# Outputs are also versioned:
+#   output/generated_direct_v1.json
+#   output/generated_direct_v1_0.json
+#   ...
+#
+# To generate all types, run 3 times with different question_type:
+#   1. Edit config: question_type: direct     → run
+#   2. Edit config: question_type: sequential → run
+#   3. Edit config: question_type: parallel   → run
+#
+# To reset a type's version:
+#   python synthetic_data_generator.py reset direct
+# Or set:
+#   reset_version: true

@@ -269,77 +269,74 @@ Biomedicine and Rare Diseases
 
 FEW_SHOT_EXAMPLES = {
     "direct": [
+        # From dev set: Q1 - Direct (given attributes → disorder)
         {
-            "question": "What enzyme is deficient in patients with phenylketonuria, leading to phenylalanine accumulation?",
-            "short_answer": "Phenylalanine hydroxylase",
-            "reasoning": "Phenylketonuria is caused by deficiency of phenylalanine hydroxylase (PAH), which converts phenylalanine to tyrosine.",
-            "topic": "Pathophysiology"
-        },
-        {
-            "question": "Which autoimmune disease is associated with chronic urticaria and causes dry mouth and dry eyes?",
-            "short_answer": "Sjögren's syndrome",
-            "reasoning": "Sjögren's syndrome is an autoimmune condition affecting exocrine glands, causing sicca symptoms (dry eyes, dry mouth) and is associated with chronic urticaria.",
+            "question": "What genetic disorder associated with hypoparathyroidism, sensorineural deafness, and renal disease can cause proteinuria?",
+            "short_answer": "HDR syndrome",
+            "reasoning": "HDR syndrome (Hypoparathyroidism, Deafness, Renal dysplasia) is characterized by hypoparathyroidism, sensorineural deafness, and renal abnormalities including proteinuria.",
             "topic": "Diagnosis"
         },
+        # From dev set: Q2 - Direct (ranking)
         {
-            "question": "What is the main therapeutic mechanism of statins in treating hypercholesterolemia?",
-            "short_answer": "HMG-CoA reductase inhibition",
-            "reasoning": "Statins inhibit HMG-CoA reductase, the rate-limiting enzyme in cholesterol biosynthesis, thereby lowering serum cholesterol levels.",
+            "question": "What is the second most important cause of dementia after Alzheimer's disease?",
+            "short_answer": "Vascular dementia",
+            "reasoning": "Vascular dementia is the second most common cause of dementia, accounting for about 15-20% of cases, after Alzheimer's disease which accounts for 60-70%.",
+            "topic": "Diagnosis"
+        },
+        # From dev set: Q30 - Direct (disease → specialist)
+        {
+            "question": "Which medical specialist would manage a patient with Dyschromatosis universalis hereditaria?",
+            "short_answer": "Dermatologist",
+            "reasoning": "Dyschromatosis universalis hereditaria is a rare genetic skin disorder characterized by hyperpigmented and hypopigmented macules, and would be managed by a dermatologist.",
             "topic": "Treatment"
         }
     ],
     
     "sequential": [
+        # From dev set: Q3 - Sequential (function→enzyme→gene→chromosome)
         {
-            "question": "Which gene is mutated in the lysosomal storage disorder that is treated with enzyme replacement therapy using Imiglucerase?",
-            "short_answer": "GBA gene",
-            "reasoning": "Step 1: Identify the lysosomal storage disorder treated with Imiglucerase - this is Gaucher disease. Step 2: Find the gene mutated in Gaucher disease - the GBA gene (glucosylceramidase beta) encoding glucocerebrosidase.",
-            "topic": "Treatment"
-        },
-        {
-            "question": "What protein accumulates in the brains of patients with the neurodegenerative disease caused by mutations in the SNCA gene?",
-            "short_answer": "Alpha-synuclein",
-            "reasoning": "Step 1: Identify the disease caused by SNCA mutations - Parkinson's disease and Lewy body dementia. Step 2: Find the protein that accumulates - alpha-synuclein (encoded by SNCA itself) forms Lewy bodies.",
+            "question": "Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?",
+            "short_answer": "Chromosome 11",
+            "reasoning": "Step 1: The enzyme that inactivates antithrombin is thrombin/Factor IIa. Step 2: Thrombin is encoded by the F2 (prothrombin) gene. Step 3: The F2 gene is located on chromosome 11q11-q12.",
             "topic": "Pathophysiology"
         },
+        # From dev set: Q4 - Sequential (symptoms→syndrome→gene)
         {
-            "question": "Is the cardiac arrhythmia syndrome Long QT caused by the same gene family that is mutated in episodic ataxia type 1?",
-            "short_answer": "Yes, potassium channels",
-            "reasoning": "Step 1: Identify genes in episodic ataxia type 1 - KCNA1 (potassium channel). Step 2: Check Long QT genes - KCNQ1, KCNH2, KCNE1 are potassium channel genes. Both involve potassium channel gene family.",
-            "topic": "Diagnosis"
+            "question": "Which gene mutation is responsible for the syndrome characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
+            "short_answer": "GNPAT gene",
+            "reasoning": "Step 1: The syndrome with vertebral anomalies, developmental delay, and lens coloboma is rhizomelic chondrodysplasia punctata. Step 2: RCDP can be caused by mutations in several genes including GNPAT.",
+            "topic": "Pathophysiology"
         },
+        # From dev set: Q10 - Sequential (disease→gene→chromosome)
         {
-            "question": "What drug targets the fusion protein created by the chromosomal translocation found in chronic myeloid leukemia?",
-            "short_answer": "Imatinib",
-            "reasoning": "Step 1: Identify the chromosomal translocation in CML - BCR-ABL fusion (Philadelphia chromosome). Step 2: Find the drug targeting BCR-ABL - Imatinib (Gleevec) is a tyrosine kinase inhibitor.",
-            "topic": "Treatment"
+            "question": "On which human chromosome is the gene that causes DFNB1 located?",
+            "short_answer": "Chromosome 13",
+            "reasoning": "Step 1: DFNB1 is autosomal recessive nonsyndromic hearing loss. Step 2: It is caused by mutations in GJB2 (connexin 26). Step 3: GJB2 is located on chromosome 13q12.",
+            "topic": "Pathophysiology"
         }
     ],
     
     "parallel": [
+        # From dev set: Q21 - Parallel (two conditions, shared symptom)
         {
-            "question": "Are both Duchenne muscular dystrophy and Becker muscular dystrophy caused by mutations in the same gene?",
-            "short_answer": "Yes, DMD gene",
-            "reasoning": "Branch 1: Gene for Duchenne muscular dystrophy - DMD gene (dystrophin). Branch 2: Gene for Becker muscular dystrophy - DMD gene (dystrophin). Synthesis: Both are caused by mutations in the DMD gene, but DMD has more severe mutations causing complete loss of dystrophin.",
-            "topic": "Pathophysiology"
-        },
-        {
-            "question": "Do both metformin and sulfonylureas work by increasing insulin secretion from pancreatic beta cells?",
-            "short_answer": "No",
-            "reasoning": "Branch 1: Metformin mechanism - decreases hepatic glucose production, increases insulin sensitivity (does NOT increase secretion). Branch 2: Sulfonylureas mechanism - stimulate insulin secretion from beta cells via KATP channels. Synthesis: Only sulfonylureas increase insulin secretion.",
-            "topic": "Treatment"
-        },
-        {
-            "question": "Which enzyme is deficient in both Niemann-Pick disease type A and Niemann-Pick disease type B?",
-            "short_answer": "Sphingomyelinase",
-            "reasoning": "Branch 1: Enzyme deficient in NP type A - acid sphingomyelinase (ASM). Branch 2: Enzyme deficient in NP type B - acid sphingomyelinase (ASM). Synthesis: Both types A and B are caused by SMPD1 mutations leading to sphingomyelinase deficiency.",
+            "question": "What is a common symptom shared by thyroid hormone resistance and goitre?",
+            "short_answer": "Thyroid enlargement",
+            "reasoning": "Branch 1: Thyroid hormone resistance features - includes compensatory thyroid enlargement. Branch 2: Goitre features - by definition involves thyroid enlargement. Synthesis: Both conditions share thyroid gland enlargement as a common feature.",
             "topic": "Diagnosis"
         },
+        # From dev set: Q23 - Parallel (gene for both diseases)
         {
-            "question": "Can mutations in the same gene cause both hypertrophic cardiomyopathy and dilated cardiomyopathy?",
-            "short_answer": "Yes, MYH7",
-            "reasoning": "Branch 1: Genes causing hypertrophic cardiomyopathy - MYH7, MYBPC3, TNNT2, etc. Branch 2: Genes causing dilated cardiomyopathy - TTN, MYH7, LMNA, etc. Synthesis: MYH7 mutations can cause both phenotypes depending on the specific mutation.",
+            "question": "Which keratin gene mutation is associated with both Pachyonychia congenita and Steatocystoma multiplex?",
+            "short_answer": "KRT17",
+            "reasoning": "Branch 1: Genes for Pachyonychia congenita - KRT6A, KRT6B, KRT16, KRT17. Branch 2: Genes for Steatocystoma multiplex - KRT17. Synthesis: KRT17 mutations can cause both conditions.",
             "topic": "Pathophysiology"
+        },
+        # From dev set: Q37 - Parallel (two diseases, shared symptom)
+        {
+            "question": "What is a common symptom shared by essential thrombocythemia and anemia?",
+            "short_answer": "Fatigue",
+            "reasoning": "Branch 1: Essential thrombocythemia symptoms - fatigue, weakness, headaches, bleeding. Branch 2: Anemia symptoms - fatigue, weakness, pallor, shortness of breath. Synthesis: Fatigue is a common symptom in both conditions.",
+            "topic": "Diagnosis"
         }
     ]
 }

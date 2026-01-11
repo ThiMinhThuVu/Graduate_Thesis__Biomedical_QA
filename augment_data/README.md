@@ -6,10 +6,10 @@ Generate multi-hop biomedical questions using MeSH entities with controlled enti
 
 ```bash
 # Run generation (uses config.yml)
-python mesh_template/generate_samples.py
+python synthetic_qa/generate_samples.py
 ```
 
-Output: `mesh_template/output/generated_samples.json`
+Output: `synthetic_qa/output/generated_samples.json`
 
 ---
 
@@ -172,7 +172,7 @@ Entities extracted from `shallow_query_result_2.json` (22,216 terms):
 
 ### Generate with default settings
 ```bash
-python mesh_template/generate_samples.py
+python synthetic_qa/generate_samples.py
 ```
 
 ### Modify config for more samples
@@ -216,7 +216,7 @@ API_LIST_O3 = ["key1", "key2", ...]  # for o3-mini
 ## Entity Extraction API
 
 ```python
-from mesh_template import mesh_entity_extractor as mesh
+from synthetic_qa import mesh_entity_extractor as mesh
 
 # Load data (call once)
 mesh.load_mesh_data(seed=42)

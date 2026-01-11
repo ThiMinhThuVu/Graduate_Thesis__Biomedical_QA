@@ -1,0 +1,314 @@
+"""
+Generate synthetic biomedical QA samples - ONE type at a time.
+===============================================================
+Each run generates samples for a single question type only.
+"""
+
+import json
+import sys
+import time
+import requests
+from pathlib import Path
+from datetime import datetime
+from math import ceil
+
+import yaml
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from augment_data.synthetic_data_generator import (
+    TEMPLATES, select_template, record_usage, 
+    load_cache, init_cache, log, get_stats, list_versions
+)
+from augment_data import mesh_entity_extractor as mesh
+
+# Direct API call - bypasses serpapi import issue
+try:
+    from src.api_key import API_LIST_4O, API_LIST_O3
+    HAS_API = True
+except ImportError as e:
+    print(f"Warning: No API keys - {e}")
+    HAS_API = False
+
+API_URL = "https://cf.mnapi.com/v1/chat/completions"
+_api_idx = 0
+
+
+def call_llm(messages, model="gpt-4o-mini"):
+    """Direct LLM API call - bypasses gpt_request.py serpapi issue."""
+    global _api_idx
+    
+    if not HAS_API:
+        return None
+    
+    API_LIST = API_LIST_4O if "4o-mini" in model else API_LIST_O3
+    
+    for attempt in range(3):
+        try:
+            r = requests.post(
+                API_URL,
+                headers={"Authorization": f"Bearer {API_LIST[_api_idx]}", "Content-Type": "application/json"},
+                json={"model": model, "messages": messages, "temperature": 0.7, "max_tokens": 4096},
+                timeout=120
+            )
+            if r.status_code == 200:
+                return r.json()["choices"][0]["message"]["content"]
+            else:
+                print(f"API {r.status_code}", end=" ")
+        except Exception as e:
+            print(f"Err:{e}", end=" ")
+        
+        _api_idx = (_api_idx + 1) % len(API_LIST)
+        time.sleep(2)
+    
+    return None
+
+
+def load_config():
+    with open(Path(__file__).parent / "config.yml") as f:
+        return yaml.safe_load(f)
+
+
+def parse_json(text):
+    if not text:
+        return []
+    try:
+        start, end = text.find('['), text.rfind(']') + 1
+        if start >= 0 and end > start:
+            return json.loads(text[start:end])
+    except:
+        pass
+    return []
+
+
+def get_entities(qtype: str, batch_size: int) -> list:
+    """Get starting entities - 1 per question (2 for parallel)."""
+    needed = batch_size * 2 if qtype == "parallel" else batch_size
+    return mesh.get_entities("C", needed // 2 + 5) + mesh.get_entities("D", needed // 2 + 5)
+
+
+def build_prompt(qtype: str, num: int, entities: list, cache: dict):
+    """Build prompt with starting entities and template info."""
+    
+    templates = TEMPLATES.get(qtype, [])[:4]
+    templates_str = json.dumps(templates, indent=2)
+    entities_str = "\n".join(f"- {e}" for e in entities[:num + 10])
+    
+    rules = {
+        "direct": "Use 1 entity as given, find answer from your biomedical knowledge",
+        "sequential": "Use 1 entity as chain start, complete reasoning chain with your knowledge",
+        "parallel": "Use 2 entities to compare, find what they share or differ"
+    }
+
+    pattern_usage = cache.get("patterns", {})
+    underused = [t["pattern"] for t in templates if pattern_usage.get(t["pattern"], 0) < 3]
+    hint = f"Prioritize patterns: {underused[:3]}" if underused else ""
+
+    system = f"You are a biomedical QA expert. Create {num} unique {qtype} questions."
+
+    user = f"""Generate exactly {num} {qtype} biomedical questions.
+
+STARTING ENTITIES ({len(entities)}):
+{entities_str}
+
+RULE: {rules[qtype]}
+- Each entity used ONCE only
+- Use DIFFERENT entities for each question
+- Answers come from your biomedical knowledge
+
+TEMPLATES:
+{templates_str}
+
+{hint}
+
+OUTPUT (JSON array of {num} objects):
+[{{"question": "...", "short_answer": "1-3 words", "reasoning": "step-by-step", "topic": "Pathophysiology|Treatment|Diagnosis|Prevention", "pattern": "template_pattern_name", "entities_used": ["given", "answer"]}}]
+
+Generate {num} questions:"""
+
+    return [{"role": "system", "content": system}, {"role": "user", "content": user}]
+
+
+def generate_batch(qtype: str, num: int, model: str, cache: dict):
+    """Generate one batch."""
+    entities = get_entities(qtype, num)
+    prompt = build_prompt(qtype, num, entities, cache)
+    tokens = (len(prompt[0]["content"]) + len(prompt[1]["content"])) // 4
+    
+    print(f"    {num}q, {len(entities)} entities, ~{tokens} tokens...", end=" ", flush=True)
+    
+    if not HAS_API:
+        print("(no API)")
+        return []
+    
+    try:
+        response = call_llm(prompt, model=model)
+        results = parse_json(response)
+        
+        # Record usage for each result
+        for r in results:
+            pattern = r.get("pattern")
+            topic = r.get("topic")
+            template = next((t for t in TEMPLATES[qtype] if t["pattern"] == pattern), TEMPLATES[qtype][0])
+            cache = record_usage(qtype, template, topic, cache)
+        
+        return results
+    except Exception as e:
+        print(f"Error: {e}")
+        log(f"Batch error: {e}", qtype)
+        return []
+
+
+def main():
+    config = load_config()
+    gen = config.get("generation", {})
+    model = config.get("llm", {}).get("model", "gpt-4o-mini")
+    
+    # Get SINGLE question type
+    qtype_config = gen.get("question_type")
+    if not qtype_config or qtype_config not in TEMPLATES:
+        print("ERROR: Must specify a single 'question_type' in config.yml")
+        print("  Valid types: direct, sequential, parallel")
+        sys.exit(1)
+    
+    qtype = qtype_config
+    num_samples = gen.get("num_samples", 500)
+    batch_size = gen.get("batch_size", 25)
+    reset_version = gen.get("reset_version", False)
+    
+    num_batches = ceil(num_samples / batch_size)
+    
+    versions = list_versions(qtype)
+    print(f"\n{'='*50}")
+    print(f"GENERATING: {qtype.upper()}")
+    print(f"{'='*50}")
+    print(f"Existing versions: {versions.get(qtype, [])}")
+    
+    # Initialize cache
+    if reset_version:
+        cache = init_cache(qtype, reset=True)
+        print(f"Reset to new version: v{cache['version']}")
+    else:
+        latest = versions.get(qtype, [])
+        if latest:
+            cache = init_cache(qtype, reset=False)
+            print(f"Persistent version: v{cache['version']}")
+        else:
+            cache = init_cache(qtype, reset=True)
+            print(f"First version: v{cache['version']}")
+    
+    print(f"Samples: {num_samples}, Batch: {batch_size}, Batches: {num_batches}")
+    print(f"API available: {HAS_API}")
+    
+    # Load MeSH entities
+    if config.get("entity_source") == "mesh":
+        mesh.load_mesh_data(seed=int(datetime.now().timestamp()) % 10000)
+    
+    log(f"Started generation: {num_samples} samples, batch={batch_size}", qtype)
+    
+    # Generate
+    samples = []
+    sample_prompt = None  # Save one example prompt
+    start = datetime.now()
+    
+    for b in range(num_batches):
+        remaining = num_samples - len(samples)
+        batch = min(batch_size, remaining)
+        if batch <= 0:
+            break
+        
+        print(f"  Batch {b+1}/{num_batches}:", end="")
+        
+        # Get entities and build prompt
+        entities = get_entities(qtype, batch)
+        prompt = build_prompt(qtype, batch, entities, cache)
+        
+        # Save first prompt as sample
+        if sample_prompt is None:
+            sample_prompt = {
+                "system": prompt[0]["content"],
+                "user": prompt[1]["content"],
+                "entities_used": entities[:batch + 5]
+            }
+        
+        tokens = (len(prompt[0]["content"]) + len(prompt[1]["content"])) // 4
+        print(f"    {batch}q, {len(entities)} entities, ~{tokens} tokens...", end=" ", flush=True)
+        
+        if not HAS_API:
+            print("(no API)")
+            continue
+        
+        try:
+            response = call_llm(prompt, model=model)
+            results = parse_json(response)
+            
+            for r in results:
+                pattern = r.get("pattern")
+                topic = r.get("topic")
+                template = next((t for t in TEMPLATES[qtype] if t["pattern"] == pattern), TEMPLATES[qtype][0])
+                cache = record_usage(qtype, template, topic, cache)
+            
+            if results:
+                print(f"✓ {len(results)}")
+                for r in results:
+                    # ID format: type-vX_Y-NNN (e.g., sequential-v1_0-001)
+                    sample_num = len(samples) + 1
+                    samples.append({
+                        "id": f"{qtype}-v{cache['version']}-{sample_num:03d}",
+                        "type": qtype,
+                        "version": cache["version"],
+                        "data": r,
+                        "status": "ok"
+                    })
+            else:
+                print("✗")
+        except Exception as e:
+            print(f"Error: {e}")
+            log(f"Batch error: {e}", qtype)
+    
+    elapsed = (datetime.now() - start).total_seconds()
+    log(f"Completed: {len(samples)} samples in {elapsed:.1f}s", qtype)
+    
+    # Save output - in generated/ subdirectory
+    version = cache["version"]
+    output_file = f"{qtype}_v{version}.json"
+    output = Path(__file__).parent / "output" / "generated" / output_file
+    output.parent.mkdir(parents=True, exist_ok=True)
+    
+    result = {
+        "meta": {
+            "type": qtype,
+            "version": version,
+            "time": datetime.now().isoformat(),
+            "elapsed": elapsed,
+            "count": len(samples),
+            "config": {
+                "batch_size": batch_size,
+                "num_samples": num_samples,
+                "model": model
+            }
+        },
+        "samples": samples,
+        "prompt_template": sample_prompt  # Save the prompt used
+    }
+    
+    with open(output, "w") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)
+    
+    print(f"\n{'='*50}")
+    print(f"DONE: {qtype} v{version}")
+    print(f"{'='*50}")
+    print(f"Samples: {len(samples)}")
+    print(f"Time: {elapsed:.1f}s")
+    print(f"Output: {output}")
+    print(f"Prompt saved: yes")
+    
+    stats = get_stats(qtype)
+    print(f"\nCache v{version}:")
+    print(f"  Total: {stats['total']}")
+    print(f"  Patterns: {stats['patterns']}")
+    print(f"  Topics: {stats['topics']}")
+
+
+if __name__ == "__main__":
+    main()
