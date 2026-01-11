@@ -1,56 +1,43 @@
-# Synthetic Biomedical QA Generation Pipeline
+# Augment Data - Synthetic Biomedical QA Generation
 
-Generate multi-hop biomedical questions using MeSH entities with controlled entity usage.
+Generates synthetic biomedical multi-hop questions for training question type classifiers. Aligned with BioKGBench and BioHopR datasets.
 
 ## Quick Start
 
 ```bash
-# Run generation (uses config.yml)
-python synthetic_qa/generate_samples.py
+# 1. Edit config.yml to select question type
+#    question_type: direct | sequential | parallel
+
+# 2. Run generation
+python generate_samples.py
+
+# 3. Check output
+ls output/generated/
 ```
 
-Output: `synthetic_qa/output/generated_samples.json`
-
----
-
-## Pipeline Overview
+## Directory Structure
 
 ```
-┌─────────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│  MeSH Data (22K)    │────▶│  Entity Extractor │────▶│  LLM Generator  │
-│  shallow_query_     │     │  (randomized,     │     │  (batch mode,   │
-│  result_2.json      │     │   no repeats)     │     │   per type)     │
-└─────────────────────┘     └──────────────────┘     └─────────────────┘
-                                                              │
-                                                              ▼
-                                                     ┌─────────────────┐
-                                                     │  Output JSON    │
-                                                     │  (15 questions) │
-                                                     └─────────────────┘
+augment_data/
+├── config.yml                    # Configuration
+├── generate_samples.py           # Main generation script
+├── synthetic_data_generator.py   # Templates + versioned cache
+├── mesh_entity_extractor.py      # MeSH entity extraction
+├── data_generation_prompt.py     # Prompt templates & few-shot examples
+│
+├── output/
+│   ├── cache/                    # Version cache per type
+│   │   ├── direct_v1_0.json
+│   │   ├── sequential_v1_0.json
+│   │   └── parallel_v1_0.json
+│   ├── generated/                # Generated samples
+│   │   ├── direct_v1_0.json
+│   │   ├── sequential_v1_0.json
+│   │   └── parallel_v1_0.json
+│   └── generation.log            # Activity log
+│
+└── shallow_query_result_2.json   # MeSH entity data
 ```
-
-### Key Features
-
-| Feature | Description |
-|---------|-------------|
-| **Batch Generation** | 1 API call per question type (3 calls total) |
-| **No Entity Repeats** | Each MeSH entity used only once |
-| **Randomized Selection** | Entities shuffled each run |
-| **3 Question Types** | Direct, Sequential, Parallel |
-
----
-
-## Files
-
-| File | Purpose |
-|------|---------|
-| `generate_samples.py` | Main script - run this |
-| `mesh_entity_extractor.py` | Extracts entities from MeSH data |
-| `data_generation_prompt.py` | Prompt templates and definitions |
-| `synthetic_data_generator.py` | Template structures |
-| `config.yml` | Configuration settings |
-
----
 
 ## Configuration (config.yml)
 
@@ -60,187 +47,203 @@ llm:
   model: "gpt-4o-mini"
   temperature: 0.7
 
-# Generation settings
+# Generation Settings - ONE TYPE AT A TIME
 generation:
-  num_per_type: 5              # Questions per type (direct/sequential/parallel)
-  question_types: "all"        # "all" or ["direct", "sequential"]
-  output: "output/generated_samples.json"
+  question_type: sequential   # direct | sequential | parallel
+  num_samples: 500            # Samples to generate
+  batch_size: 25              # Per API call
+  reset_version: false        # false=v1_0→v1_1, true=v1→v2_0
 
-# Entity source: "mesh" or "manual"
 entity_source: "mesh"
-
-# MeSH entity counts (per batch, each used only once)
-# Total available: 22,216 entities
-mesh_entities:
-  entity_counts:
-    diseases: 500              # from 4,911 available
-    chemicals_drugs: 500       # from 10,277 available
-    anatomy: 200               # from 1,857 available
-    phenomena_processes: 200   # from 2,358 available
-    techniques_equipment: 100  # from 3,018 available
-    genes: 100                 # filtered from D
-    proteins: 100              # filtered from D
-    symptoms: 100              # filtered from C
-    drugs: 100                 # filtered from D
 ```
 
----
+## Version System
 
-## Question Types
+Each question type has independent versioning:
 
-### Direct
-Single-step reasoning about one entity.
-```
-Q: What enzyme is deficient in phenylketonuria?
-A: Phenylalanine hydroxylase
-```
+| Action | Before | After | Entities |
+|--------|--------|-------|----------|
+| First run | none | `v1_0` | Fresh pool |
+| Continue | `v1_0` | `v1_1` | Inherited exclusion |
+| Continue | `v1_1` | `v1_2` | Inherited exclusion |
+| Reset | `v1_x` | `v2_0` | Fresh pool |
 
-### Sequential  
-Multi-hop chain: A → B → Answer
-```
-Q: Which gene is mutated in the disease treated with Imiglucerase?
-A: GBA gene
-Chain: Imiglucerase → Gaucher disease → GBA
-```
+### Entity Exclusion
 
-### Parallel
-Compare/combine independent branches.
+Entities used in v1_0 are excluded in v1_1, v1_2, etc. to ensure distinct data:
+
 ```
-Q: Are Duchenne and Becker muscular dystrophy caused by the same gene?
-A: Yes, DMD gene
-Branch 1: Duchenne → DMD
-Branch 2: Becker → DMD
+v1_0: Uses entities A, B, C → Saved to cache
+v1_1: Excludes [A,B,C] → Uses D, E, F
+v2_0: Reset → Fresh pool, can use any entity
 ```
 
----
+### Wording Diversity
 
-## MeSH Categories
+The prompt encourages LLM to:
+- **Follow template reasoning structure** (e.g., Gene → Disease → Treatment)
+- **Rephrase wording creatively** - don't copy verbatim
+- **Vary sentence structure**: "Which X...", "Name the...", "How does..."
+- **Use synonyms**: "causes" → "leads to/results in/triggers"
 
-Entities extracted from `shallow_query_result_2.json` (22,216 terms):
+### Template Balancing
 
-| Code | Category | Count |
-|------|----------|-------|
-| C | Diseases | 4,911 |
-| D | Chemicals and Drugs | 10,277 |
-| A | Anatomy | 1,857 |
-| G | Phenomena and Processes | 2,358 |
-| E | Techniques and Equipment | 3,018 |
-| B | Organisms | 29 |
+Templates are automatically balanced for even distribution:
+- Templates sorted by usage (least used first)
+- Strong hints: `⚠️ MUST USE underused patterns`
+- Target distribution: `📊 Target: ~N questions per pattern`
+- Result: Variance reduced from 0-10 to 7-8 per pattern
 
----
+### Files Created
+
+- Cache: `output/cache/{type}_v{version}.json` (patterns + used_entity_ids)
+- Output: `output/generated/{type}_v{version}.json` (samples + prompt_template)
+- Log: `output/generation.log`
+
+## Templates
+
+### Direct (16 templates)
+Single-hop questions with direct reasoning.
+
+```
+"Which medical specialty treats [DISEASE]?"
+"How does [PROTEIN] contribute to [DISEASE]?"
+"On which chromosome is [GENE] located?"
+```
+
+### Sequential (22 templates)
+Multi-hop chains requiring step-by-step reasoning.
+
+```
+Chain: [GENE] → [DISEASE] → [DRUG]
+"What drug treats the disease caused by [GENE] mutations?"
+
+Chain: [SYMPTOM] → [DISEASE] → [GENE] → [CHROMOSOME]
+"On which chromosome is the gene causing the disease with [SYMPTOM]?"
+```
+
+### Parallel (4 templates)
+Comparison questions with independent branches.
+
+```
+Branches: [DISEASE_A] → gene, [DISEASE_B] → gene
+"Is the gene mutated in [A] from the same family as in [B]?"
+```
+
+## CLI Commands
+
+```bash
+# Show template counts and versions
+python synthetic_data_generator.py
+
+# Reset a type to new major version
+python synthetic_data_generator.py reset direct
+
+# Create persistent minor version
+python synthetic_data_generator.py init sequential
+
+# View cache stats
+python synthetic_data_generator.py stats direct
+
+# View activity log
+python synthetic_data_generator.py log
+```
 
 ## Output Format
 
 ```json
 {
-  "metadata": {
-    "generated_at": "2026-01-10T12:30:00",
-    "num_per_type": 5,
-    "types": ["direct", "sequential", "parallel"]
-  },
-  "entity_pools": {
-    "direct": {"diseases": [...], "genes": [...], ...},
-    "sequential": {"diseases": [...], ...},
-    "parallel": {"diseases": [...], ...}
+  "meta": {
+    "type": "sequential",
+    "version": "1_0",
+    "time": "2026-01-11T20:00:00",
+    "elapsed": 45.2,
+    "count": 500,
+    "config": {
+      "batch_size": 25,
+      "num_samples": 500,
+      "model": "gpt-4o-mini"
+    }
   },
   "samples": [
     {
-      "id": "direct_1",
-      "question_type": "direct",
-      "status": "success",
-      "generated": {
-        "question": "Which disease is characterized by...",
-        "short_answer": "Gaucher disease",
+      "id": "sequential-v1_0-001",
+      "type": "sequential",
+      "version": "1_0",
+      "data": {
+        "question": "Which gene...",
+        "short_answer": "GBA",
         "reasoning": "Step 1: ... Step 2: ...",
         "topic": "Pathophysiology",
-        "entities_used": ["GBA", "Gaucher disease"]
-      }
+        "pattern": "what_treatment_caused_by",
+        "entities_used": ["Gaucher disease", "GBA"]
+      },
+      "status": "ok"
     }
   ],
-  "stats": {
-    "total": 15,
-    "success": 15,
-    "unique_entities": 35,
-    "duplicates": {}
+  "prompt_template": {
+    "system": "...",
+    "user": "...",
+    "entities_used": [...]
   }
 }
 ```
 
----
+## Sample ID Format
 
-## Usage Examples
+```
+{type}-v{major}_{minor}-{sample:03d}
 
-### Generate with default settings
+Examples:
+- sequential-v1_0-001
+- direct-v2_0-042
+- parallel-v1_3-100
+```
+
+## Workflow: Generate All Types
+
 ```bash
-python synthetic_qa/generate_samples.py
+# 1. Generate Direct
+# Edit config.yml: question_type: direct
+python generate_samples.py
+
+# 2. Generate Sequential
+# Edit config.yml: question_type: sequential
+python generate_samples.py
+
+# 3. Generate Parallel
+# Edit config.yml: question_type: parallel
+python generate_samples.py
 ```
 
-### Modify config for more samples
-```yaml
-# In config.yml
-generation:
-  num_per_type: 10  # 10 per type = 30 total
-```
+## Few-Shot Examples
 
-### Generate specific types only
-```yaml
-generation:
-  question_types: ["sequential", "parallel"]  # Skip direct
-```
+From BioKGBench/BioHopR development set:
 
-### Use manual entities instead of MeSH
-```yaml
-entity_source: "manual"
+**Direct:**
+- "What genetic disorder with hypoparathyroidism, deafness, renal disease causes proteinuria?" → HDR syndrome
+- "What is the second cause of dementia after Alzheimer's?" → Vascular dementia
 
-entities:
-  diseases:
-    - "Gaucher disease"
-    - "Fabry disease"
-  genes:
-    - "GBA"
-    - "GLA"
-```
+**Sequential:**
+- "Which chromosome has the gene encoding the enzyme that inactivates antithrombin?" → Chromosome 11
+- "On which chromosome is the gene causing DFNB1?" → Chromosome 13
 
----
+**Parallel:**
+- "What symptom is shared by thyroid hormone resistance and goitre?" → Thyroid enlargement
+- "Which keratin gene is associated with both Pachyonychia congenita and Steatocystoma multiplex?" → KRT17
 
-## API Requirements
+## Dependencies
 
-Requires API keys in `src/api_key.py`:
-```python
-API_LIST_4O = ["key1", "key2", ...]  # for gpt-4o-mini
-API_LIST_O3 = ["key1", "key2", ...]  # for o3-mini
-```
+- `yaml` - Configuration
+- `requests` - API calls
+- `json` - Data handling
 
----
+## Files
 
-## Entity Extraction API
-
-```python
-from synthetic_qa import mesh_entity_extractor as mesh
-
-# Load data (call once)
-mesh.load_mesh_data(seed=42)
-
-# Get unused entities
-diseases = mesh.get_entities("C", count=10)
-drugs = mesh.get_entities("D", count=10)
-
-# Get full pool for generation
-pool = mesh.get_entity_pool({"default_entity_count": 10})
-
-# Check usage
-stats = mesh.get_stats()
-print(f"Used: {stats['used']}, Remaining: {stats['remaining']}")
-
-# Reset for new run
-mesh.reset()
-```
-
----
-
-## Tips
-
-1. **Increase diversity**: Set higher `num_per_type` and entity counts
-2. **Different runs**: Each run uses random seed based on timestamp
-3. **Check duplicates**: Output stats show if any entity was repeated
-4. **Quality control**: Review `reasoning` field for factual accuracy
+| File | Purpose |
+|------|---------|
+| `generate_samples.py` | Main generation script |
+| `synthetic_data_generator.py` | Templates, cache, logging |
+| `mesh_entity_extractor.py` | MeSH entity extraction |
+| `data_generation_prompt.py` | Prompt templates, few-shots |
+| `config.yml` | Configuration |
