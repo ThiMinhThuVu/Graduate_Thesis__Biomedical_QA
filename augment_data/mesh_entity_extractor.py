@@ -106,6 +106,18 @@ def get_entity_pool(config: dict = None) -> dict:
     }
 
 
+def exclude_from_cache(used_ids: list):
+    """Mark entity IDs as already used (from previous runs/cache)."""
+    global _used_ids
+    _used_ids.update(used_ids)
+    print(f"Excluded {len(used_ids)} previously used entities")
+
+
+def get_used_ids() -> list:
+    """Get list of all used entity IDs for saving to cache."""
+    return list(_used_ids)
+
+
 def reset():
     """Reset used entity tracking."""
     global _used_ids

@@ -149,14 +149,18 @@ def load_cache(qtype: str, version: str = None) -> dict:
         version = find_latest_version(qtype)
     
     if version is None:
-        return {"version": "1_0", "patterns": {}, "topics": {}, "total": 0, "created": datetime.now().isoformat()}
+        return {"version": "1_0", "patterns": {}, "topics": {}, "total": 0, "used_entity_ids": [], "created": datetime.now().isoformat()}
     
     cache_path = get_cache_path(qtype, version)
     if cache_path.exists():
         with open(cache_path, encoding="utf-8") as f:
-            return json.load(f)
+            cache = json.load(f)
+            # Ensure used_entity_ids exists for backward compatibility
+            if "used_entity_ids" not in cache:
+                cache["used_entity_ids"] = []
+            return cache
     
-    return {"version": version, "patterns": {}, "topics": {}, "total": 0, "created": datetime.now().isoformat()}
+    return {"version": version, "patterns": {}, "topics": {}, "total": 0, "used_entity_ids": [], "created": datetime.now().isoformat()}
 
 
 def save_cache(qtype: str, cache: dict):
@@ -170,7 +174,19 @@ def save_cache(qtype: str, cache: dict):
 
 
 def init_cache(qtype: str, reset: bool = False) -> dict:
-    """Initialize cache for type. Creates new version if needed."""
+    """
+    Initialize cache for type. Creates new version if needed.
+    For persistent versions (reset=False): inherits used_entity_ids from previous version.
+    For reset versions (reset=True): starts fresh with empty used_entity_ids.
+    """
+    # Load previous version's used entities for persistent versioning
+    prev_used_entities = []
+    if not reset:
+        prev_version = find_latest_version(qtype)
+        if prev_version:
+            prev_cache = load_cache(qtype, prev_version)
+            prev_used_entities = prev_cache.get("used_entity_ids", [])
+    
     version = get_next_version(qtype, reset=reset)
     cache = {
         "version": version,
@@ -178,12 +194,14 @@ def init_cache(qtype: str, reset: bool = False) -> dict:
         "patterns": {},
         "topics": {},
         "total": 0,
+        "used_entity_ids": prev_used_entities,  # Inherit from previous minor version
         "created": datetime.now().isoformat()
     }
     save_cache(qtype, cache)
     
     action = "reset" if reset else "persistent"
-    log(f"Cache initialized v{version} ({action})", qtype)
+    inherited = f" (inherited {len(prev_used_entities)} used entities)" if prev_used_entities else ""
+    log(f"Cache initialized v{version} ({action}){inherited}", qtype)
     
     return cache
 

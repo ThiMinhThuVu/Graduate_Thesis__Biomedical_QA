@@ -104,7 +104,9 @@ def build_prompt(qtype: str, num: int, entities: list, cache: dict):
     underused = [t["pattern"] for t in templates if pattern_usage.get(t["pattern"], 0) < 3]
     hint = f"Prioritize patterns: {underused[:3]}" if underused else ""
 
-    system = f"You are a biomedical QA expert. Create {num} unique {qtype} questions."
+    system = f"""You are a biomedical QA expert creating diverse, natural-sounding questions.
+Your goal: Generate {num} unique {qtype} questions that sound like real exam or research questions.
+Key: Follow the REASONING STRUCTURE of templates, but REPHRASE with varied wording."""
 
     user = f"""Generate exactly {num} {qtype} biomedical questions.
 
@@ -116,15 +118,28 @@ RULE: {rules[qtype]}
 - Use DIFFERENT entities for each question
 - Answers come from your biomedical knowledge
 
-TEMPLATES:
+TEMPLATES (follow the reasoning structure, but REPHRASE creatively):
 {templates_str}
+
+IMPORTANT - WORDING DIVERSITY:
+1. Follow the template's REASONING PATTERN (e.g., Gene → Disease → Treatment)
+2. But REPHRASE the question wording - don't copy template verbatim
+3. Vary sentence structure: "Which X...", "What Y...", "How does...", "Name the..."
+4. Use synonyms: "causes" → "leads to/results in/triggers/is responsible for"
+5. Vary specificity: sometimes add context like "in humans", "according to research"
+6. Mix question styles: direct, indirect, with clauses
+
+Example variations for "What drug treats [disease] caused by [gene] mutations?":
+- "Which medication is prescribed for the condition resulting from mutations in [gene]?"
+- "Name the therapeutic agent used to manage the disease linked to [gene] defects."
+- "What is the standard treatment for patients with [gene]-related [disease]?"
 
 {hint}
 
 OUTPUT (JSON array of {num} objects):
 [{{"question": "...", "short_answer": "1-3 words", "reasoning": "step-by-step", "topic": "Pathophysiology|Treatment|Diagnosis|Prevention", "pattern": "template_pattern_name", "entities_used": ["given", "answer"]}}]
 
-Generate {num} questions:"""
+Generate {num} diverse, natural-sounding questions:"""
 
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]
 
@@ -203,6 +218,11 @@ def main():
     # Load MeSH entities
     if config.get("entity_source") == "mesh":
         mesh.load_mesh_data(seed=int(datetime.now().timestamp()) % 10000)
+        
+        # Exclude entities already used in previous minor versions
+        prev_used = cache.get("used_entity_ids", [])
+        if prev_used:
+            mesh.exclude_from_cache(prev_used)
     
     log(f"Started generation: {num_samples} samples, batch={batch_size}", qtype)
     
@@ -268,6 +288,11 @@ def main():
     
     elapsed = (datetime.now() - start).total_seconds()
     log(f"Completed: {len(samples)} samples in {elapsed:.1f}s", qtype)
+    
+    # Update cache with used entity IDs for future runs
+    cache["used_entity_ids"] = mesh.get_used_ids()
+    from augment_data.synthetic_data_generator import save_cache
+    save_cache(qtype, cache)
     
     # Save output - in generated/ subdirectory
     version = cache["version"]

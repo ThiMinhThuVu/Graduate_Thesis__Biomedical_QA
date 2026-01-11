@@ -5,3 +5,33 @@
 2026-01-11 17:58:03 [sequential] Completed: 0 samples in 0.0s
 2026-01-11 18:00:30 [sequential] Cache initialized v1_2 (persistent)
 2026-01-11 18:00:30 [sequential] Started generation: 500 samples, batch=25
+2026-01-11 21:13:40 [sequential] Cache initialized v1_3 (persistent)
+2026-01-11 21:13:40 [sequential] Started generation: 10 samples, batch=5
+2026-01-11 21:14:09 [sequential] Completed: 10 samples in 29.4s
+2026-01-11 21:16:03 [sequential] Cache initialized v1_4 (persistent)
+2026-01-11 21:16:04 [sequential] Started generation: 25 samples, batch=25
+2026-01-11 21:16:53 [sequential] Completed: 23 samples in 49.5s
+2026-01-11 21:17:09 [parallel] Cache initialized v1_0 (reset)
+2026-01-11 21:17:09 [parallel] Started generation: 25 samples, batch=25
+2026-01-11 21:17:53 [parallel] Completed: 23 samples in 43.8s
+2026-01-11 21:22:26 [parallel] Cache initialized v1_1 (persistent)
+2026-01-11 21:22:26 [parallel] Started generation: 25 samples, batch=25
+2026-01-11 21:23:15 [parallel] Completed: 24 samples in 48.8s
+2026-01-11 21:23:40 [parallel] Cache initialized v1_2 (persistent) (inherited 60 used entities)
+2026-01-11 21:23:40 [parallel] Started generation: 25 samples, batch=25
+2026-01-11 21:24:23 [parallel] Completed: 25 samples in 43.4s
+2026-01-11 21:25:57 [sequential] Cache initialized v2_0 (reset)
+2026-01-11 21:25:57 [sequential] Started generation: 25 samples, batch=25
+2026-01-11 21:26:48 [sequential] Completed: 25 samples in 50.4s
+2026-01-11 21:27:19 [parallel] Cache initialized v2_0 (reset)
+2026-01-11 21:27:19 [parallel] Started generation: 25 samples, batch=25
+2026-01-11 21:27:57 [parallel] Completed: 23 samples in 38.1s
+2026-01-11 22:02:28 [parallel] Cache initialized v3_0 (reset)
+2026-01-11 22:02:28 [parallel] Started generation: 25 samples, batch=25
+2026-01-11 22:03:28 [parallel] Completed: 26 samples in 59.6s
+2026-01-11 22:16:19 [sequential] Cache initialized v3_0 (reset)
+2026-01-11 22:16:19 [sequential] Started generation: 25 samples, batch=25
+2026-01-11 22:17:17 [sequential] Completed: 33 samples in 58.7s
+2026-01-11 22:18:04 [parallel] Cache initialized v4_0 (reset)
+2026-01-11 22:18:04 [parallel] Started generation: 25 samples, batch=25
+2026-01-11 22:18:57 [parallel] Completed: 22 samples in 53.3s
