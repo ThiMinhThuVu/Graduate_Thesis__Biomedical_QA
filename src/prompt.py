@@ -27,20 +27,27 @@ def load_search_keyword_prompt(question, dataset=None, type_q=None):
         messages = [
             {
         "role": "system",
-        "content": f"""You are an expert in generating ONLY 1 concise and effective Google search query to help answer a complex biomedical question.
-    Your goal is to:
-    1. Provide a single, keyword-based search query string that best targets the core information needed from the original question.
-    2. Identify a list of target entity types (target_labels) that need to be extracted from the context to answer the question. The "target_labels" MUST be selected ONLY from this list: [{labels_str}].
-    3. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question. 
+        "content": f"""## Role
+You are an expert in generating concise and effective Google search queries to help answer complex biomedical questions.
 
-    Key principles for the single query:
-    1. The query should be a distillation of the original complex question, focusing on essential keywords.
-    2. The query MUST be concise, using specific keywords INCLUDING IMPORTANT BIOMEDICAL KEYWORD, nouns, and technical terms critical to answering the question.
-    3. The "target_labels" should contain the entity type(s) that represent the expected answer or the core subject of the question.
-    4. The "key_entity" list of specific. Exclude generic or abstract concepts that are not useful for information retrieval (e.g., “medication”, “drug”, “treatment”).
-         
-    The final output MUST be a JSON array containing a single object. This object must contain a single key "search_keyword", whose value is the Google search query string and "target_labels" (a list of strings) and "key_entity".
-    """
+## Task
+Generate ONLY 1 search query and identify relevant entities.
+
+## Instructions
+1. Provide a single, keyword-based search query string that best targets the core information needed from the original question
+2. Identify a list of target entity types (target_labels) that need to be extracted from the context to answer the question
+   - MUST be selected ONLY from this list: [{labels_str}]
+3. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
+
+## Rules
+- The query should be a distillation of the original complex question, focusing on essential keywords
+- The query MUST be concise, using specific keywords INCLUDING IMPORTANT BIOMEDICAL KEYWORDS, nouns, and technical terms critical to answering the question
+- The "target_labels" should contain the entity type(s) that represent the expected answer or the core subject of the question
+- The "key_entity" list should be specific. Exclude generic or abstract concepts (e.g., "medication", "drug", "treatment")
+
+## Output Format (JSON)
+The final output MUST be a JSON array containing a single object with keys: "search_keyword", "target_labels" (a list of strings), and "key_entity".
+"""
             },
             {
         "role": "user",
@@ -802,63 +809,82 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
 
 
 def prompt_gen_answer_medhop_step_3b(question, key_entities, context):
-    prompt = f"""Question: {question}
-        Instructions:
-        1. Determine the question type from the question text.
-        2. Generate two parts in JSON format:
-        - long_answer: a detailed explanation based on the information.
-        - short_answer: strictly follow these rules based on the question type:
-        * For questions asking "how many" or about counts, return only a number or numeric phrase (e.g., "10", "ten").
-        * For questions asking about time or duration, return a concise time value (e.g., "36 hours", "3 days").
-        * For yes/no questions, return "Yes" or "No".
-        * For questions starting with "Who", "Which", or "What" that ask for a specific entity (e.g., person, disease, drug, gene, chromosome), return the full noun phrase naming that entity.
-            - Examples: "chromosome X", "interleukin-6", "dopamine receptor D2".
-        * For questions asking about organism, return organism type (e.g., "bacterium", "fungus").
+    prompt = f"""## Task
+Answer the following biomedical question based on the provided information.
 
-        3. Do not add any extra commentary or text outside the JSON.
+Question: {question}
 
-        Information:  
-        Key entities: {key_entities}
-        Context: {context}
+## Instructions
+1. Determine the question type from the question text
+2. Generate two parts in JSON format:
+   - long_answer: a detailed explanation based on the information
+   - short_answer: strictly follow these rules based on the question type
 
-        Response format (strict JSON):
-        {{  
-        "long_answer": "[detailed explanation]",  
-        "short_answer": "[short answer as per rules]"  
-        }}
-        """
+## Rules for Short Answer
+- Count questions ("how many"): Return ONLY a number or numeric phrase (e.g., "10", "ten")
+- Time/Duration questions: Return a concise time value (e.g., "36 hours", "3 days")
+- Yes/No questions: Return exactly "Yes" or "No"
+- Entity questions ("Who", "Which", "What"): Return the full noun phrase naming that entity
+  - Examples: "chromosome X", "interleukin-6", "dopamine receptor D2"
+- Organism questions: Return organism type (e.g., "bacterium", "fungus")
+
+## Constraints
+- MUST NOT: Add any extra commentary or text outside the JSON
+
+## Information
+Key entities: {key_entities}
+Context: {context}
+
+## Output Format (JSON)
+{{  
+    "long_answer": "[detailed explanation]",  
+    "short_answer": "[short answer as per rules]"  
+}}
+"""
     return prompt
 
 
 def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None):
     if type_q in ["bridge_comparison", "comparison"]:
-        prompt = f"""Question: {question}
-            Instructions:
-            1. Analyze the question and the provided information to determine the answer.
-            2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
-            - long_answer: A detailed explanation synthesized from the information.
-            - short_answer: A single string with the direct answer. Strictly follow these rules:
-            * **1. Yes/No Questions:** For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No".
-            * **2. Default - Single Answer:** For all other questions, provide only the single, most direct answer.
-            - First, identify the person whose role matches the role in the question (e.g., director, footballer).
-            - If no specific role is mentioned or if the requested role is not explicitly stated but the context describes a person performing multiple key roles (like writing, producing, and starring in a film), infer that this person is the subject of the question.
-            - Then, find the requested information (e.g., date of birth) for that person.
-            - The answer must be a direct value from the context.
-            - Do not add any additional information in parentheses.
-            * **3. Insufficient information:** If the question cannot be answered because the requested information is not present for any person in the context, output exactly “Insufficient information”.
+        prompt = f"""## Task
+Answer the following question based on the provided information.
 
-            3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
+Question: {question}
 
-            Information:
-            Key entities: {key_entities}
-            Context: {context}
+## Instructions
+1. Analyze the question and the provided information to determine the answer
+2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer"
 
-            Response (strict JSON):
-            {{
-            "long_answer": "Explain reasoning, clearly state if explicit or inferred, and cite which clues/documents were used.",
-            "short_answer": "The single most probable answer, formatted according to the output rules."
-            }}
-            """
+## Rules for Short Answer
+
+### Rule 1: Yes/No Questions
+- For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No"
+
+### Rule 2: Default - Single Answer
+For all other questions, provide only the single, most direct answer:
+- First, identify the person whose role matches the role in the question (e.g., director, footballer)
+- If no specific role is mentioned but context describes a person performing multiple key roles, infer that this person is the subject
+- Then, find the requested information (e.g., date of birth) for that person
+- The answer must be a direct value from the context
+- MUST NOT: Add any additional information in parentheses
+
+### Rule 3: Insufficient Information
+- If the question cannot be answered because the requested information is not present, output exactly "Insufficient information"
+
+## Constraints
+- MUST: Your entire response must be ONLY the JSON object
+- MUST NOT: Add any commentary before or after it
+
+## Information
+Key entities: {key_entities}
+Context: {context}
+
+## Output Format (JSON)
+{{
+    "long_answer": "Explain reasoning, clearly state if explicit or inferred, and cite which clues/documents were used.",
+    "short_answer": "The single most probable answer, formatted according to the output rules."
+}}
+"""
     elif type_q == "inference":
         prompt = f"""Question: {question}
         Instructions:
@@ -1137,20 +1163,20 @@ def get_answer_generation_system_prompt(dataset: Optional[str] = None) -> str:
    else:
        domain_context = "You are an expert in general knowledge."
   
-   return f"""{domain_context} Your task is to:
+   return f"""## Role
+{domain_context}
+
+## Task
 1. Analyze the provided context carefully
 2. Identify explicit facts first, then make logical inferences when needed
 3. Generate accurate answers following the EXACT formatting rules provided
 4. Output a valid JSON response
 
-
-CRITICAL CONSTRAINT:
-- Select ONLY the SINGLE most probable answer
-- short_answer must be MAX 3 words
-- If the question asks for multiple things, select ONLY the most prominent one
-
-
-Follow the formatting rules PRECISELY. The answer format must match the rules exactly."""
+## Constraints
+- MUST: Select ONLY the SINGLE most probable answer
+- MUST: short_answer must be MAX 3 words
+- MUST: If the question asks for multiple things, select ONLY the most prominent one
+- MUST: Follow the formatting rules PRECISELY. The answer format must match the rules exactly."""
 
 
 
@@ -1163,16 +1189,16 @@ def get_answer_generation_context_synthesis_rules() -> str:
         Rules section string for prompt injection
     """
     return """
-### CONTEXT SYNTHESIS RULES ###
+## Context Synthesis Rules
 - Read ALL provided context carefully
 - Connect information across documents
 - Treat synonyms/alternate names as the same entity
 - Prioritize explicit evidence over inference
-- Do NOT generate information (especially locations, names) not present in context
+- MUST NOT: Generate information (especially locations, names) not present in context
 - If no explicit answer exists, infer from strong clues:
-  * Long-term residence/workplace (strongest clue)
-  * Professional role implied by context
-  * Place of birth/nationality as fallback for location questions
+  - Long-term residence/workplace (strongest clue)
+  - Professional role implied by context
+  - Place of birth/nationality as fallback for location questions
 - Mark inferred answers clearly in long_answer
 """
 
@@ -1197,108 +1223,107 @@ def get_answer_generation_type_specific_rules(type_q: Optional[str] = None, data
    # =========================================================================
    if dataset == "medhop":
        return """
-### BIOMEDICAL DOMAIN RULES ###
+## Biomedical Domain Rules
 
-**Answer Format by Question Pattern:**
+### Answer Format by Question Pattern
 
 1. COUNT Questions ("how many", "number of"):
-  - Return ONLY a number or numeric phrase
-  - Examples: '10', 'ten', 'twenty-five'
+   - Return ONLY a number or numeric phrase
+   - Examples: '10', 'ten', 'twenty-five'
 
 2. TIME/DURATION Questions ("how long", "duration"):
-  - Return concise time value with units
-  - Examples: '36 hours', '3 days', '2 weeks'
+   - Return concise time value with units
+   - Examples: '36 hours', '3 days', '2 weeks'
 
 3. YES/NO Questions ("is", "are", "does", "can"):
-  - Return exactly 'Yes' or 'No'
-  - No additional explanation in short_answer
+   - Return exactly 'Yes' or 'No'
+   - No additional explanation in short_answer
 
 4. ENTITY Questions ("what", "which"):
-  - Return the FULL biomedical noun phrase
-  - Include complete terminology, not abbreviations alone
-  - Examples: 'chromosome X', 'interleukin-6', 'dopamine receptor D2'
+   - Return the FULL biomedical noun phrase
+   - Include complete terminology, not abbreviations alone
+   - Examples: 'chromosome X', 'interleukin-6', 'dopamine receptor D2'
 
 5. ORGANISM Questions ("what organism", "what type"):
-  - Return the organism type/classification
-  - Examples: 'bacterium', 'fungus', 'virus', 'mammal'
+   - Return the organism type/classification
+   - Examples: 'bacterium', 'fungus', 'virus', 'mammal'
 
 6. RANGE/INTERVAL Questions ("range", "between"):
-  - Return numeric range with units
-  - Examples: '300-330 msec', '10-20%', '5-10 days'
+   - Return numeric range with units
+   - Examples: '300-330 msec', '10-20%', '5-10 days'
 
 7. DEFAULT (other questions):
-  - Provide the most direct, specific answer from context
-  - Use complete biomedical terminology
+   - Provide the most direct, specific answer from context
+   - Use complete biomedical terminology
 
-**CRITICAL CONSTRAINT (ALL QUESTIONS):**
-- Select ONLY the SINGLE most probable answer
-- MAX 3 words for short_answer
+### Constraints
+- MUST: Select ONLY the SINGLE most probable answer
+- MUST: MAX 3 words for short_answer
 """
 
    if dataset == "wiki":
        if type_q == "inference":
            return """
-### INFERENCE TYPE RULES ###
-
+## Inference Type Rules
 
 This question involves family relationships or royal/noble figures.
 
-**For ROYAL/NOBLE Figures:**
+### For Royal/Noble Figures
 - Return the full name with royal prefixes (King, Queen, Prince, Princess, Duke, Duchess, Sir, Dame, Lord, Lady)
 - Include numbered hereditary titles if present
-- EXCLUDE: Territorial designations based only on land ownership, Parentheses
+- MUST NOT: Include territorial designations based only on land ownership, or parentheses
 - Return as a SINGLE string (MAX 3 words)
 
-**Examples:**
+### Examples
 - "King William IV"
 - "Princess Luisa"
 - "Sir Thomas Monck"
 
-**For Non-Royal Figures:**
+### For Non-Royal Figures
 - Return the full name as found in context (MAX 3 words)
 """
 
        elif type_q == "compositional":
            return """
-### COMPOSITIONAL TYPE RULES ###
+## Compositional Type Rules
 
 This question requires connecting facts across multiple documents.
 
-**Core Requirements:**
-- MUST synthesize information from different sources
+### Core Requirements
+- MUST: Synthesize information from different sources
 - Treat synonyms/alternate names as the same entity
- * Example: "John Doe" = "Jean Doe" = same person
+  - Example: "John Doe" = "Jean Doe" = same person
 
-**Location Answers:**
+### Location Answers
 - Return MOST SPECIFIC location available (city > state > country)
-- Do NOT generate locations not present in context
+- MUST NOT: Generate locations not present in context
 - If only nationality is available, use as country fallback and mark as INFERRED
 
-**Nationality Answers:**
+### Nationality Answers
 - "X-born Y" (e.g., "Spanish-born Brazilian") → answer is "X" (Spanish)
 - "X-Y" nationality (e.g., "Mexican-American") → answer is "X" (Mexican)
 - "X Y" nationality (e.g., "German Italian") → answer is "Y" (Italian)
 
-**General Categories:**
+### General Categories
 - Use the broadest applicable term
 - Example: "cancer" instead of "bowel cancer"
 """
 
        elif type_q in ["comparison", "bridge_comparison"]:
            return """
-### COMPARISON TYPE RULES ###
+## Comparison Type Rules
 
 This question compares two or more entities.
 
-**Choice Questions (Which/Who is older/younger/later/earlier/first/last):**
+### Choice Questions (Which/Who is older/younger/later/earlier/first/last)
 - Return the NAME of the chosen option extracted EXACTLY from the question
-- Do NOT return computed values like dates
+- MUST NOT: Return computed values like dates
 - Example: "Which film has director born later, A Flame In My Heart or Butcher, Baker?"
- → Answer is "A Flame In My Heart" or "Butcher, Baker", NOT a date
+  → Answer is "A Flame In My Heart" or "Butcher, Baker", NOT a date
 
-**Confirmation Questions (Are/Do both X and Y the same...):**
+### Confirmation Questions (Are/Do both X and Y the same...)
 - Return 'yes' or 'no' (lowercase only)
-- Do NOT include additional explanation in short_answer
+- MUST NOT: Include additional explanation in short_answer
 - Example: "Are both directors from the same country?" → "yes" or "no"
 """
    # No specific rules for unknown dataset/type
@@ -1782,101 +1807,83 @@ def get_prompt_for_answer_validation(question: str, answer: dict, dataset: str =
         ... )
         >>> response = gpt_request(messages, model="gpt-4o-mini")
     """
-    system_message = """You are an expert answer validator for multi-hop question answering systems. Your task is to validate answers against comprehensive normalization rules covering biomedical, general knowledge, and specialized question types."""
-    
-    user_prompt = f"""Task: Validate if this answer follows all normalization rules. Think step-by-step.
+    system_message = """## Role
+You are an expert answer validator for multi-hop question answering systems.
 
+## Task
+Validate answers against comprehensive normalization rules covering biomedical, general knowledge, and specialized question types."""
+    
+    user_prompt = f"""## Task
+Validate if this answer follows all normalization rules. Think step-by-step.
+
+## Input
 Question: {question}
 Short Answer: {answer.get('short_answer', '')}
 Long Answer: {answer.get('long_answer', '')}
 
-COMPREHENSIVE VALIDATION CHECKLIST:
+## Validation Checklist
 
-1. QUESTION TYPE DETECTION:
-   - Identify question type: count ("how many"), time/duration, yes/no, entity (Who/Which/What), organism, comparison, inference, compositional
-   - Verify answer format matches detected type
+### 1. Question Type Detection
+- Identify question type: count ("how many"), time/duration, yes/no, entity (Who/Which/What), organism, comparison, inference, compositional
+- Verify answer format matches detected type
 
-2. BIOMEDICAL RULES:
-   a) Count Questions:
-      - Answer must be ONLY a number or numeric phrase (e.g., "10", "ten")
-      - No extra text allowed
-   
-   b) Time/Duration Questions:
-      - Answer must be concise time value (e.g., "36 hours", "3 days")
-   
-   c) Yes/No Questions:
-      - Answer must be exactly "Yes" or "No"
-   
-   d) Entity Questions (Who/Which/What):
-      - For BIOMEDICAL/SCIENTIFIC entities: Must return FULL noun phrase (e.g., "chromosome X", "interleukin-6", "dopamine receptor D2")
-      - For GENERAL KNOWLEDGE (people/films/places): Proper names are VALID (e.g., "Manuel Romero", "Paris")
-      - Check context to determine if question is biomedical or general knowledge
-   
-   e) Organism Questions:
-      - Return organism type (e.g., "bacterium", "fungus")
-   
-   f) Range/Interval Questions:
-      - Return numeric range (e.g., "300-330 msec", "10-20%")
-   
-   g) Lists:
-      - If none of above apply, provide concise comma-separated items
+### 2. Biomedical Rules
+- Count Questions: Answer must be ONLY a number or numeric phrase (e.g., "10", "ten"). No extra text allowed
+- Time/Duration Questions: Answer must be concise time value (e.g., "36 hours", "3 days")
+- Yes/No Questions: Answer must be exactly "Yes" or "No"
+- Entity Questions (Who/Which/What):
+  - For BIOMEDICAL/SCIENTIFIC entities: Must return FULL noun phrase (e.g., "chromosome X", "interleukin-6")
+  - For GENERAL KNOWLEDGE (people/films/places): Proper names are VALID (e.g., "Manuel Romero", "Paris")
+- Organism Questions: Return organism type (e.g., "bacterium", "fungus")
+- Range/Interval Questions: Return numeric range (e.g., "300-330 msec", "10-20%")
+- Lists: If none of above apply, provide concise comma-separated items
 
-3. WIKI/GENERAL KNOWLEDGE RULES:
-   a) Comparison Questions (Which/Who...older/younger/later/earlier):
-      - Answer must be the NAME of chosen option extracted EXACTLY from question
-      - Example: For "Which film has director born later, A or B?", answer is "A" NOT a date
-   
-   b) Confirmation Questions (Are/Do...same):
-      - Answer must be "yes" or "no" (lowercase)
-   
-   c) Inference Questions (Royal/Noble Figures):
-      - Royal prefix required if applicable: King/Queen, Prince/Princess, Duke/Duchess, etc.
-      - Include numbered hereditary titles: "2nd Earl of Stafford"
-      - Include honorifics: Sir/Dame/Lord/Lady
-      - EXCLUDE territorial designations based only on land ownership
-      - NO parentheses in final answer (but analyze them for context)
-      - Format for royal/noble: "prefix|name|suffix" (e.g., "King|William IV|")
-   
-   d) Compound Answers:
-      - Multiple concepts MUST be deconstructed
-      - Join with pipe "|" separator
-      - Example: "Presidential unitary democratic republic" → "Presidential|Unitary|Democratic"
+### 3. Wiki/General Knowledge Rules
+- Comparison Questions (Which/Who...older/younger/later/earlier): Answer must be the NAME of chosen option extracted EXACTLY from question (NOT a date)
+- Confirmation Questions (Are/Do...same): Answer must be "yes" or "no" (lowercase)
+- Inference Questions (Royal/Noble Figures):
+  - Royal prefix required if applicable: King/Queen, Prince/Princess, Duke/Duchess, etc.
+  - Include numbered hereditary titles: "2nd Earl of Stafford"
+  - Include honorifics: Sir/Dame/Lord/Lady
+  - EXCLUDE territorial designations based only on land ownership
+  - NO parentheses in final answer
+- Compound Answers: Multiple concepts MUST be deconstructed with pipe "|" separator
 
-4. LOCATION RULES:
-   - Always use MOST SPECIFIC location (city > state > country)
-   - Do NOT generate location names not in context
-   - For birthplace/death without explicit mention: use nationality → country as fallback
-   - Clearly mark as INFERRED if using nationality fallback
+### 4. Location Rules
+- Always use MOST SPECIFIC location (city > state > country)
+- MUST NOT: Generate location names not in context
+- For birthplace/death without explicit mention: use nationality → country as fallback
+- Clearly mark as INFERRED if using nationality fallback
 
-5. NATIONALITY RULES:
-   - "X-born Y" → answer "X"
-   - "X-Y nationality" → answer "X"
-   - "X Y nationality" → answer "Y"
+### 5. Nationality Rules
+- "X-born Y" → answer "X"
+- "X-Y nationality" → answer "X"
+- "X Y nationality" → answer "Y"
 
-6. CONTENT VALIDATION:
-   - No hallucinated entities/locations
-   - Synonyms/alternate names treated as same entity
-   - Evidence properly cited in long_answer
-   - Explicit evidence prioritized over inference
-   - "Insufficient information" is a VALID answer when the context truly lacks needed information
+### 6. Content Validation
+- No hallucinated entities/locations
+- Synonyms/alternate names treated as same entity
+- Evidence properly cited in long_answer
+- Explicit evidence prioritized over inference
+- "Insufficient information" is a VALID answer when context truly lacks needed information
 
-7. SPECIAL CASE - "Insufficient information":
-   - Short answer = "Insufficient information" → SKIP strict content checks
-   - Long_answer should explain why information is unavailable, but be flexible with format
+### 7. Special Case - "Insufficient information"
+- Short answer = "Insufficient information" → SKIP strict content checks
+- Long_answer should explain why information is unavailable, but be flexible with format
 
-8. LONG ANSWER VALIDATION (FLEXIBLE):
-   - Long answer should generally support the short answer with reasoning
-   - Accept any reasonable explanation that connects evidence to the answer
-   - Citing document IDs (like Q6752853) or specific evidence sources is good but not required
-   - Step-by-step explanations are encouraged but not mandatory
-   - PRIORITY: Check only that long_answer is consistent with short_answer and contains some reasoning
-   - Do NOT enforce rigid formatting requirements on the long answer
+### 8. Long Answer Validation (Flexible)
+- Long answer should generally support the short answer with reasoning
+- Accept any reasonable explanation that connects evidence to the answer
+- Citing document IDs or specific evidence sources is good but not required
+- Step-by-step explanations are encouraged but not mandatory
+- PRIORITY: Check only that long_answer is consistent with short_answer and contains some reasoning
+- MUST NOT: Enforce rigid formatting requirements on the long answer
 
-Output Format (strict JSON):
+## Output Format (JSON)
 {{
-  "is_valid": true/false,
-  "violations": ["list of specific rule violations found with rule category, empty if valid"],
-  "additional_rules": "Specific corrective instructions to inject into generator prompt (only if is_valid=false, otherwise empty string)"
+    "is_valid": true/false,
+    "violations": ["list of specific rule violations found with rule category, empty if valid"],
+    "additional_rules": "Specific corrective instructions to inject into generator prompt (only if is_valid=false, otherwise empty string)"
 }}"""
     
     messages = [
