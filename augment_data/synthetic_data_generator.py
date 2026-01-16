@@ -19,10 +19,22 @@ LOG_FILE = OUTPUT_DIR / "generation.log"
 # =============================================================================
 # TEMPLATES
 # =============================================================================
+# KEY DISTINCTION:
+#   - DIRECT: All entities are GIVEN/KNOWN in the question. Answer is directly retrievable.
+#             Example: "Which disease has symptoms A and B?" → All info given, just recall answer.
+#   
+#   - SEQUENTIAL: Has UNKNOWN entities marked with [?] that must be discovered through reasoning.
+#             Example: "What [DRUG] treats [DISEASE] caused by [GENE]?" → Must find DISEASE first, then DRUG.
+#             Chain shows the reasoning path: [GENE] → [DISEASE] → [DRUG]
+#   
+#   - PARALLEL: Has UNKNOWN entities in BOTH branches that must be discovered and compared.
+#             Example: "Is gene in [DISEASE_A] same family as gene in [DISEASE_B]?"
+#             Branches: [DISEASE_A] → [GENE] vs [DISEASE_B] → [GENE] → Compare
+# ============================================================================= 
 
 TEMPLATES = {
-    "direct": [
-        # === ORIGINAL TEMPLATES ===
+    # DIRECT_SIMPLE: Straightforward single-hop questions with clear structure
+    "direct_simple": [
         {"pattern": "which_specialty", "structure": "Which medical specialty is most likely to treat patients with [DISEASE]?", "wh_word": "Which", "topic": "Treatment", "example": "Which medical specialty is most likely to treat patients with Gaucher disease?"},
         {"pattern": "what_risk_factor", "structure": "What is a common risk factor for both [DISEASE_A] and [DISEASE_B]?", "wh_word": "What", "topic": "Prevention", "example": "What is a common risk factor for both diabetes and heart disease?"},
         {"pattern": "what_type", "structure": "What type of [ENTITY] is associated with [CONDITION]?", "wh_word": "What", "topic": "Diagnosis", "example": "What type of enzyme is associated with phenylketonuria?"},
@@ -32,8 +44,6 @@ TEMPLATES = {
         {"pattern": "is_notifiable", "structure": "Is [DISEASE] a notifiable disease?", "wh_word": "Is", "topic": "Prevention", "example": "Is tuberculosis a notifiable disease?"},
         {"pattern": "can_lead_to", "structure": "Can [CONDITION] lead to [SYMPTOM/COMPLICATION]?", "wh_word": "Can", "topic": "Diagnosis", "example": "Can diabetes lead to neuropathy?"},
         {"pattern": "does_include", "structure": "Does [SYNDROME] include [SYMPTOM] as a symptom?", "wh_word": "Does", "topic": "Diagnosis", "example": "Does Marfan syndrome include aortic dilation as a symptom?"},
-        
-        # === NEW: From misclassified patterns ===
         {"pattern": "in_what_year", "structure": "In what year was [TREATMENT/DISCOVERY] for [DISEASE] first [APPROVED/DESCRIBED]?", "wh_word": "In what", "topic": "Treatment", "example": "In what year was insulin for diabetes first approved?"},
         {"pattern": "eponymous_disorder", "structure": "Which [CONDITION] is named after the [PROFESSION] who first described it?", "wh_word": "Which", "topic": "Diagnosis", "example": "Which disease is named after the neurologist who first described it?"},
         {"pattern": "anatomy_affected", "structure": "Which part of the [ORGAN] is primarily affected by [CONDITION]?", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which part of the eye is primarily affected by glaucoma?"},
@@ -42,39 +52,89 @@ TEMPLATES = {
         {"pattern": "medication_for_symptom", "structure": "Which medication is used to treat the [SYMPTOM] associated with [SYNDROME]?", "wh_word": "Which", "topic": "Treatment", "example": "Which medication is used to treat the nerve pain associated with shingles?"},
         {"pattern": "cytokine_role", "structure": "Which cytokine is elevated in [CONDITION] and acts as [ROLE]?", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which cytokine is elevated in inflammation and acts as a pro-inflammatory mediator?"},
     ],
-    "sequential": [
-        # === ORIGINAL TEMPLATES ===
-        {"pattern": "what_treatment_caused_by", "structure": "What [DRUG?] is used to treat the [DISEASE?] caused by [GENE] mutations?", "chain": "[GENE] → [DISEASE] → [DRUG]", "wh_word": "What", "topic": "Treatment", "example": "What drug is used to treat the disease caused by GBA mutations?"},
-        {"pattern": "what_pathway_disrupted", "structure": "What [PATHWAY?] is disrupted in the [DISEASE?] characterized by [SYMPTOM]?", "chain": "[SYMPTOM] → [DISEASE] → [PATHWAY]", "wh_word": "What", "topic": "Pathophysiology", "example": "What pathway is disrupted in the disease characterized by hepatomegaly?"},
-        {"pattern": "on_chromosome_causes", "structure": "On which chromosome is the [GENE?] that causes [DISEASE?] characterized by [SYMPTOM]?", "chain": "[SYMPTOM] → [DISEASE] → [GENE] → [CHROMOSOME]", "wh_word": "On which", "topic": "Pathophysiology", "example": "On which chromosome is the gene that causes the disease with tremor?"},
-        {"pattern": "is_same_gene", "structure": "Is the deficiency in [PROTEIN?] caused by the same gene that is mutated in [DISEASE]?", "chain": "[DISEASE] → [GENE] → [PROTEIN deficiency]", "wh_word": "Is", "topic": "Diagnosis", "example": "Is glucocerebrosidase deficiency caused by the same gene mutated in Gaucher disease?"},
-        {"pattern": "can_mutation_cause", "structure": "Can a mutation in the [GENE?] that encodes [PROTEIN] cause [DISEASE]?", "chain": "[PROTEIN] → [GENE] → [DISEASE]", "wh_word": "Can", "topic": "Pathophysiology", "example": "Can a mutation in the gene encoding dystrophin cause muscular dystrophy?"},
-        {"pattern": "do_mutations_lead", "structure": "Do mutations in [GENE?] lead to [DISEASE?] that also causes [SYMPTOM]?", "chain": "[GENE] → [DISEASE] → [SYMPTOM]", "wh_word": "Do", "topic": "Pathophysiology", "example": "Do mutations in HTT lead to a disease that also causes chorea?"},
-        
-        # === NEW: From misclassified patterns ===
-        {"pattern": "cell_organelle_affected", "structure": "What is the [ORGANELLE?] of [CELL_TYPE] that is affected in [DISEASE]?", "chain": "[DISEASE] → [CELL_TYPE] → [ORGANELLE]", "wh_word": "What", "topic": "Pathophysiology", "example": "What is the organelle of muscle cells that is affected in mitochondrial myopathy?"},
-        {"pattern": "vaccine_for_disease", "structure": "What is the [VACCINE_TYPE?] vaccine that has shown results for [DISEASE] caused by [PATHOGEN]?", "chain": "[PATHOGEN] → [DISEASE] → [VACCINE]", "wh_word": "What", "topic": "Treatment", "example": "What is the live-attenuated vaccine for the disease caused by Rift Valley fever virus?"},
-        {"pattern": "treatment_for_condition", "structure": "What is the only effective treatment for [CONDITION] that occurs in [POPULATION]?", "chain": "[POPULATION] → [CONDITION] → [TREATMENT]", "wh_word": "What", "topic": "Treatment", "example": "What is the only effective treatment for neural tube defects?"},
-        {"pattern": "complication_anatomy", "structure": "What is a potential complication of [DISEASE] that involves [ANATOMY_PROCESS]?", "chain": "[DISEASE] → [COMPLICATION] → [ANATOMY]", "wh_word": "What", "topic": "Diagnosis", "example": "What is a potential complication of Crohn's disease that involves the intestinal wall?"},
-        {"pattern": "protein_from_gene", "structure": "What protein encoded by [GENE] is essential for [PROCESS] in [ORGANELLE]?", "chain": "[GENE] → [PROTEIN] → [PROCESS]", "wh_word": "What", "topic": "Pathophysiology", "example": "What protein encoded by POLG is essential for mitochondrial DNA replication?"},
-        {"pattern": "gene_causes_symptoms", "structure": "Which gene mutation causes a disease that leads to [SYMPTOM_A] and [SYMPTOM_B]?", "chain": "[SYMPTOMS] → [DISEASE] → [GENE]", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which gene mutation causes a disease that leads to hearing loss and dystonia?"},
-        {"pattern": "enzyme_loss_symptom", "structure": "Which enzyme's loss of function, due to mutations in [GENE], leads to [SYMPTOM]?", "chain": "[GENE] → [ENZYME] → [SYMPTOM]", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which enzyme's loss of function, due to PANK2 mutations, leads to spasticity?"},
-        {"pattern": "treatment_dual_role", "structure": "What is a treatment for [SYMPTOM] that also plays a role in [SYSTEM/PROCESS]?", "chain": "[SYMPTOM] → [TREATMENT] → [ROLE]", "wh_word": "What", "topic": "Treatment", "example": "What is a treatment for taste disorders that also supports the immune system?"},
-        {"pattern": "gene_chromosome_encodes", "structure": "Which gene on [CHROMOSOME] encodes [PROTEIN_TYPE] for [PROCESS]?", "chain": "[CHROMOSOME] → [GENE] → [PROTEIN] → [PROCESS]", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which gene on the X chromosome encodes a guanine nucleotide exchange factor?"},
-        {"pattern": "condition_comorbid", "structure": "What psychological condition can develop in patients with [CONDITION] and is prevalent in [DISORDER]?", "chain": "[DISORDER] → [CONDITION] → [COMORBIDITY]", "wh_word": "What", "topic": "Diagnosis", "example": "What condition develops in patients with body image disturbance and is common in anorexia?"},
-        {"pattern": "triplet_repeat_gene", "structure": "Which syndrome is caused by expansion of [REPEAT_TYPE] in [GENE] on [CHROMOSOME]?", "chain": "[CHROMOSOME] → [GENE] → [REPEAT] → [SYNDROME]", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which syndrome is caused by CGG triplet repeat expansion in FMR1 on the X chromosome?"},
-        {"pattern": "disease_also_known_as", "structure": "What is the common name of [DISEASE] that is also caused by mutations in [GENE]?", "chain": "[GENE] → [DISEASE] → [COMMON_NAME]", "wh_word": "What", "topic": "Diagnosis", "example": "What is the common name of the disease caused by GBA mutations, also known as familial Parkinsonism?"},
-        {"pattern": "disease_class_count", "structure": "The disease that [CONDITION_A] resembles is classified as a [CLASS]. How many types exist?", "chain": "[CONDITION] → [SIMILAR_DISEASE] → [CLASS] → [COUNT]", "wh_word": "How many", "topic": "Diagnosis", "example": "The disease that pseudo-Hurler resembles is a mucopolysaccharidosis. How many types exist?"},
-        {"pattern": "enzyme_absent_compound", "structure": "What enzyme's activity is absent in [DISEASE] that leads to high levels of [COMPOUND]?", "chain": "[DISEASE] → [ENZYME_ABSENT] → [COMPOUND_HIGH]", "wh_word": "What", "topic": "Pathophysiology", "example": "What enzyme's activity is absent in molybdenum cofactor deficiency leading to high uric acid?"},
-        {"pattern": "gene_affects_function", "structure": "Which chromosome contains genes that affect [CELL_TYPE] function when mutated in [DISEASE]?", "chain": "[DISEASE] → [GENES] → [CHROMOSOME] → [FUNCTION]", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which chromosome contains genes that affect lymphocyte function in immunodeficiency?"},
-        {"pattern": "genes_collagen_type", "structure": "The genes affected in [DISEASE] are associated with variants of which type of [PROTEIN]?", "chain": "[DISEASE] → [GENES] → [PROTEIN_TYPE]", "wh_word": "Which", "topic": "Pathophysiology", "example": "The genes affected in LGMD are associated with variants of which type of collagen?"},
+    
+    # DIRECT_HARD: Complex-looking but still single-hop (HARD NEGATIVES for training)
+    # These look like multi-hop questions but all entities are GIVEN - no intermediate discovery needed
+    "direct_hard": [
+        {"pattern": "autoimmune_multi_symptom", "structure": "Which autoimmune disease is associated with [SYMPTOM_A] and can lead to [SYMPTOM_B]?", "wh_word": "Which", "topic": "Diagnosis", "example": "Which autoimmune disease is associated with chronic hives and can lead to dry mouth and dry eyes?"},
+        {"pattern": "syndrome_multi_feature", "structure": "What syndrome is characterized by [FEATURE_A], [FEATURE_B], and [FEATURE_C]?", "wh_word": "What", "topic": "Diagnosis", "example": "What syndrome is characterized by goniodysgenesis, intellectual disability, and short stature?"},
+        {"pattern": "gene_dual_classification", "structure": "Which gene mutation causes a form of [DISEASE_TYPE_A] that is also classified as a [DISEASE_TYPE_B]?", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which gene mutation causes a form of congenital muscular dystrophy that is also classified as a myopathy?"},
+        {"pattern": "condition_complication_prone", "structure": "What complication are patients with [CONDITION] more prone to developing?", "wh_word": "What", "topic": "Diagnosis", "example": "What complication are patients with Tracheobronchopathia osteochondroplastica more prone to developing?"},
+        {"pattern": "gene_dual_phenotype", "structure": "Which gene mutation associated with [CONDITION_A] can also lead to [CONDITION_B]?", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which gene mutation associated with retinal vasculopathy can also lead to gastrointestinal bleeding?"},
+        {"pattern": "syndrome_gene_cause", "structure": "Which genetic syndrome associated with [FEATURE] is caused by mutations in the [GENE] gene?", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which genetic syndrome associated with radioulnar synostosis is caused by mutations in the NIPBL gene?"},
+        {"pattern": "disorder_secondary_effect", "structure": "Which disorder affecting [SYSTEM_A] can lead to [SYMPTOM] in [SYSTEM_B]?", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which disorder affecting myelin can lead to hearing loss?"},
+        {"pattern": "mutation_secondary_condition", "structure": "Which genetic mutation can cause [CONDITION_A] and is associated with [CONDITION_B]?", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which genetic mutation can cause secondary hyperaldosteronism and is associated with nutcracker syndrome?"},
+        {"pattern": "gene_both_conditions", "structure": "Which gene mutation is associated with both [SYNDROME] and [ORGAN] defects?", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which gene mutation is associated with both CHARGE syndrome and congenital heart defects?"},
+        {"pattern": "treatment_dual_condition", "structure": "What surgical treatment might be used for both [CONDITION_A] and [CONDITION_B]?", "wh_word": "What", "topic": "Treatment", "example": "What surgical treatment might be used for both Klippel-Feil syndrome and craniocervical instability?"},
+        {"pattern": "cell_role_pathogenesis", "structure": "What type of [CELL/MOLECULE] is suggested to play a role in the pathogenesis of [DISEASE]?", "wh_word": "What", "topic": "Pathophysiology", "example": "What type of immune cell is suggested to play a role in the pathogenesis of Kikuchi disease?"},
+        {"pattern": "deficiency_associated_disorder", "structure": "What [NUTRIENT/ENZYME] deficiency is associated with [DISORDER]?", "wh_word": "What", "topic": "Pathophysiology", "example": "What vitamin deficiency is associated with Seasonal Affective Disorder?"},
     ],
+    
+    # SEQUENTIAL: [ENTITY] = given, [ENTITY?] = implicit/must discover
+    # NEW TEMPLATES based on MedHop missed sequential analysis
+    "sequential": [
+        # 1. CHROMOSOME_GENE_DISEASE - covers ~47% of missed questions
+        {"pattern": "chromosome_gene_disease", "structure": "Which [CHROMOSOME?] contains the [GENE?] that causes [DISEASE]?", "chain": "[DISEASE] → [GENE?] → [CHROMOSOME?]", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which chromosome contains the gene that causes Marfan syndrome?"},
+        
+        # 2. GENE_MUTATION_CONDITION - covers ~11%
+        {"pattern": "gene_mutation_condition", "structure": "Which [GENE?] mutation causes [CONDITION] characterized by [SYMPTOM]?", "chain": "[SYMPTOM] → [CONDITION?] → [GENE?]", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which gene mutation causes the condition characterized by myopathic gait?"},
+        
+        # 3. PATHOGEN_DISEASE_SYMPTOM - covers ~5%
+        {"pattern": "pathogen_disease_symptom", "structure": "Which [PATHOGEN?] causes a [DISEASE?] that leads to [SYMPTOM]?", "chain": "[SYMPTOM] → [DISEASE?] → [PATHOGEN?]", "wh_word": "Which", "topic": "Pathophysiology", "example": "Which virus causes a disease that can lead to alien hand syndrome?"},
+        
+        # 4. YEAR_ENTITY_DISCOVERY - covers ~4%
+        {"pattern": "year_entity_discovery", "structure": "In which [YEAR?] was the [ENTITY?] associated with [DISEASE] first discovered?", "chain": "[DISEASE] → [ENTITY?] → [YEAR?]", "wh_word": "In which", "topic": "Diagnosis", "example": "In which year was the hormone associated with hypoaldosteronism first isolated?"},
+        
+        # 5. EPONYM_SYNDROME - covers ~7%
+        {"pattern": "eponym_syndrome", "structure": "Which [PERSON?] first described the [SYNDROME?] characterized by [SYMPTOM]?", "chain": "[SYMPTOM] → [SYNDROME?] → [PERSON?]", "wh_word": "Which", "topic": "Diagnosis", "example": "Which neurologist first described the syndrome characterized by aphasia in children?"},
+        
+        # 6. TREATMENT_DISEASE_SYMPTOM - covers ~3%
+        {"pattern": "treatment_disease_symptom", "structure": "Which [TREATMENT?] is used for the [SYMPTOM?] associated with [DISEASE]?", "chain": "[DISEASE] → [SYMPTOM?] → [TREATMENT?]", "wh_word": "Which", "topic": "Treatment", "example": "Which medication is used to treat nerve pain associated with Ramsay Hunt syndrome?"},
+
+        # 7. INHERITANCE_PATTERN - very common in missed samples
+        {"pattern": "inheritance_pattern_condition", "structure": "What is the inheritance pattern of the [CONDITION?] caused by mutations in the [GENE] gene?", "chain": "[GENE] → [CONDITION?] → [INHERITANCE?]", "wh_word": "What", "topic": "Pathophysiology", "example": "What is the inheritance pattern of the condition caused by mutations in the ABCC9 gene?"},
+
+        # 8. GENE_PROPERTY_COUNT - amino acids, exons, etc.
+        {"pattern": "gene_property_count", "structure": "How many [PROPERTY?] are present in the [GENE?] whose mutations cause [DISEASE]?", "chain": "[DISEASE] → [GENE?] → [COUNT?]", "wh_word": "How many", "topic": "Pathophysiology", "example": "How many exons are present in the gene that causes mevalonate kinase deficiency?"},
+
+        # 9. GENE_FAMILY_MEMBER - G protein-coupled receptors, etc.
+        {"pattern": "gene_family_member", "structure": "Is the [GENE?] responsible for [DISEASE] a member of the [FAMILY?]?", "chain": "[DISEASE] → [GENE?] → [FAMILY?]", "wh_word": "Is", "topic": "Pathophysiology", "example": "Is the gene responsible for Jansen's metaphyseal chondrodysplasia a member of the secretin family?"},
+
+        # 10. DISEASE_SYMPTOM_COMBO - multi-symptom mapping
+        {"pattern": "disease_symptom_combo", "structure": "Which [GENE?] mutation is associated with a syndrome that includes both [SYMPTOM_A] and [SYMPTOM_B]?", "chain": "[SYMPTOM_A] + [SYMPTOM_B] → [SYNDROME?] → [GENE?]", "wh_word": "Which", "topic": "Diagnosis", "example": "Which gene mutation is associated with a syndrome that includes both congenital cataracts and iris coloboma?"},
+    ],
+    
+    # === OLD SEQUENTIAL TEMPLATES (disabled) ===
+    # "sequential_old": [
+    #     {"pattern": "what_treatment_caused_by", ...},
+    #     {"pattern": "what_pathway_disrupted", ...},
+    #     {"pattern": "on_chromosome_causes", ...},
+    #     {"pattern": "is_same_gene", ...},
+    #     {"pattern": "can_mutation_cause", ...},
+    #     {"pattern": "do_mutations_lead", ...},
+    #     {"pattern": "cell_organelle_affected", ...},
+    #     {"pattern": "vaccine_for_disease", ...},
+    #     {"pattern": "complication_anatomy", ...},
+    #     {"pattern": "protein_from_gene", ...},
+    #     {"pattern": "gene_causes_symptoms", ...},
+    #     {"pattern": "enzyme_loss_symptom", ...},
+    #     {"pattern": "treatment_dual_role", ...},
+    #     {"pattern": "gene_chromosome_encodes", ...},
+    #     {"pattern": "condition_comorbid", ...},
+    #     {"pattern": "triplet_repeat_gene", ...},
+    #     {"pattern": "disease_also_known_as", ...},
+    #     {"pattern": "disease_class_count", ...},
+    #     {"pattern": "enzyme_absent_compound", ...},
+    #     {"pattern": "gene_affects_function", ...},
+    #     {"pattern": "genes_collagen_type", ...},
+    # ],
+    # PARALLEL: Has UNKNOWN entities in BOTH branches - must discover and compare
     "parallel": [
         # === ORIGINAL TEMPLATES ===
         {"pattern": "or_choice_gene", "structure": "Is [DISEASE] caused by mutations in [GENE_A] or [GENE_B]?", "branches": ["[DISEASE] → [GENE_A]?", "[DISEASE] → [GENE_B]?"], "conjunction": "or", "wh_word": "Is", "topic": "Pathophysiology", "example": "Is muscular dystrophy caused by mutations in DMD or DMPK?"},
         {"pattern": "or_choice_treatment", "structure": "Which is more effective for treating [DISEASE], [DRUG_A] or [DRUG_B]?", "branches": ["[DISEASE] ← [DRUG_A]", "[DISEASE] ← [DRUG_B]"], "conjunction": "or", "wh_word": "Which", "topic": "Treatment", "example": "Which is more effective for treating Parkinson's, levodopa or pramipexole?"},
-        {"pattern": "difference", "structure": "What [SYMPTOM?] occurs in [DISEASE_A] but not in [DISEASE_B]?", "branches": ["[DISEASE_A] → symptoms", "[DISEASE_B] → symptoms"], "conjunction": "but not", "wh_word": "What", "topic": "Diagnosis", "example": "What symptom occurs in Gaucher disease but not in Fabry disease?"},
-        {"pattern": "dual_chain_family", "structure": "Is the [GENE?] mutated in [DISEASE_A] from the same family as the [GENE?] in [DISEASE_B]?", "branches": ["[DISEASE_A] → gene → family", "[DISEASE_B] → gene → family"], "conjunction": "same family", "wh_word": "Is", "topic": "Pathophysiology", "example": "Is the gene mutated in Tay-Sachs from the same family as the gene in Sandhoff disease?"},
+        {"pattern": "difference", "structure": "What [SYMPTOM] occurs in [DISEASE_A] but not in [DISEASE_B]?", "branches": ["[DISEASE_A] → symptoms", "[DISEASE_B] → symptoms"], "conjunction": "but not", "wh_word": "What", "topic": "Diagnosis", "example": "What symptom occurs in Gaucher disease but not in Fabry disease?"},
+        {"pattern": "dual_chain_family", "structure": "Is the [GENE] mutated in [DISEASE_A] from the same family as the [GENE] in [DISEASE_B]?", "branches": ["[DISEASE_A] → gene → family", "[DISEASE_B] → gene → family"], "conjunction": "same family", "wh_word": "Is", "topic": "Pathophysiology", "example": "Is the gene mutated in Tay-Sachs from the same family as the gene in Sandhoff disease?"},
         
         # === NEW: Comparison patterns ===
         {"pattern": "shared_symptom", "structure": "What is a common symptom shared by both [DISEASE_A] and [DISEASE_B]?", "branches": ["[DISEASE_A] → symptoms", "[DISEASE_B] → symptoms"], "conjunction": "shared", "wh_word": "What", "topic": "Diagnosis", "example": "What is a common symptom shared by both Parkinson's and essential tremor?"},

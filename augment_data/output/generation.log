@@ -41,3 +41,275 @@
 2026-01-11 22:49:17 [parallel] Cache initialized v6_0 (reset)
 2026-01-11 22:49:17 [parallel] Started generation: 25 samples, batch=25
 2026-01-11 22:49:52 [parallel] Completed: 16 samples in 34.8s
+2026-01-12 21:04:18 [parallel] Cache initialized v7_0 (reset)
+2026-01-12 21:04:19 [parallel] Started generation: 25 samples, batch=25
+2026-01-12 21:05:24 [parallel] Completed: 21 samples in 65.1s
+2026-01-12 21:15:47 [sequential] Cache initialized v4_0 (reset)
+2026-01-12 21:15:47 [sequential] Started generation: 250 samples, batch=20
+2026-01-12 21:24:31 [sequential] Completed: 244 samples in 523.8s
+2026-01-13 15:16:19 [direct_hard] Cache initialized v1_0 (reset)
+2026-01-13 15:16:19 [direct_hard] Started generation: 250 samples, batch=20
+2026-01-13 15:17:22 [direct_hard] Cache initialized v2_0 (reset)
+2026-01-13 15:17:23 [direct_hard] Started generation: 250 samples, batch=20
+2026-01-13 16:48:06 [direct_hard] Cache initialized v3_0 (reset)
+2026-01-13 16:48:06 [direct_hard] Started generation: 250 samples, batch=20
+2026-01-13 17:00:54 [direct_hard] Cache initialized v4_0 (reset)
+2026-01-13 17:00:54 [direct_hard] Started generation: 50 samples, batch=20
+2026-01-13 17:13:56 [direct_simple] Cache initialized v1_0 (reset)
+2026-01-13 17:13:56 [direct_simple] Started generation: 5 samples, batch=5
+2026-01-13 17:14:07 [direct_simple] Completed: 5 samples in 11.1s
+2026-01-13 17:14:22 [direct_hard] Cache initialized v1_0 (reset)
+2026-01-13 17:14:22 [direct_hard] Started generation: 5 samples, batch=5
+2026-01-13 17:14:34 [direct_hard] Completed: 5 samples in 11.6s
+2026-01-13 17:14:44 [sequential] Cache initialized v1_0 (reset)
+2026-01-13 17:14:44 [sequential] Started generation: 5 samples, batch=5
+2026-01-13 17:14:57 [sequential] Completed: 5 samples in 12.6s
+2026-01-13 17:15:05 [parallel] Cache initialized v1_0 (reset)
+2026-01-13 17:15:05 [parallel] Started generation: 5 samples, batch=5
+2026-01-13 17:15:18 [parallel] Completed: 5 samples in 12.9s
+2026-01-13 17:20:55 [parallel] Cache initialized v2_0 (reset)
+2026-01-13 17:20:55 [parallel] Started generation: 20 samples, batch=20
+2026-01-13 17:22:05 [parallel] Completed: 30 samples in 69.3s
+2026-01-13 17:26:05 [parallel] Cache initialized v3_0 (reset)
+2026-01-13 17:26:05 [parallel] Started generation: 20 samples, batch=20
+2026-01-13 17:27:10 [parallel] Completed: 30 samples in 65.3s
+2026-01-13 17:38:54 [direct_simple] Cache initialized v1_0 (reset)
+2026-01-13 17:38:55 [direct_simple] Started generation: 32 samples, batch=30
+2026-01-13 17:39:53 [direct_simple] Completed: 40 samples in 58.5s
+2026-01-13 17:39:54 [direct_simple] Cache initialized v1_1 (persistent) (inherited 40 used entities)
+2026-01-13 17:39:54 [direct_simple] Started generation: 32 samples, batch=30
+2026-01-13 17:41:09 [direct_simple] Completed: 40 samples in 74.9s
+2026-01-13 17:41:09 [direct_simple] Cache initialized v1_2 (persistent) (inherited 80 used entities)
+2026-01-13 17:41:09 [direct_simple] Started generation: 32 samples, batch=30
+2026-01-13 17:42:07 [direct_simple] Completed: 40 samples in 57.4s
+2026-01-13 17:42:08 [direct_simple] Cache initialized v1_3 (persistent) (inherited 120 used entities)
+2026-01-13 17:42:08 [direct_simple] Started generation: 32 samples, batch=30
+2026-01-13 17:43:08 [direct_simple] Completed: 40 samples in 60.9s
+2026-01-13 17:43:09 [direct_simple] Cache initialized v1_4 (persistent) (inherited 160 used entities)
+2026-01-13 17:43:09 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:44:04 [direct_simple] Completed: 39 samples in 54.5s
+2026-01-13 17:44:05 [direct_simple] Cache initialized v1_5 (persistent) (inherited 200 used entities)
+2026-01-13 17:44:05 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:47:02 [direct_simple] Completed: 40 samples in 177.2s
+2026-01-13 17:47:03 [direct_simple] Cache initialized v1_6 (persistent) (inherited 240 used entities)
+2026-01-13 17:47:03 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:47:41 [direct_simple] Completed: 31 samples in 38.7s
+2026-01-13 17:47:42 [direct_simple] Cache initialized v1_7 (persistent) (inherited 296 used entities)
+2026-01-13 17:47:42 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:48:29 [direct_simple] Completed: 40 samples in 47.4s
+2026-01-13 17:48:30 [direct_simple] Cache initialized v1_8 (persistent) (inherited 336 used entities)
+2026-01-13 17:48:30 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:49:12 [direct_simple] Completed: 41 samples in 42.0s
+2026-01-13 17:49:13 [direct_simple] Cache initialized v1_9 (persistent) (inherited 376 used entities)
+2026-01-13 17:49:13 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:50:06 [direct_simple] Completed: 40 samples in 53.1s
+2026-01-13 17:50:07 [direct_simple] Cache initialized v1_10 (persistent) (inherited 416 used entities)
+2026-01-13 17:50:07 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:51:06 [direct_simple] Completed: 40 samples in 59.2s
+2026-01-13 17:51:07 [direct_simple] Cache initialized v1_11 (persistent) (inherited 456 used entities)
+2026-01-13 17:51:07 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:52:15 [direct_simple] Completed: 40 samples in 68.1s
+2026-01-13 17:52:16 [direct_simple] Cache initialized v1_12 (persistent) (inherited 496 used entities)
+2026-01-13 17:52:16 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:53:29 [direct_simple] Completed: 40 samples in 73.3s
+2026-01-13 17:53:30 [direct_simple] Cache initialized v1_13 (persistent) (inherited 536 used entities)
+2026-01-13 17:53:30 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:54:22 [direct_simple] Completed: 40 samples in 52.1s
+2026-01-13 17:54:23 [direct_simple] Cache initialized v1_14 (persistent) (inherited 576 used entities)
+2026-01-13 17:54:23 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:55:33 [direct_simple] Completed: 36 samples in 70.4s
+2026-01-13 17:55:34 [direct_simple] Cache initialized v1_15 (persistent) (inherited 616 used entities)
+2026-01-13 17:55:34 [direct_simple] Started generation: 31 samples, batch=30
+2026-01-13 17:56:40 [direct_simple] Completed: 39 samples in 65.7s
+2026-01-13 17:56:41 [direct_hard] Cache initialized v1_0 (reset)
+2026-01-13 17:56:41 [direct_hard] Started generation: 42 samples, batch=30
+2026-01-13 17:58:13 [direct_hard] Completed: 41 samples in 92.8s
+2026-01-13 17:58:14 [direct_hard] Cache initialized v1_1 (persistent) (inherited 66 used entities)
+2026-01-13 17:58:14 [direct_hard] Started generation: 42 samples, batch=30
+2026-01-13 18:00:08 [direct_hard] Completed: 40 samples in 113.3s
+2026-01-13 18:00:08 [direct_hard] Cache initialized v1_2 (persistent) (inherited 132 used entities)
+2026-01-13 18:00:08 [direct_hard] Started generation: 42 samples, batch=30
+2026-01-13 18:01:45 [direct_hard] Completed: 42 samples in 96.8s
+2026-01-13 18:01:46 [direct_hard] Cache initialized v1_3 (persistent) (inherited 184 used entities)
+2026-01-13 18:01:46 [direct_hard] Started generation: 42 samples, batch=30
+2026-01-13 18:02:53 [direct_hard] Completed: 42 samples in 67.5s
+2026-01-14 10:22:50 [direct_hard] Cache initialized v1_4 (persistent) (inherited 236 used entities)
+2026-01-14 10:22:50 [direct_hard] Started generation: 1 samples, batch=1
+2026-01-14 10:22:54 [direct_hard] Completed: 1 samples in 3.4s
+2026-01-14 10:22:54 [direct_hard] Cache initialized v1_5 (persistent) (inherited 246 used entities)
+2026-01-14 10:22:54 [direct_hard] Started generation: 2 samples, batch=2
+2026-01-14 10:23:01 [direct_hard] Completed: 2 samples in 6.7s
+2026-01-14 10:23:02 [direct_hard] Cache initialized v1_6 (persistent) (inherited 258 used entities)
+2026-01-14 10:23:02 [direct_hard] Started generation: 42 samples, batch=30
+2026-01-14 10:24:01 [direct_hard] Completed: 40 samples in 58.8s
+2026-01-14 10:24:01 [direct_hard] Cache initialized v1_7 (persistent) (inherited 326 used entities)
+2026-01-14 10:24:01 [direct_hard] Started generation: 42 samples, batch=30
+2026-01-14 10:25:13 [direct_hard] Completed: 42 samples in 71.4s
+2026-01-14 10:25:14 [direct_hard] Cache initialized v1_8 (persistent) (inherited 378 used entities)
+2026-01-14 10:25:14 [direct_hard] Started generation: 42 samples, batch=30
+2026-01-14 10:26:09 [direct_hard] Completed: 42 samples in 55.0s
+2026-01-14 10:26:09 [direct_hard] Cache initialized v1_9 (persistent) (inherited 444 used entities)
+2026-01-14 10:26:09 [direct_hard] Started generation: 42 samples, batch=30
+2026-01-14 10:27:09 [direct_hard] Completed: 41 samples in 59.5s
+2026-01-14 10:27:10 [direct_hard] Cache initialized v1_10 (persistent) (inherited 512 used entities)
+2026-01-14 10:27:10 [direct_hard] Started generation: 41 samples, batch=30
+2026-01-14 10:28:20 [direct_hard] Completed: 40 samples in 70.4s
+2026-01-14 10:28:21 [direct_hard] Cache initialized v1_11 (persistent) (inherited 578 used entities)
+2026-01-14 10:28:21 [direct_hard] Started generation: 41 samples, batch=30
+2026-01-14 10:29:25 [direct_hard] Completed: 41 samples in 64.6s
+2026-01-14 10:29:26 [direct_hard] Cache initialized v1_12 (persistent) (inherited 644 used entities)
+2026-01-14 10:29:26 [direct_hard] Started generation: 41 samples, batch=30
+2026-01-14 10:30:21 [direct_hard] Completed: 41 samples in 55.1s
+2026-01-14 10:30:22 [direct_hard] Cache initialized v1_13 (persistent) (inherited 694 used entities)
+2026-01-14 10:30:22 [direct_hard] Started generation: 41 samples, batch=30
+2026-01-14 10:31:23 [direct_hard] Completed: 39 samples in 60.9s
+2026-01-14 10:31:24 [sequential] Cache initialized v1_0 (reset)
+2026-01-14 10:31:24 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:32:11 [sequential] Completed: 23 samples in 47.2s
+2026-01-14 10:32:12 [sequential] Cache initialized v1_1 (persistent) (inherited 32 used entities)
+2026-01-14 10:32:12 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:32:59 [sequential] Completed: 32 samples in 47.6s
+2026-01-14 10:33:00 [sequential] Cache initialized v1_2 (persistent) (inherited 64 used entities)
+2026-01-14 10:33:00 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:33:34 [sequential] Completed: 23 samples in 34.1s
+2026-01-14 10:33:35 [sequential] Cache initialized v1_3 (persistent) (inherited 96 used entities)
+2026-01-14 10:33:35 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:34:23 [sequential] Completed: 32 samples in 48.1s
+2026-01-14 10:34:24 [sequential] Cache initialized v1_4 (persistent) (inherited 128 used entities)
+2026-01-14 10:34:24 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:34:59 [sequential] Completed: 23 samples in 35.5s
+2026-01-14 10:35:00 [sequential] Cache initialized v1_5 (persistent) (inherited 160 used entities)
+2026-01-14 10:35:00 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:52:42 [sequential] Completed: 32 samples in 1062.2s
+2026-01-14 10:52:43 [sequential] Cache initialized v1_6 (persistent) (inherited 192 used entities)
+2026-01-14 10:52:43 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:53:55 [sequential] Completed: 32 samples in 72.1s
+2026-01-14 10:53:56 [sequential] Cache initialized v1_7 (persistent) (inherited 224 used entities)
+2026-01-14 10:53:56 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:54:53 [sequential] Completed: 32 samples in 57.5s
+2026-01-14 10:54:54 [sequential] Cache initialized v1_8 (persistent) (inherited 256 used entities)
+2026-01-14 10:54:54 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:55:53 [sequential] Completed: 32 samples in 58.4s
+2026-01-14 10:55:53 [sequential] Cache initialized v1_9 (persistent) (inherited 288 used entities)
+2026-01-14 10:55:53 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:56:59 [sequential] Completed: 32 samples in 65.6s
+2026-01-14 10:57:00 [sequential] Cache initialized v1_10 (persistent) (inherited 320 used entities)
+2026-01-14 10:57:00 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:57:41 [sequential] Completed: 22 samples in 41.5s
+2026-01-14 10:57:42 [sequential] Cache initialized v1_11 (persistent) (inherited 352 used entities)
+2026-01-14 10:57:42 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:58:12 [sequential] Completed: 31 samples in 29.5s
+2026-01-14 10:58:12 [sequential] Cache initialized v1_12 (persistent) (inherited 384 used entities)
+2026-01-14 10:58:12 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:58:42 [sequential] Completed: 23 samples in 29.9s
+2026-01-14 10:58:43 [sequential] Cache initialized v1_13 (persistent) (inherited 416 used entities)
+2026-01-14 10:58:43 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 10:59:29 [sequential] Completed: 32 samples in 46.1s
+2026-01-14 10:59:30 [sequential] Cache initialized v1_14 (persistent) (inherited 448 used entities)
+2026-01-14 10:59:30 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:00:31 [sequential] Completed: 32 samples in 61.6s
+2026-01-14 11:00:32 [sequential] Cache initialized v1_15 (persistent) (inherited 480 used entities)
+2026-01-14 11:00:32 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:01:35 [sequential] Completed: 32 samples in 63.2s
+2026-01-14 11:01:36 [sequential] Cache initialized v1_16 (persistent) (inherited 512 used entities)
+2026-01-14 11:01:36 [sequential] Started generation: 22 samples, batch=22
+2026-01-14 11:02:15 [sequential] Completed: 20 samples in 39.0s
+2026-01-14 11:02:16 [sequential] Cache initialized v1_17 (persistent) (inherited 544 used entities)
+2026-01-14 11:02:16 [sequential] Started generation: 22 samples, batch=22
+2026-01-14 11:03:27 [sequential] Completed: 32 samples in 71.1s
+2026-01-14 11:03:28 [sequential] Cache initialized v1_18 (persistent) (inherited 576 used entities)
+2026-01-14 11:03:28 [sequential] Started generation: 22 samples, batch=22
+2026-01-14 11:04:44 [sequential] Completed: 32 samples in 75.9s
+2026-01-14 11:04:44 [sequential] Cache initialized v1_19 (persistent) (inherited 608 used entities)
+2026-01-14 11:04:45 [sequential] Started generation: 22 samples, batch=22
+2026-01-14 11:05:27 [sequential] Completed: 21 samples in 42.7s
+2026-01-14 11:05:28 [sequential] Cache initialized v1_20 (persistent) (inherited 640 used entities)
+2026-01-14 11:05:28 [sequential] Started generation: 22 samples, batch=22
+2026-01-14 11:06:59 [sequential] Completed: 32 samples in 91.2s
+2026-01-14 11:07:00 [sequential] Cache initialized v1_21 (persistent) (inherited 672 used entities)
+2026-01-14 11:07:00 [sequential] Started generation: 22 samples, batch=22
+2026-01-14 11:07:48 [sequential] Completed: 32 samples in 47.8s
+2026-01-14 11:23:41 [direct_hard] Cache initialized v1_14 (persistent) (inherited 760 used entities)
+2026-01-14 11:23:42 [direct_hard] Started generation: 2 samples, batch=2
+2026-01-14 11:23:47 [direct_hard] Completed: 2 samples in 5.8s
+2026-01-14 11:23:48 [direct_hard] Cache initialized v1_15 (persistent) (inherited 772 used entities)
+2026-01-14 11:23:48 [direct_hard] Started generation: 1 samples, batch=1
+2026-01-14 11:23:51 [direct_hard] Completed: 1 samples in 3.1s
+2026-01-14 11:23:52 [direct_hard] Cache initialized v1_16 (persistent) (inherited 782 used entities)
+2026-01-14 11:23:52 [direct_hard] Started generation: 1 samples, batch=1
+2026-01-14 11:23:55 [direct_hard] Completed: 1 samples in 2.9s
+2026-01-14 11:23:56 [direct_hard] Cache initialized v1_17 (persistent) (inherited 792 used entities)
+2026-01-14 11:23:56 [direct_hard] Started generation: 2 samples, batch=2
+2026-01-14 11:24:00 [direct_hard] Completed: 2 samples in 4.7s
+2026-01-14 11:24:01 [sequential] Cache initialized v1_22 (persistent) (inherited 704 used entities)
+2026-01-14 11:24:01 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:25:04 [sequential] Completed: 31 samples in 62.8s
+2026-01-14 11:25:05 [sequential] Cache initialized v1_23 (persistent) (inherited 736 used entities)
+2026-01-14 11:25:05 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:25:59 [sequential] Completed: 32 samples in 53.8s
+2026-01-14 11:25:59 [sequential] Cache initialized v1_24 (persistent) (inherited 768 used entities)
+2026-01-14 11:25:59 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:26:58 [sequential] Completed: 32 samples in 59.1s
+2026-01-14 11:26:59 [sequential] Cache initialized v1_25 (persistent) (inherited 800 used entities)
+2026-01-14 11:26:59 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:27:53 [sequential] Completed: 32 samples in 53.5s
+2026-01-14 11:27:53 [sequential] Cache initialized v1_26 (persistent) (inherited 832 used entities)
+2026-01-14 11:27:53 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:28:50 [sequential] Completed: 32 samples in 57.1s
+2026-01-14 11:28:51 [sequential] Cache initialized v1_27 (persistent) (inherited 864 used entities)
+2026-01-14 11:28:51 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:29:45 [sequential] Completed: 32 samples in 53.3s
+2026-01-14 11:29:45 [sequential] Cache initialized v1_28 (persistent) (inherited 896 used entities)
+2026-01-14 11:29:45 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:30:28 [sequential] Completed: 21 samples in 42.5s
+2026-01-14 11:30:29 [sequential] Cache initialized v1_29 (persistent) (inherited 928 used entities)
+2026-01-14 11:30:29 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:31:26 [sequential] Completed: 32 samples in 56.8s
+2026-01-14 11:31:26 [sequential] Cache initialized v1_30 (persistent) (inherited 960 used entities)
+2026-01-14 11:31:26 [sequential] Started generation: 23 samples, batch=23
+2026-01-14 11:32:17 [sequential] Completed: 32 samples in 51.1s
+2026-01-14 11:32:18 [sequential] Cache initialized v1_31 (persistent) (inherited 992 used entities)
+2026-01-14 11:32:18 [sequential] Started generation: 22 samples, batch=22
+2026-01-14 11:33:11 [sequential] Completed: 19 samples in 53.2s
+2026-01-14 11:33:12 [sequential] Cache initialized v1_32 (persistent) (inherited 1024 used entities)
+2026-01-14 11:33:12 [sequential] Started generation: 22 samples, batch=22
+2026-01-14 11:34:01 [sequential] Completed: 32 samples in 49.0s
+2026-01-14 11:34:02 [sequential] Cache initialized v1_33 (persistent) (inherited 1056 used entities)
+2026-01-14 11:34:02 [sequential] Started generation: 22 samples, batch=22
+2026-01-14 11:34:50 [sequential] Completed: 32 samples in 48.4s
+2026-01-14 19:43:49 [sequential] Cache initialized v2_0 (reset)
+2026-01-14 19:43:49 [sequential] Started generation: 20 samples, batch=20
+2026-01-14 19:47:41 [sequential] Cache initialized v3_0 (reset)
+2026-01-14 19:47:41 [sequential] Started generation: 20 samples, batch=20
+2026-01-14 19:53:02 [sequential] Cache initialized v4_0 (reset)
+2026-01-14 19:53:02 [sequential] Started generation: 20 samples, batch=20
+2026-01-14 19:53:37 [sequential] Completed: 19 samples in 35.1s
+2026-01-14 19:53:51 [sequential] Cache initialized v5_0 (reset)
+2026-01-14 19:53:51 [sequential] Started generation: 20 samples, batch=20
+2026-01-14 19:54:42 [sequential] Completed: 23 samples in 50.8s
+2026-01-14 19:54:43 [sequential] Cache initialized v6_0 (reset)
+2026-01-14 19:54:43 [sequential] Started generation: 20 samples, batch=20
+2026-01-14 19:55:40 [sequential] Completed: 30 samples in 56.9s
+2026-01-14 19:55:41 [sequential] Cache initialized v7_0 (reset)
+2026-01-14 19:55:41 [sequential] Started generation: 20 samples, batch=20
+2026-01-14 19:56:37 [sequential] Completed: 30 samples in 56.6s
+2026-01-14 19:56:38 [sequential] Cache initialized v8_0 (reset)
+2026-01-14 19:56:38 [sequential] Started generation: 20 samples, batch=20
+2026-01-14 19:57:43 [sequential] Completed: 29 samples in 65.5s
+2026-01-14 19:57:44 [sequential] Cache initialized v9_0 (reset)
+2026-01-14 19:57:44 [sequential] Started generation: 20 samples, batch=20
+2026-01-14 19:58:26 [sequential] Completed: 19 samples in 41.8s
+2026-01-15 00:25:08 [sequential] Cache initialized v10_0 (reset)
+2026-01-15 00:25:08 [sequential] Started generation: 20 samples, batch=20
+2026-01-15 00:26:28 [sequential] Cache initialized v11_0 (reset)
+2026-01-15 00:26:28 [sequential] Started generation: 20 samples, batch=20
+2026-01-15 00:27:08 [sequential] Completed: 19 samples in 39.3s
+2026-01-15 00:27:14 [sequential] Cache initialized v12_0 (reset)
+2026-01-15 00:27:15 [sequential] Started generation: 20 samples, batch=20
+2026-01-15 00:27:45 [sequential] Completed: 20 samples in 30.8s
+2026-01-15 00:27:46 [sequential] Cache initialized v13_0 (reset)
+2026-01-15 00:27:46 [sequential] Started generation: 20 samples, batch=20
+2026-01-15 00:28:33 [sequential] Completed: 30 samples in 47.1s
+2026-01-15 00:28:34 [sequential] Cache initialized v14_0 (reset)
+2026-01-15 00:28:34 [sequential] Started generation: 20 samples, batch=20
+2026-01-15 00:29:12 [sequential] Completed: 19 samples in 38.1s

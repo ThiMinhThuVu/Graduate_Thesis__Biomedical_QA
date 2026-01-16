@@ -1,0 +1,10 @@
+entity_source: mesh
+generation:
+  batch_size: 20
+  num_samples: 20
+  question_type: sequential
+  reset_version: true
+  template_pattern: disease_symptom_combo
+llm:
+  model: gpt-4o-mini
+  temperature: 0.7

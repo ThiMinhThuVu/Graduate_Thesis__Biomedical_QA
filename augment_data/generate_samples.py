@@ -87,76 +87,76 @@ def get_entities(qtype: str, batch_size: int) -> list:
     return mesh.get_entities("C", needed // 2 + 5) + mesh.get_entities("D", needed // 2 + 5)
 
 
-def build_prompt(qtype: str, num: int, entities: list, cache: dict):
-    """Build prompt with starting entities and template info."""
+def build_prompt(qtype: str, num: int, entities: list, template_pattern: str):
+    """Build prompt for a SINGLE template pattern."""
     
     all_templates = TEMPLATES.get(qtype, [])
-    pattern_usage = cache.get("patterns", {})
     
-    # Sort templates by usage (least used first) for better balance
-    sorted_templates = sorted(all_templates, key=lambda t: pattern_usage.get(t["pattern"], 0))
+    # Find the specific template
+    template = None
+    for t in all_templates:
+        if t["pattern"] == template_pattern:
+            template = t
+            break
     
-    # Show all templates but highlight underused ones
-    templates_str = json.dumps(sorted_templates, indent=2)
+    if not template:
+        raise ValueError(f"Template '{template_pattern}' not found in '{qtype}'. Available: {[t['pattern'] for t in all_templates]}")
+    
+    # Build template info string
+    template_info = {
+        "pattern": template["pattern"],
+        "structure": template["structure"],
+    }
+    if "chain" in template:
+        template_info["chain"] = template["chain"]
+    if "branches" in template:
+        template_info["branches"] = template["branches"]
+    if "example" in template:
+        template_info["example"] = template["example"]
+    
+    template_str = json.dumps(template_info, indent=2)
     entities_str = "\n".join(f"- {e}" for e in entities[:num + 10])
     
     rules = {
-        "direct": "Use 1 entity as given, find answer from your biomedical knowledge",
-        "sequential": "Use 1 entity as chain start, complete reasoning chain with your knowledge",
-        "parallel": "Use 2 entities to compare, find what they share or differ"
+        "direct_simple": "Use 1 entity as given, find answer directly",
+        "direct_hard": "Use multiple entities as given, find answer directly (single-hop)",
+        "sequential": "Use 1 entity as START. Answer requires discovering IMPLICIT intermediate steps",
+        "parallel": "Use 2 entities to compare"
     }
 
-    # Build balance hint with usage stats
-    underused = [t["pattern"] for t in sorted_templates if pattern_usage.get(t["pattern"], 0) < 3]
-    overused = [t["pattern"] for t in sorted_templates if pattern_usage.get(t["pattern"], 0) > 5]
-    
-    balance_hint = ""
-    if underused:
-        balance_hint += f"\n⚠️ MUST USE these underused patterns: {underused[:4]}"
-    if overused:
-        balance_hint += f"\n⚠️ AVOID overused patterns: {overused[:3]}"
-    
-    # Calculate ideal distribution
-    ideal_per_pattern = max(1, num // len(all_templates))
-    balance_hint += f"\n📊 Target: ~{ideal_per_pattern} questions per pattern for balance"
+    system = f"""You are a biomedical QA expert. Generate {num} natural-sounding {qtype} questions following the template pattern.
 
-    system = f"""You are a biomedical QA expert creating diverse, natural-sounding questions.
-Your goal: Generate {num} unique {qtype} questions that sound like real exam or research questions.
-Key: Follow the REASONING STRUCTURE of templates, but REPHRASE with varied wording.
-IMPORTANT: Distribute questions EVENLY across ALL {len(all_templates)} template patterns."""
+Rules:
+- Questions should sound natural, like real biomedical exam questions
+- Follow the template's reasoning structure, but vary the wording (don't copy word-by-word)
+- Use the provided entities as starting points"""
 
-    user = f"""Generate exactly {num} {qtype} biomedical questions.
+    # Sequential-specific guidance (simplified)
+    sequential_hint = ""
+    if qtype == "sequential":
+        sequential_hint = """
 
-STARTING ENTITIES ({len(entities)}):
+SEQUENTIAL RULES:
+- Only the STARTING entity should be explicit in the question
+- Intermediate entities must be IMPLICIT (discovered through reasoning)
+- Example: "Which chromosome contains the gene that causes [DISEASE]?" 
+  → DISEASE (given) → GENE (implicit) → CHROMOSOME (answer)
+"""
+
+    user = f"""Generate {num} {qtype} biomedical questions using this template:
+
+TEMPLATE: {template_pattern}
+{template_str}
+
+ENTITIES TO USE:
 {entities_str}
 
 RULE: {rules[qtype]}
-- Each entity used ONCE only
-- Use DIFFERENT entities for each question
-- Answers come from your biomedical knowledge
+{sequential_hint}
+OUTPUT FORMAT (JSON array):
+[{{"question": "...", "short_answer": "1-3 words", "reasoning": "step-by-step", "topic": "Pathophysiology|Treatment|Diagnosis", "pattern": "{template_pattern}", "entities_used": ["given", "answer"]}}]
 
-TEMPLATES (follow the reasoning structure, but REPHRASE creatively):
-{templates_str}
-
-IMPORTANT - WORDING DIVERSITY:
-1. Follow the template's REASONING PATTERN (e.g., Gene → Disease → Treatment)
-2. But REPHRASE the question wording - don't copy template verbatim
-3. Vary sentence structure: "Which X...", "What Y...", "How does...", "Name the..."
-4. Use synonyms: "causes" → "leads to/results in/triggers/is responsible for"
-5. Vary specificity: sometimes add context like "in humans", "according to research"
-6. Mix question styles: direct, indirect, with clauses
-
-Example variations for "What drug treats [disease] caused by [gene] mutations?":
-- "Which medication is prescribed for the condition resulting from mutations in [gene]?"
-- "Name the therapeutic agent used to manage the disease linked to [gene] defects."
-- "What is the standard treatment for patients with [gene]-related [disease]?"
-
-{balance_hint}
-
-OUTPUT (JSON array of {num} objects):
-[{{"question": "...", "short_answer": "1-3 words", "reasoning": "step-by-step", "topic": "Pathophysiology|Treatment|Diagnosis|Prevention", "pattern": "template_pattern_name", "entities_used": ["given", "answer"]}}]
-
-Generate {num} diverse, natural-sounding questions:"""
+Generate {num} questions:"""
 
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]
 
@@ -208,11 +208,17 @@ def main():
     batch_size = gen.get("batch_size", 25)
     reset_version = gen.get("reset_version", False)
     
+    template_pattern = gen.get("template_pattern", None)
+    if not template_pattern:
+        print("ERROR: template_pattern not set in config.yml")
+        print("Run 'python augment_data/synthetic_data_generator.py' to see available patterns")
+        return
+    
     num_batches = ceil(num_samples / batch_size)
     
     versions = list_versions(qtype)
     print(f"\n{'='*50}")
-    print(f"GENERATING: {qtype.upper()}")
+    print(f"GENERATING: {qtype.upper()} / {template_pattern}")
     print(f"{'='*50}")
     print(f"Existing versions: {versions.get(qtype, [])}")
     
@@ -258,7 +264,7 @@ def main():
         
         # Get entities and build prompt
         entities = get_entities(qtype, batch)
-        prompt = build_prompt(qtype, batch, entities, cache)
+        prompt = build_prompt(qtype, batch, entities, template_pattern)
         
         # Save first prompt as sample
         if sample_prompt is None:
@@ -297,6 +303,11 @@ def main():
                         "data": r,
                         "status": "ok"
                     })
+                
+                # Stop if we've reached target
+                if len(samples) >= num_samples:
+                    print(f"  → Reached target ({len(samples)} ≥ {num_samples}), stopping.")
+                    break
             else:
                 print("✗")
         except Exception as e:
@@ -313,13 +324,14 @@ def main():
     
     # Save output - in generated/ subdirectory
     version = cache["version"]
-    output_file = f"{qtype}_v{version}.json"
+    output_file = f"{qtype}_{template_pattern}_v{version}.json"
     output = Path(__file__).parent / "output" / "generated" / output_file
     output.parent.mkdir(parents=True, exist_ok=True)
     
     result = {
         "meta": {
             "type": qtype,
+            "template_pattern": template_pattern,
             "version": version,
             "time": datetime.now().isoformat(),
             "elapsed": elapsed,
