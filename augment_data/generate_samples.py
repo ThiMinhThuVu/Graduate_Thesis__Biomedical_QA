@@ -126,10 +126,18 @@ def build_prompt(qtype: str, num: int, entities: list, template_pattern: str):
 
     system = f"""You are a biomedical QA expert. Generate {num} natural-sounding {qtype} questions following the template pattern.
 
-Rules:
-- Questions should sound natural, like real biomedical exam questions
-- Follow the template's reasoning structure, but vary the wording (don't copy word-by-word)
-- Use the provided entities as starting points"""
+CRITICAL - WORDING DIVERSITY RULES:
+1. DO NOT copy the template structure word-for-word. Use it ONLY as a conceptual guide.
+2. Each question MUST use different phrasing, sentence structure, and vocabulary.
+3. Vary question openings: mix "Which", "What", "How", "Can you identify", "Name the", "Identify", etc.
+4. Rephrase concepts creatively: "causes" → "leads to", "is responsible for", "triggers", "results in"
+5. Change sentence flow: active/passive voice, different clause orders, embedded questions
+6. The template shows the REASONING CHAIN - not the exact words to use!
+
+Other Rules:
+- Questions should sound natural, like real biomedical exam questions written by different professors
+- Use the provided entities as starting points
+- Avoid repetitive patterns across questions"""
 
     # Sequential-specific guidance (simplified)
     sequential_hint = ""
@@ -139,8 +147,12 @@ Rules:
 SEQUENTIAL RULES:
 - Only the STARTING entity should be explicit in the question
 - Intermediate entities must be IMPLICIT (discovered through reasoning)
-- Example: "Which chromosome contains the gene that causes [DISEASE]?" 
-  → DISEASE (given) → GENE (implicit) → CHROMOSOME (answer)
+- Example variations for the SAME reasoning chain:
+  • "Which chromosome contains the gene that causes [DISEASE]?"
+  • "On what chromosome can we find the gene responsible for [DISEASE]?"
+  • "The gene implicated in [DISEASE] is located on which chromosome?"
+  • "Identify the chromosomal location of the gene linked to [DISEASE]."
+  All follow: DISEASE (given) → GENE (implicit) → CHROMOSOME (answer)
 """
 
     user = f"""Generate {num} {qtype} biomedical questions using this template:
@@ -152,11 +164,16 @@ ENTITIES TO USE:
 {entities_str}
 
 RULE: {rules[qtype]}
+
+⚠️ DIVERSITY REQUIREMENT: Each question MUST have distinctly different wording. Do NOT repeat sentence patterns.
+- Use synonyms and alternative phrasings
+- Vary grammatical structures (questions, statements-turned-questions, embedded clauses)
+- The template is a CONCEPT GUIDE, not a fill-in-the-blank!
 {sequential_hint}
 OUTPUT FORMAT (JSON array):
 [{{"question": "...", "short_answer": "1-3 words", "reasoning": "step-by-step", "topic": "Pathophysiology|Treatment|Diagnosis", "pattern": "{template_pattern}", "entities_used": ["given", "answer"]}}]
 
-Generate {num} questions:"""
+Generate {num} diverse questions:"""
 
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]
 

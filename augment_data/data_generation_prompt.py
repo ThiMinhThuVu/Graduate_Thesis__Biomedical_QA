@@ -498,23 +498,28 @@ Generate a {question_type} multi-hop biomedical question based on the following 
 Provide output as a valid JSON object with these fields:
 {{
     "question": "The multi-hop biomedical question",
-    "short_answer": "1-3 word answer",
-    "accepted_synonyms": ["list", "of", "alternative", "valid", "answers"],
-    "reasoning": "Step-by-step reasoning showing the multi-hop logic",
-    "topic": "One of: Pathophysiology, Treatment, Diagnosis, Prevention",
-    "entities": ["list of biomedical entities involved"],
-    "validation": {{
-        "is_medically_relevant": true/false,
-        "is_factual": true/false,
-        "is_stable": true/false,
-        "requires_multihop": true/false,
-        "has_unique_answer": true/false,
-        "answer_format_valid": true/false
-    }}
-}}
+            "short_answer": "1-3 word answer",
+            "accepted_synonyms": ["list", "of", "alternative", "valid", "answers"],
+            "reasoning": "Step-by-step reasoning showing the multi-hop logic",
+            "topic": "One of: Pathophysiology, Treatment, Diagnosis, Prevention",
+            "entities": ["list of biomedical entities involved"],
+            "validation": {{
+                "is_medically_relevant": true/false,
+                "is_factual": true/false,
+                "is_stable": true/false,
+                "requires_multihop": true/false,
+                "has_unique_answer": true/false,
+                "answer_format_valid": true/false
+            }},
+            "diversity_score": "High-level description of how this question differs from standard phrasing"
+        }}
+
+## Diversity & Sequence Phrasing Strategy
+To ensure high-quality multi-hop data, vary the phrasing to emphasize the reasoning path:
 
 ## Constraints
-- MUST: Only output questions where ALL validation fields are true"""
+- MUST: Only output questions where ALL validation fields are true
+- MUST: Each question in a batch must use a different sentence structure."""
     
     return {
         "system": system_prompt,
