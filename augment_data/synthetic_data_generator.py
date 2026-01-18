@@ -382,7 +382,8 @@ if __name__ == "__main__":
             cache = init_cache(qtype, reset=True)
             print(f"Created new version: {qtype} v{cache['version']}")
         else:
-            print(f"Unknown type: {qtype}. Use: direct, sequential, parallel")
+            valid_types = ", ".join(TEMPLATES.keys())
+            print(f"Unknown type: {qtype}. Valid: {valid_types}")
             
     elif args[0] == "init" and len(args) > 1:
         qtype = args[1]

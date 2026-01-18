@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Batch generation script - generates equal samples per template with RESUME support.
 Usage: python batch_generate.py

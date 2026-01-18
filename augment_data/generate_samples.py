@@ -199,8 +199,9 @@ def main():
     # Get SINGLE question type
     qtype_config = gen.get("question_type")
     if not qtype_config or qtype_config not in TEMPLATES:
-        print("ERROR: Must specify a single 'question_type' in config.yml")
-        print("  Valid types: direct, sequential, parallel")
+        valid_types = ", ".join(TEMPLATES.keys())
+        print(f"ERROR: Invalid 'question_type' in config.yml: '{qtype_config}'")
+        print(f"  Valid types: {valid_types}")
         sys.exit(1)
     
     qtype = qtype_config
