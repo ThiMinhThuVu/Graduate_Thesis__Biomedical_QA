@@ -110,7 +110,7 @@ RELATION_PATHS = {
     ]
 }
 
-def create_relation_path_inference(entity, relation, sample_id, target_label):
+def create_relation_path_inference(entity, relation, sample_id, target_label, target_answer_type):
     output = {}
     n_path = 0
     if relation in RELATION_PATHS:
@@ -135,7 +135,8 @@ def create_relation_path_inference(entity, relation, sample_id, target_label):
                     "subquestion": sub0,
                     "search_keyword": s0,
                     "key_entity": [entity],
-                    "target_labels": target_label
+                    "target_entity_labels": target_label,
+                    "target_answer_type": target_answer_type
                 }, 
                 "1": {
                     "QIDX": sample_id,
@@ -143,7 +144,8 @@ def create_relation_path_inference(entity, relation, sample_id, target_label):
                     "subquestion": sub1,
                     "search_keyword": s1,
                     "key_entity": [],
-                    "target_labels": target_label
+                    "target_entity_labels": target_label,
+                    "target_answer_type": target_answer_type
                 }
             }
     else:
@@ -173,8 +175,9 @@ def decompose_question_sequential(question, sample_id, filepath, is_seq=True, da
         if type_q == "inference":
             key_entity = search_results[0]['key_entity']
             relation_entity = search_results[0]['key_relation']
-            target_label = search_results[0]['target_labels']
-            output, n_path = create_relation_path_inference(key_entity, relation_entity, sample_id, target_label)
+            target_label = search_results[0]['target_entity_labels']
+            target_answer_type = search_results[0].get('target_answer_type', 'other')
+            output, n_path = create_relation_path_inference(key_entity, relation_entity, sample_id, target_label, target_answer_type)
         else:
             n_path = 1
             output = {"0": {}}
@@ -200,7 +203,8 @@ def decompose_question_sequential(question, sample_id, filepath, is_seq=True, da
                     "subquestion": subquestion,
                     "search_keyword": sub['search_keyword'],
                     "key_entity": key_entity,
-                    "target_labels": sub["target_labels"]
+                    "target_entity_labels": sub["target_entity_labels"],
+                    "target_answer_type": sub.get("target_answer_type", "other")
                 }
                 
         save_json(output, filepath)

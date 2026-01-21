@@ -47,7 +47,7 @@ Generate ONLY 1 search query and identify relevant entities.
 - The query should be a distillation of the original complex question, focusing on essential keywords
 - The query MUST be concise, using specific keywords INCLUDING IMPORTANT BIOMEDICAL KEYWORDS, nouns, and technical terms critical to answering the question
 - The "target_entity_labels" should contain the entity type(s) that represent the expected answer or the core subject of the question
-- The "target_answer_type" should be a generic term selected ONLY from the question
+- The "target_answer_type" should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
 - The "key_entity" list should be specific. Exclude generic or abstract concepts (e.g., "medication", "drug", "treatment")
 
 ## Output Format (JSON)
@@ -179,21 +179,23 @@ The final output MUST be an array containing a single object with keys: "search_
                     1. The query should be a distillation of the original complex question, focusing on essential keywords, proper names, and the core relationship being asked about.
                     2. The query MUST be concise, using specific nouns and terms critical to answering the question, and should omit conversational parts like "Who is the".
                     3. The key entity is the main subject (person, place, thing, or concept) the question is about.
-                    4. "target_labels": A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
-                    5. **Adapt relation keywords based on the key entity's type.** This is crucial for avoiding ambiguity. For example:
+                    4. "target_entity_labels": A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
+                    5. "target_answer_type": Identify the specific requested answer type using the words from the question. Should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
+                    6. **Adapt relation keywords based on the key entity's type.** This is crucial for avoiding ambiguity. For example:
                     - For a **Person** (Human), use specific relations like: `country of citizenship`, `date of birth`, `occupation`,...
                     - For a **Creative Work** (Film, Album, Song), use relations like: `country of origin`, `publication date`, `director`, `producer`,...
                     - For a **Location or Organization** (Building, Museum, University, Mountain), use relations like: `country`, `inception`,...
 
-                    The final output MUST be a JSON array containing a single object. This object must contain two keys:
+                    The final output MUST be an array containing a single object. This object must contain keys:
                     - "search_keyword": The generated Google search query string.
                     - "key_entity": The primary subject extracted from the question.
-                    - "target_labels": choosing from [{labels_str}]
+                    - "target_entity_labels": choosing from [{labels_str}]
+                    - "target_answer_type": a generic term from the question
                     """
                 },
                 {
                     "role": "user",
-                    "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is a JSON array containing a single object with a "search_keyword" and "key_entity" field.
+                    "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is an array containing a single object with a "search_keyword" and "key_entity" field.
 
                     ---
                     **Example 1:**
@@ -205,7 +207,8 @@ The final output MUST be an array containing a single object with keys: "search_
                         {{
                             "search_keyword": "director 'Just Once A Great Lady (1957 Film)'",
                             "key_entity": "Just Once A Great Lady (1957 Film)",
-                            "target_labels": ["PERSON"]
+                            "target_entity_labels": ["PERSON"],
+                            "target_answer_type": "director"
                         }}
                     ]
                     ---
@@ -218,7 +221,8 @@ The final output MUST be an array containing a single object with keys: "search_
                         {{ 
                             "search_keyword": "'Carnival Of Souls' country of origin",
                             "key_entity": "Carnival Of Souls",
-                            "target_labels": ["GPE"]
+                            "target_entity_labels": ["GPE"],
+                            "target_answer_type": "country"
                         }}
                     ]
                     ---
@@ -231,7 +235,8 @@ The final output MUST be an array containing a single object with keys: "search_
                         {{
                             "search_keyword": "'Engal Aasan' publication date",
                             "key_entity": "Engal Aasan",
-                            "target_labels": ["DATE"]
+                            "target_entity_labels": ["DATE"],
+                            "target_answer_type": "date"
                         }}
                     ]
                     ---
@@ -244,7 +249,8 @@ The final output MUST be an array containing a single object with keys: "search_
                         {{
                             "search_keyword": "'Michelle Tong (Writer)' date of birth",
                             "key_entity": "Michelle Tong (Writer)",
-                            "target_labels": ["DATE"]
+                            "target_entity_labels": ["DATE"],
+                            "target_answer_type": "date"
                         }}
                     ]
                     ---
@@ -257,19 +263,21 @@ The final output MUST be an array containing a single object with keys: "search_
                         {{
                             "search_keyword": "'William C. White' country of citizenship",
                             "key_entity": "William C. White",
-                            "target_labels": ["NORP"]
+                            "target_entity_labels": ["NORP"],
+                            "target_answer_type": "nationality"
                         }}
                     ]
                     ---
                     Now, process the following:
                     Question: "{question}"
                     Task: Generate ONLY 1 effective Google search query that distills the core of the given question.
-                    Return a JSON array with "search_keyword", "key_entity", and "target_labels" (choosing from [{labels_str}]), following the format of the examples above.
+                    Return an array with "search_keyword", "key_entity", "target_entity_labels" (choosing from [{labels_str}]), and "target_answer_type", following the format of the examples above.
                     [
                         {{ 
                             "search_keyword": "...",
                             "key_entity": "...",
-                            "target_labels": "..."
+                            "target_entity_labels": "...",
+                            "target_answer_type": "..."
                         }}
                     ]
                     """
@@ -301,7 +309,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
         4.  **Sub-question Properties**: For each step in your decomposition:
             * **`subquestion`**: State the sub-question in clear, natural language, adhering to the self-contained principle and clarity of result.
             * **`search_keyword`**: Provide a concise, keyword-based search query that captures the essence of the sub-question. This should be a distilled version of the sub-question, focusing on the key biomedical terms and concepts necessary to retrieve relevant information. The `search_keyword` should be a direct, searchable query that can be used to find the answer to the sub-question. It should not include unnecessary words or context that does not contribute to the search.
-            * **`target_labels`**: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
+            * **`target_entity_labels`**: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
+            * **`target_answer_type`**: Identify the specific requested answer type using the words from the question. Should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
             * **`key_entity`**: Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question. Exclude generic or abstract concepts that are not useful for information retrieval (e.g., “medication”, “drug”, “treatment”).
         5.  **Efficiency and Necessity & Defining Question Types**:
             * Decompose the question into the **minimum number of steps absolutely necessary** to logically arrive at the final answer.
@@ -311,7 +320,7 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             * If the original complex question fits the single-step definition and can be directly and unambiguously answered by a single, well-formulated search query, provide a single-step decomposition.
             * Avoid creating sub-questions that are overly trivial, redundant, or that primarily restate parts of the original question that could be resolved within a more encompassing single or earlier step. Each step must isolate a *distinct and necessary piece of unknown information* crucial for the overall answer.
         6.  **Final Answer Derivation**: The final sub-question's purpose is to synthesize the information gathered from all preceding, answered sub-questions to directly and comprehensively answer the `Original Complex Question`. The decomposition should lead to a state where this final step is a clear derivation from the sub-answers.
-        7.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid JSON array of step objects.
+        7.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid array of step objects.
      
         Original Complex Question: '{question}'
         """
@@ -330,13 +339,15 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "Which gene encode enzyme can inactivate antithrombin?",
                 "search_keyword": "gene encode enzyme inactivate antithrombin",
-                "target_labels": ["GENE"],
+                "target_entity_labels": ["GENE"],
+                "target_answer_type": "gene",
                 "key_entity": ["antithrombin"]
             }},
             {{
                 "subquestion": "Which human chromosome contains that gene?",
                 "search_keyword": "human chromosome gene encode enzyme inactivate antithrombin",
-                "target_labels": ["BODY_PART"],
+                "target_entity_labels": ["BODY_PART"],
+                "target_answer_type": "chromosome",
                 "key_entity": []
             }}
         ]
@@ -350,13 +361,15 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "What is the primary organ of the human nervous system?",
                 "search_keyword": "primary organ human nervous system",
-                "target_labels": ["BODY_PART"],
+                "target_entity_labels": ["BODY_PART"],
+                "target_answer_type": "organ",
                 "key_entity": ["nervous system"]
             }},
             {{
                 "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
                 "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
-                "target_labels": ["CHEMICAL"],
+                "target_entity_labels": ["CHEMICAL"],
+                "target_answer_type": "other",
                 "key_entity": []
             }}
         ]
@@ -370,7 +383,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "Which syndrome is characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
                 "search_keyword": "syndrome flattened deformed vertebrae developmental delay lens coloboma",
-                "target_labels": ["DISEASE"],
+                "target_entity_labels": ["DISEASE"],
+                "target_answer_type": "syndrome",
                 "key_entity": [
                     "flattened vertebrae",
                     "deformed vertebrae",
@@ -381,7 +395,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "Which gene mutation is responsible for that syndrome?",
                 "search_keyword": "gene mutation syndrome flattened deformed vertebrae developmental delay lens coloboma",
-                "target_labels": ["GENE"],
+                "target_entity_labels": ["GENE"],
+                "target_answer_type": "gene mutation",
                 "key_entity": []
             }}
         ]
@@ -395,7 +410,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "Which pioneering institutions influenced John Langdon Down's work at Earlswood Asylum?",
                 "search_keyword": "pioneering institutions John Langdon Down Earlswood Asylum",
-                "target_labels": ["ORG"],
+                "target_entity_labels": ["ORG"],
+                "target_answer_type": "institution",
                 "key_entity": [
                     "John Langdon Down",
                     "Earlswood Asylum"
@@ -404,7 +420,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "In which London suburb was that pioneering institution located?",
                 "search_keyword": "London location pioneering institution John Langdon Down Earlswood Asylum",
-                "target_labels": ["GPE"],
+                "target_entity_labels": ["GPE"],
+                "target_answer_type": "suburb",
                 "key_entity": []
             }}
         ]
@@ -418,7 +435,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "Which gene is responsible for Carpenter syndrome?",
                 "search_keyword": "gene responsible Carpenter syndrome",
-                "target_labels": ["GENE"],
+                "target_entity_labels": ["GENE"],
+                "target_answer_type": "gene",
                 "key_entity": [
                     "Carpenter syndrome"
                 ]
@@ -426,7 +444,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             {{
                 "subquestion": "On which chromosome is that gene located?",
                 "search_keyword": "chromosome location gene",
-                "target_labels": ["BODY_PART"],
+                "target_entity_labels": ["BODY_PART"],
+                "target_answer_type": "chromosome",
                 "key_entity": []
             }}
         ]
@@ -434,7 +453,7 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
 
         Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
         Remember the strict formatting requirements:
-        1.  Entire output MUST be a valid JSON array.
+        1.  Entire output MUST be a valid array.
         2.  Ensure all sub-questions are self-contained and directly contribute to answering the original complex question, adhering to the guidelines for intermediate results.
 
         Here is the original complex question: "{question}"
@@ -457,7 +476,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                 *Sub-question Formulation*: A sub-question can be either fully self-contained or a template that depends on the answer from a previous step.  
                 When it's dependent, use a clear, general placeholder (e.g., "that director," "that person," "the entity found in the previous step") to indicate where the answer from the previous step will be programmatically inserted.
                 *Search Keyword Formulation*: Similarly, the search_keyword can be a complete, standalone query or a template (e.g., "director date of birth," "person spouse"). This template is designed to be combined with the result of a prior step to create the final, precise search query. This structure creates a powerful, multi-step reasoning plan.
-                *target_labels*: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
+                *target_entity_labels*: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
+                *target_answer_type*: Identify the specific requested answer type using the words from the question. Should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
             3.  **Logical Dependency**:
                 * The answer to one sub-question will often be used to formulate the subsequent sub-question.
                 * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question.
@@ -467,7 +487,7 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             5.  **Efficiency and Necessity**:
                 * Decompose the question into the **minimum number of steps absolutely necessary** to logically arrive at the final answer.
                 * If the original complex question can be directly and unambiguously answered by a single, well-formulated search query, provide a single-step decomposition.
-            6.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid JSON array of step objects.
+            6.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid array of step objects.
 
             Original Complex Question: '{question}'
             """
@@ -487,13 +507,15 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                     "subquestion": "What is the director of film Move (1970 Film)?",
                     "search_keyword": "director 'Move (1970 Film)'",
                     "key_entity": "Move (1970 Film)",
-                    "target_labels": ["PERSON"]
+                    "target_entity_labels": ["PERSON"],
+                    "target_answer_type": "director"
                 }},
                 {{
                     "subquestion": "What country of citizenship is that film director from?",
                     "search_keyword": "country of citizenship",
                     "key_entity": "",
-                    "target_labels": ["GPE"]
+                    "target_entity_labels": ["GPE"],
+                    "target_answer_type": "country"
                 }}
             ]
             ---
@@ -506,13 +528,15 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                     "subquestion": "Who directed the (1966 Film) 'Blindfold'?",
                     "search_keyword": "director 'Blindfold (1966 Film)'",
                     "key_entity": "Blindfold (1966 Film)",
-                    "target_labels": ["PERSON"]
+                    "target_entity_labels": ["PERSON"],
+                    "target_answer_type": "director"
                 }},
                 {{
                     "subquestion": "When was that person born?",
                     "search_keyword": "date of birth",
                     "key_entity": "",
-                    "target_labels": ["DATE"]
+                    "target_entity_labels": ["DATE"],
+                    "target_answer_type": "date"
                 }}
             ]
             ---
@@ -524,14 +548,16 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                 {{
                     "subquestion": "Who was the husband of Helen F. Holt?",
                     "search_keyword": "'Helen F. Holt' husband",
-                    ""key_entity": "Helen F. Holt",
-                    "target_labels": ["PERSON"]                    
+                    "key_entity": "Helen F. Holt",
+                    "target_entity_labels": ["PERSON"],
+                    "target_answer_type": "husband"
                 }},
                 {{
                     "subquestion": "What is the date of death of that person?",
                     "search_keyword": "date of death",
                     "key_entity": "",
-                    "target_labels": ["DATE"]
+                    "target_entity_labels": ["DATE"],
+                    "target_answer_type": "date"
                 }}
             ]
             ---
@@ -544,14 +570,16 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                     "subquestion": "Who was the director of the film 'The Right Of The Strongest'?",
                     "search_keyword": "director film 'The Right Of The Strongest'",
                     "key_entity": "The Right Of The Strongest",
-                    "target_labels": ["PERSON"]
+                    "target_entity_labels": ["PERSON"],
+                    "target_answer_type": "director"
                     
                 }},
                 {{
                     "subquestion": "Where did that person die?",
                     "search_keyword": "place of death",
                     "key_entity": "",
-                    "target_labels": ["GPE"]
+                    "target_entity_labels": ["GPE"],
+                    "target_answer_type": "place"
                 }}
             ]
             ---
@@ -564,13 +592,15 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                     "subquestion": "Who directed the 'Just Once A Great Lady (1957 Film)'?",
                     "search_keyword": "director 'Just Once A Great Lady (1957 Film)'",
                     "key_entity": "Just Once A Great Lady (1957 Film)",
-                    "target_labels": ["PERSON"]
+                    "target_entity_labels": ["PERSON"],
+                    "target_answer_type": "director"
                 }},
                 {{
                     "subquestion": "Who was the spouse of that person?",
                     "search_keyword": "spouse of",
                     "key_entity": "",
-                    "target_labels": ["PERSON"]
+                    "target_entity_labels": ["PERSON"],
+                    "target_answer_type": "spouse"
                 }}
             ]
             ---
@@ -582,19 +612,21 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                     "subquestion": "Who produced the 'My Friends Told Me About You'?",
                     "search_keyword": "producer 'My Friends Told Me About You'",
                     "key_entity": "My Friends Told Me About You",
-                    "target_labels": ["PERSON"]
+                    "target_entity_labels": ["PERSON"],
+                    "target_answer_type": "producer"
                 }},
                 {{
                     "subquestion": "When was that person born?",
                     "search_keyword": "date of birth",
                     "key_entity": "",
-                    "target_labels": ["DATE"]
+                    "target_entity_labels": ["DATE"],
+                    "target_answer_type": "date"
                 }}
             ]
             ---
             Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
             Remember the strict formatting requirements:
-            1.  The entire output MUST be a valid JSON array.
+            1.  The entire output MUST be a valid array.
             2.  Ensure all sub-questions are self-contained and directly contribute to answering the original complex question.
 
             Here is the original complex question: "{question}"
@@ -615,7 +647,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                     *When it's dependent, use a clear, general placeholder (e.g., "that director," "that person," "the entity found in the previous step", ...) to indicate where the answer from the previous step will be programmatically inserted.
                     * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question.
                     *Search Keyword Formulation*: Similarly, the search_keyword is a template (e.g., "director date of birth," "person spouse"). This template is designed to be combined with the result of a prior step to create the final, precise search query. This structure creates a powerful, multi-step reasoning plan.
-                    *target_labels*: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
+                    *target_entity_labels*: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
+                    *target_answer_type*: Identify the specific requested answer type using the words from the question. Should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
                     3.  **Logical Dependency**:
                     * The answer to one sub-question will be used to formulate the subsequent sub-question.
                     * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question.
@@ -643,13 +676,15 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                         "subquestion": "Who is the director of the movie Parasite?",
                         "search_keyword": “director of the movie 'Parasite'",
                         "key_entity": “Parasite",
-                        "target_labels": ["PERSON"]
+                        "target_entity_labels": ["PERSON"],
+                        "target_answer_type": "director"
                     }},
                     {{
                         "subquestion": "Which award did that director receive at the Oscars?",
                         "search_keyword": "award receive at Oscars",
                         "key_entity": "",
-                        "target_labels": ["WORK_OF_ART"]
+                        "target_entity_labels": ["WORK_OF_ART"],
+                        "target_answer_type": "award"
                     }}
                     ]
 
@@ -662,13 +697,15 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                         "subquestion": "Who was the father of Ada Lovelace (1815–1852)?",
                         "search_keyword": "Ada Lovelace (1815–1852) father",
                         "key_entity": "Ada Lovelace (1815–1852)",
-                        "target_labels": ["PERSON"]
+                        "target_entity_labels": ["PERSON"],
+                        "target_answer_type": "father"
                     }},
                     {{
                         "subquestion": "When is that person date of birth?",
                         "search_keyword": "date of birth",
                         "key_entity": "",
-                        "target_labels": ["DATE"]
+                        "target_entity_labels": ["DATE"],
+                        "target_answer_type": "date"
                     }}
                     ]
                     ---
@@ -680,13 +717,15 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                         "subquestion":"Who was the director of film Doctor Strange (2016 film)",
                         "search_keyword": "director of film 'Doctor Strange (2016 film)'",
                         "key_entity": "Doctor Strange (2016 film)",
-                        "target_labels": ["PERSON"]
+                        "target_entity_labels": ["PERSON"],
+                        "target_answer_type": "director"
                     }},
                     {{
                         "subquestion": "Where was director born?",
                         "search_keyword": "place of birth",
                         "key_entity": "",
-                        "target_labels": ["GPE"]
+                        "target_entity_labels": ["GPE"],
+                        "target_answer_type": "place"
                     }}
                     ]
                     ---
@@ -698,19 +737,21 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                         "subquestion":"Who was the director of film Web Of Suspicion?",
                         "search_keyword": "director of film 'Web Of Suspicion'",
                         "key_entity": "Web Of Suspicion",
-                        "target_labels": ["PERSON"]
+                        "target_entity_labels": ["PERSON"],
+                        "target_answer_type": "director"
                     }},
                     {{
                         "subquestion": "Which country of citizenship is that director from?",
                         "search_keyword": "country of citizenship",
                         "key_entity": "",
-                        "target_labels": ["GPE"]
+                        "target_entity_labels": ["GPE"],
+                        "target_answer_type": "country"
                     }}
                     ]
                     ---
                     Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
                     Remember the strict formatting requirements:
-                    1.  The entire output MUST be a valid JSON array.
+                    1.  The entire output MUST be a valid array.
                     2.  Ensure each sub-question logically follows the previous one and directly contributes to answering the original complex question.
 
                     Here is the original complex question: "{question}"
@@ -727,9 +768,10 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             1. Look for the main subject and object in the question.
             2. Identify the action or relationship being asked.
             3. Consider the context and any additional information provided.
-            4. target_labels: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
+            4. target_entity_labels: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
+            5. target_answer_type: Identify the specific requested answer type using the words from the question. Should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
 
-            The final output MUST be a JSON object. This object must contain keys: "key_entity", "key_relation", and "target_labels".
+            The final output MUST be a JSON object. This object must contain keys: "key_entity", "key_relation", "target_entity_labels", and "target_answer_type".
             """
             },
             {
@@ -747,7 +789,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                     "search_keyword": "'Giselda Volodi' sibling-in-law",
                     "key_entity": "Giselda Volodi",
                     "key_relation": "sibling-in-law",
-                    "target_labels": ["PERSON"]
+                    "target_entity_labels": ["PERSON"],
+                    "target_answer_type": "sibling-in-law"
                 }}
             ]
 
@@ -762,7 +805,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                     "search_keyword": "'Humphrey Of Montfort' maternal grandmother",
                     "key_entity": "Humphrey Of Montfort",
                     "key_relation": "maternal grandmother",
-                    "target_labels": ["PERSON"]
+                    "target_entity_labels": ["PERSON"],
+                    "target_answer_type": "grandmother"
                 }}
             ]
 
@@ -777,7 +821,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                     "search_keyword": "'Margaretta Taylor' aunt",
                     "key_entity": "Margaretta Taylor",
                     "key_relation": "aunt",
-                    "target_labels": ["PERSON"]
+                    "target_entity_labels": ["PERSON"],
+                    "target_answer_type": "aunt"
                 }}
             ]
 
@@ -792,7 +837,8 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
                     "search_keyword": "'Fred Diamond' field of work",
                     "key_entity": "Fred Diamond",
                     "key_relation": "field of work",
-                    "target_labels": ["ORG"]
+                    "target_entity_labels": ["ORG"],
+                    "target_answer_type": "field of work"
                 }}
             ]
 
@@ -802,14 +848,15 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
 
             Question: "{question}"
             
-            Return a JSON array containing a single object. This object must contain a single key "search_keyword", whose value is the Google search query string. For example:
+            Return an array containing a single object. This object must contain a single key "search_keyword", whose value is the Google search query string. For example:
 
             [
                 {{
                     "search_keyword": "...",
                     "key_entity": "...",
                     "key_relation": "...",
-                    "target_labels": "..."
+                    "target_entity_labels": "...",
+                    "target_answer_type": "..."
                 }}
             ]
             """

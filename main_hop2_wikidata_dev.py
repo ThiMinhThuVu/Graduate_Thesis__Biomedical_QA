@@ -102,7 +102,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword']
                     search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
-                    target_labels = item['target_labels']
+                    target_entity_labels = item['target_entity_labels']
+                    target_answer_type = item.get('target_answer_type', 'other')
                     
                     if step == "0":
                         key_entities = item['key_entity']   
@@ -125,7 +126,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     dict_ans[q_i][path_i][step]["question"] = subquestion
                     dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq
                     dict_ans[q_i][path_i][step]["key_entity"] = key_entities
-                    dict_ans[q_i][path_i][step]["target_labels"] = target_labels
+                    dict_ans[q_i][path_i][step]["target_entity_labels"] = target_entity_labels
+                    dict_ans[q_i][path_i][step]["target_answer_type"] = target_answer_type
                     dict_ans[q_i][path_i][step]["short_answer"] = short_ans
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["retrieval_information"] = retrieval_information
@@ -139,7 +141,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword'] 
                     search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
-                    target_labels = item['target_labels']
+                    target_entity_labels = item['target_entity_labels']
+                    target_answer_type = item.get('target_answer_type', 'other')
                     
                     if step == "0":
                         key_entities = item['key_entity']   
@@ -158,7 +161,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                         if current_retrieval == "" or current_retrieval == []:
                             break
                         
-                        evidence_ner = extract_entities_from_evidence(extractor_model, current_retrieval, target_labels, cache_filepath_retrieval, settings)  
+                        evidence_ner = extract_entities_from_evidence(extractor_model, current_retrieval, target_entity_labels, cache_filepath_retrieval, settings)  
                         norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
                         raw_answer = generate_answer(subquestion, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
                         
@@ -252,7 +255,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     dict_ans[q_i][path_i][step]["question"] = subquestion
                     dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq
                     dict_ans[q_i][path_i][step]["key_entity"] = key_entities
-                    dict_ans[q_i][path_i][step]["target_labels"] = target_labels
+                    dict_ans[q_i][path_i][step]["target_entity_labels"] = target_entity_labels
+                    dict_ans[q_i][path_i][step]["target_answer_type"] = target_answer_type
                     dict_ans[q_i][path_i][step]["short_answer"] = short_ans
                     dict_ans[q_i][path_i][step]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["candidate"] = candidates
@@ -270,7 +274,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                 dict_ans[q_i]['final_qi']["question"] = question
                 dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
                 dict_ans[q_i]['final_qi']["key_entity"] = key_entities
-                dict_ans[q_i]['final_qi']["target_labels"] = target_labels
+                dict_ans[q_i]['final_qi']["target_entity_labels"] = target_entity_labels
+                dict_ans[q_i]['final_qi']["target_answer_type"] = target_answer_type
                 dict_ans[q_i]['final_qi']["short_answer"] = short_ans
                 dict_ans[q_i]['final_qi']["long_answer"] = long_ans
                 dict_ans[q_i]['final_qi']["retrieval_information"] = retrieval_information
