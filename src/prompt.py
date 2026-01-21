@@ -44,126 +44,127 @@ Generate ONLY 1 search query and identify relevant entities.
 4. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
 
 ## Rules
-- The query should be a distillation of the original complex question, focusing on essential keywords
-- The query MUST be concise, using specific keywords INCLUDING IMPORTANT BIOMEDICAL KEYWORDS, nouns, and technical terms critical to answering the question
-- The "target_entity_labels" should contain the entity type(s) that represent the expected answer or the core subject of the question
-- The "target_answer_type" should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
+- The query should be a distillation of the original complex question
+- Focus on essential nouns and technical terms
 - The "key_entity" list should be specific. Exclude generic or abstract concepts (e.g., "medication", "drug", "treatment")
 
+## Constraints
+- MUST: Provide ONLY 1 search query
+- MUST: Use specific keywords INCLUDING IMPORTANT BIOMEDICAL KEYWORDS
+- MUST: Select target_entity_labels ONLY from: [{labels_str}]
+- MUST: Select target_answer_type as a term ONLY from the question.
+
 ## Output Format (JSON)
-The final output MUST be an array containing a single object with keys: "search_keyword", "target_entity_labels" (a list of strings), "target_answer_type", and "key_entity".
+[
+    {{
+        "search_keyword": "Google search query string",
+        "target_entity_labels": ["list of labels from allowed types"],
+        "target_answer_type": "type of answer from question",
+        "key_entity": ["list of specific entities from question"]
+    }}
+]
 """
             },
             {
         "role": "user",
         "content": f"""Here are 5 examples demonstrating the desired output format, which is an array containing a single object with a "search_keyword" field holding the Google search query string.
 
-    ---
-    **Example 1:**
+---
+**Example 1:**
 
-    Question: "Which gene containing a helicase domain is mutated in some patients with Smith-Fineman-Myers syndrome?"
+Question: "Which gene containing a helicase domain is mutated in some patients with Smith-Fineman-Myers syndrome?"
 
-    JSON desired output format:
-    [
-        {{ 
-            "search_keyword": "Smith-Fineman-Myers syndrome mutated gene helicase domain",
-            "target_entity_labels": ["GENE"],
-            "target_answer_type": "gene",
-            "key_entity": [
-                "Smith-Fineman-Myers syndrome",
-                "helicase domain"
-            ]
-        }}
-    ]
-    ---
-    **Example 2:**
+JSON desired output format:
+[
+    {{ 
+        "search_keyword": "Smith-Fineman-Myers syndrome mutated gene helicase domain",
+        "target_entity_labels": ["GENE"],
+        "target_answer_type": "gene",
+        "key_entity": [
+            "Smith-Fineman-Myers syndrome",
+            "helicase domain"
+        ]
+    }}
+]
+---
+**Example 2:**
 
-    Question: "Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
+Question: "Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
 
-    JSON desired output format:
-    [
-        {{ 
-            "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
-            "target_entity_labels": ["CHEMICAL"],
-            "target_answer_type": "other",
-            "key_entity": [
-                "lactate dehydrogenase tetramer",
-                "nervous system"
-            ]
-        }}
-    ]
-    ---
-    **Example 3:**
+JSON desired output format:
+[
+    {{ 
+        "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
+        "target_entity_labels": ["CHEMICAL"],
+        "target_answer_type": "tetramer",
+        "key_entity": [
+            "lactate dehydrogenase tetramer",
+            "nervous system"
+        ]
+    }}
+]
+---
+**Example 3:**
 
-    Question: "Which physician, along with Edvard Ehlers, is the Ehlers Danlos syndromes named after?"
+Question: "Which physician, along with Edvard Ehlers, is the Ehlers Danlos syndromes named after?"
 
-    JSON desired output format:
-    [
-        {{ 
-            "search_keyword": "Ehlers Danlos syndromes named after along with Edvard Ehlers",
-            "target_entity_labels": ["DISEASE"],
-            "target_answer_type": "physician",
-            "key_entity": [
-                "Ehlers Danlos syndromes",
-                "Edvard Ehlers"
-            ]            
-        }}
-    ]
-    ---
-    **Example 4:**
+JSON desired output format:
+[
+    {{ 
+        "search_keyword": "Ehlers Danlos syndromes named after along with Edvard Ehlers",
+        "target_entity_labels": ["DISEASE"],
+        "target_answer_type": "physician",
+        "key_entity": [
+            "Ehlers Danlos syndromes",
+            "Edvard Ehlers"
+        ]            
+    }}
+]
+---
+**Example 4:**
 
-    Question: "Which benign, autosomal recessive hyperbilirubinemia syndrome is caused by a mutation in the UGT1A1 gene on chromosome 2?"
+Question: "Which benign, autosomal recessive hyperbilirubinemia syndrome is caused by a mutation in the UGT1A1 gene on chromosome 2?"
 
-    JSON desired output format:
-    [
-        {{ 
-            "search_keyword": "benign autosomal recessive hyperbilirubinemia UGT1A1 gene mutation chromosome 2",
-            "target_entity_labels": ["DISEASE", "GENE"],
-            "target_answer_type": "syndrome",
-            "key_entity": [
-                "benign autosomal recessive hyperbilirubinemia",
-                "UGT1A1 gene",
-                "chromosome 2"
-            ]
-        }}
-    ]
-    ---
-    **Example 5:**
+JSON desired output format:
+[
+    {{ 
+        "search_keyword": "benign autosomal recessive hyperbilirubinemia UGT1A1 gene mutation chromosome 2",
+        "target_entity_labels": ["DISEASE", "GENE"],
+        "target_answer_type": "syndrome",
+        "key_entity": [
+            "benign autosomal recessive hyperbilirubinemia",
+            "UGT1A1 gene",
+            "chromosome 2"
+        ]
+    }}
+]
+---
+**Example 5:**
 
-    Question: "Which recognized type of osteochondritis is characterized by uneven vertebral growth and kyphosis that typically develops during adolescence?"
+Question: "Which recognized type of osteochondritis is characterized by uneven vertebral growth and kyphosis that typically develops during adolescence?"
 
-    JSON desired output format:
-    [
-        {{ 
-            "search_keyword": "osteochondritis type uneven vertebral growth kyphosis adolescence",
-            "target_entity_labels": ["DISEASE"],
-            "target_answer_type": "other",
-            "key_entity": [
-                "osteochondritis",
-                "vertebral growth",
-                "kyphosis",
-                "adolescence"
-            ]
-        }}
-    ]
-    ---
+JSON desired output format:
+[
+    {{ 
+        "search_keyword": "osteochondritis type uneven vertebral growth kyphosis adolescence",
+        "target_entity_labels": ["DISEASE"],
+        "target_answer_type": "type of osteochondritis",
+        "key_entity": [
+            "osteochondritis",
+            "vertebral growth",
+            "kyphosis",
+            "adolescence"
+        ]
+    }}
+]
+---
 
-    Now, process the following:
+## Information
+Question: "{question}"
 
-    Question: "{question}"
-
-    Task: Generate ONLY 1 effective Google search query that distills the core of the given question.
-
-    Return an array with "search_keyword" and "target_entity_labels" (choosing from [{labels_str}]). For example:
-    [
-        {{ 
-            "search_keyword": "...",
-            "target_entity_labels": [...],
-            "target_answer_type": "...",
-            "key_entity": [...]
-        }}
-    ]
-    """
+## Task
+Generate the search query and entity information for the provided question. Output as a JSON array.
+"""
             }
         ]
     elif dataset == 'wiki':
@@ -172,115 +173,122 @@ The final output MUST be an array containing a single object with keys: "search_
             messages = [
                 {
                     "role": "system",
-                    "content": f"""You are an expert in generating ONLY 1 concise and effective Google search query to help answer a complex question.
-                    Your goal is to provide a single, keyword-based query string that best targets the core information needed from the original question.
+                    "content": f"""## Role
+You are an expert in generating concise and effective Google search queries.
 
-                    Key principles for the single query:
-                    1. The query should be a distillation of the original complex question, focusing on essential keywords, proper names, and the core relationship being asked about.
-                    2. The query MUST be concise, using specific nouns and terms critical to answering the question, and should omit conversational parts like "Who is the".
-                    3. The key entity is the main subject (person, place, thing, or concept) the question is about.
-                    4. "target_entity_labels": A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
-                    5. "target_answer_type": Identify the specific requested answer type using the words from the question. Should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
-                    6. **Adapt relation keywords based on the key entity's type.** This is crucial for avoiding ambiguity. For example:
-                    - For a **Person** (Human), use specific relations like: `country of citizenship`, `date of birth`, `occupation`,...
-                    - For a **Creative Work** (Film, Album, Song), use relations like: `country of origin`, `publication date`, `director`, `producer`,...
-                    - For a **Location or Organization** (Building, Museum, University, Mountain), use relations like: `country`, `inception`,...
+## Task
+Generate ONLY 1 search query and identify relevant entities.
 
-                    The final output MUST be an array containing a single object. This object must contain keys:
-                    - "search_keyword": The generated Google search query string.
-                    - "key_entity": The primary subject extracted from the question.
-                    - "target_entity_labels": choosing from [{labels_str}]
-                    - "target_answer_type": a generic term from the question
+## Instructions
+1. Distill the original complex question into essential keywords and proper names
+2. Identify the primary subject (key_entity) extracting it from the question
+3. Identify target entity labels and answer type
+
+## Rules
+### Relation Keywords
+Adapt relation keywords based on the key entity's type to avoid ambiguity:
+- For a **Person**: use `country of citizenship`, `date of birth`, `occupation`
+- For a **Creative Work** (Film, Album, Song): use `country of origin`, `publication date`, `director`, `producer`
+- For a **Location or Organization**: use `country`, `inception`
+
+## Constraints
+- MUST: Provide ONLY 1 search query string
+- MUST: Omit conversational fillers (e.g., "Who is the")
+- MUST: Select target_entity_labels ONLY from: [{labels_str}]
+- MUST: Select target_answer_type as a term ONLY from the question.
+
+## Output Format (JSON)
+[
+    {{
+        "search_keyword": "generated Google search query string",
+        "key_entity": "primary subject extracted from the question",
+        "target_entity_labels": ["list of labels from allowed types"],
+        "target_answer_type": "type of answer from question"
+    }}
+]
                     """
                 },
                 {
                     "role": "user",
                     "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is an array containing a single object with a "search_keyword" and "key_entity" field.
 
-                    ---
-                    **Example 1:**
+---
+**Example 1:**
 
-                    Question: "Who directed the (1957 Film) 'Just Once A Great Lady'?"
+Question: "Who directed the (1957 Film) 'Just Once A Great Lady'?"
 
-                    JSON desired output format:
-                    [
-                        {{
-                            "search_keyword": "director 'Just Once A Great Lady (1957 Film)'",
-                            "key_entity": "Just Once A Great Lady (1957 Film)",
-                            "target_entity_labels": ["PERSON"],
-                            "target_answer_type": "director"
-                        }}
-                    ]
-                    ---
-                    **Example 2:**
+JSON desired output format:
+[
+    {{
+        "search_keyword": "director 'Just Once A Great Lady (1957 Film)'",
+        "key_entity": "Just Once A Great Lady (1957 Film)",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "director"
+    }}
+]
+---
+**Example 2:**
 
-                    Question: "In which country is the film Carnival Of Souls from?"
+Question: "In which country is the film Carnival Of Souls from?"
 
-                    JSON desired output format:
-                    [
-                        {{ 
-                            "search_keyword": "'Carnival Of Souls' country of origin",
-                            "key_entity": "Carnival Of Souls",
-                            "target_entity_labels": ["GPE"],
-                            "target_answer_type": "country"
-                        }}
-                    ]
-                    ---
-                    **Example 3:**
+JSON desired output format:
+[
+    {{ 
+        "search_keyword": "'Carnival Of Souls' country of origin",
+        "key_entity": "Carnival Of Souls",
+        "target_entity_labels": ["GPE"],
+        "target_answer_type": "country"
+    }}
+]
+---
+**Example 3:**
 
-                    Question: "When was the film Engal Aasan released?"
+Question: "When was the film Engal Aasan released?"
 
-                    JSON desired output format:
-                    [
-                        {{
-                            "search_keyword": "'Engal Aasan' publication date",
-                            "key_entity": "Engal Aasan",
-                            "target_entity_labels": ["DATE"],
-                            "target_answer_type": "date"
-                        }}
-                    ]
-                    ---
-                    **Example 4:**
+JSON desired output format:
+[
+    {{
+        "search_keyword": "'Engal Aasan' publication date",
+        "key_entity": "Engal Aasan",
+        "target_entity_labels": ["DATE"],
+        "target_answer_type": "date"
+    }}
+]
+---
+**Example 4:**
 
-                    Question: "When was Michelle Tong (Writer) born?"
+Question: "When was Michelle Tong (Writer) born?"
 
-                    JSON desired output format:
-                    [
-                        {{
-                            "search_keyword": "'Michelle Tong (Writer)' date of birth",
-                            "key_entity": "Michelle Tong (Writer)",
-                            "target_entity_labels": ["DATE"],
-                            "target_answer_type": "date"
-                        }}
-                    ]
-                    ---
-                    **Example 5:**
+JSON desired output format:
+[
+    {{
+        "search_keyword": "'Michelle Tong (Writer)' date of birth",
+        "key_entity": "Michelle Tong (Writer)",
+        "target_entity_labels": ["DATE"],
+        "target_answer_type": "date"
+    }}
+]
+---
+**Example 5:**
 
-                    Question: "What is the nationality of the writer William C. White?"
+Question: "What is the nationality of the writer William C. White?"
 
-                    JSON desired output format:
-                    [
-                        {{
-                            "search_keyword": "'William C. White' country of citizenship",
-                            "key_entity": "William C. White",
-                            "target_entity_labels": ["NORP"],
-                            "target_answer_type": "nationality"
-                        }}
-                    ]
-                    ---
-                    Now, process the following:
-                    Question: "{question}"
-                    Task: Generate ONLY 1 effective Google search query that distills the core of the given question.
-                    Return an array with "search_keyword", "key_entity", "target_entity_labels" (choosing from [{labels_str}]), and "target_answer_type", following the format of the examples above.
-                    [
-                        {{ 
-                            "search_keyword": "...",
-                            "key_entity": "...",
-                            "target_entity_labels": "...",
-                            "target_answer_type": "..."
-                        }}
-                    ]
-                    """
+JSON desired output format:
+[
+    {{
+        "search_keyword": "'William C. White' country of citizenship",
+        "key_entity": "William C. White",
+        "target_entity_labels": ["NORP"],
+        "target_answer_type": "nationality"
+    }}
+]
+---
+## Information
+Question: "{question}"
+
+## Task
+Generate the search query and entity information for the provided question. Output as a JSON array.
+"""
                 }
             ]
         else:
@@ -294,170 +302,188 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
         messages = [
             {
         "role": "system",
-        "content": f"""You are a highly specialized AI assistant, an expert in biomedical knowledge, skilled at decomposing complex biomedical questions into a sequence of simpler, interconnected natural language sub-questions. Your primary goal is to create a logical, step-by-step plan that faithfully represents the reasoning process to answer the main question.
+        "content": f"""## Role
+You are a highly specialized AI assistant and expert in biomedical knowledge.
 
-        **Core Instructions for Decomposition:**
+## Task
+Decompose complex biomedical questions into a sequence of simpler, interconnected natural language subquestions to create a logical reasoning plan.
 
-        0.  **Faithful Reasoning via Decomposition**: Your primary task is to externalize the reasoning process by breaking the `Original Complex Question` into a series of sub-questions. This decomposition itself forms the transparent and explainable path to the solution.
-        1.  **Step-by-Step Plan**: Generate a sequence of sub-questions.
-        2.  **Self-Contained and Searchable Sub-questions**: Each sub-question MUST be formulated so it is **self-contained and understandable in isolation**. This means it must include all necessary context from the original question or previous steps to be answerable by a standard search engine query *without needing to refer back to the original complex question or other sub-questions implicitly*. Sub-questions must be specific and unambiguous. For example, avoid pronouns or references that don't have explicit antecedents within the sub-question itself.
-            * **Prefer Single Entities:** When a sub-question's answer is used in a later step, it should ideally yield a **single, specific entity** (e.g., one specific gene name, one particular symptom, a single defined mechanism). This ensures that natural language references to this entity in subsequent steps (e.g., 'that gene', 'the identified symptom') are unambiguous.
-            * **Explicit List Handling:** If an intermediate step *must* produce a list of items because the nature of the query requires it (e.g., "What known [genes] are associated with X?"), any subsequent sub-question using that list **must explicitly state how to process it** (e.g., "Which of the [previously identified genes] are also [specific characteristic, e.g., 'expressed in the liver']?" or "What is the most frequently implicated [gene] from [the list found in the previous step] for [specific context]?").    * **Avoid Vague List Generation for Intermediate Steps:** Do not formulate intermediate sub-questions that ask for "some examples" or an undefined set of items if that result is intended to be fed precisely into a subsequent step, unless that subsequent step clearly outlines how to operate on such a potentially open-ended or non-exhaustive list.
-        3.  **Logical Dependency**:
-            * The answer to one sub-question will often be used to formulate the subsequent sub-question.
-            * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question. The sub-questions should form a logical chain where context flows naturally from one step to the next. Each sub-question should still aim to be as self-contained as possible by incorporating necessary context.
-        4.  **Sub-question Properties**: For each step in your decomposition:
-            * **`subquestion`**: State the sub-question in clear, natural language, adhering to the self-contained principle and clarity of result.
-            * **`search_keyword`**: Provide a concise, keyword-based search query that captures the essence of the sub-question. This should be a distilled version of the sub-question, focusing on the key biomedical terms and concepts necessary to retrieve relevant information. The `search_keyword` should be a direct, searchable query that can be used to find the answer to the sub-question. It should not include unnecessary words or context that does not contribute to the search.
-            * **`target_entity_labels`**: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
-            * **`target_answer_type`**: Identify the specific requested answer type using the words from the question. Should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
-            * **`key_entity`**: Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question. Exclude generic or abstract concepts that are not useful for information retrieval (e.g., “medication”, “drug”, “treatment”).
-        5.  **Efficiency and Necessity & Defining Question Types**:
-            * Decompose the question into the **minimum number of steps absolutely necessary** to logically arrive at the final answer.
-            * **Multi-step Question Definition**: A multi-step question typically involves a chain of information retrieval where intermediate entities or properties must be resolved sequentially. One piece of information is needed to find the next, eventually leading to the final answer.
-                * *Example of a multi-step question requiring decomposition*: "Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?" (This requires finding: 1. The enzyme, 2. The gene encoding it, 3. The chromosome containing that gene).
-            * **Single-step Question Definition**: A single-step question usually asks for a primary entity or concept (e.g., a "term", "name", "definition", "cause", "symptom") that can be identified directly from a set of given characteristics, even if those characteristics are numerous or include other named entities. If all characteristics defining the target entity can be reasonably combined into a single, direct, and searchable query that is likely to yield the answer, a single step is preferred. Avoid intermediate steps that merely define well-known qualifying characteristics/entities unless defining them is absolutely essential to resolve ambiguity in the main entity being sought or if the characteristic itself is the primary unknown blocking the answer. The goal is to find the most direct path to the answer.
-            * If the original complex question fits the single-step definition and can be directly and unambiguously answered by a single, well-formulated search query, provide a single-step decomposition.
-            * Avoid creating sub-questions that are overly trivial, redundant, or that primarily restate parts of the original question that could be resolved within a more encompassing single or earlier step. Each step must isolate a *distinct and necessary piece of unknown information* crucial for the overall answer.
-        6.  **Final Answer Derivation**: The final sub-question's purpose is to synthesize the information gathered from all preceding, answered sub-questions to directly and comprehensively answer the `Original Complex Question`. The decomposition should lead to a state where this final step is a clear derivation from the sub-answers.
-        7.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid array of step objects.
-     
-        Original Complex Question: '{question}'
-        """
+## Instructions
+1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions.
+2. **Sequential Planning**: Generate a sequence of subquestions where each step depends on the previous ones.
+3. **Synthesis**: The final subquestion must synthesize the gathered information to answer the original complex question.
+
+## Rules
+### subquestions
+- subquestions MUST be self-contained and understandable in isolation.
+- Include all necessary context from previous steps so they are searchable by standard query engines.
+- Avoid pronouns or vague references (e.g., use "the gene" or "the specific enzyme" instead of "it").
+- Prefer subquestions that yield single, specific entities.
+
+### List Handling
+- Avoid vague list generation for intermediate steps.
+- If a step produces a list, the next step must explicitly state how to process it (e.g., "Which of the identified genes is expressed in the liver?").
+
+### Efficiency
+- Decompose into the MINIMUM number of steps necessary.
+
+## Constraints
+- MUST: Use ONLY the following keys for each step: "subquestion", "search_keyword", "target_entity_labels", "target_answer_type", "key_entity".
+- MUST: Select target_entity_labels ONLY from: [{labels_str}].
+- MUST: Select target_answer_type as a term ONLY from the question.
+- MUST NOT: Include unnecessary words in search_keyword.
+
+## Output Format (JSON)
+[
+    {{
+        "subquestion": "Natural language subquestion",
+        "search_keyword": "Distilled, concise keyword-based query",
+        "target_entity_labels": ["list of labels from allowed types"],
+        "target_answer_type": "type of answer from question",
+        "key_entity": ["specific retrievable entities"]
+    }}
+]
+
+Original Complex Question: '{question}'
+"""
             },
             {
             "role": "user",
             "content": f"""
         Here are 5 examples demonstrating the desired JSON output format and decomposition logic:
 
-        ---
-        **Example 1:**
-        "Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?"
+---
+**Example 1:**
+"Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?"
 
-        JSON desired output format:
-        [
-            {{
-                "subquestion": "Which gene encode enzyme can inactivate antithrombin?",
-                "search_keyword": "gene encode enzyme inactivate antithrombin",
-                "target_entity_labels": ["GENE"],
-                "target_answer_type": "gene",
-                "key_entity": ["antithrombin"]
-            }},
-            {{
-                "subquestion": "Which human chromosome contains that gene?",
-                "search_keyword": "human chromosome gene encode enzyme inactivate antithrombin",
-                "target_entity_labels": ["BODY_PART"],
-                "target_answer_type": "chromosome",
-                "key_entity": []
-            }}
+JSON desired output format:
+[
+    {{
+        "subquestion": "Which gene encode enzyme can inactivate antithrombin?",
+        "search_keyword": "gene encode enzyme inactivate antithrombin",
+        "target_entity_labels": ["GENE"],
+        "target_answer_type": "gene",
+        "key_entity": ["antithrombin"]
+    }},
+    {{
+        "subquestion": "Which human chromosome contains that gene?",
+        "search_keyword": "human chromosome gene encode enzyme inactivate antithrombin",
+        "target_entity_labels": ["BODY_PART"],
+        "target_answer_type": "chromosome",
+        "key_entity": []
+    }}
+]
+
+---
+**Example 2:**
+"Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
+
+JSON desired output format:
+[
+    {{
+        "subquestion": "What is the primary organ of the human nervous system?",
+        "search_keyword": "primary organ human nervous system",
+        "target_entity_labels": ["BODY_PART"],
+        "target_answer_type": "organ",
+        "key_entity": ["nervous system"]
+    }},
+    {{
+        "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
+        "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
+        "target_entity_labels": ["CHEMICAL"],
+        "target_answer_type": "other",
+        "key_entity": []
+    }}
+]
+
+---
+**Example 3:**
+"Which gene mutation is responsible for the syndrome characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?"
+
+JSON desired output format:
+[
+    {{
+        "subquestion": "Which syndrome is characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
+        "search_keyword": "syndrome flattened deformed vertebrae developmental delay lens coloboma",
+        "target_entity_labels": ["DISEASE"],
+        "target_answer_type": "syndrome",
+        "key_entity": [
+            "flattened vertebrae",
+            "deformed vertebrae",
+            "developmental delay",
+            "lens coloboma"
         ]
+    }},
+    {{
+        "subquestion": "Which gene mutation is responsible for that syndrome?",
+        "search_keyword": "gene mutation syndrome flattened deformed vertebrae developmental delay lens coloboma",
+        "target_entity_labels": ["GENE"],
+        "target_answer_type": "gene mutation",
+        "key_entity": []
+    }}
+]
 
-        ---
-        **Example 2:**
-        "Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
+---
+**Example 4:**
+"Which London suburb was home to the pioneering institutions that influenced John Langdon Down's work at Earlswood Asylum?"
 
-        JSON desired output format:
-        [
-            {{
-                "subquestion": "What is the primary organ of the human nervous system?",
-                "search_keyword": "primary organ human nervous system",
-                "target_entity_labels": ["BODY_PART"],
-                "target_answer_type": "organ",
-                "key_entity": ["nervous system"]
-            }},
-            {{
-                "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
-                "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
-                "target_entity_labels": ["CHEMICAL"],
-                "target_answer_type": "other",
-                "key_entity": []
-            }}
+JSON desired output format:
+[
+    {{
+        "subquestion": "Which pioneering institutions influenced John Langdon Down's work at Earlswood Asylum?",
+        "search_keyword": "pioneering institutions John Langdon Down Earlswood Asylum",
+        "target_entity_labels": ["ORG"],
+        "target_answer_type": "institution",
+        "key_entity": [
+            "John Langdon Down",
+            "Earlswood Asylum"
         ]
+    }},
+    {{
+        "subquestion": "In which London suburb was that pioneering institution located?",
+        "search_keyword": "London location pioneering institution John Langdon Down Earlswood Asylum",
+        "target_entity_labels": ["GPE"],
+        "target_answer_type": "suburb",
+        "key_entity": []
+    }}
+]
 
-        ---
-        **Example 3:**
-        "Which gene mutation is responsible for the syndrome characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?"
+---
+**Example 5:**
+"On which chromosome is the gene responsible for Carpenter syndrome, which is associated with brachydactyly, located?"
 
-        JSON desired output format:
-        [
-            {{
-                "subquestion": "Which syndrome is characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
-                "search_keyword": "syndrome flattened deformed vertebrae developmental delay lens coloboma",
-                "target_entity_labels": ["DISEASE"],
-                "target_answer_type": "syndrome",
-                "key_entity": [
-                    "flattened vertebrae",
-                    "deformed vertebrae",
-                    "developmental delay",
-                    "lens coloboma"
-                ]
-            }},
-            {{
-                "subquestion": "Which gene mutation is responsible for that syndrome?",
-                "search_keyword": "gene mutation syndrome flattened deformed vertebrae developmental delay lens coloboma",
-                "target_entity_labels": ["GENE"],
-                "target_answer_type": "gene mutation",
-                "key_entity": []
-            }}
+JSON desired output format:
+[
+    {{
+        "subquestion": "Which gene is responsible for Carpenter syndrome?",
+        "search_keyword": "gene responsible Carpenter syndrome",
+        "target_entity_labels": ["GENE"],
+        "target_answer_type": "gene",
+        "key_entity": [
+            "Carpenter syndrome"
         ]
-
-        ---
-        **Example 4:**
-        "Which London suburb was home to the pioneering institutions that influenced John Langdon Down's work at Earlswood Asylum?"
-
-        JSON desired output format:
-        [
-            {{
-                "subquestion": "Which pioneering institutions influenced John Langdon Down's work at Earlswood Asylum?",
-                "search_keyword": "pioneering institutions John Langdon Down Earlswood Asylum",
-                "target_entity_labels": ["ORG"],
-                "target_answer_type": "institution",
-                "key_entity": [
-                    "John Langdon Down",
-                    "Earlswood Asylum"
-                ]
-            }},
-            {{
-                "subquestion": "In which London suburb was that pioneering institution located?",
-                "search_keyword": "London location pioneering institution John Langdon Down Earlswood Asylum",
-                "target_entity_labels": ["GPE"],
-                "target_answer_type": "suburb",
-                "key_entity": []
-            }}
-        ]
-
-        ---
-        **Example 5:**
-        "On which chromosome is the gene responsible for Carpenter syndrome, which is associated with brachydactyly, located?"
-
-        JSON desired output format:
-        [
-            {{
-                "subquestion": "Which gene is responsible for Carpenter syndrome?",
-                "search_keyword": "gene responsible Carpenter syndrome",
-                "target_entity_labels": ["GENE"],
-                "target_answer_type": "gene",
-                "key_entity": [
-                    "Carpenter syndrome"
-                ]
-            }},
-            {{
-                "subquestion": "On which chromosome is that gene located?",
-                "search_keyword": "chromosome location gene",
-                "target_entity_labels": ["BODY_PART"],
-                "target_answer_type": "chromosome",
-                "key_entity": []
-            }}
-        ]
+    }},
+    {{
+        "subquestion": "On which chromosome is that gene located?",
+        "search_keyword": "chromosome location gene",
+        "target_entity_labels": ["BODY_PART"],
+        "target_answer_type": "chromosome",
+        "key_entity": []
+    }}
+]
 
 
-        Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
-        Remember the strict formatting requirements:
-        1.  Entire output MUST be a valid array.
-        2.  Ensure all sub-questions are self-contained and directly contribute to answering the original complex question, adhering to the guidelines for intermediate results.
+Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
+Remember the strict formatting requirements:
+1.  Entire output MUST be a valid array.
+2.  Ensure all subquestions are self-contained and directly contribute to answering the original complex question, adhering to the guidelines for intermediate results.
 
-        Here is the original complex question: "{question}"
-        """
+## Information
+Original Complex Question: '{question}'
+
+## Task
+Decompose the question into subquestions following the examples and rules. Output in JSON format.
+"""
                 }
             ]
     elif dataset == "wiki":
@@ -466,400 +492,436 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             messages = [
                 {
                     "role": "system",
-                    "content": f"""You are a highly specialized AI assistant, an expert at decomposing complex questions into a sequence of simpler, interconnected natural language sub-questions. Your primary goal is to create a logical, step-by-step plan that faithfully represents the reasoning process to answer the main question.
+                    "content": f"""## Role
+You are a highly specialized AI assistant and expert at decomposing complex questions.
 
-            **Core Instructions for Decomposition:**
+## Task
+Decompose complex questions into a sequence of simpler, interconnected natural language subquestions to create a logical reasoning plan.
 
-            0.  **Faithful Reasoning via Decomposition**: Your primary task is to externalize the reasoning process by breaking the `Original Complex Question` into a series of sub-questions. This decomposition itself forms the transparent and explainable path to the solution.
-            1.  **Step-by-Step Plan**: Generate a sequence of sub-questions.
-            2.  **Dynamic and Dependent Sub-questions**: Your sub-questions form a dynamic plan that will be executed step-by-step, where the results of one step are used in the next.
-                *Sub-question Formulation*: A sub-question can be either fully self-contained or a template that depends on the answer from a previous step.  
-                When it's dependent, use a clear, general placeholder (e.g., "that director," "that person," "the entity found in the previous step") to indicate where the answer from the previous step will be programmatically inserted.
-                *Search Keyword Formulation*: Similarly, the search_keyword can be a complete, standalone query or a template (e.g., "director date of birth," "person spouse"). This template is designed to be combined with the result of a prior step to create the final, precise search query. This structure creates a powerful, multi-step reasoning plan.
-                *target_entity_labels*: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
-                *target_answer_type*: Identify the specific requested answer type using the words from the question. Should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
-            3.  **Logical Dependency**:
-                * The answer to one sub-question will often be used to formulate the subsequent sub-question.
-                * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question.
-            4.  **Sub-question Properties**: For each step in your decomposition:
-                * **`subquestion`**: State the sub-question in clear, natural language.
-                * **`search_keyword`**: Provide a concise, keyword-based search query that captures the essence of the sub-question.
-            5.  **Efficiency and Necessity**:
-                * Decompose the question into the **minimum number of steps absolutely necessary** to logically arrive at the final answer.
-                * If the original complex question can be directly and unambiguously answered by a single, well-formulated search query, provide a single-step decomposition.
-            6.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid array of step objects.
+## Instructions
+1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions.
+2. **Sequential Planning**: Generate a sequence of subquestions where each step depends on the previous ones.
+3. **Template Usage**: Use placeholders when a subquestion depends on a previous result (e.g., "that director", "that person").
 
-            Original Complex Question: '{question}'
-            """
+## Rules
+### Dynamic Planning
+- subquestions can be self-contained or templates.
+- Placeholders (e.g., "the entity found in the previous step") indicate where programmatic insertion will occur.
+- Search keywords can also be templates (e.g., "director date of birth") intended for combination with prior results.
+
+### Efficiency
+- Decompose into the MINIMUM number of steps necessary.
+
+## Constraints
+- MUST: Select target_entity_labels ONLY from: [{labels_str}].
+- MUST: Select target_answer_type as a term ONLY from the question.
+
+## Output Format (JSON)
+[
+    {{
+        "subquestion": "Natural language subquestion or template",
+        "search_keyword": "Keyword-based query or template",
+        "key_entity": "Specific entity name or empty for dependent steps",
+        "target_entity_labels": ["list of labels from allowed types"],
+        "target_answer_type": "type of answer from question"
+    }}
+]
+
+Original Complex Question: '{question}'
+"""
                 },
                 {
                     "role": "user",
-                    "content": f"""
-            Here are 6 examples demonstrating the desired JSON output format and decomposition logic.
+                    "content": f"""Here are 6 examples demonstrating the desired JSON output format and decomposition logic.
 
-            ---
-            **Example 1:**
-            "What is the country of the director of film Move (1970 Film)"
+---
+**Example 1:**
+"What is the country of the director of film Move (1970 Film)"
 
-            JSON desired output format:
-            [
-                {{
-                    "subquestion": "What is the director of film Move (1970 Film)?",
-                    "search_keyword": "director 'Move (1970 Film)'",
-                    "key_entity": "Move (1970 Film)",
-                    "target_entity_labels": ["PERSON"],
-                    "target_answer_type": "director"
-                }},
-                {{
-                    "subquestion": "What country of citizenship is that film director from?",
-                    "search_keyword": "country of citizenship",
-                    "key_entity": "",
-                    "target_entity_labels": ["GPE"],
-                    "target_answer_type": "country"
-                }}
-            ]
-            ---
-            **Example 2:**
-            "When was the director of film Blindfold (1966 Film) born?"
+JSON desired output format:
+[
+    {{
+        "subquestion": "What is the director of film Move (1970 Film)?",
+        "search_keyword": "director 'Move (1970 Film)'",
+        "key_entity": "Move (1970 Film)",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "director"
+    }},
+    {{
+        "subquestion": "What country of citizenship is that film director from?",
+        "search_keyword": "country of citizenship",
+        "key_entity": "",
+        "target_entity_labels": ["GPE"],
+        "target_answer_type": "country"
+    }}
+]
+---
+**Example 2:**
+"When was the director of film Blindfold (1966 Film) born?"
 
-            JSON desired output format:
-            [
-                {{
-                    "subquestion": "Who directed the (1966 Film) 'Blindfold'?",
-                    "search_keyword": "director 'Blindfold (1966 Film)'",
-                    "key_entity": "Blindfold (1966 Film)",
-                    "target_entity_labels": ["PERSON"],
-                    "target_answer_type": "director"
-                }},
-                {{
-                    "subquestion": "When was that person born?",
-                    "search_keyword": "date of birth",
-                    "key_entity": "",
-                    "target_entity_labels": ["DATE"],
-                    "target_answer_type": "date"
-                }}
-            ]
-            ---
-            **Example 3:**
-            "What is the date of death of Helen F. Holt's husband?"
+JSON desired output format:
+[
+    {{
+        "subquestion": "Who directed the (1966 Film) 'Blindfold'?",
+        "search_keyword": "director 'Blindfold (1966 Film)'",
+        "key_entity": "Blindfold (1966 Film)",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "director"
+    }},
+    {{
+        "subquestion": "When was that person born?",
+        "search_keyword": "date of birth",
+        "key_entity": "",
+        "target_entity_labels": ["DATE"],
+        "target_answer_type": "date"
+    }}
+]
+---
+**Example 3:**
+"What is the date of death of Helen F. Holt's husband?"
 
-            JSON desired output format:
-            [
-                {{
-                    "subquestion": "Who was the husband of Helen F. Holt?",
-                    "search_keyword": "'Helen F. Holt' husband",
-                    "key_entity": "Helen F. Holt",
-                    "target_entity_labels": ["PERSON"],
-                    "target_answer_type": "husband"
-                }},
-                {{
-                    "subquestion": "What is the date of death of that person?",
-                    "search_keyword": "date of death",
-                    "key_entity": "",
-                    "target_entity_labels": ["DATE"],
-                    "target_answer_type": "date"
-                }}
-            ]
-            ---
-            **Example 4:**
-            "Where did the director of film The Right Of The Strongest die?"
+JSON desired output format:
+[
+    {{
+        "subquestion": "Who was the husband of Helen F. Holt?",
+        "search_keyword": "'Helen F. Holt' husband",
+        "key_entity": "Helen F. Holt",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "husband"
+    }},
+    {{
+        "subquestion": "What is the date of death of that person?",
+        "search_keyword": "date of death",
+        "key_entity": "",
+        "target_entity_labels": ["DATE"],
+        "target_answer_type": "date"
+    }}
+]
+---
+**Example 4:**
+"Where did the director of film The Right Of The Strongest die?"
 
-            JSON desired output format:
-            [
-                {{
-                    "subquestion": "Who was the director of the film 'The Right Of The Strongest'?",
-                    "search_keyword": "director film 'The Right Of The Strongest'",
-                    "key_entity": "The Right Of The Strongest",
-                    "target_entity_labels": ["PERSON"],
-                    "target_answer_type": "director"
-                    
-                }},
-                {{
-                    "subquestion": "Where did that person die?",
-                    "search_keyword": "place of death",
-                    "key_entity": "",
-                    "target_entity_labels": ["GPE"],
-                    "target_answer_type": "place"
-                }}
-            ]
-            ---
-            **Example 5:**
-            "Who is the spouse of the director of film Just Once A Great Lady (1957 Film)?"
+JSON desired output format:
+[
+    {{
+        "subquestion": "Who was the director of the film 'The Right Of The Strongest'?",
+        "search_keyword": "director film 'The Right Of The Strongest'",
+        "key_entity": "The Right Of The Strongest",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "director"
+        
+    }},
+    {{
+        "subquestion": "Where did that person die?",
+        "search_keyword": "place of death",
+        "key_entity": "",
+        "target_entity_labels": ["GPE"],
+        "target_answer_type": "place"
+    }}
+]
+---
+**Example 5:**
+"Who is the spouse of the director of film Just Once A Great Lady (1957 Film)?"
 
-            JSON desired output format:
-            [
-                {{
-                    "subquestion": "Who directed the 'Just Once A Great Lady (1957 Film)'?",
-                    "search_keyword": "director 'Just Once A Great Lady (1957 Film)'",
-                    "key_entity": "Just Once A Great Lady (1957 Film)",
-                    "target_entity_labels": ["PERSON"],
-                    "target_answer_type": "director"
-                }},
-                {{
-                    "subquestion": "Who was the spouse of that person?",
-                    "search_keyword": "spouse of",
-                    "key_entity": "",
-                    "target_entity_labels": ["PERSON"],
-                    "target_answer_type": "spouse"
-                }}
-            ]
-            ---
-            **Example 6:**
-            "When was the producer of "My Friends Told Me About You" born?"
-            JSON desired output format:
-            [
-                {{
-                    "subquestion": "Who produced the 'My Friends Told Me About You'?",
-                    "search_keyword": "producer 'My Friends Told Me About You'",
-                    "key_entity": "My Friends Told Me About You",
-                    "target_entity_labels": ["PERSON"],
-                    "target_answer_type": "producer"
-                }},
-                {{
-                    "subquestion": "When was that person born?",
-                    "search_keyword": "date of birth",
-                    "key_entity": "",
-                    "target_entity_labels": ["DATE"],
-                    "target_answer_type": "date"
-                }}
-            ]
-            ---
-            Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
-            Remember the strict formatting requirements:
-            1.  The entire output MUST be a valid array.
-            2.  Ensure all sub-questions are self-contained and directly contribute to answering the original complex question.
+JSON desired output format:
+[
+    {{
+        "subquestion": "Who directed the 'Just Once A Great Lady (1957 Film)'?",
+        "search_keyword": "director 'Just Once A Great Lady (1957 Film)'",
+        "key_entity": "Just Once A Great Lady (1957 Film)",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "director"
+    }},
+    {{
+        "subquestion": "Who was the spouse of that person?",
+        "search_keyword": "spouse of",
+        "key_entity": "",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "spouse"
+    }}
+]
+---
+**Example 6:**
+"When was the producer of "My Friends Told Me About You" born?"
+JSON desired output format:
+[
+    {{
+        "subquestion": "Who produced the 'My Friends Told Me About You'?",
+        "search_keyword": "producer 'My Friends Told Me About You'",
+        "key_entity": "My Friends Told Me About You",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "producer"
+    }},
+    {{
+        "subquestion": "When was that person born?",
+        "search_keyword": "date of birth",
+        "key_entity": "",
+        "target_entity_labels": ["DATE"],
+        "target_answer_type": "date"
+    }}
+]
+---
+Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
+Remember the strict formatting requirements:
+1.  The entire output MUST be a valid array.
+2.  Ensure all subquestions are self-contained and directly contribute to answering the original complex question.
 
-            Here is the original complex question: "{question}"
-            """
+## Information
+Original Complex Question: '{question}'
+
+## Task
+Decompose the question into subquestions following the examples and rules. Output in JSON format.
+"""
                 }
             ]
         elif type_q == "compositional":
             messages = [
                 {
                     "role": "system",
-                    "content": f"""You are a highly specialized AI assistant. Your expertise is in analyzing questions that contain hidden sequential logic, particularly those involving relationships within social or organizational structures (e.g., family trees, corporate hierarchies). Your primary goal is to decompose these complex questions into a sequence of simpler, interconnected natural language sub-questions, creating a logical, step-by-step plan that reveals the reasoning process required to find the answer.
-                
-                    **Core Instructions for Decomposition:**
-                    0.  **Faithful Reasoning via Decomposition**: Your primary task is to externalize the reasoning process by breaking the `Original Complex Question` into a series of sub-questions. This decomposition itself forms the transparent and explainable path to the solution.
-                    1.  **Step-by-Step Plan**: Generate a sequence of sub-questions.
-                    2.  **Dynamic and Dependent Sub-questions**: Your sub-questions form a dynamic plan that will be executed step-by-step, where the results of one step are used in the next.
-                    *Sub-question Formulation*: A sub-question must be a template that depends on the answer from a previous step.
-                    *When it's dependent, use a clear, general placeholder (e.g., "that director," "that person," "the entity found in the previous step", ...) to indicate where the answer from the previous step will be programmatically inserted.
-                    * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question.
-                    *Search Keyword Formulation*: Similarly, the search_keyword is a template (e.g., "director date of birth," "person spouse"). This template is designed to be combined with the result of a prior step to create the final, precise search query. This structure creates a powerful, multi-step reasoning plan.
-                    *target_entity_labels*: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
-                    *target_answer_type*: Identify the specific requested answer type using the words from the question. Should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
-                    3.  **Logical Dependency**:
-                    * The answer to one sub-question will be used to formulate the subsequent sub-question.
-                    * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question.
-                    4.  **Sub-question Properties**: For each step in your decomposition:
-                    * **`subquestion`**: State the sub-question in clear, natural language.
-                    * **`search_keyword`**: Provide a concise, keyword-based search query that captures the essence of the sub-question.
-                    5.  **Efficiency and Necessity**:
-                    * Decompose the question into the **minimum number of steps absolutely necessary** to logically arrive at the final answer.
-                    * If the original complex question can be directly and unambiguously answered by a single, well-formulated search query, provide a single-step decomposition.
-                    6.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid array of step objects.
+                    "content": f"""## Role
+You are a highly specialized AI assistant and expert in analyzing complex questions with hidden sequential logic, particularly in social and organizational structures (e.g., family trees, corporate hierarchies).
 
-                    Original Complex Question: '{question}'
-                    """
+## Task
+Decompose complex questions into a sequence of simpler, interconnected natural language subquestions to create a logical reasoning plan.
+
+## Instructions
+1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions.
+2. **Sequential Planning**: Generate a sequence of subquestions where each step depends on the previous ones.
+3. **Template Usage**: Use placeholders when a subquestion depends on a previous result (e.g., "that director", "that person").
+
+## Rules
+### Dynamic Planning
+- subquestions must be templates that depend on prior answers.
+- Use clear placeholders (e.g., "the entity found in the previous step") for programmatic insertion.
+- Search keywords are also templates designed to be combined with prior results.
+
+### Efficiency
+- Decompose into the MINIMUM number of steps necessary.
+- If a question can be answered in a single step, do not decompose it.
+
+## Constraints
+- MUST: Select target_entity_labels ONLY from: [{labels_str}].
+- MUST: Select target_answer_type as a term ONLY from the question.
+
+## Output Format (JSON)
+[
+    {{
+        "subquestion": "Natural language subquestion or template",
+        "search_keyword": "Keyword-based query or template",
+        "key_entity": "Specific entity name or empty for dependent steps",
+        "target_entity_labels": ["list of labels from allowed types"],
+        "target_answer_type": "type of answer from question"
+    }}
+]
+
+Original Complex Question: '{question}'
+"""
                     },
                     {
                         "role": "user",
-                        "content": f"""
-                    Here are 4 examples demonstrating the desired JSON output format and decomposition logic.
-                    ---
-                    **Example 1:**
-                    "Which award did the director of the movie Parasite receive at the Oscars?"
-                    JSON desired output format:
-                    [
-                    {{
-                        "subquestion": "Who is the director of the movie Parasite?",
-                        "search_keyword": “director of the movie 'Parasite'",
-                        "key_entity": “Parasite",
-                        "target_entity_labels": ["PERSON"],
-                        "target_answer_type": "director"
-                    }},
-                    {{
-                        "subquestion": "Which award did that director receive at the Oscars?",
-                        "search_keyword": "award receive at Oscars",
-                        "key_entity": "",
-                        "target_entity_labels": ["WORK_OF_ART"],
-                        "target_answer_type": "award"
-                    }}
-                    ]
+                        "content": f"""Here are 4 examples demonstrating the desired JSON output format and decomposition logic.
+---
+**Example 1:**
+"Which award did the director of the movie Parasite receive at the Oscars?"
+JSON desired output format:
+[
+{{
+    "subquestion": "Who is the director of the movie Parasite?",
+    "search_keyword": “director of the movie 'Parasite'",
+    "key_entity": “Parasite",
+    "target_entity_labels": ["PERSON"],
+    "target_answer_type": "director"
+}},
+{{
+    "subquestion": "Which award did that director receive at the Oscars?",
+    "search_keyword": "award receive at Oscars",
+    "key_entity": "",
+    "target_entity_labels": ["WORK_OF_ART"],
+    "target_answer_type": "award"
+}}
+]
 
-                    ---
-                    **Example 2:**
-                    When is Ada Lovelace (1815–1852)'s father birthday?
-                    JSON desired output format:
-                    [
-                    {{
-                        "subquestion": "Who was the father of Ada Lovelace (1815–1852)?",
-                        "search_keyword": "Ada Lovelace (1815–1852) father",
-                        "key_entity": "Ada Lovelace (1815–1852)",
-                        "target_entity_labels": ["PERSON"],
-                        "target_answer_type": "father"
-                    }},
-                    {{
-                        "subquestion": "When is that person date of birth?",
-                        "search_keyword": "date of birth",
-                        "key_entity": "",
-                        "target_entity_labels": ["DATE"],
-                        "target_answer_type": "date"
-                    }}
-                    ]
-                    ---
-                    **Example 3:**
-                    "Where was the director of film Doctor Strange (2016 film) born"
-                    JSON desired output format:
-                    [
-                    {{
-                        "subquestion":"Who was the director of film Doctor Strange (2016 film)",
-                        "search_keyword": "director of film 'Doctor Strange (2016 film)'",
-                        "key_entity": "Doctor Strange (2016 film)",
-                        "target_entity_labels": ["PERSON"],
-                        "target_answer_type": "director"
-                    }},
-                    {{
-                        "subquestion": "Where was director born?",
-                        "search_keyword": "place of birth",
-                        "key_entity": "",
-                        "target_entity_labels": ["GPE"],
-                        "target_answer_type": "place"
-                    }}
-                    ]
-                    ---
-                    **Example 4:**
-                    "Which country the director of film Web Of Suspicion is from?"
-                    JSON desired output format:
-                    [
-                    {{
-                        "subquestion":"Who was the director of film Web Of Suspicion?",
-                        "search_keyword": "director of film 'Web Of Suspicion'",
-                        "key_entity": "Web Of Suspicion",
-                        "target_entity_labels": ["PERSON"],
-                        "target_answer_type": "director"
-                    }},
-                    {{
-                        "subquestion": "Which country of citizenship is that director from?",
-                        "search_keyword": "country of citizenship",
-                        "key_entity": "",
-                        "target_entity_labels": ["GPE"],
-                        "target_answer_type": "country"
-                    }}
-                    ]
-                    ---
-                    Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
-                    Remember the strict formatting requirements:
-                    1.  The entire output MUST be a valid array.
-                    2.  Ensure each sub-question logically follows the previous one and directly contributes to answering the original complex question.
+---
+**Example 2:**
+When is Ada Lovelace (1815–1852)'s father birthday?
+JSON desired output format:
+[
+{{
+    "subquestion": "Who was the father of Ada Lovelace (1815–1852)?",
+    "search_keyword": "Ada Lovelace (1815–1852) father",
+    "key_entity": "Ada Lovelace (1815–1852)",
+    "target_entity_labels": ["PERSON"],
+    "target_answer_type": "father"
+}},
+{{
+    "subquestion": "When is that person date of birth?",
+    "search_keyword": "date of birth",
+    "key_entity": "",
+    "target_entity_labels": ["DATE"],
+    "target_answer_type": "date"
+}}
+]
+---
+**Example 3:**
+"Where was the director of film Doctor Strange (2016 film) born"
+JSON desired output format:
+[
+{{
+    "subquestion":"Who was the director of film Doctor Strange (2016 film)",
+    "search_keyword": "director of film 'Doctor Strange (2016 film)'",
+    "key_entity": "Doctor Strange (2016 film)",
+    "target_entity_labels": ["PERSON"],
+    "target_answer_type": "director"
+}},
+{{
+    "subquestion": "Where was director born?",
+    "search_keyword": "place of birth",
+    "key_entity": "",
+    "target_entity_labels": ["GPE"],
+    "target_answer_type": "place"
+}}
+]
+---
+**Example 4:**
+"Which country the director of film Web Of Suspicion is from?"
+JSON desired output format:
+[
+{{
+    "subquestion":"Who was the director of film Web Of Suspicion?",
+    "search_keyword": "director of film 'Web Of Suspicion'",
+    "key_entity": "Web Of Suspicion",
+    "target_entity_labels": ["PERSON"],
+    "target_answer_type": "director"
+}},
+{{
+    "subquestion": "Which country of citizenship is that director from?",
+    "search_keyword": "country of citizenship",
+    "key_entity": "",
+    "target_entity_labels": ["GPE"],
+    "target_answer_type": "country"
+}}
+]
+---
+Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
+Remember the strict formatting requirements:
+1.  The entire output MUST be a valid array.
+2.  Ensure each subquestion logically follows the previous one and directly contributes to answering the original complex question.
 
-                    Here is the original complex question: "{question}"
-                    """
+## Information
+Original Complex Question: '{question}'
+
+## Task
+Decompose the question into subquestions following the examples and rules. Output in JSON format.
+"""
                 }
             ]
         elif type_q == "inference":
             messages = [
             {
                 "role": "system",
-                "content": """You are an expert in indentifying a key entity and key relation in a question.
-            
-            Key principles for identifying key entities and relations include:
-            1. Look for the main subject and object in the question.
-            2. Identify the action or relationship being asked.
-            3. Consider the context and any additional information provided.
-            4. target_entity_labels: A list of entity types to extract to answer the question, selected ONLY from: [{labels_str}].
-            5. target_answer_type: Identify the specific requested answer type using the words from the question. Should be a generic term selected ONLY from the question. If no generic type is explicitly requested, use "other".
+                "content": f"""## Role
+You are an expert in identifying key entities and relations in questions.
 
-            The final output MUST be a JSON object. This object must contain keys: "key_entity", "key_relation", "target_entity_labels", and "target_answer_type".
-            """
+## Task
+Identify the key entity, the key relation, target entity labels, and the answer type for the given question.
+
+## Instructions
+1. Analyze the question to find the main subject (key_entity)
+2. Identify the core relationship being asked about (key_relation)
+3. Determine the expected answer type and entity labels
+
+## Constraints
+- MUST: Select target_entity_labels ONLY from: [{labels_str}]
+- MUST: Select target_answer_type as a term ONLY from the question.
+
+## Output Format (JSON)
+[
+    {{
+        "search_keyword": "Distilled search query",
+        "key_entity": "primary subject",
+        "key_relation": "core relationship",
+        "target_entity_labels": ["list of labels from allowed types"],
+        "target_answer_type": "type of answer from question"
+    }}
+]
+"""
             },
             {
                 "role": "user",
                 "content": f"""Here are the examples demonstrating the desired JSON output format, which is an array containing a single object with "key_entity" and "key_relation" fields:
 
-            ---
-            **Example 1:**
+---
+**Example 1:**
 
-            Question: "Who is Giselda Volodi's sibling-in-law?"
+Question: "Who is Giselda Volodi's sibling-in-law?"
 
-            JSON desired output format:
-            [
-                {{
-                    "search_keyword": "'Giselda Volodi' sibling-in-law",
-                    "key_entity": "Giselda Volodi",
-                    "key_relation": "sibling-in-law",
-                    "target_entity_labels": ["PERSON"],
-                    "target_answer_type": "sibling-in-law"
-                }}
-            ]
+JSON desired output format:
+[
+    {{
+        "search_keyword": "'Giselda Volodi' sibling-in-law",
+        "key_entity": "Giselda Volodi",
+        "key_relation": "sibling-in-law",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "sibling-in-law"
+    }}
+]
 
-            ---
-            **Example 2:**
+---
+**Example 2:**
 
-            Question: "Who is Humphrey Of Montfort's maternal grandmother?"
+Question: "Who is Humphrey Of Montfort's maternal grandmother?"
 
-            JSON desired output format:
-            [
-                {{
-                    "search_keyword": "'Humphrey Of Montfort' maternal grandmother",
-                    "key_entity": "Humphrey Of Montfort",
-                    "key_relation": "maternal grandmother",
-                    "target_entity_labels": ["PERSON"],
-                    "target_answer_type": "grandmother"
-                }}
-            ]
+JSON desired output format:
+[
+    {{
+        "search_keyword": "'Humphrey Of Montfort' maternal grandmother",
+        "key_entity": "Humphrey Of Montfort",
+        "key_relation": "maternal grandmother",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "grandmother"
+    }}
+]
 
-            ---
-            **Example 3:**
+---
+**Example 3:**
 
-            Question: "Who is the aunt of Margaretta Taylor?"
+Question: "Who is the aunt of Margaretta Taylor?"
 
-            JSON desired output format:
-            [
-                {{
-                    "search_keyword": "'Margaretta Taylor' aunt",
-                    "key_entity": "Margaretta Taylor",
-                    "key_relation": "aunt",
-                    "target_entity_labels": ["PERSON"],
-                    "target_answer_type": "aunt"
-                }}
-            ]
+JSON desired output format:
+[
+    {{
+        "search_keyword": "'Margaretta Taylor' aunt",
+        "key_entity": "Margaretta Taylor",
+        "key_relation": "aunt",
+        "target_entity_labels": ["PERSON"],
+        "target_answer_type": "aunt"
+    }}
+]
 
-            ---
-            **Example 4:**
+---
+**Example 4:**
 
-            Question: "What is the field of work of Fred Diamond?"
+Question: "What is the field of work of Fred Diamond?"
 
-            JSON desired output format:
-            [
-                {{
-                    "search_keyword": "'Fred Diamond' field of work",
-                    "key_entity": "Fred Diamond",
-                    "key_relation": "field of work",
-                    "target_entity_labels": ["ORG"],
-                    "target_answer_type": "field of work"
-                }}
-            ]
+JSON desired output format:
+[
+    {{
+        "search_keyword": "'Fred Diamond' field of work",
+        "key_entity": "Fred Diamond",
+        "key_relation": "field of work",
+        "target_entity_labels": ["ORG"],
+        "target_answer_type": "field of work"
+    }}
+]
 
-            ---
+---
 
-            Now, process the following:
+## Information
+Question: "{question}"
 
-            Question: "{question}"
-            
-            Return an array containing a single object. This object must contain a single key "search_keyword", whose value is the Google search query string. For example:
-
-            [
-                {{
-                    "search_keyword": "...",
-                    "key_entity": "...",
-                    "key_relation": "...",
-                    "target_entity_labels": "...",
-                    "target_answer_type": "..."
-                }}
-            ]
-            """
+## Task
+Identify the key entity, key relation, target entity labels, and target answer type. Output in JSON format.
+"""
             }
         ]
 
@@ -867,36 +929,37 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
 
 
 def prompt_gen_answer_medhop_step_3b(question, key_entities, context):
-    prompt = f"""## Task
-Answer the following biomedical question based on the provided information.
+    prompt = f"""## Role
+You are an expert in biomedical knowledge.
 
-Question: {question}
+## Task
+Answer the following biological question based on the provided information.
 
 ## Instructions
-1. Determine the question type from the question text
-2. Generate two parts in JSON format:
-   - long_answer: a detailed explanation based on the information
-   - short_answer: strictly follow these rules based on the question type
+1. Analyze the provided context carefully
+2. Generate two parts in JSON format: a detailed explanation and a short answer
 
-## Rules for Short Answer
-- Count questions ("how many"): Return ONLY a number or numeric phrase (e.g., "10", "ten")
-- Time/Duration questions: Return a concise time value (e.g., "36 hours", "3 days")
-- Yes/No questions: Return exactly "Yes" or "No"
-- Entity questions ("Who", "Which", "What"): Return the full noun phrase naming that entity
-  - Examples: "chromosome X", "interleukin-6", "dopamine receptor D2"
-- Organism questions: Return organism type (e.g., "bacterium", "fungus")
+## Rules
+### Short Answer Format
+- **Count questions** ("how many"): Return ONLY a number (e.g., "10", "ten")
+- **Time/Duration questions**: Return a concise time value (e.g., "3 days")
+- **Yes/No questions**: Return exactly "Yes" or "No"
+- **Entity questions**: Return the full noun phrase naming the entity (e.g., "chromosome X")
+- **Organism questions**: Return organism type (e.g., "bacterium")
 
 ## Constraints
-- MUST NOT: Add any extra commentary or text outside the JSON
+- MUST NOT: Add any extra commentary outside the JSON
+- MUST NOT: Use abbreviations for entities if the full name is available
 
 ## Information
+Question: {question}
 Key entities: {key_entities}
 Context: {context}
 
 ## Output Format (JSON)
-{{  
-    "long_answer": "[detailed explanation]",  
-    "short_answer": "[short answer as per rules]"  
+{{
+    "long_answer": "detailed explanation based on context",
+    "short_answer": "1-3 word answer following the rules"
 }}
 """
     return prompt
@@ -904,185 +967,163 @@ Context: {context}
 
 def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None):
     if type_q in ["bridge_comparison", "comparison"]:
-        prompt = f"""## Task
+        prompt = f"""## Role
+You are an expert analyst.
+
+## Task
 Answer the following question based on the provided information.
 
-Question: {question}
-
 ## Instructions
-1. Analyze the question and the provided information to determine the answer
-2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer"
+1. Analyze the question and identify the core relationship being asked
+2. Extract the direct value from the provided context
+3. Format the response as a valid JSON object
 
-## Rules for Short Answer
-
-### Rule 1: Yes/No Questions
-- For questions requiring a "yes" or "no" answer, the answer must be "Yes" or "No"
-
-### Rule 2: Default - Single Answer
-For all other questions, provide only the single, most direct answer:
-- First, identify the person whose role matches the role in the question (e.g., director, footballer)
-- If no specific role is mentioned but context describes a person performing multiple key roles, infer that this person is the subject
-- Then, find the requested information (e.g., date of birth) for that person
-- The answer must be a direct value from the context
-- MUST NOT: Add any additional information in parentheses
-
-### Rule 3: Insufficient Information
-- If the question cannot be answered because the requested information is not present, output exactly "Insufficient information"
+## Rules
+### Answer Logic
+- **Yes/No Questions**: Return "Yes" or "No"
+- **Identity Questions**: Identify the person or entity matching the role/description and return their name as found in context
+- **Insufficient Info**: If the information is missing, return exactly "Insufficient information"
 
 ## Constraints
-- MUST: Your entire response must be ONLY the JSON object
-- MUST NOT: Add any commentary before or after it
+- MUST: Provide ONLY the JSON object
+- MUST NOT: Add commentary before or after the JSON
+- MUST NOT: Add extra parenthetical information in the short_answer
 
 ## Information
+Question: {question}
 Key entities: {key_entities}
 Context: {context}
 
 ## Output Format (JSON)
 {{
-    "long_answer": "Explain reasoning, clearly state if explicit or inferred, and cite which clues/documents were used.",
-    "short_answer": "The single most probable answer, formatted according to the output rules."
+    "long_answer": "Detailed reasoning explaining how the answer was derived",
+    "short_answer": "The most direct answer from the context"
 }}
 """
     elif type_q == "inference":
-        prompt = f"""Question: {question}
-        Instructions:
-        1. Analyze the provided Information (Key entities, Context) to answer the Question.
-        2. Your entire response MUST be a single, valid JSON object and nothing else. Do not add any commentary before or after it.
-        3. The JSON object must contain four keys: "long_answer", "short_answer", "prefix", "name", and "suffix".
-        - "long_answer": A detailed explanation synthesized from the information.
-        - "short_answer": A single string with the direct answer, following the Rules below.
-        - "prefix": Only the prefix part (or "NAN" if none).
-        - "name": The core name part (must never be "NAN").
-        - "suffix": Only the suffix part (or "NAN" if none).
+        prompt = f"""## Role
+You are an expert in historical and genealogical analysis.
 
-        ---
-        RULES FOR SHORT ANSWER:
-        ---
-        Apply these rules in the following order of priority:
+## Task
+Answer the question by identifying the correct person and precisely formatting their name and titles.
 
-        **Rule 1: Royal & Noble Figures**
-        - If the question asks for a royal or noble person, construct their name precisely as follows:
-        * A. START WITH: The person's full name and regnal number.
-        * B. ALWAYS INCLUDE (if available): Numbered hereditary titles, noble prefixes, royal prefixes (King/Queen, Prince/Princess, Duke/Duchess, Sir/Dame, etc.).
-        * C. ALWAYS EXCLUDE: Territorial/estate designations based only on land ownership.
-        * D. PARENTHESES RULE: Do not include parentheses in the final string, but analyze their contents.
+## Instructions
+1. Analyze the context to find the requested person
+2. Construct their full name and titles following the specific rules for royal/noble figures
+3. Split the resulting answer into prefix, name, and suffix components
 
-        **Rule 2: All Other Questions (Default Rule)**
-        - If not covered by Rule 1, provide only the single, most direct answer found in the information.
+## Rules
+### Rule 1: Royal & Noble Figures
+- **Start with**: Full name and regnal number.
+- **Include**: Hereditary titles, noble/royal prefixes (King, Queen, Duke, Sir, etc.).
+- **Exclude**: Territorial designations based ONLY on land ownership.
+- **Parentheses**: Do not include parentheses, but use their content for extraction.
 
-        **Rule 3: Insufficient Information**
-        - If the answer cannot be found in the provided information, the value of "short_answer" must be exactly "Insufficient information".
-        - In this case, also set: "prefix": "NAN", "name": "Insufficient information", "suffix": "NAN".
+### Rule 2: Non-Royal Figures
+- Provide the single most direct answer found in the context.
 
-        **Rule 4: Final Formatting Rule**
-        - After generating the answer string, split it into three components:
-        * Prefix: Titles before the name (or "NAN" if none).
-        * Name: The personal name and regnal number (must always have a value).
-        * Suffix: Titles, offices, territorial designations, or post-nominals after the name (or "NAN" if none).
-        - Examples:
-            - "Princess Luisa Carlotta of Naples and Sicily" -> short_answer="Princess Luisa Carlotta of Naples and Sicily"; prefix="Princess"; name="Luisa Carlotta"; suffix="of Naples and Sicily"
-            - "King William IV" -> short_answer="King William IV"; prefix="King"; name="William IV"; suffix="NAN"
-            - "Thomas Monck MP" -> short_answer="Thomas Monck MP"; prefix="NAN"; name="Thomas Monck"; suffix="MP"
-            - "Henrietta Susanna Tracy" -> short_answer="Henrietta Susanna Tracy"; prefix="NAN"; name="Henrietta Susanna Tracy"; suffix="NAN"
-            - "Insufficient information" -> short_answer="Insufficient information"; prefix="NAN"; name="Insufficient information"; suffix="NAN"
+### Rule 3: Insufficient Information
+- If the answer is missing, use "Insufficient information" for both the short_answer and the name field. Set prefix and suffix to "NAN".
 
-        ---
-        Information:
-        Key entities: {key_entities}
-        Context: {context}
+## Constraints
+- MUST: Your response must be ONLY the JSON object.
+- MUST NOT: Include commentary outside the JSON.
+- MUST: Follow the name splitting rules precisely.
 
-        Response (strict JSON only):
-        {{
-            "long_answer": "detailed explanation",
-            "short_answer": "answer as per rules",
-            "prefix": "...",
-            "name": "...",
-            "suffix": "..."
-        }}
-        """
+## Information
+Question: {question}
+Key entities: {key_entities}
+Context: {context}
+
+## Output Format (JSON)
+{{
+    "long_answer": "detailed explanation showing the derivation",
+    "short_answer": "full answer string as per rules",
+    "prefix": "titles before name or NAN",
+    "name": "core personal name and regnal number",
+    "suffix": "titles or post-nominals after name or NAN"
+}}
+"""
     elif type_q == "compositional":        
-        prompt = f"""Question: {question}
-            Instructions:
-            You are an expert intelligence analyst. Your goal is to provide the **single most probable answer** to the question. Generate a single, valid JSON object.
+        prompt = f"""## Role
+You are an expert intelligence analyst.
 
-            ### MASTER INSTRUCTION: SYNTHESIZE ALL CONTEXT ###
-            - Read ALL documents carefully.
-            - Connect information across documents (e.g., if one doc names a person and another doc gives details under a synonym, link them).
-            - Synonyms or alternate names MUST be treated as the same entity.
+## Task
+Synthesize information across multiple documents to provide the single most probable answer to the question.
 
-            ### CORE DIRECTIVE ###
-            - You must decide if the answer is **Explicit** (directly stated) or **Inferred** (logically deduced). If explicit evidence exists, use it.  
-            - If not, you are REQUIRED to infer from strong clues instead of saying "unknown", unless absolutely no clue exists.
-            - Do NOT generate names of cities, regions, or countries unless they are present in the context text itself.
+## Instructions
+1. **Context Synthesis**: Read ALL provided documents and connect information across them.
+2. **Entity Resolution**: Treat synonyms or alternate names as the same entity.
+3. **Evidence Priority**: Decide if the answer is Explicit (stated) or Inferred (logical deduction). Use explicit evidence first.
+4. **Mandatory Inference**: If no explicit answer exists, you are REQUIRED to infer from strong clues (residence, professional role, nationality fallback).
 
-            ### ANSWER DERIVATION RULES ###
-            1. **Explicit first**: If the answer is directly stated, use it.
-            2. **Tie-breaker**: If multiple explicit answers exist, choose the most significant one (e.g., Hall of Fame > annual award, or the most recent).
-            3. **Mandatory inference** (if no explicit answer):
-            * (i) Long-term residence or workplace (strongest clue).
-            * (ii) Professional role implied by context.
-            * (iii) Nationality-based inference (fallback for “Where” questions):
-                - If context only gives nationality (e.g., "Indian composer") and no other location clues, infer birthplace or death place as that country.
-                - If there is evidence of migration, use the most consistent location clue instead of nationality.
-            4. **Insufficient information**: If no explicit answer and no strong inference clues, output exactly "Insufficient information".
+## Rules
+### Location Questions
+- Return the MOST SPECIFIC location available (city/town > state/province > country).
+- If birthplace/death place is missing, use nationality (country) as a fallback and mark as inferred.
 
-            ### RULES FOR “WHERE” QUESTIONS ###
-            - Always output the **most specific location** available (city/town > state/province > country).
-            - If birthplace or death place is not directly mentioned:
-            * Use nationality ⇒ country as a fallback.
-            * Clearly mark the answer as **inferred** in the long_answer explanation.
-            
+### Category Questions
+- Choose the broadest applicable category (e.g., "cancer" not "bowel cancer").
 
-            ### OUTPUT FORMATTING (CRITICAL) ###
-            - For **locations**, return the most specific unit (town/city, not country, unless only country is available).
-            - For **general categories**, choose the broadest category (e.g., "cancer" not "bowel cancer").
-            - For **nationalities**:
-            * If "X-born Y" ⇒ answer "X".
-            * If "X-Y" nationality ⇒ answer "X".
-            * If "X Y" nationality ⇒ answer "Y".
+### Nationality Formatting
+- "X-born Y" → answer "X"
+- "X-Y" nationality → answer "X"
+- "X Y" nationality → answer "Y"
 
-            ---
-            Information:
-            Key entities: {key_entities}
-            Context: {context}
+## Constraints
+- MUST: Select ONLY the single most probable answer.
+- MUST NOT: Generate names of locations (cities, regions, countries) NOT present in the context.
+- MUST NOT: Add any additional commentary outside the JSON.
 
-            Response (strict JSON):
-            {{
-            "long_answer": "Explain reasoning, clearly state if explicit or inferred, and cite which clues/documents were used.",
-            "short_answer": "The single most probable answer, formatted according to the output rules."
-            }}
-            """
+## Information
+Question: {question}
+Key entities: {key_entities}
+Context: {context}
+
+## Output Format (JSON)
+{{
+    "long_answer": "Complete reasoning clearly stating if explicit or inferred, citing specific clues/documents used",
+    "short_answer": "The single most probable answer following the formatting rules"
+}}
+"""
           
     return prompt
 
 
 def prompt_gen_combine_parallel_answers(question, context):
-    prompt = f"""Question: {question}
-        Instructions:
-        1. Analyze the question and the provided information to determine the answer.
-        2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
-        - long_answer: A detailed explanation synthesized from the information.
-        - short_answer: A single string with the direct answer. Strictly follow these rules:
-            * **1. Choice Questions (Which/Who/...):**
-            - When the question asks to choose an option based on a criterion (e.g., younger, first, more recently, older, later, ...).
-            - The `short_answer` must be the name of the chosen option, **extracted exactly** from the question.
-            - Example: For "Which film has the director born later, A Flame In My Heart or Butcher, Baker, Nightmare Maker?", the short_answer is "A Flame In My Heart".
+    prompt = f"""## Role
+You are an expert in logical synthesis and comparative analysis.
 
-            * **2. Confirmation Questions (Are/Do/...):**
-            - When the question asks to confirm a fact (e.g., same country, same nationality).
-            - The `short_answer` must be **"yes"** or **"no"** (lowercase).
-            - Example: For "Are director of film Move (1970 Film) and director of film Méditerranée (1963 Film) from the same country?", the short_answer is "no".
-        3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
+## Task
+Analyze the provided information to determine the correct answer and reconcile any potential differences across sources.
 
-        Information:
-        Context: {context}
+## Instructions
+1. Determine the correct answer based on the provided context
+2. Generate a valid JSON object with detailed reasoning (long_answer) and a direct answer (short_answer)
 
-        Response (strict JSON):
-        {{
-        "long_answer": "detailed explanation",
-        "short_answer": "answer as per rules"
-        }}
-        """
+## Rules
+### Choice Questions
+- If the question asks to choose an option based on a criterion (e.g., "younger", "first", "later"):
+- The short_answer MUST be the name of the chosen option extracted EXACTLY from the question.
+
+### Confirmation Questions
+- If the question asks to confirm a fact (e.g., "same country", "same nationality"):
+- The short_answer MUST be exactly "yes" or "no" (lowercase).
+
+## Constraints
+- MUST: Your entire response must be ONLY the JSON object
+- MUST NOT: Include commentary outside the JSON
+
+## Information
+Question: {question}
+Context: {context}
+
+## Output Format (JSON)
+{{
+    "long_answer": "Detailed explanation synthesized from context",
+    "short_answer": "The final answer following the rules"
+}}
+"""
     return prompt
 
 import json
@@ -1126,39 +1167,45 @@ def prompt_gen_relation(list_subquestion, type_q):
     else:
         raise ValueError("Invalid question type. Please choose one of the following: inference, compositional, comparison, bridge_comparison.")
 
-    system_prompt = f"""
-        You are a relation extraction tool. Your task is to receive a list of sub-questions and a question type, and then identify the single relevant relation for each question from the list.
+    system_prompt = f"""## Role
+You are a highly specialized relation extraction tool.
 
-        ### Instructions
-        1.  **Output Format**: Your only output must be a JSON list of strings.
-        2.  **Relation Selection**: Based on the provided `type_q`, you must **only** extract relations from the following allowed set: {list(allowed_relations)}.
-        3.  **One-to-One Mapping**: The number of relations in the output list **must exactly match** the number of sub-questions in the input list. The relations should be in the same order as the sub-questions.
-        4.  **No Extraneous Text**: Do not include any additional text, explanations, or conversational phrases outside of the JSON output.
+## Task
+Identify the single relevant relation for each subquestion provided in the list.
 
-        ### Examples
-        Example 1: If the input is:
-        {{
-        "list_subquestion": [
-            "Who directed the movie 'Parasite'?",
-            "When was the movie 'Parasite' published?",
-            "What country is the movie 'Parasite' from?"
-        ],
-        "type_q": "compositional"
-        }}
-        The correct output is:
-        ["director", "publication date", "country of origin"]
-        ---
-        Example 2: If the input is:
-        {{
-        "list_subquestion": [
-            "Who is the father of Sir William Gore, 3Rd Baronet?",
-            "Who is the father of that person?"
-        ],
-        "type_q": "inference"
-        }}
-        The correct output is:
-        ["father", "father"]
-        """
+## Instructions
+1. Review the provided list of subquestions and the question type
+2. Map each subquestion to a single relation from the allowed set
+3. Maintain the order and count of the input list in your output
+
+## Rules
+- **Allowed Relations**: Select ONLY from this set: {list(allowed_relations)}.
+- **One-to-One Mapping**: The number of relations in the output MUST exactly match the number of subquestions.
+
+## Constraints
+- MUST: Your ONLY output must be a JSON list of strings
+- MUST NOT: Include any additional text, explanations, or commentary
+
+## Examples
+---
+**Example 1:**
+Input: {{
+    "list_subquestion": ["Who directed Parasite?", "When was Parasite published?"],
+    "type_q": "compositional"
+}}
+Output: ["director", "publication date"]
+---
+**Example 2:**
+Input: {{
+    "list_subquestion": ["Who is the father of William Gore?", "Who is the father of that person?"],
+    "type_q": "inference"
+}}
+Output: ["father", "father"]
+---
+
+## Output Format (JSON)
+["relation_1", "relation_2", ...]
+"""
 
     user_prompt = {
         "list_subquestion": list_subquestion,
@@ -1174,30 +1221,45 @@ def prompt_gen_relation(list_subquestion, type_q):
 
 
 def prompt_split_question(question):
-    system_prompt = """You are an AI assistant that splits a complex comparative question into a list of two simple sub-questions. Your response must ONLY be a valid JSON array of two strings. Do not include any explanation, introductory text, or markdown formatting. Your entire response must start with '[' and end with ']'."""
+    system_prompt = """## Role
+You are an expert in question decomposition.
 
-    user_prompt = f"""
-    ### EXAMPLE 1: Complex question: "Do both directors of films The Bird of Happiness (film) and Bunco Squad share the same nationality?"
+## Task
+Split a complex comparative question into exactly two simple subquestions.
 
-    JSON array result:
-    [
+## Constraints
+- MUST: Output ONLY a valid JSON array of two strings
+- MUST NOT: Include any explanation, introductory text, or markdown formatting
+- MUST NOT: Change the core entities or the relationship being compared"""
+
+    user_prompt = f"""## Task
+Decompose the provided complex comparative question.
+
+## Examples
+---
+**Example 1:**
+Input: "Do both directors of films The Bird of Happiness (film) and Bunco Squad share the same nationality?"
+Output:
+[
     "What is the nationality of the director of 'The Bird of Happiness (film)'?",
-    "What is the nationality of the director of'Bunco Squad'?"
-    ]
-
-    ### EXAMPLE 2: Complex question: "Which film has the director who is older than the other, Tiny Times 3 or Being Rose?"
-
-    JSON array result:
-    [
+    "What is the nationality of the director of 'Bunco Squad'?"
+]
+---
+**Example 2:**
+Input: "Which film has the director who is older than the other, Tiny Times 3 or Being Rose?"
+Output:
+[
     "What is the date of birth of the director of 'Tiny Times 3'?",
     "What is the date of birth of the director of 'Being Rose'?"
-    ]
+]
+---
 
-    ### TASK: Complex question: "{question}"
-    
-    
-    JSON array result:
-    """
+## Information
+Question: "{question}"
+
+## Output Format (JSON)
+["sub_question_1", "sub_question_2"]
+"""
         
     messages = [
         {"role": "system", "content": system_prompt.strip()},
@@ -1225,19 +1287,29 @@ def get_answer_generation_system_prompt(dataset: Optional[str] = None) -> str:
 {domain_context}
 
 ## Task
-1. Analyze the provided context carefully
-2. Identify explicit facts first, then make logical inferences when needed
-3. Generate accurate answers following the EXACT formatting rules provided
-4. Output a valid JSON response
+Answer the question based on the provided context following precise formatting rules.
 
-## Constraints
-- MUST: Select ONLY the SINGLE most probable answer
-- MUST: short_answer must be MAX 3 words
-- MUST: If the question asks for multiple things, select ONLY the most prominent one
-- MUST: Follow the formatting rules PRECISELY. The answer format must match the rules exactly."""
+## Instructions
+1. **Analyze Context**: Read all documents carefully and connect facts.
+2. **Determine Evidence**: Identify explicit facts first, then make logical inferences.
+3. **Synthesis**: Treat synonyms/alternate names as the same entity.
+4. **Formatting**: Apply the EXACT formatting rules provided for your specific question type.
 
+## Rules
+### Context Synthesis
+- Prioritize explicit evidence over inference.
+- If no explicit answer exists, infer from strong clues:
+  - Long-term residence/workplace (strongest clue).
+  - Professional role implied by context.
+  - Place of birth/nationality as fallback for location questions.
+- Mark inferred answers clearly in the long_answer.
 
-
+### Constraints
+- MUST: Select ONLY the SINGLE most probable answer.
+- MUST: short_answer must be MAX 3 words.
+- MUST NOT: Generate information (especially locations, names) not present in context.
+- MUST NOT: Include commentary outside the JSON.
+"""
 
 def get_answer_generation_context_synthesis_rules() -> str:
     """
@@ -1247,16 +1319,16 @@ def get_answer_generation_context_synthesis_rules() -> str:
         Rules section string for prompt injection
     """
     return """
-## Context Synthesis Rules
+### CONTEXT SYNTHESIS RULES ###
 - Read ALL provided context carefully
 - Connect information across documents
 - Treat synonyms/alternate names as the same entity
 - Prioritize explicit evidence over inference
-- MUST NOT: Generate information (especially locations, names) not present in context
+- Do NOT generate information (especially locations, names) not present in context
 - If no explicit answer exists, infer from strong clues:
-  - Long-term residence/workplace (strongest clue)
-  - Professional role implied by context
-  - Place of birth/nationality as fallback for location questions
+  * Long-term residence/workplace (strongest clue)
+  * Professional role implied by context
+  * Place of birth/nationality as fallback for location questions
 - Mark inferred answers clearly in long_answer
 """
 
@@ -1415,23 +1487,31 @@ def get_answer_generation_user_prompt(
     
     key_entity_text = f"\nKey Entity: {evidence_key_entity}" if evidence_key_entity else ""
     
-    return f"""Task: Answer the following question based on the provided context.
+    return f"""## Task
+Answer the following question based on the provided context.
 
-        Question: {question} {q_key_entity}
-        {key_entity_text}
+## Instructions
+1. Review the question and optional key entities
+2. Apply the provided formatting rules
+3. Extract the answer from the context
 
-        {rules_text}
+## Constraints
+- MUST: Provide ONLY the JSON object
+- MUST NOT: Add commentary outside the JSON
 
-        Context:
-        {context_str}
+## Information
+Question: {question} {q_key_entity}
+{key_entity_text}
 
-        Output Format (strict JSON only):
-        {output_format}
+Formatting Rules:
+{rules_text}
 
-        IMPORTANT: 
-        - Your entire response must be ONLY the JSON object
-        - If information is not available, use "Insufficient information" as the short_answer
-        - Follow the formatting rules EXACTLY"""
+Context:
+{context_str}
+
+## Output Format (JSON)
+{output_format}
+"""
 
 
 def get_answer_rules_prediction_system_prompt() -> str:
@@ -1528,25 +1608,25 @@ def get_answer_selection_user_prompt(
         for idx, ans in enumerate(answers)
     ])
     
-    return f"""Goal: Select the single best answer to the question from {len(answers)} candidates.
+    return f"""## Task
+Select the single best answer to the question from {len(answers)} candidates.
 
-Constraints:
-- Output valid JSON only
-- Choose exactly one answer (1-{len(answers)})
+## Constraints
+- MUST: Output valid JSON only
+- MUST: Choose exactly one answer (index 1-{len(answers)})
 - Selection criteria (in priority order):
   1. Accuracy: Answer correctly addresses the question
   2. Specificity: Answer is appropriately detailed/specific
   3. Evidence quality: Reasoning in long_answer is well-supported
   4. Consistency: Answer is internally consistent
-- For identical/equivalent answers, prefer the one with better reasoning
-- For conflicting answers, choose based on evidence strength
 
+## Information
 Question: {question}
 
 Candidates:
 {formatted_answers}
 
-Required JSON format:
+## Output Format (JSON)
 {{
     "answer_index": <1 to {len(answers)}>,
     "reasoning": "Brief explanation of why this answer is best",
@@ -1567,30 +1647,35 @@ def get_parallel_answers_combination_prompt(question: str, context: str) -> str:
     Returns:
         Prompt string
     """
-    return f"""Question: {question}
-Instructions:
-1. Analyze the question and the provided information to determine the answer.
-2. Generate a response in a single, valid JSON object with two keys: "long_answer" and "short_answer".
-- long_answer: A detailed explanation synthesized from the information.
-- short_answer: A single string with the direct answer. Strictly follow these rules:
-    * **1. Choice Questions (Which/Who/...):**
-    - When the question asks to choose an option based on a criterion (e.g., younger, first, more recently, older, later, ...).
-    - The `short_answer` must be the name of the chosen option, **extracted exactly** from the question.
-    - Example: For "Which film has the director born later, A Flame In My Heart or Butcher, Baker, Nightmare Maker?", the short_answer is "A Flame In My Heart".
+    return f"""## Role
+You are an expert in logical synthesis.
 
-    * **2. Confirmation Questions (Are/Do/...):**
-    - When the question asks to confirm a fact (e.g., same country, same nationality).
-    - The `short_answer` must be **"yes"** or **"no"** (lowercase).
-    - Example: For "Are director of film Move (1970 Film) and director of film Méditerranée (1963 Film) from the same country?", the short_answer is "no".
-3. Your entire response must be ONLY the JSON object. Do not add any commentary before or after it.
+## Task
+Analyze the provided information to determine the correct answer and reconcile sources.
 
-Information:
+## Instructions
+1. Analyze the question and context
+2. Generate a valid JSON object with detailed reasoning (long_answer) and direct answer (short_answer)
+
+## Rules
+### Choice Questions
+- Return the name of the chosen option extracted EXACTLY from the question.
+
+### Confirmation Questions
+- Return "yes" or "no" (lowercase).
+
+## Constraints
+- MUST: Provide ONLY the JSON object
+- MUST NOT: Include commentary outside the JSON
+
+## Information
+Question: {question}
 Context: {context}
 
-Response (strict JSON):
+## Output Format (JSON)
 {{
-"long_answer": "detailed explanation",
-"short_answer": "answer as per rules"
+    "long_answer": "Reasoning synthesized from information",
+    "short_answer": "The final answer following the rules"
 }}
 """
 

@@ -32,12 +32,12 @@ def _generate_answer(question, key_entities, relevant_info, dataset=None, type_q
     prompt = load_prompt_gen_ans(question, key_entities, relevant_info, dataset=dataset, type_q=type_q)
     if dataset in ["cwq", "wiki"]:
         messages = [
-            {"role": "system", "content": "You are an expert in general knowledge. Your task is to provide accurate answers based on the provided information."},
+            {"role": "system", "content": "## Role\nYou are an expert in general knowledge.\n\n## Task\nProvide accurate answers based on the provided information."},
             {"role": "user", "content": prompt}
         ]
     else:
         messages=[
-            {"role": "system", "content": "You are an expert in medical and scientific knowledge. Your task is to provide accurate answers based on the provided information."},
+            {"role": "system", "content": "## Role\nYou are an expert in medical and scientific knowledge.\n\n## Task\nProvide accurate answers based on the provided information."},
             {"role": "user", "content": prompt}
         ]
     
@@ -110,12 +110,12 @@ def gen_ans_multiple_choice(question, context, dataset='medhop', model = "o3-min
     prompt = get_multiple_choice_selection_prompt(question, context)
     if dataset == 'wiki':
         messages = [
-            {"role": "system", "content": "You are an expert in general knowledge. Your task is to provide accurate answers based on the provided information. Please only output the choice (without additional explanations)"},
+            {"role": "system", "content": "## Role\nYou are an expert in general knowledge.\n\n## Task\nSelect the correct choice from the provided information.\n\n## Constraints\n- MUST: Output ONLY the choice (e.g., 'A')\n- MUST NOT: Include any additional explanations"},
             {"role": "user", "content": prompt}
         ]
     else:
         messages = [
-            {"role": "system", "content": "You are an expert in medical and scientific knowledge. Your task is to provide accurate answers based on the provided information. Please only output the choice (without additional explanations)"},
+            {"role": "system", "content": "## Role\nYou are an expert in medical and scientific knowledge.\n\n## Task\nSelect the correct choice from the provided information.\n\n## Constraints\n- MUST: Output ONLY the choice (e.g., 'A')\n- MUST NOT: Include any additional explanations"},
             {"role": "user", "content": prompt}
         ]
     
