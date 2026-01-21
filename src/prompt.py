@@ -2,7 +2,7 @@ from typing import Optional, List, Dict, Any
 import json
 
 # BIO_LABELS_LIST = ["DISEASE", "CHEMICAL", "DRUG", "GENE", "BODY_PART", "ORG", "GPE"]
-BIO_LABELS_LIST = ["DNA", "CELL_TYPE", "CELL_LINE", "RNA", "PROTEIN", "DISEASE", "CHEMICAL", "AMINO_ACID", "ANATOMICAL_SYSTEM", "CANCER", "CELL", "CELLULAR_COMPONENT", "DEVELOPING_ANATOMICAL_STRUCTURE", "GENE_OR_GENE_PRODUCT", "IMMATERIAL_ANATOMICAL_ENTITY", "MULTI-TISSUE_STRUCTURE", "ORGAN", "ORGANISM", "ORGANISM_SUBDIVISION", "ORGANISM_SUBSTANCE", "PATHOLOGICAL_FORMATION", "SIMPLE_CHEMICAL", "TISSUE"]
+BIO_LABELS_LIST = ["DNA", "CELL_TYPE", "CELL_LINE", "RNA", "PROTEIN", "DISEASE", "CHEMICAL", "AMINO_ACID", "ANATOMICAL_SYSTEM", "CANCER", "CELL", "CELLULAR_COMPONENT", "DEVELOPING_ANATOMICAL_STRUCTURE", "GENE_OR_GENE_PRODUCT", "IMMATERIAL_ANATOMICAL_ENTITY", "MULTI-TISSUE_STRUCTURE", "ORGAN", "ORGANISM", "ORGANISM_SUBDIVISION", "ORGANISM_SUBSTANCE", "PATHOLOGICAL_FORMATION", "SIMPLE_CHEMICAL", "TISSUE", "ORG", "GPE"]
 WIKI_LABELS_LIST = ["PERSON", "WORK_OF_ART", "GPE", "ORG", "LOC", "EVENT", "CARDINAL", "NORP", "LANGUAGE"]
 
 # BIO_ANSWER_TYPES = ["GENE", "CHROMOSOME", "GENE_LOCATION", "GENETIC_VARIANT", "INHERITANCE_PATTERN", "PATHWAY", "PROTEIN", "ENZYME", "MOLECULAR_FUNCTION", "CELL_TISSUE_TYPE", "ORGANELLE", "ANATOMY", "DISEASE_CONDITION", "PHENOTYPE_SIGN", "RISK_FACTOR", "PROGNOSIS", "MEDICATION", "MEDICAL_PROCEDURE", "DIAGNOSTIC_TEST", "PATHOGEN", "BIOLOGICAL_TAXON", "CHEMICAL_ENTITY", "POPULATION_GROUP", "TEMPORAL_DATA", "QUANTITY", "PERSON_ORGANIZATION", "YES_NO", "OTHER"]
@@ -79,7 +79,7 @@ JSON desired output format:
 [
     {{ 
         "search_keyword": "Smith-Fineman-Myers syndrome mutated gene helicase domain",
-        "focus_spacy_based_entity_label": ["GENE"],
+        "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
         "target_answer_type": "gene",
         "key_entity": [
             "Smith-Fineman-Myers syndrome",
@@ -130,7 +130,7 @@ JSON desired output format:
 [
     {{ 
         "search_keyword": "benign autosomal recessive hyperbilirubinemia UGT1A1 gene mutation chromosome 2",
-        "focus_spacy_based_entity_label": ["DISEASE", "GENE"],
+        "focus_spacy_based_entity_label": ["DISEASE", "GENE_OR_GENE_PRODUCT"],
         "target_answer_type": "syndrome",
         "key_entity": [
             "benign autosomal recessive hyperbilirubinemia",
@@ -368,14 +368,14 @@ JSON desired output format:
     {{
         "subquestion": "Which gene encode enzyme can inactivate antithrombin?",
         "search_keyword": "gene encode enzyme inactivate antithrombin",
-        "focus_spacy_based_entity_label": ["GENE"],
+        "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
         "target_answer_type": "gene",
         "key_entity": ["antithrombin"]
     }},
     {{
         "subquestion": "Which human chromosome contains that gene?",
         "search_keyword": "human chromosome gene encode enzyme inactivate antithrombin",
-        "focus_spacy_based_entity_label": ["BODY_PART"],
+        "focus_spacy_based_entity_label": ["CELLULAR_COMPONENT"],
         "target_answer_type": "chromosome",
         "key_entity": []
     }}
@@ -390,7 +390,7 @@ JSON desired output format:
     {{
         "subquestion": "What is the primary organ of the human nervous system?",
         "search_keyword": "primary organ human nervous system",
-        "focus_spacy_based_entity_label": ["BODY_PART"],
+        "focus_spacy_based_entity_label": ["ORGAN"],
         "target_answer_type": "organ",
         "key_entity": ["nervous system"]
     }},
@@ -424,7 +424,7 @@ JSON desired output format:
     {{
         "subquestion": "Which gene mutation is responsible for that syndrome?",
         "search_keyword": "gene mutation syndrome flattened deformed vertebrae developmental delay lens coloboma",
-        "focus_spacy_based_entity_label": ["GENE"],
+        "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
         "target_answer_type": "gene mutation",
         "key_entity": []
     }}
@@ -464,7 +464,7 @@ JSON desired output format:
     {{
         "subquestion": "Which gene is responsible for Carpenter syndrome?",
         "search_keyword": "gene responsible Carpenter syndrome",
-        "focus_spacy_based_entity_label": ["GENE"],
+        "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
         "target_answer_type": "gene",
         "key_entity": [
             "Carpenter syndrome"
@@ -473,7 +473,7 @@ JSON desired output format:
     {{
         "subquestion": "On which chromosome is that gene located?",
         "search_keyword": "chromosome location gene",
-        "focus_spacy_based_entity_label": ["BODY_PART"],
+        "focus_spacy_based_entity_label": ["CELLULAR_COMPONENT"],
         "target_answer_type": "chromosome",
         "key_entity": []
     }}
