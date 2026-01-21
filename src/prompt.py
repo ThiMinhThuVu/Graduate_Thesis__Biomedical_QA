@@ -1,7 +1,8 @@
 from typing import Optional, List, Dict, Any
 import json
 
-BIO_LABELS_LIST = ["DISEASE", "CHEMICAL", "DRUG", "GENE", "BODY_PART", "ORG", "GPE"]
+# BIO_LABELS_LIST = ["DISEASE", "CHEMICAL", "DRUG", "GENE", "BODY_PART", "ORG", "GPE"]
+BIO_LABELS_LIST = ["DNA", "CELL_TYPE", "CELL_LINE", "RNA", "PROTEIN", "DISEASE", "CHEMICAL", "AMINO_ACID", "ANATOMICAL_SYSTEM", "CANCER", "CELL", "CELLULAR_COMPONENT", "DEVELOPING_ANATOMICAL_STRUCTURE", "GENE_OR_GENE_PRODUCT", "IMMATERIAL_ANATOMICAL_ENTITY", "MULTI-TISSUE_STRUCTURE", "ORGAN", "ORGANISM", "ORGANISM_SUBDIVISION", "ORGANISM_SUBSTANCE", "PATHOLOGICAL_FORMATION", "SIMPLE_CHEMICAL", "TISSUE"]
 WIKI_LABELS_LIST = ["PERSON", "WORK_OF_ART", "GPE", "ORG", "LOC", "EVENT", "CARDINAL", "NORP", "LANGUAGE"]
 
 # BIO_ANSWER_TYPES = ["GENE", "CHROMOSOME", "GENE_LOCATION", "GENETIC_VARIANT", "INHERITANCE_PATTERN", "PATHWAY", "PROTEIN", "ENZYME", "MOLECULAR_FUNCTION", "CELL_TISSUE_TYPE", "ORGANELLE", "ANATOMY", "DISEASE_CONDITION", "PHENOTYPE_SIGN", "RISK_FACTOR", "PROGNOSIS", "MEDICATION", "MEDICAL_PROCEDURE", "DIAGNOSTIC_TEST", "PATHOGEN", "BIOLOGICAL_TAXON", "CHEMICAL_ENTITY", "POPULATION_GROUP", "TEMPORAL_DATA", "QUANTITY", "PERSON_ORGANIZATION", "YES_NO", "OTHER"]
@@ -38,7 +39,7 @@ Generate ONLY 1 search query and identify relevant entities.
 
 ## Instructions
 1. Provide a single, keyword-based search query string that best targets the core information needed from the original question
-2. Identify a list of target entity types (target_entity_labels) that need to be extracted from the context to answer the question
+2. Identify a list of target entity types (focus_spacy_based_entity_label) that need to be extracted from the context to answer the question
    - MUST be selected ONLY from this list: [{labels_str}]
 3. Identify the specific requested answer type (target_answer_type) using the words from the question
 4. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
@@ -49,16 +50,16 @@ Generate ONLY 1 search query and identify relevant entities.
 - The "key_entity" list should be specific. Exclude generic or abstract concepts (e.g., "medication", "drug", "treatment")
 
 ## Constraints
-- MUST: Provide ONLY 1 search query
-- MUST: Use specific keywords INCLUDING IMPORTANT BIOMEDICAL KEYWORDS
-- MUST: Select target_entity_labels ONLY from: [{labels_str}]
+- MUST: Provide ONLY 1 search query.
+- MUST: Select focus_spacy_based_entity_label ONLY from the following list: [{labels_str}].
+- CRITICAL: Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses.
 - MUST: Select target_answer_type as a term ONLY from the question.
 
 ## Output Format (JSON)
 [
     {{
         "search_keyword": "Google search query string",
-        "target_entity_labels": ["list of labels from allowed types"],
+        "focus_spacy_based_entity_label": ["list of labels from the given list"],
         "target_answer_type": "type of answer from question",
         "key_entity": ["list of specific entities from question"]
     }}
@@ -78,7 +79,7 @@ JSON desired output format:
 [
     {{ 
         "search_keyword": "Smith-Fineman-Myers syndrome mutated gene helicase domain",
-        "target_entity_labels": ["GENE"],
+        "focus_spacy_based_entity_label": ["GENE"],
         "target_answer_type": "gene",
         "key_entity": [
             "Smith-Fineman-Myers syndrome",
@@ -95,7 +96,7 @@ JSON desired output format:
 [
     {{ 
         "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
-        "target_entity_labels": ["CHEMICAL"],
+        "focus_spacy_based_entity_label": ["CHEMICAL"],
         "target_answer_type": "tetramer",
         "key_entity": [
             "lactate dehydrogenase tetramer",
@@ -112,7 +113,7 @@ JSON desired output format:
 [
     {{ 
         "search_keyword": "Ehlers Danlos syndromes named after along with Edvard Ehlers",
-        "target_entity_labels": ["DISEASE"],
+        "focus_spacy_based_entity_label": ["DISEASE"],
         "target_answer_type": "physician",
         "key_entity": [
             "Ehlers Danlos syndromes",
@@ -129,7 +130,7 @@ JSON desired output format:
 [
     {{ 
         "search_keyword": "benign autosomal recessive hyperbilirubinemia UGT1A1 gene mutation chromosome 2",
-        "target_entity_labels": ["DISEASE", "GENE"],
+        "focus_spacy_based_entity_label": ["DISEASE", "GENE"],
         "target_answer_type": "syndrome",
         "key_entity": [
             "benign autosomal recessive hyperbilirubinemia",
@@ -147,7 +148,7 @@ JSON desired output format:
 [
     {{ 
         "search_keyword": "osteochondritis type uneven vertebral growth kyphosis adolescence",
-        "target_entity_labels": ["DISEASE"],
+        "focus_spacy_based_entity_label": ["DISEASE"],
         "target_answer_type": "type of osteochondritis",
         "key_entity": [
             "osteochondritis",
@@ -164,6 +165,7 @@ Question: "{question}"
 
 ## Task
 Generate the search query and entity information for the provided question. Output as a JSON array.
+CRITICAL: You MUST map "VIRUS" to "ORGANISM" in focus_spacy_based_entity_label.
 """
             }
         ]
@@ -194,7 +196,7 @@ Adapt relation keywords based on the key entity's type to avoid ambiguity:
 ## Constraints
 - MUST: Provide ONLY 1 search query string
 - MUST: Omit conversational fillers (e.g., "Who is the")
-- MUST: Select target_entity_labels ONLY from: [{labels_str}]
+- MUST: Select focus_spacy_based_entity_label ONLY from: [{labels_str}]
 - MUST: Select target_answer_type as a term ONLY from the question.
 
 ## Output Format (JSON)
@@ -202,7 +204,7 @@ Adapt relation keywords based on the key entity's type to avoid ambiguity:
     {{
         "search_keyword": "generated Google search query string",
         "key_entity": "primary subject extracted from the question",
-        "target_entity_labels": ["list of labels from allowed types"],
+        "focus_spacy_based_entity_label": ["list of labels from allowed list"],
         "target_answer_type": "type of answer from question"
     }}
 ]
@@ -222,7 +224,7 @@ JSON desired output format:
     {{
         "search_keyword": "director 'Just Once A Great Lady (1957 Film)'",
         "key_entity": "Just Once A Great Lady (1957 Film)",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "director"
     }}
 ]
@@ -236,7 +238,7 @@ JSON desired output format:
     {{ 
         "search_keyword": "'Carnival Of Souls' country of origin",
         "key_entity": "Carnival Of Souls",
-        "target_entity_labels": ["GPE"],
+        "focus_spacy_based_entity_label": ["GPE"],
         "target_answer_type": "country"
     }}
 ]
@@ -250,7 +252,7 @@ JSON desired output format:
     {{
         "search_keyword": "'Engal Aasan' publication date",
         "key_entity": "Engal Aasan",
-        "target_entity_labels": ["DATE"],
+        "focus_spacy_based_entity_label": ["DATE"],
         "target_answer_type": "date"
     }}
 ]
@@ -264,7 +266,7 @@ JSON desired output format:
     {{
         "search_keyword": "'Michelle Tong (Writer)' date of birth",
         "key_entity": "Michelle Tong (Writer)",
-        "target_entity_labels": ["DATE"],
+        "focus_spacy_based_entity_label": ["DATE"],
         "target_answer_type": "date"
     }}
 ]
@@ -278,7 +280,7 @@ JSON desired output format:
     {{
         "search_keyword": "'William C. White' country of citizenship",
         "key_entity": "William C. White",
-        "target_entity_labels": ["NORP"],
+        "focus_spacy_based_entity_label": ["NORP"],
         "target_answer_type": "nationality"
     }}
 ]
@@ -303,10 +305,10 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             {
         "role": "system",
         "content": f"""## Role
-You are a highly specialized AI assistant and expert in biomedical knowledge.
+You are an expert in biomedical knowledge and complex question decomposition.
 
 ## Task
-Decompose complex biomedical questions into a sequence of simpler, interconnected natural language subquestions to create a logical reasoning plan.
+Decompose complex biomedical questions into a sequence of simpler, interconnected subquestions to create a logical reasoning plan.
 
 ## Instructions
 1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions.
@@ -314,8 +316,8 @@ Decompose complex biomedical questions into a sequence of simpler, interconnecte
 3. **Synthesis**: The final subquestion must synthesize the gathered information to answer the original complex question.
 
 ## Rules
-### subquestions
-- subquestions MUST be self-contained and understandable in isolation.
+### Subquestions
+- Subquestions MUST be self-contained and understandable in isolation.
 - Include all necessary context from previous steps so they are searchable by standard query engines.
 - Avoid pronouns or vague references (e.g., use "the gene" or "the specific enzyme" instead of "it").
 - Prefer subquestions that yield single, specific entities.
@@ -327,18 +329,23 @@ Decompose complex biomedical questions into a sequence of simpler, interconnecte
 ### Efficiency
 - Decompose into the MINIMUM number of steps necessary.
 
+### Distillation
+- The search_keyword should be a distillation of the subquestion.
+- Focus on essential nouns and technical terms.
+- The "key_entity" list should be specific. Exclude generic or abstract concepts (e.g., "medication", "drug", "treatment").
+
 ## Constraints
-- MUST: Use ONLY the following keys for each step: "subquestion", "search_keyword", "target_entity_labels", "target_answer_type", "key_entity".
-- MUST: Select target_entity_labels ONLY from: [{labels_str}].
+- MUST: Use ONLY the following keys for each step: "subquestion", "search_keyword", "focus_spacy_based_entity_label", "target_answer_type", "key_entity".
+- MUST: Select focus_spacy_based_entity_label ONLY from the following list: [{labels_str}].
+- CRITICAL: Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses.
 - MUST: Select target_answer_type as a term ONLY from the question.
-- MUST NOT: Include unnecessary words in search_keyword.
 
 ## Output Format (JSON)
 [
     {{
-        "subquestion": "Natural language subquestion",
-        "search_keyword": "Distilled, concise keyword-based query",
-        "target_entity_labels": ["list of labels from allowed types"],
+        "subquestion": "subquestion",
+        "search_keyword": "distilled, concise keyword-based query",
+        "focus_spacy_based_entity_label": ["list of labels from allowed list"],
         "target_answer_type": "type of answer from question",
         "key_entity": ["specific retrievable entities"]
     }}
@@ -361,14 +368,14 @@ JSON desired output format:
     {{
         "subquestion": "Which gene encode enzyme can inactivate antithrombin?",
         "search_keyword": "gene encode enzyme inactivate antithrombin",
-        "target_entity_labels": ["GENE"],
+        "focus_spacy_based_entity_label": ["GENE"],
         "target_answer_type": "gene",
         "key_entity": ["antithrombin"]
     }},
     {{
         "subquestion": "Which human chromosome contains that gene?",
         "search_keyword": "human chromosome gene encode enzyme inactivate antithrombin",
-        "target_entity_labels": ["BODY_PART"],
+        "focus_spacy_based_entity_label": ["BODY_PART"],
         "target_answer_type": "chromosome",
         "key_entity": []
     }}
@@ -383,15 +390,15 @@ JSON desired output format:
     {{
         "subquestion": "What is the primary organ of the human nervous system?",
         "search_keyword": "primary organ human nervous system",
-        "target_entity_labels": ["BODY_PART"],
+        "focus_spacy_based_entity_label": ["BODY_PART"],
         "target_answer_type": "organ",
         "key_entity": ["nervous system"]
     }},
     {{
         "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
         "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
-        "target_entity_labels": ["CHEMICAL"],
-        "target_answer_type": "other",
+        "focus_spacy_based_entity_label": ["CHEMICAL"],
+        "target_answer_type": "tetramer",
         "key_entity": []
     }}
 ]
@@ -405,7 +412,7 @@ JSON desired output format:
     {{
         "subquestion": "Which syndrome is characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
         "search_keyword": "syndrome flattened deformed vertebrae developmental delay lens coloboma",
-        "target_entity_labels": ["DISEASE"],
+        "focus_spacy_based_entity_label": ["DISEASE"],
         "target_answer_type": "syndrome",
         "key_entity": [
             "flattened vertebrae",
@@ -417,7 +424,7 @@ JSON desired output format:
     {{
         "subquestion": "Which gene mutation is responsible for that syndrome?",
         "search_keyword": "gene mutation syndrome flattened deformed vertebrae developmental delay lens coloboma",
-        "target_entity_labels": ["GENE"],
+        "focus_spacy_based_entity_label": ["GENE"],
         "target_answer_type": "gene mutation",
         "key_entity": []
     }}
@@ -432,7 +439,7 @@ JSON desired output format:
     {{
         "subquestion": "Which pioneering institutions influenced John Langdon Down's work at Earlswood Asylum?",
         "search_keyword": "pioneering institutions John Langdon Down Earlswood Asylum",
-        "target_entity_labels": ["ORG"],
+        "focus_spacy_based_entity_label": ["ORG"],
         "target_answer_type": "institution",
         "key_entity": [
             "John Langdon Down",
@@ -442,7 +449,7 @@ JSON desired output format:
     {{
         "subquestion": "In which London suburb was that pioneering institution located?",
         "search_keyword": "London location pioneering institution John Langdon Down Earlswood Asylum",
-        "target_entity_labels": ["GPE"],
+        "focus_spacy_based_entity_label": ["GPE"],
         "target_answer_type": "suburb",
         "key_entity": []
     }}
@@ -457,7 +464,7 @@ JSON desired output format:
     {{
         "subquestion": "Which gene is responsible for Carpenter syndrome?",
         "search_keyword": "gene responsible Carpenter syndrome",
-        "target_entity_labels": ["GENE"],
+        "focus_spacy_based_entity_label": ["GENE"],
         "target_answer_type": "gene",
         "key_entity": [
             "Carpenter syndrome"
@@ -466,7 +473,7 @@ JSON desired output format:
     {{
         "subquestion": "On which chromosome is that gene located?",
         "search_keyword": "chromosome location gene",
-        "target_entity_labels": ["BODY_PART"],
+        "focus_spacy_based_entity_label": ["BODY_PART"],
         "target_answer_type": "chromosome",
         "key_entity": []
     }}
@@ -483,6 +490,7 @@ Original Complex Question: '{question}'
 
 ## Task
 Decompose the question into subquestions following the examples and rules. Output in JSON format.
+CRITICAL: You MUST map "VIRUS" to "ORGANISM" in focus_spacy_based_entity_label.
 """
                 }
             ]
@@ -496,7 +504,7 @@ Decompose the question into subquestions following the examples and rules. Outpu
 You are a highly specialized AI assistant and expert at decomposing complex questions.
 
 ## Task
-Decompose complex questions into a sequence of simpler, interconnected natural language subquestions to create a logical reasoning plan.
+Decompose complex questions into a sequence of simpler, interconnected subquestions to create a logical reasoning plan.
 
 ## Instructions
 1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions.
@@ -505,7 +513,7 @@ Decompose complex questions into a sequence of simpler, interconnected natural l
 
 ## Rules
 ### Dynamic Planning
-- subquestions can be self-contained or templates.
+- Subquestions can be self-contained or templates.
 - Placeholders (e.g., "the entity found in the previous step") indicate where programmatic insertion will occur.
 - Search keywords can also be templates (e.g., "director date of birth") intended for combination with prior results.
 
@@ -513,16 +521,16 @@ Decompose complex questions into a sequence of simpler, interconnected natural l
 - Decompose into the MINIMUM number of steps necessary.
 
 ## Constraints
-- MUST: Select target_entity_labels ONLY from: [{labels_str}].
+- MUST: Select focus_spacy_based_entity_label ONLY from: [{labels_str}].
 - MUST: Select target_answer_type as a term ONLY from the question.
 
 ## Output Format (JSON)
 [
     {{
-        "subquestion": "Natural language subquestion or template",
-        "search_keyword": "Keyword-based query or template",
-        "key_entity": "Specific entity name or empty for dependent steps",
-        "target_entity_labels": ["list of labels from allowed types"],
+        "subquestion": "subquestion or template",
+        "search_keyword": "keyword-based query or template",
+        "key_entity": "specific entity name or empty for dependent steps",
+        "focus_spacy_based_entity_label": ["list of labels from allowed list"],
         "target_answer_type": "type of answer from question"
     }}
 ]
@@ -544,14 +552,14 @@ JSON desired output format:
         "subquestion": "What is the director of film Move (1970 Film)?",
         "search_keyword": "director 'Move (1970 Film)'",
         "key_entity": "Move (1970 Film)",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "director"
     }},
     {{
         "subquestion": "What country of citizenship is that film director from?",
         "search_keyword": "country of citizenship",
         "key_entity": "",
-        "target_entity_labels": ["GPE"],
+        "focus_spacy_based_entity_label": ["GPE"],
         "target_answer_type": "country"
     }}
 ]
@@ -565,14 +573,14 @@ JSON desired output format:
         "subquestion": "Who directed the (1966 Film) 'Blindfold'?",
         "search_keyword": "director 'Blindfold (1966 Film)'",
         "key_entity": "Blindfold (1966 Film)",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "director"
     }},
     {{
         "subquestion": "When was that person born?",
         "search_keyword": "date of birth",
         "key_entity": "",
-        "target_entity_labels": ["DATE"],
+        "focus_spacy_based_entity_label": ["DATE"],
         "target_answer_type": "date"
     }}
 ]
@@ -586,14 +594,14 @@ JSON desired output format:
         "subquestion": "Who was the husband of Helen F. Holt?",
         "search_keyword": "'Helen F. Holt' husband",
         "key_entity": "Helen F. Holt",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "husband"
     }},
     {{
         "subquestion": "What is the date of death of that person?",
         "search_keyword": "date of death",
         "key_entity": "",
-        "target_entity_labels": ["DATE"],
+        "focus_spacy_based_entity_label": ["DATE"],
         "target_answer_type": "date"
     }}
 ]
@@ -607,7 +615,7 @@ JSON desired output format:
         "subquestion": "Who was the director of the film 'The Right Of The Strongest'?",
         "search_keyword": "director film 'The Right Of The Strongest'",
         "key_entity": "The Right Of The Strongest",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "director"
         
     }},
@@ -615,7 +623,7 @@ JSON desired output format:
         "subquestion": "Where did that person die?",
         "search_keyword": "place of death",
         "key_entity": "",
-        "target_entity_labels": ["GPE"],
+        "focus_spacy_based_entity_label": ["GPE"],
         "target_answer_type": "place"
     }}
 ]
@@ -629,14 +637,14 @@ JSON desired output format:
         "subquestion": "Who directed the 'Just Once A Great Lady (1957 Film)'?",
         "search_keyword": "director 'Just Once A Great Lady (1957 Film)'",
         "key_entity": "Just Once A Great Lady (1957 Film)",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "director"
     }},
     {{
         "subquestion": "Who was the spouse of that person?",
         "search_keyword": "spouse of",
         "key_entity": "",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "spouse"
     }}
 ]
@@ -649,14 +657,14 @@ JSON desired output format:
         "subquestion": "Who produced the 'My Friends Told Me About You'?",
         "search_keyword": "producer 'My Friends Told Me About You'",
         "key_entity": "My Friends Told Me About You",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "producer"
     }},
     {{
         "subquestion": "When was that person born?",
         "search_keyword": "date of birth",
         "key_entity": "",
-        "target_entity_labels": ["DATE"],
+        "focus_spacy_based_entity_label": ["DATE"],
         "target_answer_type": "date"
     }}
 ]
@@ -682,7 +690,7 @@ Decompose the question into subquestions following the examples and rules. Outpu
 You are a highly specialized AI assistant and expert in analyzing complex questions with hidden sequential logic, particularly in social and organizational structures (e.g., family trees, corporate hierarchies).
 
 ## Task
-Decompose complex questions into a sequence of simpler, interconnected natural language subquestions to create a logical reasoning plan.
+Decompose complex questions into a sequence of simpler, interconnected subquestions to create a logical reasoning plan.
 
 ## Instructions
 1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions.
@@ -691,7 +699,7 @@ Decompose complex questions into a sequence of simpler, interconnected natural l
 
 ## Rules
 ### Dynamic Planning
-- subquestions must be templates that depend on prior answers.
+- Subquestions must be templates that depend on prior answers.
 - Use clear placeholders (e.g., "the entity found in the previous step") for programmatic insertion.
 - Search keywords are also templates designed to be combined with prior results.
 
@@ -700,16 +708,16 @@ Decompose complex questions into a sequence of simpler, interconnected natural l
 - If a question can be answered in a single step, do not decompose it.
 
 ## Constraints
-- MUST: Select target_entity_labels ONLY from: [{labels_str}].
+- MUST: Select focus_spacy_based_entity_label ONLY from: [{labels_str}].
 - MUST: Select target_answer_type as a term ONLY from the question.
 
 ## Output Format (JSON)
 [
     {{
-        "subquestion": "Natural language subquestion or template",
-        "search_keyword": "Keyword-based query or template",
-        "key_entity": "Specific entity name or empty for dependent steps",
-        "target_entity_labels": ["list of labels from allowed types"],
+        "subquestion": "subquestion or template",
+        "search_keyword": "keyword-based query or template",
+        "key_entity": "specific entity name or empty for dependent steps",
+        "focus_spacy_based_entity_label": ["list of labels from allowed list"],
         "target_answer_type": "type of answer from question"
     }}
 ]
@@ -729,14 +737,14 @@ JSON desired output format:
     "subquestion": "Who is the director of the movie Parasite?",
     "search_keyword": “director of the movie 'Parasite'",
     "key_entity": “Parasite",
-    "target_entity_labels": ["PERSON"],
+    "focus_spacy_based_entity_label": ["PERSON"],
     "target_answer_type": "director"
 }},
 {{
     "subquestion": "Which award did that director receive at the Oscars?",
     "search_keyword": "award receive at Oscars",
     "key_entity": "",
-    "target_entity_labels": ["WORK_OF_ART"],
+    "focus_spacy_based_entity_label": ["WORK_OF_ART"],
     "target_answer_type": "award"
 }}
 ]
@@ -750,14 +758,14 @@ JSON desired output format:
     "subquestion": "Who was the father of Ada Lovelace (1815–1852)?",
     "search_keyword": "Ada Lovelace (1815–1852) father",
     "key_entity": "Ada Lovelace (1815–1852)",
-    "target_entity_labels": ["PERSON"],
+    "focus_spacy_based_entity_label": ["PERSON"],
     "target_answer_type": "father"
 }},
 {{
     "subquestion": "When is that person date of birth?",
     "search_keyword": "date of birth",
     "key_entity": "",
-    "target_entity_labels": ["DATE"],
+    "focus_spacy_based_entity_label": ["DATE"],
     "target_answer_type": "date"
 }}
 ]
@@ -770,14 +778,14 @@ JSON desired output format:
     "subquestion":"Who was the director of film Doctor Strange (2016 film)",
     "search_keyword": "director of film 'Doctor Strange (2016 film)'",
     "key_entity": "Doctor Strange (2016 film)",
-    "target_entity_labels": ["PERSON"],
+    "focus_spacy_based_entity_label": ["PERSON"],
     "target_answer_type": "director"
 }},
 {{
     "subquestion": "Where was director born?",
     "search_keyword": "place of birth",
     "key_entity": "",
-    "target_entity_labels": ["GPE"],
+    "focus_spacy_based_entity_label": ["GPE"],
     "target_answer_type": "place"
 }}
 ]
@@ -790,14 +798,14 @@ JSON desired output format:
     "subquestion":"Who was the director of film Web Of Suspicion?",
     "search_keyword": "director of film 'Web Of Suspicion'",
     "key_entity": "Web Of Suspicion",
-    "target_entity_labels": ["PERSON"],
+    "focus_spacy_based_entity_label": ["PERSON"],
     "target_answer_type": "director"
 }},
 {{
     "subquestion": "Which country of citizenship is that director from?",
     "search_keyword": "country of citizenship",
     "key_entity": "",
-    "target_entity_labels": ["GPE"],
+    "focus_spacy_based_entity_label": ["GPE"],
     "target_answer_type": "country"
 }}
 ]
@@ -831,7 +839,7 @@ Identify the key entity, the key relation, target entity labels, and the answer 
 3. Determine the expected answer type and entity labels
 
 ## Constraints
-- MUST: Select target_entity_labels ONLY from: [{labels_str}]
+- MUST: Select focus_spacy_based_entity_label ONLY from: [{labels_str}]
 - MUST: Select target_answer_type as a term ONLY from the question.
 
 ## Output Format (JSON)
@@ -840,7 +848,7 @@ Identify the key entity, the key relation, target entity labels, and the answer 
         "search_keyword": "Distilled search query",
         "key_entity": "primary subject",
         "key_relation": "core relationship",
-        "target_entity_labels": ["list of labels from allowed types"],
+        "focus_spacy_based_entity_label": ["list of labels from allowed list"],
         "target_answer_type": "type of answer from question"
     }}
 ]
@@ -861,7 +869,7 @@ JSON desired output format:
         "search_keyword": "'Giselda Volodi' sibling-in-law",
         "key_entity": "Giselda Volodi",
         "key_relation": "sibling-in-law",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "sibling-in-law"
     }}
 ]
@@ -877,7 +885,7 @@ JSON desired output format:
         "search_keyword": "'Humphrey Of Montfort' maternal grandmother",
         "key_entity": "Humphrey Of Montfort",
         "key_relation": "maternal grandmother",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "grandmother"
     }}
 ]
@@ -893,7 +901,7 @@ JSON desired output format:
         "search_keyword": "'Margaretta Taylor' aunt",
         "key_entity": "Margaretta Taylor",
         "key_relation": "aunt",
-        "target_entity_labels": ["PERSON"],
+        "focus_spacy_based_entity_label": ["PERSON"],
         "target_answer_type": "aunt"
     }}
 ]
@@ -909,7 +917,7 @@ JSON desired output format:
         "search_keyword": "'Fred Diamond' field of work",
         "key_entity": "Fred Diamond",
         "key_relation": "field of work",
-        "target_entity_labels": ["ORG"],
+        "focus_spacy_based_entity_label": ["ORG"],
         "target_answer_type": "field of work"
     }}
 ]
@@ -948,6 +956,7 @@ Answer the following biological question based on the provided information.
 - **Organism questions**: Return organism type (e.g., "bacterium")
 
 ## Constraints
+- MUST: Your short_answer MUST be MAX 3 words.
 - MUST NOT: Add any extra commentary outside the JSON
 - MUST NOT: Use abbreviations for entities if the full name is available
 
@@ -1516,7 +1525,7 @@ Context:
 
 def get_answer_rules_prediction_system_prompt() -> str:
     
-    return """You are an expert in natural language understanding and question analysis.
+    return """You are an expert in understanding and question analysis.
 
 Your task is to analyze questions and determine the best answer formatting rules to apply.
 

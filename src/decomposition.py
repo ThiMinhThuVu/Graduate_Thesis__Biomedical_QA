@@ -135,7 +135,7 @@ def create_relation_path_inference(entity, relation, sample_id, target_label, ta
                     "subquestion": sub0,
                     "search_keyword": s0,
                     "key_entity": [entity],
-                    "target_entity_labels": target_label,
+                    "focus_spacy_based_entity_label": target_label,
                     "target_answer_type": target_answer_type
                 }, 
                 "1": {
@@ -144,7 +144,7 @@ def create_relation_path_inference(entity, relation, sample_id, target_label, ta
                     "subquestion": sub1,
                     "search_keyword": s1,
                     "key_entity": [],
-                    "target_entity_labels": target_label,
+                    "focus_spacy_based_entity_label": target_label,
                     "target_answer_type": target_answer_type
                 }
             }
@@ -175,7 +175,7 @@ def decompose_question_sequential(question, sample_id, filepath, is_seq=True, da
         if type_q == "inference":
             key_entity = search_results[0]['key_entity']
             relation_entity = search_results[0]['key_relation']
-            target_label = search_results[0]['target_entity_labels']
+            target_label = search_results[0]['focus_spacy_based_entity_label']
             target_answer_type = search_results[0].get('target_answer_type', 'other')
             output, n_path = create_relation_path_inference(key_entity, relation_entity, sample_id, target_label, target_answer_type)
         else:
@@ -203,7 +203,7 @@ def decompose_question_sequential(question, sample_id, filepath, is_seq=True, da
                     "subquestion": subquestion,
                     "search_keyword": sub['search_keyword'],
                     "key_entity": key_entity,
-                    "target_entity_labels": sub["target_entity_labels"],
+                    "focus_spacy_based_entity_label": sub["focus_spacy_based_entity_label"],
                     "target_answer_type": sub.get("target_answer_type", "other")
                 }
                 
