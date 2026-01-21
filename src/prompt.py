@@ -3,7 +3,10 @@ import json
 
 BIO_LABELS_LIST = ["DISEASE", "CHEMICAL", "DRUG", "GENE", "BODY_PART", "ORG", "GPE"]
 WIKI_LABELS_LIST = ["PERSON", "WORK_OF_ART", "GPE", "ORG", "LOC", "EVENT", "CARDINAL", "NORP", "LANGUAGE"]
-    
+
+# BIO_ANSWER_TYPES = ["GENE", "CHROMOSOME", "GENE_LOCATION", "GENETIC_VARIANT", "INHERITANCE_PATTERN", "PATHWAY", "PROTEIN", "ENZYME", "MOLECULAR_FUNCTION", "CELL_TISSUE_TYPE", "ORGANELLE", "ANATOMY", "DISEASE_CONDITION", "PHENOTYPE_SIGN", "RISK_FACTOR", "PROGNOSIS", "MEDICATION", "MEDICAL_PROCEDURE", "DIAGNOSTIC_TEST", "PATHOGEN", "BIOLOGICAL_TAXON", "CHEMICAL_ENTITY", "POPULATION_GROUP", "TEMPORAL_DATA", "QUANTITY", "PERSON_ORGANIZATION", "YES_NO", "OTHER"]
+# WIKI_ANSWER_TYPES = []
+
 def load_prompt_gen_sub(question=None, is_seq=False, dataset=None, type_q=None, context=None):
     if question:
         if is_seq:
@@ -35,23 +38,25 @@ Generate ONLY 1 search query and identify relevant entities.
 
 ## Instructions
 1. Provide a single, keyword-based search query string that best targets the core information needed from the original question
-2. Identify a list of target entity types (target_labels) that need to be extracted from the context to answer the question
+2. Identify a list of target entity types (target_entity_labels) that need to be extracted from the context to answer the question
    - MUST be selected ONLY from this list: [{labels_str}]
-3. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
+3. Identify the specific requested answer type (target_answer_type) using the words from the question
+4. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
 
 ## Rules
 - The query should be a distillation of the original complex question, focusing on essential keywords
 - The query MUST be concise, using specific keywords INCLUDING IMPORTANT BIOMEDICAL KEYWORDS, nouns, and technical terms critical to answering the question
-- The "target_labels" should contain the entity type(s) that represent the expected answer or the core subject of the question
+- The "target_entity_labels" should contain the entity type(s) that represent the expected answer or the core subject of the question
+- The "target_answer_type" should be a generic term selected ONLY from the question
 - The "key_entity" list should be specific. Exclude generic or abstract concepts (e.g., "medication", "drug", "treatment")
 
 ## Output Format (JSON)
-The final output MUST be a JSON array containing a single object with keys: "search_keyword", "target_labels" (a list of strings), and "key_entity".
+The final output MUST be an array containing a single object with keys: "search_keyword", "target_entity_labels" (a list of strings), "target_answer_type", and "key_entity".
 """
             },
             {
         "role": "user",
-        "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is a JSON array containing a single object with a "search_keyword" field holding the Google search query string.
+        "content": f"""Here are 5 examples demonstrating the desired output format, which is an array containing a single object with a "search_keyword" field holding the Google search query string.
 
     ---
     **Example 1:**
@@ -62,7 +67,8 @@ The final output MUST be a JSON array containing a single object with keys: "sea
     [
         {{ 
             "search_keyword": "Smith-Fineman-Myers syndrome mutated gene helicase domain",
-            "target_labels": ["GENE"],
+            "target_entity_labels": ["GENE"],
+            "target_answer_type": "gene",
             "key_entity": [
                 "Smith-Fineman-Myers syndrome",
                 "helicase domain"
@@ -78,7 +84,8 @@ The final output MUST be a JSON array containing a single object with keys: "sea
     [
         {{ 
             "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
-            "target_labels": ["CHEMICAL"],
+            "target_entity_labels": ["CHEMICAL"],
+            "target_answer_type": "other",
             "key_entity": [
                 "lactate dehydrogenase tetramer",
                 "nervous system"
@@ -94,9 +101,10 @@ The final output MUST be a JSON array containing a single object with keys: "sea
     [
         {{ 
             "search_keyword": "Ehlers Danlos syndromes named after along with Edvard Ehlers",
-            "target_labels": ["DISEASE"],
+            "target_entity_labels": ["DISEASE"],
+            "target_answer_type": "physician",
             "key_entity": [
-                "Ehlers-Danlos syndrome",
+                "Ehlers Danlos syndromes",
                 "Edvard Ehlers"
             ]            
         }}
@@ -110,7 +118,8 @@ The final output MUST be a JSON array containing a single object with keys: "sea
     [
         {{ 
             "search_keyword": "benign autosomal recessive hyperbilirubinemia UGT1A1 gene mutation chromosome 2",
-            "target_labels": ["DISEASE", "GENE"],
+            "target_entity_labels": ["DISEASE", "GENE"],
+            "target_answer_type": "syndrome",
             "key_entity": [
                 "benign autosomal recessive hyperbilirubinemia",
                 "UGT1A1 gene",
@@ -127,7 +136,8 @@ The final output MUST be a JSON array containing a single object with keys: "sea
     [
         {{ 
             "search_keyword": "osteochondritis type uneven vertebral growth kyphosis adolescence",
-            "target_labels": ["DISEASE"],
+            "target_entity_labels": ["DISEASE"],
+            "target_answer_type": "other",
             "key_entity": [
                 "osteochondritis",
                 "vertebral growth",
@@ -144,12 +154,13 @@ The final output MUST be a JSON array containing a single object with keys: "sea
 
     Task: Generate ONLY 1 effective Google search query that distills the core of the given question.
 
-    Return a JSON array with "search_keyword" and "target_labels" (choosing from [{labels_str}]). For example:
+    Return an array with "search_keyword" and "target_entity_labels" (choosing from [{labels_str}]). For example:
     [
         {{ 
             "search_keyword": "...",
-            "target_labels": [...],
-            "key_entity": [...],
+            "target_entity_labels": [...],
+            "target_answer_type": "...",
+            "key_entity": [...]
         }}
     ]
     """
