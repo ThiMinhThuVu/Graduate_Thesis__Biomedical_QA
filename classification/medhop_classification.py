@@ -16,7 +16,6 @@ def get_safe_model_path():
         # Nếu không tìm thấy cache, trả về tên model gốc để thư viện tự tải
         return Config.hf_model_name
 
-
 class BioLinkBERTClassifier(nn.Module):
     def __init__(self, model_path_or_name, freeze_until=4):
         super().__init__()
