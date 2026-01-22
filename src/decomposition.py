@@ -1,5 +1,5 @@
 from src.gpt_request import request_api
-from src.prompt import load_prompt_gen_sub, prompt_split_question
+from src.prompt import load_prompt_gen_sub, prompt_split_parallel_question_medhop, prompt_split_parallel_question_wiki
 from src.split_question import split_comparison_question, split_bridge_comparison_fallback
 from utils.util import load_json, save_json
 import json
@@ -213,9 +213,19 @@ def decompose_question_sequential(question, sample_id, filepath, is_seq=True, da
         print(f"Error parsing JSON response in generate_subquestion: {e}")
         print(f"Raw response: {result_json}")
         raise ValueError(f"Invalid JSON response from API: {result_json}")
-    
+
+def split_parallel_question_medhop(question):
+    messages = prompt_split_parallel_question_medhop(question)
+    response = request_api(messages, model='gpt-4o-mini')
+    try:
+        response = json.loads(response)
+    except json.JSONDecodeError:
+        print("Lỗi: Không thể phân tích JSON từ phản hồi của LLM.")
+        raise ValueError(f"Invalid JSON response from API: {response}")
+    return response
+
 def split_bridge_comparison_question(question):
-    messages = prompt_split_question(question)
+    messages = prompt_split_parallel_question_wiki(question)
     response = request_api(messages, model='gpt-4o-mini')
         
     try:
@@ -227,15 +237,15 @@ def split_bridge_comparison_question(question):
     return response
 
 def decompose_question_parallel(question, dataset=None, type_q=None):
-    if dataset != 'wiki':
-        return [question]
-    
-    if type_q == 'comparison':
-        return split_comparison_question(question)
-    elif type_q == 'bridge_comparison':
-        return split_bridge_comparison_question(question)
-    else:
-        return [question]
+    if dataset == 'medhop':
+        if type_q == 'parallel':
+            return split_parallel_question_medhop(question)
+    elif dataset == 'wiki':
+        if type_q == 'comparison':
+            return split_comparison_question(question)
+        elif type_q == 'bridge_comparison':
+            return split_bridge_comparison_question(question)
+    return [question]
         
     
 if __name__ == "__main__":
