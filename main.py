@@ -6,7 +6,7 @@ from src.retrieval import retrieve_evidence, remove_retrieve_evidence
 from src.extract_ner import extract_entities_from_evidence
 from src.generate_answer import *
 from utils.util import *
-from classification.classification import load_model_classification, classify_question
+from classification.classification_run import load_model_classification, classify_question
 from sentence_transformers import SentenceTransformer
 
 global hash_id_cache
@@ -353,7 +353,7 @@ if __name__ == "__main__":
      
         question = sample['Question']
         type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
-        if type_q in ['non-sequence', 'comparison']:
+        if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False
         else:
             is_seq = True

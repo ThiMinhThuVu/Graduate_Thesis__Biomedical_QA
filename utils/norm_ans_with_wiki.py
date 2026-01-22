@@ -68,7 +68,7 @@ def get_title_2(QUERY):
             except Exception as e:
                 print(f"Error fetching page: {e}\n")
     else:
-        print(f"No matching articles found for the query: '{QUERY}'")
+        print(f"[Norm] No matching articles found for the query: '{QUERY}'")
     return None
 
 

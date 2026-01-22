@@ -3,6 +3,9 @@ from transformers import AutoTokenizer, AutoModel, AutoModelForSequenceClassific
 from torch import nn
 import yaml
 import os
+import numpy as np
+
+from classification.medhop_classification import load_trained_model_medhop, inference_question
 
 class BERTClassifier(nn.Module):
     def __init__(self, model_name='bert-base-uncased', num_classes=4, dropout=0.3):
@@ -32,14 +35,15 @@ def load_model_classification(model_type, model_path, tokenizer_dir):
         tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir)
         return model, tokenizer, device
     elif model_type == 'medhop':
-        model = AutoModelForSequenceClassification.from_pretrained(
-            'dmis-lab/biobert-base-cased-v1.1', num_labels=2
-        )
-        model.load_state_dict(torch.load(model_path, map_location=device))
-        model.to(device)
-        model.eval()
-        tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir)
-        return model, tokenizer, device
+        # model = AutoModelForSequenceClassification.from_pretrained(
+        #     'dmis-lab/biobert-base-cased-v1.1', num_labels=2
+        # )
+        # model.load_state_dict(torch.load(model_path, map_location=device))
+        # model.to(device)
+        # model.eval()
+        # tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir)
+        # return model, tokenizer, device
+        return load_trained_model_medhop(model_path, tokenizer_dir)
     else:
         raise ValueError(f"Unknown model_type: {model_type}")
 
@@ -56,14 +60,25 @@ def classify_question(model_type, model, tokenizer, device, question, max_length
             pred_label = torch.argmax(probs, dim=1).item()
             label_map = {0: 'inference', 1: 'compositional', 2: 'comparison', 3: 'bridge_comparison'}
         elif model_type == 'medhop':
-            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
-            logits = outputs.logits
-            probs = torch.softmax(logits, dim=1)
-            pred_label = torch.argmax(probs, dim=1).item()
-            label_map = {0: 'non-sequence', 1: 'sequence'}
+            # outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            # logits = outputs.logits
+            # probs = torch.softmax(logits, dim=1)
+            # pred_label = torch.argmax(probs, dim=1).item()
+            # label_map = {0: 'non-sequence', 1: 'sequence'}
+            
+            output = inference_question(question, model, tokenizer)
+            label_map = {0: 'direct', 1: 'sequence', 2: 'parallel'}
+            # probs = output['confidence']
+            probs = output['all_probs']
+            pred_label = output['predicted_label']
         else:
             raise ValueError(f"Unknown model_type: {model_type}")
-    return label_map.get(pred_label, 'unknown'), probs.cpu().numpy().flatten()
+    # If probs is already a numpy array, do not call .cpu()
+    if hasattr(probs, 'cpu'):
+        probs_out = probs.cpu().numpy().flatten()
+    else:
+        probs_out = np.array(probs).flatten()
+    return label_map.get(pred_label, 'unknown'), probs_out
 
 if __name__ == "__main__":
     # Đường dẫn tới file config.yaml
@@ -80,6 +95,8 @@ if __name__ == "__main__":
 
     # Ví dụ câu hỏi
     question = "What is a common risk factor for both ectopic pregnancy and endometriosis?"
+    # question = "The disease that Pseudo-Hurler polydystrophy resembles is classified as a member of a class of diseases related to a type of polysaccharides. This group of polysaccharides is classified into how many types, based on their core disaccharide structures?"
+
     predicted_type, probabilities = classify_question(model_type, model, tokenizer, device, question)
     print(f"Predicted type: {predicted_type}")
     print(f"Probabilities: {probabilities}")

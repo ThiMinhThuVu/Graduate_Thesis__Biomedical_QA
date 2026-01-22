@@ -58,6 +58,7 @@ classification:
     tokenizer_dir: "classification/model/wiki/tokenizer"
 
   medhop: 
-    model_path: "classification/model/medhop/biobert_classifier.pth"
-    tokenizer_dir: "classification/model/medhop/seq_tokenizer"
-
+    # model_path: "classification/model/medhop/biobert_classifier.pth"
+    # tokenizer_dir: "classification/model/medhop/seq_tokenizer"
+    model_path: "classification/model/medhop/cache/best_model.pt"
+    tokenizer_dir: "classification/model/medhop/cache/biolinkbert_cache"
