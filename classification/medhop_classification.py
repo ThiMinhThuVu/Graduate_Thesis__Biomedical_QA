@@ -5,8 +5,17 @@ from transformers import AutoTokenizer, AutoModel
 
 class Config:
     hf_model_name = "michiyasunaga/BioLinkBERT-base"    
+    local_model_path = "classification/model/medhop/cache/biolinkbert_cache"
     max_length = 128
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+def get_safe_model_path():
+    if os.path.exists(Config.local_model_path):
+        return Config.local_model_path
+    else:
+        # Nếu không tìm thấy cache, trả về tên model gốc để thư viện tự tải
+        return Config.hf_model_name
+
 
 class BioLinkBERTClassifier(nn.Module):
     def __init__(self, model_path_or_name, freeze_until=4):
@@ -31,13 +40,13 @@ def load_trained_model_medhop(model_file_path, tok_path):
 
     if not os.path.exists(model_file_path):
         raise FileNotFoundError(f"Không tìm thấy file weights tại: {model_file_path}")
-    else:
-        model_file_path = "michiyasunaga/BioLinkBERT-base" 
-        
-    print(f"Loading architecture from: {model_file_path}")
+   
+    # 1. Xác định nơi lấy config/tokenizer 
+    arch_path = get_safe_model_path()
+    print(f"Loading architecture from: {arch_path}")
     
     # 2. Khởi tạo khung Model
-    model = BioLinkBERTClassifier(model_file_path, freeze_until=0)
+    model = BioLinkBERTClassifier(arch_path, freeze_until=0)
     
     # 3. Load Weights đã train
     print(f"Loading weights from: {model_file_path}")

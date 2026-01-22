@@ -1,6 +1,6 @@
 run:
   dataset: "medhop" #"medhop" #"wiki"
-  threads: [0 , 0]
+  threads: [0 , 20]
   data_split: "test"
 
 type_run: {
@@ -55,4 +55,4 @@ classification:
 
   medhop: 
     model_path: "classification/model/medhop/cache/best_model.pt"
-    tokenizer_dir: "classification/model/medhop/cache/biolinkbert_cache"
+    tokenizer_dir: "classification/model/medhop/cache/biolinkbert_cache" 
