@@ -1232,21 +1232,21 @@ def prompt_split_parallel_question_medhop(question):
 You are an expert in biomedical question decomposition
 
 ## Task
-Split a complex comparative question into exactly two simple subquestions
+Split a complex comparative question into independent subquestions based on the entities being compared
 
 ## Constraints
-- MUST: Output ONLY a valid array of two strings in JSON format
+- MUST: Output ONLY a valid array of strings in JSON format
 - MUST NOT: Include any explanation, introductory text, or markdown formatting
 - MUST NOT: Change the core entities or the relation being compared
 - MUST: Ensure subquestions are complete and context-rich enough to be answered independently"""
 
     user_prompt = f"""## Task
-Decompose the provided complex comparative question into two retrieval-focused subquestions
+Decompose the provided complex comparative question into retrieval-focused subquestions
 
 ## Instructions
-1. Identify the two primary entities being compared in the question
-2. Identify the specific attribute or property (e.g., nationality, date of birth, location) being compared
-3. Create two independent questions that each ask for that attribute for one of the entities
+1. Identify all primary entities being compared in the question
+2. Identify the specific attribute or property being compared
+3. Create independent questions that each ask for that attribute for each entity identified
 4. Format the final result as a simple array of strings
 
 ## Information
@@ -1255,11 +1255,12 @@ Question: "{question}"
 ## Examples
 ---
 **Example 1:**
-Input: "How does the inheritance of Ornithine Carbamoyltransferase Deficiency Disease compare to that of Hyperphosphatemia?"
+Input: "Can patients exhibiting symptoms of either aniridia, genitourinary anomalies, or intellectual disability also be at an increased risk for developing nephroblastoma?"
 Output:
 [
-    "What is the inheritance pattern of Ornithine Carbamoyltransferase Deficiency Disease?",
-    "What is the inheritance pattern of Hyperphosphatemia?"
+    "Are patients with aniridia at an increased risk for developing nephroblastoma?",
+    "Are patients with genitourinary anomalies at an increased risk for developing nephroblastoma?",
+    "Are patients with intellectual disability at an increased risk for developing nephroblastoma?"
 ]
 ---
 **Example 2:**
@@ -1272,7 +1273,7 @@ Output:
 ---
 
 ## Output Format (JSON)
-["sub_question_1", "sub_question_2"]
+["sub_question_1", "sub_question_2", "..."]
 """
         
     messages = [
@@ -1290,7 +1291,7 @@ You are an expert in question decomposition
 Split a complex comparative question into exactly two simple subquestions
 
 ## Constraints
-- MUST: Output ONLY a valid array of two strings in JSON format
+- MUST: Output ONLY a valid array of strings in JSON format
 - MUST NOT: Include any explanation, introductory text, or markdown formatting
 - MUST NOT: Change the core entities or the relation being compared
 - MUST: Ensure subquestions are complete and context-rich enough to be answered independently"""
