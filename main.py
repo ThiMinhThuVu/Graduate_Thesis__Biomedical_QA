@@ -8,6 +8,7 @@ from src.generate_answer import *
 from utils.util import *
 from classification.classification_run import load_model_classification, classify_question
 from sentence_transformers import SentenceTransformer
+from transformers import AutoModel
 
 global hash_id_cache
 global wiki_cache_data
@@ -34,8 +35,9 @@ def load_model(dataset, configs):
         extractor_model = spacy.load("en_ner_bc5cdr_md")
         extractor_model_2 = spacy.load("en_ner_jnlpba_md")
         extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
+        
         # Biomedical embedding
-        embedding_model = SentenceTransformer("dmis-lab/biobert-base-cased-v1.1") #pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb
+        embedding_model = AutoModel.from_pretrained("dmis-lab/biobert-base-cased-v1.1")
         print("Loaded biomedical NER + embedding model")
 
     elif dataset == "wiki":
