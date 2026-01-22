@@ -32,10 +32,10 @@ def load_search_keyword_prompt(question, dataset=None, type_q=None):
             {
         "role": "system",
         "content": f"""## Role
-You are an expert in generating concise and effective Google search queries to help answer complex biomedical questions.
+You are an expert in generating concise and effective Google search queries to help answer complex biomedical questions
 
 ## Task
-Generate ONLY 1 search query and identify relevant entities.
+Generate ONLY 1 search query and identify relevant entities
 
 ## Instructions
 1. Provide a single, keyword-based search query string that best targets the core information needed from the original question
@@ -50,10 +50,10 @@ Generate ONLY 1 search query and identify relevant entities.
 - The "key_entity" list should be specific. Exclude generic or abstract concepts (e.g., "medication", "drug", "treatment")
 
 ## Constraints
-- MUST: Provide ONLY 1 search query.
-- MUST: Select focus_spacy_based_entity_label ONLY from the following list: [{labels_str}].
-- CRITICAL: Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses.
-- MUST: Select target_answer_type as a term ONLY from the question.
+- MUST: Provide ONLY 1 search query
+- MUST: Select focus_spacy_based_entity_label ONLY from the following list: [{labels_str}]
+- CRITICAL: Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses
+- MUST: Select target_answer_type as a term ONLY from the question
 
 ## Output Format (JSON)
 [
@@ -68,7 +68,7 @@ Generate ONLY 1 search query and identify relevant entities.
             },
             {
         "role": "user",
-        "content": f"""Here are 5 examples demonstrating the desired output format, which is an array containing a single object with a "search_keyword" field holding the Google search query string.
+        "content": f"""Here are 5 examples demonstrating the desired output format, which is an array containing a single object with a "search_keyword" field holding the Google search query string
 
 ---
 **Example 1:**
@@ -164,8 +164,8 @@ JSON desired output format:
 Question: "{question}"
 
 ## Task
-Generate the search query and entity information for the provided question. Output as a JSON array.
-CRITICAL: You MUST map "VIRUS" to "ORGANISM" in focus_spacy_based_entity_label.
+Generate the search query and entity information for the provided question. Output as a JSON array
+CRITICAL: You MUST map "VIRUS" to "ORGANISM" in focus_spacy_based_entity_label
 """
             }
         ]
@@ -176,10 +176,10 @@ CRITICAL: You MUST map "VIRUS" to "ORGANISM" in focus_spacy_based_entity_label.
                 {
                     "role": "system",
                     "content": f"""## Role
-You are an expert in generating concise and effective Google search queries.
+You are an expert in generating concise and effective Google search queries
 
 ## Task
-Generate ONLY 1 search query and identify relevant entities.
+Generate ONLY 1 search query and identify relevant entities
 
 ## Instructions
 1. Distill the original complex question into essential keywords and proper names
@@ -197,7 +197,7 @@ Adapt relation keywords based on the key entity's type to avoid ambiguity:
 - MUST: Provide ONLY 1 search query string
 - MUST: Omit conversational fillers (e.g., "Who is the")
 - MUST: Select focus_spacy_based_entity_label ONLY from: [{labels_str}]
-- MUST: Select target_answer_type as a term ONLY from the question.
+- MUST: Select target_answer_type as a term ONLY from the question
 
 ## Output Format (JSON)
 [
@@ -212,7 +212,7 @@ Adapt relation keywords based on the key entity's type to avoid ambiguity:
                 },
                 {
                     "role": "user",
-                    "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is an array containing a single object with a "search_keyword" and "key_entity" field.
+                    "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is an array containing a single object with a "search_keyword" and "key_entity" field
 
 ---
 **Example 1:**
@@ -289,7 +289,7 @@ JSON desired output format:
 Question: "{question}"
 
 ## Task
-Generate the search query and entity information for the provided question. Output as a JSON array.
+Generate the search query and entity information for the provided question. Output as a JSON array
 """
                 }
             ]
@@ -305,40 +305,40 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
             {
         "role": "system",
         "content": f"""## Role
-You are an expert in biomedical knowledge and complex question decomposition.
+You are an expert in biomedical knowledge and complex question decomposition
 
 ## Task
-Decompose complex biomedical questions into a sequence of simpler, interconnected subquestions to create a logical reasoning plan.
+Decompose complex biomedical questions into a sequence of simpler, interconnected subquestions to create a logical reasoning plan
 
 ## Instructions
-1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions.
-2. **Sequential Planning**: Generate a sequence of subquestions where each step depends on the previous ones.
-3. **Synthesis**: The final subquestion must synthesize the gathered information to answer the original complex question.
+1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions
+2. **Sequential Planning**: Generate a sequence of subquestions where each step depends on the previous ones
+3. **Synthesis**: The final subquestion must synthesize the gathered information to answer the original complex question
 
 ## Rules
 ### Subquestions
-- Subquestions MUST be self-contained and understandable in isolation.
-- Include all necessary context from previous steps so they are searchable by standard query engines.
-- Avoid pronouns or vague references (e.g., use "the gene" or "the specific enzyme" instead of "it").
-- Prefer subquestions that yield single, specific entities.
+- Subquestions MUST be self-contained and understandable in isolation
+- Include all necessary context from previous steps so they are searchable by standard query engines
+- Avoid pronouns or vague references (e.g., use "the gene" or "the specific enzyme" instead of "it")
+- Prefer subquestions that yield single, specific entities
 
 ### List Handling
-- Avoid vague list generation for intermediate steps.
-- If a step produces a list, the next step must explicitly state how to process it (e.g., "Which of the identified genes is expressed in the liver?").
+- Avoid vague list generation for intermediate steps
+- If a step produces a list, the next step must explicitly state how to process it (e.g., "Which of the identified genes is expressed in the liver?")
 
 ### Efficiency
-- Decompose into the MINIMUM number of steps necessary.
+- Decompose into the MINIMUM number of steps necessary
 
 ### Distillation
-- The search_keyword should be a distillation of the subquestion.
-- Focus on essential nouns and technical terms.
-- The "key_entity" list should be specific. Exclude generic or abstract concepts (e.g., "medication", "drug", "treatment").
+- The search_keyword should be a distillation of the subquestion
+- Focus on essential nouns and technical terms
+- The "key_entity" list should be specific. Exclude generic or abstract concepts (e.g., "medication", "drug", "treatment")
 
 ## Constraints
-- MUST: Use ONLY the following keys for each step: "subquestion", "search_keyword", "focus_spacy_based_entity_label", "target_answer_type", "key_entity".
-- MUST: Select focus_spacy_based_entity_label ONLY from the following list: [{labels_str}].
-- CRITICAL: Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses.
-- MUST: Select target_answer_type as a term ONLY from the question.
+- MUST: Use ONLY the following keys for each step: "subquestion", "search_keyword", "focus_spacy_based_entity_label", "target_answer_type", "key_entity"
+- MUST: Select focus_spacy_based_entity_label ONLY from the following list: [{labels_str}]
+- CRITICAL: Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses
+- MUST: Select target_answer_type as a term ONLY from the question
 
 ## Output Format (JSON)
 [
@@ -480,17 +480,17 @@ JSON desired output format:
 ]
 
 
-Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
+Now, please provide the decomposition with the minimum number of necessary steps for my original complex question
 Remember the strict formatting requirements:
-1.  Entire output MUST be a valid array.
-2.  Ensure all subquestions are self-contained and directly contribute to answering the original complex question, adhering to the guidelines for intermediate results.
+1.  Entire output MUST be a valid array
+2.  Ensure all subquestions are self-contained and directly contribute to answering the original complex question, adhering to the guidelines for intermediate results
 
 ## Information
 Original Complex Question: '{question}'
 
 ## Task
-Decompose the question into subquestions following the examples and rules. Output in JSON format.
-CRITICAL: You MUST map "VIRUS" to "ORGANISM" in focus_spacy_based_entity_label.
+Decompose the question into subquestions following the examples and rules. Output in JSON format
+CRITICAL: You MUST map "VIRUS" to "ORGANISM" in focus_spacy_based_entity_label
 """
                 }
             ]
@@ -501,28 +501,28 @@ CRITICAL: You MUST map "VIRUS" to "ORGANISM" in focus_spacy_based_entity_label.
                 {
                     "role": "system",
                     "content": f"""## Role
-You are a highly specialized AI assistant and expert at decomposing complex questions.
+You are a highly specialized AI assistant and expert at decomposing complex questions
 
 ## Task
-Decompose complex questions into a sequence of simpler, interconnected subquestions to create a logical reasoning plan.
+Decompose complex questions into a sequence of simpler, interconnected subquestions to create a logical reasoning plan
 
 ## Instructions
-1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions.
-2. **Sequential Planning**: Generate a sequence of subquestions where each step depends on the previous ones.
-3. **Template Usage**: Use placeholders when a subquestion depends on a previous result (e.g., "that director", "that person").
+1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions
+2. **Sequential Planning**: Generate a sequence of subquestions where each step depends on the previous ones
+3. **Template Usage**: Use placeholders when a subquestion depends on a previous result (e.g., "that director", "that person")
 
 ## Rules
 ### Dynamic Planning
-- Subquestions can be self-contained or templates.
-- Placeholders (e.g., "the entity found in the previous step") indicate where programmatic insertion will occur.
-- Search keywords can also be templates (e.g., "director date of birth") intended for combination with prior results.
+- Subquestions can be self-contained or templates
+- Placeholders (e.g., "the entity found in the previous step") indicate where programmatic insertion will occur
+- Search keywords can also be templates (e.g., "director date of birth") intended for combination with prior results
 
 ### Efficiency
-- Decompose into the MINIMUM number of steps necessary.
+- Decompose into the MINIMUM number of steps necessary
 
 ## Constraints
-- MUST: Select focus_spacy_based_entity_label ONLY from: [{labels_str}].
-- MUST: Select target_answer_type as a term ONLY from the question.
+- MUST: Select focus_spacy_based_entity_label ONLY from: [{labels_str}]
+- MUST: Select target_answer_type as a term ONLY from the question
 
 ## Output Format (JSON)
 [
@@ -540,7 +540,7 @@ Original Complex Question: '{question}'
                 },
                 {
                     "role": "user",
-                    "content": f"""Here are 6 examples demonstrating the desired JSON output format and decomposition logic.
+                    "content": f"""Here are 6 examples demonstrating the desired JSON output format and decomposition logic
 
 ---
 **Example 1:**
@@ -669,16 +669,16 @@ JSON desired output format:
     }}
 ]
 ---
-Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
+Now, please provide the decomposition with the minimum number of necessary steps for my original complex question
 Remember the strict formatting requirements:
-1.  The entire output MUST be a valid array.
-2.  Ensure all subquestions are self-contained and directly contribute to answering the original complex question.
+1.  The entire output MUST be a valid array
+2.  Ensure all subquestions are self-contained and directly contribute to answering the original complex question
 
 ## Information
 Original Complex Question: '{question}'
 
 ## Task
-Decompose the question into subquestions following the examples and rules. Output in JSON format.
+Decompose the question into subquestions following the examples and rules. Output in JSON format
 """
                 }
             ]
@@ -687,29 +687,28 @@ Decompose the question into subquestions following the examples and rules. Outpu
                 {
                     "role": "system",
                     "content": f"""## Role
-You are a highly specialized AI assistant and expert in analyzing complex questions with hidden sequential logic, particularly in social and organizational structures (e.g., family trees, corporate hierarchies).
+You are a highly specialized AI assistant and expert in analyzing complex questions with hidden sequential logic, particularly in social and organizational structures (e.g., family trees, corporate hierarchies)
 
 ## Task
 Decompose complex questions into a sequence of simpler, interconnected subquestions to create a logical reasoning plan.
 
 ## Instructions
-1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions.
-2. **Sequential Planning**: Generate a sequence of subquestions where each step depends on the previous ones.
-3. **Template Usage**: Use placeholders when a subquestion depends on a previous result (e.g., "that director", "that person").
+1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions
+2. **Sequential Planning**: Generate a sequence of subquestions where each step depends on the previous ones
+3. **Template Usage**: Use placeholders when a subquestion depends on a previous result (e.g., "that director", "that person")
 
 ## Rules
 ### Dynamic Planning
-- Subquestions must be templates that depend on prior answers.
-- Use clear placeholders (e.g., "the entity found in the previous step") for programmatic insertion.
-- Search keywords are also templates designed to be combined with prior results.
+- Subquestions must be templates that depend on prior answers
+- Use clear placeholders (e.g., "the entity found in the previous step") for programmatic insertion
+- Search keywords are also templates designed to be combined with prior results
 
 ### Efficiency
-- Decompose into the MINIMUM number of steps necessary.
-- If a question can be answered in a single step, do not decompose it.
+- Decompose into the MINIMUM number of steps necessary
 
 ## Constraints
-- MUST: Select focus_spacy_based_entity_label ONLY from: [{labels_str}].
-- MUST: Select target_answer_type as a term ONLY from the question.
+- MUST: Select focus_spacy_based_entity_label ONLY from: [{labels_str}]
+- MUST: Select target_answer_type as a term ONLY from the question
 
 ## Output Format (JSON)
 [
@@ -812,14 +811,14 @@ JSON desired output format:
 ---
 Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
 Remember the strict formatting requirements:
-1.  The entire output MUST be a valid array.
-2.  Ensure each subquestion logically follows the previous one and directly contributes to answering the original complex question.
+1.  The entire output MUST be a valid array
+2.  Ensure each subquestion logically follows the previous one and directly contributes to answering the original complex question
 
 ## Information
 Original Complex Question: '{question}'
 
 ## Task
-Decompose the question into subquestions following the examples and rules. Output in JSON format.
+Decompose the question into subquestions following the examples and rules. Output in JSON format
 """
                 }
             ]
@@ -831,23 +830,23 @@ Decompose the question into subquestions following the examples and rules. Outpu
 You are an expert in identifying key entities and relations in questions.
 
 ## Task
-Identify the key entity, the key relation, target entity labels, and the answer type for the given question.
+Identify the key entity, the key relation, target entity labels, and the answer type for the given question
 
 ## Instructions
 1. Analyze the question to find the main subject (key_entity)
-2. Identify the core relationship being asked about (key_relation)
+2. Identify the core relation being asked about (key_relation)
 3. Determine the expected answer type and entity labels
 
 ## Constraints
 - MUST: Select focus_spacy_based_entity_label ONLY from: [{labels_str}]
-- MUST: Select target_answer_type as a term ONLY from the question.
+- MUST: Select target_answer_type as a term ONLY from the question
 
 ## Output Format (JSON)
 [
     {{
         "search_keyword": "Distilled search query",
         "key_entity": "primary subject",
-        "key_relation": "core relationship",
+        "key_relation": "core relation",
         "focus_spacy_based_entity_label": ["list of labels from allowed list"],
         "target_answer_type": "type of answer from question"
     }}
@@ -928,7 +927,7 @@ JSON desired output format:
 Question: "{question}"
 
 ## Task
-Identify the key entity, key relation, target entity labels, and target answer type. Output in JSON format.
+Identify the key entity, key relation, target entity labels, and target answer type. Output in JSON format
 """
             }
         ]
@@ -956,7 +955,7 @@ Answer the following biological question based on the provided information.
 - **Organism questions**: Return organism type (e.g., "bacterium")
 
 ## Constraints
-- MUST: Your short_answer MUST be MAX 3 words.
+- MUST: Your short_answer MUST be MAX 3 words
 - MUST NOT: Add any extra commentary outside the JSON
 - MUST NOT: Use abbreviations for entities if the full name is available
 
@@ -983,7 +982,7 @@ You are an expert analyst.
 Answer the following question based on the provided information.
 
 ## Instructions
-1. Analyze the question and identify the core relationship being asked
+1. Analyze the question and identify the core relation being asked
 2. Extract the direct value from the provided context
 3. Format the response as a valid JSON object
 
@@ -1011,10 +1010,10 @@ Context: {context}
 """
     elif type_q == "inference":
         prompt = f"""## Role
-You are an expert in historical and genealogical analysis.
+You are an expert in historical and genealogical analysis
 
 ## Task
-Answer the question by identifying the correct person and precisely formatting their name and titles.
+Answer the question by identifying the correct person and precisely formatting their name and titles
 
 ## Instructions
 1. Analyze the context to find the requested person
@@ -1023,21 +1022,21 @@ Answer the question by identifying the correct person and precisely formatting t
 
 ## Rules
 ### Rule 1: Royal & Noble Figures
-- **Start with**: Full name and regnal number.
-- **Include**: Hereditary titles, noble/royal prefixes (King, Queen, Duke, Sir, etc.).
-- **Exclude**: Territorial designations based ONLY on land ownership.
-- **Parentheses**: Do not include parentheses, but use their content for extraction.
+- **Start with**: Full name and regnal number
+- **Include**: Hereditary titles, noble/royal prefixes (King, Queen, Duke, Sir, etc.)
+- **Exclude**: Territorial designations based ONLY on land ownership
+- **Parentheses**: Do not include parentheses, but use their content for extraction
 
 ### Rule 2: Non-Royal Figures
-- Provide the single most direct answer found in the context.
+- Provide the single most direct answer found in the context
 
 ### Rule 3: Insufficient Information
-- If the answer is missing, use "Insufficient information" for both the short_answer and the name field. Set prefix and suffix to "NAN".
+- If the answer is missing, use "Insufficient information" for both the short_answer and the name field. Set prefix and suffix to "NAN"
 
 ## Constraints
-- MUST: Your response must be ONLY the JSON object.
-- MUST NOT: Include commentary outside the JSON.
-- MUST: Follow the name splitting rules precisely.
+- MUST: Your response must be ONLY the JSON object
+- MUST NOT: Include commentary outside the JSON
+- MUST: Follow the name splitting rules precisely
 
 ## Information
 Question: {question}
@@ -1055,24 +1054,24 @@ Context: {context}
 """
     elif type_q == "compositional":        
         prompt = f"""## Role
-You are an expert intelligence analyst.
+You are an expert intelligence analyst
 
 ## Task
-Synthesize information across multiple documents to provide the single most probable answer to the question.
+Synthesize information across multiple documents to provide the single most probable answer to the question
 
 ## Instructions
-1. **Context Synthesis**: Read ALL provided documents and connect information across them.
-2. **Entity Resolution**: Treat synonyms or alternate names as the same entity.
-3. **Evidence Priority**: Decide if the answer is Explicit (stated) or Inferred (logical deduction). Use explicit evidence first.
-4. **Mandatory Inference**: If no explicit answer exists, you are REQUIRED to infer from strong clues (residence, professional role, nationality fallback).
+1. **Context Synthesis**: Read ALL provided documents and connect information across them
+2. **Entity Resolution**: Treat synonyms or alternate names as the same entity
+3. **Evidence Priority**: Decide if the answer is Explicit (stated) or Inferred (logical deduction). Use explicit evidence first
+4. **Mandatory Inference**: If no explicit answer exists, you are REQUIRED to infer from strong clues (residence, professional role, nationality fallback)
 
 ## Rules
 ### Location Questions
-- Return the MOST SPECIFIC location available (city/town > state/province > country).
-- If birthplace/death place is missing, use nationality (country) as a fallback and mark as inferred.
+- Return the MOST SPECIFIC location available (city/town > state/province > country)
+- If birthplace/death place is missing, use nationality (country) as a fallback and mark as inferred
 
 ### Category Questions
-- Choose the broadest applicable category (e.g., "cancer" not "bowel cancer").
+- Choose the broadest applicable category (e.g., "cancer" not "bowel cancer")
 
 ### Nationality Formatting
 - "X-born Y" → answer "X"
@@ -1080,9 +1079,9 @@ Synthesize information across multiple documents to provide the single most prob
 - "X Y" nationality → answer "Y"
 
 ## Constraints
-- MUST: Select ONLY the single most probable answer.
-- MUST NOT: Generate names of locations (cities, regions, countries) NOT present in the context.
-- MUST NOT: Add any additional commentary outside the JSON.
+- MUST: Select ONLY the single most probable answer
+- MUST NOT: Generate names of locations (cities, regions, countries) NOT present in the context
+- MUST NOT: Add any additional commentary outside the JSON
 
 ## Information
 Question: {question}
@@ -1113,11 +1112,11 @@ Analyze the provided information to determine the correct answer and reconcile a
 ## Rules
 ### Choice Questions
 - If the question asks to choose an option based on a criterion (e.g., "younger", "first", "later"):
-- The short_answer MUST be the name of the chosen option extracted EXACTLY from the question.
+- The short_answer MUST be the name of the chosen option extracted EXACTLY from the question
 
 ### Confirmation Questions
 - If the question asks to confirm a fact (e.g., "same country", "same nationality"):
-- The short_answer MUST be exactly "yes" or "no" (lowercase).
+- The short_answer MUST be exactly "yes" or "no" (lowercase)
 
 ## Constraints
 - MUST: Your entire response must be ONLY the JSON object
@@ -1188,8 +1187,8 @@ Identify the single relevant relation for each subquestion provided in the list.
 3. Maintain the order and count of the input list in your output
 
 ## Rules
-- **Allowed Relations**: Select ONLY from this set: {list(allowed_relations)}.
-- **One-to-One Mapping**: The number of relations in the output MUST exactly match the number of subquestions.
+- **Allowed Relations**: Select ONLY from this set: {list(allowed_relations)}
+- **One-to-One Mapping**: The number of relations in the output MUST exactly match the number of subquestions
 
 ## Constraints
 - MUST: Your ONLY output must be a JSON list of strings
@@ -1228,21 +1227,85 @@ Output: ["father", "father"]
 
     return messages
 
-
-def prompt_split_question(question):
+def prompt_split_parallel_question_medhop(question):
     system_prompt = """## Role
-You are an expert in question decomposition.
+You are an expert in biomedical question decomposition
 
 ## Task
-Split a complex comparative question into exactly two simple subquestions.
+Split a complex comparative question into exactly two simple subquestions
 
 ## Constraints
-- MUST: Output ONLY a valid JSON array of two strings
+- MUST: Output ONLY a valid array of two strings in JSON format
 - MUST NOT: Include any explanation, introductory text, or markdown formatting
-- MUST NOT: Change the core entities or the relationship being compared"""
+- MUST NOT: Change the core entities or the relation being compared
+- MUST: Ensure subquestions are complete and context-rich enough to be answered independently"""
 
     user_prompt = f"""## Task
-Decompose the provided complex comparative question.
+Decompose the provided complex comparative question into two retrieval-focused subquestions
+
+## Instructions
+1. Identify the two primary entities being compared in the question
+2. Identify the specific attribute or property (e.g., nationality, date of birth, location) being compared
+3. Create two independent questions that each ask for that attribute for one of the entities
+4. Format the final result as a simple array of strings
+
+## Information
+Question: "{question}"
+
+## Examples
+---
+**Example 1:**
+Input: "How does the inheritance of Ornithine Carbamoyltransferase Deficiency Disease compare to that of Hyperphosphatemia?"
+Output:
+[
+    "What is the inheritance pattern of Ornithine Carbamoyltransferase Deficiency Disease?",
+    "What is the inheritance pattern of Hyperphosphatemia?"
+]
+---
+**Example 2:**
+Input: "What genetic variations are linked to cardiovascular abnormalities, specifically are they found in MYH7 or TTN?"
+Output:
+[
+    "Which genetic variations in MYH7 are linked to cardiovascular abnormalities?",
+    "Which genetic variations in TTN are linked to cardiovascular abnormalities?"
+]
+---
+
+## Output Format (JSON)
+["sub_question_1", "sub_question_2"]
+"""
+        
+    messages = [
+        {"role": "system", "content": system_prompt.strip()},
+        {"role": "user", "content": user_prompt.strip()}
+    ]
+         
+    return messages
+
+def prompt_split_parallel_question_wiki(question):
+    system_prompt = """## Role
+You are an expert in question decomposition
+
+## Task
+Split a complex comparative question into exactly two simple subquestions
+
+## Constraints
+- MUST: Output ONLY a valid array of two strings in JSON format
+- MUST NOT: Include any explanation, introductory text, or markdown formatting
+- MUST NOT: Change the core entities or the relation being compared
+- MUST: Ensure subquestions are complete and context-rich enough to be answered independently"""
+
+    user_prompt = f"""## Task
+Decompose the provided complex comparative question into two retrieval-focused subquestions
+
+## Instructions
+1. Identify the two primary entities being compared in the question
+2. Identify the specific attribute or property (e.g., nationality, date of birth, location) being compared
+3. Create two independent questions that each ask for that attribute for one of the entities
+4. Format the final result as a simple array of strings
+
+## Information
+Question: "{question}"
 
 ## Examples
 ---
@@ -1263,9 +1326,6 @@ Output:
 ]
 ---
 
-## Information
-Question: "{question}"
-
 ## Output Format (JSON)
 ["sub_question_1", "sub_question_2"]
 """
@@ -1276,6 +1336,7 @@ Question: "{question}"
     ]
          
     return messages
+
 
 def get_answer_generation_system_prompt(dataset: Optional[str] = None) -> str:
    """
@@ -1296,28 +1357,28 @@ def get_answer_generation_system_prompt(dataset: Optional[str] = None) -> str:
 {domain_context}
 
 ## Task
-Answer the question based on the provided context following precise formatting rules.
+Answer the question based on the provided context following precise formatting rules
 
 ## Instructions
-1. **Analyze Context**: Read all documents carefully and connect facts.
-2. **Determine Evidence**: Identify explicit facts first, then make logical inferences.
-3. **Synthesis**: Treat synonyms/alternate names as the same entity.
-4. **Formatting**: Apply the EXACT formatting rules provided for your specific question type.
+1. **Analyze Context**: Read all documents carefully and connect facts
+2. **Determine Evidence**: Identify explicit facts first, then make logical inferences
+3. **Synthesis**: Treat synonyms/alternate names as the same entity
+4. **Formatting**: Apply the EXACT formatting rules provided for your specific question type
 
 ## Rules
 ### Context Synthesis
-- Prioritize explicit evidence over inference.
+- Prioritize explicit evidence over inference
 - If no explicit answer exists, infer from strong clues:
-  - Long-term residence/workplace (strongest clue).
-  - Professional role implied by context.
-  - Place of birth/nationality as fallback for location questions.
-- Mark inferred answers clearly in the long_answer.
+  - Long-term residence/workplace (strongest clue)
+  - Professional role implied by context
+  - Place of birth/nationality as fallback for location questions
+- Mark inferred answers clearly in the long_answer
 
 ### Constraints
-- MUST: Select ONLY the SINGLE most probable answer.
-- MUST: short_answer must be MAX 3 words.
-- MUST NOT: Generate information (especially locations, names) not present in context.
-- MUST NOT: Include commentary outside the JSON.
+- MUST: Select ONLY the SINGLE most probable answer
+- MUST: short_answer must be MAX 3 words
+- MUST NOT: Generate information (especially locations, names) not present in context
+- MUST NOT: Include commentary outside the JSON
 """
 
 def get_answer_generation_context_synthesis_rules() -> str:
@@ -1405,7 +1466,7 @@ def get_answer_generation_type_specific_rules(type_q: Optional[str] = None, data
            return """
 ## Inference Type Rules
 
-This question involves family relationships or royal/noble figures.
+This question involves family relations or royal/noble figures
 
 ### For Royal/Noble Figures
 - Return the full name with royal prefixes (King, Queen, Prince, Princess, Duke, Duchess, Sir, Dame, Lord, Lady)
@@ -1532,7 +1593,7 @@ Your task is to analyze questions and determine the best answer formatting rules
 Consider:
 - Question patterns (yes/no, comparison, choice, etc.)
 - Entity types being asked about (person, place, biomedical, etc.)
-- Special cases (royal/noble figures, compound answers, etc.)"""
+- Special cases (royal/noble figures, compound answers, etc.)."""
 
 
 def get_answer_rules_prediction_user_prompt(
@@ -1566,7 +1627,7 @@ def get_answer_rules_prediction_user_prompt(
     if type_q:
         context_info += f"\nQuestion Type Hint: {type_q}"
         if type_q == "inference":
-            context_info += " (family relationships, royal/noble figures)"
+            context_info += " (family relations, royal/noble figures)"
         elif type_q == "compositional":
             context_info += " (multi-hop facts about entities)"
         elif type_q in ["comparison", "bridge_comparison"]:
@@ -1657,10 +1718,10 @@ def get_parallel_answers_combination_prompt(question: str, context: str) -> str:
         Prompt string
     """
     return f"""## Role
-You are an expert in logical synthesis.
+You are an expert in logical synthesis
 
 ## Task
-Analyze the provided information to determine the correct answer and reconcile sources.
+Analyze the provided information to determine the correct answer and reconcile sources
 
 ## Instructions
 1. Analyze the question and context
@@ -1668,10 +1729,10 @@ Analyze the provided information to determine the correct answer and reconcile s
 
 ## Rules
 ### Choice Questions
-- Return the name of the chosen option extracted EXACTLY from the question.
+- Return the name of the chosen option extracted EXACTLY from the question
 
 ### Confirmation Questions
-- Return "yes" or "no" (lowercase).
+- Return "yes" or "no" (lowercase)
 
 ## Constraints
 - MUST: Provide ONLY the JSON object
@@ -1704,9 +1765,9 @@ def get_multiple_choice_selection_prompt(question: str, context: str) -> str:
     """
     return f"""Question: {question}
 Instructions:
-- Please base your answer ONLY on the context provided.
-- Please only choose the given answers (without additional explanations). For example: "A", "B", "C", "D", "E", "F", "G".
-- Do not include anything else aside from your answer.
+- Please base your answer ONLY on the context provided
+- Please only choose the given answers (without additional explanations). For example: "A", "B", "C", "D", "E", "F", "G"
+- Do not include anything else aside from your answer
 
 Context:
 {context}
@@ -1960,13 +2021,13 @@ def get_prompt_for_answer_validation(question: str, answer: dict, dataset: str =
         >>> response = gpt_request(messages, model="gpt-4o-mini")
     """
     system_message = """## Role
-You are an expert answer validator for multi-hop question answering systems.
+You are an expert answer validator for multi-hop question answering systems
 
 ## Task
 Validate answers against comprehensive normalization rules covering biomedical, general knowledge, and specialized question types."""
     
     user_prompt = f"""## Task
-Validate if this answer follows all normalization rules. Think step-by-step.
+Validate if this answer follows all normalization rules. Think step-by-step
 
 ## Input
 Question: {question}
@@ -1991,10 +2052,10 @@ Long Answer: {answer.get('long_answer', '')}
 - Lists: If none of above apply, provide concise comma-separated items
 
 ### 3. Wiki/General Knowledge Rules
-- Comparison Questions (Which/Who...older/younger/later/earlier): Answer must be the NAME of chosen option extracted EXACTLY from question (NOT a date)
+- Comparison Questions (Which/Who...older/younger/later/earlier): Answer must be the NAME of chosen option extracted EXACTLY from the question (NOT a date)
 - Confirmation Questions (Are/Do...same): Answer must be "yes" or "no" (lowercase)
 - Inference Questions (Royal/Noble Figures):
-  - Royal prefix required if applicable: King/Queen, Prince/Princess, Duke/Duchess, etc.
+  - Royal prefix required if applicable: King/Queen, Prince/Princess, Duke/Duchess, etc
   - Include numbered hereditary titles: "2nd Earl of Stafford"
   - Include honorifics: Sir/Dame/Lord/Lady
   - EXCLUDE territorial designations based only on land ownership
@@ -2036,7 +2097,8 @@ Long Answer: {answer.get('long_answer', '')}
     "is_valid": true/false,
     "violations": ["list of specific rule violations found with rule category, empty if valid"],
     "additional_rules": "Specific corrective instructions to inject into generator prompt (only if is_valid=false, otherwise empty string)"
-}}"""
+}}
+"""
     
     messages = [
         {"role": "system", "content": system_message},
