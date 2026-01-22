@@ -1,0 +1,18 @@
+{
+    "0": {
+        "0": {
+            "QIDX": "353225",
+            "step_number": 0,
+            "subquestion": "Do individuals with macroglossia also present with Wilms tumor?",
+            "search_keyword": "macroglossia Wilms tumor association",
+            "key_entity": [
+                "macroglossia",
+                "Wilms tumor"
+            ],
+            "focus_spacy_based_entity_label": [
+                "DISEASE"
+            ],
+            "target_answer_type": "association"
+        }
+    }
+}

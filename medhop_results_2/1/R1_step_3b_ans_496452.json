@@ -1,0 +1,30 @@
+{
+    "0": {
+        "0": {
+            "long_answer": "Albers-Schönberg disease, also known as autosomal dominant osteopetrosis type II, is characterized by increased bone density and abnormal bone growth. It is the most common form of osteopetrosis, which is a group of conditions leading to increased skeletal mass due to impaired bone resorption. Patients may present with symptoms such as delayed growth, hearing impairment, anemia, recurrent infections, and an increased likelihood of fractures. The disease is also associated with skeletal deformities and can lead to complications like osteomyelitis and neuropathies due to cranial nerve entrapment.",
+            "short_answer": "Osteopetrosis type II",
+            "normalization": {
+                "was_normalized": false,
+                "original_short": "Osteopetrosis type II",
+                "changes": []
+            },
+            "metadata": {
+                "rules_applied": "compound",
+                "normalized": true
+            }
+        },
+        "1": {
+            "long_answer": "Albers-Schönberg disease, also known as autosomal dominant osteopetrosis type II, is caused by mutations in the CLCN7 gene. This is explicitly stated in multiple sources, including the statement that 'mutations in the CLCN7 gene have been reported to be associated with autosomal dominant osteopetrosis type II.' Therefore, the gene responsible for Albers-Schönberg disease is the CLCN7 gene.",
+            "short_answer": "CLCN7",
+            "normalization": {
+                "was_normalized": false,
+                "original_short": "CLCN7",
+                "changes": []
+            },
+            "metadata": {
+                "rules_applied": "biomedical_entity",
+                "normalized": true
+            }
+        }
+    }
+}

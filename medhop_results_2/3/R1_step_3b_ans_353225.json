@@ -1,0 +1,16 @@
+{
+    "0": {
+        "0": {
+            "long_answer": "Yes, individuals with hemihyperplasia have an increased risk for developing embryonal tumors, particularly Wilms tumor. This association is explicitly mentioned in multiple sources, including the statement that hemihyperplasia is associated with an increased risk for embryonal tumors, mainly Wilms tumor and hepatoblastoma. Therefore, it can be concluded that individuals with hemihyperplasia do present with Wilms tumor.",
+            "short_answer": "Yes",
+            "normalization": {
+                "was_normalized": false,
+                "skip_reason": "Normalization disabled or not needed"
+            },
+            "metadata": {
+                "rules_applied": "yes_no",
+                "normalized": false
+            }
+        }
+    }
+}

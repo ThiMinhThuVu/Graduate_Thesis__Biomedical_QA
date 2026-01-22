@@ -37,7 +37,9 @@ def load_model(dataset, configs):
         extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
         
         # Biomedical embedding
-        embedding_model = AutoModel.from_pretrained("dmis-lab/biobert-base-cased-v1.1")
+        # embedding_model = AutoModel.from_pretrained("dmis-lab/biobert-base-cased-v1.1")
+        # embedding_model = AutoModel.from_pretrained("michiyasunaga/BioLinkBERT-base")  
+        embedding_model = AutoModel.from_pretrained("microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext")
         print("Loaded biomedical NER + embedding model")
 
     elif dataset == "wiki":

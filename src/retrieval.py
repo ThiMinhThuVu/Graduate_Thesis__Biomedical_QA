@@ -429,8 +429,8 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
                 # Tính cosine giữa search_kw_subq và description 
                 if description and isinstance(description, str) and len(description.strip()) > 0:
                     try:
-                        embeddings = embedding_model.encode([search_kw_subq, description], normalize_embeddings=True)
-                        cosine = float(np.dot(embeddings[0], embeddings[1]))
+                        # Use util.caculate_scores to handle both model types
+                        cosine = caculate_scores(search_kw_subq, description, embedding_model)["cosine"]
                     except Exception:
                         cosine = 0.0
                 else:

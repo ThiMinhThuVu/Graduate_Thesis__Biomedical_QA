@@ -4,8 +4,11 @@ import torch.nn as nn
 from transformers import AutoTokenizer, AutoModel
 
 class Config:
-    hf_model_name = "michiyasunaga/BioLinkBERT-base"    
-    local_model_path = "classification/model/medhop/cache/biolinkbert_cache"
+    # hf_model_name = "michiyasunaga/BioLinkBERT-base"  
+    # local_model_path = "classification/model/medhop/cache/biolinkbert/biolinkbert_cache"  
+    
+    hf_model_name = "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext"
+    local_model_path = "classification/model/medhop/cache/pubmedbert/pubmedbert_cache"
     max_length = 128
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

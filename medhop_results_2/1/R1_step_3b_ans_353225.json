@@ -1,0 +1,16 @@
+{
+    "0": {
+        "0": {
+            "long_answer": "Individuals with macrosomia are associated with Perlman syndrome, which is characterized by an increased risk for Wilms' tumor. Perlman syndrome is also referred to as nephroblastomatosis-fetal ascites-macrosomia-Wilms tumor syndrome, indicating a direct link between macrosomia and Wilms tumor. Therefore, it can be inferred that individuals with macrosomia may present with Wilms tumor due to this association.",
+            "short_answer": "Yes",
+            "normalization": {
+                "was_normalized": false,
+                "skip_reason": "Normalization disabled or not needed"
+            },
+            "metadata": {
+                "rules_applied": "yes_no",
+                "normalized": false
+            }
+        }
+    }
+}

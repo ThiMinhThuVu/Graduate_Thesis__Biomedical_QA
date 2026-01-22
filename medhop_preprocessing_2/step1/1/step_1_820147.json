@@ -1,0 +1,20 @@
+{
+    "0": {
+        "0": {
+            "QIDX": "820147",
+            "step_number": 0,
+            "subquestion": "What is the name of the textbook published in 1953 by the dermatologist who first recognized Degos disease as a new clinical entity?",
+            "search_keyword": "textbook 1953 dermatologist Degos disease clinical entity",
+            "key_entity": [
+                "Degos disease",
+                "textbook",
+                "dermatologist",
+                "1953"
+            ],
+            "focus_spacy_based_entity_label": [
+                "DISEASE"
+            ],
+            "target_answer_type": "textbook name"
+        }
+    }
+}

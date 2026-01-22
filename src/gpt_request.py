@@ -1,5 +1,7 @@
 import requests
 import time
+import json
+
 from src.api_key import API_LIST_4O, API_LIST_O3, API_KEY_GG, API_KEY_serp
 
 API_URL = "https://cf.mnapi.com/v1/chat/completions"  
@@ -60,7 +62,7 @@ def request_api(messages, model, temperature=0):
 
     raise RuntimeError("All APIs failed after multiple retries.")
 
-def search_google(query):
+def _search_google(query):
     max_retries = 10
     retry_delay = 2
    
@@ -94,6 +96,31 @@ def search_google(query):
                 time.sleep(retry_delay)
             else:
                 raise e  
+
+def search_google(query):
+    url = "https://api.serpshot.com/api/search/google"
+    headers = {
+        "Content-Type": "application/json",
+        "X-API-Key": "a631791792b638a6cf7382b9c947c167"
+    }
+
+    payload = {
+        "queries": [query],
+        "type": "search",
+        "lr": "en",
+        "gl": "us",
+        "hl": "en",
+        "location": None,
+        "num": 10,
+        "page": 1
+    }
+
+    response = requests.post(url, headers=headers, data=json.dumps(payload))
+    data = response.json().get('data')
+    if data and isinstance(data, list) and len(data) > 0:
+        return data[0].get('results', [])
+    else:
+        return []
 
 from serpapi import GoogleSearch
 

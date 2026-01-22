@@ -1,3 +1,5 @@
+import torch
+from transformers import AutoTokenizer
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), "MAS_UETQUINTET"))
@@ -28,6 +30,21 @@ move_section_list = [
     "categories",    
 ]
 
+def is_sentence_transformer(model):
+    return hasattr(model, 'encode') and 'sentence_transformers' in str(type(model))
+
+def bert_encode(texts, model, tokenizer, device='cpu'):
+    model.eval()
+    with torch.no_grad():
+        inputs = tokenizer(texts, padding=True, truncation=True, return_tensors='pt', max_length=128)
+        inputs = {k: v.to(device) for k, v in inputs.items()}
+        outputs = model(**inputs)
+        if hasattr(outputs, 'pooler_output'):
+            embeddings = outputs.pooler_output
+        else:
+            embeddings = outputs.last_hidden_state[:, 0, :]
+        return embeddings.cpu().numpy()
+
 def caculate_scores(search, golden, embedding_model, is_tfidf = False):
     if search.strip().lower() == golden.strip().lower():
         return {"cosine": 1.0, "fuzz": 1.0}
@@ -53,11 +70,23 @@ def caculate_scores(search, golden, embedding_model, is_tfidf = False):
             "fuzz": float(fuzz_score)
         }
 
+    
     try:
-        embeddings = embedding_model.encode(
-            [search, golden],
-            normalize_embeddings=True
-        )
+        if is_sentence_transformer(embedding_model):
+            print("is sentence transformer")
+            embeddings = embedding_model.encode([search, golden], normalize_embeddings=True)
+        else:
+            # BertModel: require tokenizer and device as arguments
+            # Try to get tokenizer and device from embedding_model attributes, else require as kwargs
+            tokenizer = getattr(embedding_model, 'tokenizer', None)
+            device = getattr(embedding_model, 'device', 'cpu')
+            if tokenizer is None:
+                # Try to load default tokenizer from model name
+                if hasattr(embedding_model, 'name_or_path'):
+                    tokenizer = AutoTokenizer.from_pretrained(embedding_model.name_or_path)
+                else:
+                    tokenizer = AutoTokenizer.from_pretrained("dmis-lab/biobert-base-cased-v1.1")
+            embeddings = bert_encode([search, golden], embedding_model, tokenizer, device)
         cosine_sim = float(np.dot(embeddings[0], embeddings[1]))
     except Exception:
         cosine_sim = 0.0
@@ -70,29 +99,41 @@ def caculate_scores(search, golden, embedding_model, is_tfidf = False):
     }
     
 def find_most_relevant_doc_embedding(input_text, documents, embedding_model):
-    """
-    Tìm document liên quan nhất với input_text dựa trên SentenceTransformer embeddings.
-    """
-    # Encode input_text và documents thành embedding vectors
-    all_texts = [input_text] + documents
-    embeddings = embedding_model.encode(all_texts, convert_to_tensor=False)  # numpy array
-
-    # Tính cosine similarity giữa input_text (vị trí 0) với documents
-    similarities = cosine_similarity([embeddings[0]], embeddings[1:]).flatten()
-
-    # Tạo danh sách các document với score
     ranked_docs = []
-    for i, score in enumerate(similarities):
+    for i, doc in enumerate(documents):
+        score = caculate_scores(input_text, doc, embedding_model)["cosine"]
         ranked_docs.append({
             "index": i,
             "score": float(score),
-            "text": documents[i]
+            "text": doc
         })
-    
-    # Sắp xếp theo similarity giảm dần
     ranked_docs = sorted(ranked_docs, key=lambda x: x["score"], reverse=True)
-
     return ranked_docs
+
+# def find_most_relevant_doc_embedding(input_text, documents, embedding_model):
+#     """
+#     Tìm document liên quan nhất với input_text dựa trên SentenceTransformer embeddings.
+#     """
+#     # Encode input_text và documents thành embedding vectors
+#     all_texts = [input_text] + documents
+#     embeddings = embedding_model.encode(all_texts, convert_to_tensor=False)  # numpy array
+
+#     # Tính cosine similarity giữa input_text (vị trí 0) với documents
+#     similarities = cosine_similarity([embeddings[0]], embeddings[1:]).flatten()
+
+#     # Tạo danh sách các document với score
+#     ranked_docs = []
+#     for i, score in enumerate(similarities):
+#         ranked_docs.append({
+#             "index": i,
+#             "score": float(score),
+#             "text": documents[i]
+#         })
+    
+#     # Sắp xếp theo similarity giảm dần
+#     ranked_docs = sorted(ranked_docs, key=lambda x: x["score"], reverse=True)
+
+#     return ranked_docs
 
 def load_yaml(path):
     with open(path, "r", encoding="utf-8") as f:

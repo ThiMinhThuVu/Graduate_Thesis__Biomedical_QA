@@ -1,0 +1,22 @@
+{
+    "0": {
+        "0": {
+            "QIDX": "157829",
+            "step_number": 0,
+            "subquestion": "What medication produced by powdered mineral is commonly used to treat the itchiness caused by contact dermatitis from plants of the genus Toxicodendron, such as poison ivy?",
+            "search_keyword": "medication powdered mineral treat itchiness contact dermatitis Toxicodendron poison ivy",
+            "key_entity": [
+                "medication",
+                "powdered mineral",
+                "contact dermatitis",
+                "Toxicodendron",
+                "poison ivy"
+            ],
+            "focus_spacy_based_entity_label": [
+                "CHEMICAL",
+                "DISEASE"
+            ],
+            "target_answer_type": "medication"
+        }
+    }
+}
