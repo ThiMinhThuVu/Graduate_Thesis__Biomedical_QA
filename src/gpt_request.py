@@ -60,7 +60,7 @@ def request_api(messages, model, temperature=0):
 
     raise RuntimeError("All APIs failed after multiple retries.")
 
-def _search_google(query):
+def search_google(query):
     max_retries = 10
     retry_delay = 2
    
@@ -97,7 +97,7 @@ def _search_google(query):
 
 from serpapi import GoogleSearch
 
-def search_google(
+def serapi_search_google(
     query: str,
     num_results: int = 10,
     language: str = "en",
@@ -138,7 +138,6 @@ def search_google(
         })
 
     return output
-
 
 if __name__ == "__main__":    
     # result = search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?")

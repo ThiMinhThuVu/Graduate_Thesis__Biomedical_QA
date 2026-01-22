@@ -12,6 +12,8 @@ from sentence_transformers import SentenceTransformer
 global hash_id_cache
 global wiki_cache_data
 global extractor_model
+global extractor_model_2 
+global extractor_model_3
 global embedding_model
 wiki_cache_data = {}
 extractor_model = None
@@ -20,6 +22,8 @@ def load_model(dataset, configs):
     global hash_id_cache
     global wiki_cache_data
     global extractor_model
+    global extractor_model_2
+    global extractor_model_3
     global embedding_model
 
     wiki_cache_data = load_pickle(configs['cache']['wiki_cache_data'])
@@ -28,12 +32,15 @@ def load_model(dataset, configs):
     if dataset == "medhop":
         # Biomedical NER
         extractor_model = spacy.load("en_ner_bc5cdr_md")
+        extractor_model_2 = spacy.load("en_ner_jnlpba_md")
+        extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
         # Biomedical embedding
         embedding_model = SentenceTransformer("dmis-lab/biobert-base-cased-v1.1") #pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb
         print("Loaded biomedical NER + embedding model")
 
     elif dataset == "wiki":
         extractor_model = spacy.load("en_core_web_lg")
+        extractor_model_2 = extractor_model_3 = None
         embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
         print("Loaded general NER + embedding model")
 
@@ -161,7 +168,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                         if current_retrieval == "" or current_retrieval == []:
                             break
                         
-                        evidence_ner = extract_entities_from_evidence(extractor_model, current_retrieval, focus_spacy_based_entity_label, cache_filepath_retrieval, settings)  
+                        evidence_ner = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, current_retrieval, focus_spacy_based_entity_label, cache_filepath_retrieval, settings)  
                         norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
                         raw_answer = generate_answer(subquestion, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
                         
@@ -343,8 +350,7 @@ if __name__ == "__main__":
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
-        if ID != '220313':
-            continue
+     
         question = sample['Question']
         type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
         if type_q in ['non-sequence', 'comparison']:
