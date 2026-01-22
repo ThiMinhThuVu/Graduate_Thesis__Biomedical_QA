@@ -953,6 +953,7 @@ Answer the following biological question based on the provided information.
 - **Yes/No questions**: Return exactly "Yes" or "No"
 - **Entity questions**: Return the full noun phrase naming the entity (e.g., "chromosome X")
 - **Organism questions**: Return organism type (e.g., "bacterium")
+- **Insufficient Info**: If the information is missing, return exactly "Insufficient information"
 
 ## Constraints
 - MUST: Your short_answer MUST be MAX 3 words
