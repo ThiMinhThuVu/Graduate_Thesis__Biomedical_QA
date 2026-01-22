@@ -38,7 +38,10 @@ class BioLinkBERTClassifier(nn.Module):
 
 def load_trained_model_medhop(model_file_path, tok_path):
     print(f"Loading Tokenizer from: {tok_path}")
-    tokenizer = AutoTokenizer.from_pretrained(tok_path)
+    # Convert to absolute path if relative
+    if not os.path.isabs(tok_path):
+        tok_path = os.path.abspath(tok_path)
+    tokenizer = AutoTokenizer.from_pretrained(tok_path, local_files_only=True)
 
     if not os.path.exists(model_file_path):
         raise FileNotFoundError(f"Không tìm thấy file weights tại: {model_file_path}")
