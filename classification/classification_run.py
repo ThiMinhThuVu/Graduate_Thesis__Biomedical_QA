@@ -1,5 +1,5 @@
 import torch
-from transformers import AutoTokenizer, AutoModel, AutoModelForSequenceClassification
+from transformers import AutoTokenizer, AutoModel
 from torch import nn
 import yaml
 import os
@@ -35,14 +35,6 @@ def load_model_classification(model_type, model_path, tokenizer_dir):
         tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir)
         return model, tokenizer, device
     elif model_type == 'medhop':
-        # model = AutoModelForSequenceClassification.from_pretrained(
-        #     'dmis-lab/biobert-base-cased-v1.1', num_labels=2
-        # )
-        # model.load_state_dict(torch.load(model_path, map_location=device))
-        # model.to(device)
-        # model.eval()
-        # tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir)
-        # return model, tokenizer, device
         return load_trained_model_medhop(model_path, tokenizer_dir)
     else:
         raise ValueError(f"Unknown model_type: {model_type}")
@@ -59,13 +51,7 @@ def classify_question(model_type, model, tokenizer, device, question, max_length
             probs = torch.softmax(logits, dim=1)
             pred_label = torch.argmax(probs, dim=1).item()
             label_map = {0: 'inference', 1: 'compositional', 2: 'comparison', 3: 'bridge_comparison'}
-        elif model_type == 'medhop':
-            # outputs = model(input_ids=input_ids, attention_mask=attention_mask)
-            # logits = outputs.logits
-            # probs = torch.softmax(logits, dim=1)
-            # pred_label = torch.argmax(probs, dim=1).item()
-            # label_map = {0: 'non-sequence', 1: 'sequence'}
-            
+        elif model_type == 'medhop':            
             output = inference_question(question, model, tokenizer)
             label_map = {0: 'direct', 1: 'sequence', 2: 'parallel'}
             # probs = output['confidence']
