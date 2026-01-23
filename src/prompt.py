@@ -30,8 +30,8 @@ def load_search_keyword_prompt(question, dataset=None, type_q=None):
         labels_str = ", ".join(BIO_LABELS_LIST)
         messages = [
             {
-        "role": "system",
-        "content": f"""## Role
+                "role": "system",
+                "content": f"""## Role
 You are an expert in generating concise and effective Google search queries to help answer complex biomedical questions
 
 ## Task
@@ -67,8 +67,8 @@ Generate ONLY 1 search query and identify relevant entities
 """
             },
             {
-        "role": "user",
-        "content": f"""Here are 5 examples demonstrating the desired output format, which is an array containing a single object with a "search_keyword" field holding the Google search query string
+                "role": "user",
+                "content": f"""## Examples (5)
 
 ---
 **Example 1:**
@@ -212,7 +212,7 @@ Adapt relation keywords based on the key entity's type to avoid ambiguity:
                 },
                 {
                     "role": "user",
-                    "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is an array containing a single object with a "search_keyword" and "key_entity" field
+                    "content": f"""## Examples (5)
 
 ---
 **Example 1:**
@@ -285,6 +285,7 @@ JSON desired output format:
     }}
 ]
 ---
+
 ## Information
 Question: "{question}"
 
@@ -303,42 +304,53 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
         labels_str = ", ".join(BIO_LABELS_LIST)
         messages = [
             {
-        "role": "system",
-        "content": f"""## Role
+                "role": "system",
+                "content": f"""## Role
 You are an expert in biomedical knowledge and complex question decomposition
 
 ## Task
-Decompose complex biomedical questions into a sequence of simpler, interconnected subquestions to create a logical reasoning plan
+Decompose complex multi-hop biomedical questions into a sequence of simpler, interconnected subquestions where each step's answer becomes input for the next step
 
 ## Instructions
-1. **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the question into a series of subquestions
-2. **Sequential Planning**: Generate a sequence of subquestions where each step depends on the previous ones
-3. **Synthesis**: The final subquestion must synthesize the gathered information to answer the original complex question
+**Understanding Multi-Hop Reasoning:**
+A multi-hop question requires breaking down into subquestions (Q1, Q2, ..., Qn) where:
+- Q1 is answered first → produces Answer A1
+- A1 is incorporated into Q2 → produces Answer A2
+- This chain continues until the final answer is found
+- Each subquestion must be answerable independently through search/retrieval
+
+**Example Pattern:**
+- Original: "Which chromosome contains the gene encoding the enzyme that inactivates antithrombin?"
+- Q1: "Which gene encodes the enzyme that can inactivate antithrombin?" → A1: "SERPINA1 gene"
+- Q2: "Which chromosome contains SERPINA1 gene?" → A2: "chromosome 14"
+
+**Decomposition Steps:**
+1. Identify information dependencies - determine what intermediate information must be retrieved before the final answer can be found
+2. Create a sequential chain where each subquestion builds upon previous answers
+3. Ensure each subquestion is self-contained and searchable without needing the answer from previous steps (include full context in the question text)
+4. Ensure the last subquestion combines all gathered information to produce the final answer
 
 ## Rules
-### Subquestions
-- Subquestions MUST be self-contained and understandable in isolation
-- Include all necessary context from previous steps so they are searchable by standard query engines
-- Avoid pronouns or vague references (e.g., use "the gene" or "the specific enzyme" instead of "it")
-- Prefer subquestions that yield single, specific entities
-
-### List Handling
-- Avoid vague list generation for intermediate steps
-- If a step produces a list, the next step must explicitly state how to process it (e.g., "Which of the identified genes is expressed in the liver?")
-
-### Efficiency
-- Decompose into the MINIMUM number of steps necessary
-
-### Distillation
-- The search_keyword should be a distillation of the subquestion
-- Focus on essential nouns and technical terms
-- The "key_entity" list should be specific. Exclude generic or abstract concepts (e.g., "medication", "drug", "treatment")
+- Question contains nested attributes (e.g., "the gene OF the enzyme THAT does X")
+- Question asks about properties of an unknown entity (must first identify the entity)
+- Question requires connecting multiple pieces of information sequentially
+- Subquestions MUST be searchable by standard query engines (Google, Wikipedia, PubMed)
+- Subquestions MUST include all necessary context explicitly (don't rely on implicit information from previous steps)
+- Avoid pronouns or vague references (use "that gene", "that enzyme", "that syndrome" instead of "it")
+- Each subquestion should yield a single, specific entity when possible (not a list)
+- Avoid generating lists in intermediate steps when possible
+- If a step must produce multiple entities, the next step should specify how to filter/select (e.g., "Which of those genes is located on chromosome 7?")
+- Use the MINIMUM number of steps necessary to answer the question
+- MAXIMUM 3 hops (subquestions) allowed - do not exceed this limit
+- search_keyword: Extract only essential nouns and technical terms (omit question words and verbs)
+- key_entity: List specific, retrievable biomedical entities only
+- EXCLUDE generic concepts like "medication", "drug", "treatment", "disease" unless they are specific named entities
 
 ## Constraints
 - MUST: Use ONLY the following keys for each step: "subquestion", "search_keyword", "focus_spacy_based_entity_label", "target_answer_type", "key_entity"
 - MUST: Select focus_spacy_based_entity_label ONLY from the following list: [{labels_str}]
+- MUST: For target_answer_type, extract a notable short phrase from the question (e.g., "gene", "chromosome", "syndrome"). Exception: Use "yes_no" for yes/no questions
 - CRITICAL: Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses
-- MUST: Select target_answer_type as a term ONLY from the question
 
 ## Output Format (JSON)
 [
@@ -351,13 +363,11 @@ Decompose complex biomedical questions into a sequence of simpler, interconnecte
     }}
 ]
 
-Original Complex Question: '{question}'
 """
             },
             {
-            "role": "user",
-            "content": f"""
-        Here are 5 examples demonstrating the desired JSON output format and decomposition logic:
+                "role": "user",
+                "content": f"""## Examples (5)
 
 ---
 **Example 1:**
@@ -480,16 +490,23 @@ JSON desired output format:
 ]
 
 
-Now, please provide the decomposition with the minimum number of necessary steps for my original complex question
-Remember the strict formatting requirements:
-1.  Entire output MUST be a valid array
-2.  Ensure all subquestions are self-contained and directly contribute to answering the original complex question, adhering to the guidelines for intermediate results
-
 ## Information
 Original Complex Question: '{question}'
 
 ## Task
 Decompose the question into subquestions following the examples and rules. Output in JSON format
+
+## Output Format (JSON)
+[
+    {{
+        "subquestion": "subquestion",
+        "search_keyword": "distilled, concise keyword-based query",
+        "focus_spacy_based_entity_label": ["list of labels from allowed list"],
+        "target_answer_type": "type of answer from question",
+        "key_entity": ["specific retrievable entities"]
+    }}
+]
+
 CRITICAL: You MUST map "VIRUS" to "ORGANISM" in focus_spacy_based_entity_label
 """
                 }
@@ -540,7 +557,7 @@ Original Complex Question: '{question}'
                 },
                 {
                     "role": "user",
-                    "content": f"""Here are 6 examples demonstrating the desired JSON output format and decomposition logic
+                    "content": f"""## Examples (6)
 
 ---
 **Example 1:**
@@ -668,11 +685,6 @@ JSON desired output format:
         "target_answer_type": "date"
     }}
 ]
----
-Now, please provide the decomposition with the minimum number of necessary steps for my original complex question
-Remember the strict formatting requirements:
-1.  The entire output MUST be a valid array
-2.  Ensure all subquestions are self-contained and directly contribute to answering the original complex question
 
 ## Information
 Original Complex Question: '{question}'
@@ -726,7 +738,8 @@ Original Complex Question: '{question}'
                     },
                     {
                         "role": "user",
-                        "content": f"""Here are 4 examples demonstrating the desired JSON output format and decomposition logic.
+                        "content": f"""## Examples (4)
+
 ---
 **Example 1:**
 "Which award did the director of the movie Parasite receive at the Oscars?"
@@ -808,11 +821,6 @@ JSON desired output format:
     "target_answer_type": "country"
 }}
 ]
----
-Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
-Remember the strict formatting requirements:
-1.  The entire output MUST be a valid array
-2.  Ensure each subquestion logically follows the previous one and directly contributes to answering the original complex question
 
 ## Information
 Original Complex Question: '{question}'
@@ -824,9 +832,9 @@ Decompose the question into subquestions following the examples and rules. Outpu
             ]
         elif type_q == "inference":
             messages = [
-            {
-                "role": "system",
-                "content": f"""## Role
+                {
+                    "role": "system",
+                    "content": f"""## Role
 You are an expert in identifying key entities and relations in questions.
 
 ## Task
@@ -852,10 +860,10 @@ Identify the key entity, the key relation, target entity labels, and the answer 
     }}
 ]
 """
-            },
-            {
-                "role": "user",
-                "content": f"""Here are the examples demonstrating the desired JSON output format, which is an array containing a single object with "key_entity" and "key_relation" fields:
+                },
+                {
+                    "role": "user",
+                    "content": f"""## Examples (4)
 
 ---
 **Example 1:**
@@ -929,8 +937,8 @@ Question: "{question}"
 ## Task
 Identify the key entity, key relation, target entity labels, and target answer type. Output in JSON format
 """
-            }
-        ]
+                }
+            ]
 
     return messages
 
