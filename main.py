@@ -8,6 +8,7 @@ from src.generate_answer import *
 from utils.util import *
 from classification.classification_run import load_model_classification, classify_question
 from sentence_transformers import SentenceTransformer
+from sentence_transformers.models import StaticEmbedding
 from transformers import AutoModel
 
 global hash_id_cache
@@ -35,11 +36,16 @@ def load_model(dataset, configs):
         extractor_model = spacy.load("en_ner_bc5cdr_md")
         extractor_model_2 = spacy.load("en_ner_jnlpba_md")
         extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
+        # extractor_model_2 = extractor_model_3 = None
         
         # Biomedical embedding
         # embedding_model = AutoModel.from_pretrained("dmis-lab/biobert-base-cased-v1.1")
         # embedding_model = AutoModel.from_pretrained("michiyasunaga/BioLinkBERT-base")  
-        embedding_model = AutoModel.from_pretrained("microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext")
+        # embedding_model = AutoModel.from_pretrained("microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext")
+        
+        # Initialize a StaticEmbedding module
+        static = StaticEmbedding.from_model2vec("neuml/pubmedbert-base-embeddings-8M")
+        embedding_model = SentenceTransformer(modules=[static])
         print("Loaded biomedical NER + embedding model")
 
     elif dataset == "wiki":
@@ -70,7 +76,9 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
     
     dict_ans = {
         "QIDX": sample_id,
-        "original_question": original_question
+        "original_question": original_question,
+        "type_q": sample['type_q'],
+        "probs": sample['probs'],
     }
     all_context = ""
     
@@ -120,6 +128,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                         key_entities = item['key_entity']   
                     else:
                         key_entities = [short_ans]
+                        
+                    print(f"\n--- Load Step {step}: {subquestion} ---")
                                             
                     retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
 
@@ -166,7 +176,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     candidates = []
                     idx_del = 0
                     current_retrieval, cache_filepath_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
-                    print("Retrieval_path: ", cache_filepath_retrieval)
+                    
                     
                     while idx_del < settings['max_candidates']:
                         if current_retrieval == "" or current_retrieval == []:
@@ -350,13 +360,16 @@ if __name__ == "__main__":
         settings['normalize'] = True
         
     load_model(dataset, configs)
-                  
+    
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
      
         question = sample['Question']
         type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+        sample['type_q'] = type_q
+        sample['probs'] = convert_ndarray(probabilities)
+        
         if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False
         else:

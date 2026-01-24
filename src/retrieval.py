@@ -30,7 +30,7 @@ def retrieval_wiki(search_kw, filepath):
     if os.path.exists(filepath):
         output = load_json(filepath)
         if 'wiki' in output:
-            print(f"Cache hit Google Search. Loading from file.")
+            print(f"Cache hit Wikipedia Search. Loading from file.")
             return output['wiki']['search_results']
     else:
         output = {}
@@ -240,14 +240,17 @@ def get_paragraphs_wiki_result(results, subquestion, embedding_model, max_docs_t
 def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, cache_filepath_retrieval, embedding_model, topk=3, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
     if os.path.exists(cache_filepath_retrieval):
         output = load_json(cache_filepath_retrieval)
+    else:
+        output = {}
         
     if 'crawl_wiki' in output:  
         output_para = output['crawl_wiki'] #selected_paragraphs; html_page
     else:
         output_para = {}    
         
-    if "filter" in output_para and 'selected_paragraphs' in output_para["filter"]:
-        all_context = output_para["filter"]["selected_paragraphs"]
+    if "filter" in output_para:
+        print("[Load cache] - crawl wiki page")
+        all_context = output_para["filter"].get("selected_paragraphs", '')
         return all_context
        
     results = {}    
@@ -385,6 +388,7 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
         
     hash_id, hash_id_cache = register_query_cache(search_kw_subq, hash_id_cache)
     cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}"
+    print("Retrieval_path: ", cache_filepath_retrieval)
     
     if settings['get_context_2wiki']: #Only 2wiki dataset
         retrieval_information = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)

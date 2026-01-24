@@ -30,6 +30,7 @@ move_section_list = [
     "categories",    
 ]
 
+
 def is_sentence_transformer(model):
     return hasattr(model, 'encode') and 'sentence_transformers' in str(type(model))
 
@@ -73,7 +74,7 @@ def caculate_scores(search, golden, embedding_model, is_tfidf = False):
     
     try:
         if is_sentence_transformer(embedding_model):
-            print("is sentence transformer")
+            # print("is sentence transformer")
             embeddings = embedding_model.encode([search, golden], normalize_embeddings=True)
         else:
             # BertModel: require tokenizer and device as arguments
@@ -234,7 +235,16 @@ def get_search_result(id, folder_path):
             return json.load(f)
         
     return None
-     
+
+def convert_ndarray(obj):
+    if isinstance(obj, np.ndarray):
+        return obj.tolist()
+    if isinstance(obj, dict):
+        return {k: convert_ndarray(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [convert_ndarray(v) for v in obj]
+    return obj
+
 def find_most_relevant_doc(input_text, documents):
     # Tạo list gồm input_text + các document
     corpus = [input_text] + documents
