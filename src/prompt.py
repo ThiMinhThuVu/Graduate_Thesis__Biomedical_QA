@@ -342,7 +342,8 @@ A multi-hop question requires breaking down into subquestions (Q1, Q2, ..., Qn) 
 - If a step must produce multiple entities, the next step should specify how to filter/select (e.g., "Which of those genes is located on chromosome 7?")
 - Use the MINIMUM number of steps necessary to answer the question
 - MAXIMUM 3 hops (subquestions) allowed - do not exceed this limit
-- search_keyword: Extract only essential nouns and technical terms (omit question words and verbs)
+- First step search_keyword: Include all relevant context from the original question
+- Dependent step search_keyword: Generate ONLY keywords for the CURRENT step without repeating previous hop context
 - key_entity: List specific, retrievable biomedical entities only
 - EXCLUDE generic concepts like "medication", "drug", "treatment", "disease" unless they are specific named entities
 
@@ -384,7 +385,7 @@ JSON desired output format:
     }},
     {{
         "subquestion": "Which human chromosome contains that gene?",
-        "search_keyword": "human chromosome gene encode enzyme inactivate antithrombin",
+        "search_keyword": "human chromosome location gene",
         "focus_spacy_based_entity_label": ["CELLULAR_COMPONENT"],
         "target_answer_type": "chromosome",
         "key_entity": []
@@ -406,7 +407,7 @@ JSON desired output format:
     }},
     {{
         "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
-        "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
+        "search_keyword": "lactate dehydrogenase tetramer most common organ",
         "focus_spacy_based_entity_label": ["CHEMICAL"],
         "target_answer_type": "tetramer",
         "key_entity": []
@@ -433,7 +434,7 @@ JSON desired output format:
     }},
     {{
         "subquestion": "Which gene mutation is responsible for that syndrome?",
-        "search_keyword": "gene mutation syndrome flattened deformed vertebrae developmental delay lens coloboma",
+        "search_keyword": "gene mutation syndrome",
         "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
         "target_answer_type": "gene mutation",
         "key_entity": []
@@ -458,7 +459,7 @@ JSON desired output format:
     }},
     {{
         "subquestion": "In which London suburb was that pioneering institution located?",
-        "search_keyword": "London location pioneering institution John Langdon Down Earlswood Asylum",
+        "search_keyword": "London suburb location institution",
         "focus_spacy_based_entity_label": ["GPE"],
         "target_answer_type": "suburb",
         "key_entity": []
@@ -489,12 +490,8 @@ JSON desired output format:
     }}
 ]
 
-
 ## Information
 Original Complex Question: '{question}'
-
-## Task
-Decompose the question into subquestions following the examples and rules. Output in JSON format
 
 ## Output Format (JSON)
 [
@@ -509,7 +506,7 @@ Decompose the question into subquestions following the examples and rules. Outpu
 
 CRITICAL: You MUST map "VIRUS" to "ORGANISM" in focus_spacy_based_entity_label
 """
-                }
+            }
             ]
     elif dataset == "wiki":
         labels_str = ", ".join(WIKI_LABELS_LIST)
