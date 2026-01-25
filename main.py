@@ -101,6 +101,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         }
     
         path_output, n_path = decompose_question_sequential(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
+        continue 
         
         for path_i in range(n_path):
             path_i = str(path_i)
@@ -312,7 +313,9 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         all_context += f"{q_i}.{question} - {dict_ans[q_i]['final_qi']['short_answer']}, {dict_ans[q_i]['final_qi']['long_answer']}\n\n"
         save_json(qi_final_answers, ans_filepath)
         print(f"\nFinal answer saved to {ans_filepath}")
-        
+    
+    return
+    
     if n_qi > 1:
         combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
         dict_ans['final_answer'] = combine_parallel_ans
@@ -360,12 +363,15 @@ if __name__ == "__main__":
         settings['normalize'] = True
         
     load_model(dataset, configs)
-    
+       
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
-     
         question = sample['Question']
+        
+        # if sample['QIDX'] not in list_id:
+        #     continue
+        
         type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
         sample['type_q'] = type_q
         sample['probs'] = convert_ndarray(probabilities)
@@ -374,5 +380,7 @@ if __name__ == "__main__":
             is_seq = False
         else:
             is_seq = True
-    
+
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q)
+        
+        

@@ -1,6 +1,6 @@
 run:
   dataset: "medhop" #"medhop" #"wiki"
-  threads: [0, 100]
+  threads: [0, 150]
   data_split: "test"
 
 type_run: {

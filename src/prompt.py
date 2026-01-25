@@ -41,7 +41,15 @@ Generate ONLY 1 search query and identify relevant entities
 1. Provide a single, keyword-based search query string that best targets the core information needed from the original question
 2. Identify a list of target entity types (focus_spacy_based_entity_label) that need to be extracted from the context to answer the question
    - MUST be selected ONLY from this list: [{labels_str}]
-3. Identify the specific requested answer type (target_answer_type) using the words from the question
+3. Identify the specific target_answer_type as follows:
+    - OVERRIDING RULE: If the question is a Yes/No question, THEN target_answer_type MUST be "correctness", regardless of any biomedical terms or noun phrases appearing in the question.
+    - If the question starts with “How many” or “How much”,
+    target_answer_type MUST be “number of [Entity]”, where Entity is the object being counted.
+    - OTHERWISE (only if NOT Yes/No and NOT quantitative):
+        • For biomedical questions, target_answer_type must be the most specific full noun phrase in the question, preserving all medically relevant modifiers.
+        • For factoid questions, target_answer_type must be the minimal abstract concept representing the expected answer type.
+    - If none apply, set target_answer_type to “Undefined”.
+
 4. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
 
 ## Rules
@@ -53,19 +61,17 @@ Generate ONLY 1 search query and identify relevant entities
 - MUST: Provide ONLY 1 search query
 - MUST: Select focus_spacy_based_entity_label ONLY from the following list: [{labels_str}]
 - CRITICAL: Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses
-- MUST: Select target_answer_type as a term ONLY from the question
 
 ## Output Format (JSON)
 [
     {{
         "search_keyword": "Google search query string",
         "focus_spacy_based_entity_label": ["list of labels from the given list"],
-        "target_answer_type": "type of answer from question",
+        "target_answer_type": "type of answer follow Instructions identify",
         "key_entity": ["list of specific entities from question"]
     }}
 ]
-"""
-            },
+"""        },
             {
                 "role": "user",
                 "content": f"""## Examples (5)
@@ -302,7 +308,7 @@ Generate the search query and entity information for the provided question. Outp
 def load_subquestion_prompt(question, dataset=None, type_q=None):
     if dataset == 'medhop':
         labels_str = ", ".join(BIO_LABELS_LIST)
-        messages = [
+        messages = [    
             {
                 "role": "system",
                 "content": f"""## Role
@@ -350,7 +356,15 @@ A multi-hop question requires breaking down into subquestions (Q1, Q2, ..., Qn) 
 ## Constraints
 - MUST: Use ONLY the following keys for each step: "subquestion", "search_keyword", "focus_spacy_based_entity_label", "target_answer_type", "key_entity"
 - MUST: Select focus_spacy_based_entity_label ONLY from the following list: [{labels_str}]
-- MUST: For target_answer_type, extract a notable short phrase from the question (e.g., "gene", "chromosome", "syndrome"). Exception: Use "yes_no" for yes/no questions
+- MUST: Identify the specific target_answer_type as follows:
+    - OVERRIDING RULE: If the question is a Yes/No question, THEN target_answer_type MUST be "correctness", regardless of any biomedical terms or noun phrases appearing in the question.
+    - If the question starts with “How many” or “How much”,
+    target_answer_type MUST be “number of [Entity]”, where Entity is the object being counted.
+    - OTHERWISE (only if NOT Yes/No and NOT quantitative):
+        • For biomedical questions, target_answer_type must be the most specific full noun phrase in the question, preserving all medically relevant modifiers.
+        • For factoid questions, target_answer_type must be the minimal abstract concept representing the expected answer type.
+    - If none apply, set target_answer_type to “Undefined”.
+
 - CRITICAL: Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses
 
 ## Output Format (JSON)
@@ -359,7 +373,7 @@ A multi-hop question requires breaking down into subquestions (Q1, Q2, ..., Qn) 
         "subquestion": "subquestion",
         "search_keyword": "distilled, concise keyword-based query",
         "focus_spacy_based_entity_label": ["list of labels from allowed list"],
-        "target_answer_type": "type of answer from question",
+        "target_answer_type": "type of answer follow RULES identify",
         "key_entity": ["specific retrievable entities"]
     }}
 ]

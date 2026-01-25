@@ -108,17 +108,18 @@ for filename in os.listdir(all_ans_dir):
     q_type_v0 = labels_map[str(cache_class[id]['is_sequence'])]
     all_ans.append({
         "id": id, 
+        "question": question,
         "q_type_v0": q_type_v0,
         "q_type": type_q, 
         "props": probabilities,
         'target_ans_type': ans_type,
-        "norm_ans_is_correct": normalize_text(norm_normalized) in gt_true,  
-        "original_ans_is_correct": normalize_text(norm_original) in gt_true, 
-        "ground_truth_true": gt_true,
-        # "ground_truth_false": gt_false,
-        "pred_short_answer": pred_short_answer,
+        "ground_truth_true": gt_true,         
         "short_ans_original": norm_original,
+        "original_ans_is_correct": normalize_text(norm_original) in gt_true, 
+        "final_short_answer": pred_short_answer,
+        "final_ans_is_correct": normalize_text(pred_short_answer) in gt_true, 
         "short_ans_normalized": norm_normalized,
+        "norm_ans_is_correct": normalize_text(norm_normalized) in gt_true,              
         "pred_long_answer": pred_long_answer,
         
     })
