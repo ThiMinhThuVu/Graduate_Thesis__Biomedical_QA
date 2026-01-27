@@ -327,6 +327,7 @@ Format: {formatting}
 
 def generate_answer(
     question: str,
+    target_answer_type: str,
     context: Union[str, List[str]],
     rules: Dict,
     q_key_entity: Optional[str] = None,
@@ -381,10 +382,10 @@ def generate_answer(
     full_instructions += rules_text
     
     # Build output format
-    output_format = get_answer_generation_output_format(type_q, rules.get("primary_rule") == "royal_noble")
+    output_format = get_answer_generation_output_format(type_q, rules.get("primary_rule") == "royal_noble", target_answer_type)
     
     # Build user prompt
-    user_prompt = get_answer_generation_user_prompt(question, context_str, full_instructions, output_format, q_key_entity, evidence_key_entity)
+    user_prompt = get_answer_generation_user_prompt(question, target_answer_type, context_str, full_instructions, output_format, q_key_entity, evidence_key_entity)
 
     messages = [
         {"role": "system", "content": system_message},

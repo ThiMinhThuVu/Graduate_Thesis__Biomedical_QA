@@ -7,8 +7,12 @@ class Config:
     # hf_model_name = "michiyasunaga/BioLinkBERT-base"  
     # local_model_path = "classification/model/medhop/cache/biolinkbert/biolinkbert_cache"  
     
-    hf_model_name = "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext"
-    local_model_path = "classification/model/medhop/cache/pubmedbert/pubmedbert_cache"
+    # hf_model_name = "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext"
+    # local_model_path = "classification/model/medhop/cache/pubmedbert/pubmedbert_cache"
+    
+    hf_model_name = "dmis-lab/biobert-base-cased-v1.2"
+    local_model_path = "classification\model\medhop\cache\biobert_v9\biobert_cache"
+    
     max_length = 128
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

@@ -101,7 +101,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         }
     
         path_output, n_path = decompose_question_sequential(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
-        continue 
+        # continue 
         
         for path_i in range(n_path):
             path_i = str(path_i)
@@ -185,7 +185,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                         
                         evidence_ner = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, current_retrieval, focus_spacy_based_entity_label, cache_filepath_retrieval, settings)  
                         norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
-                        raw_answer = generate_answer(subquestion, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
+                        raw_answer = generate_answer(subquestion, target_answer_type, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
                         
                         # Normalize if needed
                         if settings['normalize'] and norm_rules.get("needs_normalization", True):
@@ -314,7 +314,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         save_json(qi_final_answers, ans_filepath)
         print(f"\nFinal answer saved to {ans_filepath}")
     
-    return
+    # return
     
     if n_qi > 1:
         combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")

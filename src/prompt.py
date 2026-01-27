@@ -49,8 +49,7 @@ Generate ONLY 1 search query and identify relevant entities
         • For biomedical questions, target_answer_type must be the most specific full noun phrase in the question, preserving all medically relevant modifiers.
         • For factoid questions, target_answer_type must be the minimal abstract concept representing the expected answer type.
     - If none apply, set target_answer_type to “Undefined”.
-
-4. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
+    4. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
 
 ## Rules
 - The query should be a distillation of the original complex question
@@ -1551,7 +1550,7 @@ This question compares two or more entities.
    return ""
 
 
-def get_answer_generation_output_format(type_q: Optional[str] = None, is_royal_noble: bool = False) -> str:
+def get_answer_generation_output_format(type_q: Optional[str] = None, is_royal_noble: bool = False, target_answer_type: str = None) -> str:
     if type_q == "inference" or is_royal_noble:
         return """{
     "long_answer": "Step-by-step explanation with evidence citations",
@@ -1569,6 +1568,7 @@ def get_answer_generation_output_format(type_q: Optional[str] = None, is_royal_n
 
 def get_answer_generation_user_prompt(
     question: str,
+    target_answer_type: str,
     context_str: str,
     rules_text: str,
     output_format: str,

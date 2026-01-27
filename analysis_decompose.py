@@ -1,21 +1,38 @@
 import os
 import json
 import csv
+from utils.util import load_yaml
+from classification.classification_run import load_model_classification, classify_question
+
 def load_json(file):
     with open(file, 'r', encoding='utf-8') as f:
         return json.load(f)
 
+def save_json(data, filename):
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+
+# config_path = "config/config.yaml"
+# configs = load_yaml(config_path)
+# dataset = configs['run']['dataset']
+
+# model_path = configs['classification'][dataset]['model_path']
+# tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
+
+# model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
+
 def save_qidx_list_to_csv(qidx_dict, base_dir="medhop_preprocessing/step1", output_csv="analysis_decompose.csv"):
-    # folders = ["1", "2", "3", "4"]
-    folders = ["1"]
+    folders = ["1", "2", "3", "4"]
+    # folders = ["1"]
     results = []
-    list_id = [
-        "284704",
-        "373907",
-        "378607",
+    
+    list_id = [        
+        # "284704",
+        # "373907",
+        # "378607",
         
-        "143907",
-        "195446",
+        # "143907",
+        # "195446",
         
         # "406222",
         # "521164",
@@ -45,11 +62,11 @@ def save_qidx_list_to_csv(qidx_dict, base_dir="medhop_preprocessing/step1", outp
     ]
 
 
-    for qidx, question in qidx_dict.items():
-        if qidx not in list_id:
-            continue
-                    
-        result = {"qidx": qidx, "Question": question}
+    for qidx, item in qidx_dict.items():
+        # if qidx not in list_id:
+        #     continue
+        result = {"qidx": qidx}    
+        # result = {"qidx": qidx, "Question": item['Question'], "Type_q": item['type_q']}
         for folder in folders:
             folder_path = os.path.join(base_dir, folder)
             found = False
@@ -83,13 +100,18 @@ def save_qidx_list_to_csv(qidx_dict, base_dir="medhop_preprocessing/step1", outp
         for r in results:
             writer.writerow(r)
 
-# cache_class = load_json("data/important_id.json")
+dict_id = load_json("data/important_id.json")
 
-cache_csv = 'answer_and_normalization_combined.csv'
-dict_id = {}
-with open(cache_csv, 'r', encoding='utf-8') as f:
-    reader = csv.DictReader(f)
-    for row in reader:
-        dict_id[row['id']] = row['question']
+# for id, item in dict_id.items():
+#     question = item["Question"]
+#     type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+#     item['type_q'] = type_q
+
+# cache_csv = 'answer_and_normalization_combined.csv'
+# dict_id = {}
+# with open(cache_csv, 'r', encoding='utf-8') as f:
+#     reader = csv.DictReader(f)
+#     for row in reader:
+#         dict_id[row['id']] = row['question']
 
 save_qidx_list_to_csv(dict_id)
