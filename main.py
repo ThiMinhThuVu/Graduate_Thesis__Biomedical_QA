@@ -84,7 +84,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
         "QIDX": sample_id,
         "original_question": original_question,
         "type_q": sample['type_q'],
-        "probs": sample['probs'],
+        # "probs": sample['probs'],
     }
     all_context = ""
     
@@ -186,9 +186,6 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     idx_del = 0
                     current_retrieval, cache_filepath_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
                     
-                    # evidence_ner = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, current_retrieval, focus_spacy_based_entity_label, cache_filepath_retrieval, settings) 
-                    # answer_generation = _generate_answer(subquestion, evidence_ner, current_retrieval, dataset, type_q, target_answer_type, using_target_type)
-                    
                     while idx_del < settings['max_candidates']:
                         if current_retrieval == "" or current_retrieval == []:
                             break
@@ -236,11 +233,11 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         if current_short.lower() in ['yes', 'no']:
                             break
                         
-                        new_retrieval = remove_retrieve_evidence(current_retrieval, current_short)
-                        if new_retrieval == current_retrieval:
-                            break
-                        else:
-                            current_retrieval = new_retrieval
+                        # new_retrieval = remove_retrieve_evidence(current_retrieval, current_short)
+                        # if new_retrieval == current_retrieval:
+                        #     break
+                        # else:
+                        #     current_retrieval = new_retrieval
                         idx_del += 1
                     
                     # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES ---
@@ -363,7 +360,41 @@ if __name__ == "__main__":
     model_path = configs['classification'][dataset]['model_path']
     tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
 
-    model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
+    # model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
+    
+    # settings = configs['type_run']   
+    # settings["dataset"] = f"{dataset}_"
+    # settings["wiki_cache"] = wiki_cache_data
+    # raw_data_file = configs['dataset'][dataset][data_type]
+    # raw_data = load_json(raw_data_file)
+        
+    # if dataset == "medhop":
+    #     settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
+    #     settings['normalize'] = True
+        
+    # load_model(dataset, configs)
+       
+    # for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
+    #     if not (threads[0] <= idx < threads[1]):
+    #         continue 
+    #     question = sample['Question']
+        
+    #     # if sample['QIDX'] not in list_id:
+    #     #     continue
+        
+    #     type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+    #     sample['type_q'] = type_q
+    #     sample['probs'] = convert_ndarray(probabilities)
+        
+    #     if type_q in ['direct', 'parallel', 'comparison']:
+    #         is_seq = False
+    #     else:
+    #         is_seq = True
+
+    #     preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, using_target_type=False)
+        
+    # model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
+    class_q = load_json("classification_result.json")
     
     settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
@@ -385,9 +416,11 @@ if __name__ == "__main__":
         # if sample['QIDX'] not in list_id:
         #     continue
         
-        type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+        # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+        type_q = class_q[sample['QIDX']]['type_q']
+        print(type_q)
         sample['type_q'] = type_q
-        sample['probs'] = convert_ndarray(probabilities)
+        # sample['probs'] = convert_ndarray(probabilities)
         
         if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False

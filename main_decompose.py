@@ -70,15 +70,21 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
         original_question = settings['chrunk_mapping'][sample_id]
     else:
         original_question = sample['Question']
-        
-    list_qi = decompose_question_parallel(original_question, dataset=dataset, type_q=type_q)
+    
+    decomp_file = paths['cache_decomp']
+    if os.path.exists(decomp_file):
+        list_qi = load_json(decomp_file)
+    else:
+        list_qi = decompose_question_parallel(original_question, dataset=dataset, type_q=type_q)
+        save_json(list_qi, decomp_file)
+    print(decomp_file)
     n_qi = len(list_qi)
     
     dict_ans = {
         "QIDX": sample_id,
         "original_question": original_question,
         "type_q": sample['type_q'],
-        "probs": sample['probs'],
+        # "probs": sample['probs'],
     }
     all_context = ""
     
@@ -344,14 +350,15 @@ if __name__ == "__main__":
     
     #edit config
     # threads = configs['run']['threads'] 
-    threads = [150, 1000]
+    threads = [0, 1000]
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
     model_path = configs['classification'][dataset]['model_path']
     tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
 
-    model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
+    # model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
+    class_q = load_json("classification_result.json")
     
     settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
@@ -373,9 +380,11 @@ if __name__ == "__main__":
         # if sample['QIDX'] not in list_id:
         #     continue
         
-        type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+        # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+        type_q = class_q[sample['QIDX']]['type_q']
+        print(type_q)
         sample['type_q'] = type_q
-        sample['probs'] = convert_ndarray(probabilities)
+        # sample['probs'] = convert_ndarray(probabilities)
         
         if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False
