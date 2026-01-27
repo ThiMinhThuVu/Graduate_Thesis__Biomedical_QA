@@ -49,14 +49,15 @@ def save_json(data, filename):
 
 cache_class = load_json("data/important_id.json")
 
-config_path = "config/config.yaml"
-configs = load_yaml(config_path)
-dataset = configs['run']['dataset']
+# config_path = "config/config.yaml"
+# configs = load_yaml(config_path)
+# dataset = configs['run']['dataset']
 
-model_path = configs['classification'][dataset]['model_path']
-tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
+# model_path = configs['classification'][dataset]['model_path']
+# tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
 
-model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
+# model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
+dict_id = load_json("classification_result.json")
 
 # Combined output: one file with all relevant columns
 all_ans = []
@@ -68,8 +69,9 @@ for filename in os.listdir(all_ans_dir):
     file_path = os.path.join(all_ans_dir, filename)
     data = load_json(file_path)
     question = data.get('original_question', "")
-    type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
-
+    # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+    type_q = dict_id[id]['type_q']
+    
     # --- Candidate normalization changes ---
     norm_original = ""
     norm_normalized = ""
@@ -110,8 +112,8 @@ for filename in os.listdir(all_ans_dir):
         "id": id, 
         "question": question,
         "q_type_v0": q_type_v0,
-        "q_type": type_q, 
-        "props": probabilities,
+        "type_q": type_q, 
+        # "props": probabilities,
         'target_ans_type': ans_type,
         "ground_truth_true": gt_true,         
         "short_ans_original": norm_original,
@@ -123,5 +125,11 @@ for filename in os.listdir(all_ans_dir):
         "pred_long_answer": pred_long_answer,
         
     })
+    dict_id[id] = {
+        'Question': question,
+        'is_sequence': q_type_v0,
+        'type_q': type_q
+    }
 
 pd.DataFrame(all_ans).to_csv("answer_and_normalization_combined.csv", index=False)
+# save_json(dict_id, "classification_result.json")

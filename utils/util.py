@@ -322,6 +322,7 @@ def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
     dirs = {
         "results": f"{dataset}results{q_i}",
         "decomp": f"{dataset}preprocessing/step1{q_i}",
+        "cache_decomp": f"{dataset}preprocessing/step0",
         "retrieval": f"{dataset}preprocessing/step2{q_i}",
         "ner": f"{dataset}preprocessing/step3{q_i}",
         "all_ans": f"{dataset}results/all_ans",
@@ -332,6 +333,7 @@ def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
         os.makedirs(d, exist_ok=True)
 
     paths = {
+        "cache_decomp": os.path.join(dirs["cache_decomp"], f"{sample_id}.json"),
         "decomp": os.path.join(dirs["decomp"], f"step_1_{sample_id}.json"),
         # "gg_search": os.path.join(dirs["retrieval"], f"step_2_gg_{sample_id}.json"),
         # "wiki_search": os.path.join(dirs["retrieval"], f"step_2_wiki_{sample_id}.json"),

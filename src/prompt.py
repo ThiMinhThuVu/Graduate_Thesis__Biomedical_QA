@@ -17,9 +17,12 @@ def load_prompt_gen_sub(question=None, is_seq=False, dataset=None, type_q=None, 
       
     return messages
 
-def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None, type_q=None):
+def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None, type_q=None, target_answer_type=None, using_target_type=False):
     if dataset == "medhop":
-        prompt = prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info)
+        if using_target_type:
+            prompt = prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info, target_answer_type)
+        else:
+            prompt = prompt_gen_answer_medhop_step_3b_not_target_type(question, key_entities, relevant_info)
     elif dataset == "wiki":
         prompt = prompt_gen_answer_wiki_step_3b(question, key_entities, relevant_info, type_q=type_q)
 
@@ -49,7 +52,7 @@ Generate ONLY 1 search query and identify relevant entities
         • For biomedical questions, target_answer_type must be the most specific full noun phrase in the question, preserving all medically relevant modifiers.
         • For factoid questions, target_answer_type must be the minimal abstract concept representing the expected answer type.
     - If none apply, set target_answer_type to “Undefined”.
-    4. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
+4. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
 
 ## Rules
 - The query should be a distillation of the original complex question
@@ -953,7 +956,48 @@ Identify the key entity, key relation, target entity labels, and target answer t
     return messages
 
 
-def prompt_gen_answer_medhop_step_3b(question, key_entities, context):
+def prompt_gen_answer_medhop_step_3b(question, key_entities, context, target_answer_type=None):
+    prompt = f"""## Role
+You are an expert in biomedical knowledge.
+
+## Task
+Answer the following biological question based on the provided information.
+
+## Instructions
+1. Analyze the provided context carefully
+2. Ensure the short_answer strictly matches the format required by the target_answer_type.
+3. Generate two parts in JSON format: a detailed explanation and a short answer
+
+## Rules
+### Short Answer Format
+- **Count questions** ("how many"): Return ONLY a number (e.g., "10", "ten")
+- **Time/Duration questions**: Return a concise time value (e.g., "3 days")
+- **Yes/No questions**: Return exactly "Yes" or "No"
+- **Entity questions**: Return the full noun phrase naming the entity (e.g., "chromosome X")
+- **Organism questions**: Return organism type (e.g., "bacterium")
+- **Insufficient Info**: If the information is missing, return exactly "Insufficient information"
+
+## Constraints
+- MUST: Your short_answer MUST be MAX 3 words
+- MUST NOT: Add any extra commentary outside the JSON
+- MUST NOT: Use abbreviations for entities if the full name is available
+- Target Match: The short_answer MUST align with the provided target_answer_type.
+
+## Information
+Question: {question}
+Target Answer Type: {target_answer_type}
+Key entities: {key_entities}
+Context: {context}
+
+## Output Format (JSON)
+{{
+    "long_answer": "detailed explanation based on context",
+    "short_answer": "1-3 word answer strictly matching the {target_answer_type} requirement"
+}}
+"""
+    return prompt
+
+def prompt_gen_answer_medhop_step_3b_not_target_type(question, key_entities, context):
     prompt = f"""## Role
 You are an expert in biomedical knowledge.
 
@@ -990,7 +1034,6 @@ Context: {context}
 }}
 """
     return prompt
-
 
 def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None):
     if type_q in ["bridge_comparison", "comparison"]:
@@ -1246,6 +1289,63 @@ Output: ["father", "father"]
 
     return messages
 
+# def prompt_split_parallel_question_medhop(question):
+#     system_prompt = """## Role
+# You are an expert in biomedical question decomposition
+
+# ## Task
+# Split a complex comparative question into independent subquestions based on the entities being compared
+
+# ## Constraints
+# - MUST: Output ONLY a valid array of strings in JSON format
+# - MUST NOT: Include any explanation, introductory text, or markdown formatting
+# - MUST NOT: Change the core entities or the relation being compared
+# - MUST: Ensure subquestions are complete and context-rich enough to be answered independently"""
+
+#     user_prompt = f"""## Task
+# Decompose the provided complex comparative question into retrieval-focused subquestions
+
+# ## Instructions
+# 1. Identify all primary entities being compared in the question
+# 2. Identify the specific attribute or property being compared
+# 3. Create independent questions that each ask for that attribute for each entity identified
+# 4. Format the final result as a simple array of strings
+
+# ## Information
+# Question: "{question}"
+
+# ## Examples
+# ---
+# **Example 1:**
+# Input: "Can patients exhibiting symptoms of either aniridia, genitourinary anomalies, or intellectual disability also be at an increased risk for developing nephroblastoma?"
+# Output:
+# [
+#     "Are patients with aniridia at an increased risk for developing nephroblastoma?",
+#     "Are patients with genitourinary anomalies at an increased risk for developing nephroblastoma?",
+#     "Are patients with intellectual disability at an increased risk for developing nephroblastoma?"
+# ]
+# ---
+# **Example 2:**
+# Input: "What genetic variations are linked to cardiovascular abnormalities, specifically are they found in MYH7 or TTN?"
+# Output:
+# [
+#     "Which genetic variations in MYH7 are linked to cardiovascular abnormalities?",
+#     "Which genetic variations in TTN are linked to cardiovascular abnormalities?"
+# ]
+# ---
+
+# ## Output Format (JSON)
+# ["sub_question_1", "sub_question_2", "..."]
+# """
+        
+#     messages = [
+#         {"role": "system", "content": system_prompt.strip()},
+#         {"role": "user", "content": user_prompt.strip()}
+#     ]
+         
+#     return messages
+
+
 def prompt_split_parallel_question_medhop(question):
     system_prompt = """## Role
 You are an expert in biomedical question decomposition
@@ -1255,6 +1355,7 @@ Split a complex comparative question into independent subquestions based on the 
 
 ## Constraints
 - MUST: Output ONLY a valid array of strings in JSON format
+- MUST: Use the MINIMUM number of subquestions necessary to answer the question
 - MUST NOT: Include any explanation, introductory text, or markdown formatting
 - MUST NOT: Change the core entities or the relation being compared
 - MUST: Ensure subquestions are complete and context-rich enough to be answered independently"""
@@ -1265,7 +1366,7 @@ Decompose the provided complex comparative question into retrieval-focused subqu
 ## Instructions
 1. Identify all primary entities being compared in the question
 2. Identify the specific attribute or property being compared
-3. Create independent questions that each ask for that attribute for each entity identified
+3. Create independent questions that each ask for that attribute for each entity identified (MAX 4)
 4. Format the final result as a simple array of strings
 
 ## Information
@@ -1381,9 +1482,10 @@ Answer the question based on the provided context following precise formatting r
 
 ## Instructions
 1. **Analyze Context**: Read all documents carefully and connect facts
-2. **Determine Evidence**: Identify explicit facts first, then make logical inferences
-3. **Synthesis**: Treat synonyms/alternate names as the same entity
-4. **Formatting**: Apply the EXACT formatting rules provided for your specific question type
+2. **Identify Target Answer Type**: Locate the target_answer_type and use it as the primary filter for your answer. 
+3. **Determine Evidence**: Identify explicit facts first, then make logical inferences
+4. **Synthesis**: Treat synonyms/alternate names as the same entity
+5. **Formatting**: Apply the EXACT formatting rules provided for your specific question type
 
 ## Rules
 ### Context Synthesis
@@ -1562,7 +1664,7 @@ def get_answer_generation_output_format(type_q: Optional[str] = None, is_royal_n
     else:
         return """{
     "long_answer": "Step-by-step explanation with evidence citations",
-    "short_answer": "Answer following formatting rules exactly, SINGLE most probable answer (NO lists/separators)"
+    "short_answer": "Answer following formatting rules exactly, SINGLE most probable answer (NO lists/separators). A answer that must be a {target_answer_type}.""
 }"""
 
 
@@ -1583,8 +1685,9 @@ Answer the following question based on the provided context.
 
 ## Instructions
 1. Review the question and optional key entities
-2. Apply the provided formatting rules
-3. Extract the answer from the context
+2. Align the answer strictly with the specified **Target Answer Type**.
+3. Apply the provided formatting rules
+4. Extract the answer from the context
 
 ## Constraints
 - MUST: Provide ONLY the JSON object
@@ -1592,6 +1695,7 @@ Answer the following question based on the provided context.
 
 ## Information
 Question: {question} {q_key_entity}
+Target Answer Type: {target_answer_type}
 {key_entity_text}
 
 Formatting Rules:

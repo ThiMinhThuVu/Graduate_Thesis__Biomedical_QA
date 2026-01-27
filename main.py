@@ -4,7 +4,7 @@ from tqdm import tqdm
 from src.decomposition import decompose_question_parallel, decompose_question_sequential
 from src.retrieval import retrieve_evidence, remove_retrieve_evidence
 from src.extract_ner import extract_entities_from_evidence
-from src.generate_answer import *
+from src.generate_answer import generate_combine_parallel_answers,gen_ans_multiple_choice, _generate_answer
 from utils.util import *
 from classification.classification_run import load_model_classification, classify_question
 from sentence_transformers import SentenceTransformer
@@ -57,7 +57,7 @@ def load_model(dataset, configs):
     else:
         raise ValueError(f"Unsupported dataset: {dataset}")
 
-def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None):
+def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None, using_target_type = False):
     sample_id = str(sample['QIDX']) 
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
@@ -71,7 +71,13 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
     else:
         original_question = sample['Question']
         
-    list_qi = decompose_question_parallel(original_question, dataset=dataset, type_q=type_q)
+    decomp_file = paths['cache_decomp']
+    if os.path.exists(decomp_file):
+        list_qi = load_json(decomp_file)
+    else:
+        list_qi = decompose_question_parallel(original_question, dataset=dataset, type_q=type_q)
+        save_json(list_qi, decomp_file)
+        
     n_qi = len(list_qi)
     
     dict_ans = {
@@ -138,10 +144,12 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                         continue
                     short_ans = qi_final_answers[path_i][step]["short_answer"]
                     long_ans = qi_final_answers[path_i][step]["long_answer"]     
+                    
                     if 'candidate' in qi_final_answers[path_i][step]:
                         candidates = qi_final_answers[path_i][step]["candidate"] 
                     else:
                         candidates = []
+                    
                     if step not in dict_ans[q_i][path_i]:
                         dict_ans[q_i][path_i][step] = {}
                         
@@ -178,34 +186,39 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None)
                     idx_del = 0
                     current_retrieval, cache_filepath_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
                     
+                    # evidence_ner = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, current_retrieval, focus_spacy_based_entity_label, cache_filepath_retrieval, settings) 
+                    # answer_generation = _generate_answer(subquestion, evidence_ner, current_retrieval, dataset, type_q, target_answer_type, using_target_type)
                     
                     while idx_del < settings['max_candidates']:
                         if current_retrieval == "" or current_retrieval == []:
                             break
                         
                         evidence_ner = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, current_retrieval, focus_spacy_based_entity_label, cache_filepath_retrieval, settings)  
-                        norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
-                        raw_answer = generate_answer(subquestion, target_answer_type, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
+                        # norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
+                        # raw_answer = generate_answer(subquestion, target_answer_type, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
+                        # không norm
+                        normalized_answer = _generate_answer(subquestion, evidence_ner, current_retrieval, dataset, type_q, target_answer_type, using_target_type)
+                        current_short = normalized_answer['short_answer']
                         
-                        # Normalize if needed
-                        if settings['normalize'] and norm_rules.get("needs_normalization", True):
-                            normalized_answer = normalize_answer_with_wikipedia(
-                                raw_answer,
-                                should_normalize=True
-                            )
-                        else:
-                            normalized_answer = raw_answer.copy()
-                            normalized_answer["normalization"] = {
-                                "was_normalized": False,
-                                "skip_reason": "Normalization disabled or not needed"
-                            }
-                        normalized_answer["metadata"] = {
-                            "rules_applied": norm_rules.get("primary_rule"),
-                            "normalized": settings['normalize'] and norm_rules.get("needs_normalization", True),
-                        }
+                        # # Normalize if needed
+                        # if settings['normalize'] and norm_rules.get("needs_normalization", True):
+                        #     normalized_answer = normalize_answer_with_wikipedia(
+                        #         raw_answer,
+                        #         should_normalize=True
+                        #     )
+                        # else:
+                        #     normalized_answer = raw_answer.copy()
+                        #     normalized_answer["normalization"] = {
+                        #         "was_normalized": False,
+                        #         "skip_reason": "Normalization disabled or not needed"
+                        #     }
+                        # normalized_answer["metadata"] = {
+                        #     "rules_applied": norm_rules.get("primary_rule"),
+                        #     "normalized": settings['normalize'] and norm_rules.get("needs_normalization", True),
+                        # }
                                                 
-                        current_short = normalized_answer["short_answer"]
-                        print("Current answer: ", current_short)
+                        # current_short = normalized_answer["short_answer"]
+                        # print("Current answer: ", current_short)
                         
                         # Kiểm tra nếu đáp án mới này đã tồn tại trong list candidates chưa
                         is_duplicate = any(c['short_answer'].lower().strip() == current_short.lower().strip() for c in candidates)
@@ -381,6 +394,6 @@ if __name__ == "__main__":
         else:
             is_seq = True
 
-        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q)
+        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, using_target_type=False)
         
         

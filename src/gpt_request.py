@@ -62,7 +62,7 @@ def request_api(messages, model, temperature=0):
 
     raise RuntimeError("All APIs failed after multiple retries.")
 
-def _search_google(query):
+def search_google(query):
     max_retries = 10
     retry_delay = 2
    
@@ -97,7 +97,7 @@ def _search_google(query):
             else:
                 raise e  
 
-def search_google(query):
+def _search_google(query):
     url = "https://api.serpshot.com/api/search/google"
     headers = {
         "Content-Type": "application/json",
