@@ -11,7 +11,7 @@ current_api_index = 0
 def request_api(messages, model, temperature=0):
     global current_api_index
     max_retries = 50
-    retry_delay = 30
+    retry_delay = 10
     
     if model == "gpt-4o-mini":
         API_LIST = API_LIST_4O
@@ -62,7 +62,7 @@ def request_api(messages, model, temperature=0):
 
     raise RuntimeError("All APIs failed after multiple retries.")
 
-def _search_google(query):
+def search_google(query):
     max_retries = 10
     retry_delay = 2
    
@@ -85,7 +85,7 @@ def _search_google(query):
                 timeout=30
             )
 
-            if response.status_code in [200, 404]:
+            if response.status_code in [200, 404, 502]:
                 return response.json().get("results", [])
             else:
                 raise RuntimeError(f"Search API failed with status code {response.status_code}: {response.text}")
@@ -190,8 +190,8 @@ import json as _json
 from urllib.parse import urlencode
 conn = http.client.HTTPSConnection("scraperapi.thordata.com")
 
-# def scraperapi_search(query):
-def search_google(query):    
+def scraperapi_search(query):
+# def search_google(query):    
     params = {
         "engine": "google",
         "q": query,

@@ -5,7 +5,8 @@ import pandas as pd
 import re
 import unicodedata
 from utils.util import load_yaml
-from classification.classification_run import load_model_classification, classify_question
+# from classification.classification_run import load_model_classification, classify_question
+from postprocessing import postprocessing, normalize_estimation_question, normalize_unicode, normalize_verbal_numbers, extract_acronym
 
 DASHES = {
     "–": "-",
@@ -59,6 +60,7 @@ cache_class = load_json("data/important_id.json")
 # model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
 dict_id = load_json("classification_result.json")
 
+cnt = 0
 # Combined output: one file with all relevant columns
 all_ans = []
 all_ans_dir = "medhop_results/all_ans"
@@ -108,6 +110,12 @@ for filename in os.listdir(all_ans_dir):
     pred_short_answer = data.get("final_answer", {}).get("short_answer", "")
     pred_long_answer = data.get("final_answer", {}).get("long_answer", "")
     q_type_v0 = labels_map[str(cache_class[id]['is_sequence'])]
+    
+    norm_normalized = normalize_text(normalize_unicode(normalize_estimation_question(postprocessing((normalize_text(pred_short_answer))))))     
+    original_check = normalize_text(norm_normalized) in gt_true
+    if original_check:
+        cnt += 1
+        
     all_ans.append({
         "id": id, 
         "question": question,
@@ -116,8 +124,8 @@ for filename in os.listdir(all_ans_dir):
         # "props": probabilities,
         'target_ans_type': ans_type,
         "ground_truth_true": gt_true,         
-        "short_ans_original": norm_original,
-        "original_ans_is_correct": normalize_text(norm_original) in gt_true, 
+        # "short_ans_original": norm_original,
+        # "original_ans_is_correct": original_check, 
         "final_short_answer": pred_short_answer,
         "final_ans_is_correct": normalize_text(pred_short_answer) in gt_true, 
         "short_ans_normalized": norm_normalized,
@@ -133,3 +141,5 @@ for filename in os.listdir(all_ans_dir):
 
 pd.DataFrame(all_ans).to_csv("answer_and_normalization_combined.csv", index=False)
 # save_json(dict_id, "classification_result.json")
+
+print("cnt true: ", cnt)
