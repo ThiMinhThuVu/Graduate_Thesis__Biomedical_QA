@@ -2,7 +2,7 @@ import requests
 import time
 import json
 
-from src.api_key import API_LIST_4O, API_LIST_O3, API_KEY_GG, API_KEY_serp
+from src.api_key import API_LIST_4O, API_LIST_O3, API_KEY_GG, API_KEY_serp, API_search_scraperapi
 
 API_URL = "https://cf.mnapi.com/v1/chat/completions"  
 

@@ -408,13 +408,14 @@ if __name__ == "__main__":
         
     load_model(dataset, configs)
        
+    list_id = ['100223', '102914']
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
         question = sample['Question']
         
-        # if sample['QIDX'] not in list_id:
-        #     continue
+        if sample['QIDX'] not in list_id:
+            continue
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
         type_q = class_q[sample['QIDX']]['type_q']
@@ -427,6 +428,6 @@ if __name__ == "__main__":
         else:
             is_seq = True
 
-        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, using_target_type=False, using_gen_old=True)
+        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, using_target_type=False, using_gen_old=False)
         
         
