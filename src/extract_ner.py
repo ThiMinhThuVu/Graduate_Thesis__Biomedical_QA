@@ -12,8 +12,8 @@ def extract_with_models(query, target_labels, extractor_model, extractor_model_2
     # labels_wiki = [label for label in target_labels if label in WIKI_LABELS_LIST]
     
     labels_1 = [label for label in target_labels if label in BIO_LABLES_1]
-    # labels_2 = [label for label in target_labels if label in BIO_LABLES_2]
-    # labels_3 = [label for label in target_labels if label in BIO_LABLES_3]
+    labels_2 = [label for label in target_labels if label in BIO_LABLES_2]
+    labels_3 = [label for label in target_labels if label in BIO_LABLES_3]
     
     # if labels_wiki:
     #     doc = extractor_model(query)
@@ -29,17 +29,17 @@ def extract_with_models(query, target_labels, extractor_model, extractor_model_2
                 entities_set.add(ent.text)
         
 
-    # if labels_2 and extractor_model_2:
-    #     doc2 = extractor_model_2(query)
-    #     for ent in doc2.ents:
-    #         if ent.label_ in labels_2:
-    #             entities_set.add(ent.text)
+    if labels_2 and extractor_model_2:
+        doc2 = extractor_model_2(query)
+        for ent in doc2.ents:
+            if ent.label_ in labels_2:
+                entities_set.add(ent.text)
 
-    # if labels_3 and extractor_model_3:
-    #     doc3 = extractor_model_3(query)
-    #     for ent in doc3.ents:
-    #         if ent.label_ in labels_3:
-    #             entities_set.add(ent.text)
+    if labels_3 and extractor_model_3:
+        doc3 = extractor_model_3(query)
+        for ent in doc3.ents:
+            if ent.label_ in labels_3:
+                entities_set.add(ent.text)
 
     return list(entities_set)
 

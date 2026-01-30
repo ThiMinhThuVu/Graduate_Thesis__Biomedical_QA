@@ -17,12 +17,15 @@ def load_prompt_gen_sub(question=None, is_seq=False, dataset=None, type_q=None, 
       
     return messages
 
-def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None, type_q=None, target_answer_type=None, using_target_type=False):
+def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None, type_q=None, target_answer_type=None, using_target_type=False, using_gen_old = False):
     if dataset == "medhop":
         if using_target_type:
             prompt = prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info, target_answer_type)
+        elif using_gen_old:
+            prompt = old_prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info)
         else:
             prompt = prompt_gen_answer_medhop_step_3b_not_target_type(question, key_entities, relevant_info)
+            
     elif dataset == "wiki":
         prompt = prompt_gen_answer_wiki_step_3b(question, key_entities, relevant_info, type_q=type_q)
 
@@ -1033,6 +1036,35 @@ Context: {context}
     "short_answer": "1-3 word answer following the rules"
 }}
 """
+    return prompt
+
+# PROMPT CŨ
+def old_prompt_gen_answer_medhop_step_3b(question, key_entities, context):
+    prompt = f"""Question: {question}
+        Instructions:
+        1. Determine the question type from the question text.
+        2. Generate two parts in JSON format:
+        - long_answer: a detailed explanation based on the information.
+        - short_answer: strictly follow these rules based on the question type:
+        * For questions asking "how many" or about counts, return only a number or numeric phrase (e.g., "10", "ten").
+        * For questions asking about time or duration, return a concise time value (e.g., "36 hours", "3 days").
+        * For yes/no questions, return "Yes" or "No".
+        * For questions starting with "Who", "Which", or "What" that ask for a specific entity (e.g., person, disease, drug, gene, chromosome), return the full noun phrase naming that entity.
+            - Examples: "chromosome X", "interleukin-6", "dopamine receptor D2".
+        * For questions asking about organism, return organism type (e.g., "bacterium", "fungus").
+
+        3. Do not add any extra commentary or text outside the JSON.
+
+        Information:  
+        Key entities: {key_entities}
+        Context: {context}
+
+        Response format (strict JSON):
+        {{  
+        "long_answer": "[detailed explanation]",  
+        "short_answer": "[short answer as per rules]"  
+        }}
+        """
     return prompt
 
 def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None):

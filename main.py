@@ -57,7 +57,7 @@ def load_model(dataset, configs):
     else:
         raise ValueError(f"Unsupported dataset: {dataset}")
 
-def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None, using_target_type = False):
+def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None, using_target_type = False, using_gen_old=False):
     sample_id = str(sample['QIDX']) 
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
@@ -194,7 +194,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         # norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
                         # raw_answer = generate_answer(subquestion, target_answer_type, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
                         # không norm
-                        normalized_answer = _generate_answer(subquestion, evidence_ner, current_retrieval, dataset, type_q, target_answer_type, using_target_type)
+                        normalized_answer = _generate_answer(subquestion, evidence_ner, current_retrieval, dataset, type_q, target_answer_type, using_target_type, using_gen_old)
                         current_short = normalized_answer['short_answer']
                         
                         # # Normalize if needed
@@ -418,7 +418,7 @@ if __name__ == "__main__":
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
         type_q = class_q[sample['QIDX']]['type_q']
-        print(type_q)
+        # print(type_q)
         sample['type_q'] = type_q
         # sample['probs'] = convert_ndarray(probabilities)
         
@@ -427,6 +427,6 @@ if __name__ == "__main__":
         else:
             is_seq = True
 
-        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, using_target_type=False)
+        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, using_target_type=False, using_gen_old=True)
         
         

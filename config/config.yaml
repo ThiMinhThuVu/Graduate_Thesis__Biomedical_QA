@@ -1,6 +1,6 @@
 run: #NHỚ SỬA LẠI MAX_CANDIDATES CHO cái multiplechoice
   dataset: "medhop" #"medhop" #"wiki"
-  threads: [0, 1000]
+  threads: [0, 2]
   data_split: "test"
 
 type_run: {

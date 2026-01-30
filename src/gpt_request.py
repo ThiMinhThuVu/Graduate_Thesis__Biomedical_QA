@@ -62,7 +62,7 @@ def request_api(messages, model, temperature=0):
 
     raise RuntimeError("All APIs failed after multiple retries.")
 
-def search_google(query):
+def search_1_search_google(query):
     max_retries = 10
     retry_delay = 2
    
@@ -190,8 +190,8 @@ import json as _json
 from urllib.parse import urlencode
 conn = http.client.HTTPSConnection("scraperapi.thordata.com")
 
-def scraperapi_search(query):
-# def search_google(query):    
+# def scraperapi_search(query):
+def search_google(query):    
     params = {
         "engine": "google",
         "q": query,
@@ -200,14 +200,17 @@ def scraperapi_search(query):
     payload = urlencode(params)
 
     headers = {
-        'Authorization': 'Bearer 5b7ed6242fd639a02538e19efcf51a0d',
+        'Authorization': f'Bearer {API_search_scraperapi}',
         'Content-Type': 'application/x-www-form-urlencoded'
     }
 
-    conn.request("POST", "/request", payload, headers)
-    res = conn.getresponse()
-    data = res.read()
     try:
+        conn.request("POST", "/request", payload, headers)
+        res = conn.getresponse()
+        if res.status in (401, 403):
+            print("API key không hợp lệ hoặc đã hết hạn (status:", res.status, ")")
+            return None
+        data = res.read()
         data = _json.loads(data.decode("utf-8"))
         output = []
         for item in data.get('organic', []):
@@ -219,7 +222,8 @@ def scraperapi_search(query):
         return output
     except Exception as e:
         print("search_google error:", e)
-        return []
+        return 
+
 
 def save_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
