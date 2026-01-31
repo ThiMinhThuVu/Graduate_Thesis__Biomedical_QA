@@ -427,10 +427,10 @@ if __name__ == "__main__":
         #     continue
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
-        # type_q = class_q[sample['QIDX']]['type_q']
+        type_q = class_q[sample['QIDX']]['type_q']
         
         #classification cu:
-        type_q = class_q[sample['QIDX']]['is_sequence']
+        # type_q = class_q[sample['QIDX']]['is_sequence']
         
         # print(type_q)
         sample['type_q'] = type_q
