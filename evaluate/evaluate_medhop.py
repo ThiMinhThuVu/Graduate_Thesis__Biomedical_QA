@@ -129,10 +129,10 @@ def evaluate_context(golden, preds, output_csv):
     
 def main():
     golden_path = os.path.join('data', 'all_answer_golden.json')
-    # pred_dir = os.path.join('medhop_results', 'all_ans')
+    pred_dir = os.path.join('medhop_results', 'all_ans')
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\MAS\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\R23\medhop_results\all_ans"
-    pred_dir = r"E:\analysis_output\2026\code - cu -29.1\row5\medhop_important_results\all_ans"
+    # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\row5\medhop_important_results\all_ans"
     # pred_dir = r"E:\UETQuintet\medhop_important_results\all_ans"
     output_csv = f'evaluate/run/{run}medhop_eval_result.csv'
     golden = load_golden(golden_path)

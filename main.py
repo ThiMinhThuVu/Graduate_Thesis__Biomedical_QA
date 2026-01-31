@@ -442,6 +442,6 @@ if __name__ == "__main__":
             is_seq = True
 
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
-            using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=True)
+            using_target_type=False, using_gen_old=True, has_extract_ner=False, using_decomp_new=False)
         
         

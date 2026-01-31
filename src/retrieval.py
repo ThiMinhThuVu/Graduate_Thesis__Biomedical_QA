@@ -12,12 +12,21 @@ def retrieval_google(search_kw, filepath):
     if os.path.exists(filepath):
         output = load_json(filepath)
         if 'google' in output:
+            result = output['google']['search_results']
+            if result == []:
+                print("[API SEARCH] HẾT LƯỢT SEARCHs")
+                return None
+            
             print(f"Cache hit Google Search. Loading from file.")
-            return output['google']['search_results']
+            return result
     else:
         output = {}
             
-    result = search_google(search_kw)     
+    result = search_google(search_kw)   
+    if result == []:
+        print("[API SEARCH] HẾT LƯỢT SEARCHs")
+        return None
+          
     output['google'] = {
         'search_kw': search_kw,
         "search_results": result                

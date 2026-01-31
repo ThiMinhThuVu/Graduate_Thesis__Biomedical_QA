@@ -207,6 +207,7 @@ def search_google(query):
     try:
         conn.request("POST", "/request", payload, headers)
         res = conn.getresponse()
+        # print("status: ", res.status)
         if res.status in (401, 403):
             print("API key không hợp lệ hoặc đã hết hạn (status:", res.status, ")")
             return None
@@ -232,7 +233,8 @@ def save_json(data, file_path):
 if __name__ == "__main__":    
     # save_json(search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?"), "f1.json")
     # save_json(serpshot_search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?"), "f2.json")
-    save_json(search_google("growth-delay syndrome mutations gene"), "f2.json")
-    
+    # save_json(search_google("growth-delay syndrome mutations gene"), "f2.json")
+    print("=========================")
+    print(search_google("growth-delay syndrome mutations gene"))
     question = "Where did that person graduate from?"
     
