@@ -8,21 +8,22 @@ WIKI_LABELS_LIST = ["PERSON", "WORK_OF_ART", "GPE", "ORG", "LOC", "EVENT", "CARD
 # BIO_ANSWER_TYPES = ["GENE", "CHROMOSOME", "GENE_LOCATION", "GENETIC_VARIANT", "INHERITANCE_PATTERN", "PATHWAY", "PROTEIN", "ENZYME", "MOLECULAR_FUNCTION", "CELL_TISSUE_TYPE", "ORGANELLE", "ANATOMY", "DISEASE_CONDITION", "PHENOTYPE_SIGN", "RISK_FACTOR", "PROGNOSIS", "MEDICATION", "MEDICAL_PROCEDURE", "DIAGNOSTIC_TEST", "PATHOGEN", "BIOLOGICAL_TAXON", "CHEMICAL_ENTITY", "POPULATION_GROUP", "TEMPORAL_DATA", "QUANTITY", "PERSON_ORGANIZATION", "YES_NO", "OTHER"]
 # WIKI_ANSWER_TYPES = []
 
-def load_prompt_gen_sub(question=None, is_seq=False, dataset=None, type_q=None, context=None):
+def load_prompt_gen_sub(question=None, is_seq=False, dataset=None, type_q=None, using_decomp_new=False):
     if question:
         if is_seq:
-            messages = load_subquestion_prompt(question, dataset, type_q)
+            messages = load_subquestion_prompt(question, dataset, type_q, using_decomp_new)
         else:
-            messages = load_search_keyword_prompt(question, dataset, type_q)            
+            messages = load_search_keyword_prompt(question, dataset, type_q, using_decomp_new)            
       
     return messages
 
-def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None, type_q=None, target_answer_type=None, using_target_type=False, using_gen_old = False):
+def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None, type_q=None, target_answer_type=None,
+                    using_target_type=False, using_gen_old=False, has_extract_ner=False):
     if dataset == "medhop":
         if using_target_type:
             prompt = prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info, target_answer_type)
         elif using_gen_old:
-            prompt = old_prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info)
+            prompt = old_prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info, has_extract_ner)
         else:
             prompt = prompt_gen_answer_medhop_step_3b_not_target_type(question, key_entities, relevant_info)
             
@@ -31,9 +32,184 @@ def load_prompt_gen_ans(question, key_entities, relevant_info, dataset=None, typ
 
     return prompt
 
-def load_search_keyword_prompt(question, dataset=None, type_q=None):
+def load_search_keyword_prompt(question, dataset=None, type_q=None, using_decomp_new=False):
     if dataset == 'medhop':
         labels_str = ", ".join(BIO_LABELS_LIST)
+        if using_decomp_new:
+            messages = [
+            {
+                "role": "system",
+                "content": f"""## Role
+            You are an expert in generating concise and effective Google search queries to help answer complex biomedical questions
+
+            ## Task
+            Generate ONLY 1 search query
+
+            ## Instructions
+            Provide a single, keyword-based search query string that best targets the core information needed from the original question
+
+            ## Rules
+            - The query should be a distillation of the original complex question
+            - Focus on essential nouns and technical terms
+
+            ## Constraints
+            - MUST: Provide ONLY 1 search query
+
+            ## Output Format (JSON)
+            [
+                {{
+                    "search_keyword": "Google search query string"
+                }}
+            ]
+            """        },
+                        {
+                            "role": "user",
+                            "content": f"""## Examples (5)
+
+            ---
+            **Example 1:**
+
+            Question: "Which gene containing a helicase domain is mutated in some patients with Smith-Fineman-Myers syndrome?"
+
+            JSON desired output format:
+            [
+                {{ 
+                    "search_keyword": "Smith-Fineman-Myers syndrome mutated gene helicase domain"
+                }}
+            ]
+            ---
+            **Example 2:**
+
+            Question: "Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
+
+            JSON desired output format:
+            [
+                {{ 
+                    "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system"
+                }}
+            ]
+            ---
+            **Example 3:**
+
+            Question: "Which physician, along with Edvard Ehlers, is the Ehlers Danlos syndromes named after?"
+
+            JSON desired output format:
+            [
+                {{ 
+                    "search_keyword": "Ehlers Danlos syndromes named after along with Edvard Ehlers"
+                }}
+            ]
+            ---
+            **Example 4:**
+
+            Question: "Which benign, autosomal recessive hyperbilirubinemia syndrome is caused by a mutation in the UGT1A1 gene on chromosome 2?"
+
+            JSON desired output format:
+            [
+                {{ 
+                    "search_keyword": "benign autosomal recessive hyperbilirubinemia UGT1A1 gene mutation chromosome 2"
+                }}
+            ]
+            ---
+            **Example 5:**
+
+            Question: "Which recognized type of osteochondritis is characterized by uneven vertebral growth and kyphosis that typically develops during adolescence?"
+
+            JSON desired output format:
+            [
+                {{ 
+                    "search_keyword": "osteochondritis type uneven vertebral growth kyphosis adolescence"
+                }}
+            ]
+            ---
+
+            ## Information
+            Question: "{question}"
+
+            ## Task
+            Generate the search query for the provided question. Output as a JSON array
+            """
+            }
+        ]
+        else:
+            messages = [
+            {
+                "role": "system",
+                "content": """You are an expert in generating ONLY 1 concise and effective Google search query to help answer a complex biomedical question.
+            Your goal is to provide a single, keyword-based query string that best targets the core information needed from the original question.
+
+            Key principles for the single query:
+            1. The query should be a distillation of the original complex question, focusing on essential keywords.
+            2. The query MUST be concise, using specific keywords INCLUDING IMPORTANT BIOMEDICAL KEYWORD, nouns, and technical terms critical to answering the question.
+
+            The final output MUST be a JSON array containing a single object. This object must contain a single key "search_keyword", whose value is the Google search query string.
+            """
+                    },
+                    {
+                "role": "user",
+                "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is a JSON array containing a single object with a "search_keyword" field holding the Google search query string.
+
+            ---
+            **Example 1:**
+
+            Question: "Which gene containing a helicase domain is mutated in some patients with Smith-Fineman-Myers syndrome?"
+
+            JSON desired output format:
+            [
+                {{ "search_keyword": "Smith-Fineman-Myers syndrome mutated gene helicase domain" }}
+            ]
+            ---
+            **Example 2:**
+
+            Question: "Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
+
+            JSON desired output format:
+            [
+                {{ "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system" }}
+            ]
+            ---
+            **Example 3:**
+
+            Question: "Which physician, along with Edvard Ehlers, is the Ehlers Danlos syndromes named after?"
+
+            JSON desired output format:
+            [
+                {{ "search_keyword": "Ehlers Danlos syndromes named after along with Edvard Ehlers" }}
+            ]
+            ---
+            **Example 4:**
+
+            Question: "Which benign, autosomal recessive hyperbilirubinemia syndrome is caused by a mutation in the UGT1A1 gene on chromosome 2?"
+
+            JSON desired output format:
+            [
+                {{ "search_keyword": "benign autosomal recessive hyperbilirubinemia UGT1A1 gene mutation chromosome 2" }}
+            ]
+            ---
+            **Example 5:**
+
+            Question: "Which recognized type of osteochondritis is characterized by uneven vertebral growth and kyphosis that typically develops during adolescence?"
+
+            JSON desired output format:
+            [
+                {{ "search_keyword": "osteochondritis type uneven vertebral growth kyphosis adolescence" }}
+            ]
+            ---
+
+            Now, process the following:
+
+            Question: "{question}"
+
+            Task: Generate ONLY 1 effective Google search query that distills the core of the given question.
+
+            Return a JSON array containing a single object. This object must contain a single key "search_keyword", whose value is the Google search query string. For example:
+            [
+                {{ "search_keyword": "..." }}
+            ]
+            """
+            }
+        ]
+            
 #         messages = [
 #             {
 #                 "role": "system",
@@ -180,141 +356,7 @@ def load_search_keyword_prompt(question, dataset=None, type_q=None):
 # """
 #             }
 #         ]
-        messages = [
-            {
-        "role": "system",
-        "content": """You are an expert in generating ONLY 1 concise and effective Google search query to help answer a complex biomedical question.
-    Your goal is to provide a single, keyword-based query string that best targets the core information needed from the original question.
-
-    Key principles for the single query:
-    1. The query should be a distillation of the original complex question, focusing on essential keywords.
-    2. The query MUST be concise, using specific keywords INCLUDING IMPORTANT BIOMEDICAL KEYWORD, nouns, and technical terms critical to answering the question.
-    3. Identify a list of target entity types (focus_spacy_based_entity_label) that need to be extracted from the context to answer the question
-        - MUST be selected ONLY from this list: [{labels_str}].  Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses.
-    4. Identify the specific target_answer_type as follows:
-        - OVERRIDING RULE: If the question is a Yes/No question, THEN target_answer_type MUST be "correctness", regardless of any biomedical terms or noun phrases appearing in the question.
-        - If the question starts with “How many” or “How much”,
-        target_answer_type MUST be “number of [Entity]”, where Entity is the object being counted.
-        - OTHERWISE (only if NOT Yes/No and NOT quantitative):
-            • For biomedical questions, target_answer_type must be the most specific full noun phrase in the question, preserving all medically relevant modifiers.
-            • For factoid questions, target_answer_type must be the minimal abstract concept representing the expected answer type.
-        - If none apply, set target_answer_type to “Undefined”.
-    5. Identify a list of specific, concrete, and retrievable entities explicitly mentioned or clearly implied in the question
-
-    """
-            },
-            {
-        "role": "user",
-        "content": f"""Here are 5 examples demonstrating the desired JSON output format, which is a JSON array containing a single object with a "search_keyword" field holding the Google search query string.
-
-    ---
-    **Example 1:**
-
-    Question: "Which gene containing a helicase domain is mutated in some patients with Smith-Fineman-Myers syndrome?"
-
-    JSON desired output format:
-    [
-        {{ 
-            "search_keyword": "Smith-Fineman-Myers syndrome mutated gene helicase domain",
-            "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
-            "target_answer_type": "gene",
-            "key_entity": [
-                "Smith-Fineman-Myers syndrome",
-                "helicase domain"
-            ]
-        }}
-    ]
-    ---
-    **Example 2:**
-
-    Question: "Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
-
-    JSON desired output format:
-    [
-        {{ 
-            "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system",
-            "focus_spacy_based_entity_label": ["CHEMICAL"],
-            "target_answer_type": "tetramer",
-            "key_entity": [
-                "lactate dehydrogenase tetramer",
-                "nervous system"
-            ]
-        }}
-    ]
-    ---
-    **Example 3:**
-
-    Question: "Which physician, along with Edvard Ehlers, is the Ehlers Danlos syndromes named after?"
-
-    JSON desired output format:
-    [
-        {{ 
-            "search_keyword": "Ehlers Danlos syndromes named after along with Edvard Ehlers",
-            "focus_spacy_based_entity_label": ["DISEASE"],
-            "target_answer_type": "physician",
-            "key_entity": [
-                "Ehlers Danlos syndromes",
-                "Edvard Ehlers"
-            ]            
-        }}
-    ]
-    ---
-    **Example 4:**
-
-    Question: "Which benign, autosomal recessive hyperbilirubinemia syndrome is caused by a mutation in the UGT1A1 gene on chromosome 2?"
-
-    JSON desired output format:
-    [
-        {{ 
-            "search_keyword": "benign autosomal recessive hyperbilirubinemia UGT1A1 gene mutation chromosome 2",
-            "focus_spacy_based_entity_label": ["DISEASE", "GENE_OR_GENE_PRODUCT"],
-            "target_answer_type": "syndrome",
-            "key_entity": [
-                "benign autosomal recessive hyperbilirubinemia",
-                "UGT1A1 gene",
-                "chromosome 2"
-            ]
-        }}
-    ]
-    ---
-    **Example 5:**
-
-    Question: "Which recognized type of osteochondritis is characterized by uneven vertebral growth and kyphosis that typically develops during adolescence?"
-
-    JSON desired output format:
-    [
-        {{ 
-            "search_keyword": "osteochondritis type uneven vertebral growth kyphosis adolescence",
-            "focus_spacy_based_entity_label": ["DISEASE"],
-            "target_answer_type": "type of osteochondritis",
-            "key_entity": [
-                "osteochondritis",
-                "vertebral growth",
-                "kyphosis",
-                "adolescence"
-            ]
-        }}
-    ]
-    ---
-
-    Now, process the following:
-
-    Question: "{question}"
-
-    Task: Generate ONLY 1 effective Google search query that distills the core of the given question.
-
-    Return a JSON array. For example:
-        [
-            {{
-                "search_keyword": "Google search query string",
-                "focus_spacy_based_entity_label": ["list of labels from the given list"],
-                "target_answer_type": "type of answer follow Instructions identify",
-                "key_entity": ["list of specific entities from question"]
-            }}
-        ]   
-    """
-            }
-        ]
+        
     elif dataset == 'wiki':
         if type_q == "comparison":
             labels_str = ", ".join(WIKI_LABELS_LIST)
@@ -445,9 +487,294 @@ Generate the search query and entity information for the provided question. Outp
 
     return messages
 
-def load_subquestion_prompt(question, dataset=None, type_q=None):
+def load_subquestion_prompt(question, dataset=None, type_q=None, using_decomp_new=False):
     if dataset == 'medhop':
         labels_str = ", ".join(BIO_LABELS_LIST)
+        if using_decomp_new:
+            messages = [    
+            {
+                "role": "system",
+                "content": f"""## Role
+            You are an expert in biomedical knowledge and complex question decomposition
+
+            ## Task
+            Decompose complex multi-hop biomedical questions into a sequence of simpler, interconnected subquestions where each step's answer becomes input for the next step
+
+            ## Instructions
+            **Understanding Multi-Hop Reasoning:**
+            A multi-hop question requires breaking down into subquestions (Q1, Q2, ..., Qn) where:
+            - Q1 is answered first → produces Answer A1
+            - A1 is incorporated into Q2 → produces Answer A2
+            - This chain continues until the final answer is found
+            - Each subquestion must be answerable independently through search/retrieval
+
+            **Example Pattern:**
+            - Original: "Which chromosome contains the gene encoding the enzyme that inactivates antithrombin?"
+            - Q1: "Which gene encodes the enzyme that can inactivate antithrombin?" → A1: "SERPINA1 gene"
+            - Q2: "Which chromosome contains SERPINA1 gene?" → A2: "chromosome 14"
+
+            **Decomposition Steps:**
+            1. Identify information dependencies - determine what intermediate information must be retrieved before the final answer can be found
+            2. Create a sequential chain where each subquestion builds upon previous answers
+            3. Ensure each subquestion is self-contained and searchable without needing the answer from previous steps (include full context in the question text)
+            4. Ensure the last subquestion combines all gathered information to produce the final answer
+
+            ## Rules
+            - Question contains nested attributes (e.g., "the gene OF the enzyme THAT does X")
+            - Question asks about properties of an unknown entity (must first identify the entity)
+            - Question requires connecting multiple pieces of information sequentially
+            - Subquestions MUST be searchable by standard query engines (Google, Wikipedia, PubMed)
+            - Subquestions MUST include all necessary context explicitly (don't rely on implicit information from previous steps)
+            - Avoid pronouns or vague references (use "that gene", "that enzyme", "that syndrome" instead of "it")
+            - Each subquestion should yield a single, specific entity when possible (not a list)
+            - Avoid generating lists in intermediate steps when possible
+            - If a step must produce multiple entities, the next step should specify how to filter/select (e.g., "Which of those genes is located on chromosome 7?")
+            - Use the MINIMUM number of steps necessary to answer the question
+            - MAXIMUM 3 hops (subquestions) allowed - do not exceed this limit
+            - First step search_keyword: Include all relevant context from the original question
+            - Dependent step search_keyword: Generate ONLY keywords for the CURRENT step without repeating previous hop context
+
+            ## Constraints
+            - MUST: Use ONLY the following keys for each step: "subquestion", "search_keyword"
+
+            ## Output Format (JSON)
+            [
+                {{
+                    "subquestion": "subquestion",
+                    "search_keyword": "distilled, concise keyword-based query"
+                }}
+            ]
+
+            """
+                        },
+                        {
+                            "role": "user",
+                            "content": f"""## Examples (5)
+
+            ---
+            **Example 1:**
+            "Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?"
+
+            JSON desired output format:
+            [
+                {{
+                    "subquestion": "Which gene encode enzyme can inactivate antithrombin?",
+                    "search_keyword": "gene encode enzyme inactivate antithrombin"
+                }},
+                {{
+                    "subquestion": "Which human chromosome contains that gene?",
+                    "search_keyword": "human chromosome location gene"
+                }}
+            ]
+
+            ---
+            **Example 2:**
+            "Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
+
+            JSON desired output format:
+            [
+                {{
+                    "subquestion": "What is the primary organ of the human nervous system?",
+                    "search_keyword": "primary organ human nervous system"
+                }},
+                {{
+                    "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
+                    "search_keyword": "lactate dehydrogenase tetramer most common organ"
+                }}
+            ]
+
+            ---
+            **Example 3:**
+            "Which gene mutation is responsible for the syndrome characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?"
+
+            JSON desired output format:
+            [
+                {{
+                    "subquestion": "Which syndrome is characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
+                    "search_keyword": "syndrome flattened deformed vertebrae developmental delay lens coloboma"
+                }},
+                {{
+                    "subquestion": "Which gene mutation is responsible for that syndrome?",
+                    "search_keyword": "gene mutation syndrome"
+                }}
+            ]
+
+            ---
+            **Example 4:**
+            "Which London suburb was home to the pioneering institutions that influenced John Langdon Down's work at Earlswood Asylum?"
+
+            JSON desired output format:
+            [
+                {{
+                    "subquestion": "Which pioneering institutions influenced John Langdon Down's work at Earlswood Asylum?",
+                    "search_keyword": "pioneering institutions John Langdon Down Earlswood Asylum"
+                }},
+                {{
+                    "subquestion": "In which London suburb was that pioneering institution located?",
+                    "search_keyword": "London suburb location institution"
+                }}
+            ]
+
+            ---
+            **Example 5:**
+            "On which chromosome is the gene responsible for Carpenter syndrome, which is associated with brachydactyly, located?"
+
+            JSON desired output format:
+            [
+                {{
+                    "subquestion": "Which gene is responsible for Carpenter syndrome?",
+                    "search_keyword": "gene responsible Carpenter syndrome"
+                }},
+                {{
+                    "subquestion": "On which chromosome is that gene located?",
+                    "search_keyword": "chromosome location gene"
+                }}
+            ]
+
+            ## Information
+            Original Complex Question: '{question}'
+
+            ## Output Format (JSON)
+            [
+                {{
+                    "subquestion": "subquestion",
+                    "search_keyword": "distilled, concise keyword-based query"
+                }}
+            ]
+            """
+            }
+            ]
+        else:
+            messages = [
+            {
+        "role": "system",
+        "content": f"""You are a highly specialized AI assistant, an expert in biomedical knowledge, skilled at decomposing complex biomedical questions into a sequence of simpler, interconnected natural language sub-questions. Your primary goal is to create a logical, step-by-step plan that faithfully represents the reasoning process to answer the main question.
+
+        **Core Instructions for Decomposition:**
+
+        0.  **Faithful Reasoning via Decomposition**: Your primary task is to externalize the reasoning process by breaking the `Original Complex Question` into a series of sub-questions. This decomposition itself forms the transparent and explainable path to the solution.
+        1.  **Step-by-Step Plan**: Generate a sequence of sub-questions.
+        2.  **Self-Contained and Searchable Sub-questions**: Each sub-question MUST be formulated so it is **self-contained and understandable in isolation**. This means it must include all necessary context from the original question or previous steps to be answerable by a standard search engine query *without needing to refer back to the original complex question or other sub-questions implicitly*. Sub-questions must be specific and unambiguous. For example, avoid pronouns or references that don't have explicit antecedents within the sub-question itself.
+            * **Prefer Single Entities:** When a sub-question's answer is used in a later step, it should ideally yield a **single, specific entity** (e.g., one specific gene name, one particular symptom, a single defined mechanism). This ensures that natural language references to this entity in subsequent steps (e.g., 'that gene', 'the identified symptom') are unambiguous.
+            * **Explicit List Handling:** If an intermediate step *must* produce a list of items because the nature of the query requires it (e.g., "What known [genes] are associated with X?"), any subsequent sub-question using that list **must explicitly state how to process it** (e.g., "Which of the [previously identified genes] are also [specific characteristic, e.g., 'expressed in the liver']?" or "What is the most frequently implicated [gene] from [the list found in the previous step] for [specific context]?").    * **Avoid Vague List Generation for Intermediate Steps:** Do not formulate intermediate sub-questions that ask for "some examples" or an undefined set of items if that result is intended to be fed precisely into a subsequent step, unless that subsequent step clearly outlines how to operate on such a potentially open-ended or non-exhaustive list.
+        3.  **Logical Dependency**:
+            * The answer to one sub-question will often be used to formulate the subsequent sub-question.
+            * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question. The sub-questions should form a logical chain where context flows naturally from one step to the next. Each sub-question should still aim to be as self-contained as possible by incorporating necessary context.
+        4.  **Sub-question Properties**: For each step in your decomposition:
+            * **`subquestion`**: State the sub-question in clear, natural language, adhering to the self-contained principle and clarity of result.
+            * **`search_keyword`**: Provide a concise, keyword-based search query that captures the essence of the sub-question. This should be a distilled version of the sub-question, focusing on the key biomedical terms and concepts necessary to retrieve relevant information. The `search_keyword` should be a direct, searchable query that can be used to find the answer to the sub-question. It should not include unnecessary words or context that does not contribute to the search.
+        5.  **Efficiency and Necessity & Defining Question Types**:
+            * Decompose the question into the **minimum number of steps absolutely necessary** to logically arrive at the final answer.
+            * **Multi-step Question Definition**: A multi-step question typically involves a chain of information retrieval where intermediate entities or properties must be resolved sequentially. One piece of information is needed to find the next, eventually leading to the final answer.
+                * *Example of a multi-step question requiring decomposition*: "Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?" (This requires finding: 1. The enzyme, 2. The gene encoding it, 3. The chromosome containing that gene).
+            * **Single-step Question Definition**: A single-step question usually asks for a primary entity or concept (e.g., a "term", "name", "definition", "cause", "symptom") that can be identified directly from a set of given characteristics, even if those characteristics are numerous or include other named entities. If all characteristics defining the target entity can be reasonably combined into a single, direct, and searchable query that is likely to yield the answer, a single step is preferred. Avoid intermediate steps that merely define well-known qualifying characteristics/entities unless defining them is absolutely essential to resolve ambiguity in the main entity being sought or if the characteristic itself is the primary unknown blocking the answer. The goal is to find the most direct path to the answer.
+            * If the original complex question fits the single-step definition and can be directly and unambiguously answered by a single, well-formulated search query, provide a single-step decomposition.
+            * Avoid creating sub-questions that are overly trivial, redundant, or that primarily restate parts of the original question that could be resolved within a more encompassing single or earlier step. Each step must isolate a *distinct and necessary piece of unknown information* crucial for the overall answer.
+        6.  **Final Answer Derivation**: The final sub-question's purpose is to synthesize the information gathered from all preceding, answered sub-questions to directly and comprehensively answer the `Original Complex Question`. The decomposition should lead to a state where this final step is a clear derivation from the sub-answers.
+        7.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid JSON array of step objects.
+
+        Original Complex Question: '{question}'
+        """
+            },
+            {
+            "role": "user",
+            "content": f"""
+        Here are 5 examples demonstrating the desired JSON output format and decomposition logic:
+
+        ---
+        **Example 1:**
+        "Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?"
+
+        JSON desired output format:
+        [
+            {{
+                "subquestion": "Which enzyme can inactivate antithrombin?",
+                "search_keyword": "enzyme inactivate antithrombin"
+            }},
+            {{
+                "subquestion": "Which gene encode that enzyme?",
+                "search_keyword": "gene encode enzyme inactivate antithrombin"
+            }},
+            {{
+                "subquestion": "Which human chromosome contains that gene?",
+                "search_keyword": "human chromosome gene encode enzyme inactivate antithrombin"
+            }}
+        ]
+
+        ---
+        **Example 2:**
+        "Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
+
+        JSON desired output format:
+        [
+            {{
+                "subquestion": "What is the primary organ of the human nervous system?",
+                "search_keyword": "primary organ human nervous system"
+            }},
+            {{
+                "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
+                "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system"
+            }}
+        ]
+
+        ---
+        **Example 3:**
+        "Which gene mutation is responsible for the syndrome characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?"
+
+        JSON desired output format:
+        [
+            {{
+                "subquestion": "Which syndrome is characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
+                "search_keyword": "syndrome flattened deformed vertebrae developmental delay lens coloboma"
+            }},
+            {{
+                "subquestion": "Which gene mutation is responsible for that syndrome?",
+                "search_keyword": "gene mutation syndrome flattened deformed vertebrae developmental delay lens coloboma"
+            }}
+        ]
+
+        ---
+        **Example 4:**
+        "Which London suburb was home to the pioneering institutions that influenced John Langdon Down's work at Earlswood Asylum?"
+
+        JSON desired output format:
+        [
+            {{
+                "subquestion": "Which pioneering institutions influenced John Langdon Down's work at Earlswood Asylum?",
+                "search_keyword": "pioneering institutions John Langdon Down Earlswood Asylum"
+            }},
+            {{
+                "subquestion": "In which London suburb was that pioneering institution located?",
+                "search_keyword": "London location pioneering institution John Langdon Down Earlswood Asylum"
+            }}
+        ]
+
+        ---
+        **Example 5:**
+        "Which gene mutation is primarily responsible for a syndromic microphthalmia that includes nasal abnormalities?"
+
+        JSON desired output format:
+        [
+            {{
+                "subquestion": "What are the syndromic forms of microphthalmia that present with nasal abnormalities?",
+                "search_keyword": "syndromic microphthalmia nasal abnormalities"
+            }},
+            {{
+                "subquestion": "Which gene mutation is most commonly identified as the primary cause for that disease?",
+                "search_keyword": "gene mutation primary cause syndromic microphthalmia nasal abnormalities"
+            }}
+        ]
+
+
+        Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
+        Remember the strict formatting requirements:
+        1.  Entire output MUST be a valid JSON array.
+        2.  Ensure all sub-questions are self-contained and directly contribute to answering the original complex question, adhering to the guidelines for intermediate results.
+
+        Here is the original complex question: "{question}"
+        """
+                }
+            ]
 #         messages = [    
 #             {
 #                 "role": "system",
@@ -663,179 +990,180 @@ def load_subquestion_prompt(question, dataset=None, type_q=None):
 #             }
 #             ]
         
-        messages = [
-            {
-        "role": "system",
-        "content": f"""You are a highly specialized AI assistant, an expert in biomedical knowledge, skilled at decomposing complex biomedical questions into a sequence of simpler, interconnected natural language sub-questions. Your primary goal is to create a logical, step-by-step plan that faithfully represents the reasoning process to answer the main question.
+        # PROMPT CŨ NHƯNG THÊM TYPE
+        # messages = [
+        #     {
+        # "role": "system",
+        # "content": f"""You are a highly specialized AI assistant, an expert in biomedical knowledge, skilled at decomposing complex biomedical questions into a sequence of simpler, interconnected natural language sub-questions. Your primary goal is to create a logical, step-by-step plan that faithfully represents the reasoning process to answer the main question.
 
-        **Core Instructions for Decomposition:**
+        # **Core Instructions for Decomposition:**
 
-        0.  **Faithful Reasoning via Decomposition**: Your primary task is to externalize the reasoning process by breaking the `Original Complex Question` into a series of sub-questions. This decomposition itself forms the transparent and explainable path to the solution.
-        1.  **Step-by-Step Plan**: Generate a sequence of sub-questions.
-        2.  **Self-Contained and Searchable Sub-questions**: Each sub-question MUST be formulated so it is **self-contained and understandable in isolation**. This means it must include all necessary context from the original question or previous steps to be answerable by a standard search engine query *without needing to refer back to the original complex question or other sub-questions implicitly*. Sub-questions must be specific and unambiguous. For example, avoid pronouns or references that don't have explicit antecedents within the sub-question itself.
-            * **Prefer Single Entities:** When a sub-question's answer is used in a later step, it should ideally yield a **single, specific entity** (e.g., one specific gene name, one particular symptom, a single defined mechanism). This ensures that natural language references to this entity in subsequent steps (e.g., 'that gene', 'the identified symptom') are unambiguous.
-            * **Explicit List Handling:** If an intermediate step *must* produce a list of items because the nature of the query requires it (e.g., "What known [genes] are associated with X?"), any subsequent sub-question using that list **must explicitly state how to process it** (e.g., "Which of the [previously identified genes] are also [specific characteristic, e.g., 'expressed in the liver']?" or "What is the most frequently implicated [gene] from [the list found in the previous step] for [specific context]?").    * **Avoid Vague List Generation for Intermediate Steps:** Do not formulate intermediate sub-questions that ask for "some examples" or an undefined set of items if that result is intended to be fed precisely into a subsequent step, unless that subsequent step clearly outlines how to operate on such a potentially open-ended or non-exhaustive list.
-        3.  **Logical Dependency**:
-            * The answer to one sub-question will often be used to formulate the subsequent sub-question.
-            * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question. The sub-questions should form a logical chain where context flows naturally from one step to the next. Each sub-question should still aim to be as self-contained as possible by incorporating necessary context.
-        4.  **Sub-question Properties**: For each step in your decomposition:
-            * **`subquestion`**: State the sub-question in clear, natural language, adhering to the self-contained principle and clarity of result.
-            * **`search_keyword`**: Provide a concise, keyword-based search query that captures the essence of the sub-question. This should be a distilled version of the sub-question, focusing on the key biomedical terms and concepts necessary to retrieve relevant information. The `search_keyword` should be a direct, searchable query that can be used to find the answer to the sub-question. It should not include unnecessary words or context that does not contribute to the search.
-            * **`focus_spacy_based_entity_label`**: ONLY from the following list: [{labels_str}].  Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses
-            * **`target_answer_type`** as follows:
-                - OVERRIDING RULE: If the question is a Yes/No question, THEN target_answer_type MUST be "correctness", regardless of any biomedical terms or noun phrases appearing in the question.
-                - If the question starts with “How many” or “How much”,
-                target_answer_type MUST be “number of [Entity]”, where Entity is the object being counted.
-                - OTHERWISE (only if NOT Yes/No and NOT quantitative):
-                    • For biomedical questions, target_answer_type must be the most specific full noun phrase in the question, preserving all medically relevant modifiers.
-                    • For factoid questions, target_answer_type must be the minimal abstract concept representing the expected answer type.
-                - If none apply, set target_answer_type to “Undefined”.
-        5.  **Efficiency and Necessity & Defining Question Types**:
-            * Decompose the question into the **minimum number of steps absolutely necessary** to logically arrive at the final answer.
-            * **Multi-step Question Definition**: A multi-step question typically involves a chain of information retrieval where intermediate entities or properties must be resolved sequentially. One piece of information is needed to find the next, eventually leading to the final answer.
-                * *Example of a multi-step question requiring decomposition*: "Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?" (This requires finding: 1. The enzyme, 2. The gene encoding it, 3. The chromosome containing that gene).
-            * **Single-step Question Definition**: A single-step question usually asks for a primary entity or concept (e.g., a "term", "name", "definition", "cause", "symptom") that can be identified directly from a set of given characteristics, even if those characteristics are numerous or include other named entities. If all characteristics defining the target entity can be reasonably combined into a single, direct, and searchable query that is likely to yield the answer, a single step is preferred. Avoid intermediate steps that merely define well-known qualifying characteristics/entities unless defining them is absolutely essential to resolve ambiguity in the main entity being sought or if the characteristic itself is the primary unknown blocking the answer. The goal is to find the most direct path to the answer.
-            * If the original complex question fits the single-step definition and can be directly and unambiguously answered by a single, well-formulated search query, provide a single-step decomposition.
-            * Avoid creating sub-questions that are overly trivial, redundant, or that primarily restate parts of the original question that could be resolved within a more encompassing single or earlier step. Each step must isolate a *distinct and necessary piece of unknown information* crucial for the overall answer.
-        6.  **Final Answer Derivation**: The final sub-question's purpose is to synthesize the information gathered from all preceding, answered sub-questions to directly and comprehensively answer the `Original Complex Question`. The decomposition should lead to a state where this final step is a clear derivation from the sub-answers.
-        7.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid JSON array of step objects.
+        # 0.  **Faithful Reasoning via Decomposition**: Your primary task is to externalize the reasoning process by breaking the `Original Complex Question` into a series of sub-questions. This decomposition itself forms the transparent and explainable path to the solution.
+        # 1.  **Step-by-Step Plan**: Generate a sequence of sub-questions.
+        # 2.  **Self-Contained and Searchable Sub-questions**: Each sub-question MUST be formulated so it is **self-contained and understandable in isolation**. This means it must include all necessary context from the original question or previous steps to be answerable by a standard search engine query *without needing to refer back to the original complex question or other sub-questions implicitly*. Sub-questions must be specific and unambiguous. For example, avoid pronouns or references that don't have explicit antecedents within the sub-question itself.
+        #     * **Prefer Single Entities:** When a sub-question's answer is used in a later step, it should ideally yield a **single, specific entity** (e.g., one specific gene name, one particular symptom, a single defined mechanism). This ensures that natural language references to this entity in subsequent steps (e.g., 'that gene', 'the identified symptom') are unambiguous.
+        #     * **Explicit List Handling:** If an intermediate step *must* produce a list of items because the nature of the query requires it (e.g., "What known [genes] are associated with X?"), any subsequent sub-question using that list **must explicitly state how to process it** (e.g., "Which of the [previously identified genes] are also [specific characteristic, e.g., 'expressed in the liver']?" or "What is the most frequently implicated [gene] from [the list found in the previous step] for [specific context]?").    * **Avoid Vague List Generation for Intermediate Steps:** Do not formulate intermediate sub-questions that ask for "some examples" or an undefined set of items if that result is intended to be fed precisely into a subsequent step, unless that subsequent step clearly outlines how to operate on such a potentially open-ended or non-exhaustive list.
+        # 3.  **Logical Dependency**:
+        #     * The answer to one sub-question will often be used to formulate the subsequent sub-question.
+        #     * When a sub-question depends on the result of a previous step, this relationship should be conveyed by using explicit natural language references to the entity or information from the previous step within the current sub-question. The sub-questions should form a logical chain where context flows naturally from one step to the next. Each sub-question should still aim to be as self-contained as possible by incorporating necessary context.
+        # 4.  **Sub-question Properties**: For each step in your decomposition:
+        #     * **`subquestion`**: State the sub-question in clear, natural language, adhering to the self-contained principle and clarity of result.
+        #     * **`search_keyword`**: Provide a concise, keyword-based search query that captures the essence of the sub-question. This should be a distilled version of the sub-question, focusing on the key biomedical terms and concepts necessary to retrieve relevant information. The `search_keyword` should be a direct, searchable query that can be used to find the answer to the sub-question. It should not include unnecessary words or context that does not contribute to the search.
+        #     * **`focus_spacy_based_entity_label`**: ONLY from the following list: [{labels_str}].  Map "VIRUS" to "ORGANISM" for focus_spacy_based_entity_label. ALWAYS use "ORGANISM" for viruses
+        #     * **`target_answer_type`** as follows:
+        #         - OVERRIDING RULE: If the question is a Yes/No question, THEN target_answer_type MUST be "correctness", regardless of any biomedical terms or noun phrases appearing in the question.
+        #         - If the question starts with “How many” or “How much”,
+        #         target_answer_type MUST be “number of [Entity]”, where Entity is the object being counted.
+        #         - OTHERWISE (only if NOT Yes/No and NOT quantitative):
+        #             • For biomedical questions, target_answer_type must be the most specific full noun phrase in the question, preserving all medically relevant modifiers.
+        #             • For factoid questions, target_answer_type must be the minimal abstract concept representing the expected answer type.
+        #         - If none apply, set target_answer_type to “Undefined”.
+        # 5.  **Efficiency and Necessity & Defining Question Types**:
+        #     * Decompose the question into the **minimum number of steps absolutely necessary** to logically arrive at the final answer.
+        #     * **Multi-step Question Definition**: A multi-step question typically involves a chain of information retrieval where intermediate entities or properties must be resolved sequentially. One piece of information is needed to find the next, eventually leading to the final answer.
+        #         * *Example of a multi-step question requiring decomposition*: "Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?" (This requires finding: 1. The enzyme, 2. The gene encoding it, 3. The chromosome containing that gene).
+        #     * **Single-step Question Definition**: A single-step question usually asks for a primary entity or concept (e.g., a "term", "name", "definition", "cause", "symptom") that can be identified directly from a set of given characteristics, even if those characteristics are numerous or include other named entities. If all characteristics defining the target entity can be reasonably combined into a single, direct, and searchable query that is likely to yield the answer, a single step is preferred. Avoid intermediate steps that merely define well-known qualifying characteristics/entities unless defining them is absolutely essential to resolve ambiguity in the main entity being sought or if the characteristic itself is the primary unknown blocking the answer. The goal is to find the most direct path to the answer.
+        #     * If the original complex question fits the single-step definition and can be directly and unambiguously answered by a single, well-formulated search query, provide a single-step decomposition.
+        #     * Avoid creating sub-questions that are overly trivial, redundant, or that primarily restate parts of the original question that could be resolved within a more encompassing single or earlier step. Each step must isolate a *distinct and necessary piece of unknown information* crucial for the overall answer.
+        # 6.  **Final Answer Derivation**: The final sub-question's purpose is to synthesize the information gathered from all preceding, answered sub-questions to directly and comprehensively answer the `Original Complex Question`. The decomposition should lead to a state where this final step is a clear derivation from the sub-answers.
+        # 7.  **Output Format**: **YOU MUST USE JSON FORMAT ONLY.** Ensure the entire output is a valid JSON array of step objects.
 
-        Original Complex Question: '{question}'
-        """
-            },
-            {
-                "role": "user",
-                "content": f"""## Examples (5)
+        # Original Complex Question: '{question}'
+        # """
+        #     },
+        #     {
+        #         "role": "user",
+        #         "content": f"""## Examples (5)
 
-        ---
-        **Example 1:**
-        "Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?"
+        # ---
+        # **Example 1:**
+        # "Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?"
 
-        JSON desired output format:
-        [
-            {{
-                "subquestion": "Which gene encode enzyme can inactivate antithrombin?",
-                "search_keyword": "gene encode enzyme inactivate antithrombin",
-                "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
-                "target_answer_type": "gene",
-                "key_entity": ["antithrombin"]
-            }},
-            {{
-                "subquestion": "Which human chromosome contains that gene?",
-                "search_keyword": "human chromosome location gene",
-                "focus_spacy_based_entity_label": ["CELLULAR_COMPONENT"],
-                "target_answer_type": "chromosome",
-                "key_entity": []
-            }}
-        ]
+        # JSON desired output format:
+        # [
+        #     {{
+        #         "subquestion": "Which gene encode enzyme can inactivate antithrombin?",
+        #         "search_keyword": "gene encode enzyme inactivate antithrombin",
+        #         "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
+        #         "target_answer_type": "gene",
+        #         "key_entity": ["antithrombin"]
+        #     }},
+        #     {{
+        #         "subquestion": "Which human chromosome contains that gene?",
+        #         "search_keyword": "human chromosome location gene",
+        #         "focus_spacy_based_entity_label": ["CELLULAR_COMPONENT"],
+        #         "target_answer_type": "chromosome",
+        #         "key_entity": []
+        #     }}
+        # ]
 
-        ---
-        **Example 2:**
-        "Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
+        # ---
+        # **Example 2:**
+        # "Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
 
-        JSON desired output format:
-        [
-            {{
-                "subquestion": "What is the primary organ of the human nervous system?",
-                "search_keyword": "primary organ human nervous system",
-                "focus_spacy_based_entity_label": ["ORGAN"],
-                "target_answer_type": "organ",
-                "key_entity": ["nervous system"]
-            }},
-            {{
-                "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
-                "search_keyword": "lactate dehydrogenase tetramer most common organ",
-                "focus_spacy_based_entity_label": ["CHEMICAL"],
-                "target_answer_type": "tetramer",
-                "key_entity": []
-            }}
-        ]
+        # JSON desired output format:
+        # [
+        #     {{
+        #         "subquestion": "What is the primary organ of the human nervous system?",
+        #         "search_keyword": "primary organ human nervous system",
+        #         "focus_spacy_based_entity_label": ["ORGAN"],
+        #         "target_answer_type": "organ",
+        #         "key_entity": ["nervous system"]
+        #     }},
+        #     {{
+        #         "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
+        #         "search_keyword": "lactate dehydrogenase tetramer most common organ",
+        #         "focus_spacy_based_entity_label": ["CHEMICAL"],
+        #         "target_answer_type": "tetramer",
+        #         "key_entity": []
+        #     }}
+        # ]
 
-        ---
-        **Example 3:**
-        "Which gene mutation is responsible for the syndrome characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?"
+        # ---
+        # **Example 3:**
+        # "Which gene mutation is responsible for the syndrome characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?"
 
-        JSON desired output format:
-        [
-            {{
-                "subquestion": "Which syndrome is characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
-                "search_keyword": "syndrome flattened deformed vertebrae developmental delay lens coloboma",
-                "focus_spacy_based_entity_label": ["DISEASE"],
-                "target_answer_type": "syndrome",
-                "key_entity": [
-                    "flattened vertebrae",
-                    "deformed vertebrae",
-                    "developmental delay",
-                    "lens coloboma"
-                ]
-            }},
-            {{
-                "subquestion": "Which gene mutation is responsible for that syndrome?",
-                "search_keyword": "gene mutation syndrome",
-                "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
-                "target_answer_type": "gene mutation",
-                "key_entity": []
-            }}
-        ]
+        # JSON desired output format:
+        # [
+        #     {{
+        #         "subquestion": "Which syndrome is characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
+        #         "search_keyword": "syndrome flattened deformed vertebrae developmental delay lens coloboma",
+        #         "focus_spacy_based_entity_label": ["DISEASE"],
+        #         "target_answer_type": "syndrome",
+        #         "key_entity": [
+        #             "flattened vertebrae",
+        #             "deformed vertebrae",
+        #             "developmental delay",
+        #             "lens coloboma"
+        #         ]
+        #     }},
+        #     {{
+        #         "subquestion": "Which gene mutation is responsible for that syndrome?",
+        #         "search_keyword": "gene mutation syndrome",
+        #         "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
+        #         "target_answer_type": "gene mutation",
+        #         "key_entity": []
+        #     }}
+        # ]
 
-        ---
-        **Example 4:**
-        "Which London suburb was home to the pioneering institutions that influenced John Langdon Down's work at Earlswood Asylum?"
+        # ---
+        # **Example 4:**
+        # "Which London suburb was home to the pioneering institutions that influenced John Langdon Down's work at Earlswood Asylum?"
 
-        JSON desired output format:
-        [
-            {{
-                "subquestion": "Which pioneering institutions influenced John Langdon Down's work at Earlswood Asylum?",
-                "search_keyword": "pioneering institutions John Langdon Down Earlswood Asylum",
-                "focus_spacy_based_entity_label": ["ORG"],
-                "target_answer_type": "institution",
-                "key_entity": [
-                    "John Langdon Down",
-                    "Earlswood Asylum"
-                ]
-            }},
-            {{
-                "subquestion": "In which London suburb was that pioneering institution located?",
-                "search_keyword": "London suburb location institution",
-                "focus_spacy_based_entity_label": ["GPE"],
-                "target_answer_type": "suburb",
-                "key_entity": []
-            }}
-        ]
+        # JSON desired output format:
+        # [
+        #     {{
+        #         "subquestion": "Which pioneering institutions influenced John Langdon Down's work at Earlswood Asylum?",
+        #         "search_keyword": "pioneering institutions John Langdon Down Earlswood Asylum",
+        #         "focus_spacy_based_entity_label": ["ORG"],
+        #         "target_answer_type": "institution",
+        #         "key_entity": [
+        #             "John Langdon Down",
+        #             "Earlswood Asylum"
+        #         ]
+        #     }},
+        #     {{
+        #         "subquestion": "In which London suburb was that pioneering institution located?",
+        #         "search_keyword": "London suburb location institution",
+        #         "focus_spacy_based_entity_label": ["GPE"],
+        #         "target_answer_type": "suburb",
+        #         "key_entity": []
+        #     }}
+        # ]
 
-        ---
-        **Example 5:**
-        "On which chromosome is the gene responsible for Carpenter syndrome, which is associated with brachydactyly, located?"
+        # ---
+        # **Example 5:**
+        # "On which chromosome is the gene responsible for Carpenter syndrome, which is associated with brachydactyly, located?"
 
-        JSON desired output format:
-        [
-            {{
-                "subquestion": "Which gene is responsible for Carpenter syndrome?",
-                "search_keyword": "gene responsible Carpenter syndrome",
-                "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
-                "target_answer_type": "gene",
-                "key_entity": [
-                    "Carpenter syndrome"
-                ]
-            }},
-            {{
-                "subquestion": "On which chromosome is that gene located?",
-                "search_keyword": "chromosome location gene",
-                "focus_spacy_based_entity_label": ["CELLULAR_COMPONENT"],
-                "target_answer_type": "chromosome",
-                "key_entity": []
-            }}
-        ]
+        # JSON desired output format:
+        # [
+        #     {{
+        #         "subquestion": "Which gene is responsible for Carpenter syndrome?",
+        #         "search_keyword": "gene responsible Carpenter syndrome",
+        #         "focus_spacy_based_entity_label": ["GENE_OR_GENE_PRODUCT"],
+        #         "target_answer_type": "gene",
+        #         "key_entity": [
+        #             "Carpenter syndrome"
+        #         ]
+        #     }},
+        #     {{
+        #         "subquestion": "On which chromosome is that gene located?",
+        #         "search_keyword": "chromosome location gene",
+        #         "focus_spacy_based_entity_label": ["CELLULAR_COMPONENT"],
+        #         "target_answer_type": "chromosome",
+        #         "key_entity": []
+        #     }}
+        # ]
 
-        Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
-        Remember the strict formatting requirements:
-        1.  Entire output MUST be a valid JSON array.
-        2.  Ensure all sub-questions are self-contained and directly contribute to answering the original complex question, adhering to the guidelines for intermediate results.
+        # Now, please provide the decomposition with the minimum number of necessary steps for my original complex question.
+        # Remember the strict formatting requirements:
+        # 1.  Entire output MUST be a valid JSON array.
+        # 2.  Ensure all sub-questions are self-contained and directly contribute to answering the original complex question, adhering to the guidelines for intermediate results.
 
-        Here is the original complex question: "{question}"
-        """
-            }
-            ]
+        # Here is the original complex question: "{question}"
+        # """
+        #     }
+        #     ]
     elif dataset == "wiki":
         labels_str = ", ".join(WIKI_LABELS_LIST)
         if type_q == "bridge_comparison":
@@ -1348,32 +1676,58 @@ Context: {context}
     return prompt
 
 # PROMPT CŨ
-def old_prompt_gen_answer_medhop_step_3b(question, key_entities, context):
-    prompt = f"""Question: {question}
-        Instructions:
-        1. Determine the question type from the question text.
-        2. Generate two parts in JSON format:
-        - long_answer: a detailed explanation based on the information.
-        - short_answer: strictly follow these rules based on the question type:
-        * For questions asking "how many" or about counts, return only a number or numeric phrase (e.g., "10", "ten").
-        * For questions asking about time or duration, return a concise time value (e.g., "36 hours", "3 days").
-        * For yes/no questions, return "Yes" or "No".
-        * For questions starting with "Who", "Which", or "What" that ask for a specific entity (e.g., person, disease, drug, gene, chromosome), return the full noun phrase naming that entity.
-            - Examples: "chromosome X", "interleukin-6", "dopamine receptor D2".
-        * For questions asking about organism, return organism type (e.g., "bacterium", "fungus").
+def old_prompt_gen_answer_medhop_step_3b(question, key_entities, context, has_extract_ner = False):
+    if has_extract_ner:
+        prompt = f"""Question: {question}
+            Instructions:
+            1. Determine the question type from the question text.
+            2. Generate two parts in JSON format:
+            - long_answer: a detailed explanation based on the information.
+            - short_answer: strictly follow these rules based on the question type:
+            * For questions asking "how many" or about counts, return only a number or numeric phrase (e.g., "10", "ten").
+            * For questions asking about time or duration, return a concise time value (e.g., "36 hours", "3 days").
+            * For yes/no questions, return "Yes" or "No".
+            * For questions starting with "Who", "Which", or "What" that ask for a specific entity (e.g., person, disease, drug, gene, chromosome), return the full noun phrase naming that entity.
+                - Examples: "chromosome X", "interleukin-6", "dopamine receptor D2".
+            * For questions asking about organism, return organism type (e.g., "bacterium", "fungus").
 
-        3. Do not add any extra commentary or text outside the JSON.
+            3. Do not add any extra commentary or text outside the JSON.
 
-        Information:  
-        Key entities: {key_entities}
-        Context: {context}
+            Information:  
+            Key entities: {key_entities}
+            Context: {context}
 
-        Response format (strict JSON):
-        {{  
-        "long_answer": "[detailed explanation]",  
-        "short_answer": "[short answer as per rules]"  
-        }}
-        """
+            Response format (strict JSON):
+            {{  
+            "long_answer": "[detailed explanation]",  
+            "short_answer": "[short answer as per rules]"  
+            }}
+            """
+    else:
+        #BỎ extract ner
+        prompt = f"""Question: {question}
+            Instructions:
+            1. Determine the question type from the question text.
+            2. Generate two parts in JSON format:
+            - long_answer: a detailed explanation based on the information.
+            - short_answer: strictly follow these rules based on the question type:
+            * For questions asking "how many" or about counts, return only a number or numeric phrase (e.g., "10", "ten").
+            * For questions asking about time or duration, return a concise time value (e.g., "36 hours", "3 days").
+            * For yes/no questions, return "Yes" or "No".
+            * For questions starting with "Who", "Which", or "What" that ask for a specific entity (e.g., person, disease, drug, gene, chromosome), return the full noun phrase naming that entity.
+                - Examples: "chromosome X", "interleukin-6", "dopamine receptor D2".
+            * For questions asking about organism, return organism type (e.g., "bacterium", "fungus").
+
+            3. Do not add any extra commentary or text outside the JSON.
+
+            Context: {context}
+
+            Response format (strict JSON):
+            {{  
+            "long_answer": "[detailed explanation]",  
+            "short_answer": "[short answer as per rules]"  
+            }}
+            """
     return prompt
 
 def prompt_gen_answer_wiki_step_3b(question, key_entities, context, type_q=None):

@@ -153,13 +153,13 @@ def create_relation_path_inference(entity, relation, sample_id, target_label, ta
     
     return output, n_path
     
-def decompose_question_sequential(question, sample_id, filepath, is_seq=True, dataset=None, type_q=None, model="gpt-4o-mini"):
+def decompose_question_sequential(question, sample_id, filepath, is_seq=True, dataset=None, type_q=None, using_decomp_new=False, model="gpt-4o-mini"):
     if os.path.exists(filepath):
         output = load_json(filepath)
         n_path = len(output.keys())
         return output, n_path
     
-    messages = load_prompt_gen_sub(question, is_seq=is_seq, dataset=dataset, type_q=type_q)
+    messages = load_prompt_gen_sub(question, is_seq=is_seq, dataset=dataset, type_q=type_q, using_decomp_new=using_decomp_new)
     result_json = request_api(messages, model)
     
     if not result_json or result_json.strip() == "":
@@ -203,8 +203,8 @@ def decompose_question_sequential(question, sample_id, filepath, is_seq=True, da
                     "subquestion": subquestion,
                     "search_keyword": sub['search_keyword'],
                     "key_entity": key_entity,
-                    "focus_spacy_based_entity_label": sub["focus_spacy_based_entity_label"],
-                    "target_answer_type": sub.get("target_answer_type", "other")
+                    "focus_spacy_based_entity_label": sub.get("focus_spacy_based_entity_label", None),
+                    "target_answer_type": sub.get("target_answer_type", None)
                 }
                 
         save_json(output, filepath)

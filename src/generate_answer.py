@@ -28,8 +28,10 @@ import json
 import time
 from typing import List, Dict, Any, Optional, Union
 
-def _generate_answer(question, key_entities, relevant_info, dataset=None, type_q=None, target_answer_type=None, using_target_type=False, using_gen_old=False, model="o3-mini"):
-    prompt = load_prompt_gen_ans(question, key_entities, relevant_info, dataset=dataset, type_q=type_q, target_answer_type=target_answer_type, using_target_type=using_target_type, using_gen_old=using_gen_old)
+def _generate_answer(question, key_entities, relevant_info, dataset=None, type_q=None, target_answer_type=None, 
+                     using_target_type=False, using_gen_old=False, has_extract_ner=False, model="o3-mini"):
+    prompt = load_prompt_gen_ans(question, key_entities, relevant_info, dataset=dataset, type_q=type_q, target_answer_type=target_answer_type, 
+                                 using_target_type=using_target_type, using_gen_old=using_gen_old, has_extract_ner=has_extract_ner)
     if dataset in ["cwq", "wiki"]:
         messages = [
             {"role": "system", "content": "## Role\nYou are an expert in general knowledge.\n\n## Task\nProvide accurate answers based on the provided information."},

@@ -57,7 +57,8 @@ def load_model(dataset, configs):
     else:
         raise ValueError(f"Unsupported dataset: {dataset}")
 
-def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None, using_target_type = False, using_gen_old=False):
+def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
+            using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False):
     sample_id = str(sample['QIDX']) 
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
@@ -106,7 +107,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
             }
         }
     
-        path_output, n_path = decompose_question_sequential(question, sample_id, paths['decomp'], is_seq=is_seq, dataset=dataset, type_q=type_q, model="gpt-4o-mini")
+        path_output, n_path = decompose_question_sequential(question, sample_id, paths['decomp'], is_seq=is_seq, 
+                            dataset=dataset, type_q=type_q, using_decomp_new=using_decomp_new, model="gpt-4o-mini")
         # continue 
         
         for path_i in range(n_path):
@@ -128,8 +130,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword']
                     search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
-                    focus_spacy_based_entity_label = item['focus_spacy_based_entity_label']
-                    target_answer_type = item.get('target_answer_type', 'other')
+                    focus_spacy_based_entity_label = item.get('focus_spacy_based_entity_label', None)
+                    target_answer_type = item.get('target_answer_type', None)
                     
                     if step == "0":
                         key_entities = item['key_entity']   
@@ -171,8 +173,8 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword'] 
                     search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
-                    focus_spacy_based_entity_label = item['focus_spacy_based_entity_label']
-                    target_answer_type = item.get('target_answer_type', 'other')
+                    focus_spacy_based_entity_label = item.get('focus_spacy_based_entity_label', None)
+                    target_answer_type = item.get('target_answer_type', None)
                     
                     if step == "0":
                         key_entities = item['key_entity']   
@@ -190,11 +192,18 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         if current_retrieval == "" or current_retrieval == []:
                             break
                         
-                        evidence_ner = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, current_retrieval, focus_spacy_based_entity_label, cache_filepath_retrieval, settings)  
+                        if has_extract_ner:
+                            focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]
+                            evidence_ner = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, current_retrieval, 
+                                            focus_spacy_based_entity_label, cache_filepath_retrieval, settings)  
+                        else:
+                            evidence_ner = None
+                            
                         # norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
                         # raw_answer = generate_answer(subquestion, target_answer_type, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
                         # không norm
-                        normalized_answer = _generate_answer(subquestion, evidence_ner, current_retrieval, dataset, type_q, target_answer_type, using_target_type, using_gen_old)
+                        normalized_answer = _generate_answer(subquestion, evidence_ner, current_retrieval, dataset, type_q, target_answer_type,
+                                                            using_target_type, using_gen_old, has_extract_ner)
                         current_short = normalized_answer['short_answer']
                         
                         # # Normalize if needed
@@ -408,6 +417,7 @@ if __name__ == "__main__":
         
     load_model(dataset, configs)
        
+    # list_id = ['157829', '378607']
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
@@ -417,7 +427,11 @@ if __name__ == "__main__":
         #     continue
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
-        type_q = class_q[sample['QIDX']]['type_q']
+        # type_q = class_q[sample['QIDX']]['type_q']
+        
+        #classification cu:
+        type_q = class_q[sample['QIDX']]['is_sequence']
+        
         # print(type_q)
         sample['type_q'] = type_q
         # sample['probs'] = convert_ndarray(probabilities)
@@ -427,6 +441,7 @@ if __name__ == "__main__":
         else:
             is_seq = True
 
-        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, using_target_type=False, using_gen_old=False)
+        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
+            using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=True)
         
         
