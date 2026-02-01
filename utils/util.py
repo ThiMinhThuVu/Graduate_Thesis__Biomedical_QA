@@ -16,6 +16,48 @@ import yaml
 from thefuzz import fuzz
 import numpy as np
 
+question_type_to_ner_2 = {
+    "condition": ["DISEASE"],
+    "disease": ["DISEASE"],
+    "syndrome": ["DISEASE"],
+    "disorder": ["DISEASE"],
+    "cancer": ["CANCER"],
+    "tumor": ["CANCER"],
+    "chromosome": ["DNA"],
+    "gene": ["GENE_OR_GENE_PRODUCT"],
+    "gene mutation": ["GENE_OR_GENE_PRODUCT"],
+    "protein": ["PROTEIN"],
+    "enzyme": ["PROTEIN"],
+    "number of amino acids": ["PROTEIN"],
+    "medication": ["CHEMICAL"],
+    "drug": ["CHEMICAL"],
+    "virus": ["ORGANISM"],
+    "anatomical structure": ["ANATOMICAL_SYSTEM", "ORGAN", "TISSUE"],
+    "muscle": ["TISSUE"],
+    "nerve": ["TISSUE"]
+}
+
+question_type_to_ner_3 = {
+    "condition": ["DISEASE"],
+    "disease": ["DISEASE"],
+    "syndrome": ["DISEASE"],
+    "disorder": ["DISEASE"],
+    "cancer": ["CANCER", "DISEASE"],
+    "tumor": ["CANCER", "DISEASE", "TISSUE"],
+    "chromosome": ["DNA", "CELLULAR_COMPONENT"],
+    "gene": ["GENE_OR_GENE_PRODUCT"],
+    "gene mutation": ["DNA", "GENE_OR_GENE_PRODUCT"],
+    "protein": ["PROTEIN", "GENE_OR_GENE_PRODUCT"],
+    "enzyme": ["PROTEIN", "GENE_OR_GENE_PRODUCT"],
+    "number of amino acids": ["PROTEIN", "AMINO_ACID"],
+    "medication": ["CHEMICAL", "SIMPLE_CHEMICAL"],
+    "drug": ["CHEMICAL", "SIMPLE_CHEMICAL"],
+    "virus": ["ORGANISM"],
+    "anatomical structure": ["ANATOMICAL_SYSTEM", "ORGAN", "TISSUE"],
+    "muscle": ["TISSUE", "ORGAN"],
+    "nerve": ["TISSUE", "ORGAN"]
+}
+
 move_section_list = [
     "table of contents",
     "see also",

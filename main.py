@@ -59,7 +59,9 @@ def load_model(dataset, configs):
         raise ValueError(f"Unsupported dataset: {dataset}")
 
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
-            using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False):
+            using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False,
+            target_ans_type=None, question_type_to_ner=None):
+    
     sample_id = str(sample['QIDX']) 
     print("[ID]: ", sample_id)
     paths = setup_paths(settings, sample_id)
@@ -195,11 +197,17 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                             break
                         
                         if has_extract_ner: # Only extract snippet
-                            focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
-                            information_to_extract = search_kw_subq_retrieval + " " + all_snippet
+                            # focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
+                            if target_ans_type in question_type_to_ner:
+                                focus_spacy_based_entity_label = question_type_to_ner[target_ans_type]
+                                information_to_extract = search_kw_subq_retrieval + " " + all_snippet
 
-                            extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, 
-                                                        information_to_extract, focus_spacy_based_entity_label)  
+                                extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, 
+                                                        information_to_extract, focus_spacy_based_entity_label)
+                            else:
+                                focus_spacy_based_entity_label = []
+                                extracted_entities = None
+                                has_extract_ner = False                                
                         else:
                             extracted_entities = None
                             
@@ -422,34 +430,37 @@ if __name__ == "__main__":
         
     load_model(dataset, configs)
     check_yn = load_json("data_target_ans_type.json")
-       
-    # list_id = ['157829', '378607']
+    
+    #EDIT CONFIG VERSION NER
+    ner_version = 2
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
         
         qidx = sample['QIDX']
-        if check_yn[qidx]['target_answer_type'] == 'correctness':
+        question = sample['Question']
+        
+        target_ans_type = check_yn[qidx]['target_answer_type']
+        if target_ans_type == 'correctness':
             continue
         
-        question = sample['Question']
-                
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
         type_q = class_q[qidx]['type_q']
-        
         #classification cu:
-        # type_q = class_q[sample['QIDX']]['is_sequence']
-        
-        # print(type_q)
-        sample['type_q'] = type_q
-        # sample['probs'] = convert_ndarray(probabilities)
-        
+        # type_q = class_q[sample['QIDX']]['is_sequence']        
+        sample['type_q'] = type_q        
         if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False
         else:
             is_seq = True
 
+        if ner_version == 2:
+            question_type_to_ner = question_type_to_ner_2
+        elif ner_version == 3:
+            question_type_to_ner = question_type_to_ner_3
+            
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
-            using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False)
+            using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False,
+            target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner)
         
         
