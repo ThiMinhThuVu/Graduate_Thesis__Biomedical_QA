@@ -34,9 +34,9 @@ def load_model(dataset, configs):
     if dataset == "medhop":
         # Biomedical NER
         extractor_model = spacy.load("en_ner_bc5cdr_md")
-        extractor_model_2 = spacy.load("en_ner_jnlpba_md")
-        extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
-        # extractor_model_2 = extractor_model_3 = None
+        # extractor_model_2 = spacy.load("en_ner_jnlpba_md")
+        # extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
+        extractor_model_2 = extractor_model_3 = None
         
         # Biomedical embedding
         # embedding_model = AutoModel.from_pretrained("dmis-lab/biobert-base-cased-v1.1")
@@ -44,8 +44,9 @@ def load_model(dataset, configs):
         # embedding_model = AutoModel.from_pretrained("microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext")
         
         # Initialize a StaticEmbedding module
-        static = StaticEmbedding.from_model2vec("neuml/pubmedbert-base-embeddings-8M")
-        embedding_model = SentenceTransformer(modules=[static])
+        # static = StaticEmbedding.from_model2vec("neuml/pubmedbert-base-embeddings-8M")
+        # embedding_model = SentenceTransformer(modules=[static])
+        embedding_model = None
         print("Loaded biomedical NER + embedding model")
 
     elif dataset == "wiki":
@@ -60,6 +61,7 @@ def load_model(dataset, configs):
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
             using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False):
     sample_id = str(sample['QIDX']) 
+    print("[ID]: ", sample_id)
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
     
@@ -109,7 +111,6 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
     
         path_output, n_path = decompose_question_sequential(question, sample_id, paths['decomp'], is_seq=is_seq, 
                             dataset=dataset, type_q=type_q, using_decomp_new=using_decomp_new, model="gpt-4o-mini")
-        # continue 
         
         for path_i in range(n_path):
             path_i = str(path_i)
@@ -140,7 +141,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         
                     print(f"\n--- Load Step {step}: {subquestion} ---")
                                             
-                    retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
+                    all_snippet, retrieval_information, cache_filepath_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
 
                     if step not in qi_final_answers[path_i]:
                         continue
@@ -186,23 +187,26 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     # Multiple Choice
                     candidates = []
                     idx_del = 0
-                    current_retrieval, cache_filepath_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
+                    
+                    all_snippet, current_retrieval, cache_filepath_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
                     
                     while idx_del < settings['max_candidates']:
                         if current_retrieval == "" or current_retrieval == []:
                             break
                         
-                        if has_extract_ner:
+                        if has_extract_ner: # Only extract snippet
                             focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]
-                            evidence_ner = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, current_retrieval, 
+                            information_to_extract = search_kw_subq_retrieval + " " + all_snippet
+
+                            extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, information_to_extract, 
                                             focus_spacy_based_entity_label, cache_filepath_retrieval, settings)  
                         else:
-                            evidence_ner = None
+                            extracted_entities = None
                             
                         # norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
-                        # raw_answer = generate_answer(subquestion, target_answer_type, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=evidence_ner, dataset=dataset, type_q=type_q)
+                        # raw_answer = generate_answer(subquestion, target_answer_type, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=extracted_entities, dataset=dataset, type_q=type_q)
                         # không norm
-                        normalized_answer = _generate_answer(subquestion, evidence_ner, current_retrieval, dataset, type_q, target_answer_type,
+                        normalized_answer = _generate_answer(subquestion, search_kw_subq_retrieval, extracted_entities, current_retrieval, dataset, type_q, target_answer_type,
                                                             using_target_type, using_gen_old, has_extract_ner)
                         current_short = normalized_answer['short_answer']
                         
@@ -338,6 +342,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
     if n_qi > 1:
         combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
         dict_ans['final_answer'] = combine_parallel_ans
+        dict_ans['final_answer']['retrieval_information'] = all_context
         save_json(dict_ans, file_all_ans)
         print(f"Final answer: {combine_parallel_ans['short_answer']}")
         print(f"\nSaved to {file_all_ans}")
@@ -442,6 +447,6 @@ if __name__ == "__main__":
             is_seq = True
 
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
-            using_target_type=False, using_gen_old=True, has_extract_ner=False, using_decomp_new=False)
+            using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False)
         
         

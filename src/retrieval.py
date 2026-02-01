@@ -15,6 +15,7 @@ def retrieval_google(search_kw, filepath):
             result = output['google']['search_results']
             if result == []:
                 print("[API SEARCH] HẾT LƯỢT SEARCHs")
+                print("Search kw: ", search_kw)
                 return None
             
             print(f"Cache hit Google Search. Loading from file.")
@@ -22,9 +23,14 @@ def retrieval_google(search_kw, filepath):
     else:
         output = {}
             
-    result = search_google(search_kw)   
-    if result == []:
-        print("[API SEARCH] HẾT LƯỢT SEARCHs")
+    max_retries = 3
+    for attempt in range(max_retries):
+        result = search_google(search_kw)
+        if result != []:
+            break
+        print(f"[API SEARCH] HẾT LƯỢT SEARCHs (attempt {attempt+1}/{max_retries})")
+        print("Search kw: ", search_kw)
+    else:
         return None
           
     output['google'] = {
@@ -107,7 +113,7 @@ def format_results_wiki_abs(search_results, filepath, topk=5, bf_ts=None):
     return "\n".join(context_parts)
 
 
-def get_paragraphs_wiki_result(results, subquestion, embedding_model, max_docs_token=300):    
+def get_paragraphs_wiki_result(results, subquestion, embedding_model=None, max_docs_token=300):    
     # Lấy paragraph
     dict_para = {}
     all_context = ""
@@ -135,9 +141,12 @@ def get_paragraphs_wiki_result(results, subquestion, embedding_model, max_docs_t
         
         if len(list_para_text) == 0:
             continue
+                    
+        if embedding_model:
+            similarity = find_most_relevant_doc_embedding(subquestion, list_para_text, embedding_model)
+        else:
+            similarity = find_most_relevant_doc(subquestion, list_para_text)
             
-        # similarity = find_most_relevant_doc(subquestion, list_para_text)
-        similarity = find_most_relevant_doc_embedding(subquestion, list_para_text, embedding_model)
         count_token = 0
         selected_idx_sentences = []
         
@@ -394,7 +403,8 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
     # key_entities: List
     retrieval_information = ""
     retrieval_topk = settings['retrieval_topk']
-        
+    all_snippet = ""
+    
     hash_id, hash_id_cache = register_query_cache(search_kw_subq, hash_id_cache)
     cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}"
     print("Retrieval_path: ", cache_filepath_retrieval)
@@ -404,21 +414,26 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
             
     if settings['get_gg']:
         results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval)            
-        retrieval_information += format_search_results(results_gg_search, topk=retrieval_topk['google']) + "\n\n"
+        snippet_gg = format_search_results(results_gg_search, topk=retrieval_topk['google']) 
+        retrieval_information += snippet_gg + "\n\n"
+        all_snippet += snippet_gg + "\n"
     
     if settings['get_wiki'] or settings['get_abs_wiki']:
         results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval)
     
         if settings['get_wiki']:
-            retrieval_information += format_search_results(results_wiki_search, topk=retrieval_topk['wiki']) + "\n\n"
+            snippet_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki']) 
+            retrieval_information += snippet_wiki + "\n\n"
+            all_snippet += snippet_wiki + "\n"
         elif settings['get_abs_wiki']:
-            retrieval_information += format_results_wiki_abs(results_wiki_search, cache_filepath_retrieval, topk=retrieval_topk['wiki_abs']) + "\n\n"
+            abs_wiki = format_results_wiki_abs(results_wiki_search, cache_filepath_retrieval, topk=retrieval_topk['wiki_abs'])
+            retrieval_information += abs_wiki + "\n\n"
 
         if settings['get_crawl_wiki']:
             crawl_wiki_context = crawl_wiki_page(
                 results_wiki_search, search_kw_subq, settings['wiki_cache'], cache_filepath_retrieval, 
                 embedding_model, topk=retrieval_topk['wiki_crawl'], max_token=retrieval_topk['crawl_max_token'])
-            retrieval_information += crawl_wiki_context
+            retrieval_information += "- Wikipedia: " + crawl_wiki_context
 
     if settings["get_sparql_context"]:
         if os.path.exists(cache_filepath_retrieval):
@@ -468,7 +483,7 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
             all_data_retrieval['sparql'] = history
             save_json(all_data_retrieval, cache_filepath_retrieval)
             
-    return retrieval_information, cache_filepath_retrieval
+    return all_snippet, retrieval_information, cache_filepath_retrieval
 
 
 def remove_retrieve_evidence(current_retrieval: str, current_short: str):

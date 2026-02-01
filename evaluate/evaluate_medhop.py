@@ -45,6 +45,7 @@ def load_predictions(pred_dir, golden_ids):
     return preds
 
 def evaluate_context(golden, preds, output_csv):
+    list_id_gol = []
     count_check = 0
     count_check_norm = 0
     total = 0
@@ -105,6 +106,7 @@ def evaluate_context(golden, preds, output_csv):
                 for gol in golden_ans:
                     if gol in context:
                         check_golden_in_context = True
+                        list_id_gol.append(qid)
                         cnt_gol_ctx += 1
                         break
             else:
@@ -124,7 +126,7 @@ def evaluate_context(golden, preds, output_csv):
     print("seq_false: ", seq_false)
     print("parallel_true: ", parallel_true)
     print("parallel_false: ", parallel_false)
-    
+    return list_id_gol
     
     
 def main():
@@ -137,8 +139,15 @@ def main():
     output_csv = f'evaluate/run/{run}medhop_eval_result.csv'
     golden = load_golden(golden_path)
     preds = load_predictions(pred_dir, set(golden.keys()))
-    # evaluate(golden, preds, output_csv)
-    evaluate_context(golden, preds, output_csv)
+    list_id_gol_2 = evaluate_context(golden, preds, output_csv)
+    
+    # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\row2-3\medhop_important_results\all_ans"
+    # preds = load_predictions(pred_dir, set(golden.keys()))
+    # list_id_gol_1 = evaluate_context(golden, preds, output_csv)
+    
+    # tmp = list(set(list_id_gol_1) - set(list_id_gol_2))
+    # print(len(tmp))
+    # print(tmp)
     print(f"Evaluation complete. Results saved to {output_csv}")
 
 if __name__ == '__main__':

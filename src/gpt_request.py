@@ -62,7 +62,8 @@ def request_api(messages, model, temperature=0):
 
     raise RuntimeError("All APIs failed after multiple retries.")
 
-def search_1_search_google(query):
+# def search_1_search_google(query):
+def search_google(query):
     max_retries = 10
     retry_delay = 2
    
@@ -188,10 +189,56 @@ def serapi_search_google(
 import http.client
 import json as _json
 from urllib.parse import urlencode
+
 conn = http.client.HTTPSConnection("scraperapi.thordata.com")
 
-# def scraperapi_search(query):
-def search_google(query):    
+def check_quota(token):
+    conn_quota = http.client.HTTPSConnection("openapi.thordata.com")
+    # conn_quota = conn
+
+    params = urlencode({
+        "token": token
+    })
+
+    url = f"/api/account/traffic-balance?{params}"
+
+    try:
+        conn_quota.request("GET", url)
+        res = conn_quota.getresponse()
+
+        raw = res.read().decode("utf-8")
+        data = json.loads(raw)
+
+        print("Quota response:", data)
+
+        # ❌ API error
+        if data.get("code") != 200:
+            print("HẾT QUOTA (API error)")
+            return None
+
+        traffic_balance = data["data"].get("traffic_balance", 0)
+
+        # ❌ hết quota
+        if traffic_balance <= 0:
+            print("HẾT QUOTA")
+            return None
+
+        # ✅ còn quota
+        return traffic_balance
+
+    except Exception as e:
+        print("check_quota error:", e)
+        return None
+    
+def scraperapi_search(query):
+# def search_google(query):  
+    # quota = check_quota(
+    #     token="df4c4fe804601e2bb3cde722163bfd08"
+    # )
+
+    # if quota is None:
+    #     return None 
+      
     params = {
         "engine": "google",
         "q": query,
@@ -203,7 +250,7 @@ def search_google(query):
         'Authorization': f'Bearer {API_search_scraperapi}',
         'Content-Type': 'application/x-www-form-urlencoded'
     }
-
+    
     try:
         conn.request("POST", "/request", payload, headers)
         res = conn.getresponse()
@@ -225,7 +272,6 @@ def search_google(query):
         print("search_google error:", e)
         return 
 
-
 def save_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
@@ -235,6 +281,6 @@ if __name__ == "__main__":
     # save_json(serpshot_search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?"), "f2.json")
     # save_json(search_google("growth-delay syndrome mutations gene"), "f2.json")
     print("=========================")
-    print(search_google("growth-delay syndrome mutations gene"))
+    print(search_google("chromosome gene encodes enzyme converting adenosine to inosine ADAR gene"))
     question = "Where did that person graduate from?"
     
