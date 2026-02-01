@@ -141,7 +141,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         
                     print(f"\n--- Load Step {step}: {subquestion} ---")
                                             
-                    all_snippet, retrieval_information, cache_filepath_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
+                    all_snippet, retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
 
                     if step not in qi_final_answers[path_i]:
                         continue
@@ -188,18 +188,18 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     candidates = []
                     idx_del = 0
                     
-                    all_snippet, current_retrieval, cache_filepath_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
+                    all_snippet, current_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
                     
                     while idx_del < settings['max_candidates']:
                         if current_retrieval == "" or current_retrieval == []:
                             break
                         
                         if has_extract_ner: # Only extract snippet
-                            # focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]
+                            focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
                             information_to_extract = search_kw_subq_retrieval + " " + all_snippet
 
-                            extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, information_to_extract, 
-                                            focus_spacy_based_entity_label, cache_filepath_retrieval, settings)  
+                            extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, 
+                                                        information_to_extract, focus_spacy_based_entity_label)  
                         else:
                             extracted_entities = None
                             
@@ -421,18 +421,21 @@ if __name__ == "__main__":
         settings['normalize'] = True
         
     load_model(dataset, configs)
+    check_yn = load_json("data_target_ans_type.json")
        
     # list_id = ['157829', '378607']
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
+        
+        qidx = sample['QIDX']
+        if check_yn[qidx]['target_answer_type'] == 'correctness':
+            continue
+        
         question = sample['Question']
-        
-        # if sample['QIDX'] not in list_id:
-        #     continue
-        
+                
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
-        type_q = class_q[sample['QIDX']]['type_q']
+        type_q = class_q[qidx]['type_q']
         
         #classification cu:
         # type_q = class_q[sample['QIDX']]['is_sequence']

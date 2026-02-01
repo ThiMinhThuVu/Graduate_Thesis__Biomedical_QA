@@ -31,7 +31,7 @@ def extract_with_models(query, target_labels, extractor_model, extractor_model_2
     labels_2 = [label for label in target_labels if label in BIO_LABLES_2]
     labels_3 = [label for label in target_labels if label in BIO_LABLES_3]
         
-    if labels_1:
+    if labels_1 and extractor_model:
         print("[Extract NER] - Model 1: en_ner_bc5cdr_md")
         doc1 = extractor_model(query)
         for ent in doc1.ents:
@@ -64,22 +64,11 @@ def extract_with_models(query, target_labels, extractor_model, extractor_model_2
                  
     return list(entities_set)
 
-def extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, retrieval_information, target_label, cache_filepath_retrieval, settings):
-    output = load_json(cache_filepath_retrieval) if os.path.exists(cache_filepath_retrieval) else {}
-    if 'ner' in output:
-        output_ner = output['ner']
-    else:
-        output_ner = {}
-        
-    if settings['run'] in output_ner:
-        list_entities = output_ner[settings['run']]
-    else:
-        print(f"Extracting entities.")
-        list_entities = extract_with_models(retrieval_information, target_label, extractor_model, extractor_model_2, extractor_model_3)
-        output_ner[settings['run']] = list_entities
-        output['ner'] = output_ner
-        save_json(output, cache_filepath_retrieval)
-       
+def extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, retrieval_information, target_label):
+   
+    print(f"Extracting entities.")
+    list_entities = extract_with_models(retrieval_information, target_label, extractor_model, extractor_model_2, extractor_model_3)
+          
     all_key_entities = ", ".join(list_entities)
     
     return all_key_entities

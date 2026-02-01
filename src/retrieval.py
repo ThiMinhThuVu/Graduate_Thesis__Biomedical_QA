@@ -483,7 +483,7 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
             all_data_retrieval['sparql'] = history
             save_json(all_data_retrieval, cache_filepath_retrieval)
             
-    return all_snippet, retrieval_information, cache_filepath_retrieval
+    return all_snippet, retrieval_information
 
 
 def remove_retrieve_evidence(current_retrieval: str, current_short: str):
