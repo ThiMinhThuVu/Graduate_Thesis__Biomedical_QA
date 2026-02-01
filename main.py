@@ -34,9 +34,9 @@ def load_model(dataset, configs):
     if dataset == "medhop":
         # Biomedical NER
         extractor_model = spacy.load("en_ner_bc5cdr_md")
-        # extractor_model_2 = spacy.load("en_ner_jnlpba_md")
-        # extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
-        extractor_model_2 = extractor_model_3 = None
+        extractor_model_2 = spacy.load("en_ner_jnlpba_md")
+        extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
+        # extractor_model_2 = extractor_model_3 = None
         
         # Biomedical embedding
         # embedding_model = AutoModel.from_pretrained("dmis-lab/biobert-base-cased-v1.1")
