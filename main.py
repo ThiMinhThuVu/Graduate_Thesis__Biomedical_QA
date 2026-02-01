@@ -195,7 +195,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                             break
                         
                         if has_extract_ner: # Only extract snippet
-                            focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]
+                            # focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]
                             information_to_extract = search_kw_subq_retrieval + " " + all_snippet
 
                             extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, information_to_extract, 

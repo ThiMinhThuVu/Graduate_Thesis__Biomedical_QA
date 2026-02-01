@@ -12,15 +12,50 @@ def extract_with_models(query, target_labels, extractor_model, extractor_model_2
 
     # labels_wiki = [label for label in target_labels if label in WIKI_LABELS_LIST]
 
-    if target_labels:
+    # if target_labels:
+    #     print("[Extract NER] - Model 1: en_ner_bc5cdr_md")
+    #     doc1 = extractor_model(query)
+    #     for ent in doc1.ents:
+    #         if ent.label_ in target_labels:
+    #             ent_text_lower = ent.text.lower()
+    #             if ent_text_lower not in lower_entites:
+    #                 lower_entites.add(ent_text_lower)
+    #                 entities_set.add(ent.text)
+                    
+    labels_1 = [label for label in target_labels if label in BIO_LABLES_1]
+    labels_2 = [label for label in target_labels if label in BIO_LABLES_2]
+    labels_3 = [label for label in target_labels if label in BIO_LABLES_3]
+        
+    if labels_1:
         print("[Extract NER] - Model 1: en_ner_bc5cdr_md")
         doc1 = extractor_model(query)
         for ent in doc1.ents:
-            if ent.label_ in target_labels:
+            if ent.label_ in labels_1:
                 ent_text_lower = ent.text.lower()
                 if ent_text_lower not in lower_entites:
                     lower_entites.add(ent_text_lower)
                     entities_set.add(ent.text)
+        
+    if labels_2 and extractor_model_2:
+        print("[Extract NER] - Model 2: en_ner_jnlpba_md")
+        doc2 = extractor_model_2(query)
+        for ent in doc2.ents:
+            if ent.label_ in labels_2:
+                ent_text_lower = ent.text.lower()
+                if ent_text_lower not in lower_entites:
+                    lower_entites.add(ent_text_lower)
+                    entities_set.add(ent.text)
+
+    if labels_3 and extractor_model_3:
+        print("[Extract NER] - Model 3: en_ner_bionlp13cg_md")
+        doc3 = extractor_model_3(query)
+        for ent in doc3.ents:
+            if ent.label_ in labels_3:
+                ent_text_lower = ent.text.lower()
+                if ent_text_lower not in lower_entites:
+                    lower_entites.add(ent_text_lower)
+                    entities_set.add(ent.text)
+
                  
     return list(entities_set)
 
