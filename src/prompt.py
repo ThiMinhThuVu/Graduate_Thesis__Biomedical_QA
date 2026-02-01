@@ -1186,7 +1186,9 @@ def old_prompt_gen_answer_medhop_step_3b(question, search_kw, key_entities, cont
             3. Do not add any extra commentary or text outside the JSON.
 
             Information:  
-            {context}
+            Question: {question}
+            Subquery: {search_kw}
+            Context: {context}
 
             Response format (strict JSON):
             {{  
