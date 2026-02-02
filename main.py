@@ -20,7 +20,7 @@ global embedding_model
 wiki_cache_data = {}
 extractor_model = None
 
-def load_model(dataset, configs):
+def load_model(dataset, configs, using_embedding_model=False):
     global hash_id_cache
     global wiki_cache_data
     global extractor_model
@@ -43,10 +43,12 @@ def load_model(dataset, configs):
         # embedding_model = AutoModel.from_pretrained("michiyasunaga/BioLinkBERT-base")  
         # embedding_model = AutoModel.from_pretrained("microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext")
         
-        # Initialize a StaticEmbedding module
-        # static = StaticEmbedding.from_model2vec("neuml/pubmedbert-base-embeddings-8M")
-        # embedding_model = SentenceTransformer(modules=[static])
-        embedding_model = None
+        if using_embedding_model:
+            # Initialize a StaticEmbedding module
+            static = StaticEmbedding.from_model2vec("neuml/pubmedbert-base-embeddings-8M")
+            embedding_model = SentenceTransformer(modules=[static])
+        else:
+            embedding_model = None
         print("Loaded biomedical NER + embedding model")
 
     elif dataset == "wiki":
@@ -199,15 +201,13 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         if has_extract_ner: # Only extract snippet
                             # focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
                             if target_ans_type in question_type_to_ner:
-                                focus_spacy_based_entity_label = question_type_to_ner[target_ans_type]
-                                information_to_extract = search_kw_subq_retrieval + " " + all_snippet
-
-                                extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, 
-                                                        information_to_extract, focus_spacy_based_entity_label)
-                            else:
-                                focus_spacy_based_entity_label = []
-                                extracted_entities = None
-                                has_extract_ner = False                                
+                                focus_spacy_based_entity_label = question_type_to_ner[target_ans_type]                                
+                            else: #Other
+                                focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]                              
+                                   
+                            information_to_extract = search_kw_subq_retrieval + " " + all_snippet
+                            extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, 
+                                                        information_to_extract, focus_spacy_based_entity_label)                         
                         else:
                             extracted_entities = None
                             
@@ -428,11 +428,11 @@ if __name__ == "__main__":
         settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
         settings['normalize'] = True
         
-    load_model(dataset, configs)
-    check_yn = load_json("data_target_ans_type.json")
     
+    check_yn = load_json("data_target_ans_type.json")    
     #EDIT CONFIG VERSION NER
-    ner_version = 2
+    load_model(dataset, configs, using_embedding_model=True) #False = tfidf, true = embedding_model
+    ner_version = 4
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
@@ -458,6 +458,8 @@ if __name__ == "__main__":
             question_type_to_ner = question_type_to_ner_2
         elif ner_version == 3:
             question_type_to_ner = question_type_to_ner_3
+        elif ner_version == 4:
+            question_type_to_ner = question_type_to_ner_4
             
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
             using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False,

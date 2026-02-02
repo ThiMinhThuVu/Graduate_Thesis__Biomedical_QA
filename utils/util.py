@@ -58,6 +58,33 @@ question_type_to_ner_3 = {
     "nerve": ["TISSUE", "ORGAN"]
 }
 
+question_type_to_ner_4 = {
+    "correctness": ["DISEASE", "CHEMICAL", "GENE_OR_GENE_PRODUCT"],
+    "condition": ["DISEASE", "CHEMICAL"],
+    "chromosome": ["DISEASE", "CHEMICAL"],
+    "gene": ["GENE_OR_GENE_PRODUCT"],
+    "disease": ["DISEASE", "CHEMICAL"],
+    "medication": ["DISEASE", "CHEMICAL", "GENE_OR_GENE_PRODUCT"],
+    "syndrome": ["DISEASE", "CHEMICAL"],
+    "disorder": ["DISEASE"],
+    "protein": ["GENE_OR_GENE_PRODUCT"],
+    "person": ["DISEASE", "CHEMICAL"],
+    "gene mutation": ["GENE_OR_GENE_PRODUCT"],
+    "choice": ["DISEASE", "CHEMICAL"],
+    "enzyme": ["GENE_OR_GENE_PRODUCT"],
+    "virus": ["ORGANISM"],
+    "year": ["DISEASE", "CHEMICAL"],
+    "anatomical structure": ["DISEASE", "CHEMICAL"],
+    "drug": ["DISEASE", "CHEMICAL", "GENE_OR_GENE_PRODUCT"],
+    "symptom": ["DISEASE", "CHEMICAL", "GENE_OR_GENE_PRODUCT"],
+    "cancer": ["CANCER"],
+    "muscle": ["TISSUE", "ORGAN"],
+    "nerve": ["TISSUE"],
+    "number of amino acids": ["DISEASE", "CHEMICAL"],
+    "procedure": ["DISEASE", "CHEMICAL"],
+    "tumor": ["CANCER"],  
+}
+
 move_section_list = [
     "table of contents",
     "see also",
