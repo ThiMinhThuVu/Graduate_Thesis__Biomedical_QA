@@ -428,11 +428,12 @@ if __name__ == "__main__":
         settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
         settings['normalize'] = True
         
-    
     check_yn = load_json("data_target_ans_type.json")    
     #EDIT CONFIG VERSION NER
-    load_model(dataset, configs, using_embedding_model=True) #False = tfidf, true = embedding_model
-    ner_version = 4
+    load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
+    # ner_version = 4
+    ner_version = "#3"
+    
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
@@ -460,7 +461,8 @@ if __name__ == "__main__":
             question_type_to_ner = question_type_to_ner_3
         elif ner_version == 4:
             question_type_to_ner = question_type_to_ner_4
-            
+        elif ner_version == "#3":
+            question_type_to_ner = {} # để tất cả các type trả về là ["DISEASE", "CHEMICAL"]   
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
             using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False,
             target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner)
