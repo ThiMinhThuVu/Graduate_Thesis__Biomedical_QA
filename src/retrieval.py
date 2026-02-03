@@ -487,13 +487,10 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
 
 
 def remove_retrieve_evidence(current_retrieval: str, current_short: str):
-    # if not current_retrieval or not current_short or current_short == "":
-    #     return current_retrieval, False
-    
     if not isinstance(current_retrieval, str) or not isinstance(current_short, str):
-        return current_retrieval, False
+        return current_retrieval
     if not current_retrieval or not current_short or current_short == "":
-        return current_retrieval, False
+        return current_retrieval
 
     # Escape regex characters in short answer
     escaped_short = re.escape(current_short.strip())

@@ -193,26 +193,26 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     idx_del = 0
                     
                     all_snippet, current_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
-                    
+                    if has_extract_ner: # Only extract snippet
+                        # focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
+                        if target_ans_type in question_type_to_ner:
+                            focus_spacy_based_entity_label = question_type_to_ner[target_ans_type]                                
+                        else: #Other
+                            focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]                              
+                                
+                        information_to_extract = search_kw_subq_retrieval + " " + all_snippet
+                        extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, 
+                                                    information_to_extract, focus_spacy_based_entity_label)                         
+                    else:
+                        extracted_entities = ""
+                            
                     while idx_del < settings['max_candidates']:
                         if current_retrieval == "" or current_retrieval == []:
-                            break
-                        
-                        if has_extract_ner: # Only extract snippet
-                            # focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
-                            if target_ans_type in question_type_to_ner:
-                                focus_spacy_based_entity_label = question_type_to_ner[target_ans_type]                                
-                            else: #Other
-                                focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]                              
-                                   
-                            information_to_extract = search_kw_subq_retrieval + " " + all_snippet
-                            extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, 
-                                                        information_to_extract, focus_spacy_based_entity_label)                         
-                        else:
-                            extracted_entities = None
+                            break                                                
                             
                         # norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
                         # raw_answer = generate_answer(subquestion, target_answer_type, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=extracted_entities, dataset=dataset, type_q=type_q)
+                        
                         # không norm
                         normalized_answer = _generate_answer(subquestion, search_kw_subq_retrieval, extracted_entities, current_retrieval, dataset, type_q, target_answer_type,
                                                             using_target_type, using_gen_old, has_extract_ner)
@@ -254,11 +254,13 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         if current_short.lower() in ['yes', 'no']:
                             break
                         
-                        # new_retrieval = remove_retrieve_evidence(current_retrieval, current_short)
-                        # if new_retrieval == current_retrieval:
-                        #     break
-                        # else:
-                        #     current_retrieval = new_retrieval
+                        # Remove short answer trong context
+                        new_retrieval = remove_retrieve_evidence(current_retrieval, current_short)
+                        extracted_entities = remove_retrieve_evidence(extracted_entities, current_short)
+                        if new_retrieval == current_retrieval:
+                            break
+                        else:
+                            current_retrieval = new_retrieval
                         idx_del += 1
                     
                     # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES ---
