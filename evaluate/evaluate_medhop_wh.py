@@ -14,7 +14,7 @@ def load_golden(golden_path):
         golden_data = json.load(f)
     return golden_data
 
-with open("data_target_ans_type.json", 'r', encoding='utf-8') as f:
+with open("data/metadata_medhop.json", 'r', encoding='utf-8') as f:
     cache_class = json.load(f)
 
 
@@ -115,7 +115,7 @@ def evaluate_context(golden, preds, output_csv):
                 check_golden_in_context = None
             writer.writerow([qid, question, golden_ans, pred_ans, check, ans_norm, check_ans_norm, check_golden_in_context])
     # print("Yesno: ", yn)
-    total = 696
+    total = 695
     # total = 509 #direct
     print("Golden in context: ", cnt_gol_ctx)
     print(f"WH true (raw): {count_check}/{total}")

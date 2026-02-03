@@ -448,6 +448,8 @@ if __name__ == "__main__":
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
         type_q = metadata[qidx]['type_q']        
+        if type_q != "direct":
+            continue
               
         sample['type_q'] = type_q        
         if type_q in ['direct', 'parallel', 'comparison']:
