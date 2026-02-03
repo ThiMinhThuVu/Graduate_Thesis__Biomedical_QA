@@ -141,9 +141,10 @@ def main():
     data_type1 = load_json("data_target_ans_type_old.json")
     data_type2 = load_json("data\metadata_medhop.json")
     golden_path = os.path.join('data', 'all_answer_golden.json')
-    pred_dir = os.path.join('medhop_results', 'all_ans')
+    # golden_path = os.path.join('data', 'all_answer_golden_61.json')
+    # pred_dir = os.path.join('medhop_results', 'all_ans')
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\target_type new\row14\all_ans"
-    # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\MAS\medhop_results\all_ans"
+    pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\row14\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\R23\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\row5\medhop_important_results\all_ans"
     # pred_dir = r"E:\UETQuintet\medhop_important_results\all_ans"
@@ -166,46 +167,46 @@ def main():
     preds = load_predictions(pred_dir, set(golden.keys()))
     list_id_gol_2 = evaluate_context(golden, preds, output_csv)
 
-    pred_dir_1 = r"E:\analysis_output\2026\code - cu -29.1\wh\row15\all_ans"
-    preds_1 = load_predictions(pred_dir_1, set(golden.keys()))
-    list_id_gol_1 = evaluate_context(golden, preds_1, output_csv)
+    # pred_dir_1 = r"E:\analysis_output\2026\code - cu -29.1\wh\row15\all_ans"
+    # preds_1 = load_predictions(pred_dir_1, set(golden.keys()))
+    # list_id_gol_1 = evaluate_context(golden, preds_1, output_csv)
 
 
-    # In ra số lượng và danh sách các phần tử khác biệt hoàn toàn giữa hai list
-    diff = list(set(list_id_gol_1) ^ set(list_id_gol_2))
-    print(f"Số lượng phần tử khác biệt hoàn toàn giữa hai list: {len(diff)}")
-    print("Danh sách các phần tử khác biệt hoàn toàn:")
-    print(diff)
+    # # In ra số lượng và danh sách các phần tử khác biệt hoàn toàn giữa hai list
+    # diff = list(set(list_id_gol_1) ^ set(list_id_gol_2))
+    # print(f"Số lượng phần tử khác biệt hoàn toàn giữa hai list: {len(diff)}")
+    # print("Danh sách các phần tử khác biệt hoàn toàn:")
+    # print(diff)
 
-    tmp = list(set(list_id_gol_1) - set(list_id_gol_2))
-    print(len(tmp))
-    print(tmp)
-    # print(f"Evaluation complete. Results saved to {output_csv}")
+    # tmp = list(set(list_id_gol_1) - set(list_id_gol_2))
+    # print(len(tmp))
+    # print(tmp)
+    # # print(f"Evaluation complete. Results saved to {output_csv}")
 
-    # Xuất file so sánh list_id_gol_1 và list_id_gol_2
-    compare_csv = f'evaluate/run/{run}medhop_eval_compare.csv'
-    with open(compare_csv, 'w', newline='', encoding='utf-8') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerow(['qidx', 'question', 'golden','target1', 'ans_1', 'norm_ans_1', 'check_norm_1', 'target2', 'ans_2', 'norm_ans_2', 'check_norm_2', 'target'])
-        for qid in set(list_id_gol_1).union(set(list_id_gol_2)):
-            if qid not in diff:
-                continue
-            question = preds_1.get(qid, {}).get('question', '')
-            golden_ans = golden[qid]["True"]
-            ans_1 = preds_1.get(qid, {}).get('ans', '')
-            norm_ans_1 = postprocessing(ans_1) if ans_1 else ''
-            check_norm_1 = norm_ans_1 in golden_ans
-            target1 = data_type1[qid]['target_answer_type']
-            ans_2 = preds.get(qid, {}).get('ans', '')
-            norm_ans_2 = postprocessing(ans_2) if ans_2 else ''
-            check_norm_2 = norm_ans_2 in golden_ans
-            target2 = data_type2[qid]['target_answer_type']
-            if check_norm_1 and check_norm_2 is False and target1 != target2:
-                target = target1
-                cache_class[qid]['target_answer_type'] = target
-                writer.writerow([qid, question, golden_ans, target1, ans_1, norm_ans_1, check_norm_1, target2, ans_2, norm_ans_2, check_norm_2, target])
-    print(f"Comparison CSV saved to {compare_csv}")
-    save_json(cache_class, "data/metadata_medhop.json")
+    # # Xuất file so sánh list_id_gol_1 và list_id_gol_2
+    # compare_csv = f'evaluate/run/{run}medhop_eval_compare.csv'
+    # with open(compare_csv, 'w', newline='', encoding='utf-8') as csvfile:
+    #     writer = csv.writer(csvfile)
+    #     writer.writerow(['qidx', 'question', 'golden','target1', 'ans_1', 'norm_ans_1', 'check_norm_1', 'target2', 'ans_2', 'norm_ans_2', 'check_norm_2', 'target'])
+    #     for qid in set(list_id_gol_1).union(set(list_id_gol_2)):
+    #         if qid not in diff:
+    #             continue
+    #         question = preds_1.get(qid, {}).get('question', '')
+    #         golden_ans = golden[qid]["True"]
+    #         ans_1 = preds_1.get(qid, {}).get('ans', '')
+    #         norm_ans_1 = postprocessing(ans_1) if ans_1 else ''
+    #         check_norm_1 = norm_ans_1 in golden_ans
+    #         target1 = data_type1[qid]['target_answer_type']
+    #         ans_2 = preds.get(qid, {}).get('ans', '')
+    #         norm_ans_2 = postprocessing(ans_2) if ans_2 else ''
+    #         check_norm_2 = norm_ans_2 in golden_ans
+    #         target2 = data_type2[qid]['target_answer_type']
+    #         if check_norm_1 and check_norm_2 is False and target1 != target2:
+    #             target = target1
+    #             cache_class[qid]['target_answer_type'] = target
+    #             writer.writerow([qid, question, golden_ans, target1, ans_1, norm_ans_1, check_norm_1, target2, ans_2, norm_ans_2, check_norm_2, target])
+    # print(f"Comparison CSV saved to {compare_csv}")
+    # save_json(cache_class, "data/metadata_medhop.json")
 
 if __name__ == '__main__':
     main()

@@ -62,7 +62,7 @@ def load_model(dataset, configs, using_embedding_model=False):
 
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
             using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False,
-            target_ans_type=None, question_type_to_ner=None):
+            target_ans_type=None, question_type_to_ner=None, model_mcq=None):
     
     sample_id = str(sample['QIDX']) 
     print("[ID]: ", sample_id)
@@ -271,7 +271,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                             label = chr(ord('A') + i)
                             mc_options_text += f"{label}. {cand['short_answer']}\nReason: {cand['long_answer']}\n\n"
                         try:
-                            selected_label = gen_ans_multiple_choice(subquestion, mc_options_text, dataset=dataset)
+                            selected_label = gen_ans_multiple_choice(subquestion, mc_options_text, dataset=dataset, model=model_mcq)
                             
                             idx_selected = ord(selected_label[0].upper()) - ord('A')
                             if 0 <= idx_selected < len(candidates):
@@ -434,7 +434,7 @@ if __name__ == "__main__":
     # ner_version = 4
     ner_version = "#3"
     metadata = load_json('data/metadata_medhop.json')
-    
+    model_mcq_name = "gpt-4.1-mini" #gpt-4o-mini
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
@@ -468,6 +468,6 @@ if __name__ == "__main__":
             
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
             using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False,
-            target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner)
+            target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner,model_mcq=model_mcq_name)
         
         
