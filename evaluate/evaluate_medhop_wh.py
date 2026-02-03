@@ -9,7 +9,7 @@ from postprocessing import postprocessing
 run = 'R4_'
 # run = 'R1_'
 
-def load_golden(golden_path):
+def load_json(golden_path):
     with open(golden_path, 'r', encoding='utf-8') as f:
         golden_data = json.load(f)
     return golden_data
@@ -80,6 +80,7 @@ def evaluate_context(golden, preds, output_csv):
             if check:
                 count_check += 1
             if check_ans_norm:
+                list_id_gol.append(qid)
                 count_check_norm += 1
                 if type_q == 'direct':
                     direct_true += 1
@@ -107,7 +108,6 @@ def evaluate_context(golden, preds, output_csv):
                 for gol in golden_ans:
                     if gol in context:
                         check_golden_in_context = True
-                        list_id_gol.append(qid)
                         cnt_gol_ctx += 1
                         break
             else:
@@ -115,8 +115,8 @@ def evaluate_context(golden, preds, output_csv):
                 check_golden_in_context = None
             writer.writerow([qid, question, golden_ans, pred_ans, check, ans_norm, check_ans_norm, check_golden_in_context])
     # print("Yesno: ", yn)
-    total = 695
-    # total = 509 #direct
+    # total = 695
+    total = 509 #direct
     print("Golden in context: ", cnt_gol_ctx)
     print(f"WH true (raw): {count_check}/{total}")
     print("WH false: ", total-count_check)
@@ -131,29 +131,81 @@ def evaluate_context(golden, preds, output_csv):
     print("parallel_true: ", parallel_true)
     print("parallel_false: ", parallel_false)
     return list_id_gol
+
+def save_json(data, file_path):
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
+        
     
-    
-def main():
+def main():        
+    data_type1 = load_json("data_target_ans_type_old.json")
+    data_type2 = load_json("data\metadata_medhop.json")
     golden_path = os.path.join('data', 'all_answer_golden.json')
-    # pred_dir = os.path.join('medhop_results', 'all_ans')
-    pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\row14\medhop_results\all_ans"
+    pred_dir = os.path.join('medhop_results', 'all_ans')
+    # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\target_type new\row14\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\MAS\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\R23\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\row5\medhop_important_results\all_ans"
     # pred_dir = r"E:\UETQuintet\medhop_important_results\all_ans"
+    
     output_csv = f'evaluate/run/{run}medhop_eval_result.csv'
-    golden = load_golden(golden_path)
-    preds = load_predictions(pred_dir, set(golden.keys()))
-    list_id_gol_2 = evaluate_context(golden, preds, output_csv)
-    
-    # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\row2-3\medhop_important_results\all_ans"
+    # golden = load_json(golden_path)
     # preds = load_predictions(pred_dir, set(golden.keys()))
-    # list_id_gol_1 = evaluate_context(golden, preds, output_csv)
-    
+    # list_id_gol_2 = evaluate_context(golden, preds, output_csv)
+
+    # pred_dir_1 = r"E:\analysis_output\2026\code - cu -29.1\wh\row14\medhop_results\all_ans"
+    # preds_1 = load_predictions(pred_dir_1, set(golden.keys()))
+    # list_id_gol_1 = evaluate_context(golden, preds_1, output_csv)
+
     # tmp = list(set(list_id_gol_1) - set(list_id_gol_2))
     # print(len(tmp))
     # print(tmp)
-    print(f"Evaluation complete. Results saved to {output_csv}")
+    # print(f"Evaluation complete. Results saved to {output_csv}")
+        
+    golden = load_json(golden_path)
+    preds = load_predictions(pred_dir, set(golden.keys()))
+    list_id_gol_2 = evaluate_context(golden, preds, output_csv)
+
+    pred_dir_1 = r"E:\analysis_output\2026\code - cu -29.1\wh\row15\all_ans"
+    preds_1 = load_predictions(pred_dir_1, set(golden.keys()))
+    list_id_gol_1 = evaluate_context(golden, preds_1, output_csv)
+
+
+    # In ra số lượng và danh sách các phần tử khác biệt hoàn toàn giữa hai list
+    diff = list(set(list_id_gol_1) ^ set(list_id_gol_2))
+    print(f"Số lượng phần tử khác biệt hoàn toàn giữa hai list: {len(diff)}")
+    print("Danh sách các phần tử khác biệt hoàn toàn:")
+    print(diff)
+
+    tmp = list(set(list_id_gol_1) - set(list_id_gol_2))
+    print(len(tmp))
+    print(tmp)
+    # print(f"Evaluation complete. Results saved to {output_csv}")
+
+    # Xuất file so sánh list_id_gol_1 và list_id_gol_2
+    compare_csv = f'evaluate/run/{run}medhop_eval_compare.csv'
+    with open(compare_csv, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['qidx', 'question', 'golden','target1', 'ans_1', 'norm_ans_1', 'check_norm_1', 'target2', 'ans_2', 'norm_ans_2', 'check_norm_2', 'target'])
+        for qid in set(list_id_gol_1).union(set(list_id_gol_2)):
+            if qid not in diff:
+                continue
+            question = preds_1.get(qid, {}).get('question', '')
+            golden_ans = golden[qid]["True"]
+            ans_1 = preds_1.get(qid, {}).get('ans', '')
+            norm_ans_1 = postprocessing(ans_1) if ans_1 else ''
+            check_norm_1 = norm_ans_1 in golden_ans
+            target1 = data_type1[qid]['target_answer_type']
+            ans_2 = preds.get(qid, {}).get('ans', '')
+            norm_ans_2 = postprocessing(ans_2) if ans_2 else ''
+            check_norm_2 = norm_ans_2 in golden_ans
+            target2 = data_type2[qid]['target_answer_type']
+            if check_norm_1 and check_norm_2 is False and target1 != target2:
+                target = target1
+                cache_class[qid]['target_answer_type'] = target
+                writer.writerow([qid, question, golden_ans, target1, ans_1, norm_ans_1, check_norm_1, target2, ans_2, norm_ans_2, check_norm_2, target])
+    print(f"Comparison CSV saved to {compare_csv}")
+    save_json(cache_class, "data/metadata_medhop.json")
 
 if __name__ == '__main__':
     main()
