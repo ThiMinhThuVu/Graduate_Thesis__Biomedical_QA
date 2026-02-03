@@ -116,6 +116,7 @@ def evaluate_context(golden, preds, output_csv):
             writer.writerow([qid, question, golden_ans, pred_ans, check, ans_norm, check_ans_norm, check_golden_in_context])
     # print("Yesno: ", yn)
     total = 696
+    # total = 509 #direct
     print("Golden in context: ", cnt_gol_ctx)
     print(f"WH true (raw): {count_check}/{total}")
     print("WH false: ", total-count_check)
@@ -134,8 +135,8 @@ def evaluate_context(golden, preds, output_csv):
     
 def main():
     golden_path = os.path.join('data', 'all_answer_golden.json')
-    pred_dir = os.path.join('medhop_results', 'all_ans')
-    # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\codenew\row23\medhop_results\all_ans"
+    # pred_dir = os.path.join('medhop_results', 'all_ans')
+    pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\row14\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\MAS\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\R23\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\row5\medhop_important_results\all_ans"

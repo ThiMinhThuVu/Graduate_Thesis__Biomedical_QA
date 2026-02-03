@@ -217,7 +217,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         normalized_answer = _generate_answer(subquestion, search_kw_subq_retrieval, extracted_entities, current_retrieval, dataset, type_q, target_answer_type,
                                                             using_target_type, using_gen_old, has_extract_ner)
                         current_short = normalized_answer['short_answer']
-                        
+                        print(f"[MCQ] short ans lần {idx_del}: ", current_short)
                         # # Normalize if needed
                         # if settings['normalize'] and norm_rules.get("needs_normalization", True):
                         #     normalized_answer = normalize_answer_with_wikipedia(
@@ -418,7 +418,6 @@ if __name__ == "__main__":
     #     preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, using_target_type=False)
         
     # model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)
-    class_q = load_json("classification_result.json")
     
     settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
@@ -429,12 +428,12 @@ if __name__ == "__main__":
     if dataset == "medhop":
         settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
         settings['normalize'] = True
-        
-    check_yn = load_json("data_target_ans_type.json")    
+          
     #EDIT CONFIG VERSION NER
     load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
     # ner_version = 4
     ner_version = "#3"
+    metadata = load_json('data/metadata_medhop.json')
     
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
@@ -442,15 +441,14 @@ if __name__ == "__main__":
         
         qidx = sample['QIDX']
         question = sample['Question']
-        
-        target_ans_type = check_yn[qidx]['target_answer_type']
-        if target_ans_type == 'correctness':
+        target_ans_type = metadata[qidx]['target_answer_type']
+        check_yn = target_ans_type == 'correctness'
+        if check_yn:
             continue
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
-        type_q = class_q[qidx]['type_q']
-        #classification cu:
-        # type_q = class_q[sample['QIDX']]['is_sequence']        
+        type_q = metadata[qidx]['type_q']        
+              
         sample['type_q'] = type_q        
         if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False
@@ -465,6 +463,7 @@ if __name__ == "__main__":
             question_type_to_ner = question_type_to_ner_4
         elif ner_version == "#3":
             question_type_to_ner = {} # để tất cả các type trả về là ["DISEASE", "CHEMICAL"]   
+            
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
             using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False,
             target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner)
