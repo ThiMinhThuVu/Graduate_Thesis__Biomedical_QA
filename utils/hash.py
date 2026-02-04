@@ -34,6 +34,7 @@ def register_query_cache(query: str, cache_index: dict) -> str:
 
 if __name__ == "__main__":
     query = "chromosome location gene responsible Carpenter syndrome MEGF8, RAB23"
+    cache_file = r"data\cache\hash_id copy.json"
     cache_index = {}
     cache_file, cache_index = register_query_cache(query, cache_index)
 

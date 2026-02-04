@@ -2,7 +2,7 @@ import requests
 import time
 import json
 
-from src.api_key import API_LIST_4O, API_LIST_O3, API_KEY_GG, API_KEY_serp, API_search_scraperapi,API_LIST_4_1_mini
+from src.api_key import API_LIST_4O_mini, API_LIST_O3_mini,API_LIST_4_1_mini, API_SEARCH_GG, API_SEARCH_1
 
 API_URL = "https://cf.mnapi.com/v1/chat/completions"  
 
@@ -14,10 +14,10 @@ def request_api(messages, model, temperature=0):
     retry_delay = 10
     
     if model == "gpt-4o-mini":
-        API_LIST = API_LIST_4O
+        API_LIST = API_LIST_4O_mini
         max_tokens = 4096
     elif model == "o3-mini":
-        API_LIST = API_LIST_O3
+        API_LIST = API_LIST_O3_mini
         max_tokens = 8192
     elif model == "gpt-4.1-mini":
         API_LIST = API_LIST_4_1_mini
@@ -76,7 +76,7 @@ def search_google(query):
                 'https://api.search1api.com/search',
                 headers={
                     'Content-Type': 'application/json',
-                    'Authorization': API_KEY_GG 
+                    'Authorization': API_SEARCH_1 
                 },
                 json={
                     "query": query,
@@ -101,180 +101,6 @@ def search_google(query):
             else:
                 raise e  
 
-def serpshot_search_google(query):
-    url = "https://api.serpshot.com/api/search/google"
-    headers = {
-        "Content-Type": "application/json",
-        "X-API-Key": "a631791792b638a6cf7382b9c947c167"
-    }
-
-    payload = {
-        "queries": [query],
-        "type": "search",
-        "lr": "en",
-        "gl": "us", #us
-        "hl": "en",
-        "location": None,
-        "num": 10,
-        "page": 1
-    }
-
-    response = requests.post(url, headers=headers, data=json.dumps(payload))
-    print(response)
-    data = response.json().get('data')
-    if data and isinstance(data, list) and len(data) > 0:
-        return data[0].get('results', [])
-    else:
-        return []
-
-
-def serper_search_google(query):
-    url = "https://google.serper.dev/search"
-
-    payload = {
-        "q": query,
-        "gl": 'us'
-    }
-    headers = {
-    'X-API-KEY': '2a07151d86520e144f999ea39bad7ba10bff8d82',
-    'Content-Type': 'application/json'
-    }
-
-    response = requests.request("POST", url, headers=headers, json=payload)
-    data = response.json().get('organic', {})
-    # print(data)
-    return data
-
-from serpapi import GoogleSearch
-
-def serapi_search_google(
-    query: str,
-    num_results: int = 10,
-    language: str = "en",
-    country: str = "us"
-):
-    """
-    Search Google using SerpAPI.
-
-    Args:
-        query (str): Search query
-        api_key (str): SerpAPI API key
-        num_results (int): Number of results to return
-        language (str): Language code (default: en)
-        country (str): Country code (default: us)
-
-    Returns:
-        list[dict]: Search results (title, snippet, link)
-    """
-
-    params = {
-        "engine": "google",
-        "q": query,
-        "api_key": API_KEY_serp,
-        "hl": language,
-        "gl": country,
-        "num": num_results
-    }
-
-    search = GoogleSearch(params)
-    results = search.get_dict()
-
-    output = []
-    for item in results.get("organic_results", []):
-        output.append({
-            "title": item.get("title"),
-            "snippet": item.get("snippet"),
-            "link": item.get("link")
-        })
-
-    return output
-
-import http.client
-import json as _json
-from urllib.parse import urlencode
-
-conn = http.client.HTTPSConnection("scraperapi.thordata.com")
-
-def check_quota(token):
-    conn_quota = http.client.HTTPSConnection("openapi.thordata.com")
-    # conn_quota = conn
-
-    params = urlencode({
-        "token": token
-    })
-
-    url = f"/api/account/traffic-balance?{params}"
-
-    try:
-        conn_quota.request("GET", url)
-        res = conn_quota.getresponse()
-
-        raw = res.read().decode("utf-8")
-        data = json.loads(raw)
-
-        print("Quota response:", data)
-
-        # ❌ API error
-        if data.get("code") != 200:
-            print("HẾT QUOTA (API error)")
-            return None
-
-        traffic_balance = data["data"].get("traffic_balance", 0)
-
-        # ❌ hết quota
-        if traffic_balance <= 0:
-            print("HẾT QUOTA")
-            return None
-
-        # ✅ còn quota
-        return traffic_balance
-
-    except Exception as e:
-        print("check_quota error:", e)
-        return None
-    
-def scraperapi_search(query):
-# def search_google(query):  
-    # quota = check_quota(
-    #     token="df4c4fe804601e2bb3cde722163bfd08"
-    # )
-
-    # if quota is None:
-    #     return None 
-      
-    params = {
-        "engine": "google",
-        "q": query,
-        "json": "1"
-    }
-    payload = urlencode(params)
-
-    headers = {
-        'Authorization': f'Bearer {API_search_scraperapi}',
-        'Content-Type': 'application/x-www-form-urlencoded'
-    }
-    
-    try:
-        conn.request("POST", "/request", payload, headers)
-        res = conn.getresponse()
-        # print("status: ", res.status)
-        if res.status in (401, 403):
-            print("API key không hợp lệ hoặc đã hết hạn (status:", res.status, ")")
-            return None
-        data = res.read()
-        data = _json.loads(data.decode("utf-8"))
-        output = []
-        for item in data.get('organic', []):
-            output.append({
-                "title": item.get('title', ''),
-                'link': item.get('link', ''),
-                'snippet': item.get('description', '')
-            })
-        return output
-    except Exception as e:
-        print("search_google error:", e)
-        return 
-
 def save_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
@@ -284,6 +110,5 @@ if __name__ == "__main__":
     # save_json(serpshot_search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?"), "f2.json")
     # save_json(search_google("growth-delay syndrome mutations gene"), "f2.json")
     print("=========================")
-    print(search_google("chromosome gene encodes enzyme converting adenosine to inosine ADAR gene"))
-    question = "Where did that person graduate from?"
+    save_json(search_google("flea Yersinia pestis transmission human bite"), 'search1.json')
     

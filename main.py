@@ -440,7 +440,7 @@ if __name__ == "__main__":
     if dataset == "medhop":
         settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
         settings['normalize'] = True
-          
+        
     #EDIT CONFIG VERSION NER
     load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
     # ner_version = 4
@@ -449,6 +449,10 @@ if __name__ == "__main__":
     model_mcq_name = "o3-mini" #"gpt-4.1-mini" #o3-mini
     mcq_add_no_ans = False # True #False
     
+    
+    list_id = ['809641', '453449', '551819', '821517', '575067', '649859', '583649', '547846', '170150', '212619',
+               '849629', '260422', '442535', '188198', '924584', '892125', '405530', '716881', '203782']
+    
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
@@ -456,7 +460,7 @@ if __name__ == "__main__":
         qidx = sample['QIDX']
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
-        
+       
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'
         if check_yn:
@@ -466,8 +470,8 @@ if __name__ == "__main__":
         type_q = metadata[qidx]['type_q']    
         
         #CONFIG    
-        if type_q != "direct":
-            continue
+        # if type_q != "direct":
+        #     continue
               
         sample['type_q'] = type_q        
         if type_q in ['direct', 'parallel', 'comparison']:
