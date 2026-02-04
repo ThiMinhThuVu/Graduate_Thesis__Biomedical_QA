@@ -274,7 +274,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                             "retrieval_information": "",
                             "full_data": normalized_answer_no_ans # Lưu lại để dùng sau khi chọn
                         })
-                            
+                                                
                     # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES ---
                     if len(candidates) > 1:
                         # Build context cho Multiple Choice
