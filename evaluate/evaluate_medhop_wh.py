@@ -140,13 +140,13 @@ def save_json(data, file_path):
 def main():        
     data_type1 = load_json("data_target_ans_type_old.json")
     data_type2 = load_json("data\metadata_medhop.json")
-    golden_path = os.path.join('data', 'all_answer_golden.json')
-    # golden_path = os.path.join('data', 'all_answer_golden_61.json')
+    # golden_path = os.path.join('data', 'all_answer_golden.json')
+    golden_path = os.path.join('data', 'all_answer_golden_61.json')
     # pred_dir = os.path.join('medhop_results', 'all_ans')
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\target_type new\row14\all_ans"
-    pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\row14\medhop_results\all_ans"
+    # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\row14\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\R23\medhop_results\all_ans"
-    # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\row5\medhop_important_results\all_ans"
+    pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\target_type new\target2\row15\all_ans"
     # pred_dir = r"E:\UETQuintet\medhop_important_results\all_ans"
     
     output_csv = f'evaluate/run/{run}medhop_eval_result.csv'

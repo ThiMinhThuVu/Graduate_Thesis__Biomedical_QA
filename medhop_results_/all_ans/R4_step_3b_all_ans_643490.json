@@ -1,0 +1,54 @@
+{
+    "QIDX": "643490",
+    "original_question": "Which types of limb-girdle muscular dystrophy might show decreased dystrophin levels on immunohistochemical testing, despite lacking mutations in the dystrophin gene?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which types of limb-girdle muscular dystrophy might show decreased dystrophin levels on immunohistochemical testing, despite lacking mutations in the dystrophin gene?",
+            "search_keyword": "limb-girdle muscular dystrophy decreased dystrophin levels immunohistochemical testing",
+            "key_entity": [],
+            "short_answer": "sarcoglycanopathies",
+            "long_answer": "Sarcoglycanopathies, which are forms of limb‐girdle muscular dystrophy caused by mutations in one of the sarcoglycan genes (such as LGMD2C, LGMD2D, LGMD2E, and LGMD2F), may show decreased dystrophin levels on immunohistochemical testing. Even though the dystrophin gene itself is not mutated in these cases, disruption of the sarcoglycan complex can lead to secondary reductions in dystrophin expression. This immunohistochemical finding can therefore be observed as a helpful diagnostic clue in sarcoglycan-deficient forms of LGMD.",
+            "retrieval_information": "- Limb-girdle muscular dystrophy: an immunohistochemical diagnostic ... by EA Comerlato · 2005 · Cited by 20 — The limb-girdle muscle dystrophy (LGMD) represents a heterogeneous group of muscular diseases with dominant and recessive inheritance, individualized by gene ...\n- The Limb–Girdle Muscular Dystrophies - PubMed Central - NIH by ML Chu · 2018 · Cited by 83 — Immunohistochemical analysis of injected muscle biopsy specimens performed 30 days later showed γ-sarcoglycan expression in all three patients who received the ...\n- Expert Consensus on Genetic Diagnostic Approaches for Patients ... by V Straub · 2025 — Limb-girdle muscular dystrophy (LGMD) is the phenotypic description of a clinically and genetically diverse group of inherited neuromuscular ...\n- (PDF) Limb-girdle muscular dystrophy 9 Aug 2025 — All the patients had normal ID for dystrophin (rod domain, carboxyl and amine terminal). The alpha-SG was normal in 42 patients, beta-SG in 28, ...\n- Prognostic factors in mild dystrophinopathies by C Angelini · 1996 · Cited by 67 — We observed a significantly lower level of dystrophin and immunohistochemical score (p < 0.05 vs. the other courses) in patients with rapid course. Deletion or ...\n\n- Limb–girdle muscular dystrophy Immunohistochemical dystrophin tests can indicate a decrease in dystrophin detected in sarcoglycanopathies. In terms of sarcoglycan deficiency, there can be ...\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which types of limb-girdle muscular dystrophy might show decreased dystrophin levels on immunohistochemical testing, despite lacking mutations in the dystrophin gene?",
+                "search_keyword": "limb-girdle muscular dystrophy decreased dystrophin levels immunohistochemical testing",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "sarcoglycanopathies",
+                "long_answer": "Sarcoglycanopathies, which are forms of limb‐girdle muscular dystrophy caused by mutations in one of the sarcoglycan genes (such as LGMD2C, LGMD2D, LGMD2E, and LGMD2F), may show decreased dystrophin levels on immunohistochemical testing. Even though the dystrophin gene itself is not mutated in these cases, disruption of the sarcoglycan complex can lead to secondary reductions in dystrophin expression. This immunohistochemical finding can therefore be observed as a helpful diagnostic clue in sarcoglycan-deficient forms of LGMD.",
+                "candidate": [
+                    {
+                        "short_answer": "sarcoglycanopathies",
+                        "long_answer": "Sarcoglycanopathies, which are forms of limb‐girdle muscular dystrophy caused by mutations in one of the sarcoglycan genes (such as LGMD2C, LGMD2D, LGMD2E, and LGMD2F), may show decreased dystrophin levels on immunohistochemical testing. Even though the dystrophin gene itself is not mutated in these cases, disruption of the sarcoglycan complex can lead to secondary reductions in dystrophin expression. This immunohistochemical finding can therefore be observed as a helpful diagnostic clue in sarcoglycan-deficient forms of LGMD.",
+                        "retrieval_information": "- Limb-girdle muscular dystrophy: an immunohistochemical diagnostic ... by EA Comerlato · 2005 · Cited by 20 — The limb-girdle muscle dystrophy (LGMD) represents a heterogeneous group of muscular diseases with dominant and recessive inheritance, individualized by gene ...\n- The Limb–Girdle Muscular Dystrophies - PubMed Central - NIH by ML Chu · 2018 · Cited by 83 — Immunohistochemical analysis of injected muscle biopsy specimens performed 30 days later showed γ-sarcoglycan expression in all three patients who received the ...\n- Expert Consensus on Genetic Diagnostic Approaches for Patients ... by V Straub · 2025 — Limb-girdle muscular dystrophy (LGMD) is the phenotypic description of a clinically and genetically diverse group of inherited neuromuscular ...\n- (PDF) Limb-girdle muscular dystrophy 9 Aug 2025 — All the patients had normal ID for dystrophin (rod domain, carboxyl and amine terminal). The alpha-SG was normal in 42 patients, beta-SG in 28, ...\n- Prognostic factors in mild dystrophinopathies by C Angelini · 1996 · Cited by 67 — We observed a significantly lower level of dystrophin and immunohistochemical score (p < 0.05 vs. the other courses) in patients with rapid course. Deletion or ...\n\n- Limb–girdle muscular dystrophy Immunohistochemical dystrophin tests can indicate a decrease in dystrophin detected in sarcoglycanopathies. In terms of sarcoglycan deficiency, there can be ...\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Sarcoglycanopathies, which are forms of limb‐girdle muscular dystrophy caused by mutations in one of the sarcoglycan genes (such as LGMD2C, LGMD2D, LGMD2E, and LGMD2F), may show decreased dystrophin levels on immunohistochemical testing. Even though the dystrophin gene itself is not mutated in these cases, disruption of the sarcoglycan complex can lead to secondary reductions in dystrophin expression. This immunohistochemical finding can therefore be observed as a helpful diagnostic clue in sarcoglycan-deficient forms of LGMD.",
+                            "short_answer": "sarcoglycanopathies"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Limb-girdle muscular dystrophy: an immunohistochemical diagnostic ... by EA Comerlato · 2005 · Cited by 20 — The limb-girdle muscle dystrophy (LGMD) represents a heterogeneous group of muscular diseases with dominant and recessive inheritance, individualized by gene ...\n- The Limb–Girdle Muscular Dystrophies - PubMed Central - NIH by ML Chu · 2018 · Cited by 83 — Immunohistochemical analysis of injected muscle biopsy specimens performed 30 days later showed γ-sarcoglycan expression in all three patients who received the ...\n- Expert Consensus on Genetic Diagnostic Approaches for Patients ... by V Straub · 2025 — Limb-girdle muscular dystrophy (LGMD) is the phenotypic description of a clinically and genetically diverse group of inherited neuromuscular ...\n- (PDF) Limb-girdle muscular dystrophy 9 Aug 2025 — All the patients had normal ID for dystrophin (rod domain, carboxyl and amine terminal). The alpha-SG was normal in 42 patients, beta-SG in 28, ...\n- Prognostic factors in mild dystrophinopathies by C Angelini · 1996 · Cited by 67 — We observed a significantly lower level of dystrophin and immunohistochemical score (p < 0.05 vs. the other courses) in patients with rapid course. Deletion or ...\n\n- Limb–girdle muscular dystrophy Immunohistochemical dystrophin tests can indicate a decrease in dystrophin detected in sarcoglycanopathies. In terms of sarcoglycan deficiency, there can be ...\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Sarcoglycanopathies, which are forms of limb‐girdle muscular dystrophy caused by mutations in one of the sarcoglycan genes (such as LGMD2C, LGMD2D, LGMD2E, and LGMD2F), may show decreased dystrophin levels on immunohistochemical testing. Even though the dystrophin gene itself is not mutated in these cases, disruption of the sarcoglycan complex can lead to secondary reductions in dystrophin expression. This immunohistochemical finding can therefore be observed as a helpful diagnostic clue in sarcoglycan-deficient forms of LGMD.",
+        "short_answer": "sarcoglycanopathies",
+        "retrieval_information": "- Limb-girdle muscular dystrophy: an immunohistochemical diagnostic ... by EA Comerlato · 2005 · Cited by 20 — The limb-girdle muscle dystrophy (LGMD) represents a heterogeneous group of muscular diseases with dominant and recessive inheritance, individualized by gene ...\n- The Limb–Girdle Muscular Dystrophies - PubMed Central - NIH by ML Chu · 2018 · Cited by 83 — Immunohistochemical analysis of injected muscle biopsy specimens performed 30 days later showed γ-sarcoglycan expression in all three patients who received the ...\n- Expert Consensus on Genetic Diagnostic Approaches for Patients ... by V Straub · 2025 — Limb-girdle muscular dystrophy (LGMD) is the phenotypic description of a clinically and genetically diverse group of inherited neuromuscular ...\n- (PDF) Limb-girdle muscular dystrophy 9 Aug 2025 — All the patients had normal ID for dystrophin (rod domain, carboxyl and amine terminal). The alpha-SG was normal in 42 patients, beta-SG in 28, ...\n- Prognostic factors in mild dystrophinopathies by C Angelini · 1996 · Cited by 67 — We observed a significantly lower level of dystrophin and immunohistochemical score (p < 0.05 vs. the other courses) in patients with rapid course. Deletion or ...\n\n- Limb–girdle muscular dystrophy Immunohistochemical dystrophin tests can indicate a decrease in dystrophin detected in sarcoglycanopathies. In terms of sarcoglycan deficiency, there can be ...\n\n- Wikipedia: "
+    }
+}

@@ -62,7 +62,7 @@ def load_model(dataset, configs, using_embedding_model=False):
 
 def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
             using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False,
-            target_ans_type=None, question_type_to_ner=None, model_mcq=None):
+            target_ans_type=None, question_type_to_ner=None, model_mcq=None, mcq_add_no_ans=False):
     
     sample_id = str(sample['QIDX']) 
     print("[ID]: ", sample_id)
@@ -263,6 +263,18 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                             current_retrieval = new_retrieval
                         idx_del += 1
                     
+                    if mcq_add_no_ans:
+                        normalized_answer_no_ans = {
+                                'short_answer': "No answer",
+                                'long_answer': "The remaining answer options are not appropriate."
+                            }
+                        candidates.append({
+                            "short_answer": "No answer",
+                            "long_answer": normalized_answer_no_ans["long_answer"],
+                            "retrieval_information": "",
+                            "full_data": normalized_answer_no_ans # Lưu lại để dùng sau khi chọn
+                        })
+                            
                     # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES ---
                     if len(candidates) > 1:
                         # Build context cho Multiple Choice
@@ -434,7 +446,9 @@ if __name__ == "__main__":
     # ner_version = 4
     ner_version = "#3"
     metadata = load_json('data/metadata_medhop.json')
-    model_mcq_name = "gpt-4.1-mini" #gpt-4o-mini
+    model_mcq_name = "o3-mini" #"gpt-4.1-mini" #o3-mini
+    mcq_add_no_ans = False # True #False
+    
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
@@ -442,12 +456,16 @@ if __name__ == "__main__":
         qidx = sample['QIDX']
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
+        
+        # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'
         if check_yn:
             continue
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
-        type_q = metadata[qidx]['type_q']        
+        type_q = metadata[qidx]['type_q']    
+        
+        #CONFIG    
         if type_q != "direct":
             continue
               
@@ -468,6 +486,7 @@ if __name__ == "__main__":
             
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
             using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False,
-            target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner,model_mcq=model_mcq_name)
+            target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner,model_mcq=model_mcq_name,
+            mcq_add_no_ans=mcq_add_no_ans)
         
         

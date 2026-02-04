@@ -1,0 +1,54 @@
+{
+    "QIDX": "516385",
+    "original_question": "Which lincosamide antibiotic is recommended for dual therapy in folliculitis decalvans?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which lincosamide antibiotic is recommended for dual therapy in folliculitis decalvans?",
+            "search_keyword": "lincosamide antibiotic dual therapy folliculitis decalvans",
+            "key_entity": [],
+            "short_answer": "clindamycin",
+            "long_answer": "Clindamycin is the lincosamide antibiotic recommended for dual therapy in folliculitis decalvans. This therapy typically involves the concomitant use of clindamycin with rifampicin, a regimen that has demonstrated significant improvements in clinical outcomes for patients with this condition. Clindamycin, a lincosamide, has strong activity against gram-positive bacteria and is widely used in managing skin and soft tissue infections, making it an ideal choice in the dual therapy approach.",
+            "retrieval_information": "- Combination Therapy with Clindamycin and Rifampicin for ... 8 Jul 2009 — In conclusion, these results suggest that the antibiotic combination of clindamycin and rifampicin significantly improves the clinical features ...\n- 2009 Combination Therapy with Clindamycin and Rifampicin for ... by G Gener · 2009 · Cited by 375 — Short clinical series have claimed the efficacy of the combination of systemic clindamycin and rifampicin in folliculitis decalvans [10] and, ...\n- Scientific Rationale and Clinical Basis for Clindamycin Use in the ... by MK Armillei · 2024 · Cited by 44 — Clindamycin is a highly effective antibiotic of the lincosamide class. It has been widely used for decades to treat a range of skin and soft tissue infections ...\n- Long-term clinical safety of clindamycin and rifampicin ... 7 Aug 2025 — A combination therapy with clindamycin added should aim to limit rifampicin resistance and it is recommended rather than monotherapy [50] . ...\n- Updates in therapeutics for folliculitis decalvans: A systematic review with ... by PH Rambhia · 2018 · Cited by 76 — Combination of clindamycin and rifampicin was the most commonly used treatment in reviewed studies. However, based on low quality of evidence, we are unable ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which lincosamide antibiotic is recommended for dual therapy in folliculitis decalvans?",
+                "search_keyword": "lincosamide antibiotic dual therapy folliculitis decalvans",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "clindamycin",
+                "long_answer": "Clindamycin is the lincosamide antibiotic recommended for dual therapy in folliculitis decalvans. This therapy typically involves the concomitant use of clindamycin with rifampicin, a regimen that has demonstrated significant improvements in clinical outcomes for patients with this condition. Clindamycin, a lincosamide, has strong activity against gram-positive bacteria and is widely used in managing skin and soft tissue infections, making it an ideal choice in the dual therapy approach.",
+                "candidate": [
+                    {
+                        "short_answer": "clindamycin",
+                        "long_answer": "Clindamycin is the lincosamide antibiotic recommended for dual therapy in folliculitis decalvans. This therapy typically involves the concomitant use of clindamycin with rifampicin, a regimen that has demonstrated significant improvements in clinical outcomes for patients with this condition. Clindamycin, a lincosamide, has strong activity against gram-positive bacteria and is widely used in managing skin and soft tissue infections, making it an ideal choice in the dual therapy approach.",
+                        "retrieval_information": "- Combination Therapy with Clindamycin and Rifampicin for ... 8 Jul 2009 — In conclusion, these results suggest that the antibiotic combination of clindamycin and rifampicin significantly improves the clinical features ...\n- 2009 Combination Therapy with Clindamycin and Rifampicin for ... by G Gener · 2009 · Cited by 375 — Short clinical series have claimed the efficacy of the combination of systemic clindamycin and rifampicin in folliculitis decalvans [10] and, ...\n- Scientific Rationale and Clinical Basis for Clindamycin Use in the ... by MK Armillei · 2024 · Cited by 44 — Clindamycin is a highly effective antibiotic of the lincosamide class. It has been widely used for decades to treat a range of skin and soft tissue infections ...\n- Long-term clinical safety of clindamycin and rifampicin ... 7 Aug 2025 — A combination therapy with clindamycin added should aim to limit rifampicin resistance and it is recommended rather than monotherapy [50] . ...\n- Updates in therapeutics for folliculitis decalvans: A systematic review with ... by PH Rambhia · 2018 · Cited by 76 — Combination of clindamycin and rifampicin was the most commonly used treatment in reviewed studies. However, based on low quality of evidence, we are unable ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Clindamycin is the lincosamide antibiotic recommended for dual therapy in folliculitis decalvans. This therapy typically involves the concomitant use of clindamycin with rifampicin, a regimen that has demonstrated significant improvements in clinical outcomes for patients with this condition. Clindamycin, a lincosamide, has strong activity against gram-positive bacteria and is widely used in managing skin and soft tissue infections, making it an ideal choice in the dual therapy approach.",
+                            "short_answer": "clindamycin"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Combination Therapy with Clindamycin and Rifampicin for ... 8 Jul 2009 — In conclusion, these results suggest that the antibiotic combination of clindamycin and rifampicin significantly improves the clinical features ...\n- 2009 Combination Therapy with Clindamycin and Rifampicin for ... by G Gener · 2009 · Cited by 375 — Short clinical series have claimed the efficacy of the combination of systemic clindamycin and rifampicin in folliculitis decalvans [10] and, ...\n- Scientific Rationale and Clinical Basis for Clindamycin Use in the ... by MK Armillei · 2024 · Cited by 44 — Clindamycin is a highly effective antibiotic of the lincosamide class. It has been widely used for decades to treat a range of skin and soft tissue infections ...\n- Long-term clinical safety of clindamycin and rifampicin ... 7 Aug 2025 — A combination therapy with clindamycin added should aim to limit rifampicin resistance and it is recommended rather than monotherapy [50] . ...\n- Updates in therapeutics for folliculitis decalvans: A systematic review with ... by PH Rambhia · 2018 · Cited by 76 — Combination of clindamycin and rifampicin was the most commonly used treatment in reviewed studies. However, based on low quality of evidence, we are unable ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Clindamycin is the lincosamide antibiotic recommended for dual therapy in folliculitis decalvans. This therapy typically involves the concomitant use of clindamycin with rifampicin, a regimen that has demonstrated significant improvements in clinical outcomes for patients with this condition. Clindamycin, a lincosamide, has strong activity against gram-positive bacteria and is widely used in managing skin and soft tissue infections, making it an ideal choice in the dual therapy approach.",
+        "short_answer": "clindamycin",
+        "retrieval_information": "- Combination Therapy with Clindamycin and Rifampicin for ... 8 Jul 2009 — In conclusion, these results suggest that the antibiotic combination of clindamycin and rifampicin significantly improves the clinical features ...\n- 2009 Combination Therapy with Clindamycin and Rifampicin for ... by G Gener · 2009 · Cited by 375 — Short clinical series have claimed the efficacy of the combination of systemic clindamycin and rifampicin in folliculitis decalvans [10] and, ...\n- Scientific Rationale and Clinical Basis for Clindamycin Use in the ... by MK Armillei · 2024 · Cited by 44 — Clindamycin is a highly effective antibiotic of the lincosamide class. It has been widely used for decades to treat a range of skin and soft tissue infections ...\n- Long-term clinical safety of clindamycin and rifampicin ... 7 Aug 2025 — A combination therapy with clindamycin added should aim to limit rifampicin resistance and it is recommended rather than monotherapy [50] . ...\n- Updates in therapeutics for folliculitis decalvans: A systematic review with ... by PH Rambhia · 2018 · Cited by 76 — Combination of clindamycin and rifampicin was the most commonly used treatment in reviewed studies. However, based on low quality of evidence, we are unable ...\n\n\n\n- Wikipedia: "
+    }
+}

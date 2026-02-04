@@ -1,0 +1,54 @@
+{
+    "QIDX": "230703",
+    "original_question": "Which antibiotic induces breaks at the fragile site in the q27.2 region found on the human X chromosome?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which antibiotic induces breaks at the fragile site in the q27.2 region found on the human X chromosome?",
+            "search_keyword": "antibiotic breaks fragile site q27.2 human X chromosome",
+            "key_entity": [],
+            "short_answer": "aphidicolin",
+            "long_answer": "The antibiotic aphidicolin is known to induce breaks at common fragile sites, including the region in band q27.2 on the human X chromosome. Aphidicolin is a fungal diterpene antibiotic that inhibits DNA polymerases involved in DNA replication. This inhibition can lead to replication stress and the expression of fragile sites, which makes it a useful tool in cytogenetic research for detecting these chromosomal breakpoints.",
+            "retrieval_information": "- Chromosomal Abnormalities in Child Psychiatric Patients by KEM Hong · 1999 · Cited by 12 — The common fragile site in band q27 of the human X chromosome is not coincident with the fragile. X. Clin Genet 1990; 37: 167-72. 11. Paris conference ...\n- Chromosomal Abnormalities in Child Psychiatric Patients The common fragile site in band q27 of the human X chromosome is not coincident with the fragile. X. Clin Genet 1990; 37: 167-72. 11. Paris conference ...\n- Fragile X chromosome and X-linked mental retardation The constriction or break at the q27 or q28 site on the X chromosome shows up more frequently in this medium, which contains less folic acid than usual.'5 ...\n- Mark Wildhagen - RePub, Erasmus University Repository by M Wildhagen · 1999 · Cited by 2 — The common fragile site in band q27 of the human X chromosome is not coincident with the fragile X. Clin Genet 1990;37(3):167-172. 84. Webb T, Bundey S ...\n- Distal Xq duplication and functional Xq disomy - PMC - PubMed Central by D Sanlaville · 2009 · Cited by 85 — Distal Xq duplications refer to chromosomal disorders resulting from involvement of the long arm of the X chromosome (Xq).\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which antibiotic induces breaks at the fragile site in the q27.2 region found on the human X chromosome?",
+                "search_keyword": "antibiotic breaks fragile site q27.2 human X chromosome",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "aphidicolin",
+                "long_answer": "The antibiotic aphidicolin is known to induce breaks at common fragile sites, including the region in band q27.2 on the human X chromosome. Aphidicolin is a fungal diterpene antibiotic that inhibits DNA polymerases involved in DNA replication. This inhibition can lead to replication stress and the expression of fragile sites, which makes it a useful tool in cytogenetic research for detecting these chromosomal breakpoints.",
+                "candidate": [
+                    {
+                        "short_answer": "aphidicolin",
+                        "long_answer": "The antibiotic aphidicolin is known to induce breaks at common fragile sites, including the region in band q27.2 on the human X chromosome. Aphidicolin is a fungal diterpene antibiotic that inhibits DNA polymerases involved in DNA replication. This inhibition can lead to replication stress and the expression of fragile sites, which makes it a useful tool in cytogenetic research for detecting these chromosomal breakpoints.",
+                        "retrieval_information": "- Chromosomal Abnormalities in Child Psychiatric Patients by KEM Hong · 1999 · Cited by 12 — The common fragile site in band q27 of the human X chromosome is not coincident with the fragile. X. Clin Genet 1990; 37: 167-72. 11. Paris conference ...\n- Chromosomal Abnormalities in Child Psychiatric Patients The common fragile site in band q27 of the human X chromosome is not coincident with the fragile. X. Clin Genet 1990; 37: 167-72. 11. Paris conference ...\n- Fragile X chromosome and X-linked mental retardation The constriction or break at the q27 or q28 site on the X chromosome shows up more frequently in this medium, which contains less folic acid than usual.'5 ...\n- Mark Wildhagen - RePub, Erasmus University Repository by M Wildhagen · 1999 · Cited by 2 — The common fragile site in band q27 of the human X chromosome is not coincident with the fragile X. Clin Genet 1990;37(3):167-172. 84. Webb T, Bundey S ...\n- Distal Xq duplication and functional Xq disomy - PMC - PubMed Central by D Sanlaville · 2009 · Cited by 85 — Distal Xq duplications refer to chromosomal disorders resulting from involvement of the long arm of the X chromosome (Xq).\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "The antibiotic aphidicolin is known to induce breaks at common fragile sites, including the region in band q27.2 on the human X chromosome. Aphidicolin is a fungal diterpene antibiotic that inhibits DNA polymerases involved in DNA replication. This inhibition can lead to replication stress and the expression of fragile sites, which makes it a useful tool in cytogenetic research for detecting these chromosomal breakpoints.",
+                            "short_answer": "aphidicolin"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Chromosomal Abnormalities in Child Psychiatric Patients by KEM Hong · 1999 · Cited by 12 — The common fragile site in band q27 of the human X chromosome is not coincident with the fragile. X. Clin Genet 1990; 37: 167-72. 11. Paris conference ...\n- Chromosomal Abnormalities in Child Psychiatric Patients The common fragile site in band q27 of the human X chromosome is not coincident with the fragile. X. Clin Genet 1990; 37: 167-72. 11. Paris conference ...\n- Fragile X chromosome and X-linked mental retardation The constriction or break at the q27 or q28 site on the X chromosome shows up more frequently in this medium, which contains less folic acid than usual.'5 ...\n- Mark Wildhagen - RePub, Erasmus University Repository by M Wildhagen · 1999 · Cited by 2 — The common fragile site in band q27 of the human X chromosome is not coincident with the fragile X. Clin Genet 1990;37(3):167-172. 84. Webb T, Bundey S ...\n- Distal Xq duplication and functional Xq disomy - PMC - PubMed Central by D Sanlaville · 2009 · Cited by 85 — Distal Xq duplications refer to chromosomal disorders resulting from involvement of the long arm of the X chromosome (Xq).\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The antibiotic aphidicolin is known to induce breaks at common fragile sites, including the region in band q27.2 on the human X chromosome. Aphidicolin is a fungal diterpene antibiotic that inhibits DNA polymerases involved in DNA replication. This inhibition can lead to replication stress and the expression of fragile sites, which makes it a useful tool in cytogenetic research for detecting these chromosomal breakpoints.",
+        "short_answer": "aphidicolin",
+        "retrieval_information": "- Chromosomal Abnormalities in Child Psychiatric Patients by KEM Hong · 1999 · Cited by 12 — The common fragile site in band q27 of the human X chromosome is not coincident with the fragile. X. Clin Genet 1990; 37: 167-72. 11. Paris conference ...\n- Chromosomal Abnormalities in Child Psychiatric Patients The common fragile site in band q27 of the human X chromosome is not coincident with the fragile. X. Clin Genet 1990; 37: 167-72. 11. Paris conference ...\n- Fragile X chromosome and X-linked mental retardation The constriction or break at the q27 or q28 site on the X chromosome shows up more frequently in this medium, which contains less folic acid than usual.'5 ...\n- Mark Wildhagen - RePub, Erasmus University Repository by M Wildhagen · 1999 · Cited by 2 — The common fragile site in band q27 of the human X chromosome is not coincident with the fragile X. Clin Genet 1990;37(3):167-172. 84. Webb T, Bundey S ...\n- Distal Xq duplication and functional Xq disomy - PMC - PubMed Central by D Sanlaville · 2009 · Cited by 85 — Distal Xq duplications refer to chromosomal disorders resulting from involvement of the long arm of the X chromosome (Xq).\n\n\n\n- Wikipedia: "
+    }
+}

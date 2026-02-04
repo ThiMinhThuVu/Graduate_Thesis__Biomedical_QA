@@ -1,0 +1,63 @@
+{
+    "QIDX": "252465",
+    "original_question": "What is the rare systemic infectious disease caused by the bacterium Tropheryma whipplei, characterized by malabsorption symptoms resembling those of celiac disease?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "What is the rare systemic infectious disease caused by the bacterium Tropheryma whipplei, characterized by malabsorption symptoms resembling those of celiac disease?",
+            "search_keyword": "rare systemic infectious disease Tropheryma whipplei malabsorption celiac disease",
+            "key_entity": [],
+            "short_answer": "Whipple's disease",
+            "long_answer": "Whipple's disease is a rare, systemic infectious disease caused by the bacterium Tropheryma whipplei. It is characterized by malabsorption symptoms that can mimic celiac disease, along with a wide range of systemic manifestations such as weight loss, diarrhea, and joint pain. This condition primarily affects the small intestine, disrupting the normal absorption of nutrients, but it can also involve other organs, leading to a multisystemic clinical presentation.",
+            "retrieval_information": "- Whipple's Disease: A Rare Cause of Malabsorption Syndrome - PMC by J Cardoso · 2019 · Cited by 12 — Whipple's disease is a rare, chronic, systemic disease caused by the actinomycete Tropheryma whipplei. Clinical manifestations vary widely depending on the ...\n- Whipple disease diagnosed by enteroscopy: first case report in ... Whipple's disease is a rare systemic disease caused by a gram-positive bacillus called Tropheryma whipplei. First described in 1907 as an intestinal ...\n- Tropheryma whipplei - an overview Whipple's disease is a rare disorder caused by the actinomycete Tropheryma whippelii. Whipple's disease most commonly causes intestinal malabsorption but ...\n- Whipple Disease | Diagnosis & Disease Information 19 Jan 2026 — Whipple disease is a rare multisystemic infectious disease that can result from the bacteria Tropheryma whipplei. Although T whipplei is ...\n- Whipple's Disease: A Rare Cause of Malabsorption Syndrome | GE 20 Dec 2019 — Whipple's disease is a rare, chronic, systemic disease caused by the actinomycete Tropheryma whipplei. Clinical manifestations vary widely depending on the ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "What is the rare systemic infectious disease caused by the bacterium Tropheryma whipplei, characterized by malabsorption symptoms resembling those of celiac disease?",
+                "search_keyword": "rare systemic infectious disease Tropheryma whipplei malabsorption celiac disease",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "Whipple's disease",
+                "long_answer": "Whipple's disease is a rare, systemic infectious disease caused by the bacterium Tropheryma whipplei. It is characterized by malabsorption symptoms that can mimic celiac disease, along with a wide range of systemic manifestations such as weight loss, diarrhea, and joint pain. This condition primarily affects the small intestine, disrupting the normal absorption of nutrients, but it can also involve other organs, leading to a multisystemic clinical presentation.",
+                "candidate": [
+                    {
+                        "short_answer": "Whipple's disease",
+                        "long_answer": "Whipple's disease is a rare, systemic infectious disease caused by the bacterium Tropheryma whipplei. It is characterized by malabsorption symptoms that can mimic celiac disease, along with a wide range of systemic manifestations such as weight loss, diarrhea, and joint pain. This condition primarily affects the small intestine, disrupting the normal absorption of nutrients, but it can also involve other organs, leading to a multisystemic clinical presentation.",
+                        "retrieval_information": "- Whipple's Disease: A Rare Cause of Malabsorption Syndrome - PMC by J Cardoso · 2019 · Cited by 12 — Whipple's disease is a rare, chronic, systemic disease caused by the actinomycete Tropheryma whipplei. Clinical manifestations vary widely depending on the ...\n- Whipple disease diagnosed by enteroscopy: first case report in ... Whipple's disease is a rare systemic disease caused by a gram-positive bacillus called Tropheryma whipplei. First described in 1907 as an intestinal ...\n- Tropheryma whipplei - an overview Whipple's disease is a rare disorder caused by the actinomycete Tropheryma whippelii. Whipple's disease most commonly causes intestinal malabsorption but ...\n- Whipple Disease | Diagnosis & Disease Information 19 Jan 2026 — Whipple disease is a rare multisystemic infectious disease that can result from the bacteria Tropheryma whipplei. Although T whipplei is ...\n- Whipple's Disease: A Rare Cause of Malabsorption Syndrome | GE 20 Dec 2019 — Whipple's disease is a rare, chronic, systemic disease caused by the actinomycete Tropheryma whipplei. Clinical manifestations vary widely depending on the ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Whipple's disease is a rare, systemic infectious disease caused by the bacterium Tropheryma whipplei. It is characterized by malabsorption symptoms that can mimic celiac disease, along with a wide range of systemic manifestations such as weight loss, diarrhea, and joint pain. This condition primarily affects the small intestine, disrupting the normal absorption of nutrients, but it can also involve other organs, leading to a multisystemic clinical presentation.",
+                            "short_answer": "Whipple's disease"
+                        }
+                    },
+                    {
+                        "short_answer": "Whipple disease",
+                        "long_answer": "Whipple disease is a rare, chronic, and multisystemic infectious disease caused by the bacterium Tropheryma whipplei. It primarily affects the gastrointestinal tract, leading to symptoms of malabsorption that can closely resemble those observed in celiac disease. In addition to gastrointestinal manifestations such as diarrhea, weight loss, and abdominal pain, the disease often presents with systemic symptoms like fever, arthritis, and in some cases, neurological and cardiac complications. Diagnosis typically involves a combination of clinical evaluation, histopathological examination of intestinal biopsies, and molecular techniques such as PCR to detect the presence of the bacterium. Due to its rarity and variability in presentation, early diagnosis is challenging but critical for effective management, which usually involves prolonged antibiotic therapy to eradicate the infection.",
+                        "retrieval_information": "- : A Rare Cause of Malabsorption Syndrome - PMC by J Cardoso · 2019 · Cited by 12 — is a rare, chronic, systemic disease caused by the actinomycete Tropheryma whipplei. Clinical manifestations vary widely depending on the ...\n- Whipple disease diagnosed by enteroscopy: first case report in ... is a rare systemic disease caused by a gram-positive bacillus called Tropheryma whipplei. First described in 1907 as an intestinal ...\n- Tropheryma whipplei - an overview is a rare disorder caused by the actinomycete Tropheryma whippelii. most commonly causes intestinal malabsorption but ...\n- Whipple Disease | Diagnosis & Disease Information 19 Jan 2026 — Whipple disease is a rare multisystemic infectious disease that can result from the bacteria Tropheryma whipplei. Although T whipplei is ...\n- : A Rare Cause of Malabsorption Syndrome | GE 20 Dec 2019 — is a rare, chronic, systemic disease caused by the actinomycete Tropheryma whipplei. Clinical manifestations vary widely depending on the ... - Wikipedia:",
+                        "full_data": {
+                            "long_answer": "Whipple disease is a rare, chronic, and multisystemic infectious disease caused by the bacterium Tropheryma whipplei. It primarily affects the gastrointestinal tract, leading to symptoms of malabsorption that can closely resemble those observed in celiac disease. In addition to gastrointestinal manifestations such as diarrhea, weight loss, and abdominal pain, the disease often presents with systemic symptoms like fever, arthritis, and in some cases, neurological and cardiac complications. Diagnosis typically involves a combination of clinical evaluation, histopathological examination of intestinal biopsies, and molecular techniques such as PCR to detect the presence of the bacterium. Due to its rarity and variability in presentation, early diagnosis is challenging but critical for effective management, which usually involves prolonged antibiotic therapy to eradicate the infection.",
+                            "short_answer": "Whipple disease"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Whipple's Disease: A Rare Cause of Malabsorption Syndrome - PMC by J Cardoso · 2019 · Cited by 12 — Whipple's disease is a rare, chronic, systemic disease caused by the actinomycete Tropheryma whipplei. Clinical manifestations vary widely depending on the ...\n- Whipple disease diagnosed by enteroscopy: first case report in ... Whipple's disease is a rare systemic disease caused by a gram-positive bacillus called Tropheryma whipplei. First described in 1907 as an intestinal ...\n- Tropheryma whipplei - an overview Whipple's disease is a rare disorder caused by the actinomycete Tropheryma whippelii. Whipple's disease most commonly causes intestinal malabsorption but ...\n- Whipple Disease | Diagnosis & Disease Information 19 Jan 2026 — Whipple disease is a rare multisystemic infectious disease that can result from the bacteria Tropheryma whipplei. Although T whipplei is ...\n- Whipple's Disease: A Rare Cause of Malabsorption Syndrome | GE 20 Dec 2019 — Whipple's disease is a rare, chronic, systemic disease caused by the actinomycete Tropheryma whipplei. Clinical manifestations vary widely depending on the ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Whipple's disease is a rare, systemic infectious disease caused by the bacterium Tropheryma whipplei. It is characterized by malabsorption symptoms that can mimic celiac disease, along with a wide range of systemic manifestations such as weight loss, diarrhea, and joint pain. This condition primarily affects the small intestine, disrupting the normal absorption of nutrients, but it can also involve other organs, leading to a multisystemic clinical presentation.",
+        "short_answer": "Whipple's disease",
+        "retrieval_information": "- Whipple's Disease: A Rare Cause of Malabsorption Syndrome - PMC by J Cardoso · 2019 · Cited by 12 — Whipple's disease is a rare, chronic, systemic disease caused by the actinomycete Tropheryma whipplei. Clinical manifestations vary widely depending on the ...\n- Whipple disease diagnosed by enteroscopy: first case report in ... Whipple's disease is a rare systemic disease caused by a gram-positive bacillus called Tropheryma whipplei. First described in 1907 as an intestinal ...\n- Tropheryma whipplei - an overview Whipple's disease is a rare disorder caused by the actinomycete Tropheryma whippelii. Whipple's disease most commonly causes intestinal malabsorption but ...\n- Whipple Disease | Diagnosis & Disease Information 19 Jan 2026 — Whipple disease is a rare multisystemic infectious disease that can result from the bacteria Tropheryma whipplei. Although T whipplei is ...\n- Whipple's Disease: A Rare Cause of Malabsorption Syndrome | GE 20 Dec 2019 — Whipple's disease is a rare, chronic, systemic disease caused by the actinomycete Tropheryma whipplei. Clinical manifestations vary widely depending on the ...\n\n\n\n- Wikipedia: "
+    }
+}

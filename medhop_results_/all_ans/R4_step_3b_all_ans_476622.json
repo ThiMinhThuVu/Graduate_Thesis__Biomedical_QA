@@ -1,0 +1,54 @@
+{
+    "QIDX": "476622",
+    "original_question": "What human disease, linked to lung issues and complications like fibrosing mediastinitis, is caused by a fungus found in excrement historically used as fertilizer?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "What human disease, linked to lung issues and complications like fibrosing mediastinitis, is caused by a fungus found in excrement historically used as fertilizer?",
+            "search_keyword": "human disease lung issues fibrosing mediastinitis fungus excrement fertilizer",
+            "key_entity": [],
+            "short_answer": "histoplasmosis",
+            "long_answer": "The disease is histoplasmosis. It is a pulmonary infection caused by Histoplasma capsulatum, a fungus often found in bird or bat droppings. Exposure to the fungus, which can reside in excrement historically used as fertilizer or found in areas used for agriculture and cave exploration, can result in symptoms ranging from mild respiratory issues to severe complications such as fibrosing mediastinitis. This condition involves an abnormal fibrotic response in the mediastinum, leading to compression or entrapment of surrounding structures.",
+            "retrieval_information": "- Disseminated histoplasmosis from western Mexico—rethinking our ... by R Sleightholm · 2024 · Cited by 2 — Most healthy individuals may not experience symptoms after exposure to Histoplasma, while others may develop mild to moderate pulmonary disease ...\n- Histoplasmosis 20 Dec 2023 — Fibrosing mediastinitis is a rare complication of pulmonary histoplasmosis that involves an exuberant fibrotic response leading to entrapment of ...\n- Histoplasmosis Fibrosing mediastinitis represents a fibrotic response to a prior episode of histoplasmosis [13]. Davis et al [14] recently updated the understanding of ...\n- Disseminated histoplasmosis from western Mexico—rethinking ... Histoplasmosis is often linked to excrement exposure from birds, chickens, or bats and is classically described after spelunking activities [ 23 ].\n- Histoplasmosis around the world: A global perspective on ... by P Gandhi · 2024 · Cited by 6 — This article highlights the global epidemiology, risk factors, microbiology and pathophysiological characteristics, pulmonary and extrapulmonary manifestations\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "What human disease, linked to lung issues and complications like fibrosing mediastinitis, is caused by a fungus found in excrement historically used as fertilizer?",
+                "search_keyword": "human disease lung issues fibrosing mediastinitis fungus excrement fertilizer",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "histoplasmosis",
+                "long_answer": "The disease is histoplasmosis. It is a pulmonary infection caused by Histoplasma capsulatum, a fungus often found in bird or bat droppings. Exposure to the fungus, which can reside in excrement historically used as fertilizer or found in areas used for agriculture and cave exploration, can result in symptoms ranging from mild respiratory issues to severe complications such as fibrosing mediastinitis. This condition involves an abnormal fibrotic response in the mediastinum, leading to compression or entrapment of surrounding structures.",
+                "candidate": [
+                    {
+                        "short_answer": "histoplasmosis",
+                        "long_answer": "The disease is histoplasmosis. It is a pulmonary infection caused by Histoplasma capsulatum, a fungus often found in bird or bat droppings. Exposure to the fungus, which can reside in excrement historically used as fertilizer or found in areas used for agriculture and cave exploration, can result in symptoms ranging from mild respiratory issues to severe complications such as fibrosing mediastinitis. This condition involves an abnormal fibrotic response in the mediastinum, leading to compression or entrapment of surrounding structures.",
+                        "retrieval_information": "- Disseminated histoplasmosis from western Mexico—rethinking our ... by R Sleightholm · 2024 · Cited by 2 — Most healthy individuals may not experience symptoms after exposure to Histoplasma, while others may develop mild to moderate pulmonary disease ...\n- Histoplasmosis 20 Dec 2023 — Fibrosing mediastinitis is a rare complication of pulmonary histoplasmosis that involves an exuberant fibrotic response leading to entrapment of ...\n- Histoplasmosis Fibrosing mediastinitis represents a fibrotic response to a prior episode of histoplasmosis [13]. Davis et al [14] recently updated the understanding of ...\n- Disseminated histoplasmosis from western Mexico—rethinking ... Histoplasmosis is often linked to excrement exposure from birds, chickens, or bats and is classically described after spelunking activities [ 23 ].\n- Histoplasmosis around the world: A global perspective on ... by P Gandhi · 2024 · Cited by 6 — This article highlights the global epidemiology, risk factors, microbiology and pathophysiological characteristics, pulmonary and extrapulmonary manifestations\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "The disease is histoplasmosis. It is a pulmonary infection caused by Histoplasma capsulatum, a fungus often found in bird or bat droppings. Exposure to the fungus, which can reside in excrement historically used as fertilizer or found in areas used for agriculture and cave exploration, can result in symptoms ranging from mild respiratory issues to severe complications such as fibrosing mediastinitis. This condition involves an abnormal fibrotic response in the mediastinum, leading to compression or entrapment of surrounding structures.",
+                            "short_answer": "histoplasmosis"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Disseminated histoplasmosis from western Mexico—rethinking our ... by R Sleightholm · 2024 · Cited by 2 — Most healthy individuals may not experience symptoms after exposure to Histoplasma, while others may develop mild to moderate pulmonary disease ...\n- Histoplasmosis 20 Dec 2023 — Fibrosing mediastinitis is a rare complication of pulmonary histoplasmosis that involves an exuberant fibrotic response leading to entrapment of ...\n- Histoplasmosis Fibrosing mediastinitis represents a fibrotic response to a prior episode of histoplasmosis [13]. Davis et al [14] recently updated the understanding of ...\n- Disseminated histoplasmosis from western Mexico—rethinking ... Histoplasmosis is often linked to excrement exposure from birds, chickens, or bats and is classically described after spelunking activities [ 23 ].\n- Histoplasmosis around the world: A global perspective on ... by P Gandhi · 2024 · Cited by 6 — This article highlights the global epidemiology, risk factors, microbiology and pathophysiological characteristics, pulmonary and extrapulmonary manifestations\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The disease is histoplasmosis. It is a pulmonary infection caused by Histoplasma capsulatum, a fungus often found in bird or bat droppings. Exposure to the fungus, which can reside in excrement historically used as fertilizer or found in areas used for agriculture and cave exploration, can result in symptoms ranging from mild respiratory issues to severe complications such as fibrosing mediastinitis. This condition involves an abnormal fibrotic response in the mediastinum, leading to compression or entrapment of surrounding structures.",
+        "short_answer": "histoplasmosis",
+        "retrieval_information": "- Disseminated histoplasmosis from western Mexico—rethinking our ... by R Sleightholm · 2024 · Cited by 2 — Most healthy individuals may not experience symptoms after exposure to Histoplasma, while others may develop mild to moderate pulmonary disease ...\n- Histoplasmosis 20 Dec 2023 — Fibrosing mediastinitis is a rare complication of pulmonary histoplasmosis that involves an exuberant fibrotic response leading to entrapment of ...\n- Histoplasmosis Fibrosing mediastinitis represents a fibrotic response to a prior episode of histoplasmosis [13]. Davis et al [14] recently updated the understanding of ...\n- Disseminated histoplasmosis from western Mexico—rethinking ... Histoplasmosis is often linked to excrement exposure from birds, chickens, or bats and is classically described after spelunking activities [ 23 ].\n- Histoplasmosis around the world: A global perspective on ... by P Gandhi · 2024 · Cited by 6 — This article highlights the global epidemiology, risk factors, microbiology and pathophysiological characteristics, pulmonary and extrapulmonary manifestations\n\n\n\n- Wikipedia: "
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "QIDX": "149439",
+    "original_question": "Which microaerophilic, gram-negative bacteria is responsible for the white lesion known as syphilitic leukoplakia?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which microaerophilic, gram-negative bacteria is responsible for the white lesion known as syphilitic leukoplakia?",
+            "search_keyword": "microaerophilic gram-negative bacteria syphilitic leukoplakia",
+            "key_entity": [],
+            "short_answer": "Treponema pallidum",
+            "long_answer": "Treponema pallidum is a microaerophilic, gram-negative spirochete responsible for syphilis, including manifestations such as syphilitic leukoplakia. This bacterium penetrates mucous membranes or abraded skin during sexual contact and can cause various local and systemic lesions. Syphilitic leukoplakia, a white lesion in the oral cavity, is one of the clinical presentations associated with this infection.",
+            "retrieval_information": "- Diagnosis of Lingual Atrophic Conditions: Associations with Local ... by M Erriu · 2016 · Cited by 51 — Helicobacter pylori (H. pylori) is a Gram-negative, microaerophilic bacterium identified among etiologic factors contributing to chronic gastritis and gastric ...\n- Bacterial, Viral, Fungal, and Other Infectious Conditions 3 Oct 2019 — An infection that occurs in any part of the body may manifest in the mouth, including mycobacterial, treponemal, and protozoal infections.\n- Diagnosis of Lingual Atrophic Conditions: Associations with Local ... by M Erriu · 2016 · Cited by 51 — Helicobacter pylori (H. pylori) is a Gram-negative, microaerophilic bacterium identified among etiologic factors contributing to chronic gastritis and gastric ...\n- Prosthetic rehabilitation of palatal perforation in a patient with 'syphilis 9 Aug 2025 — Syphilis is a sexually transmissible disease caused by treponema palladium, a microaerophilic spirochete. Syphilis may progress from primary ...\n- Infectious Diseases | Springer Nature Link (formerly SpringerLink) 23 Aug 2022 — This chapter deals with microorganisms, namely bacteria, viruses, fungi, and parasites and are responsible for a large number of infectious diseases in humans.\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which microaerophilic, gram-negative bacteria is responsible for the white lesion known as syphilitic leukoplakia?",
+                "search_keyword": "microaerophilic gram-negative bacteria syphilitic leukoplakia",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "Treponema pallidum",
+                "long_answer": "Treponema pallidum is a microaerophilic, gram-negative spirochete responsible for syphilis, including manifestations such as syphilitic leukoplakia. This bacterium penetrates mucous membranes or abraded skin during sexual contact and can cause various local and systemic lesions. Syphilitic leukoplakia, a white lesion in the oral cavity, is one of the clinical presentations associated with this infection.",
+                "candidate": [
+                    {
+                        "short_answer": "Treponema pallidum",
+                        "long_answer": "Treponema pallidum is a microaerophilic, gram-negative spirochete responsible for syphilis, including manifestations such as syphilitic leukoplakia. This bacterium penetrates mucous membranes or abraded skin during sexual contact and can cause various local and systemic lesions. Syphilitic leukoplakia, a white lesion in the oral cavity, is one of the clinical presentations associated with this infection.",
+                        "retrieval_information": "- Diagnosis of Lingual Atrophic Conditions: Associations with Local ... by M Erriu · 2016 · Cited by 51 — Helicobacter pylori (H. pylori) is a Gram-negative, microaerophilic bacterium identified among etiologic factors contributing to chronic gastritis and gastric ...\n- Bacterial, Viral, Fungal, and Other Infectious Conditions 3 Oct 2019 — An infection that occurs in any part of the body may manifest in the mouth, including mycobacterial, treponemal, and protozoal infections.\n- Diagnosis of Lingual Atrophic Conditions: Associations with Local ... by M Erriu · 2016 · Cited by 51 — Helicobacter pylori (H. pylori) is a Gram-negative, microaerophilic bacterium identified among etiologic factors contributing to chronic gastritis and gastric ...\n- Prosthetic rehabilitation of palatal perforation in a patient with 'syphilis 9 Aug 2025 — Syphilis is a sexually transmissible disease caused by treponema palladium, a microaerophilic spirochete. Syphilis may progress from primary ...\n- Infectious Diseases | Springer Nature Link (formerly SpringerLink) 23 Aug 2022 — This chapter deals with microorganisms, namely bacteria, viruses, fungi, and parasites and are responsible for a large number of infectious diseases in humans.\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Treponema pallidum is a microaerophilic, gram-negative spirochete responsible for syphilis, including manifestations such as syphilitic leukoplakia. This bacterium penetrates mucous membranes or abraded skin during sexual contact and can cause various local and systemic lesions. Syphilitic leukoplakia, a white lesion in the oral cavity, is one of the clinical presentations associated with this infection.",
+                            "short_answer": "Treponema pallidum"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Diagnosis of Lingual Atrophic Conditions: Associations with Local ... by M Erriu · 2016 · Cited by 51 — Helicobacter pylori (H. pylori) is a Gram-negative, microaerophilic bacterium identified among etiologic factors contributing to chronic gastritis and gastric ...\n- Bacterial, Viral, Fungal, and Other Infectious Conditions 3 Oct 2019 — An infection that occurs in any part of the body may manifest in the mouth, including mycobacterial, treponemal, and protozoal infections.\n- Diagnosis of Lingual Atrophic Conditions: Associations with Local ... by M Erriu · 2016 · Cited by 51 — Helicobacter pylori (H. pylori) is a Gram-negative, microaerophilic bacterium identified among etiologic factors contributing to chronic gastritis and gastric ...\n- Prosthetic rehabilitation of palatal perforation in a patient with 'syphilis 9 Aug 2025 — Syphilis is a sexually transmissible disease caused by treponema palladium, a microaerophilic spirochete. Syphilis may progress from primary ...\n- Infectious Diseases | Springer Nature Link (formerly SpringerLink) 23 Aug 2022 — This chapter deals with microorganisms, namely bacteria, viruses, fungi, and parasites and are responsible for a large number of infectious diseases in humans.\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Treponema pallidum is a microaerophilic, gram-negative spirochete responsible for syphilis, including manifestations such as syphilitic leukoplakia. This bacterium penetrates mucous membranes or abraded skin during sexual contact and can cause various local and systemic lesions. Syphilitic leukoplakia, a white lesion in the oral cavity, is one of the clinical presentations associated with this infection.",
+        "short_answer": "Treponema pallidum",
+        "retrieval_information": "- Diagnosis of Lingual Atrophic Conditions: Associations with Local ... by M Erriu · 2016 · Cited by 51 — Helicobacter pylori (H. pylori) is a Gram-negative, microaerophilic bacterium identified among etiologic factors contributing to chronic gastritis and gastric ...\n- Bacterial, Viral, Fungal, and Other Infectious Conditions 3 Oct 2019 — An infection that occurs in any part of the body may manifest in the mouth, including mycobacterial, treponemal, and protozoal infections.\n- Diagnosis of Lingual Atrophic Conditions: Associations with Local ... by M Erriu · 2016 · Cited by 51 — Helicobacter pylori (H. pylori) is a Gram-negative, microaerophilic bacterium identified among etiologic factors contributing to chronic gastritis and gastric ...\n- Prosthetic rehabilitation of palatal perforation in a patient with 'syphilis 9 Aug 2025 — Syphilis is a sexually transmissible disease caused by treponema palladium, a microaerophilic spirochete. Syphilis may progress from primary ...\n- Infectious Diseases | Springer Nature Link (formerly SpringerLink) 23 Aug 2022 — This chapter deals with microorganisms, namely bacteria, viruses, fungi, and parasites and are responsible for a large number of infectious diseases in humans.\n\n\n\n- Wikipedia: "
+    }
+}

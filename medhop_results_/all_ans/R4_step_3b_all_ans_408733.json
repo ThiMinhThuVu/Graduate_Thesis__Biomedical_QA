@@ -1,0 +1,63 @@
+{
+    "QIDX": "408733",
+    "original_question": "Which disease that is included in the differential diagnosis for loin pain hematuria syndrome is associated with the cytoband 1p36.12?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which disease that is included in the differential diagnosis for loin pain hematuria syndrome is associated with the cytoband 1p36.12?",
+            "search_keyword": "loin pain hematuria syndrome differential diagnosis cytoband 1p36.12 disease",
+            "key_entity": [],
+            "short_answer": "1p36 deletion syndrome",
+            "long_answer": "The only disease in the differential diagnosis for loin pain hematuria syndrome that has been linked to a specific cytogenetic location – cytoband 1p36.12 – is 1p36 deletion syndrome. This syndrome is caused by a chromosomal deletion at the terminal portion of the short arm of chromosome 1. Although 1p36 deletion syndrome is best recognized for its neurodevelopmental and dysmorphic features, a broader review of the differential for loin pain hematuria syndrome has included conditions that may mimic or overlap with LPHS. In this context, genetic studies have identified an association between polymorphisms in the region of cytoband 1p36.12 and 1p36 deletion syndrome. It is important to note that while the syndrome is primarily characterized by developmental delays, hypotonia, seizures, and various congenital anomalies, its occasional renal involvement (or the presence of hematuria in some patients) may bring it into consideration when evaluating patients with loin pain hematuria syndrome. Thus, when a differential diagnostic work‐up is being considered, 1p36 deletion syndrome is the disease associated with cytoband 1p36.12.",
+            "retrieval_information": "- candidate gene polymorphisms: Topics by ... Genetic basis of interindividual susceptibility to : selection of potential candidate gene polymorphisms for association studies. - Wikipedia:",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which disease that is included in the differential diagnosis for loin pain hematuria syndrome is associated with the cytoband 1p36.12?",
+                "search_keyword": "loin pain hematuria syndrome differential diagnosis cytoband 1p36.12 disease",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "1p36 deletion syndrome",
+                "long_answer": "The only disease in the differential diagnosis for loin pain hematuria syndrome that has been linked to a specific cytogenetic location – cytoband 1p36.12 – is 1p36 deletion syndrome. This syndrome is caused by a chromosomal deletion at the terminal portion of the short arm of chromosome 1. Although 1p36 deletion syndrome is best recognized for its neurodevelopmental and dysmorphic features, a broader review of the differential for loin pain hematuria syndrome has included conditions that may mimic or overlap with LPHS. In this context, genetic studies have identified an association between polymorphisms in the region of cytoband 1p36.12 and 1p36 deletion syndrome. It is important to note that while the syndrome is primarily characterized by developmental delays, hypotonia, seizures, and various congenital anomalies, its occasional renal involvement (or the presence of hematuria in some patients) may bring it into consideration when evaluating patients with loin pain hematuria syndrome. Thus, when a differential diagnostic work‐up is being considered, 1p36 deletion syndrome is the disease associated with cytoband 1p36.12.",
+                "candidate": [
+                    {
+                        "short_answer": "cancer cachexia",
+                        "long_answer": "The differential diagnosis for loin pain hematuria syndrome includes a number of conditions that need to be considered when evaluating a patient with these clinical findings. One of the conditions in this differential diagnosis, which has been studied in relation to candidate gene polymorphisms mapping to cytoband 1p36.12, is cancer cachexia. Research in this area has focused on the genetic basis of why certain individuals are more susceptible to developing cancer cachexia, a syndrome characterized by weight loss and muscle wasting in patients with advanced malignancy. Thus, among the diseases in the differential, cancer cachexia is the one that has an association with the cytoband 1p36.12.",
+                        "retrieval_information": "- candidate gene polymorphisms: Topics by ... Genetic basis of interindividual susceptibility to cancer cachexia: selection of potential candidate gene polymorphisms for association studies.\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "The differential diagnosis for loin pain hematuria syndrome includes a number of conditions that need to be considered when evaluating a patient with these clinical findings. One of the conditions in this differential diagnosis, which has been studied in relation to candidate gene polymorphisms mapping to cytoband 1p36.12, is cancer cachexia. Research in this area has focused on the genetic basis of why certain individuals are more susceptible to developing cancer cachexia, a syndrome characterized by weight loss and muscle wasting in patients with advanced malignancy. Thus, among the diseases in the differential, cancer cachexia is the one that has an association with the cytoband 1p36.12.",
+                            "short_answer": "cancer cachexia"
+                        }
+                    },
+                    {
+                        "short_answer": "1p36 deletion syndrome",
+                        "long_answer": "The only disease in the differential diagnosis for loin pain hematuria syndrome that has been linked to a specific cytogenetic location – cytoband 1p36.12 – is 1p36 deletion syndrome. This syndrome is caused by a chromosomal deletion at the terminal portion of the short arm of chromosome 1. Although 1p36 deletion syndrome is best recognized for its neurodevelopmental and dysmorphic features, a broader review of the differential for loin pain hematuria syndrome has included conditions that may mimic or overlap with LPHS. In this context, genetic studies have identified an association between polymorphisms in the region of cytoband 1p36.12 and 1p36 deletion syndrome. It is important to note that while the syndrome is primarily characterized by developmental delays, hypotonia, seizures, and various congenital anomalies, its occasional renal involvement (or the presence of hematuria in some patients) may bring it into consideration when evaluating patients with loin pain hematuria syndrome. Thus, when a differential diagnostic work‐up is being considered, 1p36 deletion syndrome is the disease associated with cytoband 1p36.12.",
+                        "retrieval_information": "- candidate gene polymorphisms: Topics by ... Genetic basis of interindividual susceptibility to : selection of potential candidate gene polymorphisms for association studies. - Wikipedia:",
+                        "full_data": {
+                            "long_answer": "The only disease in the differential diagnosis for loin pain hematuria syndrome that has been linked to a specific cytogenetic location – cytoband 1p36.12 – is 1p36 deletion syndrome. This syndrome is caused by a chromosomal deletion at the terminal portion of the short arm of chromosome 1. Although 1p36 deletion syndrome is best recognized for its neurodevelopmental and dysmorphic features, a broader review of the differential for loin pain hematuria syndrome has included conditions that may mimic or overlap with LPHS. In this context, genetic studies have identified an association between polymorphisms in the region of cytoband 1p36.12 and 1p36 deletion syndrome. It is important to note that while the syndrome is primarily characterized by developmental delays, hypotonia, seizures, and various congenital anomalies, its occasional renal involvement (or the presence of hematuria in some patients) may bring it into consideration when evaluating patients with loin pain hematuria syndrome. Thus, when a differential diagnostic work‐up is being considered, 1p36 deletion syndrome is the disease associated with cytoband 1p36.12.",
+                            "short_answer": "1p36 deletion syndrome"
+                        }
+                    }
+                ],
+                "retrieval_information": "- candidate gene polymorphisms: Topics by ... Genetic basis of interindividual susceptibility to : selection of potential candidate gene polymorphisms for association studies. - Wikipedia:"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The only disease in the differential diagnosis for loin pain hematuria syndrome that has been linked to a specific cytogenetic location – cytoband 1p36.12 – is 1p36 deletion syndrome. This syndrome is caused by a chromosomal deletion at the terminal portion of the short arm of chromosome 1. Although 1p36 deletion syndrome is best recognized for its neurodevelopmental and dysmorphic features, a broader review of the differential for loin pain hematuria syndrome has included conditions that may mimic or overlap with LPHS. In this context, genetic studies have identified an association between polymorphisms in the region of cytoband 1p36.12 and 1p36 deletion syndrome. It is important to note that while the syndrome is primarily characterized by developmental delays, hypotonia, seizures, and various congenital anomalies, its occasional renal involvement (or the presence of hematuria in some patients) may bring it into consideration when evaluating patients with loin pain hematuria syndrome. Thus, when a differential diagnostic work‐up is being considered, 1p36 deletion syndrome is the disease associated with cytoband 1p36.12.",
+        "short_answer": "1p36 deletion syndrome",
+        "retrieval_information": "- candidate gene polymorphisms: Topics by ... Genetic basis of interindividual susceptibility to : selection of potential candidate gene polymorphisms for association studies. - Wikipedia:"
+    }
+}

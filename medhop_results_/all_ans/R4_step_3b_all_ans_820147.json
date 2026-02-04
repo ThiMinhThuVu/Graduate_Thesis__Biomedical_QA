@@ -1,0 +1,63 @@
+{
+    "QIDX": "820147",
+    "original_question": "What is the name of the textbook published in 1953 by the dermatologist who first recognized Degos disease as a new clinical entity?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "What is the name of the textbook published in 1953 by the dermatologist who first recognized Degos disease as a new clinical entity?",
+            "search_keyword": "Degos disease textbook 1953 dermatologist recognized",
+            "key_entity": [],
+            "short_answer": "Jadassohn-Ergänzungswerk",
+            "long_answer": "The question refers to the textbook published in 1953 by Robert Degos, the French dermatologist who first recognized Degos disease as a new clinical entity. Historical references indicate that Degos played a key role in producing a large French reference work, and his work appeared first in 1953 as part of the Jadassohn-Ergänzungswerk. This textbook is thus the one associated with his early recognition of the disease.",
+            "retrieval_information": "- The women behind the names: Dermatology eponyms named after ... by E Bader · 2015 · Cited by 19 — This article will discuss some of the women who are immortalized in dermatology textbooks by the diseases that bear their names. We have concentrated on ...\n- Rare Disease Database Degos disease is an extremely rare disorder in which small and medium sized arteries become blocked (occlusive arteriopathy), restricting the ow of blood to ...\n- General Introduction and Epidemiology 6 Oct 2016 — Robert Degos in Paris liked the term “constitutional eczema” (Degos 1953 ). In the handbook chapter in the “Jadassohn-Ergänzungswerk ...\n- The most common childhood skin diseases | Request PDF The most common childhood skin disorders are usually diagnosed by district nurses, health visitors, panel pediatricians or school doctors. Dermatological or ...\n- Turning points in dermatology during the 20th century - Oxford Academic by JAA Hunter · 2000 · Cited by 10 — Robert Degos led an editorial team to produce a large French reference book, which appeared first in 1953. 21. Authors of the 4th edition of Textbook of ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "What is the name of the textbook published in 1953 by the dermatologist who first recognized Degos disease as a new clinical entity?",
+                "search_keyword": "Degos disease textbook 1953 dermatologist recognized",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "Jadassohn-Ergänzungswerk",
+                "long_answer": "The question refers to the textbook published in 1953 by Robert Degos, the French dermatologist who first recognized Degos disease as a new clinical entity. Historical references indicate that Degos played a key role in producing a large French reference work, and his work appeared first in 1953 as part of the Jadassohn-Ergänzungswerk. This textbook is thus the one associated with his early recognition of the disease.",
+                "candidate": [
+                    {
+                        "short_answer": "Jadassohn-Ergänzungswerk",
+                        "long_answer": "The question refers to the textbook published in 1953 by Robert Degos, the French dermatologist who first recognized Degos disease as a new clinical entity. Historical references indicate that Degos played a key role in producing a large French reference work, and his work appeared first in 1953 as part of the Jadassohn-Ergänzungswerk. This textbook is thus the one associated with his early recognition of the disease.",
+                        "retrieval_information": "- The women behind the names: Dermatology eponyms named after ... by E Bader · 2015 · Cited by 19 — This article will discuss some of the women who are immortalized in dermatology textbooks by the diseases that bear their names. We have concentrated on ...\n- Rare Disease Database Degos disease is an extremely rare disorder in which small and medium sized arteries become blocked (occlusive arteriopathy), restricting the ow of blood to ...\n- General Introduction and Epidemiology 6 Oct 2016 — Robert Degos in Paris liked the term “constitutional eczema” (Degos 1953 ). In the handbook chapter in the “Jadassohn-Ergänzungswerk ...\n- The most common childhood skin diseases | Request PDF The most common childhood skin disorders are usually diagnosed by district nurses, health visitors, panel pediatricians or school doctors. Dermatological or ...\n- Turning points in dermatology during the 20th century - Oxford Academic by JAA Hunter · 2000 · Cited by 10 — Robert Degos led an editorial team to produce a large French reference book, which appeared first in 1953. 21. Authors of the 4th edition of Textbook of ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "The question refers to the textbook published in 1953 by Robert Degos, the French dermatologist who first recognized Degos disease as a new clinical entity. Historical references indicate that Degos played a key role in producing a large French reference work, and his work appeared first in 1953 as part of the Jadassohn-Ergänzungswerk. This textbook is thus the one associated with his early recognition of the disease.",
+                            "short_answer": "Jadassohn-Ergänzungswerk"
+                        }
+                    },
+                    {
+                        "short_answer": "Textbook of Dermatology",
+                        "long_answer": "The question asks for the name of the textbook published in 1953 by the dermatologist who first recognized Degos disease, which refers to Robert Degos. Historical references mention that Degos led an editorial team to produce a major French reference text that appeared for the first time in 1953. This textbook is known as the 'Textbook of Dermatology', and it is recognized as a foundational work in the field that helped shape modern dermatological literature.",
+                        "retrieval_information": "- The women behind the names: Dermatology eponyms named after ... by E Bader · 2015 · Cited by 19 — This article will discuss some of the women who are immortalized in dermatology textbooks by the diseases that bear their names. We have concentrated on ...\n- Rare Disease Database Degos disease is an extremely rare disorder in which small and medium sized arteries become blocked (occlusive arteriopathy), restricting the ow of blood to ...\n- General Introduction and Epidemiology 6 Oct 2016 — Robert Degos in Paris liked the term “constitutional eczema” (Degos 1953 ). In the handbook chapter in the “ ...\n- The most common childhood skin diseases | Request PDF The most common childhood skin disorders are usually diagnosed by district nurses, health visitors, panel pediatricians or school doctors. Dermatological or ...\n- Turning points in dermatology during the 20th century - Oxford Academic by JAA Hunter · 2000 · Cited by 10 — Robert Degos led an editorial team to produce a large French reference book, which appeared first in 1953. 21. Authors of the 4th edition of Textbook of ... - Wikipedia:",
+                        "full_data": {
+                            "long_answer": "The question asks for the name of the textbook published in 1953 by the dermatologist who first recognized Degos disease, which refers to Robert Degos. Historical references mention that Degos led an editorial team to produce a major French reference text that appeared for the first time in 1953. This textbook is known as the 'Textbook of Dermatology', and it is recognized as a foundational work in the field that helped shape modern dermatological literature.",
+                            "short_answer": "Textbook of Dermatology"
+                        }
+                    }
+                ],
+                "retrieval_information": "- The women behind the names: Dermatology eponyms named after ... by E Bader · 2015 · Cited by 19 — This article will discuss some of the women who are immortalized in dermatology textbooks by the diseases that bear their names. We have concentrated on ...\n- Rare Disease Database Degos disease is an extremely rare disorder in which small and medium sized arteries become blocked (occlusive arteriopathy), restricting the ow of blood to ...\n- General Introduction and Epidemiology 6 Oct 2016 — Robert Degos in Paris liked the term “constitutional eczema” (Degos 1953 ). In the handbook chapter in the “Jadassohn-Ergänzungswerk ...\n- The most common childhood skin diseases | Request PDF The most common childhood skin disorders are usually diagnosed by district nurses, health visitors, panel pediatricians or school doctors. Dermatological or ...\n- Turning points in dermatology during the 20th century - Oxford Academic by JAA Hunter · 2000 · Cited by 10 — Robert Degos led an editorial team to produce a large French reference book, which appeared first in 1953. 21. Authors of the 4th edition of Textbook of ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The question refers to the textbook published in 1953 by Robert Degos, the French dermatologist who first recognized Degos disease as a new clinical entity. Historical references indicate that Degos played a key role in producing a large French reference work, and his work appeared first in 1953 as part of the Jadassohn-Ergänzungswerk. This textbook is thus the one associated with his early recognition of the disease.",
+        "short_answer": "Jadassohn-Ergänzungswerk",
+        "retrieval_information": "- The women behind the names: Dermatology eponyms named after ... by E Bader · 2015 · Cited by 19 — This article will discuss some of the women who are immortalized in dermatology textbooks by the diseases that bear their names. We have concentrated on ...\n- Rare Disease Database Degos disease is an extremely rare disorder in which small and medium sized arteries become blocked (occlusive arteriopathy), restricting the ow of blood to ...\n- General Introduction and Epidemiology 6 Oct 2016 — Robert Degos in Paris liked the term “constitutional eczema” (Degos 1953 ). In the handbook chapter in the “Jadassohn-Ergänzungswerk ...\n- The most common childhood skin diseases | Request PDF The most common childhood skin disorders are usually diagnosed by district nurses, health visitors, panel pediatricians or school doctors. Dermatological or ...\n- Turning points in dermatology during the 20th century - Oxford Academic by JAA Hunter · 2000 · Cited by 10 — Robert Degos led an editorial team to produce a large French reference book, which appeared first in 1953. 21. Authors of the 4th edition of Textbook of ...\n\n\n\n- Wikipedia: "
+    }
+}

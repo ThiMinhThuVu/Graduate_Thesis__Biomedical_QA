@@ -1,0 +1,63 @@
+{
+    "QIDX": "100860",
+    "original_question": "Which non-ionizing imaging technique that can also be used to form images of mummies is used to confirm that the heart and other organs are completely reversed in a patient with situs inversus totalis?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which non-ionizing imaging technique that can also be used to form images of mummies is used to confirm that the heart and other organs are completely reversed in a patient with situs inversus totalis?",
+            "search_keyword": "non-ionizing imaging technique situs inversus totalis mummies",
+            "key_entity": [],
+            "short_answer": "magnetic resonance imaging",
+            "long_answer": "Magnetic resonance imaging (MRI) is a non-ionizing imaging technique used to form detailed images of the soft tissues of the body, including the heart and other internal organs. It is particularly useful in patients with conditions like situs inversus totalis, where the internal organs are completely reversed from their normal positions. Additionally, MRI’s ability to provide high-contrast images without the use of ionizing radiation makes it an attractive option for imaging delicate specimens such as mummies, whose preservation can be compromised by other imaging methods that utilize radiation.",
+            "retrieval_information": "- Visceral Heterotaxy 5 Situs inversus totalis is a condition in which the arrangement of the internal organs is a mirror image of normal anatomy. It can occur alone (isolated, with no ...\n- Traditional Posters In subjects with situs inversus totalis (SI) the internal organs of the body are transposed and it has been obvious to question whether in these subjects ...\n- multiplanar reformatted images: Topics by ... Situs inversus totalis (SIT) is a rare congenital anomaly characterized by ... Micro-CT is an established imaging technique for high-resolution non ...\n- Society of Thoracic Radiology Abstracts from the 2024 Annual Objectives: This study aimed to evaluate the quality of machine learning-based radiomics studies in cardiac imaging using the Radiomics Quality Score (RQS).\n- Abstracts for the Joint Meeting of Anatomical Societies, 19-22 May ... Incidences of situs inversus totalis range from 1 in 10,000 to 1 in 50,000. Situs inversus totalis was observed in a 39-year-old man at autopsy. In the ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which non-ionizing imaging technique that can also be used to form images of mummies is used to confirm that the heart and other organs are completely reversed in a patient with situs inversus totalis?",
+                "search_keyword": "non-ionizing imaging technique situs inversus totalis mummies",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "magnetic resonance imaging",
+                "long_answer": "Magnetic resonance imaging (MRI) is a non-ionizing imaging technique used to form detailed images of the soft tissues of the body, including the heart and other internal organs. It is particularly useful in patients with conditions like situs inversus totalis, where the internal organs are completely reversed from their normal positions. Additionally, MRI’s ability to provide high-contrast images without the use of ionizing radiation makes it an attractive option for imaging delicate specimens such as mummies, whose preservation can be compromised by other imaging methods that utilize radiation.",
+                "candidate": [
+                    {
+                        "short_answer": "magnetic resonance imaging",
+                        "long_answer": "Magnetic resonance imaging (MRI) is a non-ionizing imaging technique used to form detailed images of the soft tissues of the body, including the heart and other internal organs. It is particularly useful in patients with conditions like situs inversus totalis, where the internal organs are completely reversed from their normal positions. Additionally, MRI’s ability to provide high-contrast images without the use of ionizing radiation makes it an attractive option for imaging delicate specimens such as mummies, whose preservation can be compromised by other imaging methods that utilize radiation.",
+                        "retrieval_information": "- Visceral Heterotaxy 5 Situs inversus totalis is a condition in which the arrangement of the internal organs is a mirror image of normal anatomy. It can occur alone (isolated, with no ...\n- Traditional Posters In subjects with situs inversus totalis (SI) the internal organs of the body are transposed and it has been obvious to question whether in these subjects ...\n- multiplanar reformatted images: Topics by ... Situs inversus totalis (SIT) is a rare congenital anomaly characterized by ... Micro-CT is an established imaging technique for high-resolution non ...\n- Society of Thoracic Radiology Abstracts from the 2024 Annual Objectives: This study aimed to evaluate the quality of machine learning-based radiomics studies in cardiac imaging using the Radiomics Quality Score (RQS).\n- Abstracts for the Joint Meeting of Anatomical Societies, 19-22 May ... Incidences of situs inversus totalis range from 1 in 10,000 to 1 in 50,000. Situs inversus totalis was observed in a 39-year-old man at autopsy. In the ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Magnetic resonance imaging (MRI) is a non-ionizing imaging technique used to form detailed images of the soft tissues of the body, including the heart and other internal organs. It is particularly useful in patients with conditions like situs inversus totalis, where the internal organs are completely reversed from their normal positions. Additionally, MRI’s ability to provide high-contrast images without the use of ionizing radiation makes it an attractive option for imaging delicate specimens such as mummies, whose preservation can be compromised by other imaging methods that utilize radiation.",
+                            "short_answer": "magnetic resonance imaging"
+                        }
+                    },
+                    {
+                        "short_answer": "Magnetic resonance imaging (MRI)",
+                        "long_answer": "Magnetic resonance imaging (MRI) is a non-ionizing imaging technique that uses magnetic fields and radio waves to produce detailed images of the body's internal structures. This method is versatile and has been used not only in clinical settings to assess conditions like situs inversus totalis, where the heart and other organs are a mirror image of their normal positions, but also in archaeological studies for imaging mummies. MRI is particularly valuable because it does not expose patients or historical specimens to ionizing radiation, making it a safer option for detailed anatomical evaluation.",
+                        "retrieval_information": "- Visceral Heterotaxy 5 Situs inversus totalis is a condition in which the arrangement of the internal organs is a mirror image of normal anatomy. It can occur alone (isolated, with no ...\n- Traditional Posters In subjects with situs inversus totalis (SI) the internal organs of the body are transposed and it has been obvious to question whether in these subjects ...\n- multiplanar reformatted images: Topics by ... Situs inversus totalis (SIT) is a rare congenital anomaly characterized by ... Micro-CT is an established imaging technique for high-resolution non ...\n- Society of Thoracic Radiology Abstracts from the 2024 Annual Objectives: This study aimed to evaluate the quality of machine learning-based radiomics studies in cardiac imaging using the Radiomics Quality Score (RQS).\n- Abstracts for the Joint Meeting of Anatomical Societies, 19-22 May ... Incidences of situs inversus totalis range from 1 in 10,000 to 1 in 50,000. Situs inversus totalis was observed in a 39-year-old man at autopsy. In the ... - Wikipedia:",
+                        "full_data": {
+                            "long_answer": "Magnetic resonance imaging (MRI) is a non-ionizing imaging technique that uses magnetic fields and radio waves to produce detailed images of the body's internal structures. This method is versatile and has been used not only in clinical settings to assess conditions like situs inversus totalis, where the heart and other organs are a mirror image of their normal positions, but also in archaeological studies for imaging mummies. MRI is particularly valuable because it does not expose patients or historical specimens to ionizing radiation, making it a safer option for detailed anatomical evaluation.",
+                            "short_answer": "Magnetic resonance imaging (MRI)"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Visceral Heterotaxy 5 Situs inversus totalis is a condition in which the arrangement of the internal organs is a mirror image of normal anatomy. It can occur alone (isolated, with no ...\n- Traditional Posters In subjects with situs inversus totalis (SI) the internal organs of the body are transposed and it has been obvious to question whether in these subjects ...\n- multiplanar reformatted images: Topics by ... Situs inversus totalis (SIT) is a rare congenital anomaly characterized by ... Micro-CT is an established imaging technique for high-resolution non ...\n- Society of Thoracic Radiology Abstracts from the 2024 Annual Objectives: This study aimed to evaluate the quality of machine learning-based radiomics studies in cardiac imaging using the Radiomics Quality Score (RQS).\n- Abstracts for the Joint Meeting of Anatomical Societies, 19-22 May ... Incidences of situs inversus totalis range from 1 in 10,000 to 1 in 50,000. Situs inversus totalis was observed in a 39-year-old man at autopsy. In the ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Magnetic resonance imaging (MRI) is a non-ionizing imaging technique used to form detailed images of the soft tissues of the body, including the heart and other internal organs. It is particularly useful in patients with conditions like situs inversus totalis, where the internal organs are completely reversed from their normal positions. Additionally, MRI’s ability to provide high-contrast images without the use of ionizing radiation makes it an attractive option for imaging delicate specimens such as mummies, whose preservation can be compromised by other imaging methods that utilize radiation.",
+        "short_answer": "magnetic resonance imaging",
+        "retrieval_information": "- Visceral Heterotaxy 5 Situs inversus totalis is a condition in which the arrangement of the internal organs is a mirror image of normal anatomy. It can occur alone (isolated, with no ...\n- Traditional Posters In subjects with situs inversus totalis (SI) the internal organs of the body are transposed and it has been obvious to question whether in these subjects ...\n- multiplanar reformatted images: Topics by ... Situs inversus totalis (SIT) is a rare congenital anomaly characterized by ... Micro-CT is an established imaging technique for high-resolution non ...\n- Society of Thoracic Radiology Abstracts from the 2024 Annual Objectives: This study aimed to evaluate the quality of machine learning-based radiomics studies in cardiac imaging using the Radiomics Quality Score (RQS).\n- Abstracts for the Joint Meeting of Anatomical Societies, 19-22 May ... Incidences of situs inversus totalis range from 1 in 10,000 to 1 in 50,000. Situs inversus totalis was observed in a 39-year-old man at autopsy. In the ...\n\n\n\n- Wikipedia: "
+    }
+}

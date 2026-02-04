@@ -1,0 +1,54 @@
+{
+    "QIDX": "117978",
+    "original_question": "Which autosomal recessive metabolic disorder caused by the deficiencies in the the enzyme called propionyl-CoA carboxylase is responsible for ketotic hyperglycinemia, distinguishing it from glycine encephalopathy?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which autosomal recessive metabolic disorder caused by the deficiencies in the the enzyme called propionyl-CoA carboxylase is responsible for ketotic hyperglycinemia, distinguishing it from glycine encephalopathy?",
+            "search_keyword": "autosomal recessive metabolic disorder propionyl-CoA carboxylase ketotic hyperglycinemia glycine encephalopathy",
+            "key_entity": [],
+            "short_answer": "propionic acidemia",
+            "long_answer": "Propionic acidemia is an autosomal recessive metabolic disorder caused by a deficiency of the enzyme propionyl-CoA carboxylase. This deficiency disrupts the conversion of propionyl-CoA to methylmalonyl-CoA, leading to the buildup of toxic substrates, metabolic acidosis, hyperammonemia, and ketotic hyperglycinemia. The ketotic hyperglycinemia observed is a distinguishing feature that sets propionic acidemia apart from glycine encephalopathy, where the primary issue is the defective metabolism of glycine without the additional metabolic disturbances seen in propionic acidemia.",
+            "retrieval_information": "- Propionic Acidemia - GeneReviews® - NCBI Bookshelf - NIH by CIG Aima · 2024 · Cited by 145 — PA is caused by deficiency of propionyl-coenzyme A carboxylase (PCC), the enzyme that catalyzes the conversion of propionyl-CoA to methylmalonyl ...\n- Entry - #606054 - PROPIONIC ACIDEMIA Propionic acidemia is an autosomal recessive metabolic disorder caused by defective functioning in the mitochondrial enzyme propionyl CoA carboxylase (PCC) ...\n- MetaADEDB: ADE - Propionic acidemia Autosomal recessive metabolic disorder caused by mutations in PROPIONYL-COA CARBOXYLASE genes that result in dysfunction of branch chain amino acids and of ...\n- Propionyl-CoA carboxylase deficiency by BWMDPD Propionyl-CoA — Propionyl-CoA carboxylase deficiency: inherited metabolic disorder presenting in infancy with neurological symptoms, metabolic acidosis, hyperammonemia,…\n- Propionyl Coenzyme A Carboxylase - an overview IVA has a prevalence of 1 in 250,000 and is an autosomal recessive disorder characterized by mutations in the IVD gene. ... ketotic hyperglycinemia” syndrome.\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which autosomal recessive metabolic disorder caused by the deficiencies in the the enzyme called propionyl-CoA carboxylase is responsible for ketotic hyperglycinemia, distinguishing it from glycine encephalopathy?",
+                "search_keyword": "autosomal recessive metabolic disorder propionyl-CoA carboxylase ketotic hyperglycinemia glycine encephalopathy",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "propionic acidemia",
+                "long_answer": "Propionic acidemia is an autosomal recessive metabolic disorder caused by a deficiency of the enzyme propionyl-CoA carboxylase. This deficiency disrupts the conversion of propionyl-CoA to methylmalonyl-CoA, leading to the buildup of toxic substrates, metabolic acidosis, hyperammonemia, and ketotic hyperglycinemia. The ketotic hyperglycinemia observed is a distinguishing feature that sets propionic acidemia apart from glycine encephalopathy, where the primary issue is the defective metabolism of glycine without the additional metabolic disturbances seen in propionic acidemia.",
+                "candidate": [
+                    {
+                        "short_answer": "propionic acidemia",
+                        "long_answer": "Propionic acidemia is an autosomal recessive metabolic disorder caused by a deficiency of the enzyme propionyl-CoA carboxylase. This deficiency disrupts the conversion of propionyl-CoA to methylmalonyl-CoA, leading to the buildup of toxic substrates, metabolic acidosis, hyperammonemia, and ketotic hyperglycinemia. The ketotic hyperglycinemia observed is a distinguishing feature that sets propionic acidemia apart from glycine encephalopathy, where the primary issue is the defective metabolism of glycine without the additional metabolic disturbances seen in propionic acidemia.",
+                        "retrieval_information": "- Propionic Acidemia - GeneReviews® - NCBI Bookshelf - NIH by CIG Aima · 2024 · Cited by 145 — PA is caused by deficiency of propionyl-coenzyme A carboxylase (PCC), the enzyme that catalyzes the conversion of propionyl-CoA to methylmalonyl ...\n- Entry - #606054 - PROPIONIC ACIDEMIA Propionic acidemia is an autosomal recessive metabolic disorder caused by defective functioning in the mitochondrial enzyme propionyl CoA carboxylase (PCC) ...\n- MetaADEDB: ADE - Propionic acidemia Autosomal recessive metabolic disorder caused by mutations in PROPIONYL-COA CARBOXYLASE genes that result in dysfunction of branch chain amino acids and of ...\n- Propionyl-CoA carboxylase deficiency by BWMDPD Propionyl-CoA — Propionyl-CoA carboxylase deficiency: inherited metabolic disorder presenting in infancy with neurological symptoms, metabolic acidosis, hyperammonemia,…\n- Propionyl Coenzyme A Carboxylase - an overview IVA has a prevalence of 1 in 250,000 and is an autosomal recessive disorder characterized by mutations in the IVD gene. ... ketotic hyperglycinemia” syndrome.\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Propionic acidemia is an autosomal recessive metabolic disorder caused by a deficiency of the enzyme propionyl-CoA carboxylase. This deficiency disrupts the conversion of propionyl-CoA to methylmalonyl-CoA, leading to the buildup of toxic substrates, metabolic acidosis, hyperammonemia, and ketotic hyperglycinemia. The ketotic hyperglycinemia observed is a distinguishing feature that sets propionic acidemia apart from glycine encephalopathy, where the primary issue is the defective metabolism of glycine without the additional metabolic disturbances seen in propionic acidemia.",
+                            "short_answer": "propionic acidemia"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Propionic Acidemia - GeneReviews® - NCBI Bookshelf - NIH by CIG Aima · 2024 · Cited by 145 — PA is caused by deficiency of propionyl-coenzyme A carboxylase (PCC), the enzyme that catalyzes the conversion of propionyl-CoA to methylmalonyl ...\n- Entry - #606054 - PROPIONIC ACIDEMIA Propionic acidemia is an autosomal recessive metabolic disorder caused by defective functioning in the mitochondrial enzyme propionyl CoA carboxylase (PCC) ...\n- MetaADEDB: ADE - Propionic acidemia Autosomal recessive metabolic disorder caused by mutations in PROPIONYL-COA CARBOXYLASE genes that result in dysfunction of branch chain amino acids and of ...\n- Propionyl-CoA carboxylase deficiency by BWMDPD Propionyl-CoA — Propionyl-CoA carboxylase deficiency: inherited metabolic disorder presenting in infancy with neurological symptoms, metabolic acidosis, hyperammonemia,…\n- Propionyl Coenzyme A Carboxylase - an overview IVA has a prevalence of 1 in 250,000 and is an autosomal recessive disorder characterized by mutations in the IVD gene. ... ketotic hyperglycinemia” syndrome.\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Propionic acidemia is an autosomal recessive metabolic disorder caused by a deficiency of the enzyme propionyl-CoA carboxylase. This deficiency disrupts the conversion of propionyl-CoA to methylmalonyl-CoA, leading to the buildup of toxic substrates, metabolic acidosis, hyperammonemia, and ketotic hyperglycinemia. The ketotic hyperglycinemia observed is a distinguishing feature that sets propionic acidemia apart from glycine encephalopathy, where the primary issue is the defective metabolism of glycine without the additional metabolic disturbances seen in propionic acidemia.",
+        "short_answer": "propionic acidemia",
+        "retrieval_information": "- Propionic Acidemia - GeneReviews® - NCBI Bookshelf - NIH by CIG Aima · 2024 · Cited by 145 — PA is caused by deficiency of propionyl-coenzyme A carboxylase (PCC), the enzyme that catalyzes the conversion of propionyl-CoA to methylmalonyl ...\n- Entry - #606054 - PROPIONIC ACIDEMIA Propionic acidemia is an autosomal recessive metabolic disorder caused by defective functioning in the mitochondrial enzyme propionyl CoA carboxylase (PCC) ...\n- MetaADEDB: ADE - Propionic acidemia Autosomal recessive metabolic disorder caused by mutations in PROPIONYL-COA CARBOXYLASE genes that result in dysfunction of branch chain amino acids and of ...\n- Propionyl-CoA carboxylase deficiency by BWMDPD Propionyl-CoA — Propionyl-CoA carboxylase deficiency: inherited metabolic disorder presenting in infancy with neurological symptoms, metabolic acidosis, hyperammonemia,…\n- Propionyl Coenzyme A Carboxylase - an overview IVA has a prevalence of 1 in 250,000 and is an autosomal recessive disorder characterized by mutations in the IVD gene. ... ketotic hyperglycinemia” syndrome.\n\n\n\n- Wikipedia: "
+    }
+}

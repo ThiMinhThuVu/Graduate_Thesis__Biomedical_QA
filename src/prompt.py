@@ -2394,3 +2394,205 @@ Long Answer: {answer.get('long_answer', '')}
     ]
     
     return messages
+
+
+def load_subquestion_prompt_with_feedback(question, previous_subquestions, target_answer_type, dataset=None, type_q=None):
+    if dataset == 'medhop':
+       # Format previous attempt for the prompt
+        prev_attempt_str = json.dumps(previous_subquestions, indent=2) if isinstance(previous_subquestions, (list, dict)) else str(previous_subquestions)
+
+        messages = [
+           {
+               "role": "system",
+               "content": f"""You are a highly specialized AI assistant, an expert in biomedical knowledge, skilled at decomposing complex biomedical questions into a sequence of simpler, interconnected natural language sub-questions. Your primary goal is to create a logical, step-by-step plan that faithfully represents the reasoning process to answer the main question.
+
+
+**Context:**
+You are correcting previous failed decomposition attempt(s).
+- **Previous Attempt(s)**: Failed.
+- **Target Answer Type**: The final answer MUST be a "{target_answer_type}".
+
+
+**Core Instructions for Decomposition:**
+0.  **Faithful Reasoning via Decomposition**: Externalize the reasoning process by breaking the `Original Complex Question` into a series of sub-questions.
+1.  **Step-by-Step Plan**: Generate a sequence of sub-questions.
+2.  **Self-Contained and Searchable Sub-questions**: Each sub-question MUST be self-contained and answerable by a standard search engine query without implicit context.
+   * **Prefer Single Entities:** Ideally yield a single, specific entity.
+   * **Explicit List Handling:** If a list is needed, subsequent steps must explicitly state how to process it.
+3.  **Logical Dependency**: Use explicit natural language references to entities from previous steps (e.g., "that gene", "the identified symptom").
+4.  **Sub-question Properties**:
+   * **`subquestion`**: Clear, natural language question.
+   * **`search_keyword`**: Concise, keyword-based search query.
+5.  **Efficiency and Necessity**: Decompose into the **minimum number of steps** (MAX 3).
+6.  **Final Answer Derivation**: The final sub-question MUST explicitly solicit a "{target_answer_type}".
+
+
+**Analyze the Failure:**
+- **Complexity Check:** If previous steps were too complex, simplify them.
+- **Searchability:** Broaden keywords if previous ones failed.
+- **Logic Check:** Ensure the path logically leads to a "{target_answer_type}".
+
+
+**Output Format**: **YOU MUST USE JSON FORMAT ONLY.**
+[
+   {{
+       "subquestion": "self-contained subquestion",
+       "search_keyword": "distilled search query"
+   }}
+]
+
+
+Original Complex Question: '{question}'
+"""
+           },
+           {
+               "role": "user",
+               "content": f"""## Examples (Review for pattern)
+
+
+---
+**Example 1:**
+"Which human chromosome contains the gene that encodes the enzyme that can inactivate antithrombin?"
+
+
+JSON desired output format:
+[
+   {{
+       "subquestion": "Which enzyme can inactivate antithrombin?",
+       "search_keyword": "enzyme inactivate antithrombin"
+   }},
+   {{
+       "subquestion": "Which gene encode that enzyme?",
+       "search_keyword": "gene encode enzyme inactivate antithrombin"
+   }},
+   {{
+       "subquestion": "Which human chromosome contains that gene?",
+       "search_keyword": "human chromosome gene encode enzyme inactivate antithrombin"
+   }}
+]
+
+
+---
+**Example 2:**
+"Which lactate dehydrogenase tetramer is most common in the primary organ of the nervous system?"
+
+
+JSON desired output format:
+[
+   {{
+       "subquestion": "What is the primary organ of the human nervous system?",
+       "search_keyword": "primary organ human nervous system"
+   }},
+   {{
+       "subquestion": "Which specific lactate dehydrogenase tetramer is most commonly found in that organ?",
+       "search_keyword": "lactate dehydrogenase tetramer most common primary organ nervous system"
+   }}
+]
+
+
+---
+**Example 3:**
+"Which gene mutation is responsible for the syndrome characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?"
+
+
+JSON desired output format:
+[
+   {{
+       "subquestion": "Which syndrome is characterized by flattened and deformed vertebrae, developmental delay, and lens coloboma?",
+       "search_keyword": "syndrome flattened deformed vertebrae developmental delay lens coloboma"
+   }},
+   {{
+       "subquestion": "Which gene mutation is responsible for that syndrome?",
+       "search_keyword": "gene mutation syndrome flattened deformed vertebrae developmental delay lens coloboma"
+   }}
+]
+
+
+---
+**Example 4:**
+"Which London suburb was home to the pioneering institutions that influenced John Langdon Down's work at Earlswood Asylum?"
+
+
+JSON desired output format:
+[
+   {{
+       "subquestion": "Which pioneering institutions influenced John Langdon Down's work at Earlswood Asylum?",
+       "search_keyword": "pioneering institutions John Langdon Down Earlswood Asylum"
+   }},
+   {{
+       "subquestion": "In which London suburb was that pioneering institution located?",
+       "search_keyword": "London location pioneering institution John Langdon Down Earlswood Asylum"
+   }}
+]
+
+
+---
+**Example 5:**
+"Which gene mutation is primarily responsible for a syndromic microphthalmia that includes nasal abnormalities?"
+
+
+JSON desired output format:
+[
+   {{
+       "subquestion": "What are the syndromic forms of microphthalmia that present with nasal abnormalities?",
+       "search_keyword": "syndromic microphthalmia nasal abnormalities"
+   }},
+   {{
+       "subquestion": "Which gene mutation is most commonly identified as the primary cause for that disease?",
+       "search_keyword": "gene mutation primary cause syndromic microphthalmia nasal abnormalities"
+   }}
+]
+
+
+---
+## Examples (Feedback based correction)
+
+
+---
+**Example Correction:**
+Original: "Which chromosome contains the gene encoding the enzyme that inactivates antithrombin?"
+Target Answer Type: "chromosome"
+Previous Attempt:
+[
+   {{
+       "subquestion": "What inactivates antithrombin?",
+       "search_keyword": "inactivates antithrombin"
+   }}
+]
+
+
+JSON desired output format:
+[
+   {{
+       "subquestion": "Which enzyme has the function of inactivating antithrombin?",
+       "search_keyword": "enzyme inactivates antithrombin function"
+   }},
+   {{
+       "subquestion": "What is the gene encoding that enzyme?",
+       "search_keyword": "gene encoding enzyme"
+   }},
+   {{
+       "subquestion": "Which chromosome contains that gene?",
+       "search_keyword": "chromosome location gene"
+   }}
+]
+
+
+---
+**Information**
+Original Complex Question: '{question}'
+Target Answer Type: "{target_answer_type}"
+Previous Attempt(s): {prev_attempt_str}
+
+
+## Task
+Generate a BETTER decomposition plan that ends with finding a "{target_answer_type}". Output as JSON array.
+"""
+           }
+       ]
+        return messages
+    else:
+        return None
+
+
+

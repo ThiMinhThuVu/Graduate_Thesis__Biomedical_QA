@@ -1,0 +1,54 @@
+{
+    "QIDX": "512370",
+    "original_question": "Which thick triangular muscle is most likely affected by Parsonage-Turner syndrome and hereditary neuralgic amyotrophy?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which thick triangular muscle is most likely affected by Parsonage-Turner syndrome and hereditary neuralgic amyotrophy?",
+            "search_keyword": "Parsonage-Turner syndrome hereditary neuralgic amyotrophy affected muscle",
+            "key_entity": [],
+            "short_answer": "trapezius muscle",
+            "long_answer": "Parsonage-Turner syndrome, also known as neuralgic amyotrophy, is a condition that predominantly affects the brachial plexus and its branches, leading to severe pain and subsequent muscle weakness. Although several muscles of the shoulder girdle may be involved, the thick, triangular muscle most commonly affected is the trapezius. The trapezius muscle is responsible for movements of the scapula, and its involvement in Parsonage-Turner syndrome can result in significant functional impairment due to muscle atrophy and weakness.",
+            "retrieval_information": "- Neuralgic Amyotrophy (26.07.2024) 26 Jul 2024 — The suprascapular and long thoracic nerves are most commonly affected. For this reason, it is of paramount importance to assess abduction and ...\n- Orphanet: Neuralgic amyotrophy Weakness in the periscapular and periglenohumeral muscles follows hours to weeks after the initial onset of pain. These pains are usually relentless, worse at ...\n- Parsonage-Turner Syndrome: (Neuralgic Amyotrophy) 28 Nov 2023 — PTS can affect one or both sides of the body. PTS most commonly affects branches arising from the brachial plexus, a complex network of nerves ...\n- Brachial Neuritis - StatPearls - NCBI Bookshelf by Y Al Khalili · 2024 · Cited by 12 — Brachial neuritis, also called neuralgic amyotrophy or Parsonage-Turner syndrome, is a neuromuscular syndrome involving the peripheral nerves.\n- Parsonage-Turner Syndrome and Hereditary Brachial Plexus ... Parsonage and Turner termed the disorder “brachial neuralgic amyotrophy,” highlighting neuropathic pain and muscle atrophy. Modern electrodiagnostic and ...\n\n- Parsonage–Turner syndrome Parsonage–Turner syndrome (abbreviated PTS), also known as acute brachial neuropathy and neuralgic amyotrophy, is a syndrome of unknown cause.\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which thick triangular muscle is most likely affected by Parsonage-Turner syndrome and hereditary neuralgic amyotrophy?",
+                "search_keyword": "Parsonage-Turner syndrome hereditary neuralgic amyotrophy affected muscle",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "trapezius muscle",
+                "long_answer": "Parsonage-Turner syndrome, also known as neuralgic amyotrophy, is a condition that predominantly affects the brachial plexus and its branches, leading to severe pain and subsequent muscle weakness. Although several muscles of the shoulder girdle may be involved, the thick, triangular muscle most commonly affected is the trapezius. The trapezius muscle is responsible for movements of the scapula, and its involvement in Parsonage-Turner syndrome can result in significant functional impairment due to muscle atrophy and weakness.",
+                "candidate": [
+                    {
+                        "short_answer": "trapezius muscle",
+                        "long_answer": "Parsonage-Turner syndrome, also known as neuralgic amyotrophy, is a condition that predominantly affects the brachial plexus and its branches, leading to severe pain and subsequent muscle weakness. Although several muscles of the shoulder girdle may be involved, the thick, triangular muscle most commonly affected is the trapezius. The trapezius muscle is responsible for movements of the scapula, and its involvement in Parsonage-Turner syndrome can result in significant functional impairment due to muscle atrophy and weakness.",
+                        "retrieval_information": "- Neuralgic Amyotrophy (26.07.2024) 26 Jul 2024 — The suprascapular and long thoracic nerves are most commonly affected. For this reason, it is of paramount importance to assess abduction and ...\n- Orphanet: Neuralgic amyotrophy Weakness in the periscapular and periglenohumeral muscles follows hours to weeks after the initial onset of pain. These pains are usually relentless, worse at ...\n- Parsonage-Turner Syndrome: (Neuralgic Amyotrophy) 28 Nov 2023 — PTS can affect one or both sides of the body. PTS most commonly affects branches arising from the brachial plexus, a complex network of nerves ...\n- Brachial Neuritis - StatPearls - NCBI Bookshelf by Y Al Khalili · 2024 · Cited by 12 — Brachial neuritis, also called neuralgic amyotrophy or Parsonage-Turner syndrome, is a neuromuscular syndrome involving the peripheral nerves.\n- Parsonage-Turner Syndrome and Hereditary Brachial Plexus ... Parsonage and Turner termed the disorder “brachial neuralgic amyotrophy,” highlighting neuropathic pain and muscle atrophy. Modern electrodiagnostic and ...\n\n- Parsonage–Turner syndrome Parsonage–Turner syndrome (abbreviated PTS), also known as acute brachial neuropathy and neuralgic amyotrophy, is a syndrome of unknown cause.\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Parsonage-Turner syndrome, also known as neuralgic amyotrophy, is a condition that predominantly affects the brachial plexus and its branches, leading to severe pain and subsequent muscle weakness. Although several muscles of the shoulder girdle may be involved, the thick, triangular muscle most commonly affected is the trapezius. The trapezius muscle is responsible for movements of the scapula, and its involvement in Parsonage-Turner syndrome can result in significant functional impairment due to muscle atrophy and weakness.",
+                            "short_answer": "trapezius muscle"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Neuralgic Amyotrophy (26.07.2024) 26 Jul 2024 — The suprascapular and long thoracic nerves are most commonly affected. For this reason, it is of paramount importance to assess abduction and ...\n- Orphanet: Neuralgic amyotrophy Weakness in the periscapular and periglenohumeral muscles follows hours to weeks after the initial onset of pain. These pains are usually relentless, worse at ...\n- Parsonage-Turner Syndrome: (Neuralgic Amyotrophy) 28 Nov 2023 — PTS can affect one or both sides of the body. PTS most commonly affects branches arising from the brachial plexus, a complex network of nerves ...\n- Brachial Neuritis - StatPearls - NCBI Bookshelf by Y Al Khalili · 2024 · Cited by 12 — Brachial neuritis, also called neuralgic amyotrophy or Parsonage-Turner syndrome, is a neuromuscular syndrome involving the peripheral nerves.\n- Parsonage-Turner Syndrome and Hereditary Brachial Plexus ... Parsonage and Turner termed the disorder “brachial neuralgic amyotrophy,” highlighting neuropathic pain and muscle atrophy. Modern electrodiagnostic and ...\n\n- Parsonage–Turner syndrome Parsonage–Turner syndrome (abbreviated PTS), also known as acute brachial neuropathy and neuralgic amyotrophy, is a syndrome of unknown cause.\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Parsonage-Turner syndrome, also known as neuralgic amyotrophy, is a condition that predominantly affects the brachial plexus and its branches, leading to severe pain and subsequent muscle weakness. Although several muscles of the shoulder girdle may be involved, the thick, triangular muscle most commonly affected is the trapezius. The trapezius muscle is responsible for movements of the scapula, and its involvement in Parsonage-Turner syndrome can result in significant functional impairment due to muscle atrophy and weakness.",
+        "short_answer": "trapezius muscle",
+        "retrieval_information": "- Neuralgic Amyotrophy (26.07.2024) 26 Jul 2024 — The suprascapular and long thoracic nerves are most commonly affected. For this reason, it is of paramount importance to assess abduction and ...\n- Orphanet: Neuralgic amyotrophy Weakness in the periscapular and periglenohumeral muscles follows hours to weeks after the initial onset of pain. These pains are usually relentless, worse at ...\n- Parsonage-Turner Syndrome: (Neuralgic Amyotrophy) 28 Nov 2023 — PTS can affect one or both sides of the body. PTS most commonly affects branches arising from the brachial plexus, a complex network of nerves ...\n- Brachial Neuritis - StatPearls - NCBI Bookshelf by Y Al Khalili · 2024 · Cited by 12 — Brachial neuritis, also called neuralgic amyotrophy or Parsonage-Turner syndrome, is a neuromuscular syndrome involving the peripheral nerves.\n- Parsonage-Turner Syndrome and Hereditary Brachial Plexus ... Parsonage and Turner termed the disorder “brachial neuralgic amyotrophy,” highlighting neuropathic pain and muscle atrophy. Modern electrodiagnostic and ...\n\n- Parsonage–Turner syndrome Parsonage–Turner syndrome (abbreviated PTS), also known as acute brachial neuropathy and neuralgic amyotrophy, is a syndrome of unknown cause.\n\n- Wikipedia: "
+    }
+}

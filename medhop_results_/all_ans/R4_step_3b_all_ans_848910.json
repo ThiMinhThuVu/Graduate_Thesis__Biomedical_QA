@@ -1,0 +1,54 @@
+{
+    "QIDX": "848910",
+    "original_question": "Which autosomal semi-dominant form of the genetic skin disorder caused by the Filaggrin gene is responsible for over 95% of all cases?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which autosomal semi-dominant form of the genetic skin disorder caused by the Filaggrin gene is responsible for over 95% of all cases?",
+            "search_keyword": "autosomal semi-dominant genetic skin disorder Filaggrin gene 95% cases",
+            "key_entity": [],
+            "short_answer": "ichthyosis vulgaris",
+            "long_answer": "Ichthyosis vulgaris is an autosomal semi-dominant form of ichthyosis caused by heterozygous loss-of-function mutations in the filaggrin (FLG) gene. It is the most common form of the genetic skin disorder, responsible for over 95% of cases, and exhibits variable expressivity despite its high penetrance.",
+            "retrieval_information": "- Ichthyosis vulgaris: An updated review - PMC - PubMed Central by H Jaffar · 2022 · Cited by 31 — Making up more than 95% cases of ichthyosis, ichthyosis vulgaris is caused by heterozygous loss‐of‐function mutation of the filaggrin gene, ...\n- Ichthyosis Vulgaris - CAGS Mutations in the filaggrin (FLG) gene have been identified as the cause of ichthyosis vulgaris and was shown to be the major predisposing factor for atopic ...\n- Ichthyosis vulgaris Ichthyosis vulgaris is primarily an autosomal semi-dominant disorder with penetrance estimated at 80-95%, though it exhibits variable expressivity, leading to a ...\n- Specific Filaggrin Mutations Cause Ichthyosis Vulgaris and Are ... 10 Aug 2025 — Mutations in the gene encoding filaggrin (FLG) have been identified as the cause of ichthyosis vulgaris (IV) and shown to be major ...\n- Ichthyosis vulgaris: An updated review by H Jaffar · 2023 · Cited by 31 — Making up more than 95% cases of ichthyosis, ichthyosis vulgaris is caused by heterozygous loss‐of‐function mutation of the filaggrin gene, ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which autosomal semi-dominant form of the genetic skin disorder caused by the Filaggrin gene is responsible for over 95% of all cases?",
+                "search_keyword": "autosomal semi-dominant genetic skin disorder Filaggrin gene 95% cases",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "ichthyosis vulgaris",
+                "long_answer": "Ichthyosis vulgaris is an autosomal semi-dominant form of ichthyosis caused by heterozygous loss-of-function mutations in the filaggrin (FLG) gene. It is the most common form of the genetic skin disorder, responsible for over 95% of cases, and exhibits variable expressivity despite its high penetrance.",
+                "candidate": [
+                    {
+                        "short_answer": "ichthyosis vulgaris",
+                        "long_answer": "Ichthyosis vulgaris is an autosomal semi-dominant form of ichthyosis caused by heterozygous loss-of-function mutations in the filaggrin (FLG) gene. It is the most common form of the genetic skin disorder, responsible for over 95% of cases, and exhibits variable expressivity despite its high penetrance.",
+                        "retrieval_information": "- Ichthyosis vulgaris: An updated review - PMC - PubMed Central by H Jaffar · 2022 · Cited by 31 — Making up more than 95% cases of ichthyosis, ichthyosis vulgaris is caused by heterozygous loss‐of‐function mutation of the filaggrin gene, ...\n- Ichthyosis Vulgaris - CAGS Mutations in the filaggrin (FLG) gene have been identified as the cause of ichthyosis vulgaris and was shown to be the major predisposing factor for atopic ...\n- Ichthyosis vulgaris Ichthyosis vulgaris is primarily an autosomal semi-dominant disorder with penetrance estimated at 80-95%, though it exhibits variable expressivity, leading to a ...\n- Specific Filaggrin Mutations Cause Ichthyosis Vulgaris and Are ... 10 Aug 2025 — Mutations in the gene encoding filaggrin (FLG) have been identified as the cause of ichthyosis vulgaris (IV) and shown to be major ...\n- Ichthyosis vulgaris: An updated review by H Jaffar · 2023 · Cited by 31 — Making up more than 95% cases of ichthyosis, ichthyosis vulgaris is caused by heterozygous loss‐of‐function mutation of the filaggrin gene, ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Ichthyosis vulgaris is an autosomal semi-dominant form of ichthyosis caused by heterozygous loss-of-function mutations in the filaggrin (FLG) gene. It is the most common form of the genetic skin disorder, responsible for over 95% of cases, and exhibits variable expressivity despite its high penetrance.",
+                            "short_answer": "ichthyosis vulgaris"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Ichthyosis vulgaris: An updated review - PMC - PubMed Central by H Jaffar · 2022 · Cited by 31 — Making up more than 95% cases of ichthyosis, ichthyosis vulgaris is caused by heterozygous loss‐of‐function mutation of the filaggrin gene, ...\n- Ichthyosis Vulgaris - CAGS Mutations in the filaggrin (FLG) gene have been identified as the cause of ichthyosis vulgaris and was shown to be the major predisposing factor for atopic ...\n- Ichthyosis vulgaris Ichthyosis vulgaris is primarily an autosomal semi-dominant disorder with penetrance estimated at 80-95%, though it exhibits variable expressivity, leading to a ...\n- Specific Filaggrin Mutations Cause Ichthyosis Vulgaris and Are ... 10 Aug 2025 — Mutations in the gene encoding filaggrin (FLG) have been identified as the cause of ichthyosis vulgaris (IV) and shown to be major ...\n- Ichthyosis vulgaris: An updated review by H Jaffar · 2023 · Cited by 31 — Making up more than 95% cases of ichthyosis, ichthyosis vulgaris is caused by heterozygous loss‐of‐function mutation of the filaggrin gene, ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Ichthyosis vulgaris is an autosomal semi-dominant form of ichthyosis caused by heterozygous loss-of-function mutations in the filaggrin (FLG) gene. It is the most common form of the genetic skin disorder, responsible for over 95% of cases, and exhibits variable expressivity despite its high penetrance.",
+        "short_answer": "ichthyosis vulgaris",
+        "retrieval_information": "- Ichthyosis vulgaris: An updated review - PMC - PubMed Central by H Jaffar · 2022 · Cited by 31 — Making up more than 95% cases of ichthyosis, ichthyosis vulgaris is caused by heterozygous loss‐of‐function mutation of the filaggrin gene, ...\n- Ichthyosis Vulgaris - CAGS Mutations in the filaggrin (FLG) gene have been identified as the cause of ichthyosis vulgaris and was shown to be the major predisposing factor for atopic ...\n- Ichthyosis vulgaris Ichthyosis vulgaris is primarily an autosomal semi-dominant disorder with penetrance estimated at 80-95%, though it exhibits variable expressivity, leading to a ...\n- Specific Filaggrin Mutations Cause Ichthyosis Vulgaris and Are ... 10 Aug 2025 — Mutations in the gene encoding filaggrin (FLG) have been identified as the cause of ichthyosis vulgaris (IV) and shown to be major ...\n- Ichthyosis vulgaris: An updated review by H Jaffar · 2023 · Cited by 31 — Making up more than 95% cases of ichthyosis, ichthyosis vulgaris is caused by heterozygous loss‐of‐function mutation of the filaggrin gene, ...\n\n\n\n- Wikipedia: "
+    }
+}

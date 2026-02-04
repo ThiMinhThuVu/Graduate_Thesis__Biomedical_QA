@@ -1,0 +1,72 @@
+{
+    "QIDX": "984694",
+    "original_question": "Which condition is characterized by multiple lipomas that grow in subcutaneous fat across the body that are painful and that typically do not respond to analgesics?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which condition is characterized by multiple lipomas that grow in subcutaneous fat across the body that are painful and that typically do not respond to analgesics?",
+            "search_keyword": "condition multiple lipomas subcutaneous fat painful analgesics",
+            "key_entity": [],
+            "short_answer": "Dercum's disease",
+            "long_answer": "Dercum's disease, also known as adiposis dolorosa, is a rare condition characterized by multiple painful lipomas that develop in the subcutaneous fat. These fatty tumors are typically resistant to conventional analgesics, making pain management a significant clinical challenge. The disease manifests as diffuse, painful, benign fatty deposits across various parts of the body and is known for its chronic nature with gradual progression.",
+            "retrieval_information": "- Adiposis Dolorosa - StatPearls - NCBI Bookshelf - NIH by JC Cook · 2023 · Cited by 3 — Adiposis dolorosa, or Dercum disease, is a rare, chronic adipose tissue disorder characterized by multiple painful subcutaneous lipomas ...\n- Dercum's disease Dercum's disease (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ...\n- Adiposis dolorosa A rare disorder of subcutaneous tissue characterized by the development of painful, adipose tissue with multiple subcutaneous lipomas, in association with ...\n- Dercum's Disease - Lipoma Symptoms, Causes, Treatment 26 Mar 2020 — Dercum's disease is a rare disorder characterized by multiple, painful growths of fatty tissue (lipomas).\n- Dercum Disease (adiposis dolorosa) Dercum disease is a rare condition characterised by the gradual and progressive development of benign painful subcutaneous lipomas and angiolipomas.\n\n- Dercum's disease Dercum's disease (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ...\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which condition is characterized by multiple lipomas that grow in subcutaneous fat across the body that are painful and that typically do not respond to analgesics?",
+                "search_keyword": "condition multiple lipomas subcutaneous fat painful analgesics",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "Dercum's disease",
+                "long_answer": "Dercum's disease, also known as adiposis dolorosa, is a rare condition characterized by multiple painful lipomas that develop in the subcutaneous fat. These fatty tumors are typically resistant to conventional analgesics, making pain management a significant clinical challenge. The disease manifests as diffuse, painful, benign fatty deposits across various parts of the body and is known for its chronic nature with gradual progression.",
+                "candidate": [
+                    {
+                        "short_answer": "Dercum's disease",
+                        "long_answer": "Dercum's disease, also known as adiposis dolorosa, is a rare condition characterized by multiple painful lipomas that develop in the subcutaneous fat. These fatty tumors are typically resistant to conventional analgesics, making pain management a significant clinical challenge. The disease manifests as diffuse, painful, benign fatty deposits across various parts of the body and is known for its chronic nature with gradual progression.",
+                        "retrieval_information": "- Adiposis Dolorosa - StatPearls - NCBI Bookshelf - NIH by JC Cook · 2023 · Cited by 3 — Adiposis dolorosa, or Dercum disease, is a rare, chronic adipose tissue disorder characterized by multiple painful subcutaneous lipomas ...\n- Dercum's disease Dercum's disease (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ...\n- Adiposis dolorosa A rare disorder of subcutaneous tissue characterized by the development of painful, adipose tissue with multiple subcutaneous lipomas, in association with ...\n- Dercum's Disease - Lipoma Symptoms, Causes, Treatment 26 Mar 2020 — Dercum's disease is a rare disorder characterized by multiple, painful growths of fatty tissue (lipomas).\n- Dercum Disease (adiposis dolorosa) Dercum disease is a rare condition characterised by the gradual and progressive development of benign painful subcutaneous lipomas and angiolipomas.\n\n- Dercum's disease Dercum's disease (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ...\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Dercum's disease, also known as adiposis dolorosa, is a rare condition characterized by multiple painful lipomas that develop in the subcutaneous fat. These fatty tumors are typically resistant to conventional analgesics, making pain management a significant clinical challenge. The disease manifests as diffuse, painful, benign fatty deposits across various parts of the body and is known for its chronic nature with gradual progression.",
+                            "short_answer": "Dercum's disease"
+                        }
+                    },
+                    {
+                        "short_answer": "Dercum disease",
+                        "long_answer": "Dercum disease, also known as adiposis dolorosa, is a rare chronic disorder characterized by the presence of multiple painful fatty tumors (lipomas) in the subcutaneous tissue throughout the body. These lipomas are typically resistant to standard analgesics, making pain management challenging for patients. The condition is believed to involve abnormalities in adipose tissue and may be associated with systemic symptoms such as fatigue and weakness.",
+                        "retrieval_information": "- Adiposis Dolorosa - StatPearls - NCBI Bookshelf - NIH by JC Cook · 2023 · Cited by 3 — Adiposis dolorosa, or Dercum disease, is a rare, chronic adipose tissue disorder characterized by multiple painful subcutaneous lipomas ...\n- (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ...\n- Adiposis dolorosa A rare disorder of subcutaneous tissue characterized by the development of painful, adipose tissue with multiple subcutaneous lipomas, in association with ...\n- - Lipoma Symptoms, Causes, Treatment 26 Mar 2020 — is a rare disorder characterized by multiple, painful growths of fatty tissue (lipomas).\n- Dercum Disease (adiposis dolorosa) Dercum disease is a rare condition characterised by the gradual and progressive development of benign painful subcutaneous lipomas and angiolipomas. - (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ... - Wikipedia:",
+                        "full_data": {
+                            "long_answer": "Dercum disease, also known as adiposis dolorosa, is a rare chronic disorder characterized by the presence of multiple painful fatty tumors (lipomas) in the subcutaneous tissue throughout the body. These lipomas are typically resistant to standard analgesics, making pain management challenging for patients. The condition is believed to involve abnormalities in adipose tissue and may be associated with systemic symptoms such as fatigue and weakness.",
+                            "short_answer": "Dercum disease"
+                        }
+                    },
+                    {
+                        "short_answer": "Adiposis dolorosa",
+                        "long_answer": "Adiposis dolorosa, also known as Dercum's disease, is a rare disorder characterized by the development of multiple painful lipomas in the subcutaneous fat. These benign fatty tumors are distributed throughout the body and are notably resistant to common analgesics, making the management of pain particularly challenging. The disorder primarily affects adipose tissue and can lead to chronic discomfort and disability.",
+                        "retrieval_information": "- Adiposis Dolorosa - StatPearls - NCBI Bookshelf - NIH by JC Cook · 2023 · Cited by 3 — Adiposis dolorosa, or , is a rare, chronic adipose tissue disorder characterized by multiple painful subcutaneous lipomas ...\n- (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ...\n- Adiposis dolorosa A rare disorder of subcutaneous tissue characterized by the development of painful, adipose tissue with multiple subcutaneous lipomas, in association with ...\n- - Lipoma Symptoms, Causes, Treatment 26 Mar 2020 — is a rare disorder characterized by multiple, painful growths of fatty tissue (lipomas).\n- (adiposis dolorosa) is a rare condition characterised by the gradual and progressive development of benign painful subcutaneous lipomas and angiolipomas. - (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ... - Wikipedia:",
+                        "full_data": {
+                            "long_answer": "Adiposis dolorosa, also known as Dercum's disease, is a rare disorder characterized by the development of multiple painful lipomas in the subcutaneous fat. These benign fatty tumors are distributed throughout the body and are notably resistant to common analgesics, making the management of pain particularly challenging. The disorder primarily affects adipose tissue and can lead to chronic discomfort and disability.",
+                            "short_answer": "Adiposis dolorosa"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Adiposis Dolorosa - StatPearls - NCBI Bookshelf - NIH by JC Cook · 2023 · Cited by 3 — Adiposis dolorosa, or Dercum disease, is a rare, chronic adipose tissue disorder characterized by multiple painful subcutaneous lipomas ...\n- Dercum's disease Dercum's disease (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ...\n- Adiposis dolorosa A rare disorder of subcutaneous tissue characterized by the development of painful, adipose tissue with multiple subcutaneous lipomas, in association with ...\n- Dercum's Disease - Lipoma Symptoms, Causes, Treatment 26 Mar 2020 — Dercum's disease is a rare disorder characterized by multiple, painful growths of fatty tissue (lipomas).\n- Dercum Disease (adiposis dolorosa) Dercum disease is a rare condition characterised by the gradual and progressive development of benign painful subcutaneous lipomas and angiolipomas.\n\n- Dercum's disease Dercum's disease (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ...\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Dercum's disease, also known as adiposis dolorosa, is a rare condition characterized by multiple painful lipomas that develop in the subcutaneous fat. These fatty tumors are typically resistant to conventional analgesics, making pain management a significant clinical challenge. The disease manifests as diffuse, painful, benign fatty deposits across various parts of the body and is known for its chronic nature with gradual progression.",
+        "short_answer": "Dercum's disease",
+        "retrieval_information": "- Adiposis Dolorosa - StatPearls - NCBI Bookshelf - NIH by JC Cook · 2023 · Cited by 3 — Adiposis dolorosa, or Dercum disease, is a rare, chronic adipose tissue disorder characterized by multiple painful subcutaneous lipomas ...\n- Dercum's disease Dercum's disease (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ...\n- Adiposis dolorosa A rare disorder of subcutaneous tissue characterized by the development of painful, adipose tissue with multiple subcutaneous lipomas, in association with ...\n- Dercum's Disease - Lipoma Symptoms, Causes, Treatment 26 Mar 2020 — Dercum's disease is a rare disorder characterized by multiple, painful growths of fatty tissue (lipomas).\n- Dercum Disease (adiposis dolorosa) Dercum disease is a rare condition characterised by the gradual and progressive development of benign painful subcutaneous lipomas and angiolipomas.\n\n- Dercum's disease Dercum's disease (DD) is a rare condition characterized by multiple painful fatty tumors, called lipomas, that can grow anywhere in subcutaneous fat across ...\n\n- Wikipedia: "
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "QIDX": "928221",
+    "original_question": "What donor nerve did Zuker et al. suggest in 1989 to restore the ability to smile in children with Möbius syndrome linked to maternal misoprostol use?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "What donor nerve did Zuker et al. suggest in 1989 to restore the ability to smile in children with Möbius syndrome linked to maternal misoprostol use?",
+            "search_keyword": "Zuker 1989 donor nerve restore smile Möbius syndrome maternal misoprostol",
+            "key_entity": [],
+            "short_answer": "masseteric nerve",
+            "long_answer": "In his 1989 study, Zuker et al. suggested using the masseteric nerve as the donor nerve to restore smile function in children with Möbius syndrome linked to maternal misoprostol use. The masseteric nerve, a branch of the trigeminal nerve, offers a robust neural input capable of reinnervating a transplanted muscle, thereby achieving spontaneous and effective smile restoration in these patients.",
+            "retrieval_information": "- A smile for the Möbius' syndrome patient by RM Zuker · 1989 · Cited by 103 — A major problem for the patient with Möbius' syndrome is the inability to smile. With the development of vascularized muscle transplantation, ...\n- Congenital facial palsy and emotion processing: The case of Moebius ... by E De Stefani · 2019 · Cited by 66 — Surgical techniques for smile restoration in patients with Möbius syndrome ... Use of misoprostol during pregnancy and Möbius' syndrome in infants ...\n- (PDF) Moebius Syndrome: An Updated Review of Literature by SA Monawwer · 2023 · Cited by 23 — Moebius Syndrome is a rare, non-progressive congenital neuropathological syndrome characterized primarily by the underde-velopment of the facial (CN VII) and ...\n- 12. Pediatric Facial Nerve Palsies - Thieme E-Books & E-Journals Notable syndromes, such as Möbius syndrome, are highlighted. The assessment of a child presenting with facial paralysis is discussed, including important ...\n- Möbius and Möbius-like patients: etiology, diagnosis, and treatment ... by JK Terzis · 2002 · Cited by 102 — Möbius' syndrome consists of developmental bilateral facial and abducens nerve palsy in association with other cranial nerve palsies and possible limb ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "What donor nerve did Zuker et al. suggest in 1989 to restore the ability to smile in children with Möbius syndrome linked to maternal misoprostol use?",
+                "search_keyword": "Zuker 1989 donor nerve restore smile Möbius syndrome maternal misoprostol",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "masseteric nerve",
+                "long_answer": "In his 1989 study, Zuker et al. suggested using the masseteric nerve as the donor nerve to restore smile function in children with Möbius syndrome linked to maternal misoprostol use. The masseteric nerve, a branch of the trigeminal nerve, offers a robust neural input capable of reinnervating a transplanted muscle, thereby achieving spontaneous and effective smile restoration in these patients.",
+                "candidate": [
+                    {
+                        "short_answer": "masseteric nerve",
+                        "long_answer": "In his 1989 study, Zuker et al. suggested using the masseteric nerve as the donor nerve to restore smile function in children with Möbius syndrome linked to maternal misoprostol use. The masseteric nerve, a branch of the trigeminal nerve, offers a robust neural input capable of reinnervating a transplanted muscle, thereby achieving spontaneous and effective smile restoration in these patients.",
+                        "retrieval_information": "- A smile for the Möbius' syndrome patient by RM Zuker · 1989 · Cited by 103 — A major problem for the patient with Möbius' syndrome is the inability to smile. With the development of vascularized muscle transplantation, ...\n- Congenital facial palsy and emotion processing: The case of Moebius ... by E De Stefani · 2019 · Cited by 66 — Surgical techniques for smile restoration in patients with Möbius syndrome ... Use of misoprostol during pregnancy and Möbius' syndrome in infants ...\n- (PDF) Moebius Syndrome: An Updated Review of Literature by SA Monawwer · 2023 · Cited by 23 — Moebius Syndrome is a rare, non-progressive congenital neuropathological syndrome characterized primarily by the underde-velopment of the facial (CN VII) and ...\n- 12. Pediatric Facial Nerve Palsies - Thieme E-Books & E-Journals Notable syndromes, such as Möbius syndrome, are highlighted. The assessment of a child presenting with facial paralysis is discussed, including important ...\n- Möbius and Möbius-like patients: etiology, diagnosis, and treatment ... by JK Terzis · 2002 · Cited by 102 — Möbius' syndrome consists of developmental bilateral facial and abducens nerve palsy in association with other cranial nerve palsies and possible limb ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "In his 1989 study, Zuker et al. suggested using the masseteric nerve as the donor nerve to restore smile function in children with Möbius syndrome linked to maternal misoprostol use. The masseteric nerve, a branch of the trigeminal nerve, offers a robust neural input capable of reinnervating a transplanted muscle, thereby achieving spontaneous and effective smile restoration in these patients.",
+                            "short_answer": "masseteric nerve"
+                        }
+                    },
+                    {
+                        "short_answer": "masseter nerve",
+                        "long_answer": "Zuker et al. in 1989 proposed using the masseter nerve as the donor nerve for reinnervation in smile restoration procedures for children with Möbius syndrome linked to maternal misoprostol use. The masseter nerve, a motor branch of the trigeminal nerve, provides robust and reliable motor input, which is essential for achieving effective facial reanimation and enabling the patient to regain voluntary control over smiling.",
+                        "retrieval_information": "- A smile for the Möbius' syndrome patient by RM Zuker · 1989 · Cited by 103 — A major problem for the patient with Möbius' syndrome is the inability to smile. With the development of vascularized muscle transplantation, ...\n- Congenital facial palsy and emotion processing: The case of Moebius ... by E De Stefani · 2019 · Cited by 66 — Surgical techniques for smile restoration in patients with Möbius syndrome ... Use of misoprostol during pregnancy and Möbius' syndrome in infants ...\n- (PDF) Moebius Syndrome: An Updated Review of Literature by SA Monawwer · 2023 · Cited by 23 — Moebius Syndrome is a rare, non-progressive congenital neuropathological syndrome characterized primarily by the underde-velopment of the facial (CN VII) and ...\n- 12. Pediatric Facial Nerve Palsies - Thieme E-Books & E-Journals Notable syndromes, such as Möbius syndrome, are highlighted. The assessment of a child presenting with facial paralysis is discussed, including important ...\n- Möbius and Möbius-like patients: etiology, diagnosis, and treatment ... by JK Terzis · 2002 · Cited by 102 — Möbius' syndrome consists of developmental bilateral facial and abducens nerve palsy in association with other cranial nerve palsies and possible limb ... - Wikipedia:",
+                        "full_data": {
+                            "long_answer": "Zuker et al. in 1989 proposed using the masseter nerve as the donor nerve for reinnervation in smile restoration procedures for children with Möbius syndrome linked to maternal misoprostol use. The masseter nerve, a motor branch of the trigeminal nerve, provides robust and reliable motor input, which is essential for achieving effective facial reanimation and enabling the patient to regain voluntary control over smiling.",
+                            "short_answer": "masseter nerve"
+                        }
+                    }
+                ],
+                "retrieval_information": "- A smile for the Möbius' syndrome patient by RM Zuker · 1989 · Cited by 103 — A major problem for the patient with Möbius' syndrome is the inability to smile. With the development of vascularized muscle transplantation, ...\n- Congenital facial palsy and emotion processing: The case of Moebius ... by E De Stefani · 2019 · Cited by 66 — Surgical techniques for smile restoration in patients with Möbius syndrome ... Use of misoprostol during pregnancy and Möbius' syndrome in infants ...\n- (PDF) Moebius Syndrome: An Updated Review of Literature by SA Monawwer · 2023 · Cited by 23 — Moebius Syndrome is a rare, non-progressive congenital neuropathological syndrome characterized primarily by the underde-velopment of the facial (CN VII) and ...\n- 12. Pediatric Facial Nerve Palsies - Thieme E-Books & E-Journals Notable syndromes, such as Möbius syndrome, are highlighted. The assessment of a child presenting with facial paralysis is discussed, including important ...\n- Möbius and Möbius-like patients: etiology, diagnosis, and treatment ... by JK Terzis · 2002 · Cited by 102 — Möbius' syndrome consists of developmental bilateral facial and abducens nerve palsy in association with other cranial nerve palsies and possible limb ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "In his 1989 study, Zuker et al. suggested using the masseteric nerve as the donor nerve to restore smile function in children with Möbius syndrome linked to maternal misoprostol use. The masseteric nerve, a branch of the trigeminal nerve, offers a robust neural input capable of reinnervating a transplanted muscle, thereby achieving spontaneous and effective smile restoration in these patients.",
+        "short_answer": "masseteric nerve",
+        "retrieval_information": "- A smile for the Möbius' syndrome patient by RM Zuker · 1989 · Cited by 103 — A major problem for the patient with Möbius' syndrome is the inability to smile. With the development of vascularized muscle transplantation, ...\n- Congenital facial palsy and emotion processing: The case of Moebius ... by E De Stefani · 2019 · Cited by 66 — Surgical techniques for smile restoration in patients with Möbius syndrome ... Use of misoprostol during pregnancy and Möbius' syndrome in infants ...\n- (PDF) Moebius Syndrome: An Updated Review of Literature by SA Monawwer · 2023 · Cited by 23 — Moebius Syndrome is a rare, non-progressive congenital neuropathological syndrome characterized primarily by the underde-velopment of the facial (CN VII) and ...\n- 12. Pediatric Facial Nerve Palsies - Thieme E-Books & E-Journals Notable syndromes, such as Möbius syndrome, are highlighted. The assessment of a child presenting with facial paralysis is discussed, including important ...\n- Möbius and Möbius-like patients: etiology, diagnosis, and treatment ... by JK Terzis · 2002 · Cited by 102 — Möbius' syndrome consists of developmental bilateral facial and abducens nerve palsy in association with other cranial nerve palsies and possible limb ...\n\n\n\n- Wikipedia: "
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "QIDX": "699828",
+    "original_question": "Which kinase, when activated by phorbol esters, leads to the formation of a commonly painful subcutaneous lipoma nodule?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which kinase, when activated by phorbol esters, leads to the formation of a commonly painful subcutaneous lipoma nodule?",
+            "search_keyword": "kinase activated phorbol esters subcutaneous lipoma nodule",
+            "key_entity": [],
+            "short_answer": "Protein Kinase D2",
+            "long_answer": "The subcutaneous lipoma nodule mentioned in the question is associated with the activation of Protein Kinase D2 (PKD2) by phorbol esters. Phorbol esters are known activators of certain kinases, including those in the protein kinase C family, but in this context, it has been highlighted that PKD2, when activated by phorbol esters, can efficiently phosphorylate substrates (such as histone H1) and contribute to the development of a painful lipoma nodule. The frequent low-level mutations observed in PKD2 further support its role in neoplastic processes, including the formation of such nodules.",
+            "retrieval_information": "- Frequent low-level mutations of Protein Kinase D2 in angiolipoma 9 Aug 2025 — PKD2 activated by phorbol esters efficiently phosphorylated the exogenous substrate histone H1. In addition, we could identify the C ...\n- 2,3,4,7,8-Pentachlorodibenzofuran (PeCDF) (CASRN 57117-31-4) in ... adrenal gland (males); subcutaneous skin lipoma, fibroma, or fibroadenoma ... CD-1 mouse skin assay using phorbol ester as a promoter (DiGiovanni et al ...\n- Cocarcinogenesis - an overview In the classical mouse skin carcinogenesis model, a phorbol ester binds to a membrane receptor, induces protein kinase C, and is effective with only one ...\n- Cancer Growth and Progression ... kinase activity (17), provides an important conceptual framework in which to ... activated to induce neoplasia if triggered in some way by the genes of ...\n- WO2019195753A1 - Axl kinase inhibitors and use of the same Example 7: Increased active DCs in tumors following administration of an AXL kinase inhibitor. Mice were treated with a tartrate salt of the compound of ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which kinase, when activated by phorbol esters, leads to the formation of a commonly painful subcutaneous lipoma nodule?",
+                "search_keyword": "kinase activated phorbol esters subcutaneous lipoma nodule",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "Protein Kinase D2",
+                "long_answer": "The subcutaneous lipoma nodule mentioned in the question is associated with the activation of Protein Kinase D2 (PKD2) by phorbol esters. Phorbol esters are known activators of certain kinases, including those in the protein kinase C family, but in this context, it has been highlighted that PKD2, when activated by phorbol esters, can efficiently phosphorylate substrates (such as histone H1) and contribute to the development of a painful lipoma nodule. The frequent low-level mutations observed in PKD2 further support its role in neoplastic processes, including the formation of such nodules.",
+                "candidate": [
+                    {
+                        "short_answer": "Protein Kinase D2",
+                        "long_answer": "The subcutaneous lipoma nodule mentioned in the question is associated with the activation of Protein Kinase D2 (PKD2) by phorbol esters. Phorbol esters are known activators of certain kinases, including those in the protein kinase C family, but in this context, it has been highlighted that PKD2, when activated by phorbol esters, can efficiently phosphorylate substrates (such as histone H1) and contribute to the development of a painful lipoma nodule. The frequent low-level mutations observed in PKD2 further support its role in neoplastic processes, including the formation of such nodules.",
+                        "retrieval_information": "- Frequent low-level mutations of Protein Kinase D2 in angiolipoma 9 Aug 2025 — PKD2 activated by phorbol esters efficiently phosphorylated the exogenous substrate histone H1. In addition, we could identify the C ...\n- 2,3,4,7,8-Pentachlorodibenzofuran (PeCDF) (CASRN 57117-31-4) in ... adrenal gland (males); subcutaneous skin lipoma, fibroma, or fibroadenoma ... CD-1 mouse skin assay using phorbol ester as a promoter (DiGiovanni et al ...\n- Cocarcinogenesis - an overview In the classical mouse skin carcinogenesis model, a phorbol ester binds to a membrane receptor, induces protein kinase C, and is effective with only one ...\n- Cancer Growth and Progression ... kinase activity (17), provides an important conceptual framework in which to ... activated to induce neoplasia if triggered in some way by the genes of ...\n- WO2019195753A1 - Axl kinase inhibitors and use of the same Example 7: Increased active DCs in tumors following administration of an AXL kinase inhibitor. Mice were treated with a tartrate salt of the compound of ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "The subcutaneous lipoma nodule mentioned in the question is associated with the activation of Protein Kinase D2 (PKD2) by phorbol esters. Phorbol esters are known activators of certain kinases, including those in the protein kinase C family, but in this context, it has been highlighted that PKD2, when activated by phorbol esters, can efficiently phosphorylate substrates (such as histone H1) and contribute to the development of a painful lipoma nodule. The frequent low-level mutations observed in PKD2 further support its role in neoplastic processes, including the formation of such nodules.",
+                            "short_answer": "Protein Kinase D2"
+                        }
+                    },
+                    {
+                        "short_answer": "protein kinase C",
+                        "long_answer": "Phorbol esters are well-known activators of protein kinase C (PKC), a family of enzymes that play crucial roles in cellular functions such as proliferation, differentiation, and apoptosis. In the context of the formation of subcutaneous lipoma nodules, when phorbol esters bind to their receptor, they activate PKC. This activation can lead to signaling cascades that eventually promote the formation of abnormal, often painful, subcutaneous fatty tissue deposits, such as lipomas.",
+                        "retrieval_information": "- Frequent low-level mutations of in angiolipoma 9 Aug 2025 — PKD2 activated by phorbol esters efficiently phosphorylated the exogenous substrate histone H1. In addition, we could identify the C ...\n- 2,3,4,7,8-Pentachlorodibenzofuran (PeCDF) (CASRN 57117-31-4) in ... adrenal gland (males); subcutaneous skin lipoma, fibroma, or fibroadenoma ... CD-1 mouse skin assay using phorbol ester as a promoter (DiGiovanni et al ...\n- Cocarcinogenesis - an overview In the classical mouse skin carcinogenesis model, a phorbol ester binds to a membrane receptor, induces protein kinase C, and is effective with only one ...\n- Cancer Growth and Progression ... kinase activity (17), provides an important conceptual framework in which to ... activated to induce neoplasia if triggered in some way by the genes of ...\n- WO2019195753A1 - Axl kinase inhibitors and use of the same Example 7: Increased active DCs in tumors following administration of an AXL kinase inhibitor. Mice were treated with a tartrate salt of the compound of ... - Wikipedia:",
+                        "full_data": {
+                            "long_answer": "Phorbol esters are well-known activators of protein kinase C (PKC), a family of enzymes that play crucial roles in cellular functions such as proliferation, differentiation, and apoptosis. In the context of the formation of subcutaneous lipoma nodules, when phorbol esters bind to their receptor, they activate PKC. This activation can lead to signaling cascades that eventually promote the formation of abnormal, often painful, subcutaneous fatty tissue deposits, such as lipomas.",
+                            "short_answer": "protein kinase C"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Frequent low-level mutations of Protein Kinase D2 in angiolipoma 9 Aug 2025 — PKD2 activated by phorbol esters efficiently phosphorylated the exogenous substrate histone H1. In addition, we could identify the C ...\n- 2,3,4,7,8-Pentachlorodibenzofuran (PeCDF) (CASRN 57117-31-4) in ... adrenal gland (males); subcutaneous skin lipoma, fibroma, or fibroadenoma ... CD-1 mouse skin assay using phorbol ester as a promoter (DiGiovanni et al ...\n- Cocarcinogenesis - an overview In the classical mouse skin carcinogenesis model, a phorbol ester binds to a membrane receptor, induces protein kinase C, and is effective with only one ...\n- Cancer Growth and Progression ... kinase activity (17), provides an important conceptual framework in which to ... activated to induce neoplasia if triggered in some way by the genes of ...\n- WO2019195753A1 - Axl kinase inhibitors and use of the same Example 7: Increased active DCs in tumors following administration of an AXL kinase inhibitor. Mice were treated with a tartrate salt of the compound of ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The subcutaneous lipoma nodule mentioned in the question is associated with the activation of Protein Kinase D2 (PKD2) by phorbol esters. Phorbol esters are known activators of certain kinases, including those in the protein kinase C family, but in this context, it has been highlighted that PKD2, when activated by phorbol esters, can efficiently phosphorylate substrates (such as histone H1) and contribute to the development of a painful lipoma nodule. The frequent low-level mutations observed in PKD2 further support its role in neoplastic processes, including the formation of such nodules.",
+        "short_answer": "Protein Kinase D2",
+        "retrieval_information": "- Frequent low-level mutations of Protein Kinase D2 in angiolipoma 9 Aug 2025 — PKD2 activated by phorbol esters efficiently phosphorylated the exogenous substrate histone H1. In addition, we could identify the C ...\n- 2,3,4,7,8-Pentachlorodibenzofuran (PeCDF) (CASRN 57117-31-4) in ... adrenal gland (males); subcutaneous skin lipoma, fibroma, or fibroadenoma ... CD-1 mouse skin assay using phorbol ester as a promoter (DiGiovanni et al ...\n- Cocarcinogenesis - an overview In the classical mouse skin carcinogenesis model, a phorbol ester binds to a membrane receptor, induces protein kinase C, and is effective with only one ...\n- Cancer Growth and Progression ... kinase activity (17), provides an important conceptual framework in which to ... activated to induce neoplasia if triggered in some way by the genes of ...\n- WO2019195753A1 - Axl kinase inhibitors and use of the same Example 7: Increased active DCs in tumors following administration of an AXL kinase inhibitor. Mice were treated with a tartrate salt of the compound of ...\n\n\n\n- Wikipedia: "
+    }
+}

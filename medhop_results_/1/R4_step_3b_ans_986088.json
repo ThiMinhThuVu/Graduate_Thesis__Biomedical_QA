@@ -1,0 +1,24 @@
+{
+    "0": {
+        "0": {
+            "long_answer": "Duchenne muscular dystrophy (DMD) is primarily associated with mutations in the DMD gene, which encodes the protein dystrophin. This gene is located on the X chromosome, specifically within the Xp21.2–Xp21.1 region. Loss-of-function mutations in the DMD gene, often involving deletions or point mutations that disrupt the reading frame, lead to a lack of functional dystrophin protein, which is crucial for muscle stability and function. Although other muscular dystrophies can be linked to mutations in genes encoding components of the dystrophin-associated protein complex, the central genetic defect in Duchenne muscular dystrophy is in the DMD gene.",
+            "short_answer": "DMD gene"
+        },
+        "1": {
+            "long_answer": "Hereditary spastic paraplegia (HSP) is a genetically heterogeneous disorder with over 80 genetic types identified. Numerous genes have been implicated in its various forms, which include both autosomal dominant and recessive patterns. Notable genes include ATL1, ALS2, ABHD16A, TFG, and AMFR, which have been identified in specific populations, such as in studies of Pakistani cohorts. Other key genes associated with HSP include SPG11 (which encodes spatacsin) and members of the AP-4 complex such as AP4E1, AP4M1, and AP4S1. Additionally, the DMD gene has also been mentioned in the context of HSP phenotypes. Ongoing research, including whole genome sequencing projects, continues to reveal further candidate genes like RINT1, underscoring the complexity and diversity of the genetic basis for HSP.",
+            "short_answer": "ATL1, ALS2, ABHD16A, TFG, AMFR, SPG11, AP4E1, AP4M1, AP4S1, DMD"
+        },
+        "2": {
+            "long_answer": "Duchenne muscular dystrophy (DMD) is caused by mutations in the dystrophin gene, which is essential for maintaining muscle fiber integrity. The dystrophin gene is located on the X chromosome, specifically on the short arm (Xp21). Because the disease is X-linked recessive, it predominantly affects males, while females are typically carriers for the mutation.",
+            "short_answer": "chromosome X"
+        },
+        "3": {
+            "long_answer": "Hereditary spastic paraplegia (HSP) is a group of inherited disorders with considerable genetic diversity, with different forms resulting from mutations in genes located on various chromosomes. Among these, the X‐linked forms of HSP are caused by mutations in genes located on the X chromosome. For instance, the SPG2 form of HSP and conditions like MASA syndrome (an X-linked recessive disorder within the HSP spectrum) are both associated with mutations found on the X chromosome. This has been confirmed by genetic mapping studies that have identified loci on the X chromosome involved in the disease, defining an X-linked pattern of inheritance in affected families.",
+            "short_answer": "X chromosome"
+        },
+        "4": {
+            "long_answer": "Duchenne muscular dystrophy (DMD) is caused by mutations in the dystrophin gene, which is located on the X chromosome. Similarly, certain forms of hereditary spastic paraplegia (HSP) are associated with mutations on the X chromosome. Although HSP can have various inheritance patterns (autosomal dominant, autosomal recessive, or X-linked), the X-linked variant of HSP shares the same chromosomal location as DMD. Therefore, the X chromosome is the common chromosome between these two conditions.",
+            "short_answer": "X chromosome"
+        }
+    }
+}

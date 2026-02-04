@@ -1,0 +1,54 @@
+{
+    "QIDX": "241841",
+    "original_question": "Which symptom of Panayiotopoulos syndrome involves a feeling of unease, often accompanied by an urge to vomit?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which symptom of Panayiotopoulos syndrome involves a feeling of unease, often accompanied by an urge to vomit?",
+            "search_keyword": "Panayiotopoulos syndrome symptom feeling of unease urge to vomit",
+            "key_entity": [],
+            "short_answer": "nausea",
+            "long_answer": "The symptom described, which involves a feeling of unease often accompanied by an urge to vomit, is known as nausea. In the context of Panayiotopoulos syndrome, nausea is part of the autonomic manifestations seen during seizures. This syndrome often presents with symptoms such as ictal vomiting, where nausea may precede or accompany vomiting during a seizure, reflecting disturbances in autonomic function.",
+            "retrieval_information": "- Case Report - Panayiotopoulos syndrome by P Srivastava · 2020 — In 1989, Panayiotopoulos described an age-related epileptic syndrome characterized mainly by ictal vomiting, head and eye deviation, and ...\n- (PDF) Panayiotopoulos syndrome: A benign childhood epilepsy ... 4 Aug 2025 — Autonomic seizures in Panayiotopoulos syndrome consist of episodes of disturbed autonomic function with emesis as the predominant symptom.\n- Temporal Lobe Epilepsy (TLE) They used to be called simple partial seizures. They are the first symptoms of a seizure. The most common auras are feelings of déjà-vu or some stomach upset.\n- Seizure semiology: ILAE glossary of terms and their significance - Beniczky by S Beniczky · 2022 · Cited by 165 — Ictal vomiting, Ictal vomiting (Panayiotopoulos syndrome): Brief tonic posture of legs → nonresponsiveness + eye deviation upwards → eye ...\n- 35 Epilepsy and the overlap with autonomic disorders A particular seizure disorder seen in the 2–7 year old age group, associated with autonomic symptoms, is Panayiotopoulos syndrome—benign epilepsy with occipital ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which symptom of Panayiotopoulos syndrome involves a feeling of unease, often accompanied by an urge to vomit?",
+                "search_keyword": "Panayiotopoulos syndrome symptom feeling of unease urge to vomit",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "nausea",
+                "long_answer": "The symptom described, which involves a feeling of unease often accompanied by an urge to vomit, is known as nausea. In the context of Panayiotopoulos syndrome, nausea is part of the autonomic manifestations seen during seizures. This syndrome often presents with symptoms such as ictal vomiting, where nausea may precede or accompany vomiting during a seizure, reflecting disturbances in autonomic function.",
+                "candidate": [
+                    {
+                        "short_answer": "nausea",
+                        "long_answer": "The symptom described, which involves a feeling of unease often accompanied by an urge to vomit, is known as nausea. In the context of Panayiotopoulos syndrome, nausea is part of the autonomic manifestations seen during seizures. This syndrome often presents with symptoms such as ictal vomiting, where nausea may precede or accompany vomiting during a seizure, reflecting disturbances in autonomic function.",
+                        "retrieval_information": "- Case Report - Panayiotopoulos syndrome by P Srivastava · 2020 — In 1989, Panayiotopoulos described an age-related epileptic syndrome characterized mainly by ictal vomiting, head and eye deviation, and ...\n- (PDF) Panayiotopoulos syndrome: A benign childhood epilepsy ... 4 Aug 2025 — Autonomic seizures in Panayiotopoulos syndrome consist of episodes of disturbed autonomic function with emesis as the predominant symptom.\n- Temporal Lobe Epilepsy (TLE) They used to be called simple partial seizures. They are the first symptoms of a seizure. The most common auras are feelings of déjà-vu or some stomach upset.\n- Seizure semiology: ILAE glossary of terms and their significance - Beniczky by S Beniczky · 2022 · Cited by 165 — Ictal vomiting, Ictal vomiting (Panayiotopoulos syndrome): Brief tonic posture of legs → nonresponsiveness + eye deviation upwards → eye ...\n- 35 Epilepsy and the overlap with autonomic disorders A particular seizure disorder seen in the 2–7 year old age group, associated with autonomic symptoms, is Panayiotopoulos syndrome—benign epilepsy with occipital ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "The symptom described, which involves a feeling of unease often accompanied by an urge to vomit, is known as nausea. In the context of Panayiotopoulos syndrome, nausea is part of the autonomic manifestations seen during seizures. This syndrome often presents with symptoms such as ictal vomiting, where nausea may precede or accompany vomiting during a seizure, reflecting disturbances in autonomic function.",
+                            "short_answer": "nausea"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Case Report - Panayiotopoulos syndrome by P Srivastava · 2020 — In 1989, Panayiotopoulos described an age-related epileptic syndrome characterized mainly by ictal vomiting, head and eye deviation, and ...\n- (PDF) Panayiotopoulos syndrome: A benign childhood epilepsy ... 4 Aug 2025 — Autonomic seizures in Panayiotopoulos syndrome consist of episodes of disturbed autonomic function with emesis as the predominant symptom.\n- Temporal Lobe Epilepsy (TLE) They used to be called simple partial seizures. They are the first symptoms of a seizure. The most common auras are feelings of déjà-vu or some stomach upset.\n- Seizure semiology: ILAE glossary of terms and their significance - Beniczky by S Beniczky · 2022 · Cited by 165 — Ictal vomiting, Ictal vomiting (Panayiotopoulos syndrome): Brief tonic posture of legs → nonresponsiveness + eye deviation upwards → eye ...\n- 35 Epilepsy and the overlap with autonomic disorders A particular seizure disorder seen in the 2–7 year old age group, associated with autonomic symptoms, is Panayiotopoulos syndrome—benign epilepsy with occipital ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The symptom described, which involves a feeling of unease often accompanied by an urge to vomit, is known as nausea. In the context of Panayiotopoulos syndrome, nausea is part of the autonomic manifestations seen during seizures. This syndrome often presents with symptoms such as ictal vomiting, where nausea may precede or accompany vomiting during a seizure, reflecting disturbances in autonomic function.",
+        "short_answer": "nausea",
+        "retrieval_information": "- Case Report - Panayiotopoulos syndrome by P Srivastava · 2020 — In 1989, Panayiotopoulos described an age-related epileptic syndrome characterized mainly by ictal vomiting, head and eye deviation, and ...\n- (PDF) Panayiotopoulos syndrome: A benign childhood epilepsy ... 4 Aug 2025 — Autonomic seizures in Panayiotopoulos syndrome consist of episodes of disturbed autonomic function with emesis as the predominant symptom.\n- Temporal Lobe Epilepsy (TLE) They used to be called simple partial seizures. They are the first symptoms of a seizure. The most common auras are feelings of déjà-vu or some stomach upset.\n- Seizure semiology: ILAE glossary of terms and their significance - Beniczky by S Beniczky · 2022 · Cited by 165 — Ictal vomiting, Ictal vomiting (Panayiotopoulos syndrome): Brief tonic posture of legs → nonresponsiveness + eye deviation upwards → eye ...\n- 35 Epilepsy and the overlap with autonomic disorders A particular seizure disorder seen in the 2–7 year old age group, associated with autonomic symptoms, is Panayiotopoulos syndrome—benign epilepsy with occipital ...\n\n\n\n- Wikipedia: "
+    }
+}

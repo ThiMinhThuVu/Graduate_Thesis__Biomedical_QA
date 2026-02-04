@@ -1,0 +1,16 @@
+{
+    "0": {
+        "0": {
+            "long_answer": "Glycogen storage disease type 0 is caused by a deficiency in the enzyme glycogen synthase. This enzyme is responsible for catalyzing the conversion of glucose to glycogen, particularly in the liver, where the liver isoform (GSY2) plays a crucial role. Due to the lack of adequate glycogen synthase activity, the liver cannot effectively store glucose in the form of glycogen, leading to fasting hypoglycemia and other metabolic disturbances. Although the typical accumulation of glycogen is not observed, the inability to synthesize it properly distinguishes this disease from other glycogen storage disorders.",
+            "short_answer": "glycogen synthase"
+        },
+        "1": {
+            "long_answer": "The enzyme referred to is the glycogen synthase involved in glycogen storage disease type 0. Glycogen synthase exists in two main families. The mammalian (and yeast) isoform, also known as the GT3 family, is typically around 80 kDa. This is the enzyme form found in the liver (GYS2) where deficiency leads to glycogen storage disease type 0.",
+            "short_answer": "80 kDa"
+        },
+        "2": {
+            "long_answer": "The enzyme in question is the glycogen synthase that belongs to the GT3 family. Glycogen synthase can be divided into two general protein families based on species and regulatory features. In mammals and yeast, an ~80 kDa glycogen synthase uses UDP-glucose as a sugar donor, and its activity is regulated by phosphorylation and ligand binding. This group is classified as the GT3 family, which is part of the glycosyltransferase superfamily.",
+            "short_answer": "GT3 glycosyltransferase"
+        }
+    }
+}

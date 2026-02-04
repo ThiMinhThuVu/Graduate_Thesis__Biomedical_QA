@@ -1,0 +1,54 @@
+{
+    "QIDX": "654558",
+    "original_question": "Which phospholipid is overproduced in Lenz–Majewski syndrome, a condition caused by an overactive phosphatidylserine synthase 1?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which phospholipid is overproduced in Lenz–Majewski syndrome, a condition caused by an overactive phosphatidylserine synthase 1?",
+            "search_keyword": "Lenz Majewski syndrome phospholipid overproduced phosphatidylserine synthase 1",
+            "key_entity": [],
+            "short_answer": "phosphatidylserine",
+            "long_answer": "Lenz–Majewski syndrome is caused by gain-of-function mutations in the PTDSS1 gene, which encodes phosphatidylserine synthase 1. These mutations lead to an increased activity of the enzyme, resulting in the overproduction of phosphatidylserine, a key phospholipid in cell membranes.",
+            "retrieval_information": "- Lenz-Majewski syndrome: How a single mutation leads to complex ... by M Sohn · 2016 · Cited by 14 — Gain of function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause Lenz Majewski syndrome. ... Asymmetry of the phospholipid bilayer of rat liver ...\n- Clinical and genetic characterization of Lenz-Majewski syndrome with a ... by Y Zhang · 2025 — Gain-of-function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause lenz-majewski syndrome. Nat Genet. (2014) 46(1):70–6.\n- Lenz-Majewski mutations in PTDSS1 affect phosphatidylinositol 4 ... by M Sohn · 2016 · Cited by 109 — Here we show that expression of mutant PSS1 enzymes decreased phosphatidylinositol 4-phosphate (PI4P) levels both in the Golgi and the plasma membrane (PM)\n- Lenz-Majewski syndrome: How a single mutation leads to complex ... by M Sohn · 2016 · Cited by 14 — Gain of function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause Lenz Majewski syndrome. Nat Genet. 2014; 46(1): 70-6.\n- Molecular insights into human phosphatidylserine synthase 1 ... by T Long · 2024 · Cited by 20 — Gain-of-function mutations in the Ptdss1 gene lead to heightened PS production, causing Lenz-Majewski syndrome (LMS). Recently, pharmacological ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which phospholipid is overproduced in Lenz–Majewski syndrome, a condition caused by an overactive phosphatidylserine synthase 1?",
+                "search_keyword": "Lenz Majewski syndrome phospholipid overproduced phosphatidylserine synthase 1",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "phosphatidylserine",
+                "long_answer": "Lenz–Majewski syndrome is caused by gain-of-function mutations in the PTDSS1 gene, which encodes phosphatidylserine synthase 1. These mutations lead to an increased activity of the enzyme, resulting in the overproduction of phosphatidylserine, a key phospholipid in cell membranes.",
+                "candidate": [
+                    {
+                        "short_answer": "phosphatidylserine",
+                        "long_answer": "Lenz–Majewski syndrome is caused by gain-of-function mutations in the PTDSS1 gene, which encodes phosphatidylserine synthase 1. These mutations lead to an increased activity of the enzyme, resulting in the overproduction of phosphatidylserine, a key phospholipid in cell membranes.",
+                        "retrieval_information": "- Lenz-Majewski syndrome: How a single mutation leads to complex ... by M Sohn · 2016 · Cited by 14 — Gain of function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause Lenz Majewski syndrome. ... Asymmetry of the phospholipid bilayer of rat liver ...\n- Clinical and genetic characterization of Lenz-Majewski syndrome with a ... by Y Zhang · 2025 — Gain-of-function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause lenz-majewski syndrome. Nat Genet. (2014) 46(1):70–6.\n- Lenz-Majewski mutations in PTDSS1 affect phosphatidylinositol 4 ... by M Sohn · 2016 · Cited by 109 — Here we show that expression of mutant PSS1 enzymes decreased phosphatidylinositol 4-phosphate (PI4P) levels both in the Golgi and the plasma membrane (PM)\n- Lenz-Majewski syndrome: How a single mutation leads to complex ... by M Sohn · 2016 · Cited by 14 — Gain of function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause Lenz Majewski syndrome. Nat Genet. 2014; 46(1): 70-6.\n- Molecular insights into human phosphatidylserine synthase 1 ... by T Long · 2024 · Cited by 20 — Gain-of-function mutations in the Ptdss1 gene lead to heightened PS production, causing Lenz-Majewski syndrome (LMS). Recently, pharmacological ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Lenz–Majewski syndrome is caused by gain-of-function mutations in the PTDSS1 gene, which encodes phosphatidylserine synthase 1. These mutations lead to an increased activity of the enzyme, resulting in the overproduction of phosphatidylserine, a key phospholipid in cell membranes.",
+                            "short_answer": "phosphatidylserine"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Lenz-Majewski syndrome: How a single mutation leads to complex ... by M Sohn · 2016 · Cited by 14 — Gain of function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause Lenz Majewski syndrome. ... Asymmetry of the phospholipid bilayer of rat liver ...\n- Clinical and genetic characterization of Lenz-Majewski syndrome with a ... by Y Zhang · 2025 — Gain-of-function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause lenz-majewski syndrome. Nat Genet. (2014) 46(1):70–6.\n- Lenz-Majewski mutations in PTDSS1 affect phosphatidylinositol 4 ... by M Sohn · 2016 · Cited by 109 — Here we show that expression of mutant PSS1 enzymes decreased phosphatidylinositol 4-phosphate (PI4P) levels both in the Golgi and the plasma membrane (PM)\n- Lenz-Majewski syndrome: How a single mutation leads to complex ... by M Sohn · 2016 · Cited by 14 — Gain of function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause Lenz Majewski syndrome. Nat Genet. 2014; 46(1): 70-6.\n- Molecular insights into human phosphatidylserine synthase 1 ... by T Long · 2024 · Cited by 20 — Gain-of-function mutations in the Ptdss1 gene lead to heightened PS production, causing Lenz-Majewski syndrome (LMS). Recently, pharmacological ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Lenz–Majewski syndrome is caused by gain-of-function mutations in the PTDSS1 gene, which encodes phosphatidylserine synthase 1. These mutations lead to an increased activity of the enzyme, resulting in the overproduction of phosphatidylserine, a key phospholipid in cell membranes.",
+        "short_answer": "phosphatidylserine",
+        "retrieval_information": "- Lenz-Majewski syndrome: How a single mutation leads to complex ... by M Sohn · 2016 · Cited by 14 — Gain of function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause Lenz Majewski syndrome. ... Asymmetry of the phospholipid bilayer of rat liver ...\n- Clinical and genetic characterization of Lenz-Majewski syndrome with a ... by Y Zhang · 2025 — Gain-of-function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause lenz-majewski syndrome. Nat Genet. (2014) 46(1):70–6.\n- Lenz-Majewski mutations in PTDSS1 affect phosphatidylinositol 4 ... by M Sohn · 2016 · Cited by 109 — Here we show that expression of mutant PSS1 enzymes decreased phosphatidylinositol 4-phosphate (PI4P) levels both in the Golgi and the plasma membrane (PM)\n- Lenz-Majewski syndrome: How a single mutation leads to complex ... by M Sohn · 2016 · Cited by 14 — Gain of function mutations in the phosphatidylserine synthase 1 (PTDSS1) gene cause Lenz Majewski syndrome. Nat Genet. 2014; 46(1): 70-6.\n- Molecular insights into human phosphatidylserine synthase 1 ... by T Long · 2024 · Cited by 20 — Gain-of-function mutations in the Ptdss1 gene lead to heightened PS production, causing Lenz-Majewski syndrome (LMS). Recently, pharmacological ...\n\n\n\n- Wikipedia: "
+    }
+}

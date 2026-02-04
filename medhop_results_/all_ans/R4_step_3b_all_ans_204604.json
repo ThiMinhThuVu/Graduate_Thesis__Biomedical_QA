@@ -1,0 +1,54 @@
+{
+    "QIDX": "204604",
+    "original_question": "What eye condition is often mistaken for the overaction of the inferior oblique muscle but is actually a specific type of misalignment where one eye slowly drifts upwards during inattention?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "What eye condition is often mistaken for the overaction of the inferior oblique muscle but is actually a specific type of misalignment where one eye slowly drifts upwards during inattention?",
+            "search_keyword": "eye condition misalignment inferior oblique muscle upward drift",
+            "key_entity": [],
+            "short_answer": "dissociated vertical deviation",
+            "long_answer": "The described eye condition is known as dissociated vertical deviation (DVD). DVD is a specific type of vertical strabismus where one eye gradually drifts upward when the patient is not focused on a target. Because the upward movement may mimic the appearance of inferior oblique muscle overaction, it is often mistakenly diagnosed as such. However, DVD is a distinct misalignment issue characterized by its intermittent nature, particularly noted during periods of inattention.",
+            "retrieval_information": "- Hypertropia Hypertropia is a condition of misalignment of the eyes (strabismus), whereby the visual axis of one eye is higher than the fellow fixating eye.\n- Hypertropia 30 Jul 2025 — A hypertropia is a form of vertical strabismus where one eye is deviated upwards in comparison to the fellow eye, as opposed to hypotropia, ...\n- Pattern Strabismus by R Saxena — Therefore, when inferior oblique muscles overact and superior oblique muscles underact, it causes a relative divergence in upgaze compared ...\n- Strabismus - Dr. Eiad Abdul Aziz Al Ryahy - International Eye Center Strabismus, commonly known as “crossed eyes,” is a condition in which the eyes do not properly align with each other when looking at an object.\n- Esotropia - Strabismus Las Vegas - Ideal EyeCare Esotropia is a type of strabismus or eye misalignment in which the eyes are “crossed,” that is, while one eye looks straight ahead, the other eye is turned ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "What eye condition is often mistaken for the overaction of the inferior oblique muscle but is actually a specific type of misalignment where one eye slowly drifts upwards during inattention?",
+                "search_keyword": "eye condition misalignment inferior oblique muscle upward drift",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "dissociated vertical deviation",
+                "long_answer": "The described eye condition is known as dissociated vertical deviation (DVD). DVD is a specific type of vertical strabismus where one eye gradually drifts upward when the patient is not focused on a target. Because the upward movement may mimic the appearance of inferior oblique muscle overaction, it is often mistakenly diagnosed as such. However, DVD is a distinct misalignment issue characterized by its intermittent nature, particularly noted during periods of inattention.",
+                "candidate": [
+                    {
+                        "short_answer": "dissociated vertical deviation",
+                        "long_answer": "The described eye condition is known as dissociated vertical deviation (DVD). DVD is a specific type of vertical strabismus where one eye gradually drifts upward when the patient is not focused on a target. Because the upward movement may mimic the appearance of inferior oblique muscle overaction, it is often mistakenly diagnosed as such. However, DVD is a distinct misalignment issue characterized by its intermittent nature, particularly noted during periods of inattention.",
+                        "retrieval_information": "- Hypertropia Hypertropia is a condition of misalignment of the eyes (strabismus), whereby the visual axis of one eye is higher than the fellow fixating eye.\n- Hypertropia 30 Jul 2025 — A hypertropia is a form of vertical strabismus where one eye is deviated upwards in comparison to the fellow eye, as opposed to hypotropia, ...\n- Pattern Strabismus by R Saxena — Therefore, when inferior oblique muscles overact and superior oblique muscles underact, it causes a relative divergence in upgaze compared ...\n- Strabismus - Dr. Eiad Abdul Aziz Al Ryahy - International Eye Center Strabismus, commonly known as “crossed eyes,” is a condition in which the eyes do not properly align with each other when looking at an object.\n- Esotropia - Strabismus Las Vegas - Ideal EyeCare Esotropia is a type of strabismus or eye misalignment in which the eyes are “crossed,” that is, while one eye looks straight ahead, the other eye is turned ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "The described eye condition is known as dissociated vertical deviation (DVD). DVD is a specific type of vertical strabismus where one eye gradually drifts upward when the patient is not focused on a target. Because the upward movement may mimic the appearance of inferior oblique muscle overaction, it is often mistakenly diagnosed as such. However, DVD is a distinct misalignment issue characterized by its intermittent nature, particularly noted during periods of inattention.",
+                            "short_answer": "dissociated vertical deviation"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Hypertropia Hypertropia is a condition of misalignment of the eyes (strabismus), whereby the visual axis of one eye is higher than the fellow fixating eye.\n- Hypertropia 30 Jul 2025 — A hypertropia is a form of vertical strabismus where one eye is deviated upwards in comparison to the fellow eye, as opposed to hypotropia, ...\n- Pattern Strabismus by R Saxena — Therefore, when inferior oblique muscles overact and superior oblique muscles underact, it causes a relative divergence in upgaze compared ...\n- Strabismus - Dr. Eiad Abdul Aziz Al Ryahy - International Eye Center Strabismus, commonly known as “crossed eyes,” is a condition in which the eyes do not properly align with each other when looking at an object.\n- Esotropia - Strabismus Las Vegas - Ideal EyeCare Esotropia is a type of strabismus or eye misalignment in which the eyes are “crossed,” that is, while one eye looks straight ahead, the other eye is turned ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The described eye condition is known as dissociated vertical deviation (DVD). DVD is a specific type of vertical strabismus where one eye gradually drifts upward when the patient is not focused on a target. Because the upward movement may mimic the appearance of inferior oblique muscle overaction, it is often mistakenly diagnosed as such. However, DVD is a distinct misalignment issue characterized by its intermittent nature, particularly noted during periods of inattention.",
+        "short_answer": "dissociated vertical deviation",
+        "retrieval_information": "- Hypertropia Hypertropia is a condition of misalignment of the eyes (strabismus), whereby the visual axis of one eye is higher than the fellow fixating eye.\n- Hypertropia 30 Jul 2025 — A hypertropia is a form of vertical strabismus where one eye is deviated upwards in comparison to the fellow eye, as opposed to hypotropia, ...\n- Pattern Strabismus by R Saxena — Therefore, when inferior oblique muscles overact and superior oblique muscles underact, it causes a relative divergence in upgaze compared ...\n- Strabismus - Dr. Eiad Abdul Aziz Al Ryahy - International Eye Center Strabismus, commonly known as “crossed eyes,” is a condition in which the eyes do not properly align with each other when looking at an object.\n- Esotropia - Strabismus Las Vegas - Ideal EyeCare Esotropia is a type of strabismus or eye misalignment in which the eyes are “crossed,” that is, while one eye looks straight ahead, the other eye is turned ...\n\n\n\n- Wikipedia: "
+    }
+}

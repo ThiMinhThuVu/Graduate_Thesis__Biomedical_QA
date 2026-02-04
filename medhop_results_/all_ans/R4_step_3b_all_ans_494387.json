@@ -1,0 +1,54 @@
+{
+    "QIDX": "494387",
+    "original_question": "Which antifolate medication is used to treat both chronic recurrent multifocal osteomyelitis and psoriasis?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which antifolate medication is used to treat both chronic recurrent multifocal osteomyelitis and psoriasis?",
+            "search_keyword": "antifolate medication chronic recurrent multifocal osteomyelitis psoriasis",
+            "key_entity": [],
+            "short_answer": "Methotrexate",
+            "long_answer": "Methotrexate, an antifolate and antimetabolite medication, is used in the treatment of several conditions including chronic recurrent multifocal osteomyelitis and psoriasis. It works by inhibiting the enzyme dihydrofolate reductase, which is necessary for DNA synthesis. This action makes it effective not only in treating cancers and rheumatoid arthritis but also as a treatment option for severe psoriasis and inflammatory conditions like chronic recurrent multifocal osteomyelitis.",
+            "retrieval_information": "- Methotrexate: Uses, Interactions, Mechanism of Action 13 Jun 2005 — Methotrexate is an antineoplastic agent used the treatment of a wide variety of cancers as well as severe psoriasis, severe rheumatoid arthritis ...\n- Antifolate Agent - Methotrexate monohydrate Methotrexate (Amethopterin) monohydrate, an antimetabolite and antifolate agent, inhibits the enzyme dihydrofolate reductase, thereby preventing the conversion ...\n- Disease-Modifying Antirheumatic Drug - an overview Disease-modifying antirheumatic drugs are important for preventing severe complications of RA, of which methotrexate (MTX) is the most commonly used. MTX ...\n- Satyapal RANGARAJ | Nottingham University Hospitals NHS Trust Background: MTX is an antimetabolite and anti-folate drug used in the treatment of inflammatory conditions. Low-dose MTX is used to treat a wide range of ...\n- APOPTOSIS OF REGULATORY T CELLS (TREG) Objective: Chronic recurrent multifocal osteomyelitis. (CRMO) in children is a chronic non-suppurative inflammation involving multiple sites. Clinically ...\n\n\n\n- Wikipedia: ",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which antifolate medication is used to treat both chronic recurrent multifocal osteomyelitis and psoriasis?",
+                "search_keyword": "antifolate medication chronic recurrent multifocal osteomyelitis psoriasis",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "Methotrexate",
+                "long_answer": "Methotrexate, an antifolate and antimetabolite medication, is used in the treatment of several conditions including chronic recurrent multifocal osteomyelitis and psoriasis. It works by inhibiting the enzyme dihydrofolate reductase, which is necessary for DNA synthesis. This action makes it effective not only in treating cancers and rheumatoid arthritis but also as a treatment option for severe psoriasis and inflammatory conditions like chronic recurrent multifocal osteomyelitis.",
+                "candidate": [
+                    {
+                        "short_answer": "Methotrexate",
+                        "long_answer": "Methotrexate, an antifolate and antimetabolite medication, is used in the treatment of several conditions including chronic recurrent multifocal osteomyelitis and psoriasis. It works by inhibiting the enzyme dihydrofolate reductase, which is necessary for DNA synthesis. This action makes it effective not only in treating cancers and rheumatoid arthritis but also as a treatment option for severe psoriasis and inflammatory conditions like chronic recurrent multifocal osteomyelitis.",
+                        "retrieval_information": "- Methotrexate: Uses, Interactions, Mechanism of Action 13 Jun 2005 — Methotrexate is an antineoplastic agent used the treatment of a wide variety of cancers as well as severe psoriasis, severe rheumatoid arthritis ...\n- Antifolate Agent - Methotrexate monohydrate Methotrexate (Amethopterin) monohydrate, an antimetabolite and antifolate agent, inhibits the enzyme dihydrofolate reductase, thereby preventing the conversion ...\n- Disease-Modifying Antirheumatic Drug - an overview Disease-modifying antirheumatic drugs are important for preventing severe complications of RA, of which methotrexate (MTX) is the most commonly used. MTX ...\n- Satyapal RANGARAJ | Nottingham University Hospitals NHS Trust Background: MTX is an antimetabolite and anti-folate drug used in the treatment of inflammatory conditions. Low-dose MTX is used to treat a wide range of ...\n- APOPTOSIS OF REGULATORY T CELLS (TREG) Objective: Chronic recurrent multifocal osteomyelitis. (CRMO) in children is a chronic non-suppurative inflammation involving multiple sites. Clinically ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Methotrexate, an antifolate and antimetabolite medication, is used in the treatment of several conditions including chronic recurrent multifocal osteomyelitis and psoriasis. It works by inhibiting the enzyme dihydrofolate reductase, which is necessary for DNA synthesis. This action makes it effective not only in treating cancers and rheumatoid arthritis but also as a treatment option for severe psoriasis and inflammatory conditions like chronic recurrent multifocal osteomyelitis.",
+                            "short_answer": "Methotrexate"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Methotrexate: Uses, Interactions, Mechanism of Action 13 Jun 2005 — Methotrexate is an antineoplastic agent used the treatment of a wide variety of cancers as well as severe psoriasis, severe rheumatoid arthritis ...\n- Antifolate Agent - Methotrexate monohydrate Methotrexate (Amethopterin) monohydrate, an antimetabolite and antifolate agent, inhibits the enzyme dihydrofolate reductase, thereby preventing the conversion ...\n- Disease-Modifying Antirheumatic Drug - an overview Disease-modifying antirheumatic drugs are important for preventing severe complications of RA, of which methotrexate (MTX) is the most commonly used. MTX ...\n- Satyapal RANGARAJ | Nottingham University Hospitals NHS Trust Background: MTX is an antimetabolite and anti-folate drug used in the treatment of inflammatory conditions. Low-dose MTX is used to treat a wide range of ...\n- APOPTOSIS OF REGULATORY T CELLS (TREG) Objective: Chronic recurrent multifocal osteomyelitis. (CRMO) in children is a chronic non-suppurative inflammation involving multiple sites. Clinically ...\n\n\n\n- Wikipedia: "
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Methotrexate, an antifolate and antimetabolite medication, is used in the treatment of several conditions including chronic recurrent multifocal osteomyelitis and psoriasis. It works by inhibiting the enzyme dihydrofolate reductase, which is necessary for DNA synthesis. This action makes it effective not only in treating cancers and rheumatoid arthritis but also as a treatment option for severe psoriasis and inflammatory conditions like chronic recurrent multifocal osteomyelitis.",
+        "short_answer": "Methotrexate",
+        "retrieval_information": "- Methotrexate: Uses, Interactions, Mechanism of Action 13 Jun 2005 — Methotrexate is an antineoplastic agent used the treatment of a wide variety of cancers as well as severe psoriasis, severe rheumatoid arthritis ...\n- Antifolate Agent - Methotrexate monohydrate Methotrexate (Amethopterin) monohydrate, an antimetabolite and antifolate agent, inhibits the enzyme dihydrofolate reductase, thereby preventing the conversion ...\n- Disease-Modifying Antirheumatic Drug - an overview Disease-modifying antirheumatic drugs are important for preventing severe complications of RA, of which methotrexate (MTX) is the most commonly used. MTX ...\n- Satyapal RANGARAJ | Nottingham University Hospitals NHS Trust Background: MTX is an antimetabolite and anti-folate drug used in the treatment of inflammatory conditions. Low-dose MTX is used to treat a wide range of ...\n- APOPTOSIS OF REGULATORY T CELLS (TREG) Objective: Chronic recurrent multifocal osteomyelitis. (CRMO) in children is a chronic non-suppurative inflammation involving multiple sites. Clinically ...\n\n\n\n- Wikipedia: "
+    }
+}

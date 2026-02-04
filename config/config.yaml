@@ -29,7 +29,7 @@ type_run: {
       },
       "run": "R4", # TỰ ĐẶT RUN ĐỂ LƯU FILE
       "normalize": True, # Tự đặt 
-      "max_candidates": 3, #important
+      "max_candidates": 1, #important
     }
 
 # R1: get_gg, get_wiki, get_crawl_wiki

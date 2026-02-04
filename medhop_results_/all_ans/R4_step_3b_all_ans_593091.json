@@ -1,0 +1,63 @@
+{
+    "QIDX": "593091",
+    "original_question": "Which symptom of osteopathia striata with cranial sclerosis is also associated with Holt–Oram syndrome, Noonan syndrome, Alagille syndrome?",
+    "type_q": "direct",
+    "1": {
+        "final_qi": {
+            "question": "Which symptom of osteopathia striata with cranial sclerosis is also associated with Holt–Oram syndrome, Noonan syndrome, Alagille syndrome?",
+            "search_keyword": "osteopathia striata cranial sclerosis symptom Holt Oram Noonan Alagille syndrome",
+            "key_entity": [],
+            "short_answer": "congenital heart defects",
+            "long_answer": "Osteopathia striata with cranial sclerosis (OSCS) is characterized by specific skeletal changes and may sometimes be accompanied by other developmental anomalies. One of the overlapping features seen in the differential diagnosis of OSCS and the other disorders mentioned is the presence of congenital heart defects. Holt–Oram syndrome is well known for its cardiac septal anomalies (heart–hand syndrome), and similarly, both Noonan syndrome and Alagille syndrome are frequently associated with congenital cardiovascular malformations. Thus, the symptom that OSCS shares with these syndromes is congenital heart defects.",
+            "retrieval_information": "- Genetic Basis of Congenital Cardiovascular Malformations - PMC by SR Lalani · 2014 · Cited by 127 — The Holt-Oram Syndrome is the prototype of genetic disorders causing septal defects. This condition, which is caused by mutations in the transcription factor ...\n- Genetic Panel-Diagnostics - Perinatal medicine Holt-Oram syndrome, differential diagnosis · Homocystinuria, classic; differential ... Osteopathia striata - cranial sclerosis, differential diagnosis ...\n- Mendeliome panel 14 Sept 2023 — Osteopathia striata with cranial sclerosis, 300373 (3), X-linked ... Holt-Oram syndrome, 142900 (3), Autosomal dominant. TBX6. 99.99%. 602427.\n- Victorian Clinical Genetics Services - Submitter - ClinVar - NCBI Holt-Oram syndrome · 6, Nov 19, 2024. Homocystinuria due to methylene ... Osteopathia striata with cranial sclerosis · 1, Nov 19, 2024. Osteoporosis · 2, Nov ...\n- Joint Limitation - an overview Osteopathia striata with cranial sclerosis (OSCS), Sclerosing bone dysplasia, male lethal, macrocephaly, cleft palate, mild learning disabilities, sclerosis ... - Wikipedia:",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "focus_spacy_based_entity_label": [
+                "DISEASE",
+                "CHEMICAL"
+            ],
+            "target_answer_type": null
+        },
+        "0": {
+            "0": {
+                "question": "Which symptom of osteopathia striata with cranial sclerosis is also associated with Holt–Oram syndrome, Noonan syndrome, Alagille syndrome?",
+                "search_keyword": "osteopathia striata cranial sclerosis symptom Holt Oram Noonan Alagille syndrome",
+                "key_entity": [],
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "target_answer_type": null,
+                "short_answer": "congenital heart defects",
+                "long_answer": "Osteopathia striata with cranial sclerosis (OSCS) is characterized by specific skeletal changes and may sometimes be accompanied by other developmental anomalies. One of the overlapping features seen in the differential diagnosis of OSCS and the other disorders mentioned is the presence of congenital heart defects. Holt–Oram syndrome is well known for its cardiac septal anomalies (heart–hand syndrome), and similarly, both Noonan syndrome and Alagille syndrome are frequently associated with congenital cardiovascular malformations. Thus, the symptom that OSCS shares with these syndromes is congenital heart defects.",
+                "candidate": [
+                    {
+                        "short_answer": "cardiac septal defects",
+                        "long_answer": "Osteopathia striata with cranial sclerosis (OSCS) is characterized by skeletal abnormalities, and among its features are various developmental anomalies, including congenital heart malformations. Holt–Oram syndrome is known for its impact on the development of the upper limbs as well as the heart, particularly manifesting as septal defects. Similarly, Noonan syndrome and Alagille syndrome are both associated with congenital heart defects, with the former often displaying pulmonary valve stenosis and other septal anomalies, and the latter with cardiac involvement such as pulmonary stenosis. Therefore, the symptom common to OSCS and these syndromes is the presence of congenital cardiac, especially septal, defects.",
+                        "retrieval_information": "- Genetic Basis of Congenital Cardiovascular Malformations - PMC by SR Lalani · 2014 · Cited by 127 — The Holt-Oram Syndrome is the prototype of genetic disorders causing septal defects. This condition, which is caused by mutations in the transcription factor ...\n- Genetic Panel-Diagnostics - Perinatal medicine Holt-Oram syndrome, differential diagnosis · Homocystinuria, classic; differential ... Osteopathia striata - cranial sclerosis, differential diagnosis ...\n- Mendeliome panel 14 Sept 2023 — Osteopathia striata with cranial sclerosis, 300373 (3), X-linked ... Holt-Oram syndrome, 142900 (3), Autosomal dominant. TBX6. 99.99%. 602427.\n- Victorian Clinical Genetics Services - Submitter - ClinVar - NCBI Holt-Oram syndrome · 6, Nov 19, 2024. Homocystinuria due to methylene ... Osteopathia striata with cranial sclerosis · 1, Nov 19, 2024. Osteoporosis · 2, Nov ...\n- Joint Limitation - an overview Osteopathia striata with cranial sclerosis (OSCS), Sclerosing bone dysplasia, male lethal, macrocephaly, cleft palate, mild learning disabilities, sclerosis ...\n\n\n\n- Wikipedia: ",
+                        "full_data": {
+                            "long_answer": "Osteopathia striata with cranial sclerosis (OSCS) is characterized by skeletal abnormalities, and among its features are various developmental anomalies, including congenital heart malformations. Holt–Oram syndrome is known for its impact on the development of the upper limbs as well as the heart, particularly manifesting as septal defects. Similarly, Noonan syndrome and Alagille syndrome are both associated with congenital heart defects, with the former often displaying pulmonary valve stenosis and other septal anomalies, and the latter with cardiac involvement such as pulmonary stenosis. Therefore, the symptom common to OSCS and these syndromes is the presence of congenital cardiac, especially septal, defects.",
+                            "short_answer": "cardiac septal defects"
+                        }
+                    },
+                    {
+                        "short_answer": "congenital heart defects",
+                        "long_answer": "Osteopathia striata with cranial sclerosis (OSCS) is characterized by specific skeletal changes and may sometimes be accompanied by other developmental anomalies. One of the overlapping features seen in the differential diagnosis of OSCS and the other disorders mentioned is the presence of congenital heart defects. Holt–Oram syndrome is well known for its cardiac septal anomalies (heart–hand syndrome), and similarly, both Noonan syndrome and Alagille syndrome are frequently associated with congenital cardiovascular malformations. Thus, the symptom that OSCS shares with these syndromes is congenital heart defects.",
+                        "retrieval_information": "- Genetic Basis of Congenital Cardiovascular Malformations - PMC by SR Lalani · 2014 · Cited by 127 — The Holt-Oram Syndrome is the prototype of genetic disorders causing septal defects. This condition, which is caused by mutations in the transcription factor ...\n- Genetic Panel-Diagnostics - Perinatal medicine Holt-Oram syndrome, differential diagnosis · Homocystinuria, classic; differential ... Osteopathia striata - cranial sclerosis, differential diagnosis ...\n- Mendeliome panel 14 Sept 2023 — Osteopathia striata with cranial sclerosis, 300373 (3), X-linked ... Holt-Oram syndrome, 142900 (3), Autosomal dominant. TBX6. 99.99%. 602427.\n- Victorian Clinical Genetics Services - Submitter - ClinVar - NCBI Holt-Oram syndrome · 6, Nov 19, 2024. Homocystinuria due to methylene ... Osteopathia striata with cranial sclerosis · 1, Nov 19, 2024. Osteoporosis · 2, Nov ...\n- Joint Limitation - an overview Osteopathia striata with cranial sclerosis (OSCS), Sclerosing bone dysplasia, male lethal, macrocephaly, cleft palate, mild learning disabilities, sclerosis ... - Wikipedia:",
+                        "full_data": {
+                            "long_answer": "Osteopathia striata with cranial sclerosis (OSCS) is characterized by specific skeletal changes and may sometimes be accompanied by other developmental anomalies. One of the overlapping features seen in the differential diagnosis of OSCS and the other disorders mentioned is the presence of congenital heart defects. Holt–Oram syndrome is well known for its cardiac septal anomalies (heart–hand syndrome), and similarly, both Noonan syndrome and Alagille syndrome are frequently associated with congenital cardiovascular malformations. Thus, the symptom that OSCS shares with these syndromes is congenital heart defects.",
+                            "short_answer": "congenital heart defects"
+                        }
+                    }
+                ],
+                "retrieval_information": "- Genetic Basis of Congenital Cardiovascular Malformations - PMC by SR Lalani · 2014 · Cited by 127 — The Holt-Oram Syndrome is the prototype of genetic disorders causing septal defects. This condition, which is caused by mutations in the transcription factor ...\n- Genetic Panel-Diagnostics - Perinatal medicine Holt-Oram syndrome, differential diagnosis · Homocystinuria, classic; differential ... Osteopathia striata - cranial sclerosis, differential diagnosis ...\n- Mendeliome panel 14 Sept 2023 — Osteopathia striata with cranial sclerosis, 300373 (3), X-linked ... Holt-Oram syndrome, 142900 (3), Autosomal dominant. TBX6. 99.99%. 602427.\n- Victorian Clinical Genetics Services - Submitter - ClinVar - NCBI Holt-Oram syndrome · 6, Nov 19, 2024. Homocystinuria due to methylene ... Osteopathia striata with cranial sclerosis · 1, Nov 19, 2024. Osteoporosis · 2, Nov ...\n- Joint Limitation - an overview Osteopathia striata with cranial sclerosis (OSCS), Sclerosing bone dysplasia, male lethal, macrocephaly, cleft palate, mild learning disabilities, sclerosis ... - Wikipedia:"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Osteopathia striata with cranial sclerosis (OSCS) is characterized by specific skeletal changes and may sometimes be accompanied by other developmental anomalies. One of the overlapping features seen in the differential diagnosis of OSCS and the other disorders mentioned is the presence of congenital heart defects. Holt–Oram syndrome is well known for its cardiac septal anomalies (heart–hand syndrome), and similarly, both Noonan syndrome and Alagille syndrome are frequently associated with congenital cardiovascular malformations. Thus, the symptom that OSCS shares with these syndromes is congenital heart defects.",
+        "short_answer": "congenital heart defects",
+        "retrieval_information": "- Genetic Basis of Congenital Cardiovascular Malformations - PMC by SR Lalani · 2014 · Cited by 127 — The Holt-Oram Syndrome is the prototype of genetic disorders causing septal defects. This condition, which is caused by mutations in the transcription factor ...\n- Genetic Panel-Diagnostics - Perinatal medicine Holt-Oram syndrome, differential diagnosis · Homocystinuria, classic; differential ... Osteopathia striata - cranial sclerosis, differential diagnosis ...\n- Mendeliome panel 14 Sept 2023 — Osteopathia striata with cranial sclerosis, 300373 (3), X-linked ... Holt-Oram syndrome, 142900 (3), Autosomal dominant. TBX6. 99.99%. 602427.\n- Victorian Clinical Genetics Services - Submitter - ClinVar - NCBI Holt-Oram syndrome · 6, Nov 19, 2024. Homocystinuria due to methylene ... Osteopathia striata with cranial sclerosis · 1, Nov 19, 2024. Osteoporosis · 2, Nov ...\n- Joint Limitation - an overview Osteopathia striata with cranial sclerosis (OSCS), Sclerosing bone dysplasia, male lethal, macrocephaly, cleft palate, mild learning disabilities, sclerosis ... - Wikipedia:"
+    }
+}
