@@ -66,7 +66,7 @@ def request_api(messages, model, temperature=0):
     raise RuntimeError("All APIs failed after multiple retries.")
 
 # def search_1_search_google(query):
-def search_google(query):
+def search_google(query, max_results=10):
     max_retries = 10
     retry_delay = 2
    
@@ -81,7 +81,7 @@ def search_google(query):
                 json={
                     "query": query,
                     "search_service": "google",
-                    "max_results": 10,
+                    "max_results": max_results,
                     "crawl_results": 0,
                     "image": False,
                     "language": "en"

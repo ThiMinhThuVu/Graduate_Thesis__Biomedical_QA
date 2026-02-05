@@ -1,14 +1,18 @@
+import sys
+import re
+import os
+import math
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from src.gpt_request import search_google
 from utils.crawl_wikipage import crawl_wikipedia_page
 from utils.get_abs_wiki_history import get_abs_wiki_history
 from utils.process_wikidata_api import process_fillter_wikidata_api, match_relation_id
 from utils.util import *
-from utils.hash import register_query_cache
-import re
-import os
-import math
+from utils.hash import register_query_cache, register_query_cache_2
 
-def retrieval_google(search_kw, filepath):
+
+def retrieval_google(search_kw, filepath, max_results=10):
     if os.path.exists(filepath):
         output = load_json(filepath)
         if 'google' in output:
@@ -25,7 +29,7 @@ def retrieval_google(search_kw, filepath):
             
     max_retries = 3
     for attempt in range(max_retries):
-        result = search_google(search_kw)
+        result = search_google(search_kw, max_results=max_results)
         if result != []:
             break
         print(f"[API SEARCH] HẾT LƯỢT SEARCHs (attempt {attempt+1}/{max_retries})")
@@ -41,7 +45,7 @@ def retrieval_google(search_kw, filepath):
     save_json(output, filepath)        
     return result
 
-def retrieval_wiki(search_kw, filepath):
+def retrieval_wiki(search_kw, filepath, max_results=10):
     if os.path.exists(filepath):
         output = load_json(filepath)
         if 'wiki' in output:
@@ -50,7 +54,7 @@ def retrieval_wiki(search_kw, filepath):
     else:
         output = {}
      
-    result = search_google(search_kw + " site:wikipedia.org")           
+    result = search_google(search_kw + " site:wikipedia.org", max_results=max_results)           
     
     output['wiki'] = {
         'search_kw': search_kw,
@@ -397,29 +401,31 @@ def retrieval_context_2wiki(search_kw, sample, embedding_model, vec_embed=False,
     return result.strip()
 
 
-def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_model, hash_id_cache):
+def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_model, file_hash_id_cache):
     # key_entities: List
     retrieval_information = ""
     retrieval_topk = settings['retrieval_topk']
+    max_results_gg = retrieval_topk['max_results_search_api_gg']
+    max_results_wiki = retrieval_topk['max_results_search_api_wiki']
     all_snippet = ""
     
-    hash_id, hash_id_cache = register_query_cache(search_kw_subq, hash_id_cache)
+    hash_id = register_query_cache_2(search_kw_subq, file_cache_index=file_hash_id_cache)
     cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}" 
     cache_filepath_filter_wiki = f"{settings['cache']['filter_wiki']}/{hash_id}" # wikipedia + wikidata
     print("Retrieval_path: ", cache_filepath_retrieval)
-    print("Crawl wiki path: ", cache_filepath_filter_wiki)
+    # print("Crawl wiki path: ", cache_filepath_filter_wiki)
     
     if settings['get_context_2wiki']: #Only 2wiki dataset
         retrieval_information = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
             
     if settings['get_gg']:
-        results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval)            
+        results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval, max_results=max_results_gg)            
         snippet_gg = format_search_results(results_gg_search, topk=retrieval_topk['google']) 
         retrieval_information += snippet_gg + "\n\n"
         all_snippet += snippet_gg + "\n"
     
     if settings['get_wiki'] or settings['get_abs_wiki']:
-        results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval)
+        results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
     
         if settings['get_wiki']:
             snippet_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki']) 
@@ -430,6 +436,7 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
             retrieval_information += abs_wiki + "\n\n"
 
         if settings['get_crawl_wiki']:
+            print("Crawl wiki path: ", cache_filepath_filter_wiki)
             crawl_wiki_context = crawl_wiki_page(
                 results_wiki_search, search_kw_subq, settings['wiki_cache'], cache_filepath_filter_wiki, 
                 embedding_model, topk=retrieval_topk['wiki_crawl'], max_token=retrieval_topk['crawl_max_token'])
@@ -504,3 +511,52 @@ def remove_retrieve_evidence(current_retrieval: str, current_short: str):
     new_retrieval = new_retrieval.strip()
 
     return new_retrieval
+
+
+if __name__ == "__main__":
+    input_data = load_json("data/dict_searchkw_direct_WH.json")
+    sample = {}
+    key_entities = []
+    embedding_model = False
+    hash_id_cache_file = r'data\cache\hash_id_IR_20.json'
+    wiki_cache_data = load_pickle("data/wikipedia_cache.pkl")
+    settings = {
+      "wiki_cache": wiki_cache_data,
+      "dataset": "medhop_", 
+      "get_gg": False, #False
+      "get_wiki": True,
+      "get_abs_wiki": False,
+      "get_crawl_wiki": True,      
+      "get_context_2wiki": False,
+      "get_sparql_context": False,
+      "get_history_old_id": False, # only True with 2wiki
+
+      "retrieval_topk": {
+          "max_results_search_api_gg": 20, 
+          "max_results_search_api_wiki": 10, 
+          "google":  5,
+          "wiki": 5,
+          "wiki_abs": 3,
+          "wiki_crawl": 3,
+          "crawl_max_token": 300,
+          "sparql_r_topk": 3, # wiki nên dùng 1-2, medhop: 3
+          "sparql_r_retry_topk": 5, # wiki 3 là đủ dùng;  medhop:5
+          "k_percent": 0.5,
+      },
+      
+      "cache": {
+        "retrieval": "data/cache/IR_20",
+        "filter_wiki": "data/cache/filter_wikipedia_20"
+      },
+      "run": "R4", # TỰ ĐẶT RUN ĐỂ LƯU FILE
+      "normalize": True, # Tự đặt 
+      "max_candidates": 0, # mcq: 3, not mcq: 1
+    }
+    
+    cnt = 0
+    for qidx, search_kw_subq in input_data.items():  
+        # cnt += 1
+        # if cnt > 250:
+        #     continue      
+        print(qidx, search_kw_subq)
+        retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_model, hash_id_cache_file)

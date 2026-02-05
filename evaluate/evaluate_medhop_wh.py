@@ -9,17 +9,25 @@ from postprocessing import postprocessing
 #config
 run = 'R4_'
 # run = 'R1_'
-update_hashid()
+
+# cache_hasid_path = r'data\cache\hash_id_IR_20.json'
+cache_hasid_path = r'data\cache\hash_id.json'
+search_cache_folder = "data/cache/retrieval" #"data/cache/IR_20"
+filter_cache_folder = "data/cache/filter_wikipedia" #"data/cache/filter_wikipedia_20"
+                
+update_hashid(cache_hasid_path)
 
 def load_json(golden_path):
     with open(golden_path, 'r', encoding='utf-8') as f:
         golden_data = json.load(f)
     return golden_data
 
+cache_index = load_json(cache_hasid_path)
+
+
 with open("data/metadata_medhop.json", 'r', encoding='utf-8') as f:
     cache_class = json.load(f)
 
-cache_index = load_json(r'data\cache\hash_id.json')
 
 def normalize_query(query: str) -> str:
     return " ".join(query.lower().strip().split())
@@ -47,8 +55,9 @@ def load_predictions(pred_dir, golden_ids):
                 if query in cache_index:
                     id_cache = cache_index[query]
                 
-                search_cache = f"data/cache/retrieval/{id_cache}"
-                filter_cache = f"data/cache/filter_wikipedia/{id_cache}"
+                search_cache = f"{search_cache_folder}/{id_cache}"
+                filter_cache = f"{filter_cache_folder}/{id_cache}"
+                
                 
                 context = ""
                 ctx1 = load_json(search_cache)

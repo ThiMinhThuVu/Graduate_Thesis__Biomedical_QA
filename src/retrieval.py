@@ -8,7 +8,7 @@ import re
 import os
 import math
 
-def retrieval_google(search_kw, filepath):
+def retrieval_google(search_kw, filepath, max_results=10):
     if os.path.exists(filepath):
         output = load_json(filepath)
         if 'google' in output:
@@ -25,7 +25,7 @@ def retrieval_google(search_kw, filepath):
             
     max_retries = 3
     for attempt in range(max_retries):
-        result = search_google(search_kw)
+        result = search_google(search_kw, max_results=max_results)
         if result != []:
             break
         print(f"[API SEARCH] HẾT LƯỢT SEARCHs (attempt {attempt+1}/{max_retries})")
@@ -41,7 +41,7 @@ def retrieval_google(search_kw, filepath):
     save_json(output, filepath)        
     return result
 
-def retrieval_wiki(search_kw, filepath):
+def retrieval_wiki(search_kw, filepath, max_results=10):
     if os.path.exists(filepath):
         output = load_json(filepath)
         if 'wiki' in output:
@@ -50,7 +50,7 @@ def retrieval_wiki(search_kw, filepath):
     else:
         output = {}
      
-    result = search_google(search_kw + " site:wikipedia.org")           
+    result = search_google(search_kw + " site:wikipedia.org", max_results=max_results)           
     
     output['wiki'] = {
         'search_kw': search_kw,
@@ -80,8 +80,8 @@ def format_results_wiki_abs(search_results, filepath, topk=5, bf_ts=None):
     else:
         output = {}
         
-    if 'wiki' in output:
-        for link, item in output['wiki']['dict_abs'].items():
+    if 'wikipedia_abs' in output:
+        for link, item in output['wikipedia_abs'].items():
             if cnt == topk:
                 break
             if "List_"  in link:
@@ -91,10 +91,8 @@ def format_results_wiki_abs(search_results, filepath, topk=5, bf_ts=None):
             
         return "\n".join(context_parts)
     else:       
-        output['wiki'] = {}
-        
-    output['wiki']["dict_abs"] = {}
-    
+        output['wikipedia_abs'] = {}
+            
     for i, result in enumerate(search_results):            
         if i == topk:
             break
@@ -106,9 +104,9 @@ def format_results_wiki_abs(search_results, filepath, topk=5, bf_ts=None):
         abs_wiki = get_abs_wiki_history(title, bf_ts)
         context_parts.append(f"- {title}: {abs_wiki}")
         
-        output['wiki']["dict_abs"][result['link']] = {'title': title,
-                                                        'snippet': result['snippet'],
-                                                        'abstract': abs_wiki}
+        output["wikipedia_abs"][result['link']] = {'title': title,
+                                                    'snippet': result['snippet'],
+                                                    'abstract': abs_wiki}
     save_json(output, filepath)
     return "\n".join(context_parts)
 
@@ -255,9 +253,9 @@ def get_paragraphs_wiki_result(results, subquestion, embedding_model=None, max_d
     return output_paragraph, all_context
 
 
-def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, cache_filepath_retrieval, embedding_model, topk=3, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
-    if os.path.exists(cache_filepath_retrieval):
-        output = load_json(cache_filepath_retrieval)
+def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, cache_filepath_filter_wiki, embedding_model, topk=3, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
+    if os.path.exists(cache_filepath_filter_wiki):
+        output = load_json(cache_filepath_filter_wiki)
     else:
         output = {}
         
@@ -303,7 +301,7 @@ def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, cache_filepath_retr
     output_para['filter'] = output_paragraph
     
     output['crawl_wiki'] = output_para
-    save_json(output, cache_filepath_retrieval)
+    save_json(output, cache_filepath_filter_wiki)
 
     return all_context
 
@@ -403,41 +401,46 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
     # key_entities: List
     retrieval_information = ""
     retrieval_topk = settings['retrieval_topk']
+    max_results_gg = retrieval_topk['max_results_search_api_gg']
+    max_results_wiki = retrieval_topk['max_results_search_api_wiki']
     all_snippet = ""
     
     hash_id, hash_id_cache = register_query_cache(search_kw_subq, hash_id_cache)
-    cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}"
+    cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}" 
+    cache_filepath_filter_wiki = f"{settings['cache']['filter_wiki']}/{hash_id}" # wikipedia + wikidata
     print("Retrieval_path: ", cache_filepath_retrieval)
+    # print("Crawl wiki path: ", cache_filepath_filter_wiki)
     
     if settings['get_context_2wiki']: #Only 2wiki dataset
         retrieval_information = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
             
     if settings['get_gg']:
-        results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval)            
+        results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval, max_results=max_results_gg)            
         snippet_gg = format_search_results(results_gg_search, topk=retrieval_topk['google']) 
         retrieval_information += snippet_gg + "\n\n"
         all_snippet += snippet_gg + "\n"
     
     if settings['get_wiki'] or settings['get_abs_wiki']:
-        results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval)
+        results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
     
         if settings['get_wiki']:
             snippet_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki']) 
             retrieval_information += snippet_wiki + "\n\n"
             all_snippet += snippet_wiki + "\n"
         elif settings['get_abs_wiki']:
-            abs_wiki = format_results_wiki_abs(results_wiki_search, cache_filepath_retrieval, topk=retrieval_topk['wiki_abs'])
+            abs_wiki = format_results_wiki_abs(results_wiki_search, cache_filepath_filter_wiki, topk=retrieval_topk['wiki_abs'])
             retrieval_information += abs_wiki + "\n\n"
 
         if settings['get_crawl_wiki']:
+            print("Crawl wiki path: ", cache_filepath_filter_wiki)
             crawl_wiki_context = crawl_wiki_page(
-                results_wiki_search, search_kw_subq, settings['wiki_cache'], cache_filepath_retrieval, 
+                results_wiki_search, search_kw_subq, settings['wiki_cache'], cache_filepath_filter_wiki, 
                 embedding_model, topk=retrieval_topk['wiki_crawl'], max_token=retrieval_topk['crawl_max_token'])
             retrieval_information += "- Wikipedia: " + crawl_wiki_context
 
     if settings["get_sparql_context"]:
-        if os.path.exists(cache_filepath_retrieval):
-            all_data_retrieval = load_json(cache_filepath_retrieval)
+        if os.path.exists(cache_filepath_filter_wiki):
+            all_data_retrieval = load_json(cache_filepath_filter_wiki)
         else:
             all_data_retrieval = {}
             
@@ -481,7 +484,7 @@ def retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_
                 
             history['retrieval_information'] = retrieval_information
             all_data_retrieval['sparql'] = history
-            save_json(all_data_retrieval, cache_filepath_retrieval)
+            save_json(all_data_retrieval, cache_filepath_filter_wiki)
             
     return all_snippet, retrieval_information
 

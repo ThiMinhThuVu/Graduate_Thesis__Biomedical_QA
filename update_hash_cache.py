@@ -8,7 +8,7 @@ def normalize_query(query: str) -> str:
 retrieval_folder = os.path.join('data', 'cache', 'retrieval')
 hash_cache_path = os.path.join('data', 'cache', 'hash_id.json')
 
-def update_hashid():
+def update_hashid(hash_cache_path):
     # Load cache if exists
     if os.path.exists(hash_cache_path):
         with open(hash_cache_path, 'r', encoding='utf-8') as f:

@@ -1,5 +1,5 @@
 import hashlib
-from utils.util import save_json
+from utils.util import save_json,load_json
 
 def normalize_query(query: str) -> str:
     return " ".join(query.lower().strip().split())
@@ -15,9 +15,7 @@ def make_cache_filename(query: str) -> str:
     query_id = hash_query(query)
     return f"{query_id}.json"
 
-cache_index = {}
-
-def register_query_cache(query: str, cache_index: dict) -> str:
+def register_query_cache(query: str, cache_index: dict, file_cache_index="data/cache/hash_id.json") -> str:
     """
     Register query into cache dict.
     Return cache filename.
@@ -28,9 +26,25 @@ def register_query_cache(query: str, cache_index: dict) -> str:
 
     filename = make_cache_filename(query)
     cache_index[query] = filename
-    save_json(cache_index, "data/cache/hash_id.json")
+    save_json(cache_index, file_cache_index)
     
     return filename, cache_index
+
+def register_query_cache_2(query: str, file_cache_index="data/cache/hash_id.json") -> str:
+    """
+    Register query into cache dict.
+    Return cache filename.
+    """
+    cache_index = load_json(file_cache_index)
+    query = normalize_query(query.lower())
+    if query in cache_index:
+        return cache_index[query]
+
+    filename = make_cache_filename(query)
+    cache_index[query] = filename
+    save_json(cache_index, file_cache_index)
+    
+    return filename
 
 if __name__ == "__main__":
     query = "chromosome location gene responsible Carpenter syndrome MEGF8, RAB23"
