@@ -414,12 +414,13 @@ def crawl_wiki_page(wiki_search, search_kw_subq, settings, hash_id_crawl_wiki_ca
         
         
         if os.path.exists(cache_filepath_filter):
-            print("Crawl filter path: ", cache_filepath_filter)
+            print("[Load Cache] filter path: ", cache_filepath_filter)
             data_filter = load_json(cache_filepath_filter)
             if data_filter is not None:
                 filter_context = data_filter.get('crawl_wiki', {}).get('filter', {}).get(link, {}).get(type_embed, "")
         else:
             if os.path.exists(cache_filepath_crawl):
+                print('[Load Cache] file Crawl wiki HTML')
                 crawled_data = load_json(cache_filepath_crawl).get('crawl_wiki', {}).get('html_page', {}).get(link, None)
             else:
                 print(f"Crawling Wikipedia page: {original_link}")

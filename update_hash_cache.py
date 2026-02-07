@@ -5,11 +5,11 @@ import json
 def normalize_query(query: str) -> str:
     return " ".join(query.lower().strip().split())
 
-retrieval_folder = os.path.join('data', 'cache', 'retrieval')
+retrieval_folder = os.path.join('data', 'cache', 'IR_20')
 hash_cache_path = os.path.join('data', 'cache', 'hash_id.json')
 
 def update_hashid(hash_cache_path):
-    retrieval_folder = os.path.join('data', 'cache', 'retrieval')
+    retrieval_folder = os.path.join('data', 'cache', 'IR_20')
     hash_cache_path = os.path.join('data', 'cache', 'hash_id.json')
 
     # Load cache if exists
@@ -76,4 +76,4 @@ def update_hashid_crawl_wiki():
 
     print(f"Updated {hash_cache_path} with new queries.")
     
-# update_hashid()
+update_hashid(hash_cache_path)

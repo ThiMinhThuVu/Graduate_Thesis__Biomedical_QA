@@ -3,7 +3,7 @@ import os
 from utils.crawl_wikipage import crawl_wikipedia_page, crawl_wikipedia_tool_2
 
 BASE_1 = "data/cache/crawl_wikipedia"
-BASE_DIR = "data/cache/crawl_wikipedia_tool_1_to_2"
+BASE_2 = "data/cache/crawl_wikipedia_tool_2"
 cache_hashid_crawl_path = "data\cache\hash_id_crawl_wiki.json"
 
 CONFIG = "TOOL_1" # "TOOL_2"
@@ -46,36 +46,49 @@ cache_crawl_hash = load_json(cache_hashid_crawl_path)
 
 cnt = 0
 for link, hashid_name in cache_crawl_hash.items():
-    wiki_content = {}
-    f_1 = f"{BASE_1}/{hashid_name}"
-    out_path = os.path.join(BASE_DIR, hashid_name)
-    if os.path.exists(out_path):
+    out_path_1 = os.path.join(BASE_1, hashid_name)
+    out_path_2 = os.path.join(BASE_2, hashid_name)
+
+    # Only crawl if both output files do not exist
+    if os.path.exists(out_path_1) and os.path.exists(out_path_2):
         continue
-    
-    if os.path.exists(f_1):
-        data_crawl = load_json(f_1)
+
+    if os.path.exists(out_path_1):
+        data_crawl = load_json(out_path_1)
         if data_crawl is not None:
             html = data_crawl.get('crawl_wiki', {}).get('html_page', {}).get(link, None)
             if html is not None:
                 title = normalize_title_multilang(html['title'])
                 netloc = urlparse(link).netloc
                 page_language = netloc.split('.')[0] if netloc.endswith('wikipedia.org') else ''
-                if CONFIG == "TOOL_1":
-                    wiki_content = crawl_wikipedia_page(title, page_language, link, base_delay=5)
-                elif CONFIG == "TOOL_2":
-                    wiki_content = crawl_wikipedia_tool_2(title, page_language, link, base_delay=5)
-                
+
+                # TOOL_1
+                if not os.path.exists(out_path_1):
+                    wiki_content_1 = crawl_wikipedia_page(title, page_language, link, base_delay=5)
+                    out_1 = {
+                        "crawl_wiki": {
+                            "html_page": {
+                                link: wiki_content_1
+                            }
+                        }
+                    }
+                    with open(out_path_1, "w", encoding="utf-8") as fout:
+                        json.dump(out_1, fout, ensure_ascii=False, indent=2)
+                    print("file TOOL_1: ", out_path_1)
+
+                # TOOL_2
+                if not os.path.exists(out_path_2):
+                    wiki_content_2 = crawl_wikipedia_tool_2(title, page_language, link, base_delay=5)
+                    out_2 = {
+                        "crawl_wiki": {
+                            "html_page": {
+                                link: wiki_content_2
+                            }
+                        }
+                    }
+                    with open(out_path_2, "w", encoding="utf-8") as fout:
+                        json.dump(out_2, fout, ensure_ascii=False, indent=2)
+                    print("file TOOL_2: ", out_path_2)
+
                 cnt += 1
-                
-        out = {
-            "crawl_wiki": {
-                "html_page": {
-                    link: wiki_content
-                }
-            }
-        }
-        with open(out_path, "w", encoding="utf-8") as fout:
-            json.dump(out, fout, ensure_ascii=False, indent=2)
-    
-    print("file: ", out_path)
-    print("success: ", cnt)
+                print("success: ", cnt)

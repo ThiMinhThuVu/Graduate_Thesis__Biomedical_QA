@@ -261,6 +261,7 @@ def get_paragraphs_wiki_result(results, subquestion, embedding_model=None, max_d
 def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, cache_crawl_wiki_hash_id, embedding_model, topk=10, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
     results = {}    
     cnt_wiki = 0
+    all_context = ""
     
     for result in wiki_search: # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
         link = result['link']
@@ -277,13 +278,13 @@ def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, cache_crawl_wiki_ha
             print(f"Crawling Wikipedia page: {link}")
             crawled_data = crawl_wikipedia_page(link)
 
-            if crawled_data and 'content' in crawled_data and len(crawled_data['content']) != 0:
-                wiki_content = wiki_pre_processing(crawled_data)
-                # wiki_cache_data[link] = wiki_content
+        #     if crawled_data and 'content' in crawled_data and len(crawled_data['content']) != 0:
+        #         wiki_content = wiki_pre_processing(crawled_data)
+        #         # wiki_cache_data[link] = wiki_content
 
-        if wiki_content:
-            results[link] = wiki_content
-            cnt_wiki += 1
+        # if wiki_content:
+        #     results[link] = wiki_content
+        #     cnt_wiki += 1
 
 
     return all_context
@@ -545,14 +546,15 @@ def remove_retrieve_evidence(current_retrieval: str, current_short: str):
 
 
 if __name__ == "__main__":
-    input_data = load_json("data/dict_searchkw_direct_WH.json")
+    # input_data = load_json("data/dict_searchkw_direct_WH.json")
+    input_data = load_json('data/search_keyword_YN_direct.json')
     sample = {}
     key_entities = []
     embedding_model = False
     hash_id_cache_file = r'data\cache\hash_id_IR_20.json'
-    wiki_cache_data = load_pickle("data/wikipedia_cache.pkl")
+    # wiki_cache_data = load_pickle("data/wikipedia_cache.pkl")
     settings = {
-      "wiki_cache": wiki_cache_data,
+    #   "wiki_cache": wiki_cache_data,
       "dataset": "medhop_", 
       "get_gg": False, #False
       "get_wiki": True,
@@ -585,9 +587,9 @@ if __name__ == "__main__":
     }
     
     cnt = 0
-    for qidx, search_kw_subq in input_data.items():  
+    for search_kw_subq in input_data.items():  
         # cnt += 1
         # if cnt > 250:
         #     continue      
-        print(qidx, search_kw_subq)
+        print(search_kw_subq)
         retrieve_evidence(sample, key_entities, search_kw_subq, settings, embedding_model, hash_id_cache_file)

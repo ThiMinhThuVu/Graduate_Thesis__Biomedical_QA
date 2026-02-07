@@ -457,7 +457,7 @@ if __name__ == "__main__":
        
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'
-        if check_yn:
+        if check_yn == False:
             continue
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)

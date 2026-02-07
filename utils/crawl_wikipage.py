@@ -8,7 +8,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import wikipediaapi  
  
-def crawl_wikipedia_tool_2(title, page_language, url, base_delay=1):
+def crawl_wikipedia_tool_2(title, page_language, url, base_delay=0.5):
     delay = base_delay
     time.sleep(delay)
     
@@ -45,7 +45,7 @@ def crawl_wikipedia_tool_2(title, page_language, url, base_delay=1):
     return crawl_output
     
     
-def crawl_wikipedia_page(wiki_url, max_retries=3, base_delay=1):
+def crawl_wikipedia_page(wiki_url, max_retries=3, base_delay=0.5):
     """
     Crawl a Wikipedia page and extract its content with proper rate limiting
     """
