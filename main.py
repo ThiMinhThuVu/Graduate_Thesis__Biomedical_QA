@@ -12,25 +12,25 @@ from sentence_transformers.models import StaticEmbedding
 from transformers import AutoModel
 
 global hash_id_cache
-global wiki_cache_data
+global hash_id_crawl_wiki_cache
 global extractor_model
 global extractor_model_2 
 global extractor_model_3
 global embedding_model
-wiki_cache_data = {}
 extractor_model = None
 
 def load_model(dataset, configs, using_embedding_model=False):
     global hash_id_cache
-    global wiki_cache_data
+    global hash_id_crawl_wiki_cache
     global extractor_model
     global extractor_model_2
     global extractor_model_3
     global embedding_model
 
-    wiki_cache_data = load_pickle(configs['cache']['wiki_cache_data'])
-    hash_id_cache = load_json(configs['cache']['hash_id_cache'])
-
+    print(configs['cache'])
+    hash_id_cache = load_json(configs['type_run']['cache']['hash_id']['retrieval'])
+    hash_id_crawl_wiki_cache = load_json(configs['type_run']['cache']['hash_id']['crawl_wiki'])
+    
     if dataset == "medhop":
         # Biomedical NER
         extractor_model = spacy.load("en_ner_bc5cdr_md")
@@ -145,7 +145,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         
                     print(f"\n--- Load Step {step}: {subquestion} ---")
                                             
-                    all_snippet, retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
+                    all_snippet, retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
 
                     if step not in qi_final_answers[path_i]:
                         continue
@@ -192,7 +192,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     candidates = []
                     idx_del = 0
                     
-                    all_snippet, current_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
+                    all_snippet, current_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
                     if has_extract_ner: # Only extract snippet
                         # focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
                         if target_ans_type in question_type_to_ner:
@@ -400,7 +400,6 @@ if __name__ == "__main__":
     
     # settings = configs['type_run']   
     # settings["dataset"] = f"{dataset}_"
-    # settings["wiki_cache"] = wiki_cache_data
     # raw_data_file = configs['dataset'][dataset][data_type]
     # raw_data = load_json(raw_data_file)
         
@@ -433,7 +432,6 @@ if __name__ == "__main__":
     
     settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
-    settings["wiki_cache"] = wiki_cache_data
     raw_data_file = configs['dataset'][dataset][data_type]
     raw_data = load_json(raw_data_file)
         

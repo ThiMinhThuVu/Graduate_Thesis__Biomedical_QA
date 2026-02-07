@@ -257,7 +257,38 @@ def get_paragraphs_wiki_result(results, subquestion, embedding_model=None, max_d
     return output_paragraph, all_context
 
 
-def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, cache_filepath_filter_wiki, embedding_model, topk=3, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
+
+def crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, cache_crawl_wiki_hash_id, embedding_model, topk=10, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
+    results = {}    
+    cnt_wiki = 0
+    
+    for result in wiki_search: # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
+        link = result['link']
+        if 'list' in link.lower():
+            continue
+
+        if cnt_wiki == topk:
+            break
+        
+        wiki_content = None
+        if link in wiki_cache_data:
+            wiki_content = wiki_cache_data[link]
+        else:
+            print(f"Crawling Wikipedia page: {link}")
+            crawled_data = crawl_wikipedia_page(link)
+
+            if crawled_data and 'content' in crawled_data and len(crawled_data['content']) != 0:
+                wiki_content = wiki_pre_processing(crawled_data)
+                # wiki_cache_data[link] = wiki_content
+
+        if wiki_content:
+            results[link] = wiki_content
+            cnt_wiki += 1
+
+
+    return all_context
+
+def _crawl_wiki_page(wiki_search, search_kw, wiki_cache_data, cache_filepath_filter_wiki, embedding_model, topk=3, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
     if os.path.exists(cache_filepath_filter_wiki):
         output = load_json(cache_filepath_filter_wiki)
     else:

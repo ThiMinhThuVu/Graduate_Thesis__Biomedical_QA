@@ -12,25 +12,25 @@ from sentence_transformers.models import StaticEmbedding
 from transformers import AutoModel
 
 global hash_id_cache
-global wiki_cache_data
+global hash_id_crawl_wiki_cache
 global extractor_model
 global extractor_model_2 
 global extractor_model_3
 global embedding_model
-wiki_cache_data = {}
 extractor_model = None
 
 def load_model(dataset, configs, using_embedding_model=False):
     global hash_id_cache
-    global wiki_cache_data
+    global hash_id_crawl_wiki_cache
     global extractor_model
     global extractor_model_2
     global extractor_model_3
     global embedding_model
 
-    wiki_cache_data = load_pickle(configs['cache']['wiki_cache_data'])
-    hash_id_cache = load_json(configs['cache']['hash_id_cache'])
-
+    print(configs['cache'])
+    hash_id_cache = load_json(configs['type_run']['cache']['hash_id']['retrieval'])
+    hash_id_crawl_wiki_cache = load_json(configs['type_run']['cache']['hash_id']['crawl_wiki'])
+    
     if dataset == "medhop":
         # Biomedical NER
         extractor_model = spacy.load("en_ner_bc5cdr_md")
@@ -68,10 +68,10 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
     print("[ID]: ", sample_id)
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
-    final_all_ans = load_json(file_all_ans)
-    # if os.path.exists(file_all_ans):
-    #     print(f"All answers file already exists: {file_all_ans}")
-    #     return
+    
+    if os.path.exists(file_all_ans):
+        print(f"All answers file already exists: {file_all_ans}")
+        return
         
     if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
         original_question = settings['chrunk_mapping'][sample_id]
@@ -145,8 +145,10 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         
                     print(f"\n--- Load Step {step}: {subquestion} ---")
                                             
-                    all_snippet, retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
+                    all_snippet, retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
 
+                    continue
+                    
                     if step not in qi_final_answers[path_i]:
                         continue
                     short_ans = qi_final_answers[path_i][step]["short_answer"]
@@ -155,58 +157,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     if 'candidate' in qi_final_answers[path_i][step]:
                         candidates = qi_final_answers[path_i][step]["candidate"] 
                     else:
-                        candidates = final_all_ans[str(q_i)][path_i][step].get("candidate", [])
-                        
-                    if mcq_add_no_ans:
-                        normalized_answer_no_ans = {
-                                'short_answer': "No answer",
-                                'long_answer': "The remaining answer options are not appropriate."
-                            }
-                        candidates.append({
-                            "short_answer": "No answer",
-                            "long_answer": normalized_answer_no_ans["long_answer"],
-                            "retrieval_information": "",
-                            "full_data": normalized_answer_no_ans # Lưu lại để dùng sau khi chọn
-                        })
-                                                
-                        # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES ---
-                        if len(candidates) > 1:
-                            # Build context cho Multiple Choice
-                            mc_options_text = ""
-                            for i, cand in enumerate(candidates):
-                                label = chr(ord('A') + i)
-                                mc_options_text += f"{label}. {cand['short_answer']}\nReason: {cand['long_answer']}\n\n"
-                            try:
-                                selected_label = gen_ans_multiple_choice(subquestion, mc_options_text, dataset=dataset, model=model_mcq)
-                                
-                                idx_selected = ord(selected_label[0].upper()) - ord('A')
-                                if 0 <= idx_selected < len(candidates):
-                                    final_candidate = candidates[idx_selected]
-                                    answer_generation = final_candidate["full_data"]
-                                    retrieval_information = final_candidate["retrieval_information"]
-                                else:
-                                    answer_generation = candidates[0]["full_data"]
-                                    retrieval_information = candidates[0]["retrieval_information"]
-                            except Exception as e:
-                                print(f"Error in MC selection: {e}")
-                                answer_generation = candidates[0]["full_data"]
-                                retrieval_information = candidates[0]["retrieval_information"]
-                                
-                        elif len(candidates) == 1:
-                            answer_generation = candidates[0]["full_data"]
-                            retrieval_information = candidates[0]["retrieval_information"]
-                        else:
-                            # Trường hợp không tìm thấy gì (insufficient)
-                            answer_generation = {"short_answer": "insufficient information", "long_answer": "No snippets found."}
-                            retrieval_information = []               
-                            
-                        short_ans = answer_generation["short_answer"]
-                        long_ans = answer_generation["long_answer"]
-    
-                        qi_final_answers[path_i][step] = answer_generation
-                    
-                        print(f"Short Answer for Step {step}: {short_ans}")
-
+                        candidates = []
                     
                     if step not in dict_ans[q_i][path_i]:
                         dict_ans[q_i][path_i][step] = {}
@@ -243,7 +194,10 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     candidates = []
                     idx_del = 0
                     
-                    all_snippet, current_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache)
+                    all_snippet, current_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
+                    
+                    continue
+                    
                     if has_extract_ner: # Only extract snippet
                         # focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
                         if target_ans_type in question_type_to_ner:
@@ -386,7 +340,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     
                     if short_ans.lower() == "insufficient information": # sang path tiếp theo 
                         break
-            
+            continue
             # Lấy output step cuối cùng của 1 path duy nhất của qi:
             if short_ans.lower() != "insufficient information":
                 dict_ans[q_i]['final_qi']["question"] = question
@@ -405,12 +359,12 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
 
                     # For 'inference' questions, the first valid path is sufficient.
                     break
-        
+        continue
         all_context += f"{q_i}.{question} - {dict_ans[q_i]['final_qi']['short_answer']}, {dict_ans[q_i]['final_qi']['long_answer']}\n\n"
         save_json(qi_final_answers, ans_filepath)
         print(f"\nFinal answer saved to {ans_filepath}")
     
-    # return
+    return
     
     if n_qi > 1:
         combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
@@ -451,7 +405,6 @@ if __name__ == "__main__":
     
     # settings = configs['type_run']   
     # settings["dataset"] = f"{dataset}_"
-    # settings["wiki_cache"] = wiki_cache_data
     # raw_data_file = configs['dataset'][dataset][data_type]
     # raw_data = load_json(raw_data_file)
         
@@ -484,22 +437,21 @@ if __name__ == "__main__":
     
     settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
-    settings["wiki_cache"] = wiki_cache_data
     raw_data_file = configs['dataset'][dataset][data_type]
     raw_data = load_json(raw_data_file)
         
     if dataset == "medhop":
         settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
         settings['normalize'] = True
-          
+        
     #EDIT CONFIG VERSION NER
     load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
     # ner_version = 4
     ner_version = "#3"
     metadata = load_json('data/metadata_medhop.json')
     model_mcq_name = "o3-mini" #"gpt-4.1-mini" #o3-mini
-    mcq_add_no_ans = True # True #False
-    
+    mcq_add_no_ans = False # True #False
+        
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
@@ -507,10 +459,10 @@ if __name__ == "__main__":
         qidx = sample['QIDX']
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
-        
+       
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'
-        if check_yn:
+        if check_yn == False: # chỉ chạy nếu là yesno
             continue
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)

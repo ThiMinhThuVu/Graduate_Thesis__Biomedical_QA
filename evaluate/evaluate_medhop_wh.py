@@ -4,18 +4,24 @@ import json
 import csv
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from update_hash_cache import update_hashid
+from update_hash_cache import update_hashid, update_hashid_crawl_wiki
 from postprocessing import postprocessing
 #config
 run = 'R4_'
 # run = 'R1_'
 
-# cache_hasid_path = r'data\cache\hash_id_IR_20.json'
-cache_hasid_path = r'data\cache\hash_id.json'
-search_cache_folder = "data/cache/retrieval" #"data/cache/IR_20"
-filter_cache_folder = "data/cache/filter_wikipedia" #"data/cache/filter_wikipedia_20"
-                
+search_topk=20
+cache_hasid_path = r'data\cache\hash_id_IR_20.json'
+cache_hashid_crawl_path = r'data\cache\hash_id_crawl_wiki.json'
+search_cache_folder = f"data/cache/IR_20"
+
+# search_cache_folder = f"data/cache/retrieval"
+filter_cache_folder = f"data/cache/crawl_wikipedia"   
+filter_cache_folder_2 = f"data/cache/crawl_wikipedia_tool_2"   
+
+
 update_hashid(cache_hasid_path)
+update_hashid_crawl_wiki()
 
 def load_json(golden_path):
     with open(golden_path, 'r', encoding='utf-8') as f:
@@ -23,11 +29,10 @@ def load_json(golden_path):
     return golden_data
 
 cache_index = load_json(cache_hasid_path)
-
+cache_crawl_hash = load_json(cache_hashid_crawl_path)
 
 with open("data/metadata_medhop.json", 'r', encoding='utf-8') as f:
     cache_class = json.load(f)
-
 
 def normalize_query(query: str) -> str:
     return " ".join(query.lower().strip().split())
@@ -44,6 +49,9 @@ def load_predictions(pred_dir, golden_ids):
             continue
         if id_part not in golden_ids:
             continue
+        if id_part != '486804':
+            continue
+        
         with open(os.path.join(pred_dir, fname), 'r', encoding='utf-8') as f:
             try:
                 pred_data = json.load(f)
@@ -55,29 +63,59 @@ def load_predictions(pred_dir, golden_ids):
                 if query in cache_index:
                     id_cache = cache_index[query]
                 
-                search_cache = f"{search_cache_folder}/{id_cache}"
-                filter_cache = f"{filter_cache_folder}/{id_cache}"
-                
+                search_cache = f"{search_cache_folder}/{id_cache}"                
                 
                 context = ""
                 ctx1 = load_json(search_cache)
-                for item in ctx1.get('google', {}).get('search_results'):
+                crawl_wiki = ""
+                for item in ctx1.get('google', {}).get('search_results')[:search_topk]:
                     context += item['title'] + " " + item['snippet'] + ' \n '
-                for item in ctx1.get('wiki', {}).get('search_results'):
+                for item in ctx1.get('wiki', {}).get('search_results')[:search_topk]:
                     context += item['title'] + " " + item['snippet'] + ' \n '
                     
-                if 'crawl_wiki' in ctx1:
-                    ctx2 = ctx1.get('crawl_wiki', {})
-                else:
-                    ctx2 = load_json(filter_cache).get('crawl_wiki', {})
-                    
-                for link, page in ctx2.get('html_page', {}).items():
-                    for sec, content in page.get('sections', {}).items():
-                        context += sec + " " + ", ".join(content['content']) + " \n "
+                    link = normalize_query(item['link'])
+                    if link in cache_crawl_hash:
+                        hashid = cache_crawl_hash[link]
+                        tmp_path = f"{filter_cache_folder}/{hashid}"
+                        path2 = f"{filter_cache_folder_2}/{hashid}"
                         
+                        if os.path.exists(tmp_path):
+                            data_crawl = load_json(tmp_path)
+                            if data_crawl is not None:
+                                content = data_crawl.get('crawl_wiki', {}).get('html_page', {}).get(link, None)
+                                if content:
+                                    content = content.get('content', [])
+                                else:
+                                    content = []
+                            else:
+                                content = []
+                    
+                            crawl_wiki += ', '.join(content) + " \n "
+                    
+                        if os.path.exists(path2):
+                            data_crawl = load_json(path2)
+                            if data_crawl is not None:
+                                content = data_crawl.get('crawl_wiki', {}).get('html_page', {}).get(link, None)
+                                if content:
+                                    content = content.get('content', [])
+                                else:
+                                    content = []
+                            else:
+                                content = []
+                    
+                            crawl_wiki += ', '.join(content) + " \n "
+                
+                context += crawl_wiki    
+                  
                 context = context.lower()
                 
-                context2 = pred_data['1']['final_qi']['retrieval_information'].lower() # Hop cuối
+                if context == '':
+                    print(id_part)
+                    print(search_cache)
+
+                
+                context2 = ""
+                # context2 = pred_data['1']['final_qi']['retrieval_information'].lower() # Hop cuối
                 # context = ""
                 # tmp = pred_data['1'].get('0', {})
                 # for step, item in tmp.items():                    
@@ -87,9 +125,10 @@ def load_predictions(pred_dir, golden_ids):
                 target_ans = cache_class[id_part]['target_answer_type']
                 
                 preds[id_part] = {'ans': answer, 'question': question, 'context': context, 'type_q': type_q, 'target_ans': target_ans,  'context2':context2}
-            except Exception:
-                preds[id_part] = {'ans': None, 'question': None, 'context': '', 'type_q': None, 'target_ans': None}
+            except Exception as e:
+                preds[id_part] = {'ans': None, 'question': None, 'context': '', 'type_q': None, 'target_ans': None, 'context2':''}
                 print(id_part)
+                print(f"Error for {id_part}: {e}")
     return preds
 
 def evaluate_context(golden, preds, output_csv):
@@ -107,6 +146,8 @@ def evaluate_context(golden, preds, output_csv):
     parallel_false = 0
     seq_false = 0
     list_id_gol2 = []
+    # Dict để lưu các trường hợp không có golden trong context
+    not_in_context_cases = {}
     with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['qidx', 'original question', 'golden', 'short answer', 'check_ans', 'answer norm', 'check_ans_norm', 'check_golden_in_context'])
@@ -117,15 +158,11 @@ def evaluate_context(golden, preds, output_csv):
             context = preds.get(qid, {}).get('context', '')
             type_q = preds.get(qid, {}).get('type_q', '')
             target_ans = preds.get(qid, {}).get('target_ans', '')
-            
             context2 = preds.get(qid, {}).get('context2', '')
-            
             if target_ans == 'correctness':
                 continue
-            
             # if type_q != "direct":
             #     continue
-           
             check = False
             if pred_ans is not None:
                 check = pred_ans.strip().lower() in golden_ans
@@ -134,7 +171,6 @@ def evaluate_context(golden, preds, output_csv):
             if check:
                 count_check += 1
             if check_ans_norm:
-                # list_id_gol.append(qid)
                 count_check_norm += 1
                 if type_q == 'direct':
                     direct_true += 1
@@ -149,14 +185,10 @@ def evaluate_context(golden, preds, output_csv):
                     parallel_false += 1
                 elif type_q == 'sequence':
                     seq_false += 1
-                    
-                
             # Đếm số câu trả lời yes/no đúng
             if pred_ans is not None and pred_ans.strip().lower() in ['yes', 'no'] and check:
                 yesno_correct += 1
-                
             total += 1
-            
             check_golden_in_context = False
             if pred_ans not in ['yes', 'no', "insufficient information"]:
                 for gol in golden_ans:
@@ -165,17 +197,28 @@ def evaluate_context(golden, preds, output_csv):
                         cnt_gol_ctx += 1
                         list_id_gol.append(qid)
                         break
-                    
+                        
                 for gol in golden_ans:
                     if gol in context2:
-                        # check_golden_in_context = True
-                        # cnt_gol_ctx += 1
                         list_id_gol2.append(qid)
                         break
             else:
                 yn += 1
                 check_golden_in_context = None
             writer.writerow([qid, question, golden_ans, pred_ans, check, ans_norm, check_ans_norm, check_golden_in_context])
+            
+            if check_golden_in_context == False and cache_class[qid]['type_q'] == 'direct' and cache_class[qid]['target_answer_type'] != 'correctness':
+                # Lưu vào dict thay vì chỉ print
+                not_in_context_cases[qid] = {
+                    'context': context,
+                    'golden_ans': golden_ans,
+                    'pred_ans': pred_ans,
+                    'question': question,
+                    'target_ans': target_ans
+                }
+    # Save dict ra file json
+    with open('evaluate/run/not_in_context_cases.json', 'w', encoding='utf-8') as f:
+        json.dump(not_in_context_cases, f, ensure_ascii=False, indent=2)
             
     # print("Yesno: ", yn)
     total = 695
@@ -194,14 +237,14 @@ def evaluate_context(golden, preds, output_csv):
     print("parallel_true: ", parallel_true)
     print("parallel_false: ", parallel_false)
     
-    only_in_1 = list(set(list_id_gol) - set(list_id_gol2))
-    only_in_2 = list(set(list_id_gol2) - set(list_id_gol))
-    print(f"Số phần tử chỉ có trong list 1 (raw) mà không có trong list 2 (filter): {len(only_in_1)}")
-    print(only_in_1)
-    print(f"Số phần tử chỉ có trong list 2 (filter) mà không có trong list 1 (raw): {len(only_in_2)}")
-    print(only_in_2)
+    # only_in_1 = list(set(list_id_gol) - set(list_id_gol2))
+    # only_in_2 = list(set(list_id_gol2) - set(list_id_gol))
+    # print(f"Số phần tử chỉ có trong list 1 (raw) mà không có trong list 2 (filter): {len(only_in_1)}")
+    # print(only_in_1)
+    # print(f"Số phần tử chỉ có trong list 2 (filter) mà không có trong list 1 (raw): {len(only_in_2)}")
+    # print(only_in_2)
     
-    print('golden in context hop cuối: ', cnt_gol_ctx-len(only_in_1))
+    # print('golden in context hop cuối: ', cnt_gol_ctx-len(only_in_1))
     return list_id_gol
 
 def save_json(data, file_path):
@@ -215,8 +258,8 @@ def main():
     important_data = load_json('data\important_id.json')
     # golden_path = os.path.join('data', 'all_answer_golden.json')
     golden_path = os.path.join('data', 'all_answer_golden_61.json')
-    pred_dir = os.path.join('medhop_results', 'all_ans')
-    # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\target_type new\row14\all_ans"
+    # pred_dir = os.path.join('medhop_results', 'all_ans')
+    pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh_3\wh15\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\row14\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\R23\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\wh\target_type new\target2\row15.1-gpt-4.1-mini\all_ans"
