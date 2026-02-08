@@ -19,6 +19,9 @@ global extractor_model_3
 global embedding_model
 extractor_model = None
 
+global cache_ner_filter
+cache_ner_filter = {}
+
 def load_model(dataset, configs, using_embedding_model=False):
     global hash_id_cache
     global hash_id_crawl_wiki_cache
@@ -60,7 +63,7 @@ def load_model(dataset, configs, using_embedding_model=False):
     else:
         raise ValueError(f"Unsupported dataset: {dataset}")
 
-def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
+def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, type_q=None,
             using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False,
             target_ans_type=None, question_type_to_ner=None, model_mcq=None, mcq_add_no_ans=False):
     
@@ -145,10 +148,10 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         
                     print(f"\n--- Load Step {step}: {subquestion} ---")
                                             
-                    all_snippet, retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
+                    all_snippet, retrieval_information = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
 
                     continue
-                    
+                
                     if step not in qi_final_answers[path_i]:
                         continue
                     short_ans = qi_final_answers[path_i][step]["short_answer"]
@@ -194,10 +197,9 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     candidates = []
                     idx_del = 0
                     
-                    all_snippet, current_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
-                    
+                    all_snippet, current_retrieval = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
+                    cache_ner_filter[sample_id] = current_retrieval
                     continue
-                    
                     if has_extract_ner: # Only extract snippet
                         # focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
                         if target_ans_type in question_type_to_ner:
@@ -388,12 +390,13 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
         print(f"\nSaved to {file_all_ans}")
     
-    
+
 if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)
     
     #edit config
+    # threads = [0, 500]
     threads = configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -452,41 +455,54 @@ if __name__ == "__main__":
     model_mcq_name = "o3-mini" #"gpt-4.1-mini" #o3-mini
     mcq_add_no_ans = False # True #False
         
-    search_kw_list = []
-    import glob
+    meta_ner = load_json(r'E:\analysis_output\cache-enitty\ALL\meta_entity_v2.json')
+    
+    for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
+        if not (threads[0] <= idx < threads[1]):
+            continue 
+        
+        qidx = sample['QIDX']
+        question = sample['Question']
+        target_ans_type = metadata[qidx]['target_answer_type']
+        
+        # if qidx != '157829':
+        #     continue
+       
+        # CONFIG YESNO
+        check_yn = target_ans_type == 'correctness'
+        if check_yn:
+            continue
+        
+        # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+        type_q = metadata[qidx]['type_q']    
+        
+        #CONFIG    
+        if type_q != "direct":
+            continue
+              
+        sample['type_q'] = type_q        
+        if type_q in ['direct', 'parallel', 'comparison']:
+            is_seq = False
+        else:
+            is_seq = True
 
-    # Scan medhop_preprocessing/step1/1-4 for json files
-    step1_subfolders = ['1', '2', '3', '4']
-    import re
-    for subfolder in step1_subfolders:
-        folder = os.path.join('medhop_preprocessing', 'step1', subfolder)
-        json_files = glob.glob(os.path.join(folder, '*.json'))
-        for json_file in json_files:
-            try:
-                item = load_json(json_file)
-            except Exception as e:
-                print(f"Error loading {json_file}: {e}")
-                continue
-            # Extract qid from filename: step_1_{qid}.json
-            base = os.path.basename(json_file)
-            match = re.match(r'step_1_(\d+)\.json', base)
-            if not match:
-                continue
-            qid = match.group(1)
-
-            if qid in metadata:
-                target_ans_type = metadata[qid]['target_answer_type']
-                type_q = metadata[qid]['type_q']
-                if target_ans_type == 'correctness' and type_q == 'direct':
-                    if isinstance(item, dict) and '0' in item:
-                        for step, _item in item['0'].items():
-                            search_kw = _item.get('search_keyword', None)
-                            if search_kw and search_kw.lower() not in search_kw_list:
-                                search_kw_list.append(search_kw.lower())
-
-    # Save result
-    with open('search_keyword_YN_direct.json', 'w', encoding='utf-8') as fout:
-        json.dump(search_kw_list, fout, ensure_ascii=False, indent=2)
-    print(f"Saved search_keyword_YN_direct.json with {len(search_kw_list)} items.")
+        if ner_version == 2:
+            question_type_to_ner = question_type_to_ner_2
+        elif ner_version == 3:
+            question_type_to_ner = question_type_to_ner_3
+        elif ner_version == 4:
+            question_type_to_ner = question_type_to_ner_4
+        elif ner_version == "#3":
+            question_type_to_ner = {} # để tất cả các type trả về là ["DISEASE", "CHEMICAL"]   
+        
+        dict_ner_q = meta_ner[qidx]['entities_q'].get('detail', {})
+        list_ner_q = list(dict_ner_q.keys())
+        
+        preprocess_sample(list_ner_q, sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
+            using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False,
+            target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner,model_mcq=model_mcq_name,
+            mcq_add_no_ans=mcq_add_no_ans)
+        
+        save_json(cache_ner_filter, "all_inf_direct.json")
         
         

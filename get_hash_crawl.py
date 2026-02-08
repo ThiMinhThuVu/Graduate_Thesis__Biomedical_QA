@@ -13,8 +13,8 @@ def crawl_wikipedia():
     
     for idx, (link, item) in enumerate(inputdata.items()):
         print(idx)
-        if idx < 2240:
-            continue
+        # if idx < 2100:
+        #     continue
         original_link = link
         title = item['title']
         language = item['language']
@@ -33,7 +33,7 @@ def crawl_wikipedia():
         out_path_1 = os.path.join(dst_folder, hash_file_name)
         out_path_2 = os.path.join(dst_folder_2, hash_file_name) #gọi tool2 lưu folder 2
         if os.path.exists(out_path_1):
-            print("file1: ", out_path_1)
+            # print("file1: ", out_path_1)
             pass
         else:
             wiki_content = {}

@@ -145,7 +145,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                         
                     print(f"\n--- Load Step {step}: {subquestion} ---")
                                             
-                    all_snippet, retrieval_information = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
+                    all_snippet, retrieval_information = retrieve_evidence(retrieve_evidence, sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
 
                     if step not in qi_final_answers[path_i]:
                         continue
@@ -192,7 +192,7 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
                     candidates = []
                     idx_del = 0
                     
-                    all_snippet, current_retrieval = retrieve_evidence(sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
+                    all_snippet, current_retrieval = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
                     if has_extract_ner: # Only extract snippet
                         # focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
                         if target_ans_type in question_type_to_ner:
@@ -454,10 +454,13 @@ if __name__ == "__main__":
         qidx = sample['QIDX']
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
+        
+        if qidx != '157829':
+            continue
        
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'
-        if check_yn == False:
+        if check_yn:
             continue
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)

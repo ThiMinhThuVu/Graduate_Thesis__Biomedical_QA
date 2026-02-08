@@ -1,0 +1,54 @@
+{
+    "title": "Epigenetic clock",
+    "url": "https://en.wikipedia.org/wiki/epigenetic_clock",
+    "sections": {
+        "Introduction": {
+            "content": [
+                "An epigenetic clock is an analytical method used as a biomarker of aging to estimate \"biological age\". The method relies on age-related modifications to DNA that occur over time and regulate how genes are expressed. Many epigenetic clocks are based on the analysis of DNA methylation, measuring the accumulation of methyl groups to CpG regions of DNA molecules. More recently, new epigenetic clocks have been developed based on the histone code, chromatin accessibility and nucleosome positioning."
+            ]
+        },
+        "History": {
+            "content": [
+                "The strong correlation between aging and DNA methylation levels has been known since the late 1960s. A vast literature describes sets of CpGs whose DNA methylation levels correlate with age. The first robust demonstration that DNA methylation levels in saliva could generate age predictors with an average accuracy of 5.2 years was published by a UCLA team including Sven Bocklandt, Steve Horvath, and Eric Vilain in 2011 (Bocklandt et al. 2011). The laboratories of Trey Ideker and Kang Zhang at the University of California, San Diego published the Hannum epigenetic clock (Hannum 2013), which consisted of 71 markers that accurately estimate age based on blood methylation levels. The first multi-tissue epigenetic clock, Horvath's epigenetic clock, was developed by Steve Horvath, a professor of human genetics  and biostatistics at UCLA (Horvath 2013). Horvath spent over 4 years collecting publicly available Illumina DNA methylation data and identifying suitable statistical methods.",
+                "The age estimator was developed using 8,000 samples from 82 Illumina DNA methylation array datasets, encompassing 51 healthy tissues and cell types. The major innovation of Horvath's epigenetic clock lies in its wide applicability: the same set of 353 CpGs and the same prediction algorithm is used irrespective of the DNA source within the organism, i.e. it does not require any adjustments or offsets. This property allows one to compare the ages of different areas of the human body using the same aging clock. Shortly afterwards, a derivation of Horvath's clock, the IEAA (Intrinsic Epigenetic Age Acceleration), an estimator based on the cellular composition of the blood, was developed.",
+                "A second generation of DNA methylation clocks emerged a few years later and improved on the first in age estimation. This was thanks to the incorporation not only of epigenetic variants such as DNA methylation but also environmental variants such as smoking or chronological age. Among these clocks, the PhenoAge and GrimAge clocks stand out. PhenoAge is an epigenetic clock that takes chronological age into account, and GrimAge uses the mortality risks of age together with the smoking variant among others as a risk factor. Taking into account environmental variants allows GrimAge to outperform any other epigenetic clock in \"predicting death\".",
+                "Third-generation DNA methylation clocks are designed to be applicable across multiple species simultaneously. Specifically, pan-mammalian epigenetic clocks determine the age of tissues from all mammalian species by analyzing cytosine methylation in DNA regions that are highly conserved.",
+                "New epigenetic clocks based on other markers continue being developed. An aging clock based on nucleosome positioning derived from cell-free DNA was introduced in 2024. In 2025, age-related changes in histone marks have been leveraged to build a new class of epigenetic clocks histone modifications. These new predictors show promise as an alternative to clocks that use cytosine methylation. New age estimation tools are being developed continuously, which also facilitate the prognosis of certain diseases."
+            ]
+        },
+        "Relationship to a cause of biological aging": {
+            "content": [
+                "It is not yet known what exactly is measured by DNA methylation age. Horvath hypothesized that DNA methylation age measures the cumulative effect of an epigenetic maintenance system but details are unknown. The fact that DNA methylation age of blood predicts all-cause mortality in later life has been used to argue that it relates to a process that causes aging. However, if a particular CpG played a direct causal role in the aging process, the mortality it created would make it less likely to be observed in older individuals, making the site less likely to have been chosen as a predictor; the 353 clock CpGs, therefore, likely have no causal effect. Rather, the epigenetic clock captures an emergent property of the epigenome. On the other hand, the aging clock based on nucleosome positioning is linked to a mechanistic effect of increasing of average genomic distances between nucleosomes with aging."
+            ]
+        },
+        "Motivation for biological clocks": {
+            "content": [
+                "In general, biological aging clocks and biomarkers of aging are expected to find many uses in biological research since age is a fundamental characteristic of most organisms. Accurate measures of biological age (biological aging clocks) could be useful for",
+                "testing the validity of various theories of biological aging,",
+                "diagnosing various age related diseases and for defining cancer subtypes,",
+                "predicting/prognosticating  the onset of various diseases,",
+                "serving as surrogate markers for evaluating therapeutic interventions including  rejuvenation  approaches,",
+                "studying developmental biology and cell differentiation,",
+                "forensic applications, for example to estimate the age of a suspect based on blood left on a crime scene.",
+                "Overall, biological clocks are expected to be useful for studying what causes aging and what can be done against it. However, they can only capture the effects of interventions that affect the rate of future aging, i.e. the slope of the Gompertz curve by which mortality increases with age, and not that of interventions that act at one moment in time, e.g. to lower mortality across all ages, i.e. the intercept of the Gompertz curve."
+            ]
+        },
+        "Properties of Horvath's clock": {
+            "content": [
+                "The clock is defined as an age estimation method based on 353 epigenetic markers on the DNA. The 353 markers measure DNA methylation of CpG dinucleotides. Estimated age (\"predicted age\" in mathematical usage), also referred to as DNA methylation age, has the following properties: first, it is close to zero for embryonic and induced pluripotent stem cells; second, it correlates with cell passage number; third, it gives rise to a highly heritable measure of age acceleration; and, fourth, it is applicable to chimpanzee tissues (which are used as human analogs for biological testing purposes). Organismal growth (and concomitant cell division) leads to a high ticking rate of the epigenetic clock that slows down to a constant ticking rate (linear dependence) after adulthood (age 20). The fact that DNA methylation age of blood predicts all-cause mortality in later life even after adjusting for known risk factors is compatible with a variety of causal relationships, e.g. a common cause for both. Similarly, markers of physical and mental fitness are associated with the epigenetic clock (lower abilities associated with age acceleration). It systematically underestimates age from older individuals.",
+                "Salient features of Horvath's epigenetic clock include its applicability to a broad spectrum of tissues and cell types. Since it allows one to contrast the ages of different tissues from the same subject, it can be used to identify tissues that show evidence of accelerated age due to disease."
+            ]
+        },
+        "Applications of epigenetic clocks": {
+            "content": [
+                "By contrasting DNA methylation age (estimated age) with chronological age, one can define measures of age acceleration. Age acceleration can be defined as the difference between DNA methylation age and chronological age. Alternatively, it can be defined as the residual that results from regressing DNAm age on chronological age. The latter measure is attractive because it does not correlate with chronological age.",
+                "A positive/negative value of epigenetic age acceleration suggests that the underlying tissue ages faster/slower than expected."
+            ]
+        },
+        "External links": {
+            "content": [
+                "Wickelgren, Ingrid (2022-08-17). \"Epigenetic 'Clocks' Predict Animals' True Biological Age\". Quanta Magazine."
+            ]
+        }
+    }
+}

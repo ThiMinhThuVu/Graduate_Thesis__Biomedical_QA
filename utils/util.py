@@ -383,6 +383,33 @@ def wiki_pre_processing(content):
             }
     return new_content
 
+def wiki_pre_processing_tool_2(content):
+    new_content = {
+        "title": content["title"],
+        "url": content["url"],
+        "sections": {}
+    }
+
+    for section, section_data in content["sections"].items():
+        passages = []
+
+        for block in section_data.get("content", []):
+            # tách theo đoạn văn: 1 hoặc nhiều dòng trống
+            split_passages = [
+                p.strip()
+                for p in block.split("\n")
+                if p.strip()
+            ]
+            passages.extend(split_passages)
+
+        if passages:
+            new_content["sections"][section] = {
+                "content": passages
+            }
+
+    return new_content
+
+
 
 def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
     """Tạo thư mục và trả về một dictionary chứa tất cả các đường dẫn file cần thiết."""
