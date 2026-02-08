@@ -465,7 +465,7 @@ if __name__ == "__main__":
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
         
-        # if qidx != '157829':
+        # if qidx != '150011':
         #     continue
        
         # CONFIG YESNO
@@ -503,6 +503,18 @@ if __name__ == "__main__":
             target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner,model_mcq=model_mcq_name,
             mcq_add_no_ans=mcq_add_no_ans)
         
-        save_json(cache_ner_filter, "all_inf_direct.json")
-        
-        
+    save_json(cache_ner_filter, "all_inf_direct.json")
+    
+    lengths = [len(context.split()) for context in cache_ner_filter.values() if isinstance(context, str)]
+
+    if lengths:
+        avg_len = sum(lengths) / len(lengths)
+        max_len = max(lengths)
+        min_len = min(lengths)
+        total_len = sum(lengths)
+        print(f"Trung bình: {avg_len:.2f}")
+        print(f"Max: {max_len}")
+        print(f"Min: {min_len}")
+        print(f"Tổng: {total_len}")
+    else:
+        print("Không có context nào.")

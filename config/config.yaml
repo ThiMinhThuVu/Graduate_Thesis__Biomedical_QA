@@ -5,7 +5,7 @@ run: #NHỚ SỬA LẠI MAX_CANDIDATES CHO cái multiplechoice
 
 type_run: {
       "dataset": "{dataset}_", 
-      "get_gg": True, #False
+      "get_gg": True, #False #True
       "get_wiki": True,
       "get_abs_wiki": False,
       "get_crawl_wiki": True,      
@@ -19,11 +19,11 @@ type_run: {
           "max_results_search_api_wiki": 10, 
           "google":  20,
           "wiki": 10,
+          "wiki_crawl": 3,
+          'ner_topk_article': 3,
+          "crawl_max_token": 100000000,
+          "crawl_max_token_ner": 1000000000,
           "wiki_abs": 3,
-          "wiki_crawl": 5,
-          'ner_topk_article': 2,
-          "crawl_max_token": 10000000,
-          "crawl_max_token_ner": 10000000,
           "sparql_r_topk": 3, # wiki nên dùng 1-2, medhop: 3
           "sparql_r_retry_topk": 5, # wiki 3 là đủ dùng;  medhop:5
           "k_percent": 0.5,
@@ -35,7 +35,7 @@ type_run: {
         'crawl_wiki_2':"data/cache/crawl_wikipedia_tool_2",
         "filter_wiki": "data/cache/filter_wikipedia",
         'crawl_enity_wiki': "data/cache/crawl_entity_wikipedia",
-        'ner_wiki': "data/cache/wiki_pages",
+        'ner_wiki': "data/cache/wiki_pages_tool_1", #wiki_pages", wiki_pages_tool_1
         'filter_ner_wiki': "data/cache/filter_ner_wikipedia",
 
         "hash_id": {

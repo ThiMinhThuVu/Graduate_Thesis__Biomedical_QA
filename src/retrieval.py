@@ -379,84 +379,49 @@ def get_paragraphs_wiki_result(link, sample, subquestion, embedding_model=None, 
     
     return res_paragraphs
 
+def get_paragraphs_wiki_tfidf_with_info(link, sample, subquestion, max_docs_token=300):
+    list_para_text = []
+    para_sections = []
+    key_section = sample['sections'].keys()
+    key_section = [section for section in key_section if section.lower() not in move_section_list]
+
+    for heading, item in sample['sections'].items():
+        if heading.lower() in move_section_list:
+            continue
+        for p in item['content']:
+            para_sections.append((heading, p))
+            list_para_text.append(p)
+
+    if len(list_para_text) == 0:
+        print("[crawl wiki] Link này rỗng")
+        return None
+
+    similarity = find_most_relevant_doc(subquestion, list_para_text)
+
+    count_token = 0
+    selected_idx = []
+    for item in similarity:
+        if count_token >= max_docs_token:
+            break
+        idx = item["index"]
+        para = list_para_text[idx]
+        selected_idx.append(idx)
+        count_token += len(para.split())
+
+    # Lấy các đoạn <info> ở section cuối cùng
+    last_section = key_section[-1] if key_section else None
+    info_paragraphs = []
+    for i, (heading, para) in enumerate(para_sections):
+        if heading == last_section and para.strip().startswith("<info>"):
+            info_paragraphs.append(para.strip())
+
+    selected_paragraphs = [list_para_text[i] for i in sorted(selected_idx)]
+    selected_paragraphs.extend(info_paragraphs)
+    return "\n".join(selected_paragraphs)
+
+
 def normalize_query(query: str) -> str:
     return " ".join(query.lower().strip().split())
-
-def _crawl_wiki_page(wiki_search, search_kw_subq, settings, hash_id_crawl_wiki_cache, embedding_model, topk=3, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều   
-    if embedding_model:
-        type_embed = "embedding"
-    else:
-        type_embed = "tfidf"
-       
-    cnt_wiki = 0
-    all_context = ""
-    
-    
-    for result in wiki_search: # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
-        original_link = result['link']
-        link = normalize_query(original_link)
-        if 'list' in link:
-            continue
-
-        if cnt_wiki == topk:
-            break
-        
-        wiki_content = None
-        filter_context = None
-        
-        if link in hash_id_crawl_wiki_cache:
-            hash_id = hash_id_crawl_wiki_cache[link]
-        else:
-            hash_id, hash_id_crawl_wiki_cache = register_query_cache(link, hash_id_crawl_wiki_cache, file_cache_index=settings['cache']['hash_id']['crawl_wiki'])
-
-        cache_filepath_crawl = f"{settings['cache']['crawl_wiki']}/{hash_id}" 
-        cache_filepath_filter = f"{settings['cache']['filter_wiki']}/{hash_id}"
-        
-        
-        if os.path.exists(cache_filepath_filter):
-            print("[Load Cache] filter path: ", cache_filepath_filter)
-            data_filter = load_json(cache_filepath_filter)
-            if data_filter is not None:
-                filter_context = data_filter.get('crawl_wiki', {}).get('filter', {}).get(link, {}).get(type_embed, "")
-        else:
-            if os.path.exists(cache_filepath_crawl):
-                print(f'[Load Cache] file Crawl wiki HTML: {cache_filepath_crawl}')
-                crawled_data = load_json(cache_filepath_crawl).get('crawl_wiki', {}).get('html_page', {}).get(link, None)
-            else:
-                print(f"Crawling Wikipedia page: {original_link}")
-                print("Crawl crawl path: ", cache_filepath_crawl)
-                crawled_data = crawl_wikipedia_page(original_link)
-                crawled_data_output = {
-                    'crawl_wiki': {
-                        'html_page': {
-                            link: crawled_data
-                        }
-                    }
-                }
-                save_json(crawled_data_output, cache_filepath_crawl)
-                
-            if crawled_data and 'content' in crawled_data and len(crawled_data['content']) != 0:
-                wiki_content = wiki_pre_processing(crawled_data)
-
-        if wiki_content:
-            filter_context = get_paragraphs_wiki_result(link, wiki_content, search_kw_subq, embedding_model=embedding_model, max_docs_token=max_token)
-            filter_output = {
-                'crawl_wiki': {
-                    'filter': {
-                        link: {
-                            type_embed: filter_context
-                        }
-                    }
-                }
-            }
-            save_json(filter_output, cache_filepath_filter)
-            
-        if filter_context != None:
-            cnt_wiki += 1        
-            all_context += "Information about: {}".format(result["title"]) + "\n" +  filter_context + "-------------------"
-
-    return all_context
-
 
 def retrieval_context_2wiki(search_kw, sample, embedding_model, vec_embed=False, top_k=1, cos_threshold=0.7, fuzz_threshold=0.7, vecembed_threshold=0.45):
     search_kw = search_kw.lower()
@@ -548,51 +513,6 @@ def retrieval_context_2wiki(search_kw, sample, embedding_model, vec_embed=False,
                 
     return result.strip()
 
-def _crawl_ner_wiki_page(search_kw_subq, ner_list, cache_entity, WIKI_BASE, topk_article=3, embedding_model=None, max_token=300):
-    filter_folder = "data/cache/filter_ner_wiki"
-    if embedding_model:
-        type_embed = "embedding"
-    else:
-        type_embed = "tfidf"
-
-    all_context = ""
-    cnt_wiki = 0
-
-    for ner in ner_list:
-        ner_norm = normalize_query(ner)
-        list_article = cache_entity.get(ner_norm, [])
-        for article in list_article[:topk_article]:
-            hash_id = article.get('hash_id', None)
-            link = article.get('url', None)
-            title = article.get('title', "")
-
-            file_crawl = f"{WIKI_BASE}/{hash_id}"
-            if os.path.exists(file_crawl):
-                crawl_wiki = load_json(file_crawl)
-                if crawl_wiki and link:
-                    crawled_data = crawl_wiki.get('crawl_wiki', {}).get('html_page').get(link, None)
-                    if crawled_data and 'content' in crawled_data and len(crawled_data['content']) != 0:
-                        wiki_content = wiki_pre_processing_tool_2(crawled_data)
-
-                        if wiki_content:
-                            filter_context = get_paragraphs_wiki_result(link, wiki_content, search_kw_subq, embedding_model=embedding_model, max_docs_token=max_token)
-                            filter_output = {
-                                'crawl_wiki': {
-                                    'filter': {
-                                        link: {
-                                            type_embed: filter_context
-                                        }
-                                    }
-                                }
-                            }
-                            file_filter = f"{filter_folder}/{hash_id}"
-                            save_json(filter_output, file_filter)
-
-                            if filter_context is not None:
-                                cnt_wiki += 1
-                                all_context += "Information about: {}\n{}\n-------------------\n".format(title, filter_context)
-    return all_context
-
 def crawl_wiki_page_general(
     search_kw_subq,
     article_iterable,
@@ -604,7 +524,8 @@ def crawl_wiki_page_general(
     pre_processing_func,
     embedding_model=None,
     topk=3,
-    max_token=300
+    max_token=300,
+    get_ner=False
     ):
     if embedding_model:
         type_embed = "embedding"
@@ -618,7 +539,7 @@ def crawl_wiki_page_general(
         hash_id = get_hash_id_func(article)
         link = get_link_func(article)
         title = get_title_func(article)
-
+        
         if not hash_id or not link:
             continue
 
@@ -633,8 +554,16 @@ def crawl_wiki_page_general(
                 crawl_wiki = load_json(file_crawl)
                 crawled_data = crawl_wiki.get('crawl_wiki', {}).get('html_page', {}).get(link, None)
             else:
-                # Nếu cần crawl mới, bạn có thể truyền thêm hàm crawl nếu muốn
-                continue
+                print(f"Crawling Wikipedia page: {link}")
+                crawled_data = crawl_wikipedia_page(link)
+                crawled_data_output = {
+                    'crawl_wiki': {
+                        'html_page': {
+                            link: crawled_data
+                        }
+                    }
+                }
+                save_json(crawled_data_output, file_crawl)
 
             if crawled_data and 'content' in crawled_data and len(crawled_data['content']) != 0:
                 wiki_content = pre_processing_func(crawled_data)
@@ -661,13 +590,92 @@ def crawl_wiki_page_general(
 
         if filter_context is not None:
             cnt_wiki += 1
-            all_context += f"Information about: {title}\n{filter_context}\n-------------------\n"
+            if get_ner:
+                all_context += f"Information about: {title} - {article['ner']}\n{filter_context}\n"
+            else:
+                all_context += f"Information about: {title}\n{filter_context}\n"
             if cnt_wiki >= topk:
                 break
 
     return all_context
 
+# def crawl_wiki_page_raw(
+#     article_iterable,
+#     get_hash_id_func,
+#     get_link_func,
+#     cache_crawl_base,
+#     topk=3
+# ):
+#     all_context = ""
+#     cnt_wiki = 0
+
+#     for article in article_iterable:
+#         hash_id = get_hash_id_func(article)
+#         link = get_link_func(article)
+
+#         if not hash_id or not link:
+#             continue
+
+#         file_crawl = f"{cache_crawl_base}/{hash_id}"
+
+#         if os.path.exists(file_crawl):
+#             crawl_wiki = load_json(file_crawl)
+#             crawled_data = crawl_wiki.get('crawl_wiki', {}).get('html_page', {}).get(link, None)
+#             if crawled_data:
+#                 sections = crawled_data.get('sections', {})
+#                 section_texts = []
+#                 for section_name, section_info in sections.items():
+#                     contents = section_info.get('content', [])
+#                     if contents:
+#                         section_texts.append(f"{section_name}:\n" + "\n".join(contents))
+#                 full_text = "\n\n".join(section_texts)
+#                 all_context += f"Information about: {link}\n{full_text}\n-------------------\n"
+#                 cnt_wiki += 1
+#                 if cnt_wiki >= topk:
+#                     break
+#         else:
+#             continue
+
+#     return all_context
+
+def crawl_wiki_page_raw(
+    article_iterable,
+    get_hash_id_func,
+    get_link_func,
+    cache_crawl_base,
+    topk=3
+):
+    all_context = ""
+    cnt_wiki = 0
+
+    for article in article_iterable:
+        hash_id = get_hash_id_func(article)
+        link = get_link_func(article)
+
+        if not hash_id or not link:
+            continue
+
+        file_crawl = f"{cache_crawl_base}/{hash_id}"
+
+        if os.path.exists(file_crawl):
+            crawl_wiki = load_json(file_crawl)
+            crawled_data = crawl_wiki.get('crawl_wiki', {}).get('html_page', {}).get(link, None)
+            if crawled_data:
+                content = crawled_data.get("content", [])
+                all_context +=  " ".join(content) + "\n"
+                cnt_wiki += 1
+                if cnt_wiki >= topk:
+                    break
+        else:
+            continue
+
+    return all_context
+
+
 def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache):
+    
+    use_crawl_wiki_raw = False #True
+    
     # key_entities: List
     retrieval_information = ""
     retrieval_topk = settings['retrieval_topk']
@@ -700,44 +708,65 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
         #     retrieval_information += abs_wiki + "\n\n"
 
         if settings['get_crawl_wiki']:
-            crawl_wiki_context = crawl_wiki_page_general(
-                search_kw_subq,
-                results_wiki_search,  # iterable là list kết quả search
-                get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
-                get_link_func=lambda article: normalize_query(article['link']),
-                get_title_func=lambda article: article.get('title', ''),
-                cache_crawl_base=settings['cache']['crawl_wiki'],
-                cache_filter_base=settings['cache']['filter_wiki'],
-                pre_processing_func=wiki_pre_processing,
-                embedding_model=embedding_model,
-                topk=retrieval_topk['wiki_crawl'],
-                max_token=retrieval_topk['crawl_max_token'],
-            )
-        
+            if use_crawl_wiki_raw:
+                crawl_wiki_context = crawl_wiki_page_raw(
+                    results_wiki_search,  # iterable là list kết quả search
+                    get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
+                    get_link_func=lambda article: normalize_query(article['link']),
+                    cache_crawl_base=settings['cache']['crawl_wiki'],
+                    topk=retrieval_topk['wiki_crawl'],
+                )
+            else:
+                crawl_wiki_context = crawl_wiki_page_general(
+                    search_kw_subq,
+                    results_wiki_search,  # iterable là list kết quả search
+                    get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
+                    get_link_func=lambda article: normalize_query(article['link']),
+                    get_title_func=lambda article: article.get('title', ''),
+                    cache_crawl_base=settings['cache']['crawl_wiki'],
+                    cache_filter_base=settings['cache']['filter_wiki'],
+                    pre_processing_func=wiki_pre_processing,
+                    embedding_model=embedding_model,
+                    topk=retrieval_topk['wiki_crawl'],
+                    max_token=retrieval_topk['crawl_max_token'],
+                )
+            
             retrieval_information += crawl_wiki_context + "\n"
 
     if settings['get_ner_wiki']:
         cache_entity = load_json(settings['cache']['hash_id']['crawl_ner'])
-        hash_id_cache_ner_wiki = load_json(settings['cache']['hash_id']['url_ner_wiki'])
         ner_articles = []
 
         for ner in list_ner_q:
             ner_norm = normalize_query(ner)
-            ner_articles.extend(cache_entity.get(ner_norm, [])[:retrieval_topk['ner_topk_article']])
+            article = cache_entity.get(ner_norm, [])[:retrieval_topk['ner_topk_article']]
+            for item in article:
+                item['ner'] = ner_norm
+            ner_articles.extend(article)
         
-        crawl_ner_wiki = crawl_wiki_page_general(
-            search_kw_subq,
-            ner_articles,  # iterable là list các article dict
-            get_hash_id_func=lambda article: article.get('hash_id', None),
-            get_link_func=lambda article: article.get('url', None),
-            get_title_func=lambda article: article.get('title', ''),
-            cache_crawl_base=settings['cache']['ner_wiki'],
-            cache_filter_base=settings['cache']['filter_ner_wiki'],
-            pre_processing_func=wiki_pre_processing_tool_2,
-            embedding_model=embedding_model,
-            topk=retrieval_topk['ner_topk_article'],
-            max_token=retrieval_topk['crawl_max_token_ner'],
-        )
+        if use_crawl_wiki_raw:
+            crawl_ner_wiki = crawl_wiki_page_raw(
+                ner_articles,  # iterable là list các article dict
+                get_hash_id_func=lambda article: article.get('hash_id', None),
+                get_link_func=lambda article: article.get('url', None),
+                cache_crawl_base=settings['cache']['ner_wiki'],
+                topk=1000 # không bị giới hạn vì đã lấy sẵn ở ner_articles rồi
+            )
+        else:
+            crawl_ner_wiki = crawl_wiki_page_general(
+                search_kw_subq,
+                ner_articles,  # iterable là list các article dict
+                get_hash_id_func=lambda article: article.get('hash_id', None),
+                get_link_func=lambda article: article.get('url', None),
+                get_title_func=lambda article: article.get('title', ''),
+                cache_crawl_base=settings['cache']['ner_wiki'],
+                cache_filter_base=settings['cache']['filter_ner_wiki'],
+                pre_processing_func=wiki_pre_processing,
+                embedding_model=embedding_model,
+                topk=1000, # không giới hạn
+                max_token=retrieval_topk['crawl_max_token_ner'],
+                get_ner=True
+            )
         
         retrieval_information += crawl_ner_wiki + "\n"
             
