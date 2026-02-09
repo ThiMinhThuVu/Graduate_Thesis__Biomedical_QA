@@ -99,6 +99,19 @@ move_section_list = [
     "categories",    
 ]
 
+TAT_SECTION_PRIORITY = {
+    "disorder": ["cause", "signs and symptoms"], #"diagnosis", 
+    "gene": ["function", "genetics"],
+    "disease": ["cause", "treatment"],
+    "suborder": ['fossil record'],
+    # "syndrome": ["introduction", "cause"],
+    # "medication": ["pharmacology", "mechanism"],
+    "condition": ["genetics", "risk factors"],
+}
+
+def normalize_section_name(s):
+    return s.lower().strip()
+
 #filter_ner_wikipedia
 #filter_wikipedia
 

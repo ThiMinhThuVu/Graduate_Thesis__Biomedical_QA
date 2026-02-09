@@ -110,7 +110,7 @@ def format_results_wiki_abs(search_results, filepath, topk=5, bf_ts=None):
     save_json(output, filepath)
     return "\n".join(context_parts)
 
-def get_paragraphs_wiki_result(link, sample, subquestion, embedding_model=None, max_docs_token=300):    
+def get_paragraphs_wiki_result(link, sample, subquestion, target_answer_type=None, embedding_model=None, max_docs_token=300, percentage=0.5):    
     list_para_sim = {}
     list_para_text = []
     index_doc = 0
@@ -141,14 +141,18 @@ def get_paragraphs_wiki_result(link, sample, subquestion, embedding_model=None, 
         similarity = find_most_relevant_doc(subquestion, list_para_text)
     
     #THUVTM
-    # len_doc = len()
-    len_doc = 1
-    
+    # Tính tổng số token của toàn bộ doc
+    if percentage:
+        total_tokens = sum(len(p.split()) for p in list_para_text)
+        max_token = int(total_tokens * percentage)
+    else:
+        max_token = max_docs_token
+         
     count_token = 0
     selected_idx_sentences = []
     
     for item in similarity:
-        if count_token >= int(max_docs_token*len_doc):
+        if count_token >= max_token: #max_docs_token
             break
         
         score = item["score"]
@@ -187,8 +191,35 @@ def get_paragraphs_wiki_result(link, sample, subquestion, embedding_model=None, 
                 })
                 count_token += len(nbr_para.split())
                 
-    list_idx = [s["idx_doc"] for s in selected_idx_sentences]
+    
+    
+    # THUVTM: ADD SECTION BASED ON TARGET ANSWER TYPE
+    used_sections = set()
+    for item in selected_idx_sentences:
+        idx_doc = item["idx_doc"]
+        heading = list_para_sim[idx_doc]["heading"]
+        used_sections.add(normalize_section_name(heading))
 
+   
+    if target_answer_type and target_answer_type in TAT_SECTION_PRIORITY:
+        wanted_sections = [
+            normalize_section_name(s)
+            for s in TAT_SECTION_PRIORITY[target_answer_type]
+        ]
+
+        for sec_name in wanted_sections:
+            # nếu section này CHƯA xuất hiện trong golden context
+            if sec_name not in used_sections:
+                for idx_doc, item in list_para_sim.items():
+                    if normalize_section_name(item["heading"]) == sec_name:
+                        selected_idx_sentences.append({
+                            "idx_doc": idx_doc,
+                            "score": None,
+                            "text": item["text"]
+                        })
+                        break  # chỉ 1 paragraph / section
+
+    list_idx = [s["idx_doc"] for s in selected_idx_sentences]                 
     # thêm li
     last_section = key_section[-1]
     cnt_li = 0
@@ -232,7 +263,8 @@ def get_paragraphs_wiki_result(link, sample, subquestion, embedding_model=None, 
                     text = text.replace("<info>", "", 1).strip()
                 text_sec += f"{text.strip()} "
         # if text_sec != "" and len(text_sec.split(" ")) < 1000:
-        res_output[head] = text_sec  
+        if text_sec != "":
+            res_output[head] = text_sec  
         
     for head, sec_text in res_output.items():
         res_paragraphs += f"Section: {head}\n"
@@ -383,9 +415,11 @@ def crawl_wiki_page_general(
     cache_crawl_base,
     cache_filter_base,
     pre_processing_func,
+    target_answer_type=None,
     embedding_model=None,
     topk=3,
     max_token=300,
+    percentage=0.5,
     get_ner=False
     ):
     if embedding_model:
@@ -433,8 +467,8 @@ def crawl_wiki_page_general(
 
             if wiki_content:
                 filter_context = get_paragraphs_wiki_result(
-                    link, wiki_content, search_kw_subq,
-                    embedding_model=embedding_model, max_docs_token=max_token
+                    link, wiki_content, search_kw_subq,target_answer_type=target_answer_type,
+                    embedding_model=embedding_model, max_docs_token=max_token, percentage=percentage
                 )
                 filter_output = {
                     'crawl_wiki': {
@@ -533,7 +567,8 @@ def crawl_wiki_page_raw(
     return all_context
 
 
-def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache):
+def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings,target_answer_type,
+                      embedding_model, hash_id_cache, hash_id_crawl_wiki_cache):
     
     use_crawl_wiki_raw = False #True
     
@@ -587,8 +622,11 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
                     cache_crawl_base=settings['cache']['crawl_wiki'],
                     cache_filter_base=settings['cache']['filter_wiki'],
                     pre_processing_func=wiki_pre_processing,
+                    target_answer_type=target_answer_type,
                     embedding_model=embedding_model,
                     topk=retrieval_topk['wiki_crawl'],
+                    # percentage=0.44,
+                    percentage=None,
                     max_token=retrieval_topk['crawl_max_token'],
                 )
             
@@ -623,9 +661,12 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
                 cache_crawl_base=settings['cache']['ner_wiki'],
                 cache_filter_base=settings['cache']['filter_ner_wiki'],
                 pre_processing_func=wiki_pre_processing,
+                target_answer_type=target_answer_type,
                 embedding_model=embedding_model,
                 topk=1000, # không giới hạn article ner
                 max_token=retrieval_topk['crawl_max_token_ner'],
+                # percentage=0.75,
+                percentage=None,
                 get_ner=True
             )
         

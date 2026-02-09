@@ -159,7 +159,8 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         
                     print(f"\n--- Load Step {step}: {subquestion} ---")
                                             
-                    all_snippet, retrieval_information = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
+                    all_snippet, retrieval_information = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings,
+                                                        target_ans_type, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
 
                     continue
                 
@@ -208,7 +209,9 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     candidates = []
                     idx_del = 0
                     
-                    all_snippet, current_retrieval = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
+                    all_snippet, current_retrieval = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings,
+                                                                target_ans_type, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
+                    
                     cache_ner_filter[sample_id] = current_retrieval
                     continue
                     if has_extract_ner: # Only extract snippet
@@ -481,8 +484,8 @@ if __name__ == "__main__":
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
         
-        # if qidx != '100860':
-        #     continue
+        if qidx not in ['638322', '665260', '977705', '979995']: #'100860'
+            continue
        
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'

@@ -110,150 +110,7 @@ def format_results_wiki_abs(search_results, filepath, topk=5, bf_ts=None):
     save_json(output, filepath)
     return "\n".join(context_parts)
 
-
-def _get_paragraphs_wiki_result(results, subquestion, embedding_model=None, max_docs_token=300):    
-    # Lấy paragraph
-    dict_para = {}
-    all_context = ""
-    
-    for link, sample in results.items():
-        list_para_sim = {}
-        list_para_text = []
-        index_doc = 0
-        key_section = sample['sections'].keys()
-        key_section = [section for section in key_section if section.lower() not in move_section_list]
-        
-        for heading, item in sample['sections'].items():
-            if heading.lower() in move_section_list:
-                continue
-            
-            for idx, p in enumerate(item['content']):
-                list_para_sim[index_doc] = {
-                    "link": link,
-                    "idx": idx,
-                    "heading": heading,
-                    "text": p
-                }
-                index_doc += 1
-                list_para_text.append(p)
-        
-        if len(list_para_text) == 0:
-            continue
-                    
-        if embedding_model:
-            similarity = find_most_relevant_doc_embedding(subquestion, list_para_text, embedding_model)
-        else:
-            similarity = find_most_relevant_doc(subquestion, list_para_text)
-            
-        count_token = 0
-        selected_idx_sentences = []
-        
-        for item in similarity:
-            if count_token >= max_docs_token:
-                break
-            
-            score = item["score"]
-            idx = item["index"]
-            para = list_para_sim[idx]["text"]
-            selected_idx_sentences.append({
-                "idx": idx,
-                "score": score,
-                "text": para,
-            })
-            count_token += len(para.split())
-            
-            # THêm hàng xóm
-            index_section = list_para_sim[idx]["idx"]
-            selected_idx_set = {s["idx"] for s in selected_idx_sentences}
-            
-            if index_section > 0:
-                idx_nbr = idx-1
-                if idx_nbr not in selected_idx_set:
-                    nbr_para = list_para_sim[idx_nbr]["text"]
-                    selected_idx_sentences.append({
-                        "idx": idx_nbr,#idx của doc
-                        "score": score,
-                        "text": nbr_para,
-                    })
-                    count_token += len(nbr_para.split())
-            
-            if index_section < len(sample['sections'][list_para_sim[idx]["heading"]]['content']) - 1:
-                idx_nbr = idx + 1
-                if idx_nbr not in selected_idx_set:
-                    nbr_para = list_para_sim[idx_nbr]["text"]
-                    selected_idx_sentences.append({
-                        "idx": idx_nbr,#idx của doc
-                        "score": score,
-                        "text": nbr_para,
-                    })
-                    count_token += len(nbr_para.split())
-                    
-        list_idx = [s["idx"] for s in selected_idx_sentences]
-
-        # thêm li
-        last_section = key_section[-1]
-        cnt_li = 0
-        list_idx_last_sect = []
-        
-        for idx, item in list_para_sim.items():
-            if idx not in list_idx and item["text"].strip().startswith("<info>"):
-                heading = item["heading"]
-                if heading.lower() in move_section_list:
-                    continue
-                
-                if heading == last_section:                    
-                    cnt_li += 1
-                    list_idx_last_sect.append(idx)
-                       
-                selected_idx_sentences.append({
-                    "idx": idx,
-                    "score": None,  
-                    "text": item["text"],
-                })
-        
-        # Nếu section cuối có > 30 li thì xóa các li của section cuối
-        if cnt_li > 30:
-            selected_idx_sentences = [item for item in selected_idx_sentences if item["idx"] not in list_idx_last_sect]
-                        
-        selected_idx_sentences = sorted(selected_idx_sentences, key=lambda x: x["idx"])      
-        
-        res_paragraphs = ""
-        res_output = {}
-        
-        # xếp theo thứ tự của doc, section
-        for head in key_section:
-            text_sec = ""
-            for item in selected_idx_sentences:
-                idx = item["idx"]
-                text = item["text"]
-                heading = list_para_sim[idx]["heading"]
-                
-                if head == heading:
-                    if item["text"].strip().startswith("<info>"):
-                        text = text.replace("<info>", "", 1).strip()
-                    text_sec += f"{text.strip()} "
-            if text_sec != "" and len(text_sec.split(" ")) < 1000:
-                res_output[head] = text_sec      
-                        
-        for head, sec_text in res_output.items():
-            res_paragraphs += f"Section: {head}\n"
-            res_paragraphs += f"{sec_text.strip()}\n"
-          
-        dict_para[link] = {
-            "paragraphs": res_paragraphs.strip(),
-        }
-        
-        all_context += "Information about: {}".format(sample["title"]) + "\n" +  res_paragraphs + "-------------------"
-        
-    output_paragraph = {
-        "dict_para": dict_para,
-        "selected_paragraphs": all_context,
-    }
-    
-    return output_paragraph, all_context
-
-
-def get_paragraphs_wiki_result(link, sample, subquestion, embedding_model=None, max_docs_token=300):    
+def get_paragraphs_wiki_result(link, sample, subquestion, embedding_model=None, max_docs_token=300, percentage=0.5):    
     list_para_sim = {}
     list_para_text = []
     index_doc = 0
@@ -267,7 +124,7 @@ def get_paragraphs_wiki_result(link, sample, subquestion, embedding_model=None, 
         for idx, p in enumerate(item['content']):
             list_para_sim[index_doc] = {
                 "link": link,
-                "idx": idx,
+                "idx_sec": idx,
                 "heading": heading,
                 "text": p
             }
@@ -282,79 +139,87 @@ def get_paragraphs_wiki_result(link, sample, subquestion, embedding_model=None, 
         similarity = find_most_relevant_doc_embedding(subquestion, list_para_text, embedding_model)
     else:
         similarity = find_most_relevant_doc(subquestion, list_para_text)
-        
+    
+    #THUVTM
+    # Tính tổng số token của toàn bộ doc
+    if percentage:
+        total_tokens = sum(len(p.split()) for p in list_para_text)
+        max_token = int(total_tokens * percentage)
+    else:
+        max_token = max_docs_token
+         
     count_token = 0
     selected_idx_sentences = []
     
     for item in similarity:
-        if count_token >= max_docs_token:
+        if count_token >= max_token: #max_docs_token
             break
         
         score = item["score"]
-        idx = item["index"]
-        para = list_para_sim[idx]["text"]
+        idx_doc = item["index"]
+        para = list_para_sim[idx_doc]["text"]
         selected_idx_sentences.append({
-            "idx": idx,
+            "idx_doc": idx_doc,
             "score": score,
             "text": para,
         })
         count_token += len(para.split())
         
         # THêm hàng xóm
-        index_section = list_para_sim[idx]["idx"]
-        selected_idx_set = {s["idx"] for s in selected_idx_sentences}
+        index_section = list_para_sim[idx_doc]["idx_sec"]
+        selected_idx_set = {s["idx_doc"] for s in selected_idx_sentences}
         
         if index_section > 0:
-            idx_nbr = idx-1
+            idx_nbr = idx_doc-1 #idx doc
             if idx_nbr not in selected_idx_set:
                 nbr_para = list_para_sim[idx_nbr]["text"]
                 selected_idx_sentences.append({
-                    "idx": idx_nbr,#idx của doc
+                    "idx_doc": idx_nbr,#idx của doc
                     "score": score,
                     "text": nbr_para,
                 })
                 count_token += len(nbr_para.split())
         
-        if index_section < len(sample['sections'][list_para_sim[idx]["heading"]]['content']) - 1:
-            idx_nbr = idx + 1
+        if index_section < len(sample['sections'][list_para_sim[idx_doc]["heading"]]['content']) - 1:
+            idx_nbr = idx_doc + 1 #doc
             if idx_nbr not in selected_idx_set:
                 nbr_para = list_para_sim[idx_nbr]["text"]
                 selected_idx_sentences.append({
-                    "idx": idx_nbr,#idx của doc
+                    "idx_doc": idx_nbr,#idx của doc
                     "score": score,
                     "text": nbr_para,
                 })
                 count_token += len(nbr_para.split())
                 
-    list_idx = [s["idx"] for s in selected_idx_sentences]
+    list_idx = [s["idx_doc"] for s in selected_idx_sentences]
 
     # thêm li
     last_section = key_section[-1]
     cnt_li = 0
     list_idx_last_sect = []
     
-    for idx, item in list_para_sim.items():
-        if idx not in list_idx and item["text"].strip().startswith("<info>"):
+    for idx_doc, item in list_para_sim.items():
+        if idx_doc not in list_idx and item["text"].strip().startswith("<info>"):
             heading = item["heading"]
             if heading.lower() in move_section_list:
                 continue
             
             if heading == last_section:                    
                 cnt_li += 1
-                list_idx_last_sect.append(idx)
+                list_idx_last_sect.append(idx_doc)
                     
             selected_idx_sentences.append({
-                "idx": idx,
+                "idx_doc": idx_doc,#doc
                 "score": None,  
                 "text": item["text"],
             })
     
     # Nếu section cuối có > 30 li thì xóa các li của section cuối
     if cnt_li > 30:
-        selected_idx_sentences = [item for item in selected_idx_sentences if item["idx"] not in list_idx_last_sect]
-                    
-    selected_idx_sentences = sorted(selected_idx_sentences, key=lambda x: x["idx"])      
-    
+        selected_idx_sentences = [item for item in selected_idx_sentences if item["idx_doc"] not in list_idx_last_sect]
+        
+    selected_idx_sentences = sorted(selected_idx_sentences, key=lambda x: x["idx_doc"])      
+
     res_paragraphs = ""
     res_output = {}
     
@@ -362,101 +227,66 @@ def get_paragraphs_wiki_result(link, sample, subquestion, embedding_model=None, 
     for head in key_section:
         text_sec = ""
         for item in selected_idx_sentences:
-            idx = item["idx"]
+            idx_doc = item["idx_doc"]#doc
             text = item["text"]
-            heading = list_para_sim[idx]["heading"]
+            heading = list_para_sim[idx_doc]["heading"]
             
             if head == heading:
                 if item["text"].strip().startswith("<info>"):
                     text = text.replace("<info>", "", 1).strip()
                 text_sec += f"{text.strip()} "
-        if text_sec != "" and len(text_sec.split(" ")) < 1000:
-            res_output[head] = text_sec      
-                    
+        # if text_sec != "" and len(text_sec.split(" ")) < 1000:
+        res_output[head] = text_sec  
+        
     for head, sec_text in res_output.items():
         res_paragraphs += f"Section: {head}\n"
         res_paragraphs += f"{sec_text.strip()}\n"    
     
     return res_paragraphs
 
+def get_paragraphs_wiki_tfidf_with_info(link, sample, subquestion, max_docs_token=300):
+    list_para_text = []
+    para_sections = []
+    key_section = sample['sections'].keys()
+    key_section = [section for section in key_section if section.lower() not in move_section_list]
+
+    for heading, item in sample['sections'].items():
+        if heading.lower() in move_section_list:
+            continue
+        for p in item['content']:
+            para_sections.append((heading, p))
+            list_para_text.append(p)
+
+    if len(list_para_text) == 0:
+        print("[crawl wiki] Link này rỗng")
+        return None
+
+    similarity = find_most_relevant_doc(subquestion, list_para_text)
+
+    count_token = 0
+    selected_idx = []
+    for item in similarity:
+        if count_token >= max_docs_token:
+            break
+        idx = item["index"]
+        para = list_para_text[idx]
+        selected_idx.append(idx)
+        count_token += len(para.split())
+
+    # Lấy các đoạn <info> ở section cuối cùng
+    last_section = key_section[-1] if key_section else None
+    info_paragraphs = []
+    for i, (heading, para) in enumerate(para_sections):
+        if heading == last_section and para.strip().startswith("<info>"):
+            info_paragraphs.append(para.strip())
+
+    selected_paragraphs = [list_para_text[i] for i in sorted(selected_idx)]
+    selected_paragraphs.extend(info_paragraphs)
+    return "\n".join(selected_paragraphs)
+
+
 def normalize_query(query: str) -> str:
     return " ".join(query.lower().strip().split())
-
-def _crawl_wiki_page(wiki_search, search_kw_subq, settings, hash_id_crawl_wiki_cache, embedding_model, topk=3, max_token=300):  # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều   
-    if embedding_model:
-        type_embed = "embedding"
-    else:
-        type_embed = "tfidf"
-       
-    cnt_wiki = 0
-    all_context = ""
-    
-    
-    for result in wiki_search: # Chỉ lấy 3 kết quả đầu tiên để tránh crawl quá nhiều
-        original_link = result['link']
-        link = normalize_query(original_link)
-        if 'list' in link:
-            continue
-
-        if cnt_wiki == topk:
-            break
-        
-        wiki_content = None
-        filter_context = None
-        
-        if link in hash_id_crawl_wiki_cache:
-            hash_id = hash_id_crawl_wiki_cache[link]
-        else:
-            hash_id, hash_id_crawl_wiki_cache = register_query_cache(link, hash_id_crawl_wiki_cache, file_cache_index=settings['cache']['hash_id']['crawl_wiki'])
-
-        cache_filepath_crawl = f"{settings['cache']['crawl_wiki']}/{hash_id}" 
-        cache_filepath_filter = f"{settings['cache']['filter_wiki']}/{hash_id}"
-        
-        
-        if os.path.exists(cache_filepath_filter):
-            print("[Load Cache] filter path: ", cache_filepath_filter)
-            data_filter = load_json(cache_filepath_filter)
-            if data_filter is not None:
-                filter_context = data_filter.get('crawl_wiki', {}).get('filter', {}).get(link, {}).get(type_embed, "")
-        else:
-            if os.path.exists(cache_filepath_crawl):
-                print(f'[Load Cache] file Crawl wiki HTML: {cache_filepath_crawl}')
-                crawled_data = load_json(cache_filepath_crawl).get('crawl_wiki', {}).get('html_page', {}).get(link, None)
-            else:
-                print(f"Crawling Wikipedia page: {original_link}")
-                print("Crawl crawl path: ", cache_filepath_crawl)
-                crawled_data = crawl_wikipedia_page(original_link)
-                crawled_data_output = {
-                    'crawl_wiki': {
-                        'html_page': {
-                            link: crawled_data
-                        }
-                    }
-                }
-                save_json(crawled_data_output, cache_filepath_crawl)
-                
-            if crawled_data and 'content' in crawled_data and len(crawled_data['content']) != 0:
-                wiki_content = wiki_pre_processing(crawled_data)
-
-        if wiki_content:
-            filter_context = get_paragraphs_wiki_result(link, wiki_content, search_kw_subq, embedding_model=embedding_model, max_docs_token=max_token)
-            filter_output = {
-                'crawl_wiki': {
-                    'filter': {
-                        link: {
-                            type_embed: filter_context
-                        }
-                    }
-                }
-            }
-            save_json(filter_output, cache_filepath_filter)
-            
-        if filter_context != None:
-            cnt_wiki += 1        
-            all_context += "Information about: {}".format(result["title"]) + "\n" +  filter_context + "-------------------"
-
-    return all_context
-
 
 def retrieval_context_2wiki(search_kw, sample, embedding_model, vec_embed=False, top_k=1, cos_threshold=0.7, fuzz_threshold=0.7, vecembed_threshold=0.45):
     search_kw = search_kw.lower()
@@ -548,51 +378,6 @@ def retrieval_context_2wiki(search_kw, sample, embedding_model, vec_embed=False,
                 
     return result.strip()
 
-def _crawl_ner_wiki_page(search_kw_subq, ner_list, cache_entity, WIKI_BASE, topk_article=3, embedding_model=None, max_token=300):
-    filter_folder = "data/cache/filter_ner_wiki"
-    if embedding_model:
-        type_embed = "embedding"
-    else:
-        type_embed = "tfidf"
-
-    all_context = ""
-    cnt_wiki = 0
-
-    for ner in ner_list:
-        ner_norm = normalize_query(ner)
-        list_article = cache_entity.get(ner_norm, [])
-        for article in list_article[:topk_article]:
-            hash_id = article.get('hash_id', None)
-            link = article.get('url', None)
-            title = article.get('title', "")
-
-            file_crawl = f"{WIKI_BASE}/{hash_id}"
-            if os.path.exists(file_crawl):
-                crawl_wiki = load_json(file_crawl)
-                if crawl_wiki and link:
-                    crawled_data = crawl_wiki.get('crawl_wiki', {}).get('html_page').get(link, None)
-                    if crawled_data and 'content' in crawled_data and len(crawled_data['content']) != 0:
-                        wiki_content = wiki_pre_processing_tool_2(crawled_data)
-
-                        if wiki_content:
-                            filter_context = get_paragraphs_wiki_result(link, wiki_content, search_kw_subq, embedding_model=embedding_model, max_docs_token=max_token)
-                            filter_output = {
-                                'crawl_wiki': {
-                                    'filter': {
-                                        link: {
-                                            type_embed: filter_context
-                                        }
-                                    }
-                                }
-                            }
-                            file_filter = f"{filter_folder}/{hash_id}"
-                            save_json(filter_output, file_filter)
-
-                            if filter_context is not None:
-                                cnt_wiki += 1
-                                all_context += "Information about: {}\n{}\n-------------------\n".format(title, filter_context)
-    return all_context
-
 def crawl_wiki_page_general(
     search_kw_subq,
     article_iterable,
@@ -604,7 +389,9 @@ def crawl_wiki_page_general(
     pre_processing_func,
     embedding_model=None,
     topk=3,
-    max_token=300
+    max_token=300,
+    percentage=0.5,
+    get_ner=False
     ):
     if embedding_model:
         type_embed = "embedding"
@@ -618,7 +405,7 @@ def crawl_wiki_page_general(
         hash_id = get_hash_id_func(article)
         link = get_link_func(article)
         title = get_title_func(article)
-
+        
         if not hash_id or not link:
             continue
 
@@ -652,7 +439,7 @@ def crawl_wiki_page_general(
             if wiki_content:
                 filter_context = get_paragraphs_wiki_result(
                     link, wiki_content, search_kw_subq,
-                    embedding_model=embedding_model, max_docs_token=max_token
+                    embedding_model=embedding_model, max_docs_token=max_token, percentage=percentage
                 )
                 filter_output = {
                     'crawl_wiki': {
@@ -669,7 +456,10 @@ def crawl_wiki_page_general(
 
         if filter_context is not None:
             cnt_wiki += 1
-            all_context += f"Information about: {title}\n{filter_context}\n"
+            if get_ner:
+                all_context += f"Information about: {title} - {article['ner']}\n{filter_context}\n"
+            else:
+                all_context += f"Information about: {title}\n{filter_context}\n"
             if cnt_wiki >= topk:
                 break
 
@@ -804,6 +594,8 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
                     pre_processing_func=wiki_pre_processing,
                     embedding_model=embedding_model,
                     topk=retrieval_topk['wiki_crawl'],
+                    # percentage=0.44,
+                    percentage=None,
                     max_token=retrieval_topk['crawl_max_token'],
                 )
             
@@ -815,7 +607,10 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
 
         for ner in list_ner_q:
             ner_norm = normalize_query(ner)
-            ner_articles.extend(cache_entity.get(ner_norm, [])[:retrieval_topk['ner_topk_article']])
+            article = cache_entity.get(ner_norm, [])[:retrieval_topk['ner_topk_article']]
+            for item in article:
+                item['ner'] = ner_norm
+            ner_articles.extend(article)
         
         if use_crawl_wiki_raw:
             crawl_ner_wiki = crawl_wiki_page_raw(
@@ -834,10 +629,12 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
                 get_title_func=lambda article: article.get('title', ''),
                 cache_crawl_base=settings['cache']['ner_wiki'],
                 cache_filter_base=settings['cache']['filter_ner_wiki'],
-                pre_processing_func=wiki_pre_processing_tool_2,
+                pre_processing_func=wiki_pre_processing,
                 embedding_model=embedding_model,
-                topk=1000, # không giới hạn
+                topk=1000, # không giới hạn article ner
                 max_token=retrieval_topk['crawl_max_token_ner'],
+                percentage=0.75,
+                get_ner=True
             )
         
         retrieval_information += crawl_ner_wiki + "\n"
