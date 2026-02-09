@@ -10,6 +10,7 @@ from classification.classification_run import load_model_classification, classif
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.models import StaticEmbedding
 from transformers import AutoModel
+import shutil
 
 global hash_id_cache
 global hash_id_crawl_wiki_cache
@@ -22,6 +23,16 @@ extractor_model = None
 global cache_ner_filter
 cache_ner_filter = {}
 
+
+def reset_directory(dir_path: str):
+    """
+    Delete the directory and all its contents,
+    then recreate an empty directory.
+    """
+    if os.path.exists(dir_path):
+        shutil.rmtree(dir_path)
+    os.makedirs(dir_path)
+    
 def load_model(dataset, configs, using_embedding_model=False):
     global hash_id_cache
     global hash_id_crawl_wiki_cache
@@ -395,6 +406,9 @@ if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)
     
+    # for arr in [[True, True, False, False], [False, False, True, False], [False, False, False, True]]:
+    #     configs[]
+        
     #edit config
     # threads = [0, 500]
     threads = configs['run']['threads'] 
@@ -448,6 +462,8 @@ if __name__ == "__main__":
         settings['normalize'] = True
         
     #EDIT CONFIG VERSION NER
+    reset_directory(r"data\cache\filter_ner_wikipedia")
+    reset_directory(r"data\cache\filter_wikipedia")
     load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
     # ner_version = 4
     ner_version = "#3"
@@ -465,7 +481,7 @@ if __name__ == "__main__":
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
         
-        # if qidx != '150011':
+        # if qidx != '100860':
         #     continue
        
         # CONFIG YESNO

@@ -99,6 +99,8 @@ move_section_list = [
     "categories",    
 ]
 
+#filter_ner_wikipedia
+#filter_wikipedia
 
 def is_sentence_transformer(model):
     return hasattr(model, 'encode') and 'sentence_transformers' in str(type(model))
@@ -358,29 +360,33 @@ def wiki_pre_processing(content):
     new_content['url'] = content['url']
     new_content['sections'] = dict()
 
-    for section in list(content["sections"].keys())[:-2]:
-        new_content['sections'][section] = content["sections"][section]
+    total_sec = len(content["sections"].keys())
+    if total_sec > 3:
+        for section in list(content["sections"].keys())[:-2]: #[:-2]:
+            new_content['sections'][section] = content["sections"][section]
+    else:
+        new_content['sections'] = content["sections"]
+        
+    # for section in list(content["sections"].keys())[-2:]:
+    #     result = []
+    #     section_content = content["sections"][section]["content"]
 
-    for section in list(content["sections"].keys())[-2:]:
-        result = []
-        section_content = content["sections"][section]["content"]
+    #     infor_idxs = []
+    #     for idx, tmp in enumerate(section_content):
+    #         if "<info>" in tmp:
+    #             infor_idxs.append(idx)
 
-        infor_idxs = []
-        for idx, tmp in enumerate(section_content):
-            if "<info>" in tmp:
-                infor_idxs.append(idx)
+    #     for idx, tmp in enumerate(section_content):
+    #         if "<info>" not in tmp:
+    #             result.append(tmp)
+    #         else:
+    #             if len(infor_idxs) <= 15:
+    #                 result.append(tmp)
 
-        for idx, tmp in enumerate(section_content):
-            if "<info>" not in tmp:
-                result.append(tmp)
-            else:
-                if len(infor_idxs) <= 15:
-                    result.append(tmp)
-
-        if len(result) > 0:
-            new_content['sections'][section] = {
-                "content": result
-            }
+    #     if len(result) > 0:
+    #         new_content['sections'][section] = {
+    #             "content": result
+    #         }
     return new_content
 
 def wiki_pre_processing_tool_2(content):
