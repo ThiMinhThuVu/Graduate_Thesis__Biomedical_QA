@@ -61,16 +61,15 @@ def retrieval_wiki(search_kw, filepath, max_results=10):
     return result
 
 
-def format_search_results(search_results, topk=5):
+def format_search_results(search_results, topk=5, search_type='GG'):
     context_parts = []
     for i, result in enumerate(search_results):            
         if i == topk:
             break
         
-        context_parts.append(f"- {result['title']} {result['snippet']}")
+        context_parts.append(f"-Reference: [{search_type}_{i+1}]: {result['title']} {result['snippet']}")
                                        
     return "\n".join(context_parts)
-
 
 def format_results_wiki_abs(search_results, filepath, topk=5, bf_ts=None):
     context_parts = []
@@ -486,9 +485,9 @@ def crawl_wiki_page_general(
         if filter_context is not None:
             cnt_wiki += 1
             if get_ner:
-                all_context += f"Information about: {title} - {article['ner']}\n{filter_context}\n"
+                all_context += f"- Reference: [CRAWL_NER_WIKI_{cnt_wiki}] - Information about: {title} - {article['ner']}\n{filter_context}\n"
             else:
-                all_context += f"Information about: {title}\n{filter_context}\n"
+                all_context += f"- Reference: [CRAWL_WIKI_{cnt_wiki}] - Information about: {title}\n{filter_context}\n"
             if cnt_wiki >= topk:
                 break
 
@@ -588,7 +587,7 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
             
     if settings['get_gg']:
         results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval, max_results=max_results_gg)            
-        snippet_gg = format_search_results(results_gg_search, topk=retrieval_topk['google']) 
+        snippet_gg = format_search_results(results_gg_search, topk=retrieval_topk['google'], search_type='GG') 
         retrieval_information += snippet_gg + "\n\n"
         all_snippet += snippet_gg + "\n"
     
@@ -596,7 +595,7 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
         results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
     
         if settings['get_wiki']:
-            snippet_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki']) 
+            snippet_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki'], search_type='WIKI') 
             retrieval_information += snippet_wiki + "\n\n"
             all_snippet += snippet_wiki + "\n"
         # elif settings['get_abs_wiki']:
