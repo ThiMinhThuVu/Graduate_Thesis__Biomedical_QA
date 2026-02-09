@@ -373,13 +373,16 @@ def wiki_pre_processing(content):
     new_content['url'] = content['url']
     new_content['sections'] = dict()
 
-    total_sec = len(content["sections"].keys())
+    section_names = list(content.get("sections", {}).keys())
+    total_sec = len(section_names)
+      
     if total_sec > 3:
-        for section in list(content["sections"].keys())[:-2]: #[:-2]:
+        for section in list(content["sections"].keys())[:-2]: 
             new_content['sections'][section] = content["sections"][section]
     else:
         new_content['sections'] = content["sections"]
         
+    #BỎ
     # for section in list(content["sections"].keys())[-2:]:
     #     result = []
     #     section_content = content["sections"][section]["content"]

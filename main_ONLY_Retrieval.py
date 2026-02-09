@@ -150,7 +150,6 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     search_kw_subq = item['search_keyword']
                     search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
                     focus_spacy_based_entity_label = item.get('focus_spacy_based_entity_label', None)
-                    target_answer_type = item.get('target_answer_type', None)
                     
                     if step == "0":
                         key_entities = item['key_entity']   
@@ -196,7 +195,6 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     search_kw_subq = item['search_keyword'] 
                     search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
                     focus_spacy_based_entity_label = item.get('focus_spacy_based_entity_label', None)
-                    target_answer_type = item.get('target_answer_type', None)
                     
                     if step == "0":
                         key_entities = item['key_entity']   
@@ -405,16 +403,16 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
         print(f"\nSaved to {file_all_ans}")
     
 
+
+
 if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)
-    
-    # for arr in [[True, True, False, False], [False, False, True, False], [False, False, False, True]]:
-    #     configs[]
+
         
     #edit config
-    # threads = [0, 500]
     threads = configs['run']['threads'] 
+    # threads = [0, 500]
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
@@ -467,6 +465,8 @@ if __name__ == "__main__":
     #EDIT CONFIG VERSION NER
     reset_directory(r"data\cache\filter_ner_wikipedia")
     reset_directory(r"data\cache\filter_wikipedia")
+    
+    
     load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
     # ner_version = 4
     ner_version = "#3"
@@ -484,8 +484,8 @@ if __name__ == "__main__":
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
         
-        if qidx not in ['638322', '665260', '977705', '979995']: #'100860'
-            continue
+        # if qidx not in ['100860']: # ['638322', '665260', '977705', '979995']: #'100860'
+        #     continue
        
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'

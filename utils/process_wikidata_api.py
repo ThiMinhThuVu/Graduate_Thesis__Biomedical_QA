@@ -180,7 +180,7 @@ def process_fillter_wikidata_api(key_entity, get_history_old_id=False, dict_rela
     call_id = time.time()
     stack = inspect.stack()
     caller = stack[1]
-    print(f"[DEBUG] process_fillter_wikidata_api called (id={call_id:.6f}) by {caller.function} in {os.path.basename(caller.filename)}:{caller.lineno}")
+    # print(f"[DEBUG] process_fillter_wikidata_api called (id={call_id:.6f}) by {caller.function} in {os.path.basename(caller.filename)}:{caller.lineno}")
 
     key_entity = key_entity.translate(str.maketrans(string.punctuation, ' ' * len(string.punctuation))).strip()
     # qid_info = find_all_qid(key_entity, limit)
@@ -227,7 +227,7 @@ def process_fillter_wikidata_api(key_entity, get_history_old_id=False, dict_rela
                 "prop_value_label_history": prop_value_label_history
             }]
         
-        all_context += f"- {label} (description: {description}) - {relation_value}: {prop_value_label_history} (source: {prop_value})\n"
+        all_context += f"- {label} (description: {description}) - relation: {relation_value}: {prop_value_label_history} (source: {prop_value})\n"
         
     return all_context, dict_result, qid_description
 

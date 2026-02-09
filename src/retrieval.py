@@ -3,7 +3,9 @@ from utils.crawl_wikipage import crawl_wikipedia_page
 from utils.get_abs_wiki_history import get_abs_wiki_history
 from utils.process_wikidata_api import process_fillter_wikidata_api, match_relation_id
 from utils.util import *
-from utils.hash import register_query_cache
+from utils.hash import register_query_cache, make_cache_filename, normalize_query
+from utils.get_section_priority_crawl import *
+
 import re
 import os
 import math
@@ -190,34 +192,6 @@ def get_paragraphs_wiki_result(link, sample, subquestion, target_answer_type=Non
                 })
                 count_token += len(nbr_para.split())
                 
-    
-    
-    # THUVTM: ADD SECTION BASED ON TARGET ANSWER TYPE
-    used_sections = set()
-    for item in selected_idx_sentences:
-        idx_doc = item["idx_doc"]
-        heading = list_para_sim[idx_doc]["heading"]
-        used_sections.add(normalize_section_name(heading))
-
-   
-    if target_answer_type and target_answer_type in TAT_SECTION_PRIORITY:
-        wanted_sections = [
-            normalize_section_name(s)
-            for s in TAT_SECTION_PRIORITY[target_answer_type]
-        ]
-
-        for sec_name in wanted_sections:
-            # nếu section này CHƯA xuất hiện trong golden context
-            if sec_name not in used_sections:
-                for idx_doc, item in list_para_sim.items():
-                    if normalize_section_name(item["heading"]) == sec_name:
-                        selected_idx_sentences.append({
-                            "idx_doc": idx_doc,
-                            "score": None,
-                            "text": item["text"]
-                        })
-                        break  # chỉ 1 paragraph / section
-
     list_idx = [s["idx_doc"] for s in selected_idx_sentences]                 
     # thêm li
     last_section = key_section[-1]
@@ -256,60 +230,140 @@ def get_paragraphs_wiki_result(link, sample, subquestion, target_answer_type=Non
             idx_doc = item["idx_doc"]#doc
             text = item["text"]
             heading = list_para_sim[idx_doc]["heading"]
-            
             if head == heading:
                 if item["text"].strip().startswith("<info>"):
                     text = text.replace("<info>", "", 1).strip()
                 text_sec += f"{text.strip()} "
-        # if text_sec != "" and len(text_sec.split(" ")) < 1000:
         if text_sec != "":
             res_output[head] = text_sec  
-        
+
+    # THUVTM: DEFAULT: NẾU target_answer_type thì section thuộc wanted_sections sẽ luôn được thay thế bằng content gốc
+    if target_answer_type:        
+        wanted_sections = get_sections_for_target_type(target_answer_type)
+        if 'introduction' not in wanted_sections:
+            wanted_sections.append('introduction')
+            
+        for sec_name in wanted_sections:
+            for head in key_section:
+                if normalize_section_name(head) == sec_name:
+                    section_content = sample['sections'][head]['content']
+                    text_sec = " ".join([
+                        t.replace("<info>", "", 1).strip() if t.strip().startswith("<info>") else t.strip()
+                        for t in section_content
+                    ])
+                    # Luôn thay thế, kể cả đã có context trước đó
+                    res_output[head] = text_sec
+
     for head, sec_text in res_output.items():
         res_paragraphs += f"Section: {head}\n"
         res_paragraphs += f"{sec_text.strip()}\n"    
     
     return res_paragraphs
 
-def get_paragraphs_wiki_tfidf_with_info(link, sample, subquestion, max_docs_token=300):
+
+
+def get_paragraphs_wiki_result_with_sec(link, sample, subquestion, target_answer_type=None, embedding_model=None, max_docs_token=300, percentage=0.5):    
+    list_para_sim = {}
     list_para_text = []
-    para_sections = []
+    index_doc = 0
     key_section = sample['sections'].keys()
     key_section = [section for section in key_section if section.lower() not in move_section_list]
-
+    
     for heading, item in sample['sections'].items():
         if heading.lower() in move_section_list:
             continue
-        for p in item['content']:
-            para_sections.append((heading, p))
+        
+        for idx, p in enumerate(item['content']):
+            list_para_sim[index_doc] = {
+                "link": link,
+                "idx_sec": idx,
+                "heading": heading,
+                "text": p
+            }
+            index_doc += 1
             list_para_text.append(p)
-
+    
     if len(list_para_text) == 0:
         print("[crawl wiki] Link này rỗng")
         return None
-
-    similarity = find_most_relevant_doc(subquestion, list_para_text)
-
+                
+    if embedding_model:
+        similarity = find_most_relevant_doc_embedding(subquestion, list_para_text, embedding_model)
+    else:
+        similarity = find_most_relevant_doc(subquestion, list_para_text)
+    
+    #THUVTM
+    # Tính tổng số token của toàn bộ doc
+    if percentage:
+        total_tokens = sum(len(p.split()) for p in list_para_text)
+        max_token = int(total_tokens * percentage)
+    else:
+        max_token = max_docs_token
+         
     count_token = 0
-    selected_idx = []
-    for item in similarity:
-        if count_token >= max_docs_token:
-            break
-        idx = item["index"]
-        para = list_para_text[idx]
-        selected_idx.append(idx)
+    selected_idx_sentences = []
+    
+    for item in similarity[:3]:        
+        score = item["score"]
+        idx_doc = item["index"]
+        para = list_para_sim[idx_doc]["text"]
+        selected_idx_sentences.append({
+            "idx_doc": idx_doc,
+            "score": score,
+            "text": para,
+        })
         count_token += len(para.split())
+        
+        # THêm hàng xóm
+        index_section = list_para_sim[idx_doc]["idx_sec"]
+        selected_idx_set = {s["idx_doc"] for s in selected_idx_sentences}
+        
+        if index_section > 0:
+            idx_nbr = idx_doc-1 #idx doc
+            if idx_nbr not in selected_idx_set:
+                nbr_para = list_para_sim[idx_nbr]["text"]
+                selected_idx_sentences.append({
+                    "idx_doc": idx_nbr,#idx của doc
+                    "score": score,
+                    "text": nbr_para,
+                })
+                count_token += len(nbr_para.split())
+        
+        if index_section < len(sample['sections'][list_para_sim[idx_doc]["heading"]]['content']) - 1:
+            idx_nbr = idx_doc + 1 #doc
+            if idx_nbr not in selected_idx_set:
+                nbr_para = list_para_sim[idx_nbr]["text"]
+                selected_idx_sentences.append({
+                    "idx_doc": idx_nbr,#idx của doc
+                    "score": score,
+                    "text": nbr_para,
+                })
+                count_token += len(nbr_para.split())
+                
+    selected_idx_sentences = sorted(selected_idx_sentences, key=lambda x: x["idx_doc"])      
 
-    # Lấy các đoạn <info> ở section cuối cùng
-    last_section = key_section[-1] if key_section else None
-    info_paragraphs = []
-    for i, (heading, para) in enumerate(para_sections):
-        if heading == last_section and para.strip().startswith("<info>"):
-            info_paragraphs.append(para.strip())
+    res_paragraphs = ""
+    res_output = {}
+    
+    # xếp theo thứ tự của doc, section
+    for head in key_section:
+        text_sec = ""
+        for item in selected_idx_sentences:
+            idx_doc = item["idx_doc"]#doc
+            text = item["text"]
+            heading = list_para_sim[idx_doc]["heading"]
+            if head == heading:
+                if item["text"].strip().startswith("<info>"):
+                    text = text.replace("<info>", "", 1).strip()
+                text_sec += f"{text.strip()} "
+        if text_sec != "":
+            res_output[head] = text_sec  
 
-    selected_paragraphs = [list_para_text[i] for i in sorted(selected_idx)]
-    selected_paragraphs.extend(info_paragraphs)
-    return "\n".join(selected_paragraphs)
+    for head, sec_text in res_output.items():
+        res_paragraphs += f"Section: {head}\n"
+        res_paragraphs += f"{sec_text.strip()}\n"    
+    
+    return res_paragraphs
 
 
 def normalize_query(query: str) -> str:
@@ -567,10 +621,7 @@ def crawl_wiki_page_raw(
 
 
 def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings,target_answer_type,
-                      embedding_model, hash_id_cache, hash_id_crawl_wiki_cache):
-    
-    use_crawl_wiki_raw = False #True
-    
+                      embedding_model, hash_id_cache, hash_id_crawl_wiki_cache):    
     # key_entities: List
     retrieval_information = ""
     retrieval_topk = settings['retrieval_topk']
@@ -580,12 +631,13 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
     
     hash_id, hash_id_cache = register_query_cache(search_kw_subq, hash_id_cache, file_cache_index=settings['cache']['hash_id']['retrieval'])
     cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}" 
-    print("Retrieval_path: ", cache_filepath_retrieval)
+    
     
     if settings['get_context_2wiki']: #Only 2wiki dataset
         retrieval_information = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
             
     if settings['get_gg']:
+        print("Retrieval_path: ", cache_filepath_retrieval)
         results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval, max_results=max_results_gg)            
         snippet_gg = format_search_results(results_gg_search, topk=retrieval_topk['google'], search_type='GG') 
         retrieval_information += snippet_gg + "\n\n"
@@ -598,36 +650,28 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
             snippet_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki'], search_type='WIKI') 
             retrieval_information += snippet_wiki + "\n\n"
             all_snippet += snippet_wiki + "\n"
-        # elif settings['get_abs_wiki']:
-        #     abs_wiki = format_results_wiki_abs(results_wiki_search, hash_id_crawl_wiki_cache, settings, topk=retrieval_topk['wiki_abs'])
-        #     retrieval_information += abs_wiki + "\n\n"
+        elif settings['get_abs_wiki']:
+            abs_wiki = format_results_wiki_abs(results_wiki_search, hash_id_crawl_wiki_cache, settings, topk=retrieval_topk['wiki_abs'])
+            retrieval_information += abs_wiki + "\n\n"
 
         if settings['get_crawl_wiki']:
-            if use_crawl_wiki_raw:
-                crawl_wiki_context = crawl_wiki_page_raw(
-                    results_wiki_search,  # iterable là list kết quả search
-                    get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
-                    get_link_func=lambda article: normalize_query(article['link']),
-                    cache_crawl_base=settings['cache']['crawl_wiki'],
-                    topk=retrieval_topk['wiki_crawl'],
-                )
-            else:
-                crawl_wiki_context = crawl_wiki_page_general(
-                    search_kw_subq,
-                    results_wiki_search,  # iterable là list kết quả search
-                    get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
-                    get_link_func=lambda article: normalize_query(article['link']),
-                    get_title_func=lambda article: article.get('title', ''),
-                    cache_crawl_base=settings['cache']['crawl_wiki'],
-                    cache_filter_base=settings['cache']['filter_wiki'],
-                    pre_processing_func=wiki_pre_processing,
-                    target_answer_type=target_answer_type,
-                    embedding_model=embedding_model,
-                    topk=retrieval_topk['wiki_crawl'],
-                    # percentage=0.44,
-                    percentage=None,
-                    max_token=retrieval_topk['crawl_max_token'],
-                )
+            crawl_wiki_context = crawl_wiki_page_general(
+                search_kw_subq,
+                results_wiki_search,  # iterable là list kết quả search
+                get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
+                get_link_func=lambda article: normalize_query(article['link']),
+                get_title_func=lambda article: article.get('title', ''),
+                cache_crawl_base=settings['cache']['crawl_wiki'],
+                cache_filter_base=settings['cache']['filter_wiki'],
+                pre_processing_func=wiki_pre_processing,
+                target_answer_type=target_answer_type,
+                # target_answer_type=None,
+                embedding_model=embedding_model,
+                topk=retrieval_topk['wiki_crawl'],
+                # percentage=0.44,
+                percentage=None,
+                max_token=retrieval_topk['crawl_max_token'],
+            )
             
             retrieval_information += crawl_wiki_context + "\n"
 
@@ -642,84 +686,89 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
                 item['ner'] = ner_norm
             ner_articles.extend(article)
         
-        if use_crawl_wiki_raw:
-            crawl_ner_wiki = crawl_wiki_page_raw(
-                ner_articles,  # iterable là list các article dict
-                get_hash_id_func=lambda article: article.get('hash_id', None),
-                get_link_func=lambda article: article.get('url', None),
-                cache_crawl_base=settings['cache']['ner_wiki'],
-                topk=1000 # không bị giới hạn vì đã lấy sẵn ở ner_articles rồi
-            )
-        else:
-            crawl_ner_wiki = crawl_wiki_page_general(
-                search_kw_subq,
-                ner_articles,  # iterable là list các article dict
-                get_hash_id_func=lambda article: article.get('hash_id', None),
-                get_link_func=lambda article: article.get('url', None),
-                get_title_func=lambda article: article.get('title', ''),
-                cache_crawl_base=settings['cache']['ner_wiki'],
-                cache_filter_base=settings['cache']['filter_ner_wiki'],
-                pre_processing_func=wiki_pre_processing,
-                target_answer_type=target_answer_type,
-                embedding_model=embedding_model,
-                topk=1000, # không giới hạn article ner
-                max_token=retrieval_topk['crawl_max_token_ner'],
-                # percentage=0.75,
-                percentage=None,
-                get_ner=True
-            )
+        crawl_ner_wiki = crawl_wiki_page_general(
+            search_kw_subq,
+            ner_articles,  # iterable là list các article dict
+            get_hash_id_func=lambda article: article.get('hash_id', None),
+            get_link_func=lambda article: article.get('url', None),
+            get_title_func=lambda article: article.get('title', ''),
+            cache_crawl_base=settings['cache']['ner_wiki'],
+            cache_filter_base=settings['cache']['filter_ner_wiki'],
+            pre_processing_func=wiki_pre_processing,
+            target_answer_type=target_answer_type,
+            # target_answer_type=None,
+            embedding_model=embedding_model,
+            topk=1000, # không giới hạn article ner
+            max_token=retrieval_topk['crawl_max_token_ner'],
+            # percentage=0.75,
+            percentage=None,
+            get_ner=True
+        )
         
         retrieval_information += crawl_ner_wiki + "\n"
             
 
-    if settings["get_sparql_context"]:
-        # if os.path.exists(cache_filepath_filter_wiki):
-        #     all_data_retrieval = load_json(cache_filepath_filter_wiki)
-        # else:
-        all_data_retrieval = {}
-            
-        if 'sparql' in all_data_retrieval:
-            history = all_data_retrieval['sparql']
-        else:
-            history = {}
-            
-        if 'retrieval_information' in history:
-            retrieval_information += history['retrieval_information']
-        else:
-            dict_relation_id = match_relation_id(search_kw_subq, top_k=retrieval_topk['sparql_r_topk'], retry_topk=retrieval_topk['sparql_r_retry_topk']) # trả về []
-            desc_sims = []
-            for key_entity in key_entities:
-                context, dict_result, description = process_fillter_wikidata_api(key_entity, settings['get_history_old_id'], dict_relation_id)
-                history[key_entity] = {"description": description, "context": context, "dict_result": dict_result}
-                # Tính cosine giữa search_kw_subq và description 
-                if description and isinstance(description, str) and len(description.strip()) > 0:
-                    try:
-                        # Use util.caculate_scores to handle both model types
-                        cosine = caculate_scores(search_kw_subq, description, embedding_model)["cosine"]
-                    except Exception:
-                        cosine = 0.0
-                else:
-                    cosine = 0.0
-                desc_sims.append({"key_entity": key_entity, "cosine": cosine, "context": context})
-
-            # Chọn k_percent key_entity có cosine cao nhất
-            if desc_sims:
-                desc_sims_sorted = sorted(desc_sims, key=lambda x: x["cosine"], reverse=True)
-                if len(key_entities) > 5:
-                    n_select = max(1, math.ceil(len(desc_sims_sorted) * retrieval_topk['k_percent']))
-                    top_entities = desc_sims_sorted[:n_select]
-                else:                    
-                    top_entities = desc_sims_sorted
-                    
-                for ent in top_entities:
-                    if ent["context"] and ent["context"].strip():
-                        retrieval_information += f"\n{ent['key_entity']}: {ent['context']}"
-                history['desc_sims_sorted'] = desc_sims_sorted
+    if settings["get_sparql_context"]: # DÙng ner -> dùng cùng hash id entity2wiki với ner wiki
+        file_cache_hash_id_sparql = settings['cache']['hash_id']['crawl_wikidata']
+        folder_hash_sparql = settings['cache']['crawl_wikidata']
+        
+        os.makedirs(folder_hash_sparql, exist_ok=True)
+        if not os.path.exists(file_cache_hash_id_sparql):
+            with open(file_cache_hash_id_sparql, 'w', encoding='utf-8') as f:
+                f.write('{}')
                 
-            history['retrieval_information'] = retrieval_information
-            all_data_retrieval['sparql'] = history
-            # save_json(all_data_retrieval, cache_filepath_filter_wiki)
+        cache_hashid_sparql = load_json(file_cache_hash_id_sparql)
+        
+        dict_relation_id = match_relation_id(search_kw_subq, top_k=retrieval_topk['sparql_r_topk'], retry_topk=retrieval_topk['sparql_r_retry_topk']) # trả về []
+        desc_sims = []
+        sparql_context = ""
+        
+        for ner in list_ner_q:
+            key_entity = normalize_query(ner)
+            if key_entity in cache_hashid_sparql:
+                hash_file_name = cache_hashid_sparql[key_entity]
+            else:
+                hash_file_name = make_cache_filename(key_entity)
+                cache_hashid_sparql[key_entity] = hash_file_name
+                save_json(cache_hashid_sparql, file_cache_hash_id_sparql)
             
+            file_crawl = f"{folder_hash_sparql}/{hash_file_name}"
+            if os.path.exists(file_crawl):                
+                crawled_sparql = load_json(file_crawl)
+                context = crawled_sparql[key_entity]['context']
+                dict_result = crawled_sparql[key_entity]['dict_result']
+                description = crawled_sparql[key_entity]['description']
+            else:
+                crawled_sparql = {}                
+                context, dict_result, description = process_fillter_wikidata_api(key_entity, settings['get_history_old_id'], dict_relation_id)
+                crawled_sparql[key_entity] = {"description": description, "context": context, "dict_result": dict_result}
+                save_json(crawled_sparql, file_crawl)
+            
+            print("[Sparql]: ", file_crawl)
+            
+            # Tính cosine giữa search_kw_subq và description 
+            if description and isinstance(description, str) and len(description.strip()) > 0:
+                cosine = caculate_scores(search_kw_subq, description, embedding_model)["cosine"]
+            else:
+                cosine = 0.0
+                
+            desc_sims.append({"key_entity": key_entity, "cosine": cosine, "context": context})
+
+        # Chọn k_percent key_entity có cosine cao nhất
+        if desc_sims:
+            desc_sims_sorted = sorted(desc_sims, key=lambda x: x["cosine"], reverse=True)
+            if len(key_entities) > 5:
+                n_select = max(1, math.ceil(len(desc_sims_sorted) * retrieval_topk['k_percent']))
+                top_entities = desc_sims_sorted[:n_select]
+            else:                    
+                top_entities = desc_sims_sorted
+                
+            for ent in top_entities:
+                if ent["context"] and ent["context"].strip():
+                    sparql_context += f"\n{ent['key_entity']}: {ent['context']}"
+            
+        retrieval_information += f"- Reference [SPARQL]: {sparql_context}"
+        
     return all_snippet, retrieval_information
 
 
