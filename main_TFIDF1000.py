@@ -284,13 +284,13 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         normalized_answer = _generate_answer(subquestion, search_kw_subq_retrieval, extracted_entities, current_retrieval, dataset, type_q, target_ans_type,
                                                             using_target_type, using_gen_old, has_extract_ner)
                         current_short = normalized_answer['short_answer']
-                        print(f"[MCQ] short ans lần {idx_del+1}: ", current_short)
+                        print(f"[MCQ] short ans lần {idx_del}: ", current_short)
                      
                         # Kiểm tra nếu đáp án mới này đã tồn tại trong list candidates chưa
                         is_duplicate = any(c['short_answer'].lower().strip() == current_short.lower().strip() for c in candidates)
                         
                         if not is_duplicate: 
-                            if settings['max_candidates'] == 1 or current_short.lower() != "insufficient information":
+                            if len(candidates) == 0 or current_short.lower() != "insufficient information":
                                 candidates.append({
                                     "short_answer": current_short,
                                     "long_answer": normalized_answer["long_answer"],
@@ -372,8 +372,8 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
 
                 # continue
-                # save_json(dict_ans, file_all_ans)
-                # print(file_all_ans)
+                save_json(dict_ans, file_all_ans)
+                print("SAVE file: ", file_all_ans)
 
                 if source_have_run:
                     continue
@@ -486,7 +486,7 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    threads = [0, 250] # configs['run']['threads'] 
+    threads = [8, 250] # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
