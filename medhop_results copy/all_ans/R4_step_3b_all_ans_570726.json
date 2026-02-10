@@ -1,0 +1,171 @@
+{
+    "QIDX": "570726",
+    "original_question": "Is there an enzyme that exhibits D-glycerate dehydrogenase enzymatic activity and is associated with primary hyperoxaluria when mutated?",
+    "type_q": "direct",
+    "focus_spacy_based_entity_label": [
+        "DISEASE",
+        "CHEMICAL"
+    ],
+    "target_answer_type": "correctness",
+    "key_entities": [
+        "D-glycerate dehydrogenase",
+        "primary hyperoxaluria"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is there an enzyme that exhibits D-glycerate dehydrogenase enzymatic activity and is associated with primary hyperoxaluria when mutated?",
+            "search_keyword": "D-glycerate dehydrogenase enzyme primary hyperoxaluria mutation",
+            "short_answer": "GRHPR enzyme",
+            "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The provided context indicates that mutations in the GRHPR gene, which encodes an enzyme with D‐glycerate dehydrogenase activity, are associated with primary hyperoxaluria type II. This enzyme is involved in glyoxylate metabolism and its alteration leads to the disease phenotype.",
+            "retrieval_information": "-Reference: [WIKI_1]: Glycerate dehydrogenase - Wikipedia \"Molecular analysis of the glyoxylate reductase (GRHPR) gene and description of mutations underlying primary hyperoxaluria type 2\". Human Mutation. 22 (6): ...\n-Reference: [WIKI_2]: GRHPR - Wikipedia Type II hyperoxaluria is caused by mutations in this gene. GRHPR mutation analysis needs to pay attention to primer design, because allele dropout can cause ...\n-Reference: [WIKI_3]: Glyoxylic acid - Wikipedia \"Primary hyperoxaluria type III—a model for studying perturbations in glyoxylate metabolism\". Journal of Molecular Medicine. 90 (12): 1497–1504. doi:10.1007 ...\n\n",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "candidate": [
+                {
+                    "source": "google",
+                    "short_answer": "glyoxylate reductase/hydroxypyruvate reductase",
+                    "long_answer": "Reference: [GG_3], [GG_4], [GG_20]. Explanation: The provided context indicates that primary hyperoxaluria type 2 involves a deficiency of the enzyme exhibiting D‐glycerate dehydrogenase activity, which is also known as glyoxylate reductase/hydroxypyruvate reductase. Mutations in the GRHPR gene that encodes this enzyme are associated with primary hyperoxaluria when mutated.",
+                    "retrieval_information": "-Reference: [GG_1]: Mutations in DHDPSL Are Responsible For Primary ... - PMC We determined that mutations in an uncharacterized gene, DHDPSL, on chromosome 10 cause a third type of PH (PH III).\n-Reference: [GG_2]: [PDF] GRHPR gene - MedlinePlus More than 25 mutations in the GRHPR gene have been found to cause primary hyperoxaluria type 2. This condition is caused by the overproduction of a substance.\n-Reference: [GG_3]: Primary Hyperoxaluria Type 2 - GeneReviews® - NCBI Bookshelf Dec 2, 2008·D-glycerate dehydrogenase deficiency, referring to the non-physiologic action of the enzyme in catalyzing the dehydrogenation of D-glycerate.\n-Reference: [GG_4]: Entry - #260000 - HYPEROXALURIA, PRIMARY, TYPE II; HP2 - OMIM The metabolic defect is deficiency of D-glycerate dehydrogenase/glyoxylate reductase leading to characteristic hyperoxaluria and excretion of L-glycerate, the ...\n-Reference: [GG_5]: Primary hyperoxaluria type 2 Genetic Testing | Foresight® Carrier Screen Primary hyperoxaluria type 2 (PH2), caused by mutations in the GRHPR gene, is an inherited disease in which the lack of a particular liver enzyme causes the ...\n-Reference: [GG_6]: Phenotypic expression of primary hyperoxaluria - Kidney International The primary hyperoxalurias are autosomal recessive disorders resulting from deficiency of hepatic alanine:glyoxylate aminotransferase (PHI) or D-glycerate ...\n-Reference: [GG_7]: Primary hyperoxalurias: Disorders of glyoxylate detoxification Primary hyperoxalurias, severe human diseases in which toxic levels of oxalate are produced by the liver, resulting in progressive renal damage.\n-Reference: [GG_8]: Hyperoxaluria, Primary, Type Ii (HP2) - MalaCards Primary hyperoxaluria type 2 is caused by the shortage (deficiency) of an enzyme called glyoxylate reductase/hydroxypyruvate reductase (GRHPR) that normally ...\n-Reference: [GG_9]: The Gene Encoding Hydroxypyruvate Reductase (GRHPR) is Mutated in ... Primary hyperoxaluria type II (PH2) is a rare monogenic disorder that is characterized by a lack of the enzyme that catalyzes the reduction of hydroxypyruvate ...\n-Reference: [GG_10]: Perspectives in primary hyperoxaluria — historical, current and future ... Dec 8, 2021·Kinetic analysis and tissue distribution of human D-glycerate dehydrogenase ... Identification of a novel GRHPR mutation in primary hyperoxaluria ...\n-Reference: [GG_11]: Navigating the Evolving Landscape of Primary Hyperoxaluria - MDPI Primary hyperoxalurias (PHs) are inherited metabolic disorders marked by enzymatic cascade disruption, leading to excessive oxalate production that is ...\n-Reference: [GG_12]: a case report revealing consequence of GRHPR deficiency on metabolism May 31, 2017·Primary hyperoxaluria type 2 is a rare monogenic disorder inherited in an autosomal recessive pattern. It results from the absence of the enzyme ...\n-Reference: [GG_13]: Perspectives in primary hyperoxaluria — historical, current and future ... Dec 8, 2021·Deficiency in AGT or GRHPR leads to the accumulation of glyoxylate in the cytosol and its increased conversion into oxalate by LDH. Different ...\n-Reference: [GG_14]: Primary Hyperoxaluria - DoveMed Primary Hyperoxaluria is caused by mutations in the AGXT, GRHPR, or HOGA1 genes. The condition is inherited in an autosomal recessive manner. Under normal ...\n-Reference: [GG_15]: Primary hyperoxaluria: MedlinePlus Genetics Dec 1, 2015·Primary hyperoxaluria is a rare condition characterized by recurrent kidney and bladder stones. The condition often results in end stage renal disease (ESRD).\n-Reference: [GG_16]: DISEASES - GRHPR - JensenLab Primary hyperoxaluria type 3 (PH3) is responsible for the remaining 10% of PH cases and is due to mutations in the HOGA1 gene on chromosome 9 which results in ...\n-Reference: [GG_17]: Primary hyperoxalurias: Disorders of glyoxylate detoxification Genetic defect of any of these enzymes of glyoxylate metabolism results in primary hyperoxalurias, severe human diseases in which toxic levels of oxalate are ...\n-Reference: [GG_18]: Primary hyperoxaluria - Nefrología The genetic defects of enzymes that metabolise glyoxylate lead to overproduction of oxalate in the liver; that is, this disease is due to excess production.\n-Reference: [GG_19]: Primary hyperoxaluria type 2 | About the Disease | GARD This enzyme shortage is caused by genetic changes in the GRHPR gene. Primary hyperoxaluria type 2 is inherited in an autosomal recessive pattern.\n-Reference: [GG_20]: The gene encoding hydroxypyruvate reductase (GRHPR) is mutated in ... Aug 6, 2025·... 4 A mutation in the GRHPR gene in type II primary hyperoxaluria impedes D-glyceric dehydrogenase's conversion of glyoxylate to glycolate, ...\n\n",
+                    "full_data": {
+                        "short_answer": "glyoxylate reductase/hydroxypyruvate reductase",
+                        "long_answer": "Reference: [GG_3], [GG_4], [GG_20]. Explanation: The provided context indicates that primary hyperoxaluria type 2 involves a deficiency of the enzyme exhibiting D‐glycerate dehydrogenase activity, which is also known as glyoxylate reductase/hydroxypyruvate reductase. Mutations in the GRHPR gene that encodes this enzyme are associated with primary hyperoxaluria when mutated."
+                    }
+                },
+                {
+                    "source": "wiki",
+                    "short_answer": "GRHPR enzyme",
+                    "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The provided context indicates that mutations in the GRHPR gene, which encodes an enzyme with D‐glycerate dehydrogenase activity, are associated with primary hyperoxaluria type II. This enzyme is involved in glyoxylate metabolism and its alteration leads to the disease phenotype.",
+                    "retrieval_information": "-Reference: [WIKI_1]: Glycerate dehydrogenase - Wikipedia \"Molecular analysis of the glyoxylate reductase (GRHPR) gene and description of mutations underlying primary hyperoxaluria type 2\". Human Mutation. 22 (6): ...\n-Reference: [WIKI_2]: GRHPR - Wikipedia Type II hyperoxaluria is caused by mutations in this gene. GRHPR mutation analysis needs to pay attention to primer design, because allele dropout can cause ...\n-Reference: [WIKI_3]: Glyoxylic acid - Wikipedia \"Primary hyperoxaluria type III—a model for studying perturbations in glyoxylate metabolism\". Journal of Molecular Medicine. 90 (12): 1497–1504. doi:10.1007 ...\n\n",
+                    "full_data": {
+                        "short_answer": "GRHPR enzyme",
+                        "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The provided context indicates that mutations in the GRHPR gene, which encodes an enzyme with D‐glycerate dehydrogenase activity, are associated with primary hyperoxaluria type II. This enzyme is involved in glyoxylate metabolism and its alteration leads to the disease phenotype."
+                    }
+                },
+                {
+                    "source": "crawl_wiki",
+                    "short_answer": "insufficient information",
+                    "long_answer": "No context",
+                    "retrieval_information": "",
+                    "full_data": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context"
+                    }
+                },
+                {
+                    "source": "crawl_ner_wiki",
+                    "short_answer": "insufficient information",
+                    "long_answer": "No context",
+                    "retrieval_information": "",
+                    "full_data": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context"
+                    }
+                },
+                {
+                    "source": "crawl_sparql_wikidata",
+                    "short_answer": "HOGA1",
+                    "long_answer": "Reference: [SPARQL], primary hyperoxaluria (genetic association: HOGA1, source: Q18048871). Explanation: The context indicates that d-glycerate dehydrogenase is a class of enzymes that catalyze the reaction D-glycerate + NADP+ = hydroxypyruvate + NADPH + H+. It also notes that primary hyperoxaluria has a genetic association with HOGA1, linking mutations in this enzyme to the disease.",
+                    "retrieval_information": "- Reference [SPARQL]: \nd-glycerate dehydrogenase: - class of enzymes\n- Catalysis of the reaction: D-glycerate + NADP+ = hydroxypyruvate + NADPH + H+.\n- disease\n\nprimary hyperoxaluria: - human disease\n- human disease\n- human disease\n- disease\n- clinical trial\n- clinical trial\n- primary hyperoxaluria (description: human disease) - relation: Orphanet ID: 416 (source: 416)\n- primary hyperoxaluria (description: human disease) - relation: genetic association: HOGA1 (source: Q18048871)\n- primary hyperoxaluria type I (description: human disease) - relation: Orphanet ID: 93598 (source: 93598)\n- primary hyperoxaluria type I (description: human disease) - relation: genetic association: AGXT (source: Q17816233)\n- primary hyperoxaluria type 3 (description: human disease) - relation: Orphanet ID: 93600 (source: 93600)\n",
+                    "full_data": {
+                        "short_answer": "HOGA1",
+                        "long_answer": "Reference: [SPARQL], primary hyperoxaluria (genetic association: HOGA1, source: Q18048871). Explanation: The context indicates that d-glycerate dehydrogenase is a class of enzymes that catalyze the reaction D-glycerate + NADP+ = hydroxypyruvate + NADPH + H+. It also notes that primary hyperoxaluria has a genetic association with HOGA1, linking mutations in this enzyme to the disease."
+                    }
+                }
+            ]
+        },
+        "0": {
+            "0": {
+                "source_output": {
+                    "google": {
+                        "short_answer": "glyoxylate reductase/hydroxypyruvate reductase",
+                        "long_answer": "Reference: [GG_3], [GG_4], [GG_20]. Explanation: The provided context indicates that primary hyperoxaluria type 2 involves a deficiency of the enzyme exhibiting D‐glycerate dehydrogenase activity, which is also known as glyoxylate reductase/hydroxypyruvate reductase. Mutations in the GRHPR gene that encodes this enzyme are associated with primary hyperoxaluria when mutated.",
+                        "retrieval_information": "-Reference: [GG_1]: Mutations in DHDPSL Are Responsible For Primary ... - PMC We determined that mutations in an uncharacterized gene, DHDPSL, on chromosome 10 cause a third type of PH (PH III).\n-Reference: [GG_2]: [PDF] GRHPR gene - MedlinePlus More than 25 mutations in the GRHPR gene have been found to cause primary hyperoxaluria type 2. This condition is caused by the overproduction of a substance.\n-Reference: [GG_3]: Primary Hyperoxaluria Type 2 - GeneReviews® - NCBI Bookshelf Dec 2, 2008·D-glycerate dehydrogenase deficiency, referring to the non-physiologic action of the enzyme in catalyzing the dehydrogenation of D-glycerate.\n-Reference: [GG_4]: Entry - #260000 - HYPEROXALURIA, PRIMARY, TYPE II; HP2 - OMIM The metabolic defect is deficiency of D-glycerate dehydrogenase/glyoxylate reductase leading to characteristic hyperoxaluria and excretion of L-glycerate, the ...\n-Reference: [GG_5]: Primary hyperoxaluria type 2 Genetic Testing | Foresight® Carrier Screen Primary hyperoxaluria type 2 (PH2), caused by mutations in the GRHPR gene, is an inherited disease in which the lack of a particular liver enzyme causes the ...\n-Reference: [GG_6]: Phenotypic expression of primary hyperoxaluria - Kidney International The primary hyperoxalurias are autosomal recessive disorders resulting from deficiency of hepatic alanine:glyoxylate aminotransferase (PHI) or D-glycerate ...\n-Reference: [GG_7]: Primary hyperoxalurias: Disorders of glyoxylate detoxification Primary hyperoxalurias, severe human diseases in which toxic levels of oxalate are produced by the liver, resulting in progressive renal damage.\n-Reference: [GG_8]: Hyperoxaluria, Primary, Type Ii (HP2) - MalaCards Primary hyperoxaluria type 2 is caused by the shortage (deficiency) of an enzyme called glyoxylate reductase/hydroxypyruvate reductase (GRHPR) that normally ...\n-Reference: [GG_9]: The Gene Encoding Hydroxypyruvate Reductase (GRHPR) is Mutated in ... Primary hyperoxaluria type II (PH2) is a rare monogenic disorder that is characterized by a lack of the enzyme that catalyzes the reduction of hydroxypyruvate ...\n-Reference: [GG_10]: Perspectives in primary hyperoxaluria — historical, current and future ... Dec 8, 2021·Kinetic analysis and tissue distribution of human D-glycerate dehydrogenase ... Identification of a novel GRHPR mutation in primary hyperoxaluria ...\n-Reference: [GG_11]: Navigating the Evolving Landscape of Primary Hyperoxaluria - MDPI Primary hyperoxalurias (PHs) are inherited metabolic disorders marked by enzymatic cascade disruption, leading to excessive oxalate production that is ...\n-Reference: [GG_12]: a case report revealing consequence of GRHPR deficiency on metabolism May 31, 2017·Primary hyperoxaluria type 2 is a rare monogenic disorder inherited in an autosomal recessive pattern. It results from the absence of the enzyme ...\n-Reference: [GG_13]: Perspectives in primary hyperoxaluria — historical, current and future ... Dec 8, 2021·Deficiency in AGT or GRHPR leads to the accumulation of glyoxylate in the cytosol and its increased conversion into oxalate by LDH. Different ...\n-Reference: [GG_14]: Primary Hyperoxaluria - DoveMed Primary Hyperoxaluria is caused by mutations in the AGXT, GRHPR, or HOGA1 genes. The condition is inherited in an autosomal recessive manner. Under normal ...\n-Reference: [GG_15]: Primary hyperoxaluria: MedlinePlus Genetics Dec 1, 2015·Primary hyperoxaluria is a rare condition characterized by recurrent kidney and bladder stones. The condition often results in end stage renal disease (ESRD).\n-Reference: [GG_16]: DISEASES - GRHPR - JensenLab Primary hyperoxaluria type 3 (PH3) is responsible for the remaining 10% of PH cases and is due to mutations in the HOGA1 gene on chromosome 9 which results in ...\n-Reference: [GG_17]: Primary hyperoxalurias: Disorders of glyoxylate detoxification Genetic defect of any of these enzymes of glyoxylate metabolism results in primary hyperoxalurias, severe human diseases in which toxic levels of oxalate are ...\n-Reference: [GG_18]: Primary hyperoxaluria - Nefrología The genetic defects of enzymes that metabolise glyoxylate lead to overproduction of oxalate in the liver; that is, this disease is due to excess production.\n-Reference: [GG_19]: Primary hyperoxaluria type 2 | About the Disease | GARD This enzyme shortage is caused by genetic changes in the GRHPR gene. Primary hyperoxaluria type 2 is inherited in an autosomal recessive pattern.\n-Reference: [GG_20]: The gene encoding hydroxypyruvate reductase (GRHPR) is mutated in ... Aug 6, 2025·... 4 A mutation in the GRHPR gene in type II primary hyperoxaluria impedes D-glyceric dehydrogenase's conversion of glyoxylate to glycolate, ...\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "glyoxylate reductase/hydroxypyruvate reductase",
+                                "long_answer": "Reference: [GG_3], [GG_4], [GG_20]. Explanation: The provided context indicates that primary hyperoxaluria type 2 involves a deficiency of the enzyme exhibiting D‐glycerate dehydrogenase activity, which is also known as glyoxylate reductase/hydroxypyruvate reductase. Mutations in the GRHPR gene that encodes this enzyme are associated with primary hyperoxaluria when mutated.",
+                                "retrieval_information": "-Reference: [GG_1]: Mutations in DHDPSL Are Responsible For Primary ... - PMC We determined that mutations in an uncharacterized gene, DHDPSL, on chromosome 10 cause a third type of PH (PH III).\n-Reference: [GG_2]: [PDF] GRHPR gene - MedlinePlus More than 25 mutations in the GRHPR gene have been found to cause primary hyperoxaluria type 2. This condition is caused by the overproduction of a substance.\n-Reference: [GG_3]: Primary Hyperoxaluria Type 2 - GeneReviews® - NCBI Bookshelf Dec 2, 2008·D-glycerate dehydrogenase deficiency, referring to the non-physiologic action of the enzyme in catalyzing the dehydrogenation of D-glycerate.\n-Reference: [GG_4]: Entry - #260000 - HYPEROXALURIA, PRIMARY, TYPE II; HP2 - OMIM The metabolic defect is deficiency of D-glycerate dehydrogenase/glyoxylate reductase leading to characteristic hyperoxaluria and excretion of L-glycerate, the ...\n-Reference: [GG_5]: Primary hyperoxaluria type 2 Genetic Testing | Foresight® Carrier Screen Primary hyperoxaluria type 2 (PH2), caused by mutations in the GRHPR gene, is an inherited disease in which the lack of a particular liver enzyme causes the ...\n-Reference: [GG_6]: Phenotypic expression of primary hyperoxaluria - Kidney International The primary hyperoxalurias are autosomal recessive disorders resulting from deficiency of hepatic alanine:glyoxylate aminotransferase (PHI) or D-glycerate ...\n-Reference: [GG_7]: Primary hyperoxalurias: Disorders of glyoxylate detoxification Primary hyperoxalurias, severe human diseases in which toxic levels of oxalate are produced by the liver, resulting in progressive renal damage.\n-Reference: [GG_8]: Hyperoxaluria, Primary, Type Ii (HP2) - MalaCards Primary hyperoxaluria type 2 is caused by the shortage (deficiency) of an enzyme called glyoxylate reductase/hydroxypyruvate reductase (GRHPR) that normally ...\n-Reference: [GG_9]: The Gene Encoding Hydroxypyruvate Reductase (GRHPR) is Mutated in ... Primary hyperoxaluria type II (PH2) is a rare monogenic disorder that is characterized by a lack of the enzyme that catalyzes the reduction of hydroxypyruvate ...\n-Reference: [GG_10]: Perspectives in primary hyperoxaluria — historical, current and future ... Dec 8, 2021·Kinetic analysis and tissue distribution of human D-glycerate dehydrogenase ... Identification of a novel GRHPR mutation in primary hyperoxaluria ...\n-Reference: [GG_11]: Navigating the Evolving Landscape of Primary Hyperoxaluria - MDPI Primary hyperoxalurias (PHs) are inherited metabolic disorders marked by enzymatic cascade disruption, leading to excessive oxalate production that is ...\n-Reference: [GG_12]: a case report revealing consequence of GRHPR deficiency on metabolism May 31, 2017·Primary hyperoxaluria type 2 is a rare monogenic disorder inherited in an autosomal recessive pattern. It results from the absence of the enzyme ...\n-Reference: [GG_13]: Perspectives in primary hyperoxaluria — historical, current and future ... Dec 8, 2021·Deficiency in AGT or GRHPR leads to the accumulation of glyoxylate in the cytosol and its increased conversion into oxalate by LDH. Different ...\n-Reference: [GG_14]: Primary Hyperoxaluria - DoveMed Primary Hyperoxaluria is caused by mutations in the AGXT, GRHPR, or HOGA1 genes. The condition is inherited in an autosomal recessive manner. Under normal ...\n-Reference: [GG_15]: Primary hyperoxaluria: MedlinePlus Genetics Dec 1, 2015·Primary hyperoxaluria is a rare condition characterized by recurrent kidney and bladder stones. The condition often results in end stage renal disease (ESRD).\n-Reference: [GG_16]: DISEASES - GRHPR - JensenLab Primary hyperoxaluria type 3 (PH3) is responsible for the remaining 10% of PH cases and is due to mutations in the HOGA1 gene on chromosome 9 which results in ...\n-Reference: [GG_17]: Primary hyperoxalurias: Disorders of glyoxylate detoxification Genetic defect of any of these enzymes of glyoxylate metabolism results in primary hyperoxalurias, severe human diseases in which toxic levels of oxalate are ...\n-Reference: [GG_18]: Primary hyperoxaluria - Nefrología The genetic defects of enzymes that metabolise glyoxylate lead to overproduction of oxalate in the liver; that is, this disease is due to excess production.\n-Reference: [GG_19]: Primary hyperoxaluria type 2 | About the Disease | GARD This enzyme shortage is caused by genetic changes in the GRHPR gene. Primary hyperoxaluria type 2 is inherited in an autosomal recessive pattern.\n-Reference: [GG_20]: The gene encoding hydroxypyruvate reductase (GRHPR) is mutated in ... Aug 6, 2025·... 4 A mutation in the GRHPR gene in type II primary hyperoxaluria impedes D-glyceric dehydrogenase's conversion of glyoxylate to glycolate, ...\n\n",
+                                "full_data": {
+                                    "short_answer": "glyoxylate reductase/hydroxypyruvate reductase",
+                                    "long_answer": "Reference: [GG_3], [GG_4], [GG_20]. Explanation: The provided context indicates that primary hyperoxaluria type 2 involves a deficiency of the enzyme exhibiting D‐glycerate dehydrogenase activity, which is also known as glyoxylate reductase/hydroxypyruvate reductase. Mutations in the GRHPR gene that encodes this enzyme are associated with primary hyperoxaluria when mutated."
+                                }
+                            }
+                        ]
+                    },
+                    "wiki": {
+                        "short_answer": "GRHPR enzyme",
+                        "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The provided context indicates that mutations in the GRHPR gene, which encodes an enzyme with D‐glycerate dehydrogenase activity, are associated with primary hyperoxaluria type II. This enzyme is involved in glyoxylate metabolism and its alteration leads to the disease phenotype.",
+                        "retrieval_information": "-Reference: [WIKI_1]: Glycerate dehydrogenase - Wikipedia \"Molecular analysis of the glyoxylate reductase (GRHPR) gene and description of mutations underlying primary hyperoxaluria type 2\". Human Mutation. 22 (6): ...\n-Reference: [WIKI_2]: GRHPR - Wikipedia Type II hyperoxaluria is caused by mutations in this gene. GRHPR mutation analysis needs to pay attention to primer design, because allele dropout can cause ...\n-Reference: [WIKI_3]: Glyoxylic acid - Wikipedia \"Primary hyperoxaluria type III—a model for studying perturbations in glyoxylate metabolism\". Journal of Molecular Medicine. 90 (12): 1497–1504. doi:10.1007 ...\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "GRHPR enzyme",
+                                "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The provided context indicates that mutations in the GRHPR gene, which encodes an enzyme with D‐glycerate dehydrogenase activity, are associated with primary hyperoxaluria type II. This enzyme is involved in glyoxylate metabolism and its alteration leads to the disease phenotype.",
+                                "retrieval_information": "-Reference: [WIKI_1]: Glycerate dehydrogenase - Wikipedia \"Molecular analysis of the glyoxylate reductase (GRHPR) gene and description of mutations underlying primary hyperoxaluria type 2\". Human Mutation. 22 (6): ...\n-Reference: [WIKI_2]: GRHPR - Wikipedia Type II hyperoxaluria is caused by mutations in this gene. GRHPR mutation analysis needs to pay attention to primer design, because allele dropout can cause ...\n-Reference: [WIKI_3]: Glyoxylic acid - Wikipedia \"Primary hyperoxaluria type III—a model for studying perturbations in glyoxylate metabolism\". Journal of Molecular Medicine. 90 (12): 1497–1504. doi:10.1007 ...\n\n",
+                                "full_data": {
+                                    "short_answer": "GRHPR enzyme",
+                                    "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The provided context indicates that mutations in the GRHPR gene, which encodes an enzyme with D‐glycerate dehydrogenase activity, are associated with primary hyperoxaluria type II. This enzyme is involved in glyoxylate metabolism and its alteration leads to the disease phenotype."
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_ner_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_sparql_wikidata": {
+                        "short_answer": "HOGA1",
+                        "long_answer": "Reference: [SPARQL], primary hyperoxaluria (genetic association: HOGA1, source: Q18048871). Explanation: The context indicates that d-glycerate dehydrogenase is a class of enzymes that catalyze the reaction D-glycerate + NADP+ = hydroxypyruvate + NADPH + H+. It also notes that primary hyperoxaluria has a genetic association with HOGA1, linking mutations in this enzyme to the disease.",
+                        "retrieval_information": "- Reference [SPARQL]: \nd-glycerate dehydrogenase: - class of enzymes\n- Catalysis of the reaction: D-glycerate + NADP+ = hydroxypyruvate + NADPH + H+.\n- disease\n\nprimary hyperoxaluria: - human disease\n- human disease\n- human disease\n- disease\n- clinical trial\n- clinical trial\n- primary hyperoxaluria (description: human disease) - relation: Orphanet ID: 416 (source: 416)\n- primary hyperoxaluria (description: human disease) - relation: genetic association: HOGA1 (source: Q18048871)\n- primary hyperoxaluria type I (description: human disease) - relation: Orphanet ID: 93598 (source: 93598)\n- primary hyperoxaluria type I (description: human disease) - relation: genetic association: AGXT (source: Q17816233)\n- primary hyperoxaluria type 3 (description: human disease) - relation: Orphanet ID: 93600 (source: 93600)\n",
+                        "candidate": [
+                            {
+                                "short_answer": "HOGA1",
+                                "long_answer": "Reference: [SPARQL], primary hyperoxaluria (genetic association: HOGA1, source: Q18048871). Explanation: The context indicates that d-glycerate dehydrogenase is a class of enzymes that catalyze the reaction D-glycerate + NADP+ = hydroxypyruvate + NADPH + H+. It also notes that primary hyperoxaluria has a genetic association with HOGA1, linking mutations in this enzyme to the disease.",
+                                "retrieval_information": "- Reference [SPARQL]: \nd-glycerate dehydrogenase: - class of enzymes\n- Catalysis of the reaction: D-glycerate + NADP+ = hydroxypyruvate + NADPH + H+.\n- disease\n\nprimary hyperoxaluria: - human disease\n- human disease\n- human disease\n- disease\n- clinical trial\n- clinical trial\n- primary hyperoxaluria (description: human disease) - relation: Orphanet ID: 416 (source: 416)\n- primary hyperoxaluria (description: human disease) - relation: genetic association: HOGA1 (source: Q18048871)\n- primary hyperoxaluria type I (description: human disease) - relation: Orphanet ID: 93598 (source: 93598)\n- primary hyperoxaluria type I (description: human disease) - relation: genetic association: AGXT (source: Q17816233)\n- primary hyperoxaluria type 3 (description: human disease) - relation: Orphanet ID: 93600 (source: 93600)\n",
+                                "full_data": {
+                                    "short_answer": "HOGA1",
+                                    "long_answer": "Reference: [SPARQL], primary hyperoxaluria (genetic association: HOGA1, source: Q18048871). Explanation: The context indicates that d-glycerate dehydrogenase is a class of enzymes that catalyze the reaction D-glycerate + NADP+ = hydroxypyruvate + NADPH + H+. It also notes that primary hyperoxaluria has a genetic association with HOGA1, linking mutations in this enzyme to the disease."
+                                }
+                            }
+                        ]
+                    }
+                },
+                "question": "Is there an enzyme that exhibits D-glycerate dehydrogenase enzymatic activity and is associated with primary hyperoxaluria when mutated?",
+                "search_keyword": "D-glycerate dehydrogenase enzyme primary hyperoxaluria mutation"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The provided context indicates that mutations in the GRHPR gene, which encodes an enzyme with D‐glycerate dehydrogenase activity, are associated with primary hyperoxaluria type II. This enzyme is involved in glyoxylate metabolism and its alteration leads to the disease phenotype.",
+        "short_answer": "GRHPR enzyme",
+        "retrieval_information": "-Reference: [WIKI_1]: Glycerate dehydrogenase - Wikipedia \"Molecular analysis of the glyoxylate reductase (GRHPR) gene and description of mutations underlying primary hyperoxaluria type 2\". Human Mutation. 22 (6): ...\n-Reference: [WIKI_2]: GRHPR - Wikipedia Type II hyperoxaluria is caused by mutations in this gene. GRHPR mutation analysis needs to pay attention to primer design, because allele dropout can cause ...\n-Reference: [WIKI_3]: Glyoxylic acid - Wikipedia \"Primary hyperoxaluria type III—a model for studying perturbations in glyoxylate metabolism\". Journal of Molecular Medicine. 90 (12): 1497–1504. doi:10.1007 ...\n\n"
+    }
+}

@@ -499,6 +499,7 @@ def crawl_wiki_page_general(
             filter_context = data_filter.get('crawl_wiki', {}).get('filter', {}).get(link, {}).get(type_embed, "")
         else:
             if os.path.exists(file_crawl):
+                print(f"[Cache] Wikipedia page: {file_crawl}")
                 crawl_wiki = load_json(file_crawl)
                 crawled_data = crawl_wiki.get('crawl_wiki', {}).get('html_page', {}).get(link, None)
             else:
@@ -656,27 +657,29 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
             if abs_wiki != "":
                 retrieval_information += abs_wiki + "\n\n"
 
-        if settings['get_crawl_wiki']:
-            crawl_wiki_context = crawl_wiki_page_general(
-                search_kw_subq,
-                results_wiki_search,  # iterable là list kết quả search
-                get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
-                get_link_func=lambda article: normalize_query(article['link']),
-                get_title_func=lambda article: article.get('title', ''),
-                cache_crawl_base=settings['cache']['crawl_wiki'],
-                cache_filter_base=settings['cache']['filter_wiki'],
-                pre_processing_func=wiki_pre_processing,
-                target_answer_type=target_answer_type,
-                # target_answer_type=None,
-                embedding_model=embedding_model,
-                topk=retrieval_topk['wiki_crawl'],
-                # percentage=0.44,
-                percentage=None,
-                max_token=retrieval_topk['crawl_max_token'],
-            )
-            
-            if crawl_wiki_context != "":
-                retrieval_information += crawl_wiki_context + "\n"
+    if settings['get_crawl_wiki']:
+        results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
+        
+        crawl_wiki_context = crawl_wiki_page_general(
+            search_kw_subq,
+            results_wiki_search,  # iterable là list kết quả search
+            get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
+            get_link_func=lambda article: normalize_query(article['link']),
+            get_title_func=lambda article: article.get('title', ''),
+            cache_crawl_base=settings['cache']['crawl_wiki'],
+            cache_filter_base=settings['cache']['filter_wiki'],
+            pre_processing_func=wiki_pre_processing,
+            target_answer_type=target_answer_type,
+            # target_answer_type=None,
+            embedding_model=embedding_model,
+            topk=retrieval_topk['wiki_crawl'],
+            # percentage=0.44,
+            percentage=None,
+            max_token=retrieval_topk['crawl_max_token'],
+        )
+        
+        if crawl_wiki_context != "":
+            retrieval_information += crawl_wiki_context + "\n"
 
     if settings['get_ner_wiki']:
         cache_entity = load_json(settings['cache']['hash_id']['crawl_ner'])

@@ -205,8 +205,9 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         dict_ans[q_i][path_i][step]["source_output"][source] = {}
                     else:
                         source_have_run = True
-                        cache_source_have_run.append(source)
-                        continue
+                        if source != "crawl_wiki":                            
+                            cache_source_have_run.append(source)
+                            continue
 
                     
                     print(f"\nSource [{source}] Processing Step {step}: {subquestion} ---")
@@ -360,10 +361,14 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
 
                 # continue
-               
+                if source_have_run == "crawl_wiki":
+                    save_json(dict_ans, file_all_ans)
+                    print(file_all_ans)
+
                 if source_have_run:
                     continue
-                
+                # save_json(dict_ans, file_all_ans)
+                return
                 # GET ALL SOURCE - MCQ
                 # THÊM list source muốn lấy: select_source_mcq = ["google", "wiki"]
                 qi_candidates = []
@@ -465,7 +470,7 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    threads = [0, 200] # configs['run']['threads'] 
+    threads = [0, 250] # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
@@ -535,8 +540,8 @@ if __name__ == "__main__":
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
         
-        if qidx not in ['177071', '326868']: #'100860'
-            continue
+        # if qidx not in ['177071', '326868']: #'100860'
+        #     continue
        
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'

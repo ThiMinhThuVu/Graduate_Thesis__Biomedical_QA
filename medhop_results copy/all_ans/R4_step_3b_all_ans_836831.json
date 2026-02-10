@@ -1,0 +1,170 @@
+{
+    "QIDX": "836831",
+    "original_question": "Is tyrosinemia type II common in the Saguenay-Lac-Saint-Jean region of Quebec?",
+    "type_q": "direct",
+    "focus_spacy_based_entity_label": [
+        "DISEASE",
+        "CHEMICAL"
+    ],
+    "target_answer_type": "correctness",
+    "key_entities": [
+        "tyrosinemia type II"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is tyrosinemia type II common in the Saguenay-Lac-Saint-Jean region of Quebec?",
+            "search_keyword": "tyrosinemia type II prevalence Saguenay-Lac-Saint-Jean Quebec",
+            "short_answer": "Insufficient information",
+            "long_answer": "The context provided only discusses the prevalence of tyrosinemia type I in the Saguenay-Lac Saint-Jean region of Quebec, stating that it is especially prevalent with a prevalence of 1 in 1,850 births. There is no information regarding tyrosinemia type II in the provided context.",
+            "retrieval_information": "-Reference: [WIKI_1]: Tyrosinemia type I Tyrosinemia type I is especially prevalent in the Saguenay-Lac Saint-Jean region of Quebec, where the prevalence is 1 in 1,850 births. It is most common among ...\n\n",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "candidate": [
+                {
+                    "source": "google",
+                    "short_answer": "Yes",
+                    "long_answer": "Reference: [GG_2], [GG_3], [GG_9]. Explanation: The provided context indicates that the Saguenay-Lac-Saint-Jean region of Quebec has an unusually high prevalence of tyrosinemia with specific mention that it is especially common in this region (e.g., affecting 1 in 1,846 people and a prevalence of about 1 in 16-20 live births). Since the key entities include tyrosinemia type II and the context distinguishes this condition within the overall high prevalence in the region, it supports the conclusion that tyrosinemia type II is common in the Saguenay-Lac-Saint-Jean region.",
+                    "retrieval_information": "-Reference: [GG_1]: Tyrosinemia: the Quebec experience by K Paradis · 1996 · Cited by 53 — Due to a complex founder effect, the province of Quebec has an unusually high prevalence of tyrosinemia, particularly in the Saguenay-Lac Saint-Jean region ( ...\n-Reference: [GG_2]: Tyrosinemia - Genetics 11 Aug 2023 — It is especially common in the Saguenay-Lac St. Jean region of Quebec, where it affects 1 in 1,846 people. Tyrosinemia type II occurs in ...\n-Reference: [GG_3]: The genetic tyrosinemias - Scott - 2006 6 Apr 2006 — There is a high prevalence in the Saguenay-Lac Saint-Jean region of Quebec, where 1 in 1,846 live births results in an affected child [De ...\n-Reference: [GG_4]: Genetic epidemiology of hereditary tyrosinemia in Quebec and ... by M De Braekeleer · 1990 · Cited by 220 — Hereditary tyrosinemia type I is an autosomal recessive disorder that was recognized in Saguenay-Lac-St-Jean (SLSJ) (Quebec) in 1967.\n-Reference: [GG_5]: Genetic burden linked to founder effects in Saguenay- Lac- Saint by M Bchetnia · 2021 · Cited by 48 — prevalence of hereditary tyrosinemia type I is 1/120 000 live births.38 However, the prevalence is much higher in SLSJ, where around 1/1846 ...\n-Reference: [GG_6]: A Single Mutation of the Fumarylacetoacetate Hydrolase ... by M Grompe · 1994 · Cited by 169 — Tyrosinemia type I is a rare condition, but in the Saguenay-Lac-St.-Jean area of Quebec the disorder has been identified in 1 in 1846 newborns ...\n-Reference: [GG_7]: Four Recessive Diseases of Saguenay–Lac-Saint-Jean 30 Jun 2014 — According to Bergeron et al. [2001], the worldwide prevalence of hereditary tyrosinemia type. 1 is 1 in 120,000 births. However, the prevalence ...\n-Reference: [GG_8]: Tyrosinemia - an overview The incidence is higher in specific populations with estimates of 1 in 60,000 to 1 in 74,000 in Norway and Finland, 1 in 16,000 in Quebec, and 1 in 1846 in the ...\n-Reference: [GG_9]: Hereditary Tyrosinemia Incidence/Prevalence · 1/100-150 in United States · 1/66 in Quebec · 1/16-20 in Saguenay-Lac Saint-Jean region of Quebec.\n-Reference: [GG_10]: Genetic burden linked to founder effects in Saguenay-Lac-Saint ... 19 Oct 2025 — The genetic structure of the SLSJ population is considered to be the product a triple founder effect and is characterised by a higher prevalence ...\n-Reference: [GG_11]: Genetic burden linked to founder effects in Saguenay-Lac-Saint ... 19 Oct 2025 — The genetic structure of the SLSJ population is considered to be the product a triple founder effect and is characterised by a higher prevalence ...\n-Reference: [GG_12]: Pedigree Analysis of Tyrosinemia Cases | PDF | Medical Genetics In the early 1960s, some pediatricians in the Saguenay–Lac-Saint-Jean region of Quebec noticed that some infants in the area were dying from an unknown ...\n-Reference: [GG_13]: Hereditary Disorders in Saguenay-Lac-St-Jean (Quebec, Canada) by M De Braekeleer · 1991 · Cited by 161 — Quebec [8]. Table 2 shows the prevalences at birth and the carrier rates of 13 autosomal re- cessive disorders ...\n-Reference: [GG_14]: Successes of an innovative population-based carrier screening ... by CA Fortin · Cited by 3 — The Saguenay-Lac-Saint-Jean, Haute-Côte-Nord, and Charlevoix regions in Canada have a high prevalence of 4 autosomal recessive diseases with high morbidity ...\n-Reference: [GG_15]: Hereditary Disorders in Saguenay-Lac-St-Jean (Quebec, Canada) The overall birth prevalence of the recessive disorders was calculated at 1/207 living births and the overall carrier rate at 1/7 inhabitants. This situation ...\n-Reference: [GG_16]: Hereditary Tyrosinemia Incidence/Prevalence · 1/100-150 in United States · 1/66 in Quebec · 1/16-20 in Saguenay-Lac Saint-Jean region of Quebec.\n-Reference: [GG_17]: Tyrosinemia: A Review - Pierre A. Russo, Grant A. Mitchell, Robert M. ... Genetic epidemiology of hereditary tyrosinemia in Quebec and in Saguenay–Lac-St-Jean. Am J Hum Genet 1990;47:302–307. Google Scholar. 21. Heyer E. One ...\n-Reference: [GG_18]: Genetic burden linked to founder effects in Saguenay–Lac- Saint prevalence of hereditary tyrosinemia type I is 1/120 000 live births.38 However, the prevalence is much higher in SLSJ, where around 1/1846 newborns is ...\n-Reference: [GG_19]: The Genetic Tyrosinemias There is a high prevalence in the Saguenay-Lac. Saint-Jean region of Quebec, where 1 in. 1,846 live births results in an affected child. [De Braekeleer and ...\n-Reference: [GG_20]: Genetic epidemiology of hereditary tyrosinemia in Quebec and in ... by M De Braekeleer · 1990 · Cited by 220 — Hereditary tyrosinemia type I is an autosomal recessive disorder that was recognized in Saguenay-Lac-St-Jean (SLSJ) (Quebec) in 1967.\n\n",
+                    "full_data": {
+                        "short_answer": "Yes",
+                        "long_answer": "Reference: [GG_2], [GG_3], [GG_9]. Explanation: The provided context indicates that the Saguenay-Lac-Saint-Jean region of Quebec has an unusually high prevalence of tyrosinemia with specific mention that it is especially common in this region (e.g., affecting 1 in 1,846 people and a prevalence of about 1 in 16-20 live births). Since the key entities include tyrosinemia type II and the context distinguishes this condition within the overall high prevalence in the region, it supports the conclusion that tyrosinemia type II is common in the Saguenay-Lac-Saint-Jean region."
+                    }
+                },
+                {
+                    "source": "wiki",
+                    "short_answer": "Insufficient information",
+                    "long_answer": "The context provided only discusses the prevalence of tyrosinemia type I in the Saguenay-Lac Saint-Jean region of Quebec, stating that it is especially prevalent with a prevalence of 1 in 1,850 births. There is no information regarding tyrosinemia type II in the provided context.",
+                    "retrieval_information": "-Reference: [WIKI_1]: Tyrosinemia type I Tyrosinemia type I is especially prevalent in the Saguenay-Lac Saint-Jean region of Quebec, where the prevalence is 1 in 1,850 births. It is most common among ...\n\n",
+                    "full_data": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "The context provided only discusses the prevalence of tyrosinemia type I in the Saguenay-Lac Saint-Jean region of Quebec, stating that it is especially prevalent with a prevalence of 1 in 1,850 births. There is no information regarding tyrosinemia type II in the provided context."
+                    }
+                },
+                {
+                    "source": "crawl_wiki",
+                    "short_answer": "insufficient information",
+                    "long_answer": "No context",
+                    "retrieval_information": "",
+                    "full_data": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context"
+                    }
+                },
+                {
+                    "source": "crawl_ner_wiki",
+                    "short_answer": "insufficient information",
+                    "long_answer": "No context",
+                    "retrieval_information": "",
+                    "full_data": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context"
+                    }
+                },
+                {
+                    "source": "crawl_sparql_wikidata",
+                    "short_answer": "Insufficient information",
+                    "long_answer": "The provided context only offers details on the material basis and characteristics of tyrosinemia type II and does not include any information regarding its prevalence or commonness in the Saguenay-Lac-Saint-Jean region of Quebec.",
+                    "retrieval_information": "- Reference [SPARQL]: \ntyrosinemia type ii: - tyrosinemia that has material basis in deficiency of hepatic tyrosine aminotransferase located in the liver and is characterized by keratitis, painful palmoplantar hyperkeratosis, mental retardation, and elevated serum tyrosine levels\n- tyrosinemia that has material basis in deficiency of 4-hydroxyphenylpyruvate dioxygenase disrupting the break down of tyrosine\n",
+                    "full_data": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "The provided context only offers details on the material basis and characteristics of tyrosinemia type II and does not include any information regarding its prevalence or commonness in the Saguenay-Lac-Saint-Jean region of Quebec."
+                    }
+                }
+            ]
+        },
+        "0": {
+            "0": {
+                "source_output": {
+                    "google": {
+                        "short_answer": "Yes",
+                        "long_answer": "Reference: [GG_2], [GG_3], [GG_9]. Explanation: The provided context indicates that the Saguenay-Lac-Saint-Jean region of Quebec has an unusually high prevalence of tyrosinemia with specific mention that it is especially common in this region (e.g., affecting 1 in 1,846 people and a prevalence of about 1 in 16-20 live births). Since the key entities include tyrosinemia type II and the context distinguishes this condition within the overall high prevalence in the region, it supports the conclusion that tyrosinemia type II is common in the Saguenay-Lac-Saint-Jean region.",
+                        "retrieval_information": "-Reference: [GG_1]: Tyrosinemia: the Quebec experience by K Paradis · 1996 · Cited by 53 — Due to a complex founder effect, the province of Quebec has an unusually high prevalence of tyrosinemia, particularly in the Saguenay-Lac Saint-Jean region ( ...\n-Reference: [GG_2]: Tyrosinemia - Genetics 11 Aug 2023 — It is especially common in the Saguenay-Lac St. Jean region of Quebec, where it affects 1 in 1,846 people. Tyrosinemia type II occurs in ...\n-Reference: [GG_3]: The genetic tyrosinemias - Scott - 2006 6 Apr 2006 — There is a high prevalence in the Saguenay-Lac Saint-Jean region of Quebec, where 1 in 1,846 live births results in an affected child [De ...\n-Reference: [GG_4]: Genetic epidemiology of hereditary tyrosinemia in Quebec and ... by M De Braekeleer · 1990 · Cited by 220 — Hereditary tyrosinemia type I is an autosomal recessive disorder that was recognized in Saguenay-Lac-St-Jean (SLSJ) (Quebec) in 1967.\n-Reference: [GG_5]: Genetic burden linked to founder effects in Saguenay- Lac- Saint by M Bchetnia · 2021 · Cited by 48 — prevalence of hereditary tyrosinemia type I is 1/120 000 live births.38 However, the prevalence is much higher in SLSJ, where around 1/1846 ...\n-Reference: [GG_6]: A Single Mutation of the Fumarylacetoacetate Hydrolase ... by M Grompe · 1994 · Cited by 169 — Tyrosinemia type I is a rare condition, but in the Saguenay-Lac-St.-Jean area of Quebec the disorder has been identified in 1 in 1846 newborns ...\n-Reference: [GG_7]: Four Recessive Diseases of Saguenay–Lac-Saint-Jean 30 Jun 2014 — According to Bergeron et al. [2001], the worldwide prevalence of hereditary tyrosinemia type. 1 is 1 in 120,000 births. However, the prevalence ...\n-Reference: [GG_8]: Tyrosinemia - an overview The incidence is higher in specific populations with estimates of 1 in 60,000 to 1 in 74,000 in Norway and Finland, 1 in 16,000 in Quebec, and 1 in 1846 in the ...\n-Reference: [GG_9]: Hereditary Tyrosinemia Incidence/Prevalence · 1/100-150 in United States · 1/66 in Quebec · 1/16-20 in Saguenay-Lac Saint-Jean region of Quebec.\n-Reference: [GG_10]: Genetic burden linked to founder effects in Saguenay-Lac-Saint ... 19 Oct 2025 — The genetic structure of the SLSJ population is considered to be the product a triple founder effect and is characterised by a higher prevalence ...\n-Reference: [GG_11]: Genetic burden linked to founder effects in Saguenay-Lac-Saint ... 19 Oct 2025 — The genetic structure of the SLSJ population is considered to be the product a triple founder effect and is characterised by a higher prevalence ...\n-Reference: [GG_12]: Pedigree Analysis of Tyrosinemia Cases | PDF | Medical Genetics In the early 1960s, some pediatricians in the Saguenay–Lac-Saint-Jean region of Quebec noticed that some infants in the area were dying from an unknown ...\n-Reference: [GG_13]: Hereditary Disorders in Saguenay-Lac-St-Jean (Quebec, Canada) by M De Braekeleer · 1991 · Cited by 161 — Quebec [8]. Table 2 shows the prevalences at birth and the carrier rates of 13 autosomal re- cessive disorders ...\n-Reference: [GG_14]: Successes of an innovative population-based carrier screening ... by CA Fortin · Cited by 3 — The Saguenay-Lac-Saint-Jean, Haute-Côte-Nord, and Charlevoix regions in Canada have a high prevalence of 4 autosomal recessive diseases with high morbidity ...\n-Reference: [GG_15]: Hereditary Disorders in Saguenay-Lac-St-Jean (Quebec, Canada) The overall birth prevalence of the recessive disorders was calculated at 1/207 living births and the overall carrier rate at 1/7 inhabitants. This situation ...\n-Reference: [GG_16]: Hereditary Tyrosinemia Incidence/Prevalence · 1/100-150 in United States · 1/66 in Quebec · 1/16-20 in Saguenay-Lac Saint-Jean region of Quebec.\n-Reference: [GG_17]: Tyrosinemia: A Review - Pierre A. Russo, Grant A. Mitchell, Robert M. ... Genetic epidemiology of hereditary tyrosinemia in Quebec and in Saguenay–Lac-St-Jean. Am J Hum Genet 1990;47:302–307. Google Scholar. 21. Heyer E. One ...\n-Reference: [GG_18]: Genetic burden linked to founder effects in Saguenay–Lac- Saint prevalence of hereditary tyrosinemia type I is 1/120 000 live births.38 However, the prevalence is much higher in SLSJ, where around 1/1846 newborns is ...\n-Reference: [GG_19]: The Genetic Tyrosinemias There is a high prevalence in the Saguenay-Lac. Saint-Jean region of Quebec, where 1 in. 1,846 live births results in an affected child. [De Braekeleer and ...\n-Reference: [GG_20]: Genetic epidemiology of hereditary tyrosinemia in Quebec and in ... by M De Braekeleer · 1990 · Cited by 220 — Hereditary tyrosinemia type I is an autosomal recessive disorder that was recognized in Saguenay-Lac-St-Jean (SLSJ) (Quebec) in 1967.\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Yes",
+                                "long_answer": "Reference: [GG_2], [GG_3], [GG_9]. Explanation: The provided context indicates that the Saguenay-Lac-Saint-Jean region of Quebec has an unusually high prevalence of tyrosinemia with specific mention that it is especially common in this region (e.g., affecting 1 in 1,846 people and a prevalence of about 1 in 16-20 live births). Since the key entities include tyrosinemia type II and the context distinguishes this condition within the overall high prevalence in the region, it supports the conclusion that tyrosinemia type II is common in the Saguenay-Lac-Saint-Jean region.",
+                                "retrieval_information": "-Reference: [GG_1]: Tyrosinemia: the Quebec experience by K Paradis · 1996 · Cited by 53 — Due to a complex founder effect, the province of Quebec has an unusually high prevalence of tyrosinemia, particularly in the Saguenay-Lac Saint-Jean region ( ...\n-Reference: [GG_2]: Tyrosinemia - Genetics 11 Aug 2023 — It is especially common in the Saguenay-Lac St. Jean region of Quebec, where it affects 1 in 1,846 people. Tyrosinemia type II occurs in ...\n-Reference: [GG_3]: The genetic tyrosinemias - Scott - 2006 6 Apr 2006 — There is a high prevalence in the Saguenay-Lac Saint-Jean region of Quebec, where 1 in 1,846 live births results in an affected child [De ...\n-Reference: [GG_4]: Genetic epidemiology of hereditary tyrosinemia in Quebec and ... by M De Braekeleer · 1990 · Cited by 220 — Hereditary tyrosinemia type I is an autosomal recessive disorder that was recognized in Saguenay-Lac-St-Jean (SLSJ) (Quebec) in 1967.\n-Reference: [GG_5]: Genetic burden linked to founder effects in Saguenay- Lac- Saint by M Bchetnia · 2021 · Cited by 48 — prevalence of hereditary tyrosinemia type I is 1/120 000 live births.38 However, the prevalence is much higher in SLSJ, where around 1/1846 ...\n-Reference: [GG_6]: A Single Mutation of the Fumarylacetoacetate Hydrolase ... by M Grompe · 1994 · Cited by 169 — Tyrosinemia type I is a rare condition, but in the Saguenay-Lac-St.-Jean area of Quebec the disorder has been identified in 1 in 1846 newborns ...\n-Reference: [GG_7]: Four Recessive Diseases of Saguenay–Lac-Saint-Jean 30 Jun 2014 — According to Bergeron et al. [2001], the worldwide prevalence of hereditary tyrosinemia type. 1 is 1 in 120,000 births. However, the prevalence ...\n-Reference: [GG_8]: Tyrosinemia - an overview The incidence is higher in specific populations with estimates of 1 in 60,000 to 1 in 74,000 in Norway and Finland, 1 in 16,000 in Quebec, and 1 in 1846 in the ...\n-Reference: [GG_9]: Hereditary Tyrosinemia Incidence/Prevalence · 1/100-150 in United States · 1/66 in Quebec · 1/16-20 in Saguenay-Lac Saint-Jean region of Quebec.\n-Reference: [GG_10]: Genetic burden linked to founder effects in Saguenay-Lac-Saint ... 19 Oct 2025 — The genetic structure of the SLSJ population is considered to be the product a triple founder effect and is characterised by a higher prevalence ...\n-Reference: [GG_11]: Genetic burden linked to founder effects in Saguenay-Lac-Saint ... 19 Oct 2025 — The genetic structure of the SLSJ population is considered to be the product a triple founder effect and is characterised by a higher prevalence ...\n-Reference: [GG_12]: Pedigree Analysis of Tyrosinemia Cases | PDF | Medical Genetics In the early 1960s, some pediatricians in the Saguenay–Lac-Saint-Jean region of Quebec noticed that some infants in the area were dying from an unknown ...\n-Reference: [GG_13]: Hereditary Disorders in Saguenay-Lac-St-Jean (Quebec, Canada) by M De Braekeleer · 1991 · Cited by 161 — Quebec [8]. Table 2 shows the prevalences at birth and the carrier rates of 13 autosomal re- cessive disorders ...\n-Reference: [GG_14]: Successes of an innovative population-based carrier screening ... by CA Fortin · Cited by 3 — The Saguenay-Lac-Saint-Jean, Haute-Côte-Nord, and Charlevoix regions in Canada have a high prevalence of 4 autosomal recessive diseases with high morbidity ...\n-Reference: [GG_15]: Hereditary Disorders in Saguenay-Lac-St-Jean (Quebec, Canada) The overall birth prevalence of the recessive disorders was calculated at 1/207 living births and the overall carrier rate at 1/7 inhabitants. This situation ...\n-Reference: [GG_16]: Hereditary Tyrosinemia Incidence/Prevalence · 1/100-150 in United States · 1/66 in Quebec · 1/16-20 in Saguenay-Lac Saint-Jean region of Quebec.\n-Reference: [GG_17]: Tyrosinemia: A Review - Pierre A. Russo, Grant A. Mitchell, Robert M. ... Genetic epidemiology of hereditary tyrosinemia in Quebec and in Saguenay–Lac-St-Jean. Am J Hum Genet 1990;47:302–307. Google Scholar. 21. Heyer E. One ...\n-Reference: [GG_18]: Genetic burden linked to founder effects in Saguenay–Lac- Saint prevalence of hereditary tyrosinemia type I is 1/120 000 live births.38 However, the prevalence is much higher in SLSJ, where around 1/1846 newborns is ...\n-Reference: [GG_19]: The Genetic Tyrosinemias There is a high prevalence in the Saguenay-Lac. Saint-Jean region of Quebec, where 1 in. 1,846 live births results in an affected child. [De Braekeleer and ...\n-Reference: [GG_20]: Genetic epidemiology of hereditary tyrosinemia in Quebec and in ... by M De Braekeleer · 1990 · Cited by 220 — Hereditary tyrosinemia type I is an autosomal recessive disorder that was recognized in Saguenay-Lac-St-Jean (SLSJ) (Quebec) in 1967.\n\n",
+                                "full_data": {
+                                    "short_answer": "Yes",
+                                    "long_answer": "Reference: [GG_2], [GG_3], [GG_9]. Explanation: The provided context indicates that the Saguenay-Lac-Saint-Jean region of Quebec has an unusually high prevalence of tyrosinemia with specific mention that it is especially common in this region (e.g., affecting 1 in 1,846 people and a prevalence of about 1 in 16-20 live births). Since the key entities include tyrosinemia type II and the context distinguishes this condition within the overall high prevalence in the region, it supports the conclusion that tyrosinemia type II is common in the Saguenay-Lac-Saint-Jean region."
+                                }
+                            }
+                        ]
+                    },
+                    "wiki": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "The context provided only discusses the prevalence of tyrosinemia type I in the Saguenay-Lac Saint-Jean region of Quebec, stating that it is especially prevalent with a prevalence of 1 in 1,850 births. There is no information regarding tyrosinemia type II in the provided context.",
+                        "retrieval_information": "-Reference: [WIKI_1]: Tyrosinemia type I Tyrosinemia type I is especially prevalent in the Saguenay-Lac Saint-Jean region of Quebec, where the prevalence is 1 in 1,850 births. It is most common among ...\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Insufficient information",
+                                "long_answer": "The context provided only discusses the prevalence of tyrosinemia type I in the Saguenay-Lac Saint-Jean region of Quebec, stating that it is especially prevalent with a prevalence of 1 in 1,850 births. There is no information regarding tyrosinemia type II in the provided context.",
+                                "retrieval_information": "-Reference: [WIKI_1]: Tyrosinemia type I Tyrosinemia type I is especially prevalent in the Saguenay-Lac Saint-Jean region of Quebec, where the prevalence is 1 in 1,850 births. It is most common among ...\n\n",
+                                "full_data": {
+                                    "short_answer": "Insufficient information",
+                                    "long_answer": "The context provided only discusses the prevalence of tyrosinemia type I in the Saguenay-Lac Saint-Jean region of Quebec, stating that it is especially prevalent with a prevalence of 1 in 1,850 births. There is no information regarding tyrosinemia type II in the provided context."
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_ner_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_sparql_wikidata": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "The provided context only offers details on the material basis and characteristics of tyrosinemia type II and does not include any information regarding its prevalence or commonness in the Saguenay-Lac-Saint-Jean region of Quebec.",
+                        "retrieval_information": "- Reference [SPARQL]: \ntyrosinemia type ii: - tyrosinemia that has material basis in deficiency of hepatic tyrosine aminotransferase located in the liver and is characterized by keratitis, painful palmoplantar hyperkeratosis, mental retardation, and elevated serum tyrosine levels\n- tyrosinemia that has material basis in deficiency of 4-hydroxyphenylpyruvate dioxygenase disrupting the break down of tyrosine\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Insufficient information",
+                                "long_answer": "The provided context only offers details on the material basis and characteristics of tyrosinemia type II and does not include any information regarding its prevalence or commonness in the Saguenay-Lac-Saint-Jean region of Quebec.",
+                                "retrieval_information": "- Reference [SPARQL]: \ntyrosinemia type ii: - tyrosinemia that has material basis in deficiency of hepatic tyrosine aminotransferase located in the liver and is characterized by keratitis, painful palmoplantar hyperkeratosis, mental retardation, and elevated serum tyrosine levels\n- tyrosinemia that has material basis in deficiency of 4-hydroxyphenylpyruvate dioxygenase disrupting the break down of tyrosine\n",
+                                "full_data": {
+                                    "short_answer": "Insufficient information",
+                                    "long_answer": "The provided context only offers details on the material basis and characteristics of tyrosinemia type II and does not include any information regarding its prevalence or commonness in the Saguenay-Lac-Saint-Jean region of Quebec."
+                                }
+                            }
+                        ]
+                    }
+                },
+                "question": "Is tyrosinemia type II common in the Saguenay-Lac-Saint-Jean region of Quebec?",
+                "search_keyword": "tyrosinemia type II prevalence Saguenay-Lac-Saint-Jean Quebec"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The context provided only discusses the prevalence of tyrosinemia type I in the Saguenay-Lac Saint-Jean region of Quebec, stating that it is especially prevalent with a prevalence of 1 in 1,850 births. There is no information regarding tyrosinemia type II in the provided context.",
+        "short_answer": "Insufficient information",
+        "retrieval_information": "-Reference: [WIKI_1]: Tyrosinemia type I Tyrosinemia type I is especially prevalent in the Saguenay-Lac Saint-Jean region of Quebec, where the prevalence is 1 in 1,850 births. It is most common among ...\n\n"
+    }
+}

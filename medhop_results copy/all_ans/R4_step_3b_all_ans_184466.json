@@ -1,0 +1,168 @@
+{
+    "QIDX": "184466",
+    "original_question": "Which diagram best represents the primary transmission route of Shigella?",
+    "type_q": "direct",
+    "focus_spacy_based_entity_label": [
+        "DISEASE",
+        "CHEMICAL"
+    ],
+    "target_answer_type": "choice",
+    "key_entities": [],
+    "1": {
+        "final_qi": {
+            "question": "Which diagram best represents the primary transmission route of Shigella?",
+            "search_keyword": "Shigella primary transmission route diagram",
+            "short_answer": "Diagram showing fecal–oral transmission",
+            "long_answer": "Reference: [GG_4], [GG_5], [GG_7]. Detailed explanation based on the information: The context repeatedly notes that Shigella is primarily spread via the fecal–oral route, as indicated by the description of direct or indirect smear infection through contaminated hands and food, and its high infectivity at a low dose. These references imply that the most representative diagram would be one that illustrates person-to-person and fecal–oral transmission, which is best captured by the diagrams described in references GG_4, GG_5, and GG_7.",
+            "retrieval_information": "-Reference: [GG_1]: Shows the flow chart of children with Shigella Download scientific diagram | Shows the flow chart of children with Shigella from publication: Sensitivity and predictive value of dysentery in diagnosing ...\n-Reference: [GG_2]: A fractional order model for the transmission dynamics of shigellosis by S Edward · 2024 · Cited by 15 — Shigellosis is a gastrointestinal infectious illness attributed to the presence of Shigella bacteria. The bacterial strains under consideration ...\n-Reference: [GG_3]: Physical map of Shigella atypical class 1 integron and locations of... Download scientific diagram | Physical map of Shigella atypical class 1 integron and locations of blaOXA-30 and aadA genes. from publication: Shigella: ...\n-Reference: [GG_4]: Microbiology & infectious diseases - Shigella 7 Jan 2026 — Gram negative bacilli easily spread via fecal-oral transmission and highly infectious due to low infectious dose · Shigellosis typically presents ...\n-Reference: [GG_5]: Shigella 14 Aug 2025 — Transmission usually occurs through direct or indirect smear infection via contaminated hands. The infection can spread indirectly via food, ...\n-Reference: [GG_6]: Cellular Aspects of Shigella Pathogenesis: Focus on the ... by SA Killackey · 2016 · Cited by 132 — Shigella infection can occur by the fecal-oral route of transmission, person-to-person contact or ingestion of contaminated food or water. There are four ...\n-Reference: [GG_7]: Molecular Mechanisms of Shigella Pathogenesis; Recent Advances by B Pakbin · 2023 · Cited by 70 — Four species of Shigella are widely transmitted among humans and foods via the faecal–oral route [5]. Shigella strains have been classified as ...\n\n",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "candidate": [
+                {
+                    "source": "google",
+                    "short_answer": "Diagram showing fecal–oral transmission",
+                    "long_answer": "Reference: [GG_4], [GG_5], [GG_7]. Detailed explanation based on the information: The context repeatedly notes that Shigella is primarily spread via the fecal–oral route, as indicated by the description of direct or indirect smear infection through contaminated hands and food, and its high infectivity at a low dose. These references imply that the most representative diagram would be one that illustrates person-to-person and fecal–oral transmission, which is best captured by the diagrams described in references GG_4, GG_5, and GG_7.",
+                    "retrieval_information": "-Reference: [GG_1]: Shows the flow chart of children with Shigella Download scientific diagram | Shows the flow chart of children with Shigella from publication: Sensitivity and predictive value of dysentery in diagnosing ...\n-Reference: [GG_2]: A fractional order model for the transmission dynamics of shigellosis by S Edward · 2024 · Cited by 15 — Shigellosis is a gastrointestinal infectious illness attributed to the presence of Shigella bacteria. The bacterial strains under consideration ...\n-Reference: [GG_3]: Physical map of Shigella atypical class 1 integron and locations of... Download scientific diagram | Physical map of Shigella atypical class 1 integron and locations of blaOXA-30 and aadA genes. from publication: Shigella: ...\n-Reference: [GG_4]: Microbiology & infectious diseases - Shigella 7 Jan 2026 — Gram negative bacilli easily spread via fecal-oral transmission and highly infectious due to low infectious dose · Shigellosis typically presents ...\n-Reference: [GG_5]: Shigella 14 Aug 2025 — Transmission usually occurs through direct or indirect smear infection via contaminated hands. The infection can spread indirectly via food, ...\n-Reference: [GG_6]: Cellular Aspects of Shigella Pathogenesis: Focus on the ... by SA Killackey · 2016 · Cited by 132 — Shigella infection can occur by the fecal-oral route of transmission, person-to-person contact or ingestion of contaminated food or water. There are four ...\n-Reference: [GG_7]: Molecular Mechanisms of Shigella Pathogenesis; Recent Advances by B Pakbin · 2023 · Cited by 70 — Four species of Shigella are widely transmitted among humans and foods via the faecal–oral route [5]. Shigella strains have been classified as ...\n\n",
+                    "full_data": {
+                        "short_answer": "Diagram showing fecal–oral transmission",
+                        "long_answer": "Reference: [GG_4], [GG_5], [GG_7]. Detailed explanation based on the information: The context repeatedly notes that Shigella is primarily spread via the fecal–oral route, as indicated by the description of direct or indirect smear infection through contaminated hands and food, and its high infectivity at a low dose. These references imply that the most representative diagram would be one that illustrates person-to-person and fecal–oral transmission, which is best captured by the diagrams described in references GG_4, GG_5, and GG_7."
+                    }
+                },
+                {
+                    "source": "wiki",
+                    "short_answer": "Fecal–oral route diagram",
+                    "long_answer": "Reference: [WIKI_2], [WIKI_3]. Detailed explanation based on the information: WIKI_2 states that Shigella is transmitted through the fecal–oral route, while WIKI_3 describes the fecal–oral route. Thus, the best diagram to represent the primary transmission route of Shigella is one that illustrates the fecal–oral route.",
+                    "retrieval_information": "-Reference: [WIKI_1]: Shigella Shigella is a genus of bacteria that is Gram-negative, facultatively anaerobic, non–spore-forming, nonmotile, rod-shaped, and is genetically nested within ...Missing:transmissionroute\n-Reference: [WIKI_2]: Shigellosis Transmission. edit. Shigella is transmitted through the fecal-oral route of individuals infected with the disease, whether or not they are exhibiting symptoms.Missing:diagram| Show results with:diagram\n-Reference: [WIKI_3]: Fecal–oral route The fecal–oral route (also called the oral–fecal route or orofecal route) describes a particular route of transmission of a diseaseMissing:primary| Show results with:primary\n-Reference: [WIKI_4]: Small intestine The small intestine or small bowel is an organ in the gastrointestinal tract where most of the absorption of nutrients from food takes place.Missing:transmission| Show results with:transmission\n-Reference: [WIKI_5]: Escherichia coli Fecal–oral transmission is the major route through which pathogenic strains of the bacterium cause disease. This transmission method is occasionally ...\n-Reference: [WIKI_6]: Gastroenteritis Gastroenteritis, also known as infectious diarrhea, is an inflammation of the gastrointestinal tract including the stomach and intestine.Missing:routediagram\n-Reference: [WIKI_7]: Waterborne disease These diseases can be spread while bathing, washing, drinking water, or by eating food exposed to contaminated water.\n-Reference: [WIKI_8]: Pathogenic Escherichia coli gut flora, and fecal–oral transmission is the major route through which pathogenic strains of the bacterium cause disease. Cells are able to survive ...Missing:diagram| Show results with:diagram\n-Reference: [WIKI_9]: Foodborne illness Foodborne illness is any illness resulting from the contamination of food by pathogenic bacteria, viruses, or parasites, as well as prions and toxins such ...Missing:transmissionroutediagram\n-Reference: [WIKI_10]: Gastroenteritis Gastroenteritis, also known as infectious diarrhea, is an inflammation of the gastrointestinal tract including the stomach and intestine.Missing:routediagram\n\n",
+                    "full_data": {
+                        "short_answer": "Fecal–oral route diagram",
+                        "long_answer": "Reference: [WIKI_2], [WIKI_3]. Detailed explanation based on the information: WIKI_2 states that Shigella is transmitted through the fecal–oral route, while WIKI_3 describes the fecal–oral route. Thus, the best diagram to represent the primary transmission route of Shigella is one that illustrates the fecal–oral route."
+                    }
+                },
+                {
+                    "source": "crawl_wiki",
+                    "short_answer": "insufficient information",
+                    "long_answer": "No context",
+                    "retrieval_information": "",
+                    "full_data": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context"
+                    }
+                },
+                {
+                    "source": "crawl_ner_wiki",
+                    "short_answer": "insufficient information",
+                    "long_answer": "No context",
+                    "retrieval_information": "",
+                    "full_data": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context"
+                    }
+                },
+                {
+                    "source": "crawl_sparql_wikidata",
+                    "short_answer": "insufficient information",
+                    "long_answer": "No context",
+                    "retrieval_information": "",
+                    "full_data": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context"
+                    }
+                }
+            ]
+        },
+        "0": {
+            "0": {
+                "source_output": {
+                    "google": {
+                        "short_answer": "Diagram showing fecal–oral transmission",
+                        "long_answer": "Reference: [GG_4], [GG_5], [GG_7]. Detailed explanation based on the information: The context repeatedly notes that Shigella is primarily spread via the fecal–oral route, as indicated by the description of direct or indirect smear infection through contaminated hands and food, and its high infectivity at a low dose. These references imply that the most representative diagram would be one that illustrates person-to-person and fecal–oral transmission, which is best captured by the diagrams described in references GG_4, GG_5, and GG_7.",
+                        "retrieval_information": "-Reference: [GG_1]: Shows the flow chart of children with Shigella Download scientific diagram | Shows the flow chart of children with Shigella from publication: Sensitivity and predictive value of dysentery in diagnosing ...\n-Reference: [GG_2]: A fractional order model for the transmission dynamics of shigellosis by S Edward · 2024 · Cited by 15 — Shigellosis is a gastrointestinal infectious illness attributed to the presence of Shigella bacteria. The bacterial strains under consideration ...\n-Reference: [GG_3]: Physical map of Shigella atypical class 1 integron and locations of... Download scientific diagram | Physical map of Shigella atypical class 1 integron and locations of blaOXA-30 and aadA genes. from publication: Shigella: ...\n-Reference: [GG_4]: Microbiology & infectious diseases - Shigella 7 Jan 2026 — Gram negative bacilli easily spread via fecal-oral transmission and highly infectious due to low infectious dose · Shigellosis typically presents ...\n-Reference: [GG_5]: Shigella 14 Aug 2025 — Transmission usually occurs through direct or indirect smear infection via contaminated hands. The infection can spread indirectly via food, ...\n-Reference: [GG_6]: Cellular Aspects of Shigella Pathogenesis: Focus on the ... by SA Killackey · 2016 · Cited by 132 — Shigella infection can occur by the fecal-oral route of transmission, person-to-person contact or ingestion of contaminated food or water. There are four ...\n-Reference: [GG_7]: Molecular Mechanisms of Shigella Pathogenesis; Recent Advances by B Pakbin · 2023 · Cited by 70 — Four species of Shigella are widely transmitted among humans and foods via the faecal–oral route [5]. Shigella strains have been classified as ...\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Diagram showing fecal–oral transmission",
+                                "long_answer": "Reference: [GG_4], [GG_5], [GG_7]. Detailed explanation based on the information: The context repeatedly notes that Shigella is primarily spread via the fecal–oral route, as indicated by the description of direct or indirect smear infection through contaminated hands and food, and its high infectivity at a low dose. These references imply that the most representative diagram would be one that illustrates person-to-person and fecal–oral transmission, which is best captured by the diagrams described in references GG_4, GG_5, and GG_7.",
+                                "retrieval_information": "-Reference: [GG_1]: Shows the flow chart of children with Shigella Download scientific diagram | Shows the flow chart of children with Shigella from publication: Sensitivity and predictive value of dysentery in diagnosing ...\n-Reference: [GG_2]: A fractional order model for the transmission dynamics of shigellosis by S Edward · 2024 · Cited by 15 — Shigellosis is a gastrointestinal infectious illness attributed to the presence of Shigella bacteria. The bacterial strains under consideration ...\n-Reference: [GG_3]: Physical map of Shigella atypical class 1 integron and locations of... Download scientific diagram | Physical map of Shigella atypical class 1 integron and locations of blaOXA-30 and aadA genes. from publication: Shigella: ...\n-Reference: [GG_4]: Microbiology & infectious diseases - Shigella 7 Jan 2026 — Gram negative bacilli easily spread via fecal-oral transmission and highly infectious due to low infectious dose · Shigellosis typically presents ...\n-Reference: [GG_5]: Shigella 14 Aug 2025 — Transmission usually occurs through direct or indirect smear infection via contaminated hands. The infection can spread indirectly via food, ...\n-Reference: [GG_6]: Cellular Aspects of Shigella Pathogenesis: Focus on the ... by SA Killackey · 2016 · Cited by 132 — Shigella infection can occur by the fecal-oral route of transmission, person-to-person contact or ingestion of contaminated food or water. There are four ...\n-Reference: [GG_7]: Molecular Mechanisms of Shigella Pathogenesis; Recent Advances by B Pakbin · 2023 · Cited by 70 — Four species of Shigella are widely transmitted among humans and foods via the faecal–oral route [5]. Shigella strains have been classified as ...\n\n",
+                                "full_data": {
+                                    "short_answer": "Diagram showing fecal–oral transmission",
+                                    "long_answer": "Reference: [GG_4], [GG_5], [GG_7]. Detailed explanation based on the information: The context repeatedly notes that Shigella is primarily spread via the fecal–oral route, as indicated by the description of direct or indirect smear infection through contaminated hands and food, and its high infectivity at a low dose. These references imply that the most representative diagram would be one that illustrates person-to-person and fecal–oral transmission, which is best captured by the diagrams described in references GG_4, GG_5, and GG_7."
+                                }
+                            }
+                        ]
+                    },
+                    "wiki": {
+                        "short_answer": "Fecal–oral route diagram",
+                        "long_answer": "Reference: [WIKI_2], [WIKI_3]. Detailed explanation based on the information: WIKI_2 states that Shigella is transmitted through the fecal–oral route, while WIKI_3 describes the fecal–oral route. Thus, the best diagram to represent the primary transmission route of Shigella is one that illustrates the fecal–oral route.",
+                        "retrieval_information": "-Reference: [WIKI_1]: Shigella Shigella is a genus of bacteria that is Gram-negative, facultatively anaerobic, non–spore-forming, nonmotile, rod-shaped, and is genetically nested within ...Missing:transmissionroute\n-Reference: [WIKI_2]: Shigellosis Transmission. edit. Shigella is transmitted through the fecal-oral route of individuals infected with the disease, whether or not they are exhibiting symptoms.Missing:diagram| Show results with:diagram\n-Reference: [WIKI_3]: Fecal–oral route The fecal–oral route (also called the oral–fecal route or orofecal route) describes a particular route of transmission of a diseaseMissing:primary| Show results with:primary\n-Reference: [WIKI_4]: Small intestine The small intestine or small bowel is an organ in the gastrointestinal tract where most of the absorption of nutrients from food takes place.Missing:transmission| Show results with:transmission\n-Reference: [WIKI_5]: Escherichia coli Fecal–oral transmission is the major route through which pathogenic strains of the bacterium cause disease. This transmission method is occasionally ...\n-Reference: [WIKI_6]: Gastroenteritis Gastroenteritis, also known as infectious diarrhea, is an inflammation of the gastrointestinal tract including the stomach and intestine.Missing:routediagram\n-Reference: [WIKI_7]: Waterborne disease These diseases can be spread while bathing, washing, drinking water, or by eating food exposed to contaminated water.\n-Reference: [WIKI_8]: Pathogenic Escherichia coli gut flora, and fecal–oral transmission is the major route through which pathogenic strains of the bacterium cause disease. Cells are able to survive ...Missing:diagram| Show results with:diagram\n-Reference: [WIKI_9]: Foodborne illness Foodborne illness is any illness resulting from the contamination of food by pathogenic bacteria, viruses, or parasites, as well as prions and toxins such ...Missing:transmissionroutediagram\n-Reference: [WIKI_10]: Gastroenteritis Gastroenteritis, also known as infectious diarrhea, is an inflammation of the gastrointestinal tract including the stomach and intestine.Missing:routediagram\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Fecal–oral route diagram",
+                                "long_answer": "Reference: [WIKI_2], [WIKI_3]. Detailed explanation based on the information: WIKI_2 states that Shigella is transmitted through the fecal–oral route, while WIKI_3 describes the fecal–oral route. Thus, the best diagram to represent the primary transmission route of Shigella is one that illustrates the fecal–oral route.",
+                                "retrieval_information": "-Reference: [WIKI_1]: Shigella Shigella is a genus of bacteria that is Gram-negative, facultatively anaerobic, non–spore-forming, nonmotile, rod-shaped, and is genetically nested within ...Missing:transmissionroute\n-Reference: [WIKI_2]: Shigellosis Transmission. edit. Shigella is transmitted through the fecal-oral route of individuals infected with the disease, whether or not they are exhibiting symptoms.Missing:diagram| Show results with:diagram\n-Reference: [WIKI_3]: Fecal–oral route The fecal–oral route (also called the oral–fecal route or orofecal route) describes a particular route of transmission of a diseaseMissing:primary| Show results with:primary\n-Reference: [WIKI_4]: Small intestine The small intestine or small bowel is an organ in the gastrointestinal tract where most of the absorption of nutrients from food takes place.Missing:transmission| Show results with:transmission\n-Reference: [WIKI_5]: Escherichia coli Fecal–oral transmission is the major route through which pathogenic strains of the bacterium cause disease. This transmission method is occasionally ...\n-Reference: [WIKI_6]: Gastroenteritis Gastroenteritis, also known as infectious diarrhea, is an inflammation of the gastrointestinal tract including the stomach and intestine.Missing:routediagram\n-Reference: [WIKI_7]: Waterborne disease These diseases can be spread while bathing, washing, drinking water, or by eating food exposed to contaminated water.\n-Reference: [WIKI_8]: Pathogenic Escherichia coli gut flora, and fecal–oral transmission is the major route through which pathogenic strains of the bacterium cause disease. Cells are able to survive ...Missing:diagram| Show results with:diagram\n-Reference: [WIKI_9]: Foodborne illness Foodborne illness is any illness resulting from the contamination of food by pathogenic bacteria, viruses, or parasites, as well as prions and toxins such ...Missing:transmissionroutediagram\n-Reference: [WIKI_10]: Gastroenteritis Gastroenteritis, also known as infectious diarrhea, is an inflammation of the gastrointestinal tract including the stomach and intestine.Missing:routediagram\n\n",
+                                "full_data": {
+                                    "short_answer": "Fecal–oral route diagram",
+                                    "long_answer": "Reference: [WIKI_2], [WIKI_3]. Detailed explanation based on the information: WIKI_2 states that Shigella is transmitted through the fecal–oral route, while WIKI_3 describes the fecal–oral route. Thus, the best diagram to represent the primary transmission route of Shigella is one that illustrates the fecal–oral route."
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_ner_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_sparql_wikidata": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "question": "Which diagram best represents the primary transmission route of Shigella?",
+                "search_keyword": "Shigella primary transmission route diagram"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Reference: [GG_4], [GG_5], [GG_7]. Detailed explanation based on the information: The context repeatedly notes that Shigella is primarily spread via the fecal–oral route, as indicated by the description of direct or indirect smear infection through contaminated hands and food, and its high infectivity at a low dose. These references imply that the most representative diagram would be one that illustrates person-to-person and fecal–oral transmission, which is best captured by the diagrams described in references GG_4, GG_5, and GG_7.",
+        "short_answer": "Diagram showing fecal–oral transmission",
+        "retrieval_information": "-Reference: [GG_1]: Shows the flow chart of children with Shigella Download scientific diagram | Shows the flow chart of children with Shigella from publication: Sensitivity and predictive value of dysentery in diagnosing ...\n-Reference: [GG_2]: A fractional order model for the transmission dynamics of shigellosis by S Edward · 2024 · Cited by 15 — Shigellosis is a gastrointestinal infectious illness attributed to the presence of Shigella bacteria. The bacterial strains under consideration ...\n-Reference: [GG_3]: Physical map of Shigella atypical class 1 integron and locations of... Download scientific diagram | Physical map of Shigella atypical class 1 integron and locations of blaOXA-30 and aadA genes. from publication: Shigella: ...\n-Reference: [GG_4]: Microbiology & infectious diseases - Shigella 7 Jan 2026 — Gram negative bacilli easily spread via fecal-oral transmission and highly infectious due to low infectious dose · Shigellosis typically presents ...\n-Reference: [GG_5]: Shigella 14 Aug 2025 — Transmission usually occurs through direct or indirect smear infection via contaminated hands. The infection can spread indirectly via food, ...\n-Reference: [GG_6]: Cellular Aspects of Shigella Pathogenesis: Focus on the ... by SA Killackey · 2016 · Cited by 132 — Shigella infection can occur by the fecal-oral route of transmission, person-to-person contact or ingestion of contaminated food or water. There are four ...\n-Reference: [GG_7]: Molecular Mechanisms of Shigella Pathogenesis; Recent Advances by B Pakbin · 2023 · Cited by 70 — Four species of Shigella are widely transmitted among humans and foods via the faecal–oral route [5]. Shigella strains have been classified as ...\n\n"
+    }
+}
