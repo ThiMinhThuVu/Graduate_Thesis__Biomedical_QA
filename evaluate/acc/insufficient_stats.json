@@ -1,0 +1,3445 @@
+{
+  "meta": {
+    "total_samples": 704,
+    "total_candidates": 3520,
+    "total_insufficient": 2031
+  },
+  "total_insufficient_by_source": {
+    "google": 113,
+    "wiki": 349,
+    "crawl_wiki": 663,
+    "crawl_ner_wiki": 299,
+    "crawl_sparql_wikidata": 607
+  },
+  "detail_by_question": {
+    "100223": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "100860": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "102429": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "103768": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "106578": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "108902": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "110195": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "110394": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "114428": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "117785": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "117978": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "118785": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "118939": [
+      "crawl_sparql_wikidata"
+    ],
+    "118949": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "120453": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "125994": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "126941": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "129442": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "131236": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "131415": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "132019": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "132747": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "134630": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "136660": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "137247": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "139280": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "139364": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "139521": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "141316": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "141686": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "142759": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "143441": [
+      "google",
+      "wiki",
+      "wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "143907": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "144821": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "145230": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "147361": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "148826": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "149319": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "149439": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "149454": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "150011": [
+      "crawl_wiki"
+    ],
+    "150243": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "151378": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "151462": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "151952": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "152455": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "152701": [
+      "google",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "153240": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "154301": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "154580": [
+      "wiki",
+      "wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "155398": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "157149": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "157829": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "162538": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "165936": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "166341": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "167352": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "167837": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "170022": [
+      "crawl_wiki"
+    ],
+    "170150": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "170420": [
+      "crawl_wiki"
+    ],
+    "170431": [
+      "google",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "170557": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "170561": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "170603": [
+      "crawl_wiki"
+    ],
+    "171046": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "176281": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "178064": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "180573": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "182169": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "182905": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "184466": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "186082": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "186159": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "187696": [
+      "crawl_wiki"
+    ],
+    "188198": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "188963": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "189171": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "191063": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "191338": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "192672": [
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "194351": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "195446": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "199357": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "201807": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "203782": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "204604": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "204623": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "205242": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "205314": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "206657": [
+      "crawl_wiki"
+    ],
+    "207452": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "212619": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "213329": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "214705": [
+      "google",
+      "google",
+      "google",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "217353": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "217889": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "218487": [
+      "crawl_wiki"
+    ],
+    "218896": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "220313": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "221309": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "222137": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "223602": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "224062": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "224427": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "225638": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "227907": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "228887": [
+      "crawl_wiki"
+    ],
+    "229400": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "230703": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "232559": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "233227": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "234430": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "236369": [
+      "crawl_wiki"
+    ],
+    "237388": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "237915": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "238212": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "240486": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "240972": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "241841": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "244100": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "244210": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "244933": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "246741": [
+      "google",
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "247758": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "248374": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "252465": [
+      "crawl_wiki"
+    ],
+    "252895": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "253003": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "253662": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "253734": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "254228": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "254319": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "256489": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "256580": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "256957": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "259072": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "259365": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "260402": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "260422": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "264282": [
+      "crawl_wiki"
+    ],
+    "267930": [
+      "crawl_wiki"
+    ],
+    "268734": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "271547": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "273077": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "275151": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "276421": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "278085": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "280426": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "280733": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "281839": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "281973": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "284028": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "284693": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "284704": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "285796": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "287123": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "287953": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "290537": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "290551": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "292484": [
+      "crawl_wiki"
+    ],
+    "293076": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "295356": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "295910": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "298228": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "304370": [
+      "google",
+      "crawl_wiki"
+    ],
+    "308498": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "312123": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "313741": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "314843": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "318011": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "318755": [
+      "crawl_wiki"
+    ],
+    "320479": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "321794": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "324488": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "324754": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "327315": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "329502": [
+      "crawl_wiki"
+    ],
+    "330697": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "331013": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "334677": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "335018": [
+      "crawl_wiki"
+    ],
+    "335637": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "336682": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "336838": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "339683": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "343388": [
+      "crawl_sparql_wikidata"
+    ],
+    "348471": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "351044": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "351187": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "351583": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "351765": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "352067": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "353709": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "353993": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "355170": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "356129": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "356637": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "361204": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "362433": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "363368": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "364309": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "366445": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "367313": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "373907": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "378607": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "378797": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "384879": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "393178": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "395068": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "396243": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "398262": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "398767": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "400640": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "401525": [
+      "crawl_wiki"
+    ],
+    "402244": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "403013": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "405530": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "405579": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "406222": [
+      "crawl_sparql_wikidata"
+    ],
+    "406747": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "408733": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "408853": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "410582": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "410810": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "412086": [
+      "crawl_sparql_wikidata"
+    ],
+    "412427": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "414459": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "415618": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "415751": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "419700": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "420185": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "421078": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "421218": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "421230": [
+      "crawl_wiki"
+    ],
+    "422230": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "422677": [
+      "crawl_wiki"
+    ],
+    "423479": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "424544": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "427523": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "430378": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "437264": [
+      "google",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "437386": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "437476": [
+      "google",
+      "wiki",
+      "crawl_wiki"
+    ],
+    "438711": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "439326": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "442105": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "442504": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "442535": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "446178": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "446401": [
+      "crawl_sparql_wikidata"
+    ],
+    "447998": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "448599": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "449820": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "450226": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "450290": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "453449": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "453784": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "454301": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "456140": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "456442": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "457983": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "458288": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "459602": [
+      "crawl_wiki"
+    ],
+    "459609": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "466063": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "467635": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "468323": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "469559": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "472843": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "473053": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "475130": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "476622": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "477818": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "479239": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "479398": [
+      "google",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "480829": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "482281": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "483615": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "483894": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "485815": [
+      "crawl_wiki"
+    ],
+    "486804": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "490038": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "490477": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "490774": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "491322": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "491820": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "493183": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "494387": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "496183": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "498019": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "498978": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "502680": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "504058": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "505048": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "506698": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "506722": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "507683": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "507964": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "512370": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "514187": [
+      "crawl_wiki"
+    ],
+    "514385": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "515320": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "515493": [
+      "crawl_wiki"
+    ],
+    "515597": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "515614": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "516385": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "518487": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "521240": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "522257": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "522424": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "524170": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "524762": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "525642": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "527168": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "527304": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "527725": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "528434": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "528519": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "529354": [
+      "crawl_wiki"
+    ],
+    "532019": [
+      "google",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "533485": [
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "533595": [
+      "crawl_wiki"
+    ],
+    "535718": [
+      "crawl_wiki"
+    ],
+    "536132": [
+      "crawl_wiki"
+    ],
+    "536294": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "539437": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "542113": [
+      "crawl_wiki"
+    ],
+    "545632": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "545881": [
+      "google",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "546137": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "547554": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "547846": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "548483": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "551712": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "551819": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "556401": [
+      "crawl_wiki"
+    ],
+    "556909": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "556973": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "558304": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "559411": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "559664": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "560227": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "561736": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "561990": [
+      "crawl_wiki"
+    ],
+    "564362": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "568641": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "570726": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "571170": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "571485": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "571688": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "575067": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "575712": [
+      "crawl_wiki"
+    ],
+    "576476": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "576547": [
+      "crawl_wiki"
+    ],
+    "578911": [
+      "crawl_sparql_wikidata"
+    ],
+    "579497": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "581924": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "581932": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "582369": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "583155": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "583649": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "583819": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "585280": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "585995": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "586813": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "588303": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "590744": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "593091": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "593161": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "594097": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "596265": [
+      "crawl_sparql_wikidata"
+    ],
+    "597726": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "597964": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "599931": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "599997": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "600200": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "601508": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "602046": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "602194": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "607348": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "610944": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "614094": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "614145": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "614616": [
+      "google",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "618369": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "619326": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "619420": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "622659": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "623637": [
+      "google",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "623852": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "627609": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "627918": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "631767": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "632138": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "632188": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "634256": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "636294": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "637872": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "638322": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "643490": [
+      "google",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "646794": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "647379": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "648481": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "649859": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "649969": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "651642": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "654558": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "654842": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "655317": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "655589": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "655782": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "656117": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "656674": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "656727": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "657453": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "659460": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "660741": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "660933": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "661293": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "662146": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "662971": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "663367": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "663513": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "665185": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "665260": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "666402": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "666699": [
+      "crawl_wiki"
+    ],
+    "666700": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "666822": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "667129": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "667770": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "668585": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "669126": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "669273": [
+      "wiki",
+      "wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "672653": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "674555": [
+      "crawl_wiki"
+    ],
+    "678399": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "679190": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "679390": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "680429": [
+      "crawl_wiki"
+    ],
+    "680746": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "681755": [
+      "google",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "682446": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "682791": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "683309": [
+      "google",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "684640": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "685701": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "686876": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "686893": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "687399": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "687426": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "687489": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "688754": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "689063": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "694212": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "695539": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "697601": [
+      "crawl_wiki"
+    ],
+    "698744": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "699828": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "700200": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "702504": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "703052": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "705666": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "706424": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "707707": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "709773": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "713935": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "714294": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "715914": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "716881": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "717130": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "722142": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "722273": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "722697": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "722978": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "723379": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "725163": [
+      "crawl_wiki"
+    ],
+    "726206": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "728397": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "728614": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "730123": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "731031": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "734312": [
+      "crawl_wiki"
+    ],
+    "734848": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "736626": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "739348": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "739638": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "740975": [
+      "crawl_wiki"
+    ],
+    "742501": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "743668": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "744208": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "745330": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "746202": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "747234": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "747397": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "749466": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "753323": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "753451": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "753789": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "754736": [
+      "crawl_wiki"
+    ],
+    "757070": [
+      "crawl_wiki"
+    ],
+    "757673": [
+      "crawl_wiki"
+    ],
+    "759664": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "760458": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "762048": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "763753": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "768787": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "770213": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "771022": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "771231": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "771463": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "776758": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "776831": [
+      "crawl_wiki"
+    ],
+    "778748": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "778929": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "779207": [
+      "google",
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "779986": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "782966": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "784532": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "788056": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "788541": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "789625": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "792997": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "793771": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "793861": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "794196": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "795535": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "795804": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "795817": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "796223": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "796776": [
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "796862": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "797118": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "797581": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "799254": [
+      "google",
+      "google",
+      "google",
+      "google",
+      "crawl_sparql_wikidata"
+    ],
+    "799512": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "801430": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "803330": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "803556": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "803647": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "804444": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "805703": [
+      "google",
+      "google",
+      "google",
+      "crawl_sparql_wikidata"
+    ],
+    "805719": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "806815": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "806942": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "808372": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "808942": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "809641": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "814637": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "814670": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "815861": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "817297": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "819301": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "819839": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "820147": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "821517": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "822308": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "824992": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "826431": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "827382": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "828118": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "829022": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "829235": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "829711": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "829744": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "829837": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "830311": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "830404": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "831634": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "832203": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "834351": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "836831": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "837230": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "838174": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "844836": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "845857": [
+      "google",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "846660": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "847295": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "847556": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "848910": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "849629": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "851254": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "852076": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "852613": [
+      "crawl_sparql_wikidata"
+    ],
+    "853329": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "854124": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "854304": [
+      "crawl_wiki"
+    ],
+    "855148": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "857118": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "857333": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "858693": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "859400": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "859459": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "859993": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "860736": [
+      "crawl_wiki"
+    ],
+    "863701": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "865090": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "865929": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "866039": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "867818": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "874494": [
+      "crawl_sparql_wikidata"
+    ],
+    "875275": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "877413": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "879116": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "879885": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "882911": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "883181": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "885704": [
+      "google",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "888878": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "892125": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "892309": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "893226": [
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "894645": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "897493": [
+      "crawl_wiki"
+    ],
+    "899679": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "900133": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "901282": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "902852": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "906796": [
+      "crawl_wiki"
+    ],
+    "907498": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki"
+    ],
+    "908283": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "910085": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "910403": [
+      "crawl_wiki"
+    ],
+    "910648": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "912403": [
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "913338": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "915811": [
+      "crawl_wiki"
+    ],
+    "916878": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "917636": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "918710": [
+      "crawl_wiki"
+    ],
+    "920528": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "921251": [
+      "crawl_sparql_wikidata"
+    ],
+    "921534": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "921794": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "924334": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "924584": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "925519": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "928221": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "929075": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "931338": [
+      "google",
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "932511": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "933016": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "933211": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "935298": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "935787": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "936226": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "936698": [
+      "crawl_sparql_wikidata"
+    ],
+    "937463": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "942304": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "945783": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "947220": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "947752": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "948373": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "949678": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "950879": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "951000": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "951432": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "951532": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "951796": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "952612": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "954297": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "954659": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "954923": [
+      "google",
+      "wiki",
+      "wiki",
+      "wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "955705": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "960525": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "960617": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "961487": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "963020": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "964710": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "966492": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "969034": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "970294": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "970726": [
+      "crawl_wiki"
+    ],
+    "971405": [
+      "crawl_wiki"
+    ],
+    "974208": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "974607": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "974988": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "977418": [
+      "wiki",
+      "crawl_wiki"
+    ],
+    "977705": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "979905": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "982027": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "983488": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "984694": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "986088": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "988010": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "988122": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "988326": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "988327": [
+      "crawl_wiki"
+    ],
+    "988439": [
+      "crawl_wiki"
+    ],
+    "990890": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "991013": [
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "992994": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "993780": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "994467": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "994776": [
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "995113": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "998849": [
+      "google",
+      "wiki",
+      "crawl_wiki",
+      "crawl_sparql_wikidata"
+    ],
+    "998920": [
+      "crawl_wiki",
+      "crawl_ner_wiki",
+      "crawl_sparql_wikidata"
+    ]
+  }
+}

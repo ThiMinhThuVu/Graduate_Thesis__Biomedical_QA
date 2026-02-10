@@ -11,7 +11,6 @@ from sentence_transformers import SentenceTransformer
 from sentence_transformers.models import StaticEmbedding
 from transformers import AutoModel
 import shutil
-from copy import deepcopy
 
 global hash_id_cache
 global hash_id_crawl_wiki_cache
@@ -83,11 +82,8 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
     print("[ID]: ", sample_id)
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
+    cache_ner_filter[sample_id] = {}
     
-    if os.path.exists(file_all_ans):
-        print(f"All answers file already exists: {file_all_ans}")
-        return
-        
     if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
         original_question = settings['chrunk_mapping'][sample_id]
     else:
@@ -109,32 +105,38 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
         else: #Other
             focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]                              
 
-    dict_ans = {
-        "QIDX": sample_id,
-        "original_question": original_question,
-        "type_q": sample['type_q'],
-        "focus_spacy_based_entity_label": focus_spacy_based_entity_label,
-        "target_answer_type": target_ans_type
-    }
+    if os.path.exists(file_all_ans):
+        dict_ans = load_json(file_all_ans)
+    else:
+        dict_ans = {
+            "QIDX": sample_id,
+            "original_question": original_question,
+            "type_q": sample['type_q'],
+            "focus_spacy_based_entity_label": focus_spacy_based_entity_label,
+            "target_answer_type": target_ans_type,
+            "key_entities": list_ner_q
+        }
+
     all_context = ""
         
     for q_i, question in enumerate(list_qi, start=1):
         qi_number = f"/{q_i}"
+        q_i = str(q_i)
         paths = setup_paths(settings, sample_id, qi_number)
-        ans_filepath = paths['qi_answer']
-        dict_ans[q_i] = {
-            "final_qi": {
-                "question": "",
-                "search_keyword": "",
-                "key_entity": "",
-                "short_answer": "",
-                "long_answer": "",
-                "retrieval_information": "",
-                "prefix": "",
-                "name": "",
-                "suffix": ""
+
+        if q_i not in dict_ans:
+            dict_ans[q_i] = {
+                "final_qi": {
+                    "question": "",
+                    "search_keyword": "",
+                    "short_answer": "",
+                    "long_answer": "",
+                    "retrieval_information": "",
+                    "prefix": "",
+                    "name": "",
+                    "suffix": ""
+                }
             }
-        }
     
         path_output, n_path = decompose_question_sequential(question, sample_id, paths['decomp'], is_seq=is_seq, 
                             dataset=dataset, type_q=type_q, using_decomp_new=using_decomp_new, model="gpt-4o-mini")
@@ -142,41 +144,67 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
         for path_i in range(n_path):
             path_i = str(path_i)
             subq_output = path_output[path_i]
-            dict_ans[q_i][path_i] = {}
-            qi_final_answers = {}
-
-            for module in [[True, False], [False, True]]:
+            
+            if path_i not in dict_ans[q_i]:
+                dict_ans[q_i][path_i] = {}
+                print(f"dict_ans[q_i][path_i]: {dict_ans[q_i][path_i]}")
+             
+            select_source_mcq = ["google", "wiki", "crawl_wiki", "crawl_ner_wiki", "crawl_sparql_wikidata"]
+            for module in [[True, False, False, False, False], [False, True, False, False, False], [False, False, True, False, False], 
+                           [False, False, False, True, False], [False, False, False, False, True]]:
+            # for module in [[False, False, True, False, False]]:
                 settings['get_gg'] = module[0]
-                settings['get_wiki'] = module[1]
+                settings['get_wiki'] = module[1]    
+                settings['get_crawl_wiki'] = module[2]
+                settings['get_ner_wiki'] = module[3]
+                settings['get_sparql_context'] = module[4]
+
                 if settings['get_gg']:
                     source = 'google'
                 elif settings['get_wiki']:
                     source = 'wiki'
-
+                elif settings['get_crawl_wiki']:
+                    source = 'crawl_wiki'
+                elif settings['get_ner_wiki']:
+                    source = 'crawl_ner_wiki'
+                elif settings['get_sparql_context']:
+                    source = 'crawl_sparql_wikidata'
+                    
                 short_ans = ""
-                qi_final_answers[path_i] = {}
                 
+                source_have_run = False
                 for step, item in subq_output.items():
                     step = str(step)
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword'] 
                     search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
                     
+                    if dataset == "wiki":
+                        focus_spacy_based_entity_label = item.get('focus_spacy_based_entity_label', None)
+                        target_ans_type = item.get('target_answer_type', None)
+                    
                     if step not in dict_ans[q_i][path_i]:
                         dict_ans[q_i][path_i][step] = {} 
-                        
+                        print(f"dict_ans[q_i][path_i][step]: {dict_ans[q_i][path_i][step]}")
+
                     if "source_output" not in dict_ans[q_i][path_i][step]:
                         dict_ans[q_i][path_i][step]["source_output"] = {}
+                        print(f"dict_ans[q_i][path_i][step]['source_output']: {dict_ans[q_i][path_i][step]['source_output']}")
 
                     if source not in dict_ans[q_i][path_i][step]["source_output"]:
                         dict_ans[q_i][path_i][step]["source_output"][source] = {}
+                    else:
+                        source_have_run = True
+                        continue
 
                     if step == "0":
                         key_entities = item['key_entity']   
                     else:
                         key_entities = [short_ans]
+                        if short_ans.lower() not in list_ner_q:
+                            list_ner_q.append(short_ans.lower())
                 
-                    print(f"\n--- Processing Step {step}: {subquestion} ---")
+                    print(f"\nSource [{source}] Processing Step {step}: {subquestion} ---")
                     
                     # Multiple Choice
                     candidates = []
@@ -185,7 +213,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     all_snippet, current_retrieval = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings,
                                                                 target_ans_type, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
                     
-                    cache_ner_filter[sample_id] = current_retrieval
+                    cache_ner_filter[sample_id][source] = current_retrieval
                     # continue
                     if has_extract_ner: # Only extract snippet                          
                         information_to_extract = search_kw_subq_retrieval + " " + all_snippet
@@ -196,6 +224,16 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                             
                     while idx_del < settings['max_candidates']:
                         if current_retrieval == "" or current_retrieval == []:
+                            candidates.append({
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": current_retrieval,
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            })
+                            
                             break                                                
                             
                         # norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
@@ -300,13 +338,12 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         name_ans = answer_generation['name']
                         suffix_ans = answer_generation['suffix']
 
-                    qi_final_answers[path_i][step] = answer_generation
+                    # qi_final_answers[path_i][step] = answer_generation
                 
                     print(f"Short Answer for Step {step}: {short_ans}")
 
                     dict_ans[q_i][path_i][step]["question"] = subquestion
-                    dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq
-                    dict_ans[q_i][path_i][step]["key_entity"] = key_entities                    
+                    dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq            
                     dict_ans[q_i][path_i][step]["source_output"][source]["short_answer"] = short_ans
                     dict_ans[q_i][path_i][step]["source_output"][source]["long_answer"] = long_ans
                     dict_ans[q_i][path_i][step]["source_output"][source]["retrieval_information"] = retrieval_information
@@ -318,24 +355,33 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
 
                 # continue
-                # Lấy output step cuối cùng của 1 path duy nhất của qi:
-                # if short_ans.lower() != "insufficient information":
+               
+                if source_have_run:
+                    continue
+                
+                # GET ALL SOURCE - MCQ
+                # THÊM list source muốn lấy: select_source_mcq = ["google", "wiki"]
                 qi_candidates = []
                 for qi_source in dict_ans[q_i][path_i][step]["source_output"]:
-                    cand = {
-                        "source": qi_source,
-                        "short_answer": dict_ans[q_i][path_i][step]["source_output"][qi_source]['short_answer'],
-                        "long_answer": dict_ans[q_i][path_i][step]["source_output"][qi_source]['long_answer'],
-                        "retrieval_information": dict_ans[q_i][path_i][step]["source_output"][qi_source]["retrieval_information"],
-                        "full_data": {
-                            "short_answer": dict_ans[q_i][path_i][step]["source_output"][qi_source]['short_answer'],
-                            "long_answer": dict_ans[q_i][path_i][step]["source_output"][qi_source]['long_answer']
+                    if qi_source not in select_source_mcq:
+                        continue
+                    
+                    cand_short_ans = dict_ans[q_i][path_i][step]["source_output"][qi_source]['short_answer']
+                    if cand_short_ans != "insufficient information":
+                        cand = {
+                            "source": qi_source,
+                            "short_answer": cand_short_ans,
+                            "long_answer": dict_ans[q_i][path_i][step]["source_output"][qi_source]['long_answer'],
+                            "retrieval_information": dict_ans[q_i][path_i][step]["source_output"][qi_source]["retrieval_information"],
+                            "full_data": {
+                                "short_answer": dict_ans[q_i][path_i][step]["source_output"][qi_source]['short_answer'],
+                                "long_answer": dict_ans[q_i][path_i][step]["source_output"][qi_source]['long_answer']
+                            }
                         }
-                    }
                     
                     qi_candidates.append(cand)
-
-                # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES ---
+                
+                # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES Q_i---
                 if len(qi_candidates) > 1:
                     # Build context cho Multiple Choice
                     mc_options_text = ""
@@ -346,7 +392,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         selected_label = gen_ans_multiple_choice(question, mc_options_text, dataset=dataset, model=model_mcq)
                         
                         idx_selected = ord(selected_label[0].upper()) - ord('A')
-                        if 0 <= idx_selected < len(candidates):
+                        if 0 <= idx_selected < len(qi_candidates):
                             final_candidate = qi_candidates[idx_selected]
                             answer_generation = final_candidate["full_data"]
                             retrieval_information = final_candidate["retrieval_information"]
@@ -356,14 +402,12 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     except Exception as e:
                         print(f"Error in MC selection: {e}")
                         answer_generation = qi_candidates[0]["full_data"]
-                        retrieval_information = qi_candidates[0]["retrieval_information"]
-                        
+                        retrieval_information = qi_candidates[0]["retrieval_information"]                        
                 elif len(qi_candidates) == 1:
                     answer_generation = qi_candidates[0]["full_data"]
                     retrieval_information = qi_candidates[0]["retrieval_information"]
                 else:
-                    # Trường hợp không tìm thấy gì (insufficient)
-                    answer_generation = {"short_answer": "insufficient information", "long_answer": "No snippets found."}
+                    answer_generation = {"short_answer": "insufficient information", "long_answer": "No evidence found."}
                     retrieval_information = []         
 
                 short_ans = answer_generation["short_answer"]
@@ -371,14 +415,11 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
 
                 dict_ans[q_i]['final_qi']["question"] = question
                 dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
-                dict_ans[q_i]['final_qi']["key_entity"] = key_entities
-                dict_ans[q_i]['final_qi']["focus_spacy_based_entity_label"] = focus_spacy_based_entity_label
-                dict_ans[q_i]['final_qi']["target_answer_type"] = target_ans_type
                 dict_ans[q_i]['final_qi']["short_answer"] = short_ans
                 dict_ans[q_i]['final_qi']["long_answer"] = long_ans
                 dict_ans[q_i]['final_qi']["candidate"] = qi_candidates
                 dict_ans[q_i]['final_qi']["retrieval_information"] = retrieval_information
-                
+                save_json(dict_ans, file_all_ans)    
                 # if type_q == "inference":
                 #     dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
                 #     dict_ans[q_i]['final_qi']['name'] = name_ans
@@ -388,9 +429,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         # break
         # continue
         all_context += f"{q_i}.{question} - {dict_ans[q_i]['final_qi']['short_answer']}, {dict_ans[q_i]['final_qi']['long_answer']}\n\n"
-        save_json(qi_final_answers, ans_filepath)
-        print(f"\nFinal answer saved to {ans_filepath}")
-    
+         
     # return
     
     if n_qi > 1:
@@ -402,30 +441,25 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
         print(f"\nSaved to {file_all_ans}")
     else:
         dict_ans['final_answer'] = {
-            'long_answer': dict_ans[1]['final_qi']['long_answer'],
-            'short_answer': dict_ans[1]['final_qi']['short_answer'],
-            'retrieval_information': dict_ans[1]['final_qi']['retrieval_information']
+            'long_answer': dict_ans["1"]['final_qi']['long_answer'],
+            'short_answer': dict_ans["1"]['final_qi']['short_answer'],
+            'retrieval_information': dict_ans["1"]['final_qi']['retrieval_information']
         }
         if type_q == "inference":
-            dict_ans['final_answer']['prefix'] = dict_ans[1]['final_qi']['prefix']
-            dict_ans['final_answer']['name'] = dict_ans[1]['final_qi']['name']
-            dict_ans['final_answer']['suffix'] = dict_ans[1]['final_qi']['suffix']
+            dict_ans['final_answer']['prefix'] = dict_ans["1"]['final_qi']['prefix']
+            dict_ans['final_answer']['name'] = dict_ans["1"]['final_qi']['name']
+            dict_ans['final_answer']['suffix'] = dict_ans["1"]['final_qi']['suffix']
             
         save_json(dict_ans, file_all_ans)
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
-        print(f"\nSaved to {file_all_ans}")
-    
+        print(f"\nSaved to {file_all_ans}")    
 
 if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)
     
-    # for arr in [[True, True, False, False], [False, False, True, False], [False, False, False, True]]:
-    #     configs[]
-        
     #edit config
-    # threads = [0, 500]
-    threads = configs['run']['threads'] 
+    threads = [0, 500] # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
@@ -485,7 +519,7 @@ if __name__ == "__main__":
     model_mcq_name = "o3-mini" #"gpt-4.1-mini" #o3-mini
     mcq_add_no_ans = False # True #False
         
-    meta_ner = load_json(r'data/cache/meta_entity_v2.json')
+    meta_ner = load_json(r'data/metadata_entity.json')
     
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
@@ -495,8 +529,8 @@ if __name__ == "__main__":
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
         
-        if qidx not in ['638322', '665260', '977705', '979995']: #'100860'
-            continue
+        # if qidx not in ['638322', '665260', '977705', '979995']: #'100860'
+        #     continue
        
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'
@@ -509,7 +543,7 @@ if __name__ == "__main__":
         #CONFIG    
         if type_q != "direct":
             continue
-
+              
         sample['type_q'] = type_q        
         if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False

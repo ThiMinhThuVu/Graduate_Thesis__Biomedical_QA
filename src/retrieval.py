@@ -622,7 +622,6 @@ def crawl_wiki_page_raw(
 
 def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings,target_answer_type,
                       embedding_model, hash_id_cache, hash_id_crawl_wiki_cache):    
-    # key_entities: List
     retrieval_information = ""
     retrieval_topk = settings['retrieval_topk']
     max_results_gg = retrieval_topk['max_results_search_api_gg']
@@ -762,12 +761,13 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
         # Chọn k_percent key_entity có cosine cao nhất
         if desc_sims:
             desc_sims_sorted = sorted(desc_sims, key=lambda x: x["cosine"], reverse=True)
-            if len(key_entities) > 5:
-                n_select = max(1, math.ceil(len(desc_sims_sorted) * retrieval_topk['k_percent']))
-                top_entities = desc_sims_sorted[:n_select]
-            else:                    
-                top_entities = desc_sims_sorted
-                
+            #THUVTM
+            # if len(list_ner_q) > 5:
+            #     n_select = max(1, math.ceil(len(desc_sims_sorted) * retrieval_topk['k_percent']))
+            #     top_entities = desc_sims_sorted[:n_select]
+            # else:                    
+            #     top_entities = desc_sims_sorted
+            top_entities = desc_sims_sorted
             for ent in top_entities:
                 if ent["context"] and ent["context"].strip():
                     sparql_context += f"\n{ent['key_entity']}: {ent['context']}"
