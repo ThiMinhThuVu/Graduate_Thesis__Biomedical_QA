@@ -201,75 +201,65 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         dict_ans[q_i][path_i][step]["source_output"] = {}
                         # print(f"dict_ans[q_i][path_i][step]['source_output']: {dict_ans[q_i][path_i][step]['source_output']}")
 
-                    if source not in dict_ans[q_i][path_i][step]["source_output"]:
-                        dict_ans[q_i][path_i][step]["source_output"][source] = {}
-                    else:
-                        source_have_run = True
-                        if source != "crawl_wiki":                            
-                            cache_source_have_run.append(source)
-                            continue
-
-                    
-                    print(f"\nSource [{source}] Processing Step {step}: {subquestion} ---")
-                    
-                    # Multiple Choice
-                    candidates = []
-                    idx_del = 0
-                    
                     all_snippet, current_retrieval = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings,
                                                                 target_ans_type, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
-                    
-                    cache_ner_filter[sample_id][source] = current_retrieval
-                    # continue
                     if has_extract_ner: # Only extract snippet                          
                         information_to_extract = search_kw_subq_retrieval + " " + all_snippet
                         extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, 
                                                     information_to_extract, focus_spacy_based_entity_label)                         
                     else:
                         extracted_entities = ""
+                        
+                        
+                    if source not in dict_ans[q_i][path_i][step]["source_output"]:
+                        dict_ans[q_i][path_i][step]["source_output"][source] = {}
+                        # Multiple Choice
+                        candidates = []
+                        idx_del = 0
+                    else:
+                        src_candidates = dict_ans[q_i][path_i][step]["source_output"][source]["candidate"]
+                        if  len(src_candidates) >= settings['max_candidates']:
+                            source_have_run = True
+                            continue
+                        else:
+                            # Multiple Choice
+                            candidates = src_candidates #lấy lại số choice hiện có
+                            idx_del = len(candidates)
                             
+                            # Xóa thông tin của step k để chạy step k+1
+                            pre_retrieval = candidates[-1]['retrieval_information'] # lấy thông tin của choice cuối cùng đã chạy
+                            pre_short_ans = candidates[-1]['short_answer']
+                            current_retrieval = remove_retrieve_evidence(pre_retrieval, pre_short_ans)
+                            if current_retrieval == pre_retrieval:
+                                continue
+                            
+                            for item in candidates:
+                                ans = item['short_answer']
+                                extracted_entities = remove_retrieve_evidence(extracted_entities, ans)
+                                               
+                    print(f"\nSource [{source}] Processing Step {step}: {subquestion} ---")
+                                                
                     while idx_del < settings['max_candidates']:
                         if current_retrieval == "" or current_retrieval == []:
-                            candidates.append({
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": current_retrieval,
-                                "full_data": {
+                            if len(candidates) == 0:                            
+                                candidates.append({
                                     "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            })
-                            
+                                    "long_answer": "No context",
+                                    "retrieval_information": current_retrieval,
+                                    "full_data": {
+                                        "short_answer": "insufficient information",
+                                        "long_answer": "No context"
+                                    }
+                                })
+                                                            
                             break                                                
                             
-                        # norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
-                        # raw_answer = generate_answer(subquestion, target_answer_type, current_retrieval, norm_rules, q_key_entity=key_entities, evidence_key_entity=extracted_entities, dataset=dataset, type_q=type_q)
-                        
-                        # không norm
+                 
                         normalized_answer = _generate_answer(subquestion, search_kw_subq_retrieval, extracted_entities, current_retrieval, dataset, type_q, target_ans_type,
                                                             using_target_type, using_gen_old, has_extract_ner)
                         current_short = normalized_answer['short_answer']
-                        print(f"[MCQ] short ans lần {idx_del}: ", current_short)
-                        # # Normalize if needed
-                        # if settings['normalize'] and norm_rules.get("needs_normalization", True):
-                        #     normalized_answer = normalize_answer_with_wikipedia(
-                        #         raw_answer,
-                        #         should_normalize=True
-                        #     )
-                        # else:
-                        #     normalized_answer = raw_answer.copy()
-                        #     normalized_answer["normalization"] = {
-                        #         "was_normalized": False,
-                        #         "skip_reason": "Normalization disabled or not needed"
-                        #     }
-                        # normalized_answer["metadata"] = {
-                        #     "rules_applied": norm_rules.get("primary_rule"),
-                        #     "normalized": settings['normalize'] and norm_rules.get("needs_normalization", True),
-                        # }
-                                                
-                        # current_short = normalized_answer["short_answer"]
-                        # print("Current answer: ", current_short)
-                        
+                        print(f"[MCQ] short ans lần {idx_del+1}: ", current_short)
+                     
                         # Kiểm tra nếu đáp án mới này đã tồn tại trong list candidates chưa
                         is_duplicate = any(c['short_answer'].lower().strip() == current_short.lower().strip() for c in candidates)
                         
@@ -361,14 +351,14 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
 
                 # continue
-                if source_have_run == "crawl_wiki":
-                    save_json(dict_ans, file_all_ans)
-                    print(file_all_ans)
+                save_json(dict_ans, file_all_ans)
+                print(file_all_ans)
 
                 if source_have_run:
                     continue
                 # save_json(dict_ans, file_all_ans)
-                return
+                
+                #Không chạy MCQ CHO ALL SOURCE nữa
                 # GET ALL SOURCE - MCQ
                 # THÊM list source muốn lấy: select_source_mcq = ["google", "wiki"]
                 qi_candidates = []
@@ -391,45 +381,45 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     
                         qi_candidates.append(cand)
                 
-                # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES Q_i---
-                if len(qi_candidates) > 1:
-                    # Build context cho Multiple Choice
-                    mc_options_text = ""
-                    for i, cand in enumerate(qi_candidates):
-                        label = chr(ord('A') + i)
-                        mc_options_text += f"{label}. {cand['short_answer']}\nReason: {cand['long_answer']}\n\n"
-                    try:
-                        selected_label = gen_ans_multiple_choice(question, mc_options_text, dataset=dataset, model=model_mcq)
+                # # --- CHỌN ĐÁP ÁN CUỐI CÙNG TỪ CÁC CANDIDATES Q_i---
+                # if len(qi_candidates) > 1:
+                #     # Build context cho Multiple Choice
+                #     mc_options_text = ""
+                #     for i, cand in enumerate(qi_candidates):
+                #         label = chr(ord('A') + i)
+                #         mc_options_text += f"{label}. {cand['short_answer']}\nReason: {cand['long_answer']}\n\n"
+                #     try:
+                #         selected_label = gen_ans_multiple_choice(question, mc_options_text, dataset=dataset, model=model_mcq)
                         
-                        idx_selected = ord(selected_label[0].upper()) - ord('A')
-                        if 0 <= idx_selected < len(qi_candidates):
-                            final_candidate = qi_candidates[idx_selected]
-                            answer_generation = final_candidate["full_data"]
-                            retrieval_information = final_candidate["retrieval_information"]
-                        else:
-                            answer_generation = qi_candidates[0]["full_data"]
-                            retrieval_information = qi_candidates[0]["retrieval_information"]
-                    except Exception as e:
-                        print(f"Error in MC selection: {e}")
-                        answer_generation = qi_candidates[0]["full_data"]
-                        retrieval_information = qi_candidates[0]["retrieval_information"]                        
-                elif len(qi_candidates) == 1:
-                    answer_generation = qi_candidates[0]["full_data"]
-                    retrieval_information = qi_candidates[0]["retrieval_information"]
-                else:
-                    answer_generation = {"short_answer": "insufficient information", "long_answer": "No evidence found."}
-                    retrieval_information = []         
+                #         idx_selected = ord(selected_label[0].upper()) - ord('A')
+                #         if 0 <= idx_selected < len(qi_candidates):
+                #             final_candidate = qi_candidates[idx_selected]
+                #             answer_generation = final_candidate["full_data"]
+                #             retrieval_information = final_candidate["retrieval_information"]
+                #         else:
+                #             answer_generation = qi_candidates[0]["full_data"]
+                #             retrieval_information = qi_candidates[0]["retrieval_information"]
+                #     except Exception as e:
+                #         print(f"Error in MC selection: {e}")
+                #         answer_generation = qi_candidates[0]["full_data"]
+                #         retrieval_information = qi_candidates[0]["retrieval_information"]                        
+                # elif len(qi_candidates) == 1:
+                #     answer_generation = qi_candidates[0]["full_data"]
+                #     retrieval_information = qi_candidates[0]["retrieval_information"]
+                # else:
+                #     answer_generation = {"short_answer": "insufficient information", "long_answer": "No evidence found."}
+                #     retrieval_information = []         
 
-                short_ans = answer_generation["short_answer"]
-                long_ans = answer_generation["long_answer"]
+                # short_ans = answer_generation["short_answer"]
+                # long_ans = answer_generation["long_answer"]
 
                 dict_ans[q_i]['final_qi']["question"] = question
                 dict_ans[q_i]['final_qi']["search_keyword"] = search_kw_subq
-                dict_ans[q_i]['final_qi']["short_answer"] = short_ans
-                dict_ans[q_i]['final_qi']["long_answer"] = long_ans
+                # dict_ans[q_i]['final_qi']["short_answer"] = short_ans
+                # dict_ans[q_i]['final_qi']["long_answer"] = long_ans
                 dict_ans[q_i]['final_qi']["candidate"] = qi_candidates
-                dict_ans[q_i]['final_qi']["retrieval_information"] = retrieval_information
-                save_json(dict_ans, file_all_ans)    
+                # dict_ans[q_i]['final_qi']["retrieval_information"] = retrieval_information
+                   
                 # if type_q == "inference":
                 #     dict_ans[q_i]['final_qi']['prefix'] = prefix_ans
                 #     dict_ans[q_i]['final_qi']['name'] = name_ans
@@ -440,9 +430,11 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         
         # if cache_source_have_run == select_source_mcq:
         #     continue
-        
-        all_context += f"{q_i}.{question} - {dict_ans[q_i]['final_qi']['short_answer']}, {dict_ans[q_i]['final_qi']['long_answer']}\n\n"
-         
+            
+        #chỉ dùng khi là sequence, nên ksao
+        # all_context += f"{q_i}.{question} - {dict_ans[q_i]['final_qi']['short_answer']}, {dict_ans[q_i]['final_qi']['long_answer']}\n\n"
+    save_json(dict_ans, file_all_ans)
+    return 
     if n_qi > 1:
         combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
         dict_ans['final_answer'] = combine_parallel_ans
@@ -470,7 +462,7 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    threads = [0, 250] # configs['run']['threads'] 
+    threads = [0, 500] # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
@@ -556,6 +548,13 @@ if __name__ == "__main__":
             continue
         else:
             cnt += 1
+            # # Copy file kết quả vào folder 'medhop_result/evidence'
+            # import shutil
+            # result_file = f"medhop_results/all_ans/R4_step_3b_all_ans_{qidx}.json"  # hoặc tên file kết quả phù hợp
+            # dest_folder = "medhop_result/evidence"
+            # os.makedirs(dest_folder, exist_ok=True)
+            # if os.path.exists(result_file):
+            #     shutil.copy(result_file, os.path.join(dest_folder, os.path.basename(result_file)))
     
         # continue
     

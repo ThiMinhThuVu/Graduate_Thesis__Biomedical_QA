@@ -178,7 +178,13 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     subquestion = item['subquestion']
                     search_kw_subq = item['search_keyword'] 
                     search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
-                    
+                    if step == "0":
+                        key_entities = item['key_entity']   
+                    else:
+                        key_entities = [short_ans]
+                        if short_ans.lower() not in list_ner_q:
+                            list_ner_q.append(short_ans.lower())
+                            
                     if dataset == "wiki":
                         focus_spacy_based_entity_label = item.get('focus_spacy_based_entity_label', None)
                         target_ans_type = item.get('target_answer_type', None)
@@ -197,13 +203,6 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         source_have_run = True
                         continue
 
-                    if step == "0":
-                        key_entities = item['key_entity']   
-                    else:
-                        key_entities = [short_ans]
-                        if short_ans.lower() not in list_ner_q:
-                            list_ner_q.append(short_ans.lower())
-                
                     print(f"\nSource [{source}] Processing Step {step}: {subquestion} ---")
                     
                     # Multiple Choice
