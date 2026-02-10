@@ -1,171 +1,146 @@
 {
-    "QIDX": "936226",
-    "original_question": "Was the physician who married Veronica Tester also the person responsible for isolating the hepatitis B surface antigen?",
-    "type_q": "direct",
-    "focus_spacy_based_entity_label": [
-        "DISEASE",
-        "CHEMICAL"
-    ],
-    "target_answer_type": "correctness",
-    "key_entities": [
-        "hepatitis B surface antigen",
-        "Veronica Tester"
-    ],
-    "1": {
-        "final_qi": {
-            "question": "Was the physician who married Veronica Tester also the person responsible for isolating the hepatitis B surface antigen?",
-            "search_keyword": "physician married Veronica Tester isolating hepatitis B surface antigen",
+  "QIDX": "936226",
+  "original_question": "Was the physician who married Veronica Tester also the person responsible for isolating the hepatitis B surface antigen?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "hepatitis B surface antigen",
+    "Veronica Tester"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Was the physician who married Veronica Tester also the person responsible for isolating the hepatitis B surface antigen?",
+      "search_keyword": "physician married Veronica Tester isolating hepatitis B surface antigen",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": [
+        {
+          "source": "google",
+          "short_answer": "Yes",
+          "long_answer": "Reference: [GG_1], [GG_9]. Explanation: The context from [GG_1] states that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and [GG_9] confirms that he married Veronica Tester. Based on this information, the physician who married Veronica Tester is indeed the same person responsible for isolating the hepatitis B surface antigen.",
+          "retrieval_information": "-Reference: [GG_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n-Reference: [GG_2]: Medicina, Volume 61, Issue 11 (November 2025) – 185 articles Results: Between August 2022 and August 2025, 30,700 patients underwent hepatitis B surface antigen (HBsAg) and/or hepatitis C virus antibody (HCV-Ab) ...\n-Reference: [GG_3]: Epidemiology of hepatitis B virus in Africa, its genotypes and clinical ... 7 Aug 2025 — The sample were screened for Hepatitis B surface antigen using one step rapid diagnostic test, the positive samples were further ...\n-Reference: [GG_4]: The role of neutrophil extracellular traps in hepatic immune homeostasis by L Pérez Olivares · 2023 — chronic hepatitis B virus (HBV) infection after 9 months treatment with IFN-γ (Weng et al. 2005). Exogenous IFN-γ treatment has been ...\n-Reference: [GG_5]: The 20th Conference of the Asian Pacific Association for the Study of ... by XP Wu — Conclusions: Our study suggest that HBeAg may have substantial impact on the development of the fetal immune system and bring on the immunotolerance of ...\n-Reference: [GG_6]: hepatitis-b surface antigen: Topics by ... Placental expression of asialoglycoprotein receptor associated with Hepatitis B virus transmission from mother to child.\n-Reference: [GG_7]: BMC Infectious Diseases 1/2016 Prevalence of hepatitis B surface antigen (HBsAg) in a blood donor population born prior to and after implementation of universal HBV vaccination in ...\n-Reference: [GG_8]: HiV in the community 7 Mar 2013 — zidovudine/lamivudine were hepatitis B surface antigen or hepatitis C antibody positive. Among these coinfected subjects, one subject (1/19) ...\n-Reference: [GG_9]: (PDF) Hepatitis B: Prevalence, Hope 1955 David Surrey Dane married Veronica Tester Hope, a ADVANCES AGAINST HEPATITIS B IN THE U.S. widow, with two children Kerin and Alex. This family of four ...\n-Reference: [GG_10]: Mozambique Population-based HIV Impact Assessment 2021 8 Jul 2023 — 95-95-95: Treatment targets proposed by the Joint United Nations Programme on HIV and AIDS (UNAIDS) to help end the AIDS epidemic.\n-Reference: [GG_11]: Posters : Hepatology Acute‐on‐chronic liver failure (ACLF) is a severe complication of liver cirrhosis with high short term mortality rates.\n-Reference: [GG_12]: ePoster Sessions - ECCMID 2021 Here you can find the list of ePoster sessions during ECCMID 2021 and the presenters that will be taking part in them.\n-Reference: [GG_13]: KASH-15-Abstract-Book.pdf 11 Feb 2025 — None of subjects reacted positive for Hepatitis B surface antigens. ... Test Panels, P24 Antigen, HIV Test, Hepatitis B Virus. Infection.\n-Reference: [GG_14]: Citations - OJGas - Scientific Research Publishing Hepatitis B Surface Antigen Serum Level Is Correlated with Fibrosis Severity in Treatment-Naïve, Chronic Hepatitis B Patients in Côte d'Ivoire (West Africa)? ...\n-Reference: [GG_15]: 17th Pediatric Rheumatology European Society Congress - SERPE 2008 · Cited by 2 — Genotype and allele frequencies were compared between cases with JIA and controls using the. Cochrane-Armitage trend test implemented in PLINK ...\n-Reference: [GG_16]: The 45th Annual Meeting of the European Society for Blood and ... 3 Jul 2019 — The time of starting of immunosuppression drugs after haplo in combination with PT-Cy influences the results of unmanipulated haploidentical transplant.\n-Reference: [GG_17]: prevalence of chronic aflatoxin exposure and the resultant by D Githanga · 2019 — Methods: We studied Hepatitis B surface antibodies [anti-HBs] levels to explore the immune modulation effects of dietary exposure to aflatoxins in children aged ...\n-Reference: [GG_18]: Clinical diagnosis of Viral Hepatitis: current status and future strategies 7 Aug 2025 — Background: Hepatitis B virus (HBV) infection is a leading cause of liver disease worldwide. Hepatitis B surface antigen (HBsAg) rapid ...\n-Reference: [GG_19]: multi-affinity nanotraps that enhance detection of low-abundant proteins: ... Questi risultati dimostrano che l'uso di Nanotrap è indispensabile per saggi antigenici per la malattia di Lyme e in generale presentano un concetto valido per ...\n-Reference: [GG_20]: proceedings of the fifty-sixth western poultry disease conference Dr. Matsumoto met his wife, Nancy, at a dance party held on UCD campus. They were married in 1971. Other members of the family are ...\n\n"
+        },
+        {
+          "source": "wiki",
+          "short_answer": "Insufficient information",
+          "long_answer": "Reference: [WIKI_1]. Explanation: The provided context only mentions that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and that he married Veronica Tester. It does not specify that he was responsible for isolating the hepatitis B surface antigen, so there is insufficient information to answer the question.",
+          "retrieval_information": "-Reference: [WIKI_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n\n"
+        },
+        {
+          "source": "crawl_wiki",
+          "short_answer": "insufficient information",
+          "long_answer": "No context",
+          "retrieval_information": ""
+        },
+        {
+          "source": "crawl_ner_wiki",
+          "short_answer": "insufficient information",
+          "long_answer": "No context",
+          "retrieval_information": ""
+        },
+        {
+          "source": "crawl_sparql_wikidata",
+          "short_answer": "Insufficient information",
+          "long_answer": "Reference: [SPARQL]. Explanation: The provided context only mentions that the hepatitis B surface antigen is a pharmaceutical drug involved in a clinical trial. It does not include any details about a physician who married Veronica Tester or link that physician to isolating the hepatitis B surface antigen.",
+          "retrieval_information": "- Reference [SPARQL]: \nhepatitis b surface antigen: - pharmaceutical drug\n- clinical trial\n"
+        }
+      ]
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "google": {
             "short_answer": "Yes",
             "long_answer": "Reference: [GG_1], [GG_9]. Explanation: The context from [GG_1] states that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and [GG_9] confirms that he married Veronica Tester. Based on this information, the physician who married Veronica Tester is indeed the same person responsible for isolating the hepatitis B surface antigen.",
             "retrieval_information": "-Reference: [GG_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n-Reference: [GG_2]: Medicina, Volume 61, Issue 11 (November 2025) – 185 articles Results: Between August 2022 and August 2025, 30,700 patients underwent hepatitis B surface antigen (HBsAg) and/or hepatitis C virus antibody (HCV-Ab) ...\n-Reference: [GG_3]: Epidemiology of hepatitis B virus in Africa, its genotypes and clinical ... 7 Aug 2025 — The sample were screened for Hepatitis B surface antigen using one step rapid diagnostic test, the positive samples were further ...\n-Reference: [GG_4]: The role of neutrophil extracellular traps in hepatic immune homeostasis by L Pérez Olivares · 2023 — chronic hepatitis B virus (HBV) infection after 9 months treatment with IFN-γ (Weng et al. 2005). Exogenous IFN-γ treatment has been ...\n-Reference: [GG_5]: The 20th Conference of the Asian Pacific Association for the Study of ... by XP Wu — Conclusions: Our study suggest that HBeAg may have substantial impact on the development of the fetal immune system and bring on the immunotolerance of ...\n-Reference: [GG_6]: hepatitis-b surface antigen: Topics by ... Placental expression of asialoglycoprotein receptor associated with Hepatitis B virus transmission from mother to child.\n-Reference: [GG_7]: BMC Infectious Diseases 1/2016 Prevalence of hepatitis B surface antigen (HBsAg) in a blood donor population born prior to and after implementation of universal HBV vaccination in ...\n-Reference: [GG_8]: HiV in the community 7 Mar 2013 — zidovudine/lamivudine were hepatitis B surface antigen or hepatitis C antibody positive. Among these coinfected subjects, one subject (1/19) ...\n-Reference: [GG_9]: (PDF) Hepatitis B: Prevalence, Hope 1955 David Surrey Dane married Veronica Tester Hope, a ADVANCES AGAINST HEPATITIS B IN THE U.S. widow, with two children Kerin and Alex. This family of four ...\n-Reference: [GG_10]: Mozambique Population-based HIV Impact Assessment 2021 8 Jul 2023 — 95-95-95: Treatment targets proposed by the Joint United Nations Programme on HIV and AIDS (UNAIDS) to help end the AIDS epidemic.\n-Reference: [GG_11]: Posters : Hepatology Acute‐on‐chronic liver failure (ACLF) is a severe complication of liver cirrhosis with high short term mortality rates.\n-Reference: [GG_12]: ePoster Sessions - ECCMID 2021 Here you can find the list of ePoster sessions during ECCMID 2021 and the presenters that will be taking part in them.\n-Reference: [GG_13]: KASH-15-Abstract-Book.pdf 11 Feb 2025 — None of subjects reacted positive for Hepatitis B surface antigens. ... Test Panels, P24 Antigen, HIV Test, Hepatitis B Virus. Infection.\n-Reference: [GG_14]: Citations - OJGas - Scientific Research Publishing Hepatitis B Surface Antigen Serum Level Is Correlated with Fibrosis Severity in Treatment-Naïve, Chronic Hepatitis B Patients in Côte d'Ivoire (West Africa)? ...\n-Reference: [GG_15]: 17th Pediatric Rheumatology European Society Congress - SERPE 2008 · Cited by 2 — Genotype and allele frequencies were compared between cases with JIA and controls using the. Cochrane-Armitage trend test implemented in PLINK ...\n-Reference: [GG_16]: The 45th Annual Meeting of the European Society for Blood and ... 3 Jul 2019 — The time of starting of immunosuppression drugs after haplo in combination with PT-Cy influences the results of unmanipulated haploidentical transplant.\n-Reference: [GG_17]: prevalence of chronic aflatoxin exposure and the resultant by D Githanga · 2019 — Methods: We studied Hepatitis B surface antibodies [anti-HBs] levels to explore the immune modulation effects of dietary exposure to aflatoxins in children aged ...\n-Reference: [GG_18]: Clinical diagnosis of Viral Hepatitis: current status and future strategies 7 Aug 2025 — Background: Hepatitis B virus (HBV) infection is a leading cause of liver disease worldwide. Hepatitis B surface antigen (HBsAg) rapid ...\n-Reference: [GG_19]: multi-affinity nanotraps that enhance detection of low-abundant proteins: ... Questi risultati dimostrano che l'uso di Nanotrap è indispensabile per saggi antigenici per la malattia di Lyme e in generale presentano un concetto valido per ...\n-Reference: [GG_20]: proceedings of the fifty-sixth western poultry disease conference Dr. Matsumoto met his wife, Nancy, at a dance party held on UCD campus. They were married in 1971. Other members of the family are ...\n\n",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
             "candidate": [
-                {
-                    "source": "google",
-                    "short_answer": "Yes",
-                    "long_answer": "Reference: [GG_1], [GG_9]. Explanation: The context from [GG_1] states that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and [GG_9] confirms that he married Veronica Tester. Based on this information, the physician who married Veronica Tester is indeed the same person responsible for isolating the hepatitis B surface antigen.",
-                    "retrieval_information": "-Reference: [GG_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n-Reference: [GG_2]: Medicina, Volume 61, Issue 11 (November 2025) – 185 articles Results: Between August 2022 and August 2025, 30,700 patients underwent hepatitis B surface antigen (HBsAg) and/or hepatitis C virus antibody (HCV-Ab) ...\n-Reference: [GG_3]: Epidemiology of hepatitis B virus in Africa, its genotypes and clinical ... 7 Aug 2025 — The sample were screened for Hepatitis B surface antigen using one step rapid diagnostic test, the positive samples were further ...\n-Reference: [GG_4]: The role of neutrophil extracellular traps in hepatic immune homeostasis by L Pérez Olivares · 2023 — chronic hepatitis B virus (HBV) infection after 9 months treatment with IFN-γ (Weng et al. 2005). Exogenous IFN-γ treatment has been ...\n-Reference: [GG_5]: The 20th Conference of the Asian Pacific Association for the Study of ... by XP Wu — Conclusions: Our study suggest that HBeAg may have substantial impact on the development of the fetal immune system and bring on the immunotolerance of ...\n-Reference: [GG_6]: hepatitis-b surface antigen: Topics by ... Placental expression of asialoglycoprotein receptor associated with Hepatitis B virus transmission from mother to child.\n-Reference: [GG_7]: BMC Infectious Diseases 1/2016 Prevalence of hepatitis B surface antigen (HBsAg) in a blood donor population born prior to and after implementation of universal HBV vaccination in ...\n-Reference: [GG_8]: HiV in the community 7 Mar 2013 — zidovudine/lamivudine were hepatitis B surface antigen or hepatitis C antibody positive. Among these coinfected subjects, one subject (1/19) ...\n-Reference: [GG_9]: (PDF) Hepatitis B: Prevalence, Hope 1955 David Surrey Dane married Veronica Tester Hope, a ADVANCES AGAINST HEPATITIS B IN THE U.S. widow, with two children Kerin and Alex. This family of four ...\n-Reference: [GG_10]: Mozambique Population-based HIV Impact Assessment 2021 8 Jul 2023 — 95-95-95: Treatment targets proposed by the Joint United Nations Programme on HIV and AIDS (UNAIDS) to help end the AIDS epidemic.\n-Reference: [GG_11]: Posters : Hepatology Acute‐on‐chronic liver failure (ACLF) is a severe complication of liver cirrhosis with high short term mortality rates.\n-Reference: [GG_12]: ePoster Sessions - ECCMID 2021 Here you can find the list of ePoster sessions during ECCMID 2021 and the presenters that will be taking part in them.\n-Reference: [GG_13]: KASH-15-Abstract-Book.pdf 11 Feb 2025 — None of subjects reacted positive for Hepatitis B surface antigens. ... Test Panels, P24 Antigen, HIV Test, Hepatitis B Virus. Infection.\n-Reference: [GG_14]: Citations - OJGas - Scientific Research Publishing Hepatitis B Surface Antigen Serum Level Is Correlated with Fibrosis Severity in Treatment-Naïve, Chronic Hepatitis B Patients in Côte d'Ivoire (West Africa)? ...\n-Reference: [GG_15]: 17th Pediatric Rheumatology European Society Congress - SERPE 2008 · Cited by 2 — Genotype and allele frequencies were compared between cases with JIA and controls using the. Cochrane-Armitage trend test implemented in PLINK ...\n-Reference: [GG_16]: The 45th Annual Meeting of the European Society for Blood and ... 3 Jul 2019 — The time of starting of immunosuppression drugs after haplo in combination with PT-Cy influences the results of unmanipulated haploidentical transplant.\n-Reference: [GG_17]: prevalence of chronic aflatoxin exposure and the resultant by D Githanga · 2019 — Methods: We studied Hepatitis B surface antibodies [anti-HBs] levels to explore the immune modulation effects of dietary exposure to aflatoxins in children aged ...\n-Reference: [GG_18]: Clinical diagnosis of Viral Hepatitis: current status and future strategies 7 Aug 2025 — Background: Hepatitis B virus (HBV) infection is a leading cause of liver disease worldwide. Hepatitis B surface antigen (HBsAg) rapid ...\n-Reference: [GG_19]: multi-affinity nanotraps that enhance detection of low-abundant proteins: ... Questi risultati dimostrano che l'uso di Nanotrap è indispensabile per saggi antigenici per la malattia di Lyme e in generale presentano un concetto valido per ...\n-Reference: [GG_20]: proceedings of the fifty-sixth western poultry disease conference Dr. Matsumoto met his wife, Nancy, at a dance party held on UCD campus. They were married in 1971. Other members of the family are ...\n\n",
-                    "full_data": {
-                        "short_answer": "Yes",
-                        "long_answer": "Reference: [GG_1], [GG_9]. Explanation: The context from [GG_1] states that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and [GG_9] confirms that he married Veronica Tester. Based on this information, the physician who married Veronica Tester is indeed the same person responsible for isolating the hepatitis B surface antigen."
-                    }
-                },
-                {
-                    "source": "wiki",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "Reference: [WIKI_1]. Explanation: The provided context only mentions that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and that he married Veronica Tester. It does not specify that he was responsible for isolating the hepatitis B surface antigen, so there is insufficient information to answer the question.",
-                    "retrieval_information": "-Reference: [WIKI_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Reference: [WIKI_1]. Explanation: The provided context only mentions that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and that he married Veronica Tester. It does not specify that he was responsible for isolating the hepatitis B surface antigen, so there is insufficient information to answer the question."
-                    }
-                },
-                {
-                    "source": "crawl_wiki",
-                    "short_answer": "insufficient information",
-                    "long_answer": "No context",
-                    "retrieval_information": "",
-                    "full_data": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context"
-                    }
-                },
-                {
-                    "source": "crawl_ner_wiki",
-                    "short_answer": "insufficient information",
-                    "long_answer": "No context",
-                    "retrieval_information": "",
-                    "full_data": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context"
-                    }
-                },
-                {
-                    "source": "crawl_sparql_wikidata",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "Reference: [SPARQL]. Explanation: The provided context only mentions that the hepatitis B surface antigen is a pharmaceutical drug involved in a clinical trial. It does not include any details about a physician who married Veronica Tester or link that physician to isolating the hepatitis B surface antigen.",
-                    "retrieval_information": "- Reference [SPARQL]: \nhepatitis b surface antigen: - pharmaceutical drug\n- clinical trial\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Reference: [SPARQL]. Explanation: The provided context only mentions that the hepatitis B surface antigen is a pharmaceutical drug involved in a clinical trial. It does not include any details about a physician who married Veronica Tester or link that physician to isolating the hepatitis B surface antigen."
-                    }
+              {
+                "short_answer": "Yes",
+                "long_answer": "Reference: [GG_1], [GG_9]. Explanation: The context from [GG_1] states that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and [GG_9] confirms that he married Veronica Tester. Based on this information, the physician who married Veronica Tester is indeed the same person responsible for isolating the hepatitis B surface antigen.",
+                "retrieval_information": "-Reference: [GG_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n-Reference: [GG_2]: Medicina, Volume 61, Issue 11 (November 2025) – 185 articles Results: Between August 2022 and August 2025, 30,700 patients underwent hepatitis B surface antigen (HBsAg) and/or hepatitis C virus antibody (HCV-Ab) ...\n-Reference: [GG_3]: Epidemiology of hepatitis B virus in Africa, its genotypes and clinical ... 7 Aug 2025 — The sample were screened for Hepatitis B surface antigen using one step rapid diagnostic test, the positive samples were further ...\n-Reference: [GG_4]: The role of neutrophil extracellular traps in hepatic immune homeostasis by L Pérez Olivares · 2023 — chronic hepatitis B virus (HBV) infection after 9 months treatment with IFN-γ (Weng et al. 2005). Exogenous IFN-γ treatment has been ...\n-Reference: [GG_5]: The 20th Conference of the Asian Pacific Association for the Study of ... by XP Wu — Conclusions: Our study suggest that HBeAg may have substantial impact on the development of the fetal immune system and bring on the immunotolerance of ...\n-Reference: [GG_6]: hepatitis-b surface antigen: Topics by ... Placental expression of asialoglycoprotein receptor associated with Hepatitis B virus transmission from mother to child.\n-Reference: [GG_7]: BMC Infectious Diseases 1/2016 Prevalence of hepatitis B surface antigen (HBsAg) in a blood donor population born prior to and after implementation of universal HBV vaccination in ...\n-Reference: [GG_8]: HiV in the community 7 Mar 2013 — zidovudine/lamivudine were hepatitis B surface antigen or hepatitis C antibody positive. Among these coinfected subjects, one subject (1/19) ...\n-Reference: [GG_9]: (PDF) Hepatitis B: Prevalence, Hope 1955 David Surrey Dane married Veronica Tester Hope, a ADVANCES AGAINST HEPATITIS B IN THE U.S. widow, with two children Kerin and Alex. This family of four ...\n-Reference: [GG_10]: Mozambique Population-based HIV Impact Assessment 2021 8 Jul 2023 — 95-95-95: Treatment targets proposed by the Joint United Nations Programme on HIV and AIDS (UNAIDS) to help end the AIDS epidemic.\n-Reference: [GG_11]: Posters : Hepatology Acute‐on‐chronic liver failure (ACLF) is a severe complication of liver cirrhosis with high short term mortality rates.\n-Reference: [GG_12]: ePoster Sessions - ECCMID 2021 Here you can find the list of ePoster sessions during ECCMID 2021 and the presenters that will be taking part in them.\n-Reference: [GG_13]: KASH-15-Abstract-Book.pdf 11 Feb 2025 — None of subjects reacted positive for Hepatitis B surface antigens. ... Test Panels, P24 Antigen, HIV Test, Hepatitis B Virus. Infection.\n-Reference: [GG_14]: Citations - OJGas - Scientific Research Publishing Hepatitis B Surface Antigen Serum Level Is Correlated with Fibrosis Severity in Treatment-Naïve, Chronic Hepatitis B Patients in Côte d'Ivoire (West Africa)? ...\n-Reference: [GG_15]: 17th Pediatric Rheumatology European Society Congress - SERPE 2008 · Cited by 2 — Genotype and allele frequencies were compared between cases with JIA and controls using the. Cochrane-Armitage trend test implemented in PLINK ...\n-Reference: [GG_16]: The 45th Annual Meeting of the European Society for Blood and ... 3 Jul 2019 — The time of starting of immunosuppression drugs after haplo in combination with PT-Cy influences the results of unmanipulated haploidentical transplant.\n-Reference: [GG_17]: prevalence of chronic aflatoxin exposure and the resultant by D Githanga · 2019 — Methods: We studied Hepatitis B surface antibodies [anti-HBs] levels to explore the immune modulation effects of dietary exposure to aflatoxins in children aged ...\n-Reference: [GG_18]: Clinical diagnosis of Viral Hepatitis: current status and future strategies 7 Aug 2025 — Background: Hepatitis B virus (HBV) infection is a leading cause of liver disease worldwide. Hepatitis B surface antigen (HBsAg) rapid ...\n-Reference: [GG_19]: multi-affinity nanotraps that enhance detection of low-abundant proteins: ... Questi risultati dimostrano che l'uso di Nanotrap è indispensabile per saggi antigenici per la malattia di Lyme e in generale presentano un concetto valido per ...\n-Reference: [GG_20]: proceedings of the fifty-sixth western poultry disease conference Dr. Matsumoto met his wife, Nancy, at a dance party held on UCD campus. They were married in 1971. Other members of the family are ...\n\n",
+                "full_data": {
+                  "short_answer": "Yes",
+                  "long_answer": "Reference: [GG_1], [GG_9]. Explanation: The context from [GG_1] states that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and [GG_9] confirms that he married Veronica Tester. Based on this information, the physician who married Veronica Tester is indeed the same person responsible for isolating the hepatitis B surface antigen."
                 }
+              }
             ]
+          },
+          "wiki": {
+            "short_answer": "Insufficient information",
+            "long_answer": "Reference: [WIKI_1]. Explanation: The provided context only mentions that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and that he married Veronica Tester. It does not specify that he was responsible for isolating the hepatitis B surface antigen, so there is insufficient information to answer the question.",
+            "retrieval_information": "-Reference: [WIKI_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n\n",
+            "candidate": [
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "Reference: [WIKI_1]. Explanation: The provided context only mentions that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and that he married Veronica Tester. It does not specify that he was responsible for isolating the hepatitis B surface antigen, so there is insufficient information to answer the question.",
+                "retrieval_information": "-Reference: [WIKI_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n\n",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "Reference: [WIKI_1]. Explanation: The provided context only mentions that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and that he married Veronica Tester. It does not specify that he was responsible for isolating the hepatitis B surface antigen, so there is insufficient information to answer the question."
+                }
+              }
+            ]
+          },
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_sparql_wikidata": {
+            "short_answer": "Insufficient information",
+            "long_answer": "Reference: [SPARQL]. Explanation: The provided context only mentions that the hepatitis B surface antigen is a pharmaceutical drug involved in a clinical trial. It does not include any details about a physician who married Veronica Tester or link that physician to isolating the hepatitis B surface antigen.",
+            "retrieval_information": "- Reference [SPARQL]: \nhepatitis b surface antigen: - pharmaceutical drug\n- clinical trial\n",
+            "candidate": [
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "Reference: [SPARQL]. Explanation: The provided context only mentions that the hepatitis B surface antigen is a pharmaceutical drug involved in a clinical trial. It does not include any details about a physician who married Veronica Tester or link that physician to isolating the hepatitis B surface antigen.",
+                "retrieval_information": "- Reference [SPARQL]: \nhepatitis b surface antigen: - pharmaceutical drug\n- clinical trial\n",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "Reference: [SPARQL]. Explanation: The provided context only mentions that the hepatitis B surface antigen is a pharmaceutical drug involved in a clinical trial. It does not include any details about a physician who married Veronica Tester or link that physician to isolating the hepatitis B surface antigen."
+                }
+              }
+            ]
+          }
         },
-        "0": {
-            "0": {
-                "source_output": {
-                    "google": {
-                        "short_answer": "Yes",
-                        "long_answer": "Reference: [GG_1], [GG_9]. Explanation: The context from [GG_1] states that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and [GG_9] confirms that he married Veronica Tester. Based on this information, the physician who married Veronica Tester is indeed the same person responsible for isolating the hepatitis B surface antigen.",
-                        "retrieval_information": "-Reference: [GG_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n-Reference: [GG_2]: Medicina, Volume 61, Issue 11 (November 2025) – 185 articles Results: Between August 2022 and August 2025, 30,700 patients underwent hepatitis B surface antigen (HBsAg) and/or hepatitis C virus antibody (HCV-Ab) ...\n-Reference: [GG_3]: Epidemiology of hepatitis B virus in Africa, its genotypes and clinical ... 7 Aug 2025 — The sample were screened for Hepatitis B surface antigen using one step rapid diagnostic test, the positive samples were further ...\n-Reference: [GG_4]: The role of neutrophil extracellular traps in hepatic immune homeostasis by L Pérez Olivares · 2023 — chronic hepatitis B virus (HBV) infection after 9 months treatment with IFN-γ (Weng et al. 2005). Exogenous IFN-γ treatment has been ...\n-Reference: [GG_5]: The 20th Conference of the Asian Pacific Association for the Study of ... by XP Wu — Conclusions: Our study suggest that HBeAg may have substantial impact on the development of the fetal immune system and bring on the immunotolerance of ...\n-Reference: [GG_6]: hepatitis-b surface antigen: Topics by ... Placental expression of asialoglycoprotein receptor associated with Hepatitis B virus transmission from mother to child.\n-Reference: [GG_7]: BMC Infectious Diseases 1/2016 Prevalence of hepatitis B surface antigen (HBsAg) in a blood donor population born prior to and after implementation of universal HBV vaccination in ...\n-Reference: [GG_8]: HiV in the community 7 Mar 2013 — zidovudine/lamivudine were hepatitis B surface antigen or hepatitis C antibody positive. Among these coinfected subjects, one subject (1/19) ...\n-Reference: [GG_9]: (PDF) Hepatitis B: Prevalence, Hope 1955 David Surrey Dane married Veronica Tester Hope, a ADVANCES AGAINST HEPATITIS B IN THE U.S. widow, with two children Kerin and Alex. This family of four ...\n-Reference: [GG_10]: Mozambique Population-based HIV Impact Assessment 2021 8 Jul 2023 — 95-95-95: Treatment targets proposed by the Joint United Nations Programme on HIV and AIDS (UNAIDS) to help end the AIDS epidemic.\n-Reference: [GG_11]: Posters : Hepatology Acute‐on‐chronic liver failure (ACLF) is a severe complication of liver cirrhosis with high short term mortality rates.\n-Reference: [GG_12]: ePoster Sessions - ECCMID 2021 Here you can find the list of ePoster sessions during ECCMID 2021 and the presenters that will be taking part in them.\n-Reference: [GG_13]: KASH-15-Abstract-Book.pdf 11 Feb 2025 — None of subjects reacted positive for Hepatitis B surface antigens. ... Test Panels, P24 Antigen, HIV Test, Hepatitis B Virus. Infection.\n-Reference: [GG_14]: Citations - OJGas - Scientific Research Publishing Hepatitis B Surface Antigen Serum Level Is Correlated with Fibrosis Severity in Treatment-Naïve, Chronic Hepatitis B Patients in Côte d'Ivoire (West Africa)? ...\n-Reference: [GG_15]: 17th Pediatric Rheumatology European Society Congress - SERPE 2008 · Cited by 2 — Genotype and allele frequencies were compared between cases with JIA and controls using the. Cochrane-Armitage trend test implemented in PLINK ...\n-Reference: [GG_16]: The 45th Annual Meeting of the European Society for Blood and ... 3 Jul 2019 — The time of starting of immunosuppression drugs after haplo in combination with PT-Cy influences the results of unmanipulated haploidentical transplant.\n-Reference: [GG_17]: prevalence of chronic aflatoxin exposure and the resultant by D Githanga · 2019 — Methods: We studied Hepatitis B surface antibodies [anti-HBs] levels to explore the immune modulation effects of dietary exposure to aflatoxins in children aged ...\n-Reference: [GG_18]: Clinical diagnosis of Viral Hepatitis: current status and future strategies 7 Aug 2025 — Background: Hepatitis B virus (HBV) infection is a leading cause of liver disease worldwide. Hepatitis B surface antigen (HBsAg) rapid ...\n-Reference: [GG_19]: multi-affinity nanotraps that enhance detection of low-abundant proteins: ... Questi risultati dimostrano che l'uso di Nanotrap è indispensabile per saggi antigenici per la malattia di Lyme e in generale presentano un concetto valido per ...\n-Reference: [GG_20]: proceedings of the fifty-sixth western poultry disease conference Dr. Matsumoto met his wife, Nancy, at a dance party held on UCD campus. They were married in 1971. Other members of the family are ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Yes",
-                                "long_answer": "Reference: [GG_1], [GG_9]. Explanation: The context from [GG_1] states that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and [GG_9] confirms that he married Veronica Tester. Based on this information, the physician who married Veronica Tester is indeed the same person responsible for isolating the hepatitis B surface antigen.",
-                                "retrieval_information": "-Reference: [GG_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n-Reference: [GG_2]: Medicina, Volume 61, Issue 11 (November 2025) – 185 articles Results: Between August 2022 and August 2025, 30,700 patients underwent hepatitis B surface antigen (HBsAg) and/or hepatitis C virus antibody (HCV-Ab) ...\n-Reference: [GG_3]: Epidemiology of hepatitis B virus in Africa, its genotypes and clinical ... 7 Aug 2025 — The sample were screened for Hepatitis B surface antigen using one step rapid diagnostic test, the positive samples were further ...\n-Reference: [GG_4]: The role of neutrophil extracellular traps in hepatic immune homeostasis by L Pérez Olivares · 2023 — chronic hepatitis B virus (HBV) infection after 9 months treatment with IFN-γ (Weng et al. 2005). Exogenous IFN-γ treatment has been ...\n-Reference: [GG_5]: The 20th Conference of the Asian Pacific Association for the Study of ... by XP Wu — Conclusions: Our study suggest that HBeAg may have substantial impact on the development of the fetal immune system and bring on the immunotolerance of ...\n-Reference: [GG_6]: hepatitis-b surface antigen: Topics by ... Placental expression of asialoglycoprotein receptor associated with Hepatitis B virus transmission from mother to child.\n-Reference: [GG_7]: BMC Infectious Diseases 1/2016 Prevalence of hepatitis B surface antigen (HBsAg) in a blood donor population born prior to and after implementation of universal HBV vaccination in ...\n-Reference: [GG_8]: HiV in the community 7 Mar 2013 — zidovudine/lamivudine were hepatitis B surface antigen or hepatitis C antibody positive. Among these coinfected subjects, one subject (1/19) ...\n-Reference: [GG_9]: (PDF) Hepatitis B: Prevalence, Hope 1955 David Surrey Dane married Veronica Tester Hope, a ADVANCES AGAINST HEPATITIS B IN THE U.S. widow, with two children Kerin and Alex. This family of four ...\n-Reference: [GG_10]: Mozambique Population-based HIV Impact Assessment 2021 8 Jul 2023 — 95-95-95: Treatment targets proposed by the Joint United Nations Programme on HIV and AIDS (UNAIDS) to help end the AIDS epidemic.\n-Reference: [GG_11]: Posters : Hepatology Acute‐on‐chronic liver failure (ACLF) is a severe complication of liver cirrhosis with high short term mortality rates.\n-Reference: [GG_12]: ePoster Sessions - ECCMID 2021 Here you can find the list of ePoster sessions during ECCMID 2021 and the presenters that will be taking part in them.\n-Reference: [GG_13]: KASH-15-Abstract-Book.pdf 11 Feb 2025 — None of subjects reacted positive for Hepatitis B surface antigens. ... Test Panels, P24 Antigen, HIV Test, Hepatitis B Virus. Infection.\n-Reference: [GG_14]: Citations - OJGas - Scientific Research Publishing Hepatitis B Surface Antigen Serum Level Is Correlated with Fibrosis Severity in Treatment-Naïve, Chronic Hepatitis B Patients in Côte d'Ivoire (West Africa)? ...\n-Reference: [GG_15]: 17th Pediatric Rheumatology European Society Congress - SERPE 2008 · Cited by 2 — Genotype and allele frequencies were compared between cases with JIA and controls using the. Cochrane-Armitage trend test implemented in PLINK ...\n-Reference: [GG_16]: The 45th Annual Meeting of the European Society for Blood and ... 3 Jul 2019 — The time of starting of immunosuppression drugs after haplo in combination with PT-Cy influences the results of unmanipulated haploidentical transplant.\n-Reference: [GG_17]: prevalence of chronic aflatoxin exposure and the resultant by D Githanga · 2019 — Methods: We studied Hepatitis B surface antibodies [anti-HBs] levels to explore the immune modulation effects of dietary exposure to aflatoxins in children aged ...\n-Reference: [GG_18]: Clinical diagnosis of Viral Hepatitis: current status and future strategies 7 Aug 2025 — Background: Hepatitis B virus (HBV) infection is a leading cause of liver disease worldwide. Hepatitis B surface antigen (HBsAg) rapid ...\n-Reference: [GG_19]: multi-affinity nanotraps that enhance detection of low-abundant proteins: ... Questi risultati dimostrano che l'uso di Nanotrap è indispensabile per saggi antigenici per la malattia di Lyme e in generale presentano un concetto valido per ...\n-Reference: [GG_20]: proceedings of the fifty-sixth western poultry disease conference Dr. Matsumoto met his wife, Nancy, at a dance party held on UCD campus. They were married in 1971. Other members of the family are ...\n\n",
-                                "full_data": {
-                                    "short_answer": "Yes",
-                                    "long_answer": "Reference: [GG_1], [GG_9]. Explanation: The context from [GG_1] states that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and [GG_9] confirms that he married Veronica Tester. Based on this information, the physician who married Veronica Tester is indeed the same person responsible for isolating the hepatitis B surface antigen."
-                                }
-                            }
-                        ]
-                    },
-                    "wiki": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Reference: [WIKI_1]. Explanation: The provided context only mentions that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and that he married Veronica Tester. It does not specify that he was responsible for isolating the hepatitis B surface antigen, so there is insufficient information to answer the question.",
-                        "retrieval_information": "-Reference: [WIKI_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "Reference: [WIKI_1]. Explanation: The provided context only mentions that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and that he married Veronica Tester. It does not specify that he was responsible for isolating the hepatitis B surface antigen, so there is insufficient information to answer the question.",
-                                "retrieval_information": "-Reference: [WIKI_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n\n",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "Reference: [WIKI_1]. Explanation: The provided context only mentions that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and that he married Veronica Tester. It does not specify that he was responsible for isolating the hepatitis B surface antigen, so there is insufficient information to answer the question."
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_ner_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_sparql_wikidata": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Reference: [SPARQL]. Explanation: The provided context only mentions that the hepatitis B surface antigen is a pharmaceutical drug involved in a clinical trial. It does not include any details about a physician who married Veronica Tester or link that physician to isolating the hepatitis B surface antigen.",
-                        "retrieval_information": "- Reference [SPARQL]: \nhepatitis b surface antigen: - pharmaceutical drug\n- clinical trial\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "Reference: [SPARQL]. Explanation: The provided context only mentions that the hepatitis B surface antigen is a pharmaceutical drug involved in a clinical trial. It does not include any details about a physician who married Veronica Tester or link that physician to isolating the hepatitis B surface antigen.",
-                                "retrieval_information": "- Reference [SPARQL]: \nhepatitis b surface antigen: - pharmaceutical drug\n- clinical trial\n",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "Reference: [SPARQL]. Explanation: The provided context only mentions that the hepatitis B surface antigen is a pharmaceutical drug involved in a clinical trial. It does not include any details about a physician who married Veronica Tester or link that physician to isolating the hepatitis B surface antigen."
-                                }
-                            }
-                        ]
-                    }
-                },
-                "question": "Was the physician who married Veronica Tester also the person responsible for isolating the hepatitis B surface antigen?",
-                "search_keyword": "physician married Veronica Tester isolating hepatitis B surface antigen"
-            }
-        }
-    },
-    "final_answer": {
-        "long_answer": "Reference: [GG_1], [GG_9]. Explanation: The context from [GG_1] states that David Dane was determined to improve the accuracy of detecting the hepatitis B surface antigen and [GG_9] confirms that he married Veronica Tester. Based on this information, the physician who married Veronica Tester is indeed the same person responsible for isolating the hepatitis B surface antigen.",
-        "short_answer": "Yes",
-        "retrieval_information": "-Reference: [GG_1]: David Dane Dane's determination to improve the accuracy of detecting the hepatitis B surface antigen ... In 1955, Dane married Veronica (née Tester), widow of Maj.\n-Reference: [GG_2]: Medicina, Volume 61, Issue 11 (November 2025) – 185 articles Results: Between August 2022 and August 2025, 30,700 patients underwent hepatitis B surface antigen (HBsAg) and/or hepatitis C virus antibody (HCV-Ab) ...\n-Reference: [GG_3]: Epidemiology of hepatitis B virus in Africa, its genotypes and clinical ... 7 Aug 2025 — The sample were screened for Hepatitis B surface antigen using one step rapid diagnostic test, the positive samples were further ...\n-Reference: [GG_4]: The role of neutrophil extracellular traps in hepatic immune homeostasis by L Pérez Olivares · 2023 — chronic hepatitis B virus (HBV) infection after 9 months treatment with IFN-γ (Weng et al. 2005). Exogenous IFN-γ treatment has been ...\n-Reference: [GG_5]: The 20th Conference of the Asian Pacific Association for the Study of ... by XP Wu — Conclusions: Our study suggest that HBeAg may have substantial impact on the development of the fetal immune system and bring on the immunotolerance of ...\n-Reference: [GG_6]: hepatitis-b surface antigen: Topics by ... Placental expression of asialoglycoprotein receptor associated with Hepatitis B virus transmission from mother to child.\n-Reference: [GG_7]: BMC Infectious Diseases 1/2016 Prevalence of hepatitis B surface antigen (HBsAg) in a blood donor population born prior to and after implementation of universal HBV vaccination in ...\n-Reference: [GG_8]: HiV in the community 7 Mar 2013 — zidovudine/lamivudine were hepatitis B surface antigen or hepatitis C antibody positive. Among these coinfected subjects, one subject (1/19) ...\n-Reference: [GG_9]: (PDF) Hepatitis B: Prevalence, Hope 1955 David Surrey Dane married Veronica Tester Hope, a ADVANCES AGAINST HEPATITIS B IN THE U.S. widow, with two children Kerin and Alex. This family of four ...\n-Reference: [GG_10]: Mozambique Population-based HIV Impact Assessment 2021 8 Jul 2023 — 95-95-95: Treatment targets proposed by the Joint United Nations Programme on HIV and AIDS (UNAIDS) to help end the AIDS epidemic.\n-Reference: [GG_11]: Posters : Hepatology Acute‐on‐chronic liver failure (ACLF) is a severe complication of liver cirrhosis with high short term mortality rates.\n-Reference: [GG_12]: ePoster Sessions - ECCMID 2021 Here you can find the list of ePoster sessions during ECCMID 2021 and the presenters that will be taking part in them.\n-Reference: [GG_13]: KASH-15-Abstract-Book.pdf 11 Feb 2025 — None of subjects reacted positive for Hepatitis B surface antigens. ... Test Panels, P24 Antigen, HIV Test, Hepatitis B Virus. Infection.\n-Reference: [GG_14]: Citations - OJGas - Scientific Research Publishing Hepatitis B Surface Antigen Serum Level Is Correlated with Fibrosis Severity in Treatment-Naïve, Chronic Hepatitis B Patients in Côte d'Ivoire (West Africa)? ...\n-Reference: [GG_15]: 17th Pediatric Rheumatology European Society Congress - SERPE 2008 · Cited by 2 — Genotype and allele frequencies were compared between cases with JIA and controls using the. Cochrane-Armitage trend test implemented in PLINK ...\n-Reference: [GG_16]: The 45th Annual Meeting of the European Society for Blood and ... 3 Jul 2019 — The time of starting of immunosuppression drugs after haplo in combination with PT-Cy influences the results of unmanipulated haploidentical transplant.\n-Reference: [GG_17]: prevalence of chronic aflatoxin exposure and the resultant by D Githanga · 2019 — Methods: We studied Hepatitis B surface antibodies [anti-HBs] levels to explore the immune modulation effects of dietary exposure to aflatoxins in children aged ...\n-Reference: [GG_18]: Clinical diagnosis of Viral Hepatitis: current status and future strategies 7 Aug 2025 — Background: Hepatitis B virus (HBV) infection is a leading cause of liver disease worldwide. Hepatitis B surface antigen (HBsAg) rapid ...\n-Reference: [GG_19]: multi-affinity nanotraps that enhance detection of low-abundant proteins: ... Questi risultati dimostrano che l'uso di Nanotrap è indispensabile per saggi antigenici per la malattia di Lyme e in generale presentano un concetto valido per ...\n-Reference: [GG_20]: proceedings of the fifty-sixth western poultry disease conference Dr. Matsumoto met his wife, Nancy, at a dance party held on UCD campus. They were married in 1971. Other members of the family are ...\n\n"
+        "question": "Was the physician who married Veronica Tester also the person responsible for isolating the hepatitis B surface antigen?",
+        "search_keyword": "physician married Veronica Tester isolating hepatitis B surface antigen"
+      }
     }
+  }
 }

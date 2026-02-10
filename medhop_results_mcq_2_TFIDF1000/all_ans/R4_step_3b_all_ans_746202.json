@@ -1,0 +1,142 @@
+{
+    "QIDX": "746202",
+    "original_question": "Does familial intestinal polyatresia syndrome (FIPA) increase Rho kinase activity, thereby disrupting the polarity?",
+    "type_q": "direct",
+    "focus_spacy_based_entity_label": [
+        "DISEASE",
+        "CHEMICAL"
+    ],
+    "target_answer_type": "correctness",
+    "key_entities": [
+        "familial intestinal polyatresia syndrome",
+        "Rho kinase",
+        "FIPA"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Does familial intestinal polyatresia syndrome (FIPA) increase Rho kinase activity, thereby disrupting the polarity?",
+            "search_keyword": "familial intestinal polyatresia syndrome FIPA Rho kinase activity polarity disruption",
+            "short_answer": "",
+            "long_answer": "",
+            "retrieval_information": "",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "candidate": [
+                {
+                    "source": "google",
+                    "short_answer": "Yes",
+                    "long_answer": "Reference: [GG_1]. Detailed explanation based on the information: The context in reference [GG_1] indicates that TTC7A deficiency leads to elevated Rho Kinase activity, which in turn causes the loss of intestinal epithelial cell polarity. Familial intestinal polyatresia syndrome (FIPA) is associated with such TTC7A deficiency, thereby supporting the conclusion that FIPA increases Rho kinase activity leading to a disruption in polarity.",
+                    "retrieval_information": "-Reference: [GG_1]: Hereditary Multiple Intestinal Atresia With a Novel TTC7A Pathogenic ... by MA Badawi · 2025 · Cited by 1 — TTC7A deficiency leads to elevated Rho Kinase activity causing loss of intestinal epithelial cell polarity, growth, and differentiation with subsequent ...\n-Reference: [GG_2]: GeneCards | LOC126806211 Functional Element Wikipedia 185 : Familial multiple intestinal atresia (FMIA) or familial intestinal polyatresia syndrome (FIPA) is an inherited disorder where atresia occurs ...\n-Reference: [GG_3]: Browse Diseases - RARe-SOURCE Clicking on the disease name, lists all the disease aliases available in RARe-SOURCE™ for this disease as well as recent publications obtained from PubMed.\n-Reference: [GG_4]: MCFD2 Gene This gene encodes a soluble luminal protein with two calmodulin-like EF-hand motifs at its C-terminus. This protein forms a complex with LMAN1 (lectin ...\n-Reference: [GG_5]: Full text of \"DICTIONARY OF MEDICAL ACRONYMS And ... This dictionary lists acronyms and abbreviations occurring with a reasonable frequency in the medical literature that were identified by a systematic scanning ...\n-Reference: [GG_6]: medical-acronyms 17 Nov 2012 — This dictionary lists <strong>acronyms</strong> and abbreviations occurring with a reasonable frequency in the <strong>medical</strong> literature\n-Reference: [GG_7]: 4 575973715896959125 PDF | PDF | Standard Deviation | Variance Surgeons FIPA familial intestinal polyatresia [syn- FICSIT Frailty and Injuries: Cooperative drome] Studies of Intervention Techniques FIPS Federal ...\n\n",
+                    "full_data": {
+                        "short_answer": "Yes",
+                        "long_answer": "Reference: [GG_1]. Detailed explanation based on the information: The context in reference [GG_1] indicates that TTC7A deficiency leads to elevated Rho Kinase activity, which in turn causes the loss of intestinal epithelial cell polarity. Familial intestinal polyatresia syndrome (FIPA) is associated with such TTC7A deficiency, thereby supporting the conclusion that FIPA increases Rho kinase activity leading to a disruption in polarity."
+                    }
+                },
+                {
+                    "source": "crawl_sparql_wikidata",
+                    "short_answer": "Insufficient information",
+                    "long_answer": "The provided context does not include any information linking familial intestinal polyatresia syndrome (FIPA) with an increase in Rho kinase activity or with the disruption of polarity. Reference: [SPARQL] details on familial intestinal polyatresia syndrome and Rho kinase exist separately without a demonstrated connection.",
+                    "retrieval_information": "- Reference [SPARQL]: \nfamilial intestinal polyatresia syndrome: - Human disease\n- multiple intestinal atresia (description: Human disease) - relation: has symptom: intestinal atresia (source: Q4597494)\n- multiple intestinal atresia (description: Human disease) - relation: genetic association: TTC7A (source: Q18042985)\n\nrho kinase: - protein found in Drosophila melanogaster\n- protein-coding gene in the species Mus musculus\n- protein-coding gene in the species Drosophila melanogaster\n- protein-coding gene in the species Drosophila melanogaster\n- mammalian protein found in Homo sapiens\n- class of pharmacological agent\n- clinical trial\n- US patent 11198680\n- chemical compound\n- clinical trial\n- clinical trial\n- chemical compound\n- clinical trial\n- Rock2 (description: protein-coding gene in the species Mus musculus) - relation: chromosome: mouse chromosome 12 (source: Q15305596)\n- Rock2 (description: protein-coding gene in the species Mus musculus) - relation: cytogenetic location: 12|12 A1.1 (source: 12|12 A1.1)\n- Rok (description: protein-coding gene in the species Drosophila melanogaster) - relation: chromosome: Drosophila melanogaster chromosome X (source: Q29566135)\n- Rok (description: protein-coding gene in the species Drosophila melanogaster) - relation: cytogenetic location: 14F2-14F4|1-54 cM (source: 14F2-14F4|1-54 cM)\n- Rho1 (description: protein-coding gene in the species Drosophila melanogaster) - relation: chromosome: Drosophila melanogaster chromosome 2R (source: Q29566139)\n- Rho1 (description: protein-coding gene in the species Drosophila melanogaster) - relation: cytogenetic location: 52E5-52E5|2-77 cM (source: 52E5-52E5|2-77 cM)\n\nfipa: - human disease\n- Bantu language spoken in Tanzania\n- international non-fiction film festival\n- organization\n- clown women festival\n- governing body for volleyball in Italy\n- microbial gene found in Yersinia pestis CO92\n- microbial protein found in Yersinia pestis CO92\n- microbial gene found in Bordetella pertussis Tohama I\n- microbial gene found in Escherichia coli str. K-12 substr. MG1655\n- microbial gene found in Bordetella bronchiseptica 253\n- microbial gene found in Burkholderia pseudomallei K96243\n- microbial gene found in Bordetella parapertussis Bpp5\n- microbial gene found in Yersinia enterocolitica subsp. enterocolitica 8081\n- microbial protein found in Yersinia enterocolitica subsp. enterocolitica 8081\n- common medical sign characterized by elevated body temperature\n- ethnic group from Rukwa Region of Tanzania\n- microbial protein found in Yersinia pestis CO92\n- FIPAT deals with the official international standard set of human anatomical terminologies. It is one of the six major fields of activity of the IFAA, the world body of Anatomy.\n- governing body of pallapugno in Italy\n",
+                    "full_data": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "The provided context does not include any information linking familial intestinal polyatresia syndrome (FIPA) with an increase in Rho kinase activity or with the disruption of polarity. Reference: [SPARQL] details on familial intestinal polyatresia syndrome and Rho kinase exist separately without a demonstrated connection."
+                    }
+                }
+            ]
+        },
+        "0": {
+            "0": {
+                "source_output": {
+                    "google": {
+                        "short_answer": "Yes",
+                        "long_answer": "Reference: [GG_1]. Detailed explanation based on the information: The context in reference [GG_1] indicates that TTC7A deficiency leads to elevated Rho Kinase activity, which in turn causes the loss of intestinal epithelial cell polarity. Familial intestinal polyatresia syndrome (FIPA) is associated with such TTC7A deficiency, thereby supporting the conclusion that FIPA increases Rho kinase activity leading to a disruption in polarity.",
+                        "retrieval_information": "-Reference: [GG_1]: Hereditary Multiple Intestinal Atresia With a Novel TTC7A Pathogenic ... by MA Badawi · 2025 · Cited by 1 — TTC7A deficiency leads to elevated Rho Kinase activity causing loss of intestinal epithelial cell polarity, growth, and differentiation with subsequent ...\n-Reference: [GG_2]: GeneCards | LOC126806211 Functional Element Wikipedia 185 : Familial multiple intestinal atresia (FMIA) or familial intestinal polyatresia syndrome (FIPA) is an inherited disorder where atresia occurs ...\n-Reference: [GG_3]: Browse Diseases - RARe-SOURCE Clicking on the disease name, lists all the disease aliases available in RARe-SOURCE™ for this disease as well as recent publications obtained from PubMed.\n-Reference: [GG_4]: MCFD2 Gene This gene encodes a soluble luminal protein with two calmodulin-like EF-hand motifs at its C-terminus. This protein forms a complex with LMAN1 (lectin ...\n-Reference: [GG_5]: Full text of \"DICTIONARY OF MEDICAL ACRONYMS And ... This dictionary lists acronyms and abbreviations occurring with a reasonable frequency in the medical literature that were identified by a systematic scanning ...\n-Reference: [GG_6]: medical-acronyms 17 Nov 2012 — This dictionary lists <strong>acronyms</strong> and abbreviations occurring with a reasonable frequency in the <strong>medical</strong> literature\n-Reference: [GG_7]: 4 575973715896959125 PDF | PDF | Standard Deviation | Variance Surgeons FIPA familial intestinal polyatresia [syn- FICSIT Frailty and Injuries: Cooperative drome] Studies of Intervention Techniques FIPS Federal ...\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Yes",
+                                "long_answer": "Reference: [GG_1]. Detailed explanation based on the information: The context in reference [GG_1] indicates that TTC7A deficiency leads to elevated Rho Kinase activity, which in turn causes the loss of intestinal epithelial cell polarity. Familial intestinal polyatresia syndrome (FIPA) is associated with such TTC7A deficiency, thereby supporting the conclusion that FIPA increases Rho kinase activity leading to a disruption in polarity.",
+                                "retrieval_information": "-Reference: [GG_1]: Hereditary Multiple Intestinal Atresia With a Novel TTC7A Pathogenic ... by MA Badawi · 2025 · Cited by 1 — TTC7A deficiency leads to elevated Rho Kinase activity causing loss of intestinal epithelial cell polarity, growth, and differentiation with subsequent ...\n-Reference: [GG_2]: GeneCards | LOC126806211 Functional Element Wikipedia 185 : Familial multiple intestinal atresia (FMIA) or familial intestinal polyatresia syndrome (FIPA) is an inherited disorder where atresia occurs ...\n-Reference: [GG_3]: Browse Diseases - RARe-SOURCE Clicking on the disease name, lists all the disease aliases available in RARe-SOURCE™ for this disease as well as recent publications obtained from PubMed.\n-Reference: [GG_4]: MCFD2 Gene This gene encodes a soluble luminal protein with two calmodulin-like EF-hand motifs at its C-terminus. This protein forms a complex with LMAN1 (lectin ...\n-Reference: [GG_5]: Full text of \"DICTIONARY OF MEDICAL ACRONYMS And ... This dictionary lists acronyms and abbreviations occurring with a reasonable frequency in the medical literature that were identified by a systematic scanning ...\n-Reference: [GG_6]: medical-acronyms 17 Nov 2012 — This dictionary lists <strong>acronyms</strong> and abbreviations occurring with a reasonable frequency in the <strong>medical</strong> literature\n-Reference: [GG_7]: 4 575973715896959125 PDF | PDF | Standard Deviation | Variance Surgeons FIPA familial intestinal polyatresia [syn- FICSIT Frailty and Injuries: Cooperative drome] Studies of Intervention Techniques FIPS Federal ...\n\n",
+                                "extracted_entities": "Hereditary, TTC7A, FIPA, luminal, intestinal polyatresia, intestinal polyatresia syndrome, GG_7, 1 — TTC7A deficiency, Frailty, atresia, syn-, inherited disorder, Intestinal Atresia",
+                                "full_data": {
+                                    "short_answer": "Yes",
+                                    "long_answer": "Reference: [GG_1]. Detailed explanation based on the information: The context in reference [GG_1] indicates that TTC7A deficiency leads to elevated Rho Kinase activity, which in turn causes the loss of intestinal epithelial cell polarity. Familial intestinal polyatresia syndrome (FIPA) is associated with such TTC7A deficiency, thereby supporting the conclusion that FIPA increases Rho kinase activity leading to a disruption in polarity."
+                                }
+                            }
+                        ]
+                    },
+                    "wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "extracted_entities": "intestinal polyatresia syndrome",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "extracted_entities": "intestinal polyatresia syndrome",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_ner_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "extracted_entities": "intestinal polyatresia syndrome",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_sparql_wikidata": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "The provided context does not include any information linking familial intestinal polyatresia syndrome (FIPA) with an increase in Rho kinase activity or with the disruption of polarity. Reference: [SPARQL] details on familial intestinal polyatresia syndrome and Rho kinase exist separately without a demonstrated connection.",
+                        "retrieval_information": "- Reference [SPARQL]: \nfamilial intestinal polyatresia syndrome: - Human disease\n- multiple intestinal atresia (description: Human disease) - relation: has symptom: intestinal atresia (source: Q4597494)\n- multiple intestinal atresia (description: Human disease) - relation: genetic association: TTC7A (source: Q18042985)\n\nrho kinase: - protein found in Drosophila melanogaster\n- protein-coding gene in the species Mus musculus\n- protein-coding gene in the species Drosophila melanogaster\n- protein-coding gene in the species Drosophila melanogaster\n- mammalian protein found in Homo sapiens\n- class of pharmacological agent\n- clinical trial\n- US patent 11198680\n- chemical compound\n- clinical trial\n- clinical trial\n- chemical compound\n- clinical trial\n- Rock2 (description: protein-coding gene in the species Mus musculus) - relation: chromosome: mouse chromosome 12 (source: Q15305596)\n- Rock2 (description: protein-coding gene in the species Mus musculus) - relation: cytogenetic location: 12|12 A1.1 (source: 12|12 A1.1)\n- Rok (description: protein-coding gene in the species Drosophila melanogaster) - relation: chromosome: Drosophila melanogaster chromosome X (source: Q29566135)\n- Rok (description: protein-coding gene in the species Drosophila melanogaster) - relation: cytogenetic location: 14F2-14F4|1-54 cM (source: 14F2-14F4|1-54 cM)\n- Rho1 (description: protein-coding gene in the species Drosophila melanogaster) - relation: chromosome: Drosophila melanogaster chromosome 2R (source: Q29566139)\n- Rho1 (description: protein-coding gene in the species Drosophila melanogaster) - relation: cytogenetic location: 52E5-52E5|2-77 cM (source: 52E5-52E5|2-77 cM)\n\nfipa: - human disease\n- Bantu language spoken in Tanzania\n- international non-fiction film festival\n- organization\n- clown women festival\n- governing body for volleyball in Italy\n- microbial gene found in Yersinia pestis CO92\n- microbial protein found in Yersinia pestis CO92\n- microbial gene found in Bordetella pertussis Tohama I\n- microbial gene found in Escherichia coli str. K-12 substr. MG1655\n- microbial gene found in Bordetella bronchiseptica 253\n- microbial gene found in Burkholderia pseudomallei K96243\n- microbial gene found in Bordetella parapertussis Bpp5\n- microbial gene found in Yersinia enterocolitica subsp. enterocolitica 8081\n- microbial protein found in Yersinia enterocolitica subsp. enterocolitica 8081\n- common medical sign characterized by elevated body temperature\n- ethnic group from Rukwa Region of Tanzania\n- microbial protein found in Yersinia pestis CO92\n- FIPAT deals with the official international standard set of human anatomical terminologies. It is one of the six major fields of activity of the IFAA, the world body of Anatomy.\n- governing body of pallapugno in Italy\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Insufficient information",
+                                "long_answer": "The provided context does not include any information linking familial intestinal polyatresia syndrome (FIPA) with an increase in Rho kinase activity or with the disruption of polarity. Reference: [SPARQL] details on familial intestinal polyatresia syndrome and Rho kinase exist separately without a demonstrated connection.",
+                                "retrieval_information": "- Reference [SPARQL]: \nfamilial intestinal polyatresia syndrome: - Human disease\n- multiple intestinal atresia (description: Human disease) - relation: has symptom: intestinal atresia (source: Q4597494)\n- multiple intestinal atresia (description: Human disease) - relation: genetic association: TTC7A (source: Q18042985)\n\nrho kinase: - protein found in Drosophila melanogaster\n- protein-coding gene in the species Mus musculus\n- protein-coding gene in the species Drosophila melanogaster\n- protein-coding gene in the species Drosophila melanogaster\n- mammalian protein found in Homo sapiens\n- class of pharmacological agent\n- clinical trial\n- US patent 11198680\n- chemical compound\n- clinical trial\n- clinical trial\n- chemical compound\n- clinical trial\n- Rock2 (description: protein-coding gene in the species Mus musculus) - relation: chromosome: mouse chromosome 12 (source: Q15305596)\n- Rock2 (description: protein-coding gene in the species Mus musculus) - relation: cytogenetic location: 12|12 A1.1 (source: 12|12 A1.1)\n- Rok (description: protein-coding gene in the species Drosophila melanogaster) - relation: chromosome: Drosophila melanogaster chromosome X (source: Q29566135)\n- Rok (description: protein-coding gene in the species Drosophila melanogaster) - relation: cytogenetic location: 14F2-14F4|1-54 cM (source: 14F2-14F4|1-54 cM)\n- Rho1 (description: protein-coding gene in the species Drosophila melanogaster) - relation: chromosome: Drosophila melanogaster chromosome 2R (source: Q29566139)\n- Rho1 (description: protein-coding gene in the species Drosophila melanogaster) - relation: cytogenetic location: 52E5-52E5|2-77 cM (source: 52E5-52E5|2-77 cM)\n\nfipa: - human disease\n- Bantu language spoken in Tanzania\n- international non-fiction film festival\n- organization\n- clown women festival\n- governing body for volleyball in Italy\n- microbial gene found in Yersinia pestis CO92\n- microbial protein found in Yersinia pestis CO92\n- microbial gene found in Bordetella pertussis Tohama I\n- microbial gene found in Escherichia coli str. K-12 substr. MG1655\n- microbial gene found in Bordetella bronchiseptica 253\n- microbial gene found in Burkholderia pseudomallei K96243\n- microbial gene found in Bordetella parapertussis Bpp5\n- microbial gene found in Yersinia enterocolitica subsp. enterocolitica 8081\n- microbial protein found in Yersinia enterocolitica subsp. enterocolitica 8081\n- common medical sign characterized by elevated body temperature\n- ethnic group from Rukwa Region of Tanzania\n- microbial protein found in Yersinia pestis CO92\n- FIPAT deals with the official international standard set of human anatomical terminologies. It is one of the six major fields of activity of the IFAA, the world body of Anatomy.\n- governing body of pallapugno in Italy\n",
+                                "extracted_entities": "intestinal polyatresia syndrome",
+                                "full_data": {
+                                    "short_answer": "Insufficient information",
+                                    "long_answer": "The provided context does not include any information linking familial intestinal polyatresia syndrome (FIPA) with an increase in Rho kinase activity or with the disruption of polarity. Reference: [SPARQL] details on familial intestinal polyatresia syndrome and Rho kinase exist separately without a demonstrated connection."
+                                }
+                            }
+                        ]
+                    }
+                },
+                "question": "Does familial intestinal polyatresia syndrome (FIPA) increase Rho kinase activity, thereby disrupting the polarity?",
+                "search_keyword": "familial intestinal polyatresia syndrome FIPA Rho kinase activity polarity disruption"
+            }
+        }
+    }
+}

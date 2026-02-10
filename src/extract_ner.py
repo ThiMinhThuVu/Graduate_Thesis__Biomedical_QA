@@ -60,13 +60,9 @@ def extract_with_models(query, target_labels, extractor_model, extractor_model_2
                  
     return list(entities_set)
 
-def extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, retrieval_information, target_label):
-   
-    print(f"Extracting entities.")
+def extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, retrieval_information, target_label):   
     list_entities = extract_with_models(retrieval_information, target_label, extractor_model, extractor_model_2, extractor_model_3)
-          
     all_key_entities = ", ".join(list_entities)
-    
     return all_key_entities
 
 

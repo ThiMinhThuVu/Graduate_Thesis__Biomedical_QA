@@ -1,171 +1,146 @@
 {
-    "QIDX": "422230",
-    "original_question": "Is it possible to reverse hearing loss caused by hypertrophic cardiomyopathy that results from the 8363G>A mutation in the MT-TK gene?",
-    "type_q": "direct",
-    "focus_spacy_based_entity_label": [
-        "DISEASE",
-        "CHEMICAL"
-    ],
-    "target_answer_type": "correctness",
-    "key_entities": [
-        "8363G>A mutation",
-        "MT-TK gene"
-    ],
-    "1": {
-        "final_qi": {
-            "question": "Is it possible to reverse hearing loss caused by hypertrophic cardiomyopathy that results from the 8363G>A mutation in the MT-TK gene?",
-            "search_keyword": "reverse hearing loss hypertrophic cardiomyopathy 8363G>A mutation MT-TK gene",
+  "QIDX": "422230",
+  "original_question": "Is it possible to reverse hearing loss caused by hypertrophic cardiomyopathy that results from the 8363G>A mutation in the MT-TK gene?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "8363G>A mutation",
+    "MT-TK gene"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is it possible to reverse hearing loss caused by hypertrophic cardiomyopathy that results from the 8363G>A mutation in the MT-TK gene?",
+      "search_keyword": "reverse hearing loss hypertrophic cardiomyopathy 8363G>A mutation MT-TK gene",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": [
+        {
+          "source": "google",
+          "short_answer": "Insufficient information",
+          "long_answer": "Explanation: The provided context includes references related to mitochondrial diseases, including associations between the m.8363G>A mutation in the MT-TK gene, hypertrophic cardiomyopathy, and hearing loss (see references [GG_6], [GG_7], [GG_8]). However, the context does not provide any specific data or evidence suggesting that the hearing loss caused by this mutation and associated cardiomyopathy can be reversed. Therefore, there is insufficient information to address whether it is possible to reverse the hearing loss.",
+          "retrieval_information": "-Reference: [GG_1]: Creation of Mitochondrial Disease Models Using ... - PMC - NIH by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_2]: Tools and delivery technologies for mitochondrial gene editing by N Li — Mutations in mitochondrial DNA (mtDNA) are associated with refractory primary mitochondrial diseases. Due to their multi-copy nature, ...\n-Reference: [GG_3]: Creation of Mitochondrial Disease Models Using Mitochondrial DNA ... by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_4]: Mitochondria and mitochondrial disorders: an overview update 27 Jul 2022 — MD can be caused by mutations in the mitochondrial DNA (mtDNA) or nuclear DNA genes. Mutations inducing impairment of mitochondrial function ...\n-Reference: [GG_5]: Mutations in the mitochondrial tRNA Ser(AGY) gene are associated with ... by HAL Tuppen · 2012 · Cited by 22 — Mutations in the mitochondrial tRNASer(AGY) gene are associated with deafness, retinal degeneration, myopathy and epilepsy. Helen AL Tuppen, ...\n-Reference: [GG_6]: Creation of Mitochondrial Disease Models Using ... by VA Khotina · 2023 · Cited by 20 — The mutation m.8363G > A (ortholog of rat m.7755G > A) in the mtDNA tRNALys gene (MT-TK), asso- ciated with MELAS, cardiomyopathy and Leigh ...\n-Reference: [GG_7]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_8]: Pathogenic Mitochondrial tRNA Point Mutations: Nine Novel ... 20 May 2013 — Maternally inherited cardiomyopathy and hearing loss associated with a novel mutation in the mitochondrial tRNA(Lys) gene (G8363A). Am J Hum ...\n-Reference: [GG_9]: Genetic Underpinnings of Mitochondrial Cardiomyopathy by I Moudian · 2025 · Cited by 1 — This cardiac disorder results from mutations in mitochondrial DNA or nuclear genes affecting mitochondrial function. These mutations disrupt oxidative ...\n-Reference: [GG_10]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — The present article contains data about mutations linked with cytopathies that facilitate diagnosis of different syndromes by using genetic analysis methods.\n-Reference: [GG_11]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_12]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_13]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_14]: Mitochondrial Disorders - Springer Link This part includes screening of the known common mtDNA point muta- tions and large deletions (Chapter 18 ); sequence analysis of both nuclear and mitochondrial.\n-Reference: [GG_15]: Mitochondrial diseases caused by mtDNA mutations It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_16]: Genetics A single point MT-TK point mutation (m.8344A>G) is causative in approximately 80% of MERRF patients. Three additional MT-TK gene mutations (m.8356T>C, m ...\n-Reference: [GG_17]: Genetic Hearing Loss Overview - Abstract The purpose of this GeneReview is to: 1.. Describe the audiometric and clinical aspects of genetic hearing loss; 2.. Review the causes of genetic hearing ...\n-Reference: [GG_18]: Mitochondrial DNA from Genotype to Phenotype Related to Maternally ... by SA Abdullah — This study aims to determine the pathogenic role of mtDNA mutations, their contributions to maternally inherited syndromes, and their.\n-Reference: [GG_19]: Charles University First Faculty of Medicine Study section The reduction of the mitochondrial genome has led to overlapping genes (MT-ATP8/6, MT-ND4/4L and MTTY/MTTC). Mitochondrial genes on both DNA strands are ...\n-Reference: [GG_20]: Establishing the pathogenicity of novel mitochondrial DNA sequence ... by MRA Bacalhau · 2018 — There are common mutations in tRNA or rRNA genes, such as the m.3243A>G in the MT-TL gene (mt-tRNALeu) and the m.8344A>G in MT-TK gene (mt-tRNALys), causing.\n\n"
+        },
+        {
+          "source": "wiki",
+          "short_answer": "insufficient information",
+          "long_answer": "No context",
+          "retrieval_information": ""
+        },
+        {
+          "source": "crawl_wiki",
+          "short_answer": "insufficient information",
+          "long_answer": "No context",
+          "retrieval_information": ""
+        },
+        {
+          "source": "crawl_ner_wiki",
+          "short_answer": "insufficient information",
+          "long_answer": "No context",
+          "retrieval_information": ""
+        },
+        {
+          "source": "crawl_sparql_wikidata",
+          "short_answer": "insufficient information",
+          "long_answer": "No context",
+          "retrieval_information": ""
+        }
+      ]
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "google": {
             "short_answer": "Insufficient information",
             "long_answer": "Explanation: The provided context includes references related to mitochondrial diseases, including associations between the m.8363G>A mutation in the MT-TK gene, hypertrophic cardiomyopathy, and hearing loss (see references [GG_6], [GG_7], [GG_8]). However, the context does not provide any specific data or evidence suggesting that the hearing loss caused by this mutation and associated cardiomyopathy can be reversed. Therefore, there is insufficient information to address whether it is possible to reverse the hearing loss.",
             "retrieval_information": "-Reference: [GG_1]: Creation of Mitochondrial Disease Models Using ... - PMC - NIH by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_2]: Tools and delivery technologies for mitochondrial gene editing by N Li — Mutations in mitochondrial DNA (mtDNA) are associated with refractory primary mitochondrial diseases. Due to their multi-copy nature, ...\n-Reference: [GG_3]: Creation of Mitochondrial Disease Models Using Mitochondrial DNA ... by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_4]: Mitochondria and mitochondrial disorders: an overview update 27 Jul 2022 — MD can be caused by mutations in the mitochondrial DNA (mtDNA) or nuclear DNA genes. Mutations inducing impairment of mitochondrial function ...\n-Reference: [GG_5]: Mutations in the mitochondrial tRNA Ser(AGY) gene are associated with ... by HAL Tuppen · 2012 · Cited by 22 — Mutations in the mitochondrial tRNASer(AGY) gene are associated with deafness, retinal degeneration, myopathy and epilepsy. Helen AL Tuppen, ...\n-Reference: [GG_6]: Creation of Mitochondrial Disease Models Using ... by VA Khotina · 2023 · Cited by 20 — The mutation m.8363G > A (ortholog of rat m.7755G > A) in the mtDNA tRNALys gene (MT-TK), asso- ciated with MELAS, cardiomyopathy and Leigh ...\n-Reference: [GG_7]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_8]: Pathogenic Mitochondrial tRNA Point Mutations: Nine Novel ... 20 May 2013 — Maternally inherited cardiomyopathy and hearing loss associated with a novel mutation in the mitochondrial tRNA(Lys) gene (G8363A). Am J Hum ...\n-Reference: [GG_9]: Genetic Underpinnings of Mitochondrial Cardiomyopathy by I Moudian · 2025 · Cited by 1 — This cardiac disorder results from mutations in mitochondrial DNA or nuclear genes affecting mitochondrial function. These mutations disrupt oxidative ...\n-Reference: [GG_10]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — The present article contains data about mutations linked with cytopathies that facilitate diagnosis of different syndromes by using genetic analysis methods.\n-Reference: [GG_11]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_12]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_13]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_14]: Mitochondrial Disorders - Springer Link This part includes screening of the known common mtDNA point muta- tions and large deletions (Chapter 18 ); sequence analysis of both nuclear and mitochondrial.\n-Reference: [GG_15]: Mitochondrial diseases caused by mtDNA mutations It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_16]: Genetics A single point MT-TK point mutation (m.8344A>G) is causative in approximately 80% of MERRF patients. Three additional MT-TK gene mutations (m.8356T>C, m ...\n-Reference: [GG_17]: Genetic Hearing Loss Overview - Abstract The purpose of this GeneReview is to: 1.. Describe the audiometric and clinical aspects of genetic hearing loss; 2.. Review the causes of genetic hearing ...\n-Reference: [GG_18]: Mitochondrial DNA from Genotype to Phenotype Related to Maternally ... by SA Abdullah — This study aims to determine the pathogenic role of mtDNA mutations, their contributions to maternally inherited syndromes, and their.\n-Reference: [GG_19]: Charles University First Faculty of Medicine Study section The reduction of the mitochondrial genome has led to overlapping genes (MT-ATP8/6, MT-ND4/4L and MTTY/MTTC). Mitochondrial genes on both DNA strands are ...\n-Reference: [GG_20]: Establishing the pathogenicity of novel mitochondrial DNA sequence ... by MRA Bacalhau · 2018 — There are common mutations in tRNA or rRNA genes, such as the m.3243A>G in the MT-TL gene (mt-tRNALeu) and the m.8344A>G in MT-TK gene (mt-tRNALys), causing.\n\n",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
             "candidate": [
-                {
-                    "source": "google",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "Explanation: The provided context includes references related to mitochondrial diseases, including associations between the m.8363G>A mutation in the MT-TK gene, hypertrophic cardiomyopathy, and hearing loss (see references [GG_6], [GG_7], [GG_8]). However, the context does not provide any specific data or evidence suggesting that the hearing loss caused by this mutation and associated cardiomyopathy can be reversed. Therefore, there is insufficient information to address whether it is possible to reverse the hearing loss.",
-                    "retrieval_information": "-Reference: [GG_1]: Creation of Mitochondrial Disease Models Using ... - PMC - NIH by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_2]: Tools and delivery technologies for mitochondrial gene editing by N Li — Mutations in mitochondrial DNA (mtDNA) are associated with refractory primary mitochondrial diseases. Due to their multi-copy nature, ...\n-Reference: [GG_3]: Creation of Mitochondrial Disease Models Using Mitochondrial DNA ... by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_4]: Mitochondria and mitochondrial disorders: an overview update 27 Jul 2022 — MD can be caused by mutations in the mitochondrial DNA (mtDNA) or nuclear DNA genes. Mutations inducing impairment of mitochondrial function ...\n-Reference: [GG_5]: Mutations in the mitochondrial tRNA Ser(AGY) gene are associated with ... by HAL Tuppen · 2012 · Cited by 22 — Mutations in the mitochondrial tRNASer(AGY) gene are associated with deafness, retinal degeneration, myopathy and epilepsy. Helen AL Tuppen, ...\n-Reference: [GG_6]: Creation of Mitochondrial Disease Models Using ... by VA Khotina · 2023 · Cited by 20 — The mutation m.8363G > A (ortholog of rat m.7755G > A) in the mtDNA tRNALys gene (MT-TK), asso- ciated with MELAS, cardiomyopathy and Leigh ...\n-Reference: [GG_7]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_8]: Pathogenic Mitochondrial tRNA Point Mutations: Nine Novel ... 20 May 2013 — Maternally inherited cardiomyopathy and hearing loss associated with a novel mutation in the mitochondrial tRNA(Lys) gene (G8363A). Am J Hum ...\n-Reference: [GG_9]: Genetic Underpinnings of Mitochondrial Cardiomyopathy by I Moudian · 2025 · Cited by 1 — This cardiac disorder results from mutations in mitochondrial DNA or nuclear genes affecting mitochondrial function. These mutations disrupt oxidative ...\n-Reference: [GG_10]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — The present article contains data about mutations linked with cytopathies that facilitate diagnosis of different syndromes by using genetic analysis methods.\n-Reference: [GG_11]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_12]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_13]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_14]: Mitochondrial Disorders - Springer Link This part includes screening of the known common mtDNA point muta- tions and large deletions (Chapter 18 ); sequence analysis of both nuclear and mitochondrial.\n-Reference: [GG_15]: Mitochondrial diseases caused by mtDNA mutations It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_16]: Genetics A single point MT-TK point mutation (m.8344A>G) is causative in approximately 80% of MERRF patients. Three additional MT-TK gene mutations (m.8356T>C, m ...\n-Reference: [GG_17]: Genetic Hearing Loss Overview - Abstract The purpose of this GeneReview is to: 1.. Describe the audiometric and clinical aspects of genetic hearing loss; 2.. Review the causes of genetic hearing ...\n-Reference: [GG_18]: Mitochondrial DNA from Genotype to Phenotype Related to Maternally ... by SA Abdullah — This study aims to determine the pathogenic role of mtDNA mutations, their contributions to maternally inherited syndromes, and their.\n-Reference: [GG_19]: Charles University First Faculty of Medicine Study section The reduction of the mitochondrial genome has led to overlapping genes (MT-ATP8/6, MT-ND4/4L and MTTY/MTTC). Mitochondrial genes on both DNA strands are ...\n-Reference: [GG_20]: Establishing the pathogenicity of novel mitochondrial DNA sequence ... by MRA Bacalhau · 2018 — There are common mutations in tRNA or rRNA genes, such as the m.3243A>G in the MT-TL gene (mt-tRNALeu) and the m.8344A>G in MT-TK gene (mt-tRNALys), causing.\n\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context includes references related to mitochondrial diseases, including associations between the m.8363G>A mutation in the MT-TK gene, hypertrophic cardiomyopathy, and hearing loss (see references [GG_6], [GG_7], [GG_8]). However, the context does not provide any specific data or evidence suggesting that the hearing loss caused by this mutation and associated cardiomyopathy can be reversed. Therefore, there is insufficient information to address whether it is possible to reverse the hearing loss."
-                    }
-                },
-                {
-                    "source": "wiki",
-                    "short_answer": "insufficient information",
-                    "long_answer": "No context",
-                    "retrieval_information": "",
-                    "full_data": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context"
-                    }
-                },
-                {
-                    "source": "crawl_wiki",
-                    "short_answer": "insufficient information",
-                    "long_answer": "No context",
-                    "retrieval_information": "",
-                    "full_data": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context"
-                    }
-                },
-                {
-                    "source": "crawl_ner_wiki",
-                    "short_answer": "insufficient information",
-                    "long_answer": "No context",
-                    "retrieval_information": "",
-                    "full_data": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context"
-                    }
-                },
-                {
-                    "source": "crawl_sparql_wikidata",
-                    "short_answer": "insufficient information",
-                    "long_answer": "No context",
-                    "retrieval_information": "",
-                    "full_data": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context"
-                    }
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "Explanation: The provided context includes references related to mitochondrial diseases, including associations between the m.8363G>A mutation in the MT-TK gene, hypertrophic cardiomyopathy, and hearing loss (see references [GG_6], [GG_7], [GG_8]). However, the context does not provide any specific data or evidence suggesting that the hearing loss caused by this mutation and associated cardiomyopathy can be reversed. Therefore, there is insufficient information to address whether it is possible to reverse the hearing loss.",
+                "retrieval_information": "-Reference: [GG_1]: Creation of Mitochondrial Disease Models Using ... - PMC - NIH by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_2]: Tools and delivery technologies for mitochondrial gene editing by N Li — Mutations in mitochondrial DNA (mtDNA) are associated with refractory primary mitochondrial diseases. Due to their multi-copy nature, ...\n-Reference: [GG_3]: Creation of Mitochondrial Disease Models Using Mitochondrial DNA ... by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_4]: Mitochondria and mitochondrial disorders: an overview update 27 Jul 2022 — MD can be caused by mutations in the mitochondrial DNA (mtDNA) or nuclear DNA genes. Mutations inducing impairment of mitochondrial function ...\n-Reference: [GG_5]: Mutations in the mitochondrial tRNA Ser(AGY) gene are associated with ... by HAL Tuppen · 2012 · Cited by 22 — Mutations in the mitochondrial tRNASer(AGY) gene are associated with deafness, retinal degeneration, myopathy and epilepsy. Helen AL Tuppen, ...\n-Reference: [GG_6]: Creation of Mitochondrial Disease Models Using ... by VA Khotina · 2023 · Cited by 20 — The mutation m.8363G > A (ortholog of rat m.7755G > A) in the mtDNA tRNALys gene (MT-TK), asso- ciated with MELAS, cardiomyopathy and Leigh ...\n-Reference: [GG_7]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_8]: Pathogenic Mitochondrial tRNA Point Mutations: Nine Novel ... 20 May 2013 — Maternally inherited cardiomyopathy and hearing loss associated with a novel mutation in the mitochondrial tRNA(Lys) gene (G8363A). Am J Hum ...\n-Reference: [GG_9]: Genetic Underpinnings of Mitochondrial Cardiomyopathy by I Moudian · 2025 · Cited by 1 — This cardiac disorder results from mutations in mitochondrial DNA or nuclear genes affecting mitochondrial function. These mutations disrupt oxidative ...\n-Reference: [GG_10]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — The present article contains data about mutations linked with cytopathies that facilitate diagnosis of different syndromes by using genetic analysis methods.\n-Reference: [GG_11]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_12]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_13]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_14]: Mitochondrial Disorders - Springer Link This part includes screening of the known common mtDNA point muta- tions and large deletions (Chapter 18 ); sequence analysis of both nuclear and mitochondrial.\n-Reference: [GG_15]: Mitochondrial diseases caused by mtDNA mutations It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_16]: Genetics A single point MT-TK point mutation (m.8344A>G) is causative in approximately 80% of MERRF patients. Three additional MT-TK gene mutations (m.8356T>C, m ...\n-Reference: [GG_17]: Genetic Hearing Loss Overview - Abstract The purpose of this GeneReview is to: 1.. Describe the audiometric and clinical aspects of genetic hearing loss; 2.. Review the causes of genetic hearing ...\n-Reference: [GG_18]: Mitochondrial DNA from Genotype to Phenotype Related to Maternally ... by SA Abdullah — This study aims to determine the pathogenic role of mtDNA mutations, their contributions to maternally inherited syndromes, and their.\n-Reference: [GG_19]: Charles University First Faculty of Medicine Study section The reduction of the mitochondrial genome has led to overlapping genes (MT-ATP8/6, MT-ND4/4L and MTTY/MTTC). Mitochondrial genes on both DNA strands are ...\n-Reference: [GG_20]: Establishing the pathogenicity of novel mitochondrial DNA sequence ... by MRA Bacalhau · 2018 — There are common mutations in tRNA or rRNA genes, such as the m.3243A>G in the MT-TL gene (mt-tRNALeu) and the m.8344A>G in MT-TK gene (mt-tRNALys), causing.\n\n",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "Explanation: The provided context includes references related to mitochondrial diseases, including associations between the m.8363G>A mutation in the MT-TK gene, hypertrophic cardiomyopathy, and hearing loss (see references [GG_6], [GG_7], [GG_8]). However, the context does not provide any specific data or evidence suggesting that the hearing loss caused by this mutation and associated cardiomyopathy can be reversed. Therefore, there is insufficient information to address whether it is possible to reverse the hearing loss."
                 }
+              }
             ]
+          },
+          "wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_sparql_wikidata": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
         },
-        "0": {
-            "0": {
-                "source_output": {
-                    "google": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context includes references related to mitochondrial diseases, including associations between the m.8363G>A mutation in the MT-TK gene, hypertrophic cardiomyopathy, and hearing loss (see references [GG_6], [GG_7], [GG_8]). However, the context does not provide any specific data or evidence suggesting that the hearing loss caused by this mutation and associated cardiomyopathy can be reversed. Therefore, there is insufficient information to address whether it is possible to reverse the hearing loss.",
-                        "retrieval_information": "-Reference: [GG_1]: Creation of Mitochondrial Disease Models Using ... - PMC - NIH by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_2]: Tools and delivery technologies for mitochondrial gene editing by N Li — Mutations in mitochondrial DNA (mtDNA) are associated with refractory primary mitochondrial diseases. Due to their multi-copy nature, ...\n-Reference: [GG_3]: Creation of Mitochondrial Disease Models Using Mitochondrial DNA ... by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_4]: Mitochondria and mitochondrial disorders: an overview update 27 Jul 2022 — MD can be caused by mutations in the mitochondrial DNA (mtDNA) or nuclear DNA genes. Mutations inducing impairment of mitochondrial function ...\n-Reference: [GG_5]: Mutations in the mitochondrial tRNA Ser(AGY) gene are associated with ... by HAL Tuppen · 2012 · Cited by 22 — Mutations in the mitochondrial tRNASer(AGY) gene are associated with deafness, retinal degeneration, myopathy and epilepsy. Helen AL Tuppen, ...\n-Reference: [GG_6]: Creation of Mitochondrial Disease Models Using ... by VA Khotina · 2023 · Cited by 20 — The mutation m.8363G > A (ortholog of rat m.7755G > A) in the mtDNA tRNALys gene (MT-TK), asso- ciated with MELAS, cardiomyopathy and Leigh ...\n-Reference: [GG_7]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_8]: Pathogenic Mitochondrial tRNA Point Mutations: Nine Novel ... 20 May 2013 — Maternally inherited cardiomyopathy and hearing loss associated with a novel mutation in the mitochondrial tRNA(Lys) gene (G8363A). Am J Hum ...\n-Reference: [GG_9]: Genetic Underpinnings of Mitochondrial Cardiomyopathy by I Moudian · 2025 · Cited by 1 — This cardiac disorder results from mutations in mitochondrial DNA or nuclear genes affecting mitochondrial function. These mutations disrupt oxidative ...\n-Reference: [GG_10]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — The present article contains data about mutations linked with cytopathies that facilitate diagnosis of different syndromes by using genetic analysis methods.\n-Reference: [GG_11]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_12]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_13]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_14]: Mitochondrial Disorders - Springer Link This part includes screening of the known common mtDNA point muta- tions and large deletions (Chapter 18 ); sequence analysis of both nuclear and mitochondrial.\n-Reference: [GG_15]: Mitochondrial diseases caused by mtDNA mutations It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_16]: Genetics A single point MT-TK point mutation (m.8344A>G) is causative in approximately 80% of MERRF patients. Three additional MT-TK gene mutations (m.8356T>C, m ...\n-Reference: [GG_17]: Genetic Hearing Loss Overview - Abstract The purpose of this GeneReview is to: 1.. Describe the audiometric and clinical aspects of genetic hearing loss; 2.. Review the causes of genetic hearing ...\n-Reference: [GG_18]: Mitochondrial DNA from Genotype to Phenotype Related to Maternally ... by SA Abdullah — This study aims to determine the pathogenic role of mtDNA mutations, their contributions to maternally inherited syndromes, and their.\n-Reference: [GG_19]: Charles University First Faculty of Medicine Study section The reduction of the mitochondrial genome has led to overlapping genes (MT-ATP8/6, MT-ND4/4L and MTTY/MTTC). Mitochondrial genes on both DNA strands are ...\n-Reference: [GG_20]: Establishing the pathogenicity of novel mitochondrial DNA sequence ... by MRA Bacalhau · 2018 — There are common mutations in tRNA or rRNA genes, such as the m.3243A>G in the MT-TL gene (mt-tRNALeu) and the m.8344A>G in MT-TK gene (mt-tRNALys), causing.\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "Explanation: The provided context includes references related to mitochondrial diseases, including associations between the m.8363G>A mutation in the MT-TK gene, hypertrophic cardiomyopathy, and hearing loss (see references [GG_6], [GG_7], [GG_8]). However, the context does not provide any specific data or evidence suggesting that the hearing loss caused by this mutation and associated cardiomyopathy can be reversed. Therefore, there is insufficient information to address whether it is possible to reverse the hearing loss.",
-                                "retrieval_information": "-Reference: [GG_1]: Creation of Mitochondrial Disease Models Using ... - PMC - NIH by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_2]: Tools and delivery technologies for mitochondrial gene editing by N Li — Mutations in mitochondrial DNA (mtDNA) are associated with refractory primary mitochondrial diseases. Due to their multi-copy nature, ...\n-Reference: [GG_3]: Creation of Mitochondrial Disease Models Using Mitochondrial DNA ... by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_4]: Mitochondria and mitochondrial disorders: an overview update 27 Jul 2022 — MD can be caused by mutations in the mitochondrial DNA (mtDNA) or nuclear DNA genes. Mutations inducing impairment of mitochondrial function ...\n-Reference: [GG_5]: Mutations in the mitochondrial tRNA Ser(AGY) gene are associated with ... by HAL Tuppen · 2012 · Cited by 22 — Mutations in the mitochondrial tRNASer(AGY) gene are associated with deafness, retinal degeneration, myopathy and epilepsy. Helen AL Tuppen, ...\n-Reference: [GG_6]: Creation of Mitochondrial Disease Models Using ... by VA Khotina · 2023 · Cited by 20 — The mutation m.8363G > A (ortholog of rat m.7755G > A) in the mtDNA tRNALys gene (MT-TK), asso- ciated with MELAS, cardiomyopathy and Leigh ...\n-Reference: [GG_7]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_8]: Pathogenic Mitochondrial tRNA Point Mutations: Nine Novel ... 20 May 2013 — Maternally inherited cardiomyopathy and hearing loss associated with a novel mutation in the mitochondrial tRNA(Lys) gene (G8363A). Am J Hum ...\n-Reference: [GG_9]: Genetic Underpinnings of Mitochondrial Cardiomyopathy by I Moudian · 2025 · Cited by 1 — This cardiac disorder results from mutations in mitochondrial DNA or nuclear genes affecting mitochondrial function. These mutations disrupt oxidative ...\n-Reference: [GG_10]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — The present article contains data about mutations linked with cytopathies that facilitate diagnosis of different syndromes by using genetic analysis methods.\n-Reference: [GG_11]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_12]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_13]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_14]: Mitochondrial Disorders - Springer Link This part includes screening of the known common mtDNA point muta- tions and large deletions (Chapter 18 ); sequence analysis of both nuclear and mitochondrial.\n-Reference: [GG_15]: Mitochondrial diseases caused by mtDNA mutations It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_16]: Genetics A single point MT-TK point mutation (m.8344A>G) is causative in approximately 80% of MERRF patients. Three additional MT-TK gene mutations (m.8356T>C, m ...\n-Reference: [GG_17]: Genetic Hearing Loss Overview - Abstract The purpose of this GeneReview is to: 1.. Describe the audiometric and clinical aspects of genetic hearing loss; 2.. Review the causes of genetic hearing ...\n-Reference: [GG_18]: Mitochondrial DNA from Genotype to Phenotype Related to Maternally ... by SA Abdullah — This study aims to determine the pathogenic role of mtDNA mutations, their contributions to maternally inherited syndromes, and their.\n-Reference: [GG_19]: Charles University First Faculty of Medicine Study section The reduction of the mitochondrial genome has led to overlapping genes (MT-ATP8/6, MT-ND4/4L and MTTY/MTTC). Mitochondrial genes on both DNA strands are ...\n-Reference: [GG_20]: Establishing the pathogenicity of novel mitochondrial DNA sequence ... by MRA Bacalhau · 2018 — There are common mutations in tRNA or rRNA genes, such as the m.3243A>G in the MT-TL gene (mt-tRNALeu) and the m.8344A>G in MT-TK gene (mt-tRNALys), causing.\n\n",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "Explanation: The provided context includes references related to mitochondrial diseases, including associations between the m.8363G>A mutation in the MT-TK gene, hypertrophic cardiomyopathy, and hearing loss (see references [GG_6], [GG_7], [GG_8]). However, the context does not provide any specific data or evidence suggesting that the hearing loss caused by this mutation and associated cardiomyopathy can be reversed. Therefore, there is insufficient information to address whether it is possible to reverse the hearing loss."
-                                }
-                            }
-                        ]
-                    },
-                    "wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_ner_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_sparql_wikidata": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    }
-                },
-                "question": "Is it possible to reverse hearing loss caused by hypertrophic cardiomyopathy that results from the 8363G>A mutation in the MT-TK gene?",
-                "search_keyword": "reverse hearing loss hypertrophic cardiomyopathy 8363G>A mutation MT-TK gene"
-            }
-        }
-    },
-    "final_answer": {
-        "long_answer": "Explanation: The provided context includes references related to mitochondrial diseases, including associations between the m.8363G>A mutation in the MT-TK gene, hypertrophic cardiomyopathy, and hearing loss (see references [GG_6], [GG_7], [GG_8]). However, the context does not provide any specific data or evidence suggesting that the hearing loss caused by this mutation and associated cardiomyopathy can be reversed. Therefore, there is insufficient information to address whether it is possible to reverse the hearing loss.",
-        "short_answer": "Insufficient information",
-        "retrieval_information": "-Reference: [GG_1]: Creation of Mitochondrial Disease Models Using ... - PMC - NIH by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_2]: Tools and delivery technologies for mitochondrial gene editing by N Li — Mutations in mitochondrial DNA (mtDNA) are associated with refractory primary mitochondrial diseases. Due to their multi-copy nature, ...\n-Reference: [GG_3]: Creation of Mitochondrial Disease Models Using Mitochondrial DNA ... by VA Khotina · 2023 · Cited by 20 — This review is devoted to discussing animal models of human mitochondrial diseases and recently developed approaches used to create them.\n-Reference: [GG_4]: Mitochondria and mitochondrial disorders: an overview update 27 Jul 2022 — MD can be caused by mutations in the mitochondrial DNA (mtDNA) or nuclear DNA genes. Mutations inducing impairment of mitochondrial function ...\n-Reference: [GG_5]: Mutations in the mitochondrial tRNA Ser(AGY) gene are associated with ... by HAL Tuppen · 2012 · Cited by 22 — Mutations in the mitochondrial tRNASer(AGY) gene are associated with deafness, retinal degeneration, myopathy and epilepsy. Helen AL Tuppen, ...\n-Reference: [GG_6]: Creation of Mitochondrial Disease Models Using ... by VA Khotina · 2023 · Cited by 20 — The mutation m.8363G > A (ortholog of rat m.7755G > A) in the mtDNA tRNALys gene (MT-TK), asso- ciated with MELAS, cardiomyopathy and Leigh ...\n-Reference: [GG_7]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_8]: Pathogenic Mitochondrial tRNA Point Mutations: Nine Novel ... 20 May 2013 — Maternally inherited cardiomyopathy and hearing loss associated with a novel mutation in the mitochondrial tRNA(Lys) gene (G8363A). Am J Hum ...\n-Reference: [GG_9]: Genetic Underpinnings of Mitochondrial Cardiomyopathy by I Moudian · 2025 · Cited by 1 — This cardiac disorder results from mutations in mitochondrial DNA or nuclear genes affecting mitochondrial function. These mutations disrupt oxidative ...\n-Reference: [GG_10]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by AI Ryzhkova · 2018 · Cited by 121 — The present article contains data about mutations linked with cytopathies that facilitate diagnosis of different syndromes by using genetic analysis methods.\n-Reference: [GG_11]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_12]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_13]: Mitochondrial diseases caused by mtDNA mutations: a mini-review by A i Ryzhkova · 2018 · Cited by 121 — It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_14]: Mitochondrial Disorders - Springer Link This part includes screening of the known common mtDNA point muta- tions and large deletions (Chapter 18 ); sequence analysis of both nuclear and mitochondrial.\n-Reference: [GG_15]: Mitochondrial diseases caused by mtDNA mutations It was found that MT-TK gene mutations are the cause of MERRF; in 80% of cases, mutation m.8344A.G occurs; mutations m.8356T.C and m.8363G.A are detected.\n-Reference: [GG_16]: Genetics A single point MT-TK point mutation (m.8344A>G) is causative in approximately 80% of MERRF patients. Three additional MT-TK gene mutations (m.8356T>C, m ...\n-Reference: [GG_17]: Genetic Hearing Loss Overview - Abstract The purpose of this GeneReview is to: 1.. Describe the audiometric and clinical aspects of genetic hearing loss; 2.. Review the causes of genetic hearing ...\n-Reference: [GG_18]: Mitochondrial DNA from Genotype to Phenotype Related to Maternally ... by SA Abdullah — This study aims to determine the pathogenic role of mtDNA mutations, their contributions to maternally inherited syndromes, and their.\n-Reference: [GG_19]: Charles University First Faculty of Medicine Study section The reduction of the mitochondrial genome has led to overlapping genes (MT-ATP8/6, MT-ND4/4L and MTTY/MTTC). Mitochondrial genes on both DNA strands are ...\n-Reference: [GG_20]: Establishing the pathogenicity of novel mitochondrial DNA sequence ... by MRA Bacalhau · 2018 — There are common mutations in tRNA or rRNA genes, such as the m.3243A>G in the MT-TL gene (mt-tRNALeu) and the m.8344A>G in MT-TK gene (mt-tRNALys), causing.\n\n"
+        "question": "Is it possible to reverse hearing loss caused by hypertrophic cardiomyopathy that results from the 8363G>A mutation in the MT-TK gene?",
+        "search_keyword": "reverse hearing loss hypertrophic cardiomyopathy 8363G>A mutation MT-TK gene"
+      }
     }
+  }
 }

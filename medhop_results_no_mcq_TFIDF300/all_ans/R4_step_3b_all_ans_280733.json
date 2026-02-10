@@ -1,173 +1,148 @@
 {
-    "QIDX": "280733",
-    "original_question": "Is St. Vitus's dance one of the major Jones criteria used to diagnose acute rheumatic fever?",
-    "type_q": "direct",
-    "focus_spacy_based_entity_label": [
-        "DISEASE",
-        "CHEMICAL"
-    ],
-    "target_answer_type": "correctness",
-    "key_entities": [
-        "acute rheumatic fever",
-        "St. Vitus's dance",
-        "Is St. Vitus's",
-        "Jones criteria"
-    ],
-    "1": {
-        "final_qi": {
-            "question": "Is St. Vitus's dance one of the major Jones criteria used to diagnose acute rheumatic fever?",
-            "search_keyword": "St. Vitus's dance Jones criteria acute rheumatic fever diagnosis",
+  "QIDX": "280733",
+  "original_question": "Is St. Vitus's dance one of the major Jones criteria used to diagnose acute rheumatic fever?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "acute rheumatic fever",
+    "St. Vitus's dance",
+    "Is St. Vitus's",
+    "Jones criteria"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is St. Vitus's dance one of the major Jones criteria used to diagnose acute rheumatic fever?",
+      "search_keyword": "St. Vitus's dance Jones criteria acute rheumatic fever diagnosis",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": [
+        {
+          "source": "google",
+          "short_answer": "Yes",
+          "long_answer": "Reference: [GG_1], [GG_4], [GG_7]. Explanation: The provided context indicates that Sydenham Chorea, also known as St. Vitus's dance, is a major manifestation or criterion in the diagnosis of acute rheumatic fever according to the Jones criteria. For example, reference [GG_1] explicitly states that St. Vitus dance is a major manifestation in up to 40% of patients, and reference [GG_4] lists chorea along with other major criteria such as polyarthritis and carditis.",
+          "retrieval_information": "-Reference: [GG_1]: Sydenham Chorea - StatPearls - NCBI Bookshelf - NIH by K Beier · 2024 · Cited by 20 — Sydenham chorea, or St. Vitus dance, is a major manifestation of rheumatic fever in up to 40% of patients with rheumatic fever.\n-Reference: [GG_2]: Clinical Guidance for Acute Rheumatic Fever | Group A Strep There's no definitive diagnostic test for acute rheumatic fever. Instead, the Jones Criteria and supplemental testing are used. Keep Reading Diagnosing Acute ...\n-Reference: [GG_3]: Rheumatic Fever | Jones criteria | Clinical Features by O Guides · 2020 — Sydenham's chorea is also sometimes referred to as St Vitus' dance. Erythema marginatum (<5% of patients). Erythema marginatum is a rash ...\n-Reference: [GG_4]: Acute rheumatic fever Major criteria are polyarthritis, carditis, chorea, erythema marginatum and subcutaneous nodules. Minor criteria are fever, arthralgia, elevated erythrocyte ...\n-Reference: [GG_5]: Acute Rheumatic Fever Presenting with Sydenham's Chorea 2003 · Cited by 12 — Guidelines for the diagnosis of initial attack of rheumatic fever (Jones Criteria). Major manifestation. Minor manifestation. Carditis. Fever. Migratory ...\n-Reference: [GG_6]: Abstract 4370897: Sydenham Chorea as the Presenting ... 3 Nov 2025 — Based on the history and findings, a diagnosis of Acute Rheumatic Fever with Sydenham chorea and valvular heart disease was made. The patient ...\n-Reference: [GG_7]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_8]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_9]: Clinical Evaluation and Diagnosis of Acute Rheumatic Fever 2 Feb 2021 — The diagnosis of acute rheumatic fever (ARF) relies on a combination of clinical evaluation and laboratory studies. Diagnosis is usually made ...\n-Reference: [GG_10]: Rheumatic Heart Disease Clinical Presentation 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n-Reference: [GG_11]: Acute Rheumatic Fever and Rheumatic Heart Disease - NCBI by S Wirth · 2024 · Cited by 6 — The Jones Criteria emphasize that ARF is a diagnosis of exclusion that requires careful consideration of alternative processes (Gewitz, et al., ...\n-Reference: [GG_12]: Rheumatic Fever: Causes, Symptoms, Treatment, Diagnostic Criteria 14 Nov 2024 — The Jones criteria is a list of the effects in the body that rheumatic fever can have. The criteria is used as a basis for diagnosis of ...\n-Reference: [GG_13]: Jones' criteria for diagnosis of rheumatic fever: Major ... 1 Jan 2018 — Sydenham's chorea (St Vitus dance), commoner in females, in 10% of patients; subcutaneous nodules in 2 to 20%; erythema marginatum in 2 to 10 ...\n-Reference: [GG_14]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_15]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_16]: Acute Rheumatic Fever | SpringerLink by J Domachowske · 2020 — Also known as St. Vitus' dance. If present, even without other major or minor criteria, it is diagnostic for ARF.\n-Reference: [GG_17]: Acute Rheumatic Fever (ARF): Symptoms, Jones Criteria & Treatment 13 Dec 2025 — Chorea, also known as St. Vitus Dance, is characterized by involuntary, aimless, non-rhythmic movements of the limbs, face, and trunk.\n-Reference: [GG_18]: Acute Rheumatic Fever | Johns Hopkins ABX Guide 5 Mar 2022 — DIAGNOSIS · Evidence of GAS preceding infection: required either. Increased or rising ASO or anti-DNASE B titers. A rising titer is considered ...\n-Reference: [GG_19]: Acute Rheumatic Fever 10 Sept 2024 — Vitus dance (chorea associated with acute rheumatic fever) ... Definite disease is defined as meeting the Jones diagnostic criteria.\n-Reference: [GG_20]: Rheumatic Heart Disease Clinical Presentation: History, Physical ... 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n\n"
+        },
+        {
+          "source": "wiki",
+          "short_answer": "Yes",
+          "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The context explains that Sydenham's chorea, also known as St. Vitus's dance, is recognized as one of the major Jones criteria for diagnosing rheumatic fever.",
+          "retrieval_information": "-Reference: [WIKI_1]: Rheumatic fever According to revised Jones criteria, the diagnosis of rheumatic fever can be made when two of the major criteria, or one major criterion plus two minor criteria ...\n-Reference: [WIKI_2]: Portal:Medicine/Did you know Did you know 5 ·... that Sydenham's chorea (or St. Vitus' dance) is one of the major criteria in the Jones diagnostic criteria for rheumatic fever? ·... that ...\n\n"
+        },
+        {
+          "source": "crawl_wiki",
+          "short_answer": "insufficient information",
+          "long_answer": "No context",
+          "retrieval_information": ""
+        },
+        {
+          "source": "crawl_ner_wiki",
+          "short_answer": "insufficient information",
+          "long_answer": "No context",
+          "retrieval_information": ""
+        },
+        {
+          "source": "crawl_sparql_wikidata",
+          "short_answer": "Insufficient information",
+          "long_answer": "The provided context does not include any specific information about the Jones criteria or whether St. Vitus's dance is one of them. No mention of St. Vitus's dance or its role in the diagnosis of acute rheumatic fever is found in the references listed.",
+          "retrieval_information": "- Reference [SPARQL]: \nacute rheumatic fever: - post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain\n- human disease\n- Report published by Australian Institute of Health and Welfare on 2022-08-17.\n- Report published by Australian Institute of Health and Welfare on 2023-05-30.\n- Report published by Australian Institute of Health and Welfare on 2019-10-11.\n- rheumatic fever (description: post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain) - relation: health specialty: cardiology (source: Q10379)\n- chronic rheumatic pericarditis (description: human disease) - relation: health specialty: cardiology (source: Q10379)\n"
+        }
+      ]
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "google": {
             "short_answer": "Yes",
             "long_answer": "Reference: [GG_1], [GG_4], [GG_7]. Explanation: The provided context indicates that Sydenham Chorea, also known as St. Vitus's dance, is a major manifestation or criterion in the diagnosis of acute rheumatic fever according to the Jones criteria. For example, reference [GG_1] explicitly states that St. Vitus dance is a major manifestation in up to 40% of patients, and reference [GG_4] lists chorea along with other major criteria such as polyarthritis and carditis.",
             "retrieval_information": "-Reference: [GG_1]: Sydenham Chorea - StatPearls - NCBI Bookshelf - NIH by K Beier · 2024 · Cited by 20 — Sydenham chorea, or St. Vitus dance, is a major manifestation of rheumatic fever in up to 40% of patients with rheumatic fever.\n-Reference: [GG_2]: Clinical Guidance for Acute Rheumatic Fever | Group A Strep There's no definitive diagnostic test for acute rheumatic fever. Instead, the Jones Criteria and supplemental testing are used. Keep Reading Diagnosing Acute ...\n-Reference: [GG_3]: Rheumatic Fever | Jones criteria | Clinical Features by O Guides · 2020 — Sydenham's chorea is also sometimes referred to as St Vitus' dance. Erythema marginatum (<5% of patients). Erythema marginatum is a rash ...\n-Reference: [GG_4]: Acute rheumatic fever Major criteria are polyarthritis, carditis, chorea, erythema marginatum and subcutaneous nodules. Minor criteria are fever, arthralgia, elevated erythrocyte ...\n-Reference: [GG_5]: Acute Rheumatic Fever Presenting with Sydenham's Chorea 2003 · Cited by 12 — Guidelines for the diagnosis of initial attack of rheumatic fever (Jones Criteria). Major manifestation. Minor manifestation. Carditis. Fever. Migratory ...\n-Reference: [GG_6]: Abstract 4370897: Sydenham Chorea as the Presenting ... 3 Nov 2025 — Based on the history and findings, a diagnosis of Acute Rheumatic Fever with Sydenham chorea and valvular heart disease was made. The patient ...\n-Reference: [GG_7]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_8]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_9]: Clinical Evaluation and Diagnosis of Acute Rheumatic Fever 2 Feb 2021 — The diagnosis of acute rheumatic fever (ARF) relies on a combination of clinical evaluation and laboratory studies. Diagnosis is usually made ...\n-Reference: [GG_10]: Rheumatic Heart Disease Clinical Presentation 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n-Reference: [GG_11]: Acute Rheumatic Fever and Rheumatic Heart Disease - NCBI by S Wirth · 2024 · Cited by 6 — The Jones Criteria emphasize that ARF is a diagnosis of exclusion that requires careful consideration of alternative processes (Gewitz, et al., ...\n-Reference: [GG_12]: Rheumatic Fever: Causes, Symptoms, Treatment, Diagnostic Criteria 14 Nov 2024 — The Jones criteria is a list of the effects in the body that rheumatic fever can have. The criteria is used as a basis for diagnosis of ...\n-Reference: [GG_13]: Jones' criteria for diagnosis of rheumatic fever: Major ... 1 Jan 2018 — Sydenham's chorea (St Vitus dance), commoner in females, in 10% of patients; subcutaneous nodules in 2 to 20%; erythema marginatum in 2 to 10 ...\n-Reference: [GG_14]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_15]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_16]: Acute Rheumatic Fever | SpringerLink by J Domachowske · 2020 — Also known as St. Vitus' dance. If present, even without other major or minor criteria, it is diagnostic for ARF.\n-Reference: [GG_17]: Acute Rheumatic Fever (ARF): Symptoms, Jones Criteria & Treatment 13 Dec 2025 — Chorea, also known as St. Vitus Dance, is characterized by involuntary, aimless, non-rhythmic movements of the limbs, face, and trunk.\n-Reference: [GG_18]: Acute Rheumatic Fever | Johns Hopkins ABX Guide 5 Mar 2022 — DIAGNOSIS · Evidence of GAS preceding infection: required either. Increased or rising ASO or anti-DNASE B titers. A rising titer is considered ...\n-Reference: [GG_19]: Acute Rheumatic Fever 10 Sept 2024 — Vitus dance (chorea associated with acute rheumatic fever) ... Definite disease is defined as meeting the Jones diagnostic criteria.\n-Reference: [GG_20]: Rheumatic Heart Disease Clinical Presentation: History, Physical ... 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n\n",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
             "candidate": [
-                {
-                    "source": "google",
-                    "short_answer": "Yes",
-                    "long_answer": "Reference: [GG_1], [GG_4], [GG_7]. Explanation: The provided context indicates that Sydenham Chorea, also known as St. Vitus's dance, is a major manifestation or criterion in the diagnosis of acute rheumatic fever according to the Jones criteria. For example, reference [GG_1] explicitly states that St. Vitus dance is a major manifestation in up to 40% of patients, and reference [GG_4] lists chorea along with other major criteria such as polyarthritis and carditis.",
-                    "retrieval_information": "-Reference: [GG_1]: Sydenham Chorea - StatPearls - NCBI Bookshelf - NIH by K Beier · 2024 · Cited by 20 — Sydenham chorea, or St. Vitus dance, is a major manifestation of rheumatic fever in up to 40% of patients with rheumatic fever.\n-Reference: [GG_2]: Clinical Guidance for Acute Rheumatic Fever | Group A Strep There's no definitive diagnostic test for acute rheumatic fever. Instead, the Jones Criteria and supplemental testing are used. Keep Reading Diagnosing Acute ...\n-Reference: [GG_3]: Rheumatic Fever | Jones criteria | Clinical Features by O Guides · 2020 — Sydenham's chorea is also sometimes referred to as St Vitus' dance. Erythema marginatum (<5% of patients). Erythema marginatum is a rash ...\n-Reference: [GG_4]: Acute rheumatic fever Major criteria are polyarthritis, carditis, chorea, erythema marginatum and subcutaneous nodules. Minor criteria are fever, arthralgia, elevated erythrocyte ...\n-Reference: [GG_5]: Acute Rheumatic Fever Presenting with Sydenham's Chorea 2003 · Cited by 12 — Guidelines for the diagnosis of initial attack of rheumatic fever (Jones Criteria). Major manifestation. Minor manifestation. Carditis. Fever. Migratory ...\n-Reference: [GG_6]: Abstract 4370897: Sydenham Chorea as the Presenting ... 3 Nov 2025 — Based on the history and findings, a diagnosis of Acute Rheumatic Fever with Sydenham chorea and valvular heart disease was made. The patient ...\n-Reference: [GG_7]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_8]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_9]: Clinical Evaluation and Diagnosis of Acute Rheumatic Fever 2 Feb 2021 — The diagnosis of acute rheumatic fever (ARF) relies on a combination of clinical evaluation and laboratory studies. Diagnosis is usually made ...\n-Reference: [GG_10]: Rheumatic Heart Disease Clinical Presentation 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n-Reference: [GG_11]: Acute Rheumatic Fever and Rheumatic Heart Disease - NCBI by S Wirth · 2024 · Cited by 6 — The Jones Criteria emphasize that ARF is a diagnosis of exclusion that requires careful consideration of alternative processes (Gewitz, et al., ...\n-Reference: [GG_12]: Rheumatic Fever: Causes, Symptoms, Treatment, Diagnostic Criteria 14 Nov 2024 — The Jones criteria is a list of the effects in the body that rheumatic fever can have. The criteria is used as a basis for diagnosis of ...\n-Reference: [GG_13]: Jones' criteria for diagnosis of rheumatic fever: Major ... 1 Jan 2018 — Sydenham's chorea (St Vitus dance), commoner in females, in 10% of patients; subcutaneous nodules in 2 to 20%; erythema marginatum in 2 to 10 ...\n-Reference: [GG_14]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_15]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_16]: Acute Rheumatic Fever | SpringerLink by J Domachowske · 2020 — Also known as St. Vitus' dance. If present, even without other major or minor criteria, it is diagnostic for ARF.\n-Reference: [GG_17]: Acute Rheumatic Fever (ARF): Symptoms, Jones Criteria & Treatment 13 Dec 2025 — Chorea, also known as St. Vitus Dance, is characterized by involuntary, aimless, non-rhythmic movements of the limbs, face, and trunk.\n-Reference: [GG_18]: Acute Rheumatic Fever | Johns Hopkins ABX Guide 5 Mar 2022 — DIAGNOSIS · Evidence of GAS preceding infection: required either. Increased or rising ASO or anti-DNASE B titers. A rising titer is considered ...\n-Reference: [GG_19]: Acute Rheumatic Fever 10 Sept 2024 — Vitus dance (chorea associated with acute rheumatic fever) ... Definite disease is defined as meeting the Jones diagnostic criteria.\n-Reference: [GG_20]: Rheumatic Heart Disease Clinical Presentation: History, Physical ... 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n\n",
-                    "full_data": {
-                        "short_answer": "Yes",
-                        "long_answer": "Reference: [GG_1], [GG_4], [GG_7]. Explanation: The provided context indicates that Sydenham Chorea, also known as St. Vitus's dance, is a major manifestation or criterion in the diagnosis of acute rheumatic fever according to the Jones criteria. For example, reference [GG_1] explicitly states that St. Vitus dance is a major manifestation in up to 40% of patients, and reference [GG_4] lists chorea along with other major criteria such as polyarthritis and carditis."
-                    }
-                },
-                {
-                    "source": "wiki",
-                    "short_answer": "Yes",
-                    "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The context explains that Sydenham's chorea, also known as St. Vitus's dance, is recognized as one of the major Jones criteria for diagnosing rheumatic fever.",
-                    "retrieval_information": "-Reference: [WIKI_1]: Rheumatic fever According to revised Jones criteria, the diagnosis of rheumatic fever can be made when two of the major criteria, or one major criterion plus two minor criteria ...\n-Reference: [WIKI_2]: Portal:Medicine/Did you know Did you know 5 ·... that Sydenham's chorea (or St. Vitus' dance) is one of the major criteria in the Jones diagnostic criteria for rheumatic fever? ·... that ...\n\n",
-                    "full_data": {
-                        "short_answer": "Yes",
-                        "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The context explains that Sydenham's chorea, also known as St. Vitus's dance, is recognized as one of the major Jones criteria for diagnosing rheumatic fever."
-                    }
-                },
-                {
-                    "source": "crawl_wiki",
-                    "short_answer": "insufficient information",
-                    "long_answer": "No context",
-                    "retrieval_information": "",
-                    "full_data": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context"
-                    }
-                },
-                {
-                    "source": "crawl_ner_wiki",
-                    "short_answer": "insufficient information",
-                    "long_answer": "No context",
-                    "retrieval_information": "",
-                    "full_data": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context"
-                    }
-                },
-                {
-                    "source": "crawl_sparql_wikidata",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "The provided context does not include any specific information about the Jones criteria or whether St. Vitus's dance is one of them. No mention of St. Vitus's dance or its role in the diagnosis of acute rheumatic fever is found in the references listed.",
-                    "retrieval_information": "- Reference [SPARQL]: \nacute rheumatic fever: - post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain\n- human disease\n- Report published by Australian Institute of Health and Welfare on 2022-08-17.\n- Report published by Australian Institute of Health and Welfare on 2023-05-30.\n- Report published by Australian Institute of Health and Welfare on 2019-10-11.\n- rheumatic fever (description: post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain) - relation: health specialty: cardiology (source: Q10379)\n- chronic rheumatic pericarditis (description: human disease) - relation: health specialty: cardiology (source: Q10379)\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context does not include any specific information about the Jones criteria or whether St. Vitus's dance is one of them. No mention of St. Vitus's dance or its role in the diagnosis of acute rheumatic fever is found in the references listed."
-                    }
+              {
+                "short_answer": "Yes",
+                "long_answer": "Reference: [GG_1], [GG_4], [GG_7]. Explanation: The provided context indicates that Sydenham Chorea, also known as St. Vitus's dance, is a major manifestation or criterion in the diagnosis of acute rheumatic fever according to the Jones criteria. For example, reference [GG_1] explicitly states that St. Vitus dance is a major manifestation in up to 40% of patients, and reference [GG_4] lists chorea along with other major criteria such as polyarthritis and carditis.",
+                "retrieval_information": "-Reference: [GG_1]: Sydenham Chorea - StatPearls - NCBI Bookshelf - NIH by K Beier · 2024 · Cited by 20 — Sydenham chorea, or St. Vitus dance, is a major manifestation of rheumatic fever in up to 40% of patients with rheumatic fever.\n-Reference: [GG_2]: Clinical Guidance for Acute Rheumatic Fever | Group A Strep There's no definitive diagnostic test for acute rheumatic fever. Instead, the Jones Criteria and supplemental testing are used. Keep Reading Diagnosing Acute ...\n-Reference: [GG_3]: Rheumatic Fever | Jones criteria | Clinical Features by O Guides · 2020 — Sydenham's chorea is also sometimes referred to as St Vitus' dance. Erythema marginatum (<5% of patients). Erythema marginatum is a rash ...\n-Reference: [GG_4]: Acute rheumatic fever Major criteria are polyarthritis, carditis, chorea, erythema marginatum and subcutaneous nodules. Minor criteria are fever, arthralgia, elevated erythrocyte ...\n-Reference: [GG_5]: Acute Rheumatic Fever Presenting with Sydenham's Chorea 2003 · Cited by 12 — Guidelines for the diagnosis of initial attack of rheumatic fever (Jones Criteria). Major manifestation. Minor manifestation. Carditis. Fever. Migratory ...\n-Reference: [GG_6]: Abstract 4370897: Sydenham Chorea as the Presenting ... 3 Nov 2025 — Based on the history and findings, a diagnosis of Acute Rheumatic Fever with Sydenham chorea and valvular heart disease was made. The patient ...\n-Reference: [GG_7]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_8]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_9]: Clinical Evaluation and Diagnosis of Acute Rheumatic Fever 2 Feb 2021 — The diagnosis of acute rheumatic fever (ARF) relies on a combination of clinical evaluation and laboratory studies. Diagnosis is usually made ...\n-Reference: [GG_10]: Rheumatic Heart Disease Clinical Presentation 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n-Reference: [GG_11]: Acute Rheumatic Fever and Rheumatic Heart Disease - NCBI by S Wirth · 2024 · Cited by 6 — The Jones Criteria emphasize that ARF is a diagnosis of exclusion that requires careful consideration of alternative processes (Gewitz, et al., ...\n-Reference: [GG_12]: Rheumatic Fever: Causes, Symptoms, Treatment, Diagnostic Criteria 14 Nov 2024 — The Jones criteria is a list of the effects in the body that rheumatic fever can have. The criteria is used as a basis for diagnosis of ...\n-Reference: [GG_13]: Jones' criteria for diagnosis of rheumatic fever: Major ... 1 Jan 2018 — Sydenham's chorea (St Vitus dance), commoner in females, in 10% of patients; subcutaneous nodules in 2 to 20%; erythema marginatum in 2 to 10 ...\n-Reference: [GG_14]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_15]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_16]: Acute Rheumatic Fever | SpringerLink by J Domachowske · 2020 — Also known as St. Vitus' dance. If present, even without other major or minor criteria, it is diagnostic for ARF.\n-Reference: [GG_17]: Acute Rheumatic Fever (ARF): Symptoms, Jones Criteria & Treatment 13 Dec 2025 — Chorea, also known as St. Vitus Dance, is characterized by involuntary, aimless, non-rhythmic movements of the limbs, face, and trunk.\n-Reference: [GG_18]: Acute Rheumatic Fever | Johns Hopkins ABX Guide 5 Mar 2022 — DIAGNOSIS · Evidence of GAS preceding infection: required either. Increased or rising ASO or anti-DNASE B titers. A rising titer is considered ...\n-Reference: [GG_19]: Acute Rheumatic Fever 10 Sept 2024 — Vitus dance (chorea associated with acute rheumatic fever) ... Definite disease is defined as meeting the Jones diagnostic criteria.\n-Reference: [GG_20]: Rheumatic Heart Disease Clinical Presentation: History, Physical ... 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n\n",
+                "full_data": {
+                  "short_answer": "Yes",
+                  "long_answer": "Reference: [GG_1], [GG_4], [GG_7]. Explanation: The provided context indicates that Sydenham Chorea, also known as St. Vitus's dance, is a major manifestation or criterion in the diagnosis of acute rheumatic fever according to the Jones criteria. For example, reference [GG_1] explicitly states that St. Vitus dance is a major manifestation in up to 40% of patients, and reference [GG_4] lists chorea along with other major criteria such as polyarthritis and carditis."
                 }
+              }
             ]
+          },
+          "wiki": {
+            "short_answer": "Yes",
+            "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The context explains that Sydenham's chorea, also known as St. Vitus's dance, is recognized as one of the major Jones criteria for diagnosing rheumatic fever.",
+            "retrieval_information": "-Reference: [WIKI_1]: Rheumatic fever According to revised Jones criteria, the diagnosis of rheumatic fever can be made when two of the major criteria, or one major criterion plus two minor criteria ...\n-Reference: [WIKI_2]: Portal:Medicine/Did you know Did you know 5 ·... that Sydenham's chorea (or St. Vitus' dance) is one of the major criteria in the Jones diagnostic criteria for rheumatic fever? ·... that ...\n\n",
+            "candidate": [
+              {
+                "short_answer": "Yes",
+                "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The context explains that Sydenham's chorea, also known as St. Vitus's dance, is recognized as one of the major Jones criteria for diagnosing rheumatic fever.",
+                "retrieval_information": "-Reference: [WIKI_1]: Rheumatic fever According to revised Jones criteria, the diagnosis of rheumatic fever can be made when two of the major criteria, or one major criterion plus two minor criteria ...\n-Reference: [WIKI_2]: Portal:Medicine/Did you know Did you know 5 ·... that Sydenham's chorea (or St. Vitus' dance) is one of the major criteria in the Jones diagnostic criteria for rheumatic fever? ·... that ...\n\n",
+                "full_data": {
+                  "short_answer": "Yes",
+                  "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The context explains that Sydenham's chorea, also known as St. Vitus's dance, is recognized as one of the major Jones criteria for diagnosing rheumatic fever."
+                }
+              }
+            ]
+          },
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_sparql_wikidata": {
+            "short_answer": "Insufficient information",
+            "long_answer": "The provided context does not include any specific information about the Jones criteria or whether St. Vitus's dance is one of them. No mention of St. Vitus's dance or its role in the diagnosis of acute rheumatic fever is found in the references listed.",
+            "retrieval_information": "- Reference [SPARQL]: \nacute rheumatic fever: - post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain\n- human disease\n- Report published by Australian Institute of Health and Welfare on 2022-08-17.\n- Report published by Australian Institute of Health and Welfare on 2023-05-30.\n- Report published by Australian Institute of Health and Welfare on 2019-10-11.\n- rheumatic fever (description: post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain) - relation: health specialty: cardiology (source: Q10379)\n- chronic rheumatic pericarditis (description: human disease) - relation: health specialty: cardiology (source: Q10379)\n",
+            "candidate": [
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "The provided context does not include any specific information about the Jones criteria or whether St. Vitus's dance is one of them. No mention of St. Vitus's dance or its role in the diagnosis of acute rheumatic fever is found in the references listed.",
+                "retrieval_information": "- Reference [SPARQL]: \nacute rheumatic fever: - post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain\n- human disease\n- Report published by Australian Institute of Health and Welfare on 2022-08-17.\n- Report published by Australian Institute of Health and Welfare on 2023-05-30.\n- Report published by Australian Institute of Health and Welfare on 2019-10-11.\n- rheumatic fever (description: post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain) - relation: health specialty: cardiology (source: Q10379)\n- chronic rheumatic pericarditis (description: human disease) - relation: health specialty: cardiology (source: Q10379)\n",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "The provided context does not include any specific information about the Jones criteria or whether St. Vitus's dance is one of them. No mention of St. Vitus's dance or its role in the diagnosis of acute rheumatic fever is found in the references listed."
+                }
+              }
+            ]
+          }
         },
-        "0": {
-            "0": {
-                "source_output": {
-                    "google": {
-                        "short_answer": "Yes",
-                        "long_answer": "Reference: [GG_1], [GG_4], [GG_7]. Explanation: The provided context indicates that Sydenham Chorea, also known as St. Vitus's dance, is a major manifestation or criterion in the diagnosis of acute rheumatic fever according to the Jones criteria. For example, reference [GG_1] explicitly states that St. Vitus dance is a major manifestation in up to 40% of patients, and reference [GG_4] lists chorea along with other major criteria such as polyarthritis and carditis.",
-                        "retrieval_information": "-Reference: [GG_1]: Sydenham Chorea - StatPearls - NCBI Bookshelf - NIH by K Beier · 2024 · Cited by 20 — Sydenham chorea, or St. Vitus dance, is a major manifestation of rheumatic fever in up to 40% of patients with rheumatic fever.\n-Reference: [GG_2]: Clinical Guidance for Acute Rheumatic Fever | Group A Strep There's no definitive diagnostic test for acute rheumatic fever. Instead, the Jones Criteria and supplemental testing are used. Keep Reading Diagnosing Acute ...\n-Reference: [GG_3]: Rheumatic Fever | Jones criteria | Clinical Features by O Guides · 2020 — Sydenham's chorea is also sometimes referred to as St Vitus' dance. Erythema marginatum (<5% of patients). Erythema marginatum is a rash ...\n-Reference: [GG_4]: Acute rheumatic fever Major criteria are polyarthritis, carditis, chorea, erythema marginatum and subcutaneous nodules. Minor criteria are fever, arthralgia, elevated erythrocyte ...\n-Reference: [GG_5]: Acute Rheumatic Fever Presenting with Sydenham's Chorea 2003 · Cited by 12 — Guidelines for the diagnosis of initial attack of rheumatic fever (Jones Criteria). Major manifestation. Minor manifestation. Carditis. Fever. Migratory ...\n-Reference: [GG_6]: Abstract 4370897: Sydenham Chorea as the Presenting ... 3 Nov 2025 — Based on the history and findings, a diagnosis of Acute Rheumatic Fever with Sydenham chorea and valvular heart disease was made. The patient ...\n-Reference: [GG_7]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_8]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_9]: Clinical Evaluation and Diagnosis of Acute Rheumatic Fever 2 Feb 2021 — The diagnosis of acute rheumatic fever (ARF) relies on a combination of clinical evaluation and laboratory studies. Diagnosis is usually made ...\n-Reference: [GG_10]: Rheumatic Heart Disease Clinical Presentation 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n-Reference: [GG_11]: Acute Rheumatic Fever and Rheumatic Heart Disease - NCBI by S Wirth · 2024 · Cited by 6 — The Jones Criteria emphasize that ARF is a diagnosis of exclusion that requires careful consideration of alternative processes (Gewitz, et al., ...\n-Reference: [GG_12]: Rheumatic Fever: Causes, Symptoms, Treatment, Diagnostic Criteria 14 Nov 2024 — The Jones criteria is a list of the effects in the body that rheumatic fever can have. The criteria is used as a basis for diagnosis of ...\n-Reference: [GG_13]: Jones' criteria for diagnosis of rheumatic fever: Major ... 1 Jan 2018 — Sydenham's chorea (St Vitus dance), commoner in females, in 10% of patients; subcutaneous nodules in 2 to 20%; erythema marginatum in 2 to 10 ...\n-Reference: [GG_14]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_15]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_16]: Acute Rheumatic Fever | SpringerLink by J Domachowske · 2020 — Also known as St. Vitus' dance. If present, even without other major or minor criteria, it is diagnostic for ARF.\n-Reference: [GG_17]: Acute Rheumatic Fever (ARF): Symptoms, Jones Criteria & Treatment 13 Dec 2025 — Chorea, also known as St. Vitus Dance, is characterized by involuntary, aimless, non-rhythmic movements of the limbs, face, and trunk.\n-Reference: [GG_18]: Acute Rheumatic Fever | Johns Hopkins ABX Guide 5 Mar 2022 — DIAGNOSIS · Evidence of GAS preceding infection: required either. Increased or rising ASO or anti-DNASE B titers. A rising titer is considered ...\n-Reference: [GG_19]: Acute Rheumatic Fever 10 Sept 2024 — Vitus dance (chorea associated with acute rheumatic fever) ... Definite disease is defined as meeting the Jones diagnostic criteria.\n-Reference: [GG_20]: Rheumatic Heart Disease Clinical Presentation: History, Physical ... 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Yes",
-                                "long_answer": "Reference: [GG_1], [GG_4], [GG_7]. Explanation: The provided context indicates that Sydenham Chorea, also known as St. Vitus's dance, is a major manifestation or criterion in the diagnosis of acute rheumatic fever according to the Jones criteria. For example, reference [GG_1] explicitly states that St. Vitus dance is a major manifestation in up to 40% of patients, and reference [GG_4] lists chorea along with other major criteria such as polyarthritis and carditis.",
-                                "retrieval_information": "-Reference: [GG_1]: Sydenham Chorea - StatPearls - NCBI Bookshelf - NIH by K Beier · 2024 · Cited by 20 — Sydenham chorea, or St. Vitus dance, is a major manifestation of rheumatic fever in up to 40% of patients with rheumatic fever.\n-Reference: [GG_2]: Clinical Guidance for Acute Rheumatic Fever | Group A Strep There's no definitive diagnostic test for acute rheumatic fever. Instead, the Jones Criteria and supplemental testing are used. Keep Reading Diagnosing Acute ...\n-Reference: [GG_3]: Rheumatic Fever | Jones criteria | Clinical Features by O Guides · 2020 — Sydenham's chorea is also sometimes referred to as St Vitus' dance. Erythema marginatum (<5% of patients). Erythema marginatum is a rash ...\n-Reference: [GG_4]: Acute rheumatic fever Major criteria are polyarthritis, carditis, chorea, erythema marginatum and subcutaneous nodules. Minor criteria are fever, arthralgia, elevated erythrocyte ...\n-Reference: [GG_5]: Acute Rheumatic Fever Presenting with Sydenham's Chorea 2003 · Cited by 12 — Guidelines for the diagnosis of initial attack of rheumatic fever (Jones Criteria). Major manifestation. Minor manifestation. Carditis. Fever. Migratory ...\n-Reference: [GG_6]: Abstract 4370897: Sydenham Chorea as the Presenting ... 3 Nov 2025 — Based on the history and findings, a diagnosis of Acute Rheumatic Fever with Sydenham chorea and valvular heart disease was made. The patient ...\n-Reference: [GG_7]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_8]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_9]: Clinical Evaluation and Diagnosis of Acute Rheumatic Fever 2 Feb 2021 — The diagnosis of acute rheumatic fever (ARF) relies on a combination of clinical evaluation and laboratory studies. Diagnosis is usually made ...\n-Reference: [GG_10]: Rheumatic Heart Disease Clinical Presentation 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n-Reference: [GG_11]: Acute Rheumatic Fever and Rheumatic Heart Disease - NCBI by S Wirth · 2024 · Cited by 6 — The Jones Criteria emphasize that ARF is a diagnosis of exclusion that requires careful consideration of alternative processes (Gewitz, et al., ...\n-Reference: [GG_12]: Rheumatic Fever: Causes, Symptoms, Treatment, Diagnostic Criteria 14 Nov 2024 — The Jones criteria is a list of the effects in the body that rheumatic fever can have. The criteria is used as a basis for diagnosis of ...\n-Reference: [GG_13]: Jones' criteria for diagnosis of rheumatic fever: Major ... 1 Jan 2018 — Sydenham's chorea (St Vitus dance), commoner in females, in 10% of patients; subcutaneous nodules in 2 to 20%; erythema marginatum in 2 to 10 ...\n-Reference: [GG_14]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_15]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_16]: Acute Rheumatic Fever | SpringerLink by J Domachowske · 2020 — Also known as St. Vitus' dance. If present, even without other major or minor criteria, it is diagnostic for ARF.\n-Reference: [GG_17]: Acute Rheumatic Fever (ARF): Symptoms, Jones Criteria & Treatment 13 Dec 2025 — Chorea, also known as St. Vitus Dance, is characterized by involuntary, aimless, non-rhythmic movements of the limbs, face, and trunk.\n-Reference: [GG_18]: Acute Rheumatic Fever | Johns Hopkins ABX Guide 5 Mar 2022 — DIAGNOSIS · Evidence of GAS preceding infection: required either. Increased or rising ASO or anti-DNASE B titers. A rising titer is considered ...\n-Reference: [GG_19]: Acute Rheumatic Fever 10 Sept 2024 — Vitus dance (chorea associated with acute rheumatic fever) ... Definite disease is defined as meeting the Jones diagnostic criteria.\n-Reference: [GG_20]: Rheumatic Heart Disease Clinical Presentation: History, Physical ... 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n\n",
-                                "full_data": {
-                                    "short_answer": "Yes",
-                                    "long_answer": "Reference: [GG_1], [GG_4], [GG_7]. Explanation: The provided context indicates that Sydenham Chorea, also known as St. Vitus's dance, is a major manifestation or criterion in the diagnosis of acute rheumatic fever according to the Jones criteria. For example, reference [GG_1] explicitly states that St. Vitus dance is a major manifestation in up to 40% of patients, and reference [GG_4] lists chorea along with other major criteria such as polyarthritis and carditis."
-                                }
-                            }
-                        ]
-                    },
-                    "wiki": {
-                        "short_answer": "Yes",
-                        "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The context explains that Sydenham's chorea, also known as St. Vitus's dance, is recognized as one of the major Jones criteria for diagnosing rheumatic fever.",
-                        "retrieval_information": "-Reference: [WIKI_1]: Rheumatic fever According to revised Jones criteria, the diagnosis of rheumatic fever can be made when two of the major criteria, or one major criterion plus two minor criteria ...\n-Reference: [WIKI_2]: Portal:Medicine/Did you know Did you know 5 ·... that Sydenham's chorea (or St. Vitus' dance) is one of the major criteria in the Jones diagnostic criteria for rheumatic fever? ·... that ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Yes",
-                                "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The context explains that Sydenham's chorea, also known as St. Vitus's dance, is recognized as one of the major Jones criteria for diagnosing rheumatic fever.",
-                                "retrieval_information": "-Reference: [WIKI_1]: Rheumatic fever According to revised Jones criteria, the diagnosis of rheumatic fever can be made when two of the major criteria, or one major criterion plus two minor criteria ...\n-Reference: [WIKI_2]: Portal:Medicine/Did you know Did you know 5 ·... that Sydenham's chorea (or St. Vitus' dance) is one of the major criteria in the Jones diagnostic criteria for rheumatic fever? ·... that ...\n\n",
-                                "full_data": {
-                                    "short_answer": "Yes",
-                                    "long_answer": "Reference: [WIKI_1], [WIKI_2]. Explanation: The context explains that Sydenham's chorea, also known as St. Vitus's dance, is recognized as one of the major Jones criteria for diagnosing rheumatic fever."
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_ner_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_sparql_wikidata": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context does not include any specific information about the Jones criteria or whether St. Vitus's dance is one of them. No mention of St. Vitus's dance or its role in the diagnosis of acute rheumatic fever is found in the references listed.",
-                        "retrieval_information": "- Reference [SPARQL]: \nacute rheumatic fever: - post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain\n- human disease\n- Report published by Australian Institute of Health and Welfare on 2022-08-17.\n- Report published by Australian Institute of Health and Welfare on 2023-05-30.\n- Report published by Australian Institute of Health and Welfare on 2019-10-11.\n- rheumatic fever (description: post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain) - relation: health specialty: cardiology (source: Q10379)\n- chronic rheumatic pericarditis (description: human disease) - relation: health specialty: cardiology (source: Q10379)\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "The provided context does not include any specific information about the Jones criteria or whether St. Vitus's dance is one of them. No mention of St. Vitus's dance or its role in the diagnosis of acute rheumatic fever is found in the references listed.",
-                                "retrieval_information": "- Reference [SPARQL]: \nacute rheumatic fever: - post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain\n- human disease\n- Report published by Australian Institute of Health and Welfare on 2022-08-17.\n- Report published by Australian Institute of Health and Welfare on 2023-05-30.\n- Report published by Australian Institute of Health and Welfare on 2019-10-11.\n- rheumatic fever (description: post-streptococcal inflammatory disease that can involve the heart, joints, skin, & brain) - relation: health specialty: cardiology (source: Q10379)\n- chronic rheumatic pericarditis (description: human disease) - relation: health specialty: cardiology (source: Q10379)\n",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "The provided context does not include any specific information about the Jones criteria or whether St. Vitus's dance is one of them. No mention of St. Vitus's dance or its role in the diagnosis of acute rheumatic fever is found in the references listed."
-                                }
-                            }
-                        ]
-                    }
-                },
-                "question": "Is St. Vitus's dance one of the major Jones criteria used to diagnose acute rheumatic fever?",
-                "search_keyword": "St. Vitus's dance Jones criteria acute rheumatic fever diagnosis"
-            }
-        }
-    },
-    "final_answer": {
-        "long_answer": "Reference: [GG_1], [GG_4], [GG_7]. Explanation: The provided context indicates that Sydenham Chorea, also known as St. Vitus's dance, is a major manifestation or criterion in the diagnosis of acute rheumatic fever according to the Jones criteria. For example, reference [GG_1] explicitly states that St. Vitus dance is a major manifestation in up to 40% of patients, and reference [GG_4] lists chorea along with other major criteria such as polyarthritis and carditis.",
-        "short_answer": "Yes",
-        "retrieval_information": "-Reference: [GG_1]: Sydenham Chorea - StatPearls - NCBI Bookshelf - NIH by K Beier · 2024 · Cited by 20 — Sydenham chorea, or St. Vitus dance, is a major manifestation of rheumatic fever in up to 40% of patients with rheumatic fever.\n-Reference: [GG_2]: Clinical Guidance for Acute Rheumatic Fever | Group A Strep There's no definitive diagnostic test for acute rheumatic fever. Instead, the Jones Criteria and supplemental testing are used. Keep Reading Diagnosing Acute ...\n-Reference: [GG_3]: Rheumatic Fever | Jones criteria | Clinical Features by O Guides · 2020 — Sydenham's chorea is also sometimes referred to as St Vitus' dance. Erythema marginatum (<5% of patients). Erythema marginatum is a rash ...\n-Reference: [GG_4]: Acute rheumatic fever Major criteria are polyarthritis, carditis, chorea, erythema marginatum and subcutaneous nodules. Minor criteria are fever, arthralgia, elevated erythrocyte ...\n-Reference: [GG_5]: Acute Rheumatic Fever Presenting with Sydenham's Chorea 2003 · Cited by 12 — Guidelines for the diagnosis of initial attack of rheumatic fever (Jones Criteria). Major manifestation. Minor manifestation. Carditis. Fever. Migratory ...\n-Reference: [GG_6]: Abstract 4370897: Sydenham Chorea as the Presenting ... 3 Nov 2025 — Based on the history and findings, a diagnosis of Acute Rheumatic Fever with Sydenham chorea and valvular heart disease was made. The patient ...\n-Reference: [GG_7]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_8]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_9]: Clinical Evaluation and Diagnosis of Acute Rheumatic Fever 2 Feb 2021 — The diagnosis of acute rheumatic fever (ARF) relies on a combination of clinical evaluation and laboratory studies. Diagnosis is usually made ...\n-Reference: [GG_10]: Rheumatic Heart Disease Clinical Presentation 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n-Reference: [GG_11]: Acute Rheumatic Fever and Rheumatic Heart Disease - NCBI by S Wirth · 2024 · Cited by 6 — The Jones Criteria emphasize that ARF is a diagnosis of exclusion that requires careful consideration of alternative processes (Gewitz, et al., ...\n-Reference: [GG_12]: Rheumatic Fever: Causes, Symptoms, Treatment, Diagnostic Criteria 14 Nov 2024 — The Jones criteria is a list of the effects in the body that rheumatic fever can have. The criteria is used as a basis for diagnosis of ...\n-Reference: [GG_13]: Jones' criteria for diagnosis of rheumatic fever: Major ... 1 Jan 2018 — Sydenham's chorea (St Vitus dance), commoner in females, in 10% of patients; subcutaneous nodules in 2 to 20%; erythema marginatum in 2 to 10 ...\n-Reference: [GG_14]: Rheumatic Fever Jones Criteria for Diagnosis · J – Joint arthritis · O – Organ inflammation, such as carditis · N – Nodules · E – Erythema marginatum rash · S – Sydenham chorea.\n-Reference: [GG_15]: 🔴Revised Jones Criteria for Diagnosis of Rheumatic Fever ⤵️ 🔹 The Major ... #Rheumatic Fever - Jones Criteria An autoimmune condition. Peak incidence is 5-15 yrs of age. Triggered by infection with Group A beta- ...\n-Reference: [GG_16]: Acute Rheumatic Fever | SpringerLink by J Domachowske · 2020 — Also known as St. Vitus' dance. If present, even without other major or minor criteria, it is diagnostic for ARF.\n-Reference: [GG_17]: Acute Rheumatic Fever (ARF): Symptoms, Jones Criteria & Treatment 13 Dec 2025 — Chorea, also known as St. Vitus Dance, is characterized by involuntary, aimless, non-rhythmic movements of the limbs, face, and trunk.\n-Reference: [GG_18]: Acute Rheumatic Fever | Johns Hopkins ABX Guide 5 Mar 2022 — DIAGNOSIS · Evidence of GAS preceding infection: required either. Increased or rising ASO or anti-DNASE B titers. A rising titer is considered ...\n-Reference: [GG_19]: Acute Rheumatic Fever 10 Sept 2024 — Vitus dance (chorea associated with acute rheumatic fever) ... Definite disease is defined as meeting the Jones diagnostic criteria.\n-Reference: [GG_20]: Rheumatic Heart Disease Clinical Presentation: History, Physical ... 12 Sept 2025 — The modified Jones criteria, revised in 1992 and again in 2016, provide guidelines for making the diagnosis of rheumatic fever. The newest ...\n\n"
+        "question": "Is St. Vitus's dance one of the major Jones criteria used to diagnose acute rheumatic fever?",
+        "search_keyword": "St. Vitus's dance Jones criteria acute rheumatic fever diagnosis"
+      }
     }
+  }
 }

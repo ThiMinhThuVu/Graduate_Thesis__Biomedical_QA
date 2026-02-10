@@ -1,0 +1,142 @@
+{
+    "QIDX": "457983",
+    "original_question": "Is it true that keratin, a scleroprotein, can be overproduced in cases of vitamin A deficiency?",
+    "type_q": "direct",
+    "focus_spacy_based_entity_label": [
+        "DISEASE",
+        "CHEMICAL"
+    ],
+    "target_answer_type": "correctness",
+    "key_entities": [
+        "vitamin A deficiency",
+        "scleroprotein",
+        "keratin"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is it true that keratin, a scleroprotein, can be overproduced in cases of vitamin A deficiency?",
+            "search_keyword": "keratin overproduction vitamin A deficiency scleroprotein",
+            "short_answer": "",
+            "long_answer": "",
+            "retrieval_information": "",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "candidate": [
+                {
+                    "source": "google",
+                    "short_answer": "Yes",
+                    "long_answer": "Reference: [GG_2]. Explanation: The provided context from reference [GG_2] indicates that under vitamin A deficiency, there is an increase in the scleroprotein content during the development of stratification. Since keratin is a scleroprotein, this implies that keratin can be overproduced in cases of vitamin A deficiency.",
+                    "retrieval_information": "-Reference: [GG_1]: Sources, extractions and applications of bio-maker collagen–A review by MR Alam · 2022 · Cited by 48 — The deficiency of anatomical construction, capacity, and fibrosis of the injured site can lead to the overproduction of collagen. All serious diabetes problems, ...\n-Reference: [GG_2]: Pulmonary Diseases - Springer Link the scleroprotein content increases (Berry and Greenwald 1976). ... were observed in the development of stratification under Vitamin A deficiency, with-.\n-Reference: [GG_3]: Skin aging caused by intrinsic or extrinsic processes characterized ... Intrinsic aging decreases epidermal cell growth, increases caspase 14, and increases protein carbonylation, which may lead to apoptosis and inhibition of ...\n-Reference: [GG_4]: Glossary - Nanomedicine Rickets -- a vitamin D deficiency disease characterized by overproduction and deficient calcification of osteoid (bony) tissue, with associated skeletal ...\n-Reference: [GG_5]: HISTOLOGY CYTOLOGY EMBRYOLOGY A common cause of the disease is a deficiency in vitamin D, which is normally ... cells whose cytoplasm is filled with scleroprotein, keratin. The most ...\n-Reference: [GG_6]: What is natural retinol? \n-Reference: [GG_7]: Practical mycology for industrial biotechnologists Hair contains the scleroprotein, keratin, which is not readily utilised by most fungi, whereas the dermatophytes such as Trichophyton and Microsporum are ...\n-Reference: [GG_8]: Biodegradation of poultry feathers using a keratinolytic enzyme to ... ... protein (keratin), 1% lipids, and 8% water. Keratins are scleroprotein proteins that are insoluble and extremely resistant to physical, chemical and ...\n-Reference: [GG_9]: Pediatric Nail Disorders This book contains information obtained from authentic and highly regarded sources. While all reasonable efforts have been made to publish reliable data and ...324 pages·37 MB\n-Reference: [GG_10]: Quick Reference Dictionary for Massage Therapy and Bodywork keratin: A scleroprotein that is the principle constituent of epidermis ... min deficiency of vitamin B1 and vitamin B12. Williams syndrome: Syndrome ...484 pages·2 MB\n-Reference: [GG_11]: sno_edited.txt ... DEFICIENCY DEFICIENT DEFICIT DEFICITS DEFIED DEFIES DEFILE DEFILED ... KERATIN KERATINASE KERATINASES KERATINIC KERATINISATION KERATINISE KERATINISED ...\n-Reference: [GG_12]: Biochemistry MCQs: Sugars, Proteins, and Hormones | PDF | Carbohydrates Creatinuria is caused due to the deficiency of vitamin. (A) A (B) K. (C) E (D) ... Overproduction of growth hormone during childhood causes. (A) Acromegaly ...\n-Reference: [GG_13]: wordlist.txt ... deficiency deficiens deficient deficit Definate defining Definit definite ... keratin keratinase keratinization keratinize keratinized keratinizing ...\n-Reference: [GG_14]: chapter 3: proteins and protein metabolism - MCQs in Biochemistry Which of the following protein is rich in cysteine? (A) Elastine. (B) Collagen. (C) Fibrin. (D) Keratin. 546. Which amino ...\n-Reference: [GG_15]: Частная гистология by ОБ Саврова · 2019 — Учебное пособие содержит лекции по частной гистологии, читаемые студентам 2-го курса Медицинского института Российского университета дружбы ...\n-Reference: [GG_16]: Aspermia - an overview It has also been demonstrated that the deficiency of AdipoRs in male mice may lead to subfertility due to testicular atrophy and aspermia (Bjursell et al., 2007) ...\n-Reference: [GG_17]: english3.txt ... deficiency deficient deficiently deficients deficit deficits defied defier ... keratin keratinisation keratinise keratinised keratinises keratinising ...\n-Reference: [GG_18]: Biochemistry Questions pool with Answer Key.docx One manifestation of vitamin A deficiency is (A) Painful joints (B) Night blindness (C) Loss of hair (D) Thickening of long bones 434. Deficiency of Vitamin ...\n-Reference: [GG_19]: englishWords.txt ... deficiency deficient deficit defie defigure defilade defile defiled ... keratin keratitis keratoiritis keratoplasty keratoscleritis keratosis kerchief ...\n-Reference: [GG_20]: dictionary.txt ... overproduction bejumbled invincibilities nepheline ich disaggregative ... deficiency hydroperoxide subdebutante steeks stodgily overlight microgravity ...\n\n",
+                    "full_data": {
+                        "short_answer": "Yes",
+                        "long_answer": "Reference: [GG_2]. Explanation: The provided context from reference [GG_2] indicates that under vitamin A deficiency, there is an increase in the scleroprotein content during the development of stratification. Since keratin is a scleroprotein, this implies that keratin can be overproduced in cases of vitamin A deficiency."
+                    }
+                },
+                {
+                    "source": "crawl_sparql_wikidata",
+                    "short_answer": "Yes",
+                    "long_answer": "Reference: [SPARQL]. Detailed explanation based on the information: The context indicates that vitamin A deficiency is associated with a buildup of keratin on the conjunctiva. Since keratin is a scleroprotein, this buildup implies its overproduction in vitamin A deficiency cases.",
+                    "retrieval_information": "- Reference [SPARQL]: \nvitamin a deficiency: - lack of vitamin A in blood and tissues\n- Human disease\n- buildup of keratin located superficially in the conjunctiva\n- Human disease\n- Human disease\n- Human disease\n- human disease\n- Human disease\n- human disease\n\nscleroprotein: - constitutes one of the three main types of proteins (alongside globular and membrane proteins). There are many scleroprotein superfamilies including keratin, collagen, elastin, and fibroin\n\nkeratin: - predominant cell type in the epidermis, the outermost layer of the skin, constituting 90% of the cells found there\n- one of a family of fibrous structural proteins; protein that protects epithelial cells from damage or stress\n- genus of fungi\n- The process in which the cytoplasm of the outermost cells of the vertebrate epidermis is replaced by keratin. Keratinization occurs in the stratum corneum, feathers, hair, claws, nails, hooves, and horns.\n- filament composed of acidic and basic keratins (types I and II), typically expressed in epithelial cells. The keratins are the most diverse classes of IF proteins, with a large number of keratin isoforms being expressed. Each type of epithelium alw\n- genus of fungi\n- The process in which a relatively unspecialized cell acquires specialized features of a keratinocyte.\n- microbial gene found in Rhodopirellula baltica SH 1\n- species of fungus\n- species of fungus\n- InterPro Family\n- InterPro Family\n- genus of bacteria\n- species of bacterium\n- species of fungus\n- species of fungus\n- InterPro Family\n- protein family\n- InterPro Domain\n- material\n- keratin RB12076 (description: microbial gene found in Rhodopirellula baltica SH 1) - relation: Entrez Gene ID: 1793826 (source: 1793826)\n",
+                    "full_data": {
+                        "short_answer": "Yes",
+                        "long_answer": "Reference: [SPARQL]. Detailed explanation based on the information: The context indicates that vitamin A deficiency is associated with a buildup of keratin on the conjunctiva. Since keratin is a scleroprotein, this buildup implies its overproduction in vitamin A deficiency cases."
+                    }
+                }
+            ]
+        },
+        "0": {
+            "0": {
+                "source_output": {
+                    "google": {
+                        "short_answer": "Yes",
+                        "long_answer": "Reference: [GG_2]. Explanation: The provided context from reference [GG_2] indicates that under vitamin A deficiency, there is an increase in the scleroprotein content during the development of stratification. Since keratin is a scleroprotein, this implies that keratin can be overproduced in cases of vitamin A deficiency.",
+                        "retrieval_information": "-Reference: [GG_1]: Sources, extractions and applications of bio-maker collagen–A review by MR Alam · 2022 · Cited by 48 — The deficiency of anatomical construction, capacity, and fibrosis of the injured site can lead to the overproduction of collagen. All serious diabetes problems, ...\n-Reference: [GG_2]: Pulmonary Diseases - Springer Link the scleroprotein content increases (Berry and Greenwald 1976). ... were observed in the development of stratification under Vitamin A deficiency, with-.\n-Reference: [GG_3]: Skin aging caused by intrinsic or extrinsic processes characterized ... Intrinsic aging decreases epidermal cell growth, increases caspase 14, and increases protein carbonylation, which may lead to apoptosis and inhibition of ...\n-Reference: [GG_4]: Glossary - Nanomedicine Rickets -- a vitamin D deficiency disease characterized by overproduction and deficient calcification of osteoid (bony) tissue, with associated skeletal ...\n-Reference: [GG_5]: HISTOLOGY CYTOLOGY EMBRYOLOGY A common cause of the disease is a deficiency in vitamin D, which is normally ... cells whose cytoplasm is filled with scleroprotein, keratin. The most ...\n-Reference: [GG_6]: What is natural retinol? \n-Reference: [GG_7]: Practical mycology for industrial biotechnologists Hair contains the scleroprotein, keratin, which is not readily utilised by most fungi, whereas the dermatophytes such as Trichophyton and Microsporum are ...\n-Reference: [GG_8]: Biodegradation of poultry feathers using a keratinolytic enzyme to ... ... protein (keratin), 1% lipids, and 8% water. Keratins are scleroprotein proteins that are insoluble and extremely resistant to physical, chemical and ...\n-Reference: [GG_9]: Pediatric Nail Disorders This book contains information obtained from authentic and highly regarded sources. While all reasonable efforts have been made to publish reliable data and ...324 pages·37 MB\n-Reference: [GG_10]: Quick Reference Dictionary for Massage Therapy and Bodywork keratin: A scleroprotein that is the principle constituent of epidermis ... min deficiency of vitamin B1 and vitamin B12. Williams syndrome: Syndrome ...484 pages·2 MB\n-Reference: [GG_11]: sno_edited.txt ... DEFICIENCY DEFICIENT DEFICIT DEFICITS DEFIED DEFIES DEFILE DEFILED ... KERATIN KERATINASE KERATINASES KERATINIC KERATINISATION KERATINISE KERATINISED ...\n-Reference: [GG_12]: Biochemistry MCQs: Sugars, Proteins, and Hormones | PDF | Carbohydrates Creatinuria is caused due to the deficiency of vitamin. (A) A (B) K. (C) E (D) ... Overproduction of growth hormone during childhood causes. (A) Acromegaly ...\n-Reference: [GG_13]: wordlist.txt ... deficiency deficiens deficient deficit Definate defining Definit definite ... keratin keratinase keratinization keratinize keratinized keratinizing ...\n-Reference: [GG_14]: chapter 3: proteins and protein metabolism - MCQs in Biochemistry Which of the following protein is rich in cysteine? (A) Elastine. (B) Collagen. (C) Fibrin. (D) Keratin. 546. Which amino ...\n-Reference: [GG_15]: Частная гистология by ОБ Саврова · 2019 — Учебное пособие содержит лекции по частной гистологии, читаемые студентам 2-го курса Медицинского института Российского университета дружбы ...\n-Reference: [GG_16]: Aspermia - an overview It has also been demonstrated that the deficiency of AdipoRs in male mice may lead to subfertility due to testicular atrophy and aspermia (Bjursell et al., 2007) ...\n-Reference: [GG_17]: english3.txt ... deficiency deficient deficiently deficients deficit deficits defied defier ... keratin keratinisation keratinise keratinised keratinises keratinising ...\n-Reference: [GG_18]: Biochemistry Questions pool with Answer Key.docx One manifestation of vitamin A deficiency is (A) Painful joints (B) Night blindness (C) Loss of hair (D) Thickening of long bones 434. Deficiency of Vitamin ...\n-Reference: [GG_19]: englishWords.txt ... deficiency deficient deficit defie defigure defilade defile defiled ... keratin keratitis keratoiritis keratoplasty keratoscleritis keratosis kerchief ...\n-Reference: [GG_20]: dictionary.txt ... overproduction bejumbled invincibilities nepheline ich disaggregative ... deficiency hydroperoxide subdebutante steeks stodgily overlight microgravity ...\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Yes",
+                                "long_answer": "Reference: [GG_2]. Explanation: The provided context from reference [GG_2] indicates that under vitamin A deficiency, there is an increase in the scleroprotein content during the development of stratification. Since keratin is a scleroprotein, this implies that keratin can be overproduced in cases of vitamin A deficiency.",
+                                "retrieval_information": "-Reference: [GG_1]: Sources, extractions and applications of bio-maker collagen–A review by MR Alam · 2022 · Cited by 48 — The deficiency of anatomical construction, capacity, and fibrosis of the injured site can lead to the overproduction of collagen. All serious diabetes problems, ...\n-Reference: [GG_2]: Pulmonary Diseases - Springer Link the scleroprotein content increases (Berry and Greenwald 1976). ... were observed in the development of stratification under Vitamin A deficiency, with-.\n-Reference: [GG_3]: Skin aging caused by intrinsic or extrinsic processes characterized ... Intrinsic aging decreases epidermal cell growth, increases caspase 14, and increases protein carbonylation, which may lead to apoptosis and inhibition of ...\n-Reference: [GG_4]: Glossary - Nanomedicine Rickets -- a vitamin D deficiency disease characterized by overproduction and deficient calcification of osteoid (bony) tissue, with associated skeletal ...\n-Reference: [GG_5]: HISTOLOGY CYTOLOGY EMBRYOLOGY A common cause of the disease is a deficiency in vitamin D, which is normally ... cells whose cytoplasm is filled with scleroprotein, keratin. The most ...\n-Reference: [GG_6]: What is natural retinol? \n-Reference: [GG_7]: Practical mycology for industrial biotechnologists Hair contains the scleroprotein, keratin, which is not readily utilised by most fungi, whereas the dermatophytes such as Trichophyton and Microsporum are ...\n-Reference: [GG_8]: Biodegradation of poultry feathers using a keratinolytic enzyme to ... ... protein (keratin), 1% lipids, and 8% water. Keratins are scleroprotein proteins that are insoluble and extremely resistant to physical, chemical and ...\n-Reference: [GG_9]: Pediatric Nail Disorders This book contains information obtained from authentic and highly regarded sources. While all reasonable efforts have been made to publish reliable data and ...324 pages·37 MB\n-Reference: [GG_10]: Quick Reference Dictionary for Massage Therapy and Bodywork keratin: A scleroprotein that is the principle constituent of epidermis ... min deficiency of vitamin B1 and vitamin B12. Williams syndrome: Syndrome ...484 pages·2 MB\n-Reference: [GG_11]: sno_edited.txt ... DEFICIENCY DEFICIENT DEFICIT DEFICITS DEFIED DEFIES DEFILE DEFILED ... KERATIN KERATINASE KERATINASES KERATINIC KERATINISATION KERATINISE KERATINISED ...\n-Reference: [GG_12]: Biochemistry MCQs: Sugars, Proteins, and Hormones | PDF | Carbohydrates Creatinuria is caused due to the deficiency of vitamin. (A) A (B) K. (C) E (D) ... Overproduction of growth hormone during childhood causes. (A) Acromegaly ...\n-Reference: [GG_13]: wordlist.txt ... deficiency deficiens deficient deficit Definate defining Definit definite ... keratin keratinase keratinization keratinize keratinized keratinizing ...\n-Reference: [GG_14]: chapter 3: proteins and protein metabolism - MCQs in Biochemistry Which of the following protein is rich in cysteine? (A) Elastine. (B) Collagen. (C) Fibrin. (D) Keratin. 546. Which amino ...\n-Reference: [GG_15]: Частная гистология by ОБ Саврова · 2019 — Учебное пособие содержит лекции по частной гистологии, читаемые студентам 2-го курса Медицинского института Российского университета дружбы ...\n-Reference: [GG_16]: Aspermia - an overview It has also been demonstrated that the deficiency of AdipoRs in male mice may lead to subfertility due to testicular atrophy and aspermia (Bjursell et al., 2007) ...\n-Reference: [GG_17]: english3.txt ... deficiency deficient deficiently deficients deficit deficits defied defier ... keratin keratinisation keratinise keratinised keratinises keratinising ...\n-Reference: [GG_18]: Biochemistry Questions pool with Answer Key.docx One manifestation of vitamin A deficiency is (A) Painful joints (B) Night blindness (C) Loss of hair (D) Thickening of long bones 434. Deficiency of Vitamin ...\n-Reference: [GG_19]: englishWords.txt ... deficiency deficient deficit defie defigure defilade defile defiled ... keratin keratitis keratoiritis keratoplasty keratoscleritis keratosis kerchief ...\n-Reference: [GG_20]: dictionary.txt ... overproduction bejumbled invincibilities nepheline ich disaggregative ... deficiency hydroperoxide subdebutante steeks stodgily overlight microgravity ...\n\n",
+                                "extracted_entities": "Vitamin A deficiency, keratitis keratoiritis, subfertility, Williams syndrome, nepheline, calcification of osteoid (bony), vitamin B1, atrophy, Acromegaly, deficient deficit Definate, deficiently deficients deficit deficits, vitamin A deficiency scleroprotein  -Reference: [GG_1]:, GG_7, vitamin B12, vitamin D, Trichophyton, diabetes, Night blindness, aspermia, Vitamin ...\n-Reference: [GG_19]:, ... deficiency, disaggregative ... deficiency hydroperoxide subdebutante steeks stodgily overlight microgravity, vitamin D deficiency disease, retinol, with-, Painful joints, keratoscleritis keratosis, vitamin., fibrosis",
+                                "full_data": {
+                                    "short_answer": "Yes",
+                                    "long_answer": "Reference: [GG_2]. Explanation: The provided context from reference [GG_2] indicates that under vitamin A deficiency, there is an increase in the scleroprotein content during the development of stratification. Since keratin is a scleroprotein, this implies that keratin can be overproduced in cases of vitamin A deficiency."
+                                }
+                            }
+                        ]
+                    },
+                    "wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "extracted_entities": "vitamin A deficiency scleroprotein  ",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "extracted_entities": "vitamin A deficiency scleroprotein  ",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_ner_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "extracted_entities": "vitamin A deficiency scleroprotein  ",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_sparql_wikidata": {
+                        "short_answer": "Yes",
+                        "long_answer": "Reference: [SPARQL]. Detailed explanation based on the information: The context indicates that vitamin A deficiency is associated with a buildup of keratin on the conjunctiva. Since keratin is a scleroprotein, this buildup implies its overproduction in vitamin A deficiency cases.",
+                        "retrieval_information": "- Reference [SPARQL]: \nvitamin a deficiency: - lack of vitamin A in blood and tissues\n- Human disease\n- buildup of keratin located superficially in the conjunctiva\n- Human disease\n- Human disease\n- Human disease\n- human disease\n- Human disease\n- human disease\n\nscleroprotein: - constitutes one of the three main types of proteins (alongside globular and membrane proteins). There are many scleroprotein superfamilies including keratin, collagen, elastin, and fibroin\n\nkeratin: - predominant cell type in the epidermis, the outermost layer of the skin, constituting 90% of the cells found there\n- one of a family of fibrous structural proteins; protein that protects epithelial cells from damage or stress\n- genus of fungi\n- The process in which the cytoplasm of the outermost cells of the vertebrate epidermis is replaced by keratin. Keratinization occurs in the stratum corneum, feathers, hair, claws, nails, hooves, and horns.\n- filament composed of acidic and basic keratins (types I and II), typically expressed in epithelial cells. The keratins are the most diverse classes of IF proteins, with a large number of keratin isoforms being expressed. Each type of epithelium alw\n- genus of fungi\n- The process in which a relatively unspecialized cell acquires specialized features of a keratinocyte.\n- microbial gene found in Rhodopirellula baltica SH 1\n- species of fungus\n- species of fungus\n- InterPro Family\n- InterPro Family\n- genus of bacteria\n- species of bacterium\n- species of fungus\n- species of fungus\n- InterPro Family\n- protein family\n- InterPro Domain\n- material\n- keratin RB12076 (description: microbial gene found in Rhodopirellula baltica SH 1) - relation: Entrez Gene ID: 1793826 (source: 1793826)\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Yes",
+                                "long_answer": "Reference: [SPARQL]. Detailed explanation based on the information: The context indicates that vitamin A deficiency is associated with a buildup of keratin on the conjunctiva. Since keratin is a scleroprotein, this buildup implies its overproduction in vitamin A deficiency cases.",
+                                "retrieval_information": "- Reference [SPARQL]: \nvitamin a deficiency: - lack of vitamin A in blood and tissues\n- Human disease\n- buildup of keratin located superficially in the conjunctiva\n- Human disease\n- Human disease\n- Human disease\n- human disease\n- Human disease\n- human disease\n\nscleroprotein: - constitutes one of the three main types of proteins (alongside globular and membrane proteins). There are many scleroprotein superfamilies including keratin, collagen, elastin, and fibroin\n\nkeratin: - predominant cell type in the epidermis, the outermost layer of the skin, constituting 90% of the cells found there\n- one of a family of fibrous structural proteins; protein that protects epithelial cells from damage or stress\n- genus of fungi\n- The process in which the cytoplasm of the outermost cells of the vertebrate epidermis is replaced by keratin. Keratinization occurs in the stratum corneum, feathers, hair, claws, nails, hooves, and horns.\n- filament composed of acidic and basic keratins (types I and II), typically expressed in epithelial cells. The keratins are the most diverse classes of IF proteins, with a large number of keratin isoforms being expressed. Each type of epithelium alw\n- genus of fungi\n- The process in which a relatively unspecialized cell acquires specialized features of a keratinocyte.\n- microbial gene found in Rhodopirellula baltica SH 1\n- species of fungus\n- species of fungus\n- InterPro Family\n- InterPro Family\n- genus of bacteria\n- species of bacterium\n- species of fungus\n- species of fungus\n- InterPro Family\n- protein family\n- InterPro Domain\n- material\n- keratin RB12076 (description: microbial gene found in Rhodopirellula baltica SH 1) - relation: Entrez Gene ID: 1793826 (source: 1793826)\n",
+                                "extracted_entities": "vitamin A deficiency scleroprotein  ",
+                                "full_data": {
+                                    "short_answer": "Yes",
+                                    "long_answer": "Reference: [SPARQL]. Detailed explanation based on the information: The context indicates that vitamin A deficiency is associated with a buildup of keratin on the conjunctiva. Since keratin is a scleroprotein, this buildup implies its overproduction in vitamin A deficiency cases."
+                                }
+                            }
+                        ]
+                    }
+                },
+                "question": "Is it true that keratin, a scleroprotein, can be overproduced in cases of vitamin A deficiency?",
+                "search_keyword": "keratin overproduction vitamin A deficiency scleroprotein"
+            }
+        }
+    }
+}

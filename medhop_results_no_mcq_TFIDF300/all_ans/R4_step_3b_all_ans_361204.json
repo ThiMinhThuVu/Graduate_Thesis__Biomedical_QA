@@ -1,172 +1,147 @@
 {
-    "QIDX": "361204",
-    "original_question": "Is a decrease in white blood cells a common adverse effect of the drug, now used in relation to organ transplant, which was discovered by the Italian scientist Bartolomeo Gosio?",
-    "type_q": "direct",
-    "focus_spacy_based_entity_label": [
-        "DISEASE",
-        "CHEMICAL"
-    ],
-    "target_answer_type": "correctness",
-    "key_entities": [
-        "Italian scientist Bartolomeo Gosio",
-        "white blood cells",
-        "organ transplant"
-    ],
-    "1": {
-        "final_qi": {
-            "question": "Is a decrease in white blood cells a common adverse effect of the drug, now used in relation to organ transplant, which was discovered by the Italian scientist Bartolomeo Gosio?",
-            "search_keyword": "decrease white blood cells adverse effect drug organ transplant Bartolomeo Gosio",
+  "QIDX": "361204",
+  "original_question": "Is a decrease in white blood cells a common adverse effect of the drug, now used in relation to organ transplant, which was discovered by the Italian scientist Bartolomeo Gosio?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "Italian scientist Bartolomeo Gosio",
+    "white blood cells",
+    "organ transplant"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is a decrease in white blood cells a common adverse effect of the drug, now used in relation to organ transplant, which was discovered by the Italian scientist Bartolomeo Gosio?",
+      "search_keyword": "decrease white blood cells adverse effect drug organ transplant Bartolomeo Gosio",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": [
+        {
+          "source": "google",
+          "short_answer": "Insufficient information",
+          "long_answer": "Explanation: Although the provided context discusses mycophenolic acid (discovered by Bartolomeo Gosio) and its use in organ transplantation, the specific detail about a decrease in white blood cells as a common adverse effect of the drug is not mentioned in any of the references.",
+          "retrieval_information": "-Reference: [GG_1]: Paediatric use of mycophenolate mofetil - PMC by HJ Downing · 2012 · Cited by 70 — This review summarizes the current use of mycophenolate mofetil (MMF) in children in order to identify areas that require further research and investigation.\n-Reference: [GG_2]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n-Reference: [GG_3]: Mycophenolic acid: a drug with a potential beyond renal ... 29 Jul 2016 — Mycophenolic acid (MPA) is an immunosuppressive drug used for the prevention of rejection in solid organ transplantation.\n-Reference: [GG_4]: Paediatric use of mycophenolate mofetil by HJ Downing · 2013 · Cited by 70 — UGT genotype may contribute to adverse events following medication with mycophenolate mofetil in pediatric kidney transplant recipients.\n-Reference: [GG_5]: Bartolomeo Gosio, 1863–1944: An appreciation 10 Aug 2025 — Mycophenolic acid has undergone a wondrous journey to become a much used immunosuppressant for organ transplantation.\n-Reference: [GG_6]: Rationalized immunosuppressant dosing in kidney transplantation by S Sharma — ... Bartolomeo Gosio.9 The efficacy of MMF in preventing acute rejection episodes in renal allograft recipients was established through randomized, double-blind ...\n-Reference: [GG_7]: Personalized Therapy for Mycophenolate, Consensus Report ... by S Bergan · 2021 · Cited by 196 — In patients treated with MMF, an MPA C0 between 1 and. 3.5 mg/L might also be recommended to decrease the risk of rejection and adverse events ( ...\n-Reference: [GG_8]: Enhanced Antipsoriatic Activity of Mycophenolic Acid Against the TNF ... by W Supasena · 2020 · Cited by 23 — Mycophenolic acid (MPA) is an immunosuppressant that has been used to prevent the rejection of organ transplantation but has also demonstrated an antipsoriatic ...\n-Reference: [GG_9]: Personalized Therapy for Mycophenolate: Consensus Report ... by S Bergan · 2021 · Cited by 196 — MPA was discovered in 1893 by an Italian physician,. Bartolomeo Gosio, as a fermentation product of Penicillium species.17 Initially, MPA was ...\n-Reference: [GG_10]: Personalized Therapy for Mycophenolate: consensus report ... by S Bergan · Cited by 196 — MPA was discovered in 1893 by an Italian physician, Bartolomeo Gosio, as a fermentation product of Penicillium species.\n-Reference: [GG_11]: Electroanalytical overview: the sensing of the mycophenolate ... by RD Crapnell · 2024 — This drug is an immunosuppressant combined with other drugs such as corticosteroids to prevent organ ... Bartolomeo Gosio (see Fig. 1B)† in ...\n-Reference: [GG_12]: The Immunosuppressant Tacrolimus (FK506) Facing ... by C Barreiro · 2024 · Cited by 5 — Tacrolimus is a well-stablished API that is used as a clinical treatment to avoid graft rejection, but also shows interesting properties in terms of decreasing ...\n-Reference: [GG_13]: CellCept® and Lupus WHAT IS IT? CellCept® or mycophenolate mofetil, is a medication that was first prescribed to treat people who have had an organ transplant.\n-Reference: [GG_14]: A Study of Serious Adverse Event associated with the use of ... by S Sahu · 2018 — ABSTRACT. Organ transplantation by Mycophenolate mofetil (MMF) is crucial component for treatment of choice for patients suffering from End ...\n-Reference: [GG_15]: Dissecting the Multiplicity of Immune Effects of Immunosuppressive ... by M Cangemi · 2019 · Cited by 49 — Globally, immunosuppressive drugs used in the transplant setting may affect B lymphocytes resulting in both anti-tumor and pro-tumorigenic ...\n-Reference: [GG_16]: New Analogues of Mycophenolic Acid by A Siebert · 2017 · Cited by 31 — However, now actual participation of AZA 1 in the treatment of transplant is reduced, because it has a lot of adverse effects. AZA possesses mutagenic ...\n-Reference: [GG_17]: Wound healing in the presence of immunesuppressant therapy by MCM Willems · 2018 — The immune suppressant action is therefore based on a decrease of proliferation of T and B lymphocytes and monocytes. By depleting the intracellular ...\n-Reference: [GG_18]: Arsenic Exposure and Toxicology: A Historical Perspective by MF Hughes · 2011 · Cited by 1687 — In 1878, it was found that Fowler's solution could be effective in lowering the white blood cell count in leukemia patients (Antman, 2001, 210-9361). Although ...\n-Reference: [GG_19]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n-Reference: [GG_20]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n\n"
+        },
+        {
+          "source": "wiki",
+          "short_answer": "Insufficient information",
+          "long_answer": "The provided context only states that Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions. It does not provide any specific details about a decrease in white blood cells as a common adverse effect, nor does it mention Bartolomeo Gosio. Therefore, the context does not contain the specific information needed to answer the question.",
+          "retrieval_information": "-Reference: [WIKI_1]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n\n"
+        },
+        {
+          "source": "crawl_wiki",
+          "short_answer": "insufficient information",
+          "long_answer": "No context",
+          "retrieval_information": ""
+        },
+        {
+          "source": "crawl_ner_wiki",
+          "short_answer": "insufficient information",
+          "long_answer": "No context",
+          "retrieval_information": ""
+        },
+        {
+          "source": "crawl_sparql_wikidata",
+          "short_answer": "Insufficient information",
+          "long_answer": "Explanation: The provided context does not contain any information regarding the adverse effects of the drug, including whether a decrease in white blood cells is a common adverse effect. Additionally, there is no mention of the drug discovered by Bartolomeo Gosio or its use in relation to organ transplant.",
+          "retrieval_information": "- Reference [SPARQL]: \nwhite blood cells: - type of cells of the immunological system\n- album by The White Stripes\n- clinical trial\n\norgan transplant: - moving of an organ from one body or body region to another\n- moving of an organ or tissue from one body or body region to another\n- academic discipline, branch of medicine\n- organ used in transplantation\n- legality and history of organ transplantation in China\n- depictions of organ transplantation in fictional stories\n- item in the National Archives and Records Administration's holdings\n- legality and prevalence of the medical procedure in Israel\n- organ transplantation regulation in Indian state, Tamil Nadu\n- clinical trial\n- Chinese medical journal\n- substrand of the Biology curriculum in basic education in Uruguay\n- clinical trial\n"
+        }
+      ]
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "google": {
+            "short_answer": "Insufficient information",
+            "long_answer": "Explanation: Although the provided context discusses mycophenolic acid (discovered by Bartolomeo Gosio) and its use in organ transplantation, the specific detail about a decrease in white blood cells as a common adverse effect of the drug is not mentioned in any of the references.",
+            "retrieval_information": "-Reference: [GG_1]: Paediatric use of mycophenolate mofetil - PMC by HJ Downing · 2012 · Cited by 70 — This review summarizes the current use of mycophenolate mofetil (MMF) in children in order to identify areas that require further research and investigation.\n-Reference: [GG_2]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n-Reference: [GG_3]: Mycophenolic acid: a drug with a potential beyond renal ... 29 Jul 2016 — Mycophenolic acid (MPA) is an immunosuppressive drug used for the prevention of rejection in solid organ transplantation.\n-Reference: [GG_4]: Paediatric use of mycophenolate mofetil by HJ Downing · 2013 · Cited by 70 — UGT genotype may contribute to adverse events following medication with mycophenolate mofetil in pediatric kidney transplant recipients.\n-Reference: [GG_5]: Bartolomeo Gosio, 1863–1944: An appreciation 10 Aug 2025 — Mycophenolic acid has undergone a wondrous journey to become a much used immunosuppressant for organ transplantation.\n-Reference: [GG_6]: Rationalized immunosuppressant dosing in kidney transplantation by S Sharma — ... Bartolomeo Gosio.9 The efficacy of MMF in preventing acute rejection episodes in renal allograft recipients was established through randomized, double-blind ...\n-Reference: [GG_7]: Personalized Therapy for Mycophenolate, Consensus Report ... by S Bergan · 2021 · Cited by 196 — In patients treated with MMF, an MPA C0 between 1 and. 3.5 mg/L might also be recommended to decrease the risk of rejection and adverse events ( ...\n-Reference: [GG_8]: Enhanced Antipsoriatic Activity of Mycophenolic Acid Against the TNF ... by W Supasena · 2020 · Cited by 23 — Mycophenolic acid (MPA) is an immunosuppressant that has been used to prevent the rejection of organ transplantation but has also demonstrated an antipsoriatic ...\n-Reference: [GG_9]: Personalized Therapy for Mycophenolate: Consensus Report ... by S Bergan · 2021 · Cited by 196 — MPA was discovered in 1893 by an Italian physician,. Bartolomeo Gosio, as a fermentation product of Penicillium species.17 Initially, MPA was ...\n-Reference: [GG_10]: Personalized Therapy for Mycophenolate: consensus report ... by S Bergan · Cited by 196 — MPA was discovered in 1893 by an Italian physician, Bartolomeo Gosio, as a fermentation product of Penicillium species.\n-Reference: [GG_11]: Electroanalytical overview: the sensing of the mycophenolate ... by RD Crapnell · 2024 — This drug is an immunosuppressant combined with other drugs such as corticosteroids to prevent organ ... Bartolomeo Gosio (see Fig. 1B)† in ...\n-Reference: [GG_12]: The Immunosuppressant Tacrolimus (FK506) Facing ... by C Barreiro · 2024 · Cited by 5 — Tacrolimus is a well-stablished API that is used as a clinical treatment to avoid graft rejection, but also shows interesting properties in terms of decreasing ...\n-Reference: [GG_13]: CellCept® and Lupus WHAT IS IT? CellCept® or mycophenolate mofetil, is a medication that was first prescribed to treat people who have had an organ transplant.\n-Reference: [GG_14]: A Study of Serious Adverse Event associated with the use of ... by S Sahu · 2018 — ABSTRACT. Organ transplantation by Mycophenolate mofetil (MMF) is crucial component for treatment of choice for patients suffering from End ...\n-Reference: [GG_15]: Dissecting the Multiplicity of Immune Effects of Immunosuppressive ... by M Cangemi · 2019 · Cited by 49 — Globally, immunosuppressive drugs used in the transplant setting may affect B lymphocytes resulting in both anti-tumor and pro-tumorigenic ...\n-Reference: [GG_16]: New Analogues of Mycophenolic Acid by A Siebert · 2017 · Cited by 31 — However, now actual participation of AZA 1 in the treatment of transplant is reduced, because it has a lot of adverse effects. AZA possesses mutagenic ...\n-Reference: [GG_17]: Wound healing in the presence of immunesuppressant therapy by MCM Willems · 2018 — The immune suppressant action is therefore based on a decrease of proliferation of T and B lymphocytes and monocytes. By depleting the intracellular ...\n-Reference: [GG_18]: Arsenic Exposure and Toxicology: A Historical Perspective by MF Hughes · 2011 · Cited by 1687 — In 1878, it was found that Fowler's solution could be effective in lowering the white blood cell count in leukemia patients (Antman, 2001, 210-9361). Although ...\n-Reference: [GG_19]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n-Reference: [GG_20]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n\n",
+            "candidate": [
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "Explanation: Although the provided context discusses mycophenolic acid (discovered by Bartolomeo Gosio) and its use in organ transplantation, the specific detail about a decrease in white blood cells as a common adverse effect of the drug is not mentioned in any of the references.",
+                "retrieval_information": "-Reference: [GG_1]: Paediatric use of mycophenolate mofetil - PMC by HJ Downing · 2012 · Cited by 70 — This review summarizes the current use of mycophenolate mofetil (MMF) in children in order to identify areas that require further research and investigation.\n-Reference: [GG_2]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n-Reference: [GG_3]: Mycophenolic acid: a drug with a potential beyond renal ... 29 Jul 2016 — Mycophenolic acid (MPA) is an immunosuppressive drug used for the prevention of rejection in solid organ transplantation.\n-Reference: [GG_4]: Paediatric use of mycophenolate mofetil by HJ Downing · 2013 · Cited by 70 — UGT genotype may contribute to adverse events following medication with mycophenolate mofetil in pediatric kidney transplant recipients.\n-Reference: [GG_5]: Bartolomeo Gosio, 1863–1944: An appreciation 10 Aug 2025 — Mycophenolic acid has undergone a wondrous journey to become a much used immunosuppressant for organ transplantation.\n-Reference: [GG_6]: Rationalized immunosuppressant dosing in kidney transplantation by S Sharma — ... Bartolomeo Gosio.9 The efficacy of MMF in preventing acute rejection episodes in renal allograft recipients was established through randomized, double-blind ...\n-Reference: [GG_7]: Personalized Therapy for Mycophenolate, Consensus Report ... by S Bergan · 2021 · Cited by 196 — In patients treated with MMF, an MPA C0 between 1 and. 3.5 mg/L might also be recommended to decrease the risk of rejection and adverse events ( ...\n-Reference: [GG_8]: Enhanced Antipsoriatic Activity of Mycophenolic Acid Against the TNF ... by W Supasena · 2020 · Cited by 23 — Mycophenolic acid (MPA) is an immunosuppressant that has been used to prevent the rejection of organ transplantation but has also demonstrated an antipsoriatic ...\n-Reference: [GG_9]: Personalized Therapy for Mycophenolate: Consensus Report ... by S Bergan · 2021 · Cited by 196 — MPA was discovered in 1893 by an Italian physician,. Bartolomeo Gosio, as a fermentation product of Penicillium species.17 Initially, MPA was ...\n-Reference: [GG_10]: Personalized Therapy for Mycophenolate: consensus report ... by S Bergan · Cited by 196 — MPA was discovered in 1893 by an Italian physician, Bartolomeo Gosio, as a fermentation product of Penicillium species.\n-Reference: [GG_11]: Electroanalytical overview: the sensing of the mycophenolate ... by RD Crapnell · 2024 — This drug is an immunosuppressant combined with other drugs such as corticosteroids to prevent organ ... Bartolomeo Gosio (see Fig. 1B)† in ...\n-Reference: [GG_12]: The Immunosuppressant Tacrolimus (FK506) Facing ... by C Barreiro · 2024 · Cited by 5 — Tacrolimus is a well-stablished API that is used as a clinical treatment to avoid graft rejection, but also shows interesting properties in terms of decreasing ...\n-Reference: [GG_13]: CellCept® and Lupus WHAT IS IT? CellCept® or mycophenolate mofetil, is a medication that was first prescribed to treat people who have had an organ transplant.\n-Reference: [GG_14]: A Study of Serious Adverse Event associated with the use of ... by S Sahu · 2018 — ABSTRACT. Organ transplantation by Mycophenolate mofetil (MMF) is crucial component for treatment of choice for patients suffering from End ...\n-Reference: [GG_15]: Dissecting the Multiplicity of Immune Effects of Immunosuppressive ... by M Cangemi · 2019 · Cited by 49 — Globally, immunosuppressive drugs used in the transplant setting may affect B lymphocytes resulting in both anti-tumor and pro-tumorigenic ...\n-Reference: [GG_16]: New Analogues of Mycophenolic Acid by A Siebert · 2017 · Cited by 31 — However, now actual participation of AZA 1 in the treatment of transplant is reduced, because it has a lot of adverse effects. AZA possesses mutagenic ...\n-Reference: [GG_17]: Wound healing in the presence of immunesuppressant therapy by MCM Willems · 2018 — The immune suppressant action is therefore based on a decrease of proliferation of T and B lymphocytes and monocytes. By depleting the intracellular ...\n-Reference: [GG_18]: Arsenic Exposure and Toxicology: A Historical Perspective by MF Hughes · 2011 · Cited by 1687 — In 1878, it was found that Fowler's solution could be effective in lowering the white blood cell count in leukemia patients (Antman, 2001, 210-9361). Although ...\n-Reference: [GG_19]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n-Reference: [GG_20]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n\n",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "Explanation: Although the provided context discusses mycophenolic acid (discovered by Bartolomeo Gosio) and its use in organ transplantation, the specific detail about a decrease in white blood cells as a common adverse effect of the drug is not mentioned in any of the references."
+                }
+              }
+            ]
+          },
+          "wiki": {
+            "short_answer": "Insufficient information",
+            "long_answer": "The provided context only states that Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions. It does not provide any specific details about a decrease in white blood cells as a common adverse effect, nor does it mention Bartolomeo Gosio. Therefore, the context does not contain the specific information needed to answer the question.",
+            "retrieval_information": "-Reference: [WIKI_1]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n\n",
+            "candidate": [
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "The provided context only states that Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions. It does not provide any specific details about a decrease in white blood cells as a common adverse effect, nor does it mention Bartolomeo Gosio. Therefore, the context does not contain the specific information needed to answer the question.",
+                "retrieval_information": "-Reference: [WIKI_1]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n\n",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "The provided context only states that Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions. It does not provide any specific details about a decrease in white blood cells as a common adverse effect, nor does it mention Bartolomeo Gosio. Therefore, the context does not contain the specific information needed to answer the question."
+                }
+              }
+            ]
+          },
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_sparql_wikidata": {
             "short_answer": "Insufficient information",
             "long_answer": "Explanation: The provided context does not contain any information regarding the adverse effects of the drug, including whether a decrease in white blood cells is a common adverse effect. Additionally, there is no mention of the drug discovered by Bartolomeo Gosio or its use in relation to organ transplant.",
             "retrieval_information": "- Reference [SPARQL]: \nwhite blood cells: - type of cells of the immunological system\n- album by The White Stripes\n- clinical trial\n\norgan transplant: - moving of an organ from one body or body region to another\n- moving of an organ or tissue from one body or body region to another\n- academic discipline, branch of medicine\n- organ used in transplantation\n- legality and history of organ transplantation in China\n- depictions of organ transplantation in fictional stories\n- item in the National Archives and Records Administration's holdings\n- legality and prevalence of the medical procedure in Israel\n- organ transplantation regulation in Indian state, Tamil Nadu\n- clinical trial\n- Chinese medical journal\n- substrand of the Biology curriculum in basic education in Uruguay\n- clinical trial\n",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
             "candidate": [
-                {
-                    "source": "google",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "Explanation: Although the provided context discusses mycophenolic acid (discovered by Bartolomeo Gosio) and its use in organ transplantation, the specific detail about a decrease in white blood cells as a common adverse effect of the drug is not mentioned in any of the references.",
-                    "retrieval_information": "-Reference: [GG_1]: Paediatric use of mycophenolate mofetil - PMC by HJ Downing · 2012 · Cited by 70 — This review summarizes the current use of mycophenolate mofetil (MMF) in children in order to identify areas that require further research and investigation.\n-Reference: [GG_2]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n-Reference: [GG_3]: Mycophenolic acid: a drug with a potential beyond renal ... 29 Jul 2016 — Mycophenolic acid (MPA) is an immunosuppressive drug used for the prevention of rejection in solid organ transplantation.\n-Reference: [GG_4]: Paediatric use of mycophenolate mofetil by HJ Downing · 2013 · Cited by 70 — UGT genotype may contribute to adverse events following medication with mycophenolate mofetil in pediatric kidney transplant recipients.\n-Reference: [GG_5]: Bartolomeo Gosio, 1863–1944: An appreciation 10 Aug 2025 — Mycophenolic acid has undergone a wondrous journey to become a much used immunosuppressant for organ transplantation.\n-Reference: [GG_6]: Rationalized immunosuppressant dosing in kidney transplantation by S Sharma — ... Bartolomeo Gosio.9 The efficacy of MMF in preventing acute rejection episodes in renal allograft recipients was established through randomized, double-blind ...\n-Reference: [GG_7]: Personalized Therapy for Mycophenolate, Consensus Report ... by S Bergan · 2021 · Cited by 196 — In patients treated with MMF, an MPA C0 between 1 and. 3.5 mg/L might also be recommended to decrease the risk of rejection and adverse events ( ...\n-Reference: [GG_8]: Enhanced Antipsoriatic Activity of Mycophenolic Acid Against the TNF ... by W Supasena · 2020 · Cited by 23 — Mycophenolic acid (MPA) is an immunosuppressant that has been used to prevent the rejection of organ transplantation but has also demonstrated an antipsoriatic ...\n-Reference: [GG_9]: Personalized Therapy for Mycophenolate: Consensus Report ... by S Bergan · 2021 · Cited by 196 — MPA was discovered in 1893 by an Italian physician,. Bartolomeo Gosio, as a fermentation product of Penicillium species.17 Initially, MPA was ...\n-Reference: [GG_10]: Personalized Therapy for Mycophenolate: consensus report ... by S Bergan · Cited by 196 — MPA was discovered in 1893 by an Italian physician, Bartolomeo Gosio, as a fermentation product of Penicillium species.\n-Reference: [GG_11]: Electroanalytical overview: the sensing of the mycophenolate ... by RD Crapnell · 2024 — This drug is an immunosuppressant combined with other drugs such as corticosteroids to prevent organ ... Bartolomeo Gosio (see Fig. 1B)† in ...\n-Reference: [GG_12]: The Immunosuppressant Tacrolimus (FK506) Facing ... by C Barreiro · 2024 · Cited by 5 — Tacrolimus is a well-stablished API that is used as a clinical treatment to avoid graft rejection, but also shows interesting properties in terms of decreasing ...\n-Reference: [GG_13]: CellCept® and Lupus WHAT IS IT? CellCept® or mycophenolate mofetil, is a medication that was first prescribed to treat people who have had an organ transplant.\n-Reference: [GG_14]: A Study of Serious Adverse Event associated with the use of ... by S Sahu · 2018 — ABSTRACT. Organ transplantation by Mycophenolate mofetil (MMF) is crucial component for treatment of choice for patients suffering from End ...\n-Reference: [GG_15]: Dissecting the Multiplicity of Immune Effects of Immunosuppressive ... by M Cangemi · 2019 · Cited by 49 — Globally, immunosuppressive drugs used in the transplant setting may affect B lymphocytes resulting in both anti-tumor and pro-tumorigenic ...\n-Reference: [GG_16]: New Analogues of Mycophenolic Acid by A Siebert · 2017 · Cited by 31 — However, now actual participation of AZA 1 in the treatment of transplant is reduced, because it has a lot of adverse effects. AZA possesses mutagenic ...\n-Reference: [GG_17]: Wound healing in the presence of immunesuppressant therapy by MCM Willems · 2018 — The immune suppressant action is therefore based on a decrease of proliferation of T and B lymphocytes and monocytes. By depleting the intracellular ...\n-Reference: [GG_18]: Arsenic Exposure and Toxicology: A Historical Perspective by MF Hughes · 2011 · Cited by 1687 — In 1878, it was found that Fowler's solution could be effective in lowering the white blood cell count in leukemia patients (Antman, 2001, 210-9361). Although ...\n-Reference: [GG_19]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n-Reference: [GG_20]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: Although the provided context discusses mycophenolic acid (discovered by Bartolomeo Gosio) and its use in organ transplantation, the specific detail about a decrease in white blood cells as a common adverse effect of the drug is not mentioned in any of the references."
-                    }
-                },
-                {
-                    "source": "wiki",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "The provided context only states that Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions. It does not provide any specific details about a decrease in white blood cells as a common adverse effect, nor does it mention Bartolomeo Gosio. Therefore, the context does not contain the specific information needed to answer the question.",
-                    "retrieval_information": "-Reference: [WIKI_1]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context only states that Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions. It does not provide any specific details about a decrease in white blood cells as a common adverse effect, nor does it mention Bartolomeo Gosio. Therefore, the context does not contain the specific information needed to answer the question."
-                    }
-                },
-                {
-                    "source": "crawl_wiki",
-                    "short_answer": "insufficient information",
-                    "long_answer": "No context",
-                    "retrieval_information": "",
-                    "full_data": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context"
-                    }
-                },
-                {
-                    "source": "crawl_ner_wiki",
-                    "short_answer": "insufficient information",
-                    "long_answer": "No context",
-                    "retrieval_information": "",
-                    "full_data": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context"
-                    }
-                },
-                {
-                    "source": "crawl_sparql_wikidata",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "Explanation: The provided context does not contain any information regarding the adverse effects of the drug, including whether a decrease in white blood cells is a common adverse effect. Additionally, there is no mention of the drug discovered by Bartolomeo Gosio or its use in relation to organ transplant.",
-                    "retrieval_information": "- Reference [SPARQL]: \nwhite blood cells: - type of cells of the immunological system\n- album by The White Stripes\n- clinical trial\n\norgan transplant: - moving of an organ from one body or body region to another\n- moving of an organ or tissue from one body or body region to another\n- academic discipline, branch of medicine\n- organ used in transplantation\n- legality and history of organ transplantation in China\n- depictions of organ transplantation in fictional stories\n- item in the National Archives and Records Administration's holdings\n- legality and prevalence of the medical procedure in Israel\n- organ transplantation regulation in Indian state, Tamil Nadu\n- clinical trial\n- Chinese medical journal\n- substrand of the Biology curriculum in basic education in Uruguay\n- clinical trial\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context does not contain any information regarding the adverse effects of the drug, including whether a decrease in white blood cells is a common adverse effect. Additionally, there is no mention of the drug discovered by Bartolomeo Gosio or its use in relation to organ transplant."
-                    }
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "Explanation: The provided context does not contain any information regarding the adverse effects of the drug, including whether a decrease in white blood cells is a common adverse effect. Additionally, there is no mention of the drug discovered by Bartolomeo Gosio or its use in relation to organ transplant.",
+                "retrieval_information": "- Reference [SPARQL]: \nwhite blood cells: - type of cells of the immunological system\n- album by The White Stripes\n- clinical trial\n\norgan transplant: - moving of an organ from one body or body region to another\n- moving of an organ or tissue from one body or body region to another\n- academic discipline, branch of medicine\n- organ used in transplantation\n- legality and history of organ transplantation in China\n- depictions of organ transplantation in fictional stories\n- item in the National Archives and Records Administration's holdings\n- legality and prevalence of the medical procedure in Israel\n- organ transplantation regulation in Indian state, Tamil Nadu\n- clinical trial\n- Chinese medical journal\n- substrand of the Biology curriculum in basic education in Uruguay\n- clinical trial\n",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "Explanation: The provided context does not contain any information regarding the adverse effects of the drug, including whether a decrease in white blood cells is a common adverse effect. Additionally, there is no mention of the drug discovered by Bartolomeo Gosio or its use in relation to organ transplant."
                 }
+              }
             ]
+          }
         },
-        "0": {
-            "0": {
-                "source_output": {
-                    "google": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: Although the provided context discusses mycophenolic acid (discovered by Bartolomeo Gosio) and its use in organ transplantation, the specific detail about a decrease in white blood cells as a common adverse effect of the drug is not mentioned in any of the references.",
-                        "retrieval_information": "-Reference: [GG_1]: Paediatric use of mycophenolate mofetil - PMC by HJ Downing · 2012 · Cited by 70 — This review summarizes the current use of mycophenolate mofetil (MMF) in children in order to identify areas that require further research and investigation.\n-Reference: [GG_2]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n-Reference: [GG_3]: Mycophenolic acid: a drug with a potential beyond renal ... 29 Jul 2016 — Mycophenolic acid (MPA) is an immunosuppressive drug used for the prevention of rejection in solid organ transplantation.\n-Reference: [GG_4]: Paediatric use of mycophenolate mofetil by HJ Downing · 2013 · Cited by 70 — UGT genotype may contribute to adverse events following medication with mycophenolate mofetil in pediatric kidney transplant recipients.\n-Reference: [GG_5]: Bartolomeo Gosio, 1863–1944: An appreciation 10 Aug 2025 — Mycophenolic acid has undergone a wondrous journey to become a much used immunosuppressant for organ transplantation.\n-Reference: [GG_6]: Rationalized immunosuppressant dosing in kidney transplantation by S Sharma — ... Bartolomeo Gosio.9 The efficacy of MMF in preventing acute rejection episodes in renal allograft recipients was established through randomized, double-blind ...\n-Reference: [GG_7]: Personalized Therapy for Mycophenolate, Consensus Report ... by S Bergan · 2021 · Cited by 196 — In patients treated with MMF, an MPA C0 between 1 and. 3.5 mg/L might also be recommended to decrease the risk of rejection and adverse events ( ...\n-Reference: [GG_8]: Enhanced Antipsoriatic Activity of Mycophenolic Acid Against the TNF ... by W Supasena · 2020 · Cited by 23 — Mycophenolic acid (MPA) is an immunosuppressant that has been used to prevent the rejection of organ transplantation but has also demonstrated an antipsoriatic ...\n-Reference: [GG_9]: Personalized Therapy for Mycophenolate: Consensus Report ... by S Bergan · 2021 · Cited by 196 — MPA was discovered in 1893 by an Italian physician,. Bartolomeo Gosio, as a fermentation product of Penicillium species.17 Initially, MPA was ...\n-Reference: [GG_10]: Personalized Therapy for Mycophenolate: consensus report ... by S Bergan · Cited by 196 — MPA was discovered in 1893 by an Italian physician, Bartolomeo Gosio, as a fermentation product of Penicillium species.\n-Reference: [GG_11]: Electroanalytical overview: the sensing of the mycophenolate ... by RD Crapnell · 2024 — This drug is an immunosuppressant combined with other drugs such as corticosteroids to prevent organ ... Bartolomeo Gosio (see Fig. 1B)† in ...\n-Reference: [GG_12]: The Immunosuppressant Tacrolimus (FK506) Facing ... by C Barreiro · 2024 · Cited by 5 — Tacrolimus is a well-stablished API that is used as a clinical treatment to avoid graft rejection, but also shows interesting properties in terms of decreasing ...\n-Reference: [GG_13]: CellCept® and Lupus WHAT IS IT? CellCept® or mycophenolate mofetil, is a medication that was first prescribed to treat people who have had an organ transplant.\n-Reference: [GG_14]: A Study of Serious Adverse Event associated with the use of ... by S Sahu · 2018 — ABSTRACT. Organ transplantation by Mycophenolate mofetil (MMF) is crucial component for treatment of choice for patients suffering from End ...\n-Reference: [GG_15]: Dissecting the Multiplicity of Immune Effects of Immunosuppressive ... by M Cangemi · 2019 · Cited by 49 — Globally, immunosuppressive drugs used in the transplant setting may affect B lymphocytes resulting in both anti-tumor and pro-tumorigenic ...\n-Reference: [GG_16]: New Analogues of Mycophenolic Acid by A Siebert · 2017 · Cited by 31 — However, now actual participation of AZA 1 in the treatment of transplant is reduced, because it has a lot of adverse effects. AZA possesses mutagenic ...\n-Reference: [GG_17]: Wound healing in the presence of immunesuppressant therapy by MCM Willems · 2018 — The immune suppressant action is therefore based on a decrease of proliferation of T and B lymphocytes and monocytes. By depleting the intracellular ...\n-Reference: [GG_18]: Arsenic Exposure and Toxicology: A Historical Perspective by MF Hughes · 2011 · Cited by 1687 — In 1878, it was found that Fowler's solution could be effective in lowering the white blood cell count in leukemia patients (Antman, 2001, 210-9361). Although ...\n-Reference: [GG_19]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n-Reference: [GG_20]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "Explanation: Although the provided context discusses mycophenolic acid (discovered by Bartolomeo Gosio) and its use in organ transplantation, the specific detail about a decrease in white blood cells as a common adverse effect of the drug is not mentioned in any of the references.",
-                                "retrieval_information": "-Reference: [GG_1]: Paediatric use of mycophenolate mofetil - PMC by HJ Downing · 2012 · Cited by 70 — This review summarizes the current use of mycophenolate mofetil (MMF) in children in order to identify areas that require further research and investigation.\n-Reference: [GG_2]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n-Reference: [GG_3]: Mycophenolic acid: a drug with a potential beyond renal ... 29 Jul 2016 — Mycophenolic acid (MPA) is an immunosuppressive drug used for the prevention of rejection in solid organ transplantation.\n-Reference: [GG_4]: Paediatric use of mycophenolate mofetil by HJ Downing · 2013 · Cited by 70 — UGT genotype may contribute to adverse events following medication with mycophenolate mofetil in pediatric kidney transplant recipients.\n-Reference: [GG_5]: Bartolomeo Gosio, 1863–1944: An appreciation 10 Aug 2025 — Mycophenolic acid has undergone a wondrous journey to become a much used immunosuppressant for organ transplantation.\n-Reference: [GG_6]: Rationalized immunosuppressant dosing in kidney transplantation by S Sharma — ... Bartolomeo Gosio.9 The efficacy of MMF in preventing acute rejection episodes in renal allograft recipients was established through randomized, double-blind ...\n-Reference: [GG_7]: Personalized Therapy for Mycophenolate, Consensus Report ... by S Bergan · 2021 · Cited by 196 — In patients treated with MMF, an MPA C0 between 1 and. 3.5 mg/L might also be recommended to decrease the risk of rejection and adverse events ( ...\n-Reference: [GG_8]: Enhanced Antipsoriatic Activity of Mycophenolic Acid Against the TNF ... by W Supasena · 2020 · Cited by 23 — Mycophenolic acid (MPA) is an immunosuppressant that has been used to prevent the rejection of organ transplantation but has also demonstrated an antipsoriatic ...\n-Reference: [GG_9]: Personalized Therapy for Mycophenolate: Consensus Report ... by S Bergan · 2021 · Cited by 196 — MPA was discovered in 1893 by an Italian physician,. Bartolomeo Gosio, as a fermentation product of Penicillium species.17 Initially, MPA was ...\n-Reference: [GG_10]: Personalized Therapy for Mycophenolate: consensus report ... by S Bergan · Cited by 196 — MPA was discovered in 1893 by an Italian physician, Bartolomeo Gosio, as a fermentation product of Penicillium species.\n-Reference: [GG_11]: Electroanalytical overview: the sensing of the mycophenolate ... by RD Crapnell · 2024 — This drug is an immunosuppressant combined with other drugs such as corticosteroids to prevent organ ... Bartolomeo Gosio (see Fig. 1B)† in ...\n-Reference: [GG_12]: The Immunosuppressant Tacrolimus (FK506) Facing ... by C Barreiro · 2024 · Cited by 5 — Tacrolimus is a well-stablished API that is used as a clinical treatment to avoid graft rejection, but also shows interesting properties in terms of decreasing ...\n-Reference: [GG_13]: CellCept® and Lupus WHAT IS IT? CellCept® or mycophenolate mofetil, is a medication that was first prescribed to treat people who have had an organ transplant.\n-Reference: [GG_14]: A Study of Serious Adverse Event associated with the use of ... by S Sahu · 2018 — ABSTRACT. Organ transplantation by Mycophenolate mofetil (MMF) is crucial component for treatment of choice for patients suffering from End ...\n-Reference: [GG_15]: Dissecting the Multiplicity of Immune Effects of Immunosuppressive ... by M Cangemi · 2019 · Cited by 49 — Globally, immunosuppressive drugs used in the transplant setting may affect B lymphocytes resulting in both anti-tumor and pro-tumorigenic ...\n-Reference: [GG_16]: New Analogues of Mycophenolic Acid by A Siebert · 2017 · Cited by 31 — However, now actual participation of AZA 1 in the treatment of transplant is reduced, because it has a lot of adverse effects. AZA possesses mutagenic ...\n-Reference: [GG_17]: Wound healing in the presence of immunesuppressant therapy by MCM Willems · 2018 — The immune suppressant action is therefore based on a decrease of proliferation of T and B lymphocytes and monocytes. By depleting the intracellular ...\n-Reference: [GG_18]: Arsenic Exposure and Toxicology: A Historical Perspective by MF Hughes · 2011 · Cited by 1687 — In 1878, it was found that Fowler's solution could be effective in lowering the white blood cell count in leukemia patients (Antman, 2001, 210-9361). Although ...\n-Reference: [GG_19]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n-Reference: [GG_20]: Rationalized immunosuppressant dosing in kidney transplantation This review aims to provide clinicians with an overview and insights into the evidence for MMF exposure, its pharmacokinetics, associated controversies, ...\n\n",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "Explanation: Although the provided context discusses mycophenolic acid (discovered by Bartolomeo Gosio) and its use in organ transplantation, the specific detail about a decrease in white blood cells as a common adverse effect of the drug is not mentioned in any of the references."
-                                }
-                            }
-                        ]
-                    },
-                    "wiki": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context only states that Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions. It does not provide any specific details about a decrease in white blood cells as a common adverse effect, nor does it mention Bartolomeo Gosio. Therefore, the context does not contain the specific information needed to answer the question.",
-                        "retrieval_information": "-Reference: [WIKI_1]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "The provided context only states that Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions. It does not provide any specific details about a decrease in white blood cells as a common adverse effect, nor does it mention Bartolomeo Gosio. Therefore, the context does not contain the specific information needed to answer the question.",
-                                "retrieval_information": "-Reference: [WIKI_1]: Mycophenolic acid Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions\n\n",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "The provided context only states that Mycophenolic acid is an immunosuppressant medication used to prevent rejection following organ transplantation and to treat autoimmune conditions. It does not provide any specific details about a decrease in white blood cells as a common adverse effect, nor does it mention Bartolomeo Gosio. Therefore, the context does not contain the specific information needed to answer the question."
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_ner_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_sparql_wikidata": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context does not contain any information regarding the adverse effects of the drug, including whether a decrease in white blood cells is a common adverse effect. Additionally, there is no mention of the drug discovered by Bartolomeo Gosio or its use in relation to organ transplant.",
-                        "retrieval_information": "- Reference [SPARQL]: \nwhite blood cells: - type of cells of the immunological system\n- album by The White Stripes\n- clinical trial\n\norgan transplant: - moving of an organ from one body or body region to another\n- moving of an organ or tissue from one body or body region to another\n- academic discipline, branch of medicine\n- organ used in transplantation\n- legality and history of organ transplantation in China\n- depictions of organ transplantation in fictional stories\n- item in the National Archives and Records Administration's holdings\n- legality and prevalence of the medical procedure in Israel\n- organ transplantation regulation in Indian state, Tamil Nadu\n- clinical trial\n- Chinese medical journal\n- substrand of the Biology curriculum in basic education in Uruguay\n- clinical trial\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "Explanation: The provided context does not contain any information regarding the adverse effects of the drug, including whether a decrease in white blood cells is a common adverse effect. Additionally, there is no mention of the drug discovered by Bartolomeo Gosio or its use in relation to organ transplant.",
-                                "retrieval_information": "- Reference [SPARQL]: \nwhite blood cells: - type of cells of the immunological system\n- album by The White Stripes\n- clinical trial\n\norgan transplant: - moving of an organ from one body or body region to another\n- moving of an organ or tissue from one body or body region to another\n- academic discipline, branch of medicine\n- organ used in transplantation\n- legality and history of organ transplantation in China\n- depictions of organ transplantation in fictional stories\n- item in the National Archives and Records Administration's holdings\n- legality and prevalence of the medical procedure in Israel\n- organ transplantation regulation in Indian state, Tamil Nadu\n- clinical trial\n- Chinese medical journal\n- substrand of the Biology curriculum in basic education in Uruguay\n- clinical trial\n",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "Explanation: The provided context does not contain any information regarding the adverse effects of the drug, including whether a decrease in white blood cells is a common adverse effect. Additionally, there is no mention of the drug discovered by Bartolomeo Gosio or its use in relation to organ transplant."
-                                }
-                            }
-                        ]
-                    }
-                },
-                "question": "Is a decrease in white blood cells a common adverse effect of the drug, now used in relation to organ transplant, which was discovered by the Italian scientist Bartolomeo Gosio?",
-                "search_keyword": "decrease white blood cells adverse effect drug organ transplant Bartolomeo Gosio"
-            }
-        }
-    },
-    "final_answer": {
-        "long_answer": "Explanation: The provided context does not contain any information regarding the adverse effects of the drug, including whether a decrease in white blood cells is a common adverse effect. Additionally, there is no mention of the drug discovered by Bartolomeo Gosio or its use in relation to organ transplant.",
-        "short_answer": "Insufficient information",
-        "retrieval_information": "- Reference [SPARQL]: \nwhite blood cells: - type of cells of the immunological system\n- album by The White Stripes\n- clinical trial\n\norgan transplant: - moving of an organ from one body or body region to another\n- moving of an organ or tissue from one body or body region to another\n- academic discipline, branch of medicine\n- organ used in transplantation\n- legality and history of organ transplantation in China\n- depictions of organ transplantation in fictional stories\n- item in the National Archives and Records Administration's holdings\n- legality and prevalence of the medical procedure in Israel\n- organ transplantation regulation in Indian state, Tamil Nadu\n- clinical trial\n- Chinese medical journal\n- substrand of the Biology curriculum in basic education in Uruguay\n- clinical trial\n"
+        "question": "Is a decrease in white blood cells a common adverse effect of the drug, now used in relation to organ transplant, which was discovered by the Italian scientist Bartolomeo Gosio?",
+        "search_keyword": "decrease white blood cells adverse effect drug organ transplant Bartolomeo Gosio"
+      }
     }
+  }
 }

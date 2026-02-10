@@ -1,0 +1,108 @@
+{
+    "QIDX": "820147",
+    "original_question": "What is the name of the textbook published in 1953 by the dermatologist who first recognized Degos disease as a new clinical entity?",
+    "type_q": "direct",
+    "focus_spacy_based_entity_label": [
+        "DISEASE",
+        "CHEMICAL"
+    ],
+    "target_answer_type": "textbook",
+    "key_entities": [
+        "Degos disease"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What is the name of the textbook published in 1953 by the dermatologist who first recognized Degos disease as a new clinical entity?",
+            "search_keyword": "Degos disease textbook 1953 dermatologist recognized",
+            "short_answer": "",
+            "long_answer": "",
+            "retrieval_information": "",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "candidate": [
+                {
+                    "source": "google",
+                    "short_answer": "Dermatologie",
+                    "long_answer": "Reference: [GG_2]. Explanation: According to the provided context, Robert Degos, the dermatologist who first recognized Degos disease as a new clinical entity, authored the comprehensive textbook 'Dermatologie' in its first edition in 1953.",
+                    "retrieval_information": "-Reference: [GG_1]: [The history of nosology in dermatology] - PubMed ... Degos' treatise published in 1953. The latest nosologies acknowledge the importance of clinical data but give first rank to the physiopathology of diseases ...Missing:recognized| Show results with:recognized\n-Reference: [GG_2]: Robert Degos - Grokipedia He authored the comprehensive textbook Dermatologie (first edition 1953, revised through 1981), which synthesized French and international advancements and ...Missing:recognized| Show results with:recognized\n-Reference: [GG_3]: Chapter 171. Malignant Atrophic Papulosis (Degos Disease) In the early 1940s, Köhlmeier first described malignant atrophic papulosis, whereas Degos, Delort, and Tricot recognized it as a specific entity a year later.1– ...Missing:textbook1953\n-Reference: [GG_4]: [PDF] Supplement 2 / 2013 - Our Dermatology Online In. 1953, Lutz recognized the features of EPS as those of an unknown disease and termed the condition keratosis follicularis serpiginosa. Miescher believed ...\n-Reference: [GG_5]: Dermatology eponyms named after women - ScienceDirect.com This article will discuss some of the women who are immortalized in dermatology textbooks by the diseases that bear their names. We have concentrated on ...\n-Reference: [GG_6]: Linear Porokeratosis | JAMA Dermatology We believe that linear porokeratosis should be recognized as a distinctive clinical variant and that the condition should be taken into consideration in the ...\n-Reference: [GG_7]: [PDF] Elementary lesions in dermatological semiology: literature review* Abstract: Discrepancies in the terminology of elementary lesions persist when texts from Dermatology and Semiology books are compared, which can cause some ...\n-Reference: [GG_8]: [PDF] Degos Disease (Malignant Atrophic Papulosis) With Granular IgM on ... Jan 13, 2021·Degos disease is a rare vasculopathy characterized by skin papules with central porcelain white atrophy and a surrounding telangiectatic rim ...\n-Reference: [GG_9]: Clinical and Laboratory Investigations - Dermatology 1997;195:337-343 Ann Dermatol Vénéréol 1994;121: 7-10. Leukoderma in Dowling-Degos Disease: Reticulate Acropigmentation of Kitamura. Dermatology 1997:195:337-343.\n-Reference: [GG_10]: Turning points in dermatology during the 20th century - Oxford Academic Robert Degos led an editorial team to produce a large French reference book, which appeared first in 1953. 21. Authors of the 4th edition of Textbook of ...\n-Reference: [GG_11]: Clinical and Laboratory Investigations - Dermatology 1997;195:337-343 Ann Dermatol Vénéréol 1994;121: 7-10. Leukoderma in Dowling-Degos Disease: Reticulate Acropigmentation of Kitamura. Dermatology 1997:195:337-343.\n-Reference: [GG_12]: Felix Wasik (1930-2002): A dermatologist for all seasons In recognition of his accomplishments and contributions, the Lower Silesia chapter of the Polish Society of. Dermatology established an annual award in his name ...\n-Reference: [GG_13]: Tumors Answers (H) - Self-Assessment in ... Nov 1, 2018·This neoplasm was initially described by Hermann Pinkus in 1953 as a premalignant fibroepithelial tumor. ... Degos disease, and multiple diffuse ...\n-Reference: [GG_14]: Elementary lesions in dermatological semiology: Literature review The late Arthur Rook established the Textbook of Dermatology as the most comprehensive work of reference available to the dermatologist. Covering all aspects of ...\n-Reference: [GG_15]: Moschella & Hurley's Dermatology (2 Volumes), 4th Edition [4 ed ... This text carries the traditional book format and contents. Beyond covering routine skin conditions, the book contains a special focus on dermatologic surgery ...\n-Reference: [GG_16]: Dermatopathology 1st Edition Nooshin K. Brinster - Scribd Degos' Disease (Malignant Atrophic Papulosis), 158. Pigmented Purpura, 159 C. Fungal Infections Dermatophytosis, 238. L. Fibrosing/Sclerosing Dermatitis Tinea ...\n-Reference: [GG_17]: [PDF] Laeijendecker,Proefschr.indd - RePub, Erasmus University Repository Textbook of Dermatology. Champion RH, Burton JL, Burns DA, Breathnach SM. 6th edn. Vol 4. Oxford: Blackwell Science Ltd 1998; 3074-147. 2. van der Waal RIF ...\n-Reference: [GG_18]: Vasculitis, Neutrophilic Dermatoses and Related Disorders Mar 22, 2010·This chapter contains sections titled: Vasculitis. Other vasculitides and mimics of vasculitis. Behçet's disease. Neutrophilic dermatoses.\n-Reference: [GG_19]: Dae Hun Suh Editor - Acne - Springer Link People regard acne as a symbol of youth and dismiss it as a passing process. Sometimes, even doctors. (excluding dermatologists) seem to have this thought.\n-Reference: [GG_20]: Hydradenitis Suppurativa1 - B A Bell, Harold Ellis, 1978 - Sage Journals Dowling-Degos disease associated with hidradenitis suppurativa. Go to citationCrossrefGoogle Scholar. Surgical treatment of hidradenitis suppurativa. Go to ...\n\n",
+                    "full_data": {
+                        "short_answer": "Dermatologie",
+                        "long_answer": "Reference: [GG_2]. Explanation: According to the provided context, Robert Degos, the dermatologist who first recognized Degos disease as a new clinical entity, authored the comprehensive textbook 'Dermatologie' in its first edition in 1953."
+                    }
+                }
+            ]
+        },
+        "0": {
+            "0": {
+                "source_output": {
+                    "google": {
+                        "short_answer": "Dermatologie",
+                        "long_answer": "Reference: [GG_2]. Explanation: According to the provided context, Robert Degos, the dermatologist who first recognized Degos disease as a new clinical entity, authored the comprehensive textbook 'Dermatologie' in its first edition in 1953.",
+                        "retrieval_information": "-Reference: [GG_1]: [The history of nosology in dermatology] - PubMed ... Degos' treatise published in 1953. The latest nosologies acknowledge the importance of clinical data but give first rank to the physiopathology of diseases ...Missing:recognized| Show results with:recognized\n-Reference: [GG_2]: Robert Degos - Grokipedia He authored the comprehensive textbook Dermatologie (first edition 1953, revised through 1981), which synthesized French and international advancements and ...Missing:recognized| Show results with:recognized\n-Reference: [GG_3]: Chapter 171. Malignant Atrophic Papulosis (Degos Disease) In the early 1940s, Köhlmeier first described malignant atrophic papulosis, whereas Degos, Delort, and Tricot recognized it as a specific entity a year later.1– ...Missing:textbook1953\n-Reference: [GG_4]: [PDF] Supplement 2 / 2013 - Our Dermatology Online In. 1953, Lutz recognized the features of EPS as those of an unknown disease and termed the condition keratosis follicularis serpiginosa. Miescher believed ...\n-Reference: [GG_5]: Dermatology eponyms named after women - ScienceDirect.com This article will discuss some of the women who are immortalized in dermatology textbooks by the diseases that bear their names. We have concentrated on ...\n-Reference: [GG_6]: Linear Porokeratosis | JAMA Dermatology We believe that linear porokeratosis should be recognized as a distinctive clinical variant and that the condition should be taken into consideration in the ...\n-Reference: [GG_7]: [PDF] Elementary lesions in dermatological semiology: literature review* Abstract: Discrepancies in the terminology of elementary lesions persist when texts from Dermatology and Semiology books are compared, which can cause some ...\n-Reference: [GG_8]: [PDF] Degos Disease (Malignant Atrophic Papulosis) With Granular IgM on ... Jan 13, 2021·Degos disease is a rare vasculopathy characterized by skin papules with central porcelain white atrophy and a surrounding telangiectatic rim ...\n-Reference: [GG_9]: Clinical and Laboratory Investigations - Dermatology 1997;195:337-343 Ann Dermatol Vénéréol 1994;121: 7-10. Leukoderma in Dowling-Degos Disease: Reticulate Acropigmentation of Kitamura. Dermatology 1997:195:337-343.\n-Reference: [GG_10]: Turning points in dermatology during the 20th century - Oxford Academic Robert Degos led an editorial team to produce a large French reference book, which appeared first in 1953. 21. Authors of the 4th edition of Textbook of ...\n-Reference: [GG_11]: Clinical and Laboratory Investigations - Dermatology 1997;195:337-343 Ann Dermatol Vénéréol 1994;121: 7-10. Leukoderma in Dowling-Degos Disease: Reticulate Acropigmentation of Kitamura. Dermatology 1997:195:337-343.\n-Reference: [GG_12]: Felix Wasik (1930-2002): A dermatologist for all seasons In recognition of his accomplishments and contributions, the Lower Silesia chapter of the Polish Society of. Dermatology established an annual award in his name ...\n-Reference: [GG_13]: Tumors Answers (H) - Self-Assessment in ... Nov 1, 2018·This neoplasm was initially described by Hermann Pinkus in 1953 as a premalignant fibroepithelial tumor. ... Degos disease, and multiple diffuse ...\n-Reference: [GG_14]: Elementary lesions in dermatological semiology: Literature review The late Arthur Rook established the Textbook of Dermatology as the most comprehensive work of reference available to the dermatologist. Covering all aspects of ...\n-Reference: [GG_15]: Moschella & Hurley's Dermatology (2 Volumes), 4th Edition [4 ed ... This text carries the traditional book format and contents. Beyond covering routine skin conditions, the book contains a special focus on dermatologic surgery ...\n-Reference: [GG_16]: Dermatopathology 1st Edition Nooshin K. Brinster - Scribd Degos' Disease (Malignant Atrophic Papulosis), 158. Pigmented Purpura, 159 C. Fungal Infections Dermatophytosis, 238. L. Fibrosing/Sclerosing Dermatitis Tinea ...\n-Reference: [GG_17]: [PDF] Laeijendecker,Proefschr.indd - RePub, Erasmus University Repository Textbook of Dermatology. Champion RH, Burton JL, Burns DA, Breathnach SM. 6th edn. Vol 4. Oxford: Blackwell Science Ltd 1998; 3074-147. 2. van der Waal RIF ...\n-Reference: [GG_18]: Vasculitis, Neutrophilic Dermatoses and Related Disorders Mar 22, 2010·This chapter contains sections titled: Vasculitis. Other vasculitides and mimics of vasculitis. Behçet's disease. Neutrophilic dermatoses.\n-Reference: [GG_19]: Dae Hun Suh Editor - Acne - Springer Link People regard acne as a symbol of youth and dismiss it as a passing process. Sometimes, even doctors. (excluding dermatologists) seem to have this thought.\n-Reference: [GG_20]: Hydradenitis Suppurativa1 - B A Bell, Harold Ellis, 1978 - Sage Journals Dowling-Degos disease associated with hidradenitis suppurativa. Go to citationCrossrefGoogle Scholar. Surgical treatment of hidradenitis suppurativa. Go to ...\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Dermatologie",
+                                "long_answer": "Reference: [GG_2]. Explanation: According to the provided context, Robert Degos, the dermatologist who first recognized Degos disease as a new clinical entity, authored the comprehensive textbook 'Dermatologie' in its first edition in 1953.",
+                                "retrieval_information": "-Reference: [GG_1]: [The history of nosology in dermatology] - PubMed ... Degos' treatise published in 1953. The latest nosologies acknowledge the importance of clinical data but give first rank to the physiopathology of diseases ...Missing:recognized| Show results with:recognized\n-Reference: [GG_2]: Robert Degos - Grokipedia He authored the comprehensive textbook Dermatologie (first edition 1953, revised through 1981), which synthesized French and international advancements and ...Missing:recognized| Show results with:recognized\n-Reference: [GG_3]: Chapter 171. Malignant Atrophic Papulosis (Degos Disease) In the early 1940s, Köhlmeier first described malignant atrophic papulosis, whereas Degos, Delort, and Tricot recognized it as a specific entity a year later.1– ...Missing:textbook1953\n-Reference: [GG_4]: [PDF] Supplement 2 / 2013 - Our Dermatology Online In. 1953, Lutz recognized the features of EPS as those of an unknown disease and termed the condition keratosis follicularis serpiginosa. Miescher believed ...\n-Reference: [GG_5]: Dermatology eponyms named after women - ScienceDirect.com This article will discuss some of the women who are immortalized in dermatology textbooks by the diseases that bear their names. We have concentrated on ...\n-Reference: [GG_6]: Linear Porokeratosis | JAMA Dermatology We believe that linear porokeratosis should be recognized as a distinctive clinical variant and that the condition should be taken into consideration in the ...\n-Reference: [GG_7]: [PDF] Elementary lesions in dermatological semiology: literature review* Abstract: Discrepancies in the terminology of elementary lesions persist when texts from Dermatology and Semiology books are compared, which can cause some ...\n-Reference: [GG_8]: [PDF] Degos Disease (Malignant Atrophic Papulosis) With Granular IgM on ... Jan 13, 2021·Degos disease is a rare vasculopathy characterized by skin papules with central porcelain white atrophy and a surrounding telangiectatic rim ...\n-Reference: [GG_9]: Clinical and Laboratory Investigations - Dermatology 1997;195:337-343 Ann Dermatol Vénéréol 1994;121: 7-10. Leukoderma in Dowling-Degos Disease: Reticulate Acropigmentation of Kitamura. Dermatology 1997:195:337-343.\n-Reference: [GG_10]: Turning points in dermatology during the 20th century - Oxford Academic Robert Degos led an editorial team to produce a large French reference book, which appeared first in 1953. 21. Authors of the 4th edition of Textbook of ...\n-Reference: [GG_11]: Clinical and Laboratory Investigations - Dermatology 1997;195:337-343 Ann Dermatol Vénéréol 1994;121: 7-10. Leukoderma in Dowling-Degos Disease: Reticulate Acropigmentation of Kitamura. Dermatology 1997:195:337-343.\n-Reference: [GG_12]: Felix Wasik (1930-2002): A dermatologist for all seasons In recognition of his accomplishments and contributions, the Lower Silesia chapter of the Polish Society of. Dermatology established an annual award in his name ...\n-Reference: [GG_13]: Tumors Answers (H) - Self-Assessment in ... Nov 1, 2018·This neoplasm was initially described by Hermann Pinkus in 1953 as a premalignant fibroepithelial tumor. ... Degos disease, and multiple diffuse ...\n-Reference: [GG_14]: Elementary lesions in dermatological semiology: Literature review The late Arthur Rook established the Textbook of Dermatology as the most comprehensive work of reference available to the dermatologist. Covering all aspects of ...\n-Reference: [GG_15]: Moschella & Hurley's Dermatology (2 Volumes), 4th Edition [4 ed ... This text carries the traditional book format and contents. Beyond covering routine skin conditions, the book contains a special focus on dermatologic surgery ...\n-Reference: [GG_16]: Dermatopathology 1st Edition Nooshin K. Brinster - Scribd Degos' Disease (Malignant Atrophic Papulosis), 158. Pigmented Purpura, 159 C. Fungal Infections Dermatophytosis, 238. L. Fibrosing/Sclerosing Dermatitis Tinea ...\n-Reference: [GG_17]: [PDF] Laeijendecker,Proefschr.indd - RePub, Erasmus University Repository Textbook of Dermatology. Champion RH, Burton JL, Burns DA, Breathnach SM. 6th edn. Vol 4. Oxford: Blackwell Science Ltd 1998; 3074-147. 2. van der Waal RIF ...\n-Reference: [GG_18]: Vasculitis, Neutrophilic Dermatoses and Related Disorders Mar 22, 2010·This chapter contains sections titled: Vasculitis. Other vasculitides and mimics of vasculitis. Behçet's disease. Neutrophilic dermatoses.\n-Reference: [GG_19]: Dae Hun Suh Editor - Acne - Springer Link People regard acne as a symbol of youth and dismiss it as a passing process. Sometimes, even doctors. (excluding dermatologists) seem to have this thought.\n-Reference: [GG_20]: Hydradenitis Suppurativa1 - B A Bell, Harold Ellis, 1978 - Sage Journals Dowling-Degos disease associated with hidradenitis suppurativa. Go to citationCrossrefGoogle Scholar. Surgical treatment of hidradenitis suppurativa. Go to ...\n\n",
+                                "extracted_entities": "Leukoderma, Degos disease, hidradenitis suppurativa, Degos' Disease, Degos, L. Fibrosing/Sclerosing Dermatitis Tinea, Papulosis, Acne, Vasculitis, GG_7, Degos' treatise published in 1953., atrophy, porokeratosis, Infections, Tumors, EPS, Purpura, Malignant Atrophic Papulosis, Hydradenitis, vasculopathy, tumor, Neutrophilic dermatoses, follicularis serpiginosa",
+                                "full_data": {
+                                    "short_answer": "Dermatologie",
+                                    "long_answer": "Reference: [GG_2]. Explanation: According to the provided context, Robert Degos, the dermatologist who first recognized Degos disease as a new clinical entity, authored the comprehensive textbook 'Dermatologie' in its first edition in 1953."
+                                }
+                            }
+                        ]
+                    },
+                    "wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "extracted_entities": "Degos disease",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "extracted_entities": "Degos disease",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_ner_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": []
+                    },
+                    "crawl_sparql_wikidata": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": []
+                    }
+                },
+                "question": "What is the name of the textbook published in 1953 by the dermatologist who first recognized Degos disease as a new clinical entity?",
+                "search_keyword": "Degos disease textbook 1953 dermatologist recognized"
+            }
+        }
+    }
+}

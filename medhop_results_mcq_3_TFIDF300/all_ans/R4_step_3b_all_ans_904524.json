@@ -1,132 +1,127 @@
 {
-    "QIDX": "904524",
-    "original_question": "Is Abruzzo-Erikson syndrome linked to the CHD7 mutation?",
-    "type_q": "direct",
-    "focus_spacy_based_entity_label": [
-        "DISEASE",
-        "CHEMICAL"
-    ],
-    "target_answer_type": "correctness",
-    "key_entities": [
-        "Abruzzo-Erikson syndrome",
-        "Is Abruzzo-Erikson",
-        "CHD7 mutation"
-    ],
-    "1": {
-        "final_qi": {
-            "question": "Is Abruzzo-Erikson syndrome linked to the CHD7 mutation?",
-            "search_keyword": "Abruzzo-Erikson syndrome CHD7 mutation link",
+  "QIDX": "904524",
+  "original_question": "Is Abruzzo-Erikson syndrome linked to the CHD7 mutation?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "Abruzzo-Erikson syndrome",
+    "Is Abruzzo-Erikson",
+    "CHD7 mutation"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is Abruzzo-Erikson syndrome linked to the CHD7 mutation?",
+      "search_keyword": "Abruzzo-Erikson syndrome CHD7 mutation link",
+      "short_answer": "No",
+      "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation.",
+      "retrieval_information": "-Reference: [GG_1]: X‐linked CHARGE‐like Abruzzo–Erickson syndrome and classic cleft ... by E Pauws · 2013 · Cited by 22 — X-linked CHARGE-like Abruzzo–Erickson syndrome and classic cleft palate with ankyloglossia result from TBX22 splicing mutations. E Pauws,.\n-Reference: [GG_2]: CHD7 Disorder - GeneReviews® - NCBI Bookshelf - NIH by CM van Ravenswaaij-Arts · 2022 · Cited by 43 — Anophthalmia is more common than in CHD7 disorder. TBX22, Abruzzo-Erickson syndrome ... Familial CHARGE syndrome because of CHD7 mutation ...\n-Reference: [GG_3]: X-linked CHARGE-Like Abruzzo-Erickson syndrome and classic cleft ... 7 Aug 2025 — Further studies have indicated that CHD7 mutations can account for around 60e70% of CHARGE patients [Jongmans et al., 2006;Lalani et al., 2006; ...\n-Reference: [GG_4]: Figure 3 from A Suspected Case of Abruzzo-Erickson Syndrome Medicine. TLDR. The possible link to Abruzzo-Erickson syndrome and ... Multiple mutations in mouse Chd7 provide models for CHARGE syndrome. Erika A ...\n-Reference: [GG_5]: A Suspected Case of Abruzzo-Erickson Syndrome by G Kidner · 2004 · Cited by 1 — The possible link to Abruzzo-Erickson syndrome and differential diagnosis of CHARGE is discussed. ... Multiple mutations in mouse Chd7 provide models for CHARGE ...\n-Reference: [GG_6]: Multiple mutations in mouse Chd7 provide models for CHARGE ... by EA Bosman · 2005 · Cited by 258 — In addition, the wide range of malformations found in CHARGE syndrome are found in other syndromes including Abruzzo-Erickson and Kabuki syndrome (59–61).\n-Reference: [GG_7]: Entry - #214800 - CHARGE SYNDROME The syndrome reported by Abruzzo and Erickson (1977) ... Familial CHARGE syndrome because of CHD7 mutation: clinical intra- and interfamilial variability.\n-Reference: [GG_8]: Abruzzo-Erickson Syndrome (ABERS) Abruzzo-Erickson syndrome (ABERS) is an extremely rare, variably expressed X-linked recessive disorder caused by hemizygous mutation in TBX22 on Xq21.1.\n-Reference: [GG_9]: CHD7 Disorder by CM van Ravenswaaij-Arts · 1993 · Cited by 43 — CHD7 disorder encompasses the entire phenotypic spectrum of heterozygous CHD7 pathogenic variants that includes CHARGE syndrome as well as ...\n-Reference: [GG_10]: Diagnosis challenges in CHARGE syndrome: A novel variant and ... by SS Hinojosa · 2024 · Cited by 2 — ... syndrome differential diagnosis, conditions like Abruzzo-Erickson syndrome ... Mutation update on the CHD7 gene involved in CHARGE syndrome. Hum ...\n\n",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": [
+        {
+          "source": "google",
+          "short_answer": "No",
+          "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation.",
+          "retrieval_information": "-Reference: [GG_1]: X‐linked CHARGE‐like Abruzzo–Erickson syndrome and classic cleft ... by E Pauws · 2013 · Cited by 22 — X-linked CHARGE-like Abruzzo–Erickson syndrome and classic cleft palate with ankyloglossia result from TBX22 splicing mutations. E Pauws,.\n-Reference: [GG_2]: CHD7 Disorder - GeneReviews® - NCBI Bookshelf - NIH by CM van Ravenswaaij-Arts · 2022 · Cited by 43 — Anophthalmia is more common than in CHD7 disorder. TBX22, Abruzzo-Erickson syndrome ... Familial CHARGE syndrome because of CHD7 mutation ...\n-Reference: [GG_3]: X-linked CHARGE-Like Abruzzo-Erickson syndrome and classic cleft ... 7 Aug 2025 — Further studies have indicated that CHD7 mutations can account for around 60e70% of CHARGE patients [Jongmans et al., 2006;Lalani et al., 2006; ...\n-Reference: [GG_4]: Figure 3 from A Suspected Case of Abruzzo-Erickson Syndrome Medicine. TLDR. The possible link to Abruzzo-Erickson syndrome and ... Multiple mutations in mouse Chd7 provide models for CHARGE syndrome. Erika A ...\n-Reference: [GG_5]: A Suspected Case of Abruzzo-Erickson Syndrome by G Kidner · 2004 · Cited by 1 — The possible link to Abruzzo-Erickson syndrome and differential diagnosis of CHARGE is discussed. ... Multiple mutations in mouse Chd7 provide models for CHARGE ...\n-Reference: [GG_6]: Multiple mutations in mouse Chd7 provide models for CHARGE ... by EA Bosman · 2005 · Cited by 258 — In addition, the wide range of malformations found in CHARGE syndrome are found in other syndromes including Abruzzo-Erickson and Kabuki syndrome (59–61).\n-Reference: [GG_7]: Entry - #214800 - CHARGE SYNDROME The syndrome reported by Abruzzo and Erickson (1977) ... Familial CHARGE syndrome because of CHD7 mutation: clinical intra- and interfamilial variability.\n-Reference: [GG_8]: Abruzzo-Erickson Syndrome (ABERS) Abruzzo-Erickson syndrome (ABERS) is an extremely rare, variably expressed X-linked recessive disorder caused by hemizygous mutation in TBX22 on Xq21.1.\n-Reference: [GG_9]: CHD7 Disorder by CM van Ravenswaaij-Arts · 1993 · Cited by 43 — CHD7 disorder encompasses the entire phenotypic spectrum of heterozygous CHD7 pathogenic variants that includes CHARGE syndrome as well as ...\n-Reference: [GG_10]: Diagnosis challenges in CHARGE syndrome: A novel variant and ... by SS Hinojosa · 2024 · Cited by 2 — ... syndrome differential diagnosis, conditions like Abruzzo-Erickson syndrome ... Mutation update on the CHD7 gene involved in CHARGE syndrome. Hum ...\n\n",
+          "full_data": {
+            "short_answer": "No",
+            "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation."
+          }
+        }
+      ]
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "google": {
             "short_answer": "No",
             "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation.",
             "retrieval_information": "-Reference: [GG_1]: X‐linked CHARGE‐like Abruzzo–Erickson syndrome and classic cleft ... by E Pauws · 2013 · Cited by 22 — X-linked CHARGE-like Abruzzo–Erickson syndrome and classic cleft palate with ankyloglossia result from TBX22 splicing mutations. E Pauws,.\n-Reference: [GG_2]: CHD7 Disorder - GeneReviews® - NCBI Bookshelf - NIH by CM van Ravenswaaij-Arts · 2022 · Cited by 43 — Anophthalmia is more common than in CHD7 disorder. TBX22, Abruzzo-Erickson syndrome ... Familial CHARGE syndrome because of CHD7 mutation ...\n-Reference: [GG_3]: X-linked CHARGE-Like Abruzzo-Erickson syndrome and classic cleft ... 7 Aug 2025 — Further studies have indicated that CHD7 mutations can account for around 60e70% of CHARGE patients [Jongmans et al., 2006;Lalani et al., 2006; ...\n-Reference: [GG_4]: Figure 3 from A Suspected Case of Abruzzo-Erickson Syndrome Medicine. TLDR. The possible link to Abruzzo-Erickson syndrome and ... Multiple mutations in mouse Chd7 provide models for CHARGE syndrome. Erika A ...\n-Reference: [GG_5]: A Suspected Case of Abruzzo-Erickson Syndrome by G Kidner · 2004 · Cited by 1 — The possible link to Abruzzo-Erickson syndrome and differential diagnosis of CHARGE is discussed. ... Multiple mutations in mouse Chd7 provide models for CHARGE ...\n-Reference: [GG_6]: Multiple mutations in mouse Chd7 provide models for CHARGE ... by EA Bosman · 2005 · Cited by 258 — In addition, the wide range of malformations found in CHARGE syndrome are found in other syndromes including Abruzzo-Erickson and Kabuki syndrome (59–61).\n-Reference: [GG_7]: Entry - #214800 - CHARGE SYNDROME The syndrome reported by Abruzzo and Erickson (1977) ... Familial CHARGE syndrome because of CHD7 mutation: clinical intra- and interfamilial variability.\n-Reference: [GG_8]: Abruzzo-Erickson Syndrome (ABERS) Abruzzo-Erickson syndrome (ABERS) is an extremely rare, variably expressed X-linked recessive disorder caused by hemizygous mutation in TBX22 on Xq21.1.\n-Reference: [GG_9]: CHD7 Disorder by CM van Ravenswaaij-Arts · 1993 · Cited by 43 — CHD7 disorder encompasses the entire phenotypic spectrum of heterozygous CHD7 pathogenic variants that includes CHARGE syndrome as well as ...\n-Reference: [GG_10]: Diagnosis challenges in CHARGE syndrome: A novel variant and ... by SS Hinojosa · 2024 · Cited by 2 — ... syndrome differential diagnosis, conditions like Abruzzo-Erickson syndrome ... Mutation update on the CHD7 gene involved in CHARGE syndrome. Hum ...\n\n",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
             "candidate": [
-                {
-                    "source": "google",
-                    "short_answer": "No",
-                    "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation.",
-                    "retrieval_information": "-Reference: [GG_1]: X‐linked CHARGE‐like Abruzzo–Erickson syndrome and classic cleft ... by E Pauws · 2013 · Cited by 22 — X-linked CHARGE-like Abruzzo–Erickson syndrome and classic cleft palate with ankyloglossia result from TBX22 splicing mutations. E Pauws,.\n-Reference: [GG_2]: CHD7 Disorder - GeneReviews® - NCBI Bookshelf - NIH by CM van Ravenswaaij-Arts · 2022 · Cited by 43 — Anophthalmia is more common than in CHD7 disorder. TBX22, Abruzzo-Erickson syndrome ... Familial CHARGE syndrome because of CHD7 mutation ...\n-Reference: [GG_3]: X-linked CHARGE-Like Abruzzo-Erickson syndrome and classic cleft ... 7 Aug 2025 — Further studies have indicated that CHD7 mutations can account for around 60e70% of CHARGE patients [Jongmans et al., 2006;Lalani et al., 2006; ...\n-Reference: [GG_4]: Figure 3 from A Suspected Case of Abruzzo-Erickson Syndrome Medicine. TLDR. The possible link to Abruzzo-Erickson syndrome and ... Multiple mutations in mouse Chd7 provide models for CHARGE syndrome. Erika A ...\n-Reference: [GG_5]: A Suspected Case of Abruzzo-Erickson Syndrome by G Kidner · 2004 · Cited by 1 — The possible link to Abruzzo-Erickson syndrome and differential diagnosis of CHARGE is discussed. ... Multiple mutations in mouse Chd7 provide models for CHARGE ...\n-Reference: [GG_6]: Multiple mutations in mouse Chd7 provide models for CHARGE ... by EA Bosman · 2005 · Cited by 258 — In addition, the wide range of malformations found in CHARGE syndrome are found in other syndromes including Abruzzo-Erickson and Kabuki syndrome (59–61).\n-Reference: [GG_7]: Entry - #214800 - CHARGE SYNDROME The syndrome reported by Abruzzo and Erickson (1977) ... Familial CHARGE syndrome because of CHD7 mutation: clinical intra- and interfamilial variability.\n-Reference: [GG_8]: Abruzzo-Erickson Syndrome (ABERS) Abruzzo-Erickson syndrome (ABERS) is an extremely rare, variably expressed X-linked recessive disorder caused by hemizygous mutation in TBX22 on Xq21.1.\n-Reference: [GG_9]: CHD7 Disorder by CM van Ravenswaaij-Arts · 1993 · Cited by 43 — CHD7 disorder encompasses the entire phenotypic spectrum of heterozygous CHD7 pathogenic variants that includes CHARGE syndrome as well as ...\n-Reference: [GG_10]: Diagnosis challenges in CHARGE syndrome: A novel variant and ... by SS Hinojosa · 2024 · Cited by 2 — ... syndrome differential diagnosis, conditions like Abruzzo-Erickson syndrome ... Mutation update on the CHD7 gene involved in CHARGE syndrome. Hum ...\n\n",
-                    "full_data": {
-                        "short_answer": "No",
-                        "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation."
-                    }
+              {
+                "short_answer": "No",
+                "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation.",
+                "retrieval_information": "-Reference: [GG_1]: X‐linked CHARGE‐like Abruzzo–Erickson syndrome and classic cleft ... by E Pauws · 2013 · Cited by 22 — X-linked CHARGE-like Abruzzo–Erickson syndrome and classic cleft palate with ankyloglossia result from TBX22 splicing mutations. E Pauws,.\n-Reference: [GG_2]: CHD7 Disorder - GeneReviews® - NCBI Bookshelf - NIH by CM van Ravenswaaij-Arts · 2022 · Cited by 43 — Anophthalmia is more common than in CHD7 disorder. TBX22, Abruzzo-Erickson syndrome ... Familial CHARGE syndrome because of CHD7 mutation ...\n-Reference: [GG_3]: X-linked CHARGE-Like Abruzzo-Erickson syndrome and classic cleft ... 7 Aug 2025 — Further studies have indicated that CHD7 mutations can account for around 60e70% of CHARGE patients [Jongmans et al., 2006;Lalani et al., 2006; ...\n-Reference: [GG_4]: Figure 3 from A Suspected Case of Abruzzo-Erickson Syndrome Medicine. TLDR. The possible link to Abruzzo-Erickson syndrome and ... Multiple mutations in mouse Chd7 provide models for CHARGE syndrome. Erika A ...\n-Reference: [GG_5]: A Suspected Case of Abruzzo-Erickson Syndrome by G Kidner · 2004 · Cited by 1 — The possible link to Abruzzo-Erickson syndrome and differential diagnosis of CHARGE is discussed. ... Multiple mutations in mouse Chd7 provide models for CHARGE ...\n-Reference: [GG_6]: Multiple mutations in mouse Chd7 provide models for CHARGE ... by EA Bosman · 2005 · Cited by 258 — In addition, the wide range of malformations found in CHARGE syndrome are found in other syndromes including Abruzzo-Erickson and Kabuki syndrome (59–61).\n-Reference: [GG_7]: Entry - #214800 - CHARGE SYNDROME The syndrome reported by Abruzzo and Erickson (1977) ... Familial CHARGE syndrome because of CHD7 mutation: clinical intra- and interfamilial variability.\n-Reference: [GG_8]: Abruzzo-Erickson Syndrome (ABERS) Abruzzo-Erickson syndrome (ABERS) is an extremely rare, variably expressed X-linked recessive disorder caused by hemizygous mutation in TBX22 on Xq21.1.\n-Reference: [GG_9]: CHD7 Disorder by CM van Ravenswaaij-Arts · 1993 · Cited by 43 — CHD7 disorder encompasses the entire phenotypic spectrum of heterozygous CHD7 pathogenic variants that includes CHARGE syndrome as well as ...\n-Reference: [GG_10]: Diagnosis challenges in CHARGE syndrome: A novel variant and ... by SS Hinojosa · 2024 · Cited by 2 — ... syndrome differential diagnosis, conditions like Abruzzo-Erickson syndrome ... Mutation update on the CHD7 gene involved in CHARGE syndrome. Hum ...\n\n",
+                "full_data": {
+                  "short_answer": "No",
+                  "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation."
                 }
+              }
             ]
+          },
+          "wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_sparql_wikidata": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
         },
-        "0": {
-            "0": {
-                "source_output": {
-                    "google": {
-                        "short_answer": "No",
-                        "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation.",
-                        "retrieval_information": "-Reference: [GG_1]: X‐linked CHARGE‐like Abruzzo–Erickson syndrome and classic cleft ... by E Pauws · 2013 · Cited by 22 — X-linked CHARGE-like Abruzzo–Erickson syndrome and classic cleft palate with ankyloglossia result from TBX22 splicing mutations. E Pauws,.\n-Reference: [GG_2]: CHD7 Disorder - GeneReviews® - NCBI Bookshelf - NIH by CM van Ravenswaaij-Arts · 2022 · Cited by 43 — Anophthalmia is more common than in CHD7 disorder. TBX22, Abruzzo-Erickson syndrome ... Familial CHARGE syndrome because of CHD7 mutation ...\n-Reference: [GG_3]: X-linked CHARGE-Like Abruzzo-Erickson syndrome and classic cleft ... 7 Aug 2025 — Further studies have indicated that CHD7 mutations can account for around 60e70% of CHARGE patients [Jongmans et al., 2006;Lalani et al., 2006; ...\n-Reference: [GG_4]: Figure 3 from A Suspected Case of Abruzzo-Erickson Syndrome Medicine. TLDR. The possible link to Abruzzo-Erickson syndrome and ... Multiple mutations in mouse Chd7 provide models for CHARGE syndrome. Erika A ...\n-Reference: [GG_5]: A Suspected Case of Abruzzo-Erickson Syndrome by G Kidner · 2004 · Cited by 1 — The possible link to Abruzzo-Erickson syndrome and differential diagnosis of CHARGE is discussed. ... Multiple mutations in mouse Chd7 provide models for CHARGE ...\n-Reference: [GG_6]: Multiple mutations in mouse Chd7 provide models for CHARGE ... by EA Bosman · 2005 · Cited by 258 — In addition, the wide range of malformations found in CHARGE syndrome are found in other syndromes including Abruzzo-Erickson and Kabuki syndrome (59–61).\n-Reference: [GG_7]: Entry - #214800 - CHARGE SYNDROME The syndrome reported by Abruzzo and Erickson (1977) ... Familial CHARGE syndrome because of CHD7 mutation: clinical intra- and interfamilial variability.\n-Reference: [GG_8]: Abruzzo-Erickson Syndrome (ABERS) Abruzzo-Erickson syndrome (ABERS) is an extremely rare, variably expressed X-linked recessive disorder caused by hemizygous mutation in TBX22 on Xq21.1.\n-Reference: [GG_9]: CHD7 Disorder by CM van Ravenswaaij-Arts · 1993 · Cited by 43 — CHD7 disorder encompasses the entire phenotypic spectrum of heterozygous CHD7 pathogenic variants that includes CHARGE syndrome as well as ...\n-Reference: [GG_10]: Diagnosis challenges in CHARGE syndrome: A novel variant and ... by SS Hinojosa · 2024 · Cited by 2 — ... syndrome differential diagnosis, conditions like Abruzzo-Erickson syndrome ... Mutation update on the CHD7 gene involved in CHARGE syndrome. Hum ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "No",
-                                "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation.",
-                                "retrieval_information": "-Reference: [GG_1]: X‐linked CHARGE‐like Abruzzo–Erickson syndrome and classic cleft ... by E Pauws · 2013 · Cited by 22 — X-linked CHARGE-like Abruzzo–Erickson syndrome and classic cleft palate with ankyloglossia result from TBX22 splicing mutations. E Pauws,.\n-Reference: [GG_2]: CHD7 Disorder - GeneReviews® - NCBI Bookshelf - NIH by CM van Ravenswaaij-Arts · 2022 · Cited by 43 — Anophthalmia is more common than in CHD7 disorder. TBX22, Abruzzo-Erickson syndrome ... Familial CHARGE syndrome because of CHD7 mutation ...\n-Reference: [GG_3]: X-linked CHARGE-Like Abruzzo-Erickson syndrome and classic cleft ... 7 Aug 2025 — Further studies have indicated that CHD7 mutations can account for around 60e70% of CHARGE patients [Jongmans et al., 2006;Lalani et al., 2006; ...\n-Reference: [GG_4]: Figure 3 from A Suspected Case of Abruzzo-Erickson Syndrome Medicine. TLDR. The possible link to Abruzzo-Erickson syndrome and ... Multiple mutations in mouse Chd7 provide models for CHARGE syndrome. Erika A ...\n-Reference: [GG_5]: A Suspected Case of Abruzzo-Erickson Syndrome by G Kidner · 2004 · Cited by 1 — The possible link to Abruzzo-Erickson syndrome and differential diagnosis of CHARGE is discussed. ... Multiple mutations in mouse Chd7 provide models for CHARGE ...\n-Reference: [GG_6]: Multiple mutations in mouse Chd7 provide models for CHARGE ... by EA Bosman · 2005 · Cited by 258 — In addition, the wide range of malformations found in CHARGE syndrome are found in other syndromes including Abruzzo-Erickson and Kabuki syndrome (59–61).\n-Reference: [GG_7]: Entry - #214800 - CHARGE SYNDROME The syndrome reported by Abruzzo and Erickson (1977) ... Familial CHARGE syndrome because of CHD7 mutation: clinical intra- and interfamilial variability.\n-Reference: [GG_8]: Abruzzo-Erickson Syndrome (ABERS) Abruzzo-Erickson syndrome (ABERS) is an extremely rare, variably expressed X-linked recessive disorder caused by hemizygous mutation in TBX22 on Xq21.1.\n-Reference: [GG_9]: CHD7 Disorder by CM van Ravenswaaij-Arts · 1993 · Cited by 43 — CHD7 disorder encompasses the entire phenotypic spectrum of heterozygous CHD7 pathogenic variants that includes CHARGE syndrome as well as ...\n-Reference: [GG_10]: Diagnosis challenges in CHARGE syndrome: A novel variant and ... by SS Hinojosa · 2024 · Cited by 2 — ... syndrome differential diagnosis, conditions like Abruzzo-Erickson syndrome ... Mutation update on the CHD7 gene involved in CHARGE syndrome. Hum ...\n\n",
-                                "full_data": {
-                                    "short_answer": "No",
-                                    "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation."
-                                }
-                            }
-                        ]
-                    },
-                    "wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_ner_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_sparql_wikidata": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    }
-                },
-                "question": "Is Abruzzo-Erikson syndrome linked to the CHD7 mutation?",
-                "search_keyword": "Abruzzo-Erikson syndrome CHD7 mutation link"
-            }
-        }
-    },
-    "final_answer": {
-        "long_answer": "Reference: [GG_8], [GG_2]. Explanation: The context indicates that Abruzzo-Erickson syndrome (ABERS) is an X-linked recessive disorder caused by mutations in TBX22, while CHD7 mutations are associated with CHARGE syndrome. Therefore, Abruzzo-Erickson syndrome is not linked to the CHD7 mutation.",
-        "short_answer": "No",
-        "retrieval_information": "-Reference: [GG_1]: X‐linked CHARGE‐like Abruzzo–Erickson syndrome and classic cleft ... by E Pauws · 2013 · Cited by 22 — X-linked CHARGE-like Abruzzo–Erickson syndrome and classic cleft palate with ankyloglossia result from TBX22 splicing mutations. E Pauws,.\n-Reference: [GG_2]: CHD7 Disorder - GeneReviews® - NCBI Bookshelf - NIH by CM van Ravenswaaij-Arts · 2022 · Cited by 43 — Anophthalmia is more common than in CHD7 disorder. TBX22, Abruzzo-Erickson syndrome ... Familial CHARGE syndrome because of CHD7 mutation ...\n-Reference: [GG_3]: X-linked CHARGE-Like Abruzzo-Erickson syndrome and classic cleft ... 7 Aug 2025 — Further studies have indicated that CHD7 mutations can account for around 60e70% of CHARGE patients [Jongmans et al., 2006;Lalani et al., 2006; ...\n-Reference: [GG_4]: Figure 3 from A Suspected Case of Abruzzo-Erickson Syndrome Medicine. TLDR. The possible link to Abruzzo-Erickson syndrome and ... Multiple mutations in mouse Chd7 provide models for CHARGE syndrome. Erika A ...\n-Reference: [GG_5]: A Suspected Case of Abruzzo-Erickson Syndrome by G Kidner · 2004 · Cited by 1 — The possible link to Abruzzo-Erickson syndrome and differential diagnosis of CHARGE is discussed. ... Multiple mutations in mouse Chd7 provide models for CHARGE ...\n-Reference: [GG_6]: Multiple mutations in mouse Chd7 provide models for CHARGE ... by EA Bosman · 2005 · Cited by 258 — In addition, the wide range of malformations found in CHARGE syndrome are found in other syndromes including Abruzzo-Erickson and Kabuki syndrome (59–61).\n-Reference: [GG_7]: Entry - #214800 - CHARGE SYNDROME The syndrome reported by Abruzzo and Erickson (1977) ... Familial CHARGE syndrome because of CHD7 mutation: clinical intra- and interfamilial variability.\n-Reference: [GG_8]: Abruzzo-Erickson Syndrome (ABERS) Abruzzo-Erickson syndrome (ABERS) is an extremely rare, variably expressed X-linked recessive disorder caused by hemizygous mutation in TBX22 on Xq21.1.\n-Reference: [GG_9]: CHD7 Disorder by CM van Ravenswaaij-Arts · 1993 · Cited by 43 — CHD7 disorder encompasses the entire phenotypic spectrum of heterozygous CHD7 pathogenic variants that includes CHARGE syndrome as well as ...\n-Reference: [GG_10]: Diagnosis challenges in CHARGE syndrome: A novel variant and ... by SS Hinojosa · 2024 · Cited by 2 — ... syndrome differential diagnosis, conditions like Abruzzo-Erickson syndrome ... Mutation update on the CHD7 gene involved in CHARGE syndrome. Hum ...\n\n"
+        "question": "Is Abruzzo-Erikson syndrome linked to the CHD7 mutation?",
+        "search_keyword": "Abruzzo-Erikson syndrome CHD7 mutation link"
+      }
     }
+  }
 }
