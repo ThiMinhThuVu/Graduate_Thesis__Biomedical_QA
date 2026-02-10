@@ -118,6 +118,9 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
         }
 
     all_context = ""
+    if target_ans_type == 'correctness':
+        settings['max_candidates'] = 1
+        
         
     for q_i, question in enumerate(list_qi, start=1):
         qi_number = f"/{q_i}"
@@ -150,7 +153,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                 # print(f"dict_ans[q_i][path_i]: {dict_ans[q_i][path_i]}")
              
             select_source_mcq = ["google", "wiki", "crawl_wiki", "crawl_ner_wiki", "crawl_sparql_wikidata"]
-            cache_source_have_run = []
+
             for module in [[True, False, False, False, False], [False, True, False, False, False], [False, False, True, False, False], 
                            [False, False, False, True, False], [False, False, False, False, True]]:
             # for module in [[False, False, True, False, False]]:
@@ -195,7 +198,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     
                     if step not in dict_ans[q_i][path_i]:
                         dict_ans[q_i][path_i][step] = {} 
-                        # print(f"dict_ans[q_i][path_i][step]: {dict_ans[q_i][path_i][step]}")
+
 
                     if "source_output" not in dict_ans[q_i][path_i][step]:
                         dict_ans[q_i][path_i][step]["source_output"] = {}

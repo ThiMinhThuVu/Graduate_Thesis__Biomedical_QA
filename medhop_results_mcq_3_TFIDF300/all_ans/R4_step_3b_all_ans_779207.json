@@ -1,0 +1,151 @@
+{
+    "QIDX": "779207",
+    "original_question": "Is one of the conditions seen in Klein-Waardenburg syndrome characterized by a scapula with a medial border that sticks straight out from the back?",
+    "type_q": "direct",
+    "focus_spacy_based_entity_label": [
+        "DISEASE",
+        "CHEMICAL"
+    ],
+    "target_answer_type": "correctness",
+    "key_entities": [
+        "Klein-Waardenburg syndrome",
+        "scapula"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is one of the conditions seen in Klein-Waardenburg syndrome characterized by a scapula with a medial border that sticks straight out from the back?",
+            "search_keyword": "Klein-Waardenburg syndrome scapula medial border condition",
+            "short_answer": "Insufficient information",
+            "long_answer": "The context provides information regarding abnormalities of the arms and hands as part of the symptoms seen in Klein-Waardenburg syndrome (as noted in reference [GG_3] and [GG_6]), but it does not specifically mention a scapula with a medial border that sticks straight out from the back. Therefore, there is insufficient information in the provided context to answer the question.",
+            "retrieval_information": "-Reference: [GG_1]: Case of Waardenburg Shah syndrome in a family with review of literature by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_2]: Case of Waardenburg Shah syndrome in a family with review ... by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_3]: Waardenburg syndrome type 1 (Concept Id: C1847800) Type III (sometimes called Klein-Waardenburg syndrome) includes abnormalities of the arms and hands in addition to hearing loss and changes in pigmentation.\n-Reference: [GG_4]: (PDF) Case of Waardenburg Shah syndrome in a family with review of ... Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_5]: Case of Waardenburg Shah syndrome in a family with review of ... by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_6]: EUROCAT Syndrome Guide (Klein-Waardenburg syndrome) is similar to type I but additionally includes upper limb abnormalities. Type IV (Waardenburg-Shah syndrome) is similar to type ...\n-Reference: [GG_7]: List of variants in gene KCNQ2 reported as likely pathogenic for ... List of variants in gene KCNQ2 reported as likely pathogenic for hereditary disease. Included ClinVar conditions (11494):. 11p partial monosomy syndrome ...\n-Reference: [GG_8]: DOWN-REGULATION OF PAX3 GENE EXPRESSION IN ... - e-space by AA Mashud · 2014 — WSIII, well- known as Klein-Waardenburg syndrome, presents with symptoms ... Disease: Waardenburg syndrome'. Human Genetics, vol. 127, issue 4, p. 485 ...\n-Reference: [GG_9]: Triad of Klippel Feil syndrome consists of all except? A. Low hair line B. ... It's a rare congenital condition where two or more neck vertebrae are fused together from birth. ... Some live their whole lives without knowing ...\n\n",
+            "prefix": "",
+            "name": "",
+            "suffix": "",
+            "candidate": [
+                {
+                    "source": "google",
+                    "short_answer": "Insufficient information",
+                    "long_answer": "The context provides information regarding abnormalities of the arms and hands as part of the symptoms seen in Klein-Waardenburg syndrome (as noted in reference [GG_3] and [GG_6]), but it does not specifically mention a scapula with a medial border that sticks straight out from the back. Therefore, there is insufficient information in the provided context to answer the question.",
+                    "retrieval_information": "-Reference: [GG_1]: Case of Waardenburg Shah syndrome in a family with review of literature by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_2]: Case of Waardenburg Shah syndrome in a family with review ... by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_3]: Waardenburg syndrome type 1 (Concept Id: C1847800) Type III (sometimes called Klein-Waardenburg syndrome) includes abnormalities of the arms and hands in addition to hearing loss and changes in pigmentation.\n-Reference: [GG_4]: (PDF) Case of Waardenburg Shah syndrome in a family with review of ... Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_5]: Case of Waardenburg Shah syndrome in a family with review of ... by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_6]: EUROCAT Syndrome Guide (Klein-Waardenburg syndrome) is similar to type I but additionally includes upper limb abnormalities. Type IV (Waardenburg-Shah syndrome) is similar to type ...\n-Reference: [GG_7]: List of variants in gene KCNQ2 reported as likely pathogenic for ... List of variants in gene KCNQ2 reported as likely pathogenic for hereditary disease. Included ClinVar conditions (11494):. 11p partial monosomy syndrome ...\n-Reference: [GG_8]: DOWN-REGULATION OF PAX3 GENE EXPRESSION IN ... - e-space by AA Mashud · 2014 — WSIII, well- known as Klein-Waardenburg syndrome, presents with symptoms ... Disease: Waardenburg syndrome'. Human Genetics, vol. 127, issue 4, p. 485 ...\n-Reference: [GG_9]: Triad of Klippel Feil syndrome consists of all except? A. Low hair line B. ... It's a rare congenital condition where two or more neck vertebrae are fused together from birth. ... Some live their whole lives without knowing ...\n\n",
+                    "full_data": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "The context provides information regarding abnormalities of the arms and hands as part of the symptoms seen in Klein-Waardenburg syndrome (as noted in reference [GG_3] and [GG_6]), but it does not specifically mention a scapula with a medial border that sticks straight out from the back. Therefore, there is insufficient information in the provided context to answer the question."
+                    }
+                },
+                {
+                    "source": "wiki",
+                    "short_answer": "Insufficient information",
+                    "long_answer": "Explanation: The provided context does not contain specific details about the scapula characteristics, such as a medial border that sticks straight out from the back, in relation to Klein-Waardenburg syndrome.",
+                    "retrieval_information": "-Reference: [WIKI_1]: Wikipedia:WikiProject Medicine/Lists of pages/sandbox Mid Talk:Medial compartment of thigh; Mid Talk:Medial geniculate body; Mid ... NA Talk:Klein–Waardenburg syndrome; NA Talk:KLICK syndrome; NA Talk:Klippel ...\n\n",
+                    "full_data": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "Explanation: The provided context does not contain specific details about the scapula characteristics, such as a medial border that sticks straight out from the back, in relation to Klein-Waardenburg syndrome."
+                    }
+                },
+                {
+                    "source": "crawl_sparql_wikidata",
+                    "short_answer": "Insufficient information",
+                    "long_answer": "Explanation: The provided context only identifies Klein-Waardenburg syndrome as a human disease and lists several descriptions related to the scapula, but none of the descriptions confirm the specific condition of a scapula with a medial border that sticks straight out from the back as a feature of Klein-Waardenburg syndrome.",
+                    "retrieval_information": "- Reference [SPARQL]: \nklein-waardenburg syndrome: - human disease\n\nscapula: - ancient Roman cognomen\n- bone that connects the humerus (upper arm bone) with the clavicle (collar bone)\n- genus of arachnids\n- unilateral or bilateral pain of the shoulder, caused by physical activities or pathologic in origin\n- short cloak worn with ecclesiastical dress\n- injury of the shoulder blade\n- Roman Catholic devotional garment\n- species of arachnid\n- Bony plate on the scapula\n- groove in the superior border of the scapula, for the suprascapular nerve to pass through\n- skeletal muscle condition around the shoulder blade\n- practice of divination by use of scapulae\n- miraculous body part in Greek mythology\n- subdivision of back of thorax\n- catholic devotional object\n",
+                    "full_data": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "Explanation: The provided context only identifies Klein-Waardenburg syndrome as a human disease and lists several descriptions related to the scapula, but none of the descriptions confirm the specific condition of a scapula with a medial border that sticks straight out from the back as a feature of Klein-Waardenburg syndrome."
+                    }
+                }
+            ]
+        },
+        "0": {
+            "0": {
+                "source_output": {
+                    "google": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "The context provides information regarding abnormalities of the arms and hands as part of the symptoms seen in Klein-Waardenburg syndrome (as noted in reference [GG_3] and [GG_6]), but it does not specifically mention a scapula with a medial border that sticks straight out from the back. Therefore, there is insufficient information in the provided context to answer the question.",
+                        "retrieval_information": "-Reference: [GG_1]: Case of Waardenburg Shah syndrome in a family with review of literature by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_2]: Case of Waardenburg Shah syndrome in a family with review ... by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_3]: Waardenburg syndrome type 1 (Concept Id: C1847800) Type III (sometimes called Klein-Waardenburg syndrome) includes abnormalities of the arms and hands in addition to hearing loss and changes in pigmentation.\n-Reference: [GG_4]: (PDF) Case of Waardenburg Shah syndrome in a family with review of ... Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_5]: Case of Waardenburg Shah syndrome in a family with review of ... by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_6]: EUROCAT Syndrome Guide (Klein-Waardenburg syndrome) is similar to type I but additionally includes upper limb abnormalities. Type IV (Waardenburg-Shah syndrome) is similar to type ...\n-Reference: [GG_7]: List of variants in gene KCNQ2 reported as likely pathogenic for ... List of variants in gene KCNQ2 reported as likely pathogenic for hereditary disease. Included ClinVar conditions (11494):. 11p partial monosomy syndrome ...\n-Reference: [GG_8]: DOWN-REGULATION OF PAX3 GENE EXPRESSION IN ... - e-space by AA Mashud · 2014 — WSIII, well- known as Klein-Waardenburg syndrome, presents with symptoms ... Disease: Waardenburg syndrome'. Human Genetics, vol. 127, issue 4, p. 485 ...\n-Reference: [GG_9]: Triad of Klippel Feil syndrome consists of all except? A. Low hair line B. ... It's a rare congenital condition where two or more neck vertebrae are fused together from birth. ... Some live their whole lives without knowing ...\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Insufficient information",
+                                "long_answer": "The context provides information regarding abnormalities of the arms and hands as part of the symptoms seen in Klein-Waardenburg syndrome (as noted in reference [GG_3] and [GG_6]), but it does not specifically mention a scapula with a medial border that sticks straight out from the back. Therefore, there is insufficient information in the provided context to answer the question.",
+                                "retrieval_information": "-Reference: [GG_1]: Case of Waardenburg Shah syndrome in a family with review of literature by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_2]: Case of Waardenburg Shah syndrome in a family with review ... by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_3]: Waardenburg syndrome type 1 (Concept Id: C1847800) Type III (sometimes called Klein-Waardenburg syndrome) includes abnormalities of the arms and hands in addition to hearing loss and changes in pigmentation.\n-Reference: [GG_4]: (PDF) Case of Waardenburg Shah syndrome in a family with review of ... Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_5]: Case of Waardenburg Shah syndrome in a family with review of ... by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_6]: EUROCAT Syndrome Guide (Klein-Waardenburg syndrome) is similar to type I but additionally includes upper limb abnormalities. Type IV (Waardenburg-Shah syndrome) is similar to type ...\n-Reference: [GG_7]: List of variants in gene KCNQ2 reported as likely pathogenic for ... List of variants in gene KCNQ2 reported as likely pathogenic for hereditary disease. Included ClinVar conditions (11494):. 11p partial monosomy syndrome ...\n-Reference: [GG_8]: DOWN-REGULATION OF PAX3 GENE EXPRESSION IN ... - e-space by AA Mashud · 2014 — WSIII, well- known as Klein-Waardenburg syndrome, presents with symptoms ... Disease: Waardenburg syndrome'. Human Genetics, vol. 127, issue 4, p. 485 ...\n-Reference: [GG_9]: Triad of Klippel Feil syndrome consists of all except? A. Low hair line B. ... It's a rare congenital condition where two or more neck vertebrae are fused together from birth. ... Some live their whole lives without knowing ...\n\n",
+                                "full_data": {
+                                    "short_answer": "Insufficient information",
+                                    "long_answer": "The context provides information regarding abnormalities of the arms and hands as part of the symptoms seen in Klein-Waardenburg syndrome (as noted in reference [GG_3] and [GG_6]), but it does not specifically mention a scapula with a medial border that sticks straight out from the back. Therefore, there is insufficient information in the provided context to answer the question."
+                                }
+                            }
+                        ]
+                    },
+                    "wiki": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "Explanation: The provided context does not contain specific details about the scapula characteristics, such as a medial border that sticks straight out from the back, in relation to Klein-Waardenburg syndrome.",
+                        "retrieval_information": "-Reference: [WIKI_1]: Wikipedia:WikiProject Medicine/Lists of pages/sandbox Mid Talk:Medial compartment of thigh; Mid Talk:Medial geniculate body; Mid ... NA Talk:Klein–Waardenburg syndrome; NA Talk:KLICK syndrome; NA Talk:Klippel ...\n\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Insufficient information",
+                                "long_answer": "Explanation: The provided context does not contain specific details about the scapula characteristics, such as a medial border that sticks straight out from the back, in relation to Klein-Waardenburg syndrome.",
+                                "retrieval_information": "-Reference: [WIKI_1]: Wikipedia:WikiProject Medicine/Lists of pages/sandbox Mid Talk:Medial compartment of thigh; Mid Talk:Medial geniculate body; Mid ... NA Talk:Klein–Waardenburg syndrome; NA Talk:KLICK syndrome; NA Talk:Klippel ...\n\n",
+                                "full_data": {
+                                    "short_answer": "Insufficient information",
+                                    "long_answer": "Explanation: The provided context does not contain specific details about the scapula characteristics, such as a medial border that sticks straight out from the back, in relation to Klein-Waardenburg syndrome."
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_ner_wiki": {
+                        "short_answer": "insufficient information",
+                        "long_answer": "No context",
+                        "retrieval_information": "",
+                        "candidate": [
+                            {
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": "",
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            }
+                        ]
+                    },
+                    "crawl_sparql_wikidata": {
+                        "short_answer": "Insufficient information",
+                        "long_answer": "Explanation: The provided context only identifies Klein-Waardenburg syndrome as a human disease and lists several descriptions related to the scapula, but none of the descriptions confirm the specific condition of a scapula with a medial border that sticks straight out from the back as a feature of Klein-Waardenburg syndrome.",
+                        "retrieval_information": "- Reference [SPARQL]: \nklein-waardenburg syndrome: - human disease\n\nscapula: - ancient Roman cognomen\n- bone that connects the humerus (upper arm bone) with the clavicle (collar bone)\n- genus of arachnids\n- unilateral or bilateral pain of the shoulder, caused by physical activities or pathologic in origin\n- short cloak worn with ecclesiastical dress\n- injury of the shoulder blade\n- Roman Catholic devotional garment\n- species of arachnid\n- Bony plate on the scapula\n- groove in the superior border of the scapula, for the suprascapular nerve to pass through\n- skeletal muscle condition around the shoulder blade\n- practice of divination by use of scapulae\n- miraculous body part in Greek mythology\n- subdivision of back of thorax\n- catholic devotional object\n",
+                        "candidate": [
+                            {
+                                "short_answer": "Insufficient information",
+                                "long_answer": "Explanation: The provided context only identifies Klein-Waardenburg syndrome as a human disease and lists several descriptions related to the scapula, but none of the descriptions confirm the specific condition of a scapula with a medial border that sticks straight out from the back as a feature of Klein-Waardenburg syndrome.",
+                                "retrieval_information": "- Reference [SPARQL]: \nklein-waardenburg syndrome: - human disease\n\nscapula: - ancient Roman cognomen\n- bone that connects the humerus (upper arm bone) with the clavicle (collar bone)\n- genus of arachnids\n- unilateral or bilateral pain of the shoulder, caused by physical activities or pathologic in origin\n- short cloak worn with ecclesiastical dress\n- injury of the shoulder blade\n- Roman Catholic devotional garment\n- species of arachnid\n- Bony plate on the scapula\n- groove in the superior border of the scapula, for the suprascapular nerve to pass through\n- skeletal muscle condition around the shoulder blade\n- practice of divination by use of scapulae\n- miraculous body part in Greek mythology\n- subdivision of back of thorax\n- catholic devotional object\n",
+                                "full_data": {
+                                    "short_answer": "Insufficient information",
+                                    "long_answer": "Explanation: The provided context only identifies Klein-Waardenburg syndrome as a human disease and lists several descriptions related to the scapula, but none of the descriptions confirm the specific condition of a scapula with a medial border that sticks straight out from the back as a feature of Klein-Waardenburg syndrome."
+                                }
+                            }
+                        ]
+                    }
+                },
+                "question": "Is one of the conditions seen in Klein-Waardenburg syndrome characterized by a scapula with a medial border that sticks straight out from the back?",
+                "search_keyword": "Klein-Waardenburg syndrome scapula medial border condition"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The context provides information regarding abnormalities of the arms and hands as part of the symptoms seen in Klein-Waardenburg syndrome (as noted in reference [GG_3] and [GG_6]), but it does not specifically mention a scapula with a medial border that sticks straight out from the back. Therefore, there is insufficient information in the provided context to answer the question.",
+        "short_answer": "Insufficient information",
+        "retrieval_information": "-Reference: [GG_1]: Case of Waardenburg Shah syndrome in a family with review of literature by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_2]: Case of Waardenburg Shah syndrome in a family with review ... by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_3]: Waardenburg syndrome type 1 (Concept Id: C1847800) Type III (sometimes called Klein-Waardenburg syndrome) includes abnormalities of the arms and hands in addition to hearing loss and changes in pigmentation.\n-Reference: [GG_4]: (PDF) Case of Waardenburg Shah syndrome in a family with review of ... Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_5]: Case of Waardenburg Shah syndrome in a family with review of ... by SLNC Mohan · 2018 · Cited by 30 — Waardenburg syndrome is a rare disease characterized by sensorineural deafness in association with pigmentary defects. Depending on additional symptoms, ...\n-Reference: [GG_6]: EUROCAT Syndrome Guide (Klein-Waardenburg syndrome) is similar to type I but additionally includes upper limb abnormalities. Type IV (Waardenburg-Shah syndrome) is similar to type ...\n-Reference: [GG_7]: List of variants in gene KCNQ2 reported as likely pathogenic for ... List of variants in gene KCNQ2 reported as likely pathogenic for hereditary disease. Included ClinVar conditions (11494):. 11p partial monosomy syndrome ...\n-Reference: [GG_8]: DOWN-REGULATION OF PAX3 GENE EXPRESSION IN ... - e-space by AA Mashud · 2014 — WSIII, well- known as Klein-Waardenburg syndrome, presents with symptoms ... Disease: Waardenburg syndrome'. Human Genetics, vol. 127, issue 4, p. 485 ...\n-Reference: [GG_9]: Triad of Klippel Feil syndrome consists of all except? A. Low hair line B. ... It's a rare congenital condition where two or more neck vertebrae are fused together from birth. ... Some live their whole lives without knowing ...\n\n"
+    }
+}

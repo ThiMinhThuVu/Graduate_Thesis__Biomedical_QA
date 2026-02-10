@@ -1,5 +1,6 @@
 import os
 import json
+import pandas as pd
 
 SOURCE_ORDER = [
     "google",
@@ -9,12 +10,10 @@ SOURCE_ORDER = [
     "crawl_sparql_wikidata"
 ]
 
-with open('data/meta_entity_YN.json', "r", encoding="utf-8") as f:
+with open('data/meta_entity_WH.json', "r", encoding="utf-8") as f:
+# with open('data/meta_entity_YN.json', "r", encoding="utf-8") as f:
     metadata = json.load(f)
-    
-# with open('data/meta_entity_WH.json', "r", encoding="utf-8") as f:
-#     metadata = json.load(f)
-    
+        
 with open('data/all_answer_golden_61.json', "r", encoding="utf-8") as f:
     dict_golden = json.load(f)
 
@@ -50,6 +49,9 @@ def analyze_accuracy_ignore_no_eve(json_folder):
         
         if qidx not in metadata:
             continue
+        
+        # question = metadata[qidx]['original question']
+        # target_ans = metadata[qidx]["target_answer_type"]
 
         list_gol = dict_golden[qidx]['True']
         
@@ -163,10 +165,72 @@ def plot_histogram(stats, total_questions):
 
 
 import csv
+import csv
 
-def export_short_answer_csv(json_folder, output_csv="short_answer_analysis.csv"):
+def export_short_answer_csv_wide(json_folder, output_csv):
     rows = []
 
+    for fname in os.listdir(json_folder):
+        if not fname.endswith(".json"):
+            continue
+
+        with open(os.path.join(json_folder, fname), "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        qidx = data["QIDX"]
+        if qidx not in metadata:
+            continue
+
+        golden_list = dict_golden[qidx]["True"]
+        golden_norm = [g.lower() for g in golden_list]
+
+        row = {
+            "QIDX": qidx,
+            "golden": " | ".join(golden_list)
+        }
+
+        source_outputs = data['1']["0"]["0"].get("source_output", {})
+
+        for src in SOURCE_ORDER:
+            row[src] = ""
+            row[f"{src}_correct"] = ""
+
+        for src, result in source_outputs.items():
+            src = normalize_source(src)
+            if src not in SOURCE_ORDER:
+                continue
+
+            short_answer = result.get("short_answer", "").strip()
+            short_norm = short_answer.lower()
+
+            row[src] = short_answer
+
+            if short_norm == "insufficient information" or not short_norm:
+                row[f"{src}_correct"] = False
+            else:
+                row[f"{src}_correct"] = any(
+                    short_norm == g for g in golden_norm
+                )
+
+        rows.append(row)
+
+    # ===== CSV header =====
+    fieldnames = ["QIDX", "golden"]
+    for src in SOURCE_ORDER:
+        fieldnames.append(src)
+        fieldnames.append(f"{src}_correct")
+
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+
+    with open(output_csv, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+    print(f"[INFO] Wide CSV exported to: {output_csv}")
+
+def check_final(json_folder):
+    cnt = 0
     for fname in os.listdir(json_folder):
         if not fname.endswith(".json"):
             continue
@@ -179,66 +243,32 @@ def export_short_answer_csv(json_folder, output_csv="short_answer_analysis.csv")
         if qidx not in metadata:
             continue
 
-        golden_list = dict_golden[qidx]["True"]
-        golden_norm = [g.lower() for g in golden_list]
-
-        source_outputs = data['1']["0"]["0"].get("source_output", {})
-
-        for src, result in source_outputs.items():
-            src = normalize_source(src)
-            if src not in SOURCE_ORDER:
-                continue
-
-            short_answer = result.get("short_answer", "").strip()
-            short_norm = short_answer.lower()
-
-            has_evidence = short_norm != "insufficient information"
-
-            correct = False
-            if has_evidence:
-                for g in golden_norm:
-                    if short_norm == g:
-                        correct = True
-                        break
-
-            rows.append({
-                "QIDX": qidx,
-                "source": src,
-                "short_answer": short_answer,
-                "golden": " | ".join(golden_list),
-                "has_evidence": has_evidence,
-                "correct": correct
-            })
-
-    # ghi CSV
-    with open(output_csv, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(
-            f,
-            fieldnames=[
-                "QIDX",
-                "source",
-                "short_answer",
-                "golden",
-                "has_evidence",
-                "correct"
-            ]
-        )
-        writer.writeheader()
-        writer.writerows(rows)
-
-    print(f"[INFO] CSV exported to: {output_csv}")
+        list_gol = dict_golden[qidx]['True']
+        
+        answer = data['final_answer']["short_answer"]
+        
+        for gol in list_gol:
+            if answer.lower() == gol:
+                cnt += 1
+                break
+    return cnt
 
 def main():
-    json_folder = "medhop_results/all_ans"
+    json_folder = "medhop_results_no_mcq/all_ans"
 
     stats, total_questions = analyze_accuracy_ignore_no_eve(json_folder)
     print_report(stats, total_questions)
-    plot_histogram(stats, total_questions)
+    # plot_histogram(stats, total_questions)
 
-    export_short_answer_csv(
+    export_short_answer_csv_wide(
         json_folder,
         output_csv="evaluate/acc/short_answer_per_source.csv"
     )
+    
+    print("norm ans: ", check_final(json_folder))
 
+        
 if __name__ == "__main__":
     main()
+
+    
