@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/nobel_prize_in_physics": {
+                "title": "Nobel Prize in Physics",
+                "url": "https://en.wikipedia.org/wiki/nobel_prize_in_physics",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

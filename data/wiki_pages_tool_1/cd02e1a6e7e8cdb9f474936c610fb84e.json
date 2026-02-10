@@ -1,0 +1,127 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/aspartoacylase": {
+                "title": "Aspartoacylase",
+                "url": "https://en.wikipedia.org/wiki/aspartoacylase",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Aspartoacylase is a hydrolytic enzyme  (EC 3.5.1.15, also called aminoacylase II, ASPA and other names[a]) that in humans is encoded by the ASPA gene. ASPA catalyzes the deacylation of N-acetyl-l-aspartate (N-acetylaspartate) into aspartate and acetate.[7][8]  It is a zinc-dependent hydrolase that promotes the deprotonation of water to use as a nucleophile in a mechanism analogous to many other zinc-dependent hydrolases.[9] It is most commonly found in the brain, where it controls the levels of N-acetyl-l-aspartate. Mutations that result in loss of aspartoacylase activity are associated with Canavan disease, a rare autosomal recessive neurodegenerative disease.[10]",
+                    "",
+                    "=== Structure ===",
+                    "Aspartoacylase is a dimer of two identical monomers of 313 amino acids and uses a zinc cofactor in each.[5][11]  There are two distinct domains in each monomer: the N-terminal domain from residues 1-212 and the C-terminal domain from residues 213–313.[12] The N-terminal domain of aspartoacylase is similar to that of zinc-dependent hydrolases such as carboxypeptidaseA. However, carboxypeptidases do not have something similar to the C-domain. In carboxypeptidase A, the active site is accessible to large substrates like the bulky C-terminal residue of polypeptides, whereas the C-domain sterically hinders access to the active site in aspartoacylase. Instead, the N-domain and C-domain of aspartoacylase form a deep narrow channel that leads to the active site.[5]",
+                    "The zinc cofactor is found at the active site and is held by Glu-24, His-21, and His 116.[13]  The substrate is held in place by Arg-63, Asn-70, Arg-71, Tyr-164, Arg-168, and Tyr-288.[5] The zinc cofactor is used to lower the pKa of a ligated water molecule so that an attack on N-acetyl-L-aspartate may occur and to stabilize the resulting tetrahedral intermediate along with Arg-63, and Glu-178.[13]",
+                    "",
+                    "=== Mechanism ===",
+                    "There are two types of possible mechanisms for zinc-dependent hydrolases depending on what is the nucleophile. The first uses deprotonated water and the second attacks with an aspartate or glutamate first forming an anhydride.[14] Aspartoacylase follows the deprotonated water mechanism.[13] Zinc lowers the pKa of a ligated water molecule and the reaction proceeds via an attack on N-acetyl-l-aspartate when the water molecule is deprotonated by Glu-178.[5] This leads to a tetrahedral intermediate that is stabilized by the zinc, Arg-63, and Glu-178.[13] Finally, the carbonyl is then reformed, the bond with nitrogen is broken, and the nitrogen is protonated by the proton taken by Glu-178 all in one concerted step.[14]",
+                    "",
+                    "=== Biological function ===",
+                    "Aspartoacylase is used to metabolize N-acetyl-L-aspartate by catalyzing its deacylation. Aspartoacylase prevents the buildup of N-acetyl-L-aspartate in the brain. It is believed that controlling N-acetyl-L-aspartate levels is essential for developing and maintaining white matter.[5] It is not known why so much  N-acetyl-L-aspartate is produced in the brain nor what its primary function is.[15] However, one hypothesis is that it is potentially used as a chemical reservoir that can be tapped into for acetate for acetyl-CoA synthesis or aspartate for glutamate synthesis.[15][16] This way, N-acetyl-L-aspartate can be used to transport these precursor molecules and aspartoacylase is used to release them. For example, N-acetyl-L-aspartate produced in neurons can be transported into oligodendrocytes and the acetate released can be used for myelin synthesis.[12][17] Another hypothesis is that N-acetyl-L-aspartate is essential osmolyte that acts as a molecular water pump that helps maintain a proper fluid balance in the brain.[18]",
+                    "",
+                    "=== Disease relevance ===",
+                    "Mutations that lead to loss of aspartoacylase activity have been identified as the cause of Canavan disease.[19] Canavan disease is a rare autosomal recessive disorder that causes spongy degeneration of the white matter in the brain and severe psychomotor retardation, usually leading to death at a young age.[12][20] The loss of aspartoacylase activity leads to the buildup of N-acetyl-L-aspartate in the brain and an increase in urine concentration by up to 60 times normal levels.[19] Though the exact mechanism of how loss of aspartoacylase activity leads to Canavan disease is not fully understood, there are two primary competing explanations. The first is that it leads to defective myelin synthesis due to a deficiency of acetyl-CoA derived from the acetate product.[20] Another explanation is that the elevated levels of N-acetyl-l-aspartate interfere with its normal brain osmoregulatory mechanism leading to osmotic disequilibrium.[21]",
+                    "There are over 70 reported mutations of this enzyme, but the most common ones are the amino acid substitutions E285A and A305E.[12] E285A reduces activity of aspartoacylase down to as low as 0.3% of its normal function and is found in 98% of cases with Ashkenazi Jewish ancestry.[22] The mutation A305E is found in about 40% of non-Jewish patients and reduces activity to about 10%.[22] Of these two mutations, a crystal structure of the E285A mutant has been taken, showing that the loss of the hydrogen bonding from glutamate leads to a conformational change that distorts the active site and alters the substrate binding, leading to the much lower catalytic activity.[12]",
+                    "",
+                    "=== Notes ===",
+                    "<info> ^ The enzyme is also known as N-acetylaspartate amidohydrolase, acetyl-aspartic deaminase or acylase II[6]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000108381 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000020774 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ a b c d e f g h Bitto E, Bingman CA, Wesenberg GE, McCoy JG, Phillips GN (January 2007). \"Structure of aspartoacylase, the brain enzyme impaired in Canavan disease\". Proceedings of the National Academy of Sciences of the United States of America. 104 (2): 456–461. doi:10.1073/pnas.0607817104. PMC 1766406. PMID 17194761.",
+                    "<info> ^ \"Aspartoacylase (EC 3.5.1.15)\". biocyc.org. Archived from the original on 22 July 2022. Retrieved 2022-07-22.",
+                    "<info> ^ Birnbaum SM (1955). Amino acid acylases I and II from hog kidney. Methods in Enzymology. Vol. 2. pp. 115–119. doi:10.1016/S0076-6879(55)02176-9.",
+                    "<info> ^ Birnbaum SM, Levintow L, Kingsley RB, Greenstein JP (January 1952). \"Specificity of amino acid acylases\". The Journal of Biological Chemistry. 194 (1): 455–470. doi:10.1016/S0021-9258(18)55898-1. PMID 14927637.",
+                    "<info> ^ Le Coq J, An HJ, Lebrilla C, Viola RE (May 2006). \"Characterization of human aspartoacylase: the brain enzyme responsible for Canavan disease\". Biochemistry. 45 (18): 5878–5884. doi:10.1021/bi052608w. PMC 2566822. PMID 16669630.",
+                    "<info> ^ Hershfield JR, Pattabiraman N, Madhavarao CN, Namboodiri MA (May 2007). \"Mutational analysis of aspartoacylase: implications for Canavan disease\". Brain Research. 1148: 1–14. doi:10.1016/j.brainres.2007.02.069. PMC 1933483. PMID 17391648.",
+                    "<info> ^ Herga S, Berrin JG, Perrier J, Puigserver A, Giardina T (October 2006). \"Identification of the zinc binding ligands and the catalytic residue in human aspartoacylase, an enzyme involved in Canavan disease\". FEBS Letters. 580 (25): 5899–5904. Bibcode:2006FEBSL.580.5899H. doi:10.1016/j.febslet.2006.09.056. PMID 17027983. S2CID 41351955.",
+                    "<info> ^ a b c d e f Wijayasinghe YS, Pavlovsky AG, Viola RE (August 2014). \"Aspartoacylase catalytic deficiency as the cause of Canavan disease: a structural perspective\". Biochemistry. 53 (30): 4970–4978. doi:10.1021/bi500719k. PMID 25003821.",
+                    "<info> ^ a b c d e f Le Coq J, Pavlovsky A, Malik R, Sanishvili R, Xu C, Viola RE (March 2008). \"Examination of the mechanism of human brain aspartoacylase through the binding of an intermediate analogue\". Biochemistry. 47 (11): 3484–3492. doi:10.1021/bi702400x. PMC 2666850. PMID 18293939.",
+                    "<info> ^ a b Zhang C, Liu X, Xue Y (January 2012). \"A general acid–general base reaction mechanism for human brain aspartoacylase: A QM/MM study\". Computational and Theoretical Chemistry. 980: 85–91. doi:10.1016/j.comptc.2011.11.023.",
+                    "<info> ^ a b Moffett JR, Arun P, Ariyannur PS, Namboodiri AM (December 2013). \"N-Acetylaspartate reductions in brain injury: impact on post-injury neuroenergetics, lipid synthesis, and protein acetylation\". Frontiers in Neuroenergetics. 5: 11. doi:10.3389/fnene.2013.00011. PMC 3872778. PMID 24421768.",
+                    "<info> ^ Hershfield JR, Madhavarao CN, Moffett JR, Benjamins JA, Garbern JY, Namboodiri A (October 2006). \"Aspartoacylase is a regulated nuclear-cytoplasmic enzyme\". FASEB Journal. 20 (12): 2139–2141. doi:10.1096/fj.05-5358fje. PMID 16935940. S2CID 36296718.",
+                    "<info> ^ Chakraborty G, Mekala P, Yahya D, Wu G, Ledeen RW (August 2001). \"Intraneuronal N-acetylaspartate supplies acetyl groups for myelin lipid synthesis: evidence for myelin-associated aspartoacylase\". Journal of Neurochemistry. 78 (4): 736–745. doi:10.1046/j.1471-4159.2001.00456.x. PMID 11520894. S2CID 23338456.",
+                    "<info> ^ Baslow MH (April 2002). \"Evidence supporting a role for N-acetyl-L-aspartate as a molecular water pump in myelinated neurons in the central nervous system. An analytical review\". Neurochemistry International. 40 (4): 295–300. doi:10.1016/s0197-0186(01)00095-x. PMID 11792458. S2CID 34902757.",
+                    "<info> ^ a b Moore RA, Le Coq J, Faehnle CR, Viola RE (May 2003). \"Purification and preliminary characterization of brain aspartoacylase\". Archives of Biochemistry and Biophysics. 413 (1): 1–8. CiteSeerX 10.1.1.600.6321. doi:10.1016/s0003-9861(03)00055-9. PMID 12706335.",
+                    "<info> ^ a b Namboodiri AM, Peethambaran A, Mathew R, Sambhu PA, Hershfield J, Moffett JR, et al. (June 2006). \"Canavan disease and the role of N-acetylaspartate in myelin synthesis\". Molecular and Cellular Endocrinology. 252 (1–2): 216–223. doi:10.1016/j.mce.2006.03.016. PMID 16647192. S2CID 12255670.",
+                    "<info> ^ Baslow MH, Guilfoyle DN (April 2013). \"Canavan disease, a rare early-onset human spongiform leukodystrophy: insights into its genesis and possible clinical interventions\". Biochimie. 95 (4): 946–956. doi:10.1016/j.biochi.2012.10.023. PMID 23151389.",
+                    "<info> ^ a b Zano S, Wijayasinghe YS, Malik R, Smith J, Viola RE (January 2013). \"Relationship between enzyme properties and disease progression in Canavan disease\". Journal of Inherited Metabolic Disease. 36 (1): 1–6. doi:10.1007/s10545-012-9520-z. PMID 22850825. S2CID 34211521.",
+                    "",
+                    "=== External links ===",
+                    "<info> Aspartoacylase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> Overview of all the structural information available in the PDB for UniProt: P45381 (Aspartoacylase) at the PDBe-KB.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Aspartoacylase is a hydrolytic enzyme  (EC 3.5.1.15, also called aminoacylase II, ASPA and other names[a]) that in humans is encoded by the ASPA gene. ASPA catalyzes the deacylation of N-acetyl-l-aspartate (N-acetylaspartate) into aspartate and acetate.[7][8]  It is a zinc-dependent hydrolase that promotes the deprotonation of water to use as a nucleophile in a mechanism analogous to many other zinc-dependent hydrolases.[9] It is most commonly found in the brain, where it controls the levels of N-acetyl-l-aspartate. Mutations that result in loss of aspartoacylase activity are associated with Canavan disease, a rare autosomal recessive neurodegenerative disease.[10]"
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "Aspartoacylase is a dimer of two identical monomers of 313 amino acids and uses a zinc cofactor in each.[5][11]  There are two distinct domains in each monomer: the N-terminal domain from residues 1-212 and the C-terminal domain from residues 213–313.[12] The N-terminal domain of aspartoacylase is similar to that of zinc-dependent hydrolases such as carboxypeptidaseA. However, carboxypeptidases do not have something similar to the C-domain. In carboxypeptidase A, the active site is accessible to large substrates like the bulky C-terminal residue of polypeptides, whereas the C-domain sterically hinders access to the active site in aspartoacylase. Instead, the N-domain and C-domain of aspartoacylase form a deep narrow channel that leads to the active site.[5]",
+                            "The zinc cofactor is found at the active site and is held by Glu-24, His-21, and His 116.[13]  The substrate is held in place by Arg-63, Asn-70, Arg-71, Tyr-164, Arg-168, and Tyr-288.[5] The zinc cofactor is used to lower the pKa of a ligated water molecule so that an attack on N-acetyl-L-aspartate may occur and to stabilize the resulting tetrahedral intermediate along with Arg-63, and Glu-178.[13]"
+                        ]
+                    },
+                    "Mechanism": {
+                        "content": [
+                            "There are two types of possible mechanisms for zinc-dependent hydrolases depending on what is the nucleophile. The first uses deprotonated water and the second attacks with an aspartate or glutamate first forming an anhydride.[14] Aspartoacylase follows the deprotonated water mechanism.[13] Zinc lowers the pKa of a ligated water molecule and the reaction proceeds via an attack on N-acetyl-l-aspartate when the water molecule is deprotonated by Glu-178.[5] This leads to a tetrahedral intermediate that is stabilized by the zinc, Arg-63, and Glu-178.[13] Finally, the carbonyl is then reformed, the bond with nitrogen is broken, and the nitrogen is protonated by the proton taken by Glu-178 all in one concerted step.[14]"
+                        ]
+                    },
+                    "Biological function": {
+                        "content": [
+                            "Aspartoacylase is used to metabolize N-acetyl-L-aspartate by catalyzing its deacylation. Aspartoacylase prevents the buildup of N-acetyl-L-aspartate in the brain. It is believed that controlling N-acetyl-L-aspartate levels is essential for developing and maintaining white matter.[5] It is not known why so much  N-acetyl-L-aspartate is produced in the brain nor what its primary function is.[15] However, one hypothesis is that it is potentially used as a chemical reservoir that can be tapped into for acetate for acetyl-CoA synthesis or aspartate for glutamate synthesis.[15][16] This way, N-acetyl-L-aspartate can be used to transport these precursor molecules and aspartoacylase is used to release them. For example, N-acetyl-L-aspartate produced in neurons can be transported into oligodendrocytes and the acetate released can be used for myelin synthesis.[12][17] Another hypothesis is that N-acetyl-L-aspartate is essential osmolyte that acts as a molecular water pump that helps maintain a proper fluid balance in the brain.[18]"
+                        ]
+                    },
+                    "Disease relevance": {
+                        "content": [
+                            "Mutations that lead to loss of aspartoacylase activity have been identified as the cause of Canavan disease.[19] Canavan disease is a rare autosomal recessive disorder that causes spongy degeneration of the white matter in the brain and severe psychomotor retardation, usually leading to death at a young age.[12][20] The loss of aspartoacylase activity leads to the buildup of N-acetyl-L-aspartate in the brain and an increase in urine concentration by up to 60 times normal levels.[19] Though the exact mechanism of how loss of aspartoacylase activity leads to Canavan disease is not fully understood, there are two primary competing explanations. The first is that it leads to defective myelin synthesis due to a deficiency of acetyl-CoA derived from the acetate product.[20] Another explanation is that the elevated levels of N-acetyl-l-aspartate interfere with its normal brain osmoregulatory mechanism leading to osmotic disequilibrium.[21]",
+                            "There are over 70 reported mutations of this enzyme, but the most common ones are the amino acid substitutions E285A and A305E.[12] E285A reduces activity of aspartoacylase down to as low as 0.3% of its normal function and is found in 98% of cases with Ashkenazi Jewish ancestry.[22] The mutation A305E is found in about 40% of non-Jewish patients and reduces activity to about 10%.[22] Of these two mutations, a crystal structure of the E285A mutant has been taken, showing that the loss of the hydrogen bonding from glutamate leads to a conformational change that distorts the active site and alters the substrate binding, leading to the much lower catalytic activity.[12]"
+                        ]
+                    },
+                    "Notes": {
+                        "content": [
+                            "<info> ^ The enzyme is also known as N-acetylaspartate amidohydrolase, acetyl-aspartic deaminase or acylase II[6]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000108381 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000020774 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ a b c d e f g h Bitto E, Bingman CA, Wesenberg GE, McCoy JG, Phillips GN (January 2007). \"Structure of aspartoacylase, the brain enzyme impaired in Canavan disease\". Proceedings of the National Academy of Sciences of the United States of America. 104 (2): 456–461. doi:10.1073/pnas.0607817104. PMC 1766406. PMID 17194761.",
+                            "<info> ^ \"Aspartoacylase (EC 3.5.1.15)\". biocyc.org. Archived from the original on 22 July 2022. Retrieved 2022-07-22.",
+                            "<info> ^ Birnbaum SM (1955). Amino acid acylases I and II from hog kidney. Methods in Enzymology. Vol. 2. pp. 115–119. doi:10.1016/S0076-6879(55)02176-9.",
+                            "<info> ^ Birnbaum SM, Levintow L, Kingsley RB, Greenstein JP (January 1952). \"Specificity of amino acid acylases\". The Journal of Biological Chemistry. 194 (1): 455–470. doi:10.1016/S0021-9258(18)55898-1. PMID 14927637.",
+                            "<info> ^ Le Coq J, An HJ, Lebrilla C, Viola RE (May 2006). \"Characterization of human aspartoacylase: the brain enzyme responsible for Canavan disease\". Biochemistry. 45 (18): 5878–5884. doi:10.1021/bi052608w. PMC 2566822. PMID 16669630.",
+                            "<info> ^ Hershfield JR, Pattabiraman N, Madhavarao CN, Namboodiri MA (May 2007). \"Mutational analysis of aspartoacylase: implications for Canavan disease\". Brain Research. 1148: 1–14. doi:10.1016/j.brainres.2007.02.069. PMC 1933483. PMID 17391648.",
+                            "<info> ^ Herga S, Berrin JG, Perrier J, Puigserver A, Giardina T (October 2006). \"Identification of the zinc binding ligands and the catalytic residue in human aspartoacylase, an enzyme involved in Canavan disease\". FEBS Letters. 580 (25): 5899–5904. Bibcode:2006FEBSL.580.5899H. doi:10.1016/j.febslet.2006.09.056. PMID 17027983. S2CID 41351955.",
+                            "<info> ^ a b c d e f Wijayasinghe YS, Pavlovsky AG, Viola RE (August 2014). \"Aspartoacylase catalytic deficiency as the cause of Canavan disease: a structural perspective\". Biochemistry. 53 (30): 4970–4978. doi:10.1021/bi500719k. PMID 25003821.",
+                            "<info> ^ a b c d e f Le Coq J, Pavlovsky A, Malik R, Sanishvili R, Xu C, Viola RE (March 2008). \"Examination of the mechanism of human brain aspartoacylase through the binding of an intermediate analogue\". Biochemistry. 47 (11): 3484–3492. doi:10.1021/bi702400x. PMC 2666850. PMID 18293939.",
+                            "<info> ^ a b Zhang C, Liu X, Xue Y (January 2012). \"A general acid–general base reaction mechanism for human brain aspartoacylase: A QM/MM study\". Computational and Theoretical Chemistry. 980: 85–91. doi:10.1016/j.comptc.2011.11.023.",
+                            "<info> ^ a b Moffett JR, Arun P, Ariyannur PS, Namboodiri AM (December 2013). \"N-Acetylaspartate reductions in brain injury: impact on post-injury neuroenergetics, lipid synthesis, and protein acetylation\". Frontiers in Neuroenergetics. 5: 11. doi:10.3389/fnene.2013.00011. PMC 3872778. PMID 24421768.",
+                            "<info> ^ Hershfield JR, Madhavarao CN, Moffett JR, Benjamins JA, Garbern JY, Namboodiri A (October 2006). \"Aspartoacylase is a regulated nuclear-cytoplasmic enzyme\". FASEB Journal. 20 (12): 2139–2141. doi:10.1096/fj.05-5358fje. PMID 16935940. S2CID 36296718.",
+                            "<info> ^ Chakraborty G, Mekala P, Yahya D, Wu G, Ledeen RW (August 2001). \"Intraneuronal N-acetylaspartate supplies acetyl groups for myelin lipid synthesis: evidence for myelin-associated aspartoacylase\". Journal of Neurochemistry. 78 (4): 736–745. doi:10.1046/j.1471-4159.2001.00456.x. PMID 11520894. S2CID 23338456.",
+                            "<info> ^ Baslow MH (April 2002). \"Evidence supporting a role for N-acetyl-L-aspartate as a molecular water pump in myelinated neurons in the central nervous system. An analytical review\". Neurochemistry International. 40 (4): 295–300. doi:10.1016/s0197-0186(01)00095-x. PMID 11792458. S2CID 34902757.",
+                            "<info> ^ a b Moore RA, Le Coq J, Faehnle CR, Viola RE (May 2003). \"Purification and preliminary characterization of brain aspartoacylase\". Archives of Biochemistry and Biophysics. 413 (1): 1–8. CiteSeerX 10.1.1.600.6321. doi:10.1016/s0003-9861(03)00055-9. PMID 12706335.",
+                            "<info> ^ a b Namboodiri AM, Peethambaran A, Mathew R, Sambhu PA, Hershfield J, Moffett JR, et al. (June 2006). \"Canavan disease and the role of N-acetylaspartate in myelin synthesis\". Molecular and Cellular Endocrinology. 252 (1–2): 216–223. doi:10.1016/j.mce.2006.03.016. PMID 16647192. S2CID 12255670.",
+                            "<info> ^ Baslow MH, Guilfoyle DN (April 2013). \"Canavan disease, a rare early-onset human spongiform leukodystrophy: insights into its genesis and possible clinical interventions\". Biochimie. 95 (4): 946–956. doi:10.1016/j.biochi.2012.10.023. PMID 23151389.",
+                            "<info> ^ a b Zano S, Wijayasinghe YS, Malik R, Smith J, Viola RE (January 2013). \"Relationship between enzyme properties and disease progression in Canavan disease\". Journal of Inherited Metabolic Disease. 36 (1): 1–6. doi:10.1007/s10545-012-9520-z. PMID 22850825. S2CID 34211521."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Aspartoacylase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> Overview of all the structural information available in the PDB for UniProt: P45381 (Aspartoacylase) at the PDBe-KB."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

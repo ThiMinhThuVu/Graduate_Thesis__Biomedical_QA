@@ -1,0 +1,63 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/canine_brain_tumors": {
+                "title": "Canine brain tumors",
+                "url": "https://en.wikipedia.org/wiki/canine_brain_tumors",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Cancer of the nervous system is common in domestic canids, and includes primary neoplasia of the peripheral nervous system, primary neoplasia of the central nervous system and various metastatic cancers.  Some of the most common of the central nervous system tumors are several types of primary (originating from brain tissue) canine brain tumors.  Examples of these include: meningiomas, astrocytomas, glioblastomas, oligodendromas, choroid plexus papillomas, and pituitary adenomas.  Breeds predisposed to brain tumors include: Boxer Dog, Pug, English Bull Dog, Boston Terrier, and Golden Retrievers.[1][2]",
+                    "",
+                    "=== Common canine brain tumors ===",
+                    "Meningiomas (arising from the meninges, a neural crest-derived cell) are the most common brain tumor of dogs, accounting for 40% of all primary brain tumors.  Golden Retrievers as well as other dolichocephalic (long-nosed) breeds are particularly susceptible.",
+                    "Astrocytomas are the most common neuroectodermal tumor of dogs.  Glioblastomas are considered a subset of astrocytomas—a particularly damaging, invasive, and undifferentiated type. Canine glioblastomas are similar to glioblastomas in humans.  Studies are underway to use and develop the dog as a model of this devastating disease of humans in the hope that characterizing and successfully treating these tumors in dogs may lead to improved therapies for humans afflicted with this disease.  brachycephalic (short-nosed) breeds such as the boxer, pug, Boston terrier and bulldog have a marked (25 times the normal occurrence) predilection for developing primary brain tumors to include glioblastomas.",
+                    "Pituitary gland tumors are very common in the canine.  A productive form arising from the anterior pituitary is the primary cause of Cushing's disease of dogs.  This tumor causes excessive production of cortisol from the adrenal cortex which leads to the classic signs of alopecia (hair loss), polyuria (excessive urination), polydipsia (excessive water drinking), and a pot-bellied appearance of the abdomen due to muscle break down.  See picture here.",
+                    "",
+                    "=== Clinical signs ===",
+                    "Two of the most important signs a dog may have an intracranial brain tumor are seizure and unexplained behavioral changes.  Seizures manifest as a 1–2 minute display of a combination of the following: loss of consciousness, lateral recumbency (dog lying on its side), paddling of the legs, tremors, and involuntary urination/defecation.  Often, the only signs an absent owner may have of a pet dog that has had a seizure is unexplained soiling of the floor by a normally house-broken pet.  Behavioral changes can manifest in many ways to include nervousness, barking in the corner (dementia), pacing, aggressiveness or irritation, or deviation from normal routines.  \"Doggy headaches\" can manifest as head pressing against walls, doors, or even owners themselves. Other signs that may be encountered are ataxia (uncoordinated ambulation), circling, blindness, lethargy, and disorientation.[1]",
+                    "",
+                    "=== Treatment ===",
+                    "At this time, there is no true cure (100% remission) for brain tumors in dogs (or any species for that matter.)  In practice, brain tumors are generally considered to be malignant due to the delicate and poorly regenerative nature of neurons and restriction of the brain to the finite space of the cranium which does not allow tumor growth devoid of collateral damage to brain parenchyma. Therefore, general long-term prognosis for canine brain tumors is poor.  Current treatment of brain tumors revolves around four main modalities: surgery, radiation, chemotherapy, and palliative (pain relieving) care.  Depending on the type, extent, and location of the cancer, any one or combination of these techniques may be employed. For instance, the first line treatment for meningiomas is surgery but may be coupled with chemotherapy in an attempt to improve survival time. Intracranial tumors (such as glioblastoma) more commonly rely on radiation therapy as surgical access to the tumor may be prohibitively dangerous.[3] Palliative care tends to include corticosteroids to help reduce swelling and edema around tumors as well as anti-convulsant medications to control seizures.",
+                    "",
+                    "=== Notes and references ===",
+                    "<info> ^ a b \"Merck Veterinary Manual\".",
+                    "<info> ^ Westworth DR, Dickinson PJ, Vernau W, Johnson EG, Bollen AW, Kass PH et al (2008). Choroid plexus tumors in 56 dogs (1985–2007). J Vet Intern Med 22: 1157–65.",
+                    "<info> ^ Spugnini EP, Thrall DE, Price GS, Sharp NJ, Munana K, Page RL (2000). Primary irradiation of canine intracranial masses. Vet Radiol Ultrasound 41: 377–80.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Cancer of the nervous system is common in domestic canids, and includes primary neoplasia of the peripheral nervous system, primary neoplasia of the central nervous system and various metastatic cancers.  Some of the most common of the central nervous system tumors are several types of primary (originating from brain tissue) canine brain tumors.  Examples of these include: meningiomas, astrocytomas, glioblastomas, oligodendromas, choroid plexus papillomas, and pituitary adenomas.  Breeds predisposed to brain tumors include: Boxer Dog, Pug, English Bull Dog, Boston Terrier, and Golden Retrievers.[1][2]"
+                        ]
+                    },
+                    "Common canine brain tumors": {
+                        "content": [
+                            "Meningiomas (arising from the meninges, a neural crest-derived cell) are the most common brain tumor of dogs, accounting for 40% of all primary brain tumors.  Golden Retrievers as well as other dolichocephalic (long-nosed) breeds are particularly susceptible.",
+                            "Astrocytomas are the most common neuroectodermal tumor of dogs.  Glioblastomas are considered a subset of astrocytomas—a particularly damaging, invasive, and undifferentiated type. Canine glioblastomas are similar to glioblastomas in humans.  Studies are underway to use and develop the dog as a model of this devastating disease of humans in the hope that characterizing and successfully treating these tumors in dogs may lead to improved therapies for humans afflicted with this disease.  brachycephalic (short-nosed) breeds such as the boxer, pug, Boston terrier and bulldog have a marked (25 times the normal occurrence) predilection for developing primary brain tumors to include glioblastomas.",
+                            "Pituitary gland tumors are very common in the canine.  A productive form arising from the anterior pituitary is the primary cause of Cushing's disease of dogs.  This tumor causes excessive production of cortisol from the adrenal cortex which leads to the classic signs of alopecia (hair loss), polyuria (excessive urination), polydipsia (excessive water drinking), and a pot-bellied appearance of the abdomen due to muscle break down.  See picture here."
+                        ]
+                    },
+                    "Clinical signs": {
+                        "content": [
+                            "Two of the most important signs a dog may have an intracranial brain tumor are seizure and unexplained behavioral changes.  Seizures manifest as a 1–2 minute display of a combination of the following: loss of consciousness, lateral recumbency (dog lying on its side), paddling of the legs, tremors, and involuntary urination/defecation.  Often, the only signs an absent owner may have of a pet dog that has had a seizure is unexplained soiling of the floor by a normally house-broken pet.  Behavioral changes can manifest in many ways to include nervousness, barking in the corner (dementia), pacing, aggressiveness or irritation, or deviation from normal routines.  \"Doggy headaches\" can manifest as head pressing against walls, doors, or even owners themselves. Other signs that may be encountered are ataxia (uncoordinated ambulation), circling, blindness, lethargy, and disorientation.[1]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "At this time, there is no true cure (100% remission) for brain tumors in dogs (or any species for that matter.)  In practice, brain tumors are generally considered to be malignant due to the delicate and poorly regenerative nature of neurons and restriction of the brain to the finite space of the cranium which does not allow tumor growth devoid of collateral damage to brain parenchyma. Therefore, general long-term prognosis for canine brain tumors is poor.  Current treatment of brain tumors revolves around four main modalities: surgery, radiation, chemotherapy, and palliative (pain relieving) care.  Depending on the type, extent, and location of the cancer, any one or combination of these techniques may be employed. For instance, the first line treatment for meningiomas is surgery but may be coupled with chemotherapy in an attempt to improve survival time. Intracranial tumors (such as glioblastoma) more commonly rely on radiation therapy as surgical access to the tumor may be prohibitively dangerous.[3] Palliative care tends to include corticosteroids to help reduce swelling and edema around tumors as well as anti-convulsant medications to control seizures."
+                        ]
+                    },
+                    "Notes and references": {
+                        "content": [
+                            "<info> ^ a b \"Merck Veterinary Manual\".",
+                            "<info> ^ Westworth DR, Dickinson PJ, Vernau W, Johnson EG, Bollen AW, Kass PH et al (2008). Choroid plexus tumors in 56 dogs (1985–2007). J Vet Intern Med 22: 1157–65.",
+                            "<info> ^ Spugnini EP, Thrall DE, Price GS, Sharp NJ, Munana K, Page RL (2000). Primary irradiation of canine intracranial masses. Vet Radiol Ultrasound 41: 377–80."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

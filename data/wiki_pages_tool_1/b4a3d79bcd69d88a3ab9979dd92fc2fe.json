@@ -1,0 +1,79 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/peripheral_nerve_tumor": {
+                "title": "Peripheral nerve tumor",
+                "url": "https://en.wikipedia.org/wiki/peripheral_nerve_tumor",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Peripheral nerve tumors, also called tumors of peripheral nerves or tumors of the peripheral nervous system, are a diverse category with a range of morphological characteristics and biological potential.[1] They are categorized as either benign or malignant peripheral nerve sheath tumors.[2][3]",
+                    "",
+                    "=== Description ===",
+                    "They vary from benign (soft tissue perineurioma and schwannoma) that can be completely removed to benign (plexiform neurofibroma) that may be locally aggressive to extremely malignant (malignant peripheral nerve sheath tumors [MPNST]).[1] New and more precisely defined entities include malignant melanotic nerve sheath tumor (formerly known as melanotic schwannoma) and hybrid nerve sheath tumors.[4][5] The majority of peripheral nerve tumors are benign tumors of the nerve sheath (usually schwannomas); on rare occasions, they are metastatic tumors or originate from the nerve cells.[6][7]",
+                    "Most peripheral nerve tumors occur for unknown reasons. Some, including schwannomatosis and neurofibromatosis (types 1 and 2), are associated with recognized hereditary disorders. Others may be caused by gene mutations. In the case of schwannomatosis and neurofibromatosis, tumors can grow on or close to nerves anywhere in the body. Frequently, there are several tumors.[8]",
+                    "The typical symptoms involve a combination of pain, loss of nerve function, and/or a palpable (or radiographically apparent) mass affecting a peripheral nerve. The etiology and importance of the last two symptoms should be apparent. For example, the presence of a severe nerve palsy is highly suggestive of malignancy as it is most likely the result of the tumor invading and destroying nerves.[7]",
+                    "Methods used to identify tumors of the peripheral nervous system include a family history of any predisposition syndrome, including neurofibromatosis types 1 and 2, a targeted and comprehensive physical examination, and radiological investigations, the primary one being magnetic resonance imaging.[9][10] Other radiological investigations may include plain radiographs, ultrasound examination, computed tomography, and positron emission tomography.[11] Definitive diagnosis is made by tumor biopsy.[12] Surgery is the most common method of treating peripheral nerve sheath tumors.[11] In malignant tumors, complete resection is the only known curative treatment (with a sufficiently wide margin or even amputation to improve prognosis).[12] For larger lesions or those with a more aggressive histology, adjuvant radiation is recommended. Novel or combination therapies that are the focus of ongoing clinical trials are highly desirable.[13][14]",
+                    "",
+                    "=== Epidemiological and clinical features ===",
+                    "Formally, the majority of these tumors lack a CNS WHO grade; instead, neoplasms should be graded within each category of tumor.[5]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Belakhoua, Sarra M.; Rodriguez, Fausto J. (2021-02-16). \"Diagnostic Pathology of Tumors of Peripheral Nerve\". Neurosurgery. 88 (3): 443–456. doi:10.1093/neuros/nyab021. ISSN 1524-4040. PMC 7884141. PMID 33588442.",
+                    "<info> ^ a b Parizel, P. M.; Simoens, W. A.; Matos, C.; Verstraete, K. L. (1997), De Schepper, Arthur M.; Parizel, Paul M.; Ramon, Frank; De Beuckeleer, Luc (eds.), \"Tumors of Peripheral Nerves\", Imaging of Soft Tissue Tumors, Berlin, Heidelberg: Springer, pp. 271–298, doi:10.1007/978-3-662-07859-4_17, ISBN 978-3-662-07859-4, retrieved 2024-09-07{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                    "<info> ^ Ariel, I. M. (1983). \"Tumors of the peripheral nervous system\". CA: A Cancer Journal for Clinicians. 33 (5): 282–299. doi:10.3322/canjclin.33.5.282. ISSN 0007-9235. PMID 6413007.",
+                    "<info> ^ Giannini, Caterina; Righi, Alberto (2024). \"Peripheral nerve tumors\". Focal Neuropathies. Handbook of Clinical Neurology. Vol. 201. pp. 251–271. doi:10.1016/B978-0-323-90108-6.00016-8. ISBN 978-0-323-90108-6. ISSN 0072-9752. PMID 38697744.",
+                    "<info> ^ a b c Pellerino, Alessia; Verdijk, Robert M.; Nichelli, Lucia; Andratschke, Nicolaus H.; Idbaih, Ahmed; Goldbrunner, Roland (2023-03-23). \"Diagnosis and Treatment of Peripheral and Cranial Nerve Tumors with Expert Recommendations: An EUropean Network for RAre CANcers (EURACAN) Initiative\". Cancers. 15 (7): 1930. doi:10.3390/cancers15071930. ISSN 2072-6694. PMC 10093509. PMID 37046591.",
+                    "<info> ^ Lapierre, F.; Rigoard, P.; Wager, M. (2009). \"[Peripheral nerve tumors]\". Neuro-Chirurgie. 55 (4–5): 413–420. doi:10.1016/j.neuchi.2009.09.004. ISSN 0028-3770. PMID 19796780.",
+                    "<info> ^ a b Sughrue, Michael E; Levine, Jon; Barbaro, Nicholas M (2008-02-29). \"Pain as a symptom of peripheral nerve sheath tumors: clinical significance and future therapeutic directions\". Journal of Brachial Plexus and Peripheral Nerve Injury. 3: e136–e140. doi:10.1186/1749-7221-3-6. ISSN 1749-7221. PMC 2291052. PMID 18312658.",
+                    "<info> ^ \"Peripheral nerve tumors - Symptoms and causes\". Mayo Clinic. Retrieved 2024-09-07.",
+                    "<info> ^ July, Julius; Guha, Abhijit (2012-01-01), Grisold, Wolfgang; Soffietti, Riccardo (eds.), \"Chapter 44 - Peripheral nerve tumors\", Handbook of Clinical Neurology, Neuro-Oncology Part II, 105, Elsevier: 665–674, doi:10.1016/B978-0-444-53502-3.00016-1, ISBN 978-0-444-53502-3, PMID 22230526, retrieved 2024-09-07{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                    "<info> ^ Bhattacharyya, Asis Kumar; Perrin, Richard; Guha, Abhijit (2004-08-01). \"Peripheral Nerve Tumors: Management Strategies and Molecular Insights\". Journal of Neuro-Oncology. 69 (1): 335–349. doi:10.1023/B:NEON.0000041891.39474.cb. ISSN 1573-7373. PMID 15527099.",
+                    "<info> ^ a b Sulli, Deviprasad; Shankar, Chandni; Raikar, Shruti G (2024). \"Peripheral Nerve Sheath Tumor: A Diagnostic and Therapeutic Challenge\". Cureus. 16 (3) e56601. doi:10.7759/cureus.56601. ISSN 2168-8184. PMC 11031624. PMID 38646284.",
+                    "<info> ^ a b Zhou, Hai-Ying; Jiang, Shuai; Ma, Fei-Xia; Lu, Hui (2020). \"Peripheral nerve tumors of the hand: Clinical features, diagnosis, and treatment\". World Journal of Clinical Cases. 8 (21): 5086–5098. doi:10.12998/wjcc.v8.i21.5086. ISSN 2307-8960. PMC 7674743. PMID 33269245.",
+                    "<info> ^ Bradford, Diana; Kim, AeRang (2015-03-17). \"Current Treatment Options for Malignant Peripheral Nerve Sheath Tumors\". Current Treatment Options in Oncology. 16 (3): 12. doi:10.1007/s11864-015-0328-6. ISSN 1534-6277. PMID 25777573.",
+                    "<info> ^ Knight, Samantha W. E.; Knight, Tristan E.; Santiago, Teresa; Murphy, Andrew J.; Abdelhafeez, Abdelhafeez H. (2022-01-01). \"Malignant Peripheral Nerve Sheath Tumors—A Comprehensive Review of Pathophysiology, Diagnosis, and Multidisciplinary Management\". Children. 9 (1): 38. doi:10.3390/children9010038. ISSN 2227-9067. PMC 8774267. PMID 35053663.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Peripheral nerve tumors, also called tumors of peripheral nerves or tumors of the peripheral nervous system, are a diverse category with a range of morphological characteristics and biological potential.[1] They are categorized as either benign or malignant peripheral nerve sheath tumors.[2][3]"
+                        ]
+                    },
+                    "Description": {
+                        "content": [
+                            "They vary from benign (soft tissue perineurioma and schwannoma) that can be completely removed to benign (plexiform neurofibroma) that may be locally aggressive to extremely malignant (malignant peripheral nerve sheath tumors [MPNST]).[1] New and more precisely defined entities include malignant melanotic nerve sheath tumor (formerly known as melanotic schwannoma) and hybrid nerve sheath tumors.[4][5] The majority of peripheral nerve tumors are benign tumors of the nerve sheath (usually schwannomas); on rare occasions, they are metastatic tumors or originate from the nerve cells.[6][7]",
+                            "Most peripheral nerve tumors occur for unknown reasons. Some, including schwannomatosis and neurofibromatosis (types 1 and 2), are associated with recognized hereditary disorders. Others may be caused by gene mutations. In the case of schwannomatosis and neurofibromatosis, tumors can grow on or close to nerves anywhere in the body. Frequently, there are several tumors.[8]",
+                            "The typical symptoms involve a combination of pain, loss of nerve function, and/or a palpable (or radiographically apparent) mass affecting a peripheral nerve. The etiology and importance of the last two symptoms should be apparent. For example, the presence of a severe nerve palsy is highly suggestive of malignancy as it is most likely the result of the tumor invading and destroying nerves.[7]",
+                            "Methods used to identify tumors of the peripheral nervous system include a family history of any predisposition syndrome, including neurofibromatosis types 1 and 2, a targeted and comprehensive physical examination, and radiological investigations, the primary one being magnetic resonance imaging.[9][10] Other radiological investigations may include plain radiographs, ultrasound examination, computed tomography, and positron emission tomography.[11] Definitive diagnosis is made by tumor biopsy.[12] Surgery is the most common method of treating peripheral nerve sheath tumors.[11] In malignant tumors, complete resection is the only known curative treatment (with a sufficiently wide margin or even amputation to improve prognosis).[12] For larger lesions or those with a more aggressive histology, adjuvant radiation is recommended. Novel or combination therapies that are the focus of ongoing clinical trials are highly desirable.[13][14]"
+                        ]
+                    },
+                    "Epidemiological and clinical features": {
+                        "content": [
+                            "Formally, the majority of these tumors lack a CNS WHO grade; instead, neoplasms should be graded within each category of tumor.[5]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Belakhoua, Sarra M.; Rodriguez, Fausto J. (2021-02-16). \"Diagnostic Pathology of Tumors of Peripheral Nerve\". Neurosurgery. 88 (3): 443–456. doi:10.1093/neuros/nyab021. ISSN 1524-4040. PMC 7884141. PMID 33588442.",
+                            "<info> ^ a b Parizel, P. M.; Simoens, W. A.; Matos, C.; Verstraete, K. L. (1997), De Schepper, Arthur M.; Parizel, Paul M.; Ramon, Frank; De Beuckeleer, Luc (eds.), \"Tumors of Peripheral Nerves\", Imaging of Soft Tissue Tumors, Berlin, Heidelberg: Springer, pp. 271–298, doi:10.1007/978-3-662-07859-4_17, ISBN 978-3-662-07859-4, retrieved 2024-09-07{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                            "<info> ^ Ariel, I. M. (1983). \"Tumors of the peripheral nervous system\". CA: A Cancer Journal for Clinicians. 33 (5): 282–299. doi:10.3322/canjclin.33.5.282. ISSN 0007-9235. PMID 6413007.",
+                            "<info> ^ Giannini, Caterina; Righi, Alberto (2024). \"Peripheral nerve tumors\". Focal Neuropathies. Handbook of Clinical Neurology. Vol. 201. pp. 251–271. doi:10.1016/B978-0-323-90108-6.00016-8. ISBN 978-0-323-90108-6. ISSN 0072-9752. PMID 38697744.",
+                            "<info> ^ a b c Pellerino, Alessia; Verdijk, Robert M.; Nichelli, Lucia; Andratschke, Nicolaus H.; Idbaih, Ahmed; Goldbrunner, Roland (2023-03-23). \"Diagnosis and Treatment of Peripheral and Cranial Nerve Tumors with Expert Recommendations: An EUropean Network for RAre CANcers (EURACAN) Initiative\". Cancers. 15 (7): 1930. doi:10.3390/cancers15071930. ISSN 2072-6694. PMC 10093509. PMID 37046591.",
+                            "<info> ^ Lapierre, F.; Rigoard, P.; Wager, M. (2009). \"[Peripheral nerve tumors]\". Neuro-Chirurgie. 55 (4–5): 413–420. doi:10.1016/j.neuchi.2009.09.004. ISSN 0028-3770. PMID 19796780.",
+                            "<info> ^ a b Sughrue, Michael E; Levine, Jon; Barbaro, Nicholas M (2008-02-29). \"Pain as a symptom of peripheral nerve sheath tumors: clinical significance and future therapeutic directions\". Journal of Brachial Plexus and Peripheral Nerve Injury. 3: e136–e140. doi:10.1186/1749-7221-3-6. ISSN 1749-7221. PMC 2291052. PMID 18312658.",
+                            "<info> ^ \"Peripheral nerve tumors - Symptoms and causes\". Mayo Clinic. Retrieved 2024-09-07.",
+                            "<info> ^ July, Julius; Guha, Abhijit (2012-01-01), Grisold, Wolfgang; Soffietti, Riccardo (eds.), \"Chapter 44 - Peripheral nerve tumors\", Handbook of Clinical Neurology, Neuro-Oncology Part II, 105, Elsevier: 665–674, doi:10.1016/B978-0-444-53502-3.00016-1, ISBN 978-0-444-53502-3, PMID 22230526, retrieved 2024-09-07{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                            "<info> ^ Bhattacharyya, Asis Kumar; Perrin, Richard; Guha, Abhijit (2004-08-01). \"Peripheral Nerve Tumors: Management Strategies and Molecular Insights\". Journal of Neuro-Oncology. 69 (1): 335–349. doi:10.1023/B:NEON.0000041891.39474.cb. ISSN 1573-7373. PMID 15527099.",
+                            "<info> ^ a b Sulli, Deviprasad; Shankar, Chandni; Raikar, Shruti G (2024). \"Peripheral Nerve Sheath Tumor: A Diagnostic and Therapeutic Challenge\". Cureus. 16 (3) e56601. doi:10.7759/cureus.56601. ISSN 2168-8184. PMC 11031624. PMID 38646284.",
+                            "<info> ^ a b Zhou, Hai-Ying; Jiang, Shuai; Ma, Fei-Xia; Lu, Hui (2020). \"Peripheral nerve tumors of the hand: Clinical features, diagnosis, and treatment\". World Journal of Clinical Cases. 8 (21): 5086–5098. doi:10.12998/wjcc.v8.i21.5086. ISSN 2307-8960. PMC 7674743. PMID 33269245.",
+                            "<info> ^ Bradford, Diana; Kim, AeRang (2015-03-17). \"Current Treatment Options for Malignant Peripheral Nerve Sheath Tumors\". Current Treatment Options in Oncology. 16 (3): 12. doi:10.1007/s11864-015-0328-6. ISSN 1534-6277. PMID 25777573.",
+                            "<info> ^ Knight, Samantha W. E.; Knight, Tristan E.; Santiago, Teresa; Murphy, Andrew J.; Abdelhafeez, Abdelhafeez H. (2022-01-01). \"Malignant Peripheral Nerve Sheath Tumors—A Comprehensive Review of Pathophysiology, Diagnosis, and Multidisciplinary Management\". Children. 9 (1): 38. doi:10.3390/children9010038. ISSN 2227-9067. PMC 8774267. PMID 35053663."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

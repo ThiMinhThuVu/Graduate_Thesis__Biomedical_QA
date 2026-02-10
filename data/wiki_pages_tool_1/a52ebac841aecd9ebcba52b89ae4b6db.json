@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/crohn%27s_disease": {
+                "title": "Crohn's disease",
+                "url": "https://en.wikipedia.org/wiki/crohn%27s_disease",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

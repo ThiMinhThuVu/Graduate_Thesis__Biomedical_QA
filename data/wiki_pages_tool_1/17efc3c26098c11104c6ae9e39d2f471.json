@@ -1,0 +1,81 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/acute_leukemia": {
+                "title": "Acute leukemia",
+                "url": "https://en.wikipedia.org/wiki/acute_leukemia",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Acute leukemia or acute leukaemia is a family of serious medical conditions relating to an original diagnosis of leukemia. In most cases, these can be classified according to the lineage, myeloid or lymphoid, of the malignant cells that grow uncontrolled, but some are mixed and for those such an assignment is not possible.[1]",
+                    "Forms of acute leukemia include:",
+                    "<info> Acute myeloid leukemia (AML),[2] a rare form of which is acute erythroid leukemia.[3]",
+                    "<info> Acute lymphoblastic leukemia (ALL)[4] including T-cell acute lymphoblastic leukemia.[5] Types of T-cell acute lymphoblastic leukemia include adult T-cell leukemia/lymphoma[6][7][8] and (precursor) T-lymphoblastic leukemia/lymphoma.",
+                    "<info> Blast crisis of chronic myelogenous leukemia.",
+                    "",
+                    "=== Medical statistics ===",
+                    "Based on data from United States Cancer Statistics (USCS) Public Use Database for 2001–2017, the 2021 estimate for new cases of AML and ALL are following:[9]",
+                    "<info> Total estimated cases for AML: 20,240",
+                    "<info> Total estimated cases for ALL: 5,690",
+                    "Based on these estimates, AML is about 78% of the total cases.",
+                    "",
+                    "=== Images ===",
+                    "<info> T-lymphoblastic cells of acute leukemia in the bone marrow",
+                    "<info> Acute erythroid leukemia, a rare form of acute myeloid leukemia",
+                    "<info> Peripheral blood stain of chronic myelogenous leukemia in accelerated phase (blast crisis)",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Wolach, O; Stone, R. M. (2015). \"How I treat mixed-phenotype acute leukemia\". Blood. 125 (16): 2477–85. doi:10.1182/blood-2014-10-551465. PMID 25605373.",
+                    "<info> ^ \"Acute Myeloid Leukemia\". The Lecturio Medical Concept Library. Retrieved 11 August 2021.",
+                    "<info> ^ Zuo Z, Polski JM, Kasyan A, Medeiros LJ (2010). \"Acute erythroid leukemia\". Arch. Pathol. Lab. Med. 134 (9): 1261–70. doi:10.5858/2009-0350-RA.1. PMID 20807044.",
+                    "<info> ^ \"Acute Lymphoblastic Leukemia\". The Lecturio Medical Concept Library. Retrieved 11 August 2021.",
+                    "<info> ^ Litzow, Mark R.; Ferrando, Adolfo A. (2015-08-13). \"How I treat T-cell acute lymphoblastic leukemia in adults\". Blood. 126 (7): 833–841. doi:10.1182/blood-2014-10-551895. ISSN 0006-4971. PMID 25966987.",
+                    "<info> ^ Yodoi, J; Takatsuki, K; Masuda, T (1974). \"Letter: Two cases of T-cell chronic lymphocytic leukemia in Japan\". New England Journal of Medicine. 290 (10): 572–3. doi:10.1056/NEJM197403072901018. PMID 4544052.",
+                    "<info> ^ Uchiyama, T; Yodoi, J; Sagawa, K; Takatsuki, K; Uchino, H (1977). \"Adult T-cell leukemia: Clinical and hematologic features of 16 cases\". Blood. 50 (3): 481–92. doi:10.1182/blood.V50.3.481.481. PMID 301762.",
+                    "<info> ^ Yodoi, J; Maeda, M (2011). \"The discovery of ATL: an odyssey in restrospect\". International Journal of Hematology. 94 (5): 423–8. doi:10.1007/s12185-011-0957-x. PMID 22068231. S2CID 9299403.",
+                    "<info> ^ \"Facts 2020-2021\" (PDF).",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Acute leukemia or acute leukaemia is a family of serious medical conditions relating to an original diagnosis of leukemia. In most cases, these can be classified according to the lineage, myeloid or lymphoid, of the malignant cells that grow uncontrolled, but some are mixed and for those such an assignment is not possible.[1]",
+                            "Forms of acute leukemia include:",
+                            "<info> Acute myeloid leukemia (AML),[2] a rare form of which is acute erythroid leukemia.[3]",
+                            "<info> Acute lymphoblastic leukemia (ALL)[4] including T-cell acute lymphoblastic leukemia.[5] Types of T-cell acute lymphoblastic leukemia include adult T-cell leukemia/lymphoma[6][7][8] and (precursor) T-lymphoblastic leukemia/lymphoma.",
+                            "<info> Blast crisis of chronic myelogenous leukemia."
+                        ]
+                    },
+                    "Medical statistics": {
+                        "content": [
+                            "Based on data from United States Cancer Statistics (USCS) Public Use Database for 2001–2017, the 2021 estimate for new cases of AML and ALL are following:[9]",
+                            "<info> Total estimated cases for AML: 20,240",
+                            "<info> Total estimated cases for ALL: 5,690",
+                            "Based on these estimates, AML is about 78% of the total cases."
+                        ]
+                    },
+                    "Images": {
+                        "content": [
+                            "<info> T-lymphoblastic cells of acute leukemia in the bone marrow",
+                            "<info> Acute erythroid leukemia, a rare form of acute myeloid leukemia",
+                            "<info> Peripheral blood stain of chronic myelogenous leukemia in accelerated phase (blast crisis)"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Wolach, O; Stone, R. M. (2015). \"How I treat mixed-phenotype acute leukemia\". Blood. 125 (16): 2477–85. doi:10.1182/blood-2014-10-551465. PMID 25605373.",
+                            "<info> ^ \"Acute Myeloid Leukemia\". The Lecturio Medical Concept Library. Retrieved 11 August 2021.",
+                            "<info> ^ Zuo Z, Polski JM, Kasyan A, Medeiros LJ (2010). \"Acute erythroid leukemia\". Arch. Pathol. Lab. Med. 134 (9): 1261–70. doi:10.5858/2009-0350-RA.1. PMID 20807044.",
+                            "<info> ^ \"Acute Lymphoblastic Leukemia\". The Lecturio Medical Concept Library. Retrieved 11 August 2021.",
+                            "<info> ^ Litzow, Mark R.; Ferrando, Adolfo A. (2015-08-13). \"How I treat T-cell acute lymphoblastic leukemia in adults\". Blood. 126 (7): 833–841. doi:10.1182/blood-2014-10-551895. ISSN 0006-4971. PMID 25966987.",
+                            "<info> ^ Yodoi, J; Takatsuki, K; Masuda, T (1974). \"Letter: Two cases of T-cell chronic lymphocytic leukemia in Japan\". New England Journal of Medicine. 290 (10): 572–3. doi:10.1056/NEJM197403072901018. PMID 4544052.",
+                            "<info> ^ Uchiyama, T; Yodoi, J; Sagawa, K; Takatsuki, K; Uchino, H (1977). \"Adult T-cell leukemia: Clinical and hematologic features of 16 cases\". Blood. 50 (3): 481–92. doi:10.1182/blood.V50.3.481.481. PMID 301762.",
+                            "<info> ^ Yodoi, J; Maeda, M (2011). \"The discovery of ATL: an odyssey in restrospect\". International Journal of Hematology. 94 (5): 423–8. doi:10.1007/s12185-011-0957-x. PMID 22068231. S2CID 9299403.",
+                            "<info> ^ \"Facts 2020-2021\" (PDF)."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

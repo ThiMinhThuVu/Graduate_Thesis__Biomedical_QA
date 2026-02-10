@@ -1,0 +1,185 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/x-linked_recessive_inheritance": {
+                "title": "X-linked recessive inheritance",
+                "url": "https://en.wikipedia.org/wiki/x-linked_recessive_inheritance",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "X-linked recessive inheritance is a mode of inheritance in which a mutation in a gene on the X chromosome causes the phenotype to be always expressed in males (who are necessarily hemizygous for the gene mutation because they have one X and one Y chromosome) and in females who are homozygous for the gene mutation (see zygosity). Females with one copy of the mutated gene are carriers.",
+                    "X-linked inheritance means that the gene causing the trait or the disorder is located on the X chromosome. Females have two X chromosomes while males have one X and one Y chromosome. Expression of X-linked conditions in female carriers can vary greatly due to random X-chromosome inactivation (Lyonization) within each cell.[1] Differences in X-chromosome inactivation (known as skewed X-inactivation) occurs due to some cells  expressing one X allele and some the other.",
+                    "Decades of research has shown that the notions \"X-linked dominant\" and \"X-linked recessive\" oversimplify the situation and it has been recommended that the terms be dropped.[2]",
+                    "The number of sequenced X-linked genes, as of March 2016, was 651, and the total number of X-linked traits (including vaguely defined traits and traits that have not been connected to a sequenced gene) was 1184.[3]",
+                    "",
+                    "=== Patterns of inheritance ===",
+                    "In humans, inheritance of X-linked recessive traits follows a unique pattern made up of three points.",
+                    "<info> The first is that affected fathers cannot pass X-linked recessive traits to their sons because fathers give Y chromosomes to their sons. This means that males affected by an X-linked recessive disorder inherited the responsible X chromosome from their mothers.",
+                    "<info> Second, X-linked recessive traits are more commonly expressed in males than females.[4] This is due to the fact that males possess only a single X chromosome, and therefore require only one mutated X in order to be affected. Women possess two X chromosomes, and thus must receive two of the mutated recessive X chromosomes (one from each parent). A popular example showing this pattern of inheritance is that of the descendants of Queen Victoria and the blood disease hemophilia.[5]",
+                    "<info> The last pattern seen is that X-linked recessive traits tend to skip generations, meaning that an affected grandfather will not have an affected son, but could have an affected grandson through his daughter.[6] Explained further, all daughters of an affected man will obtain his mutated X, and will then be either carriers or affected themselves depending on the mother. The resulting sons will either have a 50% chance of being affected (mother is carrier), or 100% chance (mother is affected). It is because of these percentages that we see males more commonly affected than females.[citation needed]",
+                    "",
+                    "=== Objections to recessive/dominant terminology ===",
+                    "A few scholars have suggested discontinuing the use of the terms dominant and recessive when referring to X-linked inheritance.[2][7] The possession of two X chromosomes in females leads to dosage issues which are alleviated by X-inactivation.[8] Stating that the highly variable penetrance of X-linked traits in females as a result of mechanisms such as skewed X-inactivation or somatic mosaicism is difficult to reconcile with standard definitions of dominance and recessiveness, scholars have suggested referring to traits on the X chromosome simply as X-linked.[7]",
+                    "",
+                    "=== Examples ===",
+                    "The most common X-linked recessive disorders are:[9]",
+                    "<info> Red–green color blindness, also known as daltonism,[10] which affects roughly 7% to 10% of men and 0.49% to 1% of women. Its relative benignity may explain its commonness.",
+                    "<info> Hemophilia A, a blood clotting disorder caused by a mutation of the Factor VIII gene and leading to a deficiency of Factor VIII. It was once thought to be the \"royal disease\" found in the descendants of Queen Victoria. This is now known to have been Hemophilia B (see below).[11][12]",
+                    "<info> Hemophilia B, also known as Christmas disease,[13] a blood clotting disorder caused by a mutation of the Factor IX gene and leading to a deficiency of Factor IX. It is rarer than hemophilia A. As noted above, it was common among the descendants of Queen Victoria.",
+                    "<info> Duchenne muscular dystrophy, which is associated with mutations in the dystrophin gene. It is characterized by rapid progression of muscle degeneration, eventually leading to loss of skeletal muscle control, respiratory failure, and death.",
+                    "<info> Becker's muscular dystrophy, a milder form of Duchenne, which causes slowly progressive muscle weakness of the legs and pelvis.",
+                    "<info> X-linked ichthyosis, a form of ichthyosis caused by a hereditary deficiency of the steroid sulfatase (STS) enzyme. It is fairly rare, affecting one in 2,000 to one in 6,000 males.[14]",
+                    "<info> X-linked agammaglobulinemia (XLA), which affects the body's ability to fight infection. XLA patients do not generate mature B cells.[15] B cells are part of the immune system and normally manufacture antibodies (also called immunoglobulins) which defends the body from infections (the humoral response). Patients with untreated XLA are prone to develop serious and even fatal infections.[16]",
+                    "<info> Glucose-6-phosphate dehydrogenase deficiency, which causes nonimmune hemolytic anemia in response to a number of causes, most commonly infection or exposure to certain medications, chemicals, or foods. Commonly known as \"favism\", as it can be triggered by chemicals existing naturally in broad (or fava) beans.[17]",
+                    "Theoretically, a mutation in any of the genes on chromosome X may cause disease, but below are some notable ones, with short description of symptoms:",
+                    "<info> Adrenoleukodystrophy; leads to progressive brain damage, failure of the adrenal glands, and eventually death.",
+                    "<info> Alport syndrome; glomerulonephritis, endstage kidney disease, and hearing loss. A minority of Alport syndrome cases are due to an autosomal recessive mutation in the gene coding for type IV collagen.",
+                    "<info> Androgen insensitivity syndrome; variable degrees of undervirilization and/or infertility in XY persons of either sex",
+                    "<info> Barth syndrome; metabolism distortion, delayed motor skills, stamina deficiency, hypotonia, chronic fatigue, delayed growth, cardiomyopathy, and compromised immune system.",
+                    "<info> Blue cone monochromacy; low vision acuity, color blindness, photophobia, infantile nystagmus.",
+                    "<info> Centronuclear myopathy; where cell nuclei are abnormally located in skeletal muscle cells. In CNM the nuclei are located at a position in the center of the cell, instead of their normal location at the periphery.",
+                    "<info> Charcot–Marie–Tooth disease (CMTX2-3); disorder of nerves (neuropathy) that is characterized by loss of muscle tissue and touch sensation, predominantly in the feet and legs but also in the hands and arms in the advanced stages of disease.",
+                    "<info> Coffin–Lowry syndrome; severe intellectual disability sometimes associated with abnormalities of growth, cardiac abnormalities, and kyphoscoliosis as well as auditory and visual abnormalities.",
+                    "<info> Fabry disease; A lysosomal storage disease causing anhidrosis, fatigue, angiokeratomas, burning extremity pain, and ocular involvement.",
+                    "<info> Hunter syndrome; potentially causing hearing loss, thickening of the heart valves leading to a decline in cardiac function, obstructive airway disease, sleep apnea, and enlargement of the liver and spleen.",
+                    "<info> Hypohidrotic ectodermal dysplasia, presenting with hypohidrosis, hypotrichosis, and hypodontia",
+                    "<info> Kabuki syndrome (the KDM6A variant); multiple congenital anomalies and intellectual disability.",
+                    "<info> Lesch–Nyhan syndrome; neurologic dysfunction, cognitive and behavioral disturbances including self-mutilation, and uric acid overproduction (hyperuricemia)",
+                    "<info> Lowe syndrome; hydrophthalmia, cataracts, intellectual disabilities, aminoaciduria, reduced renal ammonia production, and vitamin D-resistant rickets",
+                    "<info> Menkes disease; sparse and coarse hair, growth failure, and deterioration of the nervous system",
+                    "<info> Nasodigitoacoustic syndrome; misshaped nose, brachydactyly of the distal phalanges, sensorineural deafness",
+                    "<info> Nonsyndromic deafness; hearing loss",
+                    "<info> Norrie disease; cataracts and leukocoria along with other developmental issues in the eye",
+                    "<info> Occipital horn syndrome; deformations in the skeleton",
+                    "<info> Ocular albinism; lack of pigmentation in the eye",
+                    "<info> Ornithine transcarbamylase deficiency; developmental delay and intellectual disability. Progressive liver damage, skin lesions, and brittle hair may also be seen",
+                    "<info> Oto-palato-digital syndrome; facial deformities, cleft palate, hearing loss",
+                    "<info> Siderius X-linked mental retardation syndrome; cleft lip and palate with intellectual disability and facial dysmorphism, caused by mutations in the histone demethylase PHF8",
+                    "<info> Simpson–Golabi–Behmel syndrome; coarse faces with protruding jaw and tongue, widened nasal bridge, and upturned nasal tip",
+                    "<info> Spinal and bulbar muscular atrophy (SBMA), also known as Kennedy's disease; muscle cramps and progressive weakness",
+                    "<info> Spinal muscular atrophy caused by UBE1 gene mutation; weakness due to loss of the motor neurons of the spinal cord and brainstem",
+                    "<info> Wiskott–Aldrich syndrome; eczema, thrombocytopenia, immune deficiency, and bloody diarrhea",
+                    "<info> X-linked severe combined immunodeficiency (SCID); infections, usually causing death in the first years of life",
+                    "<info> X-linked sideroblastic anemia; skin paleness, fatigue, dizziness, and enlarged spleen and liver.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Dobyns, William B. (April 2006). \"The pattern of inheritance of X-linked traits is not dominant or recessive, just X-linked\". Acta Paediatrica (Oslo, Norway: 1992). Supplement. 95 (451): 11–15. doi:10.1111/j.1651-2227.2006.tb02383.x. ISSN 0803-5326. PMID 16720459.",
+                    "<info> ^ a b Basava, Sanjana; Billington, Charles J.; Carrel, Laura; Biesecker, Leslie G.; Dobyns, William B. (July 2025). \"Patterns of X-linked inheritance: A new approach for the genome era\". Genetics in Medicine. 27 (7) 101384. doi:10.1016/j.gim.2025.101384. ISSN 1530-0366. PMID 39963886.",
+                    "<info> ^ \"OMIM X-linked Genes\". nih.gov. Archived from the original on 7 March 2016. Retrieved 3 May 2018.{{cite web}}:  CS1 maint: bot: original URL status unknown (link)",
+                    "<info> ^ \"Understanding Genetics: A New York, Mid-Atlantic Guide for Patients and Health Professionals\". National Center for Biotechnology Information. 8 July 2009. Retrieved 9 June 2020.",
+                    "<info> ^ \"History of Bleeding Disorders\". National Hemophilia Foundation. 2014-03-04. Retrieved 2020-06-09.",
+                    "<info> ^ Pierce, Benjamin A. (2020). Genetics: A Conceptual Approach. Macmillan Learning. pp. 154–155. ISBN 978-1-319-29714-5.",
+                    "<info> ^ a b Dobyns, William B.; Filauro, Allison; Tomson, Brett N.; Chan, April S.; Ho, Allen W.; Ting, Nicholas T.; Oosterwijk, Jan C.; Ober, Carole (2004). \"Inheritance of most X-linked traits is not dominant or recessive, just X-linked\". American Journal of Medical Genetics. 129A (2): 136–43. doi:10.1002/ajmg.a.30123. PMID 15316978. S2CID 42108591.",
+                    "<info> ^ Shvetsova, Ekaterina; Sofronova, Alina; Monajemi, Ramin; Gagalova, Kristina; Draisma, Harmen H. M.; White, Stefan J.; Santen, Gijs W. E.; Chuva de Sousa Lopes, Susana M.; Heijmans, Bastiaan T.; van Meurs, Joyce; Jansen, Rick (March 2019). \"Skewed X-inactivation is common in the general female population\". European Journal of Human Genetics. 27 (3): 455–465. doi:10.1038/s41431-018-0291-3. ISSN 1476-5438. PMC 6460563. PMID 30552425.",
+                    "<info> ^ GP Notebook - X-linked recessive disorders Archived 2011-06-13 at the Wayback Machine Retrieved on 5 Mars, 2009",
+                    "<info> ^ \"OMIM Color Blindness, Deutan Series; CBD\". nih.gov. Archived from the original on 29 September 2009. Retrieved 3 May 2018.",
+                    "<info> ^ Michael Price (8 October 2009). \"Case Closed: Famous Royals Suffered From Hemophilia\". ScienceNOW Daily News. AAAS. Archived from the original on 20 October 2013. Retrieved 9 October 2009.",
+                    "<info> ^ Rogaev, Evgeny I.; Grigorenko, Anastasia P.; Faskhutdinova, Gulnaz; Kittler, Ellen L. W.; Moliaka, Yuri K. (2009). \"Genotype Analysis Identifies the Cause of the 'Royal Disease'\". Science. 326 (5954): 817. Bibcode:2009Sci...326..817R. doi:10.1126/science.1180660. PMID 19815722. S2CID 206522975.",
+                    "<info> ^ \"Hemophilia B\". Archived 2007-12-01 at the Wayback Machine National Hemophilia Foundation.",
+                    "<info> ^ Carlo Gelmetti; Caputo, Ruggero (2002). Pediatric Dermatology and Dermatopathology: A Concise Atlas. T&F STM. p. 160. ISBN 1-84184-120-X.",
+                    "<info> ^ \"X-linked Agammaglobulinemia: Immunodeficiency Disorders: Merck Manual Professional\". Archived from the original on 2008-02-18. Retrieved 2008-03-01.",
+                    "<info> ^ \"Diseases Treated at St. Jude\". stjude.org. Archived from the original on 15 August 2007. Retrieved 3 May 2018.",
+                    "<info> ^ \"Favism - Doctor\". patient.info. Archived from the original on 21 November 2017. Retrieved 3 May 2018.",
+                    "",
+                    "=== External links ===",
+                    "<info> X-linked diseases from the Wellcome Trust",
+                    "<info> Sex-linked recessive: MedlinePlus Medical Encyclopedia",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "X-linked recessive inheritance is a mode of inheritance in which a mutation in a gene on the X chromosome causes the phenotype to be always expressed in males (who are necessarily hemizygous for the gene mutation because they have one X and one Y chromosome) and in females who are homozygous for the gene mutation (see zygosity). Females with one copy of the mutated gene are carriers.",
+                            "X-linked inheritance means that the gene causing the trait or the disorder is located on the X chromosome. Females have two X chromosomes while males have one X and one Y chromosome. Expression of X-linked conditions in female carriers can vary greatly due to random X-chromosome inactivation (Lyonization) within each cell.[1] Differences in X-chromosome inactivation (known as skewed X-inactivation) occurs due to some cells  expressing one X allele and some the other.",
+                            "Decades of research has shown that the notions \"X-linked dominant\" and \"X-linked recessive\" oversimplify the situation and it has been recommended that the terms be dropped.[2]",
+                            "The number of sequenced X-linked genes, as of March 2016, was 651, and the total number of X-linked traits (including vaguely defined traits and traits that have not been connected to a sequenced gene) was 1184.[3]"
+                        ]
+                    },
+                    "Patterns of inheritance": {
+                        "content": [
+                            "In humans, inheritance of X-linked recessive traits follows a unique pattern made up of three points.",
+                            "<info> The first is that affected fathers cannot pass X-linked recessive traits to their sons because fathers give Y chromosomes to their sons. This means that males affected by an X-linked recessive disorder inherited the responsible X chromosome from their mothers.",
+                            "<info> Second, X-linked recessive traits are more commonly expressed in males than females.[4] This is due to the fact that males possess only a single X chromosome, and therefore require only one mutated X in order to be affected. Women possess two X chromosomes, and thus must receive two of the mutated recessive X chromosomes (one from each parent). A popular example showing this pattern of inheritance is that of the descendants of Queen Victoria and the blood disease hemophilia.[5]",
+                            "<info> The last pattern seen is that X-linked recessive traits tend to skip generations, meaning that an affected grandfather will not have an affected son, but could have an affected grandson through his daughter.[6] Explained further, all daughters of an affected man will obtain his mutated X, and will then be either carriers or affected themselves depending on the mother. The resulting sons will either have a 50% chance of being affected (mother is carrier), or 100% chance (mother is affected). It is because of these percentages that we see males more commonly affected than females.[citation needed]"
+                        ]
+                    },
+                    "Objections to recessive/dominant terminology": {
+                        "content": [
+                            "A few scholars have suggested discontinuing the use of the terms dominant and recessive when referring to X-linked inheritance.[2][7] The possession of two X chromosomes in females leads to dosage issues which are alleviated by X-inactivation.[8] Stating that the highly variable penetrance of X-linked traits in females as a result of mechanisms such as skewed X-inactivation or somatic mosaicism is difficult to reconcile with standard definitions of dominance and recessiveness, scholars have suggested referring to traits on the X chromosome simply as X-linked.[7]"
+                        ]
+                    },
+                    "Examples": {
+                        "content": [
+                            "The most common X-linked recessive disorders are:[9]",
+                            "<info> Red–green color blindness, also known as daltonism,[10] which affects roughly 7% to 10% of men and 0.49% to 1% of women. Its relative benignity may explain its commonness.",
+                            "<info> Hemophilia A, a blood clotting disorder caused by a mutation of the Factor VIII gene and leading to a deficiency of Factor VIII. It was once thought to be the \"royal disease\" found in the descendants of Queen Victoria. This is now known to have been Hemophilia B (see below).[11][12]",
+                            "<info> Hemophilia B, also known as Christmas disease,[13] a blood clotting disorder caused by a mutation of the Factor IX gene and leading to a deficiency of Factor IX. It is rarer than hemophilia A. As noted above, it was common among the descendants of Queen Victoria.",
+                            "<info> Duchenne muscular dystrophy, which is associated with mutations in the dystrophin gene. It is characterized by rapid progression of muscle degeneration, eventually leading to loss of skeletal muscle control, respiratory failure, and death.",
+                            "<info> Becker's muscular dystrophy, a milder form of Duchenne, which causes slowly progressive muscle weakness of the legs and pelvis.",
+                            "<info> X-linked ichthyosis, a form of ichthyosis caused by a hereditary deficiency of the steroid sulfatase (STS) enzyme. It is fairly rare, affecting one in 2,000 to one in 6,000 males.[14]",
+                            "<info> X-linked agammaglobulinemia (XLA), which affects the body's ability to fight infection. XLA patients do not generate mature B cells.[15] B cells are part of the immune system and normally manufacture antibodies (also called immunoglobulins) which defends the body from infections (the humoral response). Patients with untreated XLA are prone to develop serious and even fatal infections.[16]",
+                            "<info> Glucose-6-phosphate dehydrogenase deficiency, which causes nonimmune hemolytic anemia in response to a number of causes, most commonly infection or exposure to certain medications, chemicals, or foods. Commonly known as \"favism\", as it can be triggered by chemicals existing naturally in broad (or fava) beans.[17]",
+                            "Theoretically, a mutation in any of the genes on chromosome X may cause disease, but below are some notable ones, with short description of symptoms:",
+                            "<info> Adrenoleukodystrophy; leads to progressive brain damage, failure of the adrenal glands, and eventually death.",
+                            "<info> Alport syndrome; glomerulonephritis, endstage kidney disease, and hearing loss. A minority of Alport syndrome cases are due to an autosomal recessive mutation in the gene coding for type IV collagen.",
+                            "<info> Androgen insensitivity syndrome; variable degrees of undervirilization and/or infertility in XY persons of either sex",
+                            "<info> Barth syndrome; metabolism distortion, delayed motor skills, stamina deficiency, hypotonia, chronic fatigue, delayed growth, cardiomyopathy, and compromised immune system.",
+                            "<info> Blue cone monochromacy; low vision acuity, color blindness, photophobia, infantile nystagmus.",
+                            "<info> Centronuclear myopathy; where cell nuclei are abnormally located in skeletal muscle cells. In CNM the nuclei are located at a position in the center of the cell, instead of their normal location at the periphery.",
+                            "<info> Charcot–Marie–Tooth disease (CMTX2-3); disorder of nerves (neuropathy) that is characterized by loss of muscle tissue and touch sensation, predominantly in the feet and legs but also in the hands and arms in the advanced stages of disease.",
+                            "<info> Coffin–Lowry syndrome; severe intellectual disability sometimes associated with abnormalities of growth, cardiac abnormalities, and kyphoscoliosis as well as auditory and visual abnormalities.",
+                            "<info> Fabry disease; A lysosomal storage disease causing anhidrosis, fatigue, angiokeratomas, burning extremity pain, and ocular involvement.",
+                            "<info> Hunter syndrome; potentially causing hearing loss, thickening of the heart valves leading to a decline in cardiac function, obstructive airway disease, sleep apnea, and enlargement of the liver and spleen.",
+                            "<info> Hypohidrotic ectodermal dysplasia, presenting with hypohidrosis, hypotrichosis, and hypodontia",
+                            "<info> Kabuki syndrome (the KDM6A variant); multiple congenital anomalies and intellectual disability.",
+                            "<info> Lesch–Nyhan syndrome; neurologic dysfunction, cognitive and behavioral disturbances including self-mutilation, and uric acid overproduction (hyperuricemia)",
+                            "<info> Lowe syndrome; hydrophthalmia, cataracts, intellectual disabilities, aminoaciduria, reduced renal ammonia production, and vitamin D-resistant rickets",
+                            "<info> Menkes disease; sparse and coarse hair, growth failure, and deterioration of the nervous system",
+                            "<info> Nasodigitoacoustic syndrome; misshaped nose, brachydactyly of the distal phalanges, sensorineural deafness",
+                            "<info> Nonsyndromic deafness; hearing loss",
+                            "<info> Norrie disease; cataracts and leukocoria along with other developmental issues in the eye",
+                            "<info> Occipital horn syndrome; deformations in the skeleton",
+                            "<info> Ocular albinism; lack of pigmentation in the eye",
+                            "<info> Ornithine transcarbamylase deficiency; developmental delay and intellectual disability. Progressive liver damage, skin lesions, and brittle hair may also be seen",
+                            "<info> Oto-palato-digital syndrome; facial deformities, cleft palate, hearing loss",
+                            "<info> Siderius X-linked mental retardation syndrome; cleft lip and palate with intellectual disability and facial dysmorphism, caused by mutations in the histone demethylase PHF8",
+                            "<info> Simpson–Golabi–Behmel syndrome; coarse faces with protruding jaw and tongue, widened nasal bridge, and upturned nasal tip",
+                            "<info> Spinal and bulbar muscular atrophy (SBMA), also known as Kennedy's disease; muscle cramps and progressive weakness",
+                            "<info> Spinal muscular atrophy caused by UBE1 gene mutation; weakness due to loss of the motor neurons of the spinal cord and brainstem",
+                            "<info> Wiskott–Aldrich syndrome; eczema, thrombocytopenia, immune deficiency, and bloody diarrhea",
+                            "<info> X-linked severe combined immunodeficiency (SCID); infections, usually causing death in the first years of life",
+                            "<info> X-linked sideroblastic anemia; skin paleness, fatigue, dizziness, and enlarged spleen and liver."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Dobyns, William B. (April 2006). \"The pattern of inheritance of X-linked traits is not dominant or recessive, just X-linked\". Acta Paediatrica (Oslo, Norway: 1992). Supplement. 95 (451): 11–15. doi:10.1111/j.1651-2227.2006.tb02383.x. ISSN 0803-5326. PMID 16720459.",
+                            "<info> ^ a b Basava, Sanjana; Billington, Charles J.; Carrel, Laura; Biesecker, Leslie G.; Dobyns, William B. (July 2025). \"Patterns of X-linked inheritance: A new approach for the genome era\". Genetics in Medicine. 27 (7) 101384. doi:10.1016/j.gim.2025.101384. ISSN 1530-0366. PMID 39963886.",
+                            "<info> ^ \"OMIM X-linked Genes\". nih.gov. Archived from the original on 7 March 2016. Retrieved 3 May 2018.{{cite web}}:  CS1 maint: bot: original URL status unknown (link)",
+                            "<info> ^ \"Understanding Genetics: A New York, Mid-Atlantic Guide for Patients and Health Professionals\". National Center for Biotechnology Information. 8 July 2009. Retrieved 9 June 2020.",
+                            "<info> ^ \"History of Bleeding Disorders\". National Hemophilia Foundation. 2014-03-04. Retrieved 2020-06-09.",
+                            "<info> ^ Pierce, Benjamin A. (2020). Genetics: A Conceptual Approach. Macmillan Learning. pp. 154–155. ISBN 978-1-319-29714-5.",
+                            "<info> ^ a b Dobyns, William B.; Filauro, Allison; Tomson, Brett N.; Chan, April S.; Ho, Allen W.; Ting, Nicholas T.; Oosterwijk, Jan C.; Ober, Carole (2004). \"Inheritance of most X-linked traits is not dominant or recessive, just X-linked\". American Journal of Medical Genetics. 129A (2): 136–43. doi:10.1002/ajmg.a.30123. PMID 15316978. S2CID 42108591.",
+                            "<info> ^ Shvetsova, Ekaterina; Sofronova, Alina; Monajemi, Ramin; Gagalova, Kristina; Draisma, Harmen H. M.; White, Stefan J.; Santen, Gijs W. E.; Chuva de Sousa Lopes, Susana M.; Heijmans, Bastiaan T.; van Meurs, Joyce; Jansen, Rick (March 2019). \"Skewed X-inactivation is common in the general female population\". European Journal of Human Genetics. 27 (3): 455–465. doi:10.1038/s41431-018-0291-3. ISSN 1476-5438. PMC 6460563. PMID 30552425.",
+                            "<info> ^ GP Notebook - X-linked recessive disorders Archived 2011-06-13 at the Wayback Machine Retrieved on 5 Mars, 2009",
+                            "<info> ^ \"OMIM Color Blindness, Deutan Series; CBD\". nih.gov. Archived from the original on 29 September 2009. Retrieved 3 May 2018.",
+                            "<info> ^ Michael Price (8 October 2009). \"Case Closed: Famous Royals Suffered From Hemophilia\". ScienceNOW Daily News. AAAS. Archived from the original on 20 October 2013. Retrieved 9 October 2009.",
+                            "<info> ^ Rogaev, Evgeny I.; Grigorenko, Anastasia P.; Faskhutdinova, Gulnaz; Kittler, Ellen L. W.; Moliaka, Yuri K. (2009). \"Genotype Analysis Identifies the Cause of the 'Royal Disease'\". Science. 326 (5954): 817. Bibcode:2009Sci...326..817R. doi:10.1126/science.1180660. PMID 19815722. S2CID 206522975.",
+                            "<info> ^ \"Hemophilia B\". Archived 2007-12-01 at the Wayback Machine National Hemophilia Foundation.",
+                            "<info> ^ Carlo Gelmetti; Caputo, Ruggero (2002). Pediatric Dermatology and Dermatopathology: A Concise Atlas. T&F STM. p. 160. ISBN 1-84184-120-X.",
+                            "<info> ^ \"X-linked Agammaglobulinemia: Immunodeficiency Disorders: Merck Manual Professional\". Archived from the original on 2008-02-18. Retrieved 2008-03-01.",
+                            "<info> ^ \"Diseases Treated at St. Jude\". stjude.org. Archived from the original on 15 August 2007. Retrieved 3 May 2018.",
+                            "<info> ^ \"Favism - Doctor\". patient.info. Archived from the original on 21 November 2017. Retrieved 3 May 2018."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> X-linked diseases from the Wellcome Trust",
+                            "<info> Sex-linked recessive: MedlinePlus Medical Encyclopedia"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

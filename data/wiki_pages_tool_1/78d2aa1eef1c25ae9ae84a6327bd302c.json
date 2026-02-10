@@ -1,0 +1,71 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/swelling_capacity": {
+                "title": "Swelling capacity",
+                "url": "https://en.wikipedia.org/wiki/swelling_capacity",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The swelling capacity of a polymer is the amount of a liquid that can be absorbed by it. This test can done by two methods:",
+                    "<info> Tea bag test method[2]",
+                    "",
+                    "=== Beaker test method ===",
+                    "<info> A small amount of superabsorbent polymer material is taken (0.1g) and it is placed in the beaker.",
+                    "<info> 100 ml of deionized water is poured into the beaker.",
+                    "<info> After 20 min the swollen polymer was separated by using filter paper",
+                    "<info> By weighing the polymer, one can find the swollen capacity of the SAP material.[3]",
+                    "",
+                    "=== Tea bag test method ===",
+                    "<info> In this method, 0.1 g of SAP material is placed into a permeable bag, which is suspended over excess water in a beaker.",
+                    "<info> Wait 20 min. and weigh the bag and then calculate the percentage of swelling through the following formula:\n(w2-w1)/(w1)  %\nw1= weight of the polymer (Before swelling)\nw2= weight of the polymer (After swelling)",
+                    "<info> Note: Filter paper only for removing water.",
+                    "",
+                    "=== Schroeder's paradox ===",
+                    "Some polymers exhibit larger experimentally measured swelling capacity when immersed in pure liquid compared to testing with saturated vapor. This phenomenon is known as the Schroeder's paradox.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Anandan, Dhivyaa; Madhumathi, G.; Nambiraj, N. Arunai; Jaiswal, Amit K. (June 15, 2019). \"Gum based 3D composite scaffolds for bone tissue engineering applications\". Carbohydrate Polymers. 214: 62–70. doi:10.1016/j.carbpol.2019.03.020. ISSN 0144-8617. PMID 30926008. S2CID 88481556.",
+                    "<info> ^ Zhong, Peihua; Wang, Jun; Wang, Xiaoxian; Liu, Jiaping; Li, Zhen; Zhou, Yichuan (2020). \"Comparison of Different Approaches for Testing Sorption by a Superabsorbent Polymer to Be Used in Cement-Based Materials\". Materials. 13 (21): 5015. Bibcode:2020Mate...13.5015Z. doi:10.3390/ma13215015. ISSN 1996-1944. PMC 7664450. PMID 33172166.",
+                    "<info> ^ Yang, Zijiang; Arakawa, Hisayuki (2023). \"A beaker method for determination of microplastic concentration by micro-Raman spectroscopy\". MethodsX. 11. doi:10.1016/j.mex.2023.102251. PMC 10336159. PMID 37448948.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The swelling capacity of a polymer is the amount of a liquid that can be absorbed by it. This test can done by two methods:",
+                            "<info> Tea bag test method[2]"
+                        ]
+                    },
+                    "Beaker test method": {
+                        "content": [
+                            "<info> A small amount of superabsorbent polymer material is taken (0.1g) and it is placed in the beaker.",
+                            "<info> 100 ml of deionized water is poured into the beaker.",
+                            "<info> After 20 min the swollen polymer was separated by using filter paper",
+                            "<info> By weighing the polymer, one can find the swollen capacity of the SAP material.[3]"
+                        ]
+                    },
+                    "Tea bag test method": {
+                        "content": [
+                            "<info> In this method, 0.1 g of SAP material is placed into a permeable bag, which is suspended over excess water in a beaker.",
+                            "<info> Wait 20 min. and weigh the bag and then calculate the percentage of swelling through the following formula:\n(w2-w1)/(w1)  %\nw1= weight of the polymer (Before swelling)\nw2= weight of the polymer (After swelling)",
+                            "<info> Note: Filter paper only for removing water."
+                        ]
+                    },
+                    "Schroeder's paradox": {
+                        "content": [
+                            "Some polymers exhibit larger experimentally measured swelling capacity when immersed in pure liquid compared to testing with saturated vapor. This phenomenon is known as the Schroeder's paradox."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Anandan, Dhivyaa; Madhumathi, G.; Nambiraj, N. Arunai; Jaiswal, Amit K. (June 15, 2019). \"Gum based 3D composite scaffolds for bone tissue engineering applications\". Carbohydrate Polymers. 214: 62–70. doi:10.1016/j.carbpol.2019.03.020. ISSN 0144-8617. PMID 30926008. S2CID 88481556.",
+                            "<info> ^ Zhong, Peihua; Wang, Jun; Wang, Xiaoxian; Liu, Jiaping; Li, Zhen; Zhou, Yichuan (2020). \"Comparison of Different Approaches for Testing Sorption by a Superabsorbent Polymer to Be Used in Cement-Based Materials\". Materials. 13 (21): 5015. Bibcode:2020Mate...13.5015Z. doi:10.3390/ma13215015. ISSN 1996-1944. PMC 7664450. PMID 33172166.",
+                            "<info> ^ Yang, Zijiang; Arakawa, Hisayuki (2023). \"A beaker method for determination of microplastic concentration by micro-Raman spectroscopy\". MethodsX. 11. doi:10.1016/j.mex.2023.102251. PMC 10336159. PMID 37448948."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

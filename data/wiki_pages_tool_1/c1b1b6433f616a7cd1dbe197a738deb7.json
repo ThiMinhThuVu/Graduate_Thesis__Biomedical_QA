@@ -1,0 +1,121 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/hoogsteen_base_pair": {
+                "title": "Hoogsteen base pair",
+                "url": "https://en.wikipedia.org/wiki/hoogsteen_base_pair",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A Hoogsteen base pair is a variation of base-pairing in nucleic acids such as the A•T pair. In this manner, two nucleobases, one on each strand, can be held together by hydrogen bonds in the major groove. Specifically, it happens when a pyrimidine base (C/T) uses its Watson–Crick (anti, N3–C4) face to bind the syn (N6–N7) face of a purine (A/G).",
+                    "Adenine, which is not a pyrimidine, is capable of using its anti (N1–N6) face to pair with the syn face of a purine to form a Hoogsteen-like base pair.[2] Guanine can form a similar interaction with another purine base, forming a rigid cycle called a guanine tetrad in the case of four guanines. These are also \"Hoogsteen base pairs\" under the expanded understanding as anti-syn interaction.[3]",
+                    "A reverse Hoogsteen base pair is when a pyrimidine's syn (N3–C2) face binds a purine's syn face.[4] Under a systemic view of non-canonical base pairing, Hoogsteen base pairs (in the expanded sense) are called Watson-Crick/Hoogsteen, based on what faces are interacting (the syn face is called the Hoogsteen face). The reverse Hoogsteen base pair is called \"Hoogsteen/Hoogsteen\".[5]",
+                    "",
+                    "=== Notation ===",
+                    "This article employs the \"•\" character in describing any noncovalent interaction, which can include Hoogsteen, reverse Hoogsteen, and Watson-Crick base pairs, in line with IUPAC's 1970 recommendation.[6]: N3.4.2",
+                    "According to the IUPAC, \"-\" is not acceptable because it implies covalent linkage and neither are \":\" and \"/\" because they can be mistaken as ratios. Not using any symbol is also unacceptable because it can be confused with a (covalent) polymer sequence.[6]: N3.4.2",
+                    "IUPAC makes no specific recommendation for differentiating types of noncovalent bonds. When it is necessary to differentiate, this article uses \"*\" for the Hoogsteen pair, \"□\" for the Watson-Crick pair, and \"△\" for the reverse Hoogsteen pair. The typical Hogsteen pairs are A*T and G*C+ (note the charge on cytidine, indicating protonation).",
+                    "",
+                    "=== History ===",
+                    "Ten years after James Watson and Francis Crick published their model of the DNA double helix,[7] Karst Hoogsteen reported[8] a crystal structure of a complex in which analogues of A and T formed a base pair that had a different geometry from that described by Watson and Crick. Similarly, an alternative base-pairing geometry can occur for G•C pairs. Hoogsteen pointed out that if the alternative hydrogen-bonding patterns were present in DNA, then the double helix would have to assume a quite different shape. Hoogsteen base pairs are observed in alternative structures such as the four-stranded G-quadruplex structures that form in DNA and RNA.",
+                    "",
+                    "=== Chemical properties ===",
+                    "Hoogsteen pairs have quite different properties from Watson–Crick base pairs. The angle between the two glycosidic bonds (ca. 80° in the A*T pair) is larger and the C1′–C1′ distance (ca. 860 pm or 8.6 Å) is smaller than in the regular geometry. In some cases, called reversed Hoogsteen base pairs, one base is rotated 180° with respect to the other.",
+                    "In some DNA sequences, especially CA and TA dinucleotides, Hoogsteen base pairs exist as transient entities that are present in thermal equilibrium with standard Watson–Crick base pairs. The detection of the transient species required the use of NMR relaxation dispersion spectroscopy applied to macromolecules.[1]",
+                    "Hoogsteen base pairs have been observed in protein–DNA complexes.[9] Some proteins have evolved to recognize only one base-pair type, and use intermolecular interactions to shift the equilibrium between the two geometries.",
+                    "DNA has many features that allow its sequence-specific recognition by proteins. This recognition was originally thought to primarily involve specific hydrogen-bonding interactions between amino-acid side chains and bases. But it soon became clear that there was no identifiable one-to-one correspondence — that is, there was no simple code to be read. Part of the problem is that DNA can undergo conformational changes that distort the classical double helix. The resulting variations alter the presentation of DNA bases to proteins molecules and thus affect the recognition mechanism.",
+                    "As distortions in the double helix are themselves are dependent on base sequence, proteins are able to recognize DNA in a manner similar to the way that they recognize other proteins and small ligand molecules, i.e. via geometric shape (instead of the specific sequence). For example, stretches of A and T bases can lead to narrowing the minor groove of DNA (the narrower of the two grooves in the double helix), resulting in enhanced local negative electrostatic potentials which in turn creates binding sites for positively charged arginine amino-acid residues on the protein.",
+                    "",
+                    "=== Triplex structures ===",
+                    "This non-Watson–Crick base-pairing allows the third strands to wind around the duplexes, which are assembled in the Watson–Crick pattern, and form triple-stranded helices such as (poly(dA)•2poly(dT) = poly(dT)*poly(dA)□poly(dT)) and (poly(rG)•2poly(rC) = poly(rC)*poly(rG)□poly(rC)).[10]",
+                    "The reverse Hogsteen pair can be seen in three-dimensional structures of transfer RNA, as T54△A58 and U8△A14.[11][12]",
+                    "",
+                    "=== Quadruplex structures ===",
+                    "As mentioned before, four guanine bases can form a rigid cycle called a guanine tetrad.  This allows formation of secondary structures of G-rich single stranded DNA and RNA called G-quadruplexes (G4-DNA and G4-RNA). Evidence exists for both in vitro and in vivo formation of G4s. Genomic G4s have been suggested to regulate gene transcription and at the RNA level inhibit protein synthesis through steric inhibition of ribosome function. It needs four triplets of G, separated by short spacers. This permits assembly of planar quartets which are composed of stacked associations of Hoogsteen bonded guanine molecules.[3]",
+                    "",
+                    "=== See also ===",
+                    "<info> Nucleic acid tertiary structure",
+                    "<info> Polypurine reverse-Hoogsteen hairpins (PPRHs), oligonucleotides that can bind either DNA or RNA and decrease gene expression.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Evgenia N. Nikolova; Eunae Kim; Abigail A. Wise; Patrick J. O'Brien; Ioan Andricioaei; Hashim M. Al-Hashimi (2011). \"Transient Hoogsteen base pairs in canonical duplex DNA\". Nature. 470 (7335): 498–502. Bibcode:2011Natur.470..498N. doi:10.1038/nature09775. PMC 3074620. PMID 21270796.",
+                    "<info> ^ Pan, B; Mitra, SN; Sundaralingam, M (2 March 1999). \"Crystal structure of an RNA 16-mer duplex R(GCAGAGUUAAAUCUGC)2 with nonadjacent G(syn).A+(anti) mispairs\". Biochemistry. 38 (9): 2826–31. doi:10.1021/bi982122y. PMID 10052954.",
+                    "<info> ^ a b Johnson JE, Smith JS, Kozak ML, Johnson FB (August 2008). \"In vivo veritas: using yeast to probe the biological functions of G-quadruplexes\". Biochimie. 90 (8): 1250–63. doi:10.1016/j.biochi.2008.02.013. PMC 2585026. PMID 18331848.",
+                    "<info> ^ \"Hoogsteen and reverse Hoogsteen base pairs\". X3DNA-DSSR: a resource for structural bioinformatics of nucleic acids.",
+                    "<info> ^ Halder S, Bhattacharyya D (November 2013). \"RNA structure and dynamics: a base pairing perspective\". Progress in Biophysics and Molecular Biology. 113 (2): 264–83. doi:10.1016/j.pbiomolbio.2013.07.003. PMID 23891726.",
+                    "<info> ^ a b IUPAC-IUB Commission on Biochemical Nomenclature (1970). \"Abbreviations and symbols for nucleic acids, polynucleotides, and their constituents\". Biochemistry. 9 (20): 4022–4027. doi:10.1021/bi00822a023.",
+                    "<info> ^ Watson JD, Crick FH (1953). \"Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid\". Nature. 171 (4356): 737–738. Bibcode:1953Natur.171..737W. doi:10.1038/171737a0. PMID 13054692. S2CID 4253007.",
+                    "<info> ^ Hoogsteen K (1963). \"The crystal and molecular structure of a hydrogen-bonded complex between 1-methylthymine and 9-methyladenine\". Acta Crystallographica. 16 (9): 907–916. doi:10.1107/S0365110X63002437.",
+                    "<info> ^ Aishima J, Gitti RK, Noah JE, Gan HH, Schlick T, Wolberger C (December 2002). \"A Hoogsteen base pair embedded in undistorted B-DNA\". Nucleic Acids Res. 30 (23): 5244–52. doi:10.1093/nar/gkf661. PMC 137974. PMID 12466549.",
+                    "<info> ^ Kim SK, Takahashi M, Nordén B (October 1995). \"Binding of RecA to anti-parallel poly(dA).2poly(dT) triple helix DNA\". Biochim Biophys Acta. 1264 (1): 129–33. doi:10.1016/0167-4781(95)00137-6. PMID 7578246.",
+                    "<info> ^ Zagryadskaya EI, Doyon FR, Steinberg SV (July 2003). \"Importance of the reverse Hoogsteen base pair 54-58 for tRNA function\". Nucleic Acids Res. 31 (14): 3946–53. doi:10.1093/nar/gkg448. PMC 165963. PMID 12853610.",
+                    "<info> ^ Westhof E, Auffinger P (2005-09-09). \"Transfer RNA Structure\" (PDF). Encyclopedia of life sciences. Nature Pub. Group. ISBN 9780470015902. Archived from the original (PDF) on 2016-10-19. Retrieved 28 March 2019.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A Hoogsteen base pair is a variation of base-pairing in nucleic acids such as the A•T pair. In this manner, two nucleobases, one on each strand, can be held together by hydrogen bonds in the major groove. Specifically, it happens when a pyrimidine base (C/T) uses its Watson–Crick (anti, N3–C4) face to bind the syn (N6–N7) face of a purine (A/G).",
+                            "Adenine, which is not a pyrimidine, is capable of using its anti (N1–N6) face to pair with the syn face of a purine to form a Hoogsteen-like base pair.[2] Guanine can form a similar interaction with another purine base, forming a rigid cycle called a guanine tetrad in the case of four guanines. These are also \"Hoogsteen base pairs\" under the expanded understanding as anti-syn interaction.[3]",
+                            "A reverse Hoogsteen base pair is when a pyrimidine's syn (N3–C2) face binds a purine's syn face.[4] Under a systemic view of non-canonical base pairing, Hoogsteen base pairs (in the expanded sense) are called Watson-Crick/Hoogsteen, based on what faces are interacting (the syn face is called the Hoogsteen face). The reverse Hoogsteen base pair is called \"Hoogsteen/Hoogsteen\".[5]"
+                        ]
+                    },
+                    "Notation": {
+                        "content": [
+                            "This article employs the \"•\" character in describing any noncovalent interaction, which can include Hoogsteen, reverse Hoogsteen, and Watson-Crick base pairs, in line with IUPAC's 1970 recommendation.[6]: N3.4.2",
+                            "According to the IUPAC, \"-\" is not acceptable because it implies covalent linkage and neither are \":\" and \"/\" because they can be mistaken as ratios. Not using any symbol is also unacceptable because it can be confused with a (covalent) polymer sequence.[6]: N3.4.2",
+                            "IUPAC makes no specific recommendation for differentiating types of noncovalent bonds. When it is necessary to differentiate, this article uses \"*\" for the Hoogsteen pair, \"□\" for the Watson-Crick pair, and \"△\" for the reverse Hoogsteen pair. The typical Hogsteen pairs are A*T and G*C+ (note the charge on cytidine, indicating protonation)."
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "Ten years after James Watson and Francis Crick published their model of the DNA double helix,[7] Karst Hoogsteen reported[8] a crystal structure of a complex in which analogues of A and T formed a base pair that had a different geometry from that described by Watson and Crick. Similarly, an alternative base-pairing geometry can occur for G•C pairs. Hoogsteen pointed out that if the alternative hydrogen-bonding patterns were present in DNA, then the double helix would have to assume a quite different shape. Hoogsteen base pairs are observed in alternative structures such as the four-stranded G-quadruplex structures that form in DNA and RNA."
+                        ]
+                    },
+                    "Chemical properties": {
+                        "content": [
+                            "Hoogsteen pairs have quite different properties from Watson–Crick base pairs. The angle between the two glycosidic bonds (ca. 80° in the A*T pair) is larger and the C1′–C1′ distance (ca. 860 pm or 8.6 Å) is smaller than in the regular geometry. In some cases, called reversed Hoogsteen base pairs, one base is rotated 180° with respect to the other.",
+                            "In some DNA sequences, especially CA and TA dinucleotides, Hoogsteen base pairs exist as transient entities that are present in thermal equilibrium with standard Watson–Crick base pairs. The detection of the transient species required the use of NMR relaxation dispersion spectroscopy applied to macromolecules.[1]",
+                            "Hoogsteen base pairs have been observed in protein–DNA complexes.[9] Some proteins have evolved to recognize only one base-pair type, and use intermolecular interactions to shift the equilibrium between the two geometries.",
+                            "DNA has many features that allow its sequence-specific recognition by proteins. This recognition was originally thought to primarily involve specific hydrogen-bonding interactions between amino-acid side chains and bases. But it soon became clear that there was no identifiable one-to-one correspondence — that is, there was no simple code to be read. Part of the problem is that DNA can undergo conformational changes that distort the classical double helix. The resulting variations alter the presentation of DNA bases to proteins molecules and thus affect the recognition mechanism.",
+                            "As distortions in the double helix are themselves are dependent on base sequence, proteins are able to recognize DNA in a manner similar to the way that they recognize other proteins and small ligand molecules, i.e. via geometric shape (instead of the specific sequence). For example, stretches of A and T bases can lead to narrowing the minor groove of DNA (the narrower of the two grooves in the double helix), resulting in enhanced local negative electrostatic potentials which in turn creates binding sites for positively charged arginine amino-acid residues on the protein."
+                        ]
+                    },
+                    "Triplex structures": {
+                        "content": [
+                            "This non-Watson–Crick base-pairing allows the third strands to wind around the duplexes, which are assembled in the Watson–Crick pattern, and form triple-stranded helices such as (poly(dA)•2poly(dT) = poly(dT)*poly(dA)□poly(dT)) and (poly(rG)•2poly(rC) = poly(rC)*poly(rG)□poly(rC)).[10]",
+                            "The reverse Hogsteen pair can be seen in three-dimensional structures of transfer RNA, as T54△A58 and U8△A14.[11][12]"
+                        ]
+                    },
+                    "Quadruplex structures": {
+                        "content": [
+                            "As mentioned before, four guanine bases can form a rigid cycle called a guanine tetrad.  This allows formation of secondary structures of G-rich single stranded DNA and RNA called G-quadruplexes (G4-DNA and G4-RNA). Evidence exists for both in vitro and in vivo formation of G4s. Genomic G4s have been suggested to regulate gene transcription and at the RNA level inhibit protein synthesis through steric inhibition of ribosome function. It needs four triplets of G, separated by short spacers. This permits assembly of planar quartets which are composed of stacked associations of Hoogsteen bonded guanine molecules.[3]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Nucleic acid tertiary structure",
+                            "<info> Polypurine reverse-Hoogsteen hairpins (PPRHs), oligonucleotides that can bind either DNA or RNA and decrease gene expression."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Evgenia N. Nikolova; Eunae Kim; Abigail A. Wise; Patrick J. O'Brien; Ioan Andricioaei; Hashim M. Al-Hashimi (2011). \"Transient Hoogsteen base pairs in canonical duplex DNA\". Nature. 470 (7335): 498–502. Bibcode:2011Natur.470..498N. doi:10.1038/nature09775. PMC 3074620. PMID 21270796.",
+                            "<info> ^ Pan, B; Mitra, SN; Sundaralingam, M (2 March 1999). \"Crystal structure of an RNA 16-mer duplex R(GCAGAGUUAAAUCUGC)2 with nonadjacent G(syn).A+(anti) mispairs\". Biochemistry. 38 (9): 2826–31. doi:10.1021/bi982122y. PMID 10052954.",
+                            "<info> ^ a b Johnson JE, Smith JS, Kozak ML, Johnson FB (August 2008). \"In vivo veritas: using yeast to probe the biological functions of G-quadruplexes\". Biochimie. 90 (8): 1250–63. doi:10.1016/j.biochi.2008.02.013. PMC 2585026. PMID 18331848.",
+                            "<info> ^ \"Hoogsteen and reverse Hoogsteen base pairs\". X3DNA-DSSR: a resource for structural bioinformatics of nucleic acids.",
+                            "<info> ^ Halder S, Bhattacharyya D (November 2013). \"RNA structure and dynamics: a base pairing perspective\". Progress in Biophysics and Molecular Biology. 113 (2): 264–83. doi:10.1016/j.pbiomolbio.2013.07.003. PMID 23891726.",
+                            "<info> ^ a b IUPAC-IUB Commission on Biochemical Nomenclature (1970). \"Abbreviations and symbols for nucleic acids, polynucleotides, and their constituents\". Biochemistry. 9 (20): 4022–4027. doi:10.1021/bi00822a023.",
+                            "<info> ^ Watson JD, Crick FH (1953). \"Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid\". Nature. 171 (4356): 737–738. Bibcode:1953Natur.171..737W. doi:10.1038/171737a0. PMID 13054692. S2CID 4253007.",
+                            "<info> ^ Hoogsteen K (1963). \"The crystal and molecular structure of a hydrogen-bonded complex between 1-methylthymine and 9-methyladenine\". Acta Crystallographica. 16 (9): 907–916. doi:10.1107/S0365110X63002437.",
+                            "<info> ^ Aishima J, Gitti RK, Noah JE, Gan HH, Schlick T, Wolberger C (December 2002). \"A Hoogsteen base pair embedded in undistorted B-DNA\". Nucleic Acids Res. 30 (23): 5244–52. doi:10.1093/nar/gkf661. PMC 137974. PMID 12466549.",
+                            "<info> ^ Kim SK, Takahashi M, Nordén B (October 1995). \"Binding of RecA to anti-parallel poly(dA).2poly(dT) triple helix DNA\". Biochim Biophys Acta. 1264 (1): 129–33. doi:10.1016/0167-4781(95)00137-6. PMID 7578246.",
+                            "<info> ^ Zagryadskaya EI, Doyon FR, Steinberg SV (July 2003). \"Importance of the reverse Hoogsteen base pair 54-58 for tRNA function\". Nucleic Acids Res. 31 (14): 3946–53. doi:10.1093/nar/gkg448. PMC 165963. PMID 12853610.",
+                            "<info> ^ Westhof E, Auffinger P (2005-09-09). \"Transfer RNA Structure\" (PDF). Encyclopedia of life sciences. Nature Pub. Group. ISBN 9780470015902. Archived from the original (PDF) on 2016-10-19. Retrieved 28 March 2019."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,219 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/fluconazole": {
+                "title": "Fluconazole",
+                "url": "https://en.wikipedia.org/wiki/fluconazole",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Fluconazole is an antifungal medication used for a number of fungal infections.[5] These include candidiasis, blastomycosis, coccidioidomycosis, cryptococcosis, histoplasmosis, dermatophytosis, and tinea versicolor.[5] It is also used to prevent candidiasis in those who are at high risk such as following organ transplantation, low birth weight babies, and those with low blood neutrophil counts.[5] It is given either by mouth or by injection into a vein.[5]",
+                    "Common side effects include vomiting, diarrhea, rash, and increased liver enzymes.[5] Serious side effects may include liver problems, QT prolongation, and seizures.[5] Use during pregnancy may increase the risk of miscarriage or birth defects.[6][5] Fluconazole is in the azole antifungal family of medication.[5] It is believed to work by affecting the fungal cellular membrane.[5]",
+                    "Fluconazole was patented in 1981 and came into commercial use in 1988.[7] It is on the World Health Organization's List of Essential Medicines.[8] Fluconazole is available as a generic medication.[5] In 2023, it was the 175th most commonly prescribed medication in the United States, with more than 2 million prescriptions.[9][10]",
+                    "",
+                    "=== Medical uses ===",
+                    "Fluconazole is a first-generation triazole antifungal medication.  It differs from earlier azole antifungals (such as ketoconazole) in that its structure contains a triazole ring instead of an imidazole ring.  While the imidazole antifungals are mainly used topically, fluconazole and certain other triazole antifungals are preferred when systemic treatment is required because of their improved safety and predictable absorption when administered orally.[11]",
+                    "Fluconazole's spectrum of activity includes most species causing Candidiasis (but not Pichia kudriavzevii or Nakaseomyces glabratus, formerly known as Candida krusei and C. glabrata), Cryptococcus neoformans, some dimorphic fungi, and dermatophytes, among others.[medical citation needed] Common uses include:[2][11][12][13][14]",
+                    "<info> The treatment of non-systemic Candida infections of the vagina (\"yeast infections\"), throat, and mouth.",
+                    "<info> Certain systemic Candida infections in people with healthy immune systems, including infections of the bloodstream, kidney, or joints. Other antifungals are usually preferred when the infection is in the heart or central nervous system, and for the treatment of active infections in people with weak immune systems.",
+                    "<info> The prevention of Candida infections in people with weak immune systems, such as those neutropenic due to cancer chemotherapy, those with advanced HIV infections, transplant patients, and premature infants.",
+                    "<info> As a second-line agent for the treatment of cryptococcal meningoencephalitis, a fungal infection of the central nervous system.",
+                    "Antifungal resistance to drugs in the azole class tends to occur gradually over the course of prolonged drug therapy, resulting in clinical failure in immunocompromised patients (e.g., patients with advanced HIV receiving treatment for thrush or esophageal Candida infection).[15]",
+                    "In C. albicans, resistance occurs by way of mutations in the ERG11 gene, which codes for 14α-demethylase. These mutations prevent the azole drug from binding, while still allowing binding of the enzyme's natural substrate, lanosterol. Development of resistance to one azole in this way will confer resistance to all drugs in the class. Another resistance mechanism employed by both C. albicans and C. glabrata is increasing the rate of efflux of the azole drug from the cell, by both ATP-binding cassette and major facilitator superfamily transporters. Other gene mutations are also known to contribute to development of resistance.[15] C. glabrata develops resistance by up regulating CDR genes, and resistance in C. krusei is mediated by reduced sensitivity of the target enzyme to inhibition by the agent.[2]",
+                    "The full spectrum of fungal susceptibility and resistance to fluconazole can be found in the product data sheet.[16] According to the US Centers for Disease Control and Prevention, fluconazole resistance among Candida strains in the US is about 7%.[17]",
+                    "Rising resistance raises concerns since fluconazole is commonly used due to its inexpensiveness and ease of administration, according to the World Health Organization.[18]",
+                    "One possible solution to counter the increasing prevalence of Candida infections is combination antifungal therapy, combining natural components with commercial antifungal drugs to combat resistance.[19]",
+                    "Another possible solution is the integration of phage therapy, which has shown successive results in functional therapies. Phages, viruses that infect microbes including fungi, exhibit potent antimicrobial effects against various resistant fungal strains, demonstrating remarkable specificity and efficacy.[20]",
+                    "",
+                    "=== Contraindications ===",
+                    "Fluconazole is contraindicated in patients who:[14]",
+                    "<info> have known hypersensitivity to other azole medicines such as ketoconazole;[2]",
+                    "<info> take SSRIs such as fluoxetine or sertraline[citation needed]",
+                    "",
+                    "=== Side effects ===",
+                    "Adverse drug reactions associated with fluconazole therapy include:[14]",
+                    "<info> Common (≥1% of patients): rash, headache, dizziness, nausea, vomiting, abdominal pain, diarrhea, and/or elevated liver enzymes",
+                    "<info> Infrequent (0.1–1% of patients): anorexia, fatigue, constipation",
+                    "<info> Rare (<0.1% of patients): oliguria, hypokalaemia, paraesthesia, seizures, alopecia, Stevens–Johnson syndrome, thrombocytopenia, other blood dyscrasias, serious hepatotoxicity including liver failure, anaphylactic/anaphylactoid reactions",
+                    "<info> Very rare: prolonged QT interval, torsades de pointes",
+                    "<info> In 2011, the US FDA reports that treatment with chronic, high doses of fluconazole during the first trimester of pregnancy may be associated with a rare and distinct set of birth defects in infants.[21]",
+                    "If taken during pregnancy it may result in harm.[22][23] These cases of harm, however, were only in women who took large doses for most of the first trimester.[22]",
+                    "Fluconazole is secreted in human milk at concentrations similar to plasma.[2]",
+                    "Fluconazole therapy has been associated with QT interval prolongation, which may lead to serious cardiac arrhythmias. Thus, it is used with caution in patients with risk factors for prolonged QT interval, such as electrolyte imbalance or use of other drugs that may prolong the QT interval (particularly cisapride and pimozide).[24]",
+                    "Some people are allergic to azoles, so those allergic to other azole drugs might be allergic to fluconazole.[25] That is, some azole drugs have adverse side-effects.  Some azole drugs may disrupt estrogen production in pregnancy, affecting pregnancy outcome.\n[26]",
+                    "Oral fluconazole is not associated with a significantly increased risk of birth defects overall, although it does increase the odds ratio of tetralogy of Fallot, but the absolute risk is still low.[27] Women using fluconazole during pregnancy have a 50% higher risk of spontaneous abortion.[28]",
+                    "Fluconazole should not be taken with cisapride (Propulsid) due to the possibility of serious, even fatal, heart problems.[24]  In rare cases, severe allergic reactions including anaphylaxis may occur.[29]",
+                    "Powder for oral suspension contains sucrose and should not be used in patients with hereditary fructose, glucose/galactose malabsorption or sucrase-isomaltase deficiency. Capsules contain lactose and thus should not be given to patients with glucose-galactose malabsorption.[30]",
+                    "",
+                    "=== Interactions ===",
+                    "Fluconazole is an inhibitor of the human cytochrome P450 system, particularly the isozyme CYP2C19 (CYP3A4 and CYP2C9 to lesser extent) [31] In theory, therefore, fluconazole decreases the metabolism and increases the concentration of any drug metabolised by these enzymes. In addition, its potential effect on QT interval increases the risk of cardiac arrhythmia if used concurrently with other drugs that prolong the QT interval. Berberine has been shown to exert synergistic effects with fluconazole even in drug-resistant Candida albicans infections.[32] Fluconazole may increase the serum concentration of Erythromycin (Risk X: avoid combination).[31]",
+                    "",
+                    "=== Pharmacology ===",
+                    "Like other imidazole- and triazole-class antifungals, fluconazole inhibits the fungal cytochrome P450 enzyme 14α-demethylase. Mammalian demethylase activity is much less sensitive to fluconazole than fungal demethylase. This inhibition prevents the conversion of lanosterol to ergosterol, an essential component of the fungal cytoplasmic membrane, and subsequent accumulation of 14α-methyl sterols.[33] Fluconazole is primarily fungistatic; however, it may be fungicidal against certain organisms in a dose-dependent manner, specifically Cryptococcus.[34]",
+                    "Following oral dosing, fluconazole is almost completely absorbed within two hours.[35] Bioavailability is not significantly affected by the absence of stomach acid. Concentrations measured in the urine, tears, and skin are approximately 10 times the plasma concentration, whereas saliva, sputum, and vaginal fluid concentrations are approximately equal to the plasma concentration, following a standard dose range of between 100 mg and 400 mg per day.[36] The elimination half-life of fluconazole follows zero order, and only 10% of elimination is due to metabolism, the remainder being excreted in urine and sweat. Patients with impaired renal function will be at risk of overdose.[24]",
+                    "In a bulk powder form, it appears as a white crystalline powder, and it is very slightly soluble in water and soluble in alcohol.[37]",
+                    "",
+                    "=== History ===",
+                    "Fluconazole was patented by Pfizer in 1981 in the United Kingdom and came into commercial use in 1988.[7] Patent expirations occurred in 2004 and 2005.[38]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Product monograph brand safety updates\". Health Canada. 7 July 2016. Retrieved 3 April 2024.",
+                    "<info> ^ a b c d e f \"Diflucan- fluconazole tablet; Diflucan- fluconazole powder, for suspension\". DailyMed. 21 September 2023. Archived from the original on 22 February 2024. Retrieved 22 February 2024.",
+                    "<info> ^ \"Active substance: Fluconazole\" (PDF). List of nationally authorised medicinal products. European Medicines Agency. 12 November 2020. Archived (PDF) from the original on 24 February 2024. Retrieved 22 December 2020.",
+                    "<info> ^ Surov AO, Voronin AP, Vasilev NA, Churakov AV, Perlovich GL (20 December 2019). \"Cocrystals of Fluconazole with Aromatic Carboxylic Acids: Competition between Anhydrous and Hydrated Solid Forms\". Crystal Growth & Design. 20 (2): 1218–1228. doi:10.1021/acs.cgd.9b01490. S2CID 213008181.",
+                    "<info> ^ a b c d e f g h i j \"Fluconazole\". The American Society of Health-System Pharmacists. Archived from the original on 20 December 2016. Retrieved 8 December 2016.",
+                    "<info> ^ \"Fluconazole (Diflucan): Drug Safety Communication - FDA Evaluating Study Examining Use of Oral Fluconazole (Diflucan) in Pregnancy\". U.S. Food and Drug Administration (FDA). 26 April 2016. Archived from the original on 29 April 2016. Retrieved 29 April 2016.",
+                    "<info> ^ a b Fischer J, Ganellin CR (2006). Analogue-based Drug Discovery. John Wiley & Sons. p. 503. ISBN 978-3-527-60749-5. Archived from the original on 10 September 2017.",
+                    "<info> ^ World Health Organization (2019). World Health Organization model list of essential medicines: 21st list 2019. Geneva: World Health Organization. hdl:10665/325771. WHO/MVP/EMP/IAU/2019.06. License: CC BY-NC-SA 3.0 IGO.",
+                    "<info> ^ \"Top 300 of 2023\". ClinCalc. Archived from the original on 12 August 2025. Retrieved 12 August 2025.",
+                    "<info> ^ \"Fluconazole Drug Usage Statistics, United States, 2013 - 2023\". ClinCalc. Retrieved 19 August 2025.",
+                    "<info> ^ a b \"US Pharmacist\". Archived from the original on 10 February 2015. Retrieved 28 January 2015.",
+                    "<info> ^ \"IDSA Guidelines: Candida Infections\". Archived from the original on 3 February 2015. Retrieved 28 January 2015.",
+                    "<info> ^ \"IDSA Guidelines: Cryptococcal Infections\". Archived from the original on 3 February 2015. Retrieved 28 January 2015.",
+                    "<info> ^ a b c Rossi S, editor. Australian Medicines Handbook 2006. Adelaide: Australian Medicines Handbook; 2006. ISBN 0-9757919-2-3",
+                    "<info> ^ a b Bennett JE (2011). \"Chapter 57: Antifungal Agents\". In Brunton LL, Chabner BA, Knollmann BC (eds.). Goodman & Gilman's The Pharmacological Basis of Therapeutics (12th ed.). Archived from the original on 31 December 2013. Retrieved 22 May 2012.",
+                    "<info> ^ \"Spectrum of fungal susptibility and resistance to fluconazole\" (PDF). Archived from the original (PDF) on 14 March 2016.",
+                    "<info> ^ \"Antifungal Resistance | Fungal Disease | CDC\". 25 January 2019. Archived from the original on 19 May 2017.",
+                    "<info> ^ Wiederhold NP (August 2017). \"Antifungal resistance: current trends and future strategies to combat\". Infection and Drug Resistance. 10: 249–259. doi:10.2147/IDR.S124918. PMC 5587015. PMID 28919789.",
+                    "<info> ^ Fuentefria AM, Pippi B, Dalla Lana DF, Donato KK, de Andrade SF (January 2018). \"Antifungals discovery: an insight into new strategies to combat antifungal resistance\". Letters in Applied Microbiology. 66 (1): 2–13. doi:10.1111/lam.12820. PMID 29112282.",
+                    "<info> ^ Garvey M (July 2020). \"Bacteriophages and the One Health Approach to Combat Multidrug Resistance: Is This the Way?\". Antibiotics. 9 (7): 414. doi:10.3390/antibiotics9070414. PMC 7400126. PMID 32708627.",
+                    "<info> ^ \"FDA Alert: Diflucan (fluconazole): Drug Safety Communication - Long-term, High-dose Use During Pregnancy May be Associated with Birth Defects\". Archived from the original on 28 September 2011. Retrieved 4 August 2011.",
+                    "<info> ^ a b \"Fluconazole\". Monograph. The American Society of Health-System Pharmacists. Archived from the original on 27 September 2014. Retrieved 27 September 2014.",
+                    "<info> ^ \"Prescribing medicines in pregnancy database\". Australian Government. 3 March 2014. Archived from the original on 8 April 2014. Retrieved 22 April 2014.",
+                    "<info> ^ a b c Brunton LL, Knollmann BC, Hilal-Dandan R, eds. (2018). Goodman & Gilman's : the Pharmacological Basis of Therapeutics (13th ed.). McGraw-Hill Education LLC. ISBN 978-1-259-58473-2. OCLC 1075550900.",
+                    "<info> ^ Pinto A, Chan RC (April 2009). \"Lack of allergic cross-reactivity between fluconazole and voriconazole\" (PDF). Antimicrobial Agents and Chemotherapy. 53 (4): 1715–1716. doi:10.1128/AAC.01500-08. PMC 2663085. PMID 19164151. Archived (PDF) from the original on 11 June 2011. Retrieved 20 October 2009.",
+                    "<info> ^ Kragie L, Turner SD, Patten CJ, Crespi CL, Stresser DM (August 2002). \"Assessing pregnancy risks of azole antifungals using a high throughput aromatase inhibition assay\". Endocrine Research. 28 (3): 129–140. doi:10.1081/ERC-120015045. PMID 12489563. S2CID 8282678.",
+                    "<info> ^ Mølgaard-Nielsen D, Pasternak B, Hviid A (August 2013). \"Use of oral fluconazole during pregnancy and the risk of birth defects\". The New England Journal of Medicine. 369 (9): 830–839. doi:10.1056/NEJMoa1301066. PMID 23984730.",
+                    "<info> ^ Mølgaard-Nielsen D, Svanström H, Melbye M, Hviid A, Pasternak B (January 2016). \"Association Between Use of Oral Fluconazole During Pregnancy and Risk of Spontaneous Abortion and Stillbirth\". JAMA. 315 (1): 58–67. doi:10.1001/jama.2015.17844. PMID 26746458.",
+                    "<info> ^ Rang HP (21 January 2015). Rang & Dale's pharmacology. Elsevier Health Sciences. ISBN 978-0-7020-5362-7. OCLC 942814866.",
+                    "<info> ^ \"Diflucan (Fluconazole) dosing, indications, interactions, adverse effects, and more\". reference.medscape.com. Archived from the original on 23 April 2014.",
+                    "<info> ^ a b \"Login\". Archived from the original on 21 December 2016. Retrieved 21 December 2016.",
+                    "<info> ^ Xu Y, Wang Y, Yan L, Liang RM, Dai BD, Tang RJ, et al. (November 2009). \"Proteomic analysis reveals a synergistic mechanism of fluconazole and berberine against fluconazole-resistant Candida albicans: endogenous ROS augmentation\". Journal of Proteome Research. 8 (11): 5296–5304. doi:10.1021/pr9005074. PMID 19754040.",
+                    "<info> ^ Pfizer Australia Pty Ltd. Diflucan (Australian Approved Product Information). West Ryde (NSW): Pfizer Australia; 2004.",
+                    "<info> ^ Longley N, Muzoora C, Taseera K, Mwesigye J, Rwebembera J, Chakera A, et al. (December 2008). \"Dose response effect of high-dose fluconazole for HIV-associated cryptococcal meningitis in southwestern Uganda\". Clinical Infectious Diseases. 47 (12): 1556–1561. doi:10.1086/593194. PMID 18990067.",
+                    "<info> ^ Katzung BG (30 November 2017). Basic & clinical pharmacology. McGraw-Hill Education. ISBN 978-1-259-64115-2. OCLC 1035129378.",
+                    "<info> ^ Whalen K, Feild C, Radhakrishnan R (21 September 2018). Whalen K, Feild C, Radhakrishnan R (eds.). Lippincott Illustrated Reviews Pharmacology. Wolters Kluwer. ISBN 978-1-4963-8413-3. OCLC 1114483879.",
+                    "<info> ^ \"Fluconazole\". MP Biomedicals. Archived from the original on 16 January 2009.",
+                    "<info> ^ \"Pfizer to Expand Fluconazole Donation Program to More than 50 Developing Nations\". Kaiser Health News. 7 June 2001. Archived from the original on 30 October 2020. Retrieved 18 June 2019.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Popp C, Ramírez-Zavala B, Schwanfelder S, Krüger I, Morschhäuser J (February 2019). \"Evolution of Fluconazole-Resistant Candida albicans Strains by Drug-Induced Mating Competence and Parasexual Recombination\". mBio. 10 (1) e02740-18. doi:10.1128/mBio.02740-18. PMC 6428756. PMID 30723130.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Fluconazole is an antifungal medication used for a number of fungal infections.[5] These include candidiasis, blastomycosis, coccidioidomycosis, cryptococcosis, histoplasmosis, dermatophytosis, and tinea versicolor.[5] It is also used to prevent candidiasis in those who are at high risk such as following organ transplantation, low birth weight babies, and those with low blood neutrophil counts.[5] It is given either by mouth or by injection into a vein.[5]",
+                            "Common side effects include vomiting, diarrhea, rash, and increased liver enzymes.[5] Serious side effects may include liver problems, QT prolongation, and seizures.[5] Use during pregnancy may increase the risk of miscarriage or birth defects.[6][5] Fluconazole is in the azole antifungal family of medication.[5] It is believed to work by affecting the fungal cellular membrane.[5]",
+                            "Fluconazole was patented in 1981 and came into commercial use in 1988.[7] It is on the World Health Organization's List of Essential Medicines.[8] Fluconazole is available as a generic medication.[5] In 2023, it was the 175th most commonly prescribed medication in the United States, with more than 2 million prescriptions.[9][10]"
+                        ]
+                    },
+                    "Medical uses": {
+                        "content": [
+                            "Fluconazole is a first-generation triazole antifungal medication.  It differs from earlier azole antifungals (such as ketoconazole) in that its structure contains a triazole ring instead of an imidazole ring.  While the imidazole antifungals are mainly used topically, fluconazole and certain other triazole antifungals are preferred when systemic treatment is required because of their improved safety and predictable absorption when administered orally.[11]",
+                            "Fluconazole's spectrum of activity includes most species causing Candidiasis (but not Pichia kudriavzevii or Nakaseomyces glabratus, formerly known as Candida krusei and C. glabrata), Cryptococcus neoformans, some dimorphic fungi, and dermatophytes, among others.[medical citation needed] Common uses include:[2][11][12][13][14]",
+                            "<info> The treatment of non-systemic Candida infections of the vagina (\"yeast infections\"), throat, and mouth.",
+                            "<info> Certain systemic Candida infections in people with healthy immune systems, including infections of the bloodstream, kidney, or joints. Other antifungals are usually preferred when the infection is in the heart or central nervous system, and for the treatment of active infections in people with weak immune systems.",
+                            "<info> The prevention of Candida infections in people with weak immune systems, such as those neutropenic due to cancer chemotherapy, those with advanced HIV infections, transplant patients, and premature infants.",
+                            "<info> As a second-line agent for the treatment of cryptococcal meningoencephalitis, a fungal infection of the central nervous system.",
+                            "Antifungal resistance to drugs in the azole class tends to occur gradually over the course of prolonged drug therapy, resulting in clinical failure in immunocompromised patients (e.g., patients with advanced HIV receiving treatment for thrush or esophageal Candida infection).[15]",
+                            "In C. albicans, resistance occurs by way of mutations in the ERG11 gene, which codes for 14α-demethylase. These mutations prevent the azole drug from binding, while still allowing binding of the enzyme's natural substrate, lanosterol. Development of resistance to one azole in this way will confer resistance to all drugs in the class. Another resistance mechanism employed by both C. albicans and C. glabrata is increasing the rate of efflux of the azole drug from the cell, by both ATP-binding cassette and major facilitator superfamily transporters. Other gene mutations are also known to contribute to development of resistance.[15] C. glabrata develops resistance by up regulating CDR genes, and resistance in C. krusei is mediated by reduced sensitivity of the target enzyme to inhibition by the agent.[2]",
+                            "The full spectrum of fungal susceptibility and resistance to fluconazole can be found in the product data sheet.[16] According to the US Centers for Disease Control and Prevention, fluconazole resistance among Candida strains in the US is about 7%.[17]",
+                            "Rising resistance raises concerns since fluconazole is commonly used due to its inexpensiveness and ease of administration, according to the World Health Organization.[18]",
+                            "One possible solution to counter the increasing prevalence of Candida infections is combination antifungal therapy, combining natural components with commercial antifungal drugs to combat resistance.[19]",
+                            "Another possible solution is the integration of phage therapy, which has shown successive results in functional therapies. Phages, viruses that infect microbes including fungi, exhibit potent antimicrobial effects against various resistant fungal strains, demonstrating remarkable specificity and efficacy.[20]"
+                        ]
+                    },
+                    "Contraindications": {
+                        "content": [
+                            "Fluconazole is contraindicated in patients who:[14]",
+                            "<info> have known hypersensitivity to other azole medicines such as ketoconazole;[2]",
+                            "<info> take SSRIs such as fluoxetine or sertraline[citation needed]"
+                        ]
+                    },
+                    "Side effects": {
+                        "content": [
+                            "Adverse drug reactions associated with fluconazole therapy include:[14]",
+                            "<info> Common (≥1% of patients): rash, headache, dizziness, nausea, vomiting, abdominal pain, diarrhea, and/or elevated liver enzymes",
+                            "<info> Infrequent (0.1–1% of patients): anorexia, fatigue, constipation",
+                            "<info> Rare (<0.1% of patients): oliguria, hypokalaemia, paraesthesia, seizures, alopecia, Stevens–Johnson syndrome, thrombocytopenia, other blood dyscrasias, serious hepatotoxicity including liver failure, anaphylactic/anaphylactoid reactions",
+                            "<info> Very rare: prolonged QT interval, torsades de pointes",
+                            "<info> In 2011, the US FDA reports that treatment with chronic, high doses of fluconazole during the first trimester of pregnancy may be associated with a rare and distinct set of birth defects in infants.[21]",
+                            "If taken during pregnancy it may result in harm.[22][23] These cases of harm, however, were only in women who took large doses for most of the first trimester.[22]",
+                            "Fluconazole is secreted in human milk at concentrations similar to plasma.[2]",
+                            "Fluconazole therapy has been associated with QT interval prolongation, which may lead to serious cardiac arrhythmias. Thus, it is used with caution in patients with risk factors for prolonged QT interval, such as electrolyte imbalance or use of other drugs that may prolong the QT interval (particularly cisapride and pimozide).[24]",
+                            "Some people are allergic to azoles, so those allergic to other azole drugs might be allergic to fluconazole.[25] That is, some azole drugs have adverse side-effects.  Some azole drugs may disrupt estrogen production in pregnancy, affecting pregnancy outcome.\n[26]",
+                            "Oral fluconazole is not associated with a significantly increased risk of birth defects overall, although it does increase the odds ratio of tetralogy of Fallot, but the absolute risk is still low.[27] Women using fluconazole during pregnancy have a 50% higher risk of spontaneous abortion.[28]",
+                            "Fluconazole should not be taken with cisapride (Propulsid) due to the possibility of serious, even fatal, heart problems.[24]  In rare cases, severe allergic reactions including anaphylaxis may occur.[29]",
+                            "Powder for oral suspension contains sucrose and should not be used in patients with hereditary fructose, glucose/galactose malabsorption or sucrase-isomaltase deficiency. Capsules contain lactose and thus should not be given to patients with glucose-galactose malabsorption.[30]"
+                        ]
+                    },
+                    "Interactions": {
+                        "content": [
+                            "Fluconazole is an inhibitor of the human cytochrome P450 system, particularly the isozyme CYP2C19 (CYP3A4 and CYP2C9 to lesser extent) [31] In theory, therefore, fluconazole decreases the metabolism and increases the concentration of any drug metabolised by these enzymes. In addition, its potential effect on QT interval increases the risk of cardiac arrhythmia if used concurrently with other drugs that prolong the QT interval. Berberine has been shown to exert synergistic effects with fluconazole even in drug-resistant Candida albicans infections.[32] Fluconazole may increase the serum concentration of Erythromycin (Risk X: avoid combination).[31]"
+                        ]
+                    },
+                    "Pharmacology": {
+                        "content": [
+                            "Like other imidazole- and triazole-class antifungals, fluconazole inhibits the fungal cytochrome P450 enzyme 14α-demethylase. Mammalian demethylase activity is much less sensitive to fluconazole than fungal demethylase. This inhibition prevents the conversion of lanosterol to ergosterol, an essential component of the fungal cytoplasmic membrane, and subsequent accumulation of 14α-methyl sterols.[33] Fluconazole is primarily fungistatic; however, it may be fungicidal against certain organisms in a dose-dependent manner, specifically Cryptococcus.[34]",
+                            "Following oral dosing, fluconazole is almost completely absorbed within two hours.[35] Bioavailability is not significantly affected by the absence of stomach acid. Concentrations measured in the urine, tears, and skin are approximately 10 times the plasma concentration, whereas saliva, sputum, and vaginal fluid concentrations are approximately equal to the plasma concentration, following a standard dose range of between 100 mg and 400 mg per day.[36] The elimination half-life of fluconazole follows zero order, and only 10% of elimination is due to metabolism, the remainder being excreted in urine and sweat. Patients with impaired renal function will be at risk of overdose.[24]",
+                            "In a bulk powder form, it appears as a white crystalline powder, and it is very slightly soluble in water and soluble in alcohol.[37]"
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "Fluconazole was patented by Pfizer in 1981 in the United Kingdom and came into commercial use in 1988.[7] Patent expirations occurred in 2004 and 2005.[38]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Product monograph brand safety updates\". Health Canada. 7 July 2016. Retrieved 3 April 2024.",
+                            "<info> ^ a b c d e f \"Diflucan- fluconazole tablet; Diflucan- fluconazole powder, for suspension\". DailyMed. 21 September 2023. Archived from the original on 22 February 2024. Retrieved 22 February 2024.",
+                            "<info> ^ \"Active substance: Fluconazole\" (PDF). List of nationally authorised medicinal products. European Medicines Agency. 12 November 2020. Archived (PDF) from the original on 24 February 2024. Retrieved 22 December 2020.",
+                            "<info> ^ Surov AO, Voronin AP, Vasilev NA, Churakov AV, Perlovich GL (20 December 2019). \"Cocrystals of Fluconazole with Aromatic Carboxylic Acids: Competition between Anhydrous and Hydrated Solid Forms\". Crystal Growth & Design. 20 (2): 1218–1228. doi:10.1021/acs.cgd.9b01490. S2CID 213008181.",
+                            "<info> ^ a b c d e f g h i j \"Fluconazole\". The American Society of Health-System Pharmacists. Archived from the original on 20 December 2016. Retrieved 8 December 2016.",
+                            "<info> ^ \"Fluconazole (Diflucan): Drug Safety Communication - FDA Evaluating Study Examining Use of Oral Fluconazole (Diflucan) in Pregnancy\". U.S. Food and Drug Administration (FDA). 26 April 2016. Archived from the original on 29 April 2016. Retrieved 29 April 2016.",
+                            "<info> ^ a b Fischer J, Ganellin CR (2006). Analogue-based Drug Discovery. John Wiley & Sons. p. 503. ISBN 978-3-527-60749-5. Archived from the original on 10 September 2017.",
+                            "<info> ^ World Health Organization (2019). World Health Organization model list of essential medicines: 21st list 2019. Geneva: World Health Organization. hdl:10665/325771. WHO/MVP/EMP/IAU/2019.06. License: CC BY-NC-SA 3.0 IGO.",
+                            "<info> ^ \"Top 300 of 2023\". ClinCalc. Archived from the original on 12 August 2025. Retrieved 12 August 2025.",
+                            "<info> ^ \"Fluconazole Drug Usage Statistics, United States, 2013 - 2023\". ClinCalc. Retrieved 19 August 2025.",
+                            "<info> ^ a b \"US Pharmacist\". Archived from the original on 10 February 2015. Retrieved 28 January 2015.",
+                            "<info> ^ \"IDSA Guidelines: Candida Infections\". Archived from the original on 3 February 2015. Retrieved 28 January 2015.",
+                            "<info> ^ \"IDSA Guidelines: Cryptococcal Infections\". Archived from the original on 3 February 2015. Retrieved 28 January 2015.",
+                            "<info> ^ a b c Rossi S, editor. Australian Medicines Handbook 2006. Adelaide: Australian Medicines Handbook; 2006. ISBN 0-9757919-2-3",
+                            "<info> ^ a b Bennett JE (2011). \"Chapter 57: Antifungal Agents\". In Brunton LL, Chabner BA, Knollmann BC (eds.). Goodman & Gilman's The Pharmacological Basis of Therapeutics (12th ed.). Archived from the original on 31 December 2013. Retrieved 22 May 2012.",
+                            "<info> ^ \"Spectrum of fungal susptibility and resistance to fluconazole\" (PDF). Archived from the original (PDF) on 14 March 2016.",
+                            "<info> ^ \"Antifungal Resistance | Fungal Disease | CDC\". 25 January 2019. Archived from the original on 19 May 2017.",
+                            "<info> ^ Wiederhold NP (August 2017). \"Antifungal resistance: current trends and future strategies to combat\". Infection and Drug Resistance. 10: 249–259. doi:10.2147/IDR.S124918. PMC 5587015. PMID 28919789.",
+                            "<info> ^ Fuentefria AM, Pippi B, Dalla Lana DF, Donato KK, de Andrade SF (January 2018). \"Antifungals discovery: an insight into new strategies to combat antifungal resistance\". Letters in Applied Microbiology. 66 (1): 2–13. doi:10.1111/lam.12820. PMID 29112282.",
+                            "<info> ^ Garvey M (July 2020). \"Bacteriophages and the One Health Approach to Combat Multidrug Resistance: Is This the Way?\". Antibiotics. 9 (7): 414. doi:10.3390/antibiotics9070414. PMC 7400126. PMID 32708627.",
+                            "<info> ^ \"FDA Alert: Diflucan (fluconazole): Drug Safety Communication - Long-term, High-dose Use During Pregnancy May be Associated with Birth Defects\". Archived from the original on 28 September 2011. Retrieved 4 August 2011.",
+                            "<info> ^ a b \"Fluconazole\". Monograph. The American Society of Health-System Pharmacists. Archived from the original on 27 September 2014. Retrieved 27 September 2014.",
+                            "<info> ^ \"Prescribing medicines in pregnancy database\". Australian Government. 3 March 2014. Archived from the original on 8 April 2014. Retrieved 22 April 2014.",
+                            "<info> ^ a b c Brunton LL, Knollmann BC, Hilal-Dandan R, eds. (2018). Goodman & Gilman's : the Pharmacological Basis of Therapeutics (13th ed.). McGraw-Hill Education LLC. ISBN 978-1-259-58473-2. OCLC 1075550900.",
+                            "<info> ^ Pinto A, Chan RC (April 2009). \"Lack of allergic cross-reactivity between fluconazole and voriconazole\" (PDF). Antimicrobial Agents and Chemotherapy. 53 (4): 1715–1716. doi:10.1128/AAC.01500-08. PMC 2663085. PMID 19164151. Archived (PDF) from the original on 11 June 2011. Retrieved 20 October 2009.",
+                            "<info> ^ Kragie L, Turner SD, Patten CJ, Crespi CL, Stresser DM (August 2002). \"Assessing pregnancy risks of azole antifungals using a high throughput aromatase inhibition assay\". Endocrine Research. 28 (3): 129–140. doi:10.1081/ERC-120015045. PMID 12489563. S2CID 8282678.",
+                            "<info> ^ Mølgaard-Nielsen D, Pasternak B, Hviid A (August 2013). \"Use of oral fluconazole during pregnancy and the risk of birth defects\". The New England Journal of Medicine. 369 (9): 830–839. doi:10.1056/NEJMoa1301066. PMID 23984730.",
+                            "<info> ^ Mølgaard-Nielsen D, Svanström H, Melbye M, Hviid A, Pasternak B (January 2016). \"Association Between Use of Oral Fluconazole During Pregnancy and Risk of Spontaneous Abortion and Stillbirth\". JAMA. 315 (1): 58–67. doi:10.1001/jama.2015.17844. PMID 26746458.",
+                            "<info> ^ Rang HP (21 January 2015). Rang & Dale's pharmacology. Elsevier Health Sciences. ISBN 978-0-7020-5362-7. OCLC 942814866.",
+                            "<info> ^ \"Diflucan (Fluconazole) dosing, indications, interactions, adverse effects, and more\". reference.medscape.com. Archived from the original on 23 April 2014.",
+                            "<info> ^ a b \"Login\". Archived from the original on 21 December 2016. Retrieved 21 December 2016.",
+                            "<info> ^ Xu Y, Wang Y, Yan L, Liang RM, Dai BD, Tang RJ, et al. (November 2009). \"Proteomic analysis reveals a synergistic mechanism of fluconazole and berberine against fluconazole-resistant Candida albicans: endogenous ROS augmentation\". Journal of Proteome Research. 8 (11): 5296–5304. doi:10.1021/pr9005074. PMID 19754040.",
+                            "<info> ^ Pfizer Australia Pty Ltd. Diflucan (Australian Approved Product Information). West Ryde (NSW): Pfizer Australia; 2004.",
+                            "<info> ^ Longley N, Muzoora C, Taseera K, Mwesigye J, Rwebembera J, Chakera A, et al. (December 2008). \"Dose response effect of high-dose fluconazole for HIV-associated cryptococcal meningitis in southwestern Uganda\". Clinical Infectious Diseases. 47 (12): 1556–1561. doi:10.1086/593194. PMID 18990067.",
+                            "<info> ^ Katzung BG (30 November 2017). Basic & clinical pharmacology. McGraw-Hill Education. ISBN 978-1-259-64115-2. OCLC 1035129378.",
+                            "<info> ^ Whalen K, Feild C, Radhakrishnan R (21 September 2018). Whalen K, Feild C, Radhakrishnan R (eds.). Lippincott Illustrated Reviews Pharmacology. Wolters Kluwer. ISBN 978-1-4963-8413-3. OCLC 1114483879.",
+                            "<info> ^ \"Fluconazole\". MP Biomedicals. Archived from the original on 16 January 2009.",
+                            "<info> ^ \"Pfizer to Expand Fluconazole Donation Program to More than 50 Developing Nations\". Kaiser Health News. 7 June 2001. Archived from the original on 30 October 2020. Retrieved 18 June 2019."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Popp C, Ramírez-Zavala B, Schwanfelder S, Krüger I, Morschhäuser J (February 2019). \"Evolution of Fluconazole-Resistant Candida albicans Strains by Drug-Induced Mating Competence and Parasexual Recombination\". mBio. 10 (1) e02740-18. doi:10.1128/mBio.02740-18. PMC 6428756. PMID 30723130."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

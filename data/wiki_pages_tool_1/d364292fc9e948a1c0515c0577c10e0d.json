@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/dementia_with_lewy_bodies": {
+                "title": "Dementia with Lewy bodies",
+                "url": "https://en.wikipedia.org/wiki/dementia_with_lewy_bodies",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

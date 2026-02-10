@@ -1,0 +1,51 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/phorbol_esters": {
+                "title": "Phorbol esters",
+                "url": "https://en.wikipedia.org/wiki/phorbol_esters",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Phorbol esters are a class of chemical compounds found in a variety of plants, particularly in the families Euphorbiaceae and Thymelaeaceae.[1][2] Chemically, they are ester derivatives of the tetracyclic diterpenoid phorbol.",
+                    "",
+                    "=== Biological activity ===",
+                    "Protein kinase C (PKC) is a phorbol ester receptor.[2][3] Phorbol esters can stimulate PKC in a similar way to diglycerides.[2][3]",
+                    "Phorbol esters are known for their ability to promote tumors.[2] In particular, 12-O-tetradecanoylphorbol-13-acetate (TPA) is used as a biomedical research tool in models of carcinogenesis.[4][5]",
+                    "Plants that contain phorbol esters are often poisonous.[5]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Goel, G; Makkar, H. P.; Francis, G; Becker, K (2007). \"Phorbol esters: Structure, biological activity, and toxicity in animals\". International Journal of Toxicology. 26 (4): 279–88. CiteSeerX 10.1.1.320.6537. doi:10.1080/10915810701464641. PMID 17661218. S2CID 11550625.",
+                    "<info> ^ a b c d Evans, Gerald A.; Farrar, William L. (1998-01-01), \"Phorbol Esters\", in Delves, Peter J. (ed.), Encyclopedia of Immunology (Second Edition), Oxford: Elsevier, pp. 1940–1942, doi:10.1006/rwei.1999.0488, ISBN 978-0-12-226765-9, retrieved 2020-11-26",
+                    "<info> ^ a b Weimer, R.; Richmond, J. (2015-01-01), \"Munc13 and Associated Molecules☆\", Reference Module in Biomedical Sciences, Elsevier, doi:10.1016/b978-0-12-801238-3.04674-2, ISBN 978-0-12-801238-3, retrieved 2020-11-26{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                    "<info> ^ Emerit, Ingrid; Cerutti, Peter A. (1981). \"Tumour promoter phorbol-12-myristate-13-acetate induces chromosomal damage via indirect action\". Nature. 293 (5828): 144–6. Bibcode:1981Natur.293..144E. doi:10.1038/293144a0. PMID 7266668. S2CID 45253610.",
+                    "<info> ^ a b Abdel-Fatta Rizk (1990). Poisonous Plant Contamination of Edible Plants. CRC Press. pp. 43–44. ISBN 9780849363696.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Phorbol esters are a class of chemical compounds found in a variety of plants, particularly in the families Euphorbiaceae and Thymelaeaceae.[1][2] Chemically, they are ester derivatives of the tetracyclic diterpenoid phorbol."
+                        ]
+                    },
+                    "Biological activity": {
+                        "content": [
+                            "Protein kinase C (PKC) is a phorbol ester receptor.[2][3] Phorbol esters can stimulate PKC in a similar way to diglycerides.[2][3]",
+                            "Phorbol esters are known for their ability to promote tumors.[2] In particular, 12-O-tetradecanoylphorbol-13-acetate (TPA) is used as a biomedical research tool in models of carcinogenesis.[4][5]",
+                            "Plants that contain phorbol esters are often poisonous.[5]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Goel, G; Makkar, H. P.; Francis, G; Becker, K (2007). \"Phorbol esters: Structure, biological activity, and toxicity in animals\". International Journal of Toxicology. 26 (4): 279–88. CiteSeerX 10.1.1.320.6537. doi:10.1080/10915810701464641. PMID 17661218. S2CID 11550625.",
+                            "<info> ^ a b c d Evans, Gerald A.; Farrar, William L. (1998-01-01), \"Phorbol Esters\", in Delves, Peter J. (ed.), Encyclopedia of Immunology (Second Edition), Oxford: Elsevier, pp. 1940–1942, doi:10.1006/rwei.1999.0488, ISBN 978-0-12-226765-9, retrieved 2020-11-26",
+                            "<info> ^ a b Weimer, R.; Richmond, J. (2015-01-01), \"Munc13 and Associated Molecules☆\", Reference Module in Biomedical Sciences, Elsevier, doi:10.1016/b978-0-12-801238-3.04674-2, ISBN 978-0-12-801238-3, retrieved 2020-11-26{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                            "<info> ^ Emerit, Ingrid; Cerutti, Peter A. (1981). \"Tumour promoter phorbol-12-myristate-13-acetate induces chromosomal damage via indirect action\". Nature. 293 (5828): 144–6. Bibcode:1981Natur.293..144E. doi:10.1038/293144a0. PMID 7266668. S2CID 45253610.",
+                            "<info> ^ a b Abdel-Fatta Rizk (1990). Poisonous Plant Contamination of Edible Plants. CRC Press. pp. 43–44. ISBN 9780849363696."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

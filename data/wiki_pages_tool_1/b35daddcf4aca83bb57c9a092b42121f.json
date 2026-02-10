@@ -1,0 +1,41 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/bruns_nystagmus": {
+                "title": "Bruns nystagmus",
+                "url": "https://en.wikipedia.org/wiki/bruns_nystagmus",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Bruns nystagmus is an unusual type of bilateral, asymmetrical jerk  nystagmus most commonly occurring in patients with cerebellopontine angle tumours. It manifests as a combination of two different eye movement patterns: a coarse, large-amplitude, low-frequency nystagmus on gaze toward the side of the lesion, and a fine, small-amplitude, high-frequency nystagmus in the primary position that intensifies when looking away from the lesion.[1] This unique presentation serves as an important localizing sign in neurology.[citation needed]",
+                    "The dual nature of Bruns nystagmus arises from dysfunction in two distinct neural mechanisms. The coarse, gaze-evoked nystagmus is linked to impairment of the neural integrator, particularly the cerebellar flocculus, which is responsible for maintaining eccentric gaze. This results in an exponentially decreasing slow-phase velocity. In contrast, the fine nystagmus with constant slow-phase velocity is attributed to peripheral vestibular dysfunction. This aligns with Alexander's law, where the intensity of the vestibular nystagmus increases when the gaze is directed in the direction of the fast phase. Oculographic recordings demonstrate this contrasting slow phase waveforms: an exponentially decaying slow phase when gazing toward the lesion, and a linear slow phase when gazing away.[2] It occurs in 11% of patients with vestibular schwannoma, and occurs mainly in patients with larger tumours (67% of patients with tumours over 3.5 cm diameter). Bruns nystagmus is also associated with an increased incidence of balance disturbance in patients with vestibular schwannoma.[3] Occasionally, it may result from the compression of both flocculi which form the vestibular part of the cerebellum, and improvement in both the nystagmus and balance problems occur commonly after removal of the tumour.[4]",
+                    "Bruns nystagmus is named for Ludwig Bruns (1858 – 1915).[citation needed]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Campbell, William Wesley; Russell N. DeJong; Armin F. Haerer (2005). DeJong's The Neurologic Examination. Lippincott Williams & Wilkins. p. 294. ISBN 978-0-7817-2767-9.",
+                    "<info> ^ Venkateswaran, Ramanathan; Gupta, Ranjan; Swaminathan, Rathinam Palamalai (1 May 2013). \"Bruns Nystagmus in Cerebellopontine Angle Tumor\". JAMA Neurology. 70 (5): 646. doi:10.1001/jamaneurol.2013.619.",
+                    "<info> ^ Lloyd SK, Baguley DM, Butler K, Donnelly N, Moffat DA (August 2009). \"Bruns' nystagmus in patients with vestibular schwannoma\". Otol. Neurotol. 30 (5): 625–8. doi:10.1097/MAO.0b013e3181a32bec. PMID 19471169. S2CID 1857869.",
+                    "<info> ^ Nedzelski JM (October 1983). \"Cerebellopontine angle tumors: bilateral flocculus compression as cause of associated oculomotor abnormalities\". Laryngoscope. 93 (10): 1251–60. doi:10.1002/lary.1983.93.10.1251. PMID 6604857. S2CID 27574873.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Bruns nystagmus is an unusual type of bilateral, asymmetrical jerk  nystagmus most commonly occurring in patients with cerebellopontine angle tumours. It manifests as a combination of two different eye movement patterns: a coarse, large-amplitude, low-frequency nystagmus on gaze toward the side of the lesion, and a fine, small-amplitude, high-frequency nystagmus in the primary position that intensifies when looking away from the lesion.[1] This unique presentation serves as an important localizing sign in neurology.[citation needed]",
+                            "The dual nature of Bruns nystagmus arises from dysfunction in two distinct neural mechanisms. The coarse, gaze-evoked nystagmus is linked to impairment of the neural integrator, particularly the cerebellar flocculus, which is responsible for maintaining eccentric gaze. This results in an exponentially decreasing slow-phase velocity. In contrast, the fine nystagmus with constant slow-phase velocity is attributed to peripheral vestibular dysfunction. This aligns with Alexander's law, where the intensity of the vestibular nystagmus increases when the gaze is directed in the direction of the fast phase. Oculographic recordings demonstrate this contrasting slow phase waveforms: an exponentially decaying slow phase when gazing toward the lesion, and a linear slow phase when gazing away.[2] It occurs in 11% of patients with vestibular schwannoma, and occurs mainly in patients with larger tumours (67% of patients with tumours over 3.5 cm diameter). Bruns nystagmus is also associated with an increased incidence of balance disturbance in patients with vestibular schwannoma.[3] Occasionally, it may result from the compression of both flocculi which form the vestibular part of the cerebellum, and improvement in both the nystagmus and balance problems occur commonly after removal of the tumour.[4]",
+                            "Bruns nystagmus is named for Ludwig Bruns (1858 – 1915).[citation needed]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Campbell, William Wesley; Russell N. DeJong; Armin F. Haerer (2005). DeJong's The Neurologic Examination. Lippincott Williams & Wilkins. p. 294. ISBN 978-0-7817-2767-9.",
+                            "<info> ^ Venkateswaran, Ramanathan; Gupta, Ranjan; Swaminathan, Rathinam Palamalai (1 May 2013). \"Bruns Nystagmus in Cerebellopontine Angle Tumor\". JAMA Neurology. 70 (5): 646. doi:10.1001/jamaneurol.2013.619.",
+                            "<info> ^ Lloyd SK, Baguley DM, Butler K, Donnelly N, Moffat DA (August 2009). \"Bruns' nystagmus in patients with vestibular schwannoma\". Otol. Neurotol. 30 (5): 625–8. doi:10.1097/MAO.0b013e3181a32bec. PMID 19471169. S2CID 1857869.",
+                            "<info> ^ Nedzelski JM (October 1983). \"Cerebellopontine angle tumors: bilateral flocculus compression as cause of associated oculomotor abnormalities\". Laryngoscope. 93 (10): 1251–60. doi:10.1002/lary.1983.93.10.1251. PMID 6604857. S2CID 27574873."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/zinc": {
+                "title": "Zinc",
+                "url": "https://en.wikipedia.org/wiki/zinc",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/sulfamethoxazole": {
+                "title": "Sulfamethoxazole",
+                "url": "https://en.wikipedia.org/wiki/sulfamethoxazole",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Sulfamethoxazole (SMZ or SMX) is an antibiotic. It is used for bacterial infections such as urinary tract infections, bronchitis, and prostatitis and is effective against both gram negative and  positive bacteria such as Escherichia coli and Listeria monocytogenes.[1]",
+                    "Common side effects include nausea, vomiting, loss of appetite, and skin rashes. It is a sulfonamide and bacteriostatic. It resembles a component of folic acid. It prevents folic acid synthesis in the bacteria that must synthesize their own folic acid. Mammalian cells, and some bacteria, do not synthesize but require preformed folic acid (vitamin B9); they are therefore insensitive to sulfamethoxazole.[2]",
+                    "It was introduced to the United States in 1961.[3] It is now mostly used in combination with trimethoprim (abbreviated SMX-TMP).[4] The SMX-TMP combination is on the WHO Model List of Essential medicines as a first-choice treatment for urinary tract infections.[5] Other names include: sulfamethalazole and sulfisomezole.[6][7]",
+                    "",
+                    "=== Side effects ===",
+                    "The most common side effects of sulfamethoxazole are gastrointestinal disturbances (nausea, vomiting, anorexia) and allergic skin reactions (such as rash and urticaria).[8] There have been rare instances where severe adverse reactions have resulted in fatalities. These include Stevens–Johnson syndrome (SJS), toxic epidermal necrolysis, fulminant hepatic necrosis, agranulocytosis, aplastic anemia, and other blood dyscrasias.[8]",
+                    "Allergic reactions to Sulfonamides have been shown to include the entire Gel-Coombs spectrum of hyperactivity reactions.[9] Type 1 reactions include immunoglobulin E (IgE)-mediated reactions such as urticaria, angioedema, and anaphylaxis. In contrast, non-type 1 hypersensitivities are believed to be caused by metabolites of sulfonamides.[10] Therefore, the liver and kidney are the determining factors of these other hypersensitivity reactions;[10] alterations in kidney or liver functions may increase or decrease the frequencies of these reactions. One study has shown the allergic reaction rate to be about 3.0% over 359 courses of therapy.[11] Of the allergic reactions, skin rashes, eosinophilia and drug fever were the most common, while serious reactions were less common.",
+                    "Sulfamethoxazole is contraindicated in people with a known hypersensitivity to trimethoprim or sulfonamides.[9]",
+                    "",
+                    "=== Mechanism of action ===",
+                    "Sulfamethoxazole, a sulfanilamide, is a structural analog of para-aminobenzoic acid (PABA). They compete with PABA to bind to dihydropteroate synthetase and inhibit conversion of PABA and dihydropteroate diphosphate to dihydrofolic acid, or dihydrofolate. Inhibiting the production of dihydrofolate intermediate interferes with the normal bacterial synthesis of folic acid (folate). Folate is an essential metabolite for bacterial growth and replication because it is used in DNA synthesis, primarily at thymidylate and purine biosynthesis, and amino acids synthesis, including serine, glycine and methionine.[12] Hence, blockage of folate production inhibits the folate-dependent metabolic processes for bacterial growth. Since it inhibits bacterial growth, sulfamethoxazole is considered a bacteriostatic antibiotic.[1]\nSulfonamides are selective against bacteria because they interfere with the synthesis of folate, a process which does not occur in humans. Humans do not synthesize folate, and must acquire it through diet.[13]",
+                    "",
+                    "=== Pharmacokinetics ===",
+                    "Sulfamethoxazole is well-absorbed when administered topically. It is rapidly absorbed when it is orally administered.[1]",
+                    "Sulfamethoxazole distributes into most body tissues as well as into sputum, vaginal fluid, and middle ear fluid.[8][11] It also crosses the placenta. About 70% of the drug is bound to plasma proteins. Its Tmax (or time to reach maximum drug concentration in plasma) occurs 1 to 4 hours after oral administration. The mean serum half-life of sulfamethoxazole is 10 hours.[8] However, the half-life of the drug noticeably increases in people with creatinine clearance rates equal to or less than 30 mL/minute. A half-life of 22–50 hours has been reported for people with creatinine clearances of less than 10 mL/minute.[11]",
+                    "Sulfamethoxazole is metabolized in the human liver to at least 5 metabolites. These metabolites are the N4-acetyl-, N4-hydroxy-, 5-methylhydroxy-, N4-acetyl-5-methylhydroxy-sulfamethoxazole metabolites, and an N-glucuronide conjugate. The CYP2C9 enzyme is responsible for the formation of the N4-hydroxy metabolite. In vitro studies suggest sulfamethoxazole is not a substrate of the P-glycoprotein transporter.[8]",
+                    "Sulfamethoxazole is primarily renally excreted via glomerular filtration and tubular secretion.[8] About 20% of the sulfamethoxazole in urine is the unchanged drug, about 15–20% is the N-glucuronide conjugate, and about 50–70 % is the acetylated metabolite.[11] Sulfamethoxazole is also excreted in human milk.[8]",
+                    "",
+                    "=== See also ===",
+                    "<info> List of cytochrome P450 modulators",
+                    "",
+                    "=== Notes ===",
+                    "<info> ^ a b c \"Sulfamethoxazole\". DrugBank. Retrieved 5 November 2015.",
+                    "<info> ^ Brunton L, Chabner BA, Knollman B (2011). Goodman and Gilman's The pharmacological Basis of Therapeautics. The McGraw-Hill Companies, Inc. pp. 1463–1469. ISBN 9780071624428.{{cite book}}:  CS1 maint: location missing publisher (link)",
+                    "<info> ^ \"Sulfamethoxazole\". Pharmaceutical Manufacturing Encyclopedia. Vol. 4 (3rd ed.). William Andrew Publishing. 2013-10-22. ISBN 9780815518563.",
+                    "<info> ^ Kemnic TR, Coleman M (November 2022). \"Trimethoprim Sulfamethoxazole.\". StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing. PMID 30020604.",
+                    "<info> ^ Roth L, Adler M, Jain T, Bempong D (June 2018). \"Monographs for medicines on WHO's Model List of Essential Medicines\". Bulletin of the World Health Organization. 96 (6): 378–385. doi:10.2471/blt.17.205807. PMC 5996216. PMID 29904220.",
+                    "<info> ^ \"Sulfamethoxazole - Substance Summary\". PubChem. National Center for Biotechnology Information (NCBI), National Library of Medicine (NLM), National Institutes of Health (NIH).",
+                    "<info> ^ \"Sulfamethoxazole\". ChemDB. National Institute of Allergy and Infectious Diseases (NIAID), National Institutes of Health (NIH). Archived from the original on 2012-12-15.",
+                    "<info> ^ a b c d e f g \"Bactrim USPI\" (PDF). Caraco Pharmaceutical Laboratories, Ltd. U.S. Food and Drug Administration. November 2013. Archived from the original (PDF) on March 4, 2016.",
+                    "<info> ^ a b Wulf NR, Matuszewski KA (September 2013). \"Sulfonamide cross-reactivity: is there evidence to support broad cross-allergenicity?\". American Journal of Health-System Pharmacy. 70 (17): 1483–1494. doi:10.2146/ajhp120291. PMID 23943179.",
+                    "<info> ^ a b Choquet-Kastylevsky G, Vial T, Descotes J (January 2002). \"Allergic adverse reactions to sulfonamides\". Current Allergy and Asthma Reports. 2 (1): 16–25. doi:10.1007/s11882-002-0033-y. PMID 11895621. S2CID 19624750.",
+                    "<info> ^ a b c d \"Sulfamethoxazole\". Toxnet. U.S. National Library of Medicine.",
+                    "<info> ^ Mercer MA (September 2022). \"Sulfonamides and Sulfonamide Combinations Use in Animals\". Merck Veterinary Manual. Retrieved 2015-11-05.",
+                    "<info> ^ Werth BJ (September 2022). \"Sulfonamides - Infectious Diseases\". Merck Manuals Professional Edition. Retrieved 2015-11-05.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Sulfamethoxazole (SMZ or SMX) is an antibiotic. It is used for bacterial infections such as urinary tract infections, bronchitis, and prostatitis and is effective against both gram negative and  positive bacteria such as Escherichia coli and Listeria monocytogenes.[1]",
+                            "Common side effects include nausea, vomiting, loss of appetite, and skin rashes. It is a sulfonamide and bacteriostatic. It resembles a component of folic acid. It prevents folic acid synthesis in the bacteria that must synthesize their own folic acid. Mammalian cells, and some bacteria, do not synthesize but require preformed folic acid (vitamin B9); they are therefore insensitive to sulfamethoxazole.[2]",
+                            "It was introduced to the United States in 1961.[3] It is now mostly used in combination with trimethoprim (abbreviated SMX-TMP).[4] The SMX-TMP combination is on the WHO Model List of Essential medicines as a first-choice treatment for urinary tract infections.[5] Other names include: sulfamethalazole and sulfisomezole.[6][7]"
+                        ]
+                    },
+                    "Side effects": {
+                        "content": [
+                            "The most common side effects of sulfamethoxazole are gastrointestinal disturbances (nausea, vomiting, anorexia) and allergic skin reactions (such as rash and urticaria).[8] There have been rare instances where severe adverse reactions have resulted in fatalities. These include Stevens–Johnson syndrome (SJS), toxic epidermal necrolysis, fulminant hepatic necrosis, agranulocytosis, aplastic anemia, and other blood dyscrasias.[8]",
+                            "Allergic reactions to Sulfonamides have been shown to include the entire Gel-Coombs spectrum of hyperactivity reactions.[9] Type 1 reactions include immunoglobulin E (IgE)-mediated reactions such as urticaria, angioedema, and anaphylaxis. In contrast, non-type 1 hypersensitivities are believed to be caused by metabolites of sulfonamides.[10] Therefore, the liver and kidney are the determining factors of these other hypersensitivity reactions;[10] alterations in kidney or liver functions may increase or decrease the frequencies of these reactions. One study has shown the allergic reaction rate to be about 3.0% over 359 courses of therapy.[11] Of the allergic reactions, skin rashes, eosinophilia and drug fever were the most common, while serious reactions were less common.",
+                            "Sulfamethoxazole is contraindicated in people with a known hypersensitivity to trimethoprim or sulfonamides.[9]"
+                        ]
+                    },
+                    "Mechanism of action": {
+                        "content": [
+                            "Sulfamethoxazole, a sulfanilamide, is a structural analog of para-aminobenzoic acid (PABA). They compete with PABA to bind to dihydropteroate synthetase and inhibit conversion of PABA and dihydropteroate diphosphate to dihydrofolic acid, or dihydrofolate. Inhibiting the production of dihydrofolate intermediate interferes with the normal bacterial synthesis of folic acid (folate). Folate is an essential metabolite for bacterial growth and replication because it is used in DNA synthesis, primarily at thymidylate and purine biosynthesis, and amino acids synthesis, including serine, glycine and methionine.[12] Hence, blockage of folate production inhibits the folate-dependent metabolic processes for bacterial growth. Since it inhibits bacterial growth, sulfamethoxazole is considered a bacteriostatic antibiotic.[1]\nSulfonamides are selective against bacteria because they interfere with the synthesis of folate, a process which does not occur in humans. Humans do not synthesize folate, and must acquire it through diet.[13]"
+                        ]
+                    },
+                    "Pharmacokinetics": {
+                        "content": [
+                            "Sulfamethoxazole is well-absorbed when administered topically. It is rapidly absorbed when it is orally administered.[1]",
+                            "Sulfamethoxazole distributes into most body tissues as well as into sputum, vaginal fluid, and middle ear fluid.[8][11] It also crosses the placenta. About 70% of the drug is bound to plasma proteins. Its Tmax (or time to reach maximum drug concentration in plasma) occurs 1 to 4 hours after oral administration. The mean serum half-life of sulfamethoxazole is 10 hours.[8] However, the half-life of the drug noticeably increases in people with creatinine clearance rates equal to or less than 30 mL/minute. A half-life of 22–50 hours has been reported for people with creatinine clearances of less than 10 mL/minute.[11]",
+                            "Sulfamethoxazole is metabolized in the human liver to at least 5 metabolites. These metabolites are the N4-acetyl-, N4-hydroxy-, 5-methylhydroxy-, N4-acetyl-5-methylhydroxy-sulfamethoxazole metabolites, and an N-glucuronide conjugate. The CYP2C9 enzyme is responsible for the formation of the N4-hydroxy metabolite. In vitro studies suggest sulfamethoxazole is not a substrate of the P-glycoprotein transporter.[8]",
+                            "Sulfamethoxazole is primarily renally excreted via glomerular filtration and tubular secretion.[8] About 20% of the sulfamethoxazole in urine is the unchanged drug, about 15–20% is the N-glucuronide conjugate, and about 50–70 % is the acetylated metabolite.[11] Sulfamethoxazole is also excreted in human milk.[8]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of cytochrome P450 modulators"
+                        ]
+                    },
+                    "Notes": {
+                        "content": [
+                            "<info> ^ a b c \"Sulfamethoxazole\". DrugBank. Retrieved 5 November 2015.",
+                            "<info> ^ Brunton L, Chabner BA, Knollman B (2011). Goodman and Gilman's The pharmacological Basis of Therapeautics. The McGraw-Hill Companies, Inc. pp. 1463–1469. ISBN 9780071624428.{{cite book}}:  CS1 maint: location missing publisher (link)",
+                            "<info> ^ \"Sulfamethoxazole\". Pharmaceutical Manufacturing Encyclopedia. Vol. 4 (3rd ed.). William Andrew Publishing. 2013-10-22. ISBN 9780815518563.",
+                            "<info> ^ Kemnic TR, Coleman M (November 2022). \"Trimethoprim Sulfamethoxazole.\". StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing. PMID 30020604.",
+                            "<info> ^ Roth L, Adler M, Jain T, Bempong D (June 2018). \"Monographs for medicines on WHO's Model List of Essential Medicines\". Bulletin of the World Health Organization. 96 (6): 378–385. doi:10.2471/blt.17.205807. PMC 5996216. PMID 29904220.",
+                            "<info> ^ \"Sulfamethoxazole - Substance Summary\". PubChem. National Center for Biotechnology Information (NCBI), National Library of Medicine (NLM), National Institutes of Health (NIH).",
+                            "<info> ^ \"Sulfamethoxazole\". ChemDB. National Institute of Allergy and Infectious Diseases (NIAID), National Institutes of Health (NIH). Archived from the original on 2012-12-15.",
+                            "<info> ^ a b c d e f g \"Bactrim USPI\" (PDF). Caraco Pharmaceutical Laboratories, Ltd. U.S. Food and Drug Administration. November 2013. Archived from the original (PDF) on March 4, 2016.",
+                            "<info> ^ a b Wulf NR, Matuszewski KA (September 2013). \"Sulfonamide cross-reactivity: is there evidence to support broad cross-allergenicity?\". American Journal of Health-System Pharmacy. 70 (17): 1483–1494. doi:10.2146/ajhp120291. PMID 23943179.",
+                            "<info> ^ a b Choquet-Kastylevsky G, Vial T, Descotes J (January 2002). \"Allergic adverse reactions to sulfonamides\". Current Allergy and Asthma Reports. 2 (1): 16–25. doi:10.1007/s11882-002-0033-y. PMID 11895621. S2CID 19624750.",
+                            "<info> ^ a b c d \"Sulfamethoxazole\". Toxnet. U.S. National Library of Medicine.",
+                            "<info> ^ Mercer MA (September 2022). \"Sulfonamides and Sulfonamide Combinations Use in Animals\". Merck Veterinary Manual. Retrieved 2015-11-05.",
+                            "<info> ^ Werth BJ (September 2022). \"Sulfonamides - Infectious Diseases\". Merck Manuals Professional Edition. Retrieved 2015-11-05."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

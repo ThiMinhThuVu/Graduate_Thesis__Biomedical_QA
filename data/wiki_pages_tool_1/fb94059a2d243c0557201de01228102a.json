@@ -1,0 +1,127 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/erbin_(protein)": {
+                "title": "Erbin (protein)",
+                "url": "https://en.wikipedia.org/wiki/erbin_(protein)",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Erbb2 interacting protein (ERBB2IP), also known as erbin, is a protein which in humans is encoded by the ERBB2IP gene.[5] Discovered in 1997, erbin is a 200kDa protein containing a PDZ domain.[6]",
+                    "",
+                    "=== Function ===",
+                    "This gene is a member of the leucine-rich repeat and PDZ domain (LAP) family. The encoded protein contains 17 leucine-rich repeats and one PDZ domain. It binds to the unphosphorylated form of the ERBB2 protein and regulates ERBB2 function and localization. It has also been shown to affect the Ras signaling pathway by disrupting Ras-Raf interaction. Alternate transcriptional splice variants encoding different isoforms have been found for this gene, but only two of them have been characterized to date.[5]",
+                    "",
+                    "=== Clinical significance ===",
+                    "Erbin's C-terminal PDZ domain is able to bind to ErbB2, a protein tyrosine kinase which is often associated with poor prognosis in epidermal oncogenesis.[7]   Erbin's N-terminal region has been shown to disrupt Ras to Raf binding and may be, through this action, a tumor suppressing protein.[8]",
+                    "",
+                    "=== Interactions ===",
+                    "Erbin has been shown to interact with:",
+                    "<info> Mothers against decapentaplegic homolog 3[13]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000112851 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000021709 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ a b \"Entrez Gene: ERBB2IP erbb2 interacting protein\".",
+                    "<info> ^ Borg JP, Marchetto S, Le Bivic A, Ollendorff V, Jaulin-Bastard F, Saito H, Fournier E, Adélaïde J, Margolis B, Birnbaum D (2000). \"ERBIN: a basolateral PDZ protein that interacts with the mammalian ERBB2/HER2 receptor\" (PDF). Nat. Cell Biol. 2 (7): 407–414. doi:10.1038/35017038. PMID 10878805. S2CID 9566913.",
+                    "<info> ^ Kolch W (2003). \"Erbin: sorting out ErbB2 receptors or giving Ras a break?\". Sci STKE. 2003 (199): pe37. doi:10.1126/stke.2003.199.pe37. PMID 12966186. S2CID 12590559.",
+                    "<info> ^ Dai P, Xiong WC, Mei L (2006). \"Erbin inhibits RAF activation by disrupting the sur-8-Ras-Raf complex\". J. Biol. Chem. 281 (2): 927–933. doi:10.1074/jbc.M507360200. PMID 16301319.",
+                    "<info> ^ a b Favre B, Fontao L, Koster J, Shafaatian R, Jaunin F, Saurat JH, Sonnenberg A, Borradori L (August 2001). \"The hemidesmosomal protein bullous pemphigoid antigen 1 and the integrin beta 4 subunit bind to ERBIN. Molecular cloning of multiple alternative splice variants of ERBIN and analysis of their tissue expression\". J. Biol. Chem. 276 (35): 32427–36. doi:10.1074/jbc.M011005200. PMID 11375975.",
+                    "<info> ^ Jaulin-Bastard F, Saito H, Le Bivic A, Ollendorff V, Marchetto S, Birnbaum D, Borg JP (May 2001). \"The ERBB2/HER2 receptor differentially interacts with ERBIN and PICK1 PSD-95/DLG/ZO-1 domain proteins\". J. Biol. Chem. 276 (18): 15256–63. doi:10.1074/jbc.M010032200. PMID 11278603.",
+                    "<info> ^ Borg JP, Marchetto S, Le Bivic A, Ollendorff V, Jaulin-Bastard F, Saito H, Fournier E, Adélaïde J, Margolis B, Birnbaum D (July 2000). \"ERBIN: a basolateral PDZ protein that interacts with the mammalian ERBB2/HER2 receptor\" (PDF). Nat. Cell Biol. 2 (7): 407–14. doi:10.1038/35017038. PMID 10878805. S2CID 9566913.",
+                    "<info> ^ Huang YZ, Zang M, Xiong WC, Luo Z, Mei L (January 2003). \"Erbin suppresses the MAP kinase pathway\". J. Biol. Chem. 278 (2): 1108–14. doi:10.1074/jbc.M205413200. PMID 12379659.",
+                    "<info> ^ Warner DR, Pisano MM, Roberts EA, Greene RM (March 2003). \"Identification of three novel Smad binding proteins involved in cell polarity\". FEBS Lett. 539 (1–3): 167–73. Bibcode:2003FEBSL.539..167W. doi:10.1016/s0014-5793(03)00155-8. PMID 12650946. S2CID 7429554.",
+                    "<info> ^ Izawa I, Nishizawa M, Tomono Y, Ohtakara K, Takahashi T, Inagaki M (May 2002). \"ERBIN associates with p0071, an armadillo protein, at cell-cell junctions of epithelial cells\". Genes Cells. 7 (5): 475–85. doi:10.1046/j.1365-2443.2002.00533.x. PMID 12047349. S2CID 12598418.",
+                    "<info> ^ Jaulin-Bastard F, Arsanto JP, Le Bivic A, Navarro C, Vély F, Saito H, Marchetto S, Hatzfeld M, Santoni MJ, Birnbaum D, Borg JP (January 2002). \"Interaction between Erbin and a Catenin-related protein in epithelial cells\". J. Biol. Chem. 277 (4): 2869–75. doi:10.1074/jbc.M109652200. PMID 11711544.",
+                    "<info> ^ Laura RP, Witt AS, Held HA, Gerstner R, Deshayes K, Koehler MF, Kosik KS, Sidhu SS, Lasky LA (April 2002). \"The Erbin PDZ domain binds with high affinity and specificity to the carboxyl termini of delta-catenin and ARVCF\". J. Biol. Chem. 277 (15): 12906–14. doi:10.1074/jbc.M200818200. PMID 11821434.",
+                    "<info> ^ Stevens, Payton D.; Wen, Yang-An; Xiong, Xiaopeng; Zaytseva, Yekaterina Y.; Li, Austin T.; Wang, Chi; Stevens, Ashley T.; Farmer, Trevor N.; Gan, Tong; Weiss, Heidi L.; Inagaki, Masaki (September 1, 2018). \"Erbin Suppresses KSR1-Mediated RAS/RAF Signaling and Tumorigenesis in Colorectal Cancer\". Cancer Research. 78 (17): 4839–4852. doi:10.1158/0008-5472.CAN-17-3629. ISSN 1538-7445. PMC 6510240. PMID 29980571.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Nakajima D, Okazaki N, Yamakawa H, Kikuno R, Ohara O, Nagase T (2003). \"Construction of expression-ready cDNA clones for KIAA genes: manual curation of 330 KIAA cDNA clones\". DNA Res. 9 (3): 99–106. doi:10.1093/dnares/9.3.99. PMID 12168954.",
+                    "<info> Kolch W (2003). \"Erbin: sorting out ErbB2 receptors or giving Ras a break?\". Sci. STKE. 2003 (199): pe37. doi:10.1126/stke.2003.199.pe37. PMID 12966186. S2CID 12590559.",
+                    "<info> Nagase T, Ishikawa K, Kikuno R, Hirosawa M, Nomura N, Ohara O (2000). \"Prediction of the coding sequences of unidentified human genes. XV. The complete sequences of 100 new cDNA clones from brain which code for large proteins in vitro\". DNA Res. 6 (5): 337–45. doi:10.1093/dnares/6.5.337. PMID 10574462.",
+                    "<info> Borg JP, Marchetto S, Le Bivic A, Ollendorff V, Jaulin-Bastard F, Saito H, Fournier E, Adélaïde J, Margolis B, Birnbaum D (2000). \"ERBIN: a basolateral PDZ protein that interacts with the mammalian ERBB2/HER2 receptor\" (PDF). Nat. Cell Biol. 2 (7): 407–14. doi:10.1038/35017038. PMID 10878805. S2CID 9566913.",
+                    "<info> Jaulin-Bastard F, Saito H, Le Bivic A, Ollendorff V, Marchetto S, Birnbaum D, Borg JP (2001). \"The ERBB2/HER2 receptor differentially interacts with ERBIN and PICK1 PSD-95/DLG/ZO-1 domain proteins\". J. Biol. Chem. 276 (18): 15256–63. doi:10.1074/jbc.M010032200. PMID 11278603.",
+                    "<info> Huang YZ, Wang Q, Xiong WC, Mei L (2001). \"Erbin is a protein concentrated at postsynaptic membranes that interacts with PSD-95\". J. Biol. Chem. 276 (22): 19318–26. doi:10.1074/jbc.M100494200. PMID 11279080.",
+                    "<info> Favre B, Fontao L, Koster J, Shafaatian R, Jaunin F, Saurat JH, Sonnenberg A, Borradori L (2001). \"The hemidesmosomal protein bullous pemphigoid antigen 1 and the integrin beta 4 subunit bind to ERBIN. Molecular cloning of multiple alternative splice variants of ERBIN and analysis of their tissue expression\". J. Biol. Chem. 276 (35): 32427–36. doi:10.1074/jbc.M011005200. PMID 11375975.",
+                    "<info> Saito H, Santoni MJ, Arsanto JP, Jaulin-Bastard F, Le Bivic A, Marchetto S, Audebert S, Isnardon D, Adélaïde J, Birnbaum D, Borg JP (2001). \"Lano, a novel LAP protein directly connected to MAGUK proteins in epithelial cells\". J. Biol. Chem. 276 (34): 32051–5. doi:10.1074/jbc.C100330200. PMID 11440998.",
+                    "<info> Jaulin-Bastard F, Arsanto JP, Le Bivic A, Navarro C, Vély F, Saito H, Marchetto S, Hatzfeld M, Santoni MJ, Birnbaum D, Borg JP (2002). \"Interaction between Erbin and a Catenin-related protein in epithelial cells\". J. Biol. Chem. 277 (4): 2869–75. doi:10.1074/jbc.M109652200. PMID 11711544.",
+                    "<info> Laura RP, Witt AS, Held HA, Gerstner R, Deshayes K, Koehler MF, Kosik KS, Sidhu SS, Lasky LA (2002). \"The Erbin PDZ domain binds with high affinity and specificity to the carboxyl termini of delta-catenin and ARVCF\". J. Biol. Chem. 277 (15): 12906–14. doi:10.1074/jbc.M200818200. PMID 11821434.",
+                    "<info> Izawa I, Nishizawa M, Tomono Y, Ohtakara K, Takahashi T, Inagaki M (2002). \"ERBIN associates with p0071, an armadillo protein, at cell-cell junctions of epithelial cells\". Genes Cells. 7 (5): 475–85. doi:10.1046/j.1365-2443.2002.00533.x. PMID 12047349. S2CID 12598418.",
+                    "<info> Ohno H, Hirabayashi S, Iizuka T, Ohnishi H, Fujita T, Hata Y (2002). \"Localization of p0071-interacting proteins, plakophilin-related armadillo-repeat protein-interacting protein (PAPIN) and ERBIN, in epithelial cells\". Oncogene. 21 (46): 7042–9. doi:10.1038/sj.onc.1205852. PMID 12370826.",
+                    "<info> Huang YZ, Zang M, Xiong WC, Luo Z, Mei L (2003). \"Erbin suppresses the MAP kinase pathway\". J. Biol. Chem. 278 (2): 1108–14. doi:10.1074/jbc.M205413200. PMID 12379659.",
+                    "<info> Birrane G, Chung J, Ladias JA (2003). \"Novel mode of ligand recognition by the Erbin PDZ domain\". J. Biol. Chem. 278 (3): 1399–402. doi:10.1074/jbc.C200571200. PMID 12444095.",
+                    "<info> Skelton NJ, Koehler MF, Zobel K, Wong WL, Yeh S, Pisabarro MT, Yin JP, Lasky LA, Sidhu SS (2003). \"Origins of PDZ domain ligand specificity. Structure determination and mutagenesis of the Erbin PDZ domain\". J. Biol. Chem. 278 (9): 7645–54. doi:10.1074/jbc.M209751200. PMID 12446668.",
+                    "<info> Warner DR, Pisano MM, Roberts EA, Greene RM (2003). \"Identification of three novel Smad binding proteins involved in cell polarity\". FEBS Lett. 539 (1–3): 167–73. Bibcode:2003FEBSL.539..167W. doi:10.1016/S0014-5793(03)00155-8. PMID 12650946. S2CID 7429554.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Erbb2 interacting protein (ERBB2IP), also known as erbin, is a protein which in humans is encoded by the ERBB2IP gene.[5] Discovered in 1997, erbin is a 200kDa protein containing a PDZ domain.[6]"
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "This gene is a member of the leucine-rich repeat and PDZ domain (LAP) family. The encoded protein contains 17 leucine-rich repeats and one PDZ domain. It binds to the unphosphorylated form of the ERBB2 protein and regulates ERBB2 function and localization. It has also been shown to affect the Ras signaling pathway by disrupting Ras-Raf interaction. Alternate transcriptional splice variants encoding different isoforms have been found for this gene, but only two of them have been characterized to date.[5]"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "Erbin's C-terminal PDZ domain is able to bind to ErbB2, a protein tyrosine kinase which is often associated with poor prognosis in epidermal oncogenesis.[7]   Erbin's N-terminal region has been shown to disrupt Ras to Raf binding and may be, through this action, a tumor suppressing protein.[8]"
+                        ]
+                    },
+                    "Interactions": {
+                        "content": [
+                            "Erbin has been shown to interact with:",
+                            "<info> Mothers against decapentaplegic homolog 3[13]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000112851 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000021709 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ a b \"Entrez Gene: ERBB2IP erbb2 interacting protein\".",
+                            "<info> ^ Borg JP, Marchetto S, Le Bivic A, Ollendorff V, Jaulin-Bastard F, Saito H, Fournier E, Adélaïde J, Margolis B, Birnbaum D (2000). \"ERBIN: a basolateral PDZ protein that interacts with the mammalian ERBB2/HER2 receptor\" (PDF). Nat. Cell Biol. 2 (7): 407–414. doi:10.1038/35017038. PMID 10878805. S2CID 9566913.",
+                            "<info> ^ Kolch W (2003). \"Erbin: sorting out ErbB2 receptors or giving Ras a break?\". Sci STKE. 2003 (199): pe37. doi:10.1126/stke.2003.199.pe37. PMID 12966186. S2CID 12590559.",
+                            "<info> ^ Dai P, Xiong WC, Mei L (2006). \"Erbin inhibits RAF activation by disrupting the sur-8-Ras-Raf complex\". J. Biol. Chem. 281 (2): 927–933. doi:10.1074/jbc.M507360200. PMID 16301319.",
+                            "<info> ^ a b Favre B, Fontao L, Koster J, Shafaatian R, Jaunin F, Saurat JH, Sonnenberg A, Borradori L (August 2001). \"The hemidesmosomal protein bullous pemphigoid antigen 1 and the integrin beta 4 subunit bind to ERBIN. Molecular cloning of multiple alternative splice variants of ERBIN and analysis of their tissue expression\". J. Biol. Chem. 276 (35): 32427–36. doi:10.1074/jbc.M011005200. PMID 11375975.",
+                            "<info> ^ Jaulin-Bastard F, Saito H, Le Bivic A, Ollendorff V, Marchetto S, Birnbaum D, Borg JP (May 2001). \"The ERBB2/HER2 receptor differentially interacts with ERBIN and PICK1 PSD-95/DLG/ZO-1 domain proteins\". J. Biol. Chem. 276 (18): 15256–63. doi:10.1074/jbc.M010032200. PMID 11278603.",
+                            "<info> ^ Borg JP, Marchetto S, Le Bivic A, Ollendorff V, Jaulin-Bastard F, Saito H, Fournier E, Adélaïde J, Margolis B, Birnbaum D (July 2000). \"ERBIN: a basolateral PDZ protein that interacts with the mammalian ERBB2/HER2 receptor\" (PDF). Nat. Cell Biol. 2 (7): 407–14. doi:10.1038/35017038. PMID 10878805. S2CID 9566913.",
+                            "<info> ^ Huang YZ, Zang M, Xiong WC, Luo Z, Mei L (January 2003). \"Erbin suppresses the MAP kinase pathway\". J. Biol. Chem. 278 (2): 1108–14. doi:10.1074/jbc.M205413200. PMID 12379659.",
+                            "<info> ^ Warner DR, Pisano MM, Roberts EA, Greene RM (March 2003). \"Identification of three novel Smad binding proteins involved in cell polarity\". FEBS Lett. 539 (1–3): 167–73. Bibcode:2003FEBSL.539..167W. doi:10.1016/s0014-5793(03)00155-8. PMID 12650946. S2CID 7429554.",
+                            "<info> ^ Izawa I, Nishizawa M, Tomono Y, Ohtakara K, Takahashi T, Inagaki M (May 2002). \"ERBIN associates with p0071, an armadillo protein, at cell-cell junctions of epithelial cells\". Genes Cells. 7 (5): 475–85. doi:10.1046/j.1365-2443.2002.00533.x. PMID 12047349. S2CID 12598418.",
+                            "<info> ^ Jaulin-Bastard F, Arsanto JP, Le Bivic A, Navarro C, Vély F, Saito H, Marchetto S, Hatzfeld M, Santoni MJ, Birnbaum D, Borg JP (January 2002). \"Interaction between Erbin and a Catenin-related protein in epithelial cells\". J. Biol. Chem. 277 (4): 2869–75. doi:10.1074/jbc.M109652200. PMID 11711544.",
+                            "<info> ^ Laura RP, Witt AS, Held HA, Gerstner R, Deshayes K, Koehler MF, Kosik KS, Sidhu SS, Lasky LA (April 2002). \"The Erbin PDZ domain binds with high affinity and specificity to the carboxyl termini of delta-catenin and ARVCF\". J. Biol. Chem. 277 (15): 12906–14. doi:10.1074/jbc.M200818200. PMID 11821434.",
+                            "<info> ^ Stevens, Payton D.; Wen, Yang-An; Xiong, Xiaopeng; Zaytseva, Yekaterina Y.; Li, Austin T.; Wang, Chi; Stevens, Ashley T.; Farmer, Trevor N.; Gan, Tong; Weiss, Heidi L.; Inagaki, Masaki (September 1, 2018). \"Erbin Suppresses KSR1-Mediated RAS/RAF Signaling and Tumorigenesis in Colorectal Cancer\". Cancer Research. 78 (17): 4839–4852. doi:10.1158/0008-5472.CAN-17-3629. ISSN 1538-7445. PMC 6510240. PMID 29980571."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Nakajima D, Okazaki N, Yamakawa H, Kikuno R, Ohara O, Nagase T (2003). \"Construction of expression-ready cDNA clones for KIAA genes: manual curation of 330 KIAA cDNA clones\". DNA Res. 9 (3): 99–106. doi:10.1093/dnares/9.3.99. PMID 12168954.",
+                            "<info> Kolch W (2003). \"Erbin: sorting out ErbB2 receptors or giving Ras a break?\". Sci. STKE. 2003 (199): pe37. doi:10.1126/stke.2003.199.pe37. PMID 12966186. S2CID 12590559.",
+                            "<info> Nagase T, Ishikawa K, Kikuno R, Hirosawa M, Nomura N, Ohara O (2000). \"Prediction of the coding sequences of unidentified human genes. XV. The complete sequences of 100 new cDNA clones from brain which code for large proteins in vitro\". DNA Res. 6 (5): 337–45. doi:10.1093/dnares/6.5.337. PMID 10574462.",
+                            "<info> Borg JP, Marchetto S, Le Bivic A, Ollendorff V, Jaulin-Bastard F, Saito H, Fournier E, Adélaïde J, Margolis B, Birnbaum D (2000). \"ERBIN: a basolateral PDZ protein that interacts with the mammalian ERBB2/HER2 receptor\" (PDF). Nat. Cell Biol. 2 (7): 407–14. doi:10.1038/35017038. PMID 10878805. S2CID 9566913.",
+                            "<info> Jaulin-Bastard F, Saito H, Le Bivic A, Ollendorff V, Marchetto S, Birnbaum D, Borg JP (2001). \"The ERBB2/HER2 receptor differentially interacts with ERBIN and PICK1 PSD-95/DLG/ZO-1 domain proteins\". J. Biol. Chem. 276 (18): 15256–63. doi:10.1074/jbc.M010032200. PMID 11278603.",
+                            "<info> Huang YZ, Wang Q, Xiong WC, Mei L (2001). \"Erbin is a protein concentrated at postsynaptic membranes that interacts with PSD-95\". J. Biol. Chem. 276 (22): 19318–26. doi:10.1074/jbc.M100494200. PMID 11279080.",
+                            "<info> Favre B, Fontao L, Koster J, Shafaatian R, Jaunin F, Saurat JH, Sonnenberg A, Borradori L (2001). \"The hemidesmosomal protein bullous pemphigoid antigen 1 and the integrin beta 4 subunit bind to ERBIN. Molecular cloning of multiple alternative splice variants of ERBIN and analysis of their tissue expression\". J. Biol. Chem. 276 (35): 32427–36. doi:10.1074/jbc.M011005200. PMID 11375975.",
+                            "<info> Saito H, Santoni MJ, Arsanto JP, Jaulin-Bastard F, Le Bivic A, Marchetto S, Audebert S, Isnardon D, Adélaïde J, Birnbaum D, Borg JP (2001). \"Lano, a novel LAP protein directly connected to MAGUK proteins in epithelial cells\". J. Biol. Chem. 276 (34): 32051–5. doi:10.1074/jbc.C100330200. PMID 11440998.",
+                            "<info> Jaulin-Bastard F, Arsanto JP, Le Bivic A, Navarro C, Vély F, Saito H, Marchetto S, Hatzfeld M, Santoni MJ, Birnbaum D, Borg JP (2002). \"Interaction between Erbin and a Catenin-related protein in epithelial cells\". J. Biol. Chem. 277 (4): 2869–75. doi:10.1074/jbc.M109652200. PMID 11711544.",
+                            "<info> Laura RP, Witt AS, Held HA, Gerstner R, Deshayes K, Koehler MF, Kosik KS, Sidhu SS, Lasky LA (2002). \"The Erbin PDZ domain binds with high affinity and specificity to the carboxyl termini of delta-catenin and ARVCF\". J. Biol. Chem. 277 (15): 12906–14. doi:10.1074/jbc.M200818200. PMID 11821434.",
+                            "<info> Izawa I, Nishizawa M, Tomono Y, Ohtakara K, Takahashi T, Inagaki M (2002). \"ERBIN associates with p0071, an armadillo protein, at cell-cell junctions of epithelial cells\". Genes Cells. 7 (5): 475–85. doi:10.1046/j.1365-2443.2002.00533.x. PMID 12047349. S2CID 12598418.",
+                            "<info> Ohno H, Hirabayashi S, Iizuka T, Ohnishi H, Fujita T, Hata Y (2002). \"Localization of p0071-interacting proteins, plakophilin-related armadillo-repeat protein-interacting protein (PAPIN) and ERBIN, in epithelial cells\". Oncogene. 21 (46): 7042–9. doi:10.1038/sj.onc.1205852. PMID 12370826.",
+                            "<info> Huang YZ, Zang M, Xiong WC, Luo Z, Mei L (2003). \"Erbin suppresses the MAP kinase pathway\". J. Biol. Chem. 278 (2): 1108–14. doi:10.1074/jbc.M205413200. PMID 12379659.",
+                            "<info> Birrane G, Chung J, Ladias JA (2003). \"Novel mode of ligand recognition by the Erbin PDZ domain\". J. Biol. Chem. 278 (3): 1399–402. doi:10.1074/jbc.C200571200. PMID 12444095.",
+                            "<info> Skelton NJ, Koehler MF, Zobel K, Wong WL, Yeh S, Pisabarro MT, Yin JP, Lasky LA, Sidhu SS (2003). \"Origins of PDZ domain ligand specificity. Structure determination and mutagenesis of the Erbin PDZ domain\". J. Biol. Chem. 278 (9): 7645–54. doi:10.1074/jbc.M209751200. PMID 12446668.",
+                            "<info> Warner DR, Pisano MM, Roberts EA, Greene RM (2003). \"Identification of three novel Smad binding proteins involved in cell polarity\". FEBS Lett. 539 (1–3): 167–73. Bibcode:2003FEBSL.539..167W. doi:10.1016/S0014-5793(03)00155-8. PMID 12650946. S2CID 7429554."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

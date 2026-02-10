@@ -1,0 +1,51 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/ackerman_syndrome": {
+                "title": "Ackerman syndrome",
+                "url": "https://en.wikipedia.org/wiki/ackerman_syndrome",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Ackerman syndrome or interstitial granulomatous dermatitis is a familial syndrome of fused molar roots with a single canal (taurodontism), hypotrichosis, full upper lip without a cupid's bow, thickened and wide philtrum, and occasional juvenile glaucoma.[1][2][3]\nIt was described by James L. Ackerman, A. Leon Ackerman, and A. Bernard Ackerman.[4]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "<info> Distinct facial features: full upper lip, absence of cupid's bow, thick philtrum",
+                    "<info> Increased pigmentation of finger joints",
+                    "<info> Clinodactyly of fifth finger.[5]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Ackerman JL, Ackerman AL, Ackerman AB (1973). \"Taurodont, pyramidal and fused molar roots associated with other anomalies in a kindred\". Am. J. Phys. Anthropol. 38 (3): 681–94. doi:10.1002/ajpa.1330380305. PMID 4349385.",
+                    "<info> ^ Busquets-Pérez N, Narvaez J, Valverde-García J (2006). \"Interstitial granulomatous dermatitis with arthritis (Ackerman syndrome)\". J. Rheumatol. 33 (6): 1207–9. PMID 16755676.",
+                    "<info> ^ Kroesen S, Itin PH, Hasler P (2003). \"Arthritis and interstitial granulomatous dermatitis (Ackerman syndrome) with pulmonary silicosis\". Semin. Arthritis Rheum. 32 (5): 334–40. doi:10.1053/sarh.2003.50016. PMID 12701044.",
+                    "<info> ^ Ackerman JL, Ackerman AL, Ackerman AB (1973). \"A New Dental, Ocular and Cutaneous Syndrome\". International Journal of Dermatology. 12 (5): 285–89. doi:10.1111/j.1365-4362.1973.tb00056.x. PMID 4355828. S2CID 27774823.",
+                    "<info> ^ \"Symptoms of Ackerman syndrome - RightDiagnosis.com\". www.rightdiagnosis.com. Retrieved 2016-04-14.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Ackerman syndrome or interstitial granulomatous dermatitis is a familial syndrome of fused molar roots with a single canal (taurodontism), hypotrichosis, full upper lip without a cupid's bow, thickened and wide philtrum, and occasional juvenile glaucoma.[1][2][3]\nIt was described by James L. Ackerman, A. Leon Ackerman, and A. Bernard Ackerman.[4]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "<info> Distinct facial features: full upper lip, absence of cupid's bow, thick philtrum",
+                            "<info> Increased pigmentation of finger joints",
+                            "<info> Clinodactyly of fifth finger.[5]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Ackerman JL, Ackerman AL, Ackerman AB (1973). \"Taurodont, pyramidal and fused molar roots associated with other anomalies in a kindred\". Am. J. Phys. Anthropol. 38 (3): 681–94. doi:10.1002/ajpa.1330380305. PMID 4349385.",
+                            "<info> ^ Busquets-Pérez N, Narvaez J, Valverde-García J (2006). \"Interstitial granulomatous dermatitis with arthritis (Ackerman syndrome)\". J. Rheumatol. 33 (6): 1207–9. PMID 16755676.",
+                            "<info> ^ Kroesen S, Itin PH, Hasler P (2003). \"Arthritis and interstitial granulomatous dermatitis (Ackerman syndrome) with pulmonary silicosis\". Semin. Arthritis Rheum. 32 (5): 334–40. doi:10.1053/sarh.2003.50016. PMID 12701044.",
+                            "<info> ^ Ackerman JL, Ackerman AL, Ackerman AB (1973). \"A New Dental, Ocular and Cutaneous Syndrome\". International Journal of Dermatology. 12 (5): 285–89. doi:10.1111/j.1365-4362.1973.tb00056.x. PMID 4355828. S2CID 27774823.",
+                            "<info> ^ \"Symptoms of Ackerman syndrome - RightDiagnosis.com\". www.rightdiagnosis.com. Retrieved 2016-04-14."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

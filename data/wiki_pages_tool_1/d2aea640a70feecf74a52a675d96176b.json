@@ -1,0 +1,213 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/leber_congenital_amaurosis": {
+                "title": "Leber congenital amaurosis",
+                "url": "https://en.wikipedia.org/wiki/leber_congenital_amaurosis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Leber congenital amaurosis (LCA) is a rare inherited eye disease that appears at birth or in the first few months of life.[2]",
+                    "It affects about 1 in 40,000 newborns.[1] LCA was first described by Theodor Leber in the 19th century.[3][4] It should not be confused with Leber's hereditary optic neuropathy, which is a different disease also described by Theodor Leber.",
+                    "One form of LCA was successfully treated with gene therapy in 2008.[5][6][7][8]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "LCA symptoms typically begin in the first few months of life, most commonly with involuntary twitching of the eye (nystagmus). Affected infants may show misaligned eyes when looking at something (strabismus), aversion to light (photophobia), and poke or rub at their eyes (Franceschetti's oculodigital sign).[9] Those with LCA invariably experience vision problems. Affected infants show decreased visual response to objects. Loss of visual acuity is severe, with affected individuals' vision ranging from 20/200 to 20/400.[note 1] Around a third of those affected completely lose perception of light.[10]",
+                    "At an eye exam, the pupils may not respond normally to light. Some affected individuals have cloudy eyes (cataracts), and irregularly shaped corneas (keratoconus).[9] Retinal exams typically look normal, especially in the young, though retinal abnormalities can appear later in life.[10]",
+                    "Aside from eye problems, children with LCA are typically healthy.[11]",
+                    "",
+                    "=== Cause ===",
+                    "LCA is a genetic disease and can be caused by pathogenic variants in at least 28 different genes.[12] Variants in three of these genes – IMPDH1, OTX2, and CRX – can cause LCA in an autosomal dominant manner, meaning inheriting a single copy of a pathogenic variant can result in disease. Variants in the remaining genes associated with LCA cause disease in an autosomal recessive manner, meaning one must inherit copies of the pathogenic variant from both parents to develop LCA.[12] Genes associated with LCA have a variety of roles in the development of the eye:[citation needed]",
+                    "<info> OTX2 is involved in the development of the retina;",
+                    "<info> CRB1, CRX, GDF6, and PRPH2 in the formation of retinal photoreceptor cells;",
+                    "<info> AIPL1 and GUCY2D in phototransduction (converting light into electrical signals for the brain);",
+                    "<info> ALMS1, CCT2, CEP290, CLUAP1, IFT140, IQCB1, LCA5, MYO7A, RD3,  RPGRIP1, SPATA7, and TULP1 in maintaining the cilia on photoreceptor cells;",
+                    "<info> LRAT, RDH12, and RPE65 in replenishing retinal levels for the visual cycle;",
+                    "<info> IMPDH1 in guanine synthesis (involved in maintaining retinal levels);",
+                    "<info> CABP4, CNGA3, and KCNJ13 in photoreceptor response to light.[12][13]",
+                    "Pathogenic variants of any of these genes cause dysfunction in those associated processes, which leads to severe vision loss. Variants in DTHD1 and NMNAT1 also cause LCA, though these genes' roles in vision development are not yet known.[13]",
+                    "Among the gene variants that cause LCA, CEP290 and GUCYD variants are the most common, each causing up to 20% of LCA cases. Other common variants are in CRB1 (around 10% of cases), RPE65 (up to 10%), AIPL1 (up to 8%), RDH12 (up to 5%), and RPGRIP1 (around 5%).[14] Around 25% of people with LCA do not have any of the known LCA-causing pathogenic gene variants; the cause of their LCA is unknown.[12]",
+                    "",
+                    "=== Diagnosis ===",
+                    "LCA is diagnosed clinically, by a combination of vision loss, an abnormal response of the pupils to light, and by abnormal response to electroretinography, a test that measures the electrical response of the retina to light.[10]",
+                    "",
+                    "=== Treatment ===",
+                    "One form of LCA, in patients with LCA2 bearing a mutation in the RPE65 gene, has been successfully treated in clinical trials using gene therapy. The results of three early clinical trials were published in 2008 demonstrating the safety and efficacy of using adeno-associated virus to deliver gene therapy to restore vision in LCA patients. In all three clinical trials, patients recovered functional vision without apparent side effects.[5][6][7][8] These studies, which used adeno-associated virus, have spawned a number of new studies investigating gene therapy for human retinal disease.[citation needed] On 19 December 2017, the U.S. Food and Drug Administration approved voretigene neparvovec-rzyl (Luxturna), an adeno-associated virus vector-based gene therapy for children and adults with biallelic RPE65 gene mutations responsible for retinal dystrophy, including Leber congenital amaurosis. Patients must have viable retinal cells as a prerequisite for the intraocular administration of Luxturna.[15] Another recent trial from The OHSU Casey Eye Institute used CRISPR to treat LCA starting in 2020. The experimental treatment consisted in editing a mutation of the CEP290 gene, which provides instructions to create a protein that is critical for sight. Results were released in 2023 with 79% of the patients showing improvement in at least one of four measured outcomes.[16]",
+                    "For those who cannot benefit from gene therapy, LCA treatment is supportive, and meant to facilitate living with visual impairment. Some benefit from vision aids such as glasses, magnifiers, and enhancers. Other resources helpful for those with visual impairment include educational programs, special education teachers, and service animals.[17]",
+                    "",
+                    "=== Epidemiology ===",
+                    "Around 2–3 out of every 100,000 people have LCA – an estimated 180,000 people worldwide.[18] LCA is a common cause of blindness in the young; around 20% of children in schools for the blind have LCA.[19]",
+                    "",
+                    "=== History ===",
+                    "LCA was originally described as a variety of retinitis pigmentosa by Theodor Leber in 1869.[18]",
+                    "",
+                    "=== Popular culture ===",
+                    "<info> In the episode \"The Blackout in the Blizzard\" (Season 6, Episode 16) of the television drama Bones, Dr. Jack Hodgins and his pregnant wife Angela Montenegro, who is an LCA carrier, have to wait during a citywide blackout for Hodgins's genetic test results, to see if he is also an LCA carrier. He does indeed turn out to be a carrier, giving their unborn child a 25% chance of having LCA.[citation needed]",
+                    "<info> In the television series ER (Season 14, Episode 12 \"Believe the Unseen\") Dr. Abby Lockhart diagnoses a young foster girl with Leber congenital amaurosis. The girl to this point hid her condition from her foster families. The episode contains some information about symptoms, clinical diagnosis and mentions gene replacement therapy and clinical trials as hope for help in managing the condition.[citation needed]",
+                    "<info> In the Korean drama The King of Dramas (Episode 16, \"In Search of Lost Time\") Anthony Kim, played by Kim Myung-min, is diagnosed with Leber congenital amaurosis, the same disease that made his mother blind.[citation needed]",
+                    "<info> Four-year-old Gavin who suffers from a form of LCA was made famous in 2013 by a YouTube video showing him using his white cane for the first time to navigate down a curb.[20] He later appeared on the TV show Little Big Shots.[citation needed]",
+                    "<info> Akbar Khan, musician and disability activist from India",
+                    "<info> Alexandre Lloveras, French para-cyclist who represented France at the 2020 Summer Paralympics.",
+                    "<info> Anthony Ferraro, American athlete and social media personality",
+                    "<info> Bianca Borgella, Canadian para-athlete",
+                    "<info> Jada, daughter of Derrek Leon Lee an American former professional baseball first baseman.",
+                    "<info> Jason Dunkerley, a Canadian Paralympian athlete",
+                    "<info> Kelvin Tan, a Singaporean former Mandopop singer",
+                    "<info> Kim Umback, a Canadian cross-country skier",
+                    "<info> Kody Keplinger, American author of young adult and middle grade books",
+                    "<info> Letticia Martinez,  an American Paralympic swimmer who is both long course and short course American record holder",
+                    "<info> Scott Douglas MacIntyre, American singer, songwriter, and pianist, and the eighth place finalist on the eighth season of American Idol.",
+                    "<info> Tom Pernice Jr.'s daughter, an American professional golfer",
+                    "",
+                    "=== Notes ===",
+                    "<info> ^ With 20/200 vision, one can clearly see at 20 feet what would typically be seen clearly at 200 feet.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d e \"Leber congenital amaurosis\". Genetics Home Reference. August 2010. Retrieved 14 May 2017.",
+                    "<info> ^ Stone EM (December 2007). \"Leber congenital amaurosis - a model for efficient genetic testing of heterogeneous disorders: LXIV Edward Jackson Memorial Lecture\". American Journal of Ophthalmology. 144 (6): 791–811. doi:10.1016/j.ajo.2007.08.022. PMID 17964524.",
+                    "<info> ^ Leber's congenital amaurosis at Whonamedit?",
+                    "<info> ^ Leber T (1869). \"Über Retinitis pigmentosa und angeborene Amaurose\". Archiv für Ophthalmologie (in German). 15 (3): 1–25. doi:10.1007/BF02721213. S2CID 543893.",
+                    "<info> ^ a b Maguire AM, Simonelli F, Pierce EA, Pugh EN, Mingozzi F, Bennicelli J, et al. (May 2008). \"Safety and efficacy of gene transfer for Leber's congenital amaurosis\". The New England Journal of Medicine. 358 (21): 2240–8. doi:10.1056/NEJMoa0802315. PMC 2829748. PMID 18441370.",
+                    "<info> ^ a b Simonelli F, Maguire AM, Testa F, Pierce EA, Mingozzi F, Bennicelli JL, et al. (March 2010). \"Gene therapy for Leber's congenital amaurosis is safe and effective through 1.5 years after vector administration\". Molecular Therapy. 18 (3): 643–50. doi:10.1038/mt.2009.277. PMC 2839440. PMID 19953081.",
+                    "<info> ^ a b Cideciyan AV, Hauswirth WW, Aleman TS, Kaushal S, Schwartz SB, Boye SL, et al. (August 2009). \"Vision 1 year after gene therapy for Leber's congenital amaurosis\". The New England Journal of Medicine. 361 (7): 725–7. doi:10.1056/NEJMc0903652. PMC 2847775. PMID 19675341.",
+                    "<info> ^ a b Bainbridge JW, Smith AJ, Barker SS, Robbie S, Henderson R, Balaggan K, et al. (May 2008). \"Effect of gene therapy on visual function in Leber's congenital amaurosis\". The New England Journal of Medicine. 358 (21): 2231–9. CiteSeerX 10.1.1.574.4003. doi:10.1056/NEJMoa0802268. PMID 18441371.",
+                    "<info> ^ a b Schmitt, Ohns & DeVries 2023, \"Introduction\".",
+                    "<info> ^ a b c Schmitt, Ohns & DeVries 2023, \"Diagnosing LCA\".",
+                    "<info> ^ Schmitt, Ohns & DeVries 2023, \"Etiology of LCA\".",
+                    "<info> ^ a b c d Kondkar & Abu-Amero 2019, \"Genetic basis of LCA\".",
+                    "<info> ^ a b Kondkar & Abu-Amero 2019, \"Table 1. Overview of causal genes implicated in Leber congential amaurosis\".",
+                    "<info> ^ Kondkar & Abu-Amero 2019, \"Table 2. Commonly affected genes in LCA and their associated phenotypes.\".",
+                    "<info> ^ \"Approved Products - LUXTURNA\". FDA. 2019-04-05. Archived from the original on January 25, 2018.",
+                    "<info> ^ \"Participants of pioneering CRISPR gene editing trial see vision improve\". ScienceDaily. Retrieved 2024-05-12.",
+                    "<info> ^ Schmitt, Ohns & DeVries 2023, \"Treatment of LCA\".",
+                    "<info> ^ a b Kondkar & Abu-Amero 2019, \"Epidemiological, historical and clinical perspective of LCA\".",
+                    "<info> ^ \"Leber Congenital Amaurosis\". American Association for Pediatric Ophthalmology and Strabismus. April 2023. Retrieved 1 May 2023.",
+                    "<info> ^ \"4 yr old Gavin using his white cane to navigate down a curb independently\". YouTube. Archived from the original on 2021-12-21.",
+                    "<info> Kondkar AA, Abu-Amero KK (December 2019). \"Leber congenital amaurosis: Current genetic basis, scope for genetic testing and personalized medicine\". Exp Eye Res. 189 107834. doi:10.1016/j.exer.2019.107834. PMID 31639339. S2CID 204849679.",
+                    "<info> Schmitt TM, Ohns MJ, DeVries JJ (May 2023). \"Leber Congenital Amaurosis: Leading Cause of Inherited Blindness in Children\". Journal for Nurse Practitioners. 19 (5) 104560. doi:10.1016/j.nurpra.2023.104560. S2CID 258096914.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Gambino, Megan (December 17, 2008). \"Jocelyn Kaiser on 'Gene Therapy in a New Light'\". Science & Nature. Smithsonian. p. 124. Archived from the original on 25 June 2013. Retrieved 22 May 2021.",
+                    "<info> Lewis, Ricki (2012). The Forever Fix: Gene Therapy and the Boy Who Saved It. New York: St. Martin's Press. ISBN 978-0-312-68190-6. OCLC 740628904.",
+                    "",
+                    "=== External links ===",
+                    "<info> GeneReview/NIH/UW entry on Leber Congenital Amaurosis",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Leber congenital amaurosis (LCA) is a rare inherited eye disease that appears at birth or in the first few months of life.[2]",
+                            "It affects about 1 in 40,000 newborns.[1] LCA was first described by Theodor Leber in the 19th century.[3][4] It should not be confused with Leber's hereditary optic neuropathy, which is a different disease also described by Theodor Leber.",
+                            "One form of LCA was successfully treated with gene therapy in 2008.[5][6][7][8]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "LCA symptoms typically begin in the first few months of life, most commonly with involuntary twitching of the eye (nystagmus). Affected infants may show misaligned eyes when looking at something (strabismus), aversion to light (photophobia), and poke or rub at their eyes (Franceschetti's oculodigital sign).[9] Those with LCA invariably experience vision problems. Affected infants show decreased visual response to objects. Loss of visual acuity is severe, with affected individuals' vision ranging from 20/200 to 20/400.[note 1] Around a third of those affected completely lose perception of light.[10]",
+                            "At an eye exam, the pupils may not respond normally to light. Some affected individuals have cloudy eyes (cataracts), and irregularly shaped corneas (keratoconus).[9] Retinal exams typically look normal, especially in the young, though retinal abnormalities can appear later in life.[10]",
+                            "Aside from eye problems, children with LCA are typically healthy.[11]"
+                        ]
+                    },
+                    "Cause": {
+                        "content": [
+                            "LCA is a genetic disease and can be caused by pathogenic variants in at least 28 different genes.[12] Variants in three of these genes – IMPDH1, OTX2, and CRX – can cause LCA in an autosomal dominant manner, meaning inheriting a single copy of a pathogenic variant can result in disease. Variants in the remaining genes associated with LCA cause disease in an autosomal recessive manner, meaning one must inherit copies of the pathogenic variant from both parents to develop LCA.[12] Genes associated with LCA have a variety of roles in the development of the eye:[citation needed]",
+                            "<info> OTX2 is involved in the development of the retina;",
+                            "<info> CRB1, CRX, GDF6, and PRPH2 in the formation of retinal photoreceptor cells;",
+                            "<info> AIPL1 and GUCY2D in phototransduction (converting light into electrical signals for the brain);",
+                            "<info> ALMS1, CCT2, CEP290, CLUAP1, IFT140, IQCB1, LCA5, MYO7A, RD3,  RPGRIP1, SPATA7, and TULP1 in maintaining the cilia on photoreceptor cells;",
+                            "<info> LRAT, RDH12, and RPE65 in replenishing retinal levels for the visual cycle;",
+                            "<info> IMPDH1 in guanine synthesis (involved in maintaining retinal levels);",
+                            "<info> CABP4, CNGA3, and KCNJ13 in photoreceptor response to light.[12][13]",
+                            "Pathogenic variants of any of these genes cause dysfunction in those associated processes, which leads to severe vision loss. Variants in DTHD1 and NMNAT1 also cause LCA, though these genes' roles in vision development are not yet known.[13]",
+                            "Among the gene variants that cause LCA, CEP290 and GUCYD variants are the most common, each causing up to 20% of LCA cases. Other common variants are in CRB1 (around 10% of cases), RPE65 (up to 10%), AIPL1 (up to 8%), RDH12 (up to 5%), and RPGRIP1 (around 5%).[14] Around 25% of people with LCA do not have any of the known LCA-causing pathogenic gene variants; the cause of their LCA is unknown.[12]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "LCA is diagnosed clinically, by a combination of vision loss, an abnormal response of the pupils to light, and by abnormal response to electroretinography, a test that measures the electrical response of the retina to light.[10]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "One form of LCA, in patients with LCA2 bearing a mutation in the RPE65 gene, has been successfully treated in clinical trials using gene therapy. The results of three early clinical trials were published in 2008 demonstrating the safety and efficacy of using adeno-associated virus to deliver gene therapy to restore vision in LCA patients. In all three clinical trials, patients recovered functional vision without apparent side effects.[5][6][7][8] These studies, which used adeno-associated virus, have spawned a number of new studies investigating gene therapy for human retinal disease.[citation needed] On 19 December 2017, the U.S. Food and Drug Administration approved voretigene neparvovec-rzyl (Luxturna), an adeno-associated virus vector-based gene therapy for children and adults with biallelic RPE65 gene mutations responsible for retinal dystrophy, including Leber congenital amaurosis. Patients must have viable retinal cells as a prerequisite for the intraocular administration of Luxturna.[15] Another recent trial from The OHSU Casey Eye Institute used CRISPR to treat LCA starting in 2020. The experimental treatment consisted in editing a mutation of the CEP290 gene, which provides instructions to create a protein that is critical for sight. Results were released in 2023 with 79% of the patients showing improvement in at least one of four measured outcomes.[16]",
+                            "For those who cannot benefit from gene therapy, LCA treatment is supportive, and meant to facilitate living with visual impairment. Some benefit from vision aids such as glasses, magnifiers, and enhancers. Other resources helpful for those with visual impairment include educational programs, special education teachers, and service animals.[17]"
+                        ]
+                    },
+                    "Epidemiology": {
+                        "content": [
+                            "Around 2–3 out of every 100,000 people have LCA – an estimated 180,000 people worldwide.[18] LCA is a common cause of blindness in the young; around 20% of children in schools for the blind have LCA.[19]"
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "LCA was originally described as a variety of retinitis pigmentosa by Theodor Leber in 1869.[18]"
+                        ]
+                    },
+                    "Popular culture": {
+                        "content": [
+                            "<info> In the episode \"The Blackout in the Blizzard\" (Season 6, Episode 16) of the television drama Bones, Dr. Jack Hodgins and his pregnant wife Angela Montenegro, who is an LCA carrier, have to wait during a citywide blackout for Hodgins's genetic test results, to see if he is also an LCA carrier. He does indeed turn out to be a carrier, giving their unborn child a 25% chance of having LCA.[citation needed]",
+                            "<info> In the television series ER (Season 14, Episode 12 \"Believe the Unseen\") Dr. Abby Lockhart diagnoses a young foster girl with Leber congenital amaurosis. The girl to this point hid her condition from her foster families. The episode contains some information about symptoms, clinical diagnosis and mentions gene replacement therapy and clinical trials as hope for help in managing the condition.[citation needed]",
+                            "<info> In the Korean drama The King of Dramas (Episode 16, \"In Search of Lost Time\") Anthony Kim, played by Kim Myung-min, is diagnosed with Leber congenital amaurosis, the same disease that made his mother blind.[citation needed]",
+                            "<info> Four-year-old Gavin who suffers from a form of LCA was made famous in 2013 by a YouTube video showing him using his white cane for the first time to navigate down a curb.[20] He later appeared on the TV show Little Big Shots.[citation needed]",
+                            "<info> Akbar Khan, musician and disability activist from India",
+                            "<info> Alexandre Lloveras, French para-cyclist who represented France at the 2020 Summer Paralympics.",
+                            "<info> Anthony Ferraro, American athlete and social media personality",
+                            "<info> Bianca Borgella, Canadian para-athlete",
+                            "<info> Jada, daughter of Derrek Leon Lee an American former professional baseball first baseman.",
+                            "<info> Jason Dunkerley, a Canadian Paralympian athlete",
+                            "<info> Kelvin Tan, a Singaporean former Mandopop singer",
+                            "<info> Kim Umback, a Canadian cross-country skier",
+                            "<info> Kody Keplinger, American author of young adult and middle grade books",
+                            "<info> Letticia Martinez,  an American Paralympic swimmer who is both long course and short course American record holder",
+                            "<info> Scott Douglas MacIntyre, American singer, songwriter, and pianist, and the eighth place finalist on the eighth season of American Idol.",
+                            "<info> Tom Pernice Jr.'s daughter, an American professional golfer"
+                        ]
+                    },
+                    "Notes": {
+                        "content": [
+                            "<info> ^ With 20/200 vision, one can clearly see at 20 feet what would typically be seen clearly at 200 feet."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d e \"Leber congenital amaurosis\". Genetics Home Reference. August 2010. Retrieved 14 May 2017.",
+                            "<info> ^ Stone EM (December 2007). \"Leber congenital amaurosis - a model for efficient genetic testing of heterogeneous disorders: LXIV Edward Jackson Memorial Lecture\". American Journal of Ophthalmology. 144 (6): 791–811. doi:10.1016/j.ajo.2007.08.022. PMID 17964524.",
+                            "<info> ^ Leber's congenital amaurosis at Whonamedit?",
+                            "<info> ^ Leber T (1869). \"Über Retinitis pigmentosa und angeborene Amaurose\". Archiv für Ophthalmologie (in German). 15 (3): 1–25. doi:10.1007/BF02721213. S2CID 543893.",
+                            "<info> ^ a b Maguire AM, Simonelli F, Pierce EA, Pugh EN, Mingozzi F, Bennicelli J, et al. (May 2008). \"Safety and efficacy of gene transfer for Leber's congenital amaurosis\". The New England Journal of Medicine. 358 (21): 2240–8. doi:10.1056/NEJMoa0802315. PMC 2829748. PMID 18441370.",
+                            "<info> ^ a b Simonelli F, Maguire AM, Testa F, Pierce EA, Mingozzi F, Bennicelli JL, et al. (March 2010). \"Gene therapy for Leber's congenital amaurosis is safe and effective through 1.5 years after vector administration\". Molecular Therapy. 18 (3): 643–50. doi:10.1038/mt.2009.277. PMC 2839440. PMID 19953081.",
+                            "<info> ^ a b Cideciyan AV, Hauswirth WW, Aleman TS, Kaushal S, Schwartz SB, Boye SL, et al. (August 2009). \"Vision 1 year after gene therapy for Leber's congenital amaurosis\". The New England Journal of Medicine. 361 (7): 725–7. doi:10.1056/NEJMc0903652. PMC 2847775. PMID 19675341.",
+                            "<info> ^ a b Bainbridge JW, Smith AJ, Barker SS, Robbie S, Henderson R, Balaggan K, et al. (May 2008). \"Effect of gene therapy on visual function in Leber's congenital amaurosis\". The New England Journal of Medicine. 358 (21): 2231–9. CiteSeerX 10.1.1.574.4003. doi:10.1056/NEJMoa0802268. PMID 18441371.",
+                            "<info> ^ a b Schmitt, Ohns & DeVries 2023, \"Introduction\".",
+                            "<info> ^ a b c Schmitt, Ohns & DeVries 2023, \"Diagnosing LCA\".",
+                            "<info> ^ Schmitt, Ohns & DeVries 2023, \"Etiology of LCA\".",
+                            "<info> ^ a b c d Kondkar & Abu-Amero 2019, \"Genetic basis of LCA\".",
+                            "<info> ^ a b Kondkar & Abu-Amero 2019, \"Table 1. Overview of causal genes implicated in Leber congential amaurosis\".",
+                            "<info> ^ Kondkar & Abu-Amero 2019, \"Table 2. Commonly affected genes in LCA and their associated phenotypes.\".",
+                            "<info> ^ \"Approved Products - LUXTURNA\". FDA. 2019-04-05. Archived from the original on January 25, 2018.",
+                            "<info> ^ \"Participants of pioneering CRISPR gene editing trial see vision improve\". ScienceDaily. Retrieved 2024-05-12.",
+                            "<info> ^ Schmitt, Ohns & DeVries 2023, \"Treatment of LCA\".",
+                            "<info> ^ a b Kondkar & Abu-Amero 2019, \"Epidemiological, historical and clinical perspective of LCA\".",
+                            "<info> ^ \"Leber Congenital Amaurosis\". American Association for Pediatric Ophthalmology and Strabismus. April 2023. Retrieved 1 May 2023.",
+                            "<info> ^ \"4 yr old Gavin using his white cane to navigate down a curb independently\". YouTube. Archived from the original on 2021-12-21.",
+                            "<info> Kondkar AA, Abu-Amero KK (December 2019). \"Leber congenital amaurosis: Current genetic basis, scope for genetic testing and personalized medicine\". Exp Eye Res. 189 107834. doi:10.1016/j.exer.2019.107834. PMID 31639339. S2CID 204849679.",
+                            "<info> Schmitt TM, Ohns MJ, DeVries JJ (May 2023). \"Leber Congenital Amaurosis: Leading Cause of Inherited Blindness in Children\". Journal for Nurse Practitioners. 19 (5) 104560. doi:10.1016/j.nurpra.2023.104560. S2CID 258096914."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Gambino, Megan (December 17, 2008). \"Jocelyn Kaiser on 'Gene Therapy in a New Light'\". Science & Nature. Smithsonian. p. 124. Archived from the original on 25 June 2013. Retrieved 22 May 2021.",
+                            "<info> Lewis, Ricki (2012). The Forever Fix: Gene Therapy and the Boy Who Saved It. New York: St. Martin's Press. ISBN 978-0-312-68190-6. OCLC 740628904."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> GeneReview/NIH/UW entry on Leber Congenital Amaurosis"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

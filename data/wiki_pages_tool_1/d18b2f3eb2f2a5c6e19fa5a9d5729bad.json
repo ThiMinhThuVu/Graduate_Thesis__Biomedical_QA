@@ -1,0 +1,123 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/poliosis": {
+                "title": "Poliosis",
+                "url": "https://en.wikipedia.org/wiki/poliosis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Poliosis circumscripta, commonly referred to as a \"white forelock\", is a condition characterized by localized patches of white hair due to a reduction or absence of melanin in hair follicles. Although traditionally associated with the scalp, poliosis can affect any hairy area on the body, including eyebrows, eyelashes, and beards. Microscopically, poliosis is marked by the lack of melanin or melanocytes in the hair bulbs, though epidermal melanocytes typically remain unaffected unless associated with conditions like vitiligo.[1]",
+                    "",
+                    "=== Etiology ===",
+                    "Poliosis can be congenital and often occurs in the context of various genetic syndromes. These disorders are typically linked to other systemic manifestations.",
+                    "<info> Tuberous Sclerosis Complex (TSC): TSC is a genetic condition that leads to the formation of benign tumors in multiple organs. Dermatological signs such as hypomelanotic macules and facial angiofibromas are common, and poliosis can occasionally be an early indicator of TSC.[2]",
+                    "<info> Piebaldism: This rare genetic disorder is characterized by a congenital absence of melanocytes in certain areas of the skin and hair, leading to white patches or forelocks. It results from mutations in the KIT gene, which affects the migration of melanoblasts during development.[3]",
+                    "<info> Waardenburg Syndrome: This neural crest disorder is associated with sensorineural hearing loss and pigmentary anomalies, including white forelocks and patches of depigmentation on the skin. Poliosis is a common manifestation.[4]",
+                    "In addition to genetic factors, poliosis can develop due to various inflammatory, autoimmune, or neoplastic conditions, or as a side effect of medication.",
+                    "<info> Vitiligo: This autoimmune disorder leads to the destruction of melanocytes, resulting in depigmented skin patches. Poliosis is present in half of patients with segmental vitiligo.[5]",
+                    "<info> Vogt–Koyanagi–Harada disease (VKH): VKH is a systemic autoimmune disorder affecting melanin-containing tissues, leading to uveitis, meningitis, and poliosis, which often involves the eyebrows and eyelashes.[6]",
+                    "<info> Alopecia areata (AA): Poliosis may emerge in patients with AA as pigmented hair selectively falls out or during hair regrowth.[7]",
+                    "<info> Sarcoidosis: This systemic inflammatory disease can affect the eyes and skin, leading to poliosis, particularly in patients with uveitis.[8]",
+                    "<info> Neoplasms and medication-induced poliosis: Poliosis has been associated with melanocytic lesions such as congenital or acquired nevi and melanoma. Additionally, poliosis is a rare side effect of certain medications, including topical prostaglandin analogs (used in glaucoma treatment) and systemic drugs like chloroquine and acitretin.[9][10]",
+                    "",
+                    "=== Differential diagnosis ===",
+                    "Several genetic and acquired disorders can mimic poliosis, and they should be considered during diagnosis:",
+                    "<info> Oculocutaneous albinism (OCA): A group of inherited disorders that affect melanin production, causing pale skin, hair, and eyes.[11]",
+                    "<info> Griscelli syndrome: A rare genetic condition characterized by pigmentary dilution and immunodeficiency.[12]",
+                    "<info> Chediak-Higashi syndrome: This genetic disorder results in pigmentary abnormalities and immune system dysfunction.[13]",
+                    "<info> Hermansky-Pudlak syndrome: A rare genetic disorder causing albinism, bleeding disorders, and lung fibrosis.[14]",
+                    "<info> White piedra: A superficial fungal infection that can cause hair to appear white, resembling poliosis.[15]",
+                    "",
+                    "=== Associated medical conditions ===",
+                    "Poliosis occurs in several genetic syndromes such as piebaldism, Waardenburg syndrome, neurofibromatosis type I, and tuberous sclerosis.[16] It can also occur in conditions such as vitiligo, Vogt–Koyanagi–Harada disease, alopecia areata, and sarcoidosis, and in association with neoplasms and some medications.[17]",
+                    "",
+                    "=== In popular culture ===",
+                    "<info> It is sometimes called a Mallen streak, after a fictional family with hereditary poliosis. The Mallen family featured in a sequence of novels by Catherine Cookson, of which The Mallen Streak was the first. She later adapted them into a TV series called The Mallens.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Themes, U. F. O. (2022-11-08). \"Poliosis\". Ento Key. Retrieved 2024-09-22.",
+                    "<info> ^ \"Tuberous sclerosis complex: MedlinePlus Genetics\". medlineplus.gov. Retrieved 2024-09-22.",
+                    "<info> ^ \"Piebaldism: MedlinePlus Genetics\". medlineplus.gov. Retrieved 2024-09-22.",
+                    "<info> ^ \"Waardenburg Syndrome - Symptoms, Causes, Treatment | NORD\". rarediseases.org. Retrieved 2024-09-22.",
+                    "<info> ^ Hann, Seung Kyung; Lee, Ho Jung (November 1996). \"Segmental vitiligo: Clinical findings in 208 patients\". Journal of the American Academy of Dermatology. 35 (5): 671–674. doi:10.1016/s0190-9622(96)90718-5. ISSN 0190-9622. PMID 8912558.",
+                    "<info> ^ Stern, Ethan M.; Nataneli, Nathaniel (2024), \"Vogt-Koyanagi-Harada Syndrome\", StatPearls, Treasure Island (FL): StatPearls Publishing, PMID 34662085, retrieved 2024-09-22",
+                    "<info> ^ Nahm, Michael; Navarini, Alexander A; Kelly, Emily Williams (2013). \"Canities Subita: A Reappraisal of Evidence Based on 196 Case Reports Published in the Medical Literature\". International Journal of Trichology. 5 (2): 63–68. doi:10.4103/0974-7753.122959. ISSN 0974-7753. PMC 3877474. PMID 24403766.",
+                    "<info> ^ Pasadhika, Sirichai; Rosenbaum, James T (December 2015). \"Ocular Sarcoidosis\". Clinics in Chest Medicine. 36 (4): 669–683. doi:10.1016/j.ccm.2015.08.009. ISSN 0272-5231. PMC 4662043. PMID 26593141.",
+                    "<info> ^ Chen, Celia S.; Wells, Jane; Craig, Jamie E. (May 2004). \"Topical prostaglandin F(2alpha) analog induced poliosis\". American Journal of Ophthalmology. 137 (5): 965–966. doi:10.1016/j.ajo.2003.11.020. ISSN 0002-9394. PMID 15126178.",
+                    "<info> ^ Schollenberger, Megan D.; Stein, Julie E.; Taube, Janis M.; Lipson, Evan J. (December 2019). \"Poliosis Circumscripta: A Mark of Melanoma\". The American Journal of Medicine. 132 (12): 1417–1418. doi:10.1016/j.amjmed.2019.05.042. ISSN 0002-9343. PMC 9305990. PMID 31242438.",
+                    "<info> ^ Grønskov, Karen; Ek, Jakob; Brondum-Nielsen, Karen (2007-11-02). \"Oculocutaneous albinism\". Orphanet Journal of Rare Diseases. 2 43. doi:10.1186/1750-1172-2-43. ISSN 1750-1172. PMC 2211462. PMID 17980020.",
+                    "<info> ^ \"Griscelli syndrome type 1 (Concept Id: C1859194) – MedGen\". www.ncbi.nlm.nih.gov. Retrieved 2024-09-22.",
+                    "<info> ^ \"Chediak-Higashi Syndrome Differential Diagnoses\". emedicine.medscape.com. Retrieved 2024-09-22.",
+                    "<info> ^ \"Hermansky-Pudlak syndrome: MedlinePlus Genetics\". medlineplus.gov. Retrieved 2024-09-22.",
+                    "<info> ^ Gaurav, Vishal; Grover, Chander; Das, Shukla; Rai, Gargi (January 2022). \"White Piedra: An Uncommon Superficial Fungal Infection of Hair\". Skin Appendage Disorders. 8 (1): 34–37. doi:10.1159/000517807. ISSN 2296-9195. PMC 8787612. PMID 35118127.",
+                    "<info> ^ Willacy H. (2010). \"Tuberous Sclerosis\". PatientPlus. Patient.info. Retrieved May 2, 2011.",
+                    "<info> ^ Sleiman R, Kurban M, Succaria F, Abbas O (2013). \"Poliosis circumscripta: overview and underlying causes\". J Am Acad Dermatol. 69 (4): 625–33. doi:10.1016/j.jaad.2013.05.022. PMID 23850259.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Poliosis circumscripta, commonly referred to as a \"white forelock\", is a condition characterized by localized patches of white hair due to a reduction or absence of melanin in hair follicles. Although traditionally associated with the scalp, poliosis can affect any hairy area on the body, including eyebrows, eyelashes, and beards. Microscopically, poliosis is marked by the lack of melanin or melanocytes in the hair bulbs, though epidermal melanocytes typically remain unaffected unless associated with conditions like vitiligo.[1]"
+                        ]
+                    },
+                    "Etiology": {
+                        "content": [
+                            "Poliosis can be congenital and often occurs in the context of various genetic syndromes. These disorders are typically linked to other systemic manifestations.",
+                            "<info> Tuberous Sclerosis Complex (TSC): TSC is a genetic condition that leads to the formation of benign tumors in multiple organs. Dermatological signs such as hypomelanotic macules and facial angiofibromas are common, and poliosis can occasionally be an early indicator of TSC.[2]",
+                            "<info> Piebaldism: This rare genetic disorder is characterized by a congenital absence of melanocytes in certain areas of the skin and hair, leading to white patches or forelocks. It results from mutations in the KIT gene, which affects the migration of melanoblasts during development.[3]",
+                            "<info> Waardenburg Syndrome: This neural crest disorder is associated with sensorineural hearing loss and pigmentary anomalies, including white forelocks and patches of depigmentation on the skin. Poliosis is a common manifestation.[4]",
+                            "In addition to genetic factors, poliosis can develop due to various inflammatory, autoimmune, or neoplastic conditions, or as a side effect of medication.",
+                            "<info> Vitiligo: This autoimmune disorder leads to the destruction of melanocytes, resulting in depigmented skin patches. Poliosis is present in half of patients with segmental vitiligo.[5]",
+                            "<info> Vogt–Koyanagi–Harada disease (VKH): VKH is a systemic autoimmune disorder affecting melanin-containing tissues, leading to uveitis, meningitis, and poliosis, which often involves the eyebrows and eyelashes.[6]",
+                            "<info> Alopecia areata (AA): Poliosis may emerge in patients with AA as pigmented hair selectively falls out or during hair regrowth.[7]",
+                            "<info> Sarcoidosis: This systemic inflammatory disease can affect the eyes and skin, leading to poliosis, particularly in patients with uveitis.[8]",
+                            "<info> Neoplasms and medication-induced poliosis: Poliosis has been associated with melanocytic lesions such as congenital or acquired nevi and melanoma. Additionally, poliosis is a rare side effect of certain medications, including topical prostaglandin analogs (used in glaucoma treatment) and systemic drugs like chloroquine and acitretin.[9][10]"
+                        ]
+                    },
+                    "Differential diagnosis": {
+                        "content": [
+                            "Several genetic and acquired disorders can mimic poliosis, and they should be considered during diagnosis:",
+                            "<info> Oculocutaneous albinism (OCA): A group of inherited disorders that affect melanin production, causing pale skin, hair, and eyes.[11]",
+                            "<info> Griscelli syndrome: A rare genetic condition characterized by pigmentary dilution and immunodeficiency.[12]",
+                            "<info> Chediak-Higashi syndrome: This genetic disorder results in pigmentary abnormalities and immune system dysfunction.[13]",
+                            "<info> Hermansky-Pudlak syndrome: A rare genetic disorder causing albinism, bleeding disorders, and lung fibrosis.[14]",
+                            "<info> White piedra: A superficial fungal infection that can cause hair to appear white, resembling poliosis.[15]"
+                        ]
+                    },
+                    "Associated medical conditions": {
+                        "content": [
+                            "Poliosis occurs in several genetic syndromes such as piebaldism, Waardenburg syndrome, neurofibromatosis type I, and tuberous sclerosis.[16] It can also occur in conditions such as vitiligo, Vogt–Koyanagi–Harada disease, alopecia areata, and sarcoidosis, and in association with neoplasms and some medications.[17]"
+                        ]
+                    },
+                    "In popular culture": {
+                        "content": [
+                            "<info> It is sometimes called a Mallen streak, after a fictional family with hereditary poliosis. The Mallen family featured in a sequence of novels by Catherine Cookson, of which The Mallen Streak was the first. She later adapted them into a TV series called The Mallens."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Themes, U. F. O. (2022-11-08). \"Poliosis\". Ento Key. Retrieved 2024-09-22.",
+                            "<info> ^ \"Tuberous sclerosis complex: MedlinePlus Genetics\". medlineplus.gov. Retrieved 2024-09-22.",
+                            "<info> ^ \"Piebaldism: MedlinePlus Genetics\". medlineplus.gov. Retrieved 2024-09-22.",
+                            "<info> ^ \"Waardenburg Syndrome - Symptoms, Causes, Treatment | NORD\". rarediseases.org. Retrieved 2024-09-22.",
+                            "<info> ^ Hann, Seung Kyung; Lee, Ho Jung (November 1996). \"Segmental vitiligo: Clinical findings in 208 patients\". Journal of the American Academy of Dermatology. 35 (5): 671–674. doi:10.1016/s0190-9622(96)90718-5. ISSN 0190-9622. PMID 8912558.",
+                            "<info> ^ Stern, Ethan M.; Nataneli, Nathaniel (2024), \"Vogt-Koyanagi-Harada Syndrome\", StatPearls, Treasure Island (FL): StatPearls Publishing, PMID 34662085, retrieved 2024-09-22",
+                            "<info> ^ Nahm, Michael; Navarini, Alexander A; Kelly, Emily Williams (2013). \"Canities Subita: A Reappraisal of Evidence Based on 196 Case Reports Published in the Medical Literature\". International Journal of Trichology. 5 (2): 63–68. doi:10.4103/0974-7753.122959. ISSN 0974-7753. PMC 3877474. PMID 24403766.",
+                            "<info> ^ Pasadhika, Sirichai; Rosenbaum, James T (December 2015). \"Ocular Sarcoidosis\". Clinics in Chest Medicine. 36 (4): 669–683. doi:10.1016/j.ccm.2015.08.009. ISSN 0272-5231. PMC 4662043. PMID 26593141.",
+                            "<info> ^ Chen, Celia S.; Wells, Jane; Craig, Jamie E. (May 2004). \"Topical prostaglandin F(2alpha) analog induced poliosis\". American Journal of Ophthalmology. 137 (5): 965–966. doi:10.1016/j.ajo.2003.11.020. ISSN 0002-9394. PMID 15126178.",
+                            "<info> ^ Schollenberger, Megan D.; Stein, Julie E.; Taube, Janis M.; Lipson, Evan J. (December 2019). \"Poliosis Circumscripta: A Mark of Melanoma\". The American Journal of Medicine. 132 (12): 1417–1418. doi:10.1016/j.amjmed.2019.05.042. ISSN 0002-9343. PMC 9305990. PMID 31242438.",
+                            "<info> ^ Grønskov, Karen; Ek, Jakob; Brondum-Nielsen, Karen (2007-11-02). \"Oculocutaneous albinism\". Orphanet Journal of Rare Diseases. 2 43. doi:10.1186/1750-1172-2-43. ISSN 1750-1172. PMC 2211462. PMID 17980020.",
+                            "<info> ^ \"Griscelli syndrome type 1 (Concept Id: C1859194) – MedGen\". www.ncbi.nlm.nih.gov. Retrieved 2024-09-22.",
+                            "<info> ^ \"Chediak-Higashi Syndrome Differential Diagnoses\". emedicine.medscape.com. Retrieved 2024-09-22.",
+                            "<info> ^ \"Hermansky-Pudlak syndrome: MedlinePlus Genetics\". medlineplus.gov. Retrieved 2024-09-22.",
+                            "<info> ^ Gaurav, Vishal; Grover, Chander; Das, Shukla; Rai, Gargi (January 2022). \"White Piedra: An Uncommon Superficial Fungal Infection of Hair\". Skin Appendage Disorders. 8 (1): 34–37. doi:10.1159/000517807. ISSN 2296-9195. PMC 8787612. PMID 35118127.",
+                            "<info> ^ Willacy H. (2010). \"Tuberous Sclerosis\". PatientPlus. Patient.info. Retrieved May 2, 2011.",
+                            "<info> ^ Sleiman R, Kurban M, Succaria F, Abbas O (2013). \"Poliosis circumscripta: overview and underlying causes\". J Am Acad Dermatol. 69 (4): 625–33. doi:10.1016/j.jaad.2013.05.022. PMID 23850259."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/aniridia": {
+                "title": "Aniridia",
+                "url": "https://en.wikipedia.org/wiki/aniridia",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Aniridia is a condition characterized by the absence or near absence of the iris, the colored, muscular ring in the eye that controls the size of the pupil and regulates the amount of light entering the eye. This absence results in a primarily black appearance of the central eye. Aniridia can be congenital, typically affecting both eyes, or caused by a penetrant injury.[1] Congenital aniridia is not simply an iris defect but a more complex condition affecting multiple parts of the eye, with macular and optic nerve hypoplasia, cataract, and corneal changes.[2] Vision may be severely compromised and the disorder is frequently associated with several other ocular complications, including nystagmus, amblyopia, buphthalmos, and cataract.[1] In some cases, aniridia occurs as part of a broader syndrome, like WAGR syndrome (kidney nephroblastoma, genitourinary anomalies and intellectual disability) or Gillespie syndrome (cerebellar ataxia).",
+                    "",
+                    "=== PAX6 ===",
+                    "The PAX6 gene, located within the AN2 region on the short arm of chromosome 11 (11p13), plays a crucial role in the development of the eye and other structures. This gene, named for its \"PAired boX\" sequence, regulates a cascade of other genetic processes involved in eye formation.[3] Remarkably, the PAX6 gene exhibits high evolutionary conservation, sharing approximately 95% similarity with the pax gene found in zebrafish, a species whose evolutionary lineage diverged from humans around 400 million years ago.[citation needed]",
+                    "Defects in the PAX6 gene cause aniridia-like ocular defects in mice (as well as Drosophila). Aniridia is a heterozygous disorder, meaning that only one of the two chromosome 11 copies is affected. When both copies are altered (homozygous condition), the result is a uniformly fatal condition with near complete failure of entire eye formation. In 2001, two cases of  homozygous aniridia patients were reported; the fetuses died prior to birth and had severe brain damage. In mice, homozygous small eye defect (mouse Pax-6) leads to loss of the eyes and nose and the murine fetuses sustain severe brain damage.[4]",
+                    "",
+                    "=== Types ===",
+                    "Aniridia may be broadly divided  into hereditary and sporadic forms. Hereditary aniridia is usually transmitted in an autosomal dominant manner (each offspring has a 50% chance of being affected), although rare autosomal recessive forms (such as Gillespie syndrome) have also been reported. Sporadic aniridia mutations may affect the WT1 region adjacent to the AN2 aniridia region, causing a kidney cancer called nephroblastoma (Wilms tumor). These patients often also have genitourinary abnormalities and intellectual disability (WAGR syndrome).[citation needed]",
+                    "Several different mutations may affect the PAX6 gene. Some mutations appear to inhibit gene function more than others, with subsequent variability in the severity of the disease. Thus, some aniridic individuals are only missing a relatively small amount of iris, do not have foveal hypoplasia, and retain relatively normal vision. Presumably, the genetic defect in these individuals causes less \"heterozygous insufficiency,\" meaning they retain enough gene function to yield a milder phenotype.[citation needed]",
+                    "<info> Online Mendelian Inheritance in Man (OMIM): 106210 AN",
+                    "<info> Online Mendelian Inheritance in Man (OMIM): 106220 Aniridia and absent patella",
+                    "<info> Online Mendelian Inheritance in Man (OMIM): 106230 Aniridia, microcornea, and  spontaneously reabsorbed cataract",
+                    "<info> Online Mendelian Inheritance in Man (OMIM): 206700 Aniridia, cerebellar ataxia, and mental deficiency (Gillespie syndrome)",
+                    "",
+                    "=== Symptoms and signs ===",
+                    "Aniridia can cause many symptoms, such as:[5]",
+                    "<info> Poor vision (not always present)",
+                    "<info> More sensitivity to light",
+                    "<info> Fast, uncontrolled, shaking \"to and from\" eye movements (nystagmus)",
+                    "<info> Eyes do not line up (strabismus)",
+                    "",
+                    "=== Mutational analysis ===",
+                    "Molecular (DNA) testing for PAX6 gene mutations (by sequencing of the entire coding region and deletion/duplication analysis) is available for isolated aniridia and the Gillespie syndrome. For the WAGR syndrome, high-resolution cytogenetic analysis and fluorescence in situ hybridization (FISH) can be utilized to identify deletions within chromosome band 11p13, where both the PAX6 and WT1 genes are located.[6]",
+                    "",
+                    "=== Treatment ===",
+                    "In May 2018, the U.S. Food and Drug Administration approved the CustomFlex Artificial Iris, the first synthetic iris for use in adults and children with congenital aniridia or iris defects related to other conditions, such as albinism, traumatic injury, or surgical removal due to ocular melanoma. The artificial iris is a surgically implanted device made of thin, foldable, medical-grade silicone and is custom-sized and colored for each individual patient. The prosthetic iris is held in place by the anatomical structures of the eye or, if needed, by sutures.[7]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Lang, Gerhard K.; Gareis, O. (2007). Ophthalmology: a pocket textbook atlas (2nd ed.). Stuttgart; New York: Thieme. p. 208. ISBN 978-1-58890-555-0.",
+                    "<info> ^ Singh, Daljit; Arun Verma (17 January 2008). \"Aniridia\". eMedicine. Retrieved 2 February 2010.",
+                    "<info> ^ Lee, Helena; Khan, Rizwana; O'Keefe, Michael (November 2008). \"Aniridia: current pathology and management\". Acta Ophthalmologica. 86 (7): 708–715. doi:10.1111/j.1755-3768.2008.01427.x. PMID 18937825. S2CID 2476524.",
+                    "<info> ^ Gehring, W. J. (2001). \"The genetic control of eye development and its implications for the evolution of various eye-types\". Zoology. 104 (3–4): 171–181. doi:10.1078/0944-2006-00022. PMID 16351831.",
+                    "<info> ^ \"Articles\". Cedars-Sinai. Archived from the original on 2020-05-30. Retrieved 2022-02-10.",
+                    "<info> ^ Neethirajan, Guruswamy; Solomon, Abraham; Krishnadas, Subbaiah Ramasamy; Vijayalakshmi, Perumalsamy; Sundaresan, Periasamy (May 2009). \"Genotype/phenotype association in Indian congenital aniridia\". The Indian Journal of Pediatrics. 76 (5): 513–517. doi:10.1007/s12098-009-0075-4. PMID 19390808. S2CID 29062682.",
+                    "<info> ^ \"FDA OKs First Artificial Iris for Aniridia, Other Iris Defects\". Medscape.",
+                    "8. Neethirajan G, Hanson IM, Krishnadas SR, Balasubramanian D, Sowdhamini R, Radha V, et al. A novel PAX6 gene mutation in an Indian aniridia patient. Mol Vis. 2003;9:205-9.",
+                    "9. Neethirajan G, Vijayalakshmi P, Krishnadas SR, Balasubramanian D, Shashikant S, Shashikant C, et al. PAX6 gene variations associated with aniridia in South India. BMC Med Genet. 2004;5:37.",
+                    "10. Neethirajan G, Collinson JM, Krishnadas SR, Vijayalakshmi P, Soni R, Hanson IM. De novo deletions in the paired domain of PAX6 in south Indian aniridic patients. J Hum Genet. 2004;49(12):647-9.",
+                    "11. Neethirajan G, Krishnadas SR, Vijayalakshmi P, Anupkumar AN, Balasubramanian D, Hanson IM. Identification of novel mutant PAX6 alleles in Indian cases of familial aniridia. BMC Ophthalmol. 2006;6:28.",
+                    "12. Neethirajan G, Krishnadas SR, Vijayalakshmi P, Shetty S, Sundaresan P. Semi-Quantitative Analysis of PAX6 Gene in Ocular and Non-Ocular Tissues. New Vis Med Med Sci. 2024;3:47–59",
+                    "",
+                    "=== External links ===",
+                    "<info> GeneReviews/NCBI/NIH/UW entry on Aniridia",
+                    "<info> NCBI/Molecular diagnosis of aniridia",
+                    "<info> OMIM entries on Aniridia",
+                    "<info> GeneReviews/NIH/NCBI/UW entry on Wilms Tumor Overview",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Aniridia is a condition characterized by the absence or near absence of the iris, the colored, muscular ring in the eye that controls the size of the pupil and regulates the amount of light entering the eye. This absence results in a primarily black appearance of the central eye. Aniridia can be congenital, typically affecting both eyes, or caused by a penetrant injury.[1] Congenital aniridia is not simply an iris defect but a more complex condition affecting multiple parts of the eye, with macular and optic nerve hypoplasia, cataract, and corneal changes.[2] Vision may be severely compromised and the disorder is frequently associated with several other ocular complications, including nystagmus, amblyopia, buphthalmos, and cataract.[1] In some cases, aniridia occurs as part of a broader syndrome, like WAGR syndrome (kidney nephroblastoma, genitourinary anomalies and intellectual disability) or Gillespie syndrome (cerebellar ataxia)."
+                        ]
+                    },
+                    "PAX6": {
+                        "content": [
+                            "The PAX6 gene, located within the AN2 region on the short arm of chromosome 11 (11p13), plays a crucial role in the development of the eye and other structures. This gene, named for its \"PAired boX\" sequence, regulates a cascade of other genetic processes involved in eye formation.[3] Remarkably, the PAX6 gene exhibits high evolutionary conservation, sharing approximately 95% similarity with the pax gene found in zebrafish, a species whose evolutionary lineage diverged from humans around 400 million years ago.[citation needed]",
+                            "Defects in the PAX6 gene cause aniridia-like ocular defects in mice (as well as Drosophila). Aniridia is a heterozygous disorder, meaning that only one of the two chromosome 11 copies is affected. When both copies are altered (homozygous condition), the result is a uniformly fatal condition with near complete failure of entire eye formation. In 2001, two cases of  homozygous aniridia patients were reported; the fetuses died prior to birth and had severe brain damage. In mice, homozygous small eye defect (mouse Pax-6) leads to loss of the eyes and nose and the murine fetuses sustain severe brain damage.[4]"
+                        ]
+                    },
+                    "Types": {
+                        "content": [
+                            "Aniridia may be broadly divided  into hereditary and sporadic forms. Hereditary aniridia is usually transmitted in an autosomal dominant manner (each offspring has a 50% chance of being affected), although rare autosomal recessive forms (such as Gillespie syndrome) have also been reported. Sporadic aniridia mutations may affect the WT1 region adjacent to the AN2 aniridia region, causing a kidney cancer called nephroblastoma (Wilms tumor). These patients often also have genitourinary abnormalities and intellectual disability (WAGR syndrome).[citation needed]",
+                            "Several different mutations may affect the PAX6 gene. Some mutations appear to inhibit gene function more than others, with subsequent variability in the severity of the disease. Thus, some aniridic individuals are only missing a relatively small amount of iris, do not have foveal hypoplasia, and retain relatively normal vision. Presumably, the genetic defect in these individuals causes less \"heterozygous insufficiency,\" meaning they retain enough gene function to yield a milder phenotype.[citation needed]",
+                            "<info> Online Mendelian Inheritance in Man (OMIM): 106210 AN",
+                            "<info> Online Mendelian Inheritance in Man (OMIM): 106220 Aniridia and absent patella",
+                            "<info> Online Mendelian Inheritance in Man (OMIM): 106230 Aniridia, microcornea, and  spontaneously reabsorbed cataract",
+                            "<info> Online Mendelian Inheritance in Man (OMIM): 206700 Aniridia, cerebellar ataxia, and mental deficiency (Gillespie syndrome)"
+                        ]
+                    },
+                    "Symptoms and signs": {
+                        "content": [
+                            "Aniridia can cause many symptoms, such as:[5]",
+                            "<info> Poor vision (not always present)",
+                            "<info> More sensitivity to light",
+                            "<info> Fast, uncontrolled, shaking \"to and from\" eye movements (nystagmus)",
+                            "<info> Eyes do not line up (strabismus)"
+                        ]
+                    },
+                    "Mutational analysis": {
+                        "content": [
+                            "Molecular (DNA) testing for PAX6 gene mutations (by sequencing of the entire coding region and deletion/duplication analysis) is available for isolated aniridia and the Gillespie syndrome. For the WAGR syndrome, high-resolution cytogenetic analysis and fluorescence in situ hybridization (FISH) can be utilized to identify deletions within chromosome band 11p13, where both the PAX6 and WT1 genes are located.[6]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "In May 2018, the U.S. Food and Drug Administration approved the CustomFlex Artificial Iris, the first synthetic iris for use in adults and children with congenital aniridia or iris defects related to other conditions, such as albinism, traumatic injury, or surgical removal due to ocular melanoma. The artificial iris is a surgically implanted device made of thin, foldable, medical-grade silicone and is custom-sized and colored for each individual patient. The prosthetic iris is held in place by the anatomical structures of the eye or, if needed, by sutures.[7]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Lang, Gerhard K.; Gareis, O. (2007). Ophthalmology: a pocket textbook atlas (2nd ed.). Stuttgart; New York: Thieme. p. 208. ISBN 978-1-58890-555-0.",
+                            "<info> ^ Singh, Daljit; Arun Verma (17 January 2008). \"Aniridia\". eMedicine. Retrieved 2 February 2010.",
+                            "<info> ^ Lee, Helena; Khan, Rizwana; O'Keefe, Michael (November 2008). \"Aniridia: current pathology and management\". Acta Ophthalmologica. 86 (7): 708–715. doi:10.1111/j.1755-3768.2008.01427.x. PMID 18937825. S2CID 2476524.",
+                            "<info> ^ Gehring, W. J. (2001). \"The genetic control of eye development and its implications for the evolution of various eye-types\". Zoology. 104 (3–4): 171–181. doi:10.1078/0944-2006-00022. PMID 16351831.",
+                            "<info> ^ \"Articles\". Cedars-Sinai. Archived from the original on 2020-05-30. Retrieved 2022-02-10.",
+                            "<info> ^ Neethirajan, Guruswamy; Solomon, Abraham; Krishnadas, Subbaiah Ramasamy; Vijayalakshmi, Perumalsamy; Sundaresan, Periasamy (May 2009). \"Genotype/phenotype association in Indian congenital aniridia\". The Indian Journal of Pediatrics. 76 (5): 513–517. doi:10.1007/s12098-009-0075-4. PMID 19390808. S2CID 29062682.",
+                            "<info> ^ \"FDA OKs First Artificial Iris for Aniridia, Other Iris Defects\". Medscape.",
+                            "8. Neethirajan G, Hanson IM, Krishnadas SR, Balasubramanian D, Sowdhamini R, Radha V, et al. A novel PAX6 gene mutation in an Indian aniridia patient. Mol Vis. 2003;9:205-9.",
+                            "9. Neethirajan G, Vijayalakshmi P, Krishnadas SR, Balasubramanian D, Shashikant S, Shashikant C, et al. PAX6 gene variations associated with aniridia in South India. BMC Med Genet. 2004;5:37.",
+                            "10. Neethirajan G, Collinson JM, Krishnadas SR, Vijayalakshmi P, Soni R, Hanson IM. De novo deletions in the paired domain of PAX6 in south Indian aniridic patients. J Hum Genet. 2004;49(12):647-9.",
+                            "11. Neethirajan G, Krishnadas SR, Vijayalakshmi P, Anupkumar AN, Balasubramanian D, Hanson IM. Identification of novel mutant PAX6 alleles in Indian cases of familial aniridia. BMC Ophthalmol. 2006;6:28.",
+                            "12. Neethirajan G, Krishnadas SR, Vijayalakshmi P, Shetty S, Sundaresan P. Semi-Quantitative Analysis of PAX6 Gene in Ocular and Non-Ocular Tissues. New Vis Med Med Sci. 2024;3:47–59"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> GeneReviews/NCBI/NIH/UW entry on Aniridia",
+                            "<info> NCBI/Molecular diagnosis of aniridia",
+                            "<info> OMIM entries on Aniridia",
+                            "<info> GeneReviews/NIH/NCBI/UW entry on Wilms Tumor Overview"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

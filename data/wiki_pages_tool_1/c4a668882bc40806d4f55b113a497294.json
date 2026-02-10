@@ -1,0 +1,141 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/whipple%27s_disease": {
+                "title": "Whipple's disease",
+                "url": "https://en.wikipedia.org/wiki/whipple%27s_disease",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Whipple's disease is a rare systemic infectious disease caused by the bacterium Tropheryma whipplei. First described by George Hoyt Whipple in 1907 and commonly considered as a gastrointestinal disorder, Whipple's disease primarily causes malabsorption, but may affect any part of the human body, including the heart, brain, joints, skin, lungs and the eyes.[1] Weight loss, diarrhea, joint pain, and arthritis are common presenting symptoms, but the presentation can be highly variable in certain individuals, and about 15% of patients do not have the standard signs and symptoms.[2]",
+                    "Whipple's disease is significantly more common in men, with 87% of patients diagnosed being male.[3] When recognized and treated, Whipple's disease can usually be cured with long-term antibiotic therapy, but if the disease is left undiagnosed or untreated, it can ultimately be fatal.[3][4]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "The most common symptoms are diarrhea, abdominal pain, weight loss, and joint pains. The joint pains may be due to migratory nondeforming arthritis, which may occur many years before any digestive-tract symptoms develop; they tend to involve the large joints, but can occur in any pattern and tend not to damage the joint surface to the point that the joint becomes deformed. Fever and chills occur in a small proportion of people.[5]",
+                    "In its more advanced form, malabsorption (insufficient absorption of nutrients from the diet) leads to wasting and the enlargement of lymph nodes in the abdomen. Neurological symptoms (discussed below) are more common in those with the severe form of the abdominal disease. Chronic malabsorptive diarrhea leads to the poor absorption of fat, causing steatorrhea (fatty, offensive-smelling stool), flatulence, and abdominal distension. Protein-losing enteropathy may also occur, causing depletion of albumin, a blood protein, which may lead to peripheral edema caused by the lowered oncotic pressures.[5]",
+                    "Hyperpigmentation of the skin occurs in almost half; some also have skin nodules. Various eye problems, such as uveitis, may occur; this is typically associated with deteriorating vision and pain in the affected eye. Endocarditis (infection of the heart valve) has been reported in a small number of cases, sometimes in people with no other symptoms of Whipple's disease; this is typically noticed as breathlessness and leg swelling due to fluid accumulation as the heart is unable to pump fluid through the body.[5]",
+                    "Of those affected by Whipple's disease, 10–40% have problems related to the involvement of the brain; the symptoms relate to the part of the brain that is affected. The most common problems are dementia, memory loss, confusion, and decreased level of consciousness. Eye-movement disturbances and myorhythmia (rapidly repetitive movements of the muscles) of the face, together referred to as oculomasticatory myorhythmia, are highly characteristic for Whipple's disease. Weakness and poor coordination of part of the body, headaches, seizures, and a number of more uncommon neurological features are present in some cases.[5]",
+                    "",
+                    "=== Pathogenesis ===",
+                    "T. whipplei is a distant relative of the Mycobacterium avium complex, explaining in part why Whipple's disease is similar to the diseases caused by MAC bacteria.[6] The disease is common in farmers and those exposed to soil and animals, suggesting that the infection is acquired from these sources.[5]",
+                    "Individuals who are most susceptible to the disease are those with decreased ability to perform intracellular degradation of ingested pathogens or particles, particularly within macrophages. Several studies indicate that defective T-lymphocyte (particularly TH1 population) function may be an important predisposing factor for the disease.[7] In particular, circulating cells which are CD11b (also known as integrin alpha) expressive are reduced in susceptible individuals. CD11b has a vital role in activation of macrophages to destroy intracellularly ingested T. whipplei bacteria.[6]",
+                    "",
+                    "=== Diagnosis ===",
+                    "Common clinical signs and symptoms of Whipple's disease include diarrhea, steatorrhea, abdominal pain, weight loss, migratory arthropathy, fever, and neurological symptoms.[8] Weight loss and diarrhea are the most common symptoms that lead to identification of the process, but may be preceded by chronic, unexplained, relapsing episodes of nondestructive seronegative arthritis, often of large joints.[9]",
+                    "Endoscopy of the duodenum and jejunum can reveal pale yellow shaggy mucosa with erythematous eroded patches in patients with classic intestinal Whipple's disease, and small bowel X-rays may show some thickened folds. Other pathological findings may include enlarged mesenteric lymph nodes, hypercellularity of lamina propria with \"foamy macrophages\", and a concurrent decreased number of lymphocytes and plasma cells, per high power field view of the biopsy.[citation needed]",
+                    "Diagnosis is made by biopsy, usually by duodenal endoscopy, which reveals PAS-positive macrophages in the lamina propria containing non acid-fast, Gram-positive bacilli.[5][a] Immunohistochemical staining for antibodies against T. whipplei has been used to detect the organism in a variety of tissues, and a polymerase chain reaction-based assay is also available,[5]  which can be confirmatory if performed on blood, vitreous fluid, synovial fluid, heart valves, or cerebrospinal fluid.[11] PCR of saliva, gastric or intestinal fluid, and stool specimens is highly sensitive, but not specific enough, indicating that healthy individuals can also harbor the causative bacterium without the manifestation of Whipple's disease, but that a negative PCR is most likely indicative of a healthy individual.[5]",
+                    "",
+                    "=== Treatment ===",
+                    "Treatment is with penicillin, ampicillin, tetracycline, or co-trimoxazole for one to two years.[2] Any treatment lasting less than a year has a relapse rate around 40%.[citation needed] Expert opinion as of 2007 is that Whipple's disease should be treated with doxycycline with hydroxychloroquine for 12 to 18 months.[3] Hydroxychloroquine increases antibiotic and bactericidal activity against the replication of the bacteria in acidic vacuoles of macrophages by increasing the macrophage intraphagosomal pH.[12] Sulfonamides (sulfadiazine or sulfamethoxazole) may be added for treatment of neurological symptoms.[3]",
+                    "",
+                    "=== Epidemiology ===",
+                    "The disease is regarded as extremely rare, with an incidence (new number of cases per year) of one case per million people. The patients are predominantly male, with various studies and sources typically reporting a ratio between 2:1 and 3:1 of male to female patients.[13] In the United States and some other countries, it occurs predominantly in those of Caucasian ethnicity, suggesting a possible genetic predisposition in that population.[5][13] T. whipplei appears to be an environmental organism that is commonly present in the gastrointestinal tract, but remains asymptomatic.[5] Several lines of evidence suggest that some defect—inherited or acquired—in immunity is required for it to become pathogenic.[14] The possible immunological defect may be specific for T. whipplei, since the disease is not associated with a substantially increased risk of other infections.[15] The disease is usually diagnosed in middle age (median 49 years). Studies from Germany have shown that age at diagnosis has been rising since the 1960s.[5]",
+                    "",
+                    "=== History ===",
+                    "Whipple described the disease in 1907 in a paper in the now-defunct Bulletin of Johns Hopkins Hospital. The patient was a 36-year-old medical missionary. Whipple referred to the disease as \"intestinal lipodystrophy\".[1] It was long presumed to be an infectious disease, but the causative organism was only fully identified in 1992.[16] In 2003, doctors from Johns Hopkins Hospital, together with the French microbiologist Didier Raoult applied novel diagnostic methods to stored tissue samples from Whipple's original patient, and demonstrated T. whipplei in these tissues.[3][17]",
+                    "",
+                    "=== Notes ===",
+                    "<info> ^ Tropheryma whipplei bacteria contained in the macrophage inclusions are coated with a glycoprotein that stains PAS-positive with diastase resistance and may act as a virulence factor that protects the bacteria from host immune recognition.[10]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Whipple, G. H. (1907). \"A hitherto undescribed disease characterized anatomically by deposits of fat and fatty acids in the intestinal and mesenteric lymphatic tissues\". Bulletin of the Johns Hopkins Hospital. 18: 382–93.",
+                    "<info> ^ a b Bai JC, Mazure RM, Vazquez H (October 2004). \"Whipple's disease\". Clin. Gastroenterol. Hepatol. 2 (10): 849–60. doi:10.1016/S1542-3565(04)00387-8. PMID 15476147.",
+                    "<info> ^ a b c d e Fenollar F, Puéchal X, Raoult D (January 2007). \"Whipple's disease\". New England Journal of Medicine. 356 (1): 55–66. doi:10.1056/NEJMra062477. PMID 17202456.",
+                    "<info> ^ Phillips, Michael M (2022), Whipple disease, A.D.A.M. Medical Encyclopedia: A.D.A.M., retrieved 2024-08-19",
+                    "<info> ^ a b c d e f g h i j k Schneider T, Moos V, Loddenkemper C, Marth T, Fenollar F, Raoult D (March 2008). \"Whipple's disease: new aspects of pathogenesis and treatment\". Lancet Infect Dis. 8 (3): 179–90. doi:10.1016/S1473-3099(08)70042-2. PMID 18291339.",
+                    "<info> ^ a b Strayer DL, Rubin R, Rubin E (2008). Rubin's pathology: clinicopathologic foundations of medicine. Philadelphia: Wolters Kluwer/Lippincott Williams & Wilkins. p. 583. ISBN 978-0-7817-9516-6.",
+                    "<info> ^ Marth T (November 2001). \"The diagnosis and treatment of Whipple's disease\". Curr Allergy Asthma Rep. 1 (6): 566–71. doi:10.1007/s11882-001-0066-7. PMID 11892086. S2CID 6747902.",
+                    "<info> ^ Longo, D; Faucy, A; Kasper, D; Hauser, S; Jameson, J; Loscalzo, Joseph (2012). Harrison's Principles of Internal Medicine (18th ed.). McGraw Hill Professional.",
+                    "<info> ^ Puéchal, X. (2009). \"Maladie de Whipple\". La Revue de Médecine Interne. 30 (3): 233–241. doi:10.1016/j.revmed.2008.06.020. PMID 18722696.",
+                    "<info> ^ Kleinschmidt-DeMasters, B.K. (2016). \"Section 2. Infectious, inflammatory, and reactive lesions\". In Kleinschmidt-Demasters, B.K.; Rodríguez, Fausto J.; Tihan, Tarik (eds.). Diagnostic Pathology: Neuropathology (Second ed.). Salt Lake City, Utah: Elsevier. pp. 630–631. ISBN 978-0-323-44592-4.",
+                    "<info> ^ SJ McPhee, MA Papadakis. Current Medical Diagnosis and Treatment 2012 McGraw-Hill ISBN 978-0-07-176372-1",
+                    "<info> ^ Boumaza, A.; Azzouz, E.B.; Arrindell, J.; Lepidi, H.; Mezouar, S.; Desnues, B. (October 2022). \"Whipple's disease and Tropheryma whipplei infections: from bench to bedside\". The Lancet Infectious Diseases. 22 (10): e280–e291. doi:10.1016/S1473-3099(22)00128-1. PMID 35427488. S2CID 248146579.",
+                    "<info> ^ a b Ahmad, Akram I.; Wikholm, Colin; Pothoulakis, Ioannis; Caplan, Claire; Lee, Arielle; Buchanan, Faith; Kyoo Cho, Won (2022-12-09). \"Whipple's disease review, prevalence, mortality, and characteristics in the United States: A cross-sectional national inpatient study\". Medicine. 101 (49) e32231. doi:10.1097/MD.0000000000032231. ISSN 0025-7974. PMC 9750640. PMID 36626499.",
+                    "<info> ^ Marth, T. (2009). \"New Insights into Whipple's Disease – A Rare Intestinal Inflammatory Disorder\". Digestive Diseases. 27 (4): 494–501. doi:10.1159/000233288. PMID 19897965. S2CID 38746593.",
+                    "<info> ^ Deriban, G.; Marth, T. (2006). \"Current concepts of immunopathogenesis, diagnosis and therapy in Whipple's disease\". Current Medicinal Chemistry. 13 (24): 2921–2926. doi:10.2174/092986706778521913. PMID 17073638.",
+                    "<info> ^ Relman DA, Schmidt TM, MacDermott RP, Falkow S (July 1992). \"Identification of the uncultured bacillus of Whipple's disease\". N. Engl. J. Med. 327 (5): 293–301. doi:10.1056/NEJM199207303270501. PMID 1377787.",
+                    "<info> ^ Dumler JS, Baisden BL, Yardley JH, Raoult D (April 2003). \"Immunodetection of Tropheryma whipplei in intestinal tissues from Dr. Whipple's 1907 patient\". N. Engl. J. Med. 348 (14): 1411–2. doi:10.1056/NEJM200304033481425. PMID 12672878.",
+                    "",
+                    "=== External links ===",
+                    "<info> \"Whipple's Disease\". National Digestive Disease Information Clearinghouse NDDIC. Archived from the original on October 21, 2004.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Whipple's disease is a rare systemic infectious disease caused by the bacterium Tropheryma whipplei. First described by George Hoyt Whipple in 1907 and commonly considered as a gastrointestinal disorder, Whipple's disease primarily causes malabsorption, but may affect any part of the human body, including the heart, brain, joints, skin, lungs and the eyes.[1] Weight loss, diarrhea, joint pain, and arthritis are common presenting symptoms, but the presentation can be highly variable in certain individuals, and about 15% of patients do not have the standard signs and symptoms.[2]",
+                            "Whipple's disease is significantly more common in men, with 87% of patients diagnosed being male.[3] When recognized and treated, Whipple's disease can usually be cured with long-term antibiotic therapy, but if the disease is left undiagnosed or untreated, it can ultimately be fatal.[3][4]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "The most common symptoms are diarrhea, abdominal pain, weight loss, and joint pains. The joint pains may be due to migratory nondeforming arthritis, which may occur many years before any digestive-tract symptoms develop; they tend to involve the large joints, but can occur in any pattern and tend not to damage the joint surface to the point that the joint becomes deformed. Fever and chills occur in a small proportion of people.[5]",
+                            "In its more advanced form, malabsorption (insufficient absorption of nutrients from the diet) leads to wasting and the enlargement of lymph nodes in the abdomen. Neurological symptoms (discussed below) are more common in those with the severe form of the abdominal disease. Chronic malabsorptive diarrhea leads to the poor absorption of fat, causing steatorrhea (fatty, offensive-smelling stool), flatulence, and abdominal distension. Protein-losing enteropathy may also occur, causing depletion of albumin, a blood protein, which may lead to peripheral edema caused by the lowered oncotic pressures.[5]",
+                            "Hyperpigmentation of the skin occurs in almost half; some also have skin nodules. Various eye problems, such as uveitis, may occur; this is typically associated with deteriorating vision and pain in the affected eye. Endocarditis (infection of the heart valve) has been reported in a small number of cases, sometimes in people with no other symptoms of Whipple's disease; this is typically noticed as breathlessness and leg swelling due to fluid accumulation as the heart is unable to pump fluid through the body.[5]",
+                            "Of those affected by Whipple's disease, 10–40% have problems related to the involvement of the brain; the symptoms relate to the part of the brain that is affected. The most common problems are dementia, memory loss, confusion, and decreased level of consciousness. Eye-movement disturbances and myorhythmia (rapidly repetitive movements of the muscles) of the face, together referred to as oculomasticatory myorhythmia, are highly characteristic for Whipple's disease. Weakness and poor coordination of part of the body, headaches, seizures, and a number of more uncommon neurological features are present in some cases.[5]"
+                        ]
+                    },
+                    "Pathogenesis": {
+                        "content": [
+                            "T. whipplei is a distant relative of the Mycobacterium avium complex, explaining in part why Whipple's disease is similar to the diseases caused by MAC bacteria.[6] The disease is common in farmers and those exposed to soil and animals, suggesting that the infection is acquired from these sources.[5]",
+                            "Individuals who are most susceptible to the disease are those with decreased ability to perform intracellular degradation of ingested pathogens or particles, particularly within macrophages. Several studies indicate that defective T-lymphocyte (particularly TH1 population) function may be an important predisposing factor for the disease.[7] In particular, circulating cells which are CD11b (also known as integrin alpha) expressive are reduced in susceptible individuals. CD11b has a vital role in activation of macrophages to destroy intracellularly ingested T. whipplei bacteria.[6]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "Common clinical signs and symptoms of Whipple's disease include diarrhea, steatorrhea, abdominal pain, weight loss, migratory arthropathy, fever, and neurological symptoms.[8] Weight loss and diarrhea are the most common symptoms that lead to identification of the process, but may be preceded by chronic, unexplained, relapsing episodes of nondestructive seronegative arthritis, often of large joints.[9]",
+                            "Endoscopy of the duodenum and jejunum can reveal pale yellow shaggy mucosa with erythematous eroded patches in patients with classic intestinal Whipple's disease, and small bowel X-rays may show some thickened folds. Other pathological findings may include enlarged mesenteric lymph nodes, hypercellularity of lamina propria with \"foamy macrophages\", and a concurrent decreased number of lymphocytes and plasma cells, per high power field view of the biopsy.[citation needed]",
+                            "Diagnosis is made by biopsy, usually by duodenal endoscopy, which reveals PAS-positive macrophages in the lamina propria containing non acid-fast, Gram-positive bacilli.[5][a] Immunohistochemical staining for antibodies against T. whipplei has been used to detect the organism in a variety of tissues, and a polymerase chain reaction-based assay is also available,[5]  which can be confirmatory if performed on blood, vitreous fluid, synovial fluid, heart valves, or cerebrospinal fluid.[11] PCR of saliva, gastric or intestinal fluid, and stool specimens is highly sensitive, but not specific enough, indicating that healthy individuals can also harbor the causative bacterium without the manifestation of Whipple's disease, but that a negative PCR is most likely indicative of a healthy individual.[5]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Treatment is with penicillin, ampicillin, tetracycline, or co-trimoxazole for one to two years.[2] Any treatment lasting less than a year has a relapse rate around 40%.[citation needed] Expert opinion as of 2007 is that Whipple's disease should be treated with doxycycline with hydroxychloroquine for 12 to 18 months.[3] Hydroxychloroquine increases antibiotic and bactericidal activity against the replication of the bacteria in acidic vacuoles of macrophages by increasing the macrophage intraphagosomal pH.[12] Sulfonamides (sulfadiazine or sulfamethoxazole) may be added for treatment of neurological symptoms.[3]"
+                        ]
+                    },
+                    "Epidemiology": {
+                        "content": [
+                            "The disease is regarded as extremely rare, with an incidence (new number of cases per year) of one case per million people. The patients are predominantly male, with various studies and sources typically reporting a ratio between 2:1 and 3:1 of male to female patients.[13] In the United States and some other countries, it occurs predominantly in those of Caucasian ethnicity, suggesting a possible genetic predisposition in that population.[5][13] T. whipplei appears to be an environmental organism that is commonly present in the gastrointestinal tract, but remains asymptomatic.[5] Several lines of evidence suggest that some defect—inherited or acquired—in immunity is required for it to become pathogenic.[14] The possible immunological defect may be specific for T. whipplei, since the disease is not associated with a substantially increased risk of other infections.[15] The disease is usually diagnosed in middle age (median 49 years). Studies from Germany have shown that age at diagnosis has been rising since the 1960s.[5]"
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "Whipple described the disease in 1907 in a paper in the now-defunct Bulletin of Johns Hopkins Hospital. The patient was a 36-year-old medical missionary. Whipple referred to the disease as \"intestinal lipodystrophy\".[1] It was long presumed to be an infectious disease, but the causative organism was only fully identified in 1992.[16] In 2003, doctors from Johns Hopkins Hospital, together with the French microbiologist Didier Raoult applied novel diagnostic methods to stored tissue samples from Whipple's original patient, and demonstrated T. whipplei in these tissues.[3][17]"
+                        ]
+                    },
+                    "Notes": {
+                        "content": [
+                            "<info> ^ Tropheryma whipplei bacteria contained in the macrophage inclusions are coated with a glycoprotein that stains PAS-positive with diastase resistance and may act as a virulence factor that protects the bacteria from host immune recognition.[10]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Whipple, G. H. (1907). \"A hitherto undescribed disease characterized anatomically by deposits of fat and fatty acids in the intestinal and mesenteric lymphatic tissues\". Bulletin of the Johns Hopkins Hospital. 18: 382–93.",
+                            "<info> ^ a b Bai JC, Mazure RM, Vazquez H (October 2004). \"Whipple's disease\". Clin. Gastroenterol. Hepatol. 2 (10): 849–60. doi:10.1016/S1542-3565(04)00387-8. PMID 15476147.",
+                            "<info> ^ a b c d e Fenollar F, Puéchal X, Raoult D (January 2007). \"Whipple's disease\". New England Journal of Medicine. 356 (1): 55–66. doi:10.1056/NEJMra062477. PMID 17202456.",
+                            "<info> ^ Phillips, Michael M (2022), Whipple disease, A.D.A.M. Medical Encyclopedia: A.D.A.M., retrieved 2024-08-19",
+                            "<info> ^ a b c d e f g h i j k Schneider T, Moos V, Loddenkemper C, Marth T, Fenollar F, Raoult D (March 2008). \"Whipple's disease: new aspects of pathogenesis and treatment\". Lancet Infect Dis. 8 (3): 179–90. doi:10.1016/S1473-3099(08)70042-2. PMID 18291339.",
+                            "<info> ^ a b Strayer DL, Rubin R, Rubin E (2008). Rubin's pathology: clinicopathologic foundations of medicine. Philadelphia: Wolters Kluwer/Lippincott Williams & Wilkins. p. 583. ISBN 978-0-7817-9516-6.",
+                            "<info> ^ Marth T (November 2001). \"The diagnosis and treatment of Whipple's disease\". Curr Allergy Asthma Rep. 1 (6): 566–71. doi:10.1007/s11882-001-0066-7. PMID 11892086. S2CID 6747902.",
+                            "<info> ^ Longo, D; Faucy, A; Kasper, D; Hauser, S; Jameson, J; Loscalzo, Joseph (2012). Harrison's Principles of Internal Medicine (18th ed.). McGraw Hill Professional.",
+                            "<info> ^ Puéchal, X. (2009). \"Maladie de Whipple\". La Revue de Médecine Interne. 30 (3): 233–241. doi:10.1016/j.revmed.2008.06.020. PMID 18722696.",
+                            "<info> ^ Kleinschmidt-DeMasters, B.K. (2016). \"Section 2. Infectious, inflammatory, and reactive lesions\". In Kleinschmidt-Demasters, B.K.; Rodríguez, Fausto J.; Tihan, Tarik (eds.). Diagnostic Pathology: Neuropathology (Second ed.). Salt Lake City, Utah: Elsevier. pp. 630–631. ISBN 978-0-323-44592-4.",
+                            "<info> ^ SJ McPhee, MA Papadakis. Current Medical Diagnosis and Treatment 2012 McGraw-Hill ISBN 978-0-07-176372-1",
+                            "<info> ^ Boumaza, A.; Azzouz, E.B.; Arrindell, J.; Lepidi, H.; Mezouar, S.; Desnues, B. (October 2022). \"Whipple's disease and Tropheryma whipplei infections: from bench to bedside\". The Lancet Infectious Diseases. 22 (10): e280–e291. doi:10.1016/S1473-3099(22)00128-1. PMID 35427488. S2CID 248146579.",
+                            "<info> ^ a b Ahmad, Akram I.; Wikholm, Colin; Pothoulakis, Ioannis; Caplan, Claire; Lee, Arielle; Buchanan, Faith; Kyoo Cho, Won (2022-12-09). \"Whipple's disease review, prevalence, mortality, and characteristics in the United States: A cross-sectional national inpatient study\". Medicine. 101 (49) e32231. doi:10.1097/MD.0000000000032231. ISSN 0025-7974. PMC 9750640. PMID 36626499.",
+                            "<info> ^ Marth, T. (2009). \"New Insights into Whipple's Disease – A Rare Intestinal Inflammatory Disorder\". Digestive Diseases. 27 (4): 494–501. doi:10.1159/000233288. PMID 19897965. S2CID 38746593.",
+                            "<info> ^ Deriban, G.; Marth, T. (2006). \"Current concepts of immunopathogenesis, diagnosis and therapy in Whipple's disease\". Current Medicinal Chemistry. 13 (24): 2921–2926. doi:10.2174/092986706778521913. PMID 17073638.",
+                            "<info> ^ Relman DA, Schmidt TM, MacDermott RP, Falkow S (July 1992). \"Identification of the uncultured bacillus of Whipple's disease\". N. Engl. J. Med. 327 (5): 293–301. doi:10.1056/NEJM199207303270501. PMID 1377787.",
+                            "<info> ^ Dumler JS, Baisden BL, Yardley JH, Raoult D (April 2003). \"Immunodetection of Tropheryma whipplei in intestinal tissues from Dr. Whipple's 1907 patient\". N. Engl. J. Med. 348 (14): 1411–2. doi:10.1056/NEJM200304033481425. PMID 12672878."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"Whipple's Disease\". National Digestive Disease Information Clearinghouse NDDIC. Archived from the original on October 21, 2004."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

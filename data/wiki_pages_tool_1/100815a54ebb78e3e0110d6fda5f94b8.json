@@ -1,0 +1,43 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/multiple_hamartoma_syndrome": {
+                "title": "Multiple hamartoma syndrome",
+                "url": "https://en.wikipedia.org/wiki/multiple_hamartoma_syndrome",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Multiple hamartoma syndrome is a syndrome characterized by more than one hamartoma.[1]: 673",
+                    "It is sometimes equated with Cowden syndrome. However, MeSH also includes Bannayan–Zonana syndrome (that is, Bannayan–Riley–Ruvalcaba syndrome) and Lhermitte–Duclos disease under this description. Some articles include Cowden syndrome, Bannayan–Riley–Ruvalcaba syndrome, and at least some forms of Proteus syndrome and Proteus-like syndrome under the umbrella term PTEN hamartoma tumor syndromes (PHTS).",
+                    "",
+                    "=== See also ===",
+                    "<info> List of cutaneous conditions",
+                    "<info> Characteristics of syndromic ASD conditions",
+                    "",
+                    "=== References ===",
+                    "<info> ^ James, William D.; Berger, Timothy G.; et al. (2006). Andrews' Diseases of the Skin: Clinical Dermatology. Saunders Elsevier. ISBN 0-7216-2921-0.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Multiple hamartoma syndrome is a syndrome characterized by more than one hamartoma.[1]: 673",
+                            "It is sometimes equated with Cowden syndrome. However, MeSH also includes Bannayan–Zonana syndrome (that is, Bannayan–Riley–Ruvalcaba syndrome) and Lhermitte–Duclos disease under this description. Some articles include Cowden syndrome, Bannayan–Riley–Ruvalcaba syndrome, and at least some forms of Proteus syndrome and Proteus-like syndrome under the umbrella term PTEN hamartoma tumor syndromes (PHTS)."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of cutaneous conditions",
+                            "<info> Characteristics of syndromic ASD conditions"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ James, William D.; Berger, Timothy G.; et al. (2006). Andrews' Diseases of the Skin: Clinical Dermatology. Saunders Elsevier. ISBN 0-7216-2921-0."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

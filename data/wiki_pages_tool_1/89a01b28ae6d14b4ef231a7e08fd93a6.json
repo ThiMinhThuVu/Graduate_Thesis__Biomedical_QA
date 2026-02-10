@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/common_cold": {
+                "title": "Common cold",
+                "url": "https://en.wikipedia.org/wiki/common_cold",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

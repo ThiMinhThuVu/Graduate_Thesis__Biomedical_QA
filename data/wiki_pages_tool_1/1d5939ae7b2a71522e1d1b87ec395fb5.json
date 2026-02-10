@@ -1,0 +1,77 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/white_adipose_tissue": {
+                "title": "White adipose tissue",
+                "url": "https://en.wikipedia.org/wiki/white_adipose_tissue",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "White adipose tissue or white fat is one of the two types of adipose tissue found in mammals.  The other kind is brown adipose tissue.  White adipose tissue is composed of monolocular adipocytes.",
+                    "In humans, the healthy amount of white adipose tissue varies with age, but composes between 6–25% of body weight in adult men and 14–35% in adult women.[1][additional citation(s) needed]",
+                    "Its cells contain a single large fat droplet, which forces the nucleus to be squeezed into a thin rim at the periphery. They have receptors for insulin, sex hormones, norepinephrine, and glucocorticoids.",
+                    "White adipose tissue is used for energy storage. Upon release of insulin from the pancreas, white adipose cells' insulin receptors cause a dephosphorylation cascade that leads to the inactivation of hormone-sensitive lipase. It was previously thought that upon release of glucagon from the pancreas, glucagon receptors cause a phosphorylation cascade that activates hormone-sensitive lipase, causing the breakdown of the stored fat to fatty acids, which are exported into the blood and bound to albumin, and glycerol, which is exported into the blood freely. There is actually no evidence at present that glucagon has any effect on lipolysis in white adipose tissue.[2] Glucagon is now thought to act exclusively on the liver to trigger glycogenolysis and gluconeogenesis.[3] The trigger for this process in white adipose tissue is instead now thought to be adrenocorticotropic hormone,[4][5] adrenaline[6] and noradrenaline[citation needed]. Fatty acids are taken up by muscle and cardiac tissue as a fuel source, and glycerol is taken up by the liver for gluconeogenesis.",
+                    "White adipose tissue also acts as a thermal insulator, helping to maintain body temperature.",
+                    "The hormone leptin is primarily manufactured in the adipocytes of white adipose tissue[7] which also produces another hormone, asprosin.",
+                    "",
+                    "=== Location and morphology ===",
+                    "White adipose tissue is most abundant in mammals and its distribution greatly varies among different species.[8] Usually white adipose tissue can be found in two different locations of the body where it is stored: subcutaneous adipose tissue and intra-abdominal adipose tissue. Subcutaneous adipose tissue is directly underneath the skin, while the intra-abdominal adipose tissue surrounds the organs inside the abdomen such as intestine and kidneys.[8] The intra-abdominal adipose tissues covers the thoracic and abdominal cavity. The visceral adipose tissue is part of the intra-abdominal adipose tissue that surrounds the intestine for the most part.[8] White adipose tissue exists mostly as a single adipocytes in the subcutaneous tissue.[9]",
+                    "",
+                    "=== Development ===",
+                    "In humans, white adipose tissue starts to develop during early to mid-gestation period. White adipose tissue consists of white adipocytes, which are the lipid storage cells. They are differentiated from undifferentiated preadipocytes through transcriptional cascade. This process is regulated by the nuclear receptor peroxisome proliferator-activated receptor γ (PPARγ), a protein regulating gene involved in regulation of fatty acid storage and glucose metabolism and members of the CCAAT/enhancer-binding protein family, type of transcription factors that promotes gene expression.[10] PPARγ is required for both the adipogenesis and maintenance of the adipocytes.",
+                    "White adipose tissue exists in various depots that may have different types of adipocytes.[8] That is, different depots in different locations have different intrinsic properties. This led to various theories to find the adipogenic lineage of the white adipose tissue depots. A hypothesis is that the precursors for the different types of adipocytes are mesenchymal stem cells which differentiates by the influence of specific gene expression into specialized white preadipocytes. Such genes are Shox2, En1, Tbx15, HoxC9, HoxC8, and HoxA5.[8] The study of the gene expression is important as they can be indicative of various health issues such as obesity related risk factors including diabetes and metabolic conditions.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ AACE/ACE Obesity Task Force (1998). \"AACE/ACE position statement on the prevention, diagnosis, and treatment of obesity\". Endocr Pract. 4 (5).",
+                    "<info> ^ Gravholt CH, Møller N, Jensen MD, Christiansen JS, Schmitz O (May 2001). \"Physiological levels of glucagon do not influence lipolysis in abdominal adipose tissue as assessed by microdialysis\". The Journal of Clinical Endocrinology and Metabolism. 86 (5): 2085–9. doi:10.1210/jcem.86.5.7460. PMID 11344211.",
+                    "<info> ^ Lawrence AM (1969). \"Glucagon\". Annual Review of Medicine. 20: 207–22. doi:10.1146/annurev.me.20.020169.001231. PMID 4893399.",
+                    "<info> ^ Spirovski MZ, Kovacev VP, Spasovska M, Chernick SS (February 1975). \"Effect of ACTH on lipolysis in adipose tissue of normal and adrenalectomized rats in vivo\". The American Journal of Physiology. 228 (2): 382–5. doi:10.1152/ajplegacy.1975.228.2.382. PMID 164126.",
+                    "<info> ^ Kiwaki K, Levine JA (November 2003). \"Differential effects of adrenocorticotropic hormone on human and mouse adipose tissue\". Journal of Comparative Physiology B: Biochemical, Systemic, and Environmental Physiology. 173 (8): 675–8. doi:10.1007/s00360-003-0377-1. PMID 12925881. S2CID 12459319.",
+                    "<info> ^ Stallknecht B, Simonsen L, Bülow J, Vinten J, Galbo H (December 1995). \"Effect of training on epinephrine-stimulated lipolysis determined by microdialysis in human adipose tissue\". The American Journal of Physiology. 269 (6 Pt 1): E1059-66. doi:10.1152/ajpendo.1995.269.6.E1059. PMID 8572197.",
+                    "<info> ^ Zhou Y, Rui L (June 2013). \"Leptin signaling and leptin resistance\". Frontiers of Medicine. 7 (2): 207–22. doi:10.1007/s11684-013-0263-5. PMC 4069066. PMID 23580174.",
+                    "<info> ^ a b c d e Symonds, Michael (2017). Adipose Tissue Biology. Springer. p. 150. ISBN 978-3-319-52031-5.",
+                    "<info> ^ Pavelka, Margit; Roth, Jürgen (2010). Functional Ultrastructure. Vienna: Springer. p. 290. ISBN 978-3-211-99390-3.",
+                    "<info> ^ Ahmadian M, Suh JM, Hah N, Liddle C, Atkins AR, Downes M, Evans RM (May 2013). \"PPARγ signaling and metabolism: the good, the bad and the future\". Nature Medicine. 19 (5): 557–66. doi:10.1038/nm.3159. PMC 3870016. PMID 23652116",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "White adipose tissue or white fat is one of the two types of adipose tissue found in mammals.  The other kind is brown adipose tissue.  White adipose tissue is composed of monolocular adipocytes.",
+                            "In humans, the healthy amount of white adipose tissue varies with age, but composes between 6–25% of body weight in adult men and 14–35% in adult women.[1][additional citation(s) needed]",
+                            "Its cells contain a single large fat droplet, which forces the nucleus to be squeezed into a thin rim at the periphery. They have receptors for insulin, sex hormones, norepinephrine, and glucocorticoids.",
+                            "White adipose tissue is used for energy storage. Upon release of insulin from the pancreas, white adipose cells' insulin receptors cause a dephosphorylation cascade that leads to the inactivation of hormone-sensitive lipase. It was previously thought that upon release of glucagon from the pancreas, glucagon receptors cause a phosphorylation cascade that activates hormone-sensitive lipase, causing the breakdown of the stored fat to fatty acids, which are exported into the blood and bound to albumin, and glycerol, which is exported into the blood freely. There is actually no evidence at present that glucagon has any effect on lipolysis in white adipose tissue.[2] Glucagon is now thought to act exclusively on the liver to trigger glycogenolysis and gluconeogenesis.[3] The trigger for this process in white adipose tissue is instead now thought to be adrenocorticotropic hormone,[4][5] adrenaline[6] and noradrenaline[citation needed]. Fatty acids are taken up by muscle and cardiac tissue as a fuel source, and glycerol is taken up by the liver for gluconeogenesis.",
+                            "White adipose tissue also acts as a thermal insulator, helping to maintain body temperature.",
+                            "The hormone leptin is primarily manufactured in the adipocytes of white adipose tissue[7] which also produces another hormone, asprosin."
+                        ]
+                    },
+                    "Location and morphology": {
+                        "content": [
+                            "White adipose tissue is most abundant in mammals and its distribution greatly varies among different species.[8] Usually white adipose tissue can be found in two different locations of the body where it is stored: subcutaneous adipose tissue and intra-abdominal adipose tissue. Subcutaneous adipose tissue is directly underneath the skin, while the intra-abdominal adipose tissue surrounds the organs inside the abdomen such as intestine and kidneys.[8] The intra-abdominal adipose tissues covers the thoracic and abdominal cavity. The visceral adipose tissue is part of the intra-abdominal adipose tissue that surrounds the intestine for the most part.[8] White adipose tissue exists mostly as a single adipocytes in the subcutaneous tissue.[9]"
+                        ]
+                    },
+                    "Development": {
+                        "content": [
+                            "In humans, white adipose tissue starts to develop during early to mid-gestation period. White adipose tissue consists of white adipocytes, which are the lipid storage cells. They are differentiated from undifferentiated preadipocytes through transcriptional cascade. This process is regulated by the nuclear receptor peroxisome proliferator-activated receptor γ (PPARγ), a protein regulating gene involved in regulation of fatty acid storage and glucose metabolism and members of the CCAAT/enhancer-binding protein family, type of transcription factors that promotes gene expression.[10] PPARγ is required for both the adipogenesis and maintenance of the adipocytes.",
+                            "White adipose tissue exists in various depots that may have different types of adipocytes.[8] That is, different depots in different locations have different intrinsic properties. This led to various theories to find the adipogenic lineage of the white adipose tissue depots. A hypothesis is that the precursors for the different types of adipocytes are mesenchymal stem cells which differentiates by the influence of specific gene expression into specialized white preadipocytes. Such genes are Shox2, En1, Tbx15, HoxC9, HoxC8, and HoxA5.[8] The study of the gene expression is important as they can be indicative of various health issues such as obesity related risk factors including diabetes and metabolic conditions."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ AACE/ACE Obesity Task Force (1998). \"AACE/ACE position statement on the prevention, diagnosis, and treatment of obesity\". Endocr Pract. 4 (5).",
+                            "<info> ^ Gravholt CH, Møller N, Jensen MD, Christiansen JS, Schmitz O (May 2001). \"Physiological levels of glucagon do not influence lipolysis in abdominal adipose tissue as assessed by microdialysis\". The Journal of Clinical Endocrinology and Metabolism. 86 (5): 2085–9. doi:10.1210/jcem.86.5.7460. PMID 11344211.",
+                            "<info> ^ Lawrence AM (1969). \"Glucagon\". Annual Review of Medicine. 20: 207–22. doi:10.1146/annurev.me.20.020169.001231. PMID 4893399.",
+                            "<info> ^ Spirovski MZ, Kovacev VP, Spasovska M, Chernick SS (February 1975). \"Effect of ACTH on lipolysis in adipose tissue of normal and adrenalectomized rats in vivo\". The American Journal of Physiology. 228 (2): 382–5. doi:10.1152/ajplegacy.1975.228.2.382. PMID 164126.",
+                            "<info> ^ Kiwaki K, Levine JA (November 2003). \"Differential effects of adrenocorticotropic hormone on human and mouse adipose tissue\". Journal of Comparative Physiology B: Biochemical, Systemic, and Environmental Physiology. 173 (8): 675–8. doi:10.1007/s00360-003-0377-1. PMID 12925881. S2CID 12459319.",
+                            "<info> ^ Stallknecht B, Simonsen L, Bülow J, Vinten J, Galbo H (December 1995). \"Effect of training on epinephrine-stimulated lipolysis determined by microdialysis in human adipose tissue\". The American Journal of Physiology. 269 (6 Pt 1): E1059-66. doi:10.1152/ajpendo.1995.269.6.E1059. PMID 8572197.",
+                            "<info> ^ Zhou Y, Rui L (June 2013). \"Leptin signaling and leptin resistance\". Frontiers of Medicine. 7 (2): 207–22. doi:10.1007/s11684-013-0263-5. PMC 4069066. PMID 23580174.",
+                            "<info> ^ a b c d e Symonds, Michael (2017). Adipose Tissue Biology. Springer. p. 150. ISBN 978-3-319-52031-5.",
+                            "<info> ^ Pavelka, Margit; Roth, Jürgen (2010). Functional Ultrastructure. Vienna: Springer. p. 290. ISBN 978-3-211-99390-3.",
+                            "<info> ^ Ahmadian M, Suh JM, Hah N, Liddle C, Atkins AR, Downes M, Evans RM (May 2013). \"PPARγ signaling and metabolism: the good, the bad and the future\". Nature Medicine. 19 (5): 557–66. doi:10.1038/nm.3159. PMC 3870016. PMID 23652116"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

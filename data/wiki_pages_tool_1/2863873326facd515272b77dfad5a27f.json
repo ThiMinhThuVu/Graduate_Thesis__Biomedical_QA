@@ -1,0 +1,65 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/cytosol_nonspecific_dipeptidase": {
+                "title": "Cytosol nonspecific dipeptidase",
+                "url": "https://en.wikipedia.org/wiki/cytosol_nonspecific_dipeptidase",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Cytosolic non-specific dipeptidase (EC 3.4.13.18) also known as carnosine dipeptidase 2 is an enzyme that in humans is encoded by the CNDP2 gene.[5][6][7] This enzyme catalyses the hydrolysis of dipeptides, preferentially those containing hydrophobic amino acids.  The human enzyme uses manganese ions as a cofactor.[8]  In addition to its function as a peptidase, the enzyme also functions to generate N-lactoyl amino acids, such as N-lactoyl-phenylalanine, via the process of \"reverse proteolysis\".[9] A similar pathway conjugates amino acids to Beta-hydroxybutyric acid.[10]",
+                    "",
+                    "=== See also ===",
+                    "<info> N-lactoyl-phenylalanine, a chemical compound produced by this enzyme",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000133313 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000024644 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ Teufel M, Saudek V, Ledig JP, Bernhardt A, Boularand S, Carreau A, et al. (February 2003). \"Sequence identification and characterization of human carnosinase and a closely related non-specific dipeptidase\". The Journal of Biological Chemistry. 278 (8): 6521–6531. doi:10.1074/jbc.M209764200. PMID 12473676.",
+                    "<info> ^ \"Entrez Gene: CNDP2 carnosine dipeptidase 2\".",
+                    "<info> ^ Bauer K (1998). \"Cytosol non-specific dipeptidase\". In Barrett AJ, Rawlings ND, Woessner JF (eds.). Handbook of Proteolytic Enzymes. London: Academic Press. pp. 1520–1522.",
+                    "<info> ^ \"UniProt: CDNP2 - Cytosolic non-specific dipeptidase: Homo sapiens\".",
+                    "<info> ^ Jansen RS, Addie R, Merkx R, Fish A, Mahakena S, Bleijerveld OB, et al. (May 11, 2015). \"N-lactoyl-amino acids are ubiquitous metabolites that originate from CDNP2-mediated reverse proteolysis of lactate and amino acids\". Proceedings of the National Academy of Sciences of the USA. 112 (21): 6601–6606. Bibcode:2015PNAS..112.6601J. doi:10.1073/pnas.1424638112. PMC 4450436. PMID 25964343.",
+                    "<info> ^ Moya-Garzon MD, Wang M, Li VL, Lyu X, Wei W, Tung AS, et al. (2024). \"A β-hydroxybutyrate shunt pathway generates anti-obesity ketone metabolites\". Cell. 188 (1): 175–186.e20. doi:10.1016/j.cell.2024.10.032. PMC 11724754. PMID 39536746.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                    "",
+                    "=== External links ===",
+                    "<info> Cytosol+non-specific+dipeptidase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Cytosolic non-specific dipeptidase (EC 3.4.13.18) also known as carnosine dipeptidase 2 is an enzyme that in humans is encoded by the CNDP2 gene.[5][6][7] This enzyme catalyses the hydrolysis of dipeptides, preferentially those containing hydrophobic amino acids.  The human enzyme uses manganese ions as a cofactor.[8]  In addition to its function as a peptidase, the enzyme also functions to generate N-lactoyl amino acids, such as N-lactoyl-phenylalanine, via the process of \"reverse proteolysis\".[9] A similar pathway conjugates amino acids to Beta-hydroxybutyric acid.[10]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> N-lactoyl-phenylalanine, a chemical compound produced by this enzyme"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000133313 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000024644 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ Teufel M, Saudek V, Ledig JP, Bernhardt A, Boularand S, Carreau A, et al. (February 2003). \"Sequence identification and characterization of human carnosinase and a closely related non-specific dipeptidase\". The Journal of Biological Chemistry. 278 (8): 6521–6531. doi:10.1074/jbc.M209764200. PMID 12473676.",
+                            "<info> ^ \"Entrez Gene: CNDP2 carnosine dipeptidase 2\".",
+                            "<info> ^ Bauer K (1998). \"Cytosol non-specific dipeptidase\". In Barrett AJ, Rawlings ND, Woessner JF (eds.). Handbook of Proteolytic Enzymes. London: Academic Press. pp. 1520–1522.",
+                            "<info> ^ \"UniProt: CDNP2 - Cytosolic non-specific dipeptidase: Homo sapiens\".",
+                            "<info> ^ Jansen RS, Addie R, Merkx R, Fish A, Mahakena S, Bleijerveld OB, et al. (May 11, 2015). \"N-lactoyl-amino acids are ubiquitous metabolites that originate from CDNP2-mediated reverse proteolysis of lactate and amino acids\". Proceedings of the National Academy of Sciences of the USA. 112 (21): 6601–6606. Bibcode:2015PNAS..112.6601J. doi:10.1073/pnas.1424638112. PMC 4450436. PMID 25964343.",
+                            "<info> ^ Moya-Garzon MD, Wang M, Li VL, Lyu X, Wei W, Tung AS, et al. (2024). \"A β-hydroxybutyrate shunt pathway generates anti-obesity ketone metabolites\". Cell. 188 (1): 175–186.e20. doi:10.1016/j.cell.2024.10.032. PMC 11724754. PMID 39536746.{{cite journal}}:  CS1 maint: multiple names: authors list (link)"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Cytosol+non-specific+dipeptidase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

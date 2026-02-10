@@ -1,0 +1,45 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_childhood_diseases_and_disorders": {
+                "title": "List of childhood diseases and disorders",
+                "url": "https://en.wikipedia.org/wiki/list_of_childhood_diseases_and_disorders",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The term childhood disease refers to disease that is contracted or becomes symptomatic before the legal age of majority. Many of these diseases can also be contracted by adults.",
+                    "Some childhood diseases include:",
+                    "",
+                    "=== Diseases of neonates and children younger than five years ===",
+                    "<info> Group B streptoccus infection",
+                    "<info> Respiratory syncytial virus infection",
+                    "",
+                    "=== Diseases of older children ===",
+                    "<info> Cytomegalovirus (the virus most frequently transmitted before birth)",
+                    "<info> The Pediatric Foundation for Rare Diseases",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The term childhood disease refers to disease that is contracted or becomes symptomatic before the legal age of majority. Many of these diseases can also be contracted by adults.",
+                            "Some childhood diseases include:"
+                        ]
+                    },
+                    "Diseases of neonates and children younger than five years": {
+                        "content": [
+                            "<info> Group B streptoccus infection",
+                            "<info> Respiratory syncytial virus infection"
+                        ]
+                    },
+                    "Diseases of older children": {
+                        "content": [
+                            "<info> Cytomegalovirus (the virus most frequently transmitted before birth)",
+                            "<info> The Pediatric Foundation for Rare Diseases"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

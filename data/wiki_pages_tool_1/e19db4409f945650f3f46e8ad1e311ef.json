@@ -1,0 +1,115 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/serum_albumin": {
+                "title": "Serum albumin",
+                "url": "https://en.wikipedia.org/wiki/serum_albumin",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Serum albumin, often referred to simply as blood albumin, is an albumin (a type of globular protein) found in vertebrate blood. Human serum albumin is encoded by the ALB gene.[2][3][4] Other mammalian forms, such as bovine serum albumin, are chemically similar.",
+                    "Serum albumin is produced by the liver, occurs dissolved in blood plasma and is the most abundant blood protein in mammals. Albumin is essential for maintaining the oncotic pressure needed for proper distribution of body fluids between blood vessels and body tissues; without albumin, the high pressure in the blood vessels would force more fluids out into the tissues. It also acts as a plasma carrier by non-specifically binding several hydrophobic steroid hormones and as a transport protein for hemin and fatty acids. Too much or too little circulating serum albumin may be harmful.",
+                    "",
+                    "=== Function ===",
+                    "Albumin functions primarily as a carrier protein for steroids, fatty acids, and thyroid hormones in the blood and plays a major role in stabilizing extracellular fluid volume by contributing to oncotic pressure (known also as colloid osmotic pressure) of plasma.",
+                    "Because smaller animals (for example rats) function at a lower blood pressure, they need less oncotic pressure to balance this[citation needed], and thus need less albumin to maintain proper fluid distribution.",
+                    "As an anionic protein, albumin binds readily to calcium in blood serum and contributes greatly to plasma calcium levels.  As such, in clinical applications it is necessary to adjust serum total calcium concentration upward or downward if hypoalbuminemia or hyperalbuminemia is present, respectively (measured serum total calcium decreases by 0.8 mg/dL per unit decrease in albumin concentration below 4 g/dL).[5][6]",
+                    "",
+                    "=== Synthesis ===",
+                    "Albumin is synthesized in the liver as preproalbumin which has an N-terminal peptide that is removed before the nascent protein is released from the rough endoplasmic reticulum. The product, proalbumin, is in turn cleaved in the Golgi vesicles to produce the secreted albumin.[4]",
+                    "",
+                    "=== Properties ===",
+                    "Albumin is a globular, water-soluble, un-glycosylated serum protein of approximate molecular weight of 65,000 daltons.",
+                    "Albumin (when ionized in water at pH 7.4, as found in the body) is negatively charged. The glomerular basement membrane is also negatively charged in the body; some studies suggest that this prevents the filtration of albumin in the urine. According to this theory, that charge plays a major role in the selective exclusion of albumin from the glomerular filtrate. A defect in this property results in nephrotic syndrome leading to albumin loss in the urine. Nephrotic syndrome patients are sometimes given albumin to replace the lost albumin.",
+                    "",
+                    "=== Structure ===",
+                    "The general structure of albumin is characterized by several long α helices allowing it to maintain a relatively static shape, which is essential for regulating blood pressure.",
+                    "Serum albumin contains eleven distinct binding domains for hydrophobic compounds. One hemin and six long-chain fatty acids can bind to serum albumin at the same time.[7]",
+                    "",
+                    "=== Types ===",
+                    "Serum albumin is widely distributed in mammals.",
+                    "<info> The human version is human serum albumin.",
+                    "<info> Bovine serum albumin, or BSA, is commonly used in immunodiagnostic procedures, clinical chemistry reagents, cell culture media, protein chemistry research (including venom toxicity), and molecular biology laboratories (usually to leverage its non-specific protein binding properties).",
+                    "",
+                    "=== See also ===",
+                    "<info> Chromatography in blood processing",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Sugio S, Kashima A, Mochizuki S, Noda M, Kobayashi K (June 1999). \"Crystal structure of human serum albumin at 2.5 A resolution\". Protein Engineering. 12 (6): 439–46. doi:10.1093/protein/12.6.439. PMID 10388840.",
+                    "<info> ^ Hawkins JW, Dugaiczyk A (1982). \"The human serum albumin gene: structure of a unique locus\". Gene. 19 (1): 55–8. doi:10.1016/0378-1119(82)90188-3. PMID 6292049.",
+                    "<info> ^ Harper ME, Dugaiczyk A (July 1983). \"Linkage of the evolutionarily-related serum albumin and alpha-fetoprotein genes within q11-22 of human chromosome 4\". American Journal of Human Genetics. 35 (4): 565–72. PMC 1685723. PMID 6192711.",
+                    "<info> ^ a b \"Entrez Gene: albumin\". U.S. National Library of Medicine.",
+                    "<info> ^ Goyal A, Anastasopoulou C, Ngu M, Singh S (8 May 2022). \"Hypocalcemia\". StatPearls. StatPearls Publishing LLC. PMID 28613662.",
+                    "<info> ^ Holliman K (March 2012). \"Diagnosing a disorder with few symptoms\". ACP Internist. American College of Physicians. Retrieved 13 June 2022.",
+                    "<info> ^ Zunszain PA, Ghuman J, Komatsu T, Tsuchida E, Curry S (July 2003). \"Crystal structural analysis of human serum albumin complexed with hemin and fatty acid\". BMC Structural Biology. 3: 6. doi:10.1186/1472-6807-3-6. PMC 166163. PMID 12846933.",
+                    "",
+                    "=== External links ===",
+                    "<info> RCSB Protein Data Bank : Molecule of the Month – Serum Albumin Archived 2009-12-30 at the Wayback Machine",
+                    "<info> Overview of all the structural information available in the PDB for UniProt: P02768 (Human Serum albumin) at the PDBe-KB.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Serum albumin, often referred to simply as blood albumin, is an albumin (a type of globular protein) found in vertebrate blood. Human serum albumin is encoded by the ALB gene.[2][3][4] Other mammalian forms, such as bovine serum albumin, are chemically similar.",
+                            "Serum albumin is produced by the liver, occurs dissolved in blood plasma and is the most abundant blood protein in mammals. Albumin is essential for maintaining the oncotic pressure needed for proper distribution of body fluids between blood vessels and body tissues; without albumin, the high pressure in the blood vessels would force more fluids out into the tissues. It also acts as a plasma carrier by non-specifically binding several hydrophobic steroid hormones and as a transport protein for hemin and fatty acids. Too much or too little circulating serum albumin may be harmful."
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "Albumin functions primarily as a carrier protein for steroids, fatty acids, and thyroid hormones in the blood and plays a major role in stabilizing extracellular fluid volume by contributing to oncotic pressure (known also as colloid osmotic pressure) of plasma.",
+                            "Because smaller animals (for example rats) function at a lower blood pressure, they need less oncotic pressure to balance this[citation needed], and thus need less albumin to maintain proper fluid distribution.",
+                            "As an anionic protein, albumin binds readily to calcium in blood serum and contributes greatly to plasma calcium levels.  As such, in clinical applications it is necessary to adjust serum total calcium concentration upward or downward if hypoalbuminemia or hyperalbuminemia is present, respectively (measured serum total calcium decreases by 0.8 mg/dL per unit decrease in albumin concentration below 4 g/dL).[5][6]"
+                        ]
+                    },
+                    "Synthesis": {
+                        "content": [
+                            "Albumin is synthesized in the liver as preproalbumin which has an N-terminal peptide that is removed before the nascent protein is released from the rough endoplasmic reticulum. The product, proalbumin, is in turn cleaved in the Golgi vesicles to produce the secreted albumin.[4]"
+                        ]
+                    },
+                    "Properties": {
+                        "content": [
+                            "Albumin is a globular, water-soluble, un-glycosylated serum protein of approximate molecular weight of 65,000 daltons.",
+                            "Albumin (when ionized in water at pH 7.4, as found in the body) is negatively charged. The glomerular basement membrane is also negatively charged in the body; some studies suggest that this prevents the filtration of albumin in the urine. According to this theory, that charge plays a major role in the selective exclusion of albumin from the glomerular filtrate. A defect in this property results in nephrotic syndrome leading to albumin loss in the urine. Nephrotic syndrome patients are sometimes given albumin to replace the lost albumin."
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "The general structure of albumin is characterized by several long α helices allowing it to maintain a relatively static shape, which is essential for regulating blood pressure.",
+                            "Serum albumin contains eleven distinct binding domains for hydrophobic compounds. One hemin and six long-chain fatty acids can bind to serum albumin at the same time.[7]"
+                        ]
+                    },
+                    "Types": {
+                        "content": [
+                            "Serum albumin is widely distributed in mammals.",
+                            "<info> The human version is human serum albumin.",
+                            "<info> Bovine serum albumin, or BSA, is commonly used in immunodiagnostic procedures, clinical chemistry reagents, cell culture media, protein chemistry research (including venom toxicity), and molecular biology laboratories (usually to leverage its non-specific protein binding properties)."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Chromatography in blood processing"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Sugio S, Kashima A, Mochizuki S, Noda M, Kobayashi K (June 1999). \"Crystal structure of human serum albumin at 2.5 A resolution\". Protein Engineering. 12 (6): 439–46. doi:10.1093/protein/12.6.439. PMID 10388840.",
+                            "<info> ^ Hawkins JW, Dugaiczyk A (1982). \"The human serum albumin gene: structure of a unique locus\". Gene. 19 (1): 55–8. doi:10.1016/0378-1119(82)90188-3. PMID 6292049.",
+                            "<info> ^ Harper ME, Dugaiczyk A (July 1983). \"Linkage of the evolutionarily-related serum albumin and alpha-fetoprotein genes within q11-22 of human chromosome 4\". American Journal of Human Genetics. 35 (4): 565–72. PMC 1685723. PMID 6192711.",
+                            "<info> ^ a b \"Entrez Gene: albumin\". U.S. National Library of Medicine.",
+                            "<info> ^ Goyal A, Anastasopoulou C, Ngu M, Singh S (8 May 2022). \"Hypocalcemia\". StatPearls. StatPearls Publishing LLC. PMID 28613662.",
+                            "<info> ^ Holliman K (March 2012). \"Diagnosing a disorder with few symptoms\". ACP Internist. American College of Physicians. Retrieved 13 June 2022.",
+                            "<info> ^ Zunszain PA, Ghuman J, Komatsu T, Tsuchida E, Curry S (July 2003). \"Crystal structural analysis of human serum albumin complexed with hemin and fatty acid\". BMC Structural Biology. 3: 6. doi:10.1186/1472-6807-3-6. PMC 166163. PMID 12846933."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> RCSB Protein Data Bank : Molecule of the Month – Serum Albumin Archived 2009-12-30 at the Wayback Machine",
+                            "<info> Overview of all the structural information available in the PDB for UniProt: P02768 (Human Serum albumin) at the PDBe-KB."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

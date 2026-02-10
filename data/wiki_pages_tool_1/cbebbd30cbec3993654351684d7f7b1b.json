@@ -1,0 +1,49 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/treponema_pallidum_particle_agglutination_assay": {
+                "title": "Treponema pallidum particle agglutination assay",
+                "url": "https://en.wikipedia.org/wiki/treponema_pallidum_particle_agglutination_assay",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The Treponema pallidum particle agglutination assay (also called TPPA test) is an indirect agglutination assay used for detection and titration of antibodies against the causative agent of syphilis, Treponema pallidum subspecies pallidum. It also detects other treponematoses.[citation needed]",
+                    "In the test, gelatin particles are sensitized with T. pallidum antigen.  Patient serum is mixed with the reagent containing the sensitized gelatin particles.  The particles aggregate to form clumps when the patient serum is positive for syphilis.  In other words, the patient's serum contains antibodies to T. pallidum. A negative test shows no clumping of gelatin particles.  This is a type of specific treponemal test for syphilis. [citation needed]",
+                    "A similar specific treponemal test for syphilis is the Treponema pallidum hemagglutination assay or TPHA.  TPHA is an indirect hemagglutination assay used for the detection and titration of antibodies against the causative agent of syphilis, Treponema pallidum subspecies pallidum.[citation needed]",
+                    "In the test, red blood cells (erythrocytes) are sensitized with antigens from T. pallidum pallidum. The cells then aggregate on the surface of a test dish if exposed to the serum of a patient with syphilis. It is used as a confirmatory test for syphilis infection.  A negative test result shows a tight button or spot of red blood cells on the surface of the test dish.  Often a plastic test plate containing many small \"wells\" is used as the test dish so that many patients may be tested at the same time but their results can be kept separate from each other. Please note the image (Fig 1) of the wells on the test plate and the positive and negative test results look different.[1]",
+                    "For primary syphilis, TPPA has a sensitivity of 85% to 100%, and a specificity of 98% to 100%.[2] In secondary and late-latent syphilis, TPPA has a sensitivity of 98% to 100%.[2]",
+                    "Antibodies against other treponemal organisms, such as the T. pallidum subspecies endemicum,  pertenue, or carateum, can cause false positive results. Not all these disease are venereal; it has been recommended that a careful explanation of this fact be included with test results.[3] A variety of methods exist to adsorb these antibodies from the test sample before hemagglutination.[citation needed]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Cheesbrough, M. District Laboratory Practice in Tropical Countries, Part 2, Cambridge University Press, South Africa, second edition, 2006.",
+                    "<info> ^ a b British Medical Journal (bestpractice.bmj.com) > Syphilis infection > Diagnostic tests Last updated: Mar 22, 2012. In turn citing:\nCreegan L, Bauer HM, Samuel MC, et al. An evaluation of the relative sensitivities of the venereal disease research laboratory test and the Treponema Pallidum particle agglutination test among patients diagnosed with primary syphilis. Sex Transm Dis. 2007;34:1016–1108.\nManavi K, Young H, McMillan A. The sensitivity of syphilis assays in detecting different stages of early syphilis. Int J STD AIDS. 2006;17:768–771.",
+                    "<info> ^ Marks, M; Lebari, D; Solomon, AW; Higgins, SP (September 2015). \"Yaws\". International Journal of STD & AIDS. 26 (10): 696–703. doi:10.1177/0956462414549036. PMC 4655361. PMID 25193248.",
+                    "<info> Creegan L, Bauer HM, Samuel MC, et al. An evaluation of the relative sensitivities of the venereal disease research laboratory test and the Treponema Pallidum particle agglutination test among patients diagnosed with primary syphilis. Sex Transm Dis. 2007;34:1016–1108.",
+                    "<info> Manavi K, Young H, McMillan A. The sensitivity of syphilis assays in detecting different stages of early syphilis. Int J STD AIDS. 2006;17:768–771.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The Treponema pallidum particle agglutination assay (also called TPPA test) is an indirect agglutination assay used for detection and titration of antibodies against the causative agent of syphilis, Treponema pallidum subspecies pallidum. It also detects other treponematoses.[citation needed]",
+                            "In the test, gelatin particles are sensitized with T. pallidum antigen.  Patient serum is mixed with the reagent containing the sensitized gelatin particles.  The particles aggregate to form clumps when the patient serum is positive for syphilis.  In other words, the patient's serum contains antibodies to T. pallidum. A negative test shows no clumping of gelatin particles.  This is a type of specific treponemal test for syphilis. [citation needed]",
+                            "A similar specific treponemal test for syphilis is the Treponema pallidum hemagglutination assay or TPHA.  TPHA is an indirect hemagglutination assay used for the detection and titration of antibodies against the causative agent of syphilis, Treponema pallidum subspecies pallidum.[citation needed]",
+                            "In the test, red blood cells (erythrocytes) are sensitized with antigens from T. pallidum pallidum. The cells then aggregate on the surface of a test dish if exposed to the serum of a patient with syphilis. It is used as a confirmatory test for syphilis infection.  A negative test result shows a tight button or spot of red blood cells on the surface of the test dish.  Often a plastic test plate containing many small \"wells\" is used as the test dish so that many patients may be tested at the same time but their results can be kept separate from each other. Please note the image (Fig 1) of the wells on the test plate and the positive and negative test results look different.[1]",
+                            "For primary syphilis, TPPA has a sensitivity of 85% to 100%, and a specificity of 98% to 100%.[2] In secondary and late-latent syphilis, TPPA has a sensitivity of 98% to 100%.[2]",
+                            "Antibodies against other treponemal organisms, such as the T. pallidum subspecies endemicum,  pertenue, or carateum, can cause false positive results. Not all these disease are venereal; it has been recommended that a careful explanation of this fact be included with test results.[3] A variety of methods exist to adsorb these antibodies from the test sample before hemagglutination.[citation needed]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Cheesbrough, M. District Laboratory Practice in Tropical Countries, Part 2, Cambridge University Press, South Africa, second edition, 2006.",
+                            "<info> ^ a b British Medical Journal (bestpractice.bmj.com) > Syphilis infection > Diagnostic tests Last updated: Mar 22, 2012. In turn citing:\nCreegan L, Bauer HM, Samuel MC, et al. An evaluation of the relative sensitivities of the venereal disease research laboratory test and the Treponema Pallidum particle agglutination test among patients diagnosed with primary syphilis. Sex Transm Dis. 2007;34:1016–1108.\nManavi K, Young H, McMillan A. The sensitivity of syphilis assays in detecting different stages of early syphilis. Int J STD AIDS. 2006;17:768–771.",
+                            "<info> ^ Marks, M; Lebari, D; Solomon, AW; Higgins, SP (September 2015). \"Yaws\". International Journal of STD & AIDS. 26 (10): 696–703. doi:10.1177/0956462414549036. PMC 4655361. PMID 25193248.",
+                            "<info> Creegan L, Bauer HM, Samuel MC, et al. An evaluation of the relative sensitivities of the venereal disease research laboratory test and the Treponema Pallidum particle agglutination test among patients diagnosed with primary syphilis. Sex Transm Dis. 2007;34:1016–1108.",
+                            "<info> Manavi K, Young H, McMillan A. The sensitivity of syphilis assays in detecting different stages of early syphilis. Int J STD AIDS. 2006;17:768–771."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

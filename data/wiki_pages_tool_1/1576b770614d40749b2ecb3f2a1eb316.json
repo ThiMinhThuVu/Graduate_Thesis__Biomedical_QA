@@ -1,0 +1,31 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/myeloid_leukemia": {
+                "title": "Myeloid leukemia",
+                "url": "https://en.wikipedia.org/wiki/myeloid_leukemia",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Myeloid leukemia is a type of leukemia affecting myeloid tissue.",
+                    "<info> Acute myeloid leukemia: A cancer of the myeloid line of blood cells, characterized by the rapid growth of myeloblasts that build up in the bone marrow and blood and interfere with normal blood cell production.",
+                    "<info> Chronic myelogenous leukemia: A cancer of the white blood cells.",
+                    "<info> Acute megakaryoblastic leukemia: A life-threatening leukemia in which malignant megakaryoblasts proliferate abnormally and injure various tissues.",
+                    "<info> Blastic plasmacytoid dendritic cell neoplasm: A rare hematologic malignancy which is a malignancy of plasmacytoid dendritic cells.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Myeloid leukemia is a type of leukemia affecting myeloid tissue.",
+                            "<info> Acute myeloid leukemia: A cancer of the myeloid line of blood cells, characterized by the rapid growth of myeloblasts that build up in the bone marrow and blood and interfere with normal blood cell production.",
+                            "<info> Chronic myelogenous leukemia: A cancer of the white blood cells.",
+                            "<info> Acute megakaryoblastic leukemia: A life-threatening leukemia in which malignant megakaryoblasts proliferate abnormally and injure various tissues.",
+                            "<info> Blastic plasmacytoid dendritic cell neoplasm: A rare hematologic malignancy which is a malignancy of plasmacytoid dendritic cells."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

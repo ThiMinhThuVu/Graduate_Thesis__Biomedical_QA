@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_people_with_brain_tumors": {
+                "title": "List of people with brain tumors",
+                "url": "https://en.wikipedia.org/wiki/list_of_people_with_brain_tumors",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

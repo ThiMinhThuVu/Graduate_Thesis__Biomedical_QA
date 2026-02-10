@@ -1,0 +1,35 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/.swiss": {
+                "title": ".swiss",
+                "url": "https://en.wikipedia.org/wiki/.swiss",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    ".swiss is a top-level domain (TLD) for Switzerland. It was approved by ICANN as a TLD on 16 Oct 2014. This is meant to supplement the traditional .ch TLD.",
+                    "The Federal Office of Communications (OFCOM) began registering .swiss domains as of 7 September 2015. Open registration to other legal entities begins from 11 January 2016.[2]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Facts\". dot.swiss. Retrieved 8 January 2016.",
+                    "<info> ^ \"Launch of the new .swiss internet domain\". dot.swiss. 9 September 2015. Retrieved 8 January 2016.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            ".swiss is a top-level domain (TLD) for Switzerland. It was approved by ICANN as a TLD on 16 Oct 2014. This is meant to supplement the traditional .ch TLD.",
+                            "The Federal Office of Communications (OFCOM) began registering .swiss domains as of 7 September 2015. Open registration to other legal entities begins from 11 January 2016.[2]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Facts\". dot.swiss. Retrieved 8 January 2016.",
+                            "<info> ^ \"Launch of the new .swiss internet domain\". dot.swiss. 9 September 2015. Retrieved 8 January 2016."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

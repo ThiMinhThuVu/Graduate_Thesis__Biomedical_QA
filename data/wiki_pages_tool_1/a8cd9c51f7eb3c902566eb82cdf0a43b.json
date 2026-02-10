@@ -1,0 +1,129 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/gi_alpha_subunit": {
+                "title": "Gi alpha subunit",
+                "url": "https://en.wikipedia.org/wiki/gi_alpha_subunit",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Gi protein alpha subunit is a family of heterotrimeric G protein alpha subunits. Gi proteins primarily inhibit the cAMP dependent pathway by inhibiting adenylyl cyclase activity, resulting in decreased activity of cAMP-dependent protein kinase (PKA). This family is also commonly called the Gi/o (Gi /Go ) family or Gi/o/z/t family to include closely related family members. G alpha subunits may be referred to as Gi alpha, Gαi, or Giα.",
+                    "",
+                    "=== Family members ===",
+                    "There are four distinct subtypes of alpha subunits in the Gi/o/z/t alpha subunit family that define four families of heterotrimeric G proteins:",
+                    "<info> Gi proteins: Gi1α, Gi2α, and Gi3α",
+                    "<info> Go protein: Goα (in mouse there is alternative splicing to generate Go1α and Go2α)",
+                    "<info> Transducins (Gt proteins): Gt1α, Gt2α, Gt3α",
+                    "Gi1α is encoded by the gene GNAI1.",
+                    "Gi2α is encoded by the gene GNAI2.",
+                    "Gi3α is encoded by the gene GNAI3.",
+                    "Go1α is encoded by the gene GNAO1.",
+                    "Gzα is encoded by the gene GNAZ.",
+                    "Transducin/Gt1α is encoded by the gene GNAT1.",
+                    "Transducin 2/Gt2α is encoded by the gene GNAT2.",
+                    "Gustducin/Gt3α is encoded by the gene GNAT3.",
+                    "",
+                    "=== Function ===",
+                    "The general function of Gi/o/z/t is to activate intracellular signaling pathways in response to activation of cell surface  G protein-coupled receptors (GPCRs). GPCRs function as part of a three-component system of receptor-transducer-effector.[1][2] The transducer in this system is a heterotrimeric G protein, composed of three subunits: a Gα protein such as Giα, and a complex of two tightly linked proteins called Gβ and Gγ in a Gβγ complex.[1][2] When not stimulated by a receptor, Gα is bound to GDP and to Gβγ to form the inactive G protein trimer.[1][2] When the receptor binds an activating ligand outside the cell (such as a hormone or neurotransmitter), the activated receptor acts as a guanine nucleotide exchange factor to promote GDP release from and GTP binding to Gα, which drives dissociation of GTP-bound Gα from Gβγ.[1][2] GTP-bound Gα and Gβγ are then freed to activate their respective downstream signaling enzymes.",
+                    "Gi proteins primarily inhibit the cAMP dependent pathway by inhibiting adenylyl cyclase activity, decreasing the production of cAMP from ATP, which, in turn, results in decreased activity of cAMP-dependent protein kinase. Therefore, the ultimate effect of Gi is the inhibition of the cAMP-dependent protein kinase. The Gβγ liberated by activation of Gi and Go proteins is particularly able to activate downstream signaling to effectors such as G protein-coupled inwardly-rectifying potassium channels (GIRKs).[3] Gi and Go proteins are substrates for pertussis toxin, produced by Bordetella pertussis, the infectious agent in whooping cough. Pertussis toxin is an ADP-ribosylase enzyme that adds an ADP-ribose moiety to a particular cysteine residue in Giα and Goα proteins, preventing their coupling to and activation by GPCRs, thus turning off Gi and Go cell signaling pathways.[4]",
+                    "Gz proteins also can link GPCRs to inhibition of adenylyl cyclase, but Gz is distinct from Gi/Go by being insensitive to inhibition by pertussis toxin.[5]",
+                    "Gt proteins function in sensory transduction. The Transducins Gt1 and Gt2 serve to transduce signals from G protein-coupled receptors that receive light during vision. Rhodopsin in dim light night vision in retinal rod cells couples to Gt1, and color photopsins in color vision in retinal cone cells couple to Gt2, respectively. Gt3/Gustducin subunits transduce signals in the sense of taste (gustation) in taste buds by coupling to G protein-coupled receptors activated by sweet or bitter substances.",
+                    "",
+                    "=== Receptors ===",
+                    "The following G protein-coupled receptors couple to Gi/o subunits:",
+                    "<info> 5-HT1 and 5-HT5 serotonergic receptors",
+                    "<info> Acetylcholine M2 & M4 receptors",
+                    "<info> Adenosine A1 & A3 receptors",
+                    "<info> Adrenergic α2A, α2B, & α2C receptors",
+                    "<info> Cannabinoid receptors (CB1 and CB2)",
+                    "<info> Dopamine D2, D3 and D4 receptors",
+                    "<info> Glutamate mGluR2, mGluR3, mGluR4, mGluR6, mGluR7, & mGluR8 receptors",
+                    "<info> Histamine H3 & H4 receptors",
+                    "<info> Melatonin MT1, MT2, & MT3 receptors",
+                    "<info> Hydroxycarboxylic acid receptors: HCA1, HCA2, & HCA3",
+                    "<info> Opioid δ, κ, μ, & nociceptin receptors",
+                    "<info> Prostaglandin EP1, EP3, FP, & TP receptors",
+                    "<info> Short chain fatty acid receptors: FFAR2 & FFAR3",
+                    "<info> Somatostatin sst1, sst2, sst3, sst4 & sst5 receptors",
+                    "<info> Trace amine-associated receptor 8",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d Gilman AG (1987). \"G proteins: transducers of receptor-generated signals\". Annual Review of Biochemistry. 56: 615–49. doi:10.1146/annurev.bi.56.070187.003151. PMID 3113327.",
+                    "<info> ^ a b c d Rodbell M (June 1995). \"Nobel Lecture. Signal transduction: evolution of an idea\". Bioscience Reports. 15 (3): 117–33. doi:10.1007/bf01207453. PMC 1519115. PMID 7579038. S2CID 11025853.",
+                    "<info> ^ Kano H, Toyama Y, Imai S, Iwahashi Y, Mase Y, Yokogawa M, et al. (May 2019). \"Structural mechanism underlying G protein family-specific regulation of G protein-gated inwardly rectifying potassium channel\". Nature Communications. 10 (1): 2008. Bibcode:2019NatCo..10.2008K. doi:10.1038/s41467-019-10038-x. PMC 6494913. PMID 31043612.",
+                    "<info> ^ Pfeuffer T, Helmreich EJ (1988). \"Structural and functional relationships of guanosine triphosphate binding proteins\". Current Topics in Cellular Regulation. 29: 129–216. doi:10.1016/B978-0-12-152829-4.50006-9. ISBN 9780121528294. PMID 3135154.",
+                    "<info> ^ Ho MK, Wong YH (March 2001). \"G(z) signaling: emerging divergence from G(i) signaling\". Oncogene. 20 (13): 1615–25. doi:10.1038/sj.onc.1204190. PMID 11313909.",
+                    "",
+                    "=== External links ===",
+                    "<info> Gi+alpha+Subunit at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Gi protein alpha subunit is a family of heterotrimeric G protein alpha subunits. Gi proteins primarily inhibit the cAMP dependent pathway by inhibiting adenylyl cyclase activity, resulting in decreased activity of cAMP-dependent protein kinase (PKA). This family is also commonly called the Gi/o (Gi /Go ) family or Gi/o/z/t family to include closely related family members. G alpha subunits may be referred to as Gi alpha, Gαi, or Giα."
+                        ]
+                    },
+                    "Family members": {
+                        "content": [
+                            "There are four distinct subtypes of alpha subunits in the Gi/o/z/t alpha subunit family that define four families of heterotrimeric G proteins:",
+                            "<info> Gi proteins: Gi1α, Gi2α, and Gi3α",
+                            "<info> Go protein: Goα (in mouse there is alternative splicing to generate Go1α and Go2α)",
+                            "<info> Transducins (Gt proteins): Gt1α, Gt2α, Gt3α",
+                            "Gi1α is encoded by the gene GNAI1.",
+                            "Gi2α is encoded by the gene GNAI2.",
+                            "Gi3α is encoded by the gene GNAI3.",
+                            "Go1α is encoded by the gene GNAO1.",
+                            "Gzα is encoded by the gene GNAZ.",
+                            "Transducin/Gt1α is encoded by the gene GNAT1.",
+                            "Transducin 2/Gt2α is encoded by the gene GNAT2.",
+                            "Gustducin/Gt3α is encoded by the gene GNAT3."
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "The general function of Gi/o/z/t is to activate intracellular signaling pathways in response to activation of cell surface  G protein-coupled receptors (GPCRs). GPCRs function as part of a three-component system of receptor-transducer-effector.[1][2] The transducer in this system is a heterotrimeric G protein, composed of three subunits: a Gα protein such as Giα, and a complex of two tightly linked proteins called Gβ and Gγ in a Gβγ complex.[1][2] When not stimulated by a receptor, Gα is bound to GDP and to Gβγ to form the inactive G protein trimer.[1][2] When the receptor binds an activating ligand outside the cell (such as a hormone or neurotransmitter), the activated receptor acts as a guanine nucleotide exchange factor to promote GDP release from and GTP binding to Gα, which drives dissociation of GTP-bound Gα from Gβγ.[1][2] GTP-bound Gα and Gβγ are then freed to activate their respective downstream signaling enzymes.",
+                            "Gi proteins primarily inhibit the cAMP dependent pathway by inhibiting adenylyl cyclase activity, decreasing the production of cAMP from ATP, which, in turn, results in decreased activity of cAMP-dependent protein kinase. Therefore, the ultimate effect of Gi is the inhibition of the cAMP-dependent protein kinase. The Gβγ liberated by activation of Gi and Go proteins is particularly able to activate downstream signaling to effectors such as G protein-coupled inwardly-rectifying potassium channels (GIRKs).[3] Gi and Go proteins are substrates for pertussis toxin, produced by Bordetella pertussis, the infectious agent in whooping cough. Pertussis toxin is an ADP-ribosylase enzyme that adds an ADP-ribose moiety to a particular cysteine residue in Giα and Goα proteins, preventing their coupling to and activation by GPCRs, thus turning off Gi and Go cell signaling pathways.[4]",
+                            "Gz proteins also can link GPCRs to inhibition of adenylyl cyclase, but Gz is distinct from Gi/Go by being insensitive to inhibition by pertussis toxin.[5]",
+                            "Gt proteins function in sensory transduction. The Transducins Gt1 and Gt2 serve to transduce signals from G protein-coupled receptors that receive light during vision. Rhodopsin in dim light night vision in retinal rod cells couples to Gt1, and color photopsins in color vision in retinal cone cells couple to Gt2, respectively. Gt3/Gustducin subunits transduce signals in the sense of taste (gustation) in taste buds by coupling to G protein-coupled receptors activated by sweet or bitter substances."
+                        ]
+                    },
+                    "Receptors": {
+                        "content": [
+                            "The following G protein-coupled receptors couple to Gi/o subunits:",
+                            "<info> 5-HT1 and 5-HT5 serotonergic receptors",
+                            "<info> Acetylcholine M2 & M4 receptors",
+                            "<info> Adenosine A1 & A3 receptors",
+                            "<info> Adrenergic α2A, α2B, & α2C receptors",
+                            "<info> Cannabinoid receptors (CB1 and CB2)",
+                            "<info> Dopamine D2, D3 and D4 receptors",
+                            "<info> Glutamate mGluR2, mGluR3, mGluR4, mGluR6, mGluR7, & mGluR8 receptors",
+                            "<info> Histamine H3 & H4 receptors",
+                            "<info> Melatonin MT1, MT2, & MT3 receptors",
+                            "<info> Hydroxycarboxylic acid receptors: HCA1, HCA2, & HCA3",
+                            "<info> Opioid δ, κ, μ, & nociceptin receptors",
+                            "<info> Prostaglandin EP1, EP3, FP, & TP receptors",
+                            "<info> Short chain fatty acid receptors: FFAR2 & FFAR3",
+                            "<info> Somatostatin sst1, sst2, sst3, sst4 & sst5 receptors",
+                            "<info> Trace amine-associated receptor 8"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d Gilman AG (1987). \"G proteins: transducers of receptor-generated signals\". Annual Review of Biochemistry. 56: 615–49. doi:10.1146/annurev.bi.56.070187.003151. PMID 3113327.",
+                            "<info> ^ a b c d Rodbell M (June 1995). \"Nobel Lecture. Signal transduction: evolution of an idea\". Bioscience Reports. 15 (3): 117–33. doi:10.1007/bf01207453. PMC 1519115. PMID 7579038. S2CID 11025853.",
+                            "<info> ^ Kano H, Toyama Y, Imai S, Iwahashi Y, Mase Y, Yokogawa M, et al. (May 2019). \"Structural mechanism underlying G protein family-specific regulation of G protein-gated inwardly rectifying potassium channel\". Nature Communications. 10 (1): 2008. Bibcode:2019NatCo..10.2008K. doi:10.1038/s41467-019-10038-x. PMC 6494913. PMID 31043612.",
+                            "<info> ^ Pfeuffer T, Helmreich EJ (1988). \"Structural and functional relationships of guanosine triphosphate binding proteins\". Current Topics in Cellular Regulation. 29: 129–216. doi:10.1016/B978-0-12-152829-4.50006-9. ISBN 9780121528294. PMID 3135154.",
+                            "<info> ^ Ho MK, Wong YH (March 2001). \"G(z) signaling: emerging divergence from G(i) signaling\". Oncogene. 20 (13): 1615–25. doi:10.1038/sj.onc.1204190. PMID 11313909."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Gi+alpha+Subunit at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

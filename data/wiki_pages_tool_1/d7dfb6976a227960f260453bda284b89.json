@@ -1,0 +1,77 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/histamine_receptor": {
+                "title": "Histamine receptor",
+                "url": "https://en.wikipedia.org/wiki/histamine_receptor",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The histamine receptors are a class of G protein–coupled receptors which bind histamine as their primary endogenous ligand.[1][2] Histamine is a neurotransmitter involved in various physiological processes. There are four main types of histamine receptors: H1, H2, H3, and H4. H1 receptors are linked to allergic responses, H2 to gastric acid regulation, H3 to neurotransmitter release modulation, and H4 to immune system function.",
+                    "There are four known histamine receptors:",
+                    "<info> H1 receptor – Primarily located on smooth muscle cells, endothelial cells, and neurons. Activation of H1 receptors mediates various responses, including smooth muscle contraction (leading to bronchoconstriction, intestinal cramping), increased vascular permeability (resulting in edema), and stimulation of sensory nerve endings (causing itching and pain). H1 antagonists, commonly known as antihistamines, are used to alleviate symptoms of allergies and allergic reactions.[3]",
+                    "<info> H2 receptor – Found mainly in the stomach lining (parietal cells), H2 receptors regulate gastric acid secretion by stimulating the production of hydrochloric acid. H2 antagonists (H2 blockers) are used to reduce stomach acid production and treat conditions like gastroesophageal reflux disease (GERD) and peptic ulcers.[3]",
+                    "<info> H3 receptor – Predominantly located in the central nervous system (CNS), particularly in regions associated with neurotransmitter release and modulation. H3 receptors act as presynaptic autoreceptors and heteroreceptors, regulating the release of neurotransmitters such as dopamine, serotonin, norepinephrine, and acetylcholine. Modulation of H3 receptors is being explored as a potential target for various neurological and psychiatric disorders.[4]",
+                    "<info> H4 receptor – Initially discovered on immune cells, particularly mast cells, eosinophils, and T cells, H4 receptors are involved in immune responses, including chemotaxis (cellular movement in response to chemical signals) and cytokine production. These receptors play a role in inflammation and allergic reactions. Research on H4 receptors is ongoing to better understand their involvement in immune-related disorders and to develop potential therapeutic interventions.[5]",
+                    "",
+                    "=== Comparison ===",
+                    "There are several splice variants of H3 present in various species. Though all of the receptors are 7-transmembrane g protein coupled receptors, H1 and H2 are quite different from H3 and H4 in their activities. H1 causes an increase in PIP2 hydrolysis, H2 stimulates gastric acid secretion, and H3 mediates feedback inhibition of histamine.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Hill SJ, Ganellin CR, Timmerman H, Schwartz JC, Shankley NP, Young JM, et al. (September 1997). \"International Union of Pharmacology. XIII. Classification of histamine receptors\". Pharmacological Reviews. 49 (3): 253–278. doi:10.1016/S0031-6997(24)01328-0. PMID 9311023. Archived from the original on 2009-06-29. Retrieved 2007-10-30.",
+                    "<info> ^ Ravhe IS, Krishnan A, Manoj N (January 2021). \"Evolutionary history of histamine receptors: Early vertebrate origin and expansion of the H3-H4 subtypes\". Molecular Phylogenetics and Evolution. 154 106989. doi:10.1016/j.ympev.2020.106989. PMID 33059072.",
+                    "<info> ^ a b Simons FE (November 2004). \"Advances in H1-antihistamines\". The New England Journal of Medicine. 351 (21): 2203–2217. doi:10.1056/NEJMra033121. PMID 15548781.S",
+                    "<info> ^ Haas H, Panula P (February 2003). \"The role of histamine and the tuberomamillary nucleus in the nervous system\". Nature Reviews. Neuroscience. 4 (2): 121–130. doi:10.1038/nrn1034. PMID 12563283.",
+                    "<info> ^ Oda T, Morikawa N, Saito Y, Masuho Y, Matsumoto S (November 2000). \"Molecular cloning and characterization of a novel type of histamine receptor preferentially expressed in leukocytes\". The Journal of Biological Chemistry. 275 (47): 36781–36786. doi:10.1074/jbc.M006480200. PMID 10973974.",
+                    "<info> ^ Haas, H.L.; Selbach, O.; Sergeeva, O.A. (2009). \"Sleep and Sleep States: Histamine Role\". Encyclopedia of Neuroscience. pp. 919–928. doi:10.1016/B978-008045046-9.00034-6. ISBN 978-0-08-045046-9.",
+                    "<info> ^ Deiteren A, De Man JG, Pelckmans PA, De Winter BY (March 2015). \"Histamine H₄ receptors in the gastrointestinal tract\". British Journal of Pharmacology. 172 (5): 1165–1178. doi:10.1111/bph.12989. PMC 4337694. PMID 25363289.",
+                    "<info> ^ Hofstra CL, Desai PJ, Thurmond RL, Fung-Leung WP (June 2003). \"Histamine H4 receptor mediates chemotaxis and calcium mobilization of mast cells\". The Journal of Pharmacology and Experimental Therapeutics. 305 (3): 1212–1221. doi:10.1124/jpet.102.046581. PMID 12626656.",
+                    "<info> ^ Kim KW, Kim BM, Lee KA, Lee SH, Firestein GS, Kim HR (April 2017). \"Histamine and Histamine H4 Receptor Promotes Osteoclastogenesis in Rheumatoid Arthritis\". Scientific Reports. 7 (1) 1197. Bibcode:2017NatSR...7.1197K. doi:10.1038/s41598-017-01101-y. PMC 5430934. PMID 28446753.",
+                    "",
+                    "=== External links ===",
+                    "<info> \"Histamine Receptors\". IUPHAR Database of Receptors and Ion Channels. International Union of Basic and Clinical Pharmacology.",
+                    "<info> Holger Stark: Histamine Receptors, BIOTREND Reviews No. 01, November 2007",
+                    "<info> Histamine+Receptor at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The histamine receptors are a class of G protein–coupled receptors which bind histamine as their primary endogenous ligand.[1][2] Histamine is a neurotransmitter involved in various physiological processes. There are four main types of histamine receptors: H1, H2, H3, and H4. H1 receptors are linked to allergic responses, H2 to gastric acid regulation, H3 to neurotransmitter release modulation, and H4 to immune system function.",
+                            "There are four known histamine receptors:",
+                            "<info> H1 receptor – Primarily located on smooth muscle cells, endothelial cells, and neurons. Activation of H1 receptors mediates various responses, including smooth muscle contraction (leading to bronchoconstriction, intestinal cramping), increased vascular permeability (resulting in edema), and stimulation of sensory nerve endings (causing itching and pain). H1 antagonists, commonly known as antihistamines, are used to alleviate symptoms of allergies and allergic reactions.[3]",
+                            "<info> H2 receptor – Found mainly in the stomach lining (parietal cells), H2 receptors regulate gastric acid secretion by stimulating the production of hydrochloric acid. H2 antagonists (H2 blockers) are used to reduce stomach acid production and treat conditions like gastroesophageal reflux disease (GERD) and peptic ulcers.[3]",
+                            "<info> H3 receptor – Predominantly located in the central nervous system (CNS), particularly in regions associated with neurotransmitter release and modulation. H3 receptors act as presynaptic autoreceptors and heteroreceptors, regulating the release of neurotransmitters such as dopamine, serotonin, norepinephrine, and acetylcholine. Modulation of H3 receptors is being explored as a potential target for various neurological and psychiatric disorders.[4]",
+                            "<info> H4 receptor – Initially discovered on immune cells, particularly mast cells, eosinophils, and T cells, H4 receptors are involved in immune responses, including chemotaxis (cellular movement in response to chemical signals) and cytokine production. These receptors play a role in inflammation and allergic reactions. Research on H4 receptors is ongoing to better understand their involvement in immune-related disorders and to develop potential therapeutic interventions.[5]"
+                        ]
+                    },
+                    "Comparison": {
+                        "content": [
+                            "There are several splice variants of H3 present in various species. Though all of the receptors are 7-transmembrane g protein coupled receptors, H1 and H2 are quite different from H3 and H4 in their activities. H1 causes an increase in PIP2 hydrolysis, H2 stimulates gastric acid secretion, and H3 mediates feedback inhibition of histamine."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Hill SJ, Ganellin CR, Timmerman H, Schwartz JC, Shankley NP, Young JM, et al. (September 1997). \"International Union of Pharmacology. XIII. Classification of histamine receptors\". Pharmacological Reviews. 49 (3): 253–278. doi:10.1016/S0031-6997(24)01328-0. PMID 9311023. Archived from the original on 2009-06-29. Retrieved 2007-10-30.",
+                            "<info> ^ Ravhe IS, Krishnan A, Manoj N (January 2021). \"Evolutionary history of histamine receptors: Early vertebrate origin and expansion of the H3-H4 subtypes\". Molecular Phylogenetics and Evolution. 154 106989. doi:10.1016/j.ympev.2020.106989. PMID 33059072.",
+                            "<info> ^ a b Simons FE (November 2004). \"Advances in H1-antihistamines\". The New England Journal of Medicine. 351 (21): 2203–2217. doi:10.1056/NEJMra033121. PMID 15548781.S",
+                            "<info> ^ Haas H, Panula P (February 2003). \"The role of histamine and the tuberomamillary nucleus in the nervous system\". Nature Reviews. Neuroscience. 4 (2): 121–130. doi:10.1038/nrn1034. PMID 12563283.",
+                            "<info> ^ Oda T, Morikawa N, Saito Y, Masuho Y, Matsumoto S (November 2000). \"Molecular cloning and characterization of a novel type of histamine receptor preferentially expressed in leukocytes\". The Journal of Biological Chemistry. 275 (47): 36781–36786. doi:10.1074/jbc.M006480200. PMID 10973974.",
+                            "<info> ^ Haas, H.L.; Selbach, O.; Sergeeva, O.A. (2009). \"Sleep and Sleep States: Histamine Role\". Encyclopedia of Neuroscience. pp. 919–928. doi:10.1016/B978-008045046-9.00034-6. ISBN 978-0-08-045046-9.",
+                            "<info> ^ Deiteren A, De Man JG, Pelckmans PA, De Winter BY (March 2015). \"Histamine H₄ receptors in the gastrointestinal tract\". British Journal of Pharmacology. 172 (5): 1165–1178. doi:10.1111/bph.12989. PMC 4337694. PMID 25363289.",
+                            "<info> ^ Hofstra CL, Desai PJ, Thurmond RL, Fung-Leung WP (June 2003). \"Histamine H4 receptor mediates chemotaxis and calcium mobilization of mast cells\". The Journal of Pharmacology and Experimental Therapeutics. 305 (3): 1212–1221. doi:10.1124/jpet.102.046581. PMID 12626656.",
+                            "<info> ^ Kim KW, Kim BM, Lee KA, Lee SH, Firestein GS, Kim HR (April 2017). \"Histamine and Histamine H4 Receptor Promotes Osteoclastogenesis in Rheumatoid Arthritis\". Scientific Reports. 7 (1) 1197. Bibcode:2017NatSR...7.1197K. doi:10.1038/s41598-017-01101-y. PMC 5430934. PMID 28446753."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"Histamine Receptors\". IUPHAR Database of Receptors and Ion Channels. International Union of Basic and Clinical Pharmacology.",
+                            "<info> Holger Stark: Histamine Receptors, BIOTREND Reviews No. 01, November 2007",
+                            "<info> Histamine+Receptor at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/paralytic_shellfish_poisoning": {
+                "title": "Paralytic shellfish poisoning",
+                "url": "https://en.wikipedia.org/wiki/paralytic_shellfish_poisoning",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Paralytic shellfish poisoning (PSP) is one of the four recognized syndromes of shellfish poisoning, which share some common features and are primarily associated with bivalve mollusks (such as mussels, clams, oysters and scallops). These shellfish are filter feeders and accumulate neurotoxins, chiefly saxitoxin, produced by microscopic algae, such as dinoflagellates, diatoms, and cyanobacteria.[1] Dinoflagellates of the genus Alexandrium are the most numerous and widespread saxitoxin producers and are responsible for PSP blooms in subarctic, temperate, and tropical locations.[2] The majority of toxic blooms have been caused by the morphospecies Alexandrium catenella, Alexandrium tamarense, Gonyaulax catenella and Alexandrium fundyense,[3] which together comprise the A. tamarense species complex.[4] In Asia, PSP is mostly associated with the occurrence of the species Pyrodinium bahamense.[5]",
+                    "Some pufferfish, including the chamaeleon puffer, also contain saxitoxin, making their consumption hazardous.[6]",
+                    "",
+                    "=== PSP and cyanobacteria ===",
+                    "PSP toxins (of which saxitoxin is the most ubiquitous) are produced in eukaryotic dinoflagellates and prokaryotic cyanobacteria (usually referred to as blue-green algae). Within the freshwater marine ecosystem, the largest contribution in the accumulation of PSP toxins derives from saxitoxin produced by cyanobacteria. The biosynthesis of saxitoxin is well-defined in cyanobacteria, while within dinoflagellates it remains mostly unknown. Cyanobacterial saxitoxin biosynthesis has been studied in radioisotope tracing experiments, and turns out to be highly complex, involving many steps, enzymes and chemical reactions. The starting reagent, L-arginine, goes through several chemical reactions (among which is a rare chemical reaction known as a Claisen condensation), going through four intermediates before resulting in saxitoxin.[7]",
+                    "The Australian freshwater mussel Alathyria condola is highly susceptible to neurotoxin accumulation. After two to three days of exposure to the cyanobacterium Anabaena circinalis it may contain upwards of 80 micrograms of neurotoxins per 100 grams of mussel, a level high enough to cause significant health risks to humans.[8]",
+                    "",
+                    "=== Pathophysiology ===",
+                    "PSP affects those who come into contact with the affected shellfish by ingestion.[1] The toxins responsible for most shellfish poisonings—mainly saxitoxin, although several other toxins have been found, such as neosaxitoxin and gonyautoxins I to IV—are water-insoluble, and heat- and acid-stable. Therefore, ordinary cooking methods will not eliminate the toxins.[citation needed]",
+                    "Symptoms typically appear within ten to 30 minutes after ingestion, and may include nausea, vomiting, diarrhea, abdominal pain, and tingling or burning lips, gums, tongue, face, neck, arms, legs, and toes.[1] Shortness of breath, dry mouth, a choking feeling, confused or slurred speech, and loss of coordination are also possible. PSP toxins, such as saxitoxin, are able to bind near the sodium ion channel, blocking passage of potassium and/or sodium into (and out of) the cell. This restricts (or outright prevents) transmission of signals between neurons. This can result in (partial or complete) paralysis.[9] PSP can be fatal in extreme cases, particularly in immunocompromised individuals; children are known to be more susceptible.[citation needed]",
+                    "Most shellfish can store saxitoxin for several weeks after a harmful algal bloom passes, but some, such as butter clams, can store the toxin for up to two years.[10]",
+                    "",
+                    "=== PSP in wild marine mammals ===",
+                    "PSP has been implicated as a possible cause of sea otter mortality and morbidity in Alaska, as one of its primary prey items, the butter clam (Saxidomus gigantea) bioaccumulates saxitoxin as a chemical defense mechanism.[11] In addition, ingestion of saxitoxin-containing mackerel has been implicated in the death of humpback whales.[12]",
+                    "Additional cases where PSP was suspected as the cause of death in Mediterranean monk seals (Monachus monachus) in the Mediterranean Sea[13]  have been questioned due to lack of additional testing to rule out other causes of mortality.[14]",
+                    "",
+                    "=== Detection and treatment ===",
+                    "Several detection methods can be used in order to determine the concentration of saxitoxin within an organism (be it shellfish or human), both in vivo and in vitro. The most commonly used in vivo method is the mouse bioassay, which provides quantitative and qualitative data in case of a (suspected) PSP neurotoxin exposure; in vitro receptor binding assays provide equivalent data, while being animal-friendly. PSP neurotoxins can also be detected by high-performance liquid chromatography (HPLC), amongst other forms of chromatography.[15] Shellfish containing 80 or more micrograms of saxitoxin per 100g of edible shellfish tissue are deemed to be unsafe for human consumption.[16] Currently, there is no antidote for PSP neurotoxins. Most PSP patients suffer only minor symptoms, these lasting until the toxin is eliminated from the body. With minor exposure, spontaneous recovery can thus be expected. In the relatively rare case of clinically significant respiratory paralysis, symptomatic treatment in the form of oxygen supplementation and/or mechanical ventilation should be employed until symptoms subside.[citation needed]",
+                    "",
+                    "=== See also ===",
+                    "<info> Harmful algal blooms (see \"toxins\")",
+                    "<info> Dinoflagellate ecology and physiology (see \"neurotoxins\", \"red tide\", and \"phosphate\")",
+                    "<info> Red tide crisis in Chiloé",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c Clark, RF; Williams, SR; Nordt, SP; Manoguerra, AS (1999). \"A review of selected seafood poisonings\" (PDF). Undersea & Hyperbaric Medicine. 26 (3): 175–84. PMID 10485519. Archived from the original on June 17, 2012.",
+                    "<info> ^ Taylor, F. J. R.; Fukuyo, Y.; Larsen, J.; Hallegraeff, G. M. (2003). \"Taxonomy of harmful dinoflagellates\". In Hallegraeff, G.M.; Anderson, D.M.; Cembella, A.D. (eds.). Manual on Harmful Marine Microalgae. UNESCO. pp. 389–432. ISBN 92-3-103948-2.",
+                    "<info> ^ Cembella, A. D. (1998). \"Ecophysiology and Metabolism of Paralytic Shellfish Toxins in Marine Microalgae\". In Anderson, D. M.; Cembella, A. D.; Hallegraeff, G. M. (eds.). Physiological Ecology of Harmful Algal Blooms. NATO ASI. Berlin: Springer. pp. 381–403. ISBN 978-3-662-03584-9.",
+                    "<info> ^ \nBalech, Enrique (1985). \"The genus Alexandrium or Gonyaulax of the Tamarensis Group\". In Anderson, Donald M.; White, Alan W.; Baden, Daniel G. (eds.). Toxic Dinoflagellates. New York: Elsevier. pp. 33–8. ISBN 978-0-444-01030-8.",
+                    "<info> ^ Azanza, Rhodora V.; Max Taylor, F. J. R. (2001). \"Are Pyrodinium Blooms in the Southeast Asian Region Recurring and Spreading? A View at the End of the Millennium\". Ambio: A Journal of the Human Environment. 30 (6): 356–64. Bibcode:2001Ambio..30..356A. doi:10.1579/0044-7447-30.6.356. PMID 11757284. S2CID 20837132.",
+                    "<info> ^ Ngy, Laymithuna; Tada, Kenji; Yu, Chun-Fai; Takatani, Tomohiro; Arakawa, Osamu (2008). \"Occurrence of paralytic shellfish toxins in Cambodian Mekong pufferfish Tetraodon turgidus: Selective toxin accumulation in the skin\". Toxicon. 51 (2): 280–8. Bibcode:2008Txcn...51..280N. doi:10.1016/j.toxicon.2007.10.002. hdl:10069/22351. PMID 17996918.",
+                    "<info> ^ Tsuchiya, Shigeki; Cho, Yuko; Konoki, Keiichi; Nagasawa, Kazuo; Oshima, Yasukatsu; Yotsu-Yamashita, Mari (2016-02-04). \"Biosynthetic route towards saxitoxin and shunt pathway\". Scientific Reports. 6 (1) 20340. Bibcode:2016NatSR...620340T. doi:10.1038/srep20340. ISSN 2045-2322. PMC 4740887. PMID 26842222. S2CID 2697610.",
+                    "<info> ^ Negri, Andrew P.; Jones, Gary J. (1995-05-01). \"Bioaccumulation of paralytic shellfish poisoning (PSP) toxins from the cyanobacterium Anabaena circinalis by the freshwater mussel Alathyria condola\". Toxicon. 33 (5): 667–678. Bibcode:1995Txcn...33..667N. doi:10.1016/0041-0101(94)00180-G. ISSN 0041-0101. PMID 7660371.",
+                    "<info> ^ \"Paralytic Shellfish Poisoning\". www.whoi.edu. Retrieved 2022-05-12.",
+                    "<info> ^ Cusick, Kathleen D.; Sayler, Gary S. (2013-03-27). \"An Overview on the Marine Neurotoxin, Saxitoxin: Genetics, Molecular Targets, Methods of Detection and Ecological Functions\". Marine Drugs. 11 (4): 991–1018. doi:10.3390/md11040991. ISSN 1660-3397. PMC 3705384. PMID 23535394.",
+                    "<info> ^ DeGange, Anthony R.; Vacca, M. Michele (November 1989). \"Sea Otter Mortality at Kodiak Island, Alaska, during Summer 1987\". Journal of Mammalogy. 70 (4): 836–8. doi:10.2307/1381723. JSTOR 1381723.",
+                    "<info> ^ Geraci, Joseph R.; Anderson, Donald M.; Timperi, Ralph J.; St. Aubin, David J.; Early, Gregory A.; Prescott, John H.; Mayo, Charles A. (1989). \"Humpback Whales (Megaptera novaeangliae) Fatally Poisoned by Dinoflagellate Toxin\". Canadian Journal of Fisheries and Aquatic Sciences. 46 (11): 1895–8. doi:10.1139/f89-238.",
+                    "<info> ^ Hernández, Mauro; Robinson, Ian; Aguilar, Alex; González, Luis Mariano; López-Jurado, Luis Felipe; Reyero, María Isabel; Cacho, Emiliano; Franco, José; López-Rodas, Victoria; Costas, Eduardo (1998). \"Did algal toxins cause monk seal mortality?\". Nature. 393 (6680): 28–9. Bibcode:1998Natur.393...28H. doi:10.1038/29906. hdl:10261/58748. PMID 9590687. S2CID 4425648.",
+                    "<info> ^ Van Dolah, Frances M. (2005). \"Effects of Harmful Agal Blooms\". In Reynolds, John E. (ed.). Marine Mammal Research: Conservation Beyond Crisis. Baltimore, MD: Johns Hopkins University Press. pp. 85–101. ISBN 978-0-8018-8255-5.",
+                    "<info> ^ Wang, Da-Zhi; Zhang, Shu-Fei; Zhang, Yong; Lin, Lin (2016-03-01). \"Paralytic shellfish toxin biosynthesis in cyanobacteria and dinoflagellates: A molecular overview\". Journal of Proteomics. Proteomics in Evolutionary Ecology. 135: 132–140. doi:10.1016/j.jprot.2015.08.008. ISSN 1874-3919. PMID 26316331.",
+                    "<info> ^ \"Paralytic Shellfish Poisoning — Southeast Alaska, May–June 2011\". www.cdc.gov. Retrieved 2022-05-12.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Paralytic shellfish poisoning (PSP) is one of the four recognized syndromes of shellfish poisoning, which share some common features and are primarily associated with bivalve mollusks (such as mussels, clams, oysters and scallops). These shellfish are filter feeders and accumulate neurotoxins, chiefly saxitoxin, produced by microscopic algae, such as dinoflagellates, diatoms, and cyanobacteria.[1] Dinoflagellates of the genus Alexandrium are the most numerous and widespread saxitoxin producers and are responsible for PSP blooms in subarctic, temperate, and tropical locations.[2] The majority of toxic blooms have been caused by the morphospecies Alexandrium catenella, Alexandrium tamarense, Gonyaulax catenella and Alexandrium fundyense,[3] which together comprise the A. tamarense species complex.[4] In Asia, PSP is mostly associated with the occurrence of the species Pyrodinium bahamense.[5]",
+                            "Some pufferfish, including the chamaeleon puffer, also contain saxitoxin, making their consumption hazardous.[6]"
+                        ]
+                    },
+                    "PSP and cyanobacteria": {
+                        "content": [
+                            "PSP toxins (of which saxitoxin is the most ubiquitous) are produced in eukaryotic dinoflagellates and prokaryotic cyanobacteria (usually referred to as blue-green algae). Within the freshwater marine ecosystem, the largest contribution in the accumulation of PSP toxins derives from saxitoxin produced by cyanobacteria. The biosynthesis of saxitoxin is well-defined in cyanobacteria, while within dinoflagellates it remains mostly unknown. Cyanobacterial saxitoxin biosynthesis has been studied in radioisotope tracing experiments, and turns out to be highly complex, involving many steps, enzymes and chemical reactions. The starting reagent, L-arginine, goes through several chemical reactions (among which is a rare chemical reaction known as a Claisen condensation), going through four intermediates before resulting in saxitoxin.[7]",
+                            "The Australian freshwater mussel Alathyria condola is highly susceptible to neurotoxin accumulation. After two to three days of exposure to the cyanobacterium Anabaena circinalis it may contain upwards of 80 micrograms of neurotoxins per 100 grams of mussel, a level high enough to cause significant health risks to humans.[8]"
+                        ]
+                    },
+                    "Pathophysiology": {
+                        "content": [
+                            "PSP affects those who come into contact with the affected shellfish by ingestion.[1] The toxins responsible for most shellfish poisonings—mainly saxitoxin, although several other toxins have been found, such as neosaxitoxin and gonyautoxins I to IV—are water-insoluble, and heat- and acid-stable. Therefore, ordinary cooking methods will not eliminate the toxins.[citation needed]",
+                            "Symptoms typically appear within ten to 30 minutes after ingestion, and may include nausea, vomiting, diarrhea, abdominal pain, and tingling or burning lips, gums, tongue, face, neck, arms, legs, and toes.[1] Shortness of breath, dry mouth, a choking feeling, confused or slurred speech, and loss of coordination are also possible. PSP toxins, such as saxitoxin, are able to bind near the sodium ion channel, blocking passage of potassium and/or sodium into (and out of) the cell. This restricts (or outright prevents) transmission of signals between neurons. This can result in (partial or complete) paralysis.[9] PSP can be fatal in extreme cases, particularly in immunocompromised individuals; children are known to be more susceptible.[citation needed]",
+                            "Most shellfish can store saxitoxin for several weeks after a harmful algal bloom passes, but some, such as butter clams, can store the toxin for up to two years.[10]"
+                        ]
+                    },
+                    "PSP in wild marine mammals": {
+                        "content": [
+                            "PSP has been implicated as a possible cause of sea otter mortality and morbidity in Alaska, as one of its primary prey items, the butter clam (Saxidomus gigantea) bioaccumulates saxitoxin as a chemical defense mechanism.[11] In addition, ingestion of saxitoxin-containing mackerel has been implicated in the death of humpback whales.[12]",
+                            "Additional cases where PSP was suspected as the cause of death in Mediterranean monk seals (Monachus monachus) in the Mediterranean Sea[13]  have been questioned due to lack of additional testing to rule out other causes of mortality.[14]"
+                        ]
+                    },
+                    "Detection and treatment": {
+                        "content": [
+                            "Several detection methods can be used in order to determine the concentration of saxitoxin within an organism (be it shellfish or human), both in vivo and in vitro. The most commonly used in vivo method is the mouse bioassay, which provides quantitative and qualitative data in case of a (suspected) PSP neurotoxin exposure; in vitro receptor binding assays provide equivalent data, while being animal-friendly. PSP neurotoxins can also be detected by high-performance liquid chromatography (HPLC), amongst other forms of chromatography.[15] Shellfish containing 80 or more micrograms of saxitoxin per 100g of edible shellfish tissue are deemed to be unsafe for human consumption.[16] Currently, there is no antidote for PSP neurotoxins. Most PSP patients suffer only minor symptoms, these lasting until the toxin is eliminated from the body. With minor exposure, spontaneous recovery can thus be expected. In the relatively rare case of clinically significant respiratory paralysis, symptomatic treatment in the form of oxygen supplementation and/or mechanical ventilation should be employed until symptoms subside.[citation needed]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Harmful algal blooms (see \"toxins\")",
+                            "<info> Dinoflagellate ecology and physiology (see \"neurotoxins\", \"red tide\", and \"phosphate\")",
+                            "<info> Red tide crisis in Chiloé"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c Clark, RF; Williams, SR; Nordt, SP; Manoguerra, AS (1999). \"A review of selected seafood poisonings\" (PDF). Undersea & Hyperbaric Medicine. 26 (3): 175–84. PMID 10485519. Archived from the original on June 17, 2012.",
+                            "<info> ^ Taylor, F. J. R.; Fukuyo, Y.; Larsen, J.; Hallegraeff, G. M. (2003). \"Taxonomy of harmful dinoflagellates\". In Hallegraeff, G.M.; Anderson, D.M.; Cembella, A.D. (eds.). Manual on Harmful Marine Microalgae. UNESCO. pp. 389–432. ISBN 92-3-103948-2.",
+                            "<info> ^ Cembella, A. D. (1998). \"Ecophysiology and Metabolism of Paralytic Shellfish Toxins in Marine Microalgae\". In Anderson, D. M.; Cembella, A. D.; Hallegraeff, G. M. (eds.). Physiological Ecology of Harmful Algal Blooms. NATO ASI. Berlin: Springer. pp. 381–403. ISBN 978-3-662-03584-9.",
+                            "<info> ^ \nBalech, Enrique (1985). \"The genus Alexandrium or Gonyaulax of the Tamarensis Group\". In Anderson, Donald M.; White, Alan W.; Baden, Daniel G. (eds.). Toxic Dinoflagellates. New York: Elsevier. pp. 33–8. ISBN 978-0-444-01030-8.",
+                            "<info> ^ Azanza, Rhodora V.; Max Taylor, F. J. R. (2001). \"Are Pyrodinium Blooms in the Southeast Asian Region Recurring and Spreading? A View at the End of the Millennium\". Ambio: A Journal of the Human Environment. 30 (6): 356–64. Bibcode:2001Ambio..30..356A. doi:10.1579/0044-7447-30.6.356. PMID 11757284. S2CID 20837132.",
+                            "<info> ^ Ngy, Laymithuna; Tada, Kenji; Yu, Chun-Fai; Takatani, Tomohiro; Arakawa, Osamu (2008). \"Occurrence of paralytic shellfish toxins in Cambodian Mekong pufferfish Tetraodon turgidus: Selective toxin accumulation in the skin\". Toxicon. 51 (2): 280–8. Bibcode:2008Txcn...51..280N. doi:10.1016/j.toxicon.2007.10.002. hdl:10069/22351. PMID 17996918.",
+                            "<info> ^ Tsuchiya, Shigeki; Cho, Yuko; Konoki, Keiichi; Nagasawa, Kazuo; Oshima, Yasukatsu; Yotsu-Yamashita, Mari (2016-02-04). \"Biosynthetic route towards saxitoxin and shunt pathway\". Scientific Reports. 6 (1) 20340. Bibcode:2016NatSR...620340T. doi:10.1038/srep20340. ISSN 2045-2322. PMC 4740887. PMID 26842222. S2CID 2697610.",
+                            "<info> ^ Negri, Andrew P.; Jones, Gary J. (1995-05-01). \"Bioaccumulation of paralytic shellfish poisoning (PSP) toxins from the cyanobacterium Anabaena circinalis by the freshwater mussel Alathyria condola\". Toxicon. 33 (5): 667–678. Bibcode:1995Txcn...33..667N. doi:10.1016/0041-0101(94)00180-G. ISSN 0041-0101. PMID 7660371.",
+                            "<info> ^ \"Paralytic Shellfish Poisoning\". www.whoi.edu. Retrieved 2022-05-12.",
+                            "<info> ^ Cusick, Kathleen D.; Sayler, Gary S. (2013-03-27). \"An Overview on the Marine Neurotoxin, Saxitoxin: Genetics, Molecular Targets, Methods of Detection and Ecological Functions\". Marine Drugs. 11 (4): 991–1018. doi:10.3390/md11040991. ISSN 1660-3397. PMC 3705384. PMID 23535394.",
+                            "<info> ^ DeGange, Anthony R.; Vacca, M. Michele (November 1989). \"Sea Otter Mortality at Kodiak Island, Alaska, during Summer 1987\". Journal of Mammalogy. 70 (4): 836–8. doi:10.2307/1381723. JSTOR 1381723.",
+                            "<info> ^ Geraci, Joseph R.; Anderson, Donald M.; Timperi, Ralph J.; St. Aubin, David J.; Early, Gregory A.; Prescott, John H.; Mayo, Charles A. (1989). \"Humpback Whales (Megaptera novaeangliae) Fatally Poisoned by Dinoflagellate Toxin\". Canadian Journal of Fisheries and Aquatic Sciences. 46 (11): 1895–8. doi:10.1139/f89-238.",
+                            "<info> ^ Hernández, Mauro; Robinson, Ian; Aguilar, Alex; González, Luis Mariano; López-Jurado, Luis Felipe; Reyero, María Isabel; Cacho, Emiliano; Franco, José; López-Rodas, Victoria; Costas, Eduardo (1998). \"Did algal toxins cause monk seal mortality?\". Nature. 393 (6680): 28–9. Bibcode:1998Natur.393...28H. doi:10.1038/29906. hdl:10261/58748. PMID 9590687. S2CID 4425648.",
+                            "<info> ^ Van Dolah, Frances M. (2005). \"Effects of Harmful Agal Blooms\". In Reynolds, John E. (ed.). Marine Mammal Research: Conservation Beyond Crisis. Baltimore, MD: Johns Hopkins University Press. pp. 85–101. ISBN 978-0-8018-8255-5.",
+                            "<info> ^ Wang, Da-Zhi; Zhang, Shu-Fei; Zhang, Yong; Lin, Lin (2016-03-01). \"Paralytic shellfish toxin biosynthesis in cyanobacteria and dinoflagellates: A molecular overview\". Journal of Proteomics. Proteomics in Evolutionary Ecology. 135: 132–140. doi:10.1016/j.jprot.2015.08.008. ISSN 1874-3919. PMID 26316331.",
+                            "<info> ^ \"Paralytic Shellfish Poisoning — Southeast Alaska, May–June 2011\". www.cdc.gov. Retrieved 2022-05-12."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

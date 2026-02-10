@@ -1,0 +1,121 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/congenital_hearing_loss": {
+                "title": "Congenital hearing loss",
+                "url": "https://en.wikipedia.org/wiki/congenital_hearing_loss",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Congenital hearing loss is a hearing loss present at birth. It can include hereditary hearing loss or hearing loss due to other factors present either during pregnancy (prenatal) or at the time of birth. Congenital hearing loss is relatively common among children, with studies showing that for every 1,000 babies born, anywhere between half a case and six cases can occur around the world.[1]",
+                    "",
+                    "=== Causes ===",
+                    "Genetic factors are thought to cause more than 50% of all cases of congenital hearing loss. 70% of genetic hearing loss cases are not associated with other syndromes (non-syndromic) and they may be autosomal dominant (15%), autosomal recessive (80%), mitochondrial or X-linked (1-2%).[2]",
+                    "When only one parent carries a single copy of the dominant gene, there will be a 50% probability that the child will have a hearing loss. But when both parents carry one copy, the probability will become 75%. The child will definitely have a hearing loss when at least one of his parents carries two copies of the gene. So, having a hearing loss in the parents should raise suspicion that the child may have a hearing loss. In this mode of inheritance, the parents should have a hearing loss to have a child who has a hearing loss.",
+                    "In this mode of inheritance, the child must have two copies of the gene to develop hearing loss. If only one parent carries the recessive gene—whether a single copy or two copies—the child won't develop hearing loss from this recessive gene. However, if both parents carry a single copy, the child has a 25% chance of having a hearing loss. The probability increases to 50% when one parent carries two copies while the other carries only a single copy. Finally, if both parents carry two copies of the gene, the child will definitely have a hearing loss. In such cases, the parents could be normal—except for carrying two copies—but the child is not.",
+                    "As the name suggests, the hearing loss gene is carried on the X chromosome in this mode of inheritance. Males have only one X chromosome, so if they inherit the gene, they will develop hearing loss. On the other hand, females have two X genes. This makes the development of a hearing loss dependent on whether the trait is dominant or recessive. Because of this, we can say that X-linked hearing loss usually affects males more than females.",
+                    "This form of congenital hearing loss is passed to the child from his mother.[3] Mutations can occur in some mitochondrial genes, making cells more susceptible to damage. Aminoglycoside antibiotics are known for their harmful effects on the ears. If a person had a mutation and took any dose of an aminoglycoside, his ear cells won't be able to defend against the damage. This will cause him to develop a hearing loss in a few days to weeks.[4]",
+                    "This type of hearing loss is a known characteristic of a genetic syndrome. Researchers have identified more than 140 hearing loss genes linked to other genetic syndromes.[2] Syndromic hearing loss can be autosomal dominant, autosomal recessive, mitochondrial, or X-linked. Table 1 mentions some syndromes associated with different types of congenital hearing loss.",
+                    "Other factors that are not related to genes can cause congenital hearing loss. Pregnant women may catch some infections and then pass them to the baby. Some of these congenital infections can cause hearing loss in the baby. The most common congenital infectious agent that causes hearing loss is cytomegalovirus. Other examples include the rubella virus, Toxoplasma gondii, the herpes simplex virus, and Treponema pallidum.[5]",
+                    "",
+                    "=== Interventions ===",
+                    "Children with hearing loss do best when treatment starts early.[6] Doctors suggest care before six months of age. Early care helps children learn speech and sign. Doctors and audiologists guide families after diagnosis.",
+                    "In the United States, children under three years get free or low-cost services.[7] After age three, schools provide these programs.",
+                    "Surgery may help when hearing loss is caused by ear problems or repeat infections. Fluid in the middle ear often causes short-term hearing loss. Chronic ear infection can slow speech. In these cases, doctors may place a small tube in the eardrum to drain fluid. This is a quick outpatient procedure.",
+                    "Parents choose the plan that fits their child. Choices depend on age, development, personality, and severity of hearing loss. A care team—such as a doctor, otolaryngologist, speech-language pathologist, audiologist, and educator—helps create a family service plan.[8] Plans are updated as the child grows.",
+                    "These devices amplify sound, making it possible for many children to hear spoken words and develop spoken language.[9] Doctors recommend using a behind-the-ear device for young children. Those devices are safer and adjust easily as the child grows.[7] Today a variety of good quality hearing aids are available—analog or digital body-worn (for small children) or ear level for older children. When fitting a hearing aid, a doctor has to assess the child's hearing and look at the device's performance. Equally important is the earmold, which has to be custom made to suit the shape of the child's ear.",
+                    "If a child has profound deafness, the benefits of hearing aids are limited. Cochlear implants may be used instead of hearing aids. They can be surgically inserted in the inner ear of children as young as 12 months of age to stimulate hearing. The surgery requires a hospital stay of one to several days. Children may learn to speak and understand speech with additional language and speech therapy. Assistive devices can be used alone or paired with a hearing aid or cochlear implant to aid listening in difficult or noisy environments.[9]",
+                    "In the United States, most deaf adults use American Sign Language (ASL). ASL is a complete language with its own rules and grammar, which are different from English.",
+                    "In English-speaking countries outside the United States, several other sign language systems are used. Some of these combine signs with spoken English.",
+                    "Another approach is cued speech. Lip reading alone is difficult because many sounds look the same on the lips. Cued speech makes lip reading clearer by using eight hand shapes in four positions around the mouth. These hand signals show the exact sounds being spoken. With this support, children can see words more clearly and learn spoken languages with normal grammar and vocabulary. Most people can learn the full system in less than 20 hours.",
+                    "",
+                    "=== Famous cases ===",
+                    "<info> Princess Alice of Battenberg",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Phanguphangu, M.; Kgare, K.; Ross, A. J. (2025). \"Age of detection of congenital hearing loss in South Africa: A systematic review\". Journal of Public Health in Africa. 16 (1): 777. doi:10.4102/jphia.v16i1.777. PMC 12138633. PMID 40475230.",
+                    "<info> ^ a b Yang, Tao; Guo, Luo; Wang, Longhao; Yu, Xiaoyu (2019), Li, Huawei; Chai, Renjie (eds.), \"Diagnosis, Intervention, and Prevention of Genetic Hearing Loss\", Hearing Loss: Mechanisms, Prevention and Cure, vol. 1130, Singapore: Springer, pp. 73–92, doi:10.1007/978-981-13-6123-4_5, ISBN 978-981-13-6123-4, PMID 30915702{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                    "<info> ^ a b Shearer, A. Eliot; Hildebrand, Michael S.; Odell, Amanda M.; Smith, Richard JH (1993), Adam, Margaret P.; Feldman, Jerry; Mirzaa, Ghayda M.; Pagon, Roberta A. (eds.), \"Genetic Hearing Loss Overview\", GeneReviews®, Seattle (WA): University of Washington, Seattle, PMID 20301607, retrieved 2025-08-24",
+                    "<info> ^ Usami, Shin-ichi; Nishio, Shin-ya (1993), Adam, Margaret P.; Feldman, Jerry; Mirzaa, Ghayda M.; Pagon, Roberta A. (eds.), \"Nonsyndromic Hearing Loss and Deafness, Mitochondrial\", GeneReviews®, Seattle (WA): University of Washington, Seattle, PMID 20301595, retrieved 2025-08-24",
+                    "<info> ^ Korver, Anna M. H.; Smith, Richard J. H.; Van Camp, Guy; Schleiss, Mark R.; Bitner-Glindzicz, Maria A. K.; Lustig, Lawrence R.; Usami, Shin-Ichi; Boudewyns, An N. (2017-01-12). \"Congenital hearing loss\". Nature Reviews. Disease Primers. 3 16094. doi:10.1038/nrdp.2016.94. ISSN 2056-676X. PMC 5675031. PMID 28079113.",
+                    "<info> ^ Muñoz, Karen; Nelson, Lauri; Goldgewicht, Natalie; Odell, Dennis (2011). \"Early Hearing Detection and Intervention: Diagnostic Hearing Assessment Practices\". American Journal of Audiology. 20 (2): 123–131. doi:10.1044/1059-0889(2011/10-0046). PMID 21764998.",
+                    "<info> ^ a b \"Treatment and Intervention for Hearing Loss\". Centers for Disease Control and Prevention. 2024-05-16. Retrieved 2025-08-25.",
+                    "<info> ^ Joint Committee on Infant Hearing; Muse, Carianne; Harrison, Judy; Yoshinaga-Itano, Christine (2013). \"Supplement to the JCIH 2007 Position Statement: Principles and Guidelines for Early Intervention After Confirmation That a Child Is Deaf or Hard of Hearing\". Pediatrics. 131 (4): e1324–e1349. doi:10.1542/peds.2013-0008. PMID 23530178.",
+                    "<info> ^ a b Lieu, Judith E. C.; Kenna, Margaret; Anne, Samantha; Davidson, Lisa (2020-12-01). \"Hearing Loss in Children: A Review\". JAMA. 324 (21): 2195–2205. doi:10.1001/jama.2020.17647. ISSN 1538-3598. PMID 33258894.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Centers for Disease Control and Prevention. The Early Hearing Detection and Intervention Program, Atlanta, GA, February 7, 2002.",
+                    "<info> The Decibels Foundation. Helping children with hearing loss and their families live happier lives.",
+                    "<info> National Center for Hearing Assessment and Management. Early Hearing Detection and Intervention Programs, Utah State University, Logan, UT, February 7, 2002.",
+                    "<info> Parchment Hill Causes of Congenital Hearing Loss",
+                    "<info> Texas Newborn Hearing Screening Program Archived 2011-02-20 at the Wayback Machine",
+                    "<info> Alaska Universal Newborn Hearing Screening",
+                    "<info> Michigan Hearing Screening Program",
+                    "<info> NHS Newborn Hearing Screening Programme [1]",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Congenital hearing loss is a hearing loss present at birth. It can include hereditary hearing loss or hearing loss due to other factors present either during pregnancy (prenatal) or at the time of birth. Congenital hearing loss is relatively common among children, with studies showing that for every 1,000 babies born, anywhere between half a case and six cases can occur around the world.[1]"
+                        ]
+                    },
+                    "Causes": {
+                        "content": [
+                            "Genetic factors are thought to cause more than 50% of all cases of congenital hearing loss. 70% of genetic hearing loss cases are not associated with other syndromes (non-syndromic) and they may be autosomal dominant (15%), autosomal recessive (80%), mitochondrial or X-linked (1-2%).[2]",
+                            "When only one parent carries a single copy of the dominant gene, there will be a 50% probability that the child will have a hearing loss. But when both parents carry one copy, the probability will become 75%. The child will definitely have a hearing loss when at least one of his parents carries two copies of the gene. So, having a hearing loss in the parents should raise suspicion that the child may have a hearing loss. In this mode of inheritance, the parents should have a hearing loss to have a child who has a hearing loss.",
+                            "In this mode of inheritance, the child must have two copies of the gene to develop hearing loss. If only one parent carries the recessive gene—whether a single copy or two copies—the child won't develop hearing loss from this recessive gene. However, if both parents carry a single copy, the child has a 25% chance of having a hearing loss. The probability increases to 50% when one parent carries two copies while the other carries only a single copy. Finally, if both parents carry two copies of the gene, the child will definitely have a hearing loss. In such cases, the parents could be normal—except for carrying two copies—but the child is not.",
+                            "As the name suggests, the hearing loss gene is carried on the X chromosome in this mode of inheritance. Males have only one X chromosome, so if they inherit the gene, they will develop hearing loss. On the other hand, females have two X genes. This makes the development of a hearing loss dependent on whether the trait is dominant or recessive. Because of this, we can say that X-linked hearing loss usually affects males more than females.",
+                            "This form of congenital hearing loss is passed to the child from his mother.[3] Mutations can occur in some mitochondrial genes, making cells more susceptible to damage. Aminoglycoside antibiotics are known for their harmful effects on the ears. If a person had a mutation and took any dose of an aminoglycoside, his ear cells won't be able to defend against the damage. This will cause him to develop a hearing loss in a few days to weeks.[4]",
+                            "This type of hearing loss is a known characteristic of a genetic syndrome. Researchers have identified more than 140 hearing loss genes linked to other genetic syndromes.[2] Syndromic hearing loss can be autosomal dominant, autosomal recessive, mitochondrial, or X-linked. Table 1 mentions some syndromes associated with different types of congenital hearing loss.",
+                            "Other factors that are not related to genes can cause congenital hearing loss. Pregnant women may catch some infections and then pass them to the baby. Some of these congenital infections can cause hearing loss in the baby. The most common congenital infectious agent that causes hearing loss is cytomegalovirus. Other examples include the rubella virus, Toxoplasma gondii, the herpes simplex virus, and Treponema pallidum.[5]"
+                        ]
+                    },
+                    "Interventions": {
+                        "content": [
+                            "Children with hearing loss do best when treatment starts early.[6] Doctors suggest care before six months of age. Early care helps children learn speech and sign. Doctors and audiologists guide families after diagnosis.",
+                            "In the United States, children under three years get free or low-cost services.[7] After age three, schools provide these programs.",
+                            "Surgery may help when hearing loss is caused by ear problems or repeat infections. Fluid in the middle ear often causes short-term hearing loss. Chronic ear infection can slow speech. In these cases, doctors may place a small tube in the eardrum to drain fluid. This is a quick outpatient procedure.",
+                            "Parents choose the plan that fits their child. Choices depend on age, development, personality, and severity of hearing loss. A care team—such as a doctor, otolaryngologist, speech-language pathologist, audiologist, and educator—helps create a family service plan.[8] Plans are updated as the child grows.",
+                            "These devices amplify sound, making it possible for many children to hear spoken words and develop spoken language.[9] Doctors recommend using a behind-the-ear device for young children. Those devices are safer and adjust easily as the child grows.[7] Today a variety of good quality hearing aids are available—analog or digital body-worn (for small children) or ear level for older children. When fitting a hearing aid, a doctor has to assess the child's hearing and look at the device's performance. Equally important is the earmold, which has to be custom made to suit the shape of the child's ear.",
+                            "If a child has profound deafness, the benefits of hearing aids are limited. Cochlear implants may be used instead of hearing aids. They can be surgically inserted in the inner ear of children as young as 12 months of age to stimulate hearing. The surgery requires a hospital stay of one to several days. Children may learn to speak and understand speech with additional language and speech therapy. Assistive devices can be used alone or paired with a hearing aid or cochlear implant to aid listening in difficult or noisy environments.[9]",
+                            "In the United States, most deaf adults use American Sign Language (ASL). ASL is a complete language with its own rules and grammar, which are different from English.",
+                            "In English-speaking countries outside the United States, several other sign language systems are used. Some of these combine signs with spoken English.",
+                            "Another approach is cued speech. Lip reading alone is difficult because many sounds look the same on the lips. Cued speech makes lip reading clearer by using eight hand shapes in four positions around the mouth. These hand signals show the exact sounds being spoken. With this support, children can see words more clearly and learn spoken languages with normal grammar and vocabulary. Most people can learn the full system in less than 20 hours."
+                        ]
+                    },
+                    "Famous cases": {
+                        "content": [
+                            "<info> Princess Alice of Battenberg"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Phanguphangu, M.; Kgare, K.; Ross, A. J. (2025). \"Age of detection of congenital hearing loss in South Africa: A systematic review\". Journal of Public Health in Africa. 16 (1): 777. doi:10.4102/jphia.v16i1.777. PMC 12138633. PMID 40475230.",
+                            "<info> ^ a b Yang, Tao; Guo, Luo; Wang, Longhao; Yu, Xiaoyu (2019), Li, Huawei; Chai, Renjie (eds.), \"Diagnosis, Intervention, and Prevention of Genetic Hearing Loss\", Hearing Loss: Mechanisms, Prevention and Cure, vol. 1130, Singapore: Springer, pp. 73–92, doi:10.1007/978-981-13-6123-4_5, ISBN 978-981-13-6123-4, PMID 30915702{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                            "<info> ^ a b Shearer, A. Eliot; Hildebrand, Michael S.; Odell, Amanda M.; Smith, Richard JH (1993), Adam, Margaret P.; Feldman, Jerry; Mirzaa, Ghayda M.; Pagon, Roberta A. (eds.), \"Genetic Hearing Loss Overview\", GeneReviews®, Seattle (WA): University of Washington, Seattle, PMID 20301607, retrieved 2025-08-24",
+                            "<info> ^ Usami, Shin-ichi; Nishio, Shin-ya (1993), Adam, Margaret P.; Feldman, Jerry; Mirzaa, Ghayda M.; Pagon, Roberta A. (eds.), \"Nonsyndromic Hearing Loss and Deafness, Mitochondrial\", GeneReviews®, Seattle (WA): University of Washington, Seattle, PMID 20301595, retrieved 2025-08-24",
+                            "<info> ^ Korver, Anna M. H.; Smith, Richard J. H.; Van Camp, Guy; Schleiss, Mark R.; Bitner-Glindzicz, Maria A. K.; Lustig, Lawrence R.; Usami, Shin-Ichi; Boudewyns, An N. (2017-01-12). \"Congenital hearing loss\". Nature Reviews. Disease Primers. 3 16094. doi:10.1038/nrdp.2016.94. ISSN 2056-676X. PMC 5675031. PMID 28079113.",
+                            "<info> ^ Muñoz, Karen; Nelson, Lauri; Goldgewicht, Natalie; Odell, Dennis (2011). \"Early Hearing Detection and Intervention: Diagnostic Hearing Assessment Practices\". American Journal of Audiology. 20 (2): 123–131. doi:10.1044/1059-0889(2011/10-0046). PMID 21764998.",
+                            "<info> ^ a b \"Treatment and Intervention for Hearing Loss\". Centers for Disease Control and Prevention. 2024-05-16. Retrieved 2025-08-25.",
+                            "<info> ^ Joint Committee on Infant Hearing; Muse, Carianne; Harrison, Judy; Yoshinaga-Itano, Christine (2013). \"Supplement to the JCIH 2007 Position Statement: Principles and Guidelines for Early Intervention After Confirmation That a Child Is Deaf or Hard of Hearing\". Pediatrics. 131 (4): e1324–e1349. doi:10.1542/peds.2013-0008. PMID 23530178.",
+                            "<info> ^ a b Lieu, Judith E. C.; Kenna, Margaret; Anne, Samantha; Davidson, Lisa (2020-12-01). \"Hearing Loss in Children: A Review\". JAMA. 324 (21): 2195–2205. doi:10.1001/jama.2020.17647. ISSN 1538-3598. PMID 33258894."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Centers for Disease Control and Prevention. The Early Hearing Detection and Intervention Program, Atlanta, GA, February 7, 2002.",
+                            "<info> The Decibels Foundation. Helping children with hearing loss and their families live happier lives.",
+                            "<info> National Center for Hearing Assessment and Management. Early Hearing Detection and Intervention Programs, Utah State University, Logan, UT, February 7, 2002.",
+                            "<info> Parchment Hill Causes of Congenital Hearing Loss",
+                            "<info> Texas Newborn Hearing Screening Program Archived 2011-02-20 at the Wayback Machine",
+                            "<info> Alaska Universal Newborn Hearing Screening",
+                            "<info> Michigan Hearing Screening Program",
+                            "<info> NHS Newborn Hearing Screening Programme [1]"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

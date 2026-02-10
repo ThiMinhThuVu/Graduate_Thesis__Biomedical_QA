@@ -1,0 +1,55 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/sodium_citrate": {
+                "title": "Sodium citrate",
+                "url": "https://en.wikipedia.org/wiki/sodium_citrate",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Sodium citrate may refer to any of the sodium salts of citric acid (though most commonly the third):",
+                    "The three forms of salt are collectively known by the E number E331.",
+                    "",
+                    "=== Applications ===",
+                    "Sodium citrates are used as acidity regulators in food and drinks, and also as emulsifiers for oils. They enable cheeses to melt without becoming greasy and also reduce the acidity of food. They are generally considered safe and are designated GRAS by the FDA.[1]",
+                    "Sodium citrate is used to prevent donated blood from clotting in storage, and can also be used as an additive for apheresis to prevent clots forming in the tubes of the machine. By binding with calcium ions in the blood it prevents the process of coagulation. It is also used as an anticoagulant for laboratory testing, in that blood samples are collected into sodium citrate-containing tubes for tests such as the PT (INR), APTT, and fibrinogen levels. Sodium citrate is used in medical contexts as an alkalinizing agent in place of sodium bicarbonate,[2] to neutralize excess acid in the blood and urine.[3]",
+                    "It has applications for the treatment of metabolic acidosis[4] and chronic kidney disease.[5]",
+                    "Along with oleic acid, sodium citrate may be used in the synthesis of magnetic Fe3O4 nanoparticle coatings.[6]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"dRTA: How is it Treated?\". National Kidney Foundation. 2019-06-07. Retrieved 2021-08-02.",
+                    "<info> ^ PubChem. \"Sodium citrate\". pubchem.ncbi.nlm.nih.gov. Retrieved 2021-08-02.",
+                    "<info> ^ Chen, Wei; Abramowitz, Matthew K. (February 2014). \"Treatment of Metabolic Acidosis in Patients With CKD\". American Journal of Kidney Diseases. 63 (2): 311–317. doi:10.1053/j.ajkd.2013.06.017. ISSN 0272-6386. PMC 3946919. PMID 23932089.",
+                    "<info> ^ Goraya, Nimrit; Wesson, Donald E. (May 2019). \"Clinical evidence that treatment of metabolic acidosis slows the progression of chronic kidney disease\". Current Opinion in Nephrology and Hypertension. 28 (3): 267–277. doi:10.1097/MNH.0000000000000491. ISSN 1062-4821. PMC 6467553. PMID 30681417.",
+                    "<info> ^ Wei, Yan; Han, Bing; Hu, Xiaoyang; Lin, Yuanhua; Wang, Xinzhi; Deng, Xuliang (2012). \"Synthesis of Fe3O4 Nanoparticles and their Magnetic Properties\". Procedia Engineering. 27: 632–637. arXiv:2001.06583. doi:10.1016/j.proeng.2011.12.498.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Sodium citrate may refer to any of the sodium salts of citric acid (though most commonly the third):",
+                            "The three forms of salt are collectively known by the E number E331."
+                        ]
+                    },
+                    "Applications": {
+                        "content": [
+                            "Sodium citrates are used as acidity regulators in food and drinks, and also as emulsifiers for oils. They enable cheeses to melt without becoming greasy and also reduce the acidity of food. They are generally considered safe and are designated GRAS by the FDA.[1]",
+                            "Sodium citrate is used to prevent donated blood from clotting in storage, and can also be used as an additive for apheresis to prevent clots forming in the tubes of the machine. By binding with calcium ions in the blood it prevents the process of coagulation. It is also used as an anticoagulant for laboratory testing, in that blood samples are collected into sodium citrate-containing tubes for tests such as the PT (INR), APTT, and fibrinogen levels. Sodium citrate is used in medical contexts as an alkalinizing agent in place of sodium bicarbonate,[2] to neutralize excess acid in the blood and urine.[3]",
+                            "It has applications for the treatment of metabolic acidosis[4] and chronic kidney disease.[5]",
+                            "Along with oleic acid, sodium citrate may be used in the synthesis of magnetic Fe3O4 nanoparticle coatings.[6]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"dRTA: How is it Treated?\". National Kidney Foundation. 2019-06-07. Retrieved 2021-08-02.",
+                            "<info> ^ PubChem. \"Sodium citrate\". pubchem.ncbi.nlm.nih.gov. Retrieved 2021-08-02.",
+                            "<info> ^ Chen, Wei; Abramowitz, Matthew K. (February 2014). \"Treatment of Metabolic Acidosis in Patients With CKD\". American Journal of Kidney Diseases. 63 (2): 311–317. doi:10.1053/j.ajkd.2013.06.017. ISSN 0272-6386. PMC 3946919. PMID 23932089.",
+                            "<info> ^ Goraya, Nimrit; Wesson, Donald E. (May 2019). \"Clinical evidence that treatment of metabolic acidosis slows the progression of chronic kidney disease\". Current Opinion in Nephrology and Hypertension. 28 (3): 267–277. doi:10.1097/MNH.0000000000000491. ISSN 1062-4821. PMC 6467553. PMID 30681417.",
+                            "<info> ^ Wei, Yan; Han, Bing; Hu, Xiaoyang; Lin, Yuanhua; Wang, Xinzhi; Deng, Xuliang (2012). \"Synthesis of Fe3O4 Nanoparticles and their Magnetic Properties\". Procedia Engineering. 27: 632–637. arXiv:2001.06583. doi:10.1016/j.proeng.2011.12.498."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

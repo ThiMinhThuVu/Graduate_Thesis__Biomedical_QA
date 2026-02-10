@@ -1,0 +1,115 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/short-stature_homeobox_gene": {
+                "title": "Short-stature homeobox gene",
+                "url": "https://en.wikipedia.org/wiki/short-stature_homeobox_gene",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The short-stature homeobox gene (SHOX), also known as short-stature-homeobox-containing gene, is a gene located on both the X and Y chromosomes, which is associated with short stature in humans if mutated or present in only one copy (haploinsufficiency).",
+                    "",
+                    "=== Pathology ===",
+                    "SHOX was first found during a search for the cause of short stature in women with Turner syndrome, where there is loss of genetic material from the X chromosome, typically by loss of one entire X chromosome.[2]",
+                    "Since its discovery, the gene has been found to play a role in idiopathic short stature, Léri-Weill dyschondrosteosis, and Langer mesomelic dysplasia.",
+                    "Gene dosage effects of extra copies of SHOX may be a cause of the increased stature seen in other sex chromosome aneuploidy conditions such as triple X, XYY, Klinefelter, XXYY and similar syndromes.[3]",
+                    "",
+                    "=== Genetics and function ===",
+                    "SHOX is composed of 6 different exons and is located in the pseudoautosomal region 1 (PAR1) of the X chromosome (Xp22.33) and Y chromosome.[2] Since genes in PAR escape X inactivation, their dosage changes with sex chromosome aneuploidies such as Turner.[4]",
+                    "Similar genes are present in a variety of animals and insects.",
+                    "It is a homeobox gene, meaning that it helps to regulate development.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ a b \"SHOX - short stature homeobox - Genetics Home Reference\". U.S. National Library of Medicine. 2005-09-01. Archived from the original on 2007-10-12. Retrieved 2008-02-18.",
+                    "<info> ^ Kanaka-Gantenbein C, Kitsiou S, Mavrou A, Stamoyannou L, Kolialexi A, Kekou K, et al. (2004). \"Tall stature, insulin resistance, and disturbed behavior in a girl with the triple X syndrome harboring three SHOX genes: offspring of a father with mosaic Klinefelter syndrome but with two maternal X chromosomes\". Hormone Research. 61 (5): 205–10. doi:10.1159/000076532. PMID 14752208. S2CID 41958098.",
+                    "<info> ^ Raudsepp T, Chowdhary BP (2015). \"The Eutherian Pseudoautosomal Region\". Cytogenetic and Genome Research. 147 (2–3): 81–94. doi:10.1159/000443157. hdl:10576/22940. PMID 26730606.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Bernasconi S, Mariani S, Falcinelli C, Milioli S, Iughetti L, Forabosco A (October 2001). \"SHOX gene in Leri-Weill syndrome and in idiopathic short stature\". Journal of Endocrinological Investigation. 24 (9): 737–41. doi:10.1007/bf03343919. hdl:11380/613021. PMID 11716161. S2CID 44532326.",
+                    "<info> Leka SK, Kitsiou-Tzeli S, Kalpini-Mavrou A, Kanavakis E (2006). \"Short stature and dysmorphology associated with defects in the SHOX gene\". Hormones. 5 (2): 107–18. doi:10.14310/horm.2002.11174. PMID 16807223.",
+                    "<info> Ballabio A, Bardoni B, Carrozzo R, Andria G, Bick D, Campbell L, et al. (December 1989). \"Contiguous gene syndromes due to deletions in the distal short arm of the human X chromosome\". Proceedings of the National Academy of Sciences of the United States of America. 86 (24): 10001–5. Bibcode:1989PNAS...8610001B. doi:10.1073/pnas.86.24.10001. PMC 298630. PMID 2602357.",
+                    "<info> Zuffardi O, Maraschio P, Lo Curto F, Müller U, Giarola A, Perotti L (June 1982). \"The role of Yp in sex determination: new evidence from X/Y translocations\". American Journal of Medical Genetics. 12 (2): 175–84. doi:10.1002/ajmg.1320120207. PMID 6954848.",
+                    "<info> Kuznetzova T, Baranov A, Ivaschenko T, Savitsky GA, Lanceva OE, Wang MR, et al. (August 1994). \"X;Y translocation in a girl with short stature and some features of Turner's syndrome: cytogenetic and molecular studies\". Journal of Medical Genetics. 31 (8): 649–51. doi:10.1136/jmg.31.8.649. PMC 1050031. PMID 7815426.",
+                    "<info> Ogata T, Yoshizawa A, Muroya K, Matsuo N, Fukushima Y, Rappold G, Yokoya S (October 1995). \"Short stature in a girl with partial monosomy of the pseudoautosomal region distal to DXYS15: further evidence for the assignment of the critical region for a pseudoautosomal growth gene(s)\". Journal of Medical Genetics. 32 (10): 831–4. doi:10.1136/jmg.32.10.831. PMC 1051714. PMID 8558568.",
+                    "<info> Rao E, Weiss B, Fukami M, Rump A, Niesler B, Mertz A, et al. (May 1997). \"Pseudoautosomal deletions encompassing a novel homeobox gene cause growth failure in idiopathic short stature and Turner syndrome\". Nature Genetics. 16 (1): 54–63. doi:10.1038/ng0597-54. PMID 9140395. S2CID 26248561.",
+                    "<info> Rao E, Weiss B, Fukami M, Mertz A, Meder J, Ogata T, et al. (August 1997). \"FISH-deletion mapping defines a 270-kb short stature critical interval in the pseudoautosomal region PAR1 on human sex chromosomes\". Human Genetics. 100 (2): 236–9. doi:10.1007/s004390050497. PMID 9254856. S2CID 33963012.",
+                    "<info> Ellison JW, Wardak Z, Young MF, Gehron Robey P, Laig-Webster M, Chiong W (August 1997). \"PHOG, a candidate gene for involvement in the short stature of Turner syndrome\". Human Molecular Genetics. 6 (8): 1341–7. doi:10.1093/hmg/6.8.1341. PMID 9259282.",
+                    "<info> Belin V, Cusin V, Viot G, Girlich D, Toutain A, Moncla A, et al. (May 1998). \"SHOX mutations in dyschondrosteosis (Leri-Weill syndrome)\". Nature Genetics. 19 (1): 67–9. doi:10.1038/ng0198-67. PMID 9590292. S2CID 45129174.",
+                    "<info> Shears DJ, Vassal HJ, Goodman FR, Palmer RW, Reardon W, Superti-Furga A, et al. (May 1998). \"Mutation and deletion of the pseudoautosomal gene SHOX cause Leri-Weill dyschondrosteosis\". Nature Genetics. 19 (1): 70–3. doi:10.1038/ng0198-70. PMID 9590293. S2CID 25651344.",
+                    "<info> Grigelioniene G, Eklöf O, Ivarsson SA, Westphal O, Neumeyer L, Kedra D, et al. (August 2000). \"Mutations in short stature homeobox containing gene (SHOX) in dyschondrosteosis but not in hypochondroplasia\". Human Genetics. 107 (2): 145–9. doi:10.1007/s004390000352. PMID 11030412. S2CID 27508795.",
+                    "<info> Huber C, Cusin V, Le Merrer M, Mathieu M, Sulmont V, Dagoneau N, et al. (May 2001). \"SHOX point mutations in dyschondrosteosis\". Journal of Medical Genetics. 38 (5): 323. doi:10.1136/jmg.38.5.323. PMC 1734877. PMID 11403039.",
+                    "<info> Rao E, Blaschke RJ, Marchini A, Niesler B, Burnett M, Rappold GA (December 2001). \"The Leri-Weill and Turner syndrome homeobox gene SHOX encodes a cell-type specific transcriptional activator\". Human Molecular Genetics. 10 (26): 3083–91. doi:10.1093/hmg/10.26.3083. PMID 11751690.",
+                    "<info> Ezquieta B, Cueva E, Oliver A, Gracia R (February 2002). \"SHOX intragenic microsatellite analysis in patients with short stature\". Journal of Pediatric Endocrinology & Metabolism. 15 (2): 139–48. doi:10.1515/jpem.2002.15.2.139. PMID 11874178. S2CID 46138078.",
+                    "<info> Ogata T, Muroya K, Sasaki G, Nishimura G, Kitoh H, Hattori T (March 2002). \"SHOX nullizygosity and haploinsufficiency in a Japanese family: implication for the development of Turner skeletal features\". The Journal of Clinical Endocrinology and Metabolism. 87 (3): 1390–4. doi:10.1210/jcem.87.3.8348. PMID 11889214.",
+                    "<info> Rappold GA, Fukami M, Niesler B, Schiller S, Zumkeller W, Bettendorf M, et al. (March 2002). \"Deletions of the homeobox gene SHOX (short stature homeobox) are an important cause of growth failure in children with short stature\". The Journal of Clinical Endocrinology and Metabolism. 87 (3): 1402–6. doi:10.1210/jcem.87.3.8328. PMID 11889216.",
+                    "<info> Cormier-Daire V, Huber C, Munnich A (2002). \"Allelic and nonallelic heterogeneity in dyschondrosteosis (Leri-Weill syndrome)\". American Journal of Medical Genetics. 106 (4): 272–4. doi:10.1002/ajmg.10228. PMID 11891678.",
+                    "<info> May CA, Shone AC, Kalaydjieva L, Sajantila A, Jeffreys AJ (July 2002). \"Crossover clustering and rapid decay of linkage disequilibrium in the Xp/Yp pseudoautosomal gene SHOX\". Nature Genetics. 31 (3): 272–5. doi:10.1038/ng918. PMID 12089524. S2CID 30559742.",
+                    "",
+                    "=== External links ===",
+                    "<info> short+stature+homeobox+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> GeneReview/NCBI/NIH/UW entry on SHOX-Related Haploinsufficiency Disorders",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The short-stature homeobox gene (SHOX), also known as short-stature-homeobox-containing gene, is a gene located on both the X and Y chromosomes, which is associated with short stature in humans if mutated or present in only one copy (haploinsufficiency)."
+                        ]
+                    },
+                    "Pathology": {
+                        "content": [
+                            "SHOX was first found during a search for the cause of short stature in women with Turner syndrome, where there is loss of genetic material from the X chromosome, typically by loss of one entire X chromosome.[2]",
+                            "Since its discovery, the gene has been found to play a role in idiopathic short stature, Léri-Weill dyschondrosteosis, and Langer mesomelic dysplasia.",
+                            "Gene dosage effects of extra copies of SHOX may be a cause of the increased stature seen in other sex chromosome aneuploidy conditions such as triple X, XYY, Klinefelter, XXYY and similar syndromes.[3]"
+                        ]
+                    },
+                    "Genetics and function": {
+                        "content": [
+                            "SHOX is composed of 6 different exons and is located in the pseudoautosomal region 1 (PAR1) of the X chromosome (Xp22.33) and Y chromosome.[2] Since genes in PAR escape X inactivation, their dosage changes with sex chromosome aneuploidies such as Turner.[4]",
+                            "Similar genes are present in a variety of animals and insects.",
+                            "It is a homeobox gene, meaning that it helps to regulate development."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ a b \"SHOX - short stature homeobox - Genetics Home Reference\". U.S. National Library of Medicine. 2005-09-01. Archived from the original on 2007-10-12. Retrieved 2008-02-18.",
+                            "<info> ^ Kanaka-Gantenbein C, Kitsiou S, Mavrou A, Stamoyannou L, Kolialexi A, Kekou K, et al. (2004). \"Tall stature, insulin resistance, and disturbed behavior in a girl with the triple X syndrome harboring three SHOX genes: offspring of a father with mosaic Klinefelter syndrome but with two maternal X chromosomes\". Hormone Research. 61 (5): 205–10. doi:10.1159/000076532. PMID 14752208. S2CID 41958098.",
+                            "<info> ^ Raudsepp T, Chowdhary BP (2015). \"The Eutherian Pseudoautosomal Region\". Cytogenetic and Genome Research. 147 (2–3): 81–94. doi:10.1159/000443157. hdl:10576/22940. PMID 26730606."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Bernasconi S, Mariani S, Falcinelli C, Milioli S, Iughetti L, Forabosco A (October 2001). \"SHOX gene in Leri-Weill syndrome and in idiopathic short stature\". Journal of Endocrinological Investigation. 24 (9): 737–41. doi:10.1007/bf03343919. hdl:11380/613021. PMID 11716161. S2CID 44532326.",
+                            "<info> Leka SK, Kitsiou-Tzeli S, Kalpini-Mavrou A, Kanavakis E (2006). \"Short stature and dysmorphology associated with defects in the SHOX gene\". Hormones. 5 (2): 107–18. doi:10.14310/horm.2002.11174. PMID 16807223.",
+                            "<info> Ballabio A, Bardoni B, Carrozzo R, Andria G, Bick D, Campbell L, et al. (December 1989). \"Contiguous gene syndromes due to deletions in the distal short arm of the human X chromosome\". Proceedings of the National Academy of Sciences of the United States of America. 86 (24): 10001–5. Bibcode:1989PNAS...8610001B. doi:10.1073/pnas.86.24.10001. PMC 298630. PMID 2602357.",
+                            "<info> Zuffardi O, Maraschio P, Lo Curto F, Müller U, Giarola A, Perotti L (June 1982). \"The role of Yp in sex determination: new evidence from X/Y translocations\". American Journal of Medical Genetics. 12 (2): 175–84. doi:10.1002/ajmg.1320120207. PMID 6954848.",
+                            "<info> Kuznetzova T, Baranov A, Ivaschenko T, Savitsky GA, Lanceva OE, Wang MR, et al. (August 1994). \"X;Y translocation in a girl with short stature and some features of Turner's syndrome: cytogenetic and molecular studies\". Journal of Medical Genetics. 31 (8): 649–51. doi:10.1136/jmg.31.8.649. PMC 1050031. PMID 7815426.",
+                            "<info> Ogata T, Yoshizawa A, Muroya K, Matsuo N, Fukushima Y, Rappold G, Yokoya S (October 1995). \"Short stature in a girl with partial monosomy of the pseudoautosomal region distal to DXYS15: further evidence for the assignment of the critical region for a pseudoautosomal growth gene(s)\". Journal of Medical Genetics. 32 (10): 831–4. doi:10.1136/jmg.32.10.831. PMC 1051714. PMID 8558568.",
+                            "<info> Rao E, Weiss B, Fukami M, Rump A, Niesler B, Mertz A, et al. (May 1997). \"Pseudoautosomal deletions encompassing a novel homeobox gene cause growth failure in idiopathic short stature and Turner syndrome\". Nature Genetics. 16 (1): 54–63. doi:10.1038/ng0597-54. PMID 9140395. S2CID 26248561.",
+                            "<info> Rao E, Weiss B, Fukami M, Mertz A, Meder J, Ogata T, et al. (August 1997). \"FISH-deletion mapping defines a 270-kb short stature critical interval in the pseudoautosomal region PAR1 on human sex chromosomes\". Human Genetics. 100 (2): 236–9. doi:10.1007/s004390050497. PMID 9254856. S2CID 33963012.",
+                            "<info> Ellison JW, Wardak Z, Young MF, Gehron Robey P, Laig-Webster M, Chiong W (August 1997). \"PHOG, a candidate gene for involvement in the short stature of Turner syndrome\". Human Molecular Genetics. 6 (8): 1341–7. doi:10.1093/hmg/6.8.1341. PMID 9259282.",
+                            "<info> Belin V, Cusin V, Viot G, Girlich D, Toutain A, Moncla A, et al. (May 1998). \"SHOX mutations in dyschondrosteosis (Leri-Weill syndrome)\". Nature Genetics. 19 (1): 67–9. doi:10.1038/ng0198-67. PMID 9590292. S2CID 45129174.",
+                            "<info> Shears DJ, Vassal HJ, Goodman FR, Palmer RW, Reardon W, Superti-Furga A, et al. (May 1998). \"Mutation and deletion of the pseudoautosomal gene SHOX cause Leri-Weill dyschondrosteosis\". Nature Genetics. 19 (1): 70–3. doi:10.1038/ng0198-70. PMID 9590293. S2CID 25651344.",
+                            "<info> Grigelioniene G, Eklöf O, Ivarsson SA, Westphal O, Neumeyer L, Kedra D, et al. (August 2000). \"Mutations in short stature homeobox containing gene (SHOX) in dyschondrosteosis but not in hypochondroplasia\". Human Genetics. 107 (2): 145–9. doi:10.1007/s004390000352. PMID 11030412. S2CID 27508795.",
+                            "<info> Huber C, Cusin V, Le Merrer M, Mathieu M, Sulmont V, Dagoneau N, et al. (May 2001). \"SHOX point mutations in dyschondrosteosis\". Journal of Medical Genetics. 38 (5): 323. doi:10.1136/jmg.38.5.323. PMC 1734877. PMID 11403039.",
+                            "<info> Rao E, Blaschke RJ, Marchini A, Niesler B, Burnett M, Rappold GA (December 2001). \"The Leri-Weill and Turner syndrome homeobox gene SHOX encodes a cell-type specific transcriptional activator\". Human Molecular Genetics. 10 (26): 3083–91. doi:10.1093/hmg/10.26.3083. PMID 11751690.",
+                            "<info> Ezquieta B, Cueva E, Oliver A, Gracia R (February 2002). \"SHOX intragenic microsatellite analysis in patients with short stature\". Journal of Pediatric Endocrinology & Metabolism. 15 (2): 139–48. doi:10.1515/jpem.2002.15.2.139. PMID 11874178. S2CID 46138078.",
+                            "<info> Ogata T, Muroya K, Sasaki G, Nishimura G, Kitoh H, Hattori T (March 2002). \"SHOX nullizygosity and haploinsufficiency in a Japanese family: implication for the development of Turner skeletal features\". The Journal of Clinical Endocrinology and Metabolism. 87 (3): 1390–4. doi:10.1210/jcem.87.3.8348. PMID 11889214.",
+                            "<info> Rappold GA, Fukami M, Niesler B, Schiller S, Zumkeller W, Bettendorf M, et al. (March 2002). \"Deletions of the homeobox gene SHOX (short stature homeobox) are an important cause of growth failure in children with short stature\". The Journal of Clinical Endocrinology and Metabolism. 87 (3): 1402–6. doi:10.1210/jcem.87.3.8328. PMID 11889216.",
+                            "<info> Cormier-Daire V, Huber C, Munnich A (2002). \"Allelic and nonallelic heterogeneity in dyschondrosteosis (Leri-Weill syndrome)\". American Journal of Medical Genetics. 106 (4): 272–4. doi:10.1002/ajmg.10228. PMID 11891678.",
+                            "<info> May CA, Shone AC, Kalaydjieva L, Sajantila A, Jeffreys AJ (July 2002). \"Crossover clustering and rapid decay of linkage disequilibrium in the Xp/Yp pseudoautosomal gene SHOX\". Nature Genetics. 31 (3): 272–5. doi:10.1038/ng918. PMID 12089524. S2CID 30559742."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> short+stature+homeobox+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> GeneReview/NCBI/NIH/UW entry on SHOX-Related Haploinsufficiency Disorders"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

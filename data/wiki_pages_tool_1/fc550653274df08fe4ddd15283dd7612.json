@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/history_of_malaria": {
+                "title": "History of malaria",
+                "url": "https://en.wikipedia.org/wiki/history_of_malaria",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

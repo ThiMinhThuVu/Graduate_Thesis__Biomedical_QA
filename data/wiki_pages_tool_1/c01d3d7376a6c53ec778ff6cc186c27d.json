@@ -1,0 +1,131 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/synovial_sarcoma": {
+                "title": "Synovial sarcoma",
+                "url": "https://en.wikipedia.org/wiki/synovial_sarcoma",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A synovial sarcoma (also known as malignant synovioma[1]) is a rare form of cancer which occurs primarily in the extremities of the arms or legs, often in proximity to joint capsules and tendon sheaths.[2] It is a type of soft-tissue sarcoma.",
+                    "The name \"synovial sarcoma\" was coined early in the 20th century, as some researchers thought that the microscopic similarity of some tumors to synovium, and its propensity to arise adjacent to joints, indicated a synovial origin; however, the actual cells from which the tumor develops are unknown and not necessarily synovial.[3]",
+                    "Primary synovial sarcomas are most common in the soft tissue near the large joints of the arm and leg but have been documented in most human tissues and organs, including the brain, prostate, and heart.",
+                    "Synovial sarcoma occurs in about 1–2 per 1,000,000 people a year.[4] They occur most commonly in the third decade of life, with males being affected more often than females (ratio around 1.2:1).[4][2]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Synovial sarcoma usually presents with an otherwise asymptomatic swelling or mass, although general symptoms related to malignancies can be reported such as fatigue.[5]",
+                    "",
+                    "=== Diagnosis ===",
+                    "The diagnosis of synovial sarcoma is typically made based on histology and is confirmed by the presence of t(X;18) chromosomal translocation.[6]",
+                    "Two cell types can be seen microscopically in synovial sarcoma. One fibrous type, known as a spindle or sarcomatous cell, is relatively small and uniform, and found in sheets. The other is epithelial in appearance. Classical synovial sarcoma has a biphasic appearance with both types present. Synovial sarcoma can also appear to be poorly differentiated or to be monophasic fibrous, consisting only of sheets of spindle cells. Some authorities[3] state that, extremely rarely, there can be a monophasic epithelial form which causes difficulty in differential diagnosis. Depending on the site, there is similarity to biphenotypic sinonasal sarcoma, although the genetic findings are distinctive.",
+                    "Like other soft tissue sarcomas, there is no universal grading system for reporting histopathology results.[7] In Europe, the Trojani or French system is gaining in popularity[8] while the NCI grading system is more common in the United States. The Trojani system scores the sample, depending on tumour differentiation, mitotic index, and tumour necrosis, between 0 and 6 and then converts this into a grade of between 1 and 3, with 1 representing a less aggressive tumour.[7] The NCI system is also a three-grade one, but takes a number of other factors into account.",
+                    "Immunohistochemistry (IHC): SS18-fusion specific antibody and SSX-CT antibody are highly sensitive and specific for synovial sarcoma and when used together may obviate the need for molecular testing in most cases.[9][10] Cytokeratin is typically expressed, at least focally. TLE1, BCL2 and CD99 may be positive but lack specificity.",
+                    "Most, and perhaps all, cases of synovial sarcoma are associated with a reciprocal translocation t(x;18)(p11.2;q11.2). There is some debate about whether the molecular observation itself is definitive of synovial sarcoma.[11][12][13]",
+                    "The diagnosis of synovial sarcoma is typically made based on histology and is confirmed by the presence of t(X;18).[6] This translocation event between the SS18 gene on chromosome 18 and one of 3 SSX genes (SSX1, SSX2 and SSX4) on chromosome X causes the presence of an SS18-SSX fusion gene. The resulting fusion protein brings together the transcriptional activating domain of SS18 and the transcriptional repressor domains of SSX. It also incorporates into the SWI/SNF chromatin remodeling complex, a well known tumor suppressor.[14] SS18-SSX is thought to underlie synovial sarcoma pathogenesis through dysregulation of gene expression.[3]",
+                    "There is some association between the SS18-SSX1 or SS18-SSX2 fusion type and both tumour morphology and five-year survival.[15]",
+                    "",
+                    "=== Treatment ===",
+                    "Treatment is usually multimodal, involving surgery, chemotherapy and radiotherapy:[16]",
+                    "<info> Surgery, to remove the tumor and a safety margin of healthy tissue. This is the mainstay of synovial sarcoma treatment and is curative in approximately 20–70% of patients, depending on the particular study being quoted.[17]",
+                    "<info> Conventional chemotherapy, (for example, doxorubicin hydrochloride and ifosfamide), to reduce the number of remaining microscopic metastases.[16] The benefit of chemotherapy in synovial sarcoma to overall survival remains unclear, although a recent study has shown that survival of patients with advanced, poorly differentiated disease marginally improves with doxorubicin/ifosfamide treatment.[16][18]",
+                    "<info> Radiotherapy to reduce the chance of local recurrence.[16] The benefit of radiotherapy in this disease is less clear than for chemotherapy.[16]",
+                    "Afamitresgene autoleucel (Tecelra) was approved for medical use in the United States in August 2024.[19][20]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Synovioma\". Encyclopædia Britannica Online. Retrieved 20 May 2012.",
+                    "<info> ^ a b Goldblum, John R.; Folpe, Andrew L.; Weiss, Sharon W. (2001). \"33\". Enzinger and Weiss's Soft Tissue Tumors (Sixth ed.). St Louis, Missouri: CV Mosby. pp. 1052–1070. ISBN 978-0-323-08834-3. LCCN 2013010770.",
+                    "<info> ^ a b c Pollock, Raphael E., ed. (2002). Soft Tissue Sarcomas. American Cancer Society Atlas of Clinical Oncology. BC Decker. ISBN 1-55009-128-X.",
+                    "<info> ^ a b Ferrari and Collini (2012). \"Synovial Sarcoma\". ESUN. 9 (5).",
+                    "<info> ^ 楊照彬 (2010). \"青少年骨髓性肉瘤初期以背痛呈現: 病例報告\". 台灣復健醫學雜誌 (in Chinese). 38 (4): 269–275.",
+                    "<info> ^ a b Coindre, Jean-Michel; Pelmus, Manuela; Hostein, Isabelle; Lussan, Catherine; Bui, Binh N.; Guillou, Louis (2003). \"Should molecular testing be required for diagnosing synovial sarcoma? A prospective study of 204 cases\". Cancer. 98 (12): 2700–7. doi:10.1002/cncr.11840. PMID 14669292.",
+                    "<info> ^ a b Coindre, Jean-Michel (October 2006). \"Grading of soft tissue sarcomas: review and update\". Archives of Pathology & Laboratory Medicine. 130 (10): 1448–53. doi:10.5858/2006-130-1448-GOSTSR. PMID 17090186.",
+                    "<info> ^ Paul, A.S.; Charalambous, C.; Maltby, B.; Whitehouse, R. (April 2003). \"The management of soft-tissue sarcomas of the extremities\". Current Orthopaedics. 17 (2): 124–133. doi:10.1054/cuor.2002.0314. ISSN 0268-0890.",
+                    "<info> ^ Gill, Anthony J.; Zaborowski, Matthew; Vargas, Ana C.; et al. (19 June 2020). \"When used together SS18–SSX fusion-specific and SSX C-terminus immunohistochemistry are highly specific and sensitive for the diagnosis of synovial sarcoma and can replace FISH or molecular testing in most cases\". Histopathology. 77 (4): 588–600. doi:10.1111/his.14190. PMID 32559341. S2CID 219949018.",
+                    "<info> ^ Baranov, Esther; McBride, Matthew J.; Bellizzi, Andrew M.; Ligon, Azra Hadi; Fletcher, Christopher D. M.; Kadoch, Cigall; Hornick, Jason L. (July 2020). \"A Novel SS18-SSX Fusion-specific Antibody for the Diagnosis of Synovial Sarcoma\". The American Journal of Surgical Pathology. 44 (7): 922–33. doi:10.1097/PAS.0000000000001447. PMC 7289668. PMID 32141887.",
+                    "<info> ^ \nPfeifer, John D.; Hill, D. Ashley; O'Sullivan, Maureen J.; Dehner, Louis P. (4 January 2002). \"Diagnostic gold standard for soft tissue tumours: morphology or molecular genetics?\". Histopathology. 37 (6): 485–500. doi:10.1046/j.1365-2559.2000.01107.x. PMID 11122430. S2CID 6825413.",
+                    "<info> ^ \nO'Sullivan, Maureen J.; Kyriakos, M.; Zhu, X.; Wick, M.R.; Swanson, P.E.; Dehner, Louis P.; Humphrey, P.A.; Pfeifer, John D. (2000). \"Malignant peripheral nerve sheath tumors with t(X;18). A pathologic and molecular genetic study\". Modern Pathology. 13 (12): 1336–46. doi:10.1038/modpathol.3880247. PMID 11144931.",
+                    "<info> ^ \nCoindre, Jean-Michel; Hostein, Isabelle; Benhattar, Jean; Lussan, Cathy; Rivel, Janine; Guillou, Louis (June 2002). \"Malignant Peripheral Nerve Sheath Tumors are t(X;18)-Negative Sarcomas. Molecular Analysis of 25 Cases Occurring in Neurofibromatosis Type 1 Patients, Using Two Different RT-PCR-Based Methods of Detection\". Modern Pathology. 15 (6): 589–92. doi:10.1038/modpathol.3880570. PMID 12065770.",
+                    "<info> ^ Middeljans, Evelien; Wan, Xi; Jansen, Pascal W.; Sharma, Vikram; Stunnenberg, Hendrik G.; Logie, Colin (March 2012). Freitag, Michael (ed.). \"SS18 together with animal-specific factors defines human BAF-type SWI/SNF complexes\". PLOS One. 7 (3) e33834. Bibcode:2012PLoSO...733834M. doi:10.1371/journal.pone.0033834. PMC 3307773. PMID 22442726.",
+                    "<info> ^ Ladanyi, Marc; Antonescu, Christina R.; Leung, Denis H.Y.; et al. (January 2002). \"Impact of SS18-SSX fusion type on the clinical behavior of synovial sarcoma: a multi-institutional retrospective study of 243 patients\" (PDF). Cancer Research. 62 (1): 135–40. PMID 11782370. Archived (PDF) from the original on 26 August 2017.",
+                    "<info> ^ a b c d e Thway, Khin; Fisher, Cyril (December 2014). \"Synovial sarcoma: defining features and diagnostic evolution\". Annals of Diagnostic Pathology. 18 (6): 369–380. doi:10.1016/j.anndiagpath.2014.09.002. ISSN 1092-9134. PMID 25438927.",
+                    "<info> ^ Lewis, Jonathan J.; Antonescu, Cristina R.; Leung, Denis Hy.Y.; Blumberg, David; Healey, John H.; Woodruff, James M.; Brennan, Murray F. (2000). \"Synovial sarcoma: a multivariate analysis of prognostic factors in 112 patients with primary localized tumors of the extremity\". Journal of Clinical Oncology. 18 (10): 2087–94. doi:10.1200/JCO.2000.18.10.2087. PMID 10811674.",
+                    "<info> ^ Ren, Xiao-Hua; WU, Xiao-Min; JIN, Cheng; CUI, Yong-An (2009). \"Advances in the diagnosis and treatment of synovial sarcoma\". Journal of Medical Biomechanics (in Chinese). 15 (4): 541–542. Retrieved 7 May 2016.",
+                    "<info> ^ \"FDA grants accelerated approval to afamitresgene autoleucel for unresectable or metastatic synovial sarcoma\". U.S. Food and Drug Administration (FDA). 2 August 2024. Retrieved 5 August 2024.",
+                    "<info> ^ \"Adaptimmune Receives U.S. FDA Accelerated Approval of Tecelra (afamitresgene autoleucel), the First Approved Engineered Cell Therapy for a Solid Tumor\" (Press release). Adaptimmune. 2 August 2024. Retrieved 5 August 2024 – via Business Wire.",
+                    "",
+                    "=== External links ===",
+                    "<info> Media related to Synovial sarcoma at Wikimedia Commons",
+                    "<info> Sarcoma Help: What is Synovial Sarcoma?",
+                    "<info> WebMD: Synovial Sarcoma Overview",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A synovial sarcoma (also known as malignant synovioma[1]) is a rare form of cancer which occurs primarily in the extremities of the arms or legs, often in proximity to joint capsules and tendon sheaths.[2] It is a type of soft-tissue sarcoma.",
+                            "The name \"synovial sarcoma\" was coined early in the 20th century, as some researchers thought that the microscopic similarity of some tumors to synovium, and its propensity to arise adjacent to joints, indicated a synovial origin; however, the actual cells from which the tumor develops are unknown and not necessarily synovial.[3]",
+                            "Primary synovial sarcomas are most common in the soft tissue near the large joints of the arm and leg but have been documented in most human tissues and organs, including the brain, prostate, and heart.",
+                            "Synovial sarcoma occurs in about 1–2 per 1,000,000 people a year.[4] They occur most commonly in the third decade of life, with males being affected more often than females (ratio around 1.2:1).[4][2]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Synovial sarcoma usually presents with an otherwise asymptomatic swelling or mass, although general symptoms related to malignancies can be reported such as fatigue.[5]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "The diagnosis of synovial sarcoma is typically made based on histology and is confirmed by the presence of t(X;18) chromosomal translocation.[6]",
+                            "Two cell types can be seen microscopically in synovial sarcoma. One fibrous type, known as a spindle or sarcomatous cell, is relatively small and uniform, and found in sheets. The other is epithelial in appearance. Classical synovial sarcoma has a biphasic appearance with both types present. Synovial sarcoma can also appear to be poorly differentiated or to be monophasic fibrous, consisting only of sheets of spindle cells. Some authorities[3] state that, extremely rarely, there can be a monophasic epithelial form which causes difficulty in differential diagnosis. Depending on the site, there is similarity to biphenotypic sinonasal sarcoma, although the genetic findings are distinctive.",
+                            "Like other soft tissue sarcomas, there is no universal grading system for reporting histopathology results.[7] In Europe, the Trojani or French system is gaining in popularity[8] while the NCI grading system is more common in the United States. The Trojani system scores the sample, depending on tumour differentiation, mitotic index, and tumour necrosis, between 0 and 6 and then converts this into a grade of between 1 and 3, with 1 representing a less aggressive tumour.[7] The NCI system is also a three-grade one, but takes a number of other factors into account.",
+                            "Immunohistochemistry (IHC): SS18-fusion specific antibody and SSX-CT antibody are highly sensitive and specific for synovial sarcoma and when used together may obviate the need for molecular testing in most cases.[9][10] Cytokeratin is typically expressed, at least focally. TLE1, BCL2 and CD99 may be positive but lack specificity.",
+                            "Most, and perhaps all, cases of synovial sarcoma are associated with a reciprocal translocation t(x;18)(p11.2;q11.2). There is some debate about whether the molecular observation itself is definitive of synovial sarcoma.[11][12][13]",
+                            "The diagnosis of synovial sarcoma is typically made based on histology and is confirmed by the presence of t(X;18).[6] This translocation event between the SS18 gene on chromosome 18 and one of 3 SSX genes (SSX1, SSX2 and SSX4) on chromosome X causes the presence of an SS18-SSX fusion gene. The resulting fusion protein brings together the transcriptional activating domain of SS18 and the transcriptional repressor domains of SSX. It also incorporates into the SWI/SNF chromatin remodeling complex, a well known tumor suppressor.[14] SS18-SSX is thought to underlie synovial sarcoma pathogenesis through dysregulation of gene expression.[3]",
+                            "There is some association between the SS18-SSX1 or SS18-SSX2 fusion type and both tumour morphology and five-year survival.[15]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Treatment is usually multimodal, involving surgery, chemotherapy and radiotherapy:[16]",
+                            "<info> Surgery, to remove the tumor and a safety margin of healthy tissue. This is the mainstay of synovial sarcoma treatment and is curative in approximately 20–70% of patients, depending on the particular study being quoted.[17]",
+                            "<info> Conventional chemotherapy, (for example, doxorubicin hydrochloride and ifosfamide), to reduce the number of remaining microscopic metastases.[16] The benefit of chemotherapy in synovial sarcoma to overall survival remains unclear, although a recent study has shown that survival of patients with advanced, poorly differentiated disease marginally improves with doxorubicin/ifosfamide treatment.[16][18]",
+                            "<info> Radiotherapy to reduce the chance of local recurrence.[16] The benefit of radiotherapy in this disease is less clear than for chemotherapy.[16]",
+                            "Afamitresgene autoleucel (Tecelra) was approved for medical use in the United States in August 2024.[19][20]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Synovioma\". Encyclopædia Britannica Online. Retrieved 20 May 2012.",
+                            "<info> ^ a b Goldblum, John R.; Folpe, Andrew L.; Weiss, Sharon W. (2001). \"33\". Enzinger and Weiss's Soft Tissue Tumors (Sixth ed.). St Louis, Missouri: CV Mosby. pp. 1052–1070. ISBN 978-0-323-08834-3. LCCN 2013010770.",
+                            "<info> ^ a b c Pollock, Raphael E., ed. (2002). Soft Tissue Sarcomas. American Cancer Society Atlas of Clinical Oncology. BC Decker. ISBN 1-55009-128-X.",
+                            "<info> ^ a b Ferrari and Collini (2012). \"Synovial Sarcoma\". ESUN. 9 (5).",
+                            "<info> ^ 楊照彬 (2010). \"青少年骨髓性肉瘤初期以背痛呈現: 病例報告\". 台灣復健醫學雜誌 (in Chinese). 38 (4): 269–275.",
+                            "<info> ^ a b Coindre, Jean-Michel; Pelmus, Manuela; Hostein, Isabelle; Lussan, Catherine; Bui, Binh N.; Guillou, Louis (2003). \"Should molecular testing be required for diagnosing synovial sarcoma? A prospective study of 204 cases\". Cancer. 98 (12): 2700–7. doi:10.1002/cncr.11840. PMID 14669292.",
+                            "<info> ^ a b Coindre, Jean-Michel (October 2006). \"Grading of soft tissue sarcomas: review and update\". Archives of Pathology & Laboratory Medicine. 130 (10): 1448–53. doi:10.5858/2006-130-1448-GOSTSR. PMID 17090186.",
+                            "<info> ^ Paul, A.S.; Charalambous, C.; Maltby, B.; Whitehouse, R. (April 2003). \"The management of soft-tissue sarcomas of the extremities\". Current Orthopaedics. 17 (2): 124–133. doi:10.1054/cuor.2002.0314. ISSN 0268-0890.",
+                            "<info> ^ Gill, Anthony J.; Zaborowski, Matthew; Vargas, Ana C.; et al. (19 June 2020). \"When used together SS18–SSX fusion-specific and SSX C-terminus immunohistochemistry are highly specific and sensitive for the diagnosis of synovial sarcoma and can replace FISH or molecular testing in most cases\". Histopathology. 77 (4): 588–600. doi:10.1111/his.14190. PMID 32559341. S2CID 219949018.",
+                            "<info> ^ Baranov, Esther; McBride, Matthew J.; Bellizzi, Andrew M.; Ligon, Azra Hadi; Fletcher, Christopher D. M.; Kadoch, Cigall; Hornick, Jason L. (July 2020). \"A Novel SS18-SSX Fusion-specific Antibody for the Diagnosis of Synovial Sarcoma\". The American Journal of Surgical Pathology. 44 (7): 922–33. doi:10.1097/PAS.0000000000001447. PMC 7289668. PMID 32141887.",
+                            "<info> ^ \nPfeifer, John D.; Hill, D. Ashley; O'Sullivan, Maureen J.; Dehner, Louis P. (4 January 2002). \"Diagnostic gold standard for soft tissue tumours: morphology or molecular genetics?\". Histopathology. 37 (6): 485–500. doi:10.1046/j.1365-2559.2000.01107.x. PMID 11122430. S2CID 6825413.",
+                            "<info> ^ \nO'Sullivan, Maureen J.; Kyriakos, M.; Zhu, X.; Wick, M.R.; Swanson, P.E.; Dehner, Louis P.; Humphrey, P.A.; Pfeifer, John D. (2000). \"Malignant peripheral nerve sheath tumors with t(X;18). A pathologic and molecular genetic study\". Modern Pathology. 13 (12): 1336–46. doi:10.1038/modpathol.3880247. PMID 11144931.",
+                            "<info> ^ \nCoindre, Jean-Michel; Hostein, Isabelle; Benhattar, Jean; Lussan, Cathy; Rivel, Janine; Guillou, Louis (June 2002). \"Malignant Peripheral Nerve Sheath Tumors are t(X;18)-Negative Sarcomas. Molecular Analysis of 25 Cases Occurring in Neurofibromatosis Type 1 Patients, Using Two Different RT-PCR-Based Methods of Detection\". Modern Pathology. 15 (6): 589–92. doi:10.1038/modpathol.3880570. PMID 12065770.",
+                            "<info> ^ Middeljans, Evelien; Wan, Xi; Jansen, Pascal W.; Sharma, Vikram; Stunnenberg, Hendrik G.; Logie, Colin (March 2012). Freitag, Michael (ed.). \"SS18 together with animal-specific factors defines human BAF-type SWI/SNF complexes\". PLOS One. 7 (3) e33834. Bibcode:2012PLoSO...733834M. doi:10.1371/journal.pone.0033834. PMC 3307773. PMID 22442726.",
+                            "<info> ^ Ladanyi, Marc; Antonescu, Christina R.; Leung, Denis H.Y.; et al. (January 2002). \"Impact of SS18-SSX fusion type on the clinical behavior of synovial sarcoma: a multi-institutional retrospective study of 243 patients\" (PDF). Cancer Research. 62 (1): 135–40. PMID 11782370. Archived (PDF) from the original on 26 August 2017.",
+                            "<info> ^ a b c d e Thway, Khin; Fisher, Cyril (December 2014). \"Synovial sarcoma: defining features and diagnostic evolution\". Annals of Diagnostic Pathology. 18 (6): 369–380. doi:10.1016/j.anndiagpath.2014.09.002. ISSN 1092-9134. PMID 25438927.",
+                            "<info> ^ Lewis, Jonathan J.; Antonescu, Cristina R.; Leung, Denis Hy.Y.; Blumberg, David; Healey, John H.; Woodruff, James M.; Brennan, Murray F. (2000). \"Synovial sarcoma: a multivariate analysis of prognostic factors in 112 patients with primary localized tumors of the extremity\". Journal of Clinical Oncology. 18 (10): 2087–94. doi:10.1200/JCO.2000.18.10.2087. PMID 10811674.",
+                            "<info> ^ Ren, Xiao-Hua; WU, Xiao-Min; JIN, Cheng; CUI, Yong-An (2009). \"Advances in the diagnosis and treatment of synovial sarcoma\". Journal of Medical Biomechanics (in Chinese). 15 (4): 541–542. Retrieved 7 May 2016.",
+                            "<info> ^ \"FDA grants accelerated approval to afamitresgene autoleucel for unresectable or metastatic synovial sarcoma\". U.S. Food and Drug Administration (FDA). 2 August 2024. Retrieved 5 August 2024.",
+                            "<info> ^ \"Adaptimmune Receives U.S. FDA Accelerated Approval of Tecelra (afamitresgene autoleucel), the First Approved Engineered Cell Therapy for a Solid Tumor\" (Press release). Adaptimmune. 2 August 2024. Retrieved 5 August 2024 – via Business Wire."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Media related to Synovial sarcoma at Wikimedia Commons",
+                            "<info> Sarcoma Help: What is Synovial Sarcoma?",
+                            "<info> WebMD: Synovial Sarcoma Overview"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

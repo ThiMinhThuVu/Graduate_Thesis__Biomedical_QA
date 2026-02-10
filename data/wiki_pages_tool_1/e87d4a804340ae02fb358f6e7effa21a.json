@@ -1,0 +1,101 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/spectrin": {
+                "title": "Spectrin",
+                "url": "https://en.wikipedia.org/wiki/spectrin",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Spectrin is a cytoskeletal protein that lines the intracellular side of the plasma membrane in many eukaryotic cells, including animal cells but not in plant cells or yeast.[1] Spectrin forms pentagonal or hexagonal arrangements, forming a scaffold and playing an important role in maintenance of plasma membrane integrity and cytoskeletal structure.[2] The hexagonal arrangements are formed by tetramers of spectrin subunits associating with short actin filaments at either end of the tetramer. These short actin filaments act as junctional complexes allowing the formation of the hexagonal mesh.  The protein is named spectrin since it was first isolated as a major protein component of human red blood cells which had been treated with mild detergents; the detergents lysed the cells and the hemoglobin and other cytoplasmic components were washed out. In the light microscope the basic shape of the red blood cell could still be seen as the spectrin-containing submembranous cytoskeleton preserved the shape of the cell in outline. This became known as a red blood cell \"ghost\" (spectre), and so the major protein of the ghost was named spectrin.",
+                    "In certain types of brain injury such as diffuse axonal injury, spectrin is irreversibly cleaved by the proteolytic enzyme calpain, destroying the cytoskeleton.[3]  Spectrin cleavage causes the membrane to form blebs and ultimately to be degraded, usually leading to the death of the cell.[4] Spectrin subunits may also be cleaved by caspase family enzymes, and calpain and caspase produce different spectrin breakdown products which can be detected by western blotting with appropriate antibodies. Calpain cleavage may indicate activation of necrosis, while caspase cleavage may indicate apoptosis.[5]",
+                    "",
+                    "=== In erythrocytes ===",
+                    "The convenience of using erythrocytes compared to other cell types means they have become the standard model for the investigation of the spectrin cytoskeleton. Dimeric spectrin is formed by the lateral association of αI and βI monomers to form a dimer. Dimers then associate in a head-to-head formation to produce the tetramer. End-to-end association of these tetramers with short actin filaments produces the hexagonal complexes observed.",
+                    "In humans, association with the intracellular face of the plasma membrane is by indirect interaction, through direct interactions with protein 4.1 and ankyrin, with the transmembrane ion transporter band 3 Protein 4.2 binds the spectrin tail region to the transmembrane protein glycophorin A.[6] In animals, spectrin forms the meshwork that provides red blood cells their shape.",
+                    "The erythrocyte model demonstrates the importance of the spectrin cytoskeleton in that mutations in spectrin commonly cause hereditary defects of the erythrocyte, including hereditary elliptocytosis and rarely hereditary spherocytosis.[7]",
+                    "",
+                    "=== In invertebrates ===",
+                    "There are three spectrins in invertebrates, α,β and βH. Mutations in  βH spectrin in C. elegans cause defects in morphogenesis resulting in a significantly shorter, but otherwise mostly normal, animal that moves and reproduces. These animals are called \"sma\" for their small phenotype and carry mutations in the C. elegans sma-1 gene. [8] A mutation in β spectrin in C. elegans results in an uncoordinated phenotype in which the worms are paralysed and much shorter than wild-type.[9] In addition to the morphological effects, the Unc-70 mutation also produce defective neurons. Neuron numbers are normal but neuronal outgrowth was defective.",
+                    "Similarly, spectrin plays a role in Drosophila neurons. Knock-out of α or β spectrin in D. melanogaster results in neurons that are morphologically normal but have reduced neurotransmission at the neuromuscular junction.[10]\nIn animals, spectrin forms the meshwork that provides red blood cells their shape.",
+                    "",
+                    "=== In vertebrates ===",
+                    "The spectrin gene family has undergone expansion during evolution. Rather than the one α and two β genes in invertebrates, there are two α spectrins (αI and αII) and five β spectrins (βI to V), named in the order of discovery.",
+                    "In humans, the genes are:",
+                    "<info> Beta: SPTB, SPTBN1, SPTBN2, SPTBN4, SPTBN5",
+                    "The production of spectrin is promoted by the transcription factor GATA1.",
+                    "Some evidence for the role of spectrins in muscle tissues exist. In myocardial cells, aII spectrin distribution is coincident with Z-discs and the plasma membrane of myofibrils.[11] Additionally, mice with an ankyrin (ankB) knock-out have disrupted calcium homeostasis in the myocardial. Affected mice have disrupted z-band and sarcomere morphology. In this experimental model ryanodine and IP3 receptors have abnormal distribution in cultured myocytes. The calcium signaling of the cultured cells is disrupted. \nIn humans, a mutation within the AnkB gene results in the long QT syndrome and sudden death, strengthening the evidence for a role for the spectrin cytoskeleton in excitable tissue.",
+                    "",
+                    "=== See also ===",
+                    "<info> Proteopedia 2fot the complex between calmodulin and alpha11spectrin",
+                    "<info> Glycophorin C, helps anchor spectrin-actin cytoskeleton to cell membrane in erythrocytes",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Li, D (8 August 2022). \"Role of Spectrin in Endocytosis\". Cells. 11 (15): 2459. doi:10.3390/cells11152459. PMC 9368487. PMID 35954302.",
+                    "<info> ^ Huh, Gi-Yeong; Glantz, Susan B.; Je, Soojung; Morrow, Jon S.; Kim, Jung H. (December 2001). \"Calpain proteolysis of alpha-II-spectrin in the normal adult human brain\". Neurosci. Lett. 316 (1): 41–4. doi:10.1016/S0304-3940(01)02371-0. PMID 11720774. S2CID 53270680.",
+                    "<info> ^ Büki, A.; Okonkwo, D. O.; Wang, K. K.; Povlishock, J. T. (April 2000). \"Cytochrome c release and caspase activation in traumatic axonal injury\". J. Neurosci. 20 (8): 2825–34. doi:10.1523/JNEUROSCI.20-08-02825.2000. PMC 6772193. PMID 10751434.",
+                    "<info> ^ Castillo, MR; Babson, JR. (1998). \"Ca2+-dependent mechanisms of cell injury in cultured cortical neurons\". Neuroscience. 86 (4): 1133–1144. doi:10.1016/S0306-4522(98)00070-0. PMID 9697120. S2CID 54228571.",
+                    "<info> ^ Li, Jia; Li, Xue-Yuan; Feng, Dong-Fu; Pan, Dong-Chao (December 2010). \"Biomarkers associated with diffuse traumatic axonal injury: exploring pathogenesis, early diagnosis, and prognosis\". J. Trauma. 69 (6): 1610–1618. doi:10.1097/TA.0b013e3181f5a9ed. PMID 21150538.",
+                    "<info> ^ Pathologic Basis of Disease, 8th edition  Robbins and Cotran (2010) page 642",
+                    "<info> ^ Delaunay, J (1995). \"Genetic disorders of the red cell membranes\". FEBS Letters. 369 (1): 34–37. Bibcode:1995FEBSL.369...34D. doi:10.1016/0014-5793(95)00460-Q. PMID 7641880.",
+                    "<info> ^ McKeown, C; Praitis VM; Austin JA (1998). \"sma-1 encodes a betaH-spectrin homolog required for Caenorhabditis elegans morphogenesis\". Development. 125 (11): 2087–98. doi:10.1242/dev.125.11.2087. PMID 9570773.",
+                    "<info> ^ Hammarlund, M; Davis WS; Jorgensen EM (2000). \"Mutations in β-Spectrin Disrupt Axon Outgrowth and Sarcomere Structure\". Journal of Cell Biology. 149 (4): 931–942. doi:10.1083/jcb.149.4.931. PMC 2174563. PMID 10811832.",
+                    "<info> ^ Featherstone, DE; Davis WS; Dubreuil RR; Broadie K (2001). \"Drosophila alpha- and beta-spectrin mutations disrupt presynaptic neurotransmitter release\". Journal of Neuroscience. 21 (12): 4215–4224. doi:10.1523/JNEUROSCI.21-12-04215.2001. PMC 6762771. PMID 11404407.",
+                    "<info> ^ Bennett, PM; Baines AJ; Lecomte MC; Maggs AM; Pinder JC (2004). \"Not just a plasma membrane protein: in cardiac muscle cells alpha-II spectrin also shows a close association with myofibrils\". Journal of Muscle Research and Cell Motility. 25 (2): 119–126. doi:10.1023/B:JURE.0000035892.77399.51. PMID 15360127. S2CID 10297147.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Spectrin is a cytoskeletal protein that lines the intracellular side of the plasma membrane in many eukaryotic cells, including animal cells but not in plant cells or yeast.[1] Spectrin forms pentagonal or hexagonal arrangements, forming a scaffold and playing an important role in maintenance of plasma membrane integrity and cytoskeletal structure.[2] The hexagonal arrangements are formed by tetramers of spectrin subunits associating with short actin filaments at either end of the tetramer. These short actin filaments act as junctional complexes allowing the formation of the hexagonal mesh.  The protein is named spectrin since it was first isolated as a major protein component of human red blood cells which had been treated with mild detergents; the detergents lysed the cells and the hemoglobin and other cytoplasmic components were washed out. In the light microscope the basic shape of the red blood cell could still be seen as the spectrin-containing submembranous cytoskeleton preserved the shape of the cell in outline. This became known as a red blood cell \"ghost\" (spectre), and so the major protein of the ghost was named spectrin.",
+                            "In certain types of brain injury such as diffuse axonal injury, spectrin is irreversibly cleaved by the proteolytic enzyme calpain, destroying the cytoskeleton.[3]  Spectrin cleavage causes the membrane to form blebs and ultimately to be degraded, usually leading to the death of the cell.[4] Spectrin subunits may also be cleaved by caspase family enzymes, and calpain and caspase produce different spectrin breakdown products which can be detected by western blotting with appropriate antibodies. Calpain cleavage may indicate activation of necrosis, while caspase cleavage may indicate apoptosis.[5]"
+                        ]
+                    },
+                    "In erythrocytes": {
+                        "content": [
+                            "The convenience of using erythrocytes compared to other cell types means they have become the standard model for the investigation of the spectrin cytoskeleton. Dimeric spectrin is formed by the lateral association of αI and βI monomers to form a dimer. Dimers then associate in a head-to-head formation to produce the tetramer. End-to-end association of these tetramers with short actin filaments produces the hexagonal complexes observed.",
+                            "In humans, association with the intracellular face of the plasma membrane is by indirect interaction, through direct interactions with protein 4.1 and ankyrin, with the transmembrane ion transporter band 3 Protein 4.2 binds the spectrin tail region to the transmembrane protein glycophorin A.[6] In animals, spectrin forms the meshwork that provides red blood cells their shape.",
+                            "The erythrocyte model demonstrates the importance of the spectrin cytoskeleton in that mutations in spectrin commonly cause hereditary defects of the erythrocyte, including hereditary elliptocytosis and rarely hereditary spherocytosis.[7]"
+                        ]
+                    },
+                    "In invertebrates": {
+                        "content": [
+                            "There are three spectrins in invertebrates, α,β and βH. Mutations in  βH spectrin in C. elegans cause defects in morphogenesis resulting in a significantly shorter, but otherwise mostly normal, animal that moves and reproduces. These animals are called \"sma\" for their small phenotype and carry mutations in the C. elegans sma-1 gene. [8] A mutation in β spectrin in C. elegans results in an uncoordinated phenotype in which the worms are paralysed and much shorter than wild-type.[9] In addition to the morphological effects, the Unc-70 mutation also produce defective neurons. Neuron numbers are normal but neuronal outgrowth was defective.",
+                            "Similarly, spectrin plays a role in Drosophila neurons. Knock-out of α or β spectrin in D. melanogaster results in neurons that are morphologically normal but have reduced neurotransmission at the neuromuscular junction.[10]\nIn animals, spectrin forms the meshwork that provides red blood cells their shape."
+                        ]
+                    },
+                    "In vertebrates": {
+                        "content": [
+                            "The spectrin gene family has undergone expansion during evolution. Rather than the one α and two β genes in invertebrates, there are two α spectrins (αI and αII) and five β spectrins (βI to V), named in the order of discovery.",
+                            "In humans, the genes are:",
+                            "<info> Beta: SPTB, SPTBN1, SPTBN2, SPTBN4, SPTBN5",
+                            "The production of spectrin is promoted by the transcription factor GATA1.",
+                            "Some evidence for the role of spectrins in muscle tissues exist. In myocardial cells, aII spectrin distribution is coincident with Z-discs and the plasma membrane of myofibrils.[11] Additionally, mice with an ankyrin (ankB) knock-out have disrupted calcium homeostasis in the myocardial. Affected mice have disrupted z-band and sarcomere morphology. In this experimental model ryanodine and IP3 receptors have abnormal distribution in cultured myocytes. The calcium signaling of the cultured cells is disrupted. \nIn humans, a mutation within the AnkB gene results in the long QT syndrome and sudden death, strengthening the evidence for a role for the spectrin cytoskeleton in excitable tissue."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Proteopedia 2fot the complex between calmodulin and alpha11spectrin",
+                            "<info> Glycophorin C, helps anchor spectrin-actin cytoskeleton to cell membrane in erythrocytes"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Li, D (8 August 2022). \"Role of Spectrin in Endocytosis\". Cells. 11 (15): 2459. doi:10.3390/cells11152459. PMC 9368487. PMID 35954302.",
+                            "<info> ^ Huh, Gi-Yeong; Glantz, Susan B.; Je, Soojung; Morrow, Jon S.; Kim, Jung H. (December 2001). \"Calpain proteolysis of alpha-II-spectrin in the normal adult human brain\". Neurosci. Lett. 316 (1): 41–4. doi:10.1016/S0304-3940(01)02371-0. PMID 11720774. S2CID 53270680.",
+                            "<info> ^ Büki, A.; Okonkwo, D. O.; Wang, K. K.; Povlishock, J. T. (April 2000). \"Cytochrome c release and caspase activation in traumatic axonal injury\". J. Neurosci. 20 (8): 2825–34. doi:10.1523/JNEUROSCI.20-08-02825.2000. PMC 6772193. PMID 10751434.",
+                            "<info> ^ Castillo, MR; Babson, JR. (1998). \"Ca2+-dependent mechanisms of cell injury in cultured cortical neurons\". Neuroscience. 86 (4): 1133–1144. doi:10.1016/S0306-4522(98)00070-0. PMID 9697120. S2CID 54228571.",
+                            "<info> ^ Li, Jia; Li, Xue-Yuan; Feng, Dong-Fu; Pan, Dong-Chao (December 2010). \"Biomarkers associated with diffuse traumatic axonal injury: exploring pathogenesis, early diagnosis, and prognosis\". J. Trauma. 69 (6): 1610–1618. doi:10.1097/TA.0b013e3181f5a9ed. PMID 21150538.",
+                            "<info> ^ Pathologic Basis of Disease, 8th edition  Robbins and Cotran (2010) page 642",
+                            "<info> ^ Delaunay, J (1995). \"Genetic disorders of the red cell membranes\". FEBS Letters. 369 (1): 34–37. Bibcode:1995FEBSL.369...34D. doi:10.1016/0014-5793(95)00460-Q. PMID 7641880.",
+                            "<info> ^ McKeown, C; Praitis VM; Austin JA (1998). \"sma-1 encodes a betaH-spectrin homolog required for Caenorhabditis elegans morphogenesis\". Development. 125 (11): 2087–98. doi:10.1242/dev.125.11.2087. PMID 9570773.",
+                            "<info> ^ Hammarlund, M; Davis WS; Jorgensen EM (2000). \"Mutations in β-Spectrin Disrupt Axon Outgrowth and Sarcomere Structure\". Journal of Cell Biology. 149 (4): 931–942. doi:10.1083/jcb.149.4.931. PMC 2174563. PMID 10811832.",
+                            "<info> ^ Featherstone, DE; Davis WS; Dubreuil RR; Broadie K (2001). \"Drosophila alpha- and beta-spectrin mutations disrupt presynaptic neurotransmitter release\". Journal of Neuroscience. 21 (12): 4215–4224. doi:10.1523/JNEUROSCI.21-12-04215.2001. PMC 6762771. PMID 11404407.",
+                            "<info> ^ Bennett, PM; Baines AJ; Lecomte MC; Maggs AM; Pinder JC (2004). \"Not just a plasma membrane protein: in cardiac muscle cells alpha-II spectrin also shows a close association with myofibrils\". Journal of Muscle Research and Cell Motility. 25 (2): 119–126. doi:10.1023/B:JURE.0000035892.77399.51. PMID 15360127. S2CID 10297147."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

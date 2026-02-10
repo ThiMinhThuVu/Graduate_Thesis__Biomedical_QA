@@ -1,0 +1,83 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/anaxonic_neuron": {
+                "title": "Anaxonic neuron",
+                "url": "https://en.wikipedia.org/wiki/anaxonic_neuron",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "An anaxonic neuron is a type of neuron where there is no axon or it cannot be differentiated from the dendrites.[1] Unlike typical neurons that possess a single axon transmitting signals away from the cell body, anaxonic neurons have processes that are all morphologically similar. Being loyal to the etymology of anaxonic there are two types of anaxonic neurons in the human nervous system, the undifferentiated anaxonic neuron where the axon cannot be differentiated from the dendrites, and the unipolar brush cell (UBC), that has no axon and only a dendritic arbour.[2] This structural peculiarity suggests specialized roles in neural circuits, particularly in modulating and integrating information rather than transmitting it over long distances.",
+                    "",
+                    "=== Morphological Characteristics ===",
+                    "Anaxonic neurons are characterized by their symmetrical appearance, with multiple processes radiating from the cell body. These processes are indistinct in function, lacking the clear demarcation between axons and dendrites seen in other neuron types. This morphology implies that anaxonic neurons are primarily involved in local circuit processing, where signal integration and modulation occur without the need for long-range transmission.[3]",
+                    "",
+                    "=== Location ===",
+                    "They are found in the brain and retina, in the latter location it is found as the amacrine cell and retina horizontal cells.[2] They are also found in invertebrates.[4]",
+                    "",
+                    "=== Functional Roles ===",
+                    "Due to their structure, anaxonic neurons are believed to play a crucial role in integrating synaptic inputs within local neural circuits.They act as non-spiking interneurons.[2][5] Their processes can receive and modulate signals from multiple sources, allowing for complex processing of information before it is relayed to other neurons. The National Institutes of Health BRAIN Initiative supports research into neural recording and modulation, aiming to develop tools that can elucidate the functions of various neuron types, including those involved in local circuit integration.",
+                    "Anaxonic neurons are often associated with Inhibitory control functions within neural networks. By releasing inhibitory neurotransmitters, they can modulate the activity of neighboring neurons, contributing to the fine-tuning of neural responses and preventing excessive excitation. Research funded by the NIH has highlighted the importance of inhibitory synapses in maintaining the balance of neural activity, which is essential for processes such as memory consolidation during sleep.[6]",
+                    "",
+                    "=== Clinical Implications ===",
+                    "Anaxonic neurons, particularly those resembling axo-axonic cells (AACs), play a vital role in regulating neuronal excitability by modulating the activity of the axon initial segment (AIS) of pyramidal neurons. These neurons form synapses directly at the AIS, where they exert strong inhibitory influence through GABAergic transmission. The functional integrity of these connections is essential for maintaining balanced neural activity. Research has shown that mutations affecting the γ2 subunit of GABA<sub>A</sub> receptors - which are highly concentrated at AIS synapses - can significantly reduce inhibitory efficacy. This leads to increased neuronal excitability and susceptibility to epileptogenesis, highlighting the critical role of anaxonic inhibitory neurons in seizure control.[7]",
+                    "Following traumatic brain injury, structural and functional changes occur in inhibitory interneurons, including those with anaxonic morphology (biology). A key pathological feature observed post-injury is the reduction of brain-derived neurotrophic factor (BDNF), which is essential for the maintenance and plasticity of GABAergic neurons. The decline in BDNF availability leads to regressive changes in interneuronal axonal terminals and dendritic complexity, ultimately impairing their inhibitory capabilities. A study on rodent models found that these deficits in GABAergic transmission can create a hyperexcitable neural environment, further predisposing the injured brain to the development of epilepsy.[8]",
+                    "Strategies aimed at enhancing GABAergic function - either through pharmalogical modulation of GABA<sub>A</sub> receptor subunits or trophic support via BDNF - could restore inhibitory balance and reduce seizure susceptibility. Continued exploration of these avenues, particularly within the context of post-traumatic and genetic epilepsies, may provide novel insights into how maintaining or restoring anaxonic neuron function contributes to neural homeostasis.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Al, Martini, Frederic Et (2005). Anatomy and Physiology' 2007 Ed.2007 Edition. Rex Bookstore, Inc. pp. 288–. ISBN 978-971-23-4807-5.{{cite book}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> ^ a b c Saladin, Kenneth S. (2005). Human Anatomy. Charlesbourg, Québec: Rex Bookstore, Inc. (Braille Jymico Incorporated). p. 370. ISBN 978-0-07-125971-2. OCLC 1011699773.",
+                    "<info> ^ Leonard, B.E. (January 1990). \"Book Reviews: Basic Neurochemistry: Molecular, Cellular and Medical Aspects (4th edition)\". Journal of Psychopharmacology. 4 (1): 49. doi:10.1177/026988119000400111. ISSN 0269-8811.",
+                    "<info> ^ Pannese, Ennio (1994). Neurocytology: Fine Structure of Neurons, Nerve Processes, and Neuroglial Cells. Thieme. p. 21. ISBN 978-3-13-781801-4.",
+                    "<info> ^ Takahata, M; Nagayama, T; Hisada, M (Dec 7, 1981). \"Physiological and morphological characterization of anaxonic non-spiking interneurons in the crayfish motor control system\". Brain Research. 226 (1–2): 309–14. doi:10.1016/0006-8993(81)91104-5. PMID 7296293. S2CID 41768051.",
+                    "<info> ^ Wu, Kunwei; Han, Wenyan; Lu, Wei (2022-11-01). Yang, Guang (ed.). \"Sleep and wake cycles dynamically modulate hippocampal inhibitory synaptic plasticity\". PLOS Biology. 20 (11) e3001812. doi:10.1371/journal.pbio.3001812. ISSN 1545-7885. PMC 9624398. PMID 36318572.",
+                    "<info> ^ Wimmer, Verena C.; Reid, Christopher A.; So, Eva Y.-W.; Berkovic, Samuel F.; Petrou, Steven (2010-06-01). \"Axon initial segment dysfunction in epilepsy: Axon initial segment dysfunction in epilepsy\". The Journal of Physiology. 588 (11): 1829–1840. doi:10.1113/jphysiol.2010.188417. PMC 2901971. PMID 20375142.",
+                    "<info> ^ Gu, Feng; Parada, Isabel; Shen, Fran; Li, Judith; Bacci, Alberto; Graber, Kevin; Taghavi, Reza Moein; Scalise, Karina; Schwartzkroin, Philip; Wenzel, Jurgen; Prince, David A. (December 2017). \"Structural alterations in fast-spiking GABAergic interneurons in a model of posttraumatic neocortical epileptogenesis\". Neurobiology of Disease. 108: 100–114. doi:10.1016/j.nbd.2017.08.008. PMC 5927780. PMID 28823934.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "An anaxonic neuron is a type of neuron where there is no axon or it cannot be differentiated from the dendrites.[1] Unlike typical neurons that possess a single axon transmitting signals away from the cell body, anaxonic neurons have processes that are all morphologically similar. Being loyal to the etymology of anaxonic there are two types of anaxonic neurons in the human nervous system, the undifferentiated anaxonic neuron where the axon cannot be differentiated from the dendrites, and the unipolar brush cell (UBC), that has no axon and only a dendritic arbour.[2] This structural peculiarity suggests specialized roles in neural circuits, particularly in modulating and integrating information rather than transmitting it over long distances."
+                        ]
+                    },
+                    "Morphological Characteristics": {
+                        "content": [
+                            "Anaxonic neurons are characterized by their symmetrical appearance, with multiple processes radiating from the cell body. These processes are indistinct in function, lacking the clear demarcation between axons and dendrites seen in other neuron types. This morphology implies that anaxonic neurons are primarily involved in local circuit processing, where signal integration and modulation occur without the need for long-range transmission.[3]"
+                        ]
+                    },
+                    "Location": {
+                        "content": [
+                            "They are found in the brain and retina, in the latter location it is found as the amacrine cell and retina horizontal cells.[2] They are also found in invertebrates.[4]"
+                        ]
+                    },
+                    "Functional Roles": {
+                        "content": [
+                            "Due to their structure, anaxonic neurons are believed to play a crucial role in integrating synaptic inputs within local neural circuits.They act as non-spiking interneurons.[2][5] Their processes can receive and modulate signals from multiple sources, allowing for complex processing of information before it is relayed to other neurons. The National Institutes of Health BRAIN Initiative supports research into neural recording and modulation, aiming to develop tools that can elucidate the functions of various neuron types, including those involved in local circuit integration.",
+                            "Anaxonic neurons are often associated with Inhibitory control functions within neural networks. By releasing inhibitory neurotransmitters, they can modulate the activity of neighboring neurons, contributing to the fine-tuning of neural responses and preventing excessive excitation. Research funded by the NIH has highlighted the importance of inhibitory synapses in maintaining the balance of neural activity, which is essential for processes such as memory consolidation during sleep.[6]"
+                        ]
+                    },
+                    "Clinical Implications": {
+                        "content": [
+                            "Anaxonic neurons, particularly those resembling axo-axonic cells (AACs), play a vital role in regulating neuronal excitability by modulating the activity of the axon initial segment (AIS) of pyramidal neurons. These neurons form synapses directly at the AIS, where they exert strong inhibitory influence through GABAergic transmission. The functional integrity of these connections is essential for maintaining balanced neural activity. Research has shown that mutations affecting the γ2 subunit of GABA<sub>A</sub> receptors - which are highly concentrated at AIS synapses - can significantly reduce inhibitory efficacy. This leads to increased neuronal excitability and susceptibility to epileptogenesis, highlighting the critical role of anaxonic inhibitory neurons in seizure control.[7]",
+                            "Following traumatic brain injury, structural and functional changes occur in inhibitory interneurons, including those with anaxonic morphology (biology). A key pathological feature observed post-injury is the reduction of brain-derived neurotrophic factor (BDNF), which is essential for the maintenance and plasticity of GABAergic neurons. The decline in BDNF availability leads to regressive changes in interneuronal axonal terminals and dendritic complexity, ultimately impairing their inhibitory capabilities. A study on rodent models found that these deficits in GABAergic transmission can create a hyperexcitable neural environment, further predisposing the injured brain to the development of epilepsy.[8]",
+                            "Strategies aimed at enhancing GABAergic function - either through pharmalogical modulation of GABA<sub>A</sub> receptor subunits or trophic support via BDNF - could restore inhibitory balance and reduce seizure susceptibility. Continued exploration of these avenues, particularly within the context of post-traumatic and genetic epilepsies, may provide novel insights into how maintaining or restoring anaxonic neuron function contributes to neural homeostasis."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Al, Martini, Frederic Et (2005). Anatomy and Physiology' 2007 Ed.2007 Edition. Rex Bookstore, Inc. pp. 288–. ISBN 978-971-23-4807-5.{{cite book}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> ^ a b c Saladin, Kenneth S. (2005). Human Anatomy. Charlesbourg, Québec: Rex Bookstore, Inc. (Braille Jymico Incorporated). p. 370. ISBN 978-0-07-125971-2. OCLC 1011699773.",
+                            "<info> ^ Leonard, B.E. (January 1990). \"Book Reviews: Basic Neurochemistry: Molecular, Cellular and Medical Aspects (4th edition)\". Journal of Psychopharmacology. 4 (1): 49. doi:10.1177/026988119000400111. ISSN 0269-8811.",
+                            "<info> ^ Pannese, Ennio (1994). Neurocytology: Fine Structure of Neurons, Nerve Processes, and Neuroglial Cells. Thieme. p. 21. ISBN 978-3-13-781801-4.",
+                            "<info> ^ Takahata, M; Nagayama, T; Hisada, M (Dec 7, 1981). \"Physiological and morphological characterization of anaxonic non-spiking interneurons in the crayfish motor control system\". Brain Research. 226 (1–2): 309–14. doi:10.1016/0006-8993(81)91104-5. PMID 7296293. S2CID 41768051.",
+                            "<info> ^ Wu, Kunwei; Han, Wenyan; Lu, Wei (2022-11-01). Yang, Guang (ed.). \"Sleep and wake cycles dynamically modulate hippocampal inhibitory synaptic plasticity\". PLOS Biology. 20 (11) e3001812. doi:10.1371/journal.pbio.3001812. ISSN 1545-7885. PMC 9624398. PMID 36318572.",
+                            "<info> ^ Wimmer, Verena C.; Reid, Christopher A.; So, Eva Y.-W.; Berkovic, Samuel F.; Petrou, Steven (2010-06-01). \"Axon initial segment dysfunction in epilepsy: Axon initial segment dysfunction in epilepsy\". The Journal of Physiology. 588 (11): 1829–1840. doi:10.1113/jphysiol.2010.188417. PMC 2901971. PMID 20375142.",
+                            "<info> ^ Gu, Feng; Parada, Isabel; Shen, Fran; Li, Judith; Bacci, Alberto; Graber, Kevin; Taghavi, Reza Moein; Scalise, Karina; Schwartzkroin, Philip; Wenzel, Jurgen; Prince, David A. (December 2017). \"Structural alterations in fast-spiking GABAergic interneurons in a model of posttraumatic neocortical epileptogenesis\". Neurobiology of Disease. 108: 100–114. doi:10.1016/j.nbd.2017.08.008. PMC 5927780. PMID 28823934."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

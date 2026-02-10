@@ -1,0 +1,79 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/cerebral_atherosclerosis": {
+                "title": "Cerebral atherosclerosis",
+                "url": "https://en.wikipedia.org/wiki/cerebral_atherosclerosis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Cerebral atherosclerosis is a type of atherosclerosis where build-up of plaque in the blood vessels of the brain occurs. Some of the main components of the plaques are connective tissue, extracellular matrix, including collagen, proteoglycans, fibronectin, and elastic fibers; crystalline cholesterol, cholesteryl esters, and phospholipids; cells such as monocyte derived macrophages, T-lymphocytes, and smooth muscle cells.[1]  The plaque that builds up can lead to further complications such as stroke, as the plaque disrupts blood flow within the intracranial arterioles.  This causes the downstream sections of the brain that would normally be supplied by the blocked artery to suffer from ischemia.[2] Diagnosis of the disease is normally done through imaging technology such as angiograms or magnetic resonance imaging. The risk of cerebral atherosclerosis and its associated diseases appears to increase with increasing age;[3]  however there are numerous factors that can be controlled in attempt to lessen risk.[4]",
+                    "",
+                    "=== Diagnosis ===",
+                    "Due to positive remodeling the plaque build-up shown on angiogram may appear further downstream on the x-ray where the luminal diameter would look normal even though there is severe narrowing at the real site. Because angiograms require x-rays to be visualized the number of times an individual can have it done over a year is limited by the guidelines for the amount of radiation they can be exposed to in a one-year period.[2]",
+                    "Magnetic resonance imaging has the ability to quantify the plaque anatomy and composition. This allows physicians to determine certain characteristics of the plaque such as how likely it is to break away from the wall and become an embolus. MRI does not use ionizing radiation, so the number of times that it is used on a single person is not a concern; however since it uses strong magnetic fields those who have metal implants cannot use this technique.[1][2]",
+                    "In the context of imaging cerebral atherosclerosis, multidirectional computed tomography (MDCT) is often superior to regular CT scans, because it can provide a higher spatial resolution and it has a shorter acquisition time. MDCT uses x-rays to obtain the image; however it can identify the composition of the plaque. Thus it can be determined whether the plaque is calcified plaque and lipid-rich plaque, so the inherent risks can be determined. Subjects are exposed to a substantial amount of radiation with this procedure, so their use is limited.[2]",
+                    "",
+                    "=== Treatment ===",
+                    "Asymptomatic individuals with intracranial stenosis are typically told to take over the counter platelet inhibitors like aspirin whereas those with symptomatic presentation are prescribed anti-coagulation medications.[2]  For asymptomatic persons the idea is to stop the buildup of plaque from continuing. They are not experiencing symptoms; however if more build up occurs it is likely they will. For symptomatic individuals it is necessary to try and reduce the amount of stenosis. The anti-coagulation medications reduce the likelihood of further buildup while also trying to break down the current build up on the surface without an embolism forming.  For those with severe stenosis that are at risk for impending stroke endovascular treatment is used. Depending on the individual and the location of the stenosis there are multiple treatments that can be undertaken. These include angioplasty, stent insertion, or bypass the blocked area.[2]",
+                    "",
+                    "=== Related diseases ===",
+                    "Diseases associated with cerebral atherosclerosis include:",
+                    "This pathological process involves the thickening and damage of arteriole walls. It mainly affects the ends of the arterioles which are located in the deep gray nuclei and deep white matter of the brain. It is thought that this is what causes cerebral microbleeds in deep brain regions. This small vessel damage can also reduce the clearance of amyloid-β, thereby increasing the likelihood of CAA.[5]",
+                    "Diseases cerebral atherosclerosis and associated diseases can cause are:",
+                    "Alzheimer's disease is a form of dementia that entails brain atrophy. Cerebral amyloid angiopathy is found in 90% of the cases at autopsy, with 25% being severe CAA.[5]",
+                    "Cerebral microbleeds have been observed during recent studies on people with dementia using MRI.[6]",
+                    "Strokes occur from the sudden loss of blood flow to an area of the brain.  The loss of flow is generally either from a blockage or hemorrhage. Studies of postmortem stroke cases have shown that intracranial atherosclerotic plaque build up occurred in over half of the individuals and over one third of the overall cases had stenotic build up.[2]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Corti R, Fuster V (2011). \"Imaging of atherosclerosis: magnetic resonance imaging\" (PDF). European Heart Journal (Review). 32 (14): 1709–U149. doi:10.1093/eurheartj/ehr068. PMID 21508002.",
+                    "<info> ^ a b c d e f g Degnan AJ, Gallagher G, Teng Z, Lu J, Liu Q, Gillard JH (September 2012). \"MR angiography and imaging for the evaluation of middle cerebral artery atherosclerotic disease\". American Journal of Neuroradiology (Review). 33 (8): 1427–1435. doi:10.3174/ajnr.A2697. PMC 7966534. PMID 21940802.",
+                    "<info> ^ Korczyn AD (2005). \"The underdiagnosis of the vascular contribution to dementia\". Journal of the Neurological Sciences. 229–230 (SI): 3–6. doi:10.1016/j.jns.2004.11.011. PMID 15760612. S2CID 9299784.",
+                    "<info> ^ Blankenhorn Dh; Hodis HN (1993). \"Atherosclerosis--reversal with therapy\". Western Journal of Medicine (Comparative study; review). 159 (2): 172–179. PMC 1022223. PMID 8212682.",
+                    "<info> ^ a b Charidimou A, Werring DJ (2012). \"Cerebral microbleeds and cognition in cerebrovascular disease: an update\". Journal of the Neurological Sciences (Review). 322 (1–2): 50–55. doi:10.1016/j.jns.2012.05.052. PMID 22717258. S2CID 24299222.",
+                    "<info> ^ Charidimou A, Jäger HR, Werring DJ (November 2012). \"Cerebral microbleed detection and mapping: principles, methodological aspects and rationale in vascular dementia\". Exp. Gerontol. (Review). 47 (11): 843–52. doi:10.1016/j.exger.2012.06.008. PMID 22750456. S2CID 24163291.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Cerebral atherosclerosis is a type of atherosclerosis where build-up of plaque in the blood vessels of the brain occurs. Some of the main components of the plaques are connective tissue, extracellular matrix, including collagen, proteoglycans, fibronectin, and elastic fibers; crystalline cholesterol, cholesteryl esters, and phospholipids; cells such as monocyte derived macrophages, T-lymphocytes, and smooth muscle cells.[1]  The plaque that builds up can lead to further complications such as stroke, as the plaque disrupts blood flow within the intracranial arterioles.  This causes the downstream sections of the brain that would normally be supplied by the blocked artery to suffer from ischemia.[2] Diagnosis of the disease is normally done through imaging technology such as angiograms or magnetic resonance imaging. The risk of cerebral atherosclerosis and its associated diseases appears to increase with increasing age;[3]  however there are numerous factors that can be controlled in attempt to lessen risk.[4]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "Due to positive remodeling the plaque build-up shown on angiogram may appear further downstream on the x-ray where the luminal diameter would look normal even though there is severe narrowing at the real site. Because angiograms require x-rays to be visualized the number of times an individual can have it done over a year is limited by the guidelines for the amount of radiation they can be exposed to in a one-year period.[2]",
+                            "Magnetic resonance imaging has the ability to quantify the plaque anatomy and composition. This allows physicians to determine certain characteristics of the plaque such as how likely it is to break away from the wall and become an embolus. MRI does not use ionizing radiation, so the number of times that it is used on a single person is not a concern; however since it uses strong magnetic fields those who have metal implants cannot use this technique.[1][2]",
+                            "In the context of imaging cerebral atherosclerosis, multidirectional computed tomography (MDCT) is often superior to regular CT scans, because it can provide a higher spatial resolution and it has a shorter acquisition time. MDCT uses x-rays to obtain the image; however it can identify the composition of the plaque. Thus it can be determined whether the plaque is calcified plaque and lipid-rich plaque, so the inherent risks can be determined. Subjects are exposed to a substantial amount of radiation with this procedure, so their use is limited.[2]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Asymptomatic individuals with intracranial stenosis are typically told to take over the counter platelet inhibitors like aspirin whereas those with symptomatic presentation are prescribed anti-coagulation medications.[2]  For asymptomatic persons the idea is to stop the buildup of plaque from continuing. They are not experiencing symptoms; however if more build up occurs it is likely they will. For symptomatic individuals it is necessary to try and reduce the amount of stenosis. The anti-coagulation medications reduce the likelihood of further buildup while also trying to break down the current build up on the surface without an embolism forming.  For those with severe stenosis that are at risk for impending stroke endovascular treatment is used. Depending on the individual and the location of the stenosis there are multiple treatments that can be undertaken. These include angioplasty, stent insertion, or bypass the blocked area.[2]"
+                        ]
+                    },
+                    "Related diseases": {
+                        "content": [
+                            "Diseases associated with cerebral atherosclerosis include:",
+                            "This pathological process involves the thickening and damage of arteriole walls. It mainly affects the ends of the arterioles which are located in the deep gray nuclei and deep white matter of the brain. It is thought that this is what causes cerebral microbleeds in deep brain regions. This small vessel damage can also reduce the clearance of amyloid-β, thereby increasing the likelihood of CAA.[5]",
+                            "Diseases cerebral atherosclerosis and associated diseases can cause are:",
+                            "Alzheimer's disease is a form of dementia that entails brain atrophy. Cerebral amyloid angiopathy is found in 90% of the cases at autopsy, with 25% being severe CAA.[5]",
+                            "Cerebral microbleeds have been observed during recent studies on people with dementia using MRI.[6]",
+                            "Strokes occur from the sudden loss of blood flow to an area of the brain.  The loss of flow is generally either from a blockage or hemorrhage. Studies of postmortem stroke cases have shown that intracranial atherosclerotic plaque build up occurred in over half of the individuals and over one third of the overall cases had stenotic build up.[2]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Corti R, Fuster V (2011). \"Imaging of atherosclerosis: magnetic resonance imaging\" (PDF). European Heart Journal (Review). 32 (14): 1709–U149. doi:10.1093/eurheartj/ehr068. PMID 21508002.",
+                            "<info> ^ a b c d e f g Degnan AJ, Gallagher G, Teng Z, Lu J, Liu Q, Gillard JH (September 2012). \"MR angiography and imaging for the evaluation of middle cerebral artery atherosclerotic disease\". American Journal of Neuroradiology (Review). 33 (8): 1427–1435. doi:10.3174/ajnr.A2697. PMC 7966534. PMID 21940802.",
+                            "<info> ^ Korczyn AD (2005). \"The underdiagnosis of the vascular contribution to dementia\". Journal of the Neurological Sciences. 229–230 (SI): 3–6. doi:10.1016/j.jns.2004.11.011. PMID 15760612. S2CID 9299784.",
+                            "<info> ^ Blankenhorn Dh; Hodis HN (1993). \"Atherosclerosis--reversal with therapy\". Western Journal of Medicine (Comparative study; review). 159 (2): 172–179. PMC 1022223. PMID 8212682.",
+                            "<info> ^ a b Charidimou A, Werring DJ (2012). \"Cerebral microbleeds and cognition in cerebrovascular disease: an update\". Journal of the Neurological Sciences (Review). 322 (1–2): 50–55. doi:10.1016/j.jns.2012.05.052. PMID 22717258. S2CID 24299222.",
+                            "<info> ^ Charidimou A, Jäger HR, Werring DJ (November 2012). \"Cerebral microbleed detection and mapping: principles, methodological aspects and rationale in vascular dementia\". Exp. Gerontol. (Review). 47 (11): 843–52. doi:10.1016/j.exger.2012.06.008. PMID 22750456. S2CID 24163291."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

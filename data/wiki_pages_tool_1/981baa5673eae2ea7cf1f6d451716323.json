@@ -1,0 +1,51 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/artesunate/mefloquine": {
+                "title": "Artesunate/mefloquine",
+                "url": "https://en.wikipedia.org/wiki/artesunate/mefloquine",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Artesunate/mefloquine is a medication used to treat malaria.[1] It is a fixed dose combination of artesunate and mefloquine.[1] Specifically it is recommended to treat uncomplicated falciparum malaria.[2] It is taken by mouth.[1]",
+                    "Side effects are similar to the medications being used separately.[2] Use is recommended as it decreases the possibility of either medications being used alone.[2] Dose forms appropriate for children are also available.[2]",
+                    "Artesunate/mefloquine came into commercial use in 2008.[3] It is on the World Health Organization's List of Essential Medicines.[1] It is approved for medical use in Brazil, India, and Malaysia.[2] It is not commercially available in the United States.[4]",
+                    "",
+                    "=== Medical uses ===",
+                    "Artesunate/mefloquine is a recommended treatment in Southeast Asia while in Africa artesunate/amodiaquine, artemether/lumefantrine, artesunate/sulfadoxine/pyrimethamine are often preferred.[5]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d World Health Organization (2019). World Health Organization model list of essential medicines: 21st list 2019. Geneva: World Health Organization. hdl:10665/325771. WHO/MVP/EMP/IAU/2019.06. License: CC BY-NC-SA 3.0 IGO.",
+                    "<info> ^ a b c d e World Health Organization (2014). The Selection and Use of Essential Medicines: Report of the WHO Expert Committee, 2013 (including the 18th WHO Model List of Essential Medicines and the 4th WHO Model List of Essential Medicines for Children). World Health Organization. p. 43–4. hdl:10665/112729. ISBN 9789241209854.",
+                    "<info> ^ Staines HM, Krishna S (2012). Treatment and Prevention of Malaria: Antimalarial Drug Chemistry, Action and Use. Springer Science & Business Media. p. 239. ISBN 9783034604802. Archived from the original on 20 December 2016.",
+                    "<info> ^ Sanford CA, Jong EC, Pottinger PS (2016). The Travel and Tropical Medicine Manual (5 ed.). Elsevier Health Sciences. p. 307. ISBN 9780323417426. Archived from the original on 20 December 2016.",
+                    "<info> ^ Marcondes CB (2016). Arthropod Borne Diseases. Springer. p. 35. ISBN 9783319138848. Archived from the original on 20 December 2016.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Artesunate/mefloquine is a medication used to treat malaria.[1] It is a fixed dose combination of artesunate and mefloquine.[1] Specifically it is recommended to treat uncomplicated falciparum malaria.[2] It is taken by mouth.[1]",
+                            "Side effects are similar to the medications being used separately.[2] Use is recommended as it decreases the possibility of either medications being used alone.[2] Dose forms appropriate for children are also available.[2]",
+                            "Artesunate/mefloquine came into commercial use in 2008.[3] It is on the World Health Organization's List of Essential Medicines.[1] It is approved for medical use in Brazil, India, and Malaysia.[2] It is not commercially available in the United States.[4]"
+                        ]
+                    },
+                    "Medical uses": {
+                        "content": [
+                            "Artesunate/mefloquine is a recommended treatment in Southeast Asia while in Africa artesunate/amodiaquine, artemether/lumefantrine, artesunate/sulfadoxine/pyrimethamine are often preferred.[5]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d World Health Organization (2019). World Health Organization model list of essential medicines: 21st list 2019. Geneva: World Health Organization. hdl:10665/325771. WHO/MVP/EMP/IAU/2019.06. License: CC BY-NC-SA 3.0 IGO.",
+                            "<info> ^ a b c d e World Health Organization (2014). The Selection and Use of Essential Medicines: Report of the WHO Expert Committee, 2013 (including the 18th WHO Model List of Essential Medicines and the 4th WHO Model List of Essential Medicines for Children). World Health Organization. p. 43–4. hdl:10665/112729. ISBN 9789241209854.",
+                            "<info> ^ Staines HM, Krishna S (2012). Treatment and Prevention of Malaria: Antimalarial Drug Chemistry, Action and Use. Springer Science & Business Media. p. 239. ISBN 9783034604802. Archived from the original on 20 December 2016.",
+                            "<info> ^ Sanford CA, Jong EC, Pottinger PS (2016). The Travel and Tropical Medicine Manual (5 ed.). Elsevier Health Sciences. p. 307. ISBN 9780323417426. Archived from the original on 20 December 2016.",
+                            "<info> ^ Marcondes CB (2016). Arthropod Borne Diseases. Springer. p. 35. ISBN 9783319138848. Archived from the original on 20 December 2016."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

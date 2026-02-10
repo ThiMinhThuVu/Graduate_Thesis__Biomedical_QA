@@ -1,0 +1,29 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/chronic_leukemia": {
+                "title": "Chronic leukemia",
+                "url": "https://en.wikipedia.org/wiki/chronic_leukemia",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Chronic leukemia is an increase of abnormal white blood cells. It differs from acute leukemia, and is categorized as myelogenous, lymphocytic or myeloproliferative.",
+                    "Chronic leukemia may refer to:",
+                    "<info> Chronic lymphocytic leukemia, including Hairy cell leukemia",
+                    "<info> Myeloproliferative neoplasms including polycythemia vera, essential thrombocythemia, primary myelofibrosis, chronic neutrophilic leukemia , and chronic eosinophilic leukemia.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Chronic leukemia is an increase of abnormal white blood cells. It differs from acute leukemia, and is categorized as myelogenous, lymphocytic or myeloproliferative.",
+                            "Chronic leukemia may refer to:",
+                            "<info> Chronic lymphocytic leukemia, including Hairy cell leukemia",
+                            "<info> Myeloproliferative neoplasms including polycythemia vera, essential thrombocythemia, primary myelofibrosis, chronic neutrophilic leukemia , and chronic eosinophilic leukemia."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

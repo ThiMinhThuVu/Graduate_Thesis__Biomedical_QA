@@ -1,0 +1,39 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/fatty-replaced_breast_tissue": {
+                "title": "Fatty-replaced breast tissue",
+                "url": "https://en.wikipedia.org/wiki/fatty-replaced_breast_tissue",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Fatty-replaced breast tissue is a term used in mammography that refers to the replacement of breast tissue with fatty tissue. This commonly occurs as a person ages.",
+                    "",
+                    "=== References ===",
+                    "This article incorporates public domain material from Dictionary of Cancer Terms. U.S. National Cancer Institute.",
+                    "",
+                    "=== External links ===",
+                    "<info> Fatty-replaced breast tissue entry in the public domain NCI Dictionary of Cancer Terms",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Fatty-replaced breast tissue is a term used in mammography that refers to the replacement of breast tissue with fatty tissue. This commonly occurs as a person ages."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "This article incorporates public domain material from Dictionary of Cancer Terms. U.S. National Cancer Institute."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Fatty-replaced breast tissue entry in the public domain NCI Dictionary of Cancer Terms"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

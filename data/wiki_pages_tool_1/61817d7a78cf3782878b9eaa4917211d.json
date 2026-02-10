@@ -1,0 +1,101 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/fungemia": {
+                "title": "Fungemia",
+                "url": "https://en.wikipedia.org/wiki/fungemia",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Fungemia is the presence of fungi or yeast in the blood. The most common type, also known as candidemia, candedemia, or systemic candidiasis, is caused by Candida species. Candidemia is also among the most common bloodstream infections of any kind.[1] Infections by other fungi, including Saccharomyces, Aspergillus (as in aspergillemia, also called invasive aspergillosis) and Cryptococcus, are also called fungemia. It is most commonly seen in immunosuppressed or immunocompromised patients with severe neutropenia, cancer patients, or in patients with intravenous catheters. It has been suggested that otherwise immunocompetent patients taking infliximab may also be at a higher risk.",
+                    "Diagnosis is difficult, as routine blood cultures have poor sensitivity.[2]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Symptoms can range from mild to extreme—often described as extreme flu-like symptoms. Many symptoms may be associated with fungemia, including pain, acute confusion, chronic fatigue, and infections. Skin infections can include persistent or non-healing wounds and lesions, sweating, itching, and unusual discharge or drainage.[citation needed]",
+                    "",
+                    "=== Risk factors ===",
+                    "<info> Use of broad-spectrum antibiotics",
+                    "<info> Active infection by fungi (see e.g. candidiasis)",
+                    "<info> Use of yeast probiotics[3]",
+                    "<info> High severity of illness",
+                    "",
+                    "=== Pathogens ===",
+                    "The most commonly known pathogen is Candida albicans, causing roughly 70% of fungemias, followed by Candida glabrata with 10%, Aspergillus with 1% and Saccharomyces as the fourth most common.[citation needed] However, the frequency of infection by C. glabrata, Saccharomyces boulardii, Candida tropicalis, C. krusei and C. parapsilosis is increasing, perhaps because significant use of fluconazole is common or due to increase in antibiotic use.[citation needed]",
+                    "Candida auris is an emerging multidrug-resistant (MDR) yeast that can cause invasive infections and is associated with high mortality. It was first described in 2009 after being isolated from external ear discharge of a patient in Japan. Since the 2009 report, C. auris infections, specifically fungemia, have been reported from South Korea, India, South Africa, and Kuwait. Although published reports are not available, C. auris has also been identified in Colombia, Venezuela, Pakistan, and the United Kingdom.[4]",
+                    "In a single reported instance, Psilocybe cubensis was reported to have been cultured from a case of fungemia in which an individual self-injected an underprocessed decoction of fungal matter.[5] The patient, who had been experiencing depression, attempted to self-medicate with the mushrooms but was frustrated by the lag time between eating the mushrooms and experiencing the psychedelic effects. In an attempt to bypass this, the patient boiled and filtered the mushrooms into a 'mushroom tea' which was then administered by injection. The patient had multiple organ failure, but this was successfully reversed and the infection treated with antifungal drugs.[6] Two other examples of fungemia as a result of injecting fungal matter in this way have been described in medical literature, both dating to 1985.[7]",
+                    "",
+                    "=== Diagnosis ===",
+                    "The gold standard for the diagnosis of invasive candidiasis and candidemia is a positive culture. Blood cultures should be obtained in all patients with suspected candidemia.[8]",
+                    "",
+                    "=== Treatment ===",
+                    "Neutropenic vs non-neutropenic candidemia is treated differently.[9]",
+                    "An intravenous echinocandin such as anidulafungin, caspofungin or micafungin is recommended as first-line therapy for fungemia, specifically candidemia.[9] Oral or intravenous fluconazole is an acceptable alternative.[9] The lipid formulation amphotericin B is a reasonable alternative if there is limited antifungal availability, antifungal resistance, or antifungal intolerance.[9]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Statistics\". Invasive Candidiasis. United States: Centers for Disease Control and Prevention. 13 November 2019. Retrieved 24 December 2019.",
+                    "<info> ^ Clancy CJ, Nguyen MH (1 May 2013). \"Finding the \"Missing 50%\" of Invasive Candidiasis: How Nonculture Diagnostics Will Improve Understanding of Disease Spectrum and Transform Patient Care\". Clinical Infectious Diseases. 56 (9): 1284–1292. doi:10.1093/cid/cit006. PMID 23315320.",
+                    "<info> ^ Herbrecht R, Nivoix Y (2005). \"Saccharomyces cerevisiae fungemia: an adverse effect of Saccharomyces boulardii probiotic administration\". Clinical Infectious Diseases. 40 (11): 1635–7. doi:10.1086/429926. JSTOR 4484255. PMID 15889361.",
+                    "<info> ^ \"Clinical Alert to U.S. Healthcare Facilities – June 2016 | Candida auris | Fungal Diseases | CDC\". 24 January 2019.",
+                    "<info> ^ Giancola NB, Korson CJ, Caplan JP, McKnight CA (11 January 2021). \"A 'trip' to the ICU: intravenous injection of psilocybin\". Journal of the Academy of Consultation-Liaison Psychiatry. 62 (3): 370–371. doi:10.1016/j.jaclp.2020.12.012. PMID 34102133. S2CID 234167275.[unreliable source?]",
+                    "<info> ^ \"Psychedelic Mushrooms Grew in a Man's Veins After He Injected Them\". Gizmodo. 12 January 2021. Retrieved 26 January 2021.",
+                    "<info> ^ \"Man Injects Psilocybin Mushrooms and They Grow in His Veins | Mysterious Universe\". mysteriousuniverse.org. Retrieved 26 January 2021.",
+                    "<info> ^ \"UpToDate\". www.uptodate.com. Retrieved 20 May 2022.",
+                    "<info> ^ a b c d Pappas PG, Kauffman CA, Andes DR, Clancy CJ, Marr KA, Ostrosky-Zeichner L, Reboli AC, Schuster MG, Vazquez JA, Walsh TJ, Zaoutis TE, Sobel JD (2016). \"Executive Summary: Clinical Practice Guideline for the Management of Candidiasis: 2016 Update by the Infectious Diseases Society of America\". Clinical Infectious Diseases. 62 (4): 409–17. doi:10.1093/cid/civ1194. PMID 26810419.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Fungemia is the presence of fungi or yeast in the blood. The most common type, also known as candidemia, candedemia, or systemic candidiasis, is caused by Candida species. Candidemia is also among the most common bloodstream infections of any kind.[1] Infections by other fungi, including Saccharomyces, Aspergillus (as in aspergillemia, also called invasive aspergillosis) and Cryptococcus, are also called fungemia. It is most commonly seen in immunosuppressed or immunocompromised patients with severe neutropenia, cancer patients, or in patients with intravenous catheters. It has been suggested that otherwise immunocompetent patients taking infliximab may also be at a higher risk.",
+                            "Diagnosis is difficult, as routine blood cultures have poor sensitivity.[2]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Symptoms can range from mild to extreme—often described as extreme flu-like symptoms. Many symptoms may be associated with fungemia, including pain, acute confusion, chronic fatigue, and infections. Skin infections can include persistent or non-healing wounds and lesions, sweating, itching, and unusual discharge or drainage.[citation needed]"
+                        ]
+                    },
+                    "Risk factors": {
+                        "content": [
+                            "<info> Use of broad-spectrum antibiotics",
+                            "<info> Active infection by fungi (see e.g. candidiasis)",
+                            "<info> Use of yeast probiotics[3]",
+                            "<info> High severity of illness"
+                        ]
+                    },
+                    "Pathogens": {
+                        "content": [
+                            "The most commonly known pathogen is Candida albicans, causing roughly 70% of fungemias, followed by Candida glabrata with 10%, Aspergillus with 1% and Saccharomyces as the fourth most common.[citation needed] However, the frequency of infection by C. glabrata, Saccharomyces boulardii, Candida tropicalis, C. krusei and C. parapsilosis is increasing, perhaps because significant use of fluconazole is common or due to increase in antibiotic use.[citation needed]",
+                            "Candida auris is an emerging multidrug-resistant (MDR) yeast that can cause invasive infections and is associated with high mortality. It was first described in 2009 after being isolated from external ear discharge of a patient in Japan. Since the 2009 report, C. auris infections, specifically fungemia, have been reported from South Korea, India, South Africa, and Kuwait. Although published reports are not available, C. auris has also been identified in Colombia, Venezuela, Pakistan, and the United Kingdom.[4]",
+                            "In a single reported instance, Psilocybe cubensis was reported to have been cultured from a case of fungemia in which an individual self-injected an underprocessed decoction of fungal matter.[5] The patient, who had been experiencing depression, attempted to self-medicate with the mushrooms but was frustrated by the lag time between eating the mushrooms and experiencing the psychedelic effects. In an attempt to bypass this, the patient boiled and filtered the mushrooms into a 'mushroom tea' which was then administered by injection. The patient had multiple organ failure, but this was successfully reversed and the infection treated with antifungal drugs.[6] Two other examples of fungemia as a result of injecting fungal matter in this way have been described in medical literature, both dating to 1985.[7]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "The gold standard for the diagnosis of invasive candidiasis and candidemia is a positive culture. Blood cultures should be obtained in all patients with suspected candidemia.[8]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Neutropenic vs non-neutropenic candidemia is treated differently.[9]",
+                            "An intravenous echinocandin such as anidulafungin, caspofungin or micafungin is recommended as first-line therapy for fungemia, specifically candidemia.[9] Oral or intravenous fluconazole is an acceptable alternative.[9] The lipid formulation amphotericin B is a reasonable alternative if there is limited antifungal availability, antifungal resistance, or antifungal intolerance.[9]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Statistics\". Invasive Candidiasis. United States: Centers for Disease Control and Prevention. 13 November 2019. Retrieved 24 December 2019.",
+                            "<info> ^ Clancy CJ, Nguyen MH (1 May 2013). \"Finding the \"Missing 50%\" of Invasive Candidiasis: How Nonculture Diagnostics Will Improve Understanding of Disease Spectrum and Transform Patient Care\". Clinical Infectious Diseases. 56 (9): 1284–1292. doi:10.1093/cid/cit006. PMID 23315320.",
+                            "<info> ^ Herbrecht R, Nivoix Y (2005). \"Saccharomyces cerevisiae fungemia: an adverse effect of Saccharomyces boulardii probiotic administration\". Clinical Infectious Diseases. 40 (11): 1635–7. doi:10.1086/429926. JSTOR 4484255. PMID 15889361.",
+                            "<info> ^ \"Clinical Alert to U.S. Healthcare Facilities – June 2016 | Candida auris | Fungal Diseases | CDC\". 24 January 2019.",
+                            "<info> ^ Giancola NB, Korson CJ, Caplan JP, McKnight CA (11 January 2021). \"A 'trip' to the ICU: intravenous injection of psilocybin\". Journal of the Academy of Consultation-Liaison Psychiatry. 62 (3): 370–371. doi:10.1016/j.jaclp.2020.12.012. PMID 34102133. S2CID 234167275.[unreliable source?]",
+                            "<info> ^ \"Psychedelic Mushrooms Grew in a Man's Veins After He Injected Them\". Gizmodo. 12 January 2021. Retrieved 26 January 2021.",
+                            "<info> ^ \"Man Injects Psilocybin Mushrooms and They Grow in His Veins | Mysterious Universe\". mysteriousuniverse.org. Retrieved 26 January 2021.",
+                            "<info> ^ \"UpToDate\". www.uptodate.com. Retrieved 20 May 2022.",
+                            "<info> ^ a b c d Pappas PG, Kauffman CA, Andes DR, Clancy CJ, Marr KA, Ostrosky-Zeichner L, Reboli AC, Schuster MG, Vazquez JA, Walsh TJ, Zaoutis TE, Sobel JD (2016). \"Executive Summary: Clinical Practice Guideline for the Management of Candidiasis: 2016 Update by the Infectious Diseases Society of America\". Clinical Infectious Diseases. 62 (4): 409–17. doi:10.1093/cid/civ1194. PMID 26810419."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

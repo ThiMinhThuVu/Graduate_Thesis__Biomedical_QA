@@ -1,0 +1,81 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/slow_virus": {
+                "title": "Slow virus",
+                "url": "https://en.wikipedia.org/wiki/slow_virus",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A slow virus is a virus, or a viruslike agent, etiologically associated with a slow virus disease. A slow virus disease is a disease that, after an extended period of latency, follows a slow, progressive course spanning months to years, frequently involves the central nervous system, and in most cases progresses to death. Examples of slow virus diseases include HIV/AIDS, caused by the HIV virus,[1] subacute sclerosing panencephalitis, the rare result of a measles virus infection,[2] and Paget's disease of bone (osteitis deformans), which may be associated with paramyxoviruses, especially the measles virus and the human respiratory syncytial virus.[3]",
+                    "",
+                    "=== Characteristics ===",
+                    "Every infectious agent is different, but in general, slow viruses:[4]",
+                    "<info> Cause an asymptomatic primary infection",
+                    "<info> Have a long incubation period ranging from months to years",
+                    "<info> Follow a slow but relentless progressive course leading to death",
+                    "<info> Tend to have a genetic predisposition",
+                    "<info> Often re-emerge from latency if the host becomes immuno-compromised",
+                    "Additionally, the immune system seems to plays a limited role, or no role, in protection from many of these slow viruses. This may be due to the slow replication rates some of these agents exhibit,[5] preexisting immunosuppression (as in the cases of JC virus and BK virus),[6] or, in the case of prions, the identity of the agent involved.[7]",
+                    "",
+                    "=== Scope ===",
+                    "Slow viruses cause a variety of diseases, including cancer.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"About HIV/AIDS | HIV Basics | HIV/AIDS\". U.S. Centers for Disease Control and Prevention. 2019-02-28. Retrieved 2019-03-05.",
+                    "<info> ^ \"Subacute Sclerosing Panencephalitis\". PubMed Health. National Center for Biotechnology Information, U.S. National Library of Medicine. Archived from the original on 25 February 2014. Retrieved 10 February 2012.",
+                    "<info> ^ Roodman GD, Windle JJ (February 2005). \"Paget disease of bone\". The Journal of Clinical Investigation. 115 (2): 200–208. doi:10.1172/JCI24281. PMC 546434. PMID 15690073.",
+                    "<info> ^ Levinson W, Chin-Hong P, Joyce EA, Nussbaum J, Schwartz B, eds. (2020). \"Slow Viruses & Prions.\". Medical Microbiology & Immunology: A Guide to Clinical Infectious Diseases (16th ed.). McGraw Hill.",
+                    "<info> ^ Bocharov G, Ludewig B, Bertoletti A, Klenerman P, Junt T, Krebs P, et al. (March 2004). \"Underwhelming the immune response: effect of slow virus growth on CD8+-T-lymphocyte responses\". Journal of Virology. 78 (5): 2247–2254. doi:10.1128/jvi.78.5.2247-2254.2004. PMC 369240. PMID 14963121.",
+                    "<info> ^ a b c Pinto M, Dobson S (January 2014). \"BK and JC virus: a review\". The Journal of Infection. 68 (Suppl 1): S2–S8. doi:10.1016/j.jinf.2013.09.009. PMID 24119828.",
+                    "<info> ^ Bradford BM, Mabbott NA (December 2012). \"Prion disease and the innate immune system\". Viruses. 4 (12): 3389–3419. doi:10.3390/v4123389. PMC 3528271. PMID 23342365.",
+                    "<info> ^ Haridy R (2022-02-25). \"The new science linking cancer, schizophrenia and MS to viral infections\". New Atlas. Retrieved 2022-02-28.",
+                    "<info> ^ Garg RK (February 2002). \"Subacute sclerosing panencephalitis\". Postgraduate Medical Journal. 78 (916): 63–70. doi:10.1136/pmj.78.916.63. PMC 1742261. PMID 11807185.",
+                    "<info> ^ Kuroda Y, Matsui M (April 1997). \"[Progressive rubella panencephalitis]\". Nihon Rinsho. Japanese Journal of Clinical Medicine (in Japanese). 55 (4): 922–925. PMID 9103895.",
+                    "<info> ^ Hemachudha T, Ugolini G, Wacharapluesadee S, Sungkarat W, Shuangshoti S, Laothamatas J (May 2013). \"Human rabies: neuropathogenesis, diagnosis, and management\". The Lancet. Neurology. 12 (5): 498–513. doi:10.1016/S1474-4422(13)70038-3. PMID 23602163. S2CID 1798889.",
+                    "<info> ^ Soong TR, Milner Jr DA (2015). \"Human Papillomavirus Infection\". In Milner Jr DA, Pecora N, Solomon I, Soong TR (eds.). Diagnostic Pathology: Infectious Diseases. Elsevier Health Sciences. p. 40. ISBN 978-0-323-40037-4. Archived from the original on 11 September 2017.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A slow virus is a virus, or a viruslike agent, etiologically associated with a slow virus disease. A slow virus disease is a disease that, after an extended period of latency, follows a slow, progressive course spanning months to years, frequently involves the central nervous system, and in most cases progresses to death. Examples of slow virus diseases include HIV/AIDS, caused by the HIV virus,[1] subacute sclerosing panencephalitis, the rare result of a measles virus infection,[2] and Paget's disease of bone (osteitis deformans), which may be associated with paramyxoviruses, especially the measles virus and the human respiratory syncytial virus.[3]"
+                        ]
+                    },
+                    "Characteristics": {
+                        "content": [
+                            "Every infectious agent is different, but in general, slow viruses:[4]",
+                            "<info> Cause an asymptomatic primary infection",
+                            "<info> Have a long incubation period ranging from months to years",
+                            "<info> Follow a slow but relentless progressive course leading to death",
+                            "<info> Tend to have a genetic predisposition",
+                            "<info> Often re-emerge from latency if the host becomes immuno-compromised",
+                            "Additionally, the immune system seems to plays a limited role, or no role, in protection from many of these slow viruses. This may be due to the slow replication rates some of these agents exhibit,[5] preexisting immunosuppression (as in the cases of JC virus and BK virus),[6] or, in the case of prions, the identity of the agent involved.[7]"
+                        ]
+                    },
+                    "Scope": {
+                        "content": [
+                            "Slow viruses cause a variety of diseases, including cancer."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"About HIV/AIDS | HIV Basics | HIV/AIDS\". U.S. Centers for Disease Control and Prevention. 2019-02-28. Retrieved 2019-03-05.",
+                            "<info> ^ \"Subacute Sclerosing Panencephalitis\". PubMed Health. National Center for Biotechnology Information, U.S. National Library of Medicine. Archived from the original on 25 February 2014. Retrieved 10 February 2012.",
+                            "<info> ^ Roodman GD, Windle JJ (February 2005). \"Paget disease of bone\". The Journal of Clinical Investigation. 115 (2): 200–208. doi:10.1172/JCI24281. PMC 546434. PMID 15690073.",
+                            "<info> ^ Levinson W, Chin-Hong P, Joyce EA, Nussbaum J, Schwartz B, eds. (2020). \"Slow Viruses & Prions.\". Medical Microbiology & Immunology: A Guide to Clinical Infectious Diseases (16th ed.). McGraw Hill.",
+                            "<info> ^ Bocharov G, Ludewig B, Bertoletti A, Klenerman P, Junt T, Krebs P, et al. (March 2004). \"Underwhelming the immune response: effect of slow virus growth on CD8+-T-lymphocyte responses\". Journal of Virology. 78 (5): 2247–2254. doi:10.1128/jvi.78.5.2247-2254.2004. PMC 369240. PMID 14963121.",
+                            "<info> ^ a b c Pinto M, Dobson S (January 2014). \"BK and JC virus: a review\". The Journal of Infection. 68 (Suppl 1): S2–S8. doi:10.1016/j.jinf.2013.09.009. PMID 24119828.",
+                            "<info> ^ Bradford BM, Mabbott NA (December 2012). \"Prion disease and the innate immune system\". Viruses. 4 (12): 3389–3419. doi:10.3390/v4123389. PMC 3528271. PMID 23342365.",
+                            "<info> ^ Haridy R (2022-02-25). \"The new science linking cancer, schizophrenia and MS to viral infections\". New Atlas. Retrieved 2022-02-28.",
+                            "<info> ^ Garg RK (February 2002). \"Subacute sclerosing panencephalitis\". Postgraduate Medical Journal. 78 (916): 63–70. doi:10.1136/pmj.78.916.63. PMC 1742261. PMID 11807185.",
+                            "<info> ^ Kuroda Y, Matsui M (April 1997). \"[Progressive rubella panencephalitis]\". Nihon Rinsho. Japanese Journal of Clinical Medicine (in Japanese). 55 (4): 922–925. PMID 9103895.",
+                            "<info> ^ Hemachudha T, Ugolini G, Wacharapluesadee S, Sungkarat W, Shuangshoti S, Laothamatas J (May 2013). \"Human rabies: neuropathogenesis, diagnosis, and management\". The Lancet. Neurology. 12 (5): 498–513. doi:10.1016/S1474-4422(13)70038-3. PMID 23602163. S2CID 1798889.",
+                            "<info> ^ Soong TR, Milner Jr DA (2015). \"Human Papillomavirus Infection\". In Milner Jr DA, Pecora N, Solomon I, Soong TR (eds.). Diagnostic Pathology: Infectious Diseases. Elsevier Health Sciences. p. 40. ISBN 978-0-323-40037-4. Archived from the original on 11 September 2017."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

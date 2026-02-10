@@ -1,0 +1,137 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/proteins_produced_and_secreted_by_the_liver": {
+                "title": "Proteins produced and secreted by the liver",
+                "url": "https://en.wikipedia.org/wiki/proteins_produced_and_secreted_by_the_liver",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The liver plays the major role in producing proteins that are secreted into the blood, including major plasma proteins, factors in hemostasis and fibrinolysis, carrier proteins, hormones, prohormones and apolipoprotein:",
+                    "",
+                    "=== Major plasma proteins ===",
+                    "All plasma proteins except Gamma-globulins are synthesised in the liver.[1]",
+                    "<info> Human serum albumin, osmolyte and carrier protein",
+                    "<info> α-fetoprotein, the fetal counterpart of serum albumin",
+                    "<info> Soluble plasma fibronectin, forming a blood clot that stops bleeding",
+                    "<info> C-reactive protein, opsonin on microbes,[2] acute phase protein",
+                    "",
+                    "=== Factors in hemostasis and fibrinolysis ===",
+                    "<info> Stimulators of coagulation:\nAll factors in the coagulation cascade.[3]\nWhile the endothelium does produce some factor VIII, the majority of factor VIII is produced in the liver.[4]",
+                    "<info> Inhibitors of coagulation: Inactivate an enormous variety of proteinases\nα2-macroglobulin\nα1-antitrypsin\nAntithrombin III\nProtein S\nProtein C",
+                    "<info> Fibrinolysis: Breakdown of fibrin clots\nPlasminogen",
+                    "<info> Inhibitors of fibrinolysis\nα2-antiplasmin",
+                    "<info> Complement components C1-9, complement component 3 (C3)",
+                    "<info> All factors in the coagulation cascade.[3]",
+                    "<info> While the endothelium does produce some factor VIII, the majority of factor VIII is produced in the liver.[4]",
+                    "",
+                    "=== Carrier proteins ===",
+                    "<info> Albumin, carries thyroid hormones and other hormones, particularly fat soluble ones,  fatty acids to the liver, unconjugated bilirubin, many drugs and Ca2+",
+                    "<info> Transcortin, carries cortisol, aldosterone and progesterone",
+                    "<info> Haptoglobin, carries free hemoglobin released from erythrocytes",
+                    "<info> Hemopexin, carries free heme released from hemoglobin",
+                    "<info> IGF binding protein, carries insulin-like growth factor 1",
+                    "<info> Major urinary proteins, carries pheromones in rodents",
+                    "<info> Retinol binding protein, carries retinol",
+                    "<info> Sex hormone-binding globulin, carries sex hormones, specifically testosterone and estradiol",
+                    "<info> Thyroxine-binding globulin, carries the thyroid hormones thyroxine (T4) and 3,5,3’-triiodothyronine (T3)",
+                    "<info> Transthyretin, carries the thyroid hormone thyroxine (T4)",
+                    "<info> Transferrin, carries iron ions in the ferric form (Fe3+)",
+                    "<info> Vitamin D-binding protein, carries vitamin D",
+                    "",
+                    "=== Hormones ===",
+                    "<info> FGF21, a protein hormone that induces mitochondrial oxidation of fatty acids, hepatic gluconeogenesis, and ketogenesis in response to fasting.",
+                    "<info> Hepcidin, a peptide hormone that regulates iron homeostasis.",
+                    "<info> Insulin-like growth factor 1, a polypeptide protein hormone which plays an important role in childhood growth and continues to have anabolic effects in adults",
+                    "<info> Thrombopoietin, a glycoprotein hormone that regulates the production of platelets by the bone marrow",
+                    "",
+                    "=== Prohormones ===",
+                    "<info> Angiotensinogen, when converted to angiotensin causes vasoconstriction and release of aldosterone, in effect increasing blood pressure",
+                    "",
+                    "=== Apolipoproteins ===",
+                    "<info> Almost all apolipoprotein, except apo B48 (produced by intestine)",
+                    "",
+                    "=== References ===",
+                    "General reference for the list of included substances (but not their functions):",
+                    "<info> Table 45–4 in: Walter F., PhD. Boron (2003). Medical Physiology: A Cellular And Molecular Approach. Elsevier/Saunders. p. 1300. ISBN 1-4160-2328-3.",
+                    "<info> ^ Miller, L. L.; Bale, W. F. (February 1954). \"Synthesis of all plasma protein fractions except gamma globulins by the liver; the use of zone electrophoresis and lysine-epsilon-C14 to define the plasma proteins synthesized by the isolated perfused liver\". The Journal of Experimental Medicine. 99 (2): 125–132. doi:10.1084/jem.99.2.125. ISSN 0022-1007. PMC 2180344. PMID 13130789.",
+                    "<info> ^ Lippincott's Illustrated Reviews: Immunology. Paperback: 384 pages. Publisher: Lippincott Williams & Wilkins; (July 1, 2007). Language: English. ISBN 978-0-7817-9543-2. Page 182",
+                    "<info> ^ BRS Pathology 5th Edition, pg. 196",
+                    "<info> ^ Robbins Basic Pathology 9th Edition, Chapter 11",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The liver plays the major role in producing proteins that are secreted into the blood, including major plasma proteins, factors in hemostasis and fibrinolysis, carrier proteins, hormones, prohormones and apolipoprotein:"
+                        ]
+                    },
+                    "Major plasma proteins": {
+                        "content": [
+                            "All plasma proteins except Gamma-globulins are synthesised in the liver.[1]",
+                            "<info> Human serum albumin, osmolyte and carrier protein",
+                            "<info> α-fetoprotein, the fetal counterpart of serum albumin",
+                            "<info> Soluble plasma fibronectin, forming a blood clot that stops bleeding",
+                            "<info> C-reactive protein, opsonin on microbes,[2] acute phase protein"
+                        ]
+                    },
+                    "Factors in hemostasis and fibrinolysis": {
+                        "content": [
+                            "<info> Stimulators of coagulation:\nAll factors in the coagulation cascade.[3]\nWhile the endothelium does produce some factor VIII, the majority of factor VIII is produced in the liver.[4]",
+                            "<info> Inhibitors of coagulation: Inactivate an enormous variety of proteinases\nα2-macroglobulin\nα1-antitrypsin\nAntithrombin III\nProtein S\nProtein C",
+                            "<info> Fibrinolysis: Breakdown of fibrin clots\nPlasminogen",
+                            "<info> Inhibitors of fibrinolysis\nα2-antiplasmin",
+                            "<info> Complement components C1-9, complement component 3 (C3)",
+                            "<info> All factors in the coagulation cascade.[3]",
+                            "<info> While the endothelium does produce some factor VIII, the majority of factor VIII is produced in the liver.[4]"
+                        ]
+                    },
+                    "Carrier proteins": {
+                        "content": [
+                            "<info> Albumin, carries thyroid hormones and other hormones, particularly fat soluble ones,  fatty acids to the liver, unconjugated bilirubin, many drugs and Ca2+",
+                            "<info> Transcortin, carries cortisol, aldosterone and progesterone",
+                            "<info> Haptoglobin, carries free hemoglobin released from erythrocytes",
+                            "<info> Hemopexin, carries free heme released from hemoglobin",
+                            "<info> IGF binding protein, carries insulin-like growth factor 1",
+                            "<info> Major urinary proteins, carries pheromones in rodents",
+                            "<info> Retinol binding protein, carries retinol",
+                            "<info> Sex hormone-binding globulin, carries sex hormones, specifically testosterone and estradiol",
+                            "<info> Thyroxine-binding globulin, carries the thyroid hormones thyroxine (T4) and 3,5,3’-triiodothyronine (T3)",
+                            "<info> Transthyretin, carries the thyroid hormone thyroxine (T4)",
+                            "<info> Transferrin, carries iron ions in the ferric form (Fe3+)",
+                            "<info> Vitamin D-binding protein, carries vitamin D"
+                        ]
+                    },
+                    "Hormones": {
+                        "content": [
+                            "<info> FGF21, a protein hormone that induces mitochondrial oxidation of fatty acids, hepatic gluconeogenesis, and ketogenesis in response to fasting.",
+                            "<info> Hepcidin, a peptide hormone that regulates iron homeostasis.",
+                            "<info> Insulin-like growth factor 1, a polypeptide protein hormone which plays an important role in childhood growth and continues to have anabolic effects in adults",
+                            "<info> Thrombopoietin, a glycoprotein hormone that regulates the production of platelets by the bone marrow"
+                        ]
+                    },
+                    "Prohormones": {
+                        "content": [
+                            "<info> Angiotensinogen, when converted to angiotensin causes vasoconstriction and release of aldosterone, in effect increasing blood pressure"
+                        ]
+                    },
+                    "Apolipoproteins": {
+                        "content": [
+                            "<info> Almost all apolipoprotein, except apo B48 (produced by intestine)"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "General reference for the list of included substances (but not their functions):",
+                            "<info> Table 45–4 in: Walter F., PhD. Boron (2003). Medical Physiology: A Cellular And Molecular Approach. Elsevier/Saunders. p. 1300. ISBN 1-4160-2328-3.",
+                            "<info> ^ Miller, L. L.; Bale, W. F. (February 1954). \"Synthesis of all plasma protein fractions except gamma globulins by the liver; the use of zone electrophoresis and lysine-epsilon-C14 to define the plasma proteins synthesized by the isolated perfused liver\". The Journal of Experimental Medicine. 99 (2): 125–132. doi:10.1084/jem.99.2.125. ISSN 0022-1007. PMC 2180344. PMID 13130789.",
+                            "<info> ^ Lippincott's Illustrated Reviews: Immunology. Paperback: 384 pages. Publisher: Lippincott Williams & Wilkins; (July 1, 2007). Language: English. ISBN 978-0-7817-9543-2. Page 182",
+                            "<info> ^ BRS Pathology 5th Edition, pg. 196",
+                            "<info> ^ Robbins Basic Pathology 9th Edition, Chapter 11"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

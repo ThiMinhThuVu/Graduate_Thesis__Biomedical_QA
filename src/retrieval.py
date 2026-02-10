@@ -640,19 +640,22 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
         print("Retrieval_path: ", cache_filepath_retrieval)
         results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval, max_results=max_results_gg)            
         snippet_gg = format_search_results(results_gg_search, topk=retrieval_topk['google'], search_type='GG') 
-        retrieval_information += snippet_gg + "\n\n"
-        all_snippet += snippet_gg + "\n"
+        if snippet_gg != "":
+            retrieval_information += snippet_gg + "\n\n"
+            all_snippet += snippet_gg + "\n"
     
     if settings['get_wiki'] or settings['get_abs_wiki']:
         results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
     
         if settings['get_wiki']:
             snippet_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki'], search_type='WIKI') 
-            retrieval_information += snippet_wiki + "\n\n"
-            all_snippet += snippet_wiki + "\n"
+            if snippet_wiki != "":
+                retrieval_information += snippet_wiki + "\n\n"
+                all_snippet += snippet_wiki + "\n"
         elif settings['get_abs_wiki']:
             abs_wiki = format_results_wiki_abs(results_wiki_search, hash_id_crawl_wiki_cache, settings, topk=retrieval_topk['wiki_abs'])
-            retrieval_information += abs_wiki + "\n\n"
+            if abs_wiki != "":
+                retrieval_information += abs_wiki + "\n\n"
 
         if settings['get_crawl_wiki']:
             crawl_wiki_context = crawl_wiki_page_general(
@@ -673,7 +676,8 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
                 max_token=retrieval_topk['crawl_max_token'],
             )
             
-            retrieval_information += crawl_wiki_context + "\n"
+            if crawl_wiki_context != "":
+                retrieval_information += crawl_wiki_context + "\n"
 
     if settings['get_ner_wiki']:
         cache_entity = load_json(settings['cache']['hash_id']['crawl_ner'])
@@ -705,7 +709,8 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
             get_ner=True
         )
         
-        retrieval_information += crawl_ner_wiki + "\n"
+        if crawl_ner_wiki != "":
+            retrieval_information += crawl_ner_wiki + "\n"
             
 
     if settings["get_sparql_context"]: # DÙng ner -> dùng cùng hash id entity2wiki với ner wiki
@@ -766,8 +771,8 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
             for ent in top_entities:
                 if ent["context"] and ent["context"].strip():
                     sparql_context += f"\n{ent['key_entity']}: {ent['context']}"
-            
-        retrieval_information += f"- Reference [SPARQL]: {sparql_context}"
+        if sparql_context != "":
+            retrieval_information += f"- Reference [SPARQL]: {sparql_context}"
         
     return all_snippet, retrieval_information
 

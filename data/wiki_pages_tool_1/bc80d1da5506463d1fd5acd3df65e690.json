@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/hemiptera": {
+                "title": "Hemiptera",
+                "url": "https://en.wikipedia.org/wiki/hemiptera",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

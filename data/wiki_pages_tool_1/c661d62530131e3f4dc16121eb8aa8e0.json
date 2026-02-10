@@ -1,0 +1,167 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/xpb": {
+                "title": "XPB",
+                "url": "https://en.wikipedia.org/wiki/xpb",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "XPB (xeroderma pigmentosum type B) is an ATP-dependent DNA helicase in humans that is a part of the TFIIH transcription factor complex.",
+                    "",
+                    "=== Structure ===",
+                    "The 3D-structure of the archaeal homolog of XPB has been solved by X-ray crystallography by Dr. John Tainer and his group at The Scripps Research Institute.[5]",
+                    "",
+                    "=== Function ===",
+                    "XPB plays a significant role in normal basal transcription, transcription coupled repair (TCR), and nucleotide excision repair (NER). Purified XPB has been shown to unwind DNA with 3’-5’ polarity.",
+                    "The function of the XPB(ERCC3) protein in NER is to assist in unwinding the DNA double helix after damage is initially recognized.  NER is a multi-step pathway that removes a wide range of different DNA damages that distort normal base pairing.  Such damages include bulky chemical adducts, UV-induced pyrimidine dimers, and several forms of oxidative damage.  Mutations in the XPB(ERCC3) gene can lead, in humans, to xeroderma pigmentosum (XP) or XP combined with Cockayne syndrome (XPCS).[6]  Mutant XPB cells from individuals with the XPCS phenotype are sensitive to UV irradiation and acute oxidative stress.[7]",
+                    "XPB helicase is also a component of the  p53-mediated programmed cell death (apoptosis) pathway.[8]",
+                    "",
+                    "=== Disorders ===",
+                    "Mutations in XPB and other related complementation groups, XPA-XPG, leads to a number of genetic disorders such as Xeroderma pigmentosum, Cockayne's syndrome, and trichothiodystrophy.",
+                    "",
+                    "=== Interactions ===",
+                    "XPB has been shown to interact with:",
+                    "",
+                    "=== Small molecule inhibitors ===",
+                    "Potent, bioactive natural products like triptolide that inhibit mammalian transcription via inhibition of the XPB subunit of the general transcription factor TFIIH has been recently reported as a glucose conjugate for targeting hypoxic cancer cells with increased glucose transporter expression.[19]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000163161 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000024382 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ Fan L, Arvai AS, Cooper PK, Iwai S, Hanaoka F, Tainer JA (April 2006). \"Conserved XPB Core Structure and Motifs for DNA Unwinding: Implications for Pathway Selection of Transcription or Excision Repair\". Molecular Cell. 22 (1): 27–37. doi:10.1016/j.molcel.2006.02.017. PMID 16600867.",
+                    "<info> ^ Oh KS, Khan SG, Jaspers NG, Raams A, Ueda T, Lehmann A, Friedmann PS, Emmert S, Gratchev A, Lachlan K, Lucassan A, Baker CC, Kraemer KH (2006). \"Phenotypic heterogeneity in the XPB DNA helicase gene (ERCC3): xeroderma pigmentosum without and with Cockayne syndrome\". Hum. Mutat. 27 (11): 1092–103. doi:10.1002/humu.20392. PMID 16947863. S2CID 22852219.",
+                    "<info> ^ Andressoo JO, Weeda G, de Wit J, Mitchell JR, Beems RB, van Steeg H, van der Horst GT, Hoeijmakers JH (2009). \"An Xpb mouse model for combined xeroderma pigmentosum and cockayne syndrome reveals progeroid features upon further attenuation of DNA repair\". Mol. Cell. Biol. 29 (5): 1276–90. doi:10.1128/MCB.01229-08. PMC 2643825. PMID 19114557.",
+                    "<info> ^ Wang XW, Vermeulen W, Coursen JD, Gibson M, Lupold SE, Forrester K, Xu G, Elmore L, Yeh H, Hoeijmakers JH, Harris CC (May 1996). \"The XPB and XPD DNA helicases are components of the p53-mediated apoptosis pathway\". Genes Dev. 10 (10): 1219–32. doi:10.1101/gad.10.10.1219. hdl:1765/3094. PMID 8675009.",
+                    "<info> ^ Takeda N, Shibuya M, Maru Y (January 1999). \"The BCR-ABL oncoprotein potentially interacts with the xeroderma pigmentosum group B protein\". Proc. Natl. Acad. Sci. U.S.A. 96 (1): 203–7. Bibcode:1999PNAS...96..203T. doi:10.1073/pnas.96.1.203. PMC 15117. PMID 9874796.",
+                    "<info> ^ a b c d e f Giglia-Mari G, Coin F, Ranish JA, Hoogstraten D, Theil A, Wijgers N, Jaspers NG, Raams A, Argentini M, van der Spek PJ, Botta E, Stefanini M, Egly JM, Aebersold R, Hoeijmakers JH, Vermeulen W (July 2004). \"A new, tenth subunit of TFIIH is responsible for the DNA repair syndrome trichothiodystrophy group A\". Nat. Genet. 36 (7): 714–9. doi:10.1038/ng1387. PMID 15220921.",
+                    "<info> ^ a b Rossignol M, Kolb-Cheynel I, Egly JM (April 1997). \"Substrate specificity of the cdk-activating kinase (CAK) is altered upon association with TFIIH\". EMBO J. 16 (7): 1628–37. doi:10.1093/emboj/16.7.1628. PMC 1169767. PMID 9130708.",
+                    "<info> ^ Yee A, Nichols MA, Wu L, Hall FL, Kobayashi R, Xiong Y (December 1995). \"Molecular cloning of CDK7-associated human MAT1, a cyclin-dependent kinase-activating kinase (CAK) assembly factor\". Cancer Res. 55 (24): 6058–62. PMID 8521393.",
+                    "<info> ^ a b c d Marinoni JC, Roy R, Vermeulen W, Miniou P, Lutz Y, Weeda G, Seroz T, Gomez DM, Hoeijmakers JH, Egly JM (March 1997). \"Cloning and characterization of p52, the fifth subunit of the core of the transcription/DNA repair factor TFIIH\". EMBO J. 16 (5): 1093–102. doi:10.1093/emboj/16.5.1093. PMC 1169708. PMID 9118947.",
+                    "<info> ^ Drapkin R, Reardon JT, Ansari A, Huang JC, Zawel L, Ahn K, Sancar A, Reinberg D (April 1994). \"Dual role of TFIIH in DNA excision repair and in transcription by RNA polymerase II\". Nature. 368 (6473): 769–72. Bibcode:1994Natur.368..769D. doi:10.1038/368769a0. PMID 8152490. S2CID 4363484.",
+                    "<info> ^ Iyer N, Reagan MS, Wu KJ, Canagarajah B, Friedberg EC (February 1996). \"Interactions involving the human RNA polymerase II transcription/nucleotide excision repair complex TFIIH, the nucleotide excision repair protein XPG, and Cockayne syndrome group B (CSB) protein\". Biochemistry. 35 (7): 2157–67. doi:10.1021/bi9524124. PMID 8652557.",
+                    "<info> ^ Wang XW, Yeh H, Schaeffer L, Roy R, Moncollin V, Egly JM, Wang Z, Freidberg EC, Evans MK, Taffe BG (June 1995). \"p53 modulation of TFIIH-associated nucleotide excision repair activity\". Nat. Genet. 10 (2): 188–95. doi:10.1038/ng0695-188. hdl:1765/54884. PMID 7663514. S2CID 38325851.",
+                    "<info> ^ Weeda G, Rossignol M, Fraser RA, Winkler GS, Vermeulen W, van 't Veer LJ, Ma L, Hoeijmakers JH, Egly JM (June 1997). \"The XPB subunit of repair/transcription factor TFIIH directly interacts with SUG1, a subunit of the 26S proteasome and putative transcription factor\". Nucleic Acids Res. 25 (12): 2274–83. doi:10.1093/nar/25.12.2274. PMC 146752. PMID 9173976.",
+                    "<info> ^ Yokoi M, Masutani C, Maekawa T, Sugasawa K, Ohkuma Y, Hanaoka F (March 2000). \"The xeroderma pigmentosum group C protein complex XPC-HR23B plays an important role in the recruitment of transcription factor IIH to damaged DNA\". J. Biol. Chem. 275 (13): 9870–5. doi:10.1074/jbc.275.13.9870. PMID 10734143.",
+                    "<info> ^ Datan E, Minn I, Peng X, He QL, Ahn H, Yu B, Pomper MG, Liu JO (2020). \"A Glucose-Triptolide Conjugate Selectively Targets Cancer Cells under Hypoxia\". iScience. 23 (9) 101536. Bibcode:2020iSci...23j1536D. doi:10.1016/j.isci.2020.101536. PMC 7509213. PMID 33083765.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Jeang KT (1998). \"Tat, Tat-associated kinase, and transcription\". J. Biomed. Sci. 5 (1): 24–7. doi:10.1007/BF02253352. PMID 9570510.",
+                    "<info> Yankulov K, Bentley D (1998). \"Transcriptional control: Tat cofactors and transcriptional elongation\". Curr. Biol. 8 (13): R447–9. Bibcode:1998CBio....8.R447Y. doi:10.1016/S0960-9822(98)70289-1. PMID 9651670. S2CID 15480646.",
+                    "<info> Cleaver JE, Thompson LH, Richardson AS, States JC (1999). \"A summary of mutations in the UV-sensitive disorders: xeroderma pigmentosum, Cockayne syndrome, and trichothiodystrophy\". Hum. Mutat. 14 (1): 9–22. doi:10.1002/(SICI)1098-1004(1999)14:1<9::AID-HUMU2>3.0.CO;2-6. PMID 10447254. S2CID 24148589.",
+                    "<info> Ma L, Weeda G, Jochemsen AG, Bootsma D, Hoeijmakers JH, van der Eb AJ (1992). \"Molecular and functional analysis of the XPBC/ERCC-3 promoter: transcription activity is dependent on the integrity of an Sp1-binding site\". Nucleic Acids Res. 20 (2): 217–24. doi:10.1093/nar/20.2.217. PMC 310357. PMID 1741247.",
+                    "<info> Weeda G, Wiegant J, van der Ploeg M, Geurts van Kessel AH, van der Eb AJ, Hoeijmakers JH (1991). \"Localization of the xeroderma pigmentosum group B-correcting gene ERCC3 to human chromosome 2q21\". Genomics. 10 (4): 1035–1040. doi:10.1016/0888-7543(91)90195-K. hdl:1765/3025. PMID 1916809.",
+                    "<info> Weeda G, Ma LB, van Ham RC, van der Eb AJ, Hoeijmakers JH (1991). \"Structure and expression of the human XPBC/ERCC-3 gene involved in DNA repair disorders xeroderma pigmentosum and Cockayne's syndrome\". Nucleic Acids Res. 19 (22): 6301–6308. doi:10.1093/nar/19.22.6301. PMC 329143. PMID 1956789.",
+                    "<info> Weeda G, van Ham RC, Masurel R, Westerveld A, Odijk H, de Wit J, Bootsma D, van der Eb AJ, Hoeijmakers JH (1990). \"Molecular cloning and biological characterization of the human excision repair gene ERCC-3\". Mol. Cell. Biol. 10 (6): 2570–2581. doi:10.1128/MCB.10.6.2570. PMC 360615. PMID 2111438.",
+                    "<info> Weeda G, van Ham RC, Vermeulen W, Bootsma D, van der Eb AJ, Hoeijmakers JH (1990). \"A presumed DNA helicase encoded by ERCC-3 is involved in the human repair disorders xeroderma pigmentosum and Cockayne's syndrome\". Cell. 62 (4): 777–91. doi:10.1016/0092-8674(90)90122-U. hdl:1765/3020. PMID 2167179. S2CID 31743602.",
+                    "<info> Wang XW, Yeh H, Schaeffer L, Roy R, Moncollin V, Egly JM, Wang Z, Freidberg EC, Evans MK, Taffe BG (1995). \"p53 modulation of TFIIH-associated nucleotide excision repair activity\". Nat. Genet. 10 (2): 188–95. doi:10.1038/ng0695-188. hdl:1765/54884. PMID 7663514. S2CID 38325851.",
+                    "<info> Maxon ME, Goodrich JA, Tjian R (1994). \"Transcription factor IIE binds preferentially to RNA polymerase IIa and recruits TFIIH: a model for promoter clearance\". Genes Dev. 8 (5): 515–24. doi:10.1101/gad.8.5.515. PMID 7926747.",
+                    "<info> Maruyama K, Sugano S (1994). \"Oligo-capping: a simple method to replace the cap structure of eukaryotic mRNAs with oligoribonucleotides\". Gene. 138 (1–2): 171–4. doi:10.1016/0378-1119(94)90802-8. PMID 8125298.",
+                    "<info> Drapkin R, Reardon JT, Ansari A, Huang JC, Zawel L, Ahn K, Sancar A, Reinberg D (1994). \"Dual role of TFIIH in DNA excision repair and in transcription by RNA polymerase II\". Nature. 368 (6473): 769–72. Bibcode:1994Natur.368..769D. doi:10.1038/368769a0. PMID 8152490. S2CID 4363484.",
+                    "<info> van Vuuren AJ, Vermeulen W, Ma L, Weeda G, Appeldoorn E, Jaspers NG, van der Eb AJ, Bootsma D, Hoeijmakers JH, Humbert S (1994). \"Correction of xeroderma pigmentosum repair defect by basal transcription factor BTF2 (TFIIH)\". EMBO J. 13 (7): 1645–1653. doi:10.1002/j.1460-2075.1994.tb06428.x. PMC 394995. PMID 8157004.",
+                    "<info> Schaeffer L, Moncollin V, Roy R, Staub A, Mezzina M, Sarasin A, Weeda G, Hoeijmakers JH, Egly JM (1994). \"The ERCC2/DNA repair protein is associated with the class II BTF2/TFIIH transcription factor\". EMBO J. 13 (10): 2388–2392. doi:10.1002/j.1460-2075.1994.tb06522.x. PMC 395103. PMID 8194528.",
+                    "<info> Guzder SN, Sung P, Bailly V, Prakash L, Prakash S (1994). \"RAD25 is a DNA helicase required for DNA repair and RNA polymerase II transcription\". Nature. 369 (6481): 578–81. Bibcode:1994Natur.369..578G. doi:10.1038/369578a0. PMID 8202161. S2CID 4332757.",
+                    "<info> Vermeulen W, Scott RJ, Rodgers S, Müller HJ, Cole J, Arlett CF, Kleijer WJ, Bootsma D, Hoeijmakers JH, Weeda G (1994). \"Clinical heterogeneity within xeroderma pigmentosum associated with mutations in the DNA repair and transcription gene ERCC3\". Am. J. Hum. Genet. 54 (2): 191–200. PMC 1918172. PMID 8304337.",
+                    "<info> Scott RJ, Itin P, Kleijer WJ, Kolb K, Arlett C, Muller H (1993). \"Xeroderma pigmentosum-Cockayne syndrome complex in two patients: absence of skin tumors despite severe deficiency of DNA excision repair\". J. Am. Acad. Dermatol. 29 (5 Pt 2): 883–9. doi:10.1016/0190-9622(93)70263-S. PMID 8408834.",
+                    "<info> Blau J, Xiao H, McCracken S, O'Hare P, Greenblatt J, Bentley D (1996). \"Three functional classes of transcriptional activation domain\". Mol. Cell. Biol. 16 (5): 2044–2055. doi:10.1128/MCB.16.5.2044. PMC 231191. PMID 8628270.",
+                    "<info> Iyer N, Reagan MS, Wu KJ, Canagarajah B, Friedberg EC (1996). \"Interactions involving the human RNA polymerase II transcription/nucleotide excision repair complex TFIIH, the nucleotide excision repair protein XPG, and Cockayne syndrome group B (CSB) protein\". Biochemistry. 35 (7): 2157–2167. doi:10.1021/bi9524124. PMID 8652557.",
+                    "<info> Hwang JR, Moncollin V, Vermeulen W, Seroz T, van Vuuren H, Hoeijmakers JH, Egly JM (1996). \"A 3' → 5' XPB helicase defect in repair/transcription factor TFIIH of xeroderma pigmentosum group B affects both DNA repair and transcription\". J. Biol. Chem. 271 (27): 15898–904. doi:10.1074/jbc.271.27.15898. hdl:1765/3098. PMID 8663148.",
+                    "",
+                    "=== External links ===",
+                    "<info> GeneReviews/NIH/NCBI/UW entry on Xeroderma Pigmentosum",
+                    "<info> XPBC-ERCC-3+protein at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "XPB (xeroderma pigmentosum type B) is an ATP-dependent DNA helicase in humans that is a part of the TFIIH transcription factor complex."
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "The 3D-structure of the archaeal homolog of XPB has been solved by X-ray crystallography by Dr. John Tainer and his group at The Scripps Research Institute.[5]"
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "XPB plays a significant role in normal basal transcription, transcription coupled repair (TCR), and nucleotide excision repair (NER). Purified XPB has been shown to unwind DNA with 3’-5’ polarity.",
+                            "The function of the XPB(ERCC3) protein in NER is to assist in unwinding the DNA double helix after damage is initially recognized.  NER is a multi-step pathway that removes a wide range of different DNA damages that distort normal base pairing.  Such damages include bulky chemical adducts, UV-induced pyrimidine dimers, and several forms of oxidative damage.  Mutations in the XPB(ERCC3) gene can lead, in humans, to xeroderma pigmentosum (XP) or XP combined with Cockayne syndrome (XPCS).[6]  Mutant XPB cells from individuals with the XPCS phenotype are sensitive to UV irradiation and acute oxidative stress.[7]",
+                            "XPB helicase is also a component of the  p53-mediated programmed cell death (apoptosis) pathway.[8]"
+                        ]
+                    },
+                    "Disorders": {
+                        "content": [
+                            "Mutations in XPB and other related complementation groups, XPA-XPG, leads to a number of genetic disorders such as Xeroderma pigmentosum, Cockayne's syndrome, and trichothiodystrophy."
+                        ]
+                    },
+                    "Interactions": {
+                        "content": [
+                            "XPB has been shown to interact with:"
+                        ]
+                    },
+                    "Small molecule inhibitors": {
+                        "content": [
+                            "Potent, bioactive natural products like triptolide that inhibit mammalian transcription via inhibition of the XPB subunit of the general transcription factor TFIIH has been recently reported as a glucose conjugate for targeting hypoxic cancer cells with increased glucose transporter expression.[19]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000163161 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000024382 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ Fan L, Arvai AS, Cooper PK, Iwai S, Hanaoka F, Tainer JA (April 2006). \"Conserved XPB Core Structure and Motifs for DNA Unwinding: Implications for Pathway Selection of Transcription or Excision Repair\". Molecular Cell. 22 (1): 27–37. doi:10.1016/j.molcel.2006.02.017. PMID 16600867.",
+                            "<info> ^ Oh KS, Khan SG, Jaspers NG, Raams A, Ueda T, Lehmann A, Friedmann PS, Emmert S, Gratchev A, Lachlan K, Lucassan A, Baker CC, Kraemer KH (2006). \"Phenotypic heterogeneity in the XPB DNA helicase gene (ERCC3): xeroderma pigmentosum without and with Cockayne syndrome\". Hum. Mutat. 27 (11): 1092–103. doi:10.1002/humu.20392. PMID 16947863. S2CID 22852219.",
+                            "<info> ^ Andressoo JO, Weeda G, de Wit J, Mitchell JR, Beems RB, van Steeg H, van der Horst GT, Hoeijmakers JH (2009). \"An Xpb mouse model for combined xeroderma pigmentosum and cockayne syndrome reveals progeroid features upon further attenuation of DNA repair\". Mol. Cell. Biol. 29 (5): 1276–90. doi:10.1128/MCB.01229-08. PMC 2643825. PMID 19114557.",
+                            "<info> ^ Wang XW, Vermeulen W, Coursen JD, Gibson M, Lupold SE, Forrester K, Xu G, Elmore L, Yeh H, Hoeijmakers JH, Harris CC (May 1996). \"The XPB and XPD DNA helicases are components of the p53-mediated apoptosis pathway\". Genes Dev. 10 (10): 1219–32. doi:10.1101/gad.10.10.1219. hdl:1765/3094. PMID 8675009.",
+                            "<info> ^ Takeda N, Shibuya M, Maru Y (January 1999). \"The BCR-ABL oncoprotein potentially interacts with the xeroderma pigmentosum group B protein\". Proc. Natl. Acad. Sci. U.S.A. 96 (1): 203–7. Bibcode:1999PNAS...96..203T. doi:10.1073/pnas.96.1.203. PMC 15117. PMID 9874796.",
+                            "<info> ^ a b c d e f Giglia-Mari G, Coin F, Ranish JA, Hoogstraten D, Theil A, Wijgers N, Jaspers NG, Raams A, Argentini M, van der Spek PJ, Botta E, Stefanini M, Egly JM, Aebersold R, Hoeijmakers JH, Vermeulen W (July 2004). \"A new, tenth subunit of TFIIH is responsible for the DNA repair syndrome trichothiodystrophy group A\". Nat. Genet. 36 (7): 714–9. doi:10.1038/ng1387. PMID 15220921.",
+                            "<info> ^ a b Rossignol M, Kolb-Cheynel I, Egly JM (April 1997). \"Substrate specificity of the cdk-activating kinase (CAK) is altered upon association with TFIIH\". EMBO J. 16 (7): 1628–37. doi:10.1093/emboj/16.7.1628. PMC 1169767. PMID 9130708.",
+                            "<info> ^ Yee A, Nichols MA, Wu L, Hall FL, Kobayashi R, Xiong Y (December 1995). \"Molecular cloning of CDK7-associated human MAT1, a cyclin-dependent kinase-activating kinase (CAK) assembly factor\". Cancer Res. 55 (24): 6058–62. PMID 8521393.",
+                            "<info> ^ a b c d Marinoni JC, Roy R, Vermeulen W, Miniou P, Lutz Y, Weeda G, Seroz T, Gomez DM, Hoeijmakers JH, Egly JM (March 1997). \"Cloning and characterization of p52, the fifth subunit of the core of the transcription/DNA repair factor TFIIH\". EMBO J. 16 (5): 1093–102. doi:10.1093/emboj/16.5.1093. PMC 1169708. PMID 9118947.",
+                            "<info> ^ Drapkin R, Reardon JT, Ansari A, Huang JC, Zawel L, Ahn K, Sancar A, Reinberg D (April 1994). \"Dual role of TFIIH in DNA excision repair and in transcription by RNA polymerase II\". Nature. 368 (6473): 769–72. Bibcode:1994Natur.368..769D. doi:10.1038/368769a0. PMID 8152490. S2CID 4363484.",
+                            "<info> ^ Iyer N, Reagan MS, Wu KJ, Canagarajah B, Friedberg EC (February 1996). \"Interactions involving the human RNA polymerase II transcription/nucleotide excision repair complex TFIIH, the nucleotide excision repair protein XPG, and Cockayne syndrome group B (CSB) protein\". Biochemistry. 35 (7): 2157–67. doi:10.1021/bi9524124. PMID 8652557.",
+                            "<info> ^ Wang XW, Yeh H, Schaeffer L, Roy R, Moncollin V, Egly JM, Wang Z, Freidberg EC, Evans MK, Taffe BG (June 1995). \"p53 modulation of TFIIH-associated nucleotide excision repair activity\". Nat. Genet. 10 (2): 188–95. doi:10.1038/ng0695-188. hdl:1765/54884. PMID 7663514. S2CID 38325851.",
+                            "<info> ^ Weeda G, Rossignol M, Fraser RA, Winkler GS, Vermeulen W, van 't Veer LJ, Ma L, Hoeijmakers JH, Egly JM (June 1997). \"The XPB subunit of repair/transcription factor TFIIH directly interacts with SUG1, a subunit of the 26S proteasome and putative transcription factor\". Nucleic Acids Res. 25 (12): 2274–83. doi:10.1093/nar/25.12.2274. PMC 146752. PMID 9173976.",
+                            "<info> ^ Yokoi M, Masutani C, Maekawa T, Sugasawa K, Ohkuma Y, Hanaoka F (March 2000). \"The xeroderma pigmentosum group C protein complex XPC-HR23B plays an important role in the recruitment of transcription factor IIH to damaged DNA\". J. Biol. Chem. 275 (13): 9870–5. doi:10.1074/jbc.275.13.9870. PMID 10734143.",
+                            "<info> ^ Datan E, Minn I, Peng X, He QL, Ahn H, Yu B, Pomper MG, Liu JO (2020). \"A Glucose-Triptolide Conjugate Selectively Targets Cancer Cells under Hypoxia\". iScience. 23 (9) 101536. Bibcode:2020iSci...23j1536D. doi:10.1016/j.isci.2020.101536. PMC 7509213. PMID 33083765."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Jeang KT (1998). \"Tat, Tat-associated kinase, and transcription\". J. Biomed. Sci. 5 (1): 24–7. doi:10.1007/BF02253352. PMID 9570510.",
+                            "<info> Yankulov K, Bentley D (1998). \"Transcriptional control: Tat cofactors and transcriptional elongation\". Curr. Biol. 8 (13): R447–9. Bibcode:1998CBio....8.R447Y. doi:10.1016/S0960-9822(98)70289-1. PMID 9651670. S2CID 15480646.",
+                            "<info> Cleaver JE, Thompson LH, Richardson AS, States JC (1999). \"A summary of mutations in the UV-sensitive disorders: xeroderma pigmentosum, Cockayne syndrome, and trichothiodystrophy\". Hum. Mutat. 14 (1): 9–22. doi:10.1002/(SICI)1098-1004(1999)14:1<9::AID-HUMU2>3.0.CO;2-6. PMID 10447254. S2CID 24148589.",
+                            "<info> Ma L, Weeda G, Jochemsen AG, Bootsma D, Hoeijmakers JH, van der Eb AJ (1992). \"Molecular and functional analysis of the XPBC/ERCC-3 promoter: transcription activity is dependent on the integrity of an Sp1-binding site\". Nucleic Acids Res. 20 (2): 217–24. doi:10.1093/nar/20.2.217. PMC 310357. PMID 1741247.",
+                            "<info> Weeda G, Wiegant J, van der Ploeg M, Geurts van Kessel AH, van der Eb AJ, Hoeijmakers JH (1991). \"Localization of the xeroderma pigmentosum group B-correcting gene ERCC3 to human chromosome 2q21\". Genomics. 10 (4): 1035–1040. doi:10.1016/0888-7543(91)90195-K. hdl:1765/3025. PMID 1916809.",
+                            "<info> Weeda G, Ma LB, van Ham RC, van der Eb AJ, Hoeijmakers JH (1991). \"Structure and expression of the human XPBC/ERCC-3 gene involved in DNA repair disorders xeroderma pigmentosum and Cockayne's syndrome\". Nucleic Acids Res. 19 (22): 6301–6308. doi:10.1093/nar/19.22.6301. PMC 329143. PMID 1956789.",
+                            "<info> Weeda G, van Ham RC, Masurel R, Westerveld A, Odijk H, de Wit J, Bootsma D, van der Eb AJ, Hoeijmakers JH (1990). \"Molecular cloning and biological characterization of the human excision repair gene ERCC-3\". Mol. Cell. Biol. 10 (6): 2570–2581. doi:10.1128/MCB.10.6.2570. PMC 360615. PMID 2111438.",
+                            "<info> Weeda G, van Ham RC, Vermeulen W, Bootsma D, van der Eb AJ, Hoeijmakers JH (1990). \"A presumed DNA helicase encoded by ERCC-3 is involved in the human repair disorders xeroderma pigmentosum and Cockayne's syndrome\". Cell. 62 (4): 777–91. doi:10.1016/0092-8674(90)90122-U. hdl:1765/3020. PMID 2167179. S2CID 31743602.",
+                            "<info> Wang XW, Yeh H, Schaeffer L, Roy R, Moncollin V, Egly JM, Wang Z, Freidberg EC, Evans MK, Taffe BG (1995). \"p53 modulation of TFIIH-associated nucleotide excision repair activity\". Nat. Genet. 10 (2): 188–95. doi:10.1038/ng0695-188. hdl:1765/54884. PMID 7663514. S2CID 38325851.",
+                            "<info> Maxon ME, Goodrich JA, Tjian R (1994). \"Transcription factor IIE binds preferentially to RNA polymerase IIa and recruits TFIIH: a model for promoter clearance\". Genes Dev. 8 (5): 515–24. doi:10.1101/gad.8.5.515. PMID 7926747.",
+                            "<info> Maruyama K, Sugano S (1994). \"Oligo-capping: a simple method to replace the cap structure of eukaryotic mRNAs with oligoribonucleotides\". Gene. 138 (1–2): 171–4. doi:10.1016/0378-1119(94)90802-8. PMID 8125298.",
+                            "<info> Drapkin R, Reardon JT, Ansari A, Huang JC, Zawel L, Ahn K, Sancar A, Reinberg D (1994). \"Dual role of TFIIH in DNA excision repair and in transcription by RNA polymerase II\". Nature. 368 (6473): 769–72. Bibcode:1994Natur.368..769D. doi:10.1038/368769a0. PMID 8152490. S2CID 4363484.",
+                            "<info> van Vuuren AJ, Vermeulen W, Ma L, Weeda G, Appeldoorn E, Jaspers NG, van der Eb AJ, Bootsma D, Hoeijmakers JH, Humbert S (1994). \"Correction of xeroderma pigmentosum repair defect by basal transcription factor BTF2 (TFIIH)\". EMBO J. 13 (7): 1645–1653. doi:10.1002/j.1460-2075.1994.tb06428.x. PMC 394995. PMID 8157004.",
+                            "<info> Schaeffer L, Moncollin V, Roy R, Staub A, Mezzina M, Sarasin A, Weeda G, Hoeijmakers JH, Egly JM (1994). \"The ERCC2/DNA repair protein is associated with the class II BTF2/TFIIH transcription factor\". EMBO J. 13 (10): 2388–2392. doi:10.1002/j.1460-2075.1994.tb06522.x. PMC 395103. PMID 8194528.",
+                            "<info> Guzder SN, Sung P, Bailly V, Prakash L, Prakash S (1994). \"RAD25 is a DNA helicase required for DNA repair and RNA polymerase II transcription\". Nature. 369 (6481): 578–81. Bibcode:1994Natur.369..578G. doi:10.1038/369578a0. PMID 8202161. S2CID 4332757.",
+                            "<info> Vermeulen W, Scott RJ, Rodgers S, Müller HJ, Cole J, Arlett CF, Kleijer WJ, Bootsma D, Hoeijmakers JH, Weeda G (1994). \"Clinical heterogeneity within xeroderma pigmentosum associated with mutations in the DNA repair and transcription gene ERCC3\". Am. J. Hum. Genet. 54 (2): 191–200. PMC 1918172. PMID 8304337.",
+                            "<info> Scott RJ, Itin P, Kleijer WJ, Kolb K, Arlett C, Muller H (1993). \"Xeroderma pigmentosum-Cockayne syndrome complex in two patients: absence of skin tumors despite severe deficiency of DNA excision repair\". J. Am. Acad. Dermatol. 29 (5 Pt 2): 883–9. doi:10.1016/0190-9622(93)70263-S. PMID 8408834.",
+                            "<info> Blau J, Xiao H, McCracken S, O'Hare P, Greenblatt J, Bentley D (1996). \"Three functional classes of transcriptional activation domain\". Mol. Cell. Biol. 16 (5): 2044–2055. doi:10.1128/MCB.16.5.2044. PMC 231191. PMID 8628270.",
+                            "<info> Iyer N, Reagan MS, Wu KJ, Canagarajah B, Friedberg EC (1996). \"Interactions involving the human RNA polymerase II transcription/nucleotide excision repair complex TFIIH, the nucleotide excision repair protein XPG, and Cockayne syndrome group B (CSB) protein\". Biochemistry. 35 (7): 2157–2167. doi:10.1021/bi9524124. PMID 8652557.",
+                            "<info> Hwang JR, Moncollin V, Vermeulen W, Seroz T, van Vuuren H, Hoeijmakers JH, Egly JM (1996). \"A 3' → 5' XPB helicase defect in repair/transcription factor TFIIH of xeroderma pigmentosum group B affects both DNA repair and transcription\". J. Biol. Chem. 271 (27): 15898–904. doi:10.1074/jbc.271.27.15898. hdl:1765/3098. PMID 8663148."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> GeneReviews/NIH/NCBI/UW entry on Xeroderma Pigmentosum",
+                            "<info> XPBC-ERCC-3+protein at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/enamelin": {
+                "title": "Enamelin",
+                "url": "https://en.wikipedia.org/wiki/enamelin",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Enamelin is an enamel matrix protein (EMPs), that in humans is encoded by the ENAM gene.[5][6] It is part of the non-amelogenins, which comprise 10% of the total enamel matrix proteins.[7] It is one of the key proteins thought to be involved in amelogenesis (enamel development). The formation of enamel's intricate architecture is thought to be rigorously controlled in ameloblasts through interactions of various organic matrix protein molecules that include: enamelin, amelogenin, ameloblastin, tuftelin, dentine sialophosphoprotein, and a variety of enzymes. Enamelin is the largest protein (~168kDa) in the enamel matrix of developing teeth and is the least abundant (encompasses approximately 1-5%) of total enamel matrix proteins.[6] It is present predominantly at the growing enamel surface.",
+                    "",
+                    "=== Structure ===",
+                    "Enamelin is thought to be the oldest member of the enamel matrix protein (EMP) family, with animal studies showing remarkable conservation of the gene phylogenetically.[8] All other EMPs are derived from enamelin, such as amelogenin.[9] EMPs belong to a larger family of proteins termed 'secretory calcium-binding phosphoproteins' (SCPP).[10]",
+                    "Similar to other enamel matrix proteins, enamelin undergoes extensive post-translational modifications (mainly phosphorylation), processing, and secretion by proteases. Enamelin has three putative phosphoserines (Ser54, Ser191, and Ser216 in humans) phosphorylated by a Golgi-associated secretory pathway kinase (FAM20C) based on their distinctive Ser-x-Glu (S-x-E) motifs.[11] The major secretory product of the ENAM gene has 1103 amino acids (post-secretion), and has an acidic isoelectric point ranging from 4.5–6.5 (depending on the fragment).[12]",
+                    "At the secretory stage, the enzyme matrix metalloproteinase-20 (MMP20) proteolytically cleaves the secreted enamelin protein immediately upon release, into several smaller polypeptides; each having their own functions. However, the whole protein (~168 kDa) and its largest derivative fragment (~89 kDa) are undetectable in the secretory stage; these are existent only at the mineralisation front.[7] Smaller polypeptide fragments remain embedded in the enamel, throughout the secretory stage enamel matrix. These strongly bind to the mineral and arrest seeded crystal growth.",
+                    "",
+                    "=== Function ===",
+                    "The primary function of the proteins acts at the mineralisation front; growth sites where it is the interface between the ameloblast plasma membrane and lengthening extremity of crystals. The key activities of enamelin can be summarised:",
+                    "<info> Necessary for the adhesion of ameloblasts to the surface of the enamel in the secretory stage[13]",
+                    "<info> Binds to hydroxyapatite and promotes crystallite elongation",
+                    "<info> Act as a modulator for de novo mineral formation[7]",
+                    "It is speculated that this protein could interact with amelogenin or other enamel matrix proteins and be important in determining growth of the length of enamel crystallites. The mechanism of this proposed co-interaction is synergistic (\"Goldilocks effect\"). With enamelin enhancing the rates of crystal nucleation via the creation of addition sites for EMPs, such as amelogenin, to template calcium phosphate nucleation.[14]",
+                    "It is best thought to understand the overarching function of enamelin as the proteins responsible for correct enamel thickness formation.",
+                    "",
+                    "=== Clinical significance ===",
+                    "Mutations in the ENAM gene can cause certain subtypes of amelogenesis imperfecta (AI), a heterogenous group of heritable conditions in which enamel in malformed.[15] Point mutations can cause autosomal-dominant hypoplastic AI, and novel ENAM mutations can cause autosomal-recessive hypoplastic AI.[16][17] However, mutations in the ENAM gene mainly tend to lead to the autosomal-dominant AI.[13] The phenotype of the mutations are generalised thin enamel and no defined enamel layer.[7]",
+                    "A moderately higher than usual ENAM expression leads to protrusive structures (often, horizontal grooves) on the surface of enamel, and with high transgene expression, the enamel layer is almost lost.[18]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000132464 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000029286 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ Mårdh CK, Bäckman B, Holmgren G, Hu JC, Simmer JP, Forsman-Semb K (May 2002). \"A nonsense mutation in the enamelin gene causes local hypoplastic autosomal dominant amelogenesis imperfecta (AIH2)\". Human Molecular Genetics. 11 (9): 1069–74. doi:10.1093/hmg/11.9.1069. PMID 11978766.",
+                    "<info> ^ a b \"Entrez Gene: ENAM enamelin\".",
+                    "<info> ^ a b c d Nanci A, Ten Cate AR (2012). Ten Cate's Oral Histology (8th ed.). Elsevier India. ISBN 978-8131233436. OCLC 1027350695.",
+                    "<info> ^ Al-Hashimi N, Lafont AG, Delgado S, Kawasaki K, Sire JY (September 2010). \"The enamelin genes in lizard, crocodile, and frog and the pseudogene in the chicken provide new insights on enamelin evolution in tetrapods\". Molecular Biology and Evolution. 27 (9): 2078–94. doi:10.1093/molbev/msq098. PMID 20403965.",
+                    "<info> ^ Sire JY, Davit-Béal T, Delgado S, Gu X (2007). \"The origin and evolution of enamel mineralization genes\". Cells Tissues Organs. 186 (1): 25–48. doi:10.1159/000102679. PMID 17627117. S2CID 38992844.",
+                    "<info> ^ Hu JC, Lertlam R, Richardson AS, Smith CE, McKee MD, Simmer JP (December 2011). \"Cell proliferation and apoptosis in enamelin null mice\". European Journal of Oral Sciences. 119 (Suppl 1): 329–37. doi:10.1111/j.1600-0722.2011.00860.x. PMC 3292790. PMID 22243264.",
+                    "<info> ^ Yan WJ, Ma P, Tian Y, Wang JY, Qin CL, Feng JQ, Wang XF (November 2017). \"The importance of a potential phosphorylation site in enamelin on enamel formation\". International Journal of Oral Science. 9 (11): e4. doi:10.1038/ijos.2017.41. PMC 5775333. PMID 29593332.",
+                    "<info> ^ Hu JC, Yamakoshi Y (2003). \"Enamelin and autosomal-dominant amelogenesis imperfecta\". Critical Reviews in Oral Biology and Medicine. 14 (6): 387–98. doi:10.1177/154411130301400602. PMID 14656895.",
+                    "<info> ^ a b Hand AR, Frank ME (2014-11-21). Fundamentals of oral histology and physiology. Ames, Iowa. ISBN 9781118938317. OCLC 891186059.{{cite book}}:  CS1 maint: location missing publisher (link)",
+                    "<info> ^ Tao J, Fijneman A, Wan J, Prajapati S, Mukherjee K, Fernandez-Martinez A, Moradian-Oldak J, De Yoreo JJ (2018-12-05). \"Control of Calcium Phosphate Nucleation and Transformation through Interactions of Enamelin and Amelogenin Exhibits the \"Goldilocks Effect\"\". Crystal Growth & Design. 18 (12): 7391–7400. doi:10.1021/acs.cgd.8b01066. PMC 7152501. PMID 32280310.",
+                    "<info> ^ \"ENAM enamelin [Homo sapiens (human)] - Gene - NCBI\". www.ncbi.nlm.nih.gov. Retrieved 2019-02-28.",
+                    "<info> ^ Pavlic A, Petelin M, Battelino T (March 2007). \"Phenotype and enamel ultrastructure characteristics in patients with ENAM gene mutations g.13185-13186insAG and 8344delG\". Archives of Oral Biology. 52 (3): 209–17. doi:10.1016/j.archoralbio.2006.10.010. PMID 17125728.",
+                    "<info> ^ Hart TC, Hart PS, Gorry MC, Michalec MD, Ryu OH, Uygur C, et al. (December 2003). \"Novel ENAM mutation responsible for autosomal recessive amelogenesis imperfecta and localised enamel defects\". Journal of Medical Genetics. 40 (12): 900–6. doi:10.1136/jmg.40.12.900. PMC 1735344. PMID 14684688.",
+                    "<info> ^ Kim JW, Seymen F, Lin BP, Kiziltan B, Gencay K, Simmer JP, Hu JC (March 2005). \"ENAM mutations in autosomal-dominant amelogenesis imperfecta\". Journal of Dental Research. 84 (3): 278–82. doi:10.1177/154405910508400314. PMID 15723871. S2CID 464969.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Gutierrez SJ, Chaves M, Torres DM, Briceño I (May 2007). \"Identification of a novel mutation in the enamalin gene in a family with autosomal-dominant amelogenesis imperfecta\". Archives of Oral Biology. 52 (5): 503–6. doi:10.1016/j.archoralbio.2006.09.014. PMID 17316551.",
+                    "<info> Pavlic A, Petelin M, Battelino T (March 2007). \"Phenotype and enamel ultrastructure characteristics in patients with ENAM gene mutations g.13185-13186insAG and 8344delG\". Archives of Oral Biology. 52 (3): 209–17. doi:10.1016/j.archoralbio.2006.10.010. PMID 17125728.",
+                    "<info> Ballif BA, Villén J, Beausoleil SA, Schwartz D, Gygi SP (November 2004). \"Phosphoproteomic analysis of the developing mouse brain\". Molecular & Cellular Proteomics. 3 (11): 1093–101. doi:10.1074/mcp.M400085-MCP200. PMID 15345747.",
+                    "<info> Hart TC, Hart PS, Gorry MC, Michalec MD, Ryu OH, Uygur C, Ozdemir D, Firatli S, Aren G, Firatli E (December 2003). \"Novel ENAM mutation responsible for autosomal recessive amelogenesis imperfecta and localised enamel defects\". Journal of Medical Genetics. 40 (12): 900–6. doi:10.1136/jmg.40.12.900. PMC 1735344. PMID 14684688.",
+                    "<info> Hart PS, Michalec MD, Seow WK, Hart TC, Wright JT (August 2003). \"Identification of the enamelin (g.8344delG) mutation in a new kindred and presentation of a standardized ENAM nomenclature\". Archives of Oral Biology. 48 (8): 589–96. doi:10.1016/S0003-9969(03)00114-6. PMID 12828988.",
+                    "<info> Kida M, Ariga T, Shirakawa T, Oguchi H, Sakiyama Y (November 2002). \"Autosomal-dominant hypoplastic form of amelogenesis imperfecta caused by an enamelin gene mutation at the exon-intron boundary\". Journal of Dental Research. 81 (11): 738–42. doi:10.1177/154405910208101103. PMID 12407086.",
+                    "<info> Rajpar MH, Harley K, Laing C, Davies RM, Dixon MJ (August 2001). \"Mutation of the gene encoding the enamel-specific protein, enamelin, causes autosomal-dominant amelogenesis imperfecta\". Human Molecular Genetics. 10 (16): 1673–7. doi:10.1093/hmg/10.16.1673. PMID 11487571.",
+                    "<info> Hartley JL, Temple GF, Brasch MA (November 2000). \"DNA cloning using in vitro site-specific recombination\". Genome Research. 10 (11): 1788–95. doi:10.1101/gr.143000. PMC 310948. PMID 11076863.",
+                    "<info> Dong J, Gu TT, Simmons D, MacDougall M (October 2000). \"Enamelin maps to human chromosome 4q21 within the autosomal dominant amelogenesis imperfecta locus\". European Journal of Oral Sciences. 108 (5): 353–8. doi:10.1034/j.1600-0722.2000.108005353.x. PMID 11037750.",
+                    "<info> Hu CC, Hart TC, Dupont BR, Chen JJ, Sun X, Qian Q, Zhang CH, Jiang H, Mattern VL, Wright JT, Simmer JP (April 2000). \"Cloning human enamelin cDNA, chromosomal localization, and analysis of expression during tooth development\". Journal of Dental Research. 79 (4): 912–9. doi:10.1177/00220345000790040501. PMID 10831092. S2CID 24476486.",
+                    "<info> Forsman K, Lind L, Bäckman B, Westermark E, Holmgren G (September 1994). \"Localization of a gene for autosomal dominant amelogenesis imperfecta (ADAI) to chromosome 4q\". Human Molecular Genetics. 3 (9): 1621–5. doi:10.1093/hmg/3.9.1621. PMID 7833920.",
+                    "",
+                    "=== External links ===",
+                    "<info> ENAM human gene location in the UCSC Genome Browser.",
+                    "<info> ENAM human gene details in the UCSC Genome Browser.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Enamelin is an enamel matrix protein (EMPs), that in humans is encoded by the ENAM gene.[5][6] It is part of the non-amelogenins, which comprise 10% of the total enamel matrix proteins.[7] It is one of the key proteins thought to be involved in amelogenesis (enamel development). The formation of enamel's intricate architecture is thought to be rigorously controlled in ameloblasts through interactions of various organic matrix protein molecules that include: enamelin, amelogenin, ameloblastin, tuftelin, dentine sialophosphoprotein, and a variety of enzymes. Enamelin is the largest protein (~168kDa) in the enamel matrix of developing teeth and is the least abundant (encompasses approximately 1-5%) of total enamel matrix proteins.[6] It is present predominantly at the growing enamel surface."
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "Enamelin is thought to be the oldest member of the enamel matrix protein (EMP) family, with animal studies showing remarkable conservation of the gene phylogenetically.[8] All other EMPs are derived from enamelin, such as amelogenin.[9] EMPs belong to a larger family of proteins termed 'secretory calcium-binding phosphoproteins' (SCPP).[10]",
+                            "Similar to other enamel matrix proteins, enamelin undergoes extensive post-translational modifications (mainly phosphorylation), processing, and secretion by proteases. Enamelin has three putative phosphoserines (Ser54, Ser191, and Ser216 in humans) phosphorylated by a Golgi-associated secretory pathway kinase (FAM20C) based on their distinctive Ser-x-Glu (S-x-E) motifs.[11] The major secretory product of the ENAM gene has 1103 amino acids (post-secretion), and has an acidic isoelectric point ranging from 4.5–6.5 (depending on the fragment).[12]",
+                            "At the secretory stage, the enzyme matrix metalloproteinase-20 (MMP20) proteolytically cleaves the secreted enamelin protein immediately upon release, into several smaller polypeptides; each having their own functions. However, the whole protein (~168 kDa) and its largest derivative fragment (~89 kDa) are undetectable in the secretory stage; these are existent only at the mineralisation front.[7] Smaller polypeptide fragments remain embedded in the enamel, throughout the secretory stage enamel matrix. These strongly bind to the mineral and arrest seeded crystal growth."
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "The primary function of the proteins acts at the mineralisation front; growth sites where it is the interface between the ameloblast plasma membrane and lengthening extremity of crystals. The key activities of enamelin can be summarised:",
+                            "<info> Necessary for the adhesion of ameloblasts to the surface of the enamel in the secretory stage[13]",
+                            "<info> Binds to hydroxyapatite and promotes crystallite elongation",
+                            "<info> Act as a modulator for de novo mineral formation[7]",
+                            "It is speculated that this protein could interact with amelogenin or other enamel matrix proteins and be important in determining growth of the length of enamel crystallites. The mechanism of this proposed co-interaction is synergistic (\"Goldilocks effect\"). With enamelin enhancing the rates of crystal nucleation via the creation of addition sites for EMPs, such as amelogenin, to template calcium phosphate nucleation.[14]",
+                            "It is best thought to understand the overarching function of enamelin as the proteins responsible for correct enamel thickness formation."
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "Mutations in the ENAM gene can cause certain subtypes of amelogenesis imperfecta (AI), a heterogenous group of heritable conditions in which enamel in malformed.[15] Point mutations can cause autosomal-dominant hypoplastic AI, and novel ENAM mutations can cause autosomal-recessive hypoplastic AI.[16][17] However, mutations in the ENAM gene mainly tend to lead to the autosomal-dominant AI.[13] The phenotype of the mutations are generalised thin enamel and no defined enamel layer.[7]",
+                            "A moderately higher than usual ENAM expression leads to protrusive structures (often, horizontal grooves) on the surface of enamel, and with high transgene expression, the enamel layer is almost lost.[18]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000132464 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000029286 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ Mårdh CK, Bäckman B, Holmgren G, Hu JC, Simmer JP, Forsman-Semb K (May 2002). \"A nonsense mutation in the enamelin gene causes local hypoplastic autosomal dominant amelogenesis imperfecta (AIH2)\". Human Molecular Genetics. 11 (9): 1069–74. doi:10.1093/hmg/11.9.1069. PMID 11978766.",
+                            "<info> ^ a b \"Entrez Gene: ENAM enamelin\".",
+                            "<info> ^ a b c d Nanci A, Ten Cate AR (2012). Ten Cate's Oral Histology (8th ed.). Elsevier India. ISBN 978-8131233436. OCLC 1027350695.",
+                            "<info> ^ Al-Hashimi N, Lafont AG, Delgado S, Kawasaki K, Sire JY (September 2010). \"The enamelin genes in lizard, crocodile, and frog and the pseudogene in the chicken provide new insights on enamelin evolution in tetrapods\". Molecular Biology and Evolution. 27 (9): 2078–94. doi:10.1093/molbev/msq098. PMID 20403965.",
+                            "<info> ^ Sire JY, Davit-Béal T, Delgado S, Gu X (2007). \"The origin and evolution of enamel mineralization genes\". Cells Tissues Organs. 186 (1): 25–48. doi:10.1159/000102679. PMID 17627117. S2CID 38992844.",
+                            "<info> ^ Hu JC, Lertlam R, Richardson AS, Smith CE, McKee MD, Simmer JP (December 2011). \"Cell proliferation and apoptosis in enamelin null mice\". European Journal of Oral Sciences. 119 (Suppl 1): 329–37. doi:10.1111/j.1600-0722.2011.00860.x. PMC 3292790. PMID 22243264.",
+                            "<info> ^ Yan WJ, Ma P, Tian Y, Wang JY, Qin CL, Feng JQ, Wang XF (November 2017). \"The importance of a potential phosphorylation site in enamelin on enamel formation\". International Journal of Oral Science. 9 (11): e4. doi:10.1038/ijos.2017.41. PMC 5775333. PMID 29593332.",
+                            "<info> ^ Hu JC, Yamakoshi Y (2003). \"Enamelin and autosomal-dominant amelogenesis imperfecta\". Critical Reviews in Oral Biology and Medicine. 14 (6): 387–98. doi:10.1177/154411130301400602. PMID 14656895.",
+                            "<info> ^ a b Hand AR, Frank ME (2014-11-21). Fundamentals of oral histology and physiology. Ames, Iowa. ISBN 9781118938317. OCLC 891186059.{{cite book}}:  CS1 maint: location missing publisher (link)",
+                            "<info> ^ Tao J, Fijneman A, Wan J, Prajapati S, Mukherjee K, Fernandez-Martinez A, Moradian-Oldak J, De Yoreo JJ (2018-12-05). \"Control of Calcium Phosphate Nucleation and Transformation through Interactions of Enamelin and Amelogenin Exhibits the \"Goldilocks Effect\"\". Crystal Growth & Design. 18 (12): 7391–7400. doi:10.1021/acs.cgd.8b01066. PMC 7152501. PMID 32280310.",
+                            "<info> ^ \"ENAM enamelin [Homo sapiens (human)] - Gene - NCBI\". www.ncbi.nlm.nih.gov. Retrieved 2019-02-28.",
+                            "<info> ^ Pavlic A, Petelin M, Battelino T (March 2007). \"Phenotype and enamel ultrastructure characteristics in patients with ENAM gene mutations g.13185-13186insAG and 8344delG\". Archives of Oral Biology. 52 (3): 209–17. doi:10.1016/j.archoralbio.2006.10.010. PMID 17125728.",
+                            "<info> ^ Hart TC, Hart PS, Gorry MC, Michalec MD, Ryu OH, Uygur C, et al. (December 2003). \"Novel ENAM mutation responsible for autosomal recessive amelogenesis imperfecta and localised enamel defects\". Journal of Medical Genetics. 40 (12): 900–6. doi:10.1136/jmg.40.12.900. PMC 1735344. PMID 14684688.",
+                            "<info> ^ Kim JW, Seymen F, Lin BP, Kiziltan B, Gencay K, Simmer JP, Hu JC (March 2005). \"ENAM mutations in autosomal-dominant amelogenesis imperfecta\". Journal of Dental Research. 84 (3): 278–82. doi:10.1177/154405910508400314. PMID 15723871. S2CID 464969."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Gutierrez SJ, Chaves M, Torres DM, Briceño I (May 2007). \"Identification of a novel mutation in the enamalin gene in a family with autosomal-dominant amelogenesis imperfecta\". Archives of Oral Biology. 52 (5): 503–6. doi:10.1016/j.archoralbio.2006.09.014. PMID 17316551.",
+                            "<info> Pavlic A, Petelin M, Battelino T (March 2007). \"Phenotype and enamel ultrastructure characteristics in patients with ENAM gene mutations g.13185-13186insAG and 8344delG\". Archives of Oral Biology. 52 (3): 209–17. doi:10.1016/j.archoralbio.2006.10.010. PMID 17125728.",
+                            "<info> Ballif BA, Villén J, Beausoleil SA, Schwartz D, Gygi SP (November 2004). \"Phosphoproteomic analysis of the developing mouse brain\". Molecular & Cellular Proteomics. 3 (11): 1093–101. doi:10.1074/mcp.M400085-MCP200. PMID 15345747.",
+                            "<info> Hart TC, Hart PS, Gorry MC, Michalec MD, Ryu OH, Uygur C, Ozdemir D, Firatli S, Aren G, Firatli E (December 2003). \"Novel ENAM mutation responsible for autosomal recessive amelogenesis imperfecta and localised enamel defects\". Journal of Medical Genetics. 40 (12): 900–6. doi:10.1136/jmg.40.12.900. PMC 1735344. PMID 14684688.",
+                            "<info> Hart PS, Michalec MD, Seow WK, Hart TC, Wright JT (August 2003). \"Identification of the enamelin (g.8344delG) mutation in a new kindred and presentation of a standardized ENAM nomenclature\". Archives of Oral Biology. 48 (8): 589–96. doi:10.1016/S0003-9969(03)00114-6. PMID 12828988.",
+                            "<info> Kida M, Ariga T, Shirakawa T, Oguchi H, Sakiyama Y (November 2002). \"Autosomal-dominant hypoplastic form of amelogenesis imperfecta caused by an enamelin gene mutation at the exon-intron boundary\". Journal of Dental Research. 81 (11): 738–42. doi:10.1177/154405910208101103. PMID 12407086.",
+                            "<info> Rajpar MH, Harley K, Laing C, Davies RM, Dixon MJ (August 2001). \"Mutation of the gene encoding the enamel-specific protein, enamelin, causes autosomal-dominant amelogenesis imperfecta\". Human Molecular Genetics. 10 (16): 1673–7. doi:10.1093/hmg/10.16.1673. PMID 11487571.",
+                            "<info> Hartley JL, Temple GF, Brasch MA (November 2000). \"DNA cloning using in vitro site-specific recombination\". Genome Research. 10 (11): 1788–95. doi:10.1101/gr.143000. PMC 310948. PMID 11076863.",
+                            "<info> Dong J, Gu TT, Simmons D, MacDougall M (October 2000). \"Enamelin maps to human chromosome 4q21 within the autosomal dominant amelogenesis imperfecta locus\". European Journal of Oral Sciences. 108 (5): 353–8. doi:10.1034/j.1600-0722.2000.108005353.x. PMID 11037750.",
+                            "<info> Hu CC, Hart TC, Dupont BR, Chen JJ, Sun X, Qian Q, Zhang CH, Jiang H, Mattern VL, Wright JT, Simmer JP (April 2000). \"Cloning human enamelin cDNA, chromosomal localization, and analysis of expression during tooth development\". Journal of Dental Research. 79 (4): 912–9. doi:10.1177/00220345000790040501. PMID 10831092. S2CID 24476486.",
+                            "<info> Forsman K, Lind L, Bäckman B, Westermark E, Holmgren G (September 1994). \"Localization of a gene for autosomal dominant amelogenesis imperfecta (ADAI) to chromosome 4q\". Human Molecular Genetics. 3 (9): 1621–5. doi:10.1093/hmg/3.9.1621. PMID 7833920."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> ENAM human gene location in the UCSC Genome Browser.",
+                            "<info> ENAM human gene details in the UCSC Genome Browser."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

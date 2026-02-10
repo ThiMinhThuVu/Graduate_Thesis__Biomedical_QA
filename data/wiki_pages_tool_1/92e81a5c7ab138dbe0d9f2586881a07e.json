@@ -1,0 +1,117 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/multinucleate_cell": {
+                "title": "Multinucleate cell",
+                "url": "https://en.wikipedia.org/wiki/multinucleate_cell",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A multinucleate cell (also known as multinucleated cell or polynuclear cell) is a eukaryotic cell that has more than one nucleus, i.e., multiple nuclei share one common cytoplasm. Mitosis in multinucleate cells can occur either in a coordinated, synchronous manner where all nuclei divide simultaneously or asynchronously where individual nuclei divide independently in time and space. Certain organisms may have a multinuclear stage of their life cycle. For example, slime molds have a vegetative, multinucleate life stage called a plasmodium.[1]",
+                    "Multinucleate cells, depending on the mechanism by which they are formed, can be divided into[2][3] \"syncytia\" (formed by cell fusion) or \"coenocytes\" (formed by nuclear division not followed by cytokinesis).[4]",
+                    "Some bacteria, such as Mycoplasma pneumoniae, a pathogen of the respiratory tract, may display multinuclear filaments as a result of a delay between genome replication and cellular division.[5]",
+                    "",
+                    "=== Terminology ===",
+                    "Some biologists use the potentially misleading term \"acellular\" to refer to multinucleate cell forms (syncitia and plasmodia), such as to differentiate \"acellular\" slime molds from the purely \"cellular\" ones (which do not form such structures).[6][7][8]",
+                    "Some use the term \"syncytium\" in a wide sense, to mean any type of multinucleate cell,[9] while others differentiate the terms for each type.[10]",
+                    "",
+                    "=== Physiological examples ===",
+                    "Syncytia are multinuclear cells that can form either through normal biological processes, such as the mammalian placenta, or under the influence of certain pathogens, such as HIV, via fusion of the plasma membrane.[11][12] Other examples include the skeletal muscle cells of mammals, the tapetal cells of plants, and the storage cells of Douglas-fir seeds.[13] The polymorphonuclear leukocytes of mammals are not polynuclear cells, although the lobes of their nuclei are so deeply bifurcated that they can appear so under non-optimal microscopy.",
+                    "Osteoclasts are multinuclear cells that are found commonly in the human body that aid in the maintenance and repair of the bones by secreting acid that dissolves bone matter. They are typically found to have 5 nuclei per cell, due to the fusion of preosteoclasts.",
+                    "The chlorarachniophytes form multinucleate cells by fusion, being syncytia and not coenocytes. This syncytia is called plasmodium, in the sense of a multinucleate protoplast without a cell wall which exhibits amoeboid movement.[14] Other examples include some plasmodiophorids, some haplosporidians,[15] and the grex of cellular slime moulds (dictyostelids and acrasids).",
+                    "The placenta, a temporary organ that transports nutrients, oxygen, waste, and other materials between a mother and a developing fetus, is partially composed of a syncytial layer that forms the interface between the foetus and the mother.[16] In addition to performing simple interface duties, the placental syncytia also acts as a barrier to infection from viruses, bacteria, and protozoa, which is likely due to unique cytoskeletal properties of these cells.[16]",
+                    "Furthermore, multinucleate cells are produced from specialized cell cycles in which nuclear division occurs without cytokinesis, thus leading to large coenocytes or plasmodia. In filamentous fungi, multinucleate cells may extend over hundreds of meters so that different regions of a single cell experience dramatically different microenvironments. Other examples include, the plasmodia of plasmodial slime molds (myxogastrids) and the schizont of the Plasmodium parasite which causes malaria.",
+                    "",
+                    "=== Pathological examples ===",
+                    "Multinucleated cells can also occur under pathological conditions as the consequence of a disturbed cell cycle control (e.g., some binucleated cells and metastasizing tumor cells).",
+                    "As previously mentioned, syncytia may be induced through the actions of HIV, where T-cells are fused by the action of virus-derived proteins on the cell membrane.[12] During viral replication in T lymphoid cells, large amounts of viral envelope Glycoprotein (Env) are synthesized and trafficked to the cell membrane where they can be incorporated into new virus particles. However, some of the Env molecules interact with neighboring T-cell receptors, which brings the cells into close enough proximity to enable trigger events culminating in the fusion of two host cells, likely due to the close contact of the two plasma membranes.[17] This interaction is likely specific to CD4+ T-cells, as cells lacking this receptor were unable to form syncytia in laboratory conditions.[18]",
+                    "",
+                    "=== Not multinucleate ===",
+                    "Although not normally viewed as a case of multinucleation, plant cells share a common cytoplasm by plasmodesmata, and most cells in animal tissues are in communication with their neighbors via gap junctions.[19]",
+                    "Although endosymbiosis among eukaryotes can result in multiple nuclei in a cell, these are not considered \"multinucleate\" because the nuclei are not surrounded by the same cytoplasm. These extra nuclei are called nucleomorphs.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Haindl M, Holler E (July 2005). \"Use of the giant multinucleate plasmodium of Physarum polycephalum to study RNA interference in the myxomycete\". Analytical Biochemistry. 342 (2): 194–9. doi:10.1016/j.ab.2005.03.031. PMID 15922285.",
+                    "<info> ^ Boyd JD, Hamilton WJ (July 1966). \"Electron microscopic observations on the cytotrophoblast contribution to the syncytium in the human placenta\". Journal of Anatomy. 100 (Pt 3): 535–48. PMC 1270795. PMID 5965440.",
+                    "<info> ^ Read ND, Roca GM (2006). \"Chapter 5: Vegetative Hyphal Fusion in Filamentous Fungi\". In Baluška F, Volkmann D, Barlow PW (eds.). Cell-Cell Channels. Landes Bioscience and Springer Science+Business Media. pp. 87–98. ISBN 978-0-387-36058-4.",
+                    "<info> ^ Daubenmire, Rexford F. (1936-12-11). \"The Use of the Terms Coenocyte and Syncytium in Biology\". Science. 84 (2189): 533. doi:10.1126/science.84.2189.533.a. ISSN 0036-8075.",
+                    "<info> ^ Razin S, Baron S (1996). \"Mycoplasmas\". In Baron S (ed.). Medical Microbiology (4th ed.). University of Texas Medical Branch at Galveston. ISBN 978-0-9631172-1-2. PMID 21413254. Retrieved 2018-09-19.",
+                    "<info> ^ Bray, Dennis (2017-01-26). Cell Movements: From Molecules to Motility. Garland Science. ISBN 978-0-8153-3282-4.",
+                    "<info> ^ Flemming, Anthony J.; Shen, Zai-Zhong; Cunha, Ana; Emmons, Scott W.; Leroi, Armand M. (9 May 2000). \"Somatic polyploidization and cellular proliferation drive body size evolution in nematodes\". Proceedings of the National Academy of Sciences. 97 (10): 5285–5290. doi:10.1073/pnas.97.10.5285. PMC 25820. PMID 10805788.",
+                    "<info> ^ Olsen, Odd-Arne (2007-06-12). Endosperm: Developmental and Molecular Biology. Springer Science & Business Media. ISBN 978-3-540-71235-0.",
+                    "<info> ^ Minelli, Alessandro (2009). Perspectives in Animal Phylogeny and Evolution. Oxford University Press. pp. 113–116. ISBN 978-0-19-856620-5.",
+                    "<info> ^ Studnicka, F. K. (1934). \"Die Grundlagen der Zellentheorie von Theodor Schwann\". Anat. Anz. 78: 246–257.",
+                    "<info> ^ Zeldovich VB, Clausen CH, Bradford E, Fletcher DA, Maltepe E, Robbins JR, Bakardjiev AI (2013-12-12). \"Placental syncytium forms a biophysical barrier against pathogen invasion\". PLOS Pathogens. 9 (12) e1003821. doi:10.1371/journal.ppat.1003821. PMC 3861541. PMID 24348256.",
+                    "<info> ^ a b Sylwester A, Wessels D, Anderson SA, Warren RQ, Shutt DC, Kennedy RC, Soll DR (November 1993). \"HIV-induced syncytia of a T cell line form single giant pseudopods and are motile\". Journal of Cell Science. 106 (3): 941–53. doi:10.1242/jcs.106.3.941. PMID 8308076.",
+                    "<info> ^ von Aderkas P, Rouault G, Wagner R, Chiwocha S, Roques A (June 2005). \"Multinucleate storage cells in Douglas-fir (Pseudotsuga menziesii (Mirbel) Franco) and the effect of seed parasitism by the chalcid Megastigmus spermotrophus Wachtl\". Heredity. 94 (6): 616–22. doi:10.1038/sj.hdy.6800670. PMID 15829985.",
+                    "<info> ^ Hoek, C. van den, Mann, D.G. and Jahns, H.M. (1995). Algae An Introduction to Phycology. Cambridge University Press, Cambridge",
+                    "<info> ^ Brown MW, Kolisko M, Silberman JD, Roger AJ (June 2012). \"Aggregative multicellularity evolved independently in the eukaryotic supergroup Rhizaria\". Current Biology. 22 (12): 1123–7. doi:10.1016/j.cub.2012.04.021. PMID 22608512.",
+                    "<info> ^ a b Zeldovich VB, Clausen CH, Bradford E, Fletcher DA, Maltepe E, Robbins JR, Bakardjiev AI (2013-12-12). \"Placental syncytium forms a biophysical barrier against pathogen invasion\". PLOS Pathogens. 9 (12) e1003821. doi:10.1371/journal.ppat.1003821. PMC 3861541. PMID 24348256.",
+                    "<info> ^ Compton AA, Schwartz O (February 2017). \"They Might Be Giants: Does Syncytium Formation Sink or Spread HIV Infection?\". PLOS Pathogens. 13 (2) e1006099. doi:10.1371/journal.ppat.1006099. PMC 5289631. PMID 28152024.",
+                    "<info> ^ Lifson JD, Reyes GR, McGrath MS, Stein BS, Engleman EG (May 1986). \"AIDS retrovirus induced cytopathology: giant cell formation and involvement of CD4 antigen\". Science. 232 (4754): 1123–7. Bibcode:1986Sci...232.1123L. doi:10.1126/science.3010463. PMID 3010463.",
+                    "<info> ^ Walter P, Roberts K, Raff M, Lewis J, Johnson A, Alberts B (2002). \"Cell Junctions\". Molecular Biology of the Cell (4th ed.). ISBN 978-0-8153-3218-3. OCLC 807894238.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A multinucleate cell (also known as multinucleated cell or polynuclear cell) is a eukaryotic cell that has more than one nucleus, i.e., multiple nuclei share one common cytoplasm. Mitosis in multinucleate cells can occur either in a coordinated, synchronous manner where all nuclei divide simultaneously or asynchronously where individual nuclei divide independently in time and space. Certain organisms may have a multinuclear stage of their life cycle. For example, slime molds have a vegetative, multinucleate life stage called a plasmodium.[1]",
+                            "Multinucleate cells, depending on the mechanism by which they are formed, can be divided into[2][3] \"syncytia\" (formed by cell fusion) or \"coenocytes\" (formed by nuclear division not followed by cytokinesis).[4]",
+                            "Some bacteria, such as Mycoplasma pneumoniae, a pathogen of the respiratory tract, may display multinuclear filaments as a result of a delay between genome replication and cellular division.[5]"
+                        ]
+                    },
+                    "Terminology": {
+                        "content": [
+                            "Some biologists use the potentially misleading term \"acellular\" to refer to multinucleate cell forms (syncitia and plasmodia), such as to differentiate \"acellular\" slime molds from the purely \"cellular\" ones (which do not form such structures).[6][7][8]",
+                            "Some use the term \"syncytium\" in a wide sense, to mean any type of multinucleate cell,[9] while others differentiate the terms for each type.[10]"
+                        ]
+                    },
+                    "Physiological examples": {
+                        "content": [
+                            "Syncytia are multinuclear cells that can form either through normal biological processes, such as the mammalian placenta, or under the influence of certain pathogens, such as HIV, via fusion of the plasma membrane.[11][12] Other examples include the skeletal muscle cells of mammals, the tapetal cells of plants, and the storage cells of Douglas-fir seeds.[13] The polymorphonuclear leukocytes of mammals are not polynuclear cells, although the lobes of their nuclei are so deeply bifurcated that they can appear so under non-optimal microscopy.",
+                            "Osteoclasts are multinuclear cells that are found commonly in the human body that aid in the maintenance and repair of the bones by secreting acid that dissolves bone matter. They are typically found to have 5 nuclei per cell, due to the fusion of preosteoclasts.",
+                            "The chlorarachniophytes form multinucleate cells by fusion, being syncytia and not coenocytes. This syncytia is called plasmodium, in the sense of a multinucleate protoplast without a cell wall which exhibits amoeboid movement.[14] Other examples include some plasmodiophorids, some haplosporidians,[15] and the grex of cellular slime moulds (dictyostelids and acrasids).",
+                            "The placenta, a temporary organ that transports nutrients, oxygen, waste, and other materials between a mother and a developing fetus, is partially composed of a syncytial layer that forms the interface between the foetus and the mother.[16] In addition to performing simple interface duties, the placental syncytia also acts as a barrier to infection from viruses, bacteria, and protozoa, which is likely due to unique cytoskeletal properties of these cells.[16]",
+                            "Furthermore, multinucleate cells are produced from specialized cell cycles in which nuclear division occurs without cytokinesis, thus leading to large coenocytes or plasmodia. In filamentous fungi, multinucleate cells may extend over hundreds of meters so that different regions of a single cell experience dramatically different microenvironments. Other examples include, the plasmodia of plasmodial slime molds (myxogastrids) and the schizont of the Plasmodium parasite which causes malaria."
+                        ]
+                    },
+                    "Pathological examples": {
+                        "content": [
+                            "Multinucleated cells can also occur under pathological conditions as the consequence of a disturbed cell cycle control (e.g., some binucleated cells and metastasizing tumor cells).",
+                            "As previously mentioned, syncytia may be induced through the actions of HIV, where T-cells are fused by the action of virus-derived proteins on the cell membrane.[12] During viral replication in T lymphoid cells, large amounts of viral envelope Glycoprotein (Env) are synthesized and trafficked to the cell membrane where they can be incorporated into new virus particles. However, some of the Env molecules interact with neighboring T-cell receptors, which brings the cells into close enough proximity to enable trigger events culminating in the fusion of two host cells, likely due to the close contact of the two plasma membranes.[17] This interaction is likely specific to CD4+ T-cells, as cells lacking this receptor were unable to form syncytia in laboratory conditions.[18]"
+                        ]
+                    },
+                    "Not multinucleate": {
+                        "content": [
+                            "Although not normally viewed as a case of multinucleation, plant cells share a common cytoplasm by plasmodesmata, and most cells in animal tissues are in communication with their neighbors via gap junctions.[19]",
+                            "Although endosymbiosis among eukaryotes can result in multiple nuclei in a cell, these are not considered \"multinucleate\" because the nuclei are not surrounded by the same cytoplasm. These extra nuclei are called nucleomorphs."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Haindl M, Holler E (July 2005). \"Use of the giant multinucleate plasmodium of Physarum polycephalum to study RNA interference in the myxomycete\". Analytical Biochemistry. 342 (2): 194–9. doi:10.1016/j.ab.2005.03.031. PMID 15922285.",
+                            "<info> ^ Boyd JD, Hamilton WJ (July 1966). \"Electron microscopic observations on the cytotrophoblast contribution to the syncytium in the human placenta\". Journal of Anatomy. 100 (Pt 3): 535–48. PMC 1270795. PMID 5965440.",
+                            "<info> ^ Read ND, Roca GM (2006). \"Chapter 5: Vegetative Hyphal Fusion in Filamentous Fungi\". In Baluška F, Volkmann D, Barlow PW (eds.). Cell-Cell Channels. Landes Bioscience and Springer Science+Business Media. pp. 87–98. ISBN 978-0-387-36058-4.",
+                            "<info> ^ Daubenmire, Rexford F. (1936-12-11). \"The Use of the Terms Coenocyte and Syncytium in Biology\". Science. 84 (2189): 533. doi:10.1126/science.84.2189.533.a. ISSN 0036-8075.",
+                            "<info> ^ Razin S, Baron S (1996). \"Mycoplasmas\". In Baron S (ed.). Medical Microbiology (4th ed.). University of Texas Medical Branch at Galveston. ISBN 978-0-9631172-1-2. PMID 21413254. Retrieved 2018-09-19.",
+                            "<info> ^ Bray, Dennis (2017-01-26). Cell Movements: From Molecules to Motility. Garland Science. ISBN 978-0-8153-3282-4.",
+                            "<info> ^ Flemming, Anthony J.; Shen, Zai-Zhong; Cunha, Ana; Emmons, Scott W.; Leroi, Armand M. (9 May 2000). \"Somatic polyploidization and cellular proliferation drive body size evolution in nematodes\". Proceedings of the National Academy of Sciences. 97 (10): 5285–5290. doi:10.1073/pnas.97.10.5285. PMC 25820. PMID 10805788.",
+                            "<info> ^ Olsen, Odd-Arne (2007-06-12). Endosperm: Developmental and Molecular Biology. Springer Science & Business Media. ISBN 978-3-540-71235-0.",
+                            "<info> ^ Minelli, Alessandro (2009). Perspectives in Animal Phylogeny and Evolution. Oxford University Press. pp. 113–116. ISBN 978-0-19-856620-5.",
+                            "<info> ^ Studnicka, F. K. (1934). \"Die Grundlagen der Zellentheorie von Theodor Schwann\". Anat. Anz. 78: 246–257.",
+                            "<info> ^ Zeldovich VB, Clausen CH, Bradford E, Fletcher DA, Maltepe E, Robbins JR, Bakardjiev AI (2013-12-12). \"Placental syncytium forms a biophysical barrier against pathogen invasion\". PLOS Pathogens. 9 (12) e1003821. doi:10.1371/journal.ppat.1003821. PMC 3861541. PMID 24348256.",
+                            "<info> ^ a b Sylwester A, Wessels D, Anderson SA, Warren RQ, Shutt DC, Kennedy RC, Soll DR (November 1993). \"HIV-induced syncytia of a T cell line form single giant pseudopods and are motile\". Journal of Cell Science. 106 (3): 941–53. doi:10.1242/jcs.106.3.941. PMID 8308076.",
+                            "<info> ^ von Aderkas P, Rouault G, Wagner R, Chiwocha S, Roques A (June 2005). \"Multinucleate storage cells in Douglas-fir (Pseudotsuga menziesii (Mirbel) Franco) and the effect of seed parasitism by the chalcid Megastigmus spermotrophus Wachtl\". Heredity. 94 (6): 616–22. doi:10.1038/sj.hdy.6800670. PMID 15829985.",
+                            "<info> ^ Hoek, C. van den, Mann, D.G. and Jahns, H.M. (1995). Algae An Introduction to Phycology. Cambridge University Press, Cambridge",
+                            "<info> ^ Brown MW, Kolisko M, Silberman JD, Roger AJ (June 2012). \"Aggregative multicellularity evolved independently in the eukaryotic supergroup Rhizaria\". Current Biology. 22 (12): 1123–7. doi:10.1016/j.cub.2012.04.021. PMID 22608512.",
+                            "<info> ^ a b Zeldovich VB, Clausen CH, Bradford E, Fletcher DA, Maltepe E, Robbins JR, Bakardjiev AI (2013-12-12). \"Placental syncytium forms a biophysical barrier against pathogen invasion\". PLOS Pathogens. 9 (12) e1003821. doi:10.1371/journal.ppat.1003821. PMC 3861541. PMID 24348256.",
+                            "<info> ^ Compton AA, Schwartz O (February 2017). \"They Might Be Giants: Does Syncytium Formation Sink or Spread HIV Infection?\". PLOS Pathogens. 13 (2) e1006099. doi:10.1371/journal.ppat.1006099. PMC 5289631. PMID 28152024.",
+                            "<info> ^ Lifson JD, Reyes GR, McGrath MS, Stein BS, Engleman EG (May 1986). \"AIDS retrovirus induced cytopathology: giant cell formation and involvement of CD4 antigen\". Science. 232 (4754): 1123–7. Bibcode:1986Sci...232.1123L. doi:10.1126/science.3010463. PMID 3010463.",
+                            "<info> ^ Walter P, Roberts K, Raff M, Lewis J, Johnson A, Alberts B (2002). \"Cell Junctions\". Molecular Biology of the Cell (4th ed.). ISBN 978-0-8153-3218-3. OCLC 807894238."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

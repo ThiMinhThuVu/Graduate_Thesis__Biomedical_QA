@@ -1,0 +1,47 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_fetal_abnormalities": {
+                "title": "List of fetal abnormalities",
+                "url": "https://en.wikipedia.org/wiki/list_of_fetal_abnormalities",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Fetal abnormalities are conditions that affect a fetus or embryo, are able to be diagnosed prenatally, and may be fatal or cause disease after birth. They may include aneuploidies, structural abnormalities, or neoplasms.",
+                    "<info> Agenesis of the corpus callosum",
+                    "<info> Bilateral multicystic dysplastic kidneys",
+                    "<info> Coarctation of the aorta",
+                    "<info> Double outlet right ventricle",
+                    "<info> Exstrophy of the bladder",
+                    "<info> Hypoplastic left heart syndrome",
+                    "<info> Infantile polycystic kidney disease",
+                    "<info> Limb body wall complex",
+                    "<info> Transposition of the great vessels",
+                    "<info> Trisomy 21 (Down Syndrome)",
+                    "<info> Turner syndrome (Monosomy X)",
+                    "<info> Vein of Galen malformation",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Fetal abnormalities are conditions that affect a fetus or embryo, are able to be diagnosed prenatally, and may be fatal or cause disease after birth. They may include aneuploidies, structural abnormalities, or neoplasms.",
+                            "<info> Agenesis of the corpus callosum",
+                            "<info> Bilateral multicystic dysplastic kidneys",
+                            "<info> Coarctation of the aorta",
+                            "<info> Double outlet right ventricle",
+                            "<info> Exstrophy of the bladder",
+                            "<info> Hypoplastic left heart syndrome",
+                            "<info> Infantile polycystic kidney disease",
+                            "<info> Limb body wall complex",
+                            "<info> Transposition of the great vessels",
+                            "<info> Trisomy 21 (Down Syndrome)",
+                            "<info> Turner syndrome (Monosomy X)",
+                            "<info> Vein of Galen malformation"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

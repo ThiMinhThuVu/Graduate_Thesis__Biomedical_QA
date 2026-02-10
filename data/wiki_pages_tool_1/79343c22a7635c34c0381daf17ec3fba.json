@@ -1,0 +1,31 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/patch-type_granuloma_annulare": {
+                "title": "Patch-type granuloma annulare",
+                "url": "https://en.wikipedia.org/wiki/patch-type_granuloma_annulare",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Patch-type granuloma annulare (also known as macular granuloma annulare) is a skin condition of unknown cause, more commonly affecting women between 30 and 70 years of age, characterized by flat or slightly palpable erythematous or red-brown skin lesions.[1]: 704",
+                    "",
+                    "=== References ===",
+                    "<info> ^ James, William D.; Berger, Timothy G.; et al. (2006). Andrews' Diseases of the Skin: clinical Dermatology. Saunders Elsevier. ISBN 978-0-7216-2921-6.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Patch-type granuloma annulare (also known as macular granuloma annulare) is a skin condition of unknown cause, more commonly affecting women between 30 and 70 years of age, characterized by flat or slightly palpable erythematous or red-brown skin lesions.[1]: 704"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ James, William D.; Berger, Timothy G.; et al. (2006). Andrews' Diseases of the Skin: clinical Dermatology. Saunders Elsevier. ISBN 978-0-7216-2921-6."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

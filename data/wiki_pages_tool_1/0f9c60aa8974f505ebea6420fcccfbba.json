@@ -1,0 +1,109 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/lymphocytopenia": {
+                "title": "Lymphocytopenia",
+                "url": "https://en.wikipedia.org/wiki/lymphocytopenia",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Lymphocytopenia is the condition of having an abnormally low level of lymphocytes in the blood. Lymphocytes are a white blood cell with important functions in the immune system. It is also called lymphopenia.[1] The opposite is lymphocytosis, which refers to an excessive level of lymphocytes.",
+                    "Lymphocytopenia may be present as part of a pancytopenia, when the total numbers of all types of blood cells are reduced.",
+                    "",
+                    "=== Classification ===",
+                    "In some cases, lymphocytopenia can be further classified according to which kind of lymphocytes are reduced.  If all three kinds of lymphocytes are suppressed, then the term is used without further qualification.",
+                    "<info> In T lymphocytopenia, there are too few T lymphocytes, but normal numbers of other lymphocytes. It causes, and manifests as, a T cell deficiency. This is usually caused by HIV infection (resulting in AIDS), but may be Idiopathic CD4+ lymphocytopenia (ICL), which is a very rare heterogeneous disorder defined by CD4+ T-cell counts below 300 cells/μL in the absence of any known immune deficiency condition, such as human immunodeficiency virus (HIV) infection or chemotherapy.[2]",
+                    "<info> In B lymphocytopenia, there are too few B lymphocytes, but possibly normal numbers of other lymphocytes. It causes, and manifests as, a humoral immune deficiency. This is usually caused by medications that suppress the immune system.[citation needed]",
+                    "<info> In NK lymphocytopenia, there are too few natural killer cells, but normal numbers of other lymphocytes.  This is very rare.[citation needed]",
+                    "",
+                    "=== Causes ===",
+                    "Lymphocytopenia is commonly caused by a recent infection, such as COVID-19.[3]",
+                    "Lymphocytopenia, but not idiopathic CD4+ lymphocytopenia, is associated with corticosteroid use, infections with HIV and other viral, bacterial, and fungal agents, malnutrition, systemic lupus erythematosus,[4] severe stress,[5] intense or prolonged physical exercise (due to cortisol release),[6] rheumatoid arthritis, sarcoidosis,[7] multiple sclerosis,[8] and iatrogenic (caused by other medical treatments) conditions.",
+                    "Lymphocytopenia is a frequent, temporary result from many types of chemotherapy, such as with cytotoxic agents or immunosuppressive drugs. Some malignancies that have spread to involve the bone marrow, such as leukemia or advanced Hodgkin's disease,[9][10] also cause lymphocytopenia.",
+                    "Another cause is infection with Influenza A virus subtype H1N1 (and other subtypes of the Influenza A virus) and is then often associated with Monocytosis;[11] H1N1 was responsible for the Spanish flu, the 2009 flu pandemic and in 2016 for the Influenza-epidemic in Brazil.[12] The SARS disease caused lymphocytopenia.[13] Among patients with laboratory-confirmed COVID-19 in Wuhan China through January 29th, 2020, 83.2 percent had Lymphocytopenia at admission.[14]",
+                    "Large doses of radiation, such as those involved with nuclear accidents or medical whole body radiation, may cause lymphocytopenia.[15]",
+                    "",
+                    "=== Diagnosis ===",
+                    "Lymphocytopenia is diagnosed when the complete blood count shows a lymphocyte count lower than the age-appropriate reference interval (for example, below 0.9 billion/L in an adult).[citation needed]",
+                    "",
+                    "=== Other animals ===",
+                    "Lymphocytopenia caused by Feline Leukemia Virus and Feline immunodeficiency virus retroviral infections is treated with Lymphocyte T-Cell Immune Modulator.[16]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Lymphocytopenia\". National Heart, Lung and Blood Institute. NIH. Retrieved 10 February 2020.",
+                    "<info> ^ Malaspina A, Moir S, Chaitt DG, Rehm CA, Kottilil S, Falloon J, Fauci AS (March 2007). \"Idiopathic CD4+ T lymphocytopenia is associated with increases in immature/transitional B cells and serum levels of IL-7\". Blood. 109 (5): 2086–8. doi:10.1182/blood-2006-06-031385. PMC 1801046. PMID 17053062.",
+                    "<info> ^ Guo Z, Zhang Z, Prajapati M, Li Y (September 2021). \"Lymphopenia Caused by Virus Infections and the Mechanisms Beyond\". Viruses. 13 (9): 1876. doi:10.3390/v13091876. PMC 8473169. PMID 34578457.",
+                    "<info> ^ Ng WL, Chu CM, Wu AK, Cheng VC, Yuen KY (January 2006). \"Lymphopenia at presentation is associated with increased risk of infections in patients with systemic lupus erythematosus\". QJM. 99 (1): 37–47. doi:10.1093/qjmed/hci155. PMID 16371405.",
+                    "<info> ^ Lymphocytopenia from the Merck Manual Home Health Handbook",
+                    "<info> ^ Robson PJ, Blannin AK, Walsh NP, Castell LM, Gleeson M (February 1999). \"Effects of exercise intensity, duration and recovery on in vitro neutrophil function in male athletes\". International Journal of Sports Medicine. 20 (2). Thieme: 128–35. doi:10.1055/s-2007-971106. PMID 10190775. S2CID 2572545.",
+                    "<info> ^ Hedfors E, Holm G, Pettersson D (June 1974). \"Lymphocyte subpopulations in sarcoidosis\". Clinical and Experimental Immunology. 17 (2): 219–26. PMC 1554022. PMID 4549571.",
+                    "<info> ^ Lim ZW, Elwood E, Naveed H, Galea I (October 2016). \"Lymphopenia in treatment-naive relapsing multiple sclerosis\". Neurology. 3 (5) e275. doi:10.1212/NXI.0000000000000275. PMC 4982853. PMID 27559542.",
+                    "<info> ^ Faguet GB (October 1975). \"Quantitation of immunocompetence in Hodgkin's disease\". The Journal of Clinical Investigation. 56 (4): 951–7. doi:10.1172/JCI108175. PMC 301951. PMID 1159096.",
+                    "<info> ^ Weiss RB, Brunning RD, Kennedy BJ (December 1975). \"Hodgkin's disease in the bone marrow\". Cancer. 36 (6): 2077–83. doi:10.1002/cncr.2820360924. PMID 1203865. S2CID 6194154.",
+                    "<info> ^ Merekoulias G, Alexopoulos EC, Belezos T, Panagiotopoulou E, Jelastopulu DM (March 2010). \"Lymphocyte to monocyte ratio as a screening tool for influenza\". PLOS Currents. 2 RRN1154. doi:10.1371/currents.rrn1154. PMC 2847387. PMID 20383263.",
+                    "<info> ^ Over 1,000 Deaths from H1N1 Outbreak in Brazil Archived 2016-09-11 at the Wayback Machine (article from 12 July 2016)",
+                    "<info> ^ Low, Donald (2004). \"Sars: Lessons from Toronto\". Learning from SARS: Preparing for the Next Disease Outbreak: Workshop Summary. National Academies Press (US). pp. 63–71.",
+                    "<info> ^ Guan, Wei-jie (February 28, 2020). \"Clinical Characteristics of Coronavirus Disease 2019 in China\". New England Journal of Medicine. 382 (18): 1708–20. doi:10.1056/NEJMoa2002032. PMC 7092819. PMID 32109013.",
+                    "<info> ^ Venkatesulu BP, Mallick S, Lin SH, Krishnan S (Mar 2018). \"A systematic review of the influence of radiation-induced lymphopenia on survival outcomes in solid tumors\". Critical Reviews in Oncology/Hematology. 123: 42–51. doi:10.1016/j.critrevonc.2018.01.003. PMID 29482778.",
+                    "<info> ^ \"The Science Behind LTCI | Treatment for Cats with FIV and FeLV\". Archived from the original on 2013-07-02. Retrieved 2013-03-20.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Lymphocytopenia is the condition of having an abnormally low level of lymphocytes in the blood. Lymphocytes are a white blood cell with important functions in the immune system. It is also called lymphopenia.[1] The opposite is lymphocytosis, which refers to an excessive level of lymphocytes.",
+                            "Lymphocytopenia may be present as part of a pancytopenia, when the total numbers of all types of blood cells are reduced."
+                        ]
+                    },
+                    "Classification": {
+                        "content": [
+                            "In some cases, lymphocytopenia can be further classified according to which kind of lymphocytes are reduced.  If all three kinds of lymphocytes are suppressed, then the term is used without further qualification.",
+                            "<info> In T lymphocytopenia, there are too few T lymphocytes, but normal numbers of other lymphocytes. It causes, and manifests as, a T cell deficiency. This is usually caused by HIV infection (resulting in AIDS), but may be Idiopathic CD4+ lymphocytopenia (ICL), which is a very rare heterogeneous disorder defined by CD4+ T-cell counts below 300 cells/μL in the absence of any known immune deficiency condition, such as human immunodeficiency virus (HIV) infection or chemotherapy.[2]",
+                            "<info> In B lymphocytopenia, there are too few B lymphocytes, but possibly normal numbers of other lymphocytes. It causes, and manifests as, a humoral immune deficiency. This is usually caused by medications that suppress the immune system.[citation needed]",
+                            "<info> In NK lymphocytopenia, there are too few natural killer cells, but normal numbers of other lymphocytes.  This is very rare.[citation needed]"
+                        ]
+                    },
+                    "Causes": {
+                        "content": [
+                            "Lymphocytopenia is commonly caused by a recent infection, such as COVID-19.[3]",
+                            "Lymphocytopenia, but not idiopathic CD4+ lymphocytopenia, is associated with corticosteroid use, infections with HIV and other viral, bacterial, and fungal agents, malnutrition, systemic lupus erythematosus,[4] severe stress,[5] intense or prolonged physical exercise (due to cortisol release),[6] rheumatoid arthritis, sarcoidosis,[7] multiple sclerosis,[8] and iatrogenic (caused by other medical treatments) conditions.",
+                            "Lymphocytopenia is a frequent, temporary result from many types of chemotherapy, such as with cytotoxic agents or immunosuppressive drugs. Some malignancies that have spread to involve the bone marrow, such as leukemia or advanced Hodgkin's disease,[9][10] also cause lymphocytopenia.",
+                            "Another cause is infection with Influenza A virus subtype H1N1 (and other subtypes of the Influenza A virus) and is then often associated with Monocytosis;[11] H1N1 was responsible for the Spanish flu, the 2009 flu pandemic and in 2016 for the Influenza-epidemic in Brazil.[12] The SARS disease caused lymphocytopenia.[13] Among patients with laboratory-confirmed COVID-19 in Wuhan China through January 29th, 2020, 83.2 percent had Lymphocytopenia at admission.[14]",
+                            "Large doses of radiation, such as those involved with nuclear accidents or medical whole body radiation, may cause lymphocytopenia.[15]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "Lymphocytopenia is diagnosed when the complete blood count shows a lymphocyte count lower than the age-appropriate reference interval (for example, below 0.9 billion/L in an adult).[citation needed]"
+                        ]
+                    },
+                    "Other animals": {
+                        "content": [
+                            "Lymphocytopenia caused by Feline Leukemia Virus and Feline immunodeficiency virus retroviral infections is treated with Lymphocyte T-Cell Immune Modulator.[16]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Lymphocytopenia\". National Heart, Lung and Blood Institute. NIH. Retrieved 10 February 2020.",
+                            "<info> ^ Malaspina A, Moir S, Chaitt DG, Rehm CA, Kottilil S, Falloon J, Fauci AS (March 2007). \"Idiopathic CD4+ T lymphocytopenia is associated with increases in immature/transitional B cells and serum levels of IL-7\". Blood. 109 (5): 2086–8. doi:10.1182/blood-2006-06-031385. PMC 1801046. PMID 17053062.",
+                            "<info> ^ Guo Z, Zhang Z, Prajapati M, Li Y (September 2021). \"Lymphopenia Caused by Virus Infections and the Mechanisms Beyond\". Viruses. 13 (9): 1876. doi:10.3390/v13091876. PMC 8473169. PMID 34578457.",
+                            "<info> ^ Ng WL, Chu CM, Wu AK, Cheng VC, Yuen KY (January 2006). \"Lymphopenia at presentation is associated with increased risk of infections in patients with systemic lupus erythematosus\". QJM. 99 (1): 37–47. doi:10.1093/qjmed/hci155. PMID 16371405.",
+                            "<info> ^ Lymphocytopenia from the Merck Manual Home Health Handbook",
+                            "<info> ^ Robson PJ, Blannin AK, Walsh NP, Castell LM, Gleeson M (February 1999). \"Effects of exercise intensity, duration and recovery on in vitro neutrophil function in male athletes\". International Journal of Sports Medicine. 20 (2). Thieme: 128–35. doi:10.1055/s-2007-971106. PMID 10190775. S2CID 2572545.",
+                            "<info> ^ Hedfors E, Holm G, Pettersson D (June 1974). \"Lymphocyte subpopulations in sarcoidosis\". Clinical and Experimental Immunology. 17 (2): 219–26. PMC 1554022. PMID 4549571.",
+                            "<info> ^ Lim ZW, Elwood E, Naveed H, Galea I (October 2016). \"Lymphopenia in treatment-naive relapsing multiple sclerosis\". Neurology. 3 (5) e275. doi:10.1212/NXI.0000000000000275. PMC 4982853. PMID 27559542.",
+                            "<info> ^ Faguet GB (October 1975). \"Quantitation of immunocompetence in Hodgkin's disease\". The Journal of Clinical Investigation. 56 (4): 951–7. doi:10.1172/JCI108175. PMC 301951. PMID 1159096.",
+                            "<info> ^ Weiss RB, Brunning RD, Kennedy BJ (December 1975). \"Hodgkin's disease in the bone marrow\". Cancer. 36 (6): 2077–83. doi:10.1002/cncr.2820360924. PMID 1203865. S2CID 6194154.",
+                            "<info> ^ Merekoulias G, Alexopoulos EC, Belezos T, Panagiotopoulou E, Jelastopulu DM (March 2010). \"Lymphocyte to monocyte ratio as a screening tool for influenza\". PLOS Currents. 2 RRN1154. doi:10.1371/currents.rrn1154. PMC 2847387. PMID 20383263.",
+                            "<info> ^ Over 1,000 Deaths from H1N1 Outbreak in Brazil Archived 2016-09-11 at the Wayback Machine (article from 12 July 2016)",
+                            "<info> ^ Low, Donald (2004). \"Sars: Lessons from Toronto\". Learning from SARS: Preparing for the Next Disease Outbreak: Workshop Summary. National Academies Press (US). pp. 63–71.",
+                            "<info> ^ Guan, Wei-jie (February 28, 2020). \"Clinical Characteristics of Coronavirus Disease 2019 in China\". New England Journal of Medicine. 382 (18): 1708–20. doi:10.1056/NEJMoa2002032. PMC 7092819. PMID 32109013.",
+                            "<info> ^ Venkatesulu BP, Mallick S, Lin SH, Krishnan S (Mar 2018). \"A systematic review of the influence of radiation-induced lymphopenia on survival outcomes in solid tumors\". Critical Reviews in Oncology/Hematology. 123: 42–51. doi:10.1016/j.critrevonc.2018.01.003. PMID 29482778.",
+                            "<info> ^ \"The Science Behind LTCI | Treatment for Cats with FIV and FeLV\". Archived from the original on 2013-07-02. Retrieved 2013-03-20."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

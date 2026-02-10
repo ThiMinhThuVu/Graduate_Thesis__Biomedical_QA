@@ -1,0 +1,103 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/alpha-aminoadipic_and_alpha-ketoadipic_aciduria": {
+                "title": "Alpha-aminoadipic and alpha-ketoadipic aciduria",
+                "url": "https://en.wikipedia.org/wiki/alpha-aminoadipic_and_alpha-ketoadipic_aciduria",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Alpha-aminoadipic and alpha-ketoadipic aciduria or 2-Aminoadipic-2-oxoadipic aciduria (AMOXAD) is a rare autosomal recessive metabolic disorder characterized by an increased urinary excretion of alpha-ketoadipic acid and alpha-aminoadipic acid. It is caused by mutations in DHTKD1, which encodes the E1 subunit of the oxoglutarate dehydrogenase complex (alpha-ketoglutarate dehydrogenase complex).[1]",
+                    "It is caused by defects in the degradation of the amino acids lysine and tryptophan. It is classified as an organic aciduria.[2] The condition leads to the accumulation of these metabolites in blood and urine.[3]",
+                    "",
+                    "=== Genetics ===",
+                    "The disorder stems from compound heterozygous mutation in the DHTKD1 gene, located on chromosome 10p14.[4] These mutations disrupt the function of the mitochondrial 2-oxoadipate dehydrogenase complex (OADHC), a multienzyme system critical for amino acid metabolism. This complex catalyzes the oxidative decarboxylation of 2-oxoadipate during lysine and tryptophan degradation. Its dysfunction leads to the accumulation of toxic intermediates, which impair mitochondrial function, causing oxidative stress and energy deficits.[2] Inheritance follows an autosomal recessive pattern, meaning an individual must inherit defective copies of the gene from both parents to manifest the disease.[3] While AMOXAD is extremely rare, many cases remain asymptomatic or are diagnosed later in life.[5]",
+                    "",
+                    "=== Pathophysiology ===",
+                    "The pathogenic mechanisms of AMOXAD are not fully elucidated. The lysine degradation pathway is a complex, multistep process involving mitochondrial, cytosolic, and peroxisomal enzymes. It begins with the conversion of lysine into saccharopine and subsequently into 2-aminoadipate-6-semialdehyde. This step is catalyzed by alpha-aminoadipic semialdehyde synthase (AASS). The semialdehyde is then converted to 2-aminoadipate, which is subsequently deaminatied into 2-oxoadipate. In the mitochondria, 2-oxoadipate is decarboxylated by the 2-oxoadipate dehydrogenase complex (OADHC), which depends on DHTKD1. This reaction yields glutaryl-CoA, which can enter the tricarboxylic acid cycle after conversion to acetyl-CoA. Mutations in DHTKD1 disrupt this crucial decarboxylation step, causing an accumulation of upstream metabolites such as 2-aminoadipate and 2-oxoadipate. This leads to mitochondrial dysfunction, increased oxidative stress, and toxic effects that contribute to the symptoms of AMOXAD. The pathway also intersects with the degradation of hydroxylysine and tryptophan, converging at the intermediates 2-aminoadipate and 2-oxoadipate.[6] The exact pathways through which these metabolites cause damage remain a focus of ongoing research.",
+                    "",
+                    "=== Clinical Symptoms ===",
+                    "Over 20 cases of AMOXAD have been identified, with varying outcomes. While some patients remain asymptomatic, others experience a range of neurological and muscular symptoms, including:[medical citation needed]",
+                    "<info> Hypotonia (reduced muscle tone)",
+                    "<info> Developmental delays or intellectual disabilities of varying severity",
+                    "<info> Behavioral abnormalities, such as attention deficit hyperactivity disorder (ADHD)[7][3]",
+                    "",
+                    "=== Diagnosis ===",
+                    "Diagnosis involves analyzing urinary organic acids using gas chromatography–mass spectrometry.[8] Characteristic findings include elevated levels of 2-oxoadipate and 2-hydroxyadipate in the urine and 2-aminoadipate in the blood.[3] Molecular genetic testing can confirm mutations in the DHTKD1 gene, solidifying the diagnosis.[medical citation needed]",
+                    "",
+                    "=== Treatment ===",
+                    "Currently, there is no specific cure for AMOXAD. Management focuses on symptomatic treatment and supportive care, including dietary modifications (e.g., a low-lysine diet) to reduce the accumulation of toxic metabolites. Antiepileptic drugs are used to manage seizures, but vigabatrin should be avoided due to its potential to exacerbate underlying metabolic imbalances or increase the accumulation of toxic intermediates in lysine metabolism.[2][3][9] Research is ongoing to identify targeted therapies that address the enzymatic deficiencies caused by DHTKD1 mutations.",
+                    "",
+                    "=== Prognosis ===",
+                    "The prognosis depends on the severity of symptoms. While asymptomatic individuals can lead normal lives, those with severe manifestations may experience significant developmental and neurological challenges.[3][medical citation needed]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Danhauser K, Sauer SW, Haack TB, Wieland T, Staufner C, Graf E, Zschocke J, Strom TM, Traub T, Okun JG, Meitinger T, Hoffmann GF, Prokisch H, Kölker S (Dec 2012). \"DHTKD1 mutations cause 2-aminoadipic and 2-oxoadipic aciduria\". American Journal of Human Genetics. 91 (6): 1082–7. doi:10.1016/j.ajhg.2012.10.006. PMC 3516599. PMID 23141293.",
+                    "<info> ^ a b c Danhauser, K.; Sauer, S. W.; Haack, T. B.; Wieland, T.; Staufner, C.; Graf, E.; Zschocke, J.; Strom, T. M.; Traub, T.; Okun, J. G.; Meitinger, T.; Hoffmann, G. F.; Prokisch, H.; Kölker, S. (December 2012). \"DHTKD1 Mutations Cause 2-Aminoadipic and 2-Oxoadipic Aciduria\". American Journal of Human Genetics. 91 (6): 1082–1087. doi:10.1016/j.ajhg.2012.10.006. PMC 3516599. PMID 23141293.",
+                    "<info> ^ a b c d e f \"2-Aminoadipic Aciduria 2 Oxoadipic Aciduria\". Metabolic Support UK. Retrieved 2024-12-09.",
+                    "<info> ^ \"ALPHA-AMINOADIPIC AND ALPHA-KETOADIPIC ACIDURIA; AAKAD\". omim.org. Retrieved 2024-12-10.",
+                    "<info> ^ \"2-aminoadipic 2-oxoadipic aciduria\".[dead link]",
+                    "<info> ^ \"The OADHC-dependent pathways of lysine and tryptophan catabolism interacting with energy metabolism\". ResearchGate. February 2020.",
+                    "<info> ^ \"Orphanet: 2-aminoadipic 2-oxoadipic aciduria\". www.orpha.net. Retrieved 2024-12-09.",
+                    "<info> ^ \"2-Aminoadipic 2-Oxoadipic Aciduria: Symptoms, & Treatment\". www.medicoverhospitals.in. Retrieved 2024-12-10.",
+                    "<info> ^ Vallat, C.; Rivier, F.; Bellet, H.; Magnan De Bornier, B.; Mion, H.; Echenne, B. (August 1996). \"Treatment with vigabatrin may mimic alpha-aminoadipic aciduria\". Epilepsia. 37 (8): 803–805. doi:10.1111/j.1528-1157.1996.tb00655.x. PMID 8764822.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Alpha-aminoadipic and alpha-ketoadipic aciduria or 2-Aminoadipic-2-oxoadipic aciduria (AMOXAD) is a rare autosomal recessive metabolic disorder characterized by an increased urinary excretion of alpha-ketoadipic acid and alpha-aminoadipic acid. It is caused by mutations in DHTKD1, which encodes the E1 subunit of the oxoglutarate dehydrogenase complex (alpha-ketoglutarate dehydrogenase complex).[1]",
+                            "It is caused by defects in the degradation of the amino acids lysine and tryptophan. It is classified as an organic aciduria.[2] The condition leads to the accumulation of these metabolites in blood and urine.[3]"
+                        ]
+                    },
+                    "Genetics": {
+                        "content": [
+                            "The disorder stems from compound heterozygous mutation in the DHTKD1 gene, located on chromosome 10p14.[4] These mutations disrupt the function of the mitochondrial 2-oxoadipate dehydrogenase complex (OADHC), a multienzyme system critical for amino acid metabolism. This complex catalyzes the oxidative decarboxylation of 2-oxoadipate during lysine and tryptophan degradation. Its dysfunction leads to the accumulation of toxic intermediates, which impair mitochondrial function, causing oxidative stress and energy deficits.[2] Inheritance follows an autosomal recessive pattern, meaning an individual must inherit defective copies of the gene from both parents to manifest the disease.[3] While AMOXAD is extremely rare, many cases remain asymptomatic or are diagnosed later in life.[5]"
+                        ]
+                    },
+                    "Pathophysiology": {
+                        "content": [
+                            "The pathogenic mechanisms of AMOXAD are not fully elucidated. The lysine degradation pathway is a complex, multistep process involving mitochondrial, cytosolic, and peroxisomal enzymes. It begins with the conversion of lysine into saccharopine and subsequently into 2-aminoadipate-6-semialdehyde. This step is catalyzed by alpha-aminoadipic semialdehyde synthase (AASS). The semialdehyde is then converted to 2-aminoadipate, which is subsequently deaminatied into 2-oxoadipate. In the mitochondria, 2-oxoadipate is decarboxylated by the 2-oxoadipate dehydrogenase complex (OADHC), which depends on DHTKD1. This reaction yields glutaryl-CoA, which can enter the tricarboxylic acid cycle after conversion to acetyl-CoA. Mutations in DHTKD1 disrupt this crucial decarboxylation step, causing an accumulation of upstream metabolites such as 2-aminoadipate and 2-oxoadipate. This leads to mitochondrial dysfunction, increased oxidative stress, and toxic effects that contribute to the symptoms of AMOXAD. The pathway also intersects with the degradation of hydroxylysine and tryptophan, converging at the intermediates 2-aminoadipate and 2-oxoadipate.[6] The exact pathways through which these metabolites cause damage remain a focus of ongoing research."
+                        ]
+                    },
+                    "Clinical Symptoms": {
+                        "content": [
+                            "Over 20 cases of AMOXAD have been identified, with varying outcomes. While some patients remain asymptomatic, others experience a range of neurological and muscular symptoms, including:[medical citation needed]",
+                            "<info> Hypotonia (reduced muscle tone)",
+                            "<info> Developmental delays or intellectual disabilities of varying severity",
+                            "<info> Behavioral abnormalities, such as attention deficit hyperactivity disorder (ADHD)[7][3]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "Diagnosis involves analyzing urinary organic acids using gas chromatography–mass spectrometry.[8] Characteristic findings include elevated levels of 2-oxoadipate and 2-hydroxyadipate in the urine and 2-aminoadipate in the blood.[3] Molecular genetic testing can confirm mutations in the DHTKD1 gene, solidifying the diagnosis.[medical citation needed]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Currently, there is no specific cure for AMOXAD. Management focuses on symptomatic treatment and supportive care, including dietary modifications (e.g., a low-lysine diet) to reduce the accumulation of toxic metabolites. Antiepileptic drugs are used to manage seizures, but vigabatrin should be avoided due to its potential to exacerbate underlying metabolic imbalances or increase the accumulation of toxic intermediates in lysine metabolism.[2][3][9] Research is ongoing to identify targeted therapies that address the enzymatic deficiencies caused by DHTKD1 mutations."
+                        ]
+                    },
+                    "Prognosis": {
+                        "content": [
+                            "The prognosis depends on the severity of symptoms. While asymptomatic individuals can lead normal lives, those with severe manifestations may experience significant developmental and neurological challenges.[3][medical citation needed]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Danhauser K, Sauer SW, Haack TB, Wieland T, Staufner C, Graf E, Zschocke J, Strom TM, Traub T, Okun JG, Meitinger T, Hoffmann GF, Prokisch H, Kölker S (Dec 2012). \"DHTKD1 mutations cause 2-aminoadipic and 2-oxoadipic aciduria\". American Journal of Human Genetics. 91 (6): 1082–7. doi:10.1016/j.ajhg.2012.10.006. PMC 3516599. PMID 23141293.",
+                            "<info> ^ a b c Danhauser, K.; Sauer, S. W.; Haack, T. B.; Wieland, T.; Staufner, C.; Graf, E.; Zschocke, J.; Strom, T. M.; Traub, T.; Okun, J. G.; Meitinger, T.; Hoffmann, G. F.; Prokisch, H.; Kölker, S. (December 2012). \"DHTKD1 Mutations Cause 2-Aminoadipic and 2-Oxoadipic Aciduria\". American Journal of Human Genetics. 91 (6): 1082–1087. doi:10.1016/j.ajhg.2012.10.006. PMC 3516599. PMID 23141293.",
+                            "<info> ^ a b c d e f \"2-Aminoadipic Aciduria 2 Oxoadipic Aciduria\". Metabolic Support UK. Retrieved 2024-12-09.",
+                            "<info> ^ \"ALPHA-AMINOADIPIC AND ALPHA-KETOADIPIC ACIDURIA; AAKAD\". omim.org. Retrieved 2024-12-10.",
+                            "<info> ^ \"2-aminoadipic 2-oxoadipic aciduria\".[dead link]",
+                            "<info> ^ \"The OADHC-dependent pathways of lysine and tryptophan catabolism interacting with energy metabolism\". ResearchGate. February 2020.",
+                            "<info> ^ \"Orphanet: 2-aminoadipic 2-oxoadipic aciduria\". www.orpha.net. Retrieved 2024-12-09.",
+                            "<info> ^ \"2-Aminoadipic 2-Oxoadipic Aciduria: Symptoms, & Treatment\". www.medicoverhospitals.in. Retrieved 2024-12-10.",
+                            "<info> ^ Vallat, C.; Rivier, F.; Bellet, H.; Magnan De Bornier, B.; Mion, H.; Echenne, B. (August 1996). \"Treatment with vigabatrin may mimic alpha-aminoadipic aciduria\". Epilepsia. 37 (8): 803–805. doi:10.1111/j.1528-1157.1996.tb00655.x. PMID 8764822."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

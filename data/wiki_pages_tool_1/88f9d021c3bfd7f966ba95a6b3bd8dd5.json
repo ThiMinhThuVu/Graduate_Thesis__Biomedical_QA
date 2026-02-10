@@ -1,0 +1,45 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/kras": {
+                "title": "Kras",
+                "url": "https://en.wikipedia.org/wiki/kras",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Kras may refer to:",
+                    "<info> Karst Plateau, known in Slovene as Kras, a limestone borderline plateau region in southwestern Slovenia",
+                    "<info> KRAS - a protein V-Ki-ras2 Kirsten rat sarcoma viral oncogene homolog",
+                    "<info> Kras Stadion, a stadium in Volendam, Netherlands",
+                    "<info> Kras, Istria County [hr], a village near Buzet, Istria County, Croatia",
+                    "<info> Kras, Krk, a village near Dobrinj, Primorje-Gorski Kotar County, Croatia",
+                    "<info> Kraš, Croatian food company",
+                    "<info> Mustang Beach Airport, Port Aransas, Mustang Island, Texas (designated KRAS)",
+                    "",
+                    "=== See also ===",
+                    "<info> All pages with titles containing Kras",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Kras may refer to:",
+                            "<info> Karst Plateau, known in Slovene as Kras, a limestone borderline plateau region in southwestern Slovenia",
+                            "<info> KRAS - a protein V-Ki-ras2 Kirsten rat sarcoma viral oncogene homolog",
+                            "<info> Kras Stadion, a stadium in Volendam, Netherlands",
+                            "<info> Kras, Istria County [hr], a village near Buzet, Istria County, Croatia",
+                            "<info> Kras, Krk, a village near Dobrinj, Primorje-Gorski Kotar County, Croatia",
+                            "<info> Kraš, Croatian food company",
+                            "<info> Mustang Beach Airport, Port Aransas, Mustang Island, Texas (designated KRAS)"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> All pages with titles containing Kras"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

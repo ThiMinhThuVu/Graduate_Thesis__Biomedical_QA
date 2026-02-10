@@ -1,0 +1,227 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/b_vitamins": {
+                "title": "B vitamins",
+                "url": "https://en.wikipedia.org/wiki/b_vitamins",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "B vitamins are a class of water-soluble vitamins that play important roles in cell metabolism and synthesis of red blood cells.[1][2] They are a chemically diverse class of compounds.[1]",
+                    "Dietary supplements containing all eight are referred to as a vitamin B complex. Individual B vitamins are referred to by B-number or by chemical name, such as B1 for thiamine, B2 for riboflavin, and B3 for niacin,[1][2] while some are more commonly recognized by name than by number, such as pantothenic acid (B5), biotin (B7), and folate (B9).[1] B vitamins are present in protein-rich foods, such as fish, poultry, meat, dairy products, and eggs; they are also found in leafy green vegetables, beans, and peas.[1] Fortified foods, such as breakfast cereals, baked products, and infant formulas, may contain B vitamins.[1]",
+                    "Each B vitamin is either a cofactor (generally a coenzyme) for key metabolic processes or is a precursor needed to make one.[1][2]",
+                    "",
+                    "=== List of B vitamins ===",
+                    "Note: Other substances once thought to be vitamins were given B-numbers, but were disqualified once discovered to be either manufactured by the body or not essential for life. See § Related compounds for numbers 4, 8, 10, 11, and others.",
+                    "",
+                    "=== Sources ===",
+                    "B vitamins are found in abundance in meat, eggs, and dairy products.[2] Processed carbohydrates such as sugar and white flour tend to have lower B vitamin content than their unprocessed counterparts. For this reason, it is common in many countries (including the United States) that the B vitamins thiamine, riboflavin, niacin, and folic acid are added back to white flour after processing. This is referred to as \"enriched flour\" on food labels. B vitamins are particularly concentrated in meat such as turkey, tuna and liver.[3]",
+                    "Sources for B vitamins also include spinach, legumes (pulses or beans), whole grains, asparagus, potatoes, bananas, chili peppers, breakfast cereals.[2] \nThe B12 vitamin is not abundantly available from plant products[4] (although it has been found in moderate abundance in fermented vegetable products, certain seaweeds, and in certain mushrooms, with the bioavailability of the vitamin in these cases remaining uncertain),[5] making B12 deficiency a legitimate concern for those maintaining a vegan diet. Manufacturers of plant-based foods will sometimes report B12 content, leading to confusion about what sources yield B12. The confusion arises because the standard US Pharmacopeia (USP) method for measuring the B12 content does not measure the B12 directly. Instead, it measures a bacterial response to the food. Chemical variants of the B12 vitamin found in plant sources are active for bacteria, but cannot be used by the human body. This same phenomenon can cause significant over-reporting of B12 content in other types of foods as well.[6]",
+                    "A common way to increase vitamin B intake is by using dietary supplements. B vitamins are commonly added to energy drinks, many of which have been marketed with large amounts of B vitamins.[7]",
+                    "Because they are soluble in water, excess B vitamins are generally readily excreted, although individual absorption, use and metabolism may vary.[7] The elderly and athletes may need to supplement their intake of B12 and other B vitamins due to problems in absorption and increased needs for energy production.[medical citation needed] In cases of severe deficiency, B vitamins, especially B12, may also be delivered by injection to reverse deficiencies.[8][unreliable medical source?] Both type 1 and type 2 diabetics may also be advised to supplement thiamine based on high prevalence of low plasma thiamine concentration and increased thiamine clearance associated with diabetes.[9] Also, folate deficiency in early embryo development has been linked to neural tube defects. Thus, women planning to become pregnant are usually encouraged to increase daily dietary folate intake or take a supplement.[10]",
+                    "",
+                    "=== Molecular functions ===",
+                    "To the right, a diagram of some of the major B vitamins (2, 3, 5, 9, and 12) are shown as precursors for certain essential biochemical reactants (FAD, NAD+, coenzyme A, and heme B respectively). The structural similarities between them are highlighted, which illustrates the precursor nature of many B vitamins while also showing the functionality of the end product used by essential reactions to support human, animal, or cellular life.",
+                    "FAD, NAD+, and coenzyme A are all essential for the catabolic release of free energy (dG) to power the activity of the cell and more complex life forms. See the article on Catabolism for more details on how these three essential biochemical reactants help support life.",
+                    "Tetrahydrofolate is a necessary co-reactant for synthesizing some amino acids, such as glycine. Heme B is the porphyrin derivative macrocycle molecule that holds the iron atom in place in hemoglobin, allowing for the transportation of oxygen through blood.",
+                    "",
+                    "=== Deficiencies ===",
+                    "Several named vitamin deficiency diseases may result from the lack of sufficient B vitamins.[2] Deficiencies of other B vitamins result in symptoms that are not part of a named deficiency disease.",
+                    "",
+                    "=== Side effects ===",
+                    "Because water-soluble B vitamins are eliminated in the urine, taking large doses of most B vitamins usually only produces transient side effects (with the only exception being pyridoxine). General side effects may include restlessness, nausea, and insomnia. These side effects are almost always caused by dietary supplements and not food.",
+                    "",
+                    "=== Related compounds ===",
+                    "Many of the following substances have been referred to as vitamins as they were once believed to be vitamins. They are no longer considered as such, and the numbers that were assigned to them now form the \"gaps\" in the true series of B-complex vitamins described above (for example, there is no vitamin B4). Some of them, though not essential to humans, are essential in the diets of other organisms; others have no known nutritional value and may even be toxic under certain conditions.",
+                    "<info> Vitamin B4: can refer to the distinct chemicals choline,[33] adenine, or carnitine.[34][35]\nCholine is synthesized by the human body, but not sufficiently to maintain good health, and is now considered an essential dietary nutrient.[36]\nAdenine is a nucleobase synthesized by the human body.[37]\nCarnitine is an essential dietary nutrient for certain worms, but not for humans.[38]",
+                    "<info> Vitamin B8: adenosine monophosphate (AMP), also known as adenylic acid.[39] Vitamin B8 may also refer to inositol.[40]",
+                    "<info> Vitamin B10: para-aminobenzoic acid (pABA or PABA), a chemical component of the folate molecule produced by plants and bacteria, and found in many foods.[41][42] It is best known as a UV-blocking sunscreen applied to the skin, and is sometimes taken orally for certain medical conditions.[41][43]",
+                    "<info> Vitamin B11: pteroylheptaglutamic acid (PHGA; chick growth factor). Vitamin Bc-conjugate was also found to be identical to PHGA. Derivative of folate (\"pteroylmonoglutamic acid\" in this nomenclature).[44]",
+                    "<info> Vitamin B13: orotic acid.[45]",
+                    "<info> Vitamin B14: cell proliferant, anti-anemia, rat growth factor, and antitumor pterin phosphate, named by Earl R. Norris. Isolated from human urine at 0.33ppm (later in blood), but later abandoned by him as further evidence did not confirm this. He also claimed this was not xanthopterin.",
+                    "<info> Vitamin B15: pangamic acid,[45] also known as pangamate. Promoted in various forms as a dietary supplement and drug; considered unsafe and subject to seizure by the US Food and Drug Administration.[46]",
+                    "<info> Vitamin B16: dimethylglycine (DMG)[47] is synthesized by the human body from choline.",
+                    "<info> Vitamin B17: pseudoscientific name for the poisonous compound amygdalin, also known as \"laetrile\" or by the equally pseudoscientific name \"nitrilosides\" despite the fact that it is a single compound. Amygdalin can be found in various plants, but is most commonly extracted from apricot pits and other similar fruit kernels. Amygdalin is hydrolyzed by various intestinal enzymes to form, among other things, hydrogen cyanide, which is toxic to human beings when exposed to a high enough dosage. Some proponents claim that amygdalin is effective in cancer treatment and prevention, despite its toxicity and a lack of scientific evidence.[48]",
+                    "<info> Vitamin Bm: myo-inositol, also called \"mouse antialopaecia factor\".[49]",
+                    "<info> Vitamin Bp: \"antiperosis factor\", which prevents perosis, a leg disorder, in chicks; can be replaced by choline and manganese salts.[38][39][50]",
+                    "<info> Vitamin Bv: a type of B6 other than pyridoxine.",
+                    "<info> Vitamin BW: a type of biotin other than d-biotin.",
+                    "<info> Vitamin Bx: an alternative name for both pABA (see vitamin B10) and pantothenic acid.[38][43]",
+                    "<info> Choline is synthesized by the human body, but not sufficiently to maintain good health, and is now considered an essential dietary nutrient.[36]",
+                    "<info> Adenine is a nucleobase synthesized by the human body.[37]",
+                    "<info> Carnitine is an essential dietary nutrient for certain worms, but not for humans.[38]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d e f g Hanna M, Jaqua E, Nguyen V, Clay J (June 2022). \"B Vitamins: Functions and Uses in Medicine\". The Permanente Journal. 26 (2): 89–97. doi:10.7812/TPP/21.204. PMC 9662251. PMID 35933667.",
+                    "<info> ^ a b c d e f \"B vitamins\". MedlinePlus, National Library of Medicine, US National Institutes of Health. 23 September 2021. Retrieved 2 June 2024.",
+                    "<info> ^ Stipanuk, M.H. (2006). Biochemical, physiological, molecular aspects of human nutrition (2nd ed.). St Louis: Saunders Elsevier. p. 667. ISBN 9781416002093.",
+                    "<info> ^ Craig WJ (May 2009). \"Health effects of vegan diets\". The American Journal of Clinical Nutrition. 89 (5): 1627S–1633S. doi:10.3945/ajcn.2009.26736N. PMID 19279075.",
+                    "<info> ^ \"Vitamin B12 supplements are essential for vegans\". 14 February 2018.",
+                    "<info> ^ Herbert V (September 1988). \"Vitamin B-12: plant sources, requirements, and assay\". The American Journal of Clinical Nutrition. 48 (3 Suppl): 852–8. doi:10.1093/ajcn/48.3.852. PMID 3046314. Archived from the original on 24 February 2008.",
+                    "<info> ^ a b Woolston C (14 July 2008). \"B vitamins don't boost energy drinks' power\". Los Angeles Times. Archived from the original on 19 October 2008. Retrieved 8 October 2008.",
+                    "<info> ^ \"Vitamin B injections mentioned\". Archived from the original on 3 July 2008. Retrieved 29 July 2008.",
+                    "<info> ^ Thornalley PJ, Babaei-Jadidi R, Al Ali H, Rabbani N, Antonysunil A, Larkin J, et al. (October 2007). \"High prevalence of low plasma thiamine concentration in diabetes linked to a marker of vascular disease\". Diabetologia. 50 (10): 2164–70. doi:10.1007/s00125-007-0771-4. PMC 1998885. PMID 17676306.",
+                    "<info> ^ Shaw GM, Schaffer D, Velie EM, Morland K, Harris JA (May 1995). \"Periconceptional vitamin use, dietary folate, and the occurrence of neural tube defects\". Epidemiology. 6 (3): 219–26. doi:10.1097/00001648-199505000-00005. PMID 7619926. S2CID 2740838.",
+                    "<info> ^ Fattal-Valevski A (2011). \"Thiamin (vitamin B1)\". Journal of Evidence-Based Complementary & Alternative Medicine. 16 (1): 12–20. doi:10.1177/1533210110392941. S2CID 71436117.",
+                    "<info> ^ Guide to Nutritional Supplements. Academic Press. 2 September 2009. ISBN 978-0-12-375661-9.",
+                    "<info> ^ Whitney N, Rolfes S, Crowe T, Cameron-Smith D, Walsh A (2011). Understanding Nutrition. Melbourne: Cengage Learning.",
+                    "<info> ^ National Academy of Sciences. Institute of Medicine. Food and Nutrition Board, ed. (1998). \"Chapter 6 - Niacin\". Dietary Reference Intakes for Tjiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin and Choline. Washington, DC: National Academy Press.",
+                    "<info> ^ Schnepp, Zoe (2002). \"Pantothenic Acid\". University of Bristol. Archived from the original on 24 February 2021. Retrieved 16 September 2012 – via bris.ac.uk.",
+                    "<info> ^ Gropper S, Smith J (2009). Advanced nutrition and human metabolism. Belmont, California: Cengage Learning.",
+                    "<info> ^ \"Vitamin B6\". Micronutrient Information Center, Linus Pauling Institute, Oregon State University, Corvallis, OR. May 2014. Archived from the original on 14 March 2018. Retrieved 7 March 2017.",
+                    "<info> ^ Schnepp, Zoe (2002). \"Biotin\". University of Bristol. Archived from the original on 24 February 2021. Retrieved 17 September 2012 – via bris.ac.uk.",
+                    "<info> ^ National Academy of Sciences. Institute of Medicine. Food and Nutrition Board, ed. (1998). \"Chapter 8 - Folate\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin and Choline. Washington, DC: National Academy Press.",
+                    "<info> ^ Schnepp, Zoe (2002). \"Vitamin B12\". University of Bristol. Archived from the original on 24 February 2021. Retrieved 16 September 2012 – via bris.ac.uk.",
+                    "<info> ^ Sardesai, Vishwanath (11 April 2003). Introduction to Clinical Nutrition. CRC Press. ISBN 978-0-203-91239-3.",
+                    "<info> ^ a b \n\"Chapter 4 - Thiamin\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Food and Nutrition Board (Report). Institute of Medicine. Washington, DC: U.S. National Academy of Sciences Press. 1998. pp. 58–86. ISBN 978-0-309-06411-8. Archived from the original (PDF) on 18 June 2009. Retrieved 17 June 2009.",
+                    "<info> ^ a b \n\"Chapter 5 - Riboflavin\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Food and Nutrition Board (Report). Institute of Medicine. Washington, DC: U.S. National Academy of Sciences Press. 1998. pp. 87–122. ISBN 978-0-309-06411-8. Archived from the original (PDF) on 18 June 2009. Retrieved 17 June 2009.",
+                    "<info> ^ a b \n\"Chapter 6 - Niacin\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Food and Nutrition Board (Report). Institute of Medicine. Washington, DC: U.S. National Academy of Sciences Press. 1998. pp. 123–149. ISBN 978-0-309-06411-8. Archived from the original (PDF) on 18 June 2009. Retrieved 17 June 2009.",
+                    "<info> ^ \nNiaspan® 500 mg tablets: Niacin extended-release tablets (Rx only) (PDF). Highlights of prescribing information (drug information leaflet). Barceloneta, PR: Abbott Pharmaceuticals PR Ltd. December 2010 [1997]. 303-541207. Archived from the original (PDF) on 2012-06-08. Retrieved 2010-11-17 – via rxabbott.com.",
+                    "<info> ^ a b \n\"Chapter 8 - Folate\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Food and Nutrition Board (Report). Institute of Medicine. Washington, DC: U.S. National Academy of Sciences Press. 1998. pp. 196–305. ISBN 978-0-309-06411-8. Archived from the original (PDF) on 18 June 2009. Retrieved 17 June 2009.",
+                    "<info> ^ a b \n\"Chapter 9 - Vitamin B12\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Food and Nutrition Board (Report). Institute of Medicine. Washington, DC: U.S. National Academy of Sciences Press. 1998. p. 346. ISBN 978-0-309-06411-8. Archived from the original (PDF) on 11 October 2010. Retrieved 23 September 2010.",
+                    "<info> ^ \nDupré, A.; Albarel, N.; Bonafe, J.L.; Christol, B.; Lassere, J. (August 1979). \"Vitamin B-12 induced acnes\". Cutis. 24 (2): 210–211. ISSN 0011-4162. PMID 157854.",
+                    "<info> ^ Food and Nutrition Board, Institute of Medicine (1998). \"Biotin\". Dietary Reference Intakes: Thiamin, Riboflavin, Niacin, Vitamin B6, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Washington, DC: National Academy Press. pp. 374–389.",
+                    "<info> ^ Gyorgy P (December 1939). \"The Curative Factor (vitamin H) for Egg White Injury, with Particular Reference to Its Presence in Different Foodstuffs and in Yeast\". Journal of Biological Chemistry. 131 (2): 733–744. doi:10.1016/S0021-9258(18)73468-6.",
+                    "<info> ^ \"Dean Burk, 84, Chemist for Cancer Institute\". The New York Times. Associated Press. 10 October 1988. p. B8.",
+                    "<info> ^ \"The Nobel Prize and the Discovery of Vitamins\". The Nobel Prize. Archived from the original on 16 January 2018. Retrieved 15 February 2018.",
+                    "<info> ^ Manjit Rakkar & Keith Hillier (2007). \"Choline\". xPharm: The Comprehensive Pharmacology Reference: 1–4. doi:10.1016/B978-008055232-3.61454-0.",
+                    "<info> ^ Navarra T (1 January 2004). The Encyclopedia of Vitamins, Minerals, and Supplements. Infobase Publishing. p. 155. ISBN 978-1-4381-2103-1.",
+                    "<info> ^ Lundblad RL, Macdonald F (30 July 2010). Handbook of Biochemistry and Molecular Biology (Fourth ed.). CRC Press. pp. 251–. ISBN 978-1-4200-0869-2.",
+                    "<info> ^ Zeisel SH, da Costa KA (November 2009). \"Choline: an essential nutrient for public health\". Nutrition Reviews. 67 (11): 615–23. doi:10.1111/j.1753-4887.2009.00246.x. PMC 2782876. PMID 19906248.",
+                    "<info> ^ Reader V (1930). \"The assay of vitamin B(4)\". The Biochemical Journal. 24 (6): 1827–31. doi:10.1042/bj0241827. PMC 1254803. PMID 16744538.",
+                    "<info> ^ a b c d Bender DA (29 January 2009). A Dictionary of Food and Nutrition. Oxford University Press. p. 521. ISBN 978-0-19-157975-2.",
+                    "<info> ^ a b c Berdanier CD, Dwyer JT, Feldman EB (24 August 2007). Handbook of Nutrition and Food (Second ed.). CRC Press. p. 117. ISBN 978-1-4200-0889-0.",
+                    "<info> ^ \"Vitamin B8 (Inositol) Overview Information\". WebMD.com. WebMD, LLC.",
+                    "<info> ^ a b \"Vitamin B10 (Para–aminobenzoic acid (PABA)): uses, side effects, interactions and warnings\". WebMD.com. WebMD, LLC. Retrieved 24 January 2014.",
+                    "<info> ^ Capozzi V, Russo P, Dueñas MT, López P, Spano G (December 2012). \"Lactic acid bacteria producing B-group vitamins: a great potential for functional cereals products\" (PDF). Applied Microbiology and Biotechnology. 96 (6): 1383–94. doi:10.1007/s00253-012-4440-2. PMID 23093174. S2CID 1162368.",
+                    "<info> ^ a b \"Para-aminobenzoic acid\". Medline Plus Medical Encyclopedia. United States National Institutes of Health. Retrieved 24 January 2014.",
+                    "<info> ^ SPIES, TD; GARCIA LOPEZ, G (1947). \"A comparative study of the effectiveness of synthetic folic acid, pteroyldiglutamic acid, pteroyltriglutamic acid and pteroylheptaglutamic acid (Bc conjugate)\". Internationale Zeitschrift für Vitaminforschung. 19 (1–2): 1–12. PMID 18905002.",
+                    "<info> ^ a b Herbert V, Subak-Sharpe GJ (15 February 1995). Total Nutrition: The Only Guide You'll Ever Need - From The Icahn School of Medicine at Mount Sinai. St. Martin's Press. p. 98. ISBN 978-0-312-11386-5.",
+                    "<info> ^ \"CPG Sec. 457.100 Pangamic Acid and Pangamic Acid Products Unsafe for Food and Drug Use\". Compliance Policy Guidance Manual. US Food and Drug Administration. March 1995. Archived from the original on July 10, 2009. Retrieved 25 January 2014.",
+                    "<info> ^ a b Velisek J (24 December 2013). The Chemistry of Food. Wiley. p. 398. ISBN 978-1-118-38383-4.",
+                    "<info> ^ Lerner IJ (February 1984). \"The whys of cancer quackery\". Cancer. 53 (3 Suppl): 815–9. doi:10.1002/1097-0142(19840201)53:3+<815::AID-CNCR2820531334>3.0.CO;2-U. PMID 6362828. S2CID 36332694.",
+                    "<info> ^ Velisek J (24 December 2013). The Chemistry of Food. Wiley. p. 209. ISBN 978-1-118-38383-4.",
+                    "<info> ^ Bender DA (11 September 2003). Nutritional Biochemistry of the Vitamins. Cambridge University Press. p. 5. ISBN 978-1-139-43773-8.",
+                    "<info> ^ Carter HE, Bhattacharyya PK, Weidman KR, Fraenkel G (July 1952). \"Chemical studies on vitamin BT isolation and characterization as carnitine\". Archives of Biochemistry and Biophysics. 38 (1): 405–16. doi:10.1016/0003-9861(52)90047-7. PMID 12997117.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "B vitamins are a class of water-soluble vitamins that play important roles in cell metabolism and synthesis of red blood cells.[1][2] They are a chemically diverse class of compounds.[1]",
+                            "Dietary supplements containing all eight are referred to as a vitamin B complex. Individual B vitamins are referred to by B-number or by chemical name, such as B1 for thiamine, B2 for riboflavin, and B3 for niacin,[1][2] while some are more commonly recognized by name than by number, such as pantothenic acid (B5), biotin (B7), and folate (B9).[1] B vitamins are present in protein-rich foods, such as fish, poultry, meat, dairy products, and eggs; they are also found in leafy green vegetables, beans, and peas.[1] Fortified foods, such as breakfast cereals, baked products, and infant formulas, may contain B vitamins.[1]",
+                            "Each B vitamin is either a cofactor (generally a coenzyme) for key metabolic processes or is a precursor needed to make one.[1][2]"
+                        ]
+                    },
+                    "List of B vitamins": {
+                        "content": [
+                            "Note: Other substances once thought to be vitamins were given B-numbers, but were disqualified once discovered to be either manufactured by the body or not essential for life. See § Related compounds for numbers 4, 8, 10, 11, and others."
+                        ]
+                    },
+                    "Sources": {
+                        "content": [
+                            "B vitamins are found in abundance in meat, eggs, and dairy products.[2] Processed carbohydrates such as sugar and white flour tend to have lower B vitamin content than their unprocessed counterparts. For this reason, it is common in many countries (including the United States) that the B vitamins thiamine, riboflavin, niacin, and folic acid are added back to white flour after processing. This is referred to as \"enriched flour\" on food labels. B vitamins are particularly concentrated in meat such as turkey, tuna and liver.[3]",
+                            "Sources for B vitamins also include spinach, legumes (pulses or beans), whole grains, asparagus, potatoes, bananas, chili peppers, breakfast cereals.[2] \nThe B12 vitamin is not abundantly available from plant products[4] (although it has been found in moderate abundance in fermented vegetable products, certain seaweeds, and in certain mushrooms, with the bioavailability of the vitamin in these cases remaining uncertain),[5] making B12 deficiency a legitimate concern for those maintaining a vegan diet. Manufacturers of plant-based foods will sometimes report B12 content, leading to confusion about what sources yield B12. The confusion arises because the standard US Pharmacopeia (USP) method for measuring the B12 content does not measure the B12 directly. Instead, it measures a bacterial response to the food. Chemical variants of the B12 vitamin found in plant sources are active for bacteria, but cannot be used by the human body. This same phenomenon can cause significant over-reporting of B12 content in other types of foods as well.[6]",
+                            "A common way to increase vitamin B intake is by using dietary supplements. B vitamins are commonly added to energy drinks, many of which have been marketed with large amounts of B vitamins.[7]",
+                            "Because they are soluble in water, excess B vitamins are generally readily excreted, although individual absorption, use and metabolism may vary.[7] The elderly and athletes may need to supplement their intake of B12 and other B vitamins due to problems in absorption and increased needs for energy production.[medical citation needed] In cases of severe deficiency, B vitamins, especially B12, may also be delivered by injection to reverse deficiencies.[8][unreliable medical source?] Both type 1 and type 2 diabetics may also be advised to supplement thiamine based on high prevalence of low plasma thiamine concentration and increased thiamine clearance associated with diabetes.[9] Also, folate deficiency in early embryo development has been linked to neural tube defects. Thus, women planning to become pregnant are usually encouraged to increase daily dietary folate intake or take a supplement.[10]"
+                        ]
+                    },
+                    "Molecular functions": {
+                        "content": [
+                            "To the right, a diagram of some of the major B vitamins (2, 3, 5, 9, and 12) are shown as precursors for certain essential biochemical reactants (FAD, NAD+, coenzyme A, and heme B respectively). The structural similarities between them are highlighted, which illustrates the precursor nature of many B vitamins while also showing the functionality of the end product used by essential reactions to support human, animal, or cellular life.",
+                            "FAD, NAD+, and coenzyme A are all essential for the catabolic release of free energy (dG) to power the activity of the cell and more complex life forms. See the article on Catabolism for more details on how these three essential biochemical reactants help support life.",
+                            "Tetrahydrofolate is a necessary co-reactant for synthesizing some amino acids, such as glycine. Heme B is the porphyrin derivative macrocycle molecule that holds the iron atom in place in hemoglobin, allowing for the transportation of oxygen through blood."
+                        ]
+                    },
+                    "Deficiencies": {
+                        "content": [
+                            "Several named vitamin deficiency diseases may result from the lack of sufficient B vitamins.[2] Deficiencies of other B vitamins result in symptoms that are not part of a named deficiency disease."
+                        ]
+                    },
+                    "Side effects": {
+                        "content": [
+                            "Because water-soluble B vitamins are eliminated in the urine, taking large doses of most B vitamins usually only produces transient side effects (with the only exception being pyridoxine). General side effects may include restlessness, nausea, and insomnia. These side effects are almost always caused by dietary supplements and not food."
+                        ]
+                    },
+                    "Related compounds": {
+                        "content": [
+                            "Many of the following substances have been referred to as vitamins as they were once believed to be vitamins. They are no longer considered as such, and the numbers that were assigned to them now form the \"gaps\" in the true series of B-complex vitamins described above (for example, there is no vitamin B4). Some of them, though not essential to humans, are essential in the diets of other organisms; others have no known nutritional value and may even be toxic under certain conditions.",
+                            "<info> Vitamin B4: can refer to the distinct chemicals choline,[33] adenine, or carnitine.[34][35]\nCholine is synthesized by the human body, but not sufficiently to maintain good health, and is now considered an essential dietary nutrient.[36]\nAdenine is a nucleobase synthesized by the human body.[37]\nCarnitine is an essential dietary nutrient for certain worms, but not for humans.[38]",
+                            "<info> Vitamin B8: adenosine monophosphate (AMP), also known as adenylic acid.[39] Vitamin B8 may also refer to inositol.[40]",
+                            "<info> Vitamin B10: para-aminobenzoic acid (pABA or PABA), a chemical component of the folate molecule produced by plants and bacteria, and found in many foods.[41][42] It is best known as a UV-blocking sunscreen applied to the skin, and is sometimes taken orally for certain medical conditions.[41][43]",
+                            "<info> Vitamin B11: pteroylheptaglutamic acid (PHGA; chick growth factor). Vitamin Bc-conjugate was also found to be identical to PHGA. Derivative of folate (\"pteroylmonoglutamic acid\" in this nomenclature).[44]",
+                            "<info> Vitamin B13: orotic acid.[45]",
+                            "<info> Vitamin B14: cell proliferant, anti-anemia, rat growth factor, and antitumor pterin phosphate, named by Earl R. Norris. Isolated from human urine at 0.33ppm (later in blood), but later abandoned by him as further evidence did not confirm this. He also claimed this was not xanthopterin.",
+                            "<info> Vitamin B15: pangamic acid,[45] also known as pangamate. Promoted in various forms as a dietary supplement and drug; considered unsafe and subject to seizure by the US Food and Drug Administration.[46]",
+                            "<info> Vitamin B16: dimethylglycine (DMG)[47] is synthesized by the human body from choline.",
+                            "<info> Vitamin B17: pseudoscientific name for the poisonous compound amygdalin, also known as \"laetrile\" or by the equally pseudoscientific name \"nitrilosides\" despite the fact that it is a single compound. Amygdalin can be found in various plants, but is most commonly extracted from apricot pits and other similar fruit kernels. Amygdalin is hydrolyzed by various intestinal enzymes to form, among other things, hydrogen cyanide, which is toxic to human beings when exposed to a high enough dosage. Some proponents claim that amygdalin is effective in cancer treatment and prevention, despite its toxicity and a lack of scientific evidence.[48]",
+                            "<info> Vitamin Bm: myo-inositol, also called \"mouse antialopaecia factor\".[49]",
+                            "<info> Vitamin Bp: \"antiperosis factor\", which prevents perosis, a leg disorder, in chicks; can be replaced by choline and manganese salts.[38][39][50]",
+                            "<info> Vitamin Bv: a type of B6 other than pyridoxine.",
+                            "<info> Vitamin BW: a type of biotin other than d-biotin.",
+                            "<info> Vitamin Bx: an alternative name for both pABA (see vitamin B10) and pantothenic acid.[38][43]",
+                            "<info> Choline is synthesized by the human body, but not sufficiently to maintain good health, and is now considered an essential dietary nutrient.[36]",
+                            "<info> Adenine is a nucleobase synthesized by the human body.[37]",
+                            "<info> Carnitine is an essential dietary nutrient for certain worms, but not for humans.[38]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d e f g Hanna M, Jaqua E, Nguyen V, Clay J (June 2022). \"B Vitamins: Functions and Uses in Medicine\". The Permanente Journal. 26 (2): 89–97. doi:10.7812/TPP/21.204. PMC 9662251. PMID 35933667.",
+                            "<info> ^ a b c d e f \"B vitamins\". MedlinePlus, National Library of Medicine, US National Institutes of Health. 23 September 2021. Retrieved 2 June 2024.",
+                            "<info> ^ Stipanuk, M.H. (2006). Biochemical, physiological, molecular aspects of human nutrition (2nd ed.). St Louis: Saunders Elsevier. p. 667. ISBN 9781416002093.",
+                            "<info> ^ Craig WJ (May 2009). \"Health effects of vegan diets\". The American Journal of Clinical Nutrition. 89 (5): 1627S–1633S. doi:10.3945/ajcn.2009.26736N. PMID 19279075.",
+                            "<info> ^ \"Vitamin B12 supplements are essential for vegans\". 14 February 2018.",
+                            "<info> ^ Herbert V (September 1988). \"Vitamin B-12: plant sources, requirements, and assay\". The American Journal of Clinical Nutrition. 48 (3 Suppl): 852–8. doi:10.1093/ajcn/48.3.852. PMID 3046314. Archived from the original on 24 February 2008.",
+                            "<info> ^ a b Woolston C (14 July 2008). \"B vitamins don't boost energy drinks' power\". Los Angeles Times. Archived from the original on 19 October 2008. Retrieved 8 October 2008.",
+                            "<info> ^ \"Vitamin B injections mentioned\". Archived from the original on 3 July 2008. Retrieved 29 July 2008.",
+                            "<info> ^ Thornalley PJ, Babaei-Jadidi R, Al Ali H, Rabbani N, Antonysunil A, Larkin J, et al. (October 2007). \"High prevalence of low plasma thiamine concentration in diabetes linked to a marker of vascular disease\". Diabetologia. 50 (10): 2164–70. doi:10.1007/s00125-007-0771-4. PMC 1998885. PMID 17676306.",
+                            "<info> ^ Shaw GM, Schaffer D, Velie EM, Morland K, Harris JA (May 1995). \"Periconceptional vitamin use, dietary folate, and the occurrence of neural tube defects\". Epidemiology. 6 (3): 219–26. doi:10.1097/00001648-199505000-00005. PMID 7619926. S2CID 2740838.",
+                            "<info> ^ Fattal-Valevski A (2011). \"Thiamin (vitamin B1)\". Journal of Evidence-Based Complementary & Alternative Medicine. 16 (1): 12–20. doi:10.1177/1533210110392941. S2CID 71436117.",
+                            "<info> ^ Guide to Nutritional Supplements. Academic Press. 2 September 2009. ISBN 978-0-12-375661-9.",
+                            "<info> ^ Whitney N, Rolfes S, Crowe T, Cameron-Smith D, Walsh A (2011). Understanding Nutrition. Melbourne: Cengage Learning.",
+                            "<info> ^ National Academy of Sciences. Institute of Medicine. Food and Nutrition Board, ed. (1998). \"Chapter 6 - Niacin\". Dietary Reference Intakes for Tjiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin and Choline. Washington, DC: National Academy Press.",
+                            "<info> ^ Schnepp, Zoe (2002). \"Pantothenic Acid\". University of Bristol. Archived from the original on 24 February 2021. Retrieved 16 September 2012 – via bris.ac.uk.",
+                            "<info> ^ Gropper S, Smith J (2009). Advanced nutrition and human metabolism. Belmont, California: Cengage Learning.",
+                            "<info> ^ \"Vitamin B6\". Micronutrient Information Center, Linus Pauling Institute, Oregon State University, Corvallis, OR. May 2014. Archived from the original on 14 March 2018. Retrieved 7 March 2017.",
+                            "<info> ^ Schnepp, Zoe (2002). \"Biotin\". University of Bristol. Archived from the original on 24 February 2021. Retrieved 17 September 2012 – via bris.ac.uk.",
+                            "<info> ^ National Academy of Sciences. Institute of Medicine. Food and Nutrition Board, ed. (1998). \"Chapter 8 - Folate\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin and Choline. Washington, DC: National Academy Press.",
+                            "<info> ^ Schnepp, Zoe (2002). \"Vitamin B12\". University of Bristol. Archived from the original on 24 February 2021. Retrieved 16 September 2012 – via bris.ac.uk.",
+                            "<info> ^ Sardesai, Vishwanath (11 April 2003). Introduction to Clinical Nutrition. CRC Press. ISBN 978-0-203-91239-3.",
+                            "<info> ^ a b \n\"Chapter 4 - Thiamin\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Food and Nutrition Board (Report). Institute of Medicine. Washington, DC: U.S. National Academy of Sciences Press. 1998. pp. 58–86. ISBN 978-0-309-06411-8. Archived from the original (PDF) on 18 June 2009. Retrieved 17 June 2009.",
+                            "<info> ^ a b \n\"Chapter 5 - Riboflavin\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Food and Nutrition Board (Report). Institute of Medicine. Washington, DC: U.S. National Academy of Sciences Press. 1998. pp. 87–122. ISBN 978-0-309-06411-8. Archived from the original (PDF) on 18 June 2009. Retrieved 17 June 2009.",
+                            "<info> ^ a b \n\"Chapter 6 - Niacin\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Food and Nutrition Board (Report). Institute of Medicine. Washington, DC: U.S. National Academy of Sciences Press. 1998. pp. 123–149. ISBN 978-0-309-06411-8. Archived from the original (PDF) on 18 June 2009. Retrieved 17 June 2009.",
+                            "<info> ^ \nNiaspan® 500 mg tablets: Niacin extended-release tablets (Rx only) (PDF). Highlights of prescribing information (drug information leaflet). Barceloneta, PR: Abbott Pharmaceuticals PR Ltd. December 2010 [1997]. 303-541207. Archived from the original (PDF) on 2012-06-08. Retrieved 2010-11-17 – via rxabbott.com.",
+                            "<info> ^ a b \n\"Chapter 8 - Folate\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Food and Nutrition Board (Report). Institute of Medicine. Washington, DC: U.S. National Academy of Sciences Press. 1998. pp. 196–305. ISBN 978-0-309-06411-8. Archived from the original (PDF) on 18 June 2009. Retrieved 17 June 2009.",
+                            "<info> ^ a b \n\"Chapter 9 - Vitamin B12\". Dietary Reference Intakes for Thiamine, Riboflavin, Niacin, Vitamin B6, Folate, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Food and Nutrition Board (Report). Institute of Medicine. Washington, DC: U.S. National Academy of Sciences Press. 1998. p. 346. ISBN 978-0-309-06411-8. Archived from the original (PDF) on 11 October 2010. Retrieved 23 September 2010.",
+                            "<info> ^ \nDupré, A.; Albarel, N.; Bonafe, J.L.; Christol, B.; Lassere, J. (August 1979). \"Vitamin B-12 induced acnes\". Cutis. 24 (2): 210–211. ISSN 0011-4162. PMID 157854.",
+                            "<info> ^ Food and Nutrition Board, Institute of Medicine (1998). \"Biotin\". Dietary Reference Intakes: Thiamin, Riboflavin, Niacin, Vitamin B6, Vitamin B12, Pantothenic Acid, Biotin, and Choline. Washington, DC: National Academy Press. pp. 374–389.",
+                            "<info> ^ Gyorgy P (December 1939). \"The Curative Factor (vitamin H) for Egg White Injury, with Particular Reference to Its Presence in Different Foodstuffs and in Yeast\". Journal of Biological Chemistry. 131 (2): 733–744. doi:10.1016/S0021-9258(18)73468-6.",
+                            "<info> ^ \"Dean Burk, 84, Chemist for Cancer Institute\". The New York Times. Associated Press. 10 October 1988. p. B8.",
+                            "<info> ^ \"The Nobel Prize and the Discovery of Vitamins\". The Nobel Prize. Archived from the original on 16 January 2018. Retrieved 15 February 2018.",
+                            "<info> ^ Manjit Rakkar & Keith Hillier (2007). \"Choline\". xPharm: The Comprehensive Pharmacology Reference: 1–4. doi:10.1016/B978-008055232-3.61454-0.",
+                            "<info> ^ Navarra T (1 January 2004). The Encyclopedia of Vitamins, Minerals, and Supplements. Infobase Publishing. p. 155. ISBN 978-1-4381-2103-1.",
+                            "<info> ^ Lundblad RL, Macdonald F (30 July 2010). Handbook of Biochemistry and Molecular Biology (Fourth ed.). CRC Press. pp. 251–. ISBN 978-1-4200-0869-2.",
+                            "<info> ^ Zeisel SH, da Costa KA (November 2009). \"Choline: an essential nutrient for public health\". Nutrition Reviews. 67 (11): 615–23. doi:10.1111/j.1753-4887.2009.00246.x. PMC 2782876. PMID 19906248.",
+                            "<info> ^ Reader V (1930). \"The assay of vitamin B(4)\". The Biochemical Journal. 24 (6): 1827–31. doi:10.1042/bj0241827. PMC 1254803. PMID 16744538.",
+                            "<info> ^ a b c d Bender DA (29 January 2009). A Dictionary of Food and Nutrition. Oxford University Press. p. 521. ISBN 978-0-19-157975-2.",
+                            "<info> ^ a b c Berdanier CD, Dwyer JT, Feldman EB (24 August 2007). Handbook of Nutrition and Food (Second ed.). CRC Press. p. 117. ISBN 978-1-4200-0889-0.",
+                            "<info> ^ \"Vitamin B8 (Inositol) Overview Information\". WebMD.com. WebMD, LLC.",
+                            "<info> ^ a b \"Vitamin B10 (Para–aminobenzoic acid (PABA)): uses, side effects, interactions and warnings\". WebMD.com. WebMD, LLC. Retrieved 24 January 2014.",
+                            "<info> ^ Capozzi V, Russo P, Dueñas MT, López P, Spano G (December 2012). \"Lactic acid bacteria producing B-group vitamins: a great potential for functional cereals products\" (PDF). Applied Microbiology and Biotechnology. 96 (6): 1383–94. doi:10.1007/s00253-012-4440-2. PMID 23093174. S2CID 1162368.",
+                            "<info> ^ a b \"Para-aminobenzoic acid\". Medline Plus Medical Encyclopedia. United States National Institutes of Health. Retrieved 24 January 2014.",
+                            "<info> ^ SPIES, TD; GARCIA LOPEZ, G (1947). \"A comparative study of the effectiveness of synthetic folic acid, pteroyldiglutamic acid, pteroyltriglutamic acid and pteroylheptaglutamic acid (Bc conjugate)\". Internationale Zeitschrift für Vitaminforschung. 19 (1–2): 1–12. PMID 18905002.",
+                            "<info> ^ a b Herbert V, Subak-Sharpe GJ (15 February 1995). Total Nutrition: The Only Guide You'll Ever Need - From The Icahn School of Medicine at Mount Sinai. St. Martin's Press. p. 98. ISBN 978-0-312-11386-5.",
+                            "<info> ^ \"CPG Sec. 457.100 Pangamic Acid and Pangamic Acid Products Unsafe for Food and Drug Use\". Compliance Policy Guidance Manual. US Food and Drug Administration. March 1995. Archived from the original on July 10, 2009. Retrieved 25 January 2014.",
+                            "<info> ^ a b Velisek J (24 December 2013). The Chemistry of Food. Wiley. p. 398. ISBN 978-1-118-38383-4.",
+                            "<info> ^ Lerner IJ (February 1984). \"The whys of cancer quackery\". Cancer. 53 (3 Suppl): 815–9. doi:10.1002/1097-0142(19840201)53:3+<815::AID-CNCR2820531334>3.0.CO;2-U. PMID 6362828. S2CID 36332694.",
+                            "<info> ^ Velisek J (24 December 2013). The Chemistry of Food. Wiley. p. 209. ISBN 978-1-118-38383-4.",
+                            "<info> ^ Bender DA (11 September 2003). Nutritional Biochemistry of the Vitamins. Cambridge University Press. p. 5. ISBN 978-1-139-43773-8.",
+                            "<info> ^ Carter HE, Bhattacharyya PK, Weidman KR, Fraenkel G (July 1952). \"Chemical studies on vitamin BT isolation and characterization as carnitine\". Archives of Biochemistry and Biophysics. 38 (1): 405–16. doi:10.1016/0003-9861(52)90047-7. PMID 12997117."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

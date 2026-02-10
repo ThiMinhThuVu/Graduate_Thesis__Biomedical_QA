@@ -1,0 +1,65 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/plasma_protein": {
+                "title": "Plasma protein",
+                "url": "https://en.wikipedia.org/wiki/plasma_protein",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Plasma proteins, sometimes referred to as blood proteins, are proteins present in blood plasma. They perform many different functions, including transport of hormones, vitamins and minerals in activity and functioning of the immune system. Other blood proteins act as enzymes, complement, components, protease inhibitors or kinin precursors. Contrary to popular belief, haemoglobin is not a blood protein, as it is carried within red blood cells, rather than in the blood serum.",
+                    "Serum albumin accounts for 55% of blood proteins,[1] is a major contributor to maintaining the oncotic pressure of plasma and assists, as a carrier, in the transport of lipids and steroid hormones.  Globulins make up 38% of blood proteins and transport ions, hormones, and lipids assisting in immune function. Fibrinogen comprises 7% of blood proteins; conversion of fibrinogen to insoluble fibrin is essential for blood clotting. The remainder of the plasma proteins (1%) are regulatory proteins, such as enzymes, proenzymes, and hormones. All blood proteins are synthesized in liver except for the gamma globulins.[1]",
+                    "",
+                    "=== Families of blood proteins ===",
+                    "Examples of specific blood proteins:[citation needed]",
+                    "<info> Alpha 1 antitrypsin (neutralizes trypsin that has leaked from the digestive system)",
+                    "<info> Lipoproteins (chylomicrons, VLDL, LDL, HDL)",
+                    "",
+                    "=== Clinical significance ===",
+                    "Separating serum proteins by electrophoresis is a valuable diagnostic tool, as well as a way to monitor clinical progress. Current research regarding blood plasma proteins is centered on performing proteomics analyses of serum/plasma in the search for biomarkers. These efforts started with two-dimensional gel electrophoresis[2] efforts in the 1970s, and in more recent times this research has been performed using LC-tandem MS[3][4] based proteomics. The normal laboratory value of serum total protein is around 7 g/dL.[citation needed]",
+                    "Scientists are able to identify blood proteins using Photo-affinity labeling, a means of using photo-reactive ligands as a labeling agent to identify targeted proteins.[5]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Smith, Graham S.; Walter, Gail L.; Walker, Robin M. (2013-01-01), Haschek, Wanda M.; Rousseaux, Colin G.; Wallig, Matthew A. (eds.), \"Chapter 18 - Clinical Pathology in Non-Clinical Toxicology Testing\", Haschek and Rousseaux's Handbook of Toxicologic Pathology (Third Edition), Boston: Academic Press, pp. 565–594, doi:10.1016/b978-0-12-415759-0.00018-2, ISBN 978-0-12-415759-0, retrieved 2020-11-16{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                    "<info> ^ Anderson NL, Anderson NG (1977). \"High Resolution Two-Dimensional Electrophoresis of Human Plasma Proteins\". Proceedings of the National Academy of Sciences. 74 (12): 5421–5425. Bibcode:1977PNAS...74.5421A. doi:10.1073/pnas.74.12.5421. PMC 431746. PMID 271964.",
+                    "<info> ^ Adkins JN; et al. (2002). \"Toward a human blood serum proteome: analysis by multidimensional separation coupled with mass spectrometry\". Molecular & Cellular Proteomics. 1 (12): 947–955. doi:10.1074/mcp.M200066-MCP200. PMID 12543931.",
+                    "<info> ^ Malmström, E; Kilsgård, O; Hauri, S; Smeds, E; Herwald, H; Malmström, L; Malmström, J (January 2016). \"Large-scale inference of protein tissue origin in gram-positive sepsis plasma using quantitative targeted proteomics\". Nat Commun. 7 10261. Bibcode:2016NatCo...710261M. doi:10.1038/ncomms10261. PMC 4729823. PMID 26732734.",
+                    "<info> ^ Geyer, PE; Kulak, NA; Pichler, G; Holdt, LM; Teupser, D; Mann, M; Chuang (November 2013). \"Photoaffinity labeling of plasma proteins\". Molecules. 18 (11): 13831–13859. doi:10.3390/molecules181113831. PMC 6270137. PMID 24217326.",
+                    "<info> Clinical Chemistry : a laboratory perspective / [edited by] Wendy Arneson, Jean Brickell.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Plasma proteins, sometimes referred to as blood proteins, are proteins present in blood plasma. They perform many different functions, including transport of hormones, vitamins and minerals in activity and functioning of the immune system. Other blood proteins act as enzymes, complement, components, protease inhibitors or kinin precursors. Contrary to popular belief, haemoglobin is not a blood protein, as it is carried within red blood cells, rather than in the blood serum.",
+                            "Serum albumin accounts for 55% of blood proteins,[1] is a major contributor to maintaining the oncotic pressure of plasma and assists, as a carrier, in the transport of lipids and steroid hormones.  Globulins make up 38% of blood proteins and transport ions, hormones, and lipids assisting in immune function. Fibrinogen comprises 7% of blood proteins; conversion of fibrinogen to insoluble fibrin is essential for blood clotting. The remainder of the plasma proteins (1%) are regulatory proteins, such as enzymes, proenzymes, and hormones. All blood proteins are synthesized in liver except for the gamma globulins.[1]"
+                        ]
+                    },
+                    "Families of blood proteins": {
+                        "content": [
+                            "Examples of specific blood proteins:[citation needed]",
+                            "<info> Alpha 1 antitrypsin (neutralizes trypsin that has leaked from the digestive system)",
+                            "<info> Lipoproteins (chylomicrons, VLDL, LDL, HDL)"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "Separating serum proteins by electrophoresis is a valuable diagnostic tool, as well as a way to monitor clinical progress. Current research regarding blood plasma proteins is centered on performing proteomics analyses of serum/plasma in the search for biomarkers. These efforts started with two-dimensional gel electrophoresis[2] efforts in the 1970s, and in more recent times this research has been performed using LC-tandem MS[3][4] based proteomics. The normal laboratory value of serum total protein is around 7 g/dL.[citation needed]",
+                            "Scientists are able to identify blood proteins using Photo-affinity labeling, a means of using photo-reactive ligands as a labeling agent to identify targeted proteins.[5]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Smith, Graham S.; Walter, Gail L.; Walker, Robin M. (2013-01-01), Haschek, Wanda M.; Rousseaux, Colin G.; Wallig, Matthew A. (eds.), \"Chapter 18 - Clinical Pathology in Non-Clinical Toxicology Testing\", Haschek and Rousseaux's Handbook of Toxicologic Pathology (Third Edition), Boston: Academic Press, pp. 565–594, doi:10.1016/b978-0-12-415759-0.00018-2, ISBN 978-0-12-415759-0, retrieved 2020-11-16{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                            "<info> ^ Anderson NL, Anderson NG (1977). \"High Resolution Two-Dimensional Electrophoresis of Human Plasma Proteins\". Proceedings of the National Academy of Sciences. 74 (12): 5421–5425. Bibcode:1977PNAS...74.5421A. doi:10.1073/pnas.74.12.5421. PMC 431746. PMID 271964.",
+                            "<info> ^ Adkins JN; et al. (2002). \"Toward a human blood serum proteome: analysis by multidimensional separation coupled with mass spectrometry\". Molecular & Cellular Proteomics. 1 (12): 947–955. doi:10.1074/mcp.M200066-MCP200. PMID 12543931.",
+                            "<info> ^ Malmström, E; Kilsgård, O; Hauri, S; Smeds, E; Herwald, H; Malmström, L; Malmström, J (January 2016). \"Large-scale inference of protein tissue origin in gram-positive sepsis plasma using quantitative targeted proteomics\". Nat Commun. 7 10261. Bibcode:2016NatCo...710261M. doi:10.1038/ncomms10261. PMC 4729823. PMID 26732734.",
+                            "<info> ^ Geyer, PE; Kulak, NA; Pichler, G; Holdt, LM; Teupser, D; Mann, M; Chuang (November 2013). \"Photoaffinity labeling of plasma proteins\". Molecules. 18 (11): 13831–13859. doi:10.3390/molecules181113831. PMC 6270137. PMID 24217326.",
+                            "<info> Clinical Chemistry : a laboratory perspective / [edited by] Wendy Arneson, Jean Brickell."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/non-blanching_rash": {
+                "title": "Non-blanching rash",
+                "url": "https://en.wikipedia.org/wiki/non-blanching_rash",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A non-blanching rash (NBR) is a skin rash that does not fade when pressed with, and viewed through, a glass.",
+                    "It is a characteristic of both purpuric and petechial rashes.[1] Individual purpura measure 3–10 mm (0.3–1 cm, 3⁄32-3⁄8 in), whereas petechiae measure less than 3 mm.[2]",
+                    "A non-blanching rash can be a symptom of bacterial meningitis,[3] but this is not the exclusive cause.[1][4]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Wells, L. C.; Smith, J. C.; Weston, V. C.; Collier, J.; Rutter, N. (1 September 2001). \"The child with a non-blanching rash: how likely is meningococcal disease?\". Archives of Disease in Childhood. 85 (3): 218–222. doi:10.1136/adc.85.3.218. ISSN 1468-2044. PMC 1718924. PMID 11517104.",
+                    "<info> ^ Mitchell RS, Kumar V, Robbins SL, Abbas AK, Fausto N (2007). Robbins basic pathology (8th ed.). Saunders/Elsevier. pp. 10–11. ISBN 1-4160-2973-7.",
+                    "<info> ^ \"The meningitis glass test | Meningitis Now\". www.meningitisnow.org. Retrieved 26 October 2016.",
+                    "<info> ^ \"Management of the child with a non-blanching rash\" (PDF). Retrieved 26 October 2016.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A non-blanching rash (NBR) is a skin rash that does not fade when pressed with, and viewed through, a glass.",
+                            "It is a characteristic of both purpuric and petechial rashes.[1] Individual purpura measure 3–10 mm (0.3–1 cm, 3⁄32-3⁄8 in), whereas petechiae measure less than 3 mm.[2]",
+                            "A non-blanching rash can be a symptom of bacterial meningitis,[3] but this is not the exclusive cause.[1][4]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Wells, L. C.; Smith, J. C.; Weston, V. C.; Collier, J.; Rutter, N. (1 September 2001). \"The child with a non-blanching rash: how likely is meningococcal disease?\". Archives of Disease in Childhood. 85 (3): 218–222. doi:10.1136/adc.85.3.218. ISSN 1468-2044. PMC 1718924. PMID 11517104.",
+                            "<info> ^ Mitchell RS, Kumar V, Robbins SL, Abbas AK, Fausto N (2007). Robbins basic pathology (8th ed.). Saunders/Elsevier. pp. 10–11. ISBN 1-4160-2973-7.",
+                            "<info> ^ \"The meningitis glass test | Meningitis Now\". www.meningitisnow.org. Retrieved 26 October 2016.",
+                            "<info> ^ \"Management of the child with a non-blanching rash\" (PDF). Retrieved 26 October 2016."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

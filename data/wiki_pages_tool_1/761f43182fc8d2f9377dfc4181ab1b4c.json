@@ -1,0 +1,51 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/enzyme_inducer": {
+                "title": "Enzyme inducer",
+                "url": "https://en.wikipedia.org/wiki/enzyme_inducer",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "An enzyme inducer is a type of drug that increases the metabolic activity of an enzyme, either by binding to the enzyme and activating it, or by increasing the expression of the gene coding for the enzyme.[1][page needed] One of the examples of enzyme inducers can be Cytochrome P450[2] enzymes, which will help to metabolize the drugs faster in the organism.",
+                    "Enzyme inducers are important in the pharmaceutical field to learn drug interactions.[3] Studies show that certain drugs will increase the activity of the inducer, examples could be antibiotics.[4] It is the opposite of an enzyme repressor. There are specific types of enzyme inducers[5] that create cytoprotective pathways that play a role in prevention and treatment of cancer and other diseases including cardiovascular disease and neurodegenerative diseases.",
+                    "Enzyme inducers can be either naturally occurring or synthetically made. These inducers can be naturally occurring, like compounds in cruciferous vegetables, or synthetically developed for therapeutic purposes.",
+                    "",
+                    "=== See also ===",
+                    "<info> Regulation of gene expression",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Stanbury PF, Whitaker A, Hall SJ (2013). Principles of Fermentation Technology (2nd ed.). Elsevier. ISBN 9781483292915. Retrieved 1 August 2016.",
+                    "<info> ^ Jing Li; Chengde Zhang; Shiwen Wu, Jiao Xue; Ke Chen; Zixin Deng; Dongqing Zhu (May 5, 2025). \"Science Direct\". login.proxy.wexler.hunter.cuny.edu. Retrieved 2025-05-03.{{cite web}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> ^ Hakkola, Jukka; Hukkanen, Janne; Turpeinen, Miia; Pelkonen, Olavi (May 5, 2025). \"Inhibition and induction of CYP enzymes in humans: an update\". Archives of Toxicology. 94 (11): 3671–3722. doi:10.1007/s00204-020-02936-7. ISSN 1432-0738. PMC 7603454. PMID 33111191.",
+                    "<info> ^ Chandra, D, Kale, RK. \"Web of Science\". login.proxy.wexler.hunter.cuny.edu. Retrieved 2025-05-03.{{cite web}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> ^ Dinkova-Kostova, Albena T (2010). \"Exceptionally Potent Inducer of Cytoprotective Enzymes: ELUCIDATION OF THE STRUCTURAL FEATURES THAT DETERMINE INDUCER POTENCY AND REACTIVITY WITH Keap1\". The Journal of Biological Chemistry. 285 (44): 33747–33755. doi:10.1074/jbc.M110.163485. PMC 2962473. PMID 20801881.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "An enzyme inducer is a type of drug that increases the metabolic activity of an enzyme, either by binding to the enzyme and activating it, or by increasing the expression of the gene coding for the enzyme.[1][page needed] One of the examples of enzyme inducers can be Cytochrome P450[2] enzymes, which will help to metabolize the drugs faster in the organism.",
+                            "Enzyme inducers are important in the pharmaceutical field to learn drug interactions.[3] Studies show that certain drugs will increase the activity of the inducer, examples could be antibiotics.[4] It is the opposite of an enzyme repressor. There are specific types of enzyme inducers[5] that create cytoprotective pathways that play a role in prevention and treatment of cancer and other diseases including cardiovascular disease and neurodegenerative diseases.",
+                            "Enzyme inducers can be either naturally occurring or synthetically made. These inducers can be naturally occurring, like compounds in cruciferous vegetables, or synthetically developed for therapeutic purposes."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Regulation of gene expression"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Stanbury PF, Whitaker A, Hall SJ (2013). Principles of Fermentation Technology (2nd ed.). Elsevier. ISBN 9781483292915. Retrieved 1 August 2016.",
+                            "<info> ^ Jing Li; Chengde Zhang; Shiwen Wu, Jiao Xue; Ke Chen; Zixin Deng; Dongqing Zhu (May 5, 2025). \"Science Direct\". login.proxy.wexler.hunter.cuny.edu. Retrieved 2025-05-03.{{cite web}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> ^ Hakkola, Jukka; Hukkanen, Janne; Turpeinen, Miia; Pelkonen, Olavi (May 5, 2025). \"Inhibition and induction of CYP enzymes in humans: an update\". Archives of Toxicology. 94 (11): 3671–3722. doi:10.1007/s00204-020-02936-7. ISSN 1432-0738. PMC 7603454. PMID 33111191.",
+                            "<info> ^ Chandra, D, Kale, RK. \"Web of Science\". login.proxy.wexler.hunter.cuny.edu. Retrieved 2025-05-03.{{cite web}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> ^ Dinkova-Kostova, Albena T (2010). \"Exceptionally Potent Inducer of Cytoprotective Enzymes: ELUCIDATION OF THE STRUCTURAL FEATURES THAT DETERMINE INDUCER POTENCY AND REACTIVITY WITH Keap1\". The Journal of Biological Chemistry. 285 (44): 33747–33755. doi:10.1074/jbc.M110.163485. PMC 2962473. PMID 20801881."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

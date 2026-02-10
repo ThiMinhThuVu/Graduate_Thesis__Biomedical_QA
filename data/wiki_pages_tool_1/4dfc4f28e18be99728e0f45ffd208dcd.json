@@ -1,0 +1,43 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/7%ce%b1-hydroxy-4-cholesten-3-one": {
+                "title": "7α-Hydroxy-4-cholesten-3-one",
+                "url": "https://en.wikipedia.org/wiki/7%ce%b1-hydroxy-4-cholesten-3-one",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "7α-Hydroxy-4-cholesten-3-one is an intermediate in the biochemical synthesis of bile acids from cholesterol. Its precursor, 7α-hydroxycholesterol, is produced from cholesterol by hepatic cholesterol 7α-hydroxylase (CYP7A1).[1]",
+                    "It is metabolized by the enzyme 7α-hydroxycholest-4-en-3-one 12α-hydroxylase to 7α,12α-dihydroxycholest-4-en-3-one and then to cholic acid, the major primary bile acid in humans. Alternatively, it can be converted into 5β-cholestane-3α,7α-diol and then to chenodeoxycholic acid, the other major primary bile acid in humans.[1]",
+                    "Serum 7α-hydroxy-4-cholesten-3-one concentrations reflect the activity of the bile acid synthetic pathway. Serum 7α-hydroxy-4-cholesten-3-one values vary during the day as bile acid synthetic rates have a diurnal rhythm.[2]",
+                    "Elevated values are found in patients with bile acid malabsorption and may be useful in the diagnosis of this condition as high values are associated with low SeHCAT retention.[3]  The increase in serum 7α-hydroxy-4-cholesten-3-one concentrations reflects the loss of bile acids secondary to bile acid malabsorption or the increased synthesis found in primary bile acid diarrhea associated with impaired negative feedback of CYP7A1 by FGF19.[4]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Russell DW (2003). \"The enzymes, regulation, and genetics of bile acid synthesis\". Annual Review of Biochemistry. 72: 137–74. doi:10.1146/annurev.biochem.72.121801.161712. PMID 12543708.",
+                    "<info> ^ Gälman, C; Angelin, B; Rudling, M (2005). \"Bile acid synthesis in humans has a rapid diurnal variation that is asynchronous with cholesterol synthesis\". Gastroenterology. 129 (5): 1445–53. doi:10.1053/j.gastro.2005.09.009. PMID 16285946.",
+                    "<info> ^ Brydon, WG; Nyhlin, H; Eastwood, MA; Merrick, MV (1996). \"Serum 7 alpha-hydroxy-4-cholesten-3-one and selenohomocholyltaurine (SeHCAT) whole body retention in the assessment of bile acid induced diarrhoea\". European Journal of Gastroenterology & Hepatology. 8 (2): 117–23. doi:10.1097/00042737-199602000-00005. PMID 8723414. S2CID 23867181.",
+                    "<info> ^ Hofmann, AF; Mangelsdorf, DJ; Kliewer, SA (2009). \"Chronic diarrhea due to excessive bile acid synthesis and not defective ileal transport: a new syndrome of defective fibroblast growth factor 19 release\". Clinical Gastroenterology and Hepatology. 7 (11): 1151–4. doi:10.1016/j.cgh.2009.07.026. PMC 2850200. PMID 19665580.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "7α-Hydroxy-4-cholesten-3-one is an intermediate in the biochemical synthesis of bile acids from cholesterol. Its precursor, 7α-hydroxycholesterol, is produced from cholesterol by hepatic cholesterol 7α-hydroxylase (CYP7A1).[1]",
+                            "It is metabolized by the enzyme 7α-hydroxycholest-4-en-3-one 12α-hydroxylase to 7α,12α-dihydroxycholest-4-en-3-one and then to cholic acid, the major primary bile acid in humans. Alternatively, it can be converted into 5β-cholestane-3α,7α-diol and then to chenodeoxycholic acid, the other major primary bile acid in humans.[1]",
+                            "Serum 7α-hydroxy-4-cholesten-3-one concentrations reflect the activity of the bile acid synthetic pathway. Serum 7α-hydroxy-4-cholesten-3-one values vary during the day as bile acid synthetic rates have a diurnal rhythm.[2]",
+                            "Elevated values are found in patients with bile acid malabsorption and may be useful in the diagnosis of this condition as high values are associated with low SeHCAT retention.[3]  The increase in serum 7α-hydroxy-4-cholesten-3-one concentrations reflects the loss of bile acids secondary to bile acid malabsorption or the increased synthesis found in primary bile acid diarrhea associated with impaired negative feedback of CYP7A1 by FGF19.[4]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Russell DW (2003). \"The enzymes, regulation, and genetics of bile acid synthesis\". Annual Review of Biochemistry. 72: 137–74. doi:10.1146/annurev.biochem.72.121801.161712. PMID 12543708.",
+                            "<info> ^ Gälman, C; Angelin, B; Rudling, M (2005). \"Bile acid synthesis in humans has a rapid diurnal variation that is asynchronous with cholesterol synthesis\". Gastroenterology. 129 (5): 1445–53. doi:10.1053/j.gastro.2005.09.009. PMID 16285946.",
+                            "<info> ^ Brydon, WG; Nyhlin, H; Eastwood, MA; Merrick, MV (1996). \"Serum 7 alpha-hydroxy-4-cholesten-3-one and selenohomocholyltaurine (SeHCAT) whole body retention in the assessment of bile acid induced diarrhoea\". European Journal of Gastroenterology & Hepatology. 8 (2): 117–23. doi:10.1097/00042737-199602000-00005. PMID 8723414. S2CID 23867181.",
+                            "<info> ^ Hofmann, AF; Mangelsdorf, DJ; Kliewer, SA (2009). \"Chronic diarrhea due to excessive bile acid synthesis and not defective ileal transport: a new syndrome of defective fibroblast growth factor 19 release\". Clinical Gastroenterology and Hepatology. 7 (11): 1151–4. doi:10.1016/j.cgh.2009.07.026. PMC 2850200. PMID 19665580."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

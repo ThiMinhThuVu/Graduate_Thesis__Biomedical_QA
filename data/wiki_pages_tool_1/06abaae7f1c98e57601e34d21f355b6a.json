@@ -1,0 +1,43 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/small_cleaved_cells": {
+                "title": "Small cleaved cells",
+                "url": "https://en.wikipedia.org/wiki/small_cleaved_cells",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Small cleaved cells are a distinctive type of cell that appears in certain types of lymphoma.",
+                    "When used to uniquely identify a type of lymphoma, they are usually categorized as follicular (C82.0) or diffuse (C83.1) .",
+                    "The \"small cleaved cells\" are usually centrocytes that express B-cell markers such as CD20.  The disease is strongly correlated with the genetic translocation t(14;18), which results in juxtaposition of the bcl-2 proto-oncogene with the heavy chain JH locus, and thus in overexpression of bcl-2.  Bcl-2 is a well known anti-apoptotic gene, and thus its overexpression results in the \"failure to die\" motif of cancer seen in follicular lymphoma.",
+                    "Follicular lymphoma must be carefully monitored, as it often progresses into a more aggressive \"Diffuse Large B-Cell Lymphoma.\"",
+                    "",
+                    "=== External links ===",
+                    "<info> Abe M, Wakasa H (1994). \"Histogenesis and pathogenesis of follicular small cleaved cell lymphoma (FSCCL), diffuse small cleaved cell lymphoma (DSCCL) and intermediate lymphocytic lymphoma/lymphocytic lymphoma of intermediate differentiation (ILL/IDL)\". Fukushima J Med Sci. 40 (2): 85–101. PMID 7642169.",
+                    "<info> Abe M, Ono N, Tominaga K, Hojo H, Seto M, Fukuhara S, Wakasa H (1992). \"Histogenesis of diffuse small cleaved cell lymphoma. An immunohistochemical and molecular genetic (bcl-2 gene) study with comparison to follicular small cleaved cell lymphoma and mantle zone lymphoma\". Cancer. 70 (4): 821–9. doi:10.1002/1097-0142(19920815)70:4<821::AID-CNCR2820700417>3.0.CO;2-Y. PMID 1643614.",
+                    "<info> Lymphoma,+Small+Cleaved-Cell,+Follicular at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> Lymphoma,+Small+Cleaved-Cell,+Diffuse at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Small cleaved cells are a distinctive type of cell that appears in certain types of lymphoma.",
+                            "When used to uniquely identify a type of lymphoma, they are usually categorized as follicular (C82.0) or diffuse (C83.1) .",
+                            "The \"small cleaved cells\" are usually centrocytes that express B-cell markers such as CD20.  The disease is strongly correlated with the genetic translocation t(14;18), which results in juxtaposition of the bcl-2 proto-oncogene with the heavy chain JH locus, and thus in overexpression of bcl-2.  Bcl-2 is a well known anti-apoptotic gene, and thus its overexpression results in the \"failure to die\" motif of cancer seen in follicular lymphoma.",
+                            "Follicular lymphoma must be carefully monitored, as it often progresses into a more aggressive \"Diffuse Large B-Cell Lymphoma.\""
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Abe M, Wakasa H (1994). \"Histogenesis and pathogenesis of follicular small cleaved cell lymphoma (FSCCL), diffuse small cleaved cell lymphoma (DSCCL) and intermediate lymphocytic lymphoma/lymphocytic lymphoma of intermediate differentiation (ILL/IDL)\". Fukushima J Med Sci. 40 (2): 85–101. PMID 7642169.",
+                            "<info> Abe M, Ono N, Tominaga K, Hojo H, Seto M, Fukuhara S, Wakasa H (1992). \"Histogenesis of diffuse small cleaved cell lymphoma. An immunohistochemical and molecular genetic (bcl-2 gene) study with comparison to follicular small cleaved cell lymphoma and mantle zone lymphoma\". Cancer. 70 (4): 821–9. doi:10.1002/1097-0142(19920815)70:4<821::AID-CNCR2820700417>3.0.CO;2-Y. PMID 1643614.",
+                            "<info> Lymphoma,+Small+Cleaved-Cell,+Follicular at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> Lymphoma,+Small+Cleaved-Cell,+Diffuse at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

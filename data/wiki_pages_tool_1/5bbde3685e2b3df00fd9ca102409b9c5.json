@@ -1,0 +1,97 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/vero_cell": {
+                "title": "Vero cell",
+                "url": "https://en.wikipedia.org/wiki/vero_cell",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Vero cells are a lineage of cells used in cell cultures.[1] The 'Vero' lineage was isolated from kidney epithelial cells extracted from an African green monkey (Chlorocebus sp.; formerly called Cercopithecus aethiops, this group of monkeys has been split into several different species).  The lineage was developed on 27 March 1962 by Yasumura and Kawakita at the Chiba University in Chiba, Japan.[2]  The original cell line was named Vero after an abbreviation of verda reno, which means 'green kidney' in Esperanto, while vero itself means 'truth' in Esperanto.[3]",
+                    "",
+                    "=== Characteristics ===",
+                    "The Vero cell lineage is continuous and aneuploid, meaning that it has  an abnormal number of chromosomes. A continuous cell lineage can be replicated through many cycles of division and not become senescent.[4]\nVero cells are interferon-deficient; unlike normal mammalian cells, they do not secrete interferon alpha or beta when infected by viruses.[5] However, they still have the Interferon-alpha/beta receptor, so they respond normally when recombinant interferon is added to their culture media.",
+                    "The whole genome sequence of a Vero cell line was determined by Japanese investigators in 2014.[6] Chromosome 12 of Vero cells has a homozygous ~9-Mb deletion, causing the loss of the type I interferon gene cluster and cyclin-dependent kinase inhibitors CDKN2A and CDKN2B in the genome.[6] Although African green monkeys were previously classified as Cercopithecus aethiops, they have been placed within the genus Chlorocebus, which includes several species.[7] The genome analysis indicated that the Vero cell lineage is derived from a female Chlorocebus sabaeus.[6]",
+                    "",
+                    "=== Uses in research ===",
+                    "Vero cells are used for many purposes, including:",
+                    "<info> screening for the toxin of Escherichia coli, first named \"Vero toxin\" after this cell line, and later called \"Shiga-like toxin\" due to its similarity to Shiga toxin isolated from Shigella dysenteriae[6]",
+                    "<info> as host cells for growing viruses; for example, to measure replication in the presence or absence of a research pharmaceutical, the testing for the presence of rabies virus, or the growth of viral stocks for research purposes. As a recent example, CoronaVac, COVID-19 vaccine developed by Sinovac Biotech uses vero cells in production and \"Vero\" term can be seen on the vaccine container.",
+                    "<info> as host cells for eukaryotic parasites, specially of the trypanosomatids[6]",
+                    "",
+                    "=== Lineages ===",
+                    "<info> Vero (ATCC No. CCL-81)",
+                    "<info> Vero 76 (ATCC No. CRL-1587)",
+                    "<info> Vero E6, also known as Vero C1008 (ATCC No. CRL-1586)",
+                    "<info> Research strains transfected with viral genes:",
+                    "",
+                    "=== References ===",
+                    "<info> ^ History and Characterization of the Vero Cell Line -- A Report prepared by CDR Rebecca Sheets, Ph.D., USPHS CBER/OVRR/DVRPA/VVB for the Vaccines and Related Biological Products Advisory Committee Meeting to be held on May 12, 2000 OPEN SESSION www.fda.gov pdf",
+                    "<info> ^ Yasumura Y, Kawakita M (1963). \"The research for the SV40 by means of tissue culture technique\". Nippon Rinsho. 21 (6): 1201–1219.",
+                    "<info> ^ Shimizu B (1993). Seno K, Koyama H, Kuroki T (eds.). Manual of selected cultured cell lines for bioscience and biotechnology (in Japanese). Tokyo: Kyoritsu Shuppan. pp. 299–300. ISBN 978-4-320-05386-1.",
+                    "<info> ^ \"Main Types of Cell Culture\". Fundamental Techniques in Cell Culture: a Laboratory Handbook. Retrieved 2006-09-28.",
+                    "<info> ^ Desmyter J, Melnick JL, Rawls WE (October 1968). \"Defectiveness of Interferon Production and of Rubella Virus Interference in a Line of African Green Monkey Kidney Cells (Vero)\". J. Virol. 2 (10): 955–61. PMC 375423. PMID 4302013.",
+                    "<info> ^ a b c d e Osada N, Kohara A, Yamaji T, Hirayama N, Kasai F, Sekizuka T, Kuroda M, Hanada K (2014). \"The genome landscape of the African green monkey kidney-derived Vero cell line\". DNA Research. 21 (6): 673–83. doi:10.1093/dnares/dsu029. PMC 4263300. PMID 25267831.",
+                    "<info> ^ Haus T, Akom E, Agwanda B, Hofreiter M, Roos C, Zinner D (April 2013). \"Mitochondrial diversity and distribution of African green monkeys (chlorocebus gray, 1870)\". Am. J. Primatol. 75 (4): 350–60. doi:10.1002/ajp.22113. PMC 3613741. PMID 23307319.",
+                    "<info> ^ Forrester A, Farrell H, Wilkinson G, Kaye J, Davis-Poynter N, Minson T (January 1992). \"Construction and properties of a mutant of herpes simplex virus type 1 with glycoprotein H coding sequences deleted\". J. Virol. 66 (1): 341–8. PMC 238293. PMID 1309250.",
+                    "",
+                    "=== External links ===",
+                    "<info> Cellosaurus entry for Vero",
+                    "<info> Cellosaurus entry for Vero 76",
+                    "<info> Cellosaurus entry for Vero C1008",
+                    "<info> Cellosaurus entry for Vero F6",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Vero cells are a lineage of cells used in cell cultures.[1] The 'Vero' lineage was isolated from kidney epithelial cells extracted from an African green monkey (Chlorocebus sp.; formerly called Cercopithecus aethiops, this group of monkeys has been split into several different species).  The lineage was developed on 27 March 1962 by Yasumura and Kawakita at the Chiba University in Chiba, Japan.[2]  The original cell line was named Vero after an abbreviation of verda reno, which means 'green kidney' in Esperanto, while vero itself means 'truth' in Esperanto.[3]"
+                        ]
+                    },
+                    "Characteristics": {
+                        "content": [
+                            "The Vero cell lineage is continuous and aneuploid, meaning that it has  an abnormal number of chromosomes. A continuous cell lineage can be replicated through many cycles of division and not become senescent.[4]\nVero cells are interferon-deficient; unlike normal mammalian cells, they do not secrete interferon alpha or beta when infected by viruses.[5] However, they still have the Interferon-alpha/beta receptor, so they respond normally when recombinant interferon is added to their culture media.",
+                            "The whole genome sequence of a Vero cell line was determined by Japanese investigators in 2014.[6] Chromosome 12 of Vero cells has a homozygous ~9-Mb deletion, causing the loss of the type I interferon gene cluster and cyclin-dependent kinase inhibitors CDKN2A and CDKN2B in the genome.[6] Although African green monkeys were previously classified as Cercopithecus aethiops, they have been placed within the genus Chlorocebus, which includes several species.[7] The genome analysis indicated that the Vero cell lineage is derived from a female Chlorocebus sabaeus.[6]"
+                        ]
+                    },
+                    "Uses in research": {
+                        "content": [
+                            "Vero cells are used for many purposes, including:",
+                            "<info> screening for the toxin of Escherichia coli, first named \"Vero toxin\" after this cell line, and later called \"Shiga-like toxin\" due to its similarity to Shiga toxin isolated from Shigella dysenteriae[6]",
+                            "<info> as host cells for growing viruses; for example, to measure replication in the presence or absence of a research pharmaceutical, the testing for the presence of rabies virus, or the growth of viral stocks for research purposes. As a recent example, CoronaVac, COVID-19 vaccine developed by Sinovac Biotech uses vero cells in production and \"Vero\" term can be seen on the vaccine container.",
+                            "<info> as host cells for eukaryotic parasites, specially of the trypanosomatids[6]"
+                        ]
+                    },
+                    "Lineages": {
+                        "content": [
+                            "<info> Vero (ATCC No. CCL-81)",
+                            "<info> Vero 76 (ATCC No. CRL-1587)",
+                            "<info> Vero E6, also known as Vero C1008 (ATCC No. CRL-1586)",
+                            "<info> Research strains transfected with viral genes:"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ History and Characterization of the Vero Cell Line -- A Report prepared by CDR Rebecca Sheets, Ph.D., USPHS CBER/OVRR/DVRPA/VVB for the Vaccines and Related Biological Products Advisory Committee Meeting to be held on May 12, 2000 OPEN SESSION www.fda.gov pdf",
+                            "<info> ^ Yasumura Y, Kawakita M (1963). \"The research for the SV40 by means of tissue culture technique\". Nippon Rinsho. 21 (6): 1201–1219.",
+                            "<info> ^ Shimizu B (1993). Seno K, Koyama H, Kuroki T (eds.). Manual of selected cultured cell lines for bioscience and biotechnology (in Japanese). Tokyo: Kyoritsu Shuppan. pp. 299–300. ISBN 978-4-320-05386-1.",
+                            "<info> ^ \"Main Types of Cell Culture\". Fundamental Techniques in Cell Culture: a Laboratory Handbook. Retrieved 2006-09-28.",
+                            "<info> ^ Desmyter J, Melnick JL, Rawls WE (October 1968). \"Defectiveness of Interferon Production and of Rubella Virus Interference in a Line of African Green Monkey Kidney Cells (Vero)\". J. Virol. 2 (10): 955–61. PMC 375423. PMID 4302013.",
+                            "<info> ^ a b c d e Osada N, Kohara A, Yamaji T, Hirayama N, Kasai F, Sekizuka T, Kuroda M, Hanada K (2014). \"The genome landscape of the African green monkey kidney-derived Vero cell line\". DNA Research. 21 (6): 673–83. doi:10.1093/dnares/dsu029. PMC 4263300. PMID 25267831.",
+                            "<info> ^ Haus T, Akom E, Agwanda B, Hofreiter M, Roos C, Zinner D (April 2013). \"Mitochondrial diversity and distribution of African green monkeys (chlorocebus gray, 1870)\". Am. J. Primatol. 75 (4): 350–60. doi:10.1002/ajp.22113. PMC 3613741. PMID 23307319.",
+                            "<info> ^ Forrester A, Farrell H, Wilkinson G, Kaye J, Davis-Poynter N, Minson T (January 1992). \"Construction and properties of a mutant of herpes simplex virus type 1 with glycoprotein H coding sequences deleted\". J. Virol. 66 (1): 341–8. PMC 238293. PMID 1309250."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Cellosaurus entry for Vero",
+                            "<info> Cellosaurus entry for Vero 76",
+                            "<info> Cellosaurus entry for Vero C1008",
+                            "<info> Cellosaurus entry for Vero F6"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

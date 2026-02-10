@@ -1,0 +1,139 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/schirmer%27s_test": {
+                "title": "Schirmer's test",
+                "url": "https://en.wikipedia.org/wiki/schirmer%27s_test",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Schirmer's test determines whether the eye produces enough tears to keep it moist. This test is used when a person experiences very dry eyes or excessive watering of the eyes. It can cause damage to the cornea.[1] A negative (more than 10 mm of moisture on the Schirmer strip in 5 minutes) test result is normal. Both eyes normally secrete the same amount of tears.",
+                    "",
+                    "=== History ===",
+                    "The test is named after Otto Schirmer.[2] Historically, the strips have been manufactured from various materials, including blotting paper, litmus paper, and cigarette paper. Whatman standard No. 41 filter paper[3] and Black Ribbon No. 589[4] were later recommended as standardized materials. Manufacturers generally do not specify the exact origins of the materials they use, even though these papers are still commonly employed. As a result, Schirmer strips available on the market can differ visibly, even under simple inspection.[5] Such inconsistencies may alter test performance and potentially influence clinical interpretation.[6]",
+                    "",
+                    "=== Test procedure ===",
+                    "The test works by the principle of capillary action, which allows the water in tears to travel along the length of a paper test strip in an identical fashion as a horizontal capillary tube. The rate of travel along the test strip is proportional to the rate of tear production. The patient is instructed to look upward, and the patient's eyelid is pulled down. The bent end of the test strip is placed in the eye such that it rests between the palpebral conjunctiva of the lower eyelid and the bulbar conjunctiva of the eye. Schirmer's test uses paper strips inserted into the eye for several minutes to measure the production of tears. Both eyes are tested at the same time. Most often, this test consists of placing a small strip of filter paper inside the lower eyelid (inferior fornix).[citation needed]",
+                    "The eyes are closed for approximately 5 minutes. The paper is then removed and the amount of moisture is measured. After five minutes, the patient is asked to open both eyes and look upward so the test strips may be removed. The Schirmer test score is determined by the length of the moistened area of the strips (using the scale packaged with the strips)  The use of the anesthetic ensures that only basal tear secretion is being measured.[7]",
+                    "A young person normally moistens 15 mm of each paper strip. Because hypolacrimation occurs with aging, 33% of normal elderly persons may wet only 10 mm in 5 minutes. Persons with Sjögren's syndrome moisten less than 5 mm in 5 minutes.[citation needed]",
+                    "How to read results of the Schirmer's test:",
+                    "Notably, the closed-eye method is generally preferred over open-eye testing, as it accounts for variables such as humidity, temperature, tear evaporation, brightness, and tear-stimulating effects from the lid margin and eyelashes. Maintaining the eyes softly closed, rather than tightly shut, further reduces discomfort.[8] Gaze position has also been shown to affect Schirmer test results,[5] with higher values recorded when the test is performed with an inferior gaze.[9] Additionally, diurnal variations can influence visual function and ocular surface physiology in individuals with dry eye.[10]",
+                    "",
+                    "=== Benefits and limitations ===",
+                    "The Schirmer test is one of the three primary diagnostic assessments recommended by the Tear Film and Ocular Surface Society's Dry Eye Workshop II (TFOS DEWS II) report.[11] Cut-off values for diagnosing dry eye are variable, ranging from ≤10 mm over 5 minutes (TFOS DEWS II)[11] to 5–15 mm, depending on disease severity and testing methodology.[8] The test has been shown to be a robust predictor of dry eye disease severity, irrespective of the cut-off level used (5, 10, or 15 mm).[12]",
+                    "This test is straightforward, accessible, low-cost, and broadly adopted.[13] However, it has several limitations, including low reproducibility, limited sensitivity and specificity, a relatively long testing time (~5 minutes), the risk of evaporative loss, high variability, patient discomfort, uneven tear absorption by the strip, and no clearly defined cut-off value.[6] Despite these drawbacks, the Schirmer test is accepted as an effective tool for assessing  dry eye, particularly in severe cases.[14] In addition to their diagnostic use, Schirmer strips have been increasingly utilized for tear sampling, especially for analyzing proteins and metabolites.[13] Some pre-analytical and analytical factors influencing tear metabolomics using Schirmer strips in dry eye disease have been addressed previously.[6] Moreover, a workflow for tear proteome analysis has been established to facilitate biomarker discovery.[15]",
+                    "",
+                    "=== Alternatives ===",
+                    "With respect to its limitations, newer and improved tests of tear production and function are emerging.[citation needed]",
+                    "<info> One test measures an iron-binding molecule called lactoferrin. The amount of this molecule appears to be closely related to tear production. Patients with low tear production and dry eyes have low levels of this molecule. This test may be especially valuable for patients with dry eyes since it can point to specific treatment strategies for dry eye.",
+                    "<info> The tears may also be examined for their content of lysozyme, an enzyme normally found in tears.",
+                    "<info> Another test involves fluorescein eye drops, which contain a dye that is placed in the eye. The dye should drain with the tears through the lacrimal duct into the nose within 2 minutes. If patients do not have enough tears to flush the dye into the nose, this time will be longer. A new test is also available to more accurately measure the flow of dye out of the eye.",
+                    "",
+                    "=== Eye dryness ===",
+                    "Dry eyes can occur from conditions such as:[16]",
+                    "<info> Corneal ulcers and infections",
+                    "<info> Eye infections (for example conjunctivitis)",
+                    "<info> Secondary tearing deficiency associated with disorders such as – lymphoma, leukemia, GVHD (graft vs. host disease, after a transplant)",
+                    "<info> As a temporary or permanent side effect of LASER vision correction surgery such as LASIK or photorefractive keratectomy (PRK)",
+                    "The inability of tears to drain into the nose can occur with:[citation needed]",
+                    "<info> Blockage of the tear duct",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Savini, Giacomo (March 2008). \"The challenge of dry eye diagnosis\". Clinical Ophthalmology. 2 (1): 31–55. doi:10.2147/opth.s1496. PMC 2698717. PMID 19668387.",
+                    "<info> ^ \"Ophthalmologist and eponyms\".",
+                    "<info> ^ Schirmer, Otto (1903-06-01). \"Studien zur Physiologie und Pathologie der Tränenabsonderung und Tränenabfuhr\". Albrecht von Graefes Archiv für Ophthalmologie (in German). 56 (2): 197–291. doi:10.1007/BF01946264. ISSN 1435-702X.",
+                    "<info> ^ Halberg, G. Peter; Berens, Conrad (1961-05-01). \"Standardized Schirmer Tear Test Kit *\". American Journal of Ophthalmology. 51 (5): 840–842. doi:10.1016/0002-9394(61)91827-X. ISSN 0002-9394. PMID 13710674.",
+                    "<info> ^ a b García-Porta, Nery; Mann, Aisling; Sáez-Martínez, Virginia; Franklin, Val; Wolffsohn, James S.; Tighe, Brian (2018-02-01). \"The potential influence of Schirmer strip variables on dry eye disease characterisation, and on tear collection and analysis\". Contact Lens and Anterior Eye. 41 (1): 47–53. doi:10.1016/j.clae.2017.09.012. ISSN 1367-0484. PMID 28951004.",
+                    "<info> ^ a b c Yazdani, Mazyar; Elgstøen, Katja Benedikte Prestø; Utheim, Tor Paaske (2025-12-03). \"Schirmer Strips in Tear Metabolomics of Dry Eye Disease: Pre-analytical and Analytical Considerations\". Current Eye Research. 0: 1–8. doi:10.1080/02713683.2025.2596213. ISSN 0271-3683. PMID 41340136.",
+                    "<info> ^ a b c Brott, Nathan R.; Ronquillo, Yasmyne (2022). \"Schirmer Test\". StatPearls. StatPearls Publishing. PMID 32644585. NBK559159.  This article incorporates text available under the CC BY 4.0 license.",
+                    "<info> ^ a b Brott, Nathan R.; Zeppieri, Marco; Ronquillo, Yasmyne (2025), \"Schirmer Test\", StatPearls, Treasure Island (FL): StatPearls Publishing, PMID 32644585, retrieved 2025-12-06",
+                    "<info> ^ Bitton, Etty; Wittich, Walter (2014-08-01). \"Influence of eye position on the Schirmer tear test\". Contact Lens and Anterior Eye. 37 (4): 257–261. doi:10.1016/j.clae.2013.11.011. ISSN 1367-0484. PMID 24361097.",
+                    "<info> ^ Walker, Pamela M; Lane, Keith J; Ousler, George W; Abelson, Mark B (June 2010). \"Diurnal Variation of Visual Function and the Signs and Symptoms of Dry Eye\". Cornea. 29 (6): 607–612. doi:10.1097/ICO.0b013e3181c11e45. ISSN 0277-3740. PMID 20458235. Archived from the original on 2025-05-29.",
+                    "<info> ^ a b Wolffsohn, James S.; Arita, Reiko; Chalmers, Robin; Djalilian, Ali; Dogru, Murat; Dumbleton, Kathy; Gupta, Preeya K.; Karpecki, Paul; Lazreg, Sihem; Pult, Heiko; Sullivan, Benjamin D.; Tomlinson, Alan; Tong, Louis; Villani, Edoardo; Yoon, Kyung Chul (2017-07-01). \"TFOS DEWS II Diagnostic Methodology report\". The Ocular Surface. TFOS International Dry Eye WorkShop (DEWS II). 15 (3): 539–574. doi:10.1016/j.jtos.2017.05.001. ISSN 1542-0124. PMID 28736342.",
+                    "<info> ^ Yazdani, Mazyar; Chen, Xiangjun; Tashbayev, Behzod; Utheim, Øygunn A.; Ræder, Sten; Lagli, Neil; Stojanovic, Aleksandar; Dartt, Darlene A.; Utheim, Tor P. (2018-12-02). \"Tear Production Levels and Dry Eye Disease Severity in a Large Norwegian Cohort\". Current Eye Research. 43 (12): 1465–1470. doi:10.1080/02713683.2018.1514055. hdl:10852/71870. ISSN 0271-3683. PMID 30183390.",
+                    "<info> ^ a b Gijs, Marlies; van de Sande, Nienke; Bonnet, Clémence; Schmeetz, Jente; Fernandes, Rosa; Travé-Huarte, Sònia; Huertas-Bello, Marcela; Bo Chiang, Jeremy Chung; Boychev, Nikolay; Sharma, Shruti; Brignole-Baudouin, Françoise; Kessal, Karima; Lingor, Paul; Heunen, Maurice M. T. H.; Chen, Xiangjun (2025-05-01). \"A comprehensive scoping review of methodological approaches and clinical applications of tear fluid biomarkers\". Progress in Retinal and Eye Research. 106 101338. doi:10.1016/j.preteyeres.2025.101338. hdl:10261/385549. ISSN 1350-9462. PMID 39954936.",
+                    "<info> ^ Tsubota, K.; Xu, K. P.; Fujihara, T.; Katagiri, S.; Takeuchi, T. (February 1996). \"Decreased reflex tearing is associated with lymphocytic infiltration in lacrimal glands\". The Journal of Rheumatology. 23 (2): 313–320. ISSN 0315-162X. PMID 8882038.",
+                    "<info> ^ Comito, Rossana; Ciavarella, Carmen; Astolfi, Gloria; Conti, Matteo; Porru, Emanuele; Saverio Violante, Francesco; Versura, Piera (January 2025). \"Tear Sampling and Biomarker Discovery: A Robust Workflow for Routine Clinical Applications Using UHPLC-MS/MS and Schirmer Strips\". International Journal of Molecular Sciences. 26 (5): 2041. doi:10.3390/ijms26052041. ISSN 1422-0067. PMC 11900304. PMID 40076661.",
+                    "<info> ^ Ervin, Ann-Margret; Law, Andrew; Pucker, Andrew D (26 June 2017). \"Punctal occlusion for dry eye syndrome\". Cochrane Database of Systematic Reviews. 2017 (6) CD006775. doi:10.1002/14651858.cd006775.pub3. PMC 5568656. PMID 28649802.",
+                    "",
+                    "=== External links ===",
+                    "<info> MedlinePlus Encyclopedia: Schirmer's test",
+                    "<info> Photo Archived 2017-04-06 at the Wayback Machine",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Schirmer's test determines whether the eye produces enough tears to keep it moist. This test is used when a person experiences very dry eyes or excessive watering of the eyes. It can cause damage to the cornea.[1] A negative (more than 10 mm of moisture on the Schirmer strip in 5 minutes) test result is normal. Both eyes normally secrete the same amount of tears."
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "The test is named after Otto Schirmer.[2] Historically, the strips have been manufactured from various materials, including blotting paper, litmus paper, and cigarette paper. Whatman standard No. 41 filter paper[3] and Black Ribbon No. 589[4] were later recommended as standardized materials. Manufacturers generally do not specify the exact origins of the materials they use, even though these papers are still commonly employed. As a result, Schirmer strips available on the market can differ visibly, even under simple inspection.[5] Such inconsistencies may alter test performance and potentially influence clinical interpretation.[6]"
+                        ]
+                    },
+                    "Test procedure": {
+                        "content": [
+                            "The test works by the principle of capillary action, which allows the water in tears to travel along the length of a paper test strip in an identical fashion as a horizontal capillary tube. The rate of travel along the test strip is proportional to the rate of tear production. The patient is instructed to look upward, and the patient's eyelid is pulled down. The bent end of the test strip is placed in the eye such that it rests between the palpebral conjunctiva of the lower eyelid and the bulbar conjunctiva of the eye. Schirmer's test uses paper strips inserted into the eye for several minutes to measure the production of tears. Both eyes are tested at the same time. Most often, this test consists of placing a small strip of filter paper inside the lower eyelid (inferior fornix).[citation needed]",
+                            "The eyes are closed for approximately 5 minutes. The paper is then removed and the amount of moisture is measured. After five minutes, the patient is asked to open both eyes and look upward so the test strips may be removed. The Schirmer test score is determined by the length of the moistened area of the strips (using the scale packaged with the strips)  The use of the anesthetic ensures that only basal tear secretion is being measured.[7]",
+                            "A young person normally moistens 15 mm of each paper strip. Because hypolacrimation occurs with aging, 33% of normal elderly persons may wet only 10 mm in 5 minutes. Persons with Sjögren's syndrome moisten less than 5 mm in 5 minutes.[citation needed]",
+                            "How to read results of the Schirmer's test:",
+                            "Notably, the closed-eye method is generally preferred over open-eye testing, as it accounts for variables such as humidity, temperature, tear evaporation, brightness, and tear-stimulating effects from the lid margin and eyelashes. Maintaining the eyes softly closed, rather than tightly shut, further reduces discomfort.[8] Gaze position has also been shown to affect Schirmer test results,[5] with higher values recorded when the test is performed with an inferior gaze.[9] Additionally, diurnal variations can influence visual function and ocular surface physiology in individuals with dry eye.[10]"
+                        ]
+                    },
+                    "Benefits and limitations": {
+                        "content": [
+                            "The Schirmer test is one of the three primary diagnostic assessments recommended by the Tear Film and Ocular Surface Society's Dry Eye Workshop II (TFOS DEWS II) report.[11] Cut-off values for diagnosing dry eye are variable, ranging from ≤10 mm over 5 minutes (TFOS DEWS II)[11] to 5–15 mm, depending on disease severity and testing methodology.[8] The test has been shown to be a robust predictor of dry eye disease severity, irrespective of the cut-off level used (5, 10, or 15 mm).[12]",
+                            "This test is straightforward, accessible, low-cost, and broadly adopted.[13] However, it has several limitations, including low reproducibility, limited sensitivity and specificity, a relatively long testing time (~5 minutes), the risk of evaporative loss, high variability, patient discomfort, uneven tear absorption by the strip, and no clearly defined cut-off value.[6] Despite these drawbacks, the Schirmer test is accepted as an effective tool for assessing  dry eye, particularly in severe cases.[14] In addition to their diagnostic use, Schirmer strips have been increasingly utilized for tear sampling, especially for analyzing proteins and metabolites.[13] Some pre-analytical and analytical factors influencing tear metabolomics using Schirmer strips in dry eye disease have been addressed previously.[6] Moreover, a workflow for tear proteome analysis has been established to facilitate biomarker discovery.[15]"
+                        ]
+                    },
+                    "Alternatives": {
+                        "content": [
+                            "With respect to its limitations, newer and improved tests of tear production and function are emerging.[citation needed]",
+                            "<info> One test measures an iron-binding molecule called lactoferrin. The amount of this molecule appears to be closely related to tear production. Patients with low tear production and dry eyes have low levels of this molecule. This test may be especially valuable for patients with dry eyes since it can point to specific treatment strategies for dry eye.",
+                            "<info> The tears may also be examined for their content of lysozyme, an enzyme normally found in tears.",
+                            "<info> Another test involves fluorescein eye drops, which contain a dye that is placed in the eye. The dye should drain with the tears through the lacrimal duct into the nose within 2 minutes. If patients do not have enough tears to flush the dye into the nose, this time will be longer. A new test is also available to more accurately measure the flow of dye out of the eye."
+                        ]
+                    },
+                    "Eye dryness": {
+                        "content": [
+                            "Dry eyes can occur from conditions such as:[16]",
+                            "<info> Corneal ulcers and infections",
+                            "<info> Eye infections (for example conjunctivitis)",
+                            "<info> Secondary tearing deficiency associated with disorders such as – lymphoma, leukemia, GVHD (graft vs. host disease, after a transplant)",
+                            "<info> As a temporary or permanent side effect of LASER vision correction surgery such as LASIK or photorefractive keratectomy (PRK)",
+                            "The inability of tears to drain into the nose can occur with:[citation needed]",
+                            "<info> Blockage of the tear duct"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Savini, Giacomo (March 2008). \"The challenge of dry eye diagnosis\". Clinical Ophthalmology. 2 (1): 31–55. doi:10.2147/opth.s1496. PMC 2698717. PMID 19668387.",
+                            "<info> ^ \"Ophthalmologist and eponyms\".",
+                            "<info> ^ Schirmer, Otto (1903-06-01). \"Studien zur Physiologie und Pathologie der Tränenabsonderung und Tränenabfuhr\". Albrecht von Graefes Archiv für Ophthalmologie (in German). 56 (2): 197–291. doi:10.1007/BF01946264. ISSN 1435-702X.",
+                            "<info> ^ Halberg, G. Peter; Berens, Conrad (1961-05-01). \"Standardized Schirmer Tear Test Kit *\". American Journal of Ophthalmology. 51 (5): 840–842. doi:10.1016/0002-9394(61)91827-X. ISSN 0002-9394. PMID 13710674.",
+                            "<info> ^ a b García-Porta, Nery; Mann, Aisling; Sáez-Martínez, Virginia; Franklin, Val; Wolffsohn, James S.; Tighe, Brian (2018-02-01). \"The potential influence of Schirmer strip variables on dry eye disease characterisation, and on tear collection and analysis\". Contact Lens and Anterior Eye. 41 (1): 47–53. doi:10.1016/j.clae.2017.09.012. ISSN 1367-0484. PMID 28951004.",
+                            "<info> ^ a b c Yazdani, Mazyar; Elgstøen, Katja Benedikte Prestø; Utheim, Tor Paaske (2025-12-03). \"Schirmer Strips in Tear Metabolomics of Dry Eye Disease: Pre-analytical and Analytical Considerations\". Current Eye Research. 0: 1–8. doi:10.1080/02713683.2025.2596213. ISSN 0271-3683. PMID 41340136.",
+                            "<info> ^ a b c Brott, Nathan R.; Ronquillo, Yasmyne (2022). \"Schirmer Test\". StatPearls. StatPearls Publishing. PMID 32644585. NBK559159.  This article incorporates text available under the CC BY 4.0 license.",
+                            "<info> ^ a b Brott, Nathan R.; Zeppieri, Marco; Ronquillo, Yasmyne (2025), \"Schirmer Test\", StatPearls, Treasure Island (FL): StatPearls Publishing, PMID 32644585, retrieved 2025-12-06",
+                            "<info> ^ Bitton, Etty; Wittich, Walter (2014-08-01). \"Influence of eye position on the Schirmer tear test\". Contact Lens and Anterior Eye. 37 (4): 257–261. doi:10.1016/j.clae.2013.11.011. ISSN 1367-0484. PMID 24361097.",
+                            "<info> ^ Walker, Pamela M; Lane, Keith J; Ousler, George W; Abelson, Mark B (June 2010). \"Diurnal Variation of Visual Function and the Signs and Symptoms of Dry Eye\". Cornea. 29 (6): 607–612. doi:10.1097/ICO.0b013e3181c11e45. ISSN 0277-3740. PMID 20458235. Archived from the original on 2025-05-29.",
+                            "<info> ^ a b Wolffsohn, James S.; Arita, Reiko; Chalmers, Robin; Djalilian, Ali; Dogru, Murat; Dumbleton, Kathy; Gupta, Preeya K.; Karpecki, Paul; Lazreg, Sihem; Pult, Heiko; Sullivan, Benjamin D.; Tomlinson, Alan; Tong, Louis; Villani, Edoardo; Yoon, Kyung Chul (2017-07-01). \"TFOS DEWS II Diagnostic Methodology report\". The Ocular Surface. TFOS International Dry Eye WorkShop (DEWS II). 15 (3): 539–574. doi:10.1016/j.jtos.2017.05.001. ISSN 1542-0124. PMID 28736342.",
+                            "<info> ^ Yazdani, Mazyar; Chen, Xiangjun; Tashbayev, Behzod; Utheim, Øygunn A.; Ræder, Sten; Lagli, Neil; Stojanovic, Aleksandar; Dartt, Darlene A.; Utheim, Tor P. (2018-12-02). \"Tear Production Levels and Dry Eye Disease Severity in a Large Norwegian Cohort\". Current Eye Research. 43 (12): 1465–1470. doi:10.1080/02713683.2018.1514055. hdl:10852/71870. ISSN 0271-3683. PMID 30183390.",
+                            "<info> ^ a b Gijs, Marlies; van de Sande, Nienke; Bonnet, Clémence; Schmeetz, Jente; Fernandes, Rosa; Travé-Huarte, Sònia; Huertas-Bello, Marcela; Bo Chiang, Jeremy Chung; Boychev, Nikolay; Sharma, Shruti; Brignole-Baudouin, Françoise; Kessal, Karima; Lingor, Paul; Heunen, Maurice M. T. H.; Chen, Xiangjun (2025-05-01). \"A comprehensive scoping review of methodological approaches and clinical applications of tear fluid biomarkers\". Progress in Retinal and Eye Research. 106 101338. doi:10.1016/j.preteyeres.2025.101338. hdl:10261/385549. ISSN 1350-9462. PMID 39954936.",
+                            "<info> ^ Tsubota, K.; Xu, K. P.; Fujihara, T.; Katagiri, S.; Takeuchi, T. (February 1996). \"Decreased reflex tearing is associated with lymphocytic infiltration in lacrimal glands\". The Journal of Rheumatology. 23 (2): 313–320. ISSN 0315-162X. PMID 8882038.",
+                            "<info> ^ Comito, Rossana; Ciavarella, Carmen; Astolfi, Gloria; Conti, Matteo; Porru, Emanuele; Saverio Violante, Francesco; Versura, Piera (January 2025). \"Tear Sampling and Biomarker Discovery: A Robust Workflow for Routine Clinical Applications Using UHPLC-MS/MS and Schirmer Strips\". International Journal of Molecular Sciences. 26 (5): 2041. doi:10.3390/ijms26052041. ISSN 1422-0067. PMC 11900304. PMID 40076661.",
+                            "<info> ^ Ervin, Ann-Margret; Law, Andrew; Pucker, Andrew D (26 June 2017). \"Punctal occlusion for dry eye syndrome\". Cochrane Database of Systematic Reviews. 2017 (6) CD006775. doi:10.1002/14651858.cd006775.pub3. PMC 5568656. PMID 28649802."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> MedlinePlus Encyclopedia: Schirmer's test",
+                            "<info> Photo Archived 2017-04-06 at the Wayback Machine"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/eosinophilic_leukemia": {
+                "title": "Eosinophilic leukemia",
+                "url": "https://en.wikipedia.org/wiki/eosinophilic_leukemia",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Types of eosinophilic leukemia include:",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Types of eosinophilic leukemia include:"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

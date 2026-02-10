@@ -1,0 +1,89 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/wild_type": {
+                "title": "Wild type",
+                "url": "https://en.wikipedia.org/wiki/wild_type",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The wild type (WT) is the phenotype of the typical form of a species as it occurs in nature. Originally, the wild type was conceptualized as a product of the standard[1] \"normal\" allele at a locus, in contrast to that produced by a non-standard, \"mutant\" allele.  \"Mutant\" alleles can vary to a great extent, and even become the wild type if a genetic shift occurs within the population.  Continued advancements in genetic mapping technologies have created a better understanding of how mutations occur and interact with other genes to alter phenotype.[2] It is now regarded that most or all gene loci exist in a variety of allelic forms, which vary in frequency throughout the geographic range of a species, and that a uniform wild type does not exist. In general, however, the most prevalent allele – i.e., the one with the highest gene frequency – is the one deemed wild type.[3]",
+                    "The concept of wild type is useful in some experimental organisms such as fruit flies Drosophila melanogaster, in which the standard phenotypes for features such as eye color or wing shape are altered by particular mutations that produce distinctive phenotypes, such as \"white eyes\" or \"vestigial wings\".  Wild-type alleles are indicated with a \"+\" superscript, for example w+ and vg+ for red eyes and full-size wings, respectively.  Manipulation of the genes behind these traits led to the current understanding of how organisms form and how traits mutate within a population.  Research involving the manipulation of wild-type alleles has application in many fields, including fighting disease and commercial food production.",
+                    "",
+                    "=== Medical applications ===",
+                    "The genetic sequence for wild-type versus \"mutant\" phenotypes and how these genes interact in expression is the subject of much research.  Better understanding of these processes is hoped to bring about methods for preventing and curing diseases that are currently incurable such as infection with the herpes virus.[4] One example of such promising research in these fields was the study done examining the link between wild-type mutations and certain types of lung cancer.[5]  Research is also being done dealing with the manipulation of certain wild-type traits in viruses to develop new vaccines.[6] This research may lead to new ways to combat deadly viruses such as the Ebola virus[7] and HIV.[8] Research using wild-type mutations is also being done to establish how viruses transition between species to identify harmful viruses with the potential to infect humans.[9]",
+                    "",
+                    "=== Commercial applications ===",
+                    "Selective breeding to enhance the most beneficial traits is the structure upon which agriculture is built, this expedited the evolution process to make crop plants and animals larger and more disease resistant. Genetic manipulation went further.[10][11] Genetic alteration of plants leads to not only larger crop production, but also more nutritious products, allowing isolated populations to receive vital vitamins and minerals that would otherwise be unavailable to them.  Utilization of these wild-type mutations has also led to plants capable of growing in extremely arid environments, making more of the planet habitable than ever before.[12]  As more is understood about these genes, agriculture will continue to become a more efficient process, which will be relied upon to sustain a continually growing population. Amplification of advantageous genes allows the best traits in a population to be present at much higher percentages than normal, although this practice has been the subject of some ethical debate.  These changes have also been the reason behind certain plants and animals being almost unrecognizable when compared to their ancestral lines.[citation needed]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Wild Type vs. Mutant Traits\". Miami College of Arts and Sciences. Retrieved March 2, 2016.",
+                    "<info> ^ Chari, Sudarshan; Dworkin, Ian (2013). \"The Conditional Nature of Genetic Interactions: The Consequences of Wild-Type Backgrounds on Mutational Interactions in a Genome-Wide Modifier Screen\". PLOS Genetics. 9 (8) e1003661. doi:10.1371/journal.pgen.1003661. PMC 3731224. PMID 23935530.",
+                    "<info> ^ Jones, Elizabeth; Hartl, Daniel L. (1998). Genetics: principles and analysis. Boston: Jones and Bartlett Publishers. ISBN 978-0-7637-0489-6.",
+                    "<info> ^ Batista, Franco, Vicentini, Spilki, Silva, Adania, Roehe (2005). \"Neutralizing Antibodies against Feline Herpesvirus Type 1 in Captive Wild Felids of Brazil\". Journal of Zoo and Wildlife Medicine. 36 (3): 447–450. doi:10.1638/04-060.1. PMID 17312763. S2CID 42233414.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> ^ Zhao, Zhang, Yan, Yang, Wu (July 2014). \"Efficacy of epidermal growth factor receptor inhibitors versus chemotherapy as second-line treatment in advanced non-small-cell lung cancer with wild-type EGFR: A meta-analysis of randomized controlled clinical trials\". Lung Cancer. 85 (1): 66–73. doi:10.1016/j.lungcan.2014.03.026. PMID 24780111.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> ^ Sanchez, Anthony. \"Analysis of Filovirus Entry into Vero E6 Cells, Using Inhibitors of Endocytosis, Endosomal Acidification, Structural Integrity, and Cathepsin (B and L) Activity\". oxfordjournals.org. The Journal of Infectious Diseases. Retrieved 2014-11-16.",
+                    "<info> ^ Sullivan, Nancy; Yang, Zhi-Yong; Nabel, Gary (2003). \"Ebola Virus Pathogenesis: Implications for Vaccines and Therapies\". Journal of Virology. 77 (18): 9733–9737. doi:10.1128/JVI.77.18.9733-9737.2003. PMC 224575. PMID 12941881.",
+                    "<info> ^ Quan, Yudong; Xu, Hongtao; Kramer, Vintor; Han, Yingshan; Sloan, Richard; Wainberg, Mark (2014). \"Identification of an env-defective HIV-1 mutant capable of spontaneous reversion to a wild-type phenotype in certain T-cell lines\". Virology Journal. 11: 177. doi:10.1186/1743-422X-11-177. PMC 4283149. PMID 25287969.",
+                    "<info> ^ Bieringer, Maria; Han, Jung; Kendl, Sabine; Khosravi, Mojtaba; Plattet, Philippe; Schneider-Schaulies, Jürgen (2013). \"Experimental Adaptation of Wild-Type Canine Distemper Virus (CDV) to the Human Entry Receptor CD150\". PLOS ONE. 8 (3) e57488. Bibcode:2013PLoSO...857488B. doi:10.1371/journal.pone.0057488. PMC 3595274. PMID 23554862.",
+                    "<info> ^ Davidson, Nagar, Ribshtein, Shkoda, Perk, Garcia (2009). \"Detection of Wild- and Vaccine-Type Avian Infectious Laryngotracheitis Virus in Clinical Samples and Feather Shafts of Commercial Chickens Full Access\". Avian Diseases. 58 (2): 618–623. doi:10.1637/8668-022709-ResNote.1. PMID 20095166. S2CID 1399313.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> ^ The Humane Society of America. \"An HSUS Report: Welfare Issues with Selective Breeding of Egg-Laying Hens for Productivity\" (PDF). {{cite journal}}: Cite journal requires |journal= (help)",
+                    "<info> ^ Mahmood, Khalid; Kannangara, Rubini; Jørgensen, Kirsten; Fuglsang, Anja (2014). \"Analysis of peptide PSY1 responding transcripts in the two Arabidopsis plant lines: wild type and psy1r receptor mutant\". BMC Genomics. 15 (1): 441. doi:10.1186/1471-2164-15-441. PMC 4070568. PMID 24906416.",
+                    "",
+                    "=== External links ===",
+                    "<info> \"Absence of the wild-type allele\" – Pediatrics",
+                    "<info> \"Genetically-spliced bacteria may benefit agriculture\" – Sarasota Herald-Tribune",
+                    "<info> \"Reading of DNA allows creation of synthetic vaccines\" – Star News",
+                    "<info> \"A Curious Clue in Cats\" – Newsday",
+                    "<info> \"A Genetically Engineered Agriculture Revolution?\" – The Telegraph",
+                    "<info> \"Wild Type Learning Activity\"  Archived 2018-01-18 at the Wayback Machine",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The wild type (WT) is the phenotype of the typical form of a species as it occurs in nature. Originally, the wild type was conceptualized as a product of the standard[1] \"normal\" allele at a locus, in contrast to that produced by a non-standard, \"mutant\" allele.  \"Mutant\" alleles can vary to a great extent, and even become the wild type if a genetic shift occurs within the population.  Continued advancements in genetic mapping technologies have created a better understanding of how mutations occur and interact with other genes to alter phenotype.[2] It is now regarded that most or all gene loci exist in a variety of allelic forms, which vary in frequency throughout the geographic range of a species, and that a uniform wild type does not exist. In general, however, the most prevalent allele – i.e., the one with the highest gene frequency – is the one deemed wild type.[3]",
+                            "The concept of wild type is useful in some experimental organisms such as fruit flies Drosophila melanogaster, in which the standard phenotypes for features such as eye color or wing shape are altered by particular mutations that produce distinctive phenotypes, such as \"white eyes\" or \"vestigial wings\".  Wild-type alleles are indicated with a \"+\" superscript, for example w+ and vg+ for red eyes and full-size wings, respectively.  Manipulation of the genes behind these traits led to the current understanding of how organisms form and how traits mutate within a population.  Research involving the manipulation of wild-type alleles has application in many fields, including fighting disease and commercial food production."
+                        ]
+                    },
+                    "Medical applications": {
+                        "content": [
+                            "The genetic sequence for wild-type versus \"mutant\" phenotypes and how these genes interact in expression is the subject of much research.  Better understanding of these processes is hoped to bring about methods for preventing and curing diseases that are currently incurable such as infection with the herpes virus.[4] One example of such promising research in these fields was the study done examining the link between wild-type mutations and certain types of lung cancer.[5]  Research is also being done dealing with the manipulation of certain wild-type traits in viruses to develop new vaccines.[6] This research may lead to new ways to combat deadly viruses such as the Ebola virus[7] and HIV.[8] Research using wild-type mutations is also being done to establish how viruses transition between species to identify harmful viruses with the potential to infect humans.[9]"
+                        ]
+                    },
+                    "Commercial applications": {
+                        "content": [
+                            "Selective breeding to enhance the most beneficial traits is the structure upon which agriculture is built, this expedited the evolution process to make crop plants and animals larger and more disease resistant. Genetic manipulation went further.[10][11] Genetic alteration of plants leads to not only larger crop production, but also more nutritious products, allowing isolated populations to receive vital vitamins and minerals that would otherwise be unavailable to them.  Utilization of these wild-type mutations has also led to plants capable of growing in extremely arid environments, making more of the planet habitable than ever before.[12]  As more is understood about these genes, agriculture will continue to become a more efficient process, which will be relied upon to sustain a continually growing population. Amplification of advantageous genes allows the best traits in a population to be present at much higher percentages than normal, although this practice has been the subject of some ethical debate.  These changes have also been the reason behind certain plants and animals being almost unrecognizable when compared to their ancestral lines.[citation needed]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Wild Type vs. Mutant Traits\". Miami College of Arts and Sciences. Retrieved March 2, 2016.",
+                            "<info> ^ Chari, Sudarshan; Dworkin, Ian (2013). \"The Conditional Nature of Genetic Interactions: The Consequences of Wild-Type Backgrounds on Mutational Interactions in a Genome-Wide Modifier Screen\". PLOS Genetics. 9 (8) e1003661. doi:10.1371/journal.pgen.1003661. PMC 3731224. PMID 23935530.",
+                            "<info> ^ Jones, Elizabeth; Hartl, Daniel L. (1998). Genetics: principles and analysis. Boston: Jones and Bartlett Publishers. ISBN 978-0-7637-0489-6.",
+                            "<info> ^ Batista, Franco, Vicentini, Spilki, Silva, Adania, Roehe (2005). \"Neutralizing Antibodies against Feline Herpesvirus Type 1 in Captive Wild Felids of Brazil\". Journal of Zoo and Wildlife Medicine. 36 (3): 447–450. doi:10.1638/04-060.1. PMID 17312763. S2CID 42233414.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> ^ Zhao, Zhang, Yan, Yang, Wu (July 2014). \"Efficacy of epidermal growth factor receptor inhibitors versus chemotherapy as second-line treatment in advanced non-small-cell lung cancer with wild-type EGFR: A meta-analysis of randomized controlled clinical trials\". Lung Cancer. 85 (1): 66–73. doi:10.1016/j.lungcan.2014.03.026. PMID 24780111.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> ^ Sanchez, Anthony. \"Analysis of Filovirus Entry into Vero E6 Cells, Using Inhibitors of Endocytosis, Endosomal Acidification, Structural Integrity, and Cathepsin (B and L) Activity\". oxfordjournals.org. The Journal of Infectious Diseases. Retrieved 2014-11-16.",
+                            "<info> ^ Sullivan, Nancy; Yang, Zhi-Yong; Nabel, Gary (2003). \"Ebola Virus Pathogenesis: Implications for Vaccines and Therapies\". Journal of Virology. 77 (18): 9733–9737. doi:10.1128/JVI.77.18.9733-9737.2003. PMC 224575. PMID 12941881.",
+                            "<info> ^ Quan, Yudong; Xu, Hongtao; Kramer, Vintor; Han, Yingshan; Sloan, Richard; Wainberg, Mark (2014). \"Identification of an env-defective HIV-1 mutant capable of spontaneous reversion to a wild-type phenotype in certain T-cell lines\". Virology Journal. 11: 177. doi:10.1186/1743-422X-11-177. PMC 4283149. PMID 25287969.",
+                            "<info> ^ Bieringer, Maria; Han, Jung; Kendl, Sabine; Khosravi, Mojtaba; Plattet, Philippe; Schneider-Schaulies, Jürgen (2013). \"Experimental Adaptation of Wild-Type Canine Distemper Virus (CDV) to the Human Entry Receptor CD150\". PLOS ONE. 8 (3) e57488. Bibcode:2013PLoSO...857488B. doi:10.1371/journal.pone.0057488. PMC 3595274. PMID 23554862.",
+                            "<info> ^ Davidson, Nagar, Ribshtein, Shkoda, Perk, Garcia (2009). \"Detection of Wild- and Vaccine-Type Avian Infectious Laryngotracheitis Virus in Clinical Samples and Feather Shafts of Commercial Chickens Full Access\". Avian Diseases. 58 (2): 618–623. doi:10.1637/8668-022709-ResNote.1. PMID 20095166. S2CID 1399313.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> ^ The Humane Society of America. \"An HSUS Report: Welfare Issues with Selective Breeding of Egg-Laying Hens for Productivity\" (PDF). {{cite journal}}: Cite journal requires |journal= (help)",
+                            "<info> ^ Mahmood, Khalid; Kannangara, Rubini; Jørgensen, Kirsten; Fuglsang, Anja (2014). \"Analysis of peptide PSY1 responding transcripts in the two Arabidopsis plant lines: wild type and psy1r receptor mutant\". BMC Genomics. 15 (1): 441. doi:10.1186/1471-2164-15-441. PMC 4070568. PMID 24906416."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"Absence of the wild-type allele\" – Pediatrics",
+                            "<info> \"Genetically-spliced bacteria may benefit agriculture\" – Sarasota Herald-Tribune",
+                            "<info> \"Reading of DNA allows creation of synthetic vaccines\" – Star News",
+                            "<info> \"A Curious Clue in Cats\" – Newsday",
+                            "<info> \"A Genetically Engineered Agriculture Revolution?\" – The Telegraph",
+                            "<info> \"Wild Type Learning Activity\"  Archived 2018-01-18 at the Wayback Machine"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

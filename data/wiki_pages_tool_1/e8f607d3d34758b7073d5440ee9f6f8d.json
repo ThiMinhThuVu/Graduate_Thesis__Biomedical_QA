@@ -1,0 +1,39 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/ceramide_glucosyltransferase": {
+                "title": "Ceramide glucosyltransferase",
+                "url": "https://en.wikipedia.org/wiki/ceramide_glucosyltransferase",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Ceramide glucosyltransferase (or glucosylceramide synthase) is a glucosyltransferase enzyme involved in the production of glucocerebrosides (also called glucosylceramides). It is responsible for the first step in synthesis of all glycosphingolipids—critical components of cell membranes—from sphingolipids, attaching a glucose molecule (glycosylation) to produce a glucocerebroside product.[1] The enzyme is classified under EC 2.4.1.80.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Ichikawa S, Sakiyama H, Suzuki G, Hidari KI, Hirabayashi Y (May 1996). \"Expression cloning of a cDNA for human ceramide glucosyltransferase that catalyzes the first glycosylation step of glycosphingolipid synthesis\". Proceedings of the National Academy of Sciences of the United States of America. 93 (10): 4638–43. Bibcode:1996PNAS...93.4638I. doi:10.1073/pnas.93.10.4638. PMC 39331. PMID 8643456.",
+                    "",
+                    "=== External links ===",
+                    "<info> Ceramide+glucosyltransferase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Ceramide glucosyltransferase (or glucosylceramide synthase) is a glucosyltransferase enzyme involved in the production of glucocerebrosides (also called glucosylceramides). It is responsible for the first step in synthesis of all glycosphingolipids—critical components of cell membranes—from sphingolipids, attaching a glucose molecule (glycosylation) to produce a glucocerebroside product.[1] The enzyme is classified under EC 2.4.1.80."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Ichikawa S, Sakiyama H, Suzuki G, Hidari KI, Hirabayashi Y (May 1996). \"Expression cloning of a cDNA for human ceramide glucosyltransferase that catalyzes the first glycosylation step of glycosphingolipid synthesis\". Proceedings of the National Academy of Sciences of the United States of America. 93 (10): 4638–43. Bibcode:1996PNAS...93.4638I. doi:10.1073/pnas.93.10.4638. PMC 39331. PMID 8643456."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Ceramide+glucosyltransferase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/black_oxide": {
+                "title": "Black oxide",
+                "url": "https://en.wikipedia.org/wiki/black_oxide",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Black oxide or blackening is a conversion coating for ferrous materials, stainless steel, copper and copper based alloys, zinc, powdered metals, and silver solder.[1] It is used to add mild corrosion resistance, for appearance, and to minimize light reflection.[2] To achieve maximal corrosion resistance the black oxide must be impregnated with oil or wax.[3]  Dual target magnetron sputtering (DMS) is used for preparing black oxide coatings.[4] One of its advantages over other coatings is its minimal buildup.[2]",
+                    "",
+                    "=== Ferrous material ===",
+                    "A standard black oxide is iron(II,III) oxide (Fe3O4), also called by the name of the ore composed thereof (magnetite); it is more mechanically stable on the surface and provides better corrosion protection than red oxide (rust) Fe2O3.  Modern industrial approaches to forming black oxide include the hot and mid-temperature processes described below.  Traditional methods are described in the article on bluing.  They are of interest historically, and are also useful for hobbyists to form black oxide safely with little equipment and without toxic chemicals.",
+                    "Low temperature oxide, also described below, is not a conversion coating—the low-temperature process does not oxidize the iron, but deposits a copper selenium compound.",
+                    "Hot baths of sodium hydroxide (NaOH), nitrates such as sodium nitrate (NaNO3), and/or nitrites such as sodium nitrite (NaNO2)[3] at 141 °C (286 °F) are used to convert the surface of the material into magnetite (Fe3O4). Water must be periodically added to the bath, with proper controls to prevent a steam explosion.",
+                    "Hot blackening involves dipping the part into various tanks. The workpiece is usually dipped by automated part carriers for transportation between tanks. These tanks contain, in order, alkaline detergent, water, sodium hydroxide at 140.5 °C (284.9 °F) (the blackening compound), and finally the sealant, which is usually oil.",
+                    "The NaOH (caustic soda) and elevated temperature cause Fe3O4 (black oxide) to form on the surface of the metal instead of Fe2O3 (red oxide; rust). While it is physically denser than red oxide, the fresh black oxide is porous, so oil is then applied as post treatment to the heated part, which seals it by \"sinking\" into it. The combination prevents corrosion of the workpiece. There are many advantages of blackening, including:",
+                    "<info> Blackening can be done in large batches, which is ideal for small parts.",
+                    "<info> There is no significant dimensional impact. The blacking process creates a layer about 1 μm thick.",
+                    "<info> It is far cheaper than similar corrosion protection systems, such as paint and electroplating.",
+                    "The oldest and most widely used specification for hot black oxide is MIL-DTL-13924, which covers four classes of processes for different substrates. Alternate specifications include AMS 2485, ASTM D769, and ISO 11408.[citation needed]",
+                    "Iron(III) chloride (FeCl3) may also be used for steel blackening by dipping a piece of steel into a hot bath of 50% FeCl3 solution and then into a hot boiling water. The process is usually repeated several times.[5][non-primary source needed]",
+                    "Like hot black oxide, mid-temperature black oxide converts the surface of the metal to magnetite (Fe3O4). However, mid-temperature black oxide blackens at a temperature of 90–120 °C (194–248 °F),[6] significantly less than hot black oxide. This is advantageous because it is below the solution's boiling point, meaning there are no caustic fumes produced.[citation needed]",
+                    "Since mid-temperature black oxide is most comparable to hot black oxide, it also can meet the military specification MIL-DTL-13924, as well as AMS 2485.[citation needed]",
+                    "Cold black oxide, also known as room temperature black oxide, is applied at a temperature of 20–30 °C (68–86 °F).[6] It is not an oxide conversion coating, but rather a deposited copper selenide (Cu2Se) compound. Cold black oxide is convenient for in-house blackening. This coating produces a similar color to the one the oxide conversion does, but tends to rub off easily and offers less abrasion resistance.  The application of oil, wax, or lacquer brings the corrosion resistance up to par with the hot and mid-temperature. Applications for cold black oxide process include tooling and architectural finishing on steel. It is also known as cold bluing.[7]",
+                    "",
+                    "=== Copper ===",
+                    "Black oxide for copper, sometimes known by the trade name Ebonol C, converts the copper surface to cupric oxide. For the process to work the surface has to have at least 65% copper; for copper surfaces that have less than 90% copper it must first be pretreated with an activating treatment. The finished coating is chemically stable and very adherent. It is stable up to 400 °F (204 °C); above this temperature the coating degrades due to oxidation of the base copper. To increase corrosion resistance, the surface may be oiled, lacquered, or waxed. It is also used as a pre-treatment for painting or enamelling. The surface finish is usually satin, but it can be turned glossy by coating in a clear high-gloss enamel.[8]",
+                    "On a microscopic scale dendrites form on the surface finish, which trap light and increase absorptivity. Because of this property the coating is used in aerospace, microscopy and other optical applications to minimise light reflection.[8]",
+                    "In printed circuit boards (PCBs), the use of black oxide provides better adhesion for the fiberglass laminate layers.[9] The PCB is dipped in a bath containing hydroxide, hypochlorite, and cuprate, which becomes depleted in all three components. This indicates that the black copper oxide comes partially from the cuprate and partially from the PCB copper circuitry. Under microscopic examination, there is no copper(I) oxide layer.",
+                    "An applicable U.S. military specification is MIL-F-495E.[10]",
+                    "",
+                    "=== Stainless steel ===",
+                    "Hot black oxide for stainless steel is a mixture of caustic, oxidizing, and sulfur salts. It blackens 300 and 400 series and the precipitation-hardened 17-4 PH stainless steel alloys. The solution can be used on cast iron and mild low-carbon steel. The resulting finish complies with military specification MIL-DTL–13924D Class 4 and offers abrasion resistance. Black oxide finish is used on surgical instruments in light-intensive environments to reduce eye fatigue.[citation needed]",
+                    "Room-temperature blackening for stainless steel occurs by auto-catalytic reaction of copper-selenide depositing on the stainless-steel surface. It offers less abrasion resistance and the same corrosion protection as the hot blackening process.[citation needed]",
+                    "",
+                    "=== Zinc ===",
+                    "Black oxide for zinc is also known by the trade name Ebonol Z.[11]",
+                    "",
+                    "=== See also ===",
+                    "<info> Chemical coloring of metals",
+                    "<info> Electrochemical coloring of metals",
+                    "<info> Heat coloring of metals",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Black Oxide for Non-Ferrous Metals, archived from the original on 2010-01-23, retrieved 2009-09-03",
+                    "<info> ^ a b Oberg, Erik Oberg; E. Green, Robert (1996). Machinery's handbook : a reference book for the mechanical engineer, designer, manufacturing engineer, draftsman, toolmaker, and machinist (25th ed.). New York: Industrial Press. p. 1444. ISBN 9780831125752.",
+                    "<info> ^ a b Oberg, Erik Oberg; E. Green, Robert (1996). Machinery's handbook : a reference book for the mechanical engineer, designer, manufacturing engineer, draftsman, toolmaker, and machinist (25th ed.). New York: Industrial Press. p. 1442. ISBN 9780831125752.",
+                    "<info> ^ Green, Julissa. \"The Forms of Sputtering Deposition\". Sputter Targets. Retrieved Sep 15, 2024.",
+                    "<info> ^ \"Blackening of steel and cast iron\". www.finishing.com. Retrieved 2022-07-03.",
+                    "<info> ^ a b \"Birchwood Technologies Black Oxide Temp Guide\". www.birchwoodtechnologies.com. Birchwood Technologies. 11 September 2020. Archived from the original on 2020-10-14. Retrieved 2020-10-13.",
+                    "<info> ^ \"Copper (I) Selenide Powder - FUNCMATER\". www.funcmater.com. XI'AN FUNCTION MATERIAL GROUP CO.,LTD. Retrieved 8 March 2023.",
+                    "<info> ^ a b Ebonol 'C', archived from the original on 2009-09-01, retrieved 2009-09-04",
+                    "<info> ^ \"Brown oxide vs. black oxide, immersion tin processes for PCBs / PWBs\". Archived from the original on 2011-07-06.",
+                    "<info> ^ \"Finish, Chemical, Black, for Copper Alloys\" (PDF). 30 September 1988. Retrieved 25 Sep 2012.[permanent dead link]",
+                    "<info> ^ Enthone, archived from the original on 2009-07-17, retrieved 2009-09-04",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Black oxide or blackening is a conversion coating for ferrous materials, stainless steel, copper and copper based alloys, zinc, powdered metals, and silver solder.[1] It is used to add mild corrosion resistance, for appearance, and to minimize light reflection.[2] To achieve maximal corrosion resistance the black oxide must be impregnated with oil or wax.[3]  Dual target magnetron sputtering (DMS) is used for preparing black oxide coatings.[4] One of its advantages over other coatings is its minimal buildup.[2]"
+                        ]
+                    },
+                    "Ferrous material": {
+                        "content": [
+                            "A standard black oxide is iron(II,III) oxide (Fe3O4), also called by the name of the ore composed thereof (magnetite); it is more mechanically stable on the surface and provides better corrosion protection than red oxide (rust) Fe2O3.  Modern industrial approaches to forming black oxide include the hot and mid-temperature processes described below.  Traditional methods are described in the article on bluing.  They are of interest historically, and are also useful for hobbyists to form black oxide safely with little equipment and without toxic chemicals.",
+                            "Low temperature oxide, also described below, is not a conversion coating—the low-temperature process does not oxidize the iron, but deposits a copper selenium compound.",
+                            "Hot baths of sodium hydroxide (NaOH), nitrates such as sodium nitrate (NaNO3), and/or nitrites such as sodium nitrite (NaNO2)[3] at 141 °C (286 °F) are used to convert the surface of the material into magnetite (Fe3O4). Water must be periodically added to the bath, with proper controls to prevent a steam explosion.",
+                            "Hot blackening involves dipping the part into various tanks. The workpiece is usually dipped by automated part carriers for transportation between tanks. These tanks contain, in order, alkaline detergent, water, sodium hydroxide at 140.5 °C (284.9 °F) (the blackening compound), and finally the sealant, which is usually oil.",
+                            "The NaOH (caustic soda) and elevated temperature cause Fe3O4 (black oxide) to form on the surface of the metal instead of Fe2O3 (red oxide; rust). While it is physically denser than red oxide, the fresh black oxide is porous, so oil is then applied as post treatment to the heated part, which seals it by \"sinking\" into it. The combination prevents corrosion of the workpiece. There are many advantages of blackening, including:",
+                            "<info> Blackening can be done in large batches, which is ideal for small parts.",
+                            "<info> There is no significant dimensional impact. The blacking process creates a layer about 1 μm thick.",
+                            "<info> It is far cheaper than similar corrosion protection systems, such as paint and electroplating.",
+                            "The oldest and most widely used specification for hot black oxide is MIL-DTL-13924, which covers four classes of processes for different substrates. Alternate specifications include AMS 2485, ASTM D769, and ISO 11408.[citation needed]",
+                            "Iron(III) chloride (FeCl3) may also be used for steel blackening by dipping a piece of steel into a hot bath of 50% FeCl3 solution and then into a hot boiling water. The process is usually repeated several times.[5][non-primary source needed]",
+                            "Like hot black oxide, mid-temperature black oxide converts the surface of the metal to magnetite (Fe3O4). However, mid-temperature black oxide blackens at a temperature of 90–120 °C (194–248 °F),[6] significantly less than hot black oxide. This is advantageous because it is below the solution's boiling point, meaning there are no caustic fumes produced.[citation needed]",
+                            "Since mid-temperature black oxide is most comparable to hot black oxide, it also can meet the military specification MIL-DTL-13924, as well as AMS 2485.[citation needed]",
+                            "Cold black oxide, also known as room temperature black oxide, is applied at a temperature of 20–30 °C (68–86 °F).[6] It is not an oxide conversion coating, but rather a deposited copper selenide (Cu2Se) compound. Cold black oxide is convenient for in-house blackening. This coating produces a similar color to the one the oxide conversion does, but tends to rub off easily and offers less abrasion resistance.  The application of oil, wax, or lacquer brings the corrosion resistance up to par with the hot and mid-temperature. Applications for cold black oxide process include tooling and architectural finishing on steel. It is also known as cold bluing.[7]"
+                        ]
+                    },
+                    "Copper": {
+                        "content": [
+                            "Black oxide for copper, sometimes known by the trade name Ebonol C, converts the copper surface to cupric oxide. For the process to work the surface has to have at least 65% copper; for copper surfaces that have less than 90% copper it must first be pretreated with an activating treatment. The finished coating is chemically stable and very adherent. It is stable up to 400 °F (204 °C); above this temperature the coating degrades due to oxidation of the base copper. To increase corrosion resistance, the surface may be oiled, lacquered, or waxed. It is also used as a pre-treatment for painting or enamelling. The surface finish is usually satin, but it can be turned glossy by coating in a clear high-gloss enamel.[8]",
+                            "On a microscopic scale dendrites form on the surface finish, which trap light and increase absorptivity. Because of this property the coating is used in aerospace, microscopy and other optical applications to minimise light reflection.[8]",
+                            "In printed circuit boards (PCBs), the use of black oxide provides better adhesion for the fiberglass laminate layers.[9] The PCB is dipped in a bath containing hydroxide, hypochlorite, and cuprate, which becomes depleted in all three components. This indicates that the black copper oxide comes partially from the cuprate and partially from the PCB copper circuitry. Under microscopic examination, there is no copper(I) oxide layer.",
+                            "An applicable U.S. military specification is MIL-F-495E.[10]"
+                        ]
+                    },
+                    "Stainless steel": {
+                        "content": [
+                            "Hot black oxide for stainless steel is a mixture of caustic, oxidizing, and sulfur salts. It blackens 300 and 400 series and the precipitation-hardened 17-4 PH stainless steel alloys. The solution can be used on cast iron and mild low-carbon steel. The resulting finish complies with military specification MIL-DTL–13924D Class 4 and offers abrasion resistance. Black oxide finish is used on surgical instruments in light-intensive environments to reduce eye fatigue.[citation needed]",
+                            "Room-temperature blackening for stainless steel occurs by auto-catalytic reaction of copper-selenide depositing on the stainless-steel surface. It offers less abrasion resistance and the same corrosion protection as the hot blackening process.[citation needed]"
+                        ]
+                    },
+                    "Zinc": {
+                        "content": [
+                            "Black oxide for zinc is also known by the trade name Ebonol Z.[11]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Chemical coloring of metals",
+                            "<info> Electrochemical coloring of metals",
+                            "<info> Heat coloring of metals"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Black Oxide for Non-Ferrous Metals, archived from the original on 2010-01-23, retrieved 2009-09-03",
+                            "<info> ^ a b Oberg, Erik Oberg; E. Green, Robert (1996). Machinery's handbook : a reference book for the mechanical engineer, designer, manufacturing engineer, draftsman, toolmaker, and machinist (25th ed.). New York: Industrial Press. p. 1444. ISBN 9780831125752.",
+                            "<info> ^ a b Oberg, Erik Oberg; E. Green, Robert (1996). Machinery's handbook : a reference book for the mechanical engineer, designer, manufacturing engineer, draftsman, toolmaker, and machinist (25th ed.). New York: Industrial Press. p. 1442. ISBN 9780831125752.",
+                            "<info> ^ Green, Julissa. \"The Forms of Sputtering Deposition\". Sputter Targets. Retrieved Sep 15, 2024.",
+                            "<info> ^ \"Blackening of steel and cast iron\". www.finishing.com. Retrieved 2022-07-03.",
+                            "<info> ^ a b \"Birchwood Technologies Black Oxide Temp Guide\". www.birchwoodtechnologies.com. Birchwood Technologies. 11 September 2020. Archived from the original on 2020-10-14. Retrieved 2020-10-13.",
+                            "<info> ^ \"Copper (I) Selenide Powder - FUNCMATER\". www.funcmater.com. XI'AN FUNCTION MATERIAL GROUP CO.,LTD. Retrieved 8 March 2023.",
+                            "<info> ^ a b Ebonol 'C', archived from the original on 2009-09-01, retrieved 2009-09-04",
+                            "<info> ^ \"Brown oxide vs. black oxide, immersion tin processes for PCBs / PWBs\". Archived from the original on 2011-07-06.",
+                            "<info> ^ \"Finish, Chemical, Black, for Copper Alloys\" (PDF). 30 September 1988. Retrieved 25 Sep 2012.[permanent dead link]",
+                            "<info> ^ Enthone, archived from the original on 2009-07-17, retrieved 2009-09-04"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

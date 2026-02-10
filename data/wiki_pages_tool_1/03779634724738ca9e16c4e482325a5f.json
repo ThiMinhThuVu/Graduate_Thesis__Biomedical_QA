@@ -1,0 +1,63 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/alcohol_and_cortisol": {
+                "title": "Alcohol and cortisol",
+                "url": "https://en.wikipedia.org/wiki/alcohol_and_cortisol",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Alcohol and cortisol have a complex relationship. While cortisol is a stress hormone, alcoholism can lead to increased cortisol levels in the body over time. This can be problematic because cortisol can temporarily shut down other bodily functions, potentially causing physical damage.",
+                    "",
+                    "=== Cortisol ===",
+                    "Cortisol is a stress hormone secreted by the adrenal gland, which makes up part of the hypothalamic-pituitary-adrenal (HPA) axis. It is typically released at periods of high stress designed to help the individual cope with stressful situations.[1] Cortisol secretion results in increased heart rate and blood pressure and the temporary shut down of metabolic processes such as digestion, reproduction, growth, and immunity as a means of conserving energy for the stress response. Chronic release of cortisol over extended periods of time caused by long-term high stress can result in:",
+                    "<info> Accelerated neural degeneration during aging",
+                    "",
+                    "=== Alcohol and cortisol interactions ===",
+                    "High cortisol levels have largely been associated with high alcohol consumption, which is likely due to the disregulation (impaired inhibitory control) of the HPA axis.[1]",
+                    "Research on alcohol's effects on cortisol dates back to the 1950s. Many studies showed a relation between the two; however, they were limited to short-term alcohol ingestion. The first human study to assess the long-term effects of alcohol ingestion on cortisol was conducted in 1966 (Mendelson et al.). They found heightened cortisol levels in both alcoholics and non-alcoholics while actively drinking. Cortisol was overall higher in alcoholics than non-alcoholics, indicating that alcohol has long-term effects on the endocrine system. Also, alcoholics had the highest cortisol levels after drinking stopped, demonstrating symptoms of withdrawal (a hormonal marker of alcohol addiction).[3]",
+                    "Recent research supports this strong association between high alcohol use and heightened cortisol levels. In one study, overnight urinary cortisol levels were taken from people who regularly drank a large amount of alcohol versus a small amount of alcohol. People who drank more alcohol had higher cortisol levels and lower heart rate variability (which is controlled by the autonomic nervous system, ANS), suggesting a connection between the HPA axis and the ANS. People who drank more alcohol had higher blood pressure and difficulty sleeping, indicative of heightened cortisol levels.[4]",
+                    "Recent technology has allowed researchers to measure cortisol levels in human hair (showing cumulative cortisol exposure over extended periods of time). This method of measurement has been used to compare long-term cortisol levels in alcoholics, abstinent alcoholics, and non-alcoholics. One recent study revealed that alcoholics had three to four times higher hair cortisol concentrations than abstinent alcoholics or non-alcoholics (consistent with previous research showing periods of alcohol consumption are associated with heightened cortisol levels). Abstinent alcoholics and non-alcoholics had the same low levels of cortisol, suggesting that cortisol levels eventually return to normal after extended cessation.[5]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Dai, Xing; Thavundayil, Joseph; Santella, Sandra; Gianoulakis, Christina (2007). \"Response of the HPA-axis to alcohol and stress as a function of alcohol dependence and family history of alcoholism\". Psychoneuroendocrinology. 32 (3): 293–305. doi:10.1016/j.psyneuen.2007.01.004. PMID 17349749. S2CID 39315868.",
+                    "<info> ^ Lupien, Sonia J.; McEwen, Bruce S.; Gunnar, Megan R.; Heim, Christine (2009). \"Effects of stress throughout the lifespan on the brain, behaviour and cognition\". Nature Reviews Neuroscience. 10 (6): 434–45. doi:10.1038/nrn2639. PMID 19401723. S2CID 205504945.",
+                    "<info> ^ Mendelson, Jack; Stein, Stefan (1966). \"Serum Cortisol Levels in Alcoholic and Nonalcoholic Subjects During Experimentally Induced Ethanol Intoxication\". Psychosomatic Medicine. 28 (4): 616–26. CiteSeerX 10.1.1.503.1374. doi:10.1097/00006842-196607000-00037. S2CID 147372625. Retrieved 2014-01-07.",
+                    "<info> ^ Thayer, Julian F.; Hall, Martica; Sollers, John J.; Fischer, Joachim E. (2006). \"Alcohol use, urinary cortisol, and heart rate variability in apparently healthy men: Evidence for impaired inhibitory control of the HPA axis in heavy drinkers\". International Journal of Psychophysiology. 59 (3): 244–50. doi:10.1016/j.ijpsycho.2005.10.013. PMID 16325293.",
+                    "<info> ^ Stalder, Tobias; Kirschbaum, Clemens; Heinze, Kareen; Steudte, Susann; Foley, Paul; Tietze, Antje; Dettenborn, Lucia (2010). \"Use of hair cortisol analysis to detect hypercortisolism during active drinking phases in alcohol-dependent individuals\". Biological Psychology. 85 (3): 357–60. doi:10.1016/j.biopsycho.2010.08.005. PMID 20727937. S2CID 14554271.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Alcohol and cortisol have a complex relationship. While cortisol is a stress hormone, alcoholism can lead to increased cortisol levels in the body over time. This can be problematic because cortisol can temporarily shut down other bodily functions, potentially causing physical damage."
+                        ]
+                    },
+                    "Cortisol": {
+                        "content": [
+                            "Cortisol is a stress hormone secreted by the adrenal gland, which makes up part of the hypothalamic-pituitary-adrenal (HPA) axis. It is typically released at periods of high stress designed to help the individual cope with stressful situations.[1] Cortisol secretion results in increased heart rate and blood pressure and the temporary shut down of metabolic processes such as digestion, reproduction, growth, and immunity as a means of conserving energy for the stress response. Chronic release of cortisol over extended periods of time caused by long-term high stress can result in:",
+                            "<info> Accelerated neural degeneration during aging"
+                        ]
+                    },
+                    "Alcohol and cortisol interactions": {
+                        "content": [
+                            "High cortisol levels have largely been associated with high alcohol consumption, which is likely due to the disregulation (impaired inhibitory control) of the HPA axis.[1]",
+                            "Research on alcohol's effects on cortisol dates back to the 1950s. Many studies showed a relation between the two; however, they were limited to short-term alcohol ingestion. The first human study to assess the long-term effects of alcohol ingestion on cortisol was conducted in 1966 (Mendelson et al.). They found heightened cortisol levels in both alcoholics and non-alcoholics while actively drinking. Cortisol was overall higher in alcoholics than non-alcoholics, indicating that alcohol has long-term effects on the endocrine system. Also, alcoholics had the highest cortisol levels after drinking stopped, demonstrating symptoms of withdrawal (a hormonal marker of alcohol addiction).[3]",
+                            "Recent research supports this strong association between high alcohol use and heightened cortisol levels. In one study, overnight urinary cortisol levels were taken from people who regularly drank a large amount of alcohol versus a small amount of alcohol. People who drank more alcohol had higher cortisol levels and lower heart rate variability (which is controlled by the autonomic nervous system, ANS), suggesting a connection between the HPA axis and the ANS. People who drank more alcohol had higher blood pressure and difficulty sleeping, indicative of heightened cortisol levels.[4]",
+                            "Recent technology has allowed researchers to measure cortisol levels in human hair (showing cumulative cortisol exposure over extended periods of time). This method of measurement has been used to compare long-term cortisol levels in alcoholics, abstinent alcoholics, and non-alcoholics. One recent study revealed that alcoholics had three to four times higher hair cortisol concentrations than abstinent alcoholics or non-alcoholics (consistent with previous research showing periods of alcohol consumption are associated with heightened cortisol levels). Abstinent alcoholics and non-alcoholics had the same low levels of cortisol, suggesting that cortisol levels eventually return to normal after extended cessation.[5]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Dai, Xing; Thavundayil, Joseph; Santella, Sandra; Gianoulakis, Christina (2007). \"Response of the HPA-axis to alcohol and stress as a function of alcohol dependence and family history of alcoholism\". Psychoneuroendocrinology. 32 (3): 293–305. doi:10.1016/j.psyneuen.2007.01.004. PMID 17349749. S2CID 39315868.",
+                            "<info> ^ Lupien, Sonia J.; McEwen, Bruce S.; Gunnar, Megan R.; Heim, Christine (2009). \"Effects of stress throughout the lifespan on the brain, behaviour and cognition\". Nature Reviews Neuroscience. 10 (6): 434–45. doi:10.1038/nrn2639. PMID 19401723. S2CID 205504945.",
+                            "<info> ^ Mendelson, Jack; Stein, Stefan (1966). \"Serum Cortisol Levels in Alcoholic and Nonalcoholic Subjects During Experimentally Induced Ethanol Intoxication\". Psychosomatic Medicine. 28 (4): 616–26. CiteSeerX 10.1.1.503.1374. doi:10.1097/00006842-196607000-00037. S2CID 147372625. Retrieved 2014-01-07.",
+                            "<info> ^ Thayer, Julian F.; Hall, Martica; Sollers, John J.; Fischer, Joachim E. (2006). \"Alcohol use, urinary cortisol, and heart rate variability in apparently healthy men: Evidence for impaired inhibitory control of the HPA axis in heavy drinkers\". International Journal of Psychophysiology. 59 (3): 244–50. doi:10.1016/j.ijpsycho.2005.10.013. PMID 16325293.",
+                            "<info> ^ Stalder, Tobias; Kirschbaum, Clemens; Heinze, Kareen; Steudte, Susann; Foley, Paul; Tietze, Antje; Dettenborn, Lucia (2010). \"Use of hair cortisol analysis to detect hypercortisolism during active drinking phases in alcohol-dependent individuals\". Biological Psychology. 85 (3): 357–60. doi:10.1016/j.biopsycho.2010.08.005. PMID 20727937. S2CID 14554271."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

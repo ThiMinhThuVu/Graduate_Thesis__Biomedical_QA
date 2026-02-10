@@ -1,0 +1,57 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/dizzy_(nickname)": {
+                "title": "Dizzy (nickname)",
+                "url": "https://en.wikipedia.org/wiki/dizzy_(nickname)",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Dizzy is a nickname, Notable people with the nickname include:",
+                    "<info> Hubert Raymond Allen (1919–1987), British Second World War Royal Air Force pilot and writer",
+                    "<info> Dizzy Dean (1910–1974), Major League Baseball pitcher",
+                    "<info> Dizzy Dismukes (1890–1961), American pitcher and manager in Negro league baseball and during the pre-Negro league years",
+                    "<info> Benjamin Disraeli (1804–1881), British Prime Minister",
+                    "<info> Dizzy Gillespie (1917–1993), American jazz trumpet player and composer",
+                    "<info> Jason Gillespie (born 1975), Australian former cricketer",
+                    "<info> Johnny Moore (trumpeter) (1938–2008), Jamaican trumpet player",
+                    "<info> Dizzy Nutter (1893–1958), American baseball player",
+                    "<info> Dizzy Reece (born 1931), jazz trumpeter",
+                    "<info> Dizzy Reed (born 1963), Guns N' Roses keyboardist",
+                    "<info> Dizzy Trout (1915–1972), Major League Baseball pitcher",
+                    "",
+                    "=== See also ===",
+                    "<info> All pages with titles beginning with Dizzy",
+                    "<info> All pages with titles containing Dizzy",
+                    "<info> Dizzee Rascal, British rapper",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Dizzy is a nickname, Notable people with the nickname include:",
+                            "<info> Hubert Raymond Allen (1919–1987), British Second World War Royal Air Force pilot and writer",
+                            "<info> Dizzy Dean (1910–1974), Major League Baseball pitcher",
+                            "<info> Dizzy Dismukes (1890–1961), American pitcher and manager in Negro league baseball and during the pre-Negro league years",
+                            "<info> Benjamin Disraeli (1804–1881), British Prime Minister",
+                            "<info> Dizzy Gillespie (1917–1993), American jazz trumpet player and composer",
+                            "<info> Jason Gillespie (born 1975), Australian former cricketer",
+                            "<info> Johnny Moore (trumpeter) (1938–2008), Jamaican trumpet player",
+                            "<info> Dizzy Nutter (1893–1958), American baseball player",
+                            "<info> Dizzy Reece (born 1931), jazz trumpeter",
+                            "<info> Dizzy Reed (born 1963), Guns N' Roses keyboardist",
+                            "<info> Dizzy Trout (1915–1972), Major League Baseball pitcher"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> All pages with titles beginning with Dizzy",
+                            "<info> All pages with titles containing Dizzy",
+                            "<info> Dizzee Rascal, British rapper"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

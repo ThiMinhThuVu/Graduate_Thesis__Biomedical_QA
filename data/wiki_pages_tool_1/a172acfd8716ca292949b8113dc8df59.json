@@ -1,0 +1,119 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/aladin_(protein)": {
+                "title": "Aladin (protein)",
+                "url": "https://en.wikipedia.org/wiki/aladin_(protein)",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Aladin, also known as adracalin, is a nuclear envelope protein that in humans is encoded by the AAAS gene.[5] It is named after the achalasia–addisonianism–alacrima syndrome (triple A syndrome) which occurs when the gene is mutated.",
+                    "",
+                    "=== Function ===",
+                    "Aladin  is a component of the nuclear pore complex, to which it is attached by nucleoporin NDC1.[6][7]  Mutant aladin causes selective failure of nuclear protein import and hypersensitivity to oxidative stress.[8]  Mutant aladin also causes decreased nuclear import of aprataxin, a repair protein for single-strand breaks, and DNA ligase I, employed in DNA base excision repair.[8] These decreases in DNA repair proteins may increase the susceptibility of cells to oxidative stress by allowing accumulation of oxidative DNA damages that trigger cell death.",
+                    "",
+                    "=== Clinical significance ===",
+                    "Mutations in the AAAS gene are responsible for Triple A syndrome (also known as Allgrove Syndrome).[9] Triple-A syndrome is an autosomal recessive neuroendocrinological disease.",
+                    "Aladin is also employed in specific oocyte meiotic stages, including spindle assembly and spindle positioning.[10]   Female mice homozygously null for aladin are sterile.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000094914 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000036678 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ Tullio-Pelet A, Salomon R, Hadj-Rabia S, Mugnier C, de Laet MH, Chaouachi B, Bakiri F, Brottier P, Cattolico L, Penet C, Bégeot M, Naville D, Nicolino M, Chaussain JL, Weissenbach J, Munnich A, Lyonnet S (November 2000). \"Mutant WD-repeat protein in triple-A syndrome\". Nature Genetics. 26 (3): 332–5. doi:10.1038/81642. PMID 11062474. S2CID 22952012.",
+                    "<info> ^ Kind B, Koehler K, Lorenz M, Huebner A (December 2009). \"The nuclear pore complex protein ALADIN is anchored via NDC1 but not via POM121 and GP210 in the nuclear envelope\". Biochemical and Biophysical Research Communications. 390 (2): 205–10. doi:10.1016/j.bbrc.2009.09.080. PMID 19782045.",
+                    "<info> ^ Cho AR, Yang KJ, Bae Y, Bahk YY, Kim E, Lee H, Kim JK, Park W, Rhim H, Choi SY, Imanaka T, Moon S, Yoon J, Yoon SK (June 2009). \"Tissue-specific expression and subcellular localization of ALADIN, the absence of which causes human triple A syndrome\". Experimental & Molecular Medicine. 41 (6): 381–6. doi:10.3858/emm.2009.41.6.043. PMC 2705858. PMID 19322026.",
+                    "<info> ^ a b Hirano M, Furiya Y, Asai H, Yasui A, Ueno S (February 2006). \"ALADINI482S causes selective failure of nuclear protein import and hypersensitivity to oxidative stress in triple A syndrome\". Proc. Natl. Acad. Sci. U.S.A. 103 (7): 2298–303. Bibcode:2006PNAS..103.2298H. doi:10.1073/pnas.0505598103. PMC 1413683. PMID 16467144.",
+                    "<info> ^ \"Entrez Gene: AAAS achalasia, adrenocortical insufficiency, alacrimia (Allgrove, triple-A)\".",
+                    "<info> ^ Carvalhal S, Stevense M, Koehler K, Naumann R, Huebner A, Jessberger R, Griffis ER (September 2017). \"ALADIN is required for the production of fertile mouse oocytes\". Mol. Biol. Cell. 28 (19): 2470–2478. doi:10.1091/mbc.E16-03-0158. PMC 5597320. PMID 28768824.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Jühlen R, Idkowiak J, Taylor AE, Kind B, Arlt W, Huebner A, Koehler K (2015). \"Role of ALADIN in human adrenocortical cells for oxidative stress response and steroidogenesis\". PLOS ONE. 10 (4) e0124582. Bibcode:2015PLoSO..1024582J. doi:10.1371/journal.pone.0124582. PMC 4395102. PMID 25867024.",
+                    "<info> Maruyama K, Sugano S (January 1994). \"Oligo-capping: a simple method to replace the cap structure of eukaryotic mRNAs with oligoribonucleotides\". Gene. 138 (1–2): 171–4. doi:10.1016/0378-1119(94)90802-8. PMID 8125298.",
+                    "<info> Weber A, Wienker TF, Jung M, Easton D, Dean HJ, Heinrichs C, Reis A, Clark AJ (December 1996). \"Linkage of the gene for the triple A syndrome to chromosome 12q13 near the type II keratin gene cluster\". Human Molecular Genetics. 5 (12): 2061–6. CiteSeerX 10.1.1.329.7433. doi:10.1093/hmg/5.12.2061. PMID 8968764.",
+                    "<info> Suzuki Y, Yoshitomo-Nakagawa K, Maruyama K, Suyama A, Sugano S (October 1997). \"Construction and characterization of a full length-enriched and a 5'-end-enriched cDNA library\". Gene. 200 (1–2): 149–56. doi:10.1016/S0378-1119(97)00411-3. PMID 9373149.",
+                    "<info> Handschug K, Sperling S, Yoon SJ, Hennig S, Clark AJ, Huebner A (February 2001). \"Triple A syndrome is caused by mutations in AAAS, a new WD-repeat protein gene\". Human Molecular Genetics. 10 (3): 283–90. doi:10.1093/hmg/10.3.283. PMID 11159947.",
+                    "<info> Sandrini F, Farmakidis C, Kirschner LS, Wu SM, Tullio-Pelet A, Lyonnet S, Metzger DL, Bourdony CJ, Tiosano D, Chan WY, Stratakis CA (November 2001). \"Spectrum of mutations of the AAAS gene in Allgrove syndrome: lack of mutations in six kindreds with isolated resistance to corticotropin\". The Journal of Clinical Endocrinology and Metabolism. 86 (11): 5433–7. doi:10.1210/jcem.86.11.8037. PMID 11701718.",
+                    "<info> Schmittmann-Ohters K, Huebner A, Richter-Unruh A, Hauffa BP (2002). \"Clinical and novel molecular findings in a 6.8-year-old Turkish boy with triple A syndrome\". Hormone Research. 56 (1–2): 67–72. doi:10.1159/000048093. PMID 11815731. S2CID 46834548.",
+                    "<info> Goizet C, Catargi B, Tison F, Tullio-Pelet A, Hadj-Rabia S, Pujol F, Lagueny A, Lyonnet S, Lacombe D (March 2002). \"Progressive bulbospinal amyotrophy in triple A syndrome with AAAS gene mutation\". Neurology. 58 (6): 962–5. doi:10.1212/wnl.58.6.962. PMID 11914417.",
+                    "<info> Cronshaw JM, Matunis MJ (May 2003). \"The nuclear pore complex protein ALADIN is mislocalized in triple A syndrome\". Proceedings of the National Academy of Sciences of the United States of America. 100 (10): 5823–7. Bibcode:2003PNAS..100.5823C. doi:10.1073/pnas.1031047100. PMC 156285. PMID 12730363.",
+                    "<info> Prpic I, Huebner A, Persic M, Handschug K, Pavletic M (May 2003). \"Triple A syndrome: genotype-phenotype assessment\". Clinical Genetics. 63 (5): 415–7. doi:10.1034/j.1399-0004.2003.00070.x. PMID 12752575. S2CID 19250948.",
+                    "<info> Roubergue A, Apartis E, Vidailhet M, Mignot C, Tullio-Pelet A, Lyonnet S, de Villemeur TB (March 2004). \"Myoclonus and generalized digestive dysmotility in triple A syndrome with AAAS gene mutation\". Movement Disorders. 19 (3): 344–6. doi:10.1002/mds.10660. PMID 15022193. S2CID 27038247.",
+                    "<info> Brooks BP, Kleta R, Caruso RC, Stuart C, Ludlow J, Stratakis CA (June 2004). \"Triple-A syndrome with prominent ophthalmic features and a novel mutation in the AAAS gene: a case report\". BMC Ophthalmology. 4 7. doi:10.1186/1471-2415-4-7. PMC 459227. PMID 15217518.",
+                    "<info> Huebner A, Kaindl AM, Knobeloch KP, Petzold H, Mann P, Koehler K (November 2004). \"The triple A syndrome is due to mutations in ALADIN, a novel member of the nuclear pore complex\". Endocrine Research. 30 (4): 891–9. doi:10.1081/ERC-200044138. PMID 15666842. S2CID 31047487.",
+                    "<info> Storr HL, Clark AJ, Priestley JV, Michael GJ (2005). \"Identification of the sites of expression of triple A syndrome mRNA in the rat using in situ hybridisation\". Neuroscience. 131 (1): 113–23. doi:10.1016/j.neuroscience.2004.10.029. PMID 15680696. S2CID 7323257.",
+                    "<info> Di Nardo G, Tullio-Pelet A, Annese V, Stanghellini V, Barbara G, Latiano A, Andriulli A, Cremon C, Salvioli B, Volta U, Corinaldesi R, Lyonnet S, De Giorgio R (May 2005). \"Idiopathic achalasia is not allelic to alacrima achalasia adrenal insufficiency syndrome at the ALADIN locus\". Digestive and Liver Disease. 37 (5): 312–5. doi:10.1016/j.dld.2004.11.006. PMID 15843079.",
+                    "<info> Li X, Ji C, Gu J, Xu J, Jin Z, Sun L, Zou X, Lin Y, Sun R, Wang P, Gu S, Mao Y (June 2005). \"Molecular cloning and characterization of AAAS-V2, a novel splice variant of human AAAS\". Molecular Biology Reports. 32 (2): 127–31. doi:10.1007/s11033-004-6939-9. PMID 16022285. S2CID 9034337.",
+                    "<info> Brooks BP, Kleta R, Stuart C, Tuchman M, Jeong A, Stergiopoulos SG, Bei T, Bjornson B, Russell L, Chanoine JP, Tsagarakis S, Kalsner L, Stratakis C (September 2005). \"Genotypic heterogeneity and clinical phenotype in triple A syndrome: a review of the NIH experience 2000-2005\". Clinical Genetics. 68 (3): 215–21. doi:10.1111/j.1399-0004.2005.00482.x. PMID 16098009. S2CID 20404052.",
+                    "<info> Papageorgiou L, Mimidis K, Katsani KR, Fakis G (January 2013). \"The genetic basis of triple A (Allgrove) syndrome in a Greek family\". Gene. 512 (2): 505–9. doi:10.1016/j.gene.2012.10.008. PMID 23073554.",
+                    "",
+                    "=== External links ===",
+                    "<info> AAAS human gene location in the UCSC Genome Browser.",
+                    "<info> AAAS human gene details in the UCSC Genome Browser.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Aladin, also known as adracalin, is a nuclear envelope protein that in humans is encoded by the AAAS gene.[5] It is named after the achalasia–addisonianism–alacrima syndrome (triple A syndrome) which occurs when the gene is mutated."
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "Aladin  is a component of the nuclear pore complex, to which it is attached by nucleoporin NDC1.[6][7]  Mutant aladin causes selective failure of nuclear protein import and hypersensitivity to oxidative stress.[8]  Mutant aladin also causes decreased nuclear import of aprataxin, a repair protein for single-strand breaks, and DNA ligase I, employed in DNA base excision repair.[8] These decreases in DNA repair proteins may increase the susceptibility of cells to oxidative stress by allowing accumulation of oxidative DNA damages that trigger cell death."
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "Mutations in the AAAS gene are responsible for Triple A syndrome (also known as Allgrove Syndrome).[9] Triple-A syndrome is an autosomal recessive neuroendocrinological disease.",
+                            "Aladin is also employed in specific oocyte meiotic stages, including spindle assembly and spindle positioning.[10]   Female mice homozygously null for aladin are sterile."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000094914 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000036678 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ Tullio-Pelet A, Salomon R, Hadj-Rabia S, Mugnier C, de Laet MH, Chaouachi B, Bakiri F, Brottier P, Cattolico L, Penet C, Bégeot M, Naville D, Nicolino M, Chaussain JL, Weissenbach J, Munnich A, Lyonnet S (November 2000). \"Mutant WD-repeat protein in triple-A syndrome\". Nature Genetics. 26 (3): 332–5. doi:10.1038/81642. PMID 11062474. S2CID 22952012.",
+                            "<info> ^ Kind B, Koehler K, Lorenz M, Huebner A (December 2009). \"The nuclear pore complex protein ALADIN is anchored via NDC1 but not via POM121 and GP210 in the nuclear envelope\". Biochemical and Biophysical Research Communications. 390 (2): 205–10. doi:10.1016/j.bbrc.2009.09.080. PMID 19782045.",
+                            "<info> ^ Cho AR, Yang KJ, Bae Y, Bahk YY, Kim E, Lee H, Kim JK, Park W, Rhim H, Choi SY, Imanaka T, Moon S, Yoon J, Yoon SK (June 2009). \"Tissue-specific expression and subcellular localization of ALADIN, the absence of which causes human triple A syndrome\". Experimental & Molecular Medicine. 41 (6): 381–6. doi:10.3858/emm.2009.41.6.043. PMC 2705858. PMID 19322026.",
+                            "<info> ^ a b Hirano M, Furiya Y, Asai H, Yasui A, Ueno S (February 2006). \"ALADINI482S causes selective failure of nuclear protein import and hypersensitivity to oxidative stress in triple A syndrome\". Proc. Natl. Acad. Sci. U.S.A. 103 (7): 2298–303. Bibcode:2006PNAS..103.2298H. doi:10.1073/pnas.0505598103. PMC 1413683. PMID 16467144.",
+                            "<info> ^ \"Entrez Gene: AAAS achalasia, adrenocortical insufficiency, alacrimia (Allgrove, triple-A)\".",
+                            "<info> ^ Carvalhal S, Stevense M, Koehler K, Naumann R, Huebner A, Jessberger R, Griffis ER (September 2017). \"ALADIN is required for the production of fertile mouse oocytes\". Mol. Biol. Cell. 28 (19): 2470–2478. doi:10.1091/mbc.E16-03-0158. PMC 5597320. PMID 28768824."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Jühlen R, Idkowiak J, Taylor AE, Kind B, Arlt W, Huebner A, Koehler K (2015). \"Role of ALADIN in human adrenocortical cells for oxidative stress response and steroidogenesis\". PLOS ONE. 10 (4) e0124582. Bibcode:2015PLoSO..1024582J. doi:10.1371/journal.pone.0124582. PMC 4395102. PMID 25867024.",
+                            "<info> Maruyama K, Sugano S (January 1994). \"Oligo-capping: a simple method to replace the cap structure of eukaryotic mRNAs with oligoribonucleotides\". Gene. 138 (1–2): 171–4. doi:10.1016/0378-1119(94)90802-8. PMID 8125298.",
+                            "<info> Weber A, Wienker TF, Jung M, Easton D, Dean HJ, Heinrichs C, Reis A, Clark AJ (December 1996). \"Linkage of the gene for the triple A syndrome to chromosome 12q13 near the type II keratin gene cluster\". Human Molecular Genetics. 5 (12): 2061–6. CiteSeerX 10.1.1.329.7433. doi:10.1093/hmg/5.12.2061. PMID 8968764.",
+                            "<info> Suzuki Y, Yoshitomo-Nakagawa K, Maruyama K, Suyama A, Sugano S (October 1997). \"Construction and characterization of a full length-enriched and a 5'-end-enriched cDNA library\". Gene. 200 (1–2): 149–56. doi:10.1016/S0378-1119(97)00411-3. PMID 9373149.",
+                            "<info> Handschug K, Sperling S, Yoon SJ, Hennig S, Clark AJ, Huebner A (February 2001). \"Triple A syndrome is caused by mutations in AAAS, a new WD-repeat protein gene\". Human Molecular Genetics. 10 (3): 283–90. doi:10.1093/hmg/10.3.283. PMID 11159947.",
+                            "<info> Sandrini F, Farmakidis C, Kirschner LS, Wu SM, Tullio-Pelet A, Lyonnet S, Metzger DL, Bourdony CJ, Tiosano D, Chan WY, Stratakis CA (November 2001). \"Spectrum of mutations of the AAAS gene in Allgrove syndrome: lack of mutations in six kindreds with isolated resistance to corticotropin\". The Journal of Clinical Endocrinology and Metabolism. 86 (11): 5433–7. doi:10.1210/jcem.86.11.8037. PMID 11701718.",
+                            "<info> Schmittmann-Ohters K, Huebner A, Richter-Unruh A, Hauffa BP (2002). \"Clinical and novel molecular findings in a 6.8-year-old Turkish boy with triple A syndrome\". Hormone Research. 56 (1–2): 67–72. doi:10.1159/000048093. PMID 11815731. S2CID 46834548.",
+                            "<info> Goizet C, Catargi B, Tison F, Tullio-Pelet A, Hadj-Rabia S, Pujol F, Lagueny A, Lyonnet S, Lacombe D (March 2002). \"Progressive bulbospinal amyotrophy in triple A syndrome with AAAS gene mutation\". Neurology. 58 (6): 962–5. doi:10.1212/wnl.58.6.962. PMID 11914417.",
+                            "<info> Cronshaw JM, Matunis MJ (May 2003). \"The nuclear pore complex protein ALADIN is mislocalized in triple A syndrome\". Proceedings of the National Academy of Sciences of the United States of America. 100 (10): 5823–7. Bibcode:2003PNAS..100.5823C. doi:10.1073/pnas.1031047100. PMC 156285. PMID 12730363.",
+                            "<info> Prpic I, Huebner A, Persic M, Handschug K, Pavletic M (May 2003). \"Triple A syndrome: genotype-phenotype assessment\". Clinical Genetics. 63 (5): 415–7. doi:10.1034/j.1399-0004.2003.00070.x. PMID 12752575. S2CID 19250948.",
+                            "<info> Roubergue A, Apartis E, Vidailhet M, Mignot C, Tullio-Pelet A, Lyonnet S, de Villemeur TB (March 2004). \"Myoclonus and generalized digestive dysmotility in triple A syndrome with AAAS gene mutation\". Movement Disorders. 19 (3): 344–6. doi:10.1002/mds.10660. PMID 15022193. S2CID 27038247.",
+                            "<info> Brooks BP, Kleta R, Caruso RC, Stuart C, Ludlow J, Stratakis CA (June 2004). \"Triple-A syndrome with prominent ophthalmic features and a novel mutation in the AAAS gene: a case report\". BMC Ophthalmology. 4 7. doi:10.1186/1471-2415-4-7. PMC 459227. PMID 15217518.",
+                            "<info> Huebner A, Kaindl AM, Knobeloch KP, Petzold H, Mann P, Koehler K (November 2004). \"The triple A syndrome is due to mutations in ALADIN, a novel member of the nuclear pore complex\". Endocrine Research. 30 (4): 891–9. doi:10.1081/ERC-200044138. PMID 15666842. S2CID 31047487.",
+                            "<info> Storr HL, Clark AJ, Priestley JV, Michael GJ (2005). \"Identification of the sites of expression of triple A syndrome mRNA in the rat using in situ hybridisation\". Neuroscience. 131 (1): 113–23. doi:10.1016/j.neuroscience.2004.10.029. PMID 15680696. S2CID 7323257.",
+                            "<info> Di Nardo G, Tullio-Pelet A, Annese V, Stanghellini V, Barbara G, Latiano A, Andriulli A, Cremon C, Salvioli B, Volta U, Corinaldesi R, Lyonnet S, De Giorgio R (May 2005). \"Idiopathic achalasia is not allelic to alacrima achalasia adrenal insufficiency syndrome at the ALADIN locus\". Digestive and Liver Disease. 37 (5): 312–5. doi:10.1016/j.dld.2004.11.006. PMID 15843079.",
+                            "<info> Li X, Ji C, Gu J, Xu J, Jin Z, Sun L, Zou X, Lin Y, Sun R, Wang P, Gu S, Mao Y (June 2005). \"Molecular cloning and characterization of AAAS-V2, a novel splice variant of human AAAS\". Molecular Biology Reports. 32 (2): 127–31. doi:10.1007/s11033-004-6939-9. PMID 16022285. S2CID 9034337.",
+                            "<info> Brooks BP, Kleta R, Stuart C, Tuchman M, Jeong A, Stergiopoulos SG, Bei T, Bjornson B, Russell L, Chanoine JP, Tsagarakis S, Kalsner L, Stratakis C (September 2005). \"Genotypic heterogeneity and clinical phenotype in triple A syndrome: a review of the NIH experience 2000-2005\". Clinical Genetics. 68 (3): 215–21. doi:10.1111/j.1399-0004.2005.00482.x. PMID 16098009. S2CID 20404052.",
+                            "<info> Papageorgiou L, Mimidis K, Katsani KR, Fakis G (January 2013). \"The genetic basis of triple A (Allgrove) syndrome in a Greek family\". Gene. 512 (2): 505–9. doi:10.1016/j.gene.2012.10.008. PMID 23073554."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> AAAS human gene location in the UCSC Genome Browser.",
+                            "<info> AAAS human gene details in the UCSC Genome Browser."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

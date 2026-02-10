@@ -1,0 +1,39 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/papillomatosis": {
+                "title": "Papillomatosis",
+                "url": "https://en.wikipedia.org/wiki/papillomatosis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Papillomatosis is skin surface elevation caused by hyperplasia and enlargement of contiguous dermal papillae.[1] These papillary projections of the epidermis form an undulating surface under microscopic examination.",
+                    "",
+                    "=== See also ===",
+                    "<info> List of skin diseases",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Kumar, Vinay; Fausto, Nelso; Abbas, Abul (2004) Robbins & Cotran Pathologic Basis of Disease (7th ed.). Saunders. Page 1230. ISBN 0-7216-0187-1.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Papillomatosis is skin surface elevation caused by hyperplasia and enlargement of contiguous dermal papillae.[1] These papillary projections of the epidermis form an undulating surface under microscopic examination."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of skin diseases"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Kumar, Vinay; Fausto, Nelso; Abbas, Abul (2004) Robbins & Cotran Pathologic Basis of Disease (7th ed.). Saunders. Page 1230. ISBN 0-7216-0187-1."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

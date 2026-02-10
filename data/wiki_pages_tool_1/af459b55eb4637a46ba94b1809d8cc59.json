@@ -1,0 +1,127 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/myosin-7": {
+                "title": "Myosin-7",
+                "url": "https://en.wikipedia.org/wiki/myosin-7",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Myosin-7 is a protein that in humans is encoded by the MYH7 gene.",
+                    "It is the myosin heavy chain beta (MHC-β) isoform (slow twitch) expressed primarily in the heart, but also in skeletal muscles (type I fibers).[5] This isoform is distinct from the fast isoform of cardiac myosin heavy chain, MYH6, referred to as MHC-α. MHC-β is the major protein comprising the thick filament that forms the sarcomeres in cardiac muscle and plays a major role in cardiac muscle contraction.[6]",
+                    "",
+                    "=== Structure ===",
+                    "MHC-β is a 223 kDa protein composed of 1935 amino acids.[7][8]\nMHC-β is a hexameric, asymmetric motor forming the bulk of the thick filament in cardiac muscle. MHC-β is composed of N-terminal globular heads (20 nm) that project laterally, and alpha helical tails (130 nm) that dimerize and multimerize into a coiled-coil motif to form the light meromyosin (LMM), thick filament rod.[9] The 9 nm alpha-helical neck region of each MHC-β head non-covalently binds two light chains, essential light chain (MYL3) and regulatory light chain (MYL2).[10]  Approximately 300 myosin molecules constitute one thick filament.[11] There are two isoforms of cardiac MHC, α and β, which display 93% homology. MHC-α and MHC-β display significantly different enzymatic properties, with α having 150-300% the contractile velocity and 60-70% actin attachment time as that of β.[12][13] MHC-β is predominately expressed in the human ventricle, while MHC-α is predominantly expressed in human atria.[citation needed]",
+                    "",
+                    "=== Function ===",
+                    "It is the enzymatic activity of the ATPase in the myosin head that cyclically hydrolyzes ATP, fueling the myosin power stroke. This process converts chemical to mechanical energy, and propels shortening of the sarcomeres in order to generate intraventricular pressure and power. An accepted mechanism for this process is that ADP-bound myosin attaches to actin while thrusting tropomyosin inwards,[14] then the S1-S2 myosin lever arm rotates ~70° about the converter domain and drives actin filaments towards the M-line.[15]",
+                    "",
+                    "=== Interactions ===",
+                    "A sequence (IALKGG*KKQLQK) present in both MYH6 and MYH7 was shown to be cut by the papain-like protease (PLpro) of SARS-CoV-2.[16]   A similar sequence (IALKGG*KI) is found in the viral polyprotein at a protease cleavage site and is a SSHHP sequence.  Cleavage of myofibrils was observed in SARS-CoV-2 infected cardiomyocytes, consistent with preoteolysis (see photo).[17]",
+                    "",
+                    "=== Clinical significance ===",
+                    "Several mutations in MYH7 have been associated with inherited cardiomyopathies. Lowrance et al. were the first to identify the causative mutation Arg403Gln for hypertrophic cardiomyopathy (HCM) in the MYH7 gene.[18] Studies have since identified several more MYH7 mutations, that are estimated to be causal in approximately 40% of HCM cases. This condition is an autosomal-dominant disease, in which a single copy of the variant gene causes enlargement of the left ventricle of the heart.  Disease onset usually occurs later in life, perhaps triggered by changes in thyroid hormone function and/or physical stress.",
+                    "Another condition associated to mutations in this gene is paraspinal and proximal muscle atrophy.[19]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000092054 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000053093 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ Quiat D, Voelker KA, Pei J, Grishin NV, Grange RW, Bassel-Duby R, et al. (June 2011). \"Concerted regulation of myofiber-specific gene expression and muscle performance by the transcriptional repressor Sox6\". Proceedings of the National Academy of Sciences of the United States of America. 108 (25): 10196–10201. Bibcode:2011PNAS..10810196Q. doi:10.1073/pnas.1107413108. PMC 3121857. PMID 21633012.",
+                    "<info> ^ Wang L, Geist J, Grogan A, Hu LR, Kontrogianni-Konstantopoulos A (March 2018). \"Thick Filament Protein Network, Functions, and Disease Association\". Comprehensive Physiology. 8 (2): 631–709. doi:10.1002/cphy.c170023. ISBN 9780470650714. PMC 6404781. PMID 29687901.",
+                    "<info> ^ \"Cardiac Organellar Protein Atlas Knowledgebase (COPaKB)\". heartproteome.org. Archived from the original on 4 March 2016. Retrieved 14 October 2015.",
+                    "<info> ^ Zong NC, Li H, Li H, Lam MP, Jimenez RC, Kim CS, et al. (October 2013). \"Integration of cardiac proteome biology and medicine by a specialized knowledgebase\". Circulation Research. 113 (9): 1043–1053. doi:10.1161/CIRCRESAHA.113.301151. PMC 4076475. PMID 23965338.",
+                    "<info> ^ Tamborrini D, Wang Z, Wagner T, Tacke S, Stabrin M, Grange M, et al. (November 2023). \"Structure of the native myosin filament in the relaxed cardiac sarcomere\". Nature. 623 (7988): 863–871. Bibcode:2023Natur.623..863T. doi:10.1038/s41586-023-06690-5. PMC 10665186. PMID 37914933.",
+                    "<info> ^ Palmer BM (September 2005). \"Thick filament proteins and performance in human heart failure\". Heart Failure Reviews. 10 (3): 187–197. doi:10.1007/s10741-005-5249-1. PMID 16416042. S2CID 20691228.",
+                    "<info> ^ Harris SP, Lyons RG, Bezold KL (March 2011). \"In the thick of it: HCM-causing mutations in myosin binding proteins of the thick filament\". Circulation Research. 108 (6): 751–764. doi:10.1161/CIRCRESAHA.110.231670. PMC 3076008. PMID 21415409.",
+                    "<info> ^ Palmer BM (September 2005). \"Thick filament proteins and performance in human heart failure\". Heart Failure Reviews. 10 (3): 187–197. doi:10.1007/s10741-005-5249-1. PMID 16416042. S2CID 20691228.",
+                    "<info> ^ Alpert NR, Brosseau C, Federico A, Krenz M, Robbins J, Warshaw DM (October 2002). \"Molecular mechanics of mouse cardiac myosin isoforms\". American Journal of Physiology. Heart and Circulatory Physiology. 283 (4): H1446–H1454. doi:10.1152/ajpheart.00274.2002. PMID 12234796.",
+                    "<info> ^ McKillop DF, Geeves MA (August 1993). \"Regulation of the interaction between actin and myosin subfragment 1: evidence for three states of the thin filament\". Biophysical Journal. 65 (2): 693–701. Bibcode:1993BpJ....65..693M. doi:10.1016/S0006-3495(93)81110-X. PMC 1225772. PMID 8218897.",
+                    "<info> ^ Tyska MJ, Warshaw DM (January 2002). \"The myosin power stroke\". Cell Motility and the Cytoskeleton. 51 (1): 1–15. doi:10.1002/cm.10014. PMID 11810692.",
+                    "<info> ^ Reynolds ND, Aceves NM, Liu JL, Compton JR, Leary DH, Freitas BT, et al. (June 2021). \"The SARS-CoV-2 SSHHPS Recognized by the Papain-like Protease\". ACS Infectious Diseases. 7 (6): 1483–1502. doi:10.1021/acsinfecdis.0c00866. PMC 8171221. PMID 34019767.",
+                    "<info> ^ Pérez-Bermejo JA, Kang S, Rockwood SJ, Simoneau CR, Joy DA, Ramadoss GN, et al. (2021). \"SARS-CoV-2 infection of human iPSC–derived cardiac cells reflects cytopathic features in hearts of patients with COVID-19\". Science Translational Medicine. 13 (590) eabf7872. bioRxiv 10.1101/2020.08.25.265561. doi:10.1126/scitranslmed.abf7872. PMC 8128284. PMID 33723017.",
+                    "<info> ^ Geisterfer-Lowrance AA, Kass S, Tanigawa G, Vosberg HP, McKenna W, Seidman CE, et al. (September 1990). \"A molecular basis for familial hypertrophic cardiomyopathy: a beta cardiac myosin heavy chain gene missense mutation\". Cell. 62 (5): 999–1006. doi:10.1016/0092-8674(90)90274-i. PMID 1975517. S2CID 45182243.",
+                    "<info> ^ Park JM, Kim YJ, Yoo JH, Hong YB, Park JH, Koo H, et al. (July 2013). \"A novel MYH7 mutation with prominent paraspinal and proximal muscle involvement\". Neuromuscular Disorders. 23 (7): 580–586. doi:10.1016/j.nmd.2013.04.003. PMID 23707328. S2CID 6194064.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Jääskeläinen P, Miettinen R, Kärkkäinen P, Toivonen L, Laakso M, Kuusisto J (2004). \"Genetics of hypertrophic cardiomyopathy in eastern Finland: few founder mutations with benign or intermediary phenotypes\". Annals of Medicine. 36 (1): 23–32. doi:10.1080/07853890310017161. PMID 15000344. S2CID 29985750.",
+                    "<info> Kamisago M, Schmitt JP, McNamara D, Seidman C, Seidman JG (2007). \"Sarcomere Protein Gene Mutations and Inherited Heart Disease: A β Cardiac Myosin Heavy Chain Mutation Causing Endocardial Fibroelastosis and Heart Failure\". Heart Failure: Molecules, Mechanisms and Therapeutic Targets. Novartis Foundation Symposia. Vol. 274. pp. 176–89, discussion 189–95, 272–6. doi:10.1002/0470029331.ch11. ISBN 9780470015971. PMID 17019812.",
+                    "",
+                    "=== External links ===",
+                    "<info> Mass spectrometry characterization of MYH7 at COPaKB Archived 4 March 2016 at the Wayback Machine",
+                    "<info> GeneReviews/NIH/NCBI/UW entry on Familial Hypertrophic Cardiomyopathy Overview",
+                    "<info> GeneReviews/NCBI/NIH/UW entry on Laing Distal Myopathy",
+                    "<info> MYH7+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Myosin-7 is a protein that in humans is encoded by the MYH7 gene.",
+                            "It is the myosin heavy chain beta (MHC-β) isoform (slow twitch) expressed primarily in the heart, but also in skeletal muscles (type I fibers).[5] This isoform is distinct from the fast isoform of cardiac myosin heavy chain, MYH6, referred to as MHC-α. MHC-β is the major protein comprising the thick filament that forms the sarcomeres in cardiac muscle and plays a major role in cardiac muscle contraction.[6]"
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "MHC-β is a 223 kDa protein composed of 1935 amino acids.[7][8]\nMHC-β is a hexameric, asymmetric motor forming the bulk of the thick filament in cardiac muscle. MHC-β is composed of N-terminal globular heads (20 nm) that project laterally, and alpha helical tails (130 nm) that dimerize and multimerize into a coiled-coil motif to form the light meromyosin (LMM), thick filament rod.[9] The 9 nm alpha-helical neck region of each MHC-β head non-covalently binds two light chains, essential light chain (MYL3) and regulatory light chain (MYL2).[10]  Approximately 300 myosin molecules constitute one thick filament.[11] There are two isoforms of cardiac MHC, α and β, which display 93% homology. MHC-α and MHC-β display significantly different enzymatic properties, with α having 150-300% the contractile velocity and 60-70% actin attachment time as that of β.[12][13] MHC-β is predominately expressed in the human ventricle, while MHC-α is predominantly expressed in human atria.[citation needed]"
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "It is the enzymatic activity of the ATPase in the myosin head that cyclically hydrolyzes ATP, fueling the myosin power stroke. This process converts chemical to mechanical energy, and propels shortening of the sarcomeres in order to generate intraventricular pressure and power. An accepted mechanism for this process is that ADP-bound myosin attaches to actin while thrusting tropomyosin inwards,[14] then the S1-S2 myosin lever arm rotates ~70° about the converter domain and drives actin filaments towards the M-line.[15]"
+                        ]
+                    },
+                    "Interactions": {
+                        "content": [
+                            "A sequence (IALKGG*KKQLQK) present in both MYH6 and MYH7 was shown to be cut by the papain-like protease (PLpro) of SARS-CoV-2.[16]   A similar sequence (IALKGG*KI) is found in the viral polyprotein at a protease cleavage site and is a SSHHP sequence.  Cleavage of myofibrils was observed in SARS-CoV-2 infected cardiomyocytes, consistent with preoteolysis (see photo).[17]"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "Several mutations in MYH7 have been associated with inherited cardiomyopathies. Lowrance et al. were the first to identify the causative mutation Arg403Gln for hypertrophic cardiomyopathy (HCM) in the MYH7 gene.[18] Studies have since identified several more MYH7 mutations, that are estimated to be causal in approximately 40% of HCM cases. This condition is an autosomal-dominant disease, in which a single copy of the variant gene causes enlargement of the left ventricle of the heart.  Disease onset usually occurs later in life, perhaps triggered by changes in thyroid hormone function and/or physical stress.",
+                            "Another condition associated to mutations in this gene is paraspinal and proximal muscle atrophy.[19]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000092054 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000053093 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ Quiat D, Voelker KA, Pei J, Grishin NV, Grange RW, Bassel-Duby R, et al. (June 2011). \"Concerted regulation of myofiber-specific gene expression and muscle performance by the transcriptional repressor Sox6\". Proceedings of the National Academy of Sciences of the United States of America. 108 (25): 10196–10201. Bibcode:2011PNAS..10810196Q. doi:10.1073/pnas.1107413108. PMC 3121857. PMID 21633012.",
+                            "<info> ^ Wang L, Geist J, Grogan A, Hu LR, Kontrogianni-Konstantopoulos A (March 2018). \"Thick Filament Protein Network, Functions, and Disease Association\". Comprehensive Physiology. 8 (2): 631–709. doi:10.1002/cphy.c170023. ISBN 9780470650714. PMC 6404781. PMID 29687901.",
+                            "<info> ^ \"Cardiac Organellar Protein Atlas Knowledgebase (COPaKB)\". heartproteome.org. Archived from the original on 4 March 2016. Retrieved 14 October 2015.",
+                            "<info> ^ Zong NC, Li H, Li H, Lam MP, Jimenez RC, Kim CS, et al. (October 2013). \"Integration of cardiac proteome biology and medicine by a specialized knowledgebase\". Circulation Research. 113 (9): 1043–1053. doi:10.1161/CIRCRESAHA.113.301151. PMC 4076475. PMID 23965338.",
+                            "<info> ^ Tamborrini D, Wang Z, Wagner T, Tacke S, Stabrin M, Grange M, et al. (November 2023). \"Structure of the native myosin filament in the relaxed cardiac sarcomere\". Nature. 623 (7988): 863–871. Bibcode:2023Natur.623..863T. doi:10.1038/s41586-023-06690-5. PMC 10665186. PMID 37914933.",
+                            "<info> ^ Palmer BM (September 2005). \"Thick filament proteins and performance in human heart failure\". Heart Failure Reviews. 10 (3): 187–197. doi:10.1007/s10741-005-5249-1. PMID 16416042. S2CID 20691228.",
+                            "<info> ^ Harris SP, Lyons RG, Bezold KL (March 2011). \"In the thick of it: HCM-causing mutations in myosin binding proteins of the thick filament\". Circulation Research. 108 (6): 751–764. doi:10.1161/CIRCRESAHA.110.231670. PMC 3076008. PMID 21415409.",
+                            "<info> ^ Palmer BM (September 2005). \"Thick filament proteins and performance in human heart failure\". Heart Failure Reviews. 10 (3): 187–197. doi:10.1007/s10741-005-5249-1. PMID 16416042. S2CID 20691228.",
+                            "<info> ^ Alpert NR, Brosseau C, Federico A, Krenz M, Robbins J, Warshaw DM (October 2002). \"Molecular mechanics of mouse cardiac myosin isoforms\". American Journal of Physiology. Heart and Circulatory Physiology. 283 (4): H1446–H1454. doi:10.1152/ajpheart.00274.2002. PMID 12234796.",
+                            "<info> ^ McKillop DF, Geeves MA (August 1993). \"Regulation of the interaction between actin and myosin subfragment 1: evidence for three states of the thin filament\". Biophysical Journal. 65 (2): 693–701. Bibcode:1993BpJ....65..693M. doi:10.1016/S0006-3495(93)81110-X. PMC 1225772. PMID 8218897.",
+                            "<info> ^ Tyska MJ, Warshaw DM (January 2002). \"The myosin power stroke\". Cell Motility and the Cytoskeleton. 51 (1): 1–15. doi:10.1002/cm.10014. PMID 11810692.",
+                            "<info> ^ Reynolds ND, Aceves NM, Liu JL, Compton JR, Leary DH, Freitas BT, et al. (June 2021). \"The SARS-CoV-2 SSHHPS Recognized by the Papain-like Protease\". ACS Infectious Diseases. 7 (6): 1483–1502. doi:10.1021/acsinfecdis.0c00866. PMC 8171221. PMID 34019767.",
+                            "<info> ^ Pérez-Bermejo JA, Kang S, Rockwood SJ, Simoneau CR, Joy DA, Ramadoss GN, et al. (2021). \"SARS-CoV-2 infection of human iPSC–derived cardiac cells reflects cytopathic features in hearts of patients with COVID-19\". Science Translational Medicine. 13 (590) eabf7872. bioRxiv 10.1101/2020.08.25.265561. doi:10.1126/scitranslmed.abf7872. PMC 8128284. PMID 33723017.",
+                            "<info> ^ Geisterfer-Lowrance AA, Kass S, Tanigawa G, Vosberg HP, McKenna W, Seidman CE, et al. (September 1990). \"A molecular basis for familial hypertrophic cardiomyopathy: a beta cardiac myosin heavy chain gene missense mutation\". Cell. 62 (5): 999–1006. doi:10.1016/0092-8674(90)90274-i. PMID 1975517. S2CID 45182243.",
+                            "<info> ^ Park JM, Kim YJ, Yoo JH, Hong YB, Park JH, Koo H, et al. (July 2013). \"A novel MYH7 mutation with prominent paraspinal and proximal muscle involvement\". Neuromuscular Disorders. 23 (7): 580–586. doi:10.1016/j.nmd.2013.04.003. PMID 23707328. S2CID 6194064."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Jääskeläinen P, Miettinen R, Kärkkäinen P, Toivonen L, Laakso M, Kuusisto J (2004). \"Genetics of hypertrophic cardiomyopathy in eastern Finland: few founder mutations with benign or intermediary phenotypes\". Annals of Medicine. 36 (1): 23–32. doi:10.1080/07853890310017161. PMID 15000344. S2CID 29985750.",
+                            "<info> Kamisago M, Schmitt JP, McNamara D, Seidman C, Seidman JG (2007). \"Sarcomere Protein Gene Mutations and Inherited Heart Disease: A β Cardiac Myosin Heavy Chain Mutation Causing Endocardial Fibroelastosis and Heart Failure\". Heart Failure: Molecules, Mechanisms and Therapeutic Targets. Novartis Foundation Symposia. Vol. 274. pp. 176–89, discussion 189–95, 272–6. doi:10.1002/0470029331.ch11. ISBN 9780470015971. PMID 17019812."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Mass spectrometry characterization of MYH7 at COPaKB Archived 4 March 2016 at the Wayback Machine",
+                            "<info> GeneReviews/NIH/NCBI/UW entry on Familial Hypertrophic Cardiomyopathy Overview",
+                            "<info> GeneReviews/NCBI/NIH/UW entry on Laing Distal Myopathy",
+                            "<info> MYH7+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

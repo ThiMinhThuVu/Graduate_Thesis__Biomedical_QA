@@ -1,0 +1,75 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/paresis": {
+                "title": "Paresis",
+                "url": "https://en.wikipedia.org/wiki/paresis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "In medicine, paresis (/pəˈriːsɪs, ˈpærəsɪs/),  compound word from Greek Ancient Greek: πάρεσις, (πᾰρᾰ- “beside” + ἵημι “let go, release”), is a condition typified by a weakness of voluntary movement, or by partial loss of voluntary movement or by impaired movement. When used without qualifiers, it usually refers to the limbs, but it can also be used to describe the muscles of the eyes (ophthalmoparesis), the stomach (gastroparesis), and also the vocal cords (vocal cord paresis).",
+                    "Neurologists use the term paresis to describe weakness, and plegia to describe paralysis in which all voluntary movement is lost. The term paresis comes from the Ancient Greek: πάρεσις 'letting go' from παρίημι 'to let go, to let fall'.",
+                    "",
+                    "=== Types ===",
+                    "<info> Monoparesis – One leg or one arm",
+                    "<info> Paraparesis – Both legs",
+                    "<info> Hemiparesis – The loss of function to only one side of the body",
+                    "<info> Triparesis – Three limbs. This can either mean both legs and one arm, both arms and a leg, or a combination of one arm, one leg, and face",
+                    "<info> Double hemiparesis – All four limbs are involved, but one side of the body is more affected than the other",
+                    "<info> Tetraparesis – All four limbs",
+                    "<info> Quadriparesis – All four limbs, equally affected",
+                    "<info> These terms frequently refer to the impairment of motion in multiple sclerosis[1] and cerebral palsy[2]",
+                    "<info> Gastroparesis – impaired stomach emptying",
+                    "<info> A form of ophthalmoplegia",
+                    "<info> Spastic paresis – exaggerated tendon reflexes and muscle hypertonia[3]",
+                    "<info> In the past, the term was most commonly used to refer to \"general paresis\", which was a symptom of untreated syphilis.[1] However, due to improvements in treatment of syphilis, it is now rarely used in this context.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b MedlinePlus Encyclopedia: 000748",
+                    "<info> ^ \"Types of Cerebral Palsy\". cerebralpalsy.org. Retrieved 2017-05-23.",
+                    "<info> ^ Young, Robert (2000). \"Chapter 15: Spastic Paresis\". In Burks, Jack (ed.). Multiple Sclerosis - Diagnosis, Medical Management and Rehabilitation. Demos Medical Publishing, Inc. p. 299. ISBN 1-888799-35-8.",
+                    "",
+                    "=== External links ===",
+                    "<info> Hind Limb Paresis and Paralysis in Rabbits",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "In medicine, paresis (/pəˈriːsɪs, ˈpærəsɪs/),  compound word from Greek Ancient Greek: πάρεσις, (πᾰρᾰ- “beside” + ἵημι “let go, release”), is a condition typified by a weakness of voluntary movement, or by partial loss of voluntary movement or by impaired movement. When used without qualifiers, it usually refers to the limbs, but it can also be used to describe the muscles of the eyes (ophthalmoparesis), the stomach (gastroparesis), and also the vocal cords (vocal cord paresis).",
+                            "Neurologists use the term paresis to describe weakness, and plegia to describe paralysis in which all voluntary movement is lost. The term paresis comes from the Ancient Greek: πάρεσις 'letting go' from παρίημι 'to let go, to let fall'."
+                        ]
+                    },
+                    "Types": {
+                        "content": [
+                            "<info> Monoparesis – One leg or one arm",
+                            "<info> Paraparesis – Both legs",
+                            "<info> Hemiparesis – The loss of function to only one side of the body",
+                            "<info> Triparesis – Three limbs. This can either mean both legs and one arm, both arms and a leg, or a combination of one arm, one leg, and face",
+                            "<info> Double hemiparesis – All four limbs are involved, but one side of the body is more affected than the other",
+                            "<info> Tetraparesis – All four limbs",
+                            "<info> Quadriparesis – All four limbs, equally affected",
+                            "<info> These terms frequently refer to the impairment of motion in multiple sclerosis[1] and cerebral palsy[2]",
+                            "<info> Gastroparesis – impaired stomach emptying",
+                            "<info> A form of ophthalmoplegia",
+                            "<info> Spastic paresis – exaggerated tendon reflexes and muscle hypertonia[3]",
+                            "<info> In the past, the term was most commonly used to refer to \"general paresis\", which was a symptom of untreated syphilis.[1] However, due to improvements in treatment of syphilis, it is now rarely used in this context."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b MedlinePlus Encyclopedia: 000748",
+                            "<info> ^ \"Types of Cerebral Palsy\". cerebralpalsy.org. Retrieved 2017-05-23.",
+                            "<info> ^ Young, Robert (2000). \"Chapter 15: Spastic Paresis\". In Burks, Jack (ed.). Multiple Sclerosis - Diagnosis, Medical Management and Rehabilitation. Demos Medical Publishing, Inc. p. 299. ISBN 1-888799-35-8."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Hind Limb Paresis and Paralysis in Rabbits"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/isthmic_organizer": {
+                "title": "Isthmic organizer",
+                "url": "https://en.wikipedia.org/wiki/isthmic_organizer",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The isthmic organizer, or isthmus organizer, also known as the midbrain−hindbrain boundary (MHB), is a secondary organizer region that develops at the junction of the midbrain and metencephalon (embryonic hindbrain).[1] The MHB expresses signaling molecules that regulate the differentiation and patterning of the adjacent neuroepithelium. This allows for the development of the midbrain and hindbrain as well as the specification of neuronal subtypes in these regions.[2] The fact that the MHB is sufficient for the development of the mid and hindbrain was shown in an experiment where quail MHB cells transplanted into the forebrain of a chick were able to induce an ectopic midbrain and cerebellum.[3]",
+                    "",
+                    "=== Development of the isthmus (MHB) ===",
+                    "The development and location of the MHB is mediated by the transcription factors Otx2 and Gbx2.[2] Otx2 is expressed in the anterior neural tube and cells in the posterior neural tube express Gbx2.[3] These two homeodomain transcription factors are activated by Irx1 and then cross inhibit one another in the developing central nervous system (CNS).[3] This leads to the creation of a defined boundary that becomes the isthmic organizer region after the neural tube closes.[2]",
+                    "",
+                    "=== Signaling molecules ===",
+                    "The usual combined expression pattern of all involved signaling molecules is necessary for the formation and maintenance of the MHB as well as the development of the midbrain and cerebellum. The following three signaling molecules act in an interconnected network to set up and maintain the MHB.[3] Loss of any one of them leads to not only decreased expression of the other two but will also lead to partial or complete loss of the midbrain and hindbrain.",
+                    "The interaction between Otx2 and Gbx2 at the MHB results in the expression of fibroblast growth factor 8 (Fgf8). Out of the known isoforms of Fgf8, Fgf8a and Fgf8b have been shown to be expressed at the isthmic organizer with Fgf8b being prevalent.[1] Fgf8 expression leads to the activation of En1 in cells that express both Irx1 and Otx2.",
+                    "Fgf8 was shown to be an organizing molecule in the MHB through an experiment where an Fgf8-loaded bead was placed on a more anterior region of the neural tube.[3] This resulted in the formation of a new ectopic MHB and showed that Fgf8 could mimic the activity of the MHB to induce the formation of midbrain and hindbrain structures from the anterior tissues.",
+                    "Fgf8 signaling at the MHB combined with Otx2 expression induces dopaminergic neuron differentiation in the midbrain. On the other hand, when Fgf8 expression spreads into the Gbx2 expressing hindbrain, it leads to serotonergic neuron differentiation. Later on in embryonic development, Fgf8 expression localizes to the rostral most Gbx2 expressing cells (caudal region of the MHB) in the neural tube.[4]",
+                    "Wnt1 is mainly expressed in the entire midbrain (Otx2 expressing cells) at first.[5] Once the midbrain/hindbrain boundary has formed, Wnt1 expression localizes to the roof plate of the neural tube and to the posterior region of the midbrain. At the MHB, Wnt1 plays a role in cell proliferation and also maintains the FGF8 expression.",
+                    "The transcription factor En1 is expressed in the MHB. In cells that express both Otx2 and Irx1, En1 is activated by Fgf8 signaling.  En1 expression in cells that express both Pax2 and Otx2 leads to a midbrain identity/fate.[5]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Nakamura, H; Watanabe, Y (2005). \"Isthmus organizer and regionalization of the mesencephalon and metencephalon\". The International Journal of Developmental Biology. 49 (2–3): 231–5. doi:10.1387/ijdb.041964hn. PMID 15906236.",
+                    "<info> ^ a b c Siegelbaum, Steven A., and A. James Hudspeth. Principles of neural science. Eds. Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell. Vol. 5. New York: McGraw-hill, 2013. [pages needed]",
+                    "<info> ^ a b c d e Sanes, D; Reh, T; Harris, W (2012). \"Chapter 2: Polarity and segmentation\". Development of the nervous system (3rd ed.). Burlington, MA: Academic Press. pp. 23–48. ISBN 9780080923208.",
+                    "<info> ^ Wurst, W; Bally-Cuif, L (February 2001). \"Neural plate patterning: upstream and downstream of the isthmic organizer\". Nature Reviews. Neuroscience. 2 (2): 99–108. doi:10.1038/35053516. PMID 11253000.",
+                    "<info> ^ a b Nakamura, H; Katahira, T; Matsunaga, E; Sato, T (September 2005). \"Isthmus organizer for midbrain and hindbrain development\". Brain Research Reviews. 49 (2): 120–6. doi:10.1016/j.brainresrev.2004.10.005. PMID 16111543.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The isthmic organizer, or isthmus organizer, also known as the midbrain−hindbrain boundary (MHB), is a secondary organizer region that develops at the junction of the midbrain and metencephalon (embryonic hindbrain).[1] The MHB expresses signaling molecules that regulate the differentiation and patterning of the adjacent neuroepithelium. This allows for the development of the midbrain and hindbrain as well as the specification of neuronal subtypes in these regions.[2] The fact that the MHB is sufficient for the development of the mid and hindbrain was shown in an experiment where quail MHB cells transplanted into the forebrain of a chick were able to induce an ectopic midbrain and cerebellum.[3]"
+                        ]
+                    },
+                    "Development of the isthmus (MHB)": {
+                        "content": [
+                            "The development and location of the MHB is mediated by the transcription factors Otx2 and Gbx2.[2] Otx2 is expressed in the anterior neural tube and cells in the posterior neural tube express Gbx2.[3] These two homeodomain transcription factors are activated by Irx1 and then cross inhibit one another in the developing central nervous system (CNS).[3] This leads to the creation of a defined boundary that becomes the isthmic organizer region after the neural tube closes.[2]"
+                        ]
+                    },
+                    "Signaling molecules": {
+                        "content": [
+                            "The usual combined expression pattern of all involved signaling molecules is necessary for the formation and maintenance of the MHB as well as the development of the midbrain and cerebellum. The following three signaling molecules act in an interconnected network to set up and maintain the MHB.[3] Loss of any one of them leads to not only decreased expression of the other two but will also lead to partial or complete loss of the midbrain and hindbrain.",
+                            "The interaction between Otx2 and Gbx2 at the MHB results in the expression of fibroblast growth factor 8 (Fgf8). Out of the known isoforms of Fgf8, Fgf8a and Fgf8b have been shown to be expressed at the isthmic organizer with Fgf8b being prevalent.[1] Fgf8 expression leads to the activation of En1 in cells that express both Irx1 and Otx2.",
+                            "Fgf8 was shown to be an organizing molecule in the MHB through an experiment where an Fgf8-loaded bead was placed on a more anterior region of the neural tube.[3] This resulted in the formation of a new ectopic MHB and showed that Fgf8 could mimic the activity of the MHB to induce the formation of midbrain and hindbrain structures from the anterior tissues.",
+                            "Fgf8 signaling at the MHB combined with Otx2 expression induces dopaminergic neuron differentiation in the midbrain. On the other hand, when Fgf8 expression spreads into the Gbx2 expressing hindbrain, it leads to serotonergic neuron differentiation. Later on in embryonic development, Fgf8 expression localizes to the rostral most Gbx2 expressing cells (caudal region of the MHB) in the neural tube.[4]",
+                            "Wnt1 is mainly expressed in the entire midbrain (Otx2 expressing cells) at first.[5] Once the midbrain/hindbrain boundary has formed, Wnt1 expression localizes to the roof plate of the neural tube and to the posterior region of the midbrain. At the MHB, Wnt1 plays a role in cell proliferation and also maintains the FGF8 expression.",
+                            "The transcription factor En1 is expressed in the MHB. In cells that express both Otx2 and Irx1, En1 is activated by Fgf8 signaling.  En1 expression in cells that express both Pax2 and Otx2 leads to a midbrain identity/fate.[5]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Nakamura, H; Watanabe, Y (2005). \"Isthmus organizer and regionalization of the mesencephalon and metencephalon\". The International Journal of Developmental Biology. 49 (2–3): 231–5. doi:10.1387/ijdb.041964hn. PMID 15906236.",
+                            "<info> ^ a b c Siegelbaum, Steven A., and A. James Hudspeth. Principles of neural science. Eds. Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell. Vol. 5. New York: McGraw-hill, 2013. [pages needed]",
+                            "<info> ^ a b c d e Sanes, D; Reh, T; Harris, W (2012). \"Chapter 2: Polarity and segmentation\". Development of the nervous system (3rd ed.). Burlington, MA: Academic Press. pp. 23–48. ISBN 9780080923208.",
+                            "<info> ^ Wurst, W; Bally-Cuif, L (February 2001). \"Neural plate patterning: upstream and downstream of the isthmic organizer\". Nature Reviews. Neuroscience. 2 (2): 99–108. doi:10.1038/35053516. PMID 11253000.",
+                            "<info> ^ a b Nakamura, H; Katahira, T; Matsunaga, E; Sato, T (September 2005). \"Isthmus organizer for midbrain and hindbrain development\". Brain Research Reviews. 49 (2): 120–6. doi:10.1016/j.brainresrev.2004.10.005. PMID 16111543."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

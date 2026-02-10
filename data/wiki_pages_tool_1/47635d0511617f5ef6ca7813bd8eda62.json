@@ -1,0 +1,85 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/microdeletion_syndrome": {
+                "title": "Microdeletion syndrome",
+                "url": "https://en.wikipedia.org/wiki/microdeletion_syndrome",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A microdeletion syndrome is a syndrome caused by a chromosomal deletion smaller than 5 million base pairs (5 Mb) spanning several genes that is too small to be detected by conventional cytogenetic methods or high resolution karyotyping (2–5 Mb).[1][2] Detection is done by fluorescence in situ hybridization (FISH). Larger chromosomal deletion syndromes are detectable using karyotyping techniques.",
+                    "",
+                    "=== Examples ===",
+                    "<info> DiGeorge syndrome or velocardiofacial syndrome[3] – most common microdeletion syndrome",
+                    "",
+                    "=== References ===",
+                    "<info> ^ H. William Taeusch; Roberta A. Ballard; Christine A. Gleason; Mary Ellen Avery (2005). Avery's Diseases of the Newborn. Elsevier Health Sciences. pp. 210–215. ISBN 0-7216-9347-4.",
+                    "<info> ^ \"Microdeletion syndrome\". Genetics Home Reference. 17 April 2014. Archived from the original on July 6, 2009. Retrieved 19 April 2014.",
+                    "<info> ^ Shaikh, TH; Kurahashi, H; Saitta, SC; O'Hare, AM; Hu, P; Roe, BA; Driscoll, DA; McDonald-McGinn, DM; Zackai, EH; Budarf, ML; Emanuel, BS (1 March 2000). \"Chromosome 22-specific low copy repeats and the 22q11.2 deletion syndrome: genomic organization and deletion endpoint analysis\". Human Molecular Genetics. 9 (4): 489–501. doi:10.1093/hmg/9.4.489. PMID 10699172.",
+                    "<info> ^ a b Buiting, K; Saitoh, S; Gross, S; Dittrich, B; Schwartz, S; Nicholls, RD; Horsthemke, B (April 1995). \"Inherited microdeletions in the Angelman and Prader-Willi syndromes define an imprinting centre on human chromosome 15\". Nature Genetics. 9 (4): 395–400. doi:10.1038/ng0495-395. PMID 7795645. S2CID 7184110.",
+                    "<info> ^ Runte, M; Varon, R; Horn, D; Horsthemke, B; Buiting, K (February 2005). \"Exclusion of the C/D box snoRNA gene cluster HBII-52 from a major role in Prader-Willi syndrome\". Human Genetics. 116 (3): 228–30. doi:10.1007/s00439-004-1219-2. PMID 15565282. S2CID 23190709.",
+                    "<info> ^ Pasmant, E; Sabbagh, A; Spurlock, G; Laurendeau, I; Grillo, E; Hamel, MJ; Martin, L; Barbarot, S; Leheup, B; Rodriguez, D; Lacombe, D; Dollfus, H; Pasquier, L; Isidor, B; Ferkal, S; Soulier, J; Sanson, M; Dieux-Coeslier, A; Bièche, I; Parfait, B; Vidaud, M; Wolkenstein, P; Upadhyaya, M; Vidaud, D; members of the NF France, Network (June 2010). \"NF1 microdeletions in neurofibromatosis type 1: from genotype to phenotype\". Human Mutation. 31 (6): E1506-18. doi:10.1002/humu.21271. PMID 20513137. S2CID 24525378.",
+                    "<info> ^ Rouleau, GA; Merel, P; Lutchman, M; Sanson, M; Zucman, J; Marineau, C; Hoang-Xuan, K; Demczuk, S; Desmaze, C; Plougastel, B (10 June 1993). \"Alteration in a new gene encoding a putative membrane-organizing protein causes neuro-fibromatosis type 2\". Nature. 363 (6429): 515–21. Bibcode:1993Natur.363..515R. doi:10.1038/363515a0. PMID 8379998. S2CID 24532924.",
+                    "<info> ^ Beck, Megan; Peterson, Jess F.; McConnell, Juliann; McGuire, Marianne; Asato, Miya; Losee, Joseph E.; Surti, Urvashi; Madan-Khetarpal, Suneeta; Rajkovic, Aleksandar; Yatsenko, Svetlana A. (May 2015). \"Craniofacial abnormalities and developmental delay in two families with overlapping 22q12.1 microdeletions involving the gene\". American Journal of Medical Genetics Part A. 167 (5): 1047–1053. doi:10.1002/ajmg.a.36839. PMID 25810350. S2CID 205319722.",
+                    "<info> ^ Tassabehji, M; Metcalfe, K; Karmiloff-Smith, A; Carette, MJ; Grant, J; Dennis, N; Reardon, W; Splitt, M; Read, AP; Donnai, D (January 1999). \"Williams syndrome: use of chromosomal microdeletions as a tool to dissect cognitive and physical phenotypes\". American Journal of Human Genetics. 64 (1): 118–25. doi:10.1086/302214. PMC 1377709. PMID 9915950.",
+                    "<info> ^ Huang, HC; Bautista, SL; Chen, BS; Chang, KP; Chen, YJ; Wuu, SW (1996). \"Miller-Dieker syndrome with microdeletion of chromosome 17p13.3: report of one case\". Zhonghua Minguo Xiao Er Ke Yi Xue Hui Za Zhi [Journal]. Zhonghua Minguo Xiao Er Ke Yi Xue Hui. 38 (6): 472–6. PMID 9473821.",
+                    "<info> ^ Bi, W; Yan, J; Stankiewicz, P; Park, SS; Walz, K; Boerkoel, CF; Potocki, L; Shaffer, LG; Devriendt, K; Nowaczyk, MJ; Inoue, K; Lupski, JR (May 2002). \"Genes in a refined Smith-Magenis syndrome critical deletion interval on chromosome 17p11.2 and the syntenic region of the mouse\". Genome Research. 12 (5): 713–28. doi:10.1101/gr.73702. PMC 186594. PMID 11997338.",
+                    "<info> ^ Wójcik, C; Volz, K; Ranola, M; Kitch, K; Karim, T; O'Neil, J; Smith, J; Torres-Martinez, W (February 2010). \"Rubinstein-Taybi syndrome associated with Chiari type I malformation caused by a large 16p13.3 microdeletion: a contiguous gene syndrome?\". American Journal of Medical Genetics Part A. 152A (2): 479–83. doi:10.1002/ajmg.a.33303. PMID 20101707. S2CID 205312346.",
+                    "<info> ^ Rauch, A; Schellmoser, S; Kraus, C; Dörr, HG; Trautmann, U; Altherr, MR; Pfeiffer, RA; Reis, A (1 April 2001). \"First known microdeletion within the Wolf-Hirschhorn syndrome critical region refines genotype-phenotype correlation\". American Journal of Medical Genetics. 99 (4): 338–42. doi:10.1002/ajmg.1203. PMID 11252005.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> H. William Taeusch; Roberta A. Ballard; Christine A. Gleason; Mary Ellen Avery (2005). Avery's Diseases of the Newborn. Elsevier Health Sciences. pp. 210–215. ISBN 0-7216-9347-4.",
+                    "<info> Microdeletions and Molecular Genetics",
+                    "<info> Microdeletion syndromes (chromosomes 1 to 11) on UpToDate",
+                    "<info> List of 100 microdeletion/duplication syndromes detected by array-CGH Archived 2021-06-29 at the Wayback Machine on GENOMA",
+                    "<info> Schwartz, Stuart; Graf, Michael D. (Sep 13, 2002). \"Ch 19. Microdeletion Syndromes: Characteristics and Diagnosis\". Molecular Cytogenetics : Protocols and Applications. Methods in Molecular Biology. Vol. 204. pp. 275–290. doi:10.1385/1-59259-300-3:275. PMID 12397804.",
+                    "<info> Vissers, LE; Stankiewicz, P (2012). \"Microdeletion and Microduplication Syndromes\". Genomic Structural Variants. Methods in Molecular Biology. Vol. 838. pp. 29–75. doi:10.1007/978-1-61779-507-7_2. ISBN 978-1-61779-506-0. PMID 22228006.",
+                    "<info> Slavotinek, Anne (2012). \"Microdeletion Syndromes\". eLS. doi:10.1002/9780470015902.a0005549.pub2. ISBN 978-0470016176.",
+                    "<info> 13 chromosomal disorders you may not have heard of",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A microdeletion syndrome is a syndrome caused by a chromosomal deletion smaller than 5 million base pairs (5 Mb) spanning several genes that is too small to be detected by conventional cytogenetic methods or high resolution karyotyping (2–5 Mb).[1][2] Detection is done by fluorescence in situ hybridization (FISH). Larger chromosomal deletion syndromes are detectable using karyotyping techniques."
+                        ]
+                    },
+                    "Examples": {
+                        "content": [
+                            "<info> DiGeorge syndrome or velocardiofacial syndrome[3] – most common microdeletion syndrome"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ H. William Taeusch; Roberta A. Ballard; Christine A. Gleason; Mary Ellen Avery (2005). Avery's Diseases of the Newborn. Elsevier Health Sciences. pp. 210–215. ISBN 0-7216-9347-4.",
+                            "<info> ^ \"Microdeletion syndrome\". Genetics Home Reference. 17 April 2014. Archived from the original on July 6, 2009. Retrieved 19 April 2014.",
+                            "<info> ^ Shaikh, TH; Kurahashi, H; Saitta, SC; O'Hare, AM; Hu, P; Roe, BA; Driscoll, DA; McDonald-McGinn, DM; Zackai, EH; Budarf, ML; Emanuel, BS (1 March 2000). \"Chromosome 22-specific low copy repeats and the 22q11.2 deletion syndrome: genomic organization and deletion endpoint analysis\". Human Molecular Genetics. 9 (4): 489–501. doi:10.1093/hmg/9.4.489. PMID 10699172.",
+                            "<info> ^ a b Buiting, K; Saitoh, S; Gross, S; Dittrich, B; Schwartz, S; Nicholls, RD; Horsthemke, B (April 1995). \"Inherited microdeletions in the Angelman and Prader-Willi syndromes define an imprinting centre on human chromosome 15\". Nature Genetics. 9 (4): 395–400. doi:10.1038/ng0495-395. PMID 7795645. S2CID 7184110.",
+                            "<info> ^ Runte, M; Varon, R; Horn, D; Horsthemke, B; Buiting, K (February 2005). \"Exclusion of the C/D box snoRNA gene cluster HBII-52 from a major role in Prader-Willi syndrome\". Human Genetics. 116 (3): 228–30. doi:10.1007/s00439-004-1219-2. PMID 15565282. S2CID 23190709.",
+                            "<info> ^ Pasmant, E; Sabbagh, A; Spurlock, G; Laurendeau, I; Grillo, E; Hamel, MJ; Martin, L; Barbarot, S; Leheup, B; Rodriguez, D; Lacombe, D; Dollfus, H; Pasquier, L; Isidor, B; Ferkal, S; Soulier, J; Sanson, M; Dieux-Coeslier, A; Bièche, I; Parfait, B; Vidaud, M; Wolkenstein, P; Upadhyaya, M; Vidaud, D; members of the NF France, Network (June 2010). \"NF1 microdeletions in neurofibromatosis type 1: from genotype to phenotype\". Human Mutation. 31 (6): E1506-18. doi:10.1002/humu.21271. PMID 20513137. S2CID 24525378.",
+                            "<info> ^ Rouleau, GA; Merel, P; Lutchman, M; Sanson, M; Zucman, J; Marineau, C; Hoang-Xuan, K; Demczuk, S; Desmaze, C; Plougastel, B (10 June 1993). \"Alteration in a new gene encoding a putative membrane-organizing protein causes neuro-fibromatosis type 2\". Nature. 363 (6429): 515–21. Bibcode:1993Natur.363..515R. doi:10.1038/363515a0. PMID 8379998. S2CID 24532924.",
+                            "<info> ^ Beck, Megan; Peterson, Jess F.; McConnell, Juliann; McGuire, Marianne; Asato, Miya; Losee, Joseph E.; Surti, Urvashi; Madan-Khetarpal, Suneeta; Rajkovic, Aleksandar; Yatsenko, Svetlana A. (May 2015). \"Craniofacial abnormalities and developmental delay in two families with overlapping 22q12.1 microdeletions involving the gene\". American Journal of Medical Genetics Part A. 167 (5): 1047–1053. doi:10.1002/ajmg.a.36839. PMID 25810350. S2CID 205319722.",
+                            "<info> ^ Tassabehji, M; Metcalfe, K; Karmiloff-Smith, A; Carette, MJ; Grant, J; Dennis, N; Reardon, W; Splitt, M; Read, AP; Donnai, D (January 1999). \"Williams syndrome: use of chromosomal microdeletions as a tool to dissect cognitive and physical phenotypes\". American Journal of Human Genetics. 64 (1): 118–25. doi:10.1086/302214. PMC 1377709. PMID 9915950.",
+                            "<info> ^ Huang, HC; Bautista, SL; Chen, BS; Chang, KP; Chen, YJ; Wuu, SW (1996). \"Miller-Dieker syndrome with microdeletion of chromosome 17p13.3: report of one case\". Zhonghua Minguo Xiao Er Ke Yi Xue Hui Za Zhi [Journal]. Zhonghua Minguo Xiao Er Ke Yi Xue Hui. 38 (6): 472–6. PMID 9473821.",
+                            "<info> ^ Bi, W; Yan, J; Stankiewicz, P; Park, SS; Walz, K; Boerkoel, CF; Potocki, L; Shaffer, LG; Devriendt, K; Nowaczyk, MJ; Inoue, K; Lupski, JR (May 2002). \"Genes in a refined Smith-Magenis syndrome critical deletion interval on chromosome 17p11.2 and the syntenic region of the mouse\". Genome Research. 12 (5): 713–28. doi:10.1101/gr.73702. PMC 186594. PMID 11997338.",
+                            "<info> ^ Wójcik, C; Volz, K; Ranola, M; Kitch, K; Karim, T; O'Neil, J; Smith, J; Torres-Martinez, W (February 2010). \"Rubinstein-Taybi syndrome associated with Chiari type I malformation caused by a large 16p13.3 microdeletion: a contiguous gene syndrome?\". American Journal of Medical Genetics Part A. 152A (2): 479–83. doi:10.1002/ajmg.a.33303. PMID 20101707. S2CID 205312346.",
+                            "<info> ^ Rauch, A; Schellmoser, S; Kraus, C; Dörr, HG; Trautmann, U; Altherr, MR; Pfeiffer, RA; Reis, A (1 April 2001). \"First known microdeletion within the Wolf-Hirschhorn syndrome critical region refines genotype-phenotype correlation\". American Journal of Medical Genetics. 99 (4): 338–42. doi:10.1002/ajmg.1203. PMID 11252005."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> H. William Taeusch; Roberta A. Ballard; Christine A. Gleason; Mary Ellen Avery (2005). Avery's Diseases of the Newborn. Elsevier Health Sciences. pp. 210–215. ISBN 0-7216-9347-4.",
+                            "<info> Microdeletions and Molecular Genetics",
+                            "<info> Microdeletion syndromes (chromosomes 1 to 11) on UpToDate",
+                            "<info> List of 100 microdeletion/duplication syndromes detected by array-CGH Archived 2021-06-29 at the Wayback Machine on GENOMA",
+                            "<info> Schwartz, Stuart; Graf, Michael D. (Sep 13, 2002). \"Ch 19. Microdeletion Syndromes: Characteristics and Diagnosis\". Molecular Cytogenetics : Protocols and Applications. Methods in Molecular Biology. Vol. 204. pp. 275–290. doi:10.1385/1-59259-300-3:275. PMID 12397804.",
+                            "<info> Vissers, LE; Stankiewicz, P (2012). \"Microdeletion and Microduplication Syndromes\". Genomic Structural Variants. Methods in Molecular Biology. Vol. 838. pp. 29–75. doi:10.1007/978-1-61779-507-7_2. ISBN 978-1-61779-506-0. PMID 22228006.",
+                            "<info> Slavotinek, Anne (2012). \"Microdeletion Syndromes\". eLS. doi:10.1002/9780470015902.a0005549.pub2. ISBN 978-0470016176.",
+                            "<info> 13 chromosomal disorders you may not have heard of"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

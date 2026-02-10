@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_skin_conditions": {
+                "title": "List of skin conditions",
+                "url": "https://en.wikipedia.org/wiki/list_of_skin_conditions",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

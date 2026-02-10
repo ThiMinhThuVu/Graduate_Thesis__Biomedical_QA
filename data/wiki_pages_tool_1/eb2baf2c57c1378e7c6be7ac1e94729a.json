@@ -1,0 +1,111 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/periodic_paralysis": {
+                "title": "Periodic paralysis",
+                "url": "https://en.wikipedia.org/wiki/periodic_paralysis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Periodic paralysis is a group of rare genetic diseases that lead to weakness or paralysis[1] from common triggers such as cold, heat, high carbohydrate meals, not eating, stress or excitement and physical activity of any kind. The underlying mechanism of these diseases are malfunctions in the ion channels in skeletal muscle cell membranes that allow electrically charged ions to leak in or out of the muscle cell, causing the cell to depolarize and become unable to move.[2]",
+                    "The symptoms of periodic paralysis can also be caused by hyperthyroidism, and are then labeled thyrotoxic periodic paralysis; however, if this is the underlying condition there are likely to be other characteristic manifestations, enabling a correct diagnosis.",
+                    "",
+                    "=== Types ===",
+                    "Periodic paralysis is an autosomal dominant myopathy with considerable variation in penetrance, leading to a spectrum of familial phenotypes (only one parent needs to carry the gene mutation to affect the children, but not all family members who share the gene are affected to the same degree). Specific diseases include:[citation needed]",
+                    "<info> Hypokalemic periodic paralysis (Online Mendelian Inheritance in Man (OMIM): 170400), where potassium leaks into the muscle cells from the bloodstream.",
+                    "<info> Hyperkalemic periodic paralysis (Online Mendelian Inheritance in Man (OMIM): 170500), where potassium leaks out of the cells into the bloodstream.",
+                    "<info> Paramyotonia congenita (Online Mendelian Inheritance in Man (OMIM): 168300), a form which often accompanies hyperkalemic periodic paralysis, but may present alone. The primary symptom of paramyotonia congenita is muscle contracture which develops during exercise or activity. Paramyotonia congenita attacks may also be triggered by a low level of potassium in the bloodstream. This means people with both hyperkalemic periodic paralysis and paramyotonia congenita can have attacks with fluctuations of potassium up or down.",
+                    "<info> Andersen-Tawil syndrome (Online Mendelian Inheritance in Man (OMIM): 170390), a form of periodic paralysis that includes significant heart rhythm problems, fainting and risk of sudden death. Potassium levels may be low, high, or normal during attacks of ATS. Patients with ATS may also have skeletal abnormalities like scoliosis (curvature of the spine), webbing between the second and third toes or fingers (syndactyly), crooked fingers (clinodactyly), a small jaw (micrognathia) and low-set ears.  Patients need to have another form of periodic paralysis to have the Andersen-Tawil.  If a patient has hypo or hyper periodic paralysis they have a 50% chance of getting Andersen-Tawil.  They just have to have the gene that causes it.  This is a rare occurrence of having this.  Only around 100 people in the world are recorded to have it.",
+                    "",
+                    "=== Cause ===",
+                    "One of the most common descriptions of periodic paralysis are episodic attacks of muscle weakness, which are commonly associated with serum potassium levels. Physical activity and diet content (carbohydrates) have been identified as PP triggers. Unlike non-dystrophic myotonias, the periodic paralysis phenotype is triggered after resting following exercise. Voltage-gated sodium channel (Nav1.4) mutations are among the key causes behind periodic paralysis.[3]",
+                    "Hyper-kalemic PP (hyperPP) is identified with high extracellular potassium levels which are typically greater than 5 mM during attacks; however, HyperPP attacks can also take place without rise in potassium concentrations. HyperPP has a prevalence rate of 1/100,000. Patients become symptomatic around the age of 10. The weakness attacks in hyperPP are relatively short lasting, and range from minutes to hours. The attacks can happen upwards of ten times per month.[citation needed]",
+                    "Hypo-kalemic PP (hypoPP) is associated with low potassium levels. The onset of hypoPP occurs between the ages of 15 and 35. The prevalence of hypoPP is estimated to 1/100,000. HypoPP can be triggered by many external factors such as stress, high-sugar diet, and rest after exercise. During hypoPP attacks, the serum potassium concentrations can drop to less than 3 mM. Furthermore, hypoPP attacks are considerably longer lasting than hyperPP. As exercise is a trigger for periodic paralysis attacks, recently there is more research going into the physiological changes that accompany exercise including changes in blood pH. [3]",
+                    "",
+                    "=== Diagnosis ===",
+                    "This disease is unusually difficult to diagnose. Patients often report years of wrong diagnosis and treatments that made them worse instead of better. Part of this may be that migraines are present in up to 50% of patients and can cause a confusing array of symptoms including headaches, speech difficulties and visual, auditory or sensory auras. DNA testing is available for only a half dozen common gene mutations, while dozens of known mutations are possible but are not routinely tested. Electromyography (EMG) findings are not specific but the McManis Protocol, also called the Compound Muscle Amplitude Potential test (CMAP) can be used by a skilled neurologist capable of utilizing the EMG, which can give assistance in diagnosing several of these PP disorders. The old glucose/insulin provocative testing can cause life-threatening symptoms and should not be used.[citation needed]",
+                    "Also of note is that potassium levels do not have to range outside of normal limits to cause serious, even life-threatening paralysis. These diseases are not the same as having a very low level of potassium (hypokalemia) or high potassium (hyperkalemia) and must not be treated as such. The total body store of potassium is usually normal; it is just in the wrong place.[citation needed]",
+                    "",
+                    "=== Treatment ===",
+                    "Treatment of the periodic paralyses may include carbonic anhydrase inhibitors (such as acetazolamide, methazolamide or dichlorphenamide), taking supplemental oral potassium chloride and a potassium-sparing diuretic (for hypos) or avoiding potassium (for hypers), thiazide diuretics to increase the amount of potassium excreted by the kidneys (for hypers), and significant lifestyle changes including tightly controlled levels of exercise or activity.  However, treatment should be tailored to the particular type of periodic paralysis.[4][5][6]",
+                    "Treatment of periodic paralysis in Andersen-Tawil syndrome is similar to that for other types. However, pacemaker insertion or an implantable cardioverter-defibrillator may be required to control cardiac symptoms.[7]",
+                    "",
+                    "=== Prognosis ===",
+                    "While the disability can range from minor, occasional weakness to permanent muscle damage, inability to hold a normal job and use of a powerchair, most people function fairly well with drugs and lifestyle changes.[citation needed]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Periodic Paralyses: Background, Pathophysiology, Epidemiology\". 2017-01-07. {{cite journal}}: Cite journal requires |journal= (help)",
+                    "<info> ^ \"Periodic Paralyses: Background, Pathophysiology, Epidemiology\". 2017-01-07. {{cite journal}}: Cite journal requires |journal= (help)",
+                    "<info> ^ a b Ghovanloo MR, Abdelsayed M, Peters CH, Ruben PC (2018). \"A Mixed Periodic Paralysis & Myotonia Mutant, P1158S, Imparts pH-Sensitivity in Skeletal Muscle Voltage-gated Sodium Channels\". Scientific Reports. 8 (1): 13. Bibcode:2018NatSR...8.6304G. doi:10.1038/s41598-018-24719-y. PMC 5908869. PMID 29674667.",
+                    "<info> ^ Kim, SJ; Lee, YJ; Kim, JB (Jan 2010). \"Reduced expression and abnormal localization of the KATP channel subunit SUR2A in patients with familial hypokalemic periodic paralysis\". Biochemical and Biophysical Research Communications. 391 (1): 974–8. doi:10.1016/j.bbrc.2009.11.177. PMID 19962959.",
+                    "<info> ^ Kim, JB; Kim, MH (Dec 2007). \"The Genotype and Clinical Phenotype of Korean Patients with Familial Hypokalemic Periodic Paralysis\". J Korean Med Sci. 22 (6): 946–51. doi:10.3346/jkms.2007.22.6.946. PMC 2694642. PMID 18162704.",
+                    "<info> ^ Lee, GM; Kim JB (June 2011). \"Hyperkalemic periodic paralysis and paramyotonia congenita caused by a de novo mutation in the SCN4A gene\". Neurology Asia. 16 (2): 163–6.",
+                    "<info> ^ Kim, JB; Chung, KW (Dec 2009). \"Novel de novo Mutation in the KCNJ2 gene in a Patient with Andersen-Tawil Syndrome\". Pediatric Neurology. 41 (6): 464–466. doi:10.1016/j.pediatrneurol.2009.07.010. PMID 19931173.",
+                    "<info> Song, YW; Kim, SJ; Heo, TH; Kim, MH; Kim, JB (Dec 2012). \"Normokalemic periodic paralysis is not a distinct disease\". Muscle & Nerve. 46 (6): 908–913. doi:10.1002/mus.23441. PMID 22926674. S2CID 43821573.",
+                    "",
+                    "=== External links ===",
+                    "<info> NIH information page on periodic paralysis Archived 2005-12-28 at the Wayback Machine",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Periodic paralysis is a group of rare genetic diseases that lead to weakness or paralysis[1] from common triggers such as cold, heat, high carbohydrate meals, not eating, stress or excitement and physical activity of any kind. The underlying mechanism of these diseases are malfunctions in the ion channels in skeletal muscle cell membranes that allow electrically charged ions to leak in or out of the muscle cell, causing the cell to depolarize and become unable to move.[2]",
+                            "The symptoms of periodic paralysis can also be caused by hyperthyroidism, and are then labeled thyrotoxic periodic paralysis; however, if this is the underlying condition there are likely to be other characteristic manifestations, enabling a correct diagnosis."
+                        ]
+                    },
+                    "Types": {
+                        "content": [
+                            "Periodic paralysis is an autosomal dominant myopathy with considerable variation in penetrance, leading to a spectrum of familial phenotypes (only one parent needs to carry the gene mutation to affect the children, but not all family members who share the gene are affected to the same degree). Specific diseases include:[citation needed]",
+                            "<info> Hypokalemic periodic paralysis (Online Mendelian Inheritance in Man (OMIM): 170400), where potassium leaks into the muscle cells from the bloodstream.",
+                            "<info> Hyperkalemic periodic paralysis (Online Mendelian Inheritance in Man (OMIM): 170500), where potassium leaks out of the cells into the bloodstream.",
+                            "<info> Paramyotonia congenita (Online Mendelian Inheritance in Man (OMIM): 168300), a form which often accompanies hyperkalemic periodic paralysis, but may present alone. The primary symptom of paramyotonia congenita is muscle contracture which develops during exercise or activity. Paramyotonia congenita attacks may also be triggered by a low level of potassium in the bloodstream. This means people with both hyperkalemic periodic paralysis and paramyotonia congenita can have attacks with fluctuations of potassium up or down.",
+                            "<info> Andersen-Tawil syndrome (Online Mendelian Inheritance in Man (OMIM): 170390), a form of periodic paralysis that includes significant heart rhythm problems, fainting and risk of sudden death. Potassium levels may be low, high, or normal during attacks of ATS. Patients with ATS may also have skeletal abnormalities like scoliosis (curvature of the spine), webbing between the second and third toes or fingers (syndactyly), crooked fingers (clinodactyly), a small jaw (micrognathia) and low-set ears.  Patients need to have another form of periodic paralysis to have the Andersen-Tawil.  If a patient has hypo or hyper periodic paralysis they have a 50% chance of getting Andersen-Tawil.  They just have to have the gene that causes it.  This is a rare occurrence of having this.  Only around 100 people in the world are recorded to have it."
+                        ]
+                    },
+                    "Cause": {
+                        "content": [
+                            "One of the most common descriptions of periodic paralysis are episodic attacks of muscle weakness, which are commonly associated with serum potassium levels. Physical activity and diet content (carbohydrates) have been identified as PP triggers. Unlike non-dystrophic myotonias, the periodic paralysis phenotype is triggered after resting following exercise. Voltage-gated sodium channel (Nav1.4) mutations are among the key causes behind periodic paralysis.[3]",
+                            "Hyper-kalemic PP (hyperPP) is identified with high extracellular potassium levels which are typically greater than 5 mM during attacks; however, HyperPP attacks can also take place without rise in potassium concentrations. HyperPP has a prevalence rate of 1/100,000. Patients become symptomatic around the age of 10. The weakness attacks in hyperPP are relatively short lasting, and range from minutes to hours. The attacks can happen upwards of ten times per month.[citation needed]",
+                            "Hypo-kalemic PP (hypoPP) is associated with low potassium levels. The onset of hypoPP occurs between the ages of 15 and 35. The prevalence of hypoPP is estimated to 1/100,000. HypoPP can be triggered by many external factors such as stress, high-sugar diet, and rest after exercise. During hypoPP attacks, the serum potassium concentrations can drop to less than 3 mM. Furthermore, hypoPP attacks are considerably longer lasting than hyperPP. As exercise is a trigger for periodic paralysis attacks, recently there is more research going into the physiological changes that accompany exercise including changes in blood pH. [3]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "This disease is unusually difficult to diagnose. Patients often report years of wrong diagnosis and treatments that made them worse instead of better. Part of this may be that migraines are present in up to 50% of patients and can cause a confusing array of symptoms including headaches, speech difficulties and visual, auditory or sensory auras. DNA testing is available for only a half dozen common gene mutations, while dozens of known mutations are possible but are not routinely tested. Electromyography (EMG) findings are not specific but the McManis Protocol, also called the Compound Muscle Amplitude Potential test (CMAP) can be used by a skilled neurologist capable of utilizing the EMG, which can give assistance in diagnosing several of these PP disorders. The old glucose/insulin provocative testing can cause life-threatening symptoms and should not be used.[citation needed]",
+                            "Also of note is that potassium levels do not have to range outside of normal limits to cause serious, even life-threatening paralysis. These diseases are not the same as having a very low level of potassium (hypokalemia) or high potassium (hyperkalemia) and must not be treated as such. The total body store of potassium is usually normal; it is just in the wrong place.[citation needed]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Treatment of the periodic paralyses may include carbonic anhydrase inhibitors (such as acetazolamide, methazolamide or dichlorphenamide), taking supplemental oral potassium chloride and a potassium-sparing diuretic (for hypos) or avoiding potassium (for hypers), thiazide diuretics to increase the amount of potassium excreted by the kidneys (for hypers), and significant lifestyle changes including tightly controlled levels of exercise or activity.  However, treatment should be tailored to the particular type of periodic paralysis.[4][5][6]",
+                            "Treatment of periodic paralysis in Andersen-Tawil syndrome is similar to that for other types. However, pacemaker insertion or an implantable cardioverter-defibrillator may be required to control cardiac symptoms.[7]"
+                        ]
+                    },
+                    "Prognosis": {
+                        "content": [
+                            "While the disability can range from minor, occasional weakness to permanent muscle damage, inability to hold a normal job and use of a powerchair, most people function fairly well with drugs and lifestyle changes.[citation needed]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Periodic Paralyses: Background, Pathophysiology, Epidemiology\". 2017-01-07. {{cite journal}}: Cite journal requires |journal= (help)",
+                            "<info> ^ \"Periodic Paralyses: Background, Pathophysiology, Epidemiology\". 2017-01-07. {{cite journal}}: Cite journal requires |journal= (help)",
+                            "<info> ^ a b Ghovanloo MR, Abdelsayed M, Peters CH, Ruben PC (2018). \"A Mixed Periodic Paralysis & Myotonia Mutant, P1158S, Imparts pH-Sensitivity in Skeletal Muscle Voltage-gated Sodium Channels\". Scientific Reports. 8 (1): 13. Bibcode:2018NatSR...8.6304G. doi:10.1038/s41598-018-24719-y. PMC 5908869. PMID 29674667.",
+                            "<info> ^ Kim, SJ; Lee, YJ; Kim, JB (Jan 2010). \"Reduced expression and abnormal localization of the KATP channel subunit SUR2A in patients with familial hypokalemic periodic paralysis\". Biochemical and Biophysical Research Communications. 391 (1): 974–8. doi:10.1016/j.bbrc.2009.11.177. PMID 19962959.",
+                            "<info> ^ Kim, JB; Kim, MH (Dec 2007). \"The Genotype and Clinical Phenotype of Korean Patients with Familial Hypokalemic Periodic Paralysis\". J Korean Med Sci. 22 (6): 946–51. doi:10.3346/jkms.2007.22.6.946. PMC 2694642. PMID 18162704.",
+                            "<info> ^ Lee, GM; Kim JB (June 2011). \"Hyperkalemic periodic paralysis and paramyotonia congenita caused by a de novo mutation in the SCN4A gene\". Neurology Asia. 16 (2): 163–6.",
+                            "<info> ^ Kim, JB; Chung, KW (Dec 2009). \"Novel de novo Mutation in the KCNJ2 gene in a Patient with Andersen-Tawil Syndrome\". Pediatric Neurology. 41 (6): 464–466. doi:10.1016/j.pediatrneurol.2009.07.010. PMID 19931173.",
+                            "<info> Song, YW; Kim, SJ; Heo, TH; Kim, MH; Kim, JB (Dec 2012). \"Normokalemic periodic paralysis is not a distinct disease\". Muscle & Nerve. 46 (6): 908–913. doi:10.1002/mus.23441. PMID 22926674. S2CID 43821573."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> NIH information page on periodic paralysis Archived 2005-12-28 at the Wayback Machine"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

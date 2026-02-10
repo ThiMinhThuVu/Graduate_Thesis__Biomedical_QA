@@ -1,0 +1,59 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/norepinephrine%e2%80%93dopamine_reuptake_inhibitor": {
+                "title": "Norepinephrine–dopamine reuptake inhibitor",
+                "url": "https://en.wikipedia.org/wiki/norepinephrine%e2%80%93dopamine_reuptake_inhibitor",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A norepinephrine–dopamine reuptake inhibitor (NDRI) is a type of drug that inhibits the reuptake of the monoamine neurotransmitters norepinephrine and dopamine and thereby increases extracellular levels of these neurotransmitters and noradrenergic and dopaminergic neurotransmission.[1] They work by competitively and/or noncompetitively inhibiting the norepinephrine transporter (NET) and dopamine transporter (DAT).[1]",
+                    "NDRIs are used clinically in the treatment of conditions including attention deficit hyperactivity disorder (ADHD), narcolepsy, and depression. Examples of well-known NDRIs include methylphenidate and bupropion.",
+                    "A closely related type of drug is a norepinephrine–dopamine releasing agent (NDRA).",
+                    "",
+                    "=== List of NDRIs ===",
+                    "Many NDRIs exist, including the following:",
+                    "<info> Amineptine (Survector, Maneon, Directim)",
+                    "<info> Methylphenidate (Ritalin, Concerta, Metadate, Methylin, Foquest)",
+                    "Some NDRIs, such as methylphenidate, may not act as simple NDRIs but rather as DAT \"inverse agonists\" (and possibly also analogously at the NET as well).[3] If this theory is correct, then methylphenidate and other agents like cocaine may not be acting primarily as monoamine reuptake inhibitors but instead as robust monoamine releasing agent-esque drugs, albeit via a different mechanism of action than conventional substrate-type monoamine releasing agents.[3]",
+                    "Norepinephrine–dopamine releasing agents (NDRAs) like amphetamine and methamphetamine not only induce monoamine release but also act as monoamine reuptake inhibitors to a lesser extent and hence are additionally NDRIs.[4][5]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Stephen M. Stahl (2 March 2009). Antidepressants. Cambridge University Press. p. 73. ISBN 978-0-521-75852-9. Retrieved 10 May 2012.",
+                    "<info> ^ Stahl, SM; Pradko, JF; Haight, BR; Modell, JG; Rockett, CB; Learned-Coughlin, S (2004). \"A Review of the Neuropharmacology of Bupropion, a Dual Norepinephrine and Dopamine Reuptake Inhibitor\". Primary Care Companion to the Journal of Clinical Psychiatry. 6 (4): 159–166. doi:10.4088/PCC.v06n0403. ISSN 1523-5998. PMC 514842. PMID 15361919.",
+                    "<info> ^ a b Heal DJ, Gosden J, Smith SL (December 2014). \"Dopamine reuptake transporter (DAT) \"inverse agonism\"--a novel hypothesis to explain the enigmatic pharmacology of cocaine\". Neuropharmacology. 87: 19–40. doi:10.1016/j.neuropharm.2014.06.012. PMID 24953830.",
+                    "<info> ^ Rothman RB, Baumann MH (October 2003). \"Monoamine transporters and psychostimulant drugs\". Eur J Pharmacol. 479 (1–3): 23–40. doi:10.1016/j.ejphar.2003.08.054. PMID 14612135.",
+                    "<info> ^ Rothman RB, Baumann MH, Dersch CM, Romero DV, Rice KC, Carroll FI, Partilla JS (January 2001). \"Amphetamine-type central nervous system stimulants release norepinephrine more potently than they release dopamine and serotonin\". Synapse. 39 (1): 32–41. doi:10.1002/1098-2396(20010101)39:1<32::AID-SYN5>3.0.CO;2-3. PMID 11071707.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A norepinephrine–dopamine reuptake inhibitor (NDRI) is a type of drug that inhibits the reuptake of the monoamine neurotransmitters norepinephrine and dopamine and thereby increases extracellular levels of these neurotransmitters and noradrenergic and dopaminergic neurotransmission.[1] They work by competitively and/or noncompetitively inhibiting the norepinephrine transporter (NET) and dopamine transporter (DAT).[1]",
+                            "NDRIs are used clinically in the treatment of conditions including attention deficit hyperactivity disorder (ADHD), narcolepsy, and depression. Examples of well-known NDRIs include methylphenidate and bupropion.",
+                            "A closely related type of drug is a norepinephrine–dopamine releasing agent (NDRA)."
+                        ]
+                    },
+                    "List of NDRIs": {
+                        "content": [
+                            "Many NDRIs exist, including the following:",
+                            "<info> Amineptine (Survector, Maneon, Directim)",
+                            "<info> Methylphenidate (Ritalin, Concerta, Metadate, Methylin, Foquest)",
+                            "Some NDRIs, such as methylphenidate, may not act as simple NDRIs but rather as DAT \"inverse agonists\" (and possibly also analogously at the NET as well).[3] If this theory is correct, then methylphenidate and other agents like cocaine may not be acting primarily as monoamine reuptake inhibitors but instead as robust monoamine releasing agent-esque drugs, albeit via a different mechanism of action than conventional substrate-type monoamine releasing agents.[3]",
+                            "Norepinephrine–dopamine releasing agents (NDRAs) like amphetamine and methamphetamine not only induce monoamine release but also act as monoamine reuptake inhibitors to a lesser extent and hence are additionally NDRIs.[4][5]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Stephen M. Stahl (2 March 2009). Antidepressants. Cambridge University Press. p. 73. ISBN 978-0-521-75852-9. Retrieved 10 May 2012.",
+                            "<info> ^ Stahl, SM; Pradko, JF; Haight, BR; Modell, JG; Rockett, CB; Learned-Coughlin, S (2004). \"A Review of the Neuropharmacology of Bupropion, a Dual Norepinephrine and Dopamine Reuptake Inhibitor\". Primary Care Companion to the Journal of Clinical Psychiatry. 6 (4): 159–166. doi:10.4088/PCC.v06n0403. ISSN 1523-5998. PMC 514842. PMID 15361919.",
+                            "<info> ^ a b Heal DJ, Gosden J, Smith SL (December 2014). \"Dopamine reuptake transporter (DAT) \"inverse agonism\"--a novel hypothesis to explain the enigmatic pharmacology of cocaine\". Neuropharmacology. 87: 19–40. doi:10.1016/j.neuropharm.2014.06.012. PMID 24953830.",
+                            "<info> ^ Rothman RB, Baumann MH (October 2003). \"Monoamine transporters and psychostimulant drugs\". Eur J Pharmacol. 479 (1–3): 23–40. doi:10.1016/j.ejphar.2003.08.054. PMID 14612135.",
+                            "<info> ^ Rothman RB, Baumann MH, Dersch CM, Romero DV, Rice KC, Carroll FI, Partilla JS (January 2001). \"Amphetamine-type central nervous system stimulants release norepinephrine more potently than they release dopamine and serotonin\". Synapse. 39 (1): 32–41. doi:10.1002/1098-2396(20010101)39:1<32::AID-SYN5>3.0.CO;2-3. PMID 11071707."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,241 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/born_rigidity": {
+                "title": "Born rigidity",
+                "url": "https://en.wikipedia.org/wiki/born_rigidity",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Born rigidity is a concept in special relativity. It is one answer to the question of what, in special relativity, corresponds to the rigid body of non-relativistic classical mechanics.",
+                    "The concept was introduced by Max Born (1909),[1][2] who gave a detailed description of the case of constant proper acceleration which he called hyperbolic motion. When subsequent authors such as Paul Ehrenfest (1909)[3] tried to incorporate rotational motions as well, it became clear that Born rigidity is a very restrictive sense of rigidity, leading to the Herglotz–Noether theorem, according to which there are severe restrictions on rotational Born rigid motions. It was formulated by Gustav Herglotz (1909, who classified all forms of rotational motions)[4] and in a less general way by Fritz Noether (1909).[5] As a result, Born (1910)[6] and others gave alternative, less restrictive definitions of rigidity.",
+                    "",
+                    "=== Definition ===",
+                    "Born rigidity is satisfied if the orthogonal spacetime distance between infinitesimally separated curves or worldlines is constant,[7] or equivalently, if the length of the rigid body in momentary co-moving inertial frames measured by standard measuring rods (i.e. the proper length) is constant and is therefore subjected to Lorentz contraction in relatively moving frames.[8] Born rigidity is a constraint on the motion of an extended body, achieved by careful application of forces to different parts of the body. A body that could maintain its own rigidity would violate special relativity, as its speed of sound would be infinite.",
+                    "A classification of all possible Born rigid motions can be obtained using the Herglotz–Noether theorem. This theorem states that all irrotational Born rigid motions (class A) consist of hyperplanes rigidly moving through spacetime, while any rotational Born rigid motion (class B) must be an isometric Killing motion. This implies that a Born rigid body only has three degrees of freedom. Thus a body can be brought in a Born rigid way from rest into any translational motion, but it cannot be brought in a Born rigid way from rest into rotational motion.[9]",
+                    "",
+                    "=== Stresses and Born rigidity ===",
+                    "It was shown by Herglotz (1911),[10] that a relativistic theory of elasticity can be based on the assumption, that stresses arise when the condition of Born rigidity is broken.[11]",
+                    "An example of breaking Born rigidity is the Ehrenfest paradox: Even though the state of uniform circular motion of a body is among the allowed Born rigid motions of class B, a body cannot be brought from any other state of motion into uniform circular motion without breaking the condition of Born rigidity during the phase in which the body undergoes various accelerations. But if this phase is over and the centripetal acceleration becomes constant, the body can be uniformly rotating in agreement with Born rigidity. Likewise, if it is now in uniform circular motion, this state cannot be changed without again breaking the Born rigidity of the body.",
+                    "Another example is Bell's spaceship paradox: If the endpoints of a body are accelerated with constant proper accelerations in rectilinear direction, then the leading endpoint must have a lower proper acceleration in order to leave the proper length constant so that Born rigidity is satisfied. It will also exhibit an increasing Lorentz contraction in an external inertial frame, that is, in the external frame the endpoints of the body are not accelerating simultaneously. However, if a different acceleration profile is chosen by which the endpoints of the body are simultaneously accelerated with same proper acceleration as seen in the external inertial frame, its Born rigidity will be broken, because constant length in the external frame implies increasing proper length in a comoving frame due to relativity of simultaneity. In this case, a fragile thread spanned between two rockets will experience stresses (which are called Herglotz–Dewan–Beran stresses[8]) and will consequently break.",
+                    "",
+                    "=== Born rigid motions ===",
+                    "A classification of allowed, in particular rotational, Born rigid motions in flat Minkowski spacetime was given by Herglotz,[4] which was also studied by Friedrich Kottler (1912, 1914),[12] Georges Lemaître (1924),[13] Adriaan Fokker (1940),[14] George Salzmann & Abraham H. Taub (1954).[7] Herglotz pointed out that a continuum is moving as a rigid body when the world lines of its points are equidistant curves in \n\n\n\n\n\nR\n\n\n4\n\n\n\n\n{\\displaystyle \\mathbf {R} ^{4}}\n\n. The resulting worldliness can be split into two classes:",
+                    "Herglotz defined this class in terms of equidistant curves which are the orthogonal trajectories of a family of hyperplanes, which also can be seen as solutions of a Riccati equation[15] (this was called \"plane motion\" by Salzmann & Taub[7] or \"irrotational rigid motion\" by Boyer[16][17]). He concluded, that the motion of such a body is completely determined by the motion of one of its points.",
+                    "The general metric for these irrotational motions has been given by Herglotz, whose work was summarized with simplified notation by Lemaître (1924). Also the Fermi metric in the form given by Christian Møller (1952) for rigid frames with arbitrary motion of the origin was identified as the \"most general metric for irrotational rigid motion in special relativity\".[18] In general, it was shown that irrotational Born motion corresponds to those Fermi congruences of which any worldline can be used as baseline (homogeneous Fermi congruence).[19]",
+                    "Already Born (1909) pointed out that a rigid body in translational motion has a maximal spatial extension depending on its acceleration, given by the relation \n\n\n\nb\n<\n\nc\n\n2\n\n\n\n/\n\nR\n\n\n{\\displaystyle b<c^{2}/R}\n\n, where \n\n\n\nb\n\n\n{\\displaystyle b}\n\n is the proper acceleration and \n\n\n\nR\n\n\n{\\displaystyle R}\n\n is the radius of a sphere in which the body is located, thus the higher the proper acceleration, the smaller the maximal extension of the rigid body.[2] The special case of translational motion with constant proper acceleration is known as hyperbolic motion, with the worldline",
+                    "Herglotz defined this class in terms of equidistant curves which are the trajectories of a one-parameter motion group[29] (this was called \"group motion\" by Salzmann & Taub[7] and was identified with isometric Killing motion by Felix Pirani & Gareth Williams (1962)[30]). He pointed out that they consist of worldlines whose three curvatures are constant (known as curvature, torsion and hypertorsion), forming a helix.[31] Worldlines of constant curvatures in flat spacetime were also studied by Kottler (1912),[12] Petrův (1964),[32] John Lighton Synge (1967, who called them timelike helices in flat spacetime),[33] or Letaw (1981, who called them stationary worldlines)[34] as the solutions of the Frenet–Serret formulas.",
+                    "Herglotz further separated class B using four one-parameter groups of Lorentz transformations (loxodromic, elliptic, hyperbolic, parabolic) in analogy to hyperbolic motions (i.e. isometric automorphisms of a hyperbolic space), and pointed out that Born's hyperbolic motion (which follows from the hyperbolic group with \n\n\n\nα\n=\n0\n\n\n{\\displaystyle \\alpha =0}\n\n in the notation of Herglotz and Kottler, \n\n\n\nλ\n=\n0\n\n\n{\\displaystyle \\lambda =0}\n\n in the notation of Lemaître, \n\n\n\nq\n=\n0\n\n\n{\\displaystyle q=0}\n\n in the notation of Synge; see the following table) is the only Born rigid motion that belongs to both classes A and B.",
+                    "",
+                    "=== General relativity ===",
+                    "Attempts to extend the concept of Born rigidity to general relativity have been made by Salzmann & Taub (1954),[7] C. Beresford Rayner (1959),[50] Pirani & Williams (1962),[30] Robert H. Boyer (1964).[16] It was shown that the Herglotz–Noether theorem is not completely satisfied, because rigid rotating frames or congruences are possible which do not represent isometric Killing motions.[30]",
+                    "",
+                    "=== Alternatives ===",
+                    "Several weaker substitutes have also been proposed as rigidity conditions, such as by Noether (1909)[5] or Born (1910) himself.[6]",
+                    "A modern alternative was given by Epp, Mann & McGrath.[51] In contrast to the ordinary Born rigid congruence consisting of the \"history of a spatial volume-filling set of points\", they recover the six degrees of freedom of classical mechanics by using a quasilocal rigid frame by defining a congruence in terms of the \"history of the set of points on the surface bounding a spatial volume\".",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Born (1909b)",
+                    "<info> ^ a b Herglotz (1909)",
+                    "<info> ^ a b Noether (1909)",
+                    "<info> ^ a b Born (1910)",
+                    "<info> ^ a b c d e Salzmann & Taub (1954)",
+                    "<info> ^ a b Gron (1981)",
+                    "<info> ^ a b Kottler (1912); Kottler (1914a)",
+                    "<info> ^ Herglotz (1909), pp. 401, 415",
+                    "<info> ^ a b Boyer (1965)",
+                    "<info> ^ Giulini (2008), Theorem 18",
+                    "<info> ^ Boyer (1965), p. 354",
+                    "<info> ^ Bel (1995), theorem 2",
+                    "<info> ^ Herglotz (1909), p. 401",
+                    "<info> ^ Lemaître (1924), p. 166, 170",
+                    "<info> ^ (1952), p. 254",
+                    "<info> ^ Born (1909), p. 25",
+                    "<info> ^ Herglotz (1909), p. 408",
+                    "<info> ^ a b Herglotz (1909), p. 414",
+                    "<info> ^ Sommerfled (1910), p. 670",
+                    "<info> ^ Kottler (1912), p. 1714; Kottler (1914a), table 1, case IIIb",
+                    "<info> ^ Kottler (1914b), p. 488",
+                    "<info> ^ Herglotz (1909), pp. 402, 409-415",
+                    "<info> ^ a b c Pirani & Willims (1962)",
+                    "<info> ^ Herglotz (1909), p. 403",
+                    "<info> ^ Herglotz (1909), p. 411",
+                    "<info> ^ Kottler (1912), p. 1714; Kottler (1914a), table 1, case I",
+                    "<info> ^ a b Lemaître (1924), p. 175",
+                    "<info> ^ Synge (1967), Type I",
+                    "<info> ^ Herglotz (1909), p. 412",
+                    "<info> ^ Kottler (1912), p. 1714; Kottler (1914a), table 1, case IIb",
+                    "<info> ^ DeSitter (1916), p. 178",
+                    "<info> ^ Lemaître (1924), p. 173",
+                    "<info> ^ Synge (1967), Type IIc",
+                    "<info> ^ Herglotz (1909), p. 413",
+                    "<info> ^ Kottler (1912), p. 1714; Kottler (1914a), table 1, case IIIa",
+                    "<info> ^ Lemaître (1924), p. 174",
+                    "<info> ^ Synge (1967), Type IIa",
+                    "<info> ^ Kottler (1912), p. 1714; Kottler (1914a), table 1, case IV",
+                    "<info> ^ Synge (1967), Type IIb",
+                    "<info> ^ Epp, Mann & McGrath (2009)",
+                    "",
+                    "=== Bibliography ===",
+                    "<info> Born, Max (1909a), \"Die Theorie des starren Elektrons in der Kinematik des Relativitätsprinzips\" [Wikisource translation: The Theory of the Rigid Electron in the Kinematics of the Principle of Relativity], Annalen der Physik, 335 (11): 1–56, Bibcode:1909AnP...335....1B, doi:10.1002/andp.19093351102",
+                    "<info> Born, Max (1909b), \"Über die Dynamik des Elektrons in der Kinematik des Relativitätsprinzips\" [Wikisource translation: Concerning the Dynamics of the Electron in the Kinematics of the Principle of Relativity], Physikalische Zeitschrift, 10: 814–817",
+                    "<info> Born, Max (1910), \"Zur Kinematik des starren Körpers im System des Relativitätsprinzips\" [Wikisource translation: On the Kinematics of the Rigid Body in the System of the Principle of Relativity], Göttinger Nachrichten, 2: 161–179",
+                    "<info> Ehrenfest, Paul (1909), \"Gleichförmige Rotation starrer Körper und Relativitätstheorie\"  [Wikisource translation: Uniform Rotation of Rigid Bodies and the Theory of Relativity], Physikalische Zeitschrift, 10: 918, Bibcode:1909PhyZ...10..918E",
+                    "<info> Franklin, Jerrold (2013), \"Rigid Body Motion in Special Relativity\", Foundations of Physics, 95 (12): 1489–1501, arXiv:1105.3899, Bibcode:2013FoPh...43.1489F, doi:10.1007/s10701-013-9757-x, S2CID 254514424",
+                    "<info> Herglotz, Gustav (1910) [1909], \"Über den vom Standpunkt des Relativitätsprinzips aus als starr zu bezeichnenden Körper\" [Wikisource translation: On bodies that are to be designated as \"rigid\" from the standpoint of the relativity principle], Annalen der Physik, 336 (2): 393–415, Bibcode:1910AnP...336..393H, doi:10.1002/andp.19103360208",
+                    "<info> Herglotz, Gustav (1911), \"Über die Mechanik des deformierbaren Körpers vom Standpunkte der Relativitätstheorie\", Annalen der Physik, 341 (13): 493–533, Bibcode:1911AnP...341..493H, doi:10.1002/andp.19113411303; English translation by David Delphenich: On the mechanics of deformable bodies from the standpoint of relativity theory.",
+                    "<info> Noether, Fritz (1910) [1909]. \"Zur Kinematik des starren Körpers in der Relativtheorie\". Annalen der Physik. 336 (5): 919–944. Bibcode:1910AnP...336..919N. doi:10.1002/andp.19103360504.",
+                    "<info> Sommerfeld, Arnold (1910). \"Zur Relativitätstheorie II: Vierdimensionale Vektoranalysis\" [Wikisource translation: On the Theory of Relativity II: Four-dimensional Vector Analysis]. Annalen der Physik. 338 (14): 649–689. Bibcode:1910AnP...338..649S. doi:10.1002/andp.19103381402.",
+                    "<info> Kottler, Friedrich (1912). \"Über die Raumzeitlinien der Minkowski'schen Welt\" [Wikisource translation: On the spacetime lines of a Minkowski world]. Wiener Sitzungsberichte 2a. 121: 1659–1759. hdl:2027/mdp.39015051107277.",
+                    "<info> Kottler, Friedrich (1914a). \"Relativitätsprinzip und beschleunigte Bewegung\". Annalen der Physik. 349 (13): 701–748. Bibcode:1914AnP...349..701K. doi:10.1002/andp.19143491303.",
+                    "<info> Kottler, Friedrich (1914b). \"Fallende Bezugssysteme vom Standpunkte des Relativitätsprinzips\". Annalen der Physik. 350 (20): 481–516. Bibcode:1914AnP...350..481K. doi:10.1002/andp.19143502003.",
+                    "<info> De Sitter, W. (1916). \"On Einstein's theory of gravitation and its astronomical consequences. Second paper\". Monthly Notices of the Royal Astronomical Society. 77 (2): 155–184. Bibcode:1916MNRAS..77..155D. doi:10.1093/mnras/77.2.155.",
+                    "<info> Pauli, Wolfgang (1921), \"Die Relativitätstheorie\", Encyclopädie der Mathematischen Wissenschaften, 5 (2): 539–776",
+                    "<info> Lemaître, G. (1924), \"The motion of a rigid solid according to the relativity principle\", Philosophical Magazine, Series 6, 48 (283): 164–176, doi:10.1080/14786442408634478",
+                    "<info> Fokker, A. D. (1949), \"On the space-time geometry of a moving rigid body\", Reviews of Modern Physics, 21 (3): 406–408, Bibcode:1949RvMP...21..406F, doi:10.1103/RevModPhys.21.406",
+                    "<info> Møller, C. (1955) [1952]. The theory of relativity. Oxford Clarendon Press.",
+                    "<info> Salzman, G., & Taub, A. H. (1954), \"Born-type rigid motion in relativity\", Physical Review, 95 (6): 1659–1669, Bibcode:1954PhRv...95.1659S, doi:10.1103/PhysRev.95.1659{{citation}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> Rayner, C. B. (1959), \"Le corps rigide en relativité générale\", Séminaire Janet. Mécanique Analytique et Mécanique Céleste, 2: 1–15",
+                    "<info> Pirani, F. A. E., & Williams, G. (1962), \"Rigid motion in a gravitational field\", Séminaire Janet. Mécanique Analytique et Mécanique Céleste, 5: 1–16{{citation}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> Petrův, V. (1964). \"Die Lösung der Formeln von Frenet im Falle konstanter Krümmungen\". Aplikace Matematiky. 9 (4): 239–240.",
+                    "<info> Boyer, R. H. (1965), \"Rigid frames in general relativity\", Proceedings of the Royal Society of London A, 28 (1394): 343–355, Bibcode:1965RSPSA.283..343B, doi:10.1098/rspa.1965.0025, S2CID 120278621",
+                    "<info> Synge, J. L. (1967) [1966]. \"Timelike helices in flat space-time\". Proceedings of the Royal Irish Academy, Section A. 65: 27–42. JSTOR 20488646.",
+                    "<info> Grøn, Ø. (1981), \"Covariant formulation of Hooke's law\", American Journal of Physics, 49 (1): 28–30, Bibcode:1981AmJPh..49...28G, doi:10.1119/1.12623",
+                    "<info> Letaw, J. R. (1981). \"Stationary world lines and the vacuum excitation of noninertial detectors\". Physical Review D. 23 (8): 1709–1714. Bibcode:1981PhRvD..23.1709L. doi:10.1103/PhysRevD.23.1709.",
+                    "<info> Bel, L. (1995) [1993], \"Born's group and Generalized isometries\", Relativity in General: Proceedings of the Relativity Meeting'93, Atlantica Séguier Frontières: 47, arXiv:1103.2509, Bibcode:2011arXiv1103.2509B",
+                    "<info> Giulini, Domenico (2008). \"The Rich Structure of Minkowski Space\". Minkowski Spacetime: A Hundred Years Later. Vol. 165. Springer. p. 83. arXiv:0802.4345. Bibcode:2008arXiv0802.4345G. ISBN 978-90-481-3474-8. {{cite book}}: |journal= ignored (help)",
+                    "<info> Epp, R. J., Mann, R. B., & McGrath, P. L. (2009), \"Rigid motion revisited: rigid quasilocal frames\", Classical and Quantum Gravity, 26 (3) 035015, arXiv:0810.0072, Bibcode:2009CQGra..26c5015E, doi:10.1088/0264-9381/26/3/035015, S2CID 118856653{{citation}}:  CS1 maint: multiple names: authors list (link)",
+                    "",
+                    "=== External links ===",
+                    "<info> Born Rigidity, Acceleration, and Inertia at mathpages.com",
+                    "<info> The Rigid Rotating Disk in Relativity in the USENET Physics FAQ",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Born rigidity is a concept in special relativity. It is one answer to the question of what, in special relativity, corresponds to the rigid body of non-relativistic classical mechanics.",
+                            "The concept was introduced by Max Born (1909),[1][2] who gave a detailed description of the case of constant proper acceleration which he called hyperbolic motion. When subsequent authors such as Paul Ehrenfest (1909)[3] tried to incorporate rotational motions as well, it became clear that Born rigidity is a very restrictive sense of rigidity, leading to the Herglotz–Noether theorem, according to which there are severe restrictions on rotational Born rigid motions. It was formulated by Gustav Herglotz (1909, who classified all forms of rotational motions)[4] and in a less general way by Fritz Noether (1909).[5] As a result, Born (1910)[6] and others gave alternative, less restrictive definitions of rigidity."
+                        ]
+                    },
+                    "Definition": {
+                        "content": [
+                            "Born rigidity is satisfied if the orthogonal spacetime distance between infinitesimally separated curves or worldlines is constant,[7] or equivalently, if the length of the rigid body in momentary co-moving inertial frames measured by standard measuring rods (i.e. the proper length) is constant and is therefore subjected to Lorentz contraction in relatively moving frames.[8] Born rigidity is a constraint on the motion of an extended body, achieved by careful application of forces to different parts of the body. A body that could maintain its own rigidity would violate special relativity, as its speed of sound would be infinite.",
+                            "A classification of all possible Born rigid motions can be obtained using the Herglotz–Noether theorem. This theorem states that all irrotational Born rigid motions (class A) consist of hyperplanes rigidly moving through spacetime, while any rotational Born rigid motion (class B) must be an isometric Killing motion. This implies that a Born rigid body only has three degrees of freedom. Thus a body can be brought in a Born rigid way from rest into any translational motion, but it cannot be brought in a Born rigid way from rest into rotational motion.[9]"
+                        ]
+                    },
+                    "Stresses and Born rigidity": {
+                        "content": [
+                            "It was shown by Herglotz (1911),[10] that a relativistic theory of elasticity can be based on the assumption, that stresses arise when the condition of Born rigidity is broken.[11]",
+                            "An example of breaking Born rigidity is the Ehrenfest paradox: Even though the state of uniform circular motion of a body is among the allowed Born rigid motions of class B, a body cannot be brought from any other state of motion into uniform circular motion without breaking the condition of Born rigidity during the phase in which the body undergoes various accelerations. But if this phase is over and the centripetal acceleration becomes constant, the body can be uniformly rotating in agreement with Born rigidity. Likewise, if it is now in uniform circular motion, this state cannot be changed without again breaking the Born rigidity of the body.",
+                            "Another example is Bell's spaceship paradox: If the endpoints of a body are accelerated with constant proper accelerations in rectilinear direction, then the leading endpoint must have a lower proper acceleration in order to leave the proper length constant so that Born rigidity is satisfied. It will also exhibit an increasing Lorentz contraction in an external inertial frame, that is, in the external frame the endpoints of the body are not accelerating simultaneously. However, if a different acceleration profile is chosen by which the endpoints of the body are simultaneously accelerated with same proper acceleration as seen in the external inertial frame, its Born rigidity will be broken, because constant length in the external frame implies increasing proper length in a comoving frame due to relativity of simultaneity. In this case, a fragile thread spanned between two rockets will experience stresses (which are called Herglotz–Dewan–Beran stresses[8]) and will consequently break."
+                        ]
+                    },
+                    "Born rigid motions": {
+                        "content": [
+                            "A classification of allowed, in particular rotational, Born rigid motions in flat Minkowski spacetime was given by Herglotz,[4] which was also studied by Friedrich Kottler (1912, 1914),[12] Georges Lemaître (1924),[13] Adriaan Fokker (1940),[14] George Salzmann & Abraham H. Taub (1954).[7] Herglotz pointed out that a continuum is moving as a rigid body when the world lines of its points are equidistant curves in \n\n\n\n\n\nR\n\n\n4\n\n\n\n\n{\\displaystyle \\mathbf {R} ^{4}}\n\n. The resulting worldliness can be split into two classes:",
+                            "Herglotz defined this class in terms of equidistant curves which are the orthogonal trajectories of a family of hyperplanes, which also can be seen as solutions of a Riccati equation[15] (this was called \"plane motion\" by Salzmann & Taub[7] or \"irrotational rigid motion\" by Boyer[16][17]). He concluded, that the motion of such a body is completely determined by the motion of one of its points.",
+                            "The general metric for these irrotational motions has been given by Herglotz, whose work was summarized with simplified notation by Lemaître (1924). Also the Fermi metric in the form given by Christian Møller (1952) for rigid frames with arbitrary motion of the origin was identified as the \"most general metric for irrotational rigid motion in special relativity\".[18] In general, it was shown that irrotational Born motion corresponds to those Fermi congruences of which any worldline can be used as baseline (homogeneous Fermi congruence).[19]",
+                            "Already Born (1909) pointed out that a rigid body in translational motion has a maximal spatial extension depending on its acceleration, given by the relation \n\n\n\nb\n<\n\nc\n\n2\n\n\n\n/\n\nR\n\n\n{\\displaystyle b<c^{2}/R}\n\n, where \n\n\n\nb\n\n\n{\\displaystyle b}\n\n is the proper acceleration and \n\n\n\nR\n\n\n{\\displaystyle R}\n\n is the radius of a sphere in which the body is located, thus the higher the proper acceleration, the smaller the maximal extension of the rigid body.[2] The special case of translational motion with constant proper acceleration is known as hyperbolic motion, with the worldline",
+                            "Herglotz defined this class in terms of equidistant curves which are the trajectories of a one-parameter motion group[29] (this was called \"group motion\" by Salzmann & Taub[7] and was identified with isometric Killing motion by Felix Pirani & Gareth Williams (1962)[30]). He pointed out that they consist of worldlines whose three curvatures are constant (known as curvature, torsion and hypertorsion), forming a helix.[31] Worldlines of constant curvatures in flat spacetime were also studied by Kottler (1912),[12] Petrův (1964),[32] John Lighton Synge (1967, who called them timelike helices in flat spacetime),[33] or Letaw (1981, who called them stationary worldlines)[34] as the solutions of the Frenet–Serret formulas.",
+                            "Herglotz further separated class B using four one-parameter groups of Lorentz transformations (loxodromic, elliptic, hyperbolic, parabolic) in analogy to hyperbolic motions (i.e. isometric automorphisms of a hyperbolic space), and pointed out that Born's hyperbolic motion (which follows from the hyperbolic group with \n\n\n\nα\n=\n0\n\n\n{\\displaystyle \\alpha =0}\n\n in the notation of Herglotz and Kottler, \n\n\n\nλ\n=\n0\n\n\n{\\displaystyle \\lambda =0}\n\n in the notation of Lemaître, \n\n\n\nq\n=\n0\n\n\n{\\displaystyle q=0}\n\n in the notation of Synge; see the following table) is the only Born rigid motion that belongs to both classes A and B."
+                        ]
+                    },
+                    "General relativity": {
+                        "content": [
+                            "Attempts to extend the concept of Born rigidity to general relativity have been made by Salzmann & Taub (1954),[7] C. Beresford Rayner (1959),[50] Pirani & Williams (1962),[30] Robert H. Boyer (1964).[16] It was shown that the Herglotz–Noether theorem is not completely satisfied, because rigid rotating frames or congruences are possible which do not represent isometric Killing motions.[30]"
+                        ]
+                    },
+                    "Alternatives": {
+                        "content": [
+                            "Several weaker substitutes have also been proposed as rigidity conditions, such as by Noether (1909)[5] or Born (1910) himself.[6]",
+                            "A modern alternative was given by Epp, Mann & McGrath.[51] In contrast to the ordinary Born rigid congruence consisting of the \"history of a spatial volume-filling set of points\", they recover the six degrees of freedom of classical mechanics by using a quasilocal rigid frame by defining a congruence in terms of the \"history of the set of points on the surface bounding a spatial volume\"."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Born (1909b)",
+                            "<info> ^ a b Herglotz (1909)",
+                            "<info> ^ a b Noether (1909)",
+                            "<info> ^ a b Born (1910)",
+                            "<info> ^ a b c d e Salzmann & Taub (1954)",
+                            "<info> ^ a b Gron (1981)",
+                            "<info> ^ a b Kottler (1912); Kottler (1914a)",
+                            "<info> ^ Herglotz (1909), pp. 401, 415",
+                            "<info> ^ a b Boyer (1965)",
+                            "<info> ^ Giulini (2008), Theorem 18",
+                            "<info> ^ Boyer (1965), p. 354",
+                            "<info> ^ Bel (1995), theorem 2",
+                            "<info> ^ Herglotz (1909), p. 401",
+                            "<info> ^ Lemaître (1924), p. 166, 170",
+                            "<info> ^ (1952), p. 254",
+                            "<info> ^ Born (1909), p. 25",
+                            "<info> ^ Herglotz (1909), p. 408",
+                            "<info> ^ a b Herglotz (1909), p. 414",
+                            "<info> ^ Sommerfled (1910), p. 670",
+                            "<info> ^ Kottler (1912), p. 1714; Kottler (1914a), table 1, case IIIb",
+                            "<info> ^ Kottler (1914b), p. 488",
+                            "<info> ^ Herglotz (1909), pp. 402, 409-415",
+                            "<info> ^ a b c Pirani & Willims (1962)",
+                            "<info> ^ Herglotz (1909), p. 403",
+                            "<info> ^ Herglotz (1909), p. 411",
+                            "<info> ^ Kottler (1912), p. 1714; Kottler (1914a), table 1, case I",
+                            "<info> ^ a b Lemaître (1924), p. 175",
+                            "<info> ^ Synge (1967), Type I",
+                            "<info> ^ Herglotz (1909), p. 412",
+                            "<info> ^ Kottler (1912), p. 1714; Kottler (1914a), table 1, case IIb",
+                            "<info> ^ DeSitter (1916), p. 178",
+                            "<info> ^ Lemaître (1924), p. 173",
+                            "<info> ^ Synge (1967), Type IIc",
+                            "<info> ^ Herglotz (1909), p. 413",
+                            "<info> ^ Kottler (1912), p. 1714; Kottler (1914a), table 1, case IIIa",
+                            "<info> ^ Lemaître (1924), p. 174",
+                            "<info> ^ Synge (1967), Type IIa",
+                            "<info> ^ Kottler (1912), p. 1714; Kottler (1914a), table 1, case IV",
+                            "<info> ^ Synge (1967), Type IIb",
+                            "<info> ^ Epp, Mann & McGrath (2009)"
+                        ]
+                    },
+                    "Bibliography": {
+                        "content": [
+                            "<info> Born, Max (1909a), \"Die Theorie des starren Elektrons in der Kinematik des Relativitätsprinzips\" [Wikisource translation: The Theory of the Rigid Electron in the Kinematics of the Principle of Relativity], Annalen der Physik, 335 (11): 1–56, Bibcode:1909AnP...335....1B, doi:10.1002/andp.19093351102",
+                            "<info> Born, Max (1909b), \"Über die Dynamik des Elektrons in der Kinematik des Relativitätsprinzips\" [Wikisource translation: Concerning the Dynamics of the Electron in the Kinematics of the Principle of Relativity], Physikalische Zeitschrift, 10: 814–817",
+                            "<info> Born, Max (1910), \"Zur Kinematik des starren Körpers im System des Relativitätsprinzips\" [Wikisource translation: On the Kinematics of the Rigid Body in the System of the Principle of Relativity], Göttinger Nachrichten, 2: 161–179",
+                            "<info> Ehrenfest, Paul (1909), \"Gleichförmige Rotation starrer Körper und Relativitätstheorie\"  [Wikisource translation: Uniform Rotation of Rigid Bodies and the Theory of Relativity], Physikalische Zeitschrift, 10: 918, Bibcode:1909PhyZ...10..918E",
+                            "<info> Franklin, Jerrold (2013), \"Rigid Body Motion in Special Relativity\", Foundations of Physics, 95 (12): 1489–1501, arXiv:1105.3899, Bibcode:2013FoPh...43.1489F, doi:10.1007/s10701-013-9757-x, S2CID 254514424",
+                            "<info> Herglotz, Gustav (1910) [1909], \"Über den vom Standpunkt des Relativitätsprinzips aus als starr zu bezeichnenden Körper\" [Wikisource translation: On bodies that are to be designated as \"rigid\" from the standpoint of the relativity principle], Annalen der Physik, 336 (2): 393–415, Bibcode:1910AnP...336..393H, doi:10.1002/andp.19103360208",
+                            "<info> Herglotz, Gustav (1911), \"Über die Mechanik des deformierbaren Körpers vom Standpunkte der Relativitätstheorie\", Annalen der Physik, 341 (13): 493–533, Bibcode:1911AnP...341..493H, doi:10.1002/andp.19113411303; English translation by David Delphenich: On the mechanics of deformable bodies from the standpoint of relativity theory.",
+                            "<info> Noether, Fritz (1910) [1909]. \"Zur Kinematik des starren Körpers in der Relativtheorie\". Annalen der Physik. 336 (5): 919–944. Bibcode:1910AnP...336..919N. doi:10.1002/andp.19103360504.",
+                            "<info> Sommerfeld, Arnold (1910). \"Zur Relativitätstheorie II: Vierdimensionale Vektoranalysis\" [Wikisource translation: On the Theory of Relativity II: Four-dimensional Vector Analysis]. Annalen der Physik. 338 (14): 649–689. Bibcode:1910AnP...338..649S. doi:10.1002/andp.19103381402.",
+                            "<info> Kottler, Friedrich (1912). \"Über die Raumzeitlinien der Minkowski'schen Welt\" [Wikisource translation: On the spacetime lines of a Minkowski world]. Wiener Sitzungsberichte 2a. 121: 1659–1759. hdl:2027/mdp.39015051107277.",
+                            "<info> Kottler, Friedrich (1914a). \"Relativitätsprinzip und beschleunigte Bewegung\". Annalen der Physik. 349 (13): 701–748. Bibcode:1914AnP...349..701K. doi:10.1002/andp.19143491303.",
+                            "<info> Kottler, Friedrich (1914b). \"Fallende Bezugssysteme vom Standpunkte des Relativitätsprinzips\". Annalen der Physik. 350 (20): 481–516. Bibcode:1914AnP...350..481K. doi:10.1002/andp.19143502003.",
+                            "<info> De Sitter, W. (1916). \"On Einstein's theory of gravitation and its astronomical consequences. Second paper\". Monthly Notices of the Royal Astronomical Society. 77 (2): 155–184. Bibcode:1916MNRAS..77..155D. doi:10.1093/mnras/77.2.155.",
+                            "<info> Pauli, Wolfgang (1921), \"Die Relativitätstheorie\", Encyclopädie der Mathematischen Wissenschaften, 5 (2): 539–776",
+                            "<info> Lemaître, G. (1924), \"The motion of a rigid solid according to the relativity principle\", Philosophical Magazine, Series 6, 48 (283): 164–176, doi:10.1080/14786442408634478",
+                            "<info> Fokker, A. D. (1949), \"On the space-time geometry of a moving rigid body\", Reviews of Modern Physics, 21 (3): 406–408, Bibcode:1949RvMP...21..406F, doi:10.1103/RevModPhys.21.406",
+                            "<info> Møller, C. (1955) [1952]. The theory of relativity. Oxford Clarendon Press.",
+                            "<info> Salzman, G., & Taub, A. H. (1954), \"Born-type rigid motion in relativity\", Physical Review, 95 (6): 1659–1669, Bibcode:1954PhRv...95.1659S, doi:10.1103/PhysRev.95.1659{{citation}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> Rayner, C. B. (1959), \"Le corps rigide en relativité générale\", Séminaire Janet. Mécanique Analytique et Mécanique Céleste, 2: 1–15",
+                            "<info> Pirani, F. A. E., & Williams, G. (1962), \"Rigid motion in a gravitational field\", Séminaire Janet. Mécanique Analytique et Mécanique Céleste, 5: 1–16{{citation}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> Petrův, V. (1964). \"Die Lösung der Formeln von Frenet im Falle konstanter Krümmungen\". Aplikace Matematiky. 9 (4): 239–240.",
+                            "<info> Boyer, R. H. (1965), \"Rigid frames in general relativity\", Proceedings of the Royal Society of London A, 28 (1394): 343–355, Bibcode:1965RSPSA.283..343B, doi:10.1098/rspa.1965.0025, S2CID 120278621",
+                            "<info> Synge, J. L. (1967) [1966]. \"Timelike helices in flat space-time\". Proceedings of the Royal Irish Academy, Section A. 65: 27–42. JSTOR 20488646.",
+                            "<info> Grøn, Ø. (1981), \"Covariant formulation of Hooke's law\", American Journal of Physics, 49 (1): 28–30, Bibcode:1981AmJPh..49...28G, doi:10.1119/1.12623",
+                            "<info> Letaw, J. R. (1981). \"Stationary world lines and the vacuum excitation of noninertial detectors\". Physical Review D. 23 (8): 1709–1714. Bibcode:1981PhRvD..23.1709L. doi:10.1103/PhysRevD.23.1709.",
+                            "<info> Bel, L. (1995) [1993], \"Born's group and Generalized isometries\", Relativity in General: Proceedings of the Relativity Meeting'93, Atlantica Séguier Frontières: 47, arXiv:1103.2509, Bibcode:2011arXiv1103.2509B",
+                            "<info> Giulini, Domenico (2008). \"The Rich Structure of Minkowski Space\". Minkowski Spacetime: A Hundred Years Later. Vol. 165. Springer. p. 83. arXiv:0802.4345. Bibcode:2008arXiv0802.4345G. ISBN 978-90-481-3474-8. {{cite book}}: |journal= ignored (help)",
+                            "<info> Epp, R. J., Mann, R. B., & McGrath, P. L. (2009), \"Rigid motion revisited: rigid quasilocal frames\", Classical and Quantum Gravity, 26 (3) 035015, arXiv:0810.0072, Bibcode:2009CQGra..26c5015E, doi:10.1088/0264-9381/26/3/035015, S2CID 118856653{{citation}}:  CS1 maint: multiple names: authors list (link)"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Born Rigidity, Acceleration, and Inertia at mathpages.com",
+                            "<info> The Rigid Rotating Disk in Relativity in the USENET Physics FAQ"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

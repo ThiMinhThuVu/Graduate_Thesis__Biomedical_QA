@@ -1,0 +1,59 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/organic_cation_transport_protein": {
+                "title": "Organic cation transport protein",
+                "url": "https://en.wikipedia.org/wiki/organic_cation_transport_protein",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "An organic cation transport protein mediates the transport of organic cations across the cell membrane.  These proteins are members of the solute carrier family, subfamily 22.  This family of proteins can also transport zwitterions and anions, though it is a different subfamily of solute carrier proteins than the organic anion transporters.",
+                    "",
+                    "=== Function ===",
+                    "Organic cation transport proteins (OCTs) are involved in membrane transport through facilitated diffusion of organic cations and some weak bases. They are crucial for the disposal of many organic cations that come from drugs or other environmental sources. They also allow for the recycling of necessary organic cations. Some of these organic cation transport proteins are compound-specific, and others transport a broad range of cations across the membrane. For example, the disposing of the blood sugar medication Metformin is dependent on organic cation transport proteins[1].",
+                    "",
+                    "=== Structure ===",
+                    "The general structure of an OCT or OCTN consists of 11-12 alpha-helical transmembrane protein domains. These create a transmembrane unit that creates loops on both sides of the membrane. There is typically a large extracellular loop with glycosylation sites at the beginning of the transporter, followed by many smaller loops that connect the transmembrane protein domains on the extracellular side. The loops found on the inside of the cell contain many sites for phosphorylation[2]. There is also an intracellular loop  between the transmembrane domains 6 and 7 that contains phosphorylation sites that are believed to contribute to regulation of activity of the organic cation transport protein. Some of these phosphorylation sites are shared between the different organic cation transport proteins[3].",
+                    "",
+                    "=== Nomenclature ===",
+                    "The various types of organic cation transport proteins are often referred to in its respective abbreviated form or by the gene that codes it. For example, OCT1 is coded by the SLC22A1 gene. Similarly, OCT2 is often called SLC22A2.",
+                    "",
+                    "=== References ===",
+                    "<info> Koepsell, H., Endou, H. The SLC22 drug transporter family. Pflugers Arch - Eur J Physiol 447, 666–676 (2004). https://doi-org.byu.idm.oclc.org/10.1007/s00424-003-1089-9",
+                    "<info> Ciarimboli, G., Schlatter, E. Regulation of organic cation transport. Pflugers Arch - Eur J Physiol 449, 423–441 (2005). https://doi-org.byu.idm.oclc.org/10.1007/s00424-004-1355-5",
+                    "<info> Kerb, R., Brinkmann, U., Chatskaia, N., Gorbunov, D., Gorboulev, V., Mornhinweg, E., Keil, A., Eichelbaum, M. & Koepsell, H. (2002). Identification of genetic variations of the human organic cation transporter hOCT1 and their functional consequences. Pharmacogenetics, 12 (8), 591-595.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "An organic cation transport protein mediates the transport of organic cations across the cell membrane.  These proteins are members of the solute carrier family, subfamily 22.  This family of proteins can also transport zwitterions and anions, though it is a different subfamily of solute carrier proteins than the organic anion transporters."
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "Organic cation transport proteins (OCTs) are involved in membrane transport through facilitated diffusion of organic cations and some weak bases. They are crucial for the disposal of many organic cations that come from drugs or other environmental sources. They also allow for the recycling of necessary organic cations. Some of these organic cation transport proteins are compound-specific, and others transport a broad range of cations across the membrane. For example, the disposing of the blood sugar medication Metformin is dependent on organic cation transport proteins[1]."
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "The general structure of an OCT or OCTN consists of 11-12 alpha-helical transmembrane protein domains. These create a transmembrane unit that creates loops on both sides of the membrane. There is typically a large extracellular loop with glycosylation sites at the beginning of the transporter, followed by many smaller loops that connect the transmembrane protein domains on the extracellular side. The loops found on the inside of the cell contain many sites for phosphorylation[2]. There is also an intracellular loop  between the transmembrane domains 6 and 7 that contains phosphorylation sites that are believed to contribute to regulation of activity of the organic cation transport protein. Some of these phosphorylation sites are shared between the different organic cation transport proteins[3]."
+                        ]
+                    },
+                    "Nomenclature": {
+                        "content": [
+                            "The various types of organic cation transport proteins are often referred to in its respective abbreviated form or by the gene that codes it. For example, OCT1 is coded by the SLC22A1 gene. Similarly, OCT2 is often called SLC22A2."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> Koepsell, H., Endou, H. The SLC22 drug transporter family. Pflugers Arch - Eur J Physiol 447, 666–676 (2004). https://doi-org.byu.idm.oclc.org/10.1007/s00424-003-1089-9",
+                            "<info> Ciarimboli, G., Schlatter, E. Regulation of organic cation transport. Pflugers Arch - Eur J Physiol 449, 423–441 (2005). https://doi-org.byu.idm.oclc.org/10.1007/s00424-004-1355-5",
+                            "<info> Kerb, R., Brinkmann, U., Chatskaia, N., Gorbunov, D., Gorboulev, V., Mornhinweg, E., Keil, A., Eichelbaum, M. & Koepsell, H. (2002). Identification of genetic variations of the human organic cation transporter hOCT1 and their functional consequences. Pharmacogenetics, 12 (8), 591-595."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

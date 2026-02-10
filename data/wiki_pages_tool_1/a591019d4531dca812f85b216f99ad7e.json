@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/heparin-induced_thrombocytopenia": {
+                "title": "Heparin-induced thrombocytopenia",
+                "url": "https://en.wikipedia.org/wiki/heparin-induced_thrombocytopenia",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

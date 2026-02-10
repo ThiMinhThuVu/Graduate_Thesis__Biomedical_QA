@@ -1,0 +1,57 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/babi%c5%84ski": {
+                "title": "Babiński",
+                "url": "https://en.wikipedia.org/wiki/babi%c5%84ski",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Babiński (feminine: Babińska; plural: Babińscy) is a Polish surname. It may be transliterated as: Babinski, Babinska, Babinsky. Notable people with the surname include:",
+                    "<info> Dre Babinski (born 1985), American singer, songwriter, violinist, and guitarist",
+                    "<info> Henri Babinski (1855–1931), French gastronome and food writer",
+                    "<info> Joseph Babinski (1857–1932), French-Polish professor of neurology",
+                    "<info> Kazimierz Bąbiński [pl] (1895–1970), 27th Volhynian Infantry Division commander",
+                    "<info> Stefan Babinsky (born 1996), Austrian alpine skier",
+                    "<info> Wacław Babiński (1887–1957), Polish diplomat and professor at the University of Montreal",
+                    "<info> Zbigniew Babiński (1896–1940), Polish military and sports aviator",
+                    "",
+                    "=== Places ===",
+                    "<info> Babinska Reka, Kyustendil Province, Bulgaria",
+                    "<info> Bolshoy Babinsky, Volgograd Oblast, Russia",
+                    "",
+                    "=== See also ===",
+                    "<info> All pages with titles containing Babiński",
+                    "<info> All pages with titles containing Babińska",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Babiński (feminine: Babińska; plural: Babińscy) is a Polish surname. It may be transliterated as: Babinski, Babinska, Babinsky. Notable people with the surname include:",
+                            "<info> Dre Babinski (born 1985), American singer, songwriter, violinist, and guitarist",
+                            "<info> Henri Babinski (1855–1931), French gastronome and food writer",
+                            "<info> Joseph Babinski (1857–1932), French-Polish professor of neurology",
+                            "<info> Kazimierz Bąbiński [pl] (1895–1970), 27th Volhynian Infantry Division commander",
+                            "<info> Stefan Babinsky (born 1996), Austrian alpine skier",
+                            "<info> Wacław Babiński (1887–1957), Polish diplomat and professor at the University of Montreal",
+                            "<info> Zbigniew Babiński (1896–1940), Polish military and sports aviator"
+                        ]
+                    },
+                    "Places": {
+                        "content": [
+                            "<info> Babinska Reka, Kyustendil Province, Bulgaria",
+                            "<info> Bolshoy Babinsky, Volgograd Oblast, Russia"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> All pages with titles containing Babiński",
+                            "<info> All pages with titles containing Babińska"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

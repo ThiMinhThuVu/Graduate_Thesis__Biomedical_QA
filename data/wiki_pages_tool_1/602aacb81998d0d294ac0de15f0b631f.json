@@ -1,0 +1,117 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/gamma-glutamyl_hydrolase": {
+                "title": "Gamma-glutamyl hydrolase",
+                "url": "https://en.wikipedia.org/wiki/gamma-glutamyl_hydrolase",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Gamma-glutamyl hydrolase is an enzyme[5][6][7][8] that catalyses the following chemical reaction:",
+                    "This lysosomal or secreted, thiol-dependent peptidase, most active at acidic pH.",
+                    "In humans, gamma-glutamyl hydrolase is encoded by the GGH gene.[7][9][10] This gene catalyzes the hydrolysis of folylpoly-gamma-glutamates and antifolylpoly-gamma-glutamates by the removal of gamma-linked polyglutamates and glutamate.[10]",
+                    "",
+                    "=== Nomenclature ===",
+                    "Gamma-glutamyl hydrolase is also known as conjugase, folate conjugase, lysosomal gamma-glutamyl carboxypeptidase, gamma-Glu-X carboxypeptidase, pteroyl-poly-gamma-glutamate hydrolase, carboxypeptidase G, folic acid conjugase, poly(gamma-glutamic acid) endohydrolase, polyglutamate hydrolase, poly(glutamic acid) hydrolase II, pteroylpoly-gamma-glutamyl hydrolase.",
+                    "",
+                    "=== Interactive pathway map ===",
+                    "Click on genes, proteins and metabolites below to link to respective articles.[§ 1]",
+                    "<info> ^ The interactive pathway map can be edited at WikiPathways: \"FluoropyrimidineActivity_WP1601\".",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000137563 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000073987 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ Wang Y, Nimec Z, Ryan TJ, Dias JA, Galivan J (August 1993). \"The properties of the secreted gamma-glutamyl hydrolases from H35 hepatoma cells\". Biochim. Biophys. Acta. 1164 (3): 227–35. doi:10.1016/0167-4838(93)90253-n. PMID 8343522.",
+                    "<info> ^ Yao R, Rhee MS, Galivan J (September 1995). \"Effects of gamma-glutamyl hydrolase on folyl and antifolylpolyglutamates in cultured H35 hepatoma cells\". Mol. Pharmacol. 48 (3): 505–11. doi:10.1016/S0026-895X(25)10500-2. PMID 7565632.",
+                    "<info> ^ a b Yao R, Schneider E, Ryan TJ, Galivan J (September 1996). \"Human gamma-glutamyl hydrolase: cloning and characterization of the enzyme expressed in vitro\". Proc. Natl. Acad. Sci. U.S.A. 93 (19): 10134–8. Bibcode:1996PNAS...9310134Y. doi:10.1073/pnas.93.19.10134. PMC 38349. PMID 8816764.",
+                    "<info> ^ Yao R, Nimec Z, Ryan TJ, Galivan J (April 1996). \"Identification, cloning, and sequencing of a cDNA coding for rat gamma-glutamyl hydrolase\". J. Biol. Chem. 271 (15): 8525–8. doi:10.1074/jbc.271.15.8525. PMID 8621474.",
+                    "<info> ^ Yin D, Chave KJ, Macaluso CR, Galivan J, Yao R (Dec 1999). \"Structural organization of the human gamma-glutamyl hydrolase gene\". Gene. 238 (2): 463–70. doi:10.1016/S0378-1119(99)00362-5. PMID 10570974.",
+                    "<info> ^ a b \"Entrez Gene: GGH gamma-glutamyl hydrolase (conjugase, folylpolygammaglutamyl hydrolase)\". Archived from the original on 2022-12-12. Retrieved 2017-08-31.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Galivan J, Ryan T, Rhee M, et al. (1999). \"Glutamyl hydrolase: properties and pharmacologic impact\". Semin. Oncol. 26 (2 Suppl 6): 33–7. PMID 10598552.",
+                    "<info> O'Connor BM, Rotundo RF, Nimec Z, et al. (1991). \"Secretion of gamma-glutamyl hydrolase in vitro\". Cancer Res. 51 (15): 3874–81. PMID 1713122.",
+                    "<info> Chandler CJ, Wang TT, Halsted CH (1986). \"Pteroylpolyglutamate hydrolase from human jejunal brush borders. Purification and characterization\". J. Biol. Chem. 261 (2): 928–33. doi:10.1016/S0021-9258(17)36185-9. PMID 2867095.",
+                    "<info> Wang TT, Chandler CJ, Halsted CH (1986). \"Intracellular pteroylpolyglutamate hydrolase from human jejunal mucosa. Isolation and characterization\". J. Biol. Chem. 261 (29): 13551–5. doi:10.1016/S0021-9258(18)67054-1. PMID 3759978.",
+                    "<info> Yao R, Nimec Z, Ryan TJ, Galivan J (1996). \"Identification, cloning, and sequencing of a cDNA coding for rat gamma-glutamyl hydrolase\". J. Biol. Chem. 271 (15): 8525–8. doi:10.1074/jbc.271.15.8525. PMID 8621474.",
+                    "<info> Rhee MS, Lindau-Shepard B, Chave KJ, et al. (1998). \"Characterization of human cellular gamma-glutamyl hydrolase\". Mol. Pharmacol. 53 (6): 1040–6. doi:10.1016/S0026-895X(24)13274-9. PMID 9614206.",
+                    "<info> Li H, Ryan TJ, Chave KJ, Van Roey P (2002). \"Three-dimensional structure of human gamma -glutamyl hydrolase. A class I glatamine amidotransferase adapted for a complex substrate\". J. Biol. Chem. 277 (27): 24522–9. doi:10.1074/jbc.M202020200. PMID 11953431.",
+                    "<info> Strausberg RL, Feingold EA, Grouse LH, et al. (2003). \"Generation and initial analysis of more than 15,000 full-length human and mouse cDNA sequences\". Proc. Natl. Acad. Sci. U.S.A. 99 (26): 16899–903. Bibcode:2002PNAS...9916899M. doi:10.1073/pnas.242603899. PMC 139241. PMID 12477932.",
+                    "<info> Basrur V, Yang F, Kushimoto T, et al. (2003). \"Proteomic analysis of early melanosomes: identification of novel melanosomal proteins\". J. Proteome Res. 2 (1): 69–79. doi:10.1021/pr025562r. PMID 12643545.",
+                    "<info> Gerhard DS, Wagner L, Feingold EA, et al. (2004). \"The Status, Quality, and Expansion of the NIH Full-Length cDNA Project: The Mammalian Gene Collection (MGC)\". Genome Res. 14 (10B): 2121–7. doi:10.1101/gr.2596504. PMC 528928. PMID 15489334.",
+                    "<info> He P, Varticovski L, Bowman ED, et al. (2004). \"Identification of carboxypeptidase E and gamma-glutamyl hydrolase as biomarkers for pulmonary neuroendocrine tumors by cDNA microarray\". Hum. Pathol. 35 (10): 1196–209. doi:10.1016/j.humpath.2004.06.014. PMID 15492986. Archived from the original on 2022-10-15. Retrieved 2020-09-10.",
+                    "<info> Rual JF, Venkatesan K, Hao T, et al. (2005). \"Towards a proteome-scale map of the human protein-protein interaction network\". Nature. 437 (7062): 1173–8. Bibcode:2005Natur.437.1173R. doi:10.1038/nature04209. PMID 16189514. S2CID 4427026.",
+                    "<info> Eisele LE, Chave KJ, Lehning AC, Ryan TJ (2006). \"Characterization of Human gamma-glutamyl hydrolase in solution demonstrates that the enzyme is a non-dissociating homodimer\". Biochim. Biophys. Acta. 1764 (9): 1479–86. doi:10.1016/j.bbapap.2006.06.008. PMID 16945597.",
+                    "<info> Chi A, Valencia JC, Hu ZZ, et al. (2007). \"Proteomic and bioinformatic characterization of the biogenesis and function of melanosomes\". J. Proteome Res. 5 (11): 3135–44. doi:10.1021/pr060363j. PMID 17081065.",
+                    "<info> Hayashi H, Fujimaki C, Inoue K, et al. (2007). \"Genetic polymorphism of C452T (T127I) in human gamma-glutamyl hydrolase in a Japanese population\". Biol. Pharm. Bull. 30 (4): 839–41. doi:10.1248/bpb.30.839. PMID 17409534.",
+                    "",
+                    "=== External links ===",
+                    "<info> Gamma-glutamyl+hydrolase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> Overview of all the structural information available in the PDB for UniProt: Q92820 (Gamma-glutamyl hydrolase) at the PDBe-KB.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Gamma-glutamyl hydrolase is an enzyme[5][6][7][8] that catalyses the following chemical reaction:",
+                            "This lysosomal or secreted, thiol-dependent peptidase, most active at acidic pH.",
+                            "In humans, gamma-glutamyl hydrolase is encoded by the GGH gene.[7][9][10] This gene catalyzes the hydrolysis of folylpoly-gamma-glutamates and antifolylpoly-gamma-glutamates by the removal of gamma-linked polyglutamates and glutamate.[10]"
+                        ]
+                    },
+                    "Nomenclature": {
+                        "content": [
+                            "Gamma-glutamyl hydrolase is also known as conjugase, folate conjugase, lysosomal gamma-glutamyl carboxypeptidase, gamma-Glu-X carboxypeptidase, pteroyl-poly-gamma-glutamate hydrolase, carboxypeptidase G, folic acid conjugase, poly(gamma-glutamic acid) endohydrolase, polyglutamate hydrolase, poly(glutamic acid) hydrolase II, pteroylpoly-gamma-glutamyl hydrolase."
+                        ]
+                    },
+                    "Interactive pathway map": {
+                        "content": [
+                            "Click on genes, proteins and metabolites below to link to respective articles.[§ 1]",
+                            "<info> ^ The interactive pathway map can be edited at WikiPathways: \"FluoropyrimidineActivity_WP1601\"."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000137563 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000073987 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ Wang Y, Nimec Z, Ryan TJ, Dias JA, Galivan J (August 1993). \"The properties of the secreted gamma-glutamyl hydrolases from H35 hepatoma cells\". Biochim. Biophys. Acta. 1164 (3): 227–35. doi:10.1016/0167-4838(93)90253-n. PMID 8343522.",
+                            "<info> ^ Yao R, Rhee MS, Galivan J (September 1995). \"Effects of gamma-glutamyl hydrolase on folyl and antifolylpolyglutamates in cultured H35 hepatoma cells\". Mol. Pharmacol. 48 (3): 505–11. doi:10.1016/S0026-895X(25)10500-2. PMID 7565632.",
+                            "<info> ^ a b Yao R, Schneider E, Ryan TJ, Galivan J (September 1996). \"Human gamma-glutamyl hydrolase: cloning and characterization of the enzyme expressed in vitro\". Proc. Natl. Acad. Sci. U.S.A. 93 (19): 10134–8. Bibcode:1996PNAS...9310134Y. doi:10.1073/pnas.93.19.10134. PMC 38349. PMID 8816764.",
+                            "<info> ^ Yao R, Nimec Z, Ryan TJ, Galivan J (April 1996). \"Identification, cloning, and sequencing of a cDNA coding for rat gamma-glutamyl hydrolase\". J. Biol. Chem. 271 (15): 8525–8. doi:10.1074/jbc.271.15.8525. PMID 8621474.",
+                            "<info> ^ Yin D, Chave KJ, Macaluso CR, Galivan J, Yao R (Dec 1999). \"Structural organization of the human gamma-glutamyl hydrolase gene\". Gene. 238 (2): 463–70. doi:10.1016/S0378-1119(99)00362-5. PMID 10570974.",
+                            "<info> ^ a b \"Entrez Gene: GGH gamma-glutamyl hydrolase (conjugase, folylpolygammaglutamyl hydrolase)\". Archived from the original on 2022-12-12. Retrieved 2017-08-31."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Galivan J, Ryan T, Rhee M, et al. (1999). \"Glutamyl hydrolase: properties and pharmacologic impact\". Semin. Oncol. 26 (2 Suppl 6): 33–7. PMID 10598552.",
+                            "<info> O'Connor BM, Rotundo RF, Nimec Z, et al. (1991). \"Secretion of gamma-glutamyl hydrolase in vitro\". Cancer Res. 51 (15): 3874–81. PMID 1713122.",
+                            "<info> Chandler CJ, Wang TT, Halsted CH (1986). \"Pteroylpolyglutamate hydrolase from human jejunal brush borders. Purification and characterization\". J. Biol. Chem. 261 (2): 928–33. doi:10.1016/S0021-9258(17)36185-9. PMID 2867095.",
+                            "<info> Wang TT, Chandler CJ, Halsted CH (1986). \"Intracellular pteroylpolyglutamate hydrolase from human jejunal mucosa. Isolation and characterization\". J. Biol. Chem. 261 (29): 13551–5. doi:10.1016/S0021-9258(18)67054-1. PMID 3759978.",
+                            "<info> Yao R, Nimec Z, Ryan TJ, Galivan J (1996). \"Identification, cloning, and sequencing of a cDNA coding for rat gamma-glutamyl hydrolase\". J. Biol. Chem. 271 (15): 8525–8. doi:10.1074/jbc.271.15.8525. PMID 8621474.",
+                            "<info> Rhee MS, Lindau-Shepard B, Chave KJ, et al. (1998). \"Characterization of human cellular gamma-glutamyl hydrolase\". Mol. Pharmacol. 53 (6): 1040–6. doi:10.1016/S0026-895X(24)13274-9. PMID 9614206.",
+                            "<info> Li H, Ryan TJ, Chave KJ, Van Roey P (2002). \"Three-dimensional structure of human gamma -glutamyl hydrolase. A class I glatamine amidotransferase adapted for a complex substrate\". J. Biol. Chem. 277 (27): 24522–9. doi:10.1074/jbc.M202020200. PMID 11953431.",
+                            "<info> Strausberg RL, Feingold EA, Grouse LH, et al. (2003). \"Generation and initial analysis of more than 15,000 full-length human and mouse cDNA sequences\". Proc. Natl. Acad. Sci. U.S.A. 99 (26): 16899–903. Bibcode:2002PNAS...9916899M. doi:10.1073/pnas.242603899. PMC 139241. PMID 12477932.",
+                            "<info> Basrur V, Yang F, Kushimoto T, et al. (2003). \"Proteomic analysis of early melanosomes: identification of novel melanosomal proteins\". J. Proteome Res. 2 (1): 69–79. doi:10.1021/pr025562r. PMID 12643545.",
+                            "<info> Gerhard DS, Wagner L, Feingold EA, et al. (2004). \"The Status, Quality, and Expansion of the NIH Full-Length cDNA Project: The Mammalian Gene Collection (MGC)\". Genome Res. 14 (10B): 2121–7. doi:10.1101/gr.2596504. PMC 528928. PMID 15489334.",
+                            "<info> He P, Varticovski L, Bowman ED, et al. (2004). \"Identification of carboxypeptidase E and gamma-glutamyl hydrolase as biomarkers for pulmonary neuroendocrine tumors by cDNA microarray\". Hum. Pathol. 35 (10): 1196–209. doi:10.1016/j.humpath.2004.06.014. PMID 15492986. Archived from the original on 2022-10-15. Retrieved 2020-09-10.",
+                            "<info> Rual JF, Venkatesan K, Hao T, et al. (2005). \"Towards a proteome-scale map of the human protein-protein interaction network\". Nature. 437 (7062): 1173–8. Bibcode:2005Natur.437.1173R. doi:10.1038/nature04209. PMID 16189514. S2CID 4427026.",
+                            "<info> Eisele LE, Chave KJ, Lehning AC, Ryan TJ (2006). \"Characterization of Human gamma-glutamyl hydrolase in solution demonstrates that the enzyme is a non-dissociating homodimer\". Biochim. Biophys. Acta. 1764 (9): 1479–86. doi:10.1016/j.bbapap.2006.06.008. PMID 16945597.",
+                            "<info> Chi A, Valencia JC, Hu ZZ, et al. (2007). \"Proteomic and bioinformatic characterization of the biogenesis and function of melanosomes\". J. Proteome Res. 5 (11): 3135–44. doi:10.1021/pr060363j. PMID 17081065.",
+                            "<info> Hayashi H, Fujimaki C, Inoue K, et al. (2007). \"Genetic polymorphism of C452T (T127I) in human gamma-glutamyl hydrolase in a Japanese population\". Biol. Pharm. Bull. 30 (4): 839–41. doi:10.1248/bpb.30.839. PMID 17409534."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Gamma-glutamyl+hydrolase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> Overview of all the structural information available in the PDB for UniProt: Q92820 (Gamma-glutamyl hydrolase) at the PDBe-KB."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

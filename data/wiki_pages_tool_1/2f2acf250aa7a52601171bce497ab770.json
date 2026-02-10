@@ -1,0 +1,63 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/essential_amino_acids_in_plant_food": {
+                "title": "Essential amino acids in plant food",
+                "url": "https://en.wikipedia.org/wiki/essential_amino_acids_in_plant_food",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Essential amino acids (EAAs) are amino acids that are necessary to build proteins in an organism. The source of complete EAAs are both animal and plant-based food.",
+                    "",
+                    "=== Essential amino acids in plant food ===",
+                    "Essential amino acids (EAAs) are the amino acids required by an organism for building proteins but which cannot be synthesized by the organism itself. As such it is essential that these amino acids be supplied by the organism's diet. In case of humans there are 9 EAAs: histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, and valine.[1]",
+                    "EAAs are provided in both animal and plant-based food. The EAAs in plants vary greatly due to the vast variation in the plant world and, in general, plants have much lower content of proteins than animal food.[2][3] Some plant-based foods contain few or no EAAs, e.g. some sprouts, mango, pineapple, lime and melon. On the other hand, nuts, seeds, beans and peas contain EAAs in significant quantity. The following table shows the composition of EAAs in selected plant foods as well as recommended dietary allowances.(RDA[4])",
+                    "1Chicken was chosen as it is the most eaten animal food and it has one of the highest amount of EAAs among animal-based foods.",
+                    "Soybeans have the highest content of EAAs among the foods. Spirulina is a superior supplement containing the highest amount of EAAs. Another important factor is the composition of EAAs. As we can see the quantity of some EAAs is lower. For example, pumpkin seeds despite high total EAAs content have a low content of lysine. A good indication is to calculate the food sample that meets the WHO's requirement of EAAs intake. A table below shows the smallest sample food required to provide all EAAs according to the RDA for each individual EAA.",
+                    "Soybeans have the smallest sample food that provide complete protein, smaller than for several animal foods.[5] Food samples for nuts, seeds, beans, and peas are bigger than one of chicken, and in case of rice, the sample is simply unpractical - the known fact is that cereals are not the main source of proteins.",
+                    "",
+                    "=== External links ===",
+                    "<info> \"In Vitro assessment of the nutritive value of expanded soybean meal for dairy cattle\", Journal",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Amino acids: MedlinePlus Medical Encyclopedia\". medlineplus.gov. Retrieved 2020-01-07.",
+                    "<info> ^ a b \"FoodData Central\". fdc.nal.usda.gov. Retrieved 2020-01-06.",
+                    "<info> ^ \"Amino acids in food\" (PDF). www.livsmedelsverket.se.",
+                    "<info> ^ a b \"Protein and Amino Acid Requirements in Human Nutrition\" (PDF). apps.who.int.",
+                    "<info> ^ \"Table 5 Amounts of sample foods required to provide [B] a total amount of EAAs equal to the recommended daily sum of total EAAs (i.e., ~12.9 g) or [C] the RDA for each individual EAA\". Scientific Reports. ISSN 2045-2322.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Essential amino acids (EAAs) are amino acids that are necessary to build proteins in an organism. The source of complete EAAs are both animal and plant-based food."
+                        ]
+                    },
+                    "Essential amino acids in plant food": {
+                        "content": [
+                            "Essential amino acids (EAAs) are the amino acids required by an organism for building proteins but which cannot be synthesized by the organism itself. As such it is essential that these amino acids be supplied by the organism's diet. In case of humans there are 9 EAAs: histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, and valine.[1]",
+                            "EAAs are provided in both animal and plant-based food. The EAAs in plants vary greatly due to the vast variation in the plant world and, in general, plants have much lower content of proteins than animal food.[2][3] Some plant-based foods contain few or no EAAs, e.g. some sprouts, mango, pineapple, lime and melon. On the other hand, nuts, seeds, beans and peas contain EAAs in significant quantity. The following table shows the composition of EAAs in selected plant foods as well as recommended dietary allowances.(RDA[4])",
+                            "1Chicken was chosen as it is the most eaten animal food and it has one of the highest amount of EAAs among animal-based foods.",
+                            "Soybeans have the highest content of EAAs among the foods. Spirulina is a superior supplement containing the highest amount of EAAs. Another important factor is the composition of EAAs. As we can see the quantity of some EAAs is lower. For example, pumpkin seeds despite high total EAAs content have a low content of lysine. A good indication is to calculate the food sample that meets the WHO's requirement of EAAs intake. A table below shows the smallest sample food required to provide all EAAs according to the RDA for each individual EAA.",
+                            "Soybeans have the smallest sample food that provide complete protein, smaller than for several animal foods.[5] Food samples for nuts, seeds, beans, and peas are bigger than one of chicken, and in case of rice, the sample is simply unpractical - the known fact is that cereals are not the main source of proteins."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"In Vitro assessment of the nutritive value of expanded soybean meal for dairy cattle\", Journal"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Amino acids: MedlinePlus Medical Encyclopedia\". medlineplus.gov. Retrieved 2020-01-07.",
+                            "<info> ^ a b \"FoodData Central\". fdc.nal.usda.gov. Retrieved 2020-01-06.",
+                            "<info> ^ \"Amino acids in food\" (PDF). www.livsmedelsverket.se.",
+                            "<info> ^ a b \"Protein and Amino Acid Requirements in Human Nutrition\" (PDF). apps.who.int.",
+                            "<info> ^ \"Table 5 Amounts of sample foods required to provide [B] a total amount of EAAs equal to the recommended daily sum of total EAAs (i.e., ~12.9 g) or [C] the RDA for each individual EAA\". Scientific Reports. ISSN 2045-2322."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

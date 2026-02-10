@@ -1,0 +1,41 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/lenz_microphthalmia_syndrome": {
+                "title": "Lenz microphthalmia syndrome",
+                "url": "https://en.wikipedia.org/wiki/lenz_microphthalmia_syndrome",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Lenz microphthalmia syndrome is a very rare inherited disorder characterized by abnormal smallness of one or both eyes (microphthalmos) sometimes with droopy eyelids (blepharoptosis), resulting in visual impairment or blindness. Eye problems may include coloboma, microcornea, and glaucoma. Some affected infants may have complete absence of the eyes (anophthalmia). Most affected infants have developmental delay and intellectual disability, ranging from mild to severe. Other physical abnormalities associated with this disorder can include an unusually small head (microcephaly), and malformations of the teeth, ears, fingers or toes, skeleton, and genitourinary system. The range and severity of findings vary from case to case. Formal diagnosis criteria do not exist.",
+                    "Lenz microphthalmia syndrome is also known as LMS, Lenz syndrome, Lenz dysplasia, Lenz dysmorphogenetic syndrome, or microphthalmia with multiple associated anomalies (MAA: OMIM 309800). It is named after Widukind Lenz, a German geneticist and dysmorphologist.",
+                    "",
+                    "=== Genetics ===",
+                    "Lenz microphthalmia syndrome is inherited as an X-linked recessive genetic trait and is fully expressed in males only. Females who carry one copy of the disease gene (heterozygotes) may exhibit some of the symptoms associated with the disorder, such as an abnormally small head (microcephaly), short stature, or malformations of the fingers or toes.  Molecular genetic testing of BCOR (MCOPS2 locus), the only gene known to be associated with Lenz microphthalmia syndrome, is available on a clinical basis. One additional locus on the X chromosome (MCOPS1) is known to be associated with LMS.",
+                    "",
+                    "=== Diagnosis ===",
+                    "A somewhat similar X-linked syndrome of microphthalmia, called oculofaciocardiodental syndrome (OFCD) is associated with mutations in BCOR. OFCD syndrome is inherited in an X-linked dominant pattern with male lethality.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Lenz microphthalmia syndrome is a very rare inherited disorder characterized by abnormal smallness of one or both eyes (microphthalmos) sometimes with droopy eyelids (blepharoptosis), resulting in visual impairment or blindness. Eye problems may include coloboma, microcornea, and glaucoma. Some affected infants may have complete absence of the eyes (anophthalmia). Most affected infants have developmental delay and intellectual disability, ranging from mild to severe. Other physical abnormalities associated with this disorder can include an unusually small head (microcephaly), and malformations of the teeth, ears, fingers or toes, skeleton, and genitourinary system. The range and severity of findings vary from case to case. Formal diagnosis criteria do not exist.",
+                            "Lenz microphthalmia syndrome is also known as LMS, Lenz syndrome, Lenz dysplasia, Lenz dysmorphogenetic syndrome, or microphthalmia with multiple associated anomalies (MAA: OMIM 309800). It is named after Widukind Lenz, a German geneticist and dysmorphologist."
+                        ]
+                    },
+                    "Genetics": {
+                        "content": [
+                            "Lenz microphthalmia syndrome is inherited as an X-linked recessive genetic trait and is fully expressed in males only. Females who carry one copy of the disease gene (heterozygotes) may exhibit some of the symptoms associated with the disorder, such as an abnormally small head (microcephaly), short stature, or malformations of the fingers or toes.  Molecular genetic testing of BCOR (MCOPS2 locus), the only gene known to be associated with Lenz microphthalmia syndrome, is available on a clinical basis. One additional locus on the X chromosome (MCOPS1) is known to be associated with LMS."
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "A somewhat similar X-linked syndrome of microphthalmia, called oculofaciocardiodental syndrome (OFCD) is associated with mutations in BCOR. OFCD syndrome is inherited in an X-linked dominant pattern with male lethality."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

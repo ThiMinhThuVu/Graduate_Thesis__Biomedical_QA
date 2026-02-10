@@ -1,0 +1,355 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/sarcoma": {
+                "title": "Sarcoma",
+                "url": "https://en.wikipedia.org/wiki/sarcoma",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A sarcoma is a rare type of cancer that arises from cells of mesenchymal origin.[1][2] Originating from mesenchymal cells means that sarcomas are cancers of connective tissues such as bone, cartilage, muscle, fat, or vascular tissues.[2][3]",
+                    "Sarcomas are one of five different types of cancer, classified by the cell type from which they originate.[4] While there are five types under this category, sarcomas are most frequently contrasted with carcinomas which are much more common. Sarcomas are quite rare, making up about 1% of all adult cancer diagnoses and 15% of childhood cancer diagnoses.[5]",
+                    "There are many subtypes of sarcoma, which are classified based on the specific tissue and type of cell from which the tumor originates.[6] Common examples of sarcoma include liposarcoma, leiomyosarcoma, and osteosarcoma. Sarcomas are primary connective tissue tumors, meaning that they arise in connective tissues.[2] This is in contrast to secondary (or \"metastatic\") connective tissue tumors, which occur when a cancer from elsewhere in the body (such as the lungs, breast tissue or prostate) spreads to the connective tissue.[7]",
+                    "The word sarcoma is derived from the Greek σάρκωμα sarkōma 'fleshy excrescence or substance', itself from σάρξ sarx meaning 'flesh'.[8][9][10]",
+                    "",
+                    "=== Classification ===",
+                    "Sarcomas are typically divided into two major groups: bone sarcomas and soft-tissue sarcomas,[2] each of which has multiple subtypes. In the United States, the American Joint Committee on Cancer (AJCC) publishes guidelines that classify the subtypes of sarcoma.[6] These subtypes are as follows:",
+                    "<info> Poorly differentiated round/spindle cell tumors (includes Ewing sarcoma)",
+                    "<info> Other:\nLiposarcoma\nLeiomyosarcoma\nMalignant peripheral nerve sheath tumor\nRhabdomyosarcoma\nSynovial sarcoma\nMalignant solitary fibrous tumor.[6]",
+                    "<info> Malignant peripheral nerve sheath tumor",
+                    "<info> Malignant solitary fibrous tumor.[6]",
+                    "<info> Liposarcoma (includes the following varieties: atypical lipomatous tumor/well-differentiated liposarcoma, dedifferentiated liposarcoma, myxoid sarcoma, pleomorphic liposarcoma, and myxoid pleomorphic liposarcoma",
+                    "<info> Dermatofibrosarcoma protuberans (includes pigmented varieties)",
+                    "<info> Malignant solitary fibrous tumor",
+                    "<info> Fibrosarcoma (includes adult and sclerosing epithelioid varieties)",
+                    "<info> Myxofibrosarcoma (formerly myxoid malignant fibrous histiocytoma)",
+                    "<info> Giant cell tumor of soft tissues",
+                    "<info> Rhabdomyosarcoma (includes the following varieties: embryonal, alveolar, pleomorphic, and spindle cell/sclerosing)",
+                    "<info> Hemangioendothelioma (includes the following varieties: retiform, pseudomyogenic, and epithelioid)",
+                    "<info> Angiosarcoma of soft tissue",
+                    "<info> Gastrointestinal stromal tumor, malignant (GIST)",
+                    "<info> Malignant peripheral nerve sheath tumor (includes epithelioid variety)",
+                    "<info> Malignant granular cell tumor",
+                    "<info> Malignant ossifying fibromyxoid tumor",
+                    "<info> Stromal sarcoma not otherwise specified",
+                    "<info> Malignant phosphaturic mesenchymal tumor",
+                    "<info> Synovial sarcoma (includes the following varieties: spindle cell, biphasic, and not otherwise specified)",
+                    "<info> Alveolar soft part sarcoma",
+                    "<info> Clear cell sarcoma of soft tissue",
+                    "<info> Interdigitating dendritic cell sarcoma",
+                    "<info> Desmoplastic small round cell tumor",
+                    "<info> Perivascular epithelioid cell tumor, not otherwise specified",
+                    "<info> Undifferentiated spindle cell sarcoma",
+                    "<info> Undifferentiated round cell sarcoma",
+                    "<info> Undifferentiated sarcoma, not otherwise specified.[6]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Symptoms of bone sarcomas typically include bone pain, especially at night, and swelling around the site of the tumor.[2]",
+                    "Symptoms of soft-tissue sarcomas vary, but they often present as firm, oftentimes painless lumps or nodules.[2] Gastrointestinal stromal tumors (GIST, a subtype of soft-tissue sarcoma) often are asymptomatic, but can be associated with vague complaints of abdominal pain, bleeding into the intestines, a feeling of fullness, or other signs of intestinal obstruction.[2]",
+                    "",
+                    "=== Cause ===",
+                    "The cause of most bone sarcomas is not known,[3] but several factors are associated with an increased risk of developing bone sarcoma. Previous exposure to ionizing radiation (such as prior radiation therapy) is one such risk factor.[2] Therapeutic radiation is associated with sarcoma after 10 to 20 years.[11] Exposure to alkylating agents, such as those found in certain cancer chemotherapeutic medicines, also increases the risk of bone sarcoma.[3] Certain inherited genetic syndromes, including Li-Fraumeni syndrome, inherited RB1 gene mutations, and Paget's disease of bone are associated with an increased risk of developing bone sarcomas.[2]",
+                    "Most soft-tissue sarcomas arise from what doctors call \"sporadic\" (or random) genetic mutations within an affected person's cells.[3] Nevertheless, there are certain risk factors associated with an increased risk of developing soft-tissue sarcoma. Previous exposure to ionizing radiation is one such risk factor.[2] Exposure to vinyl chloride (e.g., such as the fumes encountered in the production of polyvinyl chloride (PVC)), arsenic and Thorotrast all are associated with an increased risk of angiosarcoma.[2][3]  Lymphedema, such as that resulting from certain types of breast cancer treatment, also is a risk factor for development of angiosarcoma.[3] As with bone sarcomas, certain inherited genetic syndromes also are associated with an increased risk of developing soft-tissue sarcoma, including Li-Fraumeni syndrome, familial adenomatous polyposis, neurofibromatosis type 1, and heritable RB1 gene mutations.[3] Kaposi sarcoma is caused by Kaposi sarcoma-associated herpesvirus (HHV-8).",
+                    "",
+                    "=== Mechanisms ===",
+                    "The mechanisms by which healthy cells transform into cancer cells are described in detail elsewhere (see Cancer main page; Carcinogenesis main page). The precise molecular changes that result in sarcoma are not always known, but certain types of sarcomas are associated with particular genetic mutations.[2][3] Examples include:",
+                    "<info> Most cases of Ewing sarcoma are associated with a chromosomal translocation in which part of chromosome 11 fuses with part of chromosome 22.[2] This results in the EWSR1 gene becoming fused to other genes, including the FLI1 gene in 90% of Ewing cases and ERG gene in 5-10% of cases.[2] These fusions result in the production of abnormal proteins, although how these abnormal proteins result in cancer is not fully known.[2]",
+                    "<info> Dermatofibrosarcoma protuberans often is associated with a chromosomal translocation in which the COL1A1 gene becomes fused to the PDGFRB gene.[3] This results in over-active PDGF signaling, which is thought to promote cell division and ultimately lead to tumor development.[3]",
+                    "<info> Inflammatory myofibroblastic tumor often is associated with rearrangements of the ALK gene, and occasionally with rearrangements of the HMGA2 gene.[3]",
+                    "<info> Tenosynovial giant cell tumor (not a sarcoma, but a non-metastasizing and locally aggressive soft tissue tumor) frequently is associated with a chromosomal translocation between chromosome 1 and chromosome 2, in which the CSF1 gene becomes fused with the COL6A3 gene.[3] This results in increased CSF1 protein production, which is thought to play a role in cancer development.[3]",
+                    "<info> Many liposarcomas are associated with amplification of part of chromosome 12, which results in extra copies of known cancer-promoting genes (\"oncogenes\") such as the CDK4 gene, the MDM2 gene and the HMGA2 gene.[3]",
+                    "",
+                    "=== Diagnosis ===",
+                    "Diagnosis of bone sarcomas begins with a thorough history and physical examination which may reveal characteristic signs and symptoms (see Signs and Symptoms above).[3] Laboratory studies are not particularly useful in diagnosis, although some bone sarcomas (such as osteosarcoma) may be associated with elevated alkaline phosphatase levels, while others (such as Ewing sarcoma) can be associated with elevated erythrocyte sedimentation rate.[12] Importantly, however, none of these laboratory findings are specific to bone sarcomas, meaning that elevations in these lab values are associated with many other conditions as well as sarcoma, and thus cannot be relied upon to conclusively diagnose sarcoma.[3]",
+                    "Imaging studies are critically important in diagnosis, and most clinicians will order a plain radiograph (X-ray) initially.[3] Other imaging studies commonly used in diagnosis include magnetic resonance imaging (MRI) studies and radioisotope bone scans.[12][3] A CT scan is typically  not used in diagnosis of most types of bone sarcoma, although it is an important tool for staging (see below).[3] Definitive diagnosis requires biopsy of the tumor and careful review of the biopsy specimen by an experienced pathologist.[3]",
+                    "Diagnosis of soft-tissue sarcomas also begins with a thorough history and physical examination.[3] Imaging studies can include either CT or MRI, although CT tends to be preferred for soft-tissue sarcomas located in the thorax, abdomen, or retroperitoneum.[3] Positron emission tomography (PET) also may be useful in diagnosis, although its most common use is for staging (see below).[3] As with bone sarcomas, definitive diagnosis requires biopsy of the tumor with evaluation of histology by a trained pathologist.[3][13]",
+                    "In general, cancer staging refers to how advanced a cancer is, and usually it is based upon factors such as tumor size and whether it has spread to other parts of the body.[3][14] Staging is important because the stage affects the prognosis (likely outcome), as well as the types of treatments that are likely to be effective against the cancer.[2][6] With sarcomas, staging requires a determination of whether the tumor has grown into surrounding tissues (\"local invasion\"), as well as imaging to determine whether it has spread (a process known as \"metastasis\") to lymph nodes (forming \"nodal metastases\") or to other tissues or organs in the body (forming \"distant metastases\").[6]",
+                    "The most common imaging tools used for staging bone sarcomas are MRI or CT to evaluate the primary tumor, contrast-enhanced CT of the chest to evaluate whether the cancer has spread (i.e., metastasized) to the lungs, and radioisotope bone scan to evaluate whether the cancer has spread to other bones.[6] Staging for soft-tissue sarcomas typically includes imaging of the primary tumor by MRI or CT to determine tumor size, as well as contrast-enhanced CT of the chest to evaluate for metastatic tumors in the lungs.[6]",
+                    "Like some other cancers, sarcomas are assigned a grade (low, intermediate, or high) based on the appearance of the tumor cells under a microscope.[15] In general, grade refers to how aggressive the cancer is and how likely it is to spread to other parts of the body (\"metastasize\").[15] Low-grade sarcomas have a better prognosis than higher-grade sarcomas, and are usually treated surgically, although sometimes radiation therapy or chemotherapy are used.[3][6] Intermediate- and high-grade sarcomas are more frequently treated with a combination of surgery, chemotherapy, or radiation therapy.[16] Since high-grade tumors are more likely to undergo metastasis (invasion and spread to locoregional and distant sites), they are treated more aggressively. The recognition that many sarcomas are sensitive to chemotherapy has dramatically improved the survival of patients. For example, in the era before chemotherapy, long-term survival for pediatric patients with localized osteosarcoma was only about 20%, but now has risen to 60–70%.[17]",
+                    "",
+                    "=== Screening ===",
+                    "In the US, the US Preventive Services Task Force (USPSTF) publishes guidelines recommending preventive screening for certain types of common cancers and other diseases.[18] As of March 2019[update], the USPSTF does not recommend screening for sarcoma,[18] possibly because it is a very rare type of cancer (see Epidemiology below).",
+                    "The American Cancer Society (ACS) also publishes guidelines recommending preventive screening for certain types of common cancers.[19] Like the USPSTF, as of March 2019[update] ACS does not recommend preventive screening for sarcoma.[19]",
+                    "However, patients with some inherited conditions, such as neurofibromatosis, may benefit from screening for development of cancers from pre-existing benign tumors called neurofibromas.",
+                    "",
+                    "=== Treatment ===",
+                    "Surgery is the most common form of the treatment for most sarcomas that have not spread to other parts of the body, and for most sarcomas, surgery is the only curative treatment.[3][20] Limb-sparing surgery, as opposed to amputation, can now be used to save the limbs of patients in at least 90% of extremity (arm or leg) sarcoma cases.[20] Additional treatments, including chemotherapy, radiation therapy (also called \"radiotherapy\"), which includes proton therapy, may be administered before surgery (called \"neoadjuvant\" chemotherapy or radiotherapy) or after surgery (called \"adjuvant\" chemotherapy or radiotherapy).[21][3][16] The use of neoadjuvant or adjuvant chemotherapy and radiotherapy significantly improves the prognosis for many sarcoma patients[21].[3][22] Treatment can be a long and arduous process, lasting about a year for many patients.[16]",
+                    "<info> Liposarcoma treatment usually consists of surgical resection, with chemotherapy considered depending on the aggressiveness of the sarcoma. Radiotherapy may also be used before or after surgical excision for liposarcoma.[23]",
+                    "<info> Pediatric rhabdomyosarcoma is usually treated with chemotherapy, surgery, and sometimes radiotherapy.[24] Pediatric rhabdomyosarcoma patients have a 50–85% long term survival rate.[25]",
+                    "<info> Osteosarcoma is a cancer of the bone that is treated with surgical resection of as much of the cancer as possible, often along with chemotherapy.[26] Radiotherapy is a second alternative to surgery, although not as successful.",
+                    "It was believed that higher doses of chemotherapy might improve survival.[21] However, high doses of chemotherapy stop the production of blood cells in the bone marrow and can be harmful. Stem cells collected from people before high‐dose chemotherapy can be transplanted back to the person if the blood cell count gets too low; this is called autologous hematopoietic stem cell transplantation, or high dose therapy with stem cell rescue. Research to investigate if using high‐dose chemotherapy followed by autologous hematopoietic stem cell transplantation was more favourable than standard‐dose chemotherapy[27] found only one RCT and this did not favour either of the two treatment arms with respect to overall survival. As a result, high dose chemotherapy with stem cell rescue is generally considered appropriate only in the research setting.",
+                    "",
+                    "=== Prognosis ===",
+                    "The AJCC has identified several factors that affect prognosis of bone sarcomas:[6]",
+                    "<info> Size of the tumor: larger tumors tend to have a worse prognosis compared to smaller tumors.",
+                    "<info> Spread of tumor to surrounding tissues: tumors that have spread locally to surrounding tissues tend to have a worse prognosis compared to tumors that have not spread beyond their place of origin.",
+                    "<info> Stage and presence of metastases: tumors that have spread (\"metastasized\") to the lymph nodes (which is rare for bone sarcomas) or other organs or tissues (for example, to the lungs) have a worse prognosis compared to tumors that have not metastasized.",
+                    "<info> Tumor grade: higher grade tumors (grades 2 and 3) tend to have a worse prognosis compared to low grade (grade 1) tumors.",
+                    "<info> Skeletal location: tumors originating in the spine or pelvic bones tend to have a worse prognosis compared to tumors originating in arm or leg bones.",
+                    "For soft-tissue sarcomas other than GISTs, factors that affect prognosis include:[6]",
+                    "<info> Stage: as with bone sarcomas, tumors that have metastasized have a worse prognosis compared to tumors that have not metastasized.",
+                    "<info> Grade: the AJCC recommends using a grading system called the French Federation of Cancer Centers Sarcoma Group (FNCLCC) Grade for soft-tissue sarcomas, with high-grade tumors having a worse prognosis compared to low-grade tumors.",
+                    "For GISTs, the key factor that affects prognosis is:[6]",
+                    "<info> Mitotic rate: mitotic rate refers to the fraction of cells that are actively dividing within the tumor; GISTs that have a high mitotic rate have a worse prognosis compared to GISTs that have a low mitotic rate.",
+                    "According to data published by the US National Cancer Institute (NCI), the overall 5-year survival for bone sarcomas is 66.9%.[28] The American Cancer Society (ACS) estimates that 2,140 people in the US will die in 2023 from bone sarcomas, accounting for 0.3% of all cancer deaths.[29] The median age at death is 61 years old, although death can occur in any age group.[28] Thus, 12.3% of bone sarcoma deaths occur in people under 20 years old, 13.8% occur in people 20–34 years old, 5.5% occur in people 35–44 years old, 9.3% occur in people 45–54 years old, 13.5% occur in people 55–64 years old, 16.2% occur in people 65–74 years old, 16.4% occur in people 75–84 years old, and 13.1% occur in people 85 years or older.[28]",
+                    "For soft-tissue sarcomas, the overall 5-year survival (irrespective of stage) is 64.5%, but survival is affected by many factors, including stage.[30] Thus, the 5-year survival is 80.8% for soft-tissue sarcomas that have not spread beyond the primary tumor (\"localized\" tumors), 58.0% for soft-tissue sarcomas that have spread only to nearby lymph nodes, and 16.4% for soft-tissue sarcomas that have spread to distant organs.[30] The ACS estimates that 5,140 people will die from soft-tissue sarcoma in 2023, accounting for 0.9% of all cancer deaths.[29]",
+                    "",
+                    "=== Epidemiology ===",
+                    "Sarcomas are rare cancers.[2] The risk of a previously healthy person receiving a new diagnosis of bone cancer is less than 0.001%, while the risk of receiving a new diagnosis of soft-tissue sarcoma is between 0.0014 and 0.005%.[3] The American Cancer Society estimates that in the United States there will be 3,970 new cases of bone sarcoma in 2023, and 13,400 new cases of soft-tissue sarcoma.[29] Considering that the total estimated number of new cancer diagnoses (all types of cancer) is 1,958,310, this means bone sarcomas represent only 0.2% of all new cancer diagnoses (making them the 30th most common type of cancer[28]) and soft-tissue sarcomas represent only 0.7% (making them the 22nd most common type of cancer[30]) of all new cancer diagnoses in the US in 2023.[29] These estimates are similar to previously reported data.[3]",
+                    "Sarcomas affect people of all ages. Around 50% of bone sarcomas and 20% of soft-tissue sarcomas are diagnosed in people under the age of 35.[31] Some sarcomas, such as leiomyosarcoma, chondrosarcoma, and gastrointestinal stromal tumor (GIST), are more common in adults than in children.[2] Most high-grade bone sarcomas, including Ewing sarcoma and osteosarcoma, are much more common in children and young adults.[2]",
+                    "",
+                    "=== In fossils ===",
+                    "In 2016, scientists reported the discovery of an osteosarcoma tumor in a 1.6–1.8 million-year-old fossil from the skeleton of the now-extinct hominin species Australopithecus sediba, making it the earliest-known case of human cancer.[32][33]",
+                    "",
+                    "=== Research ===",
+                    "Treatment of sarcoma, especially when the sarcoma has spread, or \"metastasized\", often requires chemotherapy. However, existing chemotherapeutic medicines are associated with significant toxicities and are not highly effective in killing cancer cells.[3] Therefore, research to identify new medications to treat sarcoma is being conducted as of 2019[update].[3] One new type of therapy still under investigation is the use of cancer immunotherapy (e.g., immune checkpoint inhibitors like anti-PD1, anti-PDL1, and anti-CTLA4 agents) to treat sarcomas.[34] These drugs are not yet FDA- or other regulator-approved treatment, except PDL1 inhibitor atezolizumab for the ultra-rate diagnosis of alveolar soft part sarcoma.[34][35] Other strategies, such as small-molecule targeted therapy, biologic agents (e.g., small interfering RNA molecules), and nanoparticle-directed therapy, also are under active investigated.[3]",
+                    "Research to understand the specific genetic and molecular factors that cause sarcoma to develop is underway.[3] This could allow for the design of new targeted therapies and allow physicians to more accurately predict a patient's prognosis.[3] However, due to rarity of sarcomas, as well as sarcoma-specific characteristics (e.g. more common invasion via cardiovascular system), research may be particularly challenging in both clinical and preclinical models.[36]",
+                    "",
+                    "=== Awareness ===",
+                    "In the US, July is widely recognized as Sarcoma Awareness Month.[37] The UK has a Sarcoma Awareness Week in July led by Sarcoma UK, the bone and soft-tissue cancer charity.[38]",
+                    "American YouTuber Technoblade was diagnosed with sarcoma in August 2021, and died from his illness in June 2022 after the sarcoma metastasized. He had raised over $500,000 in a charity stream. Many YouTubers have raised awareness and donated to charities such as the Sarcoma Foundation of America after Technoblade's diagnosis and passing. To date, Technoblade's fans have raised over $1,000,000 for sarcoma research.[39]",
+                    "TikTok has provided a voice for many creators to chronicle their experiences with sarcoma. \"Dance You Outta My Head\", by American singer Cat Janice, went viral on TikTok in early 2024 before the singer died of sarcoma, prompting awareness of this rare disease.[40]",
+                    "Kimberley Nix, a Canadian physician, chronicled her journey with undifferentiated pleomorphic sarcoma, from her diagnosis to eventual death, on TikTok under the username @cancerpatientmd.[41] Nix died on 8 May 2024 at the age of 31, and her death was announced in a video uploaded posthumously to her TikTok page.[42] In many of her videos, she links viewers to her Own.Cancer fundraiser, which has raised almost $118,000 CAD as of 17 May 2024.[43]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Yang J, Ren Z, Du X, Hao M, Zhou W (27 October 2014). \"The role of mesenchymal stem/progenitor cells in sarcoma: update and dispute\". Stem Cell Investigation. 1: 18. doi:10.3978/j.issn.2306-9759.2014.10.01. PMC 4923508. PMID 27358864.",
+                    "<info> ^ a b c d e f g h i j k l m n o p q r s Tobias J (2015). Cancer and its Management (Seventh ed.). Chichester, West Sussex, PO198SQ, UK: John Wiley & Sons, Ltd. p. 446. ISBN 978-1-118-46875-3.{{cite book}}:  CS1 maint: location (link)",
+                    "<info> ^ a b c d e f g h i j k l m n o p q r s t u v w x y z aa ab ac ad ae af ag ah ai aj DeVita Jr V (2015). DeVita, Hellman and Rosenberg's Cancer: Principles & Practice of Oncology (10th ed.). Philadelphia, PA: Wolters Kluwer Health. pp. 1241–1313. ISBN 978-1-4511-9294-0.",
+                    "<info> ^ \"Defining Cancer\". National Cancer Institute. 17 September 2007. Retrieved 10 June 2014.",
+                    "<info> ^ \"Sarcoma: What it Is, Symptoms & Treatment\". Cleveland Clinic. Archived from the original on 20 March 2025. Retrieved 13 April 2025.",
+                    "<info> ^ a b c d e f g h i j k l Amin MB (2017). AJCC Cancer Staging Manual, Eight Edition. Chicago, IL: Springer International Publishing AG Switzerland. pp. 471–548. ISBN 978-3-319-40617-6.",
+                    "<info> ^ \"Metastatic Cancer\". National Cancer Institute. 12 May 2015. Retrieved 22 March 2019.",
+                    "<info> ^ σάρκωμα, σάρξ. Liddell, Henry George; Scott, Robert; A Greek–English Lexicon at the Perseus Project.",
+                    "<info> ^ \"Definition of SARCOMA\". www.merriam-webster.com. Retrieved 22 March 2019.",
+                    "<info> ^ Harper D. \"sarcoma\". Online Etymology Dictionary.",
+                    "<info> ^ \"UpToDate\". www.uptodate.com. Retrieved 19 March 2023.",
+                    "<info> ^ a b Unni K (2010). Dahlin's Bone Tumors. Philadelphia, PA: Lippincott Williams & Wilkins. pp. 1–8. ISBN 978-0-7817-6242-7.",
+                    "<info> ^ Rastogi S, Aggarwal A, Shishak S, Barwad A, Dhamija E, Pandey R, et al. (9 August 2019). \"Discordance of Histo-pathological Diagnosis of Patients with Soft Tissue Sarcoma Referred to Tertiary Care Center\". Asian Pacific Journal of Cancer Care. 4 (4): 119–123. doi:10.31557/apjcc.2019.4.4.119-123.",
+                    "<info> ^ \"Staging\". National Cancer Institute. 9 March 2015. Retrieved 21 March 2019.",
+                    "<info> ^ a b \"Tumor Grade\". National Cancer Institute. 9 May 2013. Retrieved 21 March 2019.",
+                    "<info> ^ a b c Buecker P (2005). \"Sarcoma: A Diagnosis of Patience\". ESUN. 2 (5). Archived from the original on 4 December 2020. Retrieved 15 April 2009.",
+                    "<info> ^ Longhi A, Errani C, De Paolis M, Mercuri M, Bacci G (October 2006). \"Primary bone osteosarcoma in the pediatric age: state of the art\". Cancer Treatment Reviews. 32 (6): 423–436. doi:10.1016/j.ctrv.2006.05.005. PMID 16860938.",
+                    "<info> ^ a b \"Published Recommendations - US Preventive Services Task Force\". www.uspreventiveservicestaskforce.org. Retrieved 20 March 2019.",
+                    "<info> ^ a b \"Cancer Screening Guidelines | Detecting Cancer Early\". www.cancer.org. Retrieved 20 March 2019.",
+                    "<info> ^ a b Morris C (2005). \"Malignant Fibrous Histiocytoma (MFH)\". ESUN. 2 (2). Archived from the original on 11 November 2012. Retrieved 19 October 2011.",
+                    "<info> ^ a b c Remiszewski P, Filipek K, Pisklak A, Chmiel P, Rutkowski P, Czarnecka AM (1 May 2025). \"Neoadjuvant or Adjuvant Chemotherapy in Soft-Tissue Sarcoma?\". Current Oncology Reports. 27 (5): 491–515. doi:10.1007/s11912-024-01630-6. ISSN 1534-6269. PMID 40153167.",
+                    "<info> ^ Baker L (2006). \"A Rose is a Rose or a Thorn is a Thorn\". ESUN. 3 (5). Archived from the original on 19 January 2013. Retrieved 19 October 2011.",
+                    "<info> ^ Liposarcoma Treatment & Management~treatment at eMedicine",
+                    "<info> ^ \"Rhabdomyosarcoma\". Boston Children's Hospital. Archived from the original on 23 May 2011. Retrieved 2 March 2010.",
+                    "<info> ^ Wexler L (2004). \"Rhabdomyosarcoma\". ESUN. 1 (4). Archived from the original on 27 October 2012. Retrieved 19 October 2011.",
+                    "<info> ^ Osteosarcoma Treatment & Management~treatment at eMedicine",
+                    "<info> ^ Peinemann F, Enk H, Smith LA (April 2017). \"Autologous hematopoietic stem cell transplantation following high-dose chemotherapy for nonrhabdomyosarcoma soft tissue sarcomas\". The Cochrane Database of Systematic Reviews. 4 (7) CD008216. doi:10.1002/14651858.cd008216.pub5. PMC 6478255. PMID 28407197.",
+                    "<info> ^ a b c d \"Bone and Joint Cancer - Cancer Stat Facts\". SEER. Retrieved 27 March 2019.",
+                    "<info> ^ a b c d Siegel RL, Miller KD, Wagle NS, Jemal A (2023). \"Cancer statistics, 2023\". CA: A Cancer Journal for Clinicians. 73 (1): 17–48. doi:10.3322/caac.21763. ISSN 1542-4863. PMID 36633525.",
+                    "<info> ^ a b c \"Soft Tissue Cancer - Cancer Stat Facts\". SEER. Retrieved 27 March 2019.",
+                    "<info> ^ Darling J (2007). \"A Different View of Sarcoma Statistics\". ESUN. 4 (6). Archived from the original on 25 July 2013. Retrieved 6 October 2012.",
+                    "<info> ^ Willingham AJ (28 July 2016). \"Scientists find cancer in million-year-old fossil\". CNN. Retrieved 27 March 2019.",
+                    "<info> ^ Randolph-Quinney PS, Williams SA, Steyn M, Meyer MR, Smilg JS, Churchill SE, et al. (2016). \"Osteogenic tumour in Australopithecus sediba: Earliest hominin evidence for neoplastic disease\". South African Journal of Science. 112 (7/8): 7. doi:10.17159/sajs.2016/20150470.",
+                    "<info> ^ a b Thanindratarn P, Dean DC, Nelson SD, Hornicek FJ, Duan Z (April 2019). \"Advances in immune checkpoint inhibitors for bone sarcoma therapy\". Journal of Bone Oncology. 15 100221. doi:10.1016/j.jbo.2019.100221. PMC 6365405. PMID 30775238.",
+                    "<info> ^ Chen AP, Sharon E, O'Sullivan-Coyne G, Moore N, Foster JC, Hu JS, et al. (7 September 2023). \"Atezolizumab for Advanced Alveolar Soft Part Sarcoma\". The New England Journal of Medicine. 389 (10): 911–921. doi:10.1056/NEJMoa2303383. ISSN 1533-4406. PMC 10729808. PMID 37672694.",
+                    "<info> ^ Remiszewski P, Siedlecki E, Wełniak-Kamińska M, Mikula M, Czarnecka A (10 January 2026). \"Choosing the right animal model for sarcoma research\". Cellular and Molecular Life Sciences. doi:10.1007/s00018-025-06013-z. ISSN 1420-9071.",
+                    "<info> ^ \"Cancer Awareness Dates\". American Society of Clinical Oncology. 19 December 2013.",
+                    "<info> ^ \"Sarcoma Awareness Week 2018\". Sarcoma UK. 25 January 2016. Archived from the original on 22 June 2018. Retrieved 13 April 2018.",
+                    "<info> ^ Saunders C (1 July 2022). \"Technoblade Tribute\". Sarcoma Foundation of America. Retrieved 10 November 2022.",
+                    "<info> ^ \"Singer Cat Janice, who went viral after dedicating her last song to her young son, dies\". NBC News. 29 February 2024. Retrieved 17 May 2024.",
+                    "<info> ^ \"TikTok star Kimberley Nix announces own death in farewell video\". 10 May 2024. Retrieved 17 May 2024.",
+                    "<info> ^ \"Obituary of Kimberley Marie Nix | McInnis & Holloway, Park Memorial\". mhfh.com. Retrieved 17 May 2024.",
+                    "<info> ^ \"OWNP2P\". donate.owncancer.ca. Retrieved 17 May 2024.",
+                    "",
+                    "=== External links ===",
+                    "<info> Bone sarcoma at the National Cancer Institute",
+                    "<info> What is Sarcoma? Archived 5 August 2021 at the Wayback Machine",
+                    "<info> Sarcoma Help from the Liddy Shriver Sarcoma Initiative",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A sarcoma is a rare type of cancer that arises from cells of mesenchymal origin.[1][2] Originating from mesenchymal cells means that sarcomas are cancers of connective tissues such as bone, cartilage, muscle, fat, or vascular tissues.[2][3]",
+                            "Sarcomas are one of five different types of cancer, classified by the cell type from which they originate.[4] While there are five types under this category, sarcomas are most frequently contrasted with carcinomas which are much more common. Sarcomas are quite rare, making up about 1% of all adult cancer diagnoses and 15% of childhood cancer diagnoses.[5]",
+                            "There are many subtypes of sarcoma, which are classified based on the specific tissue and type of cell from which the tumor originates.[6] Common examples of sarcoma include liposarcoma, leiomyosarcoma, and osteosarcoma. Sarcomas are primary connective tissue tumors, meaning that they arise in connective tissues.[2] This is in contrast to secondary (or \"metastatic\") connective tissue tumors, which occur when a cancer from elsewhere in the body (such as the lungs, breast tissue or prostate) spreads to the connective tissue.[7]",
+                            "The word sarcoma is derived from the Greek σάρκωμα sarkōma 'fleshy excrescence or substance', itself from σάρξ sarx meaning 'flesh'.[8][9][10]"
+                        ]
+                    },
+                    "Classification": {
+                        "content": [
+                            "Sarcomas are typically divided into two major groups: bone sarcomas and soft-tissue sarcomas,[2] each of which has multiple subtypes. In the United States, the American Joint Committee on Cancer (AJCC) publishes guidelines that classify the subtypes of sarcoma.[6] These subtypes are as follows:",
+                            "<info> Poorly differentiated round/spindle cell tumors (includes Ewing sarcoma)",
+                            "<info> Other:\nLiposarcoma\nLeiomyosarcoma\nMalignant peripheral nerve sheath tumor\nRhabdomyosarcoma\nSynovial sarcoma\nMalignant solitary fibrous tumor.[6]",
+                            "<info> Malignant peripheral nerve sheath tumor",
+                            "<info> Malignant solitary fibrous tumor.[6]",
+                            "<info> Liposarcoma (includes the following varieties: atypical lipomatous tumor/well-differentiated liposarcoma, dedifferentiated liposarcoma, myxoid sarcoma, pleomorphic liposarcoma, and myxoid pleomorphic liposarcoma",
+                            "<info> Dermatofibrosarcoma protuberans (includes pigmented varieties)",
+                            "<info> Malignant solitary fibrous tumor",
+                            "<info> Fibrosarcoma (includes adult and sclerosing epithelioid varieties)",
+                            "<info> Myxofibrosarcoma (formerly myxoid malignant fibrous histiocytoma)",
+                            "<info> Giant cell tumor of soft tissues",
+                            "<info> Rhabdomyosarcoma (includes the following varieties: embryonal, alveolar, pleomorphic, and spindle cell/sclerosing)",
+                            "<info> Hemangioendothelioma (includes the following varieties: retiform, pseudomyogenic, and epithelioid)",
+                            "<info> Angiosarcoma of soft tissue",
+                            "<info> Gastrointestinal stromal tumor, malignant (GIST)",
+                            "<info> Malignant peripheral nerve sheath tumor (includes epithelioid variety)",
+                            "<info> Malignant granular cell tumor",
+                            "<info> Malignant ossifying fibromyxoid tumor",
+                            "<info> Stromal sarcoma not otherwise specified",
+                            "<info> Malignant phosphaturic mesenchymal tumor",
+                            "<info> Synovial sarcoma (includes the following varieties: spindle cell, biphasic, and not otherwise specified)",
+                            "<info> Alveolar soft part sarcoma",
+                            "<info> Clear cell sarcoma of soft tissue",
+                            "<info> Interdigitating dendritic cell sarcoma",
+                            "<info> Desmoplastic small round cell tumor",
+                            "<info> Perivascular epithelioid cell tumor, not otherwise specified",
+                            "<info> Undifferentiated spindle cell sarcoma",
+                            "<info> Undifferentiated round cell sarcoma",
+                            "<info> Undifferentiated sarcoma, not otherwise specified.[6]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Symptoms of bone sarcomas typically include bone pain, especially at night, and swelling around the site of the tumor.[2]",
+                            "Symptoms of soft-tissue sarcomas vary, but they often present as firm, oftentimes painless lumps or nodules.[2] Gastrointestinal stromal tumors (GIST, a subtype of soft-tissue sarcoma) often are asymptomatic, but can be associated with vague complaints of abdominal pain, bleeding into the intestines, a feeling of fullness, or other signs of intestinal obstruction.[2]"
+                        ]
+                    },
+                    "Cause": {
+                        "content": [
+                            "The cause of most bone sarcomas is not known,[3] but several factors are associated with an increased risk of developing bone sarcoma. Previous exposure to ionizing radiation (such as prior radiation therapy) is one such risk factor.[2] Therapeutic radiation is associated with sarcoma after 10 to 20 years.[11] Exposure to alkylating agents, such as those found in certain cancer chemotherapeutic medicines, also increases the risk of bone sarcoma.[3] Certain inherited genetic syndromes, including Li-Fraumeni syndrome, inherited RB1 gene mutations, and Paget's disease of bone are associated with an increased risk of developing bone sarcomas.[2]",
+                            "Most soft-tissue sarcomas arise from what doctors call \"sporadic\" (or random) genetic mutations within an affected person's cells.[3] Nevertheless, there are certain risk factors associated with an increased risk of developing soft-tissue sarcoma. Previous exposure to ionizing radiation is one such risk factor.[2] Exposure to vinyl chloride (e.g., such as the fumes encountered in the production of polyvinyl chloride (PVC)), arsenic and Thorotrast all are associated with an increased risk of angiosarcoma.[2][3]  Lymphedema, such as that resulting from certain types of breast cancer treatment, also is a risk factor for development of angiosarcoma.[3] As with bone sarcomas, certain inherited genetic syndromes also are associated with an increased risk of developing soft-tissue sarcoma, including Li-Fraumeni syndrome, familial adenomatous polyposis, neurofibromatosis type 1, and heritable RB1 gene mutations.[3] Kaposi sarcoma is caused by Kaposi sarcoma-associated herpesvirus (HHV-8)."
+                        ]
+                    },
+                    "Mechanisms": {
+                        "content": [
+                            "The mechanisms by which healthy cells transform into cancer cells are described in detail elsewhere (see Cancer main page; Carcinogenesis main page). The precise molecular changes that result in sarcoma are not always known, but certain types of sarcomas are associated with particular genetic mutations.[2][3] Examples include:",
+                            "<info> Most cases of Ewing sarcoma are associated with a chromosomal translocation in which part of chromosome 11 fuses with part of chromosome 22.[2] This results in the EWSR1 gene becoming fused to other genes, including the FLI1 gene in 90% of Ewing cases and ERG gene in 5-10% of cases.[2] These fusions result in the production of abnormal proteins, although how these abnormal proteins result in cancer is not fully known.[2]",
+                            "<info> Dermatofibrosarcoma protuberans often is associated with a chromosomal translocation in which the COL1A1 gene becomes fused to the PDGFRB gene.[3] This results in over-active PDGF signaling, which is thought to promote cell division and ultimately lead to tumor development.[3]",
+                            "<info> Inflammatory myofibroblastic tumor often is associated with rearrangements of the ALK gene, and occasionally with rearrangements of the HMGA2 gene.[3]",
+                            "<info> Tenosynovial giant cell tumor (not a sarcoma, but a non-metastasizing and locally aggressive soft tissue tumor) frequently is associated with a chromosomal translocation between chromosome 1 and chromosome 2, in which the CSF1 gene becomes fused with the COL6A3 gene.[3] This results in increased CSF1 protein production, which is thought to play a role in cancer development.[3]",
+                            "<info> Many liposarcomas are associated with amplification of part of chromosome 12, which results in extra copies of known cancer-promoting genes (\"oncogenes\") such as the CDK4 gene, the MDM2 gene and the HMGA2 gene.[3]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "Diagnosis of bone sarcomas begins with a thorough history and physical examination which may reveal characteristic signs and symptoms (see Signs and Symptoms above).[3] Laboratory studies are not particularly useful in diagnosis, although some bone sarcomas (such as osteosarcoma) may be associated with elevated alkaline phosphatase levels, while others (such as Ewing sarcoma) can be associated with elevated erythrocyte sedimentation rate.[12] Importantly, however, none of these laboratory findings are specific to bone sarcomas, meaning that elevations in these lab values are associated with many other conditions as well as sarcoma, and thus cannot be relied upon to conclusively diagnose sarcoma.[3]",
+                            "Imaging studies are critically important in diagnosis, and most clinicians will order a plain radiograph (X-ray) initially.[3] Other imaging studies commonly used in diagnosis include magnetic resonance imaging (MRI) studies and radioisotope bone scans.[12][3] A CT scan is typically  not used in diagnosis of most types of bone sarcoma, although it is an important tool for staging (see below).[3] Definitive diagnosis requires biopsy of the tumor and careful review of the biopsy specimen by an experienced pathologist.[3]",
+                            "Diagnosis of soft-tissue sarcomas also begins with a thorough history and physical examination.[3] Imaging studies can include either CT or MRI, although CT tends to be preferred for soft-tissue sarcomas located in the thorax, abdomen, or retroperitoneum.[3] Positron emission tomography (PET) also may be useful in diagnosis, although its most common use is for staging (see below).[3] As with bone sarcomas, definitive diagnosis requires biopsy of the tumor with evaluation of histology by a trained pathologist.[3][13]",
+                            "In general, cancer staging refers to how advanced a cancer is, and usually it is based upon factors such as tumor size and whether it has spread to other parts of the body.[3][14] Staging is important because the stage affects the prognosis (likely outcome), as well as the types of treatments that are likely to be effective against the cancer.[2][6] With sarcomas, staging requires a determination of whether the tumor has grown into surrounding tissues (\"local invasion\"), as well as imaging to determine whether it has spread (a process known as \"metastasis\") to lymph nodes (forming \"nodal metastases\") or to other tissues or organs in the body (forming \"distant metastases\").[6]",
+                            "The most common imaging tools used for staging bone sarcomas are MRI or CT to evaluate the primary tumor, contrast-enhanced CT of the chest to evaluate whether the cancer has spread (i.e., metastasized) to the lungs, and radioisotope bone scan to evaluate whether the cancer has spread to other bones.[6] Staging for soft-tissue sarcomas typically includes imaging of the primary tumor by MRI or CT to determine tumor size, as well as contrast-enhanced CT of the chest to evaluate for metastatic tumors in the lungs.[6]",
+                            "Like some other cancers, sarcomas are assigned a grade (low, intermediate, or high) based on the appearance of the tumor cells under a microscope.[15] In general, grade refers to how aggressive the cancer is and how likely it is to spread to other parts of the body (\"metastasize\").[15] Low-grade sarcomas have a better prognosis than higher-grade sarcomas, and are usually treated surgically, although sometimes radiation therapy or chemotherapy are used.[3][6] Intermediate- and high-grade sarcomas are more frequently treated with a combination of surgery, chemotherapy, or radiation therapy.[16] Since high-grade tumors are more likely to undergo metastasis (invasion and spread to locoregional and distant sites), they are treated more aggressively. The recognition that many sarcomas are sensitive to chemotherapy has dramatically improved the survival of patients. For example, in the era before chemotherapy, long-term survival for pediatric patients with localized osteosarcoma was only about 20%, but now has risen to 60–70%.[17]"
+                        ]
+                    },
+                    "Screening": {
+                        "content": [
+                            "In the US, the US Preventive Services Task Force (USPSTF) publishes guidelines recommending preventive screening for certain types of common cancers and other diseases.[18] As of March 2019[update], the USPSTF does not recommend screening for sarcoma,[18] possibly because it is a very rare type of cancer (see Epidemiology below).",
+                            "The American Cancer Society (ACS) also publishes guidelines recommending preventive screening for certain types of common cancers.[19] Like the USPSTF, as of March 2019[update] ACS does not recommend preventive screening for sarcoma.[19]",
+                            "However, patients with some inherited conditions, such as neurofibromatosis, may benefit from screening for development of cancers from pre-existing benign tumors called neurofibromas."
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Surgery is the most common form of the treatment for most sarcomas that have not spread to other parts of the body, and for most sarcomas, surgery is the only curative treatment.[3][20] Limb-sparing surgery, as opposed to amputation, can now be used to save the limbs of patients in at least 90% of extremity (arm or leg) sarcoma cases.[20] Additional treatments, including chemotherapy, radiation therapy (also called \"radiotherapy\"), which includes proton therapy, may be administered before surgery (called \"neoadjuvant\" chemotherapy or radiotherapy) or after surgery (called \"adjuvant\" chemotherapy or radiotherapy).[21][3][16] The use of neoadjuvant or adjuvant chemotherapy and radiotherapy significantly improves the prognosis for many sarcoma patients[21].[3][22] Treatment can be a long and arduous process, lasting about a year for many patients.[16]",
+                            "<info> Liposarcoma treatment usually consists of surgical resection, with chemotherapy considered depending on the aggressiveness of the sarcoma. Radiotherapy may also be used before or after surgical excision for liposarcoma.[23]",
+                            "<info> Pediatric rhabdomyosarcoma is usually treated with chemotherapy, surgery, and sometimes radiotherapy.[24] Pediatric rhabdomyosarcoma patients have a 50–85% long term survival rate.[25]",
+                            "<info> Osteosarcoma is a cancer of the bone that is treated with surgical resection of as much of the cancer as possible, often along with chemotherapy.[26] Radiotherapy is a second alternative to surgery, although not as successful.",
+                            "It was believed that higher doses of chemotherapy might improve survival.[21] However, high doses of chemotherapy stop the production of blood cells in the bone marrow and can be harmful. Stem cells collected from people before high‐dose chemotherapy can be transplanted back to the person if the blood cell count gets too low; this is called autologous hematopoietic stem cell transplantation, or high dose therapy with stem cell rescue. Research to investigate if using high‐dose chemotherapy followed by autologous hematopoietic stem cell transplantation was more favourable than standard‐dose chemotherapy[27] found only one RCT and this did not favour either of the two treatment arms with respect to overall survival. As a result, high dose chemotherapy with stem cell rescue is generally considered appropriate only in the research setting."
+                        ]
+                    },
+                    "Prognosis": {
+                        "content": [
+                            "The AJCC has identified several factors that affect prognosis of bone sarcomas:[6]",
+                            "<info> Size of the tumor: larger tumors tend to have a worse prognosis compared to smaller tumors.",
+                            "<info> Spread of tumor to surrounding tissues: tumors that have spread locally to surrounding tissues tend to have a worse prognosis compared to tumors that have not spread beyond their place of origin.",
+                            "<info> Stage and presence of metastases: tumors that have spread (\"metastasized\") to the lymph nodes (which is rare for bone sarcomas) or other organs or tissues (for example, to the lungs) have a worse prognosis compared to tumors that have not metastasized.",
+                            "<info> Tumor grade: higher grade tumors (grades 2 and 3) tend to have a worse prognosis compared to low grade (grade 1) tumors.",
+                            "<info> Skeletal location: tumors originating in the spine or pelvic bones tend to have a worse prognosis compared to tumors originating in arm or leg bones.",
+                            "For soft-tissue sarcomas other than GISTs, factors that affect prognosis include:[6]",
+                            "<info> Stage: as with bone sarcomas, tumors that have metastasized have a worse prognosis compared to tumors that have not metastasized.",
+                            "<info> Grade: the AJCC recommends using a grading system called the French Federation of Cancer Centers Sarcoma Group (FNCLCC) Grade for soft-tissue sarcomas, with high-grade tumors having a worse prognosis compared to low-grade tumors.",
+                            "For GISTs, the key factor that affects prognosis is:[6]",
+                            "<info> Mitotic rate: mitotic rate refers to the fraction of cells that are actively dividing within the tumor; GISTs that have a high mitotic rate have a worse prognosis compared to GISTs that have a low mitotic rate.",
+                            "According to data published by the US National Cancer Institute (NCI), the overall 5-year survival for bone sarcomas is 66.9%.[28] The American Cancer Society (ACS) estimates that 2,140 people in the US will die in 2023 from bone sarcomas, accounting for 0.3% of all cancer deaths.[29] The median age at death is 61 years old, although death can occur in any age group.[28] Thus, 12.3% of bone sarcoma deaths occur in people under 20 years old, 13.8% occur in people 20–34 years old, 5.5% occur in people 35–44 years old, 9.3% occur in people 45–54 years old, 13.5% occur in people 55–64 years old, 16.2% occur in people 65–74 years old, 16.4% occur in people 75–84 years old, and 13.1% occur in people 85 years or older.[28]",
+                            "For soft-tissue sarcomas, the overall 5-year survival (irrespective of stage) is 64.5%, but survival is affected by many factors, including stage.[30] Thus, the 5-year survival is 80.8% for soft-tissue sarcomas that have not spread beyond the primary tumor (\"localized\" tumors), 58.0% for soft-tissue sarcomas that have spread only to nearby lymph nodes, and 16.4% for soft-tissue sarcomas that have spread to distant organs.[30] The ACS estimates that 5,140 people will die from soft-tissue sarcoma in 2023, accounting for 0.9% of all cancer deaths.[29]"
+                        ]
+                    },
+                    "Epidemiology": {
+                        "content": [
+                            "Sarcomas are rare cancers.[2] The risk of a previously healthy person receiving a new diagnosis of bone cancer is less than 0.001%, while the risk of receiving a new diagnosis of soft-tissue sarcoma is between 0.0014 and 0.005%.[3] The American Cancer Society estimates that in the United States there will be 3,970 new cases of bone sarcoma in 2023, and 13,400 new cases of soft-tissue sarcoma.[29] Considering that the total estimated number of new cancer diagnoses (all types of cancer) is 1,958,310, this means bone sarcomas represent only 0.2% of all new cancer diagnoses (making them the 30th most common type of cancer[28]) and soft-tissue sarcomas represent only 0.7% (making them the 22nd most common type of cancer[30]) of all new cancer diagnoses in the US in 2023.[29] These estimates are similar to previously reported data.[3]",
+                            "Sarcomas affect people of all ages. Around 50% of bone sarcomas and 20% of soft-tissue sarcomas are diagnosed in people under the age of 35.[31] Some sarcomas, such as leiomyosarcoma, chondrosarcoma, and gastrointestinal stromal tumor (GIST), are more common in adults than in children.[2] Most high-grade bone sarcomas, including Ewing sarcoma and osteosarcoma, are much more common in children and young adults.[2]"
+                        ]
+                    },
+                    "In fossils": {
+                        "content": [
+                            "In 2016, scientists reported the discovery of an osteosarcoma tumor in a 1.6–1.8 million-year-old fossil from the skeleton of the now-extinct hominin species Australopithecus sediba, making it the earliest-known case of human cancer.[32][33]"
+                        ]
+                    },
+                    "Research": {
+                        "content": [
+                            "Treatment of sarcoma, especially when the sarcoma has spread, or \"metastasized\", often requires chemotherapy. However, existing chemotherapeutic medicines are associated with significant toxicities and are not highly effective in killing cancer cells.[3] Therefore, research to identify new medications to treat sarcoma is being conducted as of 2019[update].[3] One new type of therapy still under investigation is the use of cancer immunotherapy (e.g., immune checkpoint inhibitors like anti-PD1, anti-PDL1, and anti-CTLA4 agents) to treat sarcomas.[34] These drugs are not yet FDA- or other regulator-approved treatment, except PDL1 inhibitor atezolizumab for the ultra-rate diagnosis of alveolar soft part sarcoma.[34][35] Other strategies, such as small-molecule targeted therapy, biologic agents (e.g., small interfering RNA molecules), and nanoparticle-directed therapy, also are under active investigated.[3]",
+                            "Research to understand the specific genetic and molecular factors that cause sarcoma to develop is underway.[3] This could allow for the design of new targeted therapies and allow physicians to more accurately predict a patient's prognosis.[3] However, due to rarity of sarcomas, as well as sarcoma-specific characteristics (e.g. more common invasion via cardiovascular system), research may be particularly challenging in both clinical and preclinical models.[36]"
+                        ]
+                    },
+                    "Awareness": {
+                        "content": [
+                            "In the US, July is widely recognized as Sarcoma Awareness Month.[37] The UK has a Sarcoma Awareness Week in July led by Sarcoma UK, the bone and soft-tissue cancer charity.[38]",
+                            "American YouTuber Technoblade was diagnosed with sarcoma in August 2021, and died from his illness in June 2022 after the sarcoma metastasized. He had raised over $500,000 in a charity stream. Many YouTubers have raised awareness and donated to charities such as the Sarcoma Foundation of America after Technoblade's diagnosis and passing. To date, Technoblade's fans have raised over $1,000,000 for sarcoma research.[39]",
+                            "TikTok has provided a voice for many creators to chronicle their experiences with sarcoma. \"Dance You Outta My Head\", by American singer Cat Janice, went viral on TikTok in early 2024 before the singer died of sarcoma, prompting awareness of this rare disease.[40]",
+                            "Kimberley Nix, a Canadian physician, chronicled her journey with undifferentiated pleomorphic sarcoma, from her diagnosis to eventual death, on TikTok under the username @cancerpatientmd.[41] Nix died on 8 May 2024 at the age of 31, and her death was announced in a video uploaded posthumously to her TikTok page.[42] In many of her videos, she links viewers to her Own.Cancer fundraiser, which has raised almost $118,000 CAD as of 17 May 2024.[43]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Yang J, Ren Z, Du X, Hao M, Zhou W (27 October 2014). \"The role of mesenchymal stem/progenitor cells in sarcoma: update and dispute\". Stem Cell Investigation. 1: 18. doi:10.3978/j.issn.2306-9759.2014.10.01. PMC 4923508. PMID 27358864.",
+                            "<info> ^ a b c d e f g h i j k l m n o p q r s Tobias J (2015). Cancer and its Management (Seventh ed.). Chichester, West Sussex, PO198SQ, UK: John Wiley & Sons, Ltd. p. 446. ISBN 978-1-118-46875-3.{{cite book}}:  CS1 maint: location (link)",
+                            "<info> ^ a b c d e f g h i j k l m n o p q r s t u v w x y z aa ab ac ad ae af ag ah ai aj DeVita Jr V (2015). DeVita, Hellman and Rosenberg's Cancer: Principles & Practice of Oncology (10th ed.). Philadelphia, PA: Wolters Kluwer Health. pp. 1241–1313. ISBN 978-1-4511-9294-0.",
+                            "<info> ^ \"Defining Cancer\". National Cancer Institute. 17 September 2007. Retrieved 10 June 2014.",
+                            "<info> ^ \"Sarcoma: What it Is, Symptoms & Treatment\". Cleveland Clinic. Archived from the original on 20 March 2025. Retrieved 13 April 2025.",
+                            "<info> ^ a b c d e f g h i j k l Amin MB (2017). AJCC Cancer Staging Manual, Eight Edition. Chicago, IL: Springer International Publishing AG Switzerland. pp. 471–548. ISBN 978-3-319-40617-6.",
+                            "<info> ^ \"Metastatic Cancer\". National Cancer Institute. 12 May 2015. Retrieved 22 March 2019.",
+                            "<info> ^ σάρκωμα, σάρξ. Liddell, Henry George; Scott, Robert; A Greek–English Lexicon at the Perseus Project.",
+                            "<info> ^ \"Definition of SARCOMA\". www.merriam-webster.com. Retrieved 22 March 2019.",
+                            "<info> ^ Harper D. \"sarcoma\". Online Etymology Dictionary.",
+                            "<info> ^ \"UpToDate\". www.uptodate.com. Retrieved 19 March 2023.",
+                            "<info> ^ a b Unni K (2010). Dahlin's Bone Tumors. Philadelphia, PA: Lippincott Williams & Wilkins. pp. 1–8. ISBN 978-0-7817-6242-7.",
+                            "<info> ^ Rastogi S, Aggarwal A, Shishak S, Barwad A, Dhamija E, Pandey R, et al. (9 August 2019). \"Discordance of Histo-pathological Diagnosis of Patients with Soft Tissue Sarcoma Referred to Tertiary Care Center\". Asian Pacific Journal of Cancer Care. 4 (4): 119–123. doi:10.31557/apjcc.2019.4.4.119-123.",
+                            "<info> ^ \"Staging\". National Cancer Institute. 9 March 2015. Retrieved 21 March 2019.",
+                            "<info> ^ a b \"Tumor Grade\". National Cancer Institute. 9 May 2013. Retrieved 21 March 2019.",
+                            "<info> ^ a b c Buecker P (2005). \"Sarcoma: A Diagnosis of Patience\". ESUN. 2 (5). Archived from the original on 4 December 2020. Retrieved 15 April 2009.",
+                            "<info> ^ Longhi A, Errani C, De Paolis M, Mercuri M, Bacci G (October 2006). \"Primary bone osteosarcoma in the pediatric age: state of the art\". Cancer Treatment Reviews. 32 (6): 423–436. doi:10.1016/j.ctrv.2006.05.005. PMID 16860938.",
+                            "<info> ^ a b \"Published Recommendations - US Preventive Services Task Force\". www.uspreventiveservicestaskforce.org. Retrieved 20 March 2019.",
+                            "<info> ^ a b \"Cancer Screening Guidelines | Detecting Cancer Early\". www.cancer.org. Retrieved 20 March 2019.",
+                            "<info> ^ a b Morris C (2005). \"Malignant Fibrous Histiocytoma (MFH)\". ESUN. 2 (2). Archived from the original on 11 November 2012. Retrieved 19 October 2011.",
+                            "<info> ^ a b c Remiszewski P, Filipek K, Pisklak A, Chmiel P, Rutkowski P, Czarnecka AM (1 May 2025). \"Neoadjuvant or Adjuvant Chemotherapy in Soft-Tissue Sarcoma?\". Current Oncology Reports. 27 (5): 491–515. doi:10.1007/s11912-024-01630-6. ISSN 1534-6269. PMID 40153167.",
+                            "<info> ^ Baker L (2006). \"A Rose is a Rose or a Thorn is a Thorn\". ESUN. 3 (5). Archived from the original on 19 January 2013. Retrieved 19 October 2011.",
+                            "<info> ^ Liposarcoma Treatment & Management~treatment at eMedicine",
+                            "<info> ^ \"Rhabdomyosarcoma\". Boston Children's Hospital. Archived from the original on 23 May 2011. Retrieved 2 March 2010.",
+                            "<info> ^ Wexler L (2004). \"Rhabdomyosarcoma\". ESUN. 1 (4). Archived from the original on 27 October 2012. Retrieved 19 October 2011.",
+                            "<info> ^ Osteosarcoma Treatment & Management~treatment at eMedicine",
+                            "<info> ^ Peinemann F, Enk H, Smith LA (April 2017). \"Autologous hematopoietic stem cell transplantation following high-dose chemotherapy for nonrhabdomyosarcoma soft tissue sarcomas\". The Cochrane Database of Systematic Reviews. 4 (7) CD008216. doi:10.1002/14651858.cd008216.pub5. PMC 6478255. PMID 28407197.",
+                            "<info> ^ a b c d \"Bone and Joint Cancer - Cancer Stat Facts\". SEER. Retrieved 27 March 2019.",
+                            "<info> ^ a b c d Siegel RL, Miller KD, Wagle NS, Jemal A (2023). \"Cancer statistics, 2023\". CA: A Cancer Journal for Clinicians. 73 (1): 17–48. doi:10.3322/caac.21763. ISSN 1542-4863. PMID 36633525.",
+                            "<info> ^ a b c \"Soft Tissue Cancer - Cancer Stat Facts\". SEER. Retrieved 27 March 2019.",
+                            "<info> ^ Darling J (2007). \"A Different View of Sarcoma Statistics\". ESUN. 4 (6). Archived from the original on 25 July 2013. Retrieved 6 October 2012.",
+                            "<info> ^ Willingham AJ (28 July 2016). \"Scientists find cancer in million-year-old fossil\". CNN. Retrieved 27 March 2019.",
+                            "<info> ^ Randolph-Quinney PS, Williams SA, Steyn M, Meyer MR, Smilg JS, Churchill SE, et al. (2016). \"Osteogenic tumour in Australopithecus sediba: Earliest hominin evidence for neoplastic disease\". South African Journal of Science. 112 (7/8): 7. doi:10.17159/sajs.2016/20150470.",
+                            "<info> ^ a b Thanindratarn P, Dean DC, Nelson SD, Hornicek FJ, Duan Z (April 2019). \"Advances in immune checkpoint inhibitors for bone sarcoma therapy\". Journal of Bone Oncology. 15 100221. doi:10.1016/j.jbo.2019.100221. PMC 6365405. PMID 30775238.",
+                            "<info> ^ Chen AP, Sharon E, O'Sullivan-Coyne G, Moore N, Foster JC, Hu JS, et al. (7 September 2023). \"Atezolizumab for Advanced Alveolar Soft Part Sarcoma\". The New England Journal of Medicine. 389 (10): 911–921. doi:10.1056/NEJMoa2303383. ISSN 1533-4406. PMC 10729808. PMID 37672694.",
+                            "<info> ^ Remiszewski P, Siedlecki E, Wełniak-Kamińska M, Mikula M, Czarnecka A (10 January 2026). \"Choosing the right animal model for sarcoma research\". Cellular and Molecular Life Sciences. doi:10.1007/s00018-025-06013-z. ISSN 1420-9071.",
+                            "<info> ^ \"Cancer Awareness Dates\". American Society of Clinical Oncology. 19 December 2013.",
+                            "<info> ^ \"Sarcoma Awareness Week 2018\". Sarcoma UK. 25 January 2016. Archived from the original on 22 June 2018. Retrieved 13 April 2018.",
+                            "<info> ^ Saunders C (1 July 2022). \"Technoblade Tribute\". Sarcoma Foundation of America. Retrieved 10 November 2022.",
+                            "<info> ^ \"Singer Cat Janice, who went viral after dedicating her last song to her young son, dies\". NBC News. 29 February 2024. Retrieved 17 May 2024.",
+                            "<info> ^ \"TikTok star Kimberley Nix announces own death in farewell video\". 10 May 2024. Retrieved 17 May 2024.",
+                            "<info> ^ \"Obituary of Kimberley Marie Nix | McInnis & Holloway, Park Memorial\". mhfh.com. Retrieved 17 May 2024.",
+                            "<info> ^ \"OWNP2P\". donate.owncancer.ca. Retrieved 17 May 2024."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Bone sarcoma at the National Cancer Institute",
+                            "<info> What is Sarcoma? Archived 5 August 2021 at the Wayback Machine",
+                            "<info> Sarcoma Help from the Liddy Shriver Sarcoma Initiative"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

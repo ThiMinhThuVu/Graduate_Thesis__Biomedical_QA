@@ -1,0 +1,107 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/wobble_base_pair": {
+                "title": "Wobble base pair",
+                "url": "https://en.wikipedia.org/wiki/wobble_base_pair",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A wobble base pair is a pairing between two nucleotides in RNA molecules that does not follow Watson–Crick base pair rules.[1] The four main wobble base pairs are guanine–uracil (G–U), hypoxanthine–uracil (I–U), hypoxanthine–adenine (I–A), and hypoxanthine–cytosine (I–C). In order to maintain consistency of nucleic acid nomenclature, \"I\" is used for hypoxanthine because hypoxanthine is the nucleobase of inosine;[2]\nnomenclature otherwise follows the names of nucleobases and their corresponding nucleosides (e.g., \"G\" for both guanine and guanosine – as well as for deoxyguanosine). The thermodynamic stability of a wobble base pair is comparable to that of a Watson–Crick base pair. Wobble base pairs are fundamental in RNA secondary structure and are critical for the proper translation of the genetic code.",
+                    "",
+                    "=== Brief history ===",
+                    "In the genetic code, there are 43 = 64 possible codons (three-nucleotide sequences). For translation, each of these codons requires a tRNA molecule with an anticodon with which it can stably complement. If each tRNA molecule is paired with its complementary mRNA codon using canonical Watson–Crick base pairing, then 64 types of tRNA molecule would be required. In the standard genetic code, three of these 64 mRNA codons (UAA, UAG and UGA) are stop codons. These terminate translation by binding to release factors rather than tRNA molecules, so canonical pairing would require 61 species of tRNA. Since most organisms have fewer than 45 types of tRNA, ⁣[3] some tRNA types can pair with multiple, synonymous codons, all of which encode the same amino acid. In 1966, Francis Crick proposed the Wobble Hypothesis to account for this. He postulated that the 5' base on the anticodon, which binds to the 3' base on the mRNA, was not as spatially confined as the other two bases and could, thus, have non-standard base pairing.[4] Crick creatively named it for the small amount of \"play\" or wobble that occurs at this third codon position. Movement (\"wobble\") of the base in the 5' anticodon position is necessary for small conformational adjustments that affect the overall pairing geometry of anticodons of tRNA.[5][6]",
+                    "As an example, yeast tRNAPhe has the anticodon 5'-GmAA-3' and can recognize the codons 5'-UUC-3' and 5'-UUU-3'. It is, therefore, possible for non-Watson–Crick base pairing to occur at the third codon position, i.e., the 3' nucleotide of the mRNA codon and the 5' nucleotide of the tRNA anticodon.[7]",
+                    "These notions led Francis Crick to the creation of the wobble hypothesis, a set of four relationships explaining these naturally occurring attributes.",
+                    "<info> The first two bases in the codon create the coding specificity, for they form strong Watson–Crick base pairs and bond strongly to the anticodon of the tRNA.",
+                    "<info> When reading 5' to 3' the first nucleotide in the anticodon (which is on the tRNA and pairs with the last nucleotide of the codon on the mRNA) determines how many nucleotides the tRNA actually distinguishes. If the first nucleotide in the anticodon is a C or an A, pairing is specific and acknowledges original Watson–Crick pairing, that is: only one specific codon can be paired to that tRNA. If the first nucleotide is U or G, the pairing is less specific and in fact two bases can be interchangeably recognized by the tRNA. Inosine displays the true qualities of wobble, in that if that is the first nucleotide in the anticodon, any of three bases in the original codon can be matched with the tRNA.",
+                    "<info> Due to the specificity inherent in the first two nucleotides of the codon, if one amino acid is coded for by multiple anticodons and those anticodons differ in either the second or third position (first or second position in the codon) then a different tRNA is required for that anticodon.",
+                    "<info> The minimum requirement to satisfy all possible codons (61 excluding three stop codons) is 32 tRNAs. That is 31 tRNAs for the amino acids and one initiation codon.[8]",
+                    "",
+                    "=== Base pairing schemes ===",
+                    "Wobble pairing rules. Watson–Crick base pairs are shown in bold. Parentheses denote bindings that work but will be favoured less. A leading x denotes derivatives (in general) of the base that follows.",
+                    "",
+                    "=== Biological importance ===",
+                    "Aside from the necessity of wobble, that our cells have a limited amount of tRNAs and wobble allows for more flexibility, wobble base pairs have been shown to facilitate many biological functions, most clearly demonstrated in the bacterium Escherichia coli, a model organism. In fact, in a study of E. coli's tRNA for alanine there is a wobble base pair that determines whether the tRNA will be aminoacylated. When a tRNA reaches an aminoacyl tRNA synthetase, the job of the synthetase is to join the t-shaped RNA with its amino acid. These aminoacylated tRNAs go on to the translation of an mRNA transcript, and are the fundamental elements that connect to the codon of the amino acid.[1] The necessity of the wobble base pair is illustrated through experimentation where the Guanine-Uracil pairing is changed to its natural Guanine-Cytosine pairing. Oligoribonucleotides were synthesized on a Gene Assembler Plus, and then spread across a DNA sequence known to code a tRNA for alanine, 2D-NMRs are then run on the products of these new tRNAs and compared to the wobble tRNAs. The results indicate that with that wobble base pair changed, structure is also changed and an alpha helix can no longer be formed. The alpha helix was the recognizable structure for the aminoacyl tRNA synthetase and thus the synthetase does not connect the amino acid alanine with the tRNA for alanine. This wobble base pairing is essential for the use of the amino acid alanine in E. coli and its significance here would imply significance in many related species.[10] More information can be seen on aminoacyl tRNA synthetase and the genomes of E. coli tRNA at the External links, Information on Aminoacyl tRNA Synthetases and Genomic tRNA Database.",
+                    "",
+                    "=== Footnotes ===",
+                    "<info> ^ These relationships can be further observed, as well as full codons and anticodons in the correct reading frame at: SBDR (2008-04-15). \"Genetic Code and Amino Acid Translation\". Society for Biomedical Diabetes Research. Archived from the original on 2014-11-04. Retrieved 2014-09-14. For a modern view on the pairings, see doi:10.1093/nar/gkh185",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Campbell N, Reece JB (2011). Biology (9th ed.). Boston: Benjamin Cummings. pp. 339–342].",
+                    "<info> ^ Kuchin S (19 May 2011). \"Covering all the bases in genetics: simple shorthands and diagrams for teaching base pairing to biology undergraduates\". Journal of Microbiology & Biology Education. 12 (1): 64–66. doi:10.1128/jmbe.v12i1.267. PMC 3577215. PMID 23653747. The correct name of the base in inosine (which is a nucleoside) is hypoxanthine, however, for consistency with the nucleic acid nomenclature, the shorthand [I] is more appropriate...",
+                    "<info> ^ Lowe T, Chan P (18 April 2011). \"Genomic tRNA Database\". University of California, Santa Cruz. Archived from the original on 30 May 2015. Retrieved 31 October 2015.",
+                    "<info> ^ Crick FH (August 1966). \"Codon--anticodon pairing: the wobble hypothesis\". Journal of Molecular Biology. 19 (2): 548–555. CiteSeerX 10.1.1.693.2333. doi:10.1016/S0022-2836(66)80022-0. PMID 5969078.",
+                    "<info> ^ Mathews CK, Van Holde K, Appling D, Anthony-Cahill S, eds. (2012). Biochemistry (4th ed.). Toronto: Prentice Hall. p. 1181. ISBN 978-0-13-800464-4.",
+                    "<info> ^ Voet D, Voet J (2011). Biochemistry (4th ed.). Hoboken, NJ: John Wiley & Sons. pp. 1360–1361. ISBN 978-0-470-57095-1.",
+                    "<info> ^ Varani G, McClain WH (July 2000). \"The G x U wobble base pair. A fundamental building block of RNA structure crucial to RNA function in diverse biological systems\". EMBO Reports. 1 (1): 18–23. doi:10.1093/embo-reports/kvd001. PMC 1083677. PMID 11256617.",
+                    "<info> ^ Cox MM, Nelson DL (2013). \"Protein Metabolism: Wobble Allows Some tRNA's to Recognize More than One Codon\". Lehninger Principles of Biochemistry (6th ed.). New York: W.H. Freeman. pp. 1108–1110. ISBN 978-0-7167-7108-1. Retrieved 31 October 2015.",
+                    "<info> ^ Murphy FV, Ramakrishnan V (December 2004). \"Structure of a purine-purine wobble base pair in the decoding center of the ribosome\". Nature Structural & Molecular Biology. 11 (12): 1251–1252. doi:10.1038/nsmb866. PMID 15558050. S2CID 27022506.",
+                    "<info> ^ Limmer S, Reif B, Ott G, Arnold L, Sprinzl M (April 1996). \"NMR evidence for helix geometry modifications by a G-U wobble base pair in the acceptor arm of E. coli tRNA(Ala)\". FEBS Letters. 385 (1–2): 15–20. Bibcode:1996FEBSL.385...15L. doi:10.1016/0014-5793(96)00339-0. PMID 8641457.",
+                    "",
+                    "=== External links ===",
+                    "<info> tRNA, the Adaptor Hypothesis and the Wobble Hypothesis",
+                    "<info> Wobble base-pairing between codons and anticodons",
+                    "<info> Genetic Code and Amino Acid Translation",
+                    "<info> Information of Aminoacyl tRNA Synthetases",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A wobble base pair is a pairing between two nucleotides in RNA molecules that does not follow Watson–Crick base pair rules.[1] The four main wobble base pairs are guanine–uracil (G–U), hypoxanthine–uracil (I–U), hypoxanthine–adenine (I–A), and hypoxanthine–cytosine (I–C). In order to maintain consistency of nucleic acid nomenclature, \"I\" is used for hypoxanthine because hypoxanthine is the nucleobase of inosine;[2]\nnomenclature otherwise follows the names of nucleobases and their corresponding nucleosides (e.g., \"G\" for both guanine and guanosine – as well as for deoxyguanosine). The thermodynamic stability of a wobble base pair is comparable to that of a Watson–Crick base pair. Wobble base pairs are fundamental in RNA secondary structure and are critical for the proper translation of the genetic code."
+                        ]
+                    },
+                    "Brief history": {
+                        "content": [
+                            "In the genetic code, there are 43 = 64 possible codons (three-nucleotide sequences). For translation, each of these codons requires a tRNA molecule with an anticodon with which it can stably complement. If each tRNA molecule is paired with its complementary mRNA codon using canonical Watson–Crick base pairing, then 64 types of tRNA molecule would be required. In the standard genetic code, three of these 64 mRNA codons (UAA, UAG and UGA) are stop codons. These terminate translation by binding to release factors rather than tRNA molecules, so canonical pairing would require 61 species of tRNA. Since most organisms have fewer than 45 types of tRNA, ⁣[3] some tRNA types can pair with multiple, synonymous codons, all of which encode the same amino acid. In 1966, Francis Crick proposed the Wobble Hypothesis to account for this. He postulated that the 5' base on the anticodon, which binds to the 3' base on the mRNA, was not as spatially confined as the other two bases and could, thus, have non-standard base pairing.[4] Crick creatively named it for the small amount of \"play\" or wobble that occurs at this third codon position. Movement (\"wobble\") of the base in the 5' anticodon position is necessary for small conformational adjustments that affect the overall pairing geometry of anticodons of tRNA.[5][6]",
+                            "As an example, yeast tRNAPhe has the anticodon 5'-GmAA-3' and can recognize the codons 5'-UUC-3' and 5'-UUU-3'. It is, therefore, possible for non-Watson–Crick base pairing to occur at the third codon position, i.e., the 3' nucleotide of the mRNA codon and the 5' nucleotide of the tRNA anticodon.[7]",
+                            "These notions led Francis Crick to the creation of the wobble hypothesis, a set of four relationships explaining these naturally occurring attributes.",
+                            "<info> The first two bases in the codon create the coding specificity, for they form strong Watson–Crick base pairs and bond strongly to the anticodon of the tRNA.",
+                            "<info> When reading 5' to 3' the first nucleotide in the anticodon (which is on the tRNA and pairs with the last nucleotide of the codon on the mRNA) determines how many nucleotides the tRNA actually distinguishes. If the first nucleotide in the anticodon is a C or an A, pairing is specific and acknowledges original Watson–Crick pairing, that is: only one specific codon can be paired to that tRNA. If the first nucleotide is U or G, the pairing is less specific and in fact two bases can be interchangeably recognized by the tRNA. Inosine displays the true qualities of wobble, in that if that is the first nucleotide in the anticodon, any of three bases in the original codon can be matched with the tRNA.",
+                            "<info> Due to the specificity inherent in the first two nucleotides of the codon, if one amino acid is coded for by multiple anticodons and those anticodons differ in either the second or third position (first or second position in the codon) then a different tRNA is required for that anticodon.",
+                            "<info> The minimum requirement to satisfy all possible codons (61 excluding three stop codons) is 32 tRNAs. That is 31 tRNAs for the amino acids and one initiation codon.[8]"
+                        ]
+                    },
+                    "Base pairing schemes": {
+                        "content": [
+                            "Wobble pairing rules. Watson–Crick base pairs are shown in bold. Parentheses denote bindings that work but will be favoured less. A leading x denotes derivatives (in general) of the base that follows."
+                        ]
+                    },
+                    "Biological importance": {
+                        "content": [
+                            "Aside from the necessity of wobble, that our cells have a limited amount of tRNAs and wobble allows for more flexibility, wobble base pairs have been shown to facilitate many biological functions, most clearly demonstrated in the bacterium Escherichia coli, a model organism. In fact, in a study of E. coli's tRNA for alanine there is a wobble base pair that determines whether the tRNA will be aminoacylated. When a tRNA reaches an aminoacyl tRNA synthetase, the job of the synthetase is to join the t-shaped RNA with its amino acid. These aminoacylated tRNAs go on to the translation of an mRNA transcript, and are the fundamental elements that connect to the codon of the amino acid.[1] The necessity of the wobble base pair is illustrated through experimentation where the Guanine-Uracil pairing is changed to its natural Guanine-Cytosine pairing. Oligoribonucleotides were synthesized on a Gene Assembler Plus, and then spread across a DNA sequence known to code a tRNA for alanine, 2D-NMRs are then run on the products of these new tRNAs and compared to the wobble tRNAs. The results indicate that with that wobble base pair changed, structure is also changed and an alpha helix can no longer be formed. The alpha helix was the recognizable structure for the aminoacyl tRNA synthetase and thus the synthetase does not connect the amino acid alanine with the tRNA for alanine. This wobble base pairing is essential for the use of the amino acid alanine in E. coli and its significance here would imply significance in many related species.[10] More information can be seen on aminoacyl tRNA synthetase and the genomes of E. coli tRNA at the External links, Information on Aminoacyl tRNA Synthetases and Genomic tRNA Database."
+                        ]
+                    },
+                    "Footnotes": {
+                        "content": [
+                            "<info> ^ These relationships can be further observed, as well as full codons and anticodons in the correct reading frame at: SBDR (2008-04-15). \"Genetic Code and Amino Acid Translation\". Society for Biomedical Diabetes Research. Archived from the original on 2014-11-04. Retrieved 2014-09-14. For a modern view on the pairings, see doi:10.1093/nar/gkh185"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Campbell N, Reece JB (2011). Biology (9th ed.). Boston: Benjamin Cummings. pp. 339–342].",
+                            "<info> ^ Kuchin S (19 May 2011). \"Covering all the bases in genetics: simple shorthands and diagrams for teaching base pairing to biology undergraduates\". Journal of Microbiology & Biology Education. 12 (1): 64–66. doi:10.1128/jmbe.v12i1.267. PMC 3577215. PMID 23653747. The correct name of the base in inosine (which is a nucleoside) is hypoxanthine, however, for consistency with the nucleic acid nomenclature, the shorthand [I] is more appropriate...",
+                            "<info> ^ Lowe T, Chan P (18 April 2011). \"Genomic tRNA Database\". University of California, Santa Cruz. Archived from the original on 30 May 2015. Retrieved 31 October 2015.",
+                            "<info> ^ Crick FH (August 1966). \"Codon--anticodon pairing: the wobble hypothesis\". Journal of Molecular Biology. 19 (2): 548–555. CiteSeerX 10.1.1.693.2333. doi:10.1016/S0022-2836(66)80022-0. PMID 5969078.",
+                            "<info> ^ Mathews CK, Van Holde K, Appling D, Anthony-Cahill S, eds. (2012). Biochemistry (4th ed.). Toronto: Prentice Hall. p. 1181. ISBN 978-0-13-800464-4.",
+                            "<info> ^ Voet D, Voet J (2011). Biochemistry (4th ed.). Hoboken, NJ: John Wiley & Sons. pp. 1360–1361. ISBN 978-0-470-57095-1.",
+                            "<info> ^ Varani G, McClain WH (July 2000). \"The G x U wobble base pair. A fundamental building block of RNA structure crucial to RNA function in diverse biological systems\". EMBO Reports. 1 (1): 18–23. doi:10.1093/embo-reports/kvd001. PMC 1083677. PMID 11256617.",
+                            "<info> ^ Cox MM, Nelson DL (2013). \"Protein Metabolism: Wobble Allows Some tRNA's to Recognize More than One Codon\". Lehninger Principles of Biochemistry (6th ed.). New York: W.H. Freeman. pp. 1108–1110. ISBN 978-0-7167-7108-1. Retrieved 31 October 2015.",
+                            "<info> ^ Murphy FV, Ramakrishnan V (December 2004). \"Structure of a purine-purine wobble base pair in the decoding center of the ribosome\". Nature Structural & Molecular Biology. 11 (12): 1251–1252. doi:10.1038/nsmb866. PMID 15558050. S2CID 27022506.",
+                            "<info> ^ Limmer S, Reif B, Ott G, Arnold L, Sprinzl M (April 1996). \"NMR evidence for helix geometry modifications by a G-U wobble base pair in the acceptor arm of E. coli tRNA(Ala)\". FEBS Letters. 385 (1–2): 15–20. Bibcode:1996FEBSL.385...15L. doi:10.1016/0014-5793(96)00339-0. PMID 8641457."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> tRNA, the Adaptor Hypothesis and the Wobble Hypothesis",
+                            "<info> Wobble base-pairing between codons and anticodons",
+                            "<info> Genetic Code and Amino Acid Translation",
+                            "<info> Information of Aminoacyl tRNA Synthetases"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

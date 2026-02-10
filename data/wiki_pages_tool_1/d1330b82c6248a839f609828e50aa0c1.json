@@ -1,0 +1,85 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_congenital_disorders": {
+                "title": "List of congenital disorders",
+                "url": "https://en.wikipedia.org/wiki/list_of_congenital_disorders",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "List of congenital disorders",
+                    "",
+                    "=== Numerical ===",
+                    "<info> 47,XXY - see Klinefelter syndrome",
+                    "<info> 5p syndrome - see Cri du chat syndrome",
+                    "",
+                    "=== A ===",
+                    "<info> Acrocephalosyndactyly\nApert syndrome\nCrouzon syndrome\nPfeiffer syndrome",
+                    "<info> Agenesis of the corpus callosum",
+                    "",
+                    "=== C ===",
+                    "<info> Congenital adrenal hyperplasia (CAH)",
+                    "<info> Congenital central hypoventilation syndrome",
+                    "<info> Congenital diaphragmatic hernia (CDH)",
+                    "<info> Congenital Disorder of Glycosylation (CDG)",
+                    "<info> Congenital insensitivity to pain with anhidrosis (CIPA)",
+                    "<info> Congenital pulmonary airway malformation (CPAM)",
+                    "<info> Cri du chat syndrome",
+                    "",
+                    "=== H ===",
+                    "<info> Heart disorders (Congenital heart defects)",
+                    "<info> Hirschsprung's disease, or congenital aganglionic megacolon",
+                    "<info> Hypomelanism or hypomelanosis (albinism)",
+                    "",
+                    "=== See also ===",
+                    "<info> List of genetic disorders",
+                    "<info> List of ICD-9 codes 740–759: congenital anomalies",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "List of congenital disorders"
+                        ]
+                    },
+                    "Numerical": {
+                        "content": [
+                            "<info> 47,XXY - see Klinefelter syndrome",
+                            "<info> 5p syndrome - see Cri du chat syndrome"
+                        ]
+                    },
+                    "A": {
+                        "content": [
+                            "<info> Acrocephalosyndactyly\nApert syndrome\nCrouzon syndrome\nPfeiffer syndrome",
+                            "<info> Agenesis of the corpus callosum"
+                        ]
+                    },
+                    "C": {
+                        "content": [
+                            "<info> Congenital adrenal hyperplasia (CAH)",
+                            "<info> Congenital central hypoventilation syndrome",
+                            "<info> Congenital diaphragmatic hernia (CDH)",
+                            "<info> Congenital Disorder of Glycosylation (CDG)",
+                            "<info> Congenital insensitivity to pain with anhidrosis (CIPA)",
+                            "<info> Congenital pulmonary airway malformation (CPAM)",
+                            "<info> Cri du chat syndrome"
+                        ]
+                    },
+                    "H": {
+                        "content": [
+                            "<info> Heart disorders (Congenital heart defects)",
+                            "<info> Hirschsprung's disease, or congenital aganglionic megacolon",
+                            "<info> Hypomelanism or hypomelanosis (albinism)"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of genetic disorders",
+                            "<info> List of ICD-9 codes 740–759: congenital anomalies"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

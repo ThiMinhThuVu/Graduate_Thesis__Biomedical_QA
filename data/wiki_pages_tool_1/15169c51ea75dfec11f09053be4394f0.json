@@ -1,0 +1,109 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/hepatoblastoma": {
+                "title": "Hepatoblastoma",
+                "url": "https://en.wikipedia.org/wiki/hepatoblastoma",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Hepatoblastoma is a malignant liver cancer occurring in infants and children and composed of tissue resembling fetal liver cells, mature liver cells, or bile duct cells. They usually present with an abdominal mass.  The disease is most commonly diagnosed during a child's first three years of life.[1] Alpha-fetoprotein (AFP) levels are commonly elevated, but when AFP is not elevated at diagnosis the prognosis is poor.[2]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Patients are usually asymptomatic at diagnosis.[3] As a result, disease is often advanced at diagnosis.",
+                    "",
+                    "=== Pathophysiology ===",
+                    "Hepatoblastomas originate from immature liver precursor cells, are typically unifocal, affect the right lobe of the liver more often than the left lobe, and can metastasize. They are categorized into two types: \"Epithelial Type\" and \"Mixed Epithelial / Mesenchymal Type.\"[citation needed]",
+                    "Individuals with familial adenomatous polyposis (FAP), a syndrome of early-onset colonic polyps and adenocarcinoma, frequently develop hepatoblastomas.[5][6] Also, beta-catenin mutations have been shown to be common in sporadic hepatoblastomas, occurring in as many as 67% of patients.[7][8]",
+                    "Recently, other components of the Wnt signaling pathway have also demonstrated a likely role in constitutive activation of this pathway in the causation of hepatoblastoma.[8][9] Accumulating evidence suggests that hepatoblastoma is derived from a pluripotent stem cell.[10]",
+                    "Syndromes with an increased incidence of hepatoblastoma include Beckwith–Wiedemann syndrome, Edward Syndrome, Down Syndrome, Aicardi syndrome, Li–Fraumeni syndrome, Goldenhar syndrome, von Gierke disease, and familial adenomatous polyposis.[11]",
+                    "",
+                    "=== Diagnosis ===",
+                    "The most common method of testing for hepatoblastoma is a blood test checking the alpha-fetoprotein level. Alpha-fetoprotein (AFP) is used as a biomarker to help determine the presence of liver cancer in children. At birth, infants have relatively high levels of AFP, which fall to normal adult levels by the second year of life. The normal level for AFP in children has been reported as lower than 50 nanograms per milliliter (ng/ml) and 10 ng/ml in adults. An AFP level greater than 500 ng/ml is a significant indicator of hepatoblastoma. AFP is also used as an indicator of treatment success. If treatments are successful in removing the cancer, the AFP level is expected to return to normal.[12]",
+                    "",
+                    "=== Treatment ===",
+                    "Surgical removal of the tumor, neoadjuvant chemotherapy prior to tumor removal, and liver transplantation have been used to treat these cancers.[13][14] Primary liver transplantation provides high, long term, disease-free survival rate in the range of 80%, in cases of complete tumor removal and adjuvant chemotherapy survival rates approach 100%.[15][16] The presence of metastases is the strongest predictor of a poor prognosis.[17]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Archived copy\". Archived from the original on 2019-05-31. Retrieved 2010-09-15.{{cite web}}:  CS1 maint: archived copy as title (link)[full citation needed]",
+                    "<info> ^ De Ioris M, Brugieres L, Zimmermann A, Keeling J, Brock P, Maibach R, et al. (March 2008). \"Hepatoblastoma with a low serum alpha-fetoprotein level at diagnosis: the SIOPEL group experience\". European Journal of Cancer. 44 (4): 545–550. doi:10.1016/j.ejca.2007.11.022. PMID 18166449.",
+                    "<info> ^ Willert, Jennifer. \"Pediatric Hepatoblastoma Clinical Presentation: History, Physical, Causes\". emedicine.medscape.com.",
+                    "<info> ^ Table 37.2 in: Sternberg, Stephen (2012). Sternberg's diagnostic surgical pathology. Place of publication not identified: LWW. ISBN 978-1-4511-5289-0. OCLC 953861627.",
+                    "<info> ^ Hirschman BA, Pollock BH, Tomlinson GE (August 2005). \"The spectrum of APC mutations in children with hepatoblastoma from familial adenomatous polyposis kindreds\". The Journal of Pediatrics. 147 (2): 263–266. doi:10.1016/j.jpeds.2005.04.019. PMID 16126064.",
+                    "<info> ^ Sanders RP, Furman WL (November 2006). \"Familial adenomatous polyposis in two brothers with hepatoblastoma: implications for diagnosis and screening\". Pediatric Blood & Cancer. 47 (6): 851–854. doi:10.1002/pbc.20556. PMID 16106429. S2CID 34824663.",
+                    "<info> ^ Anna CH, Sills RC, Foley JF, Stockton PS, Ton TV, Devereux TR (June 2000). \"Beta-catenin mutations and protein accumulation in all hepatoblastomas examined from B6C3F1 mice treated with anthraquinone or oxazepam\". Cancer Research. 60 (11): 2864–2868. PMID 10850429.",
+                    "<info> ^ a b Tan X, Apte U, Micsenyi A, Kotsagrelos E, Luo JH, Ranganathan S, et al. (July 2005). \"Epidermal growth factor receptor: a novel target of the Wnt/beta-catenin pathway in liver\". Gastroenterology. 129 (1): 285–302. doi:10.1053/j.gastro.2005.04.013. PMC 1821080. PMID 16012954.",
+                    "<info> ^ Koch A, Waha A, Hartmann W, Hrychyk A, Schüller U, Waha A, et al. (June 2005). \"Elevated expression of Wnt antagonists is a common event in hepatoblastomas\". Clinical Cancer Research. 11 (12): 4295–4304. doi:10.1158/1078-0432.CCR-04-1162. PMID 15958610.",
+                    "<info> ^ Ruck P, Xiao JC (November 2002). \"Stem-like cells in hepatoblastoma\". Medical and Pediatric Oncology. 39 (5): 504–507. doi:10.1002/mpo.10175. PMID 12228907.",
+                    "<info> ^ Zimmerman A, Saxena R. Hepatoblastoma. In: WHO Classification of Tumours of the Digestive System, 4th, Bosman FT, Carneiro F, Hruban RH, Theise ND (Eds), IARC, Lyon 2010. p.229.",
+                    "<info> ^ Sarto I, Klausberger T, Ehya N, Mayer B, Fuchs K, Sieghart W (August 2002). \"A novel site on gamma 3 subunits important for assembly of GABA(A) receptors\". The Journal of Biological Chemistry. 277 (34): 30656–30664. doi:10.1074/jbc.M203597200. PMID 12065588.",
+                    "<info> ^ Ang JP, Heath JA, Donath S, Khurana S, Auldist A (February 2007). \"Treatment outcomes for hepatoblastoma: an institution's experience over two decades\". Pediatric Surgery International. 23 (2): 103–109. doi:10.1007/s00383-006-1834-1. PMID 17119981. S2CID 11332782.",
+                    "<info> ^ Otte JB, Pritchard J, Aronson DC, Brown J, Czauderna P, Maibach R, et al. (January 2004). \"Liver transplantation for hepatoblastoma: results from the International Society of Pediatric Oncology (SIOP) study SIOPEL-1 and review of the world experience\". Pediatric Blood & Cancer. 42 (1): 74–83. doi:10.1002/pbc.10376. PMID 14752798. S2CID 20741138.",
+                    "<info> ^ Pediatric Hepatoblastoma at eMedicine",
+                    "<info> ^ Otte JB, de Ville de Goyet J, Reding R (October 2005). \"Liver transplantation for hepatoblastoma: indications and contraindications in the modern era\". Pediatric Transplantation. 9 (5): 557–565. doi:10.1111/j.1399-3046.2005.00354.x. PMID 16176410. S2CID 74339.",
+                    "<info> ^ Czauderna P, Mackinlay G, Perilongo G, Brown J, Shafford E, Aronson D, et al. (June 2002). \"Hepatocellular carcinoma in children: results of the first prospective study of the International Society of Pediatric Oncology group\". Journal of Clinical Oncology. 20 (12): 2798–2804. doi:10.1200/JCO.2002.06.102. PMID 12065556. Archived from the original on 2013-04-15.",
+                    "",
+                    "=== External links ===",
+                    "<info> humpath #2775 Archived 2011-09-30 at the Wayback Machine (Pathology images)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Hepatoblastoma is a malignant liver cancer occurring in infants and children and composed of tissue resembling fetal liver cells, mature liver cells, or bile duct cells. They usually present with an abdominal mass.  The disease is most commonly diagnosed during a child's first three years of life.[1] Alpha-fetoprotein (AFP) levels are commonly elevated, but when AFP is not elevated at diagnosis the prognosis is poor.[2]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Patients are usually asymptomatic at diagnosis.[3] As a result, disease is often advanced at diagnosis."
+                        ]
+                    },
+                    "Pathophysiology": {
+                        "content": [
+                            "Hepatoblastomas originate from immature liver precursor cells, are typically unifocal, affect the right lobe of the liver more often than the left lobe, and can metastasize. They are categorized into two types: \"Epithelial Type\" and \"Mixed Epithelial / Mesenchymal Type.\"[citation needed]",
+                            "Individuals with familial adenomatous polyposis (FAP), a syndrome of early-onset colonic polyps and adenocarcinoma, frequently develop hepatoblastomas.[5][6] Also, beta-catenin mutations have been shown to be common in sporadic hepatoblastomas, occurring in as many as 67% of patients.[7][8]",
+                            "Recently, other components of the Wnt signaling pathway have also demonstrated a likely role in constitutive activation of this pathway in the causation of hepatoblastoma.[8][9] Accumulating evidence suggests that hepatoblastoma is derived from a pluripotent stem cell.[10]",
+                            "Syndromes with an increased incidence of hepatoblastoma include Beckwith–Wiedemann syndrome, Edward Syndrome, Down Syndrome, Aicardi syndrome, Li–Fraumeni syndrome, Goldenhar syndrome, von Gierke disease, and familial adenomatous polyposis.[11]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "The most common method of testing for hepatoblastoma is a blood test checking the alpha-fetoprotein level. Alpha-fetoprotein (AFP) is used as a biomarker to help determine the presence of liver cancer in children. At birth, infants have relatively high levels of AFP, which fall to normal adult levels by the second year of life. The normal level for AFP in children has been reported as lower than 50 nanograms per milliliter (ng/ml) and 10 ng/ml in adults. An AFP level greater than 500 ng/ml is a significant indicator of hepatoblastoma. AFP is also used as an indicator of treatment success. If treatments are successful in removing the cancer, the AFP level is expected to return to normal.[12]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Surgical removal of the tumor, neoadjuvant chemotherapy prior to tumor removal, and liver transplantation have been used to treat these cancers.[13][14] Primary liver transplantation provides high, long term, disease-free survival rate in the range of 80%, in cases of complete tumor removal and adjuvant chemotherapy survival rates approach 100%.[15][16] The presence of metastases is the strongest predictor of a poor prognosis.[17]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Archived copy\". Archived from the original on 2019-05-31. Retrieved 2010-09-15.{{cite web}}:  CS1 maint: archived copy as title (link)[full citation needed]",
+                            "<info> ^ De Ioris M, Brugieres L, Zimmermann A, Keeling J, Brock P, Maibach R, et al. (March 2008). \"Hepatoblastoma with a low serum alpha-fetoprotein level at diagnosis: the SIOPEL group experience\". European Journal of Cancer. 44 (4): 545–550. doi:10.1016/j.ejca.2007.11.022. PMID 18166449.",
+                            "<info> ^ Willert, Jennifer. \"Pediatric Hepatoblastoma Clinical Presentation: History, Physical, Causes\". emedicine.medscape.com.",
+                            "<info> ^ Table 37.2 in: Sternberg, Stephen (2012). Sternberg's diagnostic surgical pathology. Place of publication not identified: LWW. ISBN 978-1-4511-5289-0. OCLC 953861627.",
+                            "<info> ^ Hirschman BA, Pollock BH, Tomlinson GE (August 2005). \"The spectrum of APC mutations in children with hepatoblastoma from familial adenomatous polyposis kindreds\". The Journal of Pediatrics. 147 (2): 263–266. doi:10.1016/j.jpeds.2005.04.019. PMID 16126064.",
+                            "<info> ^ Sanders RP, Furman WL (November 2006). \"Familial adenomatous polyposis in two brothers with hepatoblastoma: implications for diagnosis and screening\". Pediatric Blood & Cancer. 47 (6): 851–854. doi:10.1002/pbc.20556. PMID 16106429. S2CID 34824663.",
+                            "<info> ^ Anna CH, Sills RC, Foley JF, Stockton PS, Ton TV, Devereux TR (June 2000). \"Beta-catenin mutations and protein accumulation in all hepatoblastomas examined from B6C3F1 mice treated with anthraquinone or oxazepam\". Cancer Research. 60 (11): 2864–2868. PMID 10850429.",
+                            "<info> ^ a b Tan X, Apte U, Micsenyi A, Kotsagrelos E, Luo JH, Ranganathan S, et al. (July 2005). \"Epidermal growth factor receptor: a novel target of the Wnt/beta-catenin pathway in liver\". Gastroenterology. 129 (1): 285–302. doi:10.1053/j.gastro.2005.04.013. PMC 1821080. PMID 16012954.",
+                            "<info> ^ Koch A, Waha A, Hartmann W, Hrychyk A, Schüller U, Waha A, et al. (June 2005). \"Elevated expression of Wnt antagonists is a common event in hepatoblastomas\". Clinical Cancer Research. 11 (12): 4295–4304. doi:10.1158/1078-0432.CCR-04-1162. PMID 15958610.",
+                            "<info> ^ Ruck P, Xiao JC (November 2002). \"Stem-like cells in hepatoblastoma\". Medical and Pediatric Oncology. 39 (5): 504–507. doi:10.1002/mpo.10175. PMID 12228907.",
+                            "<info> ^ Zimmerman A, Saxena R. Hepatoblastoma. In: WHO Classification of Tumours of the Digestive System, 4th, Bosman FT, Carneiro F, Hruban RH, Theise ND (Eds), IARC, Lyon 2010. p.229.",
+                            "<info> ^ Sarto I, Klausberger T, Ehya N, Mayer B, Fuchs K, Sieghart W (August 2002). \"A novel site on gamma 3 subunits important for assembly of GABA(A) receptors\". The Journal of Biological Chemistry. 277 (34): 30656–30664. doi:10.1074/jbc.M203597200. PMID 12065588.",
+                            "<info> ^ Ang JP, Heath JA, Donath S, Khurana S, Auldist A (February 2007). \"Treatment outcomes for hepatoblastoma: an institution's experience over two decades\". Pediatric Surgery International. 23 (2): 103–109. doi:10.1007/s00383-006-1834-1. PMID 17119981. S2CID 11332782.",
+                            "<info> ^ Otte JB, Pritchard J, Aronson DC, Brown J, Czauderna P, Maibach R, et al. (January 2004). \"Liver transplantation for hepatoblastoma: results from the International Society of Pediatric Oncology (SIOP) study SIOPEL-1 and review of the world experience\". Pediatric Blood & Cancer. 42 (1): 74–83. doi:10.1002/pbc.10376. PMID 14752798. S2CID 20741138.",
+                            "<info> ^ Pediatric Hepatoblastoma at eMedicine",
+                            "<info> ^ Otte JB, de Ville de Goyet J, Reding R (October 2005). \"Liver transplantation for hepatoblastoma: indications and contraindications in the modern era\". Pediatric Transplantation. 9 (5): 557–565. doi:10.1111/j.1399-3046.2005.00354.x. PMID 16176410. S2CID 74339.",
+                            "<info> ^ Czauderna P, Mackinlay G, Perilongo G, Brown J, Shafford E, Aronson D, et al. (June 2002). \"Hepatocellular carcinoma in children: results of the first prospective study of the International Society of Pediatric Oncology group\". Journal of Clinical Oncology. 20 (12): 2798–2804. doi:10.1200/JCO.2002.06.102. PMID 12065556. Archived from the original on 2013-04-15."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> humpath #2775 Archived 2011-09-30 at the Wayback Machine (Pathology images)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

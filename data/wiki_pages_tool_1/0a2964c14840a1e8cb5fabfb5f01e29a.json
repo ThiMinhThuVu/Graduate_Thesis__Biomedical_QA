@@ -1,0 +1,91 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/active_ingredient": {
+                "title": "Active ingredient",
+                "url": "https://en.wikipedia.org/wiki/active_ingredient",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "An active ingredient is any ingredient that provides biologically active or other direct effect in the diagnosis, cure, mitigation, treatment, or prevention of disease or to affect the structure or any function of the body of humans or animals.[1]",
+                    "The similar terms active pharmaceutical ingredient (abbreviated as API) and bulk active are also used in medicine.[2][3] The term active substance may be used to describe the effective chemical used to control bacteria or pests.[4]",
+                    "Some medication products can contain more than one active ingredient. The traditional word for the active pharmaceutical agent is pharmacon or pharmakon (from Greek: φάρμακον, adapted from pharmacos) which originally denoted a magical substance or drug.[citation needed]",
+                    "The terms active constituent or active principle are often chosen when referring to the active substance of interest in a plant (such as salicylic acid in willow bark or arecoline in areca nuts), since the word \"ingredient\" can be taken to connote a sense of human agency (that is, something that a person combines with other substances), whereas the natural products present in plants were not added by any human agency but rather occurred naturally (\"a plant doesn't have ingredients\").",
+                    "In contrast with the active ingredients, the inactive ingredients are usually called excipients in pharmaceutical contexts. The main excipient that serves as a medium for conveying the active ingredient is usually called the vehicle. For example, petrolatum and mineral oil are common vehicles. The term \"inactive\" should not, however, be misconstrued as meaning inert.[5]",
+                    "",
+                    "=== Pharmaceuticals ===",
+                    "The dosage form for a pharmaceutical contains the active pharmaceutical ingredient, which is the drug substance itself, and excipients, which are the ingredients of the tablet, or the liquid in which the active agent is suspended, or other material that is pharmaceutically inert. Drugs are chosen primarily for their active ingredients.",
+                    "Patients often have difficulty identifying the active ingredients in their medication, as well as being unaware of the notion of an active ingredient. When patients are on multiple medications, active ingredients can interfere with each other, often resulting in severe or life-threatening complications.[6]",
+                    "Many online services can help identify the active ingredient of most medications, such as the Medicines Database providing information on medications available in Australia.[7]",
+                    "",
+                    "=== Herbal medicine ===",
+                    "In phytopharmaceutical or herbal medicine, the active ingredient may be either unknown or may require cofactors in order to achieve therapeutic goals. This leads to complications in labelling. One way manufacturers have attempted to indicate strength is to engage in standardization to a marker compound. Standardization has not been achieved yet, however, with different companies using different markers, or different levels of the same markers, or different methods of testing for marker compounds. For example, St John's wort is often standardized to the hypericin that is now known not to be the \"active ingredient\" for antidepressant use.  Other companies standardize to hyperforin or both, ignoring some 24 known additional possible active constituents. Many herbalists believe that the active ingredient in a plant is the plant itself.[8]",
+                    "",
+                    "=== See also ===",
+                    "<info> Regulation of therapeutic goods",
+                    "<info> Northeast of England Process Industry Cluster",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Center for Drug Evaluation and Research (2017-11-14). \"Drugs@FDA Glossary of Terms\". FDA. Retrieved 2022-02-03.",
+                    "<info> ^ Lim, Sean (2022-11-23). \"Drug Tablet Design: Why Pills Come in So Many Shapes and Sizes\". FTLOScience. Retrieved 2023-03-05.",
+                    "<info> ^ \"§ 207.1 What definitions and interpretations of terms apply to this part?\". US Code of Federal Regulations. US Government Publishing Office. 2023-07-19. Archived from the original on 2023-07-25. Retrieved 2023-07-25. Active pharmaceutical ingredient means any substance that is intended for incorporation into a finished drug product and is intended to furnish pharmacological activity or other direct effect in the diagnosis, cure, mitigation, treatment, or prevention of disease, or to affect the structure or any function of the body. Active pharmaceutical ingredient does not include intermediates used in the synthesis of the substance.",
+                    "<info> ^ \"Glossary: Active ingredient - European Commission\". ec.europa.eu. Retrieved 2025-01-03.",
+                    "<info> ^ \"Inactive Drug Ingredients (Excipients)\". Drugs.com. Retrieved 2025-01-03.",
+                    "<info> ^ Lee, Dennis (2009-04-14). Marks, Jay M. (ed.). \"Drug Interactions: Know the Ingredients, Consult Your Physician\". MedicineNet.",
+                    "<info> ^ \"Medicines\". NPS MedicineWise. 2012-10-28. Archived from the original on 2017-04-23. Retrieved 2014-05-24.",
+                    "<info> ^ Tierra, Michael, ed. (1992), American Herbalism, Crossings Press",
+                    "",
+                    "=== External links ===",
+                    "<info> Pesticide Active Ingredient Fact Sheets - National Pesticide Information Center",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "An active ingredient is any ingredient that provides biologically active or other direct effect in the diagnosis, cure, mitigation, treatment, or prevention of disease or to affect the structure or any function of the body of humans or animals.[1]",
+                            "The similar terms active pharmaceutical ingredient (abbreviated as API) and bulk active are also used in medicine.[2][3] The term active substance may be used to describe the effective chemical used to control bacteria or pests.[4]",
+                            "Some medication products can contain more than one active ingredient. The traditional word for the active pharmaceutical agent is pharmacon or pharmakon (from Greek: φάρμακον, adapted from pharmacos) which originally denoted a magical substance or drug.[citation needed]",
+                            "The terms active constituent or active principle are often chosen when referring to the active substance of interest in a plant (such as salicylic acid in willow bark or arecoline in areca nuts), since the word \"ingredient\" can be taken to connote a sense of human agency (that is, something that a person combines with other substances), whereas the natural products present in plants were not added by any human agency but rather occurred naturally (\"a plant doesn't have ingredients\").",
+                            "In contrast with the active ingredients, the inactive ingredients are usually called excipients in pharmaceutical contexts. The main excipient that serves as a medium for conveying the active ingredient is usually called the vehicle. For example, petrolatum and mineral oil are common vehicles. The term \"inactive\" should not, however, be misconstrued as meaning inert.[5]"
+                        ]
+                    },
+                    "Pharmaceuticals": {
+                        "content": [
+                            "The dosage form for a pharmaceutical contains the active pharmaceutical ingredient, which is the drug substance itself, and excipients, which are the ingredients of the tablet, or the liquid in which the active agent is suspended, or other material that is pharmaceutically inert. Drugs are chosen primarily for their active ingredients.",
+                            "Patients often have difficulty identifying the active ingredients in their medication, as well as being unaware of the notion of an active ingredient. When patients are on multiple medications, active ingredients can interfere with each other, often resulting in severe or life-threatening complications.[6]",
+                            "Many online services can help identify the active ingredient of most medications, such as the Medicines Database providing information on medications available in Australia.[7]"
+                        ]
+                    },
+                    "Herbal medicine": {
+                        "content": [
+                            "In phytopharmaceutical or herbal medicine, the active ingredient may be either unknown or may require cofactors in order to achieve therapeutic goals. This leads to complications in labelling. One way manufacturers have attempted to indicate strength is to engage in standardization to a marker compound. Standardization has not been achieved yet, however, with different companies using different markers, or different levels of the same markers, or different methods of testing for marker compounds. For example, St John's wort is often standardized to the hypericin that is now known not to be the \"active ingredient\" for antidepressant use.  Other companies standardize to hyperforin or both, ignoring some 24 known additional possible active constituents. Many herbalists believe that the active ingredient in a plant is the plant itself.[8]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Regulation of therapeutic goods",
+                            "<info> Northeast of England Process Industry Cluster"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Center for Drug Evaluation and Research (2017-11-14). \"Drugs@FDA Glossary of Terms\". FDA. Retrieved 2022-02-03.",
+                            "<info> ^ Lim, Sean (2022-11-23). \"Drug Tablet Design: Why Pills Come in So Many Shapes and Sizes\". FTLOScience. Retrieved 2023-03-05.",
+                            "<info> ^ \"§ 207.1 What definitions and interpretations of terms apply to this part?\". US Code of Federal Regulations. US Government Publishing Office. 2023-07-19. Archived from the original on 2023-07-25. Retrieved 2023-07-25. Active pharmaceutical ingredient means any substance that is intended for incorporation into a finished drug product and is intended to furnish pharmacological activity or other direct effect in the diagnosis, cure, mitigation, treatment, or prevention of disease, or to affect the structure or any function of the body. Active pharmaceutical ingredient does not include intermediates used in the synthesis of the substance.",
+                            "<info> ^ \"Glossary: Active ingredient - European Commission\". ec.europa.eu. Retrieved 2025-01-03.",
+                            "<info> ^ \"Inactive Drug Ingredients (Excipients)\". Drugs.com. Retrieved 2025-01-03.",
+                            "<info> ^ Lee, Dennis (2009-04-14). Marks, Jay M. (ed.). \"Drug Interactions: Know the Ingredients, Consult Your Physician\". MedicineNet.",
+                            "<info> ^ \"Medicines\". NPS MedicineWise. 2012-10-28. Archived from the original on 2017-04-23. Retrieved 2014-05-24.",
+                            "<info> ^ Tierra, Michael, ed. (1992), American Herbalism, Crossings Press"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Pesticide Active Ingredient Fact Sheets - National Pesticide Information Center"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

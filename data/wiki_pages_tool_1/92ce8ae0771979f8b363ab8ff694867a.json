@@ -1,0 +1,123 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/follicular_thyroid_cancer": {
+                "title": "Follicular thyroid cancer",
+                "url": "https://en.wikipedia.org/wiki/follicular_thyroid_cancer",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Follicular thyroid cancer accounts for 15% of thyroid cancer and occurs more commonly in women over 50 years of age. Thyroglobulin (Tg) can be used as a tumor marker for well-differentiated follicular thyroid cancer. Thyroid follicular cells are the thyroid cells responsible for the production and secretion of thyroid hormones.",
+                    "",
+                    "=== Cause ===",
+                    "Approximately one-half of follicular thyroid carcinomas have mutations in the Ras subfamily of oncogenes, most notably HRAS, NRAS, and KRAS.[1] Mutations in MINPP1 have likewise been observed, as well as germline PTEN gene mutations responsible for Cowden syndrome of which follicular thyroid cancer is a feature. Also, a chromosomal translocation specific for follicular thyroid carcinomas is one between paired box gene 8 (PAX-8), a gene important in thyroid development, and the gene encoding peroxisome proliferator-activated receptor γ 1 (PPARγ1), a nuclear hormone receptor contributing to terminal differentiation of cells. The PAX8-PPARγ1 fusion is present in approximately one-third of follicular thyroid carcinomas, specifically those cancers with a t(2;3)(q13;p25) translocation, permitting juxtaposition of portions of both genes.[1] This subtype may potentially be treated with pioglitazone, a thiazolidinedione-class drug that potentiates PPARγ to boost insulin sensitivity.[2] Tumors tend to carry either a RAS mutation or a PAX8-PPARγ1 fusion, and only rarely are both genetic abnormalities present in the same case.[1] Thus, follicular thyroid carcinomas seem to arise by two distinct and virtually nonoverlapping molecular pathways.[1]",
+                    "",
+                    "=== Hurthle cell variant ===",
+                    "Hurthle cell thyroid cancer is often considered a variant of follicular cell carcinoma.[3][4] Hurthle cell forms are more likely than follicular carcinomas to be bilateral and multifocal and to  metastasize to lymph nodes. Like follicular carcinoma, unilateral hemithyroidectomy is performed for non-invasive disease, and total thyroidectomy for invasive disease.",
+                    "",
+                    "=== Diagnosis ===",
+                    "It is difficult to correctly diagnose follicular neoplasms (FNs) on fine-needle aspiration cytology (FNAC) because it shares many cytological features with other mimicking lesions.[5]",
+                    "It is impossible to distinguish between follicular adenoma and  carcinoma on cytological grounds. If fine needle aspiration cytology (FNAC) suggests follicular neoplasm, thyroid lobectomy should be performed to establish the histopathological diagnosis.  Features sine qua non for the diagnosis of follicular carcinoma are capsular invasion and vascular invasion by tumor cells. Still, focuses of the capsular invasion should be carefully evaluated and discriminated from the capsular rupture due to FNA penetration resulting in WHAFFT (worrisome histologic alterations following FNA of thyroid).",
+                    "<info> Follicular carcinoma tends to metastasize to lung and bone via the bloodstream.",
+                    "<info> Papillary thyroid carcinoma commonly metastasizes to cervical lymph nodes.",
+                    "HMGA2 has been proposed as a marker to identify malignant tumors.[6]",
+                    "",
+                    "=== Treatment ===",
+                    "Treatment is usually surgical, followed by radioiodine.",
+                    "<info> If follicular cells are found on cytological testing, it is common to carry out hemithyroidectomy to distinguish between follicular adenoma and follicular carcinoma on histopathological examination, proceeding to completion thyroidectomy and postoperative radioiodine ablation where carcinoma is confirmed.  This way total thyroidectomy is not carried out unnecessarily.",
+                    "<info> Thyroidectomy is invariably followed by radioiodine treatment at levels from 50 to 200 millicuries following two weeks of a low iodine diet (LID). Occasionally treatment must be repeated if annual scans indicate remaining cancerous tissue. Some physicians favor administering the maximum safe dose (calculated based on a number of factors), while others favor administering smaller doses, which may still be effective in ablating all thyroid tissue. I-131 is used for ablation of the thyroid tissue.\nMinimally invasive thyroidectomy has been used in recent years in cases where the nodules are small.[7]",
+                    "<info> Minimally invasive thyroidectomy has been used in recent years in cases where the nodules are small.[7]",
+                    "Some studies have shown that thyroglobulin (Tg) testing combined with neck ultrasound is more productive in finding disease recurrence than full- or whole-body scans (WBS) using radioactive iodine. However, current protocol (in the USA) suggests a small number of clean annual WBS are required before relying on Tg testing plus neck ultrasound. When needed, whole body scans consist of withdrawal from thyroxine medication and/or injection of recombinant human Thyroid stimulating hormone (TSH). In both cases, a low iodine diet regimen must also be followed to optimize the takeup of the radioactive iodine dose. Low dose radioiodine of a few millicuries is administered. Full body nuclear medicine scan follows using a gamma camera. Scan doses of radioactive iodine may be I131 or I123.",
+                    "Recombinant human TSH, commercial name Thyrogen, is produced in cell culture from genetically engineered hamster cells.",
+                    "",
+                    "=== Prognosis ===",
+                    "The overall 5-year survival rate for follicular thyroid cancer is 91%, and the 10-year survival rate is 85%.[8]",
+                    "By overall cancer staging into stages I to IV, follicular thyroid cancer has a 5-year survival rate of 100% for stages I and II, 71% for stage III, and 50% for stage IV.[9]",
+                    "Compared to other variants of Follicular cell derived thyroid cancer, bone metastases are commonly associated with follicular carcinoma. In the present study a high rate of bone metastases of 34% was observed.[10]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d Mitchell, Richard Sheppard; Kumar, Vinay; Abbas, Abul K.; Fausto, Nelson (2007). \"30\". In Kumar, Vinay; Robbins, Stanley L. (eds.). Robbins basic pathology (8 ed.). Philadelphia, PA: Saunders/Elsevier. ISBN 978-1-4160-2973-1. OCLC 69672074.",
+                    "<info> ^ Giordano, Thomas J.; Haugen, Bryan R.; Sherman, Steven I.; Shah, Manisha H.; Caoili, Elaine M.; Koenig, Ronald J. (2018-04-01). \"Pioglitazone Therapy of PAX8-PPARγ Fusion Protein Thyroid Carcinoma\". The Journal of Clinical Endocrinology and Metabolism. 103 (4): 1277–1281. doi:10.1210/jc.2017-02533. ISSN 1945-7197. PMC 6456920. PMID 29373711.",
+                    "<info> ^ Kushchayeva Y, Duh QY, Kebebew E, D'Avanzo A, Clark OH (2007). \"Comparison of clinical characteristics at diagnosis and during follow-up in 118 patients with Hurthle cell or follicular thyroid cancer\". Am J Surg. 195 (4): 457–62. doi:10.1016/j.amjsurg.2007.06.001. PMID 18070728.",
+                    "<info> ^ Hu, MI; Vassilopoulou-Sellin, R; Lustig, R; Lamont, JP (2008). \"Thyroid and Parathyroid Cancers\". Archived from the original on 2013-10-04.",
+                    "<info> ^ Han, Kanghee; Ha, Hwa-Jeong; Kong, Joon Seog; Kim, Jung-Soon; Myung, Jae Kyung; Koh, Jae Soo; Park, Sunhoo; Shin, Myung-Soon; Song, Woo-Tack; Seol, Hye Sil; Lee, Seung-Sook (March 2018). \"Cytological Features That Differentiate Follicular Neoplasm from Mimicking Lesions\". Journal of Pathology and Translational Medicine. 52 (2): 110–120. doi:10.4132/jptm.2018.01.17. ISSN 2383-7837. PMC 5859246. PMID 29374960.",
+                    "<info> ^ Belge G, Meyer A, Klemke M, et al. (2008). \"Upregulation of HMGA2 in thyroid carcinomas: A novel molecular marker to distinguish between benign and malignant follicular neoplasias\". Genes Chromosomes Cancer. 47 (1): 56–63. doi:10.1002/gcc.20505. PMID 17943974.",
+                    "<info> ^ Hegazy MA, Khater AA, Setit AE, et al. (2007). \"Minimally invasive video-assisted thyroidectomy for small follicular thyroid nodules\". World J Surg. 31 (9): 1743–50. doi:10.1007/s00268-007-9147-7. PMID 17653588. S2CID 19818345.",
+                    "<info> ^ F. Grünwald; Biersack, H. J.; Grںunwald, F. (2005). Thyroid cancer. Berlin: Springer. p. 10. ISBN 978-3-540-22309-2.",
+                    "<info> ^ cancer.org > Thyroid Cancer By the American Cancer Society. In turn citing: AJCC Cancer Staging Manual (7th ed).",
+                    "<info> ^ Pal, Pooja; Singh, Bikramjit; Kane, Shubhada; Chaturvedi, Pankaj (March 2018). \"Bone Metastases in Follicular Carcinoma of Thyroid\". Indian Journal of Otolaryngology and Head & Neck Surgery. 70 (1): 10–14. doi:10.1007/s12070-017-1170-x. ISSN 2231-3796. PMC 5807283. PMID 29456936.",
+                    "",
+                    "=== External links ===",
+                    "<info> Thyroid cancer at DMOZ Archived 2017-03-14 at the Wayback Machine",
+                    "<info> Cancer Management Handbook: Thyroid and Parathyroid Cancers Archived 2017-05-17 at the Wayback Machine",
+                    "<info> Management Guidelines for Patients with Thyroid Nodules and Differentiated Thyroid Cancer The American Thyroid Association Guidelines Taskforce (2015).",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Follicular thyroid cancer accounts for 15% of thyroid cancer and occurs more commonly in women over 50 years of age. Thyroglobulin (Tg) can be used as a tumor marker for well-differentiated follicular thyroid cancer. Thyroid follicular cells are the thyroid cells responsible for the production and secretion of thyroid hormones."
+                        ]
+                    },
+                    "Cause": {
+                        "content": [
+                            "Approximately one-half of follicular thyroid carcinomas have mutations in the Ras subfamily of oncogenes, most notably HRAS, NRAS, and KRAS.[1] Mutations in MINPP1 have likewise been observed, as well as germline PTEN gene mutations responsible for Cowden syndrome of which follicular thyroid cancer is a feature. Also, a chromosomal translocation specific for follicular thyroid carcinomas is one between paired box gene 8 (PAX-8), a gene important in thyroid development, and the gene encoding peroxisome proliferator-activated receptor γ 1 (PPARγ1), a nuclear hormone receptor contributing to terminal differentiation of cells. The PAX8-PPARγ1 fusion is present in approximately one-third of follicular thyroid carcinomas, specifically those cancers with a t(2;3)(q13;p25) translocation, permitting juxtaposition of portions of both genes.[1] This subtype may potentially be treated with pioglitazone, a thiazolidinedione-class drug that potentiates PPARγ to boost insulin sensitivity.[2] Tumors tend to carry either a RAS mutation or a PAX8-PPARγ1 fusion, and only rarely are both genetic abnormalities present in the same case.[1] Thus, follicular thyroid carcinomas seem to arise by two distinct and virtually nonoverlapping molecular pathways.[1]"
+                        ]
+                    },
+                    "Hurthle cell variant": {
+                        "content": [
+                            "Hurthle cell thyroid cancer is often considered a variant of follicular cell carcinoma.[3][4] Hurthle cell forms are more likely than follicular carcinomas to be bilateral and multifocal and to  metastasize to lymph nodes. Like follicular carcinoma, unilateral hemithyroidectomy is performed for non-invasive disease, and total thyroidectomy for invasive disease."
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "It is difficult to correctly diagnose follicular neoplasms (FNs) on fine-needle aspiration cytology (FNAC) because it shares many cytological features with other mimicking lesions.[5]",
+                            "It is impossible to distinguish between follicular adenoma and  carcinoma on cytological grounds. If fine needle aspiration cytology (FNAC) suggests follicular neoplasm, thyroid lobectomy should be performed to establish the histopathological diagnosis.  Features sine qua non for the diagnosis of follicular carcinoma are capsular invasion and vascular invasion by tumor cells. Still, focuses of the capsular invasion should be carefully evaluated and discriminated from the capsular rupture due to FNA penetration resulting in WHAFFT (worrisome histologic alterations following FNA of thyroid).",
+                            "<info> Follicular carcinoma tends to metastasize to lung and bone via the bloodstream.",
+                            "<info> Papillary thyroid carcinoma commonly metastasizes to cervical lymph nodes.",
+                            "HMGA2 has been proposed as a marker to identify malignant tumors.[6]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Treatment is usually surgical, followed by radioiodine.",
+                            "<info> If follicular cells are found on cytological testing, it is common to carry out hemithyroidectomy to distinguish between follicular adenoma and follicular carcinoma on histopathological examination, proceeding to completion thyroidectomy and postoperative radioiodine ablation where carcinoma is confirmed.  This way total thyroidectomy is not carried out unnecessarily.",
+                            "<info> Thyroidectomy is invariably followed by radioiodine treatment at levels from 50 to 200 millicuries following two weeks of a low iodine diet (LID). Occasionally treatment must be repeated if annual scans indicate remaining cancerous tissue. Some physicians favor administering the maximum safe dose (calculated based on a number of factors), while others favor administering smaller doses, which may still be effective in ablating all thyroid tissue. I-131 is used for ablation of the thyroid tissue.\nMinimally invasive thyroidectomy has been used in recent years in cases where the nodules are small.[7]",
+                            "<info> Minimally invasive thyroidectomy has been used in recent years in cases where the nodules are small.[7]",
+                            "Some studies have shown that thyroglobulin (Tg) testing combined with neck ultrasound is more productive in finding disease recurrence than full- or whole-body scans (WBS) using radioactive iodine. However, current protocol (in the USA) suggests a small number of clean annual WBS are required before relying on Tg testing plus neck ultrasound. When needed, whole body scans consist of withdrawal from thyroxine medication and/or injection of recombinant human Thyroid stimulating hormone (TSH). In both cases, a low iodine diet regimen must also be followed to optimize the takeup of the radioactive iodine dose. Low dose radioiodine of a few millicuries is administered. Full body nuclear medicine scan follows using a gamma camera. Scan doses of radioactive iodine may be I131 or I123.",
+                            "Recombinant human TSH, commercial name Thyrogen, is produced in cell culture from genetically engineered hamster cells."
+                        ]
+                    },
+                    "Prognosis": {
+                        "content": [
+                            "The overall 5-year survival rate for follicular thyroid cancer is 91%, and the 10-year survival rate is 85%.[8]",
+                            "By overall cancer staging into stages I to IV, follicular thyroid cancer has a 5-year survival rate of 100% for stages I and II, 71% for stage III, and 50% for stage IV.[9]",
+                            "Compared to other variants of Follicular cell derived thyroid cancer, bone metastases are commonly associated with follicular carcinoma. In the present study a high rate of bone metastases of 34% was observed.[10]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d Mitchell, Richard Sheppard; Kumar, Vinay; Abbas, Abul K.; Fausto, Nelson (2007). \"30\". In Kumar, Vinay; Robbins, Stanley L. (eds.). Robbins basic pathology (8 ed.). Philadelphia, PA: Saunders/Elsevier. ISBN 978-1-4160-2973-1. OCLC 69672074.",
+                            "<info> ^ Giordano, Thomas J.; Haugen, Bryan R.; Sherman, Steven I.; Shah, Manisha H.; Caoili, Elaine M.; Koenig, Ronald J. (2018-04-01). \"Pioglitazone Therapy of PAX8-PPARγ Fusion Protein Thyroid Carcinoma\". The Journal of Clinical Endocrinology and Metabolism. 103 (4): 1277–1281. doi:10.1210/jc.2017-02533. ISSN 1945-7197. PMC 6456920. PMID 29373711.",
+                            "<info> ^ Kushchayeva Y, Duh QY, Kebebew E, D'Avanzo A, Clark OH (2007). \"Comparison of clinical characteristics at diagnosis and during follow-up in 118 patients with Hurthle cell or follicular thyroid cancer\". Am J Surg. 195 (4): 457–62. doi:10.1016/j.amjsurg.2007.06.001. PMID 18070728.",
+                            "<info> ^ Hu, MI; Vassilopoulou-Sellin, R; Lustig, R; Lamont, JP (2008). \"Thyroid and Parathyroid Cancers\". Archived from the original on 2013-10-04.",
+                            "<info> ^ Han, Kanghee; Ha, Hwa-Jeong; Kong, Joon Seog; Kim, Jung-Soon; Myung, Jae Kyung; Koh, Jae Soo; Park, Sunhoo; Shin, Myung-Soon; Song, Woo-Tack; Seol, Hye Sil; Lee, Seung-Sook (March 2018). \"Cytological Features That Differentiate Follicular Neoplasm from Mimicking Lesions\". Journal of Pathology and Translational Medicine. 52 (2): 110–120. doi:10.4132/jptm.2018.01.17. ISSN 2383-7837. PMC 5859246. PMID 29374960.",
+                            "<info> ^ Belge G, Meyer A, Klemke M, et al. (2008). \"Upregulation of HMGA2 in thyroid carcinomas: A novel molecular marker to distinguish between benign and malignant follicular neoplasias\". Genes Chromosomes Cancer. 47 (1): 56–63. doi:10.1002/gcc.20505. PMID 17943974.",
+                            "<info> ^ Hegazy MA, Khater AA, Setit AE, et al. (2007). \"Minimally invasive video-assisted thyroidectomy for small follicular thyroid nodules\". World J Surg. 31 (9): 1743–50. doi:10.1007/s00268-007-9147-7. PMID 17653588. S2CID 19818345.",
+                            "<info> ^ F. Grünwald; Biersack, H. J.; Grںunwald, F. (2005). Thyroid cancer. Berlin: Springer. p. 10. ISBN 978-3-540-22309-2.",
+                            "<info> ^ cancer.org > Thyroid Cancer By the American Cancer Society. In turn citing: AJCC Cancer Staging Manual (7th ed).",
+                            "<info> ^ Pal, Pooja; Singh, Bikramjit; Kane, Shubhada; Chaturvedi, Pankaj (March 2018). \"Bone Metastases in Follicular Carcinoma of Thyroid\". Indian Journal of Otolaryngology and Head & Neck Surgery. 70 (1): 10–14. doi:10.1007/s12070-017-1170-x. ISSN 2231-3796. PMC 5807283. PMID 29456936."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Thyroid cancer at DMOZ Archived 2017-03-14 at the Wayback Machine",
+                            "<info> Cancer Management Handbook: Thyroid and Parathyroid Cancers Archived 2017-05-17 at the Wayback Machine",
+                            "<info> Management Guidelines for Patients with Thyroid Nodules and Differentiated Thyroid Cancer The American Thyroid Association Guidelines Taskforce (2015)."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/tumor_necrosis_factor_receptor_2": {
+                "title": "Tumor necrosis factor receptor 2",
+                "url": "https://en.wikipedia.org/wiki/tumor_necrosis_factor_receptor_2",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Tumor necrosis factor receptor 2 (TNFR2), also known as tumor necrosis factor receptor superfamily member 1B (TNFRSF1B) and CD120b, is one of two membrane receptors that binds tumor necrosis factor-alpha (TNFα).[5][6] Like its counterpart, tumor necrosis factor receptor 1 (TNFR1), the extracellular region of TNFR2 consists of four cysteine-rich domains which allow for binding to TNFα.[7][8] TNFR1 and TNFR2 possess different functions when bound to TNFα due to differences in their intracellular structures, such as TNFR2 lacking a death domain (DD).[7]",
+                    "",
+                    "=== Function ===",
+                    "The protein encoded by this gene is a member of the tumor necrosis factor receptor superfamily, which also contains TNFRSF1A. This protein and TNF-receptor 1 form a heterocomplex that mediates the recruitment of two anti-apoptotic proteins, c-IAP1 and c-IAP2, which possess E3 ubiquitin ligase activity. The function of IAPs in TNF-receptor signalling is unknown, however, c-IAP1 is thought to potentiate TNF-induced apoptosis by the ubiquitination and degradation of TNF-receptor-associated factor 2 (TRAF2), which mediates anti-apoptotic signals. Knockout studies in mice also suggest a role of this protein in protecting neurons from apoptosis by stimulating antioxidative pathways.[9]",
+                    "",
+                    "=== Clinical significance ===",
+                    "At least partly because TNFR2 has no intracellular death domain, TNFR2 is neuroprotective.[10]",
+                    "Patients with schizophrenia have increased levels of soluble tumor necrosis factor receptor 2 (sTNFR2).[11]",
+                    "Targeting of TNFR2 in tumor cells is associated with increased tumor cell death and decreased progression of tumor cell growth.[8]",
+                    "Increased expression of TNFR2 is found in breast cancer, cervical cancer, colon cancer, and renal cancer.[8] A link between the expression of TNFR2 in tumor cells and late-stage cancer has been discovered.[8] TNFR2 plays a significant role in tumor cell growth as it has been found that the loss of TNFR2 expression is linked with increased death of associated tumor cells and a significant standstill of further growth.[8] There is therapeutic potential in the targeting of TNFR2 for cancer treatments through TNFR2 inhibition.[12]",
+                    "A small scale study of 289 Japanese patients suggested a minor increased predisposition from an amino acid substitution of the 196 allele at exon 6. Genomic testing of 81 SLE patients and 207 healthy patients in a Japanese study showed 37% of SLE patients had a polymorphism on position 196 of exon 6 compared to 18.8% of healthy patients. The TNFR2 196R allele polymorphism suggests that even one 196R allele results in increased risk for SLE.[13]",
+                    "",
+                    "=== Interactions ===",
+                    "TNFRSF1B has been shown to interact with:",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000028137 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000028599 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ Schall TJ, Lewis M, Koller KJ, Lee A, Rice GC, Wong GH, et al. (April 1990). \"Molecular cloning and expression of a receptor for human tumor necrosis factor\". Cell. 61 (2): 361–370. doi:10.1016/0092-8674(90)90816-W. PMID 2158863. S2CID 36187863.{{cite journal}}:  CS1 maint: overridden setting (link)",
+                    "<info> ^ Santee SM, Owen-Schaub LB (August 1996). \"Human tumor necrosis factor receptor p75/80 (CD120b) gene structure and promoter characterization\". The Journal of Biological Chemistry. 271 (35): 21151–21159. doi:10.1074/jbc.271.35.21151. PMID 8702885.",
+                    "<info> ^ a b Wang J, Al-Lamki RS (2013-11-17). \"Tumor necrosis factor receptor 2: its contribution to acute cellular rejection and clear cell renal carcinoma\". BioMed Research International. 2013 821310. doi:10.1155/2013/821310. PMC 3848079. PMID 24350291.",
+                    "<info> ^ a b c d e Sheng Y, Li F, Qin Z (2018). \"TNF Receptor 2 Makes Tumor Necrosis Factor a Friend of Tumors\". Frontiers in Immunology. 9 1170. doi:10.3389/fimmu.2018.01170. PMC 5985372. PMID 29892300.",
+                    "<info> ^ \"Entrez Gene: TNFRSF1B tumor necrosis factor receptor superfamily, member 1B\". Retrieved 8 May 2017.",
+                    "<info> ^ Chadwick W, Magnus T, Martin B, Keselman A, Mattson MP, Maudsley S (October 2008). \"Targeting TNF-alpha receptors for neurotherapeutics\". Trends in Neurosciences. 31 (10): 504–511. doi:10.1016/j.tins.2008.07.005. PMC 2574933. PMID 18774186.",
+                    "<info> ^ Kudo N, Yamamori H, Ishima T, Nemoto K, Yasuda Y, Fujimoto M, et al. (July 2018). \"Plasma Levels of Soluble Tumor Necrosis Factor Receptor 2 (sTNFR2) Are Associated with Hippocampal Volume and Cognitive Performance in Patients with Schizophrenia\". The International Journal of Neuropsychopharmacology. 21 (7): 631–639. doi:10.1093/ijnp/pyy013. PMC 6031046. PMID 29529289.{{cite journal}}:  CS1 maint: overridden setting (link)",
+                    "<info> ^ Medler J, Wajant H (April 2019). \"Tumor necrosis factor receptor-2 (TNFR2): an overview of an emerging drug target\". Expert Opinion on Therapeutic Targets. 23 (4): 295–307. doi:10.1080/14728222.2019.1586886. PMID 30856027. S2CID 75139844.",
+                    "<info> ^ Komata T, Tsuchiya N, Matsushita M, Hagiwara K, Tokunaga K (June 1999). \"Association of tumor necrosis factor receptor 2 (TNFR2) polymorphism with susceptibility to systemic lupus erythematosus\". Tissue Antigens. 53 (6): 527–533. doi:10.1034/j.1399-0039.1999.530602.x. PMID 10395102.",
+                    "<info> ^ Bouwmeester T, Bauch A, Ruffner H, Angrand PO, Bergamini G, Croughton K, et al. (February 2004). \"A physical and functional map of the human TNF-alpha/NF-kappa B signal transduction pathway\". Nature Cell Biology. 6 (2): 97–105. doi:10.1038/ncb1086. PMID 14743216. S2CID 11683986.{{cite journal}}:  CS1 maint: overridden setting (link)",
+                    "<info> ^ Song HY, Donner DB (August 1995). \"Association of a RING finger protein with the cytoplasmic domain of the human type-2 tumour necrosis factor receptor\". The Biochemical Journal. 309 (3): 825–829. doi:10.1042/bj3090825. PMC 1135706. PMID 7639698.",
+                    "<info> ^ Takeuchi M, Rothe M, Goeddel DV (August 1996). \"Anatomy of TRAF2. Distinct domains for nuclear factor-kappaB activation and association with tumor necrosis factor signaling proteins\". The Journal of Biological Chemistry. 271 (33): 19935–19942. doi:10.1074/jbc.271.33.19935. PMID 8702708.",
+                    "<info> ^ Hostager BS, Bishop GA (April 2002). \"Role of TNF receptor-associated factor 2 in the activation of IgM secretion by CD40 and CD120b\". Journal of Immunology. 168 (7): 3318–3322. doi:10.4049/jimmunol.168.7.3318. PMID 11907088.",
+                    "<info> ^ Rothe M, Xiong J, Shu HB, Williamson K, Goddard A, Goeddel DV (August 1996). \"I-TRAF is a novel TRAF-interacting protein that regulates TRAF-mediated signal transduction\". Proceedings of the National Academy of Sciences of the United States of America. 93 (16): 8241–8246. Bibcode:1996PNAS...93.8241R. doi:10.1073/pnas.93.16.8241. PMC 38654. PMID 8710854.",
+                    "<info> ^ Marsters SA, Ayres TM, Skubatch M, Gray CL, Rothe M, Ashkenazi A (May 1997). \"Herpesvirus entry mediator, a member of the tumor necrosis factor receptor (TNFR) family, interacts with members of the TNFR-associated factor family and activates the transcription factors NF-kappaB and AP-1\". The Journal of Biological Chemistry. 272 (22): 14029–14032. doi:10.1074/jbc.272.22.14029. PMID 9162022.",
+                    "<info> ^ Carpentier I, Coornaert B, Beyaert R (October 2008). \"Smurf2 is a TRAF2 binding protein that triggers TNF-R2 ubiquitination and TNF-R2-induced JNK activation\". Biochemical and Biophysical Research Communications. 374 (4): 752–757. Bibcode:2008BBRC..374..752C. doi:10.1016/j.bbrc.2008.07.103. PMID 18671942.",
+                    "<info> ^ Pype S, Declercq W, Ibrahimi A, Michiels C, Van Rietschoten JG, Dewulf N, et al. (June 2000). \"TTRAP, a novel protein that associates with CD40, tumor necrosis factor (TNF) receptor-75 and TNF receptor-associated factors (TRAFs), and that inhibits nuclear factor-kappa B activation\". The Journal of Biological Chemistry. 275 (24): 18586–18593. doi:10.1074/jbc.M000531200. PMID 10764746.{{cite journal}}:  CS1 maint: overridden setting (link)",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Kollias G, Kontoyiannis D (2003). \"Role of TNF/TNFR in autoimmunity: specific TNF receptor blockade may be advantageous to anti-TNF treatments\". Cytokine & Growth Factor Reviews. 13 (4–5): 315–321. doi:10.1016/S1359-6101(02)00019-9. PMID 12220546.",
+                    "<info> Holtmann MH, Schuchmann M, Zeller G, Galle PR, Neurath MF (2003). \"The emerging distinct role of TNF-receptor 2 (p80) signaling in chronic inflammatory disorders\". Archivum Immunologiae et Therapiae Experimentalis. 50 (4): 279–288. PMID 12371624.",
+                    "<info> Horiuchi T, Kiyohara C, Tsukamoto H, Sawabe T, Furugo I, Yoshizawa S, et al. (March 2007). \"A functional M196R polymorphism of tumour necrosis factor receptor type 2 is associated with systemic lupus erythematosus: a case-control study and a meta-analysis\". Annals of the Rheumatic Diseases. 66 (3): 320–324. doi:10.1136/ard.2006.058917. PMC 1856025. PMID 17028114.{{cite journal}}:  CS1 maint: overridden setting (link)",
+                    "",
+                    "=== External links ===",
+                    "<info> CD120b+Antigen at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Tumor necrosis factor receptor 2 (TNFR2), also known as tumor necrosis factor receptor superfamily member 1B (TNFRSF1B) and CD120b, is one of two membrane receptors that binds tumor necrosis factor-alpha (TNFα).[5][6] Like its counterpart, tumor necrosis factor receptor 1 (TNFR1), the extracellular region of TNFR2 consists of four cysteine-rich domains which allow for binding to TNFα.[7][8] TNFR1 and TNFR2 possess different functions when bound to TNFα due to differences in their intracellular structures, such as TNFR2 lacking a death domain (DD).[7]"
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "The protein encoded by this gene is a member of the tumor necrosis factor receptor superfamily, which also contains TNFRSF1A. This protein and TNF-receptor 1 form a heterocomplex that mediates the recruitment of two anti-apoptotic proteins, c-IAP1 and c-IAP2, which possess E3 ubiquitin ligase activity. The function of IAPs in TNF-receptor signalling is unknown, however, c-IAP1 is thought to potentiate TNF-induced apoptosis by the ubiquitination and degradation of TNF-receptor-associated factor 2 (TRAF2), which mediates anti-apoptotic signals. Knockout studies in mice also suggest a role of this protein in protecting neurons from apoptosis by stimulating antioxidative pathways.[9]"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "At least partly because TNFR2 has no intracellular death domain, TNFR2 is neuroprotective.[10]",
+                            "Patients with schizophrenia have increased levels of soluble tumor necrosis factor receptor 2 (sTNFR2).[11]",
+                            "Targeting of TNFR2 in tumor cells is associated with increased tumor cell death and decreased progression of tumor cell growth.[8]",
+                            "Increased expression of TNFR2 is found in breast cancer, cervical cancer, colon cancer, and renal cancer.[8] A link between the expression of TNFR2 in tumor cells and late-stage cancer has been discovered.[8] TNFR2 plays a significant role in tumor cell growth as it has been found that the loss of TNFR2 expression is linked with increased death of associated tumor cells and a significant standstill of further growth.[8] There is therapeutic potential in the targeting of TNFR2 for cancer treatments through TNFR2 inhibition.[12]",
+                            "A small scale study of 289 Japanese patients suggested a minor increased predisposition from an amino acid substitution of the 196 allele at exon 6. Genomic testing of 81 SLE patients and 207 healthy patients in a Japanese study showed 37% of SLE patients had a polymorphism on position 196 of exon 6 compared to 18.8% of healthy patients. The TNFR2 196R allele polymorphism suggests that even one 196R allele results in increased risk for SLE.[13]"
+                        ]
+                    },
+                    "Interactions": {
+                        "content": [
+                            "TNFRSF1B has been shown to interact with:"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000028137 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000028599 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ Schall TJ, Lewis M, Koller KJ, Lee A, Rice GC, Wong GH, et al. (April 1990). \"Molecular cloning and expression of a receptor for human tumor necrosis factor\". Cell. 61 (2): 361–370. doi:10.1016/0092-8674(90)90816-W. PMID 2158863. S2CID 36187863.{{cite journal}}:  CS1 maint: overridden setting (link)",
+                            "<info> ^ Santee SM, Owen-Schaub LB (August 1996). \"Human tumor necrosis factor receptor p75/80 (CD120b) gene structure and promoter characterization\". The Journal of Biological Chemistry. 271 (35): 21151–21159. doi:10.1074/jbc.271.35.21151. PMID 8702885.",
+                            "<info> ^ a b Wang J, Al-Lamki RS (2013-11-17). \"Tumor necrosis factor receptor 2: its contribution to acute cellular rejection and clear cell renal carcinoma\". BioMed Research International. 2013 821310. doi:10.1155/2013/821310. PMC 3848079. PMID 24350291.",
+                            "<info> ^ a b c d e Sheng Y, Li F, Qin Z (2018). \"TNF Receptor 2 Makes Tumor Necrosis Factor a Friend of Tumors\". Frontiers in Immunology. 9 1170. doi:10.3389/fimmu.2018.01170. PMC 5985372. PMID 29892300.",
+                            "<info> ^ \"Entrez Gene: TNFRSF1B tumor necrosis factor receptor superfamily, member 1B\". Retrieved 8 May 2017.",
+                            "<info> ^ Chadwick W, Magnus T, Martin B, Keselman A, Mattson MP, Maudsley S (October 2008). \"Targeting TNF-alpha receptors for neurotherapeutics\". Trends in Neurosciences. 31 (10): 504–511. doi:10.1016/j.tins.2008.07.005. PMC 2574933. PMID 18774186.",
+                            "<info> ^ Kudo N, Yamamori H, Ishima T, Nemoto K, Yasuda Y, Fujimoto M, et al. (July 2018). \"Plasma Levels of Soluble Tumor Necrosis Factor Receptor 2 (sTNFR2) Are Associated with Hippocampal Volume and Cognitive Performance in Patients with Schizophrenia\". The International Journal of Neuropsychopharmacology. 21 (7): 631–639. doi:10.1093/ijnp/pyy013. PMC 6031046. PMID 29529289.{{cite journal}}:  CS1 maint: overridden setting (link)",
+                            "<info> ^ Medler J, Wajant H (April 2019). \"Tumor necrosis factor receptor-2 (TNFR2): an overview of an emerging drug target\". Expert Opinion on Therapeutic Targets. 23 (4): 295–307. doi:10.1080/14728222.2019.1586886. PMID 30856027. S2CID 75139844.",
+                            "<info> ^ Komata T, Tsuchiya N, Matsushita M, Hagiwara K, Tokunaga K (June 1999). \"Association of tumor necrosis factor receptor 2 (TNFR2) polymorphism with susceptibility to systemic lupus erythematosus\". Tissue Antigens. 53 (6): 527–533. doi:10.1034/j.1399-0039.1999.530602.x. PMID 10395102.",
+                            "<info> ^ Bouwmeester T, Bauch A, Ruffner H, Angrand PO, Bergamini G, Croughton K, et al. (February 2004). \"A physical and functional map of the human TNF-alpha/NF-kappa B signal transduction pathway\". Nature Cell Biology. 6 (2): 97–105. doi:10.1038/ncb1086. PMID 14743216. S2CID 11683986.{{cite journal}}:  CS1 maint: overridden setting (link)",
+                            "<info> ^ Song HY, Donner DB (August 1995). \"Association of a RING finger protein with the cytoplasmic domain of the human type-2 tumour necrosis factor receptor\". The Biochemical Journal. 309 (3): 825–829. doi:10.1042/bj3090825. PMC 1135706. PMID 7639698.",
+                            "<info> ^ Takeuchi M, Rothe M, Goeddel DV (August 1996). \"Anatomy of TRAF2. Distinct domains for nuclear factor-kappaB activation and association with tumor necrosis factor signaling proteins\". The Journal of Biological Chemistry. 271 (33): 19935–19942. doi:10.1074/jbc.271.33.19935. PMID 8702708.",
+                            "<info> ^ Hostager BS, Bishop GA (April 2002). \"Role of TNF receptor-associated factor 2 in the activation of IgM secretion by CD40 and CD120b\". Journal of Immunology. 168 (7): 3318–3322. doi:10.4049/jimmunol.168.7.3318. PMID 11907088.",
+                            "<info> ^ Rothe M, Xiong J, Shu HB, Williamson K, Goddard A, Goeddel DV (August 1996). \"I-TRAF is a novel TRAF-interacting protein that regulates TRAF-mediated signal transduction\". Proceedings of the National Academy of Sciences of the United States of America. 93 (16): 8241–8246. Bibcode:1996PNAS...93.8241R. doi:10.1073/pnas.93.16.8241. PMC 38654. PMID 8710854.",
+                            "<info> ^ Marsters SA, Ayres TM, Skubatch M, Gray CL, Rothe M, Ashkenazi A (May 1997). \"Herpesvirus entry mediator, a member of the tumor necrosis factor receptor (TNFR) family, interacts with members of the TNFR-associated factor family and activates the transcription factors NF-kappaB and AP-1\". The Journal of Biological Chemistry. 272 (22): 14029–14032. doi:10.1074/jbc.272.22.14029. PMID 9162022.",
+                            "<info> ^ Carpentier I, Coornaert B, Beyaert R (October 2008). \"Smurf2 is a TRAF2 binding protein that triggers TNF-R2 ubiquitination and TNF-R2-induced JNK activation\". Biochemical and Biophysical Research Communications. 374 (4): 752–757. Bibcode:2008BBRC..374..752C. doi:10.1016/j.bbrc.2008.07.103. PMID 18671942.",
+                            "<info> ^ Pype S, Declercq W, Ibrahimi A, Michiels C, Van Rietschoten JG, Dewulf N, et al. (June 2000). \"TTRAP, a novel protein that associates with CD40, tumor necrosis factor (TNF) receptor-75 and TNF receptor-associated factors (TRAFs), and that inhibits nuclear factor-kappa B activation\". The Journal of Biological Chemistry. 275 (24): 18586–18593. doi:10.1074/jbc.M000531200. PMID 10764746.{{cite journal}}:  CS1 maint: overridden setting (link)"
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Kollias G, Kontoyiannis D (2003). \"Role of TNF/TNFR in autoimmunity: specific TNF receptor blockade may be advantageous to anti-TNF treatments\". Cytokine & Growth Factor Reviews. 13 (4–5): 315–321. doi:10.1016/S1359-6101(02)00019-9. PMID 12220546.",
+                            "<info> Holtmann MH, Schuchmann M, Zeller G, Galle PR, Neurath MF (2003). \"The emerging distinct role of TNF-receptor 2 (p80) signaling in chronic inflammatory disorders\". Archivum Immunologiae et Therapiae Experimentalis. 50 (4): 279–288. PMID 12371624.",
+                            "<info> Horiuchi T, Kiyohara C, Tsukamoto H, Sawabe T, Furugo I, Yoshizawa S, et al. (March 2007). \"A functional M196R polymorphism of tumour necrosis factor receptor type 2 is associated with systemic lupus erythematosus: a case-control study and a meta-analysis\". Annals of the Rheumatic Diseases. 66 (3): 320–324. doi:10.1136/ard.2006.058917. PMC 1856025. PMID 17028114.{{cite journal}}:  CS1 maint: overridden setting (link)"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> CD120b+Antigen at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

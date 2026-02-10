@@ -1,0 +1,41 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/midbrain_activation": {
+                "title": "Midbrain activation",
+                "url": "https://en.wikipedia.org/wiki/midbrain_activation",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Midbrain activation is a pseudoscientific training method claiming to allow the development of blind vision and to improve memory and concentration. The trick often works by training participants to see through blindfolds to give the illusion that they are reading objects without being able to see.[1]",
+                    "",
+                    "=== Controversy ===",
+                    "The training programs run by the franchise organisations have generated criticism from rationalists, most notably Narendra Nayak, president of the Federation of Indian Rationalist Associations (FIRA).[2]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Debunking 'midbrain activation' of children\". The Hindu. Retrieved 10 October 2018.",
+                    "<info> ^ \"'You start questioning things – the most blatant, harmful things, that are evil'\". Indian Express.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Midbrain activation is a pseudoscientific training method claiming to allow the development of blind vision and to improve memory and concentration. The trick often works by training participants to see through blindfolds to give the illusion that they are reading objects without being able to see.[1]"
+                        ]
+                    },
+                    "Controversy": {
+                        "content": [
+                            "The training programs run by the franchise organisations have generated criticism from rationalists, most notably Narendra Nayak, president of the Federation of Indian Rationalist Associations (FIRA).[2]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Debunking 'midbrain activation' of children\". The Hindu. Retrieved 10 October 2018.",
+                            "<info> ^ \"'You start questioning things – the most blatant, harmful things, that are evil'\". Indian Express."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

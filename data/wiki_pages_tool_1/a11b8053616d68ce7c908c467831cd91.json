@@ -1,0 +1,115 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/treponema": {
+                "title": "Treponema",
+                "url": "https://en.wikipedia.org/wiki/treponema",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Treponema is a genus of spiral-shaped bacteria. The major treponeme species of human pathogens is Treponema pallidum, whose subspecies are responsible for diseases such as syphilis, bejel, and yaws.",
+                    "",
+                    "=== Pathogenicity across species ===",
+                    "Only some species of Treponema are pathogenic in humans. Treponema carateum is the cause of pinta[2] which occurs primarily in Central and South America. Treponema paraluiscuniculi is associated with syphilis in rabbits[3] but is not infectious in humans. Treponema succinifaciens has been found in the gut microbiome of traditional rural human populations.[4] Treponema pallidum subspecies endemicum and T. p. ssp pertenue are only moderately invasive in humans (as opposed to T. pallidum pallidum which is highly invasive).[5]",
+                    "",
+                    "=== Phylogeny ===",
+                    "The currently accepted taxonomy is based on the List of Prokaryotic names with Standing in Nomenclature (LPSN)[6] and National Center for Biotechnology Information (NCBI).[1]",
+                    "<info> \"Ca. T. caballi\" Gilroy et al. 2022",
+                    "<info> T. calligyrum Noguchi 1913",
+                    "<info> T. carateum Brumpt 1939 (pinta-causing Treponema)",
+                    "<info> \"Ca. T. intracellulare\" Ohkuma et al. 2015 corrig. Oren et al. 2020",
+                    "<info> \"T. legeri\" (Duboscq & Lebailly 1912) Zuelzer 1925",
+                    "<info> \"T. macrodentium\" Noguchi 1912",
+                    "<info> T. paraluisleporis Lumeij et al. 1994",
+                    "<info> T. pertenue (Castellani 1905) Castellani & Chalmers 1910",
+                    "<info> \"T. plautii\" Fong et al. 2025",
+                    "<info> T. refringens (Schaudinn and Hofmann 1905) Castellani and Chalmers",
+                    "<info> \"T. scoliodonta\" (Hoffmann 1920) Noguchi 1928 ex Smibert 1984",
+                    "<info> \"T. sinense\" Huo et al. 2017 ex Fong et al. 2025",
+                    "<info> \"T. stenella\" Balik et al. 2023",
+                    "<info> \"Ca. T. suis\" Molbak et al. 2006 non Kujumgiev & Spassova 1967",
+                    "<info> \"Ca. T. teratonymphae\" Noda et al. 2018",
+                    "<info> \"T. trimerodonta\" (Hoffmann 1920) Prévot 1940",
+                    "The species Treponema hyodysenteriae and Treponema innocens have been reclassified into Brachyspira hyodysenteriae and Brachyspira innocens.[13]",
+                    "",
+                    "=== See also ===",
+                    "<info> List of bacteria genera",
+                    "<info> List of bacterial orders",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Schoch CL; et al. \"Treponema\". National Center for Biotechnology Information (NCBI) taxonomy database. Retrieved 2025-06-05.",
+                    "<info> ^ Antal GM, Lukehart SA, Meheus AZ (January 2002). \"The endemic treponematoses\". Microbes Infect. 4 (1): 83–94. doi:10.1016/S1286-4579(01)01513-1. PMID 11825779.",
+                    "<info> ^ Harper KN, Liu H, Ocampo PS, et al. (August 2008). \"The sequence of the acidic repeat protein (arp) gene differentiates venereal from nonvenereal Treponema pallidum subspecies, and the gene has evolved under strong positive selection in the subspecies that causes syphilis\". FEMS Immunol. Med. Microbiol. 53 (3): 322–32. doi:10.1111/j.1574-695X.2008.00427.x. PMID 18554302.",
+                    "<info> ^ Angelakis E, Bachar D, Yasir M, Musso D, Djossou F, Gaborit B, et al. (January 2019). \"Treponema species enrich the gut microbiota of traditional rural populations but are absent from urban individuals\". New Microbes and New Infections. 27: 14–21. doi:10.1016/j.nmni.2018.10.009. PMC 6276622. PMID 30555706. (This paper currently has an expression of concern, see doi:10.1016/j.nmni.2024.101401, PMID 38799921,  Retraction Watch. If this is an intentional citation to a such a paper, please replace {{expression of concern|...}} with {{expression of concern|...|intentional=yes}}.)",
+                    "<info> ^ Norris, S. J.; Cox, D. L.; Weinstock, G. M. (January 2001). \"Biology of Treponema pallidum: correlation of functional activities with genome sequence data\". Journal of Molecular Microbiology and Biotechnology. 3 (1): 37–62. ISSN 1464-1801. PMID 11200228.",
+                    "<info> ^ Treponema in LPSN; Freese, H. M.; Meier-Kolthoff, J. P.; Sardà Carbasse, J.; Afolayan, A. O.; Göker, M. (29 October 2025). \"TYGS and LPSN in 2025: a Global Core Biodata Resource for genome-based classification and nomenclature of prokaryotes within DSMZ Digital Diversity\". Nucleic Acids Research. 53: D1–D12. doi:10.1093/nar/gkaf1110.",
+                    "<info> ^ \"The LTP\". Retrieved 10 December 2024.",
+                    "<info> ^ \"LTP_all tree in newick format\". Retrieved 10 December 2024.",
+                    "<info> ^ \"LTP_10_2024 Release Notes\" (PDF). Retrieved 10 December 2024.",
+                    "<info> ^ \"GTDB release 10-RS226\". Genome Taxonomy Database. Retrieved 1 May 2025.",
+                    "<info> ^ \"bac120_r226.sp_label\". Genome Taxonomy Database. Retrieved 1 May 2025.",
+                    "<info> ^ \"Taxon History\". Genome Taxonomy Database. Retrieved 1 May 2025.",
+                    "<info> ^ Stanton TB, Jensen NS, Casey TA, Tordoff LA, Dewhirst FE, Paster BJ (January 1991). \"Reclassification of Treponema hyodysenteriae and Treponema innocens in a new genus, Serpula gen. nov., as Serpula hyodysenteriae comb. nov. and Serpula innocens comb. nov\". Int. J. Syst. Bacteriol. 41 (1): 50–8. doi:10.1099/00207713-41-1-50. PMID 1704792.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Treponema is a genus of spiral-shaped bacteria. The major treponeme species of human pathogens is Treponema pallidum, whose subspecies are responsible for diseases such as syphilis, bejel, and yaws."
+                        ]
+                    },
+                    "Pathogenicity across species": {
+                        "content": [
+                            "Only some species of Treponema are pathogenic in humans. Treponema carateum is the cause of pinta[2] which occurs primarily in Central and South America. Treponema paraluiscuniculi is associated with syphilis in rabbits[3] but is not infectious in humans. Treponema succinifaciens has been found in the gut microbiome of traditional rural human populations.[4] Treponema pallidum subspecies endemicum and T. p. ssp pertenue are only moderately invasive in humans (as opposed to T. pallidum pallidum which is highly invasive).[5]"
+                        ]
+                    },
+                    "Phylogeny": {
+                        "content": [
+                            "The currently accepted taxonomy is based on the List of Prokaryotic names with Standing in Nomenclature (LPSN)[6] and National Center for Biotechnology Information (NCBI).[1]",
+                            "<info> \"Ca. T. caballi\" Gilroy et al. 2022",
+                            "<info> T. calligyrum Noguchi 1913",
+                            "<info> T. carateum Brumpt 1939 (pinta-causing Treponema)",
+                            "<info> \"Ca. T. intracellulare\" Ohkuma et al. 2015 corrig. Oren et al. 2020",
+                            "<info> \"T. legeri\" (Duboscq & Lebailly 1912) Zuelzer 1925",
+                            "<info> \"T. macrodentium\" Noguchi 1912",
+                            "<info> T. paraluisleporis Lumeij et al. 1994",
+                            "<info> T. pertenue (Castellani 1905) Castellani & Chalmers 1910",
+                            "<info> \"T. plautii\" Fong et al. 2025",
+                            "<info> T. refringens (Schaudinn and Hofmann 1905) Castellani and Chalmers",
+                            "<info> \"T. scoliodonta\" (Hoffmann 1920) Noguchi 1928 ex Smibert 1984",
+                            "<info> \"T. sinense\" Huo et al. 2017 ex Fong et al. 2025",
+                            "<info> \"T. stenella\" Balik et al. 2023",
+                            "<info> \"Ca. T. suis\" Molbak et al. 2006 non Kujumgiev & Spassova 1967",
+                            "<info> \"Ca. T. teratonymphae\" Noda et al. 2018",
+                            "<info> \"T. trimerodonta\" (Hoffmann 1920) Prévot 1940",
+                            "The species Treponema hyodysenteriae and Treponema innocens have been reclassified into Brachyspira hyodysenteriae and Brachyspira innocens.[13]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of bacteria genera",
+                            "<info> List of bacterial orders"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Schoch CL; et al. \"Treponema\". National Center for Biotechnology Information (NCBI) taxonomy database. Retrieved 2025-06-05.",
+                            "<info> ^ Antal GM, Lukehart SA, Meheus AZ (January 2002). \"The endemic treponematoses\". Microbes Infect. 4 (1): 83–94. doi:10.1016/S1286-4579(01)01513-1. PMID 11825779.",
+                            "<info> ^ Harper KN, Liu H, Ocampo PS, et al. (August 2008). \"The sequence of the acidic repeat protein (arp) gene differentiates venereal from nonvenereal Treponema pallidum subspecies, and the gene has evolved under strong positive selection in the subspecies that causes syphilis\". FEMS Immunol. Med. Microbiol. 53 (3): 322–32. doi:10.1111/j.1574-695X.2008.00427.x. PMID 18554302.",
+                            "<info> ^ Angelakis E, Bachar D, Yasir M, Musso D, Djossou F, Gaborit B, et al. (January 2019). \"Treponema species enrich the gut microbiota of traditional rural populations but are absent from urban individuals\". New Microbes and New Infections. 27: 14–21. doi:10.1016/j.nmni.2018.10.009. PMC 6276622. PMID 30555706. (This paper currently has an expression of concern, see doi:10.1016/j.nmni.2024.101401, PMID 38799921,  Retraction Watch. If this is an intentional citation to a such a paper, please replace {{expression of concern|...}} with {{expression of concern|...|intentional=yes}}.)",
+                            "<info> ^ Norris, S. J.; Cox, D. L.; Weinstock, G. M. (January 2001). \"Biology of Treponema pallidum: correlation of functional activities with genome sequence data\". Journal of Molecular Microbiology and Biotechnology. 3 (1): 37–62. ISSN 1464-1801. PMID 11200228.",
+                            "<info> ^ Treponema in LPSN; Freese, H. M.; Meier-Kolthoff, J. P.; Sardà Carbasse, J.; Afolayan, A. O.; Göker, M. (29 October 2025). \"TYGS and LPSN in 2025: a Global Core Biodata Resource for genome-based classification and nomenclature of prokaryotes within DSMZ Digital Diversity\". Nucleic Acids Research. 53: D1–D12. doi:10.1093/nar/gkaf1110.",
+                            "<info> ^ \"The LTP\". Retrieved 10 December 2024.",
+                            "<info> ^ \"LTP_all tree in newick format\". Retrieved 10 December 2024.",
+                            "<info> ^ \"LTP_10_2024 Release Notes\" (PDF). Retrieved 10 December 2024.",
+                            "<info> ^ \"GTDB release 10-RS226\". Genome Taxonomy Database. Retrieved 1 May 2025.",
+                            "<info> ^ \"bac120_r226.sp_label\". Genome Taxonomy Database. Retrieved 1 May 2025.",
+                            "<info> ^ \"Taxon History\". Genome Taxonomy Database. Retrieved 1 May 2025.",
+                            "<info> ^ Stanton TB, Jensen NS, Casey TA, Tordoff LA, Dewhirst FE, Paster BJ (January 1991). \"Reclassification of Treponema hyodysenteriae and Treponema innocens in a new genus, Serpula gen. nov., as Serpula hyodysenteriae comb. nov. and Serpula innocens comb. nov\". Int. J. Syst. Bacteriol. 41 (1): 50–8. doi:10.1099/00207713-41-1-50. PMID 1704792."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

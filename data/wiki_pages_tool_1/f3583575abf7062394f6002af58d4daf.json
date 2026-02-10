@@ -1,0 +1,93 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/periodic_fever_syndrome": {
+                "title": "Periodic fever syndrome",
+                "url": "https://en.wikipedia.org/wiki/periodic_fever_syndrome",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Periodic fever syndromes  are a set of disorders characterized by recurrent episodes of systemic and organ-specific inflammation. Unlike autoimmune disorders such as systemic lupus erythematosus, in which the disease is caused by abnormalities of the adaptive immune system, people with autoinflammatory diseases do not produce autoantibodies or antigen-specific T or B cells.  Instead, the autoinflammatory diseases are characterized by errors in the innate immune system.[1]",
+                    "The syndromes are diverse, but tend to cause episodes of fever, joint pains, skin rashes, abdominal pains and may lead to chronic complications such as amyloidosis.[2]",
+                    "Most autoinflammatory diseases are genetic and present during childhood.[3]  The most common genetic autoinflammatory syndrome is familial Mediterranean fever, which causes short episodes of fever, abdominal pain, serositis, lasting less than 72 hours.  It is caused by mutations in the MEFV gene, which codes for the protein pyrin.[citation needed]",
+                    "Pyrin is a protein normally present in the inflammasome.  The mutated pyrin protein is thought to cause inappropriate activation of the inflammasome, leading to release of the pro-inflammatory cytokine IL-1β.  Most other autoinflammatory diseases also cause disease by inappropriate release of IL-1β.[4]  Thus, IL-1β has become a common therapeutic target, and medications such as anakinra, rilonacept, and canakinumab have revolutionized the treatment of autoinflammatory diseases.[citation needed]",
+                    "However, there are some autoinflammatory diseases that are not known to have a clear genetic cause.  This includes PFAPA, which is the most common autoinflammatory disease seen in children, characterized by episodes of fever, aphthous stomatitis, pharyngitis, and cervical adenitis.  Other autoinflammatory diseases that do not have clear genetic causes include adult-onset Still's disease, systemic-onset juvenile idiopathic arthritis, Schnitzler syndrome, and chronic recurrent multifocal osteomyelitis.  It is likely that these diseases are multifactorial, with genes that make people susceptible to these diseases, but they require an additional environmental factor to trigger the disease.[citation needed]",
+                    "",
+                    "=== See also ===",
+                    "<info> Kawasaki disease - possible autoinflammatory mechanism[7]",
+                    "<info> Multisystem inflammatory syndrome in children",
+                    "<info> List of cutaneous conditions",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Masters SL, Simon A, Aksentijevich I, et al. Horror autoinflammaticus: the molecular pathophysiology of autoinflammatory disease*. Annu Rev Immunol 2009;27(1):621–68",
+                    "<info> ^ Stojanov S, Kastner DL (2005). \"Familial autoinflammatory diseases: genetics, pathogenesis and treatment\". Curr Opin Rheumatol. 17 (5): 586–99. doi:10.1097/bor.0000174210.78449.6b. PMID 16093838. S2CID 25948105.",
+                    "<info> ^ Hausmann, JS; Dedeoglu, F (July 2013). \"Autoinflammatory diseases in pediatrics\". Dermatologic Clinics. 31 (3): 481–94. doi:10.1016/j.det.2013.04.003. PMID 23827250.",
+                    "<info> ^ Jamilloux, Y; Bourdonnay, E; Gerfaud-Valentin, M; Py, BF; Lefeuvre, L; Barba, T; Broussolle, C; Henry, T; Sève, P (14 September 2016). \"[Interleukin-1, inflammasome and autoinflammatory diseases]\". La Revue de Médecine Interne. 39 (4): 233–239. doi:10.1016/j.revmed.2016.07.007. PMID 27639913.",
+                    "<info> ^ Houten SM, Frenkel J, Waterham HR (2003). \"Isoprenoid biosynthesis in hereditary periodic fever syndromes and inflammation\". Cell. Mol. Life Sci. 60 (6): 1118–34. doi:10.1007/s00018-003-2296-4. PMC 11146049. PMID 12861380. S2CID 23745920.",
+                    "<info> ^ Kozycki CT, Kodati S, Huryn L, et al. (2022). \"Gain-of-function mutations in ALPK1 cause an NF-κB-mediated autoinflammatory disease: functional assessment, clinical phenotyping and disease course of patients with ROSAH syndrome\". Annals of the Rheumatic Diseases. 81 (10): 1453–1464. doi:10.1136/annrheumdis-2022-222629. ISSN 0003-4967. PMC 9484401. PMID 35868845.",
+                    "<info> ^ Marrani E, Burns JC, Cimaz R (2018). \"How Should We Classify Kawasaki Disease?\". Frontiers in Immunology. 9: 2974. doi:10.3389/fimmu.2018.02974. PMC 6302019. PMID 30619331.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Hobart A. Reimann, Periodic Disease: a probable syndrome including periodic fever, benign paroxysmal peritonitis, cyclic neutropenia and intermittent arthralgia. JAMA, 1948.[1]",
+                    "<info> Hobart A Reimann, Periodic Disease: periodic fever, periodic abdominalgia, cyclic neutropenia, intermittent arthralgia, angioneurotic edema, anaphylactoid purpura and periodic paralysis. JAMA, 1949.[2]",
+                    "<info> Hobart A Reimann, Moadié, J; Semerdjian, S; Sahyoun, PF, Periodic Peritonitis—Heredity & Pathology: report of seventy-two cases. JAMA, 1954.[3]",
+                    "<info> Hobart A Reimann, Periodic fever, an entity: A collection of 52 cases. AmJMedSci, 1962.[4]",
+                    "",
+                    "=== External links ===",
+                    "<info> Understanding Autoinflammatory Diseases - US National Institute of Arthritis and Musculoskeletal and Skin Diseases",
+                    "<info> ^ Reimann, Hobart A (1948). \"Periodic Disease: a probable syndrome including periodic fever, benign paroxysmal peritonitis, cyclic neutropenia and intermittent arthralgia\". JAMA. 136 (4): 239–244. doi:10.1001/jama.1948.02890210023004. PMID 18920089.",
+                    "<info> ^ Reimann, Hobart A (1949). \"Periodic Disease: periodic fever, periodic abdominalgia, cyclic neutropenia, intermittent arthralgia, angioneurotic edema, anaphylactoid purpura and periodic paralysis\". JAMA. 141 (3): 175–183. doi:10.1001/jama.1949.02910030005002. PMID 18139542.",
+                    "<info> ^ Reimann, Hobart A; Moadié, J; Semerdjian, S; Sahyoun, PF (1954). \"Periodic Peritonitis—Heredity and Pathology\". JAMA. 154 (15): 1254–1259. doi:10.1001/jama.1954.02940490018005. PMID 13151833.",
+                    "<info> ^ Reimann, Hobart A (1962). \"Periodic fever, an entity: A collection of 52 cases\". The American Journal of the Medical Sciences. 243 (Feb): 162–74. doi:10.1097/00000441-196202000-00006. PMID 14491227. S2CID 27897376.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Periodic fever syndromes  are a set of disorders characterized by recurrent episodes of systemic and organ-specific inflammation. Unlike autoimmune disorders such as systemic lupus erythematosus, in which the disease is caused by abnormalities of the adaptive immune system, people with autoinflammatory diseases do not produce autoantibodies or antigen-specific T or B cells.  Instead, the autoinflammatory diseases are characterized by errors in the innate immune system.[1]",
+                            "The syndromes are diverse, but tend to cause episodes of fever, joint pains, skin rashes, abdominal pains and may lead to chronic complications such as amyloidosis.[2]",
+                            "Most autoinflammatory diseases are genetic and present during childhood.[3]  The most common genetic autoinflammatory syndrome is familial Mediterranean fever, which causes short episodes of fever, abdominal pain, serositis, lasting less than 72 hours.  It is caused by mutations in the MEFV gene, which codes for the protein pyrin.[citation needed]",
+                            "Pyrin is a protein normally present in the inflammasome.  The mutated pyrin protein is thought to cause inappropriate activation of the inflammasome, leading to release of the pro-inflammatory cytokine IL-1β.  Most other autoinflammatory diseases also cause disease by inappropriate release of IL-1β.[4]  Thus, IL-1β has become a common therapeutic target, and medications such as anakinra, rilonacept, and canakinumab have revolutionized the treatment of autoinflammatory diseases.[citation needed]",
+                            "However, there are some autoinflammatory diseases that are not known to have a clear genetic cause.  This includes PFAPA, which is the most common autoinflammatory disease seen in children, characterized by episodes of fever, aphthous stomatitis, pharyngitis, and cervical adenitis.  Other autoinflammatory diseases that do not have clear genetic causes include adult-onset Still's disease, systemic-onset juvenile idiopathic arthritis, Schnitzler syndrome, and chronic recurrent multifocal osteomyelitis.  It is likely that these diseases are multifactorial, with genes that make people susceptible to these diseases, but they require an additional environmental factor to trigger the disease.[citation needed]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Kawasaki disease - possible autoinflammatory mechanism[7]",
+                            "<info> Multisystem inflammatory syndrome in children",
+                            "<info> List of cutaneous conditions"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Masters SL, Simon A, Aksentijevich I, et al. Horror autoinflammaticus: the molecular pathophysiology of autoinflammatory disease*. Annu Rev Immunol 2009;27(1):621–68",
+                            "<info> ^ Stojanov S, Kastner DL (2005). \"Familial autoinflammatory diseases: genetics, pathogenesis and treatment\". Curr Opin Rheumatol. 17 (5): 586–99. doi:10.1097/bor.0000174210.78449.6b. PMID 16093838. S2CID 25948105.",
+                            "<info> ^ Hausmann, JS; Dedeoglu, F (July 2013). \"Autoinflammatory diseases in pediatrics\". Dermatologic Clinics. 31 (3): 481–94. doi:10.1016/j.det.2013.04.003. PMID 23827250.",
+                            "<info> ^ Jamilloux, Y; Bourdonnay, E; Gerfaud-Valentin, M; Py, BF; Lefeuvre, L; Barba, T; Broussolle, C; Henry, T; Sève, P (14 September 2016). \"[Interleukin-1, inflammasome and autoinflammatory diseases]\". La Revue de Médecine Interne. 39 (4): 233–239. doi:10.1016/j.revmed.2016.07.007. PMID 27639913.",
+                            "<info> ^ Houten SM, Frenkel J, Waterham HR (2003). \"Isoprenoid biosynthesis in hereditary periodic fever syndromes and inflammation\". Cell. Mol. Life Sci. 60 (6): 1118–34. doi:10.1007/s00018-003-2296-4. PMC 11146049. PMID 12861380. S2CID 23745920.",
+                            "<info> ^ Kozycki CT, Kodati S, Huryn L, et al. (2022). \"Gain-of-function mutations in ALPK1 cause an NF-κB-mediated autoinflammatory disease: functional assessment, clinical phenotyping and disease course of patients with ROSAH syndrome\". Annals of the Rheumatic Diseases. 81 (10): 1453–1464. doi:10.1136/annrheumdis-2022-222629. ISSN 0003-4967. PMC 9484401. PMID 35868845.",
+                            "<info> ^ Marrani E, Burns JC, Cimaz R (2018). \"How Should We Classify Kawasaki Disease?\". Frontiers in Immunology. 9: 2974. doi:10.3389/fimmu.2018.02974. PMC 6302019. PMID 30619331."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Hobart A. Reimann, Periodic Disease: a probable syndrome including periodic fever, benign paroxysmal peritonitis, cyclic neutropenia and intermittent arthralgia. JAMA, 1948.[1]",
+                            "<info> Hobart A Reimann, Periodic Disease: periodic fever, periodic abdominalgia, cyclic neutropenia, intermittent arthralgia, angioneurotic edema, anaphylactoid purpura and periodic paralysis. JAMA, 1949.[2]",
+                            "<info> Hobart A Reimann, Moadié, J; Semerdjian, S; Sahyoun, PF, Periodic Peritonitis—Heredity & Pathology: report of seventy-two cases. JAMA, 1954.[3]",
+                            "<info> Hobart A Reimann, Periodic fever, an entity: A collection of 52 cases. AmJMedSci, 1962.[4]"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Understanding Autoinflammatory Diseases - US National Institute of Arthritis and Musculoskeletal and Skin Diseases",
+                            "<info> ^ Reimann, Hobart A (1948). \"Periodic Disease: a probable syndrome including periodic fever, benign paroxysmal peritonitis, cyclic neutropenia and intermittent arthralgia\". JAMA. 136 (4): 239–244. doi:10.1001/jama.1948.02890210023004. PMID 18920089.",
+                            "<info> ^ Reimann, Hobart A (1949). \"Periodic Disease: periodic fever, periodic abdominalgia, cyclic neutropenia, intermittent arthralgia, angioneurotic edema, anaphylactoid purpura and periodic paralysis\". JAMA. 141 (3): 175–183. doi:10.1001/jama.1949.02910030005002. PMID 18139542.",
+                            "<info> ^ Reimann, Hobart A; Moadié, J; Semerdjian, S; Sahyoun, PF (1954). \"Periodic Peritonitis—Heredity and Pathology\". JAMA. 154 (15): 1254–1259. doi:10.1001/jama.1954.02940490018005. PMID 13151833.",
+                            "<info> ^ Reimann, Hobart A (1962). \"Periodic fever, an entity: A collection of 52 cases\". The American Journal of the Medical Sciences. 243 (Feb): 162–74. doi:10.1097/00000441-196202000-00006. PMID 14491227. S2CID 27897376."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

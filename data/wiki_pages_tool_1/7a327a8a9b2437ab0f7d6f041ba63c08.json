@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/mental_disorder": {
+                "title": "Mental disorder",
+                "url": "https://en.wikipedia.org/wiki/mental_disorder",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/red_blood_cell": {
+                "title": "Red blood cell",
+                "url": "https://en.wikipedia.org/wiki/red_blood_cell",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

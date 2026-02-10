@@ -2,12 +2,6 @@
     "746202": {
         "original question": "Does familial intestinal polyatresia syndrome (FIPA) increase Rho kinase activity, thereby disrupting the polarity?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -44,10 +38,6 @@
     "951000": {
         "original question": "A high-salt diet is not recommended for patients with hypertension or heart disease, but could it also be a concern for someone with hypokalemic periodic paralysis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -86,12 +76,6 @@
     "313741": {
         "original question": "Is it incorrect that the physician who currently occupies the Cullen Endowed Chair at Baylor College of Medicine was the first to describe Potocki-Lupski Syndrome?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -120,12 +104,6 @@
     "415618": {
         "original question": "Is an increase in intraocular pressure observed in individuals diagnosed with CMTC?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -153,10 +131,6 @@
     "570726": {
         "original question": "Is there an enzyme that exhibits D-glycerate dehydrogenase enzymatic activity and is associated with primary hyperoxaluria when mutated?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -187,12 +161,6 @@
     "936226": {
         "original question": "Was the physician who married Veronica Tester also the person responsible for isolating the hepatitis B surface antigen?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -222,10 +190,6 @@
     "491820": {
         "original question": "Is the term osteochondritis deformans juvenilis commonly used to refer to idiopathic juvenile kyphosis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -253,12 +217,6 @@
     "240486": {
         "original question": "Can Shulman's syndrome be related to L-tryptophan?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -295,10 +253,6 @@
     "917636": {
         "original question": "Is the size of a nodule associated with eumycetoma typically less than 1 cm?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -319,10 +273,6 @@
     "579497": {
         "original question": "Does a condition related to ODD syndrome affect the functioning of the ring and middle fingers?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -357,10 +307,6 @@
     "556973": {
         "original question": "Does GMS syndrome, reported in 1992, affect daily living activities negatively?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -387,10 +333,6 @@
     "614145": {
         "original question": "Are any of the top three most common types of pneumoconiosis caused by exposure to ground baryte ore?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -417,10 +359,6 @@
     "351044": {
         "original question": "Are any symptoms of lymphoma also observed in acute myocardial infarction?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -449,13 +387,6 @@
     "405579": {
         "original question": "Is the inherited disorder of bone growth characterized by disproportionate short stature, deformity of the lower limbs, short fingers, and ligamentous laxity,  caused by a mutation in the fibroblast growth factor receptor 3 gene?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes",
-            "achondroplasia"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -501,10 +432,6 @@
     "836831": {
         "original question": "Is tyrosinemia type II common in the Saguenay-Lac-Saint-Jean region of Quebec?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -525,10 +452,6 @@
     "275151": {
         "original question": "Are symptoms of adrenal insufficiency treatable with antibiotics?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -549,10 +472,6 @@
     "521240": {
         "original question": "Are heat shock protein 27, ubiquitin, and synemin associated with Alexander disease?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -585,12 +504,6 @@
     "961487": {
         "original question": "Is procrastination associated with the leading cause of disability worldwide, as identified by the United Nations health agency?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -617,10 +530,6 @@
     "894645": {
         "original question": "Is a common cause of myoglobinuria, which is complicated by acute kidney impairment and traumatic injury, associated with a mortality rate greater than 50%?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -657,12 +566,6 @@
     "205242": {
         "original question": "Is there a major plasma protein produced by the yolk sac that is commonly elevated in hepatoblastomas?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "alpha-fetoprotein"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -700,12 +603,6 @@
     "479398": {
         "original question": "Could a woman with XX gonadal dysgenesis have difficulty distinguishing voices in noisy environments?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -725,10 +622,6 @@
     "998920": {
         "original question": "Is sensorineural hearing loss in females with hypogonadism typically permanent or reversible?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "permanent"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -756,10 +649,6 @@
     "188963": {
         "original question": "Could a blood serum calcium level of 2.4 mmol/L contribute to the development of nephrocalcinosis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -788,10 +677,6 @@
     "762048": {
         "original question": "Could a lymphocyte count of less than 0.9 × 10⁹/L in an adult indicate the possibility of Cartilage–Hair Hypoplasia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -828,12 +713,6 @@
     "933211": {
         "original question": "Can Pacerone lead to exogenous lipid pneumonia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -861,12 +740,6 @@
     "450290": {
         "original question": "Is Pronaxen effective for treating symptoms of Chikungunya?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -886,10 +759,6 @@
     "931338": {
         "original question": "Is it possible for an adult male with a testosterone level of 630 ng/dL to be insensitive to follicle-stimulating hormone?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -918,10 +787,6 @@
     "154580": {
         "original question": "Do individuals with Down syndrome require treatment for infections and support to strengthen their immune systems?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -956,12 +821,6 @@
     "578911": {
         "original question": "Do individuals with Down syndrome, which is caused by an extra copy of chromosome 21, generally experience immunodeficiency characterized by a compromised immune system?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -990,10 +849,6 @@
     "817297": {
         "original question": "Is an intraocular pressure range of 10 to 20 mmHg generally considered safe in the context of glaucoma?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1014,12 +869,6 @@
     "680746": {
         "original question": "Could gonadal agenesis be linked to the presence of a shortened vagina?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1048,10 +897,6 @@
     "877079": {
         "original question": "Could a hemoglobin-related blood disorder affect the spleen?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1073,10 +918,6 @@
     "966492": {
         "original question": "Can arthrogryposis cause one leg or foot to be shorter than the other?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1097,10 +938,6 @@
     "655317": {
         "original question": "Does Beckwith–Wiedemann syndrome increase the risk of the second leading cause of death among children aged 1 to 14 in the United States?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1136,12 +973,6 @@
     "189171": {
         "original question": "Is Yemenite deaf-blind hypopigmentation syndrome associated with Waardenburg–Shah syndrome?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1177,10 +1008,6 @@
     "904524": {
         "original question": "Is Abruzzo-Erikson syndrome linked to the CHD7 mutation?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1215,12 +1042,6 @@
     "597726": {
         "original question": "Does beta-catenin play a role in the pathology of tetra-amelia syndrome?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1249,10 +1070,6 @@
     "528434": {
         "original question": "Can fathers with Duchenne muscular dystrophy pass X-linked recessive traits to their sons?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1281,10 +1098,6 @@
     "336838": {
         "original question": "Is interrupted aortic arch associated with birth defects?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1312,12 +1125,6 @@
     "660933": {
         "original question": "In women, can hyperprolactinemia cause hot flashes?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1345,10 +1152,6 @@
     "852613": {
         "original question": "Can a flea that has fed on an infected rodent transmit Yersinia pestis to a human through its bite?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1369,10 +1172,6 @@
     "271547": {
         "original question": "Can scurvy cause small red or purple spots to appear on the skin?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1394,10 +1193,6 @@
     "118949": {
         "original question": "Is systemic scleroderma associated with the formation of calcium deposits in soft tissue?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1432,10 +1227,6 @@
     "924334": {
         "original question": "Does Gerodermia osteodysplastica require two copies of the deleterious allele to manifest the disease?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1470,12 +1261,6 @@
     "178064": {
         "original question": "Are there fewer than 20 known mutations in the HLCS gene that impair the body's ability to utilize the vitamin biotin effectively?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1505,10 +1290,6 @@
     "794196": {
         "original question": "Are benzodiazepines used to manage the disease which causes postictal paresis/paralysis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1537,10 +1318,6 @@
     "320479": {
         "original question": "Do levels of Vitamin D in the range of 30 to 50 ng/mL correlate with a lower risk of osteoporosis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1568,10 +1345,6 @@
     "867818": {
         "original question": "Can the use of cortisol-like medications for asthma and COPD result in Cushing's syndrome?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1616,10 +1389,6 @@
     "214705": {
         "original question": "Is perimyositis part of the biological response of the connective tissue surrounding a muscle to harmful stimuli?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1648,10 +1417,6 @@
     "597964": {
         "original question": "Does perimyositis always involve an infection?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1672,10 +1437,6 @@
     "118939": {
         "original question": "Do people typically exhibit symptoms when infected with Lassa mammarenavirus?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1697,10 +1458,6 @@
     "318011": {
         "original question": "Is Desferal commonly used as a chelating agent in the treatment of beta-thalassemia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1729,10 +1486,6 @@
     "564362": {
         "original question": "Was the medication that causes cinchonism first isolated in 1820?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1752,10 +1505,6 @@
     "400640": {
         "original question": "Is a deficiency in vitamin B1 in the brain associated with temporally graded retrograde amnesia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1786,10 +1535,6 @@
     "801430": {
         "original question": "Is minocycline suitable for treating rosacea in pregnant women?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1819,12 +1564,6 @@
     "586813": {
         "original question": "Is there a risk of adverse effects on renal function when patients with nephrogenic diabetes insipidus are treated with hydrochlorothiazide?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1862,10 +1601,6 @@
     "687489": {
         "original question": "Is the diffuse sensation of unease often accompanied by an urge to vomit considered a symptom of Panayiotopoulos syndrome?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1893,10 +1628,6 @@
     "988010": {
         "original question": "Is hypertension a common adverse effect shared by indometacin and ibuprofen?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1927,10 +1658,6 @@
     "396243": {
         "original question": "Could the patient's hyperlipidemia from excessive pork and beef consumption be classified as primary hyperlipidemia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1954,10 +1681,6 @@
     "490477": {
         "original question": "Is itching a common symptom of both mastocytosis and herpes?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -1994,10 +1717,6 @@
     "951532": {
         "original question": "Will a patient with Harding's ataxia present with sustained high blood sugar levels?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2026,10 +1745,6 @@
     "795804": {
         "original question": "Will a patient with pontocerebellar hypoplasia experience delayed development in skills such as running, jumping, sliding, and swimming?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2051,10 +1766,6 @@
     "246741": {
         "original question": "Do children with PCH generally reach gross motor milestones by age two?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2076,10 +1787,6 @@
     "596265": {
         "original question": "Are both ventricular aneurysms and cardiogenic shock complications that may occur after heart attacks?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2116,10 +1823,6 @@
     "143441": {
         "original question": "Does the extremely rare hereditary disorder known as acro-oto-radial syndrome fulfill the DSM-5 criteria for intellectual disability, given its clinical features?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2163,12 +1866,6 @@
     "533485": {
         "original question": "Is nonsyndromic deafness a condition that caused WFS1 patients unable to hear low tones (low-frequency sounds) and constitutes 75% of all hearing loss cases?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2205,10 +1902,6 @@
     "247758": {
         "original question": "Is minimally differentiated acute myeloblastic leukemia considered a form of myeloid blood cancer that is characterized by the rapid accumulation of abnormal cells in both the bone marrow and blood, thereby disrupting normal blood cell production?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2263,10 +1956,6 @@
     "524170": {
         "original question": "Are keratolytic agents used to treat calluses also effective in treating keratosis pilaris?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2301,10 +1990,6 @@
     "491322": {
         "original question": "Is Tamiflu safe and effective for a pregnant woman with fever and cough due to swine influenza infection?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2343,10 +2028,6 @@
     "717130": {
         "original question": "Do patients with Anton syndrome have physiological damage to brain structures?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2375,10 +2056,6 @@
     "576476": {
         "original question": "Are surgeries for anorectal malformations always irreversible?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2398,10 +2075,6 @@
     "276421": {
         "original question": "Can calamine lotion be used to alleviate the symptoms of contact dermatitis in a pregnant woman?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2430,12 +2103,6 @@
     "974607": {
         "original question": "Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2474,10 +2141,6 @@
     "634256": {
         "original question": "Is the rare autosomal inherited disorder known as Dyschromatosis symmetrica hereditaria considered a type of skin condition?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2513,11 +2176,6 @@
     "942304": {
         "original question": "Is Spondylolisthesis commonly referred to as a slipped disc? True or False",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no",
-            "false"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2551,10 +2209,6 @@
     "753789": {
         "original question": "Is cystic hygroma a type of vascular malformation?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2583,10 +2237,6 @@
     "702504": {
         "original question": "Is fainting a known symptom of both pulmonary hypertension and tachycardia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2615,12 +2265,6 @@
     "221309": {
         "original question": "Can phenytoin be used to manage the symptoms of vascular malformations in the brain?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2651,12 +2295,6 @@
     "287953": {
         "original question": "Is the application of high-frequency, alternating-polarity radiofrequency electrical current to biological tissues, with the goal to stop bleeding and remove abnormal skin growth, a recognized treatment for the rare autosomal dominant disorder caused by mutations in the ATP2A2 gene?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2701,12 +2339,6 @@
     "600200": {
         "original question": "Can a congenital heart defect, which may occur in individuals with osteopathia striata with cranial sclerosis, cause chest pain?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2745,12 +2377,6 @@
     "449820": {
         "original question": "Does the gene responsible for Abruzzo–Erickson syndrome encode a 400-amino-acid protein with an NH2-terminal T-domain, and does this protein uniquely possess over 20 additional amino acids compared to other known T-domains?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2794,10 +2420,6 @@
     "759664": {
         "original question": "Is p53 expression reduced by UV radiation, thereby leading to the development of actinic keratosis (AK)?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2835,10 +2457,6 @@
     "771463": {
         "original question": "Are the typical treatment drugs always safe for pregnant women if they have acne rosacea?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2859,12 +2477,6 @@
     "343388": {
         "original question": "Is it incorrect to say that sarcoglycan genes produce proteins that help stabilize the cytoskeleton and that the cytoskeleton facilitates motion of the cellular contents?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2894,10 +2506,6 @@
     "669126": {
         "original question": "Is it true that children with Maroteaux–Lamy syndrome may develop hydrocephalus, a condition typically treated with surgery?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2925,10 +2533,6 @@
     "348471": {
         "original question": "Is it true that neutral lipid storage myopathy involves the buildup of fat droplets in muscle cells and can be diagnosed using electron microscopy following proper osmium tetroxide treatment?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -2981,10 +2585,6 @@
     "982027": {
         "original question": "Is it true that a prominent cause of phocomelia is the mother being prescribed the use of the drug thalidomide during pregnancy and that one of the possible treatments is surgery of the facial bones?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3021,10 +2621,6 @@
     "585995": {
         "original question": "Are retinal ganglion cells responsible for Blue cone monochromacy?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3053,10 +2649,6 @@
     "874494": {
         "original question": "Is Sézary syndrome distinct from mycosis fungoides in that it is characterized by systemic symptoms such as erythroderma, lymphadenopathy, and malignant T cells in the blood?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3113,10 +2705,6 @@
     "207452": {
         "original question": "Does L-carnitine aid in managing metabolic issues by enhancing energy metabolism and mitigating the toxic buildup of propionic acid and related metabolites?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3144,10 +2732,6 @@
     "831634": {
         "original question": "Can infections, autoimmune diseases, or cancer impact the aortopulmonary space?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3177,12 +2761,6 @@
     "988327": {
         "original question": "Is tracheobronchomegaly considered a birth defect?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3211,10 +2789,6 @@
     "796776": {
         "original question": "Can a retrovirus that attacks the immune system increase the risk of periodontal disease?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3235,12 +2809,6 @@
     "883181": {
         "original question": "Is Habermann's disease commonly misdiagnosed as a highly contagious disease caused by the varicella virus?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3274,12 +2842,6 @@
     "281973": {
         "original question": "Does the pain associated with Dercum's disease respond to treatment with NSAIDs?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3308,10 +2870,6 @@
     "457983": {
         "original question": "Is it true that keratin, a scleroprotein, can be overproduced in cases of vitamin A deficiency?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3348,10 +2906,6 @@
     "548483": {
         "original question": "Is chondromalacia patellae sometimes used synonymously with knee pain caused by issues involving the kneecap and the femur?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3382,12 +2936,6 @@
     "814637": {
         "original question": "Is the GLB1 gene responsible for both types of Gangliosidosis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3415,10 +2963,6 @@
     "545632": {
         "original question": "Is one of the three types of anterior horn disease associated with a mutation in the SMN1 gene?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3447,10 +2991,6 @@
     "679190": {
         "original question": "Does the needle puncture the amnion when diagnosing whether a pregnant woman has trisomy 8?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [],
@@ -3468,12 +3008,6 @@
     "330697": {
         "original question": "Is craniosynostosis associated with a persistent metopic suture?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3501,10 +3035,6 @@
     "353993": {
         "original question": "Is the hallucinogenic fish found near Reunion Island typically distributed at depths of 50 to 100 meters?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [],
@@ -3522,10 +3052,6 @@
     "726206": {
         "original question": "Is the laryngeal ventricle associated with conditions such as laryngocele when dilated?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3553,10 +3079,6 @@
     "627609": {
         "original question": "Is it true that yellow fever is one of the only two viral hemorrhagic fevers with an available vaccine, and that a single dose offers lifelong immunity, even in symptomatic HIV-positive individuals?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3591,10 +3113,6 @@
     "479239": {
         "original question": "Is one of the common findings in cri du chat syndrome a defect in the wall dividing the left and right ventricles of the heart?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3616,12 +3134,6 @@
     "238212": {
         "original question": "Do the early symptoms of psittacosis mimic those caused by an infection with Salmonella enterica Typhi?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3649,10 +3161,6 @@
     "536294": {
         "original question": "Is it true that cardiac tissue can become unresponsive to stimuli due to ischemia or heart attacks, potentially leading to life-threatening arrhythmias?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3689,10 +3197,6 @@
     "575712": {
         "original question": "Is it true that in systemic primary carnitine deficiency, cells are unable to transport an adequate amount of fatty acids into the organelles that produce ATP?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3738,10 +3242,6 @@
     "446401": {
         "original question": "Is it true that a fever of unknown origin is part of the differential diagnosis of mevalonate kinase deficiency?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3770,12 +3270,6 @@
     "421218": {
         "original question": "Is it true that individuals with Chédiak–Higashi syndrome have a defect in melanin production?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3803,12 +3297,6 @@
     "453784": {
         "original question": "Is it incorrect to argue that one of the symptoms of organic acidemias is reduced muscle resistance to stretching?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3836,13 +3324,6 @@
     "779207": {
         "original question": "Is one of the conditions seen in Klein-Waardenburg syndrome characterized by a scapula with a medial border that sticks straight out from the back?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no",
-            "winged scapula"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3870,10 +3351,6 @@
     "808942": {
         "original question": "Is it true that mitochondrial neurogastrointestinal encephalopathy syndrome does not affect the white matter of the brain?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3902,10 +3379,6 @@
     "442105": {
         "original question": "Is sweating a common symptom of both Shapiro syndrome and autoimmune encephalopathy?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3933,12 +3406,6 @@
     "361204": {
         "original question": "Is a decrease in white blood cells a common adverse effect of the drug, now used in relation to organ transplant, which was discovered by the Italian scientist Bartolomeo Gosio?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -3974,10 +3441,6 @@
     "108902": {
         "original question": "Could a deficiency in the enzyme responsible for converting xanthine into a breakdown product of purine nucleotides cause Type I xanthinuria?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4015,10 +3478,6 @@
     "132747": {
         "original question": "Does Leydig cell hypoplasia directly affect the sustentacular (or \"nurse\") cells in human testes, which contribute to spermatogenesis as a structural component of the seminiferous tubules?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4085,10 +3544,6 @@
     "406222": {
         "original question": "Does the gene associated with lysinuric protein intolerance (LPI) interact with the SLC3A2 gene?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4124,10 +3579,6 @@
     "527304": {
         "original question": "Is ionizing radiation a risk factor of both brain cancer and chronic myelogenous leukemia (CML)?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4166,12 +3617,6 @@
     "935298": {
         "original question": "Can a person with agenesis of the corpus callosum exhibit the setting sun sign?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4199,10 +3644,6 @@
     "607348": {
         "original question": "Is dyspnea a symptom of hypertrophic cardiomyopathy?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4230,12 +3671,6 @@
     "614616": {
         "original question": "Did the professor who described Hereditary Nonpolyposis Colorectal Cancer Syndrome (HNPCC) receive an award from the American Cancer Society in 1992?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4273,10 +3708,6 @@
     "936698": {
         "original question": "Would this renal artery narrowing condition be classified as secondary hypertension?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4304,12 +3735,6 @@
     "498019": {
         "original question": "Could a patient with elevated IGF-1 levels from a non-invasive pituitary gland tumor experience excessive growth in certain body parts?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "acromegaly"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4348,12 +3773,6 @@
     "205314": {
         "original question": "Do potential complications of Crohn's disease include secondary lymphangiectasia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4382,10 +3801,6 @@
     "945783": {
         "original question": "Are HIV-positive individuals who remain untreated for a long time highly susceptible to Progressive multifocal leukoencephalopathy (PML)?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4422,10 +3837,6 @@
     "378797": {
         "original question": "Can colchicine be used to manage the symptoms resulting from hyperuricemia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4454,10 +3865,6 @@
     "515614": {
         "original question": "Is abnormal activity of inflammatory cytokines such as TNF-alpha a common finding in cirrhosis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4495,12 +3902,6 @@
     "666402": {
         "original question": "Is it false that the shortening of muscles, tendons, skin, and nearby soft tissues, which leads to joint stiffness and restricted movement, is a major aspect of the pathology of parastremmatic dwarfism?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4532,10 +3933,6 @@
     "779986": {
         "original question": "Would it be incorrect to expect the EEG results of an individual with Mowat-Wilson syndrome to typically be abnormal?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4555,12 +3952,6 @@
     "964710": {
         "original question": "Is pneumoconiosis commonly associated with working in the ship demolition industry?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4572,10 +3963,6 @@
     "192672": {
         "original question": "Is it incorrect to state that diagnosing situs inversus involves generating images of body organs using strong magnetic fields, magnetic field gradients, and radio waves?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4610,12 +3997,6 @@
     "799254": {
         "original question": "Is a fetus affected by primordial dwarfism classified as pseudo-IUGR?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4636,10 +4017,6 @@
     "177071": {
         "original question": "Is the term 'arbovirus' generally used to refer to any virus transmitted by an arthropod vector, and do such viruses have the potential to cause brain inflammation?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4667,10 +4044,6 @@
     "739348": {
         "original question": "Is it true that individuals with keloid disorder are not at risk of developing keloids following a heart transplant?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4708,10 +4081,6 @@
     "647379": {
         "original question": "Is it false that Bejel is a disease endemic in many African countries and is closely related to the sexually transmitted disease syphilis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [],
@@ -4721,12 +4090,6 @@
     "422677": {
         "original question": "Is it true that a fragile site is located on the q arm of the X chromosome at position 27.2?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4763,10 +4126,6 @@
     "367313": {
         "original question": "Is a mutation in flavoproteins located on the matrix face of the inner mitochondrial membrane responsible for causing glutaric acidemia type II?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4821,10 +4180,6 @@
     "952612": {
         "original question": "Is it true that a person with Glanzmann's thrombasthenia should avoid ibuprofen because it inhibits platelet aggregation?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4855,10 +4210,6 @@
     "364309": {
         "original question": "Does hemophagocytic lymphohistiocytosis lead to an increase in the production of blood cellular components?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4886,10 +4237,6 @@
     "167352": {
         "original question": "Are the genes responsible for both Cockayne syndrome type A and type B located on chromosome 5?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4924,10 +4271,6 @@
     "955705": {
         "original question": "Is infliximab, a chimeric monoclonal antibody commonly used to treat Crohn's disease and ulcerative colitis, also indicated for collagenous colitis, a subtype of microscopic colitis sometimes classified as an inflammatory bowel disease?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -4984,10 +4327,6 @@
     "795535": {
         "original question": "Is a baby born at 36 weeks of gestational age who requires supplemental oxygen treatment at an increased risk of developing bronchopulmonary dysplasia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5017,14 +4356,6 @@
     "410582": {
         "original question": "Is the bacterium that causes pneumonic plague a coccobacillus?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "gram-negative, non-motile, coccobacillus bacterium",
-            "bacterium",
-            "non-motile coccobacillus"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [],
@@ -5042,10 +4373,6 @@
     "326868": {
         "original question": "Assuming somatic mosaicism is not involved, does a man with hemophilia A necessarily have to be hemizygous for the gene mutation?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5082,12 +4409,6 @@
     "259365": {
         "original question": "Would it be incorrect to state that a resting heart rate of less than 60 beats per minute is one of the cardiac manifestations of Emery-Dreifuss muscular dystrophy?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5124,10 +4445,6 @@
     "969034": {
         "original question": "Can a mutation in the Sonic Hedgehog (SHH) gene cause both polysyndactyly and holoprosencephaly?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5157,10 +4474,6 @@
     "473053": {
         "original question": "Does Grebe-type chondrodysplasia typically result in an adult height of less than 147 cm, with intelligence typically unaffected?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5187,10 +4500,6 @@
     "244100": {
         "original question": "Are prematurity and very low birth weight risk factors for the most common cause of short bowel syndrome (SBS) in infants?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5234,10 +4543,6 @@
     "670816": {
         "original question": "Does the transmission of Plasmodium into the human bloodstream through a mosquito bite qualify as a protozoan infection?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5273,10 +4578,6 @@
     "736626": {
         "original question": "Can MacDermot-Winter syndrome, prenatal alcohol exposure, and vertically transmitted infections cause microcephaly?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5319,10 +4620,6 @@
     "351583": {
         "original question": "If freshly formed zinc oxide is inhaled while welding galvanized materials, do symptoms typically resolve within 12 hours?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5350,10 +4647,6 @@
     "458288": {
         "original question": "There is a substance composed of a network of extracellular macromolecules and minerals, such as collagen, enzymes, glycoproteins, and hydroxyapatite, that provides structural and biochemical support to surrounding cells. Would prolidase deficiency affect the metabolism of this substance, leading to impaired wound healing?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5416,12 +4709,6 @@
     "585280": {
         "original question": "Can bevacizumab, which is known to cause thrombotic microangiopathy, also predispose patients to thrombotic thrombocytopenic purpura?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5461,12 +4748,6 @@
     "910085": {
         "original question": "Can both angiotensin-converting enzyme inhibitors (ACEIs) and aspirin be used to prevent kidney and cardiovascular diseases caused by diabetes?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5518,10 +4799,6 @@
     "290537": {
         "original question": "Can the precursor to the neurotransmitters dopamine, norepinephrine, and epinephrine be used to treat autosomal recessive GTP cyclohydrolase I deficiency (AR-GTPCHD)?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5560,10 +4837,6 @@
     "797118": {
         "original question": "Does the protein associated with Fanconi–Bickel syndrome rely on insulin for facilitated diffusion?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5592,10 +4865,6 @@
     "152701": {
         "original question": "Can the caloric reflex test effectively diagnose zonular cataract and nystagmus?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5624,10 +4893,6 @@
     "336682": {
         "original question": "Can an imaging technique that uses radiotracers to visualize metabolic changes be used to locate metastases in lung cancer patients?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5648,10 +4913,6 @@
     "681755": {
         "original question": "Does the nucleic acid testing technique used for diagnosing COVID-19, which detects RNA transcripts, tolerate RNA degradation as long as the RNA spanning the primer remains intact?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5686,10 +4947,6 @@
     "403013": {
         "original question": "Can Infliximab treat both hidradenitis suppurativa and psoriatic arthritis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5725,10 +4982,6 @@
     "648481": {
         "original question": "Would it be inappropriate to consider improper nutrient absorption in the gastrointestinal tract as a potential cause of hypolipoproteinemia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5756,12 +5009,6 @@
     "698744": {
         "original question": "Is is incorrect to say that Fryns-Aftimos syndrome is associated with unusually thick convolutions of the cerebral cortex?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5789,10 +5036,6 @@
     "253662": {
         "original question": "Is dysgeusia is an uncommon but known risk when one has their palatine tonsils removed surgically?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5820,12 +5063,6 @@
     "170557": {
         "original question": "Would it be incorrect to state that mutations in the DAX1 gene lead to problems in the development of the pituitary gland through disruption of its negative regulation of other nuclear receptors?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5856,12 +5093,6 @@
     "490038": {
         "original question": "Would it be correct to say that rapid gastric emptying is not a complication of the Nissen procedure?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5888,10 +5119,6 @@
     "912403": {
         "original question": "Is it true that alopecia areata is a disorder in which the body attacks its own actively growing hair follicles?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5920,10 +5147,6 @@
     "110195": {
         "original question": "Is it true that in juvenile ankylosing spondylitis, antibodies that bind to the contents of the cell nucleus are typically not present?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5959,10 +5182,6 @@
     "730123": {
         "original question": "Are antinuclear antibodies commonly used as diagnostic markers for ankylosing spondylitis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -5991,10 +5210,6 @@
     "165936": {
         "original question": "Is it true that vernal keratoconjunctivitis is thought to involve the least abundant antibody isotype?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6022,10 +5237,6 @@
     "921251": {
         "original question": "Is Raynaud's due to cryoglobulinemia a case of primary Raynaud's phenomenon?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6059,12 +5270,6 @@
     "865929": {
         "original question": "Is it true that one of the consequences of osteopetrosis is serum calcium levels exceeding 10.7 mg/dL?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6093,12 +5298,6 @@
     "974988": {
         "original question": "Is it false that mutations of the bone morphogenetic protein can cause anophthalmia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6127,10 +5326,6 @@
     "223602": {
         "original question": "Is it false that Ochoa syndrome is believed to be caused by a mutation in the HPSE2 gene, also known as UFS1?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6158,10 +5353,6 @@
     "637872": {
         "original question": "Is it true that 3-hydroxy-3-methylglutaryl-CoA lyase is a key enzyme in the production of acetoacetic acid, beta-hydroxybutyrate, and acetone in the human body?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6217,12 +5408,6 @@
     "273077": {
         "original question": "Is discomfort or pain when turning, moving, or flexing the neck a symptom of meningococcemia?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6243,10 +5428,6 @@
     "131236": {
         "original question": "Does the effect of alpha 1-antitrypsin deficiency on connective tissue integrity increase the risk of developing an abdominal aortic aneurysm?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6277,10 +5458,6 @@
     "280733": {
         "original question": "Is St. Vitus's dance one of the major Jones criteria used to diagnose acute rheumatic fever?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6321,12 +5498,6 @@
     "808372": {
         "original question": "Is 5-alpha-reductase 2 deficiency associated with one of the signs or symptoms that make up the medical triad for primary ovarian insufficiency (POI)?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6365,12 +5536,6 @@
     "201807": {
         "original question": "Are abnormal growth parameters observed at birth indicative of a disease caused by mutations in the KCNJ6 gene?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6399,12 +5564,6 @@
     "789625": {
         "original question": "Is the gene which, when deleted causes Smith–Magenis syndrome, but, when duplicated results in Potocki–Lupski syndrome, metal ion binding?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6440,10 +5599,6 @@
     "668585": {
         "original question": "Is the vitamin that is routinely recommended for the treatment of alcohol withdrawal syndrome insoluble in water?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6473,10 +5628,6 @@
     "588303": {
         "original question": "Can eruptive benign pigmented lesions develop as a long-term skin complication in individuals who have survived toxic epidermal necrolysis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6513,10 +5664,6 @@
     "805703": {
         "original question": "Does 3MC syndrome, which encompasses Michels syndrome, always present with asymmetry of the neurocranium and the facial skull?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6559,10 +5706,6 @@
     "412086": {
         "original question": "Does the rare autosomal recessive metabolic disorder caused by the GSS gene hinder the production of the most abundant non-protein thiol in animal cells?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6608,10 +5751,6 @@
     "954923": {
         "original question": "Can benign eruptive conditions involving pigment-producing skin cells be a complication of toxic epidermal necrolysis (TEN)?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6649,10 +5788,6 @@
     "994467": {
         "original question": "Is Ellis-van Creveld syndrome influenced by defects in the structure and function of the primary cilium?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6687,10 +5822,6 @@
     "599997": {
         "original question": "Can liver dysfunction cause both vision loss and jaundice?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6727,10 +5858,6 @@
     "393178": {
         "original question": "Can Meningiomas be visualized with contrast using an imaging technique that employs a rotating X-ray tube and a row of detectors.",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6751,10 +5878,6 @@
     "599931": {
         "original question": "Did the neurologist who first identified and described Familial amyloid polyneuropathy a founder of a major bioscience research institute located in Lisbon?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6774,12 +5897,6 @@
     "427523": {
         "original question": "Is one of the symptoms of Ayazi syndrome excessive body fat that has accumulated to such an extent that it can potentially have negative effects on health?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [
-            "no"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6807,12 +5924,6 @@
     "410810": {
         "original question": "Is anterior chamber inflammation and vitritis associated with punctate inner choroiditis?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [
-            "yes"
-        ],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6849,10 +5960,6 @@
     "171046": {
         "original question": "Can a single mutated copy of a gene cause Van der Woude syndrome (VWS)?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6880,10 +5987,6 @@
     "422230": {
         "original question": "Is it possible to reverse hearing loss caused by hypertrophic cardiomyopathy that results from the 8363G>A mutation in the MT-TK gene?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "no"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [
@@ -6912,10 +6015,6 @@
     "669273": {
         "original question": "Is one of the symptoms associated with oculocerebrocutaneous syndrome the buildup of cerebrospinal fluid (CSF) within the brain, which can cause increased pressure in the skull?",
         "target_answer_type": "correctness",
-        "true ans": [
-            "yes"
-        ],
-        "false ans": [],
         "type_q": "direct",
         "entities_q": {
             "ner": [

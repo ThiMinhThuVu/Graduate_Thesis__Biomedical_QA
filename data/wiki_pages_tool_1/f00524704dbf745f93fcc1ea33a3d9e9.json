@@ -1,0 +1,95 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/sulfatase": {
+                "title": "Sulfatase",
+                "url": "https://en.wikipedia.org/wiki/sulfatase",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "In biochemistry, sulfatases EC 3.1.6.- are a class of enzymes of the esterase class that catalyze the hydrolysis of sulfate esters into an alcohol and a bisulfate:",
+                    "These may be found on a range of substrates, including steroids, carbohydrates and proteins. Sulfate esters may be formed from various alcohols and amines. In the latter case the resultant N-sulfates can also be termed sulfamates.",
+                    "Sulfatases play important roles in the cycling of sulfur in the environment, in the degradation of sulfated glycosaminoglycans and glycolipids in the lysosome, and in remodelling sulfated glycosaminoglycans in the extracellular space. Together with sulfotransferases, sulfatases form the major catalytic machinery for the synthesis and breakage of sulfate esters.",
+                    "",
+                    "=== Occurrence and importance ===",
+                    "Sulfatases are found in lower and higher organisms. In higher organisms they are found in intracellular and extracellular spaces. Steroid sulfatase is distributed in a wide range of tissues throughout the body, enabling sulfated steroids synthesized in the adrenals and gonads to be desulfated following distribution through the circulation system. Many sulfatases are localized in the lysosome, an acidic digestive organelle found within the cell. Lysosomal sulfatases cleave a range of sulfated carbohydrates including sulfated glycosaminoglycans and glycolipids. Genetic defects in sulfatase activity can arise through mutations in individual sulfatases and result in certain lysosomal storage disorders with a spectrum of phenotypes ranging from defects in physical and intellectual development.",
+                    "",
+                    "=== Three-dimensional structure ===",
+                    "The following sulfatases have been shown to be structurally related based on their sequence homology:[1][2][3]",
+                    "<info> arylsulfatase A EC 3.1.6.8 (ASA), a lysosomal enzyme which hydrolyzes cerebroside sulfate;",
+                    "<info> arylsulfatase B EC 3.1.6.12 (ASB) which hydrolyzes the sulfate ester group from N-acetylgalactosamine 4-sulfate residues of dermatan sulfate;",
+                    "<info> arylsulfatase C (ASD) and E (ASE); steryl-sulfatase EC 3.1.6.2 (STS), a membrane bound enzyme which hydrolyzes 3-beta-hydroxy steroid sulfates;",
+                    "<info> iduronate 2-sulfatase EC 3.1.6.13 (IDS), a lysosomal enzyme that hydrolyzes the 2-sulfate groups from iduronic acids in dermatan sulfate and heparan sulfate;",
+                    "<info> N-acetylgalactosamine-6-sulfatase EC 3.1.6.4, which hydrolyzes the 6-sulfate groups of the N-acetyl-D-galactosamine of chondroitin sulfate and D-galactose 6-sulfate units of keratan sulfate;",
+                    "<info> N-sulfoglucosamine sulfohydrolase EC 3.10.1.1, the lysosomal enzyme that hydrolyses N-sulfo-D-glucosamine into glucosamine and sulfate;",
+                    "<info> glucosamine-6-sulfatase EC 3.1.6.14 (G6S), which hydrolyzes the N-acetyl-D-glucosamine 6-sulfate units of heparan sulfate and keratan sulfate;",
+                    "<info> N-sulfoglucosamine sulfohydrolase EC 3.10.1.1, the lysosomal enzyme that hydrolyses N-sulfo-D-glucosamine into glucosamine and sulfate;",
+                    "<info> sea urchin embryo arylsulfatase EC 3.1.6.1;",
+                    "<info> green algae arylsulfatase EC 3.1.6.1, which plays a role in the mineralization of sulfates; and",
+                    "<info> arylsulfatase EC 3.1.6.1 from Escherichia coli, Klebsiella aerogenes and Pseudomonas aeruginosa.",
+                    "",
+                    "=== Human proteins containing this domain ===",
+                    "ARSA;      ARSB;      ARSD;      ARSF;      ARSG;      ARSH;      ARSI;\nARSJ;      ARSK;      ARSL;      GALNS;     GNS;       IDS;       PIGG;      SGSH;      STS;\nSULF1;     SULF2;",
+                    "",
+                    "=== References ===",
+                    "<info> ^ von Figura K, Vingron M, Schmidt B, Meyer HE, Peters C, Rommerskirch W, Rupp K, Pohlmann R, Zuhlsdorf M (1990). \"Phylogenetic conservation of arylsulfatases. cDNA cloning and expression of human arylsulfatase B\". J. Biol. Chem. 265 (6): 3374–3381. doi:10.1016/S0021-9258(19)39778-9. PMID 2303452.",
+                    "<info> ^ Wilson PJ, Morris CP, Anson DS, Occhiodoro T, Bielicki J, Clements PR, Hopwood JJ (1990). \"Hunter syndrome: isolation of an iduronate-2-sulfatase cDNA clone and analysis of patient DNA\". Proc. Natl. Acad. Sci. U.S.A. 87 (21): 8531–8535. Bibcode:1990PNAS...87.8531W. doi:10.1073/pnas.87.21.8531. PMC 54990. PMID 2122463.",
+                    "<info> ^ Grossman AR, de Hostos EL, Schilling J (1989). \"Structure and expression of the gene encoding the periplasmic arylsulfatase of Chlamydomonas reinhardtii\". Mol. Gen. Genet. 218 (2): 229–239. doi:10.1007/BF00331273. PMID 2476654. S2CID 20866325.",
+                    "",
+                    "=== External links ===",
+                    "<info> Sulfatases at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> \"Annotation of the sulfatase gene family\" at mad-cow.org",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "In biochemistry, sulfatases EC 3.1.6.- are a class of enzymes of the esterase class that catalyze the hydrolysis of sulfate esters into an alcohol and a bisulfate:",
+                            "These may be found on a range of substrates, including steroids, carbohydrates and proteins. Sulfate esters may be formed from various alcohols and amines. In the latter case the resultant N-sulfates can also be termed sulfamates.",
+                            "Sulfatases play important roles in the cycling of sulfur in the environment, in the degradation of sulfated glycosaminoglycans and glycolipids in the lysosome, and in remodelling sulfated glycosaminoglycans in the extracellular space. Together with sulfotransferases, sulfatases form the major catalytic machinery for the synthesis and breakage of sulfate esters."
+                        ]
+                    },
+                    "Occurrence and importance": {
+                        "content": [
+                            "Sulfatases are found in lower and higher organisms. In higher organisms they are found in intracellular and extracellular spaces. Steroid sulfatase is distributed in a wide range of tissues throughout the body, enabling sulfated steroids synthesized in the adrenals and gonads to be desulfated following distribution through the circulation system. Many sulfatases are localized in the lysosome, an acidic digestive organelle found within the cell. Lysosomal sulfatases cleave a range of sulfated carbohydrates including sulfated glycosaminoglycans and glycolipids. Genetic defects in sulfatase activity can arise through mutations in individual sulfatases and result in certain lysosomal storage disorders with a spectrum of phenotypes ranging from defects in physical and intellectual development."
+                        ]
+                    },
+                    "Three-dimensional structure": {
+                        "content": [
+                            "The following sulfatases have been shown to be structurally related based on their sequence homology:[1][2][3]",
+                            "<info> arylsulfatase A EC 3.1.6.8 (ASA), a lysosomal enzyme which hydrolyzes cerebroside sulfate;",
+                            "<info> arylsulfatase B EC 3.1.6.12 (ASB) which hydrolyzes the sulfate ester group from N-acetylgalactosamine 4-sulfate residues of dermatan sulfate;",
+                            "<info> arylsulfatase C (ASD) and E (ASE); steryl-sulfatase EC 3.1.6.2 (STS), a membrane bound enzyme which hydrolyzes 3-beta-hydroxy steroid sulfates;",
+                            "<info> iduronate 2-sulfatase EC 3.1.6.13 (IDS), a lysosomal enzyme that hydrolyzes the 2-sulfate groups from iduronic acids in dermatan sulfate and heparan sulfate;",
+                            "<info> N-acetylgalactosamine-6-sulfatase EC 3.1.6.4, which hydrolyzes the 6-sulfate groups of the N-acetyl-D-galactosamine of chondroitin sulfate and D-galactose 6-sulfate units of keratan sulfate;",
+                            "<info> N-sulfoglucosamine sulfohydrolase EC 3.10.1.1, the lysosomal enzyme that hydrolyses N-sulfo-D-glucosamine into glucosamine and sulfate;",
+                            "<info> glucosamine-6-sulfatase EC 3.1.6.14 (G6S), which hydrolyzes the N-acetyl-D-glucosamine 6-sulfate units of heparan sulfate and keratan sulfate;",
+                            "<info> N-sulfoglucosamine sulfohydrolase EC 3.10.1.1, the lysosomal enzyme that hydrolyses N-sulfo-D-glucosamine into glucosamine and sulfate;",
+                            "<info> sea urchin embryo arylsulfatase EC 3.1.6.1;",
+                            "<info> green algae arylsulfatase EC 3.1.6.1, which plays a role in the mineralization of sulfates; and",
+                            "<info> arylsulfatase EC 3.1.6.1 from Escherichia coli, Klebsiella aerogenes and Pseudomonas aeruginosa."
+                        ]
+                    },
+                    "Human proteins containing this domain": {
+                        "content": [
+                            "ARSA;      ARSB;      ARSD;      ARSF;      ARSG;      ARSH;      ARSI;\nARSJ;      ARSK;      ARSL;      GALNS;     GNS;       IDS;       PIGG;      SGSH;      STS;\nSULF1;     SULF2;"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ von Figura K, Vingron M, Schmidt B, Meyer HE, Peters C, Rommerskirch W, Rupp K, Pohlmann R, Zuhlsdorf M (1990). \"Phylogenetic conservation of arylsulfatases. cDNA cloning and expression of human arylsulfatase B\". J. Biol. Chem. 265 (6): 3374–3381. doi:10.1016/S0021-9258(19)39778-9. PMID 2303452.",
+                            "<info> ^ Wilson PJ, Morris CP, Anson DS, Occhiodoro T, Bielicki J, Clements PR, Hopwood JJ (1990). \"Hunter syndrome: isolation of an iduronate-2-sulfatase cDNA clone and analysis of patient DNA\". Proc. Natl. Acad. Sci. U.S.A. 87 (21): 8531–8535. Bibcode:1990PNAS...87.8531W. doi:10.1073/pnas.87.21.8531. PMC 54990. PMID 2122463.",
+                            "<info> ^ Grossman AR, de Hostos EL, Schilling J (1989). \"Structure and expression of the gene encoding the periplasmic arylsulfatase of Chlamydomonas reinhardtii\". Mol. Gen. Genet. 218 (2): 229–239. doi:10.1007/BF00331273. PMID 2476654. S2CID 20866325."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Sulfatases at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> \"Annotation of the sulfatase gene family\" at mad-cow.org"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

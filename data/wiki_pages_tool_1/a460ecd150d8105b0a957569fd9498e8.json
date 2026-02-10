@@ -1,0 +1,51 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/michels": {
+                "title": "Michels",
+                "url": "https://en.wikipedia.org/wiki/michels",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Michels is a surname, derived from Michaels, which in turn is derived from the given name Michael. Notable people with the surname include:",
+                    "<info> Birgit Michels (born 1984), German badminton player",
+                    "<info> David Michels, British businessman",
+                    "<info> Jan Michels, Dutch footballer",
+                    "<info> Jeff Michels, American weight lifter",
+                    "<info> Mareno Michels, Dutch darts player",
+                    "<info> Pete Michels, American television director",
+                    "<info> Rinus Michels, Dutch association football player and coach",
+                    "<info> Robert Michels, German sociologist",
+                    "<info> Robert Michels (physician), physician and professor of Medicine and of Psychiatry",
+                    "<info> Tim Michels, American businessperson",
+                    "",
+                    "=== See also ===",
+                    "<info> Michels syndrome, a congenital disorder",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Michels is a surname, derived from Michaels, which in turn is derived from the given name Michael. Notable people with the surname include:",
+                            "<info> Birgit Michels (born 1984), German badminton player",
+                            "<info> David Michels, British businessman",
+                            "<info> Jan Michels, Dutch footballer",
+                            "<info> Jeff Michels, American weight lifter",
+                            "<info> Mareno Michels, Dutch darts player",
+                            "<info> Pete Michels, American television director",
+                            "<info> Rinus Michels, Dutch association football player and coach",
+                            "<info> Robert Michels, German sociologist",
+                            "<info> Robert Michels (physician), physician and professor of Medicine and of Psychiatry",
+                            "<info> Tim Michels, American businessperson"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Michels syndrome, a congenital disorder"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

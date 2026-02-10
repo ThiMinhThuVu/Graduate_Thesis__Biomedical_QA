@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/deep_vein_thrombosis": {
+                "title": "Deep vein thrombosis",
+                "url": "https://en.wikipedia.org/wiki/deep_vein_thrombosis",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

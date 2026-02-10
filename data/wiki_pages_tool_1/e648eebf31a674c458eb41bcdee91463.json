@@ -1,0 +1,107 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/immunosuppression": {
+                "title": "Immunosuppression",
+                "url": "https://en.wikipedia.org/wiki/immunosuppression",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Immunosuppression is a reduction of the activation or efficacy of the immune system. Some portions of the immune system itself have immunosuppressive effects on other parts of the immune system, and immunosuppression may occur as an adverse reaction to treatment of other conditions.[1][2]",
+                    "In general, deliberately induced immunosuppression is performed to prevent the body from rejecting an organ transplant.[3] Additionally, it is used for treating graft-versus-host disease after a bone marrow transplant, or for the treatment of auto-immune diseases such as systemic lupus erythematosus, rheumatoid arthritis, Sjögren's syndrome, or Crohn's disease. This is typically done using medications, but may involve surgery (splenectomy), plasmapheresis, or radiation. A person who is undergoing immunosuppression, or whose immune system is weak for some other reasons (such as chemotherapy or HIV), is said to be immunocompromised.[4]",
+                    "",
+                    "=== Deliberately induced ===",
+                    "Administration of immunosuppressive medications or immunosuppressants is the main method for deliberately inducing immunosuppression; in optimal circumstances, immunosuppressive drugs primarily target hyperactive components of the immune system.[5] People in remission from cancer who require immunosuppression are not more likely to experience a recurrence.[6] Throughout its history, radiation therapy has been used to decrease the strength of the immune system.[7]  Dr. Joseph Murray of Brigham and Women's Hospital was given the Nobel Prize in Physiology or Medicine in 1990 for work on immunosuppression.[8]",
+                    "Immunosuppressive drugs have the potential to cause immunodeficiency, which can increase susceptibility to opportunistic infection and decrease cancer immunosurveillance.[9] Immunosuppressants may be prescribed when a normal immune response is undesirable, such as in autoimmune diseases.[10]",
+                    "Steroids were the first class of immunosuppressant drugs identified, though side-effects of early compounds limited their use. The more specific[vague] azathioprine was identified in 1960, but it was the discovery of ciclosporin in 1980 (together with azathioprine) that allowed significant expansion of transplantation to less well-matched donor-recipient pairs as well as broad application to  lung transplantation, pancreas transplantation, and heart transplantation.[3] After an organ transplantation, the body will nearly always reject the new organ(s) due to differences in human leukocyte antigen between the donor and recipient. As a result, the immune system detects the new tissue as \"foreign\", and attempts to remove it by attacking it with  white blood cells, resulting in the death of the donated tissue. Immunosuppressants are administered in order to help prevent rejection; however, the body becomes more vulnerable to infections and malignancy during the course of such treatment.[11][12][13]",
+                    "",
+                    "=== Non-deliberate immunosuppression ===",
+                    "Non-deliberate immunosuppression can occur in, for example, ataxia–telangiectasia, complement deficiencies, many types of cancer, and certain chronic infections such as human immunodeficiency virus (HIV). The unwanted effect in non-deliberate immunosuppression is immunodeficiency that results in increased susceptibility to pathogens, such as bacteria and viruses.[1]",
+                    "Immunodeficiency is also a potential adverse effect of many immunosuppressant drugs, in this sense, the scope of the term immunosuppression in general includes both beneficial and potential adverse effects of decreasing the function of the immune system.[14]",
+                    "B cell deficiency and T cell deficiency are immune impairment that individuals are born with or are acquired, which in turn can lead to immunodeficiency problems.[15] Nezelof syndrome is an example of an immunodeficiency of T-cells.[16]",
+                    "",
+                    "=== See also ===",
+                    "<info> Discovery and development of mTOR inhibitors",
+                    "<info> Treatment methods for preventing organ rejection",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b \"Immunodeficiency disorders: MedlinePlus Medical Encyclopedia\". medlineplus.gov. Retrieved 2017-05-06.",
+                    "<info> ^ \"NCI Dictionary of Cancer Terms\". National Cancer Institute. 2011-02-02. Retrieved 2017-05-06.",
+                    "<info> ^ a b \"Immunosuppression: Overview, History, Drugs\". 2017-01-06. {{cite journal}}: Cite journal requires |journal= (help)",
+                    "<info> ^ \"NCI Dictionary of Cancer Terms\". National Cancer Institute. 2011-02-02. Retrieved 2019-11-28.",
+                    "<info> ^ Wiseman, Alexander C. (2016-02-05). \"Immunosuppressive Medications\". Clinical Journal of the American Society of Nephrology. 11 (2): 332–343. doi:10.2215/CJN.08570814. ISSN 1555-9041. PMC 4741049. PMID 26170177.",
+                    "<info> ^ Shelton, Edward; Laharie, David; Scott, Frank I.; Mamtani, Ronac; Lewis, James D.; Colombel, Jean-Frederic; Ananthakrishnan, Ashwin N. (July 2016). \"Cancer Recurrence Following Immune-Suppressive Therapies in Patients With Immune-Mediated Diseases: A Systematic Review and Meta-analysis\". Gastroenterology. 151 (1): 97–109.e4. doi:10.1053/j.gastro.2016.03.037. PMC 4925196. PMID 27039969.",
+                    "<info> ^ Ladwig, Gail B.; Ackley, Betty J.; Makic, Mary Beth Flynn (2016-03-15). Mosby's Guide to Nursing Diagnosis - E-Book. Elsevier Health Sciences. p. 28. ISBN 9780323390279.",
+                    "<info> ^ \"Joseph E. Murray - Facts\". www.nobelprize.org. Retrieved 2017-05-12.",
+                    "<info> ^ \"Immunosuppression\". National Cancer Institute. 2015-04-29. Retrieved 2017-07-13.",
+                    "<info> ^ Chandrashekara, S. (2012). \"The treatment strategies of autoimmune disease may need a different approach from conventional protocol: A review\". Indian Journal of Pharmacology. 44 (6): 665–671. doi:10.4103/0253-7613.103235. ISSN 0253-7613. PMC 3523489. PMID 23248391.",
+                    "<info> ^ \"Transplant rejection: MedlinePlus Medical Encyclopedia\". medlineplus.gov. Retrieved 2017-07-14.",
+                    "<info> ^ \"Immunology of Transplant Rejection: Overview, History, Types of Grafts\". 2017-03-09. {{cite journal}}: Cite journal requires |journal= (help)",
+                    "<info> ^ Charles A Janeway, Jr; Travers, Paul; Walport, Mark; Shlomchik, Mark J. (2001). \"Responses to alloantigens and transplant rejection\". Garland Science. {{cite journal}}: Cite journal requires |journal= (help)",
+                    "<info> ^ Lallana, Enrico C; Fadul, Camilo E (2011). \"Toxicities of Immunosuppressive Treatment of Autoimmune Neurologic Diseases\". Current Neuropharmacology. 9 (3): 468–477. doi:10.2174/157015911796557939. ISSN 1570-159X. PMC 3151601. PMID 22379461.",
+                    "<info> ^ \"Immunodeficiency (Primary and Secondary). Information\". patient.info. Retrieved 2017-07-13.",
+                    "<info> ^ Disorders, National Organization for Rare (2003). NORD Guide to Rare Disorders. Lippincott Williams & Wilkins. p. 408. ISBN 9780781730631. Retrieved 2 June 2017.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Boraschi, Diana; Penton-Rol, Giselle (2016-01-25). Immune Rebalancing: The Future of Immunosuppression. Academic Press. ISBN 9780128033364.Retrieved 6 May 2017.",
+                    "<info> Thomson, A. W. (2001). Therapeutic Immunosuppression. Springer Science & Business Media. ISBN 9789401007658. Retrieved 6 May 2017.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Immunosuppression is a reduction of the activation or efficacy of the immune system. Some portions of the immune system itself have immunosuppressive effects on other parts of the immune system, and immunosuppression may occur as an adverse reaction to treatment of other conditions.[1][2]",
+                            "In general, deliberately induced immunosuppression is performed to prevent the body from rejecting an organ transplant.[3] Additionally, it is used for treating graft-versus-host disease after a bone marrow transplant, or for the treatment of auto-immune diseases such as systemic lupus erythematosus, rheumatoid arthritis, Sjögren's syndrome, or Crohn's disease. This is typically done using medications, but may involve surgery (splenectomy), plasmapheresis, or radiation. A person who is undergoing immunosuppression, or whose immune system is weak for some other reasons (such as chemotherapy or HIV), is said to be immunocompromised.[4]"
+                        ]
+                    },
+                    "Deliberately induced": {
+                        "content": [
+                            "Administration of immunosuppressive medications or immunosuppressants is the main method for deliberately inducing immunosuppression; in optimal circumstances, immunosuppressive drugs primarily target hyperactive components of the immune system.[5] People in remission from cancer who require immunosuppression are not more likely to experience a recurrence.[6] Throughout its history, radiation therapy has been used to decrease the strength of the immune system.[7]  Dr. Joseph Murray of Brigham and Women's Hospital was given the Nobel Prize in Physiology or Medicine in 1990 for work on immunosuppression.[8]",
+                            "Immunosuppressive drugs have the potential to cause immunodeficiency, which can increase susceptibility to opportunistic infection and decrease cancer immunosurveillance.[9] Immunosuppressants may be prescribed when a normal immune response is undesirable, such as in autoimmune diseases.[10]",
+                            "Steroids were the first class of immunosuppressant drugs identified, though side-effects of early compounds limited their use. The more specific[vague] azathioprine was identified in 1960, but it was the discovery of ciclosporin in 1980 (together with azathioprine) that allowed significant expansion of transplantation to less well-matched donor-recipient pairs as well as broad application to  lung transplantation, pancreas transplantation, and heart transplantation.[3] After an organ transplantation, the body will nearly always reject the new organ(s) due to differences in human leukocyte antigen between the donor and recipient. As a result, the immune system detects the new tissue as \"foreign\", and attempts to remove it by attacking it with  white blood cells, resulting in the death of the donated tissue. Immunosuppressants are administered in order to help prevent rejection; however, the body becomes more vulnerable to infections and malignancy during the course of such treatment.[11][12][13]"
+                        ]
+                    },
+                    "Non-deliberate immunosuppression": {
+                        "content": [
+                            "Non-deliberate immunosuppression can occur in, for example, ataxia–telangiectasia, complement deficiencies, many types of cancer, and certain chronic infections such as human immunodeficiency virus (HIV). The unwanted effect in non-deliberate immunosuppression is immunodeficiency that results in increased susceptibility to pathogens, such as bacteria and viruses.[1]",
+                            "Immunodeficiency is also a potential adverse effect of many immunosuppressant drugs, in this sense, the scope of the term immunosuppression in general includes both beneficial and potential adverse effects of decreasing the function of the immune system.[14]",
+                            "B cell deficiency and T cell deficiency are immune impairment that individuals are born with or are acquired, which in turn can lead to immunodeficiency problems.[15] Nezelof syndrome is an example of an immunodeficiency of T-cells.[16]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Discovery and development of mTOR inhibitors",
+                            "<info> Treatment methods for preventing organ rejection"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b \"Immunodeficiency disorders: MedlinePlus Medical Encyclopedia\". medlineplus.gov. Retrieved 2017-05-06.",
+                            "<info> ^ \"NCI Dictionary of Cancer Terms\". National Cancer Institute. 2011-02-02. Retrieved 2017-05-06.",
+                            "<info> ^ a b \"Immunosuppression: Overview, History, Drugs\". 2017-01-06. {{cite journal}}: Cite journal requires |journal= (help)",
+                            "<info> ^ \"NCI Dictionary of Cancer Terms\". National Cancer Institute. 2011-02-02. Retrieved 2019-11-28.",
+                            "<info> ^ Wiseman, Alexander C. (2016-02-05). \"Immunosuppressive Medications\". Clinical Journal of the American Society of Nephrology. 11 (2): 332–343. doi:10.2215/CJN.08570814. ISSN 1555-9041. PMC 4741049. PMID 26170177.",
+                            "<info> ^ Shelton, Edward; Laharie, David; Scott, Frank I.; Mamtani, Ronac; Lewis, James D.; Colombel, Jean-Frederic; Ananthakrishnan, Ashwin N. (July 2016). \"Cancer Recurrence Following Immune-Suppressive Therapies in Patients With Immune-Mediated Diseases: A Systematic Review and Meta-analysis\". Gastroenterology. 151 (1): 97–109.e4. doi:10.1053/j.gastro.2016.03.037. PMC 4925196. PMID 27039969.",
+                            "<info> ^ Ladwig, Gail B.; Ackley, Betty J.; Makic, Mary Beth Flynn (2016-03-15). Mosby's Guide to Nursing Diagnosis - E-Book. Elsevier Health Sciences. p. 28. ISBN 9780323390279.",
+                            "<info> ^ \"Joseph E. Murray - Facts\". www.nobelprize.org. Retrieved 2017-05-12.",
+                            "<info> ^ \"Immunosuppression\". National Cancer Institute. 2015-04-29. Retrieved 2017-07-13.",
+                            "<info> ^ Chandrashekara, S. (2012). \"The treatment strategies of autoimmune disease may need a different approach from conventional protocol: A review\". Indian Journal of Pharmacology. 44 (6): 665–671. doi:10.4103/0253-7613.103235. ISSN 0253-7613. PMC 3523489. PMID 23248391.",
+                            "<info> ^ \"Transplant rejection: MedlinePlus Medical Encyclopedia\". medlineplus.gov. Retrieved 2017-07-14.",
+                            "<info> ^ \"Immunology of Transplant Rejection: Overview, History, Types of Grafts\". 2017-03-09. {{cite journal}}: Cite journal requires |journal= (help)",
+                            "<info> ^ Charles A Janeway, Jr; Travers, Paul; Walport, Mark; Shlomchik, Mark J. (2001). \"Responses to alloantigens and transplant rejection\". Garland Science. {{cite journal}}: Cite journal requires |journal= (help)",
+                            "<info> ^ Lallana, Enrico C; Fadul, Camilo E (2011). \"Toxicities of Immunosuppressive Treatment of Autoimmune Neurologic Diseases\". Current Neuropharmacology. 9 (3): 468–477. doi:10.2174/157015911796557939. ISSN 1570-159X. PMC 3151601. PMID 22379461.",
+                            "<info> ^ \"Immunodeficiency (Primary and Secondary). Information\". patient.info. Retrieved 2017-07-13.",
+                            "<info> ^ Disorders, National Organization for Rare (2003). NORD Guide to Rare Disorders. Lippincott Williams & Wilkins. p. 408. ISBN 9780781730631. Retrieved 2 June 2017."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Boraschi, Diana; Penton-Rol, Giselle (2016-01-25). Immune Rebalancing: The Future of Immunosuppression. Academic Press. ISBN 9780128033364.Retrieved 6 May 2017.",
+                            "<info> Thomson, A. W. (2001). Therapeutic Immunosuppression. Springer Science & Business Media. ISBN 9789401007658. Retrieved 6 May 2017."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

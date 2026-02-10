@@ -1,0 +1,135 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/sarcomere": {
+                "title": "Sarcomere",
+                "url": "https://en.wikipedia.org/wiki/sarcomere",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A sarcomere (Greek σάρξ sarx \"flesh\", μέρος meros \"part\") is the smallest functional unit of striated muscle tissue.[1] It is the repeating unit between two Z-lines.[further explanation needed] Skeletal muscles are composed of tubular muscle cells (called muscle fibers or myofibers) which are formed during  embryonic myogenesis. Muscle fibers contain numerous tubular myofibrils. Myofibrils are composed of repeating sections of sarcomeres, which appear under the microscope as alternating dark and light bands. Sarcomeres are composed of long, fibrous proteins as filaments that slide past each other when a muscle contracts or relaxes. The costamere is a different component that connects the sarcomere to the sarcolemma.",
+                    "Two of the important proteins are myosin, which forms the thick filament, and actin, which forms the thin filament. Myosin has a long fibrous tail and a globular head that binds to actin. The myosin head also binds to ATP, which is the source of energy for muscle movement. Myosin can only bind to actin when the binding sites on actin are exposed by calcium ions.",
+                    "Actin molecules are bound to the Z-line, which forms the borders of the sarcomere. Other bands appear when the sarcomere is relaxed.[2]",
+                    "The myofibrils of smooth muscle cells are not arranged into sarcomeres.",
+                    "",
+                    "=== Bands ===",
+                    "The sarcomeres give skeletal and cardiac muscle their striated appearance,[2] which was first described by Van Leeuwenhoek.[3]",
+                    "<info> A sarcomere is defined as the segment between two neighbouring Z-lines (or Z-discs). In electron micrographs of cross-striated muscle, the Z-line (from the German \"zwischen\" meaning between) appears in between the I-bands as a dark line that anchors the actin myofilaments.",
+                    "<info> Surrounding the Z-line is the region of the I-band (for isotropic). I-band is the zone of thin filaments that is not superimposed by thick filaments (myosin).",
+                    "<info> Following the I-band is the A-band (for anisotropic).  Named for their properties under a polarized light microscope. An A-band contains the entire length of a single thick filament. The anisotropic band contains both thick and thin filaments.",
+                    "<info> Within the A-band is a paler region called the H-zone (from the German \"heller\", brighter). Named for their lighter appearance under a polarization microscope. H-band is the zone of the thick filaments that has no actin.",
+                    "<info> Within the H-zone is a thin M-line (from the German \"mittel\" meaning middle), appears in the middle of the sarcomere formed of cross-connecting elements of the cytoskeleton.",
+                    "The relationship between the proteins and the regions of the sarcomere are as follows:",
+                    "<info> Actin filaments, the thin filaments, are the major component of the I-band and extend into the A-band.",
+                    "<info> Myosin filaments, the thick filaments, are bipolar and extend throughout the A-band.  They are cross-linked at the centre by the M-band.",
+                    "<info> The giant protein titin (connectin) extends from the Z-line of the sarcomere, where it binds to the thick filament (myosin) system, to the M-band, where it is thought to interact with the thick filaments. Titin (and its splice isoforms) is the biggest single highly elasticated protein found in nature. It provides binding sites for numerous proteins and is thought to play an important role as sarcomeric ruler and as blueprint for the assembly of the sarcomere.",
+                    "<info> Another giant protein, nebulin, is hypothesised to extend along the thin filaments and the entire I-Band. Similar to titin, it is thought to act as a molecular ruler along for thin filament assembly.",
+                    "<info> Several proteins important for the stability of the sarcomeric structure are found in the Z-line as well as in the M-band of the sarcomere.",
+                    "<info> Actin filaments and titin molecules are cross-linked in the Z-disc via the Z-line protein alpha-actinin.",
+                    "<info> The M-band proteins myomesin as well as C-protein crosslink the thick filament system (myosins) and the M-band part of titin (the elastic filaments).",
+                    "<info> The M-line also binds creatine kinase, which facilitates the reaction of ADP and phosphocreatine into ATP and creatine.",
+                    "<info> The interaction between actin and myosin filaments in the A-band of the sarcomere is responsible for the muscle contraction (based on the sliding filament model).[2]",
+                    "",
+                    "=== Contraction ===",
+                    "The protein tropomyosin covers the myosin-binding sites of the actin molecules in the muscle cell.  For a muscle cell to contract, tropomyosin must be moved to uncover the binding sites on the actin.  Calcium ions bind with troponin C molecules (which are dispersed throughout the tropomyosin protein) and alter the structure of the tropomyosin, forcing it to reveal the cross-bridge binding site on the actin.",
+                    "The concentration of calcium within muscle cells is controlled by the sarcoplasmic reticulum, a unique form of endoplasmic reticulum in the sarcoplasm.",
+                    "Muscle cells are stimulated when a motor neuron releases the neurotransmitter acetylcholine, which travels across the neuromuscular junction (the synapse between the terminal button of the neuron and the muscle cell).  Acetylcholine binds to a post-synaptic nicotinic acetylcholine receptor. A change in the receptor conformation allows an influx of sodium ions and initiation of a post-synaptic action potential. The action potential then travels along T-tubules (transverse tubules) until it reaches the sarcoplasmic reticulum.",
+                    "Here, the depolarized membrane activates voltage-gated L-type calcium channels, present in the plasma membrane. The L-type calcium channels are in close association with ryanodine receptors present on the sarcoplasmic reticulum. The inward flow of calcium from the L-type calcium channels activates ryanodine receptors to release calcium ions from the sarcoplasmic reticulum. This mechanism is called calcium-induced calcium release (CICR). It is not understood whether the physical opening of the L-type calcium channels or the presence of calcium causes the ryanodine receptors to open. The outflow of calcium allows the myosin heads access to the actin cross-bridge binding sites, permitting muscle contraction.[5]",
+                    "Muscle contraction ends when calcium ions are pumped back into the sarcoplasmic reticulum, allowing the contractile apparatus and, thus, muscle cell to relax.",
+                    "Upon muscle contraction, the A-bands do not change their length (1.85 micrometer in mammalian skeletal muscle),[5] whereas the I-bands and the H-zone shorten. This causes the Z-lines to come closer together.",
+                    "",
+                    "=== Rest ===",
+                    "At rest, the myosin head is bound to an ATP molecule in a low-energy configuration and is unable to access the cross-bridge binding sites on the actin.  However, the myosin head can hydrolyze ATP into adenosine diphosphate (ADP) and an inorganic phosphate ion.  A portion of the energy released in this reaction changes the shape of the myosin head and promotes it to a high-energy configuration.  Through the process of binding to the actin, the myosin head releases ADP and an inorganic phosphate ion, changing its configuration back to one of low energy.  The myosin remains attached to actin in a state known as rigor, until a new ATP binds the myosin head. This binding of ATP to myosin releases the actin by cross-bridge dissociation. The ATP-associated myosin is ready for another cycle, beginning with hydrolysis of the ATP.",
+                    "The A-band is visible as dark transverse lines across myofibers; the I-band is visible as lightly staining transverse lines, and the Z-line is visible as dark lines separating sarcomeres at the light-microscope level.",
+                    "",
+                    "=== Comparative structure ===",
+                    "The structure of the sarcomere affects its function in several ways.  The overlap of actin and myosin gives rise to the length-tension curve, which shows how sarcomere force output decreases if the muscle is stretched so that fewer cross-bridges can form or compressed until actin filaments interfere with each other.  Length of the actin and myosin filaments (taken together as sarcomere length) affects force and velocity – longer sarcomeres have more cross-bridges and thus more force, but have a reduced range of shortening.  Vertebrates display a very limited range of sarcomere lengths, with roughly the same optimal length (length at peak length-tension) in all muscles of an individual as well as between species.  Arthropods, however, show tremendous variation (over seven-fold) in sarcomere length, both between species and between muscles in a single individual.  The reasons for the lack of substantial sarcomere variability in vertebrates is not fully known.[citation needed]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Biga, Lindsay M.; Dawson, Sierra; Harwell, Amy (2019). \"10.2 Skeletal Muscle\". Anatomy & Physiology. OpenStax/Oregon State University. Retrieved 22 May 2021.",
+                    "<info> ^ a b c \nReece, Jane; Campbell, Neil (2002). Biology. San Francisco: Benjamin Cummings. ISBN 0-8053-6624-5.",
+                    "<info> ^ Martonosi, A. N. (2000-01-01). \"Animal electricity, Ca2+ and muscle contraction. A brief history of muscle research\". Acta Biochimica Polonica. 47 (3): 493–516. doi:10.18388/abp.2000_3974. ISSN 0001-527X. PMID 11310955.",
+                    "<info> ^ Tamborrini, Davide; Wang, Zhexin; Wagner, Thorsten; Tacke, Sebastian; Stabrin, Markus; Grange, Michael; Kho, Ay Lin; Rees, Martin; Bennett, Pauline; Gautel, Mathias; Raunser, Stefan (2023-11-23). \"Structure of the native myosin filament in the relaxed cardiac sarcomere\". Nature. 623 (7988): 863–871. Bibcode:2023Natur.623..863T. doi:10.1038/s41586-023-06690-5. ISSN 0028-0836. PMC 10665186. PMID 37914933.",
+                    "<info> ^ a b Lieber (2002). Skeletal Muscle Structure, Function & Plasticity : The Physiological Basis of Rehabilitation (2nd ed.). Lippincott Williams & Wilkins. ISBN 978-0781730617.",
+                    "",
+                    "=== External links ===",
+                    "<info> Histology image: 21601ooa – Histology Learning System at Boston University - \"Ultrastructure of the Cell: sarcoplasm of skeletal muscle\"",
+                    "<info> MedicalMnemonics.com: 50 379 107",
+                    "<info> Images created by antibody to striations Archived 2020-12-22 at the Wayback Machine",
+                    "<info> Muscle Contraction for dummies",
+                    "<info> Model representation of the sarcomere",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A sarcomere (Greek σάρξ sarx \"flesh\", μέρος meros \"part\") is the smallest functional unit of striated muscle tissue.[1] It is the repeating unit between two Z-lines.[further explanation needed] Skeletal muscles are composed of tubular muscle cells (called muscle fibers or myofibers) which are formed during  embryonic myogenesis. Muscle fibers contain numerous tubular myofibrils. Myofibrils are composed of repeating sections of sarcomeres, which appear under the microscope as alternating dark and light bands. Sarcomeres are composed of long, fibrous proteins as filaments that slide past each other when a muscle contracts or relaxes. The costamere is a different component that connects the sarcomere to the sarcolemma.",
+                            "Two of the important proteins are myosin, which forms the thick filament, and actin, which forms the thin filament. Myosin has a long fibrous tail and a globular head that binds to actin. The myosin head also binds to ATP, which is the source of energy for muscle movement. Myosin can only bind to actin when the binding sites on actin are exposed by calcium ions.",
+                            "Actin molecules are bound to the Z-line, which forms the borders of the sarcomere. Other bands appear when the sarcomere is relaxed.[2]",
+                            "The myofibrils of smooth muscle cells are not arranged into sarcomeres."
+                        ]
+                    },
+                    "Bands": {
+                        "content": [
+                            "The sarcomeres give skeletal and cardiac muscle their striated appearance,[2] which was first described by Van Leeuwenhoek.[3]",
+                            "<info> A sarcomere is defined as the segment between two neighbouring Z-lines (or Z-discs). In electron micrographs of cross-striated muscle, the Z-line (from the German \"zwischen\" meaning between) appears in between the I-bands as a dark line that anchors the actin myofilaments.",
+                            "<info> Surrounding the Z-line is the region of the I-band (for isotropic). I-band is the zone of thin filaments that is not superimposed by thick filaments (myosin).",
+                            "<info> Following the I-band is the A-band (for anisotropic).  Named for their properties under a polarized light microscope. An A-band contains the entire length of a single thick filament. The anisotropic band contains both thick and thin filaments.",
+                            "<info> Within the A-band is a paler region called the H-zone (from the German \"heller\", brighter). Named for their lighter appearance under a polarization microscope. H-band is the zone of the thick filaments that has no actin.",
+                            "<info> Within the H-zone is a thin M-line (from the German \"mittel\" meaning middle), appears in the middle of the sarcomere formed of cross-connecting elements of the cytoskeleton.",
+                            "The relationship between the proteins and the regions of the sarcomere are as follows:",
+                            "<info> Actin filaments, the thin filaments, are the major component of the I-band and extend into the A-band.",
+                            "<info> Myosin filaments, the thick filaments, are bipolar and extend throughout the A-band.  They are cross-linked at the centre by the M-band.",
+                            "<info> The giant protein titin (connectin) extends from the Z-line of the sarcomere, where it binds to the thick filament (myosin) system, to the M-band, where it is thought to interact with the thick filaments. Titin (and its splice isoforms) is the biggest single highly elasticated protein found in nature. It provides binding sites for numerous proteins and is thought to play an important role as sarcomeric ruler and as blueprint for the assembly of the sarcomere.",
+                            "<info> Another giant protein, nebulin, is hypothesised to extend along the thin filaments and the entire I-Band. Similar to titin, it is thought to act as a molecular ruler along for thin filament assembly.",
+                            "<info> Several proteins important for the stability of the sarcomeric structure are found in the Z-line as well as in the M-band of the sarcomere.",
+                            "<info> Actin filaments and titin molecules are cross-linked in the Z-disc via the Z-line protein alpha-actinin.",
+                            "<info> The M-band proteins myomesin as well as C-protein crosslink the thick filament system (myosins) and the M-band part of titin (the elastic filaments).",
+                            "<info> The M-line also binds creatine kinase, which facilitates the reaction of ADP and phosphocreatine into ATP and creatine.",
+                            "<info> The interaction between actin and myosin filaments in the A-band of the sarcomere is responsible for the muscle contraction (based on the sliding filament model).[2]"
+                        ]
+                    },
+                    "Contraction": {
+                        "content": [
+                            "The protein tropomyosin covers the myosin-binding sites of the actin molecules in the muscle cell.  For a muscle cell to contract, tropomyosin must be moved to uncover the binding sites on the actin.  Calcium ions bind with troponin C molecules (which are dispersed throughout the tropomyosin protein) and alter the structure of the tropomyosin, forcing it to reveal the cross-bridge binding site on the actin.",
+                            "The concentration of calcium within muscle cells is controlled by the sarcoplasmic reticulum, a unique form of endoplasmic reticulum in the sarcoplasm.",
+                            "Muscle cells are stimulated when a motor neuron releases the neurotransmitter acetylcholine, which travels across the neuromuscular junction (the synapse between the terminal button of the neuron and the muscle cell).  Acetylcholine binds to a post-synaptic nicotinic acetylcholine receptor. A change in the receptor conformation allows an influx of sodium ions and initiation of a post-synaptic action potential. The action potential then travels along T-tubules (transverse tubules) until it reaches the sarcoplasmic reticulum.",
+                            "Here, the depolarized membrane activates voltage-gated L-type calcium channels, present in the plasma membrane. The L-type calcium channels are in close association with ryanodine receptors present on the sarcoplasmic reticulum. The inward flow of calcium from the L-type calcium channels activates ryanodine receptors to release calcium ions from the sarcoplasmic reticulum. This mechanism is called calcium-induced calcium release (CICR). It is not understood whether the physical opening of the L-type calcium channels or the presence of calcium causes the ryanodine receptors to open. The outflow of calcium allows the myosin heads access to the actin cross-bridge binding sites, permitting muscle contraction.[5]",
+                            "Muscle contraction ends when calcium ions are pumped back into the sarcoplasmic reticulum, allowing the contractile apparatus and, thus, muscle cell to relax.",
+                            "Upon muscle contraction, the A-bands do not change their length (1.85 micrometer in mammalian skeletal muscle),[5] whereas the I-bands and the H-zone shorten. This causes the Z-lines to come closer together."
+                        ]
+                    },
+                    "Rest": {
+                        "content": [
+                            "At rest, the myosin head is bound to an ATP molecule in a low-energy configuration and is unable to access the cross-bridge binding sites on the actin.  However, the myosin head can hydrolyze ATP into adenosine diphosphate (ADP) and an inorganic phosphate ion.  A portion of the energy released in this reaction changes the shape of the myosin head and promotes it to a high-energy configuration.  Through the process of binding to the actin, the myosin head releases ADP and an inorganic phosphate ion, changing its configuration back to one of low energy.  The myosin remains attached to actin in a state known as rigor, until a new ATP binds the myosin head. This binding of ATP to myosin releases the actin by cross-bridge dissociation. The ATP-associated myosin is ready for another cycle, beginning with hydrolysis of the ATP.",
+                            "The A-band is visible as dark transverse lines across myofibers; the I-band is visible as lightly staining transverse lines, and the Z-line is visible as dark lines separating sarcomeres at the light-microscope level."
+                        ]
+                    },
+                    "Comparative structure": {
+                        "content": [
+                            "The structure of the sarcomere affects its function in several ways.  The overlap of actin and myosin gives rise to the length-tension curve, which shows how sarcomere force output decreases if the muscle is stretched so that fewer cross-bridges can form or compressed until actin filaments interfere with each other.  Length of the actin and myosin filaments (taken together as sarcomere length) affects force and velocity – longer sarcomeres have more cross-bridges and thus more force, but have a reduced range of shortening.  Vertebrates display a very limited range of sarcomere lengths, with roughly the same optimal length (length at peak length-tension) in all muscles of an individual as well as between species.  Arthropods, however, show tremendous variation (over seven-fold) in sarcomere length, both between species and between muscles in a single individual.  The reasons for the lack of substantial sarcomere variability in vertebrates is not fully known.[citation needed]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Biga, Lindsay M.; Dawson, Sierra; Harwell, Amy (2019). \"10.2 Skeletal Muscle\". Anatomy & Physiology. OpenStax/Oregon State University. Retrieved 22 May 2021.",
+                            "<info> ^ a b c \nReece, Jane; Campbell, Neil (2002). Biology. San Francisco: Benjamin Cummings. ISBN 0-8053-6624-5.",
+                            "<info> ^ Martonosi, A. N. (2000-01-01). \"Animal electricity, Ca2+ and muscle contraction. A brief history of muscle research\". Acta Biochimica Polonica. 47 (3): 493–516. doi:10.18388/abp.2000_3974. ISSN 0001-527X. PMID 11310955.",
+                            "<info> ^ Tamborrini, Davide; Wang, Zhexin; Wagner, Thorsten; Tacke, Sebastian; Stabrin, Markus; Grange, Michael; Kho, Ay Lin; Rees, Martin; Bennett, Pauline; Gautel, Mathias; Raunser, Stefan (2023-11-23). \"Structure of the native myosin filament in the relaxed cardiac sarcomere\". Nature. 623 (7988): 863–871. Bibcode:2023Natur.623..863T. doi:10.1038/s41586-023-06690-5. ISSN 0028-0836. PMC 10665186. PMID 37914933.",
+                            "<info> ^ a b Lieber (2002). Skeletal Muscle Structure, Function & Plasticity : The Physiological Basis of Rehabilitation (2nd ed.). Lippincott Williams & Wilkins. ISBN 978-0781730617."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Histology image: 21601ooa – Histology Learning System at Boston University - \"Ultrastructure of the Cell: sarcoplasm of skeletal muscle\"",
+                            "<info> MedicalMnemonics.com: 50 379 107",
+                            "<info> Images created by antibody to striations Archived 2020-12-22 at the Wayback Machine",
+                            "<info> Muscle Contraction for dummies",
+                            "<info> Model representation of the sarcomere"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

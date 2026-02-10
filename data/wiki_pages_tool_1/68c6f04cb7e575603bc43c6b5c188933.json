@@ -1,0 +1,99 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/trisomy": {
+                "title": "Trisomy",
+                "url": "https://en.wikipedia.org/wiki/trisomy",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A trisomy is a type of polysomy in which there are three instances of a particular chromosome, instead of the normal two.[1] A trisomy is a type of aneuploidy (an abnormal number of chromosomes).",
+                    "",
+                    "=== Description and causes ===",
+                    "Most organisms that reproduce sexually have pairs of chromosomes in each cell, with one of each type of chromosome inherited from each parent. In such organisms, meiosis creates gamete cells (eggs or sperm) having only one set of chromosomes. The number of chromosomes is different for different species, with humans having 46 chromosomes (23 pairs) and human gametes 23 chromosomes.",
+                    "If the chromosome pairs fail to separate properly during cell division, the egg or sperm may end up with a second copy of one of the chromosomes (non-disjunction). If such a gamete is fertilized with a normal gamete, the resulting embryo may have a total of three copies of the chromosome.",
+                    "The number of chromosomes in the cell where trisomy occurs is represented as, for example, 2n+1 if one chromosome shows trisomy, 2n+1+1 if two show trisomy, etc.[2]",
+                    "<info> \"Full trisomy\", also called \"primary trisomy\",[2] means that an entire extra chromosome has been copied.",
+                    "<info> \"Partial trisomy\" means that there is an extra copy of part of a chromosome.",
+                    "<info> \"Secondary trisomy\" - the extra chromosome has quadruplicated arms (the arms are identical; it is an \"isochromosome\").[2]",
+                    "<info> \"Tertiary trisomy\" - the extra chromosome is made up of copies of arms from two other chromosomes.[2]",
+                    "Trisomies are sometimes characterised as \"autosomal trisomies\" (trisomies of the non-sex chromosomes) and \"sex-chromosome trisomies.\"  Autosomal trisomies are described by referencing the specific chromosome that has an extra copy.[citation needed]  Thus, for example, the presence of an extra chromosome 21, which is found in Down syndrome, is called trisomy 21.",
+                    "",
+                    "=== Human trisomy ===",
+                    "Trisomies can occur with any chromosome, but often result in spontaneous abortion (miscarriage) rather than live birth. For example, Trisomy 16 is most common in human pregnancies, occurring in more than 1%, but the only surviving embryos are those having some normal cells in addition to the trisomic cells (mosaic trisomy 16).[3] Furthermore, even these embryos usually suffer miscarriage in the first trimester.",
+                    "The most common types of human autosomal (non-sex chromosome) trisomy that survive to birth are:",
+                    "<info> Trisomy 21 (Down syndrome)",
+                    "<info> Trisomy 18 (Edwards syndrome)",
+                    "<info> Trisomy 13 (Patau syndrome)",
+                    "<info> Trisomy 8 (Warkany syndrome 2)",
+                    "Of these, Trisomy 21 and Trisomy 18 are the most common. In rare cases, a fetus with Trisomy 13 can survive, giving rise to Patau syndrome. Autosomal trisomy can be associated with birth defects, intellectual disability and shortened life.",
+                    "Trisomy of sex chromosomes can also occur and include:[4]",
+                    "<info> XXX (Triple X syndrome)",
+                    "Compared to trisomy of the autosomal chromosomes, trisomy of the sex chromosomes normally has less severe consequences. Individuals may show few or no symptoms and have a normal life expectancy.[4]",
+                    "",
+                    "=== Trisomies in other species ===",
+                    "The chromosome most similar to human chromosome 21 in mice is mouse chromosome 16. A trisomy in the latter is not viable in mice although it is largely homologous to human chromosome 21.[5]",
+                    "Other viable trisomies in animals are known, e.g. in cattle.[6]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"CRC - Glossary T\". Archived from the original on 2010-06-16. Retrieved 2007-12-23.",
+                    "<info> ^ a b c d Rieger, R.; Michaelis, A.; Green, M.M. (1968). A glossary of genetics and cytogenetics: Classical and molecular. New York: Springer-Verlag. ISBN 9780387076683.",
+                    "<info> ^ Hassold, T; Merrill, M; Adkins, K; Freeman, S; Sherman, S (1995). \"Recombination and maternal age-dependent nondisjunction: molecular studies of trisomy 16\". American Journal of Human Genetics. 57 (4): 867–74. PMC 1801507. PMID 7573048.",
+                    "<info> ^ a b O'Connor, Clare (2008). \"Chromosomal Abnormalities: Aneuploidies\". Nature Education. 1 (1): 172.",
+                    "<info> ^ Gearhart, J.D.; Davisson, M.T.; Oster-Granite, M.L. (June 1986). \"Autosomal aneuploidy in mice: Generation and developmental consequences\". Brain Research Bulletin. 16 (6): 789–801. doi:10.1016/0361-9230(86)90075-4.",
+                    "<info> ^ Mayr, B.; Krutzler, H.; Auer, H.; Schleger, W.; Sasshofer, K.; Glawischnig, E. (1985). \"A viable calf with trisomy 22\". Cytogenetic and Genome Research. 39 (1): 77–79. doi:10.1159/000132109. ISSN 1424-8581.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A trisomy is a type of polysomy in which there are three instances of a particular chromosome, instead of the normal two.[1] A trisomy is a type of aneuploidy (an abnormal number of chromosomes)."
+                        ]
+                    },
+                    "Description and causes": {
+                        "content": [
+                            "Most organisms that reproduce sexually have pairs of chromosomes in each cell, with one of each type of chromosome inherited from each parent. In such organisms, meiosis creates gamete cells (eggs or sperm) having only one set of chromosomes. The number of chromosomes is different for different species, with humans having 46 chromosomes (23 pairs) and human gametes 23 chromosomes.",
+                            "If the chromosome pairs fail to separate properly during cell division, the egg or sperm may end up with a second copy of one of the chromosomes (non-disjunction). If such a gamete is fertilized with a normal gamete, the resulting embryo may have a total of three copies of the chromosome.",
+                            "The number of chromosomes in the cell where trisomy occurs is represented as, for example, 2n+1 if one chromosome shows trisomy, 2n+1+1 if two show trisomy, etc.[2]",
+                            "<info> \"Full trisomy\", also called \"primary trisomy\",[2] means that an entire extra chromosome has been copied.",
+                            "<info> \"Partial trisomy\" means that there is an extra copy of part of a chromosome.",
+                            "<info> \"Secondary trisomy\" - the extra chromosome has quadruplicated arms (the arms are identical; it is an \"isochromosome\").[2]",
+                            "<info> \"Tertiary trisomy\" - the extra chromosome is made up of copies of arms from two other chromosomes.[2]",
+                            "Trisomies are sometimes characterised as \"autosomal trisomies\" (trisomies of the non-sex chromosomes) and \"sex-chromosome trisomies.\"  Autosomal trisomies are described by referencing the specific chromosome that has an extra copy.[citation needed]  Thus, for example, the presence of an extra chromosome 21, which is found in Down syndrome, is called trisomy 21."
+                        ]
+                    },
+                    "Human trisomy": {
+                        "content": [
+                            "Trisomies can occur with any chromosome, but often result in spontaneous abortion (miscarriage) rather than live birth. For example, Trisomy 16 is most common in human pregnancies, occurring in more than 1%, but the only surviving embryos are those having some normal cells in addition to the trisomic cells (mosaic trisomy 16).[3] Furthermore, even these embryos usually suffer miscarriage in the first trimester.",
+                            "The most common types of human autosomal (non-sex chromosome) trisomy that survive to birth are:",
+                            "<info> Trisomy 21 (Down syndrome)",
+                            "<info> Trisomy 18 (Edwards syndrome)",
+                            "<info> Trisomy 13 (Patau syndrome)",
+                            "<info> Trisomy 8 (Warkany syndrome 2)",
+                            "Of these, Trisomy 21 and Trisomy 18 are the most common. In rare cases, a fetus with Trisomy 13 can survive, giving rise to Patau syndrome. Autosomal trisomy can be associated with birth defects, intellectual disability and shortened life.",
+                            "Trisomy of sex chromosomes can also occur and include:[4]",
+                            "<info> XXX (Triple X syndrome)",
+                            "Compared to trisomy of the autosomal chromosomes, trisomy of the sex chromosomes normally has less severe consequences. Individuals may show few or no symptoms and have a normal life expectancy.[4]"
+                        ]
+                    },
+                    "Trisomies in other species": {
+                        "content": [
+                            "The chromosome most similar to human chromosome 21 in mice is mouse chromosome 16. A trisomy in the latter is not viable in mice although it is largely homologous to human chromosome 21.[5]",
+                            "Other viable trisomies in animals are known, e.g. in cattle.[6]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"CRC - Glossary T\". Archived from the original on 2010-06-16. Retrieved 2007-12-23.",
+                            "<info> ^ a b c d Rieger, R.; Michaelis, A.; Green, M.M. (1968). A glossary of genetics and cytogenetics: Classical and molecular. New York: Springer-Verlag. ISBN 9780387076683.",
+                            "<info> ^ Hassold, T; Merrill, M; Adkins, K; Freeman, S; Sherman, S (1995). \"Recombination and maternal age-dependent nondisjunction: molecular studies of trisomy 16\". American Journal of Human Genetics. 57 (4): 867–74. PMC 1801507. PMID 7573048.",
+                            "<info> ^ a b O'Connor, Clare (2008). \"Chromosomal Abnormalities: Aneuploidies\". Nature Education. 1 (1): 172.",
+                            "<info> ^ Gearhart, J.D.; Davisson, M.T.; Oster-Granite, M.L. (June 1986). \"Autosomal aneuploidy in mice: Generation and developmental consequences\". Brain Research Bulletin. 16 (6): 789–801. doi:10.1016/0361-9230(86)90075-4.",
+                            "<info> ^ Mayr, B.; Krutzler, H.; Auer, H.; Schleger, W.; Sasshofer, K.; Glawischnig, E. (1985). \"A viable calf with trisomy 22\". Cytogenetic and Genome Research. 39 (1): 77–79. doi:10.1159/000132109. ISSN 1424-8581."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/protein_subunit": {
+                "title": "Protein subunit",
+                "url": "https://en.wikipedia.org/wiki/protein_subunit",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "In structural biology, a protein subunit is a polypeptide chain or single protein molecule that assembles (or \"coassembles\") with others to form a protein complex.[1][2][3]\nLarge assemblies of proteins such as viruses often use a small number of types of protein subunits as building blocks.[4][5]",
+                    "A subunit is often named with a Greek or Roman letter, and the numbers of this type of subunit in a protein is indicated by a subscript.[6] For example, ATP synthase has a type of subunit called α. Three of these are present in the ATP synthase molecule, leading to the designation α3. Larger groups of subunits can also be specified, like α3β3-hexamer and c-ring.[7]",
+                    "Naturally occurring proteins that have a relatively small number of subunits are referred to as oligomeric.[8] For example, hemoglobin is a symmetrical arrangement of two identical α-globin subunits and two identical β-globin subunits.[3][9] Longer multimeric proteins such as microtubules and other cytoskeleton proteins may consist of very large numbers of subunits. For example, dynein is a multimeric protein complex involving two heavy chains (DHCs), two intermediate chains (ICs), two light-intermediate chains (LICs) and several light chains (LCs).[10]",
+                    "The subunits of a protein complex may be identical, homologous or totally dissimilar and dedicated to disparate tasks.[1]\nIn some protein assemblies, one subunit may be a \"catalytic subunit\" that enzymatically catalyzes a reaction, whereas a \"regulatory subunit\" will facilitate or inhibit the activity.[11]  Although telomerase has telomerase reverse transcriptase as a catalytic subunit, regulation is accomplished by factors outside the protein.[12]",
+                    "An enzyme composed of both regulatory and catalytic subunits when assembled is often referred to as a holoenzyme.  For example, class I phosphoinositide 3-kinase is composed of a p110 catalytic subunit and a p85 regulatory subunit.[13]  One subunit is made of one polypeptide chain. A polypeptide chain has one gene coding for it – meaning that a protein must have one gene for each unique subunit.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Stoker, H. Stephen (1 January 2015). General, Organic, and Biological Chemistry (7th ed.). Boston, MA: Cengage Learning. pp. 709–710. ISBN 978-1-305-68618-2. Retrieved 15 April 2022.",
+                    "<info> ^ Smith, Michael B. (27 April 2020). Biochemistry: An Organic Chemistry Approach. Boca Raton: CRC Press. pp. 269–270. ISBN 978-1-351-25807-4. Retrieved 15 April 2022.",
+                    "<info> ^ a b Alberts, Bruce; Johnson, Alexander; Lewis, Julian; Raff, Martin; Roberts, Keith; Walter, Peter (2002). The Shape and Structure of Proteins. New York: Garland Science. Retrieved 15 April 2022.",
+                    "<info> ^ Kumar, A.; Evarsson, A.; Hol, W. G. J. (1999). \"Multi-protein assemblies with point group symmetry\". In Vijayan, M.; Yathindra, N.; Kolaskar, A. S. (eds.). Perspectives in Structural Biology: A Volume in Honour of G.N. Ramachandran. Hyderabad, India: Universities Press. pp. 449–466. ISBN 978-81-7371-254-8. Retrieved 15 April 2022.",
+                    "<info> ^ Witwit, Haydar; de la Torre, Juan C. (2025-04-29). \"Mammarenavirus Z Protein Myristoylation and Oligomerization Are Not Required for Its Dose-Dependent Inhibitory Effect on vRNP Activity\". BioChem. 5 (2): 10. doi:10.3390/biochem5020010. ISSN 2673-6411. PMC 12163724.",
+                    "<info> ^ Lesieur, Claire (18 June 2014). Oligomerization of Chemical and Biological Compounds. Croatia: Intech. pp. 240–241. ISBN 978-953-51-1617-2. Retrieved 15 April 2022.",
+                    "<info> ^ Ahmad, Zulfiqar; Okafor, Florence; Azim, Sofiya; Laughlin, Thomas F. (2013). \"ATP Synthase: A Molecular Therapeutic Drug Target for Antimicrobial and Antitumor Peptides\". Current Medicinal Chemistry. 20 (15): 1956–1973. doi:10.2174/0929867311320150003. ISSN 0929-8673. PMC 4734648. PMID 23432591.",
+                    "<info> ^ Jenkins, A. D.; Kratochvíl, P.; Stepto, R. F. T.; Suter, U. W. (1996). \"Glossary of basic terms in polymer science (IUPAC Recommendations 1996)\". Pure and Applied Chemistry. 68 (12): 2287–2311. doi:10.1351/pac199668122287.Quote: Oligomer molecule: A molecule of intermediate relative molecular mass, the structure of which essentially comprises a small plurality of units derived, actually or conceptually, from molecules of lower relative molecular mass.",
+                    "<info> ^ Liu, Shijie (7 April 2020). Bioprocess Engineering: Kinetics, Sustainability, and Reactor Design. Elsevier. p. 358. ISBN 978-0-12-822383-3. Retrieved 15 April 2022.",
+                    "<info> ^ Dharan, Adarsh; Campbell, Edward M. (31 July 2018). \"Role of Microtubules and Microtubule-Associated Proteins in HIV-1 Infection\". Journal of Virology. 92 (16): e00085–18. doi:10.1128/JVI.00085-18. ISSN 0022-538X. PMC 6069196. PMID 29899089.",
+                    "<info> ^ Søberg, Kristoffer; Skålhegg, Bjørn Steen (12 September 2018). \"The Molecular Basis for Specificity at the Level of the Protein Kinase a Catalytic Subunit\". Frontiers in Endocrinology. 9: 538. doi:10.3389/fendo.2018.00538. ISSN 1664-2392. PMC 6143667. PMID 30258407.",
+                    "<info> ^ Daniel M, Peek GW, Tollefsbol TO (2012). \"Regulation of the human catalytic subunit of telomerase (hTERT)\". Gene. 498 (2): 135–46. doi:10.1016/j.gene.2012.01.095. PMC 3312932. PMID 22381618.",
+                    "<info> ^ Carpenter CL, Duckworth BC, Auger KR, Cohen B, Schaffhausen BS, Cantley LC (November 1990). \"Purification and characterization of phosphoinositide 3-kinase from rat liver\". J. Biol. Chem. 265 (32): 19704–11. doi:10.1016/S0021-9258(17)45429-9. PMID 2174051.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "In structural biology, a protein subunit is a polypeptide chain or single protein molecule that assembles (or \"coassembles\") with others to form a protein complex.[1][2][3]\nLarge assemblies of proteins such as viruses often use a small number of types of protein subunits as building blocks.[4][5]",
+                            "A subunit is often named with a Greek or Roman letter, and the numbers of this type of subunit in a protein is indicated by a subscript.[6] For example, ATP synthase has a type of subunit called α. Three of these are present in the ATP synthase molecule, leading to the designation α3. Larger groups of subunits can also be specified, like α3β3-hexamer and c-ring.[7]",
+                            "Naturally occurring proteins that have a relatively small number of subunits are referred to as oligomeric.[8] For example, hemoglobin is a symmetrical arrangement of two identical α-globin subunits and two identical β-globin subunits.[3][9] Longer multimeric proteins such as microtubules and other cytoskeleton proteins may consist of very large numbers of subunits. For example, dynein is a multimeric protein complex involving two heavy chains (DHCs), two intermediate chains (ICs), two light-intermediate chains (LICs) and several light chains (LCs).[10]",
+                            "The subunits of a protein complex may be identical, homologous or totally dissimilar and dedicated to disparate tasks.[1]\nIn some protein assemblies, one subunit may be a \"catalytic subunit\" that enzymatically catalyzes a reaction, whereas a \"regulatory subunit\" will facilitate or inhibit the activity.[11]  Although telomerase has telomerase reverse transcriptase as a catalytic subunit, regulation is accomplished by factors outside the protein.[12]",
+                            "An enzyme composed of both regulatory and catalytic subunits when assembled is often referred to as a holoenzyme.  For example, class I phosphoinositide 3-kinase is composed of a p110 catalytic subunit and a p85 regulatory subunit.[13]  One subunit is made of one polypeptide chain. A polypeptide chain has one gene coding for it – meaning that a protein must have one gene for each unique subunit."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Stoker, H. Stephen (1 January 2015). General, Organic, and Biological Chemistry (7th ed.). Boston, MA: Cengage Learning. pp. 709–710. ISBN 978-1-305-68618-2. Retrieved 15 April 2022.",
+                            "<info> ^ Smith, Michael B. (27 April 2020). Biochemistry: An Organic Chemistry Approach. Boca Raton: CRC Press. pp. 269–270. ISBN 978-1-351-25807-4. Retrieved 15 April 2022.",
+                            "<info> ^ a b Alberts, Bruce; Johnson, Alexander; Lewis, Julian; Raff, Martin; Roberts, Keith; Walter, Peter (2002). The Shape and Structure of Proteins. New York: Garland Science. Retrieved 15 April 2022.",
+                            "<info> ^ Kumar, A.; Evarsson, A.; Hol, W. G. J. (1999). \"Multi-protein assemblies with point group symmetry\". In Vijayan, M.; Yathindra, N.; Kolaskar, A. S. (eds.). Perspectives in Structural Biology: A Volume in Honour of G.N. Ramachandran. Hyderabad, India: Universities Press. pp. 449–466. ISBN 978-81-7371-254-8. Retrieved 15 April 2022.",
+                            "<info> ^ Witwit, Haydar; de la Torre, Juan C. (2025-04-29). \"Mammarenavirus Z Protein Myristoylation and Oligomerization Are Not Required for Its Dose-Dependent Inhibitory Effect on vRNP Activity\". BioChem. 5 (2): 10. doi:10.3390/biochem5020010. ISSN 2673-6411. PMC 12163724.",
+                            "<info> ^ Lesieur, Claire (18 June 2014). Oligomerization of Chemical and Biological Compounds. Croatia: Intech. pp. 240–241. ISBN 978-953-51-1617-2. Retrieved 15 April 2022.",
+                            "<info> ^ Ahmad, Zulfiqar; Okafor, Florence; Azim, Sofiya; Laughlin, Thomas F. (2013). \"ATP Synthase: A Molecular Therapeutic Drug Target for Antimicrobial and Antitumor Peptides\". Current Medicinal Chemistry. 20 (15): 1956–1973. doi:10.2174/0929867311320150003. ISSN 0929-8673. PMC 4734648. PMID 23432591.",
+                            "<info> ^ Jenkins, A. D.; Kratochvíl, P.; Stepto, R. F. T.; Suter, U. W. (1996). \"Glossary of basic terms in polymer science (IUPAC Recommendations 1996)\". Pure and Applied Chemistry. 68 (12): 2287–2311. doi:10.1351/pac199668122287.Quote: Oligomer molecule: A molecule of intermediate relative molecular mass, the structure of which essentially comprises a small plurality of units derived, actually or conceptually, from molecules of lower relative molecular mass.",
+                            "<info> ^ Liu, Shijie (7 April 2020). Bioprocess Engineering: Kinetics, Sustainability, and Reactor Design. Elsevier. p. 358. ISBN 978-0-12-822383-3. Retrieved 15 April 2022.",
+                            "<info> ^ Dharan, Adarsh; Campbell, Edward M. (31 July 2018). \"Role of Microtubules and Microtubule-Associated Proteins in HIV-1 Infection\". Journal of Virology. 92 (16): e00085–18. doi:10.1128/JVI.00085-18. ISSN 0022-538X. PMC 6069196. PMID 29899089.",
+                            "<info> ^ Søberg, Kristoffer; Skålhegg, Bjørn Steen (12 September 2018). \"The Molecular Basis for Specificity at the Level of the Protein Kinase a Catalytic Subunit\". Frontiers in Endocrinology. 9: 538. doi:10.3389/fendo.2018.00538. ISSN 1664-2392. PMC 6143667. PMID 30258407.",
+                            "<info> ^ Daniel M, Peek GW, Tollefsbol TO (2012). \"Regulation of the human catalytic subunit of telomerase (hTERT)\". Gene. 498 (2): 135–46. doi:10.1016/j.gene.2012.01.095. PMC 3312932. PMID 22381618.",
+                            "<info> ^ Carpenter CL, Duckworth BC, Auger KR, Cohen B, Schaffhausen BS, Cantley LC (November 1990). \"Purification and characterization of phosphoinositide 3-kinase from rat liver\". J. Biol. Chem. 265 (32): 19704–11. doi:10.1016/S0021-9258(17)45429-9. PMID 2174051."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/eye_of_providence": {
+                "title": "Eye of Providence",
+                "url": "https://en.wikipedia.org/wiki/eye_of_providence",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

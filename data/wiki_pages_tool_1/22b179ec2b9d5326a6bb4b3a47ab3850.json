@@ -1,0 +1,41 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/chondritis": {
+                "title": "Chondritis",
+                "url": "https://en.wikipedia.org/wiki/chondritis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Chondritis  is inflammation of cartilage.[1]",
+                    "It takes several forms, osteochondritis, costochondritis, and relapsing polychondritis among them. Costochondritis is notable for feeling like a heart attack.[citation needed]",
+                    "",
+                    "=== See also ===",
+                    "<info> Perichondritis, commonly involving the outer ear",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Chondritis\" at Dorland's Medical Dictionary",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Chondritis  is inflammation of cartilage.[1]",
+                            "It takes several forms, osteochondritis, costochondritis, and relapsing polychondritis among them. Costochondritis is notable for feeling like a heart attack.[citation needed]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Perichondritis, commonly involving the outer ear"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Chondritis\" at Dorland's Medical Dictionary"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

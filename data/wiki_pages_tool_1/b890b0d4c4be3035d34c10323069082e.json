@@ -1,0 +1,211 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/elastin": {
+                "title": "Elastin",
+                "url": "https://en.wikipedia.org/wiki/elastin",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Elastin is a protein encoded by the ELN gene in humans and several other animals. Elastin is a key component in the extracellular matrix of gnathostomes (jawed vertebrates).[5] It is highly elastic and present in connective tissue of the body to resume its shape after stretching or contracting.[6] Elastin helps skin return to its original position whence poked or pinched. Elastin is also in important load-bearing tissue of vertebrates and used in places where storage of mechanical energy is required.[7]",
+                    "",
+                    "=== Function ===",
+                    "The ELN gene encodes a protein that is one of the two components of elastic fibers. The encoded protein is rich in hydrophobic amino acids such as glycine and proline, which form mobile hydrophobic regions bounded by crosslinks between lysine residues. Multiple transcript variants encoding different isoforms have been found for this gene.[8] Elastin's soluble precursor is tropoelastin.[9]",
+                    "The characterization of disorder is consistent with an entropy-driven mechanism of elastic recoil. It is concluded that conformational disorder is a constitutive feature of elastin structure and function.[10]",
+                    "",
+                    "=== Clinical significance ===",
+                    "Deletions and mutations in this gene are associated with supravalvular aortic stenosis (SVAS) and the autosomal dominant cutis laxa.[8] Other associated defects in elastin include Marfan syndrome, emphysema caused by α1-antitrypsin deficiency, atherosclerosis, Buschke–Ollendorff syndrome, Menkes syndrome, pseudoxanthoma elasticum, and Williams syndrome.[11]",
+                    "Elastosis is the buildup of elastin in tissues, and is a form of degenerative disease. There are a multitude of causes, but the most commons cause is actinic elastosis of the skin, also known as solar elastosis, which is caused by prolonged and excessive sun exposure, a process known as photoaging. Uncommon causes of skin elastosis include elastosis perforans serpiginosa, perforating calcific elastosis and linear focal elastosis.[12]",
+                    "",
+                    "=== Composition ===",
+                    "In the body, elastin is usually associated with other proteins in connective tissues. Elastic fiber in the body is a mixture of amorphous elastin and fibrous fibrillin. Both components are primarily made of smaller amino acids such as glycine, valine, alanine, and proline.[11][14] The total elastin ranges from 58 to 75% of the weight of the dry defatted artery in normal canine arteries.[15] Comparison between fresh and digested tissues shows that, at 35% strain, a minimum of 48% of the arterial load is carried by elastin, and a minimum of 43% of the change in stiffness of arterial tissue is due to the change in elastin stiffness.[16]",
+                    "Elastin serves an important function in arteries as a medium for pressure wave propagation to help blood flow and is particularly abundant in large elastic blood vessels such as the aorta.  Elastin is also very important in the lungs, elastic ligaments, elastic cartilage, the skin, and the bladder. It is present in jawed vertebrates.[17]",
+                    "",
+                    "=== Characteristics ===",
+                    "Elastin is a very long-lived protein, with a half-life of over 78 years in humans.[18]",
+                    "",
+                    "=== Clinical research ===",
+                    "The feasibility of using recombinant human tropoelastin to enable elastin fiber production to improve skin flexibility in wounds and scarring has been studied.[19][20] After subcutaneous injections of recombinant human tropoelastin into fresh wounds it was found there was no improvement in scarring or the flexibility of the eventual scarring.[19][20]",
+                    "",
+                    "=== Biosynthesis ===",
+                    "Elastin is made by linking together many small soluble precursor tropoelastin protein molecules (50-70 kDa), to make the final massive, insoluble, durable complex. The unlinked tropoelastin molecules are not normally available in the cell, since they become crosslinked into elastin fibres immediately after their synthesis by the cell and export into the extracellular matrix.[21]",
+                    "Each tropoelastin consists of a string of 36 small domains, each weighing about 2 kDa in a random coil conformation. The protein consists of alternating hydrophobic and hydrophilic domains, which are encoded by separate exons, so that the domain structure of tropoelastin reflects the exon organization of the gene. The hydrophilic domains contain Lys-Ala (KA) and Lys-Pro (KP) motifs that are involved in crosslinking during the formation of mature elastin. In the KA domains, lysine residues occur as pairs or triplets separated by two or three alanine residues (e.g. AAAKAAKAA) whereas in KP domains the lysine residues are separated mainly by proline residues (e.g. KPLKP).",
+                    "Tropoelastin aggregates at physiological temperature due to interactions between hydrophobic domains in a process called coacervation. This process is reversible and thermodynamically controlled and does not require protein cleavage. The coacervate is made insoluble by irreversible crosslinking.",
+                    "To make mature elastin fibres, the tropoelastin molecules are cross-linked via their lysine residues with desmosine and isodesmosine cross-linking molecules. The enzyme that performs the crosslinking is lysyl oxidase, using an in vivo Chichibabin pyridine synthesis reaction.[22]",
+                    "",
+                    "=== Molecular biology ===",
+                    "In mammals, the genome only contains one gene for tropoelastin, called ELN. The human ELN gene is a 45 kb segment on chromosome 7, and has 34 exons interrupted by almost 700 introns, with the first exon being a signal peptide assigning its extracellular localization. The large number of introns suggests that genetic recombination may contribute to the instability of the gene, leading to diseases such as SVAS. The expression of tropoelastin mRNA is highly regulated under at least eight different transcription start sites.",
+                    "Tissue specific variants of elastin are produced by alternative splicing of the tropoelastin gene. There are at least 11 known human tropoelastin isoforms. These isoforms are under developmental regulation, however there are minimal differences among tissues at the same developmental stage.[11]",
+                    "",
+                    "=== See also ===",
+                    "<info> Resilin: an invertebrate protein",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000049540 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000029675 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ Mithieux SM, Weiss AS (2005). \"Elastin\". Advances in Protein Chemistry. 70: 437–461. doi:10.1016/S0065-3233(05)70013-9. ISBN 978-0-12-034270-9. PMID 15837523.",
+                    "<info> ^ Vindin H, Mithieux SM, Weiss AS (November 2019). \"Elastin architecture\". Matrix Biology. 84: 4–16. doi:10.1016/j.matbio.2019.07.005. PMID 31301399. S2CID 196458819.",
+                    "<info> ^ Curran ME, Atkinson DL, Ewart AK, Morris CA, Leppert MF, Keating MT (April 1993). \"The elastin gene is disrupted by a translocation associated with supravalvular aortic stenosis\". Cell. 73 (1): 159–168. doi:10.1016/0092-8674(93)90168-P. PMID 8096434. S2CID 8274849.",
+                    "<info> ^ a b \"Entrez Gene: elastin\".",
+                    "<info> ^ \"Elastin (ELN)\". Archived from the original on 13 March 2017. Retrieved 31 October 2011.",
+                    "<info> ^ Muiznieks LD, Weiss AS, Keeley FW (April 2010). \"Structural disorder and dynamics of elastin\". Biochemistry and Cell Biology. 88 (2): 239–250. doi:10.1139/o09-161. PMID 20453927.",
+                    "<info> ^ a b c Vrhovski B, Weiss AS (November 1998). \"Biochemistry of tropoelastin\". European Journal of Biochemistry. 258 (1): 1–18. doi:10.1046/j.1432-1327.1998.2580001.x. PMID 9851686.",
+                    "<info> ^ Wright B. \"Elastosis\". DermNet NZ.",
+                    "<info> ^ a b c Hosen MJ, Lamoen A, De Paepe A, Vanakker OM (2012). \"Histopathology of pseudoxanthoma elasticum and related disorders: histological hallmarks and diagnostic clues\". Scientifica. 2012 598262. doi:10.6064/2012/598262. PMC 3820553. PMID 24278718.-Creative Commons Attribution 3.0 Unported license",
+                    "<info> ^ Kielty CM, Sherratt MJ, Shuttleworth CA (July 2002). \"Elastic fibres\". Journal of Cell Science. 115 (Pt 14): 2817–2828. doi:10.1242/jcs.115.14.2817. PMID 12082143.",
+                    "<info> ^ Fischer GM, Llaurado JG (August 1966). \"Collagen and elastin content in canine arteries selected from functionally different vascular beds\". Circulation Research. 19 (2): 394–399. doi:10.1161/01.res.19.2.394. PMID 5914851.",
+                    "<info> ^ Lammers SR, Kao PH, Qi HJ, Hunter K, Lanning C, Albietz J, et al. (October 2008). \"Changes in the structure-function relationship of elastin and its impact on the proximal pulmonary arterial mechanics of hypertensive calves\". American Journal of Physiology. Heart and Circulatory Physiology. 295 (4): H1451–H1459. doi:10.1152/ajpheart.00127.2008. PMC 2593497. PMID 18660454.",
+                    "<info> ^ Sage EH, Gray WR (1977). \"Evolution of Elastin Structure\". Elastin and Elastic Tissue. Advances in Experimental Medicine and Biology. Vol. 79. pp. 291–312. doi:10.1007/978-1-4684-9093-0_27. ISBN 978-1-4684-9095-4. PMID 868643.",
+                    "<info> ^ Toyama BH, Hetzer MW (January 2013). \"Protein homeostasis: live long, won't prosper\". Nature Reviews. Molecular Cell Biology. 14 (1): 55–61. doi:10.1038/nrm3496. PMC 3570024. PMID 23258296.",
+                    "<info> ^ a b Souto EB, Ribeiro AF, Ferreira MI, Teixeira MC, Shimojo AA, Soriano JL, et al. (January 2020). \"New Nanotechnologies for the Treatment and Repair of Skin Burns Infections\". International Journal of Molecular Sciences. 21 (2): 393. doi:10.3390/ijms21020393. PMC 7013843. PMID 31936277.",
+                    "<info> ^ a b Xie H, Lucchesi L, Zheng B, Ladich E, Pineda T, Merten R, et al. (1 September 2017). \"Treatment of Burn and Surgical Wounds With Recombinant Human Tropoelastin Produces New Elastin Fibers in Scars\". Journal of Burn Care & Research. 38 (5): e859–e867. doi:10.1097/BCR.0000000000000507. PMID 28221299. S2CID 39251937.",
+                    "<info> ^ Valenzuela CD, Wagner WL, Bennett RD, Ysasi AB, Belle JM, Molter K, et al. (September 2017). \"Extracellular Assembly of the Elastin Cable Line Element in the Developing Lung\". Anatomical Record. 300 (9): 1670–1679. doi:10.1002/ar.23603. PMC 6315300. PMID 28380679.",
+                    "<info> ^ Umeda H, Takeuchi M, Suyama K (April 2001). \"Two new elastin cross-links having pyridine skeleton. Implication of ammonia in elastin cross-linking in vivo\". The Journal of Biological Chemistry. 276 (16): 12579–12587. doi:10.1074/jbc.M009744200. PMID 11278561.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Jan SL, Chan SC, Fu YC, Lin SJ (June 2009). \"Elastin gene study of infants with isolated congenital ductus arteriosus aneurysm\". Acta Cardiologica. 64 (3): 363–369. doi:10.2143/ac.64.3.2038023. PMID 19593948. S2CID 31411296.",
+                    "<info> Keeley FW, Bellingham CM, Woodhouse KA (February 2002). \"Elastin as a self-organizing biomaterial: use of recombinantly expressed human elastin polypeptides as a model for investigations of structure and self-assembly of elastin\". Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences. 357 (1418): 185–189. doi:10.1098/rstb.2001.1027. PMC 1692930. PMID 11911775.",
+                    "<info> Choudhury R, McGovern A, Ridley C, Cain SA, Baldwin A, Wang MC, et al. (September 2009). \"Differential regulation of elastic fiber formation by fibulin-4 and -5\". The Journal of Biological Chemistry. 284 (36): 24553–24567. doi:10.1074/jbc.M109.019364. PMC 2782046. PMID 19570982.",
+                    "<info> Hubmacher D, Cirulis JT, Miao M, Keeley FW, Reinhardt DP (January 2010). \"Functional consequences of homocysteinylation of the elastic fiber proteins fibrillin-1 and tropoelastin\". The Journal of Biological Chemistry. 285 (2): 1188–1198. doi:10.1074/jbc.M109.021246. PMC 2801247. PMID 19889633.",
+                    "<info> Coolen NA, Schouten KC, Middelkoop E, Ulrich MM (January 2010). \"Comparison between human fetal and adult skin\". Archives of Dermatological Research. 302 (1): 47–55. doi:10.1007/s00403-009-0989-8. PMC 2799629. PMID 19701759.",
+                    "<info> McGeachie M, Ramoni RL, Mychaleckyj JC, Furie KL, Dreyfuss JM, Liu Y, et al. (December 2009). \"Integrative predictive model of coronary artery calcification in atherosclerosis\". Circulation. 120 (24): 2448–2454. doi:10.1161/CIRCULATIONAHA.109.865501. PMC 2810344. PMID 19948975.",
+                    "<info> Yoshida T, Kato K, Yokoi K, Oguri M, Watanabe S, Metoki N, et al. (August 2009). \"Association of genetic variants with chronic kidney disease in individuals with different lipid profiles\". International Journal of Molecular Medicine. 24 (2): 233–246. doi:10.3892/ijmm_00000226. PMID 19578796.",
+                    "<info> Akima T, Nakanishi K, Suzuki K, Katayama M, Ohsuzu F, Kawai T (November 2009). \"Soluble elastin decreases in the progress of atheroma formation in human aorta\". Circulation Journal. 73 (11): 2154–2162. doi:10.1253/circj.cj-09-0104. PMID 19755752.",
+                    "<info> Chen Q, Zhang T, Roshetsky JF, Ouyang Z, Essers J, Fan C, et al. (September 2009). \"Fibulin-4 regulates expression of the tropoelastin gene and consequent elastic-fibre formation by human fibroblasts\". The Biochemical Journal. 423 (1): 79–89. doi:10.1042/BJ20090993. PMC 3024593. PMID 19627254.",
+                    "<info> Tintar D, Samouillan V, Dandurand J, Lacabanne C, Pepe A, Bochicchio B, Tamburro AM (November 2009). \"Human tropoelastin sequence: dynamics of polypeptide coded by exon 6 in solution\" (PDF). Biopolymers. 91 (11): 943–952. doi:10.1002/bip.21282. PMID 19603496.",
+                    "<info> Dyksterhuis LB, Weiss AS (June 2010). \"Homology models for domains 21-23 of human tropoelastin shed light on lysine crosslinking\". Biochemical and Biophysical Research Communications. 396 (4): 870–873. doi:10.1016/j.bbrc.2010.05.013. PMID 20457133.",
+                    "<info> Romero R, Velez Edwards DR, Kusanovic JP, Hassan SS, Mazaki-Tovi S, Vaisbuch E, et al. (May 2010). \"Identification of fetal and maternal single nucleotide polymorphisms in candidate genes that predispose to spontaneous preterm labor with intact membranes\". American Journal of Obstetrics and Gynecology. 202 (5): 431.e1–431.34. doi:10.1016/j.ajog.2010.03.026. PMC 3604889. PMID 20452482.",
+                    "<info> Fan BJ, Figuieredo Sena DR, Pasquale LR, Grosskreutz CL, Rhee DJ, Chen TC, et al. (September 2010). \"Lack of association of polymorphisms in elastin with pseudoexfoliation syndrome and glaucoma\". Journal of Glaucoma. 19 (7): 432–436. doi:10.1097/IJG.0b013e3181c4b0fe. PMC 6748032. PMID 20051886.",
+                    "<info> Bertram C, Hass R (October 2009). \"Cellular senescence of human mammary epithelial cells (HMEC) is associated with an altered MMP-7/HB-EGF signaling and increased formation of elastin-like structures\". Mechanisms of Ageing and Development. 130 (10): 657–669. doi:10.1016/j.mad.2009.08.001. PMID 19682489. S2CID 46477586.",
+                    "<info> Roberts KE, Kawut SM, Krowka MJ, Brown RS, Trotter JF, Shah V, et al. (July 2010). \"Genetic risk factors for hepatopulmonary syndrome in patients with advanced liver disease\". Gastroenterology. 139 (1): 130–9.e24. doi:10.1053/j.gastro.2010.03.044. PMC 2908261. PMID 20346360.",
+                    "<info> Rosenbloom J (December 1984). \"Elastin: relation of protein and gene structure to disease\". Laboratory Investigation; A Journal of Technical Methods and Pathology. 51 (6): 605–623. PMID 6150137.",
+                    "<info> Bax DV, Rodgers UR, Bilek MM, Weiss AS (October 2009). \"Cell adhesion to tropoelastin is mediated via the C-terminal GRKRK motif and integrin alphaVbeta3\". The Journal of Biological Chemistry. 284 (42): 28616–28623. doi:10.1074/jbc.M109.017525. PMC 2781405. PMID 19617625.",
+                    "<info> Rodriguez-Revenga L, Iranzo P, Badenas C, Puig S, Carrió A, Milà M (September 2004). \"A novel elastin gene mutation resulting in an autosomal dominant form of cutis laxa\". Archives of Dermatology. 140 (9): 1135–1139. doi:10.1001/archderm.140.9.1135. PMID 15381555.",
+                    "<info> Micale L, Turturo MG, Fusco C, Augello B, Jurado LA, Izzi C, et al. (March 2010). \"Identification and characterization of seven novel mutations of elastin gene in a cohort of patients affected by supravalvular aortic stenosis\". European Journal of Human Genetics. 18 (3): 317–323. doi:10.1038/ejhg.2009.181. PMC 2987220. PMID 19844261.",
+                    "<info> Tzaphlidou M (2004). \"The role of collagen and elastin in aged skin: an image processing approach\". Micron. 35 (3): 173–177. doi:10.1016/j.micron.2003.11.003. PMID 15036271.",
+                    "",
+                    "=== External links ===",
+                    "<info> Elastin at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> Histology image: 21402loa – Histology Learning System at Boston University",
+                    "<info> GeneReviews/NIH/NCBI/UW entry on Williams or Williams-Beuren Syndrome",
+                    "This article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Elastin is a protein encoded by the ELN gene in humans and several other animals. Elastin is a key component in the extracellular matrix of gnathostomes (jawed vertebrates).[5] It is highly elastic and present in connective tissue of the body to resume its shape after stretching or contracting.[6] Elastin helps skin return to its original position whence poked or pinched. Elastin is also in important load-bearing tissue of vertebrates and used in places where storage of mechanical energy is required.[7]"
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "The ELN gene encodes a protein that is one of the two components of elastic fibers. The encoded protein is rich in hydrophobic amino acids such as glycine and proline, which form mobile hydrophobic regions bounded by crosslinks between lysine residues. Multiple transcript variants encoding different isoforms have been found for this gene.[8] Elastin's soluble precursor is tropoelastin.[9]",
+                            "The characterization of disorder is consistent with an entropy-driven mechanism of elastic recoil. It is concluded that conformational disorder is a constitutive feature of elastin structure and function.[10]"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "Deletions and mutations in this gene are associated with supravalvular aortic stenosis (SVAS) and the autosomal dominant cutis laxa.[8] Other associated defects in elastin include Marfan syndrome, emphysema caused by α1-antitrypsin deficiency, atherosclerosis, Buschke–Ollendorff syndrome, Menkes syndrome, pseudoxanthoma elasticum, and Williams syndrome.[11]",
+                            "Elastosis is the buildup of elastin in tissues, and is a form of degenerative disease. There are a multitude of causes, but the most commons cause is actinic elastosis of the skin, also known as solar elastosis, which is caused by prolonged and excessive sun exposure, a process known as photoaging. Uncommon causes of skin elastosis include elastosis perforans serpiginosa, perforating calcific elastosis and linear focal elastosis.[12]"
+                        ]
+                    },
+                    "Composition": {
+                        "content": [
+                            "In the body, elastin is usually associated with other proteins in connective tissues. Elastic fiber in the body is a mixture of amorphous elastin and fibrous fibrillin. Both components are primarily made of smaller amino acids such as glycine, valine, alanine, and proline.[11][14] The total elastin ranges from 58 to 75% of the weight of the dry defatted artery in normal canine arteries.[15] Comparison between fresh and digested tissues shows that, at 35% strain, a minimum of 48% of the arterial load is carried by elastin, and a minimum of 43% of the change in stiffness of arterial tissue is due to the change in elastin stiffness.[16]",
+                            "Elastin serves an important function in arteries as a medium for pressure wave propagation to help blood flow and is particularly abundant in large elastic blood vessels such as the aorta.  Elastin is also very important in the lungs, elastic ligaments, elastic cartilage, the skin, and the bladder. It is present in jawed vertebrates.[17]"
+                        ]
+                    },
+                    "Characteristics": {
+                        "content": [
+                            "Elastin is a very long-lived protein, with a half-life of over 78 years in humans.[18]"
+                        ]
+                    },
+                    "Clinical research": {
+                        "content": [
+                            "The feasibility of using recombinant human tropoelastin to enable elastin fiber production to improve skin flexibility in wounds and scarring has been studied.[19][20] After subcutaneous injections of recombinant human tropoelastin into fresh wounds it was found there was no improvement in scarring or the flexibility of the eventual scarring.[19][20]"
+                        ]
+                    },
+                    "Biosynthesis": {
+                        "content": [
+                            "Elastin is made by linking together many small soluble precursor tropoelastin protein molecules (50-70 kDa), to make the final massive, insoluble, durable complex. The unlinked tropoelastin molecules are not normally available in the cell, since they become crosslinked into elastin fibres immediately after their synthesis by the cell and export into the extracellular matrix.[21]",
+                            "Each tropoelastin consists of a string of 36 small domains, each weighing about 2 kDa in a random coil conformation. The protein consists of alternating hydrophobic and hydrophilic domains, which are encoded by separate exons, so that the domain structure of tropoelastin reflects the exon organization of the gene. The hydrophilic domains contain Lys-Ala (KA) and Lys-Pro (KP) motifs that are involved in crosslinking during the formation of mature elastin. In the KA domains, lysine residues occur as pairs or triplets separated by two or three alanine residues (e.g. AAAKAAKAA) whereas in KP domains the lysine residues are separated mainly by proline residues (e.g. KPLKP).",
+                            "Tropoelastin aggregates at physiological temperature due to interactions between hydrophobic domains in a process called coacervation. This process is reversible and thermodynamically controlled and does not require protein cleavage. The coacervate is made insoluble by irreversible crosslinking.",
+                            "To make mature elastin fibres, the tropoelastin molecules are cross-linked via their lysine residues with desmosine and isodesmosine cross-linking molecules. The enzyme that performs the crosslinking is lysyl oxidase, using an in vivo Chichibabin pyridine synthesis reaction.[22]"
+                        ]
+                    },
+                    "Molecular biology": {
+                        "content": [
+                            "In mammals, the genome only contains one gene for tropoelastin, called ELN. The human ELN gene is a 45 kb segment on chromosome 7, and has 34 exons interrupted by almost 700 introns, with the first exon being a signal peptide assigning its extracellular localization. The large number of introns suggests that genetic recombination may contribute to the instability of the gene, leading to diseases such as SVAS. The expression of tropoelastin mRNA is highly regulated under at least eight different transcription start sites.",
+                            "Tissue specific variants of elastin are produced by alternative splicing of the tropoelastin gene. There are at least 11 known human tropoelastin isoforms. These isoforms are under developmental regulation, however there are minimal differences among tissues at the same developmental stage.[11]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Resilin: an invertebrate protein"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000049540 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000029675 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ Mithieux SM, Weiss AS (2005). \"Elastin\". Advances in Protein Chemistry. 70: 437–461. doi:10.1016/S0065-3233(05)70013-9. ISBN 978-0-12-034270-9. PMID 15837523.",
+                            "<info> ^ Vindin H, Mithieux SM, Weiss AS (November 2019). \"Elastin architecture\". Matrix Biology. 84: 4–16. doi:10.1016/j.matbio.2019.07.005. PMID 31301399. S2CID 196458819.",
+                            "<info> ^ Curran ME, Atkinson DL, Ewart AK, Morris CA, Leppert MF, Keating MT (April 1993). \"The elastin gene is disrupted by a translocation associated with supravalvular aortic stenosis\". Cell. 73 (1): 159–168. doi:10.1016/0092-8674(93)90168-P. PMID 8096434. S2CID 8274849.",
+                            "<info> ^ a b \"Entrez Gene: elastin\".",
+                            "<info> ^ \"Elastin (ELN)\". Archived from the original on 13 March 2017. Retrieved 31 October 2011.",
+                            "<info> ^ Muiznieks LD, Weiss AS, Keeley FW (April 2010). \"Structural disorder and dynamics of elastin\". Biochemistry and Cell Biology. 88 (2): 239–250. doi:10.1139/o09-161. PMID 20453927.",
+                            "<info> ^ a b c Vrhovski B, Weiss AS (November 1998). \"Biochemistry of tropoelastin\". European Journal of Biochemistry. 258 (1): 1–18. doi:10.1046/j.1432-1327.1998.2580001.x. PMID 9851686.",
+                            "<info> ^ Wright B. \"Elastosis\". DermNet NZ.",
+                            "<info> ^ a b c Hosen MJ, Lamoen A, De Paepe A, Vanakker OM (2012). \"Histopathology of pseudoxanthoma elasticum and related disorders: histological hallmarks and diagnostic clues\". Scientifica. 2012 598262. doi:10.6064/2012/598262. PMC 3820553. PMID 24278718.-Creative Commons Attribution 3.0 Unported license",
+                            "<info> ^ Kielty CM, Sherratt MJ, Shuttleworth CA (July 2002). \"Elastic fibres\". Journal of Cell Science. 115 (Pt 14): 2817–2828. doi:10.1242/jcs.115.14.2817. PMID 12082143.",
+                            "<info> ^ Fischer GM, Llaurado JG (August 1966). \"Collagen and elastin content in canine arteries selected from functionally different vascular beds\". Circulation Research. 19 (2): 394–399. doi:10.1161/01.res.19.2.394. PMID 5914851.",
+                            "<info> ^ Lammers SR, Kao PH, Qi HJ, Hunter K, Lanning C, Albietz J, et al. (October 2008). \"Changes in the structure-function relationship of elastin and its impact on the proximal pulmonary arterial mechanics of hypertensive calves\". American Journal of Physiology. Heart and Circulatory Physiology. 295 (4): H1451–H1459. doi:10.1152/ajpheart.00127.2008. PMC 2593497. PMID 18660454.",
+                            "<info> ^ Sage EH, Gray WR (1977). \"Evolution of Elastin Structure\". Elastin and Elastic Tissue. Advances in Experimental Medicine and Biology. Vol. 79. pp. 291–312. doi:10.1007/978-1-4684-9093-0_27. ISBN 978-1-4684-9095-4. PMID 868643.",
+                            "<info> ^ Toyama BH, Hetzer MW (January 2013). \"Protein homeostasis: live long, won't prosper\". Nature Reviews. Molecular Cell Biology. 14 (1): 55–61. doi:10.1038/nrm3496. PMC 3570024. PMID 23258296.",
+                            "<info> ^ a b Souto EB, Ribeiro AF, Ferreira MI, Teixeira MC, Shimojo AA, Soriano JL, et al. (January 2020). \"New Nanotechnologies for the Treatment and Repair of Skin Burns Infections\". International Journal of Molecular Sciences. 21 (2): 393. doi:10.3390/ijms21020393. PMC 7013843. PMID 31936277.",
+                            "<info> ^ a b Xie H, Lucchesi L, Zheng B, Ladich E, Pineda T, Merten R, et al. (1 September 2017). \"Treatment of Burn and Surgical Wounds With Recombinant Human Tropoelastin Produces New Elastin Fibers in Scars\". Journal of Burn Care & Research. 38 (5): e859–e867. doi:10.1097/BCR.0000000000000507. PMID 28221299. S2CID 39251937.",
+                            "<info> ^ Valenzuela CD, Wagner WL, Bennett RD, Ysasi AB, Belle JM, Molter K, et al. (September 2017). \"Extracellular Assembly of the Elastin Cable Line Element in the Developing Lung\". Anatomical Record. 300 (9): 1670–1679. doi:10.1002/ar.23603. PMC 6315300. PMID 28380679.",
+                            "<info> ^ Umeda H, Takeuchi M, Suyama K (April 2001). \"Two new elastin cross-links having pyridine skeleton. Implication of ammonia in elastin cross-linking in vivo\". The Journal of Biological Chemistry. 276 (16): 12579–12587. doi:10.1074/jbc.M009744200. PMID 11278561."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Jan SL, Chan SC, Fu YC, Lin SJ (June 2009). \"Elastin gene study of infants with isolated congenital ductus arteriosus aneurysm\". Acta Cardiologica. 64 (3): 363–369. doi:10.2143/ac.64.3.2038023. PMID 19593948. S2CID 31411296.",
+                            "<info> Keeley FW, Bellingham CM, Woodhouse KA (February 2002). \"Elastin as a self-organizing biomaterial: use of recombinantly expressed human elastin polypeptides as a model for investigations of structure and self-assembly of elastin\". Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences. 357 (1418): 185–189. doi:10.1098/rstb.2001.1027. PMC 1692930. PMID 11911775.",
+                            "<info> Choudhury R, McGovern A, Ridley C, Cain SA, Baldwin A, Wang MC, et al. (September 2009). \"Differential regulation of elastic fiber formation by fibulin-4 and -5\". The Journal of Biological Chemistry. 284 (36): 24553–24567. doi:10.1074/jbc.M109.019364. PMC 2782046. PMID 19570982.",
+                            "<info> Hubmacher D, Cirulis JT, Miao M, Keeley FW, Reinhardt DP (January 2010). \"Functional consequences of homocysteinylation of the elastic fiber proteins fibrillin-1 and tropoelastin\". The Journal of Biological Chemistry. 285 (2): 1188–1198. doi:10.1074/jbc.M109.021246. PMC 2801247. PMID 19889633.",
+                            "<info> Coolen NA, Schouten KC, Middelkoop E, Ulrich MM (January 2010). \"Comparison between human fetal and adult skin\". Archives of Dermatological Research. 302 (1): 47–55. doi:10.1007/s00403-009-0989-8. PMC 2799629. PMID 19701759.",
+                            "<info> McGeachie M, Ramoni RL, Mychaleckyj JC, Furie KL, Dreyfuss JM, Liu Y, et al. (December 2009). \"Integrative predictive model of coronary artery calcification in atherosclerosis\". Circulation. 120 (24): 2448–2454. doi:10.1161/CIRCULATIONAHA.109.865501. PMC 2810344. PMID 19948975.",
+                            "<info> Yoshida T, Kato K, Yokoi K, Oguri M, Watanabe S, Metoki N, et al. (August 2009). \"Association of genetic variants with chronic kidney disease in individuals with different lipid profiles\". International Journal of Molecular Medicine. 24 (2): 233–246. doi:10.3892/ijmm_00000226. PMID 19578796.",
+                            "<info> Akima T, Nakanishi K, Suzuki K, Katayama M, Ohsuzu F, Kawai T (November 2009). \"Soluble elastin decreases in the progress of atheroma formation in human aorta\". Circulation Journal. 73 (11): 2154–2162. doi:10.1253/circj.cj-09-0104. PMID 19755752.",
+                            "<info> Chen Q, Zhang T, Roshetsky JF, Ouyang Z, Essers J, Fan C, et al. (September 2009). \"Fibulin-4 regulates expression of the tropoelastin gene and consequent elastic-fibre formation by human fibroblasts\". The Biochemical Journal. 423 (1): 79–89. doi:10.1042/BJ20090993. PMC 3024593. PMID 19627254.",
+                            "<info> Tintar D, Samouillan V, Dandurand J, Lacabanne C, Pepe A, Bochicchio B, Tamburro AM (November 2009). \"Human tropoelastin sequence: dynamics of polypeptide coded by exon 6 in solution\" (PDF). Biopolymers. 91 (11): 943–952. doi:10.1002/bip.21282. PMID 19603496.",
+                            "<info> Dyksterhuis LB, Weiss AS (June 2010). \"Homology models for domains 21-23 of human tropoelastin shed light on lysine crosslinking\". Biochemical and Biophysical Research Communications. 396 (4): 870–873. doi:10.1016/j.bbrc.2010.05.013. PMID 20457133.",
+                            "<info> Romero R, Velez Edwards DR, Kusanovic JP, Hassan SS, Mazaki-Tovi S, Vaisbuch E, et al. (May 2010). \"Identification of fetal and maternal single nucleotide polymorphisms in candidate genes that predispose to spontaneous preterm labor with intact membranes\". American Journal of Obstetrics and Gynecology. 202 (5): 431.e1–431.34. doi:10.1016/j.ajog.2010.03.026. PMC 3604889. PMID 20452482.",
+                            "<info> Fan BJ, Figuieredo Sena DR, Pasquale LR, Grosskreutz CL, Rhee DJ, Chen TC, et al. (September 2010). \"Lack of association of polymorphisms in elastin with pseudoexfoliation syndrome and glaucoma\". Journal of Glaucoma. 19 (7): 432–436. doi:10.1097/IJG.0b013e3181c4b0fe. PMC 6748032. PMID 20051886.",
+                            "<info> Bertram C, Hass R (October 2009). \"Cellular senescence of human mammary epithelial cells (HMEC) is associated with an altered MMP-7/HB-EGF signaling and increased formation of elastin-like structures\". Mechanisms of Ageing and Development. 130 (10): 657–669. doi:10.1016/j.mad.2009.08.001. PMID 19682489. S2CID 46477586.",
+                            "<info> Roberts KE, Kawut SM, Krowka MJ, Brown RS, Trotter JF, Shah V, et al. (July 2010). \"Genetic risk factors for hepatopulmonary syndrome in patients with advanced liver disease\". Gastroenterology. 139 (1): 130–9.e24. doi:10.1053/j.gastro.2010.03.044. PMC 2908261. PMID 20346360.",
+                            "<info> Rosenbloom J (December 1984). \"Elastin: relation of protein and gene structure to disease\". Laboratory Investigation; A Journal of Technical Methods and Pathology. 51 (6): 605–623. PMID 6150137.",
+                            "<info> Bax DV, Rodgers UR, Bilek MM, Weiss AS (October 2009). \"Cell adhesion to tropoelastin is mediated via the C-terminal GRKRK motif and integrin alphaVbeta3\". The Journal of Biological Chemistry. 284 (42): 28616–28623. doi:10.1074/jbc.M109.017525. PMC 2781405. PMID 19617625.",
+                            "<info> Rodriguez-Revenga L, Iranzo P, Badenas C, Puig S, Carrió A, Milà M (September 2004). \"A novel elastin gene mutation resulting in an autosomal dominant form of cutis laxa\". Archives of Dermatology. 140 (9): 1135–1139. doi:10.1001/archderm.140.9.1135. PMID 15381555.",
+                            "<info> Micale L, Turturo MG, Fusco C, Augello B, Jurado LA, Izzi C, et al. (March 2010). \"Identification and characterization of seven novel mutations of elastin gene in a cohort of patients affected by supravalvular aortic stenosis\". European Journal of Human Genetics. 18 (3): 317–323. doi:10.1038/ejhg.2009.181. PMC 2987220. PMID 19844261.",
+                            "<info> Tzaphlidou M (2004). \"The role of collagen and elastin in aged skin: an image processing approach\". Micron. 35 (3): 173–177. doi:10.1016/j.micron.2003.11.003. PMID 15036271."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Elastin at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> Histology image: 21402loa – Histology Learning System at Boston University",
+                            "<info> GeneReviews/NIH/NCBI/UW entry on Williams or Williams-Beuren Syndrome",
+                            "This article incorporates text from the United States National Library of Medicine, which is in the public domain."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

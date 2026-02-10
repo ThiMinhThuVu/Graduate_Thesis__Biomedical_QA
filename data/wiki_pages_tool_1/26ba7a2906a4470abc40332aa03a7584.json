@@ -1,0 +1,51 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/warm_compress": {
+                "title": "Warm compress",
+                "url": "https://en.wikipedia.org/wiki/warm_compress",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A warm compress is a method of applying heat to the body.[1] Heating sources can include warm water, microwaveable pads, wheat packs and electrical or chemical pads. Some unorthodox methods can include warmed potatoes, uncooked rice, and hard-boiled eggs. The most common warm compress is a warm, wet washcloth.[2]",
+                    "",
+                    "=== Uses ===",
+                    "Warm compresses are a common non-pharmacological therapy used in the treatment of things such as sports injuries, dental pain, post-operative wound healing, and ophthalmic conditions. They are believed to improve blood flow, increase oxygenation in tissues and help manage inflammation.[2]",
+                    "Warm compresses are commonly used for the treatment of certain ocular conditions such as: [1]",
+                    "<info> muscle spasms or pain",
+                    "For both muscle and joint injuries, it is common to alternate both cold and warm compresses to manage inflammation. Non-steroidal anti-inflammatory drugs and corticosteroids may also be used in conjunction.[4]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b \"Warm Compresses for Eye Problems - Topic Overview\". WebMD. Retrieved 15 October 2016.",
+                    "<info> ^ a b Jones, Yian Jin; Georgesuc, Dan; McCann, John D.; Anderson, Richard L. (2010). \"Microwave Warm Compress Burns\". Ophthalmic Plastic & Reconstructive Surgery. 26 (3): 219. doi:10.1097/iop.0b013e3181c063b0. ISSN 0740-9303. PMID 20489556.",
+                    "<info> ^ Canter, Julie. \"What Is Meibomian Gland Dysfunction?\". Webmd.com. Retrieved 24 February 2022.",
+                    "<info> ^ Leeper-Woodford, Sandra; Adkinson, Linda (2015). \"Chapter 3: Musculoskeletal System\". Lippincott Illustrated Reviews: Integrated Systems. Philadelphia, PA: Lippincott Williams and Wilkins. ISBN 978-1451190960.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A warm compress is a method of applying heat to the body.[1] Heating sources can include warm water, microwaveable pads, wheat packs and electrical or chemical pads. Some unorthodox methods can include warmed potatoes, uncooked rice, and hard-boiled eggs. The most common warm compress is a warm, wet washcloth.[2]"
+                        ]
+                    },
+                    "Uses": {
+                        "content": [
+                            "Warm compresses are a common non-pharmacological therapy used in the treatment of things such as sports injuries, dental pain, post-operative wound healing, and ophthalmic conditions. They are believed to improve blood flow, increase oxygenation in tissues and help manage inflammation.[2]",
+                            "Warm compresses are commonly used for the treatment of certain ocular conditions such as: [1]",
+                            "<info> muscle spasms or pain",
+                            "For both muscle and joint injuries, it is common to alternate both cold and warm compresses to manage inflammation. Non-steroidal anti-inflammatory drugs and corticosteroids may also be used in conjunction.[4]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b \"Warm Compresses for Eye Problems - Topic Overview\". WebMD. Retrieved 15 October 2016.",
+                            "<info> ^ a b Jones, Yian Jin; Georgesuc, Dan; McCann, John D.; Anderson, Richard L. (2010). \"Microwave Warm Compress Burns\". Ophthalmic Plastic & Reconstructive Surgery. 26 (3): 219. doi:10.1097/iop.0b013e3181c063b0. ISSN 0740-9303. PMID 20489556.",
+                            "<info> ^ Canter, Julie. \"What Is Meibomian Gland Dysfunction?\". Webmd.com. Retrieved 24 February 2022.",
+                            "<info> ^ Leeper-Woodford, Sandra; Adkinson, Linda (2015). \"Chapter 3: Musculoskeletal System\". Lippincott Illustrated Reviews: Integrated Systems. Philadelphia, PA: Lippincott Williams and Wilkins. ISBN 978-1451190960."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

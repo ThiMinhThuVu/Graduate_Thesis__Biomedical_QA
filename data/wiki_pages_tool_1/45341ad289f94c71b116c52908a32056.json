@@ -1,0 +1,65 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/progressive_disease": {
+                "title": "Progressive disease",
+                "url": "https://en.wikipedia.org/wiki/progressive_disease",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Progressive disease or progressive illness is a disease or physical ailment whose course in most cases is the worsening, growth, or spread of the disease. This may happen until death, serious debility, or organ failure occurs.[1] Some progressive diseases can be halted and reversed by treatment (surgical, dietary, or lifestyle interventions). Many can be slowed by medical therapy. Some cannot be altered by current treatments.[2]",
+                    "Though the time distinctions are imprecise, diseases can be rapidly progressive (typically days to weeks) or slowly progressive (months to years). The time course of a disease affects whether it is considered acute or chronic. By definition, virtually all slowly progressive diseases are also chronic diseases. Biologically, many of these are also referred to as degenerative diseases due to the cellular changes.[citation needed]",
+                    "Not all chronic diseases are progressive: a chronic, non-progressive disease may be referred to as a static condition.",
+                    "Progressive disease can also be a clinical endpoint i.e. an endpoint in a clinical trial. A progressive disease should not be confused with a terminal disease, the difference being that a terminal disease invariably leads to death.",
+                    "",
+                    "=== Examples ===",
+                    "There are examples of slowly and rapidly progressive diseases affecting all organ systems and parts of the body. The following are some examples of rapidly and slowly progressive diseases affecting various organ systems:[citation needed]",
+                    "<info> Brain: Creutzfeldt–Jakob disease progresses rapidly compared to Alzheimer's disease.",
+                    "<info> Eyes: Cataracts can be static or slowly progressive. Macular degeneration is slowly progressive, while retinal detachment is rapidly progressive.",
+                    "<info> Lungs: Emphysema due to alpha-1 antitrypsin deficiency is a slowly progressive pulmonary disease.",
+                    "<info> Kidneys: Goodpasture's syndrome is a rapidly progressive glomerulonephritis, while diabetic glomerulosclerosis is slowly progressive.",
+                    "<info> Pancreas: Type 1 diabetes mellitus involves rapidly progressive loss of insulin secretory capacity compared to type 2 diabetes mellitus, in which the loss of insulin secretion is slowly progressive over many years. MODY 2, due to GCK mutation, is a relatively static form of reduced insulin secretion.",
+                    "<info> Joints: Both osteoarthritis and rheumatoid arthritis are slowly progressive forms of arthritis.",
+                    "<info> Nerves: Essential tremor is a slowly progressive neurological disorder which is usually genetically passed down.",
+                    "<info> Cancer: the abnormal growth of body cells",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Progressive illnesses\". Edge Hill University. Retrieved 2024-02-18.",
+                    "<info> ^ \"progressive-disease\". www.cancer.gov. 2011-02-02. Retrieved 2024-02-18.",
+                    "<info> ^ \"Cancer\". www.who.int. Retrieved 2024-02-18.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Progressive disease or progressive illness is a disease or physical ailment whose course in most cases is the worsening, growth, or spread of the disease. This may happen until death, serious debility, or organ failure occurs.[1] Some progressive diseases can be halted and reversed by treatment (surgical, dietary, or lifestyle interventions). Many can be slowed by medical therapy. Some cannot be altered by current treatments.[2]",
+                            "Though the time distinctions are imprecise, diseases can be rapidly progressive (typically days to weeks) or slowly progressive (months to years). The time course of a disease affects whether it is considered acute or chronic. By definition, virtually all slowly progressive diseases are also chronic diseases. Biologically, many of these are also referred to as degenerative diseases due to the cellular changes.[citation needed]",
+                            "Not all chronic diseases are progressive: a chronic, non-progressive disease may be referred to as a static condition.",
+                            "Progressive disease can also be a clinical endpoint i.e. an endpoint in a clinical trial. A progressive disease should not be confused with a terminal disease, the difference being that a terminal disease invariably leads to death."
+                        ]
+                    },
+                    "Examples": {
+                        "content": [
+                            "There are examples of slowly and rapidly progressive diseases affecting all organ systems and parts of the body. The following are some examples of rapidly and slowly progressive diseases affecting various organ systems:[citation needed]",
+                            "<info> Brain: Creutzfeldt–Jakob disease progresses rapidly compared to Alzheimer's disease.",
+                            "<info> Eyes: Cataracts can be static or slowly progressive. Macular degeneration is slowly progressive, while retinal detachment is rapidly progressive.",
+                            "<info> Lungs: Emphysema due to alpha-1 antitrypsin deficiency is a slowly progressive pulmonary disease.",
+                            "<info> Kidneys: Goodpasture's syndrome is a rapidly progressive glomerulonephritis, while diabetic glomerulosclerosis is slowly progressive.",
+                            "<info> Pancreas: Type 1 diabetes mellitus involves rapidly progressive loss of insulin secretory capacity compared to type 2 diabetes mellitus, in which the loss of insulin secretion is slowly progressive over many years. MODY 2, due to GCK mutation, is a relatively static form of reduced insulin secretion.",
+                            "<info> Joints: Both osteoarthritis and rheumatoid arthritis are slowly progressive forms of arthritis.",
+                            "<info> Nerves: Essential tremor is a slowly progressive neurological disorder which is usually genetically passed down.",
+                            "<info> Cancer: the abnormal growth of body cells"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Progressive illnesses\". Edge Hill University. Retrieved 2024-02-18.",
+                            "<info> ^ \"progressive-disease\". www.cancer.gov. 2011-02-02. Retrieved 2024-02-18.",
+                            "<info> ^ \"Cancer\". www.who.int. Retrieved 2024-02-18."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

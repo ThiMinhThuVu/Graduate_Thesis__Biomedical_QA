@@ -1,0 +1,133 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/octahedron": {
+                "title": "Octahedron",
+                "url": "https://en.wikipedia.org/wiki/octahedron",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "In geometry, an octahedron (pl.: octahedra or octahedrons) is any polyhedron with eight faces. One special case is the regular octahedron, a Platonic solid composed of eight equilateral triangles, four of which meet at each vertex. Many types of irregular octahedra also exist, including both convex and non-convex shapes.",
+                    "",
+                    "=== Regular octahedron ===",
+                    "The regular octahedron has eight equilateral triangle sides, six vertices at which four sides meet, and twelve edges. Its dual polyhedron is a cube.[1] It can be formed as the convex hull of the six axis-parallel unit vectors in three-dimensional Euclidean space. It is one of the five Platonic solids,[2] and the three-dimensional case of an infinite family of regular polytopes, the cross polytopes.[3] Although it does not tile space by itself, it can tile space together with the regular tetrahedron to form the tetrahedral-octahedral honeycomb.[4]",
+                    "",
+                    "=== Combinatorially equivalent to the regular octahedron ===",
+                    "The following polyhedra are combinatorially equivalent to the regular octahedron. They all have six vertices, eight triangular faces, and twelve edges that correspond one-for-one with the features of it:",
+                    "<info> Triangular antiprisms: Two faces are equilateral, lie on parallel planes, and have a common axis of symmetry. The other six triangles are isosceles. The regular octahedron is a special case in which the six lateral triangles are also equilateral.[5]",
+                    "<info> Tetragonal bipyramids, in which at least one of the equatorial quadrilaterals lies on a plane. The regular octahedron is a special case in which all three quadrilaterals are planar squares.[6]",
+                    "<info> Schönhardt polyhedron, a non-convex polyhedron that cannot be partitioned into tetrahedra without introducing new vertices.[7]",
+                    "<info> Bricard octahedron, a non-convex self-crossing flexible polyhedron.[8][9]",
+                    "",
+                    "=== Other convex polyhedra ===",
+                    "The regular octahedron has 6 vertices and 12 edges, the minimum for an octahedron; irregular octahedra may have as many as 12 vertices and 18 edges.[10] There are 257 topologically distinct convex octahedra, excluding mirror images. More specifically there are 2, 11, 42, 74, 76, 38, 14 for octahedra with 6 to 12 vertices respectively.[11][12] (Two polyhedra are \"topologically distinct\" if they have intrinsically different arrangements of faces and vertices, such that it is impossible to distort one into the other simply by changing the lengths of edges or the angles between edges or faces.)",
+                    "Notable eight-sided convex polyhedra include:",
+                    "<info> Hexagonal prism: Two faces are parallel regular hexagons; six squares link corresponding pairs of hexagon edges. With all faces regular and all vertices symmetric to each other, this is a uniform polyhedron.[13] It tiles space by translation as a parallelohedron.[14] The hexagonal frustum is topologically equivalent.",
+                    "<info> Truncated tetrahedron: The four faces from the tetrahedron are truncated to become regular hexagons, and there are four more equilateral triangle faces where each tetrahedron vertex was truncated. As a uniform polyhedron that is not a prism or antiprism, this is an Archimedean solid.[15][16]",
+                    "<info> Gyrobifastigium: Two uniform triangular prisms glued over one of their square sides so that no triangle shares an edge with another triangle. As a polyhedron whose faces are regular polygons, it is a Johnson solid.[16] It is a space-filling polyhedron.[17] Its dual polyhedron is also an octahedron.[18]",
+                    "<info> Augmented triangular prism: The result of gluing a triangular prism to a square pyramid, this has six equilateral triangle faces and two square faces. It is also a Johnson solid.[16]",
+                    "<info> Triangular cupola: Another Johnson solid, this has one regular hexagon face, three square faces, and four equilateral triangle faces.[16]",
+                    "<info> Tridiminished icosahedron: Another Johnson solid, obtained by removing three pentagonal pyramids from a regular icosahedron, resulting in three pentagonal and five triangular faces.[19]",
+                    "<info> Heptagonal pyramid: One face is a heptagon (usually regular), and the remaining seven faces are triangles (usually isosceles).[20] It is not possible for all triangular faces to be equilateral. It is a self-dual polyhedron.",
+                    "<info> Tetragonal trapezohedron: The eight faces are congruent kites.[21] Up to topological equivalence it is the only octahedron all of whose faces are quadrilaterals.[22]",
+                    "<info> Triangular bifrustum: The dual of an elongated triangular bipyramid (a Johnson solid), this can be realized with six isosceles trapezoid faces and two equilateral triangle faces.",
+                    "<info> Truncated triangular trapezohedron, also called Dürer's solid: Obtained by truncating two opposite corners of a cube or rhombohedron, this has six pentagon faces and two triangle faces.[23]",
+                    "<info> Gabled rhombohedron with four pentagonal faces and four rectangular faces.[24] Like the gyrobifastigium, it is a space-filling polyhedron.[25]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Erickson, Martin (2011). Beautiful Mathematics. Mathematical Association of America. p. 62. ISBN 978-1-61444-509-8.",
+                    "<info> ^ Herrmann, Diane L.; Sally, Paul J. (2013). Number, Shape, & Symmetry: An Introduction to Number Theory, Geometry, and Group Theory. Taylor & Francis. p. 252. ISBN 978-1-4665-5464-1.",
+                    "<info> ^ Coxeter, H. S. M. (1948). Regular Polytopes. Methuen and Co. pp. 121–122.",
+                    "<info> ^ Posamentier, Alfred S.; Maresch, Guenter; Thaller, Bernd; Spreitzer, Christian; Geretschlager, Robert; Stuhlpfarrer, David; Dorner, Christian (2022). Geometry In Our Three-dimensional World. World Scientific. pp. 233–234. ISBN 9789811237126.",
+                    "<info> ^ O'Keeffe, Michael; Hyde, Bruce G. (2020). Crystal Structures: Patterns and Symmetry. Dover Publications. p. 141. ISBN 978-0-486-83654-6.",
+                    "<info> ^ Trigg, Charles W. (1978). \"An Infinite Class of Deltahedra\". Mathematics Magazine. 51 (1): 55–57. doi:10.1080/0025570X.1978.11976675. JSTOR 2689647.",
+                    "<info> ^ Schönhardt, E. (1928). \"Über die Zerlegung von Dreieckspolyedern in Tetraeder\". Mathematische Annalen. 98: 309–312. doi:10.1007/BF01451597.",
+                    "<info> ^ Connelly, Robert (1981). \"Flexing surfaces\". In Klarner, David A. (ed.). The Mathematical Gardner. Springer. pp. 79–89. doi:10.1007/978-1-4684-6686-7_10. ISBN 978-1-4684-6688-1..",
+                    "<info> ^ Fuchs, Dmitry; Tabachnikov, Serge (2007). Mathematical Omnibus: Thirty lectures on classic mathematics. Providence, RI: American Mathematical Society. p. 347. doi:10.1090/mbk/046. ISBN 978-0-8218-4316-1. MR 2350979.",
+                    "<info> ^ \"Enumeration of Polyhedra\". Archived from the original on 10 October 2011. Retrieved 2 May 2006.",
+                    "<info> ^ \"Polyhedra with 8 Faces and 6-8 Vertices\". Archived from the original on 17 November 2014. Retrieved 14 August 2016.",
+                    "<info> ^ Coxeter, Harold Scott MacDonald; Longuet-Higgins, M. S.; Miller, J. C. P. (1954). \"Uniform polyhedra\" (PDF). Philosophical Transactions of the Royal Society A. 246 (916): 401–450. doi:10.1098/rsta.1954.0003. ISSN 0080-4614. JSTOR 91532. MR 0062446. S2CID 202575183.",
+                    "<info> ^ Alexandrov, A. D. (2005). Convex Polyhedra. Springer. p. 349.",
+                    "<info> ^ Kuchel, Philip W. (2012). \"96.45 Can you 'bend' a truncated truncated tetrahedron?\". The Mathematical Gazette. 96 (536): 317–323. doi:10.1017/S0025557200004666. JSTOR 23248575.",
+                    "<info> ^ a b c d Berman, Martin (1971). \"Regular-faced convex polyhedra\". Journal of the Franklin Institute. 291 (5): 329–352. doi:10.1016/0016-0032(71)90071-8. MR 0290245.",
+                    "<info> ^ Kepler, Johannes (2010). The Six-Cornered Snowflake. Paul Dry Books. Footnote 18, pp. 146–147. ISBN 9781589882850.",
+                    "<info> ^ Draghicescu, Mircea (2016). \"Dual models: one shape to make them all\". In Torrence, Eve; Torrence, Bruce; Séquin, Carlo; McKenna, Douglas; Fenyvesi, Kristóf; Sarhangi, Reza (eds.). Proceedings of Bridges 2016: Mathematics, Music, Art, Architecture, Education, Culture. Phoenix, Arizona: Tessellations Publishing. pp. 635–640. ISBN 978-1-938664-19-9.",
+                    "<info> ^ Gailiunas, Paul (2001). \"A Polyhedral Byway\" (PDF). In Sarhangi, Reza; Jablan, Slavik (eds.). Bridges: Mathematical Connections in Art, Music, and Science. Bridges Conference. pp. 115–122.",
+                    "<info> ^ Humble, Steve (2016). The Experimenter's A-Z of Mathematics: Math Activities with Computer Support. Taylor & Francis. p. 23. ISBN 978-1-134-13953-8.",
+                    "<info> ^ Dana, Edward Salisbury; Ford, W. E. (1922). A Text-Book of Mineralogy: With an Extended Treatise on Crystallography and Physical Mineralogy (3rd ed.). New York: Wiley. p. 89.",
+                    "<info> ^ Broersma, H. J.; Duijvestijn, A. J. W.; Göbel, F. (1993). \"Generating all 3-connected 4-regular planar graphs from the octahedron graph\". Journal of Graph Theory. 17 (5): 613–620. doi:10.1002/jgt.3190170508. MR 1242180.",
+                    "<info> ^ Futamura, F.; Frantz, M.; Crannell, A. (2014). \"The cross ratio as a shape parameter for Dürer's solid\". Journal of Mathematics and the Arts. 8 (3–4): 111–119. arXiv:1405.6481. doi:10.1080/17513472.2014.974483. S2CID 120958490.",
+                    "<info> ^ Gallagher, Paul; Ghang, Whan; Hu, David; Martin, Zane; Miller, Maggie; Perpetua, Byron; Waruhiu, Steven (2014). \"Surface-area-minimizing \n\n\n\nn\n\n\n{\\displaystyle n}\n\n-hedral Tiles\". Rose-Hulman Undergraduate Mathematics Journal. 15 (1): 210–236.",
+                    "<info> ^ Goldberg, Michael (1981). \"On the space-filling octahedra\". Geometriae Dedicata. 10 (1): 323–335. doi:10.1007/BF01447431. Archived from the original on 22 December 2017.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "In geometry, an octahedron (pl.: octahedra or octahedrons) is any polyhedron with eight faces. One special case is the regular octahedron, a Platonic solid composed of eight equilateral triangles, four of which meet at each vertex. Many types of irregular octahedra also exist, including both convex and non-convex shapes."
+                        ]
+                    },
+                    "Regular octahedron": {
+                        "content": [
+                            "The regular octahedron has eight equilateral triangle sides, six vertices at which four sides meet, and twelve edges. Its dual polyhedron is a cube.[1] It can be formed as the convex hull of the six axis-parallel unit vectors in three-dimensional Euclidean space. It is one of the five Platonic solids,[2] and the three-dimensional case of an infinite family of regular polytopes, the cross polytopes.[3] Although it does not tile space by itself, it can tile space together with the regular tetrahedron to form the tetrahedral-octahedral honeycomb.[4]"
+                        ]
+                    },
+                    "Combinatorially equivalent to the regular octahedron": {
+                        "content": [
+                            "The following polyhedra are combinatorially equivalent to the regular octahedron. They all have six vertices, eight triangular faces, and twelve edges that correspond one-for-one with the features of it:",
+                            "<info> Triangular antiprisms: Two faces are equilateral, lie on parallel planes, and have a common axis of symmetry. The other six triangles are isosceles. The regular octahedron is a special case in which the six lateral triangles are also equilateral.[5]",
+                            "<info> Tetragonal bipyramids, in which at least one of the equatorial quadrilaterals lies on a plane. The regular octahedron is a special case in which all three quadrilaterals are planar squares.[6]",
+                            "<info> Schönhardt polyhedron, a non-convex polyhedron that cannot be partitioned into tetrahedra without introducing new vertices.[7]",
+                            "<info> Bricard octahedron, a non-convex self-crossing flexible polyhedron.[8][9]"
+                        ]
+                    },
+                    "Other convex polyhedra": {
+                        "content": [
+                            "The regular octahedron has 6 vertices and 12 edges, the minimum for an octahedron; irregular octahedra may have as many as 12 vertices and 18 edges.[10] There are 257 topologically distinct convex octahedra, excluding mirror images. More specifically there are 2, 11, 42, 74, 76, 38, 14 for octahedra with 6 to 12 vertices respectively.[11][12] (Two polyhedra are \"topologically distinct\" if they have intrinsically different arrangements of faces and vertices, such that it is impossible to distort one into the other simply by changing the lengths of edges or the angles between edges or faces.)",
+                            "Notable eight-sided convex polyhedra include:",
+                            "<info> Hexagonal prism: Two faces are parallel regular hexagons; six squares link corresponding pairs of hexagon edges. With all faces regular and all vertices symmetric to each other, this is a uniform polyhedron.[13] It tiles space by translation as a parallelohedron.[14] The hexagonal frustum is topologically equivalent.",
+                            "<info> Truncated tetrahedron: The four faces from the tetrahedron are truncated to become regular hexagons, and there are four more equilateral triangle faces where each tetrahedron vertex was truncated. As a uniform polyhedron that is not a prism or antiprism, this is an Archimedean solid.[15][16]",
+                            "<info> Gyrobifastigium: Two uniform triangular prisms glued over one of their square sides so that no triangle shares an edge with another triangle. As a polyhedron whose faces are regular polygons, it is a Johnson solid.[16] It is a space-filling polyhedron.[17] Its dual polyhedron is also an octahedron.[18]",
+                            "<info> Augmented triangular prism: The result of gluing a triangular prism to a square pyramid, this has six equilateral triangle faces and two square faces. It is also a Johnson solid.[16]",
+                            "<info> Triangular cupola: Another Johnson solid, this has one regular hexagon face, three square faces, and four equilateral triangle faces.[16]",
+                            "<info> Tridiminished icosahedron: Another Johnson solid, obtained by removing three pentagonal pyramids from a regular icosahedron, resulting in three pentagonal and five triangular faces.[19]",
+                            "<info> Heptagonal pyramid: One face is a heptagon (usually regular), and the remaining seven faces are triangles (usually isosceles).[20] It is not possible for all triangular faces to be equilateral. It is a self-dual polyhedron.",
+                            "<info> Tetragonal trapezohedron: The eight faces are congruent kites.[21] Up to topological equivalence it is the only octahedron all of whose faces are quadrilaterals.[22]",
+                            "<info> Triangular bifrustum: The dual of an elongated triangular bipyramid (a Johnson solid), this can be realized with six isosceles trapezoid faces and two equilateral triangle faces.",
+                            "<info> Truncated triangular trapezohedron, also called Dürer's solid: Obtained by truncating two opposite corners of a cube or rhombohedron, this has six pentagon faces and two triangle faces.[23]",
+                            "<info> Gabled rhombohedron with four pentagonal faces and four rectangular faces.[24] Like the gyrobifastigium, it is a space-filling polyhedron.[25]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Erickson, Martin (2011). Beautiful Mathematics. Mathematical Association of America. p. 62. ISBN 978-1-61444-509-8.",
+                            "<info> ^ Herrmann, Diane L.; Sally, Paul J. (2013). Number, Shape, & Symmetry: An Introduction to Number Theory, Geometry, and Group Theory. Taylor & Francis. p. 252. ISBN 978-1-4665-5464-1.",
+                            "<info> ^ Coxeter, H. S. M. (1948). Regular Polytopes. Methuen and Co. pp. 121–122.",
+                            "<info> ^ Posamentier, Alfred S.; Maresch, Guenter; Thaller, Bernd; Spreitzer, Christian; Geretschlager, Robert; Stuhlpfarrer, David; Dorner, Christian (2022). Geometry In Our Three-dimensional World. World Scientific. pp. 233–234. ISBN 9789811237126.",
+                            "<info> ^ O'Keeffe, Michael; Hyde, Bruce G. (2020). Crystal Structures: Patterns and Symmetry. Dover Publications. p. 141. ISBN 978-0-486-83654-6.",
+                            "<info> ^ Trigg, Charles W. (1978). \"An Infinite Class of Deltahedra\". Mathematics Magazine. 51 (1): 55–57. doi:10.1080/0025570X.1978.11976675. JSTOR 2689647.",
+                            "<info> ^ Schönhardt, E. (1928). \"Über die Zerlegung von Dreieckspolyedern in Tetraeder\". Mathematische Annalen. 98: 309–312. doi:10.1007/BF01451597.",
+                            "<info> ^ Connelly, Robert (1981). \"Flexing surfaces\". In Klarner, David A. (ed.). The Mathematical Gardner. Springer. pp. 79–89. doi:10.1007/978-1-4684-6686-7_10. ISBN 978-1-4684-6688-1..",
+                            "<info> ^ Fuchs, Dmitry; Tabachnikov, Serge (2007). Mathematical Omnibus: Thirty lectures on classic mathematics. Providence, RI: American Mathematical Society. p. 347. doi:10.1090/mbk/046. ISBN 978-0-8218-4316-1. MR 2350979.",
+                            "<info> ^ \"Enumeration of Polyhedra\". Archived from the original on 10 October 2011. Retrieved 2 May 2006.",
+                            "<info> ^ \"Polyhedra with 8 Faces and 6-8 Vertices\". Archived from the original on 17 November 2014. Retrieved 14 August 2016.",
+                            "<info> ^ Coxeter, Harold Scott MacDonald; Longuet-Higgins, M. S.; Miller, J. C. P. (1954). \"Uniform polyhedra\" (PDF). Philosophical Transactions of the Royal Society A. 246 (916): 401–450. doi:10.1098/rsta.1954.0003. ISSN 0080-4614. JSTOR 91532. MR 0062446. S2CID 202575183.",
+                            "<info> ^ Alexandrov, A. D. (2005). Convex Polyhedra. Springer. p. 349.",
+                            "<info> ^ Kuchel, Philip W. (2012). \"96.45 Can you 'bend' a truncated truncated tetrahedron?\". The Mathematical Gazette. 96 (536): 317–323. doi:10.1017/S0025557200004666. JSTOR 23248575.",
+                            "<info> ^ a b c d Berman, Martin (1971). \"Regular-faced convex polyhedra\". Journal of the Franklin Institute. 291 (5): 329–352. doi:10.1016/0016-0032(71)90071-8. MR 0290245.",
+                            "<info> ^ Kepler, Johannes (2010). The Six-Cornered Snowflake. Paul Dry Books. Footnote 18, pp. 146–147. ISBN 9781589882850.",
+                            "<info> ^ Draghicescu, Mircea (2016). \"Dual models: one shape to make them all\". In Torrence, Eve; Torrence, Bruce; Séquin, Carlo; McKenna, Douglas; Fenyvesi, Kristóf; Sarhangi, Reza (eds.). Proceedings of Bridges 2016: Mathematics, Music, Art, Architecture, Education, Culture. Phoenix, Arizona: Tessellations Publishing. pp. 635–640. ISBN 978-1-938664-19-9.",
+                            "<info> ^ Gailiunas, Paul (2001). \"A Polyhedral Byway\" (PDF). In Sarhangi, Reza; Jablan, Slavik (eds.). Bridges: Mathematical Connections in Art, Music, and Science. Bridges Conference. pp. 115–122.",
+                            "<info> ^ Humble, Steve (2016). The Experimenter's A-Z of Mathematics: Math Activities with Computer Support. Taylor & Francis. p. 23. ISBN 978-1-134-13953-8.",
+                            "<info> ^ Dana, Edward Salisbury; Ford, W. E. (1922). A Text-Book of Mineralogy: With an Extended Treatise on Crystallography and Physical Mineralogy (3rd ed.). New York: Wiley. p. 89.",
+                            "<info> ^ Broersma, H. J.; Duijvestijn, A. J. W.; Göbel, F. (1993). \"Generating all 3-connected 4-regular planar graphs from the octahedron graph\". Journal of Graph Theory. 17 (5): 613–620. doi:10.1002/jgt.3190170508. MR 1242180.",
+                            "<info> ^ Futamura, F.; Frantz, M.; Crannell, A. (2014). \"The cross ratio as a shape parameter for Dürer's solid\". Journal of Mathematics and the Arts. 8 (3–4): 111–119. arXiv:1405.6481. doi:10.1080/17513472.2014.974483. S2CID 120958490.",
+                            "<info> ^ Gallagher, Paul; Ghang, Whan; Hu, David; Martin, Zane; Miller, Maggie; Perpetua, Byron; Waruhiu, Steven (2014). \"Surface-area-minimizing \n\n\n\nn\n\n\n{\\displaystyle n}\n\n-hedral Tiles\". Rose-Hulman Undergraduate Mathematics Journal. 15 (1): 210–236.",
+                            "<info> ^ Goldberg, Michael (1981). \"On the space-filling octahedra\". Geometriae Dedicata. 10 (1): 323–335. doi:10.1007/BF01447431. Archived from the original on 22 December 2017."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/coronavirus": {
+                "title": "Coronavirus",
+                "url": "https://en.wikipedia.org/wiki/coronavirus",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

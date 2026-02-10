@@ -1,0 +1,27 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/giedion": {
+                "title": "Giedion",
+                "url": "https://en.wikipedia.org/wiki/giedion",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Giedion is a surname. Notable people with the surname include:",
+                    "<info> Carola Giedion-Welcker (née Welcker; 1893–1979), German-Swiss art historian",
+                    "<info> Sigfried Giedion (1888–1968), Bohemian-born Swiss historian and critic of architecture",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Giedion is a surname. Notable people with the surname include:",
+                            "<info> Carola Giedion-Welcker (née Welcker; 1893–1979), German-Swiss art historian",
+                            "<info> Sigfried Giedion (1888–1968), Bohemian-born Swiss historian and critic of architecture"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

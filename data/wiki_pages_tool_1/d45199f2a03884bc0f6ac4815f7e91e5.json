@@ -1,0 +1,87 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/cerebellar_granule_cell": {
+                "title": "Cerebellar granule cell",
+                "url": "https://en.wikipedia.org/wiki/cerebellar_granule_cell",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Cerebellar granule cells form the thick granular layer of the cerebellar cortex and are among the smallest neurons in the brain.  (The term granule cell is used for several unrelated types of small neurons in various parts of the brain.)  Cerebellar granule cells are also the most numerous neurons in the brain:  in humans, estimates of their total number average around 50 billion, which means that they constitute a bit more than half[1] of the brain's neurons.[2]",
+                    "",
+                    "=== Structure ===",
+                    "The cell bodies are packed into a thick granular layer at the bottom of the cerebellar cortex.  A granule cell emits only four to five dendrites, each of which ends in an enlargement called a dendritic claw.[2]  These enlargements are sites of excitatory input from mossy fibers and inhibitory input from Golgi cells.",
+                    "The thin, unmyelinated axons of granule cells rise vertically to the upper (molecular) layer of the cortex, where they split in two, with each branch traveling horizontally to form a parallel fiber; the splitting of the vertical branch into two horizontal branches gives rise to a distinctive \"T\" shape.  A parallel fiber runs for an average of 3 mm in each direction from the split, for a total length of about 6 mm (about 1/10 of the total width of the cortical layer).[2]  As they run along, the parallel fibers pass through the dendritic trees of Purkinje cells, contacting one of every 3–5 that they pass, making a total of 80–100 synaptic connections with Purkinje cell dendritic spines.[2]  Granule cells use glutamate as their neurotransmitter, and therefore exert excitatory effects on their targets.",
+                    "In normal development, endogenous Sonic hedgehog signaling stimulates rapid proliferation of cerebellar granule neuron progenitors (CGNPs) in the external granule layer (EGL). Cerebellum development occurs during late embryogenesis and the early postnatal period, with CGNP proliferation in the EGL peaking during early development (P7, postnatal day 7, in the mouse).[3] As CGNPs terminally differentiate into cerebellum granule cells (also called cerebellar granule neurons, CGNs), they migrate to the internal granule layer (IGL), forming the mature cerebellum (by P20, post-natal day 20 in the mouse).[3] Mutations that abnormally activate Sonic hedgehog signaling predispose to cancer of the cerebellum (medulloblastoma) in humans with Gorlin syndrome and in genetically engineered mouse models.[4][5]",
+                    "",
+                    "=== Function ===",
+                    "Granule cells receive all of their input from mossy fibers, but outnumber them 200 to 1 (in humans).  Thus, the information in the granule cell population activity state is the same as the information in the mossy fibers, but recoded in a much more expansive way.  Because granule cells are so small and so densely packed, it has been very difficult to record their spike activity in behaving animals, so there is little data to use as a basis of theorizing.  The most popular concept of their function was proposed by David Marr, who suggested that they could encode combinations of mossy fiber inputs.  The idea is that with each granule cell receiving input from only 4–5 mossy fibers, a granule cell would not respond if only a single one of its inputs was active, but would respond if more than one were active.  This \"combinatorial coding\" scheme would potentially allow the cerebellum to make much finer distinctions between input patterns than the mossy fibers alone would permit.[6]",
+                    "",
+                    "=== 3D genome architecture ===",
+                    "Cerebellar granule cells acquire a characteristic genome architecture: ultra-long-range intrachromosomal contacts (10-100Mb), specific interchromosomal contacts and restructuring of active/inactive chromatin compartmentalisation (scA/B) throughout life. This genomic dynamic is modulated by cell type-specific genes, but not by CpG methylation at the global level and could be a cellular strategy to manage space and energy.[7]",
+                    "All these features have been observed in murine and human cerebellar tissues, so the mouse model seems to be a good animal model to study the genome structure of cerebellar granule cells, despite the difference in lifespan between the two types of organisms.[7]",
+                    "",
+                    "=== Role in disease ===",
+                    "In neurodevelopmental disorders, including autism spectrum disorders (ASD), alterations in the chromatin remodelling of granule cells have been identified. This is due to mutations in genes encoding proteins involved in chromatin remodelling. One of these genes is CHD4.[8]",
+                    "CHD4 is a protein that modulates synaptogenesis between granule cells and Purkinje cells through chromatin remodelling (specifically, it suppresses genomic accessibility). Mutations in it lead to alterations in synaptogenesis, as a consequence of increased accessibility to genome-wide promoters and enhancers (which are repressed under physiological developmental conditions).[9] However, these alterations at the chromatin level have no effect on the 3D genome architecture of cerebellar granule cells.[7]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Are There Really as Many Neurons in the Human Brain as Stars in the Milky Way? | Brain Metrics | Learn Science at Scitable\". www.nature.com. Retrieved May 22, 2025.",
+                    "<info> ^ a b c d Llinas RR, Walton KD, Lang EJ (2004). \"Ch. 7 Cerebellum\". In Shepherd GM (ed.). The Synaptic Organization of the Brain. New York: Oxford University Press. ISBN 978-0-19-515955-4.",
+                    "<info> ^ a b Hatten, M (1995). \"Mechanisms of neural patterning and specification in the developing cerebellum\". Annu Rev Neurosci. 18: 385–408. doi:10.1146/annurev.ne.18.030195.002125. PMID 7605067.",
+                    "<info> ^ Roussel, M (2011). \"Cerebellum\". Cerebellum development and medulloblastoma. Current Topics in Developmental Biology. Vol. 94. pp. 235–82. doi:10.1016/B978-0-12-380916-2.00008-5. ISBN 9780123809162. PMC 3213765. PMID 21295689. {{cite book}}: |journal= ignored (help)",
+                    "<info> ^ Polkinghorn, W (2007). \"Medulloblastoma: tumorigenesis, current clinical paradigm, and efforts to improve risk stratification\". Nat Clin Pract Oncol. 4 (5): 295–304. doi:10.1038/ncponc0794. PMID 17464337. S2CID 24461280.",
+                    "<info> ^ Marr D (1969). \"A theory of cerebellar cortex\". J. Physiol. 202 (2): 437–70. doi:10.1113/jphysiol.1969.sp008820. PMC 1351491. PMID 5784296.",
+                    "<info> ^ a b c  Tan, L., Shi, J., Moghadami, S., Parasar, B., Wright, C. P., Seo, Y., et al. (2023). «Lifelong restructuring of 3D genome architecture in cerebellar granule cells.Science (American Association for the Advancement of Science), 381(6662), 1112-1119. doi:10.1126/science.adh325». https://www.science.org/doi/10.1126/science.adh3253",
+                    "<info> ^ Legüe, Marcela (2022). \"Relevancia de los mecanismos epigenéticos en el neurodesarrollo normal y consecuencias de sus perturbaciones | Revista Médica Clínica Las Condes\". www.elsevier.es. Retrieved January 16, 2024.",
+                    "<info> ^ Goodman, Jared V.; Yamada, Tomoko; Yang, Yue; Kong, Lingchun; Wu, Dennis Y.; Zhao, Guoyan; Gabel, Harrison W.; Bonni, Azad (July 9, 2020). \"The chromatin remodeling enzyme Chd4 regulates genome architecture in the mouse brain\". Nature Communications. 11 (1): 3419. doi:10.1038/s41467-020-17065-z. ISSN 2041-1723. PMC 7347877. PMID 32647123.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Cerebellar granule cells form the thick granular layer of the cerebellar cortex and are among the smallest neurons in the brain.  (The term granule cell is used for several unrelated types of small neurons in various parts of the brain.)  Cerebellar granule cells are also the most numerous neurons in the brain:  in humans, estimates of their total number average around 50 billion, which means that they constitute a bit more than half[1] of the brain's neurons.[2]"
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "The cell bodies are packed into a thick granular layer at the bottom of the cerebellar cortex.  A granule cell emits only four to five dendrites, each of which ends in an enlargement called a dendritic claw.[2]  These enlargements are sites of excitatory input from mossy fibers and inhibitory input from Golgi cells.",
+                            "The thin, unmyelinated axons of granule cells rise vertically to the upper (molecular) layer of the cortex, where they split in two, with each branch traveling horizontally to form a parallel fiber; the splitting of the vertical branch into two horizontal branches gives rise to a distinctive \"T\" shape.  A parallel fiber runs for an average of 3 mm in each direction from the split, for a total length of about 6 mm (about 1/10 of the total width of the cortical layer).[2]  As they run along, the parallel fibers pass through the dendritic trees of Purkinje cells, contacting one of every 3–5 that they pass, making a total of 80–100 synaptic connections with Purkinje cell dendritic spines.[2]  Granule cells use glutamate as their neurotransmitter, and therefore exert excitatory effects on their targets.",
+                            "In normal development, endogenous Sonic hedgehog signaling stimulates rapid proliferation of cerebellar granule neuron progenitors (CGNPs) in the external granule layer (EGL). Cerebellum development occurs during late embryogenesis and the early postnatal period, with CGNP proliferation in the EGL peaking during early development (P7, postnatal day 7, in the mouse).[3] As CGNPs terminally differentiate into cerebellum granule cells (also called cerebellar granule neurons, CGNs), they migrate to the internal granule layer (IGL), forming the mature cerebellum (by P20, post-natal day 20 in the mouse).[3] Mutations that abnormally activate Sonic hedgehog signaling predispose to cancer of the cerebellum (medulloblastoma) in humans with Gorlin syndrome and in genetically engineered mouse models.[4][5]"
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "Granule cells receive all of their input from mossy fibers, but outnumber them 200 to 1 (in humans).  Thus, the information in the granule cell population activity state is the same as the information in the mossy fibers, but recoded in a much more expansive way.  Because granule cells are so small and so densely packed, it has been very difficult to record their spike activity in behaving animals, so there is little data to use as a basis of theorizing.  The most popular concept of their function was proposed by David Marr, who suggested that they could encode combinations of mossy fiber inputs.  The idea is that with each granule cell receiving input from only 4–5 mossy fibers, a granule cell would not respond if only a single one of its inputs was active, but would respond if more than one were active.  This \"combinatorial coding\" scheme would potentially allow the cerebellum to make much finer distinctions between input patterns than the mossy fibers alone would permit.[6]"
+                        ]
+                    },
+                    "3D genome architecture": {
+                        "content": [
+                            "Cerebellar granule cells acquire a characteristic genome architecture: ultra-long-range intrachromosomal contacts (10-100Mb), specific interchromosomal contacts and restructuring of active/inactive chromatin compartmentalisation (scA/B) throughout life. This genomic dynamic is modulated by cell type-specific genes, but not by CpG methylation at the global level and could be a cellular strategy to manage space and energy.[7]",
+                            "All these features have been observed in murine and human cerebellar tissues, so the mouse model seems to be a good animal model to study the genome structure of cerebellar granule cells, despite the difference in lifespan between the two types of organisms.[7]"
+                        ]
+                    },
+                    "Role in disease": {
+                        "content": [
+                            "In neurodevelopmental disorders, including autism spectrum disorders (ASD), alterations in the chromatin remodelling of granule cells have been identified. This is due to mutations in genes encoding proteins involved in chromatin remodelling. One of these genes is CHD4.[8]",
+                            "CHD4 is a protein that modulates synaptogenesis between granule cells and Purkinje cells through chromatin remodelling (specifically, it suppresses genomic accessibility). Mutations in it lead to alterations in synaptogenesis, as a consequence of increased accessibility to genome-wide promoters and enhancers (which are repressed under physiological developmental conditions).[9] However, these alterations at the chromatin level have no effect on the 3D genome architecture of cerebellar granule cells.[7]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Are There Really as Many Neurons in the Human Brain as Stars in the Milky Way? | Brain Metrics | Learn Science at Scitable\". www.nature.com. Retrieved May 22, 2025.",
+                            "<info> ^ a b c d Llinas RR, Walton KD, Lang EJ (2004). \"Ch. 7 Cerebellum\". In Shepherd GM (ed.). The Synaptic Organization of the Brain. New York: Oxford University Press. ISBN 978-0-19-515955-4.",
+                            "<info> ^ a b Hatten, M (1995). \"Mechanisms of neural patterning and specification in the developing cerebellum\". Annu Rev Neurosci. 18: 385–408. doi:10.1146/annurev.ne.18.030195.002125. PMID 7605067.",
+                            "<info> ^ Roussel, M (2011). \"Cerebellum\". Cerebellum development and medulloblastoma. Current Topics in Developmental Biology. Vol. 94. pp. 235–82. doi:10.1016/B978-0-12-380916-2.00008-5. ISBN 9780123809162. PMC 3213765. PMID 21295689. {{cite book}}: |journal= ignored (help)",
+                            "<info> ^ Polkinghorn, W (2007). \"Medulloblastoma: tumorigenesis, current clinical paradigm, and efforts to improve risk stratification\". Nat Clin Pract Oncol. 4 (5): 295–304. doi:10.1038/ncponc0794. PMID 17464337. S2CID 24461280.",
+                            "<info> ^ Marr D (1969). \"A theory of cerebellar cortex\". J. Physiol. 202 (2): 437–70. doi:10.1113/jphysiol.1969.sp008820. PMC 1351491. PMID 5784296.",
+                            "<info> ^ a b c  Tan, L., Shi, J., Moghadami, S., Parasar, B., Wright, C. P., Seo, Y., et al. (2023). «Lifelong restructuring of 3D genome architecture in cerebellar granule cells.Science (American Association for the Advancement of Science), 381(6662), 1112-1119. doi:10.1126/science.adh325». https://www.science.org/doi/10.1126/science.adh3253",
+                            "<info> ^ Legüe, Marcela (2022). \"Relevancia de los mecanismos epigenéticos en el neurodesarrollo normal y consecuencias de sus perturbaciones | Revista Médica Clínica Las Condes\". www.elsevier.es. Retrieved January 16, 2024.",
+                            "<info> ^ Goodman, Jared V.; Yamada, Tomoko; Yang, Yue; Kong, Lingchun; Wu, Dennis Y.; Zhao, Guoyan; Gabel, Harrison W.; Bonni, Azad (July 9, 2020). \"The chromatin remodeling enzyme Chd4 regulates genome architecture in the mouse brain\". Nature Communications. 11 (1): 3419. doi:10.1038/s41467-020-17065-z. ISSN 2041-1723. PMC 7347877. PMID 32647123."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

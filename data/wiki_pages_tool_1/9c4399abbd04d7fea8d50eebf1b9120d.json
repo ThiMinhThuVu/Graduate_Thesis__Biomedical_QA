@@ -1,0 +1,101 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/structural_rigidity": {
+                "title": "Structural rigidity",
+                "url": "https://en.wikipedia.org/wiki/structural_rigidity",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "In discrete geometry and mechanics, structural rigidity is a combinatorial theory for predicting the flexibility of ensembles formed by rigid bodies connected by flexible linkages or hinges.",
+                    "",
+                    "=== Definitions ===",
+                    "Rigidity is the property of a structure that it does not bend or flex under an applied force. The opposite of rigidity is flexibility. In structural rigidity theory, structures are formed by collections of objects that are themselves rigid bodies, often assumed to take simple geometric forms such as straight rods (line segments), with pairs of objects connected by flexible hinges. A structure is rigid if it cannot flex; that is, if there is no continuous motion of the structure that preserves the shape of its rigid components and the pattern of their connections at the hinges.",
+                    "There are two essentially different kinds of rigidity.  Finite or macroscopic rigidity means that the structure will not flex, fold, or bend by a positive amount.  Infinitesimal rigidity means that the structure will not flex by even an amount that is too small to be detected even in theory.  (Technically, that means certain differential equations have no nonzero solutions.)  The importance of finite rigidity is obvious, but infinitesimal rigidity is also crucial because infinitesimal flexibility in theory corresponds to real-world minuscule flexing, and consequent deterioration of the structure.",
+                    "A rigid graph is an embedding of a graph in a Euclidean space which is structurally rigid.[1] That is, a graph is rigid if the structure formed by replacing the edges by rigid rods and the vertices by flexible hinges is rigid. A graph that is not rigid is called flexible. More formally, a graph embedding is flexible if the vertices can be moved continuously, preserving the distances between adjacent vertices, with the result that the distances between some nonadjacent vertices are altered.[2] The latter condition rules out Euclidean congruences such as simple translation and rotation.",
+                    "It is also possible to consider rigidity problems for graphs in which some edges represent compression elements (able to stretch to a longer length, but not to shrink to a shorter length) while other edges represent tension elements (able to shrink but not stretch). A rigid graph with edges of these types forms a mathematical model of a tensegrity structure.",
+                    "In addition, rigidity can also be defined under interior angle constraints between edges rather than distances on edges, a property known as angle rigidity.  In the plane, minimally and triangularly angle-rigid frameworks are characterized by L-trigraphs, which satisfy a sparsity condition requiring the number of triangles to be exactly two fewer than the number of vertices, alongside an analogous hereditary property for all induced sub-structures.  Actually, L-trigraph condition is inspired from  Laman graph condition, which play similars roles in angle rigity and distance rigidity, respectively.[3]",
+                    "",
+                    "=== Mathematics of rigidity ===",
+                    "The fundamental problem is how to predict the rigidity of a structure by theoretical analysis, without having to build it. Key results in this area include the following:",
+                    "<info> In any dimension, the rigidity of rod-and-hinge linkages is described by a matroid. The bases of the two-dimensional rigidity matroid (the minimally rigid graphs in the plane) are the Laman graphs.",
+                    "<info> Cauchy's theorem states that a three-dimensional convex polyhedron constructed with rigid plates for its faces, connected by hinges along its edges, forms a rigid structure.",
+                    "<info> Flexible polyhedra, non-convex polyhedra that are not rigid, were constructed by Raoul Bricard, Robert Connelly, and others. The bellows conjecture, now proven, states that every continuous motion of a flexible polyhedron preserves its volume.",
+                    "<info> In the grid bracing problem, where the framework to be made rigid is a square grid with added diagonals as cross bracing, the rigidity of the structure can be analyzed by translating it into a problem on the connectivity of an underlying bipartite graph.[4][5]",
+                    "However, in many other simple situations it is not yet always known how to analyze the rigidity of a structure mathematically despite the existence of considerable mathematical theory.",
+                    "",
+                    "=== History ===",
+                    "One of the founders of the mathematical theory of structural rigidity was the physicist James Clerk Maxwell. The late twentieth century saw an efflorescence of the mathematical theory of rigidity, which continues in the twenty-first century.",
+                    "\"[A] theory of the equilibrium and deflections of frameworks subjected to the action of forces is acting on the hardnes of quality... in cases in which the framework ... is strengthened by additional connecting pieces ... in cases of three dimensions, by the regular method of equations of forces, every point would have three equations to determine its equilibrium, so as to give 3s equations between e unknown quantities, if s be the number of points and e the number of connexions[sic]. There are, however, six equations of equilibrium of the system which must be fulfilled necessarily by the forces, on account of the equality of action and reaction in each piece. Hence if e = 3s − 6, the effect of any eternal force will be definite in producing tensions or pressures in the different pieces; but if e > 3s − 6, these forces will be indeterminate....\"[6]",
+                    "",
+                    "=== Notes ===",
+                    "<info> ^ Weisstein, Eric W. \"Rigid Graph\". MathWorld.",
+                    "<info> ^ Weisstein, Eric W. \"Flexible Graph\". MathWorld.",
+                    "<info> ^ Chen, L. (2022), \"Triangular angle rigidity for distributed localization in 2D\", Automatica, 143 110414, doi:10.1016/j.automatica.2022.110414",
+                    "<info> ^ Baglivo, Jenny A.; Graver, Jack E. (1983), \"3.10 Bracing structures\", Incidence and Symmetry in Design and Architecture, Cambridge Urban and Architectural Studies, Cambridge, UK: Cambridge University Press, pp. 76–87, ISBN 978-0-521-29784-4",
+                    "<info> ^ Graver, Jack E. (2001), Counting on Frameworks: Mathematics to Aid the Design of Rigid Structures, The Dolciani Mathematical Expositions, vol. 25, Washington, DC: Mathematical Association of America, ISBN 0-88385-331-0, MR 1843781. See in particular sections 1.2 (\"The grid bracing problem\", pp. 4–12), 1.5 (\"More about the grid problem\", pp. 19–22), 2.6 (\"The solution to the grid problem\", pp. 50–55), and 4.4 (\"Tensegrity: tension bracings\", particularly pp. 158–161).",
+                    "",
+                    "=== References ===",
+                    "<info> Alfakih, Abdo Y. (2007), \"On dimensional rigidity of bar-and-joint frameworks\", Discrete Applied Mathematics, 155 (10): 1244–1253, doi:10.1016/j.dam.2006.11.011, MR 2332317.",
+                    "<info> Connelly, Robert (1980), \"The rigidity of certain cabled frameworks and the second-order rigidity of arbitrarily triangulated convex surfaces\", Advances in Mathematics, 37 (3): 272–299, doi:10.1016/0001-8708(80)90037-7, MR 0591730.",
+                    "<info> Crapo, Henry (1979), \"Structural rigidity\", Structural Topology (1): 26–45, 73, hdl:2099/521, MR 0621627.",
+                    "<info> Maxwell, J. C. (1864), \"On reciprocal figures and diagrams of forces\", Philosophical Magazine, 4th Series, 27 (182): 250–261, doi:10.1080/14786446408643663.",
+                    "<info> Rybnikov, Konstantin; Zaslavsky, Thomas (2005), \"Criteria for balance in abelian gain graphs, with applications to piecewise-linear geometry\", Discrete & Computational Geometry, 34 (2): 251–268, arXiv:math/0210052, doi:10.1007/s00454-005-1170-6, MR 2155721, S2CID 14391276.",
+                    "<info> Whiteley, Walter (1988), \"The union of matroids and the rigidity of frameworks\", SIAM Journal on Discrete Mathematics, 1 (2): 237–255, doi:10.1137/0401025, MR 0941354",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "In discrete geometry and mechanics, structural rigidity is a combinatorial theory for predicting the flexibility of ensembles formed by rigid bodies connected by flexible linkages or hinges."
+                        ]
+                    },
+                    "Definitions": {
+                        "content": [
+                            "Rigidity is the property of a structure that it does not bend or flex under an applied force. The opposite of rigidity is flexibility. In structural rigidity theory, structures are formed by collections of objects that are themselves rigid bodies, often assumed to take simple geometric forms such as straight rods (line segments), with pairs of objects connected by flexible hinges. A structure is rigid if it cannot flex; that is, if there is no continuous motion of the structure that preserves the shape of its rigid components and the pattern of their connections at the hinges.",
+                            "There are two essentially different kinds of rigidity.  Finite or macroscopic rigidity means that the structure will not flex, fold, or bend by a positive amount.  Infinitesimal rigidity means that the structure will not flex by even an amount that is too small to be detected even in theory.  (Technically, that means certain differential equations have no nonzero solutions.)  The importance of finite rigidity is obvious, but infinitesimal rigidity is also crucial because infinitesimal flexibility in theory corresponds to real-world minuscule flexing, and consequent deterioration of the structure.",
+                            "A rigid graph is an embedding of a graph in a Euclidean space which is structurally rigid.[1] That is, a graph is rigid if the structure formed by replacing the edges by rigid rods and the vertices by flexible hinges is rigid. A graph that is not rigid is called flexible. More formally, a graph embedding is flexible if the vertices can be moved continuously, preserving the distances between adjacent vertices, with the result that the distances between some nonadjacent vertices are altered.[2] The latter condition rules out Euclidean congruences such as simple translation and rotation.",
+                            "It is also possible to consider rigidity problems for graphs in which some edges represent compression elements (able to stretch to a longer length, but not to shrink to a shorter length) while other edges represent tension elements (able to shrink but not stretch). A rigid graph with edges of these types forms a mathematical model of a tensegrity structure.",
+                            "In addition, rigidity can also be defined under interior angle constraints between edges rather than distances on edges, a property known as angle rigidity.  In the plane, minimally and triangularly angle-rigid frameworks are characterized by L-trigraphs, which satisfy a sparsity condition requiring the number of triangles to be exactly two fewer than the number of vertices, alongside an analogous hereditary property for all induced sub-structures.  Actually, L-trigraph condition is inspired from  Laman graph condition, which play similars roles in angle rigity and distance rigidity, respectively.[3]"
+                        ]
+                    },
+                    "Mathematics of rigidity": {
+                        "content": [
+                            "The fundamental problem is how to predict the rigidity of a structure by theoretical analysis, without having to build it. Key results in this area include the following:",
+                            "<info> In any dimension, the rigidity of rod-and-hinge linkages is described by a matroid. The bases of the two-dimensional rigidity matroid (the minimally rigid graphs in the plane) are the Laman graphs.",
+                            "<info> Cauchy's theorem states that a three-dimensional convex polyhedron constructed with rigid plates for its faces, connected by hinges along its edges, forms a rigid structure.",
+                            "<info> Flexible polyhedra, non-convex polyhedra that are not rigid, were constructed by Raoul Bricard, Robert Connelly, and others. The bellows conjecture, now proven, states that every continuous motion of a flexible polyhedron preserves its volume.",
+                            "<info> In the grid bracing problem, where the framework to be made rigid is a square grid with added diagonals as cross bracing, the rigidity of the structure can be analyzed by translating it into a problem on the connectivity of an underlying bipartite graph.[4][5]",
+                            "However, in many other simple situations it is not yet always known how to analyze the rigidity of a structure mathematically despite the existence of considerable mathematical theory."
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "One of the founders of the mathematical theory of structural rigidity was the physicist James Clerk Maxwell. The late twentieth century saw an efflorescence of the mathematical theory of rigidity, which continues in the twenty-first century.",
+                            "\"[A] theory of the equilibrium and deflections of frameworks subjected to the action of forces is acting on the hardnes of quality... in cases in which the framework ... is strengthened by additional connecting pieces ... in cases of three dimensions, by the regular method of equations of forces, every point would have three equations to determine its equilibrium, so as to give 3s equations between e unknown quantities, if s be the number of points and e the number of connexions[sic]. There are, however, six equations of equilibrium of the system which must be fulfilled necessarily by the forces, on account of the equality of action and reaction in each piece. Hence if e = 3s − 6, the effect of any eternal force will be definite in producing tensions or pressures in the different pieces; but if e > 3s − 6, these forces will be indeterminate....\"[6]"
+                        ]
+                    },
+                    "Notes": {
+                        "content": [
+                            "<info> ^ Weisstein, Eric W. \"Rigid Graph\". MathWorld.",
+                            "<info> ^ Weisstein, Eric W. \"Flexible Graph\". MathWorld.",
+                            "<info> ^ Chen, L. (2022), \"Triangular angle rigidity for distributed localization in 2D\", Automatica, 143 110414, doi:10.1016/j.automatica.2022.110414",
+                            "<info> ^ Baglivo, Jenny A.; Graver, Jack E. (1983), \"3.10 Bracing structures\", Incidence and Symmetry in Design and Architecture, Cambridge Urban and Architectural Studies, Cambridge, UK: Cambridge University Press, pp. 76–87, ISBN 978-0-521-29784-4",
+                            "<info> ^ Graver, Jack E. (2001), Counting on Frameworks: Mathematics to Aid the Design of Rigid Structures, The Dolciani Mathematical Expositions, vol. 25, Washington, DC: Mathematical Association of America, ISBN 0-88385-331-0, MR 1843781. See in particular sections 1.2 (\"The grid bracing problem\", pp. 4–12), 1.5 (\"More about the grid problem\", pp. 19–22), 2.6 (\"The solution to the grid problem\", pp. 50–55), and 4.4 (\"Tensegrity: tension bracings\", particularly pp. 158–161)."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> Alfakih, Abdo Y. (2007), \"On dimensional rigidity of bar-and-joint frameworks\", Discrete Applied Mathematics, 155 (10): 1244–1253, doi:10.1016/j.dam.2006.11.011, MR 2332317.",
+                            "<info> Connelly, Robert (1980), \"The rigidity of certain cabled frameworks and the second-order rigidity of arbitrarily triangulated convex surfaces\", Advances in Mathematics, 37 (3): 272–299, doi:10.1016/0001-8708(80)90037-7, MR 0591730.",
+                            "<info> Crapo, Henry (1979), \"Structural rigidity\", Structural Topology (1): 26–45, 73, hdl:2099/521, MR 0621627.",
+                            "<info> Maxwell, J. C. (1864), \"On reciprocal figures and diagrams of forces\", Philosophical Magazine, 4th Series, 27 (182): 250–261, doi:10.1080/14786446408643663.",
+                            "<info> Rybnikov, Konstantin; Zaslavsky, Thomas (2005), \"Criteria for balance in abelian gain graphs, with applications to piecewise-linear geometry\", Discrete & Computational Geometry, 34 (2): 251–268, arXiv:math/0210052, doi:10.1007/s00454-005-1170-6, MR 2155721, S2CID 14391276.",
+                            "<info> Whiteley, Walter (1988), \"The union of matroids and the rigidity of frameworks\", SIAM Journal on Discrete Mathematics, 1 (2): 237–255, doi:10.1137/0401025, MR 0941354"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

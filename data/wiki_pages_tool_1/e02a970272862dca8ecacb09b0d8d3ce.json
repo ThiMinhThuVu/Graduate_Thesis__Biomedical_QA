@@ -1,0 +1,89 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/fondaparinux": {
+                "title": "Fondaparinux",
+                "url": "https://en.wikipedia.org/wiki/fondaparinux",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Fondaparinux (trade name Arixtra) is an anticoagulant medication chemically related to low molecular weight heparins. It is marketed by Viatris. A generic version developed by Alchemia is marketed within the US by Dr. Reddy's Laboratories.",
+                    "",
+                    "=== Medical uses ===",
+                    "Clinically, it is used for the prevention of deep vein thrombosis in patients who have had orthopedic surgery[2] as well as for the treatment of deep vein thrombosis and pulmonary embolism.[3]",
+                    "Fondaparinux is similar to enoxaparin in reducing the risk of ischemic events at nine days, but it substantially reduces major bleeding and improves long-term mortality and morbidity.[4]",
+                    "It has been investigated for use in conjunction with streptokinase.[5]",
+                    "One advantage of fondaparinux over LMWH or unfractionated heparin is that the risk for heparin-induced thrombocytopenia (HIT) is substantially lower.[6] Furthermore, there have been case reports of fondaparinux being used to anti-coagulate patients with established HIT as it has no affinity for PF4. However, its renal excretion precludes its use in patients with renal dysfunction.",
+                    "Unlike direct factor Xa inhibitors, it mediates its effects indirectly through antithrombin III, but unlike heparin, it is selective for factor Xa.[7]",
+                    "",
+                    "=== Pharmacology ===",
+                    "Fondaparinux is a synthetic pentasaccharide factor Xa inhibitor. Fondaparinux binds antithrombin and accelerates its inhibition of factor Xa.",
+                    "Apart from the O-methyl group at the reducing end of the molecule, the identity and sequence of the five monomeric sugar units contained in fondaparinux is identical to a sequence of five monomeric sugar units that can be isolated after either chemical or enzymatic cleavage of the polymeric glycosaminoglycans heparin and heparan sulfate (HS). Within heparin and heparan sulfate this monomeric sequence is thought to form the high-affinity binding site for the anti-coagulant factor antithrombin (AT). Binding of heparin or HS to AT has been shown to increase the anti-coagulant activity of antithrombin 1000 fold. In contrast to heparin, fondaparinux does not inhibit thrombin.",
+                    "",
+                    "=== Chemistry ===",
+                    "Fondaparinux is only accessible by chemical synthesis. Recently, Supriya Dey et al. reported an effective and scalable one-pot synthesis of Fondaparinux.[8]",
+                    "The sequence of monosaccharides is D-GlcNS6S-α-(1,4)-D-GlcA-β-(1,4)-D-GlcNS3,6S-α-(1,4)-L-IdoA2S-α-(1,4)-D-GlcNS6S-OMe, as shown in the following structure:",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Walenga JM, Jeske WP, Fareed J (2005). \"Biochemical and Pharmacologic Rationale for Synthetic Heparin Polysaccharides\". Chemistry and Biology of Heparin and Heparan Sulfate. Elsevier. pp. 143–177. doi:10.1016/b978-008044859-6/50006-x. ISBN 978-0-08-044859-6. The elimination half-life of AT-bound fondaparinux is 17–21 h (171,172). The subcutaneous bioavailability of fondaparinux is nearly 100% and it is distributed mainly in the blood (165,173).",
+                    "<info> ^ Fuji T, Fujita S, Ochi T (August 2008). \"Fondaparinux prevents venous thromboembolism after joint replacement surgery in Japanese patients\". International Orthopaedics. 32 (4): 443–451. doi:10.1007/s00264-007-0360-7. PMC 2532275. PMID 17468868.",
+                    "<info> ^ \"Arixtra\". European Medicines Agency. 2018-09-17. Retrieved 2023-04-03.",
+                    "<info> ^ Yusuf S, Mehta SR, Chrolavicius S, Afzal R, Pogue J, Granger CB, et al. (Fifth Organization to Assess Strategies in Acute Ischemic Syndromes Investigators) (April 2006). \"Comparison of fondaparinux and enoxaparin in acute coronary syndromes\". The New England Journal of Medicine. 354 (14): 1464–1476. doi:10.1056/NEJMoa055443. hdl:2437/113091. PMID 16537663.",
+                    "<info> ^ Peters RJ, Joyner C, Bassand JP, Afzal R, Chrolavicius S, Mehta SR, et al. (February 2008). \"The role of fondaparinux as an adjunct to thrombolytic therapy in acute myocardial infarction: a subgroup analysis of the OASIS-6 trial\". European Heart Journal. 29 (3): 324–331. doi:10.1093/eurheartj/ehm616. PMID 18245119.",
+                    "<info> ^ Cuker A, Arepally GM, Chong BH, Cines DB, Greinacher A, Gruel Y, Linkins LA, Rodner SB, Selleng S, Warkentin TE, Wex A, Mustafa RA, Morgan RL, Santesso N (November 2018). \"American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia\". Blood Advances. 2 (22): 3360–3392. doi:10.1182/bloodadvance (inactive 11 January 2026). PMID 30482768. UFH is associated with an ∼10-fold greater risk of HIT than LMWH, whereas the risk with fondaparinux is negligible{{cite journal}}:  CS1 maint: DOI inactive as of January 2026 (link)",
+                    "<info> ^ Comp PC (June 2003). \"Selective factor Xa inhibition improves efficacy of venous thromboembolism prophylaxis in orthopedic surgery\". Pharmacotherapy. 23 (6): 772–87. doi:10.1592/phco.23.6.772.32190. PMID 12820819. S2CID 19516097.",
+                    "<info> ^ Dey S, Lo HJ, Wong CH (June 2020). \"Programmable One-Pot Synthesis of Heparin Pentasaccharide Fondaparinux\". Organic Letters. 22 (12): 4638–4642. doi:10.1021/acs.orglett.0c01386. PMC 7347301. PMID 32496799.",
+                    "",
+                    "=== External links ===",
+                    "<info> \"Fondaparinux\". Drug Information Portal. U.S. National Library of Medicine. Archived from the original on January 23, 2017.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Fondaparinux (trade name Arixtra) is an anticoagulant medication chemically related to low molecular weight heparins. It is marketed by Viatris. A generic version developed by Alchemia is marketed within the US by Dr. Reddy's Laboratories."
+                        ]
+                    },
+                    "Medical uses": {
+                        "content": [
+                            "Clinically, it is used for the prevention of deep vein thrombosis in patients who have had orthopedic surgery[2] as well as for the treatment of deep vein thrombosis and pulmonary embolism.[3]",
+                            "Fondaparinux is similar to enoxaparin in reducing the risk of ischemic events at nine days, but it substantially reduces major bleeding and improves long-term mortality and morbidity.[4]",
+                            "It has been investigated for use in conjunction with streptokinase.[5]",
+                            "One advantage of fondaparinux over LMWH or unfractionated heparin is that the risk for heparin-induced thrombocytopenia (HIT) is substantially lower.[6] Furthermore, there have been case reports of fondaparinux being used to anti-coagulate patients with established HIT as it has no affinity for PF4. However, its renal excretion precludes its use in patients with renal dysfunction.",
+                            "Unlike direct factor Xa inhibitors, it mediates its effects indirectly through antithrombin III, but unlike heparin, it is selective for factor Xa.[7]"
+                        ]
+                    },
+                    "Pharmacology": {
+                        "content": [
+                            "Fondaparinux is a synthetic pentasaccharide factor Xa inhibitor. Fondaparinux binds antithrombin and accelerates its inhibition of factor Xa.",
+                            "Apart from the O-methyl group at the reducing end of the molecule, the identity and sequence of the five monomeric sugar units contained in fondaparinux is identical to a sequence of five monomeric sugar units that can be isolated after either chemical or enzymatic cleavage of the polymeric glycosaminoglycans heparin and heparan sulfate (HS). Within heparin and heparan sulfate this monomeric sequence is thought to form the high-affinity binding site for the anti-coagulant factor antithrombin (AT). Binding of heparin or HS to AT has been shown to increase the anti-coagulant activity of antithrombin 1000 fold. In contrast to heparin, fondaparinux does not inhibit thrombin."
+                        ]
+                    },
+                    "Chemistry": {
+                        "content": [
+                            "Fondaparinux is only accessible by chemical synthesis. Recently, Supriya Dey et al. reported an effective and scalable one-pot synthesis of Fondaparinux.[8]",
+                            "The sequence of monosaccharides is D-GlcNS6S-α-(1,4)-D-GlcA-β-(1,4)-D-GlcNS3,6S-α-(1,4)-L-IdoA2S-α-(1,4)-D-GlcNS6S-OMe, as shown in the following structure:"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Walenga JM, Jeske WP, Fareed J (2005). \"Biochemical and Pharmacologic Rationale for Synthetic Heparin Polysaccharides\". Chemistry and Biology of Heparin and Heparan Sulfate. Elsevier. pp. 143–177. doi:10.1016/b978-008044859-6/50006-x. ISBN 978-0-08-044859-6. The elimination half-life of AT-bound fondaparinux is 17–21 h (171,172). The subcutaneous bioavailability of fondaparinux is nearly 100% and it is distributed mainly in the blood (165,173).",
+                            "<info> ^ Fuji T, Fujita S, Ochi T (August 2008). \"Fondaparinux prevents venous thromboembolism after joint replacement surgery in Japanese patients\". International Orthopaedics. 32 (4): 443–451. doi:10.1007/s00264-007-0360-7. PMC 2532275. PMID 17468868.",
+                            "<info> ^ \"Arixtra\". European Medicines Agency. 2018-09-17. Retrieved 2023-04-03.",
+                            "<info> ^ Yusuf S, Mehta SR, Chrolavicius S, Afzal R, Pogue J, Granger CB, et al. (Fifth Organization to Assess Strategies in Acute Ischemic Syndromes Investigators) (April 2006). \"Comparison of fondaparinux and enoxaparin in acute coronary syndromes\". The New England Journal of Medicine. 354 (14): 1464–1476. doi:10.1056/NEJMoa055443. hdl:2437/113091. PMID 16537663.",
+                            "<info> ^ Peters RJ, Joyner C, Bassand JP, Afzal R, Chrolavicius S, Mehta SR, et al. (February 2008). \"The role of fondaparinux as an adjunct to thrombolytic therapy in acute myocardial infarction: a subgroup analysis of the OASIS-6 trial\". European Heart Journal. 29 (3): 324–331. doi:10.1093/eurheartj/ehm616. PMID 18245119.",
+                            "<info> ^ Cuker A, Arepally GM, Chong BH, Cines DB, Greinacher A, Gruel Y, Linkins LA, Rodner SB, Selleng S, Warkentin TE, Wex A, Mustafa RA, Morgan RL, Santesso N (November 2018). \"American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia\". Blood Advances. 2 (22): 3360–3392. doi:10.1182/bloodadvance (inactive 11 January 2026). PMID 30482768. UFH is associated with an ∼10-fold greater risk of HIT than LMWH, whereas the risk with fondaparinux is negligible{{cite journal}}:  CS1 maint: DOI inactive as of January 2026 (link)",
+                            "<info> ^ Comp PC (June 2003). \"Selective factor Xa inhibition improves efficacy of venous thromboembolism prophylaxis in orthopedic surgery\". Pharmacotherapy. 23 (6): 772–87. doi:10.1592/phco.23.6.772.32190. PMID 12820819. S2CID 19516097.",
+                            "<info> ^ Dey S, Lo HJ, Wong CH (June 2020). \"Programmable One-Pot Synthesis of Heparin Pentasaccharide Fondaparinux\". Organic Letters. 22 (12): 4638–4642. doi:10.1021/acs.orglett.0c01386. PMC 7347301. PMID 32496799."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"Fondaparinux\". Drug Information Portal. U.S. National Library of Medicine. Archived from the original on January 23, 2017."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

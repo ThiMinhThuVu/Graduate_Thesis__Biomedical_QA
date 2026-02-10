@@ -1,0 +1,39 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/optic_papillitis": {
+                "title": "Optic papillitis",
+                "url": "https://en.wikipedia.org/wiki/optic_papillitis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Optic papillitis is a specific type of optic neuritis.  Inflammation of the optic nerve head is called \"papillitis\" or \"intraocular optic neuritis\"; inflammation of the orbital portion of the nerve is called \"retrobulbar optic neuritis\" or \"orbital optic neuritis\".[1] It is often associated with substantial losses in visual fields, pain on moving the globe, and sensitivity to light pressure on the globe. It is often an early sign of multiple sclerosis.[2]",
+                    "Papillitis may have the same appearance as papilledema. However, papillitis may be unilateral, whereas papilledema is almost always bilateral. Papillitis can be differentiated from papilledema by an afferent pupillary defect (Marcus Gunn pupil), by its greater effect in decreasing visual acuity and color vision, and by the presence of a central scotoma. Papilledema that is not yet chronic will not have as dramatic an effect on vision. Because increased intracranial pressure can cause both papilledema and a sixth nerve palsy, papilledema can be differentiated from papillitis if esotropia and loss of abduction are also present. However, esotropia may also develop secondarily in an eye that has lost vision from papillitis. Retrobulbar neuritis, an inflamed optic nerve, but with a normal-appearing nerve head, is associated with pain and the other findings of papillitis. Pseudopapilledema is a normal variant of the optic disk, in which the disk appears elevated, with indistinct margins and a normal vascular pattern. Pseudopapilledema sometimes occurs in hyperopic individuals.  [citation needed]",
+                    "Workup of the patient with papillitis includes lumbar puncture and cerebrospinal fluid analysis. B. henselae infection can be detected by serology. MRI is the preferred imaging study. An abnormal MRI is associated with a worse visual outcome.[3]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"papillitis\". Millodot: Dictionary of Optometry and Visual Science, 7th edition. Butterworth-Heinemann. 2009.",
+                    "<info> ^ Pretest Neurology (6th ed.). p. 259.",
+                    "<info> ^ CURRENT Diagnosis & Treatment: Pediatrics, 21e Chapter 16. Eye > Diseases of the Optic Nerve",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Optic papillitis is a specific type of optic neuritis.  Inflammation of the optic nerve head is called \"papillitis\" or \"intraocular optic neuritis\"; inflammation of the orbital portion of the nerve is called \"retrobulbar optic neuritis\" or \"orbital optic neuritis\".[1] It is often associated with substantial losses in visual fields, pain on moving the globe, and sensitivity to light pressure on the globe. It is often an early sign of multiple sclerosis.[2]",
+                            "Papillitis may have the same appearance as papilledema. However, papillitis may be unilateral, whereas papilledema is almost always bilateral. Papillitis can be differentiated from papilledema by an afferent pupillary defect (Marcus Gunn pupil), by its greater effect in decreasing visual acuity and color vision, and by the presence of a central scotoma. Papilledema that is not yet chronic will not have as dramatic an effect on vision. Because increased intracranial pressure can cause both papilledema and a sixth nerve palsy, papilledema can be differentiated from papillitis if esotropia and loss of abduction are also present. However, esotropia may also develop secondarily in an eye that has lost vision from papillitis. Retrobulbar neuritis, an inflamed optic nerve, but with a normal-appearing nerve head, is associated with pain and the other findings of papillitis. Pseudopapilledema is a normal variant of the optic disk, in which the disk appears elevated, with indistinct margins and a normal vascular pattern. Pseudopapilledema sometimes occurs in hyperopic individuals.  [citation needed]",
+                            "Workup of the patient with papillitis includes lumbar puncture and cerebrospinal fluid analysis. B. henselae infection can be detected by serology. MRI is the preferred imaging study. An abnormal MRI is associated with a worse visual outcome.[3]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"papillitis\". Millodot: Dictionary of Optometry and Visual Science, 7th edition. Butterworth-Heinemann. 2009.",
+                            "<info> ^ Pretest Neurology (6th ed.). p. 259.",
+                            "<info> ^ CURRENT Diagnosis & Treatment: Pediatrics, 21e Chapter 16. Eye > Diseases of the Optic Nerve"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

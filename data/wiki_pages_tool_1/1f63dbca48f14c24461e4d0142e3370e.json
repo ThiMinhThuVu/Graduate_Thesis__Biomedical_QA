@@ -1,0 +1,33 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/indometacin_farnesil": {
+                "title": "Indometacin farnesil",
+                "url": "https://en.wikipedia.org/wiki/indometacin_farnesil",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Indometacin farnesil (INN) is a prodrug of the nonsteroidal anti-inflammatory drug (NSAID) indometacin,[1] designed to reduce the occurrence of side-effects by esterification of the carboxyl group on indometacin with farnesol. Indometacin farnesil was first approved in Japan in 1991, and is available in Japan[2] and Indonesia, under the trade names Infree and Dialon, respectively.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Hirohata S, Yanagida T, Kawai M, Kikuchi H (November 1999). \"Inhibition of human B cell activation by a novel nonsteroidal anti-inflammatory drug, indometacin famesil\". Immunopharmacology. 44 (3): 245–254. doi:10.1016/S0162-3109(99)00084-3. PMID 10598881.",
+                    "<info> ^ \"Infree (indometacin farnesil capsules) Full Prescribing Information\" (PDF). Eisai Co., Ltd. Archived from the original (PDF) on 2010-12-03. from Eisai Co.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Indometacin farnesil (INN) is a prodrug of the nonsteroidal anti-inflammatory drug (NSAID) indometacin,[1] designed to reduce the occurrence of side-effects by esterification of the carboxyl group on indometacin with farnesol. Indometacin farnesil was first approved in Japan in 1991, and is available in Japan[2] and Indonesia, under the trade names Infree and Dialon, respectively."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Hirohata S, Yanagida T, Kawai M, Kikuchi H (November 1999). \"Inhibition of human B cell activation by a novel nonsteroidal anti-inflammatory drug, indometacin famesil\". Immunopharmacology. 44 (3): 245–254. doi:10.1016/S0162-3109(99)00084-3. PMID 10598881.",
+                            "<info> ^ \"Infree (indometacin farnesil capsules) Full Prescribing Information\" (PDF). Eisai Co., Ltd. Archived from the original (PDF) on 2010-12-03. from Eisai Co."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

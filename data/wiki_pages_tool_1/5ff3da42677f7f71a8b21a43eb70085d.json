@@ -1,0 +1,51 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/master_control": {
+                "title": "Master control",
+                "url": "https://en.wikipedia.org/wiki/master_control",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Master control is the technical hub of a broadcast operation common among most over-the-air television stations and television networks.[1] It is distinct from a production control room (PCR) in television studios where the activities such as switching from camera to camera are coordinated. A transmission control room (TCR) is usually smaller in size and is a scaled down version of centralcasting.",
+                    "Master control is the final point before a signal is transmitted over-the-air for terrestrial television or cablecast, satellite provider for broadcast, or sent on to a cable television operator. Television master control rooms include banks of video monitors, satellite receivers, videotape machines, video servers, transmission equipment, and, more recently, computer broadcast automation equipment for recording and playback of television programming.",
+                    "Master control is generally staffed with one or two master control operators around-the-clock to ensure continuous operation. Master control operators are responsible for monitoring the quality and accuracy of the on-air product, ensuring the transmission meets government regulations, troubleshooting equipment malfunctions, and preparing programming for playout.  Regulations include both technical ones (such as those against over-modulation and dead air), as well as content ones (such as indecency and station ID).",
+                    "Many television networks and radio networks or station groups have consolidated facilities and now operate multiple stations from one regional master control or centralcasting center. This arrangement is known as a joint master control (JMC). An example of this centralized broadcast programming system on a large scale is  NBC's \"hub-spoke project\" that enables a single \"hub\" to have control of dozens of stations' automation systems and to monitor their air signals, thus reducing or eliminating some responsibilities of local employees at their owned-and-operated stations.",
+                    "Outside the United States, the Canadian Broadcasting Corporation (CBC) manages four radio networks, two broadcast television networks, and several more cable/satellite radio and television services out of just two master control points (English language services at the Canadian Broadcasting Centre in Toronto and French language services at Maison Radio-Canada in Montreal). Many other public and private broadcasters in Canada have taken a similar approach.",
+                    "",
+                    "=== Gallery ===",
+                    "<info> One of ESPN's digital master control rooms, MCR-D1, in Bristol, Connecticut",
+                    "<info> Fox Business Network's master control with lights off",
+                    "<info> Fox Business Network's master control room with lights on",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Soseman, Ned. \"Master Control: Part 1 - The Four Missions Of Master Control\". The Broadcast Bridge. The Broadcast Bridge. Retrieved 1 February 2024.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Master control is the technical hub of a broadcast operation common among most over-the-air television stations and television networks.[1] It is distinct from a production control room (PCR) in television studios where the activities such as switching from camera to camera are coordinated. A transmission control room (TCR) is usually smaller in size and is a scaled down version of centralcasting.",
+                            "Master control is the final point before a signal is transmitted over-the-air for terrestrial television or cablecast, satellite provider for broadcast, or sent on to a cable television operator. Television master control rooms include banks of video monitors, satellite receivers, videotape machines, video servers, transmission equipment, and, more recently, computer broadcast automation equipment for recording and playback of television programming.",
+                            "Master control is generally staffed with one or two master control operators around-the-clock to ensure continuous operation. Master control operators are responsible for monitoring the quality and accuracy of the on-air product, ensuring the transmission meets government regulations, troubleshooting equipment malfunctions, and preparing programming for playout.  Regulations include both technical ones (such as those against over-modulation and dead air), as well as content ones (such as indecency and station ID).",
+                            "Many television networks and radio networks or station groups have consolidated facilities and now operate multiple stations from one regional master control or centralcasting center. This arrangement is known as a joint master control (JMC). An example of this centralized broadcast programming system on a large scale is  NBC's \"hub-spoke project\" that enables a single \"hub\" to have control of dozens of stations' automation systems and to monitor their air signals, thus reducing or eliminating some responsibilities of local employees at their owned-and-operated stations.",
+                            "Outside the United States, the Canadian Broadcasting Corporation (CBC) manages four radio networks, two broadcast television networks, and several more cable/satellite radio and television services out of just two master control points (English language services at the Canadian Broadcasting Centre in Toronto and French language services at Maison Radio-Canada in Montreal). Many other public and private broadcasters in Canada have taken a similar approach."
+                        ]
+                    },
+                    "Gallery": {
+                        "content": [
+                            "<info> One of ESPN's digital master control rooms, MCR-D1, in Bristol, Connecticut",
+                            "<info> Fox Business Network's master control with lights off",
+                            "<info> Fox Business Network's master control room with lights on"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Soseman, Ned. \"Master Control: Part 1 - The Four Missions Of Master Control\". The Broadcast Bridge. The Broadcast Bridge. Retrieved 1 February 2024."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

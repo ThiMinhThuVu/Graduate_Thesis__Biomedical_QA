@@ -1,0 +1,99 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/paraxial_mesoderm": {
+                "title": "Paraxial mesoderm",
+                "url": "https://en.wikipedia.org/wiki/paraxial_mesoderm",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Paraxial mesoderm, also known as presomitic or somitic mesoderm, is the area of mesoderm in the neurulating embryo that flanks and forms simultaneously with the neural tube. The cells of this region give rise to somites, blocks of tissue running along both sides of the neural tube, which form muscle and the tissues of the back, including connective tissue and the dermis.",
+                    "",
+                    "=== Formation and somitogenesis ===",
+                    "The paraxial and other regions of the mesoderm are thought to be specified by bone morphogenetic proteins (BMPs) along an axis spanning from the center to the sides of the body. Members of the fibroblast growth factor family also play an important role, as does the Wnt pathway. In particular, Noggin, a downstream target of the Wnt pathway, antagonizes BMP signaling, forming boundaries where antagonists meet and limiting this signaling to a particular region of the mesoderm. Together, these pathways provide the initial specification of the paraxial mesoderm and maintain this identity.[1]\nThis specification process has now been fully recapitulated in vitro with the formation of paraxial mesoderm progenitors from pluripotent stem cells, using a directed differentiation approach.[2]",
+                    "The tissue undergoes convergent extension as the primitive streak regresses, or as the embryo gastrulates. The notochord extends from the base of the head to the tail; with it extend thick bands of paraxial mesoderm.[3]",
+                    "As the primitive streak continues to regress, somites form from the paraxial mesoderm by \"budding off\" rostrally.",
+                    "In certain model systems, it has been shown that the daughter cells of stem cell-like progenitor cells which come from the primitive streak or site of gastrulation migrate out and localize in the posterior paraxial mesoderm. As the primitive streak regresses and somites bud off anteriorly, new cells derived from these stem-cell like precursors constantly enter the posterior end of the paraxial mesoderm.[4][5]",
+                    "",
+                    "=== Derived tissues ===",
+                    "Many kinds of tissue derive from the segmented paraxial mesoderm by means of the somite. Among these are:",
+                    "<info> the sclerotome, which forms cartilage,",
+                    "<info> the syndetome, which forms tendons,",
+                    "<info> the myotome, which forms skeletal muscle,",
+                    "<info> the dermatome, which forms the dermis as well as skeletal muscle, and endothelial cells.",
+                    "A particular kind of tissue deriving from the paraxial mesoderm is the head mesoderm, also known as cephalic mesoderm. This tissue derives from the unsegmented paraxial mesoderm and prechordal mesoderm. Tissues derived from the head mesoderm include connective tissues and the muscles of the face.",
+                    "The head mesoderm forms through a separate signaling circuit than the segmented paraxial mesoderm, though also involving BMP and fibroblast growth factor signaling. Here, retinoic acid interacts with these pathways.[6] Early markers of somites exist but are not expressed in cephalic mesoderm, although the same cell types that are generated in somites are generated in cephalic mesoderm, such as angioblasts, myocytes, and a variety of connective tissues. The head is ultimately made from paraxial mesoderm and neural crest cells.[7]",
+                    "",
+                    "=== See also ===",
+                    "<info> List of human cell types derived from the germ layers",
+                    "",
+                    "=== References ===",
+                    "This article incorporates text in the public domain from page 50 of the 20th edition of Gray's Anatomy (1918)",
+                    "<info> ^ Pourquié, O. (2001). \"Vertebratesomitogenesis\". Annual Review of Cell and Developmental Biology. 17: 311–350. doi:10.1146/annurev.cellbio.17.1.311. PMID 11687492.",
+                    "<info> ^ Chal J, Oginuma M, Al Tanoury Z, Gobert B, Sumara O, Hick A, Bousson F, Zidouni Y, Mursch C, Moncuquet P, Tassy O, Vincent S, Miyanari A, Bera A, Garnier JM, Guevara G, Hestin M, Kennedy L, Hayashi S, Drayton B, Cherrier T, Gayraud-Morel B, Gussoni E, Relaix F, Tajbakhsh S, Pourquié O (August 2015). \"Differentiation of pluripotent stem cells to muscle fiber to model Duchenne muscular dystrophy\". Nature Biotechnology. 33 (9): 962–9. doi:10.1038/nbt.3297. PMID 26237517. S2CID 21241434.",
+                    "<info> ^ Gilbert, S.F. (2010). Developmental Biology (9th ed.). Sinauer Associates, Inc. pp. 413–415. ISBN 978-0-87893-384-6.",
+                    "<info> ^ Cambray, N.; Wilson, V. (2007). \"Two distinct sources for a population of maturing axial progenitors\". Development. 134 (15): 2829–2840. doi:10.1242/dev.02877. PMID 17611225.",
+                    "<info> ^ Maroto, M.; Bone, R. A.; Dale, J. K. (2012). \"Somitogenesis\". Development. 139 (14): 2453–2456. doi:10.1242/dev.069310. PMC 3928720. PMID 22736241.",
+                    "<info> ^ Bothe, I.; Tenin, G.; Oseni, A.; Dietrich, S. (2011). \"Dynamic control of head mesoderm patterning\". Development. 138 (13): 2807–2821. doi:10.1242/dev.062737. PMID 21652653.",
+                    "<info> ^ Noden, Drew M.; Trainor, Paul A. (2 November 2005). \"Relations and interactions between cranial mesoderm and neural crest populations: Neural crest-mesoderm interactions, D. M. Noden and P. A. Trainor\". Journal of Anatomy. 207 (5): 575–601. doi:10.1111/j.1469-7580.2005.00473.x. PMC 1571569. Retrieved 9 March 2023.",
+                    "",
+                    "=== External links ===",
+                    "<info> \"Paraxial Mesoderm: The Somites and Their Derivatives\" at the National Center for Biotechnology Information",
+                    "<info> \"Somite Development\" at McGill University",
+                    "<info> Diagram at Lippincott Williams & Wilkins",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Paraxial mesoderm, also known as presomitic or somitic mesoderm, is the area of mesoderm in the neurulating embryo that flanks and forms simultaneously with the neural tube. The cells of this region give rise to somites, blocks of tissue running along both sides of the neural tube, which form muscle and the tissues of the back, including connective tissue and the dermis."
+                        ]
+                    },
+                    "Formation and somitogenesis": {
+                        "content": [
+                            "The paraxial and other regions of the mesoderm are thought to be specified by bone morphogenetic proteins (BMPs) along an axis spanning from the center to the sides of the body. Members of the fibroblast growth factor family also play an important role, as does the Wnt pathway. In particular, Noggin, a downstream target of the Wnt pathway, antagonizes BMP signaling, forming boundaries where antagonists meet and limiting this signaling to a particular region of the mesoderm. Together, these pathways provide the initial specification of the paraxial mesoderm and maintain this identity.[1]\nThis specification process has now been fully recapitulated in vitro with the formation of paraxial mesoderm progenitors from pluripotent stem cells, using a directed differentiation approach.[2]",
+                            "The tissue undergoes convergent extension as the primitive streak regresses, or as the embryo gastrulates. The notochord extends from the base of the head to the tail; with it extend thick bands of paraxial mesoderm.[3]",
+                            "As the primitive streak continues to regress, somites form from the paraxial mesoderm by \"budding off\" rostrally.",
+                            "In certain model systems, it has been shown that the daughter cells of stem cell-like progenitor cells which come from the primitive streak or site of gastrulation migrate out and localize in the posterior paraxial mesoderm. As the primitive streak regresses and somites bud off anteriorly, new cells derived from these stem-cell like precursors constantly enter the posterior end of the paraxial mesoderm.[4][5]"
+                        ]
+                    },
+                    "Derived tissues": {
+                        "content": [
+                            "Many kinds of tissue derive from the segmented paraxial mesoderm by means of the somite. Among these are:",
+                            "<info> the sclerotome, which forms cartilage,",
+                            "<info> the syndetome, which forms tendons,",
+                            "<info> the myotome, which forms skeletal muscle,",
+                            "<info> the dermatome, which forms the dermis as well as skeletal muscle, and endothelial cells.",
+                            "A particular kind of tissue deriving from the paraxial mesoderm is the head mesoderm, also known as cephalic mesoderm. This tissue derives from the unsegmented paraxial mesoderm and prechordal mesoderm. Tissues derived from the head mesoderm include connective tissues and the muscles of the face.",
+                            "The head mesoderm forms through a separate signaling circuit than the segmented paraxial mesoderm, though also involving BMP and fibroblast growth factor signaling. Here, retinoic acid interacts with these pathways.[6] Early markers of somites exist but are not expressed in cephalic mesoderm, although the same cell types that are generated in somites are generated in cephalic mesoderm, such as angioblasts, myocytes, and a variety of connective tissues. The head is ultimately made from paraxial mesoderm and neural crest cells.[7]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of human cell types derived from the germ layers"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "This article incorporates text in the public domain from page 50 of the 20th edition of Gray's Anatomy (1918)",
+                            "<info> ^ Pourquié, O. (2001). \"Vertebratesomitogenesis\". Annual Review of Cell and Developmental Biology. 17: 311–350. doi:10.1146/annurev.cellbio.17.1.311. PMID 11687492.",
+                            "<info> ^ Chal J, Oginuma M, Al Tanoury Z, Gobert B, Sumara O, Hick A, Bousson F, Zidouni Y, Mursch C, Moncuquet P, Tassy O, Vincent S, Miyanari A, Bera A, Garnier JM, Guevara G, Hestin M, Kennedy L, Hayashi S, Drayton B, Cherrier T, Gayraud-Morel B, Gussoni E, Relaix F, Tajbakhsh S, Pourquié O (August 2015). \"Differentiation of pluripotent stem cells to muscle fiber to model Duchenne muscular dystrophy\". Nature Biotechnology. 33 (9): 962–9. doi:10.1038/nbt.3297. PMID 26237517. S2CID 21241434.",
+                            "<info> ^ Gilbert, S.F. (2010). Developmental Biology (9th ed.). Sinauer Associates, Inc. pp. 413–415. ISBN 978-0-87893-384-6.",
+                            "<info> ^ Cambray, N.; Wilson, V. (2007). \"Two distinct sources for a population of maturing axial progenitors\". Development. 134 (15): 2829–2840. doi:10.1242/dev.02877. PMID 17611225.",
+                            "<info> ^ Maroto, M.; Bone, R. A.; Dale, J. K. (2012). \"Somitogenesis\". Development. 139 (14): 2453–2456. doi:10.1242/dev.069310. PMC 3928720. PMID 22736241.",
+                            "<info> ^ Bothe, I.; Tenin, G.; Oseni, A.; Dietrich, S. (2011). \"Dynamic control of head mesoderm patterning\". Development. 138 (13): 2807–2821. doi:10.1242/dev.062737. PMID 21652653.",
+                            "<info> ^ Noden, Drew M.; Trainor, Paul A. (2 November 2005). \"Relations and interactions between cranial mesoderm and neural crest populations: Neural crest-mesoderm interactions, D. M. Noden and P. A. Trainor\". Journal of Anatomy. 207 (5): 575–601. doi:10.1111/j.1469-7580.2005.00473.x. PMC 1571569. Retrieved 9 March 2023."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"Paraxial Mesoderm: The Somites and Their Derivatives\" at the National Center for Biotechnology Information",
+                            "<info> \"Somite Development\" at McGill University",
+                            "<info> Diagram at Lippincott Williams & Wilkins"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

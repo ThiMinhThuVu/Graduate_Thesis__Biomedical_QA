@@ -1,0 +1,159 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/glycosaminoglycan": {
+                "title": "Glycosaminoglycan",
+                "url": "https://en.wikipedia.org/wiki/glycosaminoglycan",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Glycosaminoglycans[1] (GAGs) or mucopolysaccharides[2] are long, linear polysaccharides consisting of repeating disaccharide units (i.e., two-sugar units). The repeating two-sugar unit consists of a uronic sugar and an amino sugar, except in the case of the sulfated glycosaminoglycan keratan, where, in place of the uronic sugar there is a galactose unit.[3] GAGs are found in vertebrates, invertebrates and bacteria.[4]\nBecause GAGs are highly polar molecules and attract water; the body uses them as lubricants or shock absorbers.",
+                    "Mucopolysaccharidoses are a group of metabolic disorders in which abnormal accumulations of glycosaminoglycans occur due to enzyme deficiencies.",
+                    "",
+                    "=== Production ===",
+                    "Glycosaminoglycans vary greatly in molecular mass, disaccharide structure, and sulfation. This is because GAG synthesis is not template driven, as are proteins or nucleic acids, but constantly altered by processing enzymes.[5]",
+                    "GAGs are classified into four groups, based on their core disaccharide structures:[6]",
+                    "<info> Chondroitin sulfate/dermatan sulfate (CSGAGs) which along with HSGAGs are synthesized in the Golgi apparatus, where core proteins, made in the rough endoplasmic reticulum, are post-translationally modified via O-linked glycosylation by glycosyltransferases, thus forming proteoglycans.",
+                    "<info> Keratan sulfate which may modify core proteins through N-linked glycosylation or O-linked glycosylation of the proteoglycan",
+                    "<info> Hyaluronic acid (also known as hyaluronan), which is synthesized by integral membrane synthases, which immediately secrete the dynamically elongated disaccharide chain.[clarification needed]",
+                    "HSGAG and CSGAG modified proteoglycans first begin with a consensus Ser-Gly/Ala-X-Gly motif in the core protein. Construction of a tetrasaccharide linker that consists of -GlcAβ1–3Galβ1–3Galβ1–4Xylβ1-O-(Ser)-, where xylosyltransferase, β4-galactosyl transferase (GalTI), β3-galactosyl transferase (GalT-II), and β3-GlcA transferase (GlcAT-I) transfer the four monosaccharides, begins synthesis of the GAG modified protein. The first modification of the tetrasaccharide linker determines whether the HSGAGs or CSGAGs will be added. Addition of a GlcNAc promotes the addition of HSGAGs while addition of GalNAc to the tetrasaccharide linker promotes CSGAG development.[6] GlcNAcT-I transfers GlcNAc to the tetrasaccahride linker, which is distinct from glycosyltransferase GlcNAcT-II, the enzyme that is utilized to build HSGAGs. EXTL2 and EXTL3, two genes in the EXT tumor suppressor family, have been shown to have GlcNAcT-I activity. Conversely, GalNAc is transferred to the linker by the enzyme GalNAcT to initiate synthesis of CSGAGs, an enzyme which may or may not have distinct activity compared to the GalNAc transferase activity of chondroitin synthase.[6]",
+                    "With regard to HSGAGs, a multimeric enzyme encoded by EXT1 and EXT2 of the EXT family of genes, transfers both GlcNAc and GlcA for HSGAG chain elongation. While elongating, the HSGAG is dynamically modified, first by N-deacetylase, N-sulfotransferase (NDST1), which is a bifunctional enzyme that cleaves the N-acetyl group from GlcNAc and subsequently sulfates the N-position. Next, C-5 uronyl epimerase coverts d-GlcA to l-IdoA followed by 2-O sulfation of the uronic acid sugar by 2-O sulfotransferase (Heparan sulfate 2-O-sulfotransferase). Finally, the 6-O and 3-O positions of GlcNAc moities are sulfated by 6-O (Heparan sulfate 6-O-sulfotransferase) and 3-O (3-OST) sulfotransferases.",
+                    "Chondroitin sulfate and dermatan sulfate, which comprise CSGAGs, are differentiated from each other by the presence of GlcA and IdoA epimers respectively. Similar to the production of HSGAGs, C-5 uronyl epimerase converts d-GlcA to l-IdoA to synthesize dermatan sulfate. Three sulfation events of the CSGAG chains occur: 4-O and/or 6-O sulfation of GalNAc and 2-O sulfation of uronic acid. Four isoforms of the 4-O GalNAc sulfotransferases (C4ST-1, C4ST-2, C4ST-3, and D4ST-1) and three isoforms of the GalNAc 6-O sulfotransferases (C6ST, C6ST-2, and GalNAc4S-6ST) are responsible for the sulfation of GalNAc.[7]",
+                    "Unlike HSGAGs and CSGAGs, the third class of GAGs, those belonging to keratan sulfate types, are driven towards biosynthesis through particular protein sequence motifs. For example, in the cornea and cartilage, the keratan sulfate domain of aggrecan consists of a series of tandemly repeated hexapeptides with a consensus sequence of E(E/L)PFPS.[8] Additionally, for three other keratan sulfated proteoglycans, lumican, keratocan, and mimecan (OGN), the consensus sequence NX(T/S) along with protein secondary structure was determined to be involved in N-linked oligosaccharide extension with keratan sulfate.[8] Keratan sulfate elongation begins at the nonreducing ends of three linkage oligosaccharides, which define the three classes of keratan sulfate. Keratan sulfate I (KSI) is N -linked via a high mannose type precursor oligosaccharide. Keratan sulfate II (KSII) and keratan sulfate III (KSIII) are O-linked, with KSII linkages identical to that of mucin core structure, and KSIII linked to a 2-O mannose. Elongation of the keratan sulfate polymer occurs through the glycosyltransferase addition of Gal and GlcNAc. Galactose addition occurs primarily through the β-1,4-galactosyltransferase enzyme (β4Gal-T1) while the enzymes responsible for β-3-Nacetylglucosamine have not been clearly identified. Finally, sulfation of the polymer occurs at the 6-position of both sugar residues. The enzyme KS-Gal6ST (CHST1) transfers sulfate groups to galactose while N-acetylglucosaminyl-6-sulfotransferase (GlcNAc6ST) (CHST2) transfers sulfate groups to terminal GlcNAc in keratan sulfate.[9]",
+                    "The fourth class of GAG, hyaluronic acid (HA), is not sulfated and is synthesized by three transmembrane synthase proteins HAS1, HAS2, and HAS3. HA, a linear polysaccharide, is composed of repeating disaccharide units of →4)GlcAβ(1→3)GlcNAcβ(1→ and has a very high molecular mass, ranging from 105 to 107 Da. Each HAS enzyme is capable of transglycosylation when supplied with UDP-GlcA and UDP-GlcNAc.[10][11] HAS2 is responsible for very large hyaluronic acid polymers, while smaller sizes of HA are synthesized by HAS1 and HAS3. While each HAS isoform catalyzes the same biosynthetic reaction, each HAS isoform is independently active. HAS isoforms have also been shown to have differing Km values for UDP-GlcA and UDPGlcNAc.[12] It is believed that through differences in enzyme activity and expression, the wide spectrum of biological functions mediated by HA can be regulated, such as its involvement with neural stem cell regulation in the subgranular zone of the brain.",
+                    "",
+                    "=== Pharmacodynamics ===",
+                    "CSGAGs interact with heparin binding proteins, specifically dermatan sulfate interactions with fibroblast growth factor FGF-2 and FGF-7 have been implicated in cellular proliferation and wound repair[16] while interactions with hepatic growth factor/scatter factor (HGF/SF) activate the HGF/SF signaling pathway (c-Met) through its receptor. CSGAGs are important in providing support and adhesiveness in bone, skin, and cartilage. Other biological functions for which CSGAGs are known to play critical functions in include inhibition of axonal growth and regeneration in CNS development, roles in brain development, neuritogenic activity, and pathogen infection.[17]",
+                    "Dermatan sulfates function in the skin, tendons, blood vessels, and heart valves.[19]",
+                    "",
+                    "=== Classification ===",
+                    "Members of the glycosaminoglycan family vary in the type of hexosamine, hexose or hexuronic acid unit they contain (e.g. glucuronic acid, iduronic acid, galactose, galactosamine, glucosamine).",
+                    "They also vary in the geometry of the glycosidic linkage.",
+                    "Examples of GAGs include:",
+                    "<info> GlcUA = β-D-glucuronic acid",
+                    "<info> GlcUA(2S) = 2-O-sulfo-β-D-glucuronic acid",
+                    "<info> IdoUA = α-L-iduronic acid",
+                    "<info> IdoUA(2S) = 2-O-sulfo-α-L-iduronic acid",
+                    "<info> GalNAc(4S,6S) = β-D-N-acetylgalactosamine-4-O, 6-O-sulfate",
+                    "",
+                    "=== See also ===",
+                    "<info> Glycoprotein – Protein with oligosaccharide modifications",
+                    "<info> Lipopolysaccharide – Class of molecules found in the outer membrane of gram-negative bacteria",
+                    "<info> Snail slime – External bodily secretion produced by snails",
+                    "<info> Glycocalyx – Carbohydrate-rich layer at the periphery of a cell Pericellular coat.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"glycosaminoglycan\" at Dorland's Medical Dictionary",
+                    "<info> ^ \"mucopolysaccharide\" at Dorland's Medical Dictionary",
+                    "<info> ^ Esko, Jeffrey D; Kimata, Koji; Lindahl, Ulf (2009). \"Chapter 16: Proteoglycans and Sulfated Glycosaminoglycans\". Essentials of Glycobiology. Cold Spring Harbor Laboratory Press. ISBN 978-0879695590.",
+                    "<info> ^ DeAngelis, Paul L. (2002-11-01). \"Evolution of glycosaminoglycans and their glycosyltransferases: Implications for the extracellular matrices of animals and the capsules of pathogenic bacteria\". The Anatomical Record. 268 (3): 317–326. doi:10.1002/ar.10163. ISSN 0003-276X. PMID 12382327. S2CID 38827411.",
+                    "<info> ^ Caligur, Vicki (2008). \"Glycosaminoglycan Sulfation and Signaling\". Retrieved 25 November 2012.",
+                    "<info> ^ a b c Sasisekharan, Ram; Raman, Rahul; Prabhakar, Vikas (August 2006). \"Glycomics Approach to Structure-Function Relationships of Glycosaminoglycans\". Annual Review of Biomedical Engineering. 8 (1): 181–231. doi:10.1146/annurev.bioeng.8.061505.095745. PMID 16834555.",
+                    "<info> ^ Kusche-Gullberg M, Kjellén L (2003). \"Sulfotransferases in glycosaminoglycan biosynthesis\". Current Opinion in Structural Biology. 13 (5): 605–11. doi:10.1016/j.sbi.2003.08.002. PMID 14568616.",
+                    "<info> ^ a b Funderburgh JL. (2002). \"Keratan sulfate biosynthesis\". IUBMB Life. 54 (4): 187–94. doi:10.1080/15216540214932. PMC 2874674. PMID 12512857.",
+                    "<info> ^ Yamamoto Y, Takahashi I, Ogata N, Nakazawa K (2001). \"Purification and characterization of N-acetylglucosaminyl sulfotransferase from chick corneas\". Archives of Biochemistry and Biophysics. 392 (1): 87–92. doi:10.1006/abbi.2001.2422. PMID 11469798.",
+                    "<info> ^ Yoshida M, Itano N, Yamada Y, Kimata K (2000). \"In vitro synthesis of hyaluronan by a single protein derived from mouse HAS1 gene and characterization of amino acid residues essential for the activity\". The Journal of Biological Chemistry. 275 (1): 497–506. doi:10.1074/jbc.275.1.497. PMID 10617644.",
+                    "<info> ^ DeAngelis PL, Weigel PH (1994). \"Immunochemical confirmation of the primary structure of streptococcal hyaluronan synthase and synthesis of high molecular weight product by the recombinant enzyme\". Biochemistry. 33 (31): 9033–39. doi:10.1021/bi00197a001. PMID 8049203.",
+                    "<info> ^ Itano N; Sawai T; Yoshida M; Lenas P; Yamada Y; Imagawa M; Shinomura T; Hamaguchi M; Yoshida Y; Ohnuki Y; Miyauchi S; Spicer AP; McDonald JA; Kimata K (1999). \"Three isoforms of mammalian hyaluronan synthases have distinct enzymatic properties\". Journal of Biological Chemistry. 274 (35): 25085–92. doi:10.1074/jbc.274.35.25085. PMID 10455188.",
+                    "<info> ^ a b Rabenstein DL. (2002). \"Heparin and heparan sulfate: structure and function\". Natural Product Reports. 19 (3): 312–31. doi:10.1039/B100916H. PMID 12137280.",
+                    "<info> ^ Jin L, Abrahams JP, Skinner R, Petitou M, Pike RN, Carrell RW (1997). \"The anticoagulant activation of antithrombin by heparin\". Proceedings of the National Academy of Sciences of the United States of America. 94 (26): 14683–88. Bibcode:1997PNAS...9414683J. doi:10.1073/pnas.94.26.14683. PMC 25092. PMID 9405673.",
+                    "<info> ^ Rodén, L. (1989). Lane, DA (ed.). Heparin: Chemical and Biological Properties, Clinical Applications. CRC Press, Inc. p. 1.",
+                    "<info> ^ a b Trowbridge JM, Gallo RL (2002). \"Dermatan sulfate: new functions from an old glycosaminoglycan\". Glycobiology. 12 (9): 117R–125R. doi:10.1093/glycob/cwf066. PMID 12213784.",
+                    "<info> ^ Sugahara K, Mikami T, Uyama T, Mizuguchi S, Nomura K, Kitagawa H (2003). \"Recent advances in the structural biology of chondroitin sulfate and dermatan sulfate\". Current Opinion in Structural Biology. 13 (5): 612–20. doi:10.1016/j.sbi.2003.09.011. PMID 14568617.",
+                    "<info> ^ a b c Funderburgh, JL. (2000). \"Keratan sulfate: structure, biosynthesis, and function\". Glycobiology. 10 (10): 951–58. doi:10.1093/glycob/10.10.951. PMID 11030741.",
+                    "<info> ^ a b c d Tortora, Gerard J. (2013-12-31). Principles of anatomy & physiology. Derrickson, Bryan (14th ed.). Danvers, MA. ISBN 978-1-118-34500-9. OCLC 871018672.{{cite book}}:  CS1 maint: location missing publisher (link)",
+                    "<info> ^ a b Laurent TC, Laurent UB, Fraser JR (1996). \"The structure and function of hyaluronan: An overview\". Immunology and Cell Biology. 74 (2): A1-7. doi:10.1038/icb.1996.32. PMID 8724014.",
+                    "<info> ^ Funderburgh JL. (2000). \"Keratan sulfate: structure, biosynthesis, and function\". Glycobiology. 10 (10): 951–58. doi:10.1093/glycob/10.10.951. PMID 11030741.",
+                    "<info> ^ Gallagher, J.T., Lyon, M. (2000). \"Molecular structure of Heparan Sulfate and interactions with growth factors and morphogens\". In Iozzo, M, V. (ed.). Proteoglycans: structure, biology and molecular interactions. New York: Marcel Dekker Inc. pp. 27–59. ISBN 978-0-8247-0334-9.{{cite book}}:  CS1 maint: multiple names: authors list (link)",
+                    "",
+                    "=== External links ===",
+                    "<info> King M. 2005. Glycosaminoglycans Archived 2023-02-08 at the Wayback Machine. Indiana University School of Medicine Accessed December 31, 2006.",
+                    "<info> Glycosaminoglycans at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> MRI evaluation of glycosaminoglycan loss (dGEMRIC evaluation) Archived 2011-08-22 at the Wayback Machine",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Glycosaminoglycans[1] (GAGs) or mucopolysaccharides[2] are long, linear polysaccharides consisting of repeating disaccharide units (i.e., two-sugar units). The repeating two-sugar unit consists of a uronic sugar and an amino sugar, except in the case of the sulfated glycosaminoglycan keratan, where, in place of the uronic sugar there is a galactose unit.[3] GAGs are found in vertebrates, invertebrates and bacteria.[4]\nBecause GAGs are highly polar molecules and attract water; the body uses them as lubricants or shock absorbers.",
+                            "Mucopolysaccharidoses are a group of metabolic disorders in which abnormal accumulations of glycosaminoglycans occur due to enzyme deficiencies."
+                        ]
+                    },
+                    "Production": {
+                        "content": [
+                            "Glycosaminoglycans vary greatly in molecular mass, disaccharide structure, and sulfation. This is because GAG synthesis is not template driven, as are proteins or nucleic acids, but constantly altered by processing enzymes.[5]",
+                            "GAGs are classified into four groups, based on their core disaccharide structures:[6]",
+                            "<info> Chondroitin sulfate/dermatan sulfate (CSGAGs) which along with HSGAGs are synthesized in the Golgi apparatus, where core proteins, made in the rough endoplasmic reticulum, are post-translationally modified via O-linked glycosylation by glycosyltransferases, thus forming proteoglycans.",
+                            "<info> Keratan sulfate which may modify core proteins through N-linked glycosylation or O-linked glycosylation of the proteoglycan",
+                            "<info> Hyaluronic acid (also known as hyaluronan), which is synthesized by integral membrane synthases, which immediately secrete the dynamically elongated disaccharide chain.[clarification needed]",
+                            "HSGAG and CSGAG modified proteoglycans first begin with a consensus Ser-Gly/Ala-X-Gly motif in the core protein. Construction of a tetrasaccharide linker that consists of -GlcAβ1–3Galβ1–3Galβ1–4Xylβ1-O-(Ser)-, where xylosyltransferase, β4-galactosyl transferase (GalTI), β3-galactosyl transferase (GalT-II), and β3-GlcA transferase (GlcAT-I) transfer the four monosaccharides, begins synthesis of the GAG modified protein. The first modification of the tetrasaccharide linker determines whether the HSGAGs or CSGAGs will be added. Addition of a GlcNAc promotes the addition of HSGAGs while addition of GalNAc to the tetrasaccharide linker promotes CSGAG development.[6] GlcNAcT-I transfers GlcNAc to the tetrasaccahride linker, which is distinct from glycosyltransferase GlcNAcT-II, the enzyme that is utilized to build HSGAGs. EXTL2 and EXTL3, two genes in the EXT tumor suppressor family, have been shown to have GlcNAcT-I activity. Conversely, GalNAc is transferred to the linker by the enzyme GalNAcT to initiate synthesis of CSGAGs, an enzyme which may or may not have distinct activity compared to the GalNAc transferase activity of chondroitin synthase.[6]",
+                            "With regard to HSGAGs, a multimeric enzyme encoded by EXT1 and EXT2 of the EXT family of genes, transfers both GlcNAc and GlcA for HSGAG chain elongation. While elongating, the HSGAG is dynamically modified, first by N-deacetylase, N-sulfotransferase (NDST1), which is a bifunctional enzyme that cleaves the N-acetyl group from GlcNAc and subsequently sulfates the N-position. Next, C-5 uronyl epimerase coverts d-GlcA to l-IdoA followed by 2-O sulfation of the uronic acid sugar by 2-O sulfotransferase (Heparan sulfate 2-O-sulfotransferase). Finally, the 6-O and 3-O positions of GlcNAc moities are sulfated by 6-O (Heparan sulfate 6-O-sulfotransferase) and 3-O (3-OST) sulfotransferases.",
+                            "Chondroitin sulfate and dermatan sulfate, which comprise CSGAGs, are differentiated from each other by the presence of GlcA and IdoA epimers respectively. Similar to the production of HSGAGs, C-5 uronyl epimerase converts d-GlcA to l-IdoA to synthesize dermatan sulfate. Three sulfation events of the CSGAG chains occur: 4-O and/or 6-O sulfation of GalNAc and 2-O sulfation of uronic acid. Four isoforms of the 4-O GalNAc sulfotransferases (C4ST-1, C4ST-2, C4ST-3, and D4ST-1) and three isoforms of the GalNAc 6-O sulfotransferases (C6ST, C6ST-2, and GalNAc4S-6ST) are responsible for the sulfation of GalNAc.[7]",
+                            "Unlike HSGAGs and CSGAGs, the third class of GAGs, those belonging to keratan sulfate types, are driven towards biosynthesis through particular protein sequence motifs. For example, in the cornea and cartilage, the keratan sulfate domain of aggrecan consists of a series of tandemly repeated hexapeptides with a consensus sequence of E(E/L)PFPS.[8] Additionally, for three other keratan sulfated proteoglycans, lumican, keratocan, and mimecan (OGN), the consensus sequence NX(T/S) along with protein secondary structure was determined to be involved in N-linked oligosaccharide extension with keratan sulfate.[8] Keratan sulfate elongation begins at the nonreducing ends of three linkage oligosaccharides, which define the three classes of keratan sulfate. Keratan sulfate I (KSI) is N -linked via a high mannose type precursor oligosaccharide. Keratan sulfate II (KSII) and keratan sulfate III (KSIII) are O-linked, with KSII linkages identical to that of mucin core structure, and KSIII linked to a 2-O mannose. Elongation of the keratan sulfate polymer occurs through the glycosyltransferase addition of Gal and GlcNAc. Galactose addition occurs primarily through the β-1,4-galactosyltransferase enzyme (β4Gal-T1) while the enzymes responsible for β-3-Nacetylglucosamine have not been clearly identified. Finally, sulfation of the polymer occurs at the 6-position of both sugar residues. The enzyme KS-Gal6ST (CHST1) transfers sulfate groups to galactose while N-acetylglucosaminyl-6-sulfotransferase (GlcNAc6ST) (CHST2) transfers sulfate groups to terminal GlcNAc in keratan sulfate.[9]",
+                            "The fourth class of GAG, hyaluronic acid (HA), is not sulfated and is synthesized by three transmembrane synthase proteins HAS1, HAS2, and HAS3. HA, a linear polysaccharide, is composed of repeating disaccharide units of →4)GlcAβ(1→3)GlcNAcβ(1→ and has a very high molecular mass, ranging from 105 to 107 Da. Each HAS enzyme is capable of transglycosylation when supplied with UDP-GlcA and UDP-GlcNAc.[10][11] HAS2 is responsible for very large hyaluronic acid polymers, while smaller sizes of HA are synthesized by HAS1 and HAS3. While each HAS isoform catalyzes the same biosynthetic reaction, each HAS isoform is independently active. HAS isoforms have also been shown to have differing Km values for UDP-GlcA and UDPGlcNAc.[12] It is believed that through differences in enzyme activity and expression, the wide spectrum of biological functions mediated by HA can be regulated, such as its involvement with neural stem cell regulation in the subgranular zone of the brain."
+                        ]
+                    },
+                    "Pharmacodynamics": {
+                        "content": [
+                            "CSGAGs interact with heparin binding proteins, specifically dermatan sulfate interactions with fibroblast growth factor FGF-2 and FGF-7 have been implicated in cellular proliferation and wound repair[16] while interactions with hepatic growth factor/scatter factor (HGF/SF) activate the HGF/SF signaling pathway (c-Met) through its receptor. CSGAGs are important in providing support and adhesiveness in bone, skin, and cartilage. Other biological functions for which CSGAGs are known to play critical functions in include inhibition of axonal growth and regeneration in CNS development, roles in brain development, neuritogenic activity, and pathogen infection.[17]",
+                            "Dermatan sulfates function in the skin, tendons, blood vessels, and heart valves.[19]"
+                        ]
+                    },
+                    "Classification": {
+                        "content": [
+                            "Members of the glycosaminoglycan family vary in the type of hexosamine, hexose or hexuronic acid unit they contain (e.g. glucuronic acid, iduronic acid, galactose, galactosamine, glucosamine).",
+                            "They also vary in the geometry of the glycosidic linkage.",
+                            "Examples of GAGs include:",
+                            "<info> GlcUA = β-D-glucuronic acid",
+                            "<info> GlcUA(2S) = 2-O-sulfo-β-D-glucuronic acid",
+                            "<info> IdoUA = α-L-iduronic acid",
+                            "<info> IdoUA(2S) = 2-O-sulfo-α-L-iduronic acid",
+                            "<info> GalNAc(4S,6S) = β-D-N-acetylgalactosamine-4-O, 6-O-sulfate"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Glycoprotein – Protein with oligosaccharide modifications",
+                            "<info> Lipopolysaccharide – Class of molecules found in the outer membrane of gram-negative bacteria",
+                            "<info> Snail slime – External bodily secretion produced by snails",
+                            "<info> Glycocalyx – Carbohydrate-rich layer at the periphery of a cell Pericellular coat."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"glycosaminoglycan\" at Dorland's Medical Dictionary",
+                            "<info> ^ \"mucopolysaccharide\" at Dorland's Medical Dictionary",
+                            "<info> ^ Esko, Jeffrey D; Kimata, Koji; Lindahl, Ulf (2009). \"Chapter 16: Proteoglycans and Sulfated Glycosaminoglycans\". Essentials of Glycobiology. Cold Spring Harbor Laboratory Press. ISBN 978-0879695590.",
+                            "<info> ^ DeAngelis, Paul L. (2002-11-01). \"Evolution of glycosaminoglycans and their glycosyltransferases: Implications for the extracellular matrices of animals and the capsules of pathogenic bacteria\". The Anatomical Record. 268 (3): 317–326. doi:10.1002/ar.10163. ISSN 0003-276X. PMID 12382327. S2CID 38827411.",
+                            "<info> ^ Caligur, Vicki (2008). \"Glycosaminoglycan Sulfation and Signaling\". Retrieved 25 November 2012.",
+                            "<info> ^ a b c Sasisekharan, Ram; Raman, Rahul; Prabhakar, Vikas (August 2006). \"Glycomics Approach to Structure-Function Relationships of Glycosaminoglycans\". Annual Review of Biomedical Engineering. 8 (1): 181–231. doi:10.1146/annurev.bioeng.8.061505.095745. PMID 16834555.",
+                            "<info> ^ Kusche-Gullberg M, Kjellén L (2003). \"Sulfotransferases in glycosaminoglycan biosynthesis\". Current Opinion in Structural Biology. 13 (5): 605–11. doi:10.1016/j.sbi.2003.08.002. PMID 14568616.",
+                            "<info> ^ a b Funderburgh JL. (2002). \"Keratan sulfate biosynthesis\". IUBMB Life. 54 (4): 187–94. doi:10.1080/15216540214932. PMC 2874674. PMID 12512857.",
+                            "<info> ^ Yamamoto Y, Takahashi I, Ogata N, Nakazawa K (2001). \"Purification and characterization of N-acetylglucosaminyl sulfotransferase from chick corneas\". Archives of Biochemistry and Biophysics. 392 (1): 87–92. doi:10.1006/abbi.2001.2422. PMID 11469798.",
+                            "<info> ^ Yoshida M, Itano N, Yamada Y, Kimata K (2000). \"In vitro synthesis of hyaluronan by a single protein derived from mouse HAS1 gene and characterization of amino acid residues essential for the activity\". The Journal of Biological Chemistry. 275 (1): 497–506. doi:10.1074/jbc.275.1.497. PMID 10617644.",
+                            "<info> ^ DeAngelis PL, Weigel PH (1994). \"Immunochemical confirmation of the primary structure of streptococcal hyaluronan synthase and synthesis of high molecular weight product by the recombinant enzyme\". Biochemistry. 33 (31): 9033–39. doi:10.1021/bi00197a001. PMID 8049203.",
+                            "<info> ^ Itano N; Sawai T; Yoshida M; Lenas P; Yamada Y; Imagawa M; Shinomura T; Hamaguchi M; Yoshida Y; Ohnuki Y; Miyauchi S; Spicer AP; McDonald JA; Kimata K (1999). \"Three isoforms of mammalian hyaluronan synthases have distinct enzymatic properties\". Journal of Biological Chemistry. 274 (35): 25085–92. doi:10.1074/jbc.274.35.25085. PMID 10455188.",
+                            "<info> ^ a b Rabenstein DL. (2002). \"Heparin and heparan sulfate: structure and function\". Natural Product Reports. 19 (3): 312–31. doi:10.1039/B100916H. PMID 12137280.",
+                            "<info> ^ Jin L, Abrahams JP, Skinner R, Petitou M, Pike RN, Carrell RW (1997). \"The anticoagulant activation of antithrombin by heparin\". Proceedings of the National Academy of Sciences of the United States of America. 94 (26): 14683–88. Bibcode:1997PNAS...9414683J. doi:10.1073/pnas.94.26.14683. PMC 25092. PMID 9405673.",
+                            "<info> ^ Rodén, L. (1989). Lane, DA (ed.). Heparin: Chemical and Biological Properties, Clinical Applications. CRC Press, Inc. p. 1.",
+                            "<info> ^ a b Trowbridge JM, Gallo RL (2002). \"Dermatan sulfate: new functions from an old glycosaminoglycan\". Glycobiology. 12 (9): 117R–125R. doi:10.1093/glycob/cwf066. PMID 12213784.",
+                            "<info> ^ Sugahara K, Mikami T, Uyama T, Mizuguchi S, Nomura K, Kitagawa H (2003). \"Recent advances in the structural biology of chondroitin sulfate and dermatan sulfate\". Current Opinion in Structural Biology. 13 (5): 612–20. doi:10.1016/j.sbi.2003.09.011. PMID 14568617.",
+                            "<info> ^ a b c Funderburgh, JL. (2000). \"Keratan sulfate: structure, biosynthesis, and function\". Glycobiology. 10 (10): 951–58. doi:10.1093/glycob/10.10.951. PMID 11030741.",
+                            "<info> ^ a b c d Tortora, Gerard J. (2013-12-31). Principles of anatomy & physiology. Derrickson, Bryan (14th ed.). Danvers, MA. ISBN 978-1-118-34500-9. OCLC 871018672.{{cite book}}:  CS1 maint: location missing publisher (link)",
+                            "<info> ^ a b Laurent TC, Laurent UB, Fraser JR (1996). \"The structure and function of hyaluronan: An overview\". Immunology and Cell Biology. 74 (2): A1-7. doi:10.1038/icb.1996.32. PMID 8724014.",
+                            "<info> ^ Funderburgh JL. (2000). \"Keratan sulfate: structure, biosynthesis, and function\". Glycobiology. 10 (10): 951–58. doi:10.1093/glycob/10.10.951. PMID 11030741.",
+                            "<info> ^ Gallagher, J.T., Lyon, M. (2000). \"Molecular structure of Heparan Sulfate and interactions with growth factors and morphogens\". In Iozzo, M, V. (ed.). Proteoglycans: structure, biology and molecular interactions. New York: Marcel Dekker Inc. pp. 27–59. ISBN 978-0-8247-0334-9.{{cite book}}:  CS1 maint: multiple names: authors list (link)"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> King M. 2005. Glycosaminoglycans Archived 2023-02-08 at the Wayback Machine. Indiana University School of Medicine Accessed December 31, 2006.",
+                            "<info> Glycosaminoglycans at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> MRI evaluation of glycosaminoglycan loss (dGEMRIC evaluation) Archived 2011-08-22 at the Wayback Machine"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

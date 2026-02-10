@@ -1,0 +1,45 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/axial_mesoderm": {
+                "title": "Axial mesoderm",
+                "url": "https://en.wikipedia.org/wiki/axial_mesoderm",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Axial mesoderm, or chordamesoderm, is the mesoderm in the embryo that lies along the central axis under the neural tube.",
+                    "<info> will give rise to notochord",
+                    "<info> starts as the notochordal process, whose formation finishes at day 20 in humans.",
+                    "<info> important not only in forming the notochord itself but also in inducing development of the overlying ectoderm into the neural tube",
+                    "<info> will eventually induce the formation of vertebral bodies.",
+                    "<info> ventral floor of the notochordal process fuses with endoderm.",
+                    "<info> The notochord will form the nucleus pulposus of intervertebral discs. There is some discussion as to whether these cells contributed from the notochord are replaced by others from the adjacent mesoderm.",
+                    "It gives rise to the notochordal process, which later becomes the notochord.",
+                    "",
+                    "=== References ===",
+                    "This article incorporates text in the public domain from page 50 of the 20th edition of Gray's Anatomy (1918)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Axial mesoderm, or chordamesoderm, is the mesoderm in the embryo that lies along the central axis under the neural tube.",
+                            "<info> will give rise to notochord",
+                            "<info> starts as the notochordal process, whose formation finishes at day 20 in humans.",
+                            "<info> important not only in forming the notochord itself but also in inducing development of the overlying ectoderm into the neural tube",
+                            "<info> will eventually induce the formation of vertebral bodies.",
+                            "<info> ventral floor of the notochordal process fuses with endoderm.",
+                            "<info> The notochord will form the nucleus pulposus of intervertebral discs. There is some discussion as to whether these cells contributed from the notochord are replaced by others from the adjacent mesoderm.",
+                            "It gives rise to the notochordal process, which later becomes the notochord."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "This article incorporates text in the public domain from page 50 of the 20th edition of Gray's Anatomy (1918)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

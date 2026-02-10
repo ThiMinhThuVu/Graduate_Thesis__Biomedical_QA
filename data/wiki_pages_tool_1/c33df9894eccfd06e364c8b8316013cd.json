@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/carbon_monoxide_poisoning": {
+                "title": "Carbon monoxide poisoning",
+                "url": "https://en.wikipedia.org/wiki/carbon_monoxide_poisoning",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

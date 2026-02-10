@@ -1,0 +1,121 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/monochromacy": {
+                "title": "Monochromacy",
+                "url": "https://en.wikipedia.org/wiki/monochromacy",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Monochromacy (from Greek mono, meaning \"one\" and chromo, meaning \"color\") is the ability of organisms to perceive only light intensity without respect to spectral composition. Organisms with monochromacy lack color vision and can only see in shades of grey ranging from black to white. Organisms with monochromacy are called monochromats. Many mammals, such as cetaceans, the owl monkey and the Australian sea lion are monochromats. In humans, monochromacy is one among several other symptoms of severe inherited or acquired diseases, including achromatopsia or blue cone monochromacy, together affecting about 1 in 30,000 people.",
+                    "",
+                    "=== Humans ===",
+                    "Human vision relies on a duplex retina, comprising two types of photoreceptor cells. Rods are primarily responsible for dim-light scotopic vision and cones are primarily responsible for day-light photopic vision. For all known vertebrates, scotopic vision is monochromatic, since there is typically only one class of rod cell. However, the presence of multiple cone classes contributing to photopic vision enables color vision during daytime conditions.[citation needed]",
+                    "Most humans have three classes of cones, each with a different class of opsin. These three opsins have different spectral sensitivities, which is a prerequisite for trichromacy. An alteration of any of these three cone opsins can lead to colorblindness.[1][2]",
+                    "<info> Anomalous trichromacy, when all three cones are functional, but one or more is altered in its spectral sensitivity.",
+                    "<info> Dichromacy, when one of the cones is non-functional and one of the red-green or blue-yellow opponent channels are fully disabled.",
+                    "<info> Cone monochromacy, when two of the cones are non-functional and both chromatic opponent channels are disabled. Vision is reduced to blacks, whites, and greys.",
+                    "<info> Rod monochromacy (Achromatopsia), when all three of the cones are non-functional and therefore photopic vision (and therefore color vision) is disabled.",
+                    "Monochromacy of photopic vision is a symptom of both Cone Monochromacy and Rod Monochromacy, so these two conditions are typically referred to collectively as monochromacy.[3][4]",
+                    "Rod monochromacy (RM), also called congenital complete achromatopsia or total color blindness, is a rare and extremely severe form of an autosomal recessively inherited retinal disorder resulting in severe visual impairment. People with RM have a reduced visual acuity, (usually about 0.1 or 20/200), have total color blindness, photo-aversion and nystagmus. The nystagmus and photo-aversion usually are present during the first months of life, and the prevalence of the disease is estimated to be 1 in 30,000 worldwide.[5] Since patients with RM have no cone function, they lack photopic vision, relying entirely on their rods and scotopic vision,[5] which is necessarily monochromatic. They therefore cannot see any color but only shades of grey.",
+                    "Cone monochromacy (CM) is a condition defined by the exhibition of only one class of cones. A cone monochromat can have good pattern vision at normal daylight levels, but will not be able to distinguish hues.[citation needed]",
+                    "As humans typically exhibit three classes of cones, cone monochromats can hypothetically derive their photopic vision from any one of them, leading to three categories of cone monochromats:[6]",
+                    "<info> Blue cone monochromacy (BCM), also known as S-cone monochromacy, is an X-linked cone disease.[7] It is a rare congenital stationary cone dysfunction syndrome, affecting less than 1 in 100,000 individuals, and is characterized by the absence of L- and M-cone function.[8] BCM results from mutations in a single red or red–green hybrid opsin gene, mutations in both the red and the green opsin genes or deletions within the adjacent LCR (locus control region) on the X chromosome.[5]",
+                    "<info> Green cone monochromacy (GCM), also known as M-cone monochromacy, is a condition where the blue and red cones are absent in the fovea. The prevalence of this type of monochromacy is estimated to be less than 1 in 1 million.",
+                    "<info> Red cone monochromacy (RCM), also known as L-cone monochromacy, is a condition where the blue and green cones are absent in the fovea. Like GCM, the prevalence of RCM is also estimated at less than 1 in 1 million.",
+                    "Cone Monochromats with normal rod function can sometimes exhibit mild color vision due to conditional dichromacy. In mesopic conditions, both rods and cones are active and opponent interactions between the cones and rods can afford slight color vision.[9]",
+                    "According to Jay Neitz, a color vision researcher at the University of Washington, each of the three standard color-detecting cones in the retina of trichromats can detect approximately 100 gradations of color. The brain can process the combinations of these three values so that the average human can distinguish about one million colors.[10] Therefore, a monochromat would be able to distinguish about 100 colors.[11]",
+                    "",
+                    "=== Mammals ===",
+                    "Until the 1960s, popular belief held that most mammals outside of primates were monochromats. In the last half-century,[when?] however, a focus on behavioral and genetic testing of mammals has accumulated extensive evidence of at least dichromatic color vision in a number of mammalian orders. Mammals are now usually assumed to be dichromats (possessing S- and L-cones), with monochromats viewed as the exceptions.[citation needed]",
+                    "Two mammalian orders containing marine mammals exhibit monochromatic vision:[citation needed]",
+                    "<info> Pinnipeds (including seals, sea lions and walruses)",
+                    "<info> Cetaceans (including dolphins and whales)",
+                    "Unlike the trichromacy exhibited in most primates, Owl monkeys (genus Aotus) are also monochromats[citation needed]. Several members of the family Procyonidae (raccoon, crab-eating raccoon and kinkajou) and a few rodents have been demonstrated as cone monochromats, having lost functionality of the S-cone (retaining the L-cone).[12]",
+                    "The light available in an animal's habitat is a significant determiner of a mammal's color vision. Marine, nocturnal or burrowing mammals, which experience less light, have less evolutionary pressure to preserve dichromacy, so often evolve monochromacy.[citation needed]",
+                    "A recent study using through PCR analysis of genes OPN1SW, OPN1LW, and PDE6C determined that all mammals in the cohort Xenarthra (representing sloths, anteaters and armadillos) developed rod monochromacy through a stem ancestor.[13]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Broadgate, Suzanne; Yu, Jing; Downes, Susan M.; Halford, Stephanie (2017-07-01). \"Unravelling the genetics of inherited retinal dystrophies: Past, present and future\". Progress in Retinal and Eye Research. 59: 53–96. doi:10.1016/j.preteyeres.2017.03.003. ISSN 1350-9462.",
+                    "<info> ^ Gegenfurtner, Karl R.; Sharpe, L. T., eds. (2001). Color vision: from genes to perception. Cambridge: Cambridge Univ. Press. pp. 3–52. ISBN 978-0-521-00439-8.",
+                    "<info> ^ Alpern M (Sep 1974). \"What is it that confines in a world without color?\" (PDF). Invest Ophthalmol. 13 (9): 648–74. PMID 4605446.",
+                    "<info> ^ Hansen E (Apr 1979). \"Typical and atypical monochromacy studied by specific quantitative perimetry\". Acta Ophthalmol (Copenh). 57 (2): 211–24. doi:10.1111/j.1755-3768.1979.tb00485.x. PMID 313135. S2CID 40750790.",
+                    "<info> ^ a b c Eksandh L, Kohl S, Wissinger B (June 2002). \"Clinical features of achromatopsia in Swedish patients with defined genotypes\". Ophthalmic Genet. 23 (2): 109–20. doi:10.1076/opge.23.2.109.2210. PMID 12187429. S2CID 25718360.",
+                    "<info> ^ Nathans, J; Thomas, D; Hogness, D S (1986). \"Molecular genetics of human color vision: the genes encoding blue, green, and red pigments\". Science. 232 (4747): 193–202. Bibcode:1986Sci...232..193N. CiteSeerX 10.1.1.461.5915. doi:10.1126/science.2937147. PMID 2937147.",
+                    "<info> ^ Weleber RG (June 2002). \"Infantile and childhood retinal blindness: a molecular perspective (The Franceschetti Lecture)\". Ophthalmic Genet. 23 (2): 71–97. doi:10.1076/opge.23.2.71.2214. PMID 12187427. S2CID 30741530.",
+                    "<info> ^ Michaelides M, Johnson S, Simunovic MP, Bradshaw K, Holder G, Mollon JD, Moore AT, Hunt DM (January 2005). \"Blue cone monochromatism: a phenotype and genotype assessment with evidence of progressive loss of cone function in older individuals\". Eye (Lond). 19 (1): 2–10. doi:10.1038/sj.eye.6701391. PMID 15094734.",
+                    "<info> ^ Reitner, A; Sharpe, L T; Zrenner, E (1991). \"Is colour vision possible with only rods and blue-sensitive cones?\". Nature. 352 (6338): 798–800. Bibcode:1991Natur.352..798R. doi:10.1038/352798a0. PMID 1881435. S2CID 4328439.",
+                    "<info> ^ Mark Roth (September 13, 2006). \"Some women who are tetrachromats may see 100,000,000 colors, thanks to their genes\". Pittsburgh Post-Gazette.",
+                    "<info> ^ Neitz J, Carroll J, Neitz M (2001). \"Color Vision: Almost Reason Enough for Having Eyes\". Optics and Photonics News. 12 (1): 26. Bibcode:2001OptPN..12...26N. doi:10.1364/OPN.12.1.000026. ISSN 1047-6938.",
+                    "<info> ^ Peichl, Leo; Behrmann, Gunther; Kroger, Ronald H. H. (April 2001). \"For whales and seals the ocean is not blue: a visual pigment loss in marine mammals\". European Journal of Neuroscience. 13 (8): 1520–1528. CiteSeerX 10.1.1.486.616. doi:10.1046/j.0953-816x.2001.01533.x. PMID 11328346. S2CID 16062564.",
+                    "<info> ^ Emerling, Christopher A.; Springer, Mark S. (2015-02-07). \"Genomic evidence for rod monochromacy in sloths and armadillos suggests early subterranean history for Xenarthra\". Proceedings of the Royal Society B: Biological Sciences. 282 (1800) 20142192. doi:10.1098/rspb.2014.2192. ISSN 0962-8452. PMC 4298209. PMID 25540280.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Rossi, Ethan (February 2013). \"Visual Function and Cortical Organization in Carriers of Blue Cone Monochromacy\". PLOS ONE. 8 (2) e57956. Bibcode:2013PLoSO...857956R. doi:10.1371/journal.pone.0057956. PMC 3585243. PMID 23469117.",
+                    "<info> Weleber, Richard (June 2002). \"Infantile and childhood retinal blindness: A molecular perspective (TheFranceschetti Lecture)\". Ophthalmic Genetics. 23 (2): 71–98. doi:10.1076/opge.23.2.71.2214. PMID 12187427. S2CID 30741530.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Monochromacy (from Greek mono, meaning \"one\" and chromo, meaning \"color\") is the ability of organisms to perceive only light intensity without respect to spectral composition. Organisms with monochromacy lack color vision and can only see in shades of grey ranging from black to white. Organisms with monochromacy are called monochromats. Many mammals, such as cetaceans, the owl monkey and the Australian sea lion are monochromats. In humans, monochromacy is one among several other symptoms of severe inherited or acquired diseases, including achromatopsia or blue cone monochromacy, together affecting about 1 in 30,000 people."
+                        ]
+                    },
+                    "Humans": {
+                        "content": [
+                            "Human vision relies on a duplex retina, comprising two types of photoreceptor cells. Rods are primarily responsible for dim-light scotopic vision and cones are primarily responsible for day-light photopic vision. For all known vertebrates, scotopic vision is monochromatic, since there is typically only one class of rod cell. However, the presence of multiple cone classes contributing to photopic vision enables color vision during daytime conditions.[citation needed]",
+                            "Most humans have three classes of cones, each with a different class of opsin. These three opsins have different spectral sensitivities, which is a prerequisite for trichromacy. An alteration of any of these three cone opsins can lead to colorblindness.[1][2]",
+                            "<info> Anomalous trichromacy, when all three cones are functional, but one or more is altered in its spectral sensitivity.",
+                            "<info> Dichromacy, when one of the cones is non-functional and one of the red-green or blue-yellow opponent channels are fully disabled.",
+                            "<info> Cone monochromacy, when two of the cones are non-functional and both chromatic opponent channels are disabled. Vision is reduced to blacks, whites, and greys.",
+                            "<info> Rod monochromacy (Achromatopsia), when all three of the cones are non-functional and therefore photopic vision (and therefore color vision) is disabled.",
+                            "Monochromacy of photopic vision is a symptom of both Cone Monochromacy and Rod Monochromacy, so these two conditions are typically referred to collectively as monochromacy.[3][4]",
+                            "Rod monochromacy (RM), also called congenital complete achromatopsia or total color blindness, is a rare and extremely severe form of an autosomal recessively inherited retinal disorder resulting in severe visual impairment. People with RM have a reduced visual acuity, (usually about 0.1 or 20/200), have total color blindness, photo-aversion and nystagmus. The nystagmus and photo-aversion usually are present during the first months of life, and the prevalence of the disease is estimated to be 1 in 30,000 worldwide.[5] Since patients with RM have no cone function, they lack photopic vision, relying entirely on their rods and scotopic vision,[5] which is necessarily monochromatic. They therefore cannot see any color but only shades of grey.",
+                            "Cone monochromacy (CM) is a condition defined by the exhibition of only one class of cones. A cone monochromat can have good pattern vision at normal daylight levels, but will not be able to distinguish hues.[citation needed]",
+                            "As humans typically exhibit three classes of cones, cone monochromats can hypothetically derive their photopic vision from any one of them, leading to three categories of cone monochromats:[6]",
+                            "<info> Blue cone monochromacy (BCM), also known as S-cone monochromacy, is an X-linked cone disease.[7] It is a rare congenital stationary cone dysfunction syndrome, affecting less than 1 in 100,000 individuals, and is characterized by the absence of L- and M-cone function.[8] BCM results from mutations in a single red or red–green hybrid opsin gene, mutations in both the red and the green opsin genes or deletions within the adjacent LCR (locus control region) on the X chromosome.[5]",
+                            "<info> Green cone monochromacy (GCM), also known as M-cone monochromacy, is a condition where the blue and red cones are absent in the fovea. The prevalence of this type of monochromacy is estimated to be less than 1 in 1 million.",
+                            "<info> Red cone monochromacy (RCM), also known as L-cone monochromacy, is a condition where the blue and green cones are absent in the fovea. Like GCM, the prevalence of RCM is also estimated at less than 1 in 1 million.",
+                            "Cone Monochromats with normal rod function can sometimes exhibit mild color vision due to conditional dichromacy. In mesopic conditions, both rods and cones are active and opponent interactions between the cones and rods can afford slight color vision.[9]",
+                            "According to Jay Neitz, a color vision researcher at the University of Washington, each of the three standard color-detecting cones in the retina of trichromats can detect approximately 100 gradations of color. The brain can process the combinations of these three values so that the average human can distinguish about one million colors.[10] Therefore, a monochromat would be able to distinguish about 100 colors.[11]"
+                        ]
+                    },
+                    "Mammals": {
+                        "content": [
+                            "Until the 1960s, popular belief held that most mammals outside of primates were monochromats. In the last half-century,[when?] however, a focus on behavioral and genetic testing of mammals has accumulated extensive evidence of at least dichromatic color vision in a number of mammalian orders. Mammals are now usually assumed to be dichromats (possessing S- and L-cones), with monochromats viewed as the exceptions.[citation needed]",
+                            "Two mammalian orders containing marine mammals exhibit monochromatic vision:[citation needed]",
+                            "<info> Pinnipeds (including seals, sea lions and walruses)",
+                            "<info> Cetaceans (including dolphins and whales)",
+                            "Unlike the trichromacy exhibited in most primates, Owl monkeys (genus Aotus) are also monochromats[citation needed]. Several members of the family Procyonidae (raccoon, crab-eating raccoon and kinkajou) and a few rodents have been demonstrated as cone monochromats, having lost functionality of the S-cone (retaining the L-cone).[12]",
+                            "The light available in an animal's habitat is a significant determiner of a mammal's color vision. Marine, nocturnal or burrowing mammals, which experience less light, have less evolutionary pressure to preserve dichromacy, so often evolve monochromacy.[citation needed]",
+                            "A recent study using through PCR analysis of genes OPN1SW, OPN1LW, and PDE6C determined that all mammals in the cohort Xenarthra (representing sloths, anteaters and armadillos) developed rod monochromacy through a stem ancestor.[13]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Broadgate, Suzanne; Yu, Jing; Downes, Susan M.; Halford, Stephanie (2017-07-01). \"Unravelling the genetics of inherited retinal dystrophies: Past, present and future\". Progress in Retinal and Eye Research. 59: 53–96. doi:10.1016/j.preteyeres.2017.03.003. ISSN 1350-9462.",
+                            "<info> ^ Gegenfurtner, Karl R.; Sharpe, L. T., eds. (2001). Color vision: from genes to perception. Cambridge: Cambridge Univ. Press. pp. 3–52. ISBN 978-0-521-00439-8.",
+                            "<info> ^ Alpern M (Sep 1974). \"What is it that confines in a world without color?\" (PDF). Invest Ophthalmol. 13 (9): 648–74. PMID 4605446.",
+                            "<info> ^ Hansen E (Apr 1979). \"Typical and atypical monochromacy studied by specific quantitative perimetry\". Acta Ophthalmol (Copenh). 57 (2): 211–24. doi:10.1111/j.1755-3768.1979.tb00485.x. PMID 313135. S2CID 40750790.",
+                            "<info> ^ a b c Eksandh L, Kohl S, Wissinger B (June 2002). \"Clinical features of achromatopsia in Swedish patients with defined genotypes\". Ophthalmic Genet. 23 (2): 109–20. doi:10.1076/opge.23.2.109.2210. PMID 12187429. S2CID 25718360.",
+                            "<info> ^ Nathans, J; Thomas, D; Hogness, D S (1986). \"Molecular genetics of human color vision: the genes encoding blue, green, and red pigments\". Science. 232 (4747): 193–202. Bibcode:1986Sci...232..193N. CiteSeerX 10.1.1.461.5915. doi:10.1126/science.2937147. PMID 2937147.",
+                            "<info> ^ Weleber RG (June 2002). \"Infantile and childhood retinal blindness: a molecular perspective (The Franceschetti Lecture)\". Ophthalmic Genet. 23 (2): 71–97. doi:10.1076/opge.23.2.71.2214. PMID 12187427. S2CID 30741530.",
+                            "<info> ^ Michaelides M, Johnson S, Simunovic MP, Bradshaw K, Holder G, Mollon JD, Moore AT, Hunt DM (January 2005). \"Blue cone monochromatism: a phenotype and genotype assessment with evidence of progressive loss of cone function in older individuals\". Eye (Lond). 19 (1): 2–10. doi:10.1038/sj.eye.6701391. PMID 15094734.",
+                            "<info> ^ Reitner, A; Sharpe, L T; Zrenner, E (1991). \"Is colour vision possible with only rods and blue-sensitive cones?\". Nature. 352 (6338): 798–800. Bibcode:1991Natur.352..798R. doi:10.1038/352798a0. PMID 1881435. S2CID 4328439.",
+                            "<info> ^ Mark Roth (September 13, 2006). \"Some women who are tetrachromats may see 100,000,000 colors, thanks to their genes\". Pittsburgh Post-Gazette.",
+                            "<info> ^ Neitz J, Carroll J, Neitz M (2001). \"Color Vision: Almost Reason Enough for Having Eyes\". Optics and Photonics News. 12 (1): 26. Bibcode:2001OptPN..12...26N. doi:10.1364/OPN.12.1.000026. ISSN 1047-6938.",
+                            "<info> ^ Peichl, Leo; Behrmann, Gunther; Kroger, Ronald H. H. (April 2001). \"For whales and seals the ocean is not blue: a visual pigment loss in marine mammals\". European Journal of Neuroscience. 13 (8): 1520–1528. CiteSeerX 10.1.1.486.616. doi:10.1046/j.0953-816x.2001.01533.x. PMID 11328346. S2CID 16062564.",
+                            "<info> ^ Emerling, Christopher A.; Springer, Mark S. (2015-02-07). \"Genomic evidence for rod monochromacy in sloths and armadillos suggests early subterranean history for Xenarthra\". Proceedings of the Royal Society B: Biological Sciences. 282 (1800) 20142192. doi:10.1098/rspb.2014.2192. ISSN 0962-8452. PMC 4298209. PMID 25540280."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Rossi, Ethan (February 2013). \"Visual Function and Cortical Organization in Carriers of Blue Cone Monochromacy\". PLOS ONE. 8 (2) e57956. Bibcode:2013PLoSO...857956R. doi:10.1371/journal.pone.0057956. PMC 3585243. PMID 23469117.",
+                            "<info> Weleber, Richard (June 2002). \"Infantile and childhood retinal blindness: A molecular perspective (TheFranceschetti Lecture)\". Ophthalmic Genetics. 23 (2): 71–98. doi:10.1076/opge.23.2.71.2214. PMID 12187427. S2CID 30741530."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/dysentery_bush": {
+                "title": "Dysentery bush",
+                "url": "https://en.wikipedia.org/wiki/dysentery_bush",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Dysentery bush is a common name for several Australian plants and may refer to:",
+                    "<info> Grewia latifolia, endemic to Northern and Eastern Australia",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Dysentery bush is a common name for several Australian plants and may refer to:",
+                            "<info> Grewia latifolia, endemic to Northern and Eastern Australia"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

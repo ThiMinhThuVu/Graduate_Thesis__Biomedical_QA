@@ -1,0 +1,181 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_human_cell_types": {
+                "title": "List of human cell types",
+                "url": "https://en.wikipedia.org/wiki/list_of_human_cell_types",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The list of human cell types provides an enumeration and description of the various specialized cells found within the human body, highlighting their distinct functions, characteristics, and contributions to overall physiological processes. Cells may be classified[1] by their physiological function, histology (microscopic anatomy),[2] lineage, or gene expression.",
+                    "",
+                    "=== Total number of cells ===",
+                    "The adult human body is estimated to contain about 30 to 40 trillion (4×1013) human cells,[3][4][5] with the number varying between 20 and 100 trillion depending on factors such as sex, age, and weight. Additionally, there are approximately an equal number of bacterial cells. The exact count of human cells has not yet been empirically measured in its entirety and is estimated using different approaches based on smaller samples of empirical observation.[6][7][8][3][9][10][4][excessive citations] It is generally assumed that these cells share features with each other and thus may be organized as belonging to a smaller number of types.[11][12]",
+                    "",
+                    "=== Classification ===",
+                    "As a definition of \"cell type\" is yet to be agreed, it is not possible yet to arrive at a precise number of human cell types.[13] There is, for example, significant variation in these cell types depending on the specific surface proteins they possess.",
+                    "An extensive listing of human cell types was published by Vickaryous and Hall in 2006, collecting 411 different types of human cells, including 145 types of neurons.[12]",
+                    "The Human Cell Atlas project, which started in 2016, had as one of its goals to \"catalog all cell types (for example, immune cells or brain cells) and sub-types in the human body\".[14] By 2018, the Human Cell Atlas description based the project on the assumption that \"our characterization of the hundreds of types and subtypes of cells in the human body is limited\", but the word hundreds was removed in later versions.[15][14]",
+                    "On 2021, Stephen Quake guessed that the upper limit of the number of human cell types would be around 6000, based on a reasoning that \"if biologists had discovered only 5% of cell types in the human body, then the upper limit of cell types to discover is somewhere around 6000 (i.e., 300/0.05).\"[11]",
+                    "Other different efforts have used different numbers. A count of cells in the human body published in 2023 divided the cells in about 400 types to perform the calculation.[7]",
+                    "In 1996, scientists revealed a 'map' of 16,000 human genes.[16] This led to estimates that humans likely had around 100,000 genes[17] (or regions that code for human proteins). However, actual sequencing did not start before around 1999, and it was not until 2003[18] that the first complete draft of a human genome revealed that there were roughly 20,000-25,000 protein-coding genes, as most DNA does not code for any protein. It is difficult to say that there have not been similar mistakes when estimating how many cells humans have as there are still substantial gaps in understanding human cells.[citation needed]",
+                    "",
+                    "=== Efforts to characterize all human cell types ===",
+                    "Several efforts have been made to make a list or a map of all human cells.[19][20][21] One of the largest and most recent is the HuBMAP (Human BioMolecular Atlas Program).[22]",
+                    "The HuBMAP project has organized 1551 different samples in 17 collections, each dedicated to a different system.  However, this project still only mapped about 31 of the human bodies' 70 organs. Their datasets and visualisations place great emphasis on biomarkers and location in the body, but less on cell development and how cells can change over time. Usually specific surface proteins are used to identify cells, and based on this they are put into different categories.",
+                    "Another major effort to make an overview of these proteins that allows us to observe cell types is the Human Protein Atlas.[23]",
+                    "A similar project, the Human Brain Project has also attempted to map the human brain, although much of the publicly accessible model does not have cellular resolution.[24][25]",
+                    "",
+                    "=== Standards and naming conventions ===",
+                    "So far not all cells which can be found in the human body have been documented. There is no good way to make the experiment where one checks if all cell types identified so far could be taken from and measured in a single donor, proving that the cell types are universal to all humans. This is partly due to a lack of standards, as scientists are still not entirely sure what is needed to measure, in order to capture every cell type which can be found.[citation needed]",
+                    "Some attempts have been made – and some are still in progress– for creating standards for identifying cells consistently.[26][27][28] The Cell Ontology provides arguably the most comprehensive metadata standard to date, cataloging over 2500 cell classes and being used actively by the Human Cell Atlas community.[29]",
+                    "There is still no standard which is used industry wide, nor any definitions which have been accepted by the wider scientific community, often making it difficult to say whether some collected and observed cells are really one or multiple types of cells. This lack of standards makes it difficult to estimate how many cell types and how many cells of each type can be found in the human body, as well as difficult to predict which young cells one would need to develop with mature cells. The list in this article also contains inconsistencies due to multiple sources using different conventions.[citation needed]",
+                    "",
+                    "=== Cell type databases ===",
+                    "The endodermal cells primarily generate the lining and glands of the gastrointestinal tract.[35]",
+                    "There are nerve cells, also known as neurons, present in the human body. They are branched out. These cells make up nervous tissue.\nA neuron consists of a cell body with a nucleus and cytoplasm, and cytoplasmic protrusions of an axon, and dendrites.[citation needed]",
+                    "",
+                    "=== See also ===",
+                    "<info> List of human cell types derived from the germ layers",
+                    "<info> List of organs of the human body",
+                    "<info> List of human microbiota",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Zeng H (July 2022). \"What is a cell type and how to define it?\". Cell. 185 (15): 2739–2755. doi:10.1016/j.cell.2022.06.031. PMC 9342916. PMID 35868277.",
+                    "<info> ^ Khan YS, Farhana A (May 2023). \"Histology, Cell\". StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing. PMID 32119269.",
+                    "<info> ^ a b c Sender R, Fuchs S, Milo R (August 2016). \"Revised Estimates for the Number of Human and Bacteria Cells in the Body\". PLOS Biology. 14 (8) e1002533. doi:10.1371/journal.pbio.1002533. PMC 4991899. PMID 27541692.",
+                    "<info> ^ a b Martinez-Martin D (2022-02-15). \"Dynamics of cell mass and size control in multicellular systems and the human body\". Journal of Biological Research - Thessaloniki: Vol 29 (2022). doi:10.26262/JBRT.V29I0.8600.",
+                    "<info> ^ Hatton IA, Galbraith ED, Merleau NS, Miettinen TP, Smith BM, Shander JA (2023-09-26). \"The human cell count and size distribution\". Proceedings of the National Academy of Sciences. 120 (39) e2303077120. Bibcode:2023PNAS..12003077H. doi:10.1073/pnas.2303077120. PMC 10523466. PMID 37722043.",
+                    "<info> ^ a b Hatton IA, Galbraith ED, Merleau NS, Miettinen TP, Smith BM, Shander JA (September 2023). \"The human cell count and size distribution\". Proceedings of the National Academy of Sciences of the United States of America. 120 (39) e2303077120. Bibcode:2023PNAS..12003077H. doi:10.1073/pnas.2303077120. PMC 10523466. PMID 37722043.",
+                    "<info> ^ a b \"Mapping the human body one cell at a time: New study reveals the intricate relationship between cell size and count\". News-Medical.net. 2023-09-19. Retrieved 2023-10-18.",
+                    "<info> ^ Max Planck Society. \"Cellular cartography: Charting the sizes and abundance of our body's cells reveals mathematical order underlying life\". medicalxpress.com. Retrieved 2023-10-18.",
+                    "<info> ^ Hewings-Martin Y (12 July 2017). \"How many cells are in the human body?\". Medical News Today. Retrieved 28 June 2023.",
+                    "<info> ^ Zimmer C (23 October 2013). \"How Many Cells Are In Your Body?\". National Geographic. Archived from the original on April 3, 2021. Retrieved 29 June 2023.",
+                    "<info> ^ a b Quake SR (December 2021). \"The cell as a bag of RNA\". Trends in Genetics. 37 (12): 1064–1068. doi:10.1016/j.tig.2021.08.003. PMID 34462156.",
+                    "<info> ^ a b Vickaryous MK, Hall BK (August 2006). \"Human cell type diversity, evolution, development, and classification with special reference to cells derived from the neural crest\". Biological Reviews of the Cambridge Philosophical Society. 81 (3): 425–455. doi:10.1017/S1464793106007068. PMID 16790079.",
+                    "<info> ^ \"What Is Your Conceptual Definition of 'Cell Type' in the Context of a Mature Organism?\". Cell Systems. 4 (3): 255–259. March 2017. doi:10.1016/j.cels.2017.03.006. PMID 28334573.",
+                    "<info> ^ a b \"HCA – Human Cell Atlas\". 2022-10-01. Archived from the original on 2022-10-01. Retrieved 2024-06-14.",
+                    "<info> ^ \"Human Cell Atlas - Human Cell Atlas\". 2018-08-29. Archived from the original on 2018-08-29. Retrieved 2024-06-14.",
+                    "<info> ^ \"The Human Transcript Map\". www.ncbi.nlm.nih.gov. Retrieved 2024-04-23.",
+                    "<info> ^ Amaral P, Carbonell-Sala S, De La Vega FM, Faial T, Frankish A, Gingeras T, et al. (October 2023). \"The status of the human gene catalogue\". Nature. 622 (7981): 41–47. arXiv:2303.13996. Bibcode:2023Natur.622...41A. doi:10.1038/s41586-023-06490-x. PMC 10575709. PMID 37794265.",
+                    "<info> ^ \"Why the human genome was never completed\". www.bbc.com. 13 February 2023. Retrieved 2024-04-23.",
+                    "<info> ^ \"Home\". humancellatlas.org. Retrieved 5 May 2023.",
+                    "<info> ^ \"NIH to build a detailed map of cells within the human body\". National Institutes of Health (NIH). 26 September 2018. Retrieved 5 May 2023.",
+                    "<info> ^ Davis D (28 July 2022). \"The ambitious quest to map every cell in our body\". BBC. Retrieved 5 May 2023.",
+                    "<info> ^ \"The HuBMAP Human BioMolecular Atlas Program\". HuBMAP Consortium. Retrieved 5 May 2023.",
+                    "<info> ^ \"The Human Protein Atlas\". www.proteinatlas.org. Retrieved 19 July 2023.",
+                    "<info> ^ \"Siibra Explorer\". atlases.ebrains.eu. Retrieved 2023-07-02.",
+                    "<info> ^ \"Medical Data Analytics\". The Human Brain Project. Retrieved 2 July 2023.",
+                    "<info> ^ Lubiana T, Roncaglia P, Mungall CJ, Quardokus EM, Fortriede JD, Osumi-Sutherland D, et al. (2022). Guidelines for reporting cell types: the MIRACL standard (Preprint). arXiv:2204.09673.",
+                    "<info> ^ Ascoli GA, Alonso-Nanclares L, Anderson SA, Barrionuevo G, Benavides-Piccione R, Burkhalter A, et al. (July 2008). \"Petilla terminology: nomenclature of features of GABAergic interneurons of the cerebral cortex\". Nature Reviews. Neuroscience. 9 (7): 557–568. doi:10.1038/nrn2402. hdl:10261/36813. PMC 2868386. PMID 18568015.",
+                    "<info> ^ \"Home\". www.humancellatlas.org. Retrieved 2024-04-23.",
+                    "<info> ^ Osumi-Sutherland D, Xu C, Keays M, Levine AP, Kharchenko PV, Regev A, et al. (November 2021). \"Cell type ontologies of the Human Cell Atlas\". Nature Cell Biology. 23 (11): 1129–1135. arXiv:2106.14443. doi:10.1038/s41556-021-00787-7. PMID 34750578.",
+                    "<info> ^ The organization of the cell types in a hierarchy of groups and subgroups is done for organization purposes and does not conform to any particular standard.",
+                    "<info> ^ \"CCF ASCT+B Reporter\". Hubmap Consortium.",
+                    "<info> ^ \"The Human BioMolecular Atlas Program (HuBMAP)\". commonfund.nih.gov. 5 January 2017. Retrieved 2023-07-12.",
+                    "<info> ^ \"CellGuide Cell Types and Cell Tissues - CZ CELLxGENE\". Cellxgene Data Portal. Retrieved 2024-07-05.",
+                    "<info> ^ \"Behind the scenes of Chan Zuckerberg CELLxGENE\". Chan Zuckerberg Initiative. Retrieved 2024-07-05.",
+                    "<info> ^ Gilbert SF (2000). \"Endoderm\". Developmental Biology (6th ed.). Sinauer Associates. ISBN 978-0-87893-243-6.",
+                    "",
+                    "=== External links ===",
+                    "<info> Human Cell Tree Map",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The list of human cell types provides an enumeration and description of the various specialized cells found within the human body, highlighting their distinct functions, characteristics, and contributions to overall physiological processes. Cells may be classified[1] by their physiological function, histology (microscopic anatomy),[2] lineage, or gene expression."
+                        ]
+                    },
+                    "Total number of cells": {
+                        "content": [
+                            "The adult human body is estimated to contain about 30 to 40 trillion (4×1013) human cells,[3][4][5] with the number varying between 20 and 100 trillion depending on factors such as sex, age, and weight. Additionally, there are approximately an equal number of bacterial cells. The exact count of human cells has not yet been empirically measured in its entirety and is estimated using different approaches based on smaller samples of empirical observation.[6][7][8][3][9][10][4][excessive citations] It is generally assumed that these cells share features with each other and thus may be organized as belonging to a smaller number of types.[11][12]"
+                        ]
+                    },
+                    "Classification": {
+                        "content": [
+                            "As a definition of \"cell type\" is yet to be agreed, it is not possible yet to arrive at a precise number of human cell types.[13] There is, for example, significant variation in these cell types depending on the specific surface proteins they possess.",
+                            "An extensive listing of human cell types was published by Vickaryous and Hall in 2006, collecting 411 different types of human cells, including 145 types of neurons.[12]",
+                            "The Human Cell Atlas project, which started in 2016, had as one of its goals to \"catalog all cell types (for example, immune cells or brain cells) and sub-types in the human body\".[14] By 2018, the Human Cell Atlas description based the project on the assumption that \"our characterization of the hundreds of types and subtypes of cells in the human body is limited\", but the word hundreds was removed in later versions.[15][14]",
+                            "On 2021, Stephen Quake guessed that the upper limit of the number of human cell types would be around 6000, based on a reasoning that \"if biologists had discovered only 5% of cell types in the human body, then the upper limit of cell types to discover is somewhere around 6000 (i.e., 300/0.05).\"[11]",
+                            "Other different efforts have used different numbers. A count of cells in the human body published in 2023 divided the cells in about 400 types to perform the calculation.[7]",
+                            "In 1996, scientists revealed a 'map' of 16,000 human genes.[16] This led to estimates that humans likely had around 100,000 genes[17] (or regions that code for human proteins). However, actual sequencing did not start before around 1999, and it was not until 2003[18] that the first complete draft of a human genome revealed that there were roughly 20,000-25,000 protein-coding genes, as most DNA does not code for any protein. It is difficult to say that there have not been similar mistakes when estimating how many cells humans have as there are still substantial gaps in understanding human cells.[citation needed]"
+                        ]
+                    },
+                    "Efforts to characterize all human cell types": {
+                        "content": [
+                            "Several efforts have been made to make a list or a map of all human cells.[19][20][21] One of the largest and most recent is the HuBMAP (Human BioMolecular Atlas Program).[22]",
+                            "The HuBMAP project has organized 1551 different samples in 17 collections, each dedicated to a different system.  However, this project still only mapped about 31 of the human bodies' 70 organs. Their datasets and visualisations place great emphasis on biomarkers and location in the body, but less on cell development and how cells can change over time. Usually specific surface proteins are used to identify cells, and based on this they are put into different categories.",
+                            "Another major effort to make an overview of these proteins that allows us to observe cell types is the Human Protein Atlas.[23]",
+                            "A similar project, the Human Brain Project has also attempted to map the human brain, although much of the publicly accessible model does not have cellular resolution.[24][25]"
+                        ]
+                    },
+                    "Standards and naming conventions": {
+                        "content": [
+                            "So far not all cells which can be found in the human body have been documented. There is no good way to make the experiment where one checks if all cell types identified so far could be taken from and measured in a single donor, proving that the cell types are universal to all humans. This is partly due to a lack of standards, as scientists are still not entirely sure what is needed to measure, in order to capture every cell type which can be found.[citation needed]",
+                            "Some attempts have been made – and some are still in progress– for creating standards for identifying cells consistently.[26][27][28] The Cell Ontology provides arguably the most comprehensive metadata standard to date, cataloging over 2500 cell classes and being used actively by the Human Cell Atlas community.[29]",
+                            "There is still no standard which is used industry wide, nor any definitions which have been accepted by the wider scientific community, often making it difficult to say whether some collected and observed cells are really one or multiple types of cells. This lack of standards makes it difficult to estimate how many cell types and how many cells of each type can be found in the human body, as well as difficult to predict which young cells one would need to develop with mature cells. The list in this article also contains inconsistencies due to multiple sources using different conventions.[citation needed]"
+                        ]
+                    },
+                    "Cell type databases": {
+                        "content": [
+                            "The endodermal cells primarily generate the lining and glands of the gastrointestinal tract.[35]",
+                            "There are nerve cells, also known as neurons, present in the human body. They are branched out. These cells make up nervous tissue.\nA neuron consists of a cell body with a nucleus and cytoplasm, and cytoplasmic protrusions of an axon, and dendrites.[citation needed]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of human cell types derived from the germ layers",
+                            "<info> List of organs of the human body",
+                            "<info> List of human microbiota"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Zeng H (July 2022). \"What is a cell type and how to define it?\". Cell. 185 (15): 2739–2755. doi:10.1016/j.cell.2022.06.031. PMC 9342916. PMID 35868277.",
+                            "<info> ^ Khan YS, Farhana A (May 2023). \"Histology, Cell\". StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing. PMID 32119269.",
+                            "<info> ^ a b c Sender R, Fuchs S, Milo R (August 2016). \"Revised Estimates for the Number of Human and Bacteria Cells in the Body\". PLOS Biology. 14 (8) e1002533. doi:10.1371/journal.pbio.1002533. PMC 4991899. PMID 27541692.",
+                            "<info> ^ a b Martinez-Martin D (2022-02-15). \"Dynamics of cell mass and size control in multicellular systems and the human body\". Journal of Biological Research - Thessaloniki: Vol 29 (2022). doi:10.26262/JBRT.V29I0.8600.",
+                            "<info> ^ Hatton IA, Galbraith ED, Merleau NS, Miettinen TP, Smith BM, Shander JA (2023-09-26). \"The human cell count and size distribution\". Proceedings of the National Academy of Sciences. 120 (39) e2303077120. Bibcode:2023PNAS..12003077H. doi:10.1073/pnas.2303077120. PMC 10523466. PMID 37722043.",
+                            "<info> ^ a b Hatton IA, Galbraith ED, Merleau NS, Miettinen TP, Smith BM, Shander JA (September 2023). \"The human cell count and size distribution\". Proceedings of the National Academy of Sciences of the United States of America. 120 (39) e2303077120. Bibcode:2023PNAS..12003077H. doi:10.1073/pnas.2303077120. PMC 10523466. PMID 37722043.",
+                            "<info> ^ a b \"Mapping the human body one cell at a time: New study reveals the intricate relationship between cell size and count\". News-Medical.net. 2023-09-19. Retrieved 2023-10-18.",
+                            "<info> ^ Max Planck Society. \"Cellular cartography: Charting the sizes and abundance of our body's cells reveals mathematical order underlying life\". medicalxpress.com. Retrieved 2023-10-18.",
+                            "<info> ^ Hewings-Martin Y (12 July 2017). \"How many cells are in the human body?\". Medical News Today. Retrieved 28 June 2023.",
+                            "<info> ^ Zimmer C (23 October 2013). \"How Many Cells Are In Your Body?\". National Geographic. Archived from the original on April 3, 2021. Retrieved 29 June 2023.",
+                            "<info> ^ a b Quake SR (December 2021). \"The cell as a bag of RNA\". Trends in Genetics. 37 (12): 1064–1068. doi:10.1016/j.tig.2021.08.003. PMID 34462156.",
+                            "<info> ^ a b Vickaryous MK, Hall BK (August 2006). \"Human cell type diversity, evolution, development, and classification with special reference to cells derived from the neural crest\". Biological Reviews of the Cambridge Philosophical Society. 81 (3): 425–455. doi:10.1017/S1464793106007068. PMID 16790079.",
+                            "<info> ^ \"What Is Your Conceptual Definition of 'Cell Type' in the Context of a Mature Organism?\". Cell Systems. 4 (3): 255–259. March 2017. doi:10.1016/j.cels.2017.03.006. PMID 28334573.",
+                            "<info> ^ a b \"HCA – Human Cell Atlas\". 2022-10-01. Archived from the original on 2022-10-01. Retrieved 2024-06-14.",
+                            "<info> ^ \"Human Cell Atlas - Human Cell Atlas\". 2018-08-29. Archived from the original on 2018-08-29. Retrieved 2024-06-14.",
+                            "<info> ^ \"The Human Transcript Map\". www.ncbi.nlm.nih.gov. Retrieved 2024-04-23.",
+                            "<info> ^ Amaral P, Carbonell-Sala S, De La Vega FM, Faial T, Frankish A, Gingeras T, et al. (October 2023). \"The status of the human gene catalogue\". Nature. 622 (7981): 41–47. arXiv:2303.13996. Bibcode:2023Natur.622...41A. doi:10.1038/s41586-023-06490-x. PMC 10575709. PMID 37794265.",
+                            "<info> ^ \"Why the human genome was never completed\". www.bbc.com. 13 February 2023. Retrieved 2024-04-23.",
+                            "<info> ^ \"Home\". humancellatlas.org. Retrieved 5 May 2023.",
+                            "<info> ^ \"NIH to build a detailed map of cells within the human body\". National Institutes of Health (NIH). 26 September 2018. Retrieved 5 May 2023.",
+                            "<info> ^ Davis D (28 July 2022). \"The ambitious quest to map every cell in our body\". BBC. Retrieved 5 May 2023.",
+                            "<info> ^ \"The HuBMAP Human BioMolecular Atlas Program\". HuBMAP Consortium. Retrieved 5 May 2023.",
+                            "<info> ^ \"The Human Protein Atlas\". www.proteinatlas.org. Retrieved 19 July 2023.",
+                            "<info> ^ \"Siibra Explorer\". atlases.ebrains.eu. Retrieved 2023-07-02.",
+                            "<info> ^ \"Medical Data Analytics\". The Human Brain Project. Retrieved 2 July 2023.",
+                            "<info> ^ Lubiana T, Roncaglia P, Mungall CJ, Quardokus EM, Fortriede JD, Osumi-Sutherland D, et al. (2022). Guidelines for reporting cell types: the MIRACL standard (Preprint). arXiv:2204.09673.",
+                            "<info> ^ Ascoli GA, Alonso-Nanclares L, Anderson SA, Barrionuevo G, Benavides-Piccione R, Burkhalter A, et al. (July 2008). \"Petilla terminology: nomenclature of features of GABAergic interneurons of the cerebral cortex\". Nature Reviews. Neuroscience. 9 (7): 557–568. doi:10.1038/nrn2402. hdl:10261/36813. PMC 2868386. PMID 18568015.",
+                            "<info> ^ \"Home\". www.humancellatlas.org. Retrieved 2024-04-23.",
+                            "<info> ^ Osumi-Sutherland D, Xu C, Keays M, Levine AP, Kharchenko PV, Regev A, et al. (November 2021). \"Cell type ontologies of the Human Cell Atlas\". Nature Cell Biology. 23 (11): 1129–1135. arXiv:2106.14443. doi:10.1038/s41556-021-00787-7. PMID 34750578.",
+                            "<info> ^ The organization of the cell types in a hierarchy of groups and subgroups is done for organization purposes and does not conform to any particular standard.",
+                            "<info> ^ \"CCF ASCT+B Reporter\". Hubmap Consortium.",
+                            "<info> ^ \"The Human BioMolecular Atlas Program (HuBMAP)\". commonfund.nih.gov. 5 January 2017. Retrieved 2023-07-12.",
+                            "<info> ^ \"CellGuide Cell Types and Cell Tissues - CZ CELLxGENE\". Cellxgene Data Portal. Retrieved 2024-07-05.",
+                            "<info> ^ \"Behind the scenes of Chan Zuckerberg CELLxGENE\". Chan Zuckerberg Initiative. Retrieved 2024-07-05.",
+                            "<info> ^ Gilbert SF (2000). \"Endoderm\". Developmental Biology (6th ed.). Sinauer Associates. ISBN 978-0-87893-243-6."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Human Cell Tree Map"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/diarrheic_shellfish_poisoning": {
+                "title": "Diarrheic shellfish poisoning",
+                "url": "https://en.wikipedia.org/wiki/diarrheic_shellfish_poisoning",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Diarrheic shellfish poisoning (DSP) is one of the four recognized symptom types of shellfish poisoning, alongside paralytic shellfish poisoning, neurotoxic shellfish poisoning and amnesic shellfish poisoning.[citation needed] As the name suggests, it mainly manifests as diarrhea. Abdominal pain, nausea and vomiting may also occur.[citation needed]",
+                    "DSP and its symptoms usually set in within about half an hour of ingesting infected shellfish, and last for about one day. The causative poison is okadaic acid, which inhibits intestinal cellular dephosphorylation.[1] This causes the cells to become very water-permeable and the host to profusely defecate into a high risk of dehydration.",
+                    "",
+                    "=== See also ===",
+                    "<info> Amnesic shellfish poisoning (ASP)",
+                    "<info> Harmful algal blooms (HABs)",
+                    "<info> Neurotoxic shellfish poisoning (NSP)",
+                    "<info> Paralytic shellfish poisoning (PSP)",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Dawson, JF; Holmes CF (Oct 1999). \"Molecular mechanisms underlying inhibition of protein phosphatases by marine toxins\". Front Biosci. 4 (1–3): D646–58. doi:10.2741/dawson. PMID 10502549.",
+                    "",
+                    "=== External links ===",
+                    "<info> Diarrhetic Shellfish Poisoning Archived 2014-06-20 at the Wayback Machine",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Diarrheic shellfish poisoning (DSP) is one of the four recognized symptom types of shellfish poisoning, alongside paralytic shellfish poisoning, neurotoxic shellfish poisoning and amnesic shellfish poisoning.[citation needed] As the name suggests, it mainly manifests as diarrhea. Abdominal pain, nausea and vomiting may also occur.[citation needed]",
+                            "DSP and its symptoms usually set in within about half an hour of ingesting infected shellfish, and last for about one day. The causative poison is okadaic acid, which inhibits intestinal cellular dephosphorylation.[1] This causes the cells to become very water-permeable and the host to profusely defecate into a high risk of dehydration."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Amnesic shellfish poisoning (ASP)",
+                            "<info> Harmful algal blooms (HABs)",
+                            "<info> Neurotoxic shellfish poisoning (NSP)",
+                            "<info> Paralytic shellfish poisoning (PSP)"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Dawson, JF; Holmes CF (Oct 1999). \"Molecular mechanisms underlying inhibition of protein phosphatases by marine toxins\". Front Biosci. 4 (1–3): D646–58. doi:10.2741/dawson. PMID 10502549."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Diarrhetic Shellfish Poisoning Archived 2014-06-20 at the Wayback Machine"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

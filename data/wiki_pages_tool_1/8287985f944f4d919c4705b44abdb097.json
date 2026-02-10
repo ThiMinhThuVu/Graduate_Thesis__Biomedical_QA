@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/non-communicable_disease": {
+                "title": "Non-communicable disease",
+                "url": "https://en.wikipedia.org/wiki/non-communicable_disease",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

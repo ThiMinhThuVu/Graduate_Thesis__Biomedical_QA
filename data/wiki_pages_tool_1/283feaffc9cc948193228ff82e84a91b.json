@@ -1,0 +1,107 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/p38_mitogen-activated_protein_kinases": {
+                "title": "p38 mitogen-activated protein kinases",
+                "url": "https://en.wikipedia.org/wiki/p38_mitogen-activated_protein_kinases",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "p38 mitogen-activated protein kinases are a class of mitogen-activated protein kinases (MAPKs) that are responsive to stress stimuli, such as cytokines, ultraviolet irradiation, heat shock, and osmotic shock, and are involved in cell differentiation, apoptosis and autophagy. Persistent activation of the p38 MAPK pathway in muscle satellite cells (muscle stem cells) due to ageing, impairs muscle regeneration.[1][2]",
+                    "p38 MAP kinase (MAPK), also called RK or CSBP (Cytokinin Specific Binding Protein), is the mammalian orthologue of the yeast Hog1p MAP kinase,[3] which participates in a signaling cascade controlling cellular responses to cytokines and stress.",
+                    "Four p38 MAP kinases, p38-α (MAPK14), -β (MAPK11), -γ (MAPK12 / ERK6), and -δ (MAPK13 / SAPK4), have been identified. Similar to the SAPK/JNK pathway, p38 MAP kinase is activated by a variety of cellular stresses including osmotic shock, inflammatory cytokines, lipopolysaccharides (LPS), ultraviolet light, and growth factors.",
+                    "MKK3 and SEK activate p38 MAP kinase by phosphorylation at Thr-180 and Tyr-182. Activated p38 MAP kinase has been shown to phosphorylate and activate MAPKAP kinase 2 and to phosphorylate the transcription factors ATF2, Mac,  MEF2, and p53.[4] p38 also has been shown to phosphorylate post-transcriptional regulating factors like TTP,[5] and in fruit flies it plays a role in regulating the circadian clock.[6]",
+                    "",
+                    "=== Clinical significance ===",
+                    "Oxidative stress is the most powerfully specific stress activating p38 MAPK.[7] Abnormal activity (higher or lower than physiological) of p38 has been implicated in pathological stresses in several tissues,  that  include  neuronal,[8][9][10]\nbone,[11]  lung,[12]  cardiac and skeletal muscle,[13][14]    red blood cells,[15] and fetal tissues.[16] The protein product of proto-oncogene RAS can increase activity of p38, and thereby cause excessively high activity of transcription factor NF-κB. This transcription factor is normally regulated from intracellular pathways that integrate signals from the surrounding tissue and the immune system. In turn these signals coordinate between cell survival and cell death. Dysregulated NF-κB activity can activate genes that cause cancer cell survival, and can also activate genes that facilitate cancer cell metastasis to other tissues.[17] P38 was also shown to correlate with outcome of glioblastoma -  higher pathway activity is associated with low survival.[18]",
+                    "",
+                    "=== Inhibitors ===",
+                    "p38 inhibitors are being sought for possible therapeutic effect on autoimmune diseases and inflammatory processes,[19] e.g. pamapimod.[20] Some have started clinical trials, e.g. PH-797804 for COPD.[21]  Other p38 inhibitors include BIRB 796, VX-702, SB239063, SB202190, SB203580, SCIO 469, and BMS 582949.",
+                    "As of 2020, losmapimod, a p38 inhibitor, is being investigated for the treatment of facioscapulohumeral muscular dystrophy (FSHD) on the basis of p38 inhibition inhibiting the effects of DUX4.[22]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Cosgrove BD, Gilbert PM, Porpiglia E, Mourkioti F, Lee SP, Corbel SY, Llewellyn ME, Delp SL, Blau HM (2014). \"Rejuvenation of the muscle stem cell population restores strength to injured aged muscles\". Nature Medicine. 20 (3): 255–64. doi:10.1038/nm.3464. PMC 3949152. PMID 24531378.",
+                    "<info> ^ Segalés J, Perdiguero E, Muñoz-Cánoves P (2016). \"Regulation of Muscle Stem Cell Functions: A Focus on the p38 MAPK Signaling Pathway\". Frontiers in Cell and Developmental Biology. 4: 91. doi:10.3389/fcell.2016.00091. PMC 5003838. PMID 27626031.",
+                    "<info> ^ Han J, Lee JD, Bibbs L, Ulevitch RJ (August 1994). \"A MAP kinase targeted by endotoxin and hyperosmolarity in mammalian cells\". Science. 265 (5173): 808–11. Bibcode:1994Sci...265..808H. doi:10.1126/science.7914033. PMID 7914033.",
+                    "<info> ^  She QB, Chen N, Dong Z (July 2000). \"ERKs and p38 kinase phosphorylate p53 protein at serine 15 in response to UV radiation\". Journal of Biological Chemistry. 275 (27): 20444–20449. doi:10.1074/jbc.M001020200. PMID 10781582.",
+                    "<info> ^ Tudor C, Marchese FP, Hitti E, Aubareda A, Rawlinson L, Gaestel M, Blackshear PJ, Clark AR, Saklatvala J, Dean JL (June 2009). \"The p38 MAPK pathway inhibits tristetraprolin-directed decay of interleukin-10 and pro-inflammatory mediator mRNAs in murine macrophages\". FEBS Letters. 583 (12): 1933–8. Bibcode:2009FEBSL.583.1933T. doi:10.1016/j.febslet.2009.04.039. PMC 4798241. PMID 19416727.",
+                    "<info> ^ Dusik V, Senthilan PR, Mentzel B, Hartlieb H, Wülbeck C, Yoshii T, Raabe T, Helfrich-Förster C (2014). \"The MAP Kinase p38 Is Part of Drosophila melanogaster's Circadian Clock\". PLOS Genetics. 10 (8) e1004565. doi:10.1371/journal.pgen.1004565. PMC 4140665. PMID 25144774.",
+                    "<info> ^ Anerillas C, Abdelmohsen K, Gorospe M (2020). \"Regulation of senescence traits by MAPKs\". GeroScience. 42 (2): 397–408. doi:10.1007/s11357-020-00183-3. PMC 7205942. PMID 32300964.",
+                    "<info> ^ Yan SD, Bierhaus A, Nawroth PP, Stern DM (2009). \"RAGE and Alzheimer's disease: a progression factor for amyloid-beta-induced cellular perturbation?\". Journal of Alzheimer's Disease. 16 (4): 833–43. doi:10.3233/JAD-2009-1030. PMC 3726270. PMID 19387116.",
+                    "<info> ^ Bachstetter AD, Xing B, de Almeida L, Dimayuga ER, Watterson DM, Van Eldik LJ (July 2011). \"Microglial p38α MAPK is a key regulator of proinflammatory cytokine up-regulation induced by toll-like receptor (TLR) ligands or beta-amyloid (Aβ)\". Journal of Neuroinflammation. 8 79. doi:10.1186/1742-2094-8-79. PMC 3142505. PMID 21733175.",
+                    "<info> ^ Zhou Z, Bachstetter AD, Späni CB, Roy SM, Watterson DM, Van Eldik LJ (April 2017). \"Retention of normal glia function by an isoform-selective protein kinase inhibitor drug candidate that modulates cytokine production and cognitive outcomes\". Journal of Neuroinflammation. 14 (1) 75. doi:10.1186/s12974-017-0845-2. PMC 5382362. PMID 28381303.",
+                    "<info> ^ Wei S, Siegal GP (2008). \"Mechanisms modulating inflammatory osteolysis: a review with insights into therapeutic targets\". Pathology, Research and Practice. 204 (10): 695–706. doi:10.1016/j.prp.2008.07.002. PMC 3747958. PMID 18757139.",
+                    "<info> ^ Barnes PJ (July 2016). \"Kinases as Novel Therapeutic Targets in Asthma and Chronic Obstructive Pulmonary Disease\". Pharmacological Reviews. 68 (3): 788–815. doi:10.1124/pr.116.012518. PMID 27363440.",
+                    "<info> ^ Wang S, Ding L, Ji H, Xu Z, Liu Q, Zheng Y (June 2016). \"The Role of p38 MAPK in the Development of Diabetic Cardiomyopathy\". International Journal of Molecular Sciences. 17 (7) E1037. doi:10.3390/ijms17071037. PMC 4964413. PMID 27376265.",
+                    "<info> ^ Segalés J, Perdiguero E, Muñoz-Cánoves P (August 2016). \"Regulation of Muscle Stem Cell Functions: A Focus on the p38 MAPK Signaling Pathway\". Frontiers in Cell and Developmental Biology. 4: 91. doi:10.3389/fcell.2016.00091. PMC 5003838. PMID 27626031.",
+                    "<info> ^ Lang E, Bissinger R, Qadri SM, Lang F (October 2017). \"Suicidal death of erythrocytes in cancer and its chemotherapy: A potential target in the treatment of tumor-associated anemia\". International Journal of Cancer. 141 (8): 1522–1528. doi:10.1002/ijc.30800. PMID 28542880.",
+                    "<info> ^ Bonney EA (May 2017). \"Mapping out p38MAPK\". American Journal of Reproductive Immunology. 77 (5) e12652. doi:10.1111/aji.12652. PMC 5527295. PMID 28194826.",
+                    "<info> ^ Vlahopoulos SA (August 2017). \"Aberrant control of NF-κB in cancer permits transcriptional and phenotypic plasticity, to curtail dependence on host tissue: molecular mode\". Cancer Biology & Medicine. 14 (3): 254–270. doi:10.20892/j.issn.2095-3941.2017.0029. PMC 5570602. PMID 28884042.",
+                    "<info> ^ Ben-Hamo R, Efroni S (2013-04-11). \"hsa-miR-9 and drug control over the P38 network as driving disease outcome in GBM patients\". Systems Biomedicine. 1 (2): 76–83. doi:10.4161/sysb.25815. ISSN 2162-8130.",
+                    "<info> ^ Goldstein DM, Gabriel T (2005). \"Pathway to the clinic: inhibition of P38 MAP kinase. A review of ten chemotypes selected for development\". Current Topics in Medicinal Chemistry. 5 (10): 1017–29. doi:10.2174/1568026054985939. PMID 16178744.",
+                    "<info> ^ Hill RJ, Dabbagh K, Phippard D, Li C, Suttmann RT, Welch M, Papp E, Song KW, Chang KC, Leaffer D, Kim YN, Roberts RT, Zabka TS, Aud D, Dal Porto J, Manning AM, Peng SL, Goldstein DM, Wong BR (December 2008). \"Pamapimod, a novel p38 mitogen-activated protein kinase inhibitor: preclinical analysis of efficacy and selectivity\". The Journal of Pharmacology and Experimental Therapeutics. 327 (3): 610–9. doi:10.1124/jpet.108.139006. PMID 18776065. S2CID 7079672.",
+                    "<info> ^ \"Novel p38 Inhibitor Shows Promise as Anti-Inflammatory Treatment for Patients With COPD\". 2010.",
+                    "<info> ^ Mellion M, Ronco L, Thompson D, Hage M, Brooks S, van Brummelen E, Pagan L, Badrising U, Van Engelen B, Groeneveld G, Cadavid D (October 2019). \"O.25Phase 1 clinical trial of losmapimod in FSHD: safety, tolerability and target engagement\". Neuromuscular Disorders. 29: S123. doi:10.1016/j.nmd.2019.06.308.",
+                    "",
+                    "=== External links ===",
+                    "<info> p38+Mitogen-Activated+Protein+Kinases at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> MAP Kinase Resource  Archived 2021-04-15 at the Wayback Machine",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "p38 mitogen-activated protein kinases are a class of mitogen-activated protein kinases (MAPKs) that are responsive to stress stimuli, such as cytokines, ultraviolet irradiation, heat shock, and osmotic shock, and are involved in cell differentiation, apoptosis and autophagy. Persistent activation of the p38 MAPK pathway in muscle satellite cells (muscle stem cells) due to ageing, impairs muscle regeneration.[1][2]",
+                            "p38 MAP kinase (MAPK), also called RK or CSBP (Cytokinin Specific Binding Protein), is the mammalian orthologue of the yeast Hog1p MAP kinase,[3] which participates in a signaling cascade controlling cellular responses to cytokines and stress.",
+                            "Four p38 MAP kinases, p38-α (MAPK14), -β (MAPK11), -γ (MAPK12 / ERK6), and -δ (MAPK13 / SAPK4), have been identified. Similar to the SAPK/JNK pathway, p38 MAP kinase is activated by a variety of cellular stresses including osmotic shock, inflammatory cytokines, lipopolysaccharides (LPS), ultraviolet light, and growth factors.",
+                            "MKK3 and SEK activate p38 MAP kinase by phosphorylation at Thr-180 and Tyr-182. Activated p38 MAP kinase has been shown to phosphorylate and activate MAPKAP kinase 2 and to phosphorylate the transcription factors ATF2, Mac,  MEF2, and p53.[4] p38 also has been shown to phosphorylate post-transcriptional regulating factors like TTP,[5] and in fruit flies it plays a role in regulating the circadian clock.[6]"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "Oxidative stress is the most powerfully specific stress activating p38 MAPK.[7] Abnormal activity (higher or lower than physiological) of p38 has been implicated in pathological stresses in several tissues,  that  include  neuronal,[8][9][10]\nbone,[11]  lung,[12]  cardiac and skeletal muscle,[13][14]    red blood cells,[15] and fetal tissues.[16] The protein product of proto-oncogene RAS can increase activity of p38, and thereby cause excessively high activity of transcription factor NF-κB. This transcription factor is normally regulated from intracellular pathways that integrate signals from the surrounding tissue and the immune system. In turn these signals coordinate between cell survival and cell death. Dysregulated NF-κB activity can activate genes that cause cancer cell survival, and can also activate genes that facilitate cancer cell metastasis to other tissues.[17] P38 was also shown to correlate with outcome of glioblastoma -  higher pathway activity is associated with low survival.[18]"
+                        ]
+                    },
+                    "Inhibitors": {
+                        "content": [
+                            "p38 inhibitors are being sought for possible therapeutic effect on autoimmune diseases and inflammatory processes,[19] e.g. pamapimod.[20] Some have started clinical trials, e.g. PH-797804 for COPD.[21]  Other p38 inhibitors include BIRB 796, VX-702, SB239063, SB202190, SB203580, SCIO 469, and BMS 582949.",
+                            "As of 2020, losmapimod, a p38 inhibitor, is being investigated for the treatment of facioscapulohumeral muscular dystrophy (FSHD) on the basis of p38 inhibition inhibiting the effects of DUX4.[22]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Cosgrove BD, Gilbert PM, Porpiglia E, Mourkioti F, Lee SP, Corbel SY, Llewellyn ME, Delp SL, Blau HM (2014). \"Rejuvenation of the muscle stem cell population restores strength to injured aged muscles\". Nature Medicine. 20 (3): 255–64. doi:10.1038/nm.3464. PMC 3949152. PMID 24531378.",
+                            "<info> ^ Segalés J, Perdiguero E, Muñoz-Cánoves P (2016). \"Regulation of Muscle Stem Cell Functions: A Focus on the p38 MAPK Signaling Pathway\". Frontiers in Cell and Developmental Biology. 4: 91. doi:10.3389/fcell.2016.00091. PMC 5003838. PMID 27626031.",
+                            "<info> ^ Han J, Lee JD, Bibbs L, Ulevitch RJ (August 1994). \"A MAP kinase targeted by endotoxin and hyperosmolarity in mammalian cells\". Science. 265 (5173): 808–11. Bibcode:1994Sci...265..808H. doi:10.1126/science.7914033. PMID 7914033.",
+                            "<info> ^  She QB, Chen N, Dong Z (July 2000). \"ERKs and p38 kinase phosphorylate p53 protein at serine 15 in response to UV radiation\". Journal of Biological Chemistry. 275 (27): 20444–20449. doi:10.1074/jbc.M001020200. PMID 10781582.",
+                            "<info> ^ Tudor C, Marchese FP, Hitti E, Aubareda A, Rawlinson L, Gaestel M, Blackshear PJ, Clark AR, Saklatvala J, Dean JL (June 2009). \"The p38 MAPK pathway inhibits tristetraprolin-directed decay of interleukin-10 and pro-inflammatory mediator mRNAs in murine macrophages\". FEBS Letters. 583 (12): 1933–8. Bibcode:2009FEBSL.583.1933T. doi:10.1016/j.febslet.2009.04.039. PMC 4798241. PMID 19416727.",
+                            "<info> ^ Dusik V, Senthilan PR, Mentzel B, Hartlieb H, Wülbeck C, Yoshii T, Raabe T, Helfrich-Förster C (2014). \"The MAP Kinase p38 Is Part of Drosophila melanogaster's Circadian Clock\". PLOS Genetics. 10 (8) e1004565. doi:10.1371/journal.pgen.1004565. PMC 4140665. PMID 25144774.",
+                            "<info> ^ Anerillas C, Abdelmohsen K, Gorospe M (2020). \"Regulation of senescence traits by MAPKs\". GeroScience. 42 (2): 397–408. doi:10.1007/s11357-020-00183-3. PMC 7205942. PMID 32300964.",
+                            "<info> ^ Yan SD, Bierhaus A, Nawroth PP, Stern DM (2009). \"RAGE and Alzheimer's disease: a progression factor for amyloid-beta-induced cellular perturbation?\". Journal of Alzheimer's Disease. 16 (4): 833–43. doi:10.3233/JAD-2009-1030. PMC 3726270. PMID 19387116.",
+                            "<info> ^ Bachstetter AD, Xing B, de Almeida L, Dimayuga ER, Watterson DM, Van Eldik LJ (July 2011). \"Microglial p38α MAPK is a key regulator of proinflammatory cytokine up-regulation induced by toll-like receptor (TLR) ligands or beta-amyloid (Aβ)\". Journal of Neuroinflammation. 8 79. doi:10.1186/1742-2094-8-79. PMC 3142505. PMID 21733175.",
+                            "<info> ^ Zhou Z, Bachstetter AD, Späni CB, Roy SM, Watterson DM, Van Eldik LJ (April 2017). \"Retention of normal glia function by an isoform-selective protein kinase inhibitor drug candidate that modulates cytokine production and cognitive outcomes\". Journal of Neuroinflammation. 14 (1) 75. doi:10.1186/s12974-017-0845-2. PMC 5382362. PMID 28381303.",
+                            "<info> ^ Wei S, Siegal GP (2008). \"Mechanisms modulating inflammatory osteolysis: a review with insights into therapeutic targets\". Pathology, Research and Practice. 204 (10): 695–706. doi:10.1016/j.prp.2008.07.002. PMC 3747958. PMID 18757139.",
+                            "<info> ^ Barnes PJ (July 2016). \"Kinases as Novel Therapeutic Targets in Asthma and Chronic Obstructive Pulmonary Disease\". Pharmacological Reviews. 68 (3): 788–815. doi:10.1124/pr.116.012518. PMID 27363440.",
+                            "<info> ^ Wang S, Ding L, Ji H, Xu Z, Liu Q, Zheng Y (June 2016). \"The Role of p38 MAPK in the Development of Diabetic Cardiomyopathy\". International Journal of Molecular Sciences. 17 (7) E1037. doi:10.3390/ijms17071037. PMC 4964413. PMID 27376265.",
+                            "<info> ^ Segalés J, Perdiguero E, Muñoz-Cánoves P (August 2016). \"Regulation of Muscle Stem Cell Functions: A Focus on the p38 MAPK Signaling Pathway\". Frontiers in Cell and Developmental Biology. 4: 91. doi:10.3389/fcell.2016.00091. PMC 5003838. PMID 27626031.",
+                            "<info> ^ Lang E, Bissinger R, Qadri SM, Lang F (October 2017). \"Suicidal death of erythrocytes in cancer and its chemotherapy: A potential target in the treatment of tumor-associated anemia\". International Journal of Cancer. 141 (8): 1522–1528. doi:10.1002/ijc.30800. PMID 28542880.",
+                            "<info> ^ Bonney EA (May 2017). \"Mapping out p38MAPK\". American Journal of Reproductive Immunology. 77 (5) e12652. doi:10.1111/aji.12652. PMC 5527295. PMID 28194826.",
+                            "<info> ^ Vlahopoulos SA (August 2017). \"Aberrant control of NF-κB in cancer permits transcriptional and phenotypic plasticity, to curtail dependence on host tissue: molecular mode\". Cancer Biology & Medicine. 14 (3): 254–270. doi:10.20892/j.issn.2095-3941.2017.0029. PMC 5570602. PMID 28884042.",
+                            "<info> ^ Ben-Hamo R, Efroni S (2013-04-11). \"hsa-miR-9 and drug control over the P38 network as driving disease outcome in GBM patients\". Systems Biomedicine. 1 (2): 76–83. doi:10.4161/sysb.25815. ISSN 2162-8130.",
+                            "<info> ^ Goldstein DM, Gabriel T (2005). \"Pathway to the clinic: inhibition of P38 MAP kinase. A review of ten chemotypes selected for development\". Current Topics in Medicinal Chemistry. 5 (10): 1017–29. doi:10.2174/1568026054985939. PMID 16178744.",
+                            "<info> ^ Hill RJ, Dabbagh K, Phippard D, Li C, Suttmann RT, Welch M, Papp E, Song KW, Chang KC, Leaffer D, Kim YN, Roberts RT, Zabka TS, Aud D, Dal Porto J, Manning AM, Peng SL, Goldstein DM, Wong BR (December 2008). \"Pamapimod, a novel p38 mitogen-activated protein kinase inhibitor: preclinical analysis of efficacy and selectivity\". The Journal of Pharmacology and Experimental Therapeutics. 327 (3): 610–9. doi:10.1124/jpet.108.139006. PMID 18776065. S2CID 7079672.",
+                            "<info> ^ \"Novel p38 Inhibitor Shows Promise as Anti-Inflammatory Treatment for Patients With COPD\". 2010.",
+                            "<info> ^ Mellion M, Ronco L, Thompson D, Hage M, Brooks S, van Brummelen E, Pagan L, Badrising U, Van Engelen B, Groeneveld G, Cadavid D (October 2019). \"O.25Phase 1 clinical trial of losmapimod in FSHD: safety, tolerability and target engagement\". Neuromuscular Disorders. 29: S123. doi:10.1016/j.nmd.2019.06.308."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> p38+Mitogen-Activated+Protein+Kinases at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> MAP Kinase Resource  Archived 2021-04-15 at the Wayback Machine"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

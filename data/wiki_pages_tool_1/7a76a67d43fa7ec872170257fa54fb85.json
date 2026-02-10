@@ -1,0 +1,77 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/rank": {
+                "title": "Rank",
+                "url": "https://en.wikipedia.org/wiki/rank",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A rank is a position in a hierarchy. It can be formally recognized—for example, cardinal, chief executive officer, general, professor—or unofficial.",
+                    "",
+                    "=== People ===",
+                    "<info> Hierarchy of the Catholic Church",
+                    "<info> Imperial, royal and noble ranks",
+                    "",
+                    "=== Mathematics ===",
+                    "<info> Rank (linear algebra), the dimension of the vector space generated (or spanned) by a matrix's columns",
+                    "<info> Rank of an abelian group, the cardinality of a maximal linearly independent subset",
+                    "<info> Rank of a free module",
+                    "<info> Rank of a generalized eigenvector",
+                    "<info> Rank of a greedoid, the maximal size of a feasible set",
+                    "<info> Rank of a group, the smallest cardinality of a generating set for the group",
+                    "<info> Rank of a Lie group – see Cartan subgroup",
+                    "<info> Rank of a matroid, the maximal size of an independent set",
+                    "<info> Rank of a partition, at least two definitions in number theory",
+                    "<info> Rank of a tensor",
+                    "<info> Rank of a vector bundle",
+                    "",
+                    "=== Other ===",
+                    "<info> Taxonomic rank, in biology",
+                    "",
+                    "=== See also ===",
+                    "<info> All pages with titles containing rank",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A rank is a position in a hierarchy. It can be formally recognized—for example, cardinal, chief executive officer, general, professor—or unofficial."
+                        ]
+                    },
+                    "People": {
+                        "content": [
+                            "<info> Hierarchy of the Catholic Church",
+                            "<info> Imperial, royal and noble ranks"
+                        ]
+                    },
+                    "Mathematics": {
+                        "content": [
+                            "<info> Rank (linear algebra), the dimension of the vector space generated (or spanned) by a matrix's columns",
+                            "<info> Rank of an abelian group, the cardinality of a maximal linearly independent subset",
+                            "<info> Rank of a free module",
+                            "<info> Rank of a generalized eigenvector",
+                            "<info> Rank of a greedoid, the maximal size of a feasible set",
+                            "<info> Rank of a group, the smallest cardinality of a generating set for the group",
+                            "<info> Rank of a Lie group – see Cartan subgroup",
+                            "<info> Rank of a matroid, the maximal size of an independent set",
+                            "<info> Rank of a partition, at least two definitions in number theory",
+                            "<info> Rank of a tensor",
+                            "<info> Rank of a vector bundle"
+                        ]
+                    },
+                    "Other": {
+                        "content": [
+                            "<info> Taxonomic rank, in biology"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> All pages with titles containing rank"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/gtp_cyclohydrolase_i": {
+                "title": "GTP cyclohydrolase I",
+                "url": "https://en.wikipedia.org/wiki/gtp_cyclohydrolase_i",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "GTP cyclohydrolase I (GTPCH) (EC 3.5.4.16) is a member of the GTP cyclohydrolase family of enzymes. GTPCH is part of the folate and biopterin biosynthesis pathways. It is responsible for the hydrolysis of guanosine triphosphate (GTP) to form 7,8-dihydroneopterin triphosphate (7,8-DHNP-3'-TP, 7,8-NH2-3'-TP).",
+                    "",
+                    "=== Gene ===",
+                    "GTPCH is encoded by the gene GCH1. Several alternatively spliced transcript variants encoding different isoforms have been described; however, not all of the variants give rise to a functional enzyme.[5]",
+                    "",
+                    "=== Clinical significance ===",
+                    "At least 94 disease-causing mutations in this gene have been discovered.[6] Mutations in this gene are associated with two disorders: autosomal recessive GTP cyclohydrolase I deficiency and autosomal dominant GTP cyclohydrolase I deficiency. These may present with malignant phenylketonuria (PKU) and hyperphenylalaninemia (HPA)[5]  and lead to a lack of certain neurotransmitters (dopamine, norepinephrine, epinephrine and serotonin). The dominant form, with mutation in only one of the two alleles for GTP cyclohydrolase I, causes dopamine-responsive dystonia, characterized by childhood-onset dystonia. Patients with the recessive form have mutations in both alleles for GTP cyclohydrolase I. Patients present with developmental delays and neurological dysfunction with trunk hypotonia, hypertonia of the extremities, abnormal movements, tremors, convulsions, and sometimes autonomic dysfunction.[7] Response to treatment is variable and the long-term and functional outcome is unknown. To provide a basis for improving the understanding of the epidemiology, genotype/phenotype correlation and outcome of these diseases their impact on the quality of life of patients, and for evaluating diagnostic and therapeutic strategies a patient registry was established by the noncommercial International Working Group on Neurotransmitter Related Disorders (iNTD).[8]",
+                    "",
+                    "=== Function ===",
+                    "The transcribed protein is the first and rate-limiting enzyme in tetrahydrobiopterin (THB, BH4) biosynthesis, catalyzing the conversion of GTP into 7,8-DHNP-3'-TP. THB is an essential cofactor required by the aromatic amino acid hydroxylase (AAAH) and nitric oxide synthase (NOS) enzymes in the biosynthesis of the monoamine neurotransmitters serotonin (5-hydroxytryptamine (5-HT)), melatonin, dopamine, norepinephrine (noradrenaline), and epinephrine (adrenaline), and nitric oxide (NO), respectively.[citation needed]",
+                    "GTPCH (GCH1) and tetrahydrobiopterin were found to protect against cell death by ferroptosis. Tetrahydrobiopterin (BH4) acts as a potent, diffusable antioxidant that resists oxidative stress and enables cancer cell survival.[9]",
+                    "",
+                    "=== See also ===",
+                    "<info> Vitamin B9 (folic acid → folate)",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000131979 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000037580 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ a b \"Entrez Gene: GCH1 GTP Cyclohydrolase 1 (DOPA-Responsive Dystonia)\".",
+                    "<info> ^ Šimčíková D, Heneberg P (December 2019). \"Refinement of evolutionary medicine predictions based on clinical evidence for the manifestations of Mendelian diseases\". Scientific Reports. 9 (1): 18577. Bibcode:2019NatSR...918577S. doi:10.1038/s41598-019-54976-4. PMC 6901466. PMID 31819097.",
+                    "<info> ^ Longo N (June 2009). \"Disorders of biopterin metabolism\". Journal of Inherited Metabolic Disease. 32 (3): 333–342. doi:10.1007/s10545-009-1067-2. PMID 19234759. S2CID 13117236.",
+                    "<info> ^ Kraft VA, Bezjian CT, Pfeiffer S, Ringelstetter L, Müller C, Zandkarimi F, et al. (January 2020). \"GTP Cyclohydrolase 1/Tetrahydrobiopterin Counteract Ferroptosis through Lipid Remodeling\". ACS Central Science. 6 (1): 41–53. doi:10.1021/acscentsci.9b01063. PMC 6978838. PMID 31989025.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Voet JG, Voet D (2004). Biochemistry. New York: J. Wiley & Sons. ISBN 978-0-471-39223-1.",
+                    "",
+                    "=== External links ===",
+                    "<info> GTP+Cyclohydrolase+I at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> GeneReviews/NCBI/NIH/UW entry on GTP Cyclohydrolase 1-Deficient Dopa-Responsive Dystonia",
+                    "<info> Overview of all the structural information available in the PDB for UniProt: P30793 (Human GTP cyclohydrolase 1) at the PDBe-KB.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "GTP cyclohydrolase I (GTPCH) (EC 3.5.4.16) is a member of the GTP cyclohydrolase family of enzymes. GTPCH is part of the folate and biopterin biosynthesis pathways. It is responsible for the hydrolysis of guanosine triphosphate (GTP) to form 7,8-dihydroneopterin triphosphate (7,8-DHNP-3'-TP, 7,8-NH2-3'-TP)."
+                        ]
+                    },
+                    "Gene": {
+                        "content": [
+                            "GTPCH is encoded by the gene GCH1. Several alternatively spliced transcript variants encoding different isoforms have been described; however, not all of the variants give rise to a functional enzyme.[5]"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "At least 94 disease-causing mutations in this gene have been discovered.[6] Mutations in this gene are associated with two disorders: autosomal recessive GTP cyclohydrolase I deficiency and autosomal dominant GTP cyclohydrolase I deficiency. These may present with malignant phenylketonuria (PKU) and hyperphenylalaninemia (HPA)[5]  and lead to a lack of certain neurotransmitters (dopamine, norepinephrine, epinephrine and serotonin). The dominant form, with mutation in only one of the two alleles for GTP cyclohydrolase I, causes dopamine-responsive dystonia, characterized by childhood-onset dystonia. Patients with the recessive form have mutations in both alleles for GTP cyclohydrolase I. Patients present with developmental delays and neurological dysfunction with trunk hypotonia, hypertonia of the extremities, abnormal movements, tremors, convulsions, and sometimes autonomic dysfunction.[7] Response to treatment is variable and the long-term and functional outcome is unknown. To provide a basis for improving the understanding of the epidemiology, genotype/phenotype correlation and outcome of these diseases their impact on the quality of life of patients, and for evaluating diagnostic and therapeutic strategies a patient registry was established by the noncommercial International Working Group on Neurotransmitter Related Disorders (iNTD).[8]"
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "The transcribed protein is the first and rate-limiting enzyme in tetrahydrobiopterin (THB, BH4) biosynthesis, catalyzing the conversion of GTP into 7,8-DHNP-3'-TP. THB is an essential cofactor required by the aromatic amino acid hydroxylase (AAAH) and nitric oxide synthase (NOS) enzymes in the biosynthesis of the monoamine neurotransmitters serotonin (5-hydroxytryptamine (5-HT)), melatonin, dopamine, norepinephrine (noradrenaline), and epinephrine (adrenaline), and nitric oxide (NO), respectively.[citation needed]",
+                            "GTPCH (GCH1) and tetrahydrobiopterin were found to protect against cell death by ferroptosis. Tetrahydrobiopterin (BH4) acts as a potent, diffusable antioxidant that resists oxidative stress and enables cancer cell survival.[9]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Vitamin B9 (folic acid → folate)"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000131979 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000037580 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ a b \"Entrez Gene: GCH1 GTP Cyclohydrolase 1 (DOPA-Responsive Dystonia)\".",
+                            "<info> ^ Šimčíková D, Heneberg P (December 2019). \"Refinement of evolutionary medicine predictions based on clinical evidence for the manifestations of Mendelian diseases\". Scientific Reports. 9 (1): 18577. Bibcode:2019NatSR...918577S. doi:10.1038/s41598-019-54976-4. PMC 6901466. PMID 31819097.",
+                            "<info> ^ Longo N (June 2009). \"Disorders of biopterin metabolism\". Journal of Inherited Metabolic Disease. 32 (3): 333–342. doi:10.1007/s10545-009-1067-2. PMID 19234759. S2CID 13117236.",
+                            "<info> ^ Kraft VA, Bezjian CT, Pfeiffer S, Ringelstetter L, Müller C, Zandkarimi F, et al. (January 2020). \"GTP Cyclohydrolase 1/Tetrahydrobiopterin Counteract Ferroptosis through Lipid Remodeling\". ACS Central Science. 6 (1): 41–53. doi:10.1021/acscentsci.9b01063. PMC 6978838. PMID 31989025."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Voet JG, Voet D (2004). Biochemistry. New York: J. Wiley & Sons. ISBN 978-0-471-39223-1."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> GTP+Cyclohydrolase+I at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> GeneReviews/NCBI/NIH/UW entry on GTP Cyclohydrolase 1-Deficient Dopa-Responsive Dystonia",
+                            "<info> Overview of all the structural information available in the PDB for UniProt: P30793 (Human GTP cyclohydrolase 1) at the PDBe-KB."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

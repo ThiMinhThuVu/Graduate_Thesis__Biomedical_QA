@@ -1,0 +1,249 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/wilms%27_tumor": {
+                "title": "Wilms' tumor",
+                "url": "https://en.wikipedia.org/wiki/wilms%27_tumor",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Wilms' tumor or Wilms tumor,[3] also known as nephroblastoma, is a cancer of the kidneys that typically occurs in children (rarely in adults),[4] and occurs most commonly as a renal tumor in child patients.[5][6] It is named after Max Wilms, the German surgeon (1867–1918) who first described it.[7]",
+                    "Approximately 650 cases are diagnosed in the U.S. annually.[2] The majority of cases occur in children with no associated genetic syndromes; however, a minority of children with Wilms' tumor have a congenital abnormality.[2]  It is highly responsive to treatment, with about 90 percent of children being cured.[2]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Typical signs and symptoms of Wilms' tumor include the following:[citation needed]",
+                    "<info> a painless, palpable abdominal mass",
+                    "<info> blood in the urine (in about 20% of cases)",
+                    "<info> high blood pressure in some cases (especially if synchronous or metachronous bilateral kidney involvement)",
+                    "",
+                    "=== Pathogenesis ===",
+                    "Wilms' tumor has many causes, which can broadly be categorized as syndromic and non-syndromic. Syndromic causes of Wilms' tumor occur as a result of alterations to genes such as the Wilms Tumor 1 (WT1) or Wilms Tumor 2 (WT2) genes, and the tumor presents with a group of other signs and symptoms.[9] Non-syndromic Wilms' tumor is not associated with other symptoms or pathologies.[9] Many, but not all, cases of Wilms' tumor develop from nephrogenic rests, which are fragments of tissue in or around the kidney that develop before birth and become cancerous after birth. In particular, cases of bilateral Wilms' tumor, as well as cases of Wilms' tumor derived from certain genetic syndromes such as Denys-Drash syndrome, are strongly associated with nephrogenic rests.[9] Most nephroblastomas are on one side of the body only and are found on both sides in less than 5% of cases, although people with Denys-Drash syndrome mostly have bilateral or multiple tumors.[10] They tend to be encapsulated and vascularized tumors that do not cross the midline of the abdomen. In cases of metastasis it is usually to the lung. A rupture of Wilms' tumor puts the patient at risk of bleeding and peritoneal dissemination of the tumor. In such cases, surgical intervention by a surgeon who is experienced in the removal of such a fragile tumor is imperative.[citation needed]",
+                    "Pathologically, a triphasic nephroblastoma comprises three elements:[11]",
+                    "Wilms' tumor is a malignant tumor containing metanephric blastema, stromal and epithelial derivatives. Characteristic is the presence of abortive tubules and glomeruli surrounded by a spindled cell stroma. The stroma may include striated muscle, cartilage, bone, fat tissue, and fibrous tissue. Dysfunction is caused when the tumor compresses the normal kidney parenchyma.[citation needed]",
+                    "The mesenchymal component may include cells showing rhabdomyoid differentiation or malignancy (rhabdomyosarcomatous Wilms).[citation needed]",
+                    "Wilms' tumors may be separated into two prognostic groups based on pathologic characteristics:[citation needed]",
+                    "<info> Favorable – Contains well developed components mentioned above",
+                    "<info> Anaplastic – Contains diffuse anaplasia (poorly developed cells)",
+                    "Mutations of the WT1 gene which is located on the short arm of chromosome 11 (11p13) are observed in approximately 20% of Wilms' tumors, the majority of them being inherited from the germline, while a minority are acquired somatic mutations.[12][13] In addition at least half of the Wilms' tumors with mutations in WT1 also carry acquired somatic mutations in CTNNB1, the gene encoding the proto-oncogene beta-catenin.[14] This latter gene is found on short arm of chromosome 3 (3p22.1).",
+                    "Most cases do not have mutations in any of these genes.[15]",
+                    "An association with H19 has been reported.[17] H19 is a long noncoding RNA located on the short arm of chromosome 11 (11p15.5).",
+                    "",
+                    "=== Diagnosis ===",
+                    "The majority of people with Wilms' tumor present with an asymptomatic abdominal mass which is noticed by a family member or healthcare professional.[18] Renal tumors can also be found during routine screening in children who have known predisposing clinical syndromes.[18] The diagnostic process includes taking a medical history, a physical exam, and a series of tests including blood, urine, and imaging tests.[19]",
+                    "Once Wilms' tumor is suspected, an ultrasound scan is usually done first to confirm the presence of an intrarenal mass.[19] A computed tomography scan or MRI scan can also be used for more detailed imaging. Finally, the diagnosis of Wilms' tumor is confirmed by a tissue sample.[20] In most cases, a biopsy is not done first because there is a risk of cancer cells spreading during the procedure. Treatment in North America is nephrectomy or in Europe chemotherapy followed by nephrectomy. A definitive diagnosis is obtained by pathological examination of the nephrectomy specimen.[20]",
+                    "Staging is a standard way to describe the extent of spread of Wilms' tumors[21] and to determine prognosis and treatments. Staging is based on anatomical findings and tumor cells pathology.[22][23] According to the extent of tumor tissue at the time of initial diagnosis, four stages are considered, with a fifth classification for bilateral involvement.[citation needed]",
+                    "In Stage I Wilms' tumor (43% of cases), all of the following criteria must be met: [citation needed]",
+                    "<info> Tumor is limited to the kidney and is completely excised .",
+                    "<info> The surface of the renal capsule is intact.",
+                    "<info> The tumor is not ruptured or biopsied (open or needle) prior to removal.",
+                    "<info> No involvement of extrarenal or renal sinus lymph-vascular spaces",
+                    "<info> No residual tumor apparent beyond the margins of excision.",
+                    "<info> Metastasis of tumor to lymph nodes not identified.",
+                    "In Stage II (23% of cases), 1 or more of the following criteria must be met: [citation needed]",
+                    "<info> Tumor extends beyond the kidney but is completely excised.",
+                    "<info> No residual tumor apparent at or beyond the margins of excision.",
+                    "<info> Any of the following conditions may also exist:\nTumor involvement of the blood vessels of the renal sinus and/or outside the renal parenchyma.\nExtensive tumor involvement of renal sinus soft tissue.",
+                    "<info> Tumor involvement of the blood vessels of the renal sinus and/or outside the renal parenchyma.",
+                    "<info> Extensive tumor involvement of renal sinus soft tissue.",
+                    "In Stage III (20% of cases), 1 or more of the following criteria must be met: [citation needed]",
+                    "<info> Tumor is present at surgical margins.",
+                    "<info> Tumor spillage involving peritoneal surfaces either before or during surgery, or transected tumor thrombus.\nThe tumor has been biopsied prior to removal or there is local spillage of tumor during surgery, confined to the flank.",
+                    "<info> The tumor has been biopsied prior to removal or there is local spillage of tumor during surgery, confined to the flank.",
+                    "Stage IV (10% of cases) Wilms' tumor is defined by the presence of hematogenous metastases (lung, liver, bone, or brain), or lymph node metastases outside the abdominopelvic region.[citation needed]",
+                    "5% of Wilms' tumor cases at the time of initial diagnosis are bilateral involvements, which pose unique challenges to treatment. An attempt should be made [according to whom?] to stage each side according to the above criteria (stage I to III) on the basis of extent of disease prior to biopsy. Bilateral Wilms' tumors are as a whole placed in Stage V.",
+                    "",
+                    "=== Treatment and prognosis ===",
+                    "The overall 5-year survival is estimated to be approximately 90%,[24][25] but for individuals the prognosis is highly dependent on individual staging and treatment. Early removal tends to promote positive outcomes.",
+                    "Tumor-specific loss-of-heterozygosity (LOH) for chromosomes 1p and 16q identifies a subset of Wilms' tumor patients who have a significantly increased risk of relapse and death. LOH for these chromosomal regions can now be used as an independent prognostic factor together with disease stage to target intensity of treatment to risk of treatment failure.[26][27] Genome-wide copy number and LOH status can be assessed with virtual karyotyping of tumor cells (fresh or paraffin-embedded).[citation needed]",
+                    "Statistics may sometimes show more favorable outcomes for more aggressive stages than for less aggressive stages, which may be caused by more aggressive treatment and/or random variability in the study groups. Also, a stage V tumor is not necessarily worse than, but nevertheless comparable in prognosis to a stage IV tumor.[citation needed]",
+                    "In case of relapse of Wilms' tumor, the 4-year survival rate for children with a standard-risk has been estimated to be 80%.[29]",
+                    "",
+                    "=== Epidemiology ===",
+                    "Wilms tumor is the most common malignant renal tumor in children.[30] There are a number of rare genetic syndromes that have been linked to an increased risk of developing Wilms Tumor.[31] Screening guidelines vary between countries; however health care professionals are recommending regular ultrasound screening for people with associated genetic syndromes.[31]",
+                    "Wilms' tumor affects approximately one person per 10,000 worldwide before the age of 15 years.[32] People of African descent may have slightly higher rates of Wilms' tumor.[32] The peak age of Wilms' tumor is 3 to 4 years and most cases occur before the age of 10 years.[33] A genetic predisposition to Wilms' tumor in individuals with aniridia has been established, due to deletions in the p13 band on chromosome 11.[34]",
+                    "",
+                    "=== History ===",
+                    "Sidney Farber, founder of Dana–Farber Cancer Institute, and his colleagues achieved the first remissions in Wilms' tumor in the 1950s. By employing the antibiotic actinomycin D in addition to surgery and radiation therapy, they boosted cure rates from 40 to 89 percent.[35]",
+                    "The use of computed tomography scan for the diagnosis of Wilms' tumor began in the early 1970s, thanks to the intuition of Mario Costici, an Italian physician. He discovered that in the direct radiograms and in the urographic images, determining elements for a differential diagnosis with the Wilms' tumor can be identified. This possibility was a premise for starting a treatment.[36]",
+                    "",
+                    "=== See also ===",
+                    "<info> National Wilms Tumor Study Group (NWTS)",
+                    "<info> Virtual Karyotype for 1p and 16q LOH",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b \"Wilms' tumor\". Mayo Clinic. Retrieved March 10, 2022.",
+                    "<info> ^ a b c d \"Wilms Tumor and Other Childhood Kidney Tumors Treatment\". National Cancer Institute. Retrieved 2018-11-12.",
+                    "<info> ^ \"Wilms tumor: MedlinePlus Genetics\". medlineplus.gov. Retrieved 11 June 2022.",
+                    "<info> ^ EBSCO database verified by URAC; accessed from Mount Sinai Hospital, New York",
+                    "<info> ^ Fitski, Matthijs; van de Ven, Cornelis P.; Hulsker, Caroline C. C.; Bökkerink, Guus M. J.; Terwisscha van Scheltinga, Cecilia E. J.; van den Heuvel-Eibrink, Marry M.; Mavinkurve-Groothuis, Annelies M. C.; van Grotel, Martine; Wijnen, Marc H. W. A.; Klijn, Aart J.; van der Steeg, Alida F. W. (2022-10-01). \"Patient-specific hydrogel phantoms for the preoperative simulation of nephron-sparing surgery in Wilms' tumor patients: A feasibility study\". Annals of 3D Printed Medicine. 8 100077. doi:10.1016/j.stlm.2022.100077. ISSN 2666-9641. S2CID 251870073.",
+                    "<info> ^ van den Heuvel-Eibrink, Marry M.; Hol, Janna A.; Pritchard-Jones, Kathy; van Tinteren, Harm; Furtwängler, Rhoikos; Verschuur, Arnauld C.; Vujanic, Gordan M.; Leuschner, Ivo; Brok, Jesper; Rübe, Christian; Smets, Anne M.; Janssens, Geert O.; Godzinski, Jan; Ramírez-Villar, Gema L.; de Camargo, Beatriz (2017-12-01). \"Rationale for the treatment of Wilms tumour in the UMBRELLA SIOP–RTSG 2016 protocol\". Nature Reviews Urology. 14 (12): 743–752. doi:10.1038/nrurol.2017.163. hdl:10668/18902. ISSN 1759-4820. PMID 29089605. S2CID 9418050.",
+                    "<info> ^ WhoNamedIt.com: Max Wilms",
+                    "<info> ^ Erginel B, Vural S, Akın M, Karadağ CA, Sever N, Yıldız A. et al (2014) Wilms' tumor: a 24-year retrospective study from a single center. Pediatr Hematol Oncol 31: 409–414",
+                    "<info> ^ a b c PDQ Pediatric Treatment Editorial Board (2002), \"Wilms Tumor and Other Childhood Kidney Tumors Treatment (PDQ®): Health Professional Version\", PDQ Cancer Information Summaries, National Cancer Institute (US), PMID 26389282, retrieved 2018-11-26",
+                    "<info> ^ Guaragna MS, Soardi FC, Assumpção JG, Zambaldi L, Cardinalli IA, Yunes JA, de Mello MP, Brandalise SR, Aguiar S (August 2010). \"The novel WT1 gene mutation p.H377N associated to Denys-Drash syndrome\". Journal of Pediatric Hematology/Oncology. 32 (6): 486–8. doi:10.1097/MPH.0b013e3181e5e20d. PMID 20562648. S2CID 205860918.",
+                    "<info> ^ Popov, Sergey D.; Sebire, Neil J.; Vujanic, Gordan M. (2016). Wilms' Tumour – Histology and Differential Diagnosis. pp. 3–21. doi:10.15586/codon.wt.2016.ch1. ISBN 978-0-9944381-1-9. PMID 27512769. S2CID 78834136.",
+                    "<info> ^ Call KM, Glaser T, Ito CY, Buckler AJ, Pelletier J, Haber DA, Rose EA, Kral A, Yeger H, Lewis WH (February 1990). \"Isolation and characterization of a zinc finger polypeptide gene at the human chromosome 11 Wilms' tumor locus\". Cell. 60 (3): 509–20. doi:10.1016/0092-8674(90)90601-A. PMID 2154335. S2CID 29092372.",
+                    "<info> ^ Huff V (October 1998). \"Wilms tumor genetics\". American Journal of Medical Genetics. 79 (4): 260–7. doi:10.1002/(SICI)1096-8628(19981002)79:4<260::AID-AJMG6>3.0.CO;2-Q. PMID 9781905.",
+                    "<info> ^ Maiti S, Alam R, Amos CI, Huff V (November 2000). \"Frequent association of beta-catenin and WT1 mutations in Wilms tumors\". Cancer Research. 60 (22): 6288–92. PMID 11103785.",
+                    "<info> ^ Ruteshouser EC, Robinson SM, Huff V (June 2008). \"Wilms tumor genetics: mutations in WT1, WTX, and CTNNB1 account for only about one-third of tumors\". Genes, Chromosomes & Cancer. 47 (6): 461–70. doi:10.1002/gcc.20553. PMC 4332772. PMID 18311776.",
+                    "<info> ^ a b c Dome JS, Graf N, Geller JI, Fernandez CV, Mullen EA, Spreafico F, Van den Heuvel-Eibrink M, Pritchard-Jones K (September 2015). \"Advances in Wilms Tumor Treatment and Biology: Progress Through International Collaboration\". Journal of Clinical Oncology. 33 (27): 2999–3007. doi:10.1200/JCO.2015.62.1888. PMC 4567702. PMID 26304882.",
+                    "<info> ^ Coorens THH, Treger TD, Al-Saadi R, Moore L, Tran MGB, Mitchell TJ, Tugnait S, Thevanesan C, Young MD, Oliver TRW, Oostveen M, Collord G, Tarpey PS, Cagan A, Hooks Y, Brougham M, Reynolds BC, Barone G, Anderson J, Jorgensen M, Burke GAA, Visser J, Nicholson JC, Smeulders N, Mushtaq I, Stewart GD, Campbell PJ, Wedge DC, Martincorena I, Rampling D, Hook L, Warren AY, Coleman N, Chowdhury T, Sebire N, Drost J, Saeb-Parsy K, Stratton MR, Straathof K, Pritchard-Jones K, Behjati S (2019) Embryonal precursors of Wilms tumor. Science 366(6470):1247-1251",
+                    "<info> ^ a b PDQ Pediatric Treatment Editorial Board (2002). Wilms Tumor and Other Childhood Kidney Tumors Treatment (PDQ®): Health Professional Version. National Cancer Institute (US). PMID 26389282. Retrieved 2018-11-12. {{cite book}}: |work= ignored (help)",
+                    "<info> ^ a b \"Presentation, diagnosis, and staging of Wilms tumor\".",
+                    "<info> ^ a b Szychot E, Apps J, Pritchard-Jones K (January 2014). \"Wilms' tumor: biology, diagnosis and treatment\". Translational Pediatrics. 3 (1): 12–24. doi:10.3978/j.issn.2224-4336.2014.01.09. PMC 4728859. PMID 26835318.",
+                    "<info> ^ \"How is Wilms tumor staged?\". www.cancer.org. Archived from the original on 2015-11-17. Retrieved 2015-11-15.",
+                    "<info> ^ \"Wilms Tumor - Childhood - Stages\". Cancer.Net. 25 June 2012. Retrieved 2015-11-15.",
+                    "<info> ^ \"Treatment by type and stage of Wilms tumor\". www.cancer.org. Archived from the original on 2015-11-17. Retrieved 2015-11-13.",
+                    "<info> ^ Stewénius Y, Jin Y, Øra I, de Kraker J, Bras J, Frigyesi A, Alumets J, Sandstedt B, Meeker AK, Gisselsson D (November 2007). \"Defective chromosome segregation and telomere dysfunction in aggressive Wilms' tumors\". Clinical Cancer Research. 13 (22 Pt 1): 6593–602. doi:10.1158/1078-0432.CCR-07-1081. PMID 18006759. S2CID 17036977.",
+                    "<info> ^ Tournade MF, Com-Nougué C, de Kraker J, Ludwig R, Rey A, Burgers JM, Sandstedt B, Godzinski J, Carli M, Potter R, Zucker JM (January 2001). \"Optimal duration of preoperative therapy in unilateral and nonmetastatic Wilms' tumor in children older than 6 months: results of the Ninth International Society of Pediatric Oncology Wilms' Tumor Trial and Study\". Journal of Clinical Oncology. 19 (2): 488–500. doi:10.1200/jco.2001.19.2.488. PMID 11208843.",
+                    "<info> ^ Messahel B, Williams R, Ridolfi A, A'hern R, Warren W, Tinworth L, Hobson R, Al-Saadi R, Whyman G, Brundler MA, Kelsey A, Sebire N, Jones C, Vujanic G, Pritchard-Jones K (March 2009). \"Allele loss at 16q defines poorer prognosis Wilms tumour irrespective of treatment approach in the UKW1-3 clinical trials: a Children's Cancer and Leukaemia Group (CCLG) Study\". European Journal of Cancer. 45 (5): 819–26. doi:10.1016/j.ejca.2009.01.005. PMID 19231157.",
+                    "<info> ^ Grundy PE, Breslow NE, Li S, Perlman E, Beckwith JB, Ritchey ML, Shamberger RC, Haase GM, D'Angio GJ, Donaldson M, Coppes MJ, Malogolowkin M, Shearer P, Thomas PR, Macklis R, Tomlinson G, Huff V, Green DM (October 2005). \"Loss of heterozygosity for chromosomes 1p and 16q is an adverse prognostic factor in favorable-histology Wilms tumor: a report from the National Wilms Tumor Study Group\". Journal of Clinical Oncology. 23 (29): 7312–21. doi:10.1200/JCO.2005.01.2799. PMID 16129848.",
+                    "<info> ^ a b c d e f g h i j Unless otherwise specified in boxes, then reference is: Treatment of Wilms Tumor at National Cancer Institute. Last Modified: 03/29/2012",
+                    "<info> ^ Spreafico F, Pritchard Jones K, Malogolowkin MH, Bergeron C, Hale J, de Kraker J, Dallorso S, Acha T, de Camargo B, Dome JS, Graf N (December 2009). \"Treatment of relapsed Wilms tumors: lessons learned\". Expert Review of Anticancer Therapy. 9 (12): 1807–15. doi:10.1586/era.09.159. PMID 19954292. S2CID 207212698.",
+                    "<info> ^ Sonn G, Shortliffe LM (October 2008). \"Management of Wilms tumor: current standard of care\". Nature Clinical Practice. Urology. 5 (10): 551–60. doi:10.1038/ncpuro1218. PMID 18836464. S2CID 23599363.",
+                    "<info> ^ a b Kalish JM, Doros L, Helman LJ, Hennekam RC, Kuiper RP, Maas SM, Maher ER, Nichols KE, Plon SE, Porter CC, Rednam S, Schultz KA, States LJ, Tomlinson GE, Zelley K, Druley TE (July 2017). \"Surveillance Recommendations for Children with Overgrowth Syndromes and Predisposition to Wilms Tumors and Hepatoblastoma\". Clinical Cancer Research. 23 (13): e115–e122. doi:10.1158/1078-0432.CCR-17-0710. PMC 5538793. PMID 28674120.",
+                    "<info> ^ a b Breslow N, Olshan A, Beckwith JB, Green DM (1993). \"Epidemiology of Wilms tumor\". Medical and Pediatric Oncology. 21 (3): 172–81. doi:10.1002/mpo.2950210305. PMID 7680412.",
+                    "<info> ^ Breslow NE, Beckwith JB, Perlman EJ, Reeve AE (September 2006). \"Age distributions, birth weights, nephrogenic rests, and heterogeneity in the pathogenesis of Wilms tumor\". Pediatric Blood & Cancer. 47 (3): 260–7. doi:10.1002/pbc.20891. PMC 1543666. PMID 16700047.",
+                    "<info> ^ Pritchard-Jones K, Fleming S, Davidson D, Bickmore W, Porteous D, Gosden C, Bard J, Buckler A, Pelletier J, Housman D (July 1990). \"The candidate Wilms' tumour gene is involved in genitourinary development\". Nature. 346 (6280): 194–7. Bibcode:1990Natur.346..194P. doi:10.1038/346194a0. PMID 2164159. S2CID 4350729.",
+                    "<info> ^ Mukherjee, Siddhartha, The Emperor of All Maladies, pg. 123",
+                    "<info> ^ Nephroblastoma in childhood: current possibilities for an early radiographic diagnosis, Italian Journal of Surgery 1969",
+                    "",
+                    "=== External links ===",
+                    "<info> GeneReviews/NCBI/NIH/UW entry on Wilms' Tumor Overview",
+                    "<info> Information from National Cancer Institute",
+                    "<info> Cancer.Net Wilms' Tumor – Childhood",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Wilms' tumor or Wilms tumor,[3] also known as nephroblastoma, is a cancer of the kidneys that typically occurs in children (rarely in adults),[4] and occurs most commonly as a renal tumor in child patients.[5][6] It is named after Max Wilms, the German surgeon (1867–1918) who first described it.[7]",
+                            "Approximately 650 cases are diagnosed in the U.S. annually.[2] The majority of cases occur in children with no associated genetic syndromes; however, a minority of children with Wilms' tumor have a congenital abnormality.[2]  It is highly responsive to treatment, with about 90 percent of children being cured.[2]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Typical signs and symptoms of Wilms' tumor include the following:[citation needed]",
+                            "<info> a painless, palpable abdominal mass",
+                            "<info> blood in the urine (in about 20% of cases)",
+                            "<info> high blood pressure in some cases (especially if synchronous or metachronous bilateral kidney involvement)"
+                        ]
+                    },
+                    "Pathogenesis": {
+                        "content": [
+                            "Wilms' tumor has many causes, which can broadly be categorized as syndromic and non-syndromic. Syndromic causes of Wilms' tumor occur as a result of alterations to genes such as the Wilms Tumor 1 (WT1) or Wilms Tumor 2 (WT2) genes, and the tumor presents with a group of other signs and symptoms.[9] Non-syndromic Wilms' tumor is not associated with other symptoms or pathologies.[9] Many, but not all, cases of Wilms' tumor develop from nephrogenic rests, which are fragments of tissue in or around the kidney that develop before birth and become cancerous after birth. In particular, cases of bilateral Wilms' tumor, as well as cases of Wilms' tumor derived from certain genetic syndromes such as Denys-Drash syndrome, are strongly associated with nephrogenic rests.[9] Most nephroblastomas are on one side of the body only and are found on both sides in less than 5% of cases, although people with Denys-Drash syndrome mostly have bilateral or multiple tumors.[10] They tend to be encapsulated and vascularized tumors that do not cross the midline of the abdomen. In cases of metastasis it is usually to the lung. A rupture of Wilms' tumor puts the patient at risk of bleeding and peritoneal dissemination of the tumor. In such cases, surgical intervention by a surgeon who is experienced in the removal of such a fragile tumor is imperative.[citation needed]",
+                            "Pathologically, a triphasic nephroblastoma comprises three elements:[11]",
+                            "Wilms' tumor is a malignant tumor containing metanephric blastema, stromal and epithelial derivatives. Characteristic is the presence of abortive tubules and glomeruli surrounded by a spindled cell stroma. The stroma may include striated muscle, cartilage, bone, fat tissue, and fibrous tissue. Dysfunction is caused when the tumor compresses the normal kidney parenchyma.[citation needed]",
+                            "The mesenchymal component may include cells showing rhabdomyoid differentiation or malignancy (rhabdomyosarcomatous Wilms).[citation needed]",
+                            "Wilms' tumors may be separated into two prognostic groups based on pathologic characteristics:[citation needed]",
+                            "<info> Favorable – Contains well developed components mentioned above",
+                            "<info> Anaplastic – Contains diffuse anaplasia (poorly developed cells)",
+                            "Mutations of the WT1 gene which is located on the short arm of chromosome 11 (11p13) are observed in approximately 20% of Wilms' tumors, the majority of them being inherited from the germline, while a minority are acquired somatic mutations.[12][13] In addition at least half of the Wilms' tumors with mutations in WT1 also carry acquired somatic mutations in CTNNB1, the gene encoding the proto-oncogene beta-catenin.[14] This latter gene is found on short arm of chromosome 3 (3p22.1).",
+                            "Most cases do not have mutations in any of these genes.[15]",
+                            "An association with H19 has been reported.[17] H19 is a long noncoding RNA located on the short arm of chromosome 11 (11p15.5)."
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "The majority of people with Wilms' tumor present with an asymptomatic abdominal mass which is noticed by a family member or healthcare professional.[18] Renal tumors can also be found during routine screening in children who have known predisposing clinical syndromes.[18] The diagnostic process includes taking a medical history, a physical exam, and a series of tests including blood, urine, and imaging tests.[19]",
+                            "Once Wilms' tumor is suspected, an ultrasound scan is usually done first to confirm the presence of an intrarenal mass.[19] A computed tomography scan or MRI scan can also be used for more detailed imaging. Finally, the diagnosis of Wilms' tumor is confirmed by a tissue sample.[20] In most cases, a biopsy is not done first because there is a risk of cancer cells spreading during the procedure. Treatment in North America is nephrectomy or in Europe chemotherapy followed by nephrectomy. A definitive diagnosis is obtained by pathological examination of the nephrectomy specimen.[20]",
+                            "Staging is a standard way to describe the extent of spread of Wilms' tumors[21] and to determine prognosis and treatments. Staging is based on anatomical findings and tumor cells pathology.[22][23] According to the extent of tumor tissue at the time of initial diagnosis, four stages are considered, with a fifth classification for bilateral involvement.[citation needed]",
+                            "In Stage I Wilms' tumor (43% of cases), all of the following criteria must be met: [citation needed]",
+                            "<info> Tumor is limited to the kidney and is completely excised .",
+                            "<info> The surface of the renal capsule is intact.",
+                            "<info> The tumor is not ruptured or biopsied (open or needle) prior to removal.",
+                            "<info> No involvement of extrarenal or renal sinus lymph-vascular spaces",
+                            "<info> No residual tumor apparent beyond the margins of excision.",
+                            "<info> Metastasis of tumor to lymph nodes not identified.",
+                            "In Stage II (23% of cases), 1 or more of the following criteria must be met: [citation needed]",
+                            "<info> Tumor extends beyond the kidney but is completely excised.",
+                            "<info> No residual tumor apparent at or beyond the margins of excision.",
+                            "<info> Any of the following conditions may also exist:\nTumor involvement of the blood vessels of the renal sinus and/or outside the renal parenchyma.\nExtensive tumor involvement of renal sinus soft tissue.",
+                            "<info> Tumor involvement of the blood vessels of the renal sinus and/or outside the renal parenchyma.",
+                            "<info> Extensive tumor involvement of renal sinus soft tissue.",
+                            "In Stage III (20% of cases), 1 or more of the following criteria must be met: [citation needed]",
+                            "<info> Tumor is present at surgical margins.",
+                            "<info> Tumor spillage involving peritoneal surfaces either before or during surgery, or transected tumor thrombus.\nThe tumor has been biopsied prior to removal or there is local spillage of tumor during surgery, confined to the flank.",
+                            "<info> The tumor has been biopsied prior to removal or there is local spillage of tumor during surgery, confined to the flank.",
+                            "Stage IV (10% of cases) Wilms' tumor is defined by the presence of hematogenous metastases (lung, liver, bone, or brain), or lymph node metastases outside the abdominopelvic region.[citation needed]",
+                            "5% of Wilms' tumor cases at the time of initial diagnosis are bilateral involvements, which pose unique challenges to treatment. An attempt should be made [according to whom?] to stage each side according to the above criteria (stage I to III) on the basis of extent of disease prior to biopsy. Bilateral Wilms' tumors are as a whole placed in Stage V."
+                        ]
+                    },
+                    "Treatment and prognosis": {
+                        "content": [
+                            "The overall 5-year survival is estimated to be approximately 90%,[24][25] but for individuals the prognosis is highly dependent on individual staging and treatment. Early removal tends to promote positive outcomes.",
+                            "Tumor-specific loss-of-heterozygosity (LOH) for chromosomes 1p and 16q identifies a subset of Wilms' tumor patients who have a significantly increased risk of relapse and death. LOH for these chromosomal regions can now be used as an independent prognostic factor together with disease stage to target intensity of treatment to risk of treatment failure.[26][27] Genome-wide copy number and LOH status can be assessed with virtual karyotyping of tumor cells (fresh or paraffin-embedded).[citation needed]",
+                            "Statistics may sometimes show more favorable outcomes for more aggressive stages than for less aggressive stages, which may be caused by more aggressive treatment and/or random variability in the study groups. Also, a stage V tumor is not necessarily worse than, but nevertheless comparable in prognosis to a stage IV tumor.[citation needed]",
+                            "In case of relapse of Wilms' tumor, the 4-year survival rate for children with a standard-risk has been estimated to be 80%.[29]"
+                        ]
+                    },
+                    "Epidemiology": {
+                        "content": [
+                            "Wilms tumor is the most common malignant renal tumor in children.[30] There are a number of rare genetic syndromes that have been linked to an increased risk of developing Wilms Tumor.[31] Screening guidelines vary between countries; however health care professionals are recommending regular ultrasound screening for people with associated genetic syndromes.[31]",
+                            "Wilms' tumor affects approximately one person per 10,000 worldwide before the age of 15 years.[32] People of African descent may have slightly higher rates of Wilms' tumor.[32] The peak age of Wilms' tumor is 3 to 4 years and most cases occur before the age of 10 years.[33] A genetic predisposition to Wilms' tumor in individuals with aniridia has been established, due to deletions in the p13 band on chromosome 11.[34]"
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "Sidney Farber, founder of Dana–Farber Cancer Institute, and his colleagues achieved the first remissions in Wilms' tumor in the 1950s. By employing the antibiotic actinomycin D in addition to surgery and radiation therapy, they boosted cure rates from 40 to 89 percent.[35]",
+                            "The use of computed tomography scan for the diagnosis of Wilms' tumor began in the early 1970s, thanks to the intuition of Mario Costici, an Italian physician. He discovered that in the direct radiograms and in the urographic images, determining elements for a differential diagnosis with the Wilms' tumor can be identified. This possibility was a premise for starting a treatment.[36]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> National Wilms Tumor Study Group (NWTS)",
+                            "<info> Virtual Karyotype for 1p and 16q LOH"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b \"Wilms' tumor\". Mayo Clinic. Retrieved March 10, 2022.",
+                            "<info> ^ a b c d \"Wilms Tumor and Other Childhood Kidney Tumors Treatment\". National Cancer Institute. Retrieved 2018-11-12.",
+                            "<info> ^ \"Wilms tumor: MedlinePlus Genetics\". medlineplus.gov. Retrieved 11 June 2022.",
+                            "<info> ^ EBSCO database verified by URAC; accessed from Mount Sinai Hospital, New York",
+                            "<info> ^ Fitski, Matthijs; van de Ven, Cornelis P.; Hulsker, Caroline C. C.; Bökkerink, Guus M. J.; Terwisscha van Scheltinga, Cecilia E. J.; van den Heuvel-Eibrink, Marry M.; Mavinkurve-Groothuis, Annelies M. C.; van Grotel, Martine; Wijnen, Marc H. W. A.; Klijn, Aart J.; van der Steeg, Alida F. W. (2022-10-01). \"Patient-specific hydrogel phantoms for the preoperative simulation of nephron-sparing surgery in Wilms' tumor patients: A feasibility study\". Annals of 3D Printed Medicine. 8 100077. doi:10.1016/j.stlm.2022.100077. ISSN 2666-9641. S2CID 251870073.",
+                            "<info> ^ van den Heuvel-Eibrink, Marry M.; Hol, Janna A.; Pritchard-Jones, Kathy; van Tinteren, Harm; Furtwängler, Rhoikos; Verschuur, Arnauld C.; Vujanic, Gordan M.; Leuschner, Ivo; Brok, Jesper; Rübe, Christian; Smets, Anne M.; Janssens, Geert O.; Godzinski, Jan; Ramírez-Villar, Gema L.; de Camargo, Beatriz (2017-12-01). \"Rationale for the treatment of Wilms tumour in the UMBRELLA SIOP–RTSG 2016 protocol\". Nature Reviews Urology. 14 (12): 743–752. doi:10.1038/nrurol.2017.163. hdl:10668/18902. ISSN 1759-4820. PMID 29089605. S2CID 9418050.",
+                            "<info> ^ WhoNamedIt.com: Max Wilms",
+                            "<info> ^ Erginel B, Vural S, Akın M, Karadağ CA, Sever N, Yıldız A. et al (2014) Wilms' tumor: a 24-year retrospective study from a single center. Pediatr Hematol Oncol 31: 409–414",
+                            "<info> ^ a b c PDQ Pediatric Treatment Editorial Board (2002), \"Wilms Tumor and Other Childhood Kidney Tumors Treatment (PDQ®): Health Professional Version\", PDQ Cancer Information Summaries, National Cancer Institute (US), PMID 26389282, retrieved 2018-11-26",
+                            "<info> ^ Guaragna MS, Soardi FC, Assumpção JG, Zambaldi L, Cardinalli IA, Yunes JA, de Mello MP, Brandalise SR, Aguiar S (August 2010). \"The novel WT1 gene mutation p.H377N associated to Denys-Drash syndrome\". Journal of Pediatric Hematology/Oncology. 32 (6): 486–8. doi:10.1097/MPH.0b013e3181e5e20d. PMID 20562648. S2CID 205860918.",
+                            "<info> ^ Popov, Sergey D.; Sebire, Neil J.; Vujanic, Gordan M. (2016). Wilms' Tumour – Histology and Differential Diagnosis. pp. 3–21. doi:10.15586/codon.wt.2016.ch1. ISBN 978-0-9944381-1-9. PMID 27512769. S2CID 78834136.",
+                            "<info> ^ Call KM, Glaser T, Ito CY, Buckler AJ, Pelletier J, Haber DA, Rose EA, Kral A, Yeger H, Lewis WH (February 1990). \"Isolation and characterization of a zinc finger polypeptide gene at the human chromosome 11 Wilms' tumor locus\". Cell. 60 (3): 509–20. doi:10.1016/0092-8674(90)90601-A. PMID 2154335. S2CID 29092372.",
+                            "<info> ^ Huff V (October 1998). \"Wilms tumor genetics\". American Journal of Medical Genetics. 79 (4): 260–7. doi:10.1002/(SICI)1096-8628(19981002)79:4<260::AID-AJMG6>3.0.CO;2-Q. PMID 9781905.",
+                            "<info> ^ Maiti S, Alam R, Amos CI, Huff V (November 2000). \"Frequent association of beta-catenin and WT1 mutations in Wilms tumors\". Cancer Research. 60 (22): 6288–92. PMID 11103785.",
+                            "<info> ^ Ruteshouser EC, Robinson SM, Huff V (June 2008). \"Wilms tumor genetics: mutations in WT1, WTX, and CTNNB1 account for only about one-third of tumors\". Genes, Chromosomes & Cancer. 47 (6): 461–70. doi:10.1002/gcc.20553. PMC 4332772. PMID 18311776.",
+                            "<info> ^ a b c Dome JS, Graf N, Geller JI, Fernandez CV, Mullen EA, Spreafico F, Van den Heuvel-Eibrink M, Pritchard-Jones K (September 2015). \"Advances in Wilms Tumor Treatment and Biology: Progress Through International Collaboration\". Journal of Clinical Oncology. 33 (27): 2999–3007. doi:10.1200/JCO.2015.62.1888. PMC 4567702. PMID 26304882.",
+                            "<info> ^ Coorens THH, Treger TD, Al-Saadi R, Moore L, Tran MGB, Mitchell TJ, Tugnait S, Thevanesan C, Young MD, Oliver TRW, Oostveen M, Collord G, Tarpey PS, Cagan A, Hooks Y, Brougham M, Reynolds BC, Barone G, Anderson J, Jorgensen M, Burke GAA, Visser J, Nicholson JC, Smeulders N, Mushtaq I, Stewart GD, Campbell PJ, Wedge DC, Martincorena I, Rampling D, Hook L, Warren AY, Coleman N, Chowdhury T, Sebire N, Drost J, Saeb-Parsy K, Stratton MR, Straathof K, Pritchard-Jones K, Behjati S (2019) Embryonal precursors of Wilms tumor. Science 366(6470):1247-1251",
+                            "<info> ^ a b PDQ Pediatric Treatment Editorial Board (2002). Wilms Tumor and Other Childhood Kidney Tumors Treatment (PDQ®): Health Professional Version. National Cancer Institute (US). PMID 26389282. Retrieved 2018-11-12. {{cite book}}: |work= ignored (help)",
+                            "<info> ^ a b \"Presentation, diagnosis, and staging of Wilms tumor\".",
+                            "<info> ^ a b Szychot E, Apps J, Pritchard-Jones K (January 2014). \"Wilms' tumor: biology, diagnosis and treatment\". Translational Pediatrics. 3 (1): 12–24. doi:10.3978/j.issn.2224-4336.2014.01.09. PMC 4728859. PMID 26835318.",
+                            "<info> ^ \"How is Wilms tumor staged?\". www.cancer.org. Archived from the original on 2015-11-17. Retrieved 2015-11-15.",
+                            "<info> ^ \"Wilms Tumor - Childhood - Stages\". Cancer.Net. 25 June 2012. Retrieved 2015-11-15.",
+                            "<info> ^ \"Treatment by type and stage of Wilms tumor\". www.cancer.org. Archived from the original on 2015-11-17. Retrieved 2015-11-13.",
+                            "<info> ^ Stewénius Y, Jin Y, Øra I, de Kraker J, Bras J, Frigyesi A, Alumets J, Sandstedt B, Meeker AK, Gisselsson D (November 2007). \"Defective chromosome segregation and telomere dysfunction in aggressive Wilms' tumors\". Clinical Cancer Research. 13 (22 Pt 1): 6593–602. doi:10.1158/1078-0432.CCR-07-1081. PMID 18006759. S2CID 17036977.",
+                            "<info> ^ Tournade MF, Com-Nougué C, de Kraker J, Ludwig R, Rey A, Burgers JM, Sandstedt B, Godzinski J, Carli M, Potter R, Zucker JM (January 2001). \"Optimal duration of preoperative therapy in unilateral and nonmetastatic Wilms' tumor in children older than 6 months: results of the Ninth International Society of Pediatric Oncology Wilms' Tumor Trial and Study\". Journal of Clinical Oncology. 19 (2): 488–500. doi:10.1200/jco.2001.19.2.488. PMID 11208843.",
+                            "<info> ^ Messahel B, Williams R, Ridolfi A, A'hern R, Warren W, Tinworth L, Hobson R, Al-Saadi R, Whyman G, Brundler MA, Kelsey A, Sebire N, Jones C, Vujanic G, Pritchard-Jones K (March 2009). \"Allele loss at 16q defines poorer prognosis Wilms tumour irrespective of treatment approach in the UKW1-3 clinical trials: a Children's Cancer and Leukaemia Group (CCLG) Study\". European Journal of Cancer. 45 (5): 819–26. doi:10.1016/j.ejca.2009.01.005. PMID 19231157.",
+                            "<info> ^ Grundy PE, Breslow NE, Li S, Perlman E, Beckwith JB, Ritchey ML, Shamberger RC, Haase GM, D'Angio GJ, Donaldson M, Coppes MJ, Malogolowkin M, Shearer P, Thomas PR, Macklis R, Tomlinson G, Huff V, Green DM (October 2005). \"Loss of heterozygosity for chromosomes 1p and 16q is an adverse prognostic factor in favorable-histology Wilms tumor: a report from the National Wilms Tumor Study Group\". Journal of Clinical Oncology. 23 (29): 7312–21. doi:10.1200/JCO.2005.01.2799. PMID 16129848.",
+                            "<info> ^ a b c d e f g h i j Unless otherwise specified in boxes, then reference is: Treatment of Wilms Tumor at National Cancer Institute. Last Modified: 03/29/2012",
+                            "<info> ^ Spreafico F, Pritchard Jones K, Malogolowkin MH, Bergeron C, Hale J, de Kraker J, Dallorso S, Acha T, de Camargo B, Dome JS, Graf N (December 2009). \"Treatment of relapsed Wilms tumors: lessons learned\". Expert Review of Anticancer Therapy. 9 (12): 1807–15. doi:10.1586/era.09.159. PMID 19954292. S2CID 207212698.",
+                            "<info> ^ Sonn G, Shortliffe LM (October 2008). \"Management of Wilms tumor: current standard of care\". Nature Clinical Practice. Urology. 5 (10): 551–60. doi:10.1038/ncpuro1218. PMID 18836464. S2CID 23599363.",
+                            "<info> ^ a b Kalish JM, Doros L, Helman LJ, Hennekam RC, Kuiper RP, Maas SM, Maher ER, Nichols KE, Plon SE, Porter CC, Rednam S, Schultz KA, States LJ, Tomlinson GE, Zelley K, Druley TE (July 2017). \"Surveillance Recommendations for Children with Overgrowth Syndromes and Predisposition to Wilms Tumors and Hepatoblastoma\". Clinical Cancer Research. 23 (13): e115–e122. doi:10.1158/1078-0432.CCR-17-0710. PMC 5538793. PMID 28674120.",
+                            "<info> ^ a b Breslow N, Olshan A, Beckwith JB, Green DM (1993). \"Epidemiology of Wilms tumor\". Medical and Pediatric Oncology. 21 (3): 172–81. doi:10.1002/mpo.2950210305. PMID 7680412.",
+                            "<info> ^ Breslow NE, Beckwith JB, Perlman EJ, Reeve AE (September 2006). \"Age distributions, birth weights, nephrogenic rests, and heterogeneity in the pathogenesis of Wilms tumor\". Pediatric Blood & Cancer. 47 (3): 260–7. doi:10.1002/pbc.20891. PMC 1543666. PMID 16700047.",
+                            "<info> ^ Pritchard-Jones K, Fleming S, Davidson D, Bickmore W, Porteous D, Gosden C, Bard J, Buckler A, Pelletier J, Housman D (July 1990). \"The candidate Wilms' tumour gene is involved in genitourinary development\". Nature. 346 (6280): 194–7. Bibcode:1990Natur.346..194P. doi:10.1038/346194a0. PMID 2164159. S2CID 4350729.",
+                            "<info> ^ Mukherjee, Siddhartha, The Emperor of All Maladies, pg. 123",
+                            "<info> ^ Nephroblastoma in childhood: current possibilities for an early radiographic diagnosis, Italian Journal of Surgery 1969"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> GeneReviews/NCBI/NIH/UW entry on Wilms' Tumor Overview",
+                            "<info> Information from National Cancer Institute",
+                            "<info> Cancer.Net Wilms' Tumor – Childhood"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

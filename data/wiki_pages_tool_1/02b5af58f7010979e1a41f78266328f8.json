@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/prostate_cancer": {
+                "title": "Prostate cancer",
+                "url": "https://en.wikipedia.org/wiki/prostate_cancer",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/swelling_index": {
+                "title": "Swelling index",
+                "url": "https://en.wikipedia.org/wiki/swelling_index",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Swelling index may refer to the following material parameters that quantify volume change:",
+                    "<info> Crucible swelling index, also known as free swelling index, in coal assay",
+                    "<info> Swelling capacity, the amount of a liquid that can be absorbed by a polymer",
+                    "<info> Shrink–swell capacity in soil mechanics",
+                    "<info> Unload-reload constant (κ) in critical state soil mechanics",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Swelling index may refer to the following material parameters that quantify volume change:",
+                            "<info> Crucible swelling index, also known as free swelling index, in coal assay",
+                            "<info> Swelling capacity, the amount of a liquid that can be absorbed by a polymer",
+                            "<info> Shrink–swell capacity in soil mechanics",
+                            "<info> Unload-reload constant (κ) in critical state soil mechanics"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

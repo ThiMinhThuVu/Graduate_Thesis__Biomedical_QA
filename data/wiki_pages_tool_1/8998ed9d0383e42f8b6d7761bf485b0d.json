@@ -1,0 +1,89 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/iontophoresis": {
+                "title": "Iontophoresis",
+                "url": "https://en.wikipedia.org/wiki/iontophoresis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Iontophoresis is a process of transdermal drug delivery by use of a voltage gradient on the skin.[1][2] Molecules are transported across the stratum corneum by electrophoresis and electroosmosis and the electric field can also increase the permeability of the skin.[3][4] These phenomena, directly and indirectly, constitute active transport of matter due to an applied electric current. The transport is measured in units of chemical flux, commonly μmol/(cm2×hour). \nIontophoresis has experimental, therapeutic and diagnostic applications.",
+                    "",
+                    "=== Uses ===",
+                    "Iontophoresis is useful in laboratory experiments, especially in neuropharmacology.[5] Transmitter molecules naturally pass signals between neurons. By microelectrophoretic techniques, including microiontophoresis, neurotransmitters and other chemical agents can be artificially administered very near living and naturally functioning neurons, the activity of which can be simultaneously recorded. This is used to elucidate their pharmacological properties and natural roles.[6]",
+                    "Therapeutically, electromotive drug administration (EMDA) delivers a medicine or other chemical through the skin.[7] In a manner of speaking, it is an injection without a needle, and may be described as non-invasive. It is different from dermal patches, which do not rely on an electric field. It drives a charged substance, usually a medication or bioactive agent, transdermally by repulsive electromotive force, through the skin. A small electric current is applied to an iontophoretic chamber placed on the skin, containing a charged active agent and its solvent vehicle. Another chamber or a skin electrode carries the return current. One or two chambers are filled with a solution containing an active ingredient and its solvent vehicle. The positively charged chamber, called the anode, will repel a positively charged chemical species, whereas the negatively charged chamber, called the cathode, will repel a negatively charged species into the skin.[8]",
+                    "It is used to treat some types of palmar-plantar hyperhidrosis.[9] In the treatment of hyperhidrosis, tap water is often the chosen solution for mild and medium forms. In very serious cases of hyperhidrosis, a solution containing glycopyrronium bromide or glycopyrrolate, a cholinergic inhibitor, can be used.[10][11]",
+                    "Iontophoresis of acetylcholine is used in research as a way to test the health of the endothelium by stimulating endothelium-dependent generation of nitric oxide and subsequent microvascular vasodilation. Acetylcholine is positively charged and is therefore placed in the anode chamber.",
+                    "Pilocarpine iontophoresis is often used to stimulate sweat secretion, as part of cystic fibrosis diagnosis.[12]",
+                    "Reverse iontophoresis is a technique by which molecules are removed from within the body for detection. The negative charge of the skin at buffered pH causes it to be permselective to cations such as sodium and potassium ions, allowing iontophoresis which causes electroosmosis, solvent flow towards the anode. Electroosmosis then causes electrophoresis, by which neutral molecules, including glucose, are transported across the skin. This is currently being used in such devices as the GlucoWatch, which allows for blood glucose detection across skin layers.",
+                    "",
+                    "=== See also ===",
+                    "<info> Fick's law of diffusion",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Guy, Richard H.; Kalia, Yogeshvar N.; Delgado-Charro, M.Begoña; Merino, Virginia; López, Alicia; Marro, Diego (2000). \"Iontophoresis: electrorepulsion and electroosmosis\". Journal of Controlled Release. 64 (1–3): 129–132. doi:10.1016/S0168-3659(99)00132-7. ISSN 0168-3659. PMID 10640651.",
+                    "<info> ^ Reinauer, S.; Neusser, A.; Schauf, G.; Holzle, E. (1993). \"Iontophoresis with alternating current and direct current offset (AC/DC iontophoresis): a new approach for the treatment of hyperhidrosis\". British Journal of Dermatology. 129 (2): 166–169. doi:10.1111/j.1365-2133.1993.tb03521.x. ISSN 0007-0963. PMID 7654577. S2CID 9992535.",
+                    "<info> ^ Prausnitz, Mark R; Langer, Robert (2008). \"Transdermal drug delivery\". Nature Biotechnology. 26 (11): 1261–1268. doi:10.1038/nbt.1504. ISSN 1087-0156. PMC 2700785. PMID 18997767.",
+                    "<info> ^ Pikal, Michael J. (2001). \"The role of electroosmotic flow in transdermal iontophoresis\". Advanced Drug Delivery Reviews. 46 (1–3): 281–305. doi:10.1016/S0169-409X(00)00138-1. ISSN 0169-409X. PMID 11259844.",
+                    "<info> ^ Bryne, John. \"Iontophoresis of ACh\". University of Texas Medical Center. Archived from the original on 2017-12-01. Retrieved 2013-07-30.",
+                    "<info> ^ Curtis, D.R, (1964). Microelectrophoresis, in Physical Techniques in Biological Research, vol. V, ed. W.L. Nastuk, Academic Press, New York, pp. 144–190.",
+                    "<info> ^ Dhote, V; Bhatnagar, P; Mishra, P. K.; Mahajan, S. C.; Mishra, D. K. (2012). \"Iontophoresis: A Potential Emergence of a Transdermal Drug Delivery System\". Scientia Pharmaceutica. 80 (1): 1–28. doi:10.3797/scipharm.1108-20. PMC 3293348. PMID 22396901.",
+                    "<info> ^ \"Iontophoresis\". Electrotherapy on the Web. Tim Watson. Archived from the original on December 10, 2016. Retrieved November 4, 2016.",
+                    "<info> ^ Caufield, T.G. (2013). Iontophoresis to Treat Hyperhydrosis. Tim Caufield PhD LLC.[page needed]",
+                    "<info> ^ Walling, Hobart W.; Swick, Brian L. (2011). \"Treatment Options for Hyperhidrosis\". American Journal of Clinical Dermatology. 12 (5): 285–95. doi:10.2165/11587870-000000000-00000. PMID 21714579. S2CID 17897689.",
+                    "<info> ^ Solish, Nowell; Bertucci, Vince; Dansereau, Alain; Hong, H. Chih-HO; Lynde, Charles; Lupin, Mark; Smith, Kevin C.; Storwick, Greg (2007). \"A Comprehensive Approach to the Recognition, Diagnosis, and Severity-Based Treatment of Focal Hyperhidrosis: Recommendations of the Canadian Hyperhidrosis Advisory Committee\". Dermatologic Surgery. 33 (8): 908–23. doi:10.1111/j.1524-4725.2007.33192.x. PMID 17661933. S2CID 3791845.",
+                    "<info> ^ Sam, Amir H.; James T.H. Teo (2010). Rapid Medicine. Wiley-Blackwell. ISBN 978-1-4051-8323-9.[page needed]",
+                    "",
+                    "=== External links ===",
+                    "<info> Episode of TV series Quincy ME, featuring the use of iontophoresis to commit a murder Archived 2008-09-27 at the Wayback Machine",
+                    "<info> Iontophoresis Protocols for use in Physical Therapy and Sports Medicine",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Iontophoresis is a process of transdermal drug delivery by use of a voltage gradient on the skin.[1][2] Molecules are transported across the stratum corneum by electrophoresis and electroosmosis and the electric field can also increase the permeability of the skin.[3][4] These phenomena, directly and indirectly, constitute active transport of matter due to an applied electric current. The transport is measured in units of chemical flux, commonly μmol/(cm2×hour). \nIontophoresis has experimental, therapeutic and diagnostic applications."
+                        ]
+                    },
+                    "Uses": {
+                        "content": [
+                            "Iontophoresis is useful in laboratory experiments, especially in neuropharmacology.[5] Transmitter molecules naturally pass signals between neurons. By microelectrophoretic techniques, including microiontophoresis, neurotransmitters and other chemical agents can be artificially administered very near living and naturally functioning neurons, the activity of which can be simultaneously recorded. This is used to elucidate their pharmacological properties and natural roles.[6]",
+                            "Therapeutically, electromotive drug administration (EMDA) delivers a medicine or other chemical through the skin.[7] In a manner of speaking, it is an injection without a needle, and may be described as non-invasive. It is different from dermal patches, which do not rely on an electric field. It drives a charged substance, usually a medication or bioactive agent, transdermally by repulsive electromotive force, through the skin. A small electric current is applied to an iontophoretic chamber placed on the skin, containing a charged active agent and its solvent vehicle. Another chamber or a skin electrode carries the return current. One or two chambers are filled with a solution containing an active ingredient and its solvent vehicle. The positively charged chamber, called the anode, will repel a positively charged chemical species, whereas the negatively charged chamber, called the cathode, will repel a negatively charged species into the skin.[8]",
+                            "It is used to treat some types of palmar-plantar hyperhidrosis.[9] In the treatment of hyperhidrosis, tap water is often the chosen solution for mild and medium forms. In very serious cases of hyperhidrosis, a solution containing glycopyrronium bromide or glycopyrrolate, a cholinergic inhibitor, can be used.[10][11]",
+                            "Iontophoresis of acetylcholine is used in research as a way to test the health of the endothelium by stimulating endothelium-dependent generation of nitric oxide and subsequent microvascular vasodilation. Acetylcholine is positively charged and is therefore placed in the anode chamber.",
+                            "Pilocarpine iontophoresis is often used to stimulate sweat secretion, as part of cystic fibrosis diagnosis.[12]",
+                            "Reverse iontophoresis is a technique by which molecules are removed from within the body for detection. The negative charge of the skin at buffered pH causes it to be permselective to cations such as sodium and potassium ions, allowing iontophoresis which causes electroosmosis, solvent flow towards the anode. Electroosmosis then causes electrophoresis, by which neutral molecules, including glucose, are transported across the skin. This is currently being used in such devices as the GlucoWatch, which allows for blood glucose detection across skin layers."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Fick's law of diffusion"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Guy, Richard H.; Kalia, Yogeshvar N.; Delgado-Charro, M.Begoña; Merino, Virginia; López, Alicia; Marro, Diego (2000). \"Iontophoresis: electrorepulsion and electroosmosis\". Journal of Controlled Release. 64 (1–3): 129–132. doi:10.1016/S0168-3659(99)00132-7. ISSN 0168-3659. PMID 10640651.",
+                            "<info> ^ Reinauer, S.; Neusser, A.; Schauf, G.; Holzle, E. (1993). \"Iontophoresis with alternating current and direct current offset (AC/DC iontophoresis): a new approach for the treatment of hyperhidrosis\". British Journal of Dermatology. 129 (2): 166–169. doi:10.1111/j.1365-2133.1993.tb03521.x. ISSN 0007-0963. PMID 7654577. S2CID 9992535.",
+                            "<info> ^ Prausnitz, Mark R; Langer, Robert (2008). \"Transdermal drug delivery\". Nature Biotechnology. 26 (11): 1261–1268. doi:10.1038/nbt.1504. ISSN 1087-0156. PMC 2700785. PMID 18997767.",
+                            "<info> ^ Pikal, Michael J. (2001). \"The role of electroosmotic flow in transdermal iontophoresis\". Advanced Drug Delivery Reviews. 46 (1–3): 281–305. doi:10.1016/S0169-409X(00)00138-1. ISSN 0169-409X. PMID 11259844.",
+                            "<info> ^ Bryne, John. \"Iontophoresis of ACh\". University of Texas Medical Center. Archived from the original on 2017-12-01. Retrieved 2013-07-30.",
+                            "<info> ^ Curtis, D.R, (1964). Microelectrophoresis, in Physical Techniques in Biological Research, vol. V, ed. W.L. Nastuk, Academic Press, New York, pp. 144–190.",
+                            "<info> ^ Dhote, V; Bhatnagar, P; Mishra, P. K.; Mahajan, S. C.; Mishra, D. K. (2012). \"Iontophoresis: A Potential Emergence of a Transdermal Drug Delivery System\". Scientia Pharmaceutica. 80 (1): 1–28. doi:10.3797/scipharm.1108-20. PMC 3293348. PMID 22396901.",
+                            "<info> ^ \"Iontophoresis\". Electrotherapy on the Web. Tim Watson. Archived from the original on December 10, 2016. Retrieved November 4, 2016.",
+                            "<info> ^ Caufield, T.G. (2013). Iontophoresis to Treat Hyperhydrosis. Tim Caufield PhD LLC.[page needed]",
+                            "<info> ^ Walling, Hobart W.; Swick, Brian L. (2011). \"Treatment Options for Hyperhidrosis\". American Journal of Clinical Dermatology. 12 (5): 285–95. doi:10.2165/11587870-000000000-00000. PMID 21714579. S2CID 17897689.",
+                            "<info> ^ Solish, Nowell; Bertucci, Vince; Dansereau, Alain; Hong, H. Chih-HO; Lynde, Charles; Lupin, Mark; Smith, Kevin C.; Storwick, Greg (2007). \"A Comprehensive Approach to the Recognition, Diagnosis, and Severity-Based Treatment of Focal Hyperhidrosis: Recommendations of the Canadian Hyperhidrosis Advisory Committee\". Dermatologic Surgery. 33 (8): 908–23. doi:10.1111/j.1524-4725.2007.33192.x. PMID 17661933. S2CID 3791845.",
+                            "<info> ^ Sam, Amir H.; James T.H. Teo (2010). Rapid Medicine. Wiley-Blackwell. ISBN 978-1-4051-8323-9.[page needed]"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Episode of TV series Quincy ME, featuring the use of iontophoresis to commit a murder Archived 2008-09-27 at the Wayback Machine",
+                            "<info> Iontophoresis Protocols for use in Physical Therapy and Sports Medicine"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/malignant_rhabdoid_tumour": {
+                "title": "Malignant rhabdoid tumour",
+                "url": "https://en.wikipedia.org/wiki/malignant_rhabdoid_tumour",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Malignant rhabdoid tumour (MRT) is a very aggressive form of tumour originally described as a variant of Wilms' tumour, which is primarily a kidney tumour that occurs mainly in children.",
+                    "MRT was first described as a variant of Wilms' tumour of the kidney in 1978.[1] MRTs are a rare and highly malignant childhood neoplasm. Rhabdoid tumours outside the kidney were later reported in many tissues including the liver, soft tissue, and the central nervous system (CNS).  Several cases of primary intracranial MRT have been reported since its recognition as a separate entity in 1978. The term rhabdoid was used due to its similarity with rhabdomyosarcoma under the light microscope. The exact pathogenesis of MRT is unknown.",
+                    "The cerebellum is the most common location for primary intracerebral MRT (i.e., atypical teratoid rhabdoid tumor). Biggs et al. were first to report a primary intracranial MRT around 1987.[2]",
+                    "Although the cell of origin is not known, cytogenetic studies have suggested a common genetic basis for rhabdoid tumours regardless of location with abnormalities in chromosome 22 commonly occurring.",
+                    "",
+                    "=== Genetics ===",
+                    "There have been reported cases of a child having both atypical teratoid rhabdoid tumours in the brain as well as rhabdoid tumours of the kidney.  Weeks and associates reported on 111 renal rhabdoid cases of which 13.5% also had a central nervous system malignancy.  It has been hypothesized that a germline INI mutation may predispose a child to these tumours.  There have been some references in the literature alluding to a new diagnosis called rhabdoid predisposition syndrome related to the gene hSNF5/INI1.",
+                    "These tumours have been associated with mutations in the SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily B member 1 (SMARCB1) located on the long arm of chromosome 22 (22q11) and transcription activator BRG1/ATP-dependent chromatin remodeler (SMARCA4) located on the short arm of chromosome 19 (19p13.2).[3]",
+                    "Considerable debate has been focused on whether atypical teratoid rhabdoid tumors are the same as rhabdoid tumours of the kidney (i.e., just extrarenal MRTs).[citation needed]",
+                    "Recognition that both CNS atypical teratoid/rhabdoid tumours and MRTs have deletions of the INI1 gene in chromosome 22 indicates that rhabdoid tumours of the kidney and brain are identical or closely related entities, although the CNS variant tends to have its mutations on Taxon [medical citation needed] 9 and MRTs elsewhere. This observation is not surprising because rhabdoid tumours at both locations possess similar histologic, clinical, and demographic features. Moreover, 10-15% of patients with MRTs have synchronous or metachronous brain tumours, many of which are second primary malignant rhabdoid tumours. This similarity excludes composite rhabdoid tumours, which occur mainly in adults.[citation needed]",
+                    "",
+                    "=== Diagnosis ===",
+                    "The histologic diagnosis of malignant rhabdoid tumour depends on identification of characteristic rhabdoid cells—large cells with eccentrically located nuclei and abundant, eosinophilic cytoplasm. However, the histology can be heterogeneous and the diagnosis of MRT can often be difficult. Misclassifications can occur.",
+                    "In MRTs, the INI1 gene (SMARCB1) on chromosome 22q functions as a classic tumour suppressor gene. Inactivation of INI1 can occur via deletion, mutation, or acquired uniparental disomy (UPD).[4]",
+                    "In a recent study,[4] Single nucleotide polymorphism array karyotyping identified deletions or loss of heterozygosity (LOH) of 22q in 49/51 rhabdoid tumours. Of these, 14 were copy neutral LOH (or acquired UPD), which is detectable by SNP array karyotyping, but not by FISH, cytogenetics, or array CGH. MLPA detected a single exon homozygous deletion in one sample that was below the resolution of the SNP array. SNP array karyotyping can be used to distinguish, for example, a medulloblastoma with an isochromosome 17q from a primary rhabdoid tumour with loss of 22q11.2. When indicated, molecular analysis of INI1 using MLPA and direct sequencing may then be employed. Once the tumour-associated changes are found, an analysis of germline DNA from the patient and the parents can be done to rule out an inherited or de novo germline mutation or deletion of INI1, so that appropriate recurrence risk assessments can be made.[4]",
+                    "",
+                    "=== Prognosis ===",
+                    "Regardless of location, all rhabdoid tumours are highly aggressive, have a poor prognosis, and tend to occur in children less than two years of age.",
+                    "",
+                    "=== See also ===",
+                    "<info> Atypical teratoid rhabdoid tumour",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Beckwith JB, Palmer NF (1978). \"Histopathology and prognosis of Wilms tumors: results from the First National Wilms' Tumor Study\". Cancer. 41 (5): 1937–48. doi:10.1002/1097-0142(197805)41:5<1937::AID-CNCR2820410538>3.0.CO;2-U. PMID 206343.",
+                    "<info> ^ PJ Biggs; Garen PD; Powers JM; Garvin AJ (1987). \"Malignant rhabdoid tumor of the central nervous system\". Human Pathology. 18 (4): 332–337. doi:10.1016/S0046-8177(87)80161-2. PMID 3030922.",
+                    "<info> ^ Finetti MA, Grabovska Y, Bailey S, Williamson D (2020) Translational genomics of malignant rhabdoid tumours: Current impact and future possibilities. Semin Cancer Biol",
+                    "<info> ^ a b c Jackson EM, Sievert AJ, Gai X, et al. (March 2009). \"Genomic analysis using high-density single nucleotide polymorphism-based oligonucleotide arrays and multiplex ligation-dependent probe amplification provides a comprehensive analysis of INI1/SMARCB1 in malignant rhabdoid tumors\". Clin. Cancer Res. 15 (6): 1923–30. doi:10.1158/1078-0432.CCR-08-2091. PMC 2668138. PMID 19276269.",
+                    "",
+                    "=== Literature ===",
+                    "<info> Donner LR, Wainwright LM, Zhang F, Biegel JA (2007). \"Mutation of the INI1 gene in composite rhabdoid tumor of the endometrium\". Hum. Pathol. 38 (6): 935–9. doi:10.1016/j.humpath.2006.12.003. PMC 1963314. PMID 17376508.",
+                    "<info> Jeffrey S Dome, MD; D Ashley Hill, MD (January 8, 2007). \"Malignant Rhabdoid Tumor\". EMedicine from WebMD.",
+                    "<info> Perry A, Fuller CE, Judkins AR, Dehner LP, Biegel JA (2005). \"INI1 expression is retained in composite rhabdoid tumors, including rhabdoid meningiomas\". Mod. Pathol. 18 (7): 951–8. doi:10.1038/modpathol.3800375. PMID 15761491.",
+                    "<info> Biegel JA, Fogelgren B, Wainwright LM, Zhou JY, Bevan H, Rorke LB (2000). \"Germline INI1 mutation in a patient with a central nervous system atypical teratoid tumor and renal rhabdoid tumor\" (abstract page). Genes Chromosomes Cancer. 28 (1): 31–7. doi:10.1002/(SICI)1098-2264(200005)28:1<31::AID-GCC4>3.0.CO;2-Y. PMID 10738300. S2CID 21250260.",
+                    "<info> Huret J, Sevenet N (2000). \"Rhabdoid predispoition syndrome\". Atlas of Genetics and Cytogenetics in Oncology and Haematology (1): 31–7. Archived from the original on 2005-12-26.",
+                    "<info> Weeks DA, Beckwith JB, Mierau GW, Luckey DW (1989). \"Rhabdoid tumor of kidney. A report of 111 cases from the National Wilms' Tumor Study Pathology Center\". American Journal of Surgical Pathology. 13 (6): 439–58. doi:10.1097/00000478-198906000-00001. PMID 2543225. S2CID 19589843.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Malignant rhabdoid tumour (MRT) is a very aggressive form of tumour originally described as a variant of Wilms' tumour, which is primarily a kidney tumour that occurs mainly in children.",
+                            "MRT was first described as a variant of Wilms' tumour of the kidney in 1978.[1] MRTs are a rare and highly malignant childhood neoplasm. Rhabdoid tumours outside the kidney were later reported in many tissues including the liver, soft tissue, and the central nervous system (CNS).  Several cases of primary intracranial MRT have been reported since its recognition as a separate entity in 1978. The term rhabdoid was used due to its similarity with rhabdomyosarcoma under the light microscope. The exact pathogenesis of MRT is unknown.",
+                            "The cerebellum is the most common location for primary intracerebral MRT (i.e., atypical teratoid rhabdoid tumor). Biggs et al. were first to report a primary intracranial MRT around 1987.[2]",
+                            "Although the cell of origin is not known, cytogenetic studies have suggested a common genetic basis for rhabdoid tumours regardless of location with abnormalities in chromosome 22 commonly occurring."
+                        ]
+                    },
+                    "Genetics": {
+                        "content": [
+                            "There have been reported cases of a child having both atypical teratoid rhabdoid tumours in the brain as well as rhabdoid tumours of the kidney.  Weeks and associates reported on 111 renal rhabdoid cases of which 13.5% also had a central nervous system malignancy.  It has been hypothesized that a germline INI mutation may predispose a child to these tumours.  There have been some references in the literature alluding to a new diagnosis called rhabdoid predisposition syndrome related to the gene hSNF5/INI1.",
+                            "These tumours have been associated with mutations in the SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily B member 1 (SMARCB1) located on the long arm of chromosome 22 (22q11) and transcription activator BRG1/ATP-dependent chromatin remodeler (SMARCA4) located on the short arm of chromosome 19 (19p13.2).[3]",
+                            "Considerable debate has been focused on whether atypical teratoid rhabdoid tumors are the same as rhabdoid tumours of the kidney (i.e., just extrarenal MRTs).[citation needed]",
+                            "Recognition that both CNS atypical teratoid/rhabdoid tumours and MRTs have deletions of the INI1 gene in chromosome 22 indicates that rhabdoid tumours of the kidney and brain are identical or closely related entities, although the CNS variant tends to have its mutations on Taxon [medical citation needed] 9 and MRTs elsewhere. This observation is not surprising because rhabdoid tumours at both locations possess similar histologic, clinical, and demographic features. Moreover, 10-15% of patients with MRTs have synchronous or metachronous brain tumours, many of which are second primary malignant rhabdoid tumours. This similarity excludes composite rhabdoid tumours, which occur mainly in adults.[citation needed]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "The histologic diagnosis of malignant rhabdoid tumour depends on identification of characteristic rhabdoid cells—large cells with eccentrically located nuclei and abundant, eosinophilic cytoplasm. However, the histology can be heterogeneous and the diagnosis of MRT can often be difficult. Misclassifications can occur.",
+                            "In MRTs, the INI1 gene (SMARCB1) on chromosome 22q functions as a classic tumour suppressor gene. Inactivation of INI1 can occur via deletion, mutation, or acquired uniparental disomy (UPD).[4]",
+                            "In a recent study,[4] Single nucleotide polymorphism array karyotyping identified deletions or loss of heterozygosity (LOH) of 22q in 49/51 rhabdoid tumours. Of these, 14 were copy neutral LOH (or acquired UPD), which is detectable by SNP array karyotyping, but not by FISH, cytogenetics, or array CGH. MLPA detected a single exon homozygous deletion in one sample that was below the resolution of the SNP array. SNP array karyotyping can be used to distinguish, for example, a medulloblastoma with an isochromosome 17q from a primary rhabdoid tumour with loss of 22q11.2. When indicated, molecular analysis of INI1 using MLPA and direct sequencing may then be employed. Once the tumour-associated changes are found, an analysis of germline DNA from the patient and the parents can be done to rule out an inherited or de novo germline mutation or deletion of INI1, so that appropriate recurrence risk assessments can be made.[4]"
+                        ]
+                    },
+                    "Prognosis": {
+                        "content": [
+                            "Regardless of location, all rhabdoid tumours are highly aggressive, have a poor prognosis, and tend to occur in children less than two years of age."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Atypical teratoid rhabdoid tumour"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Beckwith JB, Palmer NF (1978). \"Histopathology and prognosis of Wilms tumors: results from the First National Wilms' Tumor Study\". Cancer. 41 (5): 1937–48. doi:10.1002/1097-0142(197805)41:5<1937::AID-CNCR2820410538>3.0.CO;2-U. PMID 206343.",
+                            "<info> ^ PJ Biggs; Garen PD; Powers JM; Garvin AJ (1987). \"Malignant rhabdoid tumor of the central nervous system\". Human Pathology. 18 (4): 332–337. doi:10.1016/S0046-8177(87)80161-2. PMID 3030922.",
+                            "<info> ^ Finetti MA, Grabovska Y, Bailey S, Williamson D (2020) Translational genomics of malignant rhabdoid tumours: Current impact and future possibilities. Semin Cancer Biol",
+                            "<info> ^ a b c Jackson EM, Sievert AJ, Gai X, et al. (March 2009). \"Genomic analysis using high-density single nucleotide polymorphism-based oligonucleotide arrays and multiplex ligation-dependent probe amplification provides a comprehensive analysis of INI1/SMARCB1 in malignant rhabdoid tumors\". Clin. Cancer Res. 15 (6): 1923–30. doi:10.1158/1078-0432.CCR-08-2091. PMC 2668138. PMID 19276269."
+                        ]
+                    },
+                    "Literature": {
+                        "content": [
+                            "<info> Donner LR, Wainwright LM, Zhang F, Biegel JA (2007). \"Mutation of the INI1 gene in composite rhabdoid tumor of the endometrium\". Hum. Pathol. 38 (6): 935–9. doi:10.1016/j.humpath.2006.12.003. PMC 1963314. PMID 17376508.",
+                            "<info> Jeffrey S Dome, MD; D Ashley Hill, MD (January 8, 2007). \"Malignant Rhabdoid Tumor\". EMedicine from WebMD.",
+                            "<info> Perry A, Fuller CE, Judkins AR, Dehner LP, Biegel JA (2005). \"INI1 expression is retained in composite rhabdoid tumors, including rhabdoid meningiomas\". Mod. Pathol. 18 (7): 951–8. doi:10.1038/modpathol.3800375. PMID 15761491.",
+                            "<info> Biegel JA, Fogelgren B, Wainwright LM, Zhou JY, Bevan H, Rorke LB (2000). \"Germline INI1 mutation in a patient with a central nervous system atypical teratoid tumor and renal rhabdoid tumor\" (abstract page). Genes Chromosomes Cancer. 28 (1): 31–7. doi:10.1002/(SICI)1098-2264(200005)28:1<31::AID-GCC4>3.0.CO;2-Y. PMID 10738300. S2CID 21250260.",
+                            "<info> Huret J, Sevenet N (2000). \"Rhabdoid predispoition syndrome\". Atlas of Genetics and Cytogenetics in Oncology and Haematology (1): 31–7. Archived from the original on 2005-12-26.",
+                            "<info> Weeks DA, Beckwith JB, Mierau GW, Luckey DW (1989). \"Rhabdoid tumor of kidney. A report of 111 cases from the National Wilms' Tumor Study Pathology Center\". American Journal of Surgical Pathology. 13 (6): 439–58. doi:10.1097/00000478-198906000-00001. PMID 2543225. S2CID 19589843."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

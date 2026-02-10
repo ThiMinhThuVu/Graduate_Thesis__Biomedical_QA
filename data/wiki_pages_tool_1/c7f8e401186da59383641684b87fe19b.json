@@ -1,0 +1,65 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/perilymph": {
+                "title": "Perilymph",
+                "url": "https://en.wikipedia.org/wiki/perilymph",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Perilymph is an extracellular fluid located within the inner ear. It is found within the scala tympani and scala vestibuli of the cochlea.  The ionic composition of perilymph is comparable to that of plasma and cerebrospinal fluid. The major cation in perilymph is sodium, with the values of sodium and potassium concentration in the perilymph being 138 mM and 6.9 mM, respectively.[1] It is also named Cotunnius' liquid and liquor cotunnii for Domenico Cotugno.",
+                    "",
+                    "=== Structure ===",
+                    "The inner ear has two major parts, the cochlea and the vestibular organ. They are connected in a series of canals in the temporal bone referred to as the bony labyrinth. The bone canals are separated by the membranes in parallel spaces referred to as the membranous labyrinth. The membranous labyrinth contains endolymph, and is surrounded by perilymph.[2] The perilymph in the bony labyrinth serves as a connection to the cerebrospinal fluid of the subarachnoid space via the perilymphatic duct.[3]",
+                    "Perilymph and endolymph have unique ionic compositions suited to their functions in regulating electrochemical impulses of hair cells necessary for hearing. The electric potential of endolymph is ~80-90 mV more positive than perilymph due to a higher concentration of potassium cations (K+) in endolymph and higher sodium (Na+) in perilymph.[4] This is referred to as the endocochlear potential.[5]",
+                    "Perilymph is the fluid contained within the bony labyrinth, surrounding and protecting the membranous labyrinth; perilymph resembles extracellular fluid in composition (sodium salts are the predominant positive electrolyte) and, via the cochlear aqueduct (sometimes referred to as the \"perilymphatic duct\"), is in continuity with cerebrospinal fluid.",
+                    "Endolymph is the fluid contained within the scala media of the membranous labyrinth of the inner ear and within the semicircular canals of the vestibular apparatus; endolymph resembles intracellular fluid in composition (potassium is the main cation).",
+                    "Apart from the importance in the electric cochlear potential, the perilymph also contains a large number of proteins, e.g. extracellular enzymes and immunoglobulins. These proteins are important for the immune response and metabolism among others physiological functions.[6]",
+                    "",
+                    "=== Clinical significance ===",
+                    "It has also been suggested that perilymph and endolymph participate in a unidirectional flow that is interrupted in Ménière's disease.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Bosher SK, Warren RL (1968-11-05). \"Observations on the electrochemistry of the cochlear endolymph of the rat: a quantitative study of its electrical potential and ionic composition as determined by means of flame spectrophotometry\". Proceedings of the Royal Society B. 171 (1023): 227–247. Bibcode:1968RSPSB.171..227B. doi:10.1098/rspb.1968.0066. PMID 4386844. S2CID 32638469.",
+                    "<info> ^ \"Membranous Labyrinth - an overview\". Science Direct. Retrieved 2021-03-17.",
+                    "<info> ^ Blumenfeld, Hal (2010). Neuroanatomy through Clinical Cases second edition. Sinauer Associates, Inc.",
+                    "<info> ^ Konishi T, Hamrick PE, Walsh PJ (1978). \"Ion transport in guinea pig cochlea. I. Potassium and sodium transport\". Acta Otolaryngol. 86 (1–2): 22–34. doi:10.3109/00016487809124717. PMID 696294.",
+                    "<info> ^ Wangemann, Philine (2006-10-01). \"Supporting sensory transduction: cochlear fluid homeostasis and the endocochlear potential\". The Journal of Physiology. 576 (Pt 1): 11–21. doi:10.1113/jphysiol.2006.112888. ISSN 0022-3751. PMC 1995626. PMID 16857713.",
+                    "<info> ^ Edvardsson Rasmussen, Jesper; Laurell, Göran; Rask-Andersen, Helge; Bergquist, Jonas; Eriksson, Per Olof (2018). \"The proteome of perilymph in patients with vestibular schwannoma. A possibility to identify biomarkers for tumor associated hearing loss?\". PLOS ONE. 13 (6) e0198442. Bibcode:2018PLoSO..1398442E. doi:10.1371/journal.pone.0198442. ISSN 1932-6203. PMC 5983529. PMID 29856847.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Perilymph is an extracellular fluid located within the inner ear. It is found within the scala tympani and scala vestibuli of the cochlea.  The ionic composition of perilymph is comparable to that of plasma and cerebrospinal fluid. The major cation in perilymph is sodium, with the values of sodium and potassium concentration in the perilymph being 138 mM and 6.9 mM, respectively.[1] It is also named Cotunnius' liquid and liquor cotunnii for Domenico Cotugno."
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "The inner ear has two major parts, the cochlea and the vestibular organ. They are connected in a series of canals in the temporal bone referred to as the bony labyrinth. The bone canals are separated by the membranes in parallel spaces referred to as the membranous labyrinth. The membranous labyrinth contains endolymph, and is surrounded by perilymph.[2] The perilymph in the bony labyrinth serves as a connection to the cerebrospinal fluid of the subarachnoid space via the perilymphatic duct.[3]",
+                            "Perilymph and endolymph have unique ionic compositions suited to their functions in regulating electrochemical impulses of hair cells necessary for hearing. The electric potential of endolymph is ~80-90 mV more positive than perilymph due to a higher concentration of potassium cations (K+) in endolymph and higher sodium (Na+) in perilymph.[4] This is referred to as the endocochlear potential.[5]",
+                            "Perilymph is the fluid contained within the bony labyrinth, surrounding and protecting the membranous labyrinth; perilymph resembles extracellular fluid in composition (sodium salts are the predominant positive electrolyte) and, via the cochlear aqueduct (sometimes referred to as the \"perilymphatic duct\"), is in continuity with cerebrospinal fluid.",
+                            "Endolymph is the fluid contained within the scala media of the membranous labyrinth of the inner ear and within the semicircular canals of the vestibular apparatus; endolymph resembles intracellular fluid in composition (potassium is the main cation).",
+                            "Apart from the importance in the electric cochlear potential, the perilymph also contains a large number of proteins, e.g. extracellular enzymes and immunoglobulins. These proteins are important for the immune response and metabolism among others physiological functions.[6]"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "It has also been suggested that perilymph and endolymph participate in a unidirectional flow that is interrupted in Ménière's disease."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Bosher SK, Warren RL (1968-11-05). \"Observations on the electrochemistry of the cochlear endolymph of the rat: a quantitative study of its electrical potential and ionic composition as determined by means of flame spectrophotometry\". Proceedings of the Royal Society B. 171 (1023): 227–247. Bibcode:1968RSPSB.171..227B. doi:10.1098/rspb.1968.0066. PMID 4386844. S2CID 32638469.",
+                            "<info> ^ \"Membranous Labyrinth - an overview\". Science Direct. Retrieved 2021-03-17.",
+                            "<info> ^ Blumenfeld, Hal (2010). Neuroanatomy through Clinical Cases second edition. Sinauer Associates, Inc.",
+                            "<info> ^ Konishi T, Hamrick PE, Walsh PJ (1978). \"Ion transport in guinea pig cochlea. I. Potassium and sodium transport\". Acta Otolaryngol. 86 (1–2): 22–34. doi:10.3109/00016487809124717. PMID 696294.",
+                            "<info> ^ Wangemann, Philine (2006-10-01). \"Supporting sensory transduction: cochlear fluid homeostasis and the endocochlear potential\". The Journal of Physiology. 576 (Pt 1): 11–21. doi:10.1113/jphysiol.2006.112888. ISSN 0022-3751. PMC 1995626. PMID 16857713.",
+                            "<info> ^ Edvardsson Rasmussen, Jesper; Laurell, Göran; Rask-Andersen, Helge; Bergquist, Jonas; Eriksson, Per Olof (2018). \"The proteome of perilymph in patients with vestibular schwannoma. A possibility to identify biomarkers for tumor associated hearing loss?\". PLOS ONE. 13 (6) e0198442. Bibcode:2018PLoSO..1398442E. doi:10.1371/journal.pone.0198442. ISSN 1932-6203. PMC 5983529. PMID 29856847."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

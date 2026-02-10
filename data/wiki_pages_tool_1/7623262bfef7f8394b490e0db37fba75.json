@@ -1,0 +1,77 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/hela": {
+                "title": "Hela",
+                "url": "https://en.wikipedia.org/wiki/hela",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Hela may refer to:",
+                    "",
+                    "=== Ethnography ===",
+                    "<info> Hela (people), a name for the Sinhala people of Sri Lanka",
+                    "<info> Hela (caste), a Hindu caste found in North India\nHela Mehtar, Muslim members of this caste",
+                    "<info> Hela language, or Elu",
+                    "<info> Hela Mehtar, Muslim members of this caste",
+                    "",
+                    "=== Fiction and mythology ===",
+                    "<info> Hela (Blake), daughter of Tiriel in a poem by William Blake",
+                    "<info> Hel (being), Queen of Hel and daughter of Loki in Norse mythology",
+                    "<info> Hela (character), Asgardian goddess from the Marvel Universe",
+                    "",
+                    "=== Places ===",
+                    "<info> Hela Province, a new province being formed from 4 districts of Southern Highlands Province of Papua New Guinea",
+                    "<info> Hela, the German name for Hel, Poland",
+                    "<info> 699 Hela, an asteroid",
+                    "",
+                    "=== Other uses ===",
+                    "<info> HeLa, a line of cells derived from deceased American cancer patient Henrietta Lacks, notable for being the first immortalised cell line",
+                    "<info> SMS Hela, a light cruiser of the Imperial German Navy",
+                    "<info> Hela Gewürzwerk Hermann Laue, German spice and ketchup brand",
+                    "<info> Ȟéla, native Lakota name of Kyrie Irving",
+                    "<info> Hela, an open-world adventure video game developed by Windup Games",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Hela may refer to:"
+                        ]
+                    },
+                    "Ethnography": {
+                        "content": [
+                            "<info> Hela (people), a name for the Sinhala people of Sri Lanka",
+                            "<info> Hela (caste), a Hindu caste found in North India\nHela Mehtar, Muslim members of this caste",
+                            "<info> Hela language, or Elu",
+                            "<info> Hela Mehtar, Muslim members of this caste"
+                        ]
+                    },
+                    "Fiction and mythology": {
+                        "content": [
+                            "<info> Hela (Blake), daughter of Tiriel in a poem by William Blake",
+                            "<info> Hel (being), Queen of Hel and daughter of Loki in Norse mythology",
+                            "<info> Hela (character), Asgardian goddess from the Marvel Universe"
+                        ]
+                    },
+                    "Places": {
+                        "content": [
+                            "<info> Hela Province, a new province being formed from 4 districts of Southern Highlands Province of Papua New Guinea",
+                            "<info> Hela, the German name for Hel, Poland",
+                            "<info> 699 Hela, an asteroid"
+                        ]
+                    },
+                    "Other uses": {
+                        "content": [
+                            "<info> HeLa, a line of cells derived from deceased American cancer patient Henrietta Lacks, notable for being the first immortalised cell line",
+                            "<info> SMS Hela, a light cruiser of the Imperial German Navy",
+                            "<info> Hela Gewürzwerk Hermann Laue, German spice and ketchup brand",
+                            "<info> Ȟéla, native Lakota name of Kyrie Irving",
+                            "<info> Hela, an open-world adventure video game developed by Windup Games"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

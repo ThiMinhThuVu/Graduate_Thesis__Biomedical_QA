@@ -1,0 +1,77 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/narrow_face": {
+                "title": "Narrow face",
+                "url": "https://en.wikipedia.org/wiki/narrow_face",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Narrow face is a dysmorphic feature  in which its width is abnormally reduced (upper and lower face width less than 2 SD below the mean subjectively, or apparent reduction of the width of the upper and lower face objectively).[1][2][3]",
+                    "",
+                    "=== Syndromes (conditions) ===",
+                    "Narrow face is seen in the following conditions and syndromes:[1]",
+                    "<info> 5p partial monosomy syndrome",
+                    "<info> Congenital disorder of glycosylation, type IIw",
+                    "<info> Congenital myasthenic syndrome 2A",
+                    "<info> Congenital myopathy 4A, autosomal dominant",
+                    "<info> Congenital myopathy 4B, autosomal recessive",
+                    "<info> Ehlers-Danlos syndrome, Beasley-Cohen type",
+                    "<info> Granulocytopenia with immunoglobulin abnormality",
+                    "<info> Hereditary spastic paraplegia 23 and 51",
+                    "<info> Intellectual disability, autosomal recessive 5",
+                    "<info> Intellectual disability, X-linked 107, 58, and 61",
+                    "<info> Mitochondrial DNA depletion syndrome 13",
+                    "<info> Proximal myopathy with extrapyramidal signs",
+                    "<info> Radioulnar synostosis-developmental delay-hypotonia syndrome",
+                    "<info> Severe X-linked myotubular myopathy",
+                    "<info> SIN3A-related intellectual disability syndrome due to a point mutation",
+                    "<info> Syndromic X-linked intellectual disability 14",
+                    "<info> X-linked intellectual disability with marfanoid habitus",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b \"Narrow face (Concept Id: C1837463)\". www.ncbi.nlm.nih.gov. Retrieved 2023-08-09.",
+                    "<info> ^ \"Face, Narrow\". elementsofmorphology.nih.gov. Retrieved 2023-08-09.",
+                    "<info> ^ Colyer, Frank (1910). Dental Surgery and Pathology. Longmans, Green.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Narrow face is a dysmorphic feature  in which its width is abnormally reduced (upper and lower face width less than 2 SD below the mean subjectively, or apparent reduction of the width of the upper and lower face objectively).[1][2][3]"
+                        ]
+                    },
+                    "Syndromes (conditions)": {
+                        "content": [
+                            "Narrow face is seen in the following conditions and syndromes:[1]",
+                            "<info> 5p partial monosomy syndrome",
+                            "<info> Congenital disorder of glycosylation, type IIw",
+                            "<info> Congenital myasthenic syndrome 2A",
+                            "<info> Congenital myopathy 4A, autosomal dominant",
+                            "<info> Congenital myopathy 4B, autosomal recessive",
+                            "<info> Ehlers-Danlos syndrome, Beasley-Cohen type",
+                            "<info> Granulocytopenia with immunoglobulin abnormality",
+                            "<info> Hereditary spastic paraplegia 23 and 51",
+                            "<info> Intellectual disability, autosomal recessive 5",
+                            "<info> Intellectual disability, X-linked 107, 58, and 61",
+                            "<info> Mitochondrial DNA depletion syndrome 13",
+                            "<info> Proximal myopathy with extrapyramidal signs",
+                            "<info> Radioulnar synostosis-developmental delay-hypotonia syndrome",
+                            "<info> Severe X-linked myotubular myopathy",
+                            "<info> SIN3A-related intellectual disability syndrome due to a point mutation",
+                            "<info> Syndromic X-linked intellectual disability 14",
+                            "<info> X-linked intellectual disability with marfanoid habitus"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b \"Narrow face (Concept Id: C1837463)\". www.ncbi.nlm.nih.gov. Retrieved 2023-08-09.",
+                            "<info> ^ \"Face, Narrow\". elementsofmorphology.nih.gov. Retrieved 2023-08-09.",
+                            "<info> ^ Colyer, Frank (1910). Dental Surgery and Pathology. Longmans, Green."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

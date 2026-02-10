@@ -1,0 +1,51 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/warkany_syndrome_1": {
+                "title": "Warkany syndrome 1",
+                "url": "https://en.wikipedia.org/wiki/warkany_syndrome_1",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Warkany syndrome 1 was an X-chromosome linked recessive genetic condition originally described by Joseph Warkany in 1961 as part of an article on intrauterine growth retardation[1] - the condition is no longer diagnosed. The family history was consistent with X-linked recessive inheritance of intrauterine growth retardation and small head size, but these features are not unique to this condition and no linkage to a specific gene was ever established.  In fact, the condition appears to have been abandoned, given that the OMIM number (308400) assigned to it ([1]) and listed in a review article on X-linked mental retardation[2] has been removed from the OMIM database. Furthermore, this condition is no longer mentioned in a more recent review of X-linked mental retardation.[3]",
+                    "",
+                    "=== See also ===",
+                    "<info> Trisomy 8, which causes Warkany syndrome 2",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Warkany J (1961). \"Intrauterine growth retardation\". Am. J. Dis. Child. 102 (2): 249–79. doi:10.1001/archpedi.1961.02080010251018. PMID 13783175.",
+                    "<info> ^ Lubs H (1999). \"XLMR genes: update 1998\". Am. J. Med. Genet. 83 (4): 237–47. doi:10.1002/(SICI)1096-8628(19990402)83:4<237::AID-AJMG2>3.0.CO;2-8. PMID 10208155.",
+                    "<info> ^ Chiurazzi P (2008). \"XLMR genes: update 2007\". Eur. J. Hum. Genet. 16 (4): 422–34. doi:10.1038/sj.ejhg.5201994. PMID 18197188.",
+                    "",
+                    "=== External links ===",
+                    "<info> U.S. National Library of Medicine: Warkany Syndrome 1",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Warkany syndrome 1 was an X-chromosome linked recessive genetic condition originally described by Joseph Warkany in 1961 as part of an article on intrauterine growth retardation[1] - the condition is no longer diagnosed. The family history was consistent with X-linked recessive inheritance of intrauterine growth retardation and small head size, but these features are not unique to this condition and no linkage to a specific gene was ever established.  In fact, the condition appears to have been abandoned, given that the OMIM number (308400) assigned to it ([1]) and listed in a review article on X-linked mental retardation[2] has been removed from the OMIM database. Furthermore, this condition is no longer mentioned in a more recent review of X-linked mental retardation.[3]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Trisomy 8, which causes Warkany syndrome 2"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Warkany J (1961). \"Intrauterine growth retardation\". Am. J. Dis. Child. 102 (2): 249–79. doi:10.1001/archpedi.1961.02080010251018. PMID 13783175.",
+                            "<info> ^ Lubs H (1999). \"XLMR genes: update 1998\". Am. J. Med. Genet. 83 (4): 237–47. doi:10.1002/(SICI)1096-8628(19990402)83:4<237::AID-AJMG2>3.0.CO;2-8. PMID 10208155.",
+                            "<info> ^ Chiurazzi P (2008). \"XLMR genes: update 2007\". Eur. J. Hum. Genet. 16 (4): 422–34. doi:10.1038/sj.ejhg.5201994. PMID 18197188."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> U.S. National Library of Medicine: Warkany Syndrome 1"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

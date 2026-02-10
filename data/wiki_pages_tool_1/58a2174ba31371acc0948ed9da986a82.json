@@ -1,0 +1,53 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/pegipanermin": {
+                "title": "Pegipanermin",
+                "url": "https://en.wikipedia.org/wiki/pegipanermin",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Pegipanermin (USANTooltip United States Adopted Name; developmental code names and proposed brand names DN-TNF, INB-03, LIVNate, Quellor XENP345, XPro1595) is a tumor necrosis factor α (TNFα) inhibitor which is under development for the treatment of Alzheimer's disease, mild cognitive impairment, major depressive disorder, and other indications.[2][3][4][1][5] It is described as having potential anti-inflammatory effects.[3][1][2] It is administered by subcutaneous injection.[1]",
+                    "The drug is a protein and PEGylated variant of TNFα that does not bind to the tumor necrosis factor receptors (TNF receptors) but instead binds to and forms heterotrimers with TNFα and prevents TNFα from activating the TNF receptors.[1] However, pegipanermin is said to be selective for blocking TNFα activation of the tumor necrosis factor receptor 1 (TNFR1) but not of the tumor necrosis factor receptor 2 (TNFR2).[1] Whereas the non-selective TNFα inhibitor etanercept suppressed hippocampal neurogenesis, learning, and memory in animals, pegipanermin did not do so, yet still inhibited neuroinflammation.[1] Pegipanermin crosses the blood–brain barrier into the central nervous system.[1]",
+                    "As of October 2024, pegipanermin is in phase 2 clinical trials for Alzheimer's disease, mild cognitive impairment, and major depressive disorder.[2][4] It is in the preclinical stage of development for HER2-positive breast cancer.[2] No recent development has been reported for other neurodegenerative disorders, non-alcoholic steatohepatitis, or solid tumors.[2] Development was discontinued for Parkinson's disease and COVID-19 respiratory infections.[2]",
+                    "",
+                    "=== See also ===",
+                    "<info> List of investigational antidepressants",
+                    "<info> List of investigational Parkinson's disease drugs",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d e f g h \"XPro1595\". ALZFORUM. 5 August 2019. Retrieved 21 October 2024.",
+                    "<info> ^ a b c d e f \"Pegipanermin\". AdisInsight. 8 October 2024. Retrieved 21 October 2024.",
+                    "<info> ^ a b \"NCI Drug Dictionary\". Comprehensive Cancer Information. Retrieved 21 October 2024.",
+                    "<info> ^ a b \"Delving into the Latest Updates on INB-03 with Synapse\". Synapse. 20 October 2024. Retrieved 21 October 2024.",
+                    "<info> ^ Tansey MG, Harms AS (2023). \"Editorial: Glial-targeted therapeutics for CNS disease: getting there from here\". Front Cell Neurosci. 17 1231648. doi:10.3389/fncel.2023.1231648. PMC 10351972. PMID 37465212.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Pegipanermin (USANTooltip United States Adopted Name; developmental code names and proposed brand names DN-TNF, INB-03, LIVNate, Quellor XENP345, XPro1595) is a tumor necrosis factor α (TNFα) inhibitor which is under development for the treatment of Alzheimer's disease, mild cognitive impairment, major depressive disorder, and other indications.[2][3][4][1][5] It is described as having potential anti-inflammatory effects.[3][1][2] It is administered by subcutaneous injection.[1]",
+                            "The drug is a protein and PEGylated variant of TNFα that does not bind to the tumor necrosis factor receptors (TNF receptors) but instead binds to and forms heterotrimers with TNFα and prevents TNFα from activating the TNF receptors.[1] However, pegipanermin is said to be selective for blocking TNFα activation of the tumor necrosis factor receptor 1 (TNFR1) but not of the tumor necrosis factor receptor 2 (TNFR2).[1] Whereas the non-selective TNFα inhibitor etanercept suppressed hippocampal neurogenesis, learning, and memory in animals, pegipanermin did not do so, yet still inhibited neuroinflammation.[1] Pegipanermin crosses the blood–brain barrier into the central nervous system.[1]",
+                            "As of October 2024, pegipanermin is in phase 2 clinical trials for Alzheimer's disease, mild cognitive impairment, and major depressive disorder.[2][4] It is in the preclinical stage of development for HER2-positive breast cancer.[2] No recent development has been reported for other neurodegenerative disorders, non-alcoholic steatohepatitis, or solid tumors.[2] Development was discontinued for Parkinson's disease and COVID-19 respiratory infections.[2]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of investigational antidepressants",
+                            "<info> List of investigational Parkinson's disease drugs"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d e f g h \"XPro1595\". ALZFORUM. 5 August 2019. Retrieved 21 October 2024.",
+                            "<info> ^ a b c d e f \"Pegipanermin\". AdisInsight. 8 October 2024. Retrieved 21 October 2024.",
+                            "<info> ^ a b \"NCI Drug Dictionary\". Comprehensive Cancer Information. Retrieved 21 October 2024.",
+                            "<info> ^ a b \"Delving into the Latest Updates on INB-03 with Synapse\". Synapse. 20 October 2024. Retrieved 21 October 2024.",
+                            "<info> ^ Tansey MG, Harms AS (2023). \"Editorial: Glial-targeted therapeutics for CNS disease: getting there from here\". Front Cell Neurosci. 17 1231648. doi:10.3389/fncel.2023.1231648. PMC 10351972. PMID 37465212."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

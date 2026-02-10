@@ -1,0 +1,105 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/nijmegen_breakage_syndrome": {
+                "title": "Nijmegen breakage syndrome",
+                "url": "https://en.wikipedia.org/wiki/nijmegen_breakage_syndrome",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Nijmegen breakage syndrome (NBS) is a rare autosomal recessive[2] congenital disorder causing chromosomal instability, probably as a result of a defect in the double Holliday junction DNA repair mechanism and/or the synthesis dependent strand annealing mechanism for repairing double strand breaks in DNA (see Homologous recombination).[3]",
+                    "NBS1 codes for a protein (nibrin) that has two major functions: (1) to stop the cell cycle in the S phase, when there are errors in the cell DNA (2) to interact with FANCD2 that can activate the BRCA1/BRCA2 pathway of DNA repair. This explains why mutations in the NBS1 gene lead to higher levels of cancer (see Fanconi anemia, Cockayne syndrome.)",
+                    "The name derives from the Dutch city Nijmegen, where the condition was first described.[4]",
+                    "Most people with NBS have West Slavic origins. The largest number of them live in Poland.",
+                    "",
+                    "=== Presentation ===",
+                    "It is characterized by microcephaly, a distinct facial appearance, short stature, immunodeficiency, radiation sensitivity and a strong predisposition to lymphoid malignancy.[5][6] NBS is caused by a mutation in the NBS1 gene. Unsurprisingly, many of the features are similar to ataxia telangiectasia (AT) and this syndrome was sometimes termed AT-variant 1, as the protein mutated in AT, ATM, interacts with the MRE11/RAD50/NBS1 (MRN) complex. Other syndromes with clinical features similar to Nijmegen Breakage Syndrome include RAD50 deficiency and Cernunnos/NHEJ deficiency.[7][8]",
+                    "",
+                    "=== Cause ===",
+                    "NBS is caused by a mutation in the NBS1 gene, located at human chromosome 8q21.[9][10] The disease is inherited in an autosomal recessive manner.[2] This means the defective gene responsible for the disorder is located on an autosome (chromosome 8 is an autosome), and two copies of the defective gene (one inherited from each parent) are required in order to be born with the disorder. The parents of an individual with an autosomal recessive disorder both carry one copy of the defective gene, but usually do not experience any signs or symptoms of the disorder.[citation needed]",
+                    "Two adult siblings, both heterozygous for two particular NBS1 nonsense mutations displayed cellular sensitivity to radiation, chromosome instability and fertility defects, but not the developmental defects that are typically found in other NBS patients.[11]  These individuals appear to be primarily defective in homologous recombination, a process that accurately repairs double-strand breaks, both in somatic cells and during meiosis.[citation needed]",
+                    "",
+                    "=== Treatment ===",
+                    "There is no treatment for NBS; however, in those with agammaglobulinemia, intravenous immunoglobulin may be started. Prophylactic antibiotics are considered to prevent urinary tract infections as those with NBS often have congenital kidney malformations. In the treatment of malignancies, radiation therapy, alkylating antineoplastic agents, and epipodophyllotoxins are not used, and methotrexate can be used only with caution; the dose should be limited. Bone marrow transplants and hematopoietic stem cell transplants are also considered in the treatment of NBS. The supplementation of vitamin E is also recommended. A ventriculoperitoneal shunt can be placed in patients with hydrocephalus, and surgical intervention for congenital deformities is also attempted.[12]",
+                    "",
+                    "=== Prognosis ===",
+                    "A review from 2000 stated that life expectancy was reduced because of a tendency to develop cancer relatively early as well as deaths due to infections related to immunodeficiency.[13]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Seemanova E., Passarge E., Beneskova D., Houstek J., Kasal P., Sevcikova M. (1985). \"Familial microcephaly with normal intelligence, immunodeficiency, and risk of lymphoreticular malignancies: a new autosomal recessive disorder\". Am. J. Med. Genet. 20 (4): 639–648. doi:10.1002/ajmg.1320200410. PMID 3857858.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> ^ a b Cheung, V. G.; Ewens, W. J. (August 2006). \"Heterozygous carriers of Nijmegen Breakage Syndrome have a distinct gene expression phenotype\". Genome Research (Free full text). 16 (8): 973–979. doi:10.1101/gr.5320706. PMC 1524869. PMID 16809669.",
+                    "<info> ^ \"OMIM Entry - # 251260 - NIJMEGEN BREAKAGE SYNDROME; NBS\".",
+                    "<info> ^ Weemaes CM, Hustinx TW, Scheres JM, van Munster PJ, Bakkeren JA, Taalman RD (1981). \"A new chromosomal instability disorder: the Nijmegen breakage syndrome\". Acta Paediatr Scand. 70 (4): 557–64. doi:10.1111/j.1651-2227.1981.tb05740.x. PMID 7315300. S2CID 33222775.",
+                    "<info> ^ Digweed M, Sperling K (2004). \"Nijmegen breakage syndrome: clinical manifestation of defective response to DNA double-strand breaks\". DNA Repair (Amst). 3 (8–9): 1207–17. doi:10.1016/j.dnarep.2004.03.004. PMID 15279809.",
+                    "<info> ^ The I (2000). \"Nijmegen breakage syndrome. The International Nijmegen Breakage Syndrome Study Group\". Arch Dis Child. 82 (5): 400–6. doi:10.1136/adc.82.5.400. PMC 1718318. PMID 10799436. Full text",
+                    "<info> ^ Waltes R, Kalb R, Gatei M, Kijas AW, Stumm M, Sobeck A, Wieland B, Varon R, Lerenthal Y, Lavin MF, Schindler D, Dörk T (2009). \"Human RAD50 deficiency in a Nijmegen breakage syndrome-like disorder\". American Journal of Human Genetics. 84 (5): 605–16. doi:10.1016/j.ajhg.2009.04.010. PMC 2681000. PMID 19409520.",
+                    "<info> ^ Dutrannoy V, Demuth I, Baumann U, Schindler D, Konrat K, Neitzel H, Gillessen-Kaesbach G, Radszewski J, Rothe S, Schellenberger MT, Nürnberg G, Nürnberg P, Teik KW, Nallusamy R, Reis A, Sperling K, Digweed M, Varon R (2010). \"Clinical variability and novel mutations in the NHEJ1 gene in patients with a Nijmegen breakage syndrome-like phenotype\" (PDF). Human Mutation. 31 (9): 1059–68. doi:10.1002/humu.21315. PMID 20597108. S2CID 36681277.",
+                    "<info> ^ Iijima K, Komatsu K, Matsuura S, Tauchi H (2004). \"The Nijmegen breakage syndrome gene and its role in genome stability\". Chromosoma. 113 (2): 53–61. doi:10.1007/s00412-004-0298-0. PMID 15258809. S2CID 8085343.",
+                    "<info> ^ Online Mendelian Inheritance in Man (OMIM): 602667",
+                    "<info> ^ Warcoin M, Lespinasse J, Despouy G, Dubois d'Enghien C, Laugé A, Portnoï MF, Christin-Maitre S, Stoppa-Lyonnet D, Stern MH (2009). \"Fertility defects revealing germline biallelic nonsense NBN mutations\". Hum. Mutat. 30 (3): 424–30. doi:10.1002/humu.20904. PMID 19105185. S2CID 23883591.",
+                    "<info> ^ Chrzanowska, Krystyna. \"Nijmegen Breakage Syndrome Treatment & Management\". emedicine.medscape. Retrieved 5 October 2017.",
+                    "<info> ^ Group, The International Nijmegen Breakage Syndrome Study (2000-05-01). \"Nijmegen breakage syndrome\". Archives of Disease in Childhood. 82 (5): 400–406. doi:10.1136/adc.82.5.400. ISSN 1468-2044. PMC 1718318. PMID 10799436. {{cite journal}}: |last= has generic name (help)",
+                    "",
+                    "=== External links ===",
+                    "<info> nijmegen at NIH/UW GeneTests",
+                    "<info> Nijmegen Breakage Syndrome at NIH's Office of Rare Diseases",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Nijmegen breakage syndrome (NBS) is a rare autosomal recessive[2] congenital disorder causing chromosomal instability, probably as a result of a defect in the double Holliday junction DNA repair mechanism and/or the synthesis dependent strand annealing mechanism for repairing double strand breaks in DNA (see Homologous recombination).[3]",
+                            "NBS1 codes for a protein (nibrin) that has two major functions: (1) to stop the cell cycle in the S phase, when there are errors in the cell DNA (2) to interact with FANCD2 that can activate the BRCA1/BRCA2 pathway of DNA repair. This explains why mutations in the NBS1 gene lead to higher levels of cancer (see Fanconi anemia, Cockayne syndrome.)",
+                            "The name derives from the Dutch city Nijmegen, where the condition was first described.[4]",
+                            "Most people with NBS have West Slavic origins. The largest number of them live in Poland."
+                        ]
+                    },
+                    "Presentation": {
+                        "content": [
+                            "It is characterized by microcephaly, a distinct facial appearance, short stature, immunodeficiency, radiation sensitivity and a strong predisposition to lymphoid malignancy.[5][6] NBS is caused by a mutation in the NBS1 gene. Unsurprisingly, many of the features are similar to ataxia telangiectasia (AT) and this syndrome was sometimes termed AT-variant 1, as the protein mutated in AT, ATM, interacts with the MRE11/RAD50/NBS1 (MRN) complex. Other syndromes with clinical features similar to Nijmegen Breakage Syndrome include RAD50 deficiency and Cernunnos/NHEJ deficiency.[7][8]"
+                        ]
+                    },
+                    "Cause": {
+                        "content": [
+                            "NBS is caused by a mutation in the NBS1 gene, located at human chromosome 8q21.[9][10] The disease is inherited in an autosomal recessive manner.[2] This means the defective gene responsible for the disorder is located on an autosome (chromosome 8 is an autosome), and two copies of the defective gene (one inherited from each parent) are required in order to be born with the disorder. The parents of an individual with an autosomal recessive disorder both carry one copy of the defective gene, but usually do not experience any signs or symptoms of the disorder.[citation needed]",
+                            "Two adult siblings, both heterozygous for two particular NBS1 nonsense mutations displayed cellular sensitivity to radiation, chromosome instability and fertility defects, but not the developmental defects that are typically found in other NBS patients.[11]  These individuals appear to be primarily defective in homologous recombination, a process that accurately repairs double-strand breaks, both in somatic cells and during meiosis.[citation needed]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "There is no treatment for NBS; however, in those with agammaglobulinemia, intravenous immunoglobulin may be started. Prophylactic antibiotics are considered to prevent urinary tract infections as those with NBS often have congenital kidney malformations. In the treatment of malignancies, radiation therapy, alkylating antineoplastic agents, and epipodophyllotoxins are not used, and methotrexate can be used only with caution; the dose should be limited. Bone marrow transplants and hematopoietic stem cell transplants are also considered in the treatment of NBS. The supplementation of vitamin E is also recommended. A ventriculoperitoneal shunt can be placed in patients with hydrocephalus, and surgical intervention for congenital deformities is also attempted.[12]"
+                        ]
+                    },
+                    "Prognosis": {
+                        "content": [
+                            "A review from 2000 stated that life expectancy was reduced because of a tendency to develop cancer relatively early as well as deaths due to infections related to immunodeficiency.[13]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Seemanova E., Passarge E., Beneskova D., Houstek J., Kasal P., Sevcikova M. (1985). \"Familial microcephaly with normal intelligence, immunodeficiency, and risk of lymphoreticular malignancies: a new autosomal recessive disorder\". Am. J. Med. Genet. 20 (4): 639–648. doi:10.1002/ajmg.1320200410. PMID 3857858.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> ^ a b Cheung, V. G.; Ewens, W. J. (August 2006). \"Heterozygous carriers of Nijmegen Breakage Syndrome have a distinct gene expression phenotype\". Genome Research (Free full text). 16 (8): 973–979. doi:10.1101/gr.5320706. PMC 1524869. PMID 16809669.",
+                            "<info> ^ \"OMIM Entry - # 251260 - NIJMEGEN BREAKAGE SYNDROME; NBS\".",
+                            "<info> ^ Weemaes CM, Hustinx TW, Scheres JM, van Munster PJ, Bakkeren JA, Taalman RD (1981). \"A new chromosomal instability disorder: the Nijmegen breakage syndrome\". Acta Paediatr Scand. 70 (4): 557–64. doi:10.1111/j.1651-2227.1981.tb05740.x. PMID 7315300. S2CID 33222775.",
+                            "<info> ^ Digweed M, Sperling K (2004). \"Nijmegen breakage syndrome: clinical manifestation of defective response to DNA double-strand breaks\". DNA Repair (Amst). 3 (8–9): 1207–17. doi:10.1016/j.dnarep.2004.03.004. PMID 15279809.",
+                            "<info> ^ The I (2000). \"Nijmegen breakage syndrome. The International Nijmegen Breakage Syndrome Study Group\". Arch Dis Child. 82 (5): 400–6. doi:10.1136/adc.82.5.400. PMC 1718318. PMID 10799436. Full text",
+                            "<info> ^ Waltes R, Kalb R, Gatei M, Kijas AW, Stumm M, Sobeck A, Wieland B, Varon R, Lerenthal Y, Lavin MF, Schindler D, Dörk T (2009). \"Human RAD50 deficiency in a Nijmegen breakage syndrome-like disorder\". American Journal of Human Genetics. 84 (5): 605–16. doi:10.1016/j.ajhg.2009.04.010. PMC 2681000. PMID 19409520.",
+                            "<info> ^ Dutrannoy V, Demuth I, Baumann U, Schindler D, Konrat K, Neitzel H, Gillessen-Kaesbach G, Radszewski J, Rothe S, Schellenberger MT, Nürnberg G, Nürnberg P, Teik KW, Nallusamy R, Reis A, Sperling K, Digweed M, Varon R (2010). \"Clinical variability and novel mutations in the NHEJ1 gene in patients with a Nijmegen breakage syndrome-like phenotype\" (PDF). Human Mutation. 31 (9): 1059–68. doi:10.1002/humu.21315. PMID 20597108. S2CID 36681277.",
+                            "<info> ^ Iijima K, Komatsu K, Matsuura S, Tauchi H (2004). \"The Nijmegen breakage syndrome gene and its role in genome stability\". Chromosoma. 113 (2): 53–61. doi:10.1007/s00412-004-0298-0. PMID 15258809. S2CID 8085343.",
+                            "<info> ^ Online Mendelian Inheritance in Man (OMIM): 602667",
+                            "<info> ^ Warcoin M, Lespinasse J, Despouy G, Dubois d'Enghien C, Laugé A, Portnoï MF, Christin-Maitre S, Stoppa-Lyonnet D, Stern MH (2009). \"Fertility defects revealing germline biallelic nonsense NBN mutations\". Hum. Mutat. 30 (3): 424–30. doi:10.1002/humu.20904. PMID 19105185. S2CID 23883591.",
+                            "<info> ^ Chrzanowska, Krystyna. \"Nijmegen Breakage Syndrome Treatment & Management\". emedicine.medscape. Retrieved 5 October 2017.",
+                            "<info> ^ Group, The International Nijmegen Breakage Syndrome Study (2000-05-01). \"Nijmegen breakage syndrome\". Archives of Disease in Childhood. 82 (5): 400–406. doi:10.1136/adc.82.5.400. ISSN 1468-2044. PMC 1718318. PMID 10799436. {{cite journal}}: |last= has generic name (help)"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> nijmegen at NIH/UW GeneTests",
+                            "<info> Nijmegen Breakage Syndrome at NIH's Office of Rare Diseases"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

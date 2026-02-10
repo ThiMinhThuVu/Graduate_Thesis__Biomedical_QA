@@ -1,0 +1,75 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/specific_developmental_disorder": {
+                "title": "Specific developmental disorder",
+                "url": "https://en.wikipedia.org/wiki/specific_developmental_disorder",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Specific developmental disorders (SDD) was a classification of disorders characterized by delayed development in one specific area or areas.[1][2][3][4] Specific developmental disorders were contrasted to pervasive developmental disorders[4] which were characterized by delays in the development of multiple basic functions including socialization and communication.[5]",
+                    "",
+                    "=== ICD-10 taxonomy ===",
+                    "The tenth revision of the International Statistical Classification of Diseases and Related Health Problems (ICD-10) has four categories of  developmental disorders: specific developmental disorders of speech and language, specific developmental disorders of scholastic skills, specific developmental disorder of motor function, and mixed specific developmental disorder.[2][6]",
+                    "",
+                    "=== DSM-III taxonomy ===",
+                    "In the third edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-III),[7] SDD was opposed to the pervasive developmental disorders (PDD). There were two factors that were considered:",
+                    "<info> The specificity of the impairment: in SDD there is one single domain that is affected, whereas in PDD multiple areas of functioning are affected.[8]",
+                    "<info> The nature of the impairment: development in SDD is delayed but not otherwise abnormal, whereas in PDD there are behavioral deviations that are not typical for any developmental stage.[8]",
+                    "In the DSM-IV, specific developmental disorders were no longer grouped together.[9] Instead they were reclassified as communication disorders, learning disorders, and motor skills disorders.[3]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition. Arlington, VA: American Psychiatric Association. 2013.",
+                    "<info> ^ a b The Icd-10 Classification of Mental and Behavioural Disorders: Clinical Descriptions and Diagnostic Guidelines. Geneva: World Health Organization. 1992.",
+                    "<info> ^ a b Ahuja Vyas: Textbook of Postgraduate Psychiatry (2 Vols.), 2nd ed. 1999",
+                    "<info> ^ a b \"Medical Definition of Specific developmental disorder\".",
+                    "<info> ^ \"Pervasive Developmental Disorders Information Page: National Institute of Neurological Disorders and Stroke (NINDS)\". Archived from the original on 2016-12-15. Retrieved 2012-09-23.",
+                    "<info> ^ \"ICD-10 Version:2010\". apps.who.int.",
+                    "<info> ^ Dennis Cantwell & Lorian Baker: Developmental Speech and Language Disorders, 1987, page 4",
+                    "<info> ^ a b Sir Michael Rutter, Eric A. Taylor: Child and Adolescent Psychiatry, 4th ed. 2005",
+                    "<info> ^ Robert Jean Campbell, III: Campbell's Psychiatric Dictionary, 2003, page 184",
+                    "<info> ^ http://apps.who.int/classifications/icd10/browse/2010/en#/F80 Reference for all ICD-10 disorders mentioned in the table.",
+                    "<info> ^ http://behavenet.com/apa-diagnostic-classification-dsm-iv-tr#301 Reference for all DSM-IV-TR disorders mentioned in the table.",
+                    "<info> ^ https://icd.who.int/browse11/l-m/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f334423054 Reference for all ICD-11 disorders mentioned in the table",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Specific developmental disorders (SDD) was a classification of disorders characterized by delayed development in one specific area or areas.[1][2][3][4] Specific developmental disorders were contrasted to pervasive developmental disorders[4] which were characterized by delays in the development of multiple basic functions including socialization and communication.[5]"
+                        ]
+                    },
+                    "ICD-10 taxonomy": {
+                        "content": [
+                            "The tenth revision of the International Statistical Classification of Diseases and Related Health Problems (ICD-10) has four categories of  developmental disorders: specific developmental disorders of speech and language, specific developmental disorders of scholastic skills, specific developmental disorder of motor function, and mixed specific developmental disorder.[2][6]"
+                        ]
+                    },
+                    "DSM-III taxonomy": {
+                        "content": [
+                            "In the third edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-III),[7] SDD was opposed to the pervasive developmental disorders (PDD). There were two factors that were considered:",
+                            "<info> The specificity of the impairment: in SDD there is one single domain that is affected, whereas in PDD multiple areas of functioning are affected.[8]",
+                            "<info> The nature of the impairment: development in SDD is delayed but not otherwise abnormal, whereas in PDD there are behavioral deviations that are not typical for any developmental stage.[8]",
+                            "In the DSM-IV, specific developmental disorders were no longer grouped together.[9] Instead they were reclassified as communication disorders, learning disorders, and motor skills disorders.[3]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition. Arlington, VA: American Psychiatric Association. 2013.",
+                            "<info> ^ a b The Icd-10 Classification of Mental and Behavioural Disorders: Clinical Descriptions and Diagnostic Guidelines. Geneva: World Health Organization. 1992.",
+                            "<info> ^ a b Ahuja Vyas: Textbook of Postgraduate Psychiatry (2 Vols.), 2nd ed. 1999",
+                            "<info> ^ a b \"Medical Definition of Specific developmental disorder\".",
+                            "<info> ^ \"Pervasive Developmental Disorders Information Page: National Institute of Neurological Disorders and Stroke (NINDS)\". Archived from the original on 2016-12-15. Retrieved 2012-09-23.",
+                            "<info> ^ \"ICD-10 Version:2010\". apps.who.int.",
+                            "<info> ^ Dennis Cantwell & Lorian Baker: Developmental Speech and Language Disorders, 1987, page 4",
+                            "<info> ^ a b Sir Michael Rutter, Eric A. Taylor: Child and Adolescent Psychiatry, 4th ed. 2005",
+                            "<info> ^ Robert Jean Campbell, III: Campbell's Psychiatric Dictionary, 2003, page 184",
+                            "<info> ^ http://apps.who.int/classifications/icd10/browse/2010/en#/F80 Reference for all ICD-10 disorders mentioned in the table.",
+                            "<info> ^ http://behavenet.com/apa-diagnostic-classification-dsm-iv-tr#301 Reference for all DSM-IV-TR disorders mentioned in the table.",
+                            "<info> ^ https://icd.who.int/browse11/l-m/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f334423054 Reference for all ICD-11 disorders mentioned in the table"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

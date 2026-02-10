@@ -1,0 +1,99 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/nebulette": {
+                "title": "Nebulette",
+                "url": "https://en.wikipedia.org/wiki/nebulette",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Nebulette is a cardiac-specific isoform belonging to the nebulin family of proteins. It is encoded by the NEBL gene. This family is composed of 5 members: nebulette, nebulin, N-RAP, LASP-1 and LASP-2. Nebulette localizes to Z-discs of cardiac muscle and appears to regulate the length of actin thin filaments.",
+                    "",
+                    "=== Structure ===",
+                    "Nebulette is a 116.4 kDa protein composed of 1014 amino acids.[5][6] As a member of the nebulin family of proteins, nebulette is characterized by 35 amino acid stretches of ‘‘nebulin repeats’’, which are actin binding domains containing a conserved SDxxYK motif.[7] Like nebulin, nebulette has an acidic region with unknown structure at its N-terminus, and a serine-rich region adjacent to an SH3 domain at its C-terminus.[8]  Though nebulette shares structural features with nebulin, nebulin is expressed preferentially in skeletal muscle and has an enormous size (600-900 kDa), while nebulette is expressed in cardiac muscle at  Z-disc regions and is significantly smaller (roughly 1/6 of the size).[9] Nebulette interacts with actin, tropomyosin, alpha-actinin.[10] Xin, and XIRP2.[11]",
+                    "",
+                    "=== Function ===",
+                    "Nebulette was identified in 1995 by Moncman and Wang using primary cultures of chicken embryonic cardiomyocytes by immunoprecipitations with certain anti-nebulin monoclonal antibodies.[12]  Normal expression of nebulette is essential for the assembly and contractile function of myofibrils.[13] Specifically, nebulette appears to regulate the stability and length of actin thin filaments, as well as beating frequencies of cardiomyocytes; reduction of full-length nebulette protein in cardiomyocytes resulted in reduced thin filament lengths, depressed beating frequencies and loss of thin filament regulatory proteins troponin I and tropomyosin.[14][15]",
+                    "",
+                    "=== Clinical significance ===",
+                    "Mutations in the NEBL gene have been associated with dilated cardiomyopathy.[16] Studies in transgenic mice have supported their causative role in endocardial fibroelastosis and dilated cardiomyopathy.[17]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000078114 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000053702 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Nebulette\". Cardiac Organellar Protein Atlas Knowledgebase (COPaKB). Archived from the original on 2016-03-03. Retrieved 2015-03-20.",
+                    "<info> ^ Zong NC, Li H, Li H, Lam MP, Jimenez RC, Kim CS, et al. (October 2013). \"Integration of cardiac proteome biology and medicine by a specialized knowledgebase\". Circulation Research. 113 (9): 1043–1053. doi:10.1161/CIRCRESAHA.113.301151. PMC 4076475. PMID 23965338.",
+                    "<info> ^ Labeit S, Gibson T, Lakey A, Leonard K, Zeviani M, Knight P, et al. (May 1991). \"Evidence that nebulin is a protein-ruler in muscle thin filaments\". FEBS Letters. 282 (2): 313–316. Bibcode:1991FEBSL.282..313L. doi:10.1016/0014-5793(91)80503-u. PMID 2037050. S2CID 33047653.",
+                    "<info> ^ Pappas CT, Bliss KT, Zieseniss A, Gregorio CC (January 2011). \"The Nebulin family: an actin support group\". Trends in Cell Biology. 21 (1): 29–37. doi:10.1016/j.tcb.2010.09.005. PMC 3014390. PMID 20951588.",
+                    "<info> ^ Moncman CL, Wang K (1995). \"Nebulette: a 107 kD nebulin-like protein in cardiac muscle\". Cell Motility and the Cytoskeleton. 32 (3): 205–225. doi:10.1002/cm.970320305. PMID 8581976.",
+                    "<info> ^ Moncman CL, Wang K (1999). \"Functional dissection of nebulette demonstrates actin binding of nebulin-like repeats and Z-line targeting of SH3 and linker domains\". Cell Motility and the Cytoskeleton. 44 (1): 1–22. doi:10.1002/(SICI)1097-0169(199909)44:1<1::AID-CM1>3.0.CO;2-8. PMID 10470015.",
+                    "<info> ^ Eulitz S, Sauer F, Pelissier MC, Boisguerin P, Molt S, Schuld J, et al. (October 2013). \"Identification of Xin-repeat proteins as novel ligands of the SH3 domains of nebulin and nebulette and analysis of their interaction during myofibril formation and remodeling\". Molecular Biology of the Cell. 24 (20): 3215–3226. doi:10.1091/mbc.E13-04-0202. PMC 3810769. PMID 23985323.",
+                    "<info> ^ Moncman CL, Wang K (1995). \"Nebulette: a 107 kD nebulin-like protein in cardiac muscle\". Cell Motility and the Cytoskeleton. 32 (3): 205–225. doi:10.1002/cm.970320305. PMID 8581976.",
+                    "<info> ^ Moncman CL, Wang K (February 2002). \"Targeted disruption of nebulette protein expression alters cardiac myofibril assembly and function\". Experimental Cell Research. 273 (2): 204–218. doi:10.1006/excr.2001.5423. PMID 11822876.",
+                    "<info> ^ Bonzo JR, Norris AA, Esham M, Moncman CL (November 2008). \"The nebulette repeat domain is necessary for proper maintenance of tropomyosin with the cardiac sarcomere\". Experimental Cell Research. 314 (19): 3519–3530. doi:10.1016/j.yexcr.2008.09.001. PMID 18823973.",
+                    "<info> ^ Moncman CL, Wang K (February 2002). \"Targeted disruption of nebulette protein expression alters cardiac myofibril assembly and function\". Experimental Cell Research. 273 (2): 204–218. doi:10.1006/excr.2001.5423. PMID 11822876.",
+                    "<info> ^ Arimura T, Nakamura T, Hiroi S, Satoh M, Takahashi M, Ohbuchi N, et al. (November 2000). \"Characterization of the human nebulette gene: a polymorphism in an actin-binding motif is associated with nonfamilial idiopathic dilated cardiomyopathy\". Human Genetics. 107 (5): 440–451. doi:10.1007/s004390000389. PMID 11140941. S2CID 4564490.",
+                    "<info> ^ Purevjav E, Varela J, Morgado M, Kearney DL, Li H, Taylor MD, et al. (October 2010). \"Nebulette mutations are associated with dilated cardiomyopathy and endocardial fibroelastosis\". Journal of the American College of Cardiology. 56 (18): 1493–1502. doi:10.1016/j.jacc.2010.05.045. PMC 2957670. PMID 20951326.",
+                    "",
+                    "=== External links ===",
+                    "<info> \"Mass spectrometry characterization of NEBL at COPaKB\". Cardiac Organellar Protein Atlas Knowledgebase (COPaKB). Archived from the original on 2016-03-03. Retrieved 2015-03-20.",
+                    "<info> Mass spectrometry characterization of human NEBL at COPaKB Archived 2016-03-03 at the Wayback Machine",
+                    "<info> nebulette at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Nebulette is a cardiac-specific isoform belonging to the nebulin family of proteins. It is encoded by the NEBL gene. This family is composed of 5 members: nebulette, nebulin, N-RAP, LASP-1 and LASP-2. Nebulette localizes to Z-discs of cardiac muscle and appears to regulate the length of actin thin filaments."
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "Nebulette is a 116.4 kDa protein composed of 1014 amino acids.[5][6] As a member of the nebulin family of proteins, nebulette is characterized by 35 amino acid stretches of ‘‘nebulin repeats’’, which are actin binding domains containing a conserved SDxxYK motif.[7] Like nebulin, nebulette has an acidic region with unknown structure at its N-terminus, and a serine-rich region adjacent to an SH3 domain at its C-terminus.[8]  Though nebulette shares structural features with nebulin, nebulin is expressed preferentially in skeletal muscle and has an enormous size (600-900 kDa), while nebulette is expressed in cardiac muscle at  Z-disc regions and is significantly smaller (roughly 1/6 of the size).[9] Nebulette interacts with actin, tropomyosin, alpha-actinin.[10] Xin, and XIRP2.[11]"
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "Nebulette was identified in 1995 by Moncman and Wang using primary cultures of chicken embryonic cardiomyocytes by immunoprecipitations with certain anti-nebulin monoclonal antibodies.[12]  Normal expression of nebulette is essential for the assembly and contractile function of myofibrils.[13] Specifically, nebulette appears to regulate the stability and length of actin thin filaments, as well as beating frequencies of cardiomyocytes; reduction of full-length nebulette protein in cardiomyocytes resulted in reduced thin filament lengths, depressed beating frequencies and loss of thin filament regulatory proteins troponin I and tropomyosin.[14][15]"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "Mutations in the NEBL gene have been associated with dilated cardiomyopathy.[16] Studies in transgenic mice have supported their causative role in endocardial fibroelastosis and dilated cardiomyopathy.[17]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000078114 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000053702 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Nebulette\". Cardiac Organellar Protein Atlas Knowledgebase (COPaKB). Archived from the original on 2016-03-03. Retrieved 2015-03-20.",
+                            "<info> ^ Zong NC, Li H, Li H, Lam MP, Jimenez RC, Kim CS, et al. (October 2013). \"Integration of cardiac proteome biology and medicine by a specialized knowledgebase\". Circulation Research. 113 (9): 1043–1053. doi:10.1161/CIRCRESAHA.113.301151. PMC 4076475. PMID 23965338.",
+                            "<info> ^ Labeit S, Gibson T, Lakey A, Leonard K, Zeviani M, Knight P, et al. (May 1991). \"Evidence that nebulin is a protein-ruler in muscle thin filaments\". FEBS Letters. 282 (2): 313–316. Bibcode:1991FEBSL.282..313L. doi:10.1016/0014-5793(91)80503-u. PMID 2037050. S2CID 33047653.",
+                            "<info> ^ Pappas CT, Bliss KT, Zieseniss A, Gregorio CC (January 2011). \"The Nebulin family: an actin support group\". Trends in Cell Biology. 21 (1): 29–37. doi:10.1016/j.tcb.2010.09.005. PMC 3014390. PMID 20951588.",
+                            "<info> ^ Moncman CL, Wang K (1995). \"Nebulette: a 107 kD nebulin-like protein in cardiac muscle\". Cell Motility and the Cytoskeleton. 32 (3): 205–225. doi:10.1002/cm.970320305. PMID 8581976.",
+                            "<info> ^ Moncman CL, Wang K (1999). \"Functional dissection of nebulette demonstrates actin binding of nebulin-like repeats and Z-line targeting of SH3 and linker domains\". Cell Motility and the Cytoskeleton. 44 (1): 1–22. doi:10.1002/(SICI)1097-0169(199909)44:1<1::AID-CM1>3.0.CO;2-8. PMID 10470015.",
+                            "<info> ^ Eulitz S, Sauer F, Pelissier MC, Boisguerin P, Molt S, Schuld J, et al. (October 2013). \"Identification of Xin-repeat proteins as novel ligands of the SH3 domains of nebulin and nebulette and analysis of their interaction during myofibril formation and remodeling\". Molecular Biology of the Cell. 24 (20): 3215–3226. doi:10.1091/mbc.E13-04-0202. PMC 3810769. PMID 23985323.",
+                            "<info> ^ Moncman CL, Wang K (1995). \"Nebulette: a 107 kD nebulin-like protein in cardiac muscle\". Cell Motility and the Cytoskeleton. 32 (3): 205–225. doi:10.1002/cm.970320305. PMID 8581976.",
+                            "<info> ^ Moncman CL, Wang K (February 2002). \"Targeted disruption of nebulette protein expression alters cardiac myofibril assembly and function\". Experimental Cell Research. 273 (2): 204–218. doi:10.1006/excr.2001.5423. PMID 11822876.",
+                            "<info> ^ Bonzo JR, Norris AA, Esham M, Moncman CL (November 2008). \"The nebulette repeat domain is necessary for proper maintenance of tropomyosin with the cardiac sarcomere\". Experimental Cell Research. 314 (19): 3519–3530. doi:10.1016/j.yexcr.2008.09.001. PMID 18823973.",
+                            "<info> ^ Moncman CL, Wang K (February 2002). \"Targeted disruption of nebulette protein expression alters cardiac myofibril assembly and function\". Experimental Cell Research. 273 (2): 204–218. doi:10.1006/excr.2001.5423. PMID 11822876.",
+                            "<info> ^ Arimura T, Nakamura T, Hiroi S, Satoh M, Takahashi M, Ohbuchi N, et al. (November 2000). \"Characterization of the human nebulette gene: a polymorphism in an actin-binding motif is associated with nonfamilial idiopathic dilated cardiomyopathy\". Human Genetics. 107 (5): 440–451. doi:10.1007/s004390000389. PMID 11140941. S2CID 4564490.",
+                            "<info> ^ Purevjav E, Varela J, Morgado M, Kearney DL, Li H, Taylor MD, et al. (October 2010). \"Nebulette mutations are associated with dilated cardiomyopathy and endocardial fibroelastosis\". Journal of the American College of Cardiology. 56 (18): 1493–1502. doi:10.1016/j.jacc.2010.05.045. PMC 2957670. PMID 20951326."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"Mass spectrometry characterization of NEBL at COPaKB\". Cardiac Organellar Protein Atlas Knowledgebase (COPaKB). Archived from the original on 2016-03-03. Retrieved 2015-03-20.",
+                            "<info> Mass spectrometry characterization of human NEBL at COPaKB Archived 2016-03-03 at the Wayback Machine",
+                            "<info> nebulette at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

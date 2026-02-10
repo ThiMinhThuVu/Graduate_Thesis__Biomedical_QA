@@ -1,0 +1,161 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/disulfide": {
+                "title": "Disulfide",
+                "url": "https://en.wikipedia.org/wiki/disulfide",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "In chemistry, a disulfide (or disulphide in British English) is a compound containing a R−S−S−R′ functional group or the S2−2 anion. In inorganic chemistry, the anion appears in a few rare minerals. Compounds of the form R−S−S−H are usually called persulfides instead.",
+                    "Disulfide bridges also appear as a common post-translational modification in proteins.",
+                    "",
+                    "=== Organic disulfides ===",
+                    "Disulfides have a C–S–S–C dihedral angle approaching 90°. The S–S bond length is 2.03 Å in diphenyl disulfide,[1] similar to that in elemental sulfur.",
+                    "Disulfides are usually symmetric but they can also be unsymmetric. Symmetrical disulfides are compounds of the formula RSSR. Most disulfides encountered in organosulfur chemistry are symmetrical disulfides. Unsymmetrical disulfides (also called heterodisulfides or mixed disulfides) are compounds of the formula RSSR'. Unsymmetrical disulfide are less common in organic chemistry, but many disulfides in nature are unsymmetrical.",
+                    "Disulfides can be components of rings. Lipoic acid, a 1,2-dithiolane is a major example. Rings with more than one disulfide usually tend to polymerize.[2]",
+                    "Thiuram disulfides, with the formula (R2NCSS)2, are disulfides but they behave distinctly because of the thiocarbonyl group.",
+                    "Disulfide bonds are strong, with a typical bond dissociation energy of 60 kcal/mol (251 kJ mol−1). However, being about 40% weaker than C−C and C−H bonds, the disulfide bond is often the \"weak link\" in many molecules. Furthermore, reflecting the polarizability of divalent sulfur, the S−S bond is susceptible to scission by polar reagents, both electrophiles and especially nucleophiles (Nu):[3] \n\n\n\n\nRS\n\n−\n\nSR\n+\n\nNu\n\n−\n\n\n⟶\nRS\n\n−\n\nNu\n+\n\nRS\n\n−\n\n\n\n\n\n{\\displaystyle {\\ce {RS-SR + Nu- -> RS-Nu + RS-}}}",
+                    "The disulfide bond is about 2.05 Å in length, about 0.5 Å longer than a C−C bond. Rotation about the S−S axis is subject to a low barrier. Disulfides show a distinct preference for dihedral angles approaching 90°. When the angle approaches 0° or 180°, then the disulfide is a significantly better oxidant.",
+                    "Disulfides where the two R groups are the same are called symmetric, examples being diphenyl disulfide and dimethyl disulfide. When the two R groups are not identical, the compound is said to be an asymmetric or mixed disulfide.[4]",
+                    "Although the hydrogenation of disulfides is usually not practical, the equilibrium constant for the reaction provides a measure of the standard redox potential for disulfides:",
+                    "This value is about −250 mV versus the standard hydrogen electrode (pH = 7). By comparison, the standard reduction potential for ferrodoxins is about −430 mV.",
+                    "Disulfide bonds are usually formed from the oxidation of thiol (−SH) groups, especially in biological contexts.[5] The transformation is depicted as follows:",
+                    "A variety of oxidants participate in this reaction including oxygen and hydrogen peroxide. Such reactions are thought to proceed via sulfenic acid intermediates. In the laboratory, iodine in the presence of base is commonly employed to oxidize thiols to disulfides. Several metals, such as copper(II) and iron(III) complexes affect this reaction.[6] Alternatively, disulfide bonds in proteins often formed by thiol-disulfide exchange:",
+                    "Such reactions are mediated by enzymes in some cases and in other cases are under equilibrium control, especially in the presence of a catalytic amount of base.",
+                    "The alkylation of alkali metal di- and polysulfides gives disulfides. \"Thiokol\" polymers arise when sodium polysulfide is treated with an alkyl dihalide. In the converse reaction, carbanionic reagents react with elemental sulfur to afford mixtures of the thioether, disulfide, and higher polysulfides. These reactions are often unselective but can be optimized for specific applications.",
+                    "Many specialized methods have been developed for forming unsymmetrical disulfides. Reagents that deliver the equivalent of \"RS+\" react with thiols to give asymmetrical disulfides:[5]",
+                    "where R″2N is the phthalimido group.\nBunte salts, derivatives of the type RSSO−3Na+are also used to generate unsymmetrical disulfides:[7]",
+                    "The most important aspect of disulfide bonds is their scission, as the S−S bond is usually the weakest bond in an organic molecule.[citation needed] Many specialized organic reactions have been developed to cleave the bond.",
+                    "A variety of reductants reduce disulfides to thiols. Hydride agents are typical reagents, and a common laboratory demonstration \"uncooks\" eggs with sodium borohydride.[8] Alkali metals effect the same reaction more aggressively: \n\n\n\n\nRS\n\n−\n\nSR\n+\n2\n\nNa\n⟶\n2\n\nNaSR\n,\n\n\n\n{\\displaystyle {\\ce {RS-SR + 2 Na -> 2 NaSR,}}}\n\n followed by protonation of the resulting metal thiolate: \n\n\n\n\nNaSR\n+\nHCl\n⟶\nHSR\n+\nNaCl\n\n\n\n{\\displaystyle {\\ce {NaSR + HCl -> HSR + NaCl}}}\n\nIn biochemistry labwork, thiols such as β-mercaptoethanol (β-ME) or dithiothreitol (DTT) serve as reductants through thiol-disulfide exchange. The thiol reagents are used in excess to drive the equilibrium to the right: \n\n\n\n\nRS\n\n−\n\nSR\n+\n2\n\n\nHOCH\n\n2\n\n\n\n\n\n\nCH\n\n2\n\n\n\n\n\nSH\n\n\n\n\n\n\n↽\n\n\n\n\n−\n\n\n\n\n\n\n\n\n−\n\n\n\n\n⇀\n\n\n\n\n\n\n\nHOCH\n\n2\n\n\n\n\n\n\nCH\n\n2\n\n\n\n\n\nS\n\n−\n\n\nSCH\n\n2\n\n\n\n\n\n\nCH\n\n2\n\n\n\n\n\nOH\n+\n2\n\nRSH\n\n\n\n{\\displaystyle {\\ce {RS-SR + 2 HOCH2CH2SH <=> HOCH2CH2S-SCH2CH2OH + 2 RSH}}}\n\n\nThe reductant tris(2-carboxyethyl)phosphine (TCEP) is useful, beside being odorless compared to β-ME and DTT, because it is selective, working at both alkaline and acidic conditions (unlike DTT), is more hydrophilic and more resistant to oxidation in air. Furthermore, it is often not needed to remove TCEP before modification of protein thiols.[9]",
+                    "In Zincke cleavage, halogens oxidize disulfides to a sulfenyl halide:[10]\n\n\n\n\nArSSAr\n+\n\nCl\n\n2\n\n\n\n\n\n⟶\n2\n\nArSCl\n\n\n\n{\\displaystyle {\\ce {ArSSAr + Cl2 -> 2 ArSCl}}}\n\nMore unusually, oxidation of disulfides gives first thiosulfinates and then thiosulfonates:[11]",
+                    "In thiol–disulfide exchange, a thiolate group −S− displaces one sulfur atom in a disulfide bond −S−S−. The original disulfide bond is broken, and its other sulfur atom is released as a new thiolate, carrying away the negative charge. Meanwhile, a new disulfide bond forms between the attacking thiolate and the original sulfur atom.[12][13]",
+                    "Thiolates, not thiols, attack disulfide bonds. Hence, thiol–disulfide exchange is inhibited at low pH (typically, below 8) where the protonated thiol form is favored relative to the deprotonated thiolate form. (The pKa of a typical thiol group is roughly 8.3, but can vary due to its environment.) Thiol-disulfide exchange is an important process for the formation of the correct disulfide bridges in proteins and to keep cysteine from unwanted oxidation during lab experiments.",
+                    "Thiosulfoxides are isomeric with disulfides, having the second sulfur branching from the first and not partaking in a continuous chain, i.e. >S=S rather than −S−S−.",
+                    "Compounds with three sulfur atoms, such as CH3S−S−SCH3, are called trisulfides. More extended species are well known, especially in rings.",
+                    "Disulfide is also used to refer to compounds that contain two sulfide (S2−) centers. The compound carbon disulfide, CS2 is described with the structural formula i.e. S=C=S. This molecule is not a disulfide in the sense that it lacks a S-S bond. Similarly, molybdenum disulfide, MoS2, is not a disulfide in the sense again that its sulfur atoms are not linked.",
+                    "Disulfide bonds are analogous but more common than related peroxide, thioselenide, and diselenide bonds. Intermediate compounds of these also exist, for example thioperoxides such as hydrogen thioperoxide, have the formula R1OSR2 (equivalently R2SOR1). These are isomeric to sulfoxides in a similar manner to the above; i.e. >S=O rather than −S−O−.",
+                    "",
+                    "=== Inorganic disulfides ===",
+                    "The disulfide anion is S2−2, or −S−S−. In disulfide, sulfur exists in the reduced state with oxidation number −1. Its electron configuration then resembles that of a chlorine atom. It thus tends to form a covalent bond with another S− center to form S2−2 group, similar to elemental chlorine existing as the diatomic Cl2. Oxygen may also behave similarly, e.g. in peroxides such as H2O2. Examples of inorganic disulfides include:",
+                    "<info> Hydrogen disulfide (S2H2), the simplest inorganic disulfide",
+                    "<info> Disulfur dichloride (S2Cl2), a distillable liquid.",
+                    "<info> Iron disulfide (FeS2), or pyrite.",
+                    "",
+                    "=== Applications ===",
+                    "Aside from the major role in biology, disulfides are found in rubber that has been vulcanized with sulfur. The vulcanization of rubber results in crosslinking groups which consist of disulfide (and polysulfide) bonds; in analogy to the role of disulfides in proteins, the S−S linkages in rubber strongly affect the stability and rheology of the material.[14] Although the exact mechanism underlying the vulcanization process is not entirely understood (as multiple reaction pathways are present but the predominant one is unknown), it has been extensively shown that the extent to which the process is allowed to proceed determines the physical properties of the resulting rubber—namely, a greater degree of crosslinking corresponds to a stronger and more rigid material.[14][15] The current conventional methods of rubber manufacturing are typically irreversible, as the unregulated reaction mechanisms can result in complex networks of sulfide linkages; as such, rubber is considered to be a thermoset material.[14][16]",
+                    "",
+                    "=== See also ===",
+                    "<info> Thiosulfinate – Functional group",
+                    "<info> Diselenides in organoselenium chemistry",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Lee, J. D.; Bryant, M. W. R. (1969). \"The Crystal Structure of Diphenyl Disulphide\". Acta Crystallographica Section B Structural Crystallography and Crystal Chemistry. 25 (10): 2094–2101. Bibcode:1969AcCrB..25.2094L. doi:10.1107/S0567740869005188.",
+                    "<info> ^ Houk, Janette; Whitesides, George M. (1989). \"Characterization and stability of cyclic disulfides and cyclic dimeric bis(disulfides)\". Tetrahedron. 45: 91–102. doi:10.1016/0040-4020(89)80036-5.",
+                    "<info> ^ Cremlyn, R. J. (1996). An Introduction to Organosulfur Chemistry. Chichester: John Wiley and Sons. ISBN 0-471-95512-4.",
+                    "<info> ^ Sevier, C. S.; Kaiser, C. A. (2002). \"Formation and transfer of disulphide bonds in living cells\". Nature Reviews Molecular Cell Biology. 3 (11): 836–847. doi:10.1038/nrm954. PMID 12415301. S2CID 2885059.",
+                    "<info> ^ a b Witt, D. (2008). \"Recent developments in disulfide bond formation\". Synthesis. 2008 (16): 2491–2509. doi:10.1055/s-2008-1067188.",
+                    "<info> ^ Kreitman, Gal Y. (March 5, 2017). \"Copper(II)-Mediated Hydrogen Sulfide and Thiol Oxidation to Disulfides and Organic Polysulfanes and Their Reductive Cleavage in Wine: Mechanistic Elucidation and Potential Applications\". Journal of Agricultural and Food Chemistry. 65 (12): 2564–2571. Bibcode:2017JAFC...65.2564K. doi:10.1021/acs.jafc.6b05418. PMID 28260381. Retrieved 31 May 2021.",
+                    "<info> ^ M. E. Alonso; H. Aragona (1978). \"Sulfide Synthesis in Preparation of Unsymmetrical Dialkyl Disulfides: Sec-butyl Isopropyl Disulfide\". Org. Synth. 58: 147. doi:10.15227/orgsyn.058.0147.",
+                    "<info> ^ Hervé This. Can a cooked egg white be uncooked? The Chemical Intelligencer (Springer Verlag), 1996 (14), 51.",
+                    "<info> ^ TCEP technical information, from Interchim",
+                    "<info> ^ Hubacher, Max H. (1935). \"o-Nitrophenylsulfur Chloride\". Organic Syntheses. 15: 45. doi:10.15227/orgsyn.015.00452.Douglass, Irwin B.; Norton, Richard V. (1960). \"Methanesulfinyl Chloride\". Organic Syntheses. 40: 62. doi:10.15227/orgsyn.040.0062.",
+                    "<info> ^ Nikolai S. Zefirov, Nikolai V. Zyk, Elena K. Beloglazkina, Andrei G. Kutateladze (1993). \"Thiosulfonates: Synthesis, Reactions and Practical Applications\". Sulfur Reports. 14: 223–240. doi:10.1080/01961779308055018.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> ^ Gilbert, H. F. (1990). \"Molecular and Cellular Aspects of Thiol–Disulfide Exchange\". Advances in Enzymology and Related Areas of Molecular Biology. Vol. 63. pp. 69–172. doi:10.1002/9780470123096.ch2. ISBN 978-0-470-12309-6. PMID 2407068.",
+                    "<info> ^ Gilbert, H. F. (1995). \"Thiol/disulfide exchange equilibria and disulfide bond stability\". Biothiols, Part A: Monothiols and Dithiols, Protein Thiols, and Thiyl Radicals. Methods in Enzymology. Vol. 251. pp. 8–28. doi:10.1016/0076-6879(95)51107-5. ISBN 978-0-12-182152-4. PMID 7651233.",
+                    "<info> ^ a b c Akiba, M.; Hashim, A.S. (1997). \"Vulcanization and crosslinking in elastomers\". Progress in Polymer Science. 22 (3): 475–521. doi:10.1016/S0079-6700(96)00015-9 – via Elsevier Science Direct.",
+                    "<info> ^ Mutlu, Hatice; Theato, Patrick (2020). \"Making the Best of Polymers with Sulfur–Nitrogen Bonds: From Sources to Innovative Materials\". Macromolecular Rapid Communications. 41 (13) 2000181. doi:10.1002/marc.202000181. PMID 32462759. S2CID 218975603.",
+                    "<info> ^ Bin Rusayyis, Mohammed; Torkelson, John (2021). \"Reprocessable covalent adaptable networks with excellent elevated-temperature creep resistance: facilitation by dynamic, dissociative bis(hindered amino) disulfide bonds\". Polymer Chemistry. 12 (18): 2760–2771. doi:10.1039/D1PY00187F. S2CID 234925061.",
+                    "<info> Hubacher, Max H. (1935). \"o-Nitrophenylsulfur Chloride\". Organic Syntheses. 15: 45. doi:10.15227/orgsyn.015.00452.",
+                    "<info> Douglass, Irwin B.; Norton, Richard V. (1960). \"Methanesulfinyl Chloride\". Organic Syntheses. 40: 62. doi:10.15227/orgsyn.040.0062.",
+                    "",
+                    "=== External links ===",
+                    "<info> Media related to Disulfides at Wikimedia Commons",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "In chemistry, a disulfide (or disulphide in British English) is a compound containing a R−S−S−R′ functional group or the S2−2 anion. In inorganic chemistry, the anion appears in a few rare minerals. Compounds of the form R−S−S−H are usually called persulfides instead.",
+                            "Disulfide bridges also appear as a common post-translational modification in proteins."
+                        ]
+                    },
+                    "Organic disulfides": {
+                        "content": [
+                            "Disulfides have a C–S–S–C dihedral angle approaching 90°. The S–S bond length is 2.03 Å in diphenyl disulfide,[1] similar to that in elemental sulfur.",
+                            "Disulfides are usually symmetric but they can also be unsymmetric. Symmetrical disulfides are compounds of the formula RSSR. Most disulfides encountered in organosulfur chemistry are symmetrical disulfides. Unsymmetrical disulfides (also called heterodisulfides or mixed disulfides) are compounds of the formula RSSR'. Unsymmetrical disulfide are less common in organic chemistry, but many disulfides in nature are unsymmetrical.",
+                            "Disulfides can be components of rings. Lipoic acid, a 1,2-dithiolane is a major example. Rings with more than one disulfide usually tend to polymerize.[2]",
+                            "Thiuram disulfides, with the formula (R2NCSS)2, are disulfides but they behave distinctly because of the thiocarbonyl group.",
+                            "Disulfide bonds are strong, with a typical bond dissociation energy of 60 kcal/mol (251 kJ mol−1). However, being about 40% weaker than C−C and C−H bonds, the disulfide bond is often the \"weak link\" in many molecules. Furthermore, reflecting the polarizability of divalent sulfur, the S−S bond is susceptible to scission by polar reagents, both electrophiles and especially nucleophiles (Nu):[3] \n\n\n\n\nRS\n\n−\n\nSR\n+\n\nNu\n\n−\n\n\n⟶\nRS\n\n−\n\nNu\n+\n\nRS\n\n−\n\n\n\n\n\n{\\displaystyle {\\ce {RS-SR + Nu- -> RS-Nu + RS-}}}",
+                            "The disulfide bond is about 2.05 Å in length, about 0.5 Å longer than a C−C bond. Rotation about the S−S axis is subject to a low barrier. Disulfides show a distinct preference for dihedral angles approaching 90°. When the angle approaches 0° or 180°, then the disulfide is a significantly better oxidant.",
+                            "Disulfides where the two R groups are the same are called symmetric, examples being diphenyl disulfide and dimethyl disulfide. When the two R groups are not identical, the compound is said to be an asymmetric or mixed disulfide.[4]",
+                            "Although the hydrogenation of disulfides is usually not practical, the equilibrium constant for the reaction provides a measure of the standard redox potential for disulfides:",
+                            "This value is about −250 mV versus the standard hydrogen electrode (pH = 7). By comparison, the standard reduction potential for ferrodoxins is about −430 mV.",
+                            "Disulfide bonds are usually formed from the oxidation of thiol (−SH) groups, especially in biological contexts.[5] The transformation is depicted as follows:",
+                            "A variety of oxidants participate in this reaction including oxygen and hydrogen peroxide. Such reactions are thought to proceed via sulfenic acid intermediates. In the laboratory, iodine in the presence of base is commonly employed to oxidize thiols to disulfides. Several metals, such as copper(II) and iron(III) complexes affect this reaction.[6] Alternatively, disulfide bonds in proteins often formed by thiol-disulfide exchange:",
+                            "Such reactions are mediated by enzymes in some cases and in other cases are under equilibrium control, especially in the presence of a catalytic amount of base.",
+                            "The alkylation of alkali metal di- and polysulfides gives disulfides. \"Thiokol\" polymers arise when sodium polysulfide is treated with an alkyl dihalide. In the converse reaction, carbanionic reagents react with elemental sulfur to afford mixtures of the thioether, disulfide, and higher polysulfides. These reactions are often unselective but can be optimized for specific applications.",
+                            "Many specialized methods have been developed for forming unsymmetrical disulfides. Reagents that deliver the equivalent of \"RS+\" react with thiols to give asymmetrical disulfides:[5]",
+                            "where R″2N is the phthalimido group.\nBunte salts, derivatives of the type RSSO−3Na+are also used to generate unsymmetrical disulfides:[7]",
+                            "The most important aspect of disulfide bonds is their scission, as the S−S bond is usually the weakest bond in an organic molecule.[citation needed] Many specialized organic reactions have been developed to cleave the bond.",
+                            "A variety of reductants reduce disulfides to thiols. Hydride agents are typical reagents, and a common laboratory demonstration \"uncooks\" eggs with sodium borohydride.[8] Alkali metals effect the same reaction more aggressively: \n\n\n\n\nRS\n\n−\n\nSR\n+\n2\n\nNa\n⟶\n2\n\nNaSR\n,\n\n\n\n{\\displaystyle {\\ce {RS-SR + 2 Na -> 2 NaSR,}}}\n\n followed by protonation of the resulting metal thiolate: \n\n\n\n\nNaSR\n+\nHCl\n⟶\nHSR\n+\nNaCl\n\n\n\n{\\displaystyle {\\ce {NaSR + HCl -> HSR + NaCl}}}\n\nIn biochemistry labwork, thiols such as β-mercaptoethanol (β-ME) or dithiothreitol (DTT) serve as reductants through thiol-disulfide exchange. The thiol reagents are used in excess to drive the equilibrium to the right: \n\n\n\n\nRS\n\n−\n\nSR\n+\n2\n\n\nHOCH\n\n2\n\n\n\n\n\n\nCH\n\n2\n\n\n\n\n\nSH\n\n\n\n\n\n\n↽\n\n\n\n\n−\n\n\n\n\n\n\n\n\n−\n\n\n\n\n⇀\n\n\n\n\n\n\n\nHOCH\n\n2\n\n\n\n\n\n\nCH\n\n2\n\n\n\n\n\nS\n\n−\n\n\nSCH\n\n2\n\n\n\n\n\n\nCH\n\n2\n\n\n\n\n\nOH\n+\n2\n\nRSH\n\n\n\n{\\displaystyle {\\ce {RS-SR + 2 HOCH2CH2SH <=> HOCH2CH2S-SCH2CH2OH + 2 RSH}}}\n\n\nThe reductant tris(2-carboxyethyl)phosphine (TCEP) is useful, beside being odorless compared to β-ME and DTT, because it is selective, working at both alkaline and acidic conditions (unlike DTT), is more hydrophilic and more resistant to oxidation in air. Furthermore, it is often not needed to remove TCEP before modification of protein thiols.[9]",
+                            "In Zincke cleavage, halogens oxidize disulfides to a sulfenyl halide:[10]\n\n\n\n\nArSSAr\n+\n\nCl\n\n2\n\n\n\n\n\n⟶\n2\n\nArSCl\n\n\n\n{\\displaystyle {\\ce {ArSSAr + Cl2 -> 2 ArSCl}}}\n\nMore unusually, oxidation of disulfides gives first thiosulfinates and then thiosulfonates:[11]",
+                            "In thiol–disulfide exchange, a thiolate group −S− displaces one sulfur atom in a disulfide bond −S−S−. The original disulfide bond is broken, and its other sulfur atom is released as a new thiolate, carrying away the negative charge. Meanwhile, a new disulfide bond forms between the attacking thiolate and the original sulfur atom.[12][13]",
+                            "Thiolates, not thiols, attack disulfide bonds. Hence, thiol–disulfide exchange is inhibited at low pH (typically, below 8) where the protonated thiol form is favored relative to the deprotonated thiolate form. (The pKa of a typical thiol group is roughly 8.3, but can vary due to its environment.) Thiol-disulfide exchange is an important process for the formation of the correct disulfide bridges in proteins and to keep cysteine from unwanted oxidation during lab experiments.",
+                            "Thiosulfoxides are isomeric with disulfides, having the second sulfur branching from the first and not partaking in a continuous chain, i.e. >S=S rather than −S−S−.",
+                            "Compounds with three sulfur atoms, such as CH3S−S−SCH3, are called trisulfides. More extended species are well known, especially in rings.",
+                            "Disulfide is also used to refer to compounds that contain two sulfide (S2−) centers. The compound carbon disulfide, CS2 is described with the structural formula i.e. S=C=S. This molecule is not a disulfide in the sense that it lacks a S-S bond. Similarly, molybdenum disulfide, MoS2, is not a disulfide in the sense again that its sulfur atoms are not linked.",
+                            "Disulfide bonds are analogous but more common than related peroxide, thioselenide, and diselenide bonds. Intermediate compounds of these also exist, for example thioperoxides such as hydrogen thioperoxide, have the formula R1OSR2 (equivalently R2SOR1). These are isomeric to sulfoxides in a similar manner to the above; i.e. >S=O rather than −S−O−."
+                        ]
+                    },
+                    "Inorganic disulfides": {
+                        "content": [
+                            "The disulfide anion is S2−2, or −S−S−. In disulfide, sulfur exists in the reduced state with oxidation number −1. Its electron configuration then resembles that of a chlorine atom. It thus tends to form a covalent bond with another S− center to form S2−2 group, similar to elemental chlorine existing as the diatomic Cl2. Oxygen may also behave similarly, e.g. in peroxides such as H2O2. Examples of inorganic disulfides include:",
+                            "<info> Hydrogen disulfide (S2H2), the simplest inorganic disulfide",
+                            "<info> Disulfur dichloride (S2Cl2), a distillable liquid.",
+                            "<info> Iron disulfide (FeS2), or pyrite."
+                        ]
+                    },
+                    "Applications": {
+                        "content": [
+                            "Aside from the major role in biology, disulfides are found in rubber that has been vulcanized with sulfur. The vulcanization of rubber results in crosslinking groups which consist of disulfide (and polysulfide) bonds; in analogy to the role of disulfides in proteins, the S−S linkages in rubber strongly affect the stability and rheology of the material.[14] Although the exact mechanism underlying the vulcanization process is not entirely understood (as multiple reaction pathways are present but the predominant one is unknown), it has been extensively shown that the extent to which the process is allowed to proceed determines the physical properties of the resulting rubber—namely, a greater degree of crosslinking corresponds to a stronger and more rigid material.[14][15] The current conventional methods of rubber manufacturing are typically irreversible, as the unregulated reaction mechanisms can result in complex networks of sulfide linkages; as such, rubber is considered to be a thermoset material.[14][16]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Thiosulfinate – Functional group",
+                            "<info> Diselenides in organoselenium chemistry"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Lee, J. D.; Bryant, M. W. R. (1969). \"The Crystal Structure of Diphenyl Disulphide\". Acta Crystallographica Section B Structural Crystallography and Crystal Chemistry. 25 (10): 2094–2101. Bibcode:1969AcCrB..25.2094L. doi:10.1107/S0567740869005188.",
+                            "<info> ^ Houk, Janette; Whitesides, George M. (1989). \"Characterization and stability of cyclic disulfides and cyclic dimeric bis(disulfides)\". Tetrahedron. 45: 91–102. doi:10.1016/0040-4020(89)80036-5.",
+                            "<info> ^ Cremlyn, R. J. (1996). An Introduction to Organosulfur Chemistry. Chichester: John Wiley and Sons. ISBN 0-471-95512-4.",
+                            "<info> ^ Sevier, C. S.; Kaiser, C. A. (2002). \"Formation and transfer of disulphide bonds in living cells\". Nature Reviews Molecular Cell Biology. 3 (11): 836–847. doi:10.1038/nrm954. PMID 12415301. S2CID 2885059.",
+                            "<info> ^ a b Witt, D. (2008). \"Recent developments in disulfide bond formation\". Synthesis. 2008 (16): 2491–2509. doi:10.1055/s-2008-1067188.",
+                            "<info> ^ Kreitman, Gal Y. (March 5, 2017). \"Copper(II)-Mediated Hydrogen Sulfide and Thiol Oxidation to Disulfides and Organic Polysulfanes and Their Reductive Cleavage in Wine: Mechanistic Elucidation and Potential Applications\". Journal of Agricultural and Food Chemistry. 65 (12): 2564–2571. Bibcode:2017JAFC...65.2564K. doi:10.1021/acs.jafc.6b05418. PMID 28260381. Retrieved 31 May 2021.",
+                            "<info> ^ M. E. Alonso; H. Aragona (1978). \"Sulfide Synthesis in Preparation of Unsymmetrical Dialkyl Disulfides: Sec-butyl Isopropyl Disulfide\". Org. Synth. 58: 147. doi:10.15227/orgsyn.058.0147.",
+                            "<info> ^ Hervé This. Can a cooked egg white be uncooked? The Chemical Intelligencer (Springer Verlag), 1996 (14), 51.",
+                            "<info> ^ TCEP technical information, from Interchim",
+                            "<info> ^ Hubacher, Max H. (1935). \"o-Nitrophenylsulfur Chloride\". Organic Syntheses. 15: 45. doi:10.15227/orgsyn.015.00452.Douglass, Irwin B.; Norton, Richard V. (1960). \"Methanesulfinyl Chloride\". Organic Syntheses. 40: 62. doi:10.15227/orgsyn.040.0062.",
+                            "<info> ^ Nikolai S. Zefirov, Nikolai V. Zyk, Elena K. Beloglazkina, Andrei G. Kutateladze (1993). \"Thiosulfonates: Synthesis, Reactions and Practical Applications\". Sulfur Reports. 14: 223–240. doi:10.1080/01961779308055018.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> ^ Gilbert, H. F. (1990). \"Molecular and Cellular Aspects of Thiol–Disulfide Exchange\". Advances in Enzymology and Related Areas of Molecular Biology. Vol. 63. pp. 69–172. doi:10.1002/9780470123096.ch2. ISBN 978-0-470-12309-6. PMID 2407068.",
+                            "<info> ^ Gilbert, H. F. (1995). \"Thiol/disulfide exchange equilibria and disulfide bond stability\". Biothiols, Part A: Monothiols and Dithiols, Protein Thiols, and Thiyl Radicals. Methods in Enzymology. Vol. 251. pp. 8–28. doi:10.1016/0076-6879(95)51107-5. ISBN 978-0-12-182152-4. PMID 7651233.",
+                            "<info> ^ a b c Akiba, M.; Hashim, A.S. (1997). \"Vulcanization and crosslinking in elastomers\". Progress in Polymer Science. 22 (3): 475–521. doi:10.1016/S0079-6700(96)00015-9 – via Elsevier Science Direct.",
+                            "<info> ^ Mutlu, Hatice; Theato, Patrick (2020). \"Making the Best of Polymers with Sulfur–Nitrogen Bonds: From Sources to Innovative Materials\". Macromolecular Rapid Communications. 41 (13) 2000181. doi:10.1002/marc.202000181. PMID 32462759. S2CID 218975603.",
+                            "<info> ^ Bin Rusayyis, Mohammed; Torkelson, John (2021). \"Reprocessable covalent adaptable networks with excellent elevated-temperature creep resistance: facilitation by dynamic, dissociative bis(hindered amino) disulfide bonds\". Polymer Chemistry. 12 (18): 2760–2771. doi:10.1039/D1PY00187F. S2CID 234925061.",
+                            "<info> Hubacher, Max H. (1935). \"o-Nitrophenylsulfur Chloride\". Organic Syntheses. 15: 45. doi:10.15227/orgsyn.015.00452.",
+                            "<info> Douglass, Irwin B.; Norton, Richard V. (1960). \"Methanesulfinyl Chloride\". Organic Syntheses. 40: 62. doi:10.15227/orgsyn.040.0062."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Media related to Disulfides at Wikimedia Commons"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

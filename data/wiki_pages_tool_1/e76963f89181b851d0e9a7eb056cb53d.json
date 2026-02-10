@@ -1,0 +1,223 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/rare_disease": {
+                "title": "Rare disease",
+                "url": "https://en.wikipedia.org/wiki/rare_disease",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A rare disease is any disease that affects a small percentage of the population. In some parts of the world, the term orphan disease describes a rare disease whose rarity results in little or no funding or research for treatments, without financial incentives from governments or other agencies. Orphan drugs are medications targeting orphan diseases.",
+                    "Most rare diseases are genetic in origin and thus are present throughout the person's entire life, even if symptoms do not immediately appear. Many rare diseases appear early in life, and about 30% of children with rare diseases will die before reaching their fifth birthdays.[1] Fields condition is considered the rarest known disease, affecting three known individuals, two of whom are identical twins.[2] With four diagnosed patients in 27 years,[needs update?] ribose-5-phosphate isomerase deficiency is considered the second rarest.[3][4]",
+                    "While no single number has been agreed upon for which a disease is considered rare, several efforts have been undertaken to estimate the number of unique rare diseases. In 2019, the Monarch Initiative released a rare disease subset of the Mondo ontology that reconciles a wide variety of rare disease knowledge sources, such as OMIM and Orphanet. This was the first count since 1983, demonstrating that there were >10,500 rare diseases where prior estimates had been ~7,000 in the Orphan Drug Act.[5] Global Genes has also estimated that currently approximately 10,000 rare diseases exist globally, with 80% of these having identified genetic origins.[6]",
+                    "",
+                    "=== Definition ===",
+                    "There is no single, widely accepted definition for rare diseases. Some definitions rely solely on the number of people living with a disease, and other definitions include other factors, such as the existence of adequate treatments or the severity of the disease.",
+                    "In the United States, the Rare Diseases Act of 2002 defines rare disease strictly according to prevalence, specifically \"any disease or condition that affects fewer than 200,000 people in the United States\",[7] or about 1 in 1,500 people. This definition is essentially the same as that of the Orphan Drug Act of 1983, a federal law that was written to encourage research into rare diseases and possible cures.",
+                    "In Japan, the legal definition of a rare disease is one that affects fewer than 50,000 patients in Japan, or about 1 in 2,500 people.[8]",
+                    "The European Commission on Public Health defines rare diseases as \"life-threatening or chronically debilitating diseases which are of such low prevalence that special combined efforts are needed to address them\".[9] The term low prevalence is later defined as generally meaning fewer than 1 in 2,000 people.[10] Diseases that are statistically rare, but not also life-threatening, chronically debilitating, or inadequately treated, are excluded from their definition.",
+                    "The definitions used in the medical literature and by national health plans are similarly divided, with definitions ranging from 1/1,000 to 1/200,000.[8]",
+                    "",
+                    "=== Relationship to orphan diseases ===",
+                    "Because of definitions that include reference to treatment availability, a lack of resources, and severity of the disease, the term orphan disease is frequently used as a synonym for rare disease.[8] But in the United States and the European Union, \"orphan diseases\" have a distinct legal meaning.",
+                    "The United States' Orphan Drug Act includes both rare diseases and any non-rare diseases \"for which there is no reasonable expectation that the cost of developing and making available in the United States a drug for such disease or condition will [be] recovered from sales in the United States of such drug\" as orphan diseases.[13]",
+                    "The European Organization for Rare Diseases (EURORDIS) also includes both rare diseases and neglected diseases into a larger category of \"orphan diseases\".[14]",
+                    "",
+                    "=== Prevalence ===",
+                    "Prevalence (number of people living with a disease at a given moment), rather than incidence (number of new diagnoses in a given year), is used to describe the impact of rare diseases. The Global Genes Project estimates some 300 million people worldwide are affected by a rare disease.",
+                    "The European Organization for Rare Diseases (EURORDIS) estimates that between 3.5 and 5.9% of the world's population is affected by one of approx. 6,000 distinct rare diseases identified to-date.[15] European Union has suggested that between 6 and 8% of the European population could be affected by a rare disease sometime in their lives.[16]",
+                    "About 80% of rare diseases have a genetic component and only about 400 have therapies, according to Rare Genomics Institute.[17]",
+                    "Rare diseases can vary in prevalence between populations, so a disease that is rare in some populations may be common in others. This is especially true of genetic diseases and infectious diseases. An example is cystic fibrosis, a genetic disease: it is rare in most parts of Asia but relatively common in Europe and in populations of European descent. In smaller communities, the founder effect can result in a disease that is very rare worldwide being prevalent within the smaller community. Many infectious diseases are prevalent in a given geographic area but rare everywhere else. Other diseases, such as many rare forms of cancer, have no apparent pattern of distribution but are simply rare. The classification of other conditions depends in part on the population being studied: All forms of cancer in children are generally considered rare,[18] because so few children develop cancer, but the same cancer in adults may be more common.",
+                    "Estimating the incidence and prevalence of rare diseases is a complex process due to their wide range of prevalence rates. Rare diseases with higher prevalences can be estimated through a screening panel or patient registries, while diseases which are exceedingly rare may only be able to be estimated through a multi-step nationwide reporting process or case reports. Therefore, the data is often incomplete and complex to amalgamate, compare, and update continually. The Genetic and Rare Diseases Information Center at the National Center for Advancing Translational Sciences curates and compiles rare disease prevalence and incidence from PubMed articles and abstracts using a combination of deep learning algorithms and rare disease experts.[19]",
+                    "About 40 rare diseases have a far higher prevalence in Finland; these are known collectively as Finnish heritage disease. Similarly, there are rare genetic diseases among the Amish religious communities in the US and among ethnically Jewish people.",
+                    "",
+                    "=== Characteristics ===",
+                    "A rare disease is defined as one that affects fewer than 200,000 people across a broad range of possible disorders.[20] Chronic genetic diseases are commonly classified as rare.[20][21] Among numerous possibilities, rare diseases may result from bacterial or viral infections, allergies, chromosome disorders, degenerative and proliferative causes, affecting any body organ.[20] Rare diseases may be chronic or incurable, although many short-term medical conditions are also rare diseases.[20]",
+                    "",
+                    "=== Public research and government policy ===",
+                    "The NIH's Office of Rare Diseases Research (ORDR) was established by H.R. 4013/Public Law 107–280 in 2002.[22] H.R. 4014, signed the same day, refers to the \"Rare Diseases Orphan Product Development Act\".[23] Similar initiatives have been proposed in Europe.[24] The ORDR also runs the Rare Diseases Clinical Research Network (RDCRN). The RDCRN provides support for clinical studies and facilitating collaboration, study enrollment and data sharing.[25]",
+                    "In 2013, the United Kingdom government published The UK Strategy for Rare Diseases which \"aims to ensure no one gets left behind just because they have a rare disease\", with 51 recommendations for care and treatment across the UK to be implemented by 2020.[26] Health services in the four constituent countries agreed to adopt implementation plans by 2014, but by October 2016, the Health Service in England had not produced a plan and the all-party parliamentary group on Rare, Genetic and Undiagnosed Conditions produced a report Leaving No One Behind: Why England needs an implementation plan for the UK Strategy for Rare Diseases in February 2017.[27] In March 2017 it was announced that NHS England would develop an implementation plan.[28] In January 2018 NHS England published its Implementation Plan for the UK Strategy for Rare Diseases.[29] In January 2021 the Department of Health and Social Care published the UK Rare Diseases Framework, a policy paper which included a commitment that the four nations would develop action plans, working with the rare disease community, and that \"where possible, each nation will aim to publish the action plans in 2021\".[30] NHS England published England Rare Diseases Action Plan 2022 in February 2022.[31]",
+                    "Organisations around the world are exploring ways of involving people affected by rare diseases in helping shape future research, including using online methods to explore the perspectives of multiple stakeholders.[32]",
+                    "",
+                    "=== Public awareness ===",
+                    "Rare Disease Day is held in Europe, Canada, the United States,[33] and India on the last day of February (thus, in leap years, on February 29, the rarest day)[34] to raise awareness for rare diseases.[35][36][37][38] There are a number of non-profit and charitable organisations which push for further awareness, interest, and engagement in the subject of rare diseases, including EURORDIS, Genetic Alliance UK, and the Rare Revolution Magazine.[39] Some of them, often together with other organisations as universities, organise conferences on selected groups of diseases (for example on diseases of ectoderm) or rare diseases in general (e.g. European Conference on Rare Diseases & Orphan Products, ECRD), or in a special view on them, as the conference Rare diseases not only in the curriculum for medical education and healthcare.[40][41][42]",
+                    "",
+                    "=== See also ===",
+                    "<info> National Organization for Rare Disorders (NORD)",
+                    "<info> Undiagnosed Diseases Network (UDN)",
+                    "<info> Orphanet (Online portal for rare diseases and orphan drugs)",
+                    "<info> ICD coding for rare diseases",
+                    "<info> List of rare disease organisations",
+                    "<info> Orphanet Journal of Rare Diseases (academic journal)",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Rare Diseases\". Siope.Eu. 9 June 2009. Archived from the original on 3 December 2012. Retrieved 24 September 2012.",
+                    "<info> ^ Siegel-Itzkovich, Judy (24 May 2022). \"Israeli researchers find possible new therapies for rare neurological disorder\". The Jerusalem Post. Retrieved 4 October 2024. One of them, called Field's Disease, is considered to be the rarest orphan disease, as only three people are known to have ever had it, two of them being the twin sisters Catherine and Kirstie Fields from Wales.",
+                    "<info> ^ Wamelink MM, Grüning NM, Jansen EE, Bluemlein K, Lehrach H, Jakobs C, Ralser M (September 2010). \"The difference between rare and exceptionally rare: molecular characterization of ribose 5-phosphate isomerase deficiency\". Journal of Molecular Medicine. 88 (9): 931–9. doi:10.1007/s00109-010-0634-1. hdl:1871/34686. PMID 20499043. S2CID 10870492.",
+                    "<info> ^ Kaur, Parneet; Wamelink, Mirjam M. C.; van der Knaap, Marjo S.; Girisha, Katta Mohan; Shukla, Anju (1 August 2019). \"Confirmation of a Rare Genetic Leukoencephalopathy due to a Novel Bi-allelic Variant in RPIA\". European Journal of Medical Genetics. 62 (8) 103708. doi:10.1016/j.ejmg.2019.103708. ISSN 1769-7212. PMID 31247379. S2CID 195760193.",
+                    "<info> ^ Haendel, Melissa; Vasilevsky, Nicole; Unni, Deepak; Bologa, Cristian; Harris, Nomi; Rehm, Heidi; Hamosh, Ada; Baynam, Gareth; Groza, Tudor; McMurry, Julie; Dawkins, Hugh; Rath, Ana; Thaxon, Courtney; Bocci, Giovanni; Joachimiak, Marcin P. (February 2020). \"How many rare diseases are there?\". Nature Reviews. Drug Discovery. 19 (2): 77–78. doi:10.1038/d41573-019-00180-y. ISSN 1474-1776. PMC 7771654. PMID 32020066.",
+                    "<info> ^ \"RARE List\". globalgenes.org. Global Genes. 15 April 2016. Retrieved 29 January 2023.",
+                    "<info> ^ a b \"Rare Disease Act of 2002\". United States Congress. Retrieved 21 January 2022.",
+                    "<info> ^ a b c d \"Rare diseases: what are we talking about?\". Rare diseases centre – Venetian Region – Italy. Retrieved 21 January 2022.",
+                    "<info> ^ \"Useful Information on Rare Diseases from an EU Perspective\" (PDF). European Commission. Retrieved 19 May 2009.",
+                    "<info> ^ Baldovino S, Moliner AM, Taruscio D, Daina E, Roccatello D (June 2016). \"Rare Diseases in Europe: from a Wide to a Local Perspective\" (PDF). The Israel Medical Association Journal (Review). 18 (6): 359–63. PMID 27468531.",
+                    "<info> ^ \"KEI Briefing Note 2020:4 Selected Government Definitions of Orphan or Rare Diseases\". Knowledge Ecology International. Retrieved 12 September 2021.",
+                    "<info> ^ \"The UK Rare Diseases Framework\". GOV.UK. 9 January 2021. Retrieved 12 September 2021.",
+                    "<info> ^ Orphan Drug Act §526(a)(2)",
+                    "<info> ^ \"Rare Diseases: Understanding This Public Health Priority\" (PDF). European Organisation for Rare Diseases (EURORDIS). November 2005. Retrieved 16 May 2009.",
+                    "<info> ^ \"What is a rare disease?\". eurordis.org. Retrieved 4 August 2022.",
+                    "<info> ^ Nguengang Wakap, Stéphanie; Lambert, Deborah M.; Olry, Annie; Rodwell, Charlotte; Gueydan, Charlotte; Lanneau, Valérie; Murphy, Daniel; Le Cam, Yann; Rath, Ana (2020). \"Estimating cumulative point prevalence of rare diseases: analysis of the Orphanet database\". European Journal of Human Genetics. 28 (2): 165–173. doi:10.1038/s41431-019-0508-0. ISSN 1476-5438. PMC 6974615. PMID 31527858.",
+                    "<info> ^ Sanfilippo, Ana; Lin, Jimmy (2014). Rare Diseases, Diagnosis, Therapies, and Hope. St. Louis, MO: Rare Genomics Institute. p. 6.",
+                    "<info> ^ \"02/2009: Rare Cancers on Rare Disease Day\". Ecpc-online.org. 28 February 2009. Archived from the original on 26 July 2011. Retrieved 24 September 2012.",
+                    "<info> ^ Kariampuzha, William; Alyea, Gioconda; Qu, Sue; Sanjak, Jaleal; Mathé, Ewy; Sid, Eric; Chatelaine, Haley; Yadaw, Arjun; Xu, Yanji; Zhu, Qian (2023). \"Precision information extraction for rare disease epidemiology at scale\". Journal of Translational Medicine. 21 (1): 157. doi:10.1186/s12967-023-04011-y. PMC 9972634. PMID 36855134.",
+                    "<info> ^ a b c d \"Genetic and Rare Diseases Information Center\". National Center for Advancing Translational Sciences, US National Institutes of Health. 2019. Retrieved 12 October 2019.",
+                    "<info> ^ Aymé S, Schmidtke J (December 2007). \"Networking for rare diseases: a necessity for Europe\". Bundesgesundheitsblatt - Gesundheitsforschung - Gesundheitsschutz. 50 (12): 1477–83. doi:10.1007/s00103-007-0381-9. PMID 18026888. S2CID 36072660.",
+                    "<info> ^ \"President Signs Bills into Law\". georgewbush-whitehouse.archives.gov.",
+                    "<info> ^ \"NORD – National Organization for Rare Disorders, Inc\". Archived from the original on 18 June 2008.",
+                    "<info> ^ \"Newsletter\". OrphaNews – International.",
+                    "<info> ^ Network, Rare Diseases Clinical Research. \"About Us\". Rare Diseases Clinical Research Network.",
+                    "<info> ^ The UK Strategy for Rare Diseases (PDF). Department of Health. 2013. Retrieved 26 October 2017.",
+                    "<info> ^ All Party Parliamentary Group on Rare, Genetic and Undiagnosed Conditions (February 2017). Leaving No One Behind: Why England needs an implementation plan for the UK Strategy for Rare Diseases (PDF). Rare Disease UK. Retrieved 29 January 2018.",
+                    "<info> ^ \"The Westminster All Party Parliamentary Group on Rare, Genetic and Undiagnosed Conditions\". Genetic Alliance UK. Retrieved 26 October 2017.",
+                    "<info> ^ Implementation Plan for the UK Strategy for Rare Diseases (PDF). NHS England. 29 January 2018. Retrieved 29 January 2018.",
+                    "<info> ^ \"The UK Rare Diseases Framework\". GOV.UK. Department of Health and Social Care. 9 January 2021. Retrieved 12 January 2021.",
+                    "<info> ^ \"England Rare Diseases Action Plan 2022\". GOV.UK. Department of Health & Social Care. Retrieved 22 March 2022.",
+                    "<info> ^ Nunn JS, Gwynne K, Gray S, Lacaze P (March 2021). \"Involving people affected by a rare condition in shaping future genomic research\". Research Involvement and Engagement. 7 (1) 14. doi:10.1186/s40900-021-00256-3. PMC 7958104. PMID 33722276.",
+                    "<info> ^ \"FDA Advances Rare Disease Drug Development with New Evidence Principles\". FDA. 3 September 2025.",
+                    "<info> ^ \"Rare Disease Day\". Genetic Alliance. Retrieved 29 February 2024. chosen because 29 February is the rarest day of the year",
+                    "<info> ^ \"February 29th Is The First Rare Disease Day\". Medical News Today. 28 February 2008. Archived from the original on 7 June 2020. Retrieved 14 February 2009.",
+                    "<info> ^ \"Join Us In Observing Rare Disease Day On Feb. 28, 2009!\". National Organization for Rare Disorders. Archived from the original on 18 December 2008.",
+                    "<info> ^ \"Building a Strong Rare Disease Community: How You Can Help\". 5 March 2025. Retrieved 5 March 2025.",
+                    "<info> ^ \"Rare Diseases Day: Experts call for more research for patients' welfare\". The Indian Express. 28 February 2021. Retrieved 12 September 2021.",
+                    "<info> ^ \"Rare Revolution Magazine\". rarerevolutionmagazine.com/. Retrieved 27 September 2023.",
+                    "<info> ^ Wright, John Timothy; Abbott, Becky M.; Salois, Maddison N.; Gugger, Jessica A; Parraga, Shirley P; Swanson, Amanda K.; Fete, Mary; Koster, Maranke I. (2023). \"Rare diseases of ectoderm: Translating discovery to therapy\". American Journal of Medical Genetics. Part A. 191 (3): 902–909. doi:10.1002/ajmg.a.63090. ISSN 1552-4833. PMID 36534506.",
+                    "<info> ^ \"10th European Conference on Rare Diseases & Orphan Products (ECRD 2020)\". Orphanet Journal of Rare Diseases. 15 (Suppl 1) 310. 2020. doi:10.1186/s13023-020-01550-1. ISSN 1750-1172. PMC 7649705. PMID 33168048.",
+                    "<info> ^ Skoczylas, Michał M.; Rudnicki, Jacek; Ślęzak, Ryszard (2015). \"The 2nd conference 'Rare diseases not only in the curriculum', Szczecin - Wrocław, 26 and 30 May 2015\". Wiadomości Lekarskie (in Polish). 68 (3 pt 2): 417–418. doi:10.1002/ajmg.a.63090. ISSN 2719-342X. PMID 28501846.",
+                    "",
+                    "=== External links ===",
+                    "<info> Database of rare diseases at GARD, The United States Genetic and Rare Diseases Information Center",
+                    "<info> Database of rare diseases at Orphanet",
+                    "<info> National Organization for Rare Disorders (United States)",
+                    "<info> Rare diseases search engine",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A rare disease is any disease that affects a small percentage of the population. In some parts of the world, the term orphan disease describes a rare disease whose rarity results in little or no funding or research for treatments, without financial incentives from governments or other agencies. Orphan drugs are medications targeting orphan diseases.",
+                            "Most rare diseases are genetic in origin and thus are present throughout the person's entire life, even if symptoms do not immediately appear. Many rare diseases appear early in life, and about 30% of children with rare diseases will die before reaching their fifth birthdays.[1] Fields condition is considered the rarest known disease, affecting three known individuals, two of whom are identical twins.[2] With four diagnosed patients in 27 years,[needs update?] ribose-5-phosphate isomerase deficiency is considered the second rarest.[3][4]",
+                            "While no single number has been agreed upon for which a disease is considered rare, several efforts have been undertaken to estimate the number of unique rare diseases. In 2019, the Monarch Initiative released a rare disease subset of the Mondo ontology that reconciles a wide variety of rare disease knowledge sources, such as OMIM and Orphanet. This was the first count since 1983, demonstrating that there were >10,500 rare diseases where prior estimates had been ~7,000 in the Orphan Drug Act.[5] Global Genes has also estimated that currently approximately 10,000 rare diseases exist globally, with 80% of these having identified genetic origins.[6]"
+                        ]
+                    },
+                    "Definition": {
+                        "content": [
+                            "There is no single, widely accepted definition for rare diseases. Some definitions rely solely on the number of people living with a disease, and other definitions include other factors, such as the existence of adequate treatments or the severity of the disease.",
+                            "In the United States, the Rare Diseases Act of 2002 defines rare disease strictly according to prevalence, specifically \"any disease or condition that affects fewer than 200,000 people in the United States\",[7] or about 1 in 1,500 people. This definition is essentially the same as that of the Orphan Drug Act of 1983, a federal law that was written to encourage research into rare diseases and possible cures.",
+                            "In Japan, the legal definition of a rare disease is one that affects fewer than 50,000 patients in Japan, or about 1 in 2,500 people.[8]",
+                            "The European Commission on Public Health defines rare diseases as \"life-threatening or chronically debilitating diseases which are of such low prevalence that special combined efforts are needed to address them\".[9] The term low prevalence is later defined as generally meaning fewer than 1 in 2,000 people.[10] Diseases that are statistically rare, but not also life-threatening, chronically debilitating, or inadequately treated, are excluded from their definition.",
+                            "The definitions used in the medical literature and by national health plans are similarly divided, with definitions ranging from 1/1,000 to 1/200,000.[8]"
+                        ]
+                    },
+                    "Relationship to orphan diseases": {
+                        "content": [
+                            "Because of definitions that include reference to treatment availability, a lack of resources, and severity of the disease, the term orphan disease is frequently used as a synonym for rare disease.[8] But in the United States and the European Union, \"orphan diseases\" have a distinct legal meaning.",
+                            "The United States' Orphan Drug Act includes both rare diseases and any non-rare diseases \"for which there is no reasonable expectation that the cost of developing and making available in the United States a drug for such disease or condition will [be] recovered from sales in the United States of such drug\" as orphan diseases.[13]",
+                            "The European Organization for Rare Diseases (EURORDIS) also includes both rare diseases and neglected diseases into a larger category of \"orphan diseases\".[14]"
+                        ]
+                    },
+                    "Prevalence": {
+                        "content": [
+                            "Prevalence (number of people living with a disease at a given moment), rather than incidence (number of new diagnoses in a given year), is used to describe the impact of rare diseases. The Global Genes Project estimates some 300 million people worldwide are affected by a rare disease.",
+                            "The European Organization for Rare Diseases (EURORDIS) estimates that between 3.5 and 5.9% of the world's population is affected by one of approx. 6,000 distinct rare diseases identified to-date.[15] European Union has suggested that between 6 and 8% of the European population could be affected by a rare disease sometime in their lives.[16]",
+                            "About 80% of rare diseases have a genetic component and only about 400 have therapies, according to Rare Genomics Institute.[17]",
+                            "Rare diseases can vary in prevalence between populations, so a disease that is rare in some populations may be common in others. This is especially true of genetic diseases and infectious diseases. An example is cystic fibrosis, a genetic disease: it is rare in most parts of Asia but relatively common in Europe and in populations of European descent. In smaller communities, the founder effect can result in a disease that is very rare worldwide being prevalent within the smaller community. Many infectious diseases are prevalent in a given geographic area but rare everywhere else. Other diseases, such as many rare forms of cancer, have no apparent pattern of distribution but are simply rare. The classification of other conditions depends in part on the population being studied: All forms of cancer in children are generally considered rare,[18] because so few children develop cancer, but the same cancer in adults may be more common.",
+                            "Estimating the incidence and prevalence of rare diseases is a complex process due to their wide range of prevalence rates. Rare diseases with higher prevalences can be estimated through a screening panel or patient registries, while diseases which are exceedingly rare may only be able to be estimated through a multi-step nationwide reporting process or case reports. Therefore, the data is often incomplete and complex to amalgamate, compare, and update continually. The Genetic and Rare Diseases Information Center at the National Center for Advancing Translational Sciences curates and compiles rare disease prevalence and incidence from PubMed articles and abstracts using a combination of deep learning algorithms and rare disease experts.[19]",
+                            "About 40 rare diseases have a far higher prevalence in Finland; these are known collectively as Finnish heritage disease. Similarly, there are rare genetic diseases among the Amish religious communities in the US and among ethnically Jewish people."
+                        ]
+                    },
+                    "Characteristics": {
+                        "content": [
+                            "A rare disease is defined as one that affects fewer than 200,000 people across a broad range of possible disorders.[20] Chronic genetic diseases are commonly classified as rare.[20][21] Among numerous possibilities, rare diseases may result from bacterial or viral infections, allergies, chromosome disorders, degenerative and proliferative causes, affecting any body organ.[20] Rare diseases may be chronic or incurable, although many short-term medical conditions are also rare diseases.[20]"
+                        ]
+                    },
+                    "Public research and government policy": {
+                        "content": [
+                            "The NIH's Office of Rare Diseases Research (ORDR) was established by H.R. 4013/Public Law 107–280 in 2002.[22] H.R. 4014, signed the same day, refers to the \"Rare Diseases Orphan Product Development Act\".[23] Similar initiatives have been proposed in Europe.[24] The ORDR also runs the Rare Diseases Clinical Research Network (RDCRN). The RDCRN provides support for clinical studies and facilitating collaboration, study enrollment and data sharing.[25]",
+                            "In 2013, the United Kingdom government published The UK Strategy for Rare Diseases which \"aims to ensure no one gets left behind just because they have a rare disease\", with 51 recommendations for care and treatment across the UK to be implemented by 2020.[26] Health services in the four constituent countries agreed to adopt implementation plans by 2014, but by October 2016, the Health Service in England had not produced a plan and the all-party parliamentary group on Rare, Genetic and Undiagnosed Conditions produced a report Leaving No One Behind: Why England needs an implementation plan for the UK Strategy for Rare Diseases in February 2017.[27] In March 2017 it was announced that NHS England would develop an implementation plan.[28] In January 2018 NHS England published its Implementation Plan for the UK Strategy for Rare Diseases.[29] In January 2021 the Department of Health and Social Care published the UK Rare Diseases Framework, a policy paper which included a commitment that the four nations would develop action plans, working with the rare disease community, and that \"where possible, each nation will aim to publish the action plans in 2021\".[30] NHS England published England Rare Diseases Action Plan 2022 in February 2022.[31]",
+                            "Organisations around the world are exploring ways of involving people affected by rare diseases in helping shape future research, including using online methods to explore the perspectives of multiple stakeholders.[32]"
+                        ]
+                    },
+                    "Public awareness": {
+                        "content": [
+                            "Rare Disease Day is held in Europe, Canada, the United States,[33] and India on the last day of February (thus, in leap years, on February 29, the rarest day)[34] to raise awareness for rare diseases.[35][36][37][38] There are a number of non-profit and charitable organisations which push for further awareness, interest, and engagement in the subject of rare diseases, including EURORDIS, Genetic Alliance UK, and the Rare Revolution Magazine.[39] Some of them, often together with other organisations as universities, organise conferences on selected groups of diseases (for example on diseases of ectoderm) or rare diseases in general (e.g. European Conference on Rare Diseases & Orphan Products, ECRD), or in a special view on them, as the conference Rare diseases not only in the curriculum for medical education and healthcare.[40][41][42]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> National Organization for Rare Disorders (NORD)",
+                            "<info> Undiagnosed Diseases Network (UDN)",
+                            "<info> Orphanet (Online portal for rare diseases and orphan drugs)",
+                            "<info> ICD coding for rare diseases",
+                            "<info> List of rare disease organisations",
+                            "<info> Orphanet Journal of Rare Diseases (academic journal)"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Rare Diseases\". Siope.Eu. 9 June 2009. Archived from the original on 3 December 2012. Retrieved 24 September 2012.",
+                            "<info> ^ Siegel-Itzkovich, Judy (24 May 2022). \"Israeli researchers find possible new therapies for rare neurological disorder\". The Jerusalem Post. Retrieved 4 October 2024. One of them, called Field's Disease, is considered to be the rarest orphan disease, as only three people are known to have ever had it, two of them being the twin sisters Catherine and Kirstie Fields from Wales.",
+                            "<info> ^ Wamelink MM, Grüning NM, Jansen EE, Bluemlein K, Lehrach H, Jakobs C, Ralser M (September 2010). \"The difference between rare and exceptionally rare: molecular characterization of ribose 5-phosphate isomerase deficiency\". Journal of Molecular Medicine. 88 (9): 931–9. doi:10.1007/s00109-010-0634-1. hdl:1871/34686. PMID 20499043. S2CID 10870492.",
+                            "<info> ^ Kaur, Parneet; Wamelink, Mirjam M. C.; van der Knaap, Marjo S.; Girisha, Katta Mohan; Shukla, Anju (1 August 2019). \"Confirmation of a Rare Genetic Leukoencephalopathy due to a Novel Bi-allelic Variant in RPIA\". European Journal of Medical Genetics. 62 (8) 103708. doi:10.1016/j.ejmg.2019.103708. ISSN 1769-7212. PMID 31247379. S2CID 195760193.",
+                            "<info> ^ Haendel, Melissa; Vasilevsky, Nicole; Unni, Deepak; Bologa, Cristian; Harris, Nomi; Rehm, Heidi; Hamosh, Ada; Baynam, Gareth; Groza, Tudor; McMurry, Julie; Dawkins, Hugh; Rath, Ana; Thaxon, Courtney; Bocci, Giovanni; Joachimiak, Marcin P. (February 2020). \"How many rare diseases are there?\". Nature Reviews. Drug Discovery. 19 (2): 77–78. doi:10.1038/d41573-019-00180-y. ISSN 1474-1776. PMC 7771654. PMID 32020066.",
+                            "<info> ^ \"RARE List\". globalgenes.org. Global Genes. 15 April 2016. Retrieved 29 January 2023.",
+                            "<info> ^ a b \"Rare Disease Act of 2002\". United States Congress. Retrieved 21 January 2022.",
+                            "<info> ^ a b c d \"Rare diseases: what are we talking about?\". Rare diseases centre – Venetian Region – Italy. Retrieved 21 January 2022.",
+                            "<info> ^ \"Useful Information on Rare Diseases from an EU Perspective\" (PDF). European Commission. Retrieved 19 May 2009.",
+                            "<info> ^ Baldovino S, Moliner AM, Taruscio D, Daina E, Roccatello D (June 2016). \"Rare Diseases in Europe: from a Wide to a Local Perspective\" (PDF). The Israel Medical Association Journal (Review). 18 (6): 359–63. PMID 27468531.",
+                            "<info> ^ \"KEI Briefing Note 2020:4 Selected Government Definitions of Orphan or Rare Diseases\". Knowledge Ecology International. Retrieved 12 September 2021.",
+                            "<info> ^ \"The UK Rare Diseases Framework\". GOV.UK. 9 January 2021. Retrieved 12 September 2021.",
+                            "<info> ^ Orphan Drug Act §526(a)(2)",
+                            "<info> ^ \"Rare Diseases: Understanding This Public Health Priority\" (PDF). European Organisation for Rare Diseases (EURORDIS). November 2005. Retrieved 16 May 2009.",
+                            "<info> ^ \"What is a rare disease?\". eurordis.org. Retrieved 4 August 2022.",
+                            "<info> ^ Nguengang Wakap, Stéphanie; Lambert, Deborah M.; Olry, Annie; Rodwell, Charlotte; Gueydan, Charlotte; Lanneau, Valérie; Murphy, Daniel; Le Cam, Yann; Rath, Ana (2020). \"Estimating cumulative point prevalence of rare diseases: analysis of the Orphanet database\". European Journal of Human Genetics. 28 (2): 165–173. doi:10.1038/s41431-019-0508-0. ISSN 1476-5438. PMC 6974615. PMID 31527858.",
+                            "<info> ^ Sanfilippo, Ana; Lin, Jimmy (2014). Rare Diseases, Diagnosis, Therapies, and Hope. St. Louis, MO: Rare Genomics Institute. p. 6.",
+                            "<info> ^ \"02/2009: Rare Cancers on Rare Disease Day\". Ecpc-online.org. 28 February 2009. Archived from the original on 26 July 2011. Retrieved 24 September 2012.",
+                            "<info> ^ Kariampuzha, William; Alyea, Gioconda; Qu, Sue; Sanjak, Jaleal; Mathé, Ewy; Sid, Eric; Chatelaine, Haley; Yadaw, Arjun; Xu, Yanji; Zhu, Qian (2023). \"Precision information extraction for rare disease epidemiology at scale\". Journal of Translational Medicine. 21 (1): 157. doi:10.1186/s12967-023-04011-y. PMC 9972634. PMID 36855134.",
+                            "<info> ^ a b c d \"Genetic and Rare Diseases Information Center\". National Center for Advancing Translational Sciences, US National Institutes of Health. 2019. Retrieved 12 October 2019.",
+                            "<info> ^ Aymé S, Schmidtke J (December 2007). \"Networking for rare diseases: a necessity for Europe\". Bundesgesundheitsblatt - Gesundheitsforschung - Gesundheitsschutz. 50 (12): 1477–83. doi:10.1007/s00103-007-0381-9. PMID 18026888. S2CID 36072660.",
+                            "<info> ^ \"President Signs Bills into Law\". georgewbush-whitehouse.archives.gov.",
+                            "<info> ^ \"NORD – National Organization for Rare Disorders, Inc\". Archived from the original on 18 June 2008.",
+                            "<info> ^ \"Newsletter\". OrphaNews – International.",
+                            "<info> ^ Network, Rare Diseases Clinical Research. \"About Us\". Rare Diseases Clinical Research Network.",
+                            "<info> ^ The UK Strategy for Rare Diseases (PDF). Department of Health. 2013. Retrieved 26 October 2017.",
+                            "<info> ^ All Party Parliamentary Group on Rare, Genetic and Undiagnosed Conditions (February 2017). Leaving No One Behind: Why England needs an implementation plan for the UK Strategy for Rare Diseases (PDF). Rare Disease UK. Retrieved 29 January 2018.",
+                            "<info> ^ \"The Westminster All Party Parliamentary Group on Rare, Genetic and Undiagnosed Conditions\". Genetic Alliance UK. Retrieved 26 October 2017.",
+                            "<info> ^ Implementation Plan for the UK Strategy for Rare Diseases (PDF). NHS England. 29 January 2018. Retrieved 29 January 2018.",
+                            "<info> ^ \"The UK Rare Diseases Framework\". GOV.UK. Department of Health and Social Care. 9 January 2021. Retrieved 12 January 2021.",
+                            "<info> ^ \"England Rare Diseases Action Plan 2022\". GOV.UK. Department of Health & Social Care. Retrieved 22 March 2022.",
+                            "<info> ^ Nunn JS, Gwynne K, Gray S, Lacaze P (March 2021). \"Involving people affected by a rare condition in shaping future genomic research\". Research Involvement and Engagement. 7 (1) 14. doi:10.1186/s40900-021-00256-3. PMC 7958104. PMID 33722276.",
+                            "<info> ^ \"FDA Advances Rare Disease Drug Development with New Evidence Principles\". FDA. 3 September 2025.",
+                            "<info> ^ \"Rare Disease Day\". Genetic Alliance. Retrieved 29 February 2024. chosen because 29 February is the rarest day of the year",
+                            "<info> ^ \"February 29th Is The First Rare Disease Day\". Medical News Today. 28 February 2008. Archived from the original on 7 June 2020. Retrieved 14 February 2009.",
+                            "<info> ^ \"Join Us In Observing Rare Disease Day On Feb. 28, 2009!\". National Organization for Rare Disorders. Archived from the original on 18 December 2008.",
+                            "<info> ^ \"Building a Strong Rare Disease Community: How You Can Help\". 5 March 2025. Retrieved 5 March 2025.",
+                            "<info> ^ \"Rare Diseases Day: Experts call for more research for patients' welfare\". The Indian Express. 28 February 2021. Retrieved 12 September 2021.",
+                            "<info> ^ \"Rare Revolution Magazine\". rarerevolutionmagazine.com/. Retrieved 27 September 2023.",
+                            "<info> ^ Wright, John Timothy; Abbott, Becky M.; Salois, Maddison N.; Gugger, Jessica A; Parraga, Shirley P; Swanson, Amanda K.; Fete, Mary; Koster, Maranke I. (2023). \"Rare diseases of ectoderm: Translating discovery to therapy\". American Journal of Medical Genetics. Part A. 191 (3): 902–909. doi:10.1002/ajmg.a.63090. ISSN 1552-4833. PMID 36534506.",
+                            "<info> ^ \"10th European Conference on Rare Diseases & Orphan Products (ECRD 2020)\". Orphanet Journal of Rare Diseases. 15 (Suppl 1) 310. 2020. doi:10.1186/s13023-020-01550-1. ISSN 1750-1172. PMC 7649705. PMID 33168048.",
+                            "<info> ^ Skoczylas, Michał M.; Rudnicki, Jacek; Ślęzak, Ryszard (2015). \"The 2nd conference 'Rare diseases not only in the curriculum', Szczecin - Wrocław, 26 and 30 May 2015\". Wiadomości Lekarskie (in Polish). 68 (3 pt 2): 417–418. doi:10.1002/ajmg.a.63090. ISSN 2719-342X. PMID 28501846."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Database of rare diseases at GARD, The United States Genetic and Rare Diseases Information Center",
+                            "<info> Database of rare diseases at Orphanet",
+                            "<info> National Organization for Rare Disorders (United States)",
+                            "<info> Rare diseases search engine"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

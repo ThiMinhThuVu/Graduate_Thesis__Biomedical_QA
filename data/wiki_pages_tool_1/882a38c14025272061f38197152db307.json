@@ -1,0 +1,45 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/caviar_tongue": {
+                "title": "Caviar tongue",
+                "url": "https://en.wikipedia.org/wiki/caviar_tongue",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Caviar tongue  is a condition characterized by the purplish nodular swelling of veins found on the undersurface of the tongue.[1]",
+                    "It is normal for there to be veins visible underneath the tongue, partly because the mucous membrane is so thin and translucent in this region, but where these vessels become dilated and tortuous, they may appear round and black like caviar.[2] Caviar tongue is also referred to as sublingual varices (plural) and varix (singular) and look like varicose veins in the tongue. It is a benign, asymptomatic, venous lesion.",
+                    "",
+                    "=== History ===",
+                    "It was first described by William Bennett Bean in 1952, when he thought it looked like caviar.[3]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ James, William D.; Elston, Dirk; Treat, James R.; Rosenbach, Misha A.; Neuhaus, Isaac (2020). \"34. Disorders of the mucous membranes\". Andrews' Diseases of the Skin: Clinical Dermatology (13th ed.). Edinburgh: Elsevier. pp. 800–801. ISBN 978-0-323-54753-6.",
+                    "<info> ^ Viswanath, V; Nair, S; Chavan, N; Torsekar, R (Jan–Feb 2011). \"Caviar tongue\". Indian Journal of Dermatology, Venereology and Leprology. 77 (1): 78–9. doi:10.4103/0378-6323.75002. PMID 21220892.",
+                    "<info> ^ Mulliken, John B. (2013). \"13. Capillary malformations, hyperkeratotic stains, telangiectasias, and miscellaneous vascular blots\". In Mulliken, John B.; Burrows, Patricia E.; Fishman, Steven J. (eds.). Mulliken and Young's Vascular Anomalies: Hemangiomas and Malformations (2nd ed.). Oxford University Press. pp. 552–553. ISBN 978-0-19-972254-9.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Caviar tongue  is a condition characterized by the purplish nodular swelling of veins found on the undersurface of the tongue.[1]",
+                            "It is normal for there to be veins visible underneath the tongue, partly because the mucous membrane is so thin and translucent in this region, but where these vessels become dilated and tortuous, they may appear round and black like caviar.[2] Caviar tongue is also referred to as sublingual varices (plural) and varix (singular) and look like varicose veins in the tongue. It is a benign, asymptomatic, venous lesion."
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "It was first described by William Bennett Bean in 1952, when he thought it looked like caviar.[3]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ James, William D.; Elston, Dirk; Treat, James R.; Rosenbach, Misha A.; Neuhaus, Isaac (2020). \"34. Disorders of the mucous membranes\". Andrews' Diseases of the Skin: Clinical Dermatology (13th ed.). Edinburgh: Elsevier. pp. 800–801. ISBN 978-0-323-54753-6.",
+                            "<info> ^ Viswanath, V; Nair, S; Chavan, N; Torsekar, R (Jan–Feb 2011). \"Caviar tongue\". Indian Journal of Dermatology, Venereology and Leprology. 77 (1): 78–9. doi:10.4103/0378-6323.75002. PMID 21220892.",
+                            "<info> ^ Mulliken, John B. (2013). \"13. Capillary malformations, hyperkeratotic stains, telangiectasias, and miscellaneous vascular blots\". In Mulliken, John B.; Burrows, Patricia E.; Fishman, Steven J. (eds.). Mulliken and Young's Vascular Anomalies: Hemangiomas and Malformations (2nd ed.). Oxford University Press. pp. 552–553. ISBN 978-0-19-972254-9."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

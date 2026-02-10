@@ -1,0 +1,245 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_cancer_types": {
+                "title": "List of cancer types",
+                "url": "https://en.wikipedia.org/wiki/list_of_cancer_types",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The following is a list of cancer types. Cancer is a group of diseases that involve abnormal increases in the number of cells, with the potential to invade or spread to other parts of the body.[1] Not all tumors or lumps are cancerous; benign tumors are not classified as being cancer because they do not spread to other parts of the body.[1] There are over 200 different known cancers that affect humans.[1]",
+                    "Cancers are often described by the body part that they originated in.  However, some body parts contain multiple types of tissue, so for greater precision, cancers are additionally classified by the type of cell that the tumor cells originated from. These types include:",
+                    "<info> Carcinoma: Cancers derived from epithelial cells. This group includes many of the most common cancers that occur in older adults. Nearly all cancers developing in the breast, prostate, lung, pancreas, and colon are carcinomas.",
+                    "<info> Sarcoma: Cancers arising from connective tissue (i.e. bone, cartilage, fat, nerve), each of which develop from cells originating in mesenchymal cells outside of the bone marrow.",
+                    "<info> Lymphoma and leukemia: These two classes of cancer arise from immature cells that originate in the bone marrow, and are intended to fully differentiate and mature into normal components of the immune system and the blood, respectively. Acute lymphoblastic leukemia is the most common type of cancer in children, accounting for ~30% of cases.[2]  However, far more adults than children develop lymphoma and leukemia.",
+                    "<info> Germ cell tumor: Cancers derived from pluripotent cells, most often presenting in the testicle or the ovary (seminoma and dysgerminoma, respectively).",
+                    "<info> Blastoma: Cancers derived from immature \"precursor\" cells or embryonic tissue. Blastomas are generally more common in children (e.g. neuroblastoma, retinoblastoma, nephroblastoma, hepatoblastoma, medulloblastoma, etc.) than in older adults.",
+                    "Cancers are usually named using -carcinoma, -sarcoma or -blastoma as a suffix, with the Latin or Greek word for the organ or tissue of origin as the root. For example, the most common cancer of the liver parenchyma (\"hepato-\" = liver), arising from malignant epithelial cells (\"carcinoma\"), would be called a hepatocarcinoma, while a malignancy arising from primitive liver precursor cells is called a hepatoblastoma. Similarly, a cancer arising from malignant fat cells would be termed a liposarcoma.",
+                    "For some common cancers, the English organ name is used. For example, the most common type of breast cancer is called ductal carcinoma of the breast.",
+                    "Benign tumors (which are not cancers) are usually named using -oma as a suffix with the organ name as the root. For example, a benign tumor of smooth muscle cells is called a leiomyoma (the common name of this frequently occurring benign tumor in the uterus is fibroid). Confusingly, some types of cancer use the -noma suffix, examples including melanoma and seminoma.[4][5]",
+                    "Some types of cancer are named for the size and shape of the cells under a microscope, such as giant cell carcinoma, spindle cell carcinoma, and small-cell carcinoma.",
+                    "",
+                    "=== Bone and muscle sarcoma ===",
+                    "<info> Fibrocartilaginous mesenchymoma of bone",
+                    "<info> Malignant fibrous histiocytoma of bone/osteosarcoma",
+                    "",
+                    "=== Brain and nervous system ===",
+                    "<info> Primary central nervous system lymphoma",
+                    "<info> Visual pathway and hypothalamic glioma",
+                    "",
+                    "=== Breast ===",
+                    "<info> Ductal carcinoma in situ",
+                    "<info> Invasive cribriform carcinoma of the breast (also termed invasive cribriform carcinoma)",
+                    "<info> Mucinous carcinoma of the breast",
+                    "<info> Papillary carcinomas of the breast",
+                    "",
+                    "=== Endocrine system ===",
+                    "<info> Islet cell carcinoma (endocrine pancreas)",
+                    "<info> Multiple endocrine neoplasia syndrome",
+                    "",
+                    "=== Gastrointestinal ===",
+                    "<info> Extrahepatic bile duct cancer",
+                    "<info> Gastrointestinal stromal tumor (GIST)",
+                    "<info> Pancreatic cancer, islet cell",
+                    "",
+                    "=== Genitourinary and gynecologic ===",
+                    "<info> Extragonadal germ cell tumor",
+                    "<info> Ovarian epithelial cancer (surface epithelial-stromal tumor)",
+                    "<info> Ovarian germ cell tumor",
+                    "<info> Renal pelvis and ureter, transitional cell cancer*",
+                    "<info> Transitional cell cancer(urothelial carcinoma)",
+                    "<info> Ureter and renal pelvis",
+                    "<info> Malignant Oncocytoma (Katie Coleman Tumor)",
+                    "",
+                    "=== Head and neck ===",
+                    "<info> Head and neck cancer",
+                    "<info> Paranasal sinus and nasal cavity cancer",
+                    "",
+                    "=== Hematopoietic ===",
+                    "<info> Acute myeloid dendritic cell leukemia",
+                    "<info> Anaplastic large cell lymphoma",
+                    "<info> Diffuse large B-cell lymphoma",
+                    "<info> Intravascular large B-cell lymphoma",
+                    "<info> Large granular lymphocytic leukemia",
+                    "<info> Marginal zone B-cell lymphoma",
+                    "<info> Mediastinal large B cell lymphoma",
+                    "<info> Multiple myeloma/plasma cell neoplasm",
+                    "<info> Mucosa-associated lymphoid tissue lymphoma",
+                    "<info> Nodal marginal zone B cell lymphoma",
+                    "<info> Precursor B lymphoblastic leukemia",
+                    "<info> Primary central nervous system lymphoma",
+                    "<info> Primary cutaneous follicular lymphoma",
+                    "<info> Splenic marginal zone lymphoma",
+                    "",
+                    "=== Skin ===",
+                    "<info> Squamous cell skin cancer",
+                    "<info> Skin adnexal tumors (e.g. sebaceous carcinoma)",
+                    "<info> Sarcomas of primary cutaneous origin (e.g. dermatofibrosarcoma protuberans)",
+                    "<info> Lymphomas of primary cutaneous origin (e.g. mycosis fungoides)",
+                    "",
+                    "=== Soft Tissue Sarcoma ===",
+                    "<info> Malignant peripheral nerve sheath tumor",
+                    "",
+                    "=== Thoracic and respiratory ===",
+                    "<info> Adenocarcinoma of the lung",
+                    "<info> Basaloid squamous cell lung carcinoma",
+                    "<info> Giant-cell carcinoma of the lung",
+                    "<info> Large cell lung carcinoma with rhabdoid phenotype",
+                    "<info> Non-small cell lung cancer",
+                    "<info> Non-small cell lung carcinoma",
+                    "<info> Sarcomatoid carcinoma of the lung",
+                    "<info> Small cell lung cancer",
+                    "<info> Squamous-cell carcinoma of the lung",
+                    "<info> Thymoma and thymic carcinoma",
+                    "",
+                    "=== Unsorted (so far) ===",
+                    "<info> Desmoplastic small round cell tumor",
+                    "",
+                    "=== See also ===",
+                    "<info> List of oncology-related terms",
+                    "",
+                    "=== References ===",
+                    "<info> [1] National Cancer Institute",
+                    "<info> ^ a b c \"Defining Cancer\". National Cancer Institute. 17 September 2007. Retrieved 10 June 2014.",
+                    "<info> ^ Varricchio, Claudette G. (2004). A cancer source book for nurses. Boston: Jones and Bartlett Publishers. p. 229. ISBN 0-7637-3276-1.",
+                    "<info> ^ \"Cancer deaths by type\". Our World in Data. Retrieved 1 April 2025.",
+                    "<info> ^ American Cancer Society. \"Melanoma Skin Cancer\". American Cancer Society. Retrieved 5 July 2017.",
+                    "<info> ^ American Cancer Society. \"What is Testicular Cancer\". American Cancer Society. Retrieved 5 July 2017.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The following is a list of cancer types. Cancer is a group of diseases that involve abnormal increases in the number of cells, with the potential to invade or spread to other parts of the body.[1] Not all tumors or lumps are cancerous; benign tumors are not classified as being cancer because they do not spread to other parts of the body.[1] There are over 200 different known cancers that affect humans.[1]",
+                            "Cancers are often described by the body part that they originated in.  However, some body parts contain multiple types of tissue, so for greater precision, cancers are additionally classified by the type of cell that the tumor cells originated from. These types include:",
+                            "<info> Carcinoma: Cancers derived from epithelial cells. This group includes many of the most common cancers that occur in older adults. Nearly all cancers developing in the breast, prostate, lung, pancreas, and colon are carcinomas.",
+                            "<info> Sarcoma: Cancers arising from connective tissue (i.e. bone, cartilage, fat, nerve), each of which develop from cells originating in mesenchymal cells outside of the bone marrow.",
+                            "<info> Lymphoma and leukemia: These two classes of cancer arise from immature cells that originate in the bone marrow, and are intended to fully differentiate and mature into normal components of the immune system and the blood, respectively. Acute lymphoblastic leukemia is the most common type of cancer in children, accounting for ~30% of cases.[2]  However, far more adults than children develop lymphoma and leukemia.",
+                            "<info> Germ cell tumor: Cancers derived from pluripotent cells, most often presenting in the testicle or the ovary (seminoma and dysgerminoma, respectively).",
+                            "<info> Blastoma: Cancers derived from immature \"precursor\" cells or embryonic tissue. Blastomas are generally more common in children (e.g. neuroblastoma, retinoblastoma, nephroblastoma, hepatoblastoma, medulloblastoma, etc.) than in older adults.",
+                            "Cancers are usually named using -carcinoma, -sarcoma or -blastoma as a suffix, with the Latin or Greek word for the organ or tissue of origin as the root. For example, the most common cancer of the liver parenchyma (\"hepato-\" = liver), arising from malignant epithelial cells (\"carcinoma\"), would be called a hepatocarcinoma, while a malignancy arising from primitive liver precursor cells is called a hepatoblastoma. Similarly, a cancer arising from malignant fat cells would be termed a liposarcoma.",
+                            "For some common cancers, the English organ name is used. For example, the most common type of breast cancer is called ductal carcinoma of the breast.",
+                            "Benign tumors (which are not cancers) are usually named using -oma as a suffix with the organ name as the root. For example, a benign tumor of smooth muscle cells is called a leiomyoma (the common name of this frequently occurring benign tumor in the uterus is fibroid). Confusingly, some types of cancer use the -noma suffix, examples including melanoma and seminoma.[4][5]",
+                            "Some types of cancer are named for the size and shape of the cells under a microscope, such as giant cell carcinoma, spindle cell carcinoma, and small-cell carcinoma."
+                        ]
+                    },
+                    "Bone and muscle sarcoma": {
+                        "content": [
+                            "<info> Fibrocartilaginous mesenchymoma of bone",
+                            "<info> Malignant fibrous histiocytoma of bone/osteosarcoma"
+                        ]
+                    },
+                    "Brain and nervous system": {
+                        "content": [
+                            "<info> Primary central nervous system lymphoma",
+                            "<info> Visual pathway and hypothalamic glioma"
+                        ]
+                    },
+                    "Breast": {
+                        "content": [
+                            "<info> Ductal carcinoma in situ",
+                            "<info> Invasive cribriform carcinoma of the breast (also termed invasive cribriform carcinoma)",
+                            "<info> Mucinous carcinoma of the breast",
+                            "<info> Papillary carcinomas of the breast"
+                        ]
+                    },
+                    "Endocrine system": {
+                        "content": [
+                            "<info> Islet cell carcinoma (endocrine pancreas)",
+                            "<info> Multiple endocrine neoplasia syndrome"
+                        ]
+                    },
+                    "Gastrointestinal": {
+                        "content": [
+                            "<info> Extrahepatic bile duct cancer",
+                            "<info> Gastrointestinal stromal tumor (GIST)",
+                            "<info> Pancreatic cancer, islet cell"
+                        ]
+                    },
+                    "Genitourinary and gynecologic": {
+                        "content": [
+                            "<info> Extragonadal germ cell tumor",
+                            "<info> Ovarian epithelial cancer (surface epithelial-stromal tumor)",
+                            "<info> Ovarian germ cell tumor",
+                            "<info> Renal pelvis and ureter, transitional cell cancer*",
+                            "<info> Transitional cell cancer(urothelial carcinoma)",
+                            "<info> Ureter and renal pelvis",
+                            "<info> Malignant Oncocytoma (Katie Coleman Tumor)"
+                        ]
+                    },
+                    "Head and neck": {
+                        "content": [
+                            "<info> Head and neck cancer",
+                            "<info> Paranasal sinus and nasal cavity cancer"
+                        ]
+                    },
+                    "Hematopoietic": {
+                        "content": [
+                            "<info> Acute myeloid dendritic cell leukemia",
+                            "<info> Anaplastic large cell lymphoma",
+                            "<info> Diffuse large B-cell lymphoma",
+                            "<info> Intravascular large B-cell lymphoma",
+                            "<info> Large granular lymphocytic leukemia",
+                            "<info> Marginal zone B-cell lymphoma",
+                            "<info> Mediastinal large B cell lymphoma",
+                            "<info> Multiple myeloma/plasma cell neoplasm",
+                            "<info> Mucosa-associated lymphoid tissue lymphoma",
+                            "<info> Nodal marginal zone B cell lymphoma",
+                            "<info> Precursor B lymphoblastic leukemia",
+                            "<info> Primary central nervous system lymphoma",
+                            "<info> Primary cutaneous follicular lymphoma",
+                            "<info> Splenic marginal zone lymphoma"
+                        ]
+                    },
+                    "Skin": {
+                        "content": [
+                            "<info> Squamous cell skin cancer",
+                            "<info> Skin adnexal tumors (e.g. sebaceous carcinoma)",
+                            "<info> Sarcomas of primary cutaneous origin (e.g. dermatofibrosarcoma protuberans)",
+                            "<info> Lymphomas of primary cutaneous origin (e.g. mycosis fungoides)"
+                        ]
+                    },
+                    "Soft Tissue Sarcoma": {
+                        "content": [
+                            "<info> Malignant peripheral nerve sheath tumor"
+                        ]
+                    },
+                    "Thoracic and respiratory": {
+                        "content": [
+                            "<info> Adenocarcinoma of the lung",
+                            "<info> Basaloid squamous cell lung carcinoma",
+                            "<info> Giant-cell carcinoma of the lung",
+                            "<info> Large cell lung carcinoma with rhabdoid phenotype",
+                            "<info> Non-small cell lung cancer",
+                            "<info> Non-small cell lung carcinoma",
+                            "<info> Sarcomatoid carcinoma of the lung",
+                            "<info> Small cell lung cancer",
+                            "<info> Squamous-cell carcinoma of the lung",
+                            "<info> Thymoma and thymic carcinoma"
+                        ]
+                    },
+                    "Unsorted (so far)": {
+                        "content": [
+                            "<info> Desmoplastic small round cell tumor"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of oncology-related terms"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> [1] National Cancer Institute",
+                            "<info> ^ a b c \"Defining Cancer\". National Cancer Institute. 17 September 2007. Retrieved 10 June 2014.",
+                            "<info> ^ Varricchio, Claudette G. (2004). A cancer source book for nurses. Boston: Jones and Bartlett Publishers. p. 229. ISBN 0-7637-3276-1.",
+                            "<info> ^ \"Cancer deaths by type\". Our World in Data. Retrieved 1 April 2025.",
+                            "<info> ^ American Cancer Society. \"Melanoma Skin Cancer\". American Cancer Society. Retrieved 5 July 2017.",
+                            "<info> ^ American Cancer Society. \"What is Testicular Cancer\". American Cancer Society. Retrieved 5 July 2017."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

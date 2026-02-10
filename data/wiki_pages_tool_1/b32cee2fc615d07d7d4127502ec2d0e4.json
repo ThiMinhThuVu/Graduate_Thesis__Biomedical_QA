@@ -1,0 +1,43 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/nicotinate-nucleotide_adenylyltransferase": {
+                "title": "Nicotinate-nucleotide adenylyltransferase",
+                "url": "https://en.wikipedia.org/wiki/nicotinate-nucleotide_adenylyltransferase",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "In enzymology, a nicotinate-nucleotide adenylyltransferase (EC 2.7.7.18) is an enzyme that catalyzes the chemical reaction",
+                    "Thus, the two substrates of this enzyme are ATP and nicotinate ribonucleotide, whereas its two products are diphosphate and deamido-NAD+.",
+                    "This enzyme belongs to the family of transferases, specifically those transferring phosphorus-containing nucleotide groups (nucleotidyltransferases).  The systematic name of this enzyme class is ATP:nicotinate-ribonucleotide adenylyltransferase. Other names in common use include deamido-NAD+ pyrophosphorylase, nicotinate mononucleotide adenylyltransferase, deamidonicotinamide adenine dinucleotide pyrophosphorylase, NaMN-ATase, and nicotinic acid mononucleotide adenylyltransferase.  This enzyme participates in nicotinate and nicotinamide metabolism.",
+                    "",
+                    "=== Structural studies ===",
+                    "As of late 2007, 9 structures have been solved for this class of enzymes, with PDB accession codes 1K4K, 1K4M, 1KAM, 1KAQ, 1YUL, 1YUM, 1YUN, 2H29, and 2H2A.",
+                    "",
+                    "=== References ===",
+                    "<info> Imsande J (May 1961). \"Pathway of diphosphopyridine nucleotide biosynthesis in Escherichia coli\". The Journal of Biological Chemistry. 236 (5): 1494–7. doi:10.1016/S0021-9258(18)64203-6. PMID 13717628.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "In enzymology, a nicotinate-nucleotide adenylyltransferase (EC 2.7.7.18) is an enzyme that catalyzes the chemical reaction",
+                            "Thus, the two substrates of this enzyme are ATP and nicotinate ribonucleotide, whereas its two products are diphosphate and deamido-NAD+.",
+                            "This enzyme belongs to the family of transferases, specifically those transferring phosphorus-containing nucleotide groups (nucleotidyltransferases).  The systematic name of this enzyme class is ATP:nicotinate-ribonucleotide adenylyltransferase. Other names in common use include deamido-NAD+ pyrophosphorylase, nicotinate mononucleotide adenylyltransferase, deamidonicotinamide adenine dinucleotide pyrophosphorylase, NaMN-ATase, and nicotinic acid mononucleotide adenylyltransferase.  This enzyme participates in nicotinate and nicotinamide metabolism."
+                        ]
+                    },
+                    "Structural studies": {
+                        "content": [
+                            "As of late 2007, 9 structures have been solved for this class of enzymes, with PDB accession codes 1K4K, 1K4M, 1KAM, 1KAQ, 1YUL, 1YUM, 1YUN, 2H29, and 2H2A."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> Imsande J (May 1961). \"Pathway of diphosphopyridine nucleotide biosynthesis in Escherichia coli\". The Journal of Biological Chemistry. 236 (5): 1494–7. doi:10.1016/S0021-9258(18)64203-6. PMID 13717628."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

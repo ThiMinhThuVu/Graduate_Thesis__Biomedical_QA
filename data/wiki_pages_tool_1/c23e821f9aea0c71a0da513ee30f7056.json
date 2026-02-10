@@ -1,0 +1,217 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/quantitative_linguistics": {
+                "title": "Quantitative linguistics",
+                "url": "https://en.wikipedia.org/wiki/quantitative_linguistics",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Quantitative linguistics (QL) is a sub-discipline of general linguistics and, more specifically, of mathematical linguistics. Quantitative linguistics deals with language learning, language change, and application as well as structure of natural languages.",
+                    "QL investigates languages using statistical methods; its most demanding objective is the formulation of language laws and, ultimately, of a general theory of language in the sense of a set of interrelated languages laws.[1] Synergetic linguistics was from its very beginning specifically designed for this purpose.[2]",
+                    "QL is empirically based on the results of language statistics, a field which can be interpreted as statistics of languages or as statistics of any linguistic object. This field is not necessarily connected to substantial theoretical ambitions. Corpus linguistics and computational linguistics are other fields which contribute important empirical evidence.",
+                    "",
+                    "=== History ===",
+                    "The earliest QL approaches date back to the ancient Indian world. One of the historical sources consists of applications of combinatorics to linguistic matters,[3] another one is based on elementary statistical studies, which can be found under the header colometry and stichometry.[4]",
+                    "",
+                    "=== Quantitative laws ===",
+                    "In QL, the concept of law is understood as the class of law hypotheses which have been deduced from theoretical assumptions, are mathematically formulated, are interrelated with other laws in the field, and have sufficiently and successfully been tested on empirical data, i.e. which could not be refuted in spite of much effort to do so. Reinhard Köhler writes about QL laws:",
+                    "Moreover, it can be shown that these properties of linguistic elements and of the relations among them abide by universal laws which can be formulated strictly mathematically in the same way as common in the natural sciences. One has to bear in mind in this context that these laws are of stochastic nature; they are not observed in every single case (this would be neither necessary nor possible); they rather determine the probabilities of the events or proportions under study. It is easy to find counterexamples to each of the above-mentioned examples; nevertheless, these cases do not violate the corresponding laws as variations around the statistical mean are not only admissible but even essential; they are themselves quantitatively exactly determined by the corresponding laws. This situation does not differ from that in the natural sciences, which have since long abandoned the old deterministic and causal views of the world and replaced them by statistical/probabilistic models.[5]",
+                    "",
+                    "=== Linguistic laws ===",
+                    "In quantitative linguistics, linguistic laws are statistical regularities emerging across different linguistic scales (i.e. phonemes, syllables, words or sentences) that can be formulated mathematically and that have been deduced from certain theoretical assumptions. They are also required to have been successfully tested through the use of data, that is, not to have been refuted by empirical evidence. Among the main linguistic laws proposed by various authors, the following can be highlighted: [6]",
+                    "<info> Zipf's law: The frequency of words is inversely proportional to their rank in frequency lists. Similar distribution between rank and frequency of sounds, phonemes, and letters can be observed.[7]",
+                    "<info> Heaps' law: It describes the number of distinct words in a document (or set of documents) as a function of the document length.",
+                    "<info> Brevity law or Zipf's law of abbreviation: It qualitatively states that the more frequently a word is used, the 'shorter' that word tends to be.[8]",
+                    "<info> Menzerath's law (also, Menzerath-Altmann law): This law states that the sizes of the constituents of a construction decrease with increasing size of the construction under study. The longer, e.g. a sentence (measured in terms of the number of clauses) the shorter the clauses (measured in terms of the number of words), or: the longer a word (in syllables or morphs) the shorter the syllables or words in sounds).",
+                    "<info> Law of diversification: If linguistic categories such as parts-of-speech or inflectional endings appear in various forms it can be shown that the frequencies of their occurrences in texts are controlled by laws.",
+                    "<info> Martin's law [de]: This law concerns lexical chains which are obtained by looking up the definition of a word in a dictionary, then looking up the definition of the definition just obtained etc. Finally, all these definitions form a hierarchy of more and more general meanings, whereby the number of definitions decreases with increasing generality. Among the levels of this kind of hierarchy, there exists a number of lawful relations.",
+                    "<info> Piotrowski's law of language change: Growth processes in language such as vocabulary growth, the dispersion of foreign or loan words, changes in the inflectional system etc. correspond to growth models in other scientific disciplines. Piotrowski's law is an application of the logistic function. It was shown that it also covers language acquisition processes (cf. language acquisition law).",
+                    "<info> Text block law: Linguistic units (e.g. words, letters, syntactic functions and constructions) show a specific frequency distribution in equally large text blocks.",
+                    "",
+                    "=== Stylistics ===",
+                    "The study of poetic and non-poetic styles can be based on statistical methods. Moreover, it is possible to conduct corresponding investigations on the basis of the specific forms (parameters) that language laws take in texts of different styles. In such cases, QL supports research into stylistics: One of the overall aims is to make evidence for stylistic phenomena as objective as possible by referring to language laws. One of the central assumptions of QL is that some laws (e.g. the distribution of word lengths) require different models, and hence different parameter values of the laws (distributions or functions) depending on the corpus that a text belongs to. If poetic texts are under study, QL methods form a sub-discipline of Quantitative Study of Literature (stylometrics).[9]",
+                    "",
+                    "=== Important authors ===",
+                    "<info> Otto Behaghel (1854–1936); cf. Behaghel's laws",
+                    "<info> Karl-Heinz Best [de] (1943)[11][12]",
+                    "<info> Sergej Grigor'evič Čebanov [de] (1897–1966)[13]",
+                    "<info> William Palin Elderton (1877–1962)[14]",
+                    "<info> Ernst Wilhelm Förstemann (1822–1906)[16]",
+                    "<info> Wilhelm Fucks [de] (1902–1990)[17]",
+                    "<info> Peter Grzybek [de] (1957-2019)[18]",
+                    "<info> Gustav Herdan [de] (1897–1968)[19][20]",
+                    "<info> Luděk Hřebíček [cs] (1934-2015)[21]",
+                    "<info> Friedrich Wilhelm Kaeding [de] (1843–1928)[22]",
+                    "<info> Reinhard Köhler [de] (1951)[23]",
+                    "<info> Viktor Vasil'evič Levickij [uk] (1938–2012)[27]",
+                    "<info> Helmut Meier [de] (1897–1973)",
+                    "<info> Paul Menzerath (1883–1954),[29] cf. Menzerath's law",
+                    "<info> Sizuo Mizutani [ja] (1926-2014)[30]",
+                    "<info> Augustus De Morgan (1806–1871)",
+                    "<info> Charles Muller, Straßburg [de] (1909-2015)[31]",
+                    "<info> Raijmund G. Piotrowski [de][32][33]",
+                    "<info> Juhan Tuldava [et] (1922–2003)[34]",
+                    "<info> Albert Thumb [de] (1865–1915)[36]",
+                    "<info> George Kingsley Zipf (1902–1950); cf. Zipf's law",
+                    "<info> Eberhard Zwirner [de] (1899–1984). Phonometry[37]",
+                    "",
+                    "=== Notes ===",
+                    "<info> ^ Reinhard Köhler: Gegenstand und Arbeitsweise der Quantitativen Linguistik. In: Reinhard Köhler, Gabriel Altmann, Rajmund G. Piotrowski (Hrsg.): Quantitative Linguistik - Quantitative Linguistics. Ein internationales Handbuch. de Gruyter, Berlin/ New York 2005, pp. 1–16. ISBN 3-11-015578-8.",
+                    "<info> ^ Reinhard Köhler: Synergetic linguistics. In: Reinhard Köhler, Gabriel Altmann, Rajmund G. Piotrowski (Hrsg.): Quantitative Linguistik - Quantitative Linguistics. Ein internationales Handbuch. de Gruyter, Berlin/ New York 2005, pp. 760–774. ISBN 3-11-015578-8.",
+                    "<info> ^ N.L. Biggs: The Roots of Combinatorics. In: Historia Mathematica 6, 1979, pp. 109–136.",
+                    "<info> ^ Adam Pawłowski: Prolegomena to the History of Corpus and Quantitative Linguistics. Greek Antiquity. In: Glottotheory 1, 2008, pp. 48–54.",
+                    "<info> ^ cf. note 1, pp. 1–2.",
+                    "<info> ^ cf. references: Köhler, Altmann, Piotrowski (eds.) (2005)",
+                    "<info> ^ H. Guiter, M. V. Arapov (eds.): Studies on Zipf's Law. Bochum: Brockmeyer 1982. ISBN 3-88339-244-8.",
+                    "<info> ^ Zipf GK. 1935The Psychobiology of language, an introduction to dynamic philology. Boston, MA: Houghton–Mifflin.",
+                    "<info> ^ Alexander Mehler: Eigenschaften der textuellen Einheiten und Systeme. In: Reinhard Köhler, Gabriel Altmann, Rajmund G. Piotrowski (Hrsg.): Quantitative Linguistik - Quantitative Linguistics. Ein internationales Handbuch. de Gruyter, Berlin/ New York 2005, p. 325-348, esp. Quantitative Stilistik, pp. 339–340. ISBN 3-11-015578-8; Vivien Altmann, Gabriel Altmann: Anleitung zu quantitativen Textanalysen. Methoden und Anwendungen. Lüdenscheid: RAM-Verlag 2008, ISBN 978-3-9802659-5-9.",
+                    "<info> ^ Grzybek, Peter, & Köhler, Reinhard (eds.) (2007): Exact Methods in the Study of Language and Text. Dedicated to Gabriel Altmann on the Occasion of his 75th Birthday. Berlin/ New York: Mouton de Gruyter",
+                    "<info> ^ de:Sergei Grigorjewitsch Tschebanow",
+                    "<info> ^ Best, Karl-Heinz (2009): William Palin Elderton (1877-1962). Glottometrics 19, p. 99-101 (PDF ram-verlag.eu).",
+                    "<info> ^ de:Ernst Förstemann; Karl-Heinz Best: Ernst Wilhelm Förstemann (1822-1906). In: Glottometrics 12, 2006, pp. 77–86 (PDF ram-verlag.eu)",
+                    "<info> ^ Dieter Aichele: Das Werk von W. Fucks. In: Reinhard Köhler, Gabriel Altmann, Rajmund G. Piotrowski (Hrsg.): Quantitative Linguistik - Quantitative Linguistics. Ein internationales Handbuch. de Gruyter, Berlin/ New York 2005, pp. 152–158. ISBN 3-11-015578-8",
+                    "<info> ^ Peter Grzybek :: Homepage : Home / Kontakt Archived September 29, 2012, at the Wayback Machine",
+                    "<info> ^ \"Herdan dimension - Laws in Quantitative Linguistics\". Archived from the original on 2011-07-19. Retrieved 2010-05-22.",
+                    "<info> ^ de:Friedrich Wilhelm Kaeding",
+                    "<info> ^ Universität Trier: Prof. Dr. Reinhard Köhler Archived 2015-04-07 at the Wayback Machine",
+                    "<info> ^ Kordić, Snježana (2001). Wörter im Grenzbereich von Lexikon und Grammatik im Serbokroatischen [Serbo-Croatian Words on the Border Between Lexicon and Grammar]. Studies in Slavic Linguistics; 18 (in German). Munich: Lincom Europa. p. 280. ISBN 3-89586-954-6. LCCN 2005530314. OCLC 47905097. OL 2863539W. NYPL b15245330. NCID BA56769448.",
+                    "<info> ^ Kordić, Snježana (2005) [1st pub. 1999; 2nd pub. 2002; 3rd pub. 2005]. Der Relativsatz im Serbokroatischen [Relative Clauses in Serbo-Croatian]. Studies in Slavic Linguistics; 10 (in German). Munich: Lincom Europa. p. 330. ISBN 3-89586-573-7. OCLC 42422661. OL 2863535W. S2CID 171902446. NYPL b14328353. Contents",
+                    "<info> ^ Georg-August-Universität Göttingen - Lehfeldt, Werner, Prof. em. Dr",
+                    "<info> ^ Festschrift on the occasion of the 70. anniversary: Problems of General, Germanic and Slavic Linguistics. Papers for 70th Anniversary of Professor V. Levickij. Herausgegeben von Gabriel Altmann, Iryna Zadoroshna, Yuliya Matskulyak. Books, Chernivtsi 2008. (No ISBN.) Levickij dedicated:  Glottometrics, Heft 16, 2008; Emmerich Kelih: Der Czernowitzer Beitrag zur Quantitativen Linguistik: Zum 70. Geburtstag von Prof. Dr. Habil. Viktor V. Levickij. In: Naukovyj Visnyk Černivec'koho Universytetu: Hermans'ka filolohija. Vypusk 407, 2008, pp. 3–10.",
+                    "<info> ^ Human-Language-Computer - staff Homepage, ZJU",
+                    "<info> ^ Karl-Heinz Best: Paul Menzerath (1883-1954). In:\nGlottometrics 14, 2007, pp. 86–98 (PDF ram-verlag.eu)",
+                    "<info> ^ Shizuo Mizutani; Portrait on the occasion of his 80. anniversary in: Glottometrics 12, 2006 (PDF ram-verlag.eu); about Mizutani: Naoko Maruyama: Sizuo Mizutani (1926). The Founder of Japanese Quantitative Linguistics. In: Glottometrics 10, 2005, pp. 99-107 (PDF ram-verlag.eu).",
+                    "<info> ^ Charles Muller: Initiation à la statistique linguistique. Paris: Larousse 1968; German: Einführung in die Sprachstatistik. Hueber, München 1972.",
+                    "<info> ^ Rajmund G. Piotrowski, R.G. Piotrovskij; cf. Piotrowski's law: http://lql.uni-trier.de/index.php/Change_in_language Archived 2011-07-19 at the Wayback Machine",
+                    "<info> ^ Journal of Quantitative Linguistics 4, Nr. 1, 1997 (Festschrift in Honour of Juh. Tuldava)",
+                    "<info> ^ Dr Andrew Wilson - Linguistics and English Language at Lancaster University",
+                    "",
+                    "=== References ===",
+                    "<info> Karl-Heinz Best: Quantitative Linguistik. Eine Annäherung. 3., stark überarbeitete und ergänzte Auflage. Peust & Gutschmidt, Göttingen 2006, ISBN 3-933043-17-4.",
+                    "<info> Karl-Heinz Best, Otto Rottmann: Quantitative Linguistics, an Invitation. RAM-Verlag, Lüdenscheid 2017. ISBN 978-3-942303-51-4.",
+                    "<info> Reinhard Köhler with the assistance of Christiane Hoffmann: Bibliography of Quantitative Linguistics. Benjamins, Amsterdam/ Philadelphia 1995, ISBN 90-272-3751-4.",
+                    "<info> Reinhard Köhler, Gabriel Altmann, Gabriel, Rajmund G. Piotrowski (eds.): Quantitative Linguistik - Quantitative Linguistics. Ein internationales Handbuch – An International Handbook. de Gruyter, Berlin/ New York 2005, ISBN 3-11-015578-8.",
+                    "<info> Haitao Liu & Wei Huang. Quantitative Linguistics：State of the Art, Theories and Methods. Journal of Zhejiang University (Humanities and Social Science). 2012，43(2)：178-192. in Chinese.",
+                    "",
+                    "=== External links ===",
+                    "<info> Media related to Quantitative linguistics at Wikimedia Commons",
+                    "<info> IQLA - International Quantitative Linguistics Association",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Quantitative linguistics (QL) is a sub-discipline of general linguistics and, more specifically, of mathematical linguistics. Quantitative linguistics deals with language learning, language change, and application as well as structure of natural languages.",
+                            "QL investigates languages using statistical methods; its most demanding objective is the formulation of language laws and, ultimately, of a general theory of language in the sense of a set of interrelated languages laws.[1] Synergetic linguistics was from its very beginning specifically designed for this purpose.[2]",
+                            "QL is empirically based on the results of language statistics, a field which can be interpreted as statistics of languages or as statistics of any linguistic object. This field is not necessarily connected to substantial theoretical ambitions. Corpus linguistics and computational linguistics are other fields which contribute important empirical evidence."
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "The earliest QL approaches date back to the ancient Indian world. One of the historical sources consists of applications of combinatorics to linguistic matters,[3] another one is based on elementary statistical studies, which can be found under the header colometry and stichometry.[4]"
+                        ]
+                    },
+                    "Quantitative laws": {
+                        "content": [
+                            "In QL, the concept of law is understood as the class of law hypotheses which have been deduced from theoretical assumptions, are mathematically formulated, are interrelated with other laws in the field, and have sufficiently and successfully been tested on empirical data, i.e. which could not be refuted in spite of much effort to do so. Reinhard Köhler writes about QL laws:",
+                            "Moreover, it can be shown that these properties of linguistic elements and of the relations among them abide by universal laws which can be formulated strictly mathematically in the same way as common in the natural sciences. One has to bear in mind in this context that these laws are of stochastic nature; they are not observed in every single case (this would be neither necessary nor possible); they rather determine the probabilities of the events or proportions under study. It is easy to find counterexamples to each of the above-mentioned examples; nevertheless, these cases do not violate the corresponding laws as variations around the statistical mean are not only admissible but even essential; they are themselves quantitatively exactly determined by the corresponding laws. This situation does not differ from that in the natural sciences, which have since long abandoned the old deterministic and causal views of the world and replaced them by statistical/probabilistic models.[5]"
+                        ]
+                    },
+                    "Linguistic laws": {
+                        "content": [
+                            "In quantitative linguistics, linguistic laws are statistical regularities emerging across different linguistic scales (i.e. phonemes, syllables, words or sentences) that can be formulated mathematically and that have been deduced from certain theoretical assumptions. They are also required to have been successfully tested through the use of data, that is, not to have been refuted by empirical evidence. Among the main linguistic laws proposed by various authors, the following can be highlighted: [6]",
+                            "<info> Zipf's law: The frequency of words is inversely proportional to their rank in frequency lists. Similar distribution between rank and frequency of sounds, phonemes, and letters can be observed.[7]",
+                            "<info> Heaps' law: It describes the number of distinct words in a document (or set of documents) as a function of the document length.",
+                            "<info> Brevity law or Zipf's law of abbreviation: It qualitatively states that the more frequently a word is used, the 'shorter' that word tends to be.[8]",
+                            "<info> Menzerath's law (also, Menzerath-Altmann law): This law states that the sizes of the constituents of a construction decrease with increasing size of the construction under study. The longer, e.g. a sentence (measured in terms of the number of clauses) the shorter the clauses (measured in terms of the number of words), or: the longer a word (in syllables or morphs) the shorter the syllables or words in sounds).",
+                            "<info> Law of diversification: If linguistic categories such as parts-of-speech or inflectional endings appear in various forms it can be shown that the frequencies of their occurrences in texts are controlled by laws.",
+                            "<info> Martin's law [de]: This law concerns lexical chains which are obtained by looking up the definition of a word in a dictionary, then looking up the definition of the definition just obtained etc. Finally, all these definitions form a hierarchy of more and more general meanings, whereby the number of definitions decreases with increasing generality. Among the levels of this kind of hierarchy, there exists a number of lawful relations.",
+                            "<info> Piotrowski's law of language change: Growth processes in language such as vocabulary growth, the dispersion of foreign or loan words, changes in the inflectional system etc. correspond to growth models in other scientific disciplines. Piotrowski's law is an application of the logistic function. It was shown that it also covers language acquisition processes (cf. language acquisition law).",
+                            "<info> Text block law: Linguistic units (e.g. words, letters, syntactic functions and constructions) show a specific frequency distribution in equally large text blocks."
+                        ]
+                    },
+                    "Stylistics": {
+                        "content": [
+                            "The study of poetic and non-poetic styles can be based on statistical methods. Moreover, it is possible to conduct corresponding investigations on the basis of the specific forms (parameters) that language laws take in texts of different styles. In such cases, QL supports research into stylistics: One of the overall aims is to make evidence for stylistic phenomena as objective as possible by referring to language laws. One of the central assumptions of QL is that some laws (e.g. the distribution of word lengths) require different models, and hence different parameter values of the laws (distributions or functions) depending on the corpus that a text belongs to. If poetic texts are under study, QL methods form a sub-discipline of Quantitative Study of Literature (stylometrics).[9]"
+                        ]
+                    },
+                    "Important authors": {
+                        "content": [
+                            "<info> Otto Behaghel (1854–1936); cf. Behaghel's laws",
+                            "<info> Karl-Heinz Best [de] (1943)[11][12]",
+                            "<info> Sergej Grigor'evič Čebanov [de] (1897–1966)[13]",
+                            "<info> William Palin Elderton (1877–1962)[14]",
+                            "<info> Ernst Wilhelm Förstemann (1822–1906)[16]",
+                            "<info> Wilhelm Fucks [de] (1902–1990)[17]",
+                            "<info> Peter Grzybek [de] (1957-2019)[18]",
+                            "<info> Gustav Herdan [de] (1897–1968)[19][20]",
+                            "<info> Luděk Hřebíček [cs] (1934-2015)[21]",
+                            "<info> Friedrich Wilhelm Kaeding [de] (1843–1928)[22]",
+                            "<info> Reinhard Köhler [de] (1951)[23]",
+                            "<info> Viktor Vasil'evič Levickij [uk] (1938–2012)[27]",
+                            "<info> Helmut Meier [de] (1897–1973)",
+                            "<info> Paul Menzerath (1883–1954),[29] cf. Menzerath's law",
+                            "<info> Sizuo Mizutani [ja] (1926-2014)[30]",
+                            "<info> Augustus De Morgan (1806–1871)",
+                            "<info> Charles Muller, Straßburg [de] (1909-2015)[31]",
+                            "<info> Raijmund G. Piotrowski [de][32][33]",
+                            "<info> Juhan Tuldava [et] (1922–2003)[34]",
+                            "<info> Albert Thumb [de] (1865–1915)[36]",
+                            "<info> George Kingsley Zipf (1902–1950); cf. Zipf's law",
+                            "<info> Eberhard Zwirner [de] (1899–1984). Phonometry[37]"
+                        ]
+                    },
+                    "Notes": {
+                        "content": [
+                            "<info> ^ Reinhard Köhler: Gegenstand und Arbeitsweise der Quantitativen Linguistik. In: Reinhard Köhler, Gabriel Altmann, Rajmund G. Piotrowski (Hrsg.): Quantitative Linguistik - Quantitative Linguistics. Ein internationales Handbuch. de Gruyter, Berlin/ New York 2005, pp. 1–16. ISBN 3-11-015578-8.",
+                            "<info> ^ Reinhard Köhler: Synergetic linguistics. In: Reinhard Köhler, Gabriel Altmann, Rajmund G. Piotrowski (Hrsg.): Quantitative Linguistik - Quantitative Linguistics. Ein internationales Handbuch. de Gruyter, Berlin/ New York 2005, pp. 760–774. ISBN 3-11-015578-8.",
+                            "<info> ^ N.L. Biggs: The Roots of Combinatorics. In: Historia Mathematica 6, 1979, pp. 109–136.",
+                            "<info> ^ Adam Pawłowski: Prolegomena to the History of Corpus and Quantitative Linguistics. Greek Antiquity. In: Glottotheory 1, 2008, pp. 48–54.",
+                            "<info> ^ cf. note 1, pp. 1–2.",
+                            "<info> ^ cf. references: Köhler, Altmann, Piotrowski (eds.) (2005)",
+                            "<info> ^ H. Guiter, M. V. Arapov (eds.): Studies on Zipf's Law. Bochum: Brockmeyer 1982. ISBN 3-88339-244-8.",
+                            "<info> ^ Zipf GK. 1935The Psychobiology of language, an introduction to dynamic philology. Boston, MA: Houghton–Mifflin.",
+                            "<info> ^ Alexander Mehler: Eigenschaften der textuellen Einheiten und Systeme. In: Reinhard Köhler, Gabriel Altmann, Rajmund G. Piotrowski (Hrsg.): Quantitative Linguistik - Quantitative Linguistics. Ein internationales Handbuch. de Gruyter, Berlin/ New York 2005, p. 325-348, esp. Quantitative Stilistik, pp. 339–340. ISBN 3-11-015578-8; Vivien Altmann, Gabriel Altmann: Anleitung zu quantitativen Textanalysen. Methoden und Anwendungen. Lüdenscheid: RAM-Verlag 2008, ISBN 978-3-9802659-5-9.",
+                            "<info> ^ Grzybek, Peter, & Köhler, Reinhard (eds.) (2007): Exact Methods in the Study of Language and Text. Dedicated to Gabriel Altmann on the Occasion of his 75th Birthday. Berlin/ New York: Mouton de Gruyter",
+                            "<info> ^ de:Sergei Grigorjewitsch Tschebanow",
+                            "<info> ^ Best, Karl-Heinz (2009): William Palin Elderton (1877-1962). Glottometrics 19, p. 99-101 (PDF ram-verlag.eu).",
+                            "<info> ^ de:Ernst Förstemann; Karl-Heinz Best: Ernst Wilhelm Förstemann (1822-1906). In: Glottometrics 12, 2006, pp. 77–86 (PDF ram-verlag.eu)",
+                            "<info> ^ Dieter Aichele: Das Werk von W. Fucks. In: Reinhard Köhler, Gabriel Altmann, Rajmund G. Piotrowski (Hrsg.): Quantitative Linguistik - Quantitative Linguistics. Ein internationales Handbuch. de Gruyter, Berlin/ New York 2005, pp. 152–158. ISBN 3-11-015578-8",
+                            "<info> ^ Peter Grzybek :: Homepage : Home / Kontakt Archived September 29, 2012, at the Wayback Machine",
+                            "<info> ^ \"Herdan dimension - Laws in Quantitative Linguistics\". Archived from the original on 2011-07-19. Retrieved 2010-05-22.",
+                            "<info> ^ de:Friedrich Wilhelm Kaeding",
+                            "<info> ^ Universität Trier: Prof. Dr. Reinhard Köhler Archived 2015-04-07 at the Wayback Machine",
+                            "<info> ^ Kordić, Snježana (2001). Wörter im Grenzbereich von Lexikon und Grammatik im Serbokroatischen [Serbo-Croatian Words on the Border Between Lexicon and Grammar]. Studies in Slavic Linguistics; 18 (in German). Munich: Lincom Europa. p. 280. ISBN 3-89586-954-6. LCCN 2005530314. OCLC 47905097. OL 2863539W. NYPL b15245330. NCID BA56769448.",
+                            "<info> ^ Kordić, Snježana (2005) [1st pub. 1999; 2nd pub. 2002; 3rd pub. 2005]. Der Relativsatz im Serbokroatischen [Relative Clauses in Serbo-Croatian]. Studies in Slavic Linguistics; 10 (in German). Munich: Lincom Europa. p. 330. ISBN 3-89586-573-7. OCLC 42422661. OL 2863535W. S2CID 171902446. NYPL b14328353. Contents",
+                            "<info> ^ Georg-August-Universität Göttingen - Lehfeldt, Werner, Prof. em. Dr",
+                            "<info> ^ Festschrift on the occasion of the 70. anniversary: Problems of General, Germanic and Slavic Linguistics. Papers for 70th Anniversary of Professor V. Levickij. Herausgegeben von Gabriel Altmann, Iryna Zadoroshna, Yuliya Matskulyak. Books, Chernivtsi 2008. (No ISBN.) Levickij dedicated:  Glottometrics, Heft 16, 2008; Emmerich Kelih: Der Czernowitzer Beitrag zur Quantitativen Linguistik: Zum 70. Geburtstag von Prof. Dr. Habil. Viktor V. Levickij. In: Naukovyj Visnyk Černivec'koho Universytetu: Hermans'ka filolohija. Vypusk 407, 2008, pp. 3–10.",
+                            "<info> ^ Human-Language-Computer - staff Homepage, ZJU",
+                            "<info> ^ Karl-Heinz Best: Paul Menzerath (1883-1954). In:\nGlottometrics 14, 2007, pp. 86–98 (PDF ram-verlag.eu)",
+                            "<info> ^ Shizuo Mizutani; Portrait on the occasion of his 80. anniversary in: Glottometrics 12, 2006 (PDF ram-verlag.eu); about Mizutani: Naoko Maruyama: Sizuo Mizutani (1926). The Founder of Japanese Quantitative Linguistics. In: Glottometrics 10, 2005, pp. 99-107 (PDF ram-verlag.eu).",
+                            "<info> ^ Charles Muller: Initiation à la statistique linguistique. Paris: Larousse 1968; German: Einführung in die Sprachstatistik. Hueber, München 1972.",
+                            "<info> ^ Rajmund G. Piotrowski, R.G. Piotrovskij; cf. Piotrowski's law: http://lql.uni-trier.de/index.php/Change_in_language Archived 2011-07-19 at the Wayback Machine",
+                            "<info> ^ Journal of Quantitative Linguistics 4, Nr. 1, 1997 (Festschrift in Honour of Juh. Tuldava)",
+                            "<info> ^ Dr Andrew Wilson - Linguistics and English Language at Lancaster University"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> Karl-Heinz Best: Quantitative Linguistik. Eine Annäherung. 3., stark überarbeitete und ergänzte Auflage. Peust & Gutschmidt, Göttingen 2006, ISBN 3-933043-17-4.",
+                            "<info> Karl-Heinz Best, Otto Rottmann: Quantitative Linguistics, an Invitation. RAM-Verlag, Lüdenscheid 2017. ISBN 978-3-942303-51-4.",
+                            "<info> Reinhard Köhler with the assistance of Christiane Hoffmann: Bibliography of Quantitative Linguistics. Benjamins, Amsterdam/ Philadelphia 1995, ISBN 90-272-3751-4.",
+                            "<info> Reinhard Köhler, Gabriel Altmann, Gabriel, Rajmund G. Piotrowski (eds.): Quantitative Linguistik - Quantitative Linguistics. Ein internationales Handbuch – An International Handbook. de Gruyter, Berlin/ New York 2005, ISBN 3-11-015578-8.",
+                            "<info> Haitao Liu & Wei Huang. Quantitative Linguistics：State of the Art, Theories and Methods. Journal of Zhejiang University (Humanities and Social Science). 2012，43(2)：178-192. in Chinese."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Media related to Quantitative linguistics at Wikimedia Commons",
+                            "<info> IQLA - International Quantitative Linguistics Association"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

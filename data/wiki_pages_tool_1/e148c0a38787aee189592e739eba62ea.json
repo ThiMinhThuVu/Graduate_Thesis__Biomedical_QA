@@ -1,0 +1,97 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/controlled_substance": {
+                "title": "Controlled substance",
+                "url": "https://en.wikipedia.org/wiki/controlled_substance",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A controlled substance is generally a drug or chemical whose manufacture, possession, and use is regulated by a government, such as illicitly-obtained drugs or prescription medications that are designated by law. Some treaties, notably the Single Convention on Narcotic Drugs, the Convention on Psychotropic Substances, and the United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances, provide internationally agreed-upon \"schedules\" of controlled substances, which have been incorporated into national laws; however, national laws usually significantly expand on these international conventions.",
+                    "Some precursor chemicals used for the illegal production of 'controlled drugs' are also controlled substances in many countries, even though they may lack the pharmacological effects of the drugs themselves. Substances are classified according to schedules and consist primarily of potentially psychoactive substances and anabolic steroids. The controlled substances do not include many prescription items such as antibiotics.[1]",
+                    "",
+                    "=== Laws and enforcement ===",
+                    "In the United States, the Drug Enforcement Administration is the federal government agency responsible for suppressing the misuse of drugs and distribution by enforcing the Controlled Substances Act, which regulates activities with both the drugs themselves and certain precursors.  Some U.S. states have additional restrictions for substances which might or might not be regulated by the federal government. During the Obama Administration, the federal government also voluntarily suspended enforcement of federal laws restricting marijuana where people were operating in compliance with state law.[citation needed]",
+                    "Some states in the U.S. have statutes against health care providers self-prescribing and/or administering substances listed in the Controlled Substance Act schedules. This does not forbid licensed providers from self-prescribing medications not on the schedules.[citation needed]",
+                    "The term Controlled Drug in the United Kingdom (CD) is used for substances governed by the Misuse of Drugs Act 1971.[2] Other national drug prohibition laws include the Controlled Drugs and Substances Act (Canada) and the Misuse of Drugs Act 1975 (New Zealand), among many others.[citation needed]",
+                    "Within Europe controlled substance laws are legislated at the national rather than by the EU itself, with significant variation between countries in which and how chemicals are classified as controlled. Only drug precursor laws are legislated for at the European level.[citation needed]",
+                    "",
+                    "=== Use in research ===",
+                    "A common misunderstanding amongst researchers is that most national laws allow the use of small amounts of a controlled substance for non-clinical / non-in vivo research without licences. A typical use case might be having a few milligrams or microlitres of a controlled substance within larger chemical collections (often 10K's of chemicals) for in vitro screening. Researchers often believe that there is some form of “research exemption” for such small amounts. This incorrect view may be further re-enforced by R&D chemical suppliers often stating and asking scientists to confirm that anything bought is for research use only.[citation needed]",
+                    "A further misconception is that controlled substances laws simply list a few hundred substances (e.g. MDMA, fentanyl, amphetamine, etc.) and compliance can be achieved via checking a CAS number, chemical name or similar identifier. However, the reality is that most countries enact \"generic statement\" or \"chemical space\" laws, which aim to control all chemicals similar to the \"named\" substance. These either provide detailed descriptions similar to Markushes, or simply state analogues are also controlled. In addition, control of most named substances is extended to control of all of their ethers, esters, salts and stereoisomers.[citation needed]",
+                    "Due to this complexity in legislation the identification of controlled chemicals in research is often carried out computationally, either by in house systems maintained by a company's sample logistics department or by the use of commercial software solutions.[3] Automated systems are often required as many research operations can often have chemical collections running into 10Ks of molecules at the 1–5 mg scale, which are likely to include controlled substances, especially within medicinal chemistry research. These may not have been controlled when created, but they have subsequently been declared controlled.[citation needed]",
+                    "Switzerland has limited exemptions to some Directory E substances, but which substances are covered and what the exemption allows depends on the substance, for example compounds similar to fentanyl allow for \"Excluded from the control is the industrial and scientific use. Private use is not exempt from the control.\" The exemption wording for cyclohexylphenols is \"Cyclohexylphenols are exempted from the control under Chapters 5 and 6 of the Narcotics Control Ordinance of 25 May 2011 if they are used industrially by undertakings holding an operating license for the handling of controlled substances in Inventory e. For substance quantities of up to 100g, these companies do not require an import or export license\". In addition, import or export authorization is not required in case of controlled substances for analytical purpose in concentrations up to 1 mg/ml.[4]",
+                    "There are no specific research exemptions in the Misuse of Drugs Act 1971. However, the associated Misuse of Drugs Regulations 2001[5] does exempt products containing less than 1 mg of a controlled substance (1 μg for lysergide and derivatives) so long as a number of requirements are met, including that it cannot be recovered by readily applicable means, does not pose a risk to human health and is not meant for administration to a human or animal.[citation needed]",
+                    "Although this does at first seem to allow research use, in most circumstances the sample, by definition, is “recoverable” - in order to prepare it for use the sample is 'recovered' into an assay buffer or solvent such as DMSO or water. In 2017 the Home Office also confirmed that the 1 mg limit applies to the total of all preparations across the entire container in the case of sample microtitre plates.  Given this, most companies and researchers choose not to rely on this exemption.[citation needed]",
+                    "According to Home Office licensing, \"University research departments generally do not require licences to possess and supply drugs in schedule 2 drug, schedule 3 drug, schedule 4 drug part I,  part II and schedule 5, but they do require licences to produce any of those drugs and to produce, possess and/or supply drugs in schedule 1\".[6]",
+                    "The Law on the Traffic in Narcotic Drugs (Narcotics Act) has a partial exemption that might apply to certain research areas.",
+                    "For each schedule the act allows for",
+                    "the preparations of the substances listed in this Appendix if they are not",
+                    "a)      without being applied to or in the human or animal body, for diagnostic or analytical purposes only, and their content of one or more anesthetics not exceeding 0.001 per cent, or isotope-modified in the preparations, or",
+                    "b)      are particularly excluded",
+                    "The exact percentage various for each schedule. Also whether the '0.001%' allows the rest to be an assay solvent or medium, or whether a license is needed if you have some solid, e.g. 1 mg of sample before it's diluted is not clear.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Controlled Substance Act\". Archived from the original on 2021-06-30. Retrieved 2012-11-07.",
+                    "<info> ^ \"Scitegrity | Controlled Substances Squared\". www.scitegrity.com. Retrieved 2019-01-14.",
+                    "<info> ^ \"SR 812.121.1 Verordnung vom 25. Mai 2011 über die Betäubungsmittelkontrolle (Betäubungsmittelkontrollverordnung, BetmKV)\". www.admin.ch. Retrieved 2019-01-14.",
+                    "<info> ^ \"The Misuse of Drugs Regulations 2001\". www.legislation.gov.uk. Retrieved 2019-01-14.",
+                    "<info> ^ \"Controlled drugs: licences, fees and returns\". GOV.UK. Retrieved 2019-02-27.",
+                    "",
+                    "=== External links ===",
+                    "<info> Laws of New York State, §3306: Schedules of controlled substances. (under PBH Public Health, Article 33, Title I)",
+                    "<info> Texas State Controlled Substance Act (Health and Safety Code, Title 6, Chapter 481)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A controlled substance is generally a drug or chemical whose manufacture, possession, and use is regulated by a government, such as illicitly-obtained drugs or prescription medications that are designated by law. Some treaties, notably the Single Convention on Narcotic Drugs, the Convention on Psychotropic Substances, and the United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances, provide internationally agreed-upon \"schedules\" of controlled substances, which have been incorporated into national laws; however, national laws usually significantly expand on these international conventions.",
+                            "Some precursor chemicals used for the illegal production of 'controlled drugs' are also controlled substances in many countries, even though they may lack the pharmacological effects of the drugs themselves. Substances are classified according to schedules and consist primarily of potentially psychoactive substances and anabolic steroids. The controlled substances do not include many prescription items such as antibiotics.[1]"
+                        ]
+                    },
+                    "Laws and enforcement": {
+                        "content": [
+                            "In the United States, the Drug Enforcement Administration is the federal government agency responsible for suppressing the misuse of drugs and distribution by enforcing the Controlled Substances Act, which regulates activities with both the drugs themselves and certain precursors.  Some U.S. states have additional restrictions for substances which might or might not be regulated by the federal government. During the Obama Administration, the federal government also voluntarily suspended enforcement of federal laws restricting marijuana where people were operating in compliance with state law.[citation needed]",
+                            "Some states in the U.S. have statutes against health care providers self-prescribing and/or administering substances listed in the Controlled Substance Act schedules. This does not forbid licensed providers from self-prescribing medications not on the schedules.[citation needed]",
+                            "The term Controlled Drug in the United Kingdom (CD) is used for substances governed by the Misuse of Drugs Act 1971.[2] Other national drug prohibition laws include the Controlled Drugs and Substances Act (Canada) and the Misuse of Drugs Act 1975 (New Zealand), among many others.[citation needed]",
+                            "Within Europe controlled substance laws are legislated at the national rather than by the EU itself, with significant variation between countries in which and how chemicals are classified as controlled. Only drug precursor laws are legislated for at the European level.[citation needed]"
+                        ]
+                    },
+                    "Use in research": {
+                        "content": [
+                            "A common misunderstanding amongst researchers is that most national laws allow the use of small amounts of a controlled substance for non-clinical / non-in vivo research without licences. A typical use case might be having a few milligrams or microlitres of a controlled substance within larger chemical collections (often 10K's of chemicals) for in vitro screening. Researchers often believe that there is some form of “research exemption” for such small amounts. This incorrect view may be further re-enforced by R&D chemical suppliers often stating and asking scientists to confirm that anything bought is for research use only.[citation needed]",
+                            "A further misconception is that controlled substances laws simply list a few hundred substances (e.g. MDMA, fentanyl, amphetamine, etc.) and compliance can be achieved via checking a CAS number, chemical name or similar identifier. However, the reality is that most countries enact \"generic statement\" or \"chemical space\" laws, which aim to control all chemicals similar to the \"named\" substance. These either provide detailed descriptions similar to Markushes, or simply state analogues are also controlled. In addition, control of most named substances is extended to control of all of their ethers, esters, salts and stereoisomers.[citation needed]",
+                            "Due to this complexity in legislation the identification of controlled chemicals in research is often carried out computationally, either by in house systems maintained by a company's sample logistics department or by the use of commercial software solutions.[3] Automated systems are often required as many research operations can often have chemical collections running into 10Ks of molecules at the 1–5 mg scale, which are likely to include controlled substances, especially within medicinal chemistry research. These may not have been controlled when created, but they have subsequently been declared controlled.[citation needed]",
+                            "Switzerland has limited exemptions to some Directory E substances, but which substances are covered and what the exemption allows depends on the substance, for example compounds similar to fentanyl allow for \"Excluded from the control is the industrial and scientific use. Private use is not exempt from the control.\" The exemption wording for cyclohexylphenols is \"Cyclohexylphenols are exempted from the control under Chapters 5 and 6 of the Narcotics Control Ordinance of 25 May 2011 if they are used industrially by undertakings holding an operating license for the handling of controlled substances in Inventory e. For substance quantities of up to 100g, these companies do not require an import or export license\". In addition, import or export authorization is not required in case of controlled substances for analytical purpose in concentrations up to 1 mg/ml.[4]",
+                            "There are no specific research exemptions in the Misuse of Drugs Act 1971. However, the associated Misuse of Drugs Regulations 2001[5] does exempt products containing less than 1 mg of a controlled substance (1 μg for lysergide and derivatives) so long as a number of requirements are met, including that it cannot be recovered by readily applicable means, does not pose a risk to human health and is not meant for administration to a human or animal.[citation needed]",
+                            "Although this does at first seem to allow research use, in most circumstances the sample, by definition, is “recoverable” - in order to prepare it for use the sample is 'recovered' into an assay buffer or solvent such as DMSO or water. In 2017 the Home Office also confirmed that the 1 mg limit applies to the total of all preparations across the entire container in the case of sample microtitre plates.  Given this, most companies and researchers choose not to rely on this exemption.[citation needed]",
+                            "According to Home Office licensing, \"University research departments generally do not require licences to possess and supply drugs in schedule 2 drug, schedule 3 drug, schedule 4 drug part I,  part II and schedule 5, but they do require licences to produce any of those drugs and to produce, possess and/or supply drugs in schedule 1\".[6]",
+                            "The Law on the Traffic in Narcotic Drugs (Narcotics Act) has a partial exemption that might apply to certain research areas.",
+                            "For each schedule the act allows for",
+                            "the preparations of the substances listed in this Appendix if they are not",
+                            "a)      without being applied to or in the human or animal body, for diagnostic or analytical purposes only, and their content of one or more anesthetics not exceeding 0.001 per cent, or isotope-modified in the preparations, or",
+                            "b)      are particularly excluded",
+                            "The exact percentage various for each schedule. Also whether the '0.001%' allows the rest to be an assay solvent or medium, or whether a license is needed if you have some solid, e.g. 1 mg of sample before it's diluted is not clear."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Controlled Substance Act\". Archived from the original on 2021-06-30. Retrieved 2012-11-07.",
+                            "<info> ^ \"Scitegrity | Controlled Substances Squared\". www.scitegrity.com. Retrieved 2019-01-14.",
+                            "<info> ^ \"SR 812.121.1 Verordnung vom 25. Mai 2011 über die Betäubungsmittelkontrolle (Betäubungsmittelkontrollverordnung, BetmKV)\". www.admin.ch. Retrieved 2019-01-14.",
+                            "<info> ^ \"The Misuse of Drugs Regulations 2001\". www.legislation.gov.uk. Retrieved 2019-01-14.",
+                            "<info> ^ \"Controlled drugs: licences, fees and returns\". GOV.UK. Retrieved 2019-02-27."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Laws of New York State, §3306: Schedules of controlled substances. (under PBH Public Health, Article 33, Title I)",
+                            "<info> Texas State Controlled Substance Act (Health and Safety Code, Title 6, Chapter 481)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

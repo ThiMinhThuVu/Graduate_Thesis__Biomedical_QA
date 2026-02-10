@@ -1,0 +1,41 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/arthrogryposis%e2%80%93renal_dysfunction%e2%80%93cholestasis_syndrome": {
+                "title": "Arthrogryposis–renal dysfunction–cholestasis syndrome",
+                "url": "https://en.wikipedia.org/wiki/arthrogryposis%e2%80%93renal_dysfunction%e2%80%93cholestasis_syndrome",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Arthrogryposis–renal dysfunction–cholestasis syndrome is a cutaneous condition caused by a mutation in the VPS33B gene.[2]",
+                    "",
+                    "=== See also ===",
+                    "<info> List of cutaneous conditions",
+                    "",
+                    "=== References ===",
+                    "<info> ^ RESERVED, INSERM US14-- ALL RIGHTS. \"Orphanet: Arthrogryposis renal dysfunction cholestasis syndrome\". www.orpha.net. Retrieved 18 May 2019.{{cite web}}:  CS1 maint: numeric names: authors list (link)",
+                    "<info> ^ Rapini, Ronald P.; Bolognia, Jean L.; Jorizzo, Joseph L. (2007). Dermatology: 2-Volume Set. St. Louis: Mosby. ISBN 978-1-4160-2999-1.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Arthrogryposis–renal dysfunction–cholestasis syndrome is a cutaneous condition caused by a mutation in the VPS33B gene.[2]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of cutaneous conditions"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ RESERVED, INSERM US14-- ALL RIGHTS. \"Orphanet: Arthrogryposis renal dysfunction cholestasis syndrome\". www.orpha.net. Retrieved 18 May 2019.{{cite web}}:  CS1 maint: numeric names: authors list (link)",
+                            "<info> ^ Rapini, Ronald P.; Bolognia, Jean L.; Jorizzo, Joseph L. (2007). Dermatology: 2-Volume Set. St. Louis: Mosby. ISBN 978-1-4160-2999-1."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

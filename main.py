@@ -82,7 +82,8 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
     print("[ID]: ", sample_id)
     paths = setup_paths(settings, sample_id)
     file_all_ans = paths['final_answer']
-        
+    cache_ner_filter[sample_id] = {}
+    
     if dataset == "medhop" and sample_id in settings['chrunk_mapping']:
         original_question = settings['chrunk_mapping'][sample_id]
     else:
@@ -147,20 +148,27 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
             if path_i not in dict_ans[q_i]:
                 dict_ans[q_i][path_i] = {}
                 print(f"dict_ans[q_i][path_i]: {dict_ans[q_i][path_i]}")
-                # qi_final_answers = {}
-            # else:
-                # qi_final_answers = dict_ans[q_i][path_i]['final_qi']
-            
-            for module in [[True, False], [False, True]]:
-            # for module in [[True, False]]:
+             
+            for module in [[True, False, False, False, False], [False, True, False, False, False], [False, False, True, False, False], 
+                           [False, False, False, True, False], [False, False, False, False, True]]:
+            # for module in [[False, False, True, False, False]]:
                 settings['get_gg'] = module[0]
                 settings['get_wiki'] = module[1]    
+                settings['get_crawl_wiki'] = module[2]
+                settings['get_ner_wiki'] = module[3]
+                settings['get_sparql_context'] = module[4]
 
                 if settings['get_gg']:
                     source = 'google'
                 elif settings['get_wiki']:
                     source = 'wiki'
-
+                elif settings['get_crawl_wiki']:
+                    source = 'crawl_wiki'
+                elif settings['get_ner_wiki']:
+                    source = 'crawl_ner_wiki'
+                elif settings['get_sparql_context']:
+                    source = 'crawl_sparql_wikidata'
+                    
                 short_ans = ""
                 
                 source_have_run = False
@@ -189,7 +197,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     else:
                         key_entities = [short_ans]
                 
-                    print(f"\n--- Processing Step {step}: {subquestion} ---")
+                    print(f"\nSource [{source}] Processing Step {step}: {subquestion} ---")
                     
                     # Multiple Choice
                     candidates = []
@@ -198,7 +206,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     all_snippet, current_retrieval = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings,
                                                                 target_ans_type, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
                     
-                    cache_ner_filter[sample_id] = current_retrieval
+                    cache_ner_filter[sample_id][source] = current_retrieval
                     # continue
                     if has_extract_ner: # Only extract snippet                          
                         information_to_extract = search_kw_subq_retrieval + " " + all_snippet
@@ -209,6 +217,16 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                             
                     while idx_del < settings['max_candidates']:
                         if current_retrieval == "" or current_retrieval == []:
+                            candidates.append({
+                                "short_answer": "insufficient information",
+                                "long_answer": "No context",
+                                "retrieval_information": current_retrieval,
+                                "full_data": {
+                                    "short_answer": "insufficient information",
+                                    "long_answer": "No context"
+                                }
+                            })
+                            
                             break                                                
                             
                         # norm_rules = apply_answer_normalization_rules(question=subquestion,dataset=dataset,type_q=type_q)
@@ -431,7 +449,7 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    threads = [0, 1] # configs['run']['threads'] 
+    threads = [0, 500] # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
@@ -491,7 +509,7 @@ if __name__ == "__main__":
     model_mcq_name = "o3-mini" #"gpt-4.1-mini" #o3-mini
     mcq_add_no_ans = False # True #False
         
-    meta_ner = load_json(r'data/cache/meta_entity_v2.json')
+    meta_ner = load_json(r'data/metadata_entity.json')
     
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):

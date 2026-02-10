@@ -1,0 +1,33 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/j-shaped_sella_sign": {
+                "title": "J-shaped sella sign",
+                "url": "https://en.wikipedia.org/wiki/j-shaped_sella_sign",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The J-shaped sella sign is a radiologic sign observed on lateral views of skull radiographs as the forward elongation of the sella turcica, and its extension below the anterior clinoid process.[1] This abnormality causes the sella turcica to resemble the letter J. This sign is a normal variant in 5% of children,[1] but it is also associated with optic nerve glioma, hydrocephalus, mucopolysaccharidoses, and achondroplasia.[2]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Wren, M. W. (1969-05-01). \"Significance of the so-called J-shaped sella in the diagnosis of intracranial aneurysm\". British Journal of Ophthalmology. 53 (5): 307–309. doi:10.1136/bjo.53.5.307. ISSN 0007-1161. PMC 1207361. PMID 4306328.",
+                    "<info> ^ Yang, Heewon; Kim, Hyukhoon; Kwak, Jae Ryoung; Choi, Sangchun (2019-05-01). \"J-Shaped Sella in a 7-Month-Old Infant\". Journal of Emergency Medicine. 56 (5): e89–e90. doi:10.1016/j.jemermed.2018.12.048. ISSN 0736-4679. PMID 30711367.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The J-shaped sella sign is a radiologic sign observed on lateral views of skull radiographs as the forward elongation of the sella turcica, and its extension below the anterior clinoid process.[1] This abnormality causes the sella turcica to resemble the letter J. This sign is a normal variant in 5% of children,[1] but it is also associated with optic nerve glioma, hydrocephalus, mucopolysaccharidoses, and achondroplasia.[2]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Wren, M. W. (1969-05-01). \"Significance of the so-called J-shaped sella in the diagnosis of intracranial aneurysm\". British Journal of Ophthalmology. 53 (5): 307–309. doi:10.1136/bjo.53.5.307. ISSN 0007-1161. PMC 1207361. PMID 4306328.",
+                            "<info> ^ Yang, Heewon; Kim, Hyukhoon; Kwak, Jae Ryoung; Choi, Sangchun (2019-05-01). \"J-Shaped Sella in a 7-Month-Old Infant\". Journal of Emergency Medicine. 56 (5): e89–e90. doi:10.1016/j.jemermed.2018.12.048. ISSN 0736-4679. PMID 30711367."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

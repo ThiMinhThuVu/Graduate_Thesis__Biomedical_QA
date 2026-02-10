@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/assassination_of_abraham_lincoln": {
+                "title": "Assassination of Abraham Lincoln",
+                "url": "https://en.wikipedia.org/wiki/assassination_of_abraham_lincoln",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

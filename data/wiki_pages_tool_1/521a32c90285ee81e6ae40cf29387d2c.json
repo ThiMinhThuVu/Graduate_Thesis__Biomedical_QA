@@ -1,0 +1,37 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/contiguous_gene_syndrome": {
+                "title": "Contiguous gene syndrome",
+                "url": "https://en.wikipedia.org/wiki/contiguous_gene_syndrome",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A contiguous gene syndrome (CGS), also known as a contiguous gene deletion syndrome, is a clinical phenotype caused by a chromosomal abnormality, such as a deletion or duplication that removes several genes lying in close proximity to one another on the chromosome.  The combined phenotype of the patient is a combination of what is seen when any individual has disease-causing mutations in any of the individual genes involved in the deletion.  While it can be caused by deleted material on a chromosome, it is not, strictly speaking, the same entity as a segmental aneuploidy syndrome.  A segmental aneuploidy syndrome is a subtype of CGS that regularly recur, usually due to non-allelic homologous recombination between low copy repeats in the region.[1]  Most CGS involve the X chromosome and affect male individuals.[2]",
+                    "One of the earliest and most famous examples of a CGS involves a male patient with Duchenne muscular dystrophy (DMD), chronic granulomatous disease (CGD), retinitis pigmentosa and intellectual disability.  When it was discovered that an X chromosome deletion (specifically Xp21) was the underlying cause of all of these features, researchers were able to use this information to clone the genes responsible for DMD and CGD.[1]",
+                    "One of those more common CGS involves a deletion on the X chromosome (near Xp21) that encompasses DMD (causing Duchenne muscular dystrophy), NROB1 (causing X-linked adrenal hypoplasia congenita) and GK (causing glycerol kinase deficiency).  These patients will have all the common features of each individual disease, resulting in a very complex phenotype.[2]  Deletions near the distal tip of the p arm of the X chromosome are also a frequent cause of CGS.  In addition to the previously described CGS that occur on the X chromosome, two other common syndromes are Langer–Giedion syndrome (caused by deletions of TRPS1 and EXT1 on 8q24 and WAGR syndrome (caused by deletions on 11q13 encompassing PAX6 and WT1.)[1]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c Strachan, Tom; Read, Andrew. Human Molecular Genetics (4th ed.). New York: Garland Science. pp. 427–428.",
+                    "<info> ^ a b Shaffer, Lisa G.; Ledbetter, David H.; Lupski, James R. (2004). \"Molecular Cytogenetics of Contiguous Gene Syndromes: Mechanisms and Consequences of Gene Dosage Imbalance\". In Scriver, C.W.; Beaudet, A.L.; Sly, W.S.; et al. (eds.). Metabolic and Molecular Bases of Inherited Disease (8th ed.). New York: McGraw Hill.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A contiguous gene syndrome (CGS), also known as a contiguous gene deletion syndrome, is a clinical phenotype caused by a chromosomal abnormality, such as a deletion or duplication that removes several genes lying in close proximity to one another on the chromosome.  The combined phenotype of the patient is a combination of what is seen when any individual has disease-causing mutations in any of the individual genes involved in the deletion.  While it can be caused by deleted material on a chromosome, it is not, strictly speaking, the same entity as a segmental aneuploidy syndrome.  A segmental aneuploidy syndrome is a subtype of CGS that regularly recur, usually due to non-allelic homologous recombination between low copy repeats in the region.[1]  Most CGS involve the X chromosome and affect male individuals.[2]",
+                            "One of the earliest and most famous examples of a CGS involves a male patient with Duchenne muscular dystrophy (DMD), chronic granulomatous disease (CGD), retinitis pigmentosa and intellectual disability.  When it was discovered that an X chromosome deletion (specifically Xp21) was the underlying cause of all of these features, researchers were able to use this information to clone the genes responsible for DMD and CGD.[1]",
+                            "One of those more common CGS involves a deletion on the X chromosome (near Xp21) that encompasses DMD (causing Duchenne muscular dystrophy), NROB1 (causing X-linked adrenal hypoplasia congenita) and GK (causing glycerol kinase deficiency).  These patients will have all the common features of each individual disease, resulting in a very complex phenotype.[2]  Deletions near the distal tip of the p arm of the X chromosome are also a frequent cause of CGS.  In addition to the previously described CGS that occur on the X chromosome, two other common syndromes are Langer–Giedion syndrome (caused by deletions of TRPS1 and EXT1 on 8q24 and WAGR syndrome (caused by deletions on 11q13 encompassing PAX6 and WT1.)[1]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c Strachan, Tom; Read, Andrew. Human Molecular Genetics (4th ed.). New York: Garland Science. pp. 427–428.",
+                            "<info> ^ a b Shaffer, Lisa G.; Ledbetter, David H.; Lupski, James R. (2004). \"Molecular Cytogenetics of Contiguous Gene Syndromes: Mechanisms and Consequences of Gene Dosage Imbalance\". In Scriver, C.W.; Beaudet, A.L.; Sly, W.S.; et al. (eds.). Metabolic and Molecular Bases of Inherited Disease (8th ed.). New York: McGraw Hill."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

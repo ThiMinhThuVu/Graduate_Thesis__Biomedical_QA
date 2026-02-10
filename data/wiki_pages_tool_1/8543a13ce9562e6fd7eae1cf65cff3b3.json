@@ -1,0 +1,111 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/tetany": {
+                "title": "Tetany",
+                "url": "https://en.wikipedia.org/wiki/tetany",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Tetany or tetanic seizure is a medical sign consisting of the involuntary contraction of muscles, which may be caused by disorders that increase the action potential frequency of muscle cells or of the nerves that innervate them.",
+                    "Muscle cramps caused by the disease tetanus are not classified as tetany; rather, they are due to a lack of inhibition to the neurons that supply muscles. Tetanic contractions (physiologic tetanus) have a broad range of muscle contraction types, of which tetany is only one.",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Tetany is characterized by contraction of distal muscles of the hands (carpal spasm with extension of interphalangeal joints and adduction and flexion of the metacarpophalangeal joints) and feet (pedal spasm) and is associated with tingling around the mouth and distally in the limbs.[citation needed]",
+                    "",
+                    "=== Causes ===",
+                    "<info> The usual cause of tetany is a deficiency of calcium. An excess of phosphate (high phosphate-to-calcium ratio) can also trigger the spasms.[2][3]",
+                    "<info> Underfunction of the parathyroid gland can lead to tetany.",
+                    "<info> Low levels of carbon dioxide cause tetany by altering the albumin binding of calcium such that the ionized (physiologically influencing) fraction of calcium is reduced; one common reason for low carbon dioxide levels is hyperventilation.[4]",
+                    "<info> Low levels of magnesium can lead to tetany.[5][6]",
+                    "<info> Clostridium tetani toxin, via inhibition of glycine-mediated and GABA-ergic neurotransmission, may lead to tetany.[verification needed]",
+                    "<info> An excess of potassium in grass hay or pasture can trigger winter tetany, or grass tetany, in ruminants.[verification needed]",
+                    "<info> Osteomalacia and rickets due to deficiency of vitamin D.[7]",
+                    "Metabolic alkalosis with hypokalemia like Gitelman syndrome and Bartter syndrome can cause tetany. Vomiting induced alkalosis and hyperventilation induced respiratory alkalosis also cause tetany because of neuronal irritability.[citation needed]",
+                    "",
+                    "=== Pathophysiology ===",
+                    "Hypocalcemia is the primary cause of tetany. Low ionized calcium levels in the extracellular fluid increase the permeability of neuronal membranes to sodium ion, causing a progressive depolarization, which increases the possibility of action potentials. This occurs because calcium ions interact with the exterior surface of sodium channels in the plasma membrane of nerve cells and hypocalcemia effectively increases resting potential (rendering the cells more excitable) since less positive charge is present extracellularly. When calcium ions are absent the voltage level required to open voltage gated sodium channels is significantly altered (less excitation is required).[8] If the plasma Ca2+ decreases to less than 50% of the normal value of 9.4 mg/dl, action potentials may be spontaneously generated, causing contraction of peripheral skeletal muscles. Hypocalcemia is not a term for tetany but is rather a cause of tetany.",
+                    "",
+                    "=== Diagnosis ===",
+                    "French Professor Armand Trousseau (1801–1867) devised the maneuver  of occluding the brachial artery by squeezing, to trigger cramps in the fingers. This is now known as the Trousseau sign of latent tetany.[9]",
+                    "Also, tetany can be demonstrated by tapping anterior to the ear, at the emergence of the facial nerve. A resultant twitch of the nose or lips suggests low calcium levels. This is now known as the Chvostek sign.[citation needed]",
+                    "EMG studies reveal single or often grouped motor unit discharges at low discharge frequency during tetany episodes.[citation needed]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Bill Kvasnicka; Les J. Krysl. \"Grass Tetany in Beef Cattle\". Beef Cattle Handbook (PDF).",
+                    "<info> ^ Haldimann, B.; Vogt, K. (Sep 1983). \"[Hyperphosphatemia and tetany following phosphate enema]\". Schweiz Med Wochenschr. 113 (35): 1231–3. PMID 6623048.",
+                    "<info> ^ Sutters, M.; Gaboury, CL.; Bennett, WM. (Oct 1996). \"Severe hyperphosphatemia and hypocalcemia: a dilemma in patient management\". J Am Soc Nephrol. 7 (10): 2056–61. doi:10.1681/ASN.V7102056. PMID 8915965.",
+                    "<info> ^ Hall, John, ed. (2010). Guyton and Hall textbook of medical physiology (12th ed.). Philadelphia, Pa.: Saunders/Elsevier. p. 367. ISBN 978-1-4160-4574-8.",
+                    "<info> ^ Hall, John, ed. (2010). Guyton and Hall textbook of medical physiology (12th ed.). Philadelphia, Pa.: Saunders/Elsevier. p. 856. ISBN 978-1-4160-4574-8.",
+                    "<info> ^ Grobin, W (May 14, 1960). \"A New Syndrome, Magnesium-Deficiency Tetany\". Canadian Medical Association Journal. 82 (20): 1034–5. PMC 1938332. PMID 20326284.",
+                    "<info> ^ Hess, Alfred F. (1930). Rickets, including osteomalacia and tetany. London: Henry Kimpton.",
+                    "<info> ^ Hall, John, ed. (2010). Guyton and Hall textbook of medical physiology (12th ed.). Philadelphia, Pa.: Saunders/Elsevier. p. 64. ISBN 978-1-4160-4574-8.",
+                    "<info> ^ Hernandez, Anna. \"MD\" (html). Osmosis.org. The Internet Archive: Elsevier. Archived from the original on 2021-11-29. Retrieved 2022-03-31. Trousseau's sign refers to the involuntary contraction of the muscles in the hand and wrist (i.e., carpopedal spasm) that occurs after the compression of the upper arm with a blood pressure cuff.",
+                    "",
+                    "=== External links ===",
+                    "<info> Maccallum, WG; Voegtlin, C (Jan 9, 1909). \"On the relation of tetany to the parathyroid glands and to calcium metabolism\". The Journal of Experimental Medicine. 11 (1): 118–51. doi:10.1084/jem.11.1.118. PMC 2124703. PMID 19867238.",
+                    "<info> Williams, A; Abraham, D; Liddle, V (2011). \"Tetany: A diagnostic dilemma\". Journal of Anaesthesiology Clinical Pharmacology. 27 (3): 393–394. doi:10.4103/0970-9185.83691. PMC 3161471. PMID 21897517.",
+                    "<info> Harrison's Principles of Internal Medicine 16th Edition – Dennis L. Kasper, Eugene Braunwald, Stephen Hauser, Dan Longo, J. Larry Jameson, Anthony S. Fauci.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Tetany or tetanic seizure is a medical sign consisting of the involuntary contraction of muscles, which may be caused by disorders that increase the action potential frequency of muscle cells or of the nerves that innervate them.",
+                            "Muscle cramps caused by the disease tetanus are not classified as tetany; rather, they are due to a lack of inhibition to the neurons that supply muscles. Tetanic contractions (physiologic tetanus) have a broad range of muscle contraction types, of which tetany is only one."
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Tetany is characterized by contraction of distal muscles of the hands (carpal spasm with extension of interphalangeal joints and adduction and flexion of the metacarpophalangeal joints) and feet (pedal spasm) and is associated with tingling around the mouth and distally in the limbs.[citation needed]"
+                        ]
+                    },
+                    "Causes": {
+                        "content": [
+                            "<info> The usual cause of tetany is a deficiency of calcium. An excess of phosphate (high phosphate-to-calcium ratio) can also trigger the spasms.[2][3]",
+                            "<info> Underfunction of the parathyroid gland can lead to tetany.",
+                            "<info> Low levels of carbon dioxide cause tetany by altering the albumin binding of calcium such that the ionized (physiologically influencing) fraction of calcium is reduced; one common reason for low carbon dioxide levels is hyperventilation.[4]",
+                            "<info> Low levels of magnesium can lead to tetany.[5][6]",
+                            "<info> Clostridium tetani toxin, via inhibition of glycine-mediated and GABA-ergic neurotransmission, may lead to tetany.[verification needed]",
+                            "<info> An excess of potassium in grass hay or pasture can trigger winter tetany, or grass tetany, in ruminants.[verification needed]",
+                            "<info> Osteomalacia and rickets due to deficiency of vitamin D.[7]",
+                            "Metabolic alkalosis with hypokalemia like Gitelman syndrome and Bartter syndrome can cause tetany. Vomiting induced alkalosis and hyperventilation induced respiratory alkalosis also cause tetany because of neuronal irritability.[citation needed]"
+                        ]
+                    },
+                    "Pathophysiology": {
+                        "content": [
+                            "Hypocalcemia is the primary cause of tetany. Low ionized calcium levels in the extracellular fluid increase the permeability of neuronal membranes to sodium ion, causing a progressive depolarization, which increases the possibility of action potentials. This occurs because calcium ions interact with the exterior surface of sodium channels in the plasma membrane of nerve cells and hypocalcemia effectively increases resting potential (rendering the cells more excitable) since less positive charge is present extracellularly. When calcium ions are absent the voltage level required to open voltage gated sodium channels is significantly altered (less excitation is required).[8] If the plasma Ca2+ decreases to less than 50% of the normal value of 9.4 mg/dl, action potentials may be spontaneously generated, causing contraction of peripheral skeletal muscles. Hypocalcemia is not a term for tetany but is rather a cause of tetany."
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "French Professor Armand Trousseau (1801–1867) devised the maneuver  of occluding the brachial artery by squeezing, to trigger cramps in the fingers. This is now known as the Trousseau sign of latent tetany.[9]",
+                            "Also, tetany can be demonstrated by tapping anterior to the ear, at the emergence of the facial nerve. A resultant twitch of the nose or lips suggests low calcium levels. This is now known as the Chvostek sign.[citation needed]",
+                            "EMG studies reveal single or often grouped motor unit discharges at low discharge frequency during tetany episodes.[citation needed]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Bill Kvasnicka; Les J. Krysl. \"Grass Tetany in Beef Cattle\". Beef Cattle Handbook (PDF).",
+                            "<info> ^ Haldimann, B.; Vogt, K. (Sep 1983). \"[Hyperphosphatemia and tetany following phosphate enema]\". Schweiz Med Wochenschr. 113 (35): 1231–3. PMID 6623048.",
+                            "<info> ^ Sutters, M.; Gaboury, CL.; Bennett, WM. (Oct 1996). \"Severe hyperphosphatemia and hypocalcemia: a dilemma in patient management\". J Am Soc Nephrol. 7 (10): 2056–61. doi:10.1681/ASN.V7102056. PMID 8915965.",
+                            "<info> ^ Hall, John, ed. (2010). Guyton and Hall textbook of medical physiology (12th ed.). Philadelphia, Pa.: Saunders/Elsevier. p. 367. ISBN 978-1-4160-4574-8.",
+                            "<info> ^ Hall, John, ed. (2010). Guyton and Hall textbook of medical physiology (12th ed.). Philadelphia, Pa.: Saunders/Elsevier. p. 856. ISBN 978-1-4160-4574-8.",
+                            "<info> ^ Grobin, W (May 14, 1960). \"A New Syndrome, Magnesium-Deficiency Tetany\". Canadian Medical Association Journal. 82 (20): 1034–5. PMC 1938332. PMID 20326284.",
+                            "<info> ^ Hess, Alfred F. (1930). Rickets, including osteomalacia and tetany. London: Henry Kimpton.",
+                            "<info> ^ Hall, John, ed. (2010). Guyton and Hall textbook of medical physiology (12th ed.). Philadelphia, Pa.: Saunders/Elsevier. p. 64. ISBN 978-1-4160-4574-8.",
+                            "<info> ^ Hernandez, Anna. \"MD\" (html). Osmosis.org. The Internet Archive: Elsevier. Archived from the original on 2021-11-29. Retrieved 2022-03-31. Trousseau's sign refers to the involuntary contraction of the muscles in the hand and wrist (i.e., carpopedal spasm) that occurs after the compression of the upper arm with a blood pressure cuff."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Maccallum, WG; Voegtlin, C (Jan 9, 1909). \"On the relation of tetany to the parathyroid glands and to calcium metabolism\". The Journal of Experimental Medicine. 11 (1): 118–51. doi:10.1084/jem.11.1.118. PMC 2124703. PMID 19867238.",
+                            "<info> Williams, A; Abraham, D; Liddle, V (2011). \"Tetany: A diagnostic dilemma\". Journal of Anaesthesiology Clinical Pharmacology. 27 (3): 393–394. doi:10.4103/0970-9185.83691. PMC 3161471. PMID 21897517.",
+                            "<info> Harrison's Principles of Internal Medicine 16th Edition – Dennis L. Kasper, Eugene Braunwald, Stephen Hauser, Dan Longo, J. Larry Jameson, Anthony S. Fauci."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

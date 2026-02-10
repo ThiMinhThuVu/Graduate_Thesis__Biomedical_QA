@@ -1,0 +1,121 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/amino_acid_replacement": {
+                "title": "Amino acid replacement",
+                "url": "https://en.wikipedia.org/wiki/amino_acid_replacement",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Amino acid replacement is a change from one amino acid to a different amino acid in a protein due to point mutation in the corresponding DNA sequence. It is caused by nonsynonymous missense mutation which changes the codon sequence to code other amino acid instead of the original.",
+                    "",
+                    "=== Conservative and radical replacements ===",
+                    "Not all amino acid replacements have the same effect on function or structure of protein. The  magnitude of  this process may vary depending on how similar or dissimilar the replaced amino acids are, as well as on their position in the sequence or the structure. Similarity between amino acids can be calculated based on substitution matrices, physico-chemical distance, or simple properties such as amino acid size or charge[1] (see also amino acid chemical properties). Usually amino acids are thus classified into two types:[2]",
+                    "<info> Conservative replacement - an amino acid is exchanged into another that has similar properties. This type of replacement is expected to rarely result in dysfunction in the corresponding protein [citation needed].",
+                    "<info> Radical replacement - an amino acid is exchanged into another with different properties. This can lead to changes in protein structure or function, which can cause potentially lead to changes in phenotype, sometimes pathogenic. A well known example in humans is sickle cell anemia, due to a mutation in beta globin where at position 6 glutamic acid (negatively charged) is exchanged with valine (not charged).",
+                    "",
+                    "=== Physicochemical distances ===",
+                    "Physicochemical distance is a measure that assesses the difference between replaced amino acids. The value of distance is based on properties of amino acids. There are 134 physicochemical properties that can be used to estimate similarity between amino acids.[3] Each physicochemical distance is based on different composition of properties.",
+                    "Grantham's distance depends on three properties: composition, polarity and molecular volume.[4]",
+                    "Distance difference D for each pair of amino acid i and j is calculated as: \n\n\n\n\nD\n\ni\nj\n\n\n=\n[\nα\n(\n\nc\n\ni\n\n\n−\n\nc\n\nj\n\n\n\n)\n\n2\n\n\n+\nβ\n(\n\np\n\ni\n\n\n−\n\np\n\nj\n\n\n\n)\n\n2\n\n\n+\nγ\n(\n\nv\n\ni\n\n\n−\n\nv\n\nj\n\n\n\n)\n\n2\n\n\n\n]\n\n\n1\n2\n\n\n\n\n\n{\\displaystyle D_{ij}=[\\alpha (c_{i}-c_{j})^{2}+\\beta (p_{i}-p_{j})^{2}+\\gamma (v_{i}-v_{j})^{2}]^{\\frac {1}{2}}}",
+                    "where c = composition, p = polarity, and v = molecular volume; and  are constants of squares of the inverses of the mean distance for each property, respectively equal to 1.833, 0.1018, 0.000399. According to Grantham's distance, most similar amino acids are leucine and isoleucine and the most distant are cysteine and tryptophan.",
+                    "Sneath's index takes into account 134 categories of activity and structure.[3] Dissimilarity index D is a percentage value of the sum of all properties not shared between two replaced amino acids. It is percentage value expressed by \n\n\n\nD\n=\n1\n−\nS\n\n\n{\\displaystyle D=1-S}\n\n, where S is Similarity.",
+                    "Epstein's coefficient of difference is based on the differences in polarity and size between replaced pairs of amino acids.[5] This index that distincts the direction of exchange between amino acids, described by 2 equations:",
+                    "Δ\n\na\n→\nb\n\n\n=\n(\n\nδ\n\np\no\nl\na\nr\ni\nt\ny\n\n\n2\n\n\n+\n\nδ\n\ns\ni\nz\ne\n\n\n2\n\n\n\n)\n\n1\n\n/\n\n2\n\n\n\n\n{\\displaystyle \\Delta _{a\\rightarrow b}=(\\delta _{polarity}^{2}+\\delta _{size}^{2})^{1/2}}\n\n when smaller hydrophobic residue is replaced by larger hydrophobic or polar residue",
+                    "Δ\n\na\n→\nb\n\n\n=\n(\n\nδ\n\np\no\nl\na\nr\ni\nt\ny\n\n\n2\n\n\n+\n[\n0.5\n\nδ\n\ns\ni\nz\ne\n\n\n\n]\n\n2\n\n\n\n)\n\n1\n\n/\n\n2\n\n\n\n\n{\\displaystyle \\Delta _{a\\rightarrow b}=(\\delta _{polarity}^{2}+[0.5\\delta _{size}]^{2})^{1/2}}\n\nwhen polar residue is exchanged or larger residue is replaced by smaller",
+                    "Miyata's distance is based on 2 physicochemical properties: volume and polarity.[6]",
+                    "Distance  between amino acids ai and aj is calculated as \n\n\n\n\nd\n\ni\nj\n\n\n=\n\n\n(\nΔ\n\np\n\ni\nj\n\n\n\n/\n\n\nσ\n\np\n\n\n\n)\n\n2\n\n\n+\n(\nΔ\n\nv\n\ni\nj\n\n\n\n/\n\n\nσ\n\nv\n\n\n\n)\n\n2\n\n\n\n\n\n\n{\\displaystyle d_{ij}={\\sqrt {(\\Delta p_{ij}/\\sigma _{p})^{2}+(\\Delta v_{ij}/\\sigma _{v})^{2}}}}\n\n where \n\n\n\nΔ\n\np\n\ni\nj\n\n\n\n\n{\\displaystyle \\Delta p_{ij}}\n\n is value of polarity difference between replaced amino acids  and \n\n\n\nΔ\n\nv\n\ni\nj\n\n\n\n\n{\\displaystyle \\Delta v_{ij}}\n\n and  is difference for volume; \n\n\n\n\nσ\n\np\n\n\n\n\n{\\displaystyle \\sigma _{p}}\n\n and \n\n\n\n\nσ\n\nv\n\n\n\n\n{\\displaystyle \\sigma _{v}}\n\n are standard deviations for \n\n\n\nΔ\n\np\n\ni\nj\n\n\n\n\n{\\displaystyle \\Delta p_{ij}}\n\n and \n\n\n\nΔ\n\nv\n\ni\nj\n\n\n\n\n{\\displaystyle \\Delta v_{ij}}",
+                    "Experimental Exchangeability was devised by Yampolsky and Stoltzfus.[7] It is the measure of the mean effect of exchanging one amino acid into a different amino acid.",
+                    "It is based on analysis of experimental studies where 9671 amino acids replacements from different proteins, were compared for effect on protein activity.",
+                    "",
+                    "=== Typical and idiosyncratic amino acids ===",
+                    "Amino acids can also be classified according to how many different amino acids they can be exchanged by through single nucleotide substitution.",
+                    "<info> Typical amino acids - there are several other amino acids which they can change into through single nucleotide substitution. Typical amino acids and their alternatives usually have similar physicochemical properties. Leucine is an example of a typical amino acid.",
+                    "<info> Idiosyncratic amino acids  - there are few similar amino acids that they can mutate to through single nucleotide substitution. In this case most amino acid replacements will be disruptive for protein function. Tryptophan is an example of an idiosyncratic amino acid.[8]",
+                    "",
+                    "=== Tendency to undergo amino acid replacement ===",
+                    "Some amino acids are more likely to be replaced. One of the factors that influences this tendency is physicochemical distance. Example of a measure of amino acid can be Graur's Stability Index.[9]  The assumption of this measure is that the amino acid replacement rate and protein's evolution is dependent on the amino acid composition of protein. Stability index S of an amino acid is calculated based on physicochemical distances of this amino acid and its alternatives than can mutate through single nucleotide substitution and probabilities to replace into these amino acids. Based on Grantham's distance the most immutable amino acid is cysteine, and the most prone to undergo exchange is methionine.",
+                    "",
+                    "=== Patterns of amino acid replacement ===",
+                    "Evolution of proteins is slower than DNA since only nonsynonymous mutations in DNA can result in amino acid replacements. Most mutations are neutral to maintain protein function and structure. Therefore, the more similar amino acids are, the more probable that they will be replaced. Conservative replacements are more common than radical replacements, since they can result in less important phenotypic changes.[10] On the other hand, beneficial mutations, enhancing protein functions are most likely to be radical replacements.[11] Also, the physicochemical distances, which are based on amino acids properties, are negatively correlated with probability of amino acids substitutions. Smaller distance between amino acids indicates that they are more likely to undergo replacement.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Dagan, Tal; Talmor, Yael; Graur, Dan (July 2002). \"Ratios of Radical to Conservative Amino Acid Replacement are Affected by Mutational and Compositional Factors and May Not Be Indicative of Positive Darwinian Selection\". Molecular Biology and Evolution. 19 (7): 1022–1025. doi:10.1093/oxfordjournals.molbev.a004161. PMID 12082122.",
+                    "<info> ^ Graur, Dan (2015-01-01). Molecular and Genome Evolution. Sinauer. ISBN 9781605354699.",
+                    "<info> ^ a b c d Sneath, P. H. (1966-11-01). \"Relations between chemical structure and biological activity in peptides\". Journal of Theoretical Biology. 12 (2): 157–195. Bibcode:1966JThBi..12..157S. doi:10.1016/0022-5193(66)90112-3. ISSN 0022-5193. PMID 4291386 – via Elsevier Science Direct.",
+                    "<info> ^ a b c Grantham, R. (1974-09-06). \"Amino acid difference formula to help explain protein evolution\". Science. 185 (4154): 862–864. Bibcode:1974Sci...185..862G. doi:10.1126/science.185.4154.862. ISSN 0036-8075. PMID 4843792. S2CID 35388307.",
+                    "<info> ^ a b Epstein, Charles J. (1967-07-22). \"Non-randomness of Ammo-acid Changes in the Evolution of Homologous Proteins\". Nature. 215 (5099): 355–359. Bibcode:1967Natur.215..355E. doi:10.1038/215355a0. PMID 4964553. S2CID 38859723.",
+                    "<info> ^ a b Miyata, T.; Miyazawa, S.; Yasunaga, T. (1979-03-15). \"Two types of amino acid substitutions in protein evolution\". Journal of Molecular Evolution. 12 (3): 219–236. Bibcode:1979JMolE..12..219M. doi:10.1007/BF01732340. ISSN 0022-2844. PMID 439147. S2CID 20978738.",
+                    "<info> ^ a b Yampolsky, Lev Y.; Stoltzfus, Arlin (2005-08-01). \"The Exchangeability of Amino Acids in Proteins\". Genetics. 170 (4): 1459–1472. doi:10.1534/genetics.104.039107. ISSN 0016-6731. PMC 1449787. PMID 15944362.",
+                    "<info> ^ Xia, Xuhua (2000-03-31). Data Analysis in Molecular Biology and Evolution. Springer Science & Business Media. ISBN 9780792377672.",
+                    "<info> ^ a b c Graur, D. (1985-01-01). \"Amino acid composition and the evolutionary rates of protein-coding genes\". Journal of Molecular Evolution. 22 (1): 53–62. Bibcode:1985JMolE..22...53G. doi:10.1007/BF02105805. ISSN 0022-2844. PMID 3932664. S2CID 23374899.",
+                    "<info> ^ Zuckerkandl; Pauling (1965). \"Evolutionary divergence and convergence in proteins\". New York: Academic Press: 97–166.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> ^ Dagan, Tal; Talmor, Yael; Graur, Dan (2002-07-01). \"Ratios of radical to conservative amino acid replacement are affected by mutational and compositional factors and may not be indicative of positive Darwinian selection\". Molecular Biology and Evolution. 19 (7): 1022–1025. doi:10.1093/oxfordjournals.molbev.a004161. ISSN 0737-4038. PMID 12082122.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Amino acid replacement is a change from one amino acid to a different amino acid in a protein due to point mutation in the corresponding DNA sequence. It is caused by nonsynonymous missense mutation which changes the codon sequence to code other amino acid instead of the original."
+                        ]
+                    },
+                    "Conservative and radical replacements": {
+                        "content": [
+                            "Not all amino acid replacements have the same effect on function or structure of protein. The  magnitude of  this process may vary depending on how similar or dissimilar the replaced amino acids are, as well as on their position in the sequence or the structure. Similarity between amino acids can be calculated based on substitution matrices, physico-chemical distance, or simple properties such as amino acid size or charge[1] (see also amino acid chemical properties). Usually amino acids are thus classified into two types:[2]",
+                            "<info> Conservative replacement - an amino acid is exchanged into another that has similar properties. This type of replacement is expected to rarely result in dysfunction in the corresponding protein [citation needed].",
+                            "<info> Radical replacement - an amino acid is exchanged into another with different properties. This can lead to changes in protein structure or function, which can cause potentially lead to changes in phenotype, sometimes pathogenic. A well known example in humans is sickle cell anemia, due to a mutation in beta globin where at position 6 glutamic acid (negatively charged) is exchanged with valine (not charged)."
+                        ]
+                    },
+                    "Physicochemical distances": {
+                        "content": [
+                            "Physicochemical distance is a measure that assesses the difference between replaced amino acids. The value of distance is based on properties of amino acids. There are 134 physicochemical properties that can be used to estimate similarity between amino acids.[3] Each physicochemical distance is based on different composition of properties.",
+                            "Grantham's distance depends on three properties: composition, polarity and molecular volume.[4]",
+                            "Distance difference D for each pair of amino acid i and j is calculated as: \n\n\n\n\nD\n\ni\nj\n\n\n=\n[\nα\n(\n\nc\n\ni\n\n\n−\n\nc\n\nj\n\n\n\n)\n\n2\n\n\n+\nβ\n(\n\np\n\ni\n\n\n−\n\np\n\nj\n\n\n\n)\n\n2\n\n\n+\nγ\n(\n\nv\n\ni\n\n\n−\n\nv\n\nj\n\n\n\n)\n\n2\n\n\n\n]\n\n\n1\n2\n\n\n\n\n\n{\\displaystyle D_{ij}=[\\alpha (c_{i}-c_{j})^{2}+\\beta (p_{i}-p_{j})^{2}+\\gamma (v_{i}-v_{j})^{2}]^{\\frac {1}{2}}}",
+                            "where c = composition, p = polarity, and v = molecular volume; and  are constants of squares of the inverses of the mean distance for each property, respectively equal to 1.833, 0.1018, 0.000399. According to Grantham's distance, most similar amino acids are leucine and isoleucine and the most distant are cysteine and tryptophan.",
+                            "Sneath's index takes into account 134 categories of activity and structure.[3] Dissimilarity index D is a percentage value of the sum of all properties not shared between two replaced amino acids. It is percentage value expressed by \n\n\n\nD\n=\n1\n−\nS\n\n\n{\\displaystyle D=1-S}\n\n, where S is Similarity.",
+                            "Epstein's coefficient of difference is based on the differences in polarity and size between replaced pairs of amino acids.[5] This index that distincts the direction of exchange between amino acids, described by 2 equations:",
+                            "Δ\n\na\n→\nb\n\n\n=\n(\n\nδ\n\np\no\nl\na\nr\ni\nt\ny\n\n\n2\n\n\n+\n\nδ\n\ns\ni\nz\ne\n\n\n2\n\n\n\n)\n\n1\n\n/\n\n2\n\n\n\n\n{\\displaystyle \\Delta _{a\\rightarrow b}=(\\delta _{polarity}^{2}+\\delta _{size}^{2})^{1/2}}\n\n when smaller hydrophobic residue is replaced by larger hydrophobic or polar residue",
+                            "Δ\n\na\n→\nb\n\n\n=\n(\n\nδ\n\np\no\nl\na\nr\ni\nt\ny\n\n\n2\n\n\n+\n[\n0.5\n\nδ\n\ns\ni\nz\ne\n\n\n\n]\n\n2\n\n\n\n)\n\n1\n\n/\n\n2\n\n\n\n\n{\\displaystyle \\Delta _{a\\rightarrow b}=(\\delta _{polarity}^{2}+[0.5\\delta _{size}]^{2})^{1/2}}\n\nwhen polar residue is exchanged or larger residue is replaced by smaller",
+                            "Miyata's distance is based on 2 physicochemical properties: volume and polarity.[6]",
+                            "Distance  between amino acids ai and aj is calculated as \n\n\n\n\nd\n\ni\nj\n\n\n=\n\n\n(\nΔ\n\np\n\ni\nj\n\n\n\n/\n\n\nσ\n\np\n\n\n\n)\n\n2\n\n\n+\n(\nΔ\n\nv\n\ni\nj\n\n\n\n/\n\n\nσ\n\nv\n\n\n\n)\n\n2\n\n\n\n\n\n\n{\\displaystyle d_{ij}={\\sqrt {(\\Delta p_{ij}/\\sigma _{p})^{2}+(\\Delta v_{ij}/\\sigma _{v})^{2}}}}\n\n where \n\n\n\nΔ\n\np\n\ni\nj\n\n\n\n\n{\\displaystyle \\Delta p_{ij}}\n\n is value of polarity difference between replaced amino acids  and \n\n\n\nΔ\n\nv\n\ni\nj\n\n\n\n\n{\\displaystyle \\Delta v_{ij}}\n\n and  is difference for volume; \n\n\n\n\nσ\n\np\n\n\n\n\n{\\displaystyle \\sigma _{p}}\n\n and \n\n\n\n\nσ\n\nv\n\n\n\n\n{\\displaystyle \\sigma _{v}}\n\n are standard deviations for \n\n\n\nΔ\n\np\n\ni\nj\n\n\n\n\n{\\displaystyle \\Delta p_{ij}}\n\n and \n\n\n\nΔ\n\nv\n\ni\nj\n\n\n\n\n{\\displaystyle \\Delta v_{ij}}",
+                            "Experimental Exchangeability was devised by Yampolsky and Stoltzfus.[7] It is the measure of the mean effect of exchanging one amino acid into a different amino acid.",
+                            "It is based on analysis of experimental studies where 9671 amino acids replacements from different proteins, were compared for effect on protein activity."
+                        ]
+                    },
+                    "Typical and idiosyncratic amino acids": {
+                        "content": [
+                            "Amino acids can also be classified according to how many different amino acids they can be exchanged by through single nucleotide substitution.",
+                            "<info> Typical amino acids - there are several other amino acids which they can change into through single nucleotide substitution. Typical amino acids and their alternatives usually have similar physicochemical properties. Leucine is an example of a typical amino acid.",
+                            "<info> Idiosyncratic amino acids  - there are few similar amino acids that they can mutate to through single nucleotide substitution. In this case most amino acid replacements will be disruptive for protein function. Tryptophan is an example of an idiosyncratic amino acid.[8]"
+                        ]
+                    },
+                    "Tendency to undergo amino acid replacement": {
+                        "content": [
+                            "Some amino acids are more likely to be replaced. One of the factors that influences this tendency is physicochemical distance. Example of a measure of amino acid can be Graur's Stability Index.[9]  The assumption of this measure is that the amino acid replacement rate and protein's evolution is dependent on the amino acid composition of protein. Stability index S of an amino acid is calculated based on physicochemical distances of this amino acid and its alternatives than can mutate through single nucleotide substitution and probabilities to replace into these amino acids. Based on Grantham's distance the most immutable amino acid is cysteine, and the most prone to undergo exchange is methionine."
+                        ]
+                    },
+                    "Patterns of amino acid replacement": {
+                        "content": [
+                            "Evolution of proteins is slower than DNA since only nonsynonymous mutations in DNA can result in amino acid replacements. Most mutations are neutral to maintain protein function and structure. Therefore, the more similar amino acids are, the more probable that they will be replaced. Conservative replacements are more common than radical replacements, since they can result in less important phenotypic changes.[10] On the other hand, beneficial mutations, enhancing protein functions are most likely to be radical replacements.[11] Also, the physicochemical distances, which are based on amino acids properties, are negatively correlated with probability of amino acids substitutions. Smaller distance between amino acids indicates that they are more likely to undergo replacement."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Dagan, Tal; Talmor, Yael; Graur, Dan (July 2002). \"Ratios of Radical to Conservative Amino Acid Replacement are Affected by Mutational and Compositional Factors and May Not Be Indicative of Positive Darwinian Selection\". Molecular Biology and Evolution. 19 (7): 1022–1025. doi:10.1093/oxfordjournals.molbev.a004161. PMID 12082122.",
+                            "<info> ^ Graur, Dan (2015-01-01). Molecular and Genome Evolution. Sinauer. ISBN 9781605354699.",
+                            "<info> ^ a b c d Sneath, P. H. (1966-11-01). \"Relations between chemical structure and biological activity in peptides\". Journal of Theoretical Biology. 12 (2): 157–195. Bibcode:1966JThBi..12..157S. doi:10.1016/0022-5193(66)90112-3. ISSN 0022-5193. PMID 4291386 – via Elsevier Science Direct.",
+                            "<info> ^ a b c Grantham, R. (1974-09-06). \"Amino acid difference formula to help explain protein evolution\". Science. 185 (4154): 862–864. Bibcode:1974Sci...185..862G. doi:10.1126/science.185.4154.862. ISSN 0036-8075. PMID 4843792. S2CID 35388307.",
+                            "<info> ^ a b Epstein, Charles J. (1967-07-22). \"Non-randomness of Ammo-acid Changes in the Evolution of Homologous Proteins\". Nature. 215 (5099): 355–359. Bibcode:1967Natur.215..355E. doi:10.1038/215355a0. PMID 4964553. S2CID 38859723.",
+                            "<info> ^ a b Miyata, T.; Miyazawa, S.; Yasunaga, T. (1979-03-15). \"Two types of amino acid substitutions in protein evolution\". Journal of Molecular Evolution. 12 (3): 219–236. Bibcode:1979JMolE..12..219M. doi:10.1007/BF01732340. ISSN 0022-2844. PMID 439147. S2CID 20978738.",
+                            "<info> ^ a b Yampolsky, Lev Y.; Stoltzfus, Arlin (2005-08-01). \"The Exchangeability of Amino Acids in Proteins\". Genetics. 170 (4): 1459–1472. doi:10.1534/genetics.104.039107. ISSN 0016-6731. PMC 1449787. PMID 15944362.",
+                            "<info> ^ Xia, Xuhua (2000-03-31). Data Analysis in Molecular Biology and Evolution. Springer Science & Business Media. ISBN 9780792377672.",
+                            "<info> ^ a b c Graur, D. (1985-01-01). \"Amino acid composition and the evolutionary rates of protein-coding genes\". Journal of Molecular Evolution. 22 (1): 53–62. Bibcode:1985JMolE..22...53G. doi:10.1007/BF02105805. ISSN 0022-2844. PMID 3932664. S2CID 23374899.",
+                            "<info> ^ Zuckerkandl; Pauling (1965). \"Evolutionary divergence and convergence in proteins\". New York: Academic Press: 97–166.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> ^ Dagan, Tal; Talmor, Yael; Graur, Dan (2002-07-01). \"Ratios of radical to conservative amino acid replacement are affected by mutational and compositional factors and may not be indicative of positive Darwinian selection\". Molecular Biology and Evolution. 19 (7): 1022–1025. doi:10.1093/oxfordjournals.molbev.a004161. ISSN 0737-4038. PMID 12082122."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

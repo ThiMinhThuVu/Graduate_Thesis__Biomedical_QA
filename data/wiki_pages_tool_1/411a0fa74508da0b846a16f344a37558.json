@@ -1,0 +1,125 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_genetic_disorders": {
+                "title": "List of genetic disorders",
+                "url": "https://en.wikipedia.org/wiki/list_of_genetic_disorders",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The following is a list of genetic disorders and if known, type of mutation and for the chromosome involved. Although the parlance \"disease-causing gene\" is common, it is the occurrence of an abnormality in the parents that causes the impairment to develop within the child. There are over 6,000 known genetic disorders in humans.",
+                    "",
+                    "=== Most common ===",
+                    "<info> P – Point mutation, or any insertion/deletion entirely inside one gene",
+                    "<info> D – Deletion of a gene or genes",
+                    "<info> Dup - Duplication of a gene or genes",
+                    "<info> C – Whole chromosome extra, missing, or both (see chromosome abnormality)",
+                    "<info> T – Trinucleotide repeat disorders: gene is extended in length",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"OMIM Entry - # 118220 - CHARCOT-MARIE-TOOTH DISEASE, DEMYELINATING, TYPE 1A; CMT1A\".",
+                    "<info> ^ Rodan LH, Qi W, Ducker GS, Demirbas D, Laine R, Yang E, et al. (September 2018). \"5,10-methenyltetrahydrofolate synthetase deficiency causes a neurometabolic disorder associated with microcephaly, epilepsy, and cerebral hypomyelination\". Molecular Genetics and Metabolism. 125 (1–2): 118–126. doi:10.1016/j.ymgme.2018.06.006. PMC 6557438. PMID 30031689.",
+                    "<info> ^ Mitchel MW, Moreno-De-Luca D, Myers SM, Levy RV, Turner S, Ledbetter DH, Martin CL (1993). \"17q12 Recurrent Deletion Syndrome\". In Adam MP, Ardinger HH, Pagon RA, Wallace SE, Bean LJ, Stephens K, Amemiya A (eds.). GeneReviews®. Seattle (WA): University of Washington, Seattle. PMID 27929632. Retrieved 2021-02-16.",
+                    "<info> ^ Roehlen N, Hilger H, Stock F, Gläser B, Guhl J, Schmitt-Graeff A, et al. (October 2018). \"17q12 Deletion Syndrome as a Rare Cause for Diabetes Mellitus Type MODY5\". The Journal of Clinical Endocrinology and Metabolism. 103 (10): 3601–3610. doi:10.1210/jc.2018-00955. PMID 30032214.",
+                    "<info> ^ Wan S, Zheng Y, Dang Y, Song T, Chen B, Zhang J (2019-05-17). \"Prenatal diagnosis of 17q12 microdeletion and microduplication syndrome in fetuses with congenital renal abnormalities\". Molecular Cytogenetics. 12 (1): 19. doi:10.1186/s13039-019-0431-7. PMC 6525371. PMID 31131025.",
+                    "<info> ^ Ferry Jr RJ. \"Allgrove (AAA) Syndrome\". Medscape. Retrieved 15 June 2020.",
+                    "<info> ^ \"Orphanet: Alagille syndrome\". www.orpha.net. Retrieved 2019-04-16.",
+                    "<info> ^ \"Online Mendelian Inheritance in Man (OMIM)\". OMIM. 2024-08-11. Retrieved 2024-08-11.",
+                    "<info> ^ a b \"CDKL5 deficiency disorder\". MedlinePlus. Retrieved 7 June 2021.",
+                    "<info> ^ \"Orphanet: CEDNIK syndrome\". Retrieved 8 May 2021.",
+                    "<info> ^ a b NIH Intramural Sequencing Center Group; Sloan, Jennifer L; Johnston, Jennifer J; Manoli, Irini; Chandler, Randy J; Krause, Caitlin; Carrillo-Carrasco, Nuria; Chandrasekaran, Suma D; Sysol, Justin R; O'Brien, Kevin; Hauser, Natalie S; Sapp, Julie C; Dorward, Heidi M; Huizing, Marjan; Barshop, Bruce A (2011). \"Exome sequencing identifies ACSF3 as a cause of combined malonic and methylmalonic aciduria\". Nature Genetics. 43 (9): 883–886. doi:10.1038/ng.908. ISSN 1061-4036. PMC 3163731. PMID 21841779.",
+                    "<info> ^ Alfares, A.; Nunez, L. D.; Al-Thihli, K.; Mitchell, J.; Melancon, S.; Anastasio, N.; Ha, K. C. H.; Majewski, J.; Rosenblatt, D. S.; Braverman, N. (2011). \"Combined malonic and methylmalonic aciduria: exome sequencing reveals mutations in the ACSF3 gene in patients with a non-classic phenotype\". Journal of Medical Genetics. 48 (9): 602–605. doi:10.1136/jmedgenet-2011-100230. ISSN 0022-2593. PMID 21785126. S2CID 19352176.",
+                    "<info> ^ \"FBR Model for Genetic Tests|ACCE|Genetic Testing|Genomics|CDC\". www.cdc.gov. Retrieved 2017-10-24.",
+                    "<info> ^ Langer LO, Cervenka J, Camargo M (March 1989). \"A severe autosomal recessive acromesomelic dysplasia, the Hunter-Thompson type, and comparison with the Grebe type\". Human Genetics. 81 (4): 323–8. doi:10.1007/BF00283684. PMID 2703235. S2CID 27942659.",
+                    "<info> ^ \"Orphanet: Congenital muscular dystrophy\". www.orpha.net. Retrieved 2019-04-16.",
+                    "<info> ^ \"Corneal dystrophy and perceptive deafness - About the Disease - Genetic and Rare Diseases Information Center\". rarediseases.info.nih.gov. Archived from the original on 2022-08-03. Retrieved 2022-08-03.",
+                    "<info> ^ \"History and Prevalence of Cri du Chat Syndrome\". findresources. Retrieved 15 June 2020.",
+                    "<info> ^ \"OMIM Entry - # 123450 - Cri-Du-Chat Syndrome\".",
+                    "<info> ^ \"Distal Myopathies - Types of Distal MD\". Muscular Dystrophy Association. 2015-12-18. Retrieved 2019-04-16.",
+                    "<info> ^ \"OMIM Entry - # 310200 - MUSCULAR DYSTROPHY, DUCHENNE TYPE; DMD\". omim.org. Retrieved 2019-04-16.",
+                    "<info> ^ Uitto J, Has C, Vahidnezhad H, Youssefian L, Bruckner-Tuderman L (January 2017). \"Molecular pathology of the basement membrane zone in heritable blistering diseases:: The paradigm of epidermolysis bullosa\". Matrix Biology. 57–58: 76–85. doi:10.1016/j.matbio.2016.07.009. PMID 27496350.",
+                    "<info> ^ Fine JD (November 2016). \"Epidemiology of Inherited Epidermolysis Bullosa Based on Incidence and Prevalence Estimates From the National Epidermolysis Bullosa Registry\". JAMA Dermatology. 152 (11): 1231–1238. doi:10.1001/jamadermatol.2016.2473. PMID 27463098.",
+                    "<info> ^ \"Glucose-6-Phosphate Dehydrogenase (G6PD) Deficiency\". msdmanuals.com. Retrieved 2024-11-11.",
+                    "<info> ^ Faughnan ME, Mager JJ, Hetts SW, Palda VA, Lang-Robertson K, Buscarini E, et al. (December 2020). \"Second International Guidelines for the Diagnosis and Management of Hereditary Hemorrhagic Telangiectasia\". Annals of Internal Medicine. 173 (12): 989–1001. doi:10.7326/M20-1443. PMID 32894695. S2CID 221542952.",
+                    "<info> ^ \"OMIM Entry – # 236200 – Homocystinuria Due to Cystathionine Beta-Synthase Deficiency\". omim.org. Retrieved 2018-03-01.",
+                    "<info> ^ Schinzel, Albert; Niedrist, Dunja (2001). \"Chromosome imbalances associated with epilepsy\". American Journal of Medical Genetics. 106 (2): 119–124. doi:10.1002/ajmg.1576. PMID 11579431.",
+                    "<info> ^ \"Orphanet: Autosomal recessive limb girdle muscular dystrophy\". www.orpha.net. Retrieved 2019-04-16.",
+                    "<info> ^ \"Orphanet: Autosomal dominant limb girdle muscular dystrophy\". www.orpha.net. Retrieved 2019-04-16.",
+                    "<info> ^ \"'MEDNIK': A novel genetic syndrome\". EurekAlert!. Retrieved 2017-10-24.",
+                    "<info> ^ \"Hereditary disorder found in Que. families\". CTV News. 4 December 2008. Archived from the original on 2008-12-07.",
+                    "<info> ^ \"OMIM Entry - # 217085 - CONGENITAL HEART DEFECTS, HAMARTOMAS OF TONGUE, AND POLYSYNDACTYLY; CHDTHP\". omim.org. Retrieved 2022-05-11.",
+                    "<info> ^ \"OMIM Entry – # 176860 – Thrombophilia Due to Protein C Deficiency, Autosomal Dominant; THPH3\". omim.org. Retrieved 2018-03-01.",
+                    "<info> ^ \"OMIM Entry - # 300263 - SIDERIUS X-LINKED MENTAL RETARDATION SYNDROME; MRXSSD\". omim.org. Retrieved 2019-04-16.",
+                    "<info> ^ \"OMIM Entry - # 300705 - CHROMOSOME Xp11.22 DUPLICATION SYNDROME\". omim.org. Retrieved 2019-04-16.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> \"Specific Genetic Disorders\". National Human Genome Research Institute (NHGRI). genome.gov. Retrieved 15 November 2017.",
+                    "<info> \"Congenital and Genetic Diseases | Genetic and Rare Diseases Information Center (GARD) – an NCATS Program\". rarediseases.info.nih.gov. NIH.gov. Retrieved 15 November 2017.",
+                    "<info> \"Color Vision deficiency | Genetics Home Reference\". ghr.nlm.nih.gov.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The following is a list of genetic disorders and if known, type of mutation and for the chromosome involved. Although the parlance \"disease-causing gene\" is common, it is the occurrence of an abnormality in the parents that causes the impairment to develop within the child. There are over 6,000 known genetic disorders in humans."
+                        ]
+                    },
+                    "Most common": {
+                        "content": [
+                            "<info> P – Point mutation, or any insertion/deletion entirely inside one gene",
+                            "<info> D – Deletion of a gene or genes",
+                            "<info> Dup - Duplication of a gene or genes",
+                            "<info> C – Whole chromosome extra, missing, or both (see chromosome abnormality)",
+                            "<info> T – Trinucleotide repeat disorders: gene is extended in length"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"OMIM Entry - # 118220 - CHARCOT-MARIE-TOOTH DISEASE, DEMYELINATING, TYPE 1A; CMT1A\".",
+                            "<info> ^ Rodan LH, Qi W, Ducker GS, Demirbas D, Laine R, Yang E, et al. (September 2018). \"5,10-methenyltetrahydrofolate synthetase deficiency causes a neurometabolic disorder associated with microcephaly, epilepsy, and cerebral hypomyelination\". Molecular Genetics and Metabolism. 125 (1–2): 118–126. doi:10.1016/j.ymgme.2018.06.006. PMC 6557438. PMID 30031689.",
+                            "<info> ^ Mitchel MW, Moreno-De-Luca D, Myers SM, Levy RV, Turner S, Ledbetter DH, Martin CL (1993). \"17q12 Recurrent Deletion Syndrome\". In Adam MP, Ardinger HH, Pagon RA, Wallace SE, Bean LJ, Stephens K, Amemiya A (eds.). GeneReviews®. Seattle (WA): University of Washington, Seattle. PMID 27929632. Retrieved 2021-02-16.",
+                            "<info> ^ Roehlen N, Hilger H, Stock F, Gläser B, Guhl J, Schmitt-Graeff A, et al. (October 2018). \"17q12 Deletion Syndrome as a Rare Cause for Diabetes Mellitus Type MODY5\". The Journal of Clinical Endocrinology and Metabolism. 103 (10): 3601–3610. doi:10.1210/jc.2018-00955. PMID 30032214.",
+                            "<info> ^ Wan S, Zheng Y, Dang Y, Song T, Chen B, Zhang J (2019-05-17). \"Prenatal diagnosis of 17q12 microdeletion and microduplication syndrome in fetuses with congenital renal abnormalities\". Molecular Cytogenetics. 12 (1): 19. doi:10.1186/s13039-019-0431-7. PMC 6525371. PMID 31131025.",
+                            "<info> ^ Ferry Jr RJ. \"Allgrove (AAA) Syndrome\". Medscape. Retrieved 15 June 2020.",
+                            "<info> ^ \"Orphanet: Alagille syndrome\". www.orpha.net. Retrieved 2019-04-16.",
+                            "<info> ^ \"Online Mendelian Inheritance in Man (OMIM)\". OMIM. 2024-08-11. Retrieved 2024-08-11.",
+                            "<info> ^ a b \"CDKL5 deficiency disorder\". MedlinePlus. Retrieved 7 June 2021.",
+                            "<info> ^ \"Orphanet: CEDNIK syndrome\". Retrieved 8 May 2021.",
+                            "<info> ^ a b NIH Intramural Sequencing Center Group; Sloan, Jennifer L; Johnston, Jennifer J; Manoli, Irini; Chandler, Randy J; Krause, Caitlin; Carrillo-Carrasco, Nuria; Chandrasekaran, Suma D; Sysol, Justin R; O'Brien, Kevin; Hauser, Natalie S; Sapp, Julie C; Dorward, Heidi M; Huizing, Marjan; Barshop, Bruce A (2011). \"Exome sequencing identifies ACSF3 as a cause of combined malonic and methylmalonic aciduria\". Nature Genetics. 43 (9): 883–886. doi:10.1038/ng.908. ISSN 1061-4036. PMC 3163731. PMID 21841779.",
+                            "<info> ^ Alfares, A.; Nunez, L. D.; Al-Thihli, K.; Mitchell, J.; Melancon, S.; Anastasio, N.; Ha, K. C. H.; Majewski, J.; Rosenblatt, D. S.; Braverman, N. (2011). \"Combined malonic and methylmalonic aciduria: exome sequencing reveals mutations in the ACSF3 gene in patients with a non-classic phenotype\". Journal of Medical Genetics. 48 (9): 602–605. doi:10.1136/jmedgenet-2011-100230. ISSN 0022-2593. PMID 21785126. S2CID 19352176.",
+                            "<info> ^ \"FBR Model for Genetic Tests|ACCE|Genetic Testing|Genomics|CDC\". www.cdc.gov. Retrieved 2017-10-24.",
+                            "<info> ^ Langer LO, Cervenka J, Camargo M (March 1989). \"A severe autosomal recessive acromesomelic dysplasia, the Hunter-Thompson type, and comparison with the Grebe type\". Human Genetics. 81 (4): 323–8. doi:10.1007/BF00283684. PMID 2703235. S2CID 27942659.",
+                            "<info> ^ \"Orphanet: Congenital muscular dystrophy\". www.orpha.net. Retrieved 2019-04-16.",
+                            "<info> ^ \"Corneal dystrophy and perceptive deafness - About the Disease - Genetic and Rare Diseases Information Center\". rarediseases.info.nih.gov. Archived from the original on 2022-08-03. Retrieved 2022-08-03.",
+                            "<info> ^ \"History and Prevalence of Cri du Chat Syndrome\". findresources. Retrieved 15 June 2020.",
+                            "<info> ^ \"OMIM Entry - # 123450 - Cri-Du-Chat Syndrome\".",
+                            "<info> ^ \"Distal Myopathies - Types of Distal MD\". Muscular Dystrophy Association. 2015-12-18. Retrieved 2019-04-16.",
+                            "<info> ^ \"OMIM Entry - # 310200 - MUSCULAR DYSTROPHY, DUCHENNE TYPE; DMD\". omim.org. Retrieved 2019-04-16.",
+                            "<info> ^ Uitto J, Has C, Vahidnezhad H, Youssefian L, Bruckner-Tuderman L (January 2017). \"Molecular pathology of the basement membrane zone in heritable blistering diseases:: The paradigm of epidermolysis bullosa\". Matrix Biology. 57–58: 76–85. doi:10.1016/j.matbio.2016.07.009. PMID 27496350.",
+                            "<info> ^ Fine JD (November 2016). \"Epidemiology of Inherited Epidermolysis Bullosa Based on Incidence and Prevalence Estimates From the National Epidermolysis Bullosa Registry\". JAMA Dermatology. 152 (11): 1231–1238. doi:10.1001/jamadermatol.2016.2473. PMID 27463098.",
+                            "<info> ^ \"Glucose-6-Phosphate Dehydrogenase (G6PD) Deficiency\". msdmanuals.com. Retrieved 2024-11-11.",
+                            "<info> ^ Faughnan ME, Mager JJ, Hetts SW, Palda VA, Lang-Robertson K, Buscarini E, et al. (December 2020). \"Second International Guidelines for the Diagnosis and Management of Hereditary Hemorrhagic Telangiectasia\". Annals of Internal Medicine. 173 (12): 989–1001. doi:10.7326/M20-1443. PMID 32894695. S2CID 221542952.",
+                            "<info> ^ \"OMIM Entry – # 236200 – Homocystinuria Due to Cystathionine Beta-Synthase Deficiency\". omim.org. Retrieved 2018-03-01.",
+                            "<info> ^ Schinzel, Albert; Niedrist, Dunja (2001). \"Chromosome imbalances associated with epilepsy\". American Journal of Medical Genetics. 106 (2): 119–124. doi:10.1002/ajmg.1576. PMID 11579431.",
+                            "<info> ^ \"Orphanet: Autosomal recessive limb girdle muscular dystrophy\". www.orpha.net. Retrieved 2019-04-16.",
+                            "<info> ^ \"Orphanet: Autosomal dominant limb girdle muscular dystrophy\". www.orpha.net. Retrieved 2019-04-16.",
+                            "<info> ^ \"'MEDNIK': A novel genetic syndrome\". EurekAlert!. Retrieved 2017-10-24.",
+                            "<info> ^ \"Hereditary disorder found in Que. families\". CTV News. 4 December 2008. Archived from the original on 2008-12-07.",
+                            "<info> ^ \"OMIM Entry - # 217085 - CONGENITAL HEART DEFECTS, HAMARTOMAS OF TONGUE, AND POLYSYNDACTYLY; CHDTHP\". omim.org. Retrieved 2022-05-11.",
+                            "<info> ^ \"OMIM Entry – # 176860 – Thrombophilia Due to Protein C Deficiency, Autosomal Dominant; THPH3\". omim.org. Retrieved 2018-03-01.",
+                            "<info> ^ \"OMIM Entry - # 300263 - SIDERIUS X-LINKED MENTAL RETARDATION SYNDROME; MRXSSD\". omim.org. Retrieved 2019-04-16.",
+                            "<info> ^ \"OMIM Entry - # 300705 - CHROMOSOME Xp11.22 DUPLICATION SYNDROME\". omim.org. Retrieved 2019-04-16."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> \"Specific Genetic Disorders\". National Human Genome Research Institute (NHGRI). genome.gov. Retrieved 15 November 2017.",
+                            "<info> \"Congenital and Genetic Diseases | Genetic and Rare Diseases Information Center (GARD) – an NCATS Program\". rarediseases.info.nih.gov. NIH.gov. Retrieved 15 November 2017.",
+                            "<info> \"Color Vision deficiency | Genetics Home Reference\". ghr.nlm.nih.gov."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

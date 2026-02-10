@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/thrombophilia": {
+                "title": "Thrombophilia",
+                "url": "https://en.wikipedia.org/wiki/thrombophilia",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

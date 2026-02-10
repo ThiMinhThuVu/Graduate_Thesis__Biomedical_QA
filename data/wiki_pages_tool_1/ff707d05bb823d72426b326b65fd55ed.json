@@ -1,0 +1,181 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/cervical_lymph_nodes": {
+                "title": "Cervical lymph nodes",
+                "url": "https://en.wikipedia.org/wiki/cervical_lymph_nodes",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Cervical lymph nodes are lymph nodes found in the neck. Of the 800 lymph nodes in the human body, 300 are in the neck.[4] Cervical lymph nodes are subject to a number of different pathological conditions including tumours, infection and inflammation.[5]",
+                    "",
+                    "=== Classification ===",
+                    "There are approximately 300 lymph nodes in the neck, and they can be classified in a number of different ways.[4]",
+                    "The classification of the cervical lymph nodes is generally attributed to Henri Rouvière in his 1932 publication \"Anatomie des Lymphatiques de l'Homme\" [6][7] Rouviere described the cervical lymph nodes as a collar which surrounded the upper aerodigestive tract, consisting of submental, facial, submandibular, parotid, mastoid, occipital and retropharyngeal nodes, together with two chains that run in the long axis of the neck, the anterior cervical and postero-lateral cervical groups.[8]",
+                    "However, this system was based upon anatomical landmarks found in dissection, making it imperfectly suited to the needs of clinicians, which led to new terminology for the lymph nodes that could be palpated. The most commonly used system is one based on a classification of the lymph nodes into numbered groupings, devised at the Memorial Sloan Kettering Cancer Center in the 1930s. This has been variously modified since. In 1991, the American Academy of Otolaryngology published a standardised version of this[9]to provide a uniform approach to neck dissection that was updated in 2002, including the addition of sub-levels, e.g. IIA and IIB.[2]",
+                    "More recently, classification systems have been proposed organized around what can be observed via diagnostic imaging.[10][8][2] In addition to the American Academy of Otolaryngology, systems have been devised by the American Joint Committee on Cancer (AJCC).[10] The AJCC system from the 7th edition of the Staging Manual (2009) remains unchanged in the 8th edition of 2018.[11]",
+                    "The American Academy of Otolaryngology system (2002) divides the nodes as follows:[1][2][3]",
+                    "<info> Level I: Submental and submandibular nodes\nLevel Ia: Submental - these are below the mentum of the chin more anteriorly between a triangle formed by the anterior belly of the digastric muscles on each side, and with the hyoid as its base in the axial plane.\nLevel Ib: Submandibular triangle - posterolateral to the anterior belly of the digastric muscle between the area formed by its margin, the stylohyoid muscle and the body of the mandible.",
+                    "<info> Level II: Upper jugular nodes (Subdigastric nodes) - upper third of the internal jugular vein and adjacent accessory nerve. The upper boundary is the base of the skull and the lower boundary is the hyoid. The anteromedial boundary is the stylohyoid muscle extending between the styloid and hyoid bones, and the posterolateral boundary is the sternocleidomastoid muscle.\nLevel IIa: Anteromedial to the vertical plane of the accessory nerve. This nerve is not seen on CT, but correlates to the posterior edge of the internal jugular vein and below the lateral mass of the atlas at the skull base but above the hyoid.\nLevel IIb: Deep to the jugular vein and below the lateral mass of the skull base, with its lower margin being the hyoid.",
+                    "<info> Level III: Middle jugular nodes - middle third of the internal jugular vein, between the hyoid and cricoid cartilage. They are bounded medially by the sternohyoid muscle and are deep to the sternocleidomastoid muscle. They are also  lateral to the internal or common carotid arteries; nodes medial to these vessels are in the anterior compartment of level VI.",
+                    "<info> Level IV: Lower jugular nodes - lower third of the internal jugular vein between the cricoid and clavicle, lateral to the sternohyoid and anteromedial to an oblique line drawn between the posterior sternocleidomastoid at the lateral neck and anterior scalene muscle more posteromedially. Similar to level III, level IV nodes are also lateral to the carotid, with nodes medial to this being level VI as well.",
+                    "<info> Level V: Posterior triangle nodes - nodes posterolateral to the sternocleidomastoid and anteromedial to the trapezius above the clavicle. The nodes are around the lower half of the spinal accessory nerve and the transverse cervical artery, and include the supraclavicular nodes.\nLevel VA: Above the horizontal plane formed by the inferior border of the anterior cricoid arch, including the spinal accessory nodes.\nLevel VB: Lymph nodes below this plane, including the transverse cervical nodes and supraclavicular nodes (except Virchow's node which is in IV).",
+                    "<info> Level VI: Anterior compartment nodes - Pretracheal, paratracheal, precricoid (Delphian) and perithyroid nodes, including those on the recurrent laryngeal nerve. The upper border is the hyoid, the lower the suprasternal notch, and the lateral borders the common carotid arteries.",
+                    "<info> Level Ia: Submental - these are below the mentum of the chin more anteriorly between a triangle formed by the anterior belly of the digastric muscles on each side, and with the hyoid as its base in the axial plane.",
+                    "<info> Level Ib: Submandibular triangle - posterolateral to the anterior belly of the digastric muscle between the area formed by its margin, the stylohyoid muscle and the body of the mandible.",
+                    "<info> Level IIa: Anteromedial to the vertical plane of the accessory nerve. This nerve is not seen on CT, but correlates to the posterior edge of the internal jugular vein and below the lateral mass of the atlas at the skull base but above the hyoid.",
+                    "<info> Level IIb: Deep to the jugular vein and below the lateral mass of the skull base, with its lower margin being the hyoid.",
+                    "<info> Level VA: Above the horizontal plane formed by the inferior border of the anterior cricoid arch, including the spinal accessory nodes.",
+                    "<info> Level VB: Lymph nodes below this plane, including the transverse cervical nodes and supraclavicular nodes (except Virchow's node which is in IV).",
+                    "The American Joint Committee on Cancer (AJCC) system differs from the above by including Level VII, but the American Academy considered these to be anatomically mediastinal rather than cervical nodes, and therefore should not be included in the classification of neck nodes.[8] However it is based on the 2002 American Academy system, although the boundaries are defined slightly differently.[12]",
+                    "The boundaries are defined as (Superior, Inferior, Antero-medial, Postero-lateral)",
+                    "<info> Level IA: Symphysis of mandible, Body of hyoid, Anterior belly of contralateral digastric muscle, Anterior belly of ipsilateral digastric muscle",
+                    "<info> Level IB: Body of mandible, Posterior belly of digastric muscle, Anterior belly of digastric muscle, Stylohyoid muscle",
+                    "<info> Level IIA: Skull base, Horizontal plane defined by the inferior border of the hyoid bone, The stylohyoid muscle, Vertical plane defined by the spinal accessory nerve",
+                    "<info> Level IIB: Skull base, Horizontal plane defined by the inferior body of the hyoid bone, Vertical plane defined by the spinal accessory nerve, Lateral border of the sternocleidomastoid muscle",
+                    "<info> Level III: Horizontal plane defined by the inferior body of hyoid, Horizontal plane defined by the inferior border of the cricoid cartilage, Lateral border of the sternohyoid muscle, Lateral border of the sternocleidomastoid or sensory branches of cervical plexus",
+                    "<info> Level IV: Horizontal plane defined by the inferior border of the cricoid cartilage, Clavicle, Lateral border of the sternohyoid muscle, Lateral border of the sternocleidomastoid or sensory branches of cervical plexus",
+                    "<info> Level VA: Apex of the convergence of the sternocleidomastoid and trapezius muscles, Horizontal plane defined by the lower border of the cricoid cartilage, Posterior border of the sternocleidomastoid muscle or sensory branches of cervical plexus, Anterior border of the trapezius muscle",
+                    "<info> Level VB: Horizontal plane defined by the lower border of the cricoid cartilage, Clavicle, Posterior border of the sternocleidomastoid muscle, Anterior border of the trapezius muscle",
+                    "<info> Level VI: Hyoid bone, Suprasternal notch, Common carotid artery, Common carotid artery",
+                    "<info> Level VII: Suprasternal notch, Innominate artery, Sternum, Trachea, esophagus, and prevertebral fascia",
+                    "While an imaging based system was proposed in 1999,[10] these concepts were integrated into the 2002 revision of the American Academy system.[2] In addition to needing a standardised approach to classification of lymph nodes for the purposes of neck dissection, the application of radiation therapy also requires such an approach and has resulted in an international consensus guideline (2013).[13]",
+                    "",
+                    "=== Clinical significance ===",
+                    "Infectious mononucleosis (glandular fever) affects the cervical lymph nodes which become swollen. The characterization of cancerous lymph nodes on CT scan, MRI or ultrasound is difficult, and usually requires confirmation by other nuclear imaging techniques such as PET scans. Tissue diagnosis by fine needle aspiration (which has a high rate of accuracy), may also be required. Involvement of the cervical lymph nodes with metastatic cancer is the single most important prognostic factor in head and neck squamous cell carcinoma and may be associated with a halving of survival. Where the cancer has penetrated the capsule of the lymph gland (extracapsular extension) survival may be decreased by a further 50%. Other important factors are the level, the number of nodes and their size, which are also correlated with the risk of distant metastases. Cervical lymph node metastasis is also a common feature of papillary thyroid carcinoma.[14][15]",
+                    "",
+                    "=== Additional images ===",
+                    "<info> The lymphatics of the face.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Buyten 2006.",
+                    "<info> ^ a b c d e Robbins et al 2002.",
+                    "<info> ^ a b Brekel et al 1998.",
+                    "<info> ^ a b Mukherji 2002.",
+                    "<info> ^ Eisenmenger & Wiggins 2015.",
+                    "<info> ^ a b c Chong 2004.",
+                    "<info> ^ Robbins et al 1991.",
+                    "<info> ^ a b c Som et al 1999.",
+                    "<info> ^ Gregoire et al 2013.",
+                    "<info> ^ Chen et al 2015.",
+                    "<info> ^ Park et al 2015.",
+                    "",
+                    "=== Bibliography ===",
+                    "<info> Amin, Mahul B.; Edge, Stephen B.; Greene, Frederick L. (30 March 2018). AJCC Cancer Staging Manual (Eighth ed.). Springer International Publishing. ISBN 978-3-319-40617-6.",
+                    "<info> van den Brekel, MW; Castelijns, JA; Snow, GB (April 1998). \"The size of lymph nodes in the neck on sonograms as a radiologic criterion for metastasis: how reliable is it?\". American Journal of Neuroradiology. 19 (4): 695–700. PMC 8337385. PMID 9576657.",
+                    "<info> Buyten, Jeffrey (20 September 2006). \"Neck Dissection and sentinel lymph node biopsy\" (PDF). Grand Rounds. Department of Otolaryngology, The University of Texas Medical Branch at Galveston. Archived from the original (PDF) on 27 August 2014. Retrieved 13 July 2018.\nSlides",
+                    "<info> Chen, Chien-Chih; Lin, Jin-Ching; Chen, Kuan-Wen (25 August 2015). \"Lymph node ratio as a prognostic factor in head and neck cancer patients\". Radiation Oncology. 10 (1): 181. doi:10.1186/s13014-015-0490-9. PMC 4554293. PMID 26302761.",
+                    "<info> Chong, Vincent (2004). \"Cervical lymphadenopathy: what radiologists need to know\". Cancer Imaging. 4 (2): 116–120. doi:10.1102/1470-7330.2004.0020. PMC 1434593. PMID 18250018.",
+                    "<info> Edge, Stephen; Byrd, David R.; Compton, Carolyn C. (28 April 2011). AJCC Cancer Staging Handbook: From the AJCC Cancer Staging Manual (PDF) (Seventh ed.). Springer New York. ISBN 978-0-387-88442-4.",
+                    "<info> Eisenmenger, LB; Wiggins, RH (January 2015). \"Imaging of head and neck lymph nodes\". Radiologic Clinics of North America. 53 (1): 115–32. doi:10.1016/j.rcl.2014.09.011. PMID 25476176.",
+                    "<info> Grégoire, Vincent; Ang, KianA. (January 2014). \"Delineation of the neck node levels for head and neck tumors: A 2013 update. DAHANCA, EORTC, HKNPCSG, NCIC CTG, NCRI, RTOG, TROG consensus guidelines\". Radiotherapy and Oncology. 110 (1): 172–181. doi:10.1016/j.radonc.2013.10.010. PMID 24183870.",
+                    "<info> Mukherji, Suresh K.; Gujar; Londy, Frank J. (2002). \"A Simplified Approach to the Lymph Nodes of the Neck\". Neurographics (2). Archived from the original on 2021-02-27. Retrieved 2018-07-13.",
+                    "<info> Park, Chang Ho; Song, Chang Myeon; Ji, Yong Bae; Pyo, Ju Yeon; Yi, Ki Jong; Song, Young Soo; Park, Yong Wook; Tae, Kyung (2015). \"Significance of the Extracapsular Spread of Metastatic Lymph Nodes in Papillary Thyroid Carcinoma\". Clinical and Experimental Otorhinolaryngology. 8 (3): 289–294. doi:10.3342/ceo.2015.8.3.289. PMC 4553362. PMID 26330926.",
+                    "<info> Robbins, K. T.; Medina, J. E.; Wolfe, G. T.; Levine, P. A.; Sessions, R. B.; Pruet, C. W. (1 June 1991). \"Standardizing Neck Dissection Terminology: Official Report of the Academy's Committee for Head and Neck Surgery and Oncology\". Archives of Otolaryngology–Head & Neck Surgery. 117 (6): 601–605. doi:10.1001/archotol.1991.01870180037007. PMID 2036180.",
+                    "<info> Robbins, K. Thomas; Clayman, Garry; Levine, Paul A.; Medina, Jesus; Sessions, Roy; Shaha, Ashok; Som, Peter; Wolf, Gregory T. (1 July 2002). \"Neck Dissection Classification Update\". Archives of Otolaryngology–Head & Neck Surgery. 128 (7): 751–758. doi:10.1001/archotol.128.7.751. PMID 12117328. S2CID 8708884.",
+                    "<info> Rouvière, Henri (1932). Anatomie des lymphatiques de l'homme [Anatomy of the Human Lymphatic System, Edwards Brothers, Ann Arbor, MI. 1938]. trans. Morris Jacob Tobias. Paris: Masson.\n\"Anatomie des lymphatiques de l'homme\". Journal of the American Medical Association (Review). 99 (20): 1716. 12 November 1932. doi:10.1001/jama.1932.02740720070042.",
+                    "<info> Som, Peter M.; Curtin, Hugh D.; Mancuso, Anthony A. (1 April 1999). \"An Imaging-Based Classification for the Cervical Nodes Designed as an Adjunct to Recent Clinically Based Nodal Classifications\". Archives of Otolaryngology–Head & Neck Surgery. 125 (4): 388–396. doi:10.1001/archotol.125.4.388. PMID 10208676.",
+                    "<info> \"Anatomie des lymphatiques de l'homme\". Journal of the American Medical Association (Review). 99 (20): 1716. 12 November 1932. doi:10.1001/jama.1932.02740720070042.",
+                    "",
+                    "=== External links ===",
+                    "<info> Chandrasekhar, A (28 March 2006). \"Clinical examination of the cervical lymph nodes\". Medical Education Network: Screening Physical Exam. Loyola University. Retrieved 17 July 2018.",
+                    "<info> Harding, Mary (5 July 2017). \"Neck Lumps and Bumps: Lymph nodes (glands) of the head\". Patient Platform. Retrieved 17 July 2018.",
+                    "<info> Gosselin, Benoit J (8 March 2016). \"Neck, Cervical Metastases, Detection\". Medscape. WebMD.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Cervical lymph nodes are lymph nodes found in the neck. Of the 800 lymph nodes in the human body, 300 are in the neck.[4] Cervical lymph nodes are subject to a number of different pathological conditions including tumours, infection and inflammation.[5]"
+                        ]
+                    },
+                    "Classification": {
+                        "content": [
+                            "There are approximately 300 lymph nodes in the neck, and they can be classified in a number of different ways.[4]",
+                            "The classification of the cervical lymph nodes is generally attributed to Henri Rouvière in his 1932 publication \"Anatomie des Lymphatiques de l'Homme\" [6][7] Rouviere described the cervical lymph nodes as a collar which surrounded the upper aerodigestive tract, consisting of submental, facial, submandibular, parotid, mastoid, occipital and retropharyngeal nodes, together with two chains that run in the long axis of the neck, the anterior cervical and postero-lateral cervical groups.[8]",
+                            "However, this system was based upon anatomical landmarks found in dissection, making it imperfectly suited to the needs of clinicians, which led to new terminology for the lymph nodes that could be palpated. The most commonly used system is one based on a classification of the lymph nodes into numbered groupings, devised at the Memorial Sloan Kettering Cancer Center in the 1930s. This has been variously modified since. In 1991, the American Academy of Otolaryngology published a standardised version of this[9]to provide a uniform approach to neck dissection that was updated in 2002, including the addition of sub-levels, e.g. IIA and IIB.[2]",
+                            "More recently, classification systems have been proposed organized around what can be observed via diagnostic imaging.[10][8][2] In addition to the American Academy of Otolaryngology, systems have been devised by the American Joint Committee on Cancer (AJCC).[10] The AJCC system from the 7th edition of the Staging Manual (2009) remains unchanged in the 8th edition of 2018.[11]",
+                            "The American Academy of Otolaryngology system (2002) divides the nodes as follows:[1][2][3]",
+                            "<info> Level I: Submental and submandibular nodes\nLevel Ia: Submental - these are below the mentum of the chin more anteriorly between a triangle formed by the anterior belly of the digastric muscles on each side, and with the hyoid as its base in the axial plane.\nLevel Ib: Submandibular triangle - posterolateral to the anterior belly of the digastric muscle between the area formed by its margin, the stylohyoid muscle and the body of the mandible.",
+                            "<info> Level II: Upper jugular nodes (Subdigastric nodes) - upper third of the internal jugular vein and adjacent accessory nerve. The upper boundary is the base of the skull and the lower boundary is the hyoid. The anteromedial boundary is the stylohyoid muscle extending between the styloid and hyoid bones, and the posterolateral boundary is the sternocleidomastoid muscle.\nLevel IIa: Anteromedial to the vertical plane of the accessory nerve. This nerve is not seen on CT, but correlates to the posterior edge of the internal jugular vein and below the lateral mass of the atlas at the skull base but above the hyoid.\nLevel IIb: Deep to the jugular vein and below the lateral mass of the skull base, with its lower margin being the hyoid.",
+                            "<info> Level III: Middle jugular nodes - middle third of the internal jugular vein, between the hyoid and cricoid cartilage. They are bounded medially by the sternohyoid muscle and are deep to the sternocleidomastoid muscle. They are also  lateral to the internal or common carotid arteries; nodes medial to these vessels are in the anterior compartment of level VI.",
+                            "<info> Level IV: Lower jugular nodes - lower third of the internal jugular vein between the cricoid and clavicle, lateral to the sternohyoid and anteromedial to an oblique line drawn between the posterior sternocleidomastoid at the lateral neck and anterior scalene muscle more posteromedially. Similar to level III, level IV nodes are also lateral to the carotid, with nodes medial to this being level VI as well.",
+                            "<info> Level V: Posterior triangle nodes - nodes posterolateral to the sternocleidomastoid and anteromedial to the trapezius above the clavicle. The nodes are around the lower half of the spinal accessory nerve and the transverse cervical artery, and include the supraclavicular nodes.\nLevel VA: Above the horizontal plane formed by the inferior border of the anterior cricoid arch, including the spinal accessory nodes.\nLevel VB: Lymph nodes below this plane, including the transverse cervical nodes and supraclavicular nodes (except Virchow's node which is in IV).",
+                            "<info> Level VI: Anterior compartment nodes - Pretracheal, paratracheal, precricoid (Delphian) and perithyroid nodes, including those on the recurrent laryngeal nerve. The upper border is the hyoid, the lower the suprasternal notch, and the lateral borders the common carotid arteries.",
+                            "<info> Level Ia: Submental - these are below the mentum of the chin more anteriorly between a triangle formed by the anterior belly of the digastric muscles on each side, and with the hyoid as its base in the axial plane.",
+                            "<info> Level Ib: Submandibular triangle - posterolateral to the anterior belly of the digastric muscle between the area formed by its margin, the stylohyoid muscle and the body of the mandible.",
+                            "<info> Level IIa: Anteromedial to the vertical plane of the accessory nerve. This nerve is not seen on CT, but correlates to the posterior edge of the internal jugular vein and below the lateral mass of the atlas at the skull base but above the hyoid.",
+                            "<info> Level IIb: Deep to the jugular vein and below the lateral mass of the skull base, with its lower margin being the hyoid.",
+                            "<info> Level VA: Above the horizontal plane formed by the inferior border of the anterior cricoid arch, including the spinal accessory nodes.",
+                            "<info> Level VB: Lymph nodes below this plane, including the transverse cervical nodes and supraclavicular nodes (except Virchow's node which is in IV).",
+                            "The American Joint Committee on Cancer (AJCC) system differs from the above by including Level VII, but the American Academy considered these to be anatomically mediastinal rather than cervical nodes, and therefore should not be included in the classification of neck nodes.[8] However it is based on the 2002 American Academy system, although the boundaries are defined slightly differently.[12]",
+                            "The boundaries are defined as (Superior, Inferior, Antero-medial, Postero-lateral)",
+                            "<info> Level IA: Symphysis of mandible, Body of hyoid, Anterior belly of contralateral digastric muscle, Anterior belly of ipsilateral digastric muscle",
+                            "<info> Level IB: Body of mandible, Posterior belly of digastric muscle, Anterior belly of digastric muscle, Stylohyoid muscle",
+                            "<info> Level IIA: Skull base, Horizontal plane defined by the inferior border of the hyoid bone, The stylohyoid muscle, Vertical plane defined by the spinal accessory nerve",
+                            "<info> Level IIB: Skull base, Horizontal plane defined by the inferior body of the hyoid bone, Vertical plane defined by the spinal accessory nerve, Lateral border of the sternocleidomastoid muscle",
+                            "<info> Level III: Horizontal plane defined by the inferior body of hyoid, Horizontal plane defined by the inferior border of the cricoid cartilage, Lateral border of the sternohyoid muscle, Lateral border of the sternocleidomastoid or sensory branches of cervical plexus",
+                            "<info> Level IV: Horizontal plane defined by the inferior border of the cricoid cartilage, Clavicle, Lateral border of the sternohyoid muscle, Lateral border of the sternocleidomastoid or sensory branches of cervical plexus",
+                            "<info> Level VA: Apex of the convergence of the sternocleidomastoid and trapezius muscles, Horizontal plane defined by the lower border of the cricoid cartilage, Posterior border of the sternocleidomastoid muscle or sensory branches of cervical plexus, Anterior border of the trapezius muscle",
+                            "<info> Level VB: Horizontal plane defined by the lower border of the cricoid cartilage, Clavicle, Posterior border of the sternocleidomastoid muscle, Anterior border of the trapezius muscle",
+                            "<info> Level VI: Hyoid bone, Suprasternal notch, Common carotid artery, Common carotid artery",
+                            "<info> Level VII: Suprasternal notch, Innominate artery, Sternum, Trachea, esophagus, and prevertebral fascia",
+                            "While an imaging based system was proposed in 1999,[10] these concepts were integrated into the 2002 revision of the American Academy system.[2] In addition to needing a standardised approach to classification of lymph nodes for the purposes of neck dissection, the application of radiation therapy also requires such an approach and has resulted in an international consensus guideline (2013).[13]"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "Infectious mononucleosis (glandular fever) affects the cervical lymph nodes which become swollen. The characterization of cancerous lymph nodes on CT scan, MRI or ultrasound is difficult, and usually requires confirmation by other nuclear imaging techniques such as PET scans. Tissue diagnosis by fine needle aspiration (which has a high rate of accuracy), may also be required. Involvement of the cervical lymph nodes with metastatic cancer is the single most important prognostic factor in head and neck squamous cell carcinoma and may be associated with a halving of survival. Where the cancer has penetrated the capsule of the lymph gland (extracapsular extension) survival may be decreased by a further 50%. Other important factors are the level, the number of nodes and their size, which are also correlated with the risk of distant metastases. Cervical lymph node metastasis is also a common feature of papillary thyroid carcinoma.[14][15]"
+                        ]
+                    },
+                    "Additional images": {
+                        "content": [
+                            "<info> The lymphatics of the face."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Buyten 2006.",
+                            "<info> ^ a b c d e Robbins et al 2002.",
+                            "<info> ^ a b Brekel et al 1998.",
+                            "<info> ^ a b Mukherji 2002.",
+                            "<info> ^ Eisenmenger & Wiggins 2015.",
+                            "<info> ^ a b c Chong 2004.",
+                            "<info> ^ Robbins et al 1991.",
+                            "<info> ^ a b c Som et al 1999.",
+                            "<info> ^ Gregoire et al 2013.",
+                            "<info> ^ Chen et al 2015.",
+                            "<info> ^ Park et al 2015."
+                        ]
+                    },
+                    "Bibliography": {
+                        "content": [
+                            "<info> Amin, Mahul B.; Edge, Stephen B.; Greene, Frederick L. (30 March 2018). AJCC Cancer Staging Manual (Eighth ed.). Springer International Publishing. ISBN 978-3-319-40617-6.",
+                            "<info> van den Brekel, MW; Castelijns, JA; Snow, GB (April 1998). \"The size of lymph nodes in the neck on sonograms as a radiologic criterion for metastasis: how reliable is it?\". American Journal of Neuroradiology. 19 (4): 695–700. PMC 8337385. PMID 9576657.",
+                            "<info> Buyten, Jeffrey (20 September 2006). \"Neck Dissection and sentinel lymph node biopsy\" (PDF). Grand Rounds. Department of Otolaryngology, The University of Texas Medical Branch at Galveston. Archived from the original (PDF) on 27 August 2014. Retrieved 13 July 2018.\nSlides",
+                            "<info> Chen, Chien-Chih; Lin, Jin-Ching; Chen, Kuan-Wen (25 August 2015). \"Lymph node ratio as a prognostic factor in head and neck cancer patients\". Radiation Oncology. 10 (1): 181. doi:10.1186/s13014-015-0490-9. PMC 4554293. PMID 26302761.",
+                            "<info> Chong, Vincent (2004). \"Cervical lymphadenopathy: what radiologists need to know\". Cancer Imaging. 4 (2): 116–120. doi:10.1102/1470-7330.2004.0020. PMC 1434593. PMID 18250018.",
+                            "<info> Edge, Stephen; Byrd, David R.; Compton, Carolyn C. (28 April 2011). AJCC Cancer Staging Handbook: From the AJCC Cancer Staging Manual (PDF) (Seventh ed.). Springer New York. ISBN 978-0-387-88442-4.",
+                            "<info> Eisenmenger, LB; Wiggins, RH (January 2015). \"Imaging of head and neck lymph nodes\". Radiologic Clinics of North America. 53 (1): 115–32. doi:10.1016/j.rcl.2014.09.011. PMID 25476176.",
+                            "<info> Grégoire, Vincent; Ang, KianA. (January 2014). \"Delineation of the neck node levels for head and neck tumors: A 2013 update. DAHANCA, EORTC, HKNPCSG, NCIC CTG, NCRI, RTOG, TROG consensus guidelines\". Radiotherapy and Oncology. 110 (1): 172–181. doi:10.1016/j.radonc.2013.10.010. PMID 24183870.",
+                            "<info> Mukherji, Suresh K.; Gujar; Londy, Frank J. (2002). \"A Simplified Approach to the Lymph Nodes of the Neck\". Neurographics (2). Archived from the original on 2021-02-27. Retrieved 2018-07-13.",
+                            "<info> Park, Chang Ho; Song, Chang Myeon; Ji, Yong Bae; Pyo, Ju Yeon; Yi, Ki Jong; Song, Young Soo; Park, Yong Wook; Tae, Kyung (2015). \"Significance of the Extracapsular Spread of Metastatic Lymph Nodes in Papillary Thyroid Carcinoma\". Clinical and Experimental Otorhinolaryngology. 8 (3): 289–294. doi:10.3342/ceo.2015.8.3.289. PMC 4553362. PMID 26330926.",
+                            "<info> Robbins, K. T.; Medina, J. E.; Wolfe, G. T.; Levine, P. A.; Sessions, R. B.; Pruet, C. W. (1 June 1991). \"Standardizing Neck Dissection Terminology: Official Report of the Academy's Committee for Head and Neck Surgery and Oncology\". Archives of Otolaryngology–Head & Neck Surgery. 117 (6): 601–605. doi:10.1001/archotol.1991.01870180037007. PMID 2036180.",
+                            "<info> Robbins, K. Thomas; Clayman, Garry; Levine, Paul A.; Medina, Jesus; Sessions, Roy; Shaha, Ashok; Som, Peter; Wolf, Gregory T. (1 July 2002). \"Neck Dissection Classification Update\". Archives of Otolaryngology–Head & Neck Surgery. 128 (7): 751–758. doi:10.1001/archotol.128.7.751. PMID 12117328. S2CID 8708884.",
+                            "<info> Rouvière, Henri (1932). Anatomie des lymphatiques de l'homme [Anatomy of the Human Lymphatic System, Edwards Brothers, Ann Arbor, MI. 1938]. trans. Morris Jacob Tobias. Paris: Masson.\n\"Anatomie des lymphatiques de l'homme\". Journal of the American Medical Association (Review). 99 (20): 1716. 12 November 1932. doi:10.1001/jama.1932.02740720070042.",
+                            "<info> Som, Peter M.; Curtin, Hugh D.; Mancuso, Anthony A. (1 April 1999). \"An Imaging-Based Classification for the Cervical Nodes Designed as an Adjunct to Recent Clinically Based Nodal Classifications\". Archives of Otolaryngology–Head & Neck Surgery. 125 (4): 388–396. doi:10.1001/archotol.125.4.388. PMID 10208676.",
+                            "<info> \"Anatomie des lymphatiques de l'homme\". Journal of the American Medical Association (Review). 99 (20): 1716. 12 November 1932. doi:10.1001/jama.1932.02740720070042."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Chandrasekhar, A (28 March 2006). \"Clinical examination of the cervical lymph nodes\". Medical Education Network: Screening Physical Exam. Loyola University. Retrieved 17 July 2018.",
+                            "<info> Harding, Mary (5 July 2017). \"Neck Lumps and Bumps: Lymph nodes (glands) of the head\". Patient Platform. Retrieved 17 July 2018.",
+                            "<info> Gosselin, Benoit J (8 March 2016). \"Neck, Cervical Metastases, Detection\". Medscape. WebMD."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

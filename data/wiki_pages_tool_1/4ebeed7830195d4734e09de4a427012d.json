@@ -1,0 +1,113 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/hyperkalemic_periodic_paralysis": {
+                "title": "Hyperkalemic periodic paralysis",
+                "url": "https://en.wikipedia.org/wiki/hyperkalemic_periodic_paralysis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Hyperkalemic periodic paralysis (HYPP, HyperKPP) is an inherited autosomal dominant disorder that affects sodium channels in muscle cells and the ability to regulate potassium levels in the blood. It is characterized by muscle hyperexcitability or weakness which, exacerbated by potassium, heat or cold, can lead to uncontrolled shaking followed by paralysis. Onset usually occurs in early childhood, but it still occurs with adults.",
+                    "The mutation causing this disorder is autosomal dominant on the SCN4A gene with linkage to the sodium channel expressed in muscle.  The mutation causes single amino acid changes in parts of the channel which are important for inactivation.  These mutations impair \"ball and chain\" fast inactivation of SCN4A following an action potential.",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Hyperkalemic periodic paralysis causes episodes of extreme muscle weakness, with attacks often beginning in childhood.[1] Depending on the type and severity of the HyperKPP, it can increase or stabilize until the fourth or fifth decade where attacks may cease, decline, or, depending on the type, continue on into old age. Factors that can trigger attacks include rest after exercise, potassium-rich foods, stress, fatigue, weather changes, certain pollutants (e.g., cigarette smoke) and fasting.[2] Muscle strength often improves between attacks, although many affected people may have increasing bouts of muscle weakness as the disorder progresses (abortive attacks). Sometimes with HyperKPP those affected may experience degrees of muscle stiffness and spasms (myotonia) in the affected muscles. This can be caused by the same things that trigger the paralysis, dependent on the type of myotonia.",
+                    "Some people with hyperkalemic periodic paralysis have increased levels of potassium in their blood (hyperkalemia) during attacks. In other cases, attacks are associated with normal blood potassium levels (normokalemia). Ingesting potassium can trigger attacks in affected individuals, even if blood potassium levels do not rise in response.",
+                    "In contrast to HyperKPP, hypokalemic periodic paralysis (noted in humans) refers to loss-of-function mutations in channels that prevent muscle depolarisation and therefore are aggravated by low potassium ion concentrations.",
+                    "",
+                    "=== Genetics ===",
+                    "In humans, the most common underlying genetic cause is one of several possible point mutations in the gene SCN4A.[3] This gene codes for a voltage-gated sodium channel Nav1.4 found at the neuromuscular junction. This condition is inherited in an autosomal dominant pattern, which means one copy of the altered gene in each cell is sufficient to cause it.[citation needed]",
+                    "Action potentials from the central nervous system cause end-plate potentials at the NMJ which causes sodium ions to enter by Nav1.4 and depolarise the muscle cells. This depolarisation triggers the entry of calcium from the sarcoplasmic reticulum to cause contraction (tensing) of the muscle. To prevent the muscle from being perpetually contracted, the channel contains a fast inactivation gate that plugs the sodium pore very quickly after it opens. This prevents further entry of sodium. In time, potassium ions will leave the muscle cells, repolarising the cells and causing the pumping of calcium away from the contractile apparatus to relax the muscle.[citation needed]",
+                    "Mutations altering the usual structure and function of this sodium channel therefore disrupt regulation of muscle contraction, leading to episodes of severe muscle weakness or paralysis. Mutations have been identified in residues between transmembrane domains III and IV which make up the fast inactivation gate of Nav1.4. Mutations have been found on the cytoplasmic loops between the S4 and S5 helices of domains II, III and IV, which are the binding sites of the inactivation gate.[4][5]",
+                    "The pathological mechanism of SCN4A mutations in hyperkalemic periodic paralysis is complex, but explains the autosomal dominant and hyperkalemia-related aspects of the disease.[6] In patients with mutations in SCN4A, not all copies of the channel inactivate following the action potential. This results in a sodium leak and failure to return to the original resting membrane potential. In the presence of hyperkalemia, which causes an additional chronic depolarization of the membrane potential, this sodium leak raises the membrane potential to the point that all sodium channels, including channels produced from the wild-type allele and mutant channels that did inactivate, fail to be release from inactivation (enter depolarization block). Since the motor end plate is depolarised, further signals to contract have no effect (paralysis).[7][8]",
+                    "",
+                    "=== Treatment ===",
+                    "<info> Glucose or other carbohydrates can be given during an attack and may reduce the severity.[1]",
+                    "<info> Intravenous calcium decreases activity of sodium channels. It may stop sudden attacks.[1]",
+                    "<info> Diuretics such as furosemide may be needed to stop sudden attacks;[1] acetazolamide and thiazide diuretics such as chlorothiazide are also effective.[1]",
+                    "<info> Intravenous glucose and insulin stimulates potassium uptake into the cell by the Na-K ATPase and may reduce weakness without a loss of total body potassium.[1]",
+                    "<info> A high-carbohydrate diet may be recommended.[1]",
+                    "<info> Avoidance of other known attack triggers.[9]",
+                    "",
+                    "=== See also ===",
+                    "<info> Hyperkalemic periodic paralysis (equine)",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d e f g MedlinePlus: Hyperkalemic periodic paralysis Update Date: 7/25/2006. Updated by: David M. Charytan, M.D., M.Sc., Department of Medicine, Division of Nephrology, Brigham and Women's Hospital, Boston, MA.",
+                    "<info> ^ Sekhon, Dilraj S.; Vaqar, Sarosh; Gupta, Vikas (2022), \"Hyperkalemic Periodic Paralysis\", StatPearls, Treasure Island (FL): StatPearls Publishing, PMID 33231989, retrieved 2023-03-19",
+                    "<info> ^ Online Mendelian Inheritance in Man (OMIM): Hyperkalemic Periodic Paralysis; HYPP - 17050",
+                    "<info> ^ Rojas CV, Wang JZ, Schwartz LS, Hoffman EP, Powell BR, Brown RH (December 1991). \"A Met-to-Val mutation in the skeletal muscle Na+ channel alpha-subunit in hyperkalaemic periodic paralysis\". Nature. 354 (6352): 387–9. Bibcode:1991Natur.354..387R. doi:10.1038/354387a0. PMID 1659668. S2CID 4372717.",
+                    "<info> ^ Bendahhou S, Cummins TR, Kula RW, Fu YH, Ptácek LJ (April 2002). \"Impairment of slow inactivation as a common mechanism for periodic paralysis in DIIS4-S5\". Neurology. 58 (8): 1266–72. doi:10.1212/wnl.58.8.1266. PMID 11971097. S2CID 10412539.",
+                    "<info> ^ Cannon, Stephen C. (2018). \"Sodium Channelopathies of Skeletal Muscle\". Voltage-gated Sodium Channels: Structure, Function and Channelopathies. Handbook of Experimental Pharmacology. 246. Springer International Publishing: 309–330. doi:10.1007/164_2017_52. ISBN 978-3-319-90283-8. PMC 5866235. PMID 28939973.",
+                    "<info> ^ Rüdel R, Lehmann-Horn F, Ricker K, Küther G (February 1984). \"Hypokalemic periodic paralysis: in vitro investigation of muscle fiber membrane parameters\". Muscle Nerve. 7 (2): 110–20. doi:10.1002/mus.880070205. PMID 6325904. S2CID 25705002.",
+                    "<info> ^ Jurkat-Rott K, Lehmann-Horn F (August 2005). \"Muscle channelopathies and critical points in functional and genetic studies\". J. Clin. Invest. 115 (8): 2000–9. doi:10.1172/JCI25525. PMC 1180551. PMID 16075040.",
+                    "<info> ^ Lee, GM; Kim, JB (June 2011). \"Hyperkalemic periodic paralysis and paramyotonia congenita caused by a de novo mutation in the SCN4A gene\". Neurology Asia. 16 (2): 163–6.",
+                    "<info> National Library of Medicine. Hyperkalemic periodic paralysis",
+                    "This article incorporates public domain material from Genetics Home Reference. United States National Library of Medicine.",
+                    "",
+                    "=== External links ===",
+                    "<info> GeneReview/NIH/UW entry on Hyperkalemic Periodic Paralysis Type 1",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Hyperkalemic periodic paralysis (HYPP, HyperKPP) is an inherited autosomal dominant disorder that affects sodium channels in muscle cells and the ability to regulate potassium levels in the blood. It is characterized by muscle hyperexcitability or weakness which, exacerbated by potassium, heat or cold, can lead to uncontrolled shaking followed by paralysis. Onset usually occurs in early childhood, but it still occurs with adults.",
+                            "The mutation causing this disorder is autosomal dominant on the SCN4A gene with linkage to the sodium channel expressed in muscle.  The mutation causes single amino acid changes in parts of the channel which are important for inactivation.  These mutations impair \"ball and chain\" fast inactivation of SCN4A following an action potential."
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Hyperkalemic periodic paralysis causes episodes of extreme muscle weakness, with attacks often beginning in childhood.[1] Depending on the type and severity of the HyperKPP, it can increase or stabilize until the fourth or fifth decade where attacks may cease, decline, or, depending on the type, continue on into old age. Factors that can trigger attacks include rest after exercise, potassium-rich foods, stress, fatigue, weather changes, certain pollutants (e.g., cigarette smoke) and fasting.[2] Muscle strength often improves between attacks, although many affected people may have increasing bouts of muscle weakness as the disorder progresses (abortive attacks). Sometimes with HyperKPP those affected may experience degrees of muscle stiffness and spasms (myotonia) in the affected muscles. This can be caused by the same things that trigger the paralysis, dependent on the type of myotonia.",
+                            "Some people with hyperkalemic periodic paralysis have increased levels of potassium in their blood (hyperkalemia) during attacks. In other cases, attacks are associated with normal blood potassium levels (normokalemia). Ingesting potassium can trigger attacks in affected individuals, even if blood potassium levels do not rise in response.",
+                            "In contrast to HyperKPP, hypokalemic periodic paralysis (noted in humans) refers to loss-of-function mutations in channels that prevent muscle depolarisation and therefore are aggravated by low potassium ion concentrations."
+                        ]
+                    },
+                    "Genetics": {
+                        "content": [
+                            "In humans, the most common underlying genetic cause is one of several possible point mutations in the gene SCN4A.[3] This gene codes for a voltage-gated sodium channel Nav1.4 found at the neuromuscular junction. This condition is inherited in an autosomal dominant pattern, which means one copy of the altered gene in each cell is sufficient to cause it.[citation needed]",
+                            "Action potentials from the central nervous system cause end-plate potentials at the NMJ which causes sodium ions to enter by Nav1.4 and depolarise the muscle cells. This depolarisation triggers the entry of calcium from the sarcoplasmic reticulum to cause contraction (tensing) of the muscle. To prevent the muscle from being perpetually contracted, the channel contains a fast inactivation gate that plugs the sodium pore very quickly after it opens. This prevents further entry of sodium. In time, potassium ions will leave the muscle cells, repolarising the cells and causing the pumping of calcium away from the contractile apparatus to relax the muscle.[citation needed]",
+                            "Mutations altering the usual structure and function of this sodium channel therefore disrupt regulation of muscle contraction, leading to episodes of severe muscle weakness or paralysis. Mutations have been identified in residues between transmembrane domains III and IV which make up the fast inactivation gate of Nav1.4. Mutations have been found on the cytoplasmic loops between the S4 and S5 helices of domains II, III and IV, which are the binding sites of the inactivation gate.[4][5]",
+                            "The pathological mechanism of SCN4A mutations in hyperkalemic periodic paralysis is complex, but explains the autosomal dominant and hyperkalemia-related aspects of the disease.[6] In patients with mutations in SCN4A, not all copies of the channel inactivate following the action potential. This results in a sodium leak and failure to return to the original resting membrane potential. In the presence of hyperkalemia, which causes an additional chronic depolarization of the membrane potential, this sodium leak raises the membrane potential to the point that all sodium channels, including channels produced from the wild-type allele and mutant channels that did inactivate, fail to be release from inactivation (enter depolarization block). Since the motor end plate is depolarised, further signals to contract have no effect (paralysis).[7][8]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "<info> Glucose or other carbohydrates can be given during an attack and may reduce the severity.[1]",
+                            "<info> Intravenous calcium decreases activity of sodium channels. It may stop sudden attacks.[1]",
+                            "<info> Diuretics such as furosemide may be needed to stop sudden attacks;[1] acetazolamide and thiazide diuretics such as chlorothiazide are also effective.[1]",
+                            "<info> Intravenous glucose and insulin stimulates potassium uptake into the cell by the Na-K ATPase and may reduce weakness without a loss of total body potassium.[1]",
+                            "<info> A high-carbohydrate diet may be recommended.[1]",
+                            "<info> Avoidance of other known attack triggers.[9]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Hyperkalemic periodic paralysis (equine)"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d e f g MedlinePlus: Hyperkalemic periodic paralysis Update Date: 7/25/2006. Updated by: David M. Charytan, M.D., M.Sc., Department of Medicine, Division of Nephrology, Brigham and Women's Hospital, Boston, MA.",
+                            "<info> ^ Sekhon, Dilraj S.; Vaqar, Sarosh; Gupta, Vikas (2022), \"Hyperkalemic Periodic Paralysis\", StatPearls, Treasure Island (FL): StatPearls Publishing, PMID 33231989, retrieved 2023-03-19",
+                            "<info> ^ Online Mendelian Inheritance in Man (OMIM): Hyperkalemic Periodic Paralysis; HYPP - 17050",
+                            "<info> ^ Rojas CV, Wang JZ, Schwartz LS, Hoffman EP, Powell BR, Brown RH (December 1991). \"A Met-to-Val mutation in the skeletal muscle Na+ channel alpha-subunit in hyperkalaemic periodic paralysis\". Nature. 354 (6352): 387–9. Bibcode:1991Natur.354..387R. doi:10.1038/354387a0. PMID 1659668. S2CID 4372717.",
+                            "<info> ^ Bendahhou S, Cummins TR, Kula RW, Fu YH, Ptácek LJ (April 2002). \"Impairment of slow inactivation as a common mechanism for periodic paralysis in DIIS4-S5\". Neurology. 58 (8): 1266–72. doi:10.1212/wnl.58.8.1266. PMID 11971097. S2CID 10412539.",
+                            "<info> ^ Cannon, Stephen C. (2018). \"Sodium Channelopathies of Skeletal Muscle\". Voltage-gated Sodium Channels: Structure, Function and Channelopathies. Handbook of Experimental Pharmacology. 246. Springer International Publishing: 309–330. doi:10.1007/164_2017_52. ISBN 978-3-319-90283-8. PMC 5866235. PMID 28939973.",
+                            "<info> ^ Rüdel R, Lehmann-Horn F, Ricker K, Küther G (February 1984). \"Hypokalemic periodic paralysis: in vitro investigation of muscle fiber membrane parameters\". Muscle Nerve. 7 (2): 110–20. doi:10.1002/mus.880070205. PMID 6325904. S2CID 25705002.",
+                            "<info> ^ Jurkat-Rott K, Lehmann-Horn F (August 2005). \"Muscle channelopathies and critical points in functional and genetic studies\". J. Clin. Invest. 115 (8): 2000–9. doi:10.1172/JCI25525. PMC 1180551. PMID 16075040.",
+                            "<info> ^ Lee, GM; Kim, JB (June 2011). \"Hyperkalemic periodic paralysis and paramyotonia congenita caused by a de novo mutation in the SCN4A gene\". Neurology Asia. 16 (2): 163–6.",
+                            "<info> National Library of Medicine. Hyperkalemic periodic paralysis",
+                            "This article incorporates public domain material from Genetics Home Reference. United States National Library of Medicine."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> GeneReview/NIH/UW entry on Hyperkalemic Periodic Paralysis Type 1"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

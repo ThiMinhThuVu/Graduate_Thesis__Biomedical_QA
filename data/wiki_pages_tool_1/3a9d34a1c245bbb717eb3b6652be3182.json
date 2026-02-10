@@ -1,0 +1,249 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/inclusion_bodies": {
+                "title": "Inclusion bodies",
+                "url": "https://en.wikipedia.org/wiki/inclusion_bodies",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Inclusion bodies are typically aggregates of specific types of protein found in neurons, and a number of tissue cells including red blood cells, bacteria, viruses, and plants. Inclusion bodies of aggregations of multiple proteins are also found in muscle cells affected by inclusion body myositis and hereditary inclusion body myopathy.[1]",
+                    "Inclusion bodies in neurons may accumulate in the cytoplasm or nucleus, and are associated with many neurodegenerative diseases.[2]\nInclusion bodies in neurodegenerative diseases are aggregates of misfolded proteins (aggresomes) and are hallmarks of many of these diseases, including Lewy bodies in dementia with Lewy bodies, and Parkinson's disease, neuroserpin inclusion bodies called Collins bodies in familial encephalopathy with neuroserpin inclusion bodies,[3] inclusion bodies in Huntington's disease, Papp–Lantos bodies in multiple system atrophy, and various inclusion bodies in frontotemporal dementia including Pick bodies.[4] Bunina bodies in motor neurons are a core feature of amyotrophic lateral sclerosis.[5]",
+                    "Other usual cell inclusions are often temporary inclusions of accumulated proteins, fats, secretory granules, or other insoluble components.[6] A typical finding in the lung tissue of tobacco smokers are pigmented cytoplasmic granules shown in macrophages known as smoker's inclusion bodies.[7][8]",
+                    "Inclusion bodies are found in bacteria as particles of aggregated protein. They have a higher density than many other cell components but are porous.[9] They typically represent sites of viral multiplication in a bacterium or a eukaryotic cell and usually consist of viral capsid proteins.\nInclusion bodies contain very little host protein, ribosomal components, or DNA/RNA fragments. They often almost exclusively contain the over-expressed protein and aggregation and has been reported to be reversible. It has been suggested that inclusion bodies are dynamic structures formed by an unbalanced equilibrium between aggregated and soluble proteins of Escherichia coli. There is a growing body of information indicating that formation of inclusion bodies occurs as a result of intracellular accumulation of partially folded expressed proteins which aggregate through non-covalent hydrophobic or ionic interactions or a combination of both.[citation needed]",
+                    "",
+                    "=== Composition ===",
+                    "Inclusion bodies have a non-unit (single) lipid membrane[citation needed]. Protein inclusion bodies are classically thought to contain misfolded protein.  However, this has been contested, as green fluorescent protein will sometimes fluoresce in inclusion bodies, which indicates some resemblance of the native structure and researchers have recovered folded protein from inclusion bodies.[10][11][12]",
+                    "",
+                    "=== Mechanism of formation ===",
+                    "When genes from one organism are expressed in another organism the resulting protein sometimes forms inclusion bodies. This is often true when large evolutionary distances are crossed:  a cDNA isolated from Eukarya for example, and expressed as a recombinant gene in a prokaryote risks the formation of the inactive aggregates of protein known as inclusion bodies. While the cDNA may properly code for a translatable mRNA, the protein that results will emerge in a foreign microenvironment. This often has fatal effects, especially if the intent of cloning is to produce a biologically active protein. For example, eukaryotic systems for carbohydrate modification and membrane transport are not found in prokaryotes.  The internal microenvironment of a prokaryotic cell (pH, osmolarity) may differ from that of the original source of the gene. Mechanisms for folding a protein may also be absent, and hydrophobic residues that normally would remain buried may be exposed and available for interaction with similar exposed sites on other ectopic proteins. Processing systems for the cleavage and removal of internal peptides would also be absent in bacteria.  The initial attempts to clone insulin in a bacterium suffered all of these deficits. In addition, the fine controls that may keep the concentration of a protein low will also be missing in a prokaryotic cell, and overexpression can result in filling a cell with ectopic protein that, even if it were properly folded, would precipitate by saturating its environment.[citation needed]",
+                    "",
+                    "=== In neurons ===",
+                    "Inclusion bodies are aggregates of protein associated with many neurodegenerative diseases, accumulated in the cytoplasm or nucleus of neurons.[2] Inclusion bodies of aggregations of multiple proteins are also found in muscle cells affected by inclusion body myositis and hereditary inclusion body myopathy.[1]",
+                    "Inclusion bodies in neurodegenerative diseases are aggregates of misfolded proteins (aggresomes) and are hallmarks of many of these diseases, including Lewy bodies in Lewy body dementias, and Parkinson's disease, neuroserpin inclusion bodies called Collins bodies in familial encephalopathy with neuroserpin inclusion bodies, inclusion bodies in Huntington's disease, Papp-Lantos inclusions in multiple system atrophy, and various inclusion bodies in frontotemporal dementia including Pick bodies.[4] Bunina bodies in motor neurons are a core feature of amyotrophic lateral sclerosis.[5]",
+                    "",
+                    "=== In red blood cells ===",
+                    "A red blood cell (erythrocyte) does not usually have inclusions in the cytoplasm, but they may be seen in certain blood disorders.",
+                    "There are three kinds of red blood cell inclusions:",
+                    "<info> Developmental organelles\nHowell-Jolly bodies: small, round fragments of the nucleus resulting from karyorrhexis or nuclear disintegration of the late reticulocyte and stain reddish-blue with Wright's stain.\nBasophilic stipplings – these stipplings are either fine or coarse, deep blue to purple staining inclusion that appear on a dried Wright's stain.\nPappenheimer bodies – are siderotic granules which are small, irregular, dark-staining granules that appear near the periphery of a young erythrocyte in a Wright's stain.\nPolychromatophilic red cells – young red blood cells that no longer have nucleus but still contain some RNA.\nCabot rings – ring-like structure and may appear in red blood cells in megaloblastic anemia or in severe anemias, lead poisoning, and in dyserythropoiesis, in which erythrocytes are destroyed before being released from the bone marrow.",
+                    "<info> Abnormal hemoglobin precipitation\nHeinz bodies[13] – round bodies, refractile inclusions not visible on a Wright's stain film. They are best identified by supravital staining with basic dyes.\nHemoglobin H inclusions – alpha thalassemia, greenish-blue inclusion bodies appear in many red blood cells after four drops of blood are incubated with 0.5mL of Brilliant cresyl blue for 20 minutes at 37 °C.",
+                    "<info> Protozoan inclusion\nMalaria\nBabesia",
+                    "<info> Howell-Jolly bodies: small, round fragments of the nucleus resulting from karyorrhexis or nuclear disintegration of the late reticulocyte and stain reddish-blue with Wright's stain.",
+                    "<info> Basophilic stipplings – these stipplings are either fine or coarse, deep blue to purple staining inclusion that appear on a dried Wright's stain.",
+                    "<info> Pappenheimer bodies – are siderotic granules which are small, irregular, dark-staining granules that appear near the periphery of a young erythrocyte in a Wright's stain.",
+                    "<info> Polychromatophilic red cells – young red blood cells that no longer have nucleus but still contain some RNA.",
+                    "<info> Cabot rings – ring-like structure and may appear in red blood cells in megaloblastic anemia or in severe anemias, lead poisoning, and in dyserythropoiesis, in which erythrocytes are destroyed before being released from the bone marrow.",
+                    "<info> Heinz bodies[13] – round bodies, refractile inclusions not visible on a Wright's stain film. They are best identified by supravital staining with basic dyes.",
+                    "<info> Hemoglobin H inclusions – alpha thalassemia, greenish-blue inclusion bodies appear in many red blood cells after four drops of blood are incubated with 0.5mL of Brilliant cresyl blue for 20 minutes at 37 °C.",
+                    "",
+                    "=== In white blood cells ===",
+                    "<info> Howell-Jolly body-like inclusions (HJBLi)",
+                    "<info> Russell bodies are inclusions of immunoglobulin  found in atypical plasma cells. Russell bodies clump together in large numbers displacing the cell nucleus to the edge, and the cell is then called a Mott cell.[14]",
+                    "",
+                    "=== In viruses ===",
+                    "Examples of viral inclusion bodies in humans and other animals are",
+                    "<info> Negri bodies in rabies",
+                    "<info> Orthopoxvirus inclusion bodies – Guarnieri bodies, and Paschen bodies in certain poxviruses, and Type-A inclusion bodies[15] including Downie bodies only in cowpox",
+                    "<info> Bollinger bodies in fowlpox",
+                    "<info> Molluscum bodies in Molluscum contagiosum",
+                    "<info> Eosinophilic inclusion bodies in boid inclusion body disease",
+                    "<info> Cowdry bodies type A in Herpes simplex virus and Varicella zoster virus",
+                    "<info> Torres bodies in yellow fever",
+                    "<info> Cowdry bodies type B in polio and adenovirus",
+                    "<info> Cowdry bodies type B in adenovirus",
+                    "<info> \"Owl's eye appearance\" in cytomegalovirus",
+                    "Both nuclear and cytoplasmic-",
+                    "<info> Warthin–Finkeldey bodies in measles and HIV/AIDS",
+                    "Examples of viral inclusion bodies in plants[16] include aggregations of virus particles (like those for Cucumber mosaic virus[17]) and aggregations of viral proteins (like the cylindrical inclusions of potyviruses[18]). Depending on the plant and the plant virus family these inclusions can be found in epidermal cells, mesophyll cells, and stomatal cells when plant tissue is properly stained.[19]",
+                    "",
+                    "=== In bacteria ===",
+                    "Polyhydroxyalkanoates (PHA) are produced by bacteria as inclusion bodies. The size of PHA granules are limited in E. coli, due to its small size.[20] Bacterial cell's inclusion bodies are not as abundant intracellularly, in comparison to eukaryotic cells.",
+                    "Polymeric R bodies are found in the bacterial cytoplasm of some taxa, and thought to be involved in toxin delivery.[21]",
+                    "Between 70% and 80% of recombinant proteins expressed E. coli are contained in inclusion bodies (i.e., protein aggregates).[22] The purification of the expressed proteins from inclusion bodies usually require two main steps: extraction of inclusion bodies from the bacteria followed by the solubilisation of the purified inclusion bodies. Solubilisation of inclusions bodies often involves treatment with denaturing agents, such as urea or guanidine chloride at high concentrations, to de-aggregate the collapsed proteins. Renaturation follows the treatment with denaturing agents and often consists of dialysis and/or use of molecules that promote the refolding of denatured proteins (including chaotopic agents[9] and chaperones).[23]",
+                    "",
+                    "=== Pseudo-inclusions ===",
+                    "Pseudo-inclusions are invaginations of the cytoplasm into the cell nuclei, which may give the appearance of intranuclear inclusions. They may appear in papillary thyroid carcinoma.[24]",
+                    "",
+                    "=== Diseases involving inclusion bodies ===",
+                    "Inclusion body diseases differ from amyloid diseases in that inclusion bodies are necessarily intracellular aggregates of protein, where amyloid can be intracellular or extracellular. Amyloid also necessitates protein polymerization where inclusion bodies do not.[25]",
+                    "",
+                    "=== Preventing inclusion bodies in bacteria ===",
+                    "Inclusion bodies are often made of denatured aggregates of inactive proteins. Although, the renaturation of inclusion bodies can sometimes lead to the solubilisation and the recovery of active proteins, the process is still very empirical, uncertain and of low efficiency. Several techniques have been developed over the years to prevent the formation of inclusion bodies. These techniques include:",
+                    "<info> The use of weaker promoters to slowdown the rate of protein expression",
+                    "<info> The use of low copy number plasmids[26]",
+                    "<info> The co-expression of chaperone (such as GroES-GroEL and DnaK-DnaJ-GrpE)[27]",
+                    "<info> The use of specific E. coli strains such as (AD494 and Origami)[28]",
+                    "<info> Fusing the target protein to a soluble partner[29]",
+                    "<info> Lowering the expression temperature",
+                    "",
+                    "=== See also ===",
+                    "<info> Adult polyglucosan body disease",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b \"Sporadic Inclusion Body Myositis\". NORD (National Organization for Rare Disorders). Retrieved 12 March 2021.",
+                    "<info> ^ a b Chung CG, Lee H, Lee SB (1 September 2018). \"Mechanisms of protein toxicity in neurodegenerative diseases\". Cellular and Molecular Life Sciences. 75 (17): 3159–3180. doi:10.1007/s00018-018-2854-4. PMC 6063327. PMID 29947927.",
+                    "<info> ^ \"Encephalopathy, familial, with neuroserpin inclusion bodies (Concept Id: C1858680) – MedGen – NCBI\". www.ncbi.nlm.nih.gov. Retrieved 6 April 2021.",
+                    "<info> ^ a b Cruts M, Gijselinck I, van der Zee J, Engelborghs S, Wils H, Pirici D, Rademakers R, Vandenberghe R, Dermaut B, Martin JJ, van Duijn C, Peeters K, Sciot R, Santens P, De Pooter T, Mattheijssens M, Van den Broeck M, Cuijt I, Vennekens K, De Deyn PP, Kumar-Singh S, Van Broeckhoven C (24 August 2006). \"Null mutations in progranulin cause ubiquitin-positive frontotemporal dementia linked to chromosome 17q21\". Nature. 442 (7105): 920–4. Bibcode:2006Natur.442..920C. doi:10.1038/nature05017. PMID 16862115. S2CID 4423699.",
+                    "<info> ^ a b Hardiman O, Al-Chalabi A, Chio A (5 October 2017). \"Amyotrophic lateral sclerosis\" (PDF). Nature Reviews. Disease Primers. 3 17071. doi:10.1038/nrdp.2017.71. PMID 28980624. S2CID 1002680.",
+                    "<info> ^ Dorland's illustrated medical dictionary (32 ed.). Philadelphia, PA: Saunders/Elsevier. 2012. p. 928. ISBN 9781416062578.",
+                    "<info> ^ \"Inclusion Bodies - MeSH - NCBI\". www.ncbi.nlm.nih.gov. Retrieved 4 October 2025.",
+                    "<info> ^ Brody AR, Craighead JE (February 1975). \"Cytoplasmic inclusions in pulmonary macrophages of cigarette smokers\". Laboratory Investigation; A Journal of Technical Methods and Pathology. 32 (2): 125–32. PMID 163418.",
+                    "<info> ^ a b Singh SM, Panda AK (1 April 2005). \"Solubilization and refolding of bacterial inclusion body proteins\". Journal of Bioscience and Bioengineering. 99 (4): 303–310. Bibcode:2005JBB....99..303S. doi:10.1263/jbb.99.303. PMID 16233795. S2CID 24807019. Inclusion bodies are dense electron-refractile particles of aggregated protein found in both the cytoplasmic and periplasmic  spaces of E. coli during high-level expression of heterologous protein. It is generally assumed that high level expression of non-native protein (higher than 2% of cellular protein) and highly hydrophobic protein is more prone to lead to accumulation as inclusion bodies in E. coli. In the case of proteins having disulfide bonds, formation of protein aggregates as inclusion bodies is anticipated since the reducing environment of bacterial cytosol inhibits the formation of disulfide bonds. The diameter of spherical bacterial inclusion bodies varies from 0.5–1.3 μm and the protein aggregates have either an amorphous or paracrystalline nature depending on the localization. Inclusion bodies have higher density (~1.3 mg ml−1) than many of the cellular components, and thus can be easily separated by high-speed centrifugation after cell disruption. Inclusion bodies, despite being dense particles, are highly hydrated and have a porous architecture.",
+                    "<info> ^ Umetsu M, Tsumoto K, Nitta S, Adschiri T, Ejima D, Arakawa T, Kumagai I (March 2005). \"Nondenaturing solubilization of beta2 microglobulin from inclusion bodies by L-arginine\". Biochem Biophys Res Commun. 328 (1): 189–97. Bibcode:2005BBRC..328..189U. doi:10.1016/j.bbrc.2004.12.156. PMID 15670769.",
+                    "<info> ^ Przybycien TM, Dunn JP, Valax P, Georgiou G (January 1994). \"Secondary structure characterization of beta-lactamase inclusion bodies\". Protein Eng. 7 (1): 131–6. doi:10.1093/protein/7.1.131. PMID 8140090.",
+                    "<info> ^ Tsumoto K, Umetsu M, Kumagai I, Ejima D, Arakawa T (December 2003). \"Solubilization of active green fluorescent protein from insoluble particles by guanidine and arginine\". Biochem Biophys Res Commun. 312 (4): 1383–6. Bibcode:2003BBRC..312.1383T. doi:10.1016/j.bbrc.2003.11.055. PMID 14652027.",
+                    "<info> ^ Heinz+Bodies at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> ^ Fellows IW, Leach IH, Smith PG, Toghill PJ, Doran J (June 1990). \"Carcinoid tumour of the common bile duct—a novel complication of von Hippel-Lindau syndrome\". Gut. 31 (6): 728–9. doi:10.1136/gut.31.6.728. PMC 1378509. PMID 2379881.",
+                    "<info> ^ Leite JA, da Fonseca FG, de Souza Trindade G (April 2011). \"A-type inclusion bodies: a factor influencing cowpox virus lesion pathogenesis\". Archives of Virology. 156 (4): 617–28. doi:10.1007/s00705-010-0900-0. PMID 21212997.",
+                    "<info> ^ \"Plant Viruses Found in Florida and Their Inclusions\". University of Florida. Archived from the original on 24 March 2012.",
+                    "<info> ^ \"Inclusions of Cucumber Mosaic Cucumovirus (CMV)\". University of Florida. Archived from the original on 19 February 2012.",
+                    "<info> ^ \"Inclusions of Potyviridae Found In Florida\". University of Florida. Archived from the original on 19 February 2012.",
+                    "<info> ^ \"Materials and Methods for the Detection of Viral Inclusions\". University of Florida. Archived from the original on 19 February 2012.",
+                    "<info> ^ Jiang XR, Wang H, Shen Chen GQ (2015). \"Engineering the bacterial shapes for enhanced inclusion bodied accumulation\". Metabolic Engineering. 29: 227–237. Bibcode:2015MbEng..29..227J. doi:10.1016/j.ymben.2015.03.017. PMID 25868707.",
+                    "<info> ^ Raymann K, Bobay LM, Doak TG, Lynch M, Gribaldo S (1 March 2013). \"A genomic survey of Reb homologs suggests widespread occurrence of R-bodies in proteobacteria\". G3: Genes, Genomes, Genetics. 3 (3): 505–516. doi:10.1534/g3.112.005231. ISSN 2160-1836. PMC 3583457. PMID 23450193.",
+                    "<info> ^ Yang, Zhong, et  al.  \"Highly efficient production of soluble proteins from insoluble inclusion bodies by a two-step-denaturing and refolding method.\" PloS  one 6.7 (2011): e22981.",
+                    "<info> ^ Rosenzweig R, Nillegoda NB, Mayer MP, Bukau B (November 2019). \"The Hsp70 chaperone network\". Nature Reviews. Molecular Cell Biology. 20 (11): 665–680. Bibcode:2019NRMCB..20..665R. doi:10.1038/s41580-019-0133-3. ISSN 1471-0080. PMID 31253954. S2CID 195739183.",
+                    "<info> ^ Chapter 20 in: Mitchell, Richard Sheppard, Kumar, Vinay, Abbas, Abul K., Fausto, Nelson (2007). Robbins Basic Pathology. Philadelphia: Saunders. ISBN 978-1-4160-2973-1. 8th edition.",
+                    "<info> ^ Ross, Poirier (2004). \"Protein aggregation and neurodegenerative disease\". Nature Medicine. 10 Suppl (S7): S10-7. Bibcode:2004NatMe..10S..10R. doi:10.1038/nm1066. PMID 15272267. S2CID 205383483.",
+                    "<info> ^ Dmowski M, Jagura-Burdzy G (2013). \"Active stable maintenance functions in low copy-number plasmids of Gram-positive bacteria II. Post-segregational killing systems\". Polish Journal of Microbiology. 62 (1): 17–22. doi:10.33073/pjm-2013-002. ISSN 1733-1331. PMID 23829073.",
+                    "<info> ^ Polissi A, Goffin L, Georgopoulos C (August 1995). \"The Escherichia coli heat shock response and bacteriophage lambda development\". FEMS Microbiology Reviews. 17 (1–2): 159–169. doi:10.1111/j.1574-6976.1995.tb00198.x. ISSN 0168-6445. PMID 7669342.",
+                    "<info> ^ Jiang ST, Tzeng SS, Wu WT, Chen GH (19 June 2002). \"Enhanced expression of chicken cystatin as a thioredoxin fusion form in Escherichia coli AD494(DE3)pLysS and its effect on the prevention of surimi gel softening\". Journal of Agricultural and Food Chemistry. 50 (13): 3731–3737. Bibcode:2002JAFC...50.3731J. doi:10.1021/jf020053v. ISSN 0021-8561. PMID 12059151.",
+                    "<info> ^ Waugh DS (2016). \"The remarkable solubility-enhancing power of Escherichia coli maltose-binding protein\". Postepy Biochemii. 62 (3): 377–382. doi:10.18388/pb.2016_41. ISSN 0032-5422. PMID 28132493. S2CID 23539643.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Inclusion bodies are typically aggregates of specific types of protein found in neurons, and a number of tissue cells including red blood cells, bacteria, viruses, and plants. Inclusion bodies of aggregations of multiple proteins are also found in muscle cells affected by inclusion body myositis and hereditary inclusion body myopathy.[1]",
+                            "Inclusion bodies in neurons may accumulate in the cytoplasm or nucleus, and are associated with many neurodegenerative diseases.[2]\nInclusion bodies in neurodegenerative diseases are aggregates of misfolded proteins (aggresomes) and are hallmarks of many of these diseases, including Lewy bodies in dementia with Lewy bodies, and Parkinson's disease, neuroserpin inclusion bodies called Collins bodies in familial encephalopathy with neuroserpin inclusion bodies,[3] inclusion bodies in Huntington's disease, Papp–Lantos bodies in multiple system atrophy, and various inclusion bodies in frontotemporal dementia including Pick bodies.[4] Bunina bodies in motor neurons are a core feature of amyotrophic lateral sclerosis.[5]",
+                            "Other usual cell inclusions are often temporary inclusions of accumulated proteins, fats, secretory granules, or other insoluble components.[6] A typical finding in the lung tissue of tobacco smokers are pigmented cytoplasmic granules shown in macrophages known as smoker's inclusion bodies.[7][8]",
+                            "Inclusion bodies are found in bacteria as particles of aggregated protein. They have a higher density than many other cell components but are porous.[9] They typically represent sites of viral multiplication in a bacterium or a eukaryotic cell and usually consist of viral capsid proteins.\nInclusion bodies contain very little host protein, ribosomal components, or DNA/RNA fragments. They often almost exclusively contain the over-expressed protein and aggregation and has been reported to be reversible. It has been suggested that inclusion bodies are dynamic structures formed by an unbalanced equilibrium between aggregated and soluble proteins of Escherichia coli. There is a growing body of information indicating that formation of inclusion bodies occurs as a result of intracellular accumulation of partially folded expressed proteins which aggregate through non-covalent hydrophobic or ionic interactions or a combination of both.[citation needed]"
+                        ]
+                    },
+                    "Composition": {
+                        "content": [
+                            "Inclusion bodies have a non-unit (single) lipid membrane[citation needed]. Protein inclusion bodies are classically thought to contain misfolded protein.  However, this has been contested, as green fluorescent protein will sometimes fluoresce in inclusion bodies, which indicates some resemblance of the native structure and researchers have recovered folded protein from inclusion bodies.[10][11][12]"
+                        ]
+                    },
+                    "Mechanism of formation": {
+                        "content": [
+                            "When genes from one organism are expressed in another organism the resulting protein sometimes forms inclusion bodies. This is often true when large evolutionary distances are crossed:  a cDNA isolated from Eukarya for example, and expressed as a recombinant gene in a prokaryote risks the formation of the inactive aggregates of protein known as inclusion bodies. While the cDNA may properly code for a translatable mRNA, the protein that results will emerge in a foreign microenvironment. This often has fatal effects, especially if the intent of cloning is to produce a biologically active protein. For example, eukaryotic systems for carbohydrate modification and membrane transport are not found in prokaryotes.  The internal microenvironment of a prokaryotic cell (pH, osmolarity) may differ from that of the original source of the gene. Mechanisms for folding a protein may also be absent, and hydrophobic residues that normally would remain buried may be exposed and available for interaction with similar exposed sites on other ectopic proteins. Processing systems for the cleavage and removal of internal peptides would also be absent in bacteria.  The initial attempts to clone insulin in a bacterium suffered all of these deficits. In addition, the fine controls that may keep the concentration of a protein low will also be missing in a prokaryotic cell, and overexpression can result in filling a cell with ectopic protein that, even if it were properly folded, would precipitate by saturating its environment.[citation needed]"
+                        ]
+                    },
+                    "In neurons": {
+                        "content": [
+                            "Inclusion bodies are aggregates of protein associated with many neurodegenerative diseases, accumulated in the cytoplasm or nucleus of neurons.[2] Inclusion bodies of aggregations of multiple proteins are also found in muscle cells affected by inclusion body myositis and hereditary inclusion body myopathy.[1]",
+                            "Inclusion bodies in neurodegenerative diseases are aggregates of misfolded proteins (aggresomes) and are hallmarks of many of these diseases, including Lewy bodies in Lewy body dementias, and Parkinson's disease, neuroserpin inclusion bodies called Collins bodies in familial encephalopathy with neuroserpin inclusion bodies, inclusion bodies in Huntington's disease, Papp-Lantos inclusions in multiple system atrophy, and various inclusion bodies in frontotemporal dementia including Pick bodies.[4] Bunina bodies in motor neurons are a core feature of amyotrophic lateral sclerosis.[5]"
+                        ]
+                    },
+                    "In red blood cells": {
+                        "content": [
+                            "A red blood cell (erythrocyte) does not usually have inclusions in the cytoplasm, but they may be seen in certain blood disorders.",
+                            "There are three kinds of red blood cell inclusions:",
+                            "<info> Developmental organelles\nHowell-Jolly bodies: small, round fragments of the nucleus resulting from karyorrhexis or nuclear disintegration of the late reticulocyte and stain reddish-blue with Wright's stain.\nBasophilic stipplings – these stipplings are either fine or coarse, deep blue to purple staining inclusion that appear on a dried Wright's stain.\nPappenheimer bodies – are siderotic granules which are small, irregular, dark-staining granules that appear near the periphery of a young erythrocyte in a Wright's stain.\nPolychromatophilic red cells – young red blood cells that no longer have nucleus but still contain some RNA.\nCabot rings – ring-like structure and may appear in red blood cells in megaloblastic anemia or in severe anemias, lead poisoning, and in dyserythropoiesis, in which erythrocytes are destroyed before being released from the bone marrow.",
+                            "<info> Abnormal hemoglobin precipitation\nHeinz bodies[13] – round bodies, refractile inclusions not visible on a Wright's stain film. They are best identified by supravital staining with basic dyes.\nHemoglobin H inclusions – alpha thalassemia, greenish-blue inclusion bodies appear in many red blood cells after four drops of blood are incubated with 0.5mL of Brilliant cresyl blue for 20 minutes at 37 °C.",
+                            "<info> Protozoan inclusion\nMalaria\nBabesia",
+                            "<info> Howell-Jolly bodies: small, round fragments of the nucleus resulting from karyorrhexis or nuclear disintegration of the late reticulocyte and stain reddish-blue with Wright's stain.",
+                            "<info> Basophilic stipplings – these stipplings are either fine or coarse, deep blue to purple staining inclusion that appear on a dried Wright's stain.",
+                            "<info> Pappenheimer bodies – are siderotic granules which are small, irregular, dark-staining granules that appear near the periphery of a young erythrocyte in a Wright's stain.",
+                            "<info> Polychromatophilic red cells – young red blood cells that no longer have nucleus but still contain some RNA.",
+                            "<info> Cabot rings – ring-like structure and may appear in red blood cells in megaloblastic anemia or in severe anemias, lead poisoning, and in dyserythropoiesis, in which erythrocytes are destroyed before being released from the bone marrow.",
+                            "<info> Heinz bodies[13] – round bodies, refractile inclusions not visible on a Wright's stain film. They are best identified by supravital staining with basic dyes.",
+                            "<info> Hemoglobin H inclusions – alpha thalassemia, greenish-blue inclusion bodies appear in many red blood cells after four drops of blood are incubated with 0.5mL of Brilliant cresyl blue for 20 minutes at 37 °C."
+                        ]
+                    },
+                    "In white blood cells": {
+                        "content": [
+                            "<info> Howell-Jolly body-like inclusions (HJBLi)",
+                            "<info> Russell bodies are inclusions of immunoglobulin  found in atypical plasma cells. Russell bodies clump together in large numbers displacing the cell nucleus to the edge, and the cell is then called a Mott cell.[14]"
+                        ]
+                    },
+                    "In viruses": {
+                        "content": [
+                            "Examples of viral inclusion bodies in humans and other animals are",
+                            "<info> Negri bodies in rabies",
+                            "<info> Orthopoxvirus inclusion bodies – Guarnieri bodies, and Paschen bodies in certain poxviruses, and Type-A inclusion bodies[15] including Downie bodies only in cowpox",
+                            "<info> Bollinger bodies in fowlpox",
+                            "<info> Molluscum bodies in Molluscum contagiosum",
+                            "<info> Eosinophilic inclusion bodies in boid inclusion body disease",
+                            "<info> Cowdry bodies type A in Herpes simplex virus and Varicella zoster virus",
+                            "<info> Torres bodies in yellow fever",
+                            "<info> Cowdry bodies type B in polio and adenovirus",
+                            "<info> Cowdry bodies type B in adenovirus",
+                            "<info> \"Owl's eye appearance\" in cytomegalovirus",
+                            "Both nuclear and cytoplasmic-",
+                            "<info> Warthin–Finkeldey bodies in measles and HIV/AIDS",
+                            "Examples of viral inclusion bodies in plants[16] include aggregations of virus particles (like those for Cucumber mosaic virus[17]) and aggregations of viral proteins (like the cylindrical inclusions of potyviruses[18]). Depending on the plant and the plant virus family these inclusions can be found in epidermal cells, mesophyll cells, and stomatal cells when plant tissue is properly stained.[19]"
+                        ]
+                    },
+                    "In bacteria": {
+                        "content": [
+                            "Polyhydroxyalkanoates (PHA) are produced by bacteria as inclusion bodies. The size of PHA granules are limited in E. coli, due to its small size.[20] Bacterial cell's inclusion bodies are not as abundant intracellularly, in comparison to eukaryotic cells.",
+                            "Polymeric R bodies are found in the bacterial cytoplasm of some taxa, and thought to be involved in toxin delivery.[21]",
+                            "Between 70% and 80% of recombinant proteins expressed E. coli are contained in inclusion bodies (i.e., protein aggregates).[22] The purification of the expressed proteins from inclusion bodies usually require two main steps: extraction of inclusion bodies from the bacteria followed by the solubilisation of the purified inclusion bodies. Solubilisation of inclusions bodies often involves treatment with denaturing agents, such as urea or guanidine chloride at high concentrations, to de-aggregate the collapsed proteins. Renaturation follows the treatment with denaturing agents and often consists of dialysis and/or use of molecules that promote the refolding of denatured proteins (including chaotopic agents[9] and chaperones).[23]"
+                        ]
+                    },
+                    "Pseudo-inclusions": {
+                        "content": [
+                            "Pseudo-inclusions are invaginations of the cytoplasm into the cell nuclei, which may give the appearance of intranuclear inclusions. They may appear in papillary thyroid carcinoma.[24]"
+                        ]
+                    },
+                    "Diseases involving inclusion bodies": {
+                        "content": [
+                            "Inclusion body diseases differ from amyloid diseases in that inclusion bodies are necessarily intracellular aggregates of protein, where amyloid can be intracellular or extracellular. Amyloid also necessitates protein polymerization where inclusion bodies do not.[25]"
+                        ]
+                    },
+                    "Preventing inclusion bodies in bacteria": {
+                        "content": [
+                            "Inclusion bodies are often made of denatured aggregates of inactive proteins. Although, the renaturation of inclusion bodies can sometimes lead to the solubilisation and the recovery of active proteins, the process is still very empirical, uncertain and of low efficiency. Several techniques have been developed over the years to prevent the formation of inclusion bodies. These techniques include:",
+                            "<info> The use of weaker promoters to slowdown the rate of protein expression",
+                            "<info> The use of low copy number plasmids[26]",
+                            "<info> The co-expression of chaperone (such as GroES-GroEL and DnaK-DnaJ-GrpE)[27]",
+                            "<info> The use of specific E. coli strains such as (AD494 and Origami)[28]",
+                            "<info> Fusing the target protein to a soluble partner[29]",
+                            "<info> Lowering the expression temperature"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Adult polyglucosan body disease"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b \"Sporadic Inclusion Body Myositis\". NORD (National Organization for Rare Disorders). Retrieved 12 March 2021.",
+                            "<info> ^ a b Chung CG, Lee H, Lee SB (1 September 2018). \"Mechanisms of protein toxicity in neurodegenerative diseases\". Cellular and Molecular Life Sciences. 75 (17): 3159–3180. doi:10.1007/s00018-018-2854-4. PMC 6063327. PMID 29947927.",
+                            "<info> ^ \"Encephalopathy, familial, with neuroserpin inclusion bodies (Concept Id: C1858680) – MedGen – NCBI\". www.ncbi.nlm.nih.gov. Retrieved 6 April 2021.",
+                            "<info> ^ a b Cruts M, Gijselinck I, van der Zee J, Engelborghs S, Wils H, Pirici D, Rademakers R, Vandenberghe R, Dermaut B, Martin JJ, van Duijn C, Peeters K, Sciot R, Santens P, De Pooter T, Mattheijssens M, Van den Broeck M, Cuijt I, Vennekens K, De Deyn PP, Kumar-Singh S, Van Broeckhoven C (24 August 2006). \"Null mutations in progranulin cause ubiquitin-positive frontotemporal dementia linked to chromosome 17q21\". Nature. 442 (7105): 920–4. Bibcode:2006Natur.442..920C. doi:10.1038/nature05017. PMID 16862115. S2CID 4423699.",
+                            "<info> ^ a b Hardiman O, Al-Chalabi A, Chio A (5 October 2017). \"Amyotrophic lateral sclerosis\" (PDF). Nature Reviews. Disease Primers. 3 17071. doi:10.1038/nrdp.2017.71. PMID 28980624. S2CID 1002680.",
+                            "<info> ^ Dorland's illustrated medical dictionary (32 ed.). Philadelphia, PA: Saunders/Elsevier. 2012. p. 928. ISBN 9781416062578.",
+                            "<info> ^ \"Inclusion Bodies - MeSH - NCBI\". www.ncbi.nlm.nih.gov. Retrieved 4 October 2025.",
+                            "<info> ^ Brody AR, Craighead JE (February 1975). \"Cytoplasmic inclusions in pulmonary macrophages of cigarette smokers\". Laboratory Investigation; A Journal of Technical Methods and Pathology. 32 (2): 125–32. PMID 163418.",
+                            "<info> ^ a b Singh SM, Panda AK (1 April 2005). \"Solubilization and refolding of bacterial inclusion body proteins\". Journal of Bioscience and Bioengineering. 99 (4): 303–310. Bibcode:2005JBB....99..303S. doi:10.1263/jbb.99.303. PMID 16233795. S2CID 24807019. Inclusion bodies are dense electron-refractile particles of aggregated protein found in both the cytoplasmic and periplasmic  spaces of E. coli during high-level expression of heterologous protein. It is generally assumed that high level expression of non-native protein (higher than 2% of cellular protein) and highly hydrophobic protein is more prone to lead to accumulation as inclusion bodies in E. coli. In the case of proteins having disulfide bonds, formation of protein aggregates as inclusion bodies is anticipated since the reducing environment of bacterial cytosol inhibits the formation of disulfide bonds. The diameter of spherical bacterial inclusion bodies varies from 0.5–1.3 μm and the protein aggregates have either an amorphous or paracrystalline nature depending on the localization. Inclusion bodies have higher density (~1.3 mg ml−1) than many of the cellular components, and thus can be easily separated by high-speed centrifugation after cell disruption. Inclusion bodies, despite being dense particles, are highly hydrated and have a porous architecture.",
+                            "<info> ^ Umetsu M, Tsumoto K, Nitta S, Adschiri T, Ejima D, Arakawa T, Kumagai I (March 2005). \"Nondenaturing solubilization of beta2 microglobulin from inclusion bodies by L-arginine\". Biochem Biophys Res Commun. 328 (1): 189–97. Bibcode:2005BBRC..328..189U. doi:10.1016/j.bbrc.2004.12.156. PMID 15670769.",
+                            "<info> ^ Przybycien TM, Dunn JP, Valax P, Georgiou G (January 1994). \"Secondary structure characterization of beta-lactamase inclusion bodies\". Protein Eng. 7 (1): 131–6. doi:10.1093/protein/7.1.131. PMID 8140090.",
+                            "<info> ^ Tsumoto K, Umetsu M, Kumagai I, Ejima D, Arakawa T (December 2003). \"Solubilization of active green fluorescent protein from insoluble particles by guanidine and arginine\". Biochem Biophys Res Commun. 312 (4): 1383–6. Bibcode:2003BBRC..312.1383T. doi:10.1016/j.bbrc.2003.11.055. PMID 14652027.",
+                            "<info> ^ Heinz+Bodies at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> ^ Fellows IW, Leach IH, Smith PG, Toghill PJ, Doran J (June 1990). \"Carcinoid tumour of the common bile duct—a novel complication of von Hippel-Lindau syndrome\". Gut. 31 (6): 728–9. doi:10.1136/gut.31.6.728. PMC 1378509. PMID 2379881.",
+                            "<info> ^ Leite JA, da Fonseca FG, de Souza Trindade G (April 2011). \"A-type inclusion bodies: a factor influencing cowpox virus lesion pathogenesis\". Archives of Virology. 156 (4): 617–28. doi:10.1007/s00705-010-0900-0. PMID 21212997.",
+                            "<info> ^ \"Plant Viruses Found in Florida and Their Inclusions\". University of Florida. Archived from the original on 24 March 2012.",
+                            "<info> ^ \"Inclusions of Cucumber Mosaic Cucumovirus (CMV)\". University of Florida. Archived from the original on 19 February 2012.",
+                            "<info> ^ \"Inclusions of Potyviridae Found In Florida\". University of Florida. Archived from the original on 19 February 2012.",
+                            "<info> ^ \"Materials and Methods for the Detection of Viral Inclusions\". University of Florida. Archived from the original on 19 February 2012.",
+                            "<info> ^ Jiang XR, Wang H, Shen Chen GQ (2015). \"Engineering the bacterial shapes for enhanced inclusion bodied accumulation\". Metabolic Engineering. 29: 227–237. Bibcode:2015MbEng..29..227J. doi:10.1016/j.ymben.2015.03.017. PMID 25868707.",
+                            "<info> ^ Raymann K, Bobay LM, Doak TG, Lynch M, Gribaldo S (1 March 2013). \"A genomic survey of Reb homologs suggests widespread occurrence of R-bodies in proteobacteria\". G3: Genes, Genomes, Genetics. 3 (3): 505–516. doi:10.1534/g3.112.005231. ISSN 2160-1836. PMC 3583457. PMID 23450193.",
+                            "<info> ^ Yang, Zhong, et  al.  \"Highly efficient production of soluble proteins from insoluble inclusion bodies by a two-step-denaturing and refolding method.\" PloS  one 6.7 (2011): e22981.",
+                            "<info> ^ Rosenzweig R, Nillegoda NB, Mayer MP, Bukau B (November 2019). \"The Hsp70 chaperone network\". Nature Reviews. Molecular Cell Biology. 20 (11): 665–680. Bibcode:2019NRMCB..20..665R. doi:10.1038/s41580-019-0133-3. ISSN 1471-0080. PMID 31253954. S2CID 195739183.",
+                            "<info> ^ Chapter 20 in: Mitchell, Richard Sheppard, Kumar, Vinay, Abbas, Abul K., Fausto, Nelson (2007). Robbins Basic Pathology. Philadelphia: Saunders. ISBN 978-1-4160-2973-1. 8th edition.",
+                            "<info> ^ Ross, Poirier (2004). \"Protein aggregation and neurodegenerative disease\". Nature Medicine. 10 Suppl (S7): S10-7. Bibcode:2004NatMe..10S..10R. doi:10.1038/nm1066. PMID 15272267. S2CID 205383483.",
+                            "<info> ^ Dmowski M, Jagura-Burdzy G (2013). \"Active stable maintenance functions in low copy-number plasmids of Gram-positive bacteria II. Post-segregational killing systems\". Polish Journal of Microbiology. 62 (1): 17–22. doi:10.33073/pjm-2013-002. ISSN 1733-1331. PMID 23829073.",
+                            "<info> ^ Polissi A, Goffin L, Georgopoulos C (August 1995). \"The Escherichia coli heat shock response and bacteriophage lambda development\". FEMS Microbiology Reviews. 17 (1–2): 159–169. doi:10.1111/j.1574-6976.1995.tb00198.x. ISSN 0168-6445. PMID 7669342.",
+                            "<info> ^ Jiang ST, Tzeng SS, Wu WT, Chen GH (19 June 2002). \"Enhanced expression of chicken cystatin as a thioredoxin fusion form in Escherichia coli AD494(DE3)pLysS and its effect on the prevention of surimi gel softening\". Journal of Agricultural and Food Chemistry. 50 (13): 3731–3737. Bibcode:2002JAFC...50.3731J. doi:10.1021/jf020053v. ISSN 0021-8561. PMID 12059151.",
+                            "<info> ^ Waugh DS (2016). \"The remarkable solubility-enhancing power of Escherichia coli maltose-binding protein\". Postepy Biochemii. 62 (3): 377–382. doi:10.18388/pb.2016_41. ISSN 0032-5422. PMID 28132493. S2CID 23539643."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

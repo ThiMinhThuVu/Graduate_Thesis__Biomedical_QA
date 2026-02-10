@@ -1,0 +1,157 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/fibrosis": {
+                "title": "Fibrosis",
+                "url": "https://en.wikipedia.org/wiki/fibrosis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Fibrosis, also known as fibrotic scarring, is the development of fibrous connective tissue in response to an injury. Fibrosis can be a normal connective tissue deposition or excessive tissue deposition caused by a disease.[2]",
+                    "Repeated injuries, chronic inflammation and repair are susceptible to fibrosis, where an accidental excessive accumulation of extracellular matrix components, such as collagen, is produced by fibroblasts, leading to the formation of a permanent fibrotic scar.[1][3]",
+                    "In response to injury, this is called scarring, and if fibrosis arises from a single cell line, this is called a fibroma. Physiologically, fibrosis acts to deposit connective tissue, which can interfere with or totally inhibit the normal architecture and function of the underlying organ or tissue. Fibrosis can be used to describe the pathological state of excess deposition of fibrous tissue, as well as the process of connective tissue deposition in healing.[4] Defined by the pathological accumulation of extracellular matrix (ECM) proteins, fibrosis results in scarring and thickening of the affected tissue — it is in essence a natural wound healing response which interferes with normal organ function.[5]",
+                    "",
+                    "=== Physiology ===",
+                    "Fibrosis is similar to the process of scarring, in that both involve stimulated fibroblasts laying down connective tissue, including collagen and glycosaminoglycans. The process is initiated when immune cells such as macrophages release soluble factors that stimulate fibroblasts.  The most well characterized pro-fibrotic mediator is TGF beta, which is released by macrophages as well as any damaged tissue between surfaces called interstitium.   Other soluble mediators of fibrosis include CTGF, platelet-derived growth factor (PDGF), and interleukin 10 (IL-10). These initiate signal transduction pathways such as the AKT/mTOR[6] and SMAD[7]  pathways that ultimately lead to the proliferation and activation of fibroblasts, which deposit extracellular matrix into the surrounding connective tissue.  This process of tissue repair is a complex one, with tight regulation of extracellular matrix (ECM) synthesis and degradation ensuring maintenance of normal tissue architecture. However, the entire process, although necessary,  can lead to a progressive irreversible fibrotic response if tissue injury is severe or repetitive, or if the wound healing response itself becomes deregulated.[5][8]",
+                    "",
+                    "=== Anatomical location ===",
+                    "Fibrosis can occur in many tissues within the body, typically as a result of inflammation or damage. Common sites of fibrosis include the lungs, liver, kidneys, brain, and heart:",
+                    "<info> Pulmonary fibrosis\nCystic fibrosis\nIdiopathic pulmonary fibrosis (idiopathic meaning 'of unknown cause')",
+                    "<info> Radiation-induced lung injury (following radiation therapies commonly used to treat cancer)",
+                    "<info> Idiopathic pulmonary fibrosis (idiopathic meaning 'of unknown cause')",
+                    "<info> Bridging fibrosis – an advanced stage of liver fibrosis, seen in the progressive form of chronic liver diseases. The term bridging refers to the formation of a \"bridge\" by a band of mature and thick fibrous tissue from the portal area to the central vein. This form of fibrosis leads to the formation of pseudolobules. Long-term exposure to hepatotoxins, such as thioacetamide, carbon tetrachloride, and diethylnitrosamine, has been shown to cause bridging fibrosis in experimental animal models.[9]",
+                    "<info> Senescence of hepatic stellate cells could prevent progression of liver fibrosis, although has not yet been implemented as a therapy due to risks associated with hepatic dysfunction.[10]",
+                    "<info> CYR61 induction of cellular senescence in the kidney has shown potential to limit renal fibrosis.[11]",
+                    "Myocardial fibrosis has two forms:",
+                    "<info> Interstitial fibrosis, described in cases of congestive heart failure and hypertension, and as part of normal cellular aging.[12]",
+                    "<info> Replacement fibrosis, indicating tissue damage from previous myocardial infarction.[12]",
+                    "<info> Healthy myocardium versus interstitial fibrosis in dilated cardiomyopathy. Alcian blue stain.",
+                    "<info> Replacement fibrosis in myocardial infarction, being boundless and dense.",
+                    "<info> Arthrofibrosis (knee, shoulder, other joints)",
+                    "<info> Dupuytren's contracture (hands, fingers)",
+                    "<info> Lipedema (fat cells, typically in lower limbs)",
+                    "<info> Mediastinal fibrosis (soft tissue of the mediastinum)",
+                    "<info> Nephrogenic systemic fibrosis (skin)",
+                    "<info> Progressive massive fibrosis (lungs); a complication of pneumoconiosis",
+                    "<info> Retroperitoneal fibrosis (soft tissue of the retroperitoneum)",
+                    "<info> Scleroderma/systemic sclerosis (skin, lungs)",
+                    "<info> Some forms of adhesive capsulitis (shoulder)",
+                    "Historically, fibrosis was considered an irreversible process. However, several recent studies have demonstrated reversal in liver and lung tissue,[15][16][17] and in cases of renal,[18] myocardial,[19] and oral-submucosal fibrosis.[20]",
+                    "",
+                    "=== Digital Pathology Quantification of Fibrosis ===",
+                    "Digital pathology approaches enable quantitative assessment of fibrosis from whole-slide histological images using computational image analysis and machine-learning methods. These techniques measure collagen content, fiber architecture, spatial distribution, and tissue remodeling beyond traditional semi-quantitative staging systems.",
+                    "Platforms such as those developed by PharmaNest apply AI-assisted analysis to conventional stains (e.g., picrosirius red, Masson's Trichrome) to derive reproducible fibrosis biomarkers[21][22]. Such digital fibrosis quantification methods have been applied across liver, gastrointestinal, pulmonary, renal, and dermatologic tissues. Such methods support translational research and clinical trials by enabling sensitive detection of fibrotic change and therapeutic response [23][24].",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Wynn TA (August 2004). \"Fibrotic disease and the T(H)1/T(H)2 paradigm\". Nature Reviews. Immunology. 4 (8): 583–594. Bibcode:2004NatRI...4..583W. doi:10.1038/nri1412. PMC 2702150. PMID 15286725.",
+                    "<info> ^ \"Fibrosis\". Dictionary of Toxicology. Singapore: Springer Nature Singapore. 2024. pp. 375–376. doi:10.1007/978-981-99-9283-6_957. ISBN 978-981-99-9282-9.",
+                    "<info> ^ Birbrair A, Zhang T, Files DC, Mannava S, Smith T, Wang ZM, et al. (November 2014). \"Type-1 pericytes accumulate after tissue injury and produce collagen in an organ-dependent manner\". Stem Cell Research & Therapy. 5 (6) 122. doi:10.1186/scrt512. PMC 4445991. PMID 25376879.",
+                    "<info> ^ \"Glossary of dermatopathological terms\". DermNet NZ. 26 October 2023.",
+                    "<info> ^ a b Neary R, Watson CJ, Baugh JA (2015). \"Epigenetics and the overhealing wound: the role of DNA methylation in fibrosis\". Fibrogenesis & Tissue Repair. 8 18. doi:10.1186/s13069-015-0035-8. PMC 4591063. PMID 26435749.",
+                    "<info> ^ Mitra A, Luna JI, Marusina AI, Merleev A, Kundu-Raychaudhuri S, Fiorentino D, et al. (November 2015). \"Dual mTOR Inhibition Is Required to Prevent TGF-β-Mediated Fibrosis: Implications for Scleroderma\". The Journal of Investigative Dermatology. 135 (11): 2873–6. doi:10.1038/jid.2015.252. PMC 4640976. PMID 26134944.",
+                    "<info> ^ Leask A, Abraham DJ (May 2004). \"TGF-beta signaling and the fibrotic response\". FASEB Journal. 18 (7): 816–827. Bibcode:2004FASEJ..18..816L. CiteSeerX 10.1.1.314.4027. doi:10.1096/fj.03-1273rev. PMID 15117886. S2CID 2027993.",
+                    "<info> ^ Meyer KC (May 2017). \"Pulmonary fibrosis, part I: epidemiology, pathogenesis, and diagnosis\". Expert Review of Respiratory Medicine. 11 (5): 343–359. doi:10.1080/17476348.2017.1312346. PMID 28345383. S2CID 42073964.",
+                    "<info> ^ Dwivedi DK, Jena GB (November 2018). \"Glibenclamide protects against thioacetamide-induced hepatic damage in Wistar rat: investigation on NLRP3, MMP-2, and stellate cell activation\". Naunyn-Schmiedeberg's Archives of Pharmacology. 391 (11): 1257–74. doi:10.1007/s00210-018-1540-2. PMID 30066023. S2CID 51890984.",
+                    "<info> ^ Zhang M, Serna-Salas S, Damba T, Borghesan M, Demaria M, Moshage H (October 2021). \"Hepatic stellate cell senescence in liver fibrosis: Characteristics, mechanisms and perspectives\" (PDF). Mechanisms of Ageing and Development. 199 111572. doi:10.1016/j.mad.2021.111572. PMID 34536446. S2CID 237524296.",
+                    "<info> ^ Valentijn FA, Falke LL, Nguyen TQ, Goldschmeding R (March 2018). \"Cellular senescence in the aging and diseased kidney\". Journal of Cell Communication and Signaling. 12 (1): 69–82. doi:10.1007/s12079-017-0434-2. PMC 5842195. PMID 29260442.",
+                    "<info> ^ a b Chute M, Aujla P, Jana S, Kassiri Z (September 2019). \"The Non-Fibrillar Side of Fibrosis: Contribution of the Basement Membrane, Proteoglycans, and Glycoproteins to Myocardial Fibrosis\". Journal of Cardiovascular Development and Disease. 6 (4): 35. doi:10.3390/jcdd6040035. PMC 6956278. PMID 31547598.",
+                    "<info> ^ Duffield JS (June 2014). \"Cellular and molecular mechanisms in kidney fibrosis\". The Journal of Clinical Investigation. 124 (6): 2299–2306. doi:10.1172/JCI72267. PMC 4038570. PMID 24892703.",
+                    "<info> ^ Nelson FR, Blauvelt CT (January 2015). \"Chapter 2 - Musculoskeletal Diseases and Related Terms\". A Manual of Orthopaedic Terminology (8th ed.). W.B. Saunders. pp. 43–104. doi:10.1016/B978-0-323-22158-0.00002-0. ISBN 978-0-323-22158-0.",
+                    "<info> ^ Ismail MH, Pinzani M (January 2009). \"Reversal of liver fibrosis\". Saudi J Gastroenterol. 15 (1): 72–9. doi:10.4103/1319-3767.45072. PMC 2702953. PMID 19568569.",
+                    "<info> ^ Zoubek ME, Trautwein C, Strnad P (April 2017). \"Reversal of liver fibrosis: From fiction to reality\". Best Pract Res Clin Gastroenterol. 31 (2): 129–141. doi:10.1016/j.bpg.2017.04.005. PMID 28624101.",
+                    "<info> ^ Chang CH, Juan YH, Hu HC, Kao KC, Lee CS (January 2018). \"Reversal of lung fibrosis: an unexpected finding in survivor of acute respiratory distress syndrome\". QJM. 111 (1): 47–48. doi:10.1093/qjmed/hcx190. PMID 29036729.",
+                    "<info> ^ Eddy AA (October 2005). \"Can renal fibrosis be reversed?\". Pediatr Nephrol. 20 (10): 1369–75. doi:10.1007/s00467-005-1995-5. PMID 15947978.",
+                    "<info> ^ Frangogiannis NG (May 2019). \"Can Myocardial Fibrosis Be Reversed?\". J Am Coll Cardiol. 73 (18): 2283–85. doi:10.1016/j.jacc.2018.10.094. PMID 31072571.",
+                    "<info> ^ Shetty SS, Sharma M, Kabekkodu SP, Kumar NA, Satyamoorthy K, Radhakrishnan R (2021). \"Understanding the molecular mechanism associated with reversal of oral submucous fibrosis targeting hydroxylysine aldehyde-derived collagen cross-links\". J Carcinog. 20: 9. doi:10.4103/jcar.JCar_24_20 (inactive 8 December 2025). PMC 8411980. PMID 34526855.{{cite journal}}:  CS1 maint: DOI inactive as of December 2025 (link)",
+                    "<info> ^ Liver fibrosis analysis using digital pathology. Miyaaki H, Miuma S, Fukusima M, Sasaki R, Haraguchi M, Nakao Y, Akazawa Y, Nakao K.  Med Mol Morphol. 2024 Sep;57(3):161-166. doi: 10.1007/s00795-024-00395-y. Epub 2024 Jul 9. PMID: 38980407.",
+                    "<info> ^ Liver fibrosis phenotyping and severity scoring by quantitative image analysis of biopsy slides. Watson et Al. Liver International, November 27 2023, DOI: 10.1111/liv.15768",
+                    "<info> ^ Digital pathology and artificial intelligence in non-alcoholic steatohepatitis: current status and future directions. Ratziu et Al.,  Journal of Hepatology, October 2023.  doi.org/10.1016/j.jhep.2023.10.015",
+                    "<info> ^ Aramchol improves hepatic fibrosis in metabolic dysfunction–associated steatohepatitis: Results of multimodality assessment using both conventional and digital pathology. Ratziu et Al, Hepatology, Volume 79, issue 4, April 7 2024, DOI: 10.1097/HEP.0000000000000980",
+                    "",
+                    "=== External links ===",
+                    "<info> Media related to Fibrosis at Wikimedia Commons",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Fibrosis, also known as fibrotic scarring, is the development of fibrous connective tissue in response to an injury. Fibrosis can be a normal connective tissue deposition or excessive tissue deposition caused by a disease.[2]",
+                            "Repeated injuries, chronic inflammation and repair are susceptible to fibrosis, where an accidental excessive accumulation of extracellular matrix components, such as collagen, is produced by fibroblasts, leading to the formation of a permanent fibrotic scar.[1][3]",
+                            "In response to injury, this is called scarring, and if fibrosis arises from a single cell line, this is called a fibroma. Physiologically, fibrosis acts to deposit connective tissue, which can interfere with or totally inhibit the normal architecture and function of the underlying organ or tissue. Fibrosis can be used to describe the pathological state of excess deposition of fibrous tissue, as well as the process of connective tissue deposition in healing.[4] Defined by the pathological accumulation of extracellular matrix (ECM) proteins, fibrosis results in scarring and thickening of the affected tissue — it is in essence a natural wound healing response which interferes with normal organ function.[5]"
+                        ]
+                    },
+                    "Physiology": {
+                        "content": [
+                            "Fibrosis is similar to the process of scarring, in that both involve stimulated fibroblasts laying down connective tissue, including collagen and glycosaminoglycans. The process is initiated when immune cells such as macrophages release soluble factors that stimulate fibroblasts.  The most well characterized pro-fibrotic mediator is TGF beta, which is released by macrophages as well as any damaged tissue between surfaces called interstitium.   Other soluble mediators of fibrosis include CTGF, platelet-derived growth factor (PDGF), and interleukin 10 (IL-10). These initiate signal transduction pathways such as the AKT/mTOR[6] and SMAD[7]  pathways that ultimately lead to the proliferation and activation of fibroblasts, which deposit extracellular matrix into the surrounding connective tissue.  This process of tissue repair is a complex one, with tight regulation of extracellular matrix (ECM) synthesis and degradation ensuring maintenance of normal tissue architecture. However, the entire process, although necessary,  can lead to a progressive irreversible fibrotic response if tissue injury is severe or repetitive, or if the wound healing response itself becomes deregulated.[5][8]"
+                        ]
+                    },
+                    "Anatomical location": {
+                        "content": [
+                            "Fibrosis can occur in many tissues within the body, typically as a result of inflammation or damage. Common sites of fibrosis include the lungs, liver, kidneys, brain, and heart:",
+                            "<info> Pulmonary fibrosis\nCystic fibrosis\nIdiopathic pulmonary fibrosis (idiopathic meaning 'of unknown cause')",
+                            "<info> Radiation-induced lung injury (following radiation therapies commonly used to treat cancer)",
+                            "<info> Idiopathic pulmonary fibrosis (idiopathic meaning 'of unknown cause')",
+                            "<info> Bridging fibrosis – an advanced stage of liver fibrosis, seen in the progressive form of chronic liver diseases. The term bridging refers to the formation of a \"bridge\" by a band of mature and thick fibrous tissue from the portal area to the central vein. This form of fibrosis leads to the formation of pseudolobules. Long-term exposure to hepatotoxins, such as thioacetamide, carbon tetrachloride, and diethylnitrosamine, has been shown to cause bridging fibrosis in experimental animal models.[9]",
+                            "<info> Senescence of hepatic stellate cells could prevent progression of liver fibrosis, although has not yet been implemented as a therapy due to risks associated with hepatic dysfunction.[10]",
+                            "<info> CYR61 induction of cellular senescence in the kidney has shown potential to limit renal fibrosis.[11]",
+                            "Myocardial fibrosis has two forms:",
+                            "<info> Interstitial fibrosis, described in cases of congestive heart failure and hypertension, and as part of normal cellular aging.[12]",
+                            "<info> Replacement fibrosis, indicating tissue damage from previous myocardial infarction.[12]",
+                            "<info> Healthy myocardium versus interstitial fibrosis in dilated cardiomyopathy. Alcian blue stain.",
+                            "<info> Replacement fibrosis in myocardial infarction, being boundless and dense.",
+                            "<info> Arthrofibrosis (knee, shoulder, other joints)",
+                            "<info> Dupuytren's contracture (hands, fingers)",
+                            "<info> Lipedema (fat cells, typically in lower limbs)",
+                            "<info> Mediastinal fibrosis (soft tissue of the mediastinum)",
+                            "<info> Nephrogenic systemic fibrosis (skin)",
+                            "<info> Progressive massive fibrosis (lungs); a complication of pneumoconiosis",
+                            "<info> Retroperitoneal fibrosis (soft tissue of the retroperitoneum)",
+                            "<info> Scleroderma/systemic sclerosis (skin, lungs)",
+                            "<info> Some forms of adhesive capsulitis (shoulder)",
+                            "Historically, fibrosis was considered an irreversible process. However, several recent studies have demonstrated reversal in liver and lung tissue,[15][16][17] and in cases of renal,[18] myocardial,[19] and oral-submucosal fibrosis.[20]"
+                        ]
+                    },
+                    "Digital Pathology Quantification of Fibrosis": {
+                        "content": [
+                            "Digital pathology approaches enable quantitative assessment of fibrosis from whole-slide histological images using computational image analysis and machine-learning methods. These techniques measure collagen content, fiber architecture, spatial distribution, and tissue remodeling beyond traditional semi-quantitative staging systems.",
+                            "Platforms such as those developed by PharmaNest apply AI-assisted analysis to conventional stains (e.g., picrosirius red, Masson's Trichrome) to derive reproducible fibrosis biomarkers[21][22]. Such digital fibrosis quantification methods have been applied across liver, gastrointestinal, pulmonary, renal, and dermatologic tissues. Such methods support translational research and clinical trials by enabling sensitive detection of fibrotic change and therapeutic response [23][24]."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Wynn TA (August 2004). \"Fibrotic disease and the T(H)1/T(H)2 paradigm\". Nature Reviews. Immunology. 4 (8): 583–594. Bibcode:2004NatRI...4..583W. doi:10.1038/nri1412. PMC 2702150. PMID 15286725.",
+                            "<info> ^ \"Fibrosis\". Dictionary of Toxicology. Singapore: Springer Nature Singapore. 2024. pp. 375–376. doi:10.1007/978-981-99-9283-6_957. ISBN 978-981-99-9282-9.",
+                            "<info> ^ Birbrair A, Zhang T, Files DC, Mannava S, Smith T, Wang ZM, et al. (November 2014). \"Type-1 pericytes accumulate after tissue injury and produce collagen in an organ-dependent manner\". Stem Cell Research & Therapy. 5 (6) 122. doi:10.1186/scrt512. PMC 4445991. PMID 25376879.",
+                            "<info> ^ \"Glossary of dermatopathological terms\". DermNet NZ. 26 October 2023.",
+                            "<info> ^ a b Neary R, Watson CJ, Baugh JA (2015). \"Epigenetics and the overhealing wound: the role of DNA methylation in fibrosis\". Fibrogenesis & Tissue Repair. 8 18. doi:10.1186/s13069-015-0035-8. PMC 4591063. PMID 26435749.",
+                            "<info> ^ Mitra A, Luna JI, Marusina AI, Merleev A, Kundu-Raychaudhuri S, Fiorentino D, et al. (November 2015). \"Dual mTOR Inhibition Is Required to Prevent TGF-β-Mediated Fibrosis: Implications for Scleroderma\". The Journal of Investigative Dermatology. 135 (11): 2873–6. doi:10.1038/jid.2015.252. PMC 4640976. PMID 26134944.",
+                            "<info> ^ Leask A, Abraham DJ (May 2004). \"TGF-beta signaling and the fibrotic response\". FASEB Journal. 18 (7): 816–827. Bibcode:2004FASEJ..18..816L. CiteSeerX 10.1.1.314.4027. doi:10.1096/fj.03-1273rev. PMID 15117886. S2CID 2027993.",
+                            "<info> ^ Meyer KC (May 2017). \"Pulmonary fibrosis, part I: epidemiology, pathogenesis, and diagnosis\". Expert Review of Respiratory Medicine. 11 (5): 343–359. doi:10.1080/17476348.2017.1312346. PMID 28345383. S2CID 42073964.",
+                            "<info> ^ Dwivedi DK, Jena GB (November 2018). \"Glibenclamide protects against thioacetamide-induced hepatic damage in Wistar rat: investigation on NLRP3, MMP-2, and stellate cell activation\". Naunyn-Schmiedeberg's Archives of Pharmacology. 391 (11): 1257–74. doi:10.1007/s00210-018-1540-2. PMID 30066023. S2CID 51890984.",
+                            "<info> ^ Zhang M, Serna-Salas S, Damba T, Borghesan M, Demaria M, Moshage H (October 2021). \"Hepatic stellate cell senescence in liver fibrosis: Characteristics, mechanisms and perspectives\" (PDF). Mechanisms of Ageing and Development. 199 111572. doi:10.1016/j.mad.2021.111572. PMID 34536446. S2CID 237524296.",
+                            "<info> ^ Valentijn FA, Falke LL, Nguyen TQ, Goldschmeding R (March 2018). \"Cellular senescence in the aging and diseased kidney\". Journal of Cell Communication and Signaling. 12 (1): 69–82. doi:10.1007/s12079-017-0434-2. PMC 5842195. PMID 29260442.",
+                            "<info> ^ a b Chute M, Aujla P, Jana S, Kassiri Z (September 2019). \"The Non-Fibrillar Side of Fibrosis: Contribution of the Basement Membrane, Proteoglycans, and Glycoproteins to Myocardial Fibrosis\". Journal of Cardiovascular Development and Disease. 6 (4): 35. doi:10.3390/jcdd6040035. PMC 6956278. PMID 31547598.",
+                            "<info> ^ Duffield JS (June 2014). \"Cellular and molecular mechanisms in kidney fibrosis\". The Journal of Clinical Investigation. 124 (6): 2299–2306. doi:10.1172/JCI72267. PMC 4038570. PMID 24892703.",
+                            "<info> ^ Nelson FR, Blauvelt CT (January 2015). \"Chapter 2 - Musculoskeletal Diseases and Related Terms\". A Manual of Orthopaedic Terminology (8th ed.). W.B. Saunders. pp. 43–104. doi:10.1016/B978-0-323-22158-0.00002-0. ISBN 978-0-323-22158-0.",
+                            "<info> ^ Ismail MH, Pinzani M (January 2009). \"Reversal of liver fibrosis\". Saudi J Gastroenterol. 15 (1): 72–9. doi:10.4103/1319-3767.45072. PMC 2702953. PMID 19568569.",
+                            "<info> ^ Zoubek ME, Trautwein C, Strnad P (April 2017). \"Reversal of liver fibrosis: From fiction to reality\". Best Pract Res Clin Gastroenterol. 31 (2): 129–141. doi:10.1016/j.bpg.2017.04.005. PMID 28624101.",
+                            "<info> ^ Chang CH, Juan YH, Hu HC, Kao KC, Lee CS (January 2018). \"Reversal of lung fibrosis: an unexpected finding in survivor of acute respiratory distress syndrome\". QJM. 111 (1): 47–48. doi:10.1093/qjmed/hcx190. PMID 29036729.",
+                            "<info> ^ Eddy AA (October 2005). \"Can renal fibrosis be reversed?\". Pediatr Nephrol. 20 (10): 1369–75. doi:10.1007/s00467-005-1995-5. PMID 15947978.",
+                            "<info> ^ Frangogiannis NG (May 2019). \"Can Myocardial Fibrosis Be Reversed?\". J Am Coll Cardiol. 73 (18): 2283–85. doi:10.1016/j.jacc.2018.10.094. PMID 31072571.",
+                            "<info> ^ Shetty SS, Sharma M, Kabekkodu SP, Kumar NA, Satyamoorthy K, Radhakrishnan R (2021). \"Understanding the molecular mechanism associated with reversal of oral submucous fibrosis targeting hydroxylysine aldehyde-derived collagen cross-links\". J Carcinog. 20: 9. doi:10.4103/jcar.JCar_24_20 (inactive 8 December 2025). PMC 8411980. PMID 34526855.{{cite journal}}:  CS1 maint: DOI inactive as of December 2025 (link)",
+                            "<info> ^ Liver fibrosis analysis using digital pathology. Miyaaki H, Miuma S, Fukusima M, Sasaki R, Haraguchi M, Nakao Y, Akazawa Y, Nakao K.  Med Mol Morphol. 2024 Sep;57(3):161-166. doi: 10.1007/s00795-024-00395-y. Epub 2024 Jul 9. PMID: 38980407.",
+                            "<info> ^ Liver fibrosis phenotyping and severity scoring by quantitative image analysis of biopsy slides. Watson et Al. Liver International, November 27 2023, DOI: 10.1111/liv.15768",
+                            "<info> ^ Digital pathology and artificial intelligence in non-alcoholic steatohepatitis: current status and future directions. Ratziu et Al.,  Journal of Hepatology, October 2023.  doi.org/10.1016/j.jhep.2023.10.015",
+                            "<info> ^ Aramchol improves hepatic fibrosis in metabolic dysfunction–associated steatohepatitis: Results of multimodality assessment using both conventional and digital pathology. Ratziu et Al, Hepatology, Volume 79, issue 4, April 7 2024, DOI: 10.1097/HEP.0000000000000980"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Media related to Fibrosis at Wikimedia Commons"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

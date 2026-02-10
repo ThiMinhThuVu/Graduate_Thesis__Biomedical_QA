@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/paracetamol_poisoning": {
+                "title": "Paracetamol poisoning",
+                "url": "https://en.wikipedia.org/wiki/paracetamol_poisoning",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

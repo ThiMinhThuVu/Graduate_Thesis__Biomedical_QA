@@ -1,0 +1,55 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/triploblasty": {
+                "title": "Triploblasty",
+                "url": "https://en.wikipedia.org/wiki/triploblasty",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Triploblasty is a condition of the gastrula in which there are three primary germ layers: the ectoderm, mesoderm, and endoderm. Germ cells are set aside in the embryo at the blastula stage, and are incorporated into the gonads during organogenesis. The germ layers form during the gastrulation of the blastula. The term triploblast may refer to any egg cell in which the blastoderm splits into three layers.[1]",
+                    "All bilaterians, which are the animals with bilaterally symmetrical embryos, are triploblastic. Other animal taxa, namely the ctenophores, placozoans, and cnidarians, are diploblastic, which means that their embryos contain only two germ layers. Sponges are even less developmentally specialized, because they lack both true tissues[2] and organs.[3]",
+                    "The earliest triploblasts are thought to have evolved from the diploblasts at some time during the Proterozoic era, establishing themselves as a group prior to their diversification during the Cambrian explosion.[4][5][6]",
+                    "",
+                    "=== See also ===",
+                    "<info> Embryo – Multicellular diploid eukaryote in its earliest stage of development",
+                    "<info> Eumetazoa – Basal animal clade as a sister group of the Porifera",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Ravichandra (Jan 1, 2008). Plant Nematology. I. K. International Pvt Ltd. p. 29. ISBN 9788189866617.",
+                    "<info> ^ Hooper, John (2018). \"Structure of Sponges\". Queensland Museum. Archived from the original on 26 September 2019. Retrieved 27 September 2019.",
+                    "<info> ^ Thacker, Robert W; Diaz, Maria Christina (8 September 2014). \"The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology\". J Biomed Semantics. 5 (39): 39. doi:10.1186/2041-1480-5-39. PMC 4177528. PMID 25276334.",
+                    "<info> ^ Gu, Xun (1998). \"Early metazoan divergence was about 830 million years ago\". Journal of Molecular Evolution. 47 (3): 369–371. Bibcode:1998JMolE..47..369G. doi:10.1007/PL00013150. PMID 9732464. S2CID 30228208.",
+                    "<info> ^ Lynch, Michael (1999). \"The age and relationships of the major animal phyla\". Evolution. 53 (2): 319–325. Bibcode:1999Evolu..53..319L. doi:10.1111/j.1558-5646.1999.tb03768.x. PMID 28565434. S2CID 6120649.",
+                    "<info> ^ Seilacher, Adolf; Pradip K., Bose; Pflüger, Friedrich (1998). \"Triploblastic animals more than 1 billion years ago: trace fossil evidence from India\". Science. 282 (5386): 80–83. Bibcode:1998Sci...282...80S. doi:10.1126/science.282.5386.80. PMID 9756480.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Triploblasty is a condition of the gastrula in which there are three primary germ layers: the ectoderm, mesoderm, and endoderm. Germ cells are set aside in the embryo at the blastula stage, and are incorporated into the gonads during organogenesis. The germ layers form during the gastrulation of the blastula. The term triploblast may refer to any egg cell in which the blastoderm splits into three layers.[1]",
+                            "All bilaterians, which are the animals with bilaterally symmetrical embryos, are triploblastic. Other animal taxa, namely the ctenophores, placozoans, and cnidarians, are diploblastic, which means that their embryos contain only two germ layers. Sponges are even less developmentally specialized, because they lack both true tissues[2] and organs.[3]",
+                            "The earliest triploblasts are thought to have evolved from the diploblasts at some time during the Proterozoic era, establishing themselves as a group prior to their diversification during the Cambrian explosion.[4][5][6]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Embryo – Multicellular diploid eukaryote in its earliest stage of development",
+                            "<info> Eumetazoa – Basal animal clade as a sister group of the Porifera"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Ravichandra (Jan 1, 2008). Plant Nematology. I. K. International Pvt Ltd. p. 29. ISBN 9788189866617.",
+                            "<info> ^ Hooper, John (2018). \"Structure of Sponges\". Queensland Museum. Archived from the original on 26 September 2019. Retrieved 27 September 2019.",
+                            "<info> ^ Thacker, Robert W; Diaz, Maria Christina (8 September 2014). \"The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology\". J Biomed Semantics. 5 (39): 39. doi:10.1186/2041-1480-5-39. PMC 4177528. PMID 25276334.",
+                            "<info> ^ Gu, Xun (1998). \"Early metazoan divergence was about 830 million years ago\". Journal of Molecular Evolution. 47 (3): 369–371. Bibcode:1998JMolE..47..369G. doi:10.1007/PL00013150. PMID 9732464. S2CID 30228208.",
+                            "<info> ^ Lynch, Michael (1999). \"The age and relationships of the major animal phyla\". Evolution. 53 (2): 319–325. Bibcode:1999Evolu..53..319L. doi:10.1111/j.1558-5646.1999.tb03768.x. PMID 28565434. S2CID 6120649.",
+                            "<info> ^ Seilacher, Adolf; Pradip K., Bose; Pflüger, Friedrich (1998). \"Triploblastic animals more than 1 billion years ago: trace fossil evidence from India\". Science. 282 (5386): 80–83. Bibcode:1998Sci...282...80S. doi:10.1126/science.282.5386.80. PMID 9756480."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

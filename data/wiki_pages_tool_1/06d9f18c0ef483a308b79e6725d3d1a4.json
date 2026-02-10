@@ -1,0 +1,133 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/pytorch": {
+                "title": "PyTorch",
+                "url": "https://en.wikipedia.org/wiki/pytorch",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "PyTorch is an open-source deep learning library, originally developed by Meta Platforms and currently developed with support from the Linux Foundation. The successor to Torch, PyTorch provides a high-level API that builds upon optimised, low-level implementations of deep learning algorithms and architectures, such as the Transformer, or SGD. Notably, this API simplifies model training and inference to a few lines of code. PyTorch allows for automatic parallelization of training and, internally, implements CUDA bindings that speed training further by leveraging GPU resources.",
+                    "PyTorch utilises the tensor as a fundamental data type, similarly to NumPy. Training is facilitated by a reversed automatic differentiation system, Autograd, that constructs a directed acyclic graph of the operations (and their arguments) executed by a model during its forward pass. With a loss, backpropagation is then undertaken.[4]",
+                    "As of 2025[update], PyTorch remains one of the most popular deep learning libraries, alongside others such as TensorFlow and Keras.[5] A number of commercial deep learning architectures are built on top of PyTorch, including ChatGPT,[6] Tesla Autopilot,[7] Uber's Pyro,[8] Hugging Face's Transformers,[9][10] and Catalyst.[11][12]",
+                    "",
+                    "=== History ===",
+                    "In 2001, Torch was written and released under a GPL. It was a machine-learning library written in C++ and CUDA, supporting methods including neural networks, support vector machines (SVM), hidden Markov models, etc.[13][14][15] Around 2010, it was rewritten to by Ronan Collobert, Clement Farabet and Koray Kavuckuoglu. This was known as Torch7 or LuaTorch. This was written so that the backend was in C and the frontend was in Lua.[16] In mid-2016, some developers refactored it to decouple the frontend and the backend, with strong influence from torch-autograd and Chainer. In turn, torch-autograd was influenced by HIPS/autograd. Development on Torch7 ceased in 2018 and was subsumed by the PyTorch project.[17][18]",
+                    "Meta (formerly known as Facebook) operates both PyTorch and Convolutional Architecture for Fast Feature Embedding (Caffe2), but models defined by the two frameworks were mutually incompatible. The Open Neural Network Exchange (ONNX) project was created by Meta and Microsoft in September 2017 for converting models between frameworks. Caffe2 was merged into PyTorch at the end of March 2018.[19] In September 2022, Meta announced that PyTorch would be governed by the independent PyTorch Foundation, a newly created subsidiary of the Linux Foundation.[20]",
+                    "PyTorch 2.0 was released on 15 March 2023, introducing TorchDynamo, a Python-level compiler that makes code run up to two times faster, along with significant improvements in training and inference performance across major cloud platforms.[21][22]",
+                    "",
+                    "=== PyTorch tensors ===",
+                    "PyTorch defines a class called Tensor (torch.Tensor) to store and operate on homogeneous multidimensional rectangular arrays of numbers. PyTorch Tensors are similar to NumPy Arrays, but can also be operated on by a CUDA-capable NVIDIA GPU. PyTorch has also been developing support for other GPU platforms, for example, AMD's ROCm[23] and Apple's Metal Framework.[24]",
+                    "PyTorch supports various sub-types of Tensors.[25]",
+                    "The meaning of the word \"tensor\" in machine learning is only superficially related to its original meaning in mathematics or physics as a certain kind of object in linear algebra. Tensors in PyTorch are simply multi-dimensional arrays.",
+                    "",
+                    "=== PyTorch neural networks ===",
+                    "PyTorch defines a module called nn (torch.nn) to describe neural networks and to support training. This module offers a comprehensive collection of building blocks for neural networks, including various layers and activation functions, enabling the construction of complex models. Networks are built by inheriting from the torch.nn module and defining the sequence of operations in the forward() function.",
+                    "",
+                    "=== Example ===",
+                    "The following program shows the low-level functionality of the library with a simple example.",
+                    "The following code block defines a neural network with linear layers using the nn module.",
+                    "",
+                    "=== See also ===",
+                    "<info> Free and open-source software portal",
+                    "<info> Comparison of deep learning software",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Chintala, Soumith (1 September 2016). \"PyTorch Alpha-1 release\". GitHub. Archived from the original on 29 August 2021. Retrieved 19 August 2020.",
+                    "<info> ^ \"PyTorch 2.10.0 Release\". 21 January 2026. Retrieved 22 January 2026.",
+                    "<info> ^ Claburn, Thomas (12 September 2022). \"PyTorch gets lit under The Linux Foundation\". The Register. Archived from the original on 18 October 2022. Retrieved 18 October 2022.",
+                    "<info> ^ \"Autograd Mechanics\". PyTorch Documentation. Retrieved 13 November 2025.",
+                    "<info> ^ \"Top 30 Open Source Projects\". github.com. Retrieved 13 November 2025.",
+                    "<info> ^ \"OpenAI standardizes on PyTorch\". 30 January 2020. Retrieved 8 January 2026.",
+                    "<info> ^ Karpathy, Andrej (6 November 2019). \"PyTorch at Tesla - Andrej Karpathy, Tesla\". YouTube. Archived from the original on 24 March 2023. Retrieved 2 June 2020.",
+                    "<info> ^ \"Uber AI Labs Open Sources Pyro, a Deep Probabilistic Programming Language\". Uber Engineering Blog. 3 November 2017. Archived from the original on 25 December 2017. Retrieved 18 December 2017.",
+                    "<info> ^ PYTORCH-TRANSFORMERS: PyTorch implementations of popular NLP Transformers, PyTorch Hub, 1 December 2019, archived from the original on 11 June 2023, retrieved 1 December 2019",
+                    "<info> ^ \"Ecosystem Tools\". pytorch.org. Archived from the original on 18 July 2023. Retrieved 18 June 2020.",
+                    "<info> ^ GitHub - catalyst-team/catalyst: Accelerated DL & RL, Catalyst-Team, 5 December 2019, archived from the original on 22 December 2019, retrieved 5 December 2019",
+                    "<info> ^ \"Ecosystem Tools\". pytorch.org. Archived from the original on 18 July 2023. Retrieved 4 April 2020.",
+                    "<info> ^ \"Torch Tutorial\", Ronan Collobert, IDIAP, 2002-10-02",
+                    "<info> ^ R. Collobert, S. Bengio and J. Mariéthoz. Torch: a modular machine learning software library. Technical Report IDIAP-RR 02-46, IDIAP, 2002.",
+                    "<info> ^ \"Torch Library\". Archived from the original on 31 October 2001.",
+                    "<info> ^ Collobert, Ronan; Kavukcuoglu, Koray; Farabet, Clément (2012), Montavon, Grégoire; Orr, Geneviève B.; Müller, Klaus-Robert (eds.), \"Implementing Neural Networks Efficiently\", Neural Networks: Tricks of the Trade: Second Edition, Berlin, Heidelberg: Springer, pp. 537–557, doi:10.1007/978-3-642-35289-8_28, ISBN 978-3-642-35289-8, retrieved 10 June 2025{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                    "<info> ^ torch/torch7, Commit fd0ee3b, 2018-07-02",
+                    "<info> ^ Chintala, Soumith (17 December 2023). \"PyTorch's design origins\". soumith.ch. Retrieved 7 February 2026.",
+                    "<info> ^ \"Caffe2 Merges With PyTorch\". 2 April 2018. Archived from the original on 30 March 2019. Retrieved 2 January 2019.",
+                    "<info> ^ Edwards, Benj (12 September 2022). \"Meta spins off PyTorch Foundation to make AI framework vendor neutral\". Ars Technica. Archived from the original on 13 September 2022. Retrieved 13 September 2022.",
+                    "<info> ^ \"PyTorch 2.0 brings new fire to open-source machine learning\". VentureBeat. 15 March 2023. Archived from the original on 16 March 2023. Retrieved 16 March 2023.",
+                    "<info> ^ \"Installing PyTorch for ROCm\". rocm.docs.amd.com. 9 February 2024.",
+                    "<info> ^ \"Introducing Accelerated PyTorch Training on Mac\". pytorch.org. Archived from the original on 29 January 2024. Retrieved 4 June 2022.",
+                    "<info> ^ \"An Introduction to PyTorch – A Simple yet Powerful Deep Learning Library\". analyticsvidhya.com. 22 February 2018. Archived from the original on 22 October 2019. Retrieved 11 June 2018.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "PyTorch is an open-source deep learning library, originally developed by Meta Platforms and currently developed with support from the Linux Foundation. The successor to Torch, PyTorch provides a high-level API that builds upon optimised, low-level implementations of deep learning algorithms and architectures, such as the Transformer, or SGD. Notably, this API simplifies model training and inference to a few lines of code. PyTorch allows for automatic parallelization of training and, internally, implements CUDA bindings that speed training further by leveraging GPU resources.",
+                            "PyTorch utilises the tensor as a fundamental data type, similarly to NumPy. Training is facilitated by a reversed automatic differentiation system, Autograd, that constructs a directed acyclic graph of the operations (and their arguments) executed by a model during its forward pass. With a loss, backpropagation is then undertaken.[4]",
+                            "As of 2025[update], PyTorch remains one of the most popular deep learning libraries, alongside others such as TensorFlow and Keras.[5] A number of commercial deep learning architectures are built on top of PyTorch, including ChatGPT,[6] Tesla Autopilot,[7] Uber's Pyro,[8] Hugging Face's Transformers,[9][10] and Catalyst.[11][12]"
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "In 2001, Torch was written and released under a GPL. It was a machine-learning library written in C++ and CUDA, supporting methods including neural networks, support vector machines (SVM), hidden Markov models, etc.[13][14][15] Around 2010, it was rewritten to by Ronan Collobert, Clement Farabet and Koray Kavuckuoglu. This was known as Torch7 or LuaTorch. This was written so that the backend was in C and the frontend was in Lua.[16] In mid-2016, some developers refactored it to decouple the frontend and the backend, with strong influence from torch-autograd and Chainer. In turn, torch-autograd was influenced by HIPS/autograd. Development on Torch7 ceased in 2018 and was subsumed by the PyTorch project.[17][18]",
+                            "Meta (formerly known as Facebook) operates both PyTorch and Convolutional Architecture for Fast Feature Embedding (Caffe2), but models defined by the two frameworks were mutually incompatible. The Open Neural Network Exchange (ONNX) project was created by Meta and Microsoft in September 2017 for converting models between frameworks. Caffe2 was merged into PyTorch at the end of March 2018.[19] In September 2022, Meta announced that PyTorch would be governed by the independent PyTorch Foundation, a newly created subsidiary of the Linux Foundation.[20]",
+                            "PyTorch 2.0 was released on 15 March 2023, introducing TorchDynamo, a Python-level compiler that makes code run up to two times faster, along with significant improvements in training and inference performance across major cloud platforms.[21][22]"
+                        ]
+                    },
+                    "PyTorch tensors": {
+                        "content": [
+                            "PyTorch defines a class called Tensor (torch.Tensor) to store and operate on homogeneous multidimensional rectangular arrays of numbers. PyTorch Tensors are similar to NumPy Arrays, but can also be operated on by a CUDA-capable NVIDIA GPU. PyTorch has also been developing support for other GPU platforms, for example, AMD's ROCm[23] and Apple's Metal Framework.[24]",
+                            "PyTorch supports various sub-types of Tensors.[25]",
+                            "The meaning of the word \"tensor\" in machine learning is only superficially related to its original meaning in mathematics or physics as a certain kind of object in linear algebra. Tensors in PyTorch are simply multi-dimensional arrays."
+                        ]
+                    },
+                    "PyTorch neural networks": {
+                        "content": [
+                            "PyTorch defines a module called nn (torch.nn) to describe neural networks and to support training. This module offers a comprehensive collection of building blocks for neural networks, including various layers and activation functions, enabling the construction of complex models. Networks are built by inheriting from the torch.nn module and defining the sequence of operations in the forward() function."
+                        ]
+                    },
+                    "Example": {
+                        "content": [
+                            "The following program shows the low-level functionality of the library with a simple example.",
+                            "The following code block defines a neural network with linear layers using the nn module."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Free and open-source software portal",
+                            "<info> Comparison of deep learning software"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Chintala, Soumith (1 September 2016). \"PyTorch Alpha-1 release\". GitHub. Archived from the original on 29 August 2021. Retrieved 19 August 2020.",
+                            "<info> ^ \"PyTorch 2.10.0 Release\". 21 January 2026. Retrieved 22 January 2026.",
+                            "<info> ^ Claburn, Thomas (12 September 2022). \"PyTorch gets lit under The Linux Foundation\". The Register. Archived from the original on 18 October 2022. Retrieved 18 October 2022.",
+                            "<info> ^ \"Autograd Mechanics\". PyTorch Documentation. Retrieved 13 November 2025.",
+                            "<info> ^ \"Top 30 Open Source Projects\". github.com. Retrieved 13 November 2025.",
+                            "<info> ^ \"OpenAI standardizes on PyTorch\". 30 January 2020. Retrieved 8 January 2026.",
+                            "<info> ^ Karpathy, Andrej (6 November 2019). \"PyTorch at Tesla - Andrej Karpathy, Tesla\". YouTube. Archived from the original on 24 March 2023. Retrieved 2 June 2020.",
+                            "<info> ^ \"Uber AI Labs Open Sources Pyro, a Deep Probabilistic Programming Language\". Uber Engineering Blog. 3 November 2017. Archived from the original on 25 December 2017. Retrieved 18 December 2017.",
+                            "<info> ^ PYTORCH-TRANSFORMERS: PyTorch implementations of popular NLP Transformers, PyTorch Hub, 1 December 2019, archived from the original on 11 June 2023, retrieved 1 December 2019",
+                            "<info> ^ \"Ecosystem Tools\". pytorch.org. Archived from the original on 18 July 2023. Retrieved 18 June 2020.",
+                            "<info> ^ GitHub - catalyst-team/catalyst: Accelerated DL & RL, Catalyst-Team, 5 December 2019, archived from the original on 22 December 2019, retrieved 5 December 2019",
+                            "<info> ^ \"Ecosystem Tools\". pytorch.org. Archived from the original on 18 July 2023. Retrieved 4 April 2020.",
+                            "<info> ^ \"Torch Tutorial\", Ronan Collobert, IDIAP, 2002-10-02",
+                            "<info> ^ R. Collobert, S. Bengio and J. Mariéthoz. Torch: a modular machine learning software library. Technical Report IDIAP-RR 02-46, IDIAP, 2002.",
+                            "<info> ^ \"Torch Library\". Archived from the original on 31 October 2001.",
+                            "<info> ^ Collobert, Ronan; Kavukcuoglu, Koray; Farabet, Clément (2012), Montavon, Grégoire; Orr, Geneviève B.; Müller, Klaus-Robert (eds.), \"Implementing Neural Networks Efficiently\", Neural Networks: Tricks of the Trade: Second Edition, Berlin, Heidelberg: Springer, pp. 537–557, doi:10.1007/978-3-642-35289-8_28, ISBN 978-3-642-35289-8, retrieved 10 June 2025{{citation}}:  CS1 maint: work parameter with ISBN (link)",
+                            "<info> ^ torch/torch7, Commit fd0ee3b, 2018-07-02",
+                            "<info> ^ Chintala, Soumith (17 December 2023). \"PyTorch's design origins\". soumith.ch. Retrieved 7 February 2026.",
+                            "<info> ^ \"Caffe2 Merges With PyTorch\". 2 April 2018. Archived from the original on 30 March 2019. Retrieved 2 January 2019.",
+                            "<info> ^ Edwards, Benj (12 September 2022). \"Meta spins off PyTorch Foundation to make AI framework vendor neutral\". Ars Technica. Archived from the original on 13 September 2022. Retrieved 13 September 2022.",
+                            "<info> ^ \"PyTorch 2.0 brings new fire to open-source machine learning\". VentureBeat. 15 March 2023. Archived from the original on 16 March 2023. Retrieved 16 March 2023.",
+                            "<info> ^ \"Installing PyTorch for ROCm\". rocm.docs.amd.com. 9 February 2024.",
+                            "<info> ^ \"Introducing Accelerated PyTorch Training on Mac\". pytorch.org. Archived from the original on 29 January 2024. Retrieved 4 June 2022.",
+                            "<info> ^ \"An Introduction to PyTorch – A Simple yet Powerful Deep Learning Library\". analyticsvidhya.com. 22 February 2018. Archived from the original on 22 October 2019. Retrieved 11 June 2018."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

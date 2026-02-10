@@ -1,0 +1,185 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/human_mitochondrial_dna_haplogroup": {
+                "title": "Human mitochondrial DNA haplogroup",
+                "url": "https://en.wikipedia.org/wiki/human_mitochondrial_dna_haplogroup",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Mitochondria are the primary energy generator of the cell and have unique organelles that maintain their own DNA (mtDNA). In human genetics, human mitochondrial DNA haplogroups are collections of similar haplotypes defined by combinations of single nuclear polymorphism (SNPs) in mtDNA inherited from a common ancestor.[2] Mitochondrial DNA is passed down through cytoplasmic inheritance, where, upon fertilization, the paternal mitochondria are degraded, leaving only the maternal mitochondria regardless of the offspring’s sex.[3] This characteristic of mitochondrial inheritance allows geneticists to track the movement and divergence of different haplogroups from female lineages. Haplogroups are used to represent the major branch points on the mitochondrial phylogenetic tree. Understanding this mechanism of inheritance has helped population geneticists trace the matrilineal inheritance of modern humans back to human origins in Africa and the subsequent spread around the globe.",
+                    "The letter names of the haplogroups (not just mitochondrial DNA haplogroups) run from A to Z. As haplogroups were named in the order of their discovery, the alphabetical ordering does not have any meaning in terms of actual genetic relationships.",
+                    "The hypothetical woman at the root of all these groups (meaning just the mitochondrial DNA haplogroups) is the matrilineal most recent common ancestor (MRCA) for all currently living humans. She is commonly called Mitochondrial Eve.",
+                    "The rate at which mitochondrial DNA mutates is known as the mitochondrial molecular clock. It is an area of ongoing research with one study reporting one mutation per 8000 years.[4]",
+                    "Recent research has shown that mitochondrial DNA haplogroups can influence risk for various diseases and cancers.[5]",
+                    "",
+                    "=== Phylogeny ===",
+                    "This phylogenetic tree is based Van Oven (2009).[7] In June 2022, an alternative phylogeny for haplogroup L was suggested[8]",
+                    "",
+                    "=== Major mtDNA haplogroups ===",
+                    "Macro-haplogroup L is the most basal of human mtDNA haplogroups, from which all other haplogroups descend (specifically, from haplogroup L3). These haplogroups represent the majority of the typical sub-Saharan mtDNA variability. Approximately 65% of the European L lineages mostly likely arrived during the Arab conquest of Iberian Peninsula and Sicily and during the period of Atlantic slave trade. The remaining 35% of L mtDNAs form European-specific subclades, revealing that the gene flows from sub-Saharan Africa toward Europe from 11,000 years ago.[10]",
+                    "Macro-haplogroup H is found mostly in European countries and forms ~40-45% of the European mitochondrial gene pool. Its focus has been an important aspect of human genetic diversity studies for more than a decade. It is estimated that the coalescence time for Hg H is ~21,000 years ago, which led to the proposal that the clade was involved in a post-glacial population re-expansion from southwestern Europe to the rest of the continent. Most of the population along the westernmost Mediterranean coasts, separated by a narrow body of water, shows the highest frequencies of mitochondrial haplogroup H. The most basal nodes of the most frequent H sub-haplogroup, H1 and H3, are found among many western Europeans origins (primarily in the Iberian and Maghrebian regions).",
+                    "A 2017 study published in BMC Genomic Data analyzed mitochondrial DNA haplogroup H in 750 individuals from southern Spain, finding 337 carriers primarily from the Andalusian provinces of Huelva and Granada.[11] The research revealed that both populations exhibited a predominantly western European genetic profile, though Granada showed additional affinities with eastern Mediterranean populations, suggesting historical gene flow. Sub-haplogroups H1 and H3 were the most common, with molecular dating indicating origins around 16,000 and 13,000 years ago, respectively, and shared ancestry between Iberian and North African groups. Significant haplotype sharing between Andalusia and Morocco pointed to the Strait of Gibraltar as a corridor for maternal gene exchange rather than a genetic barrier. Overall, haplogroup H frequencies of about 39% in Huelva and 48% in Granada highlighted local diversity shaped by post-glacial expansions and later trans-Mediterranean interactions.",
+                    "Macro-haplogroup M is found mostly in Asia and the Americas. Its descendants are haplogroup M, haplogroup C, haplogroup Z, haplogroup D, haplogroup E, haplogroup G and haplogroup Q.",
+                    "Macro-haplogroup N is found mostly in Australia, the Americas and parts of Asia. Its descendants are haplogroup N, haplogroup O, haplogroup A, haplogroup S, haplogroup I, haplogroup W, haplogroup X and haplogroup Y, as well as macro-haplogroup R.",
+                    "Macro-haplogroup R is found mostly in Europe, Northern Africa, the Pacific and parts of Asia and the Americas. Its descendants are haplogroup R, haplogroup B, haplogroup F, haplogroup H, haplogroup V, haplogroup J, haplogroup T, haplogroup U and haplogroup K",
+                    "",
+                    "=== Geographical distribution ===",
+                    "A 2004 paper suggested that the haplogroups most common in modern West Asian, North African and European populations were:\nH, J, K, N1, T, U4, U5, V, X and W.[13]",
+                    "African haplogroups: L0, L1, L2, L3, L4, L5, L6, T, U5a",
+                    "Australian and Oceanian haplogroups: M42a, M42c, M14, M15, Q, S, O, N, P. (Refs 1, 2, 3, 4, 5, 6)",
+                    "Asian and native American haplogroups: F, C, W, M, D, N, K, U, T, A, B, C, Z, U many number variants to each section",
+                    "",
+                    "=== Research software ===",
+                    "<info> mtHap: James Lick's tool (multiple input formats).",
+                    "<info> YSEQ mt Clade Finder: FASTA based haplogroup tool. Replaced HAPLOFIND.[14]",
+                    "<info> HaploGrep: VCF based tool.[15][16]",
+                    "<info> Haplocheck: Mitoverse's tool for both WGS and WES.[17]",
+                    "<info> Haplotracker: A short fragment tool.[18]",
+                    "<info> Haplogroup Finder: Ian Logan's SNP to haplogroup tool.",
+                    "<info> mtDNA Mutation Computer Model: Ian Logan's mutation calculator.",
+                    "<info> FTDNA's discover tool for browsing their new mtDNA Haplotree. (Released 2025-02-25)",
+                    "<info> FTDNA's mtDNA Haplotree: Mostly based on PhyloTree Build 17 but with the addition of haplogroup L7.",
+                    "<info> FTDNA's Mitotree: \"Classic\" view of FTDNA's mtDNA tree.",
+                    "<info> YFull's MTree: An mtDNA tree. Faster loading (simpler).",
+                    "<info> PhyloTreemt: A traditional mtDNA tree (last updated 2016-02-18).[19]",
+                    "<info> HIP Haplomap: Ancient uniparental map.",
+                    "<info> AH DNA: Nicky Rosenblatt's ancient uniparental map.[20]",
+                    "<info> Ancient DNA: An aDNA map made with Map Maker.",
+                    "<info> HRAS mtDNA: A heatmap generator.",
+                    "<info> AmtDB: An database of ancient mtDNA samples.[21]",
+                    "<info> All Ancient DNA Dataset: Carlos Quiles' uniparental database (with BAM).",
+                    "<info> GenBank mtDNA Sequence Checker: Ian Logan's GenBank based accession matching tool.",
+                    "<info> mitoYDNA: A uniparental database.",
+                    "<info> MITOMAP: An mtDNA genome database.[22]",
+                    "",
+                    "=== See also ===",
+                    "<info> Human Y-chromosome DNA haplogroups",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Rishishwar L, Jordan IK (2017). \"Implications of human evolution and admixture for mitochondrial replacement therapy\". BMC Genomics. 18 (1) 140. doi:10.1186/s12864-017-3539-3. PMC 5299762. PMID 28178941.",
+                    "<info> ^ Rishishwar, Lavanya; Jordan, I. King (December 2017). \"Implications of human evolution and admixture for mitochondrial replacement therapy\". BMC Genomics. 18 (1): 140. doi:10.1186/s12864-017-3539-3. ISSN 1471-2164. PMC 5299762. PMID 28178941.",
+                    "<info> ^ Sato, Miyuki; Sato, Ken (2011-11-25). \"Degradation of Paternal Mitochondria by Fertilization-Triggered Autophagy in C. elegans Embryos\". Science. 334 (6059): 1141–1144. Bibcode:2011Sci...334.1141S. doi:10.1126/science.1210333. PMID 21998252.",
+                    "<info> ^ Loogvali, Eva-Liis; Kivisild, Toomas; Margus, Tõnu; Villems, Richard (2009), O'Rourke, Dennis (ed.), \"Explaining the Imperfection of the Molecular Clock of Hominid Mitochondria\", PLOS ONE, 4 (12) e8260, Bibcode:2009PLoSO...4.8260L, doi:10.1371/journal.pone.0008260, PMC 2794369, PMID 20041137",
+                    "<info> ^ Monson, Kelsey R.; Ferguson, Robert; Handzlik, Joanna E.; Morales, Leah; Xiong, Jiahan; Chat, Vylyny; Dagayev, Sasha; Khodadadi-Jamayran, Alireza; Simpson, Danny; Kazlow, Esther; Bunis, Anabelle; Sreenivasaiah, Chaitra; Ibrahim, Milad; Voloshyna, Iryna; Ouwerkerk, Wouter (July 2025). \"Inherited mitochondrial genetics as a predictor of immune checkpoint inhibition efficacy in melanoma\". Nature Medicine. 31 (7): 2385–2396. doi:10.1038/s41591-025-03699-3. ISSN 1546-170X. PMC 12283385. PMID 40473950.",
+                    "<info> ^ Kivisild T (2015). \"Maternal ancestry and population history from whole mitochondrial genomes\". Investig Genet. 6: 3. doi:10.1186/s13323-015-0022-2. PMC 4367903. PMID 25798216.",
+                    "<info> ^ a b van Oven M, Kayser M (February 2009). \"Updated comprehensive phylogenetic tree of global human mitochondrial DNA variation\". Human Mutation. 30 (2): E386–94. doi:10.1002/humu.20921. PMID 18853457. S2CID 27566749.",
+                    "<info> ^ Maier P, Runfeldt G, Estes R, Vilar M (2022). \"African mitochondrial haplogroup L7: a 100,000-year-old maternal human lineage discovered through reassessment and new sequencing\". Nature. 12 (1) 10747. Bibcode:2022NatSR..1210747M. doi:10.1038/s41598-022-13856-0. PMC 9232647. PMID 35750688. S2CID 250021505.",
+                    "<info> ^ Metspalu, Mait; Kivisild, Toomas; Metspalu, Ene; Parik, Jüri; Hudjashov, Georgi; Kaldma, Katrin; Serk, Piia; Karmin, Monika; Behar, Doron M; Gilbert, M Thomas P; Endicott, Phillip; Mastana, Sarabjit; Papiha, Surinder S; Skorecki, Karl; Torroni, Antonio; Villems, Richard (31 August 2004). \"Most of the extant mtDNA boundaries in South and Southwest Asia were likely shaped during the initial settlement of Eurasia by anatomically modern humans\". BMC Genetics. 5 (1) 26. Bibcode:2004BMCGe...5...26M. doi:10.1186/1471-2156-5-26. PMC 516768. PMID 15339343.",
+                    "<info> ^ Cerezo, María; Achilli, Alessandro; Olivieri, Anna; Perego, Ugo A.; Gómez-Carballa, Alberto; Brisighelli, Francesca; Lancioni, Hovirag; Woodward, Scott R.; López-Soto, Manuel; Carracedo, Ángel; Capelli, Cristian; Torroni, Antonio; Salas, Antonio (May 2012). \"Reconstructing ancient mitochondrial DNA links between Africa and Europe\". Genome Research. 22 (5): 821–826. doi:10.1101/gr.134452.111. ISSN 1088-9051. PMC 3337428. PMID 22454235.",
+                    "<info> ^ Hernández, Candela L.; Dugoujon, Jean M.; Novelletto, Andrea; Rodríguez, Juan N.; Cuesta, Pedro; Calderón, Rosario (2017-05-19). \"The distribution of mitochondrial DNA haplogroup H in southern Iberia indicates ancient human genetic exchanges along the western edge of the Mediterranean\". BMC Genetics. 18 (1): 46. doi:10.1186/s12863-017-0514-6. ISSN 1471-2156. PMC 5437654. PMID 28525980.",
+                    "<info> ^ \"Correcting for Purifying Selection: An Improved Human Mitochondrial Molecular Clock Supplementary\" (PDF). Cell: 82–83 [89]. 2009. Archived from the original (PDF) on 2009-12-29.",
+                    "<info> ^ Villems, Richard; Usanga, Esien; Mikerezi, Ilia; Gölge, Mukaddes; Claustres, Mireille; Michalodimitrakis, Emmanuel N.; Pappa, Kalliopi I.; Anagnou, Nicholas P.; Chaventré, André; Moisan, Jean-Paul; Richard, Christelle; Grechanina, Elena; Balanovska, Elena V.; Rudan, Pavao; Puzyrev, Valery; Stepanov, Vadim; Khusnutdinova, Elsa K.; Gusar, Vladislava; Balanovsky, Oleg P.; Peričić, Marijana; Barać, Lovorka; Golubenko, Maria; Lunkina, Arina; Laos, Sirle; Pennarun, Erwan; Parik, Jüri; Tolk, Helle-Viivi; Reidla, Maere; Tambets, Kristiina; Metspalu, Ene; Kivisild, Toomas; Derenko, Miroslava V.; Malyarchuk, Boris A.; Roostalu, Urmas; Loogväli, Eva-Liis (November 1, 2004). \"Disuniting Uniformity: A Pied Cladistic Canvas of mtDNA Haplogroup H in Eurasia\". Molecular Biology and Evolution. 21 (11): 2012–2021. doi:10.1093/molbev/msh209. PMID 15254257 – via academic.oup.com.",
+                    "<info> ^ Capri, Miriam; Castellani, Gastone; Franceschi, Claudio; Lomartire, Laura; Sevini, Federica; Vianello, Dario (2013-06-12). \"HAPLOFIND: a new method for high-throughput mtDNA haplogroup assignment\". Human Mutation. 34 (9): 1189–1194. doi:10.1002/humu.22356. eISSN 1098-1004. PMID 23696374.",
+                    "<info> ^ Binna, Robert; Kloss-Brandstätter, Anita; Kronenberg, Florian; Pacher, Dominic; Schönherr, Sebastian; Specht, Günther; Weissensteiner, Hansi (2010-10-19). \"HaploGrep: a fast and reliable algorithm for automatic classification of mitochondrial DNA haplogroups\". Human Mutation: Variation, Informatics, and Disease. 32 (1): 25–32. doi:10.1002/humu.21382. eISSN 1098-1004. PMID 20960467.",
+                    "<info> ^ Kronenberg, Florian; Forer, Lukas; Schönherr, Sebastian; Weissensteiner, Hansi (2023-04-23). \"Haplogrep 3 - an interactive haplogroup classification and analysis platform\". Nucleic Acids Research. 51 (1): 263–268. doi:10.1093/nar/gkad284. eISSN 1362-4962. PMC 10320078. PMID 37070190.",
+                    "<info> ^ García-Olivares, Victor; et al. (2021-10-15) [received 2021-08-04]. \"A benchmarking of human mitochondrial DNA haplogroup classifiers from whole-genome and whole-exome sequence data\". Scientific Reports. 11 (20510) 20510. Bibcode:2021NatSR..1120510G. doi:10.1038/s41598-021-99895-5. eISSN 2045-2322. PMC 8519921. PMID 34654896.",
+                    "<info> ^ Kim, Dong-han; Kim, Kijeong; Kim, Kyung-yong; Kim, Yoonyeong; Kwon, Chulhwan (2020-04-23). \"Haplotracker: a web application for simple and accurate mitochondrial haplogrouping using short DNA fragments\". bioRxiv 10.1101/2020.04.23.057646v1.",
+                    "<info> ^ Kayser, Manfred; van Oven, Mannis (2008-10-13). \"Updated comprehensive phylogenetic tree of global human mitochondrial DNA variation\". Human Mutation. 30 (2): 386–394. doi:10.1002/humu.20921. eISSN 1098-1004. PMID 18853457.",
+                    "<info> ^ Various (2017-05-30). \"Rosenblatt's ancient DNA map\". Anthrogenica.",
+                    "<info> ^ Chyleński, Maciej; Ehler, Edvard; Juras, Anna; Moravčík, Ondřej; Novotný, Jiří; Pačes, Jan (2018-09-24). \"AmtDB: a database of ancient human mitochondrial genomes\". Nucleic Acids Research. 47 (D1): 29–32. doi:10.1093/nar/gky843. eISSN 1362-4962. PMC 6324066. PMID 30247677.",
+                    "<info> ^ Brown, Michael D.; Kogelnik, Andreas M.; Lott, Marie T.; Navathe, Shamkant B.; Wallace, Douglas C. (1996-01-01). \"MITOMAP: A Human Mitochondrial Genome Database\". Nucleic Acids Research. 24 (1): 177–179. doi:10.1093/nar/24.1.177. eISSN 1362-4962. PMC 145607. PMID 8594574.",
+                    "",
+                    "=== External links ===",
+                    "<info> List of mtDNA haplogroup projects at ISOGG.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Mitochondria are the primary energy generator of the cell and have unique organelles that maintain their own DNA (mtDNA). In human genetics, human mitochondrial DNA haplogroups are collections of similar haplotypes defined by combinations of single nuclear polymorphism (SNPs) in mtDNA inherited from a common ancestor.[2] Mitochondrial DNA is passed down through cytoplasmic inheritance, where, upon fertilization, the paternal mitochondria are degraded, leaving only the maternal mitochondria regardless of the offspring’s sex.[3] This characteristic of mitochondrial inheritance allows geneticists to track the movement and divergence of different haplogroups from female lineages. Haplogroups are used to represent the major branch points on the mitochondrial phylogenetic tree. Understanding this mechanism of inheritance has helped population geneticists trace the matrilineal inheritance of modern humans back to human origins in Africa and the subsequent spread around the globe.",
+                            "The letter names of the haplogroups (not just mitochondrial DNA haplogroups) run from A to Z. As haplogroups were named in the order of their discovery, the alphabetical ordering does not have any meaning in terms of actual genetic relationships.",
+                            "The hypothetical woman at the root of all these groups (meaning just the mitochondrial DNA haplogroups) is the matrilineal most recent common ancestor (MRCA) for all currently living humans. She is commonly called Mitochondrial Eve.",
+                            "The rate at which mitochondrial DNA mutates is known as the mitochondrial molecular clock. It is an area of ongoing research with one study reporting one mutation per 8000 years.[4]",
+                            "Recent research has shown that mitochondrial DNA haplogroups can influence risk for various diseases and cancers.[5]"
+                        ]
+                    },
+                    "Phylogeny": {
+                        "content": [
+                            "This phylogenetic tree is based Van Oven (2009).[7] In June 2022, an alternative phylogeny for haplogroup L was suggested[8]"
+                        ]
+                    },
+                    "Major mtDNA haplogroups": {
+                        "content": [
+                            "Macro-haplogroup L is the most basal of human mtDNA haplogroups, from which all other haplogroups descend (specifically, from haplogroup L3). These haplogroups represent the majority of the typical sub-Saharan mtDNA variability. Approximately 65% of the European L lineages mostly likely arrived during the Arab conquest of Iberian Peninsula and Sicily and during the period of Atlantic slave trade. The remaining 35% of L mtDNAs form European-specific subclades, revealing that the gene flows from sub-Saharan Africa toward Europe from 11,000 years ago.[10]",
+                            "Macro-haplogroup H is found mostly in European countries and forms ~40-45% of the European mitochondrial gene pool. Its focus has been an important aspect of human genetic diversity studies for more than a decade. It is estimated that the coalescence time for Hg H is ~21,000 years ago, which led to the proposal that the clade was involved in a post-glacial population re-expansion from southwestern Europe to the rest of the continent. Most of the population along the westernmost Mediterranean coasts, separated by a narrow body of water, shows the highest frequencies of mitochondrial haplogroup H. The most basal nodes of the most frequent H sub-haplogroup, H1 and H3, are found among many western Europeans origins (primarily in the Iberian and Maghrebian regions).",
+                            "A 2017 study published in BMC Genomic Data analyzed mitochondrial DNA haplogroup H in 750 individuals from southern Spain, finding 337 carriers primarily from the Andalusian provinces of Huelva and Granada.[11] The research revealed that both populations exhibited a predominantly western European genetic profile, though Granada showed additional affinities with eastern Mediterranean populations, suggesting historical gene flow. Sub-haplogroups H1 and H3 were the most common, with molecular dating indicating origins around 16,000 and 13,000 years ago, respectively, and shared ancestry between Iberian and North African groups. Significant haplotype sharing between Andalusia and Morocco pointed to the Strait of Gibraltar as a corridor for maternal gene exchange rather than a genetic barrier. Overall, haplogroup H frequencies of about 39% in Huelva and 48% in Granada highlighted local diversity shaped by post-glacial expansions and later trans-Mediterranean interactions.",
+                            "Macro-haplogroup M is found mostly in Asia and the Americas. Its descendants are haplogroup M, haplogroup C, haplogroup Z, haplogroup D, haplogroup E, haplogroup G and haplogroup Q.",
+                            "Macro-haplogroup N is found mostly in Australia, the Americas and parts of Asia. Its descendants are haplogroup N, haplogroup O, haplogroup A, haplogroup S, haplogroup I, haplogroup W, haplogroup X and haplogroup Y, as well as macro-haplogroup R.",
+                            "Macro-haplogroup R is found mostly in Europe, Northern Africa, the Pacific and parts of Asia and the Americas. Its descendants are haplogroup R, haplogroup B, haplogroup F, haplogroup H, haplogroup V, haplogroup J, haplogroup T, haplogroup U and haplogroup K"
+                        ]
+                    },
+                    "Geographical distribution": {
+                        "content": [
+                            "A 2004 paper suggested that the haplogroups most common in modern West Asian, North African and European populations were:\nH, J, K, N1, T, U4, U5, V, X and W.[13]",
+                            "African haplogroups: L0, L1, L2, L3, L4, L5, L6, T, U5a",
+                            "Australian and Oceanian haplogroups: M42a, M42c, M14, M15, Q, S, O, N, P. (Refs 1, 2, 3, 4, 5, 6)",
+                            "Asian and native American haplogroups: F, C, W, M, D, N, K, U, T, A, B, C, Z, U many number variants to each section"
+                        ]
+                    },
+                    "Research software": {
+                        "content": [
+                            "<info> mtHap: James Lick's tool (multiple input formats).",
+                            "<info> YSEQ mt Clade Finder: FASTA based haplogroup tool. Replaced HAPLOFIND.[14]",
+                            "<info> HaploGrep: VCF based tool.[15][16]",
+                            "<info> Haplocheck: Mitoverse's tool for both WGS and WES.[17]",
+                            "<info> Haplotracker: A short fragment tool.[18]",
+                            "<info> Haplogroup Finder: Ian Logan's SNP to haplogroup tool.",
+                            "<info> mtDNA Mutation Computer Model: Ian Logan's mutation calculator.",
+                            "<info> FTDNA's discover tool for browsing their new mtDNA Haplotree. (Released 2025-02-25)",
+                            "<info> FTDNA's mtDNA Haplotree: Mostly based on PhyloTree Build 17 but with the addition of haplogroup L7.",
+                            "<info> FTDNA's Mitotree: \"Classic\" view of FTDNA's mtDNA tree.",
+                            "<info> YFull's MTree: An mtDNA tree. Faster loading (simpler).",
+                            "<info> PhyloTreemt: A traditional mtDNA tree (last updated 2016-02-18).[19]",
+                            "<info> HIP Haplomap: Ancient uniparental map.",
+                            "<info> AH DNA: Nicky Rosenblatt's ancient uniparental map.[20]",
+                            "<info> Ancient DNA: An aDNA map made with Map Maker.",
+                            "<info> HRAS mtDNA: A heatmap generator.",
+                            "<info> AmtDB: An database of ancient mtDNA samples.[21]",
+                            "<info> All Ancient DNA Dataset: Carlos Quiles' uniparental database (with BAM).",
+                            "<info> GenBank mtDNA Sequence Checker: Ian Logan's GenBank based accession matching tool.",
+                            "<info> mitoYDNA: A uniparental database.",
+                            "<info> MITOMAP: An mtDNA genome database.[22]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Human Y-chromosome DNA haplogroups"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Rishishwar L, Jordan IK (2017). \"Implications of human evolution and admixture for mitochondrial replacement therapy\". BMC Genomics. 18 (1) 140. doi:10.1186/s12864-017-3539-3. PMC 5299762. PMID 28178941.",
+                            "<info> ^ Rishishwar, Lavanya; Jordan, I. King (December 2017). \"Implications of human evolution and admixture for mitochondrial replacement therapy\". BMC Genomics. 18 (1): 140. doi:10.1186/s12864-017-3539-3. ISSN 1471-2164. PMC 5299762. PMID 28178941.",
+                            "<info> ^ Sato, Miyuki; Sato, Ken (2011-11-25). \"Degradation of Paternal Mitochondria by Fertilization-Triggered Autophagy in C. elegans Embryos\". Science. 334 (6059): 1141–1144. Bibcode:2011Sci...334.1141S. doi:10.1126/science.1210333. PMID 21998252.",
+                            "<info> ^ Loogvali, Eva-Liis; Kivisild, Toomas; Margus, Tõnu; Villems, Richard (2009), O'Rourke, Dennis (ed.), \"Explaining the Imperfection of the Molecular Clock of Hominid Mitochondria\", PLOS ONE, 4 (12) e8260, Bibcode:2009PLoSO...4.8260L, doi:10.1371/journal.pone.0008260, PMC 2794369, PMID 20041137",
+                            "<info> ^ Monson, Kelsey R.; Ferguson, Robert; Handzlik, Joanna E.; Morales, Leah; Xiong, Jiahan; Chat, Vylyny; Dagayev, Sasha; Khodadadi-Jamayran, Alireza; Simpson, Danny; Kazlow, Esther; Bunis, Anabelle; Sreenivasaiah, Chaitra; Ibrahim, Milad; Voloshyna, Iryna; Ouwerkerk, Wouter (July 2025). \"Inherited mitochondrial genetics as a predictor of immune checkpoint inhibition efficacy in melanoma\". Nature Medicine. 31 (7): 2385–2396. doi:10.1038/s41591-025-03699-3. ISSN 1546-170X. PMC 12283385. PMID 40473950.",
+                            "<info> ^ Kivisild T (2015). \"Maternal ancestry and population history from whole mitochondrial genomes\". Investig Genet. 6: 3. doi:10.1186/s13323-015-0022-2. PMC 4367903. PMID 25798216.",
+                            "<info> ^ a b van Oven M, Kayser M (February 2009). \"Updated comprehensive phylogenetic tree of global human mitochondrial DNA variation\". Human Mutation. 30 (2): E386–94. doi:10.1002/humu.20921. PMID 18853457. S2CID 27566749.",
+                            "<info> ^ Maier P, Runfeldt G, Estes R, Vilar M (2022). \"African mitochondrial haplogroup L7: a 100,000-year-old maternal human lineage discovered through reassessment and new sequencing\". Nature. 12 (1) 10747. Bibcode:2022NatSR..1210747M. doi:10.1038/s41598-022-13856-0. PMC 9232647. PMID 35750688. S2CID 250021505.",
+                            "<info> ^ Metspalu, Mait; Kivisild, Toomas; Metspalu, Ene; Parik, Jüri; Hudjashov, Georgi; Kaldma, Katrin; Serk, Piia; Karmin, Monika; Behar, Doron M; Gilbert, M Thomas P; Endicott, Phillip; Mastana, Sarabjit; Papiha, Surinder S; Skorecki, Karl; Torroni, Antonio; Villems, Richard (31 August 2004). \"Most of the extant mtDNA boundaries in South and Southwest Asia were likely shaped during the initial settlement of Eurasia by anatomically modern humans\". BMC Genetics. 5 (1) 26. Bibcode:2004BMCGe...5...26M. doi:10.1186/1471-2156-5-26. PMC 516768. PMID 15339343.",
+                            "<info> ^ Cerezo, María; Achilli, Alessandro; Olivieri, Anna; Perego, Ugo A.; Gómez-Carballa, Alberto; Brisighelli, Francesca; Lancioni, Hovirag; Woodward, Scott R.; López-Soto, Manuel; Carracedo, Ángel; Capelli, Cristian; Torroni, Antonio; Salas, Antonio (May 2012). \"Reconstructing ancient mitochondrial DNA links between Africa and Europe\". Genome Research. 22 (5): 821–826. doi:10.1101/gr.134452.111. ISSN 1088-9051. PMC 3337428. PMID 22454235.",
+                            "<info> ^ Hernández, Candela L.; Dugoujon, Jean M.; Novelletto, Andrea; Rodríguez, Juan N.; Cuesta, Pedro; Calderón, Rosario (2017-05-19). \"The distribution of mitochondrial DNA haplogroup H in southern Iberia indicates ancient human genetic exchanges along the western edge of the Mediterranean\". BMC Genetics. 18 (1): 46. doi:10.1186/s12863-017-0514-6. ISSN 1471-2156. PMC 5437654. PMID 28525980.",
+                            "<info> ^ \"Correcting for Purifying Selection: An Improved Human Mitochondrial Molecular Clock Supplementary\" (PDF). Cell: 82–83 [89]. 2009. Archived from the original (PDF) on 2009-12-29.",
+                            "<info> ^ Villems, Richard; Usanga, Esien; Mikerezi, Ilia; Gölge, Mukaddes; Claustres, Mireille; Michalodimitrakis, Emmanuel N.; Pappa, Kalliopi I.; Anagnou, Nicholas P.; Chaventré, André; Moisan, Jean-Paul; Richard, Christelle; Grechanina, Elena; Balanovska, Elena V.; Rudan, Pavao; Puzyrev, Valery; Stepanov, Vadim; Khusnutdinova, Elsa K.; Gusar, Vladislava; Balanovsky, Oleg P.; Peričić, Marijana; Barać, Lovorka; Golubenko, Maria; Lunkina, Arina; Laos, Sirle; Pennarun, Erwan; Parik, Jüri; Tolk, Helle-Viivi; Reidla, Maere; Tambets, Kristiina; Metspalu, Ene; Kivisild, Toomas; Derenko, Miroslava V.; Malyarchuk, Boris A.; Roostalu, Urmas; Loogväli, Eva-Liis (November 1, 2004). \"Disuniting Uniformity: A Pied Cladistic Canvas of mtDNA Haplogroup H in Eurasia\". Molecular Biology and Evolution. 21 (11): 2012–2021. doi:10.1093/molbev/msh209. PMID 15254257 – via academic.oup.com.",
+                            "<info> ^ Capri, Miriam; Castellani, Gastone; Franceschi, Claudio; Lomartire, Laura; Sevini, Federica; Vianello, Dario (2013-06-12). \"HAPLOFIND: a new method for high-throughput mtDNA haplogroup assignment\". Human Mutation. 34 (9): 1189–1194. doi:10.1002/humu.22356. eISSN 1098-1004. PMID 23696374.",
+                            "<info> ^ Binna, Robert; Kloss-Brandstätter, Anita; Kronenberg, Florian; Pacher, Dominic; Schönherr, Sebastian; Specht, Günther; Weissensteiner, Hansi (2010-10-19). \"HaploGrep: a fast and reliable algorithm for automatic classification of mitochondrial DNA haplogroups\". Human Mutation: Variation, Informatics, and Disease. 32 (1): 25–32. doi:10.1002/humu.21382. eISSN 1098-1004. PMID 20960467.",
+                            "<info> ^ Kronenberg, Florian; Forer, Lukas; Schönherr, Sebastian; Weissensteiner, Hansi (2023-04-23). \"Haplogrep 3 - an interactive haplogroup classification and analysis platform\". Nucleic Acids Research. 51 (1): 263–268. doi:10.1093/nar/gkad284. eISSN 1362-4962. PMC 10320078. PMID 37070190.",
+                            "<info> ^ García-Olivares, Victor; et al. (2021-10-15) [received 2021-08-04]. \"A benchmarking of human mitochondrial DNA haplogroup classifiers from whole-genome and whole-exome sequence data\". Scientific Reports. 11 (20510) 20510. Bibcode:2021NatSR..1120510G. doi:10.1038/s41598-021-99895-5. eISSN 2045-2322. PMC 8519921. PMID 34654896.",
+                            "<info> ^ Kim, Dong-han; Kim, Kijeong; Kim, Kyung-yong; Kim, Yoonyeong; Kwon, Chulhwan (2020-04-23). \"Haplotracker: a web application for simple and accurate mitochondrial haplogrouping using short DNA fragments\". bioRxiv 10.1101/2020.04.23.057646v1.",
+                            "<info> ^ Kayser, Manfred; van Oven, Mannis (2008-10-13). \"Updated comprehensive phylogenetic tree of global human mitochondrial DNA variation\". Human Mutation. 30 (2): 386–394. doi:10.1002/humu.20921. eISSN 1098-1004. PMID 18853457.",
+                            "<info> ^ Various (2017-05-30). \"Rosenblatt's ancient DNA map\". Anthrogenica.",
+                            "<info> ^ Chyleński, Maciej; Ehler, Edvard; Juras, Anna; Moravčík, Ondřej; Novotný, Jiří; Pačes, Jan (2018-09-24). \"AmtDB: a database of ancient human mitochondrial genomes\". Nucleic Acids Research. 47 (D1): 29–32. doi:10.1093/nar/gky843. eISSN 1362-4962. PMC 6324066. PMID 30247677.",
+                            "<info> ^ Brown, Michael D.; Kogelnik, Andreas M.; Lott, Marie T.; Navathe, Shamkant B.; Wallace, Douglas C. (1996-01-01). \"MITOMAP: A Human Mitochondrial Genome Database\". Nucleic Acids Research. 24 (1): 177–179. doi:10.1093/nar/24.1.177. eISSN 1362-4962. PMC 145607. PMID 8594574."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> List of mtDNA haplogroup projects at ISOGG."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

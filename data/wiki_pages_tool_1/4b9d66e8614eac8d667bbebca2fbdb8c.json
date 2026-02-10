@@ -1,0 +1,43 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/aldosterone-to-renin_ratio": {
+                "title": "Aldosterone-to-renin ratio",
+                "url": "https://en.wikipedia.org/wiki/aldosterone-to-renin_ratio",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Aldosterone-to-renin ratio (ARR) is the mass concentration of aldosterone divided by the plasma renin activity or by serum renin concentration in blood. The aldosterone/renin ratio is recommended as a screening tool for primary hyperaldosteronism.[1]",
+                    "",
+                    "=== Interpretation ===",
+                    "The cutoff normal individuals from those with primary hyperaldosteronism is significantly affected by the conditions of testing, such as posture and time of day. On average, an ARR cutoff of 23.6 ng/dL per ng/(mL·h), expressed in alternative units as 651 pmol/L per μg/(L·h), has been estimated to have a sensitivity of 97% and specificity of 94%.[2] An ARR value in an individual that is higher than the cutoff indicates primary hyperaldosteronism.",
+                    "If the inverse ratio (i.e. renin-to-aldosterone) ratio is used, a value lower than the cutoff indicates primary hyperaldosteronism.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c Tiu, S. -C.; Choi, C. -H.; Shek, C. -C.; Ng, Y. -W.; Chan, F. K. W.; Ng, C. -M.; Kong, A. P. S. (2004). \"The Use of Aldosterone-Renin Ratio as a Diagnostic Test for Primary Hyperaldosteronism and Its Test Characteristics under Different Conditions of Blood Sampling\". Journal of Clinical Endocrinology & Metabolism. 90 (1): 72–78. doi:10.1210/jc.2004-1149. PMID 15483077. [1]",
+                    "<info> ^ a b Aldosterone-Renin Ratio in Primary Hyperaldosteronism by Allan S. Brett. Posted: 03/15/2005; Journal Watch. 2005;4(2)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Aldosterone-to-renin ratio (ARR) is the mass concentration of aldosterone divided by the plasma renin activity or by serum renin concentration in blood. The aldosterone/renin ratio is recommended as a screening tool for primary hyperaldosteronism.[1]"
+                        ]
+                    },
+                    "Interpretation": {
+                        "content": [
+                            "The cutoff normal individuals from those with primary hyperaldosteronism is significantly affected by the conditions of testing, such as posture and time of day. On average, an ARR cutoff of 23.6 ng/dL per ng/(mL·h), expressed in alternative units as 651 pmol/L per μg/(L·h), has been estimated to have a sensitivity of 97% and specificity of 94%.[2] An ARR value in an individual that is higher than the cutoff indicates primary hyperaldosteronism.",
+                            "If the inverse ratio (i.e. renin-to-aldosterone) ratio is used, a value lower than the cutoff indicates primary hyperaldosteronism."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c Tiu, S. -C.; Choi, C. -H.; Shek, C. -C.; Ng, Y. -W.; Chan, F. K. W.; Ng, C. -M.; Kong, A. P. S. (2004). \"The Use of Aldosterone-Renin Ratio as a Diagnostic Test for Primary Hyperaldosteronism and Its Test Characteristics under Different Conditions of Blood Sampling\". Journal of Clinical Endocrinology & Metabolism. 90 (1): 72–78. doi:10.1210/jc.2004-1149. PMID 15483077. [1]",
+                            "<info> ^ a b Aldosterone-Renin Ratio in Primary Hyperaldosteronism by Allan S. Brett. Posted: 03/15/2005; Journal Watch. 2005;4(2)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

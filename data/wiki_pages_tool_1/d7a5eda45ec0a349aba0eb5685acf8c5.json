@@ -1,0 +1,153 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/staphylococcal_infection": {
+                "title": "Staphylococcal infection",
+                "url": "https://en.wikipedia.org/wiki/staphylococcal_infection",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A staphylococcal infection or staph infection is an infection caused by members of the Staphylococcus genus of bacteria.",
+                    "These bacteria commonly inhabit the skin and nose where they are innocuous, but may enter the body through cuts or abrasions which may be nearly invisible.  Once inside the body, the bacteria may spread to a number of body systems and organs, including the heart, where the toxins produced by the bacteria may cause cardiac arrest.  Once the bacterium has been identified as the cause of the illness, treatment is often in the form of antibiotics and, where possible, drainage of the infected area.  However, many strains of this bacterium have become antibiotic resistant; for those with these kinds of infection, the body's own immune system is the only defense against the disease.  If that system is weakened or compromised, the disease may progress rapidly.[1]  Anyone can contract staph, but pregnant women, children, and people with chronic diseases or who are immuno-deficient are often more susceptible to contracting an infection.",
+                    "",
+                    "=== Types ===",
+                    "<info> Closed-space infections of the fingertips, known as paronychia.",
+                    "<info> Suspected involvement in atopic dermatitis (eczema), including related clinical trials.",
+                    "",
+                    "=== Coagulase-positive ===",
+                    "The main coagulase-positive staphylococcus is Staphylococcus aureus, although not all strains of Staphylococcus aureus are coagulase positive. These bacteria can survive on dry surfaces, increasing the chance of transmission. S. aureus is also implicated[6] in toxic shock syndrome; during the 1980s some tampons allowed the rapid growth of S. aureus, which released toxins that were absorbed into the bloodstream. Any S. aureus infection can cause the staphylococcal scalded skin syndrome, a cutaneous reaction to exotoxin absorbed into the bloodstream. It can also cause a type of septicaemia called pyaemia. The infection can be life-threatening. Problematically, methicillin-resistant Staphylococcus aureus (MRSA)  has become a major cause of hospital-acquired infections. MRSA has also been recognized with increasing frequency in community-acquired infections.[7] The symptoms of a staphylococcal infection include a collection of pus, such as a boil or furuncle, or abscess. The area is typically tender or painful and may be reddened or swollen.[8]",
+                    "",
+                    "=== Coagulase-negative ===",
+                    "<info> S. epidermidis, a coagulase-negative staphylococcus species, is a commensal of the skin, but can cause severe infections in immune-suppressed patients and those with central venous catheters.",
+                    "<info> S. saprophyticus, another coagulase-negative species that is part of the normal vaginal flora, is predominantly implicated in uncomplicated lower genitourinary tract infections in young sexually active women.[9]",
+                    "<info> Other staphylococcal species have been implicated in human infections, notably S. lugdunensis, S. schleiferi, and S. caprae.",
+                    "",
+                    "=== Causes ===",
+                    "Staph infections have a multitude of different causes, such as:",
+                    "<info> Open wounds – This is by far the biggest cause of staph infection. Any open wound, even ones as small as a paper cut, are vulnerable to being infected. Staph bacteria will enter the body through any open wound, so it is important to properly treat, disinfect, and bandage any wounds.",
+                    "<info> Contact with infected persons or surfaces – Staph infections are very contagious when in contact with a person that is already infected. A person with staph infection is contagious until the bacteria are completely out of their body, and any wounds from the infection are healed. It is common to see the spread of staph in contact sports; i.e. wrestling, through contact in locker rooms, or by sharing any equipment.",
+                    "<info> Weakened immune system – Anyone with a weakened immune system for any reason can be more easily affected by staph bacteria, because their bodies are unable to defend against infectious bacteria as well.",
+                    "<info> Unwashed linens – Staph bacteria are very resistant under harsh conditions, and they will cling to objects where they can create a niche. Unwashed bath towels, blanket, bed sheets, and clothes can create a great environment for these bacteria to grow. This is important to recognize, because every single day people use linens in their daily lives.",
+                    "<info> Infection after surgery – Hospitals are a very common place for staph bacteria to contaminate. This becomes problematic when people are in surgery, because in some cases staph can be introduced to a person's body when an incision is opened.",
+                    "<info> Invasive devices – Medical devices that have any connection to organs to the outside of the body are very problematic, because they allow an easy open pathway into the body. Examples of these devices are; catheters, dialysis tubing, feeding tubes, breathing tubes, etc.",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Staph infection is typically characterized by redness, pus, swelling, and tenderness in areas of the infection. But, each type of skin infection caused by staph bacteria is different.",
+                    "A few common skin infections caused by staph bacteria are:",
+                    "<info> Boils – Boils are the most common type of staph infection, they are pockets of white pus that start where a hair follicle or oil gland is. The boil is tender and red where the infection is located on the skin.",
+                    "<info> Impetigo – Impetigo is most prominent among children, and is usually located around their mouth, nose, hands, and feet. It shows up like a rash of painful blisters, will eventually produce pus that is yellowish in color.",
+                    "<info> Cellulitis – Cellulitis is also rash-like; the skin that is infected will be red, swollen, and usually warm to the touch. Cellulitis commonly infects the lower legs, but can also, less commonly, affect the face and arms.",
+                    "<info> Staphylococcus scalded skin syndrome – Staphylococcus scalded skin syndrome is caused by toxins produced when a staph infection gets too severe. It is characterized by a fever, rash, and blisters.",
+                    "<info> Methicillin-resistant Staphylococcus aureus (MRSA) – MRSA is one of the most common antibiotic-resistant strains of staph bacteria. It is more difficult to treat than other staph infections. MRSA causes rashes, boils, sores, and other abscesses.",
+                    "",
+                    "=== Bacterial identification ===",
+                    "In the microbiology lab, Staphylococcus is mainly suspected when seeing Gram-positive cocci in clusters.",
+                    "",
+                    "=== Treatment ===",
+                    "Treatment for staph infection varies depending on the type and severity of infection. Common treatments are antibiotics, topical creams, and drainage/cleaning of infectious wounds.",
+                    "",
+                    "=== Etymology ===",
+                    "The generic name Staphylococcus is derived from the Greek word \"staphyle\", meaning bunch of grapes, and \"kokkos\", meaning granule. The bacteria, when seen under a microscope, appear like a branch of grapes or nuts.",
+                    "",
+                    "=== Epidemiology ===",
+                    "Staphylococcus bacteria is one of the leading community-acquired bacteria. According to the CDC,[10] after a push from hospitals to better prevent staph infections, the percentage of people affected has dropped dramatically. However, staph infections are still prominent and a cause for concern among healthcare professionals, especially new antibiotic-resistant strains. In the U.S., the incidence of staph infection is around 38.2 to 45.7 per 100,000 person-years, whereas other First World countries have an average incidence rate of 10 to 30 per 100,000 person-years.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Staph infections\". Mayo Clinic.",
+                    "<info> ^ Kurono, Y.; Tomonaga, K.; Mogi, G. (1988-11-01). \"Staphylococcus epidermidis and Staphylococcus aureus in otitis media with effusion\". Archives of Otolaryngology–Head & Neck Surgery. 114 (11): 1262–1265. doi:10.1001/archotol.1988.01860230056023. ISSN 0886-4470. PMID 3262358.",
+                    "<info> ^ Pastacaldi, C.; Lewis, P.; Howarth, P. (2011-04-01). \"Staphylococci and staphylococcal superantigens in asthma and rhinitis: a systematic review and meta-analysis\". Allergy. 66 (4): 549–555. doi:10.1111/j.1398-9995.2010.02502.x. ISSN 1398-9995. PMID 21087214. S2CID 30042019.",
+                    "<info> ^ Payne, Spencer C.; Benninger, Michael S. (2007-11-15). \"Staphylococcus aureus Is a Major Pathogen in Acute Bacterial Rhinosinusitis: A Meta-Analysis\". Clinical Infectious Diseases. 45 (10): e121–e127. doi:10.1086/522763. ISSN 1058-4838. PMID 17968816.",
+                    "<info> ^ Fisher, Bruce; Harvey, Richard P.; Champe, Pamela C. (2007). Lippincott's Illustrated Reviews: Microbiology. Hagerstown, Maryland: Lippincott Williams & Wilkins. p. 349. ISBN 978-0-7817-8215-9.",
+                    "<info> ^ \"Staphylococcal Infections\". MedlinePlus. US National Institutes of Health.",
+                    "<info> ^ Sahebnasagh R, Saderi H, Owlia P. Detection of methicillin-resistant Staphylococcus aureus strains from clinical samples in Tehran by detection of the mecA and nuc genes. The First Iranian International Congress of Medical Bacteriology; 4–7 September; Tabriz, Iran. 2011. 195 pp.",
+                    "<info> ^ \"Staph Infection\". MedicineNet. WebMD.",
+                    "<info> ^ Becker K, Heilmann C, Peters G (October 2014). \"Coagulase-negative staphylococci\". Clin. Microbiol. Rev. 27 (4): 870–926. doi:10.1128/CMR.00109-13. PMC 4187637. PMID 25278577.",
+                    "<info> ^ \"Centers for Disease Control and Prevention (CDC)\". infectioncycle.com. April 2023. Archived from the original on 2023-04-14.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A staphylococcal infection or staph infection is an infection caused by members of the Staphylococcus genus of bacteria.",
+                            "These bacteria commonly inhabit the skin and nose where they are innocuous, but may enter the body through cuts or abrasions which may be nearly invisible.  Once inside the body, the bacteria may spread to a number of body systems and organs, including the heart, where the toxins produced by the bacteria may cause cardiac arrest.  Once the bacterium has been identified as the cause of the illness, treatment is often in the form of antibiotics and, where possible, drainage of the infected area.  However, many strains of this bacterium have become antibiotic resistant; for those with these kinds of infection, the body's own immune system is the only defense against the disease.  If that system is weakened or compromised, the disease may progress rapidly.[1]  Anyone can contract staph, but pregnant women, children, and people with chronic diseases or who are immuno-deficient are often more susceptible to contracting an infection."
+                        ]
+                    },
+                    "Types": {
+                        "content": [
+                            "<info> Closed-space infections of the fingertips, known as paronychia.",
+                            "<info> Suspected involvement in atopic dermatitis (eczema), including related clinical trials."
+                        ]
+                    },
+                    "Coagulase-positive": {
+                        "content": [
+                            "The main coagulase-positive staphylococcus is Staphylococcus aureus, although not all strains of Staphylococcus aureus are coagulase positive. These bacteria can survive on dry surfaces, increasing the chance of transmission. S. aureus is also implicated[6] in toxic shock syndrome; during the 1980s some tampons allowed the rapid growth of S. aureus, which released toxins that were absorbed into the bloodstream. Any S. aureus infection can cause the staphylococcal scalded skin syndrome, a cutaneous reaction to exotoxin absorbed into the bloodstream. It can also cause a type of septicaemia called pyaemia. The infection can be life-threatening. Problematically, methicillin-resistant Staphylococcus aureus (MRSA)  has become a major cause of hospital-acquired infections. MRSA has also been recognized with increasing frequency in community-acquired infections.[7] The symptoms of a staphylococcal infection include a collection of pus, such as a boil or furuncle, or abscess. The area is typically tender or painful and may be reddened or swollen.[8]"
+                        ]
+                    },
+                    "Coagulase-negative": {
+                        "content": [
+                            "<info> S. epidermidis, a coagulase-negative staphylococcus species, is a commensal of the skin, but can cause severe infections in immune-suppressed patients and those with central venous catheters.",
+                            "<info> S. saprophyticus, another coagulase-negative species that is part of the normal vaginal flora, is predominantly implicated in uncomplicated lower genitourinary tract infections in young sexually active women.[9]",
+                            "<info> Other staphylococcal species have been implicated in human infections, notably S. lugdunensis, S. schleiferi, and S. caprae."
+                        ]
+                    },
+                    "Causes": {
+                        "content": [
+                            "Staph infections have a multitude of different causes, such as:",
+                            "<info> Open wounds – This is by far the biggest cause of staph infection. Any open wound, even ones as small as a paper cut, are vulnerable to being infected. Staph bacteria will enter the body through any open wound, so it is important to properly treat, disinfect, and bandage any wounds.",
+                            "<info> Contact with infected persons or surfaces – Staph infections are very contagious when in contact with a person that is already infected. A person with staph infection is contagious until the bacteria are completely out of their body, and any wounds from the infection are healed. It is common to see the spread of staph in contact sports; i.e. wrestling, through contact in locker rooms, or by sharing any equipment.",
+                            "<info> Weakened immune system – Anyone with a weakened immune system for any reason can be more easily affected by staph bacteria, because their bodies are unable to defend against infectious bacteria as well.",
+                            "<info> Unwashed linens – Staph bacteria are very resistant under harsh conditions, and they will cling to objects where they can create a niche. Unwashed bath towels, blanket, bed sheets, and clothes can create a great environment for these bacteria to grow. This is important to recognize, because every single day people use linens in their daily lives.",
+                            "<info> Infection after surgery – Hospitals are a very common place for staph bacteria to contaminate. This becomes problematic when people are in surgery, because in some cases staph can be introduced to a person's body when an incision is opened.",
+                            "<info> Invasive devices – Medical devices that have any connection to organs to the outside of the body are very problematic, because they allow an easy open pathway into the body. Examples of these devices are; catheters, dialysis tubing, feeding tubes, breathing tubes, etc."
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Staph infection is typically characterized by redness, pus, swelling, and tenderness in areas of the infection. But, each type of skin infection caused by staph bacteria is different.",
+                            "A few common skin infections caused by staph bacteria are:",
+                            "<info> Boils – Boils are the most common type of staph infection, they are pockets of white pus that start where a hair follicle or oil gland is. The boil is tender and red where the infection is located on the skin.",
+                            "<info> Impetigo – Impetigo is most prominent among children, and is usually located around their mouth, nose, hands, and feet. It shows up like a rash of painful blisters, will eventually produce pus that is yellowish in color.",
+                            "<info> Cellulitis – Cellulitis is also rash-like; the skin that is infected will be red, swollen, and usually warm to the touch. Cellulitis commonly infects the lower legs, but can also, less commonly, affect the face and arms.",
+                            "<info> Staphylococcus scalded skin syndrome – Staphylococcus scalded skin syndrome is caused by toxins produced when a staph infection gets too severe. It is characterized by a fever, rash, and blisters.",
+                            "<info> Methicillin-resistant Staphylococcus aureus (MRSA) – MRSA is one of the most common antibiotic-resistant strains of staph bacteria. It is more difficult to treat than other staph infections. MRSA causes rashes, boils, sores, and other abscesses."
+                        ]
+                    },
+                    "Bacterial identification": {
+                        "content": [
+                            "In the microbiology lab, Staphylococcus is mainly suspected when seeing Gram-positive cocci in clusters."
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Treatment for staph infection varies depending on the type and severity of infection. Common treatments are antibiotics, topical creams, and drainage/cleaning of infectious wounds."
+                        ]
+                    },
+                    "Etymology": {
+                        "content": [
+                            "The generic name Staphylococcus is derived from the Greek word \"staphyle\", meaning bunch of grapes, and \"kokkos\", meaning granule. The bacteria, when seen under a microscope, appear like a branch of grapes or nuts."
+                        ]
+                    },
+                    "Epidemiology": {
+                        "content": [
+                            "Staphylococcus bacteria is one of the leading community-acquired bacteria. According to the CDC,[10] after a push from hospitals to better prevent staph infections, the percentage of people affected has dropped dramatically. However, staph infections are still prominent and a cause for concern among healthcare professionals, especially new antibiotic-resistant strains. In the U.S., the incidence of staph infection is around 38.2 to 45.7 per 100,000 person-years, whereas other First World countries have an average incidence rate of 10 to 30 per 100,000 person-years."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Staph infections\". Mayo Clinic.",
+                            "<info> ^ Kurono, Y.; Tomonaga, K.; Mogi, G. (1988-11-01). \"Staphylococcus epidermidis and Staphylococcus aureus in otitis media with effusion\". Archives of Otolaryngology–Head & Neck Surgery. 114 (11): 1262–1265. doi:10.1001/archotol.1988.01860230056023. ISSN 0886-4470. PMID 3262358.",
+                            "<info> ^ Pastacaldi, C.; Lewis, P.; Howarth, P. (2011-04-01). \"Staphylococci and staphylococcal superantigens in asthma and rhinitis: a systematic review and meta-analysis\". Allergy. 66 (4): 549–555. doi:10.1111/j.1398-9995.2010.02502.x. ISSN 1398-9995. PMID 21087214. S2CID 30042019.",
+                            "<info> ^ Payne, Spencer C.; Benninger, Michael S. (2007-11-15). \"Staphylococcus aureus Is a Major Pathogen in Acute Bacterial Rhinosinusitis: A Meta-Analysis\". Clinical Infectious Diseases. 45 (10): e121–e127. doi:10.1086/522763. ISSN 1058-4838. PMID 17968816.",
+                            "<info> ^ Fisher, Bruce; Harvey, Richard P.; Champe, Pamela C. (2007). Lippincott's Illustrated Reviews: Microbiology. Hagerstown, Maryland: Lippincott Williams & Wilkins. p. 349. ISBN 978-0-7817-8215-9.",
+                            "<info> ^ \"Staphylococcal Infections\". MedlinePlus. US National Institutes of Health.",
+                            "<info> ^ Sahebnasagh R, Saderi H, Owlia P. Detection of methicillin-resistant Staphylococcus aureus strains from clinical samples in Tehran by detection of the mecA and nuc genes. The First Iranian International Congress of Medical Bacteriology; 4–7 September; Tabriz, Iran. 2011. 195 pp.",
+                            "<info> ^ \"Staph Infection\". MedicineNet. WebMD.",
+                            "<info> ^ Becker K, Heilmann C, Peters G (October 2014). \"Coagulase-negative staphylococci\". Clin. Microbiol. Rev. 27 (4): 870–926. doi:10.1128/CMR.00109-13. PMC 4187637. PMID 25278577.",
+                            "<info> ^ \"Centers for Disease Control and Prevention (CDC)\". infectioncycle.com. April 2023. Archived from the original on 2023-04-14."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

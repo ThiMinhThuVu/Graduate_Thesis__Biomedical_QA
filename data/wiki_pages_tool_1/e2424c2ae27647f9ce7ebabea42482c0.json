@@ -1,0 +1,61 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_ibuprofen_brand_names": {
+                "title": "List of ibuprofen brand names",
+                "url": "https://en.wikipedia.org/wiki/list_of_ibuprofen_brand_names",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Ibuprofen, an analgesic and non-steroidal anti-inflammatory drug (NSAID),[1] is sold under many brand names around the world. The most common are Brufen (its earliest registered trademark), Advil, Motrin, and Nurofen.[2][3][4][5][6]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d e f g h i j k l m \"British National Formulary (BNF)\". British Medical Association (BMA) and Royal Pharmaceutical Society. BMJ Group and Pharmaceutical Press.",
+                    "<info> ^ Halford, Gayle M.; Lordkipanidzé, Marie; Watson, Steve P. (2012). \"50th anniversary of the discovery of ibuprofen: an interview with Dr Stewart Adams\". Platelets. 23 (6): 415–22. doi:10.3109/09537104.2011.632032. PMID 22098129. S2CID 26344532.",
+                    "<info> ^ a b c d e f g h i j k l m n o p q r s t u v \"PubMed Health – Ibuprofen (oral route) - brand name(s)\". Micromedex Detailed Drug Information for the Consumer [Internet]. National Center for Biotechnology Information, U.S. National Library of Medicine. 1 July 2016. Archived from the original on 15 July 2013. Retrieved 17 August 2016.",
+                    "<info> ^ a b c \"Chemistry in your cupboard - Nurofen, Introduction\". RSC.org. Royal Society of Chemistry (RSC), Learning Science Ltd, Reckitt Benckiser and Presenting Science. Archived from the original on 27 August 2016. Retrieved 25 August 2016.",
+                    "<info> ^ Adams, SS (April 1992). \"The propionic acids: a personal perspective\". Journal of Clinical Pharmacology. 32 (4): 317–23. doi:10.1002/j.1552-4604.1992.tb03842.x. PMID 1569234. S2CID 22857259.",
+                    "<info> ^ Rainsford, KD (April 2003). \"Discovery, mechanisms of action and safety of ibuprofen\". International Journal of Clinical Practice. Supplement (135): 3–8. PMID 12723739.",
+                    "<info> ^ \"Brufen Retard – Summary of Product Characteristics\". electronic Medicines Compendium. 19 March 2009. Retrieved 14 June 2009.",
+                    "<info> ^ a b c d e f \"Legemiddelkapitler -> L17 Legemidler ved muskel- og skjelettsykdommer -> L17.1 Antiinflammatoriske midler -> L17.1.1 Ikke‑steroide antiinflammatoriske midler -> L17.1.1.5 Ibuprofen\". Norsk legemiddelhåndbok. 4 April 2011. Archived from the original on 4 November 2011. Retrieved 7 July 2011.",
+                    "<info> ^ \"Buplex Pain Relief-Ibuprofen Actavis\". Archived from the original on 18 February 2015. Retrieved 18 February 2015.",
+                    "<info> ^ \"Combiflam\". Drugs.com. Retrieved 11 September 2013.",
+                    "<info> ^ \"Stop before you pop\". The Times of India. 12 June 2012. Archived from the original on 30 March 2013. Retrieved 11 September 2013.",
+                    "<info> ^ \"Dalsy\". Drugs.com. Retrieved 18 October 2015.",
+                    "<info> ^ \"Easofen Information\". Retrieved 18 February 2015.",
+                    "<info> ^ Fenpaed oral liquid 20mg/mL is listed as being subsidised by Pharmac. \"Ibuprofen – Online Pharmaceutical Schedule\". Pharmaceutical Management Agency. December 2013. Retrieved 19 May 2015.",
+                    "<info> ^ \"Neo Rheumacyl: Solusi Pereda Nyeri Otot Dan Sendi\". Retrieved 6 November 2024.",
+                    "<info> ^ a b \"Chemistry in your cupboard - Nurofen, Nurofen Gel - a topical formulation\". RSC.org. Royal Society of Chemistry (RSC), Learning Science Ltd, Reckitt Benckiser and Presenting Science. Archived from the original on 27 August 2016. Retrieved 25 August 2016.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Ibuprofen, an analgesic and non-steroidal anti-inflammatory drug (NSAID),[1] is sold under many brand names around the world. The most common are Brufen (its earliest registered trademark), Advil, Motrin, and Nurofen.[2][3][4][5][6]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d e f g h i j k l m \"British National Formulary (BNF)\". British Medical Association (BMA) and Royal Pharmaceutical Society. BMJ Group and Pharmaceutical Press.",
+                            "<info> ^ Halford, Gayle M.; Lordkipanidzé, Marie; Watson, Steve P. (2012). \"50th anniversary of the discovery of ibuprofen: an interview with Dr Stewart Adams\". Platelets. 23 (6): 415–22. doi:10.3109/09537104.2011.632032. PMID 22098129. S2CID 26344532.",
+                            "<info> ^ a b c d e f g h i j k l m n o p q r s t u v \"PubMed Health – Ibuprofen (oral route) - brand name(s)\". Micromedex Detailed Drug Information for the Consumer [Internet]. National Center for Biotechnology Information, U.S. National Library of Medicine. 1 July 2016. Archived from the original on 15 July 2013. Retrieved 17 August 2016.",
+                            "<info> ^ a b c \"Chemistry in your cupboard - Nurofen, Introduction\". RSC.org. Royal Society of Chemistry (RSC), Learning Science Ltd, Reckitt Benckiser and Presenting Science. Archived from the original on 27 August 2016. Retrieved 25 August 2016.",
+                            "<info> ^ Adams, SS (April 1992). \"The propionic acids: a personal perspective\". Journal of Clinical Pharmacology. 32 (4): 317–23. doi:10.1002/j.1552-4604.1992.tb03842.x. PMID 1569234. S2CID 22857259.",
+                            "<info> ^ Rainsford, KD (April 2003). \"Discovery, mechanisms of action and safety of ibuprofen\". International Journal of Clinical Practice. Supplement (135): 3–8. PMID 12723739.",
+                            "<info> ^ \"Brufen Retard – Summary of Product Characteristics\". electronic Medicines Compendium. 19 March 2009. Retrieved 14 June 2009.",
+                            "<info> ^ a b c d e f \"Legemiddelkapitler -> L17 Legemidler ved muskel- og skjelettsykdommer -> L17.1 Antiinflammatoriske midler -> L17.1.1 Ikke‑steroide antiinflammatoriske midler -> L17.1.1.5 Ibuprofen\". Norsk legemiddelhåndbok. 4 April 2011. Archived from the original on 4 November 2011. Retrieved 7 July 2011.",
+                            "<info> ^ \"Buplex Pain Relief-Ibuprofen Actavis\". Archived from the original on 18 February 2015. Retrieved 18 February 2015.",
+                            "<info> ^ \"Combiflam\". Drugs.com. Retrieved 11 September 2013.",
+                            "<info> ^ \"Stop before you pop\". The Times of India. 12 June 2012. Archived from the original on 30 March 2013. Retrieved 11 September 2013.",
+                            "<info> ^ \"Dalsy\". Drugs.com. Retrieved 18 October 2015.",
+                            "<info> ^ \"Easofen Information\". Retrieved 18 February 2015.",
+                            "<info> ^ Fenpaed oral liquid 20mg/mL is listed as being subsidised by Pharmac. \"Ibuprofen – Online Pharmaceutical Schedule\". Pharmaceutical Management Agency. December 2013. Retrieved 19 May 2015.",
+                            "<info> ^ \"Neo Rheumacyl: Solusi Pereda Nyeri Otot Dan Sendi\". Retrieved 6 November 2024.",
+                            "<info> ^ a b \"Chemistry in your cupboard - Nurofen, Nurofen Gel - a topical formulation\". RSC.org. Royal Society of Chemistry (RSC), Learning Science Ltd, Reckitt Benckiser and Presenting Science. Archived from the original on 27 August 2016. Retrieved 25 August 2016."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

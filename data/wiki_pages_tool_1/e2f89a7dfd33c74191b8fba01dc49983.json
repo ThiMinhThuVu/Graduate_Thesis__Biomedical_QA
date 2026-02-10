@@ -1,0 +1,69 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/angioma": {
+                "title": "Angioma",
+                "url": "https://en.wikipedia.org/wiki/angioma",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Angiomas are benign tumors derived from cells of the vascular or lymphatic vessel walls (endothelium) or derived from cells of the tissues surrounding these vessels.[1][2]",
+                    "Angiomas are a frequent occurrence as patients age, but they might be an indicator of systemic problems such as liver disease. They are not commonly associated with cancer.",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Angiomas usually appear at or near the surface of the skin anywhere on the body, and may be considered bothersome depending on their location. However, they may be present as symptoms of another more serious disorder, such as cirrhosis.  When they are removed, it is generally for cosmetic reasons.",
+                    "",
+                    "=== Types ===",
+                    "<info> Hemangiomas\nCapillary: Cherry hemangioma, Infantile haemangioma\nCavernous\nPyogenic granuloma",
+                    "<info> Lymphangiomas\nCapillary (simple)\nCavernous (cystic)",
+                    "<info> Vascular ectasias\nNaevus flammeus\nTelangiectasia – spider, hereditary hemorrhagic",
+                    "<info> Reactive vascular proliferations\nBacillary angiomatosis",
+                    "<info> Capillary: Cherry hemangioma, Infantile haemangioma",
+                    "<info> Telangiectasia – spider, hereditary hemorrhagic",
+                    "",
+                    "=== See also ===",
+                    "<info> List of cutaneous conditions",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Robbins and Cotran, \"Pathologic Basis of Disease\", by Ninay Kumar, Abul K. Abbas, Nelson Fausto, 7th Edition, pages 545-547",
+                    "<info> ^ \"angioma\" at Dorland's Medical Dictionary",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Angiomas are benign tumors derived from cells of the vascular or lymphatic vessel walls (endothelium) or derived from cells of the tissues surrounding these vessels.[1][2]",
+                            "Angiomas are a frequent occurrence as patients age, but they might be an indicator of systemic problems such as liver disease. They are not commonly associated with cancer."
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Angiomas usually appear at or near the surface of the skin anywhere on the body, and may be considered bothersome depending on their location. However, they may be present as symptoms of another more serious disorder, such as cirrhosis.  When they are removed, it is generally for cosmetic reasons."
+                        ]
+                    },
+                    "Types": {
+                        "content": [
+                            "<info> Hemangiomas\nCapillary: Cherry hemangioma, Infantile haemangioma\nCavernous\nPyogenic granuloma",
+                            "<info> Lymphangiomas\nCapillary (simple)\nCavernous (cystic)",
+                            "<info> Vascular ectasias\nNaevus flammeus\nTelangiectasia – spider, hereditary hemorrhagic",
+                            "<info> Reactive vascular proliferations\nBacillary angiomatosis",
+                            "<info> Capillary: Cherry hemangioma, Infantile haemangioma",
+                            "<info> Telangiectasia – spider, hereditary hemorrhagic"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of cutaneous conditions"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Robbins and Cotran, \"Pathologic Basis of Disease\", by Ninay Kumar, Abul K. Abbas, Nelson Fausto, 7th Edition, pages 545-547",
+                            "<info> ^ \"angioma\" at Dorland's Medical Dictionary"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

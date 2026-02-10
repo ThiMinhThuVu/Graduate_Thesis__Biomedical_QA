@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/eukaryote": {
+                "title": "Eukaryote",
+                "url": "https://en.wikipedia.org/wiki/eukaryote",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/gonadotropin": {
+                "title": "Gonadotropin",
+                "url": "https://en.wikipedia.org/wiki/gonadotropin",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Gonadotropins are glycoprotein hormones secreted by gonadotropic cells of the anterior pituitary of vertebrates.[1][2][3] They are central to the complex endocrine system that regulates normal growth, sexual development, and reproductive function.[4] The hormone family includes the mammalian hormones follicle-stimulating hormone (FSH) and luteinizing hormone (LH), the placental/chorionic gonadotropins, human chorionic gonadotropin (hCG) and equine chorionic gonadotropin (eCG),[3] as well as at least two forms of fish gonadotropins. LH and FSH are secreted by the anterior pituitary gland, while hCG and eCG are secreted by the placenta in pregnant women and mares, respectively.[5] The gonadotropins act on the gonads, controlling gamete and sex hormone production.",
+                    "Gonadotropin is sometimes abbreviated Gn. The alternative spelling gonadotrophin which inaccurately implies a nourishing mechanism[6] is also used.",
+                    "There are various preparations of gonadotropins for therapeutic use, mainly as fertility medication. There are also fad diet or quack preparations, which are illegal in various countries.",
+                    "",
+                    "=== Natural types and subunit structure ===",
+                    "The two principal gonadotropins in vertebrates are luteinizing hormone (LH) and follicle-stimulating hormone (FSH), although primates produce a third gonadotropin called chorionic gonadotropin (CG). LH and FSH are heterodimers consisting of two peptide chains, an alpha chain and a beta chain. LH and FSH share nearly identical alpha chains (about 100 amino acids long), whereas the beta chain provides specificity for receptor interactions. These subunits are heavily modified by glycosylation.",
+                    "The alpha subunit is common to each protein dimer (well conserved within species, but differing between them),[4] and a unique beta subunit confers biological specificity.[7] The alpha chains are highly conserved proteins of about 100 amino acid residues which contain ten conserved cysteines all involved in disulfide bonds,[8] as shown in the following schematic representation.",
+                    "'C': conserved cysteine involved in a disulphide bond.",
+                    "Intracellular levels of free alpha subunits are greater than those of the mature glycoprotein, implying that hormone assembly is limited by the appearance of the specific beta subunits, and hence that synthesis of alpha and beta is independently regulated.[7]",
+                    "Another human gonadotropin is human chorionic gonadotropin (hCG), produced by the placenta during pregnancy.",
+                    "",
+                    "=== Mechanism ===",
+                    "Gonadotropin receptors are embedded in the surface of the target cell membranes and coupled to the G-protein system. Signals triggered by binding to the receptor are relayed within the cells by the cyclic AMP second messenger system.",
+                    "Gonadotropins are released under the control of gonadotropin-releasing hormone (GnRH) from the arcuate nucleus and preoptic area of the hypothalamus. The gonads — testes and ovaries — are the primary target organs for LH and FSH. The gonadotropins affect multiple cell types and elicit multiple responses from the target organs. As a simplified generalization, LH stimulates the Leydig cells of the testes and the theca cells of the ovaries to produce testosterone (and indirectly estradiol), whereas FSH stimulates the spermatogenic tissue of the testes and the granulosa cells of ovarian follicles, as well as stimulating production of estrogen by the ovaries.",
+                    "Although gonadotropins are secreted in a pulsatile manner (as a result of pulsatile GnRH release), unlike the case of GnRH and GnRH agonists, constant/non-pulsatile activation of the gonadotropin receptors by the gonadotropins does not produce functional inhibition. This can be seen during the first 7–10 weeks of pregnancy, where constantly high and progressively-increasing levels of hCG circulate and mediate production of estrogen and progesterone by the corpus luteum until the placenta takes over the production of these hormones.[9]",
+                    "",
+                    "=== Diseases ===",
+                    "Gonadotropin deficiency due to pituitary disease results in hypogonadism, which can lead to infertility. Treatment includes administered gonadotropins, which, therefore, work as fertility medication. Such can either be produced by extraction and purification from urine or be produced by recombinant DNA.",
+                    "Failure or loss of the gonads usually results in elevated levels of LH and FSH in the blood.[10][11]",
+                    "LH insensitivity, which results in Leydig cell hypoplasia in males, and FSH insensitivity, are conditions of insensitivity to LH and FSH, respectively, caused by loss-of-function mutations in their respective signaling receptors. Another closely related condition to these is GnRH insensitivity.",
+                    "",
+                    "=== Pharmaceutical preparations ===",
+                    "There are various preparations of gonadotropins for therapeutic use, mainly as fertility medication. For example, the so-called menotropins (also called human menopausal gonadotropins) consist of LH and FSH extracted from the urine of menopausal women.[12] There are also recombinant variants. Besides the aforementioned legitimate pharmaceutical drugs, there are fad diet or quack preparations, which are illegal in various countries.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Parhar, Ishwar S. (2002). Gonadotropin-releasing Hormone: Molecules and Receptors. Amsterdam: Elsevier. ISBN 0-444-50979-8.",
+                    "<info> ^ Pierce JG, Parsons TF (1981). \"Glycoprotein hormones: structure and function\". Annual Review of Biochemistry. 50: 465–95. doi:10.1146/annurev.bi.50.070181.002341. PMID 6267989.",
+                    "<info> ^ a b Stockell Hartree A, Renwick AG (November 1992). \"Molecular structures of glycoprotein hormones and functions of their carbohydrate components\". The Biochemical Journal. 287 ( Pt 3) (Pt 3): 665–79. doi:10.1042/bj2870665. PMC 1133060. PMID 1445230.",
+                    "<info> ^ a b Godine JE, Chin WW, Habener JF (July 1982). \"alpha Subunit of rat pituitary glycoprotein hormones. Primary structure of the precursor determined from the nucleotide sequence of cloned cDNAs\". The Journal of Biological Chemistry. 257 (14): 8368–71. doi:10.1016/S0021-9258(18)34340-0. PMID 6177696.",
+                    "<info> ^ Golos TG, Durning M, Fisher JM (June 1991). \"Molecular cloning of the rhesus glycoprotein hormone alpha-subunit gene\". DNA and Cell Biology. 10 (5): 367–80. doi:10.1089/dna.1991.10.367. PMID 1713773.",
+                    "<info> ^ Stewart J, Li CH (August 1962). \"On the use of -tropin or -trophin in connection with anterior pituitary hormones\". Science. 137 (3527): 336–7. Bibcode:1962Sci...137..336S. doi:10.1126/science.137.3527.336. PMID 13917136. S2CID 9747521.",
+                    "<info> ^ a b Goodwin RG, Moncman CL, Rottman FM, Nilson JH (October 1983). \"Characterization and nucleotide sequence of the gene for the common alpha subunit of the bovine pituitary glycoprotein hormones\". Nucleic Acids Research. 11 (19): 6873–82. doi:10.1093/nar/11.19.6873. PMC 326420. PMID 6314263.",
+                    "<info> ^ Lapthorn AJ, Harris DC, Littlejohn A, Lustbader JW, Canfield RE, Machin KJ, et al. (June 1994). \"Crystal structure of human chorionic gonadotropin\". Nature. 369 (6480): 455–61. Bibcode:1994Natur.369..455L. doi:10.1038/369455a0. PMID 8202136. S2CID 4263358.",
+                    "<info> ^ Laurence A. Cole (21 September 2010). Human Chorionic Gonadotropin (hCG). Elsevier. pp. 205–. ISBN 978-0-12-384908-3.",
+                    "<info> ^ Basaria S (April 2014). \"Male hypogonadism\". Lancet. 383 (9924): 1250–63. doi:10.1016/S0140-6736(13)61126-5. PMID 24119423. S2CID 30479724.",
+                    "<info> ^ Rothman MS, Wierman ME (2008). \"Female hypogonadism: evaluation of the hypothalamic-pituitary-ovarian axis\". Pituitary. 11 (2): 163–9. doi:10.1007/s11102-008-0109-3. PMID 18404388. S2CID 6666672.",
+                    "<info> ^ Menotropins at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "",
+                    "=== External links ===",
+                    "<info> Gonadotropins at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> 10th International Symposium on GnRH",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Gonadotropins are glycoprotein hormones secreted by gonadotropic cells of the anterior pituitary of vertebrates.[1][2][3] They are central to the complex endocrine system that regulates normal growth, sexual development, and reproductive function.[4] The hormone family includes the mammalian hormones follicle-stimulating hormone (FSH) and luteinizing hormone (LH), the placental/chorionic gonadotropins, human chorionic gonadotropin (hCG) and equine chorionic gonadotropin (eCG),[3] as well as at least two forms of fish gonadotropins. LH and FSH are secreted by the anterior pituitary gland, while hCG and eCG are secreted by the placenta in pregnant women and mares, respectively.[5] The gonadotropins act on the gonads, controlling gamete and sex hormone production.",
+                            "Gonadotropin is sometimes abbreviated Gn. The alternative spelling gonadotrophin which inaccurately implies a nourishing mechanism[6] is also used.",
+                            "There are various preparations of gonadotropins for therapeutic use, mainly as fertility medication. There are also fad diet or quack preparations, which are illegal in various countries."
+                        ]
+                    },
+                    "Natural types and subunit structure": {
+                        "content": [
+                            "The two principal gonadotropins in vertebrates are luteinizing hormone (LH) and follicle-stimulating hormone (FSH), although primates produce a third gonadotropin called chorionic gonadotropin (CG). LH and FSH are heterodimers consisting of two peptide chains, an alpha chain and a beta chain. LH and FSH share nearly identical alpha chains (about 100 amino acids long), whereas the beta chain provides specificity for receptor interactions. These subunits are heavily modified by glycosylation.",
+                            "The alpha subunit is common to each protein dimer (well conserved within species, but differing between them),[4] and a unique beta subunit confers biological specificity.[7] The alpha chains are highly conserved proteins of about 100 amino acid residues which contain ten conserved cysteines all involved in disulfide bonds,[8] as shown in the following schematic representation.",
+                            "'C': conserved cysteine involved in a disulphide bond.",
+                            "Intracellular levels of free alpha subunits are greater than those of the mature glycoprotein, implying that hormone assembly is limited by the appearance of the specific beta subunits, and hence that synthesis of alpha and beta is independently regulated.[7]",
+                            "Another human gonadotropin is human chorionic gonadotropin (hCG), produced by the placenta during pregnancy."
+                        ]
+                    },
+                    "Mechanism": {
+                        "content": [
+                            "Gonadotropin receptors are embedded in the surface of the target cell membranes and coupled to the G-protein system. Signals triggered by binding to the receptor are relayed within the cells by the cyclic AMP second messenger system.",
+                            "Gonadotropins are released under the control of gonadotropin-releasing hormone (GnRH) from the arcuate nucleus and preoptic area of the hypothalamus. The gonads — testes and ovaries — are the primary target organs for LH and FSH. The gonadotropins affect multiple cell types and elicit multiple responses from the target organs. As a simplified generalization, LH stimulates the Leydig cells of the testes and the theca cells of the ovaries to produce testosterone (and indirectly estradiol), whereas FSH stimulates the spermatogenic tissue of the testes and the granulosa cells of ovarian follicles, as well as stimulating production of estrogen by the ovaries.",
+                            "Although gonadotropins are secreted in a pulsatile manner (as a result of pulsatile GnRH release), unlike the case of GnRH and GnRH agonists, constant/non-pulsatile activation of the gonadotropin receptors by the gonadotropins does not produce functional inhibition. This can be seen during the first 7–10 weeks of pregnancy, where constantly high and progressively-increasing levels of hCG circulate and mediate production of estrogen and progesterone by the corpus luteum until the placenta takes over the production of these hormones.[9]"
+                        ]
+                    },
+                    "Diseases": {
+                        "content": [
+                            "Gonadotropin deficiency due to pituitary disease results in hypogonadism, which can lead to infertility. Treatment includes administered gonadotropins, which, therefore, work as fertility medication. Such can either be produced by extraction and purification from urine or be produced by recombinant DNA.",
+                            "Failure or loss of the gonads usually results in elevated levels of LH and FSH in the blood.[10][11]",
+                            "LH insensitivity, which results in Leydig cell hypoplasia in males, and FSH insensitivity, are conditions of insensitivity to LH and FSH, respectively, caused by loss-of-function mutations in their respective signaling receptors. Another closely related condition to these is GnRH insensitivity."
+                        ]
+                    },
+                    "Pharmaceutical preparations": {
+                        "content": [
+                            "There are various preparations of gonadotropins for therapeutic use, mainly as fertility medication. For example, the so-called menotropins (also called human menopausal gonadotropins) consist of LH and FSH extracted from the urine of menopausal women.[12] There are also recombinant variants. Besides the aforementioned legitimate pharmaceutical drugs, there are fad diet or quack preparations, which are illegal in various countries."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Parhar, Ishwar S. (2002). Gonadotropin-releasing Hormone: Molecules and Receptors. Amsterdam: Elsevier. ISBN 0-444-50979-8.",
+                            "<info> ^ Pierce JG, Parsons TF (1981). \"Glycoprotein hormones: structure and function\". Annual Review of Biochemistry. 50: 465–95. doi:10.1146/annurev.bi.50.070181.002341. PMID 6267989.",
+                            "<info> ^ a b Stockell Hartree A, Renwick AG (November 1992). \"Molecular structures of glycoprotein hormones and functions of their carbohydrate components\". The Biochemical Journal. 287 ( Pt 3) (Pt 3): 665–79. doi:10.1042/bj2870665. PMC 1133060. PMID 1445230.",
+                            "<info> ^ a b Godine JE, Chin WW, Habener JF (July 1982). \"alpha Subunit of rat pituitary glycoprotein hormones. Primary structure of the precursor determined from the nucleotide sequence of cloned cDNAs\". The Journal of Biological Chemistry. 257 (14): 8368–71. doi:10.1016/S0021-9258(18)34340-0. PMID 6177696.",
+                            "<info> ^ Golos TG, Durning M, Fisher JM (June 1991). \"Molecular cloning of the rhesus glycoprotein hormone alpha-subunit gene\". DNA and Cell Biology. 10 (5): 367–80. doi:10.1089/dna.1991.10.367. PMID 1713773.",
+                            "<info> ^ Stewart J, Li CH (August 1962). \"On the use of -tropin or -trophin in connection with anterior pituitary hormones\". Science. 137 (3527): 336–7. Bibcode:1962Sci...137..336S. doi:10.1126/science.137.3527.336. PMID 13917136. S2CID 9747521.",
+                            "<info> ^ a b Goodwin RG, Moncman CL, Rottman FM, Nilson JH (October 1983). \"Characterization and nucleotide sequence of the gene for the common alpha subunit of the bovine pituitary glycoprotein hormones\". Nucleic Acids Research. 11 (19): 6873–82. doi:10.1093/nar/11.19.6873. PMC 326420. PMID 6314263.",
+                            "<info> ^ Lapthorn AJ, Harris DC, Littlejohn A, Lustbader JW, Canfield RE, Machin KJ, et al. (June 1994). \"Crystal structure of human chorionic gonadotropin\". Nature. 369 (6480): 455–61. Bibcode:1994Natur.369..455L. doi:10.1038/369455a0. PMID 8202136. S2CID 4263358.",
+                            "<info> ^ Laurence A. Cole (21 September 2010). Human Chorionic Gonadotropin (hCG). Elsevier. pp. 205–. ISBN 978-0-12-384908-3.",
+                            "<info> ^ Basaria S (April 2014). \"Male hypogonadism\". Lancet. 383 (9924): 1250–63. doi:10.1016/S0140-6736(13)61126-5. PMID 24119423. S2CID 30479724.",
+                            "<info> ^ Rothman MS, Wierman ME (2008). \"Female hypogonadism: evaluation of the hypothalamic-pituitary-ovarian axis\". Pituitary. 11 (2): 163–9. doi:10.1007/s11102-008-0109-3. PMID 18404388. S2CID 6666672.",
+                            "<info> ^ Menotropins at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Gonadotropins at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> 10th International Symposium on GnRH"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

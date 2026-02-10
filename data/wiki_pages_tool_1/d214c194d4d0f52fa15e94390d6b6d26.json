@@ -1,0 +1,33 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/limb_girdle_syndrome": {
+                "title": "Limb girdle syndrome",
+                "url": "https://en.wikipedia.org/wiki/limb_girdle_syndrome",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Limb girdle syndrome is any of several distinct medical conditions including polymyositis, myopathy associated with endocrine disease, metabolic myopathy, drug-induced myopathy and limb-girdle muscular dystrophy.[citation needed]",
+                    "Limb girdle syndrome is weakness located and concentrated around the proximal limb muscles. There are many causes, manifestations and treatments.[1]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Wilkinson, Iain and Lennox, Graham (June 2005). Essential Neurology (4th ed.). Wiley-Blackwell. p. 170. ISBN 978-1-4051-1867-5.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Limb girdle syndrome is any of several distinct medical conditions including polymyositis, myopathy associated with endocrine disease, metabolic myopathy, drug-induced myopathy and limb-girdle muscular dystrophy.[citation needed]",
+                            "Limb girdle syndrome is weakness located and concentrated around the proximal limb muscles. There are many causes, manifestations and treatments.[1]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Wilkinson, Iain and Lennox, Graham (June 2005). Essential Neurology (4th ed.). Wiley-Blackwell. p. 170. ISBN 978-1-4051-1867-5."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

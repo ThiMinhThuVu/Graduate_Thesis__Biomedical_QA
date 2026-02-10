@@ -1,0 +1,79 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/thrombocytopenic_purpura": {
+                "title": "Thrombocytopenic purpura",
+                "url": "https://en.wikipedia.org/wiki/thrombocytopenic_purpura",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Thrombocytopenic purpura are purpura associated with a reduction in circulating thrombocytes, or blood platelets.[1] Thrombocytopenic purpura is split into two categories, immune mediated and non-immune mediated. When thrombocytopenic purpura is immune mediated, it is termed immune thrombocytopenic purpura, or idiopathic thrombocytic purpura.[2] Another subtype is thrombotic thrombocytopenic purpura. Most cases of TTP are also immune mediated, though there are a small proportion of cases that are caused by an acquired genetic mutation.[3]",
+                    "",
+                    "=== Types ===",
+                    "There are 2 main types of thrombocytopenic purpura: immune/idiopathic thrombocytopenic purpura and thrombotic thrombocytopenic purpura.[2]",
+                    "By tradition, the term idiopathic thrombocytopenic purpura has been used when the cause is idiopathic, or unknown. The specific trigger for most cases remains unknown.[4]  Whatever the trigger, the condition is now considered to be immune-mediated and the term immune thrombocytopenic purpura is more usual. Either of these terms may be abbreviated as ITP. A consequence of the severe reduction in platelet count includes purple spots on the skin, or purpura, gum bleeding, easy bruising, or hemorrhage.[2] If the symptoms resolve within 6 months, it is more specifically termed acute ITP. Acute ITP is commonly seen in children, especially after a viral illness (i.e. Chickenpox) or after starting certain drugs. If the attack lasts longer than 6 months, it is termed chronic ITP. Chronic ITP affects adults more than children and women more than men.[5]",
+                    "Another form is thrombotic thrombocytopenic purpura.This may be abbreviated as TTP.[6] TTP can be immune mediated. This is caused by autoantibodies against the protein ADAMTS13. Immune mediated TTP can be primary or secondary. Most cases are primary, meaning there is no underlying cause. Infections, namely HIV, is commonly associated with secondary, immune mediated TTP. A small proportion of cases are due to an acquired genetic mutation in the protein ADAMTS13. The non-immune subtype and can be termed congenital TTP. Immune TTP is most commonly seen in female adults, whereas congenital TTP is diagnosed early in childhood or during pregnancy.[3]",
+                    "",
+                    "=== Diagnosis ===",
+                    "Diagnosis of ITP includes a detail history and physical and focuses on ruling out other causes of thrombocytopenia (i.e. Leukemia, Lupus, aplastic anemia). Other than sudden onset of bleeding due to abnormally low platelet count, patients will appear and act normal. First line workup includes a complete blood count with a peripheral smear. To rule out bone marrow disorders, a bone marrow biopsy can be performed. In ITP, this biopsy is typically normal, outside of an increased number of megakaryocytes. Because many viral infections can trigger ITP, it is also routine to perform viral serologies to identify and treat the underlying trigger. Autoantibody tests can also be performed; however, this test is not common, and a positive or negative result alone cannot be used to diagnose ITP.[7][8]",
+                    "Prompt diagnosis for acute TTP attacks remains important, as mortality is high if left untreated. Diagnosis of TTP is similar to that of ITP. Nearly all patients present with a severe thrombocytopenia and microangiopathic hemolytic anemia. Both these finds are evident on a complete blood count. The hemolytic anemia caused by microthrombi formation also manifests with low haptoglobin levels, elevated total bilirubin, and elevated lactate dehydrogenase. HIV and Hepatitis C virus testing is also imperative given its association with TTP. The diagnosis can be confirmed with an assay showing severe ADAMTS13 deficiency.[3]",
+                    "There is a pentad of symptoms that has long been associated with the manifestations of TTP. This pentad includes fever, anemia, thrombocytopenia, renal manifestations, and neurological manifestations. Though all 5 manifestations can be present, this is seen in less than 10% of patients.[3]",
+                    "",
+                    "=== Treatment ===",
+                    "Most children with ITP recover spontaneously and do not require pharmacologic intervention. Clinical observation is preferred when platelet counts are greater than 20,000-30,000/μL in acute ITP. First-line interventions when treatment is required includes corticosteroids, like prednisone. The use of prednisone is, however, limited given the extensive side effects with prolonged use at high doses. Other treatments include intravenous immunoglobulin and anti-D immunoglobulin. If ITP persists despite first-line treatments and becomes chronic ITP, more intensive medications can be pursued. These interventions include Rituximab and thrombopoietin receptor agonists. Splenectomy can be considered if all other treatments fail.[7]",
+                    "Treatment of TTP is a medical emergency and treatment must not be delayed, even if confirmatory ADAMTS13 testing has not returned. Regardless of the underlying etiology, plasma exchange with fresh frozen plasma is part of the first-line treatment. This treatment replenishes the body with ADAMTS13 while filtering out anti-ADAMTS13 antibodies. Glucocorticoids are also commonly administered with plasma exchange for cases of immune mediated TTP. Any underlying conditions that could have triggered the TTP (i.e. HIV infection) should also be properly managed. Patients with refractory TTP despite plasma exchange are given Rituximab, which was shown to not only reduce the rate of relapse, but also lower overall mortality in patients with acute immune mediated TTP.[3]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Idiopathic Thrombocytopenic Purpura\". www.chop.edu. Retrieved 2025-06-18.",
+                    "<info> ^ a b c Thakre, Rakshanda; Gharde, Pankaj; Raghuwanshi, Mohit (November 2023). \"Idiopathic Thrombocytopenic Purpura: Current Limitations and Management\". Cureus. 15 (11) e49313. doi:10.7759/cureus.49313. ISSN 2168-8184. PMC 10748795. PMID 38143653.",
+                    "<info> ^ a b c d e Sukumar, Senthil; Lämmle, Bernhard; Cataland, Spero R. (2021-02-02). \"Thrombotic Thrombocytopenic Purpura: Pathophysiology, Diagnosis, and Management\". Journal of Clinical Medicine. 10 (3): 536. doi:10.3390/jcm10030536. ISSN 2077-0383. PMC 7867179. PMID 33540569.",
+                    "<info> ^ \"Immune Thrombocytopenic Purpura (ITP)\". Harvard Health. 2018-12-19. Retrieved 2025-06-18.",
+                    "<info> ^ \"Idiopathic Thrombocytopenic Purpura\". Archived from the original on 2025-10-09. Retrieved 2025-11-04.",
+                    "<info> ^  \"Thrombotic Thrombocytopenic Purpura (TTP): Practice Essentials, Pathogenesis, Epidemiology\". 2025-04-08.",
+                    "<info> ^ a b Thakur, Yash; Meshram, Revat J.; Taksande, Amar (September 2024). \"Diagnosis and Management of Immune Thrombocytopenia in Paediatrics: A Comprehensive Review\". Cureus. 16 (9) e69635. doi:10.7759/cureus.69635. ISSN 2168-8184. PMC 11488990. PMID 39429356.",
+                    "<info> ^ \"Immune thrombocytopenia (ITP) - Diagnosis and treatment - Mayo Clinic\". www.mayoclinic.org. Retrieved 2025-06-18.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Thrombocytopenic purpura are purpura associated with a reduction in circulating thrombocytes, or blood platelets.[1] Thrombocytopenic purpura is split into two categories, immune mediated and non-immune mediated. When thrombocytopenic purpura is immune mediated, it is termed immune thrombocytopenic purpura, or idiopathic thrombocytic purpura.[2] Another subtype is thrombotic thrombocytopenic purpura. Most cases of TTP are also immune mediated, though there are a small proportion of cases that are caused by an acquired genetic mutation.[3]"
+                        ]
+                    },
+                    "Types": {
+                        "content": [
+                            "There are 2 main types of thrombocytopenic purpura: immune/idiopathic thrombocytopenic purpura and thrombotic thrombocytopenic purpura.[2]",
+                            "By tradition, the term idiopathic thrombocytopenic purpura has been used when the cause is idiopathic, or unknown. The specific trigger for most cases remains unknown.[4]  Whatever the trigger, the condition is now considered to be immune-mediated and the term immune thrombocytopenic purpura is more usual. Either of these terms may be abbreviated as ITP. A consequence of the severe reduction in platelet count includes purple spots on the skin, or purpura, gum bleeding, easy bruising, or hemorrhage.[2] If the symptoms resolve within 6 months, it is more specifically termed acute ITP. Acute ITP is commonly seen in children, especially after a viral illness (i.e. Chickenpox) or after starting certain drugs. If the attack lasts longer than 6 months, it is termed chronic ITP. Chronic ITP affects adults more than children and women more than men.[5]",
+                            "Another form is thrombotic thrombocytopenic purpura.This may be abbreviated as TTP.[6] TTP can be immune mediated. This is caused by autoantibodies against the protein ADAMTS13. Immune mediated TTP can be primary or secondary. Most cases are primary, meaning there is no underlying cause. Infections, namely HIV, is commonly associated with secondary, immune mediated TTP. A small proportion of cases are due to an acquired genetic mutation in the protein ADAMTS13. The non-immune subtype and can be termed congenital TTP. Immune TTP is most commonly seen in female adults, whereas congenital TTP is diagnosed early in childhood or during pregnancy.[3]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "Diagnosis of ITP includes a detail history and physical and focuses on ruling out other causes of thrombocytopenia (i.e. Leukemia, Lupus, aplastic anemia). Other than sudden onset of bleeding due to abnormally low platelet count, patients will appear and act normal. First line workup includes a complete blood count with a peripheral smear. To rule out bone marrow disorders, a bone marrow biopsy can be performed. In ITP, this biopsy is typically normal, outside of an increased number of megakaryocytes. Because many viral infections can trigger ITP, it is also routine to perform viral serologies to identify and treat the underlying trigger. Autoantibody tests can also be performed; however, this test is not common, and a positive or negative result alone cannot be used to diagnose ITP.[7][8]",
+                            "Prompt diagnosis for acute TTP attacks remains important, as mortality is high if left untreated. Diagnosis of TTP is similar to that of ITP. Nearly all patients present with a severe thrombocytopenia and microangiopathic hemolytic anemia. Both these finds are evident on a complete blood count. The hemolytic anemia caused by microthrombi formation also manifests with low haptoglobin levels, elevated total bilirubin, and elevated lactate dehydrogenase. HIV and Hepatitis C virus testing is also imperative given its association with TTP. The diagnosis can be confirmed with an assay showing severe ADAMTS13 deficiency.[3]",
+                            "There is a pentad of symptoms that has long been associated with the manifestations of TTP. This pentad includes fever, anemia, thrombocytopenia, renal manifestations, and neurological manifestations. Though all 5 manifestations can be present, this is seen in less than 10% of patients.[3]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Most children with ITP recover spontaneously and do not require pharmacologic intervention. Clinical observation is preferred when platelet counts are greater than 20,000-30,000/μL in acute ITP. First-line interventions when treatment is required includes corticosteroids, like prednisone. The use of prednisone is, however, limited given the extensive side effects with prolonged use at high doses. Other treatments include intravenous immunoglobulin and anti-D immunoglobulin. If ITP persists despite first-line treatments and becomes chronic ITP, more intensive medications can be pursued. These interventions include Rituximab and thrombopoietin receptor agonists. Splenectomy can be considered if all other treatments fail.[7]",
+                            "Treatment of TTP is a medical emergency and treatment must not be delayed, even if confirmatory ADAMTS13 testing has not returned. Regardless of the underlying etiology, plasma exchange with fresh frozen plasma is part of the first-line treatment. This treatment replenishes the body with ADAMTS13 while filtering out anti-ADAMTS13 antibodies. Glucocorticoids are also commonly administered with plasma exchange for cases of immune mediated TTP. Any underlying conditions that could have triggered the TTP (i.e. HIV infection) should also be properly managed. Patients with refractory TTP despite plasma exchange are given Rituximab, which was shown to not only reduce the rate of relapse, but also lower overall mortality in patients with acute immune mediated TTP.[3]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Idiopathic Thrombocytopenic Purpura\". www.chop.edu. Retrieved 2025-06-18.",
+                            "<info> ^ a b c Thakre, Rakshanda; Gharde, Pankaj; Raghuwanshi, Mohit (November 2023). \"Idiopathic Thrombocytopenic Purpura: Current Limitations and Management\". Cureus. 15 (11) e49313. doi:10.7759/cureus.49313. ISSN 2168-8184. PMC 10748795. PMID 38143653.",
+                            "<info> ^ a b c d e Sukumar, Senthil; Lämmle, Bernhard; Cataland, Spero R. (2021-02-02). \"Thrombotic Thrombocytopenic Purpura: Pathophysiology, Diagnosis, and Management\". Journal of Clinical Medicine. 10 (3): 536. doi:10.3390/jcm10030536. ISSN 2077-0383. PMC 7867179. PMID 33540569.",
+                            "<info> ^ \"Immune Thrombocytopenic Purpura (ITP)\". Harvard Health. 2018-12-19. Retrieved 2025-06-18.",
+                            "<info> ^ \"Idiopathic Thrombocytopenic Purpura\". Archived from the original on 2025-10-09. Retrieved 2025-11-04.",
+                            "<info> ^  \"Thrombotic Thrombocytopenic Purpura (TTP): Practice Essentials, Pathogenesis, Epidemiology\". 2025-04-08.",
+                            "<info> ^ a b Thakur, Yash; Meshram, Revat J.; Taksande, Amar (September 2024). \"Diagnosis and Management of Immune Thrombocytopenia in Paediatrics: A Comprehensive Review\". Cureus. 16 (9) e69635. doi:10.7759/cureus.69635. ISSN 2168-8184. PMC 11488990. PMID 39429356.",
+                            "<info> ^ \"Immune thrombocytopenia (ITP) - Diagnosis and treatment - Mayo Clinic\". www.mayoclinic.org. Retrieved 2025-06-18."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

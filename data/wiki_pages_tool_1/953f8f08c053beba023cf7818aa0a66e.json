@@ -1,0 +1,31 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/thiazide-like_diuretic": {
+                "title": "Thiazide-like diuretic",
+                "url": "https://en.wikipedia.org/wiki/thiazide-like_diuretic",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A thiazide-like diuretic is a sulfonamide diuretic that has similar physiological properties to a thiazide diuretic, but does not have the chemical properties of a thiazide, lacking the benzothiadiazine molecular structure.  Examples include metolazone, chlorthalidone, and indapamide.[1]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Foye's Principles of Medicinal Chemistry. David Williams (ed.) (7th ed.). Philadelphia: LWW. 2012-03-16. ISBN 978-1-60913-345-0.{{cite book}}:  CS1 maint: others (link)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A thiazide-like diuretic is a sulfonamide diuretic that has similar physiological properties to a thiazide diuretic, but does not have the chemical properties of a thiazide, lacking the benzothiadiazine molecular structure.  Examples include metolazone, chlorthalidone, and indapamide.[1]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Foye's Principles of Medicinal Chemistry. David Williams (ed.) (7th ed.). Philadelphia: LWW. 2012-03-16. ISBN 978-1-60913-345-0.{{cite book}}:  CS1 maint: others (link)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

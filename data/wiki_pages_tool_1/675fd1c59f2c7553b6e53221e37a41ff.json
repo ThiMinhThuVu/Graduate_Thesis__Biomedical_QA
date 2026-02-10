@@ -1,0 +1,111 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/nerve_sheath_tumor": {
+                "title": "Nerve sheath tumor",
+                "url": "https://en.wikipedia.org/wiki/nerve_sheath_tumor",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A nerve sheath tumor is a type of tumor of the nervous system (nervous system neoplasm) which is made up primarily of the myelin surrounding nerves. Nerve sheath tumors can be benign or malignant, and may affect both the peripheral and central nervous systems. There are three main types of nerve sheath tumors: schwannomas, neurofibromas, and malignant peripheral nerve sheath tumors.[1]",
+                    "",
+                    "=== Classification of nerve sheath tumors ===",
+                    "Spinal nerve sheath tumors are typically intradural, meaning that they arise inside the dura mater surrounding the spinal cord (thecal sac), but may also be found in other areas of the spine.[2] Spinal nerve sheath tumors generally arise as single lesions.[1] Presence of multiple lesions is associated with genetic conditions including neurofibromatosis type 1, neurofibromatosis type 2, and Schwannomatosis.[1][3][4]",
+                    "Most spinal schwannomas are intradural-extramedullary, growing inside the thecal sac, but outside the spinal cord itself.[5] Intradural-intramedullary schwannomas also develop, but tend to be rare.[5]",
+                    "A peripheral nerve sheath tumor is a nerve sheath tumor in the peripheral nervous system. Benign peripheral nerve sheath tumors include schwannomas and neurofibromas. A malignant peripheral nerve sheath tumor is a cancerous peripheral nerve sheath tumor, which is frequently resistant to conventional treatments.",
+                    "",
+                    "=== Symptoms ===",
+                    "Spinal and peripheral nerve sheath tumors may lead to a variety of symptoms depending on tumor type, location, and severity, though they do share some symptoms.[1]",
+                    "Some common findings for all nerve sheath tumors include:",
+                    "<info> Visible or palpable mass [6]",
+                    "Many individuals are also asymptomatic.[1][6]",
+                    "",
+                    "=== Mechanism ===",
+                    "The primary Schwann cell differentiation and neoplastic proliferations are characteristics of peripheral nerve sheath tumors. For instance, the Schwann cell, which is the major neoplastic cell component of neurofibroma,[7] is cytologically distinguished by the expression of S-100 protein and wavy nuclear outlines.[8][9] A variety of peripheral nerve cells, including axons, perineurial cells, fibroblasts, and varying inflammatory components such as mast cells and lymphocytes, are also present in neurofibromas. A population of CD34-positive cells with an unknown histogenesis is also found.[10][11]",
+                    "",
+                    "=== Diagnosis ===",
+                    "Magnetic resonance imaging (MRI) is typically used in spinal nerve sheath tumor diagnosis.[1] Each nerve sheath tumor type has a few different associated features on MRI imaging. Neurofibromas and malignant peripheral nerve sheath tumors can be difficult to distinguish from each other and may require additional testing, including PET scans (18FDG-PET).[1] Image-guided needle biopsies may be performed if there is concern for malignancy.[1]",
+                    "MRI, tissue, and nerve biopsies are also frequently used in diagnosis of peripheral nerve sheath tumors.[12] Computerized tomography (CT) scans, electromyography, and nerve conduction studies are other options.[12]",
+                    "",
+                    "=== Management ===",
+                    "Treatment of spinal nerve sheath tumors typically depends on presence and severity of symptoms.[1] For asymptomatic or incidental schwannomas or neurofibromas, only continued imaging is typically indicated to assess whether tumor growth is occurring.[1] Surgical resection may be an option for tumors causing extensive radicular pain or other symptoms, and for tumors exhibiting aggressive behavior.[1] Plexiform neurofibromas (associated with neurofibromatosis type 1) have a higher risk of transforming into malignant tumors and require individual treatment plans.[1] Surgical resection is the treatment of choice for symptomatic plexiform neurofibromas, though a new drug, selumetinib was approved in 2020, as a systemic therapeutic for inoperable cases in pediatric patients.[1][13] Stereotactic body radiotherapy (SBRT) is a promising treatment option for benign spinal nerve sheath tumors, though more research is currently needed to determine effectiveness across different tumor types and to establish adequate clinical guidelines.[1]",
+                    "Complete surgical resection is the current treatment of choice for malignant spinal nerve sheath tumors.[1] Post-surgical radiotherapy has shown some promise in improving recurrence-free survival in intermediate and high grade tumors.[1] Chemotherapy for malignant spinal nerve sheath tumors has shown mixed results and is typically only used in patients in which surgery is not an option, or with aggressive or metastatic disease.[1]",
+                    "As with spinal nerve sheath tumors, continuous monitoring for asymptomatic, incidental, or slow growing tumors is generally the standard of care for peripheral nerve sheath tumors.[12] Management of symptomatic tumors is also similar to spinal nerve sheath tumors.[12] A complete surgical resection of peripheral tumors is typically done whenever indicated, and if possible.[12] Gamma knife radiosurgery, a subset of SBRT, is an option for peripheral nerve sheath tumors growing near the brain.[12]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d e f g h i j k l m n o p q r Gui C, Canthiya L, Zadeh G, Suppiah S (October 2024). \"Current state of spinal nerve sheath tumor management and future advances\". Neuro-Oncology Advances. 6 (Suppl 3): iii83–iii93. doi:10.1093/noajnl/vdae067. PMC 11485951. PMID 39430389.",
+                    "<info> ^ Major NM, Anderson MW, Helms CA, Kaplan PA, Dussault R (2020-01-01). \"Chapter 13 - Spine\". In Major NM, Anderson MW, Helms CA, Kaplan PA (eds.). Musculoskeletal MRI (Third ed.). St. Louis (MO): Elsevier. pp. 295–346. ISBN 978-0-323-41560-6. Retrieved 2024-12-12.",
+                    "<info> ^ Conti P, Pansini G, Mouchaty H, Capuano C, Conti R (January 2004). \"Spinal neurinomas: retrospective analysis and long-term outcome of 179 consecutively operated cases and review of the literature\". Surgical Neurology. 61 (1): 34–43, discussion 44. doi:10.1016/S0090-3019(03)00537-8. PMID 14706374.",
+                    "<info> ^ Jinnai T, Koyama T (March 2005). \"Clinical characteristics of spinal nerve sheath tumors: analysis of 149 cases\". Neurosurgery. 56 (3): 510–515. doi:10.1227/01.NEU.0000153752.59565.BB. PMID 15730576.",
+                    "<info> ^ a b Swiatek VM, Stein KP, Cukaz HB, Rashidi A, Skalej M, Mawrin C, et al. (August 2021). \"Spinal intramedullary schwannomas-report of a case and extensive review of the literature\". Neurosurgical Review. 44 (4): 1833–1852. doi:10.1007/s10143-020-01357-5. PMC 8338859. PMID 32935226.",
+                    "<info> ^ a b c d e f g \"Nerve Sheath Tumor\". Archived from the original on 2024-04-19. Retrieved 2024-12-18.",
+                    "<info> ^ Perry A, Roth KA, Banerjee R, Fuller CE, Gutmann DH (July 2001). \"NF1 deletions in S-100 protein-positive and negative cells of sporadic and neurofibromatosis 1 (NF1)-associated plexiform neurofibromas and malignant peripheral nerve sheath tumors\". The American Journal of Pathology. 159 (1): 57–61. doi:10.1016/S0002-9440(10)61673-2. PMC 1850421. PMID 11438454.",
+                    "<info> ^ Chaubal A, Paetau A, Zoltick P, Miettinen M (1994). \"CD34 immunoreactivity in nervous system tumors\". Acta Neuropathologica. 88 (5): 454–458. doi:10.1007/BF00389498. PMID 7531384.",
+                    "<info> ^ Weiss SW, Langloss JM, Enzinger FM (September 1983). \"Value of S-100 protein in the diagnosis of soft tissue tumors with particular reference to benign and malignant Schwann cell tumors\". Laboratory Investigation; A Journal of Technical Methods and Pathology. 49 (3): 299–308. PMID 6310227.",
+                    "<info> ^ Carroll SL (March 2012). \"Molecular mechanisms promoting the pathogenesis of Schwann cell neoplasms\". Acta Neuropathologica. 123 (3): 321–348. doi:10.1007/s00401-011-0928-6. PMC 3288530. PMID 22160322.",
+                    "<info> ^ Weiss SW, Nickoloff BJ (October 1993). \"CD-34 is expressed by a distinctive cell population in peripheral nerve, nerve sheath tumors, and related lesions\". The American Journal of Surgical Pathology. 17 (10): 1039–1045. doi:10.1097/00000478-199310000-00009. PMID 7690524.",
+                    "<info> ^ a b c d e f \"Peripheral nerve tumors - Diagnosis and treatment - Mayo Clinic\". www.mayoclinic.org. Retrieved 2024-12-18.",
+                    "<info> ^ Research Cf (2024-08-09). \"FDA approves selumetinib for neurofibromatosis type 1 with symptomatic, inoperable plexiform neurofibromas\". FDA.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A nerve sheath tumor is a type of tumor of the nervous system (nervous system neoplasm) which is made up primarily of the myelin surrounding nerves. Nerve sheath tumors can be benign or malignant, and may affect both the peripheral and central nervous systems. There are three main types of nerve sheath tumors: schwannomas, neurofibromas, and malignant peripheral nerve sheath tumors.[1]"
+                        ]
+                    },
+                    "Classification of nerve sheath tumors": {
+                        "content": [
+                            "Spinal nerve sheath tumors are typically intradural, meaning that they arise inside the dura mater surrounding the spinal cord (thecal sac), but may also be found in other areas of the spine.[2] Spinal nerve sheath tumors generally arise as single lesions.[1] Presence of multiple lesions is associated with genetic conditions including neurofibromatosis type 1, neurofibromatosis type 2, and Schwannomatosis.[1][3][4]",
+                            "Most spinal schwannomas are intradural-extramedullary, growing inside the thecal sac, but outside the spinal cord itself.[5] Intradural-intramedullary schwannomas also develop, but tend to be rare.[5]",
+                            "A peripheral nerve sheath tumor is a nerve sheath tumor in the peripheral nervous system. Benign peripheral nerve sheath tumors include schwannomas and neurofibromas. A malignant peripheral nerve sheath tumor is a cancerous peripheral nerve sheath tumor, which is frequently resistant to conventional treatments."
+                        ]
+                    },
+                    "Symptoms": {
+                        "content": [
+                            "Spinal and peripheral nerve sheath tumors may lead to a variety of symptoms depending on tumor type, location, and severity, though they do share some symptoms.[1]",
+                            "Some common findings for all nerve sheath tumors include:",
+                            "<info> Visible or palpable mass [6]",
+                            "Many individuals are also asymptomatic.[1][6]"
+                        ]
+                    },
+                    "Mechanism": {
+                        "content": [
+                            "The primary Schwann cell differentiation and neoplastic proliferations are characteristics of peripheral nerve sheath tumors. For instance, the Schwann cell, which is the major neoplastic cell component of neurofibroma,[7] is cytologically distinguished by the expression of S-100 protein and wavy nuclear outlines.[8][9] A variety of peripheral nerve cells, including axons, perineurial cells, fibroblasts, and varying inflammatory components such as mast cells and lymphocytes, are also present in neurofibromas. A population of CD34-positive cells with an unknown histogenesis is also found.[10][11]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "Magnetic resonance imaging (MRI) is typically used in spinal nerve sheath tumor diagnosis.[1] Each nerve sheath tumor type has a few different associated features on MRI imaging. Neurofibromas and malignant peripheral nerve sheath tumors can be difficult to distinguish from each other and may require additional testing, including PET scans (18FDG-PET).[1] Image-guided needle biopsies may be performed if there is concern for malignancy.[1]",
+                            "MRI, tissue, and nerve biopsies are also frequently used in diagnosis of peripheral nerve sheath tumors.[12] Computerized tomography (CT) scans, electromyography, and nerve conduction studies are other options.[12]"
+                        ]
+                    },
+                    "Management": {
+                        "content": [
+                            "Treatment of spinal nerve sheath tumors typically depends on presence and severity of symptoms.[1] For asymptomatic or incidental schwannomas or neurofibromas, only continued imaging is typically indicated to assess whether tumor growth is occurring.[1] Surgical resection may be an option for tumors causing extensive radicular pain or other symptoms, and for tumors exhibiting aggressive behavior.[1] Plexiform neurofibromas (associated with neurofibromatosis type 1) have a higher risk of transforming into malignant tumors and require individual treatment plans.[1] Surgical resection is the treatment of choice for symptomatic plexiform neurofibromas, though a new drug, selumetinib was approved in 2020, as a systemic therapeutic for inoperable cases in pediatric patients.[1][13] Stereotactic body radiotherapy (SBRT) is a promising treatment option for benign spinal nerve sheath tumors, though more research is currently needed to determine effectiveness across different tumor types and to establish adequate clinical guidelines.[1]",
+                            "Complete surgical resection is the current treatment of choice for malignant spinal nerve sheath tumors.[1] Post-surgical radiotherapy has shown some promise in improving recurrence-free survival in intermediate and high grade tumors.[1] Chemotherapy for malignant spinal nerve sheath tumors has shown mixed results and is typically only used in patients in which surgery is not an option, or with aggressive or metastatic disease.[1]",
+                            "As with spinal nerve sheath tumors, continuous monitoring for asymptomatic, incidental, or slow growing tumors is generally the standard of care for peripheral nerve sheath tumors.[12] Management of symptomatic tumors is also similar to spinal nerve sheath tumors.[12] A complete surgical resection of peripheral tumors is typically done whenever indicated, and if possible.[12] Gamma knife radiosurgery, a subset of SBRT, is an option for peripheral nerve sheath tumors growing near the brain.[12]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d e f g h i j k l m n o p q r Gui C, Canthiya L, Zadeh G, Suppiah S (October 2024). \"Current state of spinal nerve sheath tumor management and future advances\". Neuro-Oncology Advances. 6 (Suppl 3): iii83–iii93. doi:10.1093/noajnl/vdae067. PMC 11485951. PMID 39430389.",
+                            "<info> ^ Major NM, Anderson MW, Helms CA, Kaplan PA, Dussault R (2020-01-01). \"Chapter 13 - Spine\". In Major NM, Anderson MW, Helms CA, Kaplan PA (eds.). Musculoskeletal MRI (Third ed.). St. Louis (MO): Elsevier. pp. 295–346. ISBN 978-0-323-41560-6. Retrieved 2024-12-12.",
+                            "<info> ^ Conti P, Pansini G, Mouchaty H, Capuano C, Conti R (January 2004). \"Spinal neurinomas: retrospective analysis and long-term outcome of 179 consecutively operated cases and review of the literature\". Surgical Neurology. 61 (1): 34–43, discussion 44. doi:10.1016/S0090-3019(03)00537-8. PMID 14706374.",
+                            "<info> ^ Jinnai T, Koyama T (March 2005). \"Clinical characteristics of spinal nerve sheath tumors: analysis of 149 cases\". Neurosurgery. 56 (3): 510–515. doi:10.1227/01.NEU.0000153752.59565.BB. PMID 15730576.",
+                            "<info> ^ a b Swiatek VM, Stein KP, Cukaz HB, Rashidi A, Skalej M, Mawrin C, et al. (August 2021). \"Spinal intramedullary schwannomas-report of a case and extensive review of the literature\". Neurosurgical Review. 44 (4): 1833–1852. doi:10.1007/s10143-020-01357-5. PMC 8338859. PMID 32935226.",
+                            "<info> ^ a b c d e f g \"Nerve Sheath Tumor\". Archived from the original on 2024-04-19. Retrieved 2024-12-18.",
+                            "<info> ^ Perry A, Roth KA, Banerjee R, Fuller CE, Gutmann DH (July 2001). \"NF1 deletions in S-100 protein-positive and negative cells of sporadic and neurofibromatosis 1 (NF1)-associated plexiform neurofibromas and malignant peripheral nerve sheath tumors\". The American Journal of Pathology. 159 (1): 57–61. doi:10.1016/S0002-9440(10)61673-2. PMC 1850421. PMID 11438454.",
+                            "<info> ^ Chaubal A, Paetau A, Zoltick P, Miettinen M (1994). \"CD34 immunoreactivity in nervous system tumors\". Acta Neuropathologica. 88 (5): 454–458. doi:10.1007/BF00389498. PMID 7531384.",
+                            "<info> ^ Weiss SW, Langloss JM, Enzinger FM (September 1983). \"Value of S-100 protein in the diagnosis of soft tissue tumors with particular reference to benign and malignant Schwann cell tumors\". Laboratory Investigation; A Journal of Technical Methods and Pathology. 49 (3): 299–308. PMID 6310227.",
+                            "<info> ^ Carroll SL (March 2012). \"Molecular mechanisms promoting the pathogenesis of Schwann cell neoplasms\". Acta Neuropathologica. 123 (3): 321–348. doi:10.1007/s00401-011-0928-6. PMC 3288530. PMID 22160322.",
+                            "<info> ^ Weiss SW, Nickoloff BJ (October 1993). \"CD-34 is expressed by a distinctive cell population in peripheral nerve, nerve sheath tumors, and related lesions\". The American Journal of Surgical Pathology. 17 (10): 1039–1045. doi:10.1097/00000478-199310000-00009. PMID 7690524.",
+                            "<info> ^ a b c d e f \"Peripheral nerve tumors - Diagnosis and treatment - Mayo Clinic\". www.mayoclinic.org. Retrieved 2024-12-18.",
+                            "<info> ^ Research Cf (2024-08-09). \"FDA approves selumetinib for neurofibromatosis type 1 with symptomatic, inoperable plexiform neurofibromas\". FDA."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

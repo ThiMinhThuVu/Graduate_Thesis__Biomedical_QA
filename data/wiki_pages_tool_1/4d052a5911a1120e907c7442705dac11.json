@@ -1,0 +1,143 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/hydrops_fetalis": {
+                "title": "Hydrops fetalis",
+                "url": "https://en.wikipedia.org/wiki/hydrops_fetalis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Hydrops fetalis or hydrops foetalis is a condition in the fetus characterized by an accumulation of fluid, or edema, in at least two fetal compartments.[1][2] By comparison, hydrops allantois or hydrops amnion is an accumulation of excessive fluid in the allantoic or amniotic space, respectively.[3]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Locations can include the subcutaneous tissue on the scalp, the pleura (pleural effusion), the pericardium (pericardial effusion) and the abdomen (ascites). Edema is usually seen in the fetal subcutaneous tissue, sometimes leading to spontaneous abortion.  It is a prenatal form of heart failure, in which the heart is unable to satisfy demand (in most cases abnormally high) for blood flow.[citation needed]",
+                    "",
+                    "=== Causes ===",
+                    "Hydrops fetalis usually stems from fetal anemia, when the heart needs to pump a much greater volume of blood to deliver the same amount of oxygen. This anemia can have either an immune or non-immune cause. Non-immune hydrops can also be unrelated to anemia, for example if a fetal tumor or congenital pulmonary airway malformation increases the demand for blood flow.[5] The increased demand for cardiac output leads to heart failure, and corresponding edema.",
+                    "Erythroblastosis fetalis, also known as Rh disease, is one possible immune cause of hydrops fetalis (next to Anti-Kell). Rh disease is a hemolytic disease of newborns. Pregnant mothers do not always have the same blood type as their child. During birth or throughout the pregnancy, the mother may be exposed to the infant's blood. In the event of a pregnancy where the fetus has the Rh-D blood antigen and the mother does not, the mother's immune system will respond to the red blood cells as foreign and create antibodies against the Rh-D antigen on the fetal blood cells. Rh disease develops in the event of a second pregnancy where the mother's immune system launches an attack, via IgG, against the infant's Rh-D positive blood cells. The immune response results in hemolysis of fetal red blood cells causing severe anemia.[citation needed]",
+                    "Hemolysis caused by the Rh incompatibility, causes extramedullary hematopoiesis in the fetal liver and bone marrow.[6] The push to make more erythroblasts to help compensate with the hemolysis over works the liver causing hepatomegaly. The resulting liver dysfunction decreases albumin output which in turn decreases oncotic pressure. Consequentially, the decrease in pressure results in overall peripheral edema and ascites.[citation needed]",
+                    "Rh disease is currently an uncommon cause of immune-mediated hydrops fetalis. Due to preventative methods developed in the 1970s, the incidence of Rh disease has markedly declined. Rh disease can be prevented by administration of anti-D IgG (Rho(D) immune globulin) injections to RhD-negative mothers during pregnancy and/or within 72 hours of the delivery. However, a small percentage of pregnant mothers are still susceptible to Rh disease even after receiving anti-D IgG.[citation needed]",
+                    "Severe anemia leads to hyperdynamic circulation, which means high-output cardiac failure causes the blood to circulate rapidly. The excessive pumping of blood causes the left side of the heart to fail leading to pulmonary edema. The build up of fluid in the lungs increases the pressure in the lungs leading to vasoconstriction. The coupled vasoconstriction and pulmonary hypertension causes the right side of the heart to fail which in turn, increases the venous hydrostatic pressure in the body. The summation of these effects ultimately leads to peripheral edema and ascites. All in all, the left side failure of the heart will lead to pulmonary edema whereas right side failure will lead to peripheral edema and ascites. The non-immune form of hydrops fetalis has many causes including:[7][8]",
+                    "<info> Paroxysmal supraventricular tachycardia resulting in heart failure",
+                    "<info> Deficiency of the enzyme beta-glucuronidase. This enzyme deficiency is the cause of the lysosomal storage disease called mucopolysaccharidosis type VII.",
+                    "<info> Congenital disorders of glycosylation",
+                    "<info> Parvovirus B19 (fifth disease) infection of the pregnant woman (most common cause)",
+                    "<info> Congenital pulmonary airway malformation (formerly called congenital cystic adenomatoid malformation)",
+                    "<info> Maternal syphilis and maternal diabetes mellitus",
+                    "<info> Alpha-thalassemia can also cause hydrops fetalis when all four of the genetic loci for α globin are deleted or affected by mutation. This is termed Hb Barts (consists of y-4 tetramers).",
+                    "<info> Uncommonly, Niemann–Pick disease Type C (NPC) and Gaucher disease type 2 can present with hydrops fetalis.",
+                    "<info> Tumors,[5] the most common type of fetal tumor being teratoma, particularly a sacrococcygeal teratoma.",
+                    "<info> Twin-twin transfusion syndrome (TTTS) in pregnancies in which twins share a single placenta (hydrops affects the recipient twin)",
+                    "<info> Twin anemia-polycythemia sequence (TAPS)",
+                    "<info> Twin reversed arterial perfusion sequence (TRAPS)",
+                    "<info> Fetal cardiac defects and skeletal defects",
+                    "<info> Mirror syndrome, in which fetal and placental hydrops develops in association with maternal preeclampsia, edema and hypertension",
+                    "",
+                    "=== Diagnosis ===",
+                    "Hydrops fetalis can be diagnosed and monitored by ultrasound scans.[1] An official diagnosis is made by identifying excess serous fluid in at least one space (ascites, pleural effusion, of pericardial effusion) accompanied by skin edema (greater than 5 mm thick). A diagnosis can also be made by identifying excess serous fluid in two potential spaces without accompanying edema. Prenatal ultrasound scanning enables early recognition of hydrops fetalis and has been enhanced with the introduction of MCA Doppler.[7]",
+                    "",
+                    "=== Treatment ===",
+                    "The treatment depends on the cause and stage of the pregnancy.[7]",
+                    "<info> Severely anemic fetuses, including those with Rh disease and alpha thalassemia major, can be treated with blood transfusions while still in the womb. This treatment increases the chance that the fetus will survive until birth.[7][9][10]",
+                    "<info> Therapy for cardiac tachyarrhythmia, supraventricular tachycardia, atrial flutter, or atrial fibrillation etiologies are maternal transplacental administration of antiarrhythmic medication(s). This type of treatment is recommended unless the fetus is close to term.[11]",
+                    "<info> Therapy for fetal anemia caused by a parvovirus infection or fetomaternal hemorrhage is fetal blood sampling followed by intrauterine transfusion. This treatment at an advanced gestational age poses risks and should not be performed if the risks associated with delivery are considered to be less than those associated with the procedure.[12]",
+                    "<info> Fetal hydrothorax, chylothorax, or large pleural effusion associated with bronchopulmonary sequestration should be treated using a fetal needle drainage of effusion or placement of thoracoamniotic shunt. This procedure can be performed prior to delivery if gestational age is advanced.[13]",
+                    "<info> Hydrops fetalis resulting from fetal CPAM can be treated using either a fetal needle drainage of effusion or placement of thoracoamniotic shunt or a maternal administration of corticosteroids, betamethasone 12.5 mg IM q24 h × 2 doses or dexamethasone 6.25 mg IM q12 h × 4 doses.[14]",
+                    "<info> Therapy for hydrops fetalis derived from TTTS or TAPS requires laser ablation of placental anastomoses or selective termination.[15]",
+                    "<info> Therapy for hydrops fetalis derived from TRAPS requires percutaneous radio frequency ablation.[16]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Vanaparthy R, Mahdy H (2023). \"Hydrops Fetalis\". StatPearls. StatPearls Publishing. PMID 33085361.",
+                    "<info> ^ Hamdan AH, Sheftel DN, Rosenkrantz T. Windle ML, Pramanik AK, Nimavat DJ (eds.). \"Pediatric Hydrops Fetalis\". eMedicine Pediatrics: Cardiac Disease and Critical Care Medicine. Retrieved 2010-02-11.",
+                    "<info> ^ Knottenbelt DC (2003). Equine stud farm medicine and surgery. ISBN 9780702021305. Retrieved 2010-02-11.[permanent dead link]",
+                    "<info> ^ Zineb B, Boutaina L, Ikram L, Driss MR, Mohammed D (2015). \"[Serious materno-fetal alloimmunization: about a case and review of the literature]\". The Pan African Medical Journal. 22: 137. doi:10.11604/pamj.2015.22.137.3508. PMC 4742050. PMID 26889318.",
+                    "<info> ^ a b Isaacs H (January 2008). \"Fetal hydrops associated with tumors\". American Journal of Perinatology. 25 (1): 43–68. doi:10.1055/s-2007-1004826. PMID 18075961.",
+                    "<info> ^ Jagannathan-Bogdan M, Zon LI (June 2013). \"Hematopoiesis\". Development. 140 (12): 2463–2467. doi:10.1242/dev.083147. PMC 3666375. PMID 23715539.",
+                    "<info> ^ a b c d Norton ME, Chauhan SP, Dashe JS (February 2015). \"Society for maternal-fetal medicine (SMFM) clinical guideline #7: nonimmune hydrops fetalis\". American Journal of Obstetrics and Gynecology. 212 (2): 127–139. doi:10.1016/j.ajog.2014.12.018. PMID 25557883.",
+                    "<info> ^ Nassr AA, Ness A, Hosseinzadeh P, Salmanian B, Espinoza J, Berger V, et al. (2018). \"Outcome and Treatment of Antenatally Diagnosed Nonimmune Hydrops Fetalis\". Fetal Diagnosis and Therapy. 43 (2): 123–128. doi:10.1159/000475990. PMID 28647738. S2CID 3601812.",
+                    "<info> ^ Vichinsky EP (2009-01-01). \"Alpha thalassemia major--new mutations, intrauterine management, and outcomes\". Hematology. American Society of Hematology. Education Program. 2009 (1): 35–41. doi:10.1182/asheducation-2009.1.35. PMID 20008180.",
+                    "<info> ^ Derderian SC, Jeanty C, Fleck SR, Cheng LS, Peyvandi S, Moon-Grady AJ, et al. (January 2015). \"The many faces of hydrops\". Journal of Pediatric Surgery. 50 (1): 50–4, discussion 54. doi:10.1016/j.jpedsurg.2014.10.027. PMC 4315667. PMID 25598092.",
+                    "<info> ^ Donofrio MT, Moon-Grady AJ, Hornberger LK, Copel JA, Sklansky MS, Abuhamad A, et al. (May 2014). \"Diagnosis and treatment of fetal cardiac disease: a scientific statement from the American Heart Association\". Circulation. 129 (21): 2183–2242. doi:10.1161/01.cir.0000437597.44550.5d. PMID 24763516.",
+                    "<info> ^ Centers for Disease Control (CDC) (February 1989). \"Risks associated with human parvovirus B19 infection\". Morbidity and Mortality Weekly Report. 38 (6): 81–88, 93–97. PMID 2536885.",
+                    "<info> ^ Yinon Y, Grisaru-Granovsky S, Chaddha V, Windrim R, Seaward PG, Kelly EN, et al. (July 2010). \"Perinatal outcome following fetal chest shunt insertion for pleural effusion\". Ultrasound in Obstetrics & Gynecology. 36 (1): 58–64. doi:10.1002/uog.7507. PMID 20069656. S2CID 206542529.",
+                    "<info> ^ Wilson RD, Baxter JK, Johnson MP, King M, Kasperski S, Crombleholme TM, et al. (2004). \"Thoracoamniotic shunts: fetal treatment of pleural effusions and congenital cystic adenomatoid malformations\". Fetal Diagnosis and Therapy. 19 (5): 413–420. doi:10.1159/000078994. PMID 15305098. S2CID 24586927.",
+                    "<info> ^ Simpson LL (January 2013). \"Twin-twin transfusion syndrome\". American Journal of Obstetrics and Gynecology. 208 (1): 3–18. doi:10.1016/j.ajog.2012.10.880. PMID 23200164. S2CID 78687065.",
+                    "<info> ^ Lee H, Bebbington M, Crombleholme TM (2013). \"The North American Fetal Therapy Network Registry data on outcomes of radiofrequency ablation for twin-reversed arterial perfusion sequence\". Fetal Diagnosis and Therapy. 33 (4): 224–229. doi:10.1159/000343223. PMID 23594603. S2CID 12699823.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Hydrops fetalis or hydrops foetalis is a condition in the fetus characterized by an accumulation of fluid, or edema, in at least two fetal compartments.[1][2] By comparison, hydrops allantois or hydrops amnion is an accumulation of excessive fluid in the allantoic or amniotic space, respectively.[3]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Locations can include the subcutaneous tissue on the scalp, the pleura (pleural effusion), the pericardium (pericardial effusion) and the abdomen (ascites). Edema is usually seen in the fetal subcutaneous tissue, sometimes leading to spontaneous abortion.  It is a prenatal form of heart failure, in which the heart is unable to satisfy demand (in most cases abnormally high) for blood flow.[citation needed]"
+                        ]
+                    },
+                    "Causes": {
+                        "content": [
+                            "Hydrops fetalis usually stems from fetal anemia, when the heart needs to pump a much greater volume of blood to deliver the same amount of oxygen. This anemia can have either an immune or non-immune cause. Non-immune hydrops can also be unrelated to anemia, for example if a fetal tumor or congenital pulmonary airway malformation increases the demand for blood flow.[5] The increased demand for cardiac output leads to heart failure, and corresponding edema.",
+                            "Erythroblastosis fetalis, also known as Rh disease, is one possible immune cause of hydrops fetalis (next to Anti-Kell). Rh disease is a hemolytic disease of newborns. Pregnant mothers do not always have the same blood type as their child. During birth or throughout the pregnancy, the mother may be exposed to the infant's blood. In the event of a pregnancy where the fetus has the Rh-D blood antigen and the mother does not, the mother's immune system will respond to the red blood cells as foreign and create antibodies against the Rh-D antigen on the fetal blood cells. Rh disease develops in the event of a second pregnancy where the mother's immune system launches an attack, via IgG, against the infant's Rh-D positive blood cells. The immune response results in hemolysis of fetal red blood cells causing severe anemia.[citation needed]",
+                            "Hemolysis caused by the Rh incompatibility, causes extramedullary hematopoiesis in the fetal liver and bone marrow.[6] The push to make more erythroblasts to help compensate with the hemolysis over works the liver causing hepatomegaly. The resulting liver dysfunction decreases albumin output which in turn decreases oncotic pressure. Consequentially, the decrease in pressure results in overall peripheral edema and ascites.[citation needed]",
+                            "Rh disease is currently an uncommon cause of immune-mediated hydrops fetalis. Due to preventative methods developed in the 1970s, the incidence of Rh disease has markedly declined. Rh disease can be prevented by administration of anti-D IgG (Rho(D) immune globulin) injections to RhD-negative mothers during pregnancy and/or within 72 hours of the delivery. However, a small percentage of pregnant mothers are still susceptible to Rh disease even after receiving anti-D IgG.[citation needed]",
+                            "Severe anemia leads to hyperdynamic circulation, which means high-output cardiac failure causes the blood to circulate rapidly. The excessive pumping of blood causes the left side of the heart to fail leading to pulmonary edema. The build up of fluid in the lungs increases the pressure in the lungs leading to vasoconstriction. The coupled vasoconstriction and pulmonary hypertension causes the right side of the heart to fail which in turn, increases the venous hydrostatic pressure in the body. The summation of these effects ultimately leads to peripheral edema and ascites. All in all, the left side failure of the heart will lead to pulmonary edema whereas right side failure will lead to peripheral edema and ascites. The non-immune form of hydrops fetalis has many causes including:[7][8]",
+                            "<info> Paroxysmal supraventricular tachycardia resulting in heart failure",
+                            "<info> Deficiency of the enzyme beta-glucuronidase. This enzyme deficiency is the cause of the lysosomal storage disease called mucopolysaccharidosis type VII.",
+                            "<info> Congenital disorders of glycosylation",
+                            "<info> Parvovirus B19 (fifth disease) infection of the pregnant woman (most common cause)",
+                            "<info> Congenital pulmonary airway malformation (formerly called congenital cystic adenomatoid malformation)",
+                            "<info> Maternal syphilis and maternal diabetes mellitus",
+                            "<info> Alpha-thalassemia can also cause hydrops fetalis when all four of the genetic loci for α globin are deleted or affected by mutation. This is termed Hb Barts (consists of y-4 tetramers).",
+                            "<info> Uncommonly, Niemann–Pick disease Type C (NPC) and Gaucher disease type 2 can present with hydrops fetalis.",
+                            "<info> Tumors,[5] the most common type of fetal tumor being teratoma, particularly a sacrococcygeal teratoma.",
+                            "<info> Twin-twin transfusion syndrome (TTTS) in pregnancies in which twins share a single placenta (hydrops affects the recipient twin)",
+                            "<info> Twin anemia-polycythemia sequence (TAPS)",
+                            "<info> Twin reversed arterial perfusion sequence (TRAPS)",
+                            "<info> Fetal cardiac defects and skeletal defects",
+                            "<info> Mirror syndrome, in which fetal and placental hydrops develops in association with maternal preeclampsia, edema and hypertension"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "Hydrops fetalis can be diagnosed and monitored by ultrasound scans.[1] An official diagnosis is made by identifying excess serous fluid in at least one space (ascites, pleural effusion, of pericardial effusion) accompanied by skin edema (greater than 5 mm thick). A diagnosis can also be made by identifying excess serous fluid in two potential spaces without accompanying edema. Prenatal ultrasound scanning enables early recognition of hydrops fetalis and has been enhanced with the introduction of MCA Doppler.[7]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "The treatment depends on the cause and stage of the pregnancy.[7]",
+                            "<info> Severely anemic fetuses, including those with Rh disease and alpha thalassemia major, can be treated with blood transfusions while still in the womb. This treatment increases the chance that the fetus will survive until birth.[7][9][10]",
+                            "<info> Therapy for cardiac tachyarrhythmia, supraventricular tachycardia, atrial flutter, or atrial fibrillation etiologies are maternal transplacental administration of antiarrhythmic medication(s). This type of treatment is recommended unless the fetus is close to term.[11]",
+                            "<info> Therapy for fetal anemia caused by a parvovirus infection or fetomaternal hemorrhage is fetal blood sampling followed by intrauterine transfusion. This treatment at an advanced gestational age poses risks and should not be performed if the risks associated with delivery are considered to be less than those associated with the procedure.[12]",
+                            "<info> Fetal hydrothorax, chylothorax, or large pleural effusion associated with bronchopulmonary sequestration should be treated using a fetal needle drainage of effusion or placement of thoracoamniotic shunt. This procedure can be performed prior to delivery if gestational age is advanced.[13]",
+                            "<info> Hydrops fetalis resulting from fetal CPAM can be treated using either a fetal needle drainage of effusion or placement of thoracoamniotic shunt or a maternal administration of corticosteroids, betamethasone 12.5 mg IM q24 h × 2 doses or dexamethasone 6.25 mg IM q12 h × 4 doses.[14]",
+                            "<info> Therapy for hydrops fetalis derived from TTTS or TAPS requires laser ablation of placental anastomoses or selective termination.[15]",
+                            "<info> Therapy for hydrops fetalis derived from TRAPS requires percutaneous radio frequency ablation.[16]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Vanaparthy R, Mahdy H (2023). \"Hydrops Fetalis\". StatPearls. StatPearls Publishing. PMID 33085361.",
+                            "<info> ^ Hamdan AH, Sheftel DN, Rosenkrantz T. Windle ML, Pramanik AK, Nimavat DJ (eds.). \"Pediatric Hydrops Fetalis\". eMedicine Pediatrics: Cardiac Disease and Critical Care Medicine. Retrieved 2010-02-11.",
+                            "<info> ^ Knottenbelt DC (2003). Equine stud farm medicine and surgery. ISBN 9780702021305. Retrieved 2010-02-11.[permanent dead link]",
+                            "<info> ^ Zineb B, Boutaina L, Ikram L, Driss MR, Mohammed D (2015). \"[Serious materno-fetal alloimmunization: about a case and review of the literature]\". The Pan African Medical Journal. 22: 137. doi:10.11604/pamj.2015.22.137.3508. PMC 4742050. PMID 26889318.",
+                            "<info> ^ a b Isaacs H (January 2008). \"Fetal hydrops associated with tumors\". American Journal of Perinatology. 25 (1): 43–68. doi:10.1055/s-2007-1004826. PMID 18075961.",
+                            "<info> ^ Jagannathan-Bogdan M, Zon LI (June 2013). \"Hematopoiesis\". Development. 140 (12): 2463–2467. doi:10.1242/dev.083147. PMC 3666375. PMID 23715539.",
+                            "<info> ^ a b c d Norton ME, Chauhan SP, Dashe JS (February 2015). \"Society for maternal-fetal medicine (SMFM) clinical guideline #7: nonimmune hydrops fetalis\". American Journal of Obstetrics and Gynecology. 212 (2): 127–139. doi:10.1016/j.ajog.2014.12.018. PMID 25557883.",
+                            "<info> ^ Nassr AA, Ness A, Hosseinzadeh P, Salmanian B, Espinoza J, Berger V, et al. (2018). \"Outcome and Treatment of Antenatally Diagnosed Nonimmune Hydrops Fetalis\". Fetal Diagnosis and Therapy. 43 (2): 123–128. doi:10.1159/000475990. PMID 28647738. S2CID 3601812.",
+                            "<info> ^ Vichinsky EP (2009-01-01). \"Alpha thalassemia major--new mutations, intrauterine management, and outcomes\". Hematology. American Society of Hematology. Education Program. 2009 (1): 35–41. doi:10.1182/asheducation-2009.1.35. PMID 20008180.",
+                            "<info> ^ Derderian SC, Jeanty C, Fleck SR, Cheng LS, Peyvandi S, Moon-Grady AJ, et al. (January 2015). \"The many faces of hydrops\". Journal of Pediatric Surgery. 50 (1): 50–4, discussion 54. doi:10.1016/j.jpedsurg.2014.10.027. PMC 4315667. PMID 25598092.",
+                            "<info> ^ Donofrio MT, Moon-Grady AJ, Hornberger LK, Copel JA, Sklansky MS, Abuhamad A, et al. (May 2014). \"Diagnosis and treatment of fetal cardiac disease: a scientific statement from the American Heart Association\". Circulation. 129 (21): 2183–2242. doi:10.1161/01.cir.0000437597.44550.5d. PMID 24763516.",
+                            "<info> ^ Centers for Disease Control (CDC) (February 1989). \"Risks associated with human parvovirus B19 infection\". Morbidity and Mortality Weekly Report. 38 (6): 81–88, 93–97. PMID 2536885.",
+                            "<info> ^ Yinon Y, Grisaru-Granovsky S, Chaddha V, Windrim R, Seaward PG, Kelly EN, et al. (July 2010). \"Perinatal outcome following fetal chest shunt insertion for pleural effusion\". Ultrasound in Obstetrics & Gynecology. 36 (1): 58–64. doi:10.1002/uog.7507. PMID 20069656. S2CID 206542529.",
+                            "<info> ^ Wilson RD, Baxter JK, Johnson MP, King M, Kasperski S, Crombleholme TM, et al. (2004). \"Thoracoamniotic shunts: fetal treatment of pleural effusions and congenital cystic adenomatoid malformations\". Fetal Diagnosis and Therapy. 19 (5): 413–420. doi:10.1159/000078994. PMID 15305098. S2CID 24586927.",
+                            "<info> ^ Simpson LL (January 2013). \"Twin-twin transfusion syndrome\". American Journal of Obstetrics and Gynecology. 208 (1): 3–18. doi:10.1016/j.ajog.2012.10.880. PMID 23200164. S2CID 78687065.",
+                            "<info> ^ Lee H, Bebbington M, Crombleholme TM (2013). \"The North American Fetal Therapy Network Registry data on outcomes of radiofrequency ablation for twin-reversed arterial perfusion sequence\". Fetal Diagnosis and Therapy. 33 (4): 224–229. doi:10.1159/000343223. PMID 23594603. S2CID 12699823."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

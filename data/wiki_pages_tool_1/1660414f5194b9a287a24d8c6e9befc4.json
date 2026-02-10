@@ -1,0 +1,51 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/hypotelorism": {
+                "title": "Hypotelorism",
+                "url": "https://en.wikipedia.org/wiki/hypotelorism",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Hypotelorism is an abnormally decreased distance between two organs or bodily parts, usually pertaining to the eye sockets (orbits), also known as orbital hypotelorism.[1]",
+                    "",
+                    "=== Causes ===",
+                    "It is often a result of fetal alcohol syndrome (FAS), caused by large alcohol intake in the first month of pregnancy.[citation needed]",
+                    "It can be associated with trisomy 13, which is also known as Patau syndrome,[3] as well as hereditary neuralgic amyotrophy.[4]",
+                    "It can also be associated with Holoprosencephaly, fragile X syndrome and Prader–Willi syndrome.[citation needed]",
+                    "Metopic synostosis, the early closure of metopic suture during skull development in children, can also cause hypotelorism.[citation needed]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c \"Hypotelorism\". Medical Dictionary. TheFreeDictionary.com. Retrieved 2008-01-19.",
+                    "<info> ^ \"Metopic Synostosis - Thieme Connect\" (PDF). profile.thieme.de. doi:10.1055/b-0034-72774. Retrieved 2020-01-08.",
+                    "<info> ^ \"Hypotelorism\". Medcyclopaedia. GE.",
+                    "<info> ^ Electromyography and Neuromuscular Disorders, Second Edition.  Preston and Shapiro.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Hypotelorism is an abnormally decreased distance between two organs or bodily parts, usually pertaining to the eye sockets (orbits), also known as orbital hypotelorism.[1]"
+                        ]
+                    },
+                    "Causes": {
+                        "content": [
+                            "It is often a result of fetal alcohol syndrome (FAS), caused by large alcohol intake in the first month of pregnancy.[citation needed]",
+                            "It can be associated with trisomy 13, which is also known as Patau syndrome,[3] as well as hereditary neuralgic amyotrophy.[4]",
+                            "It can also be associated with Holoprosencephaly, fragile X syndrome and Prader–Willi syndrome.[citation needed]",
+                            "Metopic synostosis, the early closure of metopic suture during skull development in children, can also cause hypotelorism.[citation needed]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c \"Hypotelorism\". Medical Dictionary. TheFreeDictionary.com. Retrieved 2008-01-19.",
+                            "<info> ^ \"Metopic Synostosis - Thieme Connect\" (PDF). profile.thieme.de. doi:10.1055/b-0034-72774. Retrieved 2020-01-08.",
+                            "<info> ^ \"Hypotelorism\". Medcyclopaedia. GE.",
+                            "<info> ^ Electromyography and Neuromuscular Disorders, Second Edition.  Preston and Shapiro."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

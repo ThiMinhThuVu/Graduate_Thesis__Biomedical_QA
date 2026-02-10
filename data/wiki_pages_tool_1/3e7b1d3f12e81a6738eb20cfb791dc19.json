@@ -1,0 +1,79 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/inner_nuclear_layer": {
+                "title": "Inner nuclear layer",
+                "url": "https://en.wikipedia.org/wiki/inner_nuclear_layer",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "In the anatomy of the eye, the inner nuclear layer or layer of inner granules, of the retina, is made up of a number of closely packed cells, of which there are three varieties: bipolar cells, horizontal cells, and amacrine cells.",
+                    "",
+                    "=== Bipolar cells ===",
+                    "The bipolar cells, by far the most numerous, are round or oval in shape, and each is prolonged into an inner and an outer process.",
+                    "They are divisible into rod bipolars and cone bipolars.",
+                    "<info> The inner processes of the rod bipolars run through the inner plexiform layer and arborize around the bodies of the cells of the ganglionic layer; their outer processes end in the outer plexiform layer in tufts of fibrils around the button-like ends of the inner processes of the rod granules.",
+                    "<info> The inner processes of the cone bipolars ramify in the inner plexiform layer in contact with the dendrites of the ganglionic cells.",
+                    "Midget bipolars are linked to one cone while diffuse bipolars take groups of receptors.  Diffuse bipolars can take signals from up to 50 rods or can be a flat cone form and take signals from seven cones.  The bipolar cells corresponds to the intermediary cells between the touch and heat receptors on the skin and the medulla or spinal cord.[1]",
+                    "",
+                    "=== Horizontal cells ===",
+                    "The horizontal cells lie in the outer part of the inner nuclear layer and possess somewhat flattened cell bodies.",
+                    "Their dendrites divide into numerous branches in the outer plexiform layer, while their axons run horizontally for some distance and finally ramify in the same layer.",
+                    "",
+                    "=== Amacrine cells ===",
+                    "The amacrine cells are placed in the inner part of the inner nuclear layer, and are so named because they have not yet been shown to possess axis-cylinder processes.",
+                    "Their dendrites undergo extensive ramification in the inner plexiform layer.",
+                    "",
+                    "=== References ===",
+                    "This article incorporates text in the public domain from page 1016 of the 20th edition of Gray's Anatomy (1918)",
+                    "<info> ^ \"eye, human.\"Encyclopædia Britannica. 2008. Encyclopædia Britannica 2006 Ultimate Reference Suite DVD",
+                    "",
+                    "=== External links ===",
+                    "<info> Histology image: 08008loa – Histology Learning System at Boston University",
+                    "<info> Histology image: 07902loa – Histology Learning System at Boston University",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "In the anatomy of the eye, the inner nuclear layer or layer of inner granules, of the retina, is made up of a number of closely packed cells, of which there are three varieties: bipolar cells, horizontal cells, and amacrine cells."
+                        ]
+                    },
+                    "Bipolar cells": {
+                        "content": [
+                            "The bipolar cells, by far the most numerous, are round or oval in shape, and each is prolonged into an inner and an outer process.",
+                            "They are divisible into rod bipolars and cone bipolars.",
+                            "<info> The inner processes of the rod bipolars run through the inner plexiform layer and arborize around the bodies of the cells of the ganglionic layer; their outer processes end in the outer plexiform layer in tufts of fibrils around the button-like ends of the inner processes of the rod granules.",
+                            "<info> The inner processes of the cone bipolars ramify in the inner plexiform layer in contact with the dendrites of the ganglionic cells.",
+                            "Midget bipolars are linked to one cone while diffuse bipolars take groups of receptors.  Diffuse bipolars can take signals from up to 50 rods or can be a flat cone form and take signals from seven cones.  The bipolar cells corresponds to the intermediary cells between the touch and heat receptors on the skin and the medulla or spinal cord.[1]"
+                        ]
+                    },
+                    "Horizontal cells": {
+                        "content": [
+                            "The horizontal cells lie in the outer part of the inner nuclear layer and possess somewhat flattened cell bodies.",
+                            "Their dendrites divide into numerous branches in the outer plexiform layer, while their axons run horizontally for some distance and finally ramify in the same layer."
+                        ]
+                    },
+                    "Amacrine cells": {
+                        "content": [
+                            "The amacrine cells are placed in the inner part of the inner nuclear layer, and are so named because they have not yet been shown to possess axis-cylinder processes.",
+                            "Their dendrites undergo extensive ramification in the inner plexiform layer."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "This article incorporates text in the public domain from page 1016 of the 20th edition of Gray's Anatomy (1918)",
+                            "<info> ^ \"eye, human.\"Encyclopædia Britannica. 2008. Encyclopædia Britannica 2006 Ultimate Reference Suite DVD"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Histology image: 08008loa – Histology Learning System at Boston University",
+                            "<info> Histology image: 07902loa – Histology Learning System at Boston University"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/labioscrotal_swelling": {
+                "title": "Labioscrotal swelling",
+                "url": "https://en.wikipedia.org/wiki/labioscrotal_swelling",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The labioscrotal swellings (genital swellings or labioscrotal folds) are paired structures in the mammalian embryo that represent the final stage of development of the caudal end of the external genitals before sexual differentiation. In humans, the two swellings merge:",
+                    "<info> In the female, they become the posterior labial commissure. The sides of the genital tubercle grow backward as the genital swellings, which ultimately form the labia majora; the tubercle itself becomes the mons pubis.",
+                    "<info> In the male, they become the scrotum.",
+                    "",
+                    "=== References ===",
+                    "This article incorporates text in the public domain from page 1214 of the 20th edition of Gray's Anatomy (1918)",
+                    "",
+                    "=== External links ===",
+                    "<info> \"Development of Male External Genitalia\", at mcgill.ca",
+                    "<info> \"Development of Female External Genitalia\", at mcgill.ca",
+                    "<info> Swiss embryology (from UL, UB, and UF) ugenital/genitexterne01",
+                    "<info> MedEd at Loyola urology/nlpendv.htm",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The labioscrotal swellings (genital swellings or labioscrotal folds) are paired structures in the mammalian embryo that represent the final stage of development of the caudal end of the external genitals before sexual differentiation. In humans, the two swellings merge:",
+                            "<info> In the female, they become the posterior labial commissure. The sides of the genital tubercle grow backward as the genital swellings, which ultimately form the labia majora; the tubercle itself becomes the mons pubis.",
+                            "<info> In the male, they become the scrotum."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "This article incorporates text in the public domain from page 1214 of the 20th edition of Gray's Anatomy (1918)"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"Development of Male External Genitalia\", at mcgill.ca",
+                            "<info> \"Development of Female External Genitalia\", at mcgill.ca",
+                            "<info> Swiss embryology (from UL, UB, and UF) ugenital/genitexterne01",
+                            "<info> MedEd at Loyola urology/nlpendv.htm"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

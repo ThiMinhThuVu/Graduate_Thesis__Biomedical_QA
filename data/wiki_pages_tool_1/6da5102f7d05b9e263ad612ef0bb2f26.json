@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_nobel_laureates_by_country": {
+                "title": "List of Nobel laureates by country",
+                "url": "https://en.wikipedia.org/wiki/list_of_nobel_laureates_by_country",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

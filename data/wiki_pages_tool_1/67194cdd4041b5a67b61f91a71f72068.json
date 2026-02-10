@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/diabetic_ketoacidosis": {
+                "title": "Diabetic ketoacidosis",
+                "url": "https://en.wikipedia.org/wiki/diabetic_ketoacidosis",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

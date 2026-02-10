@@ -1,0 +1,103 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/activated_protein_c_resistance": {
+                "title": "Activated protein C resistance",
+                "url": "https://en.wikipedia.org/wiki/activated_protein_c_resistance",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Activated protein C resistance (APCR) is a hypercoagulability (an increased tendency of the blood to clot) characterized by a lack of a response to activated protein C (APC), which normally helps prevent blood from clotting excessively. This results in an increased risk of venous thrombosis (blood clots in veins), which resulting in medical conditions such as deep vein thrombosis (usually in the leg) and pulmonary embolism (in the lung, which can cause death).[1] The most common cause of hereditary APC resistance is factor V Leiden mutation.",
+                    "",
+                    "=== Presentation ===",
+                    "An estimated 64 percent of patients with venous thromboembolism may have APC resistance.[2][needs update]",
+                    "",
+                    "=== Genetics ===",
+                    "The disorder can be acquired or inherited, the hereditary form having an autosomal dominant inheritance pattern.[3]",
+                    "",
+                    "=== Pathophysiology ===",
+                    "APC (with protein S as a cofactor) degrades Factor Va and Factor VIIIa. APC resistance is the inability of protein C to cleave Factor Va and/or Factor VIIIa, which allows for longer duration of thrombin generation and may lead to a hypercoagulable state. This may be hereditary or acquired.[4] The best known and most common hereditary form is Factor V Leiden, which is responsible for more than 95% of cases.[5] Other genetic causes include Factor V Cambridge (VThr306) and the factor V HR2 haplotype (A4070G mutation).[5][6] Acquired forms of APC resistance occur in the presence of elevated Factor VIII concentrations.[citation needed] Antiphospholipid antibodies,[5] pregnancy, and certain forms of estrogen therapy, such as ethinylestradiol-containing birth control pills, have been found to produce acquired APC resistance.[7][8][9][10][11][12][13][14][excessive citations]",
+                    "",
+                    "=== Diagnosis ===",
+                    "APC resistance can be evaluated using an APC resistance test.[15] There are two types of APC resistance tests with different properties: the activated partial thromboplastin (aPTT)-based test and the endogenous thrombin potential (ETP)-based test.[9][10][11][16]",
+                    "",
+                    "=== Treatment ===",
+                    "Asymptomatic individuals with APC resistance (e.g., heterozygous factor V Leiden) are not normally treated unless additional risk factors for thrombosis are also present.[17] An example is surgery, in which perioperative short-term anticoagulation may be used.[17] However, people with homozygous factor V Leiden, and people with heterozygous factor V Leiden who have an additional thrombophilic condition (e.g., antithrombin deficiency, protein C deficiency, or protein S deficiency), should be considered for lifelong oral anticoagulation therapy.[17] People with APC resistance and initial DVT are treated with a standard anticoagulant regimen, for instance intravenous heparin therapy followed by oral anticoagulation.[17]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Dahlbäck B (2003). \"The discovery of activated protein C resistance\". J. Thromb. Haemost. 1 (1): 3–9. doi:10.1046/j.1538-7836.2003.00016.x. PMID 12871530. S2CID 2147784.",
+                    "<info> ^ Sheppard DR (2000). \"Activated protein C resistance: the most common risk factor for venous thromboembolism\". J Am Board Fam Pract. 13 (2): 111–5. doi:10.3122/15572625-13-2-111. PMID 10764192. S2CID 20016675.",
+                    "<info> ^ Koster T, Rosendaal FR, De Ronde H, Briët E, Vandenbroucke JP, Bertina RM (December 1993). \"Venous thrombosis due to poor anticoagulant response to activated protein C: Leiden Thrombophilia Study\". Lancet. 342 (8886–8887): 1503–6. doi:10.1016/S0140-6736(05)80081-9. ISSN 0140-6736. PMID 7902898. S2CID 54283312.",
+                    "<info> ^ Nicolaes GA, Dahlbäck B (2003). \"Congenital and acquired activated protein C resistance\". Semin Vasc Med. 3 (1): 33–46. doi:10.1055/s-2003-38331. PMID 15199491.",
+                    "<info> ^ a b c Kujovich JL (January 2011). \"Factor V Leiden thrombophilia\". Genet Med. 13 (1): 1–16. doi:10.1097/GIM.0b013e3181faa0f2. PMID 21116184. S2CID 220861191.",
+                    "<info> ^ Hotoleanu, Cristina (2016). \"Genetic Risk Factors in Venous Thromboembolism\". Advances in Experimental Medicine and Biology. Vol. 906. Springer International Publishing. pp. 253–272. doi:10.1007/5584_2016_120. eISSN 2214-8019. ISBN 978-3-319-22107-6. ISSN 0065-2598. PMID 27638626.",
+                    "<info> ^ Tchaikovski SN, Rosing J (July 2010). \"Mechanisms of estrogen-induced venous thromboembolism\". Thromb Res. 126 (1): 5–11. doi:10.1016/j.thromres.2010.01.045. PMID 20163835.",
+                    "<info> ^ Hemelaar M, van der Mooren MJ, Rad M, Kluft C, Kenemans P (September 2008). \"Effects of non-oral postmenopausal hormone therapy on markers of cardiovascular risk: a systematic review\". Fertil Steril. 90 (3): 642–72. doi:10.1016/j.fertnstert.2007.07.1298. PMID 17923128.",
+                    "<info> ^ a b Morimont L, Haguet H, Dogné JM, Gaspard U, Douxfils J (2021). \"Combined Oral Contraceptives and Venous Thromboembolism: Review and Perspective to Mitigate the Risk\". Front Endocrinol (Lausanne). 12 769187. doi:10.3389/fendo.2021.769187. PMC 8697849. PMID 34956081.",
+                    "<info> ^ a b Douxfils J, Morimont L, Bouvy C (November 2020). \"Oral Contraceptives and Venous Thromboembolism: Focus on Testing that May Enable Prediction and Assessment of the Risk\". Semin Thromb Hemost. 46 (8): 872–886. doi:10.1055/s-0040-1714140. PMID 33080636. S2CID 224821517.",
+                    "<info> ^ a b Reda S, Morimont L, Douxfils J, Rühl H (August 2020). \"Can We Measure the Individual Prothrombotic or Prohemorrhagic Tendency by Global Coagulation Tests?\". Hamostaseologie. 40 (3): 364–378. doi:10.1055/a-1153-5824. PMID 32726831. S2CID 220878363.",
+                    "<info> ^ Clark P (February 2003). \"Changes of hemostasis variables during pregnancy\". Semin Vasc Med. 3 (1): 13–24. doi:10.1055/s-2003-38329. PMID 15199489.",
+                    "<info> ^ Asscheman H, T'Sjoen G, Lemaire A, Mas M, Meriggiola MC, Mueller A, Kuhn A, Dhejne C, Morel-Journel N, Gooren LJ (September 2014). \"Venous thrombo-embolism as a complication of cross-sex hormone treatment of male-to-female transsexual subjects: a review\". Andrologia. 46 (7): 791–5. doi:10.1111/and.12150. hdl:11585/413984. PMID 23944849. S2CID 5363824.",
+                    "<info> ^ Toorians AW, Thomassen MC, Zweegman S, Magdeleyns EJ, Tans G, Gooren LJ, Rosing J (December 2003). \"Venous thrombosis and changes of hemostatic variables during cross-sex hormone treatment in transsexual people\". J Clin Endocrinol Metab. 88 (12): 5723–9. doi:10.1210/jc.2003-030520. PMID 14671159.",
+                    "<info> ^ Amiral J, Vissac AM, Seghatchian J (December 2017). \"Laboratory assessment of Activated Protein C Resistance/Factor V-Leiden and performance characteristics of a new quantitative assay\". Transfus Apher Sci. 56 (6): 906–913. doi:10.1016/j.transci.2017.11.021. PMID 29162399.",
+                    "<info> ^ de Visser MC, van Hylckama Vlieg A, Tans G, Rosing J, Dahm AE, Sandset PM, Rosendaal FR, Bertina RM (July 2005). \"Determinants of the APTT- and ETP-based APC sensitivity tests\". J Thromb Haemost. 3 (7): 1488–94. doi:10.1111/j.1538-7836.2005.01430.x. hdl:1887/5044. PMID 15978106. S2CID 23567724.",
+                    "<info> ^ a b c d Nichols WL, Heit JA (September 1996). \"Activated protein C resistance and thrombosis\". Mayo Clin Proc. 71 (9): 897–8. doi:10.4065/71.9.897. PMID 8790269.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Activated protein C resistance (APCR) is a hypercoagulability (an increased tendency of the blood to clot) characterized by a lack of a response to activated protein C (APC), which normally helps prevent blood from clotting excessively. This results in an increased risk of venous thrombosis (blood clots in veins), which resulting in medical conditions such as deep vein thrombosis (usually in the leg) and pulmonary embolism (in the lung, which can cause death).[1] The most common cause of hereditary APC resistance is factor V Leiden mutation."
+                        ]
+                    },
+                    "Presentation": {
+                        "content": [
+                            "An estimated 64 percent of patients with venous thromboembolism may have APC resistance.[2][needs update]"
+                        ]
+                    },
+                    "Genetics": {
+                        "content": [
+                            "The disorder can be acquired or inherited, the hereditary form having an autosomal dominant inheritance pattern.[3]"
+                        ]
+                    },
+                    "Pathophysiology": {
+                        "content": [
+                            "APC (with protein S as a cofactor) degrades Factor Va and Factor VIIIa. APC resistance is the inability of protein C to cleave Factor Va and/or Factor VIIIa, which allows for longer duration of thrombin generation and may lead to a hypercoagulable state. This may be hereditary or acquired.[4] The best known and most common hereditary form is Factor V Leiden, which is responsible for more than 95% of cases.[5] Other genetic causes include Factor V Cambridge (VThr306) and the factor V HR2 haplotype (A4070G mutation).[5][6] Acquired forms of APC resistance occur in the presence of elevated Factor VIII concentrations.[citation needed] Antiphospholipid antibodies,[5] pregnancy, and certain forms of estrogen therapy, such as ethinylestradiol-containing birth control pills, have been found to produce acquired APC resistance.[7][8][9][10][11][12][13][14][excessive citations]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "APC resistance can be evaluated using an APC resistance test.[15] There are two types of APC resistance tests with different properties: the activated partial thromboplastin (aPTT)-based test and the endogenous thrombin potential (ETP)-based test.[9][10][11][16]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Asymptomatic individuals with APC resistance (e.g., heterozygous factor V Leiden) are not normally treated unless additional risk factors for thrombosis are also present.[17] An example is surgery, in which perioperative short-term anticoagulation may be used.[17] However, people with homozygous factor V Leiden, and people with heterozygous factor V Leiden who have an additional thrombophilic condition (e.g., antithrombin deficiency, protein C deficiency, or protein S deficiency), should be considered for lifelong oral anticoagulation therapy.[17] People with APC resistance and initial DVT are treated with a standard anticoagulant regimen, for instance intravenous heparin therapy followed by oral anticoagulation.[17]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Dahlbäck B (2003). \"The discovery of activated protein C resistance\". J. Thromb. Haemost. 1 (1): 3–9. doi:10.1046/j.1538-7836.2003.00016.x. PMID 12871530. S2CID 2147784.",
+                            "<info> ^ Sheppard DR (2000). \"Activated protein C resistance: the most common risk factor for venous thromboembolism\". J Am Board Fam Pract. 13 (2): 111–5. doi:10.3122/15572625-13-2-111. PMID 10764192. S2CID 20016675.",
+                            "<info> ^ Koster T, Rosendaal FR, De Ronde H, Briët E, Vandenbroucke JP, Bertina RM (December 1993). \"Venous thrombosis due to poor anticoagulant response to activated protein C: Leiden Thrombophilia Study\". Lancet. 342 (8886–8887): 1503–6. doi:10.1016/S0140-6736(05)80081-9. ISSN 0140-6736. PMID 7902898. S2CID 54283312.",
+                            "<info> ^ Nicolaes GA, Dahlbäck B (2003). \"Congenital and acquired activated protein C resistance\". Semin Vasc Med. 3 (1): 33–46. doi:10.1055/s-2003-38331. PMID 15199491.",
+                            "<info> ^ a b c Kujovich JL (January 2011). \"Factor V Leiden thrombophilia\". Genet Med. 13 (1): 1–16. doi:10.1097/GIM.0b013e3181faa0f2. PMID 21116184. S2CID 220861191.",
+                            "<info> ^ Hotoleanu, Cristina (2016). \"Genetic Risk Factors in Venous Thromboembolism\". Advances in Experimental Medicine and Biology. Vol. 906. Springer International Publishing. pp. 253–272. doi:10.1007/5584_2016_120. eISSN 2214-8019. ISBN 978-3-319-22107-6. ISSN 0065-2598. PMID 27638626.",
+                            "<info> ^ Tchaikovski SN, Rosing J (July 2010). \"Mechanisms of estrogen-induced venous thromboembolism\". Thromb Res. 126 (1): 5–11. doi:10.1016/j.thromres.2010.01.045. PMID 20163835.",
+                            "<info> ^ Hemelaar M, van der Mooren MJ, Rad M, Kluft C, Kenemans P (September 2008). \"Effects of non-oral postmenopausal hormone therapy on markers of cardiovascular risk: a systematic review\". Fertil Steril. 90 (3): 642–72. doi:10.1016/j.fertnstert.2007.07.1298. PMID 17923128.",
+                            "<info> ^ a b Morimont L, Haguet H, Dogné JM, Gaspard U, Douxfils J (2021). \"Combined Oral Contraceptives and Venous Thromboembolism: Review and Perspective to Mitigate the Risk\". Front Endocrinol (Lausanne). 12 769187. doi:10.3389/fendo.2021.769187. PMC 8697849. PMID 34956081.",
+                            "<info> ^ a b Douxfils J, Morimont L, Bouvy C (November 2020). \"Oral Contraceptives and Venous Thromboembolism: Focus on Testing that May Enable Prediction and Assessment of the Risk\". Semin Thromb Hemost. 46 (8): 872–886. doi:10.1055/s-0040-1714140. PMID 33080636. S2CID 224821517.",
+                            "<info> ^ a b Reda S, Morimont L, Douxfils J, Rühl H (August 2020). \"Can We Measure the Individual Prothrombotic or Prohemorrhagic Tendency by Global Coagulation Tests?\". Hamostaseologie. 40 (3): 364–378. doi:10.1055/a-1153-5824. PMID 32726831. S2CID 220878363.",
+                            "<info> ^ Clark P (February 2003). \"Changes of hemostasis variables during pregnancy\". Semin Vasc Med. 3 (1): 13–24. doi:10.1055/s-2003-38329. PMID 15199489.",
+                            "<info> ^ Asscheman H, T'Sjoen G, Lemaire A, Mas M, Meriggiola MC, Mueller A, Kuhn A, Dhejne C, Morel-Journel N, Gooren LJ (September 2014). \"Venous thrombo-embolism as a complication of cross-sex hormone treatment of male-to-female transsexual subjects: a review\". Andrologia. 46 (7): 791–5. doi:10.1111/and.12150. hdl:11585/413984. PMID 23944849. S2CID 5363824.",
+                            "<info> ^ Toorians AW, Thomassen MC, Zweegman S, Magdeleyns EJ, Tans G, Gooren LJ, Rosing J (December 2003). \"Venous thrombosis and changes of hemostatic variables during cross-sex hormone treatment in transsexual people\". J Clin Endocrinol Metab. 88 (12): 5723–9. doi:10.1210/jc.2003-030520. PMID 14671159.",
+                            "<info> ^ Amiral J, Vissac AM, Seghatchian J (December 2017). \"Laboratory assessment of Activated Protein C Resistance/Factor V-Leiden and performance characteristics of a new quantitative assay\". Transfus Apher Sci. 56 (6): 906–913. doi:10.1016/j.transci.2017.11.021. PMID 29162399.",
+                            "<info> ^ de Visser MC, van Hylckama Vlieg A, Tans G, Rosing J, Dahm AE, Sandset PM, Rosendaal FR, Bertina RM (July 2005). \"Determinants of the APTT- and ETP-based APC sensitivity tests\". J Thromb Haemost. 3 (7): 1488–94. doi:10.1111/j.1538-7836.2005.01430.x. hdl:1887/5044. PMID 15978106. S2CID 23567724.",
+                            "<info> ^ a b c d Nichols WL, Heit JA (September 1996). \"Activated protein C resistance and thrombosis\". Mayo Clin Proc. 71 (9): 897–8. doi:10.4065/71.9.897. PMID 8790269."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

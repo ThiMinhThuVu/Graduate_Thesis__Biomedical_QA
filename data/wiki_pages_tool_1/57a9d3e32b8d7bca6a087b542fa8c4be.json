@@ -1,0 +1,227 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/membrane_transport_protein": {
+                "title": "Membrane transport protein",
+                "url": "https://en.wikipedia.org/wiki/membrane_transport_protein",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A membrane transport protein is a membrane protein involved in the movement of ions, small molecules, and macromolecules such as another protein, across a biological membrane. Transport proteins are integral transmembrane proteins, that is: they exist permanently within and span the membrane, across which they transport substances. The proteins may assist in the movement of substances by facilitated diffusion, active transport, osmosis, or reverse diffusion. The two main types of proteins involved in such transport are broadly categorized as either channels or carriers (a.k.a. permeases or transporters). Examples of channel/carrier proteins include the GLUT 1 uniporter, sodium channels, and potassium channels. The solute carriers and atypical SLCs[1] are secondary active or facilitative transporters in humans.[2][3] Collectively membrane transporters and channels are known as the transportome.[4] Transportomes govern cellular influx and efflux of, not only ions and nutrients, but drugs as well.",
+                    "",
+                    "=== Difference between channels and carriers ===",
+                    "A carrier is not open simultaneously to both the extracellular and intracellular environments. Either its inner gate is closed, or its outer gate is closed. That is, its inner and outer gates are never open at the same time. In contrast, a channel can be open to both environments at the same time, allowing the molecules to diffuse without interruption. Carriers have binding sites, but pores and channels do not.[5][6][7] When a channel is opened, millions of ions can pass through the membrane per second, but only 100 to 1000 molecules typically pass through a carrier molecule in the same time.[8] Each carrier protein is designed to recognize only one substance or one group of very similar substances. Research has correlated defects in specific carrier proteins with specific diseases.[5]",
+                    "",
+                    "=== Active transport ===",
+                    "Active transport is the movement of a substance across a membrane against its concentration gradient. This is usually to accumulate high concentrations of molecules that a cell needs, such as glucose or amino acids. If the process uses chemical energy, such as adenosine triphosphate (ATP), it is called primary active transport. Membrane transport proteins that are driven directly by the hydrolysis of ATP are referred to as ATPase pumps.[9] These types of pumps direct the exergonic hydrolysis of ATP to the unfavorable movement of molecules against their concentration gradient. Examples of ATPase pumps include P-type ATPase's, V-type ATPases, F-type ATPases, and ABC binding cassettes.[citation needed]",
+                    "Secondary active transport involves the use of an electrochemical gradient, and does not use energy produced in the cell.[10] Secondary active transport commonly uses types of carrier proteins, typically symporters and antiporters. Symporter proteins couple the transport of one molecule down its concentration gradient to the transport of another molecule against its concentration gradient, and both molecules diffuse in the same direction. Antiporter proteins transport one molecule down its concentration gradient to transport another molecule against its concentration gradient, but the molecules diffuse in opposite directions. As symporters and antiporters are involved in coupling the transport of two molecules, they are commonly referred to as cotransporters. Unlike channel proteins which only transport substances through membranes passively, carrier proteins can transport ions and molecules either passively through facilitated diffusion, or via secondary active transport.[11] A carrier protein is required to move particles from areas of low concentration to areas of high concentration. These carrier proteins have receptors that bind to a specific molecule (substrate) needing transport. The molecule or ion to be transported (the substrate) must first bind at a binding site at the carrier molecule, with a certain binding affinity. Following binding, and while the binding site is facing the same way, the carrier will capture or occlude (take in and retain) the substrate within its molecular structure and cause an internal translocation so that the opening in the protein now faces the other side of the plasma membrane.[12] The carrier protein substrate is released at that site, according to its binding affinity there.[citation needed]",
+                    "",
+                    "=== Facilitated diffusion ===",
+                    "Facilitated diffusion is the passage of molecules or ions across a biological membrane through specific transport proteins and requires no energy input. Facilitated diffusion is used especially in the case of large polar molecules and charged ions; once such ions are dissolved in water they cannot diffuse freely across cell membranes due to the hydrophobic nature of the fatty acid tails of the phospholipids that make up the bilayers.\nThe type of carrier proteins used in facilitated diffusion is slightly different from those used in active transport. They are still transmembrane carrier proteins, but these are gated transmembrane channels, meaning they do not internally translocate, nor require ATP to function. The substrate is taken in one side of the gated carrier, and without using ATP the substrate is released into the cell. Facilitated diffusion does not require the use of ATP as facilitated diffusion, like simple diffusion, transports molecules or ions along their concentration gradient.[13]",
+                    "",
+                    "=== Osmosis ===",
+                    "Osmosis is the passive diffusion of water across a cell membrane from an area of high concentration to an area of low concentration. Since Osmosis is a passive process, like facilitated diffusion and simple diffusion, it does not require the use of ATP. Osmosis is important in regulating the balance of water and salt within cells, thus it plays a critical role in maintaining homeostasis.[14] Aquaporins are integral membrane proteins that allow for the rapid passage of water and glycerol through membranes. The aquaporin monomers consist of six transmembrane alpha-helix domains and these monomers can assemble to form the aquaporin proteins. As four of these monomers come together to form the aquaporin protein, it is known as a homotetramer, meaning it is made up of four identical subunits.[15][16] All aquaporins are tetrameric membrane integral proteins, and the water passes through each individual monomer channel rather than between all of the four channels. Since aquaporins are transmembrane channels for the diffusion of water, the channels that make up the aquaporin are typically lined with hydrophilic side chains to allow water to pass through.[citation needed]",
+                    "",
+                    "=== Reverse diffusion ===",
+                    "Reverse transport, or transporter reversal, is a phenomenon in which the substrates of a membrane transport protein are moved in the opposite direction to that of their typical movement by the transporter.[17][18][19][20][21] Transporter reversal typically occurs when a membrane transport protein is phosphorylated by a particular protein kinase, which is an enzyme that adds a phosphate group to proteins.[17][18]",
+                    "",
+                    "=== Types ===",
+                    "(Grouped  by Transporter Classification database categories)",
+                    "<info> α-helical protein channels such as voltage-gated ion channel (VIC), ligand-gated ion channels(LGICs)",
+                    "<info> β-barrel porins such as aquaporin",
+                    "<info> channel-forming toxins, including colicins, diphtheria toxin, and others",
+                    "<info> Nonribosomally synthesized channels such as gramicidin",
+                    "<info> Holins; which function in export of enzymes that digest bacterial cell walls in an early step of cell lysis.",
+                    "Facilitated diffusion occurs in and out of the cell membrane via channels/pores and carriers/porters.",
+                    "Channels are either in open state or closed state. When a channel is opened with a slight conformational switch, it is open to both environment simultaneously (extracellular and intracellular)",
+                    "Pores are continuously open to these both environment, because they do not undergo conformational changes. They are always open  and active.",
+                    "Also named carrier proteins or secondary carriers.",
+                    "<info> 2.A: Porters (uniporters, symporters, antiporters), SLCs.[3]\n Excitatory amino acid transporters (EAATs)\nEAAT1\nEAAT2\nEAAT3\nEAAT4\nEAAT5\nGlucose transporter\nMonoamine transporters, including:\nDopamine transporter (DAT)\nNorepinephrine transporter (NET)\nSerotonin transporter (SERT)\nVesicular monoamine transporters (VMAT)\nAdenine nucleotide translocator (ANT)",
+                    "<info> 2.B: Nonribosomally synthesized porters, such as:\nThe Nigericin family\nThe Ionomycin family",
+                    "<info> Excitatory amino acid transporters (EAATs)\nEAAT1\nEAAT2\nEAAT3\nEAAT4\nEAAT5",
+                    "<info> Monoamine transporters, including:\nDopamine transporter (DAT)\nNorepinephrine transporter (NET)\nSerotonin transporter (SERT)\nVesicular monoamine transporters (VMAT)",
+                    "<info> Adenine nucleotide translocator (ANT)",
+                    "<info> Vesicular monoamine transporters (VMAT)",
+                    "<info> 3.A: P-P-bond-hydrolysis-driven transporters (a.k.a. ATP-driven pumps, or transport ATPases):\nATP-binding cassette transporter (ABC transporter), such as MDR, CFTR\nV-type ATPase ; ( \"V\" related to vacuolar  ).\nP-type ATPase ; ( \"P\" related to phosphorylation), such as:\nNa+/K+-ATPase\nPlasma membrane Ca2+ ATPase\nProton pump\nF-type ATPase; (\"F\" related to factor), including: mitochondrial ATP synthase, chloroplast ATP synthase1",
+                    "<info> 3.E: Light absorption-driven transporters, such as rhodopsin",
+                    "<info> ATP-binding cassette transporter (ABC transporter), such as MDR, CFTR",
+                    "<info> V-type ATPase ; ( \"V\" related to vacuolar  ).",
+                    "<info> P-type ATPase ; ( \"P\" related to phosphorylation), such as:\nNa+/K+-ATPase\nPlasma membrane Ca2+ ATPase\nProton pump",
+                    "<info> F-type ATPase; (\"F\" related to factor), including: mitochondrial ATP synthase, chloroplast ATP synthase1",
+                    "<info> Plasma membrane Ca2+ ATPase",
+                    "The group translocators provide a special mechanism for the phosphorylation of sugars as they are transported into bacteria (PEP group translocation)",
+                    "The transmembrane electron transfer carriers in the membrane include two-electron carriers,  such as the disulfide bond oxidoreductases  (DsbB and DsbD in E.  coli)  as well as one-electron carriers such as NADPH oxidase. Often these redox proteins are not considered transport proteins.",
+                    "",
+                    "=== Relevant Examples ===",
+                    "Every carrier protein, especially within the same cell membrane, is specific to one type or family of molecules. GLUT1 is a named carrier protein found in almost all animal cell membranes that transports glucose across the bilayer. This protein is a uniporter, meaning it transports glucose along its concentration in a singular direction. It is an integral membrane protein carrier with a hydrophilic interior, which allows it to bind to glucose. As GLUT 1 is a type of carrier protein, it will undergo a conformational change to allow glucose to enter the other side of the plasma membrane.[22] GLUT 1 is commonly found in the red blood cell membranes of mammals.[23]",
+                    "While there are many examples of channels within the human body, two notable ones are sodium and potassium channels. Potassium channels are typically involved in the transport of potassium ions across the cell membrane to the outside of the cell, which helps maintain the negative membrane potential of cells. As there are more potassium channels than sodium channels, more potassium flows out of the cell than sodium into a cell, thus why the membrane potential is negative. Sodium channels are typically involved in the transport of sodium ions across the cell membrane into the cell. These channels are commonly associated with excitable neurons, as an influx of sodium can trigger depolarization, which in turn propagates an action potential.[24] As these proteins are types of channel proteins, they do not undergo a change of conformation after binding their respective substrates.[citation needed]",
+                    "Other specific carrier proteins also help the body function in important ways. Cytochromes operate in the electron transport chain as carrier proteins for electrons.[10]",
+                    "",
+                    "=== Pathology ===",
+                    "A number of inherited diseases involve defects in carrier proteins in a particular substance or group of cells. Cysteinuria (cysteine in the urine and the bladder) is such a disease involving defective cysteine carrier proteins in the kidney cell membranes. This transport system normally removes cysteine from the fluid destined to become urine and returns this essential amino acid to the blood. When this carrier malfunctions, large quantities of cysteine remain in the urine, where it is relatively insoluble and tends to precipitate. This is one cause of urinary stones.[25] Some vitamin carrier proteins have been shown to be overexpressed in patients with malignant disease. For example, levels of riboflavin carrier protein (RCP) have been shown to be significantly elevated in people with breast cancer.[26]",
+                    "",
+                    "=== See also ===",
+                    "<info> C14orf102, a 3810bp protein-encoding gene",
+                    "<info> Solute carrier family (classification)",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Perland, Emelie; Bagchi, Sonchita; Klaesson, Axel; Fredriksson, Robert (2017-09-01). \"Characteristics of 29 novel atypical solute carriers of major facilitator superfamily type: evolutionary conservation, predicted structure and neuronal co-expression\". Open Biology. 7 (9) 170142. doi:10.1098/rsob.170142. PMC 5627054. PMID 28878041.",
+                    "<info> ^ Hediger, Matthias A.; Romero, Michael F.; Peng, Ji-Bin; Rolfs, Andreas; Takanaga, Hitomi; Bruford, Elspeth A. (1 February 2004). \"The ABCs of solute carriers: physiological, pathological and therapeutic implications of human membrane transport proteins\". Pflügers Archiv European Journal of Physiology. 447 (5): 465–468. doi:10.1007/s00424-003-1192-y. PMID 14624363.",
+                    "<info> ^ a b Perland, Emelie; Fredriksson, Robert (March 2017). \"Classification Systems of Secondary Active Transporters\". Trends in Pharmacological Sciences. 38 (3): 305–315. doi:10.1016/j.tips.2016.11.008. PMID 27939446.",
+                    "<info> ^ Huang, Ying; Anderle, Pascale; Bussey, Kimberly J.; Barbacioru, Catalin; Shankavaram, Uma; Dai, Zunyan; Reinhold, William C.; Papp, Audrey; Weinstein, John N.; Sadée, Wolfgang (15 June 2004). \"Membrane Transporters and Channels\". Cancer Research. 64 (12): 4294–4301. doi:10.1158/0008-5472.CAN-03-3884. PMID 15205344.",
+                    "<info> ^ a b Sadava et al. 2011, p. 119.",
+                    "<info> ^ Cooper, Geoffrey M.; Hausman, Robert E. (2009). The Cell: A Molecular Approach. ASM Press. p. 62. ISBN 978-0-87893-300-6.",
+                    "<info> ^ Thompson, Liz A. (2007). Passing the North Carolina End of Course Test for Biology. American Book Company. p. 97. ISBN 978-1-59807-139-9.",
+                    "<info> ^ Assmann, Sarah (2015). \"Solute Transport\". In Taiz, Lincoln; Zeiger, Edward (eds.). Plant Physiology and Development. Sinauer. p. 151.",
+                    "<info> ^ Rappas, Mathieu; Niwa, Hajime; Zhang, Xiaodong (April 2004). \"Mechanisms of ATPases - A Multi-Disciplinary Approach\". Current Protein and Peptide Science. 5 (2): 89–105. doi:10.2174/1389203043486874. PMID 15078220.",
+                    "<info> ^ a b Han, Ashley & Hann 1974, p. 113.",
+                    "<info> ^ Taiz, Lincoln; Zeiger, Eduardo (2014). Plant Physiology and Development. Sinauer. p. 151. ISBN 978-1-60535-255-8.",
+                    "<info> ^ Kent, Michael (2000). Advanced Biology. OUP Oxford. pp. 157–158. ISBN 978-0-19-914195-1.",
+                    "<info> ^ Cooper, Geoffrey M. (2000). \"Transport of Small Molecules\". The Cell: A Molecular Approach. 2nd edition. Sinauer Associates.",
+                    "<info> ^ Lord, R (1999). \"Osmosis, osmometry, and osmoregulation\". Postgraduate Medical Journal. 75 (880): 67–73. doi:10.1136/pgmj.75.880.67. PMC 1741142. PMID 10448464.",
+                    "<info> ^ Verkman, A.S. (January 2013). \"Aquaporins\". Current Biology. 23 (2): R52–R55. Bibcode:2013CBio...23..R52V. doi:10.1016/j.cub.2012.11.025. PMC 3590904. PMID 23347934.",
+                    "<info> ^ Verkman, A. S.; Mitra, Alok K. (January 2000). \"Structure and function of aquaporin water channels\". American Journal of Physiology. Renal Physiology. 278 (1): F13–F28. doi:10.1152/ajprenal.2000.278.1.F13. PMID 10644652.",
+                    "<info> ^ a b Bermingham DP, Blakely RD (October 2016). \"Kinase-dependent Regulation of Monoamine Neurotransmitter Transporters\". Pharmacol. Rev. 68 (4): 888–953. doi:10.1124/pr.115.012260. PMC 5050440. PMID 27591044.",
+                    "<info> ^ a b Miller GM (January 2011). \"The emerging role of trace amine-associated receptor 1 in the functional regulation of monoamine transporters and dopaminergic activity\". Journal of Neurochemistry. 116 (2): 164–176. doi:10.1111/j.1471-4159.2010.07109.x. PMC 3005101. PMID 21073468.",
+                    "<info> ^ Scholze P, Nørregaard L, Singer EA, Freissmuth M, Gether U, Sitte HH (2002). \"The role of zinc ions in reverse transport mediated by monoamine transporters\". The Journal of Biological Chemistry. 277 (24): 21505–13. doi:10.1074/jbc.M112265200. PMID 11940571.",
+                    "<info> ^ Robertson SD, Matthies HJ, Galli A (2009). \"A closer look at amphetamine-induced reverse transport and trafficking of the dopamine and norepinephrine transporters\". Molecular Neurobiology. 39 (2): 73–80. doi:10.1007/s12035-009-8053-4. PMC 2729543. PMID 19199083.",
+                    "<info> ^ Kasatkina LA, Borisova TA (November 2013). \"Glutamate release from platelets: exocytosis versus glutamate transporter reversal\". The International Journal of Biochemistry & Cell Biology. 45 (11): 2585–2595. doi:10.1016/j.biocel.2013.08.004. PMID 23994539.",
+                    "<info> ^ Cooper, Geoffrey M. (2000), \"Transport of Small Molecules\", The Cell: A Molecular Approach. 2nd edition, Sinauer Associates, retrieved 2023-11-22",
+                    "<info> ^ Yeagle, Philip L. (2016). \"Membrane Transport\". The Membranes of Cells. pp. 335–378. doi:10.1016/B978-0-12-800047-2.00013-9. ISBN 978-0-12-800047-2. GLUT1 is highly abundant in the mammalian erythrocyte membrane where it can rapidly equilibrate glucose between the cytoplasm of the erythrocyte and the blood plasma. GLUT1 is also found in brain tissues. GLUT1 can also transport mannose, galactose, and glucosamine.",
+                    "<info> ^ Wang, Jun; Ou, Shao-Wu; Wang, Yun-Jie (2 November 2017). \"Distribution and function of voltage-gated sodium channels in the nervous system\". Channels. 11 (6): 534–554. doi:10.1080/19336950.2017.1380758. PMC 5786190. PMID 28922053.",
+                    "<info> ^ Sherwood, Lauralee (2008). Human Physiology: From Cells to Systems. Cengage Learning. p. 67. ISBN 978-0-495-39184-5.",
+                    "<info> ^ Rao, Prakash N.; Levine, Edward; Myers, Michael O.; Prakash, Veena; Watson, James; Stolier, Alan; Kopicko, Jeffrey J.; Kissinger, Patricia; Raj, Shailaja G.; Raj, Madhwa H. G. (November 1999). \"Elevation of Serum Riboflavin Carrier Protein in Breast Cancer1\". Cancer Epidemiology, Biomarkers & Prevention. 8 (11): 985–990. PMID 10566553.",
+                    "",
+                    "=== Sources ===",
+                    "<info> Sadava, David E; Hillis, David M; Heller, H Craig; Berenbaum, May (2011). Life: The Science of Biology. Macmillan. ISBN 978-1-4292-4644-6.",
+                    "<info> Han, Seong S.; Ashley, Ruth; Hann, Gary (1974). Cell Biology. University of Michigan. OCLC 1532651.",
+                    "",
+                    "=== External links ===",
+                    "<info> \"Transport protein\" at Dorland's Medical Dictionary",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A membrane transport protein is a membrane protein involved in the movement of ions, small molecules, and macromolecules such as another protein, across a biological membrane. Transport proteins are integral transmembrane proteins, that is: they exist permanently within and span the membrane, across which they transport substances. The proteins may assist in the movement of substances by facilitated diffusion, active transport, osmosis, or reverse diffusion. The two main types of proteins involved in such transport are broadly categorized as either channels or carriers (a.k.a. permeases or transporters). Examples of channel/carrier proteins include the GLUT 1 uniporter, sodium channels, and potassium channels. The solute carriers and atypical SLCs[1] are secondary active or facilitative transporters in humans.[2][3] Collectively membrane transporters and channels are known as the transportome.[4] Transportomes govern cellular influx and efflux of, not only ions and nutrients, but drugs as well."
+                        ]
+                    },
+                    "Difference between channels and carriers": {
+                        "content": [
+                            "A carrier is not open simultaneously to both the extracellular and intracellular environments. Either its inner gate is closed, or its outer gate is closed. That is, its inner and outer gates are never open at the same time. In contrast, a channel can be open to both environments at the same time, allowing the molecules to diffuse without interruption. Carriers have binding sites, but pores and channels do not.[5][6][7] When a channel is opened, millions of ions can pass through the membrane per second, but only 100 to 1000 molecules typically pass through a carrier molecule in the same time.[8] Each carrier protein is designed to recognize only one substance or one group of very similar substances. Research has correlated defects in specific carrier proteins with specific diseases.[5]"
+                        ]
+                    },
+                    "Active transport": {
+                        "content": [
+                            "Active transport is the movement of a substance across a membrane against its concentration gradient. This is usually to accumulate high concentrations of molecules that a cell needs, such as glucose or amino acids. If the process uses chemical energy, such as adenosine triphosphate (ATP), it is called primary active transport. Membrane transport proteins that are driven directly by the hydrolysis of ATP are referred to as ATPase pumps.[9] These types of pumps direct the exergonic hydrolysis of ATP to the unfavorable movement of molecules against their concentration gradient. Examples of ATPase pumps include P-type ATPase's, V-type ATPases, F-type ATPases, and ABC binding cassettes.[citation needed]",
+                            "Secondary active transport involves the use of an electrochemical gradient, and does not use energy produced in the cell.[10] Secondary active transport commonly uses types of carrier proteins, typically symporters and antiporters. Symporter proteins couple the transport of one molecule down its concentration gradient to the transport of another molecule against its concentration gradient, and both molecules diffuse in the same direction. Antiporter proteins transport one molecule down its concentration gradient to transport another molecule against its concentration gradient, but the molecules diffuse in opposite directions. As symporters and antiporters are involved in coupling the transport of two molecules, they are commonly referred to as cotransporters. Unlike channel proteins which only transport substances through membranes passively, carrier proteins can transport ions and molecules either passively through facilitated diffusion, or via secondary active transport.[11] A carrier protein is required to move particles from areas of low concentration to areas of high concentration. These carrier proteins have receptors that bind to a specific molecule (substrate) needing transport. The molecule or ion to be transported (the substrate) must first bind at a binding site at the carrier molecule, with a certain binding affinity. Following binding, and while the binding site is facing the same way, the carrier will capture or occlude (take in and retain) the substrate within its molecular structure and cause an internal translocation so that the opening in the protein now faces the other side of the plasma membrane.[12] The carrier protein substrate is released at that site, according to its binding affinity there.[citation needed]"
+                        ]
+                    },
+                    "Facilitated diffusion": {
+                        "content": [
+                            "Facilitated diffusion is the passage of molecules or ions across a biological membrane through specific transport proteins and requires no energy input. Facilitated diffusion is used especially in the case of large polar molecules and charged ions; once such ions are dissolved in water they cannot diffuse freely across cell membranes due to the hydrophobic nature of the fatty acid tails of the phospholipids that make up the bilayers.\nThe type of carrier proteins used in facilitated diffusion is slightly different from those used in active transport. They are still transmembrane carrier proteins, but these are gated transmembrane channels, meaning they do not internally translocate, nor require ATP to function. The substrate is taken in one side of the gated carrier, and without using ATP the substrate is released into the cell. Facilitated diffusion does not require the use of ATP as facilitated diffusion, like simple diffusion, transports molecules or ions along their concentration gradient.[13]"
+                        ]
+                    },
+                    "Osmosis": {
+                        "content": [
+                            "Osmosis is the passive diffusion of water across a cell membrane from an area of high concentration to an area of low concentration. Since Osmosis is a passive process, like facilitated diffusion and simple diffusion, it does not require the use of ATP. Osmosis is important in regulating the balance of water and salt within cells, thus it plays a critical role in maintaining homeostasis.[14] Aquaporins are integral membrane proteins that allow for the rapid passage of water and glycerol through membranes. The aquaporin monomers consist of six transmembrane alpha-helix domains and these monomers can assemble to form the aquaporin proteins. As four of these monomers come together to form the aquaporin protein, it is known as a homotetramer, meaning it is made up of four identical subunits.[15][16] All aquaporins are tetrameric membrane integral proteins, and the water passes through each individual monomer channel rather than between all of the four channels. Since aquaporins are transmembrane channels for the diffusion of water, the channels that make up the aquaporin are typically lined with hydrophilic side chains to allow water to pass through.[citation needed]"
+                        ]
+                    },
+                    "Reverse diffusion": {
+                        "content": [
+                            "Reverse transport, or transporter reversal, is a phenomenon in which the substrates of a membrane transport protein are moved in the opposite direction to that of their typical movement by the transporter.[17][18][19][20][21] Transporter reversal typically occurs when a membrane transport protein is phosphorylated by a particular protein kinase, which is an enzyme that adds a phosphate group to proteins.[17][18]"
+                        ]
+                    },
+                    "Types": {
+                        "content": [
+                            "(Grouped  by Transporter Classification database categories)",
+                            "<info> α-helical protein channels such as voltage-gated ion channel (VIC), ligand-gated ion channels(LGICs)",
+                            "<info> β-barrel porins such as aquaporin",
+                            "<info> channel-forming toxins, including colicins, diphtheria toxin, and others",
+                            "<info> Nonribosomally synthesized channels such as gramicidin",
+                            "<info> Holins; which function in export of enzymes that digest bacterial cell walls in an early step of cell lysis.",
+                            "Facilitated diffusion occurs in and out of the cell membrane via channels/pores and carriers/porters.",
+                            "Channels are either in open state or closed state. When a channel is opened with a slight conformational switch, it is open to both environment simultaneously (extracellular and intracellular)",
+                            "Pores are continuously open to these both environment, because they do not undergo conformational changes. They are always open  and active.",
+                            "Also named carrier proteins or secondary carriers.",
+                            "<info> 2.A: Porters (uniporters, symporters, antiporters), SLCs.[3]\n Excitatory amino acid transporters (EAATs)\nEAAT1\nEAAT2\nEAAT3\nEAAT4\nEAAT5\nGlucose transporter\nMonoamine transporters, including:\nDopamine transporter (DAT)\nNorepinephrine transporter (NET)\nSerotonin transporter (SERT)\nVesicular monoamine transporters (VMAT)\nAdenine nucleotide translocator (ANT)",
+                            "<info> 2.B: Nonribosomally synthesized porters, such as:\nThe Nigericin family\nThe Ionomycin family",
+                            "<info> Excitatory amino acid transporters (EAATs)\nEAAT1\nEAAT2\nEAAT3\nEAAT4\nEAAT5",
+                            "<info> Monoamine transporters, including:\nDopamine transporter (DAT)\nNorepinephrine transporter (NET)\nSerotonin transporter (SERT)\nVesicular monoamine transporters (VMAT)",
+                            "<info> Adenine nucleotide translocator (ANT)",
+                            "<info> Vesicular monoamine transporters (VMAT)",
+                            "<info> 3.A: P-P-bond-hydrolysis-driven transporters (a.k.a. ATP-driven pumps, or transport ATPases):\nATP-binding cassette transporter (ABC transporter), such as MDR, CFTR\nV-type ATPase ; ( \"V\" related to vacuolar  ).\nP-type ATPase ; ( \"P\" related to phosphorylation), such as:\nNa+/K+-ATPase\nPlasma membrane Ca2+ ATPase\nProton pump\nF-type ATPase; (\"F\" related to factor), including: mitochondrial ATP synthase, chloroplast ATP synthase1",
+                            "<info> 3.E: Light absorption-driven transporters, such as rhodopsin",
+                            "<info> ATP-binding cassette transporter (ABC transporter), such as MDR, CFTR",
+                            "<info> V-type ATPase ; ( \"V\" related to vacuolar  ).",
+                            "<info> P-type ATPase ; ( \"P\" related to phosphorylation), such as:\nNa+/K+-ATPase\nPlasma membrane Ca2+ ATPase\nProton pump",
+                            "<info> F-type ATPase; (\"F\" related to factor), including: mitochondrial ATP synthase, chloroplast ATP synthase1",
+                            "<info> Plasma membrane Ca2+ ATPase",
+                            "The group translocators provide a special mechanism for the phosphorylation of sugars as they are transported into bacteria (PEP group translocation)",
+                            "The transmembrane electron transfer carriers in the membrane include two-electron carriers,  such as the disulfide bond oxidoreductases  (DsbB and DsbD in E.  coli)  as well as one-electron carriers such as NADPH oxidase. Often these redox proteins are not considered transport proteins."
+                        ]
+                    },
+                    "Relevant Examples": {
+                        "content": [
+                            "Every carrier protein, especially within the same cell membrane, is specific to one type or family of molecules. GLUT1 is a named carrier protein found in almost all animal cell membranes that transports glucose across the bilayer. This protein is a uniporter, meaning it transports glucose along its concentration in a singular direction. It is an integral membrane protein carrier with a hydrophilic interior, which allows it to bind to glucose. As GLUT 1 is a type of carrier protein, it will undergo a conformational change to allow glucose to enter the other side of the plasma membrane.[22] GLUT 1 is commonly found in the red blood cell membranes of mammals.[23]",
+                            "While there are many examples of channels within the human body, two notable ones are sodium and potassium channels. Potassium channels are typically involved in the transport of potassium ions across the cell membrane to the outside of the cell, which helps maintain the negative membrane potential of cells. As there are more potassium channels than sodium channels, more potassium flows out of the cell than sodium into a cell, thus why the membrane potential is negative. Sodium channels are typically involved in the transport of sodium ions across the cell membrane into the cell. These channels are commonly associated with excitable neurons, as an influx of sodium can trigger depolarization, which in turn propagates an action potential.[24] As these proteins are types of channel proteins, they do not undergo a change of conformation after binding their respective substrates.[citation needed]",
+                            "Other specific carrier proteins also help the body function in important ways. Cytochromes operate in the electron transport chain as carrier proteins for electrons.[10]"
+                        ]
+                    },
+                    "Pathology": {
+                        "content": [
+                            "A number of inherited diseases involve defects in carrier proteins in a particular substance or group of cells. Cysteinuria (cysteine in the urine and the bladder) is such a disease involving defective cysteine carrier proteins in the kidney cell membranes. This transport system normally removes cysteine from the fluid destined to become urine and returns this essential amino acid to the blood. When this carrier malfunctions, large quantities of cysteine remain in the urine, where it is relatively insoluble and tends to precipitate. This is one cause of urinary stones.[25] Some vitamin carrier proteins have been shown to be overexpressed in patients with malignant disease. For example, levels of riboflavin carrier protein (RCP) have been shown to be significantly elevated in people with breast cancer.[26]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> C14orf102, a 3810bp protein-encoding gene",
+                            "<info> Solute carrier family (classification)"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Perland, Emelie; Bagchi, Sonchita; Klaesson, Axel; Fredriksson, Robert (2017-09-01). \"Characteristics of 29 novel atypical solute carriers of major facilitator superfamily type: evolutionary conservation, predicted structure and neuronal co-expression\". Open Biology. 7 (9) 170142. doi:10.1098/rsob.170142. PMC 5627054. PMID 28878041.",
+                            "<info> ^ Hediger, Matthias A.; Romero, Michael F.; Peng, Ji-Bin; Rolfs, Andreas; Takanaga, Hitomi; Bruford, Elspeth A. (1 February 2004). \"The ABCs of solute carriers: physiological, pathological and therapeutic implications of human membrane transport proteins\". Pflügers Archiv European Journal of Physiology. 447 (5): 465–468. doi:10.1007/s00424-003-1192-y. PMID 14624363.",
+                            "<info> ^ a b Perland, Emelie; Fredriksson, Robert (March 2017). \"Classification Systems of Secondary Active Transporters\". Trends in Pharmacological Sciences. 38 (3): 305–315. doi:10.1016/j.tips.2016.11.008. PMID 27939446.",
+                            "<info> ^ Huang, Ying; Anderle, Pascale; Bussey, Kimberly J.; Barbacioru, Catalin; Shankavaram, Uma; Dai, Zunyan; Reinhold, William C.; Papp, Audrey; Weinstein, John N.; Sadée, Wolfgang (15 June 2004). \"Membrane Transporters and Channels\". Cancer Research. 64 (12): 4294–4301. doi:10.1158/0008-5472.CAN-03-3884. PMID 15205344.",
+                            "<info> ^ a b Sadava et al. 2011, p. 119.",
+                            "<info> ^ Cooper, Geoffrey M.; Hausman, Robert E. (2009). The Cell: A Molecular Approach. ASM Press. p. 62. ISBN 978-0-87893-300-6.",
+                            "<info> ^ Thompson, Liz A. (2007). Passing the North Carolina End of Course Test for Biology. American Book Company. p. 97. ISBN 978-1-59807-139-9.",
+                            "<info> ^ Assmann, Sarah (2015). \"Solute Transport\". In Taiz, Lincoln; Zeiger, Edward (eds.). Plant Physiology and Development. Sinauer. p. 151.",
+                            "<info> ^ Rappas, Mathieu; Niwa, Hajime; Zhang, Xiaodong (April 2004). \"Mechanisms of ATPases - A Multi-Disciplinary Approach\". Current Protein and Peptide Science. 5 (2): 89–105. doi:10.2174/1389203043486874. PMID 15078220.",
+                            "<info> ^ a b Han, Ashley & Hann 1974, p. 113.",
+                            "<info> ^ Taiz, Lincoln; Zeiger, Eduardo (2014). Plant Physiology and Development. Sinauer. p. 151. ISBN 978-1-60535-255-8.",
+                            "<info> ^ Kent, Michael (2000). Advanced Biology. OUP Oxford. pp. 157–158. ISBN 978-0-19-914195-1.",
+                            "<info> ^ Cooper, Geoffrey M. (2000). \"Transport of Small Molecules\". The Cell: A Molecular Approach. 2nd edition. Sinauer Associates.",
+                            "<info> ^ Lord, R (1999). \"Osmosis, osmometry, and osmoregulation\". Postgraduate Medical Journal. 75 (880): 67–73. doi:10.1136/pgmj.75.880.67. PMC 1741142. PMID 10448464.",
+                            "<info> ^ Verkman, A.S. (January 2013). \"Aquaporins\". Current Biology. 23 (2): R52–R55. Bibcode:2013CBio...23..R52V. doi:10.1016/j.cub.2012.11.025. PMC 3590904. PMID 23347934.",
+                            "<info> ^ Verkman, A. S.; Mitra, Alok K. (January 2000). \"Structure and function of aquaporin water channels\". American Journal of Physiology. Renal Physiology. 278 (1): F13–F28. doi:10.1152/ajprenal.2000.278.1.F13. PMID 10644652.",
+                            "<info> ^ a b Bermingham DP, Blakely RD (October 2016). \"Kinase-dependent Regulation of Monoamine Neurotransmitter Transporters\". Pharmacol. Rev. 68 (4): 888–953. doi:10.1124/pr.115.012260. PMC 5050440. PMID 27591044.",
+                            "<info> ^ a b Miller GM (January 2011). \"The emerging role of trace amine-associated receptor 1 in the functional regulation of monoamine transporters and dopaminergic activity\". Journal of Neurochemistry. 116 (2): 164–176. doi:10.1111/j.1471-4159.2010.07109.x. PMC 3005101. PMID 21073468.",
+                            "<info> ^ Scholze P, Nørregaard L, Singer EA, Freissmuth M, Gether U, Sitte HH (2002). \"The role of zinc ions in reverse transport mediated by monoamine transporters\". The Journal of Biological Chemistry. 277 (24): 21505–13. doi:10.1074/jbc.M112265200. PMID 11940571.",
+                            "<info> ^ Robertson SD, Matthies HJ, Galli A (2009). \"A closer look at amphetamine-induced reverse transport and trafficking of the dopamine and norepinephrine transporters\". Molecular Neurobiology. 39 (2): 73–80. doi:10.1007/s12035-009-8053-4. PMC 2729543. PMID 19199083.",
+                            "<info> ^ Kasatkina LA, Borisova TA (November 2013). \"Glutamate release from platelets: exocytosis versus glutamate transporter reversal\". The International Journal of Biochemistry & Cell Biology. 45 (11): 2585–2595. doi:10.1016/j.biocel.2013.08.004. PMID 23994539.",
+                            "<info> ^ Cooper, Geoffrey M. (2000), \"Transport of Small Molecules\", The Cell: A Molecular Approach. 2nd edition, Sinauer Associates, retrieved 2023-11-22",
+                            "<info> ^ Yeagle, Philip L. (2016). \"Membrane Transport\". The Membranes of Cells. pp. 335–378. doi:10.1016/B978-0-12-800047-2.00013-9. ISBN 978-0-12-800047-2. GLUT1 is highly abundant in the mammalian erythrocyte membrane where it can rapidly equilibrate glucose between the cytoplasm of the erythrocyte and the blood plasma. GLUT1 is also found in brain tissues. GLUT1 can also transport mannose, galactose, and glucosamine.",
+                            "<info> ^ Wang, Jun; Ou, Shao-Wu; Wang, Yun-Jie (2 November 2017). \"Distribution and function of voltage-gated sodium channels in the nervous system\". Channels. 11 (6): 534–554. doi:10.1080/19336950.2017.1380758. PMC 5786190. PMID 28922053.",
+                            "<info> ^ Sherwood, Lauralee (2008). Human Physiology: From Cells to Systems. Cengage Learning. p. 67. ISBN 978-0-495-39184-5.",
+                            "<info> ^ Rao, Prakash N.; Levine, Edward; Myers, Michael O.; Prakash, Veena; Watson, James; Stolier, Alan; Kopicko, Jeffrey J.; Kissinger, Patricia; Raj, Shailaja G.; Raj, Madhwa H. G. (November 1999). \"Elevation of Serum Riboflavin Carrier Protein in Breast Cancer1\". Cancer Epidemiology, Biomarkers & Prevention. 8 (11): 985–990. PMID 10566553."
+                        ]
+                    },
+                    "Sources": {
+                        "content": [
+                            "<info> Sadava, David E; Hillis, David M; Heller, H Craig; Berenbaum, May (2011). Life: The Science of Biology. Macmillan. ISBN 978-1-4292-4644-6.",
+                            "<info> Han, Seong S.; Ashley, Ruth; Hann, Gary (1974). Cell Biology. University of Michigan. OCLC 1532651."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"Transport protein\" at Dorland's Medical Dictionary"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

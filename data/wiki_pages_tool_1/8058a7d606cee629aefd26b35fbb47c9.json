@@ -1,0 +1,73 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/alpha/beta_hydrolase_superfamily": {
+                "title": "Alpha/beta hydrolase superfamily",
+                "url": "https://en.wikipedia.org/wiki/alpha/beta_hydrolase_superfamily",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The alpha/beta hydrolase superfamily is a superfamily of hydrolytic enzymes of widely differing phylogenetic origin and catalytic function that share a common fold.[1] The core of each enzyme is an alpha/beta-sheet (rather than a barrel), containing 8 beta strands connected by 6 alpha helices.[1][2] The enzymes are believed to have diverged from a common ancestor, retaining little obvious sequence similarity, but preserving the arrangement of the catalytic residues. All have a catalytic triad, the elements of which are borne on loops, which are the best-conserved structural features of the fold.",
+                    "The alpha/beta hydrolase fold includes proteases, lipases, peroxidases, esterases, epoxide hydrolases and dehalogenases.[3]",
+                    "",
+                    "=== Database ===",
+                    "The ESTHER database provides a large collection of information about this superfamily of proteins.[4]",
+                    "",
+                    "=== Subfamilies ===",
+                    "<info> 3-oxoadipate enol-lactonase InterPro: IPR012790",
+                    "",
+                    "=== Human proteins containing this domain ===",
+                    "ABHD10; ABHD11; ABHD12; ABHD12B; ABHD13; ABHD2; ABHD3; ABHD4;\nABHD5; ABHD6; ABHD7; ABHD8; ABHD9; BAT5; BPHL; C20orf135;\nEPHX1; EPHX2; FAM108B1; LIPA; LIPF; LIPJ; LIPK; LIPM;\nLIPN; LYPLAL1; MEST; MGLL; PPME1; SERHL; SERHL2; SPG21; CES1; CES2; C4orf29",
+                    "",
+                    "=== See also ===",
+                    "<info> Ecdysteroid-phosphate phosphatase - structure of a steroid phosphate phosphotase",
+                    "<info> Serine hydrolase - an enzyme family that is composed largely of proteins with alpha-beta hydrolase folds",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Ollis, D. L.; Cheah, E.; Cygler, M.; Dijkstra, B.; Frolow, F.; Franken, S. M.; Harel, M.; Remington, S. J.; Silman, I.; Schrag, J.; Sussman, J. L.; Verschueren, K. H. G. & Goldman, A. (1992). \"The alpha/beta hydrolase fold\" (PDF). Protein Eng. 5 (3): 197–211. doi:10.1093/protein/5.3.197. hdl:11370/2d4c057d-1a67-437d-ad10-701f7a60f1e6. PMID 1409539.",
+                    "<info> ^ Carr PD, Ollis DL (2009). \"Alpha/beta hydrolase fold: an update\". Protein Pept. Lett. 16 (10): 1137–48. doi:10.2174/092986609789071298. PMID 19508187.",
+                    "<info> ^ Nardini M, Dijkstra BW (December 1999). \"Alpha/beta hydrolase fold enzymes: the family keeps growing\". Curr. Opin. Struct. Biol. 9 (6): 732–7. doi:10.1016/S0959-440X(99)00037-8. PMID 10607665.",
+                    "<info> ^ Renault L, Nègre V, Hotelier T, Cousin X, Marchot P, Chatonnet A (December 2005). \"New friendly tools for users of ESTHER, the database of the alpha/beta-hydrolase fold superfamily of proteins\". Chem. Biol. Interact. 157–158: 339–43. Bibcode:2005CBI...157..339R. doi:10.1016/j.cbi.2005.10.100. PMID 16297901.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The alpha/beta hydrolase superfamily is a superfamily of hydrolytic enzymes of widely differing phylogenetic origin and catalytic function that share a common fold.[1] The core of each enzyme is an alpha/beta-sheet (rather than a barrel), containing 8 beta strands connected by 6 alpha helices.[1][2] The enzymes are believed to have diverged from a common ancestor, retaining little obvious sequence similarity, but preserving the arrangement of the catalytic residues. All have a catalytic triad, the elements of which are borne on loops, which are the best-conserved structural features of the fold.",
+                            "The alpha/beta hydrolase fold includes proteases, lipases, peroxidases, esterases, epoxide hydrolases and dehalogenases.[3]"
+                        ]
+                    },
+                    "Database": {
+                        "content": [
+                            "The ESTHER database provides a large collection of information about this superfamily of proteins.[4]"
+                        ]
+                    },
+                    "Subfamilies": {
+                        "content": [
+                            "<info> 3-oxoadipate enol-lactonase InterPro: IPR012790"
+                        ]
+                    },
+                    "Human proteins containing this domain": {
+                        "content": [
+                            "ABHD10; ABHD11; ABHD12; ABHD12B; ABHD13; ABHD2; ABHD3; ABHD4;\nABHD5; ABHD6; ABHD7; ABHD8; ABHD9; BAT5; BPHL; C20orf135;\nEPHX1; EPHX2; FAM108B1; LIPA; LIPF; LIPJ; LIPK; LIPM;\nLIPN; LYPLAL1; MEST; MGLL; PPME1; SERHL; SERHL2; SPG21; CES1; CES2; C4orf29"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Ecdysteroid-phosphate phosphatase - structure of a steroid phosphate phosphotase",
+                            "<info> Serine hydrolase - an enzyme family that is composed largely of proteins with alpha-beta hydrolase folds"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Ollis, D. L.; Cheah, E.; Cygler, M.; Dijkstra, B.; Frolow, F.; Franken, S. M.; Harel, M.; Remington, S. J.; Silman, I.; Schrag, J.; Sussman, J. L.; Verschueren, K. H. G. & Goldman, A. (1992). \"The alpha/beta hydrolase fold\" (PDF). Protein Eng. 5 (3): 197–211. doi:10.1093/protein/5.3.197. hdl:11370/2d4c057d-1a67-437d-ad10-701f7a60f1e6. PMID 1409539.",
+                            "<info> ^ Carr PD, Ollis DL (2009). \"Alpha/beta hydrolase fold: an update\". Protein Pept. Lett. 16 (10): 1137–48. doi:10.2174/092986609789071298. PMID 19508187.",
+                            "<info> ^ Nardini M, Dijkstra BW (December 1999). \"Alpha/beta hydrolase fold enzymes: the family keeps growing\". Curr. Opin. Struct. Biol. 9 (6): 732–7. doi:10.1016/S0959-440X(99)00037-8. PMID 10607665.",
+                            "<info> ^ Renault L, Nègre V, Hotelier T, Cousin X, Marchot P, Chatonnet A (December 2005). \"New friendly tools for users of ESTHER, the database of the alpha/beta-hydrolase fold superfamily of proteins\". Chem. Biol. Interact. 157–158: 339–43. Bibcode:2005CBI...157..339R. doi:10.1016/j.cbi.2005.10.100. PMID 16297901."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

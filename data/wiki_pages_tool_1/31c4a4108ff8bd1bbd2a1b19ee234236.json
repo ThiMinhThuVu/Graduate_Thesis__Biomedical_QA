@@ -1,0 +1,51 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/tubulointerstitial_nephritis_and_uveitis": {
+                "title": "Tubulointerstitial nephritis and uveitis",
+                "url": "https://en.wikipedia.org/wiki/tubulointerstitial_nephritis_and_uveitis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Tubulointerstitial nephritis and uveitis (TINU) is a rare medical condition in which there is uveitis (inflammation of the uvea in the eye) together with tubulointerstitial nephritis (inflammation of the tubules inside the kidney).",
+                    "",
+                    "=== Symptoms and signs ===",
+                    "Uveitis may cause pain of the affected eye together with changes in vision. It may be accompanied by nonspecific systemic symptoms such as fever, involuntary weight loss, fatigue, loss of appetite, abdominal pain, and joint pains.[1]",
+                    "Laboratory diagnosis\nWe can see increased eosinophils under microscope after biopsy.[citation needed]",
+                    "",
+                    "=== History ===",
+                    "It was first described in 1975.[1][2]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Mackensen, F; Billing, H (November 2009). \"Tubulointerstitial nephritis and uveitis syndrome\". Current Opinion in Ophthalmology. 20 (6): 525–31. doi:10.1097/ICU.0b013e3283318f9a. PMID 19752730. S2CID 11461472.",
+                    "<info> ^ Dobrin, RS; Vernier, RL; Fish, AL (September 1975). \"Acute eosinophilic interstitial nephritis and renal failure with bone marrow-lymph node granulomas and anterior uveitis. A new syndrome\". The American Journal of Medicine. 59 (3): 325–33. doi:10.1016/0002-9343(75)90390-3. PMID 1163543.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Tubulointerstitial nephritis and uveitis (TINU) is a rare medical condition in which there is uveitis (inflammation of the uvea in the eye) together with tubulointerstitial nephritis (inflammation of the tubules inside the kidney)."
+                        ]
+                    },
+                    "Symptoms and signs": {
+                        "content": [
+                            "Uveitis may cause pain of the affected eye together with changes in vision. It may be accompanied by nonspecific systemic symptoms such as fever, involuntary weight loss, fatigue, loss of appetite, abdominal pain, and joint pains.[1]",
+                            "Laboratory diagnosis\nWe can see increased eosinophils under microscope after biopsy.[citation needed]"
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "It was first described in 1975.[1][2]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Mackensen, F; Billing, H (November 2009). \"Tubulointerstitial nephritis and uveitis syndrome\". Current Opinion in Ophthalmology. 20 (6): 525–31. doi:10.1097/ICU.0b013e3283318f9a. PMID 19752730. S2CID 11461472.",
+                            "<info> ^ Dobrin, RS; Vernier, RL; Fish, AL (September 1975). \"Acute eosinophilic interstitial nephritis and renal failure with bone marrow-lymph node granulomas and anterior uveitis. A new syndrome\". The American Journal of Medicine. 59 (3): 325–33. doi:10.1016/0002-9343(75)90390-3. PMID 1163543."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

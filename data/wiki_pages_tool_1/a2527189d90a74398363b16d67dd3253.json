@@ -1,0 +1,81 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/very_long_chain_fatty_acid": {
+                "title": "Very long chain fatty acid",
+                "url": "https://en.wikipedia.org/wiki/very_long_chain_fatty_acid",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "In the field of biology, very-long-chain fatty acid (VLCFA) is a fatty acid with 22 or more carbons. In chemistry, these are more commonly knowns as wax acids, a subgroup of saturated unbranched alkanoic acids. The frontier between fatty acids (strictly defined) and wax acids is fluid.",
+                    "",
+                    "=== Biological importance ===",
+                    "Their biosynthesis occurs in the endoplasmic reticulum.[1]  VLCFA's can represent up to a few percent of the total fatty acid content of a cell.[2]",
+                    "Unlike most fatty acids, VLCFAs are too long to be metabolized in the mitochondria, in the endoplasmic reticulum (ER) in plants and must be metabolized in peroxisomes.",
+                    "Certain peroxisomal disorders, such as adrenoleukodystrophy and Zellweger syndrome, can be associated with an accumulation of VLCFAs.[3][4]\nEnzymes that produce VLCFAs are the targets of herbicides including pyroxasulfone.[5][6]",
+                    "",
+                    "=== Major VLCFAs ===",
+                    "Some of the more common saturated VLCFAs: lignoceric acid (C24), cerotic acid (C26), montanic acid (C28), melissic acid  (C30), lacceroic acid (C32), ghedoic acid (C34), and the odd-chain fatty acid ceroplastic acid (C35).  Several monounsaturated VLCFAs are also known: nervonic acid (Δ15-24:1), ximenic acid (Δ17-26:1), and lumequeic acid (Δ21-30:1).[7]",
+                    "The edge case wax acid is behenic acid (C-22).",
+                    "",
+                    "=== See also ===",
+                    "<info> Cerotic acid, the fatty acid associated with adrenoleukodystrophy",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Jakobsson, Andreas; Westerberg, Rolf; Jacobsson, Anders \"Fatty acid elongases in mammals: their regulation and roles in metabolism\"  Progress in Lipid Research 2006, volume 45, pp. 237–249. doi:10.1016/j.plipres.2006.01.004",
+                    "<info> ^ \"Very-long-chain fatty acids from the animal and plant kingdoms\" Rezanka, Tomas Progress in Lipid Research 1989, volume 28, pp. 147–87.  doi:10.1016/0163-7827(89)90011-8",
+                    "<info> ^ Kemp, Stephan and Watkins, Paul. \"Very long-chain fatty acids\". X-ald Database. Retrieved 5 January 2013.{{cite web}}:  CS1 maint: multiple names: authors list (link)",
+                    "<info> ^ \"Very long-chain acyl-CoA dehydrogenase deficiency\". Genetics Home Reference, National Institutes of Health. Retrieved 5 January 2013.",
+                    "<info> ^ Nakatani, Masao; Yamaji, Yoshihiro; Honda, Hisashi; Uchida, Yukio (2016). \"Development of the novel pre-emergence herbicide pyroxasulfone\". Journal of Pesticide Science. 41 (3): 107–112. doi:10.1584/jpestics.J16-05. PMC 6140635. PMID 30363083.",
+                    "<info> ^ Trenkamp, S.; Martin, W.; Tietjen, K. (10 August 2004). \"Specific and differential inhibition of very-long-chain fatty acid elongases from Arabidopsis thaliana by different herbicides\". Proceedings of the National Academy of Sciences. 101 (32): 11903–11908. Bibcode:2004PNAS..10111903T. doi:10.1073/pnas.0404600101. PMC 511072. PMID 15277688.",
+                    "<info> ^ Řezanka, Tomáš; Sigler, Karel (2009). \"Odd-Numbered Very-Long-Chain Fatty Acids from the Microbial, Animal and Plant Kingdoms\". Progress in Lipid Research. 48 (3–4): 206–238. doi:10.1016/j.plipres.2009.03.003. PMID 19336244.",
+                    "",
+                    "=== Bibliography ===",
+                    "<info> Moser, H. W.; Moser, A. B.; Frayer, K. K.; Chen, W.; Schulman, J. D.; O'Neill, B. P.; Kishimoto, Y. (1981). \"Adrenoleukodystrophy: Increased plasma content of saturated very long chain fatty acids\". Neurology. 31 (10): 1241–9. doi:10.1212/WNL.31.10.1241. ISSN 0028-3878. PMID 7202134.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "In the field of biology, very-long-chain fatty acid (VLCFA) is a fatty acid with 22 or more carbons. In chemistry, these are more commonly knowns as wax acids, a subgroup of saturated unbranched alkanoic acids. The frontier between fatty acids (strictly defined) and wax acids is fluid."
+                        ]
+                    },
+                    "Biological importance": {
+                        "content": [
+                            "Their biosynthesis occurs in the endoplasmic reticulum.[1]  VLCFA's can represent up to a few percent of the total fatty acid content of a cell.[2]",
+                            "Unlike most fatty acids, VLCFAs are too long to be metabolized in the mitochondria, in the endoplasmic reticulum (ER) in plants and must be metabolized in peroxisomes.",
+                            "Certain peroxisomal disorders, such as adrenoleukodystrophy and Zellweger syndrome, can be associated with an accumulation of VLCFAs.[3][4]\nEnzymes that produce VLCFAs are the targets of herbicides including pyroxasulfone.[5][6]"
+                        ]
+                    },
+                    "Major VLCFAs": {
+                        "content": [
+                            "Some of the more common saturated VLCFAs: lignoceric acid (C24), cerotic acid (C26), montanic acid (C28), melissic acid  (C30), lacceroic acid (C32), ghedoic acid (C34), and the odd-chain fatty acid ceroplastic acid (C35).  Several monounsaturated VLCFAs are also known: nervonic acid (Δ15-24:1), ximenic acid (Δ17-26:1), and lumequeic acid (Δ21-30:1).[7]",
+                            "The edge case wax acid is behenic acid (C-22)."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Cerotic acid, the fatty acid associated with adrenoleukodystrophy"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Jakobsson, Andreas; Westerberg, Rolf; Jacobsson, Anders \"Fatty acid elongases in mammals: their regulation and roles in metabolism\"  Progress in Lipid Research 2006, volume 45, pp. 237–249. doi:10.1016/j.plipres.2006.01.004",
+                            "<info> ^ \"Very-long-chain fatty acids from the animal and plant kingdoms\" Rezanka, Tomas Progress in Lipid Research 1989, volume 28, pp. 147–87.  doi:10.1016/0163-7827(89)90011-8",
+                            "<info> ^ Kemp, Stephan and Watkins, Paul. \"Very long-chain fatty acids\". X-ald Database. Retrieved 5 January 2013.{{cite web}}:  CS1 maint: multiple names: authors list (link)",
+                            "<info> ^ \"Very long-chain acyl-CoA dehydrogenase deficiency\". Genetics Home Reference, National Institutes of Health. Retrieved 5 January 2013.",
+                            "<info> ^ Nakatani, Masao; Yamaji, Yoshihiro; Honda, Hisashi; Uchida, Yukio (2016). \"Development of the novel pre-emergence herbicide pyroxasulfone\". Journal of Pesticide Science. 41 (3): 107–112. doi:10.1584/jpestics.J16-05. PMC 6140635. PMID 30363083.",
+                            "<info> ^ Trenkamp, S.; Martin, W.; Tietjen, K. (10 August 2004). \"Specific and differential inhibition of very-long-chain fatty acid elongases from Arabidopsis thaliana by different herbicides\". Proceedings of the National Academy of Sciences. 101 (32): 11903–11908. Bibcode:2004PNAS..10111903T. doi:10.1073/pnas.0404600101. PMC 511072. PMID 15277688.",
+                            "<info> ^ Řezanka, Tomáš; Sigler, Karel (2009). \"Odd-Numbered Very-Long-Chain Fatty Acids from the Microbial, Animal and Plant Kingdoms\". Progress in Lipid Research. 48 (3–4): 206–238. doi:10.1016/j.plipres.2009.03.003. PMID 19336244."
+                        ]
+                    },
+                    "Bibliography": {
+                        "content": [
+                            "<info> Moser, H. W.; Moser, A. B.; Frayer, K. K.; Chen, W.; Schulman, J. D.; O'Neill, B. P.; Kishimoto, Y. (1981). \"Adrenoleukodystrophy: Increased plasma content of saturated very long chain fatty acids\". Neurology. 31 (10): 1241–9. doi:10.1212/WNL.31.10.1241. ISSN 0028-3878. PMID 7202134."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

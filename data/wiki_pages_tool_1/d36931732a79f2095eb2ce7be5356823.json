@@ -1,0 +1,35 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/synthetic_organelles": {
+                "title": "Synthetic organelles",
+                "url": "https://en.wikipedia.org/wiki/synthetic_organelles",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Synthetic organelles, also known as artificial organelles, are artificial compartments designed to mimic the functions of these natural organelles, enabling controlled biochemical reactions within living cells.[1] Organelles provides protection of more fragile cellular components, and is separately enclosed within its own membrane or exists as a spatially distinct functional unit without a surrounding lipid bilayer. Synthetic organelles are designed to mimic the functions of these natural organelles, enabling controlled biochemical reactions within living cells.[1] They can be derived from various sources, including neural stem cells and self-assembling proteins.[2][3]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Oerlemans, Roy A. J. F.; Timmermans, Suzanne B. P. E.; van Hest, Jan C. M. (August 1, 2021). \"Artificial Organelles: Towards Adding or Restoring Intracellular Activity\". ChemBioChem. 22 (12): 2051–2078. doi:10.1002/cbic.202000850. PMC 8252369. PMID 33450141.",
+                    "<info> ^ Wang, Jiayi; Zhao, Mengke; Wang, Meina; Fu, Dong; Kang, Lin; Xu, Yu; Shen, Liming; Jin, Shilin; Wang, Liang; Liu, Jing (8 September 2024). \"Human neural stem cell-derived artificial organelles to improve oxidative phosphorylation\". Nature Communications. 15 (1) 7855. Bibcode:2024NatCo..15.7855W. doi:10.1038/s41467-024-52171-2. PMC 11381526. PMID 39245680.",
+                    "<info> ^ Lin, Peng; Zhang, Shiwei; Komatsubara, Futa; Konishi, Hiroaki; Nakata, Eiji; Morii, Takashi (February 2025). \"Artificial Compartments Encapsulating Enzymatic Reactions: Towards the Construction of Artificial Organelles\". ChemPlusChem. 90 (2) e202400483. doi:10.1002/cplu.202400483. PMID 39351818.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Synthetic organelles, also known as artificial organelles, are artificial compartments designed to mimic the functions of these natural organelles, enabling controlled biochemical reactions within living cells.[1] Organelles provides protection of more fragile cellular components, and is separately enclosed within its own membrane or exists as a spatially distinct functional unit without a surrounding lipid bilayer. Synthetic organelles are designed to mimic the functions of these natural organelles, enabling controlled biochemical reactions within living cells.[1] They can be derived from various sources, including neural stem cells and self-assembling proteins.[2][3]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Oerlemans, Roy A. J. F.; Timmermans, Suzanne B. P. E.; van Hest, Jan C. M. (August 1, 2021). \"Artificial Organelles: Towards Adding or Restoring Intracellular Activity\". ChemBioChem. 22 (12): 2051–2078. doi:10.1002/cbic.202000850. PMC 8252369. PMID 33450141.",
+                            "<info> ^ Wang, Jiayi; Zhao, Mengke; Wang, Meina; Fu, Dong; Kang, Lin; Xu, Yu; Shen, Liming; Jin, Shilin; Wang, Liang; Liu, Jing (8 September 2024). \"Human neural stem cell-derived artificial organelles to improve oxidative phosphorylation\". Nature Communications. 15 (1) 7855. Bibcode:2024NatCo..15.7855W. doi:10.1038/s41467-024-52171-2. PMC 11381526. PMID 39245680.",
+                            "<info> ^ Lin, Peng; Zhang, Shiwei; Komatsubara, Futa; Konishi, Hiroaki; Nakata, Eiji; Morii, Takashi (February 2025). \"Artificial Compartments Encapsulating Enzymatic Reactions: Towards the Construction of Artificial Organelles\". ChemPlusChem. 90 (2) e202400483. doi:10.1002/cplu.202400483. PMID 39351818."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

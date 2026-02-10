@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/vitamin_e": {
+                "title": "Vitamin E",
+                "url": "https://en.wikipedia.org/wiki/vitamin_e",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,195 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/articaine": {
+                "title": "Articaine",
+                "url": "https://en.wikipedia.org/wiki/articaine",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Articaine is a dental amide-type local anesthetic. It is the most widely used local anesthetic in a number of European countries[3] and is available in many countries. It is the only local anaesthetic to contain a thiophene ring, meaning it can be described as 'thiophenic'; this conveys lipid solubility.[4]",
+                    "",
+                    "=== Medical uses ===",
+                    "Articaine is used for pain control. Articaine causes a transient and completely reversible state of anesthesia (loss of sensation) during (dental) procedures.[5]: 3",
+                    "Articaine (as Cyklx) is indicated for ocular surface anesthesia prior to ocular procedures and/or intraocular injections.[1]",
+                    "In dentistry, articaine is used mainly for infiltration injections. Articaine, while not proven, has been associated with higher risk of nerve damage when used as a block technique.[6] However, articaine is able to penetrate dense cortical bone — as found in the lower jaw (mandible) — more than most other local anaesthetics.",
+                    "In people with hypokalemic sensory overstimulation, lidocaine is not very effective, but articaine works well.[7]",
+                    "Studies comparing lidocaine and articaine found that articaine is more effective than lidocaine in anaesthetising the posterior first molar region.[8] Articaine has been found to be 3.81 times more likely than lidocaine to produce successful anaesthesia when used for infiltration injections. However, there is no evidence to support the use of articaine over lidocaine for inferior alveolar nerve blocks.[9] Furthermore, articaine has been demonstrated to be superior to lidocaine for use of supplementary infiltration following persistent pain despite a successful inferior dental nerve block with lidocaine.[10]",
+                    "A recent systematic review with meta-analysis has showed that buccal infiltration of articaine for mandibular first molars with symptomatic irreversible pulpitis can be employed effectively in clinical practice.[11]",
+                    "",
+                    "=== Contraindications ===",
+                    "<info> Allergy to amide-type anesthetics",
+                    "<info> Allergy to metabisulfites[5]: 320",
+                    "<info> Idiopathic or congenital methemoglobinemia[12] (not a concern in dental practice due to the small volumes of articaine used)[5]: 73",
+                    "<info> Hemoglobinopathy, such as sickle cell disease[12]",
+                    "Articaine is not contraindicated in people with sulfa allergies, as there is no cross-allergenicity between articaine's sulphur-bearing thiophene ring  and sulfonamides.[13]",
+                    "Methylparaben is no longer present in any dental local anesthetic formula available in North America.[5]: 73",
+                    "",
+                    "=== Structure and metabolism ===",
+                    "The amide structure of articaine is similar to that of other local anesthetics, but its molecular structure differs through the presence of a thiophene ring instead of a benzene ring. Articaine is exceptional because it contains an additional ester group that is metabolized by esterases in blood and tissue.[3] The elimination of articaine is exponential with a half-life of 20 minutes.[14][15] Since articaine is hydrolized very quickly in the blood, the risk of systemic intoxication seems to be lower than with other anesthetics, especially if repeated injection is performed.[2]",
+                    "",
+                    "=== History ===",
+                    "This drug was synthesized by pharmacologist Roman Muschaweck [de] and chemist Robert Rippel.[16] Muschaweck received a \"O. Schmiedeberg\" medal by the German Society for Experimental and Clinical Pharmacology and Toxicology for his work in 2002.[17] It was brought to the German market in 1976 by Hoechst AG, a life-sciences German company (now Sanofi-Aventis), under the brand name Ultracain.[16][18] This drug was also referred to as \"carticaine\" until 1984.[5]: 71",
+                    "In 1983, it was brought into the North American market, to Canada, under the name Ultracaine for dental use, manufactured in Germany and distributed by Hoechst-Marion-Roussel. This brand is manufactured in Germany by Sanofi-Aventis and distributed in North America by Hansamed Limited (since 1999). After Ultracaine's patent protection expired, generic versions arrived to the Canadian market: (in order of appearance) Septanest (Septodont), Astracaine, (originally by AstraZeneca and now a Dentsply product), Zorcaine (Carestream Health/Kodak) and Orabloc (Pierrel).[citation needed]",
+                    "It was approved by the FDA in April 2000, and became available in the United States two months later under the brand name Septocaine, an anesthetic/vasoconstrictor combination with Epinephrine 1:100,000 (brand name Septodont). Zorcaine became available there a few years later, also. Articadent (Dentsply) became available in the United States in October 2010. The three brands available in the United States are all manufactured for these companies by Novocol Pharmaceuticals Inc. (Canada). Ubistesin and Ubistesin Forte (3M ESPE) are also widely used in the United States and Europe. Orabloc (Pierrel) is aseptically manufactured and was approved by the FDA in 2010, became available in Canada in 2011, and in Europe from 2013.",
+                    "",
+                    "=== Society and culture ===",
+                    "Paresthesia (pins and needles), a short-to-long-term numbness or altered sensation affecting a nerve, is a well-known complication of injectable local anesthetics and has been present even before articaine was available.[19]",
+                    "An article by Haas and Lennon published in 1993[20] seems to be the original source for the controversy surrounding articaine. This paper analyzed 143 cases reported in to the Royal College of Dental Surgeons of Ontario (RCDSO) over a 21-year period. The results from their analysis seemed to indicate that 4% local anesthetics had a higher incidence of causing paresthesia, an undesirable temporary or permanent complication, after the injection. The authors concluded that “...the overall incidence of paresthesia following local anesthetic administration for non-surgical procedures in dentistry in Ontario is very low, with only 14 cases being reported out of an estimated 11,000,000 injections in 1993. However if paresthesia does occur, the results of this study are consistent with the suggestion that it is significantly more likely to do so if either articaine or prilocaine is used.”",
+                    "In another paper by the same authors,[21] 19 reported paresthesia cases in Ontario for 1994 were reviewed, concluding that the incidence of paresthesia was 2.05 per million injections of 4% anesthetic drugs. Another follow up study by Miller and Haas published in 2000,[22] concluded that the incidence of paresthesia from either prilocaine or articaine (the only two 4% drugs in the dental market) was close to 1:500,000 injections. (An average dentist gives around 1,800 injections in a year).[23]",
+                    "Almost all recorded cases of long-term numbness or altered sensation (paresthesia) seem only to be present when this anesthetic is used for dental use (no PubMed references for paresthesia with articaine for other medical specialties). Also, in the vast majority of the reports, only the lingual nerve was affected.",
+                    "Nonetheless, direct damage to the nerve caused by 4% drugs has never been scientifically proven.[24]",
+                    "Some research points to needle trauma as the cause of the paresthesia events.[6][25]",
+                    "Articaine is available for the North American dental market:",
+                    "<info> In Canada:\nAs articaine hydrochloride 4% with epinephrine 1:100,000 (0,01 mg/ml)\nUbistesin Forte\nUltracaine DSF\nSeptanest SP\nAstracaine Forte\nZorcaine\nOrabloc (articaine hydrochloride 4% and epinephrine 1:100,000)\nAs articaine hydrochloride 4% with epinephrine 1:200,000 (0,005 mg/ml)\nUbistesin\nUltracaine DS\nSeptanest N\nAstracaine\nOrabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                    "<info> In the US:\nAs articaine hydrochloride 4% with epinephrine 1:100,000\nSeptocaine with epinephrine 1:100,000\nZorcaine\nArticadent with epinephrine 1:100,000\nOrabloc (articaine hydrochloride 4% and epinephrine 1:100,000)\nAs articaine hydrochloride 4% with epinephrine 1:200,000\nSeptocaine with epinephrine 1:200,000\nArticadent with epinephrine 1:200,000\nOrabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                    "<info> As articaine hydrochloride 4% with epinephrine 1:100,000 (0,01 mg/ml)\nUbistesin Forte\nUltracaine DSF\nSeptanest SP\nAstracaine Forte\nZorcaine\nOrabloc (articaine hydrochloride 4% and epinephrine 1:100,000)",
+                    "<info> As articaine hydrochloride 4% with epinephrine 1:200,000 (0,005 mg/ml)\nUbistesin\nUltracaine DS\nSeptanest N\nAstracaine\nOrabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                    "<info> Orabloc (articaine hydrochloride 4% and epinephrine 1:100,000)",
+                    "<info> Orabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                    "<info> As articaine hydrochloride 4% with epinephrine 1:100,000\nSeptocaine with epinephrine 1:100,000\nZorcaine\nArticadent with epinephrine 1:100,000\nOrabloc (articaine hydrochloride 4% and epinephrine 1:100,000)",
+                    "<info> As articaine hydrochloride 4% with epinephrine 1:200,000\nSeptocaine with epinephrine 1:200,000\nArticadent with epinephrine 1:200,000\nOrabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                    "<info> Septocaine with epinephrine 1:100,000",
+                    "<info> Articadent with epinephrine 1:100,000",
+                    "<info> Orabloc (articaine hydrochloride 4% and epinephrine 1:100,000)",
+                    "<info> Septocaine with epinephrine 1:200,000",
+                    "<info> Articadent with epinephrine 1:200,000",
+                    "<info> Orabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                    "An epinephrine-free (adrenaline-free) version is available in Europe under the brand name Ultracain D. However, version with epinephrine (adrenaline) is available in Europe under the brand name Supracain 4% with epinephrine concentration of 1:200,000.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b \"Full Prescribing Information\" (PDF). U.S. Food and Drug Administration. 1 August 2025. Retrieved 15 December 2025.",
+                    "<info> ^ a b Oertel R, Rahn R, Kirch W (December 1997). \"Clinical pharmacokinetics of articaine\". Clinical Pharmacokinetics. 33 (6): 417–425. doi:10.2165/00003088-199733060-00002. PMID 9435991. S2CID 38455660.",
+                    "<info> ^ a b Oertel R, Ebert U, Rahn R, Kirch W. Clinical pharmacokinetics of articaine. Clin Pharmacokinet. 1997 Dec;33(6):418.",
+                    "<info> ^ Snoeck M (5 June 2012). \"Articaine: a review of its use for local and regional anesthesia\". Local and Regional Anesthesia. 5: 23–33. doi:10.2147/LRA.S16682. PMC 3417979. PMID 22915899.",
+                    "<info> ^ a b c d e Malamed SF (2004). Handbook of Local Anaesthesia (5th ed.). St. Louis: Mosby. ISBN 978-0-323-02449-5.",
+                    "<info> ^ a b Pogrel MA (April 2007). \"Permanent nerve damage from inferior alveolar nerve blocks--an update to include articaine\". Journal of the California Dental Association. 35 (4): 271–273. doi:10.1080/19424396.2007.12221225. PMID 17612365. S2CID 40570175.",
+                    "<info> ^ Segal MM, Rogers GF, Needleman HL, Chapman CA (December 2007). \"Hypokalemic sensory overstimulation\". Journal of Child Neurology. 22 (12): 1408–1410. doi:10.1177/0883073807307095. PMID 18174562. S2CID 35659227.",
+                    "<info> ^ Katyal V (April 2010). \"The efficacy and safety of articaine versus lignocaine in dental treatments: a meta-analysis\". Journal of Dentistry. 38 (4): 307–317. doi:10.1016/j.jdent.2009.12.003. PMID 20006669.",
+                    "<info> ^ Brandt RG, Anderson PF, McDonald NJ, Sohn W, Peters MC (May 2011). \"The pulpal anesthetic efficacy of articaine versus lidocaine in dentistry: a meta-analysis\". Journal of the American Dental Association. 142 (5): 493–504. doi:10.14219/jada.archive.2011.0219. PMID 21531931.",
+                    "<info> ^ Kung J, McDonagh M, Sedgley CM (November 2015). \"Does Articaine Provide an Advantage over Lidocaine in Patients with Symptomatic Irreversible Pulpitis? A Systematic Review and Meta-analysis\". Journal of Endodontics. 41 (11): 1784–1794. doi:10.1016/j.joen.2015.07.001. PMID 26293174.",
+                    "<info> ^ Saatchi M, Mohammadi G, Iranmanesh P, Khademi A, Farhad A, Aggarwal V, et al. (February 2025). \"Articaine buccal infiltration for mandibular first molars with symptomatic irreversible pulpitis: is it as effective as inferior alveolar nerve block with lidocaine? a systematic review and meta-analysis\". Clinical Oral Investigations. 29 (3): 146. doi:10.1007/s00784-025-06229-0. PMID 39982504.",
+                    "<info> ^ a b Malamed SF (2013). Handbook of Local Anaesthesia (6th ed.). St. Louis: Mosby. p. 65.",
+                    "<info> ^ Becker DE, Reed KL (2006). \"Essentials of local anesthetic pharmacology\". Anesthesia Progress. 53 (3): 98–108, quiz 109–10. doi:10.2344/0003-3006(2006)53[98:EOLAP]2.0.CO;2. PMC 1693664. PMID 17175824.",
+                    "<info> ^ HornkeI, Eckert HG, Rupp W (1984). \"Pharnakokinetik und Metabolismus von Articain nach intramuskularer Injektion am mannlichen Probanden\". Dtsch Z Mund Kiefer Gesichts Chir. 8: 67–71.",
+                    "<info> ^ Kirch W, Kitteringham N, Lambers G, Hajdu P, Ohnhaus EE (September 1983). \"Die klinische Pharmakokinetik von Articain nach intraoraler und intramuskulärer Applikation\". Schweiz Monatsschr Zahnheilkd. 93 (9): 714–719.",
+                    "<info> ^ a b \"Sanofi: 40 Jahre Ultracain in der Lokalanästhesie\". zm-online (in German). 19 February 2016. Retrieved 2 August 2021.",
+                    "<info> ^ \"O. Schmiedeberg-Plakette\". dgpt-online.de. Archived from the original on 2 August 2021. Retrieved 2 August 2021.",
+                    "<info> ^ \"Articain\". roempp.thieme.de. Archived from the original on 3 June 2020. Retrieved 2 August 2021.",
+                    "<info> ^ Pogrel MA, Thamby S (July 2000). \"Permanent nerve involvement resulting from inferior alveolar nerve blocks\". Journal of the American Dental Association. 131 (7): 901–907. doi:10.14219/jada.archive.2000.0308. PMID 10916328.",
+                    "<info> ^ Haas DA, Lennon D (April 1995). \"A 21 year retrospective study of reports of paresthesia following local anesthetic administration\". Journal. 61 (4): 319–20, 323–6, 329–30. PMID 7736335.",
+                    "<info> ^ Haas DA, Lennon D (1996). \"A review of local anesthetic-induced paraesthesia in Ontario in 1994\". J Dent Res. 75 (Special Issue): 247.",
+                    "<info> ^ Miller PA, Haas DA (2000). \"Incidence of local anesthetic-induced neuropathies in Ontario from 1994–1998\". J Dent Res. 79 (Special Issue): 627.",
+                    "<info> ^ Haas DA, Lennon D (April 1995). \"Local anesthetic use by dentists in Ontario\". Journal (Canadian Dental Association). 61 (4): 297–304. PMID 7736333.",
+                    "<info> ^ Malamed SF (December 2006). \"Local anesthetics: dentistry's most important drugs, clinical update 2006\". Journal of the California Dental Association. 34 (12): 971–976. doi:10.1080/19424396.2006.12222270. PMID 17260521. S2CID 7863445.",
+                    "<info> ^ Hoffmeister B (December 1991). \"[Morphological changes of peripheral nerves following intraneural injection of local anesthetic]\". Deutsche Zahnarztliche Zeitschrift (in German). 46 (12): 828–830. PMID 1817900.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Haas DA (2006). \"Articaine and paresthesia: epidemiological studies\". The Journal of the American College of Dentists. 73 (3): 5–10. PMID 17477212.",
+                    "<info> Pogrel MA, Bryan J, Regezi J (August 1995). \"Nerve damage associated with inferior alveolar nerve blocks\". Journal of the American Dental Association. 126 (8): 1150–1155. doi:10.14219/jada.archive.1995.0336. PMID 7560573.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Articaine is a dental amide-type local anesthetic. It is the most widely used local anesthetic in a number of European countries[3] and is available in many countries. It is the only local anaesthetic to contain a thiophene ring, meaning it can be described as 'thiophenic'; this conveys lipid solubility.[4]"
+                        ]
+                    },
+                    "Medical uses": {
+                        "content": [
+                            "Articaine is used for pain control. Articaine causes a transient and completely reversible state of anesthesia (loss of sensation) during (dental) procedures.[5]: 3",
+                            "Articaine (as Cyklx) is indicated for ocular surface anesthesia prior to ocular procedures and/or intraocular injections.[1]",
+                            "In dentistry, articaine is used mainly for infiltration injections. Articaine, while not proven, has been associated with higher risk of nerve damage when used as a block technique.[6] However, articaine is able to penetrate dense cortical bone — as found in the lower jaw (mandible) — more than most other local anaesthetics.",
+                            "In people with hypokalemic sensory overstimulation, lidocaine is not very effective, but articaine works well.[7]",
+                            "Studies comparing lidocaine and articaine found that articaine is more effective than lidocaine in anaesthetising the posterior first molar region.[8] Articaine has been found to be 3.81 times more likely than lidocaine to produce successful anaesthesia when used for infiltration injections. However, there is no evidence to support the use of articaine over lidocaine for inferior alveolar nerve blocks.[9] Furthermore, articaine has been demonstrated to be superior to lidocaine for use of supplementary infiltration following persistent pain despite a successful inferior dental nerve block with lidocaine.[10]",
+                            "A recent systematic review with meta-analysis has showed that buccal infiltration of articaine for mandibular first molars with symptomatic irreversible pulpitis can be employed effectively in clinical practice.[11]"
+                        ]
+                    },
+                    "Contraindications": {
+                        "content": [
+                            "<info> Allergy to amide-type anesthetics",
+                            "<info> Allergy to metabisulfites[5]: 320",
+                            "<info> Idiopathic or congenital methemoglobinemia[12] (not a concern in dental practice due to the small volumes of articaine used)[5]: 73",
+                            "<info> Hemoglobinopathy, such as sickle cell disease[12]",
+                            "Articaine is not contraindicated in people with sulfa allergies, as there is no cross-allergenicity between articaine's sulphur-bearing thiophene ring  and sulfonamides.[13]",
+                            "Methylparaben is no longer present in any dental local anesthetic formula available in North America.[5]: 73"
+                        ]
+                    },
+                    "Structure and metabolism": {
+                        "content": [
+                            "The amide structure of articaine is similar to that of other local anesthetics, but its molecular structure differs through the presence of a thiophene ring instead of a benzene ring. Articaine is exceptional because it contains an additional ester group that is metabolized by esterases in blood and tissue.[3] The elimination of articaine is exponential with a half-life of 20 minutes.[14][15] Since articaine is hydrolized very quickly in the blood, the risk of systemic intoxication seems to be lower than with other anesthetics, especially if repeated injection is performed.[2]"
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "This drug was synthesized by pharmacologist Roman Muschaweck [de] and chemist Robert Rippel.[16] Muschaweck received a \"O. Schmiedeberg\" medal by the German Society for Experimental and Clinical Pharmacology and Toxicology for his work in 2002.[17] It was brought to the German market in 1976 by Hoechst AG, a life-sciences German company (now Sanofi-Aventis), under the brand name Ultracain.[16][18] This drug was also referred to as \"carticaine\" until 1984.[5]: 71",
+                            "In 1983, it was brought into the North American market, to Canada, under the name Ultracaine for dental use, manufactured in Germany and distributed by Hoechst-Marion-Roussel. This brand is manufactured in Germany by Sanofi-Aventis and distributed in North America by Hansamed Limited (since 1999). After Ultracaine's patent protection expired, generic versions arrived to the Canadian market: (in order of appearance) Septanest (Septodont), Astracaine, (originally by AstraZeneca and now a Dentsply product), Zorcaine (Carestream Health/Kodak) and Orabloc (Pierrel).[citation needed]",
+                            "It was approved by the FDA in April 2000, and became available in the United States two months later under the brand name Septocaine, an anesthetic/vasoconstrictor combination with Epinephrine 1:100,000 (brand name Septodont). Zorcaine became available there a few years later, also. Articadent (Dentsply) became available in the United States in October 2010. The three brands available in the United States are all manufactured for these companies by Novocol Pharmaceuticals Inc. (Canada). Ubistesin and Ubistesin Forte (3M ESPE) are also widely used in the United States and Europe. Orabloc (Pierrel) is aseptically manufactured and was approved by the FDA in 2010, became available in Canada in 2011, and in Europe from 2013."
+                        ]
+                    },
+                    "Society and culture": {
+                        "content": [
+                            "Paresthesia (pins and needles), a short-to-long-term numbness or altered sensation affecting a nerve, is a well-known complication of injectable local anesthetics and has been present even before articaine was available.[19]",
+                            "An article by Haas and Lennon published in 1993[20] seems to be the original source for the controversy surrounding articaine. This paper analyzed 143 cases reported in to the Royal College of Dental Surgeons of Ontario (RCDSO) over a 21-year period. The results from their analysis seemed to indicate that 4% local anesthetics had a higher incidence of causing paresthesia, an undesirable temporary or permanent complication, after the injection. The authors concluded that “...the overall incidence of paresthesia following local anesthetic administration for non-surgical procedures in dentistry in Ontario is very low, with only 14 cases being reported out of an estimated 11,000,000 injections in 1993. However if paresthesia does occur, the results of this study are consistent with the suggestion that it is significantly more likely to do so if either articaine or prilocaine is used.”",
+                            "In another paper by the same authors,[21] 19 reported paresthesia cases in Ontario for 1994 were reviewed, concluding that the incidence of paresthesia was 2.05 per million injections of 4% anesthetic drugs. Another follow up study by Miller and Haas published in 2000,[22] concluded that the incidence of paresthesia from either prilocaine or articaine (the only two 4% drugs in the dental market) was close to 1:500,000 injections. (An average dentist gives around 1,800 injections in a year).[23]",
+                            "Almost all recorded cases of long-term numbness or altered sensation (paresthesia) seem only to be present when this anesthetic is used for dental use (no PubMed references for paresthesia with articaine for other medical specialties). Also, in the vast majority of the reports, only the lingual nerve was affected.",
+                            "Nonetheless, direct damage to the nerve caused by 4% drugs has never been scientifically proven.[24]",
+                            "Some research points to needle trauma as the cause of the paresthesia events.[6][25]",
+                            "Articaine is available for the North American dental market:",
+                            "<info> In Canada:\nAs articaine hydrochloride 4% with epinephrine 1:100,000 (0,01 mg/ml)\nUbistesin Forte\nUltracaine DSF\nSeptanest SP\nAstracaine Forte\nZorcaine\nOrabloc (articaine hydrochloride 4% and epinephrine 1:100,000)\nAs articaine hydrochloride 4% with epinephrine 1:200,000 (0,005 mg/ml)\nUbistesin\nUltracaine DS\nSeptanest N\nAstracaine\nOrabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                            "<info> In the US:\nAs articaine hydrochloride 4% with epinephrine 1:100,000\nSeptocaine with epinephrine 1:100,000\nZorcaine\nArticadent with epinephrine 1:100,000\nOrabloc (articaine hydrochloride 4% and epinephrine 1:100,000)\nAs articaine hydrochloride 4% with epinephrine 1:200,000\nSeptocaine with epinephrine 1:200,000\nArticadent with epinephrine 1:200,000\nOrabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                            "<info> As articaine hydrochloride 4% with epinephrine 1:100,000 (0,01 mg/ml)\nUbistesin Forte\nUltracaine DSF\nSeptanest SP\nAstracaine Forte\nZorcaine\nOrabloc (articaine hydrochloride 4% and epinephrine 1:100,000)",
+                            "<info> As articaine hydrochloride 4% with epinephrine 1:200,000 (0,005 mg/ml)\nUbistesin\nUltracaine DS\nSeptanest N\nAstracaine\nOrabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                            "<info> Orabloc (articaine hydrochloride 4% and epinephrine 1:100,000)",
+                            "<info> Orabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                            "<info> As articaine hydrochloride 4% with epinephrine 1:100,000\nSeptocaine with epinephrine 1:100,000\nZorcaine\nArticadent with epinephrine 1:100,000\nOrabloc (articaine hydrochloride 4% and epinephrine 1:100,000)",
+                            "<info> As articaine hydrochloride 4% with epinephrine 1:200,000\nSeptocaine with epinephrine 1:200,000\nArticadent with epinephrine 1:200,000\nOrabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                            "<info> Septocaine with epinephrine 1:100,000",
+                            "<info> Articadent with epinephrine 1:100,000",
+                            "<info> Orabloc (articaine hydrochloride 4% and epinephrine 1:100,000)",
+                            "<info> Septocaine with epinephrine 1:200,000",
+                            "<info> Articadent with epinephrine 1:200,000",
+                            "<info> Orabloc (articaine hydrochloride 4% and epinephrine 1:200,000)",
+                            "An epinephrine-free (adrenaline-free) version is available in Europe under the brand name Ultracain D. However, version with epinephrine (adrenaline) is available in Europe under the brand name Supracain 4% with epinephrine concentration of 1:200,000."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b \"Full Prescribing Information\" (PDF). U.S. Food and Drug Administration. 1 August 2025. Retrieved 15 December 2025.",
+                            "<info> ^ a b Oertel R, Rahn R, Kirch W (December 1997). \"Clinical pharmacokinetics of articaine\". Clinical Pharmacokinetics. 33 (6): 417–425. doi:10.2165/00003088-199733060-00002. PMID 9435991. S2CID 38455660.",
+                            "<info> ^ a b Oertel R, Ebert U, Rahn R, Kirch W. Clinical pharmacokinetics of articaine. Clin Pharmacokinet. 1997 Dec;33(6):418.",
+                            "<info> ^ Snoeck M (5 June 2012). \"Articaine: a review of its use for local and regional anesthesia\". Local and Regional Anesthesia. 5: 23–33. doi:10.2147/LRA.S16682. PMC 3417979. PMID 22915899.",
+                            "<info> ^ a b c d e Malamed SF (2004). Handbook of Local Anaesthesia (5th ed.). St. Louis: Mosby. ISBN 978-0-323-02449-5.",
+                            "<info> ^ a b Pogrel MA (April 2007). \"Permanent nerve damage from inferior alveolar nerve blocks--an update to include articaine\". Journal of the California Dental Association. 35 (4): 271–273. doi:10.1080/19424396.2007.12221225. PMID 17612365. S2CID 40570175.",
+                            "<info> ^ Segal MM, Rogers GF, Needleman HL, Chapman CA (December 2007). \"Hypokalemic sensory overstimulation\". Journal of Child Neurology. 22 (12): 1408–1410. doi:10.1177/0883073807307095. PMID 18174562. S2CID 35659227.",
+                            "<info> ^ Katyal V (April 2010). \"The efficacy and safety of articaine versus lignocaine in dental treatments: a meta-analysis\". Journal of Dentistry. 38 (4): 307–317. doi:10.1016/j.jdent.2009.12.003. PMID 20006669.",
+                            "<info> ^ Brandt RG, Anderson PF, McDonald NJ, Sohn W, Peters MC (May 2011). \"The pulpal anesthetic efficacy of articaine versus lidocaine in dentistry: a meta-analysis\". Journal of the American Dental Association. 142 (5): 493–504. doi:10.14219/jada.archive.2011.0219. PMID 21531931.",
+                            "<info> ^ Kung J, McDonagh M, Sedgley CM (November 2015). \"Does Articaine Provide an Advantage over Lidocaine in Patients with Symptomatic Irreversible Pulpitis? A Systematic Review and Meta-analysis\". Journal of Endodontics. 41 (11): 1784–1794. doi:10.1016/j.joen.2015.07.001. PMID 26293174.",
+                            "<info> ^ Saatchi M, Mohammadi G, Iranmanesh P, Khademi A, Farhad A, Aggarwal V, et al. (February 2025). \"Articaine buccal infiltration for mandibular first molars with symptomatic irreversible pulpitis: is it as effective as inferior alveolar nerve block with lidocaine? a systematic review and meta-analysis\". Clinical Oral Investigations. 29 (3): 146. doi:10.1007/s00784-025-06229-0. PMID 39982504.",
+                            "<info> ^ a b Malamed SF (2013). Handbook of Local Anaesthesia (6th ed.). St. Louis: Mosby. p. 65.",
+                            "<info> ^ Becker DE, Reed KL (2006). \"Essentials of local anesthetic pharmacology\". Anesthesia Progress. 53 (3): 98–108, quiz 109–10. doi:10.2344/0003-3006(2006)53[98:EOLAP]2.0.CO;2. PMC 1693664. PMID 17175824.",
+                            "<info> ^ HornkeI, Eckert HG, Rupp W (1984). \"Pharnakokinetik und Metabolismus von Articain nach intramuskularer Injektion am mannlichen Probanden\". Dtsch Z Mund Kiefer Gesichts Chir. 8: 67–71.",
+                            "<info> ^ Kirch W, Kitteringham N, Lambers G, Hajdu P, Ohnhaus EE (September 1983). \"Die klinische Pharmakokinetik von Articain nach intraoraler und intramuskulärer Applikation\". Schweiz Monatsschr Zahnheilkd. 93 (9): 714–719.",
+                            "<info> ^ a b \"Sanofi: 40 Jahre Ultracain in der Lokalanästhesie\". zm-online (in German). 19 February 2016. Retrieved 2 August 2021.",
+                            "<info> ^ \"O. Schmiedeberg-Plakette\". dgpt-online.de. Archived from the original on 2 August 2021. Retrieved 2 August 2021.",
+                            "<info> ^ \"Articain\". roempp.thieme.de. Archived from the original on 3 June 2020. Retrieved 2 August 2021.",
+                            "<info> ^ Pogrel MA, Thamby S (July 2000). \"Permanent nerve involvement resulting from inferior alveolar nerve blocks\". Journal of the American Dental Association. 131 (7): 901–907. doi:10.14219/jada.archive.2000.0308. PMID 10916328.",
+                            "<info> ^ Haas DA, Lennon D (April 1995). \"A 21 year retrospective study of reports of paresthesia following local anesthetic administration\". Journal. 61 (4): 319–20, 323–6, 329–30. PMID 7736335.",
+                            "<info> ^ Haas DA, Lennon D (1996). \"A review of local anesthetic-induced paraesthesia in Ontario in 1994\". J Dent Res. 75 (Special Issue): 247.",
+                            "<info> ^ Miller PA, Haas DA (2000). \"Incidence of local anesthetic-induced neuropathies in Ontario from 1994–1998\". J Dent Res. 79 (Special Issue): 627.",
+                            "<info> ^ Haas DA, Lennon D (April 1995). \"Local anesthetic use by dentists in Ontario\". Journal (Canadian Dental Association). 61 (4): 297–304. PMID 7736333.",
+                            "<info> ^ Malamed SF (December 2006). \"Local anesthetics: dentistry's most important drugs, clinical update 2006\". Journal of the California Dental Association. 34 (12): 971–976. doi:10.1080/19424396.2006.12222270. PMID 17260521. S2CID 7863445.",
+                            "<info> ^ Hoffmeister B (December 1991). \"[Morphological changes of peripheral nerves following intraneural injection of local anesthetic]\". Deutsche Zahnarztliche Zeitschrift (in German). 46 (12): 828–830. PMID 1817900."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Haas DA (2006). \"Articaine and paresthesia: epidemiological studies\". The Journal of the American College of Dentists. 73 (3): 5–10. PMID 17477212.",
+                            "<info> Pogrel MA, Bryan J, Regezi J (August 1995). \"Nerve damage associated with inferior alveolar nerve blocks\". Journal of the American Dental Association. 126 (8): 1150–1155. doi:10.14219/jada.archive.1995.0336. PMID 7560573."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

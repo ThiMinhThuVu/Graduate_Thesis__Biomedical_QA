@@ -1,0 +1,121 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/uniparental_disomy": {
+                "title": "Uniparental disomy",
+                "url": "https://en.wikipedia.org/wiki/uniparental_disomy",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Uniparental disomy (UPD) occurs when a person receives two copies of a chromosome, or of part of a chromosome, from one parent and no copy from the other.[1] UPD can be the result of heterodisomy, in which a pair of non-identical chromosomes are inherited from one parent (an earlier stage meiosis I error) or isodisomy, in which a single chromosome from one parent is duplicated (a later stage meiosis II error).[2] Uniparental disomy may have clinical relevance for several reasons. For example, either isodisomy or heterodisomy can disrupt parent-specific genomic imprinting, resulting in imprinting disorders. Additionally, isodisomy leads to large blocks of homozygosity, which may lead to the uncovering of recessive genes, a similar phenomenon seen in inbred children of consanguineous partners.[3]",
+                    "UPD has been found to occur in about 1 in 2,000 births.[4]",
+                    "",
+                    "=== Pathophysiology ===",
+                    "UPD can occur as a random event during the formation of egg cells or sperm cells or may happen in early fetal development. It can also occur during trisomic rescue.",
+                    "<info> When the child receives two (different) homologous chromosomes (inherited from both grandparents) from one parent, this is called heterodisomic UPD. Heterodisomy (heterozygous) indicates a meiosis I error if the gene loci in question did not cross over.[5]",
+                    "<info> When the child receives two (identical) replica copies of a single homologue of a chromosome, this is called an isodisomic UPD. Isodisomy (homozygous) indicates either a meiosis II (if the gene loci in question did not cross over[5]) or postzygotic chromosomal duplication.",
+                    "<info> A meiosis I error can result in isodisomic UPD if the gene loci in question crossed over, for example, a distal isodisomy would be due to duplicated gene loci from the maternal grandmother that crossed over and due to an error during meiosis I, ended up in the same gamete.[5]",
+                    "<info> A meiosis II error can result in heterodisomy UPD if the gene loci crossed over in a similar fashion.[5]",
+                    "",
+                    "=== Phenotype ===",
+                    "Most occurrences of UPD result in no phenotypical anomalies.[citation needed] However, if the UPD-causing event happened during meiosis II, the genotype may include identical copies of the uniparental chromosome (isodisomy), leading to the manifestation of rare recessive disorders. UPD can be suspected in an individual manifesting a recessive disorder where only one parent is a carrier.",
+                    "Uniparental inheritance of imprinted genes can also result in phenotypical anomalies. Although few imprinted genes have been identified, uniparental inheritance of an imprinted gene can result in the loss of gene function, which can lead to delayed development, intellectual disability, or other medical problems.[citation needed]",
+                    "<info> The most well-known conditions include Prader–Willi syndrome and Angelman syndrome. Both of these disorders can be caused by UPD or other errors in imprinting involving genes on the long arm of chromosome 15.[6]",
+                    "<info> Other conditions, such as Beckwith–Wiedemann syndrome, are associated with abnormalities of imprinted genes on the short arm of chromosome 11.",
+                    "<info> Chromosome 14 is also known to cause particular symptoms such as skeletal abnormalities, intellectual disability, and joint contractures, among others.[7][8]",
+                    "UPD has rarely been studied prospectively, with most reports focusing on either known conditions or incidental findings. It has been proposed that the incidence may not be as low as believed; rather, it may be underreported.[9]",
+                    "",
+                    "=== All chromosomes ===",
+                    "Genome wide UPD, also called uniparental diploidy, is when all chromosomes are inherited from one parent. Only in mosaic form can this phenomenon be compatible with life. As of 2017, there have only been 18 reported cases of genome wide UPD.[10]",
+                    "",
+                    "=== History ===",
+                    "Eric Engel first proposed the concept of uniparental disomy in 1980 as both homologous chromosomes are inherited from one parent, with no contribution (for that chromosome) from the other parent.[11][12] Eight years later in 1988, the first clinical case of UPD was reported and involved a girl with cystic fibrosis and short stature who carried two copies of maternal chromosome 7.[13] Since 1991, out of the 47 possible disomies, 29 have been identified among individuals ascertained for medical reasons. This includes chromosomes 2, 5–11, 13–16, 21 and 22.[citation needed][needs update]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Robinson WP (May 2000). \"Mechanisms leading to uniparental disomy and their clinical consequences\". BioEssays. 22 (5): 452–9. doi:10.1002/(SICI)1521-1878(200005)22:5<452::AID-BIES7>3.0.CO;2-K. PMID 10797485. S2CID 19446912.",
+                    "<info> ^ Human Molecular Genetics 3. Garland Science. pp. 58. ISBN 0-8153-4183-0.",
+                    "<info> ^ King DA (2013). \"A novel method for detecting uniparental disomy from trio genotypes identifies a significant excess in children with developmental disorders\". Genome Research. 24 (4): 673–687. doi:10.1101/gr.160465.113. PMC 3975066. PMID 24356988.",
+                    "<info> ^ Nakka, Priyanka; Smith, Samuel Pattillo; O'Donnell-Luria, Anne H.; McManus, Kimberly F.; Agee, Michelle; Auton, Adam; Bell, Robert K.; Bryc, Katarzyna; Elson, Sarah L.; Fontanillas, Pierre; Furlotte, Nicholas A. (2019-11-07). \"Characterization of Prevalence and Health Consequences of Uniparental Disomy in Four Million Individuals from the General Population\". The American Journal of Human Genetics. 105 (5): 921–932. doi:10.1016/j.ajhg.2019.09.016. ISSN 0002-9297. PMC 6848996. PMID 31607426.",
+                    "<info> ^ a b c d \"Meiosis: Uniparental Disomy\". Archived from the original on 16 May 2021. Retrieved 29 February 2016.",
+                    "<info> ^ Angelman Syndrome, Online Mendelian Inheritance in Man",
+                    "<info> ^ \"OMIM Entry - # 608149 - KAGAMI-OGATA SYNDROME\". omim.org. Retrieved 1 September 2020.",
+                    "<info> ^ Duncan, Malcolm (1 September 2020). \"Chromosome 14 uniparental disomy syndrome information Diseases Database\". www.diseasesdatabase.com. Retrieved 1 September 2020.",
+                    "<info> ^ Bhatt, Arpan; Liehr, Thomas; Bakshi, Sonal R. (2013). \"Phenotypic spectrum in uniparental disomy: Low incidence or lack of study\". Indian Journal of Human Genetics. 19 (3): 131–34. doi:10.4103/0971-6866.120819. PMC 3841555. PMID 24339543. Archived from the original on 2014-02-20.",
+                    "<info> ^ Bens, Susanne; Luedeke, Manuel; Richter, Tanja; Graf, Melanie; Kolarova, Julia; Barbi, Gotthold; Lato, Krisztian; Barth, Thomas F.; Siebert, Reiner (2017). \"Mosaic genome-wide maternal isodiploidy: an extreme form of imprinting disorder presenting as prenatal diagnostic challenge\". Clinical Epigenetics. 9 111. doi:10.1186/s13148-017-0410-y. ISSN 1868-7083. PMC 5640928. PMID 29046733.",
+                    "<info> ^ Engel, E. (1980-03-01). \"A new genetic concept: the uniparental disomy and its potential effect, the isodisomy (author's transl)\". Journal de Génétique Humaine. 28 (1): 11–22. ISSN 0021-7743. PMID 7400781.",
+                    "<info> ^ del Gaudio, Daniela; Shinawi, Marwan; Astbury, Caroline; Tayeh, Marwan K.; Deak, Kristen L.; Raca, Gordana (2020-07-01). \"Diagnostic testing for uniparental disomy: a points to consider statement from the American College of Medical Genetics and Genomics (ACMG)\". Genetics in Medicine. 22 (7): 1133–1141. doi:10.1038/s41436-020-0782-9. PMID 32296163.",
+                    "<info> ^ Spence JE, Perciaccante RG, Greig GM, Willard HF, Ledbetter DH, Hejtmancik JF, Pollack MS, O'Brien WE, Beaudet AL (1988). \"Uniparental disomy as a mechanism for human genetic disease\". American Journal of Human Genetics. 42 (2): 217–226. PMC 1715272. PMID 2893543.",
+                    "",
+                    "=== External links ===",
+                    "<info> \"Uniparental disomy\". Department of Medical Genetics, University of British Columbia. Archived from the original on 2002-06-17.",
+                    "<info> T. Liehr: Cases with uniparental disomy",
+                    "<info> UPD Animations: UPD Animations",
+                    "This article incorporates public domain text from The U.S. National Library of Medicine",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Uniparental disomy (UPD) occurs when a person receives two copies of a chromosome, or of part of a chromosome, from one parent and no copy from the other.[1] UPD can be the result of heterodisomy, in which a pair of non-identical chromosomes are inherited from one parent (an earlier stage meiosis I error) or isodisomy, in which a single chromosome from one parent is duplicated (a later stage meiosis II error).[2] Uniparental disomy may have clinical relevance for several reasons. For example, either isodisomy or heterodisomy can disrupt parent-specific genomic imprinting, resulting in imprinting disorders. Additionally, isodisomy leads to large blocks of homozygosity, which may lead to the uncovering of recessive genes, a similar phenomenon seen in inbred children of consanguineous partners.[3]",
+                            "UPD has been found to occur in about 1 in 2,000 births.[4]"
+                        ]
+                    },
+                    "Pathophysiology": {
+                        "content": [
+                            "UPD can occur as a random event during the formation of egg cells or sperm cells or may happen in early fetal development. It can also occur during trisomic rescue.",
+                            "<info> When the child receives two (different) homologous chromosomes (inherited from both grandparents) from one parent, this is called heterodisomic UPD. Heterodisomy (heterozygous) indicates a meiosis I error if the gene loci in question did not cross over.[5]",
+                            "<info> When the child receives two (identical) replica copies of a single homologue of a chromosome, this is called an isodisomic UPD. Isodisomy (homozygous) indicates either a meiosis II (if the gene loci in question did not cross over[5]) or postzygotic chromosomal duplication.",
+                            "<info> A meiosis I error can result in isodisomic UPD if the gene loci in question crossed over, for example, a distal isodisomy would be due to duplicated gene loci from the maternal grandmother that crossed over and due to an error during meiosis I, ended up in the same gamete.[5]",
+                            "<info> A meiosis II error can result in heterodisomy UPD if the gene loci crossed over in a similar fashion.[5]"
+                        ]
+                    },
+                    "Phenotype": {
+                        "content": [
+                            "Most occurrences of UPD result in no phenotypical anomalies.[citation needed] However, if the UPD-causing event happened during meiosis II, the genotype may include identical copies of the uniparental chromosome (isodisomy), leading to the manifestation of rare recessive disorders. UPD can be suspected in an individual manifesting a recessive disorder where only one parent is a carrier.",
+                            "Uniparental inheritance of imprinted genes can also result in phenotypical anomalies. Although few imprinted genes have been identified, uniparental inheritance of an imprinted gene can result in the loss of gene function, which can lead to delayed development, intellectual disability, or other medical problems.[citation needed]",
+                            "<info> The most well-known conditions include Prader–Willi syndrome and Angelman syndrome. Both of these disorders can be caused by UPD or other errors in imprinting involving genes on the long arm of chromosome 15.[6]",
+                            "<info> Other conditions, such as Beckwith–Wiedemann syndrome, are associated with abnormalities of imprinted genes on the short arm of chromosome 11.",
+                            "<info> Chromosome 14 is also known to cause particular symptoms such as skeletal abnormalities, intellectual disability, and joint contractures, among others.[7][8]",
+                            "UPD has rarely been studied prospectively, with most reports focusing on either known conditions or incidental findings. It has been proposed that the incidence may not be as low as believed; rather, it may be underreported.[9]"
+                        ]
+                    },
+                    "All chromosomes": {
+                        "content": [
+                            "Genome wide UPD, also called uniparental diploidy, is when all chromosomes are inherited from one parent. Only in mosaic form can this phenomenon be compatible with life. As of 2017, there have only been 18 reported cases of genome wide UPD.[10]"
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "Eric Engel first proposed the concept of uniparental disomy in 1980 as both homologous chromosomes are inherited from one parent, with no contribution (for that chromosome) from the other parent.[11][12] Eight years later in 1988, the first clinical case of UPD was reported and involved a girl with cystic fibrosis and short stature who carried two copies of maternal chromosome 7.[13] Since 1991, out of the 47 possible disomies, 29 have been identified among individuals ascertained for medical reasons. This includes chromosomes 2, 5–11, 13–16, 21 and 22.[citation needed][needs update]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Robinson WP (May 2000). \"Mechanisms leading to uniparental disomy and their clinical consequences\". BioEssays. 22 (5): 452–9. doi:10.1002/(SICI)1521-1878(200005)22:5<452::AID-BIES7>3.0.CO;2-K. PMID 10797485. S2CID 19446912.",
+                            "<info> ^ Human Molecular Genetics 3. Garland Science. pp. 58. ISBN 0-8153-4183-0.",
+                            "<info> ^ King DA (2013). \"A novel method for detecting uniparental disomy from trio genotypes identifies a significant excess in children with developmental disorders\". Genome Research. 24 (4): 673–687. doi:10.1101/gr.160465.113. PMC 3975066. PMID 24356988.",
+                            "<info> ^ Nakka, Priyanka; Smith, Samuel Pattillo; O'Donnell-Luria, Anne H.; McManus, Kimberly F.; Agee, Michelle; Auton, Adam; Bell, Robert K.; Bryc, Katarzyna; Elson, Sarah L.; Fontanillas, Pierre; Furlotte, Nicholas A. (2019-11-07). \"Characterization of Prevalence and Health Consequences of Uniparental Disomy in Four Million Individuals from the General Population\". The American Journal of Human Genetics. 105 (5): 921–932. doi:10.1016/j.ajhg.2019.09.016. ISSN 0002-9297. PMC 6848996. PMID 31607426.",
+                            "<info> ^ a b c d \"Meiosis: Uniparental Disomy\". Archived from the original on 16 May 2021. Retrieved 29 February 2016.",
+                            "<info> ^ Angelman Syndrome, Online Mendelian Inheritance in Man",
+                            "<info> ^ \"OMIM Entry - # 608149 - KAGAMI-OGATA SYNDROME\". omim.org. Retrieved 1 September 2020.",
+                            "<info> ^ Duncan, Malcolm (1 September 2020). \"Chromosome 14 uniparental disomy syndrome information Diseases Database\". www.diseasesdatabase.com. Retrieved 1 September 2020.",
+                            "<info> ^ Bhatt, Arpan; Liehr, Thomas; Bakshi, Sonal R. (2013). \"Phenotypic spectrum in uniparental disomy: Low incidence or lack of study\". Indian Journal of Human Genetics. 19 (3): 131–34. doi:10.4103/0971-6866.120819. PMC 3841555. PMID 24339543. Archived from the original on 2014-02-20.",
+                            "<info> ^ Bens, Susanne; Luedeke, Manuel; Richter, Tanja; Graf, Melanie; Kolarova, Julia; Barbi, Gotthold; Lato, Krisztian; Barth, Thomas F.; Siebert, Reiner (2017). \"Mosaic genome-wide maternal isodiploidy: an extreme form of imprinting disorder presenting as prenatal diagnostic challenge\". Clinical Epigenetics. 9 111. doi:10.1186/s13148-017-0410-y. ISSN 1868-7083. PMC 5640928. PMID 29046733.",
+                            "<info> ^ Engel, E. (1980-03-01). \"A new genetic concept: the uniparental disomy and its potential effect, the isodisomy (author's transl)\". Journal de Génétique Humaine. 28 (1): 11–22. ISSN 0021-7743. PMID 7400781.",
+                            "<info> ^ del Gaudio, Daniela; Shinawi, Marwan; Astbury, Caroline; Tayeh, Marwan K.; Deak, Kristen L.; Raca, Gordana (2020-07-01). \"Diagnostic testing for uniparental disomy: a points to consider statement from the American College of Medical Genetics and Genomics (ACMG)\". Genetics in Medicine. 22 (7): 1133–1141. doi:10.1038/s41436-020-0782-9. PMID 32296163.",
+                            "<info> ^ Spence JE, Perciaccante RG, Greig GM, Willard HF, Ledbetter DH, Hejtmancik JF, Pollack MS, O'Brien WE, Beaudet AL (1988). \"Uniparental disomy as a mechanism for human genetic disease\". American Journal of Human Genetics. 42 (2): 217–226. PMC 1715272. PMID 2893543."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"Uniparental disomy\". Department of Medical Genetics, University of British Columbia. Archived from the original on 2002-06-17.",
+                            "<info> T. Liehr: Cases with uniparental disomy",
+                            "<info> UPD Animations: UPD Animations",
+                            "This article incorporates public domain text from The U.S. National Library of Medicine"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

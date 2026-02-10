@@ -1,0 +1,117 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/methylmalonic_acid": {
+                "title": "Methylmalonic acid",
+                "url": "https://en.wikipedia.org/wiki/methylmalonic_acid",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Methylmalonic acid (MMA) is a chemical compound from the group of dicarboxylic acids. It consists of the basic structure of malonic acid and also carries a methyl group. The salts of methylmalonic acid are called methylmalonates.",
+                    "",
+                    "=== Metabolism ===",
+                    "Methylmalonic acid is a by-product of the propionate metabolism pathway.[2] The starting sources for this are the following with the respective approximate contributions to whole body propionate metabolism in brackets:[3]",
+                    "<info> essential amino acids: methionine, valine, threonine and isoleucine[4] (~ 50%)[3]",
+                    "<info> odd-chain fatty acids[4] (~ 30%)[3]",
+                    "<info> propionic acid from bacterial fermentation[4] (~ 20%)[3]",
+                    "The propionate derivative, propionyl-CoA, is converted into D-methylmalonyl-CoA by propionyl-CoA carboxylase and then converted into L-methylmalonyl-CoA by methylmalonyl-CoA epimerase.[6] Entry into the citric acid cycle occurs through the conversion of L-methylmalonyl-CoA into succinyl-CoA by L-methylmalonyl-CoA mutase, whereby vitamin B12 in the form of adenosylcobalamin is required as a coenzyme.[2] This degradation pathway from propionyl-CoA to succinyl-CoA represents one of the most important anaplerotic pathways of the citric acid cycle.[7] Methylmalonic acid is formed as a by-product of this metabolic pathway when D-methylmalonyl-CoA is cleaved into methylmalonic acid and CoA by D-methylmalonyl-CoA hydrolase.[5][2] The enzyme acyl-CoA synthetase family member 3 (ACSF3) is in turn responsible for the conversion of methylmalonic acid and CoA to methylmalonyl-CoA.[8]",
+                    "",
+                    "=== Clinical relevance ===",
+                    "Increased methylmalonic acid levels may indicate a vitamin B12 deficiency. The test is highly sensitive (those with vitamin B12 deficiency almost always have raised levels) but not very specific (those that do not have vitamin B12 deficiency may have raised levels too).[9] Methylmalonic acid is elevated in 90–98% of patients with vitamin B12 deficiency. It has lower specificity since 20–25% of patients over the age of 70 have elevated levels of methylmalonic acid, but 25–33% of them do not have B12 deficiency. For this reason, the testing of methylmalonic acid levels is not routinely recommended in the elderly.[10]",
+                    "An excess is associated with methylmalonic acidemias.",
+                    "If elevated methylmalonic acid levels are accompanied by elevated malonic acid levels, this may indicate the metabolic disease combined malonic and methylmalonic aciduria (CMAMMA). By calculating the malonic acid to methylmalonic acid ratio in blood plasma, CMAMMA can be distinguished from classic methylmalonic acidemia.[11]",
+                    "Moreover, methylmalonic acid accumulation in the blood with age has been linked with tumour progression in 2020.[12]",
+                    "Bacterial overgrowth in the small intestine can also lead to elevated levels of methylmalonic acid due to the competition of bacteria in the absorption process of vitamin B12.[13][14] This is true of vitamin B12 from food and oral supplementation and can be circumvented by vitamin B12 injections. It is also hypothesized from case studies of patients with short bowel syndrome that intestinal bacterial overgrowth leads to increased production of propionic acid, which is a precursor to methylmalonic acid.[15] It has been shown that in these cases, methylmalonic acid levels returned to normal with the administration of metronidazole.[15][16]",
+                    "Nitrous oxide oxidizes the cobalt in vitamin B12. When B12 -dependent methylmalonyl-CoA mutase is disrupted, methylmalonic acid accumulates in the blood. Methylmalonic acid reliably reflects B12 deficiency in instances where B12 in serum or plasma is normal. (Strongly) elevated methylmalonic acid correlates with neuropathy and myelopathy, and it is a reliable biomarker during recovery or active (chronic) N2O abuse.[17]",
+                    "",
+                    "=== Measurement ===",
+                    "Methylmalonic acid concentrations in blood are measured by gas chromatographic mass spectrometry or liquid chromatography–mass spectrometry (LC-MS) and the expected values of methylmalonic acid in healthy people are between 73 and 271 nmol/L.[18][19]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b \"Dissociation Constants Of Organic Acids And Bases\". ZirChrom Separations, Inc.",
+                    "<info> ^ a b c Tejero, Joanne; Lazure, Felicia; Gomes, Ana P. (March 2024). \"Methylmalonic acid in aging and disease\". Trends in Endocrinology & Metabolism. 35 (3): 188–200. doi:10.1016/j.tem.2023.11.001. ISSN 1043-2760. PMC 10939937. PMID 38030482.",
+                    "<info> ^ a b c d Chandler, R.J.; Venditti, C.P. (September 2005). \"Genetic and genomic systems to study methylmalonic acidemia\". Molecular Genetics and Metabolism. 86 (1–2): 34–43. doi:10.1016/j.ymgme.2005.07.020. PMC 2657357. PMID 16182581.",
+                    "<info> ^ a b c d Baumgartner MR, Hörster F, Dionisi-Vici C, Haliloglu G, Karall D, Chapman KA, et al. (September 2014). \"Proposed guidelines for the diagnosis and management of methylmalonic and propionic acidemia\". Orphanet Journal of Rare Diseases. 9 (1) 130. doi:10.1186/s13023-014-0130-8. PMC 4180313. PMID 25205257.",
+                    "<info> ^ a b Kovachy, Robin J.; Stabler, Sally P.; Allen, Robert H. (1988), \"D-methylmalonyl-CoA hydrolase\", Branched-Chain Amino Acids, Methods in Enzymology, vol. 166, Elsevier, pp. 393–400, doi:10.1016/s0076-6879(88)66051-4, ISBN 978-0-12-182067-1, PMID 3071714",
+                    "<info> ^ Diogo, Rui; Rua, Inês B; Ferreira, Sara; Nogueira, Célia; Pereira, Cristina; Rosmaninho-Salgado, Joana; Diogo, Luísa (2023-10-31). \"Methylmalonyl Coenzyme A (CoA) Epimerase Deficiency, an Ultra-Rare Cause of Isolated Methylmalonic Aciduria With Predominant Neurological Features\". Cureus. 15 (10) e48017. doi:10.7759/cureus.48017. ISSN 2168-8184. PMC 10687495. PMID 38034150.",
+                    "<info> ^ Collado, M. Sol; Armstrong, Allison J.; Olson, Matthew; Hoang, Stephen A.; Day, Nathan; Summar, Marshall; Chapman, Kimberly A.; Reardon, John; Figler, Robert A.; Wamhoff, Brian R. (July 2020). \"Biochemical and anaplerotic applications of in vitro models of propionic acidemia and methylmalonic acidemia using patient-derived primary hepatocytes\". Molecular Genetics and Metabolism. 130 (3): 183–196. doi:10.1016/j.ymgme.2020.05.003. PMC 7337260. PMID 32451238.",
+                    "<info> ^ \"ACSF3 gene\". Medlineplus. Retrieved 2024-04-15.",
+                    "<info> ^ \"Sensitivity and Specificity\". Emory University School of Medicine. Archived from the original on 1 October 2012.",
+                    "<info> ^ \"B12 Deficiency and Dizziness\". www.dizziness-and-balance.com.",
+                    "<info> ^ de Sain-van der Velden MG, van der Ham M, Jans JJ, Visser G, Prinsen HC, Verhoeven-Duif NM, et al. (2016). Morava E, Baumgartner M, Patterson M, Rahman S (eds.). \"A New Approach for Fast Metabolic Diagnostics in CMAMMA\". JIMD Reports. 30. Berlin, Heidelberg: Springer Berlin Heidelberg: 15–22. doi:10.1007/8904_2016_531. ISBN 978-3-662-53680-3. PMC 5110436. PMID 26915364.",
+                    "<info> ^ Gomes AP, Ilter D, Low V, Endress JE, Fernández-García J, Rosenzweig A, et al. (September 2020). \"Age-induced accumulation of methylmalonic acid promotes tumour progression\". Nature. 585 (7824): 283–287. doi:10.1038/s41586-020-2630-0. PMC 7785256. PMID 32814897.",
+                    "<info> ^ Dukowicz, Andrew C.; Lacy, Brian E.; Levine, Gary M. (February 2007). \"Small Intestinal Bacterial Overgrowth\". Gastroenterology & Hepatology. 3 (2): 112–122. ISSN 1554-7914. PMC 3099351. PMID 21960820.",
+                    "<info> ^ Giannella RA, Broitman SA, Zamcheck N (February 1972). \"Competition between bacteria and intrinsic factor for vitamin B 12: implications for vitamin B 12 malabsorption in intestinal bacterial overgrowth\". Gastroenterology. 62 (2): 255–260. doi:10.1016/s0016-5085(72)80177-x. PMID 4629318.",
+                    "<info> ^ a b Sentongo TA, Azzam R, Charrow J (April 2009). \"Vitamin B12 status, methylmalonic acidemia, and bacterial overgrowth in short bowel syndrome\". Journal of Pediatric Gastroenterology and Nutrition. 48 (4): 495–497. doi:10.1097/MPG.0b013e31817f9e5b. PMID 19322060.",
+                    "<info> ^ Jimenez L, Stamm DA, Depaula B, Duggan CP (January 2018). \"Is Serum Methylmalonic Acid a Reliable Biomarker of Vitamin B12 Status in Children with Short Bowel Syndrome: A Case Series\". The Journal of Pediatrics. 192: 259–261. doi:10.1016/j.jpeds.2017.09.024. PMC 6029886. PMID 29129351.",
+                    "<info> ^ Grzych, Guillaume; Deheul, Sylvie; Gernez, Emeline; Davion, Jean-Baptiste; Dobbelaere, Dries; Carton, Louise; Kim, Isabelle; Guichard, Jean Claude; Girot, Marie; Humbert, Linda; Bennis, Anas; Joncquel, Marie; Chieux, Vincent; Joly, Audrey; Nasserdine, Phénicia (2023-04-01). \"Comparison of biomarker for diagnosis of nitrous oxide abuse: challenge of cobalamin metabolic parameters, a retrospective study\". Journal of Neurology. 270 (4): 2237–2245. doi:10.1007/s00415-023-11570-z. ISSN 1432-1459.",
+                    "<info> ^ Isber S (2007). The role of poor nutritional status and hyperhomocysteinemia in complicated pregnancy in Syria (PDF) (doctoralThesis). doi:10.22028/D291-20838.",
+                    "<info> ^ \"Methylmalonic Acid, Serum or Plasma (Vitamin B12 Status)\". ltd.aruplab.com.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Vitamin B12, cognition, and brain MRI measures: a cross-sectional examination.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Methylmalonic acid (MMA) is a chemical compound from the group of dicarboxylic acids. It consists of the basic structure of malonic acid and also carries a methyl group. The salts of methylmalonic acid are called methylmalonates."
+                        ]
+                    },
+                    "Metabolism": {
+                        "content": [
+                            "Methylmalonic acid is a by-product of the propionate metabolism pathway.[2] The starting sources for this are the following with the respective approximate contributions to whole body propionate metabolism in brackets:[3]",
+                            "<info> essential amino acids: methionine, valine, threonine and isoleucine[4] (~ 50%)[3]",
+                            "<info> odd-chain fatty acids[4] (~ 30%)[3]",
+                            "<info> propionic acid from bacterial fermentation[4] (~ 20%)[3]",
+                            "The propionate derivative, propionyl-CoA, is converted into D-methylmalonyl-CoA by propionyl-CoA carboxylase and then converted into L-methylmalonyl-CoA by methylmalonyl-CoA epimerase.[6] Entry into the citric acid cycle occurs through the conversion of L-methylmalonyl-CoA into succinyl-CoA by L-methylmalonyl-CoA mutase, whereby vitamin B12 in the form of adenosylcobalamin is required as a coenzyme.[2] This degradation pathway from propionyl-CoA to succinyl-CoA represents one of the most important anaplerotic pathways of the citric acid cycle.[7] Methylmalonic acid is formed as a by-product of this metabolic pathway when D-methylmalonyl-CoA is cleaved into methylmalonic acid and CoA by D-methylmalonyl-CoA hydrolase.[5][2] The enzyme acyl-CoA synthetase family member 3 (ACSF3) is in turn responsible for the conversion of methylmalonic acid and CoA to methylmalonyl-CoA.[8]"
+                        ]
+                    },
+                    "Clinical relevance": {
+                        "content": [
+                            "Increased methylmalonic acid levels may indicate a vitamin B12 deficiency. The test is highly sensitive (those with vitamin B12 deficiency almost always have raised levels) but not very specific (those that do not have vitamin B12 deficiency may have raised levels too).[9] Methylmalonic acid is elevated in 90–98% of patients with vitamin B12 deficiency. It has lower specificity since 20–25% of patients over the age of 70 have elevated levels of methylmalonic acid, but 25–33% of them do not have B12 deficiency. For this reason, the testing of methylmalonic acid levels is not routinely recommended in the elderly.[10]",
+                            "An excess is associated with methylmalonic acidemias.",
+                            "If elevated methylmalonic acid levels are accompanied by elevated malonic acid levels, this may indicate the metabolic disease combined malonic and methylmalonic aciduria (CMAMMA). By calculating the malonic acid to methylmalonic acid ratio in blood plasma, CMAMMA can be distinguished from classic methylmalonic acidemia.[11]",
+                            "Moreover, methylmalonic acid accumulation in the blood with age has been linked with tumour progression in 2020.[12]",
+                            "Bacterial overgrowth in the small intestine can also lead to elevated levels of methylmalonic acid due to the competition of bacteria in the absorption process of vitamin B12.[13][14] This is true of vitamin B12 from food and oral supplementation and can be circumvented by vitamin B12 injections. It is also hypothesized from case studies of patients with short bowel syndrome that intestinal bacterial overgrowth leads to increased production of propionic acid, which is a precursor to methylmalonic acid.[15] It has been shown that in these cases, methylmalonic acid levels returned to normal with the administration of metronidazole.[15][16]",
+                            "Nitrous oxide oxidizes the cobalt in vitamin B12. When B12 -dependent methylmalonyl-CoA mutase is disrupted, methylmalonic acid accumulates in the blood. Methylmalonic acid reliably reflects B12 deficiency in instances where B12 in serum or plasma is normal. (Strongly) elevated methylmalonic acid correlates with neuropathy and myelopathy, and it is a reliable biomarker during recovery or active (chronic) N2O abuse.[17]"
+                        ]
+                    },
+                    "Measurement": {
+                        "content": [
+                            "Methylmalonic acid concentrations in blood are measured by gas chromatographic mass spectrometry or liquid chromatography–mass spectrometry (LC-MS) and the expected values of methylmalonic acid in healthy people are between 73 and 271 nmol/L.[18][19]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b \"Dissociation Constants Of Organic Acids And Bases\". ZirChrom Separations, Inc.",
+                            "<info> ^ a b c Tejero, Joanne; Lazure, Felicia; Gomes, Ana P. (March 2024). \"Methylmalonic acid in aging and disease\". Trends in Endocrinology & Metabolism. 35 (3): 188–200. doi:10.1016/j.tem.2023.11.001. ISSN 1043-2760. PMC 10939937. PMID 38030482.",
+                            "<info> ^ a b c d Chandler, R.J.; Venditti, C.P. (September 2005). \"Genetic and genomic systems to study methylmalonic acidemia\". Molecular Genetics and Metabolism. 86 (1–2): 34–43. doi:10.1016/j.ymgme.2005.07.020. PMC 2657357. PMID 16182581.",
+                            "<info> ^ a b c d Baumgartner MR, Hörster F, Dionisi-Vici C, Haliloglu G, Karall D, Chapman KA, et al. (September 2014). \"Proposed guidelines for the diagnosis and management of methylmalonic and propionic acidemia\". Orphanet Journal of Rare Diseases. 9 (1) 130. doi:10.1186/s13023-014-0130-8. PMC 4180313. PMID 25205257.",
+                            "<info> ^ a b Kovachy, Robin J.; Stabler, Sally P.; Allen, Robert H. (1988), \"D-methylmalonyl-CoA hydrolase\", Branched-Chain Amino Acids, Methods in Enzymology, vol. 166, Elsevier, pp. 393–400, doi:10.1016/s0076-6879(88)66051-4, ISBN 978-0-12-182067-1, PMID 3071714",
+                            "<info> ^ Diogo, Rui; Rua, Inês B; Ferreira, Sara; Nogueira, Célia; Pereira, Cristina; Rosmaninho-Salgado, Joana; Diogo, Luísa (2023-10-31). \"Methylmalonyl Coenzyme A (CoA) Epimerase Deficiency, an Ultra-Rare Cause of Isolated Methylmalonic Aciduria With Predominant Neurological Features\". Cureus. 15 (10) e48017. doi:10.7759/cureus.48017. ISSN 2168-8184. PMC 10687495. PMID 38034150.",
+                            "<info> ^ Collado, M. Sol; Armstrong, Allison J.; Olson, Matthew; Hoang, Stephen A.; Day, Nathan; Summar, Marshall; Chapman, Kimberly A.; Reardon, John; Figler, Robert A.; Wamhoff, Brian R. (July 2020). \"Biochemical and anaplerotic applications of in vitro models of propionic acidemia and methylmalonic acidemia using patient-derived primary hepatocytes\". Molecular Genetics and Metabolism. 130 (3): 183–196. doi:10.1016/j.ymgme.2020.05.003. PMC 7337260. PMID 32451238.",
+                            "<info> ^ \"ACSF3 gene\". Medlineplus. Retrieved 2024-04-15.",
+                            "<info> ^ \"Sensitivity and Specificity\". Emory University School of Medicine. Archived from the original on 1 October 2012.",
+                            "<info> ^ \"B12 Deficiency and Dizziness\". www.dizziness-and-balance.com.",
+                            "<info> ^ de Sain-van der Velden MG, van der Ham M, Jans JJ, Visser G, Prinsen HC, Verhoeven-Duif NM, et al. (2016). Morava E, Baumgartner M, Patterson M, Rahman S (eds.). \"A New Approach for Fast Metabolic Diagnostics in CMAMMA\". JIMD Reports. 30. Berlin, Heidelberg: Springer Berlin Heidelberg: 15–22. doi:10.1007/8904_2016_531. ISBN 978-3-662-53680-3. PMC 5110436. PMID 26915364.",
+                            "<info> ^ Gomes AP, Ilter D, Low V, Endress JE, Fernández-García J, Rosenzweig A, et al. (September 2020). \"Age-induced accumulation of methylmalonic acid promotes tumour progression\". Nature. 585 (7824): 283–287. doi:10.1038/s41586-020-2630-0. PMC 7785256. PMID 32814897.",
+                            "<info> ^ Dukowicz, Andrew C.; Lacy, Brian E.; Levine, Gary M. (February 2007). \"Small Intestinal Bacterial Overgrowth\". Gastroenterology & Hepatology. 3 (2): 112–122. ISSN 1554-7914. PMC 3099351. PMID 21960820.",
+                            "<info> ^ Giannella RA, Broitman SA, Zamcheck N (February 1972). \"Competition between bacteria and intrinsic factor for vitamin B 12: implications for vitamin B 12 malabsorption in intestinal bacterial overgrowth\". Gastroenterology. 62 (2): 255–260. doi:10.1016/s0016-5085(72)80177-x. PMID 4629318.",
+                            "<info> ^ a b Sentongo TA, Azzam R, Charrow J (April 2009). \"Vitamin B12 status, methylmalonic acidemia, and bacterial overgrowth in short bowel syndrome\". Journal of Pediatric Gastroenterology and Nutrition. 48 (4): 495–497. doi:10.1097/MPG.0b013e31817f9e5b. PMID 19322060.",
+                            "<info> ^ Jimenez L, Stamm DA, Depaula B, Duggan CP (January 2018). \"Is Serum Methylmalonic Acid a Reliable Biomarker of Vitamin B12 Status in Children with Short Bowel Syndrome: A Case Series\". The Journal of Pediatrics. 192: 259–261. doi:10.1016/j.jpeds.2017.09.024. PMC 6029886. PMID 29129351.",
+                            "<info> ^ Grzych, Guillaume; Deheul, Sylvie; Gernez, Emeline; Davion, Jean-Baptiste; Dobbelaere, Dries; Carton, Louise; Kim, Isabelle; Guichard, Jean Claude; Girot, Marie; Humbert, Linda; Bennis, Anas; Joncquel, Marie; Chieux, Vincent; Joly, Audrey; Nasserdine, Phénicia (2023-04-01). \"Comparison of biomarker for diagnosis of nitrous oxide abuse: challenge of cobalamin metabolic parameters, a retrospective study\". Journal of Neurology. 270 (4): 2237–2245. doi:10.1007/s00415-023-11570-z. ISSN 1432-1459.",
+                            "<info> ^ Isber S (2007). The role of poor nutritional status and hyperhomocysteinemia in complicated pregnancy in Syria (PDF) (doctoralThesis). doi:10.22028/D291-20838.",
+                            "<info> ^ \"Methylmalonic Acid, Serum or Plasma (Vitamin B12 Status)\". ltd.aruplab.com."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Vitamin B12, cognition, and brain MRI measures: a cross-sectional examination."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

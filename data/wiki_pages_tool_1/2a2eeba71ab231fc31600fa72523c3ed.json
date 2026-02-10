@@ -1,0 +1,33 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/proglumetacin": {
+                "title": "Proglumetacin",
+                "url": "https://en.wikipedia.org/wiki/proglumetacin",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Proglumetacin (usually supplied as the maleate salt) is a nonsteroidal anti-inflammatory drug (NSAID). It is a codrug (that is, a mutual prodrug) of indometacin and proglumide.[1] After oral intake, it is absorbed and metabolized to indometacin and proglumide. These two substances are then released into the system in a 1:1 molar ratio.",
+                    "Indometacin contributes to the anti-inflammatory effect, while proglumide has antisecretory effects that helps prevent injury to the stomach lining.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Setnikar I, Arigoni R, Chisté R, Makovec F, Revel L (1987). \"Plasma levels of proglumetacin and its metabolites after intravenous or oral administration in the dog\". Arzneimittel-Forschung. 37 (6): 698–702. PMID 3663267.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Proglumetacin (usually supplied as the maleate salt) is a nonsteroidal anti-inflammatory drug (NSAID). It is a codrug (that is, a mutual prodrug) of indometacin and proglumide.[1] After oral intake, it is absorbed and metabolized to indometacin and proglumide. These two substances are then released into the system in a 1:1 molar ratio.",
+                            "Indometacin contributes to the anti-inflammatory effect, while proglumide has antisecretory effects that helps prevent injury to the stomach lining."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Setnikar I, Arigoni R, Chisté R, Makovec F, Revel L (1987). \"Plasma levels of proglumetacin and its metabolites after intravenous or oral administration in the dog\". Arzneimittel-Forschung. 37 (6): 698–702. PMID 3663267."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

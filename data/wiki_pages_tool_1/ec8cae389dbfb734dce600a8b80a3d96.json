@@ -1,0 +1,53 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/scanning_speech": {
+                "title": "Scanning speech",
+                "url": "https://en.wikipedia.org/wiki/scanning_speech",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Scanning speech is a type of ataxic dysarthria in which spoken words are broken up into separate syllables, often separated by a noticeable pause, and spoken with varying force.[1]  The sentence \"Walking is good exercise\", for example, might be pronounced as \"Walk (pause) ing is good ex (pause) er (pause) cise\".  Additionally, stress may be placed on unusual syllables.",
+                    "The name is derived from literary scansion, because the speech pattern separates the syllables in a phrase much like scanning a poem counts the syllables in a line of poetry.[2]",
+                    "There is no universal agreement about the exact definition of this term.[2]  Some sources require only a noticeable pause between syllables, while others require other speech abnormalities, such as the unusual stress pattern on syllables.  Some sources consider it a common, but not necessary, feature of ataxic dysarthria; others consider it exactly synonymous with ataxic dysarthria.[2]",
+                    "",
+                    "=== Cause ===",
+                    "Scanning speech, like other ataxic dysarthrias, is a symptom of lesions in the cerebellum.[1] It is a typical symptom of multiple sclerosis,[3] and it constitutes one of the three symptoms of Charcot's neurologic triad.[4]",
+                    "Scanning speech may be accompanied by other symptoms of cerebellar damage, such as gait, truncal and limb ataxia, intention tremor, inaccuracies in rapidly repeated movements and sudden, abrupt nausea and vomiting. The handwriting of such patients may also be abnormally large.[5]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Horton-Szar, Dan (2009). Crash Course Neurology. Elsevier Limited. ISBN 978-0-7234-3469-6.",
+                    "<info> ^ a b c Terence R. Anthoney (1994). Neuroanatomy and the neurologic exam: a thesaurus of synonyms, similar-sounding non-synonyms, and terms of variable meaning. Boca Raton: CRC Press. pp. 482–483. ISBN 978-0-8493-8631-2.",
+                    "<info> ^ Stachowiak, Julie. \"Scanning Speech\". ms.about.com. Archived from the original on 2015-09-06. Retrieved 2012-01-04.",
+                    "<info> ^ \"Charcot's triad I\". whonamedit.com. Retrieved 2012-01-04.",
+                    "<info> ^ Thomas, Huw. \"Cerbellar Signs including Cerebellar Ataxia\". Retrieved 2012-01-04.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Scanning speech is a type of ataxic dysarthria in which spoken words are broken up into separate syllables, often separated by a noticeable pause, and spoken with varying force.[1]  The sentence \"Walking is good exercise\", for example, might be pronounced as \"Walk (pause) ing is good ex (pause) er (pause) cise\".  Additionally, stress may be placed on unusual syllables.",
+                            "The name is derived from literary scansion, because the speech pattern separates the syllables in a phrase much like scanning a poem counts the syllables in a line of poetry.[2]",
+                            "There is no universal agreement about the exact definition of this term.[2]  Some sources require only a noticeable pause between syllables, while others require other speech abnormalities, such as the unusual stress pattern on syllables.  Some sources consider it a common, but not necessary, feature of ataxic dysarthria; others consider it exactly synonymous with ataxic dysarthria.[2]"
+                        ]
+                    },
+                    "Cause": {
+                        "content": [
+                            "Scanning speech, like other ataxic dysarthrias, is a symptom of lesions in the cerebellum.[1] It is a typical symptom of multiple sclerosis,[3] and it constitutes one of the three symptoms of Charcot's neurologic triad.[4]",
+                            "Scanning speech may be accompanied by other symptoms of cerebellar damage, such as gait, truncal and limb ataxia, intention tremor, inaccuracies in rapidly repeated movements and sudden, abrupt nausea and vomiting. The handwriting of such patients may also be abnormally large.[5]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Horton-Szar, Dan (2009). Crash Course Neurology. Elsevier Limited. ISBN 978-0-7234-3469-6.",
+                            "<info> ^ a b c Terence R. Anthoney (1994). Neuroanatomy and the neurologic exam: a thesaurus of synonyms, similar-sounding non-synonyms, and terms of variable meaning. Boca Raton: CRC Press. pp. 482–483. ISBN 978-0-8493-8631-2.",
+                            "<info> ^ Stachowiak, Julie. \"Scanning Speech\". ms.about.com. Archived from the original on 2015-09-06. Retrieved 2012-01-04.",
+                            "<info> ^ \"Charcot's triad I\". whonamedit.com. Retrieved 2012-01-04.",
+                            "<info> ^ Thomas, Huw. \"Cerbellar Signs including Cerebellar Ataxia\". Retrieved 2012-01-04."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

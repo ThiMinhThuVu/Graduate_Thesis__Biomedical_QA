@@ -1,0 +1,93 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/transmembrane_domain": {
+                "title": "Transmembrane domain",
+                "url": "https://en.wikipedia.org/wiki/transmembrane_domain",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A transmembrane domain (TMD, TM domain) is a membrane-spanning protein domain.  TMDs may consist of one or several alpha-helices or a transmembrane beta barrel. Because the interior of the lipid bilayer is hydrophobic, the amino acid residues in TMDs are often hydrophobic, although proteins such as membrane pumps and ion channels can contain polar residues. TMDs vary greatly in size and hydrophobicity; they may adopt organelle-specific properties.[1]",
+                    "",
+                    "=== Functions of transmembrane domains ===",
+                    "Transmembrane domains are known to perform a variety of functions. These include:",
+                    "<info> Anchoring transmembrane proteins to the membrane.",
+                    "<info> Facilitating molecular transport of molecules such as ions and proteins across biological membranes; usually hydrophilic residues and binding sites in the TMDs help in this process.",
+                    "<info> Signal transduction across the membrane; many transmembrane proteins, such as G protein-coupled receptors, receive extracellular signals. TMDs then propagate those signals across the membrane to induce an intracellular effect.",
+                    "<info> Assisting in vesicle fusion; the function of TMDs is not well understood, but they have been shown to be critical for the fusion reaction, possibly as a result of TMDs affecting the tension of the lipid bilayer.[2]",
+                    "<info> Mediating transport and sorting of transmembrane proteins; TMDs have been shown to work in tandem with cytosolic sorting signals, with length and hydrophobicity being the main determinants in TDM sorting. Longer and more hydrophobic TMDs aid in sorting proteins to the cell membrane, whereas shorter and less hydrophobic TMDs are used to retain proteins in the endoplasmic reticulum and the Golgi apparatus. The exact mechanism of this process is still unknown.[3]",
+                    "",
+                    "=== Identification of transmembrane helices ===",
+                    "Transmembrane helices are visible in structures of membrane proteins determined by X-ray diffraction. They may also be predicted on the basis of hydrophobicity scales. Because the interior of the bilayer and the interiors of most proteins of known structure are hydrophobic, it is presumed to be a requirement of the amino acids that span a membrane that they be hydrophobic as well. However, membrane pumps and ion channels also contain numerous charged and polar residues within the generally non-polar transmembrane segments.",
+                    "Using \"hydrophobicity analysis\" to predict transmembrane helices enables a prediction in turn of the \"transmembrane topology\" of a protein; i.e. prediction of what parts of it protrude into the cell, what parts protrude out, and how many times the protein chain crosses the membrane.",
+                    "Transmembrane helices can also be identified in silico using the bioinformatic tool, TMHMM.[4]",
+                    "",
+                    "=== The role of membrane protein biogenesis and quality control factors ===",
+                    "Since protein translation occurs in the cytosol (an aqueous environment), factors that recognize the TMD and protect them in this hostile environment are required. Additional factors that allow the TMD to be incorporated into the target membrane (i.e. endoplasmic reticulum or other organelles) are also required.[5] Factors also detect TMD misfolding within the membrane and perform quality control functions. These factors must be able to recognize a highly variable set of TMDs and can be segregated into those active in the cytosol or active in the membrane.[5]",
+                    "Cytosolic recognition factors are thought to use two distinct strategies.[5] In the co-translational strategy the recognition and shielding are coupled to protein synthesis. Genome wide association studies indicate the majority of membrane proteins targeting the endoplasmic reticulum are handled by the signal recognition particle which is bound to the ribosomal exit tunnel and initiates recognition and shielding as protein is translated. The second strategy involves tail-anchored proteins, defined by a single TMD located close to the carboxyl terminus of the membrane protein. Once translation is completed, the tail-anchored TMD remains in the ribosomal exit tunnel, and an ATPase mediates targeting to the endoplasmic reticulum. Examples of shuttling factors include TRC40 in higher eukaryotes and Get3 in yeast. Furthermore, general TMD-binding factors protect against aggregation and other disrupting interactions. SGTA and calmodulin are two well-known general TMD-binding factors. Quality control of membrane proteins involve TMD-binding factors that are linked to ubiquitination proteasome system.",
+                    "Once transported, factors assist with insertion of the TMD across the hydrophilic layer phosphate \"head\" group of the phospholipid membrane.[5] Quality control factors must be able to discern function and topology, as well as facilitate extraction to the cytosol. The signal recognition particle transports membrane proteins to the Sec translocation channel, positioning the ribosome exit tunnel proximal to the translocon central pore and minimizing exposure of the TMD to cytosol. Insertases can also mediate TMD insertion into the lipid bilayer. Insertases include the bacterial YidC, mitochondrial Oxa1, and chloroplast Alb3, all of which are evolutionarily related. The conserved Hrd1 and Derlin enzyme families are examples of membrane bound quality control factors.",
+                    "",
+                    "=== Examples ===",
+                    "<info> Tetraspanins have 4 conserved transmembrane domains.",
+                    "<info> Mildew locus o (mlo) proteins have 7 conserved transmembrane domains that encode alpha helices.[6]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Alberts, Bruce; Johnson, Alexander; Lewis, Julian; Raff, Martin; Roberts, Keith; Walter, Peter (2002). \"Membrane Proteins\". Molecular Biology of the Cell. 4th Edition.",
+                    "<info> ^ Langosch, D.; Hofmann, M.; Ungermann, C. (April 2007). \"The role of transmembrane domains in membrane fusion\". Cellular and Molecular Life Sciences. 64 (7–8): 850–864. doi:10.1007/s00018-007-6439-x. ISSN 1420-682X. PMC 11136198. PMID 17429580. S2CID 23714815.",
+                    "<info> ^ Cosson, Pierre; Perrin, Jackie; Bonifacino, Juan S. (2013-10-01). \"Anchors aweigh: protein localization and transport mediated by transmembrane domains\". Trends in Cell Biology. 23 (10): 511–517. doi:10.1016/j.tcb.2013.05.005. ISSN 0962-8924. PMC 3783643. PMID 23806646.",
+                    "<info> ^ Krogh A, Larsson B, von Heijne G, Sonnhammer EL (January 2001). \"Predicting transmembrane protein topology with a hidden Markov model: application to complete genomes\". Journal of Molecular Biology. 305 (3): 567–80. doi:10.1006/jmbi.2000.4315. PMID 11152613.",
+                    "<info> ^ a b c d Guna, Alina; Hegde, Ramanujan S. (2018-04-23). \"Transmembrane Domain Recognition during Membrane Protein Biogenesis and Quality Control\". Current Biology. 28 (8): R498–R511. doi:10.1016/j.cub.2018.02.004. ISSN 1879-0445. PMID 29689233. S2CID 13839449.",
+                    "<info> ^ Devoto A, Hartmann HA, Piffanelli P, Elliott C, Simmons C, Taramino G, et al. (January 2003). \"Molecular phylogeny and evolution of the plant-specific seven-transmembrane MLO family\". Journal of Molecular Evolution. 56 (1): 77–88. Bibcode:2003JMolE..56...77D. doi:10.1007/s00239-002-2382-5. PMID 12569425. S2CID 25514671.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A transmembrane domain (TMD, TM domain) is a membrane-spanning protein domain.  TMDs may consist of one or several alpha-helices or a transmembrane beta barrel. Because the interior of the lipid bilayer is hydrophobic, the amino acid residues in TMDs are often hydrophobic, although proteins such as membrane pumps and ion channels can contain polar residues. TMDs vary greatly in size and hydrophobicity; they may adopt organelle-specific properties.[1]"
+                        ]
+                    },
+                    "Functions of transmembrane domains": {
+                        "content": [
+                            "Transmembrane domains are known to perform a variety of functions. These include:",
+                            "<info> Anchoring transmembrane proteins to the membrane.",
+                            "<info> Facilitating molecular transport of molecules such as ions and proteins across biological membranes; usually hydrophilic residues and binding sites in the TMDs help in this process.",
+                            "<info> Signal transduction across the membrane; many transmembrane proteins, such as G protein-coupled receptors, receive extracellular signals. TMDs then propagate those signals across the membrane to induce an intracellular effect.",
+                            "<info> Assisting in vesicle fusion; the function of TMDs is not well understood, but they have been shown to be critical for the fusion reaction, possibly as a result of TMDs affecting the tension of the lipid bilayer.[2]",
+                            "<info> Mediating transport and sorting of transmembrane proteins; TMDs have been shown to work in tandem with cytosolic sorting signals, with length and hydrophobicity being the main determinants in TDM sorting. Longer and more hydrophobic TMDs aid in sorting proteins to the cell membrane, whereas shorter and less hydrophobic TMDs are used to retain proteins in the endoplasmic reticulum and the Golgi apparatus. The exact mechanism of this process is still unknown.[3]"
+                        ]
+                    },
+                    "Identification of transmembrane helices": {
+                        "content": [
+                            "Transmembrane helices are visible in structures of membrane proteins determined by X-ray diffraction. They may also be predicted on the basis of hydrophobicity scales. Because the interior of the bilayer and the interiors of most proteins of known structure are hydrophobic, it is presumed to be a requirement of the amino acids that span a membrane that they be hydrophobic as well. However, membrane pumps and ion channels also contain numerous charged and polar residues within the generally non-polar transmembrane segments.",
+                            "Using \"hydrophobicity analysis\" to predict transmembrane helices enables a prediction in turn of the \"transmembrane topology\" of a protein; i.e. prediction of what parts of it protrude into the cell, what parts protrude out, and how many times the protein chain crosses the membrane.",
+                            "Transmembrane helices can also be identified in silico using the bioinformatic tool, TMHMM.[4]"
+                        ]
+                    },
+                    "The role of membrane protein biogenesis and quality control factors": {
+                        "content": [
+                            "Since protein translation occurs in the cytosol (an aqueous environment), factors that recognize the TMD and protect them in this hostile environment are required. Additional factors that allow the TMD to be incorporated into the target membrane (i.e. endoplasmic reticulum or other organelles) are also required.[5] Factors also detect TMD misfolding within the membrane and perform quality control functions. These factors must be able to recognize a highly variable set of TMDs and can be segregated into those active in the cytosol or active in the membrane.[5]",
+                            "Cytosolic recognition factors are thought to use two distinct strategies.[5] In the co-translational strategy the recognition and shielding are coupled to protein synthesis. Genome wide association studies indicate the majority of membrane proteins targeting the endoplasmic reticulum are handled by the signal recognition particle which is bound to the ribosomal exit tunnel and initiates recognition and shielding as protein is translated. The second strategy involves tail-anchored proteins, defined by a single TMD located close to the carboxyl terminus of the membrane protein. Once translation is completed, the tail-anchored TMD remains in the ribosomal exit tunnel, and an ATPase mediates targeting to the endoplasmic reticulum. Examples of shuttling factors include TRC40 in higher eukaryotes and Get3 in yeast. Furthermore, general TMD-binding factors protect against aggregation and other disrupting interactions. SGTA and calmodulin are two well-known general TMD-binding factors. Quality control of membrane proteins involve TMD-binding factors that are linked to ubiquitination proteasome system.",
+                            "Once transported, factors assist with insertion of the TMD across the hydrophilic layer phosphate \"head\" group of the phospholipid membrane.[5] Quality control factors must be able to discern function and topology, as well as facilitate extraction to the cytosol. The signal recognition particle transports membrane proteins to the Sec translocation channel, positioning the ribosome exit tunnel proximal to the translocon central pore and minimizing exposure of the TMD to cytosol. Insertases can also mediate TMD insertion into the lipid bilayer. Insertases include the bacterial YidC, mitochondrial Oxa1, and chloroplast Alb3, all of which are evolutionarily related. The conserved Hrd1 and Derlin enzyme families are examples of membrane bound quality control factors."
+                        ]
+                    },
+                    "Examples": {
+                        "content": [
+                            "<info> Tetraspanins have 4 conserved transmembrane domains.",
+                            "<info> Mildew locus o (mlo) proteins have 7 conserved transmembrane domains that encode alpha helices.[6]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Alberts, Bruce; Johnson, Alexander; Lewis, Julian; Raff, Martin; Roberts, Keith; Walter, Peter (2002). \"Membrane Proteins\". Molecular Biology of the Cell. 4th Edition.",
+                            "<info> ^ Langosch, D.; Hofmann, M.; Ungermann, C. (April 2007). \"The role of transmembrane domains in membrane fusion\". Cellular and Molecular Life Sciences. 64 (7–8): 850–864. doi:10.1007/s00018-007-6439-x. ISSN 1420-682X. PMC 11136198. PMID 17429580. S2CID 23714815.",
+                            "<info> ^ Cosson, Pierre; Perrin, Jackie; Bonifacino, Juan S. (2013-10-01). \"Anchors aweigh: protein localization and transport mediated by transmembrane domains\". Trends in Cell Biology. 23 (10): 511–517. doi:10.1016/j.tcb.2013.05.005. ISSN 0962-8924. PMC 3783643. PMID 23806646.",
+                            "<info> ^ Krogh A, Larsson B, von Heijne G, Sonnhammer EL (January 2001). \"Predicting transmembrane protein topology with a hidden Markov model: application to complete genomes\". Journal of Molecular Biology. 305 (3): 567–80. doi:10.1006/jmbi.2000.4315. PMID 11152613.",
+                            "<info> ^ a b c d Guna, Alina; Hegde, Ramanujan S. (2018-04-23). \"Transmembrane Domain Recognition during Membrane Protein Biogenesis and Quality Control\". Current Biology. 28 (8): R498–R511. doi:10.1016/j.cub.2018.02.004. ISSN 1879-0445. PMID 29689233. S2CID 13839449.",
+                            "<info> ^ Devoto A, Hartmann HA, Piffanelli P, Elliott C, Simmons C, Taramino G, et al. (January 2003). \"Molecular phylogeny and evolution of the plant-specific seven-transmembrane MLO family\". Journal of Molecular Evolution. 56 (1): 77–88. Bibcode:2003JMolE..56...77D. doi:10.1007/s00239-002-2382-5. PMID 12569425. S2CID 25514671."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/dynamic_compression_of_the_airways": {
+                "title": "Dynamic compression of the airways",
+                "url": "https://en.wikipedia.org/wiki/dynamic_compression_of_the_airways",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Dynamic compression of the airways results when intrapleural pressure equals or exceeds alveolar pressure, which causes dynamic collapsing of the lung airways. It is termed dynamic given the transpulmonary pressure (alveolar pressure − intrapleural pressure) varies based on factors including lung volume, compliance, resistance, existing pathologies, etc.[1]",
+                    "It occurs during forced expiration when intrapleural pressure is greater than atmospheric pressure (positive barometric values), and not during passive expiration when intrapleural pressure remains at subatmospheric pressures (negative barometric values). Clinically, dynamic compression is most commonly associated with the wheezing sound during forced expiration, such as in individuals with chronic obstructive pulmonary disorder (COPD).[2][3]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Michael G. Levitzky (2003). Pulmonary Physiology. McGraw Hill Professional. ISBN 978-0-07-138765-1.",
+                    "<info> ^ M.S., Zach (March 2000). \"The Physiology of Forced Expiration\". Paediatric Respiratory Reviews. 1 (1): 36–39. doi:10.1053/prrv.2000.0010. PMID 16263442.",
+                    "<info> ^ Roger Thies (6 December 2012). Physiology. Springer Science & Business Media. pp. 129–. ISBN 978-1-4612-4198-0.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Gibson, G. J., N. B. Pride, and D. W. Empey. \"The Role of Inspiratory Dynamic Compression in Upper Airway Obstruction 1, 2.\" American Review of Respiratory Disease 108.6 (1973): 1352-1360.",
+                    "<info> John Burnard West (1 January 2007). Pulmonary Physiology and Pathophysiology: An Integrated, Case-based Approach. Lippincott Williams & Wilkins. pp. 73–. ISBN 978-0-7817-6701-9.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Dynamic compression of the airways results when intrapleural pressure equals or exceeds alveolar pressure, which causes dynamic collapsing of the lung airways. It is termed dynamic given the transpulmonary pressure (alveolar pressure − intrapleural pressure) varies based on factors including lung volume, compliance, resistance, existing pathologies, etc.[1]",
+                            "It occurs during forced expiration when intrapleural pressure is greater than atmospheric pressure (positive barometric values), and not during passive expiration when intrapleural pressure remains at subatmospheric pressures (negative barometric values). Clinically, dynamic compression is most commonly associated with the wheezing sound during forced expiration, such as in individuals with chronic obstructive pulmonary disorder (COPD).[2][3]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Michael G. Levitzky (2003). Pulmonary Physiology. McGraw Hill Professional. ISBN 978-0-07-138765-1.",
+                            "<info> ^ M.S., Zach (March 2000). \"The Physiology of Forced Expiration\". Paediatric Respiratory Reviews. 1 (1): 36–39. doi:10.1053/prrv.2000.0010. PMID 16263442.",
+                            "<info> ^ Roger Thies (6 December 2012). Physiology. Springer Science & Business Media. pp. 129–. ISBN 978-1-4612-4198-0."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Gibson, G. J., N. B. Pride, and D. W. Empey. \"The Role of Inspiratory Dynamic Compression in Upper Airway Obstruction 1, 2.\" American Review of Respiratory Disease 108.6 (1973): 1352-1360.",
+                            "<info> John Burnard West (1 January 2007). Pulmonary Physiology and Pathophysiology: An Integrated, Case-based Approach. Lippincott Williams & Wilkins. pp. 73–. ISBN 978-0-7817-6701-9."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

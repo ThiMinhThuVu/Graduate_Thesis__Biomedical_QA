@@ -1,0 +1,113 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/zinc_toxicity": {
+                "title": "Zinc toxicity",
+                "url": "https://en.wikipedia.org/wiki/zinc_toxicity",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Zinc toxicity is a medical condition involving an overdose on, or toxic overexposure to, zinc. Such toxicity levels have been seen to occur at ingestion of greater than 50 mg of zinc.[1][unreliable medical source?] Excessive absorption of zinc can suppress copper and iron absorption. The free zinc ion in solution is highly toxic to bacteria, plants, invertebrates, and even vertebrate fish.[2][3][4] Zinc is an essential trace metal with very low toxicity in humans.[1][5]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Following an oral intake of extremely high doses of zinc (where 300 mg Zn/d – 20 times the US RDA – is a \"low intake\" overdose[1]), nausea, vomiting, pain, cramps, and diarrhea may occur.[1] There is evidence of induced copper deficiency, alterations of blood lipoprotein levels, increased levels of LDL, and decreased levels of HDL at long-term intakes of 100 mg Zn/d.[1] The USDA RDA is 15 mg Zn/d.[1] There is also a condition called the \"zinc shakes\", \"zinc chills\", or metal fume fever that can be induced by the inhalation of freshly formed zinc oxide formed during the welding of galvanized materials.[6]",
+                    "",
+                    "=== In humans ===",
+                    "Zinc has been used therapeutically at a dose of 150 mg/day for months, or in some cases for years, and in one case at a dose of up to 2000 mg/day zinc for months.[7][8][9][10][11] A decrease in copper levels and hematological changes have been reported; however, those changes were completely reversed with the cessation of zinc intake.[9]",
+                    "Zinc has been popularly used as zinc gluconate or zinc acetate lozenges for treating the common cold,[12] and therefore the safety of usage at about 100 mg/day level is a relevant question.",
+                    "Unlike iron, the elimination of zinc is concentration-dependent.[13]",
+                    "",
+                    "=== In animals ===",
+                    "Zinc toxicity is commonly fatal in dogs, where it causes a severe hemolytic anemia.[14][verification needed] It is also highly toxic in pet parrots and can often be fatal.[15][better source needed]",
+                    "",
+                    "=== Cross-reaction toxicity ===",
+                    "Supplemental zinc can prevent iron absorption, leading to iron deficiency. Zinc and iron should be taken at different times of the day.[16]",
+                    "",
+                    "=== Diagnosis ===",
+                    "Zinc concentrations are typically quantified using instrumental methods such as atomic absorption, emission, or mass spectroscopies; X-ray fluorescence; electro-analytical techniques (e.g., stripping voltammetry); or neutron activation analysis. Inductively coupled plasma atomic emission spectroscopy (ICP-AES) is used for zinc determinations in blood and tissue samples (NIOSH Method 8005) and in urine (NIOSH Method 8310). Detection limits in blood and tissue are 1 μg/100 g and 0.2 μg/g, respectively, with recoveries of 100% (NIOSH 1994). Sample preparation involves acid digestion using concentrated acids. Detection of zinc in urine samples requires extraction of the metals with a polydithiocarbamate resin prior to digestion and analysis (NIOSH 1984). Detection limits in urine are 0.1 μg/sample.",
+                    "",
+                    "=== Treatment ===",
+                    "Treatment of zinc toxicity consists of eliminating exposure to zinc. However, no antidotes are available.[citation needed]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d e f Fosmire GJ (February 1990). \"Zinc toxicity\". Am. J. Clin. Nutr. 51 (2): 225–227. doi:10.1093/ajcn/51.2.225. PMID 2407097.",
+                    "<info> ^ Rout, Gyana Ranjan; Das, Premananda (1 January 2003). \"Effect of Metal Toxicity on Plant Growth and Metabolism: I. Zinc\" (PDF). Agronomie. 23 (1): 3–11. Bibcode:2003AgSD...23....3R. doi:10.1051/agro:2002073.",
+                    "<info> ^ Smith, SE; Larson, EJ (April 1946). \"Zinc toxicity in rats; antagonistic effects of copper and liver\". The Journal of Biological Chemistry. 163: 29–38. doi:10.1016/S0021-9258(17)41344-5. PMID 21023625.",
+                    "<info> ^ Brita, T. A.; De Schamphelaere, Muyssen; Karel, A. C.; Janssen, Colin R. (2006). \"Mechanisms of chronic waterborne Zn toxicity in Daphnia magna\". Aquatic Toxicology. 77 (4): 393–401. Bibcode:2006AqTox..77..393M. doi:10.1016/j.aquatox.2006.01.006. PMID 16472524.",
+                    "<info> ^ Ciubotariu D, Ghiciuc CM, Lupușoru CE (2015). \"Zinc involvement in opioid addiction and analgesia – should zinc supplementation be recommended for opioid-treated persons?\". Subst Abuse Treat Prev Policy. 10 (1) 29. doi:10.1186/s13011-015-0025-2. PMC 4523930. PMID 26238243.",
+                    "<info> ^ Pettilä, V.; Takkunen, O.; Tukiainen, P. (2000). \"Zinc chloride smoke inhalation: a rare cause of severe acute respiratory distress syndrome\". Intensive Care Medicine. 26 (2): 215–217. doi:10.1007/s001340050049. PMID 10784312. S2CID 39004564.",
+                    "<info> ^ Pories, W.J. (1967). \"Acceleration of healing with zinc sulfate\". Ann Surg. 165 (3): 432–436. doi:10.1097/00000658-196703000-00015. PMC 1617499. PMID 6019319.",
+                    "<info> ^ Simkin, P.A. (1976). \"Oral zinc sulphate in rheumatoid arthritis\". Lancet. 2 (7985): 539–542. doi:10.1016/s0140-6736(76)91793-1. PMID 60622. S2CID 31836064.",
+                    "<info> ^ a b Samman, S.; Roberts, D.C. (1987). \"The effect of zinc supplements on plasma zinc and copper levels and the reported symptoms in healthy volunteers\". Med J Aust. 146 (5): 246–249. doi:10.5694/j.1326-5377.1987.tb120232.x. PMID 3547053. S2CID 10531701.",
+                    "<info> ^ Forman, W.B. (1990). \"Zinc abuse: an unsuspected cause of sideroblastic anemia\". West J Med. 152 (2): 190–192. PMC 1002314. PMID 2400417.",
+                    "<info> ^ Fiske, D.N. (1994). \"Zinc-induced sideroblastic anemia: report of a case, review of the literature, and description of the hematologic syndrome\". Am J Hematol. 46 (2): 147–150. doi:10.1002/ajh.2830460217. PMID 8172183. S2CID 22495489.",
+                    "<info> ^ Hemilä, H. (June 23, 2011). \"Zinc lozenges may shorten the duration of colds: a systematic review\". Open Respir Med J. 5 (1): 51–58. doi:10.2174/1874306401105010051. PMC 3136969. PMID 21769305.",
+                    "<info> ^ Lim KH, Riddell LJ, Nowson CA, Booth AO, Szymlek-Gay EA (2013). \"Iron and zinc nutrition in the economically-developed world: a review\". Nutrients. 5 (8): 3184–3211. doi:10.3390/nu5083184. PMC 3775249. PMID 23945676. Homeostatic regulation of iron and zinc differ, with iron being regulated through absorption and zinc being regulated primarily through secretion. As the body does not have a means to eliminate excess iron, absorption from the small intestine is tightly regulated by hepcidin. Hepcidin is a peptide hormone that is present in higher concentrations when body iron is replete [52]. Higher concentrations of hepcidin prevent ingested iron from entering the bloodstream by trapping iron in enterocytes which are naturally shed every two days [112], thereby preventing body iron from escalating to dangerous levels. In comparison, endogenous (pancreatic, biliary and intestinal) secretions comprise the main route of zinc loss, with larger zinc intakes being balanced by larger zinc secretions [113, 114].",
+                    "<info> ^ Stowe CM, Nelson R, Werdin R, et al.: \"Zinc phosphide poisoning in dogs\". JAVMA 173:270, 1978",
+                    "<info> ^ \"Pet Parrots 101 - Health Risks - For Your Parot [sic]\". Archived from the original on 2019-08-28. Retrieved 2025-10-04.",
+                    "<info> ^ \"A Guide to Timing Supplement Intake\". Labdoor. 20 June 2014.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Zinc toxicity is a medical condition involving an overdose on, or toxic overexposure to, zinc. Such toxicity levels have been seen to occur at ingestion of greater than 50 mg of zinc.[1][unreliable medical source?] Excessive absorption of zinc can suppress copper and iron absorption. The free zinc ion in solution is highly toxic to bacteria, plants, invertebrates, and even vertebrate fish.[2][3][4] Zinc is an essential trace metal with very low toxicity in humans.[1][5]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Following an oral intake of extremely high doses of zinc (where 300 mg Zn/d – 20 times the US RDA – is a \"low intake\" overdose[1]), nausea, vomiting, pain, cramps, and diarrhea may occur.[1] There is evidence of induced copper deficiency, alterations of blood lipoprotein levels, increased levels of LDL, and decreased levels of HDL at long-term intakes of 100 mg Zn/d.[1] The USDA RDA is 15 mg Zn/d.[1] There is also a condition called the \"zinc shakes\", \"zinc chills\", or metal fume fever that can be induced by the inhalation of freshly formed zinc oxide formed during the welding of galvanized materials.[6]"
+                        ]
+                    },
+                    "In humans": {
+                        "content": [
+                            "Zinc has been used therapeutically at a dose of 150 mg/day for months, or in some cases for years, and in one case at a dose of up to 2000 mg/day zinc for months.[7][8][9][10][11] A decrease in copper levels and hematological changes have been reported; however, those changes were completely reversed with the cessation of zinc intake.[9]",
+                            "Zinc has been popularly used as zinc gluconate or zinc acetate lozenges for treating the common cold,[12] and therefore the safety of usage at about 100 mg/day level is a relevant question.",
+                            "Unlike iron, the elimination of zinc is concentration-dependent.[13]"
+                        ]
+                    },
+                    "In animals": {
+                        "content": [
+                            "Zinc toxicity is commonly fatal in dogs, where it causes a severe hemolytic anemia.[14][verification needed] It is also highly toxic in pet parrots and can often be fatal.[15][better source needed]"
+                        ]
+                    },
+                    "Cross-reaction toxicity": {
+                        "content": [
+                            "Supplemental zinc can prevent iron absorption, leading to iron deficiency. Zinc and iron should be taken at different times of the day.[16]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "Zinc concentrations are typically quantified using instrumental methods such as atomic absorption, emission, or mass spectroscopies; X-ray fluorescence; electro-analytical techniques (e.g., stripping voltammetry); or neutron activation analysis. Inductively coupled plasma atomic emission spectroscopy (ICP-AES) is used for zinc determinations in blood and tissue samples (NIOSH Method 8005) and in urine (NIOSH Method 8310). Detection limits in blood and tissue are 1 μg/100 g and 0.2 μg/g, respectively, with recoveries of 100% (NIOSH 1994). Sample preparation involves acid digestion using concentrated acids. Detection of zinc in urine samples requires extraction of the metals with a polydithiocarbamate resin prior to digestion and analysis (NIOSH 1984). Detection limits in urine are 0.1 μg/sample."
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "Treatment of zinc toxicity consists of eliminating exposure to zinc. However, no antidotes are available.[citation needed]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d e f Fosmire GJ (February 1990). \"Zinc toxicity\". Am. J. Clin. Nutr. 51 (2): 225–227. doi:10.1093/ajcn/51.2.225. PMID 2407097.",
+                            "<info> ^ Rout, Gyana Ranjan; Das, Premananda (1 January 2003). \"Effect of Metal Toxicity on Plant Growth and Metabolism: I. Zinc\" (PDF). Agronomie. 23 (1): 3–11. Bibcode:2003AgSD...23....3R. doi:10.1051/agro:2002073.",
+                            "<info> ^ Smith, SE; Larson, EJ (April 1946). \"Zinc toxicity in rats; antagonistic effects of copper and liver\". The Journal of Biological Chemistry. 163: 29–38. doi:10.1016/S0021-9258(17)41344-5. PMID 21023625.",
+                            "<info> ^ Brita, T. A.; De Schamphelaere, Muyssen; Karel, A. C.; Janssen, Colin R. (2006). \"Mechanisms of chronic waterborne Zn toxicity in Daphnia magna\". Aquatic Toxicology. 77 (4): 393–401. Bibcode:2006AqTox..77..393M. doi:10.1016/j.aquatox.2006.01.006. PMID 16472524.",
+                            "<info> ^ Ciubotariu D, Ghiciuc CM, Lupușoru CE (2015). \"Zinc involvement in opioid addiction and analgesia – should zinc supplementation be recommended for opioid-treated persons?\". Subst Abuse Treat Prev Policy. 10 (1) 29. doi:10.1186/s13011-015-0025-2. PMC 4523930. PMID 26238243.",
+                            "<info> ^ Pettilä, V.; Takkunen, O.; Tukiainen, P. (2000). \"Zinc chloride smoke inhalation: a rare cause of severe acute respiratory distress syndrome\". Intensive Care Medicine. 26 (2): 215–217. doi:10.1007/s001340050049. PMID 10784312. S2CID 39004564.",
+                            "<info> ^ Pories, W.J. (1967). \"Acceleration of healing with zinc sulfate\". Ann Surg. 165 (3): 432–436. doi:10.1097/00000658-196703000-00015. PMC 1617499. PMID 6019319.",
+                            "<info> ^ Simkin, P.A. (1976). \"Oral zinc sulphate in rheumatoid arthritis\". Lancet. 2 (7985): 539–542. doi:10.1016/s0140-6736(76)91793-1. PMID 60622. S2CID 31836064.",
+                            "<info> ^ a b Samman, S.; Roberts, D.C. (1987). \"The effect of zinc supplements on plasma zinc and copper levels and the reported symptoms in healthy volunteers\". Med J Aust. 146 (5): 246–249. doi:10.5694/j.1326-5377.1987.tb120232.x. PMID 3547053. S2CID 10531701.",
+                            "<info> ^ Forman, W.B. (1990). \"Zinc abuse: an unsuspected cause of sideroblastic anemia\". West J Med. 152 (2): 190–192. PMC 1002314. PMID 2400417.",
+                            "<info> ^ Fiske, D.N. (1994). \"Zinc-induced sideroblastic anemia: report of a case, review of the literature, and description of the hematologic syndrome\". Am J Hematol. 46 (2): 147–150. doi:10.1002/ajh.2830460217. PMID 8172183. S2CID 22495489.",
+                            "<info> ^ Hemilä, H. (June 23, 2011). \"Zinc lozenges may shorten the duration of colds: a systematic review\". Open Respir Med J. 5 (1): 51–58. doi:10.2174/1874306401105010051. PMC 3136969. PMID 21769305.",
+                            "<info> ^ Lim KH, Riddell LJ, Nowson CA, Booth AO, Szymlek-Gay EA (2013). \"Iron and zinc nutrition in the economically-developed world: a review\". Nutrients. 5 (8): 3184–3211. doi:10.3390/nu5083184. PMC 3775249. PMID 23945676. Homeostatic regulation of iron and zinc differ, with iron being regulated through absorption and zinc being regulated primarily through secretion. As the body does not have a means to eliminate excess iron, absorption from the small intestine is tightly regulated by hepcidin. Hepcidin is a peptide hormone that is present in higher concentrations when body iron is replete [52]. Higher concentrations of hepcidin prevent ingested iron from entering the bloodstream by trapping iron in enterocytes which are naturally shed every two days [112], thereby preventing body iron from escalating to dangerous levels. In comparison, endogenous (pancreatic, biliary and intestinal) secretions comprise the main route of zinc loss, with larger zinc intakes being balanced by larger zinc secretions [113, 114].",
+                            "<info> ^ Stowe CM, Nelson R, Werdin R, et al.: \"Zinc phosphide poisoning in dogs\". JAVMA 173:270, 1978",
+                            "<info> ^ \"Pet Parrots 101 - Health Risks - For Your Parot [sic]\". Archived from the original on 2019-08-28. Retrieved 2025-10-04.",
+                            "<info> ^ \"A Guide to Timing Supplement Intake\". Labdoor. 20 June 2014."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

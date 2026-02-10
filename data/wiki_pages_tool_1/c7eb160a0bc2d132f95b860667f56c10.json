@@ -1,0 +1,89 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/ductus_arteriosus": {
+                "title": "Ductus arteriosus",
+                "url": "https://en.wikipedia.org/wiki/ductus_arteriosus",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The ductus arteriosus, also called the ductus Botalli, named after the Italian physiologist Leonardo Botallo, is a blood vessel in the developing fetus connecting the trunk of the pulmonary artery to the proximal descending aorta. It allows most of the blood from the right ventricle to bypass the fetus's fluid-filled non-functioning lungs. Upon closure at birth, it becomes the ligamentum arteriosum.[clarification needed]",
+                    "",
+                    "=== Development and structure ===",
+                    "The ductus arteriosus is formed from the left 6th aortic arch during embryonic development[1] and attaches to the final part of the aortic arch (the isthmus of aorta) and the first part of the pulmonary artery.[2]",
+                    "",
+                    "=== Disorder: patent ductus arteriosus ===",
+                    "Failure of the ductus arteriosus to close after birth results in a condition called patent ductus arteriosus, which results in the abnormal flow of blood from the aorta to the pulmonary artery: a left-to-right shunt. If left uncorrected, this usually leads to pulmonary hypertension followed by right ventricular heart failure, as well as possible cardiac arrhythmias.",
+                    "The \"E\" series of prostaglandins are responsible for maintaining the openness of the ductus arteriosus (by dilation of vascular smooth muscle) throughout the fetal period.[3] Prostaglandin E2 (PGE2), produced by both the placenta and the DA itself, is the most potent of the E prostaglandins, but prostaglandin E1 (PGE1) also has a role in keeping the DA open.[4] PGE1 and PGE2 keep the ductus arteriosus open via involvement of specific PGE-sensitive receptors (such as EP4 and EP2).[5] EP4 is the major receptor associated with PGE2-induced dilation of the DA and can be found across the DA in smooth muscle cells.[6] \nImmediately after birth, the levels of both PGE2 and the EP4 receptors reduce significantly, allowing for closure of the DA and establishment of normal postnatal circulation.[6]",
+                    "Ductus arteriosus closure may be induced by administration of nonsteroidal anti-inflammatory drugs (NSAIDs), which inhibit prostaglandin production.[4] The most common NSAID used is Indomethacin, which is usually administered in the first week after birth.[4] However, in the presence of a congenital defect with impaired lung perfusion (e.g. Pulmonary stenosis and left-to-right shunt through the ductus), it may be advisable to improve oxygenation by maintaining the ductus open with prostaglandin treatment. However, such treatments are ineffective in an abnormal ductus. Persistence of the ductus may be associated with other abnormalities, and is much more common in females. By inhibiting PGE2 formation, EP4 receptor activation will decrease and normal circulation can begin. NSAIDs taken late in pregnancy can cross the placenta and lead to premature closure of the DA in the fetus.[7]  In this case, exogenous PDE2 can be administered to reverse the effects of the NSAIDs and maintain the patency of the DA for the remainder of the pregnancy.[4]",
+                    "A patent ductus arteriosus affects approximately 4% of infants with Down syndrome (DS). A failure to thrive is a very common sign of this condition.[8]",
+                    "In some types of congenital heart defect (e.g., transposition of the great arteries), prostaglandins may be administered to maintain the DA open, allowing for the continual circulation and oxygenation of blood, until surgery can be performed.[9]",
+                    "",
+                    "=== Other animals ===",
+                    "Ductus arteriosus evolved with the lung in the ancestors of the lungfish as a connection between the pulmonary arteries and dorsal aorta. During embryonic development, reptiles, birds, and mammals all have either one or two paired ductus arteriosi that provide a fetal shunt of blood away from the lungs.[10]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Bamforth, Simon D.; Chaudhry, Bill; Bennett, Michael; Wilson, Robert; Mohun, Timothy J.; Van Mierop, Lodewyk H.S.; Henderson, Deborah J.; Anderson, Robert H. (2013-03-01). \"Clarification of the identity of the mammalian fifth pharyngeal arch artery\". Clinical Anatomy. 26 (2): 173–182. doi:10.1002/ca.22101. ISSN 1098-2353. PMID 22623372. S2CID 7927804.",
+                    "<info> ^ Monvadi B. Srichai (2007). David P. Naidich; et al. (eds.). Computed tomography and magnetic resonance of the thorax (4th ed.). Philadelphia: Wolters Kluwer/Lippincott Williams & Wilkins. p. 100. ISBN 9780781757652.",
+                    "<info> ^ Lucas, A (1978). \"Prostaglandins in Patent Ductus Arteriosus\". The Lancet. 312 (8096): 937–938. doi:10.1016/S0140-6736(78)91648-3. ISSN 0140-6736. PMID 81944. S2CID 54389960.",
+                    "<info> ^ a b c d Olley, P.M.; Conceani F. (1981). \"Prostaglandins and the Ductus Arteriosus\". Annual Review of Medicine. 32 (1): 375–385. doi:10.1146/annurev.me.32.020181.002111. PMID 7013675.",
+                    "<info> ^ Bouayad A, Kajino H, Waleh N, Fouron JC, Andelfinger G, Varma DR, Skoll A, Vazquez A, Gobeil F, Clyman RI, Chemtob S (2001). \"Characterization of PGE2 receptors in fetal and newborn lamb ductus arteriosus\". Am. J. Physiol. Heart Circ. Physiol. 280 (5): H2342–9. doi:10.1152/ajpheart.2001.280.5.H2342. PMID 11299240. S2CID 32049750.",
+                    "<info> ^ a b Gruzdeva, A; Nguyena, M.; Kovarovob, M.; Koller, B (March 2012). \"PGE2 through the EP4 receptor controls smooth muscle gene expression patterns in the ductus arteriosus critical for remodeling at birth\". Prostaglandins and Other Lipid Mediators. 94 (3): 109–119. doi:10.1016/j.prostaglandins.2012.02.001. PMC 3312001. PMID 22342504.",
+                    "<info> ^ Anonucci, R; Zaffanello, M.; Puxeddu, E.; Porcella, A.; Cuzzolin, L.; Pilloni, M.; Fanos, V. (2012). \"Use of non-steroidal anti-inflammatory drugs in pregnancy:impact on the fetus and newborn\". Current Drug Metabolism. 13 (4): 474–490. doi:10.2174/138920012800166607. PMID 22299823.",
+                    "<info> ^ Pritchard & Korf. \"Medical Genetics at a Glance\". Blackwell Publishing. 2010. p63.",
+                    "<info> ^ \"Congenital heart defects: Prostaglandins and prostaglandin inhibitors\". Healthwise. My Health Alberta.",
+                    "<info> ^ Dzialowski, Edward M. (2018). \"Comparative physiology of the ductus arteriosus among vertebrates\". Seminars in Perinatology. 42 (4): 203–211. doi:10.1053/j.semperi.2018.05.002. ISSN 1558-075X. PMID 29937096. S2CID 49405282.",
+                    "",
+                    "=== External links ===",
+                    "<info> Circulatory changes at birth at berkeley.edu",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The ductus arteriosus, also called the ductus Botalli, named after the Italian physiologist Leonardo Botallo, is a blood vessel in the developing fetus connecting the trunk of the pulmonary artery to the proximal descending aorta. It allows most of the blood from the right ventricle to bypass the fetus's fluid-filled non-functioning lungs. Upon closure at birth, it becomes the ligamentum arteriosum.[clarification needed]"
+                        ]
+                    },
+                    "Development and structure": {
+                        "content": [
+                            "The ductus arteriosus is formed from the left 6th aortic arch during embryonic development[1] and attaches to the final part of the aortic arch (the isthmus of aorta) and the first part of the pulmonary artery.[2]"
+                        ]
+                    },
+                    "Disorder: patent ductus arteriosus": {
+                        "content": [
+                            "Failure of the ductus arteriosus to close after birth results in a condition called patent ductus arteriosus, which results in the abnormal flow of blood from the aorta to the pulmonary artery: a left-to-right shunt. If left uncorrected, this usually leads to pulmonary hypertension followed by right ventricular heart failure, as well as possible cardiac arrhythmias.",
+                            "The \"E\" series of prostaglandins are responsible for maintaining the openness of the ductus arteriosus (by dilation of vascular smooth muscle) throughout the fetal period.[3] Prostaglandin E2 (PGE2), produced by both the placenta and the DA itself, is the most potent of the E prostaglandins, but prostaglandin E1 (PGE1) also has a role in keeping the DA open.[4] PGE1 and PGE2 keep the ductus arteriosus open via involvement of specific PGE-sensitive receptors (such as EP4 and EP2).[5] EP4 is the major receptor associated with PGE2-induced dilation of the DA and can be found across the DA in smooth muscle cells.[6] \nImmediately after birth, the levels of both PGE2 and the EP4 receptors reduce significantly, allowing for closure of the DA and establishment of normal postnatal circulation.[6]",
+                            "Ductus arteriosus closure may be induced by administration of nonsteroidal anti-inflammatory drugs (NSAIDs), which inhibit prostaglandin production.[4] The most common NSAID used is Indomethacin, which is usually administered in the first week after birth.[4] However, in the presence of a congenital defect with impaired lung perfusion (e.g. Pulmonary stenosis and left-to-right shunt through the ductus), it may be advisable to improve oxygenation by maintaining the ductus open with prostaglandin treatment. However, such treatments are ineffective in an abnormal ductus. Persistence of the ductus may be associated with other abnormalities, and is much more common in females. By inhibiting PGE2 formation, EP4 receptor activation will decrease and normal circulation can begin. NSAIDs taken late in pregnancy can cross the placenta and lead to premature closure of the DA in the fetus.[7]  In this case, exogenous PDE2 can be administered to reverse the effects of the NSAIDs and maintain the patency of the DA for the remainder of the pregnancy.[4]",
+                            "A patent ductus arteriosus affects approximately 4% of infants with Down syndrome (DS). A failure to thrive is a very common sign of this condition.[8]",
+                            "In some types of congenital heart defect (e.g., transposition of the great arteries), prostaglandins may be administered to maintain the DA open, allowing for the continual circulation and oxygenation of blood, until surgery can be performed.[9]"
+                        ]
+                    },
+                    "Other animals": {
+                        "content": [
+                            "Ductus arteriosus evolved with the lung in the ancestors of the lungfish as a connection between the pulmonary arteries and dorsal aorta. During embryonic development, reptiles, birds, and mammals all have either one or two paired ductus arteriosi that provide a fetal shunt of blood away from the lungs.[10]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Bamforth, Simon D.; Chaudhry, Bill; Bennett, Michael; Wilson, Robert; Mohun, Timothy J.; Van Mierop, Lodewyk H.S.; Henderson, Deborah J.; Anderson, Robert H. (2013-03-01). \"Clarification of the identity of the mammalian fifth pharyngeal arch artery\". Clinical Anatomy. 26 (2): 173–182. doi:10.1002/ca.22101. ISSN 1098-2353. PMID 22623372. S2CID 7927804.",
+                            "<info> ^ Monvadi B. Srichai (2007). David P. Naidich; et al. (eds.). Computed tomography and magnetic resonance of the thorax (4th ed.). Philadelphia: Wolters Kluwer/Lippincott Williams & Wilkins. p. 100. ISBN 9780781757652.",
+                            "<info> ^ Lucas, A (1978). \"Prostaglandins in Patent Ductus Arteriosus\". The Lancet. 312 (8096): 937–938. doi:10.1016/S0140-6736(78)91648-3. ISSN 0140-6736. PMID 81944. S2CID 54389960.",
+                            "<info> ^ a b c d Olley, P.M.; Conceani F. (1981). \"Prostaglandins and the Ductus Arteriosus\". Annual Review of Medicine. 32 (1): 375–385. doi:10.1146/annurev.me.32.020181.002111. PMID 7013675.",
+                            "<info> ^ Bouayad A, Kajino H, Waleh N, Fouron JC, Andelfinger G, Varma DR, Skoll A, Vazquez A, Gobeil F, Clyman RI, Chemtob S (2001). \"Characterization of PGE2 receptors in fetal and newborn lamb ductus arteriosus\". Am. J. Physiol. Heart Circ. Physiol. 280 (5): H2342–9. doi:10.1152/ajpheart.2001.280.5.H2342. PMID 11299240. S2CID 32049750.",
+                            "<info> ^ a b Gruzdeva, A; Nguyena, M.; Kovarovob, M.; Koller, B (March 2012). \"PGE2 through the EP4 receptor controls smooth muscle gene expression patterns in the ductus arteriosus critical for remodeling at birth\". Prostaglandins and Other Lipid Mediators. 94 (3): 109–119. doi:10.1016/j.prostaglandins.2012.02.001. PMC 3312001. PMID 22342504.",
+                            "<info> ^ Anonucci, R; Zaffanello, M.; Puxeddu, E.; Porcella, A.; Cuzzolin, L.; Pilloni, M.; Fanos, V. (2012). \"Use of non-steroidal anti-inflammatory drugs in pregnancy:impact on the fetus and newborn\". Current Drug Metabolism. 13 (4): 474–490. doi:10.2174/138920012800166607. PMID 22299823.",
+                            "<info> ^ Pritchard & Korf. \"Medical Genetics at a Glance\". Blackwell Publishing. 2010. p63.",
+                            "<info> ^ \"Congenital heart defects: Prostaglandins and prostaglandin inhibitors\". Healthwise. My Health Alberta.",
+                            "<info> ^ Dzialowski, Edward M. (2018). \"Comparative physiology of the ductus arteriosus among vertebrates\". Seminars in Perinatology. 42 (4): 203–211. doi:10.1053/j.semperi.2018.05.002. ISSN 1558-075X. PMID 29937096. S2CID 49405282."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Circulatory changes at birth at berkeley.edu"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/histiocytoma": {
+                "title": "Histiocytoma",
+                "url": "https://en.wikipedia.org/wiki/histiocytoma",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A histiocytoma is a tumour consisting of histiocytes.[1] Histiocytes are cells that are a part of the mononuclear phagocytic system, a part of the body's immune system that consists of phagocytic cells, which are responsible for engulfing solid particles by the cell membrane to form an internal phagosome by phagocytes and protists. Myxofibrosarcoma had been classified as a type of histiocytoma. However, the World Health Organization (2020) reclassified myxofibrosarcoma as a malignant tumor in the category of fibroblastic/myofibroblastic tumors.[2]",
+                    "<info> benign fibrous histiocytoma: This tumor has also been termed benign fibrous histiocytomas of the skin, superficial/cutaneous benign fibrous histiocytomas, common fibrous histiocytoma, and more recently dermatofibroma. The use of \"histiocytoma\" in these terms refers more to the morphologic appearance of some of the cells that comprise these lesions rather than their lineage: studies to date have not fully determined the lineage of the neoplastic cells in dermatofibroma tumors[3] but recent cell marker studies suggest these cells originate from fibroblasts rather than histiocytes.[4]",
+                    "<info> malignant fibrous histiocytoma: This tumor is now termed undifferentiated pleomorphic sarcoma (UPS) because more recently developed immunohistochemistry and cytogenetic analyses suggest that its neoplastic cells most likely arise from mesenchymal stem cells[5] or fibroblasts[6] rather than histiocytes.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"histiocytoma\" at Dorland's Medical Dictionary",
+                    "<info> ^ Sbaraglia M, Bellan E, Dei Tos AP (April 2021). \"The 2020 WHO Classification of Soft Tissue Tumours: news and perspectives\". Pathologica. 113 (2): 70–84. doi:10.32074/1591-951X-213. PMC 8167394. PMID 33179614.",
+                    "<info> ^ Myers, David J.; Fillman, Eric P. (2021). \"Dermatofibroma\". StatPearls. StatPearls Publishing. PMID 29262213.",
+                    "<info> ^ Kirschnick LB, Schuch LF, Silveira FM, Só BB, Martins MA, Lopes MA, Vargas PA, Santos-Silva AR, Carrard VC, Vasconcelos AC, Wagner VP, Martins MD (July 2021). \"Benign fibrous histiocytoma of the oral and maxillofacial region: A systematic review\". Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology. 133 (2): e43–e56. doi:10.1016/j.oooo.2021.07.003. PMID 34511357. S2CID 237495526.",
+                    "<info> ^ Robles-Tenorio, Arturo; Solis-Ledesma, Guillermo (2021). \"Undifferentiated Pleomorphic Sarcoma\". StatPearls. StatPearls Publishing. PMID 34033374.",
+                    "<info> ^ Wu Y, Liu X, Lv Y, Li Z (July 2021). \"Malignant fibrous histiocytoma of the floor of mouth: a case report and review of the literature\". Journal of Stomatology, Oral and Maxillofacial Surgery. 123 (3): e106–e111. doi:10.1016/j.jormas.2021.06.017. PMID 34224923. S2CID 235745120.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A histiocytoma is a tumour consisting of histiocytes.[1] Histiocytes are cells that are a part of the mononuclear phagocytic system, a part of the body's immune system that consists of phagocytic cells, which are responsible for engulfing solid particles by the cell membrane to form an internal phagosome by phagocytes and protists. Myxofibrosarcoma had been classified as a type of histiocytoma. However, the World Health Organization (2020) reclassified myxofibrosarcoma as a malignant tumor in the category of fibroblastic/myofibroblastic tumors.[2]",
+                            "<info> benign fibrous histiocytoma: This tumor has also been termed benign fibrous histiocytomas of the skin, superficial/cutaneous benign fibrous histiocytomas, common fibrous histiocytoma, and more recently dermatofibroma. The use of \"histiocytoma\" in these terms refers more to the morphologic appearance of some of the cells that comprise these lesions rather than their lineage: studies to date have not fully determined the lineage of the neoplastic cells in dermatofibroma tumors[3] but recent cell marker studies suggest these cells originate from fibroblasts rather than histiocytes.[4]",
+                            "<info> malignant fibrous histiocytoma: This tumor is now termed undifferentiated pleomorphic sarcoma (UPS) because more recently developed immunohistochemistry and cytogenetic analyses suggest that its neoplastic cells most likely arise from mesenchymal stem cells[5] or fibroblasts[6] rather than histiocytes."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"histiocytoma\" at Dorland's Medical Dictionary",
+                            "<info> ^ Sbaraglia M, Bellan E, Dei Tos AP (April 2021). \"The 2020 WHO Classification of Soft Tissue Tumours: news and perspectives\". Pathologica. 113 (2): 70–84. doi:10.32074/1591-951X-213. PMC 8167394. PMID 33179614.",
+                            "<info> ^ Myers, David J.; Fillman, Eric P. (2021). \"Dermatofibroma\". StatPearls. StatPearls Publishing. PMID 29262213.",
+                            "<info> ^ Kirschnick LB, Schuch LF, Silveira FM, Só BB, Martins MA, Lopes MA, Vargas PA, Santos-Silva AR, Carrard VC, Vasconcelos AC, Wagner VP, Martins MD (July 2021). \"Benign fibrous histiocytoma of the oral and maxillofacial region: A systematic review\". Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology. 133 (2): e43–e56. doi:10.1016/j.oooo.2021.07.003. PMID 34511357. S2CID 237495526.",
+                            "<info> ^ Robles-Tenorio, Arturo; Solis-Ledesma, Guillermo (2021). \"Undifferentiated Pleomorphic Sarcoma\". StatPearls. StatPearls Publishing. PMID 34033374.",
+                            "<info> ^ Wu Y, Liu X, Lv Y, Li Z (July 2021). \"Malignant fibrous histiocytoma of the floor of mouth: a case report and review of the literature\". Journal of Stomatology, Oral and Maxillofacial Surgery. 123 (3): e106–e111. doi:10.1016/j.jormas.2021.06.017. PMID 34224923. S2CID 235745120."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

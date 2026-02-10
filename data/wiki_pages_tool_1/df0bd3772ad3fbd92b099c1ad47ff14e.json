@@ -1,0 +1,53 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/chromosome_instability_syndrome": {
+                "title": "Chromosome instability syndrome",
+                "url": "https://en.wikipedia.org/wiki/chromosome_instability_syndrome",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Chromosome instability syndromes are a group of inherited conditions associated with chromosomal instability and breakage. They often lead to an increased tendency to develop certain types of malignancies.[1]",
+                    "The following chromosome instability syndromes are known:",
+                    "",
+                    "=== Neurodegenerative diseases ===",
+                    "Chromosome instability syndromes include several inherited neurodegenerative diseases that are due to  mutations in genes that encode enzymes necessary for DNA repair.  Epigenetic alterations often occur in association with the DNA repair defect, and such alterations likely have a role in the etiology of the disease.  Chromosome instability syndromes due to impaired DNA repair and with features of neurodegeneration and epigenetic alteration were summarized by Bernstein and Bernstein.[citation needed]  These syndromes include Aicardi-Goutieres syndrome, amyotrophic lateral sclerosis, ataxia-telangiectasia, Cockayne syndrome, fragile X syndrome, Friedrich's ataxia, Huntington's disease, spinocerebellar ataxia type 1, trichothiodystrophy and xeroderma pigmentosum.",
+                    "",
+                    "=== Hypogonadism ===",
+                    "Genes MCM8 and MCM9 encode proteins that form a complex. This complex functions in homologous recombination and repair of DNA double-strand breaks.  Inherited mutations in MCM8 and MCM9 can cause a chromosomal instability syndrome characterized by ovarian failure.[2][3]  The germline MCM8-MCM9 protein complex is most likely  required for the resolution of double-strand breaks that occur during homologous recombination in the pachytene stage of meiosis I.[2]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Taylor AM (2001). \"Chromosome instability syndromes\". Best Pract Res Clin Haematol. 14 (3): 631–44. doi:10.1053/beha.2001.0158. PMID 11640873.",
+                    "<info> ^ a b Wood-Trageser MA, Gurbuz F, Yatsenko SA, Jeffries EP, Kotan LD, Surti U, Ketterer DM, Matic J, Chipkin J, Jiang H, Trakselis MA, Topaloglu AK, Rajkovic A (December 2014). \"MCM9 mutations are associated with ovarian failure, short stature, and chromosomal instability\". Am. J. Hum. Genet. 95 (6): 754–62. doi:10.1016/j.ajhg.2014.11.002. PMC 4259971. PMID 25480036.",
+                    "<info> ^ Desai S, Wood-Trageser M, Matic J, Chipkin J, Jiang H, Bachelot A, Dulon J, Sala C, Barbieri C, Cocca M, Toniolo D, Touraine P, Witchel S, Rajkovic A (February 2017). \"MCM8 and MCM9 Nucleotide Variants in Women With Primary Ovarian Insufficiency\". J. Clin. Endocrinol. Metab. 102 (2): 576–582. doi:10.1210/jc.2016-2565. PMC 5413161. PMID 27802094.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Chromosome instability syndromes are a group of inherited conditions associated with chromosomal instability and breakage. They often lead to an increased tendency to develop certain types of malignancies.[1]",
+                            "The following chromosome instability syndromes are known:"
+                        ]
+                    },
+                    "Neurodegenerative diseases": {
+                        "content": [
+                            "Chromosome instability syndromes include several inherited neurodegenerative diseases that are due to  mutations in genes that encode enzymes necessary for DNA repair.  Epigenetic alterations often occur in association with the DNA repair defect, and such alterations likely have a role in the etiology of the disease.  Chromosome instability syndromes due to impaired DNA repair and with features of neurodegeneration and epigenetic alteration were summarized by Bernstein and Bernstein.[citation needed]  These syndromes include Aicardi-Goutieres syndrome, amyotrophic lateral sclerosis, ataxia-telangiectasia, Cockayne syndrome, fragile X syndrome, Friedrich's ataxia, Huntington's disease, spinocerebellar ataxia type 1, trichothiodystrophy and xeroderma pigmentosum."
+                        ]
+                    },
+                    "Hypogonadism": {
+                        "content": [
+                            "Genes MCM8 and MCM9 encode proteins that form a complex. This complex functions in homologous recombination and repair of DNA double-strand breaks.  Inherited mutations in MCM8 and MCM9 can cause a chromosomal instability syndrome characterized by ovarian failure.[2][3]  The germline MCM8-MCM9 protein complex is most likely  required for the resolution of double-strand breaks that occur during homologous recombination in the pachytene stage of meiosis I.[2]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Taylor AM (2001). \"Chromosome instability syndromes\". Best Pract Res Clin Haematol. 14 (3): 631–44. doi:10.1053/beha.2001.0158. PMID 11640873.",
+                            "<info> ^ a b Wood-Trageser MA, Gurbuz F, Yatsenko SA, Jeffries EP, Kotan LD, Surti U, Ketterer DM, Matic J, Chipkin J, Jiang H, Trakselis MA, Topaloglu AK, Rajkovic A (December 2014). \"MCM9 mutations are associated with ovarian failure, short stature, and chromosomal instability\". Am. J. Hum. Genet. 95 (6): 754–62. doi:10.1016/j.ajhg.2014.11.002. PMC 4259971. PMID 25480036.",
+                            "<info> ^ Desai S, Wood-Trageser M, Matic J, Chipkin J, Jiang H, Bachelot A, Dulon J, Sala C, Barbieri C, Cocca M, Toniolo D, Touraine P, Witchel S, Rajkovic A (February 2017). \"MCM8 and MCM9 Nucleotide Variants in Women With Primary Ovarian Insufficiency\". J. Clin. Endocrinol. Metab. 102 (2): 576–582. doi:10.1210/jc.2016-2565. PMC 5413161. PMID 27802094."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

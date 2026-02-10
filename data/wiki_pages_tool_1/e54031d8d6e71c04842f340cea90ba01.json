@@ -1,0 +1,93 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/gaba": {
+                "title": "Gaba",
+                "url": "https://en.wikipedia.org/wiki/gaba",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Gaba or GABA may refer to:",
+                    "",
+                    "=== Places ===",
+                    "<info> Gąba, a village in Poland",
+                    "<info> Jaba', Haifa, a village near Mount Carmel, Israel also known as Gaba",
+                    "<info> Jab'a, a village in the West Bank, southwest of Jerusalem, also known as Gaba",
+                    "<info> Gaba, ancient city in what is now Tel Shush",
+                    "<info> Gaba, a Persian city located in what is now known as Isfahan",
+                    "<info> Gaba, a suburb of Makindye, Kampala, Uganda, on the shores of Lake Victoria",
+                    "<info> Gaba railway station on the Chinese Qingzang Railway",
+                    "",
+                    "=== People ===",
+                    "<info> Harold Gaba (1946–2009), American businessman",
+                    "<info> Lester Gaba (1907–1987), American sculptor, writer and retail display designer",
+                    "<info> Marianne Gaba (1939–2016), American model",
+                    "<info> Milan Gába (fl. 1970s–1980s), Czechoslovak slalom canoeist",
+                    "<info> Millind Gaba (born 1990), Indian musician and celebrity",
+                    "<info> Mo Gaba (2006–2020), American sports superfan and radio personality",
+                    "<info> Pierre Toura Gaba (1920–1998), Chadian politician and diplomat",
+                    "<info> Gaba Kulka (born 1979), Polish artist",
+                    "",
+                    "=== Biology ===",
+                    "<info> γ-Aminobutyric acid or GABA, the main inhibitory neurotransmitter in the central nervous system\nGABA receptor, a proteinaceous signalling molecule",
+                    "<info> GABA receptor, a proteinaceous signalling molecule",
+                    "",
+                    "=== Other uses ===",
+                    "<info> Gabâ or gabaa (Philippines), the concept of negative karma among the Cebuano people",
+                    "<info> Gába, a Sami magazine of Norway",
+                    "<info> GABA tea, commonly used name for tea passed through anoxic fermentation",
+                    "<info> Gaba Corporation, an English conversation school in Japan",
+                    "<info> Gabapentin, an anticonvulsant medication",
+                    "<info> GABA International, an oral care company owned by Colgate-Palmolive",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Gaba or GABA may refer to:"
+                        ]
+                    },
+                    "Places": {
+                        "content": [
+                            "<info> Gąba, a village in Poland",
+                            "<info> Jaba', Haifa, a village near Mount Carmel, Israel also known as Gaba",
+                            "<info> Jab'a, a village in the West Bank, southwest of Jerusalem, also known as Gaba",
+                            "<info> Gaba, ancient city in what is now Tel Shush",
+                            "<info> Gaba, a Persian city located in what is now known as Isfahan",
+                            "<info> Gaba, a suburb of Makindye, Kampala, Uganda, on the shores of Lake Victoria",
+                            "<info> Gaba railway station on the Chinese Qingzang Railway"
+                        ]
+                    },
+                    "People": {
+                        "content": [
+                            "<info> Harold Gaba (1946–2009), American businessman",
+                            "<info> Lester Gaba (1907–1987), American sculptor, writer and retail display designer",
+                            "<info> Marianne Gaba (1939–2016), American model",
+                            "<info> Milan Gába (fl. 1970s–1980s), Czechoslovak slalom canoeist",
+                            "<info> Millind Gaba (born 1990), Indian musician and celebrity",
+                            "<info> Mo Gaba (2006–2020), American sports superfan and radio personality",
+                            "<info> Pierre Toura Gaba (1920–1998), Chadian politician and diplomat",
+                            "<info> Gaba Kulka (born 1979), Polish artist"
+                        ]
+                    },
+                    "Biology": {
+                        "content": [
+                            "<info> γ-Aminobutyric acid or GABA, the main inhibitory neurotransmitter in the central nervous system\nGABA receptor, a proteinaceous signalling molecule",
+                            "<info> GABA receptor, a proteinaceous signalling molecule"
+                        ]
+                    },
+                    "Other uses": {
+                        "content": [
+                            "<info> Gabâ or gabaa (Philippines), the concept of negative karma among the Cebuano people",
+                            "<info> Gába, a Sami magazine of Norway",
+                            "<info> GABA tea, commonly used name for tea passed through anoxic fermentation",
+                            "<info> Gaba Corporation, an English conversation school in Japan",
+                            "<info> Gabapentin, an anticonvulsant medication",
+                            "<info> GABA International, an oral care company owned by Colgate-Palmolive"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

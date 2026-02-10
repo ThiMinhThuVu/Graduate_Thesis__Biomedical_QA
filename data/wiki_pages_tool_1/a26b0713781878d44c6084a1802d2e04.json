@@ -1,0 +1,87 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/neurotoxic_shellfish_poisoning": {
+                "title": "Neurotoxic shellfish poisoning",
+                "url": "https://en.wikipedia.org/wiki/neurotoxic_shellfish_poisoning",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Neurotoxic shellfish poisoning (NSP) is caused by the consumption of brevetoxins, which are marine toxins produced by the dinoflagellate Karenia brevis (among several others). These toxins can produce a series of gastrointestinal and neurological effects. Outbreaks of NSP commonly take place following harmful algal bloom (HAB) events, commonly referred to as \"Florida red tide\" (given that blooms are more commonplace along the coasts of Florida and Texas, especially during late summer and early fall). Algal blooms are a naturally occurring phenomenon; however, their frequency has been increasing in recent decades at least in part due to human activities, climate changes, and the eutrophication (over-abundance of plant nutrients as a result of agricultural runoff, deforestation, river bed erosion, etc.) of marine waters.[1][2][3][4] HABs have been occurring for all of documented history, evidenced by the Native Americans' understanding of the dangers of shellfish consumption during periods of marine bioluminescence (a phenomenon observed during algal blooms).[5] Blooms have been noted to occur as far north as North Carolina and are commonly seen alongside the widespread death of fish and sea birds.[4] In addition to the effects on human health, the economic impact of HAB-associated shellfish toxin outbreaks can have significant economic implications as well due to not only the associated healthcare costs, but the adverse impact on the commercial shellfish industry.[3]",
+                    "",
+                    "=== Causes ===",
+                    "Humans are typically exposed to these potent natural toxins via filter-feeding mollusks (i.e., shellfish), because shellfish accumulate biotoxins in their flesh due to the way that they feed.[1] Human exposure seems to be most common via consumption of commonly harvested shellfish such as clams, oysters, and mussels, although it has been proposed that exposure to lower levels of brevetoxins can take place following the consumption of certain planktivorous fish.[4] Toxins will typically be found in the flesh of shellfish for up to 2–8 weeks following a HAB event, however, there have been reports of toxin retention for nearly one-year post-bloom.[4] Notably, brevetoxins are tasteless and odorless and cannot be eradicated by rinsing, cleaning, cooking, freezing, or application of acid.[4][6] To date, there is no reasonable means of preventing the uptake of toxins by shellfish, nor of removing the toxins from shellfish after harvest.[5]",
+                    "",
+                    "=== Biochemistry and toxicology ===",
+                    "Brevetoxins are a group of greater than ten lipid-soluble cyclic polyethers that bind to a specific site on the voltage-gated sodium channel (VGSC), leading to an influx of sodium ions into the cell. This results in activation of nerves and spontaneous nerve cell membrane depolarization and firing.[6][4] Due to their lipid-solubility, brevetoxins are able to pass through cell membranes and cross the blood-brain barrier.[4] They are metabolized primarily by the liver and are excreted in the bile, although it is thought that urinary excretion plays a role in toxin clearance as well.[4] Additionally, brevetoxins can bind a separate site on VGSCs, causing release of neurotransmitters (such as acetylcholine), resulting in tracheal smooth muscle contraction and widespread mast cell degranulation.[6]",
+                    "",
+                    "=== Presentation and diagnosis ===",
+                    "Diagnosis of NSP is made based on clinical presentation as well as history findings including recent consumption of shellfish. On average, symptoms begin 3-4 hours after consumption, but can begin anywhere from several minutes to 18 hours afterward.[4] Symptoms typically include neurologic and gastrointestinal issues including:[4][6]",
+                    "<info> numbness and tingling in the lips, mouth, face, and extremities",
+                    "The latter has been described as \"nerves being on fire\" or \"ants crawling and biting all over\".[4]",
+                    "Other less common symptoms can include:[4]",
+                    "<info> reversal of hot and cold sensations",
+                    "Patients may be thought to be disoriented or intoxicated. Rarely, patients may experience respiratory distress requiring ventilatory support. Despite this seemingly severe constellation of symptoms, there have been no documented deaths due to NSP. NSP can present similar to other disorders such as:[4]",
+                    "Due to the extensive list of disorders with similar symptoms, a detailed food history is necessary to make the diagnosis.[4]",
+                    "",
+                    "=== Management and treatment ===",
+                    "Treatment for NSP is mostly supportive with monitoring and symptom management. Intravenous fluids and observation of respiratory function are the mainstay of treatment along with pain control. Activated charcoal can be given if the patient presents within four hours of consumption to decontaminate the gastrointestinal tract. Currently, there is no specific antidote for brevetoxins, however there may be a role for mannitol (the primary treatment for ciguatoxin, a dinoflagellate-produced toxin found in some species of fish) or brevatal, a natural antagonist of brevetoxin produced by K. brevis.[4] Though public health policy differs by state, measures are taken to prevent shellfish poisoning outbreaks. The Florida Department of Health has added NSP to their list of reportable diseases. Additionally, since the mid-1970s the Florida Department of Environmental Protection has conducted monitoring of dinoflagellate levels and restricted the harvest of shellfish from nearby shellfish beds when levels are dangerously elevated. Shellfish beds are subsequently opened after two weeks with confirmation of safety by mouse bioassay testing (mouse bioassay testing involves the injection of mice with shellfish extract with subsequent observation for mouse death[4]).[7]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b Zhang, Fan; Xu, Xunxun; Li, Tingting; Liu, Zhonghua (2013-11-28). \"Shellfish Toxins Targeting Voltage-Gated Sodium Channels\". Marine Drugs. 11 (12): 4698–4723. doi:10.3390/md11124698. ISSN 1660-3397. PMC 3877881. PMID 24287955.",
+                    "<info> ^ Yang, Xiao-e; Wu, Xiang; Hao, Hu-lin; He, Zhen-li (March 2008). \"Mechanisms and assessment of water eutrophication\". Journal of Zhejiang University Science B. 9 (3): 197–209. doi:10.1631/jzus.B0710626. ISSN 1673-1581. PMC 2266883. PMID 18357622.",
+                    "<info> ^ a b Farabegoli, Federica; Blanco, Lucía; Rodríguez, Laura; Vieites, Juan; Cabado, Ana (2018-05-29). \"Phycotoxins in Marine Shellfish: Origin, Occurrence and Effects on Humans\". Marine Drugs. 16 (6): 188. doi:10.3390/md16060188. ISSN 1660-3397. PMC 6025170. PMID 29844286.",
+                    "<info> ^ a b c d e f g h i j k l m n o p Watkins, Sharon M. (September 2008). \"Neurotoxic Shellfish Poisoning\" (PDF). Marine Drugs. 6 (3): 430–455. doi:10.3390/md20080021. PMC 2579735. PMID 19005578.",
+                    "<info> ^ a b Munday, Rex; Reeve, John (2013-11-11). \"Risk Assessment of Shellfish Toxins\". Toxins. 5 (11): 2109–2137. doi:10.3390/toxins5112109. ISSN 2072-6651. PMC 3847717. PMID 24226039.",
+                    "<info> ^ a b c d Wang, Da-Zhi (2008-06-11). \"Neurotoxins from Marine Dinoflagellates: A Brief Review\". Marine Drugs. 6 (2): 349–371. doi:10.3390/md6020349. ISSN 1660-3397. PMC 2525493. PMID 18728731.",
+                    "<info> ^ \"Neurotoxic Shellfish Poisoning\". www.whoi.edu. Retrieved 2020-12-13.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Neurotoxic shellfish poisoning (NSP) is caused by the consumption of brevetoxins, which are marine toxins produced by the dinoflagellate Karenia brevis (among several others). These toxins can produce a series of gastrointestinal and neurological effects. Outbreaks of NSP commonly take place following harmful algal bloom (HAB) events, commonly referred to as \"Florida red tide\" (given that blooms are more commonplace along the coasts of Florida and Texas, especially during late summer and early fall). Algal blooms are a naturally occurring phenomenon; however, their frequency has been increasing in recent decades at least in part due to human activities, climate changes, and the eutrophication (over-abundance of plant nutrients as a result of agricultural runoff, deforestation, river bed erosion, etc.) of marine waters.[1][2][3][4] HABs have been occurring for all of documented history, evidenced by the Native Americans' understanding of the dangers of shellfish consumption during periods of marine bioluminescence (a phenomenon observed during algal blooms).[5] Blooms have been noted to occur as far north as North Carolina and are commonly seen alongside the widespread death of fish and sea birds.[4] In addition to the effects on human health, the economic impact of HAB-associated shellfish toxin outbreaks can have significant economic implications as well due to not only the associated healthcare costs, but the adverse impact on the commercial shellfish industry.[3]"
+                        ]
+                    },
+                    "Causes": {
+                        "content": [
+                            "Humans are typically exposed to these potent natural toxins via filter-feeding mollusks (i.e., shellfish), because shellfish accumulate biotoxins in their flesh due to the way that they feed.[1] Human exposure seems to be most common via consumption of commonly harvested shellfish such as clams, oysters, and mussels, although it has been proposed that exposure to lower levels of brevetoxins can take place following the consumption of certain planktivorous fish.[4] Toxins will typically be found in the flesh of shellfish for up to 2–8 weeks following a HAB event, however, there have been reports of toxin retention for nearly one-year post-bloom.[4] Notably, brevetoxins are tasteless and odorless and cannot be eradicated by rinsing, cleaning, cooking, freezing, or application of acid.[4][6] To date, there is no reasonable means of preventing the uptake of toxins by shellfish, nor of removing the toxins from shellfish after harvest.[5]"
+                        ]
+                    },
+                    "Biochemistry and toxicology": {
+                        "content": [
+                            "Brevetoxins are a group of greater than ten lipid-soluble cyclic polyethers that bind to a specific site on the voltage-gated sodium channel (VGSC), leading to an influx of sodium ions into the cell. This results in activation of nerves and spontaneous nerve cell membrane depolarization and firing.[6][4] Due to their lipid-solubility, brevetoxins are able to pass through cell membranes and cross the blood-brain barrier.[4] They are metabolized primarily by the liver and are excreted in the bile, although it is thought that urinary excretion plays a role in toxin clearance as well.[4] Additionally, brevetoxins can bind a separate site on VGSCs, causing release of neurotransmitters (such as acetylcholine), resulting in tracheal smooth muscle contraction and widespread mast cell degranulation.[6]"
+                        ]
+                    },
+                    "Presentation and diagnosis": {
+                        "content": [
+                            "Diagnosis of NSP is made based on clinical presentation as well as history findings including recent consumption of shellfish. On average, symptoms begin 3-4 hours after consumption, but can begin anywhere from several minutes to 18 hours afterward.[4] Symptoms typically include neurologic and gastrointestinal issues including:[4][6]",
+                            "<info> numbness and tingling in the lips, mouth, face, and extremities",
+                            "The latter has been described as \"nerves being on fire\" or \"ants crawling and biting all over\".[4]",
+                            "Other less common symptoms can include:[4]",
+                            "<info> reversal of hot and cold sensations",
+                            "Patients may be thought to be disoriented or intoxicated. Rarely, patients may experience respiratory distress requiring ventilatory support. Despite this seemingly severe constellation of symptoms, there have been no documented deaths due to NSP. NSP can present similar to other disorders such as:[4]",
+                            "Due to the extensive list of disorders with similar symptoms, a detailed food history is necessary to make the diagnosis.[4]"
+                        ]
+                    },
+                    "Management and treatment": {
+                        "content": [
+                            "Treatment for NSP is mostly supportive with monitoring and symptom management. Intravenous fluids and observation of respiratory function are the mainstay of treatment along with pain control. Activated charcoal can be given if the patient presents within four hours of consumption to decontaminate the gastrointestinal tract. Currently, there is no specific antidote for brevetoxins, however there may be a role for mannitol (the primary treatment for ciguatoxin, a dinoflagellate-produced toxin found in some species of fish) or brevatal, a natural antagonist of brevetoxin produced by K. brevis.[4] Though public health policy differs by state, measures are taken to prevent shellfish poisoning outbreaks. The Florida Department of Health has added NSP to their list of reportable diseases. Additionally, since the mid-1970s the Florida Department of Environmental Protection has conducted monitoring of dinoflagellate levels and restricted the harvest of shellfish from nearby shellfish beds when levels are dangerously elevated. Shellfish beds are subsequently opened after two weeks with confirmation of safety by mouse bioassay testing (mouse bioassay testing involves the injection of mice with shellfish extract with subsequent observation for mouse death[4]).[7]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b Zhang, Fan; Xu, Xunxun; Li, Tingting; Liu, Zhonghua (2013-11-28). \"Shellfish Toxins Targeting Voltage-Gated Sodium Channels\". Marine Drugs. 11 (12): 4698–4723. doi:10.3390/md11124698. ISSN 1660-3397. PMC 3877881. PMID 24287955.",
+                            "<info> ^ Yang, Xiao-e; Wu, Xiang; Hao, Hu-lin; He, Zhen-li (March 2008). \"Mechanisms and assessment of water eutrophication\". Journal of Zhejiang University Science B. 9 (3): 197–209. doi:10.1631/jzus.B0710626. ISSN 1673-1581. PMC 2266883. PMID 18357622.",
+                            "<info> ^ a b Farabegoli, Federica; Blanco, Lucía; Rodríguez, Laura; Vieites, Juan; Cabado, Ana (2018-05-29). \"Phycotoxins in Marine Shellfish: Origin, Occurrence and Effects on Humans\". Marine Drugs. 16 (6): 188. doi:10.3390/md16060188. ISSN 1660-3397. PMC 6025170. PMID 29844286.",
+                            "<info> ^ a b c d e f g h i j k l m n o p Watkins, Sharon M. (September 2008). \"Neurotoxic Shellfish Poisoning\" (PDF). Marine Drugs. 6 (3): 430–455. doi:10.3390/md20080021. PMC 2579735. PMID 19005578.",
+                            "<info> ^ a b Munday, Rex; Reeve, John (2013-11-11). \"Risk Assessment of Shellfish Toxins\". Toxins. 5 (11): 2109–2137. doi:10.3390/toxins5112109. ISSN 2072-6651. PMC 3847717. PMID 24226039.",
+                            "<info> ^ a b c d Wang, Da-Zhi (2008-06-11). \"Neurotoxins from Marine Dinoflagellates: A Brief Review\". Marine Drugs. 6 (2): 349–371. doi:10.3390/md6020349. ISSN 1660-3397. PMC 2525493. PMID 18728731.",
+                            "<info> ^ \"Neurotoxic Shellfish Poisoning\". www.whoi.edu. Retrieved 2020-12-13."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/proton_pump": {
+                "title": "Proton pump",
+                "url": "https://en.wikipedia.org/wiki/proton_pump",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A proton pump is an integral membrane protein pump that builds up a proton gradient across a biological membrane. Proton pumps catalyze the following reaction:",
+                    "Mechanisms are based on energy-induced conformational changes of the protein structure, or on the Q cycle.",
+                    "During evolution, proton pumps have arisen independently on multiple occasions. Thus, not only throughout nature, but also within single cells,[clarification needed] different proton pumps that are evolutionarily unrelated can be found. Proton pumps are divided into different major classes of pumps that use different sources of energy, exhibiting different polypeptide compositions and evolutionary origins.",
+                    "",
+                    "=== Function ===",
+                    "Transport of the positively charged proton is typically electrogenic, i.e.: it generates an electric field across the membrane also called the membrane potential.[citation needed] Proton transport becomes electrogenic if not neutralized electrically by transport of either a corresponding negative charge in the same direction, or a corresponding positive charge in the opposite direction. An example of a proton pump that is not electrogenic, is the proton/potassium pump of the gastric mucosa which catalyzes a balanced exchange of protons and potassium ions.[citation needed]",
+                    "The combined transmembrane gradient of protons and charges created by proton pumps is called an electrochemical gradient. An electrochemical gradient represents a store of energy (potential energy) that can be used to drive a multitude of biological processes such as ATP synthesis, nutrient uptake and action potential formation.[citation needed]",
+                    "In cell respiration, the proton pump uses energy to transport protons from the intracellular side to the extracellular side of the plasma membrane.[2] It is an active pump that generates a proton gradient across the membrane. The difference in pH and electric charge (ignoring differences in buffer capacity) creates an electrochemical potential difference that works similar to that of a battery or energy storing unit for the cell.[3][full citation needed] The process could also be seen as analogous to cycling uphill or charging a battery for later use, as it produces potential energy.[tone] The proton pump does not create energy, but forms a gradient that stores energy for later use.[4]",
+                    "",
+                    "=== Diversity ===",
+                    "The energy required for the proton pumping reaction may come from light (light energy; bacteriorhodopsins), electron transfer (electrical energy; electron transport complexes I, III and IV) or energy-rich metabolites (chemical energy) such as pyrophosphate (PPi; proton-pumping pyrophosphatase) or adenosine triphosphate (ATP; proton ATPases).[citation needed]",
+                    "",
+                    "=== Electron-transport-driven proton pumps ===",
+                    "Complex I (EC 1.6.5.3) (also referred to as NADH:ubiquinone oxidoreductase or, especially in the context of the human protein, NADH dehydrogenase) is a proton pump driven by electron transport. It belongs to the H+ or Na+-translocating NADH Dehydrogenase (NDH) Family (TC# 3.D.1), a member of the Na+ transporting Mrp superfamily. It catalyzes the transfer of electrons from NADH to coenzyme Q10 (CoQ10) and, in eukaryotes, it is located in the inner mitochondrial membrane. This enzyme helps to establish a transmembrane difference of proton electrochemical potential that the ATP synthase then uses to synthesize ATP.[citation needed]",
+                    "Complex III (EC 1.10.2.2) (also referred to as cytochrome bc1 or the coenzyme Q : cytochrome c – oxidoreductase) is a proton pump driven by electron transport. Complex III is a multi-subunit transmembrane protein encoded by both the mitochondrial (cytochrome b) and the nuclear genomes (all other subunits). Complex III is present in the inner mitochondrial membrane of all aerobic eukaryotes and the inner membranes of most eubacteria. This enzyme helps to establish a transmembrane difference of proton electrochemical potential that the ATP synthase of mitochondria then uses to synthesize ATP.[citation needed]",
+                    "The cytochrome b6f complex (EC 1.10.99.1) (also called plastoquinol—plastocyanin reductase) is an enzyme related to Complex III but found in the thylakoid membrane in chloroplasts of plants, cyanobacteria, and green algae. This proton pump is driven by electron transport and catalyzes the transfer of electrons from plastoquinol to plastocyanin. The reaction is analogous to the reaction catalyzed by Complex III (cytochrome bc1) of the mitochondrial electron transport chain. This enzyme helps to establish a transmembrane difference of proton electrochemical potential that the ATP synthase of chloroplasts then uses to synthesize ATP.[citation needed]",
+                    "Complex IV (EC 1.9.3.1) (also referred to as cytochrome c oxidase), is a proton pump driven by electron transport.  This enzyme is a large transmembrane protein complex found in bacteria and inner mitochondrial membrane of eukaryotes. It receives an electron from each of four cytochrome c molecules, and transfers them to one oxygen molecule, converting molecular oxygen to two molecules of water. In the process, it binds four protons from the inner aqueous phase to make water and in addition translocates four protons across the membrane. This enzyme helps to establish a transmembrane difference of proton electrochemical potential that the ATP synthase of mitochondria then uses to synthesize ATP.[citation needed]",
+                    "",
+                    "=== ATP-driven proton pumps ===",
+                    "Proton pumps driven by adenosine triphosphate (ATP) (also referred to as proton ATPases or H+-ATPases) are proton pumps driven by the hydrolysis of adenosine triphosphate (ATP). Three classes of proton ATPases are found in nature. In a single cell (for example those of fungi and plants), representatives from all three groups of proton ATPases may be present.[citation needed]",
+                    "The plasma membrane H+-ATPase is a single subunit P-type ATPase found in the plasma membrane of plants, fungi, protists and many prokaryotes.[citation needed]",
+                    "The plasma membrane H+-ATPase creates the electrochemical gradients in the plasma membrane of plants, fungi, protists, and many prokaryotes. Here, proton gradients are used to drive secondary transport processes. As such, it is essential for the uptake of most metabolites, and also for responses to the environment (e.g., movement of leaves in plants).[citation needed]",
+                    "Humans (and probably other mammals) have a gastric hydrogen potassium ATPase or H+/K+ ATPase that also belongs to the P-type ATPase family. This enzyme functions as the proton pump of the stomach, primarily responsible for the acidification of the stomach contents (see gastric acid).[citation needed]",
+                    "The V-type proton ATPase is a multi-subunit enzyme of the V-type. It is found in various different membranes where it serves to acidify intracellular organelles or the cell exterior.[citation needed]",
+                    "The F-type proton ATPase is a multi-subunit enzyme of the F-type  (also referred to as ATP synthase or FOF1 ATPase). It is found in the mitochondrial inner membrane where it functions as a proton transport-driven ATP synthase.",
+                    "In mitochondria, reducing equivalents provided by electron transfer or photosynthesis power this translocation of protons. For example, the translocation of protons by cytochrome c oxidase is powered by reducing equivalents provided by reduced cytochrome c. ATP itself powers this transport in the plasma membrane proton ATPase and in the ATPase proton pumps of other cellular membranes.[citation needed]",
+                    "The FoF1 ATP synthase of mitochondria, in contrast, usually conduct protons from high to low concentration across the membrane while drawing energy from this flow to synthesize ATP. Protons translocate across the inner mitochondrial membrane via proton wire. This series of conformational changes, channeled through the a and b subunits of the FO particle, drives a series of conformational changes in the stalk connecting the FO to the F1 subunit. This process effectively couples the translocation of protons to the mechanical motion between the Loose, Tight, and Open states of F1 necessary to phosphorylate ADP.[citation needed]",
+                    "In bacteria and ATP-producing organelles other than mitochondria, reducing equivalents provided by electron transfer or photosynthesis power the translocation of protons.[citation needed]",
+                    "CF1 ATP ligase of chloroplasts correspond to the human FOF1 ATP synthase in plants.[citation needed]",
+                    "",
+                    "=== Pyrophosphate driven proton pumps ===",
+                    "Proton pumping pyrophosphatase (also referred to as HH+-PPase or vacuolar-type inorganic pyrophosphatases (V-PPase; V is for vacuolar)) is a proton pump driven by the hydrolysis of inorganic pyrophosphate (PPi). In plants, HH+-PPase is localized to the vacuolar membrane (the tonoplast). This membrane of plants contains two different proton pumps for acidifying the interior of the vacuole, the V-PPase and the V-ATPase.[citation needed]",
+                    "",
+                    "=== Light driven proton pumps ===",
+                    "Bacteriorhodopsin is a light-driven proton pump used by Archaea, most notably in Haloarchaea. Light is absorbed by a retinal pigment covalently linked to the protein, that results in a conformational change of the molecule that is transmitted to the pump protein associated with proton pumping.[5]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"PDB101: Molecule of the Month: Complex I\". RCSB: PDB-101. doi:10.2210/rcsb_pdb/mom_2011_12. Retrieved 2025-10-07.",
+                    "<info> ^ \nYoshikawa, Shinya; Shimada, Atsuhiro; Shinzawa-Itoh, Kyoko (2015). \"Chapter 4, Section 4 Proton Pump Mechanism\". In Peter M.H. Kroneck and Martha E. Sosa Torres (ed.). Sustaining Life on Planet Earth: Metalloenzymes Mastering Dioxygen and Other Chewy Gases. Metal Ions in Life Sciences. Vol. 15. Springer. pp. 108–111. doi:10.1007/978-3-319-12415-5_4. ISBN 978-3-319-12414-8. PMID 25707467.",
+                    "<info> ^ Campbell, N.A., 2008. Resource Acquisition and Transport in Vascular Plants. 8th ed., Biology. San Francisco: Pearson Benjamin Cummings.",
+                    "<info> ^ Ohnishi, Tomoko (2010). \"Piston drives a proton pump\". Nature. 465 (7297): 428–429. doi:10.1038/465428a. PMID 20505714. S2CID 205055904.",
+                    "<info> ^ Andersson, Magnus; Malmerberg, Erik; Westenhoff, Sebastian; Katona, Gergely; Cammarata, Marco; Wöhri, Annemarie B.; Johansson, Linda C.; Ewald, Friederike; Eklund, Mattias; Wulff, Michael; Davidsson, Jan; Neutze, Richard (2009-09-09). \"Structural Dynamics of Light-Driven Proton Pumps\". Structure. 17 (9): 1265–1275. doi:10.1016/j.str.2009.07.007. ISSN 0969-2126. PMID 19748347.",
+                    "",
+                    "=== External links ===",
+                    "<info> Proton+Pumps at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A proton pump is an integral membrane protein pump that builds up a proton gradient across a biological membrane. Proton pumps catalyze the following reaction:",
+                            "Mechanisms are based on energy-induced conformational changes of the protein structure, or on the Q cycle.",
+                            "During evolution, proton pumps have arisen independently on multiple occasions. Thus, not only throughout nature, but also within single cells,[clarification needed] different proton pumps that are evolutionarily unrelated can be found. Proton pumps are divided into different major classes of pumps that use different sources of energy, exhibiting different polypeptide compositions and evolutionary origins."
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "Transport of the positively charged proton is typically electrogenic, i.e.: it generates an electric field across the membrane also called the membrane potential.[citation needed] Proton transport becomes electrogenic if not neutralized electrically by transport of either a corresponding negative charge in the same direction, or a corresponding positive charge in the opposite direction. An example of a proton pump that is not electrogenic, is the proton/potassium pump of the gastric mucosa which catalyzes a balanced exchange of protons and potassium ions.[citation needed]",
+                            "The combined transmembrane gradient of protons and charges created by proton pumps is called an electrochemical gradient. An electrochemical gradient represents a store of energy (potential energy) that can be used to drive a multitude of biological processes such as ATP synthesis, nutrient uptake and action potential formation.[citation needed]",
+                            "In cell respiration, the proton pump uses energy to transport protons from the intracellular side to the extracellular side of the plasma membrane.[2] It is an active pump that generates a proton gradient across the membrane. The difference in pH and electric charge (ignoring differences in buffer capacity) creates an electrochemical potential difference that works similar to that of a battery or energy storing unit for the cell.[3][full citation needed] The process could also be seen as analogous to cycling uphill or charging a battery for later use, as it produces potential energy.[tone] The proton pump does not create energy, but forms a gradient that stores energy for later use.[4]"
+                        ]
+                    },
+                    "Diversity": {
+                        "content": [
+                            "The energy required for the proton pumping reaction may come from light (light energy; bacteriorhodopsins), electron transfer (electrical energy; electron transport complexes I, III and IV) or energy-rich metabolites (chemical energy) such as pyrophosphate (PPi; proton-pumping pyrophosphatase) or adenosine triphosphate (ATP; proton ATPases).[citation needed]"
+                        ]
+                    },
+                    "Electron-transport-driven proton pumps": {
+                        "content": [
+                            "Complex I (EC 1.6.5.3) (also referred to as NADH:ubiquinone oxidoreductase or, especially in the context of the human protein, NADH dehydrogenase) is a proton pump driven by electron transport. It belongs to the H+ or Na+-translocating NADH Dehydrogenase (NDH) Family (TC# 3.D.1), a member of the Na+ transporting Mrp superfamily. It catalyzes the transfer of electrons from NADH to coenzyme Q10 (CoQ10) and, in eukaryotes, it is located in the inner mitochondrial membrane. This enzyme helps to establish a transmembrane difference of proton electrochemical potential that the ATP synthase then uses to synthesize ATP.[citation needed]",
+                            "Complex III (EC 1.10.2.2) (also referred to as cytochrome bc1 or the coenzyme Q : cytochrome c – oxidoreductase) is a proton pump driven by electron transport. Complex III is a multi-subunit transmembrane protein encoded by both the mitochondrial (cytochrome b) and the nuclear genomes (all other subunits). Complex III is present in the inner mitochondrial membrane of all aerobic eukaryotes and the inner membranes of most eubacteria. This enzyme helps to establish a transmembrane difference of proton electrochemical potential that the ATP synthase of mitochondria then uses to synthesize ATP.[citation needed]",
+                            "The cytochrome b6f complex (EC 1.10.99.1) (also called plastoquinol—plastocyanin reductase) is an enzyme related to Complex III but found in the thylakoid membrane in chloroplasts of plants, cyanobacteria, and green algae. This proton pump is driven by electron transport and catalyzes the transfer of electrons from plastoquinol to plastocyanin. The reaction is analogous to the reaction catalyzed by Complex III (cytochrome bc1) of the mitochondrial electron transport chain. This enzyme helps to establish a transmembrane difference of proton electrochemical potential that the ATP synthase of chloroplasts then uses to synthesize ATP.[citation needed]",
+                            "Complex IV (EC 1.9.3.1) (also referred to as cytochrome c oxidase), is a proton pump driven by electron transport.  This enzyme is a large transmembrane protein complex found in bacteria and inner mitochondrial membrane of eukaryotes. It receives an electron from each of four cytochrome c molecules, and transfers them to one oxygen molecule, converting molecular oxygen to two molecules of water. In the process, it binds four protons from the inner aqueous phase to make water and in addition translocates four protons across the membrane. This enzyme helps to establish a transmembrane difference of proton electrochemical potential that the ATP synthase of mitochondria then uses to synthesize ATP.[citation needed]"
+                        ]
+                    },
+                    "ATP-driven proton pumps": {
+                        "content": [
+                            "Proton pumps driven by adenosine triphosphate (ATP) (also referred to as proton ATPases or H+-ATPases) are proton pumps driven by the hydrolysis of adenosine triphosphate (ATP). Three classes of proton ATPases are found in nature. In a single cell (for example those of fungi and plants), representatives from all three groups of proton ATPases may be present.[citation needed]",
+                            "The plasma membrane H+-ATPase is a single subunit P-type ATPase found in the plasma membrane of plants, fungi, protists and many prokaryotes.[citation needed]",
+                            "The plasma membrane H+-ATPase creates the electrochemical gradients in the plasma membrane of plants, fungi, protists, and many prokaryotes. Here, proton gradients are used to drive secondary transport processes. As such, it is essential for the uptake of most metabolites, and also for responses to the environment (e.g., movement of leaves in plants).[citation needed]",
+                            "Humans (and probably other mammals) have a gastric hydrogen potassium ATPase or H+/K+ ATPase that also belongs to the P-type ATPase family. This enzyme functions as the proton pump of the stomach, primarily responsible for the acidification of the stomach contents (see gastric acid).[citation needed]",
+                            "The V-type proton ATPase is a multi-subunit enzyme of the V-type. It is found in various different membranes where it serves to acidify intracellular organelles or the cell exterior.[citation needed]",
+                            "The F-type proton ATPase is a multi-subunit enzyme of the F-type  (also referred to as ATP synthase or FOF1 ATPase). It is found in the mitochondrial inner membrane where it functions as a proton transport-driven ATP synthase.",
+                            "In mitochondria, reducing equivalents provided by electron transfer or photosynthesis power this translocation of protons. For example, the translocation of protons by cytochrome c oxidase is powered by reducing equivalents provided by reduced cytochrome c. ATP itself powers this transport in the plasma membrane proton ATPase and in the ATPase proton pumps of other cellular membranes.[citation needed]",
+                            "The FoF1 ATP synthase of mitochondria, in contrast, usually conduct protons from high to low concentration across the membrane while drawing energy from this flow to synthesize ATP. Protons translocate across the inner mitochondrial membrane via proton wire. This series of conformational changes, channeled through the a and b subunits of the FO particle, drives a series of conformational changes in the stalk connecting the FO to the F1 subunit. This process effectively couples the translocation of protons to the mechanical motion between the Loose, Tight, and Open states of F1 necessary to phosphorylate ADP.[citation needed]",
+                            "In bacteria and ATP-producing organelles other than mitochondria, reducing equivalents provided by electron transfer or photosynthesis power the translocation of protons.[citation needed]",
+                            "CF1 ATP ligase of chloroplasts correspond to the human FOF1 ATP synthase in plants.[citation needed]"
+                        ]
+                    },
+                    "Pyrophosphate driven proton pumps": {
+                        "content": [
+                            "Proton pumping pyrophosphatase (also referred to as HH+-PPase or vacuolar-type inorganic pyrophosphatases (V-PPase; V is for vacuolar)) is a proton pump driven by the hydrolysis of inorganic pyrophosphate (PPi). In plants, HH+-PPase is localized to the vacuolar membrane (the tonoplast). This membrane of plants contains two different proton pumps for acidifying the interior of the vacuole, the V-PPase and the V-ATPase.[citation needed]"
+                        ]
+                    },
+                    "Light driven proton pumps": {
+                        "content": [
+                            "Bacteriorhodopsin is a light-driven proton pump used by Archaea, most notably in Haloarchaea. Light is absorbed by a retinal pigment covalently linked to the protein, that results in a conformational change of the molecule that is transmitted to the pump protein associated with proton pumping.[5]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"PDB101: Molecule of the Month: Complex I\". RCSB: PDB-101. doi:10.2210/rcsb_pdb/mom_2011_12. Retrieved 2025-10-07.",
+                            "<info> ^ \nYoshikawa, Shinya; Shimada, Atsuhiro; Shinzawa-Itoh, Kyoko (2015). \"Chapter 4, Section 4 Proton Pump Mechanism\". In Peter M.H. Kroneck and Martha E. Sosa Torres (ed.). Sustaining Life on Planet Earth: Metalloenzymes Mastering Dioxygen and Other Chewy Gases. Metal Ions in Life Sciences. Vol. 15. Springer. pp. 108–111. doi:10.1007/978-3-319-12415-5_4. ISBN 978-3-319-12414-8. PMID 25707467.",
+                            "<info> ^ Campbell, N.A., 2008. Resource Acquisition and Transport in Vascular Plants. 8th ed., Biology. San Francisco: Pearson Benjamin Cummings.",
+                            "<info> ^ Ohnishi, Tomoko (2010). \"Piston drives a proton pump\". Nature. 465 (7297): 428–429. doi:10.1038/465428a. PMID 20505714. S2CID 205055904.",
+                            "<info> ^ Andersson, Magnus; Malmerberg, Erik; Westenhoff, Sebastian; Katona, Gergely; Cammarata, Marco; Wöhri, Annemarie B.; Johansson, Linda C.; Ewald, Friederike; Eklund, Mattias; Wulff, Michael; Davidsson, Jan; Neutze, Richard (2009-09-09). \"Structural Dynamics of Light-Driven Proton Pumps\". Structure. 17 (9): 1265–1275. doi:10.1016/j.str.2009.07.007. ISSN 0969-2126. PMID 19748347."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Proton+Pumps at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

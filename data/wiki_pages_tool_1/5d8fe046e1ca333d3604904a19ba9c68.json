@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/bubonic_plague": {
+                "title": "Bubonic plague",
+                "url": "https://en.wikipedia.org/wiki/bubonic_plague",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

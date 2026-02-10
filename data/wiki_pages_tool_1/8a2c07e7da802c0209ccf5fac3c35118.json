@@ -1,0 +1,35 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/triangular_face": {
+                "title": "Triangular face",
+                "url": "https://en.wikipedia.org/wiki/triangular_face",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A triangular face, in the simplest sense, is a human face shape with a lower half that becomes relatively thin, approaching an appearance of a triangle with a tip facing downwards. It is not necessarily caused by any disease, but is common in individuals with Osteogenesis Imperfecta.[1]",
+                    "In a broader sense, triangular face encompasses a constellation of a hypoplastic face with prominent zygomatic arches, orbital hypertelorism, sunken cheeks, down-turned mouth, and occasionally brownish facial discolouration.[2] This constellation is characteristic of Mulibrey nanism, but has also been described in Russell-Silver syndrome and Turner syndrome.[2]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Page 82 in: Elizabeth D Agabegi; Agabegi, Steven S. (2008). Step-Up to Medicine (Step-Up Series). Hagerstwon, MD: Lippincott Williams & Wilkins. ISBN 978-0-7817-7153-5.",
+                    "<info> ^ a b TheFreeDictionary.com > Triangular Face citing: Segen's Medical Dictionary. Copyright 2011",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A triangular face, in the simplest sense, is a human face shape with a lower half that becomes relatively thin, approaching an appearance of a triangle with a tip facing downwards. It is not necessarily caused by any disease, but is common in individuals with Osteogenesis Imperfecta.[1]",
+                            "In a broader sense, triangular face encompasses a constellation of a hypoplastic face with prominent zygomatic arches, orbital hypertelorism, sunken cheeks, down-turned mouth, and occasionally brownish facial discolouration.[2] This constellation is characteristic of Mulibrey nanism, but has also been described in Russell-Silver syndrome and Turner syndrome.[2]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Page 82 in: Elizabeth D Agabegi; Agabegi, Steven S. (2008). Step-Up to Medicine (Step-Up Series). Hagerstwon, MD: Lippincott Williams & Wilkins. ISBN 978-0-7817-7153-5.",
+                            "<info> ^ a b TheFreeDictionary.com > Triangular Face citing: Segen's Medical Dictionary. Copyright 2011"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

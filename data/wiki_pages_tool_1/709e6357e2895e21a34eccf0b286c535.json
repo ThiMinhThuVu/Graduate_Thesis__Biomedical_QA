@@ -1,0 +1,147 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/congenital_insensitivity_to_pain": {
+                "title": "Congenital insensitivity to pain",
+                "url": "https://en.wikipedia.org/wiki/congenital_insensitivity_to_pain",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Congenital insensitivity to pain (CIP), also known as congenital analgesia, is an inability for a person to feel physical pain due to various rare genetic conditions. CIP is caused by genetic mutations that affect the development or function of nociceptors, the sensory neurons responsible for recognizing tissue damage. Common symptoms include damage to the oral cavity, repeated bone fractures, and sometimes the inability to sweat. Some forms of CIP are also correlated with intellectual disabilities, learning disabilities, or attention deficit hyperactivity disorder (ADHD). Hereditary sensory autonomic neuropathies (HSAN) fall under the umbrella of CIP. Methods of treatment are still being explored. The epidemiology of CIP is unclear, given the relatively low number of reported cases.",
+                    "",
+                    "=== Classification ===",
+                    "The term congenital analgesia, also known as CIP, was first coined in the 1970s or 1980s.[1] CIP is an umbrella term that describes a collection of rare genetic disorders that affect nerve tissue in either the peripheral or autonomic nervous systems.[1] When genetic disorders interfere with nociceptors, an individual develops CIP.[1][2] A 2019 paper argues that \"congenital insensitivity to pain\" is a misnomer, and theorizes that patients might still feel other (non-nociceptive) forms of pain, even if they are unable to accurately classify such sensations.[1] The paper suggests \"congenital nociceptor deficiency\" as a possible alternative term.[1] There are 5 types of HSAN that are classified as CIP disorders.[1] As of 2025, the HSAN disorders are still classified using a system developed by Dyck P. J. in 1984.[1]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "For people with this disorder, cognition and sensation are otherwise normal; for instance, patients can still feel discriminative touch (though not always temperature), and there are generally no detectable physical abnormalities.[1][3] Congenital insensitivity to pain with anhidrosis (CIPA) is a kind of CIP categorized by patients' inability to sweat (also known as HSAN-IV).[1][4] The inability to regulate internal temperature can lead to unexplained persistent fevers.[4]",
+                    "Because children and adults with CIP cannot perceive pain, they may not respond to pain-inducing stimuli, putting them at a high risk for infections and complications resulting from injuries.[5] Children with this condition often sustain self-inflicted damage, both in and around the oral cavity (such as having bitten off the tip of their tongue) or fractures to bones.[5] Repeated bone fractures can lead to improper healing, potentially resulting in permanent joint damage, or in severe cases, Charcot joints.[4][6] Many young children also present with persistent ear infections and damaged fingertips due to biting.[4] Unnoticed infections and corneal damage due to foreign objects in the eye are also common.[5][4][7] Particular strains of CIP put individuals at a higher risk for developing Staphylococcus aureus infections.[2][4] Depending on the genetic cause of CIP, individuals may be intellectually impaired and may have conditions such as ADHD.[4] The degree of the effect of CIP on the intellectual impairment of an individual has to do with the location of the mutation on the affected gene.[6] The life expectancy of individuals with CIP is shorter than normal life expectancy.[1]",
+                    "There are generally two types of CIP:",
+                    "<info> Nociceptors do not develop, meaning that painful stimulus is not even perceived.[8][2] These are also known as the HSAN disorders.[2]",
+                    "<info> Nociceptors develop but do not respond to tissue signals, meaning that the patient can perceive the stimulus, but lacks an appropriate response.[2][7]",
+                    "",
+                    "=== Causes ===",
+                    "CIP is caused by extremely rare genetic disorders.[2] Roughly 50% of CIP cases are inherited from a parent with CIP.[6] Of the five HSAN disorders, HSAN II, III, IV, and V are inherited via an autosomal recessive pattern, while HSAN I is inherited via an autosomal dominant pattern.[1] The breakdown of specific genetic mutation types among those diagnosed with CIP is unknown as of 2020.[4] HSAN IV, one of the more common forms of CIP, is caused by a mutation in the NTRK1 gene (also known as TrkA).[4]",
+                    "Various case studies have demonstrated how specific genetic mutations have led to CIP. In all cases, this disorder can be in the voltage-gated sodium channel SCN9A (Nav1.7).[9] There are three mutations in SCN9A: W897X, located in the P-loop of domain 2; I767X, located in the S2 segment of domain 2; and S459X, located in the linker region between domains 1 and 2.[10] This results in a truncated non-functional protein.[10] Nav1.7 channels are expressed at high levels in nociceptive neurons of the dorsal root ganglia.[10] As these channels are likely involved in the formation and propagation of action potentials in such neurons, it is expected that a loss-of-function mutation in SCN9A leads to abolished nociceptive pain propagation.[10][11]",
+                    "The PRDM12 gene is normally switched on during the development of pain-sensing nerve cells.[12] People with homozygous mutations of the PRDM12 gene experience congenital insensitivity to pain (CIP).[12][13]",
+                    "Another gene implicated in human pain insensitivity is ZFHX2, which encodes zinc finger homeobox 2.[14] A 2018 study analyzed six members of a family with inherited pain insensitivity and identified a \"novel point mutation in ZFHX2, encoding a putative transcription factor expressed in small diameter sensory neurons\" as the cause.[14] As a therapeutic application, the study further discusses how \"the ZFHX2 variant and downstream regulated genes associated with a human pain-insensitive phenotype are ... potential novel targets for the development of new analgesic drugs\".[14]",
+                    "Jo Cameron is an example of one individual known to have congenital analgesia. She has two mutations, one in the gene encoding fatty acid amide hydrolase (FAAH) and one in the pseudogene FAAH-OUT modulating FAAH expression, which are theorized to be responsible for her condition.[15][16][17][18] FAAH is an enzyme involved in the metabolism of endocannabinoids like anandamide.[19][20][21][17][18] Cameron has high levels of anandamide and other endocannabinoids.[15][17][18]",
+                    "",
+                    "=== Treatment ===",
+                    "As of 2020, there is no agreed-upon method in the medical community for treating CIP.[4] Treatment plans involve injury management and prevention.[6] In an experimental trial, an opioid antagonist, naloxone, allowed a woman with CIP to experience pain for the first time.[22] This result revealed that opioid antagonists like naloxone and naltrexone may be effective in treating CIP in the future.[22] Additionally, the genes that cause CIP provide promising targets for novel pain medications, also known as analgesics.[2]",
+                    "",
+                    "=== Epidemiology ===",
+                    "A 2020 estimate places the incidence of CIP as one person in a million, based on the observation that under thirty cases are known in the United Kingdom.[1][4] CIP is found at an abnormally high frequency in Vittangi, a village in Kiruna Municipality in northern Sweden, where nearly 40 cases have been reported.[23]",
+                    "",
+                    "=== See also ===",
+                    "<info> Pain asymbolia – Condition in which pain is experienced without unpleasantness",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d e f g h i j k l Weisman, Asaf; Quintner, John; Masharawi, Youssef (2019-09-01). \"Congenital Insensitivity to Pain: A Misnomer\". The Journal of Pain. 20 (9): 1011–1014. doi:10.1016/j.jpain.2019.01.331. ISSN 1526-5900. PMID 30716471.",
+                    "<info> ^ a b c d e f g Drissi, Ichrak; Woods, William Aidan; Woods, Christopher Geoffrey (2020-05-15). \"Understanding the genetic basis of congenital insensitivity to pain\". British Medical Bulletin. 133 (1): 65–78. doi:10.1093/bmb/ldaa003. ISSN 0007-1420. PMC 7227775. PMID 32219415.",
+                    "<info> ^ Online Mendelian Inheritance in Man (OMIM): Insensitivity to Pain, Congenital, with Anhidrosis; CIPA - 256800",
+                    "<info> ^ a b c d e f g h i j k Schon, Katherine Rose; Parker, Alasdair Patrick John; Woods, Christopher Geoffrey (1993), Adam, Margaret P.; Feldman, Jerry; Mirzaa, Ghayda M.; Pagon, Roberta A. (eds.), \"Congenital Insensitivity to Pain Overview\", GeneReviews®, Seattle (WA): University of Washington, Seattle, PMID 29419974, retrieved 2025-03-31",
+                    "<info> ^ a b c Hellier JL (2016). The Five Senses and Beyond: The Encyclopedia of Perception. ABC-CLIO. pp. 118–119. ISBN 978-1-4408-3417-2. Retrieved April 13, 2017.",
+                    "<info> ^ a b c d Rodríguez-Blanque, Raquel, et al. \"A Systematic Review of Congenital Insensitivity to Pain, a Rare Disease.\" Journal of Personalized Medicine 14.6 (2024)ProQuest Central. Web.",
+                    "<info> ^ a b Brodsky MC (2016). Pediatric Neuro-Ophthalmology. Springer. p. 741. ISBN 978-1-4939-3384-6. Retrieved April 13, 2017.",
+                    "<info> ^ Linton S (2005). Understanding Pain for Better Clinical Practice: A Psychological Perspective. Elsevier Health Sciences. p. 14. ISBN 978-0-444-51591-9. Retrieved April 13, 2017.",
+                    "<info> ^ Bennett DL, Clark AJ, Huang J, Waxman SG, Dib-Hajj SD (April 2019). \"The Role of Voltage-Gated Sodium Channels in Pain Signaling\". Physiological Reviews. 99 (2): 1079–1151. doi:10.1152/physrev.00052.2017. PMID 30672368.",
+                    "<info> ^ a b c d Cox JJ, Reimann F, Nicholas AK, Thornton G, Roberts E, Springell K, et al. (December 2006). \"An SCN9A channelopathy causes congenital inability to experience pain\". Nature. 444 (7121): 894–8. Bibcode:2006Natur.444..894C. doi:10.1038/nature05413. PMC 7212082. PMID 17167479.",
+                    "<info> ^ McDermott LA, Weir GA, Themistocleous AC, Segerdahl AR, Blesneac I, Baskozos G, Clark AJ, Millar V, Peck LJ, Ebner D, Tracey I, Serra J, Bennett DL (March 2019). \"V1.7 in Human Nociception\". Neuron. 101 (5): 905–919.e8. doi:10.1016/j.neuron.2019.01.047. PMC 6424805. PMID 30795902.",
+                    "<info> ^ a b Chen YC, Auer-Grumbach M, Matsukawa S, Zitzelsberger M, Themistocleous AC, Strom TM, et al. (July 2015). \"Transcriptional regulator PRDM12 is essential for human pain perception\". Nature Genetics. 47 (7): 803–8. doi:10.1038/ng.3308. hdl:2262/75983. PMC 7212047. PMID 26005867.",
+                    "<info> ^ Costandi M (2015-05-25). \"Uncomfortably numb: The people who feel no pain\". the guardian. Retrieved 31 July 2015.",
+                    "<info> ^ a b c Habib, Abdella M.; Matsuyama, Ayako; Okorokov, Andrei L.; Santana-Varela, Sonia; Bras, Jose T.; Aloisi, Anna Maria; Emery, Edward C.; Bogdanov, Yury D.; Follenfant, Maryne; Gossage, Sam J.; Gras, Mathilde (2018-02-01). \"A novel human pain insensitivity disorder caused by a point mutation in ZFHX2\". Brain: A Journal of Neurology. 141 (2): 365–376. doi:10.1093/brain/awx326. ISSN 1460-2156. PMC 5837393. PMID 29253101.",
+                    "<info> ^ a b Ahmed M, Boileau I, Le Foll B, Carvalho AF, Kloiber S (2022). \"The endocannabinoid system in social anxiety disorder: from pathophysiology to novel therapeutics\". Braz J Psychiatry. 44 (1): 81–93. doi:10.1590/1516-4446-2021-1926. PMC 8827369. PMID 34468550. Finally, in the remarkable case report of a patient presenting with pain insensitivity and low fear and anxiety, the C385A polymorphism together with a microdeletion linked to decreased FAAH expression was detected as a possible causal factor. In addition, blood levels of AEA and other fatty-acid amides which are degraded by FAAH were unusually elevated in this individual.112",
+                    "<info> ^  Cite error: The named reference MikaeiliHabibYeung2023 was invoked but never defined (see the help page).",
+                    "<info> ^ a b c  Cite error: The named reference Levy2020 was invoked but never defined (see the help page).",
+                    "<info> ^ a b c  Cite error: The named reference HabibOkorokovHill2019 was invoked but never defined (see the help page).",
+                    "<info> ^  Cite error: The named reference Fowler2021 was invoked but never defined (see the help page).",
+                    "<info> ^  Cite error: The named reference SantosoDeRidder2023 was invoked but never defined (see the help page).",
+                    "<info> ^  Cite error: The named reference MaccarroneDiMarzoGertsch2023 was invoked but never defined (see the help page).",
+                    "<info> ^ a b Minett MS, Pereira V, Sikandar S, Matsuyama A, Lolignier S, Kanellopoulos AH, Mancini F, Iannetti GD, Bogdanov YD, Santana-Varela S, Millet Q, Baskozos G, MacAllister R, Cox JJ, Zhao J, Wood JN (December 2015). \"Endogenous opioids contribute to insensitivity to pain in humans and mice lacking sodium channel Nav1.7\". Nature Communications. 6 (1) 8967. Bibcode:2015NatCo...6.8967M. doi:10.1038/ncomms9967. PMC 4686868. PMID 26634308.",
+                    "<info> ^ Minde JK (April 2006). \"Norrbottnian congenital insensitivity to pain\". Acta Orthopaedica. Supplementum. 77 (321): 2–32. PMID 16768023.",
+                    "",
+                    "=== External links ===",
+                    "<info> \"The Hazards of Growing Up Painlessly\" by Justin Heckert, The New York Times Magazine, November 15, 2012. Profile of Ashlyn Blocker, 13, who has congenital insensitivity to pain.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Congenital insensitivity to pain (CIP), also known as congenital analgesia, is an inability for a person to feel physical pain due to various rare genetic conditions. CIP is caused by genetic mutations that affect the development or function of nociceptors, the sensory neurons responsible for recognizing tissue damage. Common symptoms include damage to the oral cavity, repeated bone fractures, and sometimes the inability to sweat. Some forms of CIP are also correlated with intellectual disabilities, learning disabilities, or attention deficit hyperactivity disorder (ADHD). Hereditary sensory autonomic neuropathies (HSAN) fall under the umbrella of CIP. Methods of treatment are still being explored. The epidemiology of CIP is unclear, given the relatively low number of reported cases."
+                        ]
+                    },
+                    "Classification": {
+                        "content": [
+                            "The term congenital analgesia, also known as CIP, was first coined in the 1970s or 1980s.[1] CIP is an umbrella term that describes a collection of rare genetic disorders that affect nerve tissue in either the peripheral or autonomic nervous systems.[1] When genetic disorders interfere with nociceptors, an individual develops CIP.[1][2] A 2019 paper argues that \"congenital insensitivity to pain\" is a misnomer, and theorizes that patients might still feel other (non-nociceptive) forms of pain, even if they are unable to accurately classify such sensations.[1] The paper suggests \"congenital nociceptor deficiency\" as a possible alternative term.[1] There are 5 types of HSAN that are classified as CIP disorders.[1] As of 2025, the HSAN disorders are still classified using a system developed by Dyck P. J. in 1984.[1]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "For people with this disorder, cognition and sensation are otherwise normal; for instance, patients can still feel discriminative touch (though not always temperature), and there are generally no detectable physical abnormalities.[1][3] Congenital insensitivity to pain with anhidrosis (CIPA) is a kind of CIP categorized by patients' inability to sweat (also known as HSAN-IV).[1][4] The inability to regulate internal temperature can lead to unexplained persistent fevers.[4]",
+                            "Because children and adults with CIP cannot perceive pain, they may not respond to pain-inducing stimuli, putting them at a high risk for infections and complications resulting from injuries.[5] Children with this condition often sustain self-inflicted damage, both in and around the oral cavity (such as having bitten off the tip of their tongue) or fractures to bones.[5] Repeated bone fractures can lead to improper healing, potentially resulting in permanent joint damage, or in severe cases, Charcot joints.[4][6] Many young children also present with persistent ear infections and damaged fingertips due to biting.[4] Unnoticed infections and corneal damage due to foreign objects in the eye are also common.[5][4][7] Particular strains of CIP put individuals at a higher risk for developing Staphylococcus aureus infections.[2][4] Depending on the genetic cause of CIP, individuals may be intellectually impaired and may have conditions such as ADHD.[4] The degree of the effect of CIP on the intellectual impairment of an individual has to do with the location of the mutation on the affected gene.[6] The life expectancy of individuals with CIP is shorter than normal life expectancy.[1]",
+                            "There are generally two types of CIP:",
+                            "<info> Nociceptors do not develop, meaning that painful stimulus is not even perceived.[8][2] These are also known as the HSAN disorders.[2]",
+                            "<info> Nociceptors develop but do not respond to tissue signals, meaning that the patient can perceive the stimulus, but lacks an appropriate response.[2][7]"
+                        ]
+                    },
+                    "Causes": {
+                        "content": [
+                            "CIP is caused by extremely rare genetic disorders.[2] Roughly 50% of CIP cases are inherited from a parent with CIP.[6] Of the five HSAN disorders, HSAN II, III, IV, and V are inherited via an autosomal recessive pattern, while HSAN I is inherited via an autosomal dominant pattern.[1] The breakdown of specific genetic mutation types among those diagnosed with CIP is unknown as of 2020.[4] HSAN IV, one of the more common forms of CIP, is caused by a mutation in the NTRK1 gene (also known as TrkA).[4]",
+                            "Various case studies have demonstrated how specific genetic mutations have led to CIP. In all cases, this disorder can be in the voltage-gated sodium channel SCN9A (Nav1.7).[9] There are three mutations in SCN9A: W897X, located in the P-loop of domain 2; I767X, located in the S2 segment of domain 2; and S459X, located in the linker region between domains 1 and 2.[10] This results in a truncated non-functional protein.[10] Nav1.7 channels are expressed at high levels in nociceptive neurons of the dorsal root ganglia.[10] As these channels are likely involved in the formation and propagation of action potentials in such neurons, it is expected that a loss-of-function mutation in SCN9A leads to abolished nociceptive pain propagation.[10][11]",
+                            "The PRDM12 gene is normally switched on during the development of pain-sensing nerve cells.[12] People with homozygous mutations of the PRDM12 gene experience congenital insensitivity to pain (CIP).[12][13]",
+                            "Another gene implicated in human pain insensitivity is ZFHX2, which encodes zinc finger homeobox 2.[14] A 2018 study analyzed six members of a family with inherited pain insensitivity and identified a \"novel point mutation in ZFHX2, encoding a putative transcription factor expressed in small diameter sensory neurons\" as the cause.[14] As a therapeutic application, the study further discusses how \"the ZFHX2 variant and downstream regulated genes associated with a human pain-insensitive phenotype are ... potential novel targets for the development of new analgesic drugs\".[14]",
+                            "Jo Cameron is an example of one individual known to have congenital analgesia. She has two mutations, one in the gene encoding fatty acid amide hydrolase (FAAH) and one in the pseudogene FAAH-OUT modulating FAAH expression, which are theorized to be responsible for her condition.[15][16][17][18] FAAH is an enzyme involved in the metabolism of endocannabinoids like anandamide.[19][20][21][17][18] Cameron has high levels of anandamide and other endocannabinoids.[15][17][18]"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "As of 2020, there is no agreed-upon method in the medical community for treating CIP.[4] Treatment plans involve injury management and prevention.[6] In an experimental trial, an opioid antagonist, naloxone, allowed a woman with CIP to experience pain for the first time.[22] This result revealed that opioid antagonists like naloxone and naltrexone may be effective in treating CIP in the future.[22] Additionally, the genes that cause CIP provide promising targets for novel pain medications, also known as analgesics.[2]"
+                        ]
+                    },
+                    "Epidemiology": {
+                        "content": [
+                            "A 2020 estimate places the incidence of CIP as one person in a million, based on the observation that under thirty cases are known in the United Kingdom.[1][4] CIP is found at an abnormally high frequency in Vittangi, a village in Kiruna Municipality in northern Sweden, where nearly 40 cases have been reported.[23]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Pain asymbolia – Condition in which pain is experienced without unpleasantness"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d e f g h i j k l Weisman, Asaf; Quintner, John; Masharawi, Youssef (2019-09-01). \"Congenital Insensitivity to Pain: A Misnomer\". The Journal of Pain. 20 (9): 1011–1014. doi:10.1016/j.jpain.2019.01.331. ISSN 1526-5900. PMID 30716471.",
+                            "<info> ^ a b c d e f g Drissi, Ichrak; Woods, William Aidan; Woods, Christopher Geoffrey (2020-05-15). \"Understanding the genetic basis of congenital insensitivity to pain\". British Medical Bulletin. 133 (1): 65–78. doi:10.1093/bmb/ldaa003. ISSN 0007-1420. PMC 7227775. PMID 32219415.",
+                            "<info> ^ Online Mendelian Inheritance in Man (OMIM): Insensitivity to Pain, Congenital, with Anhidrosis; CIPA - 256800",
+                            "<info> ^ a b c d e f g h i j k Schon, Katherine Rose; Parker, Alasdair Patrick John; Woods, Christopher Geoffrey (1993), Adam, Margaret P.; Feldman, Jerry; Mirzaa, Ghayda M.; Pagon, Roberta A. (eds.), \"Congenital Insensitivity to Pain Overview\", GeneReviews®, Seattle (WA): University of Washington, Seattle, PMID 29419974, retrieved 2025-03-31",
+                            "<info> ^ a b c Hellier JL (2016). The Five Senses and Beyond: The Encyclopedia of Perception. ABC-CLIO. pp. 118–119. ISBN 978-1-4408-3417-2. Retrieved April 13, 2017.",
+                            "<info> ^ a b c d Rodríguez-Blanque, Raquel, et al. \"A Systematic Review of Congenital Insensitivity to Pain, a Rare Disease.\" Journal of Personalized Medicine 14.6 (2024)ProQuest Central. Web.",
+                            "<info> ^ a b Brodsky MC (2016). Pediatric Neuro-Ophthalmology. Springer. p. 741. ISBN 978-1-4939-3384-6. Retrieved April 13, 2017.",
+                            "<info> ^ Linton S (2005). Understanding Pain for Better Clinical Practice: A Psychological Perspective. Elsevier Health Sciences. p. 14. ISBN 978-0-444-51591-9. Retrieved April 13, 2017.",
+                            "<info> ^ Bennett DL, Clark AJ, Huang J, Waxman SG, Dib-Hajj SD (April 2019). \"The Role of Voltage-Gated Sodium Channels in Pain Signaling\". Physiological Reviews. 99 (2): 1079–1151. doi:10.1152/physrev.00052.2017. PMID 30672368.",
+                            "<info> ^ a b c d Cox JJ, Reimann F, Nicholas AK, Thornton G, Roberts E, Springell K, et al. (December 2006). \"An SCN9A channelopathy causes congenital inability to experience pain\". Nature. 444 (7121): 894–8. Bibcode:2006Natur.444..894C. doi:10.1038/nature05413. PMC 7212082. PMID 17167479.",
+                            "<info> ^ McDermott LA, Weir GA, Themistocleous AC, Segerdahl AR, Blesneac I, Baskozos G, Clark AJ, Millar V, Peck LJ, Ebner D, Tracey I, Serra J, Bennett DL (March 2019). \"V1.7 in Human Nociception\". Neuron. 101 (5): 905–919.e8. doi:10.1016/j.neuron.2019.01.047. PMC 6424805. PMID 30795902.",
+                            "<info> ^ a b Chen YC, Auer-Grumbach M, Matsukawa S, Zitzelsberger M, Themistocleous AC, Strom TM, et al. (July 2015). \"Transcriptional regulator PRDM12 is essential for human pain perception\". Nature Genetics. 47 (7): 803–8. doi:10.1038/ng.3308. hdl:2262/75983. PMC 7212047. PMID 26005867.",
+                            "<info> ^ Costandi M (2015-05-25). \"Uncomfortably numb: The people who feel no pain\". the guardian. Retrieved 31 July 2015.",
+                            "<info> ^ a b c Habib, Abdella M.; Matsuyama, Ayako; Okorokov, Andrei L.; Santana-Varela, Sonia; Bras, Jose T.; Aloisi, Anna Maria; Emery, Edward C.; Bogdanov, Yury D.; Follenfant, Maryne; Gossage, Sam J.; Gras, Mathilde (2018-02-01). \"A novel human pain insensitivity disorder caused by a point mutation in ZFHX2\". Brain: A Journal of Neurology. 141 (2): 365–376. doi:10.1093/brain/awx326. ISSN 1460-2156. PMC 5837393. PMID 29253101.",
+                            "<info> ^ a b Ahmed M, Boileau I, Le Foll B, Carvalho AF, Kloiber S (2022). \"The endocannabinoid system in social anxiety disorder: from pathophysiology to novel therapeutics\". Braz J Psychiatry. 44 (1): 81–93. doi:10.1590/1516-4446-2021-1926. PMC 8827369. PMID 34468550. Finally, in the remarkable case report of a patient presenting with pain insensitivity and low fear and anxiety, the C385A polymorphism together with a microdeletion linked to decreased FAAH expression was detected as a possible causal factor. In addition, blood levels of AEA and other fatty-acid amides which are degraded by FAAH were unusually elevated in this individual.112",
+                            "<info> ^  Cite error: The named reference MikaeiliHabibYeung2023 was invoked but never defined (see the help page).",
+                            "<info> ^ a b c  Cite error: The named reference Levy2020 was invoked but never defined (see the help page).",
+                            "<info> ^ a b c  Cite error: The named reference HabibOkorokovHill2019 was invoked but never defined (see the help page).",
+                            "<info> ^  Cite error: The named reference Fowler2021 was invoked but never defined (see the help page).",
+                            "<info> ^  Cite error: The named reference SantosoDeRidder2023 was invoked but never defined (see the help page).",
+                            "<info> ^  Cite error: The named reference MaccarroneDiMarzoGertsch2023 was invoked but never defined (see the help page).",
+                            "<info> ^ a b Minett MS, Pereira V, Sikandar S, Matsuyama A, Lolignier S, Kanellopoulos AH, Mancini F, Iannetti GD, Bogdanov YD, Santana-Varela S, Millet Q, Baskozos G, MacAllister R, Cox JJ, Zhao J, Wood JN (December 2015). \"Endogenous opioids contribute to insensitivity to pain in humans and mice lacking sodium channel Nav1.7\". Nature Communications. 6 (1) 8967. Bibcode:2015NatCo...6.8967M. doi:10.1038/ncomms9967. PMC 4686868. PMID 26634308.",
+                            "<info> ^ Minde JK (April 2006). \"Norrbottnian congenital insensitivity to pain\". Acta Orthopaedica. Supplementum. 77 (321): 2–32. PMID 16768023."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"The Hazards of Growing Up Painlessly\" by Justin Heckert, The New York Times Magazine, November 15, 2012. Profile of Ashlyn Blocker, 13, who has congenital insensitivity to pain."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

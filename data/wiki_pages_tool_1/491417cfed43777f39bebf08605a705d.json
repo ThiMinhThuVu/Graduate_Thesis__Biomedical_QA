@@ -1,0 +1,185 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/glucocerebrosidase": {
+                "title": "Glucocerebrosidase",
+                "url": "https://en.wikipedia.org/wiki/glucocerebrosidase",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "β-Glucocerebrosidase (also called acid β-glucosidase, D-glucosyl-N-acylsphingosine glucohydrolase, or GCase) is an enzyme with glucosylceramidase activity (EC 3.2.1.45) that cleaves by hydrolysis the β-glycosidic linkage of the chemical glucocerebroside, an intermediate in glycolipid metabolism that is abundant in cell membranes (particularly skin cells).[5] It is localized in the lysosome, where it remains associated with the lysosomal membrane.[6] β-Glucocerebrosidase is 497 amino acids in length and has a molecular mass of 59,700 Da.[citation needed]",
+                    "",
+                    "=== Structure ===",
+                    "β-Glucocerebrosidase is a member of the glycoside hydrolase family 30 and consists of three distinct domains (I-III).[7]",
+                    "<info> Three-dimensional PyMol rendering of glucocerebrosidase with three domains highlighted.",
+                    "<info> Three-dimensional PyMol rendering of glucocerebrosidase with catalytic residues highlighted.",
+                    "Domain I (residues 1–27 and 383–414) forms a three-stranded anti-parallel β-sheet. This domain contains two disulfide bridges that are necessary for correct folding, as well as a glycosylated residue (Asn19) that is required for catalytic activity in vivo. Domain II (residues 30–75 and 431–497) consists of two β-sheets that  resemble an immunoglobulin fold. Domain III (residues 76–381 and 416–430) is homologous to a TIM barrel and is a highly conserved domain among glycoside hydrolases.[8] Domain III harbors the active site, which binds the substrate glucocerebroside in close proximity to the catalytic residues E340 and E235. Domains I and III are tightly associated, while domains II and III are joined by a disordered linker.[7]",
+                    "",
+                    "=== Mechanism ===",
+                    "Crystal structures indicate that β-glucocerebrosidase binds the glucose moiety and adjacent O-glycosydic bond of glucocerebroside. The two aliphatic chains of glucocerebroside may remain associated with the lysosomal bilayer or interact with the activating protein Saposin C.[7]",
+                    "Consistent with other glycoside hydrolases, the mechanism of glucocerebroside hydrolysis by β-glucocerebrosidase involves acid/base catalysis by two glutamic acid residues (E340 and E235) and precedes through a two-step mechanism. In the first step, E340 performs a nucleophilic attack at the carbon of the O-glycosidic linkage to displace the sphingosine moiety, which is simultaneously protonated by E235 as it is released from the active site. In the second step, glucose is hydrolyzed from the E340 residue to regenerate the active enzyme.[7][9]",
+                    "",
+                    "=== Properties ===",
+                    "β-Glucocerebrosidase is maximally active at pH 5.5,  the pH of the lysosomal compartment.[10] Within the lysosome it remains associated with the membrane, where it binds and degrades its substrate glucocerebroside (GluCer). It requires the activating protein Saposin C as well as negatively charged lipids for maximal catalytic activity.[11][12] The role of Saposin C is not known; however, it is shown to bind both the lysosomal membrane and the lipid moieties of GluCer, and therefore may recruit GluCer to the active site of the enzyme.[13][14]",
+                    "β-Glucocerebrosidase is specifically and irreversibly inhibited by the glucose analog Conduritol B epoxide.  Conduritol B epoxide binds to the GCase active site, where the enzyme cleaves its epoxide ring, forming a permanent covalent bond between the enzyme and the inhibitor.[15]",
+                    "Initially, GCase was thought to be one of the few lysosomal enzymes that does not follow the mannose-6-phosphate pathway for trafficking to the lysosome.[16] A study in I-cell disease fibroblasts (in which the phosphotransferase that puts Mannose 6-phosphate on proteins to target them to the lysosome is defective) showed targeting of GCase to the lysosome independent of the M6P pathway.[17]  The lysosomal transporter and integral membrane protein LIMP-2 (Lysosomal Integral Membrane Protein 2) was shown to bind GCase and facilitate transport to the lysosome, demonstrating a mechanism for M6P-independent lysosomal trafficking.  This conclusion was called into question when a crystal structure of GCase in complex with LIMP-2 showed a Mannose 6-phosphate moiety on LIMP-2, suggesting the complex can also follow the traditional mannose-6-phosphate pathway.[18]",
+                    "",
+                    "=== Clinical significance ===",
+                    "Mutations in the glucocerebrosidase gene cause Gaucher's disease, a lysosomal storage disease characterized by an accumulation of glucocerebrosides in macrophages that infiltrate many vital organs.[19][20]",
+                    "Mutations in the glucocerebrosidase gene are also associated with Parkinson's disease.[21][22]",
+                    "A related pseudogene is approximately 12 kb downstream of this gene on chromosome 1. Alternative splicing results in multiple transcript variants encoding the same protein.[23]",
+                    "",
+                    "=== Drugs ===",
+                    "Alglucerase (Ceredase) was a version of glucocerebrosidase that was harvested from human placental tissue and then modified with enzymes.[24]  It was approved by the FDA in 1991[25] but has been withdrawn from the market[26][27] due to the approval of similar drugs made with recombinant DNA technology instead of being harvested from tissue. Drugs made recombinantly pose no risk of diseases being transmitted from the tissue used in harvesting, and are less expensive to manufacture.[24]",
+                    "Recombinant glucocerebrosidases used as drugs include:[28]",
+                    "",
+                    "=== See also ===",
+                    "<info> Closely related enzymes\nGBA2: acid β-glucosidase (bile acid), also EC 3.2.1.45\nGBA3: acid β-glucosidase (cytosolic), EC 3.2.1.21",
+                    "<info> GBA2: acid β-glucosidase (bile acid), also EC 3.2.1.45",
+                    "<info> GBA3: acid β-glucosidase (cytosolic), EC 3.2.1.21",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c ENSG00000177628 GRCh38: Ensembl release 89: ENSG00000262446, ENSG00000177628 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000028048 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ Vielhaber G, Pfeiffer S, Brade L, Lindner B, Goldmann T, Vollmer E, Hintze U, Wittern KP, Wepf R (November 2001). \"Localization of ceramide and glucosylceramide in human epidermis by immunogold electron microscopy\". The Journal of Investigative Dermatology. 117 (5): 1126–36. doi:10.1046/j.0022-202x.2001.01527.x. PMID 11710923.",
+                    "<info> ^ Rijnboutt S, Aerts HM, Geuze HJ, Tager JM, Strous GJ (March 1991). \"Mannose 6-phosphate-independent membrane association of cathepsin D, glucocerebrosidase, and sphingolipid-activating protein in HepG2 cells\". The Journal of Biological Chemistry. 266 (8): 4862–8. doi:10.1016/S0021-9258(19)67728-8. hdl:1887/50559. PMID 1848227.",
+                    "<info> ^ a b c d Lieberman RL (2011). \"A Guided Tour of the Structural Biology of Gaucher Disease: Acid-β-Glucosidase and Saposin C\". Enzyme Research. 2011 973231. doi:10.4061/2011/973231. PMC 3226326. PMID 22145077.",
+                    "<info> ^ Rigden DJ, Jedrzejas MJ, de Mello LV (June 2003). \"Identification and analysis of catalytic TIM barrel domains in seven further glycoside hydrolase families\". FEBS Letters. 544 (1–3): 103–11. Bibcode:2003FEBSL.544..103R. doi:10.1016/S0014-5793(03)00481-2. PMID 12782298.",
+                    "<info> ^ Vocadlo DJ, Davies GJ, Laine R, Withers SG (August 2001). \"Catalysis by hen egg-white lysozyme proceeds via a covalent intermediate\" (PDF). Nature. 412 (6849): 835–8. Bibcode:2001Natur.412..835V. doi:10.1038/35090602. PMID 11518970. S2CID 205020153.",
+                    "<info> ^ Sinclair G, Pfeifer TA, Grigliatti TA, Choy FY (April 2006). \"Secretion of human glucocerebrosidase from stable transformed insect cells using native signal sequences\". Biochemistry and Cell Biology. 84 (2): 148–56. Bibcode:2006BCB....84..148S. doi:10.1139/o05-165. PMID 16609695.",
+                    "<info> ^ Aerts JM, Sa Miranda MC, Brouwer-Kelder EM, Van Weely S, Barranger JA, Tager JM (October 1990). \"Conditions affecting the activity of glucocerebrosidase purified from spleens of control subjects and patients with type 1 Gaucher disease\". Biochimica et Biophysica Acta (BBA) - Protein Structure and Molecular Enzymology. 1041 (1): 55–63. doi:10.1016/0167-4838(90)90122-V. PMID 2223847.",
+                    "<info> ^ Weiler S, Kishimoto Y, O'Brien JS, Barranger JA, Tomich JM (April 1995). \"Identification of the binding and activating sites of the sphingolipid activator protein, saposin C, with glucocerebrosidase\". Protein Science. 4 (4): 756–64. doi:10.1002/pro.5560040415. PMC 2143096. PMID 7613473.",
+                    "<info> ^ Alattia JR, Shaw JE, Yip CM, Privé GG (October 2006). \"Direct visualization of saposin remodelling of lipid bilayers\". Journal of Molecular Biology. 362 (5): 943–53. doi:10.1016/j.jmb.2006.08.009. PMID 16949605.",
+                    "<info> ^ Tamargo RJ, Velayati A, Goldin E, Sidransky E (July 2012). \"The role of saposin C in Gaucher disease\". Molecular Genetics and Metabolism. 106 (3): 257–63. doi:10.1016/j.ymgme.2012.04.024. PMC 3534739. PMID 22652185.",
+                    "<info> ^ Ogawa S, Uetsuki S, Tezuka Y, Morikawa T, Takahashi A, Sato K (June 1999). \"Synthesis and evaluation of glucocerebrosidase inhibitory activity of anhydro deoxyinositols from (+)-epi- and (-)-vibo-quercitols\". Bioorganic & Medicinal Chemistry Letters. 9 (11): 1493–8. doi:10.1016/S0960-894X(99)00223-1. PMID 10386923.",
+                    "<info> ^ Reczek D, Schwake M, Schröder J, Hughes H, Blanz J, Jin X, Brondyk W, Van Patten S, Edmunds T, Saftig P (November 2007). \"LIMP-2 is a receptor for lysosomal mannose-6-phosphate-independent targeting of beta-glucocerebrosidase\". Cell. 131 (4): 770–83. doi:10.1016/j.cell.2007.10.018. PMID 18022370. S2CID 6771697.",
+                    "<info> ^ Glickman JN, Kornfeld S (October 1993). \"Mannose 6-phosphate-independent targeting of lysosomal enzymes in I-cell disease B lymphoblasts\". The Journal of Cell Biology. 123 (1): 99–108. doi:10.1083/jcb.123.1.99. PMC 2119824. PMID 8408210.",
+                    "<info> ^ Zhao Y, Ren J, Padilla-Parra S, Fry EE, Stuart DI (July 2014). \"Lysosome sorting of β-glucocerebrosidase by LIMP-2 is targeted by the mannose 6-phosphate receptor\". Nature Communications. 5 4321. Bibcode:2014NatCo...5.4321Z. doi:10.1038/ncomms5321. PMC 4104448. PMID 25027712.",
+                    "<info> ^ Mucci JM, Rozenfeld P (2015). \"Pathogenesis of Bone Alterations in Gaucher Disease: The Role of Immune System\". Journal of Immunology Research. 2015 192761. doi:10.1155/2015/192761. PMC 4433682. PMID 26064996.",
+                    "<info> ^ Stirnemann J, Belmatoug N, Camou F, Serratrice C, Froissart R, Caillaud C, Levade T, Astudillo L, Serratrice J, Brassier A, Rose C, Billette de Villemeur T, Berger MG (February 2017). \"A Review of Gaucher Disease Pathophysiology, Clinical Presentation and Treatments\". International Journal of Molecular Sciences. 18 (2): 441. doi:10.3390/ijms18020441. PMC 5343975. PMID 28218669.",
+                    "<info> ^ Kalia LV, Lang AE (August 2015). \"Parkinson's disease\". Lancet. 386 (9996): 896–912. doi:10.1016/S0140-6736(14)61393-3. PMID 25904081. S2CID 5502904.",
+                    "<info> ^ PhD LS (18 September 2023). \"Researchers win Breakthrough Prize for Parkinson's genetics discoveries | Parkinson's News Today\". parkinsonsnewstoday.com. Retrieved 20 September 2023.",
+                    "<info> ^ \"Entrez Gene: GBA glucosidase, beta; acid (includes glucosylceramidase)\".",
+                    "<info> ^ a b c d Deegan PB, Cox TM (2012). \"Imiglucerase in the treatment of Gaucher disease: a history and perspective\". Drug Design, Development and Therapy. 6: 81–106. doi:10.2147/DDDT.S14395. PMC 3340106. PMID 22563238.",
+                    "<info> ^ \"Regulatory Matters\" (PDF). WHO Drug Information. 5 (3): 123–4. 1991. Archived from the original (PDF) on 8 November 2005.",
+                    "<info> ^ \"Enzyme-replacement Therapy for Lysosomal Storage Disorders\". Clinical Policy Bulletin Number: 0442. Aetna. 8 August 2014.",
+                    "<info> ^ \"FDA Prescription and Over-the-Counter Drug Product List\" (PDF). Additions/Deletions for Prescription Drug Product List. U.S. Food and Drug Administration. March 2012. Archived from the original (PDF) on 27 September 2012.",
+                    "<info> ^ Grabowski GA (2012). \"Gaucher disease and other storage disorders\". Hematology. American Society of Hematology. Education Program. 2012: 13–8. doi:10.1182/asheducation.v2012.1.13.3797921. PMID 23233555.",
+                    "<info> ^ Yukhananov A (1 May 2012). \"U.S. FDA approves Pfizer/Protalix drug for Gaucher\". Chicago Tribune. Reuters. Archived from the original on 14 September 2022. Retrieved 2 May 2012.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Horowitz M, Zimran A (1994). \"Mutations causing Gaucher disease\". Human Mutation. 3 (1): 1–11. doi:10.1002/humu.1380030102. PMID 8118460. S2CID 30605941.",
+                    "<info> Tayebi N, Stone DL, Sidransky E (October 1999). \"Type 2 gaucher disease: an expanding phenotype\". Molecular Genetics and Metabolism (Submitted manuscript). 68 (2): 209–19. doi:10.1006/mgme.1999.2918. PMID 10527671.",
+                    "<info> Stone DL, Tayebi N, Orvisky E, Stubblefield B, Madike V, Sidransky E (2000). \"Glucocerebrosidase gene mutations in patients with type 2 Gaucher disease\". Human Mutation (Submitted manuscript). 15 (2): 181–8. doi:10.1002/(SICI)1098-1004(200002)15:2<181::AID-HUMU7>3.0.CO;2-S. PMID 10649495. S2CID 31438997.",
+                    "<info> Caillaud C, Poenaru L (2002). \"[Gaucher's and Fabry's diseases: biochemical and genetic aspects]\". Journal de la Société de Biologie. 196 (2): 135–40. doi:10.1051/jbio/2002196020135. PMID 12360742. S2CID 81257040.",
+                    "<info> Fabrega S, Durand P, Mornon JP, Lehn P (2002). \"[The active site of human glucocerebrosidase: structural predictions and experimental validations]\". Journal de la Société de Biologie. 196 (2): 151–60. doi:10.1051/jbio/2002196020151. PMID 12360744. S2CID 81542873.",
+                    "<info> Alfonso P, Aznarez S, Giralt M, Pocovi M, Giraldo P (2007). \"Mutation analysis and genotype/phenotype relationships of Gaucher disease patients in Spain\". Journal of Human Genetics. 52 (5): 391–6. doi:10.1007/s10038-007-0135-4. PMID 17427031.",
+                    "",
+                    "=== External links ===",
+                    "<info> GeneReviews/NCBI/UW/NIH entry on Gaucher disease",
+                    "<info> Glucocerebrosidase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "β-Glucocerebrosidase (also called acid β-glucosidase, D-glucosyl-N-acylsphingosine glucohydrolase, or GCase) is an enzyme with glucosylceramidase activity (EC 3.2.1.45) that cleaves by hydrolysis the β-glycosidic linkage of the chemical glucocerebroside, an intermediate in glycolipid metabolism that is abundant in cell membranes (particularly skin cells).[5] It is localized in the lysosome, where it remains associated with the lysosomal membrane.[6] β-Glucocerebrosidase is 497 amino acids in length and has a molecular mass of 59,700 Da.[citation needed]"
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "β-Glucocerebrosidase is a member of the glycoside hydrolase family 30 and consists of three distinct domains (I-III).[7]",
+                            "<info> Three-dimensional PyMol rendering of glucocerebrosidase with three domains highlighted.",
+                            "<info> Three-dimensional PyMol rendering of glucocerebrosidase with catalytic residues highlighted.",
+                            "Domain I (residues 1–27 and 383–414) forms a three-stranded anti-parallel β-sheet. This domain contains two disulfide bridges that are necessary for correct folding, as well as a glycosylated residue (Asn19) that is required for catalytic activity in vivo. Domain II (residues 30–75 and 431–497) consists of two β-sheets that  resemble an immunoglobulin fold. Domain III (residues 76–381 and 416–430) is homologous to a TIM barrel and is a highly conserved domain among glycoside hydrolases.[8] Domain III harbors the active site, which binds the substrate glucocerebroside in close proximity to the catalytic residues E340 and E235. Domains I and III are tightly associated, while domains II and III are joined by a disordered linker.[7]"
+                        ]
+                    },
+                    "Mechanism": {
+                        "content": [
+                            "Crystal structures indicate that β-glucocerebrosidase binds the glucose moiety and adjacent O-glycosydic bond of glucocerebroside. The two aliphatic chains of glucocerebroside may remain associated with the lysosomal bilayer or interact with the activating protein Saposin C.[7]",
+                            "Consistent with other glycoside hydrolases, the mechanism of glucocerebroside hydrolysis by β-glucocerebrosidase involves acid/base catalysis by two glutamic acid residues (E340 and E235) and precedes through a two-step mechanism. In the first step, E340 performs a nucleophilic attack at the carbon of the O-glycosidic linkage to displace the sphingosine moiety, which is simultaneously protonated by E235 as it is released from the active site. In the second step, glucose is hydrolyzed from the E340 residue to regenerate the active enzyme.[7][9]"
+                        ]
+                    },
+                    "Properties": {
+                        "content": [
+                            "β-Glucocerebrosidase is maximally active at pH 5.5,  the pH of the lysosomal compartment.[10] Within the lysosome it remains associated with the membrane, where it binds and degrades its substrate glucocerebroside (GluCer). It requires the activating protein Saposin C as well as negatively charged lipids for maximal catalytic activity.[11][12] The role of Saposin C is not known; however, it is shown to bind both the lysosomal membrane and the lipid moieties of GluCer, and therefore may recruit GluCer to the active site of the enzyme.[13][14]",
+                            "β-Glucocerebrosidase is specifically and irreversibly inhibited by the glucose analog Conduritol B epoxide.  Conduritol B epoxide binds to the GCase active site, where the enzyme cleaves its epoxide ring, forming a permanent covalent bond between the enzyme and the inhibitor.[15]",
+                            "Initially, GCase was thought to be one of the few lysosomal enzymes that does not follow the mannose-6-phosphate pathway for trafficking to the lysosome.[16] A study in I-cell disease fibroblasts (in which the phosphotransferase that puts Mannose 6-phosphate on proteins to target them to the lysosome is defective) showed targeting of GCase to the lysosome independent of the M6P pathway.[17]  The lysosomal transporter and integral membrane protein LIMP-2 (Lysosomal Integral Membrane Protein 2) was shown to bind GCase and facilitate transport to the lysosome, demonstrating a mechanism for M6P-independent lysosomal trafficking.  This conclusion was called into question when a crystal structure of GCase in complex with LIMP-2 showed a Mannose 6-phosphate moiety on LIMP-2, suggesting the complex can also follow the traditional mannose-6-phosphate pathway.[18]"
+                        ]
+                    },
+                    "Clinical significance": {
+                        "content": [
+                            "Mutations in the glucocerebrosidase gene cause Gaucher's disease, a lysosomal storage disease characterized by an accumulation of glucocerebrosides in macrophages that infiltrate many vital organs.[19][20]",
+                            "Mutations in the glucocerebrosidase gene are also associated with Parkinson's disease.[21][22]",
+                            "A related pseudogene is approximately 12 kb downstream of this gene on chromosome 1. Alternative splicing results in multiple transcript variants encoding the same protein.[23]"
+                        ]
+                    },
+                    "Drugs": {
+                        "content": [
+                            "Alglucerase (Ceredase) was a version of glucocerebrosidase that was harvested from human placental tissue and then modified with enzymes.[24]  It was approved by the FDA in 1991[25] but has been withdrawn from the market[26][27] due to the approval of similar drugs made with recombinant DNA technology instead of being harvested from tissue. Drugs made recombinantly pose no risk of diseases being transmitted from the tissue used in harvesting, and are less expensive to manufacture.[24]",
+                            "Recombinant glucocerebrosidases used as drugs include:[28]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Closely related enzymes\nGBA2: acid β-glucosidase (bile acid), also EC 3.2.1.45\nGBA3: acid β-glucosidase (cytosolic), EC 3.2.1.21",
+                            "<info> GBA2: acid β-glucosidase (bile acid), also EC 3.2.1.45",
+                            "<info> GBA3: acid β-glucosidase (cytosolic), EC 3.2.1.21"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c ENSG00000177628 GRCh38: Ensembl release 89: ENSG00000262446, ENSG00000177628 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000028048 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ Vielhaber G, Pfeiffer S, Brade L, Lindner B, Goldmann T, Vollmer E, Hintze U, Wittern KP, Wepf R (November 2001). \"Localization of ceramide and glucosylceramide in human epidermis by immunogold electron microscopy\". The Journal of Investigative Dermatology. 117 (5): 1126–36. doi:10.1046/j.0022-202x.2001.01527.x. PMID 11710923.",
+                            "<info> ^ Rijnboutt S, Aerts HM, Geuze HJ, Tager JM, Strous GJ (March 1991). \"Mannose 6-phosphate-independent membrane association of cathepsin D, glucocerebrosidase, and sphingolipid-activating protein in HepG2 cells\". The Journal of Biological Chemistry. 266 (8): 4862–8. doi:10.1016/S0021-9258(19)67728-8. hdl:1887/50559. PMID 1848227.",
+                            "<info> ^ a b c d Lieberman RL (2011). \"A Guided Tour of the Structural Biology of Gaucher Disease: Acid-β-Glucosidase and Saposin C\". Enzyme Research. 2011 973231. doi:10.4061/2011/973231. PMC 3226326. PMID 22145077.",
+                            "<info> ^ Rigden DJ, Jedrzejas MJ, de Mello LV (June 2003). \"Identification and analysis of catalytic TIM barrel domains in seven further glycoside hydrolase families\". FEBS Letters. 544 (1–3): 103–11. Bibcode:2003FEBSL.544..103R. doi:10.1016/S0014-5793(03)00481-2. PMID 12782298.",
+                            "<info> ^ Vocadlo DJ, Davies GJ, Laine R, Withers SG (August 2001). \"Catalysis by hen egg-white lysozyme proceeds via a covalent intermediate\" (PDF). Nature. 412 (6849): 835–8. Bibcode:2001Natur.412..835V. doi:10.1038/35090602. PMID 11518970. S2CID 205020153.",
+                            "<info> ^ Sinclair G, Pfeifer TA, Grigliatti TA, Choy FY (April 2006). \"Secretion of human glucocerebrosidase from stable transformed insect cells using native signal sequences\". Biochemistry and Cell Biology. 84 (2): 148–56. Bibcode:2006BCB....84..148S. doi:10.1139/o05-165. PMID 16609695.",
+                            "<info> ^ Aerts JM, Sa Miranda MC, Brouwer-Kelder EM, Van Weely S, Barranger JA, Tager JM (October 1990). \"Conditions affecting the activity of glucocerebrosidase purified from spleens of control subjects and patients with type 1 Gaucher disease\". Biochimica et Biophysica Acta (BBA) - Protein Structure and Molecular Enzymology. 1041 (1): 55–63. doi:10.1016/0167-4838(90)90122-V. PMID 2223847.",
+                            "<info> ^ Weiler S, Kishimoto Y, O'Brien JS, Barranger JA, Tomich JM (April 1995). \"Identification of the binding and activating sites of the sphingolipid activator protein, saposin C, with glucocerebrosidase\". Protein Science. 4 (4): 756–64. doi:10.1002/pro.5560040415. PMC 2143096. PMID 7613473.",
+                            "<info> ^ Alattia JR, Shaw JE, Yip CM, Privé GG (October 2006). \"Direct visualization of saposin remodelling of lipid bilayers\". Journal of Molecular Biology. 362 (5): 943–53. doi:10.1016/j.jmb.2006.08.009. PMID 16949605.",
+                            "<info> ^ Tamargo RJ, Velayati A, Goldin E, Sidransky E (July 2012). \"The role of saposin C in Gaucher disease\". Molecular Genetics and Metabolism. 106 (3): 257–63. doi:10.1016/j.ymgme.2012.04.024. PMC 3534739. PMID 22652185.",
+                            "<info> ^ Ogawa S, Uetsuki S, Tezuka Y, Morikawa T, Takahashi A, Sato K (June 1999). \"Synthesis and evaluation of glucocerebrosidase inhibitory activity of anhydro deoxyinositols from (+)-epi- and (-)-vibo-quercitols\". Bioorganic & Medicinal Chemistry Letters. 9 (11): 1493–8. doi:10.1016/S0960-894X(99)00223-1. PMID 10386923.",
+                            "<info> ^ Reczek D, Schwake M, Schröder J, Hughes H, Blanz J, Jin X, Brondyk W, Van Patten S, Edmunds T, Saftig P (November 2007). \"LIMP-2 is a receptor for lysosomal mannose-6-phosphate-independent targeting of beta-glucocerebrosidase\". Cell. 131 (4): 770–83. doi:10.1016/j.cell.2007.10.018. PMID 18022370. S2CID 6771697.",
+                            "<info> ^ Glickman JN, Kornfeld S (October 1993). \"Mannose 6-phosphate-independent targeting of lysosomal enzymes in I-cell disease B lymphoblasts\". The Journal of Cell Biology. 123 (1): 99–108. doi:10.1083/jcb.123.1.99. PMC 2119824. PMID 8408210.",
+                            "<info> ^ Zhao Y, Ren J, Padilla-Parra S, Fry EE, Stuart DI (July 2014). \"Lysosome sorting of β-glucocerebrosidase by LIMP-2 is targeted by the mannose 6-phosphate receptor\". Nature Communications. 5 4321. Bibcode:2014NatCo...5.4321Z. doi:10.1038/ncomms5321. PMC 4104448. PMID 25027712.",
+                            "<info> ^ Mucci JM, Rozenfeld P (2015). \"Pathogenesis of Bone Alterations in Gaucher Disease: The Role of Immune System\". Journal of Immunology Research. 2015 192761. doi:10.1155/2015/192761. PMC 4433682. PMID 26064996.",
+                            "<info> ^ Stirnemann J, Belmatoug N, Camou F, Serratrice C, Froissart R, Caillaud C, Levade T, Astudillo L, Serratrice J, Brassier A, Rose C, Billette de Villemeur T, Berger MG (February 2017). \"A Review of Gaucher Disease Pathophysiology, Clinical Presentation and Treatments\". International Journal of Molecular Sciences. 18 (2): 441. doi:10.3390/ijms18020441. PMC 5343975. PMID 28218669.",
+                            "<info> ^ Kalia LV, Lang AE (August 2015). \"Parkinson's disease\". Lancet. 386 (9996): 896–912. doi:10.1016/S0140-6736(14)61393-3. PMID 25904081. S2CID 5502904.",
+                            "<info> ^ PhD LS (18 September 2023). \"Researchers win Breakthrough Prize for Parkinson's genetics discoveries | Parkinson's News Today\". parkinsonsnewstoday.com. Retrieved 20 September 2023.",
+                            "<info> ^ \"Entrez Gene: GBA glucosidase, beta; acid (includes glucosylceramidase)\".",
+                            "<info> ^ a b c d Deegan PB, Cox TM (2012). \"Imiglucerase in the treatment of Gaucher disease: a history and perspective\". Drug Design, Development and Therapy. 6: 81–106. doi:10.2147/DDDT.S14395. PMC 3340106. PMID 22563238.",
+                            "<info> ^ \"Regulatory Matters\" (PDF). WHO Drug Information. 5 (3): 123–4. 1991. Archived from the original (PDF) on 8 November 2005.",
+                            "<info> ^ \"Enzyme-replacement Therapy for Lysosomal Storage Disorders\". Clinical Policy Bulletin Number: 0442. Aetna. 8 August 2014.",
+                            "<info> ^ \"FDA Prescription and Over-the-Counter Drug Product List\" (PDF). Additions/Deletions for Prescription Drug Product List. U.S. Food and Drug Administration. March 2012. Archived from the original (PDF) on 27 September 2012.",
+                            "<info> ^ Grabowski GA (2012). \"Gaucher disease and other storage disorders\". Hematology. American Society of Hematology. Education Program. 2012: 13–8. doi:10.1182/asheducation.v2012.1.13.3797921. PMID 23233555.",
+                            "<info> ^ Yukhananov A (1 May 2012). \"U.S. FDA approves Pfizer/Protalix drug for Gaucher\". Chicago Tribune. Reuters. Archived from the original on 14 September 2022. Retrieved 2 May 2012."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Horowitz M, Zimran A (1994). \"Mutations causing Gaucher disease\". Human Mutation. 3 (1): 1–11. doi:10.1002/humu.1380030102. PMID 8118460. S2CID 30605941.",
+                            "<info> Tayebi N, Stone DL, Sidransky E (October 1999). \"Type 2 gaucher disease: an expanding phenotype\". Molecular Genetics and Metabolism (Submitted manuscript). 68 (2): 209–19. doi:10.1006/mgme.1999.2918. PMID 10527671.",
+                            "<info> Stone DL, Tayebi N, Orvisky E, Stubblefield B, Madike V, Sidransky E (2000). \"Glucocerebrosidase gene mutations in patients with type 2 Gaucher disease\". Human Mutation (Submitted manuscript). 15 (2): 181–8. doi:10.1002/(SICI)1098-1004(200002)15:2<181::AID-HUMU7>3.0.CO;2-S. PMID 10649495. S2CID 31438997.",
+                            "<info> Caillaud C, Poenaru L (2002). \"[Gaucher's and Fabry's diseases: biochemical and genetic aspects]\". Journal de la Société de Biologie. 196 (2): 135–40. doi:10.1051/jbio/2002196020135. PMID 12360742. S2CID 81257040.",
+                            "<info> Fabrega S, Durand P, Mornon JP, Lehn P (2002). \"[The active site of human glucocerebrosidase: structural predictions and experimental validations]\". Journal de la Société de Biologie. 196 (2): 151–60. doi:10.1051/jbio/2002196020151. PMID 12360744. S2CID 81542873.",
+                            "<info> Alfonso P, Aznarez S, Giralt M, Pocovi M, Giraldo P (2007). \"Mutation analysis and genotype/phenotype relationships of Gaucher disease patients in Spain\". Journal of Human Genetics. 52 (5): 391–6. doi:10.1007/s10038-007-0135-4. PMID 17427031."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> GeneReviews/NCBI/UW/NIH entry on Gaucher disease",
+                            "<info> Glucocerebrosidase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/strawberry_cervix": {
+                "title": "Strawberry cervix",
+                "url": "https://en.wikipedia.org/wiki/strawberry_cervix",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "A strawberry cervix is a finding upon physical examination where the cervix has an erythematous, punctate, and papilliform appearance. It is named because of the superficial similar appearance to a strawberry.",
+                    "As opposed to a more general inflammation of the cervix found in cervicitis, the strawberry cervix appearance is considered to be selectively associated with Trichomonas infections.[1] A clinician discovering this finding would have a high suspicion for Trichomonas infection.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Cervicitis: eMedicine Pediatrics: Surgery\". Retrieved 2010-03-15.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "A strawberry cervix is a finding upon physical examination where the cervix has an erythematous, punctate, and papilliform appearance. It is named because of the superficial similar appearance to a strawberry.",
+                            "As opposed to a more general inflammation of the cervix found in cervicitis, the strawberry cervix appearance is considered to be selectively associated with Trichomonas infections.[1] A clinician discovering this finding would have a high suspicion for Trichomonas infection."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Cervicitis: eMedicine Pediatrics: Surgery\". Retrieved 2010-03-15."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

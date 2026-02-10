@@ -1,0 +1,37 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/keratosis": {
+                "title": "Keratosis",
+                "url": "https://en.wikipedia.org/wiki/keratosis",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Keratosis (from kerat- + -osis)[1] is a growth of keratin on the skin or on mucous membranes stemming from keratinocytes, the prominent cell type in the epidermis. More specifically, it can refer to:",
+                    "<info> actinic keratosis (also known as solar keratosis), a premalignant condition",
+                    "<info> keratosis pilaris (KP, also known as follicular keratosis)",
+                    "<info> seborrheic keratosis, not premalignant",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Merriam-Webster, Merriam-Webster's Unabridged Dictionary, Merriam-Webster, archived from the original on 2020-05-25, retrieved 2018-03-28.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Keratosis (from kerat- + -osis)[1] is a growth of keratin on the skin or on mucous membranes stemming from keratinocytes, the prominent cell type in the epidermis. More specifically, it can refer to:",
+                            "<info> actinic keratosis (also known as solar keratosis), a premalignant condition",
+                            "<info> keratosis pilaris (KP, also known as follicular keratosis)",
+                            "<info> seborrheic keratosis, not premalignant"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Merriam-Webster, Merriam-Webster's Unabridged Dictionary, Merriam-Webster, archived from the original on 2020-05-25, retrieved 2018-03-28."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

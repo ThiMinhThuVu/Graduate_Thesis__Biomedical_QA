@@ -1,0 +1,119 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/infectious_bursal_disease": {
+                "title": "Infectious bursal disease",
+                "url": "https://en.wikipedia.org/wiki/infectious_bursal_disease",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Infectious bursal disease (IBD), also known as Gumboro disease, infectious bursitis, and infectious avian nephrosis, is a highly contagious disease of young chickens and turkeys caused by infectious bursal disease virus (IBDV),[1] characterized by immunosuppression and mortality generally at 3 to 6 weeks of age. The disease was first discovered in Gumboro, Delaware in 1962. It is economically important to the poultry industry worldwide due to increased susceptibility to other diseases and negative interference with effective vaccination. In recent years, very virulent strains of IBDV (vvIBDV), causing severe mortality in chicken, have emerged in Europe, Latin America, South-East Asia, Africa, and the Middle East. Infection is via the oro-fecal route, with affected birds excreting high levels of the virus for approximately 2 weeks after infection. The disease is easily spread from infected chickens to healthy chickens through food, water, and physical contact.[2]",
+                    "",
+                    "=== Virology ===",
+                    "IBDV is a double-stranded RNA virus belonging to the genus Avibirnavirus of family Birnaviridae. It has a non-enveloped, icosahedral capsid that is about 55-65 nanometers (nm) in diameter.[3] There are two distinct serotypes of the virus, but only serotype 1 viruses cause disease in poultry.[4] At least six antigenic subtypes of IBDV serotype 1 have been identified by in vitro cross-neutralization assay. Viruses belonging to one of these antigenic subtypes are commonly known as variants, which were reported to break through high levels of maternal antibodies in commercial flocks, causing up to 60 to 100 percent mortality rates in chickens. With the advent of highly sensitive molecular techniques, such as reverse transcription polymerase chain reaction (RT-PCR) and restriction fragment length polymorphism (RFLP), it became possible to detect the vvIBDV, to differentiate IBDV strains, and to use such information in studying the molecular epidemiology of the virus.",
+                    "IBDV has a bi-segmented genome consisting of two segments, A and B.[5] The genome segment B (2.9 kb) encodes VP1, the putative viral RNA polymerase. The larger segment A (3.2 kb) encodes viral proteins VP2, VP3, VP4, and VP5. VP2 forms the virus capsid and contains important antigenic domains, including the VP2 variable domain, which is where most of the amino acid (AA) changes between antigenically different IBDVs are clustered. Thus, this region of VP2 is the obvious target for the molecular techniques applied for IBDV detection and strain variation studies. VP3 is another major structural protein located within the virus particle and is essential for the activity of VP1 and the assembly of VP2.[3] VP4 is a protease involved in virus maturation, and VP5 is a non-structural protein that is important for release of the virus from infected cells.[3]",
+                    "",
+                    "=== Pathogenesis ===",
+                    "Clinical disease is associated to bird age with the greatest bursal mass, which occurs between 3 and 6 weeks of age. The greatest bursal mass is mostly a result of a large population of maturing IgM-bearing B-lymphocytes (lymphoblasts), the main target of infection. Young birds at around two to eight weeks of age that have highly active bursa of Fabricius are more susceptible to disease. Birds over eight weeks are resistant to challenge and will not show clinical signs unless infected by highly virulent strains.",
+                    "Subclinical disease occurs in chickens infected before three weeks of age. At this age the B-lymphoblast population is smaller and the systemic effects are insufficient for generating clinical signs. However, the B-cell destruction is usually most severe in subclinically infected young, as virus will destroy a smaller population and most cells in one place (the bursa).",
+                    "After ingestion, the virus destroys the lymphoid follicles in the bursa of Fabricius as well as the circulating B-cells in the secondary lymphoid tissues such as GALT (gut-associated lymphoid tissue), CALT (conjunctiva), BALT (Bronchial) caecal tonsils, Harderian gland, etc. Acute disease and death is due to the necrotizing effect of these viruses on the host tissues. Kidney failure is a common cause of mortality. If the bird survives and recovers from this phase of the disease, it remains immunocompromised which means it is more susceptible to other diseases.",
+                    "",
+                    "=== Clinical signs ===",
+                    "Disease may appear suddenly and morbidity typically reaches 100%. In the acute form birds are prostrated, debilitated and dehydrated. They produce a watery diarrhea and may have swollen feces-stained vent. Most of the flock is recumbent and have ruffled feathers. Mortality rates vary with virulence of the strain involved, the challenge dose, previous immunity, presence of concurrent disease, as well as the flock's ability to mount an effective immune response. Immunosuppression of very young chickens, less than three weeks of age, is possibly the most important outcome and may not be clinically detectable (subclinical). In addition, infection with less virulent strains may not show overt clinical signs, but birds that have bursal atrophy with fibrotic or cystic follicles and lymphocytopenia before six weeks of age, may be susceptible to opportunistic infection and may die of infection by agents that would not usually cause disease in immunocompetent birds.",
+                    "Chickens infected with the disease generally have the following symptoms: pecking at other chickens, high fever, ruffled feathers, trembling and slow walking, found lying together in clumps with their heads sunken towards the ground, diarrhea, yellow and foamy stool, difficulty in excretion, reduced eating or anorexia.",
+                    "The mortality rate is around 20% with death within 3–4 days. Recovery for survivors takes about 7–8 days.",
+                    "The presence of maternal antibody (antibody passed to the chick from the mother) changes the disease's progression. Especially dangerous strains of the virus with high mortality rates were first detected in Europe; these strains have not been detected in Australia.[6]",
+                    "",
+                    "=== Diagnosis ===",
+                    "A preliminary diagnosis can usually be made based on flock history, clinical signs and post-mortem (necropsy) examinations. However, definitive diagnosis can only be achieved by the specific detection and/or isolation and characterization of IBDV. Immunofluorescence or immunohistochemistry tests, based on anti-IBDV labelled antibodies, or in-situ hybridization, based on labelled complementary cDNA sequence probe, are useful for the specific detection of IBDV in infected tissues. RT-PCR (as mentioned above) was designed for the detection of IBDV genome, such as VP1 coding gene, with the possibility of PCR product sequences be determined for genetically comparing isolates and producing phylogenetic trees. Serological tests such as agar gel precipitation and ELISA, for detecting antibodies, are used for monitoring vaccine responses and might be additional information for diagnosis of infection of unvaccinated flocks.",
+                    "Necropsy examination will usually show changes in the bursa of Fabricius such as swelling, oedema, haemorrhage, the presence of a jelly serosa transudate and eventually, bursal atrophy. Pathological changes, especially haemorrhages, may also be seen in the skeletal muscle, intestines, kidney and spleen.",
+                    "",
+                    "=== Treatment and control ===",
+                    "Peri-focal vaccination may not be effective for the combat of an outbreak, due to the rapidity of wild-IBDV spreading.",
+                    "Passive immunity may protect against challenge with homologous IBDV, as does previous infection with homologous avirulent strains. Breeder flocks may be immunised against IBD so that they would transfer protective antibodies to their progenies, such as broiler and pullet chicks. Low-attenuated vaccine strains may cause damage to the bursa of Fabricius and immunosuppression in susceptible chicks. Biosecurity with adequate restriction to farm visitation and distancing from other flocks. Post outbreak hygiene measures may not be effective as the virus can survive for long periods in both housing and water.",
+                    "",
+                    "=== Epidemiology ===",
+                    "The natural hosts of IBD are chickens and turkeys.[3]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Castón, José R.; Rodríguez, José F.; Carrascosa, José L. (2008). \"Infectious Bursal Disease Virus (IBDV)\". Segmented Double-stranded RNA Viruses: Structure and Molecular Biology. Caister Academic Press. ISBN 978-1-904455-21-9.",
+                    "<info> ^ Nguyen Thi Hau (October 27, 2014). \"GUMBORO disease in chickens and methods of prevention and treatment\"",
+                    "<info> ^ a b c d Eterradossi, N.; Saif, Y.M. (2008). \"Infectious bursal disease\". In Saif, Y.M. (ed.). Diseases of poultry (12th ed.). Blackwell Publishing. pp. 185–208. ISBN 9780813807188.",
+                    "<info> ^ \"Infectious Bursal Disease: Introduction\". The Merck Veterinary Manual. 2006. Archived from the original on 2007-06-22. Retrieved 2007-06-26.",
+                    "<info> ^ Qin, Yao; Zheng, Shijun (14 January 2017). \"Infectious bursal disease virus-host interactions: multifunctional viral proteins that perform multiple and differing jobs\". International Journal of Molecular Sciences. 18 (1): 161. doi:10.3390/ijms18010161. PMC 5297794. PMID 28098808.",
+                    "<info> ^ \"Infectious bursal disease (or Gumboro)\". Poultry Hub. Archived from the original on 2019-11-06. Retrieved 2019-11-14.",
+                    "",
+                    "=== External links ===",
+                    "<info> Description, with photo of diseased organ",
+                    "<info> IBD in Commercial Broilers",
+                    "<info> Infectious Bursal Disease, expert reviewed and published by WikiVet at http://en.wikivet.net/Infectious_Bursal_Disease, accessed 13/09/2011",
+                    "<info> \"Gumbohatch (avian infectious bursal disease vaccine (live)) EPAR\". European Medicines Agency (EMA). 13 September 2019.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Infectious bursal disease (IBD), also known as Gumboro disease, infectious bursitis, and infectious avian nephrosis, is a highly contagious disease of young chickens and turkeys caused by infectious bursal disease virus (IBDV),[1] characterized by immunosuppression and mortality generally at 3 to 6 weeks of age. The disease was first discovered in Gumboro, Delaware in 1962. It is economically important to the poultry industry worldwide due to increased susceptibility to other diseases and negative interference with effective vaccination. In recent years, very virulent strains of IBDV (vvIBDV), causing severe mortality in chicken, have emerged in Europe, Latin America, South-East Asia, Africa, and the Middle East. Infection is via the oro-fecal route, with affected birds excreting high levels of the virus for approximately 2 weeks after infection. The disease is easily spread from infected chickens to healthy chickens through food, water, and physical contact.[2]"
+                        ]
+                    },
+                    "Virology": {
+                        "content": [
+                            "IBDV is a double-stranded RNA virus belonging to the genus Avibirnavirus of family Birnaviridae. It has a non-enveloped, icosahedral capsid that is about 55-65 nanometers (nm) in diameter.[3] There are two distinct serotypes of the virus, but only serotype 1 viruses cause disease in poultry.[4] At least six antigenic subtypes of IBDV serotype 1 have been identified by in vitro cross-neutralization assay. Viruses belonging to one of these antigenic subtypes are commonly known as variants, which were reported to break through high levels of maternal antibodies in commercial flocks, causing up to 60 to 100 percent mortality rates in chickens. With the advent of highly sensitive molecular techniques, such as reverse transcription polymerase chain reaction (RT-PCR) and restriction fragment length polymorphism (RFLP), it became possible to detect the vvIBDV, to differentiate IBDV strains, and to use such information in studying the molecular epidemiology of the virus.",
+                            "IBDV has a bi-segmented genome consisting of two segments, A and B.[5] The genome segment B (2.9 kb) encodes VP1, the putative viral RNA polymerase. The larger segment A (3.2 kb) encodes viral proteins VP2, VP3, VP4, and VP5. VP2 forms the virus capsid and contains important antigenic domains, including the VP2 variable domain, which is where most of the amino acid (AA) changes between antigenically different IBDVs are clustered. Thus, this region of VP2 is the obvious target for the molecular techniques applied for IBDV detection and strain variation studies. VP3 is another major structural protein located within the virus particle and is essential for the activity of VP1 and the assembly of VP2.[3] VP4 is a protease involved in virus maturation, and VP5 is a non-structural protein that is important for release of the virus from infected cells.[3]"
+                        ]
+                    },
+                    "Pathogenesis": {
+                        "content": [
+                            "Clinical disease is associated to bird age with the greatest bursal mass, which occurs between 3 and 6 weeks of age. The greatest bursal mass is mostly a result of a large population of maturing IgM-bearing B-lymphocytes (lymphoblasts), the main target of infection. Young birds at around two to eight weeks of age that have highly active bursa of Fabricius are more susceptible to disease. Birds over eight weeks are resistant to challenge and will not show clinical signs unless infected by highly virulent strains.",
+                            "Subclinical disease occurs in chickens infected before three weeks of age. At this age the B-lymphoblast population is smaller and the systemic effects are insufficient for generating clinical signs. However, the B-cell destruction is usually most severe in subclinically infected young, as virus will destroy a smaller population and most cells in one place (the bursa).",
+                            "After ingestion, the virus destroys the lymphoid follicles in the bursa of Fabricius as well as the circulating B-cells in the secondary lymphoid tissues such as GALT (gut-associated lymphoid tissue), CALT (conjunctiva), BALT (Bronchial) caecal tonsils, Harderian gland, etc. Acute disease and death is due to the necrotizing effect of these viruses on the host tissues. Kidney failure is a common cause of mortality. If the bird survives and recovers from this phase of the disease, it remains immunocompromised which means it is more susceptible to other diseases."
+                        ]
+                    },
+                    "Clinical signs": {
+                        "content": [
+                            "Disease may appear suddenly and morbidity typically reaches 100%. In the acute form birds are prostrated, debilitated and dehydrated. They produce a watery diarrhea and may have swollen feces-stained vent. Most of the flock is recumbent and have ruffled feathers. Mortality rates vary with virulence of the strain involved, the challenge dose, previous immunity, presence of concurrent disease, as well as the flock's ability to mount an effective immune response. Immunosuppression of very young chickens, less than three weeks of age, is possibly the most important outcome and may not be clinically detectable (subclinical). In addition, infection with less virulent strains may not show overt clinical signs, but birds that have bursal atrophy with fibrotic or cystic follicles and lymphocytopenia before six weeks of age, may be susceptible to opportunistic infection and may die of infection by agents that would not usually cause disease in immunocompetent birds.",
+                            "Chickens infected with the disease generally have the following symptoms: pecking at other chickens, high fever, ruffled feathers, trembling and slow walking, found lying together in clumps with their heads sunken towards the ground, diarrhea, yellow and foamy stool, difficulty in excretion, reduced eating or anorexia.",
+                            "The mortality rate is around 20% with death within 3–4 days. Recovery for survivors takes about 7–8 days.",
+                            "The presence of maternal antibody (antibody passed to the chick from the mother) changes the disease's progression. Especially dangerous strains of the virus with high mortality rates were first detected in Europe; these strains have not been detected in Australia.[6]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "A preliminary diagnosis can usually be made based on flock history, clinical signs and post-mortem (necropsy) examinations. However, definitive diagnosis can only be achieved by the specific detection and/or isolation and characterization of IBDV. Immunofluorescence or immunohistochemistry tests, based on anti-IBDV labelled antibodies, or in-situ hybridization, based on labelled complementary cDNA sequence probe, are useful for the specific detection of IBDV in infected tissues. RT-PCR (as mentioned above) was designed for the detection of IBDV genome, such as VP1 coding gene, with the possibility of PCR product sequences be determined for genetically comparing isolates and producing phylogenetic trees. Serological tests such as agar gel precipitation and ELISA, for detecting antibodies, are used for monitoring vaccine responses and might be additional information for diagnosis of infection of unvaccinated flocks.",
+                            "Necropsy examination will usually show changes in the bursa of Fabricius such as swelling, oedema, haemorrhage, the presence of a jelly serosa transudate and eventually, bursal atrophy. Pathological changes, especially haemorrhages, may also be seen in the skeletal muscle, intestines, kidney and spleen."
+                        ]
+                    },
+                    "Treatment and control": {
+                        "content": [
+                            "Peri-focal vaccination may not be effective for the combat of an outbreak, due to the rapidity of wild-IBDV spreading.",
+                            "Passive immunity may protect against challenge with homologous IBDV, as does previous infection with homologous avirulent strains. Breeder flocks may be immunised against IBD so that they would transfer protective antibodies to their progenies, such as broiler and pullet chicks. Low-attenuated vaccine strains may cause damage to the bursa of Fabricius and immunosuppression in susceptible chicks. Biosecurity with adequate restriction to farm visitation and distancing from other flocks. Post outbreak hygiene measures may not be effective as the virus can survive for long periods in both housing and water."
+                        ]
+                    },
+                    "Epidemiology": {
+                        "content": [
+                            "The natural hosts of IBD are chickens and turkeys.[3]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Castón, José R.; Rodríguez, José F.; Carrascosa, José L. (2008). \"Infectious Bursal Disease Virus (IBDV)\". Segmented Double-stranded RNA Viruses: Structure and Molecular Biology. Caister Academic Press. ISBN 978-1-904455-21-9.",
+                            "<info> ^ Nguyen Thi Hau (October 27, 2014). \"GUMBORO disease in chickens and methods of prevention and treatment\"",
+                            "<info> ^ a b c d Eterradossi, N.; Saif, Y.M. (2008). \"Infectious bursal disease\". In Saif, Y.M. (ed.). Diseases of poultry (12th ed.). Blackwell Publishing. pp. 185–208. ISBN 9780813807188.",
+                            "<info> ^ \"Infectious Bursal Disease: Introduction\". The Merck Veterinary Manual. 2006. Archived from the original on 2007-06-22. Retrieved 2007-06-26.",
+                            "<info> ^ Qin, Yao; Zheng, Shijun (14 January 2017). \"Infectious bursal disease virus-host interactions: multifunctional viral proteins that perform multiple and differing jobs\". International Journal of Molecular Sciences. 18 (1): 161. doi:10.3390/ijms18010161. PMC 5297794. PMID 28098808.",
+                            "<info> ^ \"Infectious bursal disease (or Gumboro)\". Poultry Hub. Archived from the original on 2019-11-06. Retrieved 2019-11-14."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Description, with photo of diseased organ",
+                            "<info> IBD in Commercial Broilers",
+                            "<info> Infectious Bursal Disease, expert reviewed and published by WikiVet at http://en.wikivet.net/Infectious_Bursal_Disease, accessed 13/09/2011",
+                            "<info> \"Gumbohatch (avian infectious bursal disease vaccine (live)) EPAR\". European Medicines Agency (EMA). 13 September 2019."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

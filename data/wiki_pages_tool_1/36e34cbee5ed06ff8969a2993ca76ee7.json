@@ -1,0 +1,133 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/integrin_beta_4": {
+                "title": "Integrin beta 4",
+                "url": "https://en.wikipedia.org/wiki/integrin_beta_4",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Integrin, beta 4 (ITGB4) also known as CD104 (Cluster of Differentiation 104), is a human gene.[5]",
+                    "",
+                    "=== Function ===",
+                    "Integrins are heterodimers composed of alpha and beta subunits, that are noncovalently associated transmembrane glycoprotein receptors. Different combinations of alpha and beta polypeptides form complexes that vary in their ligand-binding specificities. Integrins mediate cell-matrix or cell-cell adhesion, and transduced signals that regulate gene expression and cell growth. This gene encodes the integrin beta 4 subunit, a receptor for the laminins. This subunit tends to associate with alpha 6 subunit and is likely to play a pivotal role in the biology of invasive carcinoma. Mutations in this gene are associated with epidermolysis bullosa with pyloric atresia. Multiple alternatively spliced transcript variants encoding distinct isoforms have been found for this gene.[5]",
+                    "",
+                    "=== Interactions ===",
+                    "ITGB4 has been shown to interact with Collagen, type XVII, alpha 1,[6][7] EIF6[8] and Erbin.[9]",
+                    "",
+                    "=== See also ===",
+                    "<info> List of target antigens in pemphigoid",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000132470 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000020758 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ a b \"Entrez Gene: ITGB4 integrin, beta 4\".",
+                    "<info> ^ Aho S, Uitto J (Feb 1998). \"Direct interaction between the intracellular domains of bullous pemphigoid antigen 2 (BP180) and beta 4 integrin, hemidesmosomal components of basal keratinocytes\". Biochemical and Biophysical Research Communications. 243 (3): 694–9. Bibcode:1998BBRC..243..694A. doi:10.1006/bbrc.1998.8162. PMID 9500991.",
+                    "<info> ^ Schaapveld RQ, Borradori L, Geerts D, van Leusden MR, Kuikman I, Nievers MG, Niessen CM, Steenbergen RD, Snijders PJ, Sonnenberg A (Jul 1998). \"Hemidesmosome formation is initiated by the beta4 integrin subunit, requires complex formation of beta4 and HD1/plectin, and involves a direct interaction between beta4 and the bullous pemphigoid antigen 180\". The Journal of Cell Biology. 142 (1): 271–84. doi:10.1083/jcb.142.1.271. PMC 2133016. PMID 9660880.",
+                    "<info> ^ Biffo S, Sanvito F, Costa S, Preve L, Pignatelli R, Spinardi L, Marchisio PC (Nov 1997). \"Isolation of a novel beta4 integrin-binding protein (p27(BBP)) highly expressed in epithelial cells\". The Journal of Biological Chemistry. 272 (48): 30314–21. doi:10.1074/jbc.272.48.30314. PMID 9374518.",
+                    "<info> ^ Favre B, Fontao L, Koster J, Shafaatian R, Jaunin F, Saurat JH, Sonnenberg A, Borradori L (Aug 2001). \"The hemidesmosomal protein bullous pemphigoid antigen 1 and the integrin beta 4 subunit bind to ERBIN. Molecular cloning of multiple alternative splice variants of ERBIN and analysis of their tissue expression\". The Journal of Biological Chemistry. 276 (35): 32427–36. doi:10.1074/jbc.M011005200. PMID 11375975.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Lipscomb EA, Mercurio AM (Sep 2005). \"Mobilization and activation of a signaling competent alpha6beta4integrin underlies its contribution to carcinoma progression\". Cancer and Metastasis Reviews. 24 (3): 413–23. doi:10.1007/s10555-005-5133-4. PMID 16258729. S2CID 26150860.",
+                    "<info> Sonnenberg A, Linders CJ, Modderman PW, Damsky CH, Aumailley M, Timpl R (Jun 1990). \"Integrin recognition of different cell-binding fragments of laminin (P1, E3, E8) and evidence that alpha 6 beta 1 but not alpha 6 beta 4 functions as a major receptor for fragment E8\". The Journal of Cell Biology. 110 (6): 2145–55. doi:10.1083/jcb.110.6.2145. PMC 2116116. PMID 1693624.",
+                    "<info> Tamura RN, Rozzo C, Starr L, Chambers J, Reichardt LF, Cooper HM, Quaranta V (Oct 1990). \"Epithelial integrin alpha 6 beta 4: complete primary structure of alpha 6 and variant forms of beta 4\". The Journal of Cell Biology. 111 (4): 1593–604. doi:10.1083/jcb.111.4.1593. PMC 2116232. PMID 1976638.",
+                    "<info> Hogervorst F, Kuikman I, van Kessel AG, Sonnenberg A (Jul 1991). \"Molecular cloning of the human alpha 6 integrin subunit. Alternative splicing of alpha 6 mRNA and chromosomal localization of the alpha 6 and beta 4 genes\". European Journal of Biochemistry. 199 (2): 425–33. doi:10.1111/j.1432-1033.1991.tb16140.x. PMID 2070796.",
+                    "<info> Vogel BE, Tarone G, Giancotti FG, Gailit J, Ruoslahti E (Apr 1990). \"A novel fibronectin receptor with an unexpected subunit composition (alpha v beta 1)\". The Journal of Biological Chemistry. 265 (11): 5934–7. doi:10.1016/S0021-9258(19)39268-3. PMID 2138612.",
+                    "<info> Suzuki S, Naitoh Y (Mar 1990). \"Amino acid sequence of a novel integrin beta 4 subunit and primary expression of the mRNA in epithelial cells\". The EMBO Journal. 9 (3): 757–63. doi:10.1002/j.1460-2075.1990.tb08170.x. PMC 551732. PMID 2311577.",
+                    "<info> Hogervorst F, Kuikman I, von dem Borne AE, Sonnenberg A (Mar 1990). \"Cloning and sequence analysis of beta-4 cDNA: an integrin subunit that contains a unique 118 kd cytoplasmic domain\". The EMBO Journal. 9 (3): 765–70. doi:10.1002/j.1460-2075.1990.tb08171.x. PMC 551734. PMID 2311578.",
+                    "<info> Kajiji S, Tamura RN, Quaranta V (Mar 1989). \"A novel integrin (alpha E beta 4) from human epithelial cells suggests a fourth family of integrin adhesion receptors\". The EMBO Journal. 8 (3): 673–80. doi:10.1002/j.1460-2075.1989.tb03425.x. PMC 400860. PMID 2542022.",
+                    "<info> Hemler ME, Crouse C, Sonnenberg A (Apr 1989). \"Association of the VLA alpha 6 subunit with a novel protein. A possible alternative to the common VLA beta 1 subunit on certain cell lines\". The Journal of Biological Chemistry. 264 (11): 6529–35. doi:10.1016/S0021-9258(18)83380-4. PMID 2649503.",
+                    "<info> Vidal F, Aberdam D, Miquel C, Christiano AM, Pulkkinen L, Uitto J, Ortonne JP, Meneguzzi G (Jun 1995). \"Integrin beta 4 mutations associated with junctional epidermolysis bullosa with pyloric atresia\". Nature Genetics. 10 (2): 229–34. doi:10.1038/ng0695-229. PMID 7545057. S2CID 24894174.",
+                    "<info> Mainiero F, Pepe A, Wary KK, Spinardi L, Mohammadi M, Schlessinger J, Giancotti FG (Sep 1995). \"Signal transduction by the alpha 6 beta 4 integrin: distinct beta 4 subunit sites mediate recruitment of Shc/Grb2 and association with the cytoskeleton of hemidesmosomes\". The EMBO Journal. 14 (18): 4470–81. doi:10.1002/j.1460-2075.1995.tb00126.x. PMC 394539. PMID 7556090.",
+                    "<info> Clarke AS, Lotz MM, Mercurio AM (Apr 1994). \"A novel structural variant of the human beta 4 integrin cDNA\". Cell Adhesion and Communication. 2 (1): 1–6. doi:10.3109/15419069409014197. PMID 7982032.",
+                    "<info> Weeks BS, Desai K, Loewenstein PM, Klotman ME, Klotman PE, Green M, Kleinman HK (Mar 1993). \"Identification of a novel cell attachment domain in the HIV-1 Tat protein and its 90-kDa cell surface binding protein\". The Journal of Biological Chemistry. 268 (7): 5279–84. doi:10.1016/S0021-9258(18)53530-4. PMID 8444901.",
+                    "<info> Iacovacci S, Gagnoux-Palacios L, Zambruno G, Meneguzzi G, D'Alessio M (Jun 1997). \"Genomic organization of the human integrin beta4 gene\". Mammalian Genome. 8 (6): 448–50. doi:10.1007/s003359900467. PMID 9166594. S2CID 41037975.",
+                    "<info> Mainiero F, Murgia C, Wary KK, Curatola AM, Pepe A, Blumemberg M, Westwick JK, Der CJ, Giancotti FG (May 1997). \"The coupling of alpha6beta4 integrin to Ras-MAP kinase pathways mediated by Shc controls keratinocyte proliferation\". The EMBO Journal. 16 (9): 2365–75. doi:10.1093/emboj/16.9.2365. PMC 1169837. PMID 9171350.",
+                    "<info> Pulkkinen L, Kurtz K, Xu Y, Bruckner-Tuderman L, Uitto J (Jun 1997). \"Genomic organization of the integrin beta 4 gene (ITGB4): a homozygous splice-site mutation in a patient with junctional epidermolysis bullosa associated with pyloric atresia\". Laboratory Investigation. 76 (6): 823–33. PMID 9194858.",
+                    "<info> van Leusden MR, Kuikman I, Sonnenberg A (Jun 1997). \"The unique cytoplasmic domain of the human integrin variant beta4E is produced by partial retention of intronic sequences\". Biochemical and Biophysical Research Communications. 235 (3): 826–30. Bibcode:1997BBRC..235..826V. doi:10.1006/bbrc.1997.6892. PMID 9207246.",
+                    "<info> von Bredow DC, Nagle RB, Bowden GT, Cress AE (Oct 1997). \"Cleavage of beta 4 integrin by matrilysin\". Experimental Cell Research. 236 (1): 341–5. doi:10.1006/excr.1997.3711. PMID 9344615.",
+                    "<info> Biffo S, Sanvito F, Costa S, Preve L, Pignatelli R, Spinardi L, Marchisio PC (Nov 1997). \"Isolation of a novel beta4 integrin-binding protein (p27(BBP)) highly expressed in epithelial cells\". The Journal of Biological Chemistry. 272 (48): 30314–21. doi:10.1074/jbc.272.48.30314. PMID 9374518.",
+                    "<info> Pulkkinen L, Kim DU, Uitto J (Jan 1998). \"Epidermolysis bullosa with pyloric atresia: novel mutations in the beta4 integrin gene (ITGB4)\". The American Journal of Pathology. 152 (1): 157–66. PMC 1858138. PMID 9422533.",
+                    "<info> Hughes AE, Bradley DT, Campbell M, Lechner J, Dash DP, Simpson DA, Willoughby CE (Nov 2011). \"Mutation altering the miR-184 seed region causes familial keratoconus with cataract\". American Journal of Human Genetics. 89 (5): 628–33. doi:10.1016/j.ajhg.2011.09.014. PMC 3213395. PMID 21996275.",
+                    "",
+                    "=== External links ===",
+                    "<info> GeneReviews/NCBI/NIH/UW entry on Epidermolysis Bullosa with Pyloric Atresia",
+                    "<info> ITGB4+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> ITGB4 Info with links in the Cell Migration Gateway Archived 2014-12-11 at the Wayback Machine",
+                    "This article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Integrin, beta 4 (ITGB4) also known as CD104 (Cluster of Differentiation 104), is a human gene.[5]"
+                        ]
+                    },
+                    "Function": {
+                        "content": [
+                            "Integrins are heterodimers composed of alpha and beta subunits, that are noncovalently associated transmembrane glycoprotein receptors. Different combinations of alpha and beta polypeptides form complexes that vary in their ligand-binding specificities. Integrins mediate cell-matrix or cell-cell adhesion, and transduced signals that regulate gene expression and cell growth. This gene encodes the integrin beta 4 subunit, a receptor for the laminins. This subunit tends to associate with alpha 6 subunit and is likely to play a pivotal role in the biology of invasive carcinoma. Mutations in this gene are associated with epidermolysis bullosa with pyloric atresia. Multiple alternatively spliced transcript variants encoding distinct isoforms have been found for this gene.[5]"
+                        ]
+                    },
+                    "Interactions": {
+                        "content": [
+                            "ITGB4 has been shown to interact with Collagen, type XVII, alpha 1,[6][7] EIF6[8] and Erbin.[9]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of target antigens in pemphigoid"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000132470 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000020758 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ a b \"Entrez Gene: ITGB4 integrin, beta 4\".",
+                            "<info> ^ Aho S, Uitto J (Feb 1998). \"Direct interaction between the intracellular domains of bullous pemphigoid antigen 2 (BP180) and beta 4 integrin, hemidesmosomal components of basal keratinocytes\". Biochemical and Biophysical Research Communications. 243 (3): 694–9. Bibcode:1998BBRC..243..694A. doi:10.1006/bbrc.1998.8162. PMID 9500991.",
+                            "<info> ^ Schaapveld RQ, Borradori L, Geerts D, van Leusden MR, Kuikman I, Nievers MG, Niessen CM, Steenbergen RD, Snijders PJ, Sonnenberg A (Jul 1998). \"Hemidesmosome formation is initiated by the beta4 integrin subunit, requires complex formation of beta4 and HD1/plectin, and involves a direct interaction between beta4 and the bullous pemphigoid antigen 180\". The Journal of Cell Biology. 142 (1): 271–84. doi:10.1083/jcb.142.1.271. PMC 2133016. PMID 9660880.",
+                            "<info> ^ Biffo S, Sanvito F, Costa S, Preve L, Pignatelli R, Spinardi L, Marchisio PC (Nov 1997). \"Isolation of a novel beta4 integrin-binding protein (p27(BBP)) highly expressed in epithelial cells\". The Journal of Biological Chemistry. 272 (48): 30314–21. doi:10.1074/jbc.272.48.30314. PMID 9374518.",
+                            "<info> ^ Favre B, Fontao L, Koster J, Shafaatian R, Jaunin F, Saurat JH, Sonnenberg A, Borradori L (Aug 2001). \"The hemidesmosomal protein bullous pemphigoid antigen 1 and the integrin beta 4 subunit bind to ERBIN. Molecular cloning of multiple alternative splice variants of ERBIN and analysis of their tissue expression\". The Journal of Biological Chemistry. 276 (35): 32427–36. doi:10.1074/jbc.M011005200. PMID 11375975."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Lipscomb EA, Mercurio AM (Sep 2005). \"Mobilization and activation of a signaling competent alpha6beta4integrin underlies its contribution to carcinoma progression\". Cancer and Metastasis Reviews. 24 (3): 413–23. doi:10.1007/s10555-005-5133-4. PMID 16258729. S2CID 26150860.",
+                            "<info> Sonnenberg A, Linders CJ, Modderman PW, Damsky CH, Aumailley M, Timpl R (Jun 1990). \"Integrin recognition of different cell-binding fragments of laminin (P1, E3, E8) and evidence that alpha 6 beta 1 but not alpha 6 beta 4 functions as a major receptor for fragment E8\". The Journal of Cell Biology. 110 (6): 2145–55. doi:10.1083/jcb.110.6.2145. PMC 2116116. PMID 1693624.",
+                            "<info> Tamura RN, Rozzo C, Starr L, Chambers J, Reichardt LF, Cooper HM, Quaranta V (Oct 1990). \"Epithelial integrin alpha 6 beta 4: complete primary structure of alpha 6 and variant forms of beta 4\". The Journal of Cell Biology. 111 (4): 1593–604. doi:10.1083/jcb.111.4.1593. PMC 2116232. PMID 1976638.",
+                            "<info> Hogervorst F, Kuikman I, van Kessel AG, Sonnenberg A (Jul 1991). \"Molecular cloning of the human alpha 6 integrin subunit. Alternative splicing of alpha 6 mRNA and chromosomal localization of the alpha 6 and beta 4 genes\". European Journal of Biochemistry. 199 (2): 425–33. doi:10.1111/j.1432-1033.1991.tb16140.x. PMID 2070796.",
+                            "<info> Vogel BE, Tarone G, Giancotti FG, Gailit J, Ruoslahti E (Apr 1990). \"A novel fibronectin receptor with an unexpected subunit composition (alpha v beta 1)\". The Journal of Biological Chemistry. 265 (11): 5934–7. doi:10.1016/S0021-9258(19)39268-3. PMID 2138612.",
+                            "<info> Suzuki S, Naitoh Y (Mar 1990). \"Amino acid sequence of a novel integrin beta 4 subunit and primary expression of the mRNA in epithelial cells\". The EMBO Journal. 9 (3): 757–63. doi:10.1002/j.1460-2075.1990.tb08170.x. PMC 551732. PMID 2311577.",
+                            "<info> Hogervorst F, Kuikman I, von dem Borne AE, Sonnenberg A (Mar 1990). \"Cloning and sequence analysis of beta-4 cDNA: an integrin subunit that contains a unique 118 kd cytoplasmic domain\". The EMBO Journal. 9 (3): 765–70. doi:10.1002/j.1460-2075.1990.tb08171.x. PMC 551734. PMID 2311578.",
+                            "<info> Kajiji S, Tamura RN, Quaranta V (Mar 1989). \"A novel integrin (alpha E beta 4) from human epithelial cells suggests a fourth family of integrin adhesion receptors\". The EMBO Journal. 8 (3): 673–80. doi:10.1002/j.1460-2075.1989.tb03425.x. PMC 400860. PMID 2542022.",
+                            "<info> Hemler ME, Crouse C, Sonnenberg A (Apr 1989). \"Association of the VLA alpha 6 subunit with a novel protein. A possible alternative to the common VLA beta 1 subunit on certain cell lines\". The Journal of Biological Chemistry. 264 (11): 6529–35. doi:10.1016/S0021-9258(18)83380-4. PMID 2649503.",
+                            "<info> Vidal F, Aberdam D, Miquel C, Christiano AM, Pulkkinen L, Uitto J, Ortonne JP, Meneguzzi G (Jun 1995). \"Integrin beta 4 mutations associated with junctional epidermolysis bullosa with pyloric atresia\". Nature Genetics. 10 (2): 229–34. doi:10.1038/ng0695-229. PMID 7545057. S2CID 24894174.",
+                            "<info> Mainiero F, Pepe A, Wary KK, Spinardi L, Mohammadi M, Schlessinger J, Giancotti FG (Sep 1995). \"Signal transduction by the alpha 6 beta 4 integrin: distinct beta 4 subunit sites mediate recruitment of Shc/Grb2 and association with the cytoskeleton of hemidesmosomes\". The EMBO Journal. 14 (18): 4470–81. doi:10.1002/j.1460-2075.1995.tb00126.x. PMC 394539. PMID 7556090.",
+                            "<info> Clarke AS, Lotz MM, Mercurio AM (Apr 1994). \"A novel structural variant of the human beta 4 integrin cDNA\". Cell Adhesion and Communication. 2 (1): 1–6. doi:10.3109/15419069409014197. PMID 7982032.",
+                            "<info> Weeks BS, Desai K, Loewenstein PM, Klotman ME, Klotman PE, Green M, Kleinman HK (Mar 1993). \"Identification of a novel cell attachment domain in the HIV-1 Tat protein and its 90-kDa cell surface binding protein\". The Journal of Biological Chemistry. 268 (7): 5279–84. doi:10.1016/S0021-9258(18)53530-4. PMID 8444901.",
+                            "<info> Iacovacci S, Gagnoux-Palacios L, Zambruno G, Meneguzzi G, D'Alessio M (Jun 1997). \"Genomic organization of the human integrin beta4 gene\". Mammalian Genome. 8 (6): 448–50. doi:10.1007/s003359900467. PMID 9166594. S2CID 41037975.",
+                            "<info> Mainiero F, Murgia C, Wary KK, Curatola AM, Pepe A, Blumemberg M, Westwick JK, Der CJ, Giancotti FG (May 1997). \"The coupling of alpha6beta4 integrin to Ras-MAP kinase pathways mediated by Shc controls keratinocyte proliferation\". The EMBO Journal. 16 (9): 2365–75. doi:10.1093/emboj/16.9.2365. PMC 1169837. PMID 9171350.",
+                            "<info> Pulkkinen L, Kurtz K, Xu Y, Bruckner-Tuderman L, Uitto J (Jun 1997). \"Genomic organization of the integrin beta 4 gene (ITGB4): a homozygous splice-site mutation in a patient with junctional epidermolysis bullosa associated with pyloric atresia\". Laboratory Investigation. 76 (6): 823–33. PMID 9194858.",
+                            "<info> van Leusden MR, Kuikman I, Sonnenberg A (Jun 1997). \"The unique cytoplasmic domain of the human integrin variant beta4E is produced by partial retention of intronic sequences\". Biochemical and Biophysical Research Communications. 235 (3): 826–30. Bibcode:1997BBRC..235..826V. doi:10.1006/bbrc.1997.6892. PMID 9207246.",
+                            "<info> von Bredow DC, Nagle RB, Bowden GT, Cress AE (Oct 1997). \"Cleavage of beta 4 integrin by matrilysin\". Experimental Cell Research. 236 (1): 341–5. doi:10.1006/excr.1997.3711. PMID 9344615.",
+                            "<info> Biffo S, Sanvito F, Costa S, Preve L, Pignatelli R, Spinardi L, Marchisio PC (Nov 1997). \"Isolation of a novel beta4 integrin-binding protein (p27(BBP)) highly expressed in epithelial cells\". The Journal of Biological Chemistry. 272 (48): 30314–21. doi:10.1074/jbc.272.48.30314. PMID 9374518.",
+                            "<info> Pulkkinen L, Kim DU, Uitto J (Jan 1998). \"Epidermolysis bullosa with pyloric atresia: novel mutations in the beta4 integrin gene (ITGB4)\". The American Journal of Pathology. 152 (1): 157–66. PMC 1858138. PMID 9422533.",
+                            "<info> Hughes AE, Bradley DT, Campbell M, Lechner J, Dash DP, Simpson DA, Willoughby CE (Nov 2011). \"Mutation altering the miR-184 seed region causes familial keratoconus with cataract\". American Journal of Human Genetics. 89 (5): 628–33. doi:10.1016/j.ajhg.2011.09.014. PMC 3213395. PMID 21996275."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> GeneReviews/NCBI/NIH/UW entry on Epidermolysis Bullosa with Pyloric Atresia",
+                            "<info> ITGB4+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> ITGB4 Info with links in the Cell Migration Gateway Archived 2014-12-11 at the Wayback Machine",
+                            "This article incorporates text from the United States National Library of Medicine, which is in the public domain."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

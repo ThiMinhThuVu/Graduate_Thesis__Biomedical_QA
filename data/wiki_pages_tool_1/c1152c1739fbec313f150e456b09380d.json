@@ -1,0 +1,121 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/q_(number_format)": {
+                "title": "Q (number format)",
+                "url": "https://en.wikipedia.org/wiki/q_(number_format)",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The Q notation is a way to specify the parameters of a binary fixed point number format. Specifically, how many bits are allocated for the integer portion, how many for the fractional portion, and whether there is a sign-bit.",
+                    "For example, in Q notation, Q7.8 means that the signed fixed point numbers in this format have 7 bits for the integer part and 8 bits for the fraction part. One extra bit is implicitly added for signed numbers.[1] Therefore, Q7.8 is a 16-bit word, with the most significant bit representing the two's complement sign bit.",
+                    "There is an ARM variation of the Q notation that explicitly adds the sign bit to the integer part. In ARM Q notation, the above format would be called Q8.8.",
+                    "A number of other notations have been used for the same purpose.",
+                    "",
+                    "=== Definition ===",
+                    "U\n\n⏟\n\n\n\n\n\nu\nn\ns\ni\ng\nn\ne\nd\n\n\n\n\n\n\nQ\n\n\n\n\n\nm\n⏟\n\n\n\n\n\ni\nn\nt\ne\ng\ne\nr\n\n\n\n\n\n\n\n.\n\n\n\n\n\nn\n⏟\n\n\n\n\n\nf\nr\na\nc\nt\ni\no\nn\n\n\n\n\n\n\n{\\displaystyle \\underbrace {\\mathrm {U} } _{\\mathrm {\\scriptscriptstyle unsigned} }\\;\\mathbf {Q} \\;\\underbrace {m} _{\\mathrm {\\scriptscriptstyle integer} }\\;\\;\\mathbf {.} \\;\\underbrace {n} _{\\mathrm {\\scriptscriptstyle fraction} }}",
+                    "The Q notation, as defined by Texas Instruments,[1] consists of the letter Q followed by a pair of numbers m.n, where m is the number of bits used for the integer part of the value, and n is the number of fraction bits.",
+                    "By default, the notation describes signed binary fixed point format, with the unscaled integer being stored  in two's complement format, used in most binary processors. As such, the first bit always gives the sign of the value (1 = negative, 0 = non-negative), and it is not counted in the m parameter.  Thus, the total  number w of bits used is 1 + m + n.",
+                    "For example, the specification Q3.12 describes a signed binary fixed-point number with word-size w = 16 bits in total, comprising the sign bit, three bits for the integer part, and 12 bits that are the fraction. This can be seen as a 16-bit signed (two's complement) integer, that is implicitly multiplied by the scaling factor \n\n\n\n\n2\n\n−\n12\n\n\n\n\n{\\displaystyle 2^{-12}}\n\n.",
+                    "In particular, when n is zero, the numbers are just integers. If m is zero, all bits except the sign bit are fraction bits; then the range of the stored number is from −1.0 (inclusive) to +1.0 (exclusive).",
+                    "The m and the dot may be omitted, in which case they are inferred from the size of the variable or register where the value is stored. Thus, Q12 means a signed integer with any number of bits, that is implicitly multiplied by \n\n\n\n\n2\n\n−\n12\n\n\n\n\n{\\displaystyle 2^{-12}}\n\n.",
+                    "The letter U can be prefixed to the Q to denote an unsigned binary fixed-point format.  For example, UQ1.15 describes values represented as unsigned 16-bit integers with an implicit scaling factor of \n\n\n\n\n2\n\n−\n15\n\n\n\n\n{\\displaystyle 2^{-15}}\n\n, which range from \n\n\n\n0.0\n\n\n{\\displaystyle 0.0}\n\n to \n\n\n\n(\n\n2\n\n16\n\n\n−\n1\n)\n\n/\n\n\n2\n\n15\n\n\n=\n+\n1.999969482421875\n\n\n{\\displaystyle (2^{16}-1)/2^{15}=+1.999969482421875}\n\n.",
+                    "A variant of the Q notation has been in use by ARM in which the m number also counts the sign bit. For example, a 16-bit signed integer which the TI variant denotes as Q15.0, would be Q16.0 in the ARM variant.[2][3] Unsigned numbers are the same across both variants.",
+                    "While technically the sign-bit belongs just as much to the fractional part as the integer part, ARM's notation has the benefit that there are no implicit bits, so the size of the word is always \n\n\n\nm\n+\nn\n \n\n\nbits\n\n\n\n\n{\\displaystyle m+n\\ {\\textrm {bits}}}\n\n.",
+                    "",
+                    "=== Characteristics ===",
+                    "The resolution (difference between successive values) of a Qm.n or UQm.n format is always 2−n.  The range of representable values depends on the notation used:",
+                    "For example, a Q14.1 format number requires 14+1+1 = 16 bits, has resolution 2−1 = 0.5, and the representable values range from −214 = −16384.0 to +214  − 2−1 = +16383.5. In hexadecimal, the negative values range from 0x8000 to 0xFFFF followed by the non-negative ones from 0x0000 to 0x7FFF.",
+                    "",
+                    "=== Math operations ===",
+                    "Q numbers are a ratio of two integers: the numerator is kept in storage, the denominator \n\n\n\nd\n\n\n{\\displaystyle d}\n\n is equal to 2n.",
+                    "Consider the following example:",
+                    "<info> The Q8 denominator equals 28 = 256",
+                    "<info> 384 is stored, 256 is inferred because it is a Q8 number.",
+                    "If the Q number's base is to be maintained (n remains constant) the Q number math operations must keep the denominator \n\n\n\nd\n\n\n{\\displaystyle d}\n\n constant. The following formulas show math operations on the general Q numbers \n\n\n\n\nN\n\n1\n\n\n\n\n{\\displaystyle N_{1}}\n\n and \n\n\n\n\nN\n\n2\n\n\n\n\n{\\displaystyle N_{2}}\n\n. (If we consider the example as mentioned above, \n\n\n\n\nN\n\n1\n\n\n\n\n{\\displaystyle N_{1}}\n\n is 384 and \n\n\n\nd\n\n\n{\\displaystyle d}\n\n is 256.)",
+                    "N\n\n1\n\n\nd\n\n\n+\n\n\n\nN\n\n2\n\n\nd\n\n\n\n\n\n=\n\n\n\n\nN\n\n1\n\n\n+\n\nN\n\n2\n\n\n\nd\n\n\n\n\n\n\n\n\n\nN\n\n1\n\n\nd\n\n\n−\n\n\n\nN\n\n2\n\n\nd\n\n\n\n\n\n=\n\n\n\n\nN\n\n1\n\n\n−\n\nN\n\n2\n\n\n\nd\n\n\n\n\n\n\n\n(\n\n\n\n\nN\n\n1\n\n\nd\n\n\n×\n\n\n\nN\n\n2\n\n\nd\n\n\n\n)\n\n×\nd\n\n\n\n=\n\n\n\n\nN\n\n1\n\n\n×\n\nN\n\n2\n\n\n\nd\n\n\n\n\n\n\n\n(\n\n\n\n\nN\n\n1\n\n\nd\n\n\n\n/\n\n\n\n\nN\n\n2\n\n\nd\n\n\n\n)\n\n\n/\n\nd\n\n\n\n=\n\n\n\n\nN\n\n1\n\n\n\n/\n\n\nN\n\n2\n\n\n\nd\n\n\n\n\n\n\n\n\n{\\displaystyle {\\begin{aligned}{\\frac {N_{1}}{d}}+{\\frac {N_{2}}{d}}&={\\frac {N_{1}+N_{2}}{d}}\\\\{\\frac {N_{1}}{d}}-{\\frac {N_{2}}{d}}&={\\frac {N_{1}-N_{2}}{d}}\\\\\\left({\\frac {N_{1}}{d}}\\times {\\frac {N_{2}}{d}}\\right)\\times d&={\\frac {N_{1}\\times N_{2}}{d}}\\\\\\left({\\frac {N_{1}}{d}}/{\\frac {N_{2}}{d}}\\right)/d&={\\frac {N_{1}/N_{2}}{d}}\\end{aligned}}}",
+                    "Because the denominator is a power of two, the multiplication can be implemented as an arithmetic shift to the left and the division as an arithmetic shift to the right; on many processors shifts are faster than multiplication and division.",
+                    "To maintain accuracy, the intermediate multiplication and division results must be double precision and care must be taken in rounding the intermediate result before converting back to the desired Q number.",
+                    "Using C the operations are (note that here, Q refers to the fractional part's number of bits) :",
+                    "Unlike floating point ±Inf, saturated results are not sticky and will unsaturate on adding a negative value to a positive saturated value (0x7FFF) and vice versa in that implementation shown. In assembly language, the Signed Overflow flag can be used to avoid the typecasts needed for that C implementation.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b \"Appendix A.2\". TMS320C64x DSP Library Programmer's Reference (PDF). Dallas, Texas, USA: Texas Instruments Incorporated. October 2003. SPRU565. Archived (PDF) from the original on 2022-12-22. Retrieved 2022-12-22. (150 pages)",
+                    "<info> ^ \"ARM Developer Suite AXD and armsd Debuggers Guide\". 1.2. ARM Limited. 2001 [1999]. Chapter 4.7.9. AXD > AXD Facilities > Data formatting > Q-format. ARM DUI 0066D. Archived from the original on 2017-11-04.",
+                    "<info> ^ \"Chapter 4.7.9. AXD > AXD Facilities > Data formatting > Q-format\". RealView Development Suite AXD and armsd Debuggers Guide (PDF). 3.0. ARM Limited. 2006 [1999]. pp. 4–24. ARM DUI 0066G. Archived (PDF) from the original on 2017-11-04.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Oberstar, Erick L. (2007-08-30) [2004]. \"Fixed Point Representation & Fractional Math\" (PDF). 1.2. Oberstar Consulting. Archived from the original (PDF) on 2017-11-04. Retrieved 2017-11-04. (Note: the accuracy of the article is in dispute; see discussion.)",
+                    "",
+                    "=== External links ===",
+                    "<info> \"Q-Number-Format Java Implementation\". GitHub. Archived from the original on 2017-11-04. Retrieved 2017-11-04.",
+                    "<info> \"Q-format Converter\". Archived from the original on 2021-06-25. Retrieved 2021-06-25.",
+                    "<info> \"Q Library (C implementation)\". GitHub. Retrieved 2024-03-05.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The Q notation is a way to specify the parameters of a binary fixed point number format. Specifically, how many bits are allocated for the integer portion, how many for the fractional portion, and whether there is a sign-bit.",
+                            "For example, in Q notation, Q7.8 means that the signed fixed point numbers in this format have 7 bits for the integer part and 8 bits for the fraction part. One extra bit is implicitly added for signed numbers.[1] Therefore, Q7.8 is a 16-bit word, with the most significant bit representing the two's complement sign bit.",
+                            "There is an ARM variation of the Q notation that explicitly adds the sign bit to the integer part. In ARM Q notation, the above format would be called Q8.8.",
+                            "A number of other notations have been used for the same purpose."
+                        ]
+                    },
+                    "Definition": {
+                        "content": [
+                            "U\n\n⏟\n\n\n\n\n\nu\nn\ns\ni\ng\nn\ne\nd\n\n\n\n\n\n\nQ\n\n\n\n\n\nm\n⏟\n\n\n\n\n\ni\nn\nt\ne\ng\ne\nr\n\n\n\n\n\n\n\n.\n\n\n\n\n\nn\n⏟\n\n\n\n\n\nf\nr\na\nc\nt\ni\no\nn\n\n\n\n\n\n\n{\\displaystyle \\underbrace {\\mathrm {U} } _{\\mathrm {\\scriptscriptstyle unsigned} }\\;\\mathbf {Q} \\;\\underbrace {m} _{\\mathrm {\\scriptscriptstyle integer} }\\;\\;\\mathbf {.} \\;\\underbrace {n} _{\\mathrm {\\scriptscriptstyle fraction} }}",
+                            "The Q notation, as defined by Texas Instruments,[1] consists of the letter Q followed by a pair of numbers m.n, where m is the number of bits used for the integer part of the value, and n is the number of fraction bits.",
+                            "By default, the notation describes signed binary fixed point format, with the unscaled integer being stored  in two's complement format, used in most binary processors. As such, the first bit always gives the sign of the value (1 = negative, 0 = non-negative), and it is not counted in the m parameter.  Thus, the total  number w of bits used is 1 + m + n.",
+                            "For example, the specification Q3.12 describes a signed binary fixed-point number with word-size w = 16 bits in total, comprising the sign bit, three bits for the integer part, and 12 bits that are the fraction. This can be seen as a 16-bit signed (two's complement) integer, that is implicitly multiplied by the scaling factor \n\n\n\n\n2\n\n−\n12\n\n\n\n\n{\\displaystyle 2^{-12}}\n\n.",
+                            "In particular, when n is zero, the numbers are just integers. If m is zero, all bits except the sign bit are fraction bits; then the range of the stored number is from −1.0 (inclusive) to +1.0 (exclusive).",
+                            "The m and the dot may be omitted, in which case they are inferred from the size of the variable or register where the value is stored. Thus, Q12 means a signed integer with any number of bits, that is implicitly multiplied by \n\n\n\n\n2\n\n−\n12\n\n\n\n\n{\\displaystyle 2^{-12}}\n\n.",
+                            "The letter U can be prefixed to the Q to denote an unsigned binary fixed-point format.  For example, UQ1.15 describes values represented as unsigned 16-bit integers with an implicit scaling factor of \n\n\n\n\n2\n\n−\n15\n\n\n\n\n{\\displaystyle 2^{-15}}\n\n, which range from \n\n\n\n0.0\n\n\n{\\displaystyle 0.0}\n\n to \n\n\n\n(\n\n2\n\n16\n\n\n−\n1\n)\n\n/\n\n\n2\n\n15\n\n\n=\n+\n1.999969482421875\n\n\n{\\displaystyle (2^{16}-1)/2^{15}=+1.999969482421875}\n\n.",
+                            "A variant of the Q notation has been in use by ARM in which the m number also counts the sign bit. For example, a 16-bit signed integer which the TI variant denotes as Q15.0, would be Q16.0 in the ARM variant.[2][3] Unsigned numbers are the same across both variants.",
+                            "While technically the sign-bit belongs just as much to the fractional part as the integer part, ARM's notation has the benefit that there are no implicit bits, so the size of the word is always \n\n\n\nm\n+\nn\n \n\n\nbits\n\n\n\n\n{\\displaystyle m+n\\ {\\textrm {bits}}}\n\n."
+                        ]
+                    },
+                    "Characteristics": {
+                        "content": [
+                            "The resolution (difference between successive values) of a Qm.n or UQm.n format is always 2−n.  The range of representable values depends on the notation used:",
+                            "For example, a Q14.1 format number requires 14+1+1 = 16 bits, has resolution 2−1 = 0.5, and the representable values range from −214 = −16384.0 to +214  − 2−1 = +16383.5. In hexadecimal, the negative values range from 0x8000 to 0xFFFF followed by the non-negative ones from 0x0000 to 0x7FFF."
+                        ]
+                    },
+                    "Math operations": {
+                        "content": [
+                            "Q numbers are a ratio of two integers: the numerator is kept in storage, the denominator \n\n\n\nd\n\n\n{\\displaystyle d}\n\n is equal to 2n.",
+                            "Consider the following example:",
+                            "<info> The Q8 denominator equals 28 = 256",
+                            "<info> 384 is stored, 256 is inferred because it is a Q8 number.",
+                            "If the Q number's base is to be maintained (n remains constant) the Q number math operations must keep the denominator \n\n\n\nd\n\n\n{\\displaystyle d}\n\n constant. The following formulas show math operations on the general Q numbers \n\n\n\n\nN\n\n1\n\n\n\n\n{\\displaystyle N_{1}}\n\n and \n\n\n\n\nN\n\n2\n\n\n\n\n{\\displaystyle N_{2}}\n\n. (If we consider the example as mentioned above, \n\n\n\n\nN\n\n1\n\n\n\n\n{\\displaystyle N_{1}}\n\n is 384 and \n\n\n\nd\n\n\n{\\displaystyle d}\n\n is 256.)",
+                            "N\n\n1\n\n\nd\n\n\n+\n\n\n\nN\n\n2\n\n\nd\n\n\n\n\n\n=\n\n\n\n\nN\n\n1\n\n\n+\n\nN\n\n2\n\n\n\nd\n\n\n\n\n\n\n\n\n\nN\n\n1\n\n\nd\n\n\n−\n\n\n\nN\n\n2\n\n\nd\n\n\n\n\n\n=\n\n\n\n\nN\n\n1\n\n\n−\n\nN\n\n2\n\n\n\nd\n\n\n\n\n\n\n\n(\n\n\n\n\nN\n\n1\n\n\nd\n\n\n×\n\n\n\nN\n\n2\n\n\nd\n\n\n\n)\n\n×\nd\n\n\n\n=\n\n\n\n\nN\n\n1\n\n\n×\n\nN\n\n2\n\n\n\nd\n\n\n\n\n\n\n\n(\n\n\n\n\nN\n\n1\n\n\nd\n\n\n\n/\n\n\n\n\nN\n\n2\n\n\nd\n\n\n\n)\n\n\n/\n\nd\n\n\n\n=\n\n\n\n\nN\n\n1\n\n\n\n/\n\n\nN\n\n2\n\n\n\nd\n\n\n\n\n\n\n\n\n{\\displaystyle {\\begin{aligned}{\\frac {N_{1}}{d}}+{\\frac {N_{2}}{d}}&={\\frac {N_{1}+N_{2}}{d}}\\\\{\\frac {N_{1}}{d}}-{\\frac {N_{2}}{d}}&={\\frac {N_{1}-N_{2}}{d}}\\\\\\left({\\frac {N_{1}}{d}}\\times {\\frac {N_{2}}{d}}\\right)\\times d&={\\frac {N_{1}\\times N_{2}}{d}}\\\\\\left({\\frac {N_{1}}{d}}/{\\frac {N_{2}}{d}}\\right)/d&={\\frac {N_{1}/N_{2}}{d}}\\end{aligned}}}",
+                            "Because the denominator is a power of two, the multiplication can be implemented as an arithmetic shift to the left and the division as an arithmetic shift to the right; on many processors shifts are faster than multiplication and division.",
+                            "To maintain accuracy, the intermediate multiplication and division results must be double precision and care must be taken in rounding the intermediate result before converting back to the desired Q number.",
+                            "Using C the operations are (note that here, Q refers to the fractional part's number of bits) :",
+                            "Unlike floating point ±Inf, saturated results are not sticky and will unsaturate on adding a negative value to a positive saturated value (0x7FFF) and vice versa in that implementation shown. In assembly language, the Signed Overflow flag can be used to avoid the typecasts needed for that C implementation."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b \"Appendix A.2\". TMS320C64x DSP Library Programmer's Reference (PDF). Dallas, Texas, USA: Texas Instruments Incorporated. October 2003. SPRU565. Archived (PDF) from the original on 2022-12-22. Retrieved 2022-12-22. (150 pages)",
+                            "<info> ^ \"ARM Developer Suite AXD and armsd Debuggers Guide\". 1.2. ARM Limited. 2001 [1999]. Chapter 4.7.9. AXD > AXD Facilities > Data formatting > Q-format. ARM DUI 0066D. Archived from the original on 2017-11-04.",
+                            "<info> ^ \"Chapter 4.7.9. AXD > AXD Facilities > Data formatting > Q-format\". RealView Development Suite AXD and armsd Debuggers Guide (PDF). 3.0. ARM Limited. 2006 [1999]. pp. 4–24. ARM DUI 0066G. Archived (PDF) from the original on 2017-11-04."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Oberstar, Erick L. (2007-08-30) [2004]. \"Fixed Point Representation & Fractional Math\" (PDF). 1.2. Oberstar Consulting. Archived from the original (PDF) on 2017-11-04. Retrieved 2017-11-04. (Note: the accuracy of the article is in dispute; see discussion.)"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> \"Q-Number-Format Java Implementation\". GitHub. Archived from the original on 2017-11-04. Retrieved 2017-11-04.",
+                            "<info> \"Q-format Converter\". Archived from the original on 2021-06-25. Retrieved 2021-06-25.",
+                            "<info> \"Q Library (C implementation)\". GitHub. Retrieved 2024-03-05."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

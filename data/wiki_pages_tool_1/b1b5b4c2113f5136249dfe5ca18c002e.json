@@ -1,0 +1,93 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/antimicrobial_spectrum": {
+                "title": "Antimicrobial spectrum",
+                "url": "https://en.wikipedia.org/wiki/antimicrobial_spectrum",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "The antimicrobial spectrum of an antibiotic means the range of microorganisms it can kill or inhibit. Antibiotics can be divided into broad-spectrum antibiotics, extended-spectrum antibiotics and narrow-spectrum antibiotics based on their spectrum of activity. Detailedly, broad-spectrum antibiotics can kill or inhibit a wide range of microorganisms; extended-spectrum antibiotic can kill or inhibit Gram positive bacteria and some Gram negative bacteria; narrow-spectrum antibiotic can only kill or inhibit limited species of bacteria.[1][2][3]",
+                    "Currently no antibiotic's spectrum can completely cover all types of microorganisms.[4]",
+                    "",
+                    "=== Determination ===",
+                    "The antimicrobial spectrum of an antibiotic can be determined by testing its antimicrobial activity against a wide range of microbes in vitro . Nonetheless, the range of microorganisms which an antibiotic can kill or inhibit in vivo may not always be the same as the antimicrobial spectrum based on data collected in vitro.[2][5]",
+                    "",
+                    "=== Significance ===",
+                    "Narrow-spectrum antibiotics have low propensity to induce bacterial resistance and are less likely to disrupt the microbiome (normal microflora).[3]  On the other hand, indiscriminate use of broad-spectrum antibiotics may not only induce the development of bacterial resistance and promote the emergency of multidrug-resistant organisms, but also cause off-target effects due to dysbiosis.[3][6] They may also have side effects, such as diarrhea or rash.[7] Generally, a broad antibiotic has more clinical indications, and therefore are more widely used.[2][8]  The Healthcare Infection Control Practices Advisory Committee (HICPAC) recommends the use of narrow-spectrum antibiotics whenever possible.[9]",
+                    "",
+                    "=== Examples ===",
+                    "<info> Broad-spectrum antibiotic:  Ciprofloxacin, Doxycycline, Minocycline, Tetracycline,[1] Imipenem, Azithromycin",
+                    "<info> Narrow-spectrum antibiotic: Sarecycline,[10] Vancomycin, Isoniazid[1]",
+                    "",
+                    "=== See also ===",
+                    "<info> Methicillin-resistant Staphylococcus aureus (MRSA)",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d Michelle A. Clark; et al. (2009). Pharmacology (5th ed.). USA: Lippincott Williams & Wilkins. pp. 375–376. ISBN 978-1-4511-4320-1.",
+                    "<info> ^ a b c David Warrell; Timothy M. Cox; John Firth; Estée Török (11 October 2012). Oxford Textbook of Medicine: Infection. OUP Oxford. p. 39. ISBN 978-0-19-965213-6.",
+                    "<info> ^ a b c Melander, Roberta J.; Zurawski, Daniel V.; Melander, Christian (2018). \"Narrow-Spectrum Antibacterial Agents\". MedChemComm. 9 (1): 12–21. doi:10.1039/C7MD00528H. ISSN 2040-2503. PMC 5839511. PMID 29527285.",
+                    "<info> ^ Erich Lück; Martin Jager (1997). Antimicrobial Food Additives: Characteristics, Uses, Effects. Springer Science & Business Media. p. 39. ISBN 978-3-540-61138-7.",
+                    "<info> ^ Wiley W. Souba; Douglas W. Wilmore (23 February 2001). Surgical Research. Elsevier. p. 909. ISBN 978-0-08-054214-0.",
+                    "<info> ^ Francino, M. P. (2015). \"Antibiotics and the Human Gut Microbiome: Dysbioses and Accumulation of Resistances\". Frontiers in Microbiology. 6: 1543. doi:10.3389/fmicb.2015.01543. ISSN 1664-302X. PMC 4709861. PMID 26793178.",
+                    "<info> ^ \"Comparing Broad- and Narrow-Spectrum Antibiotics for Children with Ear, Sinus, and Throat Infections\". www.pcori.org. 2014-10-08. Retrieved 2020-09-05.",
+                    "<info> ^ Andrew Hitchings; Dagan Lonsdale; Daniel Burrage; Emma Baker (30 March 2014). The Top 100 Drugs e-book: Clinical Pharmacology and Practical Prescribing. Elsevier Health Sciences. p. 94. ISBN 978-0-7020-5515-7.",
+                    "<info> ^ \"Antibiotic Stewardship Statement | HICPAC | CDC\". www.cdc.gov. 2019-04-15. Archived from the original on 2019-07-17. Retrieved 2020-09-05.",
+                    "<info> ^ Zhanel, George; Critchley, Ian; Lin, Lynn-Yao; Alvandi, Nancy (January 2019). \"Microbiological Profile of Sarecycline, a Novel Targeted Spectrum Tetracycline for the Treatment of Acne Vulgaris\". Antimicrobial Agents and Chemotherapy. 63 (1). doi:10.1128/AAC.01297-18. ISSN 1098-6596. PMC 6325184. PMID 30397052.",
+                    "",
+                    "=== External links ===",
+                    "<info> Healthcare Infection Control Practices Advisory Committee (HICPAC)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "The antimicrobial spectrum of an antibiotic means the range of microorganisms it can kill or inhibit. Antibiotics can be divided into broad-spectrum antibiotics, extended-spectrum antibiotics and narrow-spectrum antibiotics based on their spectrum of activity. Detailedly, broad-spectrum antibiotics can kill or inhibit a wide range of microorganisms; extended-spectrum antibiotic can kill or inhibit Gram positive bacteria and some Gram negative bacteria; narrow-spectrum antibiotic can only kill or inhibit limited species of bacteria.[1][2][3]",
+                            "Currently no antibiotic's spectrum can completely cover all types of microorganisms.[4]"
+                        ]
+                    },
+                    "Determination": {
+                        "content": [
+                            "The antimicrobial spectrum of an antibiotic can be determined by testing its antimicrobial activity against a wide range of microbes in vitro . Nonetheless, the range of microorganisms which an antibiotic can kill or inhibit in vivo may not always be the same as the antimicrobial spectrum based on data collected in vitro.[2][5]"
+                        ]
+                    },
+                    "Significance": {
+                        "content": [
+                            "Narrow-spectrum antibiotics have low propensity to induce bacterial resistance and are less likely to disrupt the microbiome (normal microflora).[3]  On the other hand, indiscriminate use of broad-spectrum antibiotics may not only induce the development of bacterial resistance and promote the emergency of multidrug-resistant organisms, but also cause off-target effects due to dysbiosis.[3][6] They may also have side effects, such as diarrhea or rash.[7] Generally, a broad antibiotic has more clinical indications, and therefore are more widely used.[2][8]  The Healthcare Infection Control Practices Advisory Committee (HICPAC) recommends the use of narrow-spectrum antibiotics whenever possible.[9]"
+                        ]
+                    },
+                    "Examples": {
+                        "content": [
+                            "<info> Broad-spectrum antibiotic:  Ciprofloxacin, Doxycycline, Minocycline, Tetracycline,[1] Imipenem, Azithromycin",
+                            "<info> Narrow-spectrum antibiotic: Sarecycline,[10] Vancomycin, Isoniazid[1]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Methicillin-resistant Staphylococcus aureus (MRSA)"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d Michelle A. Clark; et al. (2009). Pharmacology (5th ed.). USA: Lippincott Williams & Wilkins. pp. 375–376. ISBN 978-1-4511-4320-1.",
+                            "<info> ^ a b c David Warrell; Timothy M. Cox; John Firth; Estée Török (11 October 2012). Oxford Textbook of Medicine: Infection. OUP Oxford. p. 39. ISBN 978-0-19-965213-6.",
+                            "<info> ^ a b c Melander, Roberta J.; Zurawski, Daniel V.; Melander, Christian (2018). \"Narrow-Spectrum Antibacterial Agents\". MedChemComm. 9 (1): 12–21. doi:10.1039/C7MD00528H. ISSN 2040-2503. PMC 5839511. PMID 29527285.",
+                            "<info> ^ Erich Lück; Martin Jager (1997). Antimicrobial Food Additives: Characteristics, Uses, Effects. Springer Science & Business Media. p. 39. ISBN 978-3-540-61138-7.",
+                            "<info> ^ Wiley W. Souba; Douglas W. Wilmore (23 February 2001). Surgical Research. Elsevier. p. 909. ISBN 978-0-08-054214-0.",
+                            "<info> ^ Francino, M. P. (2015). \"Antibiotics and the Human Gut Microbiome: Dysbioses and Accumulation of Resistances\". Frontiers in Microbiology. 6: 1543. doi:10.3389/fmicb.2015.01543. ISSN 1664-302X. PMC 4709861. PMID 26793178.",
+                            "<info> ^ \"Comparing Broad- and Narrow-Spectrum Antibiotics for Children with Ear, Sinus, and Throat Infections\". www.pcori.org. 2014-10-08. Retrieved 2020-09-05.",
+                            "<info> ^ Andrew Hitchings; Dagan Lonsdale; Daniel Burrage; Emma Baker (30 March 2014). The Top 100 Drugs e-book: Clinical Pharmacology and Practical Prescribing. Elsevier Health Sciences. p. 94. ISBN 978-0-7020-5515-7.",
+                            "<info> ^ \"Antibiotic Stewardship Statement | HICPAC | CDC\". www.cdc.gov. 2019-04-15. Archived from the original on 2019-07-17. Retrieved 2020-09-05.",
+                            "<info> ^ Zhanel, George; Critchley, Ian; Lin, Lynn-Yao; Alvandi, Nancy (January 2019). \"Microbiological Profile of Sarecycline, a Novel Targeted Spectrum Tetracycline for the Treatment of Acne Vulgaris\". Antimicrobial Agents and Chemotherapy. 63 (1). doi:10.1128/AAC.01297-18. ISSN 1098-6596. PMC 6325184. PMID 30397052."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Healthcare Infection Control Practices Advisory Committee (HICPAC)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

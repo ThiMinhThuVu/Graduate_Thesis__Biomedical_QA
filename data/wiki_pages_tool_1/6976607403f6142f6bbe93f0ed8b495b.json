@@ -1,0 +1,45 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/lymphedema_praecox": {
+                "title": "Lymphedema praecox",
+                "url": "https://en.wikipedia.org/wiki/lymphedema_praecox",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Lymphedema praecox[2] is a condition characterized by swelling of the soft tissues in which an excessive amount of lymph has accumulated, and generally develops in females between the ages of nine and twenty-five. This is the most common form of primary lymphedema, accounting for about 80% of the patients.[3]: 848 [4]",
+                    "",
+                    "=== See also ===",
+                    "<info> List of cutaneous conditions",
+                    "",
+                    "=== References ===",
+                    "<info> ^ \"Hereditary lymphedema type II | Genetic and Rare Diseases Information Center (GARD) – an NCATS Program\". rarediseases.info.nih.gov. Archived from the original on April 21, 2019. Retrieved 21 April 2019.",
+                    "<info> ^ Sabiston 18 edition",
+                    "<info> ^ James, William D.; Berger, Timothy G.; et al. (2006). Andrews' Diseases of the Skin: clinical Dermatology. Saunders Elsevier. ISBN 978-0-7216-2921-6.",
+                    "<info> ^ Rapini, Ronald P.; Bolognia, Jean L.; Jorizzo, Joseph L. (2007). Dermatology: 2-Volume Set. St. Louis: Mosby. ISBN 978-1-4160-2999-1.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Lymphedema praecox[2] is a condition characterized by swelling of the soft tissues in which an excessive amount of lymph has accumulated, and generally develops in females between the ages of nine and twenty-five. This is the most common form of primary lymphedema, accounting for about 80% of the patients.[3]: 848 [4]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of cutaneous conditions"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ \"Hereditary lymphedema type II | Genetic and Rare Diseases Information Center (GARD) – an NCATS Program\". rarediseases.info.nih.gov. Archived from the original on April 21, 2019. Retrieved 21 April 2019.",
+                            "<info> ^ Sabiston 18 edition",
+                            "<info> ^ James, William D.; Berger, Timothy G.; et al. (2006). Andrews' Diseases of the Skin: clinical Dermatology. Saunders Elsevier. ISBN 978-0-7216-2921-6.",
+                            "<info> ^ Rapini, Ronald P.; Bolognia, Jean L.; Jorizzo, Joseph L. (2007). Dermatology: 2-Volume Set. St. Louis: Mosby. ISBN 978-1-4160-2999-1."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

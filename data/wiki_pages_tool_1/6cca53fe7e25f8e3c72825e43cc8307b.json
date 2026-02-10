@@ -1,0 +1,43 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/list_of_neurologists_and_neurosurgeons": {
+                "title": "List of neurologists and neurosurgeons",
+                "url": "https://en.wikipedia.org/wiki/list_of_neurologists_and_neurosurgeons",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "This is a list of neurologists and neurosurgeons, with their year of birth and death and nationality. This list compiles the names of neurologists and neurosurgeons with a corresponding Wikipedia biographical article, and is not necessarily a reflection of their relative importance in the field. Many neurologists and neurosurgeons are considered to be neuroscientists as well and some neurologists are also in the list of psychiatrists.",
+                    "",
+                    "=== See also ===",
+                    "<info> History of neurology and neurosurgery",
+                    "<info> List of women neuroscientists",
+                    "",
+                    "=== Bibliography ===",
+                    "<info> Webb Haymaker and Francis Schiller: The Founders of Neurology: One Hundred and Forty-Six Biographical Sketches. Springfield, Ill., Charles Thomas, 1970.",
+                    "<info> Kurt Kolle (edit.): Grosse Nervenärzte, 1-3 Vol., Stuttgart, Georg Thieme, 1963-1970.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "This is a list of neurologists and neurosurgeons, with their year of birth and death and nationality. This list compiles the names of neurologists and neurosurgeons with a corresponding Wikipedia biographical article, and is not necessarily a reflection of their relative importance in the field. Many neurologists and neurosurgeons are considered to be neuroscientists as well and some neurologists are also in the list of psychiatrists."
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> History of neurology and neurosurgery",
+                            "<info> List of women neuroscientists"
+                        ]
+                    },
+                    "Bibliography": {
+                        "content": [
+                            "<info> Webb Haymaker and Francis Schiller: The Founders of Neurology: One Hundred and Forty-Six Biographical Sketches. Springfield, Ill., Charles Thomas, 1970.",
+                            "<info> Kurt Kolle (edit.): Grosse Nervenärzte, 1-3 Vol., Stuttgart, Georg Thieme, 1963-1970."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

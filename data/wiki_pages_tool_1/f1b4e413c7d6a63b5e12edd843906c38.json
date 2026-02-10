@@ -1,0 +1,211 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/factor_ix": {
+                "title": "Factor IX",
+                "url": "https://en.wikipedia.org/wiki/factor_ix",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Factor IX (EC 3.4.21.22) is one of the serine proteases involved in coagulation; it belongs to peptidase family S1. Deficiency of this protein causes haemophilia B.",
+                    "It was discovered in 1952 after a young boy named Stephen Christmas was found to be lacking this exact factor, leading to haemophilia.[5] Coagulation factor IX is on the World Health Organization's List of Essential Medicines.[6]",
+                    "",
+                    "=== Physiology ===",
+                    "Factor IX is produced as a zymogen, an inactive precursor.  It is processed to remove the signal peptide, glycosylated and then cleaved by factor XIa (of the contact pathway) or factor VIIa (of the tissue factor pathway) to produce a two-chain form, where the chains are linked by a disulfide bridge.[7][8]  When activated into factor IXa, in the presence of Ca2+, membrane phospholipids, and a Factor VIII cofactor, it hydrolyses one arginine-isoleucine bond in factor X to form factor Xa.",
+                    "Factor IX is inhibited by antithrombin.[7]",
+                    "Factor IX expression increases with age in humans and mice. In mouse models, mutations within the promoter region of factor IX have an age-dependent phenotype.[9]",
+                    "",
+                    "=== Domain architecture ===",
+                    "Factors VII, IX, and X all play key roles in blood coagulation and also share a common domain architecture.[10] The factor IX protein is composed of four protein domains: the Gla domain, two tandem copies of the EGF domain and a C-terminal trypsin-like peptidase domain which carries out the catalytic cleavage.",
+                    "The N-terminal EGF domain has been shown to at least in part be responsible for binding tissue factor.[10] Wilkinson et al. conclude that residues 88 to 109 of the second EGF domain mediate binding to platelets and assembly of the factor X activating complex.[11]",
+                    "The structures of all four domains have been solved. A structure of the two EGF domains and the trypsin-like domain was determined for the pig protein.[12] The structure of the Gla domain, which is responsible for Ca(II)-dependent phospholipid binding, was also determined by NMR.[13]",
+                    "Several structures of 'super active' mutants have been solved,[14] which reveal the nature of factor IX activation by other proteins in the clotting cascade.",
+                    "",
+                    "=== Genetics ===",
+                    "Because the gene for factor IX is located on the X chromosome (Xq27.1-q27.2), loss-of-function mutations thereof are X-linked recessive: males experience the disease phenotype much more frequently than females. At least 534 disease-causing mutations in this gene have been discovered.[15] The F9 gene was first cloned in 1982 by Kotoku Kurachi and Earl Davie.[16]",
+                    "Polly, a transgenic cloned Poll Dorset sheep carrying the gene for factor IX, was produced by Dr Ian Wilmut at the Roslin Institute in 1997.[17]",
+                    "",
+                    "=== Role in disease ===",
+                    "Deficiency of factor IX causes the blood clotting disorder haemophilia B.[5] Named after Stephen Christmas (the first documented patient), it is also known as Christmas disease.[22]\nRecombinant",
+                    "<info> nonacog alfa (brand name Benefix)[23]",
+                    "<info> nonacog gamma (brand name Rixubis)[18]",
+                    "<info> albutrepenonacog alfa (brand name Idelvion)[24]",
+                    "<info> eftrenonacog alfa (brand name Alprolix)[25]",
+                    "<info> nonacog beta pegol (brand name Refixia)[26]",
+                    "<info> coagulation factor IX [recombinant] (Benefix)[27]",
+                    "<info> coagulation factor IX [recombinant] (Idelvion)[28]",
+                    "<info> coagulation factor IX (recombinant), Fc fusion protein (Alprolix)[29]",
+                    "<info> coagulation factor IX [recombinant] (Ixinity)[30][31]",
+                    "<info> coagulation factor IX [recombinant] (Rebinyn)[32]",
+                    "<info> coagulation factor IX [recombinant] (Rixubis)[33]",
+                    "<info> coagulation factor IX (human) (Alphanine SD)[34]",
+                    "Some rare mutations of factor IX result in elevated clotting activity, and can result in clotting diseases, such as deep vein thrombosis. This gain of function mutation renders the protein hyperfunctional and is associated with familial early-onset thrombophilia.[35]",
+                    "Factor IX deficiency is treated by injection of purified factor IX produced through cloning in various animal or animal cell vectors. Tranexamic acid may be of value in patients undergoing surgery who have inherited factor IX deficiency in order to reduce the perioperative risk of bleeding.[36]",
+                    "A list of all the mutations in Factor IX is compiled and maintained by EAHAD.[37]",
+                    "Coagulation factor IX is on the World Health Organization's List of Essential Medicines.[6]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000101981 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000031138 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ a b Biggs R, Douglas AS, Macfarlane RG, Dacie JV, Pitney WR (December 1952). \"Christmas disease: a condition previously mistaken for haemophilia\". British Medical Journal. 2 (4799): 1378–82. doi:10.1136/bmj.2.4799.1378. PMC 2022306. PMID 12997790.",
+                    "<info> ^ a b World Health Organization (2025). The selection and use of essential medicines, 2025: WHO Model List of Essential Medicines, 24th list. Geneva: World Health Organization. doi:10.2471/B09474. hdl:10665/382243.",
+                    "<info> ^ a b Di Scipio RG, Kurachi K, Davie EW (June 1978). \"Activation of human factor IX (Christmas factor)\". The Journal of Clinical Investigation. 61 (6): 1528–38. doi:10.1172/JCI109073. PMC 372679. PMID 659613.",
+                    "<info> ^ Taran LD (July 1997). \"Factor IX of the blood coagulation system: a review\". Biochemistry. Biokhimiia. 62 (7): 685–93. PMID 9331959.",
+                    "<info> ^ Boland EJ, Liu YC, Walter CA, Herbert DC, Weaker FJ, Odom MW, et al. (September 1995). \"Age-specific regulation of clotting factor IX gene expression in normal and transgenic mice\". Blood. 86 (6): 2198–205. doi:10.1182/blood.V86.6.2198.bloodjournal8662198. PMID 7662969.",
+                    "<info> ^ a b Zhong D, Bajaj MS, Schmidt AE, Bajaj SP (February 2002). \"The N-terminal epidermal growth factor-like domain in factor IX and factor X represents an important recognition motif for binding to tissue factor\". The Journal of Biological Chemistry. 277 (5): 3622–31. doi:10.1074/jbc.M111202200. PMID 11723140.",
+                    "<info> ^ Wilkinson FH, Ahmad SS, Walsh PN (February 2002). \"The factor IXa second epidermal growth factor (EGF2) domain mediates platelet binding and assembly of the factor X activating complex\". The Journal of Biological Chemistry. 277 (8): 5734–41. doi:10.1074/jbc.M107753200. PMID 11714704.",
+                    "<info> ^ Brandstetter H, Bauer M, Huber R, Lollar P, Bode W (October 1995). \"X-ray structure of clotting factor IXa: active site and module structure related to Xase activity and hemophilia B\". Proceedings of the National Academy of Sciences of the United States of America. 92 (21): 9796–800. Bibcode:1995PNAS...92.9796B. doi:10.1073/pnas.92.21.9796. PMC 40889. PMID 7568220.",
+                    "<info> ^ Freedman SJ, Furie BC, Furie B, Baleja JD (September 1995). \"Structure of the calcium ion-bound gamma-carboxyglutamic acid-rich domain of factor IX\". Biochemistry. 34 (38): 12126–37. doi:10.1021/bi00038a005. PMID 7547952.",
+                    "<info> ^ Zögg T, Brandstetter H (December 2009). \"Structural basis of the cofactor- and substrate-assisted activation of human coagulation factor IXa\". Structure. 17 (12): 1669–78. doi:10.1016/j.str.2009.10.011. PMID 20004170.",
+                    "<info> ^ Šimčíková D, Heneberg P (December 2019). \"Refinement of evolutionary medicine predictions based on clinical evidence for the manifestations of Mendelian diseases\". Scientific Reports. 9 (1) 18577. Bibcode:2019NatSR...918577S. doi:10.1038/s41598-019-54976-4. PMC 6901466. PMID 31819097.",
+                    "<info> ^ Kurachi K, Davie EW (November 1982). \"Isolation and characterization of a cDNA coding for human factor IX\". Proceedings of the National Academy of Sciences of the United States of America. 79 (21): 6461–4. Bibcode:1982PNAS...79.6461K. doi:10.1073/pnas.79.21.6461. PMC 347146. PMID 6959130.",
+                    "<info> ^ Nicholl D. (2002). An Introduction to Genetic Engineering Second Edition. Cambridge University Press. p. 257.",
+                    "<info> ^ a b \"Rixubis EPAR\". European Medicines Agency (EMA). 19 December 2014. Retrieved 1 June 2024.",
+                    "<info> ^ \"Health Canada New Drug Authorizations: 2016 Highlights\". Health Canada. 14 March 2017. Retrieved 7 April 2024.",
+                    "<info> ^ \"Alprolix EPAR\". European Medicines Agency (EMA). 8 June 2007. Retrieved 7 June 2024.",
+                    "<info> ^ \"Refixia (Novo Nordisk Pharmaceuticals Pty Ltd)\". Therapeutic Goods Administration (TGA). 13 September 2024. Retrieved 15 September 2024.",
+                    "<info> ^ Taylor SA, Duffin J, Cameron C, Teitel J, Garvey B, Lillicrap DP (January 1992). \"Characterization of the original Christmas disease mutation (cysteine 206----serine): from clinical recognition to molecular pathogenesis\". Thrombosis and Haemostasis. 67 (1): 63–5. doi:10.1055/s-0038-1648381. PMID 1615485. S2CID 25251813.",
+                    "<info> ^ \"Benefix EPAR\". European Medicines Agency (EMA). 17 September 2018. Archived from the original on 17 June 2020. Retrieved 17 June 2020.",
+                    "<info> ^ \"Idelvion EPAR\". European Medicines Agency (EMA). 17 September 2018. Archived from the original on 17 June 2020. Retrieved 17 June 2020.",
+                    "<info> ^ \"Alprolix EPAR\". European Medicines Agency (EMA). 17 September 2018. Archived from the original on 11 August 2020. Retrieved 17 June 2020.",
+                    "<info> ^ \"Refixia EPAR\". European Medicines Agency (EMA). 17 September 2018. Archived from the original on 18 June 2020. Retrieved 17 June 2020.",
+                    "<info> ^ \"Benefix (coagulation factor ix- recombinant kit\". DailyMed. 1 March 2023. Archived from the original on 29 January 2023. Retrieved 23 March 2024.",
+                    "<info> ^ \"Idelvion- coagulation factor ix recombinant human kit\". DailyMed. 30 June 2023. Archived from the original on 27 January 2023. Retrieved 23 March 2024.",
+                    "<info> ^ \"Alprolix (coagulation factor ix- recombinant, fc fusion protein kit\". DailyMed. 25 May 2023. Archived from the original on 7 February 2023. Retrieved 23 March 2024.",
+                    "<info> ^ \"Ixinity (coagulation factor ix- recombinant kit\". DailyMed. 23 February 2021. Archived from the original on 28 September 2023. Retrieved 23 March 2024.",
+                    "<info> ^ \"Ixinity (coagulation factor ix- recombinant kit\". DailyMed. 9 January 2024. Archived from the original on 3 December 2022. Retrieved 23 March 2024.",
+                    "<info> ^ \"Rebinyn ((coagulation factor ix- recombinant, glycopegylated kit\". DailyMed. 11 August 2022. Archived from the original on 29 November 2022. Retrieved 23 March 2024.",
+                    "<info> ^ \"Rixubis (coagulation factor ix- recombinant kit\". DailyMed. 22 March 2023. Archived from the original on 2 July 2022. Retrieved 23 March 2024.",
+                    "<info> ^ \"Alphanine SD (coagulation factor ix- human kit\". DailyMed. 18 January 2024. Archived from the original on 18 February 2024. Retrieved 23 March 2024.",
+                    "<info> ^ Simioni P, Tormene D, Tognin G, Gavasso S, Bulato C, Iacobelli NP, et al. (October 2009). \"X-linked thrombophilia with a mutant factor IX (factor IX Padua)\". The New England Journal of Medicine. 361 (17): 1671–5. doi:10.1056/NEJMoa0904377. hdl:11577/2438365. PMID 19846852.",
+                    "<info> ^ Rossi M, Jayaram R, Sayeed R (September 2011). \"Do patients with haemophilia undergoing cardiac surgery have good surgical outcomes?\". Interactive Cardiovascular and Thoracic Surgery. 13 (3): 320–31. doi:10.1510/icvts.2011.272401. PMID 21712351.",
+                    "<info> ^ \"Home: EAHAD Factor 9 Gene Variant Database\". Archived from the original on 28 October 2020. Retrieved 23 October 2020.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Davie EW, Fujikawa K (1975). \"Basic mechanisms in blood coagulation\". Annual Review of Biochemistry. 44: 799–829. doi:10.1146/annurev.bi.44.070175.004055. PMID 237463.",
+                    "<info> Sommer SS (July 1992). \"Assessing the underlying pattern of human germline mutations: lessons from the factor IX gene\". FASEB Journal. 6 (10): 2767–74. doi:10.1096/fasebj.6.10.1634040. PMID 1634040. S2CID 15211597.",
+                    "<info> Lenting PJ, van Mourik JA, Mertens K (December 1998). \"The life cycle of coagulation factor VIII in view of its structure and function\". Blood. 92 (11): 3983–96. doi:10.1182/blood.V92.11.3983. PMID 9834200.",
+                    "<info> Lowe GD (December 2001). \"Factor IX and thrombosis\" (PDF). British Journal of Haematology. 115 (3): 507–13. doi:10.1046/j.1365-2141.2001.03186.x. PMID 11736930. S2CID 44650866. Archived (PDF) from the original on 19 June 2021. Retrieved 11 December 2019.",
+                    "<info> O'Connell NM (June 2003). \"Factor XI deficiency--from molecular genetics to clinical management\". Blood Coagulation & Fibrinolysis. 14 (Suppl 1): S59-64. doi:10.1097/00001721-200306001-00014. PMID 14567539.",
+                    "<info> Du X (May 2007). \"Signaling and regulation of the platelet glycoprotein Ib-IX-V complex\". Current Opinion in Hematology. 14 (3): 262–9. doi:10.1097/MOH.0b013e3280dce51a. PMID 17414217. S2CID 39904506.",
+                    "",
+                    "=== External links ===",
+                    "<info> Overview of all the structural information available in the PDB for UniProt: P00740 (Coagulation factor IX) at the PDBe-KB.",
+                    "<info> GeneReviews/NCBI/NIH/UW entry on Hemophilia B",
+                    "<info> The MEROPS online database for peptidases and their inhibitors: S01.214 Archived 2005-05-05 at the Wayback Machine",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Factor IX (EC 3.4.21.22) is one of the serine proteases involved in coagulation; it belongs to peptidase family S1. Deficiency of this protein causes haemophilia B.",
+                            "It was discovered in 1952 after a young boy named Stephen Christmas was found to be lacking this exact factor, leading to haemophilia.[5] Coagulation factor IX is on the World Health Organization's List of Essential Medicines.[6]"
+                        ]
+                    },
+                    "Physiology": {
+                        "content": [
+                            "Factor IX is produced as a zymogen, an inactive precursor.  It is processed to remove the signal peptide, glycosylated and then cleaved by factor XIa (of the contact pathway) or factor VIIa (of the tissue factor pathway) to produce a two-chain form, where the chains are linked by a disulfide bridge.[7][8]  When activated into factor IXa, in the presence of Ca2+, membrane phospholipids, and a Factor VIII cofactor, it hydrolyses one arginine-isoleucine bond in factor X to form factor Xa.",
+                            "Factor IX is inhibited by antithrombin.[7]",
+                            "Factor IX expression increases with age in humans and mice. In mouse models, mutations within the promoter region of factor IX have an age-dependent phenotype.[9]"
+                        ]
+                    },
+                    "Domain architecture": {
+                        "content": [
+                            "Factors VII, IX, and X all play key roles in blood coagulation and also share a common domain architecture.[10] The factor IX protein is composed of four protein domains: the Gla domain, two tandem copies of the EGF domain and a C-terminal trypsin-like peptidase domain which carries out the catalytic cleavage.",
+                            "The N-terminal EGF domain has been shown to at least in part be responsible for binding tissue factor.[10] Wilkinson et al. conclude that residues 88 to 109 of the second EGF domain mediate binding to platelets and assembly of the factor X activating complex.[11]",
+                            "The structures of all four domains have been solved. A structure of the two EGF domains and the trypsin-like domain was determined for the pig protein.[12] The structure of the Gla domain, which is responsible for Ca(II)-dependent phospholipid binding, was also determined by NMR.[13]",
+                            "Several structures of 'super active' mutants have been solved,[14] which reveal the nature of factor IX activation by other proteins in the clotting cascade."
+                        ]
+                    },
+                    "Genetics": {
+                        "content": [
+                            "Because the gene for factor IX is located on the X chromosome (Xq27.1-q27.2), loss-of-function mutations thereof are X-linked recessive: males experience the disease phenotype much more frequently than females. At least 534 disease-causing mutations in this gene have been discovered.[15] The F9 gene was first cloned in 1982 by Kotoku Kurachi and Earl Davie.[16]",
+                            "Polly, a transgenic cloned Poll Dorset sheep carrying the gene for factor IX, was produced by Dr Ian Wilmut at the Roslin Institute in 1997.[17]"
+                        ]
+                    },
+                    "Role in disease": {
+                        "content": [
+                            "Deficiency of factor IX causes the blood clotting disorder haemophilia B.[5] Named after Stephen Christmas (the first documented patient), it is also known as Christmas disease.[22]\nRecombinant",
+                            "<info> nonacog alfa (brand name Benefix)[23]",
+                            "<info> nonacog gamma (brand name Rixubis)[18]",
+                            "<info> albutrepenonacog alfa (brand name Idelvion)[24]",
+                            "<info> eftrenonacog alfa (brand name Alprolix)[25]",
+                            "<info> nonacog beta pegol (brand name Refixia)[26]",
+                            "<info> coagulation factor IX [recombinant] (Benefix)[27]",
+                            "<info> coagulation factor IX [recombinant] (Idelvion)[28]",
+                            "<info> coagulation factor IX (recombinant), Fc fusion protein (Alprolix)[29]",
+                            "<info> coagulation factor IX [recombinant] (Ixinity)[30][31]",
+                            "<info> coagulation factor IX [recombinant] (Rebinyn)[32]",
+                            "<info> coagulation factor IX [recombinant] (Rixubis)[33]",
+                            "<info> coagulation factor IX (human) (Alphanine SD)[34]",
+                            "Some rare mutations of factor IX result in elevated clotting activity, and can result in clotting diseases, such as deep vein thrombosis. This gain of function mutation renders the protein hyperfunctional and is associated with familial early-onset thrombophilia.[35]",
+                            "Factor IX deficiency is treated by injection of purified factor IX produced through cloning in various animal or animal cell vectors. Tranexamic acid may be of value in patients undergoing surgery who have inherited factor IX deficiency in order to reduce the perioperative risk of bleeding.[36]",
+                            "A list of all the mutations in Factor IX is compiled and maintained by EAHAD.[37]",
+                            "Coagulation factor IX is on the World Health Organization's List of Essential Medicines.[6]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000101981 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000031138 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ a b Biggs R, Douglas AS, Macfarlane RG, Dacie JV, Pitney WR (December 1952). \"Christmas disease: a condition previously mistaken for haemophilia\". British Medical Journal. 2 (4799): 1378–82. doi:10.1136/bmj.2.4799.1378. PMC 2022306. PMID 12997790.",
+                            "<info> ^ a b World Health Organization (2025). The selection and use of essential medicines, 2025: WHO Model List of Essential Medicines, 24th list. Geneva: World Health Organization. doi:10.2471/B09474. hdl:10665/382243.",
+                            "<info> ^ a b Di Scipio RG, Kurachi K, Davie EW (June 1978). \"Activation of human factor IX (Christmas factor)\". The Journal of Clinical Investigation. 61 (6): 1528–38. doi:10.1172/JCI109073. PMC 372679. PMID 659613.",
+                            "<info> ^ Taran LD (July 1997). \"Factor IX of the blood coagulation system: a review\". Biochemistry. Biokhimiia. 62 (7): 685–93. PMID 9331959.",
+                            "<info> ^ Boland EJ, Liu YC, Walter CA, Herbert DC, Weaker FJ, Odom MW, et al. (September 1995). \"Age-specific regulation of clotting factor IX gene expression in normal and transgenic mice\". Blood. 86 (6): 2198–205. doi:10.1182/blood.V86.6.2198.bloodjournal8662198. PMID 7662969.",
+                            "<info> ^ a b Zhong D, Bajaj MS, Schmidt AE, Bajaj SP (February 2002). \"The N-terminal epidermal growth factor-like domain in factor IX and factor X represents an important recognition motif for binding to tissue factor\". The Journal of Biological Chemistry. 277 (5): 3622–31. doi:10.1074/jbc.M111202200. PMID 11723140.",
+                            "<info> ^ Wilkinson FH, Ahmad SS, Walsh PN (February 2002). \"The factor IXa second epidermal growth factor (EGF2) domain mediates platelet binding and assembly of the factor X activating complex\". The Journal of Biological Chemistry. 277 (8): 5734–41. doi:10.1074/jbc.M107753200. PMID 11714704.",
+                            "<info> ^ Brandstetter H, Bauer M, Huber R, Lollar P, Bode W (October 1995). \"X-ray structure of clotting factor IXa: active site and module structure related to Xase activity and hemophilia B\". Proceedings of the National Academy of Sciences of the United States of America. 92 (21): 9796–800. Bibcode:1995PNAS...92.9796B. doi:10.1073/pnas.92.21.9796. PMC 40889. PMID 7568220.",
+                            "<info> ^ Freedman SJ, Furie BC, Furie B, Baleja JD (September 1995). \"Structure of the calcium ion-bound gamma-carboxyglutamic acid-rich domain of factor IX\". Biochemistry. 34 (38): 12126–37. doi:10.1021/bi00038a005. PMID 7547952.",
+                            "<info> ^ Zögg T, Brandstetter H (December 2009). \"Structural basis of the cofactor- and substrate-assisted activation of human coagulation factor IXa\". Structure. 17 (12): 1669–78. doi:10.1016/j.str.2009.10.011. PMID 20004170.",
+                            "<info> ^ Šimčíková D, Heneberg P (December 2019). \"Refinement of evolutionary medicine predictions based on clinical evidence for the manifestations of Mendelian diseases\". Scientific Reports. 9 (1) 18577. Bibcode:2019NatSR...918577S. doi:10.1038/s41598-019-54976-4. PMC 6901466. PMID 31819097.",
+                            "<info> ^ Kurachi K, Davie EW (November 1982). \"Isolation and characterization of a cDNA coding for human factor IX\". Proceedings of the National Academy of Sciences of the United States of America. 79 (21): 6461–4. Bibcode:1982PNAS...79.6461K. doi:10.1073/pnas.79.21.6461. PMC 347146. PMID 6959130.",
+                            "<info> ^ Nicholl D. (2002). An Introduction to Genetic Engineering Second Edition. Cambridge University Press. p. 257.",
+                            "<info> ^ a b \"Rixubis EPAR\". European Medicines Agency (EMA). 19 December 2014. Retrieved 1 June 2024.",
+                            "<info> ^ \"Health Canada New Drug Authorizations: 2016 Highlights\". Health Canada. 14 March 2017. Retrieved 7 April 2024.",
+                            "<info> ^ \"Alprolix EPAR\". European Medicines Agency (EMA). 8 June 2007. Retrieved 7 June 2024.",
+                            "<info> ^ \"Refixia (Novo Nordisk Pharmaceuticals Pty Ltd)\". Therapeutic Goods Administration (TGA). 13 September 2024. Retrieved 15 September 2024.",
+                            "<info> ^ Taylor SA, Duffin J, Cameron C, Teitel J, Garvey B, Lillicrap DP (January 1992). \"Characterization of the original Christmas disease mutation (cysteine 206----serine): from clinical recognition to molecular pathogenesis\". Thrombosis and Haemostasis. 67 (1): 63–5. doi:10.1055/s-0038-1648381. PMID 1615485. S2CID 25251813.",
+                            "<info> ^ \"Benefix EPAR\". European Medicines Agency (EMA). 17 September 2018. Archived from the original on 17 June 2020. Retrieved 17 June 2020.",
+                            "<info> ^ \"Idelvion EPAR\". European Medicines Agency (EMA). 17 September 2018. Archived from the original on 17 June 2020. Retrieved 17 June 2020.",
+                            "<info> ^ \"Alprolix EPAR\". European Medicines Agency (EMA). 17 September 2018. Archived from the original on 11 August 2020. Retrieved 17 June 2020.",
+                            "<info> ^ \"Refixia EPAR\". European Medicines Agency (EMA). 17 September 2018. Archived from the original on 18 June 2020. Retrieved 17 June 2020.",
+                            "<info> ^ \"Benefix (coagulation factor ix- recombinant kit\". DailyMed. 1 March 2023. Archived from the original on 29 January 2023. Retrieved 23 March 2024.",
+                            "<info> ^ \"Idelvion- coagulation factor ix recombinant human kit\". DailyMed. 30 June 2023. Archived from the original on 27 January 2023. Retrieved 23 March 2024.",
+                            "<info> ^ \"Alprolix (coagulation factor ix- recombinant, fc fusion protein kit\". DailyMed. 25 May 2023. Archived from the original on 7 February 2023. Retrieved 23 March 2024.",
+                            "<info> ^ \"Ixinity (coagulation factor ix- recombinant kit\". DailyMed. 23 February 2021. Archived from the original on 28 September 2023. Retrieved 23 March 2024.",
+                            "<info> ^ \"Ixinity (coagulation factor ix- recombinant kit\". DailyMed. 9 January 2024. Archived from the original on 3 December 2022. Retrieved 23 March 2024.",
+                            "<info> ^ \"Rebinyn ((coagulation factor ix- recombinant, glycopegylated kit\". DailyMed. 11 August 2022. Archived from the original on 29 November 2022. Retrieved 23 March 2024.",
+                            "<info> ^ \"Rixubis (coagulation factor ix- recombinant kit\". DailyMed. 22 March 2023. Archived from the original on 2 July 2022. Retrieved 23 March 2024.",
+                            "<info> ^ \"Alphanine SD (coagulation factor ix- human kit\". DailyMed. 18 January 2024. Archived from the original on 18 February 2024. Retrieved 23 March 2024.",
+                            "<info> ^ Simioni P, Tormene D, Tognin G, Gavasso S, Bulato C, Iacobelli NP, et al. (October 2009). \"X-linked thrombophilia with a mutant factor IX (factor IX Padua)\". The New England Journal of Medicine. 361 (17): 1671–5. doi:10.1056/NEJMoa0904377. hdl:11577/2438365. PMID 19846852.",
+                            "<info> ^ Rossi M, Jayaram R, Sayeed R (September 2011). \"Do patients with haemophilia undergoing cardiac surgery have good surgical outcomes?\". Interactive Cardiovascular and Thoracic Surgery. 13 (3): 320–31. doi:10.1510/icvts.2011.272401. PMID 21712351.",
+                            "<info> ^ \"Home: EAHAD Factor 9 Gene Variant Database\". Archived from the original on 28 October 2020. Retrieved 23 October 2020."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Davie EW, Fujikawa K (1975). \"Basic mechanisms in blood coagulation\". Annual Review of Biochemistry. 44: 799–829. doi:10.1146/annurev.bi.44.070175.004055. PMID 237463.",
+                            "<info> Sommer SS (July 1992). \"Assessing the underlying pattern of human germline mutations: lessons from the factor IX gene\". FASEB Journal. 6 (10): 2767–74. doi:10.1096/fasebj.6.10.1634040. PMID 1634040. S2CID 15211597.",
+                            "<info> Lenting PJ, van Mourik JA, Mertens K (December 1998). \"The life cycle of coagulation factor VIII in view of its structure and function\". Blood. 92 (11): 3983–96. doi:10.1182/blood.V92.11.3983. PMID 9834200.",
+                            "<info> Lowe GD (December 2001). \"Factor IX and thrombosis\" (PDF). British Journal of Haematology. 115 (3): 507–13. doi:10.1046/j.1365-2141.2001.03186.x. PMID 11736930. S2CID 44650866. Archived (PDF) from the original on 19 June 2021. Retrieved 11 December 2019.",
+                            "<info> O'Connell NM (June 2003). \"Factor XI deficiency--from molecular genetics to clinical management\". Blood Coagulation & Fibrinolysis. 14 (Suppl 1): S59-64. doi:10.1097/00001721-200306001-00014. PMID 14567539.",
+                            "<info> Du X (May 2007). \"Signaling and regulation of the platelet glycoprotein Ib-IX-V complex\". Current Opinion in Hematology. 14 (3): 262–9. doi:10.1097/MOH.0b013e3280dce51a. PMID 17414217. S2CID 39904506."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Overview of all the structural information available in the PDB for UniProt: P00740 (Coagulation factor IX) at the PDBe-KB.",
+                            "<info> GeneReviews/NCBI/NIH/UW entry on Hemophilia B",
+                            "<info> The MEROPS online database for peptidases and their inhibitors: S01.214 Archived 2005-05-05 at the Wayback Machine"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

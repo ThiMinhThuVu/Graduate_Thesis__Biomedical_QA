@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/whale_shark": {
+                "title": "Whale shark",
+                "url": "https://en.wikipedia.org/wiki/whale_shark",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

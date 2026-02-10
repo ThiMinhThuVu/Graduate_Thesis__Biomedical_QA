@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/alcoholism": {
+                "title": "Alcoholism",
+                "url": "https://en.wikipedia.org/wiki/alcoholism",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

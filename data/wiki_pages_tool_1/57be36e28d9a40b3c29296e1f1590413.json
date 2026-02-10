@@ -1,0 +1,105 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/mannose_phosphate_isomerase": {
+                "title": "Mannose phosphate isomerase",
+                "url": "https://en.wikipedia.org/wiki/mannose_phosphate_isomerase",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Mannose-6 phosphate isomerase (MPI), alternately phosphomannose isomerase (PMI) (EC 5.3.1.8) is an enzyme which facilitates the interconversion of fructose 6-phosphate (F6P) and mannose-6-phosphate (M6P). Mannose-6-phosphate isomerase may also enable the synthesis of GDP-mannose in eukaryotic organisms. M6P can be converted to F6P by mannose-6-phosphate isomerase and subsequently utilized in several metabolic pathways including glycolysis and capsular polysaccharide biosynthesis.[1] PMI is monomeric and metallodependent on zinc as a cofactor ligand.[2] PMI is inhibited by erythrose 4-phosphate, mannitol 1-phosphate, and to a lesser extent, the alpha anomer of M6P.[3]",
+                    "",
+                    "=== Mechanism ===",
+                    "MPI must convert an aldose (mannose) to a ketose (fructose), in addition to opening and closing the rings for these sugars.[4] In humans a mechanism has been suggested which involves a hydrogen transfer between C1 and C2, mediated by Tyr278, and the movement of a proton from O1 and O2 mediated by the associated Zn2+ ion.[5] The ring opening step may be catalyzed by His99 and Asp270, and isomerization is likely a cis-enediol mechanism.[6][7]",
+                    "PMI shows a high degree of selectivity for the beta anomer of M6P, and the alpha anomer has no activity, and may in fact act as an inhibitor.[8] Phosphoglucose isomerase (PGI) has a very similar function to PMI, (as it catalyzes the interconversion of glucose 6-phosphate and F6P) however PGI can anomerize alpha and beta G6P, and may also catalyze the conversion of alpha M6P to beta M6P, while PMI may not anomerize M6P.[8] It is likely the cis-enediol intermediate formed by PMI is the same intermediate formed by PGI.[9]",
+                    "",
+                    "=== Structure ===",
+                    "MPI is composed of 440 amino acid residues, with one active site and one zinc ion (Zn2+) ligand. Amino acids GLN 111A, HIS 113A, GLU 138A, HIS 285A, and HOH 798A are involved with the zinc ligand bonding.[2] Structure differs from phosphoglucose isomerase by a threonine residue (Thr291) which creates extra space in the active site of PMI to accommodate the different stereochemistry of M6P. This increased space created by the threonine allows the rotation of the C2-C3 bond, which enables the necessary cis-enediol intermediate to be formed. Because mannose and glucose are stereoisomers at C2, which is crucial to the mechanism for both enzymes, PMI must allow extra space in the active site to allow for rotation of mannose to form the cis-enediol intermediate, which is the same intermediate formed by phosphoglucose isomerase.[10]",
+                    "",
+                    "=== Biological relevance ===",
+                    "PMI has several contributions to necessary metabolic pathways. It enables cells to transform M6P into F6P, which can then be entered into Glycolysis. PMI also allows cells to convert F6P into M6P, which is a common glycolytic cellular identifier for cellular transport and cell membrane identification in prokaryotic and eukaryotic organisms.[4]",
+                    "",
+                    "=== Medical relevance ===",
+                    "PMI may be helpful in the development of new antifungal treatments, as lack of PMI activity in yeast cells can lead to cell lysis and the enzyme may be a target for inhibition.[11] This may be due to the role of PMI in the formation cell walls and capsular polysaccharide biosynthesis. Additionally M6P is an important signaling molecule, especially for transport to lysosomes: disorders affecting MPI activity may affect cellular ability to quickly produce M6P from plentiful F6P, and therefore vesicle traffic to lysosomes and endosomes may be altered, potentially negatively impacting the cell.[12]",
+                    "",
+                    "=== See also ===",
+                    "<info> Congenital disorder of glycosylation",
+                    "",
+                    "=== Notes ===",
+                    "<info> ^ EBI Database, IPRO16305 Mannose-6-phosphate Isomerase.",
+                    "<info> ^ a b \"1pmi\". PDBe.",
+                    "<info> ^ Gao H, Yu Y, Leary JA (September 2005). \"Mechanism and kinetics of metalloenzyme phosphomannose isomerase: measurement of dissociation constants and effect of zinc binding using ESI-FTICR mass spectrometry\". Analytical Chemistry. 77 (17): 5596–603. doi:10.1021/ac050549m. PMID 16131071.",
+                    "<info> ^ a b Berg JM, Tymoczko JL, Stryer L (2007). Biochemistry (6th ed.). New York, New York: W.H. Freeman & Co.",
+                    "<info> ^ Xiao J, Guo Z, Guo Y, Chu F, Sun P (November 2006). \"Computational study of human phosphomannose isomerase: Insights from homology modeling and molecular dynamics simulation of enzyme bound substrate\". Journal of Molecular Graphics & Modelling. 25 (3): 289–95. Bibcode:2006JMGM...25..289X. doi:10.1016/j.jmgm.2006.01.001. PMID 16488169.",
+                    "<info> ^ Sagurthi SR, Gowda G, Savithri HS, Murthy MR (July 2009). \"Structures of mannose-6-phosphate isomerase from Salmonella typhimurium bound to metal atoms and substrate: implications for catalytic mechanism\" (PDF). Acta Crystallographica Section D. 65 (Pt 7): 724–32. doi:10.1107/S0907444909013328. PMID 19564693.",
+                    "<info> ^ Gracy RW, Noltmann EA (October 1968). \"Studies on phosphomannose isomerase. 3. A mechanism for catalysis and for the role of zinc in the enzymatic and the nonenzymatic isomerization\". The Journal of Biological Chemistry. 243 (20): 5410–9. doi:10.1016/S0021-9258(18)91963-0. PMID 4973622.",
+                    "<info> ^ a b Rose IA, O'Connell EL, Schray KJ (March 1973). \"Mannose 6-phosphate: anomeric form used by phosphomannose isomerase and its 1-epimerization by phosphoglucose isomerase\". The Journal of Biological Chemistry. 248 (6): 2232–4. doi:10.1016/S0021-9258(19)44210-5. PMID 4570473.",
+                    "<info> ^ Wu R, Xie H, Cao Z, Mo Y (June 2008). \"Combined quantum mechanics/molecular mechanics study on the reversible isomerization of glucose and fructose catalyzed by Pyrococcus furiosus phosphoglucose isomerase\" (PDF). Journal of the American Chemical Society. 130 (22): 7022–31. Bibcode:2008JAChS.130.7022W. doi:10.1021/ja710633c. PMID 18470986.",
+                    "<info> ^ Swan MK, Hansen T, Schönheit P, Davies C (November 2004). \"Structural basis for phosphomannose isomerase activity in phosphoglucose isomerase from Pyrobaculum aerophilum: a subtle difference between distantly related enzymes\". Biochemistry. 43 (44): 14088–95. doi:10.1021/bi048608y. PMID 15518558. S2CID 40093771.",
+                    "<info> ^ Cleasby A, Wonacott A, Skarzynski T, Hubbard RE, Davies GJ, Proudfoot AE, Bernard AR, Payton MA, Wells TN (May 1996). \"The x-ray crystal structure of phosphomannose isomerase from Candida albicans at 1.7 angstrom resolution\". Nature Structural Biology. 3 (5): 470–9. doi:10.1038/nsb0596-470. PMID 8612079.",
+                    "<info> ^ Jaeken J, Matthijs G (2001). \"Congenital disorders of glycosylation\". Annual Review of Genomics and Human Genetics. 2: 129–51. doi:10.1146/annurev.genom.2.1.129. PMID 11701646. S2CID 18282235.",
+                    "",
+                    "=== External links ===",
+                    "<info> GeneReviews/NCBI/NIH/UW entry on Congenital Disorders of Glycosylation Overview",
+                    "<info> Mannose-6-Phosphate+Isomerase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Mannose-6 phosphate isomerase (MPI), alternately phosphomannose isomerase (PMI) (EC 5.3.1.8) is an enzyme which facilitates the interconversion of fructose 6-phosphate (F6P) and mannose-6-phosphate (M6P). Mannose-6-phosphate isomerase may also enable the synthesis of GDP-mannose in eukaryotic organisms. M6P can be converted to F6P by mannose-6-phosphate isomerase and subsequently utilized in several metabolic pathways including glycolysis and capsular polysaccharide biosynthesis.[1] PMI is monomeric and metallodependent on zinc as a cofactor ligand.[2] PMI is inhibited by erythrose 4-phosphate, mannitol 1-phosphate, and to a lesser extent, the alpha anomer of M6P.[3]"
+                        ]
+                    },
+                    "Mechanism": {
+                        "content": [
+                            "MPI must convert an aldose (mannose) to a ketose (fructose), in addition to opening and closing the rings for these sugars.[4] In humans a mechanism has been suggested which involves a hydrogen transfer between C1 and C2, mediated by Tyr278, and the movement of a proton from O1 and O2 mediated by the associated Zn2+ ion.[5] The ring opening step may be catalyzed by His99 and Asp270, and isomerization is likely a cis-enediol mechanism.[6][7]",
+                            "PMI shows a high degree of selectivity for the beta anomer of M6P, and the alpha anomer has no activity, and may in fact act as an inhibitor.[8] Phosphoglucose isomerase (PGI) has a very similar function to PMI, (as it catalyzes the interconversion of glucose 6-phosphate and F6P) however PGI can anomerize alpha and beta G6P, and may also catalyze the conversion of alpha M6P to beta M6P, while PMI may not anomerize M6P.[8] It is likely the cis-enediol intermediate formed by PMI is the same intermediate formed by PGI.[9]"
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "MPI is composed of 440 amino acid residues, with one active site and one zinc ion (Zn2+) ligand. Amino acids GLN 111A, HIS 113A, GLU 138A, HIS 285A, and HOH 798A are involved with the zinc ligand bonding.[2] Structure differs from phosphoglucose isomerase by a threonine residue (Thr291) which creates extra space in the active site of PMI to accommodate the different stereochemistry of M6P. This increased space created by the threonine allows the rotation of the C2-C3 bond, which enables the necessary cis-enediol intermediate to be formed. Because mannose and glucose are stereoisomers at C2, which is crucial to the mechanism for both enzymes, PMI must allow extra space in the active site to allow for rotation of mannose to form the cis-enediol intermediate, which is the same intermediate formed by phosphoglucose isomerase.[10]"
+                        ]
+                    },
+                    "Biological relevance": {
+                        "content": [
+                            "PMI has several contributions to necessary metabolic pathways. It enables cells to transform M6P into F6P, which can then be entered into Glycolysis. PMI also allows cells to convert F6P into M6P, which is a common glycolytic cellular identifier for cellular transport and cell membrane identification in prokaryotic and eukaryotic organisms.[4]"
+                        ]
+                    },
+                    "Medical relevance": {
+                        "content": [
+                            "PMI may be helpful in the development of new antifungal treatments, as lack of PMI activity in yeast cells can lead to cell lysis and the enzyme may be a target for inhibition.[11] This may be due to the role of PMI in the formation cell walls and capsular polysaccharide biosynthesis. Additionally M6P is an important signaling molecule, especially for transport to lysosomes: disorders affecting MPI activity may affect cellular ability to quickly produce M6P from plentiful F6P, and therefore vesicle traffic to lysosomes and endosomes may be altered, potentially negatively impacting the cell.[12]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Congenital disorder of glycosylation"
+                        ]
+                    },
+                    "Notes": {
+                        "content": [
+                            "<info> ^ EBI Database, IPRO16305 Mannose-6-phosphate Isomerase.",
+                            "<info> ^ a b \"1pmi\". PDBe.",
+                            "<info> ^ Gao H, Yu Y, Leary JA (September 2005). \"Mechanism and kinetics of metalloenzyme phosphomannose isomerase: measurement of dissociation constants and effect of zinc binding using ESI-FTICR mass spectrometry\". Analytical Chemistry. 77 (17): 5596–603. doi:10.1021/ac050549m. PMID 16131071.",
+                            "<info> ^ a b Berg JM, Tymoczko JL, Stryer L (2007). Biochemistry (6th ed.). New York, New York: W.H. Freeman & Co.",
+                            "<info> ^ Xiao J, Guo Z, Guo Y, Chu F, Sun P (November 2006). \"Computational study of human phosphomannose isomerase: Insights from homology modeling and molecular dynamics simulation of enzyme bound substrate\". Journal of Molecular Graphics & Modelling. 25 (3): 289–95. Bibcode:2006JMGM...25..289X. doi:10.1016/j.jmgm.2006.01.001. PMID 16488169.",
+                            "<info> ^ Sagurthi SR, Gowda G, Savithri HS, Murthy MR (July 2009). \"Structures of mannose-6-phosphate isomerase from Salmonella typhimurium bound to metal atoms and substrate: implications for catalytic mechanism\" (PDF). Acta Crystallographica Section D. 65 (Pt 7): 724–32. doi:10.1107/S0907444909013328. PMID 19564693.",
+                            "<info> ^ Gracy RW, Noltmann EA (October 1968). \"Studies on phosphomannose isomerase. 3. A mechanism for catalysis and for the role of zinc in the enzymatic and the nonenzymatic isomerization\". The Journal of Biological Chemistry. 243 (20): 5410–9. doi:10.1016/S0021-9258(18)91963-0. PMID 4973622.",
+                            "<info> ^ a b Rose IA, O'Connell EL, Schray KJ (March 1973). \"Mannose 6-phosphate: anomeric form used by phosphomannose isomerase and its 1-epimerization by phosphoglucose isomerase\". The Journal of Biological Chemistry. 248 (6): 2232–4. doi:10.1016/S0021-9258(19)44210-5. PMID 4570473.",
+                            "<info> ^ Wu R, Xie H, Cao Z, Mo Y (June 2008). \"Combined quantum mechanics/molecular mechanics study on the reversible isomerization of glucose and fructose catalyzed by Pyrococcus furiosus phosphoglucose isomerase\" (PDF). Journal of the American Chemical Society. 130 (22): 7022–31. Bibcode:2008JAChS.130.7022W. doi:10.1021/ja710633c. PMID 18470986.",
+                            "<info> ^ Swan MK, Hansen T, Schönheit P, Davies C (November 2004). \"Structural basis for phosphomannose isomerase activity in phosphoglucose isomerase from Pyrobaculum aerophilum: a subtle difference between distantly related enzymes\". Biochemistry. 43 (44): 14088–95. doi:10.1021/bi048608y. PMID 15518558. S2CID 40093771.",
+                            "<info> ^ Cleasby A, Wonacott A, Skarzynski T, Hubbard RE, Davies GJ, Proudfoot AE, Bernard AR, Payton MA, Wells TN (May 1996). \"The x-ray crystal structure of phosphomannose isomerase from Candida albicans at 1.7 angstrom resolution\". Nature Structural Biology. 3 (5): 470–9. doi:10.1038/nsb0596-470. PMID 8612079.",
+                            "<info> ^ Jaeken J, Matthijs G (2001). \"Congenital disorders of glycosylation\". Annual Review of Genomics and Human Genetics. 2: 129–51. doi:10.1146/annurev.genom.2.1.129. PMID 11701646. S2CID 18282235."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> GeneReviews/NCBI/NIH/UW entry on Congenital Disorders of Glycosylation Overview",
+                            "<info> Mannose-6-Phosphate+Isomerase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

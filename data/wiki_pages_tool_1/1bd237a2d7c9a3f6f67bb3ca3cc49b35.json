@@ -1,0 +1,49 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/low_pressure_hydrocephalus": {
+                "title": "Low pressure hydrocephalus",
+                "url": "https://en.wikipedia.org/wiki/low_pressure_hydrocephalus",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Low-pressure hydrocephalus is a condition whereby ventricles are enlarged and the individual experiences severe dementia, inability to walk or gait disturbance, and incontinence despite very low intracranial pressure.[1]",
+                    "Low-pressure hydrocephalus is considered a more acute variant of normal pressure hydrocephalus. Without timely diagnosis, patients may remain in a persistent low-pressure hydrocephalic state. Standard shunt revisions, even with low-pressure settings, may be ineffective because intracranial pressure does not rise sufficiently to allow adequate cerebrospinal fluid drainage. In such cases, the shunt remains patent but functionally ineffective. Chronic infarcts along the corona radiata can occur due to parenchymal stretching as the ventricles enlarge.",
+                    "Reported causes of low-pressure hydrocephalus include head trauma, tumours, intracranial haemorrhage, meningitis, whole-brain radiotherapy, and other conditions that alter brain parenchymal compliance. One treatment approach for low-pressure hydrocephalic state is the use of an external ventricular drain set at negative pressures. Pang and Altschuler et al. have described controlled, steady, negative-pressure siphoning with external ventricular drains, monitored via serial partial computed tomography scans, as a safe and effective means of reducing ventricular size and restoring the brain mantle.[2] They caution against rapid adjustments to external ventricular drain pressure, which can destabilise the ventricles and increase risk. Their recommended management sequence involves ventricular size reduction, stabilisation and, finally, shunt placement. Deviation from this sequence can result in a patent but ineffective shunt. Mismanagement of external ventricular drain therapy may cause permanent neurological complications.[2]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Strand, Adam; Balise, Stephen; Leung, Lawrence Jun; Durham, Susan (1 January 2018). \"Low-Pressure Hydrocephalus: A Case Report and Review of the Literature\". World Neurosurgery. 109: e131–e135. doi:10.1016/j.wneu.2017.09.120. ISSN 1878-8750. PMID 28962963. Retrieved 27 August 2021.",
+                    "<info> ^ a b Pang, D; Altschuler, E (October 1994). \"Low-pressure hydrocephalic state and viscoelastic alterations in the brain\". Neurosurgery. 35 (4): 643–655, 655–656. doi:10.1227/00006123-199410000-00010. PMID 7808607.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Pang, Dachling; Altschuler, Eric (1994). \"Low-Pressure Hydrocephalic State and Viscoelastic Alterations in the Brain\". Neurosurgery. 35 (4): 643–55, discussion 655–56. doi:10.1227/00006123-199410000-00010. PMID 7808607.",
+                    "<info> Owler, B.K.; Jacobson, E.E.; Johnston, I.H. (2001). \"Low pressure hydrocephalus: Issues of diagnosis and treatment in five cases\". British Journal of Neurosurgery. 15 (4): 353–59. doi:10.1080/02688690120072531. PMID 11599454. S2CID 219187273.",
+                    "<info> Lesniak, M.S.; Clatterbuck, R.E.; Rigamonti, D.; Williams, M.A. (2002). \"Low pressure hydrocephalus and ventriculomegaly: hysteresis, non-linear dynamics, and the benefits of CSF diversion\". British Journal of Neurosurgery. 16 (6): 555–61. doi:10.1080/02688690209168360. PMID 12617236. S2CID 43138142.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Low-pressure hydrocephalus is a condition whereby ventricles are enlarged and the individual experiences severe dementia, inability to walk or gait disturbance, and incontinence despite very low intracranial pressure.[1]",
+                            "Low-pressure hydrocephalus is considered a more acute variant of normal pressure hydrocephalus. Without timely diagnosis, patients may remain in a persistent low-pressure hydrocephalic state. Standard shunt revisions, even with low-pressure settings, may be ineffective because intracranial pressure does not rise sufficiently to allow adequate cerebrospinal fluid drainage. In such cases, the shunt remains patent but functionally ineffective. Chronic infarcts along the corona radiata can occur due to parenchymal stretching as the ventricles enlarge.",
+                            "Reported causes of low-pressure hydrocephalus include head trauma, tumours, intracranial haemorrhage, meningitis, whole-brain radiotherapy, and other conditions that alter brain parenchymal compliance. One treatment approach for low-pressure hydrocephalic state is the use of an external ventricular drain set at negative pressures. Pang and Altschuler et al. have described controlled, steady, negative-pressure siphoning with external ventricular drains, monitored via serial partial computed tomography scans, as a safe and effective means of reducing ventricular size and restoring the brain mantle.[2] They caution against rapid adjustments to external ventricular drain pressure, which can destabilise the ventricles and increase risk. Their recommended management sequence involves ventricular size reduction, stabilisation and, finally, shunt placement. Deviation from this sequence can result in a patent but ineffective shunt. Mismanagement of external ventricular drain therapy may cause permanent neurological complications.[2]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Strand, Adam; Balise, Stephen; Leung, Lawrence Jun; Durham, Susan (1 January 2018). \"Low-Pressure Hydrocephalus: A Case Report and Review of the Literature\". World Neurosurgery. 109: e131–e135. doi:10.1016/j.wneu.2017.09.120. ISSN 1878-8750. PMID 28962963. Retrieved 27 August 2021.",
+                            "<info> ^ a b Pang, D; Altschuler, E (October 1994). \"Low-pressure hydrocephalic state and viscoelastic alterations in the brain\". Neurosurgery. 35 (4): 643–655, 655–656. doi:10.1227/00006123-199410000-00010. PMID 7808607."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Pang, Dachling; Altschuler, Eric (1994). \"Low-Pressure Hydrocephalic State and Viscoelastic Alterations in the Brain\". Neurosurgery. 35 (4): 643–55, discussion 655–56. doi:10.1227/00006123-199410000-00010. PMID 7808607.",
+                            "<info> Owler, B.K.; Jacobson, E.E.; Johnston, I.H. (2001). \"Low pressure hydrocephalus: Issues of diagnosis and treatment in five cases\". British Journal of Neurosurgery. 15 (4): 353–59. doi:10.1080/02688690120072531. PMID 11599454. S2CID 219187273.",
+                            "<info> Lesniak, M.S.; Clatterbuck, R.E.; Rigamonti, D.; Williams, M.A. (2002). \"Low pressure hydrocephalus and ventriculomegaly: hysteresis, non-linear dynamics, and the benefits of CSF diversion\". British Journal of Neurosurgery. 16 (6): 555–61. doi:10.1080/02688690209168360. PMID 12617236. S2CID 43138142."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

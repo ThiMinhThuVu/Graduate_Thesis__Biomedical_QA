@@ -1,0 +1,265 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/xeroderma_pigmentosum": {
+                "title": "Xeroderma pigmentosum",
+                "url": "https://en.wikipedia.org/wiki/xeroderma_pigmentosum",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Xeroderma pigmentosum (XP) is a genetic disorder in which there is a decreased ability to repair DNA damage such as that caused by ultraviolet (UV) light.[1] Symptoms may include a severe sunburn after only a few minutes in the sun, freckling in sun-exposed areas, dry skin and changes in skin pigmentation.[1] Nervous system problems, such as hearing loss, poor coordination, loss of intellectual function and seizures, may also occur.[1] Complications include a high risk of skin cancer, with about half having skin cancer by age 10 without preventative efforts, and cataracts.[1] There may be a higher risk of other cancers such as brain cancers.[1]",
+                    "XP is autosomal recessive, with mutations in at least nine specific genes able to result in the condition.[1][6] Normally, the damage to DNA which occurs in skin cells from exposure to UV light is repaired by nucleotide excision repair.[1] In people with xeroderma pigmentosum, this damage is not repaired.[1] As more abnormalities form in DNA, cells malfunction and eventually become cancerous or die.[1] Diagnosis is typically suspected based on symptoms and confirmed by genetic testing.[5]",
+                    "There is no cure for XP.[6] Treatment involves completely avoiding UV exposure.[6] This includes protective clothing, sunscreen and dark sunglasses when out in daylight.[6]",
+                    "Prognosis/life expectancy in XP depends on three key factors, (1) the specific type (genetic variant) of XP a patient has (and within in that the most important factor is whether they have an XP subtype which is associated with neurological involvement); (2) what level of UV exposure they have had over their lifetime (which directly leads to the increased risk of skin and eye cancers) and (3) the extent to which they can access regular specialist medical care, including skin and eye checks, surgeries, other oncology treatment if needed and supportive care when their needs are  palliative.",
+                    "Research from the National XP service in the UK ([8]) shows that patients who regularly attend the XP service have significantly increased life expectancies compared to the  previously published US data, both for patients with a neurological deterioration and those without. This is likely to be multifactorial. Patients are diagnosed early and are better educated on the need to UV protect and know the optimum methods for this. Often patients  become good at recognising early skin cancers and this along with the regular medical checks means skin and eye cancers can be removed in a timely manner. Lastly patients can access modern treatments that can be effective with high grade cancers or in decreasing the complications associated with neurological variants of XP.",
+                    "Research shows that patients in the UK with XP who attend the National XP service have a life expectancy of 50 years for those with neurological involvement and 81 years for those without ([8]) . The latter is comparable to the general UK population. These estimates maybe inappropriate for patients from other countries, where their exposure to UV is much greater and/or access to medical care significantly harder.",
+                    "It is worth noting that determining an accurate life expectancy in XP has been limited by the very small numbers of patients with XP who have often not been followed up consistently. Therefore the ages quoted online for life expectancy in XP on non-specialist websites are often misleading and can set unhelpful expectations for patients and their families (e.g. https://myriad.com/)",
+                    "Retinoid creams may help decrease the risk of skin cancer.[6] Vitamin D supplementation is generally required.[5] If skin cancer occurs, it is treated in the usual way.[6]",
+                    "The disease affects about 1 in 100,000 worldwide.[3] By region, it affects about 1 in 20,000 in Japan, 1 in 250,000 people in the United States and 1 in 430,000 in Europe.[7] It occurs equally commonly in males and females.[9] Xeroderma pigmentosum was first described in the 1870s by Moritz Kaposi.[5][9] In 1882, Kaposi coined the term xeroderma pigmentosum for the condition, referring to its characteristic dry, pigmented skin.[9] Individuals with the disease have been referred to as \"children of the night\" or \"moon children\".[10]",
+                    "",
+                    "=== Signs and symptoms ===",
+                    "Signs and symptoms of xeroderma pigmentosum may include:[citation needed]",
+                    "<info> Severe sunburn when exposed to only small amounts of sunlight. These often occur during a child's first exposure to sunlight.",
+                    "<info> Development of many freckles at an early age",
+                    "<info> Rough-surfaced growths (solar keratoses), and skin cancers",
+                    "<info> Eyes that are painfully sensitive to the sun and may easily become irritated, bloodshot and clouded",
+                    "<info> Blistering or freckling on minimum sun exposure",
+                    "<info> Limited growth of hair on chest and legs",
+                    "<info> Irregular dark spots on the skin",
+                    "",
+                    "=== Genetics ===",
+                    "One of the most frequent defects in xeroderma pigmentosum is an autosomal recessive genetic defect in which nucleotide excision repair (NER) enzymes are mutated, leading to a reduction in or elimination of NER.[11] If left unchecked, damage caused by ultraviolet light can cause mutations in individual cell's DNA. The causes of the neurological abnormalities are poorly understood and are not connected with exposure to ultraviolet light. The most current theories suggest that oxidative DNA damage is generated during normal metabolism in the central nervous system, and that some types of this damage must be repaired by NER.[12]",
+                    "Since DNA repair is under genetic control, it can mutate. Many genetic disorders such as xeroderma pigmentosum (XP; MIM 278700) are caused by mutations in genes that repair damaged DNA. XP affects the mechanism that repairs UV damage in skin cell DNA. Those affected with the autosomal recessive disorder XP are extremely sensitive to UV light produced by the sun and develop pigmented spots, tumors, and skin cancer with minimal exposure. Individuals with XP are about 1,000 times more likely to develop skin cancer than individuals without the disorder.[citation needed]",
+                    "The molecular defects in XP cells result in a greatly elevated induction of mutations in sun-exposed skin of affected individuals. This increased mutation frequency probably accounts for the pigmentation changes and the skin cancers. Examination of mutations in the p53 gene in tumors from XP patients reveal p53 mutations characteristic of UV exposure in the majority of tumors[13] As with all genetic disorders, genetic counseling and psychological support is appropriate for the families to discuss probability of occurrence in future pregnancies, feelings of isolation and concern about career prospects. There is no cure for xeroderma pigmentosum. The most common fate for individuals with XP is early death from cancer.  [citation needed]",
+                    "The XPA protein acts during NER as a scaffold for assembly of other DNA repair proteins at sites of DNA damage to ensure appropriate excision of the damage.[14]",
+                    "The XPB (ERCC3) protein is employed in unwinding the DNA double helix after DNA damage is initially recognized. Mutations in the XPB(ERCC3) gene can lead to XP or XP combined with Cockayne syndrome.[15]",
+                    "The XPC protein forms a complex with RAD23B protein to form the initial damage recognition factor in global genomic nucleotide excision repair (GG-NER).[16] This complex recognizes a wide variety of damages that thermodynamically destabilize DNA duplexes.[citation needed]",
+                    "The XPD (ERCC2) protein, in combination with the XPB helicase-containing transcription/repair complex TFIIH, is employed in unwinding the DNA duplex after damage is initially recognized. Mutations in the XPD(ERCC2) gene cause a variety of syndromes; XP, trichothiodystrophy (TTD), or a combination of XP and Cockayne syndrome (XPCS).[17][18] Both trichothiodystrophy and Cockayne syndrome display features of premature aging, suggesting an association between deficient DNA repair and premature aging .[citation needed]",
+                    "XPE is a heterodimeric protein composed of two subunits. The larger subunit DDB1 primarily functions as a core component of CUL4A- and CUL4B-based E3 ubiquitin ligase complexes. Substrates that are ubiquitinnated by these complexes include proteins employed in DNA repair.[19]",
+                    "The XPF (ERCC4) protein together with the ERCC1 protein forms a complex usually designated ERCC1-XPF. This complex separates the DNA helix for a short distance on either side of the site of damage. It then acts as an endonuclease to incise the damaged DNA strand on the 5' side of the damaged site.[20] Mutant cells with deficient ERCC1-XPF are not only defective in NER, but also in the repair of double-strand breaks and inter-strand crosslinks.[citation needed]",
+                    "The XPG protein is an endonuclease that incises DNA during NER at the 3' side of the damaged nucleotide. Mutations in the XPG (ERCC5) gene can lead to XP alone, or in combination with Cockayne syndrome (CS), or in combination with infantile lethal cerebro-oculo-facio-skeletal syndrome.[21]",
+                    "",
+                    "=== Diagnosis ===",
+                    "There are seven complementation groups, plus one variant form:",
+                    "",
+                    "=== Treatment ===",
+                    "There is no cure for the disorder; all treatment is symptomatic or preventive. Symptoms can be avoided or controlled by completely avoiding exposure to sunlight, either by staying indoors or wearing protective clothing and using sunscreen when outdoors.[22] Keratosis can also be treated by using cryotherapy or fluorouracil.[4] In more severe cases of XP, even minuscule amounts of UV light, for example, from covered windows or fluorescent bulbs, can be very dangerous and trigger symptoms.[23]",
+                    "On September 10, 2020, Clinuvel Pharmaceuticals announced that it was investigating the use of its FDA-approved flagship drug Scenesse as a potential treatment to increase pain-free light exposure for patients with xeroderma pigmentosum.[24][25][26]",
+                    "",
+                    "=== Prognosis ===",
+                    "In the United States, the probability for individuals with the disorder to survive until 40 years of age may be as high as 70% if they have never been exposed to sunlight in their life.[27]",
+                    "If a person is diagnosed early, does not have severe neurological symptoms, and takes precautionary measures to completely avoid any exposure to UV light and sunlight, they may be able to survive until middle age.[citation needed]",
+                    "",
+                    "=== History ===",
+                    "Xeroderma pigmentosum was first described in 1874 by Hebra and Moritz Kaposi. In 1882, Kaposi coined the term xeroderma pigmentosum for the condition, referring to its characteristic dry, pigmented skin.[citation needed]",
+                    "The 1968 paper about XP by James Cleaver demonstrated the link between UV-induced DNA damage, faulty DNA repair and cancer.[28]",
+                    "",
+                    "=== Culture and society ===",
+                    "Because people with XP need to strictly avoid sunlight, but can go outside at night, they have been called children of the dark, children of the night, and vampire children. These terms can be considered derogatory.[29]",
+                    "XP has been a plot element in several fictional works. One of the common themes in films about XP is whether teens with XP will risk sun exposure in pursuit of a romantic partner.[30]",
+                    "Film series like Children of Darkness, a German silent-drama film which was released in two parts in the year of 1921 and 1922 respectively, were among some of the initially popular movies that were made about XP.[citation needed]",
+                    "Other films, like the 1964 American drama film Della, starring Joan Crawford, Paul Burke, Charles Bickford and Diane Baker, directed by Robert Gist, which was originally produced by Four Star Television as a television pilot for a proposed NBC series named Royal Bay, was also based on this skin disease.[citation needed]",
+                    "The Dark Side of the Sun, a 1988 American-Yugoslavian drama film, was directed by Božidar Nikolić and stars Brad Pitt for his first ever leading role as a young man in search of a cure for his disorder.[citation needed]",
+                    "The Others, a 2001 American psychological horror film starring Nicole Kidman, features two children, Anne and Nicholas, who must avoid all sunlight because of a rare disease characterized by photosensitivity.[citation needed]",
+                    "A CBS television movie aired in 1994, Children of the Dark, was based on the story of the real-life couple Jim and Kim Harrison, whose two daughters have XP.[31][32]",
+                    "Lurlene McDaniel's young adult book How I Do Love Thee features the story \"Night Vision\", in which the protagonist, leukemia survivor Brett, falls in love with a girl named Shayla that has XP.[citation needed]",
+                    "Christopher Snow, the protagonist of novelist Dean Koontz's Moonlight Bay Trilogy, has XP and therefore must live most of his life during the night. The first two entries of the trilogy, Fear Nothing and Seize the Night, were both published in 1998. The final entry in the trilogy, tentatively titled Ride the Storm, has yet to be published as of August 2020.[33][34]",
+                    "The 2011 French drama film The Moon Child is based on a 13-year-old child with XP, which prevents him from exposing himself to daylight.",
+                    "The 2012 documentary Sun Kissed explores the XP problem on the Navajo Indian Reservation, and links it to the genetic legacy of the Long Walk of the Navajo, when the Navajo people were forced to move to a new location.[35][36][37]",
+                    "The 2016 Vietnamese romance drama Khúc hát mặt trời,  based on a 2006 Japanese film, A Song to the Sun, tells the story of a girl named Yến Phương with XP and the impact of her sickness on her life and relationships, following the story of Phương's accidental exposure to sunlight and subsequent neurological degeneration.[38]",
+                    "Midnight Sun is a 2018 American romantic drama film based on the 2006 Japanese film A Song to the Sun. The film was directed by Scott Speer and written by Eric Kirsten, and stars Bella Thorne, Patrick Schwarzenegger, and Rob Riggle.[citation needed]",
+                    "",
+                    "=== Research directions ===",
+                    "Research into XP has had two main results: better understanding the disease itself, and also better understanding the normal biological mechanisms involved in DNA repair.[28] Research into XP has produced insights that have been translated into treatments and prevention for cancer.[28]",
+                    "",
+                    "=== See also ===",
+                    "<info> List of skin conditions",
+                    "<info> List of cutaneous conditions associated with increased risk of nonmelanoma skin cancer",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d e f g h i j k l m \"Xeroderma pigmentosum\". Genetics Home Reference. U.S. Library of Medicine. 26 June 2018. Retrieved 28 June 2018.",
+                    "<info> ^ a b \"Xeroderma pigmentosum\". dermnetnz.org. Retrieved 25 February 2020.",
+                    "<info> ^ a b c d e f g h \"Not found\". Archived from the original on 2022-10-26. Retrieved 2023-03-06.",
+                    "<info> ^ a b Halpern J, Hopping B, Brostoff JM (October 2008). \"Photosensitivity, corneal scarring and developmental delay: Xeroderma Pigmentosum in a tropical country\". Cases Journal. 1 (1) 254. doi:10.1186/1757-1626-1-254. PMC 2577106. PMID 18937855.",
+                    "<info> ^ a b c d e \"Xeroderma Pigmentosum\". NORD (National Organization for Rare Disorders). 2017. Retrieved 28 June 2018.",
+                    "<info> ^ a b c d e f g h \"Xeroderma pigmentosum\". Genetic and Rare Diseases Information Center (GARD). U.S. Department of Health and Human Services. 2018. Retrieved 28 June 2018.",
+                    "<info> ^ a b Lehmann AR, McGibbon D, Stefanini M (November 2011). \"Xeroderma pigmentosum\". Orphanet Journal of Rare Diseases. 6: 70. doi:10.1186/1750-1172-6-70. PMC 3221642. PMID 22044607.",
+                    "<info> ^ a b Paolino, Alexandra; Keogh, Ruth; Langan, Sinéad; Lehmann, Alan; Sarkany, Robert; Garrood, Isabel; Fassihi, Hiva (2025-06-27). \"PD09 Life expectancy of patients with xeroderma pigmentosum: evidence from a UK study\". British Journal of Dermatology. 193 (Supplement_1) ljaf085.261. doi:10.1093/bjd/ljaf085.261. ISSN 0007-0963.",
+                    "<info> ^ a b c Griffiths C, Barker J, Bleiker T, Chalmers R, Creamer D (2016). Rook's Textbook of Dermatology, 4 Volume Set. John Wiley & Sons. ISBN 978-1-118-44119-0.",
+                    "<info> ^ Salway JG (2011). Medical Biochemistry at a Glance. John Wiley & Sons. p. 313. ISBN 978-1-118-29240-2.",
+                    "<info> ^ Friedberg EC, Walker GC, Siede W, Wood RD, Schultz RA, Ellenberger T (2006). DNA repair and mutagenesis. Washington: ASM Press. p. 1118. ISBN 978-1-55581-319-2.",
+                    "<info> ^ Brooks PJ (July 2008). \"The 8,5'-cyclopurine-2'-deoxynucleosides: candidate neurodegenerative DNA lesions in xeroderma pigmentosum, and unique probes of transcription and nucleotide excision repair\". DNA Repair. 7 (7): 1168–79. doi:10.1016/j.dnarep.2008.03.016. PMC 2797313. PMID 18495558.",
+                    "<info> ^ Daya-Grosjean L, Sarasin A (April 2005). \"The role of UV induced lesions in skin carcinogenesis: an overview of oncogene and tumor suppressor gene modifications in xeroderma pigmentosum skin tumors\". Mutation Research. 571 (1–2): 43–56. Bibcode:2005MRFMM.571...43D. doi:10.1016/j.mrfmmm.2004.11.013. PMID 15748637.",
+                    "<info> ^ Sugitani N, Sivley RM, Perry KE, Capra JA, Chazin WJ (August 2016). \"XPA: A key scaffold for human nucleotide excision repair\". DNA Repair. 44: 123–135. doi:10.1016/j.dnarep.2016.05.018. PMC 4958585. PMID 27247238.",
+                    "<info> ^ Oh KS, Khan SG, Jaspers NG, Raams A, Ueda T, Lehmann A, Friedmann PS, Emmert S, Gratchev A, Lachlan K, Lucassan A, Baker CC, Kraemer KH (November 2006). \"Phenotypic heterogeneity in the XPB DNA helicase gene (ERCC3): xeroderma pigmentosum without and with Cockayne syndrome\". Human Mutation. 27 (11): 1092–103. doi:10.1002/humu.20392. PMID 16947863. S2CID 22852219.",
+                    "<info> ^ Sugasawa K, Ng JM, Masutani C, Iwai S, van der Spek PJ, Eker AP, Hanaoka F, Bootsma D, Hoeijmakers JH (August 1998). \"Xeroderma pigmentosum group C protein complex is the initiator of global genome nucleotide excision repair\". Molecular Cell. 2 (2): 223–32. doi:10.1016/s1097-2765(00)80132-x. PMID 9734359.",
+                    "<info> ^ Andressoo JO, Hoeijmakers JH, Mitchell JR (December 2006). \"Nucleotide excision repair disorders and the balance between cancer and aging\". Cell Cycle. 5 (24): 2886–8. doi:10.4161/cc.5.24.3565. PMID 17172862. S2CID 43682426.",
+                    "<info> ^ van de Ven M, Andressoo JO, van der Horst GT, Hoeijmakers JH, Mitchell JR (November 2012). \"Effects of compound heterozygosity at the Xpd locus on cancer and ageing in mouse models\". DNA Repair. 11 (11): 874–83. doi:10.1016/j.dnarep.2012.08.003. PMID 23046824.",
+                    "<info> ^ Iovine, B.; Iannella, M. L.; Bevilacqua, M. A. (2011). \"Damage-specific DNA binding protein 1 (DDB1): A protein with a wide range of functions\". The International Journal of Biochemistry & Cell Biology. 43 (12): 1664–1667. doi:10.1016/j.biocel.2011.09.001. PMID 21959250.",
+                    "<info> ^ Sijbers AM, de Laat WL, Ariza RR, Biggerstaff M, Wei YF, Moggs JG, Carter KC, Shell BK, Evans E, de Jong MC, Rademakers S, de Rooij J, Jaspers NG, Hoeijmakers JH, Wood RD (September 1996). \"Xeroderma pigmentosum group F caused by a defect in a structure-specific DNA repair endonuclease\". Cell. 86 (5): 811–22. doi:10.1016/s0092-8674(00)80155-5. hdl:1765/3110. PMID 8797827. S2CID 12957716.",
+                    "<info> ^ Barnhoorn S, Uittenboogaard LM, Jaarsma D, Vermeij WP, Tresini M, Weymaere M, Menoni H, Brandt RM, de Waard MC, Botter SM, Sarker AH, Jaspers NG, van der Horst GT, Cooper PK, Hoeijmakers JH, van der Pluijm I (October 2014). \"Cell-autonomous progeroid changes in conditional mouse models for repair endonuclease XPG deficiency\". PLOS Genetics. 10 (10) e1004686. doi:10.1371/journal.pgen.1004686. PMC 4191938. PMID 25299392.",
+                    "<info> ^ Nussbaum R, McInnes R, Willard H (2016-01-01). Genetics in Medicine. Elsevier. ISBN 978-14377-0696-3.",
+                    "<info> ^ \"Xeroderma pigmentosum\". India Today. September 24, 2014. Archived from the original on 2020-07-05. Retrieved 2020-07-05.",
+                    "<info> ^ \"SCENESSE® (afamelanotide 16mg) – Welcome to CLINUVEL\". Archived from the original on 2020-10-20. Retrieved 2020-09-24.",
+                    "<info> ^ Commissioner, Office of the (2020-03-24). \"FDA approves first treatment to increase pain-free light exposure in patients with a rare disorder\". FDA. Retrieved 2020-09-24.[dead link]",
+                    "<info> ^ \"Scenesse (afamelanotide) for adults with a history of phototoxic reactions from EPP\". SCENESSE® (Afamelanotide). Retrieved 2020-09-24.",
+                    "<info> ^ Kraemer, Kenneth H. (1 February 1987). \"Xeroderma Pigmentosum\". Archives of Dermatology. 123 (2): 241. doi:10.1001/archderm.1987.01660260111026. Retrieved 21 June 2020.",
+                    "<info> ^ a b c Kraemer KH, DiGiovanna JJ (March 2015). \"Forty years of research on xeroderma pigmentosum at the US National Institutes of Health\". Photochemistry and Photobiology. 91 (2): 452–9. doi:10.1111/php.12345. PMC 4355260. PMID 25220021.",
+                    "<info> ^ Almeida, Craig A.; Barry, Sheila A. (2011-08-26). Cancer: Basic Science and Clinical Aspects. John Wiley & Sons. ISBN 978-1-4443-5739-4.",
+                    "<info> ^ Walsh, Katie (23 March 2018). \"No spark in sick teen romance - Baltimore Sun\". Baltimore Sun. Tribune New Service. Archived from the original on 2018-07-09. Retrieved 2018-07-08.",
+                    "<info> ^ Holder K (1994-05-01). \"Family in Twilight for Sun-Sensitive Girls: Health: Two daughters have a rare genetic intolerance that leaves victims vulnerable to skin cancers, blindness and neurological damage after exposure to sunlight\". Associated Press. Retrieved 2017-09-14.",
+                    "<info> ^ Voros D (1994-04-15). \"Review: 'Children of the Dark'\". Variety. Retrieved 2017-09-14.",
+                    "<info> ^ 2017 Interview, capradio.org, 2017.",
+                    "<info> ^ \"Frequently Asked Questions\". Dean Koontz. Archived from the original on 24 August 2018. Retrieved 24 August 2018.",
+                    "<info> ^ \"A Rare Genetic Disorder Is Stalking the Children of the Navajo Nation In POV's 'Sun Kissed,' Premiering Thursday, Oct. 18, 2012, on PBS\". 7 June 2012. Archived from the original on 2018-06-29. Retrieved 2018-06-29.",
+                    "<info> ^ Ziff D. \"Hiding From the Sun\". The Albuquerque Journal. Retrieved 2018-06-29.",
+                    "<info> ^ Bender A (2013-03-06). \"Rare disease suddenly arises on Navajo Reservation\". People's World. Retrieved 2018-06-29.",
+                    "<info> ^ Khúc hát mặt trời (in Vietnamese), 7 November 2015, archived from the original on 2023-03-23, retrieved 2021-08-09",
+                    "",
+                    "=== External links ===",
+                    "<info> GeneReviews/NCBI/NIH/UW entry on xeroderma pigmentosum",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Xeroderma pigmentosum (XP) is a genetic disorder in which there is a decreased ability to repair DNA damage such as that caused by ultraviolet (UV) light.[1] Symptoms may include a severe sunburn after only a few minutes in the sun, freckling in sun-exposed areas, dry skin and changes in skin pigmentation.[1] Nervous system problems, such as hearing loss, poor coordination, loss of intellectual function and seizures, may also occur.[1] Complications include a high risk of skin cancer, with about half having skin cancer by age 10 without preventative efforts, and cataracts.[1] There may be a higher risk of other cancers such as brain cancers.[1]",
+                            "XP is autosomal recessive, with mutations in at least nine specific genes able to result in the condition.[1][6] Normally, the damage to DNA which occurs in skin cells from exposure to UV light is repaired by nucleotide excision repair.[1] In people with xeroderma pigmentosum, this damage is not repaired.[1] As more abnormalities form in DNA, cells malfunction and eventually become cancerous or die.[1] Diagnosis is typically suspected based on symptoms and confirmed by genetic testing.[5]",
+                            "There is no cure for XP.[6] Treatment involves completely avoiding UV exposure.[6] This includes protective clothing, sunscreen and dark sunglasses when out in daylight.[6]",
+                            "Prognosis/life expectancy in XP depends on three key factors, (1) the specific type (genetic variant) of XP a patient has (and within in that the most important factor is whether they have an XP subtype which is associated with neurological involvement); (2) what level of UV exposure they have had over their lifetime (which directly leads to the increased risk of skin and eye cancers) and (3) the extent to which they can access regular specialist medical care, including skin and eye checks, surgeries, other oncology treatment if needed and supportive care when their needs are  palliative.",
+                            "Research from the National XP service in the UK ([8]) shows that patients who regularly attend the XP service have significantly increased life expectancies compared to the  previously published US data, both for patients with a neurological deterioration and those without. This is likely to be multifactorial. Patients are diagnosed early and are better educated on the need to UV protect and know the optimum methods for this. Often patients  become good at recognising early skin cancers and this along with the regular medical checks means skin and eye cancers can be removed in a timely manner. Lastly patients can access modern treatments that can be effective with high grade cancers or in decreasing the complications associated with neurological variants of XP.",
+                            "Research shows that patients in the UK with XP who attend the National XP service have a life expectancy of 50 years for those with neurological involvement and 81 years for those without ([8]) . The latter is comparable to the general UK population. These estimates maybe inappropriate for patients from other countries, where their exposure to UV is much greater and/or access to medical care significantly harder.",
+                            "It is worth noting that determining an accurate life expectancy in XP has been limited by the very small numbers of patients with XP who have often not been followed up consistently. Therefore the ages quoted online for life expectancy in XP on non-specialist websites are often misleading and can set unhelpful expectations for patients and their families (e.g. https://myriad.com/)",
+                            "Retinoid creams may help decrease the risk of skin cancer.[6] Vitamin D supplementation is generally required.[5] If skin cancer occurs, it is treated in the usual way.[6]",
+                            "The disease affects about 1 in 100,000 worldwide.[3] By region, it affects about 1 in 20,000 in Japan, 1 in 250,000 people in the United States and 1 in 430,000 in Europe.[7] It occurs equally commonly in males and females.[9] Xeroderma pigmentosum was first described in the 1870s by Moritz Kaposi.[5][9] In 1882, Kaposi coined the term xeroderma pigmentosum for the condition, referring to its characteristic dry, pigmented skin.[9] Individuals with the disease have been referred to as \"children of the night\" or \"moon children\".[10]"
+                        ]
+                    },
+                    "Signs and symptoms": {
+                        "content": [
+                            "Signs and symptoms of xeroderma pigmentosum may include:[citation needed]",
+                            "<info> Severe sunburn when exposed to only small amounts of sunlight. These often occur during a child's first exposure to sunlight.",
+                            "<info> Development of many freckles at an early age",
+                            "<info> Rough-surfaced growths (solar keratoses), and skin cancers",
+                            "<info> Eyes that are painfully sensitive to the sun and may easily become irritated, bloodshot and clouded",
+                            "<info> Blistering or freckling on minimum sun exposure",
+                            "<info> Limited growth of hair on chest and legs",
+                            "<info> Irregular dark spots on the skin"
+                        ]
+                    },
+                    "Genetics": {
+                        "content": [
+                            "One of the most frequent defects in xeroderma pigmentosum is an autosomal recessive genetic defect in which nucleotide excision repair (NER) enzymes are mutated, leading to a reduction in or elimination of NER.[11] If left unchecked, damage caused by ultraviolet light can cause mutations in individual cell's DNA. The causes of the neurological abnormalities are poorly understood and are not connected with exposure to ultraviolet light. The most current theories suggest that oxidative DNA damage is generated during normal metabolism in the central nervous system, and that some types of this damage must be repaired by NER.[12]",
+                            "Since DNA repair is under genetic control, it can mutate. Many genetic disorders such as xeroderma pigmentosum (XP; MIM 278700) are caused by mutations in genes that repair damaged DNA. XP affects the mechanism that repairs UV damage in skin cell DNA. Those affected with the autosomal recessive disorder XP are extremely sensitive to UV light produced by the sun and develop pigmented spots, tumors, and skin cancer with minimal exposure. Individuals with XP are about 1,000 times more likely to develop skin cancer than individuals without the disorder.[citation needed]",
+                            "The molecular defects in XP cells result in a greatly elevated induction of mutations in sun-exposed skin of affected individuals. This increased mutation frequency probably accounts for the pigmentation changes and the skin cancers. Examination of mutations in the p53 gene in tumors from XP patients reveal p53 mutations characteristic of UV exposure in the majority of tumors[13] As with all genetic disorders, genetic counseling and psychological support is appropriate for the families to discuss probability of occurrence in future pregnancies, feelings of isolation and concern about career prospects. There is no cure for xeroderma pigmentosum. The most common fate for individuals with XP is early death from cancer.  [citation needed]",
+                            "The XPA protein acts during NER as a scaffold for assembly of other DNA repair proteins at sites of DNA damage to ensure appropriate excision of the damage.[14]",
+                            "The XPB (ERCC3) protein is employed in unwinding the DNA double helix after DNA damage is initially recognized. Mutations in the XPB(ERCC3) gene can lead to XP or XP combined with Cockayne syndrome.[15]",
+                            "The XPC protein forms a complex with RAD23B protein to form the initial damage recognition factor in global genomic nucleotide excision repair (GG-NER).[16] This complex recognizes a wide variety of damages that thermodynamically destabilize DNA duplexes.[citation needed]",
+                            "The XPD (ERCC2) protein, in combination with the XPB helicase-containing transcription/repair complex TFIIH, is employed in unwinding the DNA duplex after damage is initially recognized. Mutations in the XPD(ERCC2) gene cause a variety of syndromes; XP, trichothiodystrophy (TTD), or a combination of XP and Cockayne syndrome (XPCS).[17][18] Both trichothiodystrophy and Cockayne syndrome display features of premature aging, suggesting an association between deficient DNA repair and premature aging .[citation needed]",
+                            "XPE is a heterodimeric protein composed of two subunits. The larger subunit DDB1 primarily functions as a core component of CUL4A- and CUL4B-based E3 ubiquitin ligase complexes. Substrates that are ubiquitinnated by these complexes include proteins employed in DNA repair.[19]",
+                            "The XPF (ERCC4) protein together with the ERCC1 protein forms a complex usually designated ERCC1-XPF. This complex separates the DNA helix for a short distance on either side of the site of damage. It then acts as an endonuclease to incise the damaged DNA strand on the 5' side of the damaged site.[20] Mutant cells with deficient ERCC1-XPF are not only defective in NER, but also in the repair of double-strand breaks and inter-strand crosslinks.[citation needed]",
+                            "The XPG protein is an endonuclease that incises DNA during NER at the 3' side of the damaged nucleotide. Mutations in the XPG (ERCC5) gene can lead to XP alone, or in combination with Cockayne syndrome (CS), or in combination with infantile lethal cerebro-oculo-facio-skeletal syndrome.[21]"
+                        ]
+                    },
+                    "Diagnosis": {
+                        "content": [
+                            "There are seven complementation groups, plus one variant form:"
+                        ]
+                    },
+                    "Treatment": {
+                        "content": [
+                            "There is no cure for the disorder; all treatment is symptomatic or preventive. Symptoms can be avoided or controlled by completely avoiding exposure to sunlight, either by staying indoors or wearing protective clothing and using sunscreen when outdoors.[22] Keratosis can also be treated by using cryotherapy or fluorouracil.[4] In more severe cases of XP, even minuscule amounts of UV light, for example, from covered windows or fluorescent bulbs, can be very dangerous and trigger symptoms.[23]",
+                            "On September 10, 2020, Clinuvel Pharmaceuticals announced that it was investigating the use of its FDA-approved flagship drug Scenesse as a potential treatment to increase pain-free light exposure for patients with xeroderma pigmentosum.[24][25][26]"
+                        ]
+                    },
+                    "Prognosis": {
+                        "content": [
+                            "In the United States, the probability for individuals with the disorder to survive until 40 years of age may be as high as 70% if they have never been exposed to sunlight in their life.[27]",
+                            "If a person is diagnosed early, does not have severe neurological symptoms, and takes precautionary measures to completely avoid any exposure to UV light and sunlight, they may be able to survive until middle age.[citation needed]"
+                        ]
+                    },
+                    "History": {
+                        "content": [
+                            "Xeroderma pigmentosum was first described in 1874 by Hebra and Moritz Kaposi. In 1882, Kaposi coined the term xeroderma pigmentosum for the condition, referring to its characteristic dry, pigmented skin.[citation needed]",
+                            "The 1968 paper about XP by James Cleaver demonstrated the link between UV-induced DNA damage, faulty DNA repair and cancer.[28]"
+                        ]
+                    },
+                    "Culture and society": {
+                        "content": [
+                            "Because people with XP need to strictly avoid sunlight, but can go outside at night, they have been called children of the dark, children of the night, and vampire children. These terms can be considered derogatory.[29]",
+                            "XP has been a plot element in several fictional works. One of the common themes in films about XP is whether teens with XP will risk sun exposure in pursuit of a romantic partner.[30]",
+                            "Film series like Children of Darkness, a German silent-drama film which was released in two parts in the year of 1921 and 1922 respectively, were among some of the initially popular movies that were made about XP.[citation needed]",
+                            "Other films, like the 1964 American drama film Della, starring Joan Crawford, Paul Burke, Charles Bickford and Diane Baker, directed by Robert Gist, which was originally produced by Four Star Television as a television pilot for a proposed NBC series named Royal Bay, was also based on this skin disease.[citation needed]",
+                            "The Dark Side of the Sun, a 1988 American-Yugoslavian drama film, was directed by Božidar Nikolić and stars Brad Pitt for his first ever leading role as a young man in search of a cure for his disorder.[citation needed]",
+                            "The Others, a 2001 American psychological horror film starring Nicole Kidman, features two children, Anne and Nicholas, who must avoid all sunlight because of a rare disease characterized by photosensitivity.[citation needed]",
+                            "A CBS television movie aired in 1994, Children of the Dark, was based on the story of the real-life couple Jim and Kim Harrison, whose two daughters have XP.[31][32]",
+                            "Lurlene McDaniel's young adult book How I Do Love Thee features the story \"Night Vision\", in which the protagonist, leukemia survivor Brett, falls in love with a girl named Shayla that has XP.[citation needed]",
+                            "Christopher Snow, the protagonist of novelist Dean Koontz's Moonlight Bay Trilogy, has XP and therefore must live most of his life during the night. The first two entries of the trilogy, Fear Nothing and Seize the Night, were both published in 1998. The final entry in the trilogy, tentatively titled Ride the Storm, has yet to be published as of August 2020.[33][34]",
+                            "The 2011 French drama film The Moon Child is based on a 13-year-old child with XP, which prevents him from exposing himself to daylight.",
+                            "The 2012 documentary Sun Kissed explores the XP problem on the Navajo Indian Reservation, and links it to the genetic legacy of the Long Walk of the Navajo, when the Navajo people were forced to move to a new location.[35][36][37]",
+                            "The 2016 Vietnamese romance drama Khúc hát mặt trời,  based on a 2006 Japanese film, A Song to the Sun, tells the story of a girl named Yến Phương with XP and the impact of her sickness on her life and relationships, following the story of Phương's accidental exposure to sunlight and subsequent neurological degeneration.[38]",
+                            "Midnight Sun is a 2018 American romantic drama film based on the 2006 Japanese film A Song to the Sun. The film was directed by Scott Speer and written by Eric Kirsten, and stars Bella Thorne, Patrick Schwarzenegger, and Rob Riggle.[citation needed]"
+                        ]
+                    },
+                    "Research directions": {
+                        "content": [
+                            "Research into XP has had two main results: better understanding the disease itself, and also better understanding the normal biological mechanisms involved in DNA repair.[28] Research into XP has produced insights that have been translated into treatments and prevention for cancer.[28]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> List of skin conditions",
+                            "<info> List of cutaneous conditions associated with increased risk of nonmelanoma skin cancer"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d e f g h i j k l m \"Xeroderma pigmentosum\". Genetics Home Reference. U.S. Library of Medicine. 26 June 2018. Retrieved 28 June 2018.",
+                            "<info> ^ a b \"Xeroderma pigmentosum\". dermnetnz.org. Retrieved 25 February 2020.",
+                            "<info> ^ a b c d e f g h \"Not found\". Archived from the original on 2022-10-26. Retrieved 2023-03-06.",
+                            "<info> ^ a b Halpern J, Hopping B, Brostoff JM (October 2008). \"Photosensitivity, corneal scarring and developmental delay: Xeroderma Pigmentosum in a tropical country\". Cases Journal. 1 (1) 254. doi:10.1186/1757-1626-1-254. PMC 2577106. PMID 18937855.",
+                            "<info> ^ a b c d e \"Xeroderma Pigmentosum\". NORD (National Organization for Rare Disorders). 2017. Retrieved 28 June 2018.",
+                            "<info> ^ a b c d e f g h \"Xeroderma pigmentosum\". Genetic and Rare Diseases Information Center (GARD). U.S. Department of Health and Human Services. 2018. Retrieved 28 June 2018.",
+                            "<info> ^ a b Lehmann AR, McGibbon D, Stefanini M (November 2011). \"Xeroderma pigmentosum\". Orphanet Journal of Rare Diseases. 6: 70. doi:10.1186/1750-1172-6-70. PMC 3221642. PMID 22044607.",
+                            "<info> ^ a b Paolino, Alexandra; Keogh, Ruth; Langan, Sinéad; Lehmann, Alan; Sarkany, Robert; Garrood, Isabel; Fassihi, Hiva (2025-06-27). \"PD09 Life expectancy of patients with xeroderma pigmentosum: evidence from a UK study\". British Journal of Dermatology. 193 (Supplement_1) ljaf085.261. doi:10.1093/bjd/ljaf085.261. ISSN 0007-0963.",
+                            "<info> ^ a b c Griffiths C, Barker J, Bleiker T, Chalmers R, Creamer D (2016). Rook's Textbook of Dermatology, 4 Volume Set. John Wiley & Sons. ISBN 978-1-118-44119-0.",
+                            "<info> ^ Salway JG (2011). Medical Biochemistry at a Glance. John Wiley & Sons. p. 313. ISBN 978-1-118-29240-2.",
+                            "<info> ^ Friedberg EC, Walker GC, Siede W, Wood RD, Schultz RA, Ellenberger T (2006). DNA repair and mutagenesis. Washington: ASM Press. p. 1118. ISBN 978-1-55581-319-2.",
+                            "<info> ^ Brooks PJ (July 2008). \"The 8,5'-cyclopurine-2'-deoxynucleosides: candidate neurodegenerative DNA lesions in xeroderma pigmentosum, and unique probes of transcription and nucleotide excision repair\". DNA Repair. 7 (7): 1168–79. doi:10.1016/j.dnarep.2008.03.016. PMC 2797313. PMID 18495558.",
+                            "<info> ^ Daya-Grosjean L, Sarasin A (April 2005). \"The role of UV induced lesions in skin carcinogenesis: an overview of oncogene and tumor suppressor gene modifications in xeroderma pigmentosum skin tumors\". Mutation Research. 571 (1–2): 43–56. Bibcode:2005MRFMM.571...43D. doi:10.1016/j.mrfmmm.2004.11.013. PMID 15748637.",
+                            "<info> ^ Sugitani N, Sivley RM, Perry KE, Capra JA, Chazin WJ (August 2016). \"XPA: A key scaffold for human nucleotide excision repair\". DNA Repair. 44: 123–135. doi:10.1016/j.dnarep.2016.05.018. PMC 4958585. PMID 27247238.",
+                            "<info> ^ Oh KS, Khan SG, Jaspers NG, Raams A, Ueda T, Lehmann A, Friedmann PS, Emmert S, Gratchev A, Lachlan K, Lucassan A, Baker CC, Kraemer KH (November 2006). \"Phenotypic heterogeneity in the XPB DNA helicase gene (ERCC3): xeroderma pigmentosum without and with Cockayne syndrome\". Human Mutation. 27 (11): 1092–103. doi:10.1002/humu.20392. PMID 16947863. S2CID 22852219.",
+                            "<info> ^ Sugasawa K, Ng JM, Masutani C, Iwai S, van der Spek PJ, Eker AP, Hanaoka F, Bootsma D, Hoeijmakers JH (August 1998). \"Xeroderma pigmentosum group C protein complex is the initiator of global genome nucleotide excision repair\". Molecular Cell. 2 (2): 223–32. doi:10.1016/s1097-2765(00)80132-x. PMID 9734359.",
+                            "<info> ^ Andressoo JO, Hoeijmakers JH, Mitchell JR (December 2006). \"Nucleotide excision repair disorders and the balance between cancer and aging\". Cell Cycle. 5 (24): 2886–8. doi:10.4161/cc.5.24.3565. PMID 17172862. S2CID 43682426.",
+                            "<info> ^ van de Ven M, Andressoo JO, van der Horst GT, Hoeijmakers JH, Mitchell JR (November 2012). \"Effects of compound heterozygosity at the Xpd locus on cancer and ageing in mouse models\". DNA Repair. 11 (11): 874–83. doi:10.1016/j.dnarep.2012.08.003. PMID 23046824.",
+                            "<info> ^ Iovine, B.; Iannella, M. L.; Bevilacqua, M. A. (2011). \"Damage-specific DNA binding protein 1 (DDB1): A protein with a wide range of functions\". The International Journal of Biochemistry & Cell Biology. 43 (12): 1664–1667. doi:10.1016/j.biocel.2011.09.001. PMID 21959250.",
+                            "<info> ^ Sijbers AM, de Laat WL, Ariza RR, Biggerstaff M, Wei YF, Moggs JG, Carter KC, Shell BK, Evans E, de Jong MC, Rademakers S, de Rooij J, Jaspers NG, Hoeijmakers JH, Wood RD (September 1996). \"Xeroderma pigmentosum group F caused by a defect in a structure-specific DNA repair endonuclease\". Cell. 86 (5): 811–22. doi:10.1016/s0092-8674(00)80155-5. hdl:1765/3110. PMID 8797827. S2CID 12957716.",
+                            "<info> ^ Barnhoorn S, Uittenboogaard LM, Jaarsma D, Vermeij WP, Tresini M, Weymaere M, Menoni H, Brandt RM, de Waard MC, Botter SM, Sarker AH, Jaspers NG, van der Horst GT, Cooper PK, Hoeijmakers JH, van der Pluijm I (October 2014). \"Cell-autonomous progeroid changes in conditional mouse models for repair endonuclease XPG deficiency\". PLOS Genetics. 10 (10) e1004686. doi:10.1371/journal.pgen.1004686. PMC 4191938. PMID 25299392.",
+                            "<info> ^ Nussbaum R, McInnes R, Willard H (2016-01-01). Genetics in Medicine. Elsevier. ISBN 978-14377-0696-3.",
+                            "<info> ^ \"Xeroderma pigmentosum\". India Today. September 24, 2014. Archived from the original on 2020-07-05. Retrieved 2020-07-05.",
+                            "<info> ^ \"SCENESSE® (afamelanotide 16mg) – Welcome to CLINUVEL\". Archived from the original on 2020-10-20. Retrieved 2020-09-24.",
+                            "<info> ^ Commissioner, Office of the (2020-03-24). \"FDA approves first treatment to increase pain-free light exposure in patients with a rare disorder\". FDA. Retrieved 2020-09-24.[dead link]",
+                            "<info> ^ \"Scenesse (afamelanotide) for adults with a history of phototoxic reactions from EPP\". SCENESSE® (Afamelanotide). Retrieved 2020-09-24.",
+                            "<info> ^ Kraemer, Kenneth H. (1 February 1987). \"Xeroderma Pigmentosum\". Archives of Dermatology. 123 (2): 241. doi:10.1001/archderm.1987.01660260111026. Retrieved 21 June 2020.",
+                            "<info> ^ a b c Kraemer KH, DiGiovanna JJ (March 2015). \"Forty years of research on xeroderma pigmentosum at the US National Institutes of Health\". Photochemistry and Photobiology. 91 (2): 452–9. doi:10.1111/php.12345. PMC 4355260. PMID 25220021.",
+                            "<info> ^ Almeida, Craig A.; Barry, Sheila A. (2011-08-26). Cancer: Basic Science and Clinical Aspects. John Wiley & Sons. ISBN 978-1-4443-5739-4.",
+                            "<info> ^ Walsh, Katie (23 March 2018). \"No spark in sick teen romance - Baltimore Sun\". Baltimore Sun. Tribune New Service. Archived from the original on 2018-07-09. Retrieved 2018-07-08.",
+                            "<info> ^ Holder K (1994-05-01). \"Family in Twilight for Sun-Sensitive Girls: Health: Two daughters have a rare genetic intolerance that leaves victims vulnerable to skin cancers, blindness and neurological damage after exposure to sunlight\". Associated Press. Retrieved 2017-09-14.",
+                            "<info> ^ Voros D (1994-04-15). \"Review: 'Children of the Dark'\". Variety. Retrieved 2017-09-14.",
+                            "<info> ^ 2017 Interview, capradio.org, 2017.",
+                            "<info> ^ \"Frequently Asked Questions\". Dean Koontz. Archived from the original on 24 August 2018. Retrieved 24 August 2018.",
+                            "<info> ^ \"A Rare Genetic Disorder Is Stalking the Children of the Navajo Nation In POV's 'Sun Kissed,' Premiering Thursday, Oct. 18, 2012, on PBS\". 7 June 2012. Archived from the original on 2018-06-29. Retrieved 2018-06-29.",
+                            "<info> ^ Ziff D. \"Hiding From the Sun\". The Albuquerque Journal. Retrieved 2018-06-29.",
+                            "<info> ^ Bender A (2013-03-06). \"Rare disease suddenly arises on Navajo Reservation\". People's World. Retrieved 2018-06-29.",
+                            "<info> ^ Khúc hát mặt trời (in Vietnamese), 7 November 2015, archived from the original on 2023-03-23, retrieved 2021-08-09"
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> GeneReviews/NCBI/NIH/UW entry on xeroderma pigmentosum"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

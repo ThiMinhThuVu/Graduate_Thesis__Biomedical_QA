@@ -1,0 +1,105 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/cerebroside": {
+                "title": "Cerebroside",
+                "url": "https://en.wikipedia.org/wiki/cerebroside",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Cerebrosides (monoglycosylceramides) are a group of glycosphingolipids which are important components of animal muscle and nerve cell membranes.",
+                    "They consist of a ceramide with a single sugar residue at the 1-hydroxyl moiety. The sugar residue can be either glucose or galactose; the two major types are therefore called glucocerebrosides (a.k.a. glucosylceramides) and galactocerebrosides (a.k.a. galactosylceramides). Galactocerebrosides are typically found in neural tissue, while glucocerebrosides are found in other tissues.",
+                    "",
+                    "=== Structure ===",
+                    "The fundamental structure of a cerebroside is ceramide. Monoglycosyl and oligoglycosylceramides having a mono or polysaccharide bonded glycosidically to the terminal OH group of ceramide are defined as cerebrosides. Sphingosine is the main long-chain base present in ceramide.",
+                    "Galactosylceramide is the principal glycosphingolipid in brain tissue. Galactosylceramides are present in all nervous tissues, and can compose up to 2% dry weight of grey matter and 12% of white matter. They are major constituents of oligodendrocytes. Glucosylceramide is found at low levels in animal cells such as the spleen, erythrocytes, and nervous tissues, especially neurons. Glucosylceramide is a major constituent of skin lipids, where it is essential for lamellar body formation in the stratum corneum and to maintain the water permeability barrier of the skin. Glucosylceramide is the only glycosphingolipid common to plants, fungi and animals. It is usually considered to be the principal glycosphingolipid in plants. It is a major component of the outer layer of the plasma membrane. Galactosylceramides have not been found in plants.",
+                    "Monogalactosylceramide is the largest single component of the myelin sheath of nerves. Cerebroside synthesis can therefore give a measurement of myelin formation or remyelination.[1] The sugar moiety is linked glycosidically to the C-1 hydroxyl group of ceramide, such as in lactosylceramide. Cerebrosides containing a sulfuric ester (sulfate) group, known as sulfatides, also occur in the myelin sheath of nerves. These compounds are preferably named as sulfates of the parent glycosphingolipid.",
+                    "",
+                    "=== Synthesis ===",
+                    "The biosynthesis of monoglycosylceramides requires a direct transfer of the carbohydrate moiety from a sugar-nucleotide, such as uridine 5-diphosphate(UDP)-galactose, or UDP-glucose to the ceramide unit. The glycosyl-transferase catalyzed reaction results in an inversion of the glycosidic bond stereochemistry, changing from α →β. Synthesis of galactosylceramide, and glucosylceramide occurs on the lumenal surface of the endoplasmic reticulum, and on the cytosolic side of the early Golgi membranes respectively.",
+                    "",
+                    "=== Physical properties ===",
+                    "The melting point of cerebrosides is considerably greater than physiological body temperature, >37.0 °C, giving glycolipids a paracrystalline, similar to liquid crystal structure. Cerebroside molecules are able form up to eight intermolecular hydrogen bonds between the polar hydrogens of the sugar and the hydroxy and amide groups of the sphingosine base of the ceramide. These hydrogen bonds within the cerebrosides result in the molecules having a high transition temperature and compact alignment. Monoglycosylceramides in conjunction with cholesterol are prevalent in the lipid-raft micro domain, which are important sites in the binding of proteins, and enzyme-receptor interactions.",
+                    "",
+                    "=== Catabolism ===",
+                    "Degradation of glycosphingolipids occurs in the lysosome, which contains digestive enzymes in animal cells. The lysosome breaks down the glycosphingolipid to its primary components, fatty acids, sphingosine, and saccharide.[2]",
+                    "",
+                    "=== Chemical analysis ===",
+                    "Analysis of monoglycosylceramides can be done by high-resolution thin-layer chromatography, high-performance liquid chromatography (HPLC), and mass spectrometry. Reversed-phase HPLC is now the standard method for separation of molecular species, often after benzoylation, enabling lipids to be detected by UV spectrophotometry.",
+                    "",
+                    "=== Role in disease ===",
+                    "A defect in the degradation of glucocerebrosides is Gaucher's disease. The corresponding defects for galactocerebrosides are:",
+                    "a) Ceramide trihexoside (globotriaosylceramide) accumulation – Fabry's disease. Clinical features include acroparaesthesia (tingling, pins and needles sensation in the extremities)[3]",
+                    "b) Galactocerebroside (galactosylceramidase) accumulation – Krabbe disease.[4]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ Jurevics, H; Hostettler, J; Muse, ED; Sammond, DW; Matsushima, GK; Toews, AD; Morell, P (May 2001). \"Cerebroside synthesis as a measure of the rate of remyelination following cuprizone-induced demyelination in brain\". Journal of Neurochemistry. 77 (4): 1067–76. doi:10.1046/j.1471-4159.2001.00310.x. PMID 11359872.",
+                    "<info> ^ Yanagihara, T; Cumings, JN (1969). \"Fatty acid composition of cerebrosides and cerebroside sulphatides in cerebral oedema\". Acta Neuropathologica. 12 (1): 62–67. doi:10.1007/BF00685311. PMID 4303520. S2CID 244169.",
+                    "<info> ^ Harvey, James (18 January 2021). \"Acroparesthesia\". Radiopaedia. Retrieved 3 August 2023.",
+                    "<info> ^ \"Krabbe Disease\". National Institute of Neurological Disorders and Stroke. National Institutes of Health. Retrieved 3 August 2023.",
+                    "",
+                    "=== External links ===",
+                    "<info> Cerebrosides at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> The Lipid Library: Monoglycosylceramides",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Cerebrosides (monoglycosylceramides) are a group of glycosphingolipids which are important components of animal muscle and nerve cell membranes.",
+                            "They consist of a ceramide with a single sugar residue at the 1-hydroxyl moiety. The sugar residue can be either glucose or galactose; the two major types are therefore called glucocerebrosides (a.k.a. glucosylceramides) and galactocerebrosides (a.k.a. galactosylceramides). Galactocerebrosides are typically found in neural tissue, while glucocerebrosides are found in other tissues."
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "The fundamental structure of a cerebroside is ceramide. Monoglycosyl and oligoglycosylceramides having a mono or polysaccharide bonded glycosidically to the terminal OH group of ceramide are defined as cerebrosides. Sphingosine is the main long-chain base present in ceramide.",
+                            "Galactosylceramide is the principal glycosphingolipid in brain tissue. Galactosylceramides are present in all nervous tissues, and can compose up to 2% dry weight of grey matter and 12% of white matter. They are major constituents of oligodendrocytes. Glucosylceramide is found at low levels in animal cells such as the spleen, erythrocytes, and nervous tissues, especially neurons. Glucosylceramide is a major constituent of skin lipids, where it is essential for lamellar body formation in the stratum corneum and to maintain the water permeability barrier of the skin. Glucosylceramide is the only glycosphingolipid common to plants, fungi and animals. It is usually considered to be the principal glycosphingolipid in plants. It is a major component of the outer layer of the plasma membrane. Galactosylceramides have not been found in plants.",
+                            "Monogalactosylceramide is the largest single component of the myelin sheath of nerves. Cerebroside synthesis can therefore give a measurement of myelin formation or remyelination.[1] The sugar moiety is linked glycosidically to the C-1 hydroxyl group of ceramide, such as in lactosylceramide. Cerebrosides containing a sulfuric ester (sulfate) group, known as sulfatides, also occur in the myelin sheath of nerves. These compounds are preferably named as sulfates of the parent glycosphingolipid."
+                        ]
+                    },
+                    "Synthesis": {
+                        "content": [
+                            "The biosynthesis of monoglycosylceramides requires a direct transfer of the carbohydrate moiety from a sugar-nucleotide, such as uridine 5-diphosphate(UDP)-galactose, or UDP-glucose to the ceramide unit. The glycosyl-transferase catalyzed reaction results in an inversion of the glycosidic bond stereochemistry, changing from α →β. Synthesis of galactosylceramide, and glucosylceramide occurs on the lumenal surface of the endoplasmic reticulum, and on the cytosolic side of the early Golgi membranes respectively."
+                        ]
+                    },
+                    "Physical properties": {
+                        "content": [
+                            "The melting point of cerebrosides is considerably greater than physiological body temperature, >37.0 °C, giving glycolipids a paracrystalline, similar to liquid crystal structure. Cerebroside molecules are able form up to eight intermolecular hydrogen bonds between the polar hydrogens of the sugar and the hydroxy and amide groups of the sphingosine base of the ceramide. These hydrogen bonds within the cerebrosides result in the molecules having a high transition temperature and compact alignment. Monoglycosylceramides in conjunction with cholesterol are prevalent in the lipid-raft micro domain, which are important sites in the binding of proteins, and enzyme-receptor interactions."
+                        ]
+                    },
+                    "Catabolism": {
+                        "content": [
+                            "Degradation of glycosphingolipids occurs in the lysosome, which contains digestive enzymes in animal cells. The lysosome breaks down the glycosphingolipid to its primary components, fatty acids, sphingosine, and saccharide.[2]"
+                        ]
+                    },
+                    "Chemical analysis": {
+                        "content": [
+                            "Analysis of monoglycosylceramides can be done by high-resolution thin-layer chromatography, high-performance liquid chromatography (HPLC), and mass spectrometry. Reversed-phase HPLC is now the standard method for separation of molecular species, often after benzoylation, enabling lipids to be detected by UV spectrophotometry."
+                        ]
+                    },
+                    "Role in disease": {
+                        "content": [
+                            "A defect in the degradation of glucocerebrosides is Gaucher's disease. The corresponding defects for galactocerebrosides are:",
+                            "a) Ceramide trihexoside (globotriaosylceramide) accumulation – Fabry's disease. Clinical features include acroparaesthesia (tingling, pins and needles sensation in the extremities)[3]",
+                            "b) Galactocerebroside (galactosylceramidase) accumulation – Krabbe disease.[4]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ Jurevics, H; Hostettler, J; Muse, ED; Sammond, DW; Matsushima, GK; Toews, AD; Morell, P (May 2001). \"Cerebroside synthesis as a measure of the rate of remyelination following cuprizone-induced demyelination in brain\". Journal of Neurochemistry. 77 (4): 1067–76. doi:10.1046/j.1471-4159.2001.00310.x. PMID 11359872.",
+                            "<info> ^ Yanagihara, T; Cumings, JN (1969). \"Fatty acid composition of cerebrosides and cerebroside sulphatides in cerebral oedema\". Acta Neuropathologica. 12 (1): 62–67. doi:10.1007/BF00685311. PMID 4303520. S2CID 244169.",
+                            "<info> ^ Harvey, James (18 January 2021). \"Acroparesthesia\". Radiopaedia. Retrieved 3 August 2023.",
+                            "<info> ^ \"Krabbe Disease\". National Institute of Neurological Disorders and Stroke. National Institutes of Health. Retrieved 3 August 2023."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Cerebrosides at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> The Lipid Library: Monoglycosylceramides"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

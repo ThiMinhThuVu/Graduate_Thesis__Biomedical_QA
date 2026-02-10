@@ -1,0 +1,13 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/vitamin_b12": {
+                "title": "Vitamin B12",
+                "url": "https://en.wikipedia.org/wiki/vitamin_b12",
+                "source": "tool 1 - request",
+                "content": [],
+                "sections": {}
+            }
+        }
+    }
+}

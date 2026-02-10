@@ -1,0 +1,117 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/enolase_2": {
+                "title": "Enolase 2",
+                "url": "https://en.wikipedia.org/wiki/enolase_2",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Gamma-enolase, also known as enolase 2 (ENO2) or neuron specific enolase (NSE), is an enzyme that in humans is encoded by the ENO2 gene.[5][6] Gamma-enolase is a phosphopyruvate hydratase.",
+                    "Gamma-enolase is one of the three enolase isoenzymes found in mammals. This isoenzyme, a homodimer, is found in mature neurons and cells of neuronal origin. A switch from alpha enolase to gamma enolase occurs in neural tissue during development in rats and primates.[5]",
+                    "",
+                    "=== Interactive pathway map ===",
+                    "Click on genes, proteins and metabolites below to link to respective articles.[§ 1]",
+                    "<info> ^ The interactive pathway map can be edited at WikiPathways: \"GlycolysisGluconeogenesis_WP534\".",
+                    "",
+                    "=== Utility ===",
+                    "Detection of NSE with antibodies can be used to identify neuronal cells and cells with neuroendocrine differentiation. NSE is produced by small-cell carcinomas, which are neuroendocrine in origin.  NSE is therefore a useful tumor marker for distinguishing small-cell carcinomas from other tumors.[7]",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000111674 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000004267 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ a b \"ENO2 enolase 2 (gamma, neuronal)\". NCBI Entrez Gene database.",
+                    "<info> ^ Online Mendelian Inheritance in Man (OMIM): Enolase 2 - 131360",
+                    "<info> ^ Clegg N, Ferguson C, True LD, Arnold H, Moorman A, Quinn JE, Vessella RL, Nelson PS (April 2003). \"Molecular characterization of prostatic small-cell neuroendocrine carcinoma\". Prostate. 55 (1): 55–64. doi:10.1002/pros.10217. PMID 12640661. S2CID 8778642.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Oliva D, Calì L, Feo S, Giallongo A (1991). \"Complete structure of the human gene encoding neuron-specific enolase\". Genomics. 10 (1): 157–65. doi:10.1016/0888-7543(91)90496-2. PMID 2045099.",
+                    "<info> Craig SP, Day IN, Thompson RJ, Craig IW (1991). \"Localisation of neurone-specific enolase (ENO2) to 12p13\". Cytogenet. Cell Genet. 54 (1–2): 71–3. doi:10.1159/000132960. PMID 2249478.",
+                    "<info> Oliva D, Barba G, Barbieri G, Giallongo A, Feo S (1989). \"Cloning, expression and sequence homologies of cDNA for human gamma enolase\". Gene. 79 (2): 355–60. doi:10.1016/0378-1119(89)90217-5. PMID 2792767.",
+                    "<info> McAleese SM, Dunbar B, Fothergill JE, Hinks LJ, Day IN (1989). \"Complete amino acid sequence of the neurone-specific gamma isozyme of enolase (NSE) from human brain and comparison with the non-neuronal alpha form (NNE)\". Eur. J. Biochem. 178 (2): 413–7. doi:10.1111/j.1432-1033.1988.tb14465.x. PMID 3208766.",
+                    "<info> Van Obberghen E, Kamholz J, Bishop JG, Zomzely-Neurath C, Lazzarini RA, Lazzarini RA (1988). \"Human gamma enolase: isolation of a cDNA clone and expression in normal and tumor tissues of human origin\". J. Neurosci. Res. 19 (4): 450–6. doi:10.1002/jnr.490190409. PMID 3385803. S2CID 20636218.",
+                    "<info> Day IN, Allsopp MT, Moore DC, Thompson RJ (1987). \"Sequence conservation in the 3'-untranslated regions of neurone-specific enolase, lymphokine and protooncogene mRNAs\". FEBS Lett. 222 (1): 139–43. Bibcode:1987FEBSL.222..139D. doi:10.1016/0014-5793(87)80207-7. PMID 3653393. S2CID 8011122.",
+                    "<info> Haimoto H, Takahashi Y, Koshikawa T, Nagura H, Kato K (1985). \"Immunohistochemical localization of gamma-enolase in normal human tissues other than nervous and neuroendocrine tissues\". Lab. Invest. 52 (3): 257–63. PMID 3974199.",
+                    "<info> Quan CP, Watanabe S, Vuillier F, Pires R, Matsuo T, Stanislawski M, Pillot J, Bouvet JP (1993). \"Purification and partial amino acid sequence of suppressive lymphokine from a CD8+ CD57+ human T hybridoma\". Immunology. 78 (2): 205–9. PMC 1421811. PMID 7682534.",
+                    "<info> Angelov DN, Neiss WF, Gunkel A, Guntinas-Lichius O, Stennert E (1994). \"Axotomy induces intranuclear immunolocalization of neuron-specific enolase in facial and hypoglossal neurons of the rat\". J. Neurocytol. 23 (4): 218–33. doi:10.1007/BF01275526. PMID 8035205. S2CID 10829701.",
+                    "<info> Pechumer H, Bender-Götze C, Ziegler-Heitbrock HW (1994). \"Detection of neuron-specific gamma-enolase messenger ribonucleic acid in normal human leukocytes by polymerase chain reaction amplification with nested primers\". Lab. Invest. 69 (6): 743–9. PMID 8264236.",
+                    "<info> Ansari-Lari MA, Shen Y, Muzny DM, Lee W, Gibbs RA (1997). \"Large-scale sequencing in human chromosome 12p13: experimental and computational gene structure determination\". Genome Res. 7 (3): 268–80. doi:10.1101/gr.7.3.268. PMID 9074930.",
+                    "<info> Lau L (2002). \"Neuroblastoma: a single institution's experience with 128 children and an evaluation of clinical and biological prognostic factors\". Pediatric Hematology and Oncology. 19 (2): 79–89. doi:10.1080/08880010252825669. PMID 11881792. S2CID 24248646.",
+                    "<info> Wijnberger LD, Nikkels PG, van Dongen AJ, Noorlander CW, Mulder EJ, Schrama LH, Visser GH (2002). \"Expression in the placenta of neuronal markers for perinatal brain damage\". Pediatr. Res. 51 (4): 492–6. doi:10.1203/00006450-200204000-00015. PMID 11919335.",
+                    "<info> O'Dwyer DT, Clifton V, Hall A, Smith R, Robinson P, Crock P (2002). \"Pituitary autoantibodies in lymphocytic hypophysitis target both gamma- and alpha-Enolase - a link with pregnancy?\". Arch. Physiol. Biochem. 110 (1–2): 94–8. doi:10.1076/apab.110.1.94.897. PMID 11935405. S2CID 24218508.",
+                    "<info> Chekhonin VP, Zhirkov YA, Belyaeva IA, Ryabukhin IA, Gurina OI, Dmitriyeva TB (2002). \"Serum time course of two brain-specific proteins, alpha(1) brain globulin and neuron-specific enolase, in tick-born encephalitis and Lyme disease\". Clin. Chim. Acta. 320 (1–2): 117–25. doi:10.1016/S0009-8981(02)00057-8. PMID 11983209.",
+                    "<info> Nakatsuka S, Nishiu M, Tomita Y, Miwa H, Takakuwa T, Iuchi K, Yamamoto S, Aozasa K (2005). \"Enhanced expression of neuron-specific enolase (NSE) in pyothorax-associated lymphoma (PAL)\". Jpn. J. Cancer Res. 93 (4): 411–6. doi:10.1111/j.1349-7006.2002.tb01272.x. PMC 5927012. PMID 11985791.",
+                    "<info> Fujiwara H, Arima N, Ohtsubo H, Matsumoto T, Kukita T, Kawada H, Imaizumi R, Ozaki A, Matsushita K (2002). \"Clinical significance of serum neuron-specific enolase in patients with adult T-cell leukemia\". Am. J. Hematol. 71 (2): 80–4. doi:10.1002/ajh.10190. PMID 12353304. S2CID 20608717.",
+                    "<info> Strausberg RL, Feingold EA, Grouse LH, Derge JG, Klausner RD, Collins FS, Wagner L, Shenmen CM, Schuler GD (2003). \"Generation and initial analysis of more than 15,000 full-length human and mouse cDNA sequences\". Proc. Natl. Acad. Sci. U.S.A. 99 (26): 16899–903. Bibcode:2002PNAS...9916899M. doi:10.1073/pnas.242603899. PMC 139241. PMID 12477932.",
+                    "<info> Rodríguez-Núñez A, Cid E, Rodríguez-García J, Camiña F, Rodríguez-Segade S, Castro-Gago M (2003). \"Neuron-specific enolase, nucleotides, nucleosides, purine bases, oxypurines and uric acid concentrations in cerebrospinal fluid of children with meningitis\". Brain Dev. 25 (2): 102–6. doi:10.1016/S0387-7604(02)00160-2. PMID 12581805. S2CID 26015330.",
+                    "<info> Muley T, Ebert W, Stieber P, Raith H, Holdenrieder S, Nagel D, Fürst H, Roth HJ, Luthe H (2003). \"Technical performance and diagnostic utility of the new Elecsys neuron-specific enolase enzyme immunoassay\" (PDF). Clin. Chem. Lab. Med. 41 (1): 95–103. doi:10.1515/CCLM.2003.017. PMID 12636057. S2CID 11971809.",
+                    "",
+                    "=== External links ===",
+                    "<info> Overview of all the structural information available in the PDB for UniProt: P09104 (Human Gamma-enolase) at the PDBe-KB.",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Gamma-enolase, also known as enolase 2 (ENO2) or neuron specific enolase (NSE), is an enzyme that in humans is encoded by the ENO2 gene.[5][6] Gamma-enolase is a phosphopyruvate hydratase.",
+                            "Gamma-enolase is one of the three enolase isoenzymes found in mammals. This isoenzyme, a homodimer, is found in mature neurons and cells of neuronal origin. A switch from alpha enolase to gamma enolase occurs in neural tissue during development in rats and primates.[5]"
+                        ]
+                    },
+                    "Interactive pathway map": {
+                        "content": [
+                            "Click on genes, proteins and metabolites below to link to respective articles.[§ 1]",
+                            "<info> ^ The interactive pathway map can be edited at WikiPathways: \"GlycolysisGluconeogenesis_WP534\"."
+                        ]
+                    },
+                    "Utility": {
+                        "content": [
+                            "Detection of NSE with antibodies can be used to identify neuronal cells and cells with neuroendocrine differentiation. NSE is produced by small-cell carcinomas, which are neuroendocrine in origin.  NSE is therefore a useful tumor marker for distinguishing small-cell carcinomas from other tumors.[7]"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000111674 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000004267 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ a b \"ENO2 enolase 2 (gamma, neuronal)\". NCBI Entrez Gene database.",
+                            "<info> ^ Online Mendelian Inheritance in Man (OMIM): Enolase 2 - 131360",
+                            "<info> ^ Clegg N, Ferguson C, True LD, Arnold H, Moorman A, Quinn JE, Vessella RL, Nelson PS (April 2003). \"Molecular characterization of prostatic small-cell neuroendocrine carcinoma\". Prostate. 55 (1): 55–64. doi:10.1002/pros.10217. PMID 12640661. S2CID 8778642."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Oliva D, Calì L, Feo S, Giallongo A (1991). \"Complete structure of the human gene encoding neuron-specific enolase\". Genomics. 10 (1): 157–65. doi:10.1016/0888-7543(91)90496-2. PMID 2045099.",
+                            "<info> Craig SP, Day IN, Thompson RJ, Craig IW (1991). \"Localisation of neurone-specific enolase (ENO2) to 12p13\". Cytogenet. Cell Genet. 54 (1–2): 71–3. doi:10.1159/000132960. PMID 2249478.",
+                            "<info> Oliva D, Barba G, Barbieri G, Giallongo A, Feo S (1989). \"Cloning, expression and sequence homologies of cDNA for human gamma enolase\". Gene. 79 (2): 355–60. doi:10.1016/0378-1119(89)90217-5. PMID 2792767.",
+                            "<info> McAleese SM, Dunbar B, Fothergill JE, Hinks LJ, Day IN (1989). \"Complete amino acid sequence of the neurone-specific gamma isozyme of enolase (NSE) from human brain and comparison with the non-neuronal alpha form (NNE)\". Eur. J. Biochem. 178 (2): 413–7. doi:10.1111/j.1432-1033.1988.tb14465.x. PMID 3208766.",
+                            "<info> Van Obberghen E, Kamholz J, Bishop JG, Zomzely-Neurath C, Lazzarini RA, Lazzarini RA (1988). \"Human gamma enolase: isolation of a cDNA clone and expression in normal and tumor tissues of human origin\". J. Neurosci. Res. 19 (4): 450–6. doi:10.1002/jnr.490190409. PMID 3385803. S2CID 20636218.",
+                            "<info> Day IN, Allsopp MT, Moore DC, Thompson RJ (1987). \"Sequence conservation in the 3'-untranslated regions of neurone-specific enolase, lymphokine and protooncogene mRNAs\". FEBS Lett. 222 (1): 139–43. Bibcode:1987FEBSL.222..139D. doi:10.1016/0014-5793(87)80207-7. PMID 3653393. S2CID 8011122.",
+                            "<info> Haimoto H, Takahashi Y, Koshikawa T, Nagura H, Kato K (1985). \"Immunohistochemical localization of gamma-enolase in normal human tissues other than nervous and neuroendocrine tissues\". Lab. Invest. 52 (3): 257–63. PMID 3974199.",
+                            "<info> Quan CP, Watanabe S, Vuillier F, Pires R, Matsuo T, Stanislawski M, Pillot J, Bouvet JP (1993). \"Purification and partial amino acid sequence of suppressive lymphokine from a CD8+ CD57+ human T hybridoma\". Immunology. 78 (2): 205–9. PMC 1421811. PMID 7682534.",
+                            "<info> Angelov DN, Neiss WF, Gunkel A, Guntinas-Lichius O, Stennert E (1994). \"Axotomy induces intranuclear immunolocalization of neuron-specific enolase in facial and hypoglossal neurons of the rat\". J. Neurocytol. 23 (4): 218–33. doi:10.1007/BF01275526. PMID 8035205. S2CID 10829701.",
+                            "<info> Pechumer H, Bender-Götze C, Ziegler-Heitbrock HW (1994). \"Detection of neuron-specific gamma-enolase messenger ribonucleic acid in normal human leukocytes by polymerase chain reaction amplification with nested primers\". Lab. Invest. 69 (6): 743–9. PMID 8264236.",
+                            "<info> Ansari-Lari MA, Shen Y, Muzny DM, Lee W, Gibbs RA (1997). \"Large-scale sequencing in human chromosome 12p13: experimental and computational gene structure determination\". Genome Res. 7 (3): 268–80. doi:10.1101/gr.7.3.268. PMID 9074930.",
+                            "<info> Lau L (2002). \"Neuroblastoma: a single institution's experience with 128 children and an evaluation of clinical and biological prognostic factors\". Pediatric Hematology and Oncology. 19 (2): 79–89. doi:10.1080/08880010252825669. PMID 11881792. S2CID 24248646.",
+                            "<info> Wijnberger LD, Nikkels PG, van Dongen AJ, Noorlander CW, Mulder EJ, Schrama LH, Visser GH (2002). \"Expression in the placenta of neuronal markers for perinatal brain damage\". Pediatr. Res. 51 (4): 492–6. doi:10.1203/00006450-200204000-00015. PMID 11919335.",
+                            "<info> O'Dwyer DT, Clifton V, Hall A, Smith R, Robinson P, Crock P (2002). \"Pituitary autoantibodies in lymphocytic hypophysitis target both gamma- and alpha-Enolase - a link with pregnancy?\". Arch. Physiol. Biochem. 110 (1–2): 94–8. doi:10.1076/apab.110.1.94.897. PMID 11935405. S2CID 24218508.",
+                            "<info> Chekhonin VP, Zhirkov YA, Belyaeva IA, Ryabukhin IA, Gurina OI, Dmitriyeva TB (2002). \"Serum time course of two brain-specific proteins, alpha(1) brain globulin and neuron-specific enolase, in tick-born encephalitis and Lyme disease\". Clin. Chim. Acta. 320 (1–2): 117–25. doi:10.1016/S0009-8981(02)00057-8. PMID 11983209.",
+                            "<info> Nakatsuka S, Nishiu M, Tomita Y, Miwa H, Takakuwa T, Iuchi K, Yamamoto S, Aozasa K (2005). \"Enhanced expression of neuron-specific enolase (NSE) in pyothorax-associated lymphoma (PAL)\". Jpn. J. Cancer Res. 93 (4): 411–6. doi:10.1111/j.1349-7006.2002.tb01272.x. PMC 5927012. PMID 11985791.",
+                            "<info> Fujiwara H, Arima N, Ohtsubo H, Matsumoto T, Kukita T, Kawada H, Imaizumi R, Ozaki A, Matsushita K (2002). \"Clinical significance of serum neuron-specific enolase in patients with adult T-cell leukemia\". Am. J. Hematol. 71 (2): 80–4. doi:10.1002/ajh.10190. PMID 12353304. S2CID 20608717.",
+                            "<info> Strausberg RL, Feingold EA, Grouse LH, Derge JG, Klausner RD, Collins FS, Wagner L, Shenmen CM, Schuler GD (2003). \"Generation and initial analysis of more than 15,000 full-length human and mouse cDNA sequences\". Proc. Natl. Acad. Sci. U.S.A. 99 (26): 16899–903. Bibcode:2002PNAS...9916899M. doi:10.1073/pnas.242603899. PMC 139241. PMID 12477932.",
+                            "<info> Rodríguez-Núñez A, Cid E, Rodríguez-García J, Camiña F, Rodríguez-Segade S, Castro-Gago M (2003). \"Neuron-specific enolase, nucleotides, nucleosides, purine bases, oxypurines and uric acid concentrations in cerebrospinal fluid of children with meningitis\". Brain Dev. 25 (2): 102–6. doi:10.1016/S0387-7604(02)00160-2. PMID 12581805. S2CID 26015330.",
+                            "<info> Muley T, Ebert W, Stieber P, Raith H, Holdenrieder S, Nagel D, Fürst H, Roth HJ, Luthe H (2003). \"Technical performance and diagnostic utility of the new Elecsys neuron-specific enolase enzyme immunoassay\" (PDF). Clin. Chem. Lab. Med. 41 (1): 95–103. doi:10.1515/CCLM.2003.017. PMID 12636057. S2CID 11971809."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Overview of all the structural information available in the PDB for UniProt: P09104 (Human Gamma-enolase) at the PDBe-KB."
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

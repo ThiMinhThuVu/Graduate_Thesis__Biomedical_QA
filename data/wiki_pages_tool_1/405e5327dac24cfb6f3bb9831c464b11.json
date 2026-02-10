@@ -1,0 +1,247 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/human_body_weight": {
+                "title": "Human body weight",
+                "url": "https://en.wikipedia.org/wiki/human_body_weight",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Human body weight is a person's mass or weight.",
+                    "Strictly speaking, body weight is the measurement of mass without items located on the person. Practically though, body weight may be measured with clothes on, but without shoes or heavy accessories such as mobile phones and wallets, and using manual or digital weighing scales. Excess or reduced body weight is regarded as an indicator of determining a person's health, with body volume measurement providing an extra dimension by calculating the distribution of body weight.",
+                    "",
+                    "=== Estimation in children ===",
+                    "There are a number of methods to estimate weight in children for circumstances (such as emergencies) when actual weight cannot be measured. Most involve a parent or health care provider guessing the child's weight through weight-estimation formulas. These formulas base their findings on the child's age and tape-based systems of weight estimation. Of the many formulas that have been used for estimating body weight, some include the Advanced Pediatric Life Support formula, the Leffler formula, and Theron formula.[1] There are also several types of tape-based systems for estimating children's weight, with the best-known being the Broselow tape.[2] The Broselow tape is based on length with weight read from the appropriate color area. Newer systems, such as the PAWPER tape, make use of a simple two-step process to estimate weight: the length-based weight estimation is modified according to the child's body habitus to increase the accuracy of the final weight prediction.[3]",
+                    "The Leffler formula is used for children 0–10 years of age.[1]  In those less than a year old, it is",
+                    "and for those 1–10 years old, it is",
+                    "where m is the number of kilograms the child weighs and am and ay respectively are the number of months or years old the child is.[1]",
+                    "The Theron formula is",
+                    "where m and ay are as above.[1]",
+                    "",
+                    "=== Fluctuation ===",
+                    "Body weight varies in small amounts throughout the day, as the amount of water in the body is not constant. It changes due to activities such as drinking, urinating, or exercise.[4] Professional sports participants may deliberately dehydrate themselves to enter a lower weight class, a practice known as weight cutting.[5]",
+                    "",
+                    "=== Ideal body weight ===",
+                    "Ideal body weight (IBW) was initially introduced by Ben J. Devine in 1974 to allow estimation of drug clearances in obese patients;[6] researchers have since shown that the metabolism of certain drugs relates more to IBW than total body weight.[7] The term was based on the use of insurance data that demonstrated the relative mortality for males and females according to different height-weight combinations.",
+                    "The most common estimation of IBW is by the Devine formula; other models exist and have been noted to give similar results.[7] Other methods used in estimating the ideal body weight are body mass index and the Hamwi method. The IBW is not the perfect fat measurement, as it does not show the fat or muscle percentage in one's body. For example, athletes' results may show that they are overweight when they are actually very fit and healthy. Machines like the dual-energy X-ray absorptiometry can accurately measure the percentage and weight of fat, muscle, and bone in a body.",
+                    "The Devine formula for calculating ideal body weight in adults is as follows:[7]",
+                    "<info> Male ideal body weight = 50 kilograms (110 lb) + 0.9 kilograms (2.0 lb) × (height (cm) − 152)",
+                    "<info> Female ideal body weight = 45.5 kilograms (100 lb) + 0.9 kilograms (2.0 lb) × (height (cm) − 152)",
+                    "The Hamwi method is used to calculate the ideal body weight of the general adult:[8]",
+                    "<info> Male ideal body weight = 48 kilograms (106 lb) + 1.1 kilograms (2.4 lb) × (height (cm) − 152)",
+                    "<info> Female ideal body weight = 45.4 kilograms (100 lb) + 0.9 kilograms (2.0 lb) × (height (cm) − 152)",
+                    "",
+                    "=== Usage ===",
+                    "Many disciplines in weightlifting or combat sports separate competitors into weight classes.",
+                    "Ideal body weight, specifically the Devine formula, is used clinically for multiple reasons, most commonly in estimating renal function in drug dosing, and predicting pharmacokinetics in morbidly obese patients.[9][10]",
+                    "",
+                    "=== Average weight around the world ===",
+                    "Researchers at the London School of Hygiene and Tropical Medicine published a study of average weights of adult humans in the journal BMC Public Health and at the United Nations conference Rio+20.[64]",
+                    "",
+                    "=== See also ===",
+                    "<info> Body mass index (BMI)",
+                    "<info> List of heaviest people",
+                    "<info> Stone (unit) § human body weight",
+                    "<info> Weight loss and weight gain",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c d So TY, Farrington E, Absher RK (June 2009). \"Evaluation of the accuracy of different methods used to estimate weights in the pediatric population\". Pediatrics. 123 (6): e1045–51. doi:10.1542/peds.2008-1968. PMID 19482737. S2CID 6009482.",
+                    "<info> ^ Lubitz, Deborah; Seidel, JS; Chameides, L; Luten, RC; Zaritsky, AL; Campbell, FW (1988). \"A rapid method for estimating weight and resuscitation drug dosages from length in the pediatric age group\". Ann Emerg Med. 17 (6): 576–81. doi:10.1016/S0196-0644(88)80396-2. PMID 3377285.",
+                    "<info> ^ Wells, Mike (2011). \"Clinical: The PAWPER Tape\". Sanguine. 1 (2). Retrieved 13 June 2013.",
+                    "<info> ^ Smith, Jessica (16 May 2013). \"Stop Hating the Scale\". Shape Magazine. Retrieved 23 January 2017.",
+                    "<info> ^ Lee, Orion (4 August 2013). \"Making Weight: Why Fighters Cut Weight and 3 Tips for Doing It\". Breaking Muscle. Retrieved 23 January 2017.",
+                    "<info> ^ McCarron, Margaret M.; Devine, Ben J. (1 November 1974). \"Clinical Pharmacy: Case Studies: Case Number 25 Gentamicin Therapy\". Drug Intell Clin Pharm. 8 (11): 650–5. doi:10.1177/106002807400801104. S2CID 80397846.",
+                    "<info> ^ a b c Pai, Manjunath P; Paloucek, Frank P (September 2000). \"The Origin of the \"Ideal\" Body Weight Equations\". The Annals of Pharmacotherapy. 34 (9): 1066–1069. doi:10.1345/aph.19381. PMID 10981254. S2CID 6213850.",
+                    "<info> ^ Bartlett, Stephen; Marian, Mary; Taren, Douglas; Muramoto, Myra L. (30 November 1997). Geriatric Nutrition Handbook. Jones & Bartlett Learning. p. 15. ISBN 978-0-412-13641-2.",
+                    "<info> ^ Jones, Graham RD (2011). \"Estimating Renal Function for Drug Dosing Decisions\". The Clinical Biochemist Reviews. 32 (2): 81–88. PMC 3100285. PMID 21611081.",
+                    "<info> ^ van Kraligen, S; van de Garde, EMW; Knibbe, CAJ; Diepstraten, J; Wiezer, MJ; van Ramshorst, B; Dongen, EPA (2011). \"Comparative evaluation of atracurium dosed on ideal body weight vs. total body weight in morbidly obese patients\". British Journal of Clinical Pharmacology. 71 (1): 34–40. doi:10.1111/j.1365-2125.2010.03803.x. PMC 3018024. PMID 21143499.",
+                    "<info> ^ a b c d e f g Walpole, Sarah C; Prieto-Merino, David; Edwards, Phil; Cleland, John; Stevens, Gretchen; Roberts, Ian; et al. (18 June 2012). \"The weight of nations: an estimation of adult human biomass\". BMC Public Health. 12 (1). BMC Public Health 2012, 12:439: 439. doi:10.1186/1471-2458-12-439. PMC 3408371. PMID 22709383.",
+                    "<info> ^ \"Afghanistan - STEPS 2018, National Non-Communicable Disease Risk Factors Survey\". World Health Organization. 2018. p. 40. AFG_2018_STEPS_v01.",
+                    "<info> ^ \"Algeria STEPS Survey 2002\" (PDF). World Health Organization. 2005. p. 70.",
+                    "<info> ^ \"Prevalence of noncommunicable disease risk factors in the Republic of Armenia, STEPS National Survey 2016\" (PDF). National Institute of Health. 2018. p. 167.",
+                    "<info> ^ \"National Health Survey: First results, Body Mass Index, waist circumference, height and weight - Australia\". Australian Bureau of Statistics. 2018.",
+                    "<info> ^ \"Azerbaijan State Statistics Committee, 2005\". Today.az. 7 May 2005. Retrieved 22 January 2011.",
+                    "<info> ^ \"Non-Communicable Disease Risk Factor Survey Bangladesh\" (PDF). World Health Organization. 2010. p. 120.",
+                    "<info> ^ Отдел антропологии и экологии Института истории НАН Беларуси (21 September 2012). \"Чем отличаются \"вчерашние\" белорусы от \"сегодняшних\"?\". news.tut.by. Archived from the original on 11 June 2020. Retrieved 11 October 2019.",
+                    "<info> ^ \"The Central America Diabetes Initiative (CAMDI), Survey of Diabetes, Hypertension and Chronic Disease Risk Factors\" (PDF). Pan American Health Organization. 2011. pp. 25–26, 61.",
+                    "<info> ^ \"Rapport final de l'enquête pour la surveillance des facteurs de risque des maladies non transmissibles par l'approche STEPSwise de l'OMS ENQUETE STEPS 2015 au Bénin\" (PDF). World Health Organization (in French). 2016. p. 90.",
+                    "<info> ^ \"National survey for noncommunicable disease risk factors and mental health using WHO STEPS approach in Bhutan\" (PDF). World Health Organization. 2014. p. 103.",
+                    "<info> ^ \"Botswana STEPS survey report on non-communicable disease risk factors\" (PDF). World Health Organization. 2014. p. 94.",
+                    "<info> ^ Do G1, em São Paulo (27 August 2010). \"G1 - Metade dos adultos brasileiros está acima do peso, segundo IBGE - notícias em Brasil\". G1.globo.com. Retrieved 13 July 2012.{{cite web}}:  CS1 maint: numeric names: authors list (link)",
+                    "<info> ^ \"The 2nd National Health and Nutritional Status Survey (NHANSS)\" (PDF). Ministry of Health Brunei Darussalam. 2014. p. 59.",
+                    "<info> ^ Bulgarian Academy of Sciences (2021). Енциклопедия България [Bulgarian Encyclopedia] (in Bulgarian). Книгомания. ISBN 978-619-195-294-6.",
+                    "<info> ^ \"Rapport de L'enquete Nationale sur la prevalence des principaux facteurs de risques communs aux maldies non transmissibles au Burkina Faso\" (PDF). World Health Organization (in French). 2014. p. 38.",
+                    "<info> ^ \"Prevalence of Non-communicable Disease Risk Factors in Cambodia\" (PDF). World Health Organization. 2010. p. 157.",
+                    "<info> ^ Kamadjeu, Raoul M; Edwards, Richard; Atanga, Joseph S; Kiawi, Emmanuel C; Unwin, Nigel; Mbanya, Jean-Claude (December 2006). \"Anthropometry measures and prevalence of obesity in the urban adult population of Cameroon: an update from the Cameroon Burden of Diabetes Baseline Survey\". BMC Public Health. 6 (1): 228. doi:10.1186/1471-2458-6-228. ISSN 1471-2458. PMC 1579217. PMID 16970806.",
+                    "<info> ^ Shields, Margot; Connor Gorber, Sarah; Janssen, Ian; Tremblay, Mark S. (November 2011). \"Bias in self-reported estimates of obesity in Canadian health surveys: an update on correction equations for adults\". Health Reports. 22 (3): 35–45. ISSN 0840-6529. PMID 22106788.",
+                    "<info> ^ Encuesta Nacional de Salud 2009–2010 Archived 12 March 2011 at the Wayback Machine (p. 81)",
+                    "<info> ^ \"The Central America Diabetes Initiative (CAMDI), Survey of Diabetes, Hypertension and Chronic Disease Risk Factors\" (PDF). Pan American Health Organization. 2011. pp. 25–26, 61.",
+                    "<info> ^ Cífková, Renata; Bruthans, Jan; Wohlfahrt, Peter; Krajčoviechová, Alena; Šulc, Pavel; Jozífová, Marie; Eremiášová, Lenka; Pudil, Jan; Linhart, Aleš; Widimský, Jiří; Filipovský, Jan (11 May 2020). Shimosawa, Tatsuo (ed.). \"30-year trends in major cardiovascular risk factors in the Czech population, Czech MONICA and Czech post-MONICA, 1985 – 2016/17\". PLOS ONE. 15 (5) e0232845. Bibcode:2020PLoSO..1532845C. doi:10.1371/journal.pone.0232845. ISSN 1932-6203. PMC 7213700. PMID 32392239.",
+                    "<info> ^ \"Cohort Profile: Estonian Biobank of the Estonian Genome Center, University of Tartu\". International Journal of Epidemiology. 44: 1142.",
+                    "<info> ^ \"Commission européenne, Eurobaromètre EB64.3 - calculs SPF Économie Direction générale Statistique et Information économique\". Archived from the original on 8 May 2009. Retrieved 8 January 2017.",
+                    "<info> ^ \"Non-communicable diseases risk-factor steps survey, Georgia, 2016. Executive summary\" (PDF). World Health Organization.",
+                    "<info> ^ Statistisches Bundesamt. \"Körpermaße nach Altersgruppen und Geschlecht\" (in German). Statistisches Bundesamt. Retrieved 5 January 2022.",
+                    "<info> ^ \"Summary of RDA for Indians - 2020, p. 7\" (PDF). nin.res.in.",
+                    "<info> ^ \"Resultater fra Den nasjonale folkehelseundersøkelsen 2020\" (PDF). Norwegian Institute of Public Health. p. 7.",
+                    "<info> ^ \"WHO STEPS Noncommunicable Disease Risk Factor Surveillance, Data Book For Oman\" (PDF). World Health Organization. 2017. p. 65.",
+                    "<info> ^ Non-Communicable Diseases Risk Factors Survey Pakistan. Pakistan Health Research Council 2016 (PDF). World Health Organization. 2016. p. 25. ISBN 978-969-499-008-8.",
+                    "<info> ^ \"Papua New Guinea NCD Risk Factors STEPS Report\" (PDF). World Health Organization. February 2014. p. 43.",
+                    "<info> ^ \"Chronic Disease Risk Factor Surveillance: Qatar STEPS Report 2012. The Supreme Council of Health. Qatar\" (PDF). World Health Organization. 2013. p. 53.",
+                    "<info> ^ Martinchik, A N; Laikam, K E; Kozyreva, N A; Keshabyants, E E; Mikhailov, N A; Baturin, A K; Smirnova, E A (2021). \"Распространение ожирения в различных социально-демографических группах населения России\" [The prevalence of obesity in various socio-demographic groups of the population of Russia]. Вопросы питания. 90 (3): 67–76. doi:10.33029/0042-8833-2021-90-3-67-76. PMID 34264558. S2CID 235907158. The body weight and height of respondents with a BMI of 18.5-24.9 kg/m2 can be considered as the average normal body weight and height of the adult population in Russia, which amounted to 70.6 kg and 175.4 cm for men, and 60.2 kg and 164 cm for women, respectively.",
+                    "<info> ^ \"Rwanda Non-communicable Diseases Risk Factors Report\" (PDF). World Health Organization. 2015. p. 81.",
+                    "<info> ^ \"2008 STEPwise Approach to Chronic Disease Risk Factor Survey Report\" (PDF). World Health Organization. 2008.",
+                    "<info> ^ \"WHO STEPwise Approach to NCD Surveillance, Country-Specific Standart Report, Saudi Arabia 2005\" (PDF). World Health Organization. 2005. p. 40.",
+                    "<info> ^ Maksimović, Miloš Ž; Gudelj Rakić, Jelena M.; Vlajinac, Hristina D.; Vasiljević, Nadja D.; Nikić, Marina I.; Marinković, Jelena M. (2016). \"Comparison of different anthropometric measures in the adult population in Serbia as indicators of obesity: data from the National Health Survey 2013\". Public Health Nutrition. 19 (12): 2246–2255. doi:10.1017/S1368980016000161. ISSN 1475-2727. PMC 10270894. PMID 26865391.",
+                    "<info> ^ \"The prevalence of the common risk factors of non-communicable diseases in Sierra Leone\" (PDF). World Health Organization. 2009. p. 12, 34.",
+                    "<info> ^ \"Solomon Islands NCD Risk Factors STEPS Report\" (PDF). World Health Organization. 2010. p. 43.",
+                    "<info> ^ \"시도별 성별 연령별 평균 체중 분포 현황: 일반\" (in Korean). KOSIS – Korean Statistical Information Service. 23 December 2021. Retrieved 7 February 2022.",
+                    "<info> ^ López-Sobaler, Ana M.; Aparicio, Aránzazu; Aranceta-Bartrina, Javier; Gil, Ángel; González-Gross, Marcela; Serra-Majem, Lluis; Varela-Moreiras, Gregorio; Ortega, Rosa M. (2016). \"Overweight and General and Abdominal Obesity in a Representative Sample of Spanish Adults: Findings from the ANIBES Study\". BioMed Research International. 2016: 1–11. doi:10.1155/2016/8341487. ISSN 2314-6133. PMC 4921130. PMID 27382572.",
+                    "<info> ^ \"Non Communicable Disease Risk Factor Survey Sri Lanka\" (PDF). World Health Organization. 2015. p. 81.",
+                    "<info> ^ \"Sudan STEPwise survey for non-communicable diseases risk factors 2016 report\" (PDF). World Health Organization. 2016. p. 73.",
+                    "<info> ^ \"6 kilo mer man och 4 kilo mer kvinna\" (in Swedish). Archived from the original on 27 February 2014. Retrieved 27 February 2014.",
+                    "<info> ^ \"Rapport final de l'enquête STEPS Togo 2010, Togo STEPS survey report\" (PDF). World Health Organization (in French). 2012. p. 61.",
+                    "<info> ^ \"Kingdom of Tonga NCD Risk Factors STEPS Report\" (PDF). World Health Organization. 2014. p. 122.",
+                    "<info> ^ \"Panamerican STEPS chronic non-communicable disease risk factor survey\" (PDF). World Health Organization. 2012. p. 99.",
+                    "<info> ^ \"National household health survey in Turkey prevalence of noncommunicable disease risk factors 2017\" (PDF). World Health Organization. 2018. pp. 28, 78.",
+                    "<info> ^ \"\"Распространненость факторов риска неинфекционных заболеваний в Туркменистане STEPS 2018\"\" (PDF). World Health Organization (in Russian). 2018. p. 62.",
+                    "<info> ^ \"Health Survey for England 2019 Overweight and obesity in adults and children\" (PDF). Nhs.uk. 15 September 2010.",
+                    "<info> ^ \"The Welsh Health Survey 2009, p. 58\" (PDF). Wales.gov.uk. 15 September 2010. Archived from the original (PDF) on 16 September 2013. Retrieved 22 January 2011.",
+                    "<info> ^ \"Social and Demographic Characteristics of Households of Ukraine\" (PDF). State Statistics Service of Ukraine.",
+                    "<info> ^ \"Anthropometric Reference Data for Children and Adults: United States, 2015–2018\" (PDF). Retrieved 17 February 2021.",
+                    "<info> ^ Data extracted from \"The world's fattest countries: how do you compare?\". The Daily Telegraph. 21 June 2012. Archived from the original on 12 January 2022. Retrieved 22 September 2016.",
+                    "",
+                    "=== External links ===",
+                    "<info> Media related to Human body weight at Wikimedia Commons",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Human body weight is a person's mass or weight.",
+                            "Strictly speaking, body weight is the measurement of mass without items located on the person. Practically though, body weight may be measured with clothes on, but without shoes or heavy accessories such as mobile phones and wallets, and using manual or digital weighing scales. Excess or reduced body weight is regarded as an indicator of determining a person's health, with body volume measurement providing an extra dimension by calculating the distribution of body weight."
+                        ]
+                    },
+                    "Estimation in children": {
+                        "content": [
+                            "There are a number of methods to estimate weight in children for circumstances (such as emergencies) when actual weight cannot be measured. Most involve a parent or health care provider guessing the child's weight through weight-estimation formulas. These formulas base their findings on the child's age and tape-based systems of weight estimation. Of the many formulas that have been used for estimating body weight, some include the Advanced Pediatric Life Support formula, the Leffler formula, and Theron formula.[1] There are also several types of tape-based systems for estimating children's weight, with the best-known being the Broselow tape.[2] The Broselow tape is based on length with weight read from the appropriate color area. Newer systems, such as the PAWPER tape, make use of a simple two-step process to estimate weight: the length-based weight estimation is modified according to the child's body habitus to increase the accuracy of the final weight prediction.[3]",
+                            "The Leffler formula is used for children 0–10 years of age.[1]  In those less than a year old, it is",
+                            "and for those 1–10 years old, it is",
+                            "where m is the number of kilograms the child weighs and am and ay respectively are the number of months or years old the child is.[1]",
+                            "The Theron formula is",
+                            "where m and ay are as above.[1]"
+                        ]
+                    },
+                    "Fluctuation": {
+                        "content": [
+                            "Body weight varies in small amounts throughout the day, as the amount of water in the body is not constant. It changes due to activities such as drinking, urinating, or exercise.[4] Professional sports participants may deliberately dehydrate themselves to enter a lower weight class, a practice known as weight cutting.[5]"
+                        ]
+                    },
+                    "Ideal body weight": {
+                        "content": [
+                            "Ideal body weight (IBW) was initially introduced by Ben J. Devine in 1974 to allow estimation of drug clearances in obese patients;[6] researchers have since shown that the metabolism of certain drugs relates more to IBW than total body weight.[7] The term was based on the use of insurance data that demonstrated the relative mortality for males and females according to different height-weight combinations.",
+                            "The most common estimation of IBW is by the Devine formula; other models exist and have been noted to give similar results.[7] Other methods used in estimating the ideal body weight are body mass index and the Hamwi method. The IBW is not the perfect fat measurement, as it does not show the fat or muscle percentage in one's body. For example, athletes' results may show that they are overweight when they are actually very fit and healthy. Machines like the dual-energy X-ray absorptiometry can accurately measure the percentage and weight of fat, muscle, and bone in a body.",
+                            "The Devine formula for calculating ideal body weight in adults is as follows:[7]",
+                            "<info> Male ideal body weight = 50 kilograms (110 lb) + 0.9 kilograms (2.0 lb) × (height (cm) − 152)",
+                            "<info> Female ideal body weight = 45.5 kilograms (100 lb) + 0.9 kilograms (2.0 lb) × (height (cm) − 152)",
+                            "The Hamwi method is used to calculate the ideal body weight of the general adult:[8]",
+                            "<info> Male ideal body weight = 48 kilograms (106 lb) + 1.1 kilograms (2.4 lb) × (height (cm) − 152)",
+                            "<info> Female ideal body weight = 45.4 kilograms (100 lb) + 0.9 kilograms (2.0 lb) × (height (cm) − 152)"
+                        ]
+                    },
+                    "Usage": {
+                        "content": [
+                            "Many disciplines in weightlifting or combat sports separate competitors into weight classes.",
+                            "Ideal body weight, specifically the Devine formula, is used clinically for multiple reasons, most commonly in estimating renal function in drug dosing, and predicting pharmacokinetics in morbidly obese patients.[9][10]"
+                        ]
+                    },
+                    "Average weight around the world": {
+                        "content": [
+                            "Researchers at the London School of Hygiene and Tropical Medicine published a study of average weights of adult humans in the journal BMC Public Health and at the United Nations conference Rio+20.[64]"
+                        ]
+                    },
+                    "See also": {
+                        "content": [
+                            "<info> Body mass index (BMI)",
+                            "<info> List of heaviest people",
+                            "<info> Stone (unit) § human body weight",
+                            "<info> Weight loss and weight gain"
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c d So TY, Farrington E, Absher RK (June 2009). \"Evaluation of the accuracy of different methods used to estimate weights in the pediatric population\". Pediatrics. 123 (6): e1045–51. doi:10.1542/peds.2008-1968. PMID 19482737. S2CID 6009482.",
+                            "<info> ^ Lubitz, Deborah; Seidel, JS; Chameides, L; Luten, RC; Zaritsky, AL; Campbell, FW (1988). \"A rapid method for estimating weight and resuscitation drug dosages from length in the pediatric age group\". Ann Emerg Med. 17 (6): 576–81. doi:10.1016/S0196-0644(88)80396-2. PMID 3377285.",
+                            "<info> ^ Wells, Mike (2011). \"Clinical: The PAWPER Tape\". Sanguine. 1 (2). Retrieved 13 June 2013.",
+                            "<info> ^ Smith, Jessica (16 May 2013). \"Stop Hating the Scale\". Shape Magazine. Retrieved 23 January 2017.",
+                            "<info> ^ Lee, Orion (4 August 2013). \"Making Weight: Why Fighters Cut Weight and 3 Tips for Doing It\". Breaking Muscle. Retrieved 23 January 2017.",
+                            "<info> ^ McCarron, Margaret M.; Devine, Ben J. (1 November 1974). \"Clinical Pharmacy: Case Studies: Case Number 25 Gentamicin Therapy\". Drug Intell Clin Pharm. 8 (11): 650–5. doi:10.1177/106002807400801104. S2CID 80397846.",
+                            "<info> ^ a b c Pai, Manjunath P; Paloucek, Frank P (September 2000). \"The Origin of the \"Ideal\" Body Weight Equations\". The Annals of Pharmacotherapy. 34 (9): 1066–1069. doi:10.1345/aph.19381. PMID 10981254. S2CID 6213850.",
+                            "<info> ^ Bartlett, Stephen; Marian, Mary; Taren, Douglas; Muramoto, Myra L. (30 November 1997). Geriatric Nutrition Handbook. Jones & Bartlett Learning. p. 15. ISBN 978-0-412-13641-2.",
+                            "<info> ^ Jones, Graham RD (2011). \"Estimating Renal Function for Drug Dosing Decisions\". The Clinical Biochemist Reviews. 32 (2): 81–88. PMC 3100285. PMID 21611081.",
+                            "<info> ^ van Kraligen, S; van de Garde, EMW; Knibbe, CAJ; Diepstraten, J; Wiezer, MJ; van Ramshorst, B; Dongen, EPA (2011). \"Comparative evaluation of atracurium dosed on ideal body weight vs. total body weight in morbidly obese patients\". British Journal of Clinical Pharmacology. 71 (1): 34–40. doi:10.1111/j.1365-2125.2010.03803.x. PMC 3018024. PMID 21143499.",
+                            "<info> ^ a b c d e f g Walpole, Sarah C; Prieto-Merino, David; Edwards, Phil; Cleland, John; Stevens, Gretchen; Roberts, Ian; et al. (18 June 2012). \"The weight of nations: an estimation of adult human biomass\". BMC Public Health. 12 (1). BMC Public Health 2012, 12:439: 439. doi:10.1186/1471-2458-12-439. PMC 3408371. PMID 22709383.",
+                            "<info> ^ \"Afghanistan - STEPS 2018, National Non-Communicable Disease Risk Factors Survey\". World Health Organization. 2018. p. 40. AFG_2018_STEPS_v01.",
+                            "<info> ^ \"Algeria STEPS Survey 2002\" (PDF). World Health Organization. 2005. p. 70.",
+                            "<info> ^ \"Prevalence of noncommunicable disease risk factors in the Republic of Armenia, STEPS National Survey 2016\" (PDF). National Institute of Health. 2018. p. 167.",
+                            "<info> ^ \"National Health Survey: First results, Body Mass Index, waist circumference, height and weight - Australia\". Australian Bureau of Statistics. 2018.",
+                            "<info> ^ \"Azerbaijan State Statistics Committee, 2005\". Today.az. 7 May 2005. Retrieved 22 January 2011.",
+                            "<info> ^ \"Non-Communicable Disease Risk Factor Survey Bangladesh\" (PDF). World Health Organization. 2010. p. 120.",
+                            "<info> ^ Отдел антропологии и экологии Института истории НАН Беларуси (21 September 2012). \"Чем отличаются \"вчерашние\" белорусы от \"сегодняшних\"?\". news.tut.by. Archived from the original on 11 June 2020. Retrieved 11 October 2019.",
+                            "<info> ^ \"The Central America Diabetes Initiative (CAMDI), Survey of Diabetes, Hypertension and Chronic Disease Risk Factors\" (PDF). Pan American Health Organization. 2011. pp. 25–26, 61.",
+                            "<info> ^ \"Rapport final de l'enquête pour la surveillance des facteurs de risque des maladies non transmissibles par l'approche STEPSwise de l'OMS ENQUETE STEPS 2015 au Bénin\" (PDF). World Health Organization (in French). 2016. p. 90.",
+                            "<info> ^ \"National survey for noncommunicable disease risk factors and mental health using WHO STEPS approach in Bhutan\" (PDF). World Health Organization. 2014. p. 103.",
+                            "<info> ^ \"Botswana STEPS survey report on non-communicable disease risk factors\" (PDF). World Health Organization. 2014. p. 94.",
+                            "<info> ^ Do G1, em São Paulo (27 August 2010). \"G1 - Metade dos adultos brasileiros está acima do peso, segundo IBGE - notícias em Brasil\". G1.globo.com. Retrieved 13 July 2012.{{cite web}}:  CS1 maint: numeric names: authors list (link)",
+                            "<info> ^ \"The 2nd National Health and Nutritional Status Survey (NHANSS)\" (PDF). Ministry of Health Brunei Darussalam. 2014. p. 59.",
+                            "<info> ^ Bulgarian Academy of Sciences (2021). Енциклопедия България [Bulgarian Encyclopedia] (in Bulgarian). Книгомания. ISBN 978-619-195-294-6.",
+                            "<info> ^ \"Rapport de L'enquete Nationale sur la prevalence des principaux facteurs de risques communs aux maldies non transmissibles au Burkina Faso\" (PDF). World Health Organization (in French). 2014. p. 38.",
+                            "<info> ^ \"Prevalence of Non-communicable Disease Risk Factors in Cambodia\" (PDF). World Health Organization. 2010. p. 157.",
+                            "<info> ^ Kamadjeu, Raoul M; Edwards, Richard; Atanga, Joseph S; Kiawi, Emmanuel C; Unwin, Nigel; Mbanya, Jean-Claude (December 2006). \"Anthropometry measures and prevalence of obesity in the urban adult population of Cameroon: an update from the Cameroon Burden of Diabetes Baseline Survey\". BMC Public Health. 6 (1): 228. doi:10.1186/1471-2458-6-228. ISSN 1471-2458. PMC 1579217. PMID 16970806.",
+                            "<info> ^ Shields, Margot; Connor Gorber, Sarah; Janssen, Ian; Tremblay, Mark S. (November 2011). \"Bias in self-reported estimates of obesity in Canadian health surveys: an update on correction equations for adults\". Health Reports. 22 (3): 35–45. ISSN 0840-6529. PMID 22106788.",
+                            "<info> ^ Encuesta Nacional de Salud 2009–2010 Archived 12 March 2011 at the Wayback Machine (p. 81)",
+                            "<info> ^ \"The Central America Diabetes Initiative (CAMDI), Survey of Diabetes, Hypertension and Chronic Disease Risk Factors\" (PDF). Pan American Health Organization. 2011. pp. 25–26, 61.",
+                            "<info> ^ Cífková, Renata; Bruthans, Jan; Wohlfahrt, Peter; Krajčoviechová, Alena; Šulc, Pavel; Jozífová, Marie; Eremiášová, Lenka; Pudil, Jan; Linhart, Aleš; Widimský, Jiří; Filipovský, Jan (11 May 2020). Shimosawa, Tatsuo (ed.). \"30-year trends in major cardiovascular risk factors in the Czech population, Czech MONICA and Czech post-MONICA, 1985 – 2016/17\". PLOS ONE. 15 (5) e0232845. Bibcode:2020PLoSO..1532845C. doi:10.1371/journal.pone.0232845. ISSN 1932-6203. PMC 7213700. PMID 32392239.",
+                            "<info> ^ \"Cohort Profile: Estonian Biobank of the Estonian Genome Center, University of Tartu\". International Journal of Epidemiology. 44: 1142.",
+                            "<info> ^ \"Commission européenne, Eurobaromètre EB64.3 - calculs SPF Économie Direction générale Statistique et Information économique\". Archived from the original on 8 May 2009. Retrieved 8 January 2017.",
+                            "<info> ^ \"Non-communicable diseases risk-factor steps survey, Georgia, 2016. Executive summary\" (PDF). World Health Organization.",
+                            "<info> ^ Statistisches Bundesamt. \"Körpermaße nach Altersgruppen und Geschlecht\" (in German). Statistisches Bundesamt. Retrieved 5 January 2022.",
+                            "<info> ^ \"Summary of RDA for Indians - 2020, p. 7\" (PDF). nin.res.in.",
+                            "<info> ^ \"Resultater fra Den nasjonale folkehelseundersøkelsen 2020\" (PDF). Norwegian Institute of Public Health. p. 7.",
+                            "<info> ^ \"WHO STEPS Noncommunicable Disease Risk Factor Surveillance, Data Book For Oman\" (PDF). World Health Organization. 2017. p. 65.",
+                            "<info> ^ Non-Communicable Diseases Risk Factors Survey Pakistan. Pakistan Health Research Council 2016 (PDF). World Health Organization. 2016. p. 25. ISBN 978-969-499-008-8.",
+                            "<info> ^ \"Papua New Guinea NCD Risk Factors STEPS Report\" (PDF). World Health Organization. February 2014. p. 43.",
+                            "<info> ^ \"Chronic Disease Risk Factor Surveillance: Qatar STEPS Report 2012. The Supreme Council of Health. Qatar\" (PDF). World Health Organization. 2013. p. 53.",
+                            "<info> ^ Martinchik, A N; Laikam, K E; Kozyreva, N A; Keshabyants, E E; Mikhailov, N A; Baturin, A K; Smirnova, E A (2021). \"Распространение ожирения в различных социально-демографических группах населения России\" [The prevalence of obesity in various socio-demographic groups of the population of Russia]. Вопросы питания. 90 (3): 67–76. doi:10.33029/0042-8833-2021-90-3-67-76. PMID 34264558. S2CID 235907158. The body weight and height of respondents with a BMI of 18.5-24.9 kg/m2 can be considered as the average normal body weight and height of the adult population in Russia, which amounted to 70.6 kg and 175.4 cm for men, and 60.2 kg and 164 cm for women, respectively.",
+                            "<info> ^ \"Rwanda Non-communicable Diseases Risk Factors Report\" (PDF). World Health Organization. 2015. p. 81.",
+                            "<info> ^ \"2008 STEPwise Approach to Chronic Disease Risk Factor Survey Report\" (PDF). World Health Organization. 2008.",
+                            "<info> ^ \"WHO STEPwise Approach to NCD Surveillance, Country-Specific Standart Report, Saudi Arabia 2005\" (PDF). World Health Organization. 2005. p. 40.",
+                            "<info> ^ Maksimović, Miloš Ž; Gudelj Rakić, Jelena M.; Vlajinac, Hristina D.; Vasiljević, Nadja D.; Nikić, Marina I.; Marinković, Jelena M. (2016). \"Comparison of different anthropometric measures in the adult population in Serbia as indicators of obesity: data from the National Health Survey 2013\". Public Health Nutrition. 19 (12): 2246–2255. doi:10.1017/S1368980016000161. ISSN 1475-2727. PMC 10270894. PMID 26865391.",
+                            "<info> ^ \"The prevalence of the common risk factors of non-communicable diseases in Sierra Leone\" (PDF). World Health Organization. 2009. p. 12, 34.",
+                            "<info> ^ \"Solomon Islands NCD Risk Factors STEPS Report\" (PDF). World Health Organization. 2010. p. 43.",
+                            "<info> ^ \"시도별 성별 연령별 평균 체중 분포 현황: 일반\" (in Korean). KOSIS – Korean Statistical Information Service. 23 December 2021. Retrieved 7 February 2022.",
+                            "<info> ^ López-Sobaler, Ana M.; Aparicio, Aránzazu; Aranceta-Bartrina, Javier; Gil, Ángel; González-Gross, Marcela; Serra-Majem, Lluis; Varela-Moreiras, Gregorio; Ortega, Rosa M. (2016). \"Overweight and General and Abdominal Obesity in a Representative Sample of Spanish Adults: Findings from the ANIBES Study\". BioMed Research International. 2016: 1–11. doi:10.1155/2016/8341487. ISSN 2314-6133. PMC 4921130. PMID 27382572.",
+                            "<info> ^ \"Non Communicable Disease Risk Factor Survey Sri Lanka\" (PDF). World Health Organization. 2015. p. 81.",
+                            "<info> ^ \"Sudan STEPwise survey for non-communicable diseases risk factors 2016 report\" (PDF). World Health Organization. 2016. p. 73.",
+                            "<info> ^ \"6 kilo mer man och 4 kilo mer kvinna\" (in Swedish). Archived from the original on 27 February 2014. Retrieved 27 February 2014.",
+                            "<info> ^ \"Rapport final de l'enquête STEPS Togo 2010, Togo STEPS survey report\" (PDF). World Health Organization (in French). 2012. p. 61.",
+                            "<info> ^ \"Kingdom of Tonga NCD Risk Factors STEPS Report\" (PDF). World Health Organization. 2014. p. 122.",
+                            "<info> ^ \"Panamerican STEPS chronic non-communicable disease risk factor survey\" (PDF). World Health Organization. 2012. p. 99.",
+                            "<info> ^ \"National household health survey in Turkey prevalence of noncommunicable disease risk factors 2017\" (PDF). World Health Organization. 2018. pp. 28, 78.",
+                            "<info> ^ \"\"Распространненость факторов риска неинфекционных заболеваний в Туркменистане STEPS 2018\"\" (PDF). World Health Organization (in Russian). 2018. p. 62.",
+                            "<info> ^ \"Health Survey for England 2019 Overweight and obesity in adults and children\" (PDF). Nhs.uk. 15 September 2010.",
+                            "<info> ^ \"The Welsh Health Survey 2009, p. 58\" (PDF). Wales.gov.uk. 15 September 2010. Archived from the original (PDF) on 16 September 2013. Retrieved 22 January 2011.",
+                            "<info> ^ \"Social and Demographic Characteristics of Households of Ukraine\" (PDF). State Statistics Service of Ukraine.",
+                            "<info> ^ \"Anthropometric Reference Data for Children and Adults: United States, 2015–2018\" (PDF). Retrieved 17 February 2021.",
+                            "<info> ^ Data extracted from \"The world's fattest countries: how do you compare?\". The Daily Telegraph. 21 June 2012. Archived from the original on 12 January 2022. Retrieved 22 September 2016."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> Media related to Human body weight at Wikimedia Commons"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

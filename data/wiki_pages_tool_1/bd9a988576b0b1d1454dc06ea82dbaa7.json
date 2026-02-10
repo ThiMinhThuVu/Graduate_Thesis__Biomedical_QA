@@ -1,0 +1,93 @@
+{
+    "crawl_wiki": {
+        "html_page": {
+            "https://en.wikipedia.org/wiki/nebulin": {
+                "title": "Nebulin",
+                "url": "https://en.wikipedia.org/wiki/nebulin",
+                "source": "tool 1 - request",
+                "content": [
+                    "=== Introduction ===",
+                    "Nebulin[5] is an actin-binding protein which is localized to the thin filament of the sarcomeres in skeletal muscle. Nebulin in humans is coded for by the gene NEB. It is a very large protein (600–900 kDa) and binds as many as 200 actin monomers. Because its length is proportional to thin filament length, it is believed that nebulin acts as a thin filament \"ruler\" and regulates thin filament length during sarcomere assembly.[6]  Other functions of nebulin, such as a role in cell signaling, remain uncertain.",
+                    "Nebulin has also been shown to regulate actin-myosin interactions by inhibiting ATPase activity in a calcium-calmodulin sensitive manner.[7]",
+                    "Mutations in nebulin cause some cases of the autosomal recessive disorder nemaline myopathy.[8]",
+                    "A smaller member of the nebulin protein family, termed nebulette, is expressed in cardiac muscle.",
+                    "",
+                    "=== Structure ===",
+                    "The structure of the SH3 domain of nebulin was determined by protein nuclear magnetic resonance spectroscopy.[9] The SH3 domain from nebulin is composed of 60 amino acid residues, of which 30 percent is in the beta sheet secondary structure (7 strands; 18 residues).",
+                    "",
+                    "=== Knockout phenotype ===",
+                    "As of 2007, two knockout mouse models for nebulin have been developed to better understand its in vivo function.  Bang and colleagues[10] demonstrated that nebulin-knockout mice die postnatally, have reduced thin filament length, and impaired contractile function.  Postnatal sarcomere disorganization and degeneration occurred rapidly in these mice, indicating the nebulin is essential for maintaining the structural integrity of myofibrils.  Witt and colleagues[11] had similar results in their mice, which also died postnatally with reduced thin filament length and contractile function.  These nebulin-knockout mice are being investigated as animal models of nemaline myopathy.",
+                    "",
+                    "=== References ===",
+                    "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000183091 – Ensembl, May 2017",
+                    "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000026950 – Ensembl, May 2017",
+                    "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                    "<info> ^ Wang, K.; Williamson, C. L. (June 1980). \"Identification of an N2 line protein of striated muscle\". Proceedings of the National Academy of Sciences of the United States of America. 77 (6): 3254–3258. Bibcode:1980PNAS...77.3254W. doi:10.1073/pnas.77.6.3254. ISSN 0027-8424. PMC 349593. PMID 6997874.",
+                    "<info> ^ McElhinny AS, Kazmierski ST, Labeit S, Gregorio CC (July 2003). \"Nebulin: the nebulous, multifunctional giant of striated muscle\". Trends in Cardiovascular Medicine. 13 (5): 195–201. doi:10.1016/S1050-1738(03)00076-8. PMID 12837582.",
+                    "<info> ^ Root DD, Wang K (October 1994). \"Calmodulin-sensitive interaction of human nebulin fragments with actin and myosin\". Biochemistry. 33 (42): 12581–91. doi:10.1021/bi00208a008. PMID 7918483.",
+                    "<info> ^ Pelin K, Hilpelä P, Donner K, Sewry C, Akkari PA, Wilton SD, Wattanasirichaigoon D, Bang ML, Centner T, Hanefeld F, Odent S, Fardeau M, Urtizberea JA, Muntoni F, Dubowitz V, Beggs AH, Laing NG, Labeit S, de la Chapelle A, Wallgren-Pettersson C (March 1999). \"Mutations in the nebulin gene associated with autosomal recessive nemaline myopathy\". Proceedings of the National Academy of Sciences of the United States of America. 96 (5): 2305–10. Bibcode:1999PNAS...96.2305P. doi:10.1073/pnas.96.5.2305. PMC 26779. PMID 10051637.",
+                    "<info> ^ PDB: 1NEB​; Politou AS, Millevoi S, Gautel M, Kolmerer B, Pastore A (February 1998). \"SH3 in muscles: solution structure of the SH3 domain from nebulin\". J. Mol. Biol. 276 (1): 189–202. doi:10.1006/jmbi.1997.1521. PMID 9514727.",
+                    "<info> ^ Bang ML, Li X, Littlefield R, Bremner S, Thor A, Knowlton KU, Lieber RL, Chen J (Jun 2006). \"Nebulin-deficient mice exhibit shorter thin filament lengths and reduced contractile function in skeletal muscle\". The Journal of Cell Biology. 173 (6): 905–16. doi:10.1083/jcb.200603119. PMC 2063916. PMID 16769824.",
+                    "<info> ^ Witt CC, Burkart C, Labeit D, McNabb M, Wu Y, Granzier H, Labeit S (August 2006). \"Nebulin regulates thin filament length, contractility, and Z-disk structure in vivo\". The EMBO Journal. 25 (16): 3843–55. doi:10.1038/sj.emboj.7601242. PMC 1553189. PMID 16902413.",
+                    "",
+                    "=== Further reading ===",
+                    "<info> Björklund AK, Light S, Sagit R, Elofsson A (September 2010). \"Nebulin: a study of protein repeat evolution\". Journal of Molecular Biology. 402 (1): 38–51. doi:10.1016/j.jmb.2010.07.011. PMID 20643138.",
+                    "",
+                    "=== External links ===",
+                    "<info> nebulin at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                    "<info> GeneReviews/NCBI/NIH/UW entry on Nemaline Myopathy",
+                    "<info> PDBe-KB provides an overview of all the structure information available in the PDB for Human Nebulin",
+                    ""
+                ],
+                "sections": {
+                    "Introduction": {
+                        "content": [
+                            "Nebulin[5] is an actin-binding protein which is localized to the thin filament of the sarcomeres in skeletal muscle. Nebulin in humans is coded for by the gene NEB. It is a very large protein (600–900 kDa) and binds as many as 200 actin monomers. Because its length is proportional to thin filament length, it is believed that nebulin acts as a thin filament \"ruler\" and regulates thin filament length during sarcomere assembly.[6]  Other functions of nebulin, such as a role in cell signaling, remain uncertain.",
+                            "Nebulin has also been shown to regulate actin-myosin interactions by inhibiting ATPase activity in a calcium-calmodulin sensitive manner.[7]",
+                            "Mutations in nebulin cause some cases of the autosomal recessive disorder nemaline myopathy.[8]",
+                            "A smaller member of the nebulin protein family, termed nebulette, is expressed in cardiac muscle."
+                        ]
+                    },
+                    "Structure": {
+                        "content": [
+                            "The structure of the SH3 domain of nebulin was determined by protein nuclear magnetic resonance spectroscopy.[9] The SH3 domain from nebulin is composed of 60 amino acid residues, of which 30 percent is in the beta sheet secondary structure (7 strands; 18 residues)."
+                        ]
+                    },
+                    "Knockout phenotype": {
+                        "content": [
+                            "As of 2007, two knockout mouse models for nebulin have been developed to better understand its in vivo function.  Bang and colleagues[10] demonstrated that nebulin-knockout mice die postnatally, have reduced thin filament length, and impaired contractile function.  Postnatal sarcomere disorganization and degeneration occurred rapidly in these mice, indicating the nebulin is essential for maintaining the structural integrity of myofibrils.  Witt and colleagues[11] had similar results in their mice, which also died postnatally with reduced thin filament length and contractile function.  These nebulin-knockout mice are being investigated as animal models of nemaline myopathy."
+                        ]
+                    },
+                    "References": {
+                        "content": [
+                            "<info> ^ a b c GRCh38: Ensembl release 89: ENSG00000183091 – Ensembl, May 2017",
+                            "<info> ^ a b c GRCm38: Ensembl release 89: ENSMUSG00000026950 – Ensembl, May 2017",
+                            "<info> ^ \"Human PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ \"Mouse PubMed Reference:\". National Center for Biotechnology Information, U.S. National Library of Medicine.",
+                            "<info> ^ Wang, K.; Williamson, C. L. (June 1980). \"Identification of an N2 line protein of striated muscle\". Proceedings of the National Academy of Sciences of the United States of America. 77 (6): 3254–3258. Bibcode:1980PNAS...77.3254W. doi:10.1073/pnas.77.6.3254. ISSN 0027-8424. PMC 349593. PMID 6997874.",
+                            "<info> ^ McElhinny AS, Kazmierski ST, Labeit S, Gregorio CC (July 2003). \"Nebulin: the nebulous, multifunctional giant of striated muscle\". Trends in Cardiovascular Medicine. 13 (5): 195–201. doi:10.1016/S1050-1738(03)00076-8. PMID 12837582.",
+                            "<info> ^ Root DD, Wang K (October 1994). \"Calmodulin-sensitive interaction of human nebulin fragments with actin and myosin\". Biochemistry. 33 (42): 12581–91. doi:10.1021/bi00208a008. PMID 7918483.",
+                            "<info> ^ Pelin K, Hilpelä P, Donner K, Sewry C, Akkari PA, Wilton SD, Wattanasirichaigoon D, Bang ML, Centner T, Hanefeld F, Odent S, Fardeau M, Urtizberea JA, Muntoni F, Dubowitz V, Beggs AH, Laing NG, Labeit S, de la Chapelle A, Wallgren-Pettersson C (March 1999). \"Mutations in the nebulin gene associated with autosomal recessive nemaline myopathy\". Proceedings of the National Academy of Sciences of the United States of America. 96 (5): 2305–10. Bibcode:1999PNAS...96.2305P. doi:10.1073/pnas.96.5.2305. PMC 26779. PMID 10051637.",
+                            "<info> ^ PDB: 1NEB​; Politou AS, Millevoi S, Gautel M, Kolmerer B, Pastore A (February 1998). \"SH3 in muscles: solution structure of the SH3 domain from nebulin\". J. Mol. Biol. 276 (1): 189–202. doi:10.1006/jmbi.1997.1521. PMID 9514727.",
+                            "<info> ^ Bang ML, Li X, Littlefield R, Bremner S, Thor A, Knowlton KU, Lieber RL, Chen J (Jun 2006). \"Nebulin-deficient mice exhibit shorter thin filament lengths and reduced contractile function in skeletal muscle\". The Journal of Cell Biology. 173 (6): 905–16. doi:10.1083/jcb.200603119. PMC 2063916. PMID 16769824.",
+                            "<info> ^ Witt CC, Burkart C, Labeit D, McNabb M, Wu Y, Granzier H, Labeit S (August 2006). \"Nebulin regulates thin filament length, contractility, and Z-disk structure in vivo\". The EMBO Journal. 25 (16): 3843–55. doi:10.1038/sj.emboj.7601242. PMC 1553189. PMID 16902413."
+                        ]
+                    },
+                    "Further reading": {
+                        "content": [
+                            "<info> Björklund AK, Light S, Sagit R, Elofsson A (September 2010). \"Nebulin: a study of protein repeat evolution\". Journal of Molecular Biology. 402 (1): 38–51. doi:10.1016/j.jmb.2010.07.011. PMID 20643138."
+                        ]
+                    },
+                    "External links": {
+                        "content": [
+                            "<info> nebulin at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+                            "<info> GeneReviews/NCBI/NIH/UW entry on Nemaline Myopathy",
+                            "<info> PDBe-KB provides an overview of all the structure information available in the PDB for Human Nebulin"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
