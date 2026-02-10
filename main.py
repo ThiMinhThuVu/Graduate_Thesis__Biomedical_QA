@@ -351,8 +351,8 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         dict_ans[q_i][path_i][step]['suffix'] = suffix_ans
 
                 # continue
-                save_json(dict_ans, file_all_ans)
-                print(file_all_ans)
+                # save_json(dict_ans, file_all_ans)
+                # print(file_all_ans)
 
                 if source_have_run:
                     continue
