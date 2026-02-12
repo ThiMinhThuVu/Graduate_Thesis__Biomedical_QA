@@ -92,6 +92,9 @@ def collect_wh_candidates(base_paths, dict_golden, run_type=None):
                     "question": question,
                     "has_golden": len(golden_list) > 0
                 }
+                
+            if len(golden_list) == 0:
+                continue
 
             # Dense
             if run_type == "DENSE":

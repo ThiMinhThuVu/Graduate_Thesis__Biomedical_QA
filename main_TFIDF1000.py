@@ -247,7 +247,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                                 break
                             else:
                                 current_retrieval = new_retrieval
-                        else: #giữ nguyên kq của choice trước nó
+                        elif idx_del > 1: #giữ nguyên kq của choice trước nó
                             candidates.append(candidates[-1])
                             continue                       
                                                                  
