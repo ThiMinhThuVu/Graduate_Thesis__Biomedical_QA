@@ -75,7 +75,7 @@ def load_model(dataset, configs, using_embedding_model=False):
 
 def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, type_q=None,
             using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False,
-            target_ans_type=None, question_type_to_ner=None, model_mcq=None, mcq_add_no_ans=False):
+            target_ans_type=None, question_type_to_ner=None, model_mcq=None, mcq_add_no_ans=False, using_prompt_yn=False):
     
     sample_id = str(sample['QIDX']) 
     print("[ID]: ", sample_id)
@@ -252,7 +252,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                             continue                       
                                                                  
                         normalized_answer = _generate_answer(subquestion, search_kw_subq_retrieval, extracted_entities, current_retrieval, dataset, type_q, target_ans_type,
-                                                        using_target_type, using_gen_old, has_extract_ner)
+                                                        using_target_type, using_gen_old, has_extract_ner, using_prompt_yn)
                         current_short = normalized_answer['short_answer']
 
                         print(f"[MCQ] short ans lần {idx_del}: ", current_short)                      
@@ -487,7 +487,7 @@ if __name__ == "__main__":
     metadata = load_json('data/metadata_medhop.json')
     model_mcq_name = "o3-mini" #"gpt-4.1-mini" #o3-mini
     mcq_add_no_ans = False # True #False
-        
+    using_prompt_yn = False # False
     meta_ner = load_json(r'data/metadata_entity.json')
     cnt = 0
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
@@ -532,6 +532,6 @@ if __name__ == "__main__":
         preprocess_sample(list_ner_q, sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
             using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False,
             target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner,model_mcq=model_mcq_name,
-            mcq_add_no_ans=mcq_add_no_ans)
+            mcq_add_no_ans=mcq_add_no_ans, using_prompt_yn=using_prompt_yn)
     print(cnt)
     

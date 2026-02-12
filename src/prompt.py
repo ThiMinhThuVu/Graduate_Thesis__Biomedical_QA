@@ -18,9 +18,11 @@ def load_prompt_gen_sub(question=None, is_seq=False, dataset=None, type_q=None, 
     return messages
 
 def load_prompt_gen_ans(question, search_kw, key_entities, relevant_info, dataset=None, type_q=None, target_answer_type=None,
-                    using_target_type=False, using_gen_old=False, has_extract_ner=False):
+                    using_target_type=False, using_gen_old=False, has_extract_ner=False, using_prompt_yn=False):
     if dataset == "medhop":
-        if using_target_type:
+        if using_prompt_yn and target_answer_type == 'correctness':
+            prompt = prompt_gen_answer_medhop_correctness(question, search_kw, key_entities, relevant_info)
+        elif using_target_type:
             prompt = prompt_gen_answer_medhop_step_3b(question, key_entities, relevant_info, target_answer_type)
         elif using_gen_old:
             prompt = old_prompt_gen_answer_medhop_step_3b(question, search_kw, key_entities, relevant_info, has_extract_ner)
@@ -31,6 +33,45 @@ def load_prompt_gen_ans(question, search_kw, key_entities, relevant_info, datase
         prompt = prompt_gen_answer_wiki_step_3b(question, key_entities, relevant_info, type_q=type_q)
 
     return prompt
+
+def prompt_gen_answer_medhop_correctness(question, search_kw, key_entities, context):
+    prompt = f"""You are a biomedical expert. Your task is to answer a question base on ONLY the provided context
+        ### INSTRUCTIONS:
+        1. **Deconstruct the Question:**
+        - Identify the core relationship (e.g., Disease <-> Gene).
+        - Identify ALL specific constraints/modifiers (e.g., "with symptom X", "in elderly patients", "specifically for type 2").
+        
+        2. **Verify Full Coverage (CRITICAL STEP):**
+        - Check if the Context covers **every single constraint** found in the question.
+        - **Rule of Specificity:** If the question is specific (e.g., "Disease with Symptom X") but the context is general (only mentions "Disease" without confirming/denying Symptom X), you MUST conclude "Insufficient information".
+        - Do NOT assume general facts apply to specific conditions unless explicitly stated.
+
+        3. **Determine the Label:**
+        - **"yes"**: Context explicitly supports the whole question including all specific constraints.
+        - **"no"**: Context explicitly contradicts any part of the question.
+        - **"insufficient information"**: Context mentions the entities but misses one or more specific constraints (e.g., context lacks info about the specific symptom, dosage, or population mentioned in the question).
+
+        INPUT DATA:
+        Question: {question}
+        Subquery: {search_kw}
+        Key entities: {key_entities}
+        Context: {context}
+
+        Description of Input Fields:
+        - Question: The main biomedical question to answer.
+        - Subquery: Search keywords extract from the main question, use to retrieve the Context.
+        - Key entities: Relevant important entities extracted from the question.
+        - Context: Text passages containing potential evidence.
+
+        Response format (strict JSON):
+        {{  
+            "short_answer": "yes", "no" or "insufficient information"
+            "long_answer": "Reference: [reference 1 from context], [reference 2 from context], ... Explanation: [Detailed explanation based on the information]"
+        }}
+        """
+    
+    return prompt
+
 
 def load_search_keyword_prompt(question, dataset=None, type_q=None, using_decomp_new=False):
     if dataset == 'medhop':
