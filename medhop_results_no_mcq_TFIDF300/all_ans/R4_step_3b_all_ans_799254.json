@@ -20,38 +20,7 @@
       "prefix": "",
       "name": "",
       "suffix": "",
-      "candidate": [
-        {
-          "source": "google",
-          "short_answer": "Insufficient information",
-          "long_answer": "Reference: [GG_1], [GG_4]. Explanation: Although the provided context describes primordial dwarfism as being associated with intrauterine growth retardation (IUGR), it does not explicitly address whether a fetus affected by primordial dwarfism is classified as pseudo-IUGR. There is no mention of the pseudo-IUGR classification in this context, so the evidence is insufficient to answer the question.",
-          "retrieval_information": "-Reference: [GG_1]: Primordial dwarfism: overview of clinical and genetic aspects 6 Aug 2025 — This genetic disorder group is characterized by intra-uterine growth retardation and post-natal growth abnormalities which occur as a result of ...\n-Reference: [GG_2]: Primordial Dwarfism: A Case Series From North East of Iran and Literature ... by R Vakili · 2019 · Cited by 8 — Patients are characterize by IUGR, very low birth weight (less than 1500 g) high-pitched voice (squeaky voice), prominent nose and eyes and ...\n-Reference: [GG_3]: Microcephalic osteodysplastic primordial dwarfism type II(MOPD2) Microcephalic osteodysplastic primordial dwarfism type II (MOPD2) is characterized by intrauterine growth retardation, severe proportionate short stature, and ...\n-Reference: [GG_4]: Chapter 51 - Abnormal Fetal Growth by CL Deal · 2020 · Cited by 3 — The term IUGR implies that there have been at least two fetal ultrasounds documenting growth below the 10th percentile, performed two or more weeks apart.\n-Reference: [GG_5]: 2 Primordial short stature in children and adolescents by AK Gupta · 2022 — The cardinal features of PSS include severe intrauterine and postnatal growth failure, severe postnatal short stature, primary microcephaly, ...\n-Reference: [GG_6]: Microcephalic Osteodysplastic Primordial Dwarfism, Type I (MOPD1) Microcephalic osteodysplastic primordial dwarfism types I and III is a genetic condition that is mainly characterized by intrauterine and post-natal growth ...\n-Reference: [GG_7]: Genetics of Short Stature by YH Jee · Cited by 67 — This group of syndromes can be caused by mutations in genes important for genome or nuclear stability (3M syndrome,78–80 Cornelia de Lange syndrome,81 ...\n-Reference: [GG_8]: IUGR and IGF abnormalities (Version 1.70) IUGR inclusion criteria (29416) - Height Standard Deviation Score (SDS) <-3 (very significant short stature - well below the 0.4th centile) AND - At least one ...\n-Reference: [GG_9]: Small for gestational age (Concept Id: C0235991) While almost all cases have primordial dwarfism with substantial prenatal and postnatal growth retardation, not all cases have microcephaly, and microtia ...\n-Reference: [GG_10]: Primordial Dwarfism: A Case Series From North East of Iran and Literature ... Patients are characterize by IUGR, very low birth weight (less than 1500 g) high-pitched voice (squeaky voice), prominent nose and eyes and narrow face, ...\n\n"
-        },
-        {
-          "source": "wiki",
-          "short_answer": "insufficient information",
-          "long_answer": "No context",
-          "retrieval_information": ""
-        },
-        {
-          "source": "crawl_wiki",
-          "short_answer": "insufficient information",
-          "long_answer": "No context",
-          "retrieval_information": ""
-        },
-        {
-          "source": "crawl_ner_wiki",
-          "short_answer": "insufficient information",
-          "long_answer": "No context",
-          "retrieval_information": ""
-        },
-        {
-          "source": "crawl_sparql_wikidata",
-          "short_answer": "Insufficient information",
-          "long_answer": "The provided context mentions primordial dwarfism as a human disease characterized by a smaller body size in all stages of life and other clinical features, but it does not provide any information regarding the classification of a fetus affected by primordial dwarfism as pseudo-IUGR. Therefore, the context is insufficient to answer the question.",
-          "retrieval_information": "- Reference [SPARQL]: \nprimordial dwarfism: - form of dwarfism that results in a smaller body size in all stages of life\n- human disease\n- osteochondrodysplasia that results in short arms and legs with excess folds of skin\n- human disease\n- clinical trial\n"
-        }
-      ]
+      "candidate": []
     },
     "0": {
       "0": {

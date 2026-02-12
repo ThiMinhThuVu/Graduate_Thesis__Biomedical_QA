@@ -1,142 +1,70 @@
 {
-    "QIDX": "762048",
-    "original_question": "Could a lymphocyte count of less than 0.9 × 10⁹/L in an adult indicate the possibility of Cartilage–Hair Hypoplasia?",
-    "type_q": "direct",
-    "focus_spacy_based_entity_label": [
-        "DISEASE",
-        "CHEMICAL"
-    ],
-    "target_answer_type": "correctness",
-    "key_entities": [
-        "Cartilage–Hair Hypoplasia",
-        "lymphocyte count",
-        "× 10⁹/L"
-    ],
-    "1": {
-        "final_qi": {
-            "question": "Could a lymphocyte count of less than 0.9 × 10⁹/L in an adult indicate the possibility of Cartilage–Hair Hypoplasia?",
-            "search_keyword": "lymphocyte count less than 0.9 × 10⁹/L Cartilage Hair Hypoplasia",
-            "short_answer": "",
-            "long_answer": "",
+  "QIDX": "762048",
+  "original_question": "Could a lymphocyte count of less than 0.9 × 10⁹/L in an adult indicate the possibility of Cartilage–Hair Hypoplasia?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "Cartilage–Hair Hypoplasia",
+    "lymphocyte count",
+    "× 10⁹/L"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Could a lymphocyte count of less than 0.9 × 10⁹/L in an adult indicate the possibility of Cartilage–Hair Hypoplasia?",
+      "search_keyword": "lymphocyte count less than 0.9 × 10⁹/L Cartilage Hair Hypoplasia",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
             "retrieval_information": "",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
             "candidate": [
-                {
-                    "source": "google",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "The provided context includes several references related to cartilage-hair hypoplasia and mentions abnormalities in lymphocyte counts, but it does not specifically indicate that a lymphocyte count of less than 0.9 × 10⁹/L in an adult is a diagnostic marker or suggests the possibility of cartilage–hair hypoplasia. Reference: [GG_7], [GG_8], [GG_9]. Explanation: Although the references discuss low lymphocyte counts in CHH and give general information about normal lymphocyte ranges in adults, none of them specifically correlate a lymphocyte count below 0.9 × 10⁹/L with a likelihood of having cartilage–hair hypoplasia.",
-                    "retrieval_information": "-Reference: [GG_1]: Shorter birth length and decreased T-cell production and function predict ... by E Pello · 2023 · Cited by 6 — Cartilage–hair hypoplasia (CHH) is a syndromic inborn error of immunity caused by variants in the RMRP gene. Disease manifestations vary, and their ability to ...\n-Reference: [GG_2]: Shorter birth length and decreased T-cell production and function predict ... by E Pello · 2024 · Cited by 6 — Cartilage–hair hypoplasia (CHH) is a syndromic inborn error of immunity caused by variants in the RMRP gene. Disease manifestations vary, and their ability ...\n-Reference: [GG_3]: Shorter birth length and decreased T-cell production and function predict ... by E Pello · 2024 · Cited by 6 — Cartilage–hair hypoplasia (CHH) is a syndromic inborn error of immunity caused by variants in the RMRP gene. Disease manifestations vary ...\n-Reference: [GG_4]: CD8 + T-cell senescence and skewed lymphocyte subsets in young ... by T Zeng · 2020 · Cited by 15 — Defects in lymphocyte telomere homeostasis contribute to cellular immune phenotype in patients with cartilage-hair hypoplasia. J Allergy ...\n-Reference: [GG_5]: (PDF) The European Guidelines on Diagnosis and Management of ... 8 Aug 2025 — Neutropenia is characterized by an absolute neutrophil count (ANC) below 1.8 × 10 9 /L in adults [1, 2] . Neutropenia can be classified ...\n-Reference: [GG_6]: Hepatitis and Human Bocavirus Primary Infection in a Child with T ... by L Kainulainen · 2008 · Cited by 34 — We report an invasive HBoV infection and hepatitis in a boy with cartilage-hair hypoplasia and severe T-cell immunodeficiency.\n-Reference: [GG_7]: Pulmonary Follow-Up Imaging in Cartilage-Hair Hypoplasia - PMC by S Vakkilainen · 2021 · Cited by 3 — The lymphocyte profile of study participants was variable, showing normal or low counts of measured lymphocyte subpopulations, but no correlation with lung ...\n-Reference: [GG_8]: Neonatal infection 21 Apr 2019 — It should be remembered that in infancy a normal lymphocyte count is >2.7 × 10 9 /l (unlike adults, where it is >1.0 × 10 9 /l). Lymphocytic ...\n-Reference: [GG_9]: Overview of Leukopenias - Hematology and Oncology The normal lymphocyte count in adults is 1000 to 4800/mcL (1 to 4.8 × 10 9/L; in children < 2 years, the normal count is 3000 to 9500/mcL (3 to 9.5 × 10 9/L). ...\n-Reference: [GG_10]: Reduced Toxicity Conditioning for Nonmalignant Hematopoietic Cell ... by CF Contreras · 2020 · Cited by 17 — These results suggest that use of targeted busulfan, fludarabine and IV alemtuzumab offers a well-tolerated option for children with nonmalignant disorders.\n-Reference: [GG_11]: Retrospective, Landmark Analysis of Long-term Adult Morbidity Following ... by JW Day · 2022 · Cited by 15 — All events occurring less than 5 years post-HSCT were excluded. Results. EFS ... Lymphocyte subset counts (Table ​(Table4)4) for adults are presented ...\n-Reference: [GG_12]: (PDF) T cell immunodeficiency ... hypoplasia of germinal centres. Affected boys (or occasionally adults) ... lymphocyte counts less than 2.8 x 10(9)/l at presentation. The median delay ...\n-Reference: [GG_13]: Lila Penchansky - Springer Link Cartilage-Hair Hypoplasia. . . . . . . . . . . . . . . . 35 ... solute neutrophil count of less than 0.5X109/l for 5 consecutive days in ...\n-Reference: [GG_14]: Genetic variants in NHEJ1 and related DNA repair disorders 6 Mar 2025 — The proportions and lymphocyte count of T cells, B cells, and NK cells ... 109/L), with normal erythropoietin level age 51y. Renal cell ...\n-Reference: [GG_15]: Hepatitis and Human Bocavirus Primary Infection in a Child with T ... by L Kainulainen · 2008 · Cited by 34 — Cartilage-hair hypoplasia and a homozygous A70G mutation were diagnosed in a boy at the age of 2 months. A severe immunodeficiency was found at the age of 3 ...\n-Reference: [GG_16]: HK J Paediatr (New Series) 2016;21:116-124 11 Jul 2015 — Complete blood picture showed normal white cell count with lymphocyte count of 6.9 x 109/L. ... cartilage hair hypoplasia. A Case of ...\n-Reference: [GG_17]: Reduced Toxicity Conditioning for Nonmalignant Hematopoietic Cell ... by CF Contreras · 2020 · Cited by 17 — ITP was defined as a platelet count <100 × 109/L in the absence of other ... (%). Primary immune deficiencies. Leaky SCID and CID. Cartilage hair hypoplasia ...\n-Reference: [GG_18]: A retrospective observational study of biomarker levels and ... by A Bashir · 2022 · Cited by 11 — CAP presenting clinical symptoms can have low specificity for diagnosis and the need for antibiotics. 4 In adults, scoring systems to estimate ...\n-Reference: [GG_19]: 2015 ASPHO Abstracts - 2015 - Pediatric Blood & Cancer 13 Apr 2015 — Forty percent of the neutropenic CBCs had severe neutropenia with counts less than 0.5 × 109/L. ... The absolute lymphocyte count reached greater ...\n-Reference: [GG_20]: Chapter 21: Immune system by L Thomas · Cited by 1 — ... cartilage hair hypoplasia), or metabolic disorders. Laboratory findings ... Lymphocyte count below 3 × 10 9/L, less than 20% CD3 +T cells and at least ...\n\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context includes several references related to cartilage-hair hypoplasia and mentions abnormalities in lymphocyte counts, but it does not specifically indicate that a lymphocyte count of less than 0.9 × 10⁹/L in an adult is a diagnostic marker or suggests the possibility of cartilage–hair hypoplasia. Reference: [GG_7], [GG_8], [GG_9]. Explanation: Although the references discuss low lymphocyte counts in CHH and give general information about normal lymphocyte ranges in adults, none of them specifically correlate a lymphocyte count below 0.9 × 10⁹/L with a likelihood of having cartilage–hair hypoplasia."
-                    }
-                },
-                {
-                    "source": "crawl_sparql_wikidata",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "Explanation: The provided context only mentions that a lymphocyte count is a blood test result and refers to clinical trials, without any explicit reference linking a lymphocyte count of less than 0.9 × 10⁹/L in adults to the possibility of Cartilage–Hair Hypoplasia. Therefore, the context does not provide enough information to answer the question.",
-                    "retrieval_information": "- Reference [SPARQL]: \nlymphocyte count: - blood test result\n- clinical trial\n- clinical trial\n- clinical trial\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context only mentions that a lymphocyte count is a blood test result and refers to clinical trials, without any explicit reference linking a lymphocyte count of less than 0.9 × 10⁹/L in adults to the possibility of Cartilage–Hair Hypoplasia. Therefore, the context does not provide enough information to answer the question."
-                    }
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
                 }
+              }
             ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
         },
-        "0": {
-            "0": {
-                "source_output": {
-                    "google": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context includes several references related to cartilage-hair hypoplasia and mentions abnormalities in lymphocyte counts, but it does not specifically indicate that a lymphocyte count of less than 0.9 × 10⁹/L in an adult is a diagnostic marker or suggests the possibility of cartilage–hair hypoplasia. Reference: [GG_7], [GG_8], [GG_9]. Explanation: Although the references discuss low lymphocyte counts in CHH and give general information about normal lymphocyte ranges in adults, none of them specifically correlate a lymphocyte count below 0.9 × 10⁹/L with a likelihood of having cartilage–hair hypoplasia.",
-                        "retrieval_information": "-Reference: [GG_1]: Shorter birth length and decreased T-cell production and function predict ... by E Pello · 2023 · Cited by 6 — Cartilage–hair hypoplasia (CHH) is a syndromic inborn error of immunity caused by variants in the RMRP gene. Disease manifestations vary, and their ability to ...\n-Reference: [GG_2]: Shorter birth length and decreased T-cell production and function predict ... by E Pello · 2024 · Cited by 6 — Cartilage–hair hypoplasia (CHH) is a syndromic inborn error of immunity caused by variants in the RMRP gene. Disease manifestations vary, and their ability ...\n-Reference: [GG_3]: Shorter birth length and decreased T-cell production and function predict ... by E Pello · 2024 · Cited by 6 — Cartilage–hair hypoplasia (CHH) is a syndromic inborn error of immunity caused by variants in the RMRP gene. Disease manifestations vary ...\n-Reference: [GG_4]: CD8 + T-cell senescence and skewed lymphocyte subsets in young ... by T Zeng · 2020 · Cited by 15 — Defects in lymphocyte telomere homeostasis contribute to cellular immune phenotype in patients with cartilage-hair hypoplasia. J Allergy ...\n-Reference: [GG_5]: (PDF) The European Guidelines on Diagnosis and Management of ... 8 Aug 2025 — Neutropenia is characterized by an absolute neutrophil count (ANC) below 1.8 × 10 9 /L in adults [1, 2] . Neutropenia can be classified ...\n-Reference: [GG_6]: Hepatitis and Human Bocavirus Primary Infection in a Child with T ... by L Kainulainen · 2008 · Cited by 34 — We report an invasive HBoV infection and hepatitis in a boy with cartilage-hair hypoplasia and severe T-cell immunodeficiency.\n-Reference: [GG_7]: Pulmonary Follow-Up Imaging in Cartilage-Hair Hypoplasia - PMC by S Vakkilainen · 2021 · Cited by 3 — The lymphocyte profile of study participants was variable, showing normal or low counts of measured lymphocyte subpopulations, but no correlation with lung ...\n-Reference: [GG_8]: Neonatal infection 21 Apr 2019 — It should be remembered that in infancy a normal lymphocyte count is >2.7 × 10 9 /l (unlike adults, where it is >1.0 × 10 9 /l). Lymphocytic ...\n-Reference: [GG_9]: Overview of Leukopenias - Hematology and Oncology The normal lymphocyte count in adults is 1000 to 4800/mcL (1 to 4.8 × 10 9/L; in children < 2 years, the normal count is 3000 to 9500/mcL (3 to 9.5 × 10 9/L). ...\n-Reference: [GG_10]: Reduced Toxicity Conditioning for Nonmalignant Hematopoietic Cell ... by CF Contreras · 2020 · Cited by 17 — These results suggest that use of targeted busulfan, fludarabine and IV alemtuzumab offers a well-tolerated option for children with nonmalignant disorders.\n-Reference: [GG_11]: Retrospective, Landmark Analysis of Long-term Adult Morbidity Following ... by JW Day · 2022 · Cited by 15 — All events occurring less than 5 years post-HSCT were excluded. Results. EFS ... Lymphocyte subset counts (Table ​(Table4)4) for adults are presented ...\n-Reference: [GG_12]: (PDF) T cell immunodeficiency ... hypoplasia of germinal centres. Affected boys (or occasionally adults) ... lymphocyte counts less than 2.8 x 10(9)/l at presentation. The median delay ...\n-Reference: [GG_13]: Lila Penchansky - Springer Link Cartilage-Hair Hypoplasia. . . . . . . . . . . . . . . . 35 ... solute neutrophil count of less than 0.5X109/l for 5 consecutive days in ...\n-Reference: [GG_14]: Genetic variants in NHEJ1 and related DNA repair disorders 6 Mar 2025 — The proportions and lymphocyte count of T cells, B cells, and NK cells ... 109/L), with normal erythropoietin level age 51y. Renal cell ...\n-Reference: [GG_15]: Hepatitis and Human Bocavirus Primary Infection in a Child with T ... by L Kainulainen · 2008 · Cited by 34 — Cartilage-hair hypoplasia and a homozygous A70G mutation were diagnosed in a boy at the age of 2 months. A severe immunodeficiency was found at the age of 3 ...\n-Reference: [GG_16]: HK J Paediatr (New Series) 2016;21:116-124 11 Jul 2015 — Complete blood picture showed normal white cell count with lymphocyte count of 6.9 x 109/L. ... cartilage hair hypoplasia. A Case of ...\n-Reference: [GG_17]: Reduced Toxicity Conditioning for Nonmalignant Hematopoietic Cell ... by CF Contreras · 2020 · Cited by 17 — ITP was defined as a platelet count <100 × 109/L in the absence of other ... (%). Primary immune deficiencies. Leaky SCID and CID. Cartilage hair hypoplasia ...\n-Reference: [GG_18]: A retrospective observational study of biomarker levels and ... by A Bashir · 2022 · Cited by 11 — CAP presenting clinical symptoms can have low specificity for diagnosis and the need for antibiotics. 4 In adults, scoring systems to estimate ...\n-Reference: [GG_19]: 2015 ASPHO Abstracts - 2015 - Pediatric Blood & Cancer 13 Apr 2015 — Forty percent of the neutropenic CBCs had severe neutropenia with counts less than 0.5 × 109/L. ... The absolute lymphocyte count reached greater ...\n-Reference: [GG_20]: Chapter 21: Immune system by L Thomas · Cited by 1 — ... cartilage hair hypoplasia), or metabolic disorders. Laboratory findings ... Lymphocyte count below 3 × 10 9/L, less than 20% CD3 +T cells and at least ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "The provided context includes several references related to cartilage-hair hypoplasia and mentions abnormalities in lymphocyte counts, but it does not specifically indicate that a lymphocyte count of less than 0.9 × 10⁹/L in an adult is a diagnostic marker or suggests the possibility of cartilage–hair hypoplasia. Reference: [GG_7], [GG_8], [GG_9]. Explanation: Although the references discuss low lymphocyte counts in CHH and give general information about normal lymphocyte ranges in adults, none of them specifically correlate a lymphocyte count below 0.9 × 10⁹/L with a likelihood of having cartilage–hair hypoplasia.",
-                                "retrieval_information": "-Reference: [GG_1]: Shorter birth length and decreased T-cell production and function predict ... by E Pello · 2023 · Cited by 6 — Cartilage–hair hypoplasia (CHH) is a syndromic inborn error of immunity caused by variants in the RMRP gene. Disease manifestations vary, and their ability to ...\n-Reference: [GG_2]: Shorter birth length and decreased T-cell production and function predict ... by E Pello · 2024 · Cited by 6 — Cartilage–hair hypoplasia (CHH) is a syndromic inborn error of immunity caused by variants in the RMRP gene. Disease manifestations vary, and their ability ...\n-Reference: [GG_3]: Shorter birth length and decreased T-cell production and function predict ... by E Pello · 2024 · Cited by 6 — Cartilage–hair hypoplasia (CHH) is a syndromic inborn error of immunity caused by variants in the RMRP gene. Disease manifestations vary ...\n-Reference: [GG_4]: CD8 + T-cell senescence and skewed lymphocyte subsets in young ... by T Zeng · 2020 · Cited by 15 — Defects in lymphocyte telomere homeostasis contribute to cellular immune phenotype in patients with cartilage-hair hypoplasia. J Allergy ...\n-Reference: [GG_5]: (PDF) The European Guidelines on Diagnosis and Management of ... 8 Aug 2025 — Neutropenia is characterized by an absolute neutrophil count (ANC) below 1.8 × 10 9 /L in adults [1, 2] . Neutropenia can be classified ...\n-Reference: [GG_6]: Hepatitis and Human Bocavirus Primary Infection in a Child with T ... by L Kainulainen · 2008 · Cited by 34 — We report an invasive HBoV infection and hepatitis in a boy with cartilage-hair hypoplasia and severe T-cell immunodeficiency.\n-Reference: [GG_7]: Pulmonary Follow-Up Imaging in Cartilage-Hair Hypoplasia - PMC by S Vakkilainen · 2021 · Cited by 3 — The lymphocyte profile of study participants was variable, showing normal or low counts of measured lymphocyte subpopulations, but no correlation with lung ...\n-Reference: [GG_8]: Neonatal infection 21 Apr 2019 — It should be remembered that in infancy a normal lymphocyte count is >2.7 × 10 9 /l (unlike adults, where it is >1.0 × 10 9 /l). Lymphocytic ...\n-Reference: [GG_9]: Overview of Leukopenias - Hematology and Oncology The normal lymphocyte count in adults is 1000 to 4800/mcL (1 to 4.8 × 10 9/L; in children < 2 years, the normal count is 3000 to 9500/mcL (3 to 9.5 × 10 9/L). ...\n-Reference: [GG_10]: Reduced Toxicity Conditioning for Nonmalignant Hematopoietic Cell ... by CF Contreras · 2020 · Cited by 17 — These results suggest that use of targeted busulfan, fludarabine and IV alemtuzumab offers a well-tolerated option for children with nonmalignant disorders.\n-Reference: [GG_11]: Retrospective, Landmark Analysis of Long-term Adult Morbidity Following ... by JW Day · 2022 · Cited by 15 — All events occurring less than 5 years post-HSCT were excluded. Results. EFS ... Lymphocyte subset counts (Table ​(Table4)4) for adults are presented ...\n-Reference: [GG_12]: (PDF) T cell immunodeficiency ... hypoplasia of germinal centres. Affected boys (or occasionally adults) ... lymphocyte counts less than 2.8 x 10(9)/l at presentation. The median delay ...\n-Reference: [GG_13]: Lila Penchansky - Springer Link Cartilage-Hair Hypoplasia. . . . . . . . . . . . . . . . 35 ... solute neutrophil count of less than 0.5X109/l for 5 consecutive days in ...\n-Reference: [GG_14]: Genetic variants in NHEJ1 and related DNA repair disorders 6 Mar 2025 — The proportions and lymphocyte count of T cells, B cells, and NK cells ... 109/L), with normal erythropoietin level age 51y. Renal cell ...\n-Reference: [GG_15]: Hepatitis and Human Bocavirus Primary Infection in a Child with T ... by L Kainulainen · 2008 · Cited by 34 — Cartilage-hair hypoplasia and a homozygous A70G mutation were diagnosed in a boy at the age of 2 months. A severe immunodeficiency was found at the age of 3 ...\n-Reference: [GG_16]: HK J Paediatr (New Series) 2016;21:116-124 11 Jul 2015 — Complete blood picture showed normal white cell count with lymphocyte count of 6.9 x 109/L. ... cartilage hair hypoplasia. A Case of ...\n-Reference: [GG_17]: Reduced Toxicity Conditioning for Nonmalignant Hematopoietic Cell ... by CF Contreras · 2020 · Cited by 17 — ITP was defined as a platelet count <100 × 109/L in the absence of other ... (%). Primary immune deficiencies. Leaky SCID and CID. Cartilage hair hypoplasia ...\n-Reference: [GG_18]: A retrospective observational study of biomarker levels and ... by A Bashir · 2022 · Cited by 11 — CAP presenting clinical symptoms can have low specificity for diagnosis and the need for antibiotics. 4 In adults, scoring systems to estimate ...\n-Reference: [GG_19]: 2015 ASPHO Abstracts - 2015 - Pediatric Blood & Cancer 13 Apr 2015 — Forty percent of the neutropenic CBCs had severe neutropenia with counts less than 0.5 × 109/L. ... The absolute lymphocyte count reached greater ...\n-Reference: [GG_20]: Chapter 21: Immune system by L Thomas · Cited by 1 — ... cartilage hair hypoplasia), or metabolic disorders. Laboratory findings ... Lymphocyte count below 3 × 10 9/L, less than 20% CD3 +T cells and at least ...\n\n",
-                                "extracted_entities": "cartilage-hair hypoplasia, Cancer, Neutropenia, T cell immunodeficiency ... hypoplasia of germinal centres., hair hypoplasia, Allergy, nonmalignant disorders, hypoplasia, GG_7, ITP, immunodeficiency, busulfan, T-cell immunodeficiency, Infection, Toxicity, Hepatitis, HBoV infection, neutropenic, CHH, metabolic disorders, Cartilage-Hair Hypoplasia - PMC, fludarabine",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "The provided context includes several references related to cartilage-hair hypoplasia and mentions abnormalities in lymphocyte counts, but it does not specifically indicate that a lymphocyte count of less than 0.9 × 10⁹/L in an adult is a diagnostic marker or suggests the possibility of cartilage–hair hypoplasia. Reference: [GG_7], [GG_8], [GG_9]. Explanation: Although the references discuss low lymphocyte counts in CHH and give general information about normal lymphocyte ranges in adults, none of them specifically correlate a lymphocyte count below 0.9 × 10⁹/L with a likelihood of having cartilage–hair hypoplasia."
-                                }
-                            }
-                        ]
-                    },
-                    "wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_ner_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_sparql_wikidata": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context only mentions that a lymphocyte count is a blood test result and refers to clinical trials, without any explicit reference linking a lymphocyte count of less than 0.9 × 10⁹/L in adults to the possibility of Cartilage–Hair Hypoplasia. Therefore, the context does not provide enough information to answer the question.",
-                        "retrieval_information": "- Reference [SPARQL]: \nlymphocyte count: - blood test result\n- clinical trial\n- clinical trial\n- clinical trial\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "Explanation: The provided context only mentions that a lymphocyte count is a blood test result and refers to clinical trials, without any explicit reference linking a lymphocyte count of less than 0.9 × 10⁹/L in adults to the possibility of Cartilage–Hair Hypoplasia. Therefore, the context does not provide enough information to answer the question.",
-                                "retrieval_information": "- Reference [SPARQL]: \nlymphocyte count: - blood test result\n- clinical trial\n- clinical trial\n- clinical trial\n",
-                                "extracted_entities": "",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "Explanation: The provided context only mentions that a lymphocyte count is a blood test result and refers to clinical trials, without any explicit reference linking a lymphocyte count of less than 0.9 × 10⁹/L in adults to the possibility of Cartilage–Hair Hypoplasia. Therefore, the context does not provide enough information to answer the question."
-                                }
-                            }
-                        ]
-                    }
-                },
-                "question": "Could a lymphocyte count of less than 0.9 × 10⁹/L in an adult indicate the possibility of Cartilage–Hair Hypoplasia?",
-                "search_keyword": "lymphocyte count less than 0.9 × 10⁹/L Cartilage Hair Hypoplasia"
-            }
-        }
+        "question": "Could a lymphocyte count of less than 0.9 × 10⁹/L in an adult indicate the possibility of Cartilage–Hair Hypoplasia?",
+        "search_keyword": "lymphocyte count less than 0.9 × 10⁹/L Cartilage Hair Hypoplasia"
+      }
     }
+  }
 }

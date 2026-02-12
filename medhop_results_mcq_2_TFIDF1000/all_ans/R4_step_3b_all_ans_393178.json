@@ -1,140 +1,68 @@
 {
-    "QIDX": "393178",
-    "original_question": "Can Meningiomas be visualized with contrast using an imaging technique that employs a rotating X-ray tube and a row of detectors.",
-    "type_q": "direct",
-    "focus_spacy_based_entity_label": [
-        "DISEASE",
-        "CHEMICAL"
-    ],
-    "target_answer_type": "correctness",
-    "key_entities": [
-        "Can Meningiomas"
-    ],
-    "1": {
-        "final_qi": {
-            "question": "Can Meningiomas be visualized with contrast using an imaging technique that employs a rotating X-ray tube and a row of detectors.",
-            "search_keyword": "Meningiomas contrast imaging technique rotating X-ray tube detectors",
-            "short_answer": "",
-            "long_answer": "",
+  "QIDX": "393178",
+  "original_question": "Can Meningiomas be visualized with contrast using an imaging technique that employs a rotating X-ray tube and a row of detectors.",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "Can Meningiomas"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Can Meningiomas be visualized with contrast using an imaging technique that employs a rotating X-ray tube and a row of detectors.",
+      "search_keyword": "Meningiomas contrast imaging technique rotating X-ray tube detectors",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
             "retrieval_information": "",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
             "candidate": [
-                {
-                    "source": "google",
-                    "short_answer": "Yes",
-                    "long_answer": "Reference: [GG_3], [GG_5], [GG_20]. Explanation: The context explains that computed tomography (CT) employs a rotating X‐ray tube and detectors, and CT imaging techniques can include the use of contrast agents. Since meningiomas are visualized using CT among other imaging modalities, they can indeed be visualized with contrast using a CT scan.",
-                    "retrieval_information": "-Reference: [GG_1]: Automated meningioma detection using skull X ray images with deep ... by HU Kim · 2025 — This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional ...\n-Reference: [GG_2]: Automated meningioma detection using skull X ray images with deep ... by HU Kim · 2025 — This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional ...\n-Reference: [GG_3]: Computed tomography brain scan: Surprising facts CT scan technology uses a rotating X-ray machine to take pictures of the body from different sides. A computer then makes detailed pictures or 3D models of the ...\n-Reference: [GG_4]: Imaging and diagnostic advances for intracranial meningiomas by RY Huang · 2019 · Cited by 213 — In this supplement article, we review important current and future aspects of imaging in the diagnosis and management of meningioma, including ...\n-Reference: [GG_5]: Static Anatomic Techniques 22 Jan 2016 — The x-ray tube and detector, housed in a gantry, rotate 360 degrees around the patient so the x-ray beam strikes the patient in the transverse ( ...\n-Reference: [GG_6]: Dynamic contrast-enhanced imaging techniques: CT and MRI - PMC by JPB O'Connor · 2011 · Cited by 309 — This review highlights key issues in dynamic contrast-enhanced CT, dynamic contrast-enhanced MRI and arterial spin labelling\n-Reference: [GG_7]: Radiology Imaging Techniques of Brain Tumours by K Zeleňák · 2013 · Cited by 7 — The development of radiological imaging techniques for the evaluation of brain tumours has progressed significantly in recent years.\n-Reference: [GG_8]: Brain tumor detection with integrating traditional and computational ... by A Batool · 2024 · Cited by 69 — This study comprehensively reviews brain tumor segmentation and classification techniques, exploring various approaches based on image processing, machine ...\n-Reference: [GG_9]: Usefulness of Deep Learning Techniques Using Magnetic ... by JH Hwang · 2025 — This study aimed to implement an artificial intelligence (AI) model capable of diagnosing meningioma and atypical meningioma during deep learning using ...\n-Reference: [GG_10]: Deep-learning model for diagnostic clue: detecting the dural tail sign for ... by H Kim · 2023 · Cited by 8 — The proposed model demonstrates an automated detection system for the dural tail sign to identify meningioma in general screening MRI.\n-Reference: [GG_11]: Intracranial meningioma: A review of recent and emerging data on the ... 7 Aug 2024 — In this comprehensive review, we describe key features of meningiomas that can be established through neuroimaging, including size, location, vascularity, ...\n-Reference: [GG_12]: Automated meningioma detection using skull X ray images with deep ... This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional machine learning ...\n-Reference: [GG_13]: A STUDY ON BRAIN TUMOR TECHNOLOGY USING MACHINE ... Promising approaches to improve brain tumour diagnosis, classification, and prognosis are provided by recent developments in machine learning (ML) technologies.\n-Reference: [GG_14]: X-Ray Imaging and Computed Tomography (Left) The principle of computed tomography with an X-ray source and detector unit rotating synchronously around the patient. Data are essentially acquired ...\n-Reference: [GG_15]: Grading of meningioma tumors based on analyzing tumor volumetric ... by M Haghighi Borujeini · 2021 · Cited by 2 — In this study, the following sequences were analyzed: axial T1-weighted (pre- and post-contrast images), fast spin-echo sequence (TR 400 ms, TE ...\n-Reference: [GG_16]: improved tumor localization by correlation of CT and MR imaging data by LR Schad · 1992 · Cited by 56 — A localization technique, based on three-dimensional CT and MR imaging data for precision radiotherapy of basal meningiomas, is presented.\n-Reference: [GG_17]: Automated meningioma detection using skull X ray images with deep ... by HU Kim · 2025 — This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional machine learning ...\n-Reference: [GG_18]: Development of a Deep Learning Algorithm for the Detection of ... by R Pirinen · 2023 — They are usually diagnosed on head magnetic resonance imaging (MRI). Meningiomas can also be visible on computed tomography (CT) although ...\n-Reference: [GG_19]: CT Evaluation of Meningiomas 26 Mar 2015 — With this new technology, which uses an array of detectors to scan up to 64 slices per gantry rotation, a tissue block of 250 mm scan range can ...\n-Reference: [GG_20]: Head CT Imaging: Basic Concepts to Advanced Techniques The X-ray source and detectors rotate around the patient. Several projections are captured from different angles in order to create a 3-dimensional image volume ...\n\n",
-                    "full_data": {
-                        "short_answer": "Yes",
-                        "long_answer": "Reference: [GG_3], [GG_5], [GG_20]. Explanation: The context explains that computed tomography (CT) employs a rotating X‐ray tube and detectors, and CT imaging techniques can include the use of contrast agents. Since meningiomas are visualized using CT among other imaging modalities, they can indeed be visualized with contrast using a CT scan."
-                    }
-                },
-                {
-                    "source": "wiki",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "The provided context does not contain specific details about the visualization of meningiomas using contrast-enhanced imaging that employs a rotating X-ray tube and a row of detectors. Reference: [WIKI_1], [WIKI_2], [WIKI_3], [WIKI_4], [WIKI_5], [WIKI_6]. Explanation: Although the context includes general information about neuroimaging techniques and cerebral angiography, it does not specifically mention the use of contrast in the imaging of meningiomas via an imaging technique with a rotating X-ray tube and a row of detectors (i.e., CT imaging). Hence, the provided information is insufficient to answer the question.",
-                    "retrieval_information": "-Reference: [WIKI_1]: History of neuroimaging Neuroimaging is a medical technique that allows doctors and researchers to take pictures of the inner workings of the body or brain of a patient.\n-Reference: [WIKI_2]: Cerebral angiography Cerebral angiography is a form of angiography which provides images of blood vessels in and around the brain, thereby allowing detection of abnormalities\n-Reference: [WIKI_3]: ویکی‌پدیا:ویکی‌پروژه فرهنگستان/دفتر دهم فرهنگستان کلید چرخشی---en:rotary valve · نشان‌فرست رادیویی چرخان---en:rotating radio beacon---en:revolving radio beacon · زبری---en:rough casting surface---en:roughness ...\n-Reference: [WIKI_4]: Wikipedia:WikiProject Medicine/Lists of pages/Articles Digital X-ray radiogrammetry · Digital addict · Digital autopsy · Digital hearing aid · Digital mammography · Digital motion X-ray · Digital mucous cyst ...\n-Reference: [WIKI_5]: Wikipedia:WikiProject Medicine/Lists of pages/Low-importance ... Wikipedia:WikiProject Medicine/Lists of pages/Low-importance medicine articles · Project page · Talk.\n-Reference: [WIKI_6]: Wikipedia:WikiProject Medicine/Lists of pages/Talk Talk:Digital X-ray radiogrammetry · Talk:Digital addict · Talk:Digital autopsy · Talk:Digital hearing aid · Talk:Digital mammography · Talk:Digital motion X-ray ...\n\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context does not contain specific details about the visualization of meningiomas using contrast-enhanced imaging that employs a rotating X-ray tube and a row of detectors. Reference: [WIKI_1], [WIKI_2], [WIKI_3], [WIKI_4], [WIKI_5], [WIKI_6]. Explanation: Although the context includes general information about neuroimaging techniques and cerebral angiography, it does not specifically mention the use of contrast in the imaging of meningiomas via an imaging technique with a rotating X-ray tube and a row of detectors (i.e., CT imaging). Hence, the provided information is insufficient to answer the question."
-                    }
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "Meningiomas",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
                 }
+              }
             ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "Meningiomas",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
         },
-        "0": {
-            "0": {
-                "source_output": {
-                    "google": {
-                        "short_answer": "Yes",
-                        "long_answer": "Reference: [GG_3], [GG_5], [GG_20]. Explanation: The context explains that computed tomography (CT) employs a rotating X‐ray tube and detectors, and CT imaging techniques can include the use of contrast agents. Since meningiomas are visualized using CT among other imaging modalities, they can indeed be visualized with contrast using a CT scan.",
-                        "retrieval_information": "-Reference: [GG_1]: Automated meningioma detection using skull X ray images with deep ... by HU Kim · 2025 — This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional ...\n-Reference: [GG_2]: Automated meningioma detection using skull X ray images with deep ... by HU Kim · 2025 — This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional ...\n-Reference: [GG_3]: Computed tomography brain scan: Surprising facts CT scan technology uses a rotating X-ray machine to take pictures of the body from different sides. A computer then makes detailed pictures or 3D models of the ...\n-Reference: [GG_4]: Imaging and diagnostic advances for intracranial meningiomas by RY Huang · 2019 · Cited by 213 — In this supplement article, we review important current and future aspects of imaging in the diagnosis and management of meningioma, including ...\n-Reference: [GG_5]: Static Anatomic Techniques 22 Jan 2016 — The x-ray tube and detector, housed in a gantry, rotate 360 degrees around the patient so the x-ray beam strikes the patient in the transverse ( ...\n-Reference: [GG_6]: Dynamic contrast-enhanced imaging techniques: CT and MRI - PMC by JPB O'Connor · 2011 · Cited by 309 — This review highlights key issues in dynamic contrast-enhanced CT, dynamic contrast-enhanced MRI and arterial spin labelling\n-Reference: [GG_7]: Radiology Imaging Techniques of Brain Tumours by K Zeleňák · 2013 · Cited by 7 — The development of radiological imaging techniques for the evaluation of brain tumours has progressed significantly in recent years.\n-Reference: [GG_8]: Brain tumor detection with integrating traditional and computational ... by A Batool · 2024 · Cited by 69 — This study comprehensively reviews brain tumor segmentation and classification techniques, exploring various approaches based on image processing, machine ...\n-Reference: [GG_9]: Usefulness of Deep Learning Techniques Using Magnetic ... by JH Hwang · 2025 — This study aimed to implement an artificial intelligence (AI) model capable of diagnosing meningioma and atypical meningioma during deep learning using ...\n-Reference: [GG_10]: Deep-learning model for diagnostic clue: detecting the dural tail sign for ... by H Kim · 2023 · Cited by 8 — The proposed model demonstrates an automated detection system for the dural tail sign to identify meningioma in general screening MRI.\n-Reference: [GG_11]: Intracranial meningioma: A review of recent and emerging data on the ... 7 Aug 2024 — In this comprehensive review, we describe key features of meningiomas that can be established through neuroimaging, including size, location, vascularity, ...\n-Reference: [GG_12]: Automated meningioma detection using skull X ray images with deep ... This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional machine learning ...\n-Reference: [GG_13]: A STUDY ON BRAIN TUMOR TECHNOLOGY USING MACHINE ... Promising approaches to improve brain tumour diagnosis, classification, and prognosis are provided by recent developments in machine learning (ML) technologies.\n-Reference: [GG_14]: X-Ray Imaging and Computed Tomography (Left) The principle of computed tomography with an X-ray source and detector unit rotating synchronously around the patient. Data are essentially acquired ...\n-Reference: [GG_15]: Grading of meningioma tumors based on analyzing tumor volumetric ... by M Haghighi Borujeini · 2021 · Cited by 2 — In this study, the following sequences were analyzed: axial T1-weighted (pre- and post-contrast images), fast spin-echo sequence (TR 400 ms, TE ...\n-Reference: [GG_16]: improved tumor localization by correlation of CT and MR imaging data by LR Schad · 1992 · Cited by 56 — A localization technique, based on three-dimensional CT and MR imaging data for precision radiotherapy of basal meningiomas, is presented.\n-Reference: [GG_17]: Automated meningioma detection using skull X ray images with deep ... by HU Kim · 2025 — This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional machine learning ...\n-Reference: [GG_18]: Development of a Deep Learning Algorithm for the Detection of ... by R Pirinen · 2023 — They are usually diagnosed on head magnetic resonance imaging (MRI). Meningiomas can also be visible on computed tomography (CT) although ...\n-Reference: [GG_19]: CT Evaluation of Meningiomas 26 Mar 2015 — With this new technology, which uses an array of detectors to scan up to 64 slices per gantry rotation, a tissue block of 250 mm scan range can ...\n-Reference: [GG_20]: Head CT Imaging: Basic Concepts to Advanced Techniques The X-ray source and detectors rotate around the patient. Several projections are captured from different angles in order to create a 3-dimensional image volume ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Yes",
-                                "long_answer": "Reference: [GG_3], [GG_5], [GG_20]. Explanation: The context explains that computed tomography (CT) employs a rotating X‐ray tube and detectors, and CT imaging techniques can include the use of contrast agents. Since meningiomas are visualized using CT among other imaging modalities, they can indeed be visualized with contrast using a CT scan.",
-                                "retrieval_information": "-Reference: [GG_1]: Automated meningioma detection using skull X ray images with deep ... by HU Kim · 2025 — This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional ...\n-Reference: [GG_2]: Automated meningioma detection using skull X ray images with deep ... by HU Kim · 2025 — This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional ...\n-Reference: [GG_3]: Computed tomography brain scan: Surprising facts CT scan technology uses a rotating X-ray machine to take pictures of the body from different sides. A computer then makes detailed pictures or 3D models of the ...\n-Reference: [GG_4]: Imaging and diagnostic advances for intracranial meningiomas by RY Huang · 2019 · Cited by 213 — In this supplement article, we review important current and future aspects of imaging in the diagnosis and management of meningioma, including ...\n-Reference: [GG_5]: Static Anatomic Techniques 22 Jan 2016 — The x-ray tube and detector, housed in a gantry, rotate 360 degrees around the patient so the x-ray beam strikes the patient in the transverse ( ...\n-Reference: [GG_6]: Dynamic contrast-enhanced imaging techniques: CT and MRI - PMC by JPB O'Connor · 2011 · Cited by 309 — This review highlights key issues in dynamic contrast-enhanced CT, dynamic contrast-enhanced MRI and arterial spin labelling\n-Reference: [GG_7]: Radiology Imaging Techniques of Brain Tumours by K Zeleňák · 2013 · Cited by 7 — The development of radiological imaging techniques for the evaluation of brain tumours has progressed significantly in recent years.\n-Reference: [GG_8]: Brain tumor detection with integrating traditional and computational ... by A Batool · 2024 · Cited by 69 — This study comprehensively reviews brain tumor segmentation and classification techniques, exploring various approaches based on image processing, machine ...\n-Reference: [GG_9]: Usefulness of Deep Learning Techniques Using Magnetic ... by JH Hwang · 2025 — This study aimed to implement an artificial intelligence (AI) model capable of diagnosing meningioma and atypical meningioma during deep learning using ...\n-Reference: [GG_10]: Deep-learning model for diagnostic clue: detecting the dural tail sign for ... by H Kim · 2023 · Cited by 8 — The proposed model demonstrates an automated detection system for the dural tail sign to identify meningioma in general screening MRI.\n-Reference: [GG_11]: Intracranial meningioma: A review of recent and emerging data on the ... 7 Aug 2024 — In this comprehensive review, we describe key features of meningiomas that can be established through neuroimaging, including size, location, vascularity, ...\n-Reference: [GG_12]: Automated meningioma detection using skull X ray images with deep ... This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional machine learning ...\n-Reference: [GG_13]: A STUDY ON BRAIN TUMOR TECHNOLOGY USING MACHINE ... Promising approaches to improve brain tumour diagnosis, classification, and prognosis are provided by recent developments in machine learning (ML) technologies.\n-Reference: [GG_14]: X-Ray Imaging and Computed Tomography (Left) The principle of computed tomography with an X-ray source and detector unit rotating synchronously around the patient. Data are essentially acquired ...\n-Reference: [GG_15]: Grading of meningioma tumors based on analyzing tumor volumetric ... by M Haghighi Borujeini · 2021 · Cited by 2 — In this study, the following sequences were analyzed: axial T1-weighted (pre- and post-contrast images), fast spin-echo sequence (TR 400 ms, TE ...\n-Reference: [GG_16]: improved tumor localization by correlation of CT and MR imaging data by LR Schad · 1992 · Cited by 56 — A localization technique, based on three-dimensional CT and MR imaging data for precision radiotherapy of basal meningiomas, is presented.\n-Reference: [GG_17]: Automated meningioma detection using skull X ray images with deep ... by HU Kim · 2025 — This study demonstrated the feasibility of using skull X-rays for automated meningioma detection. By integrating deep learning and traditional machine learning ...\n-Reference: [GG_18]: Development of a Deep Learning Algorithm for the Detection of ... by R Pirinen · 2023 — They are usually diagnosed on head magnetic resonance imaging (MRI). Meningiomas can also be visible on computed tomography (CT) although ...\n-Reference: [GG_19]: CT Evaluation of Meningiomas 26 Mar 2015 — With this new technology, which uses an array of detectors to scan up to 64 slices per gantry rotation, a tissue block of 250 mm scan range can ...\n-Reference: [GG_20]: Head CT Imaging: Basic Concepts to Advanced Techniques The X-ray source and detectors rotate around the patient. Several projections are captured from different angles in order to create a 3-dimensional image volume ...\n\n",
-                                "extracted_entities": "intracranial meningiomas, tumor, brain tumour, meningioma tumors, meningioma, K, Meningiomas, GG_7, tumours",
-                                "full_data": {
-                                    "short_answer": "Yes",
-                                    "long_answer": "Reference: [GG_3], [GG_5], [GG_20]. Explanation: The context explains that computed tomography (CT) employs a rotating X‐ray tube and detectors, and CT imaging techniques can include the use of contrast agents. Since meningiomas are visualized using CT among other imaging modalities, they can indeed be visualized with contrast using a CT scan."
-                                }
-                            }
-                        ]
-                    },
-                    "wiki": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context does not contain specific details about the visualization of meningiomas using contrast-enhanced imaging that employs a rotating X-ray tube and a row of detectors. Reference: [WIKI_1], [WIKI_2], [WIKI_3], [WIKI_4], [WIKI_5], [WIKI_6]. Explanation: Although the context includes general information about neuroimaging techniques and cerebral angiography, it does not specifically mention the use of contrast in the imaging of meningiomas via an imaging technique with a rotating X-ray tube and a row of detectors (i.e., CT imaging). Hence, the provided information is insufficient to answer the question.",
-                        "retrieval_information": "-Reference: [WIKI_1]: History of neuroimaging Neuroimaging is a medical technique that allows doctors and researchers to take pictures of the inner workings of the body or brain of a patient.\n-Reference: [WIKI_2]: Cerebral angiography Cerebral angiography is a form of angiography which provides images of blood vessels in and around the brain, thereby allowing detection of abnormalities\n-Reference: [WIKI_3]: ویکی‌پدیا:ویکی‌پروژه فرهنگستان/دفتر دهم فرهنگستان کلید چرخشی---en:rotary valve · نشان‌فرست رادیویی چرخان---en:rotating radio beacon---en:revolving radio beacon · زبری---en:rough casting surface---en:roughness ...\n-Reference: [WIKI_4]: Wikipedia:WikiProject Medicine/Lists of pages/Articles Digital X-ray radiogrammetry · Digital addict · Digital autopsy · Digital hearing aid · Digital mammography · Digital motion X-ray · Digital mucous cyst ...\n-Reference: [WIKI_5]: Wikipedia:WikiProject Medicine/Lists of pages/Low-importance ... Wikipedia:WikiProject Medicine/Lists of pages/Low-importance medicine articles · Project page · Talk.\n-Reference: [WIKI_6]: Wikipedia:WikiProject Medicine/Lists of pages/Talk Talk:Digital X-ray radiogrammetry · Talk:Digital addict · Talk:Digital autopsy · Talk:Digital hearing aid · Talk:Digital mammography · Talk:Digital motion X-ray ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "The provided context does not contain specific details about the visualization of meningiomas using contrast-enhanced imaging that employs a rotating X-ray tube and a row of detectors. Reference: [WIKI_1], [WIKI_2], [WIKI_3], [WIKI_4], [WIKI_5], [WIKI_6]. Explanation: Although the context includes general information about neuroimaging techniques and cerebral angiography, it does not specifically mention the use of contrast in the imaging of meningiomas via an imaging technique with a rotating X-ray tube and a row of detectors (i.e., CT imaging). Hence, the provided information is insufficient to answer the question.",
-                                "retrieval_information": "-Reference: [WIKI_1]: History of neuroimaging Neuroimaging is a medical technique that allows doctors and researchers to take pictures of the inner workings of the body or brain of a patient.\n-Reference: [WIKI_2]: Cerebral angiography Cerebral angiography is a form of angiography which provides images of blood vessels in and around the brain, thereby allowing detection of abnormalities\n-Reference: [WIKI_3]: ویکی‌پدیا:ویکی‌پروژه فرهنگستان/دفتر دهم فرهنگستان کلید چرخشی---en:rotary valve · نشان‌فرست رادیویی چرخان---en:rotating radio beacon---en:revolving radio beacon · زبری---en:rough casting surface---en:roughness ...\n-Reference: [WIKI_4]: Wikipedia:WikiProject Medicine/Lists of pages/Articles Digital X-ray radiogrammetry · Digital addict · Digital autopsy · Digital hearing aid · Digital mammography · Digital motion X-ray · Digital mucous cyst ...\n-Reference: [WIKI_5]: Wikipedia:WikiProject Medicine/Lists of pages/Low-importance ... Wikipedia:WikiProject Medicine/Lists of pages/Low-importance medicine articles · Project page · Talk.\n-Reference: [WIKI_6]: Wikipedia:WikiProject Medicine/Lists of pages/Talk Talk:Digital X-ray radiogrammetry · Talk:Digital addict · Talk:Digital autopsy · Talk:Digital hearing aid · Talk:Digital mammography · Talk:Digital motion X-ray ...\n\n",
-                                "extracted_entities": "Meningiomas",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "The provided context does not contain specific details about the visualization of meningiomas using contrast-enhanced imaging that employs a rotating X-ray tube and a row of detectors. Reference: [WIKI_1], [WIKI_2], [WIKI_3], [WIKI_4], [WIKI_5], [WIKI_6]. Explanation: Although the context includes general information about neuroimaging techniques and cerebral angiography, it does not specifically mention the use of contrast in the imaging of meningiomas via an imaging technique with a rotating X-ray tube and a row of detectors (i.e., CT imaging). Hence, the provided information is insufficient to answer the question."
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "Meningiomas",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_ner_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "Meningiomas",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_sparql_wikidata": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "Meningiomas",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    }
-                },
-                "question": "Can Meningiomas be visualized with contrast using an imaging technique that employs a rotating X-ray tube and a row of detectors.",
-                "search_keyword": "Meningiomas contrast imaging technique rotating X-ray tube detectors"
-            }
-        }
+        "question": "Can Meningiomas be visualized with contrast using an imaging technique that employs a rotating X-ray tube and a row of detectors.",
+        "search_keyword": "Meningiomas contrast imaging technique rotating X-ray tube detectors"
+      }
     }
+  }
 }

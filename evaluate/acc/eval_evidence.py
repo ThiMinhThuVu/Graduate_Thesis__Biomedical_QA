@@ -139,7 +139,7 @@ def plot_histogram(source_counter, total_insufficient):
 
 
 def main():
-    json_folder = "medhop_results/all_ans"
+    json_folder = "medhop_results_no_mcq_TFIDF300/all_ans"
     output_json = "evaluate/acc/insufficient_stats.json"
 
     (

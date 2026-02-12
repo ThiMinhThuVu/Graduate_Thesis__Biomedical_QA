@@ -1,152 +1,70 @@
 {
-    "QIDX": "579497",
-    "original_question": "Does a condition related to ODD syndrome affect the functioning of the ring and middle fingers?",
-    "type_q": "direct",
-    "focus_spacy_based_entity_label": [
-        "DISEASE",
-        "CHEMICAL"
-    ],
-    "target_answer_type": "correctness",
-    "key_entities": [
-        "ring and middle fingers",
-        "ODD syndrome",
-        "ring fingers"
-    ],
-    "1": {
-        "final_qi": {
-            "question": "Does a condition related to ODD syndrome affect the functioning of the ring and middle fingers?",
-            "search_keyword": "ODD syndrome condition ring middle fingers functioning",
-            "short_answer": "",
-            "long_answer": "",
-            "retrieval_information": "",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
+  "QIDX": "579497",
+  "original_question": "Does a condition related to ODD syndrome affect the functioning of the ring and middle fingers?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "ring and middle fingers",
+    "ODD syndrome",
+    "ring fingers"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Does a condition related to ODD syndrome affect the functioning of the ring and middle fingers?",
+      "search_keyword": "ODD syndrome condition ring middle fingers functioning",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "Insufficient information",
+            "long_answer": "Explanation: The provided context does not include any details linking ODD syndrome to the functioning of the ring and middle fingers. Reference: [CRAWL_WIKI_1].",
+            "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n\n",
             "candidate": [
-                {
-                    "source": "google",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "The provided context does not contain specific information connecting a condition related to ODD syndrome with the functioning of the ring and middle fingers. No reference details a mechanism or effect of ODD syndrome on these fingers.",
-                    "retrieval_information": "-Reference: [GG_1]: Clinodactyly: Causes & Outlook 21 Feb 2022 — Clinodactyly is a curve of your finger that bends inward towards your other fingers and looks like a hook.\n-Reference: [GG_2]: Clinodactyly - an overview The small finger is most often involved, with curvature toward the ring finger. Radiographs may reveal a shortened/angulated middle phalanx (Figure 30-19). In ...\n-Reference: [GG_3]: Camptodactyly Camptodactyly is an abnormal bending of the middle joint of a finger. While it is most common in the little finger, it can be present in other fingers.\n-Reference: [GG_4]: Apert Syndrome Apert syndrome, also known as acrocephalosyndactyly, is a genetic disorder that causes fusion of the skull, hands, and feet bones.\n-Reference: [GG_5]: Deformities of the Hand and Fingers 5 Sept 2018 — The hand deformities in Apert syndrome include complex syndactyly of the index, long, and ring fingers and a simple syndactyly between the ring ...\n-Reference: [GG_6]: What is mirror hand syndrome or ulnar dimelia condition? Most individuals with this condition have seven or more fingers, which can affect their ability to grasp and manipulate objects due to the ...\n-Reference: [GG_7]: What Is Phelan-McDermid Syndrome? Causes, Symptoms & Treatment Phelan-McDermid syndrome is a rare genetic disorder that affects how a person's brain develops and functions, and how the body functions.\n-Reference: [GG_8]: Brachydactyly: What It Is and What It Means for Your Health 5 Jun 2025 — Brachydactyly is a congenital condition, meaning you're born with it. When you have it, your fingers and toes are much shorter than average ...\n-Reference: [GG_9]: Hand Conditions This condition is a result of tendon imbalance in the finger or thumb. In the finger, it causes a characteristic deformity in which the middle finger joint ...\n-Reference: [GG_10]: Webbed fingers - PMC - NIH by AE Flatt · 2005 · Cited by 58 — Webbing of the digits, or syndactyly, is not caused by the fingers sticking together in the womb; rather, it is caused by failure, during the sixth to eighth ...\n-Reference: [GG_11]: Why does my middle finger bend and turn towards the ring finger? Can this ... You may have a trigger finger in which a nerve in your palm is affected. A hand surgeon/orthopedist can treat it easily for most with a cortisone injection.\n-Reference: [GG_12]: The odd field (top); even field (middle) and the two fields displayed... Finger tapping (FT) test is a widely used neuropsychological assessment designed to measure fine motor skills, like speed and coordination of finger movements, ...\n-Reference: [GG_13]: Autism Hand Posturing: Early Signs and Meaning Autism hand posturing, a common behavior observed in children with autism, is a subtype of stimming, or self-stimulatory behavior.\n-Reference: [GG_14]: Children with Congenital Hand Anomalies & Malformations 27 Mar 2017 — This condition occurs when two or more fingers fail to separate when a baby is in the womb—resulting in \"webbed\" fingers at birth. It usually ...\n-Reference: [GG_15]: Finger Deformity | Causes, Types and Treatment in Surrey A boutonniere deformity is a condition affecting the middle joint of your finger. The middle joint bends inward while the joint at the end sticks out straight ...\n-Reference: [GG_16]: Carpal tunnel syndrome - Symptoms and causes 6 Feb 2024 — Carpal tunnel syndrome is one of the most common hand conditions. It is caused by pressure on the median nerve in the carpal tunnel of the wrist.\n-Reference: [GG_17]: One swollen finger: Causes and treatment Swelling in a single finger usually results from an injury or minor infection. It may also be a sign of arthritis, gout, or a benign growth.\n-Reference: [GG_18]: Common Hand Disorders | Hand, Wrist and Elbow | Doctor Articles 20 Sept 2020 — It can cause numbness (pin and needles) or burning pain in the ring and little fingers and clumsiness and weakness in the hand. The symptoms are ...\n-Reference: [GG_19]: Why Fingers Numb with Carpal Tunnel Syndrome The median nerve affects the thumb, index finger, middle finger, and part of the ring finger. This is why these fingers often show numbness and tingling in ...\n-Reference: [GG_20]: Types of Hand Conditions & Treatments The ulnar nerve runs from your shoulder down to your wrist and controls movement in your ring and pinky fingers. Cubital Tunnel Syndrome is a type of hand nerve ...\n\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context does not contain specific information connecting a condition related to ODD syndrome with the functioning of the ring and middle fingers. No reference details a mechanism or effect of ODD syndrome on these fingers."
-                    }
-                },
-                {
-                    "source": "wiki",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "Explanation: The provided context does not include any specific details about ODD syndrome affecting the functioning of the ring and middle fingers.",
-                    "retrieval_information": "-Reference: [WIKI_1]: Dactyly In humans this name is used for an abnormality in which the middle digits are missing, leaving only the thumb and fifth finger, or big and little toes.\n-Reference: [WIKI_2]: Wikipedia:Unusual articles These articles are verifiable, valuable contributions to the encyclopedia, but are a bit odd, whimsical, or something one would not expect to find in ...\n-Reference: [WIKI_3]: Ocular dominance Ocular dominance, sometimes called eye preference or eyedness, [1] is the tendency to prefer visual input from one eye to the other.\n-Reference: [WIKI_4]: Zār Zār (Arabic: زار, Ge'ez: ዛር) is the term for a demon or spirit assumed to possess individuals, mostly women, and to cause discomfort or illness.\n-Reference: [WIKI_5]: Bisexuality Studies measuring the fingers found a statistically significant skew in the 2D:4D ratio (long ring finger) towards homosexuality with an even lower ratio in ...\n-Reference: [WIKI_6]: Portal:Medicine Unlike some other dementias, memory loss may not be an early symptom. The disease worsens over time and is usually diagnosed when cognitive impairment ...\n-Reference: [WIKI_7]: Human brain Symptoms relate to the function of the affected area of the brain and can point to the likely site and cause of the stroke. Difficulties with movement ...\n-Reference: [WIKI_8]: Wikipedia:WikiProject Short descriptions/wd/diseases condition where one does not possess a functioning ... fingers or toes, underdevelopment or abscense of finger or toe nails and developmental disability.\n-Reference: [WIKI_9]: Ichthyosauria Like the Ichthyopterygia, the Hupehsuchia have pointed snouts and show polydactyly, the possession of more than five fingers or toes. Their limbs more ...\n-Reference: [WIKI_10]: Lead Lead is a chemical element with the symbol Pb (from the Latin plumbum) and atomic number 82. It is a heavy metal, denser than most common materials.\n\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context does not include any specific details about ODD syndrome affecting the functioning of the ring and middle fingers."
-                    }
-                },
-                {
-                    "source": "crawl_wiki",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "Explanation: The provided context does not include any details linking ODD syndrome to the functioning of the ring and middle fingers. Reference: [CRAWL_WIKI_1].",
-                    "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context does not include any details linking ODD syndrome to the functioning of the ring and middle fingers. Reference: [CRAWL_WIKI_1]."
-                    }
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "Explanation: The provided context does not include any details linking ODD syndrome to the functioning of the ring and middle fingers. Reference: [CRAWL_WIKI_1].",
+                "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n\n",
+                "extracted_entities": "ODD syndrome",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "Explanation: The provided context does not include any details linking ODD syndrome to the functioning of the ring and middle fingers. Reference: [CRAWL_WIKI_1]."
                 }
+              }
             ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "ODD syndrome",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
         },
-        "0": {
-            "0": {
-                "source_output": {
-                    "google": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context does not contain specific information connecting a condition related to ODD syndrome with the functioning of the ring and middle fingers. No reference details a mechanism or effect of ODD syndrome on these fingers.",
-                        "retrieval_information": "-Reference: [GG_1]: Clinodactyly: Causes & Outlook 21 Feb 2022 — Clinodactyly is a curve of your finger that bends inward towards your other fingers and looks like a hook.\n-Reference: [GG_2]: Clinodactyly - an overview The small finger is most often involved, with curvature toward the ring finger. Radiographs may reveal a shortened/angulated middle phalanx (Figure 30-19). In ...\n-Reference: [GG_3]: Camptodactyly Camptodactyly is an abnormal bending of the middle joint of a finger. While it is most common in the little finger, it can be present in other fingers.\n-Reference: [GG_4]: Apert Syndrome Apert syndrome, also known as acrocephalosyndactyly, is a genetic disorder that causes fusion of the skull, hands, and feet bones.\n-Reference: [GG_5]: Deformities of the Hand and Fingers 5 Sept 2018 — The hand deformities in Apert syndrome include complex syndactyly of the index, long, and ring fingers and a simple syndactyly between the ring ...\n-Reference: [GG_6]: What is mirror hand syndrome or ulnar dimelia condition? Most individuals with this condition have seven or more fingers, which can affect their ability to grasp and manipulate objects due to the ...\n-Reference: [GG_7]: What Is Phelan-McDermid Syndrome? Causes, Symptoms & Treatment Phelan-McDermid syndrome is a rare genetic disorder that affects how a person's brain develops and functions, and how the body functions.\n-Reference: [GG_8]: Brachydactyly: What It Is and What It Means for Your Health 5 Jun 2025 — Brachydactyly is a congenital condition, meaning you're born with it. When you have it, your fingers and toes are much shorter than average ...\n-Reference: [GG_9]: Hand Conditions This condition is a result of tendon imbalance in the finger or thumb. In the finger, it causes a characteristic deformity in which the middle finger joint ...\n-Reference: [GG_10]: Webbed fingers - PMC - NIH by AE Flatt · 2005 · Cited by 58 — Webbing of the digits, or syndactyly, is not caused by the fingers sticking together in the womb; rather, it is caused by failure, during the sixth to eighth ...\n-Reference: [GG_11]: Why does my middle finger bend and turn towards the ring finger? Can this ... You may have a trigger finger in which a nerve in your palm is affected. A hand surgeon/orthopedist can treat it easily for most with a cortisone injection.\n-Reference: [GG_12]: The odd field (top); even field (middle) and the two fields displayed... Finger tapping (FT) test is a widely used neuropsychological assessment designed to measure fine motor skills, like speed and coordination of finger movements, ...\n-Reference: [GG_13]: Autism Hand Posturing: Early Signs and Meaning Autism hand posturing, a common behavior observed in children with autism, is a subtype of stimming, or self-stimulatory behavior.\n-Reference: [GG_14]: Children with Congenital Hand Anomalies & Malformations 27 Mar 2017 — This condition occurs when two or more fingers fail to separate when a baby is in the womb—resulting in \"webbed\" fingers at birth. It usually ...\n-Reference: [GG_15]: Finger Deformity | Causes, Types and Treatment in Surrey A boutonniere deformity is a condition affecting the middle joint of your finger. The middle joint bends inward while the joint at the end sticks out straight ...\n-Reference: [GG_16]: Carpal tunnel syndrome - Symptoms and causes 6 Feb 2024 — Carpal tunnel syndrome is one of the most common hand conditions. It is caused by pressure on the median nerve in the carpal tunnel of the wrist.\n-Reference: [GG_17]: One swollen finger: Causes and treatment Swelling in a single finger usually results from an injury or minor infection. It may also be a sign of arthritis, gout, or a benign growth.\n-Reference: [GG_18]: Common Hand Disorders | Hand, Wrist and Elbow | Doctor Articles 20 Sept 2020 — It can cause numbness (pin and needles) or burning pain in the ring and little fingers and clumsiness and weakness in the hand. The symptoms are ...\n-Reference: [GG_19]: Why Fingers Numb with Carpal Tunnel Syndrome The median nerve affects the thumb, index finger, middle finger, and part of the ring finger. This is why these fingers often show numbness and tingling in ...\n-Reference: [GG_20]: Types of Hand Conditions & Treatments The ulnar nerve runs from your shoulder down to your wrist and controls movement in your ring and pinky fingers. Cubital Tunnel Syndrome is a type of hand nerve ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "The provided context does not contain specific information connecting a condition related to ODD syndrome with the functioning of the ring and middle fingers. No reference details a mechanism or effect of ODD syndrome on these fingers.",
-                                "retrieval_information": "-Reference: [GG_1]: Clinodactyly: Causes & Outlook 21 Feb 2022 — Clinodactyly is a curve of your finger that bends inward towards your other fingers and looks like a hook.\n-Reference: [GG_2]: Clinodactyly - an overview The small finger is most often involved, with curvature toward the ring finger. Radiographs may reveal a shortened/angulated middle phalanx (Figure 30-19). In ...\n-Reference: [GG_3]: Camptodactyly Camptodactyly is an abnormal bending of the middle joint of a finger. While it is most common in the little finger, it can be present in other fingers.\n-Reference: [GG_4]: Apert Syndrome Apert syndrome, also known as acrocephalosyndactyly, is a genetic disorder that causes fusion of the skull, hands, and feet bones.\n-Reference: [GG_5]: Deformities of the Hand and Fingers 5 Sept 2018 — The hand deformities in Apert syndrome include complex syndactyly of the index, long, and ring fingers and a simple syndactyly between the ring ...\n-Reference: [GG_6]: What is mirror hand syndrome or ulnar dimelia condition? Most individuals with this condition have seven or more fingers, which can affect their ability to grasp and manipulate objects due to the ...\n-Reference: [GG_7]: What Is Phelan-McDermid Syndrome? Causes, Symptoms & Treatment Phelan-McDermid syndrome is a rare genetic disorder that affects how a person's brain develops and functions, and how the body functions.\n-Reference: [GG_8]: Brachydactyly: What It Is and What It Means for Your Health 5 Jun 2025 — Brachydactyly is a congenital condition, meaning you're born with it. When you have it, your fingers and toes are much shorter than average ...\n-Reference: [GG_9]: Hand Conditions This condition is a result of tendon imbalance in the finger or thumb. In the finger, it causes a characteristic deformity in which the middle finger joint ...\n-Reference: [GG_10]: Webbed fingers - PMC - NIH by AE Flatt · 2005 · Cited by 58 — Webbing of the digits, or syndactyly, is not caused by the fingers sticking together in the womb; rather, it is caused by failure, during the sixth to eighth ...\n-Reference: [GG_11]: Why does my middle finger bend and turn towards the ring finger? Can this ... You may have a trigger finger in which a nerve in your palm is affected. A hand surgeon/orthopedist can treat it easily for most with a cortisone injection.\n-Reference: [GG_12]: The odd field (top); even field (middle) and the two fields displayed... Finger tapping (FT) test is a widely used neuropsychological assessment designed to measure fine motor skills, like speed and coordination of finger movements, ...\n-Reference: [GG_13]: Autism Hand Posturing: Early Signs and Meaning Autism hand posturing, a common behavior observed in children with autism, is a subtype of stimming, or self-stimulatory behavior.\n-Reference: [GG_14]: Children with Congenital Hand Anomalies & Malformations 27 Mar 2017 — This condition occurs when two or more fingers fail to separate when a baby is in the womb—resulting in \"webbed\" fingers at birth. It usually ...\n-Reference: [GG_15]: Finger Deformity | Causes, Types and Treatment in Surrey A boutonniere deformity is a condition affecting the middle joint of your finger. The middle joint bends inward while the joint at the end sticks out straight ...\n-Reference: [GG_16]: Carpal tunnel syndrome - Symptoms and causes 6 Feb 2024 — Carpal tunnel syndrome is one of the most common hand conditions. It is caused by pressure on the median nerve in the carpal tunnel of the wrist.\n-Reference: [GG_17]: One swollen finger: Causes and treatment Swelling in a single finger usually results from an injury or minor infection. It may also be a sign of arthritis, gout, or a benign growth.\n-Reference: [GG_18]: Common Hand Disorders | Hand, Wrist and Elbow | Doctor Articles 20 Sept 2020 — It can cause numbness (pin and needles) or burning pain in the ring and little fingers and clumsiness and weakness in the hand. The symptoms are ...\n-Reference: [GG_19]: Why Fingers Numb with Carpal Tunnel Syndrome The median nerve affects the thumb, index finger, middle finger, and part of the ring finger. This is why these fingers often show numbness and tingling in ...\n-Reference: [GG_20]: Types of Hand Conditions & Treatments The ulnar nerve runs from your shoulder down to your wrist and controls movement in your ring and pinky fingers. Cubital Tunnel Syndrome is a type of hand nerve ...\n\n",
-                                "extracted_entities": "arthritis, Congenital Hand Anomalies & Malformations 27 Mar 2017 — This condition occurs when two or more fingers, tunnel syndrome, Autism, Carpal tunnel syndrome, gout, Meaning Autism, Apert syndrome, Camptodactyly Camptodactyly, deformity, cortisone, numbness, pain, Phelan-McDermid Syndrome, Cubital Tunnel Syndrome, ODD syndrome, clumsiness, weakness, Apert Syndrome Apert syndrome, hand syndrome, hand deformities, GG_7, infection, Brachydactyly",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "The provided context does not contain specific information connecting a condition related to ODD syndrome with the functioning of the ring and middle fingers. No reference details a mechanism or effect of ODD syndrome on these fingers."
-                                }
-                            }
-                        ]
-                    },
-                    "wiki": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context does not include any specific details about ODD syndrome affecting the functioning of the ring and middle fingers.",
-                        "retrieval_information": "-Reference: [WIKI_1]: Dactyly In humans this name is used for an abnormality in which the middle digits are missing, leaving only the thumb and fifth finger, or big and little toes.\n-Reference: [WIKI_2]: Wikipedia:Unusual articles These articles are verifiable, valuable contributions to the encyclopedia, but are a bit odd, whimsical, or something one would not expect to find in ...\n-Reference: [WIKI_3]: Ocular dominance Ocular dominance, sometimes called eye preference or eyedness, [1] is the tendency to prefer visual input from one eye to the other.\n-Reference: [WIKI_4]: Zār Zār (Arabic: زار, Ge'ez: ዛር) is the term for a demon or spirit assumed to possess individuals, mostly women, and to cause discomfort or illness.\n-Reference: [WIKI_5]: Bisexuality Studies measuring the fingers found a statistically significant skew in the 2D:4D ratio (long ring finger) towards homosexuality with an even lower ratio in ...\n-Reference: [WIKI_6]: Portal:Medicine Unlike some other dementias, memory loss may not be an early symptom. The disease worsens over time and is usually diagnosed when cognitive impairment ...\n-Reference: [WIKI_7]: Human brain Symptoms relate to the function of the affected area of the brain and can point to the likely site and cause of the stroke. Difficulties with movement ...\n-Reference: [WIKI_8]: Wikipedia:WikiProject Short descriptions/wd/diseases condition where one does not possess a functioning ... fingers or toes, underdevelopment or abscense of finger or toe nails and developmental disability.\n-Reference: [WIKI_9]: Ichthyosauria Like the Ichthyopterygia, the Hupehsuchia have pointed snouts and show polydactyly, the possession of more than five fingers or toes. Their limbs more ...\n-Reference: [WIKI_10]: Lead Lead is a chemical element with the symbol Pb (from the Latin plumbum) and atomic number 82. It is a heavy metal, denser than most common materials.\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "Explanation: The provided context does not include any specific details about ODD syndrome affecting the functioning of the ring and middle fingers.",
-                                "retrieval_information": "-Reference: [WIKI_1]: Dactyly In humans this name is used for an abnormality in which the middle digits are missing, leaving only the thumb and fifth finger, or big and little toes.\n-Reference: [WIKI_2]: Wikipedia:Unusual articles These articles are verifiable, valuable contributions to the encyclopedia, but are a bit odd, whimsical, or something one would not expect to find in ...\n-Reference: [WIKI_3]: Ocular dominance Ocular dominance, sometimes called eye preference or eyedness, [1] is the tendency to prefer visual input from one eye to the other.\n-Reference: [WIKI_4]: Zār Zār (Arabic: زار, Ge'ez: ዛር) is the term for a demon or spirit assumed to possess individuals, mostly women, and to cause discomfort or illness.\n-Reference: [WIKI_5]: Bisexuality Studies measuring the fingers found a statistically significant skew in the 2D:4D ratio (long ring finger) towards homosexuality with an even lower ratio in ...\n-Reference: [WIKI_6]: Portal:Medicine Unlike some other dementias, memory loss may not be an early symptom. The disease worsens over time and is usually diagnosed when cognitive impairment ...\n-Reference: [WIKI_7]: Human brain Symptoms relate to the function of the affected area of the brain and can point to the likely site and cause of the stroke. Difficulties with movement ...\n-Reference: [WIKI_8]: Wikipedia:WikiProject Short descriptions/wd/diseases condition where one does not possess a functioning ... fingers or toes, underdevelopment or abscense of finger or toe nails and developmental disability.\n-Reference: [WIKI_9]: Ichthyosauria Like the Ichthyopterygia, the Hupehsuchia have pointed snouts and show polydactyly, the possession of more than five fingers or toes. Their limbs more ...\n-Reference: [WIKI_10]: Lead Lead is a chemical element with the symbol Pb (from the Latin plumbum) and atomic number 82. It is a heavy metal, denser than most common materials.\n\n",
-                                "extracted_entities": "discomfort or illness, ODD syndrome, cognitive impairment, Pb, memory loss, polydactyly, plumbum, stroke, developmental disability, dementias",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "Explanation: The provided context does not include any specific details about ODD syndrome affecting the functioning of the ring and middle fingers."
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_wiki": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context does not include any details linking ODD syndrome to the functioning of the ring and middle fingers. Reference: [CRAWL_WIKI_1].",
-                        "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "Explanation: The provided context does not include any details linking ODD syndrome to the functioning of the ring and middle fingers. Reference: [CRAWL_WIKI_1].",
-                                "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n\n",
-                                "extracted_entities": "ODD syndrome",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "Explanation: The provided context does not include any details linking ODD syndrome to the functioning of the ring and middle fingers. Reference: [CRAWL_WIKI_1]."
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_ner_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "ODD syndrome",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_sparql_wikidata": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "ODD syndrome",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    }
-                },
-                "question": "Does a condition related to ODD syndrome affect the functioning of the ring and middle fingers?",
-                "search_keyword": "ODD syndrome condition ring middle fingers functioning"
-            }
-        }
+        "question": "Does a condition related to ODD syndrome affect the functioning of the ring and middle fingers?",
+        "search_keyword": "ODD syndrome condition ring middle fingers functioning"
+      }
     }
+  }
 }

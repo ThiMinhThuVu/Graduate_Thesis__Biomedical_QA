@@ -1,0 +1,7127 @@
+{
+  "100223": {
+    "golden": [
+      "extensor digitorum brevis muscle"
+    ],
+    "cand": {
+      "extensor digitorum brevis muscle": {
+        "is_correct": true,
+        "post_ans": "extensor digitorum brevis muscle",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "100860": {
+    "golden": [
+      "magnetic resonance imaging",
+      "mri"
+    ],
+    "cand": {
+      "magnetic resonance imaging (mri)": {
+        "is_correct": false,
+        "post_ans": "mri",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "102429": {
+    "golden": [
+      "chromosome 12"
+    ],
+    "cand": {
+      "chromosome 12q13": {
+        "is_correct": false,
+        "post_ans": "chromosome 12",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "103768": {
+    "golden": [
+      "body dysmorphic disorder"
+    ],
+    "cand": {
+      "body dysmorphic disorder": {
+        "is_correct": true,
+        "post_ans": "body dysmorphic disorder",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "106578": {
+    "golden": [
+      "hematopoietic growth factors"
+    ],
+    "cand": {
+      "hematopoietic growth factors": {
+        "is_correct": true,
+        "post_ans": "hematopoietic growth factors",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "110394": {
+    "golden": [
+      "jaundice"
+    ],
+    "cand": {
+      "jaundice": {
+        "is_correct": true,
+        "post_ans": "jaundice",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "114428": {
+    "golden": [
+      "xp11.4",
+      "xp11.4 region"
+    ],
+    "cand": {
+      "x chromosome (xp11.4)": {
+        "is_correct": false,
+        "post_ans": "x chromosome (xp11.4)",
+        "post_ans_correct": false
+      },
+      "the short arm of the x chromosome (xp11.4)": {
+        "is_correct": false,
+        "post_ans": "the short arm of the x chromosome (xp11.4)",
+        "post_ans_correct": false
+      },
+      "short arm of the x chromosome (xp11.4)": {
+        "is_correct": false,
+        "post_ans": "short arm of the x chromosome (xp11.4)",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "117785": {
+    "golden": [
+      "c2 vertebra"
+    ],
+    "cand": {
+      "odontoid process of c2 at the foramen magnum": {
+        "is_correct": false,
+        "post_ans": "odontoid process of c2 at the foramen magnum",
+        "post_ans_correct": false
+      },
+      "base of the skull": {
+        "is_correct": false,
+        "post_ans": "base of the skull",
+        "post_ans_correct": false
+      },
+      "the petrous part of the temporal bone, located at the skull base between the sphenoid and occipital bones": {
+        "is_correct": false,
+        "post_ans": "the petrous part of the temporal bone, located at the skull base between the sphenoid and occipital bones",
+        "post_ans_correct": false
+      },
+      "top of the c2 vertebra": {
+        "is_correct": false,
+        "post_ans": "top of the c2 vertebra",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "117978": {
+    "golden": [
+      "propionic acidemia"
+    ],
+    "cand": {
+      "propionic acidemia": {
+        "is_correct": true,
+        "post_ans": "propionic acidemia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "118785": {
+    "golden": [
+      "fetal alcohol syndrome"
+    ],
+    "cand": {
+      "fetal alcohol syndrome": {
+        "is_correct": true,
+        "post_ans": "fetal alcohol syndrome",
+        "post_ans_correct": true
+      },
+      "fetal alcohol effects (fae)": {
+        "is_correct": false,
+        "post_ans": "fae",
+        "post_ans_correct": false
+      },
+      "static encephalopathy": {
+        "is_correct": false,
+        "post_ans": "static encephalopathy",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "120453": {
+    "golden": [
+      "cortisol"
+    ],
+    "cand": {
+      "cortisol": {
+        "is_correct": true,
+        "post_ans": "cortisol",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "125994": {
+    "golden": [
+      "wdr62"
+    ],
+    "cand": {
+      "wdr62": {
+        "is_correct": true,
+        "post_ans": "wdr62",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "126941": {
+    "golden": [
+      "bloom syndrome"
+    ],
+    "cand": {
+      "bloom syndrome": {
+        "is_correct": true,
+        "post_ans": "bloom syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "129442": {
+    "golden": [
+      "epstein-barr virus",
+      "epstein–barr virus"
+    ],
+    "cand": {
+      "epstein-barr virus": {
+        "is_correct": true,
+        "post_ans": "epstein-barr virus",
+        "post_ans_correct": true
+      },
+      "epstein–barr virus": {
+        "is_correct": true,
+        "post_ans": "epstein–barr virus",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "131415": {
+    "golden": [
+      "petroleum jelly"
+    ],
+    "cand": {
+      "riluzole": {
+        "is_correct": false,
+        "post_ans": "riluzole",
+        "post_ans_correct": false
+      },
+      "petroleum jelly": {
+        "is_correct": true,
+        "post_ans": "petroleum jelly",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "132019": {
+    "golden": [
+      "cyclophoria"
+    ],
+    "cand": {}
+  },
+  "134630": {
+    "golden": [
+      "strelitzia nicolai"
+    ],
+    "cand": {}
+  },
+  "136660": {
+    "golden": [
+      "chromosome 2"
+    ],
+    "cand": {
+      "chromosome 2": {
+        "is_correct": true,
+        "post_ans": "chromosome 2",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "137247": {
+    "golden": [
+      "diarrhea abdominal pain"
+    ],
+    "cand": {
+      "diarrhea and abdominal pain": {
+        "is_correct": false,
+        "post_ans": "diarrhea and abdominal pain",
+        "post_ans_correct": false
+      },
+      "diarrhea and upper abdominal pain": {
+        "is_correct": false,
+        "post_ans": "diarrhea and upper abdominal pain",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "139280": {
+    "golden": [
+      "joag"
+    ],
+    "cand": {
+      "juvenile glaucoma": {
+        "is_correct": false,
+        "post_ans": "juvenile glaucoma",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "139521": {
+    "golden": [
+      "amiodarone"
+    ],
+    "cand": {
+      "amiodarone": {
+        "is_correct": true,
+        "post_ans": "amiodarone",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "141316": {
+    "golden": [
+      "varicella zoster virus"
+    ],
+    "cand": {
+      "sars-cov-2": {
+        "is_correct": false,
+        "post_ans": "sars-cov-2",
+        "post_ans_correct": false
+      },
+      "varicella zoster virus": {
+        "is_correct": true,
+        "post_ans": "varicella zoster virus",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "141686": {
+    "golden": [
+      "siganus spinus"
+    ],
+    "cand": {
+      "siganus spinus": {
+        "is_correct": true,
+        "post_ans": "siganus spinus",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "142759": {
+    "golden": [
+      "bevacizumab"
+    ],
+    "cand": {
+      "bevacizumab": {
+        "is_correct": true,
+        "post_ans": "bevacizumab",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "143907": {
+    "golden": [
+      "organic acidemias"
+    ],
+    "cand": {
+      "maple syrup urine disease (msud)": {
+        "is_correct": false,
+        "post_ans": "msud",
+        "post_ans_correct": false
+      },
+      "organic acidemias": {
+        "is_correct": true,
+        "post_ans": "organic acidemias",
+        "post_ans_correct": true
+      },
+      "maple syrup urine disease": {
+        "is_correct": false,
+        "post_ans": "maple syrup urine disease",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "144821": {
+    "golden": [
+      "acquired immunodeficiency syndrome"
+    ],
+    "cand": {
+      "human immunodeficiency virus": {
+        "is_correct": false,
+        "post_ans": "human immunodeficiency virus",
+        "post_ans_correct": false
+      },
+      "human immunodeficiency virus (hiv) infection": {
+        "is_correct": false,
+        "post_ans": "human immunodeficiency virus (hiv) infection",
+        "post_ans_correct": false
+      },
+      "acquired immunodeficiency syndrome (aids)": {
+        "is_correct": false,
+        "post_ans": "aids dysmorphic syndrome",
+        "post_ans_correct": false
+      },
+      "hiv": {
+        "is_correct": false,
+        "post_ans": "hiv",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "145230": {
+    "golden": [
+      "fasciculations"
+    ],
+    "cand": {
+      "fasciculations": {
+        "is_correct": true,
+        "post_ans": "fasciculations",
+        "post_ans_correct": true
+      },
+      "myokymia": {
+        "is_correct": false,
+        "post_ans": "myokymia",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "147361": {
+    "golden": [
+      "sanger sequencing"
+    ],
+    "cand": {
+      "sanger sequencing": {
+        "is_correct": true,
+        "post_ans": "sanger sequencing",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "148826": {
+    "golden": [
+      "chorionic villus sampling"
+    ],
+    "cand": {
+      "chorionic villus sampling (cvs)": {
+        "is_correct": false,
+        "post_ans": "cvs",
+        "post_ans_correct": false
+      },
+      "chorionic villus sampling": {
+        "is_correct": true,
+        "post_ans": "chorionic villus sampling",
+        "post_ans_correct": true
+      },
+      "cvs": {
+        "is_correct": false,
+        "post_ans": "cvs",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "149319": {
+    "golden": [
+      "asbestosis"
+    ],
+    "cand": {
+      "asbestosis": {
+        "is_correct": true,
+        "post_ans": "asbestosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "149439": {
+    "golden": [
+      "treponema pallidum"
+    ],
+    "cand": {
+      "treponema pallidum": {
+        "is_correct": true,
+        "post_ans": "treponema pallidum",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "149454": {
+    "golden": [
+      "pax6"
+    ],
+    "cand": {
+      "pax6": {
+        "is_correct": true,
+        "post_ans": "pax6",
+        "post_ans_correct": true
+      },
+      "homeobox-containing six3 gene": {
+        "is_correct": false,
+        "post_ans": "homeobox-containing six3",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "150011": {
+    "golden": [
+      "thrombotic disorder"
+    ],
+    "cand": {
+      "thrombotic disorder": {
+        "is_correct": true,
+        "post_ans": "thrombotic disorder",
+        "post_ans_correct": true
+      },
+      "primarily a thrombotic disorder": {
+        "is_correct": false,
+        "post_ans": "primarily a thrombotic disorder",
+        "post_ans_correct": false
+      },
+      "inflammatory small-vessel vasculitis": {
+        "is_correct": false,
+        "post_ans": "inflammatory small-vessel vasculitis",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "150243": {
+    "golden": [
+      "shprintzen-goldberg syndrome"
+    ],
+    "cand": {
+      "shprintzen-goldberg syndrome": {
+        "is_correct": true,
+        "post_ans": "shprintzen-goldberg syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "151378": {
+    "golden": [
+      "cerebral cortex"
+    ],
+    "cand": {
+      "cerebral cortex": {
+        "is_correct": true,
+        "post_ans": "cerebral cortex",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "151462": {
+    "golden": [
+      "the black death",
+      "black death"
+    ],
+    "cand": {
+      "black death": {
+        "is_correct": true,
+        "post_ans": "black death",
+        "post_ans_correct": true
+      },
+      "the black death": {
+        "is_correct": true,
+        "post_ans": "the black death",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "151952": {
+    "golden": [
+      "infliximab"
+    ],
+    "cand": {
+      "infliximab": {
+        "is_correct": true,
+        "post_ans": "infliximab",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "152455": {
+    "golden": [
+      "fibular aplasia-ectrodactyly syndrome",
+      "fibular aplasia ectrodactyly"
+    ],
+    "cand": {
+      "fibular aplasia-ectrodactyly syndrome": {
+        "is_correct": true,
+        "post_ans": "fibular aplasia-ectrodactyly syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "153240": {
+    "golden": [
+      "11 weeks"
+    ],
+    "cand": {
+      "22 weeks": {
+        "is_correct": false,
+        "post_ans": "22 weeks",
+        "post_ans_correct": false
+      },
+      "gestational week 11": {
+        "is_correct": false,
+        "post_ans": "gestational week 11",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "154301": {
+    "golden": [
+      "carpenter syndrome"
+    ],
+    "cand": {
+      "carpenter syndrome": {
+        "is_correct": true,
+        "post_ans": "carpenter syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "155398": {
+    "golden": [
+      "ctns"
+    ],
+    "cand": {
+      "fanca": {
+        "is_correct": false,
+        "post_ans": "fanca",
+        "post_ans_correct": false
+      },
+      "ctns": {
+        "is_correct": true,
+        "post_ans": "ctns",
+        "post_ans_correct": true
+      },
+      "slc2a2": {
+        "is_correct": false,
+        "post_ans": "slc2a2",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "157149": {
+    "golden": [
+      "cranial nerve xi",
+      "spinal accessory nerve"
+    ],
+    "cand": {
+      "facial nerve": {
+        "is_correct": false,
+        "post_ans": "facial nerve",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "157829": {
+    "golden": [
+      "calamine",
+      "calamine lotion"
+    ],
+    "cand": {
+      "calamine lotion": {
+        "is_correct": true,
+        "post_ans": "calamine lotion",
+        "post_ans_correct": true
+      },
+      "bentonite clay": {
+        "is_correct": false,
+        "post_ans": "bentonite clay",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "162538": {
+    "golden": [
+      "ovarian teratoma"
+    ],
+    "cand": {
+      "ovarian teratoma": {
+        "is_correct": true,
+        "post_ans": "ovarian teratoma",
+        "post_ans_correct": true
+      },
+      "teratoma": {
+        "is_correct": false,
+        "post_ans": "teratoma",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "166341": {
+    "golden": [
+      "5-5.5%"
+    ],
+    "cand": {
+      "3.5%": {
+        "is_correct": false,
+        "post_ans": "3.5%",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "167837": {
+    "golden": [
+      "jacobsen syndrome"
+    ],
+    "cand": {
+      "jacobsen syndrome": {
+        "is_correct": true,
+        "post_ans": "jacobsen syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "170022": {
+    "golden": [
+      "arrhythmogenic right ventricular cardiomyopathy",
+      "arrhythmogenic right ventricular dysplasia/cardiomyopathy"
+    ],
+    "cand": {
+      "arrhythmogenic right ventricular cardiomyopathy": {
+        "is_correct": true,
+        "post_ans": "arrhythmogenic right ventricular cardiomyopathy",
+        "post_ans_correct": true
+      },
+      "arrhythmogenic right ventricular dysplasia/cardiomyopathy": {
+        "is_correct": true,
+        "post_ans": "arrhythmogenic right ventricular dysplasia/cardiomyopathy",
+        "post_ans_correct": true
+      },
+      "arrhythmogenic cardiomyopathy": {
+        "is_correct": false,
+        "post_ans": "arrhythmogenic cardiomyopathy",
+        "post_ans_correct": false
+      },
+      "arrhythmogenic right ventricular dysplasia/cardiomyopathy (arvd/c)": {
+        "is_correct": false,
+        "post_ans": "arrhythmogenic right ventricular dysplasia/cardiomyopathy (arvd/c)",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "170150": {
+    "golden": [
+      "aspm"
+    ],
+    "cand": {
+      "mthfr": {
+        "is_correct": false,
+        "post_ans": "mthfr",
+        "post_ans_correct": false
+      },
+      "aspm gene": {
+        "is_correct": false,
+        "post_ans": "aspm",
+        "post_ans_correct": true
+      },
+      "wls gene": {
+        "is_correct": false,
+        "post_ans": "wls",
+        "post_ans_correct": false
+      },
+      "aspm (mcph5)": {
+        "is_correct": false,
+        "post_ans": "aspm",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "170420": {
+    "golden": [
+      "janus kinase 2",
+      "jak2"
+    ],
+    "cand": {
+      "jak2": {
+        "is_correct": true,
+        "post_ans": "jak2",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "170431": {
+    "golden": [
+      "kaposi's sarcoma",
+      "kaposi sarcoma"
+    ],
+    "cand": {
+      "kaposi's sarcoma": {
+        "is_correct": true,
+        "post_ans": "kaposi's sarcoma",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "170561": {
+    "golden": [
+      "cimetidine"
+    ],
+    "cand": {
+      "cimetidine": {
+        "is_correct": true,
+        "post_ans": "cimetidine",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "170603": {
+    "golden": [
+      "zona fasciculata"
+    ],
+    "cand": {
+      "adrenal cortex": {
+        "is_correct": false,
+        "post_ans": "adrenal cortex",
+        "post_ans_correct": false
+      },
+      "zona fasciculata": {
+        "is_correct": true,
+        "post_ans": "zona fasciculata",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "176281": {
+    "golden": [
+      "university of milan"
+    ],
+    "cand": {
+      "university of perugia": {
+        "is_correct": false,
+        "post_ans": "university of perugia",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "180573": {
+    "golden": [
+      "254"
+    ],
+    "cand": {
+      "254": {
+        "is_correct": true,
+        "post_ans": "254",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "182169": {
+    "golden": [
+      "vocal cords"
+    ],
+    "cand": {}
+  },
+  "182905": {
+    "golden": [
+      "type 1 diabetes mellitus",
+      "type 1 diabetes"
+    ],
+    "cand": {
+      "type 1 diabetes": {
+        "is_correct": true,
+        "post_ans": "type 1 diabetes",
+        "post_ans_correct": true
+      },
+      "type 1 diabetes mellitus": {
+        "is_correct": true,
+        "post_ans": "type 1 diabetes mellitus",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "184466": {
+    "golden": [
+      "fecal–oral route",
+      "fecal oral route"
+    ],
+    "cand": {
+      "diagram showing fecal–oral transmission": {
+        "is_correct": false,
+        "post_ans": "diagram showing fecal–oral transmission",
+        "post_ans_correct": false
+      },
+      "fecal–oral route diagram": {
+        "is_correct": false,
+        "post_ans": "fecal–oral route diagram",
+        "post_ans_correct": false
+      },
+      "f-diagram": {
+        "is_correct": false,
+        "post_ans": "f-diagram",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "186082": {
+    "golden": [
+      "cyclopia"
+    ],
+    "cand": {
+      "cyclopia": {
+        "is_correct": true,
+        "post_ans": "cyclopia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "186159": {
+    "golden": [
+      "fondaparinux"
+    ],
+    "cand": {
+      "fondaparinux (arixtra)": {
+        "is_correct": false,
+        "post_ans": "fondaparinux",
+        "post_ans_correct": true
+      },
+      "fondaparinux": {
+        "is_correct": true,
+        "post_ans": "fondaparinux",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "187696": {
+    "golden": [
+      "colchicine"
+    ],
+    "cand": {
+      "colchicine": {
+        "is_correct": true,
+        "post_ans": "colchicine",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "188198": {
+    "golden": [
+      "nmnat2"
+    ],
+    "cand": {
+      "nicotinamide mononucleotide adenylyltransferase 2 (nmnat2)": {
+        "is_correct": false,
+        "post_ans": "nmnat2",
+        "post_ans_correct": true
+      },
+      "nicotinamide mononucleotide adenylyltransferase": {
+        "is_correct": false,
+        "post_ans": "nicotinamide mononucleotide adenylyltransferase",
+        "post_ans_correct": false
+      },
+      "nmnat2": {
+        "is_correct": true,
+        "post_ans": "nmnat2",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "191063": {
+    "golden": [
+      "ovarian cancer"
+    ],
+    "cand": {
+      "ovarian cancer": {
+        "is_correct": true,
+        "post_ans": "ovarian cancer",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "194351": {
+    "golden": [
+      "livedoid vasculopathy"
+    ],
+    "cand": {
+      "atrophie blanche": {
+        "is_correct": false,
+        "post_ans": "atrophie blanche",
+        "post_ans_correct": false
+      },
+      "livedoid vasculopathy": {
+        "is_correct": true,
+        "post_ans": "livedoid vasculopathy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "195446": {
+    "golden": [
+      "lhermitte-duclos disease",
+      "dysplastic gangliocytoma of the cerebellum",
+      "lhermitte–duclos disease"
+    ],
+    "cand": {
+      "lhermitte-duclos disease": {
+        "is_correct": true,
+        "post_ans": "lhermitte-duclos disease",
+        "post_ans_correct": true
+      },
+      "lhermitte–duclos disease": {
+        "is_correct": true,
+        "post_ans": "lhermitte–duclos disease",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "199357": {
+    "golden": [
+      "addison's disease"
+    ],
+    "cand": {
+      "addison's disease": {
+        "is_correct": true,
+        "post_ans": "addison's disease",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "203782": {
+    "golden": [
+      "lilian vaughan morgan"
+    ],
+    "cand": {
+      "lilian vaughan morgan": {
+        "is_correct": true,
+        "post_ans": "lilian vaughan morgan",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "204604": {
+    "golden": [
+      "dissociated vertical deviation"
+    ],
+    "cand": {
+      "dissociated vertical deviation (dvd)": {
+        "is_correct": false,
+        "post_ans": "dvd",
+        "post_ans_correct": false
+      },
+      "hypertropia": {
+        "is_correct": false,
+        "post_ans": "hypertropia",
+        "post_ans_correct": false
+      },
+      "dissociated vertical deviation": {
+        "is_correct": true,
+        "post_ans": "dissociated vertical deviation",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "204623": {
+    "golden": [
+      "achalasia"
+    ],
+    "cand": {
+      "achalasia": {
+        "is_correct": true,
+        "post_ans": "achalasia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "212619": {
+    "golden": [
+      "praziquantel"
+    ],
+    "cand": {
+      "praziquantel": {
+        "is_correct": true,
+        "post_ans": "praziquantel",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "213329": {
+    "golden": [
+      "pituitary adenoma"
+    ],
+    "cand": {
+      "gh-secreting pituitary adenoma": {
+        "is_correct": false,
+        "post_ans": "gh-secreting pituitary adenoma",
+        "post_ans_correct": false
+      },
+      "pituitary adenoma": {
+        "is_correct": true,
+        "post_ans": "pituitary adenoma",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "217353": {
+    "golden": [
+      "pulmonary embolism"
+    ],
+    "cand": {
+      "pulmonary embolism": {
+        "is_correct": true,
+        "post_ans": "pulmonary embolism",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "217889": {
+    "golden": [
+      "iodine-131",
+      "iodine-131"
+    ],
+    "cand": {
+      "i-131": {
+        "is_correct": false,
+        "post_ans": "i-131",
+        "post_ans_correct": false
+      },
+      "radioactive iodine-131": {
+        "is_correct": false,
+        "post_ans": "radioactive iodine-131",
+        "post_ans_correct": false
+      },
+      "iodine-131": {
+        "is_correct": true,
+        "post_ans": "iodine-131",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "218487": {
+    "golden": [
+      "amiloride"
+    ],
+    "cand": {
+      "amiloride": {
+        "is_correct": true,
+        "post_ans": "amiloride",
+        "post_ans_correct": true
+      },
+      "chlortalidone": {
+        "is_correct": false,
+        "post_ans": "chlortalidone",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "218896": {
+    "golden": [
+      "traumatic neuroma"
+    ],
+    "cand": {
+      "traumatic neuroma": {
+        "is_correct": true,
+        "post_ans": "traumatic neuroma",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "220313": {
+    "golden": [
+      "cmv"
+    ],
+    "cand": {
+      "human cytomegalovirus": {
+        "is_correct": false,
+        "post_ans": "human cytomegalovirus",
+        "post_ans_correct": false
+      },
+      "cytomegalovirus": {
+        "is_correct": false,
+        "post_ans": "cytomegalovirus",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "222137": {
+    "golden": [
+      "hurley's staging system"
+    ],
+    "cand": {
+      "hurley's staging system": {
+        "is_correct": true,
+        "post_ans": "hurley's staging system",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "224062": {
+    "golden": [
+      "spast",
+      "spastin"
+    ],
+    "cand": {
+      "spast gene": {
+        "is_correct": false,
+        "post_ans": "spast",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "224427": {
+    "golden": [
+      "isturisa",
+      "osilodrostat"
+    ],
+    "cand": {
+      "isturisa (osilodrostat)": {
+        "is_correct": false,
+        "post_ans": "isturisa",
+        "post_ans_correct": true
+      },
+      "osilodrostat": {
+        "is_correct": true,
+        "post_ans": "osilodrostat",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "225638": {
+    "golden": [
+      "slc16a2",
+      "mct8"
+    ],
+    "cand": {
+      "slc16a2": {
+        "is_correct": true,
+        "post_ans": "slc16a2",
+        "post_ans_correct": true
+      },
+      "mct8": {
+        "is_correct": true,
+        "post_ans": "mct8",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "228887": {
+    "golden": [
+      "clonal hypereosinophilia"
+    ],
+    "cand": {
+      "primary hypereosinophilic syndrome": {
+        "is_correct": false,
+        "post_ans": "primary hypereosinophilic syndrome",
+        "post_ans_correct": false
+      },
+      "eosinophilic leukemia": {
+        "is_correct": false,
+        "post_ans": "eosinophilic leukemia",
+        "post_ans_correct": false
+      },
+      "clonal hypereosinophilia": {
+        "is_correct": true,
+        "post_ans": "clonal hypereosinophilia",
+        "post_ans_correct": true
+      },
+      "group of blood-based disorders": {
+        "is_correct": false,
+        "post_ans": "group of blood-based disorders",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "229400": {
+    "golden": [
+      "post-transfusion purpura"
+    ],
+    "cand": {
+      "post-transfusion purpura": {
+        "is_correct": true,
+        "post_ans": "post-transfusion purpura",
+        "post_ans_correct": true
+      },
+      "psychogenic purpura": {
+        "is_correct": false,
+        "post_ans": "psychogenic purpura",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "230703": {
+    "golden": [
+      "aphidicolin"
+    ],
+    "cand": {
+      "aphidicolin": {
+        "is_correct": true,
+        "post_ans": "aphidicolin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "232559": {
+    "golden": [
+      "eosinophilic folliculitis"
+    ],
+    "cand": {
+      "acquired immunodeficiency syndrome (aids)": {
+        "is_correct": false,
+        "post_ans": "aids dysmorphic syndrome",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "233227": {
+    "golden": [
+      "abducens nerve palsy"
+    ],
+    "cand": {
+      "abducens nerve palsy": {
+        "is_correct": true,
+        "post_ans": "abducens nerve palsy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "234430": {
+    "golden": [
+      "delirium"
+    ],
+    "cand": {
+      "mefloquine intoxication syndrome": {
+        "is_correct": false,
+        "post_ans": "mefloquine intoxication syndrome",
+        "post_ans_correct": false
+      },
+      "neuropsychiatric quinism": {
+        "is_correct": false,
+        "post_ans": "neuropsychiatric quinism",
+        "post_ans_correct": false
+      },
+      "delirium": {
+        "is_correct": true,
+        "post_ans": "delirium",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "236369": {
+    "golden": [
+      "erectile dysfunction"
+    ],
+    "cand": {
+      "erectile dysfunction": {
+        "is_correct": true,
+        "post_ans": "erectile dysfunction",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "237388": {
+    "golden": [
+      "autosomal dominant osteopetrosis type ii"
+    ],
+    "cand": {
+      "autosomal dominant osteopetrosis type 2": {
+        "is_correct": false,
+        "post_ans": "autosomal dominant osteopetrosis type 2",
+        "post_ans_correct": false
+      },
+      "autosomal dominant osteopetrosis, type ii": {
+        "is_correct": false,
+        "post_ans": "autosomal dominant osteopetrosis, type ii",
+        "post_ans_correct": false
+      },
+      "autosomal dominant osteopetrosis type ii": {
+        "is_correct": true,
+        "post_ans": "autosomal dominant osteopetrosis type ii",
+        "post_ans_correct": true
+      },
+      "autosomal dominant osteopetrosis": {
+        "is_correct": false,
+        "post_ans": "autosomal dominant osteopetrosis",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "237915": {
+    "golden": [
+      "vitamin b6 deficiency"
+    ],
+    "cand": {
+      "methionine": {
+        "is_correct": false,
+        "post_ans": "methionine",
+        "post_ans_correct": false
+      },
+      "vitamin b6": {
+        "is_correct": false,
+        "post_ans": "vitamin b6",
+        "post_ans_correct": false
+      },
+      "pyridoxine (vitamin b6)": {
+        "is_correct": false,
+        "post_ans": "pyridoxine (vitamin b6)",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "240972": {
+    "golden": [
+      "bradykinin"
+    ],
+    "cand": {
+      "bradykinin": {
+        "is_correct": true,
+        "post_ans": "bradykinin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "241841": {
+    "golden": [
+      "nausea"
+    ],
+    "cand": {
+      "ictal vomiting": {
+        "is_correct": false,
+        "post_ans": "ictal vomiting",
+        "post_ans_correct": false
+      },
+      "nausea": {
+        "is_correct": true,
+        "post_ans": "nausea",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "244210": {
+    "golden": [
+      "squamous-cell carcinoma",
+      "squamous cell carcinoma"
+    ],
+    "cand": {
+      "squamous-cell carcinoma": {
+        "is_correct": true,
+        "post_ans": "squamous-cell carcinoma",
+        "post_ans_correct": true
+      },
+      "invasive squamous cell carcinoma": {
+        "is_correct": false,
+        "post_ans": "invasive squamous cell carcinoma",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "244933": {
+    "golden": [
+      "tp53",
+      "p53"
+    ],
+    "cand": {
+      "tp53 gene": {
+        "is_correct": false,
+        "post_ans": "tp53",
+        "post_ans_correct": true
+      },
+      "p53 gene": {
+        "is_correct": false,
+        "post_ans": "p53",
+        "post_ans_correct": true
+      },
+      "p53": {
+        "is_correct": true,
+        "post_ans": "p53",
+        "post_ans_correct": true
+      },
+      "tp53": {
+        "is_correct": true,
+        "post_ans": "tp53",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "248374": {
+    "golden": [
+      "rhabdomyolysis"
+    ],
+    "cand": {
+      "rhabdomyolysis": {
+        "is_correct": true,
+        "post_ans": "rhabdomyolysis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "252465": {
+    "golden": [
+      "whipple's disease"
+    ],
+    "cand": {
+      "whipple's disease": {
+        "is_correct": true,
+        "post_ans": "whipple's disease",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "252895": {
+    "golden": [
+      "anosognosia"
+    ],
+    "cand": {
+      "anton syndrome": {
+        "is_correct": false,
+        "post_ans": "anton syndrome",
+        "post_ans_correct": false
+      },
+      "anton–babinski syndrome": {
+        "is_correct": false,
+        "post_ans": "anton–babinski syndrome",
+        "post_ans_correct": false
+      },
+      "anosognosia": {
+        "is_correct": true,
+        "post_ans": "anosognosia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "253003": {
+    "golden": [
+      "deferiprone"
+    ],
+    "cand": {
+      "deferiprone": {
+        "is_correct": true,
+        "post_ans": "deferiprone",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "253734": {
+    "golden": [
+      "attention-deficit/hyperactivity disorder",
+      "attention deficit hyperactivity disorder",
+      "adhd"
+    ],
+    "cand": {
+      "attention deficit hyperactivity disorder": {
+        "is_correct": true,
+        "post_ans": "attention deficit hyperactivity disorder",
+        "post_ans_correct": true
+      },
+      "attention deficit hyperactivity disorder (adhd)": {
+        "is_correct": false,
+        "post_ans": "adhd",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "254228": {
+    "golden": [
+      "anasarca"
+    ],
+    "cand": {
+      "nephrotic syndrome": {
+        "is_correct": false,
+        "post_ans": "nephrotic syndrome",
+        "post_ans_correct": false
+      },
+      "edema": {
+        "is_correct": false,
+        "post_ans": "edema",
+        "post_ans_correct": false
+      },
+      "anasarca": {
+        "is_correct": true,
+        "post_ans": "anasarca",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "254319": {
+    "golden": [
+      "digitalis purpurea"
+    ],
+    "cand": {
+      "foxglove": {
+        "is_correct": false,
+        "post_ans": "foxglove",
+        "post_ans_correct": false
+      },
+      "digitalis": {
+        "is_correct": false,
+        "post_ans": "digitalis",
+        "post_ans_correct": false
+      },
+      "digitalis purpurea": {
+        "is_correct": true,
+        "post_ans": "digitalis purpurea",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "256489": {
+    "golden": [
+      "immunoglobulin therapy"
+    ],
+    "cand": {
+      "intravenous immunoglobulins": {
+        "is_correct": false,
+        "post_ans": "intravenous immunoglobulins",
+        "post_ans_correct": false
+      },
+      "intravenous immunoglobulin (ivig)": {
+        "is_correct": false,
+        "post_ans": "immunoglobulin therapy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "256957": {
+    "golden": [
+      "grover's disease",
+      "grover disease"
+    ],
+    "cand": {}
+  },
+  "259072": {
+    "golden": [
+      "peyronie's disease"
+    ],
+    "cand": {
+      "peyronie's disease": {
+        "is_correct": true,
+        "post_ans": "peyronie's disease",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "260402": {
+    "golden": [
+      "4977 bp deletion",
+      "4,977 base pair deletion"
+    ],
+    "cand": {
+      "4,977 base pair deletion": {
+        "is_correct": true,
+        "post_ans": "4,977 base pair deletion",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "260422": {
+    "golden": [
+      "disease x"
+    ],
+    "cand": {
+      "disease x": {
+        "is_correct": true,
+        "post_ans": "disease x",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "267930": {
+    "golden": [
+      "acantholysis"
+    ],
+    "cand": {
+      "acantholysis": {
+        "is_correct": true,
+        "post_ans": "acantholysis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "268734": {
+    "golden": [
+      "pashayan syndrome"
+    ],
+    "cand": {
+      "pashayan syndrome": {
+        "is_correct": true,
+        "post_ans": "pashayan syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "278085": {
+    "golden": [
+      "bardet-biedl syndrome type 1",
+      "bardet–biedl syndrome type 1",
+      "bardet–biedl syndrome-1"
+    ],
+    "cand": {
+      "bardet-biedl syndrome type 1": {
+        "is_correct": true,
+        "post_ans": "bardet-biedl syndrome type 1",
+        "post_ans_correct": true
+      },
+      "bardet–biedl syndrome": {
+        "is_correct": false,
+        "post_ans": "bardet–biedl syndrome",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "280426": {
+    "golden": [
+      "hla-b27"
+    ],
+    "cand": {
+      "tumor necrosis factor-alpha": {
+        "is_correct": false,
+        "post_ans": "tumor necrosis factor-alpha",
+        "post_ans_correct": false
+      },
+      "hla-b27": {
+        "is_correct": true,
+        "post_ans": "hla-b27",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "284028": {
+    "golden": [
+      "minoxidil"
+    ],
+    "cand": {}
+  },
+  "285796": {
+    "golden": [
+      "pelvic lipomatosis"
+    ],
+    "cand": {
+      "pelvic lipomatosis": {
+        "is_correct": true,
+        "post_ans": "pelvic lipomatosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "287123": {
+    "golden": [
+      "1837"
+    ],
+    "cand": {
+      "1919": {
+        "is_correct": false,
+        "post_ans": "1919",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "290551": {
+    "golden": [
+      "1,25-dihydroxyvitamin d3"
+    ],
+    "cand": {
+      "tretinoin": {
+        "is_correct": false,
+        "post_ans": "tretinoin",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "292484": {
+    "golden": [
+      "central nervous system"
+    ],
+    "cand": {
+      "central nervous system": {
+        "is_correct": true,
+        "post_ans": "central nervous system",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "293076": {
+    "golden": [
+      "multiple sclerosis"
+    ],
+    "cand": {
+      "multiple sclerosis": {
+        "is_correct": true,
+        "post_ans": "multiple sclerosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "295910": {
+    "golden": [
+      "adrenocortical adenoma"
+    ],
+    "cand": {
+      "cortisol-producing adrenal adenoma": {
+        "is_correct": false,
+        "post_ans": "cortisol-producing adrenal adenoma",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "298228": {
+    "golden": [
+      "chromosome 15"
+    ],
+    "cand": {
+      "chromosome 15q26.1": {
+        "is_correct": false,
+        "post_ans": "chromosome 15",
+        "post_ans_correct": true
+      },
+      "chromosome 12": {
+        "is_correct": false,
+        "post_ans": "chromosome 12",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "304370": {
+    "golden": [
+      "col9a2"
+    ],
+    "cand": {
+      "col9a2": {
+        "is_correct": true,
+        "post_ans": "col9a2",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "308498": {
+    "golden": [
+      "polr1c"
+    ],
+    "cand": {
+      "treacle protein (tcof1)": {
+        "is_correct": false,
+        "post_ans": "treacle protein",
+        "post_ans_correct": false
+      },
+      "treacle": {
+        "is_correct": false,
+        "post_ans": "treacle",
+        "post_ans_correct": false
+      },
+      "tcof1": {
+        "is_correct": false,
+        "post_ans": "tcof1",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "312123": {
+    "golden": [
+      "hypoestrogenism"
+    ],
+    "cand": {
+      "amenorrhea": {
+        "is_correct": false,
+        "post_ans": "amenorrhea",
+        "post_ans_correct": false
+      },
+      "hypoestrogenism": {
+        "is_correct": true,
+        "post_ans": "hypoestrogenism",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "314843": {
+    "golden": [
+      "x-linked recessive inheritance"
+    ],
+    "cand": {
+      "x-linked": {
+        "is_correct": false,
+        "post_ans": "x-linked",
+        "post_ans_correct": false
+      },
+      "x-linked inheritance pattern": {
+        "is_correct": false,
+        "post_ans": "x-linked inheritance pattern",
+        "post_ans_correct": false
+      },
+      "x-linked recessive": {
+        "is_correct": false,
+        "post_ans": "x-linked recessive",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "318755": {
+    "golden": [
+      "deferoxamine"
+    ],
+    "cand": {
+      "deferoxamine": {
+        "is_correct": true,
+        "post_ans": "deferoxamine",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "321794": {
+    "golden": [
+      "diabetic retinopathy"
+    ],
+    "cand": {
+      "diabetic retinopathy": {
+        "is_correct": true,
+        "post_ans": "diabetic retinopathy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "324488": {
+    "golden": [
+      "lenz microphthalmia syndrome"
+    ],
+    "cand": {
+      "lenz microphthalmia syndrome": {
+        "is_correct": true,
+        "post_ans": "lenz microphthalmia syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "324754": {
+    "golden": [
+      "shapiro syndrome"
+    ],
+    "cand": {
+      "shapiro syndrome": {
+        "is_correct": true,
+        "post_ans": "shapiro syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "327315": {
+    "golden": [
+      "pax2"
+    ],
+    "cand": {
+      "pax2": {
+        "is_correct": true,
+        "post_ans": "pax2",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "329502": {
+    "golden": [
+      "dup15q syndrome"
+    ],
+    "cand": {
+      "dup15q syndrome": {
+        "is_correct": true,
+        "post_ans": "dup15q syndrome",
+        "post_ans_correct": true
+      },
+      "chromosome 15q duplication": {
+        "is_correct": false,
+        "post_ans": "chromosome 15",
+        "post_ans_correct": false
+      },
+      "isodicentric chromosome 15 syndrome": {
+        "is_correct": false,
+        "post_ans": "isodicentric chromosome 15 syndrome",
+        "post_ans_correct": false
+      },
+      "chromosome 15q11-q13 duplication syndrome": {
+        "is_correct": false,
+        "post_ans": "chromosome 15",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "331013": {
+    "golden": [
+      "alpha-1 antitrypsin",
+      "alpha-1-antitrypsin",
+      "a1at"
+    ],
+    "cand": {
+      "fibulin-5": {
+        "is_correct": false,
+        "post_ans": "fibulin-5",
+        "post_ans_correct": false
+      },
+      "alpha-1-antitrypsin": {
+        "is_correct": true,
+        "post_ans": "alpha-1-antitrypsin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "335018": {
+    "golden": [
+      "levothyroxine"
+    ],
+    "cand": {
+      "levothyroxine": {
+        "is_correct": true,
+        "post_ans": "levothyroxine",
+        "post_ans_correct": true
+      },
+      "l-thyroxine": {
+        "is_correct": false,
+        "post_ans": "l-thyroxine",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "335637": {
+    "golden": [
+      "granulomatosis with polyangiitis"
+    ],
+    "cand": {
+      "granulomatosis with polyangiitis": {
+        "is_correct": true,
+        "post_ans": "granulomatosis with polyangiitis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "351765": {
+    "golden": [
+      "pmds"
+    ],
+    "cand": {
+      "persistent müllerian duct syndrome": {
+        "is_correct": false,
+        "post_ans": "persistent müllerian duct syndrome",
+        "post_ans_correct": false
+      },
+      "persistent müllerian duct syndrome (pmds)": {
+        "is_correct": false,
+        "post_ans": "pmds",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "352067": {
+    "golden": [
+      "primary ciliary dyskinesia"
+    ],
+    "cand": {
+      "primary ciliary dyskinesia": {
+        "is_correct": true,
+        "post_ans": "primary ciliary dyskinesia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "353709": {
+    "golden": [
+      "minocycline"
+    ],
+    "cand": {
+      "minocycline": {
+        "is_correct": true,
+        "post_ans": "minocycline",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "355170": {
+    "golden": [
+      "anti-androgens",
+      "antiandrogens"
+    ],
+    "cand": {
+      "anti-androgens": {
+        "is_correct": true,
+        "post_ans": "anti-androgens",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "356129": {
+    "golden": [
+      "methotrexate",
+      "mtx"
+    ],
+    "cand": {
+      "mtx": {
+        "is_correct": true,
+        "post_ans": "mtx",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "356637": {
+    "golden": [
+      "cowden syndrome"
+    ],
+    "cand": {
+      "cowden syndrome": {
+        "is_correct": true,
+        "post_ans": "cowden syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "362433": {
+    "golden": [
+      "epilepsy"
+    ],
+    "cand": {
+      "epilepsy": {
+        "is_correct": true,
+        "post_ans": "epilepsy",
+        "post_ans_correct": true
+      },
+      "pitt–hopkins syndrome": {
+        "is_correct": false,
+        "post_ans": "pitt–hopkins syndrome",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "363368": {
+    "golden": [
+      "protocadherin 1"
+    ],
+    "cand": {
+      "protocadherin 1": {
+        "is_correct": true,
+        "post_ans": "protocadherin 1",
+        "post_ans_correct": true
+      },
+      "pcdh1": {
+        "is_correct": false,
+        "post_ans": "pcdh1",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "366445": {
+    "golden": [
+      "hydroquinone"
+    ],
+    "cand": {
+      "hydroquinone": {
+        "is_correct": true,
+        "post_ans": "hydroquinone",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "378607": {
+    "golden": [
+      "4"
+    ],
+    "cand": {
+      "three": {
+        "is_correct": false,
+        "post_ans": "three",
+        "post_ans_correct": false
+      },
+      "4": {
+        "is_correct": true,
+        "post_ans": "4",
+        "post_ans_correct": true
+      },
+      "four": {
+        "is_correct": false,
+        "post_ans": "four",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "384879": {
+    "golden": [
+      "melanin"
+    ],
+    "cand": {
+      "melanin concentration": {
+        "is_correct": false,
+        "post_ans": "melanin concentration",
+        "post_ans_correct": false
+      },
+      "melanin": {
+        "is_correct": true,
+        "post_ans": "melanin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "395068": {
+    "golden": [
+      "xeroderma pigmentosum"
+    ],
+    "cand": {
+      "xeroderma pigmentosum": {
+        "is_correct": true,
+        "post_ans": "xeroderma pigmentosum",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "398262": {
+    "golden": [
+      "doxycycline"
+    ],
+    "cand": {
+      "doxycycline": {
+        "is_correct": true,
+        "post_ans": "doxycycline",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "398767": {
+    "golden": [
+      "azathioprine"
+    ],
+    "cand": {
+      "azathioprine": {
+        "is_correct": true,
+        "post_ans": "azathioprine",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "401525": {
+    "golden": [
+      "amyotrophic lateral sclerosis",
+      "als"
+    ],
+    "cand": {
+      "amyotrophic lateral sclerosis": {
+        "is_correct": true,
+        "post_ans": "amyotrophic lateral sclerosis",
+        "post_ans_correct": true
+      },
+      "amyotrophic lateral sclerosis (als)": {
+        "is_correct": false,
+        "post_ans": "als",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "402244": {
+    "golden": [
+      "rnf213"
+    ],
+    "cand": {
+      "rnf213 gene": {
+        "is_correct": false,
+        "post_ans": "rnf213",
+        "post_ans_correct": true
+      },
+      "rnf213": {
+        "is_correct": true,
+        "post_ans": "rnf213",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "405530": {
+    "golden": [
+      "social anxiety disorder"
+    ],
+    "cand": {
+      "social anxiety disorder": {
+        "is_correct": true,
+        "post_ans": "social anxiety disorder",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "408733": {
+    "golden": [
+      "endometriosis"
+    ],
+    "cand": {
+      "chromosome 1p36 deletion syndrome": {
+        "is_correct": false,
+        "post_ans": "chromosome 1",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "408853": {
+    "golden": [
+      "pgam2",
+      "muscle phosphoglycerate mutase"
+    ],
+    "cand": {
+      "pgam2": {
+        "is_correct": true,
+        "post_ans": "pgam2",
+        "post_ans_correct": true
+      },
+      "muscle-specific phosphoglycerate mutase (pgam2)": {
+        "is_correct": false,
+        "post_ans": "muscle-specific phosphoglycerate mutase",
+        "post_ans_correct": false
+      },
+      "protein kinase a": {
+        "is_correct": false,
+        "post_ans": "protein kinase a",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "412427": {
+    "golden": [
+      "cardiac output"
+    ],
+    "cand": {
+      "cardiac output": {
+        "is_correct": true,
+        "post_ans": "cardiac output",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "414459": {
+    "golden": [
+      "gliosarcoma"
+    ],
+    "cand": {
+      "glioblastoma": {
+        "is_correct": false,
+        "post_ans": "glioblastoma",
+        "post_ans_correct": false
+      },
+      "gliosarcoma": {
+        "is_correct": true,
+        "post_ans": "gliosarcoma",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "419700": {
+    "golden": [
+      "hepadnaviridae"
+    ],
+    "cand": {}
+  },
+  "421078": {
+    "golden": [
+      "l-carnitine",
+      "carnitine"
+    ],
+    "cand": {
+      "carnitine": {
+        "is_correct": true,
+        "post_ans": "carnitine",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "421230": {
+    "golden": [
+      "factor viii deficiency"
+    ],
+    "cand": {
+      "factor viii": {
+        "is_correct": false,
+        "post_ans": "factor viii",
+        "post_ans_correct": false
+      },
+      "clotting factor viii deficiency": {
+        "is_correct": false,
+        "post_ans": "clotting factor viii deficiency",
+        "post_ans_correct": false
+      },
+      "factor viii deficiency": {
+        "is_correct": true,
+        "post_ans": "factor viii deficiency",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "423479": {
+    "golden": [
+      "20"
+    ],
+    "cand": {
+      "20": {
+        "is_correct": true,
+        "post_ans": "20",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "430378": {
+    "golden": [
+      "nonsteroidal anti-inflammatory drugs",
+      "non-steroidal anti-inflammatory drugs",
+      "nsaids"
+    ],
+    "cand": {
+      "non-steroidal anti-inflammatory": {
+        "is_correct": false,
+        "post_ans": "non-steroidal anti-inflammatory",
+        "post_ans_correct": false
+      },
+      "nsaids": {
+        "is_correct": true,
+        "post_ans": "nsaids",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "437264": {
+    "golden": [
+      "fissured tongue"
+    ],
+    "cand": {
+      "fissured tongue": {
+        "is_correct": true,
+        "post_ans": "fissured tongue",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "437386": {
+    "golden": [
+      "erectile dysfunction"
+    ],
+    "cand": {
+      "erectile dysfunction": {
+        "is_correct": true,
+        "post_ans": "erectile dysfunction",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "437476": {
+    "golden": [
+      "structural disorder"
+    ],
+    "cand": {
+      "structural disorder": {
+        "is_correct": true,
+        "post_ans": "structural disorder",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "438711": {
+    "golden": [
+      "zinc"
+    ],
+    "cand": {
+      "zinc": {
+        "is_correct": true,
+        "post_ans": "zinc",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "442504": {
+    "golden": [
+      "bradycardia",
+      "bradyarrhythmia"
+    ],
+    "cand": {
+      "bradyarrhythmia": {
+        "is_correct": true,
+        "post_ans": "bradyarrhythmia",
+        "post_ans_correct": true
+      },
+      "bradycardia": {
+        "is_correct": true,
+        "post_ans": "bradycardia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "442535": {
+    "golden": [
+      "chlorophyll"
+    ],
+    "cand": {
+      "chlorophylls": {
+        "is_correct": false,
+        "post_ans": "chlorophylls",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "446178": {
+    "golden": [
+      "dercum's disease"
+    ],
+    "cand": {
+      "dercum's disease": {
+        "is_correct": true,
+        "post_ans": "dercum's disease",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "447998": {
+    "golden": [
+      "ventricular septal defect"
+    ],
+    "cand": {
+      "ventricular septal defect": {
+        "is_correct": true,
+        "post_ans": "ventricular septal defect",
+        "post_ans_correct": true
+      },
+      "ventricular septal defect (vsd)": {
+        "is_correct": false,
+        "post_ans": "vsd",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "448599": {
+    "golden": [
+      "ruxolitinib"
+    ],
+    "cand": {
+      "ruxolitinib cream": {
+        "is_correct": false,
+        "post_ans": "ruxolitinib cream",
+        "post_ans_correct": false
+      },
+      "ruxolitinib": {
+        "is_correct": true,
+        "post_ans": "ruxolitinib",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "450226": {
+    "golden": [
+      "eftud2"
+    ],
+    "cand": {
+      "gh1 gene": {
+        "is_correct": false,
+        "post_ans": "gh1",
+        "post_ans_correct": false
+      },
+      "eftud2 gene": {
+        "is_correct": false,
+        "post_ans": "eftud2",
+        "post_ans_correct": true
+      },
+      "growth hormone receptor gene": {
+        "is_correct": false,
+        "post_ans": "growth hormone receptor",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "453449": {
+    "golden": [
+      "etv6"
+    ],
+    "cand": {
+      "etv6-ntrk3 fusion gene": {
+        "is_correct": false,
+        "post_ans": "etv6",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "454301": {
+    "golden": [
+      "acetazolamide"
+    ],
+    "cand": {
+      "acetazolamide": {
+        "is_correct": true,
+        "post_ans": "acetazolamide",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "456140": {
+    "golden": [
+      "prednisone"
+    ],
+    "cand": {
+      "prednisone": {
+        "is_correct": true,
+        "post_ans": "prednisone",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "459602": {
+    "golden": [
+      "arteriovenous malformation"
+    ],
+    "cand": {
+      "brain arteriovenous malformation (avm)": {
+        "is_correct": false,
+        "post_ans": "brain arteriovenous malformation",
+        "post_ans_correct": false
+      },
+      "cerebral arteriovenous malformation (avm)": {
+        "is_correct": false,
+        "post_ans": "cerebral arteriovenous malformation",
+        "post_ans_correct": false
+      },
+      "cerebral arteriovenous malformation": {
+        "is_correct": false,
+        "post_ans": "cerebral arteriovenous malformation",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "459609": {
+    "golden": [
+      "lung"
+    ],
+    "cand": {
+      "lung": {
+        "is_correct": true,
+        "post_ans": "lung",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "466063": {
+    "golden": [
+      "immunoglobulin e",
+      "ige"
+    ],
+    "cand": {
+      "immunoglobulin e": {
+        "is_correct": true,
+        "post_ans": "immunoglobulin e",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "467635": {
+    "golden": [
+      "conduritol b-epoxide"
+    ],
+    "cand": {
+      "cbe": {
+        "is_correct": false,
+        "post_ans": "cbe",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "468323": {
+    "golden": [
+      "anorexia nervosa"
+    ],
+    "cand": {
+      "anorexia nervosa": {
+        "is_correct": true,
+        "post_ans": "anorexia nervosa",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "469559": {
+    "golden": [
+      "epstein-barr virus"
+    ],
+    "cand": {
+      "epstein-barr virus": {
+        "is_correct": true,
+        "post_ans": "epstein-barr virus",
+        "post_ans_correct": true
+      },
+      "human t-lymphotropic virus": {
+        "is_correct": false,
+        "post_ans": "human t-lymphotropic virus",
+        "post_ans_correct": false
+      },
+      "epstein–barr virus": {
+        "is_correct": false,
+        "post_ans": "epstein–barr virus",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "472843": {
+    "golden": [
+      "chromosome 1"
+    ],
+    "cand": {
+      "chromosome 4": {
+        "is_correct": false,
+        "post_ans": "chromosome 4",
+        "post_ans_correct": false
+      },
+      "chromosome 1": {
+        "is_correct": true,
+        "post_ans": "chromosome 1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "475130": {
+    "golden": [
+      "msa",
+      "multiple system atrophy"
+    ],
+    "cand": {
+      "multiple system atrophy": {
+        "is_correct": true,
+        "post_ans": "multiple system atrophy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "476622": {
+    "golden": [
+      "histoplasmosis"
+    ],
+    "cand": {
+      "histoplasmosis": {
+        "is_correct": true,
+        "post_ans": "histoplasmosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "477818": {
+    "golden": [
+      "oral–fecal route"
+    ],
+    "cand": {
+      "faecal–oral route": {
+        "is_correct": false,
+        "post_ans": "faecal–oral route",
+        "post_ans_correct": false
+      },
+      "fecal–oral route": {
+        "is_correct": false,
+        "post_ans": "fecal–oral route",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "480829": {
+    "golden": [
+      "babesiosis"
+    ],
+    "cand": {}
+  },
+  "482281": {
+    "golden": [
+      "turner syndrome"
+    ],
+    "cand": {
+      "turner syndrome": {
+        "is_correct": true,
+        "post_ans": "turner syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "483615": {
+    "golden": [
+      "19"
+    ],
+    "cand": {
+      "19": {
+        "is_correct": true,
+        "post_ans": "19",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "483894": {
+    "golden": [
+      "col17a1"
+    ],
+    "cand": {
+      "col17a1 gene": {
+        "is_correct": false,
+        "post_ans": "col17a1",
+        "post_ans_correct": true
+      },
+      "col17a1": {
+        "is_correct": true,
+        "post_ans": "col17a1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "485815": {
+    "golden": [
+      "thiamine"
+    ],
+    "cand": {
+      "thiamine": {
+        "is_correct": true,
+        "post_ans": "thiamine",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "486804": {
+    "golden": [
+      "brachydactyly type a1"
+    ],
+    "cand": {
+      "brachydactyly type a1": {
+        "is_correct": true,
+        "post_ans": "brachydactyly type a1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "490774": {
+    "golden": [
+      "coagulation factor ii",
+      "prothrombin",
+      "f2"
+    ],
+    "cand": {
+      "coagulation factor ii (prothrombin)": {
+        "is_correct": false,
+        "post_ans": "coagulation factor ii",
+        "post_ans_correct": true
+      },
+      "prothrombin (coagulation factor ii)": {
+        "is_correct": false,
+        "post_ans": "prothrombin (coagulation factor ii)",
+        "post_ans_correct": false
+      },
+      "coagulation factor ii": {
+        "is_correct": true,
+        "post_ans": "coagulation factor ii",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "494387": {
+    "golden": [
+      "methotrexate",
+      "mtx"
+    ],
+    "cand": {
+      "mtx": {
+        "is_correct": true,
+        "post_ans": "mtx",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "496183": {
+    "golden": [
+      "x-linked agammaglobulinemia",
+      "xla"
+    ],
+    "cand": {
+      "x-linked agammaglobulinemia": {
+        "is_correct": true,
+        "post_ans": "x-linked agammaglobulinemia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "498978": {
+    "golden": [
+      "reverse transcription polymerase chain reaction (rt-pcr)"
+    ],
+    "cand": {
+      "conventional rt-pcr test": {
+        "is_correct": false,
+        "post_ans": "conventional rt-pcr test",
+        "post_ans_correct": false
+      },
+      "reverse transcription polymerase chain reaction": {
+        "is_correct": false,
+        "post_ans": "reverse transcription polymerase chain reaction",
+        "post_ans_correct": false
+      },
+      "reverse transcription polymerase chain reaction (rt-pcr)": {
+        "is_correct": true,
+        "post_ans": "reverse transcription polymerase chain reaction (rt-pcr)",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "502680": {
+    "golden": [
+      "chromosome 1"
+    ],
+    "cand": {
+      "chromosome 1": {
+        "is_correct": true,
+        "post_ans": "chromosome 1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "504058": {
+    "golden": [
+      "gipc"
+    ],
+    "cand": {
+      "gipc": {
+        "is_correct": true,
+        "post_ans": "gipc",
+        "post_ans_correct": true
+      },
+      "gipc1": {
+        "is_correct": false,
+        "post_ans": "gipc1",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "505048": {
+    "golden": [
+      "ocrelizumab"
+    ],
+    "cand": {
+      "ocrelizumab": {
+        "is_correct": true,
+        "post_ans": "ocrelizumab",
+        "post_ans_correct": true
+      },
+      "rituximab": {
+        "is_correct": false,
+        "post_ans": "rituximab",
+        "post_ans_correct": false
+      },
+      "ofatumumab": {
+        "is_correct": false,
+        "post_ans": "ofatumumab",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "506698": {
+    "golden": [
+      "chromosome 21"
+    ],
+    "cand": {
+      "chromosome 11": {
+        "is_correct": false,
+        "post_ans": "chromosome 11",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "506722": {
+    "golden": [
+      "median sternotomy"
+    ],
+    "cand": {
+      "median sternotomy": {
+        "is_correct": true,
+        "post_ans": "median sternotomy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "507683": {
+    "golden": [
+      "lis1"
+    ],
+    "cand": {
+      "lis1 gene": {
+        "is_correct": false,
+        "post_ans": "lis1",
+        "post_ans_correct": true
+      },
+      "lis1": {
+        "is_correct": true,
+        "post_ans": "lis1",
+        "post_ans_correct": true
+      },
+      "lis1 (pafah1b1)": {
+        "is_correct": false,
+        "post_ans": "lis1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "507964": {
+    "golden": [
+      "bronchopulmonary dysplasia"
+    ],
+    "cand": {
+      "bronchopulmonary dysplasia": {
+        "is_correct": true,
+        "post_ans": "bronchopulmonary dysplasia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "512370": {
+    "golden": [
+      "deltoid muscle"
+    ],
+    "cand": {
+      "infraspinatus muscle": {
+        "is_correct": false,
+        "post_ans": "infraspinatus muscle",
+        "post_ans_correct": false
+      },
+      "deltoid muscle": {
+        "is_correct": true,
+        "post_ans": "deltoid muscle",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "514187": {
+    "golden": [
+      "scurvy"
+    ],
+    "cand": {
+      "scurvy": {
+        "is_correct": true,
+        "post_ans": "scurvy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "514385": {
+    "golden": [
+      "grhpr"
+    ],
+    "cand": {
+      "d-glyceric acidemia": {
+        "is_correct": false,
+        "post_ans": "d-glyceric acidemia",
+        "post_ans_correct": false
+      },
+      "grhpr": {
+        "is_correct": true,
+        "post_ans": "grhpr",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "515320": {
+    "golden": [
+      "kidney"
+    ],
+    "cand": {
+      "kidney": {
+        "is_correct": true,
+        "post_ans": "kidney",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "515493": {
+    "golden": [
+      "rituximab"
+    ],
+    "cand": {
+      "rituximab": {
+        "is_correct": true,
+        "post_ans": "rituximab",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "515597": {
+    "golden": [
+      "cyp7b1"
+    ],
+    "cand": {
+      "cyp7b1": {
+        "is_correct": true,
+        "post_ans": "cyp7b1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "516385": {
+    "golden": [
+      "clindamycin"
+    ],
+    "cand": {
+      "clindamycin": {
+        "is_correct": true,
+        "post_ans": "clindamycin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "518487": {
+    "golden": [
+      "gram-negative bacteria",
+      "gram negative bacteria"
+    ],
+    "cand": {
+      "gram-negative bacteria": {
+        "is_correct": true,
+        "post_ans": "gram-negative bacteria",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "522257": {
+    "golden": [
+      "wormian bones"
+    ],
+    "cand": {
+      "wormian bones": {
+        "is_correct": true,
+        "post_ans": "wormian bones",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "522424": {
+    "golden": [
+      "panayiotopoulos syndrome"
+    ],
+    "cand": {
+      "panayiotopoulos syndrome": {
+        "is_correct": true,
+        "post_ans": "panayiotopoulos syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "524762": {
+    "golden": [
+      "xq26"
+    ],
+    "cand": {
+      "xq26": {
+        "is_correct": true,
+        "post_ans": "xq26",
+        "post_ans_correct": true
+      },
+      "x chromosome locus q26.1": {
+        "is_correct": false,
+        "post_ans": "x chromosome locus q26.1",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "525642": {
+    "golden": [
+      "door syndrome",
+      "doors syndrome"
+    ],
+    "cand": {
+      "carpenter syndrome": {
+        "is_correct": false,
+        "post_ans": "carpenter syndrome",
+        "post_ans_correct": false
+      },
+      "cornelia de lange syndrome": {
+        "is_correct": false,
+        "post_ans": "cornelia de lange syndrome",
+        "post_ans_correct": false
+      },
+      "cohen syndrome": {
+        "is_correct": false,
+        "post_ans": "cohen syndrome",
+        "post_ans_correct": false
+      },
+      "door syndrome": {
+        "is_correct": true,
+        "post_ans": "door syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "527168": {
+    "golden": [
+      "ellis-van creveld syndrome",
+      "ellis–van creveld syndrome"
+    ],
+    "cand": {
+      "ellis–van creveld syndrome": {
+        "is_correct": true,
+        "post_ans": "ellis–van creveld syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "528519": {
+    "golden": [
+      "chromosome 5"
+    ],
+    "cand": {
+      "chromosome 5": {
+        "is_correct": true,
+        "post_ans": "chromosome 5",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "529354": {
+    "golden": [
+      "bevacizumab"
+    ],
+    "cand": {
+      "bevacizumab (avastin®)": {
+        "is_correct": false,
+        "post_ans": "bevacizumab (avastin®)",
+        "post_ans_correct": false
+      },
+      "bevacizumab": {
+        "is_correct": true,
+        "post_ans": "bevacizumab",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "532019": {
+    "golden": [
+      "glycogen storage disease type vi"
+    ],
+    "cand": {
+      "mcardle's disease": {
+        "is_correct": false,
+        "post_ans": "mcardle's disease",
+        "post_ans_correct": false
+      },
+      "glycogen storage disease type vi": {
+        "is_correct": true,
+        "post_ans": "glycogen storage disease type vi",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "533595": {
+    "golden": [
+      "bromocriptine"
+    ],
+    "cand": {
+      "cabergoline": {
+        "is_correct": false,
+        "post_ans": "cabergoline",
+        "post_ans_correct": false
+      },
+      "bromocriptine": {
+        "is_correct": true,
+        "post_ans": "bromocriptine",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "535718": {
+    "golden": [
+      "pthr1",
+      "pth1r"
+    ],
+    "cand": {
+      "pth1r": {
+        "is_correct": true,
+        "post_ans": "pth1r",
+        "post_ans_correct": true
+      },
+      "parathyroid hormone 1 receptor": {
+        "is_correct": false,
+        "post_ans": "parathyroid hormone 1 receptor",
+        "post_ans_correct": false
+      },
+      "pth1r gene": {
+        "is_correct": false,
+        "post_ans": "pth1r",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "536132": {
+    "golden": [
+      "central nervous system"
+    ],
+    "cand": {
+      "central nervous system": {
+        "is_correct": true,
+        "post_ans": "central nervous system",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "539437": {
+    "golden": [
+      "nonsyndromic deafness"
+    ],
+    "cand": {
+      "low frequency sensorineural hearing loss": {
+        "is_correct": false,
+        "post_ans": "low frequency sensorineural hearing loss",
+        "post_ans_correct": false
+      },
+      "wolfram syndrome": {
+        "is_correct": false,
+        "post_ans": "wolfram syndrome",
+        "post_ans_correct": false
+      },
+      "dfna6": {
+        "is_correct": false,
+        "post_ans": "dfna6",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "542113": {
+    "golden": [
+      "nebulin",
+      "neb"
+    ],
+    "cand": {
+      "neb gene": {
+        "is_correct": false,
+        "post_ans": "neb",
+        "post_ans_correct": true
+      },
+      "nebulin": {
+        "is_correct": true,
+        "post_ans": "nebulin",
+        "post_ans_correct": true
+      },
+      "neb": {
+        "is_correct": true,
+        "post_ans": "neb",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "545881": {
+    "golden": [
+      "arteriovenous fistula"
+    ],
+    "cand": {
+      "arteriovenous fistula": {
+        "is_correct": true,
+        "post_ans": "arteriovenous fistula",
+        "post_ans_correct": true
+      },
+      "arteriovenous malformation (avm)": {
+        "is_correct": false,
+        "post_ans": "arteriovenous malformation",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "546137": {
+    "golden": [
+      "hydrochlorothiazide"
+    ],
+    "cand": {
+      "hydrochlorothiazide": {
+        "is_correct": true,
+        "post_ans": "hydrochlorothiazide",
+        "post_ans_correct": true
+      },
+      "chlortalidone": {
+        "is_correct": false,
+        "post_ans": "chlortalidone",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "547554": {
+    "golden": [
+      "rai1"
+    ],
+    "cand": {
+      "rai1": {
+        "is_correct": true,
+        "post_ans": "rai1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "547846": {
+    "golden": [
+      "chromosome 11"
+    ],
+    "cand": {
+      "chromosome 11q13": {
+        "is_correct": false,
+        "post_ans": "chromosome 11",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "551819": {
+    "golden": [
+      "botulinum toxin"
+    ],
+    "cand": {
+      "botulinum toxin": {
+        "is_correct": true,
+        "post_ans": "botulinum toxin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "556401": {
+    "golden": [
+      "vasopressin",
+      "arginine vasopressin"
+    ],
+    "cand": {
+      "vasopressin": {
+        "is_correct": true,
+        "post_ans": "vasopressin",
+        "post_ans_correct": true
+      },
+      "arginine vasopressin": {
+        "is_correct": true,
+        "post_ans": "arginine vasopressin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "556909": {
+    "golden": [
+      "48,xxxy"
+    ],
+    "cand": {
+      "48,xxxy syndrome": {
+        "is_correct": false,
+        "post_ans": "48,xxxy syndrome",
+        "post_ans_correct": false
+      },
+      "xxyy syndrome": {
+        "is_correct": false,
+        "post_ans": "xxyy syndrome",
+        "post_ans_correct": false
+      },
+      "48,xxyy syndrome": {
+        "is_correct": false,
+        "post_ans": "48,xxyy syndrome",
+        "post_ans_correct": false
+      },
+      "48,xxyy or 48,xxxy": {
+        "is_correct": false,
+        "post_ans": "48,xxyy or 48,xxxy",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "558304": {
+    "golden": [
+      "440"
+    ],
+    "cand": {
+      "423": {
+        "is_correct": false,
+        "post_ans": "423",
+        "post_ans_correct": false
+      },
+      "440": {
+        "is_correct": true,
+        "post_ans": "440",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "559411": {
+    "golden": [
+      "early myoclonic encephalopathy"
+    ],
+    "cand": {
+      "early myoclonic encephalopathy": {
+        "is_correct": true,
+        "post_ans": "early myoclonic encephalopathy",
+        "post_ans_correct": true
+      },
+      "ohtahara syndrome": {
+        "is_correct": false,
+        "post_ans": "ohtahara syndrome",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "559664": {
+    "golden": [
+      "selective serotonin reuptake inhibitors",
+      "serotonin reuptake inhibitors"
+    ],
+    "cand": {
+      "ssris": {
+        "is_correct": false,
+        "post_ans": "ssris",
+        "post_ans_correct": false
+      },
+      "selective serotonin reuptake inhibitors": {
+        "is_correct": true,
+        "post_ans": "selective serotonin reuptake inhibitors",
+        "post_ans_correct": true
+      },
+      "selective serotonin reuptake inhibitors (ssris)": {
+        "is_correct": false,
+        "post_ans": "selective serotonin reuptake inhibitors",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "560227": {
+    "golden": [
+      "toxoplasma gondii"
+    ],
+    "cand": {
+      "toxoplasma gondii": {
+        "is_correct": true,
+        "post_ans": "toxoplasma gondii",
+        "post_ans_correct": true
+      },
+      "toxoplasmosis": {
+        "is_correct": false,
+        "post_ans": "toxoplasmosis",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "561736": {
+    "golden": [
+      "parkinson's disease"
+    ],
+    "cand": {
+      "parkinson's disease dementia": {
+        "is_correct": false,
+        "post_ans": "parkinson's disease dementia",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "561990": {
+    "golden": [
+      "primary hyperparathyroidism"
+    ],
+    "cand": {
+      "primary hyperparathyroidism": {
+        "is_correct": true,
+        "post_ans": "primary hyperparathyroidism",
+        "post_ans_correct": true
+      },
+      "hyperparathyroidism": {
+        "is_correct": false,
+        "post_ans": "hyperparathyroidism",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "568641": {
+    "golden": [
+      "hoxd10"
+    ],
+    "cand": {
+      "hoxd10": {
+        "is_correct": true,
+        "post_ans": "hoxd10",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "571170": {
+    "golden": [
+      "amelogenesis imperfecta type iv"
+    ],
+    "cand": {
+      "taurodontism": {
+        "is_correct": false,
+        "post_ans": "taurodontism",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "571485": {
+    "golden": [
+      "panniculus"
+    ],
+    "cand": {
+      "panniculus": {
+        "is_correct": true,
+        "post_ans": "panniculus",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "571688": {
+    "golden": [
+      "stethoscope"
+    ],
+    "cand": {
+      "stethoscope": {
+        "is_correct": true,
+        "post_ans": "stethoscope",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "575067": {
+    "golden": [
+      "aldurazyme"
+    ],
+    "cand": {
+      "laronidase": {
+        "is_correct": false,
+        "post_ans": "laronidase",
+        "post_ans_correct": false
+      },
+      "aldurazyme": {
+        "is_correct": true,
+        "post_ans": "aldurazyme",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "576547": {
+    "golden": [
+      "alpha-n-acetylgalactosaminidase"
+    ],
+    "cand": {
+      "α-n-acetylgalactosaminidase": {
+        "is_correct": false,
+        "post_ans": "α-n-acetylgalactosaminidase",
+        "post_ans_correct": false
+      },
+      "alpha-n-acetylgalactosaminidase": {
+        "is_correct": true,
+        "post_ans": "alpha-n-acetylgalactosaminidase",
+        "post_ans_correct": true
+      },
+      "alpha-n-acetylgalactosaminidase (naga)": {
+        "is_correct": false,
+        "post_ans": "alpha-n-acetylgalactosaminidase",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "581924": {
+    "golden": [
+      "agenesis of the corpus callosum",
+      "corpus callosum agenesis"
+    ],
+    "cand": {
+      "agenesis of the corpus callosum": {
+        "is_correct": true,
+        "post_ans": "agenesis of the corpus callosum",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "581932": {
+    "golden": [
+      "mycn"
+    ],
+    "cand": {
+      "mycn gene": {
+        "is_correct": false,
+        "post_ans": "mycn",
+        "post_ans_correct": true
+      },
+      "mycn": {
+        "is_correct": true,
+        "post_ans": "mycn",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "582369": {
+    "golden": [
+      "mcops2",
+      "oculo‐facio‐cardio‐dental syndrome"
+    ],
+    "cand": {
+      "mcops2 form of lenz microphthalmia syndrome": {
+        "is_correct": false,
+        "post_ans": "mcops2 form of lenz microphthalmia syndrome",
+        "post_ans_correct": false
+      },
+      "oculofaciocardiodental syndrome": {
+        "is_correct": false,
+        "post_ans": "oculofaciocardiodental syndrome",
+        "post_ans_correct": false
+      },
+      "oculo-facial-cardio-dental syndrome": {
+        "is_correct": false,
+        "post_ans": "oculo-facial-cardio-dental syndrome",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "583155": {
+    "golden": [
+      "alpha intercalated cells"
+    ],
+    "cand": {
+      "distal tubular cells": {
+        "is_correct": false,
+        "post_ans": "distal tubular cells",
+        "post_ans_correct": false
+      },
+      "α-intercalated cells": {
+        "is_correct": false,
+        "post_ans": "α-intercalated cells",
+        "post_ans_correct": false
+      },
+      "alpha intercalated cells": {
+        "is_correct": true,
+        "post_ans": "alpha intercalated cells",
+        "post_ans_correct": true
+      },
+      "alpha intercalated cells of the medullary collecting duct": {
+        "is_correct": false,
+        "post_ans": "alpha intercalated cells of the medullary collecting duct",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "583649": {
+    "golden": [
+      "1890"
+    ],
+    "cand": {
+      "1890": {
+        "is_correct": true,
+        "post_ans": "1890",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "583819": {
+    "golden": [
+      "chromosome 1"
+    ],
+    "cand": {
+      "chromosome 1": {
+        "is_correct": true,
+        "post_ans": "chromosome 1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "590744": {
+    "golden": [
+      "noonan syndrome"
+    ],
+    "cand": {
+      "noonan syndrome": {
+        "is_correct": true,
+        "post_ans": "noonan syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "593091": {
+    "golden": [
+      "congenital heart defect",
+      "heart defect"
+    ],
+    "cand": {
+      "atrial septal defect": {
+        "is_correct": false,
+        "post_ans": "atrial septal defect",
+        "post_ans_correct": false
+      },
+      "congenital heart defects": {
+        "is_correct": false,
+        "post_ans": "congenital heart defects",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "593161": {
+    "golden": [
+      "nsaids"
+    ],
+    "cand": {
+      "indomethacin": {
+        "is_correct": false,
+        "post_ans": "indomethacin",
+        "post_ans_correct": false
+      },
+      "non-steroidal anti-inflammatory drugs (nsaids)": {
+        "is_correct": false,
+        "post_ans": "non-steroidal anti-inflammatory drugs",
+        "post_ans_correct": false
+      },
+      "nsaids": {
+        "is_correct": true,
+        "post_ans": "nsaids",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "594097": {
+    "golden": [
+      "polydactyly"
+    ],
+    "cand": {
+      "polydactyly": {
+        "is_correct": true,
+        "post_ans": "polydactyly",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "601508": {
+    "golden": [
+      "hereditary neuralgic amyotrophy"
+    ],
+    "cand": {
+      "hereditary neuralgic amyotrophy": {
+        "is_correct": true,
+        "post_ans": "hereditary neuralgic amyotrophy",
+        "post_ans_correct": true
+      },
+      "hereditary neuralgic amyotrophy (hna)": {
+        "is_correct": false,
+        "post_ans": "hna",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "602046": {
+    "golden": [
+      "human papillomavirus",
+      "hpv"
+    ],
+    "cand": {
+      "human papillomavirus (hpv)": {
+        "is_correct": false,
+        "post_ans": "human papillomavirus",
+        "post_ans_correct": true
+      },
+      "human papillomavirus": {
+        "is_correct": true,
+        "post_ans": "human papillomavirus",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "602194": {
+    "golden": [
+      "ionizing radiation"
+    ],
+    "cand": {
+      "ionizing radiation": {
+        "is_correct": true,
+        "post_ans": "ionizing radiation",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "610944": {
+    "golden": [
+      "influenza a virus subtype h1n1",
+      "h1n1"
+    ],
+    "cand": {
+      "h1n1": {
+        "is_correct": true,
+        "post_ans": "h1n1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "614094": {
+    "golden": [
+      "klinefelter syndrome"
+    ],
+    "cand": {
+      "klinefelter syndrome": {
+        "is_correct": true,
+        "post_ans": "klinefelter syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "618369": {
+    "golden": [
+      "diethylstilbestrol"
+    ],
+    "cand": {
+      "diethylstilbestrol": {
+        "is_correct": true,
+        "post_ans": "diethylstilbestrol",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "619326": {
+    "golden": [
+      "hepatorenal syndrome"
+    ],
+    "cand": {}
+  },
+  "619420": {
+    "golden": [
+      "malaria"
+    ],
+    "cand": {
+      "malaria": {
+        "is_correct": true,
+        "post_ans": "malaria",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "622659": {
+    "golden": [
+      "carbamazepine"
+    ],
+    "cand": {
+      "valproate": {
+        "is_correct": false,
+        "post_ans": "valproate",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "623637": {
+    "golden": [
+      "asbestosis"
+    ],
+    "cand": {
+      "asbestosis": {
+        "is_correct": true,
+        "post_ans": "asbestosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "623852": {
+    "golden": [
+      "electromyography"
+    ],
+    "cand": {
+      "electromyography": {
+        "is_correct": true,
+        "post_ans": "electromyography",
+        "post_ans_correct": true
+      },
+      "electromyography (emg)": {
+        "is_correct": false,
+        "post_ans": "electromyography",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "627918": {
+    "golden": [
+      "hemispherectomy"
+    ],
+    "cand": {
+      "insulo-opercular resection": {
+        "is_correct": false,
+        "post_ans": "insulo-opercular resection",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "631767": {
+    "golden": [
+      "methionine"
+    ],
+    "cand": {
+      "cystine": {
+        "is_correct": false,
+        "post_ans": "cystine",
+        "post_ans_correct": false
+      },
+      "methionine": {
+        "is_correct": true,
+        "post_ans": "methionine",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "632138": {
+    "golden": [
+      "toxoplasmosis"
+    ],
+    "cand": {
+      "ocular toxoplasmosis": {
+        "is_correct": false,
+        "post_ans": "ocular toxoplasmosis",
+        "post_ans_correct": false
+      },
+      "toxoplasmic chorioretinitis": {
+        "is_correct": false,
+        "post_ans": "toxoplasmic chorioretinitis",
+        "post_ans_correct": false
+      },
+      "toxoplasma gondii": {
+        "is_correct": false,
+        "post_ans": "toxoplasma gondii",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "632188": {
+    "golden": [
+      "mrkh syndrome"
+    ],
+    "cand": {
+      "mullerian agenesis": {
+        "is_correct": false,
+        "post_ans": "mullerian agenesis",
+        "post_ans_correct": false
+      },
+      "müllerian agenesis": {
+        "is_correct": false,
+        "post_ans": "müllerian agenesis",
+        "post_ans_correct": false
+      },
+      "mrkh syndrome": {
+        "is_correct": true,
+        "post_ans": "mrkh syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "636294": {
+    "golden": [
+      "591"
+    ],
+    "cand": {
+      "591": {
+        "is_correct": true,
+        "post_ans": "591",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "638322": {
+    "golden": [
+      "spirurina"
+    ],
+    "cand": {
+      "spirurina": {
+        "is_correct": true,
+        "post_ans": "spirurina",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "643490": {
+    "golden": [
+      "sarcoglycanopathy",
+      "sarcoglycanopathies"
+    ],
+    "cand": {
+      "sarcoglycanopathies": {
+        "is_correct": true,
+        "post_ans": "sarcoglycanopathies",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "649859": {
+    "golden": [
+      "necrotizing enterocolitis"
+    ],
+    "cand": {
+      "necrotizing enterocolitis": {
+        "is_correct": true,
+        "post_ans": "necrotizing enterocolitis",
+        "post_ans_correct": true
+      },
+      "necrotising enterocolitis": {
+        "is_correct": false,
+        "post_ans": "necrotising enterocolitis",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "649969": {
+    "golden": [
+      "pycr1"
+    ],
+    "cand": {
+      "aldh18a1": {
+        "is_correct": false,
+        "post_ans": "aldh18a1",
+        "post_ans_correct": false
+      },
+      "pycr1": {
+        "is_correct": true,
+        "post_ans": "pycr1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "651642": {
+    "golden": [
+      "membrane vesicle trafficking",
+      "vesicle trafficking"
+    ],
+    "cand": {
+      "a regulator of snare-dependent membrane fusion": {
+        "is_correct": false,
+        "post_ans": "a regulator of snare-dependent membrane fusion",
+        "post_ans_correct": false
+      },
+      "vesicle-mediated protein sorting in the endosome/lysosome pathway": {
+        "is_correct": false,
+        "post_ans": "vesicle-mediated protein sorting in the endosome/lysosome pathway",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "654558": {
+    "golden": [
+      "phosphatidylserine"
+    ],
+    "cand": {
+      "phosphatidylserine": {
+        "is_correct": true,
+        "post_ans": "phosphatidylserine",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "654842": {
+    "golden": [
+      "patau syndrome"
+    ],
+    "cand": {
+      "complete trisomy 13 syndrome": {
+        "is_correct": false,
+        "post_ans": "complete trisomy 13 syndrome",
+        "post_ans_correct": false
+      },
+      "patau syndrome": {
+        "is_correct": true,
+        "post_ans": "patau syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "655589": {
+    "golden": [
+      "trichinosis"
+    ],
+    "cand": {
+      "trichinosis": {
+        "is_correct": true,
+        "post_ans": "trichinosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "655782": {
+    "golden": [
+      "elosulfase alfa",
+      "vimizim"
+    ],
+    "cand": {
+      "vimizim (elosulfase alfa)": {
+        "is_correct": false,
+        "post_ans": "vimizim (elosulfase alfa)",
+        "post_ans_correct": false
+      },
+      "elosulfase alfa": {
+        "is_correct": true,
+        "post_ans": "elosulfase alfa",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "656117": {
+    "golden": [
+      "rho (d) immune globulin",
+      "rho(d) immune globulin"
+    ],
+    "cand": {
+      "anti-d immune globulin": {
+        "is_correct": false,
+        "post_ans": "anti-d immune globulin",
+        "post_ans_correct": false
+      },
+      "anti-d igg": {
+        "is_correct": false,
+        "post_ans": "anti-d igg",
+        "post_ans_correct": false
+      },
+      "anti-d igg (rhogam) injection": {
+        "is_correct": false,
+        "post_ans": "anti-d igg (rhogam) injection",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "656674": {
+    "golden": [
+      "levator palpebrae superioris muscle",
+      "levator palpebrae superioris"
+    ],
+    "cand": {}
+  },
+  "657453": {
+    "golden": [
+      "cutaneous t-cell lymphoma"
+    ],
+    "cand": {
+      "cutaneous t-cell lymphoma": {
+        "is_correct": true,
+        "post_ans": "cutaneous t-cell lymphoma",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "659460": {
+    "golden": [
+      "552"
+    ],
+    "cand": {}
+  },
+  "660741": {
+    "golden": [
+      "coenzyme q10"
+    ],
+    "cand": {
+      "carnitine": {
+        "is_correct": false,
+        "post_ans": "carnitine",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "661293": {
+    "golden": [
+      "canavan disease"
+    ],
+    "cand": {
+      "canavan disease": {
+        "is_correct": true,
+        "post_ans": "canavan disease",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "662146": {
+    "golden": [
+      "bradykinin"
+    ],
+    "cand": {
+      "bradykinin": {
+        "is_correct": true,
+        "post_ans": "bradykinin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "662971": {
+    "golden": [
+      "sodium cromoglycate",
+      "cromolyn sodium",
+      "cromolyn"
+    ],
+    "cand": {
+      "cromolyn sodium": {
+        "is_correct": true,
+        "post_ans": "cromolyn sodium",
+        "post_ans_correct": true
+      },
+      "cromolyn": {
+        "is_correct": true,
+        "post_ans": "cromolyn",
+        "post_ans_correct": true
+      },
+      "sodium cromoglicate": {
+        "is_correct": false,
+        "post_ans": "sodium cromoglicate",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "663367": {
+    "golden": [
+      "pork"
+    ],
+    "cand": {
+      "pork": {
+        "is_correct": true,
+        "post_ans": "pork",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "663513": {
+    "golden": [
+      "sodium"
+    ],
+    "cand": {
+      "sodium": {
+        "is_correct": true,
+        "post_ans": "sodium",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "665185": {
+    "golden": [
+      "sars",
+      "severe acute respiratory syndrome"
+    ],
+    "cand": {
+      "sars": {
+        "is_correct": true,
+        "post_ans": "sars",
+        "post_ans_correct": true
+      },
+      "severe acute respiratory syndrome (sars)": {
+        "is_correct": false,
+        "post_ans": "sars",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "665260": {
+    "golden": [
+      "fanconi anemia"
+    ],
+    "cand": {
+      "fanconi anaemia": {
+        "is_correct": false,
+        "post_ans": "fanconi anaemia",
+        "post_ans_correct": false
+      },
+      "gata2 deficiency": {
+        "is_correct": false,
+        "post_ans": "gata2 deficiency",
+        "post_ans_correct": false
+      },
+      "myelodysplastic syndrome": {
+        "is_correct": false,
+        "post_ans": "myelodysplastic syndrome",
+        "post_ans_correct": false
+      },
+      "myelodysplastic syndrome (mds)": {
+        "is_correct": false,
+        "post_ans": "myelodysplastic syndrome",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "666699": {
+    "golden": [
+      "class iii malocclusion"
+    ],
+    "cand": {
+      "class iii malocclusion": {
+        "is_correct": true,
+        "post_ans": "class iii malocclusion",
+        "post_ans_correct": true
+      },
+      "mandibular prognathism": {
+        "is_correct": false,
+        "post_ans": "mandibular prognathism",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "666700": {
+    "golden": [
+      "e307"
+    ],
+    "cand": {
+      "e306": {
+        "is_correct": false,
+        "post_ans": "e306",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "666822": {
+    "golden": [
+      "testicular cancer"
+    ],
+    "cand": {
+      "testicular carcinoma": {
+        "is_correct": false,
+        "post_ans": "testicular carcinoma",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "667129": {
+    "golden": [
+      "erythema"
+    ],
+    "cand": {
+      "erythema": {
+        "is_correct": true,
+        "post_ans": "erythema",
+        "post_ans_correct": true
+      },
+      "rubor": {
+        "is_correct": false,
+        "post_ans": "rubor",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "667770": {
+    "golden": [
+      "chromosome 3"
+    ],
+    "cand": {
+      "chromosome 3q28": {
+        "is_correct": false,
+        "post_ans": "chromosome 3",
+        "post_ans_correct": true
+      },
+      "chromosome 3": {
+        "is_correct": true,
+        "post_ans": "chromosome 3",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "672653": {
+    "golden": [
+      "depression"
+    ],
+    "cand": {
+      "depression": {
+        "is_correct": true,
+        "post_ans": "depression",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "674555": {
+    "golden": [
+      "bevacizumab"
+    ],
+    "cand": {
+      "bevacizumab": {
+        "is_correct": true,
+        "post_ans": "bevacizumab",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "679390": {
+    "golden": [
+      "deferiprone"
+    ],
+    "cand": {
+      "deferiprone (ferriprox)": {
+        "is_correct": false,
+        "post_ans": "deferiprone",
+        "post_ans_correct": true
+      },
+      "deferoxamine": {
+        "is_correct": false,
+        "post_ans": "deferoxamine",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "680429": {
+    "golden": [
+      "sialin"
+    ],
+    "cand": {
+      "slc17a5 (sialin)": {
+        "is_correct": false,
+        "post_ans": "slc17a5",
+        "post_ans_correct": false
+      },
+      "sialin": {
+        "is_correct": true,
+        "post_ans": "sialin",
+        "post_ans_correct": true
+      },
+      "slc17a5": {
+        "is_correct": false,
+        "post_ans": "slc17a5",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "682446": {
+    "golden": [
+      "amyloid beta"
+    ],
+    "cand": {
+      "amyloid beta peptide": {
+        "is_correct": false,
+        "post_ans": "amyloid beta peptide",
+        "post_ans_correct": false
+      },
+      "amyloid beta": {
+        "is_correct": true,
+        "post_ans": "amyloid beta",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "682791": {
+    "golden": [
+      "paul tessier"
+    ],
+    "cand": {
+      "paul tessier": {
+        "is_correct": true,
+        "post_ans": "paul tessier",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "683309": {
+    "golden": [
+      "infectious mononucleosis"
+    ],
+    "cand": {
+      "epstein–barr virus–associated lymphoproliferative diseases": {
+        "is_correct": false,
+        "post_ans": "epstein–barr virus–associated lymphoproliferative diseases",
+        "post_ans_correct": false
+      },
+      "ebv+ b cell lymphomas": {
+        "is_correct": false,
+        "post_ans": "ebv+ b cell lymphomas",
+        "post_ans_correct": false
+      },
+      "infectious mononucleosis": {
+        "is_correct": true,
+        "post_ans": "infectious mononucleosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "684640": {
+    "golden": [
+      "blm"
+    ],
+    "cand": {
+      "blm gene": {
+        "is_correct": false,
+        "post_ans": "blm",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "685701": {
+    "golden": [
+      "imatinib mesylate",
+      "imatinib"
+    ],
+    "cand": {
+      "imatinib": {
+        "is_correct": true,
+        "post_ans": "imatinib",
+        "post_ans_correct": true
+      },
+      "imatinib mesylate": {
+        "is_correct": true,
+        "post_ans": "imatinib mesylate",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "686876": {
+    "golden": [
+      "developmental delay"
+    ],
+    "cand": {}
+  },
+  "686893": {
+    "golden": [
+      "vitamin a"
+    ],
+    "cand": {
+      "vitamin a": {
+        "is_correct": true,
+        "post_ans": "vitamin a",
+        "post_ans_correct": true
+      },
+      "retinal": {
+        "is_correct": false,
+        "post_ans": "retinal",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "687399": {
+    "golden": [
+      "steatorrhea"
+    ],
+    "cand": {
+      "steatorrhea": {
+        "is_correct": true,
+        "post_ans": "steatorrhea",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "687426": {
+    "golden": [
+      "cranial sutures"
+    ],
+    "cand": {
+      "calvarial sutures": {
+        "is_correct": false,
+        "post_ans": "calvarial sutures",
+        "post_ans_correct": false
+      },
+      "cranial sutures": {
+        "is_correct": true,
+        "post_ans": "cranial sutures",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "688754": {
+    "golden": [
+      "nodal cilia"
+    ],
+    "cand": {
+      "nodal cilia": {
+        "is_correct": true,
+        "post_ans": "nodal cilia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "689063": {
+    "golden": [
+      "cyp1a2"
+    ],
+    "cand": {
+      "cyp1a2": {
+        "is_correct": true,
+        "post_ans": "cyp1a2",
+        "post_ans_correct": true
+      },
+      "cyp2e1": {
+        "is_correct": false,
+        "post_ans": "cyp2e1",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "694212": {
+    "golden": [
+      "oligodendrocytes"
+    ],
+    "cand": {
+      "oligodendrocytes": {
+        "is_correct": true,
+        "post_ans": "oligodendrocytes",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "695539": {
+    "golden": [
+      "hematopoietic growth factor"
+    ],
+    "cand": {
+      "oxymetholone": {
+        "is_correct": false,
+        "post_ans": "oxymetholone",
+        "post_ans_correct": false
+      },
+      "hematopoietic growth factors": {
+        "is_correct": false,
+        "post_ans": "hematopoietic growth factors",
+        "post_ans_correct": false
+      },
+      "androgens": {
+        "is_correct": false,
+        "post_ans": "androgens",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "697601": {
+    "golden": [
+      "leber congenital amaurosis",
+      "leber's congenital amaurosis"
+    ],
+    "cand": {
+      "leber congenital amaurosis": {
+        "is_correct": true,
+        "post_ans": "leber congenital amaurosis",
+        "post_ans_correct": true
+      },
+      "leber hereditary optic neuropathy": {
+        "is_correct": false,
+        "post_ans": "leber hereditary optic neuropathy",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "705666": {
+    "golden": [
+      "schizophrenia"
+    ],
+    "cand": {
+      "schizophrenia": {
+        "is_correct": true,
+        "post_ans": "schizophrenia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "706424": {
+    "golden": [
+      "osteoporosis"
+    ],
+    "cand": {
+      "osteoporosis": {
+        "is_correct": true,
+        "post_ans": "osteoporosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "707707": {
+    "golden": [
+      "pulmonary siderosis",
+      "siderosis"
+    ],
+    "cand": {
+      "pulmonary siderosis": {
+        "is_correct": true,
+        "post_ans": "pulmonary siderosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "709773": {
+    "golden": [
+      "sars",
+      "severe acute respiratory syndrome"
+    ],
+    "cand": {
+      "severe acute respiratory syndrome (sars)": {
+        "is_correct": false,
+        "post_ans": "sars",
+        "post_ans_correct": true
+      },
+      "sars": {
+        "is_correct": true,
+        "post_ans": "sars",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "713935": {
+    "golden": [
+      "cerebellum"
+    ],
+    "cand": {
+      "cerebellum": {
+        "is_correct": true,
+        "post_ans": "cerebellum",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "714294": {
+    "golden": [
+      "p.r4810k",
+      "p.arg4810lys"
+    ],
+    "cand": {
+      "rnf213 p.arg4810lys": {
+        "is_correct": false,
+        "post_ans": "rnf213 p.arg4810lys",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "715914": {
+    "golden": [
+      "extracellular matrix"
+    ],
+    "cand": {
+      "collagen": {
+        "is_correct": false,
+        "post_ans": "collagen",
+        "post_ans_correct": false
+      },
+      "collagen-rich extracellular matrix": {
+        "is_correct": false,
+        "post_ans": "collagen-rich extracellular matrix",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "716881": {
+    "golden": [
+      "carpenter syndrome"
+    ],
+    "cand": {
+      "carpenter syndrome": {
+        "is_correct": true,
+        "post_ans": "carpenter syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "722142": {
+    "golden": [
+      "traf7"
+    ],
+    "cand": {
+      "traf7": {
+        "is_correct": true,
+        "post_ans": "traf7",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "722273": {
+    "golden": [
+      "vitamin a deficiency"
+    ],
+    "cand": {
+      "vitamin a deficiency": {
+        "is_correct": true,
+        "post_ans": "vitamin a deficiency",
+        "post_ans_correct": true
+      },
+      "copper deficiency": {
+        "is_correct": false,
+        "post_ans": "copper deficiency",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "722697": {
+    "golden": [
+      "melanin"
+    ],
+    "cand": {
+      "melanin": {
+        "is_correct": true,
+        "post_ans": "melanin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "722978": {
+    "golden": [
+      "1816"
+    ],
+    "cand": {}
+  },
+  "723379": {
+    "golden": [
+      "timm8a"
+    ],
+    "cand": {
+      "htim8a protein": {
+        "is_correct": false,
+        "post_ans": "htim8a protein",
+        "post_ans_correct": false
+      },
+      "timm8a": {
+        "is_correct": true,
+        "post_ans": "timm8a",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "725163": {
+    "golden": [
+      "basan syndrome",
+      "absence of fingerprints-congenital milia syndrome"
+    ],
+    "cand": {
+      "basan syndrome": {
+        "is_correct": true,
+        "post_ans": "basan syndrome",
+        "post_ans_correct": true
+      },
+      "absence of fingerprints-congenital milia syndrome (baird syndrome)": {
+        "is_correct": false,
+        "post_ans": "absence of fingerprints-congenital milia syndrome (baird syndrome)",
+        "post_ans_correct": false
+      },
+      "baird syndrome": {
+        "is_correct": false,
+        "post_ans": "baird syndrome",
+        "post_ans_correct": false
+      },
+      "absence of fingerprints-congenital milia syndrome": {
+        "is_correct": true,
+        "post_ans": "absence of fingerprints-congenital milia syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "728397": {
+    "golden": [
+      "selective serotonin reuptake inhibitors",
+      "ssris"
+    ],
+    "cand": {
+      "selective serotonin reuptake inhibitors": {
+        "is_correct": true,
+        "post_ans": "selective serotonin reuptake inhibitors",
+        "post_ans_correct": true
+      },
+      "selective serotonin reuptake inhibitors (ssris)": {
+        "is_correct": false,
+        "post_ans": "selective serotonin reuptake inhibitors",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "728614": {
+    "golden": [
+      "bmpr1b"
+    ],
+    "cand": {
+      "bmpr1b": {
+        "is_correct": true,
+        "post_ans": "bmpr1b",
+        "post_ans_correct": true
+      },
+      "bmpr2": {
+        "is_correct": false,
+        "post_ans": "bmpr2",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "731031": {
+    "golden": [
+      "coenzyme q10"
+    ],
+    "cand": {
+      "coenzyme q10": {
+        "is_correct": true,
+        "post_ans": "coenzyme q10",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "734312": {
+    "golden": [
+      "alpha-l-iduronidase",
+      "idua"
+    ],
+    "cand": {
+      "α-l-iduronidase": {
+        "is_correct": false,
+        "post_ans": "α-l-iduronidase",
+        "post_ans_correct": false
+      },
+      "iduronidase": {
+        "is_correct": false,
+        "post_ans": "iduronidase",
+        "post_ans_correct": false
+      },
+      "alpha-l-iduronidase": {
+        "is_correct": true,
+        "post_ans": "alpha-l-iduronidase",
+        "post_ans_correct": true
+      },
+      "alpha-l iduronidase": {
+        "is_correct": false,
+        "post_ans": "alpha-l iduronidase",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "734848": {
+    "golden": [
+      "melas",
+      "melas syndrome"
+    ],
+    "cand": {
+      "melas syndrome": {
+        "is_correct": true,
+        "post_ans": "melas syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "739638": {
+    "golden": [
+      "absence seizure"
+    ],
+    "cand": {
+      "absence seizures": {
+        "is_correct": false,
+        "post_ans": "absence seizures",
+        "post_ans_correct": false
+      },
+      "absence seizure": {
+        "is_correct": true,
+        "post_ans": "absence seizure",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "740975": {
+    "golden": [
+      "atr"
+    ],
+    "cand": {
+      "atr": {
+        "is_correct": true,
+        "post_ans": "atr",
+        "post_ans_correct": true
+      },
+      "atr gene": {
+        "is_correct": false,
+        "post_ans": "atr",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "743668": {
+    "golden": [
+      "exit procedure"
+    ],
+    "cand": {
+      "exit procedure": {
+        "is_correct": true,
+        "post_ans": "exit procedure",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "744208": {
+    "golden": [
+      "ovarian cancer"
+    ],
+    "cand": {
+      "ovarian cancer": {
+        "is_correct": true,
+        "post_ans": "ovarian cancer",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "745330": {
+    "golden": [
+      "p53",
+      "tp53"
+    ],
+    "cand": {
+      "p53": {
+        "is_correct": true,
+        "post_ans": "p53",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "747234": {
+    "golden": [
+      "liver transplantation",
+      "liver transplant"
+    ],
+    "cand": {
+      "liver transplantation": {
+        "is_correct": true,
+        "post_ans": "liver transplantation",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "747397": {
+    "golden": [
+      "renovascular hypertension"
+    ],
+    "cand": {
+      "renovascular hypertension": {
+        "is_correct": true,
+        "post_ans": "renovascular hypertension",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "749466": {
+    "golden": [
+      "sigbert josef maria ganser"
+    ],
+    "cand": {
+      "karl friedrich von münchhausen": {
+        "is_correct": false,
+        "post_ans": "karl friedrich von münchhausen",
+        "post_ans_correct": false
+      },
+      "sigbert ganser": {
+        "is_correct": false,
+        "post_ans": "sigbert ganser",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "753323": {
+    "golden": [
+      "yellow"
+    ],
+    "cand": {
+      "straw-colored": {
+        "is_correct": false,
+        "post_ans": "straw-colored",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "753451": {
+    "golden": [
+      "cardiopulmonary bypass"
+    ],
+    "cand": {
+      "cardiopulmonary bypass": {
+        "is_correct": true,
+        "post_ans": "cardiopulmonary bypass",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "754736": {
+    "golden": [
+      "wfs1"
+    ],
+    "cand": {
+      "wfs1 gene": {
+        "is_correct": false,
+        "post_ans": "wfs1",
+        "post_ans_correct": true
+      },
+      "wfs1": {
+        "is_correct": true,
+        "post_ans": "wfs1",
+        "post_ans_correct": true
+      },
+      "mt-tl1": {
+        "is_correct": false,
+        "post_ans": "mt-tl1",
+        "post_ans_correct": false
+      },
+      "esrrb": {
+        "is_correct": false,
+        "post_ans": "esrrb",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "757070": {
+    "golden": [
+      "autosomal recessive"
+    ],
+    "cand": {
+      "autosomal recessive": {
+        "is_correct": true,
+        "post_ans": "autosomal recessive",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "757673": {
+    "golden": [
+      "prostaglandin e1"
+    ],
+    "cand": {
+      "prostaglandin e1": {
+        "is_correct": true,
+        "post_ans": "prostaglandin e1",
+        "post_ans_correct": true
+      },
+      "alprostadil": {
+        "is_correct": false,
+        "post_ans": "alprostadil",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "760458": {
+    "golden": [
+      "chelation therapy"
+    ],
+    "cand": {
+      "chelation therapy": {
+        "is_correct": true,
+        "post_ans": "chelation therapy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "763753": {
+    "golden": [
+      "smn1"
+    ],
+    "cand": {
+      "smn1 gene": {
+        "is_correct": false,
+        "post_ans": "smn1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "768787": {
+    "golden": [
+      "oriental rat flea",
+      "xenopsylla cheopis"
+    ],
+    "cand": {
+      "xenopsylla cheopis": {
+        "is_correct": true,
+        "post_ans": "xenopsylla cheopis",
+        "post_ans_correct": true
+      },
+      "the oriental rat flea (xenopsylla cheopis)": {
+        "is_correct": false,
+        "post_ans": "the oriental rat flea (xenopsylla cheopis)",
+        "post_ans_correct": false
+      },
+      "oriental rat flea (xenopsylla cheopis)": {
+        "is_correct": false,
+        "post_ans": "oriental rat flea (xenopsylla cheopis)",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "770213": {
+    "golden": [
+      "james r. lupski"
+    ],
+    "cand": {
+      "james r. lupski": {
+        "is_correct": true,
+        "post_ans": "james r. lupski",
+        "post_ans_correct": true
+      },
+      "hugo j. bellen": {
+        "is_correct": false,
+        "post_ans": "hugo j. bellen",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "771022": {
+    "golden": [
+      "vibrio vulnificus"
+    ],
+    "cand": {
+      "shewanella algae": {
+        "is_correct": false,
+        "post_ans": "shewanella algae",
+        "post_ans_correct": false
+      },
+      "vibrio vulnificus": {
+        "is_correct": true,
+        "post_ans": "vibrio vulnificus",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "771231": {
+    "golden": [
+      "tbx4"
+    ],
+    "cand": {
+      "tbx4 gene": {
+        "is_correct": false,
+        "post_ans": "tbx4",
+        "post_ans_correct": true
+      },
+      "tbx4 (t-box protein 4) gene": {
+        "is_correct": false,
+        "post_ans": "tbx4 (t-box protein 4)",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "776758": {
+    "golden": [
+      "lysosomal storage disease"
+    ],
+    "cand": {
+      "lysosomal storage disorders": {
+        "is_correct": false,
+        "post_ans": "lysosomal storage disorders",
+        "post_ans_correct": false
+      },
+      "lysosomal storage diseases": {
+        "is_correct": false,
+        "post_ans": "lysosomal storage diseases",
+        "post_ans_correct": false
+      },
+      "glycoproteinosis": {
+        "is_correct": false,
+        "post_ans": "glycoproteinosis",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "776831": {
+    "golden": [
+      "tmc1"
+    ],
+    "cand": {
+      "tmc1": {
+        "is_correct": true,
+        "post_ans": "tmc1",
+        "post_ans_correct": true
+      },
+      "tmc1 gene": {
+        "is_correct": false,
+        "post_ans": "tmc1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "778748": {
+    "golden": [
+      "haploinsufficiency"
+    ],
+    "cand": {
+      "haploinsufficiency": {
+        "is_correct": true,
+        "post_ans": "haploinsufficiency",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "778929": {
+    "golden": [
+      "indomethacin",
+      "indometacin"
+    ],
+    "cand": {
+      "indometacin": {
+        "is_correct": true,
+        "post_ans": "indometacin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "782966": {
+    "golden": [
+      "bone marrow transplant",
+      "bone marrow transplantation"
+    ],
+    "cand": {
+      "stem cell transplant": {
+        "is_correct": false,
+        "post_ans": "stem cell transplant",
+        "post_ans_correct": false
+      },
+      "bone marrow transplant": {
+        "is_correct": true,
+        "post_ans": "bone marrow transplant",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "784532": {
+    "golden": [
+      "henry molaison"
+    ],
+    "cand": {
+      "henry molaison": {
+        "is_correct": true,
+        "post_ans": "henry molaison",
+        "post_ans_correct": true
+      },
+      "henry molaison (h.m.)": {
+        "is_correct": false,
+        "post_ans": "henry molaison (h.m.)",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "788056": {
+    "golden": [
+      "aedes"
+    ],
+    "cand": {
+      "aedes": {
+        "is_correct": true,
+        "post_ans": "aedes",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "792997": {
+    "golden": [
+      "glycogen storage disease type xv"
+    ],
+    "cand": {
+      "glycogen storage disease due to glycogenin-1 deficiency": {
+        "is_correct": false,
+        "post_ans": "glycogen storage disease due to glycogenin-1 deficiency",
+        "post_ans_correct": false
+      },
+      "glycogen storage disease type xv.": {
+        "is_correct": false,
+        "post_ans": "glycogen storage disease type xv",
+        "post_ans_correct": true
+      },
+      "glycogen storage disease type xv": {
+        "is_correct": true,
+        "post_ans": "glycogen storage disease type xv",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "793771": {
+    "golden": [
+      "columbia university"
+    ],
+    "cand": {
+      "columbia university": {
+        "is_correct": true,
+        "post_ans": "columbia university",
+        "post_ans_correct": true
+      },
+      "columbia's college of physicians and surgeons": {
+        "is_correct": false,
+        "post_ans": "columbia's college of physicians and surgeons",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "793861": {
+    "golden": [
+      "mitochondrial matrix"
+    ],
+    "cand": {
+      "mitochondrial matrix": {
+        "is_correct": true,
+        "post_ans": "mitochondrial matrix",
+        "post_ans_correct": true
+      },
+      "mitochondria": {
+        "is_correct": false,
+        "post_ans": "mitochondria",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "795817": {
+    "golden": [
+      "marcus gunn phenomenon"
+    ],
+    "cand": {
+      "marcus gunn jaw-winking synkinesis": {
+        "is_correct": false,
+        "post_ans": "marcus gunn jaw-winking synkinesis",
+        "post_ans_correct": false
+      },
+      "marcus gunn phenomenon": {
+        "is_correct": true,
+        "post_ans": "marcus gunn phenomenon",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "796223": {
+    "golden": [
+      "granulomatosis with polyangiitis",
+      "gpa"
+    ],
+    "cand": {
+      "granulomatosis with polyangiitis (gpa)": {
+        "is_correct": false,
+        "post_ans": "granulomatosis with polyangiitis",
+        "post_ans_correct": true
+      },
+      "granulomatosis with polyangiitis": {
+        "is_correct": true,
+        "post_ans": "granulomatosis with polyangiitis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "796862": {
+    "golden": [
+      "henry t. lynch"
+    ],
+    "cand": {
+      "henry lynch": {
+        "is_correct": false,
+        "post_ans": "henry lynch",
+        "post_ans_correct": false
+      },
+      "henry t. lynch": {
+        "is_correct": true,
+        "post_ans": "henry t. lynch",
+        "post_ans_correct": true
+      },
+      "aldred scott warthin": {
+        "is_correct": false,
+        "post_ans": "aldred scott warthin",
+        "post_ans_correct": false
+      },
+      "alder s. warthin": {
+        "is_correct": false,
+        "post_ans": "alder s. warthin",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "797581": {
+    "golden": [
+      "23"
+    ],
+    "cand": {
+      "23": {
+        "is_correct": true,
+        "post_ans": "23",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "799512": {
+    "golden": [
+      "bicuspid aortic valve"
+    ],
+    "cand": {
+      "bicuspid aortic valve": {
+        "is_correct": true,
+        "post_ans": "bicuspid aortic valve",
+        "post_ans_correct": true
+      },
+      "patent ductus arteriosus": {
+        "is_correct": false,
+        "post_ans": "patent ductus arteriosus",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "803330": {
+    "golden": [
+      "retinoschisin",
+      "rs1"
+    ],
+    "cand": {
+      "retinoschisin (rs1)": {
+        "is_correct": false,
+        "post_ans": "retinoschisin",
+        "post_ans_correct": true
+      },
+      "retinoschisin": {
+        "is_correct": true,
+        "post_ans": "retinoschisin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "803556": {
+    "golden": [
+      "slc2a2"
+    ],
+    "cand": {
+      "slc2a2": {
+        "is_correct": true,
+        "post_ans": "slc2a2",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "803647": {
+    "golden": [
+      "alzheimer's disease"
+    ],
+    "cand": {
+      "alzheimer's disease": {
+        "is_correct": true,
+        "post_ans": "alzheimer's disease",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "804444": {
+    "golden": [
+      "schedule ii"
+    ],
+    "cand": {
+      "schedule ii": {
+        "is_correct": true,
+        "post_ans": "schedule ii",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "805719": {
+    "golden": [
+      "hashimoto's thyroiditis"
+    ],
+    "cand": {
+      "hashimoto's thyroiditis": {
+        "is_correct": true,
+        "post_ans": "hashimoto's thyroiditis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "806815": {
+    "golden": [
+      "vps33b"
+    ],
+    "cand": {
+      "vps33b gene": {
+        "is_correct": false,
+        "post_ans": "vps33b",
+        "post_ans_correct": true
+      },
+      "vps33b": {
+        "is_correct": true,
+        "post_ans": "vps33b",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "806942": {
+    "golden": [
+      "basal cell carcinoma"
+    ],
+    "cand": {
+      "basal cell carcinoma": {
+        "is_correct": true,
+        "post_ans": "basal cell carcinoma",
+        "post_ans_correct": true
+      },
+      "basal cell carcinomas": {
+        "is_correct": false,
+        "post_ans": "basal cell carcinomas",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "809641": {
+    "golden": [
+      "rank",
+      "tnfrsf11a"
+    ],
+    "cand": {
+      "tnfrsf11a": {
+        "is_correct": true,
+        "post_ans": "tnfrsf11a",
+        "post_ans_correct": true
+      },
+      "rank": {
+        "is_correct": true,
+        "post_ans": "rank",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "814670": {
+    "golden": [
+      "cinchonism"
+    ],
+    "cand": {
+      "cinchonism": {
+        "is_correct": true,
+        "post_ans": "cinchonism",
+        "post_ans_correct": true
+      },
+      "abortion": {
+        "is_correct": false,
+        "post_ans": "abortion",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "815861": {
+    "golden": [
+      "combined malonic and methylmalonic aciduria"
+    ],
+    "cand": {
+      "combined malonic and methylmalonic aciduria": {
+        "is_correct": true,
+        "post_ans": "combined malonic and methylmalonic aciduria",
+        "post_ans_correct": true
+      },
+      "combined malonic and methylmalonic aciduria (cmamma)": {
+        "is_correct": false,
+        "post_ans": "combined malonic and methylmalonic aciduria",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "819301": {
+    "golden": [
+      "chromosome 2"
+    ],
+    "cand": {
+      "chromosome 2q35": {
+        "is_correct": false,
+        "post_ans": "chromosome 2",
+        "post_ans_correct": true
+      },
+      "chromosome 2 at the band 2q35": {
+        "is_correct": false,
+        "post_ans": "chromosome 2",
+        "post_ans_correct": true
+      },
+      "chromosome 2": {
+        "is_correct": true,
+        "post_ans": "chromosome 2",
+        "post_ans_correct": true
+      },
+      "human chromosome 2": {
+        "is_correct": false,
+        "post_ans": "human chromosome 2",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "819839": {
+    "golden": [
+      "cor triatriatum dexter",
+      "cor triatriatum dextrum"
+    ],
+    "cand": {
+      "cor triatriatum dextrum": {
+        "is_correct": true,
+        "post_ans": "cor triatriatum dextrum",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "820147": {
+    "golden": [
+      "dermatologie"
+    ],
+    "cand": {
+      "dermatologie": {
+        "is_correct": true,
+        "post_ans": "dermatologie",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "821517": {
+    "golden": [
+      "rs1"
+    ],
+    "cand": {
+      "rs1 gene": {
+        "is_correct": false,
+        "post_ans": "rs1",
+        "post_ans_correct": true
+      },
+      "retinoschisin gene (rs1)": {
+        "is_correct": false,
+        "post_ans": "retinoschisin",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "822308": {
+    "golden": [
+      "iga nephropathy",
+      "berger's disease"
+    ],
+    "cand": {
+      "iga nephropathy": {
+        "is_correct": true,
+        "post_ans": "iga nephropathy",
+        "post_ans_correct": true
+      },
+      "berger's disease": {
+        "is_correct": true,
+        "post_ans": "berger's disease",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "824992": {
+    "golden": [
+      "protein phosphatase 2a",
+      "pp2a"
+    ],
+    "cand": {
+      "protein phosphatase 2a (pp2a)": {
+        "is_correct": false,
+        "post_ans": "protein phosphatase 2a",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "826431": {
+    "golden": [
+      "panayiotopoulos syndrome"
+    ],
+    "cand": {
+      "panayiotopoulos syndrome": {
+        "is_correct": true,
+        "post_ans": "panayiotopoulos syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "827382": {
+    "golden": [
+      "levodopa",
+      "l-dopa"
+    ],
+    "cand": {
+      "levodopa": {
+        "is_correct": true,
+        "post_ans": "levodopa",
+        "post_ans_correct": true
+      },
+      "l-dopa": {
+        "is_correct": true,
+        "post_ans": "l-dopa",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "828118": {
+    "golden": [
+      "nodules"
+    ],
+    "cand": {
+      "nodule": {
+        "is_correct": false,
+        "post_ans": "nodule",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "829022": {
+    "golden": [
+      "h2 receptor antagonists",
+      "histamine h2 receptor antagonists"
+    ],
+    "cand": {
+      "histamine h2 receptor blockers": {
+        "is_correct": false,
+        "post_ans": "histamine h2 receptor blockers",
+        "post_ans_correct": false
+      },
+      "h2 receptor antagonists": {
+        "is_correct": true,
+        "post_ans": "h2 receptor antagonists",
+        "post_ans_correct": true
+      },
+      "h2 antagonists": {
+        "is_correct": false,
+        "post_ans": "h2 antagonists",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "829235": {
+    "golden": [
+      "20"
+    ],
+    "cand": {
+      "20": {
+        "is_correct": true,
+        "post_ans": "20",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "829711": {
+    "golden": [
+      "393"
+    ],
+    "cand": {
+      "393": {
+        "is_correct": true,
+        "post_ans": "393",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "829744": {
+    "golden": [
+      "susceptibility-weighted imaging"
+    ],
+    "cand": {
+      "susceptibility-weighted imaging (swi)": {
+        "is_correct": false,
+        "post_ans": "swi",
+        "post_ans_correct": false
+      },
+      "susceptibility weighted imaging (swi)": {
+        "is_correct": false,
+        "post_ans": "swi",
+        "post_ans_correct": false
+      },
+      "susceptibility weighted imaging": {
+        "is_correct": false,
+        "post_ans": "susceptibility weighted imaging",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "829837": {
+    "golden": [
+      "ventriculoperitoneal shunt"
+    ],
+    "cand": {
+      "surgery (ventriculoperitoneal shunt)": {
+        "is_correct": false,
+        "post_ans": "surgery (ventriculoperitoneal shunt)",
+        "post_ans_correct": false
+      },
+      "csf shunting": {
+        "is_correct": false,
+        "post_ans": "csf shunting",
+        "post_ans_correct": false
+      },
+      "ventriculoperitoneal shunt": {
+        "is_correct": true,
+        "post_ans": "ventriculoperitoneal shunt",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "830311": {
+    "golden": [
+      "col9a2"
+    ],
+    "cand": {
+      "col9a2": {
+        "is_correct": true,
+        "post_ans": "col9a2",
+        "post_ans_correct": true
+      },
+      "col9a2 gene": {
+        "is_correct": false,
+        "post_ans": "col9a2",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "830404": {
+    "golden": [
+      "brachydactyly type a1",
+      "bda1"
+    ],
+    "cand": {
+      "brachydactyly": {
+        "is_correct": false,
+        "post_ans": "brachydactyly",
+        "post_ans_correct": false
+      },
+      "smith–lemli–opitz syndrome": {
+        "is_correct": false,
+        "post_ans": "smith–lemli–opitz syndrome",
+        "post_ans_correct": false
+      },
+      "acromelic frontonasal dysostosis": {
+        "is_correct": false,
+        "post_ans": "acromelic frontonasal dysostosis",
+        "post_ans_correct": false
+      },
+      "brachydactyly type a1 (bda1)": {
+        "is_correct": false,
+        "post_ans": "brachydactyly type a1",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "832203": {
+    "golden": [
+      "primary ovarian insufficiency"
+    ],
+    "cand": {
+      "primary ovarian insufficiency": {
+        "is_correct": true,
+        "post_ans": "primary ovarian insufficiency",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "834351": {
+    "golden": [
+      "sarcoidosis"
+    ],
+    "cand": {
+      "sarcoidosis": {
+        "is_correct": true,
+        "post_ans": "sarcoidosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "837230": {
+    "golden": [
+      "tk2",
+      "thymidine kinase 2"
+    ],
+    "cand": {}
+  },
+  "838174": {
+    "golden": [
+      "anticonvulsant",
+      "antiepileptic drugs",
+      "anticonvulsants"
+    ],
+    "cand": {
+      "antiepileptic drugs": {
+        "is_correct": true,
+        "post_ans": "antiepileptic drugs",
+        "post_ans_correct": true
+      },
+      "anticonvulsants": {
+        "is_correct": true,
+        "post_ans": "anticonvulsants",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "845857": {
+    "golden": [
+      "glycosyltransferases"
+    ],
+    "cand": {
+      "glycosyltransferases": {
+        "is_correct": true,
+        "post_ans": "glycosyltransferases",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "846660": {
+    "golden": [
+      "purkinje cells"
+    ],
+    "cand": {
+      "purkinje cells": {
+        "is_correct": true,
+        "post_ans": "purkinje cells",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "847295": {
+    "golden": [
+      "less than 1"
+    ],
+    "cand": {}
+  },
+  "847556": {
+    "golden": [
+      "18"
+    ],
+    "cand": {
+      "9": {
+        "is_correct": false,
+        "post_ans": "9",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "848910": {
+    "golden": [
+      "ichthyosis vulgaris"
+    ],
+    "cand": {
+      "ichthyosis vulgaris": {
+        "is_correct": true,
+        "post_ans": "ichthyosis vulgaris",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "849629": {
+    "golden": [
+      "bacterial vaginosis"
+    ],
+    "cand": {
+      "bacterial vaginosis": {
+        "is_correct": true,
+        "post_ans": "bacterial vaginosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "852076": {
+    "golden": [
+      "skeletal muscle cells"
+    ],
+    "cand": {
+      "skeletal muscle cells": {
+        "is_correct": true,
+        "post_ans": "skeletal muscle cells",
+        "post_ans_correct": true
+      },
+      "heart and skeletal muscle cells": {
+        "is_correct": false,
+        "post_ans": "heart and skeletal muscle cells",
+        "post_ans_correct": false
+      },
+      "cardiac and skeletal muscle cells": {
+        "is_correct": false,
+        "post_ans": "cardiac and skeletal muscle cells",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "854124": {
+    "golden": [
+      "hematopoiesis"
+    ],
+    "cand": {
+      "hematopoiesis": {
+        "is_correct": true,
+        "post_ans": "hematopoiesis",
+        "post_ans_correct": true
+      },
+      "haematopoiesis": {
+        "is_correct": false,
+        "post_ans": "haematopoiesis",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "854304": {
+    "golden": [
+      "botulinum toxin type a"
+    ],
+    "cand": {
+      "botulinum toxin": {
+        "is_correct": false,
+        "post_ans": "botulinum toxin",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "855148": {
+    "golden": [
+      "trichomonas vaginalis"
+    ],
+    "cand": {
+      "trichomonas vaginalis": {
+        "is_correct": true,
+        "post_ans": "trichomonas vaginalis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "857118": {
+    "golden": [
+      "plasma cells"
+    ],
+    "cand": {
+      "plasma cells": {
+        "is_correct": true,
+        "post_ans": "plasma cells",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "857333": {
+    "golden": [
+      "sodium–potassium pump"
+    ],
+    "cand": {
+      "na+/k+-atpase": {
+        "is_correct": false,
+        "post_ans": "na+/k+-atpase",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "858693": {
+    "golden": [
+      "ataxia"
+    ],
+    "cand": {
+      "ataxia": {
+        "is_correct": true,
+        "post_ans": "ataxia",
+        "post_ans_correct": true
+      },
+      "cerebellar ataxia": {
+        "is_correct": false,
+        "post_ans": "cerebellar ataxia",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "859400": {
+    "golden": [
+      "2012"
+    ],
+    "cand": {
+      "2012": {
+        "is_correct": true,
+        "post_ans": "2012",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "859459": {
+    "golden": [
+      "amyloid-beta",
+      "amyloid beta"
+    ],
+    "cand": {
+      "amyloid-beta": {
+        "is_correct": true,
+        "post_ans": "amyloid-beta",
+        "post_ans_correct": true
+      },
+      "amyloid": {
+        "is_correct": false,
+        "post_ans": "amyloid",
+        "post_ans_correct": false
+      },
+      "amyloid beta": {
+        "is_correct": true,
+        "post_ans": "amyloid beta",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "859993": {
+    "golden": [
+      "carbamazepine"
+    ],
+    "cand": {
+      "lamotrigine": {
+        "is_correct": false,
+        "post_ans": "lamotrigine",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "860736": {
+    "golden": [
+      "sec23b"
+    ],
+    "cand": {
+      "sec23b": {
+        "is_correct": true,
+        "post_ans": "sec23b",
+        "post_ans_correct": true
+      },
+      "sec23b gene": {
+        "is_correct": false,
+        "post_ans": "sec23b",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "863701": {
+    "golden": [
+      "punctate inner choroidopathy"
+    ],
+    "cand": {
+      "punctate inner choroidopathy": {
+        "is_correct": true,
+        "post_ans": "punctate inner choroidopathy",
+        "post_ans_correct": true
+      },
+      "punctate inner choroiditis": {
+        "is_correct": false,
+        "post_ans": "punctate inner choroiditis",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "865090": {
+    "golden": [
+      "cytomegalovirus"
+    ],
+    "cand": {
+      "cytomegalovirus": {
+        "is_correct": true,
+        "post_ans": "cytomegalovirus",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "866039": {
+    "golden": [
+      "acute intermittent porphyria"
+    ],
+    "cand": {
+      "acute intermittent porphyria": {
+        "is_correct": true,
+        "post_ans": "acute intermittent porphyria",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "875275": {
+    "golden": [
+      "nitrous oxide"
+    ],
+    "cand": {
+      "nitrous oxide": {
+        "is_correct": true,
+        "post_ans": "nitrous oxide",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "877413": {
+    "golden": [
+      "metformin"
+    ],
+    "cand": {
+      "metformin": {
+        "is_correct": true,
+        "post_ans": "metformin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "879116": {
+    "golden": [
+      "1821"
+    ],
+    "cand": {}
+  },
+  "879885": {
+    "golden": [
+      "cognitive behavioral therapy"
+    ],
+    "cand": {
+      "cognitive-behavioral therapy (cbt)": {
+        "is_correct": false,
+        "post_ans": "cbt",
+        "post_ans_correct": false
+      },
+      "cognitive behavioral therapy": {
+        "is_correct": true,
+        "post_ans": "cognitive behavioral therapy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "882911": {
+    "golden": [
+      "digitalis"
+    ],
+    "cand": {
+      "digitalis": {
+        "is_correct": true,
+        "post_ans": "digitalis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "885704": {
+    "golden": [
+      "hydrocephalus"
+    ],
+    "cand": {
+      "hydrocephalus": {
+        "is_correct": true,
+        "post_ans": "hydrocephalus",
+        "post_ans_correct": true
+      },
+      "untreated hydrocephalus": {
+        "is_correct": false,
+        "post_ans": "untreated hydrocephalus",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "888878": {
+    "golden": [
+      "corpus callosum"
+    ],
+    "cand": {}
+  },
+  "892125": {
+    "golden": [
+      "lorna wing"
+    ],
+    "cand": {
+      "lorna wing": {
+        "is_correct": true,
+        "post_ans": "lorna wing",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "892309": {
+    "golden": [
+      "dumping syndrome"
+    ],
+    "cand": {
+      "dumping syndrome": {
+        "is_correct": true,
+        "post_ans": "dumping syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "893226": {
+    "golden": [
+      "naproxen"
+    ],
+    "cand": {
+      "ibuprofen": {
+        "is_correct": false,
+        "post_ans": "ibuprofen",
+        "post_ans_correct": false
+      },
+      "naproxen": {
+        "is_correct": true,
+        "post_ans": "naproxen",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "897493": {
+    "golden": [
+      "adrenal adenoma",
+      "adrenocortical adenoma"
+    ],
+    "cand": {
+      "adrenal adenoma": {
+        "is_correct": true,
+        "post_ans": "adrenal adenoma",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "899679": {
+    "golden": [
+      "human papillomavirus type 11"
+    ],
+    "cand": {
+      "hpv-11": {
+        "is_correct": false,
+        "post_ans": "hpv-11",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "900133": {
+    "golden": [
+      "lung cancer"
+    ],
+    "cand": {
+      "lung cancer": {
+        "is_correct": true,
+        "post_ans": "lung cancer",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "901282": {
+    "golden": [
+      "pierre marie"
+    ],
+    "cand": {
+      "adolf von strümpell": {
+        "is_correct": false,
+        "post_ans": "adolf von strümpell",
+        "post_ans_correct": false
+      },
+      "adolf strümpell": {
+        "is_correct": false,
+        "post_ans": "adolf strümpell",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "902852": {
+    "golden": [
+      "chromosome 5"
+    ],
+    "cand": {
+      "chromosome 5": {
+        "is_correct": true,
+        "post_ans": "chromosome 5",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "906796": {
+    "golden": [
+      "mitochondrial dna depletion syndrome"
+    ],
+    "cand": {
+      "mitochondrial dna depletion syndrome": {
+        "is_correct": true,
+        "post_ans": "mitochondrial dna depletion syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "908283": {
+    "golden": [
+      "colchicine"
+    ],
+    "cand": {
+      "colchicine": {
+        "is_correct": true,
+        "post_ans": "colchicine",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "910403": {
+    "golden": [
+      "pax2"
+    ],
+    "cand": {
+      "emx2": {
+        "is_correct": false,
+        "post_ans": "emx2",
+        "post_ans_correct": false
+      },
+      "pax2": {
+        "is_correct": true,
+        "post_ans": "pax2",
+        "post_ans_correct": true
+      },
+      "pax2 gene": {
+        "is_correct": false,
+        "post_ans": "pax2",
+        "post_ans_correct": true
+      },
+      "pax6": {
+        "is_correct": false,
+        "post_ans": "pax6",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "910648": {
+    "golden": [
+      "lysosomes"
+    ],
+    "cand": {
+      "lysosomes": {
+        "is_correct": true,
+        "post_ans": "lysosomes",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "913338": {
+    "golden": [
+      "ophthalmic nerve",
+      "ophthalmic nerve"
+    ],
+    "cand": {
+      "ophthalmic nerve": {
+        "is_correct": true,
+        "post_ans": "ophthalmic nerve",
+        "post_ans_correct": true
+      },
+      "ophthalmic branch": {
+        "is_correct": false,
+        "post_ans": "ophthalmic branch",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "915811": {
+    "golden": [
+      "metal fume fever"
+    ],
+    "cand": {
+      "metal fume fever": {
+        "is_correct": true,
+        "post_ans": "metal fume fever",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "916878": {
+    "golden": [
+      "gelastic seizure"
+    ],
+    "cand": {
+      "gelastic seizure": {
+        "is_correct": true,
+        "post_ans": "gelastic seizure",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "918710": {
+    "golden": [
+      "alacrima"
+    ],
+    "cand": {
+      "alacrima": {
+        "is_correct": true,
+        "post_ans": "alacrima",
+        "post_ans_correct": true
+      },
+      "insufficiency of tears": {
+        "is_correct": false,
+        "post_ans": "insufficiency of tears",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "920528": {
+    "golden": [
+      "ulna hypoplasia-intellectual disability syndrome"
+    ],
+    "cand": {
+      "escobar syndrome": {
+        "is_correct": false,
+        "post_ans": "escobar syndrome",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "921534": {
+    "golden": [
+      "20%"
+    ],
+    "cand": {
+      "20%": {
+        "is_correct": true,
+        "post_ans": "20%",
+        "post_ans_correct": true
+      },
+      "more than 20%": {
+        "is_correct": false,
+        "post_ans": "more than 20%",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "921794": {
+    "golden": [
+      "familial male-limited precocious puberty"
+    ],
+    "cand": {
+      "familial male-limited precocious puberty": {
+        "is_correct": true,
+        "post_ans": "familial male-limited precocious puberty",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "924584": {
+    "golden": [
+      "inflammation"
+    ],
+    "cand": {
+      "acute inflammation": {
+        "is_correct": false,
+        "post_ans": "acute inflammation",
+        "post_ans_correct": false
+      },
+      "inflammation": {
+        "is_correct": true,
+        "post_ans": "inflammation",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "928221": {
+    "golden": [
+      "masseteric nerve"
+    ],
+    "cand": {
+      "masseteric nerve": {
+        "is_correct": true,
+        "post_ans": "masseteric nerve",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "929075": {
+    "golden": [
+      "incision and drainage"
+    ],
+    "cand": {
+      "lancing": {
+        "is_correct": false,
+        "post_ans": "lancing",
+        "post_ans_correct": false
+      },
+      "incision and drainage": {
+        "is_correct": true,
+        "post_ans": "incision and drainage",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "932511": {
+    "golden": [
+      "colostomy"
+    ],
+    "cand": {
+      "colostomy": {
+        "is_correct": true,
+        "post_ans": "colostomy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "933016": {
+    "golden": [
+      "tonsillectomy"
+    ],
+    "cand": {
+      "tonsillectomy": {
+        "is_correct": true,
+        "post_ans": "tonsillectomy",
+        "post_ans_correct": true
+      },
+      "uvulopalatopharyngoplasty": {
+        "is_correct": false,
+        "post_ans": "uvulopalatopharyngoplasty",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "935787": {
+    "golden": [
+      "spleen"
+    ],
+    "cand": {
+      "spleen": {
+        "is_correct": true,
+        "post_ans": "spleen",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "937463": {
+    "golden": [
+      "scheuermann's disease",
+      "scheuermann’s disease"
+    ],
+    "cand": {
+      "scheuermann's disease": {
+        "is_correct": true,
+        "post_ans": "scheuermann's disease",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "947220": {
+    "golden": [
+      "jaundice"
+    ],
+    "cand": {
+      "jaundice": {
+        "is_correct": true,
+        "post_ans": "jaundice",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "947752": {
+    "golden": [
+      "somatic mesoderm"
+    ],
+    "cand": {
+      "midline somatic layer of lateral mesoderm": {
+        "is_correct": false,
+        "post_ans": "midline somatic layer of lateral mesoderm",
+        "post_ans_correct": false
+      },
+      "parietal layer of lateral plate mesoderm": {
+        "is_correct": false,
+        "post_ans": "parietal layer of lateral plate mesoderm",
+        "post_ans_correct": false
+      },
+      "parietal layer": {
+        "is_correct": false,
+        "post_ans": "parietal layer",
+        "post_ans_correct": false
+      },
+      "somatopleure": {
+        "is_correct": false,
+        "post_ans": "somatopleure",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "948373": {
+    "golden": [
+      "neck stiffness"
+    ],
+    "cand": {
+      "stiff neck": {
+        "is_correct": false,
+        "post_ans": "stiff neck",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "949678": {
+    "golden": [
+      "phocomelia"
+    ],
+    "cand": {
+      "phocomelia": {
+        "is_correct": true,
+        "post_ans": "phocomelia",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "950879": {
+    "golden": [
+      "asbestosis"
+    ],
+    "cand": {
+      "asbestosis": {
+        "is_correct": true,
+        "post_ans": "asbestosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "951432": {
+    "golden": [
+      "cramp fasciculation syndrome"
+    ],
+    "cand": {
+      "cramp fasciculation syndrome": {
+        "is_correct": true,
+        "post_ans": "cramp fasciculation syndrome",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "951796": {
+    "golden": [
+      "saddle nose"
+    ],
+    "cand": {
+      "saddle nose": {
+        "is_correct": true,
+        "post_ans": "saddle nose",
+        "post_ans_correct": true
+      },
+      "saddle-nose deformity": {
+        "is_correct": false,
+        "post_ans": "saddle-nose deformity",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "954297": {
+    "golden": [
+      "cerebrovascular accident"
+    ],
+    "cand": {
+      "ramsay hunt syndrome type 2": {
+        "is_correct": false,
+        "post_ans": "ramsay hunt syndrome type 2",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "954659": {
+    "golden": [
+      "ectoderm"
+    ],
+    "cand": {
+      "ectoderm": {
+        "is_correct": true,
+        "post_ans": "ectoderm",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "960525": {
+    "golden": [
+      "petrolatum",
+      "petroleum jelly"
+    ],
+    "cand": {
+      "petroleum jelly": {
+        "is_correct": true,
+        "post_ans": "petroleum jelly",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "960617": {
+    "golden": [
+      "septic shock"
+    ],
+    "cand": {
+      "septic shock": {
+        "is_correct": true,
+        "post_ans": "septic shock",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "963020": {
+    "golden": [
+      "yellow fever"
+    ],
+    "cand": {
+      "yellow fever": {
+        "is_correct": true,
+        "post_ans": "yellow fever",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "970294": {
+    "golden": [
+      "brain"
+    ],
+    "cand": {
+      "eye": {
+        "is_correct": false,
+        "post_ans": "eye",
+        "post_ans_correct": false
+      },
+      "pleural cavity": {
+        "is_correct": false,
+        "post_ans": "pleural cavity",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "970726": {
+    "golden": [
+      "hydrocephalus"
+    ],
+    "cand": {
+      "hydrocephalus": {
+        "is_correct": true,
+        "post_ans": "hydrocephalus",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "971405": {
+    "golden": [
+      "reln",
+      "reelin"
+    ],
+    "cand": {
+      "reln": {
+        "is_correct": true,
+        "post_ans": "reln",
+        "post_ans_correct": true
+      },
+      "reln gene": {
+        "is_correct": false,
+        "post_ans": "reln",
+        "post_ans_correct": true
+      },
+      "reelin gene": {
+        "is_correct": false,
+        "post_ans": "reelin",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "974208": {
+    "golden": [
+      "hodgkin lymphoma"
+    ],
+    "cand": {
+      "hodgkin lymphoma": {
+        "is_correct": true,
+        "post_ans": "hodgkin lymphoma",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "977418": {
+    "golden": [
+      "kcnj5"
+    ],
+    "cand": {
+      "kcnj5": {
+        "is_correct": true,
+        "post_ans": "kcnj5",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "977705": {
+    "golden": [
+      "lymphopenia"
+    ],
+    "cand": {
+      "lymphopenia": {
+        "is_correct": true,
+        "post_ans": "lymphopenia",
+        "post_ans_correct": true
+      },
+      "t cell deficiency": {
+        "is_correct": false,
+        "post_ans": "t cell deficiency",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "979905": {
+    "golden": [
+      "lymph nodes"
+    ],
+    "cand": {}
+  },
+  "984694": {
+    "golden": [
+      "dercum's disease"
+    ],
+    "cand": {
+      "dercum's disease": {
+        "is_correct": true,
+        "post_ans": "dercum's disease",
+        "post_ans_correct": true
+      },
+      "dercum disease": {
+        "is_correct": false,
+        "post_ans": "dercum disease",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "986088": {
+    "golden": [
+      "x chromosome",
+      "chromosome x"
+    ],
+    "cand": {}
+  },
+  "988122": {
+    "golden": [
+      "puberty"
+    ],
+    "cand": {
+      "puberty": {
+        "is_correct": true,
+        "post_ans": "puberty",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "988326": {
+    "golden": [
+      "type vi collagen"
+    ],
+    "cand": {
+      "collagen type vi": {
+        "is_correct": false,
+        "post_ans": "collagen type vi",
+        "post_ans_correct": false
+      },
+      "collagen vi": {
+        "is_correct": false,
+        "post_ans": "collagen vi",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "988439": {
+    "golden": [
+      "follicular lymphoma"
+    ],
+    "cand": {
+      "follicular lymphoma": {
+        "is_correct": true,
+        "post_ans": "follicular lymphoma",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "990890": {
+    "golden": [
+      "chromosome 7"
+    ],
+    "cand": {
+      "chromosome 7": {
+        "is_correct": true,
+        "post_ans": "chromosome 7",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "991013": {
+    "golden": [
+      "nocturnal hyperhydrosis"
+    ],
+    "cand": {
+      "drenching night sweats": {
+        "is_correct": false,
+        "post_ans": "drenching night sweats",
+        "post_ans_correct": false
+      },
+      "drenching sweats": {
+        "is_correct": false,
+        "post_ans": "drenching sweats",
+        "post_ans_correct": false
+      },
+      "nocturnal hyperhydrosis": {
+        "is_correct": true,
+        "post_ans": "nocturnal hyperhydrosis",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "992994": {
+    "golden": [
+      "hypertrophic cardiomyopathy"
+    ],
+    "cand": {
+      "hypertrophic cardiomyopathy": {
+        "is_correct": true,
+        "post_ans": "hypertrophic cardiomyopathy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "993780": {
+    "golden": [
+      "iga nephropathy"
+    ],
+    "cand": {
+      "iga nephropathy": {
+        "is_correct": true,
+        "post_ans": "iga nephropathy",
+        "post_ans_correct": true
+      }
+    }
+  },
+  "994776": {
+    "golden": [
+      "benzathine penicillin g"
+    ],
+    "cand": {
+      "benzathine penicillin g": {
+        "is_correct": true,
+        "post_ans": "benzathine penicillin g",
+        "post_ans_correct": true
+      },
+      "penicillin": {
+        "is_correct": false,
+        "post_ans": "penicillin",
+        "post_ans_correct": false
+      }
+    }
+  },
+  "995113": {
+    "golden": [
+      "acp2"
+    ],
+    "cand": {}
+  },
+  "998849": {
+    "golden": [
+      "lactate dehydrogenase a"
+    ],
+    "cand": {
+      "ldh-5 (4m)": {
+        "is_correct": false,
+        "post_ans": "ldh-5",
+        "post_ans_correct": false
+      }
+    }
+  }
+}

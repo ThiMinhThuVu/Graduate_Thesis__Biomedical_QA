@@ -1,151 +1,69 @@
 {
-    "QIDX": "491820",
-    "original_question": "Is the term osteochondritis deformans juvenilis commonly used to refer to idiopathic juvenile kyphosis?",
-    "type_q": "direct",
-    "focus_spacy_based_entity_label": [
-        "DISEASE",
-        "CHEMICAL"
-    ],
-    "target_answer_type": "correctness",
-    "key_entities": [
-        "osteochondritis deformans juvenilis",
-        "idiopathic juvenile kyphosis"
-    ],
-    "1": {
-        "final_qi": {
-            "question": "Is the term osteochondritis deformans juvenilis commonly used to refer to idiopathic juvenile kyphosis?",
-            "search_keyword": "osteochondritis deformans juvenilis idiopathic juvenile kyphosis",
-            "short_answer": "",
-            "long_answer": "",
+  "QIDX": "491820",
+  "original_question": "Is the term osteochondritis deformans juvenilis commonly used to refer to idiopathic juvenile kyphosis?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "osteochondritis deformans juvenilis",
+    "idiopathic juvenile kyphosis"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is the term osteochondritis deformans juvenilis commonly used to refer to idiopathic juvenile kyphosis?",
+      "search_keyword": "osteochondritis deformans juvenilis idiopathic juvenile kyphosis",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
             "retrieval_information": "",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
             "candidate": [
-                {
-                    "source": "google",
-                    "short_answer": "Yes",
-                    "long_answer": "Reference: [GG_4], [GG_12]. Explanation: The provided context indicates that Scheuermann's disease is also known as osteochondritis deformans juvenilis idiopathic juvenile kyphosis. In reference [GG_4] the term is explicitly used in conjunction with idiopathic juvenile kyphosis, and reference [GG_12] supports that it has been labeled as such. This confirms that the term is commonly used to refer to idiopathic juvenile kyphosis.",
-                    "retrieval_information": "-Reference: [GG_1]: A rare cause of kyphosis with low backache - “Scheuermann's disease” 25 Mar 2015 — This entity has gone by many names, but it is most frequently called Scheuermann‟s disease. There are two types of idiopathic kyphosis; Thoracic.\n-Reference: [GG_2]: Juvenile Kyphosis (Scheuermann's Disease) - Springer Link by D Schlenzka · Cited by 13 — Scheuermann's disease is a thoracic or thoracolumbar hyperkyphosis due to wedged vertebrae developing during adolescence.\n-Reference: [GG_3]: A rare cause of kyphosis with low backache - “Scheuermann's ... A rare cause of kyphosis with low backache - “Scheuermann's disease”: “Osteochondritis deformans juvenilis dorsi” · January 2015 · International Journal of ...\n-Reference: [GG_4]: Scheuermann's disease It describes a condition where the vertebrae grow unevenly with respect to the sagittal plane; that is, the posterior angle is often greater than the anterior.\n-Reference: [GG_5]: Scheuermann Disease - an overview The disease also is known as juvenile kyphosis, vertebral osteochondritis, and osteochondritis deformans juvenilis dorsi. Disc material herniated into the ...\n-Reference: [GG_6]: Pediatric Kyphosis: Scheuermann Disease and Congenital Deformity 28 Jul 2016 — Scheuermann disease is the most common cause of severe thoracic kyphosis in adolescents with reported prevalence of 1% to 8%.\n-Reference: [GG_7]: Scheuermann Disease Scheuermann disease is a skeletal osteochondrosis named for Danish surgeon Holger Scheuermann that causes abnormal bone growth and curvature of the ...\n-Reference: [GG_8]: Surgical Treatment of Spinal Deformities in Pediatric Orthopedic ... by S Braun · 2023 · Cited by 12 — The most common growth disorder that affects the sagittal profile of the spine is SD, which is also known today as juvenile osteochondritis deformans of the ...\n-Reference: [GG_9]: Pediatric Kyphosis: Scheuermann Disease and Congenital Deformity 17 Mar 2015 — Scheuermann disease is the most common cause of severe thoracic kyphosis in adolescents with reported prevalence of 1% to 8%.\n-Reference: [GG_10]: Kyphosis and review of the literature. 'Osteochondritis deformans juvenilis dorsi'. It is characterized as a rigid kyphosis predominantly in young adults caused by the osteochondritis of the ...\n-Reference: [GG_11]: Surgical Treatment of Spinal Deformities in Pediatric Orthopedic ... by S Braun · 2023 · Cited by 12 — The most common growth disorder that affects the sagittal profile of the spine is SD, which is also known today as juvenile osteochondritis deformans of the ...\n-Reference: [GG_12]: TRUNK ABNORMALITIES IN ADOLESCENCE A school health ... by A Hazebroek-Kampschreur · 1993 · Cited by 1 — Scheuermann labelled the kyphosis dorsalis juvenilis as ostechondritis deformans juvenilis dorsi, now known as Scheuermann's disease.\" Scheuermann's juvenile ...\n-Reference: [GG_13]: Kyphosis and Review of the Literature by O YAMAN · 2014 · Cited by 106 — 'Osteochondritis deformans juvenilis dorsi'. It is characterized as a rigid kyphosis predominantly in young adults caused by the ...\n-Reference: [GG_14]: Scheuermann Disease 6 Mar 2024 — In 1920, Scheuermann described a painful kyphosis of the thoracic spine in a 16-year-old farmhand and named the disorder “kyphosis dorsalis ...\n-Reference: [GG_15]: Thoracic Spine Coronal cleft vertebrae are often wedge-shaped with corresponding kyphotic deformity. Differentiation is required from traumatic deformities and osteolytic ...\n-Reference: [GG_16]: The epiphyses, at birth, are composed of cartilage, cate with the diaphysis, ... former occurs more frequently in girls. VERTEBRAL EPIPHYSITIS. In 1921, Scheuermann 21 described a condition which he called osteochondritis deformans juvenilis ...\n-Reference: [GG_17]: INTRAOBSERVER AND INTEROBSERVER RELIABILITY OF ... It was also called “Osteochondritis juvenile deformans dorsi”. In this disease osteochondritis of the secondary ossification centers of the vertebrae is seen.\n-Reference: [GG_18]: A clinical and archaeological study of Schmorl's Nodes - Durham E-Theses by JM McNaught · 2006 · Cited by 7 — Schmorl's nodes are described, with anterior Schmor1's nodes causing Scheuermann's disease, a type of juvenile idiopathic kyphosis, or kyphosis dorsalis ...\n-Reference: [GG_19]: Surgical Treatment of Spinal Deformities in Pediatric Orthopedic ... by S Braun · 2023 · Cited by 12 — The most common growth disorder that affects the sagittal profile of the spine is SD, which is also known today as juvenile osteochondritis deformans of the ...\n-Reference: [GG_20]: Long-term follow-up of untreated Scheuermann's kyphosis 6 Aug 2025 — ... osteochondritis deformans juvenilis dorsi”. The true incidence of juvenile kyphosis is not known. It ranges from 1% to 8%, being more common ...\n\n",
-                    "full_data": {
-                        "short_answer": "Yes",
-                        "long_answer": "Reference: [GG_4], [GG_12]. Explanation: The provided context indicates that Scheuermann's disease is also known as osteochondritis deformans juvenilis idiopathic juvenile kyphosis. In reference [GG_4] the term is explicitly used in conjunction with idiopathic juvenile kyphosis, and reference [GG_12] supports that it has been labeled as such. This confirms that the term is commonly used to refer to idiopathic juvenile kyphosis."
-                    }
-                },
-                {
-                    "source": "wiki",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "Explanation: The provided context does not include any specific information linking 'osteochondritis deformans juvenilis' with idiopathic juvenile kyphosis. The context only refers to Scheuermann's disease and does not offer details on the usage of the term 'osteochondritis deformans juvenilis' for idiopathic juvenile kyphosis.",
-                    "retrieval_information": "-Reference: [WIKI_1]: Scheuermann's disease It describes a condition where the vertebrae grow unevenly with respect to the sagittal plane; that is, the posterior angle is often greater than the anterior.\n-Reference: [WIKI_2]: Wikipedia:WikiProject Medicine/Lists of pages/sandbox Mid Talk:Juvenile idiopathic arthritis; Mid Talk:Juvenile myelomonocytic ... Mid Talk:Kyphosis; Mid Talk:Kyrle disease; Mid Talk:Labial fusion; Mid Talk ...\n\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context does not include any specific information linking 'osteochondritis deformans juvenilis' with idiopathic juvenile kyphosis. The context only refers to Scheuermann's disease and does not offer details on the usage of the term 'osteochondritis deformans juvenilis' for idiopathic juvenile kyphosis."
-                    }
-                },
-                {
-                    "source": "crawl_sparql_wikidata",
-                    "short_answer": "No",
-                    "long_answer": "Reference: [SPARQL]. Detailed explanation based on the information provided: The context specifies that osteochondritis deformans juvenilis refers to an osteochondrosis that results in death and fracture located in the hip joint, and it is associated with Legg–Calvé–Perthes disease. There is no mention in the context of idiopathic juvenile kyphosis, indicating that the term is not commonly used to refer to that condition.",
-                    "retrieval_information": "- Reference [SPARQL]: \nosteochondritis deformans juvenilis: - osteochondrosis that results in death and fracture located in hip joint\n- Legg–Calvé–Perthes disease (description: osteochondrosis that results in death and fracture located in hip joint) - relation: Orphanet ID: 2380 (source: 2380)\n",
-                    "full_data": {
-                        "short_answer": "No",
-                        "long_answer": "Reference: [SPARQL]. Detailed explanation based on the information provided: The context specifies that osteochondritis deformans juvenilis refers to an osteochondrosis that results in death and fracture located in the hip joint, and it is associated with Legg–Calvé–Perthes disease. There is no mention in the context of idiopathic juvenile kyphosis, indicating that the term is not commonly used to refer to that condition."
-                    }
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "osteochondritis deformans juvenilis idiopathic juvenile kyphosis",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
                 }
+              }
             ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "osteochondritis deformans juvenilis idiopathic juvenile kyphosis",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
         },
-        "0": {
-            "0": {
-                "source_output": {
-                    "google": {
-                        "short_answer": "Yes",
-                        "long_answer": "Reference: [GG_4], [GG_12]. Explanation: The provided context indicates that Scheuermann's disease is also known as osteochondritis deformans juvenilis idiopathic juvenile kyphosis. In reference [GG_4] the term is explicitly used in conjunction with idiopathic juvenile kyphosis, and reference [GG_12] supports that it has been labeled as such. This confirms that the term is commonly used to refer to idiopathic juvenile kyphosis.",
-                        "retrieval_information": "-Reference: [GG_1]: A rare cause of kyphosis with low backache - “Scheuermann's disease” 25 Mar 2015 — This entity has gone by many names, but it is most frequently called Scheuermann‟s disease. There are two types of idiopathic kyphosis; Thoracic.\n-Reference: [GG_2]: Juvenile Kyphosis (Scheuermann's Disease) - Springer Link by D Schlenzka · Cited by 13 — Scheuermann's disease is a thoracic or thoracolumbar hyperkyphosis due to wedged vertebrae developing during adolescence.\n-Reference: [GG_3]: A rare cause of kyphosis with low backache - “Scheuermann's ... A rare cause of kyphosis with low backache - “Scheuermann's disease”: “Osteochondritis deformans juvenilis dorsi” · January 2015 · International Journal of ...\n-Reference: [GG_4]: Scheuermann's disease It describes a condition where the vertebrae grow unevenly with respect to the sagittal plane; that is, the posterior angle is often greater than the anterior.\n-Reference: [GG_5]: Scheuermann Disease - an overview The disease also is known as juvenile kyphosis, vertebral osteochondritis, and osteochondritis deformans juvenilis dorsi. Disc material herniated into the ...\n-Reference: [GG_6]: Pediatric Kyphosis: Scheuermann Disease and Congenital Deformity 28 Jul 2016 — Scheuermann disease is the most common cause of severe thoracic kyphosis in adolescents with reported prevalence of 1% to 8%.\n-Reference: [GG_7]: Scheuermann Disease Scheuermann disease is a skeletal osteochondrosis named for Danish surgeon Holger Scheuermann that causes abnormal bone growth and curvature of the ...\n-Reference: [GG_8]: Surgical Treatment of Spinal Deformities in Pediatric Orthopedic ... by S Braun · 2023 · Cited by 12 — The most common growth disorder that affects the sagittal profile of the spine is SD, which is also known today as juvenile osteochondritis deformans of the ...\n-Reference: [GG_9]: Pediatric Kyphosis: Scheuermann Disease and Congenital Deformity 17 Mar 2015 — Scheuermann disease is the most common cause of severe thoracic kyphosis in adolescents with reported prevalence of 1% to 8%.\n-Reference: [GG_10]: Kyphosis and review of the literature. 'Osteochondritis deformans juvenilis dorsi'. It is characterized as a rigid kyphosis predominantly in young adults caused by the osteochondritis of the ...\n-Reference: [GG_11]: Surgical Treatment of Spinal Deformities in Pediatric Orthopedic ... by S Braun · 2023 · Cited by 12 — The most common growth disorder that affects the sagittal profile of the spine is SD, which is also known today as juvenile osteochondritis deformans of the ...\n-Reference: [GG_12]: TRUNK ABNORMALITIES IN ADOLESCENCE A school health ... by A Hazebroek-Kampschreur · 1993 · Cited by 1 — Scheuermann labelled the kyphosis dorsalis juvenilis as ostechondritis deformans juvenilis dorsi, now known as Scheuermann's disease.\" Scheuermann's juvenile ...\n-Reference: [GG_13]: Kyphosis and Review of the Literature by O YAMAN · 2014 · Cited by 106 — 'Osteochondritis deformans juvenilis dorsi'. It is characterized as a rigid kyphosis predominantly in young adults caused by the ...\n-Reference: [GG_14]: Scheuermann Disease 6 Mar 2024 — In 1920, Scheuermann described a painful kyphosis of the thoracic spine in a 16-year-old farmhand and named the disorder “kyphosis dorsalis ...\n-Reference: [GG_15]: Thoracic Spine Coronal cleft vertebrae are often wedge-shaped with corresponding kyphotic deformity. Differentiation is required from traumatic deformities and osteolytic ...\n-Reference: [GG_16]: The epiphyses, at birth, are composed of cartilage, cate with the diaphysis, ... former occurs more frequently in girls. VERTEBRAL EPIPHYSITIS. In 1921, Scheuermann 21 described a condition which he called osteochondritis deformans juvenilis ...\n-Reference: [GG_17]: INTRAOBSERVER AND INTEROBSERVER RELIABILITY OF ... It was also called “Osteochondritis juvenile deformans dorsi”. In this disease osteochondritis of the secondary ossification centers of the vertebrae is seen.\n-Reference: [GG_18]: A clinical and archaeological study of Schmorl's Nodes - Durham E-Theses by JM McNaught · 2006 · Cited by 7 — Schmorl's nodes are described, with anterior Schmor1's nodes causing Scheuermann's disease, a type of juvenile idiopathic kyphosis, or kyphosis dorsalis ...\n-Reference: [GG_19]: Surgical Treatment of Spinal Deformities in Pediatric Orthopedic ... by S Braun · 2023 · Cited by 12 — The most common growth disorder that affects the sagittal profile of the spine is SD, which is also known today as juvenile osteochondritis deformans of the ...\n-Reference: [GG_20]: Long-term follow-up of untreated Scheuermann's kyphosis 6 Aug 2025 — ... osteochondritis deformans juvenilis dorsi”. The true incidence of juvenile kyphosis is not known. It ranges from 1% to 8%, being more common ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Yes",
-                                "long_answer": "Reference: [GG_4], [GG_12]. Explanation: The provided context indicates that Scheuermann's disease is also known as osteochondritis deformans juvenilis idiopathic juvenile kyphosis. In reference [GG_4] the term is explicitly used in conjunction with idiopathic juvenile kyphosis, and reference [GG_12] supports that it has been labeled as such. This confirms that the term is commonly used to refer to idiopathic juvenile kyphosis.",
-                                "retrieval_information": "-Reference: [GG_1]: A rare cause of kyphosis with low backache - “Scheuermann's disease” 25 Mar 2015 — This entity has gone by many names, but it is most frequently called Scheuermann‟s disease. There are two types of idiopathic kyphosis; Thoracic.\n-Reference: [GG_2]: Juvenile Kyphosis (Scheuermann's Disease) - Springer Link by D Schlenzka · Cited by 13 — Scheuermann's disease is a thoracic or thoracolumbar hyperkyphosis due to wedged vertebrae developing during adolescence.\n-Reference: [GG_3]: A rare cause of kyphosis with low backache - “Scheuermann's ... A rare cause of kyphosis with low backache - “Scheuermann's disease”: “Osteochondritis deformans juvenilis dorsi” · January 2015 · International Journal of ...\n-Reference: [GG_4]: Scheuermann's disease It describes a condition where the vertebrae grow unevenly with respect to the sagittal plane; that is, the posterior angle is often greater than the anterior.\n-Reference: [GG_5]: Scheuermann Disease - an overview The disease also is known as juvenile kyphosis, vertebral osteochondritis, and osteochondritis deformans juvenilis dorsi. Disc material herniated into the ...\n-Reference: [GG_6]: Pediatric Kyphosis: Scheuermann Disease and Congenital Deformity 28 Jul 2016 — Scheuermann disease is the most common cause of severe thoracic kyphosis in adolescents with reported prevalence of 1% to 8%.\n-Reference: [GG_7]: Scheuermann Disease Scheuermann disease is a skeletal osteochondrosis named for Danish surgeon Holger Scheuermann that causes abnormal bone growth and curvature of the ...\n-Reference: [GG_8]: Surgical Treatment of Spinal Deformities in Pediatric Orthopedic ... by S Braun · 2023 · Cited by 12 — The most common growth disorder that affects the sagittal profile of the spine is SD, which is also known today as juvenile osteochondritis deformans of the ...\n-Reference: [GG_9]: Pediatric Kyphosis: Scheuermann Disease and Congenital Deformity 17 Mar 2015 — Scheuermann disease is the most common cause of severe thoracic kyphosis in adolescents with reported prevalence of 1% to 8%.\n-Reference: [GG_10]: Kyphosis and review of the literature. 'Osteochondritis deformans juvenilis dorsi'. It is characterized as a rigid kyphosis predominantly in young adults caused by the osteochondritis of the ...\n-Reference: [GG_11]: Surgical Treatment of Spinal Deformities in Pediatric Orthopedic ... by S Braun · 2023 · Cited by 12 — The most common growth disorder that affects the sagittal profile of the spine is SD, which is also known today as juvenile osteochondritis deformans of the ...\n-Reference: [GG_12]: TRUNK ABNORMALITIES IN ADOLESCENCE A school health ... by A Hazebroek-Kampschreur · 1993 · Cited by 1 — Scheuermann labelled the kyphosis dorsalis juvenilis as ostechondritis deformans juvenilis dorsi, now known as Scheuermann's disease.\" Scheuermann's juvenile ...\n-Reference: [GG_13]: Kyphosis and Review of the Literature by O YAMAN · 2014 · Cited by 106 — 'Osteochondritis deformans juvenilis dorsi'. It is characterized as a rigid kyphosis predominantly in young adults caused by the ...\n-Reference: [GG_14]: Scheuermann Disease 6 Mar 2024 — In 1920, Scheuermann described a painful kyphosis of the thoracic spine in a 16-year-old farmhand and named the disorder “kyphosis dorsalis ...\n-Reference: [GG_15]: Thoracic Spine Coronal cleft vertebrae are often wedge-shaped with corresponding kyphotic deformity. Differentiation is required from traumatic deformities and osteolytic ...\n-Reference: [GG_16]: The epiphyses, at birth, are composed of cartilage, cate with the diaphysis, ... former occurs more frequently in girls. VERTEBRAL EPIPHYSITIS. In 1921, Scheuermann 21 described a condition which he called osteochondritis deformans juvenilis ...\n-Reference: [GG_17]: INTRAOBSERVER AND INTEROBSERVER RELIABILITY OF ... It was also called “Osteochondritis juvenile deformans dorsi”. In this disease osteochondritis of the secondary ossification centers of the vertebrae is seen.\n-Reference: [GG_18]: A clinical and archaeological study of Schmorl's Nodes - Durham E-Theses by JM McNaught · 2006 · Cited by 7 — Schmorl's nodes are described, with anterior Schmor1's nodes causing Scheuermann's disease, a type of juvenile idiopathic kyphosis, or kyphosis dorsalis ...\n-Reference: [GG_19]: Surgical Treatment of Spinal Deformities in Pediatric Orthopedic ... by S Braun · 2023 · Cited by 12 — The most common growth disorder that affects the sagittal profile of the spine is SD, which is also known today as juvenile osteochondritis deformans of the ...\n-Reference: [GG_20]: Long-term follow-up of untreated Scheuermann's kyphosis 6 Aug 2025 — ... osteochondritis deformans juvenilis dorsi”. The true incidence of juvenile kyphosis is not known. It ranges from 1% to 8%, being more common ...\n\n",
-                                "extracted_entities": "Spinal Deformities, juvenile osteochondritis deformans of the ...\n-Reference: [GG_12]: TRUNK ABNORMALITIES IN ADOLESCENCE A school health ... by A Hazebroek-Kampschreur · 1993 · Cited by 1 — Scheuermann labelled the kyphosis dorsalis juvenilis as ostechondritis deformans juvenilis dorsi, low backache - “Scheuermann's ... A rare cause of kyphosis, skeletal osteochondrosis, juvenile kyphosis, osteochondritis deformans juvenilis dorsi, Scheuermann Disease, idiopathic kyphosis, SD, GG_7, low backache - “Scheuermann's disease, vertebral osteochondritis, juvenile osteochondritis deformans of the ...\n-Reference: [GG_20]: Long-term follow-up of untreated Scheuermann's kyphosis 6 Aug 2025 — ... osteochondritis deformans juvenilis dorsi, juvenile deformans, traumatic deformities, thoracic kyphosis, juvenile osteochondritis deformans of the ...\n-Reference: [GG_9]: Pediatric Kyphosis: Scheuermann Disease, kyphosis of the thoracic spine, Osteochondritis deformans juvenilis dorsi” · January 2015 · International Journal of ...\n-Reference: [GG_4]: Scheuermann's disease, thoracic or thoracolumbar hyperkyphosis, juvenile idiopathic kyphosis, Scheuermann's Disease, osteochondritis deformans juvenilis, Scheuermann Disease Scheuermann disease, osteochondritis deformans juvenilis idiopathic juvenile kyphosis, kyphosis",
-                                "full_data": {
-                                    "short_answer": "Yes",
-                                    "long_answer": "Reference: [GG_4], [GG_12]. Explanation: The provided context indicates that Scheuermann's disease is also known as osteochondritis deformans juvenilis idiopathic juvenile kyphosis. In reference [GG_4] the term is explicitly used in conjunction with idiopathic juvenile kyphosis, and reference [GG_12] supports that it has been labeled as such. This confirms that the term is commonly used to refer to idiopathic juvenile kyphosis."
-                                }
-                            }
-                        ]
-                    },
-                    "wiki": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "Explanation: The provided context does not include any specific information linking 'osteochondritis deformans juvenilis' with idiopathic juvenile kyphosis. The context only refers to Scheuermann's disease and does not offer details on the usage of the term 'osteochondritis deformans juvenilis' for idiopathic juvenile kyphosis.",
-                        "retrieval_information": "-Reference: [WIKI_1]: Scheuermann's disease It describes a condition where the vertebrae grow unevenly with respect to the sagittal plane; that is, the posterior angle is often greater than the anterior.\n-Reference: [WIKI_2]: Wikipedia:WikiProject Medicine/Lists of pages/sandbox Mid Talk:Juvenile idiopathic arthritis; Mid Talk:Juvenile myelomonocytic ... Mid Talk:Kyphosis; Mid Talk:Kyrle disease; Mid Talk:Labial fusion; Mid Talk ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "Explanation: The provided context does not include any specific information linking 'osteochondritis deformans juvenilis' with idiopathic juvenile kyphosis. The context only refers to Scheuermann's disease and does not offer details on the usage of the term 'osteochondritis deformans juvenilis' for idiopathic juvenile kyphosis.",
-                                "retrieval_information": "-Reference: [WIKI_1]: Scheuermann's disease It describes a condition where the vertebrae grow unevenly with respect to the sagittal plane; that is, the posterior angle is often greater than the anterior.\n-Reference: [WIKI_2]: Wikipedia:WikiProject Medicine/Lists of pages/sandbox Mid Talk:Juvenile idiopathic arthritis; Mid Talk:Juvenile myelomonocytic ... Mid Talk:Kyphosis; Mid Talk:Kyrle disease; Mid Talk:Labial fusion; Mid Talk ...\n\n",
-                                "extracted_entities": "Juvenile idiopathic arthritis, Kyphosis, osteochondritis deformans juvenilis idiopathic juvenile kyphosis, Scheuermann's disease",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "Explanation: The provided context does not include any specific information linking 'osteochondritis deformans juvenilis' with idiopathic juvenile kyphosis. The context only refers to Scheuermann's disease and does not offer details on the usage of the term 'osteochondritis deformans juvenilis' for idiopathic juvenile kyphosis."
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "osteochondritis deformans juvenilis idiopathic juvenile kyphosis",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_ner_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "osteochondritis deformans juvenilis idiopathic juvenile kyphosis",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_sparql_wikidata": {
-                        "short_answer": "No",
-                        "long_answer": "Reference: [SPARQL]. Detailed explanation based on the information provided: The context specifies that osteochondritis deformans juvenilis refers to an osteochondrosis that results in death and fracture located in the hip joint, and it is associated with Legg–Calvé–Perthes disease. There is no mention in the context of idiopathic juvenile kyphosis, indicating that the term is not commonly used to refer to that condition.",
-                        "retrieval_information": "- Reference [SPARQL]: \nosteochondritis deformans juvenilis: - osteochondrosis that results in death and fracture located in hip joint\n- Legg–Calvé–Perthes disease (description: osteochondrosis that results in death and fracture located in hip joint) - relation: Orphanet ID: 2380 (source: 2380)\n",
-                        "candidate": [
-                            {
-                                "short_answer": "No",
-                                "long_answer": "Reference: [SPARQL]. Detailed explanation based on the information provided: The context specifies that osteochondritis deformans juvenilis refers to an osteochondrosis that results in death and fracture located in the hip joint, and it is associated with Legg–Calvé–Perthes disease. There is no mention in the context of idiopathic juvenile kyphosis, indicating that the term is not commonly used to refer to that condition.",
-                                "retrieval_information": "- Reference [SPARQL]: \nosteochondritis deformans juvenilis: - osteochondrosis that results in death and fracture located in hip joint\n- Legg–Calvé–Perthes disease (description: osteochondrosis that results in death and fracture located in hip joint) - relation: Orphanet ID: 2380 (source: 2380)\n",
-                                "extracted_entities": "osteochondritis deformans juvenilis idiopathic juvenile kyphosis",
-                                "full_data": {
-                                    "short_answer": "No",
-                                    "long_answer": "Reference: [SPARQL]. Detailed explanation based on the information provided: The context specifies that osteochondritis deformans juvenilis refers to an osteochondrosis that results in death and fracture located in the hip joint, and it is associated with Legg–Calvé–Perthes disease. There is no mention in the context of idiopathic juvenile kyphosis, indicating that the term is not commonly used to refer to that condition."
-                                }
-                            }
-                        ]
-                    }
-                },
-                "question": "Is the term osteochondritis deformans juvenilis commonly used to refer to idiopathic juvenile kyphosis?",
-                "search_keyword": "osteochondritis deformans juvenilis idiopathic juvenile kyphosis"
-            }
-        }
+        "question": "Is the term osteochondritis deformans juvenilis commonly used to refer to idiopathic juvenile kyphosis?",
+        "search_keyword": "osteochondritis deformans juvenilis idiopathic juvenile kyphosis"
+      }
     }
+  }
 }

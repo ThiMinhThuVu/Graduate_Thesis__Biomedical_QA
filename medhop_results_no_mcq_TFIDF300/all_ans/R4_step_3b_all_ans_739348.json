@@ -22,38 +22,7 @@
       "prefix": "",
       "name": "",
       "suffix": "",
-      "candidate": [
-        {
-          "source": "google",
-          "short_answer": "No",
-          "long_answer": "Reference: [GG_1]. Explanation: The provided context includes a case report in Reference GG_1 documenting keloid scar formation following cardiac surgery. This finding indicates that scar formation, including keloids, can occur following heart-related procedures, which suggests that individuals with keloid disorder can indeed be at risk. Therefore, it is not true that individuals with keloid disorder are not at risk of developing keloids following a heart transplant.",
-          "retrieval_information": "-Reference: [GG_1]: Presentation and management of keloid scarring following median ... by R Patel · 2010 · Cited by 6 — We present a case of keloid scar formation following cardiac surgery including our management and the final aesthetic result.\n-Reference: [GG_2]: Keloid scars: Advanced therapies and research to break the 'overhealing ... 18 Sept 2019 — Patients who develop keloids, might wind up with scars much larger in width and height than the original injury. Over months or years, scars can ...\n-Reference: [GG_3]: Hypertrophic Scarring and Keloids: Epidemiology, Molecular ... by X Fang · 2025 · Cited by 3 — Wounds located in high-tension areas, such as the shoulders, anterior chest, and joints, are more likely to develop into HTS or keloids because ...\n-Reference: [GG_4]: Trichilemmal Carcinoma of the Skin Mimicking a Keloid in a Heart ... by J Kanitakis · 2007 · Cited by 17 — It is well documented that organ transplant recipients (OTRs) have an increased risk to develop skin cancers, with squamous cell carcinomas being the most ...\n-Reference: [GG_5]: Keloids and hypertrophic scars by R Ogawa · Cited by 4 — The risk of developing a hypertrophic scar or keloid increases when the healing time is longer than three weeks. This can be achieved by keeping ...\n-Reference: [GG_6]: Spontaneous Keloids: A Rare Entity 2 Sept 2022 — Purpose:Keloid scars are a benign fibroproliferative disorder resulting from tissue scar inflammation and abnormal collagen accumulation.\n-Reference: [GG_7]: Recent Progress in Keloid Mechanism and Treatment: A Comprehensive ... by L Merlino · 2025 — While most keloids remain isolated lesions, some patients may develop multiple keloids, a condition known as generalized keloid disorder. This condition can ...\n-Reference: [GG_8]: Post-Sternotomy Scarring: Current Challenges and Treatment ... However, one of the common post-operative complications is the development of hypertrophic scars (HTS) and keloids at the incision site.\n-Reference: [GG_9]: The Relationship between Proliferative Scars and Endothelial ... by M Ziyrek · 2015 · Cited by 9 — This study showed that endothalial dysfunction, which is strongly correlated with atherosclerosis, was more prominent in patients with proliferative scars.\n-Reference: [GG_10]: Keloid - Formation - Treatment - Risk Factors 31 Aug 2025 — The major risk factors for keloid formation are: Ethnicity – most common in Black African or Caribbean and Asian populations ...\n\n"
-        },
-        {
-          "source": "wiki",
-          "short_answer": "Insufficient information",
-          "long_answer": "The provided context only contains information about the TV series 'Dr. Pimple Popper' and does not include any specific details regarding the risk of developing keloids following a heart transplant in individuals with keloid disorder.",
-          "retrieval_information": "-Reference: [WIKI_1]: Dr. Pimple Popper (TV series) - Wikipedia The series, starring dermatologist and Internet celebrity Dr. Sandra Lee, follows her as she treats patients with unusual cases of facial and skin disorders at ...\n\n"
-        },
-        {
-          "source": "crawl_wiki",
-          "short_answer": "insufficient information",
-          "long_answer": "No context",
-          "retrieval_information": ""
-        },
-        {
-          "source": "crawl_ner_wiki",
-          "short_answer": "insufficient information",
-          "long_answer": "No context",
-          "retrieval_information": ""
-        },
-        {
-          "source": "crawl_sparql_wikidata",
-          "short_answer": "Insufficient information",
-          "long_answer": "The context provided contains only a brief definition and references related to heart transplant procedures and does not include any specific information regarding the risk of developing keloids following a heart transplant in individuals with keloid disorder. Therefore, based on the provided context, the question cannot be answered.",
-          "retrieval_information": "- Reference [SPARQL]: \nheart transplant: - surgical transplant procedure performed on patients with end-stage heart failure or severe coronary artery disease in which a new heart is implanted\n- journal\n- clinical trial\n- clinical trial\n- clinical trial\n- clinical trial\n- clinical trial\n"
-        }
-      ]
+      "candidate": []
     },
     "0": {
       "0": {

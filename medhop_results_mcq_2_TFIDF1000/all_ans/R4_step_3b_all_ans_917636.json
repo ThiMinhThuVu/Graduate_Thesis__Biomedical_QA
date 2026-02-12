@@ -1,140 +1,68 @@
 {
-    "QIDX": "917636",
-    "original_question": "Is the size of a nodule associated with eumycetoma typically less than 1 cm?",
-    "type_q": "direct",
-    "focus_spacy_based_entity_label": [
-        "DISEASE",
-        "CHEMICAL"
-    ],
-    "target_answer_type": "correctness",
-    "key_entities": [
-        "eumycetoma"
-    ],
-    "1": {
-        "final_qi": {
-            "question": "Is the size of a nodule associated with eumycetoma typically less than 1 cm?",
-            "search_keyword": "nodule size eumycetoma less than 1 cm association",
-            "short_answer": "",
-            "long_answer": "",
+  "QIDX": "917636",
+  "original_question": "Is the size of a nodule associated with eumycetoma typically less than 1 cm?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "eumycetoma"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is the size of a nodule associated with eumycetoma typically less than 1 cm?",
+      "search_keyword": "nodule size eumycetoma less than 1 cm association",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
             "retrieval_information": "",
-            "prefix": "",
-            "name": "",
-            "suffix": "",
             "candidate": [
-                {
-                    "source": "google",
-                    "short_answer": "No",
-                    "long_answer": "Reference: [GG_1], [GG_3], [GG_5], [GG_7]. Explanation: The context explains that eumycetoma lesions vary significantly in size, from small nodes less than 5 cm to large tumor‐like masses over 10 cm. Although some case series (e.g., [GG_5] and [GG_7]) report nodules ranging from 0.5 to 1 cm, another case ([GG_3]) describes a nodule measuring approximately 1.5×1 cm. This variability indicates that nodules associated with eumycetoma are not typically less than 1 cm.",
-                    "retrieval_information": "-Reference: [GG_1]: Eumycetoma: pathogenesis, current treatments, and the search for new ... by D El Yachioui · 2025 · Cited by 1 — 2016). Lesions differ significantly in size, ranging from small nodes less than 5 cm to a large tumor-like growth > 10 cm (Siddig et al. 2023) ...\n-Reference: [GG_2]: Eumycetoma: pathogenesis, current treatments, and the search for new ... by DE Yachioui · 2025 · Cited by 1 — Eumycetoma is characterized by chronic subcutaneous swelling, the formation of grains, and progressive tissue destruction. If left untreated, it ...\n-Reference: [GG_3]: Diagnosis and Management of a Long-Standing Eumycetoma of the Wrist by AA Mohamed · 2026 — Examination of the right hand revealed a firm, non-tender, nodular lump measuring approximately 1.5×1 cm. It was located on the ventral ...\n-Reference: [GG_4]: Eumycetoma: pathogenesis, current treatments, and the search for new ... by D El Yachioui · 2025 · Cited by 1 — Lesions differ significantly in size, rang- ing from small nodes less than 5 cm to a large tumor-like growth > 10 cm (Siddig et al. 2023) ...\n-Reference: [GG_5]: Unravelling the challenges of mycetoma: a case series ... by M Mathur · 2025 · Cited by 4 — Nodules ranged in size from 0.5 to 1 cm in diameter (Figure 1a, c). The condition was misdiagnosed as eumycetoma and treated with antifungal ...\n-Reference: [GG_6]: Eumycetoma 2025 · Cited by 1 — Lesions differ significantly in size, rang- ing from small nodes less than 5 cm to a large tumor-like growth > 10 cm (Siddig et al. 2023) ...\n-Reference: [GG_7]: Unravelling the challenges of mycetoma: a case series ... by M Mathur · 2025 · Cited by 4 — Nodules ranged in size from 0.5 to 1 cm in diameter (Figure 1a, c). The condition was misdiagnosed as eumycetoma and treated with antifungal ...\n-Reference: [GG_8]: Madurella mycetomatis infection of the buttock in an Eritrean refugee in ... 1 Dec 2019 — Mycetoma is a chronic subcutaneous infectious disease usually found on the extremities. The infection can be caused by a variety of bacteria ...\n-Reference: [GG_9]: (PDF) Eumycetoma: pathogenesis, current treatments, and the search for ... 7 Aug 2025 — Mycetoma is more than just a chronic skin infection caused by fungi (eumycetoma) ... Smaller mycetoma lesions, measuring less than 5 cm, were less ...\n-Reference: [GG_10]: Mycetoma Due to Rare Fungus 7 Feb 2025 — The swelling was studded with multiple nodules with haemorrhagic crusts of size 0.5 × 0.5 cm and discharging sinuses [Figure 1]. There was ...\n\n",
-                    "full_data": {
-                        "short_answer": "No",
-                        "long_answer": "Reference: [GG_1], [GG_3], [GG_5], [GG_7]. Explanation: The context explains that eumycetoma lesions vary significantly in size, from small nodes less than 5 cm to large tumor‐like masses over 10 cm. Although some case series (e.g., [GG_5] and [GG_7]) report nodules ranging from 0.5 to 1 cm, another case ([GG_3]) describes a nodule measuring approximately 1.5×1 cm. This variability indicates that nodules associated with eumycetoma are not typically less than 1 cm."
-                    }
-                },
-                {
-                    "source": "crawl_sparql_wikidata",
-                    "short_answer": "Insufficient information",
-                    "long_answer": "The provided context only states that eumycetoma is a chronic granulomatous fungal disease of humans. It does not include any details regarding the size of a nodule or whether it is typically less than 1 cm.",
-                    "retrieval_information": "- Reference [SPARQL]: \neumycetoma: - chronic granulomatous fungal disease of humans\n",
-                    "full_data": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context only states that eumycetoma is a chronic granulomatous fungal disease of humans. It does not include any details regarding the size of a nodule or whether it is typically less than 1 cm."
-                    }
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "eumycetoma",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
                 }
+              }
             ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "eumycetoma",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
         },
-        "0": {
-            "0": {
-                "source_output": {
-                    "google": {
-                        "short_answer": "No",
-                        "long_answer": "Reference: [GG_1], [GG_3], [GG_5], [GG_7]. Explanation: The context explains that eumycetoma lesions vary significantly in size, from small nodes less than 5 cm to large tumor‐like masses over 10 cm. Although some case series (e.g., [GG_5] and [GG_7]) report nodules ranging from 0.5 to 1 cm, another case ([GG_3]) describes a nodule measuring approximately 1.5×1 cm. This variability indicates that nodules associated with eumycetoma are not typically less than 1 cm.",
-                        "retrieval_information": "-Reference: [GG_1]: Eumycetoma: pathogenesis, current treatments, and the search for new ... by D El Yachioui · 2025 · Cited by 1 — 2016). Lesions differ significantly in size, ranging from small nodes less than 5 cm to a large tumor-like growth > 10 cm (Siddig et al. 2023) ...\n-Reference: [GG_2]: Eumycetoma: pathogenesis, current treatments, and the search for new ... by DE Yachioui · 2025 · Cited by 1 — Eumycetoma is characterized by chronic subcutaneous swelling, the formation of grains, and progressive tissue destruction. If left untreated, it ...\n-Reference: [GG_3]: Diagnosis and Management of a Long-Standing Eumycetoma of the Wrist by AA Mohamed · 2026 — Examination of the right hand revealed a firm, non-tender, nodular lump measuring approximately 1.5×1 cm. It was located on the ventral ...\n-Reference: [GG_4]: Eumycetoma: pathogenesis, current treatments, and the search for new ... by D El Yachioui · 2025 · Cited by 1 — Lesions differ significantly in size, rang- ing from small nodes less than 5 cm to a large tumor-like growth > 10 cm (Siddig et al. 2023) ...\n-Reference: [GG_5]: Unravelling the challenges of mycetoma: a case series ... by M Mathur · 2025 · Cited by 4 — Nodules ranged in size from 0.5 to 1 cm in diameter (Figure 1a, c). The condition was misdiagnosed as eumycetoma and treated with antifungal ...\n-Reference: [GG_6]: Eumycetoma 2025 · Cited by 1 — Lesions differ significantly in size, rang- ing from small nodes less than 5 cm to a large tumor-like growth > 10 cm (Siddig et al. 2023) ...\n-Reference: [GG_7]: Unravelling the challenges of mycetoma: a case series ... by M Mathur · 2025 · Cited by 4 — Nodules ranged in size from 0.5 to 1 cm in diameter (Figure 1a, c). The condition was misdiagnosed as eumycetoma and treated with antifungal ...\n-Reference: [GG_8]: Madurella mycetomatis infection of the buttock in an Eritrean refugee in ... 1 Dec 2019 — Mycetoma is a chronic subcutaneous infectious disease usually found on the extremities. The infection can be caused by a variety of bacteria ...\n-Reference: [GG_9]: (PDF) Eumycetoma: pathogenesis, current treatments, and the search for ... 7 Aug 2025 — Mycetoma is more than just a chronic skin infection caused by fungi (eumycetoma) ... Smaller mycetoma lesions, measuring less than 5 cm, were less ...\n-Reference: [GG_10]: Mycetoma Due to Rare Fungus 7 Feb 2025 — The swelling was studded with multiple nodules with haemorrhagic crusts of size 0.5 × 0.5 cm and discharging sinuses [Figure 1]. There was ...\n\n",
-                        "candidate": [
-                            {
-                                "short_answer": "No",
-                                "long_answer": "Reference: [GG_1], [GG_3], [GG_5], [GG_7]. Explanation: The context explains that eumycetoma lesions vary significantly in size, from small nodes less than 5 cm to large tumor‐like masses over 10 cm. Although some case series (e.g., [GG_5] and [GG_7]) report nodules ranging from 0.5 to 1 cm, another case ([GG_3]) describes a nodule measuring approximately 1.5×1 cm. This variability indicates that nodules associated with eumycetoma are not typically less than 1 cm.",
-                                "retrieval_information": "-Reference: [GG_1]: Eumycetoma: pathogenesis, current treatments, and the search for new ... by D El Yachioui · 2025 · Cited by 1 — 2016). Lesions differ significantly in size, ranging from small nodes less than 5 cm to a large tumor-like growth > 10 cm (Siddig et al. 2023) ...\n-Reference: [GG_2]: Eumycetoma: pathogenesis, current treatments, and the search for new ... by DE Yachioui · 2025 · Cited by 1 — Eumycetoma is characterized by chronic subcutaneous swelling, the formation of grains, and progressive tissue destruction. If left untreated, it ...\n-Reference: [GG_3]: Diagnosis and Management of a Long-Standing Eumycetoma of the Wrist by AA Mohamed · 2026 — Examination of the right hand revealed a firm, non-tender, nodular lump measuring approximately 1.5×1 cm. It was located on the ventral ...\n-Reference: [GG_4]: Eumycetoma: pathogenesis, current treatments, and the search for new ... by D El Yachioui · 2025 · Cited by 1 — Lesions differ significantly in size, rang- ing from small nodes less than 5 cm to a large tumor-like growth > 10 cm (Siddig et al. 2023) ...\n-Reference: [GG_5]: Unravelling the challenges of mycetoma: a case series ... by M Mathur · 2025 · Cited by 4 — Nodules ranged in size from 0.5 to 1 cm in diameter (Figure 1a, c). The condition was misdiagnosed as eumycetoma and treated with antifungal ...\n-Reference: [GG_6]: Eumycetoma 2025 · Cited by 1 — Lesions differ significantly in size, rang- ing from small nodes less than 5 cm to a large tumor-like growth > 10 cm (Siddig et al. 2023) ...\n-Reference: [GG_7]: Unravelling the challenges of mycetoma: a case series ... by M Mathur · 2025 · Cited by 4 — Nodules ranged in size from 0.5 to 1 cm in diameter (Figure 1a, c). The condition was misdiagnosed as eumycetoma and treated with antifungal ...\n-Reference: [GG_8]: Madurella mycetomatis infection of the buttock in an Eritrean refugee in ... 1 Dec 2019 — Mycetoma is a chronic subcutaneous infectious disease usually found on the extremities. The infection can be caused by a variety of bacteria ...\n-Reference: [GG_9]: (PDF) Eumycetoma: pathogenesis, current treatments, and the search for ... 7 Aug 2025 — Mycetoma is more than just a chronic skin infection caused by fungi (eumycetoma) ... Smaller mycetoma lesions, measuring less than 5 cm, were less ...\n-Reference: [GG_10]: Mycetoma Due to Rare Fungus 7 Feb 2025 — The swelling was studded with multiple nodules with haemorrhagic crusts of size 0.5 × 0.5 cm and discharging sinuses [Figure 1]. There was ...\n\n",
-                                "extracted_entities": "GG_7, D El Yachioui, skin infection, mycetomatis infection, swelling, AA, mycetoma, haemorrhagic, eumycetoma, infection, mycetoma lesions",
-                                "full_data": {
-                                    "short_answer": "No",
-                                    "long_answer": "Reference: [GG_1], [GG_3], [GG_5], [GG_7]. Explanation: The context explains that eumycetoma lesions vary significantly in size, from small nodes less than 5 cm to large tumor‐like masses over 10 cm. Although some case series (e.g., [GG_5] and [GG_7]) report nodules ranging from 0.5 to 1 cm, another case ([GG_3]) describes a nodule measuring approximately 1.5×1 cm. This variability indicates that nodules associated with eumycetoma are not typically less than 1 cm."
-                                }
-                            }
-                        ]
-                    },
-                    "wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "eumycetoma",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "eumycetoma",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_ner_wiki": {
-                        "short_answer": "insufficient information",
-                        "long_answer": "No context",
-                        "retrieval_information": "",
-                        "candidate": [
-                            {
-                                "short_answer": "insufficient information",
-                                "long_answer": "No context",
-                                "retrieval_information": "",
-                                "extracted_entities": "eumycetoma",
-                                "full_data": {
-                                    "short_answer": "insufficient information",
-                                    "long_answer": "No context"
-                                }
-                            }
-                        ]
-                    },
-                    "crawl_sparql_wikidata": {
-                        "short_answer": "Insufficient information",
-                        "long_answer": "The provided context only states that eumycetoma is a chronic granulomatous fungal disease of humans. It does not include any details regarding the size of a nodule or whether it is typically less than 1 cm.",
-                        "retrieval_information": "- Reference [SPARQL]: \neumycetoma: - chronic granulomatous fungal disease of humans\n",
-                        "candidate": [
-                            {
-                                "short_answer": "Insufficient information",
-                                "long_answer": "The provided context only states that eumycetoma is a chronic granulomatous fungal disease of humans. It does not include any details regarding the size of a nodule or whether it is typically less than 1 cm.",
-                                "retrieval_information": "- Reference [SPARQL]: \neumycetoma: - chronic granulomatous fungal disease of humans\n",
-                                "extracted_entities": "eumycetoma",
-                                "full_data": {
-                                    "short_answer": "Insufficient information",
-                                    "long_answer": "The provided context only states that eumycetoma is a chronic granulomatous fungal disease of humans. It does not include any details regarding the size of a nodule or whether it is typically less than 1 cm."
-                                }
-                            }
-                        ]
-                    }
-                },
-                "question": "Is the size of a nodule associated with eumycetoma typically less than 1 cm?",
-                "search_keyword": "nodule size eumycetoma less than 1 cm association"
-            }
-        }
+        "question": "Is the size of a nodule associated with eumycetoma typically less than 1 cm?",
+        "search_keyword": "nodule size eumycetoma less than 1 cm association"
+      }
     }
+  }
 }
