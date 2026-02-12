@@ -49,7 +49,8 @@ def load_pubmed_model():
 
 def detect_source_flags(cluster_sources):
     families = {SOURCE_FAMILY.get(src, src) for src, _ in cluster_sources}
-    return "dense" in families, "wiki" in families, families
+    # return "dense" in families, "wiki" in families, families
+    return "dense" in families, "wiki" in families, "search" in families, families
 
 def cluster_cohesion(embeds):
     """
@@ -101,7 +102,12 @@ def collect_wh_candidates(base_paths, dict_golden, run_type=None):
                 for cand in data.get("create_mcq", []):
                     ans = cand.get("short_answer", "").strip().lower()
                     if ans and ans != "insufficient information":
-                        # ans = postprocessing(ans)
+                        if ans in mapping_data:
+                            ans = mapping_data.get(ans, ans)
+                        else:
+                            ans = postprocessing(ans)
+                            ans = mapping_data.get(ans, ans)
+                            
                         candidates.append({
                             "qidx": qidx,
                             "text": ans,
@@ -121,7 +127,11 @@ def collect_wh_candidates(base_paths, dict_golden, run_type=None):
                     for i_c, cand in enumerate(res.get("candidate", [])):
                         ans = cand.get("short_answer", "").lower()
                         if ans and ans != "insufficient information":
-                            # ans = postprocessing(ans)
+                            if ans in mapping_data:
+                                ans = mapping_data.get(ans, ans)
+                            else:
+                                ans = postprocessing(ans)
+                                ans = mapping_data.get(ans, ans)
                             candidates.append({
                                 "qidx": qidx,
                                 "text": ans,
@@ -161,12 +171,16 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
             c = cand_list[0]
             family = SOURCE_FAMILY.get(c["source"], c["source"])
 
-            # if family in ["dense"]:
+            # if family in ["search"]:
+            #     final_ans = c["text"]
+            #     norm_ans = final_ans
+            # else:
+            #     continue
             final_ans = c["text"]
-            
+            norm_ans = final_ans
             #THUVTM
-            final_ans = postprocessing(final_ans)
-            norm_ans = postprocessing(final_ans)
+            # final_ans = postprocessing(final_ans)
+            # norm_ans = postprocessing(final_ans)
 
             is_correct = final_ans in qidx_meta[qidx]["golden"]
             is_correct_norm = norm_ans in qidx_meta[qidx]["golden"]
@@ -222,11 +236,14 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
             evidence_count = len(indices)
 
             cluster_sources = {(cand_list[i]["source"], cand_list[i]["run"]) for i in indices}
-            has_dense, has_wiki, families = detect_source_flags(cluster_sources)
+            has_dense, has_wiki, has_gg, families = detect_source_flags(cluster_sources)
             num_families = len(families)
 
-            # if not ((evidence_count >= 2)): # or (evidence_count >= 3 and has_dense and has_wiki)):
-            if not ((evidence_count >= 6) or (evidence_count >= 4 and has_dense and has_wiki)):
+            # if not ((evidence_count >= 3 and num_families >= 2) or (evidence_count >= 2 and has_dense and has_wiki)): 
+            if not ((evidence_count >= 3 and has_dense and has_wiki) or (evidence_count >= 2 and has_dense and has_wiki) or ((evidence_count >= 2 and has_dense and has_gg))): 
+            # if not (evidence_count == 2 and has_dense and has_gg):
+            # if not (evidence_count >= 3 and has_dense and has_wiki):
+            # if not ((evidence_count >= 6) or (evidence_count >= 4 and has_dense and has_wiki)):
             # if not ((evidence_count >= 4) or (evidence_count >= 3 and has_dense and has_wiki) or (evidence_count == 2 and has_wiki)):
             # if not (
             #     (evidence_count >= 4) or
@@ -406,7 +423,7 @@ if __name__ == "__main__":
     print(
         f"  Correct (raw)         : {correct_raw} \n"
         f"  Correct (norm)        : {correct_norm} \n")
-    print(f"Accuracy (raw)  : {stats['accuracy']*100:.2f}%")
+    # print(f"Accuracy (raw)  : {stats['accuracy']*100:.2f}%")
     print(f"Accuracy (norm) : {stats['norm_accuracy']*100:.2f}%")
     
     print("\nAccuracy by evidence:")
