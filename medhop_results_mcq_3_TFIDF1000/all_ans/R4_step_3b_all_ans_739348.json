@@ -1,0 +1,70 @@
+{
+  "QIDX": "739348",
+  "original_question": "Is it true that individuals with keloid disorder are not at risk of developing keloids following a heart transplant?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "heart transplant",
+    "keloid disorder",
+    "keloids"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is it true that individuals with keloid disorder are not at risk of developing keloids following a heart transplant?",
+      "search_keyword": "keloid disorder heart transplant risk developing keloids",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "keloid disorder, keloids",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "keloid disorder, keloids",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "Is it true that individuals with keloid disorder are not at risk of developing keloids following a heart transplant?",
+        "search_keyword": "keloid disorder heart transplant risk developing keloids"
+      }
+    }
+  }
+}

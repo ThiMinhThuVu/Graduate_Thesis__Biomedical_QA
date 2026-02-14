@@ -1,0 +1,483 @@
+{
+  "106578": {
+    "short_answer": "colony-stimulating factors",
+    "long_answer": "colony-stimulating factors. Reason: These glycoproteins drive blood-cell growth and are specifically cited as being given with androgens to temporarily treat the bone-marrow failure of Fanconi anemia, matching the question’s description.",
+    "check": false,
+    "golden": [
+      "hematopoietic growth factors"
+    ]
+  },
+  "117785": {
+    "short_answer": "c2 vertebra",
+    "long_answer": "c2 vertebra. Reason: The reasoning notes that basilar invagination is characterized by upward displacement of the odontoid process of C2 through the foramen magnum, identifying the C2 vertebra as the bone specifically involved.",
+    "check": true,
+    "golden": [
+      "c2 vertebra"
+    ]
+  },
+  "134630": {
+    "short_answer": "euphorbia nivulia",
+    "long_answer": "euphorbia nivulia. Reason: The reasoning states that Euphorbia nivulia contains bilirubin—the pigment responsible for the yellow discoloration in jaundice—whereas the carrot reasoning admits its pigment (β-carotene) is different from bilirubin.",
+    "check": false,
+    "golden": [
+      "strelitzia nicolai"
+    ]
+  },
+  "157149": {
+    "short_answer": "spinal accessory nerve",
+    "long_answer": "spinal accessory nerve. Reason: This choice explicitly states that the spinal accessory nerve (cranial nerve XI) runs superficially through the posterior triangle of the neck—the common location of cystic hygromas—making it especially susceptible to injury during their surgical removal.",
+    "check": true,
+    "golden": [
+      "cranial nerve xi ",
+      "spinal accessory nerve"
+    ]
+  },
+  "184466": {
+    "short_answer": "fecal oral route",
+    "long_answer": "fecal oral route. Reason: This choice explicitly links Shigella’s main fecal–oral spread to the well-known “F-diagram,” detailing fluids, fingers, flies, food, fields, and fomites, thus most directly representing the primary transmission route.",
+    "check": true,
+    "golden": [
+      "fecal–oral route",
+      "fecal oral route"
+    ]
+  },
+  "204623": {
+    "short_answer": "achalasia",
+    "long_answer": "achalasia. Reason: Both options identify the failure of the lower esophageal sphincter to open in Triple-A syndrome, but the concise term “achalasia” directly names the condition without extra qualifiers, matching the question’s wording.",
+    "check": true,
+    "golden": [
+      "achalasia"
+    ]
+  },
+  "222137": {
+    "short_answer": "hurley's staging system",
+    "long_answer": "hurley's staging system. Reason: The chronic inflammatory skin disease described is hidradenitis suppurativa, and the provided reasoning states that its severity is staged with Hurley’s staging system, making this the classification system sought.",
+    "check": true,
+    "golden": [
+      "hurley's staging system"
+    ]
+  },
+  "224427": {
+    "short_answer": "osilodrostat",
+    "long_answer": "osilodrostat. Reason: The reasoning states that osilodrostat (brand name Isturisa) received FDA approval in March 2020 expressly for treating adults with pituitary-driven Cushing’s disease who either cannot undergo pituitary surgery or still have disease after surgery, matching the question precisely.",
+    "check": true,
+    "golden": [
+      "isturisa",
+      "osilodrostat"
+    ]
+  },
+  "230703": {
+    "short_answer": "distamycin a",
+    "long_answer": "distamycin a. Reason: The reasoning states that distamycin A, an antibiotic that binds AT-rich DNA, is specifically used to induce breakage at rare fragile sites, including the one located in the q27.2 region of the human X chromosome, whereas the aphidicolin explanation relates mainly to common fragile sites and provides weaker support for that exact location.",
+    "check": false,
+    "golden": [
+      "aphidicolin"
+    ]
+  },
+  "237915": {
+    "short_answer": "vitamin b6 deficiency",
+    "long_answer": "vitamin b6 deficiency. Reason: The question asks for a nutrient deficiency that prevents the body from synthesizing cysteine, the amino acid needed for disulfide bond formation. The second choice explicitly states that a deficiency of vitamin B6 (pyridoxine) impairs the enzymatic conversion of methionine to cysteine, directly matching the requested criterion.",
+    "check": true,
+    "golden": [
+      "vitamin b6 deficiency"
+    ]
+  },
+  "252895": {
+    "short_answer": "anosognosia",
+    "long_answer": "anosognosia. Reason: The provided reasoning states that Joseph Babinski introduced the concept of anosognosia in 1914, and that in Anton syndrome the patients’ denial of their blindness is a manifestation of this condition.",
+    "check": true,
+    "golden": [
+      "anosognosia"
+    ]
+  },
+  "260402": {
+    "short_answer": "4,977 base pair deletion",
+    "long_answer": "4,977 base pair deletion. Reason: The first choice explicitly states that the 4,977 bp mitochondrial DNA deletion is found in about one-third of CPEO patients and is the most common deletion in Kearns–Sayre syndrome, directly matching the query.",
+    "check": true,
+    "golden": [
+      "4977 bp deletion",
+      "4,977 base pair deletion"
+    ]
+  },
+  "290551": {
+    "short_answer": "calcitriol",
+    "long_answer": "calcitriol. Reason: The provided reasoning notes that xeroderma pigmentosum patients avoid sunlight, so they often supplement with vitamin D; calcitriol is identified as the biologically active form of vitamin D, directly addressing the question.",
+    "check": false,
+    "golden": [
+      "1,25-dihydroxyvitamin d3"
+    ]
+  },
+  "408853": {
+    "short_answer": "muscle phosphoglycerate mutase",
+    "long_answer": "muscle phosphoglycerate mutase. Reason: This choice directly names the deficient enzyme in GSD X (the muscle isoform of phosphoglycerate mutase) without conflating it with the gene symbol; its reasoning states that loss of this enzyme’s activity causes the disease, matching the question’s request for the enzyme involved.",
+    "check": true,
+    "golden": [
+      "pgam2",
+      "muscle phosphoglycerate mutase"
+    ]
+  },
+  "515320": {
+    "short_answer": "kidney",
+    "long_answer": "kidney. Reason: Both choices state that Barakat (HDR) syndrome involves renal disease affecting the kidneys, the blood-filtering organs; the singular form “kidney” directly satisfies the question’s wording.",
+    "check": true,
+    "golden": [
+      "kidney"
+    ]
+  },
+  "532019": {
+    "short_answer": "glycogen storage disease type vi",
+    "long_answer": "glycogen storage disease type VI. Reason: This choice explicitly states that glycogen storage disease type VI (Hers disease) was characterized in 1959 and is listed among the conditions considered in the differential diagnosis for glycogen storage disease type III, matching all elements asked in the question.",
+    "check": true,
+    "golden": [
+      "glycogen storage disease type vi"
+    ]
+  },
+  "545881": {
+    "short_answer": "arteriovenous fistula",
+    "long_answer": "arteriovenous fistula. Reason: This choice explicitly describes an abnormal artery-to-vein connection that bypasses the arteriolar bed, producing a marked fall in total peripheral resistance and a compensatory increase in cardiac output—exactly the hemodynamic effects asked about.",
+    "check": true,
+    "golden": [
+      "arteriovenous fistula"
+    ]
+  },
+  "559411": {
+    "short_answer": "early myoclonic encephalopathy",
+    "long_answer": "early myoclonic encephalopathy. Reason: The explanation for this choice directly matches all elements of the question—onset within the first three months of life and the presence of fragmentary or violent myoclonic spasms—whereas the alternative choice (infantile epileptic spasms syndrome) is noted to peak later (4–6 months) and is therefore less consistent.",
+    "check": true,
+    "golden": [
+      "early myoclonic encephalopathy"
+    ]
+  },
+  "571485": {
+    "short_answer": "panniculus",
+    "long_answer": "panniculus. Reason: The reasoning states that the panniculus is the dense subcutaneous layer of fat that can hang like an apron in the lower abdomen after rapid weight loss and is the structure that can become inflamed or sclerotic in deep morphea, matching all elements of the question.",
+    "check": true,
+    "golden": [
+      "panniculus"
+    ]
+  },
+  "632188": {
+    "short_answer": "mayer–rokitansky–küster–hauser syndrome",
+    "long_answer": "mayer–rokitansky–küster–hauser syndrome. Reason: The provided reasoning states that this congenital syndrome involves Müllerian agenesis, leading to absence of the uterus and cervix while the ovaries remain functional, resulting in normal secondary sexual development but primary amenorrhea—exactly matching the question.",
+    "check": true,
+    "golden": [
+      "mrkh syndrome"
+    ]
+  },
+  "643490": {
+    "short_answer": "sarcoglycanopathies",
+    "long_answer": "sarcoglycanopathies. Reason: The second answer choice explicitly states that limb–girdle muscular dystrophies caused by sarcoglycan gene mutations (LGMD2C, LGMD2D, LGMD2E) can show decreased dystrophin staining despite an intact dystrophin gene, directly addressing the question’s requirement.",
+    "check": true,
+    "golden": [
+      "sarcoglycanopathy",
+      "sarcoglycanopathies"
+    ]
+  },
+  "651642": {
+    "short_answer": "vesicle-mediated protein sorting",
+    "long_answer": "vesicle-mediated protein sorting. Reason: The answer choices explaining that VPS33B—the gene responsible for arthrogryposis-renal dysfunction-cholestasis syndrome—“mediates vesicle-mediated protein sorting” directly state its cellular role and match the requested function; this description is consistent and specific, making it the best choice among the options provided.",
+    "check": false,
+    "golden": [
+      "membrane vesicle trafficking",
+      "vesicle trafficking"
+    ]
+  },
+  "656117": {
+    "short_answer": "rho(d) immune globulin",
+    "long_answer": "rho(d) immune globulin. Reason: The reasoning states that immune-mediated hydrops fetalis (Rh disease) can be prevented by injecting Rho(D) immune globulin (anti-D IgG) into Rh-negative mothers, directly matching the prophylactic injection asked for.",
+    "check": true,
+    "golden": [
+      "rho (d) immune globulin",
+      "rho(d) immune globulin"
+    ]
+  },
+  "672653": {
+    "short_answer": "major depressive disorder",
+    "long_answer": "major depressive disorder. Reason: Its reasoning states that this disorder is characterized by persistent low mood and aversion to activities and explicitly notes that research has linked it to hypertension, directly matching the question’s requirements.",
+    "check": true,
+    "golden": [
+      "depression"
+    ]
+  },
+  "689063": {
+    "short_answer": "cytochrome p450 1a2",
+    "long_answer": "cytochrome p450 1a2. Reason: Its reasoning states that Cytochrome P450 1A2 (CYP1A2) is encoded on chromosome 15 and is central to the metabolism of xenobiotics such as toluene, matching every element asked in the question.",
+    "check": true,
+    "golden": [
+      "cyp1a2"
+    ]
+  },
+  "695539": {
+    "short_answer": "hematopoietic growth factor",
+    "long_answer": "hematopoietic growth factor. Reason: The reasoning states that hematopoietic growth factors are molecules that stimulate blood-cell growth and maturation and are used as supportive therapy in Fanconi anemia, directly matching the question’s description.",
+    "check": true,
+    "golden": [
+      "hematopoietic growth factor"
+    ]
+  },
+  "707707": {
+    "short_answer": "pulmonary siderosis",
+    "long_answer": "pulmonary siderosis. Reason: The reasoning states that pulmonary siderosis results from the repeated inhalation of fine iron or rust dust particles, leading to patchy iron deposits in the alveoli—the exact description given in the question.",
+    "check": true,
+    "golden": [
+      "pulmonary siderosis",
+      "siderosis"
+    ]
+  },
+  "709773": {
+    "short_answer": "severe acute respiratory syndrome",
+    "long_answer": "severe acute respiratory syndrome. Reason: The reasoning notes that this epidemic disease first appeared in November 2002 and that lymphocytopenia is one of its distinguishing clinical findings, aligning precisely with the question’s description.",
+    "check": true,
+    "golden": [
+      "sars",
+      "severe acute respiratory syndrome"
+    ]
+  },
+  "714294": {
+    "short_answer": "p.arg4810lys",
+    "long_answer": "p.Arg4810Lys in the RNF213 gene. Reason: This answer names the specific amino-acid substitution (p.Arg4810Lys) that studies first identified in RNF213 as causing Moyamoya disease-2, satisfying the request for the particular mutation.",
+    "check": true,
+    "golden": [
+      "p.r4810k",
+      "p.arg4810lys"
+    ]
+  },
+  "725163": {
+    "short_answer": "basan syndrome",
+    "long_answer": "basan syndrome. Reason: This answer choice precisely lists all defining features specified in the question—autosomal-dominant inheritance, congenital absence of fingerprints, neonatal blisters and facial milia, extreme rarity (≈10 families), and causation by SMARCAD1 mutations on chromosome 4—using the recognized clinical name “basan syndrome.”",
+    "check": true,
+    "golden": [
+      "basan syndrome",
+      "absence of fingerprints-congenital milia syndrome"
+    ]
+  },
+  "745330": {
+    "short_answer": "p53",
+    "long_answer": "p53. Reason: The reasoning states that p53 is the tumor suppressor gene nicknamed the “guardian of the genome” and that UV-induced mutations in p53 drive the development of actinic keratoses, directly satisfying the question.",
+    "check": true,
+    "golden": [
+      "p53",
+      "tp53"
+    ]
+  },
+  "771022": {
+    "short_answer": "vibrio vulnificus",
+    "long_answer": "vibrio vulnificus. Reason: The reasoning notes that Vibrio vulnificus is a marine, salt-tolerant bacterium typically inhabiting estuaries, brackish ponds, and coastal waters and that it is documented as a cause of Fournier gangrene, directly satisfying the question’s criteria better than the alternative.",
+    "check": true,
+    "golden": [
+      "vibrio vulnificus"
+    ]
+  },
+  "782966": {
+    "short_answer": "bone marrow transplant",
+    "long_answer": "bone marrow transplant. Reason: Its reasoning explicitly notes that bone marrow transplantation is routinely used for leukemia and other marrow cancers and is also referenced as a therapeutic option in the treatment section for severe sideroblastic anemia, directly matching the procedure sought.",
+    "check": true,
+    "golden": [
+      "bone marrow transplant",
+      "bone marrow transplantation"
+    ]
+  },
+  "793771": {
+    "short_answer": "columbia university's college of physicians and surgeons.",
+    "long_answer": "columbia university's college of physicians and surgeons. Reason: Both options state that Baruch S. Blumberg earned his MD there, but the first explicitly cites a reference and fully matches the question’s wording.",
+    "check": true,
+    "golden": [
+      "columbia university"
+    ]
+  },
+  "819839": {
+    "short_answer": "cor triatriatum dextrum",
+    "long_answer": "cor triatriatum dextrum. Reason: The provided reasoning states that this rare anomaly results from complete persistence of the right sinus valve and forms a membrane within the right atrium, the chamber that also houses the coronary sinus valve, exactly matching the defect described in the question.",
+    "check": true,
+    "golden": [
+      "cor triatriatum dexter",
+      "cor triatriatum dextrum"
+    ]
+  },
+  "829837": {
+    "short_answer": "ventriculoperitoneal shunt",
+    "long_answer": "ventriculoperitoneal shunt. Reason: The reasoning states that the triad describes normal-pressure hydrocephalus and that the standard first-line therapy is placement of a ventriculoperitoneal shunt to divert cerebrospinal fluid, directly answering the question.",
+    "check": true,
+    "golden": [
+      "ventriculoperitoneal shunt"
+    ]
+  },
+  "910648": {
+    "short_answer": "lysosomes",
+    "long_answer": "lysosomes. Reason: The explanation notes that mucopolysaccharidoses arise from deficiencies in lysosomal enzymes; lysosomes themselves take part in secretion, plasma-membrane repair, apoptosis, cell signaling, and energy metabolism, matching every function named in the question. The addition of mitochondria in the other choices is not justified by the stated enzyme deficiency, making “lysosomes” the single most appropriate answer.",
+    "check": true,
+    "golden": [
+      "lysosomes"
+    ]
+  },
+  "933016": {
+    "short_answer": "tonsillectomy",
+    "long_answer": "tonsillectomy. Reason: The first answer choice directly identifies tonsillectomy as a procedure used for chronic tonsillitis and obstructive sleep apnea and notes dysgeusia as a known risk, matching the question’s requirements without adding extraneous procedures.",
+    "check": true,
+    "golden": [
+      "tonsillectomy"
+    ]
+  },
+  "947752": {
+    "short_answer": "somatic (parietal) layer",
+    "long_answer": "somatic (parietal) layer. Reason: Both choices agree that ectopia cordis results from defective formation of the ventral body wall derived from the outer (somatic/parietal) layer of the lateral plate mesoderm; this directly answers which layer is responsible.",
+    "check": true,
+    "golden": [
+      "somatic mesoderm"
+    ]
+  },
+  "954297": {
+    "short_answer": "varicella-zoster virus vasculopathy",
+    "long_answer": "varicella-zoster virus vasculopathy. Reason: The reasoning notes that reactivation of VZV can inflame cerebral vessels, producing vertebrobasilar strokes whose clinical picture includes dizziness, dysarthria, hemiparesis, and paresthesia; this condition is specifically termed VZV vasculopathy, making it the most precise VZV-related complication that fits the described symptoms.",
+    "check": false,
+    "golden": [
+      "cerebrovascular accident"
+    ]
+  },
+  "970726": {
+    "short_answer": "hydrocephalus",
+    "long_answer": "hydrocephalus. Reason: The provided reasoning states that one of the five additional factors associated with MASA syndrome is hydrocephalus, defined as the accumulation of cerebrospinal fluid in the brain, matching the condition described in the question.",
+    "check": true,
+    "golden": [
+      "hydrocephalus"
+    ]
+  },
+  "166341": {
+    "short_answer": "5 percent",
+    "long_answer": "5 percent. Reason: Both the clinical description (maternal duplication of chromosome 7 in a cystic-fibrosis patient) and the accompanying reasoning state that chromosome 7 constitutes about 5 % of the total cellular DNA; this matches the first recognized clinical case of uniparental disomy.",
+    "check": false,
+    "golden": [
+      "5-5.5%"
+    ]
+  },
+  "182169": {
+    "short_answer": "true vocal cords",
+    "long_answer": "true vocal cords. Reason: The reasoning notes that these benign tumors “most commonly arise from the squamous epithelium covering the true vocal cords,” giving the specific laryngeal structure requested.",
+    "check": true,
+    "golden": [
+      "vocal cords"
+    ]
+  },
+  "218896": {
+    "short_answer": "traumatic neuroma",
+    "long_answer": "traumatic neuroma. Reason: The first choice explicitly identifies “traumatic neuroma” as the benign proliferation that arises after surgical nerve injury and notes its common occurrence near the mental foramen, matching every element in the question.",
+    "check": true,
+    "golden": [
+      "traumatic neuroma"
+    ]
+  },
+  "287123": {
+    "short_answer": "1983",
+    "long_answer": "1983. Reason: The provided reasoning notes that, in 1983, Greenlee and Brashear first reported the involvement of cerebellar Purkinje cells in paraneoplastic cerebellar degeneration, establishing the year when the progressive loss of these cells was discovered.",
+    "check": false,
+    "golden": [
+      "1837"
+    ]
+  },
+  "355170": {
+    "short_answer": "anti-androgens",
+    "long_answer": "anti-androgens. Reason: This choice explicitly identifies the class of drugs—anti-androgens—that are described in the provided reasoning as routinely prescribed to alleviate androgen-related manifestations such as hirsutism in women with Achard–Thiers syndrome.",
+    "check": true,
+    "golden": [
+      "anti-androgens",
+      "antiandrogens"
+    ]
+  },
+  "408733": {
+    "short_answer": "1p36 deletion syndrome",
+    "long_answer": "1p36 deletion syndrome. Reason: The reasoning states that this congenital chromosomal disorder involving the 1p36 region (specifically at cytoband 1p36.12) appears in the differential diagnosis list for loin pain hematuria syndrome, satisfying the question’s requirements more specifically than the broader “copy number variation” term.",
+    "check": false,
+    "golden": [
+      "endometriosis"
+    ]
+  },
+  "442535": {
+    "short_answer": "chlorophyll",
+    "long_answer": "chlorophyll. Reason: The reasoning explicitly links a deficiency of chlorophyll—the specific pigment molecules located in and around photosystems—to the albino phenotype, matching the asked-for molecule, whereas the alternative choice is a broader category rather than a single molecule.",
+    "check": true,
+    "golden": [
+      "chlorophyll"
+    ]
+  },
+  "619326": {
+    "short_answer": "acute liver failure",
+    "long_answer": "acute liver failure. Reason: The reasoning explains that the infant with Cortes Lacassie syndrome developed acute liver failure, and that timely liver transplantation or dialysis could potentially have stopped this acute condition from worsening.",
+    "check": false,
+    "golden": [
+      "hepatorenal syndrome"
+    ]
+  },
+  "627918": {
+    "short_answer": "surgical resection of the epileptogenic focus",
+    "long_answer": "surgical resection of the epileptogenic focus. Reason: This choice explicitly identifies resection of the seizure-producing cortical area as the neurosurgical therapy for intractable epilepsy and cites evidence ([GG_2], [GG_7]) that such resection can entirely reverse Foix–Chavany–Marie syndrome when the syndrome is produced by epileptic discharges, matching the question’s requirements.",
+    "check": false,
+    "golden": [
+      "hemispherectomy"
+    ]
+  },
+  "770213": {
+    "short_answer": "james r. lupski",
+    "long_answer": "james r. lupski. Reason: This choice states that James R. Lupski is a Baylor College of Medicine professor famed for his Charcot–Marie–Tooth research and that a chromosome 17 microduplication disorder (Potocki-Lupski syndrome) is named after him, matching the question precisely.",
+    "check": true,
+    "golden": [
+      "james r. lupski"
+    ]
+  },
+  "820147": {
+    "short_answer": "dermatologie",
+    "long_answer": "dermatologie. Reason: The reasoning for this choice explicitly states that the textbook Robert Degos published in 1953 was titled “Dermatologie,” matching the requested textbook name, whereas the alternative describes the work only generically as “Degos’ treatise.”",
+    "check": true,
+    "golden": [
+      "dermatologie"
+    ]
+  },
+  "828118": {
+    "short_answer": "nodules",
+    "long_answer": "nodules. Reason: The reasoning states that the early firm lumps of Eumycetoma are described as “nodular” and are therefore medically termed nodules, directly matching the question’s description.",
+    "check": true,
+    "golden": [
+      "nodules"
+    ]
+  },
+  "132019": {
+    "short_answer": "torsional heterophoria",
+    "long_answer": "torsional heterophoria. Reason: Heterophoria by definition is a latent misalignment; specifying “torsional” identifies the rotational form that appears when binocular stimuli are removed. Adding the extra word “latent” is redundant, so “torsional heterophoria” alone best matches the asked latent torsional condition.",
+    "check": false,
+    "golden": [
+      "cyclophoria"
+    ]
+  },
+  "256957": {
+    "short_answer": "grover disease",
+    "long_answer": "grover disease. Reason: The reasoning states that Grover disease, first described by an American dermatopathologist in 1975, shows acantholysis (loss of intercellular connections) identical to that in pemphigus vulgaris and lacking in bullous pemphigoid, matching all aspects asked in the question.",
+    "check": true,
+    "golden": [
+      "grover's disease",
+      "grover disease"
+    ]
+  },
+  "619420": {
+    "short_answer": "babesiosis infection",
+    "long_answer": "babesiosis infection. Reason: The answer explains that the tetrad (“Maltese cross”) formation in erythrocytes is pathognomonic for babesiosis and therefore identifies babesiosis as the key condition to consider, matching the requested primary differential diagnosis.",
+    "check": false,
+    "golden": [
+      "malaria"
+    ]
+  },
+  "845857": {
+    "short_answer": "glycosyltransferase family",
+    "long_answer": "glycosyltransferase family. Reason: This choice correctly notes that the deficient enzyme in Andersen disease is the glycogen-branching enzyme and explicitly classifies it within the glycosyltransferase family, directly matching the requested enzyme family.",
+    "check": true,
+    "golden": [
+      "glycosyltransferases"
+    ]
+  },
+  "921794": {
+    "short_answer": "familial male-limited precocious puberty",
+    "long_answer": "familial male-limited precocious puberty. Reason: The reasoning states that this condition was described by Abraham Lincoln’s personal physician in 1852 and is characterized by unusually early puberty in boys, directly matching the question requirements.",
+    "check": true,
+    "golden": [
+      "familial male-limited precocious puberty"
+    ]
+  }
+}

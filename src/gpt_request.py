@@ -2,7 +2,7 @@ import requests
 import time
 import json
 
-from src.api_key import API_LIST_4O_mini, API_LIST_O3_mini,API_LIST_4_1_mini, API_SEARCH_GG, API_SEARCH_1
+from src.api_key import API_LIST_4O_mini, API_LIST_O3_mini,API_LIST_4_1_mini, API_SEARCH_GG, API_SEARCH_1, API_LIST_O3
 
 API_URL = "https://cf.mnapi.com/v1/chat/completions"  
 
@@ -21,6 +21,9 @@ def request_api(messages, model, temperature=0):
         max_tokens = 8192
     elif model == "gpt-4.1-mini":
         API_LIST = API_LIST_4_1_mini
+        max_tokens = 8192
+    elif model == "o3":
+        API_LIST = API_LIST_O3
         max_tokens = 8192
         
     data = {
@@ -106,9 +109,8 @@ def save_json(data, file_path):
         json.dump(data, file, ensure_ascii=False, indent=4)
         
 if __name__ == "__main__":    
-    # save_json(search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?"), "f1.json")
-    # save_json(serpshot_search_google("Is cabergoline safe to use for a patient with cholestasis who has a prolactinoma?"), "f2.json")
-    # save_json(search_google("growth-delay syndrome mutations gene"), "f2.json")
-    print("=========================")
-    save_json(search_google("flea Yersinia pestis transmission human bite"), 'search1.json')
-    
+    # Ví dụ hỏi thủ đô của Pháp bằng model o3
+    messages = [
+        {"role": "user", "content": "Thủ đô của Pháp là gì?"}
+    ]
+    print(request_api(messages, model="o3"))

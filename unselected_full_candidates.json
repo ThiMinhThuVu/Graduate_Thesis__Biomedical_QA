@@ -1,0 +1,739 @@
+{
+  "134630": {
+    "question": "Which plant species contains the same pigment responsible for the yellow discoloration observed in jaundice?",
+    "golden": [
+      "strelitzia nicolai"
+    ],
+    "candidates": [
+      {
+        "text": "carrot (daucus carota)",
+        "source": "crawl_wiki"
+      }
+    ]
+  },
+  "157149": {
+    "question": "Which cranial nerve is at risk of injury in the neck region typically associated with cystic hygromas?",
+    "golden": [
+      "cranial nerve xi ",
+      "spinal accessory nerve"
+    ],
+    "candidates": [
+      {
+        "text": "cranial nerve xi",
+        "source": "google"
+      },
+      {
+        "text": "vagus nerve",
+        "source": "crawl_ner_wiki"
+      }
+    ]
+  },
+  "230703": {
+    "question": "Which antibiotic induces breaks at the fragile site in the q27.2 region found on the human X chromosome?",
+    "golden": [
+      "aphidicolin"
+    ],
+    "candidates": [
+      {
+        "text": "distamycin a",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "aphidicolin",
+        "source": "google"
+      }
+    ]
+  },
+  "232559": {
+    "question": "Which disease, characterized by itchy red papules centered on hair follicles and typically located on the upper body, is caused by a lentivirus and is commonly associated with advanced HIV infection?",
+    "golden": [
+      "eosinophilic folliculitis"
+    ],
+    "candidates": [
+      {
+        "text": "eosinophilic folliculitis",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "aids dysmorphic syndrome",
+        "source": "google"
+      }
+    ]
+  },
+  "252895": {
+    "question": "What condition, first described by neurologist Joseph Babinski in 1914, causes patients with Anton syndrome to deny their blindness?",
+    "golden": [
+      "anosognosia"
+    ],
+    "candidates": [
+      {
+        "text": "anton–babinski syndrome",
+        "source": "wiki"
+      },
+      {
+        "text": "anton–babinski syndrome",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "anosognosia",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "anton syndrome",
+        "source": "google"
+      },
+      {
+        "text": "cortical blindness",
+        "source": "crawl_ner_wiki"
+      }
+    ]
+  },
+  "314843": {
+    "question": "Which inheritance pattern in hereditary spastic paraplegia affects males and makes females carriers?",
+    "golden": [
+      "x-linked recessive inheritance"
+    ],
+    "candidates": [
+      {
+        "text": "x-linked inheritance pattern",
+        "source": "wiki"
+      },
+      {
+        "text": "x-linked recessive inheritance",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "x-linked",
+        "source": "google"
+      }
+    ]
+  },
+  "483615": {
+    "question": "How many dismorphic sites are there between the two homologous genes that are responsible for the blue cone monochromacy?",
+    "golden": [
+      "19"
+    ],
+    "candidates": [
+      {
+        "text": "7",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "19",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "5",
+        "source": "crawl_ner_wiki"
+      }
+    ]
+  },
+  "559411": {
+    "question": "While epilepsy affects approximately 51 million people globally, what is the name of the severe form of epilepsy that occurs within the first three months of life and is characterized by fragmentary myoclonic jerks or violent myoclonic spasms during the neonatal period or early infancy?",
+    "golden": [
+      "early myoclonic encephalopathy"
+    ],
+    "candidates": [
+      {
+        "text": "ohtahara syndrome",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "infantile epileptic spasms syndrome",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "early myoclonic encephalopathy",
+        "source": "google"
+      },
+      {
+        "text": "eme",
+        "source": "google"
+      }
+    ]
+  },
+  "622659": {
+    "question": "Which medication, discovered by a Swiss chemist, may lead to biotin deficiency with prolonged use?",
+    "golden": [
+      "carbamazepine"
+    ],
+    "candidates": [
+      {
+        "text": "carbamazepine",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "valproate",
+        "source": "google"
+      }
+    ]
+  },
+  "651642": {
+    "question": "What function does the gene responsible for arthrogryposis–renal dysfunction–cholestasis syndrome mediate?",
+    "golden": [
+      "membrane vesicle trafficking",
+      "vesicle trafficking"
+    ],
+    "candidates": [
+      {
+        "text": "vesicle-mediated protein sorting in the endosome/lysosome pathway",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "vacuolar protein sorting",
+        "source": "wiki"
+      },
+      {
+        "text": "a regulator of snare-dependent membrane fusion",
+        "source": "wiki"
+      },
+      {
+        "text": "it mediates thesis of vacuoles",
+        "source": "wiki"
+      },
+      {
+        "text": "a regulator of snare-dependent membrane fusion",
+        "source": "google"
+      },
+      {
+        "text": "vesicle-mediated protein sorting",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "vesicle mediated protein sorting",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "a regulator of snare-dependent membrane trafficking",
+        "source": "google"
+      }
+    ]
+  },
+  "679390": {
+    "question": "Which medication, approved by the FDA for the treatment of thalassemia major 12 years after it received approval from EMA, is also used to treat hemochromatosis?",
+    "golden": [
+      "deferiprone"
+    ],
+    "candidates": [
+      {
+        "text": "deferasirox",
+        "source": "google"
+      },
+      {
+        "text": "deferiprone",
+        "source": "google"
+      },
+      {
+        "text": "exjade",
+        "source": "google"
+      },
+      {
+        "text": "deferiprone",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "deferoxamine",
+        "source": "crawl_wiki"
+      }
+    ]
+  },
+  "683309": {
+    "question": "What disease is commonly caused by the virus that frequently infects reactive B-cells in angioimmunoblastic T-cell lymphoma?",
+    "golden": [
+      "infectious mononucleosis"
+    ],
+    "candidates": [
+      {
+        "text": "epstein–barr virus–associated lymphoproliferative diseases",
+        "source": "wiki"
+      },
+      {
+        "text": "ebv-positive b-cell lymphoma",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "ebv+ b cell lymphomas",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "infectious mononucleosis",
+        "source": "crawl_ner_wiki"
+      }
+    ]
+  },
+  "714294": {
+    "question": "Which mutation of the specific gene was the first found to cause Moyamoya disease 2?",
+    "golden": [
+      "p.r4810k",
+      "p.arg4810lys"
+    ],
+    "candidates": [
+      {
+        "text": "p.r4810k",
+        "source": "google"
+      },
+      {
+        "text": "variation in the rnf213",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "p.arg4810lys",
+        "source": "google"
+      },
+      {
+        "text": "rnf213",
+        "source": "crawl_wiki"
+      }
+    ]
+  },
+  "859993": {
+    "question": "Which commonly used anticonvulsant medication, that is a sodium channel blocker first discovered in Switzerland, is associated with Lyell's syndrome?",
+    "golden": [
+      "carbamazepine"
+    ],
+    "candidates": [
+      {
+        "text": "carbamazepine",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "lamotrigine",
+        "source": "google"
+      }
+    ]
+  },
+  "954297": {
+    "question": "Which severe complication of the varicella-zoster virus is characterized by symptoms such as dizziness, dysarthria, hemiparesis, and paresthesia?",
+    "golden": [
+      "cerebrovascular accident"
+    ],
+    "candidates": [
+      {
+        "text": "ramsay hunt syndrome type 2",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "varicella-zoster virus vasculopathy",
+        "source": "google"
+      },
+      {
+        "text": "stroke",
+        "source": "crawl_ner_wiki"
+      }
+    ]
+  },
+  "986088": {
+    "question": "Duchenne muscular dystrophy and some forms of hereditary spastic paraplegia (HSP) are both caused by mutations of genes located on which chromosome?",
+    "golden": [
+      "x chromosome",
+      "chromosome x"
+    ],
+    "candidates": [
+      {
+        "text": "x chromosome",
+        "source": "crawl_ner_wiki"
+      }
+    ]
+  },
+  "139521": {
+    "question": "Which antiarrhythmic medication is known to cause exogenous lipid pneumonia?",
+    "golden": [
+      "amiodarone"
+    ],
+    "candidates": [
+      {
+        "text": "amiodarone",
+        "source": "google"
+      }
+    ]
+  },
+  "150243": {
+    "question": "What rare congenital multiple-anomaly syndrome is caused by a mutation in the SKI gene on chromosome 1 and is characterized by abnormally long, slender fingers referred to as 'spider fingers'?",
+    "golden": [
+      "shprintzen-goldberg syndrome"
+    ],
+    "candidates": [
+      {
+        "text": "shprintzen-goldberg syndrome",
+        "source": "google"
+      }
+    ]
+  },
+  "155398": {
+    "question": "Which gene is mutated in the disease most commonly associated with Fanconi syndrome in children?",
+    "golden": [
+      "ctns"
+    ],
+    "candidates": [
+      {
+        "text": "ctns",
+        "source": "wiki"
+      },
+      {
+        "text": "fanca",
+        "source": "google"
+      },
+      {
+        "text": "slc2a2",
+        "source": "crawl_sparql_wikidata"
+      }
+    ]
+  },
+  "166341": {
+    "question": "What percentage of the total DNA in cells is represented by the chromosome that was duplicated in the first recognized clinical case of uniparental disomy?",
+    "golden": [
+      "5-5.5%"
+    ],
+    "candidates": [
+      {
+        "text": "3.5 percent",
+        "source": "google"
+      },
+      {
+        "text": "3.5%",
+        "source": "google"
+      }
+    ]
+  },
+  "176281": {
+    "question": "At which university did the biologist and scientist who first performed Chorionic villus sampling obtain his degree in Biology?",
+    "golden": [
+      "university of milan"
+    ],
+    "candidates": [
+      {
+        "text": "university of perugia",
+        "source": "google"
+      }
+    ]
+  },
+  "182169": {
+    "question": "On which specific laryngeal structures do benign tumors from laryngeal papillomatosis commonly develop?",
+    "golden": [
+      "vocal cords"
+    ],
+    "candidates": [
+      {
+        "text": "vocal cords",
+        "source": "google"
+      },
+      {
+        "text": "laryngeal mucosa",
+        "source": "google"
+      }
+    ]
+  },
+  "218896": {
+    "question": "What type of neuroma, a benign tumor of nerve tissue, is most commonly found near the mental foramen in the oral cavity and typically results from surgical trauma to a nerve?",
+    "golden": [
+      "traumatic neuroma"
+    ],
+    "candidates": [
+      {
+        "text": "traumatic neuroma",
+        "source": "google"
+      }
+    ]
+  },
+  "285796": {
+    "question": "Which rare disease primarily affects older Black men with a body mass index of 30 or higher and is characterized by abnormal fat deposition in the pelvis resulting in a pear-shaped bladder on CT scans?",
+    "golden": [
+      "pelvic lipomatosis"
+    ],
+    "candidates": [
+      {
+        "text": "pelvic lipomatosis",
+        "source": "google"
+      }
+    ]
+  },
+  "287123": {
+    "question": "Patients with cerebellar degeneration experiences a progressive loss of a type of cells, which year was this discovered?",
+    "golden": [
+      "1837"
+    ],
+    "candidates": [
+      {
+        "text": "1938",
+        "source": "google"
+      },
+      {
+        "text": "1983",
+        "source": "google"
+      },
+      {
+        "text": "1919",
+        "source": "google"
+      }
+    ]
+  },
+  "295910": {
+    "question": "What is the most common benign tumor of the adrenal glands associated with cAMP-dependent protein kinase A signaling?",
+    "golden": [
+      "adrenocortical adenoma"
+    ],
+    "candidates": [
+      {
+        "text": "adrenocortical adenoma",
+        "source": "google"
+      }
+    ]
+  },
+  "298228": {
+    "question": "On which human chromosome is the VPS33B gene, responsible for arthrogryposis–renal dysfunction and cholestasis syndrome, located?",
+    "golden": [
+      "chromosome 15"
+    ],
+    "candidates": [
+      {
+        "text": "chromosome 15",
+        "source": "google"
+      },
+      {
+        "text": "chromosome 12",
+        "source": "crawl_sparql_wikidata"
+      }
+    ]
+  },
+  "408733": {
+    "question": "Which disease that is included in the differential diagnosis for loin pain hematuria syndrome is associated with the cytoband 1p36.12?",
+    "golden": [
+      "endometriosis"
+    ],
+    "candidates": [
+      {
+        "text": "1p36 copy number variation syndrome",
+        "source": "google"
+      },
+      {
+        "text": "chromosome 1",
+        "source": "google"
+      },
+      {
+        "text": "1p36 deletion syndrome",
+        "source": "google"
+      }
+    ]
+  },
+  "442535": {
+    "question": "Which molecules arranged in or around photosystems in plants cause albinism when deficient?",
+    "golden": [
+      "chlorophyll"
+    ],
+    "candidates": [
+      {
+        "text": "chlorophyll",
+        "source": "google"
+      }
+    ]
+  },
+  "459609": {
+    "question": "What organ is the most common site of distant metastases for cancer of the organ that houses the vocal cords?",
+    "golden": [
+      "lung"
+    ],
+    "candidates": [
+      {
+        "text": "lung",
+        "source": "google"
+      }
+    ]
+  },
+  "506722": {
+    "question": "Which surgical procedure involves making a vertical incision along the sternum to access the heart and lungs, potentially resulting in keloid scars on the chest?",
+    "golden": [
+      "median sternotomy"
+    ],
+    "candidates": [
+      {
+        "text": "median sternotomy",
+        "source": "google"
+      }
+    ]
+  },
+  "619326": {
+    "question": "In the only reported case of Cortes Lacassie syndrome, which condition experienced by the infant might have been prevented from progressing with a liver transplant or dialysis?",
+    "golden": [
+      "hepatorenal syndrome"
+    ],
+    "candidates": [
+      {
+        "text": "liver failure",
+        "source": "google"
+      }
+    ]
+  },
+  "619420": {
+    "question": "What is the primary differential diagnosis for the infection where parasites reproducing in red blood cells form groups of four that resemble a symbol used during the Crusades?",
+    "golden": [
+      "malaria"
+    ],
+    "candidates": [
+      {
+        "text": "malaria",
+        "source": "google"
+      }
+    ]
+  },
+  "623637": {
+    "question": "What is the name of the type of pneumoconiosis which resulted in 3,600 global deaths in 2015?",
+    "golden": [
+      "asbestosis"
+    ],
+    "candidates": [
+      {
+        "text": "asbestosis",
+        "source": "wiki"
+      }
+    ]
+  },
+  "627918": {
+    "question": "Which neurosurgical procedure is used to treat intractable epilepsy and can result in a complete reversal of Foix–Chavany–Marie syndrome symptoms when caused by epileptic discharges?",
+    "golden": [
+      "hemispherectomy"
+    ],
+    "candidates": [
+      {
+        "text": "surgical resection of the epileptogenic focus",
+        "source": "google"
+      },
+      {
+        "text": "insulo-opercular resection",
+        "source": "google"
+      }
+    ]
+  },
+  "654558": {
+    "question": "Which phospholipid is overproduced in Lenz–Majewski syndrome, a condition caused by an overactive phosphatidylserine synthase 1?",
+    "golden": [
+      "phosphatidylserine"
+    ],
+    "candidates": [
+      {
+        "text": "phosphatidylserine",
+        "source": "crawl_sparql_wikidata"
+      },
+      {
+        "text": "phosphatidylserine",
+        "source": "google"
+      }
+    ]
+  },
+  "660741": {
+    "question": "What dietary supplement, not yet approved by the FDA, is suggested to benefit individuals with dilated cardiomyopathy experiencing heart failure?",
+    "golden": [
+      "coenzyme q10"
+    ],
+    "candidates": [
+      {
+        "text": "carnitine",
+        "source": "google"
+      }
+    ]
+  },
+  "666700": {
+    "question": "What E number is assigned to the most bioactive form of vitamin E?",
+    "golden": [
+      "e307"
+    ],
+    "candidates": [
+      {
+        "text": "e306",
+        "source": "google"
+      }
+    ]
+  },
+  "820147": {
+    "question": "What is the name of the textbook published in 1953 by the dermatologist who first recognized Degos disease as a new clinical entity?",
+    "golden": [
+      "dermatologie"
+    ],
+    "candidates": [
+      {
+        "text": "dermatologie",
+        "source": "google"
+      },
+      {
+        "text": "degos' treatise",
+        "source": "google"
+      }
+    ]
+  },
+  "828118": {
+    "question": "What is the medical term for the small, firm lumps, typically larger than 1 cm in diameter, that appear in the early stages of Eumycetoma?",
+    "golden": [
+      "nodules"
+    ],
+    "candidates": [
+      {
+        "text": "nodules",
+        "source": "google"
+      }
+    ]
+  },
+  "845857": {
+    "question": "The enzyme that is deficient in Andersen disease belongs to which enzyme family?",
+    "golden": [
+      "glycosyltransferases"
+    ],
+    "candidates": [
+      {
+        "text": "glycosyltransferases",
+        "source": "wiki"
+      }
+    ]
+  },
+  "865090": {
+    "question": "What virus with T=16 symmetry is the leading non-genetic cause of congenital deafness and ambulatory problems due to vertical transmission?",
+    "golden": [
+      "cytomegalovirus",
+      "cmv"
+    ],
+    "candidates": [
+      {
+        "text": "cmv",
+        "source": "google"
+      }
+    ]
+  },
+  "920528": {
+    "question": "Which extremely rare genetic disorder, reported in only two siblings born to consanguineous Arab parents, is often associated with clubfoot?",
+    "golden": [
+      "ulna hypoplasia-intellectual disability syndrome"
+    ],
+    "candidates": [
+      {
+        "text": "escobar syndrome",
+        "source": "google"
+      }
+    ]
+  },
+  "921794": {
+    "question": "What medical condition, first identified in 1852 by Abraham Lincoln's personal physician, is associated with early-onset puberty in young boys?",
+    "golden": [
+      "familial male-limited precocious puberty"
+    ],
+    "candidates": [
+      {
+        "text": "familial male-limited precocious puberty",
+        "source": "google"
+      }
+    ]
+  },
+  "970294": {
+    "question": "The particularly severe disease progression observed in individuals who are chronically infected with the parasite transmitted by kissing bugs and subsequently become immunosuppressed as a result of HIV infection is characterized by inflammation and puss-filled cavities within which organ?",
+    "golden": [
+      "brain"
+    ],
+    "candidates": [
+      {
+        "text": "eye",
+        "source": "google"
+      },
+      {
+        "text": "pleural cavity",
+        "source": "wiki"
+      }
+    ]
+  }
+}

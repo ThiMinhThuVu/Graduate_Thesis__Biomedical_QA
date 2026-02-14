@@ -1,0 +1,70 @@
+{
+  "QIDX": "762048",
+  "original_question": "Could a lymphocyte count of less than 0.9 × 10⁹/L in an adult indicate the possibility of Cartilage–Hair Hypoplasia?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "Cartilage–Hair Hypoplasia",
+    "lymphocyte count",
+    "× 10⁹/L"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Could a lymphocyte count of less than 0.9 × 10⁹/L in an adult indicate the possibility of Cartilage–Hair Hypoplasia?",
+      "search_keyword": "lymphocyte count less than 0.9 × 10⁹/L Cartilage Hair Hypoplasia",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "Could a lymphocyte count of less than 0.9 × 10⁹/L in an adult indicate the possibility of Cartilage–Hair Hypoplasia?",
+        "search_keyword": "lymphocyte count less than 0.9 × 10⁹/L Cartilage Hair Hypoplasia"
+      }
+    }
+  }
+}

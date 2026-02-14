@@ -1,0 +1,115 @@
+{
+  "QIDX": "313741",
+  "original_question": "Is it incorrect that the physician who currently occupies the Cullen Endowed Chair at Baylor College of Medicine was the first to describe Potocki-Lupski Syndrome?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "Cullen Endowed Chair at Baylor College of Medicine",
+    "Potocki-Lupski Syndrome"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is it incorrect that the physician who currently occupies the Cullen Endowed Chair at Baylor College of Medicine was the first to describe Potocki-Lupski Syndrome?",
+      "search_keyword": "Cullen Endowed Chair Baylor College of Medicine first describe Potocki-Lupski Syndrome",
+      "short_answer": "Insufficient information",
+      "long_answer": "The context provides details about Dr. James R. Lupski, including his role as the Cullen Endowed Chair at Baylor College of Medicine and his connection to Potocki-Lupski syndrome (which is named after him). However, it does not explicitly state or clarify whether he was the first to describe the syndrome. Therefore, based on the provided context, there is insufficient information to answer the question.",
+      "retrieval_information": "-Reference: [GG_1]: Congratulations, Dr. James R. Lupski, 2024 Mendel Lecturer and recipient ... 25 Jul 2024 — During his career, Lupski has discovered new disease genes, had a medical condition, Potocki-Lupski syndrome, named after him and developed ...\n-Reference: [GG_2]: GENETICS The Cullen Foundation Endowed Chair in Molecular and Human Genetics ... syndrome (PSS), Smith-Magenis syndrome (SMS; deletion 17p11.2), and Potocki-Lupski ...\n-Reference: [GG_3]: Charcot Marie Tooth Cmt Syndrome Lupski (born February 22, 1957) is the Cullen Endowed Chair in Molecular Genetics and Professor in the Department of. Pediatrics at Baylor College of Medicine.\n-Reference: [GG_4]: Abstracts from the 55th European Society of Human Genetics (ESHG ... by T Milachich · 2023 · Cited by 2 — The patient we described resembled typical features of Potocki-Lupski syndrome. Conclusion: Chromosomal microtriplications are CNVs of rare occurrence, with ...\n-Reference: [GG_5]: Program Nr: 1 from the 2004 ASHG Annual Meeting Mutations in a novel ... This approach is of special interest for sporadic malformation syndromes that cannot be tackled by other mapping approaches because of reproductive lethality.\n-Reference: [GG_6]: Hereditary Peripheral Neuropathies by GKF Stægbauer — This book summarizes the clinical, genetic and biologic state of knowledge including the latest scientific advances.\n-Reference: [GG_7]: angelman syndrome critical: Topics by ... Characterization of Potocki-Lupski Syndrome (dup(17)(p11.2p11.2)) and Delineation of a Dosage-Sensitive Critical Interval That Can Convey an Autism ...\n-Reference: [GG_8]: Content Posted in 2025 - DigitalCommons@TMC IC086: Hermann Professional Building Relief Sculpture at Front Door Is by Baylor College Medicine Artist, Hermann Hospital (Houston, Tex.) File · IC086 ...\n-Reference: [GG_9]: ANNUAL REPORT “We have long-standing experience in clinically analyzing and interpreting each component in the spectrum of mutation types covered by whole genome sequencing,” ...32 pages·16 MB\n\n",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "google": {
+            "short_answer": "No",
+            "long_answer": "Reference: [GG_1], [GG_3]. Explanation: The context indicates that Dr. James R. Lupski, who currently holds the Cullen Endowed Chair at Baylor College of Medicine, has discovered new disease genes and has had Potocki-Lupski syndrome named after him. This naming convention implies that he was the first to describe the syndrome, so stating that he was the first to describe it is not incorrect.",
+            "retrieval_information": "-Reference: [GG_1]: Congratulations, Dr. James R. Lupski, 2024 Mendel Lecturer and recipient ... 25 Jul 2024 — During his career, Lupski has discovered new disease genes, had a medical condition, Potocki-Lupski syndrome, named after him and developed ...\n-Reference: [GG_2]: GENETICS The Cullen Foundation Endowed Chair in Molecular and Human Genetics ... syndrome (PSS), Smith-Magenis syndrome (SMS; deletion 17p11.2), and Potocki-Lupski ...\n-Reference: [GG_3]: Charcot Marie Tooth Cmt Syndrome Lupski (born February 22, 1957) is the Cullen Endowed Chair in Molecular Genetics and Professor in the Department of. Pediatrics at Baylor College of Medicine.\n-Reference: [GG_4]: Abstracts from the 55th European Society of Human Genetics (ESHG ... by T Milachich · 2023 · Cited by 2 — The patient we described resembled typical features of Potocki-Lupski syndrome. Conclusion: Chromosomal microtriplications are CNVs of rare occurrence, with ...\n-Reference: [GG_5]: Program Nr: 1 from the 2004 ASHG Annual Meeting Mutations in a novel ... This approach is of special interest for sporadic malformation syndromes that cannot be tackled by other mapping approaches because of reproductive lethality.\n-Reference: [GG_6]: Hereditary Peripheral Neuropathies by GKF Stægbauer — This book summarizes the clinical, genetic and biologic state of knowledge including the latest scientific advances.\n-Reference: [GG_7]: angelman syndrome critical: Topics by ... Characterization of Potocki-Lupski Syndrome (dup(17)(p11.2p11.2)) and Delineation of a Dosage-Sensitive Critical Interval That Can Convey an Autism ...\n-Reference: [GG_8]: Content Posted in 2025 - DigitalCommons@TMC IC086: Hermann Professional Building Relief Sculpture at Front Door Is by Baylor College Medicine Artist, Hermann Hospital (Houston, Tex.) File · IC086 ...\n-Reference: [GG_9]: ANNUAL REPORT “We have long-standing experience in clinically analyzing and interpreting each component in the spectrum of mutation types covered by whole genome sequencing,” ...32 pages·16 MB",
+            "candidate": [
+              {
+                "short_answer": "No",
+                "long_answer": "Reference: [GG_1], [GG_3]. Explanation: The context indicates that Dr. James R. Lupski, who currently holds the Cullen Endowed Chair at Baylor College of Medicine, has discovered new disease genes and has had Potocki-Lupski syndrome named after him. This naming convention implies that he was the first to describe the syndrome, so stating that he was the first to describe it is not incorrect.",
+                "retrieval_information": "-Reference: [GG_1]: Congratulations, Dr. James R. Lupski, 2024 Mendel Lecturer and recipient ... 25 Jul 2024 — During his career, Lupski has discovered new disease genes, had a medical condition, Potocki-Lupski syndrome, named after him and developed ...\n-Reference: [GG_2]: GENETICS The Cullen Foundation Endowed Chair in Molecular and Human Genetics ... syndrome (PSS), Smith-Magenis syndrome (SMS; deletion 17p11.2), and Potocki-Lupski ...\n-Reference: [GG_3]: Charcot Marie Tooth Cmt Syndrome Lupski (born February 22, 1957) is the Cullen Endowed Chair in Molecular Genetics and Professor in the Department of. Pediatrics at Baylor College of Medicine.\n-Reference: [GG_4]: Abstracts from the 55th European Society of Human Genetics (ESHG ... by T Milachich · 2023 · Cited by 2 — The patient we described resembled typical features of Potocki-Lupski syndrome. Conclusion: Chromosomal microtriplications are CNVs of rare occurrence, with ...\n-Reference: [GG_5]: Program Nr: 1 from the 2004 ASHG Annual Meeting Mutations in a novel ... This approach is of special interest for sporadic malformation syndromes that cannot be tackled by other mapping approaches because of reproductive lethality.\n-Reference: [GG_6]: Hereditary Peripheral Neuropathies by GKF Stægbauer — This book summarizes the clinical, genetic and biologic state of knowledge including the latest scientific advances.\n-Reference: [GG_7]: angelman syndrome critical: Topics by ... Characterization of Potocki-Lupski Syndrome (dup(17)(p11.2p11.2)) and Delineation of a Dosage-Sensitive Critical Interval That Can Convey an Autism ...\n-Reference: [GG_8]: Content Posted in 2025 - DigitalCommons@TMC IC086: Hermann Professional Building Relief Sculpture at Front Door Is by Baylor College Medicine Artist, Hermann Hospital (Houston, Tex.) File · IC086 ...\n-Reference: [GG_9]: ANNUAL REPORT “We have long-standing experience in clinically analyzing and interpreting each component in the spectrum of mutation types covered by whole genome sequencing,” ...32 pages·16 MB",
+                "full_data": {
+                  "short_answer": "No",
+                  "long_answer": "Reference: [GG_1], [GG_3]. Explanation: The context indicates that Dr. James R. Lupski, who currently holds the Cullen Endowed Chair at Baylor College of Medicine, has discovered new disease genes and has had Potocki-Lupski syndrome named after him. This naming convention implies that he was the first to describe the syndrome, so stating that he was the first to describe it is not incorrect."
+                }
+              }
+            ]
+          },
+          "wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_sparql_wikidata": {
+            "short_answer": "Insufficient information",
+            "long_answer": "The provided context does not contain any details regarding the physician who occupies the Cullen Endowed Chair at Baylor College of Medicine, nor does it address whether this individual was the first to describe Potocki-Lupski Syndrome. Therefore, we cannot determine the correctness of the statement from the available context.",
+            "retrieval_information": "- Reference [SPARQL]: \npotocki-lupski syndrome: - chromosomal duplication syndrome characterized by hypotonia, failure to thrive, mental retardation, pervasive developmental disorders and congenital anomalies that has material basis in duplication of a region of chromosome 17p11.2\n- genetic element in the species Homo sapiens\n- PTLS (description: genetic element in the species Homo sapiens) - relation: Entrez Gene ID: 100038247 (source: 100038247)\n",
+            "candidate": [
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "The provided context does not contain any details regarding the physician who occupies the Cullen Endowed Chair at Baylor College of Medicine, nor does it address whether this individual was the first to describe Potocki-Lupski Syndrome. Therefore, we cannot determine the correctness of the statement from the available context.",
+                "retrieval_information": "- Reference [SPARQL]: \npotocki-lupski syndrome: - chromosomal duplication syndrome characterized by hypotonia, failure to thrive, mental retardation, pervasive developmental disorders and congenital anomalies that has material basis in duplication of a region of chromosome 17p11.2\n- genetic element in the species Homo sapiens\n- PTLS (description: genetic element in the species Homo sapiens) - relation: Entrez Gene ID: 100038247 (source: 100038247)\n",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "The provided context does not contain any details regarding the physician who occupies the Cullen Endowed Chair at Baylor College of Medicine, nor does it address whether this individual was the first to describe Potocki-Lupski Syndrome. Therefore, we cannot determine the correctness of the statement from the available context."
+                }
+              }
+            ]
+          }
+        },
+        "question": "Is it incorrect that the physician who currently occupies the Cullen Endowed Chair at Baylor College of Medicine was the first to describe Potocki-Lupski Syndrome?",
+        "search_keyword": "Cullen Endowed Chair Baylor College of Medicine first describe Potocki-Lupski Syndrome"
+      }
+    }
+  }
+}

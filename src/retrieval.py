@@ -548,45 +548,6 @@ def crawl_wiki_page_general(
 
     return all_context
 
-# def crawl_wiki_page_raw(
-#     article_iterable,
-#     get_hash_id_func,
-#     get_link_func,
-#     cache_crawl_base,
-#     topk=3
-# ):
-#     all_context = ""
-#     cnt_wiki = 0
-
-#     for article in article_iterable:
-#         hash_id = get_hash_id_func(article)
-#         link = get_link_func(article)
-
-#         if not hash_id or not link:
-#             continue
-
-#         file_crawl = f"{cache_crawl_base}/{hash_id}"
-
-#         if os.path.exists(file_crawl):
-#             crawl_wiki = load_json(file_crawl)
-#             crawled_data = crawl_wiki.get('crawl_wiki', {}).get('html_page', {}).get(link, None)
-#             if crawled_data:
-#                 sections = crawled_data.get('sections', {})
-#                 section_texts = []
-#                 for section_name, section_info in sections.items():
-#                     contents = section_info.get('content', [])
-#                     if contents:
-#                         section_texts.append(f"{section_name}:\n" + "\n".join(contents))
-#                 full_text = "\n\n".join(section_texts)
-#                 all_context += f"Information about: {link}\n{full_text}\n-------------------\n"
-#                 cnt_wiki += 1
-#                 if cnt_wiki >= topk:
-#                     break
-#         else:
-#             continue
-
-#     return all_context
-
 def crawl_wiki_page_raw(
     article_iterable,
     get_hash_id_func,

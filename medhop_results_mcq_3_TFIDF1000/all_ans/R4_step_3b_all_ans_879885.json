@@ -1,0 +1,66 @@
+{
+  "QIDX": "879885",
+  "original_question": "What form of talk therapy can be used to treat equinophobia?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "therapy",
+  "key_entities": [],
+  "1": {
+    "final_qi": {
+      "question": "What form of talk therapy can be used to treat equinophobia?",
+      "search_keyword": "talk therapy equinophobia treatment",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "cognitive behavioral therapy",
+            "long_answer": "Reference: [CRAWL_WIKI_1]. Detailed explanation: The context explains that many treatment options are available for equinophobia and specifically mentions that cognitive behavioral therapy is a form of talk therapy effective for treating phobias, as it challenges the thought processes behind the fear.",
+            "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Equinophobia\nSection: Introduction\nEquinophobia or hippophobia is a psychological fear of horses; contrasting with equinophilia, which is the love/fondness of horses. Equinophobia is derived from Ancient Greek φόβος (phóbos), meaning \"fear\" and the Latin word equus, meaning \"horse\". The term hippophobia is also derived from the same Ancient Greek word phóbos with the prefix derived from the Ancient Greek word for horse, ἵππος (híppos).[1][2] Sufferers of equinophobia may also fear other hoofed animals such as donkeys and mules.[3] An example of the phobia can be found in Freud's psychoanalytic study of Little Hans.\nSection: Symptoms\nThe following symptoms can be exhibited when a person suffering from equinophobia either thinks of a horse or is physically near one:[4][5] Anxiety (even if the horse is considered friendly and relaxed) Anxiety (even if the horse is considered friendly and relaxed) Sudden increase in pulse rate Sudden increase in pulse rate\nSection: Causes\nNegative experiences with horses during one's childhood may give rise to this phobia. Equinophobia may also be triggered by a fall from a horse. In many cases, people begin to avoid horses and this gradually develops from fear to a serious phobia.[4][5][3] The phobia can also be caused by a simple fear of the animal itself. A horse's imposing size and weight and large teeth may scare some people, especially children.[6] Negative media portrayals of horses may add to one's fears.[5]\nSection: Treatment\nMany treatment options are available for those suffering from it. Cognitive behavioral therapy is one form of therapy for people who suffer from certain phobias. It focuses on one's fears and the reason they exist. It tries to change and challenge the thought processes behind one's fear. Studies have shown that it has been effective in treating people with equinophobia.[5][7] Convincing the patient that horses are not natural threats to humans and even humans have been predators of horses can help. During the Paleolithic, wild horses formed an important source of food for humans. In many parts of Europe, the consumption of horse meat continued throughout the Middle Ages until modern times, despite a papal ban on horse meat in 732.[8] Convincing the patient that horses are not natural threats to humans and even humans have been predators of horses can help. During the Paleolithic, wild horses formed an important source of food for humans. In many parts of Europe, the consumption of horse meat continued throughout the Middle Ages until modern times, despite a papal ban on horse meat in 732.[8]\n\n\n",
+            "candidate": [
+              {
+                "short_answer": "cognitive behavioral therapy",
+                "long_answer": "Reference: [CRAWL_WIKI_1]. Detailed explanation: The context explains that many treatment options are available for equinophobia and specifically mentions that cognitive behavioral therapy is a form of talk therapy effective for treating phobias, as it challenges the thought processes behind the fear.",
+                "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Equinophobia\nSection: Introduction\nEquinophobia or hippophobia is a psychological fear of horses; contrasting with equinophilia, which is the love/fondness of horses. Equinophobia is derived from Ancient Greek φόβος (phóbos), meaning \"fear\" and the Latin word equus, meaning \"horse\". The term hippophobia is also derived from the same Ancient Greek word phóbos with the prefix derived from the Ancient Greek word for horse, ἵππος (híppos).[1][2] Sufferers of equinophobia may also fear other hoofed animals such as donkeys and mules.[3] An example of the phobia can be found in Freud's psychoanalytic study of Little Hans.\nSection: Symptoms\nThe following symptoms can be exhibited when a person suffering from equinophobia either thinks of a horse or is physically near one:[4][5] Anxiety (even if the horse is considered friendly and relaxed) Anxiety (even if the horse is considered friendly and relaxed) Sudden increase in pulse rate Sudden increase in pulse rate\nSection: Causes\nNegative experiences with horses during one's childhood may give rise to this phobia. Equinophobia may also be triggered by a fall from a horse. In many cases, people begin to avoid horses and this gradually develops from fear to a serious phobia.[4][5][3] The phobia can also be caused by a simple fear of the animal itself. A horse's imposing size and weight and large teeth may scare some people, especially children.[6] Negative media portrayals of horses may add to one's fears.[5]\nSection: Treatment\nMany treatment options are available for those suffering from it. Cognitive behavioral therapy is one form of therapy for people who suffer from certain phobias. It focuses on one's fears and the reason they exist. It tries to change and challenge the thought processes behind one's fear. Studies have shown that it has been effective in treating people with equinophobia.[5][7] Convincing the patient that horses are not natural threats to humans and even humans have been predators of horses can help. During the Paleolithic, wild horses formed an important source of food for humans. In many parts of Europe, the consumption of horse meat continued throughout the Middle Ages until modern times, despite a papal ban on horse meat in 732.[8] Convincing the patient that horses are not natural threats to humans and even humans have been predators of horses can help. During the Paleolithic, wild horses formed an important source of food for humans. In many parts of Europe, the consumption of horse meat continued throughout the Middle Ages until modern times, despite a papal ban on horse meat in 732.[8]\n\n\n",
+                "extracted_entities": "",
+                "full_data": {
+                  "short_answer": "cognitive behavioral therapy",
+                  "long_answer": "Reference: [CRAWL_WIKI_1]. Detailed explanation: The context explains that many treatment options are available for equinophobia and specifically mentions that cognitive behavioral therapy is a form of talk therapy effective for treating phobias, as it challenges the thought processes behind the fear."
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "What form of talk therapy can be used to treat equinophobia?",
+        "search_keyword": "talk therapy equinophobia treatment"
+      }
+    }
+  }
+}

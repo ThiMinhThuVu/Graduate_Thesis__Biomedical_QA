@@ -1,0 +1,70 @@
+{
+  "QIDX": "954923",
+  "original_question": "Can benign eruptive conditions involving pigment-producing skin cells be a complication of toxic epidermal necrolysis (TEN)?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "pigment-producing skin cells",
+    "benign eruptive conditions",
+    "TEN"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Can benign eruptive conditions involving pigment-producing skin cells be a complication of toxic epidermal necrolysis (TEN)?",
+      "search_keyword": "benign eruptive conditions pigment-producing skin cells toxic epidermal necrolysis TEN complications",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "Insufficient information",
+            "long_answer": "The provided context does not contain specific information discussing benign eruptive conditions involving pigment-producing skin cells as a complication of toxic epidermal necrolysis (TEN). The context only includes general details about Wikidata short descriptions for diseases and does not address this particular complication or its association with TEN.",
+            "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n\n",
+            "candidate": [
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "The provided context does not contain specific information discussing benign eruptive conditions involving pigment-producing skin cells as a complication of toxic epidermal necrolysis (TEN). The context only includes general details about Wikidata short descriptions for diseases and does not address this particular complication or its association with TEN.",
+                "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n\n",
+                "extracted_entities": "TEN",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "The provided context does not contain specific information discussing benign eruptive conditions involving pigment-producing skin cells as a complication of toxic epidermal necrolysis (TEN). The context only includes general details about Wikidata short descriptions for diseases and does not address this particular complication or its association with TEN."
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "TEN",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "Can benign eruptive conditions involving pigment-producing skin cells be a complication of toxic epidermal necrolysis (TEN)?",
+        "search_keyword": "benign eruptive conditions pigment-producing skin cells toxic epidermal necrolysis TEN complications"
+      }
+    }
+  }
+}

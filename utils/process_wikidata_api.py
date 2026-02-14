@@ -51,7 +51,7 @@ def match_relation_id(q_relation, top_k=3, retry_topk = 5):
     topk_scores = [cos_sim[i] for i in topk_idx]
     score_max = max(topk_scores) if topk_scores else 0
 
-    # Nếu score_max < 0.5 thì lấy lại topk = 5
+    # # Nếu score_max < 0.5 thì lấy lại topk = 5
     if score_max < 0.5:
         top_k = retry_topk
         topk_idx = cos_sim.argsort()[-top_k:][::-1]

@@ -1,0 +1,69 @@
+{
+  "QIDX": "831634",
+  "original_question": "Can infections, autoimmune diseases, or cancer impact the aortopulmonary space?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "aortopulmonary space",
+    "autoimmune diseases"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Can infections, autoimmune diseases, or cancer impact the aortopulmonary space?",
+      "search_keyword": "infections autoimmune diseases cancer aortopulmonary space impact",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "infections autoimmune diseases cancer aortopulmonary space impact  ",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "infections autoimmune diseases cancer aortopulmonary space impact  ",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "Can infections, autoimmune diseases, or cancer impact the aortopulmonary space?",
+        "search_keyword": "infections autoimmune diseases cancer aortopulmonary space impact"
+      }
+    }
+  }
+}

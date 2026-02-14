@@ -1,0 +1,69 @@
+{
+  "QIDX": "453784",
+  "original_question": "Is it incorrect to argue that one of the symptoms of organic acidemias is reduced muscle resistance to stretching?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "organic acidemias",
+    "muscle resistance"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is it incorrect to argue that one of the symptoms of organic acidemias is reduced muscle resistance to stretching?",
+      "search_keyword": "organic acidemias symptoms reduced muscle resistance stretching",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "Insufficient information",
+            "long_answer": "Explanation: The provided context contains information about Wikipedia projects and reference lists related to diseases and medical articles, but it does not provide any specific details about organic acidemias or the symptom of reduced muscle resistance to stretching. Therefore, the context does not contain the information needed to answer whether it is incorrect to argue that one of the symptoms is reduced muscle resistance to stretching.",
+            "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n- Reference: [CRAWL_WIKI_2] - Information about: Wikipedia:WikiProject Medicine/Assessment/Articles to re-classify\nSection: Method\nTo find articles that are candidates for reclassification we first grab all pages in a given category (e.g. Category:Start-Class medicine articles) and identify the latest revision of the corresponding article. We then use ORES to get a prediction for what quality class that revision belongs to. If the prediction is at least two classes above (i.e. B-class or above for a category of Start-class articles), the article will be added to the list. Lastly we calculate the predicted probability that the article is above the quality class in question and use that as the default sort of our table. If there are any questions about the methodology, ping Nettrom or leave a question on his talk page.\nSection: Start-class articles\nThis table contains articles from Category:Start-Class medicine articles and is by default sorted by the predicted probability that the article is above Start-class. Articles have to be predicted to be at least B-class in order to be listed.\n\n\n",
+            "candidate": [
+              {
+                "short_answer": "Insufficient information",
+                "long_answer": "Explanation: The provided context contains information about Wikipedia projects and reference lists related to diseases and medical articles, but it does not provide any specific details about organic acidemias or the symptom of reduced muscle resistance to stretching. Therefore, the context does not contain the information needed to answer whether it is incorrect to argue that one of the symptoms is reduced muscle resistance to stretching.",
+                "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n- Reference: [CRAWL_WIKI_2] - Information about: Wikipedia:WikiProject Medicine/Assessment/Articles to re-classify\nSection: Method\nTo find articles that are candidates for reclassification we first grab all pages in a given category (e.g. Category:Start-Class medicine articles) and identify the latest revision of the corresponding article. We then use ORES to get a prediction for what quality class that revision belongs to. If the prediction is at least two classes above (i.e. B-class or above for a category of Start-class articles), the article will be added to the list. Lastly we calculate the predicted probability that the article is above the quality class in question and use that as the default sort of our table. If there are any questions about the methodology, ping Nettrom or leave a question on his talk page.\nSection: Start-class articles\nThis table contains articles from Category:Start-Class medicine articles and is by default sorted by the predicted probability that the article is above Start-class. Articles have to be predicted to be at least B-class in order to be listed.\n\n\n",
+                "extracted_entities": "",
+                "full_data": {
+                  "short_answer": "Insufficient information",
+                  "long_answer": "Explanation: The provided context contains information about Wikipedia projects and reference lists related to diseases and medical articles, but it does not provide any specific details about organic acidemias or the symptom of reduced muscle resistance to stretching. Therefore, the context does not contain the information needed to answer whether it is incorrect to argue that one of the symptoms is reduced muscle resistance to stretching."
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "Is it incorrect to argue that one of the symptoms of organic acidemias is reduced muscle resistance to stretching?",
+        "search_keyword": "organic acidemias symptoms reduced muscle resistance stretching"
+      }
+    }
+  }
+}

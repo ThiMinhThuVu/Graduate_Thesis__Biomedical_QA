@@ -1,0 +1,69 @@
+{
+  "QIDX": "514385",
+  "original_question": "What gene is mutated in the disease also known as L-glyceric acidemia, which should not be mistaken for D-glyceric acidemia?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "gene mutation",
+  "key_entities": [
+    "L-glyceric acidemia",
+    "D-glyceric acidemia"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "What gene is mutated in the disease also known as L-glyceric acidemia, which should not be mistaken for D-glyceric acidemia?",
+      "search_keyword": "L-glyceric acidemia mutated gene D-glyceric acidemia",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "GRHPR",
+            "long_answer": "Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The context specifies that L-Glyceric acidemia (also known as primary hyperoxaluria type II) is associated with mutations in the GRHPR gene, which encodes the enzyme glyoxylate reductase/hydroxypyruvate reductase. This distinguishes it from D-Glyceric acidemia, where the mutation occurs in the GLYCTK gene.",
+            "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: D-Glyceric acidemia\nSection: Introduction\nD-Glyceric Acidemia (a.k.a. D-Glyceric Aciduria) is an inherited disease, in the category of inborn errors of metabolism.  It is caused by a mutation in the gene GLYCTK, which encodes for the enzyme glycerate kinase.\nSection: Pathophysiology\nGlycerate kinase is an enzyme that catalyzes the conversion of D-glyceric acid (a.k.a. D-glycerate) to 2-phosphoglycerate.  This conversion is an intermediary reaction found in several metabolic pathways, including the degradation (break-down; catabolism) of serine,[1] as well as the breakdown of fructose.[2] Glycerate kinase is an enzyme that catalyzes the conversion of D-glyceric acid (a.k.a. D-glycerate) to 2-phosphoglycerate.  This conversion is an intermediary reaction found in several metabolic pathways, including the degradation (break-down; catabolism) of serine,[1] as well as the breakdown of fructose.[2] A deficiency in glycerate kinase activity leads to the accumulation of D-glyceric acid (a.k.a. D-glycerate) in bodily fluids and tissues.[3]  D-glyceric acid can be measured in a laboratory that performs analyte testing for organic acids in blood (plasma) and urine.[4] Symptoms of the disease (in its most severe form) include progressive neurological impairment, mental/motor retardation, hypotonia, seizures, failure to thrive and metabolic acidosis.[5] Symptoms of the disease (in its most severe form) include progressive neurological impairment, mental/motor retardation, hypotonia, seizures, failure to thrive and metabolic acidosis.[5]\nSection: Diagnosis\nD-Glyceric acidemia should not be confused with L-Glyceric acidemia (a.k.a. L-glyceric aciduria, a.k.a. primary hyperoxaluria type II[6]), which is associated with mutations in the GRHPR (encoding for the enzyme 'glyoxylate reductase/hydroxypyruvate reductase').[7][8]\n\n- Reference: [CRAWL_WIKI_2] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n\n",
+            "candidate": [
+              {
+                "short_answer": "GRHPR",
+                "long_answer": "Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The context specifies that L-Glyceric acidemia (also known as primary hyperoxaluria type II) is associated with mutations in the GRHPR gene, which encodes the enzyme glyoxylate reductase/hydroxypyruvate reductase. This distinguishes it from D-Glyceric acidemia, where the mutation occurs in the GLYCTK gene.",
+                "retrieval_information": "- Reference: [CRAWL_WIKI_1] - Information about: D-Glyceric acidemia\nSection: Introduction\nD-Glyceric Acidemia (a.k.a. D-Glyceric Aciduria) is an inherited disease, in the category of inborn errors of metabolism.  It is caused by a mutation in the gene GLYCTK, which encodes for the enzyme glycerate kinase.\nSection: Pathophysiology\nGlycerate kinase is an enzyme that catalyzes the conversion of D-glyceric acid (a.k.a. D-glycerate) to 2-phosphoglycerate.  This conversion is an intermediary reaction found in several metabolic pathways, including the degradation (break-down; catabolism) of serine,[1] as well as the breakdown of fructose.[2] Glycerate kinase is an enzyme that catalyzes the conversion of D-glyceric acid (a.k.a. D-glycerate) to 2-phosphoglycerate.  This conversion is an intermediary reaction found in several metabolic pathways, including the degradation (break-down; catabolism) of serine,[1] as well as the breakdown of fructose.[2] A deficiency in glycerate kinase activity leads to the accumulation of D-glyceric acid (a.k.a. D-glycerate) in bodily fluids and tissues.[3]  D-glyceric acid can be measured in a laboratory that performs analyte testing for organic acids in blood (plasma) and urine.[4] Symptoms of the disease (in its most severe form) include progressive neurological impairment, mental/motor retardation, hypotonia, seizures, failure to thrive and metabolic acidosis.[5] Symptoms of the disease (in its most severe form) include progressive neurological impairment, mental/motor retardation, hypotonia, seizures, failure to thrive and metabolic acidosis.[5]\nSection: Diagnosis\nD-Glyceric acidemia should not be confused with L-Glyceric acidemia (a.k.a. L-glyceric aciduria, a.k.a. primary hyperoxaluria type II[6]), which is associated with mutations in the GRHPR (encoding for the enzyme 'glyoxylate reductase/hydroxypyruvate reductase').[7][8]\n\n- Reference: [CRAWL_WIKI_2] - Information about: Wikipedia:WikiProject Short descriptions/wd/diseases\nSection: Explanation\nA list of the different distinct text descriptions currently provided on Wikidata for items in the subtree of disease (Q12136). Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. Use the 'list' link to get the full list of individual items with a particular description.  This can be used to verify what sorts of items have been given the description; to go to their article pages if one wants to add a {{short description}} to override it; or to go to their Wikidata item if one wants to edit it there. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these. See also Wikipedia:WikiProject Short descriptions/wd/diseases-autodesc for items with no description. A machine-generated description is currently shown to mobile users on Wikipedia article for these.\nSection: List\nThis list is automatically generated from data in Wikidata and is periodically updated by Listeriabot. Edits made within the list area will be removed on the next update!\n\n\n",
+                "extracted_entities": "L-glyceric acidemia, acidemia",
+                "full_data": {
+                  "short_answer": "GRHPR",
+                  "long_answer": "Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The context specifies that L-Glyceric acidemia (also known as primary hyperoxaluria type II) is associated with mutations in the GRHPR gene, which encodes the enzyme glyoxylate reductase/hydroxypyruvate reductase. This distinguishes it from D-Glyceric acidemia, where the mutation occurs in the GLYCTK gene."
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "L-glyceric acidemia, acidemia",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "What gene is mutated in the disease also known as L-glyceric acidemia, which should not be mistaken for D-glyceric acidemia?",
+        "search_keyword": "L-glyceric acidemia mutated gene D-glyceric acidemia"
+      }
+    }
+  }
+}

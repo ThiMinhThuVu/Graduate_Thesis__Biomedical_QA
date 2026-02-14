@@ -1,0 +1,69 @@
+{
+  "QIDX": "473053",
+  "original_question": "Does Grebe-type chondrodysplasia typically result in an adult height of less than 147 cm, with intelligence typically unaffected?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "Grebe-type chondrodysplasia",
+    "Does Grebe-type"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Does Grebe-type chondrodysplasia typically result in an adult height of less than 147 cm, with intelligence typically unaffected?",
+      "search_keyword": "Grebe-type chondrodysplasia adult height intelligence unaffected",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "Does Grebe-type chondrodysplasia typically result in an adult height of less than 147 cm, with intelligence typically unaffected?",
+        "search_keyword": "Grebe-type chondrodysplasia adult height intelligence unaffected"
+      }
+    }
+  }
+}

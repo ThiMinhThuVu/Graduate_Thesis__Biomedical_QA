@@ -1,0 +1,69 @@
+{
+  "QIDX": "422230",
+  "original_question": "Is it possible to reverse hearing loss caused by hypertrophic cardiomyopathy that results from the 8363G>A mutation in the MT-TK gene?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "8363G>A mutation",
+    "MT-TK gene"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is it possible to reverse hearing loss caused by hypertrophic cardiomyopathy that results from the 8363G>A mutation in the MT-TK gene?",
+      "search_keyword": "reverse hearing loss hypertrophic cardiomyopathy 8363G>A mutation MT-TK gene",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "hypertrophic cardiomyopathy, hearing loss",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "hypertrophic cardiomyopathy, hearing loss",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "Is it possible to reverse hearing loss caused by hypertrophic cardiomyopathy that results from the 8363G>A mutation in the MT-TK gene?",
+        "search_keyword": "reverse hearing loss hypertrophic cardiomyopathy 8363G>A mutation MT-TK gene"
+      }
+    }
+  }
+}

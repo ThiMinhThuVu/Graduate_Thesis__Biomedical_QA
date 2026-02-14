@@ -1,0 +1,70 @@
+{
+  "QIDX": "883181",
+  "original_question": "Is Habermann's disease commonly misdiagnosed as a highly contagious disease caused by the varicella virus?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "Habermann's disease",
+    "varicella virus",
+    "Is Habermann's"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Is Habermann's disease commonly misdiagnosed as a highly contagious disease caused by the varicella virus?",
+      "search_keyword": "Habermann's disease misdiagnosed varicella virus contagious",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "varicella, Habermann's disease",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "varicella, Habermann's disease",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "Is Habermann's disease commonly misdiagnosed as a highly contagious disease caused by the varicella virus?",
+        "search_keyword": "Habermann's disease misdiagnosed varicella virus contagious"
+      }
+    }
+  }
+}

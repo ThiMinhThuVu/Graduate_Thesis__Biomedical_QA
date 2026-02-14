@@ -37,6 +37,7 @@ def load_json(path):
         return json.load(f)
 
 mapping_data = load_json("data/mapping_answer_gol.json")
+dict_context = load_json("all_inf_direct_300.json")
 
 with open(GOLDEN_PATH, "r", encoding="utf-8") as f:
     dict_golden = json.load(f)
@@ -157,57 +158,67 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
     fused_results = {}
 
     for qidx, cand_list in grouped.items():
-
-        # if len(cand_list) < 2:
-        #     fused_results[qidx] = {
-        #         "abstain": True,
-        #         "cluster_sources": [(c["source"], c["run"]) for c in cand_list],
-        #         "evidence_count": len(cand_list),
-        #         "num_source_families": 1
-        #     }
-        #     continue
+        all_context = dict_context[qidx]
+        check_gol_in_ctx = False
+        list_golden = qidx_meta[qidx]["golden"]
         
-        if len(cand_list) == 1:
-            c = cand_list[0]
-            family = SOURCE_FAMILY.get(c["source"], c["source"])
-
-            # if family in ["search"]:
-            #     final_ans = c["text"]
-            #     norm_ans = final_ans
-            # else:
-            #     continue
-            final_ans = c["text"]
-            norm_ans = final_ans
-            #THUVTM
-            # final_ans = postprocessing(final_ans)
-            # norm_ans = postprocessing(final_ans)
-
-            is_correct = final_ans in qidx_meta[qidx]["golden"]
-            is_correct_norm = norm_ans in qidx_meta[qidx]["golden"]
-
-            answered += 1
-            acc_by_evidence[1]["total"] += 1
-            if is_correct:
-                correct += 1
-                acc_by_evidence[1]["correct"] += 1
-
-            norm_total += 1
-            if is_correct_norm:
-                norm_correct += 1
-
+        for gol in list_golden:
+            if gol in all_context:
+                check_gol_in_ctx = True
+                break
+        
+        if len(cand_list) < 2:
             fused_results[qidx] = {
-                "final_answer": final_ans,
-                "norm_ans": norm_ans,
-                "is_correct": is_correct,
-                "is_correct_norm": is_correct_norm,
-                "final_source": c["source"],
-                "final_run": c["run"],
-                "evidence_count": 1,
-                "num_source_families": 1,
-                "cluster_sources": [(c["source"], c["run"])],
-                "cohesion": 0.0,
-                "abstain": False
+                "abstain": True,
+                "cluster_sources": [(c["source"], c["run"]) for c in cand_list],
+                "evidence_count": len(cand_list),
+                "num_source_families": 1
             }
+            continue
+        
+        # if len(cand_list) == 1:
+        #     c = cand_list[0]
+        #     family = SOURCE_FAMILY.get(c["source"], c["source"])
+
+        #     # if family in ["search"]:
+        #     #     final_ans = c["text"]
+        #     #     norm_ans = final_ans
+        #     # else:
+        #     #     continue
+        #     final_ans = c["text"]
+        #     norm_ans = final_ans
+        #     #THUVTM
+        #     # final_ans = postprocessing(final_ans)
+        #     # norm_ans = postprocessing(final_ans)
+
+        #     is_correct = final_ans in list_golden
+        #     is_correct_norm = norm_ans in list_golden
+
+        #     answered += 1
+        #     acc_by_evidence[1]["total"] += 1
+        #     if is_correct:
+        #         correct += 1
+        #         acc_by_evidence[1]["correct"] += 1
+
+        #     norm_total += 1
+        #     if is_correct_norm:
+        #         norm_correct += 1
+
+        #     fused_results[qidx] = {
+        #         "final_answer": final_ans,
+        #         "norm_ans": norm_ans,
+        #         "is_correct": is_correct,
+        #         "is_correct_norm": is_correct_norm,
+        #         "final_source": c["source"],
+        #         "final_run": c["run"],
+        #         "evidence_count": 1,
+        #         "num_source_families": 1,
+        #         "cluster_sources": [(c["source"], c["run"])],
+        #         "cohesion": 0.0,
+        #         "abstain": False,
+        #         "check_gol_in_ctx": check_gol_in_ctx
+        #     }
+        
             # else:
             #     fused_results[qidx] = {
             #         "abstain": True,
@@ -240,10 +251,10 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
             num_families = len(families)
 
             # if not ((evidence_count >= 3 and num_families >= 2) or (evidence_count >= 2 and has_dense and has_wiki)): 
-            if not ((evidence_count >= 3 and has_dense and has_wiki) or (evidence_count >= 2 and has_dense and has_wiki) or ((evidence_count >= 2 and has_dense and has_gg))): 
+            # if not ((evidence_count >= 3 and has_dense and has_wiki) or (evidence_count >= 2 and has_dense and has_wiki) or ((evidence_count >= 2 and has_dense and has_gg))): 
             # if not (evidence_count == 2 and has_dense and has_gg):
             # if not (evidence_count >= 3 and has_dense and has_wiki):
-            # if not ((evidence_count >= 6) or (evidence_count >= 4 and has_dense and has_wiki)):
+            if not ((evidence_count >= 4 and has_dense and has_wiki) or (evidence_count >= 3 and has_dense and has_wiki)):
             # if not ((evidence_count >= 4) or (evidence_count >= 3 and has_dense and has_wiki) or (evidence_count == 2 and has_wiki)):
             # if not (
             #     (evidence_count >= 4) or
@@ -262,14 +273,61 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
                 "cluster_sources": cluster_sources
             })
 
+        # if not cluster_info:
+        #     fused_results[qidx] = {
+        #         "abstain": True,
+        #         "cluster_sources": [],
+        #         "evidence_count": 0,
+        #         "num_source_families": 0
+        #     }
+        #     continue
+        # ===== Fallback rule =====
         if not cluster_info:
-            fused_results[qidx] = {
-                "abstain": True,
-                "cluster_sources": [],
-                "evidence_count": 0,
-                "num_source_families": 0
-            }
-            continue
+
+            # build ALL clusters again without filtering (to check raw cluster count)
+            raw_cluster_info = []
+
+            for lbl in set(labels):
+                indices = [i for i, l in enumerate(labels) if l == lbl]
+                evidence_count = len(indices)
+
+                cluster_sources = {(cand_list[i]["source"], cand_list[i]["run"]) for i in indices}
+                has_dense, has_wiki, has_gg, families = detect_source_flags(cluster_sources)
+
+                raw_cluster_info.append({
+                    "indices": indices,
+                    "evidence_count": evidence_count,
+                    "families": families,
+                    "cluster_sources": cluster_sources,
+                    "has_wiki": has_wiki,
+                    "has_dense": has_dense,
+                    "cohesion": cluster_cohesion(embeddings[indices])
+                })
+
+            # apply new rule ONLY if exactly 2 clusters
+            if len(raw_cluster_info) == 2:
+                c1, c2 = raw_cluster_info
+
+                # evidence_count khác nhau
+                if c1["evidence_count"] != c2["evidence_count"]:
+
+                    # chọn cluster lớn hơn
+                    larger = c1 if c1["evidence_count"] > c2["evidence_count"] else c2
+
+                    # BUT: cluster đó phải có wiki
+                    if larger["has_wiki"] and larger["has_dense"]:
+                        cluster_info = [larger]
+
+            # if still empty → abstain
+            if not cluster_info:
+                fused_results[qidx] = {
+                    "abstain": True,
+                    "cluster_sources": [],
+                    "evidence_count": 0,
+                    "num_source_families": 0
+                }
+                continue
+
 
         best_cluster = min(cluster_info, key=lambda x: x["cohesion"])
         best_indices = best_cluster["indices"]
@@ -282,8 +340,8 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
         final_ans = cand_list[best_idx]["text"]
         norm_ans = postprocessing(final_ans)
 
-        is_correct = final_ans in qidx_meta[qidx]["golden"]
-        is_correct_norm = norm_ans in qidx_meta[qidx]["golden"]
+        is_correct = final_ans in list_golden
+        is_correct_norm = norm_ans in list_golden
 
         answered += 1
         acc_by_evidence[evidence_count]["total"] += 1
@@ -293,7 +351,7 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
 
         norm_total += 1
         if is_correct_norm:
-            norm_correct += 1
+            norm_correct += 1           
 
         fused_results[qidx] = {
             "final_answer": final_ans,
@@ -306,7 +364,8 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
             "num_source_families": len(families),
             "cluster_sources": list(best_cluster["cluster_sources"]),
             "cohesion": best_cluster["cohesion"],
-            "abstain": False
+            "abstain": False,
+            "check_gol_in_ctx": check_gol_in_ctx
         }
 
     return {
@@ -356,6 +415,8 @@ def export_fusion_csv(fused_results, path):
             ])
 
     print("Saved:", path)
+    
+    
 def export_empty_golden_csv(qidx_meta, fused_results, out_path):
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
@@ -390,6 +451,47 @@ def export_empty_golden_csv(qidx_meta, fused_results, out_path):
 # =========================
 # MAIN
 # =========================
+# =========================
+# FINAL SUMMARY (SELECTED ONLY)
+# =========================
+
+def compute_selected_summary(fused_results, qidx_meta):
+
+    total_has_golden = 0
+    selected = 0
+    correct_selected = 0
+
+    for qidx, meta in qidx_meta.items():
+
+        if not meta["has_golden"]:
+            continue
+
+        total_has_golden += 1
+
+        if qidx not in fused_results:
+            continue
+
+        info = fused_results[qidx]
+
+        if info.get("abstain", True):
+            continue
+
+        selected += 1
+
+        if info.get("is_correct_norm", False):
+            correct_selected += 1
+
+    acc_selected = (
+        correct_selected / selected
+        if selected else 0.0
+    )
+
+    return {
+        "total_has_golden": total_has_golden,
+        "selected": selected,
+        "correct_selected": correct_selected,
+        "acc_selected": acc_selected
+    }
 
 if __name__ == "__main__":
     EMPTY_GOLDEN_CSV = "evaluate/acc/empty_golden_questions.csv"
@@ -425,6 +527,7 @@ if __name__ == "__main__":
         f"  Correct (norm)        : {correct_norm} \n")
     # print(f"Accuracy (raw)  : {stats['accuracy']*100:.2f}%")
     print(f"Accuracy (norm) : {stats['norm_accuracy']*100:.2f}%")
+    
     
     print("\nAccuracy by evidence:")
     for ev in sorted(stats["acc_by_evidence"]):

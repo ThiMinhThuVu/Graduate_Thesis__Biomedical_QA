@@ -1,0 +1,70 @@
+{
+  "QIDX": "524170",
+  "original_question": "Are keratolytic agents used to treat calluses also effective in treating keratosis pilaris?",
+  "type_q": "direct",
+  "focus_spacy_based_entity_label": [
+    "DISEASE",
+    "CHEMICAL"
+  ],
+  "target_answer_type": "correctness",
+  "key_entities": [
+    "keratolytic agents",
+    "keratosis pilaris",
+    "calluses"
+  ],
+  "1": {
+    "final_qi": {
+      "question": "Are keratolytic agents used to treat calluses also effective in treating keratosis pilaris?",
+      "search_keyword": "keratolytic agents calluses effective keratosis pilaris treatment",
+      "short_answer": "",
+      "long_answer": "",
+      "retrieval_information": "",
+      "prefix": "",
+      "name": "",
+      "suffix": "",
+      "candidate": []
+    },
+    "0": {
+      "0": {
+        "source_output": {
+          "crawl_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "keratosis pilaris",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          },
+          "crawl_ner_wiki": {
+            "short_answer": "insufficient information",
+            "long_answer": "No context",
+            "retrieval_information": "",
+            "candidate": [
+              {
+                "short_answer": "insufficient information",
+                "long_answer": "No context",
+                "retrieval_information": "",
+                "extracted_entities": "keratosis pilaris",
+                "full_data": {
+                  "short_answer": "insufficient information",
+                  "long_answer": "No context"
+                }
+              }
+            ]
+          }
+        },
+        "question": "Are keratolytic agents used to treat calluses also effective in treating keratosis pilaris?",
+        "search_keyword": "keratolytic agents calluses effective keratosis pilaris treatment"
+      }
+    }
+  }
+}

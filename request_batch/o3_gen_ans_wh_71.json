@@ -1,0 +1,1607 @@
+{
+  "153240": {
+    "o3_result": {
+      "short_answer": "11 weeks",
+      "long_answer": "In the 2016 study that examined the prenatal‐ultrasound characteristics of Limb Body Wall Complex, the investigators documented that the malformation could already be recognised during the first-trimester scan; the earliest case in their series was identified at 11 weeks of gestation. Thus, the study concluded that Limb Body Wall Complex can first be detected at 11 weeks."
+    },
+    "golden": [
+      "11 weeks"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "22 weeks",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "11 weeks",
+        "source": "crawl_ner_wiki"
+      }
+    ]
+  },
+  "154301": {
+    "o3_result": {
+      "short_answer": "carpenter syndrome",
+      "long_answer": "Carpenter syndrome (acrocephalopolysyndactyly type II) is an extremely rare autosomal-recessive congenital disorder distinguished by craniofacial malformations (including craniosynostosis), childhood-onset obesity, pre- and post-axial polydactyly, and soft-tissue or osseous syndactyly. Because it shares the triad of polysyndactyly and craniofacial abnormalities with Greig cephalopolysyndactyly syndrome, Carpenter syndrome is listed among the principal disorders that clinically overlap with GCPS in differential-diagnosis guides."
+    },
+    "golden": [
+      "carpenter syndrome"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "bardet–biedl syndrome",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "carpenter syndrome",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "229400": {
+    "o3_result": {
+      "short_answer": "hypergammaglobulinemic purpura",
+      "long_answer": "Hypergammaglobulinemic purpura (also called Waldenström’s purpura) is an uncommon form of recurrent purpura characterized by elevated serum immunoglobulins. Epidemiologic studies show a marked female predominance—about 85 % of reported cases occur in women—making it both rare and distinctly more frequent in the female population."
+    },
+    "golden": [
+      "post-transfusion purpura"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "psychogenic purpura",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "post-transfusion purpura",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "331013": {
+    "o3_result": {
+      "short_answer": "alpha-1 antitrypsin",
+      "long_answer": "The SERPINA1 gene, situated on chromosome 14q32, encodes the serine-protease inhibitor alpha-1 antitrypsin (AAT). AAT’s main physiological role is to neutralize neutrophil elastase and related proteases. When AAT is deficient, elastase activity in connective-tissue–rich organs, including the aortic wall, is left unchecked, leading to excessive degradation of elastin fibers. This accelerated elastin breakdown weakens the aortic media and has been associated with a higher incidence of abdominal aortic aneurysm formation. Thus, alpha-1 antitrypsin deficiency can promote pathological elastin loss in the aorta and elevate AAA risk."
+    },
+    "golden": [
+      "alpha-1 antitrypsin",
+      "alpha-1-antitrypsin",
+      "a1at"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "fibulin-5",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "alpha-1-antitrypsin",
+        "source": "crawl_ner_wiki"
+      }
+    ]
+  },
+  "539437": {
+    "o3_result": {
+      "short_answer": "nonsyndromic hearing loss",
+      "long_answer": "The WFS1 (wolframin) gene is best known for causing Wolfram syndrome, but more than thirty different WFS1 mutations have also been documented in individuals who have isolated (nonsyndromic) sensorineural hearing loss. Nonsyndromic forms account for roughly three-quarters (≈75 %) of all hereditary hearing-loss cases, distinguishing them from the remaining syndromic causes. Thus, the condition linked both to about 75 % of hearing-loss cases and to the >30 hearing-loss-specific WFS1 mutations is nonsyndromic hearing loss."
+    },
+    "golden": [
+      "nonsyndromic deafness"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "dfna6",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "dfna6",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "dfna6 deafness",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "728614": {
+    "o3_result": {
+      "short_answer": "bmpr2",
+      "long_answer": "Bone morphogenetic protein receptor type II (BMPR2) is the principal gene in which pathogenic variants cause heritable/primary pulmonary (arterial) hypertension.  Separate families carrying heterozygous BMPR2 mutations have also been reported with the skeletal malformation brachydactyly type A2, characterised by shortening of the middle phalanges of the index (and often little) fingers.  Thus, BMPR2 is the gene that is etiologically linked to both primary pulmonary hypertension and type A2 brachydactyly."
+    },
+    "golden": [
+      "bmpr1b"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "bmpr1b",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "bmpr2",
+        "source": "crawl_ner_wiki"
+      }
+    ]
+  },
+  "814670": {
+    "o3_result": {
+      "short_answer": "cinchonism",
+      "long_answer": "Quinine and related cinchona alkaloids are drugs employed in the treatment of both malaria and, in combination regimens, babesiosis. Excessive dosing or chronic high-level exposure to these medications leads to the well-defined toxicity syndrome called cinchonism (or quinism). Cinchonism is characterized by symptoms such as tinnitus, hearing and visual disturbances, headache, nausea, and CNS effects, and it represents the classic condition resulting from quinine overdose."
+    },
+    "golden": [
+      "cinchonism"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "cinchonism",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "abortion",
+        "source": "crawl_wiki"
+      }
+    ]
+  },
+  "150243": {
+    "o3_result": {
+      "short_answer": "shprintzen-goldberg syndrome",
+      "long_answer": "Shprintzen-Goldberg syndrome (also called marfanoid craniosynostosis syndrome) is a rare congenital multiple-anomaly disorder produced by heterozygous mutations in the SKI gene on chromosome 1p36. Affected individuals show craniosynostosis, marfanoid habitus, arachnodactyly—extremely long, slender “spider fingers”—and other connective-tissue and skeletal abnormalities. The association of SKI gene mutations with this characteristic phenotype is well established in the medical genetics literature, making Shprintzen-Goldberg syndrome the correct answer."
+    },
+    "golden": [
+      "shprintzen-goldberg syndrome"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "shprintzen-goldberg syndrome",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "shprintzen-goldberg syndrome",
+        "source": "google"
+      }
+    ]
+  },
+  "176281": {
+    "o3_result": {
+      "short_answer": "university of milan",
+      "long_answer": "The scientist who first carried out chorionic villus sampling is the Italian biologist-geneticist Giuseppe Simoni. His official curriculum states that he earned his Laurea in Biological Sciences (the Italian equivalent of a biology degree) at the Università degli Studi di Milano—known in English as the University of Milan—before leading the team that introduced CVS in 1983. Therefore, the university at which he obtained his biology degree was the University of Milan."
+    },
+    "golden": [
+      "university of milan"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "university of perugia",
+        "source": "google"
+      }
+    ]
+  },
+  "285796": {
+    "o3_result": {
+      "short_answer": "pelvic lipomatosis",
+      "long_answer": "Pelvic lipomatosis is a rare disorder marked by benign, disproportionate overgrowth of mature adipose tissue within the pelvis. It occurs predominantly in middle-aged to older Black men who are obese (body-mass index ≥30 kg/m²). The massive perivesical fat narrows the pelvis and indents the urinary bladder, producing the classic “pear-shaped” or “teardrop” bladder appearance on CT or IVU imaging. These characteristic epidemiologic features and imaging findings make pelvic lipomatosis the recognized answer."
+    },
+    "golden": [
+      "pelvic lipomatosis"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "pelvic lipomatosis",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "pelvic lipomatosis",
+        "source": "google"
+      }
+    ]
+  },
+  "506722": {
+    "o3_result": {
+      "short_answer": "median sternotomy",
+      "long_answer": "A median sternotomy is the standard surgical approach in cardiac and many thoracic operations. The surgeon makes a single vertical midline incision through the skin and divides the sternum longitudinally to spread the chest, giving direct access to the heart, great vessels, and anterior lungs. Because the skin and subcutaneous tissues over the sternum are incised and subjected to tension during healing, patients are at risk of developing hypertrophic or keloid scars along the mid-chest incision line."
+    },
+    "golden": [
+      "median sternotomy"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "median sternotomy",
+        "source": "google"
+      },
+      {
+        "text": "median sternotomy",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "654558": {
+    "o3_result": {
+      "short_answer": "phosphatidylserine",
+      "long_answer": "Lenz–Majewski syndrome is caused by gain-of-function mutations in the PTDSS1 gene, which encodes phosphatidylserine synthase 1 (PSS1). PSS1 catalyzes the base-exchange reaction that converts phosphatidylethanolamine to phosphatidylserine. The constitutively active mutant enzyme drives excessive synthesis of its product, leading to cellular accumulation of the phospholipid phosphatidylserine."
+    },
+    "golden": [
+      "phosphatidylserine"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "phosphatidylserine",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "phosphatidylserine",
+        "source": "google"
+      },
+      {
+        "text": "phosphatidylserine",
+        "source": "crawl_sparql_wikidata"
+      }
+    ]
+  },
+  "970294": {
+    "o3_result": {
+      "short_answer": "brain",
+      "long_answer": "The parasite Trypanosoma cruzi, transmitted by kissing bugs, causes Chagas disease. In chronically infected individuals who later become immunosuppressed by HIV, reactivation of T. cruzi most commonly produces a severe meningoencephalitis. This is marked by intense inflammation and the formation of necrotizing, pus-filled abscesses within the brain parenchyma, visible on imaging and confirmed histologically. Hence, the organ affected is the brain."
+    },
+    "golden": [
+      "brain"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "eye",
+        "source": "google"
+      },
+      {
+        "text": "brain",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "pleural cavity",
+        "source": "wiki"
+      }
+    ]
+  },
+  "139521": {
+    "o3_result": {
+      "short_answer": "amiodarone",
+      "long_answer": "Amiodarone, a class III anti-arrhythmic agent, is well documented to deposit iodinated phospholipids in pulmonary tissue. These deposits lead to the characteristic picture of lipid-laden (foamy) macrophages and parenchymal inflammation, a pattern described pathologically and radiologically as exogenous lipid (lipoid) pneumonia. Hence, amiodarone is the antiarrhythmic medication classically associated with exogenous lipid pneumonia."
+    },
+    "golden": [
+      "amiodarone"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "amiodarone",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "284028": {
+    "o3_result": {
+      "short_answer": "minoxidil",
+      "long_answer": "Fair-haired children may present with loose anagen hair syndrome, a disorder in which the anagen (growing) hairs are poorly anchored and shed easily. One therapeutic approach is to improve follicular nutrition by increasing scalp blood flow. Minoxidil, originally an antihypertensive arterial vasodilator, is applied topically for this purpose. By dilating dermal blood vessels, minoxidil raises local blood supply, delivering more oxygen and nutrients to the hair matrix cells, thereby stimulating thicker, stronger anagen hairs. Clinical reports document successful use of 2–5 % topical minoxidil in fair-haired children with this condition, making minoxidil the drug of choice to enrich hair cells through enhanced vascular perfusion."
+    },
+    "golden": [
+      "minoxidil"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "minoxidil",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "295910": {
+    "o3_result": {
+      "short_answer": "adrenocortical adenoma",
+      "long_answer": "The adrenal cortex gives rise to adrenocortical adenomas, which are the most frequent benign tumors found in the adrenal glands. A large proportion of these tumors, especially cortisol-producing adenomas, harbor activating mutations in genes that regulate the cyclic AMP (cAMP)–dependent protein kinase A (PKA) pathway—for example, somatic mutations in PRKACA or inactivating mutations in GNAS or PRKAR1A. These molecular alterations lead to constitutive PKA signaling, driving cell proliferation and hormone excess. Because of both their prevalence and their well-established link to dysregulated cAMP-PKA activity, adrenocortical adenomas represent the prototypic benign adrenal tumor associated with cAMP-dependent protein kinase A signaling."
+    },
+    "golden": [
+      "adrenocortical adenoma"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "adrenocortical adenoma",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "298228": {
+    "o3_result": {
+      "short_answer": "chromosome 15",
+      "long_answer": "The VPS33B gene (Vacuolar Protein Sorting-Associated Protein 33B), whose biallelic pathogenic variants cause arthrogryposis–renal dysfunction–cholestasis (ARC) syndrome, is mapped to cytogenetic band 15q26 on human chromosome 15. This chromosomal assignment has been confirmed by linkage analysis, fluorescence in-situ hybridization, and genome assemblies (e.g., GRCh38: chr15: 100,064,801-100,095,373). Hence, VPS33B resides on chromosome 15."
+    },
+    "golden": [
+      "chromosome 15"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "chromosome 15",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "308498": {
+    "o3_result": {
+      "short_answer": "polr1c",
+      "long_answer": "Treacher Collins syndrome results from defects in proteins required for ribosomal RNA synthesis. The small subunit common to RNA polymerases I and III—POLR1C (DNA-directed RNA polymerase I and III subunit C)—physically associates with other Pol I components, including CD3EAP (also called ASE-1), POLR1E and POLR1D, to form the functional transcription complex. Pathogenic loss-of-function mutations in the POLR1C gene disrupt this interaction network, impair rRNA transcription, and are a well-established cause of Treacher Collins syndrome (designated TCS type 3). Hence, the protein that interacts with CD3EAP, POLR1E and POLR1D and whose mutation produces Treacher Collins syndrome is POLR1C."
+    },
+    "golden": [
+      "polr1c"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "tcof1",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "419700": {
+    "o3_result": {
+      "short_answer": "hepadnaviridae",
+      "long_answer": "Baruch Samuel Blumberg shared the 1976 Nobel Prize in Physiology or Medicine for his discovery of the Hepatitis B virus. Hepatitis B virus is the prototype species of the family Hepadnaviridae, a group of small, enveloped DNA viruses that infect the liver of humans and other animals. Consequently, the virus family that includes Blumberg’s infectious agent is Hepadnaviridae."
+    },
+    "golden": [
+      "hepadnaviridae"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "hepadnaviridae",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "459609": {
+    "o3_result": {
+      "short_answer": "lung",
+      "long_answer": "The larynx is the organ that contains the vocal cords. When laryngeal carcinoma spreads hematogenously, the lungs are by far the most frequent site of distant metastases, reflecting both vascular drainage patterns and the high susceptibility of pulmonary tissue to lodging of circulating tumor cells. Clinical series consistently report the lung as the initial and predominant organ involved in distant spread from laryngeal cancer."
+    },
+    "golden": [
+      "lung"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "lung",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "480829": {
+    "o3_result": {
+      "short_answer": "babesiosis",
+      "long_answer": "In babesiosis, the intra-erythrocytic protozoan Babesia spp. may divide into four merozoites arranged at right angles to one another, producing a tetrad that resembles a Maltese cross. On a peripheral blood smear this appears as four “V”-shaped inclusions converging centrally within a red blood cell—a distinctive diagnostic feature of babesiosis."
+    },
+    "golden": [
+      "babesiosis"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "babesiosis",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "527168": {
+    "o3_result": {
+      "short_answer": "ellis–van creveld syndrome",
+      "long_answer": "Ellis–Van Creveld syndrome (EVC), also called chondroectodermal dysplasia, is a rare autosomal-recessive skeletal and ectodermal disorder produced by biallelic loss-of-function mutations in the EVC gene (or its paralog EVC2). The EVC proteins localize to the base of primary cilia and participate in Hedgehog signalling; their dysfunction disrupts ciliary structure and signaling pathways, so the condition is classified within the growing group of primary cilia–related disorders known as ciliopathies."
+    },
+    "golden": [
+      "ellis-van creveld syndrome",
+      "ellis–van creveld syndrome"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "ellis–van creveld syndrome",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "583819": {
+    "o3_result": {
+      "short_answer": "chromosome 1",
+      "long_answer": "The human EDARADD (EDAR-associated death domain) gene is mapped to the long arm of chromosome 1, specifically at cytogenetic band 1q42–q43. This chromosomal localization has been established through linkage analysis and refined by genomic sequencing projects such as the Human Genome Project and Ensembl/NCBI annotations."
+    },
+    "golden": [
+      "chromosome 1"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "chromosome 1",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "623637": {
+    "o3_result": {
+      "short_answer": "asbestosis",
+      "long_answer": "The specific type of pneumoconiosis responsible for about 3,600 deaths worldwide in 2015 was asbestosis. Asbestosis is a chronic fibrotic lung disease caused by prolonged inhalation of asbestos fibers, leading to progressive pulmonary scarring and respiratory failure. Global Burden of Disease 2015 estimates attribute roughly 3,600 deaths to this condition, distinguishing it from other pneumoconioses such as silicosis or coal workers’ pneumoconiosis."
+    },
+    "golden": [
+      "asbestosis"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "asbestosis",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "659460": {
+    "o3_result": {
+      "short_answer": "552",
+      "long_answer": "Myhre syndrome is caused by gain-of-function mutations in the SMAD4 gene. The canonical human SMAD4 protein that this gene encodes is composed of 552 amino acids, as documented in reference protein databases (e.g., UniProt entry Q13485). Therefore, the gene product contains 552 amino acids."
+    },
+    "golden": [
+      "552"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "514",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "660741": {
+    "o3_result": {
+      "short_answer": "coenzyme q10",
+      "long_answer": "Coenzyme Q10 (ubiquinone) is a mitochondrial co-factor sold as a dietary supplement rather than an FDA-approved drug. Small clinical studies in patients with dilated cardiomyopathy and other forms of congestive heart failure have shown that supplemental CoQ10 can improve myocardial energy production, ejection fraction, and functional status. Because of these observed benefits, clinicians sometimes recommend CoQ10 to individuals with dilated cardiomyopathy who are experiencing heart failure, even though the supplement has not yet received FDA approval for this indication."
+    },
+    "golden": [
+      "coenzyme q10"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "carnitine",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "686876": {
+    "o3_result": {
+      "short_answer": "wasting",
+      "long_answer": "A 2016 global nutrition review by UNICEF, WHO and the World Bank estimated that about 52.9 million children under five years of age were affected by wasting—acute malnutrition manifested by low weight-for-height and loss of muscle and fat tissue.  Wasting is recognised as being associated with a variety of disorders that impair energy storage or utilisation, including glycogen-storage disease type VI (Hers’ disease), in which impaired hepatic glycogen breakdown can lead to poor growth and loss of body mass.  Thus, the condition linked to Hers’ disease and reported to affect roughly 52.9 million young children worldwide in 2016 is wasting (acute malnutrition)."
+    },
+    "golden": [
+      "developmental delay"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "glycogen storage disease type vi",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "722978": {
+    "o3_result": {
+      "short_answer": "1877",
+      "long_answer": "M. Cuffer and M. Barbillon employed Thomas Edison’s recently developed phonograph to record and analyse heart sounds. Edison’s phonograph—the first device capable of capturing and reproducing sound and therefore suitable for early phonocardiography—was publicly introduced in 1877. Thus, the device they used had been invented in 1877."
+    },
+    "golden": [
+      "1816"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "1816",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "837230": {
+    "o3_result": {
+      "short_answer": "tk2",
+      "long_answer": "The TK2 gene (thymidine kinase 2, mitochondrial) lies on chromosome 16q22.1. Mutations in TK2 produce the myopathic form of mitochondrial DNA-depletion syndrome type 2. Infants carrying pathogenic TK2 variants appear normal during infancy and early childhood, but around two years of age they begin to show generalized, progressive muscle weakness that steadily worsens. The disorder currently has no curative or disease-modifying treatment, only supportive care, matching the scenario described."
+    },
+    "golden": [
+      "tk2",
+      "thymidine kinase 2"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "cmyo16",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "847295": {
+    "o3_result": {
+      "short_answer": "1",
+      "long_answer": "In the European Union and many other jurisdictions, a disorder is considered rare when it affects fewer than 1 person in every 2,000. Conditions such as the microcornea-glaucoma-absent-frontal-sinus syndrome fall under this definition, meaning no more than about 1 individual per 2,000 people would typically be affected."
+    },
+    "golden": [
+      "less than 1"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "1",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "865090": {
+    "o3_result": {
+      "short_answer": "cytomegalovirus",
+      "long_answer": "Human cytomegalovirus (CMV), a betaherpesvirus that possesses an icosahedral capsid with T=16 symmetry, is the foremost non-genetic cause of congenital sensorineural deafness and consequent balance/ambulatory difficulties acquired via vertical (in utero) transmission."
+    },
+    "golden": [
+      "cytomegalovirus",
+      "cmv"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "cmv",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "879116": {
+    "o3_result": {
+      "short_answer": "1821",
+      "long_answer": "Keratosis follicularis-dwarfism-cerebral atrophy syndrome (KFDCA) is an extremely rare autosomal-recessive disorder; to date only six patients, all originating from Mexico, have been reported in the medical literature. Mexico won its War of Independence against the Spanish Empire with the signing of the Treaty of Córdoba and the declaration of the Acta de Independencia on 28 September 1821. Therefore, the year in which the country achieved independence from Spain is 1821."
+    },
+    "golden": [
+      "1821"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "1821",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "888878": {
+    "o3_result": {
+      "short_answer": "corpus callosum",
+      "long_answer": "Magnetic-resonance imaging studies of patients with X-linked Say–Meyer syndrome consistently describe an abnormally thin corpus callosum—the largest white-matter commissural tract connecting the two cerebral hemispheres. This hypoplasia of the corpus callosum is a characteristic neuroanatomical finding associated with the syndrome’s developmental delay and other clinical features."
+    },
+    "golden": [
+      "corpus callosum"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "corpus callosum",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "920528": {
+    "o3_result": {
+      "short_answer": "van den ende–gupta syndrome",
+      "long_answer": "Van den Ende–Gupta syndrome (VDEGS) is an autosomal-recessive malformation syndrome that was first described in 1992 in two siblings born to consanguineous Arab parents—the only cases known at that time, making it an exceptionally rare genetic disorder.  Core manifestations include characteristic facial features (blepharophimosis, narrow beaked nose, everted lower lip) and multiple skeletal anomalies such as radial-head dislocation, camptodactyly, slender ribs, hypoplastic scapulae and, very commonly, congenital talipes equinovarus (clubfoot).  Subsequent reports have confirmed the strong association of VDEGS with clubfoot, and mutations in the SCARF2 gene have been identified as its molecular cause."
+    },
+    "golden": [
+      "ulna hypoplasia-intellectual disability syndrome"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "nonlethal multiple pterygium syndrome",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "escobar syndrome",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "974208": {
+    "o3_result": {
+      "short_answer": "hodgkin lymphoma",
+      "long_answer": "Hodgkin lymphoma makes up roughly 10 % of all lymphoma cases. About 40–50 % of Hodgkin lymphoma tumors contain Epstein-Barr virus genomes, indicating a frequent association with EBV infection."
+    },
+    "golden": [
+      "hodgkin lymphoma"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "epstein–barr virus-positive diffuse large b cell lymphoma",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "979905": {
+    "o3_result": {
+      "short_answer": "lymph node",
+      "long_answer": "Lymph nodes are small, bean- or kidney-shaped organs of the lymphatic system. In pancreatic cancer, the TNM staging system assigns great importance to whether regional lymph nodes (peripancreatic, celiac, hepatoduodenal, superior mesenteric, etc.) contain metastatic deposits. Cross-sectional imaging, endoscopic ultrasound, and surgical sampling therefore focus closely on these kidney-shaped structures to determine nodal involvement and overall stage."
+    },
+    "golden": [
+      "lymph nodes"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "spleen",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "995113": {
+    "o3_result": {
+      "short_answer": "ext2",
+      "long_answer": "Gómez–López-Hernández (cerebellotrigeminal-dermal) syndrome has been linked to pathogenic variants in the EXT2 gene.  EXT2 is situated on chromosome 11p11-p12 and codes for exostosin-2, which pairs with exostosin-1 to form the two-subunit heparan-sulfate polymerase enzyme.  Mutations disrupting EXT2 therefore implicate this gene in the pathogenesis of Gómez–López-Hernández syndrome."
+    },
+    "golden": [
+      "acp2"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "kcnj11",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "106578": {
+    "o3_result": {
+      "short_answer": "colony-stimulating factors",
+      "long_answer": "Fanconi anemia–associated bone-marrow failure can be managed temporarily with pharmacologic agents. Androgens (e.g., oxymetholone) are often combined with hematopoietic growth factors that are naturally occurring glycoproteins capable of stimulating the proliferation, differentiation, and maturation of blood-cell precursors. This class of glycoproteins is collectively termed colony-stimulating factors (CSFs), which include agents such as granulocyte colony-stimulating factor (G-CSF) and granulocyte-macrophage colony-stimulating factor (GM-CSF). Administering CSFs alongside androgens can transiently improve cytopenias until definitive therapy (e.g., hematopoietic stem-cell transplantation) is undertaken."
+    },
+    "candidate": [
+      {
+        "text": "hematopoietic growth factor",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "hematopoietic growth factor",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "colony stimulating factors",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "colony-stimulating factors",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "hematopoietic growth factors"
+    ],
+    "check": false
+  },
+  "117785": {
+    "o3_result": {
+      "short_answer": "axis (c2)",
+      "long_answer": "Basilar invagination refers to the upward displacement of the odontoid process into the foramen magnum at the cranio-vertebral junction. The odontoid process is part of the second cervical vertebra, the axis (C2). Thus, the bone specifically involved in basilar invagination is the axis (C2 vertebra)."
+    },
+    "candidate": [
+      {
+        "text": "occipital bone at the skull base (specifically the occipital condyles)",
+        "source": "wiki"
+      },
+      {
+        "text": "base of skull between the sphenoid and occipital bones",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "at the base of the skull between the sphenoid and occipital bones",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "basilar occipital bone",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "the petrous part of the temporal bone, located at the skull base between the sphenoid and occipital bones",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "c2 vertebra",
+        "source": "google"
+      },
+      {
+        "text": "base of the skull",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "at the base of the skull, wedged between the sphenoid and basilar part of the occipital bone",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "c2 vertebra",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "base of the skull",
+        "source": "wiki"
+      },
+      {
+        "text": "occipital bone",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "occipital bone clivus",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "c2 vertebra"
+    ],
+    "check": true
+  },
+  "134630": {
+    "o3_result": {
+      "short_answer": "strelitzia nicolai",
+      "long_answer": "The yellow pigment that produces the characteristic discoloration seen in jaundice is bilirubin, a tetrapyrrole breakdown product of heme. Until recently it was thought to occur only in animals, but chemical analysis showed that the white bird-of-paradise plant, Strelitzia nicolai, accumulates the same molecule in its orange aril tissues. This makes Strelitzia nicolai the first plant species confirmed to contain bilirubin, the very pigment responsible for jaundice’s yellow hue."
+    },
+    "candidate": [
+      {
+        "text": "euphorbia nivulia",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "carrot (daucus carota)",
+        "source": "crawl_wiki"
+      }
+    ],
+    "golden": [
+      "strelitzia nicolai"
+    ],
+    "check": true
+  },
+  "157149": {
+    "o3_result": {
+      "short_answer": "spinal accessory nerve",
+      "long_answer": "Cystic hygromas (lymphangiomas) in the neck most often arise in the posterior triangle, deep to or surrounding the sternocleidomastoid. Dissection in this area places the spinal accessory nerve—cranial nerve XI, which courses superficially across the posterior triangle to innervate the sternocleidomastoid and trapezius—at particular risk of traction or transection injury during removal of the mass."
+    },
+    "candidate": [
+      {
+        "text": "vagus nerve",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "spinal accessory nerve",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "cranial nerve xi ",
+      "spinal accessory nerve"
+    ],
+    "check": true
+  },
+  "237915": {
+    "o3_result": {
+      "short_answer": "vitamin b6 deficiency",
+      "long_answer": "Cysteine, the amino acid whose sulfhydryl groups form the disulfide bonds that stabilize many protein structures, is produced in humans by trans-sulfuration of methionine through the enzymes cystathionine β-synthase and cystathionine γ-lyase. Both enzymes require pyridoxal-5′-phosphate, the active co-enzyme form of vitamin B6 (pyridoxine). When the diet is deficient in vitamin B6, pyridoxal-5′-phosphate levels fall, these B6-dependent reactions slow, and endogenous synthesis of cysteine is markedly reduced. Thus a deficiency of the essential nutrient vitamin B6 specifically impairs the body’s ability to make the disulfide-bond-forming amino acid cysteine."
+    },
+    "candidate": [
+      {
+        "text": "vitamin b6 deficiency",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "methionine",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "pyridoxine",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "cysteine",
+        "source": "crawl_wiki"
+      }
+    ],
+    "golden": [
+      "vitamin b6 deficiency"
+    ],
+    "check": true
+  },
+  "252895": {
+    "o3_result": {
+      "short_answer": "anosognosia",
+      "long_answer": "In Anton syndrome, patients are cortically blind yet insist they can see. This unawareness of, or failure to acknowledge, their deficit is a specific example of anosognosia—a condition first detailed by the French neurologist Joseph Babinski in 1914 to describe patients who deny or are unaware of their neurological impairments."
+    },
+    "candidate": [
+      {
+        "text": "cortical blindness",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "anton–babinski syndrome",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "anosognosia",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "visual anosognosia",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "anosognosia"
+    ],
+    "check": true
+  },
+  "260402": {
+    "o3_result": {
+      "short_answer": "4977-bp deletion",
+      "long_answer": "The single most frequent large-scale mitochondrial DNA rearrangement in both chronic progressive external ophthalmoplegia (CPEO) and Kearns–Sayre syndrome is the 4,977-base-pair (≈4.9-kb) deletion that spans nucleotide positions ~8,470–13,447 of the mitochondrial genome. This “common deletion” is detected in roughly one-third of CPEO cases and is the predominant deletion reported in Kearns–Sayre syndrome, making it the hallmark molecular lesion of these disorders."
+    },
+    "candidate": [
+      {
+        "text": "4977 base pair deletion",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "4,977 bp deletion",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "4,977 base pair deletion",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "4,977 base pair deletion",
+        "source": "crawl_wiki"
+      }
+    ],
+    "golden": [
+      "4977 bp deletion",
+      "4,977 base pair deletion"
+    ],
+    "check": true
+  },
+  "290551": {
+    "o3_result": {
+      "short_answer": "1,25-dihydroxycholecalciferol",
+      "long_answer": "Individuals with xeroderma pigmentosum avoid sunlight to limit UV-induced DNA damage, which markedly reduces cutaneous synthesis of vitamin D. Consequently they often take vitamin D supplements. The metabolically active (hormonally active) form of vitamin D in the body is 1,25-dihydroxycholecalciferol—also known as calcitriol—which exerts the biological effects of the vitamin on calcium and phosphate homeostasis."
+    },
+    "candidate": [
+      {
+        "text": "tretinoin",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "retinoic acid",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "1,25-dihydroxyvitamin d3",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "all-trans retinoic acid",
+        "source": "crawl_wiki"
+      }
+    ],
+    "golden": [
+      "1,25-dihydroxyvitamin d3"
+    ],
+    "check": true
+  },
+  "545881": {
+    "o3_result": {
+      "short_answer": "arteriovenous fistula",
+      "long_answer": "An arteriovenous fistula is an abnormal direct connection between an artery and a vein that bypasses the normal high-resistance arteriolar bed. Because blood flows directly from the high-pressure arterial system into the low-pressure venous system, total peripheral resistance falls sharply. The reduced afterload, together with the marked rise in venous return, forces the heart to pump a much larger volume of blood, so cardiac output rises substantially—especially if the fistula involves a large artery."
+    },
+    "candidate": [
+      {
+        "text": "arteriovenous malformation",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "arteriovenous fistula",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "arteriovenous shunt",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "arteriovenous malformation",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "arteriovenous fistula",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "arteriovenous fistula"
+    ],
+    "check": true
+  },
+  "559411": {
+    "o3_result": {
+      "short_answer": "early myoclonic encephalopathy",
+      "long_answer": "The condition is Early Myoclonic Encephalopathy (EME), an epileptic encephalopathy that begins in the neonatal period or within the first three months of life. It is distinguished by fragmentary, erratic myoclonic jerks and violent myoclonic spasms, leading to frequent, drug-resistant seizures and severe developmental impairment."
+    },
+    "candidate": [
+      {
+        "text": "early myoclonic encephalopathy",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "ohtahara syndrome",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "eme",
+        "source": "google"
+      },
+      {
+        "text": "infantile epileptic spasms syndrome",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "early myoclonic encephalopathy",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "early myoclonic encephalopathy"
+    ],
+    "check": true
+  },
+  "689063": {
+    "o3_result": {
+      "short_answer": "cyp1a2",
+      "long_answer": "Cytochrome P450 1A2 (CYP1A2) is clustered on human chromosome 15q24, belongs to the xenobiotic-metabolising CYP1 family, and catalyses several oxidative reactions including ring-hydroxylation of toluene; hence it is a key enzyme in toluene and broader xenobiotic metabolism."
+    },
+    "candidate": [
+      {
+        "text": "cyp1a2",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "cyp2e1",
+        "source": "crawl_wiki"
+      }
+    ],
+    "golden": [
+      "cyp1a2"
+    ],
+    "check": true
+  },
+  "695539": {
+    "o3_result": {
+      "short_answer": "oxymetholone",
+      "long_answer": "Oxymetholone is an anabolic androgenic steroid that stimulates proliferation and differentiation of hematopoietic progenitor cells, thereby enhancing the growth and maturation of red cells, neutrophils and platelets. Because these effects can partially counter the pancytopenia characteristic of Fanconi anemia, oxymetholone is routinely employed as a supportive (non-curative) pharmacologic therapy for patients with this disorder."
+    },
+    "candidate": [
+      {
+        "text": "hematopoietic growth factor",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "hematopoietic growth factor",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "danazol",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "oxymetholone",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "hematopoietic growth factor"
+    ],
+    "check": false
+  },
+  "709773": {
+    "o3_result": {
+      "short_answer": "severe acute respiratory syndrome",
+      "long_answer": "The epidemic disease that first appeared in November 2002 was Severe Acute Respiratory Syndrome (SARS). The initial cluster was reported in Guangdong Province, China, and the illness rapidly spread internationally during 2002-2003. Clinically, SARS is caused by the SARS-associated coronavirus (SARS-CoV) and is marked by high fever, dry cough, dyspnea, and laboratory findings that commonly include leukopenia with pronounced lymphocytopenia. These hematologic abnormalities, together with its sudden emergence and global transmission, define the SARS epidemic that began in November 2002."
+    },
+    "candidate": [
+      {
+        "text": "sars disease",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "severe acute respiratory syndrome",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "sars",
+      "severe acute respiratory syndrome"
+    ],
+    "check": true
+  },
+  "714294": {
+    "o3_result": {
+      "short_answer": "rnf213 p.r4810k",
+      "long_answer": "Moyamoya disease 2 (MYMY2) was first linked to a missense change in the RNF213 gene: a G→A transition at nucleotide 14576 that replaces arginine with lysine at position 4810 of the protein (commonly written p.R4810K, also described as p.R4859K in a longer isoform). This founding East-Asian mutation was the initial genetic alteration proven to cause autosomal-dominant Moyamoya disease 2."
+    },
+    "candidate": [
+      {
+        "text": "p.arg4810lys",
+        "source": "google"
+      },
+      {
+        "text": "p.arg4810lys",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "p.r4810k",
+        "source": "google"
+      },
+      {
+        "text": "variation in the rnf213",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "rnf213",
+        "source": "crawl_wiki"
+      }
+    ],
+    "golden": [
+      "p.r4810k",
+      "p.arg4810lys"
+    ],
+    "check": true
+  },
+  "771022": {
+    "o3_result": {
+      "short_answer": "vibrio vulnificus",
+      "long_answer": "Vibrio vulnificus is a halophilic, Gram-negative rod that naturally inhabits warm marine and brackish waters found in estuaries, coastal areas, and salt- or brackish ponds. When introduced through breaks in the skin or mucosa, it can produce a fulminant soft-tissue infection with necrotizing fasciitis. Numerous case reports and reviews document V. vulnificus as an established, though uncommon, etiologic agent of Fournier gangrene, the necrotizing fasciitis of the perineum and genital region. Its association with seawater exposure and the rapid, life-threatening progression of the infection make V. vulnificus the prototypical marine bacterium implicated in Fournier gangrene."
+    },
+    "candidate": [
+      {
+        "text": "vibrio vulnificus",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "vibrio vulnificus",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "shewanella algae",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "edwardsiella tarda",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "vibrio vulnificus"
+    ],
+    "check": true
+  },
+  "782966": {
+    "o3_result": {
+      "short_answer": "bone marrow transplantation",
+      "long_answer": "The definitive, disease-modifying therapy frequently employed for life-threatening bone-marrow disorders such as acute leukemia, lymphoma, myelodysplastic syndromes, and certain solid-tumor malignancies is hematopoietic stem-cell (bone marrow) transplantation. In this procedure a patient’s diseased or dysfunctional marrow is ablated with high-dose chemotherapy and/or total-body irradiation, then replaced by infusion of healthy hematopoietic stem cells obtained from a compatible donor (allogeneic) or from the patient previously collected (autologous). The new stem cells migrate to the marrow cavities and re-establish normal blood-cell production. Although usually reserved for malignant or otherwise fatal marrow failure states, the same transplant technique is also considered for selected patients with severe, transfusion-dependent sideroblastic anemia when conventional medical therapy is ineffective or complications such as iron overload threaten survival, because successful engraftment can permanently correct the underlying erythroid defect."
+    },
+    "candidate": [
+      {
+        "text": "hematopoietic stem cell transplantation",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "bone marrow transplant",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "bone marrow transplant",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "hematopoietic stem cell transplant",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "bone marrow transplant",
+      "bone marrow transplantation"
+    ],
+    "check": true
+  },
+  "910648": {
+    "o3_result": {
+      "short_answer": "lysosomes",
+      "long_answer": "Lysosomes are membrane-bound organelles that house hydrolytic enzymes responsible for degrading glycosaminoglycans, sphingolipids, and other macromolecules. Beyond their classic catabolic role, lysosomes participate in regulated secretion, plasma-membrane repair, apoptosis, nutrient and energy sensing, and multiple cell-signaling pathways. When specific lysosomal enzymes that break down glycosaminoglycans are genetically deficient, undegraded ‘mucopolysaccharides’ accumulate inside lysosomes, producing the group of lysosomal storage disorders collectively known as the mucopolysaccharidoses (e.g., Hurler, Hunter, Sanfilippo syndromes). Thus, malfunction of lysosomes underlies the pathogenesis of mucopolysaccharidoses."
+    },
+    "candidate": [
+      {
+        "text": "lysosomes and mitochondria",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "endolysosomal system and mitochondria",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "lysosomes",
+        "source": "crawl_ner_wiki"
+      }
+    ],
+    "golden": [
+      "lysosomes"
+    ],
+    "check": true
+  },
+  "933016": {
+    "o3_result": {
+      "short_answer": "tonsillectomy",
+      "long_answer": "Tonsillectomy—the surgical excision of the palatine tonsils—is routinely performed to manage recurrent or chronic tonsillitis and is also part of first-line surgical therapy for pediatric obstructive sleep apnea. Because the glossopharyngeal nerve and its lingual branches that carry taste fibers to the posterior third of the tongue run close to the tonsillar bed, they can be stretched, bruised, or partially severed during dissection. This neural injury may lead to postoperative taste disturbances, including dysgeusia (distortion or alteration of taste). Although usually transient, dysgeusia is a well-recognized potential complication specifically associated with tonsillectomy."
+    },
+    "candidate": [
+      {
+        "text": "uvulopalatopharyngoplasty",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "tonsillectomy",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "uvulopalatopharyngoplasty",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "uppp with tonsillectomy",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "tonsillectomy"
+    ],
+    "check": true
+  },
+  "954297": {
+    "o3_result": {
+      "short_answer": "stroke",
+      "long_answer": "Varicella-zoster virus can infect and inflame cerebral arteries (VZV vasculopathy), precipitating an ischemic stroke. This complication typically presents with focal neurologic deficits such as dizziness and dysarthria (brainstem–cerebellar involvement) together with hemiparesis and paresthesia (unilateral motor and sensory impairment), making stroke the hallmark severe complication described."
+    },
+    "candidate": [
+      {
+        "text": "varicella-zoster virus encephalitis",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "varicella-zoster virus vasculopathy",
+        "source": "google"
+      },
+      {
+        "text": "stroke",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "ramsay hunt syndrome type 2",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "varicella-zoster virus vasculopathy",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "cerebrovascular accident"
+    ],
+    "check": false
+  },
+  "970726": {
+    "o3_result": {
+      "short_answer": "hydrocephalus",
+      "long_answer": "One of the five additional features frequently reported alongside MASA syndrome is hydrocephalus—a condition in which cerebrospinal fluid accumulates within the brain’s ventricles, leading to their enlargement and raised intracranial pressure."
+    },
+    "candidate": [
+      {
+        "text": "hydrocephalus",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "hydrocephalus",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "congenital hydrocephalus",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "x‑linked hydrocephalus with stenosis of the aqueduct of sylvius",
+        "source": "crawl_ner_wiki"
+      }
+    ],
+    "golden": [
+      "hydrocephalus"
+    ],
+    "check": true
+  },
+  "166341": {
+    "o3_result": {
+      "short_answer": "5%",
+      "long_answer": "The first recognized clinical case of uniparental disomy (reported by Spence et al., 1988) involved maternal uniparental disomy of chromosome 7 in a patient with cystic fibrosis. Human chromosome 7 contains about 159 million base pairs; as detailed in genome reference data (e.g., NCBI, Genetics Home Reference), this amount corresponds to roughly 5 percent of the total DNA present in human cells. Therefore, the duplicated chromosome in that landmark UPD case represents about 5 % of the cellular DNA."
+    },
+    "candidate": [
+      {
+        "text": "3.5%",
+        "source": "google"
+      },
+      {
+        "text": "5%",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "3.5 percent",
+        "source": "google"
+      },
+      {
+        "text": "5 percent",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "5-5.5%"
+    ],
+    "check": false
+  },
+  "182169": {
+    "o3_result": {
+      "short_answer": "true vocal cords",
+      "long_answer": "Recurrent respiratory (laryngeal) papillomatosis produces multiple squamous papillomas that arise most frequently on the true vocal cords—the stratified-squamous-covered glottic mucosa, especially around the anterior commissure. Although lesions can spread to other supraglottic or subglottic sites, the true vocal folds are by far the commonest location for the benign tumors."
+    },
+    "candidate": [
+      {
+        "text": "vocal cords",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "laryngeal mucosa",
+        "source": "google"
+      },
+      {
+        "text": "laryngeal mucosa",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "vocal folds",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "vocal cords",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "vocal cords"
+    ],
+    "check": true
+  },
+  "218896": {
+    "o3_result": {
+      "short_answer": "traumatic neuroma",
+      "long_answer": "The lesion most frequently encountered near the mental foramen following surgical injury to a peripheral nerve is the traumatic (also called amputation) neuroma. It is a reactive proliferation of nerve fibers and supporting tissue that develops when a severed or damaged nerve attempts to regenerate, producing a benign nodular mass in the area of the prior trauma."
+    },
+    "candidate": [
+      {
+        "text": "traumatic neuroma",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "traumatic neuroma",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "traumatic neuroma"
+    ],
+    "check": true
+  },
+  "287123": {
+    "o3_result": {
+      "short_answer": "1837",
+      "long_answer": "The neurons that are progressively lost in cerebellar degeneration are Purkinje cells. These large cerebellar neurons were first described by the Czech physiologist Jan Evangelista Purkinje in 1837. Subsequent neuropathological studies linked their degeneration to many cerebellar ataxias, but the initial discovery of the cell type itself dates to 1837."
+    },
+    "candidate": [
+      {
+        "text": "1983",
+        "source": "google"
+      },
+      {
+        "text": "1919",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "1938",
+        "source": "google"
+      },
+      {
+        "text": "1919",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "1837"
+    ],
+    "check": true
+  },
+  "355170": {
+    "o3_result": {
+      "short_answer": "anti-androgens",
+      "long_answer": "Achard–Thiers syndrome combines diabetes mellitus with excessive androgen production, leading to masculinizing manifestations such as hirsutism, acne, and virilization in affected women. The standard pharmacologic strategy for reducing these androgen-related symptoms is to give drugs that antagonize androgen action. Anti-androgen agents—e.g., spironolactone, cyproterone acetate, flutamide, or other androgen-receptor blockers—diminish peripheral androgen effects and thereby alleviate hirsutism and other virilizing signs. Consequently, anti-androgens are the class of drugs most commonly prescribed for symptomatic control in women with Achard–Thiers syndrome."
+    },
+    "candidate": [
+      {
+        "text": "anti-androgen medications",
+        "source": "google"
+      },
+      {
+        "text": "anti-androgens",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "oral contraceptives",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "anti-androgens",
+        "source": "google"
+      },
+      {
+        "text": "anti-androgen drugs",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "anti-androgens",
+      "antiandrogens"
+    ],
+    "check": true
+  },
+  "408733": {
+    "o3_result": {
+      "short_answer": "systemic lupus erythematosus",
+      "long_answer": "In the evaluation of loin pain hematuria syndrome, one of the conditions that must be excluded is lupus nephritis secondary to systemic lupus erythematosus (SLE).  The classical complement component-1q (C1q) genes—C1QA, C1QB and C1QC—are clustered on chromosome 1 at cytoband 1p36.12.  Deficiency or polymorphic variation in these genes is a well-established genetic association with the development of SLE.  Thus, systemic lupus erythematosus is both part of the differential diagnosis for loin pain hematuria syndrome and is genetically linked to the cytoband 1p36.12."
+    },
+    "candidate": [
+      {
+        "text": "chromosome 1",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "1p36 deletion syndrome",
+        "source": "google"
+      },
+      {
+        "text": "chromosome 1",
+        "source": "google"
+      },
+      {
+        "text": "1p36 copy number variation syndrome",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "endometriosis"
+    ],
+    "check": false
+  },
+  "619326": {
+    "o3_result": {
+      "short_answer": "renal failure",
+      "long_answer": "In the single infant described with Cortés-Lacassie syndrome, progressive renal failure developed secondary to the metabolic defect. The authors of the case report noted that early liver transplantation (to correct the underlying enzymatic defect) or, alternatively, dialysis to remove the accumulating metabolites could potentially have halted or delayed the advance of this renal failure."
+    },
+    "candidate": [
+      {
+        "text": "acute liver failure",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "liver failure",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "liver failure",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "hepatorenal syndrome"
+    ],
+    "check": false
+  },
+  "627918": {
+    "o3_result": {
+      "short_answer": "corpus callosotomy",
+      "long_answer": "Foix–Chavany–Marie syndrome (opercular syndrome) can occasionally be produced not by permanent structural lesions but by bilateral propagation of epileptic discharges that transiently inactivate the frontal opercular cortices.  When the epilepsy is medically intractable, disconnective surgery that prevents the rapid spread of ictal activity from one hemisphere to the other can abolish the opercular seizures and the associated negative motor phenomena.  Corpus callosotomy – sectioning the corpus callosum either partially (usually the anterior two-thirds) or completely – is a well-established neurosurgical treatment for refractory epilepsy.  By interrupting interhemispheric spread, a callosotomy can eliminate the bilateral opercular involvement, leading to complete resolution of the Foix–Chavany–Marie syndrome that was being produced by those epileptic discharges.  Case reports document full recovery of voluntary facial, lingual, pharyngeal and masticatory movements after corpus callosotomy in such patients, confirming the effectiveness of this procedure in reversing FCMS when it is seizure-induced."
+    },
+    "candidate": [
+      {
+        "text": "focal cortical resection",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "insulo-opercular resection",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "insulo-opercular resection",
+        "source": "google"
+      },
+      {
+        "text": "surgical resection of the epileptogenic focus",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "hemispherectomy"
+    ],
+    "check": false
+  },
+  "132019": {
+    "o3_result": {
+      "short_answer": "cyclophoria",
+      "long_answer": "Cyclophoria is the latent heterophoric condition in which the eyes exhibit torsional (rotational) deviation when normal binocular visual stimuli that maintain alignment are removed."
+    },
+    "candidate": [
+      {
+        "text": "latent torsional heterophoria",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "torsional heterophoria",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "cyclophoria"
+    ],
+    "check": true
+  },
+  "256957": {
+    "o3_result": {
+      "short_answer": "grover disease",
+      "long_answer": "The disorder is Grover disease, also called transient acantholytic dermatosis. It was first described in 1975 by American dermatopathologist Dr. Ralph W. Grover. Histologically, Grover disease shows focal acantholysis—the loss of intercellular desmosomal connections between keratinocytes—exactly the feature seen in pemphigus vulgaris and notably absent in bullous pemphigoid, making this microscopic finding a key diagnostic clue."
+    },
+    "candidate": [
+      {
+        "text": "grover disease",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "transient acantholytic dermatosis",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "grover's disease",
+      "grover disease"
+    ],
+    "check": true
+  },
+  "619420": {
+    "o3_result": {
+      "short_answer": "malaria",
+      "long_answer": "Babesia species (babesiosis) produce intra-erythrocytic tetrads that form the characteristic “Maltese cross,” named after the cross used by Crusaders. On peripheral blood smear these ring forms closely mimic those of Plasmodium species. Because both infections involve protozoa invading red blood cells and can cause febrile hemolytic illness, the foremost condition that must be distinguished from babesiosis is malaria caused by Plasmodium spp.; hence, malaria is the primary differential diagnosis."
+    },
+    "candidate": [
+      {
+        "text": "babesia microti",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "babesiosis infection",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "malaria"
+    ],
+    "check": true
+  },
+  "845857": {
+    "o3_result": {
+      "short_answer": "glycosyltransferases",
+      "long_answer": "Andersen disease (glycogen-storage disease type IV) is caused by deficiency of the glycogen-branching enzyme, amylo-1,4→1,6-transglucosidase (EC 2.4.1.18). This enzyme catalyzes transfer of a segment of a 1,4-α-glucan chain to form 1,6-α branches in glycogen. Because it mediates transfer of glycosyl groups from one molecule site to another, it is classified in the ‘transferase’ family of enzymes (specifically, among glycosyltransferases)."
+    },
+    "candidate": [
+      {
+        "text": "glycosyltransferases",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "glycosyltransferases"
+    ],
+    "check": true
+  },
+  "921794": {
+    "o3_result": {
+      "short_answer": "precocious puberty",
+      "long_answer": "The condition is precocious puberty. In 1852, Dr. Robert King Stone—who later became President Abraham Lincoln’s personal physician—published the first detailed medical report of a boy with markedly premature sexual development, introducing the entity now termed precocious puberty. The disorder is defined by the appearance of secondary sexual characteristics and other pubertal changes well before the normal age threshold (before 9 years in boys), and it remains the classic medical condition associated with abnormally early-onset puberty in young males."
+    },
+    "candidate": [
+      {
+        "text": "familial male-limited precocious puberty",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "familial male-limited precocious puberty"
+    ],
+    "check": true
+  },
+  "525642": {
+    "o3_result": {
+      "short_answer": "door syndrome",
+      "long_answer": "The constellation of congenital sensorineural deafness, intellectual disability, and skeletal abnormalities affecting the phalanges (leading to malformed or hypoplastic fingers and toes) defines DOOR syndrome. The name is an acronym for Deafness, Onychodystrophy, Osteodystrophy, and mental Retardation (often with Seizures). This rare autosomal-recessive disorder precisely matches the triad described in the question."
+    },
+    "golden": [
+      "door syndrome",
+      "doors syndrome"
+    ],
+    "check": true,
+    "candidate": [
+      {
+        "text": "cornelia de lange syndrome",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "door syndrome",
+        "source": "crawl_sparql_wikidata"
+      },
+      {
+        "text": "doors syndrome",
+        "source": "google"
+      },
+      {
+        "text": "pepper syndrome",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "carpenter syndrome",
+        "source": "google"
+      },
+      {
+        "text": "cornelia de lange syndrome",
+        "source": "wiki"
+      },
+      {
+        "text": "trisomy 18",
+        "source": "wiki"
+      },
+      {
+        "text": "doors syndrome",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "cohen syndrome",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "carpenter syndrome",
+        "source": "create_MCQ"
+      }
+    ]
+  }
+}

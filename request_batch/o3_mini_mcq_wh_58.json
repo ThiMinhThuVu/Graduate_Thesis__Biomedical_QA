@@ -1,0 +1,1501 @@
+{
+  "106578": {
+    "mcq": {
+      "short_answer": "colony-stimulating factors",
+      "long_answer": "colony-stimulating factors. Reason: All provided answer choices indicate that the group of glycoproteins used is the one that stimulates the growth and maturation of hematopoietic cells, and the answer choice 'colony-stimulating factors' most directly and specifically identifies these glycoproteins. Although 'hematopoietic growth factor' also covers these proteins, 'colony-stimulating factors' is more precise, matching the target answer type exactly."
+    },
+    "candidate": [
+      {
+        "short_answer": "colony stimulating factors",
+        "num_evidence": 1,
+        "final_text": "colony stimulating factors. Reason: Reference: [CRAWL_WIKI_1], [CRAWL_WIKI_2]. Explanation: The context lists multiple oncology-related terms, including 'androgen' and 'filgrastim'. Filgrastim is a granulocyte colony-stimulating factor, which belongs to a group of glycoproteins known as colony stimulating factors. These proteins stimulate the growth and maturation of blood cells and are administered alongside androgens as a temporary treatment for bone marrow failure in Fanconi anemia."
+      },
+      {
+        "short_answer": "hematopoietic growth factor",
+        "num_evidence": 2,
+        "final_text": "hematopoietic growth factor. Reason: Reference: [CRAWL_NER_WIKI_2]. Detailed explanation based on the information: The provided context describing Fanconi anemia states that treatment with androgens and hematopoietic (blood cell) growth factors can help bone marrow failure temporarily. Hematopoietic growth factors are glycoproteins known for stimulating the growth and maturation of blood cells. Therefore, they are administered alongside androgens as a temporary treatment for bone marrow failure in Fanconi anemia. | Hematopoietic growth factors, which include various colony-stimulating factors, are glycoproteins that drive the growth and maturation of blood cells. They are used temporarily with androgens in the treatment of bone marrow failure in Fanconi anemia to boost blood cell production."
+      },
+      {
+        "short_answer": "colony-stimulating factors",
+        "num_evidence": 1,
+        "final_text": "colony-stimulating factors. Reason: Colony-stimulating factors are a group of glycoproteins that promote the proliferation and differentiation of hematopoietic stem cells. In Fanconi anemia, they are administered alongside androgens as a temporary measure to ameliorate bone marrow failure by stimulating blood cell production."
+      }
+    ],
+    "golden": [
+      "hematopoietic growth factors"
+    ],
+    "check": false
+  },
+  "117785": {
+    "mcq": {
+      "short_answer": "c2 vertebra",
+      "long_answer": "c2 vertebra. Reason: The reasoning for this option directly describes how basilar invagination involves the upward displacement of the odontoid process of the C2 vertebra into the craniovertebral junction, making it the most consistent answer with the provided information."
+    },
+    "candidate": [
+      {
+        "short_answer": "base of skull between the sphenoid and occipital bones",
+        "num_evidence": 1,
+        "final_text": "base of skull between the sphenoid and occipital bones. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The petrous part of the temporal bone, noted in the context, is a pyramid-shaped bone located at the base of the skull. It is wedged between the sphenoid and occipital bones. This anatomical detail specifies its precise location, which is significant in conditions like basilar invagination."
+      },
+      {
+        "short_answer": "c2 vertebra",
+        "num_evidence": 2,
+        "final_text": "c2 vertebra. Reason: Reference: [GG_10], [GG_9]. Explanation: The provided context indicates that basilar invagination involves the upward displacement of vertebral elements into the craniovertebral junction. Specifically, [GG_10] describes how the odontoid process of C2 protrudes through the foramen magnum, and [GG_9] mentions that part of the occipital bone together with the odontoid process invaginates into the craniovertebral region. This makes it clear that the bone specifically involved is the odontoid process of C2, which is located at the foramen magnum, the key anatomical site at the skull base where the skull and upper cervical spine meet. | Reference: [CRAWL_NER_WIKI_1]. Explanation: The context explains that basilar invagination involves the upward migration of the top portion of the C2 vertebra. This upward movement leads to invagination at the base of the skull and can narrow the foramen magnum."
+      },
+      {
+        "short_answer": "occipital bone at the skull base (specifically the occipital condyles)",
+        "num_evidence": 1,
+        "final_text": "occipital bone at the skull base (specifically the occipital condyles). Reason: Reference: [WIKI_5], [WIKI_6]. Explanation: The context includes references to the occipital condyles and lateral parts of the occipital bone, both of which are located at the skull base. These anatomical features of the occipital bone are involved in conditions such as basilar invagination, indicating that the bone in question is the occipital bone at the skull base."
+      },
+      {
+        "short_answer": "at the base of the skull between the sphenoid and occipital bones",
+        "num_evidence": 1,
+        "final_text": "at the base of the skull between the sphenoid and occipital bones. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The petrous part of the temporal bone is described as being pyramid-shaped and wedged in at the base of the skull, precisely located between the sphenoid and occipital bones. This description provides the specific anatomical location of the bone involved in basilar invagination."
+      },
+      {
+        "short_answer": "at the base of the skull, wedged between the sphenoid and basilar part of the occipital bone",
+        "num_evidence": 1,
+        "final_text": "at the base of the skull, wedged between the sphenoid and basilar part of the occipital bone. Reason: Reference: [CRAWL_WIKI_1]. Explanation: The provided context describes the petrous part of the temporal bone, noting that its apex is received into the angular interval between the posterior border of the great wing of the sphenoid bone and the basilar part of the occipital bone. This placement at the base of the skull indicates the specific anatomical location of the bone implicated in conditions such as basilar invagination."
+      },
+      {
+        "short_answer": "occipital bone",
+        "num_evidence": 1,
+        "final_text": "occipital bone. Reason: The bone involved in basilar invagination is the occipital bone, specifically the portion that constitutes the base of the skull at the craniovertebral junction. This part of the skull forms the floor of the foramen magnum and is critical in the anatomical context of this condition."
+      },
+      {
+        "short_answer": "basilar occipital bone",
+        "num_evidence": 1,
+        "final_text": "basilar occipital bone. Reason: Basilar invagination involves the basilar part of the occipital bone, which is located at the skull base. This region, forming the floor of the foramen magnum, is where the cranial and cervical elements interact, and is key to understanding the anatomical abnormality observed in this condition."
+      },
+      {
+        "short_answer": "occipital bone clivus",
+        "num_evidence": 1,
+        "final_text": "occipital bone clivus. Reason: Another specific description is the clivus, which is the sloping part of the occipital bone at the skull base. In basilar invagination, the upward displacement of cervical structures occurs in relation to this region, emphasizing its important role in the pathology."
+      }
+    ],
+    "golden": [
+      "c2 vertebra"
+    ],
+    "check": true
+  },
+  "134630": {
+    "mcq": {
+      "short_answer": "euphorbia nivulia",
+      "long_answer": "euphorbia nivulia. Reason: The reasoning for euphorbia nivulia explicitly states that it contains bilirubin, which is the same pigment responsible for the yellow discoloration observed in jaundice, making it the most consistent choice with the question."
+    },
+    "candidate": [
+      {
+        "short_answer": "carrot (daucus carota)",
+        "num_evidence": 1,
+        "final_text": "carrot (daucus carota). Reason: Reference: [CRAWL_WIKI_1], [CRAWL_WIKI_3]. Explanation: The context describes carotenosis, a condition in which excess dietary carotenoids cause a yellow to orange discoloration of the skin that is often mistaken for jaundice. Carotenoids such as beta‐carotene, which is abundant in carrots (Daucus carota), are implicated in this discoloration. Although jaundice is actually caused by accumulation of bilirubin—a different pigment—the similarity in skin hue can lead to confusion between the two conditions."
+      },
+      {
+        "short_answer": "euphorbia nivulia",
+        "num_evidence": 1,
+        "final_text": "euphorbia nivulia. Reason: The pigment implicated in the yellow discoloration seen in jaundice is bilirubin. Reference [GG_1] in the provided context discusses Euphorbia nivulia Buch. Ham. in relation to jaundice, indicating that this plant species contains bilirubin—the same pigment responsible for the yellow hue observed in the condition."
+      }
+    ],
+    "golden": [
+      "strelitzia nicolai"
+    ],
+    "check": false
+  },
+  "157149": {
+    "mcq": {
+      "short_answer": "spinal accessory nerve",
+      "long_answer": "spinal accessory nerve. Reason: The explanation for the spinal accessory nerve emphasizes its superficial course in the posterior triangle of the neck, which is where cystic hygromas are typically located, making it more prone to iatrogenic injury during surgical procedures compared to the vagus nerve."
+    },
+    "candidate": [
+      {
+        "short_answer": "vagus nerve",
+        "num_evidence": 1,
+        "final_text": "vagus nerve. Reason: Reference: [CRAWL_NER_WIKI_4]. Explanation: The context provides detailed information about the vagus nerve and its course through the neck. Since cystic hygromas typically occur in the neck region, particularly in areas such as the left posterior triangle where important neurovascular structures reside, the vagus nerve (cranial nerve X) is at risk during surgical procedures."
+      },
+      {
+        "short_answer": "spinal accessory nerve",
+        "num_evidence": 1,
+        "final_text": "spinal accessory nerve. Reason: The spinal accessory nerve, which is cranial nerve XI, is particularly vulnerable during surgical procedures involving cystic hygromas in the neck. These lesions are often located in the posterior triangle of the neck, where the spinal accessory nerve courses superficially, making it susceptible to iatrogenic injury during excision."
+      }
+    ],
+    "golden": [
+      "cranial nerve xi ",
+      "spinal accessory nerve"
+    ],
+    "check": true
+  },
+  "184466": {
+    "mcq": {
+      "short_answer": "fecal–oral transmission diagram",
+      "long_answer": "fecal–oral transmission diagram. Reason: Both answer choices refer to the fecal–oral route, which is accurate for Shigella transmission. However, the second answer choice specifically labels the diagram as the 'fecal–oral transmission diagram,' which directly matches the question's requirement to represent the diagram. The reasoning provided clearly indicates that this diagram highlights all key components of Shigella’s transmission."
+    },
+    "candidate": [
+      {
+        "short_answer": "fecal oral route",
+        "num_evidence": 2,
+        "final_text": "fecal oral route. Reason: Reference: [CRAWL_WIKI_3]. Explanation: Shigella primarily spreads through the fecal–oral route, which is best depicted by the F-diagram. The F-diagram illustrates the transmission pathways where pathogens from feces spread via fluids, fingers, flies, food, fields, and fomites, aligning with the transmission mechanism of Shigella. | The diagram that best represents the primary transmission route of Shigella is one that illustrates the fecal–oral route. This type of diagram typically shows how pathogens spread via contaminated hands, food, water, and other vectors, and it aligns with the known transmission pattern of Shigella."
+      },
+      {
+        "short_answer": "fecal–oral transmission diagram",
+        "num_evidence": 1,
+        "final_text": "fecal–oral transmission diagram. Reason: Since Shigella primarily spreads through the fecal–oral route, the diagram that best represents its transmission is the fecal–oral transmission diagram. This diagram highlights how contamination occurs through various pathways like fluids, fingers, and food, effectively capturing the core mechanism of Shigella spread."
+      }
+    ],
+    "golden": [
+      "fecal–oral route",
+      "fecal oral route"
+    ],
+    "check": false
+  },
+  "204623": {
+    "mcq": {
+      "short_answer": "achalasia",
+      "long_answer": "achalasia. Reason: The reasoning provided clearly indicates that in Triple-A syndrome the muscle ring (the lower esophageal sphincter) fails to open properly, a condition known as achalasia. This answer best aligns with the question and target answer type."
+    },
+    "candidate": [
+      {
+        "short_answer": "achalasia",
+        "num_evidence": 2,
+        "final_text": "achalasia. Reason: Reference: [CRAWL_NER_WIKI_2]. Detailed explanation based on the information: Triple-A syndrome, also known as Allgrove syndrome, is characterized by a triad of symptoms including adrenal insufficiency, alacrima (lack of tear production), and achalasia. Achalasia refers to the condition in which the muscle ring (specifically the lower esophageal sphincter, a fibromuscular tube component) does not open properly, leading to difficulties in the passage of food from the esophagus into the stomach. | In Triple-A syndrome, the failure of the muscle ring in the fibromuscular tube (specifically, the lower esophageal sphincter) to open properly is referred to as achalasia. This abnormality leads to esophageal dysfunction which hinders the passage of food from the esophagus into the stomach."
+      },
+      {
+        "short_answer": "esophageal achalasia",
+        "num_evidence": 1,
+        "final_text": "esophageal achalasia. Reason: The term 'esophageal achalasia' describes the failure of the muscle ring of the lower esophagus to relax and open, which is one of the key features of Triple-A syndrome. This defective relaxation impairs normal swallowing and is a hallmark of the syndrome's esophageal dysfunction."
+      }
+    ],
+    "golden": [
+      "achalasia"
+    ],
+    "check": true
+  },
+  "222137": {
+    "mcq": {
+      "short_answer": "hurley's staging system",
+      "long_answer": "hurley's staging system. Reason: The provided evidence consistently indicates that the chronic inflammatory skin condition—hidradenitis suppurativa—is primarily staged using the Hurley staging system, which categorizes the disease based on scarring, sinus tract formation, and lesion severity. This classification is widely used in clinical practice to guide treatment decisions, including the use of therapies like infliximab."
+    },
+    "candidate": [
+      {
+        "short_answer": "hurley's staging system",
+        "num_evidence": 1,
+        "final_text": "hurley's staging system. Reason: Reference: [CRAWL_WIKI_2]. Detailed explanation based on the information: Hidradenitis suppurativa, the chronic inflammatory skin disease characterized by painful lumps in the underarms, buttocks, or groin, is staged using Hurley's staging system. This primary classification system divides the condition into three stages based on the extent of cicatrization and the presence of sinus tracts, which helps in assessing the severity of disease and determining appropriate treatment strategies, including therapies like infliximab."
+      },
+      {
+        "short_answer": "hurley staging system",
+        "num_evidence": 1,
+        "final_text": "hurley staging system. Reason: Hidradenitis suppurativa is typically staged using the Hurley staging system, which classifies the disease into three stages based on the extent of scarring, sinus tract formation, and overall lesion severity. This system remains widely used in clinical practice to guide treatment, including the use of infliximab."
+      },
+      {
+        "short_answer": "sartorius staging system",
+        "num_evidence": 1,
+        "final_text": "sartorius staging system. Reason: An alternative classification for hidradenitis suppurativa is the Sartorius staging system, which provides a more detailed and dynamic assessment of disease severity than the Hurley system by evaluating specific anatomical regions involved, types of lesions, and the distance between lesions. This system is particularly useful in clinical research and for monitoring treatment effects, including therapies like infliximab."
+      }
+    ],
+    "golden": [
+      "hurley's staging system"
+    ],
+    "check": true
+  },
+  "224427": {
+    "mcq": {
+      "short_answer": "osilodrostat",
+      "long_answer": "osilodrostat. Reason: The reasoning clearly indicates that osilodrostat (sold as Isturisa) is specifically approved by the FDA to treat pituitary‐driven Cushing’s disease in adults who are either not candidates for surgery or have persistent disease after surgery. This matches the target answer type and question details most accurately."
+    },
+    "candidate": [
+      {
+        "short_answer": "osilodrostat",
+        "num_evidence": 2,
+        "final_text": "osilodrostat. Reason: Reference: [CRAWL_WIKI_1]. Explanation: Osilodrostat, sold under the brand name Isturisa, is specifically approved by the FDA for the treatment of adults with pituitary-driven Cushing’s disease who either are not candidates for pituitary surgery or have undergone surgery but still have the disease. The context clearly indicates that it is used under these circumstances and that its approval by the FDA was based on clinical evidence. | Reference: [CRAWL_NER_WIKI_2]. Detailed explanation based on the information: The context states that in March 2020, Isturisa (osilodrostat) oral tablets, a 11-beta-hydroxylase enzyme inhibitor, was approved by the FDA for treating patients with pituitary-driven Cushing’s disease who cannot undergo pituitary surgery or who continue to have the disease after surgery."
+      },
+      {
+        "short_answer": "isturisa",
+        "num_evidence": 1,
+        "final_text": "isturisa. Reason: Isturisa (osilodrostat) is the medication FDA‐approved for the treatment of pituitary-driven Cushing’s disease in adults who either are not candidates for pituitary surgery or continue to have disease after surgical intervention. It works by directly inhibiting 11β-hydroxylase, thereby reducing cortisol synthesis."
+      },
+      {
+        "short_answer": "signifor",
+        "num_evidence": 1,
+        "final_text": "signifor. Reason: Signifor (pasireotide) is another FDA-approved medication for adult patients with pituitary-driven Cushing’s disease who are not eligible for pituitary surgery. It functions as a somatostatin analog to help reduce ACTH secretion from pituitary adenomas."
+      }
+    ],
+    "golden": [
+      "isturisa",
+      "osilodrostat"
+    ],
+    "check": true
+  },
+  "230703": {
+    "mcq": {
+      "short_answer": "aphidicolin",
+      "long_answer": "aphidicolin. Reason: The reasoning explains that aphidicolin induces gaps and breaks at fragile sites on human chromosomes, specifically including the q27.2 region of the human X chromosome. This directly matches the question's focus on the q27.2 region, making aphidicolin the best answer."
+    },
+    "candidate": [
+      {
+        "short_answer": "distamycin a",
+        "num_evidence": 1,
+        "final_text": "distamycin a. Reason: Reference: [CRAWL_NER_WIKI_3]. Detailed explanation based on the information: The provided context in the section on chromosomal fragile sites states that rare fragile sites can be induced by compounds including bromodeoxyuridine (BrdU) or distamycin A. Distamycin A is specifically described as an antibiotic that preferentially binds to AT-pairs of DNA and is used to elicit breakage at these sites. Therefore, for the fragile site in the q27.2 region on the human X chromosome, distamycin A is the antibiotic that induces the breakage."
+      },
+      {
+        "short_answer": "aphidicolin",
+        "num_evidence": 2,
+        "final_text": "aphidicolin. Reason: Reference: [GG_13]. Explanation: The provided context in reference GG_13 states that aphidicolin, which inhibits DNA polymerase α, induces gaps and breaks at common fragile sites in human chromosomes. Based on this information, aphidicolin is the antibiotic that induces breaks at the fragile site in the q27.2 region of the human X chromosome. | Aphidicolin is the antibiotic known to induce breaks at fragile sites, specifically including the q27.2 region on the human X chromosome. It acts by inhibiting DNA polymerase, leading to DNA replication stress and breakage at these fragile sites."
+      }
+    ],
+    "golden": [
+      "aphidicolin"
+    ],
+    "check": true
+  },
+  "237915": {
+    "mcq": {
+      "short_answer": "vitamin b6 deficiency",
+      "long_answer": "vitamin b6 deficiency. Reason: Both the 'vitamin b6 deficiency' and 'pyridoxine' choices describe how a lack of vitamin B6 impairs the enzyme converting methionine to cysteine—the amino acid essential for forming disulfide bonds. While the 'cysteine' choice mentions that cysteine is essential (especially in sheep), it does not address the synthesis process within the body as directly as the vitamin B6-related options. Thus, vitamin b6 deficiency is the best answer based solely on the provided reasoning."
+    },
+    "candidate": [
+      {
+        "short_answer": "cysteine",
+        "num_evidence": 1,
+        "final_text": "cysteine. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The provided context describes cysteine as an amino acid with a thiol (–SH) side chain that is crucial for forming disulfide bonds in proteins. The context also notes that in sheep, cysteine is an essential amino acid obtained from their feed. Therefore, a deficiency of cysteine (an essential nutrient in this context) impairs the body's ability to synthesize the amino acid that is needed for disulfide bonding in proteins."
+      },
+      {
+        "short_answer": "vitamin b6 deficiency",
+        "num_evidence": 1,
+        "final_text": "vitamin b6 deficiency. Reason: A deficiency in vitamin B6 (pyridoxine) impairs the activity of enzymes, such as cystathionine beta synthase, which are necessary for converting methionine to cysteine. Since cysteine is the amino acid responsible for forming disulfide bonds in proteins, vitamin B6 deficiency can hinder proper protein structural stability."
+      },
+      {
+        "short_answer": "pyridoxine",
+        "num_evidence": 1,
+        "final_text": "pyridoxine. Reason: Pyridoxine, the active form of vitamin B6, is crucial for the transsulfuration pathway that converts methionine into cysteine. Cysteine provides the thiol groups needed for disulfide bond formation in proteins, so a deficiency in pyridoxine disrupts this process and impairs protein folding and stability."
+      }
+    ],
+    "golden": [
+      "vitamin b6 deficiency"
+    ],
+    "check": true
+  },
+  "252895": {
+    "mcq": {
+      "short_answer": "anosognosia",
+      "long_answer": "anosognosia. Reason: The reasoning clearly aligns with Babinski's initial description of anosognosia as a denial of illness, which in the context of Anton syndrome manifests as patients denying their blindness."
+    },
+    "candidate": [
+      {
+        "short_answer": "anosognosia",
+        "num_evidence": 1,
+        "final_text": "anosognosia. Reason: Reference: [CRAWL_WIKI_2], [CRAWL_WIKI_1]. Explanation: In 1914, Joseph Babinski introduced the concept of anosognosia, which is a condition characterized by a denial of illness or disability. In the case of Anton syndrome (also known as Anton–Babinski syndrome or visual anosognosia), patients who are cortically blind deny their blindness, which is a manifestation of anosognosia."
+      },
+      {
+        "short_answer": "cortical blindness",
+        "num_evidence": 1,
+        "final_text": "cortical blindness. Reason: Reference: [CRAWL_NER_WIKI_3], [CRAWL_NER_WIKI_4]. Detailed explanation based on the information: Anton syndrome, also referred to as Anton–Babinski syndrome, is a form of cortical blindness, which is characterized by patients being blind due to damage in the occipital lobes while denying their visual loss. The condition is linked to the discoveries of Joseph Babinski."
+      },
+      {
+        "short_answer": "visual anosognosia",
+        "num_evidence": 1,
+        "final_text": "visual anosognosia. Reason: Visual anosognosia is a syndrome characterized by the denial of blindness in patients who are cortically blind due to occipital lobe damage. This condition, first described by Joseph Babinski in 1914, underpins Anton syndrome and highlights how brain damage can disrupt awareness of deficits."
+      }
+    ],
+    "golden": [
+      "anosognosia"
+    ],
+    "check": true
+  },
+  "260402": {
+    "mcq": {
+      "short_answer": "4,977 base pair deletion",
+      "long_answer": "4,977 base pair deletion. Reason: All the provided answer choices consistently indicate that the deletion affecting approximately one-third of individuals with CPEO and associated with Kearns–Sayre syndrome is the 4,977 base pair deletion, making it the best answer based solely on the provided reasoning."
+    },
+    "candidate": [
+      {
+        "short_answer": "4,977 base pair deletion",
+        "num_evidence": 2,
+        "final_text": "4,977 base pair deletion. Reason: Reference: [CRAWL_WIKI_1], [CRAWL_WIKI_2]. Detailed explanation based on the information: The provided context mentions that a common deletion found in one-third of CPEO patients is a 4,977 base pair segment located between a 13 base pair repeat. Furthermore, in the Kearns–Sayre syndrome section, it is stated that the most common deletion is a 4.9 kb deletion spanning from position 8469 to 13147, which is present in approximately one-third of individuals with KSS. Both references therefore point to the 4,977 base pair deletion as the answer. | Reference: [CRAWL_NER_WIKI_9]. Explanation: The context states that a common deletion found in one-third of CPEO patients is a 4,977 base pair segment found between a 13 base pair repeat. This deletion is the most common large-scale mitochondrial DNA deletion associated with Kearns–Sayre syndrome."
+      },
+      {
+        "short_answer": "4,977 bp deletion",
+        "num_evidence": 1,
+        "final_text": "4,977 bp deletion. Reason: The mitochondrial DNA deletion in question is a 4,977 base pair deletion. This deletion is found in approximately one-third of individuals with chronic progressive external ophthalmoplegia (CPEO) and represents the most common deletion associated with Kearns–Sayre syndrome."
+      },
+      {
+        "short_answer": "4977 base pair deletion",
+        "num_evidence": 1,
+        "final_text": "4977 base pair deletion. Reason: This deletion, which removes 4,977 base pairs of mitochondrial DNA, is observed in about one-third of CPEO patients and is recognized as the most frequent deletion linked to Kearns–Sayre syndrome. It typically occurs between flanking 13 base pair repeats."
+      }
+    ],
+    "golden": [
+      "4977 bp deletion",
+      "4,977 base pair deletion"
+    ],
+    "check": true
+  },
+  "290551": {
+    "mcq": {
+      "short_answer": "calcitriol",
+      "long_answer": "calcitriol. Reason: The reasoning for calcitriol explains that individuals with xeroderma pigmentosum tend to avoid sun exposure due to sensitivity to ultraviolet light, leading to recommendations for vitamin D supplementation. Calcitriol is the biologically active form of vitamin D, which aligns with the target answer type."
+    },
+    "candidate": [
+      {
+        "short_answer": "all-trans retinoic acid",
+        "num_evidence": 1,
+        "final_text": "all-trans retinoic acid. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The context discusses isotretinoin, a retinoid related to vitamin A, and mentions its isomer tretinoin. Tretinoin is another name for all-trans retinoic acid, which is the biologically active form of vitamin A."
+      },
+      {
+        "short_answer": "retinoic acid",
+        "num_evidence": 1,
+        "final_text": "retinoic acid. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The context states that Iso is a retinoid, related to vitamin A, and it mentions the molecule’s close resemblance to retinoic acid, which is the natural, biologically active form of vitamin A."
+      },
+      {
+        "short_answer": "calcitriol",
+        "num_evidence": 1,
+        "final_text": "calcitriol. Reason: Calcitriol is the biologically active form of vitamin D. Individuals with xeroderma pigmentosum, who are highly sensitive to ultraviolet light and thus tend to have reduced sun exposure, are often recommended to take vitamin D supplements. As a result, calcitriol becomes important because it is responsible for the regulation of calcium and phosphate metabolism in the body."
+      }
+    ],
+    "golden": [
+      "1,25-dihydroxyvitamin d3"
+    ],
+    "check": false
+  },
+  "408853": {
+    "mcq": {
+      "short_answer": "muscle phosphoglycerate mutase",
+      "long_answer": "muscle phosphoglycerate mutase. Reason: The provided explanation for this answer choice states that glycogen storage disease X is characterized by a deficiency in the enzyme responsible for catalyzing the conversion of 3-phosphoglycerate to 2-phosphoglycerate during glycolysis. This enzyme is encoded by the PGAM2 gene, and its deficiency leads to the metabolic myopathy observed in the disease."
+    },
+    "candidate": [
+      {
+        "short_answer": "phosphoglycerate mutase 2",
+        "num_evidence": 1,
+        "final_text": "phosphoglycerate mutase 2. Reason: Reference: [CRAWL_WIKI_2]. Detailed explanation: The provided context explains that mutations in the PGAM2 gene cause muscle phosphoglycerate mutase deficiency, also known as glycogen storage disease X. This enzyme, known as muscle-specific phosphoglycerate mutase, catalyzes the interconversion of 3-phosphoglycerate to 2-phosphoglycerate during glycolysis. A deficiency of this enzyme leads to the metabolic myopathy observed in glycogen storage disease X."
+      },
+      {
+        "short_answer": "muscle phosphoglycerate mutase",
+        "num_evidence": 1,
+        "final_text": "muscle phosphoglycerate mutase. Reason: Glycogen storage disease type X is characterized by a deficiency in muscle phosphoglycerate mutase, the enzyme responsible for catalyzing the conversion of 3-phosphoglycerate to 2-phosphoglycerate in the glycolytic pathway. This enzyme is encoded by the PGAM2 gene, and mutations in this gene lead to the metabolic myopathy observed in the disease."
+      },
+      {
+        "short_answer": "pgam2",
+        "num_evidence": 1,
+        "final_text": "pgam2. Reason: The enzyme deficient in glycogen storage disease X is the muscle-specific phosphoglycerate mutase, which plays a key role in glycolysis by converting 3-phosphoglycerate into 2-phosphoglycerate. Deficiency of this enzyme, due to mutations in the PGAM2 gene, results in impaired glycolytic flux and the characteristic symptoms of the disease, such as exercise intolerance and muscle cramping."
+      }
+    ],
+    "golden": [
+      "pgam2",
+      "muscle phosphoglycerate mutase"
+    ],
+    "check": true
+  },
+  "515320": {
+    "mcq": {
+      "short_answer": "kidney",
+      "long_answer": "kidney. Reason: Both answer choices indicate that renal disease in Barakat syndrome affects the kidneys, which are responsible for filtering the blood. The first choice presents it in the singular form, aligning directly with the question's request for an organ."
+    },
+    "candidate": [
+      {
+        "short_answer": "kidney",
+        "num_evidence": 1,
+        "final_text": "kidney. Reason: Reference: [CRAWL_NER_WIKI_3]. Detailed explanation based on the information: Barakat syndrome is characterized by hypoparathyroidism, sensorineural deafness, and renal disease. The renal component affects the kidneys, which are the blood-filtering organs responsible for removing waste products and excess fluids from the blood."
+      },
+      {
+        "short_answer": "kidneys",
+        "num_evidence": 1,
+        "final_text": "kidneys. Reason: Barakat syndrome, also known as HDR syndrome, is characterized by hypoparathyroidism, sensorineural deafness, and renal disease. The renal disease aspect affects the kidneys, which are the blood-filtering organs responsible for removing waste products and balancing bodily fluids."
+      }
+    ],
+    "golden": [
+      "kidney"
+    ],
+    "check": true
+  },
+  "532019": {
+    "mcq": {
+      "short_answer": "gsd vi (hers disease)",
+      "long_answer": "gsd vi (hers disease). Reason: All choices refer to glycogen storage disease type VI, known as Hers disease, which was characterized in 1959 and is included in the differential diagnosis for glycogen storage disease type III. The reasoning in this choice most directly matches the target answer type."
+    },
+    "candidate": [
+      {
+        "short_answer": "gsd vi (hers disease)",
+        "num_evidence": 1,
+        "final_text": "gsd vi (hers disease). Reason: Reference: [CRAWL_NER_WIKI_1]. Detailed explanation: The provided context states that the differential diagnosis for glycogen storage disease type III includes GSD I, GSD IX, and GSD VI. GSD VI, also known as Hers disease, is the glycogen storage disease that was characterized in 1959."
+      },
+      {
+        "short_answer": "glycogen storage disease type vi",
+        "num_evidence": 1,
+        "final_text": "glycogen storage disease type vi. Reason: Glycogen storage disease type VI, also known as Hers disease, was characterized in 1959 and is included in the differential diagnosis for glycogen storage disease type III. This condition is due to a deficiency in liver phosphorylase and must be distinguished from other forms of glycogen storage disorders."
+      },
+      {
+        "short_answer": "hers disease",
+        "num_evidence": 1,
+        "final_text": "hers disease. Reason: Hers disease, the alternative name for glycogen storage disease type VI, was described in 1959. It is considered in the differential diagnosis for glycogen storage disease type III because it shares some overlapping clinical features, notably hepatomegaly and mild hypoglycemia resulting from impaired glycogen metabolism."
+      }
+    ],
+    "golden": [
+      "glycogen storage disease type vi"
+    ],
+    "check": true
+  },
+  "545881": {
+    "mcq": {
+      "short_answer": "arteriovenous fistula",
+      "long_answer": "arteriovenous fistula. Reason: Both choices describe an abnormal connection that directly links an artery and a vein, bypassing the arteriolar network and causing decreased total peripheral resistance and increased cardiac output. However, the term 'arteriovenous fistula' is more specifically used in this context, particularly when a major artery is involved, matching the target answer type more precisely."
+    },
+    "candidate": [
+      {
+        "short_answer": "arteriovenous fistula",
+        "num_evidence": 2,
+        "final_text": "arteriovenous fistula. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: An arteriovenous fistula is an abnormal connection between an artery and a vein. When it involves a major artery, such as the abdominal aorta, it causes a large decrease in total peripheral resistance because blood bypasses the arterioles. This decrease in resistance results in a significant increase in cardiac output as the heart compensates to maintain proper tissue perfusion. | An arteriovenous fistula is an abnormal connection between an artery and a vein that bypasses the capillary network, leading to decreased total peripheral resistance and a significant compensatory increase in cardiac output, particularly when a major artery is involved."
+      },
+      {
+        "short_answer": "arteriovenous shunt",
+        "num_evidence": 1,
+        "final_text": "arteriovenous shunt. Reason: An arteriovenous shunt is an abnormal vascular connection that directly links an artery and a vein. This connection decreases total peripheral resistance by bypassing the arteriolar network, leading to an increase in cardiac output, especially when a major artery is involved."
+      }
+    ],
+    "golden": [
+      "arteriovenous fistula"
+    ],
+    "check": true
+  },
+  "559411": {
+    "mcq": {
+      "short_answer": "early myoclonic encephalopathy",
+      "long_answer": "early myoclonic encephalopathy. Reason: The provided reasoning for the early myoclonic encephalopathy answer choices directly aligns with the description in the question. Both choices emphasize that the condition occurs within the first three months of life and is characterized by fragmentary myoclonic jerks or violent myoclonic spasms during the neonatal period or early infancy, which is most consistent with early myoclonic encephalopathy (EME)."
+    },
+    "candidate": [
+      {
+        "short_answer": "early myoclonic encephalopathy",
+        "num_evidence": 2,
+        "final_text": "early myoclonic encephalopathy. Reason: Reference: [GG_1], [GG_13]. Detailed explanation based on the information: The context describes a form of epileptic encephalopathy that presents within the first three months of life and is characterized by fragmentary myoclonic jerks or violent myoclonic spasms during the neonatal period. This condition is referred to as early myoclonic encephalopathy (EME). | The severe form of epilepsy described, which presents within the first three months of life with fragmentary myoclonic jerks or violent myoclonic spasms during the neonatal period or early infancy, is known as early myoclonic encephalopathy (EME). This condition is a type of early-onset epileptic encephalopathy characterized by erratic myoclonus and severe seizure activity occurring during the neonatal period."
+      },
+      {
+        "short_answer": "eme",
+        "num_evidence": 1,
+        "final_text": "eme. Reason: Reference: [GG_1], [GG_13]. Detailed explanation based on the information: The provided context indicates that a severe form of epilepsy occurring within the first three months of life, characterized by fragmentary myoclonic jerks or violent myoclonic spasms, is referred to as Early Myoclonic Encephalopathy (EME)."
+      },
+      {
+        "short_answer": "infantile epileptic spasms syndrome",
+        "num_evidence": 2,
+        "final_text": "infantile epileptic spasms syndrome. Reason: Reference: [CRAWL_NER_WIKI_1]. Explanation: The context describes Infantile epileptic spasms syndrome (IESS), formerly known as West syndrome, as a severe epileptic encephalopathy that is characterized by the presence of epileptic spasms. These spasms, which can be described as violent or fragmentary myoclonic spasms, occur in early infancy. Although the text notes that the peak age of onset is typically 4–6 months, the description provided in the context indicates that the syndrome includes severe epileptic spasms in the neonatal period or early infancy. | Reference: [CRAWL_NER_WIKI_1]. Detailed explanation based on the information: The provided context describes IESS (Infantile Epileptic Spasms Syndrome), which was previously known as West syndrome. This severe form of epilepsy is characterized by epileptic spasms (including fragmentary or violent myoclonic spasms) in neonates or early infancy. Although the peak age of onset is noted as 4–6 months in the context, West syndrome remains the recognized severe epilepsy syndrome referenced."
+      }
+    ],
+    "golden": [
+      "early myoclonic encephalopathy"
+    ],
+    "check": true
+  },
+  "571485": {
+    "mcq": {
+      "short_answer": "abdominal panniculus",
+      "long_answer": "abdominal panniculus. Reason: This answer clearly describes the thick, dense layer of fatty tissue in the lower abdominal region that is noted to form after rapid weight loss and may be affected in deep morphea. Its reasoning directly matches the description provided in the question."
+    },
+    "candidate": [
+      {
+        "short_answer": "panniculus",
+        "num_evidence": 2,
+        "final_text": "panniculus. Reason: Reference: [CRAWL_NER_WIKI_4], [CRAWL_NER_WIKI_6]. Explanation: The provided context describes a dense layer of adipose tissue that can develop in the lower abdomen, particularly in cases of substantial weight loss where excess fatty tissue may hang as an 'apron.' In deep morphea, the inflammatory process can extend into the deep subcutaneous tissues, including the panniculus, which refers to this dense subcutaneous layer of fat that hangs from the abdomen. | Reference: [CRAWL_NER_WIKI_6]. Detailed explanation based on the information: In the context provided, deep morphea is described as a form of morphea that involves inflammation and sclerosis not only in the deep dermis but also in the underlying structures such as the panniculus. The term panniculus refers to the dense subcutaneous layer of fatty tissue in the lower abdominal region that can form after rapid weight loss."
+      },
+      {
+        "short_answer": "abdominal pannus",
+        "num_evidence": 1,
+        "final_text": "abdominal pannus. Reason: Reference: [CRAWL_NER_WIKI_4], [CRAWL_NER_WIKI_7]. Explanation: The context describes the characteristic excess of adipose tissue hanging from the abdomen in obese individuals, which may remain as an 'apron of skin' after significant weight loss. This dense subcutaneous layer of fatty tissue is known as the abdominal pannus, and in cases of deep morphea, it may become inflamed or sclerotic due to the involvement of the deeper skin layers."
+      },
+      {
+        "short_answer": "panniculus adiposus",
+        "num_evidence": 1,
+        "final_text": "panniculus adiposus. Reason: This dense layer of subcutaneous fat, particularly in the lower abdomen, is referred to as the panniculus adiposus. After significant or rapid weight loss, this fatty apron can remain and in conditions like deep morphea may become inflamed or sclerotic."
+      },
+      {
+        "short_answer": "abdominal panniculus",
+        "num_evidence": 1,
+        "final_text": "abdominal panniculus. Reason: The term abdominal panniculus refers to the thick, dense accumulation of fatty tissue located under the skin in the lower abdominal region. Rapid weight loss can result in a persistent fatty apron that is prone to inflammation or sclerosis, particularly in the setting of deep morphea."
+      }
+    ],
+    "golden": [
+      "panniculus"
+    ],
+    "check": true
+  },
+  "632188": {
+    "mcq": {
+      "short_answer": "mayer–rokitansky–küster–hauser syndrome",
+      "long_answer": "mayer–rokitansky–küster–hauser syndrome. Reason: All answer choices describe the same syndrome characterized by Müllerian agenesis, with the lack of a uterus and cervix, while the ovaries function normally. This syndrome leads to primary amenorrhea despite normal secondary sex characteristics, making 'mayer–rokitansky–küster–hauser syndrome' the most appropriate answer."
+    },
+    "candidate": [
+      {
+        "short_answer": "mayer–rokitansky–küster–hauser syndrome",
+        "num_evidence": 1,
+        "final_text": "mayer–rokitansky–küster–hauser syndrome. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The context explains that Mayer–Rokitansky–Küster–Hauser (MRKH) syndrome is characterized by Müllerian agenesis, where the Müllerian ducts develop abnormally, resulting in the absence of a uterus and cervix. Despite the lack of a uterus, individuals with MRKH syndrome have functioning ovaries and, therefore, normal development of secondary sexual characteristics, leading to primary amenorrhea."
+      },
+      {
+        "short_answer": "mayer–rokitansky–küster–hauser (mrkh) syndrome",
+        "num_evidence": 1,
+        "final_text": "mayer–rokitansky–küster–hauser (mrkh) syndrome. Reason: Reference: [CRAWL_NER_WIKI_4]. Detailed explanation based on the provided context: MRKH syndrome is a congenital condition characterized by abnormal development of the Müllerian ducts, leading to the absence of the uterus and cervix. Despite this absence, the ovaries are functioning normally, allowing for the development of normal secondary sex characteristics. This results in primary amenorrhea in affected females."
+      },
+      {
+        "short_answer": "mullerian agenesis",
+        "num_evidence": 1,
+        "final_text": "mullerian agenesis. Reason: Mayer-Rokitansky-Küster-Hauser syndrome is a congenital condition characterized by the absence of the uterus and upper part of the vagina, while the ovaries function normally. As a result, affected females develop normal secondary sexual characteristics despite experiencing primary amenorrhea."
+      }
+    ],
+    "golden": [
+      "mrkh syndrome"
+    ],
+    "check": true
+  },
+  "643490": {
+    "mcq": {
+      "short_answer": "sarcoglycanopathies (e.g., lgmd2d)",
+      "long_answer": "sarcoglycanopathies (e.g., lgmd2d). Reason: All provided answer choices indicate that limb‐girdle muscular dystrophies due to sarcoglycan gene mutations can show reduced dystrophin immunostaining even though the dystrophin gene is intact, with LGMD2D (α-sarcoglycan deficiency) given as an example. This reasoning aligns perfectly with the question."
+    },
+    "candidate": [
+      {
+        "short_answer": "sarcoglycanopathies (e.g., lgmd2d)",
+        "num_evidence": 1,
+        "final_text": "sarcoglycanopathies (e.g., lgmd2d). Reason: Reference: [CRAWL_NER_WIKI_1]. Detailed explanation based on the information provided: Immunohistochemical dystrophin tests in limb‐girdle muscular dystrophy can indicate a decrease in dystrophin in sarcoglycanopathies. These forms of LGMD show reduced dystrophin levels even though the dystrophin gene itself is not mutated, with one example being LGMD2D, which is associated with α-sarcoglycan deficiency."
+      },
+      {
+        "short_answer": "sarcoglycanopathies",
+        "num_evidence": 1,
+        "final_text": "sarcoglycanopathies. Reason: Limb–girdle muscular dystrophies caused by mutations in the sarcoglycan genes (such as LGMD2C, LGMD2D, and LGMD2E) may show decreased dystrophin levels on immunohistochemical testing even though the dystrophin gene itself is not mutated."
+      },
+      {
+        "short_answer": "lgmd sarcoglycan defects",
+        "num_evidence": 1,
+        "final_text": "lgmd sarcoglycan defects. Reason: Certain forms of limb–girdle muscular dystrophy that result from sarcoglycan deficiencies can demonstrate reduced dystrophin immunostaining. These subtypes, despite normal dystrophin gene integrity, display decreased dystrophin levels due to the secondary effects of impaired sarcoglycan proteins."
+      }
+    ],
+    "golden": [
+      "sarcoglycanopathy",
+      "sarcoglycanopathies"
+    ],
+    "check": true
+  },
+  "651642": {
+    "mcq": {
+      "short_answer": "vesicle-mediated protein sorting",
+      "long_answer": "vesicle-mediated protein sorting. Reason: The provided reasoning shows that the VPS33B gene, which is implicated in arthrogryposis–renal dysfunction–cholestasis syndrome, encodes a protein that mediates vesicle-mediated protein sorting, particularly within the endosome/lysosome pathway. This explanation most directly addresses the function compared to the other similar answer choices."
+    },
+    "candidate": [
+      {
+        "short_answer": "vesicle mediated protein sorting",
+        "num_evidence": 1,
+        "final_text": "vesicle mediated protein sorting. Reason: Reference: [CRAWL_WIKI_2]. Detailed explanation based on the information: The gene implicated in arthrogryposis–renal dysfunction–cholestasis syndrome is VPS33B. VPS33B encodes a protein that mediates vesicle trafficking by playing an important role in vesicle mediated protein sorting, particularly in the endosome/lysosome pathway."
+      },
+      {
+        "short_answer": "a regulator of snare-dependent membrane trafficking",
+        "num_evidence": 1,
+        "final_text": "a regulator of snare-dependent membrane trafficking. Reason: Reference: [GG_8], [GG_4], [GG_12]. Explanation: The provided context indicates that mutations in the VPS33B gene are responsible for arthrogryposis–renal dysfunction–cholestasis syndrome. In particular, reference [GG_8] mentions that VPS33B encodes a regulator of SNARE-dependent processes, while references [GG_4] and [GG_12] further suggest its role in regulating biliary development and epithelial polarization. Collectively, this information shows that the gene mediates SNARE-dependent membrane trafficking, which is essential for proper cellular polarization and function."
+      },
+      {
+        "short_answer": "vacuolar protein sorting",
+        "num_evidence": 1,
+        "final_text": "vacuolar protein sorting. Reason: Reference: [WIKI_2], [WIKI_10]. Explanation: The provided context indicates that mutations in VPS33B are responsible for arthrogryposis–renal dysfunction–cholestasis syndrome and that the VPS33B gene encodes a protein involved in vacuolar protein sorting, which plays a role in the formation of vacuoles and vesicular trafficking within cells."
+      },
+      {
+        "short_answer": "it mediates thesis of vacuoles",
+        "num_evidence": 1,
+        "final_text": "it mediates thesis of vacuoles. Reason: Reference: [WIKI_10]. Explanation: The provided context from WIKI_10 indicates that the gene VPS33B, which is responsible for arthrogryposis–renal dysfunction–cholestasis syndrome, encodes a protein involved in the genesis of vacuoles. This suggests its role in vesicle formation and intracellular trafficking."
+      },
+      {
+        "short_answer": "vesicle-mediated protein sorting",
+        "num_evidence": 1,
+        "final_text": "vesicle-mediated protein sorting. Reason: Reference: [CRAWL_WIKI_2]. Detailed explanation based on the information: The VPS33B gene, which is linked to arthrogryposis–renal dysfunction–cholestasis syndrome (ARC Syndrome), encodes a protein that mediates vesicle-mediated protein sorting. This process plays an important role in segregating intracellular molecules into distinct organelles and may mediate trafficking steps in the endosome/lysosome pathway."
+      },
+      {
+        "short_answer": "vesicle trafficking",
+        "num_evidence": 1,
+        "final_text": "vesicle trafficking. Reason: The gene responsible, VPS33B, mediates vesicle-mediated protein sorting and trafficking. It is involved in the regulation of SNARE-dependent membrane fusion in the endosomal/lysosomal pathway, which is critical for the proper segregation and delivery of intracellular molecules."
+      },
+      {
+        "short_answer": "snare-dependent fusion",
+        "num_evidence": 1,
+        "final_text": "snare-dependent fusion. Reason: VPS33B encodes a protein that acts as a regulator of SNARE-dependent membrane fusion. This process is vital for vesicle transport within the cell, ensuring proper trafficking through the endosome to the lysosome, and maintaining intracellular organization and function."
+      }
+    ],
+    "golden": [
+      "membrane vesicle trafficking",
+      "vesicle trafficking"
+    ],
+    "check": false
+  },
+  "656117": {
+    "mcq": {
+      "short_answer": "rho(d) immune globulin",
+      "long_answer": "rho(d) immune globulin. Reason: This answer choice provides detailed reasoning that matches the specific prophylactic injection used to prevent Rh-mediated hydrops fetalis, including its mechanism and timing of administration, making it the best match for the question."
+    },
+    "candidate": [
+      {
+        "short_answer": "rho(d) immune globulin",
+        "num_evidence": 1,
+        "final_text": "rho(d) immune globulin. Reason: Reference: [CRAWL_NER_WIKI_1], [CRAWL_NER_WIKI_2]. Explanation: The context explains that immune-mediated hydrops fetalis, also known as Rh disease, occurs when an Rh-negative mother becomes sensitized to Rh-positive fetal red blood cells. This condition can be prevented by prophylactic administration of Rho(D) immune globulin (anti-D IgG), which is given to Rh-negative mothers during pregnancy (typically at 28 and 34 weeks) and postpartum to prevent the mother's immune system from developing antibodies against the D antigen."
+      },
+      {
+        "short_answer": "rh immunoglobulin injection",
+        "num_evidence": 1,
+        "final_text": "rh immunoglobulin injection. Reason: The Rh immunoglobulin injection, commonly known as RhoGAM, is used prophylactically in RhD-negative pregnant women. It works by binding any fetal Rh-positive cells that may enter the maternal circulation, preventing the mother's immune system from generating antibodies that could lead to immune-mediated hydrops fetalis."
+      },
+      {
+        "short_answer": "rhogam",
+        "num_evidence": 1,
+        "final_text": "rhogam. Reason: RhoGAM is a specific form of anti-D immunoglobulin given as a prophylactic injection to RhD-negative mothers. By preventing Rh alloimmunization, it significantly reduces the incidence of Rh disease, which can result in immune hydrops fetalis if left untreated in subsequent pregnancies."
+      }
+    ],
+    "golden": [
+      "rho (d) immune globulin",
+      "rho(d) immune globulin"
+    ],
+    "check": true
+  },
+  "672653": {
+    "mcq": {
+      "short_answer": "major depressive disorder",
+      "long_answer": "The answer choice 'major depressive disorder' is the best answer because its reasoning directly describes a condition characterized by a persistent low mood and a pronounced aversion to activities, and it specifically mentions the link between such mood disturbances and hypertension through biological and behavioral mechanisms. This aligns with the target answer type and the criteria provided in the question."
+    },
+    "candidate": [
+      {
+        "short_answer": "depression",
+        "num_evidence": 1,
+        "final_text": "depression. Reason: Reference: [CRAWL_WIKI_3]. Explanation: The context provided in the anger section mentions that suppressed anger can lead to depression. Depression is traditionally characterized by a persistent low mood and a lack of interest in or aversion to activities."
+      },
+      {
+        "short_answer": "major depressive disorder",
+        "num_evidence": 1,
+        "final_text": "major depressive disorder. Reason: Major depressive disorder is a condition characterized by a persistent low mood and a pronounced aversion to activities that were once enjoyable. Research has linked depression to hypertension through underlying biological and behavioral mechanisms, suggesting that changes in mood and stress-related responses can contribute to elevated blood pressure."
+      },
+      {
+        "short_answer": "persistent depressive disorder",
+        "num_evidence": 1,
+        "final_text": "persistent depressive disorder. Reason: Persistent depressive disorder, also known as dysthymia, is marked by chronic low mood and diminished interest in daily activities. Although it typically involves less severe symptoms than major depressive disorder, it still manifests as a long-term depressive state. This condition has been associated with hypertension, as chronic mood disturbances may lead to physiological changes that affect cardiovascular health."
+      }
+    ],
+    "golden": [
+      "depression"
+    ],
+    "check": true
+  },
+  "689063": {
+    "mcq": {
+      "short_answer": "cyp1a2",
+      "long_answer": "cyp1a2. Reason: Both answer choices identify the enzyme as CYP1A2, and its location on chromosome 15 along with its function in xenobiotic metabolism, including toluene metabolism, aligns perfectly with the question. The answer 'cyp1a2' is concise and meets the target answer type."
+    },
+    "candidate": [
+      {
+        "short_answer": "cyp1a2",
+        "num_evidence": 1,
+        "final_text": "cyp1a2. Reason: CYP1A2 is a cytochrome P450 enzyme encoded by the gene located on chromosome 15. It plays a critical role in the metabolism of xenobiotics, including toluene, by facilitating their conversion into more hydrophilic compounds that can be eliminated from the body."
+      },
+      {
+        "short_answer": "cytochrome p450 1a2",
+        "num_evidence": 1,
+        "final_text": "cytochrome p450 1a2. Reason: The enzyme Cytochrome P450 1A2, known as CYP1A2, is situated on chromosome 15 and is integral in metabolizing various xenobiotics such as toluene. Its activity contributes to the detoxification pathways necessary to reduce toxic exposure from environmental chemicals."
+      }
+    ],
+    "golden": [
+      "cyp1a2"
+    ],
+    "check": true
+  },
+  "695539": {
+    "mcq": {
+      "short_answer": "hematopoietic growth factor",
+      "long_answer": "hematopoietic growth factor. Reason: The reasoning indicates that hematopoietic growth factors are molecules that promote the growth and maturation of blood cells and are used as supportive therapy in Fanconi anemia, which is directly consistent with the question."
+    },
+    "candidate": [
+      {
+        "short_answer": "hematopoietic growth factor",
+        "num_evidence": 2,
+        "final_text": "hematopoietic growth factor. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The provided context explains that treatment with androgens and hematopoietic (blood cell) growth factors helps temporarily manage bone marrow failure in Fanconi anemia. Hematopoietic growth factors are molecules that promote the growth and maturation of blood cells, making them a supportive therapy in this disorder. | Reference: [CRAWL_NER_WIKI_1]. Detailed explanation based on the information: The context indicates that Fanconi anemia, a disorder characterized by bone marrow failure, can be managed temporarily with supportive therapies. These include treatment with androgens and hematopoietic (blood cell) growth factors. Hematopoietic growth factors are molecules that promote the growth and maturation of blood cells, thereby serving as a supportive therapy in Fanconi anemia."
+      },
+      {
+        "short_answer": "danazol",
+        "num_evidence": 1,
+        "final_text": "danazol. Reason: Danazol is a synthetic androgen with properties that promote blood cell growth and maturation. It is utilized as a supportive therapy in Fanconi anemia to temporarily improve bone marrow function and counteract aplastic anemia."
+      }
+    ],
+    "golden": [
+      "hematopoietic growth factor"
+    ],
+    "check": true
+  },
+  "707707": {
+    "mcq": {
+      "short_answer": "pulmonary siderosis",
+      "long_answer": "pulmonary siderosis. Reason: The provided reasoning for pulmonary siderosis clearly links the condition to the repeated inhalation of fine iron or rust dust particles, leading to patchy deposits of iron in the alveoli, which matches the description in the question.",
+      "explanation": "Both choices refer to essentially the same disease, but 'pulmonary siderosis' is the direct answer matching the provided evidence and reasoning."
+    },
+    "candidate": [
+      {
+        "short_answer": "pulmonary siderosis",
+        "num_evidence": 2,
+        "final_text": "pulmonary siderosis. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation: Pulmonary siderosis, also known as Welder's disease, is a condition that results from the repeated inhalation of fine iron or rust dust particles. This inhalation leads to patchy deposits of iron in the alveoli (the tiny air sacs responsible for gas exchange) of the lung. | Pulmonary siderosis is a lung disease that results from the repeated inhalation of fine iron or rust dust particles over a period of years. The inhaled dust leads to patchy deposits of iron in the alveoli, the tiny air sacs in the lungs where gas exchange occurs, and is often seen in individuals exposed to such particles in occupational settings."
+      },
+      {
+        "short_answer": "welder's disease",
+        "num_evidence": 1,
+        "final_text": "welder's disease. Reason: Also known as welder's lung, this condition is a form of pulmonary siderosis where repeated exposure to iron-containing dust (often during welding or similar work) causes iron particles to accumulate in the alveoli. The resulting patchy iron deposits in the tiny air sacs may compromise the normal process of gas exchange."
+      }
+    ],
+    "golden": [
+      "pulmonary siderosis",
+      "siderosis"
+    ],
+    "check": true
+  },
+  "709773": {
+    "mcq": {
+      "short_answer": "severe acute respiratory syndrome",
+      "long_answer": "severe acute respiratory syndrome. Reason: The reasoning provided in this choice clearly states that the epidemic disease that emerged in November 2002, characterized by lymphocytopenia, was Severe Acute Respiratory Syndrome (SARS). It directly matches the question's criteria and is the best answer choice."
+    },
+    "candidate": [
+      {
+        "short_answer": "sars disease",
+        "num_evidence": 1,
+        "final_text": "sars disease. Reason: Reference: [CRAWL_NER_WIKI_3]. Explanation: The provided context states that the SARS disease caused lymphocytopenia. Given that the question asks about an epidemic disease characterized by lymphocytopenia that emerged in November 2002, the answer that aligns with this characteristic is the SARS disease."
+      },
+      {
+        "short_answer": "severe acute respiratory syndrome",
+        "num_evidence": 1,
+        "final_text": "severe acute respiratory syndrome. Reason: The epidemic disease that emerged in November 2002, characterized by symptoms such as lymphocytopenia, is Severe Acute Respiratory Syndrome (SARS). SARS is an infectious disease caused by a novel coronavirus, and its outbreak was noted for its rapid spread to multiple countries and its association with lymphopenia among other symptoms."
+      }
+    ],
+    "golden": [
+      "sars",
+      "severe acute respiratory syndrome"
+    ],
+    "check": true
+  },
+  "714294": {
+    "mcq": {
+      "short_answer": "p.arg4810lys",
+      "long_answer": "p.arg4810lys. Reason: The provided reasoning for this option specifically states that the p.Arg4810Lys variant in the RNF213 gene was the first mutation identified as causing Moyamoya disease-2, as demonstrated by genome‐wide association studies, making it the best answer among the choices."
+    },
+    "candidate": [
+      {
+        "short_answer": "rnf213",
+        "num_evidence": 1,
+        "final_text": "rnf213. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The provided context explains that susceptibility to Moyamoya disease-2 (MYMY2) is caused by a variation in the RNF213 gene located on chromosome 17 (17q25). This indicates that the first mutation identified as causing Moyamoya disease-2 involves the RNF213 gene."
+      },
+      {
+        "short_answer": "p.arg4810lys",
+        "num_evidence": 3,
+        "final_text": "p.arg4810lys. Reason: Reference: [GG_6], [GG_17] Explanation: The provided context indicates that genome-wide association studies identified RNF213 as the first gene associated with Moyamoya disease and specifically points out the p.Arg4810Lys (also noted as p.R4810K) variant in RNF213 as the mutation first reported as a susceptibility factor for the disease. | The first mutation identified as causing Moyamoya disease-2 is the p.Arg4810Lys variant in the RNF213 gene. This mutation was discovered through genome-wide association studies and has been established as a significant genetic risk factor for the disease. | Research into Moyamoya disease-2 revealed that the p.Arg4810Lys mutation in the RNF213 gene was the initial genetic change linked to the condition. This finding, demonstrated in early genetic studies, marked the first causal association of a mutation with Moyamoya disease-2."
+      },
+      {
+        "short_answer": "p.r4810k",
+        "num_evidence": 1,
+        "final_text": "p.r4810k. Reason: Reference: [GG_1], [GG_17]. Explanation: According to the provided context, a genome-wide association study identified RNF213 as the first Moyamoya disease gene and subsequent research, as mentioned in reference [GG_17], has identified the p.R4810K founder mutation in this gene. This mutation was the first mutation found to confer susceptibility to Moyamoya disease."
+      },
+      {
+        "short_answer": "variation in the rnf213",
+        "num_evidence": 1,
+        "final_text": "variation in the rnf213. Reason: Reference: [CRAWL_NER_WIKI_1]. Explanation: The provided context states that susceptibility to moyamoya disease-2 (MYMY2) is caused by a variation in the RNF213 gene (613768) located on the long arm of chromosome 17 (17q25). However, the context does not detail the specific mutation variant that was first found to cause the disease."
+      }
+    ],
+    "golden": [
+      "p.r4810k",
+      "p.arg4810lys"
+    ],
+    "check": true
+  },
+  "725163": {
+    "mcq": {
+      "short_answer": "absence of fingerprints-congenital milia syndrome",
+      "long_answer": "absence of fingerprints-congenital milia syndrome. Reason: Both choices list the defining features including the absence of fingerprints with congenital milia, early blisters, and involvement of the SMARCAD1 gene on chromosome 4 in an autosomal dominant pattern with only ten families reported worldwide. However, the first answer explicitly names the condition as 'absence of fingerprints-congenital milia syndrome' (also known as Baird syndrome), which matches the details of the question most directly."
+    },
+    "candidate": [
+      {
+        "short_answer": "absence of fingerprints-congenital milia syndrome",
+        "num_evidence": 2,
+        "final_text": "absence of fingerprints-congenital milia syndrome. Reason: Reference: [CRAWL_NER_WIKI_4], [CRAWL_NER_WIKI_6]. Explanation: The provided context describes 'Absence of fingerprints-congenital milia syndrome', also known as Baird syndrome, as an extremely rare autosomal dominant genetic disorder. It is characterized by the absence of fingerprints, the appearance of blisters and facial milia soon after birth, and has been reported in only ten families worldwide. Additionally, the disorder is caused by mutations in the SMARCAD1 gene located on chromosome 4. | Absence of fingerprints-congenital milia syndrome, also known as Baird syndrome, is an extremely rare autosomal dominant disorder. It is characterized by the congenital absence of fingerprints along with the development of blisters and facial milia shortly after birth. The condition is caused by mutations in a skin-specific isoform of the SMARCAD1 gene on chromosome 4 and has been reported in only ten families worldwide."
+      },
+      {
+        "short_answer": "basan syndrome",
+        "num_evidence": 1,
+        "final_text": "basan syndrome. Reason: Basan syndrome is an autosomal dominant disorder that presents with congenital absence of fingerprints, as well as the onset of blisters and facial milia soon after birth. This condition is due to mutations in the SMARCAD1 gene on chromosome 4 and is extremely rare, having been described in only ten families worldwide."
+      }
+    ],
+    "golden": [
+      "basan syndrome",
+      "absence of fingerprints-congenital milia syndrome"
+    ],
+    "check": true
+  },
+  "745330": {
+    "mcq": {
+      "short_answer": "tumor protein p53",
+      "long_answer": "tumor protein p53. Reason: All provided answer choices identify this gene as the 'guardian of the genome' with ultraviolet radiation causing mutations that lead to actinic keratoses. The reasoning consistently supports that tumor protein p53 is the correct tumor suppressor gene involved."
+    },
+    "candidate": [
+      {
+        "short_answer": "p53",
+        "num_evidence": 2,
+        "final_text": "p53. Reason: Reference: [CRAWL_NER_WIKI_4], [CRAWL_NER_WIKI_5]. Explanation: The provided context identifies p53 as the tumor suppressor gene known as the 'guardian of the genome' due to its critical role in conserving genome stability. It is noted that mutations in the p53 gene, induced by ultraviolet radiation, contribute to the development of actinic keratoses. This directly answers the question, confirming that p53 is the gene involved in this process. | p53 is the tumor suppressor gene often referred to as the 'guardian of the genome.' Ultraviolet radiation induces specific mutations in the p53 gene, impairing its role in maintaining DNA integrity and cell cycle regulation. This loss of function contributes to the development of actinic keratoses, which are benign precursor lesions that can progress to skin cancers."
+      },
+      {
+        "short_answer": "tumor protein p53",
+        "num_evidence": 1,
+        "final_text": "tumor protein p53. Reason: The tumor protein p53, known as the ‘guardian of the genome,’ is a key regulator of DNA repair and apoptosis. UV radiation can cause mutations in this gene, compromising its ability to control the cell cycle and respond to DNA damage. Such mutations are implicated in the formation of actinic keratoses, thereby increasing the risk of progression to malignant skin cancers."
+      }
+    ],
+    "golden": [
+      "p53",
+      "tp53"
+    ],
+    "check": true
+  },
+  "771022": {
+    "mcq": {
+      "short_answer": "vibrio vulnificus",
+      "long_answer": "vibrio vulnificus. Reason: The provided reasoning indicates that Vibrio vulnificus is a gram-negative marine bacterium commonly found in saltwater environments such as estuaries, brackish ponds, or coastal areas. Additionally, it is known for causing necrotizing soft tissue infections including Fournier gangrene, which aligns most consistently with the target answer type."
+    },
+    "candidate": [
+      {
+        "short_answer": "vibrio vulnificus",
+        "num_evidence": 2,
+        "final_text": "vibrio vulnificus. Reason: Reference: [CRAWL_NER_WIKI_1], [CRAWL_NER_WIKI_3]. Detailed explanation based on the information: The context indicates that Fournier gangrene can be caused by various pathogens, including Vibrio vulnificus, which is noted as a bacterium found in saltwater environments such as estuaries, brackish ponds, or coastal areas. | Vibrio vulnificus is a gram-negative marine bacterium that thrives in saltwater and brackish environments. It is well known for causing necrotizing soft tissue infections, including cases of Fournier gangrene, particularly in individuals with underlying health issues."
+      },
+      {
+        "short_answer": "edwardsiella tarda",
+        "num_evidence": 1,
+        "final_text": "edwardsiella tarda. Reason: Edwardsiella tarda is an anaerobic bacterium associated with both freshwater and marine life. Although it is less common than other pathogens, it has been reported as a causative agent in Fournier gangrene and other necrotizing soft tissue infections."
+      }
+    ],
+    "golden": [
+      "vibrio vulnificus"
+    ],
+    "check": true
+  },
+  "782966": {
+    "mcq": {
+      "short_answer": "bone marrow transplant",
+      "long_answer": "bone marrow transplant. Reason: All provided answer choices describe a procedure that involves replacing diseased bone marrow with healthy cells following ablation by chemotherapy or radiation. The 'bone marrow transplant' answer matches the question's description and target answer type most directly, as it is commonly used for severe bone marrow diseases such as leukemia and occasionally for severe sideroblastic anemia."
+    },
+    "candidate": [
+      {
+        "short_answer": "hematopoietic stem cell transplantation",
+        "num_evidence": 1,
+        "final_text": "hematopoietic stem cell transplantation. Reason: Reference: [CRAWL_WIKI_1], [CRAWL_WIKI_2]. Detailed explanation based on the information: The context explains that for severe bone marrow diseases such as myelodysplastic syndromes and leukemia, a treatment option is hematopoietic stem cell transplantation (often referred to as a bone marrow transplant). This procedure involves destroying the defective bone marrow using chemotherapy or radiation and replacing it with healthy donor stem cells. Although the context does not explicitly mention sideroblastic anemia, it states that bone marrow transplantation is used in severe cases of bone marrow failure, which can include conditions like severe sideroblastic anemia."
+      },
+      {
+        "short_answer": "bone marrow transplant",
+        "num_evidence": 2,
+        "final_text": "bone marrow transplant. Reason: Reference: [CRAWL_NER_WIKI_1], [CRAWL_NER_WIKI_2], [CRAWL_NER_WIKI_4]. Explanation: The provided context details that bone marrow transplants are used for treating severe diseases of the bone marrow, including certain cancers such as leukemia, where patient’s diseased marrow is replaced with new stem cells after destroying the faulty marrow with drugs or radiation. Additionally, in the treatment section of the sideroblastic anemia reference, bone marrow transplant is mentioned as an option for severe cases, thus making it the procedure commonly used for these conditions. | Bone marrow transplant, also known as hematopoietic stem cell transplantation, is a procedure in which diseased or defective bone marrow is replaced by healthy stem cells. This procedure is commonly used to treat severe bone marrow diseases such as leukemia and other cancers, and it may also be considered for patients with severe forms of sideroblastic anemia when conventional treatments do not suffice."
+      },
+      {
+        "short_answer": "hematopoietic stem cell transplant",
+        "num_evidence": 1,
+        "final_text": "hematopoietic stem cell transplant. Reason: Hematopoietic stem cell transplant (HSCT) involves the infusion of healthy stem cells after ablation of diseased marrow using high-dose chemotherapy or radiation. This treatment is standard for aggressive bone marrow disorders like leukemia and serves as a potential option for those with severe sideroblastic anemia, especially in cases resistant to first-line therapies."
+      }
+    ],
+    "golden": [
+      "bone marrow transplant",
+      "bone marrow transplantation"
+    ],
+    "check": true
+  },
+  "793771": {
+    "mcq": {
+      "short_answer": "columbia university's college of physicians and surgeons",
+      "long_answer": "columbia university's college of physicians and surgeons. Reason: Both answer choices assert that Baruch S. Blumberg, the Nobel Prize winner known for discovering the hepatitis B virus, earned his MD from Columbia University's College of Physicians and Surgeons in 1951, making this choice the best answer based on the provided reasoning."
+    },
+    "candidate": [
+      {
+        "short_answer": "columbia university's college of physicians and surgeons",
+        "num_evidence": 1,
+        "final_text": "columbia university's college of physicians and surgeons. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: Baruch Samuel Blumberg, the Nobel Prize winner known for discovering the hepatitis B virus, earned his medical degree (MD) from Columbia's College of Physicians and Surgeons in 1951."
+      },
+      {
+        "short_answer": "columbia university college of physicians and surgeons",
+        "num_evidence": 1,
+        "final_text": "columbia university college of physicians and surgeons. Reason: Dr. Baruch S. Blumberg, the Nobel Prize-winning physician and geneticist who discovered the hepatitis B virus, earned his medical degree from the Columbia University College of Physicians and Surgeons in 1951."
+      }
+    ],
+    "golden": [
+      "columbia university"
+    ],
+    "check": true
+  },
+  "819839": {
+    "mcq": {
+      "short_answer": "cor triatriatum dextrum",
+      "long_answer": "cor triatriatum dextrum. Reason: Both answer choices describe the same congenital heart defect with slightly different spellings; however, the first choice clearly states that it is due to the complete persistence of the right sinus valve within the same atrium as the coronary sinus valve, which exactly matches the question description."
+    },
+    "candidate": [
+      {
+        "short_answer": "cor triatriatum dextrum",
+        "num_evidence": 2,
+        "final_text": "cor triatriatum dextrum. Reason: Reference: [CRAWL_WIKI_2]. Detailed explanation based on the information: Cor triatriatum dextrum is a congenital heart defect that occurs due to the complete persistence of the right sinus valve of the embryonic heart. This results in the subdivision of the right atrium into two chambers, with the defective membrane being located within the same atrium as the coronary sinus valve. | Cor triatriatum dextrum is a rare congenital heart defect that results from the complete persistence of the right sinus venosus valve. In this condition, the persistent valve forms an abnormal membrane within the right atrium—where the coronary sinus valve is also located—dividing the atrium into two separate chambers."
+      },
+      {
+        "short_answer": "cor triatrium dexter",
+        "num_evidence": 1,
+        "final_text": "cor triatrium dexter. Reason: Also known as cor triatriatum dextrum, cor triatrium dexter is an extremely rare congenital heart anomaly that arises when the right sinus venosus valve fails to regress during embryonic development. This persistence creates a membrane within the right atrium, effectively partitioning it along with the coronary sinus valve."
+      }
+    ],
+    "golden": [
+      "cor triatriatum dexter",
+      "cor triatriatum dextrum"
+    ],
+    "check": true
+  },
+  "829837": {
+    "mcq": {
+      "short_answer": "ventriculoperitoneal shunt",
+      "long_answer": "ventriculoperitoneal shunt. Reason: Both answer choices explain that the condition is normal pressure hydrocephalus (NPH) characterized by the classic triad, and the standard treatment involves CSF shunting. However, the 'ventriculoperitoneal shunt' answer is more specific and directly mentions the procedure that drains excess CSF, making it the best choice based on the given reasoning."
+    },
+    "candidate": [
+      {
+        "short_answer": "ventriculoperitoneal shunt",
+        "num_evidence": 2,
+        "final_text": "ventriculoperitoneal shunt. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation based on the information: The context describes normal pressure hydrocephalus (NPH), which manifests with the classic triad of balance problems/gait deviations, memory impairment, and urinary frequency or incontinence. It clearly states that the usual treatment for NPH is the surgical placement of a ventriculoperitoneal shunt to drain excess cerebrospinal fluid. | Normal pressure hydrocephalus (NPH) typically presents with the classic triad of gait disturbance, memory impairment, and urinary incontinence or frequency. The standard first-line treatment for NPH is the surgical placement of a ventriculoperitoneal shunt to divert excess cerebrospinal fluid from the brain's ventricles to the peritoneal cavity, thereby alleviating the pressure on the brain."
+      },
+      {
+        "short_answer": "csf shunting surgery",
+        "num_evidence": 1,
+        "final_text": "csf shunting surgery. Reason: The condition described is consistent with normal pressure hydrocephalus (NPH), which is characterized by balance or gait problems, cognitive impairment, and urinary symptoms. The standard treatment involves surgical cerebrospinal fluid (CSF) shunting, most commonly by inserting a ventriculoperitoneal shunt, which helps drain the excess CSF and improves the patients’ symptoms."
+      }
+    ],
+    "golden": [
+      "ventriculoperitoneal shunt"
+    ],
+    "check": true
+  },
+  "910648": {
+    "mcq": {
+      "short_answer": "lysosomes",
+      "long_answer": "lysosomes. Reason: The explanation clearly states that mucopolysaccharidoses result from a deficiency of lysosomal enzymes, and lysosomes are directly involved in secretion, plasma membrane repair, apoptosis, cell signaling, and energy metabolism. This reasoning most closely aligns with the target answer type."
+    },
+    "candidate": [
+      {
+        "short_answer": "lysosomes",
+        "num_evidence": 1,
+        "final_text": "lysosomes. Reason: Reference: [CRAWL_NER_WIKI_1]. Detailed explanation based on the information: Mucopolysaccharidoses occur due to deficiencies in the enzymes normally found in lysosomes, which are critical for breaking down glycosaminoglycans. Lysosomes are involved in processes such as secretion, plasma membrane repair, apoptosis, cell signaling, and energy metabolism. Their malfunction (due to enzyme deficiency) underlies the metabolic and cellular disturbances seen in these disorders."
+      },
+      {
+        "short_answer": "lysosomes and mitochondria",
+        "num_evidence": 1,
+        "final_text": "lysosomes and mitochondria. Reason: Mucopolysaccharidoses are primarily lysosomal storage disorders caused by deficiencies in lysosomal enzymes. Lysosomes play important roles in secretion, plasma membrane repair, and cell signaling, while mitochondria are key players in energy metabolism and apoptosis. Thus, when these enzymes are deficient, both lysosomes and mitochondria are implicated in the disease pathogenesis."
+      },
+      {
+        "short_answer": "endolysosomal system and mitochondria",
+        "num_evidence": 1,
+        "final_text": "endolysosomal system and mitochondria. Reason: A more detailed perspective considers that the affected organelles include components of the endolysosomal system—namely lysosomes, which are involved in degrading macromolecules, secretion, and repairing the plasma membrane—and mitochondria, which are integral to energy metabolism and the regulation of apoptosis. Deficiencies in lysosomal enzymes cause the accumulation of glycosaminoglycans, thereby disrupting the function of both these organellar systems in mucopolysaccharidoses."
+      }
+    ],
+    "golden": [
+      "lysosomes"
+    ],
+    "check": true
+  },
+  "933016": {
+    "mcq": {
+      "short_answer": "tonsillectomy",
+      "long_answer": "tonsillectomy. Reason: The provided reasoning specifically mentions that tonsillectomy is used to treat both chronic tonsillitis and obstructive sleep apnea and carries a risk of dysgeusia due to possible nerve or tissue involvement, making it the best choice."
+    },
+    "candidate": [
+      {
+        "short_answer": "tonsillectomy",
+        "num_evidence": 1,
+        "final_text": "tonsillectomy. Reason: Reference: [CRAWL_NER_WIKI_4], [CRAWL_NER_WIKI_7]. Explanation: The provided context explains that tonsillectomy is used as a treatment for chronic tonsillitis and is also performed in cases of obstructive sleep apnea (often together with uvulopalatopharyngoplasty). Additionally, the dysgeusia article in the context identifies tonsillectomy as carrying a risk of dysgeusia (an alteration in the sense of taste)."
+      },
+      {
+        "short_answer": "uppp with tonsillectomy",
+        "num_evidence": 1,
+        "final_text": "uppp with tonsillectomy. Reason: In many cases, patients with obstructive sleep apnea and chronic tonsillitis are treated through a combination of uvulopalatopharyngoplasty (UPPP) and tonsillectomy. Although this combined surgical approach is highly effective in relieving airway obstruction, one of its potential complications is dysgeusia, where the patient's taste is altered, likely due to nerve or tissue involvement during the procedure."
+      }
+    ],
+    "golden": [
+      "tonsillectomy"
+    ],
+    "check": true
+  },
+  "947752": {
+    "mcq": {
+      "short_answer": "somatic (parietal) layer",
+      "long_answer": "Both answer choices point to the failure in the development of the somatic (parietal) layer of the lateral plate mesoderm. This layer is responsible for forming the lateral body wall, and its improper maturation leads to defects such as ectopia cordis. The reasoning in both choices is consistent with the question, making 'somatic (parietal) layer' the best answer. Reason: The provided evidence clearly indicates that the somatic (parietal) layer's failure to develop properly is the cause of ectopia cordis."
+    },
+    "candidate": [
+      {
+        "short_answer": "somatic mesoderm",
+        "num_evidence": 2,
+        "final_text": "somatic mesoderm. Reason: Reference: [CRAWL_WIKI_1], [CRAWL_WIKI_2]. Detailed explanation based on the information: The lateral plate mesoderm splits into a visceral layer and a parietal layer. The parietal layer, along with the overlying ectoderm, forms the lateral body wall. Failure of the parietal mesoderm to develop properly—and consequently failure of the ventral body wall to close—can result in defects such as ectopia cordis, where the heart is abnormally located outside the thorax. | Ectopia cordis is caused by a failure in the proper development and midline fusion of the somatic (parietal) layer of the lateral plate mesoderm. This layer is responsible for forming the lateral body wall, and its improper maturation can leave the heart exposed outside the thoracic cavity."
+      },
+      {
+        "short_answer": "somatic (parietal) layer",
+        "num_evidence": 1,
+        "final_text": "somatic (parietal) layer. Reason: Reference: [CRAWL_NER_WIKI_1], [CRAWL_NER_WIKI_4]. Explanation: The lateral plate mesoderm splits into two layers: the outer somatic (or parietal) layer and the inner splanchnic (or visceral) layer. The somatic layer is responsible for forming the body wall. Ectopia cordis results from a failure in proper ventral body wall (lateral body wall folds) formation during embryonic development. Thus, a developmental failure in the somatic layer leads to ectopia cordis."
+      }
+    ],
+    "golden": [
+      "somatic mesoderm"
+    ],
+    "check": true
+  },
+  "954297": {
+    "mcq": {
+      "short_answer": "varicella-zoster virus vasculopathy",
+      "long_answer": "varicella-zoster virus vasculopathy. Reason: This option’s explanation highlights that VZV infection can cause inflammation of cerebral blood vessels, resulting in stroke-like symptoms such as dizziness, dysarthria, hemiparesis, and paresthesia, which most specifically matches the compound described in the question."
+    },
+    "candidate": [
+      {
+        "short_answer": "stroke",
+        "num_evidence": 1,
+        "final_text": "stroke. Reason: Reference: [CRAWL_NER_WIKI_1]. Detailed explanation based on the information: The varicella-zoster virus (VZV) can lead to severe complications including inflammation of arteries in the brain, which may result in a stroke. Stroke is a condition that can present with symptoms such as dizziness, dysarthria, hemiparesis, and paresthesia."
+      },
+      {
+        "short_answer": "varicella-zoster virus vasculopathy",
+        "num_evidence": 2,
+        "final_text": "varicella-zoster virus vasculopathy. Reason: Reference: [GG_1], [GG_11]. Explanation: The context mentions cerebrovascular complications following varicella-zoster virus infection, including repeated vertebrobasilar strokes, which are associated with a presentation of dizziness, dysarthria, hemiparesis, and paresthesia. These findings align with the diagnosis of varicella-zoster virus vasculopathy, a severe complication where the virus reactivation leads to vascular inflammation and ischemic strokes. | Varicella-zoster virus vasculopathy represents another severe complication associated with VZV infection, where the virus leads to inflammation of cerebral blood vessels. This inflammation can result in stroke-like symptoms including dizziness, dysarthria, hemiparesis, and paresthesia. It underscores the virus’s potential to cause serious cerebrovascular events."
+      },
+      {
+        "short_answer": "varicella-zoster virus encephalitis",
+        "num_evidence": 1,
+        "final_text": "varicella-zoster virus encephalitis. Reason: Varicella-zoster virus encephalitis is a severe neurological complication of VZV infection. It typically manifests with symptoms such as dizziness, dysarthria (slurred speech), hemiparesis (weakness on one side of the body), and paresthesia (abnormal sensations). This condition can develop after primary varicella infection or reactivation of the virus later in life."
+      }
+    ],
+    "golden": [
+      "cerebrovascular accident"
+    ],
+    "check": false
+  },
+  "970726": {
+    "mcq": {
+      "short_answer": "hydrocephalus",
+      "long_answer": "hydrocephalus. Reason: Among the provided options, 'hydrocephalus' directly matches the description given in the question as a condition characterized by the accumulation of cerebrospinal fluid in the brain and is noted as one of the additional factors associated with MASA syndrome."
+    },
+    "candidate": [
+      {
+        "short_answer": "hydrocephalus",
+        "num_evidence": 2,
+        "final_text": "hydrocephalus. Reason: Reference: [CRAWL_WIKI_1]. Detailed explanation: MASA syndrome has five additional factors, one of which is hydrocephalus, a condition characterized by the accumulation of cerebrospinal fluid in the brain, often due to an obstruction preventing proper fluid drainage. | Hydrocephalus is the condition that involves an abnormal accumulation of cerebrospinal fluid in the brain. It is listed as one of the five additional factors associated with MASA syndrome."
+      },
+      {
+        "short_answer": "x‑linked hydrocephalus with stenosis of the aqueduct of sylvius",
+        "num_evidence": 1,
+        "final_text": "x‑linked hydrocephalus with stenosis of the aqueduct of sylvius. Reason: Reference: [CRAWL_NER_WIKI_3]. Explanation: The context on L1 syndrome explains that MASA syndrome is part of a group of disorders under L1 syndrome, and it also lists X‑linked hydrocephalus with stenosis of the aqueduct of Sylvius as one of the conditions in the spectrum. Hydrocephalus, defined as an accumulation of cerebrospinal fluid in the brain, is therefore the condition associated with MASA syndrome."
+      },
+      {
+        "short_answer": "congenital hydrocephalus",
+        "num_evidence": 1,
+        "final_text": "congenital hydrocephalus. Reason: Congenital hydrocephalus, a form of hydrocephalus present from birth due to impaired drainage of cerebrospinal fluid, is identified as one of the additional factors seen in MASA syndrome."
+      }
+    ],
+    "golden": [
+      "hydrocephalus"
+    ],
+    "check": true
+  },
+  "166341": {
+    "mcq": {
+      "short_answer": "5 percent",
+      "long_answer": "5 percent. Reason: The reasoning that identifies the first recognized clinical case of uniparental disomy involves a girl with cystic fibrosis who inherited two copies of maternal chromosome 7 is most consistent with the question. This choice explains that chromosome 7 makes up roughly 5 percent of the total cellular DNA, matching the target answer type."
+    },
+    "candidate": [
+      {
+        "short_answer": "3.5%",
+        "num_evidence": 1,
+        "final_text": "3.5%. Reason: Reference: [GG_5], [GG_14]. Explanation: Both references mention that the duplicated chromosome (chromosome 14q) comprises approximately 3.5% of the total DNA in the cells, which answers the question regarding the percentage of total DNA represented by the chromosome duplicated in the first recognized clinical case of uniparental disomy."
+      },
+      {
+        "short_answer": "3.5 percent",
+        "num_evidence": 1,
+        "final_text": "3.5 percent. Reason: Reference: [GG_5]. Explanation: In the provided context, reference [GG_5] states that the duplicated chromosome (chromosome 14 in the discussed duplication study) represents approximately 3.5 percent of the total DNA in the cells. This is the only numerical percentage provided in the context related to a chromosome duplication in a UPD case."
+      },
+      {
+        "short_answer": "5 percent",
+        "num_evidence": 1,
+        "final_text": "5 percent. Reason: The first recognized clinical case of uniparental disomy involved a girl with cystic fibrosis who inherited two copies of maternal chromosome 7. Based on the typical genomic composition, chromosome 7 accounts for roughly 5 percent of the total DNA in human cells."
+      },
+      {
+        "short_answer": "5%",
+        "num_evidence": 1,
+        "final_text": "5%. Reason: In the landmark clinical case of UPD, the affected individual had two maternal copies of chromosome 7. Chromosome 7 usually represents about 5% of the total cellular DNA, so the duplicated chromosome makes up approximately 5% of the cell's DNA."
+      }
+    ],
+    "golden": [
+      "5-5.5%"
+    ],
+    "check": false
+  },
+  "182169": {
+    "mcq": {
+      "short_answer": "true vocal cords",
+      "long_answer": "true vocal cords. Reason: The provided reasoning for the 'true vocal cords' option is the most specific, pinpointing the squamous epithelium covering the true vocal cords as the predominant site of benign tumor development in laryngeal papillomatosis."
+    },
+    "candidate": [
+      {
+        "short_answer": "vocal cords",
+        "num_evidence": 1,
+        "final_text": "vocal cords. Reason: Reference: [GG_18]. Explanation: The context specifies that laryngeal papillomas, which are benign tumors associated with laryngeal papillomatosis, develop on the vocal cords."
+      },
+      {
+        "short_answer": "laryngeal mucosa",
+        "num_evidence": 2,
+        "final_text": "laryngeal mucosa. Reason: Reference: [GG_3], [GG_12]. Explanation: The context indicates that laryngeal papilloma is described as affecting the squamous epithelium of the larynx and developing on the laryngeal mucosa, which suggests that these benign tumors commonly develop on this epithelial lining. However, the provided context does not offer more detailed specificity regarding further substructures (such as the true vocal cords) within the larynx. | In cases of laryngeal papillomatosis, the benign tumors, predominantly papillomas, develop on the laryngeal mucosa. This mucosal lining, particularly overlying the vocal cords, is the primary site of human papillomavirus infection and subsequent tumor formation."
+      },
+      {
+        "short_answer": "true vocal cords",
+        "num_evidence": 1,
+        "final_text": "true vocal cords. Reason: Benign tumors in laryngeal papillomatosis most commonly arise from the squamous epithelium covering the true vocal cords. This area is particularly predisposed to the development of these exophytic, papillomatous lesions caused by the human papillomavirus."
+      },
+      {
+        "short_answer": "vocal folds",
+        "num_evidence": 1,
+        "final_text": "vocal folds. Reason: The benign growths seen in laryngeal papillomatosis typically develop on the vocal folds. These lesions originate from the laryngeal mucosa that lines the vocal cords, reflecting the virus’s tropism for squamous epithelial tissue in that specific region of the larynx."
+      }
+    ],
+    "golden": [
+      "vocal cords"
+    ],
+    "check": true
+  },
+  "218896": {
+    "mcq": {
+      "short_answer": "traumatic neuroma of the mental nerve",
+      "long_answer": "traumatic neuroma of the mental nerve. Reason: This answer specifically identifies the neuroma as occurring at the mental nerve near the mental foramen, resulting from surgical trauma, which matches the details provided in the question and is supported by the reasoning in the answer choice."
+    },
+    "candidate": [
+      {
+        "short_answer": "traumatic neuroma",
+        "num_evidence": 2,
+        "final_text": "traumatic neuroma. Reason: Reference: [GG_6], [GG_7]. Explanation: The context indicates that traumatic neuroma is a benign tumor that develops as a reactive proliferation after nerve injury, particularly post-surgical trauma. It is noted to occur near the mental foramen, which is consistent with the description provided in the context. | The benign tumor described is most commonly the traumatic neuroma, which results from the reactive proliferation of nerve fibers following surgical trauma, typically occurring near the mental foramen in the oral cavity."
+      },
+      {
+        "short_answer": "post-traumatic neuroma",
+        "num_evidence": 1,
+        "final_text": "post-traumatic neuroma. Reason: This type of neuroma, known as a post-traumatic neuroma, represents a benign reactive proliferation of nerve tissue that develops after a nerve injury, such as that incurred during a surgical procedure, particularly around the mental foramen."
+      },
+      {
+        "short_answer": "traumatic neuroma of the mental nerve",
+        "num_evidence": 1,
+        "final_text": "traumatic neuroma of the mental nerve. Reason: A traumatic neuroma of the mental nerve is a benign proliferation of injured nerve elements occurring at the mental foramen. It is typically a consequence of surgical trauma to the mental nerve, leading to a reactive hyperplasia of nerve tissue."
+      }
+    ],
+    "golden": [
+      "traumatic neuroma"
+    ],
+    "check": true
+  },
+  "287123": {
+    "mcq": {
+      "short_answer": "1983",
+      "long_answer": "1983. Reason: Reference [GG_7] specifies that in 1983, Greenlee and Brashear were the first to describe the association between paraneoplastic cerebellar degeneration and antibodies directed against cerebellar Purkinje cells. This discovery is directly linked to the progressive loss of the cell type in question, making it the most consistent answer based on the provided reasoning."
+    },
+    "candidate": [
+      {
+        "short_answer": "1983",
+        "num_evidence": 1,
+        "final_text": "1983. Reason: Reference: [GG_7]. Explanation: In reference [GG_7], it is noted that in 1983, Greenlee and Brashear were the first to describe the association between paraneoplastic cerebellar degeneration and antibodies directed against cerebellar Purkinje cells, indicating the discovery year linked to the progressive loss of this type of cell in patients."
+      },
+      {
+        "short_answer": "1938",
+        "num_evidence": 1,
+        "final_text": "1938. Reason: Reference: [GG_3]. Detailed explanation based on the information: The context from [GG_3] states that paraneoplastic cerebellar degeneration was first described and that its association with cancer was not recognized until 1938."
+      }
+    ],
+    "golden": [
+      "1837"
+    ],
+    "check": false
+  },
+  "355170": {
+    "mcq": {
+      "short_answer": "anti-androgens",
+      "long_answer": "anti-androgens. Reason: Multiple answer choices provide evidence that managing androgen-related symptoms in women with Achard–Thiers syndrome involves the use of anti-androgen therapies. The first three options directly indicate the use of anti-androgen compounds, which are classically prescribed to control these symptoms, while the fourth option (oral contraceptives) is less directly aligned with the target answer type. Therefore, the best answer is anti-androgens."
+    },
+    "candidate": [
+      {
+        "short_answer": "anti-androgens",
+        "num_evidence": 2,
+        "final_text": "anti-androgens. Reason: Reference: [GG_3], [GG_9], [GG_13]. Explanation: The provided context indicates that managing androgen-related symptoms in women with Achard–Thiers syndrome commonly involves the use of anti-androgen therapies. For instance, reference [GG_3] mentions the use of anti-androgen therapies in treatment strategies, reference [GG_9] points out that anti-androgen medications are used for hirsutism, and reference [GG_13] states that anti-androgens can be utilized to treat symptoms in affected women. | Anti-androgens are a class of drugs used to block the effects of androgens. They are commonly prescribed in Achard–Thiers syndrome to reduce symptoms like hirsutism and other manifestations of androgen excess."
+      },
+      {
+        "short_answer": "anti-androgen medications",
+        "num_evidence": 1,
+        "final_text": "anti-androgen medications. Reason: Reference: [GG_3], [GG_9]. Explanation: The context indicates that treatment strategies for Achard–Thiers syndrome in women include anti-androgen therapies, which are used to manage androgen-related symptoms such as hirsutism. Both references mention the application of anti-androgen treatments in this context."
+      },
+      {
+        "short_answer": "anti-androgen drugs",
+        "num_evidence": 1,
+        "final_text": "anti-androgen drugs. Reason: Reference: [GG_3], [GG_9]. Explanation: The provided context indicates that managing androgen-related symptoms in women with Achard–Thiers syndrome involves the use of anti-androgen therapies. For instance, one reference mentions treatment strategies alongside anti-androgen therapies, and another refers to the use of oral contraceptives with anti-androgenic properties for hirsutism. These pieces of evidence support that anti-androgen drugs are commonly prescribed to manage these symptoms."
+      },
+      {
+        "short_answer": "oral contraceptives",
+        "num_evidence": 1,
+        "final_text": "oral contraceptives. Reason: Combined oral contraceptives, which include estrogen and progestin with anti-androgenic properties, are also frequently used to manage androgen-related symptoms in women with Achard–Thiers syndrome."
+      }
+    ],
+    "golden": [
+      "anti-androgens",
+      "antiandrogens"
+    ],
+    "check": true
+  },
+  "408733": {
+    "mcq": {
+      "short_answer": "1p36 copy number variation syndrome",
+      "long_answer": "1p36 copy number variation syndrome. Reason: The reasoning for this answer explicitly notes that the syndrome is caused by deletion or duplication in the distal portion of chromosome 1, directly linking it to the cytoband 1p36.12 and its inclusion in the differential diagnosis for loin pain hematuria syndrome."
+    },
+    "candidate": [
+      {
+        "short_answer": "1p36 copy number variation syndrome",
+        "num_evidence": 1,
+        "final_text": "1p36 copy number variation syndrome. Reason: Reference: [GG_11]. Explanation: The provided context includes a reference to '1p36 copy number variation syndrome', which is a congenital chromosomal disorder caused by deletion or duplication in the distal portion of the short arm of chromosome 1. This syndrome, associated with the cytoband 1p36.12, is listed among the differential diagnoses for loin pain hematuria syndrome."
+      },
+      {
+        "short_answer": "1p36 deletion syndrome",
+        "num_evidence": 1,
+        "final_text": "1p36 deletion syndrome. Reason: Reference: [GG_11]. Explanation: The provided context includes a reference to a congenital chromosomal disorder involving the 1p36 region ([GG_11]: Homo sapiens 1p36 deletion or duplication syndromes) that is noted in the differential diagnosis for loin pain hematuria syndrome. This association points to 1p36 deletion syndrome as the disease linked with cytoband 1p36.12."
+      }
+    ],
+    "golden": [
+      "endometriosis"
+    ],
+    "check": false
+  },
+  "442535": {
+    "mcq": {
+      "short_answer": "chlorophyll",
+      "long_answer": "chlorophyll. Reason: The provided reasoning clearly indicates that the deficiency of chlorophyll is directly associated with the albino phenotype in plants. This answer choice is most consistent with the target answer type and the evidence, making it the best choice based only on the provided reasoning."
+    },
+    "candidate": [
+      {
+        "short_answer": "chlorophyll",
+        "num_evidence": 3,
+        "final_text": "chlorophyll. Reason: Reference: [GG_1], [GG_2], [GG_10]. Explanation: The context indicates that the deficiency of chlorophylls—which are the molecules arranged in or around the photosystems—is directly associated with the albino phenotype in plants. In several studies referenced, including [GG_1] and [GG_10], the lack of chlorophylls is described as the cause of the characteristic albinism, while [GG_2] mentions reduced biosynthesis of chlorophyll as linked to low levels of photosynthetic pigments. | Reference: [GG_1], [GG_2], [GG_4]. Explanation: The context indicates that albino phenotypes in plants are primarily due to a deficiency of chlorophyll, which is a key pigment arranged in or around photosystems. The deficiency of chlorophyll, as noted in these references, disrupts normal photosynthetic processes, leading to the characteristic absence of green pigment in albino leaves. | Chlorophyll molecules, which are integral to the structure and function of photosystems in plant chloroplasts, cause albinism when they are deficient. A reduction in chlorophyll disrupts the light-absorbing capacity of the pigments, leading to the absence of the green coloration typical of healthy plants."
+      },
+      {
+        "short_answer": "photosynthetic pigments",
+        "num_evidence": 1,
+        "final_text": "photosynthetic pigments. Reason: Photosynthetic pigments, primarily chlorophyll along with accessory pigments, are arranged in and around plant photosystems. Deficiencies in these pigments impair the photosynthetic machinery, resulting in albinism by preventing the normal synthesis of the pigments that confer the green color."
+      }
+    ],
+    "golden": [
+      "chlorophyll"
+    ],
+    "check": true
+  },
+  "619326": {
+    "mcq": {
+      "short_answer": "acute liver failure",
+      "long_answer": "acute liver failure. Reason: The reasoning explicitly states that the only reported case of Cortes Lacassie syndrome involved an infant who developed acute liver failure, a condition that might have been prevented from progressing with timely liver transplantation or dialysis, making it the best answer."
+    },
+    "candidate": [
+      {
+        "short_answer": "liver failure",
+        "num_evidence": 2,
+        "final_text": "liver failure. Reason: Reference: [GG_1], [GG_2], [GG_7]. Explanation: The context indicates that liver transplantation is used to prevent liver failure (or ALF) in severe cases of NBAS‐associated disease, where liver failure represents the critical condition. Based on this information, in the reported case of Cortes Lacassie syndrome, the infant’s condition that might have been prevented from progressing with a liver transplant or dialysis is liver failure. | In the reported case, the infant experienced liver failure. This severe liver dysfunction could potentially have its progression halted or its impact lessened by the use of liver transplantation or dialysis to stabilize the patient."
+      },
+      {
+        "short_answer": "acute liver failure",
+        "num_evidence": 1,
+        "final_text": "acute liver failure. Reason: The only reported case of Cortes Lacassie syndrome involved an infant who developed acute liver failure, a condition that might have been prevented from progressing with timely liver transplantation or support by dialysis."
+      }
+    ],
+    "golden": [
+      "hepatorenal syndrome"
+    ],
+    "check": false
+  },
+  "627918": {
+    "mcq": {
+      "short_answer": "focal cortical resection",
+      "long_answer": "focal cortical resection. Reason: The reasoning explicitly states that focal cortical resection is used to excise localized epileptogenic cortex, particularly in cases where epileptic discharges from the opercular region cause Foix–Chavany–Marie syndrome, with complete reversal of symptoms. This aligns directly with the neurosurgical procedure described in the question."
+    },
+    "candidate": [
+      {
+        "short_answer": "surgical resection of the epileptogenic focus",
+        "num_evidence": 1,
+        "final_text": "surgical resection of the epileptogenic focus. Reason: Reference: [GG_2], [GG_7]. Detailed explanation based on the information: The provided context includes references describing surgical resection in cases of insulo‐opercular epilepsies and focal cortical dysplasia. In particular, reference [GG_2] discusses transient Foix–Chavany–Marie syndrome following surgical resection, and reference [GG_7] notes the surgical resection of focal areas of cortical dysplasia in patients with medically refractory seizures. This indicates that resective surgery, i.e. the surgical removal of the epileptogenic zone, is used to treat intractable epilepsy and can completely reverse Foix–Chavany–Marie syndrome symptoms when those symptoms are due to epileptic discharges."
+      },
+      {
+        "short_answer": "focal cortical resection",
+        "num_evidence": 1,
+        "final_text": "focal cortical resection. Reason: Focal cortical resection is a neurosurgical procedure used to excise localized areas of abnormal, epileptogenic cortex. In cases where epileptic discharges originating from the opercular region give rise to Foix–Chavany–Marie syndrome, such targeted resection may not only control the seizures but also lead to a complete reversal of the syndrome’s clinical manifestations."
+      }
+    ],
+    "golden": [
+      "hemispherectomy"
+    ],
+    "check": false
+  },
+  "770213": {
+    "mcq": {
+      "short_answer": "james r. lupski",
+      "long_answer": "james r. lupski. Reason: The reasoning clearly identifies James R. Lupski as a Baylor College of Medicine professor who is renowned for his studies in Charcot–Marie–Tooth disease and whose work on chromosome 17 duplications led to the identification of Potocki-Lupski syndrome. This aligns directly with the provided question."
+    },
+    "candidate": [
+      {
+        "short_answer": "james r. lupski",
+        "num_evidence": 2,
+        "final_text": "james r. lupski. Reason: Reference: [GG_1], [GG_7]. Detailed explanation based on the information: The context identifies James R. Lupski, M.D., Ph.D., as a Cullen Professor of Molecular and Human Genetics and Professor of Pediatrics at Baylor College of Medicine who is known for his studies in Charcot–Marie–Tooth disease. His work on duplications involving chromosome 17, which is linked to a microduplication disorder (Potocki-Lupski syndrome), makes him the namesake for the rare chromosome 17 microduplication disorder. | James R. Lupski is a Baylor College of Medicine professor acclaimed for his research on Charcot–Marie–Tooth disease. His pivotal work in the area of gene duplication on chromosome 17 has led to the identification of a rare microduplication disorder that bears his name, known as Potocki-Lupski syndrome."
+      },
+      {
+        "short_answer": "jr lupski",
+        "num_evidence": 1,
+        "final_text": "jr lupski. Reason: Reference: [GG_7], [GG_4]. Explanation: The provided context indicates that Lupski is a Baylor College of Medicine professor who has significantly contributed to the study of Charcot–Marie–Tooth disease by discovering several disease genes, including the first gene for the syndrome. His work is linked to a rare chromosome 17 microduplication disorder now known as Potocki-Lupski syndrome, making him the namesake for this condition."
+      },
+      {
+        "short_answer": "lupski",
+        "num_evidence": 1,
+        "final_text": "lupski. Reason: Reference: [GG_7]. Explanation: The context from reference [GG_7] indicates that Lupski, a Baylor College of Medicine professor, is known for his work on Charcot–Marie–Tooth disease and is the namesake for a chromosome 17 microduplication disorder (Potocki-Lupski syndrome)."
+      }
+    ],
+    "golden": [
+      "james r. lupski"
+    ],
+    "check": true
+  },
+  "820147": {
+    "mcq": {
+      "short_answer": "dermatologie",
+      "long_answer": "dermatologie. Reason: The explanation clearly states that the textbook 'Dermatologie' was published in 1953 by Robert Degos, who first recognized Degos disease as a distinct clinical entity. This answer directly matches the question and the target answer type."
+    },
+    "candidate": [
+      {
+        "short_answer": "dermatologie",
+        "num_evidence": 2,
+        "final_text": "dermatologie. Reason: Reference: [GG_2], [GG_10]. Explanation: The provided context indicates that Robert Degos, who recognized Degos disease as a new clinical entity, authored the comprehensive textbook 'Dermatologie' with its first edition published in 1953, integrating both French and international advancements in dermatology. | The textbook published in 1953 is 'Dermatologie.' It was authored by Robert Degos, the dermatologist who first recognized Degos disease as a distinct clinical entity. His work synthesized both French and international advancements in the field of dermatology, and the textbook was subsequently revised through 1981."
+      },
+      {
+        "short_answer": "degos' treatise",
+        "num_evidence": 1,
+        "final_text": "degos' treatise. Reason: Reference: [GG_1], [GG_2], [GG_10]. Explanation: The provided context indicates that Robert Degos authored a comprehensive textbook—referred to as Degos' treatise—that was first published in 1953. This treatise, a large French reference book, synthesized advancements in dermatology and is noted as the work in which Degos first recognized Degos disease as a distinct clinical entity."
+      }
+    ],
+    "golden": [
+      "dermatologie"
+    ],
+    "check": true
+  },
+  "828118": {
+    "mcq": {
+      "short_answer": "nodules",
+      "long_answer": "nodules. Reason: The provided explanation indicates that the small, firm lumps described in early Eumycetoma are medically referred to as nodules, as evidenced by the detailed context describing a firm, non-tender, nodular lump about 1.5×1 cm in size."
+    },
+    "candidate": [
+      {
+        "short_answer": "nodules",
+        "num_evidence": 3,
+        "final_text": "nodules. Reason: Reference: [GG_1], [GG_2], [GG_3]. Detailed explanation based on the information: The provided context describes a firm, non-tender, nodular lump measuring approximately 1.5×1 cm, indicating that the small, firm lumps observed in the early stages of Eumycetoma are medically referred to as nodules. | Reference: [GG_1], [GG_2], [GG_3]. Explanation: The context describes the presence of a firm, non-tender, nodular lump measuring approximately 1.5×1 cm in the early stages of eumycetoma. The term 'nodular lump' indicates that these small, firm lumps are medically referred to as nodules. | The small, firm lumps observed in the early stages of Eumycetoma are medically recognized as nodules. These nodules, typically greater than 1 cm in diameter, are among the initial clinical manifestations of the granulomatous fungal infection."
+      },
+      {
+        "short_answer": "subcutaneous nodule",
+        "num_evidence": 1,
+        "final_text": "subcutaneous nodule. Reason: In Eumycetoma, the early lesions often present as firm, subcutaneous nodules larger than 1 cm. These nodules are indicative of the granulomatous reaction associated with the infection and represent a key diagnostic feature in its early stages."
+      }
+    ],
+    "golden": [
+      "nodules"
+    ],
+    "check": true
+  },
+  "132019": {
+    "mcq": {
+      "short_answer": "latent torsional heterophoria",
+      "long_answer": "latent torsional heterophoria. Reason: The reasoning for 'latent torsional heterophoria' explicitly highlights that it is a latent condition in which torsion occurs without the required visual stimuli for proper binocular fusion, which directly corresponds with the question's description."
+    },
+    "candidate": [
+      {
+        "short_answer": "torsional heterophoria",
+        "num_evidence": 1,
+        "final_text": "torsional heterophoria. Reason: This condition is best described as torsional heterophoria. It refers to a latent misalignment of the eyes in which the visual axes exhibit a torsional (rotational) deviation that occurs in the absence of the visual stimuli required to maintain normal binocular fusion."
+      },
+      {
+        "short_answer": "latent torsional heterophoria",
+        "num_evidence": 1,
+        "final_text": "latent torsional heterophoria. Reason: The described phenomenon is known as latent torsional heterophoria. It is a form of heterophoria, a latent or hidden misalignment of the eyes, where torsion or rotational deviation occurs without appropriate visual stimuli to sustain proper binocular alignment."
+      }
+    ],
+    "golden": [
+      "cyclophoria"
+    ],
+    "check": false
+  },
+  "256957": {
+    "mcq": {
+      "short_answer": "grover disease",
+      "long_answer": "grover disease. Reason: Both answer choices correctly identify the disorder as one with acantholysis, similar to pemphigus vulgaris and absent in bullous pemphigoid. 'Grover disease' is the term used, which is also commonly known as 'transient acantholytic dermatosis,' and was first reported in 1975 by an American dermatopathologist. The reasoning in the first answer choice is fully consistent with the question."
+    },
+    "candidate": [
+      {
+        "short_answer": "grover disease",
+        "num_evidence": 1,
+        "final_text": "grover disease. Reason: Grover disease, also known as transient acantholytic dermatosis, was first described by an American dermatopathologist in 1975. Histologically, it is characterized by acantholysis—the loss of intercellular connections—similar to what is seen in pemphigus vulgaris and which is not observed in bullous pemphigoid."
+      },
+      {
+        "short_answer": "transient acantholytic dermatosis",
+        "num_evidence": 1,
+        "final_text": "transient acantholytic dermatosis. Reason: Transient acantholytic dermatosis, commonly referred to as Grover disease, is a dermatological disorder that was first reported in 1975 by an American dermatopathologist. It exhibits acantholysis, a loss of cell-to-cell adhesion that is also a feature of pemphigus vulgaris but is absent in bullous pemphigoid."
+      }
+    ],
+    "golden": [
+      "grover's disease",
+      "grover disease"
+    ],
+    "check": true
+  },
+  "619420": {
+    "mcq": {
+      "short_answer": "babesia microti",
+      "long_answer": "babesia microti. Reason: The explanation for the 'babesia microti' option matches the description in the question perfectly by linking the characteristic Maltese cross formation in red blood cells to babesiosis most commonly caused by Babesia microti, making it the primary differential diagnosis."
+    },
+    "candidate": [
+      {
+        "short_answer": "babesia microti",
+        "num_evidence": 1,
+        "final_text": "babesia microti. Reason: The description of parasites forming groups of four that resemble a symbol used during the Crusades (commonly referred to as the Maltese cross) is characteristic of babesiosis, most often caused by Babesia microti. This parasite infects red blood cells and is considered the primary differential diagnosis when such morphologic features are observed, distinguishing it from malaria caused by Plasmodium species."
+      },
+      {
+        "short_answer": "babesiosis infection",
+        "num_evidence": 1,
+        "final_text": "babesiosis infection. Reason: When parasites that reproduce within red blood cells form tetrads resembling a cross, this pattern is indicative of babesiosis. In clinical practice, the appearance of a 'Maltese cross' formation in blood smears should prompt consideration of a Babesia infection (typically Babesia microti) as the primary differential diagnosis."
+      }
+    ],
+    "golden": [
+      "malaria"
+    ],
+    "check": false
+  },
+  "845857": {
+    "mcq": {
+      "short_answer": "glycosyltransferase family",
+      "long_answer": "glycosyltransferase family. Reason: Both answer choices correctly identify the enzyme as part of the glycosyltransferase family. The second choice explicitly mentions that the glycogen branching enzyme is classified under this family, matching the target answer type precisely."
+    },
+    "candidate": [
+      {
+        "short_answer": "glycosyltransferases",
+        "num_evidence": 1,
+        "final_text": "glycosyltransferases. Reason: Andersen disease is caused by a deficiency of the glycogen branching enzyme. This enzyme belongs to the glycosyltransferases, a family of enzymes that transfer sugar moieties, specifically hexose groups, to form branched glycogen molecules."
+      },
+      {
+        "short_answer": "glycosyltransferase family",
+        "num_evidence": 1,
+        "final_text": "glycosyltransferase family. Reason: The enzyme deficient in Andersen disease is the glycogen branching enzyme, which is classified under the glycosyltransferase family. These enzymes are responsible for transferring hexose units for the creation and proper branching of glycogen."
+      }
+    ],
+    "golden": [
+      "glycosyltransferases"
+    ],
+    "check": true
+  },
+  "921794": {
+    "mcq": {
+      "short_answer": "familial male-limited precocious puberty",
+      "long_answer": "familial male-limited precocious puberty. Reason: The provided reasoning for familial male-limited precocious puberty directly states that it is the condition first identified in 1852 by Abraham Lincoln's personal physician, characterized by an early onset of puberty in boys. Although testotoxicosis is mentioned as another name for this condition, the reasoning for familial male-limited precocious puberty is more directly aligned with the question."
+    },
+    "candidate": [
+      {
+        "short_answer": "familial male-limited precocious puberty",
+        "num_evidence": 1,
+        "final_text": "familial male-limited precocious puberty. Reason: Familial male-limited precocious puberty is the condition described by Abraham Lincoln's personal physician in 1852. It is characterized by an early onset of puberty in boys due to an inherited form of gonadal hyperactivity."
+      },
+      {
+        "short_answer": "testotoxicosis",
+        "num_evidence": 1,
+        "final_text": "testotoxicosis. Reason: Testotoxicosis, another name for familial male-limited precocious puberty, is a genetic disorder that leads to early sexual development in boys. It was first identified in 1852 by Abraham Lincoln's personal physician."
+      }
+    ],
+    "golden": [
+      "familial male-limited precocious puberty"
+    ],
+    "check": true
+  }
+}
