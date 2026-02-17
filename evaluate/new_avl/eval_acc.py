@@ -57,7 +57,7 @@ def cluster_cohesion(embeds):
 # COLLECT CANDIDATES
 # =========================
 
-def collect_wh_candidates(base_paths, dict_golden, run_type=None):
+def collect_wh_candidates(base_paths, dict_golden, run_type=None, topk = 2):
     candidates = []
     qidx_meta = {}
 
@@ -117,7 +117,7 @@ def collect_wh_candidates(base_paths, dict_golden, run_type=None):
                         .get("source_output", {})
                 )
                 for src, res in source_outputs.items():
-                    for i_c, cand in enumerate(res.get("candidate", [])):
+                    for i_c, cand in enumerate(res.get("candidate", [])[:topk]):
                         ans = cand.get("short_answer", "").lower()
                         if ans and ans != "insufficient information":
                             if ans in mapping_data:
@@ -222,8 +222,8 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
             # if not (evidence_count >= 3 and has_dense and has_wiki):
             #     continue
             
-            # if not (evidence_count >= 3 and has_dense and has_wiki):
-            if not (evidence_count >= 3 and has_wiki):
+            if not (evidence_count >= 3 and has_dense and has_wiki):
+            # if not (evidence_count >= 3 and has_wiki):
                 continue
 
             cohesion = cluster_cohesion(embeddings[indices])
@@ -243,7 +243,7 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
 
                     larger = c1 if c1["evidence_count"] > c2["evidence_count"] else c2
 
-                    if (larger["has_wiki"] or larger["has_gg"]):# and larger["has_dense"]:
+                    if (larger["has_wiki"] or larger["has_gg"]) and larger["has_dense"]:
                         best_cluster = larger["indices"]
                         best_cohesion = cluster_cohesion(
                             embeddings[best_cluster]
@@ -257,7 +257,7 @@ def cluster_and_evaluate(candidates, qidx_meta, model):
 
                 if (
                     only_cluster["evidence_count"] == 2
-                    # and only_cluster["has_dense"]
+                    and only_cluster["has_dense"]
                     and only_cluster["has_wiki"]
                 ):
                     best_cluster = only_cluster["indices"]
@@ -468,11 +468,11 @@ if __name__ == "__main__":
     )
 
     c3, _ = collect_wh_candidates(
-        ["medhop_results_no_mcq_TFIDF300"],
+        ["medhop_results_llm_create_mcq"],
         dict_golden,
         "DENSE"
     )
-    all_candidates = c1 + c2 #+ c3
+    all_candidates = c1 + c2 + c3
     fused_results = cluster_and_evaluate(all_candidates, meta, model)
 
     selected_summary = compute_selected_summary(fused_results, meta)

@@ -459,7 +459,7 @@ def retrieval_context_2wiki(search_kw, sample, embedding_model, vec_embed=False,
                 
     return result.strip()
 
-def crawl_wiki_page_general(
+def _crawl_wiki_page_general(
     search_kw_subq,
     article_iterable,
     get_hash_id_func,
@@ -482,6 +482,7 @@ def crawl_wiki_page_general(
 
     all_context = ""
     cnt_wiki = 0
+    list_link = []
 
     for article in article_iterable:
         hash_id = get_hash_id_func(article)
@@ -490,10 +491,10 @@ def crawl_wiki_page_general(
         
         if not hash_id or not link:
             continue
-
+        list_link.append(link)
         file_crawl = f"{cache_crawl_base}/{hash_id}"
         file_filter = f"{cache_filter_base}/{hash_id}"
-
+        
         if os.path.exists(file_filter):
             data_filter = load_json(file_filter)
             filter_context = data_filter.get('crawl_wiki', {}).get('filter', {}).get(link, {}).get(type_embed, "")
@@ -546,7 +547,138 @@ def crawl_wiki_page_general(
             if cnt_wiki >= topk:
                 break
 
-    return all_context
+    return all_context, list_link
+
+def crawl_wiki_page_general(
+    search_kw_subq,
+    article_iterable,
+    get_hash_id_func,
+    get_link_func,
+    get_title_func,
+    cache_crawl_base,
+    cache_filter_base,
+    pre_processing_func,
+    target_answer_type=None,
+    embedding_model=None,
+    topk=3,
+    max_token=300,
+    percentage=0.5,
+    get_ner=False
+):
+    if embedding_model:
+        type_embed = "embedding"
+    else:
+        type_embed = "tfidf"
+
+    all_filtered_context = ""
+    all_raw_context = ""
+    cnt_wiki = 0
+    list_link = []
+
+    for article in article_iterable:
+
+        hash_id = get_hash_id_func(article)
+        link = get_link_func(article)
+        title = get_title_func(article)
+
+        if not hash_id or not link:
+            continue
+
+        list_link.append(link)
+
+        file_crawl = f"{cache_crawl_base}/{hash_id}"
+        file_filter = f"{cache_filter_base}/{hash_id}"
+
+        crawled_data = None
+        raw_context = None
+        filter_context = None
+
+        if os.path.exists(file_crawl):
+            crawl_wiki = load_json(file_crawl)
+            crawled_data = crawl_wiki.get(
+                'crawl_wiki', {}
+            ).get(
+                'html_page', {}
+            ).get(link, None)
+        else:
+            print(f"Crawling Wikipedia page: {link}")
+            crawled_data = crawl_wikipedia_page(link)
+            crawled_data_output = {
+                'crawl_wiki': {
+                    'html_page': {
+                        link: crawled_data
+                    }
+                }
+            }
+            save_json(crawled_data_output, file_crawl)
+
+        # Extract RAW content
+        if crawled_data and 'content' in crawled_data:
+            raw_context = " ".join(crawled_data['content'])
+            all_raw_context += f"\n[RAW_WIKI] {title}\n{raw_context}\n"
+
+        if os.path.exists(file_filter):
+            data_filter = load_json(file_filter)
+            filter_context = data_filter.get(
+                'crawl_wiki', {}
+            ).get(
+                'filter', {}
+            ).get(
+                link, {}
+            ).get(
+                type_embed, None
+            )
+
+        # Nếu chưa có filter → generate
+        if filter_context is None and raw_context:
+
+            wiki_content = pre_processing_func(crawled_data)
+
+            if wiki_content:
+                filter_context = get_paragraphs_wiki_result(
+                    link,
+                    wiki_content,
+                    search_kw_subq,
+                    target_answer_type=target_answer_type,
+                    embedding_model=embedding_model,
+                    max_docs_token=max_token,
+                    percentage=percentage
+                )
+
+                filter_output = {
+                    'crawl_wiki': {
+                        'filter': {
+                            link: {
+                                type_embed: filter_context
+                            }
+                        }
+                    }
+                }
+
+                save_json(filter_output, file_filter)
+
+        if filter_context:
+
+            cnt_wiki += 1
+
+            if get_ner:
+                all_filtered_context += (
+                    f"- Reference: [CRAWL_NER_WIKI_{cnt_wiki}] "
+                    f"- Information about: {title} - {article.get('ner','')}\n"
+                    f"{filter_context}\n"
+                )
+            else:
+                all_filtered_context += (
+                    f"- Reference: [CRAWL_WIKI_{cnt_wiki}] "
+                    f"- Information about: {title}\n"
+                    f"{filter_context}\n"
+                )
+
+            if cnt_wiki >= topk:
+                break
+
+    return all_filtered_context, list_link #all_raw_context
+
 
 def crawl_wiki_page_raw(
     article_iterable,
@@ -589,7 +721,7 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
     max_results_gg = retrieval_topk['max_results_search_api_gg']
     max_results_wiki = retrieval_topk['max_results_search_api_wiki']
     all_snippet = ""
-    
+    cache_link_crawl_wiki = {}
     hash_id, hash_id_cache = register_query_cache(search_kw_subq, hash_id_cache, file_cache_index=settings['cache']['hash_id']['retrieval'])
     cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}" 
     
@@ -621,7 +753,7 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
     if settings['get_crawl_wiki']:
         results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
         
-        crawl_wiki_context = crawl_wiki_page_general(
+        crawl_wiki_context, list_link = crawl_wiki_page_general(
             search_kw_subq,
             results_wiki_search,  # iterable là list kết quả search
             get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
@@ -638,7 +770,7 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
             percentage=None,
             max_token=retrieval_topk['crawl_max_token'],
         )
-        
+        cache_link_crawl_wiki['crawl_wiki'] = list_link
         if crawl_wiki_context != "":
             retrieval_information += crawl_wiki_context + "\n"
 
@@ -653,7 +785,7 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
                 item['ner'] = ner_norm
             ner_articles.extend(article)
         
-        crawl_ner_wiki = crawl_wiki_page_general(
+        crawl_ner_wiki, list_link = crawl_wiki_page_general(
             search_kw_subq,
             ner_articles,  # iterable là list các article dict
             get_hash_id_func=lambda article: article.get('hash_id', None),
@@ -671,7 +803,7 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
             percentage=None,
             get_ner=True
         )
-        
+        cache_link_crawl_wiki['crawl_ner_wiki'] = list_link
         if crawl_ner_wiki != "":
             retrieval_information += crawl_ner_wiki + "\n"
             
@@ -738,7 +870,7 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
         if sparql_context != "":
             retrieval_information += f"- Reference [SPARQL]: {sparql_context}"
         
-    return all_snippet, retrieval_information
+    return all_snippet, retrieval_information, cache_link_crawl_wiki
 
 
 def remove_retrieve_evidence(current_retrieval: str, current_short: str):
@@ -759,3 +891,44 @@ def remove_retrieve_evidence(current_retrieval: str, current_short: str):
     new_retrieval = new_retrieval.strip()
 
     return new_retrieval
+
+
+def remove_specific_references(long_answer: str, retrieval_information: str) -> str:
+    # Tìm các reference trong long_answer, ví dụ: [WIKI_1], [WIKI_3]
+    ref_match = re.search(r'Reference:\s*([^\.\n]+)', long_answer)
+    if not ref_match:
+        return retrieval_information  # Không có reference nào để xóa
+
+    # Lấy danh sách các reference, ví dụ: ['WIKI_1', 'WIKI_3']
+    refs = re.findall(r'\[([A-Z_0-9]+)\]', ref_match.group(1))
+    if not refs:
+        return retrieval_information
+
+    # Tạo regex để xóa các dòng reference tương ứng
+    pattern = r'(^|\n)-Reference: \[({})\]:.*?(?=\n-Reference: |\n*$)'.format('|'.join(refs))
+    new_retrieval = re.sub(pattern, '', retrieval_information, flags=re.DOTALL)
+
+    # Dọn lại whitespace
+    new_retrieval = re.sub(r'\n{2,}', '\n', new_retrieval).strip()
+    return new_retrieval
+
+
+def remove_entity_evidence(current_retrieval: str, current_short: str):
+    if not isinstance(current_retrieval, str) or not isinstance(current_short, str):
+        return current_retrieval
+    if not current_retrieval or not current_short or current_short == "":
+        return current_retrieval
+
+    # Escape regex characters in short answer
+    escaped_short = re.escape(current_short.strip())
+
+    # Remove ALL occurrences (case-insensitive)
+    new_retrieval = re.sub(escaped_short, "", current_retrieval, flags=re.IGNORECASE)
+
+    # Cleanup whitespace artifacts
+    new_retrieval = re.sub(r'\s{2,}', ' ', new_retrieval)
+    new_retrieval = re.sub(r'\n\s*\n+', '\n\n', new_retrieval)
+    new_retrieval = new_retrieval.strip()
+
+    return new_retrieval
+

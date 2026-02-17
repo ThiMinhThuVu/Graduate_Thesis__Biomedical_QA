@@ -483,7 +483,8 @@
     },
     "882911": {
         "True": [
-            "digitalis"
+            "digitalis",
+            "digitalis purpurea"
         ],
         "False": [
             ""
@@ -2241,12 +2242,14 @@
         ],
         "False": [
             "xq26.3 region",
-            ""
+            "",
+            "xq26.1"
         ]
     },
     "532019": {
         "True": [
-            "glycogen storage disease type vi"
+            "glycogen storage disease type vi",
+            "hers disease"
         ],
         "False": [
             "glycogen storage disease type iv",
@@ -2692,7 +2695,8 @@
             "livedoid vasculopathy"
         ],
         "False": [
-            ""
+            "",
+            "atrophie blanche"
         ]
     },
     "150011": {
@@ -2833,7 +2837,8 @@
     },
     "485815": {
         "True": [
-            "thiamine"
+            "thiamine",
+            "vitamin b1"
         ],
         "False": [
             "vitamin thiamine",
@@ -3158,7 +3163,8 @@
             "antiandrogens"
         ],
         "False": [
-            ""
+            "",
+            "anti-androgen therapies"
         ]
     },
     "343388": {
@@ -3376,7 +3382,8 @@
         ],
         "False": [
             "alain tessier",
-            ""
+            "",
+            "paul louis tessier"
         ]
     },
     "832838": {
@@ -3640,7 +3647,8 @@
             "24",
             "24 weeks",
             "12 weeks",
-            ""
+            "",
+            "11"
         ]
     },
     "831634": {
@@ -3950,7 +3958,8 @@
             "alacrima"
         ],
         "False": [
-            ""
+            "",
+            "alacrimia"
         ]
     },
     "430378": {
@@ -4022,7 +4031,8 @@
     },
     "536132": {
         "True": [
-            "central nervous system"
+            "central nervous system",
+            "cns"
         ],
         "False": [
             ""
@@ -4217,7 +4227,8 @@
     },
     "559411": {
         "True": [
-            "early myoclonic encephalopathy"
+            "early myoclonic encephalopathy",
+            "eme"
         ],
         "False": [
             ""
@@ -6513,7 +6524,8 @@
             "acute intermittent porphyria"
         ],
         "False": [
-            ""
+            "",
+            "aip"
         ]
     },
     "238256": {
@@ -7318,7 +7330,8 @@
     },
     "498978": {
         "True": [
-            "reverse transcription polymerase chain reaction (rt-pcr)"
+            "reverse transcription polymerase chain reaction (rt-pcr)",
+            "rt-pcr"
         ],
         "False": [
             "reverse transcription polymerase chain reaction",
@@ -7857,7 +7870,8 @@
         ],
         "False": [
             "",
-            "stiff neck"
+            "stiff neck",
+            "nuchal rigidity"
         ]
     },
     "224427": {
@@ -8002,7 +8016,8 @@
         ],
         "False": [
             "testicular tumor",
-            ""
+            "",
+            "testicular carcinoma"
         ]
     },
     "170603": {
@@ -8300,7 +8315,8 @@
     },
     "469559": {
         "True": [
-            "epstein-barr virus"
+            "epstein-barr virus",
+            "ebv"
         ],
         "False": [
             ""
@@ -8890,8 +8906,7 @@
     },
     "865090": {
         "True": [
-            "cytomegalovirus",
-            "cmv"
+            "cytomegalovirus"
         ],
         "False": [
             "human cytomegalovirus",
@@ -8967,7 +8982,8 @@
         "False": [
             "immune-mediated variant of benign fasciculation syndrome",
             "",
-            "immune-mediated variant"
+            "immune-mediated variant",
+            "cfs"
         ]
     },
     "845857": {

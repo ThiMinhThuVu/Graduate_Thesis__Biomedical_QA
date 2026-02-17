@@ -98,3 +98,10 @@ config/ner_model
 data/cache
 /.github
 *.zip
+
+.ipynb_checkpoints
+zero-shot-o3
+
+src/cluster_v2
+src/cluster/cache
+src/cluster/final

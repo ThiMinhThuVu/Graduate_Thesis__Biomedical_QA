@@ -29,7 +29,7 @@ def normalize_source(src):
     return src.strip().lower() if src else "unknown"
 
 
-def analyze_accuracy_ignore_no_eve(json_folder):
+def analyze_accuracy_ignore_no_eve(json_folder, topk=1):
     """
     - no evidence = short_answer == 'insufficient information'
     - chỉ tính accuracy trên các câu có evidence
@@ -76,10 +76,10 @@ def analyze_accuracy_ignore_no_eve(json_folder):
                 continue
             
             # if src in ["google", "wiki", "crawl_sparql_wikidata"]:
-            # if src in ["crawl_wiki", "crawl_ner_wiki"]:
+            # if src in ["crawl_wiki", "crawl_ner_wiki", "crawl_sparql_wikidata"]:
             #     continue
         
-            for cand in result['candidate'][:1]: #lấy choice 1
+            for cand in result['candidate'][:topk]: #lấy choice 1
                 short_answer = cand.get("short_answer", "").strip().lower()
 
                 # ❌ no eve
@@ -116,7 +116,7 @@ def analyze_accuracy_ignore_no_eve(json_folder):
 
     return stats, total_questions
 
-def analyze_any_source_correct(json_folder):
+def analyze_any_source_correct(json_folder, topk=1):
     """
     Một sample được coi là ĐÚNG
     nếu tồn tại ít nhất 1 source trả lời đúng (≠ insufficient information)
@@ -179,9 +179,9 @@ def analyze_any_source_correct(json_folder):
         # đọc MCQ
         for src, result in source_outputs.items():
             # if src in ["google", "wiki", "crawl_sparql_wikidata"]:
-            # if src in ["crawl_wiki", "crawl_ner_wiki"]:
-            #     continue
-            for cand in result['candidate'][:1]: #lấy choice 1
+            if src in ["crawl_wiki", "crawl_ner_wiki", "crawl_sparql_wikidata"]:
+                continue
+            for cand in result['candidate'][:topk]: #lấy choice 1
                 short_answer = cand.get("short_answer", "").strip().lower()
 
                 # ❌ no evidence
@@ -405,8 +405,9 @@ def check_final(json_folder):
 
 
 def main():
-    json_folder = "medhop_results_no_mcq_TFIDF300/all_ans"
+    # json_folder = "medhop_results_mcq_3_TFIDF300/all_ans"
     # json_folder = "medhop_results_mcq_2_TFIDF1000/all_ans"
+    json_folder = "medhop_results_llm_create_mcq/all_ans"
 
     stats, total_questions = analyze_accuracy_ignore_no_eve(json_folder)
     print_report(stats, total_questions)

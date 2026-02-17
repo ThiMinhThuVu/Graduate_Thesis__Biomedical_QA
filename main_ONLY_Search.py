@@ -22,7 +22,8 @@ extractor_model = None
 
 global cache_ner_filter
 cache_ner_filter = {}
-
+global cache_id_IR 
+cache_id_IR = {}
 
 def reset_directory(dir_path: str):
     """
@@ -207,9 +208,9 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     candidates = []
                     idx_del = 0
                     
-                    all_snippet, current_retrieval = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings,
+                    all_snippet, current_retrieval, cache_link_crawl_wiki = retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq_retrieval, settings,
                                                                 target_ans_type, embedding_model, hash_id_cache, hash_id_crawl_wiki_cache)
-                    
+                    cache_id_IR[qidx] = cache_link_crawl_wiki
                     cache_ner_filter[sample_id] = current_retrieval
                     continue
                     if has_extract_ner: # Only extract snippet
@@ -474,7 +475,7 @@ if __name__ == "__main__":
     model_mcq_name = "o3-mini" #"gpt-4.1-mini" #o3-mini
     mcq_add_no_ans = False # True #False
         
-    meta_ner = load_json(r'E:\analysis_output\cache-enitty\ALL\meta_entity_v2.json')
+    meta_ner = load_json(r'data\metadata_entity.json')
     
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
@@ -489,8 +490,8 @@ if __name__ == "__main__":
        
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'
-        if check_yn:
-            continue
+        # if check_yn:
+        #     continue
         
         # type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
         type_q = metadata[qidx]['type_q']    
@@ -522,6 +523,7 @@ if __name__ == "__main__":
             target_ans_type=target_ans_type, question_type_to_ner=question_type_to_ner,model_mcq=model_mcq_name,
             mcq_add_no_ans=mcq_add_no_ans)
         
+    save_json(cache_id_IR, "data/all_link_crawl_wiki.json" )
     save_json(cache_ner_filter, "all_inf_direct.json")
     
     lengths = [len(context.split()) for context in cache_ner_filter.values() if isinstance(context, str)]
@@ -537,3 +539,4 @@ if __name__ == "__main__":
         print(f"Tổng: {total_len}")
     else:
         print("Không có context nào.")
+        
