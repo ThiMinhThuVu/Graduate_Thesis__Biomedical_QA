@@ -113,4 +113,4 @@ if __name__ == "__main__":
     messages = [
         {"role": "user", "content": "Thủ đô của Pháp là gì?"}
     ]
-    print(request_api(messages, model="o3"))
+    print(request_api(messages, model="o3-mini"))

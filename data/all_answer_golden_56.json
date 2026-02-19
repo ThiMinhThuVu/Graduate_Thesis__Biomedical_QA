@@ -4825,7 +4825,8 @@
     },
     "220313": {
         "True": [
-            "cmv"
+            "cmv",
+            "cytomegalovirus"
         ],
         "False": [
             "human cytomegalovirus",
@@ -8906,7 +8907,8 @@
     },
     "865090": {
         "True": [
-            "cytomegalovirus"
+            "cytomegalovirus",
+            "cmv"
         ],
         "False": [
             "human cytomegalovirus",

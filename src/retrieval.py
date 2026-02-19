@@ -459,96 +459,6 @@ def retrieval_context_2wiki(search_kw, sample, embedding_model, vec_embed=False,
                 
     return result.strip()
 
-def _crawl_wiki_page_general(
-    search_kw_subq,
-    article_iterable,
-    get_hash_id_func,
-    get_link_func,
-    get_title_func,
-    cache_crawl_base,
-    cache_filter_base,
-    pre_processing_func,
-    target_answer_type=None,
-    embedding_model=None,
-    topk=3,
-    max_token=300,
-    percentage=0.5,
-    get_ner=False
-    ):
-    if embedding_model:
-        type_embed = "embedding"
-    else:
-        type_embed = "tfidf"
-
-    all_context = ""
-    cnt_wiki = 0
-    list_link = []
-
-    for article in article_iterable:
-        hash_id = get_hash_id_func(article)
-        link = get_link_func(article)
-        title = get_title_func(article)
-        
-        if not hash_id or not link:
-            continue
-        list_link.append(link)
-        file_crawl = f"{cache_crawl_base}/{hash_id}"
-        file_filter = f"{cache_filter_base}/{hash_id}"
-        
-        if os.path.exists(file_filter):
-            data_filter = load_json(file_filter)
-            filter_context = data_filter.get('crawl_wiki', {}).get('filter', {}).get(link, {}).get(type_embed, "")
-        else:
-            if os.path.exists(file_crawl):
-                print(f"[Cache] Wikipedia page: {file_crawl}")
-                crawl_wiki = load_json(file_crawl)
-                crawled_data = crawl_wiki.get('crawl_wiki', {}).get('html_page', {}).get(link, None)
-            else:
-                print(f"Crawling Wikipedia page: {link}")
-                crawled_data = crawl_wikipedia_page(link)
-                crawled_data_output = {
-                    'crawl_wiki': {
-                        'html_page': {
-                            link: crawled_data
-                        }
-                    }
-                }
-                save_json(crawled_data_output, file_crawl)
-
-            if crawled_data and 'content' in crawled_data and len(crawled_data['content']) != 0:
-                wiki_content = pre_processing_func(crawled_data)
-            else:
-                wiki_content = None
-
-            if wiki_content:
-                filter_context = get_paragraphs_wiki_result(
-                    link, wiki_content, search_kw_subq,target_answer_type=target_answer_type,
-                    embedding_model=embedding_model, max_docs_token=max_token, percentage=percentage
-                )
-                filter_output = {
-                    'crawl_wiki': {
-                        'filter': {
-                            link: {
-                                type_embed: filter_context
-                            }
-                        }
-                    }
-                }
-                save_json(filter_output, file_filter)
-            else:
-                filter_context = None
-
-        if filter_context is not None:
-            cnt_wiki += 1
-            if get_ner:
-                all_context += f"- Reference: [CRAWL_NER_WIKI_{cnt_wiki}] - Information about: {title} - {article['ner']}\n{filter_context}\n"
-            else:
-                all_context += f"- Reference: [CRAWL_WIKI_{cnt_wiki}] - Information about: {title}\n{filter_context}\n"
-            if cnt_wiki >= topk:
-                break
-
-    return all_context, list_link
-
 def crawl_wiki_page_general(
     search_kw_subq,
     article_iterable,
@@ -677,7 +587,7 @@ def crawl_wiki_page_general(
             if cnt_wiki >= topk:
                 break
 
-    return all_filtered_context, list_link #all_raw_context
+    return all_filtered_context, list_link 
 
 
 def crawl_wiki_page_raw(
@@ -713,6 +623,67 @@ def crawl_wiki_page_raw(
 
     return all_context
 
+def get_sparql_retrieval_context(list_ner_q, search_kw_subq, settings, embedding_model, 
+                                 retrieval_topk, cache_hashid_sparql, file_cache_hash_id_sparql):
+    """
+    Xử lý lấy context từ SPARQL với logic hash_id = hash(ner + search_kw_subq)
+    """
+    folder_hash_sparql = settings['cache']['crawl_wikidata']
+    os.makedirs(folder_hash_sparql, exist_ok=True)
+    
+    # 1. Lấy relation IDs dựa trên sub-query (dùng chung cho tất cả NER trong sub-query này)
+    dict_relation_id = match_relation_id(
+        search_kw_subq, 
+        top_k=retrieval_topk['sparql_r_topk'], 
+        retry_topk=retrieval_topk['sparql_r_retry_topk']
+    )
+    
+    desc_sims = []
+
+    for ner in list_ner_q:
+        ner_norm = normalize_query(ner)
+        unique_key = f"{ner_norm.strip().lower()}_{search_kw_subq.strip().lower()}"
+        
+        if unique_key in cache_hashid_sparql:
+            hash_file_name = cache_hashid_sparql[unique_key]
+        else:
+            hash_file_name = make_cache_filename(unique_key)
+            cache_hashid_sparql[unique_key] = hash_file_name
+            save_json(cache_hashid_sparql, file_cache_hash_id_sparql)
+        
+        file_crawl = f"{folder_hash_sparql}/{hash_file_name}"
+        
+        if os.path.exists(file_crawl):                
+            crawled_sparql = load_json(file_crawl)
+            data = crawled_sparql.get(unique_key, {})
+            context = data.get('context', "")
+            description = data.get('description', "")
+        else:
+            # Tiến hành crawl/filter từ Wikidata API
+            context, dict_result, description = process_fillter_wikidata_api(
+                ner_norm, 
+                settings['get_history_old_id'], 
+                dict_relation_id
+            )
+            crawled_sparql = {unique_key: {"description": description, "context": context, "dict_result": dict_result}}
+            save_json(crawled_sparql, file_crawl)
+        
+        # Tính toán độ tương đồng để xếp hạng (rerank)
+        cosine = 0.0
+        if description and isinstance(description, str) and description.strip():
+            cosine = caculate_scores(search_kw_subq, description, embedding_model)["cosine"]
+            
+        desc_sims.append({"key_entity": ner_norm, "cosine": cosine, "context": context})
+
+    # Format kết quả trả về
+    sparql_context = ""
+    if desc_sims:
+        desc_sims_sorted = sorted(desc_sims, key=lambda x: x["cosine"], reverse=True)
+        formatted_list = [f"{ent['key_entity']}: {ent['context']}" for ent in desc_sims_sorted if ent["context"].strip()]
+        if formatted_list:
+            sparql_context = "\n" + "\n".join(formatted_list)
+            
+    return sparql_context
 
 def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings,target_answer_type,
                       embedding_model, hash_id_cache, hash_id_crawl_wiki_cache):    
@@ -808,67 +779,27 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
             retrieval_information += crawl_ner_wiki + "\n"
             
 
-    if settings["get_sparql_context"]: # DÙng ner -> dùng cùng hash id entity2wiki với ner wiki
+    if settings["get_sparql_context"]: 
         file_cache_hash_id_sparql = settings['cache']['hash_id']['crawl_wikidata']
-        folder_hash_sparql = settings['cache']['crawl_wikidata']
-        
-        os.makedirs(folder_hash_sparql, exist_ok=True)
-        if not os.path.exists(file_cache_hash_id_sparql):
-            with open(file_cache_hash_id_sparql, 'w', encoding='utf-8') as f:
-                f.write('{}')
-                
-        cache_hashid_sparql = load_json(file_cache_hash_id_sparql)
-        
-        dict_relation_id = match_relation_id(search_kw_subq, top_k=retrieval_topk['sparql_r_topk'], retry_topk=retrieval_topk['sparql_r_retry_topk']) # trả về []
-        desc_sims = []
-        sparql_context = ""
-        
-        for ner in list_ner_q:
-            key_entity = normalize_query(ner)
-            if key_entity in cache_hashid_sparql:
-                hash_file_name = cache_hashid_sparql[key_entity]
-            else:
-                hash_file_name = make_cache_filename(key_entity)
-                cache_hashid_sparql[key_entity] = hash_file_name
-                save_json(cache_hashid_sparql, file_cache_hash_id_sparql)
-            
-            file_crawl = f"{folder_hash_sparql}/{hash_file_name}"
-            if os.path.exists(file_crawl):                
-                crawled_sparql = load_json(file_crawl)
-                context = crawled_sparql[key_entity]['context']
-                dict_result = crawled_sparql[key_entity]['dict_result']
-                description = crawled_sparql[key_entity]['description']
-            else:
-                crawled_sparql = {}                
-                context, dict_result, description = process_fillter_wikidata_api(key_entity, settings['get_history_old_id'], dict_relation_id)
-                crawled_sparql[key_entity] = {"description": description, "context": context, "dict_result": dict_result}
-                save_json(crawled_sparql, file_crawl)
-            
-            print("[Sparql]: ", file_crawl)
-            
-            # Tính cosine giữa search_kw_subq và description 
-            if description and isinstance(description, str) and len(description.strip()) > 0:
-                cosine = caculate_scores(search_kw_subq, description, embedding_model)["cosine"]
-            else:
-                cosine = 0.0
-                
-            desc_sims.append({"key_entity": key_entity, "cosine": cosine, "context": context})
+        # Load hoặc khởi tạo cache mapping cho SPARQL
+        if os.path.exists(file_cache_hash_id_sparql):
+            cache_hashid_sparql = load_json(file_cache_hash_id_sparql)
+        else:
+            cache_hashid_sparql = {}
 
-        # Chọn k_percent key_entity có cosine cao nhất
-        if desc_sims:
-            desc_sims_sorted = sorted(desc_sims, key=lambda x: x["cosine"], reverse=True)
-            #THUVTM
-            # if len(list_ner_q) > 5:
-            #     n_select = max(1, math.ceil(len(desc_sims_sorted) * retrieval_topk['k_percent']))
-            #     top_entities = desc_sims_sorted[:n_select]
-            # else:                    
-            #     top_entities = desc_sims_sorted
-            top_entities = desc_sims_sorted
-            for ent in top_entities:
-                if ent["context"] and ent["context"].strip():
-                    sparql_context += f"\n{ent['key_entity']}: {ent['context']}"
-        if sparql_context != "":
-            retrieval_information += f"- Reference [SPARQL]: {sparql_context}"
+        # Gọi hàm tách riêng
+        sparql_info = get_sparql_retrieval_context(
+            list_ner_q=list_ner_q,
+            search_kw_subq=search_kw_subq,
+            settings=settings,
+            embedding_model=embedding_model,
+            retrieval_topk=retrieval_topk,
+            cache_hashid_sparql=cache_hashid_sparql,
+            file_cache_hash_id_sparql=file_cache_hash_id_sparql
+        )
+        
+        if sparql_info:
+            retrieval_information += f"- Reference [SPARQL]: {sparql_info}\n\n"
         
     return all_snippet, retrieval_information, cache_link_crawl_wiki
 

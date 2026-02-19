@@ -2,7 +2,7 @@ import sys
 import json
 import os
 import spacy
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../..")))
 from src.extract_ner import extract_entities_from_evidence
 from src.gpt_request import request_api
 from tqdm import tqdm
@@ -64,18 +64,25 @@ def old_prompt_gen_answer_medhop_step_3b(question, search_kw, key_entities, cont
         """
     return prompt
 
+import re        
+def extract_references(long_answer):
+    if not long_answer:
+        return []
+    return re.findall(r"\[([^\]]+)\]", long_answer)
+
+
 if __name__ == "__main__":
 
-    threads = [0, 100]
+    threads = [0, 1000]
     threads_str = f'_{threads[0]}_{threads[1]}' #để cho vào lưu tên file
     metadata = load_json('data/metadata_medhop.json')
     golden = load_json(r'data\all_answer_golden_56.json')
 
     source = 'merge_google_wiki' # 'wiki' #'google'
     s_type = 'kmean' #'hdbscan' #kmean
-    num_cluster = '_top3_5' # "_3"
+    num_cluster = '_7' # "_3"
 
-    cache_cluster = r'src\cluster\final\output_cluster_kmean_euclidean_top3_5.json'
+    cache_cluster = load_json(r'src\cluster\final\output_cluster_kmean_euclidean_top5_7.json')
     
     # cache_cluster = load_json(fr'src\cluster\final\output_cluster_kmean_euclidean_top5{num_cluster}.json')
     res_file_sample = fr'src\cluster\final\answer_{s_type}_{source}{num_cluster}{threads_str}.json'
@@ -96,13 +103,15 @@ if __name__ == "__main__":
         res_data = load_json(res_file_sample)
     else:
         res_data = {}
+        
+    mapping_context_src = {}
     for idx, (qidx, sample) in enumerate(tqdm(metadata.items(), desc="Processing")):
-        if qidx in res_data:
-            continue
+        # if qidx in res_data:
+        #     continue
         
         if not (threads[0] <= idx < threads[1]):
             continue
-
+        qidx = str(qidx)            
         if qidx not in cache_cluster:
             continue
 
@@ -115,25 +124,30 @@ if __name__ == "__main__":
 
         cnt += 1
 
-        question = sample['original question']
-        search_kw = cache_search_kw[qidx]
+        # question = sample['original question']
+        # search_kw = cache_search_kw[qidx]
 
-        key_entities = extract_entities_from_evidence(
-            extractor_model,
-            extractor_model_2,
-            extractor_model_3,
-            search_kw,
-            target_label
-        )
+        # key_entities = extract_entities_from_evidence(
+        #     extractor_model,
+        #     extractor_model_2,
+        #     extractor_model_3,
+        #     search_kw,
+        #     target_label
+        # )
 
       
         # ===== Gen answer theo từng cluster =====
         res_data[qidx] = {}
         sample_cluster = cache_cluster[qidx]
         
+        mapping_context_src[qidx] = {}
+        
         for cluster_label, item in sample_cluster.items():           
-            # context = "\n".join(item['docs']) + "\n Reference: [CRAWL_WIKI]: " + "\n".join(item['crawl_doc'])
             context = "\n".join(item['docs']) 
+            
+            for doc in item['docs']:
+                src_doc = extract_references(doc)[0]
+                mapping_context_src[qidx][src_doc] = doc
             
             for idx, crawl_doc in enumerate(item['crawl_doc']):
                 if item['source'][idx] == 'crawl_ner_wiki':
@@ -143,35 +157,39 @@ if __name__ == "__main__":
                     
                 context += f"\n Reference: [{src}]: {crawl_doc}" 
                 
+                mapping_context_src[qidx][src] = crawl_doc
+                
             if context.strip() == "":
                 continue
 
-            prompt = old_prompt_gen_answer_medhop_step_3b(
-                question,
-                search_kw,
-                key_entities,
-                context
-            )
+            # prompt = old_prompt_gen_answer_medhop_step_3b(
+            #     question,
+            #     search_kw,
+            #     key_entities,
+            #     context
+            # )
 
-            messages = [
-                {"role": "user", "content": prompt}
-            ]
+            # messages = [
+            #     {"role": "user", "content": prompt}
+            # ]
 
-            result_json = request_api(messages=messages, model='o3-mini')
+            # result_json = request_api(messages=messages, model='o3-mini')
 
-            try:
-                result_dict = json.loads(result_json)
-            except Exception as e:
-                print("JSON parse error:", e)
-                print(result_json)
+            # try:
+            #     result_dict = json.loads(result_json)
+            # except Exception as e:
+            #     print("JSON parse error:", e)
+            #     print(result_json)
 
             res_data[qidx][cluster_label] = {
-                'llm': result_dict,
+                # 'llm': result_dict,
                 'context': context
             }
 
-        save_json(res_data, res_file_sample)
-        
-    save_json(res_data, res_file_sample)
-    print(res_file_sample)
+        # save_json(res_data, res_file_sample)
+    
+    # save_json(res_data, res_file_sample)
+    # print(res_file_sample)
     print("Total processed:", cnt)
+    save_json(mapping_context_src, r"src\cluster\final\mapping_context_src.json")
+    save_json(res_data, r"src\cluster\final\merge_context_src.json")

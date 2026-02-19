@@ -1,0 +1,521 @@
+{
+  "125994": {
+    "o3_result": {
+      "short_answer": "cradd",
+      "long_answer": "Biallelic loss-of-function mutations in the CRADD gene (also known as RAIDD) have been shown to cause frontal-dominant polymicrogyria in affected individuals. Biochemically, CRADD is an adaptor protein that interacts with RIPK1 and CASP2 and is required for tumor-necrosis-factor-α (TNFα)-induced activation of the JNK (c-Jun N-terminal kinase) signaling cascade. Thus, CRADD links the cortical malformation polymicrogyria with JNK pathway activation in response to TNFα."
+    },
+    "golden": [
+      "wdr62"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "wdr62",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "wdr62",
+        "source": "crawl_wiki"
+      }
+    ]
+  },
+  "149454": {
+    "o3_result": {
+      "short_answer": "six3",
+      "long_answer": "SIX3 (Sine oculis‐related homeobox 3) is widely described as the “master control” or “master regulator” gene for vertebrate eye development because its activity initiates and coordinates formation of the eye field.  Loss-of-function or other misexpression of SIX3 in humans disrupts early forebrain and midline patterning; such disturbances are a well-established cause of holoprosencephaly (HPE), with clinical presentations that range from very mild to very severe.  Pathogenic SIX3 variants account for a significant proportion of familial and sporadic HPE cases (historically classified as HPE2), demonstrating that improper regulation of this eye-field master gene can lead to the spectrum of holoprosencephaly phenotypes."
+    },
+    "golden": [
+      "pax6"
+    ],
+    "check": false,
+    "candidate": null
+  },
+  "229400": {
+    "o3_result": {
+      "short_answer": "hypergammaglobulinemic purpura",
+      "long_answer": "Hypergammaglobulinemic purpura (also called Waldenström’s purpura) is an uncommon form of recurrent purpura characterized by elevated serum immunoglobulins. Epidemiologic studies show a marked female predominance—about 85 % of reported cases occur in women—making it both rare and distinctly more frequent in the female population."
+    },
+    "golden": [
+      "post-transfusion purpura"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "post-transfusion purpura",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "568641": {
+    "o3_result": {
+      "short_answer": "hoxd13",
+      "long_answer": "Absent tibia-polydactyly-arachnoid cyst syndrome presents with limb malformations similar to those seen in disorders caused by mutations in the HOXD gene cluster on chromosome 2q31. Because of this phenotypic overlap, researchers analysed the coding sequence of the chromosome-2 homeobox gene HOXD13 in affected patients. Sequencing revealed no pathogenic variants, demonstrating that HOXD13 is not abnormal in individuals with this syndrome."
+    },
+    "golden": [
+      "hoxd10"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "hoxd10",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "hoxd10",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "728614": {
+    "o3_result": {
+      "short_answer": "bmpr2",
+      "long_answer": "Bone morphogenetic protein receptor type II (BMPR2) is the principal gene in which pathogenic variants cause heritable/primary pulmonary (arterial) hypertension.  Separate families carrying heterozygous BMPR2 mutations have also been reported with the skeletal malformation brachydactyly type A2, characterised by shortening of the middle phalanges of the index (and often little) fingers.  Thus, BMPR2 is the gene that is etiologically linked to both primary pulmonary hypertension and type A2 brachydactyly."
+    },
+    "golden": [
+      "bmpr1b"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "bmpr1b",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "686876": {
+    "o3_result": {
+      "short_answer": "wasting",
+      "long_answer": "A 2016 global nutrition review by UNICEF, WHO and the World Bank estimated that about 52.9 million children under five years of age were affected by wasting—acute malnutrition manifested by low weight-for-height and loss of muscle and fat tissue.  Wasting is recognised as being associated with a variety of disorders that impair energy storage or utilisation, including glycogen-storage disease type VI (Hers’ disease), in which impaired hepatic glycogen breakdown can lead to poor growth and loss of body mass.  Thus, the condition linked to Hers’ disease and reported to affect roughly 52.9 million young children worldwide in 2016 is wasting (acute malnutrition)."
+    },
+    "golden": [
+      "developmental delay"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "glycogen storage disease type vi",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "847295": {
+    "o3_result": {
+      "short_answer": "1",
+      "long_answer": "In the European Union and many other jurisdictions, a disorder is considered rare when it affects fewer than 1 person in every 2,000. Conditions such as the microcornea-glaucoma-absent-frontal-sinus syndrome fall under this definition, meaning no more than about 1 individual per 2,000 people would typically be affected."
+    },
+    "golden": [
+      "less than 1"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "1",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "920528": {
+    "o3_result": {
+      "short_answer": "van den ende–gupta syndrome",
+      "long_answer": "Van den Ende–Gupta syndrome (VDEGS) is an autosomal-recessive malformation syndrome that was first described in 1992 in two siblings born to consanguineous Arab parents—the only cases known at that time, making it an exceptionally rare genetic disorder.  Core manifestations include characteristic facial features (blepharophimosis, narrow beaked nose, everted lower lip) and multiple skeletal anomalies such as radial-head dislocation, camptodactyly, slender ribs, hypoplastic scapulae and, very commonly, congenital talipes equinovarus (clubfoot).  Subsequent reports have confirmed the strong association of VDEGS with clubfoot, and mutations in the SCARF2 gene have been identified as its molecular cause."
+    },
+    "golden": [
+      "ulna hypoplasia-intellectual disability syndrome"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "nonlethal multiple pterygium syndrome",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "995113": {
+    "o3_result": {
+      "short_answer": "ext2",
+      "long_answer": "Gómez–López-Hernández (cerebellotrigeminal-dermal) syndrome has been linked to pathogenic variants in the EXT2 gene.  EXT2 is situated on chromosome 11p11-p12 and codes for exostosin-2, which pairs with exostosin-1 to form the two-subunit heparan-sulfate polymerase enzyme.  Mutations disrupting EXT2 therefore implicate this gene in the pathogenesis of Gómez–López-Hernández syndrome."
+    },
+    "golden": [
+      "acp2"
+    ],
+    "check": false,
+    "candidate": [
+      {
+        "text": "kcnj11",
+        "source": "create_MCQ"
+      }
+    ]
+  },
+  "106578": {
+    "o3_result": {
+      "short_answer": "colony-stimulating factors",
+      "long_answer": "Fanconi anemia–associated bone-marrow failure can be managed temporarily with pharmacologic agents. Androgens (e.g., oxymetholone) are often combined with hematopoietic growth factors that are naturally occurring glycoproteins capable of stimulating the proliferation, differentiation, and maturation of blood-cell precursors. This class of glycoproteins is collectively termed colony-stimulating factors (CSFs), which include agents such as granulocyte colony-stimulating factor (G-CSF) and granulocyte-macrophage colony-stimulating factor (GM-CSF). Administering CSFs alongside androgens can transiently improve cytopenias until definitive therapy (e.g., hematopoietic stem-cell transplantation) is undertaken."
+    },
+    "candidate": [
+      {
+        "text": "colony stimulating factors",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "hematopoietic growth factor",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "hematopoietic growth factor",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "colony-stimulating factors",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "hematopoietic growth factors"
+    ],
+    "check": false
+  },
+  "224427": {
+    "o3_result": {
+      "short_answer": "pasireotide",
+      "long_answer": "Pasireotide (marketed in the United States as Signifor and Signifor LAR) is the only medication that has received specific U.S. Food and Drug Administration approval for the treatment of pituitary-dependent Cushing’s disease in adults who are either not candidates for curative pituitary surgery or who have persistent or recurrent disease after pituitary surgery. The somatostatin analogue binds with high affinity to somatostatin receptor subtype 5 on corticotroph adenomas, suppressing excessive ACTH secretion and thereby lowering cortisol levels, and its labeling explicitly limits the indication to this patient population."
+    },
+    "candidate": [
+      {
+        "text": "osilodrostat",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "signifor",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "osilodrostat",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "isturisa",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "isturisa",
+      "osilodrostat"
+    ],
+    "check": false
+  },
+  "230703": {
+    "o3_result": {
+      "short_answer": "distamycin a",
+      "long_answer": "The fragile site located at Xq27.2 (designated FRA(X)q27 / FRAXD) is a rare, distamycin-A–sensitive fragile site. Distamycin A is a minor-groove-binding antibiotic produced by Streptomyces species; when lymphocytes are cultured in the presence of this antibiotic, it interferes with DNA replication at AT-rich sequences and reproducibly induces chromosomal gaps and breaks at the Xq27.2 fragile site. Thus, Distamycin A is the antibiotic used to induce breaks at this particular fragile site on the human X chromosome."
+    },
+    "candidate": [
+      {
+        "text": "aphidicolin",
+        "source": "google"
+      },
+      {
+        "text": "aphidicolin",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "distamycin a",
+        "source": "crawl_ner_wiki"
+      }
+    ],
+    "golden": [
+      "aphidicolin"
+    ],
+    "check": false
+  },
+  "408853": {
+    "o3_result": {
+      "short_answer": "camp-dependent protein kinase (pka)",
+      "long_answer": "Glycogen storage disease type X is caused by a deficiency of the cyclic-AMP-dependent protein kinase (protein kinase A). This enzyme normally phosphorylates and activates phosphorylase kinase, which in turn activates glycogen phosphorylase to promote glycogen breakdown. When PKA is deficient, this signaling cascade is blunted, leading to impaired glycogenolysis, hepatic glycogen accumulation, and the clinical picture of GSD X."
+    },
+    "candidate": [
+      {
+        "text": "pgam2",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "phosphoglycerate mutase 2",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "muscle phosphoglycerate mutase",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "pgam2",
+      "muscle phosphoglycerate mutase"
+    ],
+    "check": false
+  },
+  "695539": {
+    "o3_result": {
+      "short_answer": "oxymetholone",
+      "long_answer": "Oxymetholone is an anabolic androgenic steroid that stimulates proliferation and differentiation of hematopoietic progenitor cells, thereby enhancing the growth and maturation of red cells, neutrophils and platelets. Because these effects can partially counter the pancytopenia characteristic of Fanconi anemia, oxymetholone is routinely employed as a supportive (non-curative) pharmacologic therapy for patients with this disorder."
+    },
+    "candidate": [
+      {
+        "text": "hematopoietic growth factor",
+        "source": "crawl_wiki"
+      },
+      {
+        "text": "danazol",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "hematopoietic growth factor",
+        "source": "crawl_ner_wiki"
+      }
+    ],
+    "golden": [
+      "hematopoietic growth factor"
+    ],
+    "check": false
+  },
+  "725163": {
+    "o3_result": {
+      "short_answer": "adermatoglyphia",
+      "long_answer": "The described condition is adermatoglyphia, sometimes nick-named the “immigration delay disease.” It is an extremely rare autosomal-dominant disorder reported in only about ten families worldwide. Affected individuals are born without epidermal ridges (fingerprints) and often develop transient neonatal blisters and facial milia. Genetic studies have shown that heterozygous loss-of-function mutations affecting an alternative, skin-specific isoform of the SMARCAD1 gene on chromosome 4 are responsible for the phenotype."
+    },
+    "candidate": [
+      {
+        "text": "absence of fingerprints-congenital milia syndrome",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "absence of fingerprints-congenital milia syndrome",
+        "source": "crawl_ner_wiki"
+      },
+      {
+        "text": "basan syndrome",
+        "source": "create_MCQ"
+      }
+    ],
+    "golden": [
+      "basan syndrome",
+      "absence of fingerprints-congenital milia syndrome"
+    ],
+    "check": false
+  },
+  "954297": {
+    "o3_result": {
+      "short_answer": "stroke",
+      "long_answer": "Varicella-zoster virus can infect and inflame cerebral arteries (VZV vasculopathy), precipitating an ischemic stroke. This complication typically presents with focal neurologic deficits such as dizziness and dysarthria (brainstem–cerebellar involvement) together with hemiparesis and paresthesia (unilateral motor and sensory impairment), making stroke the hallmark severe complication described."
+    },
+    "candidate": [
+      {
+        "text": "varicella-zoster virus vasculopathy",
+        "source": "google"
+      },
+      {
+        "text": "varicella-zoster virus vasculopathy",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "varicella-zoster virus encephalitis",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "stroke",
+        "source": "crawl_ner_wiki"
+      }
+    ],
+    "golden": [
+      "cerebrovascular accident"
+    ],
+    "check": false
+  },
+  "166341": {
+    "o3_result": {
+      "short_answer": "5%",
+      "long_answer": "The first recognized clinical case of uniparental disomy (reported by Spence et al., 1988) involved maternal uniparental disomy of chromosome 7 in a patient with cystic fibrosis. Human chromosome 7 contains about 159 million base pairs; as detailed in genome reference data (e.g., NCBI, Genetics Home Reference), this amount corresponds to roughly 5 percent of the total DNA present in human cells. Therefore, the duplicated chromosome in that landmark UPD case represents about 5 % of the cellular DNA."
+    },
+    "candidate": [
+      {
+        "text": "3.5%",
+        "source": "google"
+      },
+      {
+        "text": "5 percent",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "5%",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "3.5 percent",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "5-5.5%"
+    ],
+    "check": false
+  },
+  "408733": {
+    "o3_result": {
+      "short_answer": "systemic lupus erythematosus",
+      "long_answer": "In the evaluation of loin pain hematuria syndrome, one of the conditions that must be excluded is lupus nephritis secondary to systemic lupus erythematosus (SLE).  The classical complement component-1q (C1q) genes—C1QA, C1QB and C1QC—are clustered on chromosome 1 at cytoband 1p36.12.  Deficiency or polymorphic variation in these genes is a well-established genetic association with the development of SLE.  Thus, systemic lupus erythematosus is both part of the differential diagnosis for loin pain hematuria syndrome and is genetically linked to the cytoband 1p36.12."
+    },
+    "candidate": [
+      {
+        "text": "1p36 deletion syndrome",
+        "source": "google"
+      },
+      {
+        "text": "1p36 copy number variation syndrome",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "endometriosis"
+    ],
+    "check": false
+  },
+  "442535": {
+    "o3_result": {
+      "short_answer": "carotenoids",
+      "long_answer": "Carotenoid pigments (the carotenes and xanthophylls) are embedded in and around the protein cores of photosystem I and photosystem II. Besides enlarging the light-harvesting range, they protect chlorophyll from photo-oxidative damage. When a plant cannot synthesize carotenoids—because of genetic mutations or inhibitors—chlorophyll is rapidly destroyed by light, and the tissues become white or �albino.� Hence, deficiency of carotenoids is the molecular cause of albinism in such plants."
+    },
+    "candidate": [
+      {
+        "text": "chlorophyll",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "photosynthetic pigments",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "chlorophyll",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "chlorophyll"
+    ],
+    "check": false
+  },
+  "619326": {
+    "o3_result": {
+      "short_answer": "renal failure",
+      "long_answer": "In the single infant described with Cortés-Lacassie syndrome, progressive renal failure developed secondary to the metabolic defect. The authors of the case report noted that early liver transplantation (to correct the underlying enzymatic defect) or, alternatively, dialysis to remove the accumulating metabolites could potentially have halted or delayed the advance of this renal failure."
+    },
+    "candidate": [
+      {
+        "text": "liver failure",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "acute liver failure",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "liver failure",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "hepatorenal syndrome"
+    ],
+    "check": false
+  },
+  "627918": {
+    "o3_result": {
+      "short_answer": "corpus callosotomy",
+      "long_answer": "Foix–Chavany–Marie syndrome (opercular syndrome) can occasionally be produced not by permanent structural lesions but by bilateral propagation of epileptic discharges that transiently inactivate the frontal opercular cortices.  When the epilepsy is medically intractable, disconnective surgery that prevents the rapid spread of ictal activity from one hemisphere to the other can abolish the opercular seizures and the associated negative motor phenomena.  Corpus callosotomy – sectioning the corpus callosum either partially (usually the anterior two-thirds) or completely – is a well-established neurosurgical treatment for refractory epilepsy.  By interrupting interhemispheric spread, a callosotomy can eliminate the bilateral opercular involvement, leading to complete resolution of the Foix–Chavany–Marie syndrome that was being produced by those epileptic discharges.  Case reports document full recovery of voluntary facial, lingual, pharyngeal and masticatory movements after corpus callosotomy in such patients, confirming the effectiveness of this procedure in reversing FCMS when it is seizure-induced."
+    },
+    "candidate": [
+      {
+        "text": "focal cortical resection",
+        "source": "create_MCQ"
+      },
+      {
+        "text": "surgical resection of the epileptogenic focus",
+        "source": "google"
+      }
+    ],
+    "golden": [
+      "hemispherectomy"
+    ],
+    "check": false
+  },
+  "278085": {
+    "o3_result": {
+      "short_answer": "bbs type 1",
+      "long_answer": "Bardet-Biedl syndrome is genetically heterogeneous, with each causative gene defining a numbered subtype of the disorder. Pathogenic variants in the BBS1 gene cause the phenotype classified as Bardet-Biedl syndrome type 1 (BBS1). Hence, mutations in the BBS1 gene are specifically associated with BBS type 1."
+    },
+    "golden": [
+      "bardet-biedl syndrome type 1",
+      "bardet–biedl syndrome type 1",
+      "bardet–biedl syndrome-1"
+    ],
+    "check": false
+  },
+  "655589": {
+    "o3_result": {
+      "short_answer": "paragonimiasis",
+      "long_answer": "Paragonimiasis is the tissue-fluke infection produced by Paragonimus species (most often Paragonimus westermani). Although the adult worms characteristically lodge in the lungs, aberrant migration occurs in a substantial proportion of patients. Epidemiologic series show that 10 – 24 % of documented Paragonimus infections involve ectopic sites, most commonly the brain or spinal cord, giving rise to cerebral (neurologic) paragonimiasis. When the parasite lodges in the central nervous system it can provoke seizures, focal deficits, intracranial inflammation and, on occasion, thrombotic complications such as cerebral venous sinus thrombosis – a rare form of stroke produced by clotting of the brain’s dural venous sinuses. Therefore, the parasitic disease whose central-nervous-system involvement is seen in roughly 10–24 % of affected individuals and is linked to CVST is paragonimiasis."
+    },
+    "golden": [
+      "trichinosis"
+    ],
+    "check": false
+  },
+  "649969": {
+    "o3_result": {
+      "short_answer": "aldh18a1",
+      "long_answer": "The progeroid cutis laxa (De Barsy) syndrome that presents with a prematurely aged appearance, generalized cutis laxa, growth and developmental delay, and characteristic ocular findings such as bilateral corneal clouding is caused by loss-of-function mutations in the ALDH18A1 gene. ALDH18A1 encodes Δ¹-pyrroline-5-carboxylate synthase (P5CS); deficiency of this enzyme disrupts proline and ornithine biosynthesis, leading to the connective-tissue and ocular abnormalities that define the syndrome."
+    },
+    "golden": [
+      "pycr1"
+    ],
+    "check": false
+  },
+  "651642": {
+    "o3_result": {
+      "short_answer": "vesicle-mediated protein sorting",
+      "long_answer": "Arthrogryposis–renal dysfunction–cholestasis (ARC) syndrome is caused by loss-of-function mutations in the VPS33B gene (or the related VIPAS39). VPS33B encodes a member of the Sec1/Munc18 family that forms part of the class C Vps tethering complex. This protein regulates the docking and fusion of intracellular transport vesicles with their target membranes, thereby ensuring correct trafficking of proteins to apical, endosomal and lysosomal compartments. In other words, the gene mediates vesicle-mediated protein sorting within the cell."
+    },
+    "golden": [
+      "membrane vesicle trafficking",
+      "vesicle trafficking"
+    ],
+    "check": false
+  },
+  "558304": {
+    "o3_result": {
+      "short_answer": "406",
+      "long_answer": "MPI-CDG (Congenital Disorder of Glycosylation type Ib) is caused by pathogenic variants in the MPI gene, which encodes the human phosphomannose isomerase enzyme. The canonical human phosphomannose isomerase protein (UniProt accession P34949) is composed of 406 amino acid residues. Therefore, the enzyme whose mutations lead to MPI-CDG contains 406 amino acid residues."
+    },
+    "golden": [
+      "440"
+    ],
+    "check": false
+  },
+  "450226": {
+    "o3_result": {
+      "short_answer": "trim37",
+      "long_answer": "Mulibrey nanism—often referred to as the muscle-liver-brain-eye (Mulibrey) growth-delay syndrome—is an autosomal-recessive disorder characterized by severe pre- and post-natal growth retardation, typical craniofacial features and multiorgan involvement. Comprehensive genetic studies have shown that every confirmed case of Mulibrey nanism carries biallelic loss-of-function mutations in the gene TRIM37, located on chromosome 17q22–q23. No other gene has been implicated in this specific growth-delay syndrome, making TRIM37 the definitive causal gene."
+    },
+    "golden": [
+      "eftud2"
+    ],
+    "check": false
+  },
+  "254319": {
+    "o3_result": {
+      "short_answer": "foxglove",
+      "long_answer": "Foxglove (Digitalis purpurea) contains potent cardiac glycosides that make all parts of the plant highly toxic if ingested. Despite this toxicity, gardeners frequently cultivate it as a biennial—sowing seed one year for flowering the next—because of its tall spikes densely packed with vivid purple, pink, or white tubular flowers that add striking color to ornamental beds and borders."
+    },
+    "golden": [
+      "digitalis purpurea"
+    ],
+    "check": false
+  }
+}
