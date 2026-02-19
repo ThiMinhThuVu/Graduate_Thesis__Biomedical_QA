@@ -286,6 +286,7 @@ def process_get_final_answer(qidx, question, target_answer_type, cluster_raw, ma
     if final_output == 'not selected':
         cache_o3_ans = load_json(r'data\cache\O3_zeroshot_ans_cache.json')
         if qidx in cache_o3_ans:
+            print("[Load Cache O3 Answer]")
             result_dict = cache_o3_ans[qidx]
             return {
                 "short_answer": result_dict.get("short_answer"),

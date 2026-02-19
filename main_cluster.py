@@ -194,7 +194,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         print(f"Short Answer for Step {step}-Cluster {cluster_label}: {curr_anss}")
                         
                     # Get final answer
-                    final_answer = process_get_final_answer(subquestion, target_ans_type, cluster_output, mapping_data_answer, embedding_model_cluster)
+                    final_answer = process_get_final_answer(sample_id, subquestion, target_ans_type, cluster_output, mapping_data_answer, embedding_model_cluster)
                     short_ans = final_answer['short_answer']
                     long_ans = final_answer['long_answer']
                     dict_ans[q_i][path_i][step]["question"] = subquestion
@@ -233,7 +233,7 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    threads = [20, 50] # configs['run']['threads'] 
+    threads = [0, 1000] # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
@@ -259,6 +259,8 @@ if __name__ == "__main__":
     meta_ner = load_json(r'data/metadata_entity.json')
     cnt = 0
     
+    list_id_test_50 = load_json(r'data\test_WH_id_50q.json')
+    
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
@@ -267,14 +269,17 @@ if __name__ == "__main__":
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
         
+        if qidx not in list_id_test_50:
+            continue
+        
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'
         if check_yn:
             using_prompt_yn = True
-            # continue
+            continue
         else:
             using_prompt_yn = False
-            continue
+            # continue
         
         type_q = metadata[qidx]['type_q']    
         
