@@ -64,11 +64,13 @@ def prompt_gen_answer_medhop_correctness(question, search_kw, key_entities, cont
         - Context: Text passages containing potential evidence.
 
         Response format (strict JSON):
-        {{  
-            "short_answer": "yes", "no" or "insufficient information"
-            "long_answer": "Reference: [reference 1 from context], [reference 2 from context], ... Explanation: [Detailed explanation based on the information]"
+        {{
+        "short_answer": "yes" | "no" | "insufficient information",
+        "long_answer": "Reference: [ID1], [ID2]... Explanation: [Provide a detailed explanation. If short_answer is 'insufficient information', explicitly state which constraint/modifier was missing from the context.]"
         }}
-        """
+
+        *Note for long_answer:* The Context is concatenated from different references. Each has a reference ID before the reference text, and each ID has a format as follows: [SOURCE_NUMBER]. Extract SOURCE_NUMBER (SOURCE_IDs) exactly as provided in the Context. Each ID follows the pattern [SOURCE_NUMBER] (e.g., [GG_1], [WIKI_2], [CRAWL_1]). Format STRICTLY as: 'Reference: [reference ID1], [reference ID2]. Detailed explanation: …"""
+
     
     return prompt
 
@@ -1243,48 +1245,48 @@ def old_prompt_gen_answer_medhop_step_3b(question, search_kw, key_entities, cont
     if has_extract_ner:
         prompt = f"""You are a biomedical expert. Your task is to answer a question base on ONLY the provided context
 
-            Instructions:
-            1. Analyze the Context carefully to answer the Question.
-            2. Determine whether the Context contains sufficient information to answer the Question.
+        Instructions:
+        1. Analyze the Context carefully to answer the Question.
+        2. Determine whether the Context contains sufficient information to answer the Question.
 
-            CASE A: Answer Found In Context
-            - If the Context DOES contain the answer:
-                - short_answer: Strictly follow the formatting rules below based on question type.
-                - long_answer: the context is concatenate from different reference. Long answer must have this format: "Reference: [reference from context]. Detailed explanation based on the information".
+        CASE A: Answer Found In Context
+        - If the Context DOES contain the answer:
+            - short_answer: Strictly follow the formatting rules below based on question type.
+        	- long_answer: The Context is concatenated from different references. Each has a reference ID before the reference text, and each ID has a format as follows: [SOURCE_NUMBER]. Extract SOURCE_NUMBER (SOURCE_IDs) exactly as provided in the Context. Each ID follows the pattern [SOURCE_NUMBER] (e.g., [GG_1], [WIKI_2], [CRAWL_1]). Format STRICTLY as: 'Reference: [reference ID1], [reference ID2]. Detailed explanation: ...
 
-            CASE B: Insufficient Information
-            - If the provided Context does NOT contain the specific information needed to answer the question:
-                - short_answer: Return "Insufficient information".
-                - long_answer: Do NOT hallucinate. Explain why the question can't be answer based on the providing context.
+        CASE B: Insufficient Information
+        - If the provided Context does NOT contain the specific information needed to answer the question:
+            - short_answer: Return "Insufficient information".
+            - long_answer: Do NOT hallucinate. Explain why the question can't be answer based on the providing context.
 
-            Short Answer Formatting Rules (when answer is found):
-            * For questions asking "how many" or about counts, return only a number or numeric phrase (e.g., "10", "ten").
-            * For questions asking about time or duration, return a concise time value (e.g., "36 hours", "3 days").
-            * For yes/no questions, return "Yes" or "No".
-            * For questions starting with "Who", "Which", or "What" that ask for a specific entity (e.g., person, disease, drug, gene, chromosome), return the full noun phrase naming that entity.
-                - Examples: "chromosome X", "interleukin-6", "dopamine receptor D2".
-            * For questions asking about organism, return organism type (e.g., "bacterium", "fungus").
-            
-            3. Do not add any extra commentary or text outside the JSON.
+        Short Answer Formatting Rules (when answer is found):
+        * For questions asking "how many" or about counts, return only a number or numeric phrase (e.g., "10", "ten").
+        * For questions asking about time or duration, return a concise time value (e.g., "36 hours", "3 days").
+        * For yes/no questions, return "Yes" or "No".
+        * For questions starting with "Who", "Which", or "What" that ask for a specific entity (e.g., person, disease, drug, gene, chromosome), return the full noun phrase naming that entity.
+            - Examples: "chromosome X", "interleukin-6", "dopamine receptor D2".
+        * For questions asking about organism, return organism type (e.g., "bacterium", "fungus").
+        
+        3. Do not add any extra commentary or text outside the JSON.
 
-            INPUT DATA:
-            Question: {question}
-            Subquery: {search_kw}
-            Key entities: {key_entities}
-            Context: {context}
+        INPUT DATA:
+        Question: {question}
+        Subquery: {search_kw}
+        Key entities: {key_entities}
+        Context: {context}
 
-            Description of Input Fields:
-            - Question: The main biomedical question to answer.
-            - Subquery: Search keywords extract from the main question, use to retrieve the Context.
-            - Key entities: Relevant important entities extracted from the question.
-            - Context: Text passages containing potential evidence.
+        Description of Input Fields:
+        - Question: The main biomedical question to answer.
+        - Subquery: Search keywords extract from the main question, use to retrieve the Context.
+        - Key entities: Relevant important entities extracted from the question.
+        - Context: Text passages containing potential evidence.
 
-            Response format (strict JSON):
-            {{  
-                "short_answer": "short answer as per rules or 'Insufficient information'" if the answer not found in the provide context,
-                "long_answer": "Reference: [reference 1 from context], [reference 2 from context], ... Explanation: [Detailed explanation based on the information]"
-            }}
-            """
+        Response format (strict JSON):
+        {{  
+            "short_answer": "short answer as per rules or 'Insufficient information'" if the answer not found in the provide context,
+            "long_answer": "[reference ID1], [reference ID2], ... Explanation: [Detailed explanation based on the information]"
+        }}
+        """
     else: 
         #BỎ extract ner
         prompt = f"""You are a biomedical expert. Your task is to answer a question base on ONLY the provided context

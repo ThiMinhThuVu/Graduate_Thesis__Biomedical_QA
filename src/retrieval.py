@@ -5,6 +5,7 @@ from utils.process_wikidata_api import process_fillter_wikidata_api, match_relat
 from utils.util import *
 from utils.hash import register_query_cache, make_cache_filename, normalize_query
 from utils.get_section_priority_crawl import *
+from sklearn.cluster import KMeans
 
 import re
 import os
@@ -71,7 +72,7 @@ def format_search_results(search_results, topk=5, search_type='GG'):
         
         context_parts.append(f"-Reference: [{search_type}_{i+1}]: {result['title']} {result['snippet']}")
                                        
-    return "\n".join(context_parts)
+    return "\n".join(context_parts), context_parts
 
 def format_results_wiki_abs(search_results, filepath, topk=5, bf_ts=None):
     context_parts = []
@@ -470,6 +471,8 @@ def crawl_wiki_page_general(
     pre_processing_func,
     target_answer_type=None,
     embedding_model=None,
+    embeding_model_cluster=None,
+    cache_embed_doc={},
     topk=3,
     max_token=300,
     percentage=0.5,
@@ -480,10 +483,13 @@ def crawl_wiki_page_general(
     else:
         type_embed = "tfidf"
 
-    all_filtered_context = ""
-    all_raw_context = ""
+    if get_ner:
+        src = "CRAWL_NER_WIKI"
+    else:
+        src = "CRAWL_WIKI"
+        
     cnt_wiki = 0
-    list_link = []
+    list_doc_embed = []
 
     for article in article_iterable:
 
@@ -493,8 +499,6 @@ def crawl_wiki_page_general(
 
         if not hash_id or not link:
             continue
-
-        list_link.append(link)
 
         file_crawl = f"{cache_crawl_base}/{hash_id}"
         file_filter = f"{cache_filter_base}/{hash_id}"
@@ -525,7 +529,6 @@ def crawl_wiki_page_general(
         # Extract RAW content
         if crawled_data and 'content' in crawled_data:
             raw_context = " ".join(crawled_data['content'])
-            all_raw_context += f"\n[RAW_WIKI] {title}\n{raw_context}\n"
 
         if os.path.exists(file_filter):
             data_filter = load_json(file_filter)
@@ -572,22 +575,33 @@ def crawl_wiki_page_general(
             cnt_wiki += 1
 
             if get_ner:
-                all_filtered_context += (
-                    f"- Reference: [CRAWL_NER_WIKI_{cnt_wiki}] "
+                docs= (
+                    f"- Reference: [{src}_{cnt_wiki}] "
                     f"- Information about: {title} - {article.get('ner','')}\n"
                     f"{filter_context}\n"
                 )
             else:
-                all_filtered_context += (
-                    f"- Reference: [CRAWL_WIKI_{cnt_wiki}] "
+                docs = (
+                    f"- Reference: [{src}_{cnt_wiki}] "
                     f"- Information about: {title}\n"
                     f"{filter_context}\n"
                 )
 
+            if hash_id in cache_embed_doc:
+                embed_doc = cache_embed_doc[hash_id]
+            else:
+                embed_doc = get_embedding(filter_context, embeding_model_cluster)
+            list_doc_embed.append({
+                'docs': docs,
+                'embedding': embed_doc,
+                'hash_id': hash_id,
+                'source': src
+            })
+            
             if cnt_wiki >= topk:
                 break
 
-    return all_filtered_context, list_link 
+    return list_doc_embed
 
 
 def crawl_wiki_page_raw(
@@ -685,17 +699,154 @@ def get_sparql_retrieval_context(list_ner_q, search_kw_subq, settings, embedding
             
     return sparql_context
 
-def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings,target_answer_type,
-                      embedding_model, hash_id_cache, hash_id_crawl_wiki_cache):    
+from scipy.spatial.distance import cdist
+
+def get_top_k_docs(centroid, crawl_data, topk=5, method='euclidean'): # lấy top k từ tâm cụm search    
+    if not crawl_data:
+        print("⚠ Empty crawl_data")
+        return [], [], []
+
+    doc_embeddings = [doc['embedding'] for doc in crawl_data]
+
+    if len(doc_embeddings) == 0:
+        print("⚠ No embeddings found")
+        return [], [], []
+
+    doc_matrix = np.array(doc_embeddings)
+
+    if doc_matrix.ndim != 2:
+        print("⚠ doc_matrix not 2D:", doc_matrix.shape)
+        return [], [], []
+
+    centroid = np.array(centroid).reshape(1, -1)
+      
+    if method == 'euclidean':
+        distances = cdist(centroid, doc_matrix, metric='euclidean')[0]
+        top_indices = np.argsort(distances)[:topk]
+        
+    elif method == 'similarity':
+        cosine_dist = cdist(centroid, doc_matrix, metric='cosine')[0]
+        similarities = 1 - cosine_dist
+        top_indices = np.argsort(similarities)[::-1][:topk]
+        
+    else:
+        raise ValueError("Method phải là 'euclidean' hoặc 'similarity'")
+        
+    top_texts = [crawl_data[i]['docs'] for i in top_indices]
+    top_hash_ids = [crawl_data[i]['hash_id'] for i in top_indices]
+    top_sources = [crawl_data[i]['source'] for i in top_indices]
+
+    return top_texts, top_hash_ids, top_sources
+
+
+def compute_cluster_info(labels, docs, embed_docs):
+    """
+    Gom doc + embedding theo từng label (bao gồm cả -1) và tính centroid.
+
+    Args:
+        labels (list[int])
+        docs (list[str])
+        embed_docs (list[list[float]])
+
+    Returns:
+        dict[label] = {
+            "centroid": list[float],
+            "docs": list[str],
+            "embeddings": list[list[float]]
+        }
+    """
+
+    assert len(labels) == len(docs) == len(embed_docs), \
+        "Labels, docs và embeddings không cùng độ dài!"
+
+    cluster_data = {}
+
+    for label, doc, emb in zip(labels, docs, embed_docs):
+
+        if label not in cluster_data:
+            cluster_data[label] = {
+                "docs": [],
+                "embeddings": []
+            }
+
+        cluster_data[label]["docs"].append(doc)
+        cluster_data[label]["embeddings"].append(emb)
+
+    for label in cluster_data:
+        vectors = np.array(cluster_data[label]["embeddings"])
+
+        if vectors.ndim == 1:
+            centroid = vectors
+        else:
+            centroid = np.mean(vectors, axis=0)
+
+        # Convert sang list để save JSON
+        cluster_data[label]["centroid"] = centroid.tolist()
+
+    return cluster_data
+
+def cluster_per_qid_search_api(doc_sources, crawl_data_wikipedia, embeding_model_cluster, n_clusters=7, topk=5,method='euclidean'):
+    #embed doc search api
+    all_embeddings = []
+    for article in doc_sources:
+        embed_article = get_embedding(article, embeding_model_cluster)
+        # Đảm bảo chuyển np.ndarray thành list
+        if isinstance(embed_article, np.ndarray):
+            embed_article = embed_article.tolist()
+        all_embeddings.append(embed_article)
+        
+    #KMEAN
+    if len(all_embeddings) == 0:
+        return None
+
+    embeddings = np.array(all_embeddings)
+    # giảm K nếu N nhỏ
+    k = min(n_clusters, len(embeddings))
+
+    if k < 2:
+        labels = [0] * len(embeddings)
+           
+    else:  
+        kmeans = KMeans(
+            n_clusters=k,
+            random_state=42,
+            n_init=10
+        )
+
+        labels = kmeans.fit_predict(embeddings)
+        labels = labels.tolist()
+        
+    cluster_info = compute_cluster_info(labels, doc_sources, embeddings)
+    output_dict = {}
+    for cluster_label, info in cluster_info.items():
+        centroid = info["centroid"]
+        cluster_docs = info["docs"]
+
+        crawl_docs, top_hash_ids, top_sources = get_top_k_docs(
+            centroid=centroid,
+            crawl_data=crawl_data_wikipedia,
+            topk=topk,
+            method=method
+        )
+
+        output_dict[cluster_label] = {
+            "docs": cluster_docs,
+            "crawl_doc": crawl_docs,
+            'hash_id': top_hash_ids,
+            'source': top_sources
+        }
+
+    return output_dict
+
+def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer_type,
+        embedding_model, embeding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache):    
     retrieval_information = ""
     retrieval_topk = settings['retrieval_topk']
     max_results_gg = retrieval_topk['max_results_search_api_gg']
     max_results_wiki = retrieval_topk['max_results_search_api_wiki']
-    all_snippet = ""
-    cache_link_crawl_wiki = {}
     hash_id, hash_id_cache = register_query_cache(search_kw_subq, hash_id_cache, file_cache_index=settings['cache']['hash_id']['retrieval'])
     cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}" 
-    
+    cache_embed_doc = load_json(settings['cache']['embed_crawl'])
     
     if settings['get_context_2wiki']: #Only 2wiki dataset
         retrieval_information = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
@@ -703,28 +854,22 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
     if settings['get_gg']:
         print("Retrieval_path: ", cache_filepath_retrieval)
         results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval, max_results=max_results_gg)            
-        snippet_gg = format_search_results(results_gg_search, topk=retrieval_topk['google'], search_type='GG') 
+        snippet_gg, list_article_gg = format_search_results(results_gg_search, topk=retrieval_topk['google'], search_type='GG') 
         if snippet_gg != "":
             retrieval_information += snippet_gg + "\n\n"
-            all_snippet += snippet_gg + "\n"
     
-    if settings['get_wiki'] or settings['get_abs_wiki']:
+    if settings['get_wiki']:
         results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
     
-        if settings['get_wiki']:
-            snippet_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki'], search_type='WIKI') 
-            if snippet_wiki != "":
-                retrieval_information += snippet_wiki + "\n\n"
-                all_snippet += snippet_wiki + "\n"
-        elif settings['get_abs_wiki']:
-            abs_wiki = format_results_wiki_abs(results_wiki_search, hash_id_crawl_wiki_cache, settings, topk=retrieval_topk['wiki_abs'])
-            if abs_wiki != "":
-                retrieval_information += abs_wiki + "\n\n"
+        snippet_wiki, list_article_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki'], search_type='WIKI') 
+        if snippet_wiki != "":
+            retrieval_information += snippet_wiki + "\n\n"
+    
 
     if settings['get_crawl_wiki']:
         results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
         
-        crawl_wiki_context, list_link = crawl_wiki_page_general(
+        crawl_wiki_context_embed = crawl_wiki_page_general(
             search_kw_subq,
             results_wiki_search,  # iterable là list kết quả search
             get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
@@ -736,15 +881,14 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
             target_answer_type=target_answer_type,
             # target_answer_type=None,
             embedding_model=embedding_model,
+            embeding_model_cluster=embeding_model_cluster,
+            cache_embed_doc=cache_embed_doc,
             topk=retrieval_topk['wiki_crawl'],
             # percentage=0.44,
             percentage=None,
             max_token=retrieval_topk['crawl_max_token'],
         )
-        cache_link_crawl_wiki['crawl_wiki'] = list_link
-        if crawl_wiki_context != "":
-            retrieval_information += crawl_wiki_context + "\n"
-
+   
     if settings['get_ner_wiki']:
         cache_entity = load_json(settings['cache']['hash_id']['crawl_ner'])
         ner_articles = []
@@ -756,7 +900,7 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
                 item['ner'] = ner_norm
             ner_articles.extend(article)
         
-        crawl_ner_wiki, list_link = crawl_wiki_page_general(
+        crawl_ner_wiki_embed = crawl_wiki_page_general(
             search_kw_subq,
             ner_articles,  # iterable là list các article dict
             get_hash_id_func=lambda article: article.get('hash_id', None),
@@ -768,16 +912,17 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
             target_answer_type=target_answer_type,
             # target_answer_type=None,
             embedding_model=embedding_model,
+            embeding_model_cluster=embeding_model_cluster,
+            cache_embed_doc=cache_embed_doc,
             topk=1000, # không giới hạn article ner
             max_token=retrieval_topk['crawl_max_token_ner'],
             # percentage=0.75,
             percentage=None,
             get_ner=True
         )
-        cache_link_crawl_wiki['crawl_ner_wiki'] = list_link
-        if crawl_ner_wiki != "":
-            retrieval_information += crawl_ner_wiki + "\n"
-            
+     
+    ctx_doc_search_fond_nbh = cluster_per_qid_search_api(list_article_gg+list_article_wiki, 
+                                                         crawl_wiki_context_embed+crawl_ner_wiki_embed, embeding_model_cluster)
 
     if settings["get_sparql_context"]: 
         file_cache_hash_id_sparql = settings['cache']['hash_id']['crawl_wikidata']
@@ -801,7 +946,7 @@ def retrieve_evidence(list_ner_q, sample, key_entities, search_kw_subq, settings
         if sparql_info:
             retrieval_information += f"- Reference [SPARQL]: {sparql_info}\n\n"
         
-    return all_snippet, retrieval_information, cache_link_crawl_wiki
+    return ctx_doc_search_fond_nbh
 
 
 def remove_retrieve_evidence(current_retrieval: str, current_short: str):

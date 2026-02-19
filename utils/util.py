@@ -16,6 +16,15 @@ import yaml
 from thefuzz import fuzz
 import numpy as np
 
+def get_embedding(text, embedding_model):
+    embedding = embedding_model.encode(
+        text,
+        convert_to_numpy=True,
+        normalize_embeddings=True  
+    )
+    return embedding
+
+
 question_type_to_ner_2 = {
     "condition": ["DISEASE"],
     "disease": ["DISEASE"],
