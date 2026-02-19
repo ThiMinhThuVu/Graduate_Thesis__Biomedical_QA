@@ -39,8 +39,7 @@ type_run: {
         'filter_ner_wiki': "data/cache/filter_ner_wikipedia",
         "filter_wiki": "data/cache/filter_wikipedia",
         'crawl_wikidata': "data/cache/crawl_sparql_wikidata",
-        'embed_crawl': "data/cache/embed_filter_crawl_wiki_ner_300.json",
-
+        'embed_crawl': "data/cache/embeding_filter_crawl_TFIDF300.json",
 
         "hash_id": {
           'retrieval': "data/cache/hash_id.json",

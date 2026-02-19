@@ -122,7 +122,9 @@ def collect_candidates(raw_clusters, mapping_data):
             norm_ans = mapping_data.get(norm_ans, norm_ans)
         
         # Trích xuất nguồn và phân loại
-        sources = extract_references(long_answer)
+        raw_sources = extract_references(long_answer)
+        sources = list(set(raw_sources))
+        
         has_wiki = any("WIKI" in s.upper() for s in sources)
         has_gg = any("GG" in s.upper() for s in sources)
 
@@ -161,6 +163,53 @@ def calculate_new_score(individual_ref_counts, nc):
     final_score = term_max + term_sum_all + term_nc
     
     return final_score
+
+
+def cluster_and_selected_candidate_YN(cand_list):
+    if not cand_list:
+        return "not selected"
+
+    clusters = defaultdict(list)
+    for i, c in enumerate(cand_list):
+        label = c["text"].strip().lower()
+        clusters[label].append(i)
+
+    raw_clusters = []
+    for label, indices in clusters.items():
+        individual_ref_counts = [len(cand_list[i]["sources"]) for i in indices]
+        nc = len(indices)
+
+        c_score = calculate_new_score(individual_ref_counts, nc)
+
+        raw_clusters.append({
+            "label": label,
+            "indices": indices,
+            "cluster_score": c_score
+        })
+
+    best_cluster_info = None
+    if raw_clusters:
+        candidate_best = max(raw_clusters, key=lambda x: x["cluster_score"])
+        if candidate_best["cluster_score"] >= MIN_SCORE_THRESHOLD:
+            best_cluster_info = candidate_best
+
+    if best_cluster_info is None:
+        return "not selected"
+
+    chosen_indices = best_cluster_info["indices"]
+    best_idx = max(chosen_indices, key=lambda idx: len(cand_list[idx]["sources"]))
+
+    # 5. Build output
+    result = cand_list[best_idx].copy()
+    result.update({
+        "short_answer": best_cluster_info["label"],
+        "selection_status": "selected",
+        "cluster_score": round(best_cluster_info["cluster_score"], 4),
+        "total_candidates_in_cluster": len(chosen_indices)
+    })
+
+    return result
+
 
 def cluster_and_selected_candidate_WH(cand_list, model):
     """
@@ -227,28 +276,42 @@ def cluster_and_selected_candidate_WH(cand_list, model):
     return result
 
 
-def process_get_final_answer(question, target_answer_type, cluster_raw, mapping_data, embedding_model):
+def process_get_final_answer(qidx, question, target_answer_type, cluster_raw, mapping_data, embedding_model):
     candidates = collect_candidates(cluster_raw, mapping_data) 
     if target_answer_type != 'correctness':
         final_output = cluster_and_selected_candidate_WH(candidates, embedding_model) 
     else:
-        final_output = None
+        final_output = cluster_and_selected_candidate_YN(candidates)
+        
     if final_output == 'not selected':
+        cache_o3_ans = load_json(r'data\cache\O3_zeroshot_ans_cache.json')
+        if qidx in cache_o3_ans:
+            result_dict = cache_o3_ans[qidx]
+            return {
+                "short_answer": result_dict.get("short_answer"),
+                "long_answer": result_dict.get("long_answer"),
+                "selection_status": "zero-shot_fallback",
+                "cluster_score": None
+            }
+            
         if target_answer_type == 'correctness':
             prompt = prompt_zero_shot_medhop_correctness(question)            
         else:
             prompt = prompt_zero_shot_medhop_wh(question)
             
         messages = [
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": "You are a biomedical expert. Your task is to answer a question base on ONLY the provided context"}
+            {"role": "system", "content": "You are a biomedical expert. Your task is to answer a question base on ONLY the provided context"},
+            {"role": "user", "content": prompt}
         ]  
         result_raw = request_api_o3(messages)
-
+        
         try:
             # Clean markdown nếu có
             clean_json = re.sub(r"```json|```", "", result_raw).strip()
             result_dict = json.loads(clean_json)
+            
+            cache_o3_ans[qidx] = result_dict
+            save_json(cache_o3_ans ,r'data\cache\O3_zeroshot_ans_cache.json')
             
             # Đồng bộ cấu trúc trả về cho module ngoài dễ xử lý
             return {

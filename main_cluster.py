@@ -189,7 +189,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     
                         curr_anss = genered_answer['short_answer']
                         cluster_output[cluster_label] = {'llm':genered_answer,
-                                                        #  'context': context
+                                                         'context': context
                         }
                         print(f"Short Answer for Step {step}-Cluster {cluster_label}: {curr_anss}")
                         
@@ -233,7 +233,7 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    threads = [0, 10] # configs['run']['threads'] 
+    threads = [20, 50] # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
@@ -256,11 +256,9 @@ if __name__ == "__main__":
     # ner_version = 4
     ner_version = "#3"
     metadata = load_json('data/metadata_medhop.json')
-    model_mcq_name = "o3-mini" #"gpt-4.1-mini" #o3-mini
-    mcq_add_no_ans = False # True #False
-    using_prompt_yn = False # False
     meta_ner = load_json(r'data/metadata_entity.json')
     cnt = 0
+    
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
@@ -272,6 +270,10 @@ if __name__ == "__main__":
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'
         if check_yn:
+            using_prompt_yn = True
+            # continue
+        else:
+            using_prompt_yn = False
             continue
         
         type_q = metadata[qidx]['type_q']    
