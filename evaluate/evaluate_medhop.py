@@ -14,9 +14,10 @@ def load_golden(golden_path):
         golden_data = json.load(f)
     return golden_data
 
-with open("classification_result.json", 'r', encoding='utf-8') as f:
+with open("data/metadata_medhop.json", 'r', encoding='utf-8') as f:
     cache_class = json.load(f)
 
+mapping_data = load_golden(r'data/mapping_answer_gol.json')
 
 def load_predictions(pred_dir, golden_ids):
     preds = {}
@@ -73,8 +74,15 @@ def evaluate_context(golden, preds, output_csv):
                 
             check = False
             if pred_ans is not None:
-                check = pred_ans.strip().lower() in golden_ans
-            ans_norm = postprocessing(pred_ans) if pred_ans is not None else ''
+                pred_ans = pred_ans.strip().lower()
+                check = pred_ans in golden_ans
+            
+            if pred_ans in mapping_data:
+                ans_norm = mapping_data[pred_ans]
+            else:
+                ans_norm = postprocessing(pred_ans) if pred_ans is not None else ''
+                ans_norm = mapping_data.get(ans_norm, ans_norm)
+                
             check_ans_norm = ans_norm in golden_ans
             if check:
                 count_check += 1
@@ -130,11 +138,11 @@ def evaluate_context(golden, preds, output_csv):
     
     
 def main():
-    golden_path = os.path.join('data', 'all_answer_golden.json')
+    golden_path = os.path.join('data', 'all_answer_golden_56.json')
     # pred_dir = os.path.join('medhop_results_', 'all_ans')
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\MAS\medhop_results\all_ans"
     # pred_dir = r"E:\analysis_output\2026\code - cu -29.1\R23\medhop_results\all_ans"
-    pred_dir = r"E:\analysis_output\2026\code - cu -29.1\codenew\row21\medhop_results\all_ans"
+    pred_dir = r"medhop_results\all_ans"
     # pred_dir = r"E:\UETQuintet\medhop_important_results\all_ans"
     output_csv = f'evaluate/run/{run}medhop_eval_result.csv'
     golden = load_golden(golden_path)

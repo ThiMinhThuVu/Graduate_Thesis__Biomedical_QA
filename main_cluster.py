@@ -276,7 +276,7 @@ if __name__ == "__main__":
         check_yn = target_ans_type == 'correctness'
         if check_yn:
             using_prompt_yn = True
-            continue
+            # continue
         else:
             using_prompt_yn = False
             # continue

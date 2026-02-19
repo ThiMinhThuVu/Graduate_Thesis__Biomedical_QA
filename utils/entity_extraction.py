@@ -55,8 +55,8 @@ def extract_quoted_strings(text: str):
     matches = re.findall(pattern, text)
     return [m[0] if m[0] else m[1] for m in matches]
 
-data1 = load_json('analysis/entity_extraction/get_entity_from_question_spacy.json')
-data2 = load_json('analysis/entity_extraction/entity_extraction_results.json')
+data1 = load_json(r'data\get_entity_from_question_spacy_parallel_seq.json')
+data2 = load_json(r'data\entity_extraction_results_LLM.json')
 
 data_search = []
 data_search_lower = []
@@ -195,10 +195,10 @@ for qidx in data1:
                 }
 
 data_search_sorted = sorted(data_search, key=str.lower)
-# save_json(data_search_sorted, 'analysis/data_search.json')
+save_json(data_search_sorted, r'data\ner\data_search.json')
 
 # save_json(result_dict, 'dict_filter_entity_extraction.json')
 
-save_json(merge_dict, 'analysis/entity_extraction/entity_extraction_merge.json')
+save_json(merge_dict, r'data\ner\entity_extraction_merge.json')
 
 print(f"✅ Done. Saved to {OUTPUT_TXT}")

@@ -120,9 +120,9 @@ if __name__ == "__main__":
     extractor_model_2 = spacy.load("en_ner_jnlpba_md")
     extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
     output = {}
-    fileoutput = 'data/get_entity_from_question_spacy_YN.json'
+    fileoutput = 'data/get_entity_from_question_spacy_parallel_seq.json'
     for qidx, item in data.items():
-        if item['type_q'] != 'direct' or item['target_answer_type'] != 'correctness':
+        if item['type_q'] == 'direct': # or item['target_answer_type'] != 'correctness':
             continue
         
         original_question = item["original question"]

@@ -11,6 +11,7 @@ from postprocessing import postprocessing
 import math
 from src.api_key import api_key_openai
 from openai import OpenAI
+import portalocker # Thêm thư viện này
 
 # ZERO SHOT
 client = OpenAI(
@@ -69,17 +70,52 @@ def prompt_zero_shot_medhop_correctness(question):
         """
     return prompt
 
-def load_json(path):
-    if not os.path.exists(path):
-        print(f"Lỗi: Không tìm thấy file tại {path}")
-        return {}
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+# def load_json(path):
+#     if not os.path.exists(path):
+#         print(f"Lỗi: Không tìm thấy file tại {path}")
+#         return {}
+#     with open(path, "r", encoding="utf-8") as f:
+#         return json.load(f)
     
 
+# def save_json(data, file_path):
+#     with open(file_path, 'w', encoding='utf-8') as file:
+#         json.dump(data, file, ensure_ascii=False, indent=4)
+        
+def load_json(path):
+    if not os.path.exists(path):
+        # Nếu file không tồn tại, tạo file mới với nội dung {} để tránh lỗi lock file trống
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump({}, f)
+        return {}
+    
+    with open(path, "r", encoding="utf-8") as f:
+        # Khóa Shared (LOCK_SH): Nhiều người cùng đọc được, nhưng không ai được ghi
+        portalocker.lock(f, portalocker.LOCK_SH)
+        data = json.load(f)
+        return data
+
 def save_json(data, file_path):
-    with open(file_path, 'w', encoding='utf-8') as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
+    # Dùng chế độ "a+" hoặc "r+" để portalocker hoạt động tốt nhất trên mọi OS
+    with open(file_path, 'r+', encoding='utf-8') as f:
+        # Khóa Độc quyền (LOCK_EX): Chỉ 1 người được quyền truy cập (cả đọc và ghi)
+        portalocker.lock(f, portalocker.LOCK_EX)
+        
+        # Đọc dữ liệu mới nhất một lần nữa trước khi ghi 
+        # (Phòng trường hợp tab kia vừa ghi xong một qidx khác)
+        f.seek(0)
+        try:
+            current_cache = json.load(f)
+        except:
+            current_cache = {}
+            
+        # Cập nhật dữ liệu mới vào cache hiện tại
+        current_cache.update(data)
+        
+        # Ghi đè lại file
+        f.seek(0)
+        f.truncate()
+        json.dump(current_cache, f, ensure_ascii=False, indent=4)
         
         
 def extract_references(long_answer):
@@ -286,7 +322,7 @@ def process_get_final_answer(qidx, question, target_answer_type, cluster_raw, ma
     if final_output == 'not selected':
         cache_o3_ans = load_json(r'data\cache\O3_zeroshot_ans_cache.json')
         if qidx in cache_o3_ans:
-            print("[Load Cache O3 Answer]")
+            print("[Load Cache O3 Answer Zeroshot]")
             result_dict = cache_o3_ans[qidx]
             return {
                 "short_answer": result_dict.get("short_answer"),
