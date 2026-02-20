@@ -233,7 +233,7 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    threads = [0, 10] 
+    threads = [0, 125] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -257,8 +257,8 @@ if __name__ == "__main__":
     # ner_version = 4
     ner_version = "#3"
     metadata = load_json('data/metadata_medhop.json')
-    meta_ner = load_json(r'data/metadata_entity.json') #direct
-    # meta_ner = load_json(r'data\ner\entity_extraction_merge_parallel_seq.json')
+    # meta_ner = load_json(r'data/metadata_entity.json') #direct
+    meta_ner = load_json(r'data\ner\entity_extraction_merge_parallel_seq.json') #parallel and sequence
     cnt = 0
     
     # list_id_test_50 = load_json(r'data\test_WH_id_50q.json')

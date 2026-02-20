@@ -17,9 +17,7 @@ import portalocker # Thêm thư viện này
 client = OpenAI(
     api_key = api_key_openai
 )
-# CÔng thức 2b
-MIN_SCORE_THRESHOLD = 7 # get final answer
-DISTANCE_THRESHOLD = 0.12 # cluster
+
 
 def request_api_o3(messages, max_completion_tokens=8192):
     response = client.chat.completions.create(
@@ -165,6 +163,7 @@ def collect_candidates(raw_clusters, mapping_data):
         has_gg = any("GG" in s.upper() for s in sources)
 
         cand_list.append({
+            "cid": cid,
             "text": norm_ans,
             "long_answer": long_answer,
             "context": context,
@@ -200,8 +199,26 @@ def calculate_new_score(individual_ref_counts, nc):
     
     return final_score
 
+def calculate_gini_adjusted_score(individual_ref_counts, W_MASS = 0.7, W_CONC = 0.3):
+    """
+    Gini / Concentration Adjusted Score (lambda = 1)
 
-def cluster_and_selected_candidate_YN(cand_list):
+    S(C) = W_MASS * R_sum + W_CONC * concentration
+    """
+
+    if not individual_ref_counts:
+        return 0.0
+
+    r_sum = sum(individual_ref_counts)
+    if r_sum == 0:
+        return 0.0
+
+    # concentration = sum( (ri / r_sum)^2 )
+    concentration = sum((ri / r_sum) ** 2 for ri in individual_ref_counts)
+
+    return (W_MASS * r_sum) + (W_CONC * concentration)
+
+def cluster_and_selected_candidate_YN(cand_list, MIN_SCORE_THRESHOLD=2):
     if not cand_list:
         return "not selected"
 
@@ -215,11 +232,12 @@ def cluster_and_selected_candidate_YN(cand_list):
         individual_ref_counts = [len(cand_list[i]["sources"]) for i in indices]
         nc = len(indices)
 
-        c_score = calculate_new_score(individual_ref_counts, nc)
+        c_score = calculate_gini_adjusted_score(individual_ref_counts)
 
         raw_clusters.append({
             "label": label,
             "indices": indices,
+            "evidence_count": nc,
             "cluster_score": c_score
         })
 
@@ -247,7 +265,7 @@ def cluster_and_selected_candidate_YN(cand_list):
     return result
 
 
-def cluster_and_selected_candidate_WH(cand_list, model):
+def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, DISTANCE_THRESHOLD = 0.12):
     """
     Đánh giá list candidate của 1 câu hỏi.
     Trả về candidate tốt nhất kèm metadata hoặc "not selected".
@@ -271,11 +289,13 @@ def cluster_and_selected_candidate_WH(cand_list, model):
             indices = [i for i, l in enumerate(labels) if l == lbl]
             individual_ref_counts = [len(cand_list[i]["sources"]) for i in indices]
             nc = len(indices)
-            c_score = calculate_new_score(individual_ref_counts, nc)
+            c_score = calculate_gini_adjusted_score(individual_ref_counts)
             
             raw_clusters.append({
                 "indices": indices,
-                "cluster_score": c_score
+                "evidence_count": nc,
+                "cluster_score": c_score,
+                "unique_source": sum(individual_ref_counts)
             })
     else:
         return "not selected"
