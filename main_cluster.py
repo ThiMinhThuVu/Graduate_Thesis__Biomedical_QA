@@ -275,13 +275,13 @@ if __name__ == "__main__":
         #     continue
         
         # CONFIG YESNO
-        check_yn = target_ans_type == 'correctness'
-        if check_yn:
-            using_prompt_yn = True
-            # continue
-        else:
-            using_prompt_yn = False
-            # continue
+        # check_yn = target_ans_type == 'correctness'
+        # if check_yn:
+        #     using_prompt_yn = True
+        #     # continue
+        # else:
+        #     using_prompt_yn = False
+        #     # continue
         
         type_q = metadata[qidx]['type_q']    
         
@@ -290,6 +290,7 @@ if __name__ == "__main__":
             continue
         else:
             cnt += 1
+            using_prompt_yn = False # seq, parallel
     
         sample['type_q'] = type_q        
         if type_q in ['direct', 'parallel', 'comparison']:
