@@ -23,6 +23,11 @@ def calculate_centroid(docs):
     centroid = np.mean(matrix, axis=0)
     return centroid.tolist()
 
+def get_wiki_title(url):
+    prefix = "https://en.wikipedia.org/wiki/"
+    if url.startswith(prefix):
+        return url[len(prefix):]
+    return None
 
 def crawl_passages(): # Tổng hợp 2 nguồn crawl
     HASH_ID_PATH = "data/cache/all_hash_id_crawl_wiki_embed.json"
@@ -66,11 +71,11 @@ def crawl_passages(): # Tổng hợp 2 nguồn crawl
                 if hash_id in config["embedding_dict"]:
                     embedding = config["embedding_dict"][hash_id]
                     url = config["hash_map"][hash_id]
-                    
+                    title = get_wiki_title(url)
                     file_path = os.path.join(config["base_path"], hash_id)
                     filter_text = load_json(file_path)
                     
-                    content = filter_text.get("crawl_wiki", {}).get("filter", {}).get(url, {}).get("tfidf", None)
+                    content = f"- Information about: {title}\n" +  filter_text.get("crawl_wiki", {}).get("filter", {}).get(url, {}).get("tfidf", None)
                     
                     passages[qidx].append({
                         'docs': content,
@@ -176,9 +181,14 @@ if __name__ == "__main__":
 
     n_cluster = "7"
     # YESNO
-    cluster_search_file = fr'src\cluster\cache\{cluster_type}\YN_cluster_results_{cluster_type}_merge_google_wiki_{n_cluster}.json'
-    file_output = f"src/cluster/final/YN_output_cluster_{cluster_type}_{method}_top{topk}_{n_cluster}.json"
-    embed_ctx_gg_wiki = "data\cache\embed_ctx_merge_google_wiki_YN.json"
+    cluster_search_file = r'E:\MAS_UETQuintet\src\cluster\final\cluster_results_kmean_merge_google_wiki_7.json'    
+    file_output = f"src/cluster/final/direct_output_cluster_{cluster_type}_{method}_top{topk}_{n_cluster}.json"
+    embed_ctx_gg_wiki = r"data\cache\embed_ctx_merge_google_wiki_direct.json"
+
+
+    #cluster_search_file=fr'src\cluster\cache\{cluster_type}\YN_cluster_results_{cluster_type}_merge_google_wiki_{n_cluster}.json' 
+    # file_output = f"src/cluster/final/YN_output_cluster_{cluster_type}_{method}_top{topk}_{n_cluster}.json"
+    # embed_ctx_gg_wiki = "data\cache\embed_ctx_merge_google_wiki_YN.json"
 
     # cluster_search_file = fr'src\cluster\cache\{cluster_type}\cluster_results_{cluster_type}_merge_google_wiki_{n_cluster}.json'
     # file_output = f"src/cluster/final/output_cluster_{cluster_type}_{method}_top{topk}_{n_cluster}.json"    

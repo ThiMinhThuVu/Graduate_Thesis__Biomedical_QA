@@ -118,16 +118,17 @@ def get_raw_context(qidx, source):
     data = get_search_cache_data(search_kw)
     if data is None:
         return ""
-    search_result = data['google']['search_results']
+    
     context = ""
 
     # -------- GOOGLE --------
     if source == "google":
-        
+        search_result = data[source]['search_results']
         context, list_article_ctx = format_search_results(search_result, topk=20, search_type='GG') 
 
     # -------- WIKI SNIPPET --------
     elif source == "wiki":
+        search_result = data[source]['search_results']
         context, list_article_ctx = format_search_results(search_result, topk=10, search_type='WIKI') 
 
     # -------- CRAWL WIKI --------
@@ -240,13 +241,13 @@ def save_json(data, file_path):
         
         
 if __name__ == "__main__":
-    embed_file = 'E:\MAS_UETQuintet\data\cache\embed_ctx_merge_google_wiki_YN.json'
+    embed_file = 'E:\MAS_UETQuintet\data\cache\embed_ctx_merge_google_wiki_direct.json'
     metadata = load_json(r'data\metadata_medhop.json')
     dict_output = {}
     
     for idx, (qidx, item) in enumerate(metadata.items()):    
         
-        if item["target_answer_type"] != 'correctness' or item['type_q'] != 'direct': #YN
+        if item['type_q'] != 'direct': #item["target_answer_type"] != 'correctness' 
             continue
         list_embed_article = []
         context, list_article_gg = get_raw_context(qidx, 'google')

@@ -2,7 +2,7 @@ import sys
 import json
 import os
 import spacy
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../..")))
 from src.extract_ner import extract_entities_from_evidence
 from src.gpt_request import request_api
 from tqdm import tqdm
@@ -55,7 +55,7 @@ def prompt_gen_answer_medhop_correctness(question, search_kw, key_entities, cont
 
 if __name__ == "__main__":
 
-    threads = [0, 250]
+    threads = [0, 125]
     threads_str = f'_{threads[0]}_{threads[1]}' #để cho vào lưu tên file
     metadata = load_json('data/metadata_medhop.json')
     golden = load_json(r'data\all_answer_golden_56.json')
@@ -64,11 +64,13 @@ if __name__ == "__main__":
     s_type = 'kmean' #'hdbscan' #kmean
     num_cluster = '_7' # "_3"
 
-    cache_cluster = load_json(r'src\cluster\final\YN_output_cluster_kmean_euclidean_top5_7.json')
+    # cache_cluster = load_json(r'src\cluster\final\YN_output_cluster_kmean_euclidean_top5_7.json')
     
     # cache_cluster = load_json(fr'src\cluster\final\output_cluster_kmean_euclidean_top5{num_cluster}.json')
     res_file_sample = fr'src\cluster\final\YN_answer_{s_type}_{source}{num_cluster}{threads_str}.json'
     
+    cache_cluster = load_json(r'src\cluster\final\direct_output_cluster_kmean_euclidean_top5_7.json')
+
     cache_search_kw = load_json(r'data\dict_searchkw_direct_YN.json')
 
     extractor_model = spacy.load("en_ner_bc5cdr_md")

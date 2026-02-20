@@ -112,7 +112,7 @@ def format_results_wiki_abs(search_results, filepath, topk=5, bf_ts=None):
     save_json(output, filepath)
     return "\n".join(context_parts)
 
-def get_paragraphs_wiki_result(link, sample, subquestion, target_answer_type=None, embedding_model=None, max_docs_token=300, percentage=0.5):    
+def get_paragraphs_wiki_result(link, sample, subquestion, target_answer_type=None, embedding_model=None, max_docs_token=300, percentage=None):    
     list_para_sim = {}
     list_para_text = []
     index_doc = 0
@@ -848,6 +848,8 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
     cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}" 
     cache_embed_doc = load_json(settings['cache']['embed_crawl'])
     
+    list_article_search = []
+    
     if settings['get_context_2wiki']: #Only 2wiki dataset
         retrieval_information = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
             
@@ -855,13 +857,19 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
         print("Retrieval_path: ", cache_filepath_retrieval)
         results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval, max_results=max_results_gg)            
         snippet_gg, list_article_gg = format_search_results(results_gg_search, topk=retrieval_topk['google'], search_type='GG') 
+        
+        list_article_search += list_article_gg
+        
         if snippet_gg != "":
             retrieval_information += snippet_gg + "\n\n"
-    
+        
+        
     if settings['get_wiki']:
         results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
     
         snippet_wiki, list_article_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki'], search_type='WIKI') 
+        
+        list_article_search += list_article_wiki
         if snippet_wiki != "":
             retrieval_information += snippet_wiki + "\n\n"
     
@@ -879,12 +887,10 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
             cache_filter_base=settings['cache']['filter_wiki'],
             pre_processing_func=wiki_pre_processing,
             target_answer_type=target_answer_type,
-            # target_answer_type=None,
             embedding_model=embedding_model,
             embeding_model_cluster=embeding_model_cluster,
             cache_embed_doc=cache_embed_doc,
             topk=retrieval_topk['wiki_crawl'],
-            # percentage=0.44,
             percentage=None,
             max_token=retrieval_topk['crawl_max_token'],
         )
@@ -910,19 +916,16 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
             cache_filter_base=settings['cache']['filter_ner_wiki'],
             pre_processing_func=wiki_pre_processing,
             target_answer_type=target_answer_type,
-            # target_answer_type=None,
             embedding_model=embedding_model,
             embeding_model_cluster=embeding_model_cluster,
             cache_embed_doc=cache_embed_doc,
             topk=1000, # không giới hạn article ner
             max_token=retrieval_topk['crawl_max_token_ner'],
-            # percentage=0.75,
             percentage=None,
             get_ner=True
         )
      
-    ctx_doc_search_fond_nbh = cluster_per_qid_search_api(list_article_gg+list_article_wiki, 
-                                                         crawl_wiki_context_embed+crawl_ner_wiki_embed, embeding_model_cluster)
+    ctx_doc_search_fond_nbh = cluster_per_qid_search_api(list_article_search,crawl_wiki_context_embed+crawl_ner_wiki_embed, embeding_model_cluster)
 
     if settings["get_sparql_context"]: 
         file_cache_hash_id_sparql = settings['cache']['hash_id']['crawl_wikidata']

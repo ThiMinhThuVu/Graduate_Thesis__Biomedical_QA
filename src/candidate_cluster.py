@@ -278,13 +278,8 @@ def cluster_and_selected_candidate_WH(cand_list, model):
                 "cluster_score": c_score
             })
     else:
-        # Chỉ có 1 candidate
-        ref_counts = [len(cand_list[0]["sources"])]
-        raw_clusters.append({
-            "indices": [0],
-            "cluster_score": calculate_new_score(ref_counts, 1)
-        })
-
+        return "not selected"
+    
     # 2. Lọc cluster theo ngưỡng MIN_SCORE_THRESHOLD
     best_cluster_info = None
     if raw_clusters:

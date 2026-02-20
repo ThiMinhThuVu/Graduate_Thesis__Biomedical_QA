@@ -6,7 +6,7 @@ run: #NHỚ SỬA LẠI MAX_CANDIDATES CHO cái multiplechoice
 type_run: {
       "dataset": "{dataset}_", 
       "get_gg": True, #False #True
-      "get_wiki": True,
+      "get_wiki": False,
       "get_crawl_wiki": True,    
       "get_ner_wiki": True, 
       "get_sparql_context": False, 

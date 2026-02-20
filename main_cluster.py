@@ -233,7 +233,8 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    threads = [0, 1000] # configs['run']['threads'] 
+    threads = [0, 10] 
+    # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
@@ -256,10 +257,11 @@ if __name__ == "__main__":
     # ner_version = 4
     ner_version = "#3"
     metadata = load_json('data/metadata_medhop.json')
-    meta_ner = load_json(r'data/metadata_entity.json')
+    meta_ner = load_json(r'data/metadata_entity.json') #direct
+    # meta_ner = load_json(r'data\ner\entity_extraction_merge_parallel_seq.json')
     cnt = 0
     
-    list_id_test_50 = load_json(r'data\test_WH_id_50q.json')
+    # list_id_test_50 = load_json(r'data\test_WH_id_50q.json')
     
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
@@ -269,8 +271,8 @@ if __name__ == "__main__":
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
         
-        if qidx not in list_id_test_50:
-            continue
+        # if qidx not in list_id_test_50:
+        #     continue
         
         # CONFIG YESNO
         check_yn = target_ans_type == 'correctness'

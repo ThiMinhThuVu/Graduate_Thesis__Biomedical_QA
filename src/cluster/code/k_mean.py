@@ -78,10 +78,10 @@ def cluster_per_qid_crawl_wiki(meta, cache_hashid, cache_crawl, cache_crawl_ner,
 
     return results
 
-def cluster_per_qid_search_api(meta, cache_article, n_clusters=3):
+def cluster_per_qid_search_api(meta, cache_article, n_clusters=7):
     results = {}
     for qidx, item in meta.items():
-        if item['type_q'] != 'direct' or item['target_answer_type'] == 'correctness': 
+        if item['type_q'] != 'direct': # or item['target_answer_type'] == 'correctness': 
             continue
         
         all_embeddings = cache_article[qidx]['embed_docs']
@@ -121,14 +121,17 @@ def cluster_per_qid_search_api(meta, cache_article, n_clusters=3):
     return results
 
 meta = load_json('data/metadata_medhop.json')
-cache_crawl = load_json(r'data\cache\embed_filter_crawl_wiki_300.json')
-cache_crawl_ner = load_json(r'data\cache\embed_filter_crawl_wiki_ner_300.json')
+# cache_crawl = load_json(r'data\cache\embed_filter_crawl_wiki_300.json')
+# cache_crawl_ner = load_json(r'data\cache\embed_filter_crawl_wiki_ner_300.json')
+cache_crawl = load_json(r'data\cache\embed_ctx_merge_google_wiki_direct.json')
+cache_crawl_ner = load_json(r'data\cache\embed_ctx_merge_google_wiki_direct.json')
+
 cache_hashid = load_json(r'data\cache\all_hash_id_crawl_wiki_embed.json')
 
 source = 'merge_google_wiki'
 n_clusters = 7 #3
 crawl_wiki = False
-cache_article = load_json(fr'data\cache\embed_ctx_{source}.json')
+cache_article = load_json(fr'data\cache\embed_ctx_{source}_direct.json')
 
 if crawl_wiki:
     #CRAWL_WIKI
@@ -143,7 +146,9 @@ if crawl_wiki:
     print(fr"src\cluster\cache\kmean\cluster_results_300_{n_clusters}.json")
 else:
     cluster_results = cluster_per_qid_search_api(meta, cache_article, n_clusters=n_clusters)
-    save_json(cluster_results, fr"src\cluster\cache\kmean\cluster_results_kmean_{source}_{n_clusters}.json")
-    print(fr"src\cluster\cache\kmean\cluster_results_kmean_{source}_{n_clusters}.json")
+    # save_json(cluster_results, fr"src\cluster\cache\kmean\cluster_results_kmean_{source}_{n_clusters}.json")
+    # print(fr"src\cluster\cache\kmean\cluster_results_kmean_{source}_{n_clusters}.json")
+    save_json(cluster_results, fr"src\cluster\final\cluster_results_kmean_{source}_{n_clusters}.json")
+    print(fr"src\cluster\final\cluster_results_kmean_{source}_{n_clusters}.json")
     
 
