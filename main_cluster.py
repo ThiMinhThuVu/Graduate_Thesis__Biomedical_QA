@@ -286,7 +286,7 @@ if __name__ == "__main__":
         type_q = metadata[qidx]['type_q']    
         
         #CONFIG    
-        if type_q != "direct":
+        if type_q == "direct":
             continue
         else:
             cnt += 1
