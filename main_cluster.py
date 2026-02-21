@@ -194,7 +194,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         print(f"Short Answer for Step {step}-Cluster {cluster_label}: {curr_anss}")
                         
                     # Get final answer
-                    final_answer = process_get_final_answer(sample_id, subquestion, target_ans_type, cluster_output, mapping_data_answer, embedding_model_cluster)
+                    final_answer = process_get_final_answer(sample_id, subquestion, q_i, path_i, step, target_ans_type, cluster_output, mapping_data_answer, embedding_model_cluster)
                     short_ans = final_answer['short_answer']
                     long_ans = final_answer['long_answer']
                     dict_ans[q_i][path_i][step]["question"] = subquestion
@@ -233,7 +233,7 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    threads = [0, 125] 
+    threads = [0, 250] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -286,7 +286,7 @@ if __name__ == "__main__":
         type_q = metadata[qidx]['type_q']    
         
         #CONFIG    
-        if type_q == "direct":
+        if type_q != "sequence":
             continue
         else:
             cnt += 1

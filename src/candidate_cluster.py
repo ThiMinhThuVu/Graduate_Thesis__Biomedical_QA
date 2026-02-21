@@ -179,8 +179,9 @@ def log_plus(x):
     """Hàm log+(x) = log(1 + x) dùng để làm mềm ảnh hưởng outlier"""
     return math.log(1 + x)
 
-def calculate_new_score(individual_ref_counts, nc):
+def calculate_new_score(individual_ref_counts, nc): 
     """
+    CÔNG THỨC 2B, chọn MIN = 6.5
     Tính toán điểm dựa trên công thức mới:
     S(C) = log(1 + max r_i) + sum(log(1 + r_i)) + log(1 + Nc)
     """
@@ -201,6 +202,7 @@ def calculate_new_score(individual_ref_counts, nc):
 
 def calculate_gini_adjusted_score(individual_ref_counts, W_MASS = 0.7, W_CONC = 0.3):
     """
+    CÔNG THỨC 6: Row 36 - 37
     Gini / Concentration Adjusted Score (lambda = 1)
 
     S(C) = W_MASS * R_sum + W_CONC * concentration
@@ -218,7 +220,7 @@ def calculate_gini_adjusted_score(individual_ref_counts, W_MASS = 0.7, W_CONC = 
 
     return (W_MASS * r_sum) + (W_CONC * concentration)
 
-def cluster_and_selected_candidate_YN(cand_list, MIN_SCORE_THRESHOLD=2):
+def cluster_and_selected_candidate_YN(cand_list, MIN_SCORE_THRESHOLD=6.5):
     if not cand_list:
         return "not selected"
 
@@ -232,8 +234,9 @@ def cluster_and_selected_candidate_YN(cand_list, MIN_SCORE_THRESHOLD=2):
         individual_ref_counts = [len(cand_list[i]["sources"]) for i in indices]
         nc = len(indices)
 
-        c_score = calculate_gini_adjusted_score(individual_ref_counts)
-
+        # c_score = calculate_gini_adjusted_score(individual_ref_counts) # CT6: MIN_SCORE_THRESHOLD=2
+        c_score = calculate_new_score(individual_ref_counts, nc) #CT 2B: MIN_SCORE_THRESHOLD=6.5
+        
         raw_clusters.append({
             "label": label,
             "indices": indices,
@@ -265,7 +268,7 @@ def cluster_and_selected_candidate_YN(cand_list, MIN_SCORE_THRESHOLD=2):
     return result
 
 
-def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, DISTANCE_THRESHOLD = 0.12):
+def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=6.5, DISTANCE_THRESHOLD = 0.12):
     """
     Đánh giá list candidate của 1 câu hỏi.
     Trả về candidate tốt nhất kèm metadata hoặc "not selected".
@@ -289,8 +292,10 @@ def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, D
             indices = [i for i, l in enumerate(labels) if l == lbl]
             individual_ref_counts = [len(cand_list[i]["sources"]) for i in indices]
             nc = len(indices)
-            c_score = calculate_gini_adjusted_score(individual_ref_counts)
             
+            # c_score = calculate_gini_adjusted_score(individual_ref_counts) # CT6: MIN_SCORE_THRESHOLD=2
+            c_score = calculate_new_score(individual_ref_counts, nc) #CT 2B: MIN_SCORE_THRESHOLD=6.5
+        
             raw_clusters.append({
                 "indices": indices,
                 "evidence_count": nc,
@@ -327,7 +332,7 @@ def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, D
     return result
 
 
-def process_get_final_answer(qidx, question, target_answer_type, cluster_raw, mapping_data, embedding_model):
+def _process_get_final_answer(qidx, question, target_answer_type, cluster_raw, mapping_data, embedding_model):
     candidates = collect_candidates(cluster_raw, mapping_data) 
     if target_answer_type != 'correctness':
         final_output = cluster_and_selected_candidate_WH(candidates, embedding_model) 
@@ -364,6 +369,64 @@ def process_get_final_answer(qidx, question, target_answer_type, cluster_raw, ma
             
             cache_o3_ans[qidx] = result_dict
             save_json(cache_o3_ans ,r'data\cache\O3_zeroshot_ans_cache.json')
+            
+            # Đồng bộ cấu trúc trả về cho module ngoài dễ xử lý
+            return {
+                "short_answer": result_dict.get("short_answer"),
+                "long_answer": result_dict.get("long_answer"),
+                "selection_status": "zero-shot_fallback",
+                "cluster_score": None
+            }
+        except Exception as e:
+            return {"error": f"JSON parsing failed: {str(e)}", "raw_content": result_raw}
+    
+    return final_output
+
+
+def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_type, cluster_raw, mapping_data, embedding_model):
+    o3_cache_file = 'cache_o3_seq.json'
+    candidates = collect_candidates(cluster_raw, mapping_data) 
+    if target_answer_type != 'correctness':
+        final_output = cluster_and_selected_candidate_WH(candidates, embedding_model) 
+    else:
+        final_output = cluster_and_selected_candidate_YN(candidates)
+        
+    if final_output == 'not selected':
+        # cache_o3_ans = load_json(r'data\cache\O3_zeroshot_ans_cache.json') #direct
+        cache_o3_ans = load_json(o3_cache_file) # squence
+        
+        cached_res = cache_o3_ans.get(qidx, {}).get(qi, {}).get(pathi, {}).get(stepi)
+        
+        if cached_res:
+            print("[Load Cache O3 Answer Zeroshot]")
+            return {
+                "short_answer": cached_res.get("short_answer"),
+                "long_answer": cached_res.get("long_answer"),
+                "selection_status": "zero-shot_fallback_cached",
+                "cluster_score": None
+            }
+                        
+        if target_answer_type == 'correctness':
+            prompt = prompt_zero_shot_medhop_correctness(question)            
+        else:
+            prompt = prompt_zero_shot_medhop_wh(question)
+            
+        messages = [
+            {"role": "system", "content": "You are a biomedical expert. Your task is to answer a question base on ONLY the provided context"},
+            {"role": "user", "content": prompt}
+        ]  
+        result_raw = request_api_o3(messages)
+        
+        try:
+            # Clean markdown nếu có
+            clean_json = re.sub(r"```json|```", "", result_raw).strip()
+            result_dict = json.loads(clean_json)
+            if qidx not in cache_o3_ans: cache_o3_ans[qidx] = {}
+            if qi not in cache_o3_ans[qidx]: cache_o3_ans[qidx][qi] = {}
+            if pathi not in cache_o3_ans[qidx][qi]: cache_o3_ans[qidx][qi][pathi] = {}
+            
+            cache_o3_ans[qidx][qi][pathi][stepi] = result_dict
+            save_json(cache_o3_ans ,o3_cache_file)
             
             # Đồng bộ cấu trúc trả về cho module ngoài dễ xử lý
             return {
