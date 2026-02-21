@@ -384,7 +384,7 @@ def _process_get_final_answer(qidx, question, target_answer_type, cluster_raw, m
 
 
 def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_type, cluster_raw, mapping_data, embedding_model):
-    o3_cache_file = 'cache_o3_seq.json'
+    o3_cache_file = r'data\cache\O3_zeroshot_ans_cache_parallel.json' # PARALLEL
     candidates = collect_candidates(cluster_raw, mapping_data) 
     if target_answer_type != 'correctness':
         final_output = cluster_and_selected_candidate_WH(candidates, embedding_model) 

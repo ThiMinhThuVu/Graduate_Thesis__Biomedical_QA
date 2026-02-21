@@ -233,7 +233,7 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    threads = [0, 250] 
+    threads = [0, 125] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -261,8 +261,6 @@ if __name__ == "__main__":
     meta_ner = load_json(r'data\ner\entity_extraction_merge_parallel_seq.json') #parallel and sequence
     cnt = 0
     
-    # list_id_test_50 = load_json(r'data\test_WH_id_50q.json')
-    
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
@@ -270,9 +268,6 @@ if __name__ == "__main__":
         qidx = sample['QIDX']
         question = sample['Question']
         target_ans_type = metadata[qidx]['target_answer_type']
-        
-        # if qidx not in list_id_test_50:
-        #     continue
         
         # CONFIG YESNO
         # check_yn = target_ans_type == 'correctness'
@@ -286,7 +281,7 @@ if __name__ == "__main__":
         type_q = metadata[qidx]['type_q']    
         
         #CONFIG    
-        if type_q != "sequence":
+        if type_q != "parallel":
             continue
         else:
             cnt += 1

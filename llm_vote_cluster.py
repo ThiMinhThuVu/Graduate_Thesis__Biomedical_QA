@@ -123,10 +123,14 @@ def select_best_cluster_via_llm(question_text, raw_clusters, cand_list):
         "best_cluster_index": <int>,
         "reason": "<Explain why this cluster's [Short + Long] pairs are the most medically sound>"
         }}"""
-
+        
+    messages = [
+        {"role": "system", "content": "You are an expert Biomedical Consensus Aggregator."},
+        {"role": "user", "content": prompt}
+    ]
 
     try:
-        response_str = request_api(prompt, model='o3-mini') 
+        response_str = request_api(messages, model='o3-mini') 
         match = re.search(r'\{.*\}', response_str, re.DOTALL)
         if match:
             res_data = json.loads(match.group())
@@ -147,9 +151,16 @@ def select_best_cluster_via_llm(question_text, raw_clusters, cand_list):
 def cluster_and_evaluate(metadata, processed_data, model, dict_golden):
     fused_results = {}
     list_id_miss = set()
-    detailed_logs = {}
-
+    file_log = r'src\cluster\final\full_cluster_llm_logs.json'
+    if os.path.exists(file_log):
+        detailed_logs = load_json(file_log)
+    else:
+        detailed_logs = {}
+        
     for qidx, cand_list in processed_data.items():
+        if qidx in detailed_logs:
+            continue
+        
         if not cand_list or len(cand_list) < 2:
             fused_results[qidx] = {"abstain": True}
             list_id_miss.add(qidx)
@@ -158,28 +169,52 @@ def cluster_and_evaluate(metadata, processed_data, model, dict_golden):
         question_text = metadata[qidx]['original question']
         golden_answers = [str(g).lower().strip() for g in dict_golden[qidx]['True']]
         
-        # --- BƯỚC 1: PHÂN CỤM ---
-        texts = [c["text"] for c in cand_list]
-        embeddings = model.encode(texts)
-        
-        labels = AgglomerativeClustering(
-            n_clusters=None,
-            distance_threshold=DISTANCE_THRESHOLD, 
-            metric="cosine", linkage="average"
-        ).fit(embeddings).labels_
+        if metadata[qidx]["target_answer_type"] == "correctness":
+            # --- BƯỚC 1: PHÂN CỤM ---
+            clusters = defaultdict(list)
+            for i, c in enumerate(cand_list):
+                label = c["text"].lower()
+                clusters[label].append(i)
 
-        raw_clusters = []
-        for lbl in set(labels):
-            indices = [i for i, l in enumerate(labels) if l == lbl]
-            total_refs = sum([len(cand_list[i]["sources"]) for i in indices])
-            raw_clusters.append({
-                "indices": indices,
-                "evidence_count": len(indices),
-                "unique_source": total_refs
-            })
-        
+            raw_clusters = []
+
+            for label, indices in clusters.items():
+                total_refs = sum([len(cand_list[i]["sources"]) for i in indices])
+                raw_clusters.append({
+                    "indices": indices,
+                    "evidence_count": len(indices),
+                    "unique_source": total_refs
+                })
+        else:
+            # --- BƯỚC 1: PHÂN CỤM ---
+            texts = [c["text"] for c in cand_list]
+            embeddings = model.encode(texts)
+            
+            labels = AgglomerativeClustering(
+                n_clusters=None,
+                distance_threshold=DISTANCE_THRESHOLD, 
+                metric="cosine", linkage="average"
+            ).fit(embeddings).labels_
+
+            raw_clusters = []
+            for lbl in set(labels):
+                indices = [i for i, l in enumerate(labels) if l == lbl]
+                total_refs = sum([len(cand_list[i]["sources"]) for i in indices])
+                raw_clusters.append({
+                    "indices": indices,
+                    "evidence_count": len(indices),
+                    "unique_source": total_refs
+                })
+            
         # --- BƯỚC 2: LLM CHỌN CỤM ---
-        best_cluster, method = select_best_cluster_via_llm(question_text, raw_clusters, cand_list)
+        if len(raw_clusters) == 1:
+            # Nếu chỉ có 1 cụm, chọn luôn cụm đó, không gọi LLM
+            best_cluster = raw_clusters[0]
+            best_cluster["llm_reason"] = "Only one cluster identified after grouping."
+            best_cluster["cluster_index"] = 0
+            method = "single_cluster_automatic"
+        else:
+            best_cluster, method = select_best_cluster_via_llm(question_text, raw_clusters, cand_list)
 
         # --- BƯỚC 3: KIỂM TRA "HIT" GOLDEN TRONG CỤM ---
         if best_cluster:
@@ -195,7 +230,7 @@ def cluster_and_evaluate(metadata, processed_data, model, dict_golden):
                     break 
 
             fused_results[qidx] = {
-                "final_answer": None, # Tạm để None theo yêu cầu
+                "final_answer": None, 
                 "abstain": False,
                 "is_correct_cluster": cluster_contains_golden,
                 "debug_info": {
@@ -211,13 +246,14 @@ def cluster_and_evaluate(metadata, processed_data, model, dict_golden):
                 "llm_reason": best_cluster.get("llm_reason"),
                 "is_correct_cluster": cluster_contains_golden,
                 "matched_with_golden_text": matched_candidate,
-                "all_candidates_in_cluster": [cand_list[i]["text"] for i in chosen_indices]
+                "all_candidates_in_cluster": [cand_list[i] for i in chosen_indices]
             }
         else:
             fused_results[qidx] = {"abstain": True}
             list_id_miss.add(qidx)
-
-    save_json(detailed_logs, 'cache_logs/full_cluster_llm_logs.json')
+        save_json(detailed_logs, file_log)
+        
+    save_json(detailed_logs, file_log)
     return fused_results, list(list_id_miss)
 
 # ==========================================
