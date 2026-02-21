@@ -205,7 +205,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     long_ans = final_answer['long_answer']
                     dict_ans[q_i][path_i][step]["question"] = subquestion
                     dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq    
-                    dict_ans[q_i][path_i][step]["target_answer_type"] = target_ans_type 
+                    dict_ans[q_i][path_i][step]["final_answer"] = final_answer 
                     dict_ans[q_i][path_i][step]["target_answer_type"] = target_ans_type  
                     dict_ans[q_i][path_i][step]["focus_spacy_based_entity_label"] = focus_spacy_based_entity_label      
                     dict_ans[q_i][path_i][step]["cluster_genered_answer"] = cluster_output
