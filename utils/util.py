@@ -442,18 +442,18 @@ def wiki_pre_processing_tool_2(content):
 
 
 
-def setup_paths(settings, sample_id, q_i=""): #q_i có dạng "/q1"
+def setup_paths(KB, settings, sample_id, q_i=""): #q_i có dạng "/q1"
     """Tạo thư mục và trả về một dictionary chứa tất cả các đường dẫn file cần thiết."""
     dataset = settings['dataset']
     run = settings['run']
     dirs = {
-        "results": f"{dataset}results{q_i}",
+        "results": f"{KB}_{dataset}results{q_i}",
         "decomp": f"{dataset}preprocessing/step1{q_i}",
         "cache_decomp": f"{dataset}preprocessing/step0",
         "retrieval": f"{dataset}preprocessing/step2{q_i}",
         "ner": f"{dataset}preprocessing/step3{q_i}",
-        "all_ans": f"{dataset}results/all_ans",
-        "evidence": f"{dataset}results/evidence"
+        "all_ans": f"{KB}_{dataset}results/all_ans",
+        "evidence": f"{KB}_{dataset}results/evidence"
     }
     
     for d in dirs.values():

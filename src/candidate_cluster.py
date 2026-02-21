@@ -331,60 +331,7 @@ def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=6.5,
     
     return result
 
-
-def _process_get_final_answer(qidx, question, target_answer_type, cluster_raw, mapping_data, embedding_model):
-    candidates = collect_candidates(cluster_raw, mapping_data) 
-    if target_answer_type != 'correctness':
-        final_output = cluster_and_selected_candidate_WH(candidates, embedding_model) 
-    else:
-        final_output = cluster_and_selected_candidate_YN(candidates)
-        
-    if final_output == 'not selected':
-        cache_o3_ans = load_json(r'data\cache\O3_zeroshot_ans_cache.json')
-        if qidx in cache_o3_ans:
-            print("[Load Cache O3 Answer Zeroshot]")
-            result_dict = cache_o3_ans[qidx]
-            return {
-                "short_answer": result_dict.get("short_answer"),
-                "long_answer": result_dict.get("long_answer"),
-                "selection_status": "zero-shot_fallback",
-                "cluster_score": None
-            }
-            
-        if target_answer_type == 'correctness':
-            prompt = prompt_zero_shot_medhop_correctness(question)            
-        else:
-            prompt = prompt_zero_shot_medhop_wh(question)
-            
-        messages = [
-            {"role": "system", "content": "You are a biomedical expert. Your task is to answer a question base on ONLY the provided context"},
-            {"role": "user", "content": prompt}
-        ]  
-        result_raw = request_api_o3(messages)
-        
-        try:
-            # Clean markdown nếu có
-            clean_json = re.sub(r"```json|```", "", result_raw).strip()
-            result_dict = json.loads(clean_json)
-            
-            cache_o3_ans[qidx] = result_dict
-            save_json(cache_o3_ans ,r'data\cache\O3_zeroshot_ans_cache.json')
-            
-            # Đồng bộ cấu trúc trả về cho module ngoài dễ xử lý
-            return {
-                "short_answer": result_dict.get("short_answer"),
-                "long_answer": result_dict.get("long_answer"),
-                "selection_status": "zero-shot_fallback",
-                "cluster_score": None
-            }
-        except Exception as e:
-            return {"error": f"JSON parsing failed: {str(e)}", "raw_content": result_raw}
-    
-    return final_output
-
-
-def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_type, cluster_raw, mapping_data, embedding_model):
-    o3_cache_file = r'data\cache\O3_zeroshot_ans_cache_parallel.json' # PARALLEL
+def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_type, cluster_raw, mapping_data, embedding_model, o3_cache_file):
     candidates = collect_candidates(cluster_raw, mapping_data) 
     if target_answer_type != 'correctness':
         final_output = cluster_and_selected_candidate_WH(candidates, embedding_model) 

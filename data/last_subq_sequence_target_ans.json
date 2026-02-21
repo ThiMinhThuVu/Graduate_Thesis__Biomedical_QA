@@ -1,0 +1,902 @@
+{
+    "442406": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "788590": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "198351": {
+        "original_question": "gene",
+        "last_subq": "receptor"
+    },
+    "160759": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "352943": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "213436": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "189121": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "976949": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "927942": {
+        "original_question": "disease",
+        "last_subq": "person"
+    },
+    "596427": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "875070": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "321692": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "332575": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "510654": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "521164": {
+        "original_question": "correctness",
+        "last_subq": "chromosome"
+    },
+    "307739": {
+        "original_question": "gene",
+        "last_subq": "disease"
+    },
+    "648793": {
+        "original_question": "correctness",
+        "last_subq": "genetic conditions"
+    },
+    "181257": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "261207": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "953189": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "234120": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "314628": {
+        "original_question": "correctness",
+        "last_subq": "gene mutation"
+    },
+    "455108": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "296800": {
+        "original_question": "disease",
+        "last_subq": "disease"
+    },
+    "339025": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "334602": {
+        "original_question": "gene mutation",
+        "last_subq": "condition"
+    },
+    "917070": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "655628": {
+        "original_question": "gene mutation",
+        "last_subq": "gene mutations"
+    },
+    "559693": {
+        "original_question": "disorders",
+        "last_subq": "disorders"
+    },
+    "597959": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "191988": {
+        "original_question": "disorder",
+        "last_subq": "correctness"
+    },
+    "264925": {
+        "original_question": "birth defect",
+        "last_subq": "birth defects"
+    },
+    "451106": {
+        "original_question": "muscle",
+        "last_subq": "muscle"
+    },
+    "314081": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "289582": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "732795": {
+        "original_question": "region",
+        "last_subq": "region"
+    },
+    "673283": {
+        "original_question": "anatomical structure",
+        "last_subq": "anatomical structure"
+    },
+    "583241": {
+        "original_question": "vitamin",
+        "last_subq": "vitamin"
+    },
+    "474223": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "310034": {
+        "original_question": "genetic disorder",
+        "last_subq": "protein"
+    },
+    "102914": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "343060": {
+        "original_question": "gene",
+        "last_subq": "family"
+    },
+    "528453": {
+        "original_question": "gene",
+        "last_subq": "correctness"
+    },
+    "844232": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "940867": {
+        "original_question": "gene",
+        "last_subq": "role"
+    },
+    "797267": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "191200": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "691881": {
+        "original_question": "gene mutation",
+        "last_subq": "gene"
+    },
+    "505903": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "985734": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "566810": {
+        "original_question": "gene",
+        "last_subq": "location"
+    },
+    "357263": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "267044": {
+        "original_question": "year",
+        "last_subq": "year"
+    },
+    "523257": {
+        "original_question": "year",
+        "last_subq": "year"
+    },
+    "526400": {
+        "original_question": "gene",
+        "last_subq": "isoform"
+    },
+    "496452": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "117819": {
+        "original_question": "disorder",
+        "last_subq": "relationship"
+    },
+    "216561": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "687993": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "281757": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "933696": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "256147": {
+        "original_question": "disease",
+        "last_subq": "disease"
+    },
+    "831921": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "356137": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "783701": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "550597": {
+        "original_question": "enzyme",
+        "last_subq": "deficiency"
+    },
+    "205706": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "131544": {
+        "original_question": "tissues or cells",
+        "last_subq": "tissues or cells"
+    },
+    "329737": {
+        "original_question": "gene mutation",
+        "last_subq": "mutation"
+    },
+    "199779": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "556592": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "248646": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "383702": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "677433": {
+        "original_question": "gene",
+        "last_subq": "protein"
+    },
+    "640423": {
+        "original_question": "condition",
+        "last_subq": "condition"
+    },
+    "236323": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "901549": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "413785": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "985510": {
+        "original_question": "long bones",
+        "last_subq": "abnormal shapes"
+    },
+    "213618": {
+        "original_question": "photoreceptor cells",
+        "last_subq": "photoreceptor cells"
+    },
+    "787890": {
+        "original_question": "person",
+        "last_subq": "person"
+    },
+    "937806": {
+        "original_question": "leukemia",
+        "last_subq": "leukemia"
+    },
+    "832838": {
+        "original_question": "disease",
+        "last_subq": "disease"
+    },
+    "940390": {
+        "original_question": "blood disorder",
+        "last_subq": "condition"
+    },
+    "584175": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "458328": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "692671": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "672286": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "896881": {
+        "original_question": "hormone",
+        "last_subq": "chromosome"
+    },
+    "286064": {
+        "original_question": "disease",
+        "last_subq": "relationship"
+    },
+    "478250": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "864810": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "332073": {
+        "original_question": "year",
+        "last_subq": "year"
+    },
+    "412837": {
+        "original_question": "condition",
+        "last_subq": "subtype"
+    },
+    "717741": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "495147": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "487758": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "939230": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "293751": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "146675": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "485841": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "728328": {
+        "original_question": "correctness",
+        "last_subq": "consequence"
+    },
+    "289441": {
+        "original_question": "disease",
+        "last_subq": "protozoan"
+    },
+    "513990": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "828299": {
+        "original_question": "number of proteins",
+        "last_subq": "number of proteins"
+    },
+    "831229": {
+        "original_question": "multinucleated fibers",
+        "last_subq": "fibers"
+    },
+    "694090": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "660612": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "462009": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "123467": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "226088": {
+        "original_question": "cytokine",
+        "last_subq": "gene"
+    },
+    "360820": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "323039": {
+        "original_question": "domain",
+        "last_subq": "effect"
+    },
+    "700500": {
+        "original_question": "protein",
+        "last_subq": "protein"
+    },
+    "212762": {
+        "original_question": "DNA repair mechanism",
+        "last_subq": "relationship"
+    },
+    "381141": {
+        "original_question": "metal",
+        "last_subq": "metal"
+    },
+    "150566": {
+        "original_question": "disease",
+        "last_subq": "disease"
+    },
+    "728848": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "224272": {
+        "original_question": "gene",
+        "last_subq": "correctness"
+    },
+    "200636": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "435050": {
+        "original_question": "gene",
+        "last_subq": "Undefined"
+    },
+    "891164": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "960406": {
+        "original_question": "organelle",
+        "last_subq": "organelle"
+    },
+    "589778": {
+        "original_question": "biological function",
+        "last_subq": "biological function"
+    },
+    "692493": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "284967": {
+        "original_question": "condition",
+        "last_subq": "condition"
+    },
+    "655179": {
+        "original_question": "anatomical feature",
+        "last_subq": "anatomical features"
+    },
+    "786981": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "153852": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "120745": {
+        "original_question": "gene",
+        "last_subq": "gene mutation"
+    },
+    "755725": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "689083": {
+        "original_question": "condition",
+        "last_subq": "sphingolipidosis"
+    },
+    "778662": {
+        "original_question": "syndrome",
+        "last_subq": "syndrome"
+    },
+    "332135": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "116951": {
+        "original_question": "condition",
+        "last_subq": "condition"
+    },
+    "740216": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "905206": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "531106": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "628353": {
+        "original_question": "gene",
+        "last_subq": "subunit"
+    },
+    "166564": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "830268": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "571628": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "872323": {
+        "original_question": "chromosomal location",
+        "last_subq": "chromosomal location"
+    },
+    "931994": {
+        "original_question": "condition",
+        "last_subq": "subtype"
+    },
+    "833665": {
+        "original_question": "multi-protein complex",
+        "last_subq": "complex"
+    },
+    "478238": {
+        "original_question": "gene",
+        "last_subq": "gene mutation"
+    },
+    "849453": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "918946": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "328731": {
+        "original_question": "protein",
+        "last_subq": "protein"
+    },
+    "513351": {
+        "original_question": "gene",
+        "last_subq": "correctness"
+    },
+    "858680": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "708555": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "401433": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "308865": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "464739": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "674571": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "696503": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "905430": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "488726": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "774492": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "634992": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "585005": {
+        "original_question": "gene",
+        "last_subq": "correctness"
+    },
+    "685009": {
+        "original_question": "gene mutation",
+        "last_subq": "gene mutation"
+    },
+    "345808": {
+        "original_question": "mutation",
+        "last_subq": "types"
+    },
+    "547887": {
+        "original_question": "subtype",
+        "last_subq": "gene mutation"
+    },
+    "144512": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "984826": {
+        "original_question": "effect",
+        "last_subq": "effects"
+    },
+    "897214": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "926927": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "816884": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "808020": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "874633": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "841632": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "773528": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "142159": {
+        "original_question": "gene",
+        "last_subq": "property"
+    },
+    "252236": {
+        "original_question": "genetic disorder",
+        "last_subq": "cardiovascular condition"
+    },
+    "221274": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "271344": {
+        "original_question": "length",
+        "last_subq": "length"
+    },
+    "547348": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "999464": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "295652": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "864685": {
+        "original_question": "gene",
+        "last_subq": "correctness"
+    },
+    "603251": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "130827": {
+        "original_question": "amino acid",
+        "last_subq": "amino acid"
+    },
+    "943668": {
+        "original_question": "number of amino acids",
+        "last_subq": "number of amino acids"
+    },
+    "436577": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "542627": {
+        "original_question": "organelle",
+        "last_subq": "organelle"
+    },
+    "991912": {
+        "original_question": "gene",
+        "last_subq": "symptoms"
+    },
+    "488399": {
+        "original_question": "gene",
+        "last_subq": "chromosome"
+    },
+    "894544": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "881321": {
+        "original_question": "disorder",
+        "last_subq": "bleeding disorder"
+    },
+    "196497": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "121722": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "211369": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "639775": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "860205": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "745864": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "493214": {
+        "original_question": "category",
+        "last_subq": "category"
+    },
+    "508708": {
+        "original_question": "congenital disorder",
+        "last_subq": "disorder"
+    },
+    "190359": {
+        "original_question": "date",
+        "last_subq": "medication"
+    },
+    "791568": {
+        "original_question": "syndrome",
+        "last_subq": "syndrome"
+    },
+    "623929": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "215035": {
+        "original_question": "vitamin",
+        "last_subq": "vitamin"
+    },
+    "728207": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "654787": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "616393": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "184050": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "335715": {
+        "original_question": "disorder",
+        "last_subq": "disorder"
+    },
+    "506743": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "531534": {
+        "original_question": "protein",
+        "last_subq": "protein"
+    },
+    "174363": {
+        "original_question": "enzyme",
+        "last_subq": "metabolic disorder"
+    },
+    "365940": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "413039": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "450407": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "121000": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "138185": {
+        "original_question": "gene",
+        "last_subq": "gene"
+    },
+    "380031": {
+        "original_question": "person",
+        "last_subq": "person"
+    },
+    "205338": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "281682": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "305869": {
+        "original_question": "chromosome",
+        "last_subq": "chromosome"
+    },
+    "264681": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "486131": {
+        "original_question": "genetic disorder",
+        "last_subq": "disorder"
+    },
+    "362372": {
+        "original_question": "correctness",
+        "last_subq": "correctness"
+    },
+    "720129": {
+        "original_question": "condition",
+        "last_subq": "condition"
+    },
+    "612578": {
+        "original_question": "number of amino acids",
+        "last_subq": "number of amino acids"
+    }
+}

@@ -69,6 +69,10 @@ dataset:
 cache:
   wiki_cache_data: "data/wikipedia_cache.pkl"
   hash_id_cache: "data/cache/hash_id.json"
+  zeroshot: 
+    direct: "data/cache/O3_zeroshot_ans_cache_direct.json"
+    sequence: "data/cache/O3_zeroshot_ans_cache_sequence.json"
+    parallel: "data/cache/O3_zeroshot_ans_cache_parallel.json"
 
 classification:
   wiki:
