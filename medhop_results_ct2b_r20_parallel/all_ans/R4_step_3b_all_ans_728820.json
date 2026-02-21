@@ -1,0 +1,351 @@
+{
+    "QIDX": "728820",
+    "original_question": "Is shaving the affected areas necessary in the treatment for both black piedra and white piedra?",
+    "type_q": "parallel",
+    "focus_spacy_based_entity_label": [
+        "DISEASE",
+        "CHEMICAL"
+    ],
+    "target_answer_type": "correctness",
+    "key_entities": [],
+    "1": {
+        "final_qi": {
+            "question": "Is shaving the affected areas necessary in the treatment for black piedra?",
+            "short_answer": "yes",
+            "long_answer": "Black piedra is a superficial fungal infection that forms hard, black nodules on the hair shaft. Because the organism (Piedraia hortae) resides within and firmly adheres to the hair, physical removal of the infected hair shafts is considered the most reliable way to eliminate the fungus. Therefore, shaving or cutting the affected hair is recommended as the primary step in therapy, often followed by topical or systemic antifungal agents to prevent recurrence. Consequently, shaving the affected areas is regarded as necessary in the standard management of black piedra."
+        },
+        "0": {
+            "0": {
+                "question": "Is shaving the affected areas necessary in the treatment for black piedra?",
+                "search_keyword": "black piedra treatment shaving affected areas necessary",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Black piedra is a superficial fungal infection that forms hard, black nodules on the hair shaft. Because the organism (Piedraia hortae) resides within and firmly adheres to the hair, physical removal of the infected hair shafts is considered the most reliable way to eliminate the fungus. Therefore, shaving or cutting the affected hair is recommended as the primary step in therapy, often followed by topical or systemic antifungal agents to prevent recurrence. Consequently, shaving the affected areas is regarded as necessary in the standard management of black piedra.",
+                    "selection_status": "zero-shot_fallback",
+                    "cluster_score": null
+                },
+                "cluster_genered_answer": {
+                    "6": {
+                        "llm": {
+                            "short_answer": "No",
+                            "long_answer": "Reference: [GG_1], [GG_3], [GG_7], [GG_14]. Detailed explanation: The provided context explains that shaving the head or the affected area is considered the most effective treatment for black piedra. However, it also notes that this option may not be acceptable, indicating that while shaving is highly effective, it is not strictly necessary as there are alternative methods (such as cutting the hair) that can be used in the treatment plan."
+                        },
+                        "context": "-Reference: [GG_1]: Black Piedra - StatPearls - NCBI Bookshelf by P Sharma · 2023 · Cited by 6 — Shaving the head to remove all the hair is the most effective way to treat this fungal infection. However, this option may not be acceptable to ...\n-Reference: [GG_3]: What is the treatment for Black piedra (fungal infection of the hair shaft)? 24 Aug 2025 — Shaving or cutting the affected hair; Application of antifungal shampoos containing ketoconazole 2%; Must be combined with oral therapy for ...\n-Reference: [GG_7]: What to Do When You Have Scalp Fungus? 24 Jan 2025 — Effective Treatment for Scalp Fungus Alternatively, shave the hair in the affected area and apply antifungal medication daily. If the lesion is ...\n-Reference: [GG_14]: Black Piedra - Fungal infection of hair shafts 13 Feb 2023 — Treatment / Management ... Shaving the head to remove all the hair is the most effective way to treat this fungal infection. However, this option ... "
+                    },
+                    "1": {
+                        "llm": {
+                            "short_answer": "Yes",
+                            "long_answer": "Reference: [GG_2], [GG_8]. Detailed explanation: The provided context explains that the treatment for black piedra involves clipping or shaving the hair in the affected areas along with the application of topical antifungal agents. [GG_2] and [GG_8] specifically state that shaving or cutting the hair is the treatment of choice, which confirms that shaving the affected areas is considered necessary in the management of black piedra."
+                        },
+                        "context": "-Reference: [GG_2]: Piedra - an overview | ScienceDirect Topics Treatment for both white and black piedra includes clipping or shaving hair in the affected area, along with topical antifungal therapy.80 Ketoconazole 2 ...\n-Reference: [GG_6]: Piedra Consider shaving hair in the affected region. Topical antifungal agents: Shampoos — application regimes may vary from once weekly for 3 weeks to twice daily ...\n-Reference: [GG_8]: Piedra: Practice Essentials, Background, Pathophysiology Shaving or cutting the hair is the treatment of choice. Antifungal agents and terbinafine also are used in the treatment of piedra. Black piedra is treated by ...\n-Reference: [GG_9]: Hairfall? Piedra may be the culprit Shaving or cutting off the hair in the affected region is a viable treatment option. Apart from this, oral medications and antifungal agents can be used. For ...\n-Reference: [GG_11]: Piedraia hortae The fungus is used for cosmetic purposes to darken hair in some societies as a symbol of attractiveness. Piedraia hortae. Black piedra nodules on ...\n-Reference: [GG_13]: Black Piedra - an overview Treatment for both piedras includes clipping or shaving the affected area and topical antifungal therapy.50 Ketoconazole 2% shampoo also is effective.49,51.\n-Reference: [GG_17]: Infectious Agents - Hair Loss There are two main types of piedra: black piedra ... Treatment generally involves shaving off affected areas or applying topical agents like salicylic acid or ... "
+                    },
+                    "5": {
+                        "llm": {
+                            "short_answer": "Yes",
+                            "long_answer": "[GG_4], [GG_5]. Detailed explanation: The context explains that in some instances, cutting the hair short or shaving the affected areas is recommended to remove infected hair shafts, and when possible, shaving the affected area is the preferred treatment for black piedra."
+                        },
+                        "context": "-Reference: [GG_4]: Piedra Infection and Hair Loss: Understanding the Causes, ... 23 Oct 2024 — Black Piedra ... In some instances, cutting the hair short or shaving the affected areas may be recommended to remove infected hair shafts.\n-Reference: [GG_5]: Piedra 13 Mar 2019 — When it is possible to shave the affected area, this is the preferred treatment for both white and black piedra. Genital infections with ...\n-Reference: [GG_18]: What Is Piedra Disease? 25 Aug 2023 — Discomfort or itching in the affected area. Symptoms of Black Piedra Disease Include: Hard, black, or dark brown nodules on the hair shafts that ...\n-Reference: [GG_20]: How to Treat Piedra Infection: A Comprehensive Guide 23 Oct 2024 — Black Piedra. Causative Agent ... Itching and Irritation: Some may experience mild itching or discomfort on the scalp or affected areas. "
+                    },
+                    "0": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "The provided context does not include any specific information regarding whether shaving the affected areas is necessary in the treatment for black piedra. Reference: [GG_10]. Explanation: Although the reference discusses aspects of piedra and its effect on hair, it does not mention shaving as a treatment method for black piedra."
+                        },
+                        "context": "-Reference: [GG_10]: White Piedra vs Black Piedra: The Ultimate Guide to Spot, Treat & ... 8 Sept 2025 — Does piedra cause permanent hair loss? Generally, no. Piedra affects the hair shaft but not the follicle, so hair regrows after treatment. "
+                    },
+                    "2": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "[GG_12], [GG_15]. Explanation: The provided context only states that black piedra predominantly affects scalp hair and other body hairs, but does not include information regarding whether shaving of the affected areas is a necessary part of treatment."
+                        },
+                        "context": "-Reference: [GG_12]: Black Piedra | Treatment & Management | Point of Care 13 Feb 2023 — It predominantly affects scalp hair, although involvement of the beard, mustache, and pubic hairs is also known. Black piedra is common in hot ...\n-Reference: [GG_15]: Black Piedra - Abstract by P Sharma · 2019 · Cited by 6 — It predominantly affects scalp hair, although involvement of the beard, mustache, and pubic hairs is also known. Black piedra is common in hot ... "
+                    },
+                    "4": {
+                        "llm": {
+                            "short_answer": "No",
+                            "long_answer": "Reference: [GG_16]. Detailed explanation: The provided context indicates that in the treatment strategy for black piedra, shaving the affected areas is not usually used, implying that it is not necessary as part of the treatment approach."
+                        },
+                        "context": "-Reference: [GG_16]: White And Black Piedra Shaving is not usually a part of the treatment strategy. <i> ... Regular cleaning of affected areas, particularly for individuals with a predisposition. "
+                    },
+                    "3": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "Explanation: The provided context only describes risk factors for black piedra, such as living in tropical and subtropical regions and being swimmers, and does not include any information regarding treatment practices like shaving the affected areas. Therefore, the specific detail about whether shaving is necessary is not available in the context."
+                        },
+                        "context": "-Reference: [GG_19]: Black Piedra 21 Nov 2023 — What are the Risk Factors for Black Piedra? (Predisposing Factors) · Living in tropical and subtropical regions (humid climates) · Swimmers - ... "
+                    }
+                },
+                "retrieval_information": {
+                    "6": {
+                        "docs": [
+                            "-Reference: [GG_1]: Black Piedra - StatPearls - NCBI Bookshelf by P Sharma · 2023 · Cited by 6 — Shaving the head to remove all the hair is the most effective way to treat this fungal infection. However, this option may not be acceptable to ...",
+                            "-Reference: [GG_3]: What is the treatment for Black piedra (fungal infection of the hair shaft)? 24 Aug 2025 — Shaving or cutting the affected hair; Application of antifungal shampoos containing ketoconazole 2%; Must be combined with oral therapy for ...",
+                            "-Reference: [GG_7]: What to Do When You Have Scalp Fungus? 24 Jan 2025 — Effective Treatment for Scalp Fungus Alternatively, shave the hair in the affected area and apply antifungal medication daily. If the lesion is ...",
+                            "-Reference: [GG_14]: Black Piedra - Fungal infection of hair shafts 13 Feb 2023 — Treatment / Management ... Shaving the head to remove all the hair is the most effective way to treat this fungal infection. However, this option ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "1": {
+                        "docs": [
+                            "-Reference: [GG_2]: Piedra - an overview | ScienceDirect Topics Treatment for both white and black piedra includes clipping or shaving hair in the affected area, along with topical antifungal therapy.80 Ketoconazole 2 ...",
+                            "-Reference: [GG_6]: Piedra Consider shaving hair in the affected region. Topical antifungal agents: Shampoos — application regimes may vary from once weekly for 3 weeks to twice daily ...",
+                            "-Reference: [GG_8]: Piedra: Practice Essentials, Background, Pathophysiology Shaving or cutting the hair is the treatment of choice. Antifungal agents and terbinafine also are used in the treatment of piedra. Black piedra is treated by ...",
+                            "-Reference: [GG_9]: Hairfall? Piedra may be the culprit Shaving or cutting off the hair in the affected region is a viable treatment option. Apart from this, oral medications and antifungal agents can be used. For ...",
+                            "-Reference: [GG_11]: Piedraia hortae The fungus is used for cosmetic purposes to darken hair in some societies as a symbol of attractiveness. Piedraia hortae. Black piedra nodules on ...",
+                            "-Reference: [GG_13]: Black Piedra - an overview Treatment for both piedras includes clipping or shaving the affected area and topical antifungal therapy.50 Ketoconazole 2% shampoo also is effective.49,51.",
+                            "-Reference: [GG_17]: Infectious Agents - Hair Loss There are two main types of piedra: black piedra ... Treatment generally involves shaving off affected areas or applying topical agents like salicylic acid or ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "5": {
+                        "docs": [
+                            "-Reference: [GG_4]: Piedra Infection and Hair Loss: Understanding the Causes, ... 23 Oct 2024 — Black Piedra ... In some instances, cutting the hair short or shaving the affected areas may be recommended to remove infected hair shafts.",
+                            "-Reference: [GG_5]: Piedra 13 Mar 2019 — When it is possible to shave the affected area, this is the preferred treatment for both white and black piedra. Genital infections with ...",
+                            "-Reference: [GG_18]: What Is Piedra Disease? 25 Aug 2023 — Discomfort or itching in the affected area. Symptoms of Black Piedra Disease Include: Hard, black, or dark brown nodules on the hair shafts that ...",
+                            "-Reference: [GG_20]: How to Treat Piedra Infection: A Comprehensive Guide 23 Oct 2024 — Black Piedra. Causative Agent ... Itching and Irritation: Some may experience mild itching or discomfort on the scalp or affected areas."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "0": {
+                        "docs": [
+                            "-Reference: [GG_10]: White Piedra vs Black Piedra: The Ultimate Guide to Spot, Treat & ... 8 Sept 2025 — Does piedra cause permanent hair loss? Generally, no. Piedra affects the hair shaft but not the follicle, so hair regrows after treatment."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "2": {
+                        "docs": [
+                            "-Reference: [GG_12]: Black Piedra | Treatment & Management | Point of Care 13 Feb 2023 — It predominantly affects scalp hair, although involvement of the beard, mustache, and pubic hairs is also known. Black piedra is common in hot ...",
+                            "-Reference: [GG_15]: Black Piedra - Abstract by P Sharma · 2019 · Cited by 6 — It predominantly affects scalp hair, although involvement of the beard, mustache, and pubic hairs is also known. Black piedra is common in hot ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "4": {
+                        "docs": [
+                            "-Reference: [GG_16]: White And Black Piedra Shaving is not usually a part of the treatment strategy. <i> ... Regular cleaning of affected areas, particularly for individuals with a predisposition."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "3": {
+                        "docs": [
+                            "-Reference: [GG_19]: Black Piedra 21 Nov 2023 — What are the Risk Factors for Black Piedra? (Predisposing Factors) · Living in tropical and subtropical regions (humid climates) · Swimmers - ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    }
+                }
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is shaving the affected areas necessary in the treatment for white piedra?",
+            "short_answer": "yes",
+            "long_answer": "Reference: [GG_1], [GG_2], [GG_5], [GG_8]. Detailed explanation: All referenced sources indicate that shaving (or clipping) the affected hair is a necessary part of the treatment for white piedra, along with the use of antifungal agents."
+        },
+        "0": {
+            "0": {
+                "question": "Is shaving the affected areas necessary in the treatment for white piedra?",
+                "search_keyword": "white piedra treatment shaving affected areas necessary",
+                "final_answer": {
+                    "cid": 2,
+                    "text": "yes",
+                    "long_answer": "Reference: [GG_1], [GG_2], [GG_5], [GG_8]. Detailed explanation: All referenced sources indicate that shaving (or clipping) the affected hair is a necessary part of the treatment for white piedra, along with the use of antifungal agents.",
+                    "context": "-reference: [gg_1]: white piedra: pictures, symptoms, treatment, and more 7 feb 2025 — shaving the affected area and completing a short course of a topical antifungal can treat white piedra. practicing personal hygiene and hair ...\n-reference: [gg_2]: white piedra: symptoms, causes & treatment options explained shaving the affected hair or using antifungal shampoos is necessary to eliminate the condition. without treatment, the infection can persist and spread to other ...\n-reference: [gg_5]: white piedra - journal of the american academy of dermatology by am bueno-rodriguez — the best treatment for white piedra involves clipping or shaving the infected hairs; however, washing the affected hairs with an antifungal shampoo is also ...\n-reference: [gg_8]: piedra consider keeping scalp hair short, and regular shaving/waxing of body or facial hair. avoid potential sources of the causative fungi. this includes hair brushes ... - reference: [crawl_wiki_1] - information about: wikipedia:wikiproject medicine/dermatology task force/image data\nsection: dermatology image counter\nthis list was compiled on 11 may 2010. it's a collection of all of the pages in category:dermatology task force articles at the time the list was compiled. each page lists the number of images on it, and links to the images themselves. the script used to generate this list is at user:mastcell/dermimages.py, so feel free to copy and modify it. it requires a python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from sourceforge).\nsection: to do\nexpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nsection: results\npages with 0 images: 2244 pages with 1 image: 356 pages with 1 image: 356 pages with 2 images: 111 pages with 2 images: 111 pages with 3 images: 55 pages with 3 images: 55 pages with >3 images: 111 pages with >3 images: 111\n\n",
+                    "sources": [
+                        "GG_2",
+                        "GG_1",
+                        "GG_8",
+                        "GG_5"
+                    ],
+                    "has_wiki": false,
+                    "has_gg": true,
+                    "short_answer": "yes",
+                    "selection_status": "selected",
+                    "cluster_score": 10.4223,
+                    "total_candidates_in_cluster": 6
+                },
+                "cluster_genered_answer": {
+                    "2": {
+                        "llm": {
+                            "short_answer": "Yes",
+                            "long_answer": "Reference: [GG_1], [GG_2], [GG_5], [GG_8]. Detailed explanation: All referenced sources indicate that shaving (or clipping) the affected hair is a necessary part of the treatment for white piedra, along with the use of antifungal agents."
+                        },
+                        "context": "-Reference: [GG_1]: White piedra: Pictures, symptoms, treatment, and more 7 Feb 2025 — Shaving the affected area and completing a short course of a topical antifungal can treat white piedra. Practicing personal hygiene and hair ...\n-Reference: [GG_2]: White Piedra: Symptoms, Causes & Treatment Options Explained Shaving the affected hair or using antifungal shampoos is necessary to eliminate the condition. Without treatment, the infection can persist and spread to other ...\n-Reference: [GG_5]: White piedra - Journal of the American Academy of Dermatology by AM Bueno-Rodriguez — The best treatment for white piedra involves clipping or shaving the infected hairs; however, washing the affected hairs with an antifungal shampoo is also ...\n-Reference: [GG_8]: Piedra Consider keeping scalp hair short, and regular shaving/waxing of body or facial hair. Avoid potential sources of the causative fungi. This includes hair brushes ... - Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                    },
+                    "5": {
+                        "llm": {
+                            "short_answer": "Yes",
+                            "long_answer": "Reference: [GG_3], [GG_4], [GG_16]. Detailed explanation: The provided context indicates that shaving the affected area is a preferred and effective treatment option for white piedra. Specifically, [GG_3] states that when it is possible to shave the affected area, it is the preferred treatment, while [GG_4] and [GG_16] describe cutting or shaving the affected hairs as an integral part of the treatment strategy for white piedra."
+                        },
+                        "context": "-Reference: [GG_3]: Piedra 13 Mar 2019 — When it is possible to shave the affected area, this is the preferred treatment for both white and black piedra. Genital infections with ...\n-Reference: [GG_4]: Piedra - an overview | ScienceDirect Topics Piedra can usually be effectively treated by cutting or shaving the affected hairs, with or without the addition of an antifungal shampoo. Oral terbinafine has ...\n-Reference: [GG_9]: White Piedra: Causes, Symptoms & Best Treatment Options 1 Aug 2025 — Effective Treatment Options for White Piedra · Topical Antifungals · Oral Antifungal Medications · Hair Trimming or Shaving as a Treatment Aid.\n-Reference: [GG_11]: Piedra Infection and Hair Loss: Understanding the Causes, ... 23 Oct 2024 — White Piedra ... In some instances, cutting the hair short or shaving the affected areas may be recommended to remove infected hair shafts.\n-Reference: [GG_16]: White Piedra: Causes, Symptoms, and Treatment 3. How is white piedra treated? Treatment includes shaving the affected area, using antifungal shampoos, and sometimes oral antifungal medications.\n-Reference: [GG_18]: Piedra - an overview | ScienceDirect Topics The recommended treatment is cutting or shaving the hair involved with black or white piedra. White piedra can also be treated with topical antifungals such as ... - Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                    },
+                    "3": {
+                        "llm": {
+                            "short_answer": "Yes",
+                            "long_answer": "Reference: [GG_6], [GG_15]. Detailed explanation: The context indicates that shaving (or clipping) the infected hair is considered the most effective treatment for white piedra, making it a necessary treatment option, although it may be socially, culturally, or religiously unacceptable for some individuals."
+                        },
+                        "context": "-Reference: [GG_6]: White Piedra: An Uncommon Superficial Fungal Infection of Hair by V Gaurav · 2021 · Cited by 15 — Shaving the infected hair is curative and most effective treatment but is unacceptable due to social, cultural, or religious factors, especially in women.\n-Reference: [GG_15]: Nodules on the Hair: A Rare Case of Mixed Piedra by SS Khatu · 2013 · Cited by 24 — Piedra is best treated by shaving or clipping the hair, but this may not be considered cosmetically or socially acceptable, particularly by women. Topical ... - Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                    },
+                    "1": {
+                        "llm": {
+                            "short_answer": "No",
+                            "long_answer": "Reference: [GG_7], [GG_10], [GG_13]. Detailed explanation: The provided context states that shaving or cutting off the hair in the affected regions is a viable treatment option for white piedra. It is mentioned as an effective method but one that may be culturally and psychologically unacceptable to some patients. This indicates that while shaving is an available option, it is not a mandatory requirement in the treatment for white piedra."
+                        },
+                        "context": "-Reference: [GG_7]: Hairfall? Piedra may be the culprit Shaving or cutting off the hair in the affected region is a viable treatment option. ... White piedra may require prolonged therapeutic treatment procedures as ...\n-Reference: [GG_10]: Piedra: Practice Essentials, Background, Pathophysiology Cosmetic morbidity occurs because piedra may affect the patient's body image; the hair shaft may break and/or the patient may need to shave the affected hair.\n-Reference: [GG_13]: White Piedra by J Hong · 2025 — Treatment options include shaving or cutting the affected hair, which is effective but often culturally and psychologically unacceptable. 1. ... - Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                    },
+                    "0": {
+                        "llm": {
+                            "short_answer": "Yes",
+                            "long_answer": "Reference: [GG_12], [GG_14], [GG_17]. Detailed explanation: The provided context clearly indicates that the first line of treatment for white piedra is to completely shave off all infected hair, with multiple references stating that shaving is necessary to rid the fungus and is recommended by expert guidelines."
+                        },
+                        "context": "-Reference: [GG_12]: White Piedra: What It Is, How You Get It, How It's Treated 1 Nov 2017 — The first line of treatment is to completely shave off all infected hair. Doing so may be sufficient to rid yourself of the fungus. Other ...\n-Reference: [GG_14]: White Piedra: Read Here to Know What It is - HK Vitals 18 Nov 2023 — The first line of treatment typically includes shaving off all infected hair. Subsequent treatment options include prescribing antifungal creams ...\n-Reference: [GG_17]: a Overview of a white piedra. b Dermoscopy: irregular ... The American Academy of Dermatology Guidelines Committee recommends complete shaving of affected hair and advises maintaining well-ventilated hair, avoiding ... - Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                    },
+                    "6": {
+                        "llm": {
+                            "short_answer": "Yes",
+                            "long_answer": "[GG_19] Explanation: The provided context indicates that shaving the affected hair is the most effective remedy for treating white piedra."
+                        },
+                        "context": "-Reference: [GG_19]: Two cases of scalp white piedra caused by <i>Trichosporon ovoides ... by SA Tambe · 2009 · Cited by 41 — Shaving of affected hair is the most effective remedy but not acceptable in women. Several topical and systemic antifungals have been tried with variable ... - Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                    },
+                    "4": {
+                        "llm": {
+                            "short_answer": "Yes",
+                            "long_answer": "Reference: [GG_20]. Detailed explanation: The provided context indicates that traditionally, complete clearance required shaving of the affected hairs in addition to topical applications, implying that shaving the affected areas is considered necessary in the treatment of white piedra."
+                        },
+                        "context": "-Reference: [GG_20]: White piedra in children : Journal of the American Academy of ... - Ovid Traditionally, complete clearance required shaving of the affected hairs in addition to the topical applications. Benson et al, 15 however, found that treatment ... - Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                    }
+                },
+                "retrieval_information": {
+                    "2": {
+                        "docs": [
+                            "-Reference: [GG_1]: White piedra: Pictures, symptoms, treatment, and more 7 Feb 2025 — Shaving the affected area and completing a short course of a topical antifungal can treat white piedra. Practicing personal hygiene and hair ...",
+                            "-Reference: [GG_2]: White Piedra: Symptoms, Causes & Treatment Options Explained Shaving the affected hair or using antifungal shampoos is necessary to eliminate the condition. Without treatment, the infection can persist and spread to other ...",
+                            "-Reference: [GG_5]: White piedra - Journal of the American Academy of Dermatology by AM Bueno-Rodriguez — The best treatment for white piedra involves clipping or shaving the infected hairs; however, washing the affected hairs with an antifungal shampoo is also ...",
+                            "-Reference: [GG_8]: Piedra Consider keeping scalp hair short, and regular shaving/waxing of body or facial hair. Avoid potential sources of the causative fungi. This includes hair brushes ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                        ],
+                        "hash_id": [
+                            "67b08740d576801f69c48d72793f8523.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "5": {
+                        "docs": [
+                            "-Reference: [GG_3]: Piedra 13 Mar 2019 — When it is possible to shave the affected area, this is the preferred treatment for both white and black piedra. Genital infections with ...",
+                            "-Reference: [GG_4]: Piedra - an overview | ScienceDirect Topics Piedra can usually be effectively treated by cutting or shaving the affected hairs, with or without the addition of an antifungal shampoo. Oral terbinafine has ...",
+                            "-Reference: [GG_9]: White Piedra: Causes, Symptoms & Best Treatment Options 1 Aug 2025 — Effective Treatment Options for White Piedra · Topical Antifungals · Oral Antifungal Medications · Hair Trimming or Shaving as a Treatment Aid.",
+                            "-Reference: [GG_11]: Piedra Infection and Hair Loss: Understanding the Causes, ... 23 Oct 2024 — White Piedra ... In some instances, cutting the hair short or shaving the affected areas may be recommended to remove infected hair shafts.",
+                            "-Reference: [GG_16]: White Piedra: Causes, Symptoms, and Treatment 3. How is white piedra treated? Treatment includes shaving the affected area, using antifungal shampoos, and sometimes oral antifungal medications.",
+                            "-Reference: [GG_18]: Piedra - an overview | ScienceDirect Topics The recommended treatment is cutting or shaving the hair involved with black or white piedra. White piedra can also be treated with topical antifungals such as ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                        ],
+                        "hash_id": [
+                            "67b08740d576801f69c48d72793f8523.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "3": {
+                        "docs": [
+                            "-Reference: [GG_6]: White Piedra: An Uncommon Superficial Fungal Infection of Hair by V Gaurav · 2021 · Cited by 15 — Shaving the infected hair is curative and most effective treatment but is unacceptable due to social, cultural, or religious factors, especially in women.",
+                            "-Reference: [GG_15]: Nodules on the Hair: A Rare Case of Mixed Piedra by SS Khatu · 2013 · Cited by 24 — Piedra is best treated by shaving or clipping the hair, but this may not be considered cosmetically or socially acceptable, particularly by women. Topical ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                        ],
+                        "hash_id": [
+                            "67b08740d576801f69c48d72793f8523.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "1": {
+                        "docs": [
+                            "-Reference: [GG_7]: Hairfall? Piedra may be the culprit Shaving or cutting off the hair in the affected region is a viable treatment option. ... White piedra may require prolonged therapeutic treatment procedures as ...",
+                            "-Reference: [GG_10]: Piedra: Practice Essentials, Background, Pathophysiology Cosmetic morbidity occurs because piedra may affect the patient's body image; the hair shaft may break and/or the patient may need to shave the affected hair.",
+                            "-Reference: [GG_13]: White Piedra by J Hong · 2025 — Treatment options include shaving or cutting the affected hair, which is effective but often culturally and psychologically unacceptable. 1. ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                        ],
+                        "hash_id": [
+                            "67b08740d576801f69c48d72793f8523.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "0": {
+                        "docs": [
+                            "-Reference: [GG_12]: White Piedra: What It Is, How You Get It, How It's Treated 1 Nov 2017 — The first line of treatment is to completely shave off all infected hair. Doing so may be sufficient to rid yourself of the fungus. Other ...",
+                            "-Reference: [GG_14]: White Piedra: Read Here to Know What It is - HK Vitals 18 Nov 2023 — The first line of treatment typically includes shaving off all infected hair. Subsequent treatment options include prescribing antifungal creams ...",
+                            "-Reference: [GG_17]: a Overview of a white piedra. b Dermoscopy: irregular ... The American Academy of Dermatology Guidelines Committee recommends complete shaving of affected hair and advises maintaining well-ventilated hair, avoiding ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                        ],
+                        "hash_id": [
+                            "67b08740d576801f69c48d72793f8523.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "6": {
+                        "docs": [
+                            "-Reference: [GG_19]: Two cases of scalp white piedra caused by <i>Trichosporon ovoides ... by SA Tambe · 2009 · Cited by 41 — Shaving of affected hair is the most effective remedy but not acceptable in women. Several topical and systemic antifungals have been tried with variable ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                        ],
+                        "hash_id": [
+                            "67b08740d576801f69c48d72793f8523.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "4": {
+                        "docs": [
+                            "-Reference: [GG_20]: White piedra in children : Journal of the American Academy of ... - Ovid Traditionally, complete clearance required shaving of the affected hairs in addition to the topical applications. Benson et al, 15 however, found that treatment ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Wikipedia:WikiProject Medicine/Dermatology task force/Image data\nSection: Dermatology image counter\nThis list was compiled on 11 May 2010. It's a collection of all of the pages in Category:Dermatology task force articles at the time the list was compiled. Each page lists the number of images on it, and links to the images themselves. The script used to generate this list is at User:MastCell/dermimages.py, so feel free to copy and modify it. It requires a Python runtime (which can be obtained from http://www.python.org) and the mwclient module (which can be downloaded from SourceForge).\nSection: To do\nExpand and improve the global_exclude_list, so that all non-content images (project banners, stub tags, maintenance icons, etc) are excluded from the count and we get only the actual content images\nSection: Results\nPages with 0 images: 2244 Pages with 1 image: 356 Pages with 1 image: 356 Pages with 2 images: 111 Pages with 2 images: 111 Pages with 3 images: 55 Pages with 3 images: 55 Pages with >3 images: 111 Pages with >3 images: 111\n\n"
+                        ],
+                        "hash_id": [
+                            "67b08740d576801f69c48d72793f8523.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Both black piedra and white piedra require that the affected hair be shaved or cut. In black piedra, shaving is recommended because the fungus adheres to the hair shaft making physical removal necessary. Similarly, all referenced sources confirm that shaving (or clipping) is essential in the treatment of white piedra in order to eliminate the fungus and prevent recurrence.",
+        "short_answer": "yes"
+    }
+}

@@ -55,13 +55,15 @@ def collect_candidates(cluster_file, mapping_data):
             
             if not ans or ans == "insufficient information":
                 continue
+            
+            norm_ans = postprocessing(ans)
 
-            # Normalization
-            if ans in mapping_data:
-                norm_ans = mapping_data[ans]
-            else:
-                norm_ans = postprocessing(ans)
-                norm_ans = mapping_data.get(norm_ans, norm_ans)
+            # # Normalization
+            # if ans in mapping_data:
+            #     norm_ans = mapping_data[ans]
+            # else:
+            #     norm_ans = postprocessing(ans)
+            #     norm_ans = mapping_data.get(norm_ans, norm_ans)
                         
             sources = list(set(extract_references(long_answer)))
    
@@ -151,7 +153,7 @@ def select_best_cluster_via_llm(question_text, raw_clusters, cand_list):
 def cluster_and_evaluate(metadata, processed_data, model, dict_golden):
     fused_results = {}
     list_id_miss = set()
-    file_log = r'src\cluster\final\full_cluster_llm_logs.json'
+    file_log = r'src\cluster\final\full_cluster_llm_logs_no_mapping.json'
     if os.path.exists(file_log):
         detailed_logs = load_json(file_log)
     else:
