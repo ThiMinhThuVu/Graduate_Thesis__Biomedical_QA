@@ -288,7 +288,7 @@ if __name__ == "__main__":
         type_q = metadata[qidx]['type_q']    
         
         #CONFIG    
-        if type_q != "parallel":# "sequence": # "parallel":
+        if type_q == "parallel":# "sequence": # "parallel":
             continue
         else:
             cnt += 1
