@@ -176,7 +176,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         if target_ans_type in question_type_to_ner:
                             focus_spacy_based_entity_label = question_type_to_ner[target_ans_type]                                
                         else: #Other
-                            focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]  
+                            focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT']  
 
                         extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, 
                                                     search_kw_subq_retrieval, focus_spacy_based_entity_label)                         
@@ -205,7 +205,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     long_ans = final_answer['long_answer']
                     dict_ans[q_i][path_i][step]["question"] = subquestion
                     dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq    
-                    dict_ans[q_i][path_i][step]["target_answer_type"] = target_ans_type 
+                    dict_ans[q_i][path_i][step]["final_answer"] = final_answer 
                     dict_ans[q_i][path_i][step]["target_answer_type"] = target_ans_type  
                     dict_ans[q_i][path_i][step]["focus_spacy_based_entity_label"] = focus_spacy_based_entity_label      
                     dict_ans[q_i][path_i][step]["cluster_genered_answer"] = cluster_output
@@ -241,8 +241,8 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    KB="NER1" # Answer2, ...
-    threads = [0,1000] 
+    KB="Answer4" # Answer2, ...
+    threads = [0,500] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -288,7 +288,7 @@ if __name__ == "__main__":
         type_q = metadata[qidx]['type_q']    
         
         #CONFIG    
-        if type_q == "parallel":# "sequence": # "parallel":
+        if type_q != "direct":# "sequence": # "parallel":
             continue
         else:
             cnt += 1

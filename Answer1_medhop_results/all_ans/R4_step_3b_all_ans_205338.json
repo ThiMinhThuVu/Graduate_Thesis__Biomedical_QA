@@ -1,0 +1,465 @@
+{
+    "QIDX": "205338",
+    "original_question": "Is the gene that causes Kindler syndrome when mutated located on chromosome 2 in mice?",
+    "type_q": "sequence",
+    "key_entities": [
+        "yes",
+        "no"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is the gene that causes Kindler syndrome when mutated located on chromosome 2 in mice?",
+            "short_answer": "no",
+            "long_answer": "The question references “that gene,” but no specific gene is identified in the provided context. Because there is insufficient information to verify chromosomal location in mice, the statement cannot be confirmed as factually correct. Therefore, based solely on the information given, the answer is “no.”"
+        },
+        "0": {
+            "0": {
+                "question": "What is Kindler syndrome and what gene is associated with it?",
+                "search_keyword": "Kindler syndrome associated gene",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Kindler syndrome (also called Kindler dermatosis) is a rare, autosomal-recessive genodermatosis characterized by congenital skin blistering, photosensitivity, progressive poikiloderma, skin atrophy, and mucosal fragility. The disorder is caused by loss-of-function mutations in the FERMT1 gene (also known as KIND1) on chromosome 20p12.3, which encodes the focal-adhesion protein kindlin-1 that is essential for integrin activation and epidermal adhesion. This gene-disease relationship is well-established in the dermatologic and genetic literature.",
+                    "selection_status": "zero-shot_fallback_cached",
+                    "cluster_score": null
+                },
+                "target_answer_type": "condition",
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "cluster_genered_answer": {
+                    "3": {
+                        "llm": {
+                            "short_answer": "Kindler syndrome is a genetic skin disorder associated with the FERMT1 gene",
+                            "long_answer": "Reference: [GG_1], [GG_3]. Detailed explanation: The provided context indicates that Kindler syndrome is a condition linked to mutations in the FERMT1 gene, with [GG_1] specifically noting that most FERMT1 variants associated with Kindler syndrome are null variants, and [GG_3] corroborating the association by listing the gene among those linked to the syndrome. Although the context does not detail the clinical manifestations, it clearly identifies the gene implicated."
+                        },
+                        "context": "-Reference: [GG_1]: Kindler Syndrome - GeneReviews® - NCBI Bookshelf by L Youssefian · 2022 · Cited by 65 — Most FERMT1 variants associated with Kindler syndrome are null variants. It has been proposed that FERMT1 pathogenic missense variants and ...\n-Reference: [GG_3]: Gene Set - Kindler syndrome Kindler syndrome Gene Set ... 1 genes associated with the Kindler syndrome phenotype from the curated ClinVar Gene-Phenotype Associations 2025 dataset. "
+                    },
+                    "1": {
+                        "llm": {
+                            "short_answer": "Kindler syndrome is a type of epidermolysis bullosa characterized by skin blisters, and it is associated with the KIND1 (FERMT1) gene.",
+                            "long_answer": "Reference: [GG_2], [GG_5], [GG_8], [GG_13]. Detailed explanation: Kindler syndrome is described as a type of epidermolysis bullosa—a rare congenital disorder that manifests with skin blistering—with a genetic basis due to mutations in the KIND1 gene, which is also referred to as the FERMT1 gene. The evidence provided in the context from multiple sources indicates that loss-of-function mutations in this gene lead to the skin fragility and other clinical features characteristic of the syndrome."
+                        },
+                        "context": "-Reference: [GG_2]: Kindler syndrome Kindler syndrome is a type of epidermolysis bullosa, a rare congenital disease presenting with skin blisters, caused by a mutation in the KIND1 gene.\n-Reference: [GG_5]: Kindler epidermolysis bullosa Kindler epidermolysis bullosa is caused by loss-of-function mutations in the kindlin-1 gene (FERMT1; 20p12.3) causing the defective expression of the fermitin ...\n-Reference: [GG_8]: Unique Dermatological and Systemic Manifestations in a Classic Pediatric ... by M Aamir · 2025 · Cited by 1 — Kindler Syndrome (KS) is a rare, autosomal recessive genodermatosis caused by mutations in the FERMT1 gene, leading to skin fragility, ...\n-Reference: [GG_13]: Epidermolysis Bullosa—A Kindler Syndrome Case Report and Short ... by BI Stefanescu · 2023 · Cited by 13 — Mutations in the FERMT1 gene are usually associated with Kindler syndrome. The postpartum course of the mother was uneventful. She was ...\n-Reference: [GG_17]: Kindler syndrome Kindler syndrome is inherited as an autosomal recessive disorder. This means that an abnormal gene must be inherited from each parent. On average, one-in-four ... "
+                    },
+                    "5": {
+                        "llm": {
+                            "short_answer": "Kindler syndrome is a skin disorder caused by mutations in the KIND1 gene.",
+                            "long_answer": "Reference: [GG_4], [GG_10], [GG_11]. Detailed explanation: The provided context explains that Kindler syndrome results from mutations in the KIND1 gene, which encodes the protein kindlin-1. This protein is important in keratinocytes as it is involved in focal adhesions and linking the actin cytoskeleton, leading to the clinical manifestations of the syndrome."
+                        },
+                        "context": "-Reference: [GG_4]: Molecular Basis of Kindler Syndrome in Italy: Novel and Recurrent Alu ... by C Has · 2006 · Cited by 81 — Most cases of KS result from mutations in the KIND1 gene encoding kindlin-1, a component of focal adhesions in keratinocytes.\n-Reference: [GG_10]: Novel KIND1 Gene Mutation in Kindler Syndrome With Severe ... by E Sadler · 2006 · Cited by 82 — Recently, mutations in the KIND1 gene that encodes for the membrane-associated protein kindlin-1 have been identified. Kindlin-1 links the actin cytoskeleton to ...\n-Reference: [GG_11]: Novel KIND1 Gene Mutation in Kindler Syndrome With Severe ... by E Sadler · 2006 · Cited by 82 — Recently, mutations in the KIND1 gene that encodes for the membrane-associated protein kindlin-1 have been identified. Kindlin-1 links the actin cytoskeleton to ... "
+                    },
+                    "4": {
+                        "llm": {
+                            "short_answer": "Kindler syndrome is a genetic disorder caused by mutations in the FERMT1 gene",
+                            "long_answer": "Reference: [GG_6], [GG_19]. Detailed explanation: Kindler syndrome is a condition inherited in an autosomal recessive manner and is caused by mutations in the FERMT1 gene, which encodes kindlin-1 (also known as fermitin family homologue 1). Kindlin-1 is a 77 kDa protein that localizes at focal adhesions, playing a critical role in cell adhesion."
+                        },
+                        "context": "-Reference: [GG_6]: Novel and Recurrent FERMT1 Gene Mutations in Kindler Syndrome by T Techanukul · 2011 · Cited by 43 — The FERMT1 gene encodes kindlin-1 (also known as fermitin family homologue 1), a 77 kDa protein that localizes at focal adhesions, where it ...\n-Reference: [GG_19]: Kindlin-1 and Its Role in Kindler Syndrome 3 Jun 2017 — It is inherited in an autosomal recessive manner, and it is caused by mutations in FERMT1 (also known as KIND1, MIM# 607900), the gene encoding ... "
+                    },
+                    "2": {
+                        "llm": {
+                            "short_answer": "Kindler syndrome is a genetic disorder caused by mutations in the FERMT1 gene.",
+                            "long_answer": "Reference: [GG_7], [GG_18]. Detailed explanation: Based on the provided context, Kindler syndrome is associated with a loss-of-function mutation in the KIND1 gene, which is also known as the FERMT1 gene. This disorder is caused by homozygous mutations in FERMT1, as evidenced by the information in Reference [GG_7] and further confirmed by Reference [GG_18]."
+                        },
+                        "context": "-Reference: [GG_7]: Entry - #173650 - KINDLER SYNDROME; KNDLRS A number sign (#) is used with this entry because of evidence that Kindler syndrome (KNDLRS) is caused by homozygous mutation in the FERMT1 gene (607900) on ...\n-Reference: [GG_18]: Kindler syndrome: A case presenting with blistering poikiloderma and... by DN Gangopadhyay · 2014 · Cited by 7 — It results from loss of function mutation in the KIND1 gene (FERMT1), which has been localized to the short arm of chromosome 20. Onset is just after birth with ... "
+                    },
+                    "6": {
+                        "llm": {
+                            "short_answer": "Kindler syndrome is a form of epidermolysis bullosa caused by mutations in the FERMT1 (KIND1) gene.",
+                            "long_answer": "Reference: [GG_9], [GG_12], [GG_14], [GG_15]. Detailed explanation: Kindler syndrome is a subtype of epidermolysis bullosa characterized by skin blistering and fragility due to mutations in the FERMT1 (also known as KIND1) gene. This gene is located on the short arm of chromosome 20. The provided context explicitly describes that Kindler syndrome is caused by mutations in the FERMT1 gene, explaining its role in the disease."
+                        },
+                        "context": "-Reference: [GG_9]: Kindler Syndrome - Epidermolysis Bullosa - Geneskin KEB is caused by mutations in the FERMT1 (syn. KIND1) gene localized in the short arm of chromosome 20. The kindlin protein is an intracellular protein, ...\n-Reference: [GG_12]: Kindler syndrome by PK Kaviarasan · 2005 · Cited by 41 — [4] The genetic defect of Kindler syndrome has been identified on the short arm of chromosome 20. The gene KIND I encodes a novel protein kindlin-I. This ...\n-Reference: [GG_14]: Battling a rarity: A case of kindler syndrome from a developing country by A Ahmed · 2024 · Cited by 8 — The genetic basis of this disease is seen to be associated with mutations in the FERMT1 (KIND1) gene, located on the short arm of chromosome ...\n-Reference: [GG_15]: Kindler syndrome: a rare case report from Greece - Oxford Academic by M Gkaitatzi · 2019 · Cited by 9 — The disease is associated with mutations in the FERMT1 (KIND1) gene, located on the short arm of chromosome 20 (20p12.3) [3]. KS is ...\n-Reference: [GG_20]: Epidermolysis Bullosa and Kindler Syndrome by JE Mellerio · 2019 · Cited by 4 — It results from mutations in genes involved in epidermal and dermal–epidermal integrity, currently comprising at least 18 distinct genes with ... "
+                    },
+                    "0": {
+                        "llm": {
+                            "short_answer": "Kindler syndrome is a genetic disorder associated with the KIND1 gene",
+                            "long_answer": "Reference: [GG_16]. Detailed explanation: The provided context from [GG_16] describes the discovery of five new homozygous mutations in individuals affected by Kindler syndrome (KS), and it specifically highlights that these mutations occur in the KIND1 gene. This indicates that Kindler syndrome is a genetic disorder linked to mutations in the KIND1 gene."
+                        },
+                        "context": "-Reference: [GG_16]: Five New Homozygous Mutations in the KIND1 Gene in Kindler Syndrome by JE Lai-Cheong · 2007 · Cited by 42 — In this report, therefore, we describe five new homozygous mutations in individuals with KS and assess these and the previously published KIND1 mutations to ... "
+                    }
+                },
+                "retrieval_information": {
+                    "3": {
+                        "docs": [
+                            "-Reference: [GG_1]: Kindler Syndrome - GeneReviews® - NCBI Bookshelf by L Youssefian · 2022 · Cited by 65 — Most FERMT1 variants associated with Kindler syndrome are null variants. It has been proposed that FERMT1 pathogenic missense variants and ...",
+                            "-Reference: [GG_3]: Gene Set - Kindler syndrome Kindler syndrome Gene Set ... 1 genes associated with the Kindler syndrome phenotype from the curated ClinVar Gene-Phenotype Associations 2025 dataset."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "1": {
+                        "docs": [
+                            "-Reference: [GG_2]: Kindler syndrome Kindler syndrome is a type of epidermolysis bullosa, a rare congenital disease presenting with skin blisters, caused by a mutation in the KIND1 gene.",
+                            "-Reference: [GG_5]: Kindler epidermolysis bullosa Kindler epidermolysis bullosa is caused by loss-of-function mutations in the kindlin-1 gene (FERMT1; 20p12.3) causing the defective expression of the fermitin ...",
+                            "-Reference: [GG_8]: Unique Dermatological and Systemic Manifestations in a Classic Pediatric ... by M Aamir · 2025 · Cited by 1 — Kindler Syndrome (KS) is a rare, autosomal recessive genodermatosis caused by mutations in the FERMT1 gene, leading to skin fragility, ...",
+                            "-Reference: [GG_13]: Epidermolysis Bullosa—A Kindler Syndrome Case Report and Short ... by BI Stefanescu · 2023 · Cited by 13 — Mutations in the FERMT1 gene are usually associated with Kindler syndrome. The postpartum course of the mother was uneventful. She was ...",
+                            "-Reference: [GG_17]: Kindler syndrome Kindler syndrome is inherited as an autosomal recessive disorder. This means that an abnormal gene must be inherited from each parent. On average, one-in-four ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "5": {
+                        "docs": [
+                            "-Reference: [GG_4]: Molecular Basis of Kindler Syndrome in Italy: Novel and Recurrent Alu ... by C Has · 2006 · Cited by 81 — Most cases of KS result from mutations in the KIND1 gene encoding kindlin-1, a component of focal adhesions in keratinocytes.",
+                            "-Reference: [GG_10]: Novel KIND1 Gene Mutation in Kindler Syndrome With Severe ... by E Sadler · 2006 · Cited by 82 — Recently, mutations in the KIND1 gene that encodes for the membrane-associated protein kindlin-1 have been identified. Kindlin-1 links the actin cytoskeleton to ...",
+                            "-Reference: [GG_11]: Novel KIND1 Gene Mutation in Kindler Syndrome With Severe ... by E Sadler · 2006 · Cited by 82 — Recently, mutations in the KIND1 gene that encodes for the membrane-associated protein kindlin-1 have been identified. Kindlin-1 links the actin cytoskeleton to ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "4": {
+                        "docs": [
+                            "-Reference: [GG_6]: Novel and Recurrent FERMT1 Gene Mutations in Kindler Syndrome by T Techanukul · 2011 · Cited by 43 — The FERMT1 gene encodes kindlin-1 (also known as fermitin family homologue 1), a 77 kDa protein that localizes at focal adhesions, where it ...",
+                            "-Reference: [GG_19]: Kindlin-1 and Its Role in Kindler Syndrome 3 Jun 2017 — It is inherited in an autosomal recessive manner, and it is caused by mutations in FERMT1 (also known as KIND1, MIM# 607900), the gene encoding ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "2": {
+                        "docs": [
+                            "-Reference: [GG_7]: Entry - #173650 - KINDLER SYNDROME; KNDLRS A number sign (#) is used with this entry because of evidence that Kindler syndrome (KNDLRS) is caused by homozygous mutation in the FERMT1 gene (607900) on ...",
+                            "-Reference: [GG_18]: Kindler syndrome: A case presenting with blistering poikiloderma and... by DN Gangopadhyay · 2014 · Cited by 7 — It results from loss of function mutation in the KIND1 gene (FERMT1), which has been localized to the short arm of chromosome 20. Onset is just after birth with ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "6": {
+                        "docs": [
+                            "-Reference: [GG_9]: Kindler Syndrome - Epidermolysis Bullosa - Geneskin KEB is caused by mutations in the FERMT1 (syn. KIND1) gene localized in the short arm of chromosome 20. The kindlin protein is an intracellular protein, ...",
+                            "-Reference: [GG_12]: Kindler syndrome by PK Kaviarasan · 2005 · Cited by 41 — [4] The genetic defect of Kindler syndrome has been identified on the short arm of chromosome 20. The gene KIND I encodes a novel protein kindlin-I. This ...",
+                            "-Reference: [GG_14]: Battling a rarity: A case of kindler syndrome from a developing country by A Ahmed · 2024 · Cited by 8 — The genetic basis of this disease is seen to be associated with mutations in the FERMT1 (KIND1) gene, located on the short arm of chromosome ...",
+                            "-Reference: [GG_15]: Kindler syndrome: a rare case report from Greece - Oxford Academic by M Gkaitatzi · 2019 · Cited by 9 — The disease is associated with mutations in the FERMT1 (KIND1) gene, located on the short arm of chromosome 20 (20p12.3) [3]. KS is ...",
+                            "-Reference: [GG_20]: Epidermolysis Bullosa and Kindler Syndrome by JE Mellerio · 2019 · Cited by 4 — It results from mutations in genes involved in epidermal and dermal–epidermal integrity, currently comprising at least 18 distinct genes with ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "0": {
+                        "docs": [
+                            "-Reference: [GG_16]: Five New Homozygous Mutations in the KIND1 Gene in Kindler Syndrome by JE Lai-Cheong · 2007 · Cited by 42 — In this report, therefore, we describe five new homozygous mutations in individuals with KS and assess these and the previously published KIND1 mutations to ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    }
+                }
+            },
+            "1": {
+                "question": "Where is that gene located in mice?",
+                "search_keyword": "gene location in mice Kindler syndrome",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "The provided prompt does not specify which gene is being referred to, and thus no factual statement about its chromosomal location in mice is presented for verification. Without a defined gene, there is no claim that can be judged correct or incorrect. Therefore, the question cannot be answered with a supported factual consensus, and the statement cannot be affirmed.",
+                    "selection_status": "zero-shot_fallback_cached",
+                    "cluster_score": null
+                },
+                "target_answer_type": "location",
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "cluster_genered_answer": {
+                    "3": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "The provided context discusses the KIND1 gene and its expression in various human tissues but does not include any details on its genomic location in mice. Therefore, there isn’t sufficient information to determine the gene location in mice."
+                        },
+                        "context": "-Reference: [GG_1]: Colocalization of Kindlin-1, Kindlin-2, and Migfilin at Keratinocyte Focal ... by JE Lai-Cheong · 2008 · Cited by 105 — The KIND1 gene encodes a 677 amino-acid protein, kindlin-1, which is expressed mainly in basal keratinocytes, colon, kidney, and placenta (Siegel et al., 2003).\n-Reference: [GG_3]: Colocalization of Kindlin-1, Kindlin-2, and Migfilin at Keratinocyte Focal ... by JE Lai-Cheong · 2008 · Cited by 105 — The KIND1 gene encodes a 677 amino-acid protein, kindlin-1, which is expressed mainly in basal keratinocytes, colon, kidney, and placenta (Siegel et al., 2003). - Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                    },
+                    "1": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "The provided context does not include information about the specific location of the gene in mice."
+                        },
+                        "context": "-Reference: [GG_2]: Genetic analyses of Kindlins in mice by S Ussar · 2008 — disease Kindler Syndrome, in mice leads to some skin features of Kindler Syndrome ... gene mutation in Kindler syndrome with severe gastrointestinal tract ...\n-Reference: [GG_4]: Kindler syndrome: extension of FERMT1 mutational spectrum and ... by C Has · 2011 · Cited by 166 — ABSTRACT: Mutations in the FERMT1 gene (also known as KIND1), encoding the focal adhesion protein kindlin- 1, underlie the Kindler syndrome (KS), an autosomal ... - Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                    },
+                    "6": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "Explanation: The provided context only mentions a gene in Drosophila (FlyBase Gene Report: Dmel\\Fit2) with human orthologs implicated in Kindler syndrome. It does not include any information regarding the gene location in mice."
+                        },
+                        "context": "-Reference: [GG_5]: FlyBase Gene Report: Dmel\\Fit2 Involved in cardiac muscle tissue development. Predicted to be active in cell-substrate junction. Human ortholog(s) of this gene implicated in Kindler syndrome ... - Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                    },
+                    "2": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "Explanation: The provided context offers details regarding Kindler syndrome and a deletion in the FERMT1 gene related to Kindler epidermolysis bullosa, but does not contain any information about the gene's location in mice."
+                        },
+                        "context": "-Reference: [GG_6]: A Novel Homozygous 9385 bp Deletion in the FERMT1 (KIND1) ... by A Klausegger · 2025 — Kindler Epidermolysis bullosa (KEB; OMIM 173650) is a rare autosomal recessive genodermatosis characterized by bullous poikiloderma and photosensitivity.\n-Reference: [GG_10]: A Novel Homozygous 9385 bp Deletion in the FERMT1 (KIND1 ... by A Klausegger · 2025 — A novel homozygous 9385 bp deletion in the FERMT1 (KIND1) gene in a Malaysian family with Kindler epidermolysis bullosa and a review of large deletions. - Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                    },
+                    "0": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "The provided context does not include details regarding the specific location of the gene in mice. While it mentions a transcript called kindlin-1 (KIND1) in various tissues (as seen in [GG_7]), it does not disclose its genomic location in mice. Reference: [GG_7]. Explanation: The context only describes the detection of the kindlin-1 transcript and its expression levels in different tissues, without providing information about its chromosomal or genomic mapping in mice."
+                        },
+                        "context": "-Reference: [GG_7]: fermt1 (2003) detected a major 4.9-kb transcript, which they called kindlin-1 (KIND1), at highest levels in keratinocyte, colon, kidney, and placenta and at lower ... - Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                    },
+                    "5": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "The provided context mentions Kindler syndrome and provides information related to epidermolysis bullosa, as well as general information on cellular components such as stress granules. However, it does not include any details about the gene location in mice, specifically related to Kindler syndrome. Therefore, there is insufficient information in the provided context to answer the question."
+                        },
+                        "context": "-Reference: [GG_8]: Interventions for inherited forms of epidermolysis bullosa - Leong, WM by Cochrane Skin Group · 1996 — Kindler syndrome is a unique form of epidermolysis bullosa that is inherited in an autosomal recessive fashion. It is characterised by a ... - Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                    },
+                    "4": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "The provided context does not include information regarding the chromosomal or genomic location of the kindlin-1 gene in mice. Reference: [GG_9], [CRAWL_WIKI_1]. Explanation: The context primarily discusses the function of kindlin-1 in Kindler syndrome and general concepts about stress granules, but does not provide any details on the gene's location in mice."
+                        },
+                        "context": "-Reference: [GG_9]: A lens into the pathophysiology of monogenic inflammatory bowel ... by JD Ouahed · 2022 · Cited by 11 — The molecular basis of kindler syndrome results from dysfunctional kindlin-1, a cytoplasmic adaptor protein that normally anchors the actin ... - Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                    }
+                },
+                "retrieval_information": {
+                    "3": {
+                        "docs": [
+                            "-Reference: [GG_1]: Colocalization of Kindlin-1, Kindlin-2, and Migfilin at Keratinocyte Focal ... by JE Lai-Cheong · 2008 · Cited by 105 — The KIND1 gene encodes a 677 amino-acid protein, kindlin-1, which is expressed mainly in basal keratinocytes, colon, kidney, and placenta (Siegel et al., 2003).",
+                            "-Reference: [GG_3]: Colocalization of Kindlin-1, Kindlin-2, and Migfilin at Keratinocyte Focal ... by JE Lai-Cheong · 2008 · Cited by 105 — The KIND1 gene encodes a 677 amino-acid protein, kindlin-1, which is expressed mainly in basal keratinocytes, colon, kidney, and placenta (Siegel et al., 2003)."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                        ],
+                        "hash_id": [
+                            "a33a4fd0d08c37363eb24402c13b54f5.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "1": {
+                        "docs": [
+                            "-Reference: [GG_2]: Genetic analyses of Kindlins in mice by S Ussar · 2008 — disease Kindler Syndrome, in mice leads to some skin features of Kindler Syndrome ... gene mutation in Kindler syndrome with severe gastrointestinal tract ...",
+                            "-Reference: [GG_4]: Kindler syndrome: extension of FERMT1 mutational spectrum and ... by C Has · 2011 · Cited by 166 — ABSTRACT: Mutations in the FERMT1 gene (also known as KIND1), encoding the focal adhesion protein kindlin- 1, underlie the Kindler syndrome (KS), an autosomal ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                        ],
+                        "hash_id": [
+                            "a33a4fd0d08c37363eb24402c13b54f5.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "6": {
+                        "docs": [
+                            "-Reference: [GG_5]: FlyBase Gene Report: Dmel\\Fit2 Involved in cardiac muscle tissue development. Predicted to be active in cell-substrate junction. Human ortholog(s) of this gene implicated in Kindler syndrome ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                        ],
+                        "hash_id": [
+                            "a33a4fd0d08c37363eb24402c13b54f5.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "2": {
+                        "docs": [
+                            "-Reference: [GG_6]: A Novel Homozygous 9385 bp Deletion in the FERMT1 (KIND1) ... by A Klausegger · 2025 — Kindler Epidermolysis bullosa (KEB; OMIM 173650) is a rare autosomal recessive genodermatosis characterized by bullous poikiloderma and photosensitivity.",
+                            "-Reference: [GG_10]: A Novel Homozygous 9385 bp Deletion in the FERMT1 (KIND1 ... by A Klausegger · 2025 — A novel homozygous 9385 bp deletion in the FERMT1 (KIND1) gene in a Malaysian family with Kindler epidermolysis bullosa and a review of large deletions."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                        ],
+                        "hash_id": [
+                            "a33a4fd0d08c37363eb24402c13b54f5.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "0": {
+                        "docs": [
+                            "-Reference: [GG_7]: fermt1 (2003) detected a major 4.9-kb transcript, which they called kindlin-1 (KIND1), at highest levels in keratinocyte, colon, kidney, and placenta and at lower ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                        ],
+                        "hash_id": [
+                            "a33a4fd0d08c37363eb24402c13b54f5.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "5": {
+                        "docs": [
+                            "-Reference: [GG_8]: Interventions for inherited forms of epidermolysis bullosa - Leong, WM by Cochrane Skin Group · 1996 — Kindler syndrome is a unique form of epidermolysis bullosa that is inherited in an autosomal recessive fashion. It is characterised by a ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                        ],
+                        "hash_id": [
+                            "a33a4fd0d08c37363eb24402c13b54f5.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    },
+                    "4": {
+                        "docs": [
+                            "-Reference: [GG_9]: A lens into the pathophysiology of monogenic inflammatory bowel ... by JD Ouahed · 2022 · Cited by 11 — The molecular basis of kindler syndrome results from dysfunctional kindlin-1, a cytoplasmic adaptor protein that normally anchors the actin ..."
+                        ],
+                        "crawl_doc": [
+                            "- Reference: [CRAWL_WIKI_1] - Information about: Stress granule - Wikipedia\nSection: Introduction\nIn cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1–2 μm membraneless organelles when the cell is under stress.[1][2] The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum.[3] There are also nuclear stress granules. This article is about the cytosolic variety.\nSection: Proposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress.[4] The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence. Stress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation.[5] Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.[6] Efforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched.[7] These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies.[8] Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules,[7] suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought.[7][9] That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\n\n"
+                        ],
+                        "hash_id": [
+                            "a33a4fd0d08c37363eb24402c13b54f5.json"
+                        ],
+                        "source": [
+                            "CRAWL_WIKI"
+                        ]
+                    }
+                }
+            },
+            "2": {
+                "question": "Is that gene located on chromosome 2 in mice?",
+                "search_keyword": "gene chromosome 2 mice Kindler syndrome",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "The question references “that gene,” but no specific gene is identified in the provided context. Because there is insufficient information to verify chromosomal location in mice, the statement cannot be confirmed as factually correct. Therefore, based solely on the information given, the answer is “no.”",
+                    "selection_status": "zero-shot_fallback_cached",
+                    "cluster_score": null
+                },
+                "target_answer_type": "correctness",
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL"
+                ],
+                "cluster_genered_answer": {
+                    "2": {
+                        "llm": {
+                            "short_answer": "no",
+                            "long_answer": "Reference: [GG_5]. Detailed explanation: The context explicitly states that the mouse Fermt2 gene (Kindlin-2) maps to chromosome 14, rather than chromosome 2, thereby contradicting the specific claim in the question."
+                        },
+                        "context": "-Reference: [GG_1]: Targeted Deletion of Kindlin-2 in Mouse Mammary Glands Inhibits ... by W Wang · 2022 · Cited by 10 — We found that Kindlin-2 plays a significant role in regulating BC progression and metastasis in both the cancer cells and the tumor microenvironment.\n-Reference: [GG_5]: Targeted Deletion of Kindlin-2 in Mouse Mammary Glands Inhibits ... by W Wang · 2022 · Cited by 10 — Human FERMT2 (Kindlin-2) is located on chromosome 14q22.1, and mouse Fermt2 maps to chromosome 14. Finally, the human FERMT3 gene (Kindlin-3) ... "
+                    },
+                    "4": {
+                        "llm": {
+                            "short_answer": "insufficient information",
+                            "long_answer": "Reference: [GG_2], [GG_3], [GG_12]. Detailed explanation: The context discusses Kindlin genes and Kindler syndrome in both human and mouse studies but does not mention any chromosomal location for the gene in mice, specifically it does not confirm that the gene is located on chromosome 2. Therefore, the constraint regarding the gene's location on chromosome 2 in mice is not met by the provided context."
+                        },
+                        "context": "-Reference: [GG_2]: Genetic analyses of Kindlins in mice by S Ussar · 2008 — The function of the three Kindlin proteins is unknown. Recently, mutations in the human. FERMT1 gene, coding for the Kindlin-1 protein, were shown to cause ...\n-Reference: [GG_3]: The kindlin family: functions, signaling properties and implications for ... 1 Jan 2016 — In the same year, a genetic study identified kindlin-1, a homolog of kindlin-2, to be mutated in and the cause of Kindler syndrome (KS), a skin- ...\n-Reference: [GG_12]: A Mouse Model of Generalized Non-Herlitz Junctional Epidermolysis ... by JA Bubier · 2010 · Cited by 48 — A fourth type, Kindler syndrome, is characterized by cleavage within ... gene in mice reveals abnormalities in survival and late stage differentia ... "
+                    },
+                    "0": {
+                        "llm": {
+                            "short_answer": "insufficient information",
+                            "long_answer": "Reference: [GG_4], [GG_7], [GG_8], [GG_11], [GG_13], [GG_14], [GG_15], [GG_19]. Detailed explanation: The context provided focuses on Kindler syndrome and the role of mutations in the FERMT1 gene, but it does not include any information regarding the chromosomal location of the gene, especially in mice. Specifically, the constraints that the gene is located on chromosome 2 in mice are not addressed within the provided references."
+                        },
+                        "context": "-Reference: [GG_4]: Kindler Syndrome: A Multidisciplinary Management Approach Kindler syndrome is a very rare form of bullous epidermolysis. It is a hereditary condition caused by a mutation in the FERMT1 gene that encodes the protein ...\n-Reference: [GG_7]: (PDF) Kindler syndrome: A focal adhesion genodermatosis 7 Aug 2025 — Kindler syndrome (MIM173650) is an autosomal recessive genodermatosis characterized by poikiloderma, trauma-induced skin blistering, mucosal ...\n-Reference: [GG_8]: Kindler Syndrome (KNDLRS) Kindler epidermolysis bullosa is caused by genetic changes in the FERMT1 gene (also called the KIND1 gene) and is inherited in an autosomal recessive manner.\n-Reference: [GG_11]: Kindler syndrome Kindler syndrome, also known as Kindler epidermolysis bullosa or congenital bullous poikiloderma, is a rare autosomal recessive genetic skin disorder ...\n-Reference: [GG_13]: Raising Awareness Among Healthcare Providers about ... Kindler syndrome is a rare autosomal recessive disorder associated with mutations of the FERMT1 gene ... Genes are no longer deterministic and unyielding ...\n-Reference: [GG_14]: Targeted NGS in Diagnostics of Genodermatosis Characterized by ... by K Savostyanov · 2022 · Cited by 6 — Kindler syndrome is caused by mutations in the FERMT1 gene [31]. Moreover, mutations in the. KRT1 [32] and KRT10 [33] genes led to the ...\n-Reference: [GG_15]: Recessive mutation in tetraspanin CD151 causes Kindler syndrome- ... by H Vahidnezhad · 2018 · Cited by 78 — We have developed a targeted NGS array covering. 21 genes associated with skin fragility disorders, specifically consisting of 18 genes ...\n-Reference: [GG_19]: DISEASES - FERMT1 - JensenLab Kindler syndrome is characterized by acral skin blistering beginning at birth, diffuse cutaneous atrophy, photosensitivity, poikiloderma, and various mucosal ... "
+                    },
+                    "5": {
+                        "llm": {
+                            "short_answer": "insufficient information",
+                            "long_answer": "Reference: [GG_6], [GG_10], [GG_16]. Detailed explanation: The provided context discusses Kindler syndrome and mutations in KIND1 and KIND3, but it does not specify the gene's chromosomal location in mice, particularly whether it is on chromosome 2. Since the specific constraint of chromosomal location is not addressed in the context, the answer is 'insufficient information'."
+                        },
+                        "context": "-Reference: [GG_6]: The role of kindlins in cell biology and relevance to human disease by JE Lai-Cheong · 2010 · Cited by 106 — Loss-of-function mutations in KIND1 and KIND3 cause Kindler syndrome and leukocyte adhesion deficiency-III syndrome, respectively, although no human disease has ...\n-Reference: [GG_10]: When integrins fail to integrate - PMC - NIH by A Hidalgo · 2009 · Cited by 10 — The Kindler syndrome is caused by loss-of-function mutations in Kindlin-1 ... Clustered gene expression changes flank targeted gene loci in knockout mice.\n-Reference: [GG_16]: KIND1 Loss Sensitizes Keratinocytes to UV-Induced Inflammatory ... by X Zhang · 2017 · Cited by 16 — KIND1 loss-of-function mutation is linked to Kindler syndrome (KS, OMIM173650), an autosomal recessive disorder characterized by skin fragility with progressive ... "
+                    },
+                    "6": {
+                        "llm": {
+                            "short_answer": "insufficient information",
+                            "long_answer": "Reference: [GG_9]. Detailed explanation: The provided context describes a study showing that Collagen 17a1 is a major genetic modifier affecting non-Herlitz JEB in Lamc2 jeb mice. However, it does not provide any information about the chromosomal location (specifically whether it is on chromosome 2 in mice) nor does it mention Kindler syndrome. Since the context does not cover the specific constraint about chromosome 2 location related to the gene in question, the information is insufficient."
+                        },
+                        "context": "-Reference: [GG_9]: Molecular Identification of Collagen 17a1 as a Major Genetic Modifier of ... by TJ Sproule · 2014 · Cited by 38 — We demonstrate that Col17a1 is a strong genetic modifier of the non-Herlitz JEB that develops in Lamc2 jeb mice. "
+                    },
+                    "1": {
+                        "llm": {
+                            "short_answer": "insufficient information",
+                            "long_answer": "Reference: [GG_17], [GG_20]. Detailed explanation: The question asks if a specific gene is located on chromosome 2 in mice and specifically relates to Kindler syndrome. However, the provided context only includes studies on genetic modifiers (Quantitative Trait Loci) of the Lamc2jeb mutation in mice and does not mention the chromosomal location of any gene, nor does it address Kindler syndrome. Therefore, the context is missing the required information regarding both the chromosomal location and the association with Kindler syndrome."
+                        },
+                        "context": "-Reference: [GG_17]: Seven naturally variant loci serve as genetic modifiers of Lamc2 jeb ... by TJ Sproule · 2023 · Cited by 6 — This work identifies six additional Quantitative Trait Loci (QTL) that modify disease in Lamc2 jeb/jeb mice.\n-Reference: [GG_20]: Seven naturally variant loci serve as genetic modifiers of Lamc2jeb ... by TJ Sproule · 2023 · Cited by 6 — The Lamc2jeb mouse model of non-Herlitz junctional EB (JEB-nH) demonstrated that genetic modifiers can contribute substantially to the phenotypic variability of ... "
+                    },
+                    "3": {
+                        "llm": {
+                            "short_answer": "insufficient information",
+                            "long_answer": "Reference: [GG_18]. Detailed explanation: The provided context explicitly states that the Fermt1 gene is located on mouse chromosome 2. However, the question includes the specific constraint of linking this gene to Kindler syndrome, and the context does not mention any association with Kindler syndrome. As a result, not all constraints from the question are covered, leading to 'insufficient information'."
+                        },
+                        "context": "-Reference: [GG_18]: Mouse Fermt1 Knockout Project - Cyagen Biosciences The Fermt1 gene (NCBI Reference Sequence: NM_198029; Ensembl: ENSMUSG00000027356) is located on mouse chromosome 2. Fifteen exons are identified, with the ... "
+                    }
+                },
+                "retrieval_information": {
+                    "2": {
+                        "docs": [
+                            "-Reference: [GG_1]: Targeted Deletion of Kindlin-2 in Mouse Mammary Glands Inhibits ... by W Wang · 2022 · Cited by 10 — We found that Kindlin-2 plays a significant role in regulating BC progression and metastasis in both the cancer cells and the tumor microenvironment.",
+                            "-Reference: [GG_5]: Targeted Deletion of Kindlin-2 in Mouse Mammary Glands Inhibits ... by W Wang · 2022 · Cited by 10 — Human FERMT2 (Kindlin-2) is located on chromosome 14q22.1, and mouse Fermt2 maps to chromosome 14. Finally, the human FERMT3 gene (Kindlin-3) ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "4": {
+                        "docs": [
+                            "-Reference: [GG_2]: Genetic analyses of Kindlins in mice by S Ussar · 2008 — The function of the three Kindlin proteins is unknown. Recently, mutations in the human. FERMT1 gene, coding for the Kindlin-1 protein, were shown to cause ...",
+                            "-Reference: [GG_3]: The kindlin family: functions, signaling properties and implications for ... 1 Jan 2016 — In the same year, a genetic study identified kindlin-1, a homolog of kindlin-2, to be mutated in and the cause of Kindler syndrome (KS), a skin- ...",
+                            "-Reference: [GG_12]: A Mouse Model of Generalized Non-Herlitz Junctional Epidermolysis ... by JA Bubier · 2010 · Cited by 48 — A fourth type, Kindler syndrome, is characterized by cleavage within ... gene in mice reveals abnormalities in survival and late stage differentia ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "0": {
+                        "docs": [
+                            "-Reference: [GG_4]: Kindler Syndrome: A Multidisciplinary Management Approach Kindler syndrome is a very rare form of bullous epidermolysis. It is a hereditary condition caused by a mutation in the FERMT1 gene that encodes the protein ...",
+                            "-Reference: [GG_7]: (PDF) Kindler syndrome: A focal adhesion genodermatosis 7 Aug 2025 — Kindler syndrome (MIM173650) is an autosomal recessive genodermatosis characterized by poikiloderma, trauma-induced skin blistering, mucosal ...",
+                            "-Reference: [GG_8]: Kindler Syndrome (KNDLRS) Kindler epidermolysis bullosa is caused by genetic changes in the FERMT1 gene (also called the KIND1 gene) and is inherited in an autosomal recessive manner.",
+                            "-Reference: [GG_11]: Kindler syndrome Kindler syndrome, also known as Kindler epidermolysis bullosa or congenital bullous poikiloderma, is a rare autosomal recessive genetic skin disorder ...",
+                            "-Reference: [GG_13]: Raising Awareness Among Healthcare Providers about ... Kindler syndrome is a rare autosomal recessive disorder associated with mutations of the FERMT1 gene ... Genes are no longer deterministic and unyielding ...",
+                            "-Reference: [GG_14]: Targeted NGS in Diagnostics of Genodermatosis Characterized by ... by K Savostyanov · 2022 · Cited by 6 — Kindler syndrome is caused by mutations in the FERMT1 gene [31]. Moreover, mutations in the. KRT1 [32] and KRT10 [33] genes led to the ...",
+                            "-Reference: [GG_15]: Recessive mutation in tetraspanin CD151 causes Kindler syndrome- ... by H Vahidnezhad · 2018 · Cited by 78 — We have developed a targeted NGS array covering. 21 genes associated with skin fragility disorders, specifically consisting of 18 genes ...",
+                            "-Reference: [GG_19]: DISEASES - FERMT1 - JensenLab Kindler syndrome is characterized by acral skin blistering beginning at birth, diffuse cutaneous atrophy, photosensitivity, poikiloderma, and various mucosal ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "5": {
+                        "docs": [
+                            "-Reference: [GG_6]: The role of kindlins in cell biology and relevance to human disease by JE Lai-Cheong · 2010 · Cited by 106 — Loss-of-function mutations in KIND1 and KIND3 cause Kindler syndrome and leukocyte adhesion deficiency-III syndrome, respectively, although no human disease has ...",
+                            "-Reference: [GG_10]: When integrins fail to integrate - PMC - NIH by A Hidalgo · 2009 · Cited by 10 — The Kindler syndrome is caused by loss-of-function mutations in Kindlin-1 ... Clustered gene expression changes flank targeted gene loci in knockout mice.",
+                            "-Reference: [GG_16]: KIND1 Loss Sensitizes Keratinocytes to UV-Induced Inflammatory ... by X Zhang · 2017 · Cited by 16 — KIND1 loss-of-function mutation is linked to Kindler syndrome (KS, OMIM173650), an autosomal recessive disorder characterized by skin fragility with progressive ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "6": {
+                        "docs": [
+                            "-Reference: [GG_9]: Molecular Identification of Collagen 17a1 as a Major Genetic Modifier of ... by TJ Sproule · 2014 · Cited by 38 — We demonstrate that Col17a1 is a strong genetic modifier of the non-Herlitz JEB that develops in Lamc2 jeb mice."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "1": {
+                        "docs": [
+                            "-Reference: [GG_17]: Seven naturally variant loci serve as genetic modifiers of Lamc2 jeb ... by TJ Sproule · 2023 · Cited by 6 — This work identifies six additional Quantitative Trait Loci (QTL) that modify disease in Lamc2 jeb/jeb mice.",
+                            "-Reference: [GG_20]: Seven naturally variant loci serve as genetic modifiers of Lamc2jeb ... by TJ Sproule · 2023 · Cited by 6 — The Lamc2jeb mouse model of non-Herlitz junctional EB (JEB-nH) demonstrated that genetic modifiers can contribute substantially to the phenotypic variability of ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "3": {
+                        "docs": [
+                            "-Reference: [GG_18]: Mouse Fermt1 Knockout Project - Cyagen Biosciences The Fermt1 gene (NCBI Reference Sequence: NM_198029; Ensembl: ENSMUSG00000027356) is located on mouse chromosome 2. Fifteen exons are identified, with the ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    }
+                }
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The question references “that gene,” but no specific gene is identified in the provided context. Because there is insufficient information to verify chromosomal location in mice, the statement cannot be confirmed as factually correct. Therefore, based solely on the information given, the answer is “no.”",
+        "short_answer": "no"
+    }
+}
