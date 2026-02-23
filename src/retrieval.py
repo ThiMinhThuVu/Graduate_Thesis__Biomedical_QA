@@ -843,7 +843,6 @@ def cluster_per_qid_search_api(doc_sources, crawl_data_wikipedia, embeding_model
 
 def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer_type,
         embedding_model, embeding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache):    
-    retrieval_information = ""
     retrieval_topk = settings['retrieval_topk']
     max_results_gg = retrieval_topk['max_results_search_api_gg']
     max_results_wiki = retrieval_topk['max_results_search_api_wiki']
@@ -854,7 +853,7 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
     list_article_search = []
     
     if settings['get_context_2wiki']: #Only 2wiki dataset
-        retrieval_information = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
+        list_article_2wiki = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
             
     if settings['get_gg']:
         print("Retrieval_path: ", cache_filepath_retrieval)
@@ -863,18 +862,14 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
         
         list_article_search += list_article_gg
         
-        if snippet_gg != "":
-            retrieval_information += snippet_gg + "\n\n"
-        
-        
+     
     if settings['get_wiki']:
         results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
     
         snippet_wiki, list_article_wiki = format_search_results(results_wiki_search, topk=retrieval_topk['wiki'], search_type='WIKI') 
         
         list_article_search += list_article_wiki
-        if snippet_wiki != "":
-            retrieval_information += snippet_wiki + "\n\n"
+       
     
 
     if settings['get_crawl_wiki']:
@@ -949,9 +944,7 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
             file_cache_hash_id_sparql=file_cache_hash_id_sparql
         )
         
-        if sparql_info:
-            retrieval_information += f"- Reference [SPARQL]: {sparql_info}\n\n"
-        
+       
     return ctx_doc_search_fond_nbh
 
 
