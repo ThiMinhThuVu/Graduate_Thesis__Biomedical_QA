@@ -31,10 +31,10 @@ def retrieval_google(search_kw, filepath, max_results=10):
         result = search_google(search_kw, max_results=max_results)
         if result != []:
             break
-        print(f"[API SEARCH] HẾT LƯỢT SEARCHs (attempt {attempt+1}/{max_retries})")
-        print("Search kw: ", search_kw)
-    else:
-        return None
+        else:
+            print(f"[API SEARCH] HẾT LƯỢT SEARCHs (attempt {attempt+1}/{max_retries})")
+            print("Search kw: ", search_kw)
+            return None
           
     output['google'] = {
         'search_kw': search_kw,
@@ -496,6 +496,9 @@ def crawl_wiki_page_general(
         hash_id = get_hash_id_func(article)
         link = get_link_func(article)
         title = get_title_func(article)
+        
+        if 'list of' in link or 'lists of' in link or 'wikiroject' in link or 'wikipedia talk' in link:
+            continue
 
         if not hash_id or not link:
             continue
@@ -1010,4 +1013,7 @@ def remove_entity_evidence(current_retrieval: str, current_short: str):
     new_retrieval = new_retrieval.strip()
 
     return new_retrieval
+if __name__ == "__main__":
 
+    query = "peutz–jeghers syndrome gene variants non-sex chromosomes stk11 gene"
+    retrieval_google(query)

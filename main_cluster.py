@@ -5,7 +5,7 @@ from src.decomposition import decompose_question_parallel, decompose_question_se
 from src.retrieval import retrieve_evidence, remove_retrieve_evidence, remove_entity_evidence, remove_specific_references
 from src.extract_ner import extract_entities_from_evidence
 from src.generate_answer import generate_combine_parallel_answers, _generate_answer
-from src.candidate_cluster import process_get_final_answer
+from candidate_cluster_ct6 import process_get_final_answer
 from utils.util import *
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.models import StaticEmbedding

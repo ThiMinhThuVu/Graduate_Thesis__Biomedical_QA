@@ -1,0 +1,159 @@
+{
+    "QIDX": "879116",
+    "original_question": "What year did the country, home to six known patients with keratosis follicularis-dwarfism-cerebral atrophy syndrome, achieve independence from the Spanish Empire?",
+    "type_q": "direct",
+    "key_entities": [
+        "Spanish Empire"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What year did the country, home to six known patients with keratosis follicularis-dwarfism-cerebral atrophy syndrome, achieve independence from the Spanish Empire?",
+            "short_answer": "1821",
+            "long_answer": "Keratosis follicularis-dwarfism-cerebral atrophy syndrome (KFDCA) is an extremely rare autosomal-recessive disorder; to date only six patients, all originating from Mexico, have been reported in the medical literature. Mexico won its War of Independence against the Spanish Empire with the signing of the Treaty of Córdoba and the declaration of the Acta de Independencia on 28 September 1821. Therefore, the year in which the country achieved independence from Spain is 1821."
+        },
+        "0": {
+            "0": {
+                "question": "What year did the country, home to six known patients with keratosis follicularis-dwarfism-cerebral atrophy syndrome, achieve independence from the Spanish Empire?",
+                "search_keyword": "keratosis follicularis dwarfism cerebral atrophy syndrome country independence year Spanish Empire",
+                "final_answer": {
+                    "short_answer": "1821",
+                    "long_answer": "Keratosis follicularis-dwarfism-cerebral atrophy syndrome (KFDCA) is an extremely rare autosomal-recessive disorder; to date only six patients, all originating from Mexico, have been reported in the medical literature. Mexico won its War of Independence against the Spanish Empire with the signing of the Treaty of Córdoba and the declaration of the Acta de Independencia on 28 September 1821. Therefore, the year in which the country achieved independence from Spain is 1821.",
+                    "selection_status": "zero-shot_fallback_cached",
+                    "cluster_score": null
+                },
+                "target_answer_type": "year",
+                "focus_spacy_based_entity_label": [
+                    "DISEASE",
+                    "CHEMICAL",
+                    "GENE_OR_GENE_PRODUCT"
+                ],
+                "cluster_genered_answer": {
+                    "1": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "Explanation: None of the provided references include information regarding the year the country, home to six known patients with keratosis follicularis-dwarfism-cerebral atrophy syndrome, achieved independence from the Spanish Empire. Therefore, the necessary evidence to answer the question is missing."
+                        },
+                        "context": "-Reference: [GG_1]: Keratosis follicularis-dwarfism-cerebral ... Keratosis follicularis-dwarfism-cerebral atrophy syndrome is a rare, presumably X-linked recessive genetic disorder characterized by keratosis follicularis, ...Missing:countryindependenceSpanishEmpire\n-Reference: [GG_2]: Keratosis follicularis-dwarfism-cerebral ... - Orphanet A rare, genetic, developmental defect during embryogenesis syndrome characterized by generalized keratosis follicularis, severe proportionate dwarfism and ...Missing:countryindependenceSpanishEmpire\n-Reference: [GG_3]: Keratosis follicularis-dwarfism-cerebral ... A rare, genetic, developmental defect during embryogenesis syndrome characterized by generalized keratosis follicularis, severe proportionate dwarfism and ...Missing:countryindependenceSpanishEmpire\n-Reference: [GG_4]: keratosis follicularis-dwarfism-cerebral ... A syndrome characterized by generalized keratosis follicularis, severe proportionate dwarfism and cerebral atrophy. It has been described in six males from ...Missing:countryindependenceSpanishEmpire\n-Reference: [GG_5]: About Keratosis follicularis-dwarfism-cerebral ... Keratosis follicularis-dwarfism-cerebral atrophy syndrome is caused by genetic mutations, also known as pathogenic variants. Genetic mutations can be ...Missing:independenceSpanishEmpire\n-Reference: [GG_7]: Keratosis follicularis-dwarfism-cerebral ... First described in 1974 in a Mexican kindred involving three affected brothers and three maternal uncles, the syndrome manifests during embryogenesis as a ...Missing:countryindependenceSpanishEmpire\n-Reference: [GG_8]: Keratosis Follicularis Dwarfism and Cerebral Atrophy - DoveMed Learn in-depth information on Keratosis Follicularis Dwarfism and Cerebral Atrophy, its causes, symptoms, diagnosis, complications, treatment, prevention, ...Missing:independenceSpanishEmpire "
+                    },
+                    "5": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "Explanation: The provided context does not contain specific information regarding the country, its independence from the Spanish Empire, or the corresponding year. It only references the syndrome and indicates missing data related to country independence and the Spanish Empire."
+                        },
+                        "context": "-Reference: [GG_6]: 308830 - KERATOSIS FOLLICULARIS, DWARFISM, AND CEREBRAL ... KERATOSIS FOLLICULARIS, DWARFISM, AND CEREBRAL ATROPHY​​ Cantu et al. (1974) described a kindred in which 3 brothers and 3 of their maternal uncles had ...Missing:syndromecountryindependenceSpanishEmpire "
+                    },
+                    "3": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "The provided context does not mention any specific country, details about its independence from the Spanish Empire, or any connection to keratosis follicularis-dwarfism-cerebral atrophy syndrome. Therefore, we cannot determine the year based solely on the context provided."
+                        },
+                        "context": "-Reference: [GG_9]: [XML] https://snap.berkeley.edu/project ... ... years,need,him,back,such,those,being,day,take,while,here,before,does,great,year,go,help,want,really,think,best,life,each,made,right,world,business,home,own ...\n-Reference: [GG_14]: https://people.brandeis.edu/~ifinkel/FeatureStuff/... ... year yeas yegg yell yelp yens yeti yews yilt yips ylem ymca yobs yoga yogi yoke yolk yore york youn your yowl yuan yuck yule yurt ywca ywha zany zaps zeal ... "
+                    },
+                    "0": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "Explanation: The provided context does not contain any information regarding the country that is home to six known patients with keratosis follicularis-dwarfism-cerebral atrophy syndrome or details about its independence from the Spanish Empire. References [GG_10] and [GG_12] only contain biomedical data unrelated to the political history needed to answer the question."
+                        },
+                        "context": "-Reference: [GG_10]: https://participants-area.bioasq.org/Tasks/2a/MeSH... ... Syndrome=D058165 24,25-Dihydroxyvitamin D 3=D015650 25-Hydroxyvitamin D 2 ... Cerebral Artery=D020771 Anterior Chamber=D000867 Anterior Compartment ...\n-Reference: [GG_12]: mesh_terms_2015.txt - Researchsoftware.com ... Syndrome 24,25-Dihydroxyvitamin D 3 25-Hydroxyvitamin D 2 25-Hydroxyvitamin ... Cerebral Artery Anterior Chamber Anterior Compartment Syndrome Anterior ... "
+                    },
+                    "4": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "The provided context only includes references about the syndrome and does not mention the country, the six known patients, or any details regarding the country's independence from the Spanish Empire. Therefore, the answer cannot be determined from the provided context."
+                        },
+                        "context": "-Reference: [GG_11]: The Person Behind the Syndrome - Springer Link Jun 7, 1985·D ARIER disease or keratosis follicularis is an autoso- mal dominant dermatological disorder in which mul- tiple brownish greasy papules are ...\n-Reference: [GG_15]: MeSH - A Method for Converting Thesauri to RDF/OWL ... syndrome with acute abdominal pain that is severe, localized, and rapid ... atrophy of the prickle cell layer. It is seen in diseases such as pemphigus ... "
+                    },
+                    "2": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "Explanation: The provided context does not contain any information about a country, its independence year from the Spanish Empire, or details linking to keratosis follicularis-dwarfism-cerebral atrophy syndrome. Therefore, the question cannot be answered based on the supplied context."
+                        },
+                        "context": "-Reference: [GG_13]: Spelling dictionary - Wharton Statistics ... Spanish Spokane Springfield Sputnik Stan Stanford Stanley Stephanie Stephen ... atrophy atrophying atropine atropinism atropinization atropinize ...\n-Reference: [GG_16]: words.txt - WWU Computer Science Faculty Web Pages ... atrophy atropia atropic Atropidae atropine atropinism atropinization ... cerebral cerebralgia cerebralism cerebralist cerebralization cerebralize ...\n-Reference: [GG_17]: sortedDictionary.txt ... atrophy atrophying atropin atropine atropines atropins atropism atropisms ... cerebral cerebrally cerebrals cerebrate cerebrated cerebrates cerebrating ...\n-Reference: [GG_19]: words.txt ... atrophy atropidae atropine atropos atrovent atsugewi attacapa attacapan ... country country-dance countryfolk countryman countryseat countryside ...\n-Reference: [GG_20]: input-8-words.txt ... atrophy atropia atropic Atropidae atropine atropinism atropinization ... cerebral cerebralgia cerebralism cerebralist cerebralization cerebralize ... "
+                    },
+                    "6": {
+                        "llm": {
+                            "short_answer": "Insufficient information",
+                            "long_answer": "The provided context does not contain any details regarding the country, the number of patients, keratosis follicularis-dwarfism-cerebral atrophy syndrome, or its independence from the Spanish Empire. As a result, there is insufficient information to answer the question."
+                        },
+                        "context": "-Reference: [GG_18]: [PDF] Language-Independent Class Instance Extraction Using the Web The World Wide Web is a vast and readily-available repository of fac- tual information, such as semantic classes (e.g., fruits), their instances. "
+                    }
+                },
+                "retrieval_information": {
+                    "1": {
+                        "docs": [
+                            "-Reference: [GG_1]: Keratosis follicularis-dwarfism-cerebral ... Keratosis follicularis-dwarfism-cerebral atrophy syndrome is a rare, presumably X-linked recessive genetic disorder characterized by keratosis follicularis, ...Missing:countryindependenceSpanishEmpire",
+                            "-Reference: [GG_2]: Keratosis follicularis-dwarfism-cerebral ... - Orphanet A rare, genetic, developmental defect during embryogenesis syndrome characterized by generalized keratosis follicularis, severe proportionate dwarfism and ...Missing:countryindependenceSpanishEmpire",
+                            "-Reference: [GG_3]: Keratosis follicularis-dwarfism-cerebral ... A rare, genetic, developmental defect during embryogenesis syndrome characterized by generalized keratosis follicularis, severe proportionate dwarfism and ...Missing:countryindependenceSpanishEmpire",
+                            "-Reference: [GG_4]: keratosis follicularis-dwarfism-cerebral ... A syndrome characterized by generalized keratosis follicularis, severe proportionate dwarfism and cerebral atrophy. It has been described in six males from ...Missing:countryindependenceSpanishEmpire",
+                            "-Reference: [GG_5]: About Keratosis follicularis-dwarfism-cerebral ... Keratosis follicularis-dwarfism-cerebral atrophy syndrome is caused by genetic mutations, also known as pathogenic variants. Genetic mutations can be ...Missing:independenceSpanishEmpire",
+                            "-Reference: [GG_7]: Keratosis follicularis-dwarfism-cerebral ... First described in 1974 in a Mexican kindred involving three affected brothers and three maternal uncles, the syndrome manifests during embryogenesis as a ...Missing:countryindependenceSpanishEmpire",
+                            "-Reference: [GG_8]: Keratosis Follicularis Dwarfism and Cerebral Atrophy - DoveMed Learn in-depth information on Keratosis Follicularis Dwarfism and Cerebral Atrophy, its causes, symptoms, diagnosis, complications, treatment, prevention, ...Missing:independenceSpanishEmpire"
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "5": {
+                        "docs": [
+                            "-Reference: [GG_6]: 308830 - KERATOSIS FOLLICULARIS, DWARFISM, AND CEREBRAL ... KERATOSIS FOLLICULARIS, DWARFISM, AND CEREBRAL ATROPHY​​ Cantu et al. (1974) described a kindred in which 3 brothers and 3 of their maternal uncles had ...Missing:syndromecountryindependenceSpanishEmpire"
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "3": {
+                        "docs": [
+                            "-Reference: [GG_9]: [XML] https://snap.berkeley.edu/project ... ... years,need,him,back,such,those,being,day,take,while,here,before,does,great,year,go,help,want,really,think,best,life,each,made,right,world,business,home,own ...",
+                            "-Reference: [GG_14]: https://people.brandeis.edu/~ifinkel/FeatureStuff/... ... year yeas yegg yell yelp yens yeti yews yilt yips ylem ymca yobs yoga yogi yoke yolk yore york youn your yowl yuan yuck yule yurt ywca ywha zany zaps zeal ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "0": {
+                        "docs": [
+                            "-Reference: [GG_10]: https://participants-area.bioasq.org/Tasks/2a/MeSH... ... Syndrome=D058165 24,25-Dihydroxyvitamin D 3=D015650 25-Hydroxyvitamin D 2 ... Cerebral Artery=D020771 Anterior Chamber=D000867 Anterior Compartment ...",
+                            "-Reference: [GG_12]: mesh_terms_2015.txt - Researchsoftware.com ... Syndrome 24,25-Dihydroxyvitamin D 3 25-Hydroxyvitamin D 2 25-Hydroxyvitamin ... Cerebral Artery Anterior Chamber Anterior Compartment Syndrome Anterior ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "4": {
+                        "docs": [
+                            "-Reference: [GG_11]: The Person Behind the Syndrome - Springer Link Jun 7, 1985·D ARIER disease or keratosis follicularis is an autoso- mal dominant dermatological disorder in which mul- tiple brownish greasy papules are ...",
+                            "-Reference: [GG_15]: MeSH - A Method for Converting Thesauri to RDF/OWL ... syndrome with acute abdominal pain that is severe, localized, and rapid ... atrophy of the prickle cell layer. It is seen in diseases such as pemphigus ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "2": {
+                        "docs": [
+                            "-Reference: [GG_13]: Spelling dictionary - Wharton Statistics ... Spanish Spokane Springfield Sputnik Stan Stanford Stanley Stephanie Stephen ... atrophy atrophying atropine atropinism atropinization atropinize ...",
+                            "-Reference: [GG_16]: words.txt - WWU Computer Science Faculty Web Pages ... atrophy atropia atropic Atropidae atropine atropinism atropinization ... cerebral cerebralgia cerebralism cerebralist cerebralization cerebralize ...",
+                            "-Reference: [GG_17]: sortedDictionary.txt ... atrophy atrophying atropin atropine atropines atropins atropism atropisms ... cerebral cerebrally cerebrals cerebrate cerebrated cerebrates cerebrating ...",
+                            "-Reference: [GG_19]: words.txt ... atrophy atropidae atropine atropos atrovent atsugewi attacapa attacapan ... country country-dance countryfolk countryman countryseat countryside ...",
+                            "-Reference: [GG_20]: input-8-words.txt ... atrophy atropia atropic Atropidae atropine atropinism atropinization ... cerebral cerebralgia cerebralism cerebralist cerebralization cerebralize ..."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    },
+                    "6": {
+                        "docs": [
+                            "-Reference: [GG_18]: [PDF] Language-Independent Class Instance Extraction Using the Web The World Wide Web is a vast and readily-available repository of fac- tual information, such as semantic classes (e.g., fruits), their instances."
+                        ],
+                        "crawl_doc": [],
+                        "hash_id": [],
+                        "source": []
+                    }
+                }
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Keratosis follicularis-dwarfism-cerebral atrophy syndrome (KFDCA) is an extremely rare autosomal-recessive disorder; to date only six patients, all originating from Mexico, have been reported in the medical literature. Mexico won its War of Independence against the Spanish Empire with the signing of the Treaty of Córdoba and the declaration of the Acta de Independencia on 28 September 1821. Therefore, the year in which the country achieved independence from Spain is 1821.",
+        "short_answer": "1821"
+    }
+}

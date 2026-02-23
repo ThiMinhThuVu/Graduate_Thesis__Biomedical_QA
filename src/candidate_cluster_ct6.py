@@ -67,7 +67,57 @@ def prompt_zero_shot_medhop_correctness(question):
         }}
         """
     return prompt
+
+CACHE_PATH = 'data/cache/embed_candidate_ans_cluster.json'
+
+def load_embedding_cache(path):
+    if not os.path.exists(path):
+        # Đảm bảo thư mục tồn tại
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump({}, f)
+        return {}
+    
+    with open(path, "r", encoding="utf-8") as f:
+        # Khóa Shared (LOCK_SH): Cho phép nhiều người đọc
+        portalocker.lock(f, portalocker.LOCK_SH)
+        try:
+            data = json.load(f)
+            # Convert list back to numpy array for calculation
+            return {k: np.array(v) for k, v in data.items()}
+        except (json.JSONDecodeError, ValueError):
+            return {}
+
+def save_embedding_cache(new_data, path):
+    """
+    new_data: dict chứa {text: ndarray} mới phát sinh
+    """
+    if not new_data:
+        return
+
+    with open(path, 'r+', encoding='utf-8') as f:
+        # Khóa Độc quyền (LOCK_EX): Chỉ 1 người được ghi
+        portalocker.lock(f, portalocker.LOCK_EX)
         
+        # 1. Đọc dữ liệu hiện tại
+        f.seek(0)
+        try:
+            current_cache = json.load(f)
+        except:
+            current_cache = {}
+            
+        # 2. Convert dữ liệu mới (ndarray -> list) và update
+        for text, emb in new_data.items():
+            if isinstance(emb, np.ndarray):
+                current_cache[text] = emb.tolist()
+            else:
+                current_cache[text] = emb
+        
+        # 3. Ghi đè lại file
+        f.seek(0)
+        f.truncate()
+        json.dump(current_cache, f, ensure_ascii=False, indent=4)
+          
 def load_json(path):
     if not os.path.exists(path):
         # Nếu file không tồn tại, tạo file mới với nội dung {} để tránh lỗi lock file trống
@@ -265,8 +315,23 @@ def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, D
         return "not selected"
 
     # 1. Encoding và Clustering
+    global_cache = load_embedding_cache(CACHE_PATH)
+    
     texts = [c["text"] for c in cand_list]
-    embeddings = model.encode(texts)
+    unique_texts = list(set(texts))
+    
+    # Tìm những text chưa có trong cache
+    missing_texts = [t for t in unique_texts if t not in global_cache]
+    
+    if missing_texts:
+        new_embeddings = model.encode(missing_texts)
+        new_cache_chunk = dict(zip(missing_texts, new_embeddings))        
+        save_embedding_cache(new_cache_chunk, CACHE_PATH)        
+        global_cache.update(new_cache_chunk)
+        
+    # Tạo ma trận embedding cho các candidate hiện tại từ cache đã được cập nhật
+    embeddings = np.array([global_cache[t] for t in texts])
+    
     raw_clusters = []
 
     if len(cand_list) >= 2:
@@ -291,7 +356,12 @@ def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, D
                 "unique_source": sum(individual_ref_counts)
             })
     else:
-        return "not selected"
+        # Trường hợp chỉ có 1 candidate
+        ref_counts = [len(cand_list[0]["sources"])]
+        raw_clusters.append({
+            "indices": [0],
+            "cluster_score": calculate_new_score(ref_counts, 1)
+        })
     
     # 2. Lọc cluster theo ngưỡng MIN_SCORE_THRESHOLD
     best_cluster_info = None
@@ -306,21 +376,40 @@ def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, D
     
     # Chọn đại diện tốt nhất trong cụm thắng cuộc (người có nhiều ref nhất)
     chosen_indices = best_cluster_info["indices"]
-    best_idx = max(chosen_indices, key=lambda idx: len(cand_list[idx]["sources"]))
+    # best_idx = max(chosen_indices, key=lambda idx: len(cand_list[idx]["sources"]))
     
-    # Build kết quả trả về bao gồm toàn bộ info ban đầu và thông số debug
-    result = cand_list[best_idx].copy()
+    # # Build kết quả trả về bao gồm toàn bộ info ban đầu và thông số debug
+    # result = cand_list[best_idx].copy()
+    
+    merged_in_cluster = {}
+
+    for idx in chosen_indices:
+        cand = cand_list[idx]
+        norm_text = cand["text"]
+        
+        if norm_text not in merged_in_cluster:
+            merged_in_cluster[norm_text] = {
+                "text": cand["text"],
+                "sources": set(cand.get("sources", [])),
+                "context": cand.get("context", ""),
+                "long_answer": cand.get('long_answer', "")
+            }
+        else:
+            merged_in_cluster[norm_text]["sources"].update(cand.get("sources", []))
+            merged_in_cluster[norm_text]["long_answer"] += cand['long_answer']
+
+    result = max(merged_in_cluster.values(), key=lambda x: len(x["sources"]))
+    result["sources"] = list(result["sources"])
     result.update({
-        "short_answer": result["text"], # cho đồng bộ format cũ
+        "short_answer": result["text"], 
+        "long_answer": result["long_answer"],
         "selection_status": "selected",
         "cluster_score": round(best_cluster_info["cluster_score"], 4),
         "total_candidates_in_cluster": len(chosen_indices)
     })
-    
     return result
 
-def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_type, cluster_raw, mapping_data, embedding_model):
-    o3_cache_file = r'data\cache\O3_zeroshot_ans_cache_parallel.json'
+def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_type, cluster_raw, mapping_data, embedding_model, o3_cache_file):
     candidates = collect_candidates(cluster_raw, mapping_data) 
     if target_answer_type != 'correctness':
         final_output = cluster_and_selected_candidate_WH(candidates, embedding_model) 
@@ -328,8 +417,7 @@ def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_typ
         final_output = cluster_and_selected_candidate_YN(candidates)
         
     if final_output == 'not selected':
-        # cache_o3_ans = load_json(r'data\cache\O3_zeroshot_ans_cache.json') #direct
-        cache_o3_ans = load_json(o3_cache_file) # squence
+        cache_o3_ans = load_json(o3_cache_file) 
         
         cached_res = cache_o3_ans.get(qidx, {}).get(qi, {}).get(pathi, {}).get(stepi)
         
