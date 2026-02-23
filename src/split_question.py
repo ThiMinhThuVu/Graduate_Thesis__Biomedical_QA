@@ -386,6 +386,6 @@ def split_bridge_comparison_fallback(question):
 if __name__ == "__main__":
     # question = "Which film has the director died later, Men Without Souls or Yes Or No?"
     # question = "Are The Louisiana Hussy and Tate'S Voyage both from the same country?"
-    question = "Were John Baillie Mcintosh and Daniel I. Block of the same nationality?"
-    print(split_comparison_question(question))
-    # print(split_bridge_comparison_fallback(question))
+    question = "Which film has the director born later, Cofralandes, Chilean Rhapsody or 2 Guns?"
+    # print(split_comparison_question(question))
+    print(split_bridge_comparison_fallback(question))

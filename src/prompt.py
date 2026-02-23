@@ -441,10 +441,10 @@ def load_subquestion_prompt(question, dataset=None, type_q=None, using_decomp_ne
             ]
 
             """
-                        },
-                        {
-                            "role": "user",
-                            "content": f"""## Examples (5)
+            },
+            {
+                "role": "user",
+                "content": f"""## Examples (5)
 
             ---
             **Example 1:**
@@ -1737,10 +1737,10 @@ Output:
 ]
 ---
 **Example 2:**
-Input: "Which film has the director who is older than the other, Tiny Times 3 or Being Rose?"
+Input: "Which film has the director who is older than the other, Cofralandes, Chilean Rhapsody or Being Rose?"
 Output:
 [
-    "What is the date of birth of the director of 'Tiny Times 3'?",
+    "What is the date of birth of the director of 'Cofralandes, Chilean Rhapsody'?",
     "What is the date of birth of the director of 'Being Rose'?"
 ]
 ---

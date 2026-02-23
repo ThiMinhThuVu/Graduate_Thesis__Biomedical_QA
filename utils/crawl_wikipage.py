@@ -195,7 +195,7 @@ def save_json(data, file_path):
         json.dump(data, file, ensure_ascii=False, indent=4)
 
 def normalize_query(query: str) -> str:
-    return " ".join(query.lower().strip().split())
+    return query.lower().strip()
       
 import re
 import json

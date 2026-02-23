@@ -1,9 +1,14 @@
+import sys
+import json
+import os 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from src.gpt_request import request_api
 from src.prompt import load_prompt_gen_sub, prompt_split_parallel_question_medhop, prompt_split_parallel_question_wiki
 from src.split_question import split_comparison_question, split_bridge_comparison_fallback
 from utils.util import load_json, save_json
-import json
-import os 
+
+
 
 RELATION_PATHS = {
     # Quan hệ thông qua hôn nhân (In-laws and extended)
@@ -250,8 +255,9 @@ def decompose_question_parallel(question, dataset=None, type_q=None):
     
 if __name__ == "__main__":
     # Example usage
-    question = "Do director of film Social Genocide and director of film Así No Hay Cama Que Aguante have the same nationality?"
+    # question = "Do director of film Social Genocide and director of film Así No Hay Cama Que Aguante have the same nationality?"
     type_q = "bridge_comparison"
+    question = "Which film has the director born later, Cofralandes, Chilean Rhapsody or 2 Guns?"
 
     # print(split_bridge_comparison_fallback(question))
     print(decompose_question_parallel(question, dataset='wiki', type_q=type_q))

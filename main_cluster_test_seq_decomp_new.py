@@ -138,7 +138,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
     
         path_output, n_path = decompose_question_sequential(question, sample_id, paths['decomp'], is_seq=is_seq, 
                             dataset=dataset, type_q=type_q, using_decomp_new=using_decomp_new, model="gpt-4o-mini")
-        
+
         for path_i in range(n_path):
             path_i = str(path_i)
             subq_output = path_output[path_i]
@@ -241,8 +241,8 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    KB="TEST_SEQ" # Answer2, ...
-    threads = [500,1000] 
+    KB="DECOMP_NEW" # Answer2, ...
+    threads = [850, 900] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
