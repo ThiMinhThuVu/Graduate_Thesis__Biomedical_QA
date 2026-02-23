@@ -360,7 +360,7 @@ def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, D
         ref_counts = [len(cand_list[0]["sources"])]
         raw_clusters.append({
             "indices": [0],
-            "cluster_score": calculate_new_score(ref_counts, 1)
+            "cluster_score": calculate_gini_adjusted_score(ref_counts, 1)
         })
     
     # 2. Lọc cluster theo ngưỡng MIN_SCORE_THRESHOLD

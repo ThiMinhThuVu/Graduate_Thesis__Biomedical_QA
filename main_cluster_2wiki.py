@@ -5,7 +5,7 @@ from src.decomposition import decompose_question_parallel, decompose_question_se
 from src.retrieval import retrieve_evidence, remove_retrieve_evidence, remove_entity_evidence, remove_specific_references
 from src.extract_ner import extract_entities_from_evidence
 from src.generate_answer import generate_combine_parallel_answers, _generate_answer
-from src.candidate_cluster_ct6 import process_get_final_answer
+from src.candidate_cluster_ct6_no_zeroshot import process_get_final_answer
 from utils.util import *
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.models import StaticEmbedding
@@ -24,6 +24,7 @@ extractor_model = None
 
 # mapping_data_answer = load_json('data/mapping_answer_gol.json')
 mapping_data_answer = {}
+cache_ctx_2wiki_embed_doc = load_json(r'2wiki\cache\embedding\embedding_cache_ctx_original.json')
 
 def reset_directory(dir_path: str):
     """
@@ -84,7 +85,7 @@ def load_model(dataset, configs, using_embedding_model=False):
     else:
         raise ValueError(f"Unsupported dataset: {dataset}")
 
-def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, type_q=None,
+def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, type_q=None,target_ans_type=None,
             using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False,
             question_type_to_ner=None, using_prompt_yn=False, file_cache_o3_zeroshot=None, KB=""):
     
@@ -116,10 +117,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
         dict_ans = {
             "QIDX": sample_id,
             "original_question": original_question,
-            "type_q": sample['type_q'],
-            # "focus_spacy_based_entity_label": focus_spacy_based_entity_label,
-            # "target_answer_type": target_ans_type,
-            "key_entities": list_ner_q
+            "type_q": sample['type'],
         }
 
     all_context = ""
@@ -145,6 +143,9 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
             path_i = str(path_i)
             subq_output = path_output[path_i]
             
+            if path_i != "0":
+                break
+            
             if path_i not in dict_ans[q_i]:
                 dict_ans[q_i][path_i] = {}
              
@@ -152,46 +153,35 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                 long_ans = ""
                 for step, item in subq_output.items():
                     step = str(step)
+                    
+                    if step != "0":
+                        break
+                    
                     subquestion = item['subquestion']
-                    search_kw_subq = item['search_keyword'] 
-                    target_ans_type = item['target_answer_type']
-                    
-                    if target_ans_type == 'correctness': # YES/NO
-                        using_prompt_yn = True
-                    else:
-                        using_prompt_yn = False
-                    
+                    search_kw_subq = item['search_keyword']                     
+                    key_entity = item['key_entity']
                     search_kw_subq_retrieval = search_kw_subq + f" {short_ans}"
+                    
+                    if key_entity != "":
+                        list_ner_q.append(key_entity)
+                        extracted_entities = key_entity
+                    else:
+                        extracted_entities = short_ans
+                        
                     if short_ans != "":
                         if short_ans.lower() not in list_ner_q:
                             list_ner_q.append(short_ans.lower())
-                
-                    if dataset == "wiki":
-                        focus_spacy_based_entity_label = item['focus_spacy_based_entity_label']   
-                                            
+                        
                     if step not in dict_ans[q_i][path_i]:
                         dict_ans[q_i][path_i][step] = {} 
-                    
-                    
-                    if has_extract_ner: 
-                        # focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
-                        if target_ans_type in question_type_to_ner:
-                            focus_spacy_based_entity_label = question_type_to_ner[target_ans_type]                                
-                        else: #Other
-                            focus_spacy_based_entity_label = ["DISEASE", "CHEMICAL"]  
-
-                        extracted_entities = extract_entities_from_evidence(extractor_model, extractor_model_2, extractor_model_3, 
-                                                    search_kw_subq_retrieval, focus_spacy_based_entity_label)                         
-                    else:
-                        focus_spacy_based_entity_label = None
-                        extracted_entities = ""
                         
                     # kmean doc search - found crawl wiki|ner docs
                     cluster_docs_ctx = retrieve_evidence(list_ner_q, sample, search_kw_subq_retrieval, settings,
-                                                                target_ans_type, embedding_model, embedding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache)  
+                            target_ans_type, embedding_model, embedding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache, cache_ctx_2wiki_embed_doc)  
                     cluster_output = {}
-                    for cluster_label, sample_cluster in cluster_docs_ctx.items():
-                        context = "\n".join(sample_cluster['docs']) + " " + "\n".join(sample_cluster['crawl_doc'])                                                             
+                    for cluster_label, sample_doc_cluster in cluster_docs_ctx.items():
+                        context = "\n ".join(sample_doc_cluster)
+                                                                            
                         genered_answer = _generate_answer(subquestion, search_kw_subq_retrieval, extracted_entities, context, dataset, type_q, target_ans_type,
                                                     using_target_type, using_gen_old, has_extract_ner, using_prompt_yn)
                     
@@ -208,19 +198,20 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     dict_ans[q_i][path_i][step]["question"] = subquestion
                     dict_ans[q_i][path_i][step]["search_keyword"] = search_kw_subq    
                     dict_ans[q_i][path_i][step]["final_answer"] = final_answer 
-                    dict_ans[q_i][path_i][step]["target_answer_type"] = target_ans_type  
-                    dict_ans[q_i][path_i][step]["focus_spacy_based_entity_label"] = focus_spacy_based_entity_label      
                     dict_ans[q_i][path_i][step]["cluster_genered_answer"] = cluster_output
                     dict_ans[q_i][path_i][step]["retrieval_information"] = cluster_docs_ctx
            
 
-            dict_ans[q_i]['final_qi']["question"] = question
-            dict_ans[q_i]['final_qi']["short_answer"] = short_ans
-            dict_ans[q_i]['final_qi']["long_answer"] = long_ans
+            # dict_ans[q_i]['final_qi']["question"] = question
+            # dict_ans[q_i]['final_qi']["short_answer"] = short_ans
+            # dict_ans[q_i]['final_qi']["long_answer"] = long_ans
                 
        
-        all_context += f"{q_i}.{question} - {dict_ans[q_i]['final_qi']['short_answer']}, {dict_ans[q_i]['final_qi']['long_answer']}\n\n"
+        # all_context += f"{q_i}.{question} - {dict_ans[q_i]['final_qi']['short_answer']}, {dict_ans[q_i]['final_qi']['long_answer']}\n\n"
     
+    save_json(dict_ans, file_all_ans)
+    print(f"\nSaved to {file_all_ans}")    
+    return
 
     if n_qi > 1:
         combine_parallel_ans = generate_combine_parallel_answers(original_question, all_context, dataset=dataset, model="o3-mini")
@@ -244,11 +235,14 @@ if __name__ == "__main__":
     
     #edit config
     KB="2WIKI" # Answer2, ...
-    threads = [0, 200] 
+    data_type = "compositional"
+    threads = [0, 1000] 
     # configs['run']['threads'] 
     dataset = 'wiki' #configs['run']['dataset']
-    data_type = configs['run']['data_split']  
-        
+    # data_type = configs['run']['data_split']  
+    
+    
+    
     settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
     raw_data_file = configs['dataset'][dataset][data_type]
@@ -260,8 +254,6 @@ if __name__ == "__main__":
     # reset_directory(r"data/cache/filter_wikipedia")
     load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
 
-    metadata = load_json('data/metadata_medhop.json')
-    meta_ner = load_json(r'data/metadata_entity.json') 
     cnt = 0
     
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
@@ -270,15 +262,8 @@ if __name__ == "__main__":
         
         qidx = sample['QIDX']
         question = sample['Question']
-        type_q = metadata[qidx]['type_q']    
-        
-        #CONFIG    
-        if type_q != "sequence":# "sequence": # "parallel":
-            continue
-        else:
-            cnt += 1
-    
-        sample['type_q'] = type_q        
+        type_q = sample['type']    
+                    
         if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False
         else:
@@ -287,13 +272,12 @@ if __name__ == "__main__":
        
         question_type_to_ner = {}  
         
-        dict_ner_q = meta_ner[qidx]['entities_q'].get('detail', {})
-        list_ner_q = list(dict_ner_q.keys())
+        list_ner_q = []
         
-        file_cache_o3_zeroshot = configs['cache']['zeroshot'][type_q] # direct, sequence, parallel
+        file_cache_o3_zeroshot = configs['cache']['zeroshot']['wiki'] # direct, sequence, parallel
         
         preprocess_sample(list_ner_q, sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
-            using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=False,
+            using_target_type=False, using_gen_old=True, has_extract_ner=False, using_decomp_new=True,
             question_type_to_ner=question_type_to_ner, file_cache_o3_zeroshot=file_cache_o3_zeroshot, KB=KB)
         
     print(cnt)

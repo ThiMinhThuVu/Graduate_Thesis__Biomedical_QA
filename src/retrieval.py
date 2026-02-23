@@ -6,7 +6,8 @@ from utils.util import *
 from utils.hash import register_query_cache, make_cache_filename, normalize_query
 from utils.get_section_priority_crawl import *
 from sklearn.cluster import KMeans
-
+import numpy as np
+        
 import re
 import os
 import math
@@ -841,20 +842,72 @@ def cluster_per_qid_search_api(doc_sources, crawl_data_wikipedia, embeding_model
 
     return output_dict
 
+def kmean_context_2wiki(list_article, cache_ctx_2wiki_embed_doc, embeding_model_cluster, n_cluster=3):
+        """
+        Phân cụm KMeans cho các doc trong list_article với k=3.
+        - list_article: danh sách các doc (chuỗi)
+        - cache_ctx_2wiki_embed_doc: dict chứa embedding đã tính cho từng doc (hash_id)
+        - embeding_model_cluster: model embedding
+        Trả về dict: {label: {docs, embeddings, centroid}}
+        """
+        docs = []
+        embeddings = []
+
+        for idx, item in enumerate(list_article, 1):
+            # item: tuple (title, sentences)
+            title = str(item[0]).strip().lower()
+            sentences = item[1]
+            full_doc = " ".join(sentences)
+            hash_id = make_cache_filename(title)
+            
+            ref_doc = f"-Reference: [DOC {idx}] - Information about: {title}: {full_doc}"
+            docs.append(ref_doc)
+            
+            # Lấy embedding từ cache nếu có, nếu không thì tính
+            if hash_id in cache_ctx_2wiki_embed_doc:
+                emb = cache_ctx_2wiki_embed_doc[hash_id]["embedding"]
+            else:
+                emb = embeding_model_cluster.encode([full_doc])[0]
+                emb = emb.tolist() if isinstance(emb, np.ndarray) else emb
+                
+            embeddings.append(emb)
+
+        embeddings_np = np.array(embeddings)
+        k = min(n_cluster, len(embeddings_np))
+        
+        if k < 2:
+            labels = [0] * len(embeddings_np)
+        else:
+            kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)
+            labels = kmeans.fit_predict(embeddings_np)
+            labels = labels.tolist()
+
+        # Gom doc theo từng label, chỉ trả về docs cho mỗi cluster
+        cluster_docs = {}
+        for label, doc in zip(labels, docs):
+            if label not in cluster_docs:
+                cluster_docs[label] = []
+            cluster_docs[label].append(doc)
+
+        return cluster_docs
+    
+
 def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer_type,
-        embedding_model, embeding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache):    
+        embedding_model, embeding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache, cache_ctx_2wiki_embed_doc):    
     retrieval_topk = settings['retrieval_topk']
     max_results_gg = retrieval_topk['max_results_search_api_gg']
     max_results_wiki = retrieval_topk['max_results_search_api_wiki']
     hash_id, hash_id_cache = register_query_cache(search_kw_subq, hash_id_cache, file_cache_index=settings['cache']['hash_id']['retrieval'])
     cache_filepath_retrieval = f"{settings['cache']['retrieval']}/{hash_id}" 
-    cache_embed_doc = load_json(settings['cache']['embed_crawl'])
+    
     
     list_article_search = []
     
     if settings['get_context_2wiki']: #Only 2wiki dataset
-        list_article_2wiki = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
-            
+        # list_article_2wiki = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
+        cluster_kmean_ctx_2wiki = kmean_context_2wiki(sample['context'], cache_ctx_2wiki_embed_doc, embeding_model_cluster, n_cluster=3)
+        return cluster_kmean_ctx_2wiki
+    
     if settings['get_gg']:
         print("Retrieval_path: ", cache_filepath_retrieval)
         results_gg_search = retrieval_google(search_kw_subq, cache_filepath_retrieval, max_results=max_results_gg)            
@@ -872,7 +925,8 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
        
     
 
-    if settings['get_crawl_wiki']:
+    if settings['get_crawl_wiki'] and settings['get_ner_wiki']:
+        cache_embed_doc = load_json(settings['cache']['embed_crawl'])
         results_wiki_search = retrieval_wiki(search_kw_subq, cache_filepath_retrieval, max_results=max_results_wiki)
         
         crawl_wiki_context_embed = crawl_wiki_page_general(
@@ -893,7 +947,6 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
             max_token=retrieval_topk['crawl_max_token'],
         )
    
-    if settings['get_ner_wiki']:
         cache_entity = load_json(settings['cache']['hash_id']['crawl_ner'])
         ner_articles = []
 
@@ -922,9 +975,11 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
             percentage=None,
             get_ner=True
         )
-     
-    ctx_doc_search_fond_nbh = cluster_per_qid_search_api(list_article_search,crawl_wiki_context_embed+crawl_ner_wiki_embed, embeding_model_cluster)
+    
+        ctx_doc_search_fond_nbh = cluster_per_qid_search_api(list_article_search,crawl_wiki_context_embed+crawl_ner_wiki_embed, embeding_model_cluster)
 
+        return ctx_doc_search_fond_nbh
+    
     if settings["get_sparql_context"]: 
         file_cache_hash_id_sparql = settings['cache']['hash_id']['crawl_wikidata']
         # Load hoặc khởi tạo cache mapping cho SPARQL
@@ -944,9 +999,8 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
             file_cache_hash_id_sparql=file_cache_hash_id_sparql
         )
         
-       
-    return ctx_doc_search_fond_nbh
-
+    # return ctx_doc_search_fond_nbh
+    return cluster_kmean_ctx_2wiki
 
 def remove_retrieve_evidence(current_retrieval: str, current_short: str):
     if not isinstance(current_retrieval, str) or not isinstance(current_short, str):

@@ -313,6 +313,8 @@ def remove_sentence_containing_answer(ans, context):
     return result_context.strip()
     
 def load_json(file_path):
+    # if not os.path.exists(file_path):
+    #     return {}
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 

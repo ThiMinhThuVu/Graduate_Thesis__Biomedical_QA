@@ -1350,7 +1350,17 @@ Answer the following question based on the provided information.
 ### Answer Logic
 - **Yes/No Questions**: Return "Yes" or "No"
 - **Identity Questions**: Identify the person or entity matching the role/description and return their name as found in context
-- **Insufficient Info**: If the information is missing, return exactly "Insufficient information"
+
+### CASE A: Answer Found In Context
+- If the Context DOES contain the answer:
+    - **short_answer**: Strictly follow the "Answer Logic" rules above.
+    - **long_answer**: The Context is concatenated from different references. Each has a reference ID before the reference text in the format `[SOURCE_NUMBER]` (e.g., [GG_1], [WIKI_2], [CRAWL_1]). 
+      Format STRICTLY as: "[reference ID1], [reference ID2], ... Explanation: [Detailed explanation based on the information]".
+
+### CASE B: Insufficient Information
+- If the provided Context does NOT contain the specific information needed to answer the question:
+    - **short_answer**: Return "Insufficient information".
+    - **long_answer**: Do NOT hallucinate. Explain why the question cannot be answered based on the provided context.
 
 ## Constraints
 - MUST: Provide ONLY the JSON object
@@ -1362,76 +1372,97 @@ Question: {question}
 Key entities: {key_entities}
 Context: {context}
 
-## Output Format (JSON)
+## Output Format (Strict JSON)
 {{
-    "long_answer": "Detailed reasoning explaining how the answer was derived",
-    "short_answer": "The most direct answer from the context"
+    "short_answer": "short answer as per rules or 'Insufficient information'",
+    "long_answer": "[reference ID1], [reference ID2], ... Explanation: [Detailed explanation showing how the answer was derived]"
 }}
 """
     elif type_q == "inference":
         prompt = f"""## Role
-You are an expert in historical and genealogical analysis
+You are an expert in historical and genealogical analysis.
 
 ## Task
-Answer the question by identifying the correct person and precisely formatting their name and titles
+Answer the question by identifying the correct person and precisely formatting their name and titles based ONLY on the provided context.
 
-## Instructions
-1. Analyze the context to find the requested person
-2. Construct their full name and titles following the specific rules for royal/noble figures
-3. Split the resulting answer into prefix, name, and suffix components
+## Logic Flow: Case Analysis
+Analyze the Context to determine which case applies:
 
-## Rules
+### CASE A: Answer Found In Context
+- If the Context DOES contain the answer:
+    - **short_answer**: Full formatted answer string (Prefix + Name + Suffix).
+    - **long_answer**: The Context is concatenated from different references. Each has a reference ID before the reference text in the format `[SOURCE_NUMBER]` (e.g., [GG_1], [WIKI_2], [CRAWL_1]). 
+      Format STRICTLY as: "[reference ID1], [reference ID2], ... Explanation: [Detailed explanation showing the derivation of the identity and titles]."
+    - **Fields**: Fill `prefix`, `name`, and `suffix` according to the "Name Formatting Rules".
+
+### CASE B: Insufficient Information
+- If the provided Context does NOT contain the specific information needed to answer the question:
+    - **short_answer**: Return "Insufficient information".
+    - **long_answer**: Do NOT hallucinate. Explain why the question cannot be answered based on the provided context.
+    - **Fields**: Set `name` to "Insufficient information", set `prefix` and `suffix` to "NAN".
+
+## Name Formatting Rules (For CASE A)
 ### Rule 1: Royal & Noble Figures
-- **Start with**: Full name and regnal number
-- **Include**: Hereditary titles, noble/royal prefixes (King, Queen, Duke, Sir, etc.)
-- **Exclude**: Territorial designations based ONLY on land ownership
-- **Parentheses**: Do not include parentheses, but use their content for extraction
+- **Core Name**: Full name and regnal number.
+- **Prefix**: Include hereditary titles, noble/royal prefixes (King, Queen, Duke, Sir, etc.).
+- **Suffix**: Include post-nominals or secondary titles.
+- **Exclude**: Territorial designations based ONLY on land ownership.
+- **Parentheses**: Do not include parentheses in the output, but use their content for extraction.
 
 ### Rule 2: Non-Royal Figures
-- Provide the single most direct answer found in the context
-
-### Rule 3: Insufficient Information
-- If the answer is missing, use "Insufficient information" for both the short_answer and the name field. Set prefix and suffix to "NAN"
+- Provide the single most direct answer found in the context. Split into prefix, name, and suffix where applicable.
 
 ## Constraints
-- MUST: Your response must be ONLY the JSON object
-- MUST NOT: Include commentary outside the JSON
-- MUST: Follow the name splitting rules precisely
+- MUST: Your response must be ONLY the JSON object.
+- MUST NOT: Include commentary outside the JSON.
+- MUST: Follow the name splitting rules (prefix, name, suffix) precisely.
 
 ## Information
 Question: {question}
 Key entities: {key_entities}
 Context: {context}
 
-## Output Format (JSON)
+## Output Format (Strict JSON)
 {{
-    "long_answer": "detailed explanation showing the derivation",
-    "short_answer": "full answer string as per rules",
-    "prefix": "titles before name or NAN",
-    "name": "core personal name and regnal number",
-    "suffix": "titles or post-nominals after name or NAN"
+    "short_answer": "full answer string OR 'Insufficient information'",
+    "long_answer": "[reference ID1], [reference ID2], ... Explanation: [Detailed reasoning]",
+    "prefix": "titles before name or 'NAN'",
+    "name": "core personal name and regnal number or 'Insufficient information'",
+    "suffix": "titles or post-nominals after name or 'NAN'"
 }}
 """
-    elif type_q == "compositional":        
+    elif type_q == "compositional":  
         prompt = f"""## Role
-You are an expert intelligence analyst
+You are an expert intelligence analyst.
 
 ## Task
-Synthesize information across multiple documents to provide the single most probable answer to the question
+Synthesize information across multiple documents to provide the single most probable answer to the question based ONLY on the provided context.
 
 ## Instructions
-1. **Context Synthesis**: Read ALL provided documents and connect information across them
-2. **Entity Resolution**: Treat synonyms or alternate names as the same entity
-3. **Evidence Priority**: Decide if the answer is Explicit (stated) or Inferred (logical deduction). Use explicit evidence first
-4. **Mandatory Inference**: If no explicit answer exists, you are REQUIRED to infer from strong clues (residence, professional role, nationality fallback)
+1. **Context Synthesis**: Read ALL provided documents and connect information across them.
+2. **Entity Resolution**: Treat synonyms or alternate names as the same entity.
+3. **Evidence Priority**: Decide if the answer is Explicit or Inferred. Use explicit evidence first.
+4. **Mandatory Inference**: If no explicit answer exists, you are REQUIRED to infer from strong clues (residence, professional role, nationality fallback).
 
 ## Rules
+### CASE A: Answer Found or Inferable
+- If the Context contains the answer or enough clues to infer it:
+    - **short_answer**: Strictly follow the "Intelligence Formatting Rules" below.
+    - **long_answer**: The Context is concatenated from different references. Each has a reference ID before the reference text in the format `[SOURCE_NUMBER]` (e.g., [GG_1], [WIKI_2]). 
+      Format STRICTLY as: "[reference ID1], [reference ID2], ... Explanation: [Complete reasoning clearly stating if explicit or inferred, citing specific clues used]."
+
+### CASE B: Insufficient Information
+- If the provided Context does NOT contain any specific information or strong clues to answer the question:
+    - **short_answer**: Return "Insufficient information".
+    - **long_answer**: Do NOT hallucinate. Explain why the question cannot be answered based on the provided context.
+
+## Intelligence Formatting Rules (For CASE A)
 ### Location Questions
-- Return the MOST SPECIFIC location available (city/town > state/province > country)
-- If birthplace/death place is missing, use nationality (country) as a fallback and mark as inferred
+- Return the MOST SPECIFIC location available (city/town > state/province > country).
+- If birthplace/death place is missing, use nationality (country) as a fallback and mark as inferred.
 
 ### Category Questions
-- Choose the broadest applicable category (e.g., "cancer" not "bowel cancer")
+- Choose the broadest applicable category (e.g., "cancer" not "bowel cancer").
 
 ### Nationality Formatting
 - "X-born Y" → answer "X"
@@ -1439,22 +1470,22 @@ Synthesize information across multiple documents to provide the single most prob
 - "X Y" nationality → answer "Y"
 
 ## Constraints
-- MUST: Select ONLY the single most probable answer
-- MUST NOT: Generate names of locations (cities, regions, countries) NOT present in the context
-- MUST NOT: Add any additional commentary outside the JSON
+- MUST: Select ONLY the single most probable answer.
+- MUST NOT: Generate names of locations (cities, regions, countries) NOT present in the context.
+- MUST NOT: Add any additional commentary outside the JSON.
 
 ## Information
 Question: {question}
 Key entities: {key_entities}
 Context: {context}
 
-## Output Format (JSON)
+## Output Format (Strict JSON)
 {{
-    "long_answer": "Complete reasoning clearly stating if explicit or inferred, citing specific clues/documents used",
-    "short_answer": "The single most probable answer following the formatting rules"
+    "short_answer": "The single most probable answer OR 'Insufficient information'",
+    "long_answer": "[reference ID1], [reference ID2], ... Explanation: [Detailed reasoning deriving the answer]"
 }}
 """
-          
+      
     return prompt
 
 
