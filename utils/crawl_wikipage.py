@@ -225,24 +225,24 @@ if __name__ == "__main__":
     # wiki_url = "https://en.wikipedia.org/wiki/13q_deletion_syndrome"
     # wiki_url =  "https://en.wikipedia.org/wiki/Race_(human_categorization)"
     # wiki_url = "https://en.wikipedia.org/wiki/Puberty"
-    # # wiki_url = "https://en.wikipedia.org/wiki/STAC3"
-    # wiki_file_crawl = "wiki_crawl.json"
-    # content = crawl_wikipedia_page(wiki_url)
-    # print(content["sections"].keys())
-    # save_json(content, wiki_file_crawl)
+    wiki_url = 'https://en.wikipedia.org/wiki/Timeline_of_disability_rights_outside_the_United_States'
+    wiki_file_crawl = "wiki_crawl.json"
+    content = crawl_wikipedia_page(wiki_url)
+    print(content["sections"].keys())
+    save_json(content, wiki_file_crawl)
     
     
-    with open('data/cache/IR_20_search_results.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
+    # with open('data/cache/IR_20_search_results.json', 'r', encoding='utf-8') as f:
+    #     data = json.load(f)
 
-    new_data = {}
-    for link, item in data.items():
+    # new_data = {}
+    # for link, item in data.items():
         
-        norm_link = normalize_query(link)
-        netloc = urlparse(norm_link).netloc
-        lang = netloc.split('.')[0] if netloc.endswith('wikipedia.org') else ''
-        item['language'] = lang
-        new_data[norm_link] = item
+    #     norm_link = normalize_query(link)
+    #     netloc = urlparse(norm_link).netloc
+    #     lang = netloc.split('.')[0] if netloc.endswith('wikipedia.org') else ''
+    #     item['language'] = lang
+    #     new_data[norm_link] = item
 
-    with open('data/cache/IR_20_search_results.json', 'w', encoding='utf-8') as f:
-        json.dump(new_data, f, ensure_ascii=False, indent=2)
+    # with open('data/cache/IR_20_search_results.json', 'w', encoding='utf-8') as f:
+    #     json.dump(new_data, f, ensure_ascii=False, indent=2)

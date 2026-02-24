@@ -418,7 +418,8 @@ def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_typ
         
     if final_output == 'not selected':
         return {
-                "status_cluster": 'not selected',
+                "short_answer": "HELLO THU",
+                "long_answer": "HELLO THU",
                 "selection_status": "zero-shot_fallback",
                 "cluster_score": None
             }
@@ -470,18 +471,4 @@ def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_typ
     
     return final_output
 
-  
-def load_pubmed_model():
-    print("Loading embedding model (PubMedBERT)...")
     
-    return SentenceTransformer("pritamdeka/S-BioBert-snli-multinli-stsb",device="cpu")
-  
-    
-if __name__ == '__main__':
-    # Khởi tạo model một lần duy nhất
-    global_model = load_pubmed_model()
-    mapping = load_json('data/mapping_answer_gol.json')
-    
-    # Giả sử có dữ liệu mẫu
-    # res = process_get_final_answer(q, cluster, mapping, global_model)
-      

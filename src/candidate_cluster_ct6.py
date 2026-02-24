@@ -187,11 +187,13 @@ def collect_candidates(raw_clusters, mapping_data):
             continue
 
         # Chuẩn hóa answer
-        if ans in mapping_data:
-            norm_ans = mapping_data[ans]
-        else:
-            norm_ans = postprocessing(ans)
-            norm_ans = mapping_data.get(norm_ans, norm_ans)
+        # if ans in mapping_data:
+        #     norm_ans = mapping_data[ans]
+        # else:
+        #     norm_ans = postprocessing(ans)
+        #     norm_ans = mapping_data.get(norm_ans, norm_ans)
+        
+        norm_ans = postprocessing(ans)
         
         # Trích xuất nguồn và phân loại
         raw_sources = extract_references(long_answer)

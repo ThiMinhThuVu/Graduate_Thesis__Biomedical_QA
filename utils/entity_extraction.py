@@ -55,8 +55,16 @@ def extract_quoted_strings(text: str):
     matches = re.findall(pattern, text)
     return [m[0] if m[0] else m[1] for m in matches]
 
-data1 = load_json(r'data\get_entity_from_question_spacy_parallel_seq.json')
-data2 = load_json(r'data\entity_extraction_results_LLM.json')
+# data1 = load_json(r'data\get_entity_from_question_spacy_parallel_seq.json')
+# data2 = load_json(r'data\entity_extraction_results_LLM.json')
+
+data1 = load_json(r'data\get_entity_9000q.json')
+data2 = load_json(r'data\ner\LLM\LLM_entity_9000q_1.json')
+data3 = load_json(r'data\ner\LLM\LLM_entity_9000q_2.json')
+data4 = load_json(r'data\ner\LLM\LLM_entity_9000q_3.json')
+data2.update(data3)
+data2.update(data4)
+
 
 data_search = []
 data_search_lower = []
@@ -67,11 +75,11 @@ OUTPUT_TXT = "output_entities.txt"
 
 merge_dict = copy.copy(data1)
 for qidx in data1:
-    question = data1[qidx]["original question"]
+    question = data1[qidx]["original_question"]
 
     arr = get_longest_capitalized_substrings(question)
-    if len(arr) > 0:
-        print('hello')
+    # if len(arr) > 0:
+    #     print('hello')
 
     for tmp in get_longest_capitalized_substrings(question):
         data1[qidx]["entities_q"]["detail"][tmp] = {
@@ -80,8 +88,8 @@ for qidx in data1:
             "source": ['custom']
         }
     
-    if len(get_longest_capitalized_substrings(question)) > 0:
-        print(get_longest_capitalized_substrings(question))
+    # if len(get_longest_capitalized_substrings(question)) > 0:
+    #     print(get_longest_capitalized_substrings(question))
 
     for tmp in extract_quoted_strings(question):
         data1[qidx]["entities_q"]["detail"][tmp] = {
@@ -92,9 +100,12 @@ for qidx in data1:
 
 
     extracted_entities = []
-    for tmp in data2:
-        if qidx == tmp['id']:
-            extracted_entities = json.loads(tmp['extracted_entities'])
+    for qid, tmp in data2.items():
+        # print(qidx)
+        # print(tmp)
+        if str(qidx) == str(tmp['id']):
+            # extracted_entities = json.loads(tmp['extracted_entities'])
+            extracted_entities = tmp['extracted_entities']
             for extract_entity in extracted_entities:
                 if len(extract_entity.split(' ')) < 2 and extract_entity not in data1[qidx]["entities_q"]["detail"]:
                     continue
@@ -162,11 +173,11 @@ for qidx in data1:
         if entity_in_entity:
             continue
 
-        if (
-            entity.lower() == data1[qidx]["target_answer_type"].lower()
-            and len(entity.split(' ')) <= 1
-        ):
-            continue
+        # if (
+        #     entity.lower() == data1[qidx]["target_answer_type"].lower()
+        #     and len(entity.split(' ')) <= 1
+        # ):
+        #     continue
 
         choice = False
 
@@ -179,12 +190,12 @@ for qidx in data1:
             cnt += 1
             
         if choice:
-            if len(get_longest_capitalized_substrings(question)) > 0:
-                print(f"{entity} --- {info['label']} {info['bio_type']} {info['source'][0]}\n")
+            # if len(get_longest_capitalized_substrings(question)) > 0:
+            #     print(f"{entity} --- {info['label']} {info['bio_type']} {info['source'][0]}\n")
 
             printed_array.append(entity)
             if entity.lower() not in data_search_lower:
-                data_search.append(entity)
+                data_search.append(entity.lower())
                 data_search_lower.append(entity.lower())
                 type.append(info['label'])
                 
@@ -195,10 +206,16 @@ for qidx in data1:
                 }
 
 data_search_sorted = sorted(data_search, key=str.lower)
-save_json(data_search_sorted, r'data\ner\data_search.json')
+search_spacy = load_json(r'data\entity_spacy_9000.json')
+
+search_update = list(set(data_search_sorted)-set(search_spacy))
+save_json(search_update, r'data\ner\data_search_9000_2.json')
+
+# save_json(data_search_sorted, r'data\ner\data_search_9000.json')
+
 
 # save_json(result_dict, 'dict_filter_entity_extraction.json')
 
-save_json(merge_dict, r'data\ner\entity_extraction_merge.json')
+save_json(merge_dict, r'data\ner\entity_extraction_merge_9000.json')
 
 print(f"✅ Done. Saved to {OUTPUT_TXT}")

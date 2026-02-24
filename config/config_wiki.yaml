@@ -1,7 +1,7 @@
 run: #NHỚ SỬA LẠI MAX_CANDIDATES CHO cái multiplechoice
   dataset: "wiki" #"medhop" #"wiki"
   threads: [0, 1000]
-  data_split: "compositional"
+  data_split: "inference"
 
 type_run: {
       "dataset": "{dataset}_", 

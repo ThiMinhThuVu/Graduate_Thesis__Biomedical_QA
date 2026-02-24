@@ -4,8 +4,12 @@ import time
 import re
 from pathlib import Path
 from typing import Optional, Dict, List
+import sys
+import os
 
 from prompt_target_ans_type import load_batch_target_answer_type_prompt
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+
 from src.gpt_request import request_api
 
 

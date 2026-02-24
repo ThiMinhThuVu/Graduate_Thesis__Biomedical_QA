@@ -12,7 +12,7 @@ import re
 import os
 import math
 
-def retrieval_google(search_kw, filepath, max_results=10):
+def retrieval_google(search_kw, filepath, max_results=20):
     if os.path.exists(filepath):
         output = load_json(filepath)
         if 'google' in output:
@@ -369,7 +369,7 @@ def get_paragraphs_wiki_result_with_sec(link, sample, subquestion, target_answer
 
 
 def normalize_query(query: str) -> str:
-    return " ".join(query.lower().strip().split())
+    return query.lower().strip()
 
 def retrieval_context_2wiki(search_kw, sample, embedding_model, vec_embed=False, top_k=1, cos_threshold=0.7, fuzz_threshold=0.7, vecembed_threshold=0.45):
     search_kw = search_kw.lower()
@@ -495,7 +495,7 @@ def crawl_wiki_page_general(
     for article in article_iterable:
 
         hash_id = get_hash_id_func(article)
-        link = get_link_func(article)
+        link = get_link_func(article).lower()
         title = get_title_func(article)
         
         if 'list of' in link or 'lists of' in link or 'wikiroject' in link or 'wikipedia talk' in link:
@@ -506,11 +506,11 @@ def crawl_wiki_page_general(
 
         file_crawl = f"{cache_crawl_base}/{hash_id}"
         file_filter = f"{cache_filter_base}/{hash_id}"
-
+        
         crawled_data = None
         raw_context = None
         filter_context = None
-
+        # print(file_crawl)
         if os.path.exists(file_crawl):
             crawl_wiki = load_json(file_crawl)
             crawled_data = crawl_wiki.get(
@@ -893,7 +893,7 @@ def kmean_context_2wiki(list_article, cache_ctx_2wiki_embed_doc, embeding_model_
     
 
 def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer_type,
-        embedding_model, embeding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache, cache_ctx_2wiki_embed_doc):    
+        embedding_model, embeding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache, cache_ctx_2wiki_embed_doc=None):    
     retrieval_topk = settings['retrieval_topk']
     max_results_gg = retrieval_topk['max_results_search_api_gg']
     max_results_wiki = retrieval_topk['max_results_search_api_wiki']
@@ -932,7 +932,7 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
         crawl_wiki_context_embed = crawl_wiki_page_general(
             search_kw_subq,
             results_wiki_search,  # iterable là list kết quả search
-            get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),
+            get_hash_id_func=lambda article: hash_id_crawl_wiki_cache.get(normalize_query(article['link']), None),#make_cache_filename(article['link'])
             get_link_func=lambda article: normalize_query(article['link']),
             get_title_func=lambda article: article.get('title', ''),
             cache_crawl_base=settings['cache']['crawl_wiki'],
@@ -961,7 +961,7 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
             search_kw_subq,
             ner_articles,  # iterable là list các article dict
             get_hash_id_func=lambda article: article.get('hash_id', None),
-            get_link_func=lambda article: article.get('url', None),
+            get_link_func=lambda article: article.get('url', None).lower(),
             get_title_func=lambda article: article.get('title', ''),
             cache_crawl_base=settings['cache']['ner_wiki'],
             cache_filter_base=settings['cache']['filter_ner_wiki'],
@@ -1061,6 +1061,19 @@ def remove_entity_evidence(current_retrieval: str, current_short: str):
 
     return new_retrieval
 if __name__ == "__main__":
-
-    query = "peutz–jeghers syndrome gene variants non-sex chromosomes stk11 gene"
-    retrieval_google(query)
+    # query = "peutz–jeghers syndrome gene variants non-sex chromosomes stk11 gene"
+    # retrieval_google(query)
+    
+    cache_IR20 = "data/cache/IR_20"
+    file_path_cache = r"data\cache\hash_id.json"
+    cache_hashid = load_json(file_path_cache)
+    
+    input_data = load_json()
+    from tqdm import tqdm
+    
+    for qidx, list_searchkw in tqdm(input_data.items(), desc="Processing"):
+        for search_kw in list_searchkw:
+            hashid, cache_hashid = register_query_cache(search_kw, cache_hashid)
+            filepath = f"{cache_IR20}/{hashid}"
+            
+            retrieval_google(search_kw, filepath)

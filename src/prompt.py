@@ -2203,7 +2203,49 @@ Context: {context}
 }}
 """
 
+def get_parallel_answers_combination_prompt_wiki(question, context):
+    """
+    Prompt tối ưu cho việc tổng hợp thực thể và xử lý câu hỏi so sánh 
+    dựa trên logic bao hàm và tương đương ngữ nghĩa.
+    """
+    return f"""## Role
+You are an expert in logical synthesis and entity resolution.
 
+## Task
+Analyze the provided information to determine the correct answer and reconcile sources.
+
+## Instructions
+1. **Analyze the Question Type:** Identify if the question is asking about identity, nationality, location, or any attribute comparison.
+2. **Abstract Entity Resolution:**
+   - **Hierarchy & Specificity:** If two terms represent different levels of specificity (one is a general category and the other is a specific sub-category/hyphenated form), treat them as a match unless the question explicitly asks for a distinction.
+   - **Semantic Equivalence:** Treat aliases, historical names, formal/informal variations, and temporal synonyms as the same entity.
+   - **Consistency Check:** If multiple sources provide information at different "resolutions" (one detailed, one broad), the detailed information supplements the broad one rather than contradicting it.
+
+## Rules
+### Confirmation Questions (Yes/No)
+- **Criteria for "yes":** Return "yes" if the attributes in the context share a common identity, belong to the same taxonomic/categorical hierarchy, or are recognized as synonyms/aliases. 
+- **Subset-Superset Logic:** A match between a general term and its specific variant (subset) must be resolved as "yes" in comparison questions.
+- **Criteria for "no":** Return "no" only if there is a direct, factual contradiction that cannot be reconciled through hierarchy or aliases.
+
+### Choice Questions
+- Return the name of the chosen option extracted EXACTLY from the question.
+
+## Constraints
+- MUST: Provide ONLY the JSON object.
+- MUST NOT: Include commentary outside the JSON.
+
+## Information
+Question: {question}
+Context: {context}
+
+## Output Format (JSON)
+{{
+    "long_answer": "Reasoning that explains the logical reconciliation of entities based on hierarchy or semantic equivalence",
+    "short_answer": "yes/no/option_name"
+}}
+"""
+    
+    
 def get_multiple_choice_selection_prompt(question: str, context: str) -> str:
     """
     Get prompt for selecting answer from multiple choice options.

@@ -19,7 +19,7 @@ from src.prompt import (
     get_answer_generation_type_specific_rules,
     get_answer_generation_output_format,
     get_answer_generation_user_prompt,
-    get_answer_selection_user_prompt,
+    get_parallel_answers_combination_prompt_wiki,
     get_answer_rules_prediction_system_prompt,
     get_answer_rules_prediction_user_prompt
 )
@@ -70,7 +70,10 @@ def _generate_answer(question, search_kw, key_entities, relevant_info, dataset=N
     return result_dict
 
 def generate_combine_parallel_answers(question, context, dataset='wiki', model="o3-mini"):
-    prompt = get_parallel_answers_combination_prompt(question, context)
+    if dataset == 'medhop':
+        prompt = get_parallel_answers_combination_prompt(question, context)
+    else:
+        prompt = get_parallel_answers_combination_prompt_wiki(question, context)
         
     messages = [
         {"role": "system", "content": "You are an expert in general knowledge. Your task is to provide accurate answers based on the provided information. Please only output the choice (without additional explanations)"},

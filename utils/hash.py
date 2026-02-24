@@ -2,7 +2,7 @@ import hashlib
 from utils.util import save_json,load_json
 
 def normalize_query(query: str) -> str:
-    return " ".join(query.lower().strip().split())
+    return query.lower().strip()
 
 def hash_query(query: str, hash_len: int = 32) -> str:
     """
@@ -20,7 +20,8 @@ def register_query_cache(query: str, cache_index: dict, file_cache_index="data/c
     Register query into cache dict.
     Return cache filename.
     """
-    query = normalize_query(query.lower())
+    # query = normalize_query(query.lower())
+    query = query.lower().strip()
     if query in cache_index:
         return cache_index[query], cache_index
 
