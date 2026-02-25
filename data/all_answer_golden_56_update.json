@@ -232,7 +232,8 @@
         ],
         "False": [
             "",
-            "cutis marmorata"
+            "cutis marmorata",
+            "cutis marmorata congenita"
         ]
     },
     "570726": {
@@ -1081,7 +1082,8 @@
         "False": [
             "spleen",
             "",
-            "the spleen"
+            "the spleen",
+            "lymph node"
         ]
     },
     "648793": {
@@ -2900,7 +2902,8 @@
             "pnkd",
             "pnkd-l isoform",
             "",
-            "brain-specific c3g isoform"
+            "brain-specific c3g isoform",
+            "long form"
         ]
     },
     "819301": {
@@ -2940,7 +2943,8 @@
             "x-linked cleft palate with or without ankyloglossia",
             "x-linked cleft palate and ankyloglossia",
             "x-linked cleft palate with ankyloglossia",
-            ""
+            "",
+            "x-linked cpx syndrome"
         ]
     },
     "216561": {
@@ -3338,7 +3342,8 @@
         "False": [
             "distal (terminal) phalanges",
             "",
-            "thumbs, great toes"
+            "thumbs, great toes",
+            "phalanx bone"
         ]
     },
     "585995": {
@@ -3581,7 +3586,8 @@
     "725163": {
         "True": [
             "basan syndrome",
-            "absence of fingerprints-congenital milia syndrome"
+            "absence of fingerprints-congenital milia syndrome",
+            "baird syndrome"
         ],
         "False": [
             "",
@@ -4271,7 +4277,8 @@
     },
     "293751": {
         "True": [
-            "keratin 6a"
+            "keratin 6a",
+            "krt6a"
         ],
         "False": [
             "",
@@ -6246,7 +6253,8 @@
             "atp synthase membrane subunit 6",
             "atp synthase subunit 6",
             "atp synthase f0 subunit 6",
-            ""
+            "",
+            "subunit 6"
         ]
     },
     "166564": {
@@ -6279,7 +6287,8 @@
     "217889": {
         "True": [
             "\niodine-131",
-            "iodine-131"
+            "iodine-131",
+            "i-131"
         ],
         "False": [
             "radioactive iodine (i-131)",
@@ -6303,7 +6312,8 @@
         "False": [
             "x-linked inheritance",
             "x-linked recessive",
-            ""
+            "",
+            "x-linked"
         ]
     },
     "502680": {
@@ -7070,7 +7080,8 @@
             "sanfilippo syndrome b"
         ],
         "False": [
-            ""
+            "",
+            "type b"
         ]
     },
     "547887": {
@@ -7079,7 +7090,8 @@
         ],
         "False": [
             "",
-            "hgsnat"
+            "hgsnat",
+            "type c"
         ]
     },
     "144512": {
@@ -7100,7 +7112,8 @@
             "impaired adipogenesis and defective ciliogenesis",
             "alström syndrome phenotype",
             "",
-            "impairs adipogenesis"
+            "impairs adipogenesis",
+            "defective adipocyte function"
         ]
     },
     "797581": {
@@ -7756,7 +7769,8 @@
     },
     "542627": {
         "True": [
-            "mitochondrion"
+            "mitochondrion",
+            "mitochondria"
         ],
         "False": [
             "",
@@ -8351,7 +8365,8 @@
     },
     "442535": {
         "True": [
-            "chlorophyll"
+            "chlorophyll",
+            "chlorophylls"
         ],
         "False": [
             "chlorophyll molecules",

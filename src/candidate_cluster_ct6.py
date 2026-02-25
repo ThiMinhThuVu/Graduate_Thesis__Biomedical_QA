@@ -438,7 +438,7 @@ def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_typ
             prompt = prompt_zero_shot_medhop_wh(question)
             
         messages = [
-            {"role": "system", "content": "You are a biomedical expert. Your task is to answer a question base on ONLY the provided context"},
+            {"role": "system", "content": "You are a biomedical expert. Your task is to answer questions accurately based on established scientific consensus and your internal medical knowledge. Always output in strict JSON format."},
             {"role": "user", "content": prompt}
         ]  
         result_raw = request_api_o3(messages)

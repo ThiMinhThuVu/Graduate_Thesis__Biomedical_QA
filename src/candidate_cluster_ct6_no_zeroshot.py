@@ -258,7 +258,7 @@ def calculate_gini_adjusted_score(individual_ref_counts, W_MASS = 0.7, W_CONC = 
 
     return (W_MASS * r_sum) + (W_CONC * concentration)
 
-def cluster_and_selected_candidate_YN(cand_list, MIN_SCORE_THRESHOLD=1):
+def cluster_and_selected_candidate_YN(cand_list, MIN_SCORE_THRESHOLD=2):
     if not cand_list:
         return "not selected"
 
@@ -306,7 +306,7 @@ def cluster_and_selected_candidate_YN(cand_list, MIN_SCORE_THRESHOLD=1):
     return result
 
 
-def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=1, DISTANCE_THRESHOLD = 0.12):
+def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, DISTANCE_THRESHOLD = 0.12):
     """
     Đánh giá list candidate của 1 câu hỏi.
     Trả về candidate tốt nhất kèm metadata hoặc "not selected".
