@@ -1,0 +1,51 @@
+{
+    "QIDX": "196089",
+    "original_question": "Are Absent tibia-polydactyly-arachnoid cyst syndrome and Charcot-Marie-Tooth disease caused by the same chromosomal abnormalities?",
+    "type_q": "parallel",
+    "key_entities": [
+        "Absent tibia-polydactyly-arachnoid cyst syndrome",
+        "Charcot-Marie-Tooth disease",
+        "chromosomal",
+        "Are Absent"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What chromosomal abnormalities are associated with Absent tibia-polydactyly-arachnoid cyst syndrome?",
+            "short_answer": "Distal 6q deletion",
+            "long_answer": "All reported individuals with the triad of absent tibia, pre-axial polydactyly and arachnoid (TAC) cyst carry structural abnormalities that remove or disrupt the distal long-arm of chromosome 6 (classically 6q23-q26), including interstitial/terminal 6q deletions or a t(6;13)(q23;q22) translocation. Loss of genes in this distal 6q segment is therefore regarded as the causal chromosomal defect in Absent tibia-polydactyly-arachnoid cyst syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "What chromosomal abnormalities are associated with Absent tibia-polydactyly-arachnoid cyst syndrome?",
+                "search_keyword": "Absent tibia-polydactyly-arachnoid cyst syndrome chromosomal abnormalities",
+                "final_answer": {
+                    "short_answer": "Distal 6q deletion",
+                    "long_answer": "All reported individuals with the triad of absent tibia, pre-axial polydactyly and arachnoid (TAC) cyst carry structural abnormalities that remove or disrupt the distal long-arm of chromosome 6 (classically 6q23-q26), including interstitial/terminal 6q deletions or a t(6;13)(q23;q22) translocation. Loss of genes in this distal 6q segment is therefore regarded as the causal chromosomal defect in Absent tibia-polydactyly-arachnoid cyst syndrome."
+                },
+                "target_answer_type": "chromosomal abnormalities"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What chromosomal abnormalities are associated with Charcot-Marie-Tooth disease?",
+            "short_answer": "Duplication of 17p11.2-p12 (PMP22)",
+            "long_answer": "The commonest form of Charcot-Marie-Tooth disease (CMT1A) is caused by a 1.4-megabase tandem duplication encompassing the PMP22 gene on chromosome 17p11.2-p12. This chromosomal duplication increases PMP22 dosage, leading to the demyelinating peripheral neuropathy characteristic of Charcot-Marie-Tooth disease."
+        },
+        "0": {
+            "0": {
+                "question": "What chromosomal abnormalities are associated with Charcot-Marie-Tooth disease?",
+                "search_keyword": "Charcot-Marie-Tooth disease chromosomal abnormalities",
+                "final_answer": {
+                    "short_answer": "Duplication of 17p11.2-p12 (PMP22)",
+                    "long_answer": "The commonest form of Charcot-Marie-Tooth disease (CMT1A) is caused by a 1.4-megabase tandem duplication encompassing the PMP22 gene on chromosome 17p11.2-p12. This chromosomal duplication increases PMP22 dosage, leading to the demyelinating peripheral neuropathy characteristic of Charcot-Marie-Tooth disease."
+                },
+                "target_answer_type": "chromosomal abnormalities"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Absent tibia-polydactyly-arachnoid cyst syndrome is caused by deletions or disruptions in the distal long arm of chromosome 6 (6q23-q26), while Charcot-Marie-Tooth disease is typically caused by a duplication of the PMP22 gene region on chromosome 17 (17p11.2-p12). Since these alterations involve different chromosomes and distinct genetic defects, they are not caused by the same chromosomal abnormalities.",
+        "short_answer": "no"
+    }
+}

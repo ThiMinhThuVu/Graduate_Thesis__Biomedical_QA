@@ -1,0 +1,40 @@
+{
+    "QIDX": "144512",
+    "original_question": "Is the gene associated with tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome known to be directly involved in limb development?",
+    "type_q": "sequence",
+    "key_entities": [
+        "tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome",
+        "limb development"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is the gene associated with tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome known to be directly involved in limb development?",
+            "short_answer": "yes",
+            "long_answer": "Tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome is most commonly caused by point mutations or micro-duplications within the ZRS enhancer that lies inside the LMBR1 (limb development membrane protein 1) gene on chromosome 7q36. The ZRS regulates sonic hedgehog (SHH) expression in the early limb bud. Disruption of this enhancer, or of the surrounding LMBR1 locus, alters SHH signaling and consequently disturbs anterior-posterior patterning of the limbs, producing tibial aplasia, polydactyly, and triphalangeal thumbs. Because the pathogenic variants act by mis-regulating a key limb patterning pathway, the gene region implicated is regarded as being directly involved in normal limb development. Hence, the statement is supported by well-established genetic and developmental biology evidence."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome?",
+                "search_keyword": "gene associated tibial hemimelia polysyndactyly triphalangeal thumb syndrome",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "The disorder is caused by mutations within the ZRS enhancer that lies inside intron 5 of the LMBR1 gene. Although this enhancer controls Sonic Hedgehog (SHH) signaling in the developing limb, the LMBR1 gene product itself has no demonstrable role in limb patterning. Therefore, the gene associated with tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome is not directly involved in limb development—the phenotype arises from a regulatory element embedded within it rather than from the gene’s own function."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Is that gene known to be directly involved in limb development?",
+                "search_keyword": "gene directly involved limb development",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome is most commonly caused by point mutations or micro-duplications within the ZRS enhancer that lies inside the LMBR1 (limb development membrane protein 1) gene on chromosome 7q36. The ZRS regulates sonic hedgehog (SHH) expression in the early limb bud. Disruption of this enhancer, or of the surrounding LMBR1 locus, alters SHH signaling and consequently disturbs anterior-posterior patterning of the limbs, producing tibial aplasia, polydactyly, and triphalangeal thumbs. Because the pathogenic variants act by mis-regulating a key limb patterning pathway, the gene region implicated is regarded as being directly involved in normal limb development. Hence, the statement is supported by well-established genetic and developmental biology evidence."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome is most commonly caused by point mutations or micro-duplications within the ZRS enhancer that lies inside the LMBR1 (limb development membrane protein 1) gene on chromosome 7q36. The ZRS regulates sonic hedgehog (SHH) expression in the early limb bud. Disruption of this enhancer, or of the surrounding LMBR1 locus, alters SHH signaling and consequently disturbs anterior-posterior patterning of the limbs, producing tibial aplasia, polydactyly, and triphalangeal thumbs. Because the pathogenic variants act by mis-regulating a key limb patterning pathway, the gene region implicated is regarded as being directly involved in normal limb development. Hence, the statement is supported by well-established genetic and developmental biology evidence.",
+        "short_answer": "yes"
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "QIDX": "412837",
+    "original_question": "Which subtype of congenital disorder of glycosylation is caused by a deficiency in the enzyme that catalyzes the interconversion of mannose-6-phosphate and fructose-6-phosphate?",
+    "type_q": "sequence",
+    "key_entities": [
+        "congenital disorder of glycosylation",
+        "fructose-6-phosphate",
+        "mannose-6-phosphate"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which subtype of congenital disorder of glycosylation is caused by a deficiency in the enzyme that catalyzes the interconversion of mannose-6-phosphate and fructose-6-phosphate?",
+            "short_answer": "CDG-Ib",
+            "long_answer": "Phosphomannose isomerase (MPI) converts mannose-6-phosphate to fructose-6-phosphate and vice-versa. Loss of MPI activity disrupts the mannose supply for N-glycan precursor synthesis and causes the subtype known as Congenital Disorder of Glycosylation type Ib (CDG-Ib)."
+        },
+        "0": {
+            "0": {
+                "question": "Which enzyme catalyzes the interconversion of mannose-6-phosphate and fructose-6-phosphate?",
+                "search_keyword": "enzyme interconversion mannose-6-phosphate fructose-6-phosphate",
+                "final_answer": {
+                    "short_answer": "CDG type Ib",
+                    "long_answer": "Deficiency of phosphomannose (mannose-phosphate) isomerase, the enzyme that interconverts mannose-6-phosphate and fructose-6-phosphate, causes congenital disorder of glycosylation type Ib (MPI-CDG). Lack of this enzyme limits mannose-1-phosphate production for dolichol-linked oligosaccharide synthesis, leading to the characteristic hypoglycosylation seen in CDG-Ib."
+                },
+                "target_answer_type": "enzyme"
+            },
+            "1": {
+                "question": "Which subtype of congenital disorder of glycosylation is caused by a deficiency in that enzyme?",
+                "search_keyword": "subtype congenital disorder of glycosylation enzyme deficiency",
+                "final_answer": {
+                    "short_answer": "CDG-Ib",
+                    "long_answer": "Phosphomannose isomerase (MPI) converts mannose-6-phosphate to fructose-6-phosphate and vice-versa. Loss of MPI activity disrupts the mannose supply for N-glycan precursor synthesis and causes the subtype known as Congenital Disorder of Glycosylation type Ib (CDG-Ib)."
+                },
+                "target_answer_type": "subtype"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Phosphomannose isomerase (MPI) converts mannose-6-phosphate to fructose-6-phosphate and vice-versa. Loss of MPI activity disrupts the mannose supply for N-glycan precursor synthesis and causes the subtype known as Congenital Disorder of Glycosylation type Ib (CDG-Ib).",
+        "short_answer": "CDG-Ib"
+    }
+}

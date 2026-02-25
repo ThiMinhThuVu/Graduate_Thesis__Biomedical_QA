@@ -1,0 +1,41 @@
+{
+    "QIDX": "198351",
+    "original_question": "Which G protein-coupled receptor is mutated in the rare genetic disorder characterized by abnormal ossification of the endocrine system and accelerated skeletal maturation?",
+    "type_q": "sequence",
+    "key_entities": [
+        "G protein-coupled receptor",
+        "rare genetic disorder",
+        "endocrine system"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which G protein-coupled receptor is mutated in the rare genetic disorder characterized by abnormal ossification of the endocrine system and accelerated skeletal maturation?",
+            "short_answer": "PTH1R",
+            "long_answer": "Jansen’s metaphyseal chondrodysplasia, a very rare disorder marked by abnormal (ectopic and premature) ossification and markedly accelerated skeletal maturation, is caused by activating mutations in the parathyroid hormone/parathyroid hormone-related peptide receptor 1 (PTH1R), a class B G protein-coupled receptor. Constitutive signaling of mutant PTH1R disrupts normal endochondral bone development, producing the characteristic skeletal abnormalities."
+        },
+        "0": {
+            "0": {
+                "question": "Which rare genetic disorder is characterized by abnormal ossification of the endocrine system and accelerated skeletal maturation?",
+                "search_keyword": "rare genetic disorder abnormal ossification endocrine system accelerated skeletal maturation",
+                "final_answer": {
+                    "short_answer": "PTH1R",
+                    "long_answer": "Blomstrand chondrodysplasia is a rare autosomal-recessive disorder marked by premature, extensive ossification of endocrine glands (e.g., pancreas, adrenal, thyroid) and markedly accelerated skeletal maturation. It is caused by loss-of-function mutations in the parathyroid hormone/parathyroid hormone-related peptide receptor type 1 (PTH1R), a class B G protein-coupled receptor that mediates PTH/PTHrP signaling essential for normal endochondral bone development."
+                },
+                "target_answer_type": "genetic disorder"
+            },
+            "1": {
+                "question": "Which G protein-coupled receptor is mutated in that rare genetic disorder?",
+                "search_keyword": "G protein-coupled receptor mutated rare genetic disorder",
+                "final_answer": {
+                    "short_answer": "PTH1R",
+                    "long_answer": "Jansen’s metaphyseal chondrodysplasia, a very rare disorder marked by abnormal (ectopic and premature) ossification and markedly accelerated skeletal maturation, is caused by activating mutations in the parathyroid hormone/parathyroid hormone-related peptide receptor 1 (PTH1R), a class B G protein-coupled receptor. Constitutive signaling of mutant PTH1R disrupts normal endochondral bone development, producing the characteristic skeletal abnormalities."
+                },
+                "target_answer_type": "G protein-coupled receptor"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Jansen’s metaphyseal chondrodysplasia, a very rare disorder marked by abnormal (ectopic and premature) ossification and markedly accelerated skeletal maturation, is caused by activating mutations in the parathyroid hormone/parathyroid hormone-related peptide receptor 1 (PTH1R), a class B G protein-coupled receptor. Constitutive signaling of mutant PTH1R disrupts normal endochondral bone development, producing the characteristic skeletal abnormalities.",
+        "short_answer": "PTH1R"
+    }
+}

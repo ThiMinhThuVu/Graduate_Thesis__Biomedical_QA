@@ -1,0 +1,40 @@
+{
+    "QIDX": "531534",
+    "original_question": "What is the name of the amino acid transporter protein encoded by the gene which is mutated in lysinuric protein intolerance?",
+    "type_q": "sequence",
+    "key_entities": [
+        "amino acid transporter protein encoded",
+        "lysinuric protein intolerance"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What is the name of the amino acid transporter protein encoded by the gene which is mutated in lysinuric protein intolerance?",
+            "short_answer": "y+L amino acid transporter 1 (y+LAT1)",
+            "long_answer": "Lysinuric protein intolerance is caused by loss-of-function mutations in the SLC7A7 gene. This gene encodes the light-chain subunit of the system y+L transporter, officially named y+L amino acid transporter 1 (y+LAT1), which mediates basolateral efflux of cationic amino acids (lysine, arginine, ornithine) in intestinal and renal epithelial cells. Defective y+LAT1 impairs reabsorption and absorption of these amino acids, producing the clinical phenotype of lysinuric protein intolerance."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is mutated in lysinuric protein intolerance?",
+                "search_keyword": "gene mutated lysinuric protein intolerance",
+                "final_answer": {
+                    "short_answer": "y+L amino acid transporter 1",
+                    "long_answer": "Lysinuric protein intolerance is caused by mutations in the SLC7A7 gene. This gene encodes y+L amino acid transporter 1 (y+LAT-1), the basolateral membrane subunit of the heterodimeric transporter responsible for exporting cationic amino acids such as lysine, arginine and ornithine from intestinal and renal epithelial cells. Loss-of-function mutations in SLC7A7/y+LAT-1 impair this transport, leading to the characteristic aminoaciduria and systemic manifestations of the disorder."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "1": {
+                "question": "What is the name of the amino acid transporter protein encoded by that gene?",
+                "search_keyword": "amino acid transporter protein encoded by gene",
+                "final_answer": {
+                    "short_answer": "y+L amino acid transporter 1 (y+LAT1)",
+                    "long_answer": "Lysinuric protein intolerance is caused by loss-of-function mutations in the SLC7A7 gene. This gene encodes the light-chain subunit of the system y+L transporter, officially named y+L amino acid transporter 1 (y+LAT1), which mediates basolateral efflux of cationic amino acids (lysine, arginine, ornithine) in intestinal and renal epithelial cells. Defective y+LAT1 impairs reabsorption and absorption of these amino acids, producing the clinical phenotype of lysinuric protein intolerance."
+                },
+                "target_answer_type": "protein"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Lysinuric protein intolerance is caused by loss-of-function mutations in the SLC7A7 gene. This gene encodes the light-chain subunit of the system y+L transporter, officially named y+L amino acid transporter 1 (y+LAT1), which mediates basolateral efflux of cationic amino acids (lysine, arginine, ornithine) in intestinal and renal epithelial cells. Defective y+LAT1 impairs reabsorption and absorption of these amino acids, producing the clinical phenotype of lysinuric protein intolerance.",
+        "short_answer": "y+L amino acid transporter 1 (y+LAT1)"
+    }
+}

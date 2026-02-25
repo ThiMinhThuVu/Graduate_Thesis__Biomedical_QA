@@ -1,0 +1,43 @@
+{
+    "QIDX": "213618",
+    "original_question": "Which photoreceptor cells are impacted by the X-linked genetic eye disorder caused by mutations in the gene cluster located at position Xq28, which results in severe color blindness?",
+    "type_q": "sequence",
+    "key_entities": [
+        "X-linked genetic eye disorder",
+        "photoreceptor cells",
+        "color blindness",
+        "position Xq28",
+        "gene cluster"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which photoreceptor cells are impacted by the X-linked genetic eye disorder caused by mutations in the gene cluster located at position Xq28, which results in severe color blindness?",
+            "short_answer": "Red and green cones",
+            "long_answer": "Mutations in the opsin gene cluster at Xq28 (OPN1LW and OPN1MW) abolish the function of the long- (L, red-sensing) and medium- (M, green-sensing) wavelength cone photoreceptors. Loss of these cones leaves only blue cones and rods active, producing severe X-linked color blindness such as blue-cone monochromacy or protan/deutan deficiencies."
+        },
+        "0": {
+            "0": {
+                "question": "What is the X-linked genetic eye disorder caused by mutations in the gene cluster located at position Xq28 that results in severe color blindness?",
+                "search_keyword": "X-linked genetic eye disorder mutations gene cluster Xq28 severe color blindness",
+                "final_answer": {
+                    "short_answer": "Red and green cones",
+                    "long_answer": "The X-linked disorder arises from mutations in the OPN1LW/OPN1MW opsin gene cluster at Xq28, which encode the photopigments of long-wave (L, red) and medium-wave (M, green) cone photoreceptors. Loss of these opsins abolishes the function of red and green cone cells, producing the severe colour-vision deficiency characteristic of blue-cone monochromacy."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Which photoreceptor cells are impacted by that eye disorder?",
+                "search_keyword": "photoreceptor cells impacted eye disorder",
+                "final_answer": {
+                    "short_answer": "Red and green cones",
+                    "long_answer": "Mutations in the opsin gene cluster at Xq28 (OPN1LW and OPN1MW) abolish the function of the long- (L, red-sensing) and medium- (M, green-sensing) wavelength cone photoreceptors. Loss of these cones leaves only blue cones and rods active, producing severe X-linked color blindness such as blue-cone monochromacy or protan/deutan deficiencies."
+                },
+                "target_answer_type": "cell"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Mutations in the opsin gene cluster at Xq28 (OPN1LW and OPN1MW) abolish the function of the long- (L, red-sensing) and medium- (M, green-sensing) wavelength cone photoreceptors. Loss of these cones leaves only blue cones and rods active, producing severe X-linked color blindness such as blue-cone monochromacy or protan/deutan deficiencies.",
+        "short_answer": "Red and green cones"
+    }
+}

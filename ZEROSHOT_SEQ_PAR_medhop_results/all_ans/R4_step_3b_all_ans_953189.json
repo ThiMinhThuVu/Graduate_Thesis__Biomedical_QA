@@ -1,0 +1,51 @@
+{
+    "QIDX": "953189",
+    "original_question": "Are estrogens and androgens associated with the symptoms of a chromosomal anomaly in which a male has an extra X chromosome?",
+    "type_q": "sequence",
+    "key_entities": [
+        "chromosomal anomaly",
+        "extra X chromosome",
+        "estrogens",
+        "androgens"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Are estrogens and androgens associated with the symptoms of a chromosomal anomaly in which a male has an extra X chromosome?",
+            "short_answer": "yes",
+            "long_answer": "The chromosomal anomaly in which a male has an extra X chromosome is Klinefelter syndrome (47,XXY). In this condition the testes are dysgenetic and produce less testosterone (an androgen) while peripheral aromatization of the small amount of testosterone to estradiol leads to a relatively higher estrogen-to-androgen ratio. This hormonal imbalance—low androgens and relatively elevated estrogens—underlies many of the characteristic clinical features such as tall stature with long limbs, decreased facial and body hair, small firm testes, gynecomastia, and impaired spermatogenesis/infertility. Thus both estrogens and androgens are directly implicated in the symptomatology of males with an extra X chromosome."
+        },
+        "0": {
+            "0": {
+                "question": "What is the chromosomal anomaly in which a male has an extra X chromosome?",
+                "search_keyword": "chromosomal anomaly male extra X chromosome",
+                "final_answer": {
+                    "short_answer": "Klinefelter syndrome",
+                    "long_answer": "Yes. Klinefelter syndrome (47,XXY) is the chromosomal anomaly in which a genetic male carries one extra X chromosome. Testicular dysgenesis in this condition lowers testosterone production while aromatization increases circulating estrogens, creating an androgen-to-estrogen imbalance. This hormonal pattern is directly responsible for the typical clinical features—gynecomastia, sparse facial/body hair, small testes, infertility, and tall eunuchoid habitus—linking both estrogens and androgens to the syndrome’s symptoms."
+                },
+                "target_answer_type": "chromosomal anomaly"
+            },
+            "1": {
+                "question": "What symptoms are associated with that chromosomal anomaly?",
+                "search_keyword": "symptoms associated chromosomal anomaly male extra X chromosome",
+                "final_answer": {
+                    "short_answer": "Klinefelter syndrome",
+                    "long_answer": "Klinefelter syndrome (47,XXY) is the chromosomal disorder in which a genetic male carries an extra X chromosome. Testicular dysgenesis in this condition results in low testosterone production and a relatively higher circulating estradiol level, so the estrogen-to-androgen imbalance underlies hallmark features such as gynecomastia, sparse facial/body hair, small testes and infertility. Thus the signs and symptoms are indeed linked to altered estrogens and androgens."
+                },
+                "target_answer_type": "symptoms"
+            },
+            "2": {
+                "question": "Are estrogens and androgens associated with those symptoms?",
+                "search_keyword": "estrogens androgens association symptoms chromosomal anomaly",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "The chromosomal anomaly in which a male has an extra X chromosome is Klinefelter syndrome (47,XXY). In this condition the testes are dysgenetic and produce less testosterone (an androgen) while peripheral aromatization of the small amount of testosterone to estradiol leads to a relatively higher estrogen-to-androgen ratio. This hormonal imbalance—low androgens and relatively elevated estrogens—underlies many of the characteristic clinical features such as tall stature with long limbs, decreased facial and body hair, small firm testes, gynecomastia, and impaired spermatogenesis/infertility. Thus both estrogens and androgens are directly implicated in the symptomatology of males with an extra X chromosome."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The chromosomal anomaly in which a male has an extra X chromosome is Klinefelter syndrome (47,XXY). In this condition the testes are dysgenetic and produce less testosterone (an androgen) while peripheral aromatization of the small amount of testosterone to estradiol leads to a relatively higher estrogen-to-androgen ratio. This hormonal imbalance—low androgens and relatively elevated estrogens—underlies many of the characteristic clinical features such as tall stature with long limbs, decreased facial and body hair, small firm testes, gynecomastia, and impaired spermatogenesis/infertility. Thus both estrogens and androgens are directly implicated in the symptomatology of males with an extra X chromosome.",
+        "short_answer": "yes"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "QIDX": "778662",
+    "original_question": "Roberts/SC phocomelia syndrome is caused by mutations in a gene that causes which other rare autosomal recessive malformation syndrome?",
+    "type_q": "sequence",
+    "key_entities": [
+        "recessive malformation syndrome",
+        "Roberts/SC phocomelia syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Roberts/SC phocomelia syndrome is caused by mutations in a gene that causes which other rare autosomal recessive malformation syndrome?",
+            "short_answer": "Insufficient answer",
+            "long_answer": "Insufficient answer"
+        },
+        "0": {
+            "0": {
+                "question": "What is Roberts/SC phocomelia syndrome caused by?",
+                "search_keyword": "Roberts SC phocomelia syndrome cause",
+                "final_answer": {
+                    "short_answer": "Limb/pelvis hypoplasia-aplasia syndrome",
+                    "long_answer": "Roberts/SC phocomelia syndrome results from biallelic loss-of-function mutations in the ESCO2 gene, which encodes an acetyltransferase essential for sister-chromatid cohesion during cell division. The same ESCO2 mutations are also known to cause Limb/pelvis hypoplasia-aplasia syndrome, a distinct but very rare autosomal recessive malformation disorder characterized by severe reduction or absence of the limbs and pelvic bones."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Which other rare autosomal recessive malformation syndrome is caused by mutations in that gene?",
+                "search_keyword": "rare autosomal recessive malformation syndrome caused by gene mutation",
+                "final_answer": {
+                    "short_answer": "Insufficient answer",
+                    "long_answer": "Insufficient answer"
+                },
+                "target_answer_type": "condition"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Insufficient answer",
+        "short_answer": "Insufficient answer"
+    }
+}

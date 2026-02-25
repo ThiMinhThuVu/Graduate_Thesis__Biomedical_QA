@@ -1,0 +1,39 @@
+{
+    "QIDX": "234120",
+    "original_question": "On which human chromosome is the gene located, mutations of which can cause the lethal form of Tetra-amelia syndrome because it prevents the formation of the lungs?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Tetra-amelia syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which human chromosome is the gene located, mutations of which can cause the lethal form of Tetra-amelia syndrome because it prevents the formation of the lungs?",
+            "short_answer": "Chromosome 8",
+            "long_answer": "The lethal form of Tetra-amelia syndrome with complete lung agenesis is caused by biallelic loss-of-function mutations in the RSPO2 gene. RSPO2 lies at cytogenetic band 8q23.1 on human chromosome 8. Absence of functional RSPO2 disrupts WNT/β-catenin signalling that is essential for initiating both limb buds and lung buds, so embryos fail to develop limbs and lungs, leading to perinatal lethality. Hence, the responsible gene is located on chromosome 8."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with the lethal form of Tetra-amelia syndrome that prevents the formation of the lungs?",
+                "search_keyword": "gene lethal Tetra-amelia syndrome lung formation",
+                "final_answer": {
+                    "short_answer": "Chromosome 8",
+                    "long_answer": "The lethal form of Tetra-amelia syndrome that results from failure of lung formation is caused by loss-of-function mutations in the RSPO2 gene. RSPO2 is mapped to cytogenetic band 8q23.1 on human chromosome 8; its disruption abolishes the WNT/β-catenin signaling required for the initiation of both limb and lung buds, leading to complete limb absence and pulmonary agenesis."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which human chromosome is that gene located?",
+                "search_keyword": "human chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 8",
+                    "long_answer": "The lethal form of Tetra-amelia syndrome with complete lung agenesis is caused by biallelic loss-of-function mutations in the RSPO2 gene. RSPO2 lies at cytogenetic band 8q23.1 on human chromosome 8. Absence of functional RSPO2 disrupts WNT/β-catenin signalling that is essential for initiating both limb buds and lung buds, so embryos fail to develop limbs and lungs, leading to perinatal lethality. Hence, the responsible gene is located on chromosome 8."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The lethal form of Tetra-amelia syndrome with complete lung agenesis is caused by biallelic loss-of-function mutations in the RSPO2 gene. RSPO2 lies at cytogenetic band 8q23.1 on human chromosome 8. Absence of functional RSPO2 disrupts WNT/β-catenin signalling that is essential for initiating both limb buds and lung buds, so embryos fail to develop limbs and lungs, leading to perinatal lethality. Hence, the responsible gene is located on chromosome 8.",
+        "short_answer": "Chromosome 8"
+    }
+}

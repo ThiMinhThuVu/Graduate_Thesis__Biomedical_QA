@@ -1,0 +1,42 @@
+{
+    "QIDX": "455108",
+    "original_question": "Is the WDR12 gene on chromosome 2 implicated in causing the rare inherited bone growth disorder that primarily affects the thoracic region first described in 1955?",
+    "type_q": "sequence",
+    "key_entities": [
+        "bone growth disorder",
+        "thoracic region",
+        "Is the WDR12",
+        "WDR12 gene"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is the WDR12 gene on chromosome 2 implicated in causing the rare inherited bone growth disorder that primarily affects the thoracic region first described in 1955?",
+            "short_answer": "no",
+            "long_answer": "The rare inherited bone-growth disorder first described by Jeune in 1955 is Asphyxiating Thoracic Dystrophy (Jeune syndrome). Molecular studies have shown that this disorder is a ciliopathy and can be caused by pathogenic variants in several genes that encode intraflagellar-transport or cilia-associated proteins (e.g., IFT80, DYNC2H1, WDR19, IFT140, TTC21B, CSPP1, WDR35, among others). The WDR12 gene, which lies on chromosome 2q (2q33–2q35) and encodes a nucleolar WD-repeat protein involved in ribosome biogenesis, has not been implicated in Jeune syndrome or in any other inherited thoracic skeletal dysplasia. There is currently no peer-reviewed evidence or consensus linking mutations in WDR12 to the disorder first described in 1955. Therefore, the statement is not supported by established biomedical knowledge."
+        },
+        "0": {
+            "0": {
+                "question": "What is the rare inherited bone growth disorder that primarily affects the thoracic region and was first described in 1955?",
+                "search_keyword": "rare inherited bone growth disorder thoracic region 1955",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "The bone growth disorder first described in 1955 is Jeune asphyxiating thoracic dystrophy, a ciliopathy caused by mutations in genes such as IFT80, DYNC2H1, WDR19, WDR35, TTC21B, NEK1 and several others. Comprehensive genetic studies and clinical databases show no evidence that the chromosome-2 WD repeat–containing gene WDR12 contributes to the etiology of this disorder; it is not listed among the known disease-causing genes for Jeune syndrome. Therefore, WDR12 is not implicated."
+                },
+                "target_answer_type": "disorder"
+            },
+            "1": {
+                "question": "Is the WDR12 gene on chromosome 2 implicated in causing that disorder?",
+                "search_keyword": "WDR12 gene chromosome 2 implicated disorder",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "The rare inherited bone-growth disorder first described by Jeune in 1955 is Asphyxiating Thoracic Dystrophy (Jeune syndrome). Molecular studies have shown that this disorder is a ciliopathy and can be caused by pathogenic variants in several genes that encode intraflagellar-transport or cilia-associated proteins (e.g., IFT80, DYNC2H1, WDR19, IFT140, TTC21B, CSPP1, WDR35, among others). The WDR12 gene, which lies on chromosome 2q (2q33–2q35) and encodes a nucleolar WD-repeat protein involved in ribosome biogenesis, has not been implicated in Jeune syndrome or in any other inherited thoracic skeletal dysplasia. There is currently no peer-reviewed evidence or consensus linking mutations in WDR12 to the disorder first described in 1955. Therefore, the statement is not supported by established biomedical knowledge."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The rare inherited bone-growth disorder first described by Jeune in 1955 is Asphyxiating Thoracic Dystrophy (Jeune syndrome). Molecular studies have shown that this disorder is a ciliopathy and can be caused by pathogenic variants in several genes that encode intraflagellar-transport or cilia-associated proteins (e.g., IFT80, DYNC2H1, WDR19, IFT140, TTC21B, CSPP1, WDR35, among others). The WDR12 gene, which lies on chromosome 2q (2q33–2q35) and encodes a nucleolar WD-repeat protein involved in ribosome biogenesis, has not been implicated in Jeune syndrome or in any other inherited thoracic skeletal dysplasia. There is currently no peer-reviewed evidence or consensus linking mutations in WDR12 to the disorder first described in 1955. Therefore, the statement is not supported by established biomedical knowledge.",
+        "short_answer": "no"
+    }
+}

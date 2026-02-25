@@ -1,0 +1,42 @@
+{
+    "QIDX": "360820",
+    "original_question": "Which human gene encodes DC-SIGN, the primary receptor that facilitates the entry of the West Nile virus into host cells?",
+    "type_q": "sequence",
+    "key_entities": [
+        "primary receptor",
+        "West Nile virus",
+        "host cells",
+        "DC-SIGN"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which human gene encodes DC-SIGN, the primary receptor that facilitates the entry of the West Nile virus into host cells?",
+            "short_answer": "CD209",
+            "long_answer": "DC-SIGN (Dendritic Cell-Specific ICAM-3 Grabbing Non-integrin) is a C-type lectin receptor that enhances attachment and entry of several flaviviruses, including the West Nile virus, into dendritic cells. In humans, DC-SIGN is encoded by the CD209 gene located on chromosome 19p13.2–p13.3."
+        },
+        "0": {
+            "0": {
+                "question": "Which human gene encodes the primary receptor that facilitates the entry of the West Nile virus into host cells?",
+                "search_keyword": "human gene encodes receptor West Nile virus entry host cells",
+                "final_answer": {
+                    "short_answer": "CD209",
+                    "long_answer": "DC-SIGN (Dendritic Cell-Specific ICAM-3-Grabbing Non-integrin) is a C-type lectin receptor expressed on dendritic cells and macrophages that binds mannose-rich glycans on pathogens, including West Nile virus, to promote viral attachment and internalization. In humans, the DC-SIGN protein is encoded by the CD209 gene located on chromosome 19p13.2–p13.3."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "What is the function of that receptor in relation to the West Nile virus?",
+                "search_keyword": "function receptor West Nile virus",
+                "final_answer": {
+                    "short_answer": "CD209",
+                    "long_answer": "DC-SIGN (Dendritic Cell-Specific ICAM-3 Grabbing Non-integrin) is a C-type lectin receptor that enhances attachment and entry of several flaviviruses, including the West Nile virus, into dendritic cells. In humans, DC-SIGN is encoded by the CD209 gene located on chromosome 19p13.2–p13.3."
+                },
+                "target_answer_type": "function"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "DC-SIGN (Dendritic Cell-Specific ICAM-3 Grabbing Non-integrin) is a C-type lectin receptor that enhances attachment and entry of several flaviviruses, including the West Nile virus, into dendritic cells. In humans, DC-SIGN is encoded by the CD209 gene located on chromosome 19p13.2–p13.3.",
+        "short_answer": "CD209"
+    }
+}

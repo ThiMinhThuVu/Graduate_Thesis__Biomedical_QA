@@ -1,0 +1,50 @@
+{
+    "QIDX": "465164",
+    "original_question": "Are ring chromosome 18 and Wolf-Hirschhorn syndrome both classified as microdeletion syndromes?",
+    "type_q": "parallel",
+    "key_entities": [
+        "Wolf-Hirschhorn syndrome",
+        "microdeletion syndromes",
+        "ring chromosome 18"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is ring chromosome 18 classified as a microdeletion syndrome?",
+            "short_answer": "no",
+            "long_answer": "Ring chromosome 18 (r(18)) is a structural chromosomal rearrangement in which both terminal ends of chromosome 18 break and the remaining chromosome circularizes, usually with loss of distal 18p and 18q material. The resulting deletions are typically large enough to be detected by routine cytogenetic (karyotype) analysis, and the syndrome is therefore classified as a ring-chromosome disorder, not as a classic microdeletion syndrome. Microdeletion syndromes, by definition, involve submicroscopic deletions (usually <5 Mb) that cannot be seen on standard karyotyping and are identified by molecular techniques such as FISH or microarray; examples include 22q11.2 deletion (DiGeorge), 7q11.23 deletion (Williams) and others. Because ring chromosome 18 does not meet these criteria and is traditionally categorized separately, it is not considered a microdeletion syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "Is ring chromosome 18 classified as a microdeletion syndrome?",
+                "search_keyword": "ring chromosome 18 microdeletion syndrome classification",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Ring chromosome 18 (r(18)) is a structural chromosomal rearrangement in which both terminal ends of chromosome 18 break and the remaining chromosome circularizes, usually with loss of distal 18p and 18q material. The resulting deletions are typically large enough to be detected by routine cytogenetic (karyotype) analysis, and the syndrome is therefore classified as a ring-chromosome disorder, not as a classic microdeletion syndrome. Microdeletion syndromes, by definition, involve submicroscopic deletions (usually <5 Mb) that cannot be seen on standard karyotyping and are identified by molecular techniques such as FISH or microarray; examples include 22q11.2 deletion (DiGeorge), 7q11.23 deletion (Williams) and others. Because ring chromosome 18 does not meet these criteria and is traditionally categorized separately, it is not considered a microdeletion syndrome."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is Wolf-Hirschhorn syndrome classified as a microdeletion syndrome?",
+            "short_answer": "yes",
+            "long_answer": "Wolf-Hirschhorn syndrome is caused by a hemizygous deletion of genetic material at chromosome 4p16.3. This deletion is usually too small to be detected by routine karyotyping and is instead identified with higher-resolution techniques such as FISH or chromosomal microarray. Disorders that result from such sub-microscopic chromosomal deletions are collectively termed microdeletion syndromes. Therefore, by accepted cytogenetic and clinical genetics definitions, Wolf-Hirschhorn syndrome is indeed classified as a microdeletion syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "Is Wolf-Hirschhorn syndrome classified as a microdeletion syndrome?",
+                "search_keyword": "Wolf-Hirschhorn syndrome microdeletion syndrome classification",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Wolf-Hirschhorn syndrome is caused by a hemizygous deletion of genetic material at chromosome 4p16.3. This deletion is usually too small to be detected by routine karyotyping and is instead identified with higher-resolution techniques such as FISH or chromosomal microarray. Disorders that result from such sub-microscopic chromosomal deletions are collectively termed microdeletion syndromes. Therefore, by accepted cytogenetic and clinical genetics definitions, Wolf-Hirschhorn syndrome is indeed classified as a microdeletion syndrome."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Ring chromosome 18 is not classified as a microdeletion syndrome because it involves larger deletions detectable by karyotype, whereas Wolf-Hirschhorn syndrome is classified as a microdeletion syndrome due to its submicroscopic deletion in chromosome 4p16.3. Therefore, they are not both classified as microdeletion syndromes.",
+        "short_answer": "no"
+    }
+}

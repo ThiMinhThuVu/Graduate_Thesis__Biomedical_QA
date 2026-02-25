@@ -1,0 +1,40 @@
+{
+    "QIDX": "365940",
+    "original_question": "Which chromosome contains the gene that is a causal factor in Angel-shaped phalango-epiphyseal dysplasia and that encodes a protein closely related to the bone morphogenetic protein family?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Angel-shaped phalango-epiphyseal dysplasia",
+        "bone morphogenetic protein family"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which chromosome contains the gene that is a causal factor in Angel-shaped phalango-epiphyseal dysplasia and that encodes a protein closely related to the bone morphogenetic protein family?",
+            "short_answer": "Chromosome 20",
+            "long_answer": "Angel-shaped phalango-epiphyseal dysplasia is caused by mutations in the GDF5 gene (also known as CDMP1). GDF5 encodes a secreted growth factor that is very closely related to the bone morphogenetic protein (BMP) family. In humans, the GDF5 locus is found on chromosome 20 (cytogenetic band 20q11.22), so chromosome 20 carries the disease-causing gene."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is a causal factor in Angel-shaped phalango-epiphyseal dysplasia and encodes a protein closely related to the bone morphogenetic protein family?",
+                "search_keyword": "gene causal factor Angel-shaped phalango-epiphyseal dysplasia bone morphogenetic protein",
+                "final_answer": {
+                    "short_answer": "Chromosome 20",
+                    "long_answer": "Angel-shaped phalango-epiphyseal dysplasia is produced by loss-of-function mutations in the GDF5 (CDMP1) gene. GDF5 encodes Growth Differentiation Factor-5, a secreted growth factor that is closely related to, and classed within, the bone morphogenetic protein (BMP) family of the TGF-β super-family. The GDF5 gene is located on chromosome 20q11.2, so chromosome 20 harbours the causal gene for this disorder."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Which chromosome contains that gene?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 20",
+                    "long_answer": "Angel-shaped phalango-epiphyseal dysplasia is caused by mutations in the GDF5 gene (also known as CDMP1). GDF5 encodes a secreted growth factor that is very closely related to the bone morphogenetic protein (BMP) family. In humans, the GDF5 locus is found on chromosome 20 (cytogenetic band 20q11.22), so chromosome 20 carries the disease-causing gene."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Angel-shaped phalango-epiphyseal dysplasia is caused by mutations in the GDF5 gene (also known as CDMP1). GDF5 encodes a secreted growth factor that is very closely related to the bone morphogenetic protein (BMP) family. In humans, the GDF5 locus is found on chromosome 20 (cytogenetic band 20q11.22), so chromosome 20 carries the disease-causing gene.",
+        "short_answer": "Chromosome 20"
+    }
+}

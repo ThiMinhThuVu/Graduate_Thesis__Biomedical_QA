@@ -1,0 +1,39 @@
+{
+    "QIDX": "720129",
+    "original_question": "What is the name of the deadly condition that results from a failure in the proper maturation of the midline mesoderm and ventral body wall (chest) during embryonic development, causing the heart to be abnormally located either partially or entirely outside the thorax?",
+    "type_q": "sequence",
+    "key_entities": [
+        "ventral body wall"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What is the name of the deadly condition that results from a failure in the proper maturation of the midline mesoderm and ventral body wall (chest) during embryonic development, causing the heart to be abnormally located either partially or entirely outside the thorax?",
+            "short_answer": "Ectopia cordis",
+            "long_answer": "Ectopia cordis is a rare, usually lethal congenital malformation in which incomplete fusion of the midline mesoderm and ventral thoracic wall during embryogenesis leaves the sternum and pericardium defective. As a result, the heart develops outside the thoracic cavity—sometimes entirely, sometimes partially—exposing it to external injury and causing profound cardiorespiratory compromise."
+        },
+        "0": {
+            "0": {
+                "question": "What is the condition that results from a failure in the proper maturation of the midline mesoderm and ventral body wall during embryonic development, causing the heart to be abnormally located outside the thorax?",
+                "search_keyword": "condition failure maturation midline mesoderm ventral body wall heart outside thorax",
+                "final_answer": {
+                    "short_answer": "Ectopia cordis",
+                    "long_answer": "Ectopia cordis is a rare, often lethal anomaly in which the midline mesoderm and ventral body wall fail to close during embryogenesis, leaving the heart partially or completely outside the thoracic cavity."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "What is the name of that condition?",
+                "search_keyword": "name of condition heart outside thorax",
+                "final_answer": {
+                    "short_answer": "Ectopia cordis",
+                    "long_answer": "Ectopia cordis is a rare, usually lethal congenital malformation in which incomplete fusion of the midline mesoderm and ventral thoracic wall during embryogenesis leaves the sternum and pericardium defective. As a result, the heart develops outside the thoracic cavity—sometimes entirely, sometimes partially—exposing it to external injury and causing profound cardiorespiratory compromise."
+                },
+                "target_answer_type": "condition"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Ectopia cordis is a rare, usually lethal congenital malformation in which incomplete fusion of the midline mesoderm and ventral thoracic wall during embryogenesis leaves the sternum and pericardium defective. As a result, the heart develops outside the thoracic cavity—sometimes entirely, sometimes partially—exposing it to external injury and causing profound cardiorespiratory compromise.",
+        "short_answer": "Ectopia cordis"
+    }
+}

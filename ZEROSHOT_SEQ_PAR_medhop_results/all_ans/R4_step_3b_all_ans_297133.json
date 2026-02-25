@@ -1,0 +1,49 @@
+{
+    "QIDX": "297133",
+    "original_question": "Does adermatoglyphia have fewer side effects compared to Baird syndrome?",
+    "type_q": "parallel",
+    "key_entities": [
+        "adermatoglyphia",
+        "Baird syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What are the side effects of adermatoglyphia?",
+            "short_answer": "No significant side effects",
+            "long_answer": "Adermatoglyphia is a rare genetic condition caused by mutations in SMARCAD1 that results in absent epidermal ridges (fingerprints). Apart from this lack of fingerprints—and in some cases mild palmoplantar hypohidrosis or tiny facial milia—affected individuals have normal skin function, health, and development. Thus, the condition produces essentially no harmful medical side effects."
+        },
+        "0": {
+            "0": {
+                "question": "What are the side effects of adermatoglyphia?",
+                "search_keyword": "adermatoglyphia side effects",
+                "final_answer": {
+                    "short_answer": "No significant side effects",
+                    "long_answer": "Adermatoglyphia is a rare genetic condition caused by mutations in SMARCAD1 that results in absent epidermal ridges (fingerprints). Apart from this lack of fingerprints—and in some cases mild palmoplantar hypohidrosis or tiny facial milia—affected individuals have normal skin function, health, and development. Thus, the condition produces essentially no harmful medical side effects."
+                },
+                "target_answer_type": "side effects"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What are the side effects of Baird syndrome?",
+            "short_answer": "Severe pain and halitosis",
+            "long_answer": "Bair’s (often written Baird) syndrome is another term for dry socket (alveolar osteitis) occurring after tooth extraction. Its characteristic sequelae are intense, throbbing pain beginning a few days post-extraction and an offensive mouth odour/taste (halitosis) produced by the exposed, clot-free alveolar bone."
+        },
+        "0": {
+            "0": {
+                "question": "What are the side effects of Baird syndrome?",
+                "search_keyword": "Baird syndrome side effects",
+                "final_answer": {
+                    "short_answer": "Severe pain and halitosis",
+                    "long_answer": "Bair’s (often written Baird) syndrome is another term for dry socket (alveolar osteitis) occurring after tooth extraction. Its characteristic sequelae are intense, throbbing pain beginning a few days post-extraction and an offensive mouth odour/taste (halitosis) produced by the exposed, clot-free alveolar bone."
+                },
+                "target_answer_type": "side effects"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Adermatoglyphia exhibits essentially no significant harmful medical side effects, while Baird syndrome (dry socket) is marked by severe pain and halitosis. Thus, based on the provided information, adermatoglyphia has fewer side effects compared to Baird syndrome.",
+        "short_answer": "yes"
+    }
+}

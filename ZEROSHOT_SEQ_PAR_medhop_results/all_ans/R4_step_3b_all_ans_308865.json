@@ -1,0 +1,43 @@
+{
+    "QIDX": "308865",
+    "original_question": "Is the FBN1 gene, which is associated with Marfan syndrome, also linked to a form of kyphosis classified as juvenile osteochondrosis of the spine?",
+    "type_q": "sequence",
+    "key_entities": [
+        "juvenile osteochondrosis of the spine",
+        "Marfan syndrome",
+        "Is the FBN1",
+        "FBN1 gene",
+        "kyphosis"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is the FBN1 gene, which is associated with Marfan syndrome, also linked to a form of kyphosis classified as juvenile osteochondrosis of the spine?",
+            "short_answer": "no",
+            "long_answer": "Pathogenic variants in the FBN1 gene are the established cause of Marfan syndrome and several related \"fibrillinopathies\" (e.g., isolated ectopia lentis, familial thoracic aortic aneurysm/dissection, MASS phenotype). Although patients with Marfan syndrome can develop scoliosis or kyphosis secondary to their connective-tissue disorder, no authoritative genetic or clinical studies have linked FBN1 mutations to Scheuermann disease (juvenile osteochondrosis of the spine) as an independent diagnostic entity. Current literature on Scheuermann disease implicates multifactorial/idiopathic mechanisms and, where genetic factors are suspected, they have not included the FBN1 locus. Therefore, according to established biomedical consensus, FBN1 is not considered a gene for juvenile osteochondrosis of the spine."
+        },
+        "0": {
+            "0": {
+                "question": "What is Marfan syndrome and which gene is associated with it?",
+                "search_keyword": "Marfan syndrome associated gene",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "While pathogenic variants in FBN1 cause Marfan syndrome and can produce scoliosis or kypho-scoliosis, there is no documented genetic or clinical evidence that FBN1 mutations underlie juvenile osteochondrosis of the spine (Scheuermann kyphosis). The latter is considered a distinct, multifactorial skeletal growth disorder without a proven link to FBN1."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Is the FBN1 gene linked to juvenile osteochondrosis of the spine?",
+                "search_keyword": "FBN1 gene juvenile osteochondrosis spine",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Pathogenic variants in the FBN1 gene are the established cause of Marfan syndrome and several related \"fibrillinopathies\" (e.g., isolated ectopia lentis, familial thoracic aortic aneurysm/dissection, MASS phenotype). Although patients with Marfan syndrome can develop scoliosis or kyphosis secondary to their connective-tissue disorder, no authoritative genetic or clinical studies have linked FBN1 mutations to Scheuermann disease (juvenile osteochondrosis of the spine) as an independent diagnostic entity. Current literature on Scheuermann disease implicates multifactorial/idiopathic mechanisms and, where genetic factors are suspected, they have not included the FBN1 locus. Therefore, according to established biomedical consensus, FBN1 is not considered a gene for juvenile osteochondrosis of the spine."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Pathogenic variants in the FBN1 gene are the established cause of Marfan syndrome and several related \"fibrillinopathies\" (e.g., isolated ectopia lentis, familial thoracic aortic aneurysm/dissection, MASS phenotype). Although patients with Marfan syndrome can develop scoliosis or kyphosis secondary to their connective-tissue disorder, no authoritative genetic or clinical studies have linked FBN1 mutations to Scheuermann disease (juvenile osteochondrosis of the spine) as an independent diagnostic entity. Current literature on Scheuermann disease implicates multifactorial/idiopathic mechanisms and, where genetic factors are suspected, they have not included the FBN1 locus. Therefore, according to established biomedical consensus, FBN1 is not considered a gene for juvenile osteochondrosis of the spine.",
+        "short_answer": "no"
+    }
+}

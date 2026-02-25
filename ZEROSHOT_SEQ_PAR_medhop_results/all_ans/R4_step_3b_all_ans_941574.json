@@ -1,0 +1,50 @@
+{
+    "QIDX": "941574",
+    "original_question": "Is hypertelorism found in both porencephaly-cerebellar hypoplasia-internal malformations syndrome and holoprosencephaly-ectrodactyly-cleft lip/palate syndrome?",
+    "type_q": "parallel",
+    "key_entities": [
+        "porencephaly-cerebellar hypoplasia-internal malformations syndrome",
+        "holoprosencephaly-ectrodactyly-cleft lip/palate syndrome",
+        "hypertelorism"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is hypertelorism found in porencephaly-cerebellar hypoplasia-internal malformations syndrome?",
+            "short_answer": "yes",
+            "long_answer": "Porencephaly-cerebellar hypoplasia-internal malformations syndrome is a very rare, usually lethal congenital malformation complex that was described on the basis of a small number of infants showing cerebral porencephalic cysts, marked cerebellar underdevelopment and multiple visceral anomalies (cardiac, renal, gastrointestinal, pulmonary, etc.). All reported patients also shared a distinctive cranio-facial dysmorphic pattern. Among the constant facial features listed in the original and subsequent case descriptions were a broad nasal bridge with clearly increased inter-orbital distance, i.e. true ocular hypertelorism, together with frontal bossing, low-set ears and micrognathia. Because hypertelorism is part of the characteristic facial phenotype that accompanies the brain and internal-organ defects in this syndrome, its presence is considered a typical finding rather than an exception."
+        },
+        "0": {
+            "0": {
+                "question": "Is hypertelorism found in porencephaly-cerebellar hypoplasia-internal malformations syndrome?",
+                "search_keyword": "hypertelorism porencephaly cerebellar hypoplasia internal malformations syndrome",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Porencephaly-cerebellar hypoplasia-internal malformations syndrome is a very rare, usually lethal congenital malformation complex that was described on the basis of a small number of infants showing cerebral porencephalic cysts, marked cerebellar underdevelopment and multiple visceral anomalies (cardiac, renal, gastrointestinal, pulmonary, etc.). All reported patients also shared a distinctive cranio-facial dysmorphic pattern. Among the constant facial features listed in the original and subsequent case descriptions were a broad nasal bridge with clearly increased inter-orbital distance, i.e. true ocular hypertelorism, together with frontal bossing, low-set ears and micrognathia. Because hypertelorism is part of the characteristic facial phenotype that accompanies the brain and internal-organ defects in this syndrome, its presence is considered a typical finding rather than an exception."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is hypertelorism found in holoprosencephaly-ectrodactyly-cleft lip/palate syndrome?",
+            "short_answer": "no",
+            "long_answer": "Holoprosencephaly-ectrodactyly-cleft lip/palate syndrome (also called Hartsfield syndrome) is characteristically associated with midline facial deficiencies that mirror the underlying forebrain malformation. In reported patients the interorbital distance is reduced (ocular hypotelorism), not increased. Hypertelorism—the abnormally wide spacing of the eyes—is therefore not considered a typical or defining feature of this syndrome according to the clinical descriptions in the medical literature (e.g., OMIM 234100; original and subsequent case reports by Hartsfield and others). Hence the statement that hypertelorism is found in holoprosencephaly-ectrodactyly-cleft lip/palate syndrome is not supported by established consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Is hypertelorism found in holoprosencephaly-ectrodactyly-cleft lip/palate syndrome?",
+                "search_keyword": "hypertelorism holoprosencephaly ectrodactyly cleft lip palate syndrome",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Holoprosencephaly-ectrodactyly-cleft lip/palate syndrome (also called Hartsfield syndrome) is characteristically associated with midline facial deficiencies that mirror the underlying forebrain malformation. In reported patients the interorbital distance is reduced (ocular hypotelorism), not increased. Hypertelorism—the abnormally wide spacing of the eyes—is therefore not considered a typical or defining feature of this syndrome according to the clinical descriptions in the medical literature (e.g., OMIM 234100; original and subsequent case reports by Hartsfield and others). Hence the statement that hypertelorism is found in holoprosencephaly-ectrodactyly-cleft lip/palate syndrome is not supported by established consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The provided information confirms that hypertelorism is a typical feature in porencephaly-cerebellar hypoplasia-internal malformations syndrome due to its characteristic craniofacial phenotype, which includes an increased interorbital distance. However, in holoprosencephaly-ectrodactyly-cleft lip/palate syndrome, the condition is associated with midline facial deficiencies and decreased interorbital distance (ocular hypotelorism). Thus, hypertelorism is not found in the latter syndrome. As a consequence, hypertelorism is not present in both conditions.",
+        "short_answer": "no"
+    }
+}

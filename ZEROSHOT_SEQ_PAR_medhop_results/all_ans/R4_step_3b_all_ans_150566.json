@@ -1,0 +1,39 @@
+{
+    "QIDX": "150566",
+    "original_question": "Which disease is caused by a reactivated polyomavirus that destroys oligodendrocytes?",
+    "type_q": "sequence",
+    "key_entities": [
+        "oligodendrocytes"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which disease is caused by a reactivated polyomavirus that destroys oligodendrocytes?",
+            "short_answer": "Progressive multifocal leukoencephalopathy",
+            "long_answer": "Progressive multifocal leukoencephalopathy (PML) results from reactivation of the JC polyomavirus in immunocompromised individuals. The virus infects and lyses oligodendrocytes—the myelin-producing cells of the central nervous system—leading to multifocal areas of demyelination, hence the neurological deficits characteristic of the disease."
+        },
+        "0": {
+            "0": {
+                "question": "Which polyomavirus can reactivate and destroy oligodendrocytes?",
+                "search_keyword": "reactivated polyomavirus destroys oligodendrocytes",
+                "final_answer": {
+                    "short_answer": "Progressive multifocal leukoencephalopathy",
+                    "long_answer": "Progressive multifocal leukoencephalopathy (PML) arises when latent JC polyomavirus is reactivated, typically in immunocompromised individuals. The virus selectively infects and lyses oligodendrocytes, the myelin-producing glial cells of the central nervous system, leading to widespread demyelination and the characteristic multifocal white-matter lesions of the disease."
+                },
+                "target_answer_type": "virus"
+            },
+            "1": {
+                "question": "Which disease is caused by that reactivated polyomavirus?",
+                "search_keyword": "disease caused by reactivated polyomavirus",
+                "final_answer": {
+                    "short_answer": "Progressive multifocal leukoencephalopathy",
+                    "long_answer": "Progressive multifocal leukoencephalopathy (PML) results from reactivation of the JC polyomavirus in immunocompromised individuals. The virus infects and lyses oligodendrocytes—the myelin-producing cells of the central nervous system—leading to multifocal areas of demyelination, hence the neurological deficits characteristic of the disease."
+                },
+                "target_answer_type": "disease"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Progressive multifocal leukoencephalopathy (PML) results from reactivation of the JC polyomavirus in immunocompromised individuals. The virus infects and lyses oligodendrocytes—the myelin-producing cells of the central nervous system—leading to multifocal areas of demyelination, hence the neurological deficits characteristic of the disease.",
+        "short_answer": "Progressive multifocal leukoencephalopathy"
+    }
+}

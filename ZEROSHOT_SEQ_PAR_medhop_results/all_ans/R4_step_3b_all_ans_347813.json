@@ -1,0 +1,67 @@
+{
+    "QIDX": "347813",
+    "original_question": "Although pityriasis lichenoides et varioliformis acuta can be mistaken for chickenpox, is it caused by the same virus?",
+    "type_q": "parallel",
+    "key_entities": [
+        "pityriasis lichenoides et varioliformis acuta",
+        "chickenpox"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is pityriasis lichenoides et varioliformis acuta caused by the same virus as chickenpox?",
+            "short_answer": "no",
+            "long_answer": "Chickenpox (varicella) is caused by the varicella-zoster virus, a member of the herpesvirus family. Pityriasis lichenoides et varioliformis acuta (PLEVA, or Mucha-Habermann disease) is an uncommon inflammatory dermatosis whose exact cause remains uncertain; proposed triggers include an abnormal T-cell–mediated immune response to various infections (e.g., Epstein-Barr virus, HIV, cytomegalovirus) or drugs, but no single pathogen has been proven. There is no evidence that the varicella-zoster virus is the etiologic agent of PLEVA. Therefore, PLEVA is not caused by the same virus that causes chickenpox."
+        },
+        "0": {
+            "0": {
+                "question": "Is pityriasis lichenoides et varioliformis acuta caused by the same virus as chickenpox?",
+                "search_keyword": "pityriasis lichenoides et varioliformis acuta chickenpox virus",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Chickenpox (varicella) is caused by the varicella-zoster virus, a member of the herpesvirus family. Pityriasis lichenoides et varioliformis acuta (PLEVA, or Mucha-Habermann disease) is an uncommon inflammatory dermatosis whose exact cause remains uncertain; proposed triggers include an abnormal T-cell–mediated immune response to various infections (e.g., Epstein-Barr virus, HIV, cytomegalovirus) or drugs, but no single pathogen has been proven. There is no evidence that the varicella-zoster virus is the etiologic agent of PLEVA. Therefore, PLEVA is not caused by the same virus that causes chickenpox."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What virus causes pityriasis lichenoides et varioliformis acuta?",
+            "short_answer": "Epstein–Barr virus",
+            "long_answer": "Pityriasis lichenoides et varioliformis acuta (Mucha-Habermann disease) is most consistently linked to infection by Epstein–Barr virus (EBV). EBV DNA and serological evidence of recent EBV infection are frequently found in affected patients, supporting EBV as the viral trigger for the acute eruptive form of pityriasis lichenoides."
+        },
+        "0": {
+            "0": {
+                "question": "What virus causes pityriasis lichenoides et varioliformis acuta?",
+                "search_keyword": "virus causes pityriasis lichenoides et varioliformis acuta",
+                "final_answer": {
+                    "short_answer": "Epstein–Barr virus",
+                    "long_answer": "Pityriasis lichenoides et varioliformis acuta (Mucha-Habermann disease) is most consistently linked to infection by Epstein–Barr virus (EBV). EBV DNA and serological evidence of recent EBV infection are frequently found in affected patients, supporting EBV as the viral trigger for the acute eruptive form of pityriasis lichenoides."
+                },
+                "target_answer_type": "virus"
+            }
+        }
+    },
+    "3": {
+        "final_qi": {
+            "question": "What virus causes chickenpox?",
+            "short_answer": "Varicella-zoster virus",
+            "long_answer": "Chickenpox is caused by the varicella-zoster virus (VZV), a double-stranded DNA virus classified as human herpesvirus 3 in the Herpesviridae family. Primary infection with VZV produces the characteristic vesicular rash and systemic symptoms of chickenpox; later, the virus can remain latent in dorsal root ganglia and reactivate as shingles."
+        },
+        "0": {
+            "0": {
+                "question": "What virus causes chickenpox?",
+                "search_keyword": "virus causes chickenpox",
+                "final_answer": {
+                    "short_answer": "Varicella-zoster virus",
+                    "long_answer": "Chickenpox is caused by the varicella-zoster virus (VZV), a double-stranded DNA virus classified as human herpesvirus 3 in the Herpesviridae family. Primary infection with VZV produces the characteristic vesicular rash and systemic symptoms of chickenpox; later, the virus can remain latent in dorsal root ganglia and reactivate as shingles."
+                },
+                "target_answer_type": "virus"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Pityriasis lichenoides et varioliformis acuta (PLEVA) and chickenpox are clinically distinct conditions despite some similarities in their skin manifestations. Chickenpox is caused by the varicella-zoster virus, a member of the herpesvirus family. PLEVA, on the other hand, is associated with an immune response possibly triggered by several pathogens, with Epstein–Barr virus being the most consistently proposed trigger. There is no evidence linking the varicella-zoster virus to PLEVA, so they are not caused by the same virus.",
+        "short_answer": "no"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "QIDX": "991912",
+    "original_question": "What gene on chromosome 10 encodes the human enzyme Heparanase-2 and is linked to an autosomal recessive disorder causing children to appear as if they are crying when they smile?",
+    "type_q": "sequence",
+    "key_entities": [
+        "human enzyme Heparanase-2",
+        "crying when they smile",
+        "chromosome 10"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What gene on chromosome 10 encodes the human enzyme Heparanase-2 and is linked to an autosomal recessive disorder causing children to appear as if they are crying when they smile?",
+            "short_answer": "HPSE2",
+            "long_answer": "Heparanase-2 is encoded by the HPSE2 gene located on chromosome 10q23-q24. Homozygous loss-of-function mutations in HPSE2 cause autosomal-recessive urofacial (Ochoa) syndrome, in which affected children have a characteristic grimace that makes them look as if they are crying when they attempt to smile."
+        },
+        "0": {
+            "0": {
+                "question": "What is the autosomal recessive disorder that causes children to appear as if they are crying when they smile?",
+                "search_keyword": "autosomal recessive disorder children crying smiling",
+                "final_answer": {
+                    "short_answer": "HPSE2",
+                    "long_answer": "The HPSE2 gene, located on chromosome 10q23-q24, encodes the human protein Heparanase-2. Biallelic loss-of-function mutations in HPSE2 cause urofacial (Ochoa) syndrome, an autosomal recessive disorder in which affected children exhibit a characteristic inverted facial expression—appearing to cry when they attempt to smile—along with congenital bladder dysfunction."
+                },
+                "target_answer_type": "disorder"
+            },
+            "1": {
+                "question": "Which gene on chromosome 10 is linked to that autosomal recessive disorder?",
+                "search_keyword": "gene chromosome 10 linked autosomal recessive disorder",
+                "final_answer": {
+                    "short_answer": "HPSE2",
+                    "long_answer": "The HPSE2 gene, located on chromosome 10q23, encodes the human enzyme Heparanase-2. Biallelic (autosomal recessive) loss-of-function mutations in HPSE2 cause urofacial (Ochoa) syndrome, in which affected children display a distinctive inverted facial expression that makes them appear to be crying when they try to smile."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "What enzyme does that gene encode?",
+                "search_keyword": "enzyme encoded by gene chromosome 10",
+                "final_answer": {
+                    "short_answer": "HPSE2",
+                    "long_answer": "Heparanase-2 is encoded by the HPSE2 gene located on chromosome 10q23-q24. Homozygous loss-of-function mutations in HPSE2 cause autosomal-recessive urofacial (Ochoa) syndrome, in which affected children have a characteristic grimace that makes them look as if they are crying when they attempt to smile."
+                },
+                "target_answer_type": "enzyme"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Heparanase-2 is encoded by the HPSE2 gene located on chromosome 10q23-q24. Homozygous loss-of-function mutations in HPSE2 cause autosomal-recessive urofacial (Ochoa) syndrome, in which affected children have a characteristic grimace that makes them look as if they are crying when they attempt to smile.",
+        "short_answer": "HPSE2"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "QIDX": "849453",
+    "original_question": "Do any genes associated with Cystinuria syndrome encode proteins that belong to a family of light subunit amino acid transporters?",
+    "type_q": "sequence",
+    "key_entities": [
+        "light subunit amino acid transporters",
+        "Cystinuria syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Do any genes associated with Cystinuria syndrome encode proteins that belong to a family of light subunit amino acid transporters?",
+            "short_answer": "yes",
+            "long_answer": "Cystinuria is most commonly caused by pathogenic variants in two genes: SLC3A1 and SLC7A9. SLC3A1 encodes rBAT, the heavy subunit of the renal cystine–dibasic amino-acid transporter. SLC7A9 encodes b0,+AT, which is the light subunit of the same heteromeric transporter complex and is a member of the SLC7 family of light subunit amino-acid transporters (heteromeric amino-acid transporter family, HAT). Thus, at least one cystinuria-associated gene (SLC7A9) clearly encodes a protein that belongs to the family of light subunit amino-acid transporters. Therefore, the statement is supported by established biomedical consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Which genes are associated with Cystinuria syndrome?",
+                "search_keyword": "genes associated Cystinuria syndrome",
+                "final_answer": {
+                    "short_answer": "SLC7A9",
+                    "long_answer": "Yes. The SLC7A9 gene, mutated in many cases of cystinuria, encodes the b(0,+)AT protein, which is a member of the light-subunit amino acid transporter (L-type) family that pairs with the rBAT heavy subunit to form the renal cystine/ dibasic amino-acid transporter."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Do any of those genes encode proteins that belong to a family of light subunit amino acid transporters?",
+                "search_keyword": "genes encode proteins light subunit amino acid transporters",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Cystinuria is most commonly caused by pathogenic variants in two genes: SLC3A1 and SLC7A9. SLC3A1 encodes rBAT, the heavy subunit of the renal cystine–dibasic amino-acid transporter. SLC7A9 encodes b0,+AT, which is the light subunit of the same heteromeric transporter complex and is a member of the SLC7 family of light subunit amino-acid transporters (heteromeric amino-acid transporter family, HAT). Thus, at least one cystinuria-associated gene (SLC7A9) clearly encodes a protein that belongs to the family of light subunit amino-acid transporters. Therefore, the statement is supported by established biomedical consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Cystinuria is most commonly caused by pathogenic variants in two genes: SLC3A1 and SLC7A9. SLC3A1 encodes rBAT, the heavy subunit of the renal cystine–dibasic amino-acid transporter. SLC7A9 encodes b0,+AT, which is the light subunit of the same heteromeric transporter complex and is a member of the SLC7 family of light subunit amino-acid transporters (heteromeric amino-acid transporter family, HAT). Thus, at least one cystinuria-associated gene (SLC7A9) clearly encodes a protein that belongs to the family of light subunit amino-acid transporters. Therefore, the statement is supported by established biomedical consensus.",
+        "short_answer": "yes"
+    }
+}

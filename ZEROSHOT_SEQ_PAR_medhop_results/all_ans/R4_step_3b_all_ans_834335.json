@@ -1,0 +1,68 @@
+{
+    "QIDX": "834335",
+    "original_question": "Are the deficient enzymes in sialidosis and fucosidosis encoded by genes on the same chromosome?",
+    "type_q": "parallel",
+    "key_entities": [
+        "deficient enzymes",
+        "fucosidosis",
+        "sialidosis"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Are the deficient enzymes in sialidosis encoded by genes on the same chromosome as those in fucosidosis?",
+            "short_answer": "no",
+            "long_answer": "Sialidosis is caused by a deficiency of the lysosomal enzyme α-N-acetyl-neuraminidase (sialidase) encoded by the NEU1 gene on chromosome 6p21.3. Fucosidosis results from deficiency of lysosomal α-L-fucosidase encoded by the FUCA1 gene on chromosome 1p36.11. Because the responsible genes are located on different chromosomes (chromosome 6 for sialidosis, chromosome 1 for fucosidosis), the deficient enzymes are not encoded on the same chromosome."
+        },
+        "0": {
+            "0": {
+                "question": "Are the deficient enzymes in sialidosis encoded by genes on the same chromosome as those in fucosidosis?",
+                "search_keyword": "sialidosis fucosidosis deficient enzymes same chromosome",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Sialidosis is caused by a deficiency of the lysosomal enzyme α-N-acetyl-neuraminidase (sialidase) encoded by the NEU1 gene on chromosome 6p21.3. Fucosidosis results from deficiency of lysosomal α-L-fucosidase encoded by the FUCA1 gene on chromosome 1p36.11. Because the responsible genes are located on different chromosomes (chromosome 6 for sialidosis, chromosome 1 for fucosidosis), the deficient enzymes are not encoded on the same chromosome."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What chromosome is the gene for the deficient enzyme in sialidosis located on?",
+            "short_answer": "Chromosome 6",
+            "long_answer": "Sialidosis is caused by a deficiency of lysosomal α-neuraminidase (encoded by the NEU1 gene). The NEU1 gene is mapped to chromosome 6 at band p21.3; hence, the defective enzyme’s gene in sialidosis resides on chromosome 6."
+        },
+        "0": {
+            "0": {
+                "question": "What chromosome is the gene for the deficient enzyme in sialidosis located on?",
+                "search_keyword": "sialidosis deficient enzyme gene chromosome location",
+                "final_answer": {
+                    "short_answer": "Chromosome 6",
+                    "long_answer": "Sialidosis is caused by a deficiency of lysosomal α-neuraminidase (encoded by the NEU1 gene). The NEU1 gene is mapped to chromosome 6 at band p21.3; hence, the defective enzyme’s gene in sialidosis resides on chromosome 6."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "3": {
+        "final_qi": {
+            "question": "What chromosome is the gene for the deficient enzyme in fucosidosis located on?",
+            "short_answer": "Chromosome 1",
+            "long_answer": "Fucosidosis is caused by a deficiency of the lysosomal enzyme α-L-fucosidase. The responsible gene, FUCA1, has been mapped cytogenetically to the short arm of chromosome 1 (region 1p36). Thus, the gene for the deficient enzyme in fucosidosis resides on chromosome 1."
+        },
+        "0": {
+            "0": {
+                "question": "What chromosome is the gene for the deficient enzyme in fucosidosis located on?",
+                "search_keyword": "fucosidosis deficient enzyme gene chromosome location",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "Fucosidosis is caused by a deficiency of the lysosomal enzyme α-L-fucosidase. The responsible gene, FUCA1, has been mapped cytogenetically to the short arm of chromosome 1 (region 1p36). Thus, the gene for the deficient enzyme in fucosidosis resides on chromosome 1."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Sialidosis is caused by a deficiency of the lysosomal enzyme α-N-acetyl-neuraminidase, encoded by the NEU1 gene on chromosome 6p21.3, while fucosidosis results from deficiency of lysosomal α-L-fucosidase, encoded by the FUCA1 gene on chromosome 1p36.11. Therefore, the enzymes’ genes are located on different chromosomes.",
+        "short_answer": "no"
+    }
+}

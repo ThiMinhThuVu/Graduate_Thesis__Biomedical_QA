@@ -1,0 +1,43 @@
+{
+    "QIDX": "864685",
+    "original_question": "Which gene that causes an X-linked recessive disorder characterized by adrenal insufficiency and underdeveloped male reproductive tissues encodes a nuclear receptor protein lacking the typical DNA-binding domain found in other nuclear receptors?",
+    "type_q": "sequence",
+    "key_entities": [
+        "X-linked recessive disorder",
+        "nuclear receptor protein",
+        "adrenal insufficiency",
+        "DNA-binding domain",
+        "nuclear receptors"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene that causes an X-linked recessive disorder characterized by adrenal insufficiency and underdeveloped male reproductive tissues encodes a nuclear receptor protein lacking the typical DNA-binding domain found in other nuclear receptors?",
+            "short_answer": "NR0B1 (DAX1)",
+            "long_answer": "The NR0B1 gene, also known as DAX1, is located on the X chromosome and when mutated causes X-linked adrenal hypoplasia congenita, a recessive disorder marked by adrenal insufficiency and poorly developed male gonads. NR0B1 encodes the DAX1 nuclear receptor, which is atypical because it lacks the classical zinc-finger DNA-binding domain present in most nuclear receptor family members."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene causes an X-linked recessive disorder characterized by adrenal insufficiency and underdeveloped male reproductive tissues?",
+                "search_keyword": "gene X-linked recessive disorder adrenal insufficiency underdeveloped male reproductive tissues",
+                "final_answer": {
+                    "short_answer": "NR0B1 (DAX1)",
+                    "long_answer": "The NR0B1 gene, also called DAX1, is located on Xp21.3 and causes the X-linked recessive disorder adrenal hypoplasia congenita, which presents with primary adrenal insufficiency and under-developed male reproductive tissues. NR0B1 encodes an orphan nuclear receptor that uniquely lacks the conventional zinc-finger DNA-binding domain seen in most nuclear receptors, fitting the description in the question."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "What type of protein does that gene encode?",
+                "search_keyword": "protein encoded by gene nuclear receptor lacking DNA-binding domain",
+                "final_answer": {
+                    "short_answer": "NR0B1 (DAX1)",
+                    "long_answer": "The NR0B1 gene, also known as DAX1, is located on the X chromosome and when mutated causes X-linked adrenal hypoplasia congenita, a recessive disorder marked by adrenal insufficiency and poorly developed male gonads. NR0B1 encodes the DAX1 nuclear receptor, which is atypical because it lacks the classical zinc-finger DNA-binding domain present in most nuclear receptor family members."
+                },
+                "target_answer_type": "protein"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The NR0B1 gene, also known as DAX1, is located on the X chromosome and when mutated causes X-linked adrenal hypoplasia congenita, a recessive disorder marked by adrenal insufficiency and poorly developed male gonads. NR0B1 encodes the DAX1 nuclear receptor, which is atypical because it lacks the classical zinc-finger DNA-binding domain present in most nuclear receptor family members.",
+        "short_answer": "NR0B1 (DAX1)"
+    }
+}

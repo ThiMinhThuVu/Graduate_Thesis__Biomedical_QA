@@ -1,0 +1,39 @@
+{
+    "QIDX": "596427",
+    "original_question": "On which chromosome is the gene associated with familial angiolipomas located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "familial angiolipomas"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene associated with familial angiolipomas located?",
+            "short_answer": "Chromosome 1",
+            "long_answer": "Familial multiple angiolipomatosis is an autosomal-dominant condition. Linkage studies have mapped the responsible locus to chromosome 1p (around 1p14-p21). Hence, the gene predisposing to familial angiolipomas is located on chromosome 1."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with familial angiolipomas?",
+                "search_keyword": "gene associated familial angiolipomas",
+                "final_answer": {
+                    "short_answer": "Chromosome 12",
+                    "long_answer": "Linkage analyses of families with multiple (familial) angiolipomas showed co-segregation with markers in the 12q13-15 region. This chromosomal segment contains HMGA2 and other genes repeatedly rearranged in lipomatous tumours, indicating that the disease-associated gene for familial angiolipomas resides on chromosome 12."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "Familial multiple angiolipomatosis is an autosomal-dominant condition. Linkage studies have mapped the responsible locus to chromosome 1p (around 1p14-p21). Hence, the gene predisposing to familial angiolipomas is located on chromosome 1."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Familial multiple angiolipomatosis is an autosomal-dominant condition. Linkage studies have mapped the responsible locus to chromosome 1p (around 1p14-p21). Hence, the gene predisposing to familial angiolipomas is located on chromosome 1.",
+        "short_answer": "Chromosome 1"
+    }
+}

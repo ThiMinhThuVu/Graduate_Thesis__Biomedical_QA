@@ -1,0 +1,42 @@
+{
+    "QIDX": "901549",
+    "original_question": "Does the gene responsible for a disease characterized by digit malformations, craniofacial abnormalities, intellectual disabilities, and growth retardation, affect the process that produces genetically identical daughter cells?",
+    "type_q": "sequence",
+    "key_entities": [
+        "craniofacial abnormalities",
+        "intellectual disabilities",
+        "digit malformations",
+        "daughter cells"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Does the gene responsible for a disease characterized by digit malformations, craniofacial abnormalities, intellectual disabilities, and growth retardation, affect the process that produces genetically identical daughter cells?",
+            "short_answer": "yes",
+            "long_answer": "The clinical picture – digit (limb) malformations, cranio-facial abnormalities, intellectual disability and growth retardation – is typical of cohesin-pathway disorders such as Cornelia-de-Lange syndrome or Roberts syndrome.  The genes most often mutated in these disorders (e.g., NIPBL, SMC1A, SMC3, RAD21, ESCO2) encode proteins that load, modify or form the cohesin complex.  Cohesin’s primary, evolutionarily conserved role is to hold sister chromatids together from S phase until anaphase, thereby ensuring that mitosis produces two genetically identical daughter cells.  When these genes are defective, sister-chromatid cohesion is impaired, leading to chromosome segregation errors and the developmental anomalies listed.  Hence, the gene responsible for the described disease directly affects the mitotic process that yields genetically identical daughter cells."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is responsible for a disease characterized by digit malformations, craniofacial abnormalities, intellectual disabilities, and growth retardation?",
+                "search_keyword": "gene responsible disease digit malformations craniofacial abnormalities intellectual disabilities growth retardation",
+                "final_answer": {
+                    "short_answer": "Mitosis",
+                    "long_answer": "Yes. Cornelia-de-Lange syndrome is most often caused by mutations in NIPBL or other cohesin-complex genes (SMC1A, SMC3, RAD21, HDAC8). These proteins load or form the cohesin ring that holds sister chromatids together, an essential step for accurate chromosome segregation during mitosis—the cell-division process that yields two genetically identical daughter cells. Loss of proper NIPBL/cohesin function therefore directly impairs mitosis, linking the gene defect to the developmental abnormalities observed."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Does that gene affect the process that produces genetically identical daughter cells?",
+                "search_keyword": "gene affect process genetically identical daughter cells",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "The clinical picture – digit (limb) malformations, cranio-facial abnormalities, intellectual disability and growth retardation – is typical of cohesin-pathway disorders such as Cornelia-de-Lange syndrome or Roberts syndrome.  The genes most often mutated in these disorders (e.g., NIPBL, SMC1A, SMC3, RAD21, ESCO2) encode proteins that load, modify or form the cohesin complex.  Cohesin’s primary, evolutionarily conserved role is to hold sister chromatids together from S phase until anaphase, thereby ensuring that mitosis produces two genetically identical daughter cells.  When these genes are defective, sister-chromatid cohesion is impaired, leading to chromosome segregation errors and the developmental anomalies listed.  Hence, the gene responsible for the described disease directly affects the mitotic process that yields genetically identical daughter cells."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The clinical picture – digit (limb) malformations, cranio-facial abnormalities, intellectual disability and growth retardation – is typical of cohesin-pathway disorders such as Cornelia-de-Lange syndrome or Roberts syndrome.  The genes most often mutated in these disorders (e.g., NIPBL, SMC1A, SMC3, RAD21, ESCO2) encode proteins that load, modify or form the cohesin complex.  Cohesin’s primary, evolutionarily conserved role is to hold sister chromatids together from S phase until anaphase, thereby ensuring that mitosis produces two genetically identical daughter cells.  When these genes are defective, sister-chromatid cohesion is impaired, leading to chromosome segregation errors and the developmental anomalies listed.  Hence, the gene responsible for the described disease directly affects the mitotic process that yields genetically identical daughter cells.",
+        "short_answer": "yes"
+    }
+}

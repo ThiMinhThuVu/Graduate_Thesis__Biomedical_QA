@@ -1,0 +1,41 @@
+{
+    "QIDX": "550597",
+    "original_question": "Which type of enzyme is deficient in Papillon–Lefèvre syndrome, a disorder characterized by palmoplantar keratoderma and severe periodontitis?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Papillon–Lefèvre syndrome",
+        "palmoplantar keratoderma",
+        "severe periodontitis"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which type of enzyme is deficient in Papillon–Lefèvre syndrome, a disorder characterized by palmoplantar keratoderma and severe periodontitis?",
+            "short_answer": "Cathepsin C",
+            "long_answer": "Papillon–Lefèvre syndrome results from loss-of-function mutations in the CTSC gene, causing deficiency of cathepsin C (also called dipeptidyl-peptidase I), a lysosomal cysteine protease responsible for activating neutrophil serine proteases. Lack of this enzyme impairs host defense and leads to the characteristic palmoplantar keratoderma and severe early-onset periodontitis."
+        },
+        "0": {
+            "0": {
+                "question": "What is Papillon–Lefèvre syndrome characterized by?",
+                "search_keyword": "Papillon–Lefèvre syndrome characteristics palmoplantar keratoderma severe periodontitis",
+                "final_answer": {
+                    "short_answer": "Cathepsin C",
+                    "long_answer": "Papillon–Lefèvre syndrome results from loss-of-function mutations in the CTSC gene, leading to deficiency of the lysosomal cysteine protease cathepsin C (also known as dipeptidyl peptidase I). Absence of this protease disrupts neutrophil and epithelial cell function, which underlies the characteristic palmoplantar keratoderma and rapidly progressive periodontitis."
+                },
+                "target_answer_type": "characteristic"
+            },
+            "1": {
+                "question": "Which type of enzyme is deficient in Papillon–Lefèvre syndrome?",
+                "search_keyword": "enzyme deficiency Papillon–Lefèvre syndrome",
+                "final_answer": {
+                    "short_answer": "Cathepsin C",
+                    "long_answer": "Papillon–Lefèvre syndrome results from loss-of-function mutations in the CTSC gene, causing deficiency of cathepsin C (also called dipeptidyl-peptidase I), a lysosomal cysteine protease responsible for activating neutrophil serine proteases. Lack of this enzyme impairs host defense and leads to the characteristic palmoplantar keratoderma and severe early-onset periodontitis."
+                },
+                "target_answer_type": "enzyme"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Papillon–Lefèvre syndrome results from loss-of-function mutations in the CTSC gene, causing deficiency of cathepsin C (also called dipeptidyl-peptidase I), a lysosomal cysteine protease responsible for activating neutrophil serine proteases. Lack of this enzyme impairs host defense and leads to the characteristic palmoplantar keratoderma and severe early-onset periodontitis.",
+        "short_answer": "Cathepsin C"
+    }
+}

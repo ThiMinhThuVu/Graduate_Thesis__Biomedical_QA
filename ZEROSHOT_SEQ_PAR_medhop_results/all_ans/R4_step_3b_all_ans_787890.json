@@ -1,0 +1,40 @@
+{
+    "QIDX": "787890",
+    "original_question": "Which member of the protein tyrosine phosphatase (PTP) family is linked to a disorder characterized by dark brown spots on the skin?",
+    "type_q": "sequence",
+    "key_entities": [
+        "protein tyrosine phosphatase (PTP) family",
+        "dark brown spots"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which member of the protein tyrosine phosphatase (PTP) family is linked to a disorder characterized by dark brown spots on the skin?",
+            "short_answer": "PTPN11",
+            "long_answer": "Mutations in the protein tyrosine phosphatase gene PTPN11 (encoding the SHP-2 phosphatase) cause LEOPARD syndrome, also known as multiple lentigines syndrome, whose hallmark is the appearance of numerous dark brown skin spots (lentigines)."
+        },
+        "0": {
+            "0": {
+                "question": "Which disorder is characterized by dark brown spots on the skin?",
+                "search_keyword": "disorder dark brown spots skin",
+                "final_answer": {
+                    "short_answer": "PTPN11",
+                    "long_answer": "Germ-line mutations in the PTP family member PTPN11, which encodes the phosphatase SHP-2, cause LEOPARD (multiple lentigines) syndrome. This disorder is marked by hundreds of dark brown skin macules (lentigines), firmly establishing PTPN11 as the protein tyrosine phosphatase linked to the characteristic skin spots."
+                },
+                "target_answer_type": "disorder"
+            },
+            "1": {
+                "question": "Which member of the protein tyrosine phosphatase (PTP) family is linked to that disorder?",
+                "search_keyword": "protein tyrosine phosphatase member linked disorder",
+                "final_answer": {
+                    "short_answer": "PTPN11",
+                    "long_answer": "Mutations in the protein tyrosine phosphatase gene PTPN11 (encoding the SHP-2 phosphatase) cause LEOPARD syndrome, also known as multiple lentigines syndrome, whose hallmark is the appearance of numerous dark brown skin spots (lentigines)."
+                },
+                "target_answer_type": "protein tyrosine phosphatase"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Mutations in the protein tyrosine phosphatase gene PTPN11 (encoding the SHP-2 phosphatase) cause LEOPARD syndrome, also known as multiple lentigines syndrome, whose hallmark is the appearance of numerous dark brown skin spots (lentigines).",
+        "short_answer": "PTPN11"
+    }
+}

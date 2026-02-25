@@ -1,0 +1,49 @@
+{
+    "QIDX": "601233",
+    "original_question": "Are fissured tongue and geographic tongue both benign conditions?",
+    "type_q": "parallel",
+    "key_entities": [
+        "geographic tongue",
+        "fissured tongue"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is fissured tongue a benign condition?",
+            "short_answer": "yes",
+            "long_answer": "Fissured tongue (also called scrotal, grooved, or plicated tongue) is generally regarded in oral medicine and pathology textbooks as a normal anatomic variant rather than a disease. It is usually asymptomatic, carries no known risk of malignant transformation, and does not require treatment other than advice on oral hygiene if food debris becomes trapped in the grooves. Therefore, it is considered a benign condition."
+        },
+        "0": {
+            "0": {
+                "question": "Is fissured tongue a benign condition?",
+                "search_keyword": "fissured tongue benign condition",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Fissured tongue (also called scrotal, grooved, or plicated tongue) is generally regarded in oral medicine and pathology textbooks as a normal anatomic variant rather than a disease. It is usually asymptomatic, carries no known risk of malignant transformation, and does not require treatment other than advice on oral hygiene if food debris becomes trapped in the grooves. Therefore, it is considered a benign condition."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is geographic tongue a benign condition?",
+            "short_answer": "yes",
+            "long_answer": "Geographic tongue—also called benign migratory glossitis—is widely regarded in dentistry and oral medicine as a harmless, self-limiting condition. It is characterized by transient, map-like areas of depapillation on the dorsum of the tongue that can change location over time. Although some patients experience mild discomfort or sensitivity to certain foods, it carries no risk of malignant transformation, systemic disease, or lasting tissue damage. Because of this benign natural history, no specific medical treatment is required other than reassurance and symptomatic care if irritation occurs. Hence, geographic tongue is classified as a benign condition according to established clinical consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Is geographic tongue a benign condition?",
+                "search_keyword": "geographic tongue benign condition",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Geographic tongue—also called benign migratory glossitis—is widely regarded in dentistry and oral medicine as a harmless, self-limiting condition. It is characterized by transient, map-like areas of depapillation on the dorsum of the tongue that can change location over time. Although some patients experience mild discomfort or sensitivity to certain foods, it carries no risk of malignant transformation, systemic disease, or lasting tissue damage. Because of this benign natural history, no specific medical treatment is required other than reassurance and symptomatic care if irritation occurs. Hence, geographic tongue is classified as a benign condition according to established clinical consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Both conditions are described as benign. Fissured tongue is considered a normal anatomical variant without malignant potential, and geographic tongue is recognized as a harmless and self-limiting condition, confirming that both are benign conditions.",
+        "short_answer": "yes"
+    }
+}

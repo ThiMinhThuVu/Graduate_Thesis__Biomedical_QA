@@ -1,0 +1,51 @@
+{
+    "QIDX": "168957",
+    "original_question": "White piedra and black piedra are infections of the hair shaft caused by organisms of which taxonomic domain?",
+    "type_q": "parallel",
+    "key_entities": [
+        "taxonomic domain",
+        "White piedra",
+        "black piedra",
+        "hair shaft"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What taxonomic domain causes white piedra infections of the hair shaft?",
+            "short_answer": "Eukarya",
+            "long_answer": "White piedra is produced by yeast-like fungi of the genus Trichosporon. All fungi are nucleated, membrane-bound organisms classified in the taxonomic domain Eukarya, so the causative agents of white piedra are eukaryotes."
+        },
+        "0": {
+            "0": {
+                "question": "What taxonomic domain causes white piedra infections of the hair shaft?",
+                "search_keyword": "taxonomic domain white piedra hair shaft infections",
+                "final_answer": {
+                    "short_answer": "Eukarya",
+                    "long_answer": "White piedra is produced by yeast-like fungi of the genus Trichosporon. All fungi are nucleated, membrane-bound organisms classified in the taxonomic domain Eukarya, so the causative agents of white piedra are eukaryotes."
+                },
+                "target_answer_type": "taxonomic domain"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What taxonomic domain causes black piedra infections of the hair shaft?",
+            "short_answer": "Eukaryota",
+            "long_answer": "Black piedra is a superficial fungal infection of the hair shaft produced by the fungus Piedraia hortae. All fungi are classified within the taxonomic domain Eukaryota; therefore, the domain responsible for black piedra infections is Eukaryota."
+        },
+        "0": {
+            "0": {
+                "question": "What taxonomic domain causes black piedra infections of the hair shaft?",
+                "search_keyword": "black piedra infections taxonomic domain hair shaft",
+                "final_answer": {
+                    "short_answer": "Eukaryota",
+                    "long_answer": "Black piedra is a superficial fungal infection of the hair shaft produced by the fungus Piedraia hortae. All fungi are classified within the taxonomic domain Eukaryota; therefore, the domain responsible for black piedra infections is Eukaryota."
+                },
+                "target_answer_type": "taxonomic domain"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Both white piedra and black piedra are infections caused by fungi. White piedra is caused by yeast-like fungi of the genus Trichosporon, and black piedra is caused by the fungus Piedraia hortae. All fungi are organisms that belong to the taxonomic domain Eukarya (also referred to as Eukaryota). Since the question requires the answer to be exactly as extracted from the question, the correct answer is 'Eukarya'.",
+        "short_answer": "Eukarya"
+    }
+}

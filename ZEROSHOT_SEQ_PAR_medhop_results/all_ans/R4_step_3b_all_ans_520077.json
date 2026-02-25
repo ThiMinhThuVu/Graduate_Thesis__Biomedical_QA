@@ -1,0 +1,67 @@
+{
+    "QIDX": "520077",
+    "original_question": "When the pupil becomes smaller in sunlight, does presbyopia become less noticeable because of the focal ratio increase?",
+    "type_q": "parallel",
+    "key_entities": [
+        "focal ratio",
+        "presbyopia"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Does the pupil become smaller in sunlight?",
+            "short_answer": "yes",
+            "long_answer": "In bright light, such as direct sunlight, the pupillary light reflex is activated. Photoreceptors in the retina send signals through the optic nerve to the pretectal nuclei and then to the Edinger-Westphal nuclei in the midbrain. Parasympathetic fibers traveling via the oculomotor (III) nerve stimulate the sphincter pupillae muscle in the iris, causing it to contract. This constriction (miosis) reduces the diameter of the pupil, limiting the amount of light entering the eye and protecting the retina from excessive illumination. This response is a well-established, normal physiological reaction."
+        },
+        "0": {
+            "0": {
+                "question": "Does the pupil become smaller in sunlight?",
+                "search_keyword": "pupil size sunlight constriction",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "In bright light, such as direct sunlight, the pupillary light reflex is activated. Photoreceptors in the retina send signals through the optic nerve to the pretectal nuclei and then to the Edinger-Westphal nuclei in the midbrain. Parasympathetic fibers traveling via the oculomotor (III) nerve stimulate the sphincter pupillae muscle in the iris, causing it to contract. This constriction (miosis) reduces the diameter of the pupil, limiting the amount of light entering the eye and protecting the retina from excessive illumination. This response is a well-established, normal physiological reaction."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Does presbyopia become less noticeable when the pupil is smaller?",
+            "short_answer": "yes",
+            "long_answer": "Presbyopia is the age-related loss of the eye’s ability to accommodate (change lens power) for near vision. When the pupil constricts—such as in bright light or after pharmacologic miotic therapy—the aperture through which light enters the eye becomes smaller. A smaller aperture increases depth of focus and reduces the size of the blur circle on the retina (the ‘pinhole effect’). Although the underlying accommodative loss is unchanged, the increased depth of focus allows near objects to appear clearer, so the functional impact of presbyopia is less noticeable. Ophthalmology texts and clinical practice note that patients with presbyopia often read better in bright light for exactly this reason. Therefore, the statement is supported by established optical and clinical understanding."
+        },
+        "0": {
+            "0": {
+                "question": "Does presbyopia become less noticeable when the pupil is smaller?",
+                "search_keyword": "presbyopia pupil size effect visibility",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Presbyopia is the age-related loss of the eye’s ability to accommodate (change lens power) for near vision. When the pupil constricts—such as in bright light or after pharmacologic miotic therapy—the aperture through which light enters the eye becomes smaller. A smaller aperture increases depth of focus and reduces the size of the blur circle on the retina (the ‘pinhole effect’). Although the underlying accommodative loss is unchanged, the increased depth of focus allows near objects to appear clearer, so the functional impact of presbyopia is less noticeable. Ophthalmology texts and clinical practice note that patients with presbyopia often read better in bright light for exactly this reason. Therefore, the statement is supported by established optical and clinical understanding."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "3": {
+        "final_qi": {
+            "question": "Does the focal ratio increase when the pupil becomes smaller in sunlight?",
+            "short_answer": "yes",
+            "long_answer": "In optical systems, the focal ratio (f-number) is defined as the focal length divided by the aperture diameter. In the human eye the focal length (≈17 mm) stays essentially constant, while the aperture is the pupil. When sunlight causes the pupil to constrict, the pupil’s diameter decreases. Because the denominator in the f-number equation becomes smaller while the focal length stays the same, the focal ratio (f-number) necessarily becomes larger. Hence, the focal ratio of the eye increases when the pupil becomes smaller in bright light."
+        },
+        "0": {
+            "0": {
+                "question": "Does the focal ratio increase when the pupil becomes smaller in sunlight?",
+                "search_keyword": "focal ratio increase pupil smaller sunlight",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "In optical systems, the focal ratio (f-number) is defined as the focal length divided by the aperture diameter. In the human eye the focal length (≈17 mm) stays essentially constant, while the aperture is the pupil. When sunlight causes the pupil to constrict, the pupil’s diameter decreases. Because the denominator in the f-number equation becomes smaller while the focal length stays the same, the focal ratio (f-number) necessarily becomes larger. Hence, the focal ratio of the eye increases when the pupil becomes smaller in bright light."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The information provided confirms that the pupil constricts in sunlight, which increases the focal ratio (f-number) due to the smaller aperture. This results in a pinhole effect that increases depth of focus. Although presbyopia, the age-related loss of accommodation, is not corrected, the increased depth of focus makes the condition less noticeable. Therefore, the optical and clinical evidence supports that presbyopia becomes less noticeable when the pupil is smaller in sunlight because of the increased focal ratio.",
+        "short_answer": "yes"
+    }
+}

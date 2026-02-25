@@ -1,0 +1,40 @@
+{
+    "QIDX": "462009",
+    "original_question": "Is Berk–Tabatznik syndrome, a syndrome that has only been observed in very few cases, associated with a condition in which one or more of the phalanges of the fingers and toes are smaller than normal?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Berk–Tabatznik syndrome",
+        "Is Berk–Tabatznik"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is Berk–Tabatznik syndrome, a syndrome that has only been observed in very few cases, associated with a condition in which one or more of the phalanges of the fingers and toes are smaller than normal?",
+            "short_answer": "yes",
+            "long_answer": "Berk–Tabatznik syndrome is an extremely rare congenital malformation syndrome that has been described in only a handful of patients (the original description concerned two siblings). The clinical picture that was reported included several skeletal abnormalities, among them marked brachyphalangy/brachydactyly – i.e., shortening of one or more phalanges of the fingers and toes due to under-developed or hypoplastic phalangeal bones. Consequently, the syndrome is indeed associated with the condition in which one or more phalanges are smaller or shorter than normal."
+        },
+        "0": {
+            "0": {
+                "question": "What is Berk–Tabatznik syndrome and what are its characteristics?",
+                "search_keyword": "Berk–Tabatznik syndrome characteristics",
+                "final_answer": {
+                    "short_answer": "Brachyphalangy",
+                    "long_answer": "Yes. In the few published case reports, Berk–Tabatznik syndrome is described as a triad that includes ocular microspherophakia and skeletal abnormalities, particularly brachyphalangy—shortened phalanges of the fingers and toes. Thus the syndrome is indeed associated with the condition in which one or more phalanges are smaller than normal."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Is Berk–Tabatznik syndrome associated with a condition where one or more phalanges of the fingers and toes are smaller than normal?",
+                "search_keyword": "Berk–Tabatznik syndrome phalanges condition",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Berk–Tabatznik syndrome is an extremely rare congenital malformation syndrome that has been described in only a handful of patients (the original description concerned two siblings). The clinical picture that was reported included several skeletal abnormalities, among them marked brachyphalangy/brachydactyly – i.e., shortening of one or more phalanges of the fingers and toes due to under-developed or hypoplastic phalangeal bones. Consequently, the syndrome is indeed associated with the condition in which one or more phalanges are smaller or shorter than normal."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Berk–Tabatznik syndrome is an extremely rare congenital malformation syndrome that has been described in only a handful of patients (the original description concerned two siblings). The clinical picture that was reported included several skeletal abnormalities, among them marked brachyphalangy/brachydactyly – i.e., shortening of one or more phalanges of the fingers and toes due to under-developed or hypoplastic phalangeal bones. Consequently, the syndrome is indeed associated with the condition in which one or more phalanges are smaller or shorter than normal.",
+        "short_answer": "yes"
+    }
+}

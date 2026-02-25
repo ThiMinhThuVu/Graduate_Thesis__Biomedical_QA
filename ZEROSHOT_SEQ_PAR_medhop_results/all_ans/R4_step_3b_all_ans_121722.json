@@ -1,0 +1,49 @@
+{
+    "QIDX": "121722",
+    "original_question": "On which chromosome is the gene located that is mutated in the disease for which alglucerase was the first FDA-approved enzyme replacement therapy?",
+    "type_q": "sequence",
+    "key_entities": [
+        "enzyme replacement therapy",
+        "alglucerase"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene located that is mutated in the disease for which alglucerase was the first FDA-approved enzyme replacement therapy?",
+            "short_answer": "Chromosome 1",
+            "long_answer": "Alglucerase (Ceredase) was the first FDA-approved enzyme replacement therapy, used for Gaucher disease. Gaucher disease results from mutations in the GBA gene that encodes the lysosomal enzyme β-glucocerebrosidase. The GBA gene is located on chromosome 1 at band 1q21, so the pathogenic mutations reside on chromosome 1."
+        },
+        "0": {
+            "0": {
+                "question": "Which disease is treated with alglucerase as the first FDA-approved enzyme replacement therapy?",
+                "search_keyword": "disease alglucerase FDA-approved enzyme replacement therapy",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "Alglucerase (Ceredase) was the first FDA-approved enzyme-replacement therapy for Gaucher disease. Gaucher disease results from mutations in the GBA1 gene that encodes the lysosomal enzyme β-glucocerebrosidase. The GBA1 gene is located on chromosome 1 (specifically 1q21), so the pathogenic mutations responsible for Gaucher disease occur on chromosome 1."
+                },
+                "target_answer_type": "disease"
+            },
+            "1": {
+                "question": "Which gene is mutated in that disease?",
+                "search_keyword": "gene mutated disease alglucerase",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "Alglucerase was the first FDA-approved enzyme replacement therapy for Gaucher disease, which is caused by mutations in the GBA gene encoding β-glucocerebrosidase. The GBA gene is located on chromosome 1 (band 1q21), so the disease-causing gene resides on chromosome 1."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "Alglucerase (Ceredase) was the first FDA-approved enzyme replacement therapy, used for Gaucher disease. Gaucher disease results from mutations in the GBA gene that encodes the lysosomal enzyme β-glucocerebrosidase. The GBA gene is located on chromosome 1 at band 1q21, so the pathogenic mutations reside on chromosome 1."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Alglucerase (Ceredase) was the first FDA-approved enzyme replacement therapy, used for Gaucher disease. Gaucher disease results from mutations in the GBA gene that encodes the lysosomal enzyme β-glucocerebrosidase. The GBA gene is located on chromosome 1 at band 1q21, so the pathogenic mutations reside on chromosome 1.",
+        "short_answer": "Chromosome 1"
+    }
+}

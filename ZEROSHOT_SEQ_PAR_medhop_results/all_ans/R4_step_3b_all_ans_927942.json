@@ -1,0 +1,49 @@
+{
+    "QIDX": "927942",
+    "original_question": "What disease is associated with the overexpression of a gene linked to various tumors, including neuroblastomas, and was first described by an American physician in 1975?",
+    "type_q": "sequence",
+    "key_entities": [
+        "neuroblastomas",
+        "tumors"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What disease is associated with the overexpression of a gene linked to various tumors, including neuroblastomas, and was first described by an American physician in 1975?",
+            "short_answer": "Simpson-Golabi-Behmel syndrome",
+            "long_answer": "Simpson-Golabi-Behmel syndrome (SGBS) is an X-linked overgrowth disorder that was first described in 1975 by the American physician-geneticist Joe Leigh Simpson. The condition results from loss-of-function alterations in the GPC3 gene. While GPC3 deficiency produces the syndrome, the same gene is frequently over-expressed in a variety of malignancies—including hepatocellular carcinoma, Wilms tumour and neuroblastoma—so SGBS is clinically recognised as a cancer-predisposition disorder linked to the oncogenic overexpression of GPC3."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is linked to various tumors, including neuroblastomas, and is associated with overexpression?",
+                "search_keyword": "gene linked tumors neuroblastomas overexpression",
+                "final_answer": {
+                    "short_answer": "Feingold syndrome",
+                    "long_answer": "Feingold syndrome was first described in 1975 by the American clinical geneticist Murray Feingold. The disorder is caused by heterozygous loss-of-function mutations or deletions of the MYCN gene. While MYCN is well known as an oncogene whose amplification/over-expression drives several cancers—including neuroblastoma, medulloblastoma and small-cell lung carcinoma—germ-line disruption of the same gene produces the congenital anomaly pattern recognized as Feingold syndrome."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "What disease is associated with the overexpression of that gene?",
+                "search_keyword": "disease associated overexpression gene",
+                "final_answer": {
+                    "short_answer": "Feingold syndrome",
+                    "long_answer": "Feingold syndrome is an autosomal-dominant developmental disorder first delineated in 1975 by the American physician Murray Feingold. It is caused by heterozygous loss-of-function mutations or microdeletions in the MYCN gene. MYCN is a well-known proto-oncogene whose amplification or over-expression drives several human tumours, most notably neuroblastoma, medulloblastoma, and certain lung cancers. Thus, Feingold syndrome represents the congenital disease associated with the same gene whose overexpression is linked to those cancers."
+                },
+                "target_answer_type": "disease"
+            },
+            "2": {
+                "question": "Who was the American physician that first described that disease in 1975?",
+                "search_keyword": "American physician described disease 1975",
+                "final_answer": {
+                    "short_answer": "Simpson-Golabi-Behmel syndrome",
+                    "long_answer": "Simpson-Golabi-Behmel syndrome (SGBS) is an X-linked overgrowth disorder that was first described in 1975 by the American physician-geneticist Joe Leigh Simpson. The condition results from loss-of-function alterations in the GPC3 gene. While GPC3 deficiency produces the syndrome, the same gene is frequently over-expressed in a variety of malignancies—including hepatocellular carcinoma, Wilms tumour and neuroblastoma—so SGBS is clinically recognised as a cancer-predisposition disorder linked to the oncogenic overexpression of GPC3."
+                },
+                "target_answer_type": "person"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Simpson-Golabi-Behmel syndrome (SGBS) is an X-linked overgrowth disorder that was first described in 1975 by the American physician-geneticist Joe Leigh Simpson. The condition results from loss-of-function alterations in the GPC3 gene. While GPC3 deficiency produces the syndrome, the same gene is frequently over-expressed in a variety of malignancies—including hepatocellular carcinoma, Wilms tumour and neuroblastoma—so SGBS is clinically recognised as a cancer-predisposition disorder linked to the oncogenic overexpression of GPC3.",
+        "short_answer": "Simpson-Golabi-Behmel syndrome"
+    }
+}

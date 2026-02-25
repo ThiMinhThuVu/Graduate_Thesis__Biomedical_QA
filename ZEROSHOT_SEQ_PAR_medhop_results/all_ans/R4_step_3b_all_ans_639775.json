@@ -1,0 +1,40 @@
+{
+    "QIDX": "639775",
+    "original_question": "On which chromosome is the mutated gene located that causes a hereditary form of lymphedema presented as a unilateral lower extremity lymphedema, which may also be accompanied by hydrocele, and which was described by the namesake physician in late 19th century?",
+    "type_q": "sequence",
+    "key_entities": [
+        "unilateral lower extremity lymphedema",
+        "hydrocele"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the mutated gene located that causes a hereditary form of lymphedema presented as a unilateral lower extremity lymphedema, which may also be accompanied by hydrocele, and which was described by the namesake physician in late 19th century?",
+            "short_answer": "Chromosome 5",
+            "long_answer": "The hereditary lymphedema described by William Milroy (Milroy disease) is caused by mutations in the FLT4 gene that encodes the vascular endothelial growth factor receptor-3 (VEGFR-3). The FLT4 gene is located at cytogenetic band 5q35.3 on chromosome 5; thus, the pathogenic mutation underlying this form of congenital unilateral lower-extremity lymphedema (often with associated hydrocele) resides on chromosome 5."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene mutation is responsible for the hereditary form of lymphedema that presents as unilateral lower extremity lymphedema and may be accompanied by hydrocele?",
+                "search_keyword": "gene mutation hereditary lymphedema unilateral lower extremity hydrocele",
+                "final_answer": {
+                    "short_answer": "Chromosome 5",
+                    "long_answer": "Milroy’s hereditary lymphedema—first reported by William F. Milroy in 1892—can present as unilateral swelling of a lower limb and is frequently accompanied by a hydrocele in affected males. The condition is caused by heterozygous mutations in the FLT4 (VEGFR-3) gene, which is located on the long arm of chromosome 5 (5q35). Thus, the pathogenic mutation responsible for this form of hereditary lymphedema lies on chromosome 5."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene lymphedema",
+                "final_answer": {
+                    "short_answer": "Chromosome 5",
+                    "long_answer": "The hereditary lymphedema described by William Milroy (Milroy disease) is caused by mutations in the FLT4 gene that encodes the vascular endothelial growth factor receptor-3 (VEGFR-3). The FLT4 gene is located at cytogenetic band 5q35.3 on chromosome 5; thus, the pathogenic mutation underlying this form of congenital unilateral lower-extremity lymphedema (often with associated hydrocele) resides on chromosome 5."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The hereditary lymphedema described by William Milroy (Milroy disease) is caused by mutations in the FLT4 gene that encodes the vascular endothelial growth factor receptor-3 (VEGFR-3). The FLT4 gene is located at cytogenetic band 5q35.3 on chromosome 5; thus, the pathogenic mutation underlying this form of congenital unilateral lower-extremity lymphedema (often with associated hydrocele) resides on chromosome 5.",
+        "short_answer": "Chromosome 5"
+    }
+}

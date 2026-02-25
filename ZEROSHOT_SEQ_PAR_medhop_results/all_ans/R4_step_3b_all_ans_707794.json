@@ -1,0 +1,86 @@
+{
+    "QIDX": "707794",
+    "original_question": "Could an individual with Proteus syndrome experience a lump in the testes and sharp pain or a dull ache in the lower abdomen or scrotum?",
+    "type_q": "parallel",
+    "key_entities": [
+        "Proteus syndrome",
+        "lower abdomen",
+        "ache"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Can an individual with Proteus syndrome experience a lump in the testes?",
+            "short_answer": "yes",
+            "long_answer": "Proteus syndrome is a mosaic overgrowth disorder caused by activating mutations in AKT1. In addition to skeletal and cutaneous overgrowth, affected individuals have an increased propensity for a variety of benign and malignant tumors and hamartomatous overgrowths, including in the genitourinary tract. Published case series and reports describe epididymal cystadenomas, paratesticular masses, testicular enlargement, hydroceles, and other scrotal lesions in males with Proteus syndrome. Any of these conditions can present clinically as a palpable lump in the testes or scrotum. Therefore, it is entirely consistent with current medical knowledge that someone with Proteus syndrome could notice a testicular lump, and such a finding warrants the same evaluation as in the general population (ultrasound, urology referral) to distinguish benign overgrowth from malignancy."
+        },
+        "0": {
+            "0": {
+                "question": "Can an individual with Proteus syndrome experience a lump in the testes?",
+                "search_keyword": "Proteus syndrome lump testes",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Proteus syndrome is a mosaic overgrowth disorder caused by activating mutations in AKT1. In addition to skeletal and cutaneous overgrowth, affected individuals have an increased propensity for a variety of benign and malignant tumors and hamartomatous overgrowths, including in the genitourinary tract. Published case series and reports describe epididymal cystadenomas, paratesticular masses, testicular enlargement, hydroceles, and other scrotal lesions in males with Proteus syndrome. Any of these conditions can present clinically as a palpable lump in the testes or scrotum. Therefore, it is entirely consistent with current medical knowledge that someone with Proteus syndrome could notice a testicular lump, and such a finding warrants the same evaluation as in the general population (ultrasound, urology referral) to distinguish benign overgrowth from malignancy."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Can an individual with Proteus syndrome experience sharp pain in the lower abdomen?",
+            "short_answer": "yes",
+            "long_answer": "Proteus syndrome is a complex over-growth disorder caused by somatic activating variants in the AKT1 gene. Although it is best known for asymmetric skeletal enlargement and skin lesions, the syndrome can also involve internal organs and soft tissues, including those within the abdomen and pelvis. Documented manifestations include visceral and mesenteric over-growth, lipomas, cystic lesions, vascular malformations, and colonic or bladder enlargement. Any of these abnormalities, as well as ordinary conditions such as appendicitis, ovarian cysts, urinary-tract infection, or bowel spasm that occur in the general population, can produce sharp lower-abdominal pain. Therefore, there is nothing in the biology of Proteus syndrome that would preclude—or even uncommon—intra-abdominal pain; on the contrary, the disorder’s visceral involvement can make such pain more likely. Consequently, an individual with Proteus syndrome can certainly experience sharp pain in the lower abdomen."
+        },
+        "0": {
+            "0": {
+                "question": "Can an individual with Proteus syndrome experience sharp pain in the lower abdomen?",
+                "search_keyword": "Proteus syndrome sharp pain lower abdomen",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Proteus syndrome is a complex over-growth disorder caused by somatic activating variants in the AKT1 gene. Although it is best known for asymmetric skeletal enlargement and skin lesions, the syndrome can also involve internal organs and soft tissues, including those within the abdomen and pelvis. Documented manifestations include visceral and mesenteric over-growth, lipomas, cystic lesions, vascular malformations, and colonic or bladder enlargement. Any of these abnormalities, as well as ordinary conditions such as appendicitis, ovarian cysts, urinary-tract infection, or bowel spasm that occur in the general population, can produce sharp lower-abdominal pain. Therefore, there is nothing in the biology of Proteus syndrome that would preclude—or even uncommon—intra-abdominal pain; on the contrary, the disorder’s visceral involvement can make such pain more likely. Consequently, an individual with Proteus syndrome can certainly experience sharp pain in the lower abdomen."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "3": {
+        "final_qi": {
+            "question": "Can an individual with Proteus syndrome experience a dull ache in the lower abdomen?",
+            "short_answer": "yes",
+            "long_answer": "Proteus syndrome is a highly variable overgrowth disorder that can involve skin, bone, soft tissue and internal organs—including structures within the abdomen and pelvis. Documented manifestations include mesenteric or omental lipomas, cystic or vascular malformations of bowel or bladder, asymmetric organomegaly, hernias, and a markedly increased risk of venous thrombosis in the pelvic veins. These abnormalities, as well as the secondary effects of skeletal asymmetry on posture and muscle tension, are well-recognized sources of chronic or intermittent abdominal or pelvic discomfort in affected patients. Therefore, it is entirely consistent with established medical knowledge that someone with Proteus syndrome could report a dull ache in the lower abdomen, although the symptom is non-specific and would require routine clinical evaluation to determine its exact cause."
+        },
+        "0": {
+            "0": {
+                "question": "Can an individual with Proteus syndrome experience a dull ache in the lower abdomen?",
+                "search_keyword": "Proteus syndrome dull ache lower abdomen",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Proteus syndrome is a highly variable overgrowth disorder that can involve skin, bone, soft tissue and internal organs—including structures within the abdomen and pelvis. Documented manifestations include mesenteric or omental lipomas, cystic or vascular malformations of bowel or bladder, asymmetric organomegaly, hernias, and a markedly increased risk of venous thrombosis in the pelvic veins. These abnormalities, as well as the secondary effects of skeletal asymmetry on posture and muscle tension, are well-recognized sources of chronic or intermittent abdominal or pelvic discomfort in affected patients. Therefore, it is entirely consistent with established medical knowledge that someone with Proteus syndrome could report a dull ache in the lower abdomen, although the symptom is non-specific and would require routine clinical evaluation to determine its exact cause."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "4": {
+        "final_qi": {
+            "question": "Can an individual with Proteus syndrome experience a dull ache in the scrotum?",
+            "short_answer": "yes",
+            "long_answer": "Proteus syndrome is a mosaic overgrowth disorder that can affect multiple tissues throughout the body, including skin, bone, connective tissue, vasculature, and genitourinary structures. Reported genitourinary manifestations include asymmetric enlargement of the scrotum or penis, epidermal or connective-tissue nevi, vascular malformations, lipomas, and varicoceles. Any of these lesions—or common conditions such as epididymitis, hydrocele, or torsion that occur in the general population—can produce a dull, chronic scrotal ache. Therefore, while a scrotal ache is not specific or diagnostic for Proteus syndrome, an individual who has the condition can certainly experience this symptom for the same reasons (or additional syndrome-related reasons) that other people do. Hence the statement is consistent with established clinical knowledge."
+        },
+        "0": {
+            "0": {
+                "question": "Can an individual with Proteus syndrome experience a dull ache in the scrotum?",
+                "search_keyword": "Proteus syndrome scrotum dull ache symptoms",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Proteus syndrome is a mosaic overgrowth disorder that can affect multiple tissues throughout the body, including skin, bone, connective tissue, vasculature, and genitourinary structures. Reported genitourinary manifestations include asymmetric enlargement of the scrotum or penis, epidermal or connective-tissue nevi, vascular malformations, lipomas, and varicoceles. Any of these lesions—or common conditions such as epididymitis, hydrocele, or torsion that occur in the general population—can produce a dull, chronic scrotal ache. Therefore, while a scrotal ache is not specific or diagnostic for Proteus syndrome, an individual who has the condition can certainly experience this symptom for the same reasons (or additional syndrome-related reasons) that other people do. Hence the statement is consistent with established clinical knowledge."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The information indicates that individuals with Proteus syndrome can indeed experience all of the described symptoms. A lump in the testes can result from various benign or malignant overgrowths such as epididymal cystadenomas, paratesticular masses, and other scrotal lesions. Sharp pain in the lower abdomen is possible due to visceral or mesenteric overgrowths or other typical conditions like appendicitis. Similarly, a dull ache in the lower abdomen can be caused by mesenteric or omental lipomas, cystic or vascular malformations, or other related complications of the syndrome. Additionally, a dull ache in the scrotum is documented and can occur due to various genitourinary manifestations such as vascular malformations, lipomas, or even common conditions like epididymitis. Therefore, the symptoms described are consistent with the clinical profile of Proteus syndrome.",
+        "short_answer": "yes"
+    }
+}

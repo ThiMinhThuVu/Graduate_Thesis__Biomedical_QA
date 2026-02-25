@@ -1,0 +1,48 @@
+{
+    "QIDX": "362372",
+    "original_question": "Is it true that Bernard–Soulier syndrome results from a deficiency of a protein that binds to a molecule produced in the epithelium?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Bernard–Soulier syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is it true that Bernard–Soulier syndrome results from a deficiency of a protein that binds to a molecule produced in the epithelium?",
+            "short_answer": "yes",
+            "long_answer": "Bernard–Soulier syndrome is caused by a quantitative or qualitative deficiency of the platelet membrane glycoprotein Ib-IX-V complex (most critically the GP Ibα subunit). This glycoprotein complex is the receptor that binds von Willebrand factor (vWF). vWF is synthesized and stored primarily in vascular endothelial cells (a specialized form of simple squamous epithelium) and, to a lesser extent, in megakaryocytes/platelets. Thus, the disease indeed stems from lack of a protein whose normal role is to bind a molecule (vWF) that is produced by epithelial-derived endothelial cells. Consequently, the statement is consistent with established biomedical knowledge."
+        },
+        "0": {
+            "0": {
+                "question": "What is Bernard–Soulier syndrome and what causes it?",
+                "search_keyword": "Bernard–Soulier syndrome causes",
+                "final_answer": {
+                    "short_answer": "Glycoprotein Ib",
+                    "long_answer": "Bernard–Soulier syndrome is caused by a quantitative or qualitative deficiency of the platelet surface receptor complex Glycoprotein Ib-IX-V. Glycoprotein Ib is the subunit that specifically binds von Willebrand factor, a multimeric protein synthesized and released by vascular endothelial (epithelial-derived) cells. Loss of functional Glycoprotein Ib prevents platelet adhesion to vWF, leading to the characteristic bleeding tendency seen in Bernard–Soulier syndrome."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "What protein is deficient in Bernard–Soulier syndrome and what molecule does it bind to?",
+                "search_keyword": "protein deficiency Bernard–Soulier syndrome binding molecule",
+                "final_answer": {
+                    "short_answer": "Platelet glycoprotein Ib",
+                    "long_answer": "Bernard–Soulier syndrome is caused by a quantitative or qualitative deficiency of the platelet membrane GPIb-IX-V complex, chiefly its GPIb α subunit. This receptor normally binds von Willebrand factor, which is synthesized and released by endothelial (and subendothelial) cells. Loss of GPIb therefore impairs platelet adhesion, producing the characteristic bleeding tendency of the syndrome."
+                },
+                "target_answer_type": "protein"
+            },
+            "2": {
+                "question": "Is that molecule produced in the epithelium?",
+                "search_keyword": "molecule produced in epithelium",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Bernard–Soulier syndrome is caused by a quantitative or qualitative deficiency of the platelet membrane glycoprotein Ib-IX-V complex (most critically the GP Ibα subunit). This glycoprotein complex is the receptor that binds von Willebrand factor (vWF). vWF is synthesized and stored primarily in vascular endothelial cells (a specialized form of simple squamous epithelium) and, to a lesser extent, in megakaryocytes/platelets. Thus, the disease indeed stems from lack of a protein whose normal role is to bind a molecule (vWF) that is produced by epithelial-derived endothelial cells. Consequently, the statement is consistent with established biomedical knowledge."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Bernard–Soulier syndrome is caused by a quantitative or qualitative deficiency of the platelet membrane glycoprotein Ib-IX-V complex (most critically the GP Ibα subunit). This glycoprotein complex is the receptor that binds von Willebrand factor (vWF). vWF is synthesized and stored primarily in vascular endothelial cells (a specialized form of simple squamous epithelium) and, to a lesser extent, in megakaryocytes/platelets. Thus, the disease indeed stems from lack of a protein whose normal role is to bind a molecule (vWF) that is produced by epithelial-derived endothelial cells. Consequently, the statement is consistent with established biomedical knowledge.",
+        "short_answer": "yes"
+    }
+}

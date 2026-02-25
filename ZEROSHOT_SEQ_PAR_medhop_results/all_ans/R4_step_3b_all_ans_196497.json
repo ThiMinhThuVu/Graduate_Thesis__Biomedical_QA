@@ -1,0 +1,40 @@
+{
+    "QIDX": "196497",
+    "original_question": "On which chromosome is the gene associated with the type 2A form of Megalencephalic leukoencephalopathy with subcortical cysts located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Megalencephalic leukoencephalopathy with subcortical cysts",
+        "type 2A form"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene associated with the type 2A form of Megalencephalic leukoencephalopathy with subcortical cysts located?",
+            "short_answer": "Chromosome 11",
+            "long_answer": "Type 2A Megalencephalic leukoencephalopathy with subcortical cysts (MLC2A) results from recessive mutations in the HEPACAM (GlialCAM) gene. This gene is situated on the long arm of chromosome 11 (11q24), so the chromosome involved is chromosome 11."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with the type 2A form of Megalencephalic leukoencephalopathy with subcortical cysts?",
+                "search_keyword": "gene associated type 2A Megalencephalic leukoencephalopathy subcortical cysts",
+                "final_answer": {
+                    "short_answer": "Chromosome 11",
+                    "long_answer": "The type 2A form of Megalencephalic leukoencephalopathy with subcortical cysts (MLC2A) is produced by recessive mutations in the HEPACAM (GLIALCAM) gene. This gene is mapped to cytogenetic band 11q24.1, so the responsible gene resides on chromosome 11."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 11",
+                    "long_answer": "Type 2A Megalencephalic leukoencephalopathy with subcortical cysts (MLC2A) results from recessive mutations in the HEPACAM (GlialCAM) gene. This gene is situated on the long arm of chromosome 11 (11q24), so the chromosome involved is chromosome 11."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Type 2A Megalencephalic leukoencephalopathy with subcortical cysts (MLC2A) results from recessive mutations in the HEPACAM (GlialCAM) gene. This gene is situated on the long arm of chromosome 11 (11q24), so the chromosome involved is chromosome 11.",
+        "short_answer": "Chromosome 11"
+    }
+}

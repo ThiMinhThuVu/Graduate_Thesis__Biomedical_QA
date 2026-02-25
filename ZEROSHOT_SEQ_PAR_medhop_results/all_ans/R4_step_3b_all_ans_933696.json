@@ -1,0 +1,39 @@
+{
+    "QIDX": "933696",
+    "original_question": "On which chromosome is the gene that encodes the nuclear transmembrane protein associated with Woodhouse–Sakati syndrome located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Woodhouse–Sakati syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene that encodes the nuclear transmembrane protein associated with Woodhouse–Sakati syndrome located?",
+            "short_answer": "Chromosome 2",
+            "long_answer": "Woodhouse–Sakati syndrome is caused by loss-of-function mutations in the DCAF17 gene (formerly C2orf37), which encodes a nuclear transmembrane protein. Cytogenetic mapping places DCAF17 at 2q31.1, meaning the gene resides on human chromosome 2."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene encodes the nuclear transmembrane protein associated with Woodhouse–Sakati syndrome?",
+                "search_keyword": "gene encodes nuclear transmembrane protein Woodhouse–Sakati syndrome",
+                "final_answer": {
+                    "short_answer": "Chromosome 2",
+                    "long_answer": "Woodhouse–Sakati syndrome is caused by biallelic mutations in the DCAF17 gene (formerly C2orf37), which encodes a nucleolar/nuclear transmembrane protein. Cytogenetic mapping places DCAF17 at band 2q31.1, confirming that the responsible gene is located on chromosome 2."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene Woodhouse–Sakati syndrome",
+                "final_answer": {
+                    "short_answer": "Chromosome 2",
+                    "long_answer": "Woodhouse–Sakati syndrome is caused by loss-of-function mutations in the DCAF17 gene (formerly C2orf37), which encodes a nuclear transmembrane protein. Cytogenetic mapping places DCAF17 at 2q31.1, meaning the gene resides on human chromosome 2."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Woodhouse–Sakati syndrome is caused by loss-of-function mutations in the DCAF17 gene (formerly C2orf37), which encodes a nuclear transmembrane protein. Cytogenetic mapping places DCAF17 at 2q31.1, meaning the gene resides on human chromosome 2.",
+        "short_answer": "Chromosome 2"
+    }
+}

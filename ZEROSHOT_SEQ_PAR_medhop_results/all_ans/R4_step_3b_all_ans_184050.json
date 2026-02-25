@@ -1,0 +1,39 @@
+{
+    "QIDX": "184050",
+    "original_question": "Is peroxisomal acyl-coenzyme A oxidase 1 an enzyme that is encoded by a gene whose variants can cause a condition that may be diagnosed prenatally or after birth?",
+    "type_q": "sequence",
+    "key_entities": [
+        "peroxisomal acyl-coenzyme A oxidase 1"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is peroxisomal acyl-coenzyme A oxidase 1 an enzyme that is encoded by a gene whose variants can cause a condition that may be diagnosed prenatally or after birth?",
+            "short_answer": "Yes",
+            "long_answer": "Peroxisomal acyl-coenzyme A oxidase 1 is encoded by the ACOX1 gene. Pathogenic variants in ACOX1 cause peroxisomal acyl-CoA oxidase deficiency, an autosomal-recessive peroxisomal disorder characterized by hypotonia, seizures, and developmental arrest. The disorder can be identified prenatally by molecular testing or analysis of very-long-chain fatty acids in chorionic-villus or amniotic-fluid cells, and it can also be diagnosed after birth using the same biochemical and genetic assays. Thus, the enzyme is indeed encoded by a gene whose variants lead to a condition diagnosable both before and after birth."
+        },
+        "0": {
+            "0": {
+                "question": "What is the gene that encodes peroxisomal acyl-coenzyme A oxidase 1?",
+                "search_keyword": "gene encodes peroxisomal acyl-coenzyme A oxidase 1",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Peroxisomal acyl-coenzyme A oxidase 1 is the protein product of the ACOX1 gene. Pathogenic variants in ACOX1 lead to peroxisomal acyl-CoA oxidase deficiency, an autosomal-recessive peroxisomal biogenesis disorder. This condition can be detected prenatally (e.g., by measuring very-long-chain fatty acids or by fetal genetic testing) or diagnosed after birth through biochemical assays and molecular sequencing. Thus, the enzyme is indeed encoded by a gene whose variants can cause a disorder diagnosable either before or after birth."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "What condition can variants of that gene cause, which may be diagnosed prenatally or after birth?",
+                "search_keyword": "condition variants gene diagnosed prenatally after birth",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Peroxisomal acyl-coenzyme A oxidase 1 is encoded by the ACOX1 gene. Pathogenic variants in ACOX1 cause peroxisomal acyl-CoA oxidase deficiency, an autosomal-recessive peroxisomal disorder characterized by hypotonia, seizures, and developmental arrest. The disorder can be identified prenatally by molecular testing or analysis of very-long-chain fatty acids in chorionic-villus or amniotic-fluid cells, and it can also be diagnosed after birth using the same biochemical and genetic assays. Thus, the enzyme is indeed encoded by a gene whose variants lead to a condition diagnosable both before and after birth."
+                },
+                "target_answer_type": "condition"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Peroxisomal acyl-coenzyme A oxidase 1 is encoded by the ACOX1 gene. Pathogenic variants in ACOX1 cause peroxisomal acyl-CoA oxidase deficiency, an autosomal-recessive peroxisomal disorder characterized by hypotonia, seizures, and developmental arrest. The disorder can be identified prenatally by molecular testing or analysis of very-long-chain fatty acids in chorionic-villus or amniotic-fluid cells, and it can also be diagnosed after birth using the same biochemical and genetic assays. Thus, the enzyme is indeed encoded by a gene whose variants lead to a condition diagnosable both before and after birth.",
+        "short_answer": "Yes"
+    }
+}

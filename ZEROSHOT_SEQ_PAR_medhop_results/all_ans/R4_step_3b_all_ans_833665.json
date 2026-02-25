@@ -1,0 +1,40 @@
+{
+    "QIDX": "833665",
+    "original_question": "The gene that encodes the protein Thespin is a component of which multi-protein complex?",
+    "type_q": "sequence",
+    "key_entities": [
+        "multi-protein complex",
+        "protein Thespin"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "The gene that encodes the protein Thespin is a component of which multi-protein complex?",
+            "short_answer": "SKI complex",
+            "long_answer": "The protein Thespin is encoded by the TTC37 gene, whose product associates with SKIV2L and WDR61 to form the cytoplasmic Superkiller (SKI) complex. This multi-protein complex functions as a co-factor of the RNA exosome in 3′–5′ mRNA degradation."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene encodes the protein Thespin?",
+                "search_keyword": "gene encodes protein Thespin",
+                "final_answer": {
+                    "short_answer": "SKI complex",
+                    "long_answer": "The protein Thespin is encoded by the human TTC37 gene, the orthologue of yeast Ski3. TTC37 partners with SKIV2L (Ski2) and WDR61 (Ski8) to form the cytoplasmic SKI multi-protein complex that cooperates with the RNA exosome in 3'→5' mRNA degradation."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Which multi-protein complex includes that protein?",
+                "search_keyword": "multi-protein complex includes Thespin",
+                "final_answer": {
+                    "short_answer": "SKI complex",
+                    "long_answer": "The protein Thespin is encoded by the TTC37 gene, whose product associates with SKIV2L and WDR61 to form the cytoplasmic Superkiller (SKI) complex. This multi-protein complex functions as a co-factor of the RNA exosome in 3′–5′ mRNA degradation."
+                },
+                "target_answer_type": "complex"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The protein Thespin is encoded by the TTC37 gene, whose product associates with SKIV2L and WDR61 to form the cytoplasmic Superkiller (SKI) complex. This multi-protein complex functions as a co-factor of the RNA exosome in 3′–5′ mRNA degradation.",
+        "short_answer": "SKI complex"
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "QIDX": "238256",
+    "original_question": "Are ascariasis, trichuriasis, hookworm disease, and strongyloidiasis all caused by nematode infections?",
+    "type_q": "parallel",
+    "key_entities": [
+        "hookworm disease",
+        "strongyloidiasis",
+        "trichuriasis",
+        "ascariasis",
+        "infections"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is ascariasis caused by a nematode infection?",
+            "short_answer": "yes",
+            "long_answer": "Ascariasis is an intestinal helminthic infection produced by the roundworm Ascaris lumbricoides. Ascaris belongs to the phylum Nematoda (nematodes, or roundworms). Therefore, by definition ascariasis results from infection with a nematode, a fact that is well-established in parasitology and global public-health literature."
+        },
+        "0": {
+            "0": {
+                "question": "Is ascariasis caused by a nematode infection?",
+                "search_keyword": "ascariasis nematode infection cause",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Ascariasis is an intestinal helminthic infection produced by the roundworm Ascaris lumbricoides. Ascaris belongs to the phylum Nematoda (nematodes, or roundworms). Therefore, by definition ascariasis results from infection with a nematode, a fact that is well-established in parasitology and global public-health literature."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is trichuriasis caused by a nematode infection?",
+            "short_answer": "yes",
+            "long_answer": "Trichuriasis is the infection caused by the whipworm Trichuris trichiura. Whipworms belong to the phylum Nematoda (roundworms). Therefore, trichuriasis is, by definition, a nematode infection."
+        },
+        "0": {
+            "0": {
+                "question": "Is trichuriasis caused by a nematode infection?",
+                "search_keyword": "trichuriasis nematode infection cause",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Trichuriasis is the infection caused by the whipworm Trichuris trichiura. Whipworms belong to the phylum Nematoda (roundworms). Therefore, trichuriasis is, by definition, a nematode infection."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "3": {
+        "final_qi": {
+            "question": "Is hookworm disease caused by a nematode infection?",
+            "short_answer": "yes",
+            "long_answer": "Hookworm disease (also called ancylostomiasis) is produced when humans are infected by hookworms such as Ancylostoma duodenale and Necator americanus. These parasites are intestinal helminths that belong to the phylum Nematoda (roundworms). Therefore, hookworm disease is indeed caused by a nematode infection."
+        },
+        "0": {
+            "0": {
+                "question": "Is hookworm disease caused by a nematode infection?",
+                "search_keyword": "hookworm disease nematode infection",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Hookworm disease (also called ancylostomiasis) is produced when humans are infected by hookworms such as Ancylostoma duodenale and Necator americanus. These parasites are intestinal helminths that belong to the phylum Nematoda (roundworms). Therefore, hookworm disease is indeed caused by a nematode infection."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "4": {
+        "final_qi": {
+            "question": "Is strongyloidiasis caused by a nematode infection?",
+            "short_answer": "yes",
+            "long_answer": "Strongyloidiasis is an infection produced by the intestinal roundworm (nematode) Strongyloides stercoralis, and less commonly by related Strongyloides spp. Nematodes are a class of parasitic helminths (roundworms). Therefore, by definition, strongyloidiasis is caused by a nematode infection."
+        },
+        "0": {
+            "0": {
+                "question": "Is strongyloidiasis caused by a nematode infection?",
+                "search_keyword": "strongyloidiasis nematode infection cause",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Strongyloidiasis is an infection produced by the intestinal roundworm (nematode) Strongyloides stercoralis, and less commonly by related Strongyloides spp. Nematodes are a class of parasitic helminths (roundworms). Therefore, by definition, strongyloidiasis is caused by a nematode infection."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Each of the diseases mentioned is caused by a nematode infection: ascariasis is caused by Ascaris lumbricoides, trichuriasis by Trichuris trichiura, hookworm disease by species such as Ancylostoma duodenale and Necator americanus, and strongyloidiasis by Strongyloides stercoralis. This confirms that all are indeed caused by nematode infections.",
+        "short_answer": "yes"
+    }
+}

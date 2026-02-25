@@ -1,0 +1,48 @@
+{
+    "QIDX": "205706",
+    "original_question": "On which chromosome is the gene that encodes the protein, whose deficiency is commonly associated with acute respiratory distress syndrome, located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "acute respiratory distress syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene that encodes the protein, whose deficiency is commonly associated with acute respiratory distress syndrome, located?",
+            "short_answer": "Chromosome 2",
+            "long_answer": "A well-known cause of acute (neonatal) respiratory distress syndrome is deficiency of pulmonary surfactant, particularly surfactant protein-B. The SFTPB gene that encodes surfactant protein-B is mapped to chromosome 2 (region 2p12-p11.2). Consequently, the gene associated with this ARDS-related protein is located on chromosome 2."
+        },
+        "0": {
+            "0": {
+                "question": "Which protein's deficiency is commonly associated with acute respiratory distress syndrome?",
+                "search_keyword": "protein deficiency acute respiratory distress syndrome",
+                "final_answer": {
+                    "short_answer": "Chromosome 2",
+                    "long_answer": "The pulmonary surfactant protein B (SP-B) is crucial for reducing alveolar surface tension; its deficiency commonly precipitates acute/neonatal respiratory distress syndrome. The SFTPB gene that encodes SP-B is located on the short arm of chromosome 2 (region 2p11–p12)."
+                },
+                "target_answer_type": "protein"
+            },
+            "1": {
+                "question": "Which gene encodes that protein?",
+                "search_keyword": "gene encodes protein",
+                "final_answer": {
+                    "short_answer": "Chromosome 2",
+                    "long_answer": "Acute respiratory distress syndrome is often linked to deficiency of pulmonary surfactant, particularly surfactant protein-B. The SFTPB gene, which encodes surfactant protein-B, is situated on the short arm of chromosome 2 (region 2p12-p11.2)."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 2",
+                    "long_answer": "A well-known cause of acute (neonatal) respiratory distress syndrome is deficiency of pulmonary surfactant, particularly surfactant protein-B. The SFTPB gene that encodes surfactant protein-B is mapped to chromosome 2 (region 2p12-p11.2). Consequently, the gene associated with this ARDS-related protein is located on chromosome 2."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "A well-known cause of acute (neonatal) respiratory distress syndrome is deficiency of pulmonary surfactant, particularly surfactant protein-B. The SFTPB gene that encodes surfactant protein-B is mapped to chromosome 2 (region 2p12-p11.2). Consequently, the gene associated with this ARDS-related protein is located on chromosome 2.",
+        "short_answer": "Chromosome 2"
+    }
+}

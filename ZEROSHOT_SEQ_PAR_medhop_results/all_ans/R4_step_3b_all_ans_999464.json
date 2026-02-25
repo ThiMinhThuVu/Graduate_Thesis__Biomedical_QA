@@ -1,0 +1,48 @@
+{
+    "QIDX": "999464",
+    "original_question": "A specific form of vitamin E is preferentially absorbed and accumulated in humans due to the action of a protein encoded by a gene on which chromosome?",
+    "type_q": "sequence",
+    "key_entities": [
+        "vitamin E"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "A specific form of vitamin E is preferentially absorbed and accumulated in humans due to the action of a protein encoded by a gene on which chromosome?",
+            "short_answer": "Chromosome 8",
+            "long_answer": "The selective uptake and retention of the α-tocopherol form of vitamin E in humans is mediated by the α-tocopherol transfer protein (α-TTP). The α-TTP is encoded by the TTPA gene, which is located on chromosome 8 (band 8q13). Mutations in this gene disrupt α-tocopherol transport, underscoring its role in the preferential accumulation of this vitamin E isoform."
+        },
+        "0": {
+            "0": {
+                "question": "Which specific form of vitamin E is preferentially absorbed and accumulated in humans?",
+                "search_keyword": "specific form of vitamin E absorbed accumulated humans",
+                "final_answer": {
+                    "short_answer": "Chromosome 8",
+                    "long_answer": "α-Tocopherol is the vitamin E isoform that predominates in human tissues because the α-tocopherol transfer protein (α-TTP) selectively binds and transports it. The α-TTP is encoded by the TTPA gene, which is located on human chromosome 8 (band 8q13). This gene’s product facilitates the preferential absorption and retention of α-tocopherol, leading to its higher levels relative to other vitamin E forms."
+                },
+                "target_answer_type": "form of vitamin E"
+            },
+            "1": {
+                "question": "Which protein is encoded by the gene that facilitates the absorption of that specific form of vitamin E?",
+                "search_keyword": "protein encoded gene absorption specific form vitamin E",
+                "final_answer": {
+                    "short_answer": "Chromosome 8",
+                    "long_answer": "Humans accumulate the α-tocopherol form of vitamin E because the liver-expressed α-tocopherol transfer protein (α-TTP) selectively incorporates this isoform into circulating lipoproteins. The α-TTP is encoded by the TTPA gene, which is mapped to chromosome 8 (band 8q13). Thus, the gene responsible for the preferential absorption and retention of α-tocopherol resides on chromosome 8."
+                },
+                "target_answer_type": "protein"
+            },
+            "2": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene protein absorption vitamin E",
+                "final_answer": {
+                    "short_answer": "Chromosome 8",
+                    "long_answer": "The selective uptake and retention of the α-tocopherol form of vitamin E in humans is mediated by the α-tocopherol transfer protein (α-TTP). The α-TTP is encoded by the TTPA gene, which is located on chromosome 8 (band 8q13). Mutations in this gene disrupt α-tocopherol transport, underscoring its role in the preferential accumulation of this vitamin E isoform."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The selective uptake and retention of the α-tocopherol form of vitamin E in humans is mediated by the α-tocopherol transfer protein (α-TTP). The α-TTP is encoded by the TTPA gene, which is located on chromosome 8 (band 8q13). Mutations in this gene disrupt α-tocopherol transport, underscoring its role in the preferential accumulation of this vitamin E isoform.",
+        "short_answer": "Chromosome 8"
+    }
+}

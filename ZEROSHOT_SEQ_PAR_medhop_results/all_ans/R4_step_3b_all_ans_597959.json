@@ -1,0 +1,40 @@
+{
+    "QIDX": "597959",
+    "original_question": "Which gene encodes the protein that forms glial cytoplasmic inclusions in multiple system atrophy?",
+    "type_q": "sequence",
+    "key_entities": [
+        "glial cytoplasmic inclusions",
+        "multiple system atrophy"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene encodes the protein that forms glial cytoplasmic inclusions in multiple system atrophy?",
+            "short_answer": "SNCA",
+            "long_answer": "Multiple system atrophy is characterized by glial cytoplasmic inclusions (GCIs) composed of aggregated α-synuclein. The α-synuclein protein is encoded by the SNCA gene; therefore, SNCA is the gene whose product accumulates in oligodendroglial GCIs that define the pathology of this disorder."
+        },
+        "0": {
+            "0": {
+                "question": "Which protein forms glial cytoplasmic inclusions in multiple system atrophy?",
+                "search_keyword": "protein glial cytoplasmic inclusions multiple system atrophy",
+                "final_answer": {
+                    "short_answer": "SNCA",
+                    "long_answer": "In multiple system atrophy, the neuropathological hallmark is the accumulation of α-synuclein–positive glial cytoplasmic inclusions within oligodendrocytes. α-Synuclein is encoded by the SNCA gene; therefore, SNCA is the gene whose product forms the inclusions characteristic of this disorder."
+                },
+                "target_answer_type": "protein"
+            },
+            "1": {
+                "question": "Which gene encodes that protein?",
+                "search_keyword": "gene encodes protein glial cytoplasmic inclusions",
+                "final_answer": {
+                    "short_answer": "SNCA",
+                    "long_answer": "Multiple system atrophy is characterized by glial cytoplasmic inclusions (GCIs) composed of aggregated α-synuclein. The α-synuclein protein is encoded by the SNCA gene; therefore, SNCA is the gene whose product accumulates in oligodendroglial GCIs that define the pathology of this disorder."
+                },
+                "target_answer_type": "gene"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Multiple system atrophy is characterized by glial cytoplasmic inclusions (GCIs) composed of aggregated α-synuclein. The α-synuclein protein is encoded by the SNCA gene; therefore, SNCA is the gene whose product accumulates in oligodendroglial GCIs that define the pathology of this disorder.",
+        "short_answer": "SNCA"
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "QIDX": "343459",
+    "original_question": "Do clonal hypereosinophilia and conditions like allergies and asthma involve an increased number of eosinophils but through different mechanisms?",
+    "type_q": "parallel",
+    "key_entities": [
+        "clonal hypereosinophilia",
+        "eosinophils",
+        "allergies",
+        "asthma"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Does clonal hypereosinophilia involve an increased number of eosinophils?",
+            "short_answer": "yes",
+            "long_answer": "By definition, clonal hypereosinophilia (also termed primary or neoplastic hypereosinophilia) is a disorder in which a malignant or otherwise clonal population of hematopoietic cells drives the over-production of eosinophils. Consequently, patients exhibit a persistent elevation of peripheral-blood and often bone-marrow eosinophil counts, typically exceeding the standard hypereosinophilia threshold of ≥1.5 × 10⁹ eosinophils/L. Thus, an increased number of eosinophils is an essential feature of clonal hypereosinophilia."
+        },
+        "0": {
+            "0": {
+                "question": "Does clonal hypereosinophilia involve an increased number of eosinophils?",
+                "search_keyword": "clonal hypereosinophilia increased eosinophils",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "By definition, clonal hypereosinophilia (also termed primary or neoplastic hypereosinophilia) is a disorder in which a malignant or otherwise clonal population of hematopoietic cells drives the over-production of eosinophils. Consequently, patients exhibit a persistent elevation of peripheral-blood and often bone-marrow eosinophil counts, typically exceeding the standard hypereosinophilia threshold of ≥1.5 × 10⁹ eosinophils/L. Thus, an increased number of eosinophils is an essential feature of clonal hypereosinophilia."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Do allergies involve an increased number of eosinophils?",
+            "short_answer": "yes",
+            "long_answer": "Allergic diseases are classic examples of type I (IgE-mediated) hypersensitivity responses. Allergen exposure activates Th2 lymphocytes, leading to production of interleukins such as IL-4, IL-5 and IL-13. IL-5 in particular drives the maturation, recruitment and prolonged survival of eosinophils. As a result, patients with conditions such as allergic rhinitis, asthma, atopic dermatitis and drug or food allergies typically show eosinophilia—an increased number of eosinophils in the peripheral blood and, more importantly, in affected tissues (nasal mucosa, bronchial mucosa, skin, etc.). This association is well documented in immunology and hematology texts and is part of the established pathophysiology of allergic disorders. Therefore, allergies do involve an increased number of eosinophils."
+        },
+        "0": {
+            "0": {
+                "question": "Do allergies involve an increased number of eosinophils?",
+                "search_keyword": "allergies increased eosinophils",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Allergic diseases are classic examples of type I (IgE-mediated) hypersensitivity responses. Allergen exposure activates Th2 lymphocytes, leading to production of interleukins such as IL-4, IL-5 and IL-13. IL-5 in particular drives the maturation, recruitment and prolonged survival of eosinophils. As a result, patients with conditions such as allergic rhinitis, asthma, atopic dermatitis and drug or food allergies typically show eosinophilia—an increased number of eosinophils in the peripheral blood and, more importantly, in affected tissues (nasal mucosa, bronchial mucosa, skin, etc.). This association is well documented in immunology and hematology texts and is part of the established pathophysiology of allergic disorders. Therefore, allergies do involve an increased number of eosinophils."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "3": {
+        "final_qi": {
+            "question": "Does asthma involve an increased number of eosinophils?",
+            "short_answer": "yes",
+            "long_answer": "In many forms of asthma—particularly the classic allergic (Th2-high) phenotype—airway inflammation is characterized by recruitment and activation of eosinophils. Elevated eosinophil counts are found in bronchial mucosa, sputum, and often in peripheral blood of affected patients. These eosinophils release cytokines, leukotrienes, and other mediators that contribute to bronchial hyper-responsiveness, mucus hypersecretion, and airway remodeling. While some non-eosinophilic variants of asthma exist, the presence of increased eosinophils is a well-established hallmark in the majority of asthmatic inflammation, so overall the statement is supported by scientific consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Does asthma involve an increased number of eosinophils?",
+                "search_keyword": "asthma increased eosinophils",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "In many forms of asthma—particularly the classic allergic (Th2-high) phenotype—airway inflammation is characterized by recruitment and activation of eosinophils. Elevated eosinophil counts are found in bronchial mucosa, sputum, and often in peripheral blood of affected patients. These eosinophils release cytokines, leukotrienes, and other mediators that contribute to bronchial hyper-responsiveness, mucus hypersecretion, and airway remodeling. While some non-eosinophilic variants of asthma exist, the presence of increased eosinophils is a well-established hallmark in the majority of asthmatic inflammation, so overall the statement is supported by scientific consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "4": {
+        "final_qi": {
+            "question": "What are the mechanisms involved in clonal hypereosinophilia compared to allergies and asthma?",
+            "short_answer": "Constitutive tyrosine-kinase activation",
+            "long_answer": "In clonal hypereosinophilia the excess eosinophils arise from somatic driver mutations—most commonly fusion genes such as FIP1L1-PDGFRA, PDGFRB, FGFR1 or JAK2—that produce constitutively active tyrosine-kinase signalling in hematopoietic progenitors. This neoplastic, cytokine-independent growth contrasts with the reactive eosinophilia of allergies and asthma, where Th2-driven IL-5, IL-4, IL-13 and IgE-mediated mast-cell activation are the key mechanisms."
+        },
+        "0": {
+            "0": {
+                "question": "What are the mechanisms involved in clonal hypereosinophilia compared to allergies and asthma?",
+                "search_keyword": "clonal hypereosinophilia mechanisms compared allergies asthma",
+                "final_answer": {
+                    "short_answer": "Constitutive tyrosine-kinase activation",
+                    "long_answer": "In clonal hypereosinophilia the excess eosinophils arise from somatic driver mutations—most commonly fusion genes such as FIP1L1-PDGFRA, PDGFRB, FGFR1 or JAK2—that produce constitutively active tyrosine-kinase signalling in hematopoietic progenitors. This neoplastic, cytokine-independent growth contrasts with the reactive eosinophilia of allergies and asthma, where Th2-driven IL-5, IL-4, IL-13 and IgE-mediated mast-cell activation are the key mechanisms."
+                },
+                "target_answer_type": "mechanisms"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Both clonal hypereosinophilia and conditions like allergies and asthma are characterized by increased eosinophil numbers. However, the underlying mechanisms are distinct. In clonal hypereosinophilia, the increase is driven by a neoplastic process involving somatic mutations or fusion genes (such as FIP1L1-PDGFRA) that lead to constitutive tyrosine-kinase activity and cytokine-independent growth. In contrast, allergies and asthma involve reactive eosinophilia mediated by Th2 cells and cytokines (notably IL-5), leading to eosinophil maturation, recruitment, and activation. Thus, they do involve increased eosinophils through different mechanistic pathways.",
+        "short_answer": "yes"
+    }
+}

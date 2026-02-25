@@ -1,0 +1,49 @@
+{
+    "QIDX": "728709",
+    "original_question": "If the approximate time taken from when the cardiac ventricles start to contract to when they finish relaxing is between 400 ms and 450 ms, is this a sign of Long QT syndrome?",
+    "type_q": "parallel",
+    "key_entities": [
+        "cardiac ventricles start",
+        "Long QT syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is a time taken from when the cardiac ventricles start to contract to when they finish relaxing between 400 ms and 450 ms a sign of Long QT syndrome?",
+            "short_answer": "no",
+            "long_answer": "The QT interval is measured on an ECG from the start of ventricular depolarisation (QRS onset) to the end of ventricular repolarisation (end of the T wave). After correction for heart rate (QTc), the accepted upper limits of normal are roughly ≤ 440 ms for adult males and ≤ 460 ms for adult females. Long-QT syndrome is usually suspected when the QTc is ≥ 480 ms on repeated tracings, or ≥ 460 ms in the presence of definite clinical features or pathogenic mutations. Intervals in the range of 400–450 ms therefore fall within the normal or at most borderline range and, by themselves, are not diagnostic of Long-QT syndrome. Additional prolongation, clinical criteria, or genetic evidence would be required. Consequently, a QT interval of 400–450 ms is not considered a sign of Long QT syndrome according to established consensus guidelines."
+        },
+        "0": {
+            "0": {
+                "question": "Is a time taken from when the cardiac ventricles start to contract to when they finish relaxing between 400 ms and 450 ms a sign of Long QT syndrome?",
+                "search_keyword": "Long QT syndrome cardiac ventricles contraction relaxation time 400 ms 450 ms",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "The QT interval is measured on an ECG from the start of ventricular depolarisation (QRS onset) to the end of ventricular repolarisation (end of the T wave). After correction for heart rate (QTc), the accepted upper limits of normal are roughly ≤ 440 ms for adult males and ≤ 460 ms for adult females. Long-QT syndrome is usually suspected when the QTc is ≥ 480 ms on repeated tracings, or ≥ 460 ms in the presence of definite clinical features or pathogenic mutations. Intervals in the range of 400–450 ms therefore fall within the normal or at most borderline range and, by themselves, are not diagnostic of Long-QT syndrome. Additional prolongation, clinical criteria, or genetic evidence would be required. Consequently, a QT interval of 400–450 ms is not considered a sign of Long QT syndrome according to established consensus guidelines."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What is the significance of a time taken from when the cardiac ventricles start to contract to when they finish relaxing in relation to Long QT syndrome?",
+            "short_answer": "Prolonged QT interval",
+            "long_answer": "The interval from the start of ventricular depolarisation (QRS onset) to the end of ventricular repolarisation (T-wave end) is the QT interval on an ECG. In Long QT syndrome this interval is abnormally prolonged (>440-460 ms), signifying delayed ventricular repolarisation and predisposing to torsades de pointes and sudden cardiac death."
+        },
+        "0": {
+            "0": {
+                "question": "What is the significance of a time taken from when the cardiac ventricles start to contract to when they finish relaxing in relation to Long QT syndrome?",
+                "search_keyword": "Long QT syndrome cardiac ventricles contraction relaxation significance",
+                "final_answer": {
+                    "short_answer": "Prolonged QT interval",
+                    "long_answer": "The interval from the start of ventricular depolarisation (QRS onset) to the end of ventricular repolarisation (T-wave end) is the QT interval on an ECG. In Long QT syndrome this interval is abnormally prolonged (>440-460 ms), signifying delayed ventricular repolarisation and predisposing to torsades de pointes and sudden cardiac death."
+                },
+                "target_answer_type": "significance"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Based on the information provided, a QT interval between 400 ms and 450 ms is within the normal range for either adult males or adult females. The established guidelines consider a QTc of ≥480 ms (or ≥460 ms with additional clinical evidence) as an indication of Long QT syndrome. Therefore, an interval of 400–450 ms in itself is not sufficient to diagnose Long QT syndrome.",
+        "short_answer": "no"
+    }
+}

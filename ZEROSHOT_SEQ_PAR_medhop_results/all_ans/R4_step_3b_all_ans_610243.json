@@ -1,0 +1,49 @@
+{
+    "QIDX": "610243",
+    "original_question": "Are Sarcoma botryoides and Squamous-cell carcinoma of the vagina both most commonly found in infants and young children?",
+    "type_q": "parallel",
+    "key_entities": [
+        "Sarcoma botryoides and Squamous-cell carcinoma of the vagina both",
+        "Are Sarcoma"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is Sarcoma botryoides most commonly found in infants and young children?",
+            "short_answer": "yes",
+            "long_answer": "Sarcoma botryoides is the classic grape-like (botryoid) variant of embryonal rhabdomyosarcoma that arises on mucosal surfaces, most characteristically in the vagina, cervix, urinary bladder and nasal cavity. The peak incidence is in infancy and early childhood, particularly in girls younger than about 5 years of age, although occasional cases are reported in adolescents. Because the majority of documented cases occur in this very young age group, the consensus in paediatric oncology and pathology texts is that sarcoma botryoides is most commonly found in infants and young children. Therefore, the statement is correct."
+        },
+        "0": {
+            "0": {
+                "question": "Is Sarcoma botryoides most commonly found in infants and young children?",
+                "search_keyword": "Sarcoma botryoides infants young children prevalence",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Sarcoma botryoides is the classic grape-like (botryoid) variant of embryonal rhabdomyosarcoma that arises on mucosal surfaces, most characteristically in the vagina, cervix, urinary bladder and nasal cavity. The peak incidence is in infancy and early childhood, particularly in girls younger than about 5 years of age, although occasional cases are reported in adolescents. Because the majority of documented cases occur in this very young age group, the consensus in paediatric oncology and pathology texts is that sarcoma botryoides is most commonly found in infants and young children. Therefore, the statement is correct."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is Squamous-cell carcinoma of the vagina most commonly found in infants and young children?",
+            "short_answer": "no",
+            "long_answer": "Primary squamous-cell carcinoma of the vagina is a disease that occurs almost exclusively in adult women, with its highest incidence in the sixth and seventh decades of life. Epidemiologic series from cancer registries and large gynecologic oncology centers show the median age at diagnosis to be around 60–70 years. Vaginal malignancies that arise in infants and young children are extremely uncommon, and when they do occur they are typically embryonal rhabdomyosarcoma (sarcoma botryoides) or, far less often, clear-cell adenocarcinoma linked to in-utero diethylstilbestrol exposure—not squamous-cell carcinoma. Therefore, the statement that squamous-cell carcinoma of the vagina is most commonly found in infants and young children is contradicted by well-established epidemiologic data."
+        },
+        "0": {
+            "0": {
+                "question": "Is Squamous-cell carcinoma of the vagina most commonly found in infants and young children?",
+                "search_keyword": "Squamous-cell carcinoma vagina infants young children prevalence",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Primary squamous-cell carcinoma of the vagina is a disease that occurs almost exclusively in adult women, with its highest incidence in the sixth and seventh decades of life. Epidemiologic series from cancer registries and large gynecologic oncology centers show the median age at diagnosis to be around 60–70 years. Vaginal malignancies that arise in infants and young children are extremely uncommon, and when they do occur they are typically embryonal rhabdomyosarcoma (sarcoma botryoides) or, far less often, clear-cell adenocarcinoma linked to in-utero diethylstilbestrol exposure—not squamous-cell carcinoma. Therefore, the statement that squamous-cell carcinoma of the vagina is most commonly found in infants and young children is contradicted by well-established epidemiologic data."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Sarcoma botryoides is indeed most commonly found in infants and young children, whereas Squamous-cell carcinoma of the vagina is predominantly an adult disease, typically occurring in women in their sixth or seventh decade of life. Since one of these cancers is not most commonly found in infants and young children, the overall statement is incorrect.",
+        "short_answer": "no"
+    }
+}

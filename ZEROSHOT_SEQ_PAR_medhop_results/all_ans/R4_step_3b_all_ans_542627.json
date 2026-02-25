@@ -1,0 +1,42 @@
+{
+    "QIDX": "542627",
+    "original_question": "Which organelle is dysfunctional in a group of disorders that hamper the electron transport chain, a process located in its inner membrane that generates ATP in eukaryotic cells?",
+    "type_q": "sequence",
+    "key_entities": [
+        "electron transport chain",
+        "eukaryotic cells",
+        "inner membrane",
+        "ATP"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which organelle is dysfunctional in a group of disorders that hamper the electron transport chain, a process located in its inner membrane that generates ATP in eukaryotic cells?",
+            "short_answer": "Mitochondrion",
+            "long_answer": "The electron transport chain that drives oxidative phosphorylation and ATP synthesis is embedded in the inner mitochondrial membrane; therefore, inherited or acquired defects that impair this chain are classified as mitochondrial disorders, reflecting dysfunction of the mitochondrion."
+        },
+        "0": {
+            "0": {
+                "question": "Which group of disorders hampers the electron transport chain in eukaryotic cells?",
+                "search_keyword": "disorders electron transport chain eukaryotic cells",
+                "final_answer": {
+                    "short_answer": "Mitochondrion",
+                    "long_answer": "Mitochondrial disorders involve defects in the mitochondrion, whose inner membrane houses the electron transport chain that drives oxidative phosphorylation and ATP synthesis in eukaryotic cells."
+                },
+                "target_answer_type": "disorders"
+            },
+            "1": {
+                "question": "Which organelle is associated with the electron transport chain that generates ATP in eukaryotic cells?",
+                "search_keyword": "organelle electron transport chain ATP eukaryotic cells",
+                "final_answer": {
+                    "short_answer": "Mitochondrion",
+                    "long_answer": "The electron transport chain that drives oxidative phosphorylation and ATP synthesis is embedded in the inner mitochondrial membrane; therefore, inherited or acquired defects that impair this chain are classified as mitochondrial disorders, reflecting dysfunction of the mitochondrion."
+                },
+                "target_answer_type": "organelle"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The electron transport chain that drives oxidative phosphorylation and ATP synthesis is embedded in the inner mitochondrial membrane; therefore, inherited or acquired defects that impair this chain are classified as mitochondrial disorders, reflecting dysfunction of the mitochondrion.",
+        "short_answer": "Mitochondrion"
+    }
+}

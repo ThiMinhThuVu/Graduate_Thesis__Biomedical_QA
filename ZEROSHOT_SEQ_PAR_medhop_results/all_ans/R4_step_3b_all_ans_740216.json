@@ -1,0 +1,50 @@
+{
+    "QIDX": "740216",
+    "original_question": "Which chromosome contains the gene with the only known dominant pathogenic genetic variant associated with the disease caused by a deficiency of the enzyme involved in both oxidative phosphorylation and the citric acid cycle?",
+    "type_q": "sequence",
+    "key_entities": [
+        "oxidative phosphorylation",
+        "enzyme deficiency disease",
+        "citric acid cycle"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which chromosome contains the gene with the only known dominant pathogenic genetic variant associated with the disease caused by a deficiency of the enzyme involved in both oxidative phosphorylation and the citric acid cycle?",
+            "short_answer": "Chromosome 5",
+            "long_answer": "Succinate dehydrogenase (Complex II) participates in both the citric acid (TCA) cycle and the oxidative-phosphorylation electron-transport chain. Deficiency of this enzyme causes mitochondrial Complex II deficiency/Leigh syndrome. Pathogenic variants in its catalytic subunit gene SDHA almost always act recessively, but a single heterozygous SDHA variant (e.g., p.Arg94Trp) has been documented to cause disease dominantly—the only known dominant mutation for this disorder. The SDHA gene is located on chromosome 5 (p15.33), so chromosome 5 harbors the gene with the sole known dominant pathogenic variant associated with succinate dehydrogenase deficiency."
+        },
+        "0": {
+            "0": {
+                "question": "Which enzyme is involved in both oxidative phosphorylation and the citric acid cycle that has a deficiency causing a disease?",
+                "search_keyword": "enzyme deficiency oxidative phosphorylation citric acid cycle disease",
+                "final_answer": {
+                    "short_answer": "Chromosome 5",
+                    "long_answer": "The disease is mitochondrial complex II (succinate dehydrogenase) deficiency. Succinate dehydrogenase functions both in the citric acid cycle (oxidizing succinate to fumarate) and in oxidative phosphorylation as respiratory-chain complex II. Nearly all pathogenic variants that cause complex II deficiency are recessive, but a single autosomal-dominant pathogenic variant has been reported in the SDHA gene. SDHA is located on the short arm of chromosome 5 (5p15), making chromosome 5 the chromosome that contains the only gene with a known dominant pathogenic variant for this disorder."
+                },
+                "target_answer_type": "enzyme"
+            },
+            "1": {
+                "question": "What is the gene associated with the only known dominant pathogenic genetic variant for that enzyme's deficiency?",
+                "search_keyword": "gene dominant pathogenic variant enzyme deficiency",
+                "final_answer": {
+                    "short_answer": "Chromosome 5",
+                    "long_answer": "The enzyme succinate dehydrogenase (respiratory-chain complex II) participates in both the citric acid cycle (oxidising succinate to fumarate) and oxidative phosphorylation (feeding electrons into the respiratory chain). Deficiency of this enzyme produces mitochondrial complex II (succinate-dehydrogenase) deficiency. Pathogenic variants in the SDH subunit genes are almost always autosomal-recessive; however, the sole reported dominantly inherited disease-causing variant lies in the SDHA gene. SDHA is located on chromosome 5p15, so chromosome 5 is the chromosome that harbours the only known dominant pathogenic variant for this disorder."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "Which chromosome contains that gene?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 5",
+                    "long_answer": "Succinate dehydrogenase (Complex II) participates in both the citric acid (TCA) cycle and the oxidative-phosphorylation electron-transport chain. Deficiency of this enzyme causes mitochondrial Complex II deficiency/Leigh syndrome. Pathogenic variants in its catalytic subunit gene SDHA almost always act recessively, but a single heterozygous SDHA variant (e.g., p.Arg94Trp) has been documented to cause disease dominantly—the only known dominant mutation for this disorder. The SDHA gene is located on chromosome 5 (p15.33), so chromosome 5 harbors the gene with the sole known dominant pathogenic variant associated with succinate dehydrogenase deficiency."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Succinate dehydrogenase (Complex II) participates in both the citric acid (TCA) cycle and the oxidative-phosphorylation electron-transport chain. Deficiency of this enzyme causes mitochondrial Complex II deficiency/Leigh syndrome. Pathogenic variants in its catalytic subunit gene SDHA almost always act recessively, but a single heterozygous SDHA variant (e.g., p.Arg94Trp) has been documented to cause disease dominantly—the only known dominant mutation for this disorder. The SDHA gene is located on chromosome 5 (p15.33), so chromosome 5 harbors the gene with the sole known dominant pathogenic variant associated with succinate dehydrogenase deficiency.",
+        "short_answer": "Chromosome 5"
+    }
+}

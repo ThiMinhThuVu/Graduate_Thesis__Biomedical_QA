@@ -1,0 +1,39 @@
+{
+    "QIDX": "589778",
+    "original_question": "What is the term for the biological function that is disrupted by mutations in the gene associated with McArdle's disease?",
+    "type_q": "sequence",
+    "key_entities": [
+        "McArdle's disease"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What is the term for the biological function that is disrupted by mutations in the gene associated with McArdle's disease?",
+            "short_answer": "Glycogenolysis",
+            "long_answer": "McArdle’s disease (glycogen-storage disease type V) is caused by mutations in the PYGM gene, which encodes the muscle isoform of glycogen phosphorylase. This enzyme catalyzes the first step in breaking down glycogen to release glucose-1-phosphate. Loss of its activity blocks the biological process of glycogenolysis in skeletal muscle, leading to exercise intolerance, muscle cramps, and myoglobinuria characteristic of the disorder."
+        },
+        "0": {
+            "0": {
+                "question": "What is McArdle's disease and which gene is associated with it?",
+                "search_keyword": "McArdle's disease associated gene",
+                "final_answer": {
+                    "short_answer": "glycogen phosphorylase activity",
+                    "long_answer": "McArdle’s disease (glycogen-storage disease type V) is caused by pathogenic variants in the PYGM gene, which encodes the skeletal-muscle glycogen phosphorylase enzyme. These mutations abolish the enzyme’s molecular function—glycogen phosphorylase activity—thereby blocking glycogenolysis in muscle and producing the characteristic exercise intolerance and muscle cramps of the disease."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "What biological function is disrupted by mutations in that gene?",
+                "search_keyword": "biological function disrupted by gene mutations",
+                "final_answer": {
+                    "short_answer": "Glycogenolysis",
+                    "long_answer": "McArdle’s disease (glycogen-storage disease type V) is caused by mutations in the PYGM gene, which encodes the muscle isoform of glycogen phosphorylase. This enzyme catalyzes the first step in breaking down glycogen to release glucose-1-phosphate. Loss of its activity blocks the biological process of glycogenolysis in skeletal muscle, leading to exercise intolerance, muscle cramps, and myoglobinuria characteristic of the disorder."
+                },
+                "target_answer_type": "biological function"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "McArdle’s disease (glycogen-storage disease type V) is caused by mutations in the PYGM gene, which encodes the muscle isoform of glycogen phosphorylase. This enzyme catalyzes the first step in breaking down glycogen to release glucose-1-phosphate. Loss of its activity blocks the biological process of glycogenolysis in skeletal muscle, leading to exercise intolerance, muscle cramps, and myoglobinuria characteristic of the disorder.",
+        "short_answer": "Glycogenolysis"
+    }
+}

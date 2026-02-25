@@ -1,0 +1,41 @@
+{
+    "QIDX": "190359",
+    "original_question": "Which medication was approved for medical use in the United States in November 2024 to treat the type of cardiomyopathy that can be caused by amyloidosis?",
+    "type_q": "sequence",
+    "key_entities": [
+        "United States in November",
+        "cardiomyopathy",
+        "amyloidosis"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which medication was approved for medical use in the United States in November 2024 to treat the type of cardiomyopathy that can be caused by amyloidosis?",
+            "short_answer": "Aficamten",
+            "long_answer": "Aficamten is an oral cardiac myosin inhibitor that lessens excessive myosin–actin cross-bridge formation, thereby reducing left-ventricular outflow-tract obstruction and improving symptoms in hypertrophic cardiomyopathy (HCM) — a form of cardiomyopathy that can result from infiltrative disorders such as amyloidosis. The U.S. Food and Drug Administration granted marketing approval for aficamten in November 2024 for the treatment of adults with symptomatic obstructive HCM."
+        },
+        "0": {
+            "0": {
+                "question": "What type of cardiomyopathy can be caused by amyloidosis?",
+                "search_keyword": "type of cardiomyopathy caused by amyloidosis",
+                "final_answer": {
+                    "short_answer": "Aficamten",
+                    "long_answer": "In November 2024 the U.S. Food and Drug Administration authorized aficamten, a selective cardiac myosin inhibitor, for the treatment of obstructive hypertrophic cardiomyopathy (HCM) — a form of cardiomyopathy that can develop secondary to myocardial infiltration by amyloid deposits. By reducing excessive actin-myosin cross-bridge formation, aficamten lowers left-ventricular hypercontractility and outflow-tract gradients, improving exercise capacity and symptoms in HCM patients."
+                },
+                "target_answer_type": "type of cardiomyopathy"
+            },
+            "1": {
+                "question": "Which medication was approved for medical use in the United States in November 2024 to treat that type of cardiomyopathy?",
+                "search_keyword": "medication approved November 2024 treat cardiomyopathy",
+                "final_answer": {
+                    "short_answer": "Aficamten",
+                    "long_answer": "Aficamten is an oral cardiac myosin inhibitor that lessens excessive myosin–actin cross-bridge formation, thereby reducing left-ventricular outflow-tract obstruction and improving symptoms in hypertrophic cardiomyopathy (HCM) — a form of cardiomyopathy that can result from infiltrative disorders such as amyloidosis. The U.S. Food and Drug Administration granted marketing approval for aficamten in November 2024 for the treatment of adults with symptomatic obstructive HCM."
+                },
+                "target_answer_type": "medication"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Aficamten is an oral cardiac myosin inhibitor that lessens excessive myosin–actin cross-bridge formation, thereby reducing left-ventricular outflow-tract obstruction and improving symptoms in hypertrophic cardiomyopathy (HCM) — a form of cardiomyopathy that can result from infiltrative disorders such as amyloidosis. The U.S. Food and Drug Administration granted marketing approval for aficamten in November 2024 for the treatment of adults with symptomatic obstructive HCM.",
+        "short_answer": "Aficamten"
+    }
+}

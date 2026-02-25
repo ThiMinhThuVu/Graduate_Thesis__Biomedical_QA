@@ -1,0 +1,40 @@
+{
+    "QIDX": "296800",
+    "original_question": "Which disease is caused by a parasitic roundworm that protects itself from the host's digestive processes by secreting enzyme inhibitors?",
+    "type_q": "sequence",
+    "key_entities": [
+        "parasitic roundworm",
+        "enzyme inhibitors"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which disease is caused by a parasitic roundworm that protects itself from the host's digestive processes by secreting enzyme inhibitors?",
+            "short_answer": "Ascariasis",
+            "long_answer": "Ascariasis, the intestinal infection produced by the roundworm Ascaris lumbricoides, is characterized by the worm’s ability to withstand host digestion through secretion of trypsin and other protease inhibitors that block the host’s gut enzymes, allowing the parasite to survive in the small intestine."
+        },
+        "0": {
+            "0": {
+                "question": "Which parasitic roundworm is known to protect itself from the host's digestive processes by secreting enzyme inhibitors?",
+                "search_keyword": "parasitic roundworm enzyme inhibitors host digestive processes",
+                "final_answer": {
+                    "short_answer": "Ascariasis",
+                    "long_answer": "Ascariasis is the intestinal infection produced by the roundworm Ascaris lumbricoides. Adult Ascaris live in the lumen of the small intestine and avoid being digested by the host by secreting potent inhibitors of proteolytic enzymes such as trypsin and chymotrypsin. This enzymatic blockade allows the worms to survive, mature, and provoke the clinical manifestations characteristic of ascariasis."
+                },
+                "target_answer_type": "parasitic roundworm"
+            },
+            "1": {
+                "question": "What disease is caused by that parasitic roundworm?",
+                "search_keyword": "disease caused by parasitic roundworm",
+                "final_answer": {
+                    "short_answer": "Ascariasis",
+                    "long_answer": "Ascariasis, the intestinal infection produced by the roundworm Ascaris lumbricoides, is characterized by the worm’s ability to withstand host digestion through secretion of trypsin and other protease inhibitors that block the host’s gut enzymes, allowing the parasite to survive in the small intestine."
+                },
+                "target_answer_type": "disease"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Ascariasis, the intestinal infection produced by the roundworm Ascaris lumbricoides, is characterized by the worm’s ability to withstand host digestion through secretion of trypsin and other protease inhibitors that block the host’s gut enzymes, allowing the parasite to survive in the small intestine.",
+        "short_answer": "Ascariasis"
+    }
+}

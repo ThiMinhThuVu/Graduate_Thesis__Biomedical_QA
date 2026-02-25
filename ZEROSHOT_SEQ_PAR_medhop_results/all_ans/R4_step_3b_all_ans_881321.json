@@ -1,0 +1,40 @@
+{
+    "QIDX": "881321",
+    "original_question": "Which rare bleeding disorder is caused by a deficiency in the receptor for the large glycoprotein that promotes primary platelet adhesion?",
+    "type_q": "sequence",
+    "key_entities": [
+        "platelet adhesion?",
+        "bleeding disorder"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which rare bleeding disorder is caused by a deficiency in the receptor for the large glycoprotein that promotes primary platelet adhesion?",
+            "short_answer": "Bernard-Soulier syndrome",
+            "long_answer": "Bernard-Soulier syndrome is a rare inherited bleeding disorder caused by quantitative or qualitative deficiency of the platelet membrane receptor complex glycoprotein Ib-IX-V, which is the binding site for von Willebrand factor—the large glycoprotein responsible for primary platelet adhesion to subendothelial collagen. Loss of this receptor impairs platelet adhesion, producing the characteristic mucocutaneous bleeding tendency of the syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "What is the large glycoprotein that promotes primary platelet adhesion?",
+                "search_keyword": "large glycoprotein promotes primary platelet adhesion",
+                "final_answer": {
+                    "short_answer": "Bernard-Soulier syndrome",
+                    "long_answer": "Bernard-Soulier syndrome is a rare inherited bleeding disorder caused by quantitative or qualitative deficiency of the platelet membrane receptor complex glycoprotein Ib-IX-V. This receptor binds von Willebrand factor, the large multimeric glycoprotein that mediates primary platelet adhesion to damaged endothelium. Without functional GPIb-IX-V, platelets cannot adhere properly, leading to prolonged bleeding and the characteristic macrothrombocytopenia of Bernard-Soulier syndrome."
+                },
+                "target_answer_type": "glycoprotein"
+            },
+            "1": {
+                "question": "Which rare bleeding disorder is caused by a deficiency in the receptor for that large glycoprotein?",
+                "search_keyword": "rare bleeding disorder deficiency receptor large glycoprotein",
+                "final_answer": {
+                    "short_answer": "Bernard-Soulier syndrome",
+                    "long_answer": "Bernard-Soulier syndrome is a rare inherited bleeding disorder caused by quantitative or qualitative deficiency of the platelet membrane receptor complex glycoprotein Ib-IX-V, which is the binding site for von Willebrand factor—the large glycoprotein responsible for primary platelet adhesion to subendothelial collagen. Loss of this receptor impairs platelet adhesion, producing the characteristic mucocutaneous bleeding tendency of the syndrome."
+                },
+                "target_answer_type": "bleeding disorder"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Bernard-Soulier syndrome is a rare inherited bleeding disorder caused by quantitative or qualitative deficiency of the platelet membrane receptor complex glycoprotein Ib-IX-V, which is the binding site for von Willebrand factor—the large glycoprotein responsible for primary platelet adhesion to subendothelial collagen. Loss of this receptor impairs platelet adhesion, producing the characteristic mucocutaneous bleeding tendency of the syndrome.",
+        "short_answer": "Bernard-Soulier syndrome"
+    }
+}

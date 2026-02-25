@@ -12,6 +12,7 @@ import math
 from src.api_key import api_key_openai
 from openai import OpenAI
 import portalocker # Thêm thư viện này
+import time
 
 # ZERO SHOT
 client = OpenAI(
@@ -49,7 +50,7 @@ def prompt_zero_shot_medhop_wh(question):
     return prompt
 
 def prompt_zero_shot_medhop_correctness(question):
-    prompt = f"""You are a biomedical expert. Your task is to answer a question base on ONLY the provided context
+    prompt = f"""You are an expert in biomedical and scientific knowledge. Your task is to answer the following question based on established scientific consensus and your internal knowledge.
         ### INSTRUCTIONS:
         1. Analyze the input 'Question'. Identify key biomedical entities (e.g., drugs, proteins, diseases) and their relationships.
         2. Retrieve relevant medical facts and established scientific consensus regarding these entities.
@@ -70,88 +71,165 @@ def prompt_zero_shot_medhop_correctness(question):
 
 CACHE_PATH = 'data/cache/embed_candidate_ans_cluster.json'
 
-def load_embedding_cache(path):
-    if not os.path.exists(path):
-        # Đảm bảo thư mục tồn tại
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump({}, f)
-        return {}
+# def load_embedding_cache(path):
+#     if not os.path.exists(path):
+#         # Đảm bảo thư mục tồn tại
+#         os.makedirs(os.path.dirname(path), exist_ok=True)
+#         with open(path, "w", encoding="utf-8") as f:
+#             json.dump({}, f)
+#         return {}
     
-    with open(path, "r", encoding="utf-8") as f:
-        # Khóa Shared (LOCK_SH): Cho phép nhiều người đọc
-        portalocker.lock(f, portalocker.LOCK_SH)
-        try:
-            data = json.load(f)
-            # Convert list back to numpy array for calculation
-            return {k: np.array(v) for k, v in data.items()}
-        except (json.JSONDecodeError, ValueError):
-            return {}
+#     with open(path, "r", encoding="utf-8") as f:
+#         # Khóa Shared (LOCK_SH): Cho phép nhiều người đọc
+#         portalocker.lock(f, portalocker.LOCK_SH)
+#         try:
+#             data = json.load(f)
+#             # Convert list back to numpy array for calculation
+#             return {k: np.array(v) for k, v in data.items()}
+#         except (json.JSONDecodeError, ValueError):
+#             return {}
 
-def save_embedding_cache(new_data, path):
-    """
-    new_data: dict chứa {text: ndarray} mới phát sinh
-    """
+# def save_embedding_cache(new_data, path):
+#     """
+#     new_data: dict chứa {text: ndarray} mới phát sinh
+#     """
+#     if not new_data:
+#         return
+
+#     with open(path, 'r+', encoding='utf-8') as f:
+#         # Khóa Độc quyền (LOCK_EX): Chỉ 1 người được ghi
+#         portalocker.lock(f, portalocker.LOCK_EX)
+        
+#         # 1. Đọc dữ liệu hiện tại
+#         f.seek(0)
+#         try:
+#             current_cache = json.load(f)
+#         except:
+#             current_cache = {}
+            
+#         # 2. Convert dữ liệu mới (ndarray -> list) và update
+#         for text, emb in new_data.items():
+#             if isinstance(emb, np.ndarray):
+#                 current_cache[text] = emb.tolist()
+#             else:
+#                 current_cache[text] = emb
+        
+#         # 3. Ghi đè lại file
+#         f.seek(0)
+#         f.truncate()
+#         json.dump(current_cache, f, ensure_ascii=False, indent=4)
+          
+def load_embedding_cache(path, timeout=60):
+    if not os.path.exists(path):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        return {}
+
+    try:
+        with portalocker.Lock(path, mode='r', timeout=timeout, encoding='utf-8') as f:
+            data = json.load(f)
+            # Convert list ngược lại thành numpy array
+            return {k: np.array(v) for k, v in data.items()}
+    except Exception as e:
+        print(f"⚠️ Cache embedding lỗi hoặc trống: {e}")
+        return {}
+
+def save_embedding_cache(new_data, path, timeout=60):
     if not new_data:
         return
 
-    with open(path, 'r+', encoding='utf-8') as f:
-        # Khóa Độc quyền (LOCK_EX): Chỉ 1 người được ghi
-        portalocker.lock(f, portalocker.LOCK_EX)
+    try:
+        with portalocker.Lock(path, mode='r+', timeout=timeout, encoding='utf-8') as f:
+            # Đọc cache hiện tại
+            try:
+                f.seek(0)
+                current_cache = json.load(f)
+            except:
+                current_cache = {}
+
+            # Cập nhật dữ liệu mới (chỉ convert numpy sang list tại đây)
+            for text, emb in new_data.items():
+                if isinstance(emb, np.ndarray):
+                    current_cache[text] = emb.tolist()
+                else:
+                    current_cache[text] = emb
+
+            # Ghi lại
+            f.seek(0)
+            f.truncate()
+            json.dump(current_cache, f, ensure_ascii=False, indent=4)
+    except Exception as e:
+        print(f"Lỗi ghi embedding cache: {e}")
         
-        # 1. Đọc dữ liệu hiện tại
-        f.seek(0)
-        try:
-            current_cache = json.load(f)
-        except:
-            current_cache = {}
-            
-        # 2. Convert dữ liệu mới (ndarray -> list) và update
-        for text, emb in new_data.items():
-            if isinstance(emb, np.ndarray):
-                current_cache[text] = emb.tolist()
-            else:
-                current_cache[text] = emb
-        
-        # 3. Ghi đè lại file
-        f.seek(0)
-        f.truncate()
-        json.dump(current_cache, f, ensure_ascii=False, indent=4)
-          
-def load_json(path):
+def load_json(path, timeout=60):
     if not os.path.exists(path):
-        # Nếu file không tồn tại, tạo file mới với nội dung {} để tránh lỗi lock file trống
         with open(path, "w", encoding="utf-8") as f:
             json.dump({}, f)
         return {}
-    
-    with open(path, "r", encoding="utf-8") as f:
-        # Khóa Shared (LOCK_SH): Nhiều người cùng đọc được, nhưng không ai được ghi
-        portalocker.lock(f, portalocker.LOCK_SH)
-        data = json.load(f)
-        return data
 
-def save_json(data, file_path):
-    # Dùng chế độ "a+" hoặc "r+" để portalocker hoạt động tốt nhất trên mọi OS
-    with open(file_path, 'r+', encoding='utf-8') as f:
-        # Khóa Độc quyền (LOCK_EX): Chỉ 1 người được quyền truy cập (cả đọc và ghi)
-        portalocker.lock(f, portalocker.LOCK_EX)
-        
-        # Đọc dữ liệu mới nhất một lần nữa trước khi ghi 
-        # (Phòng trường hợp tab kia vừa ghi xong một qidx khác)
-        f.seek(0)
-        try:
-            current_cache = json.load(f)
-        except:
-            current_cache = {}
+    # Lock để đọc (LOCK_SH: nhiều người cùng đọc được)
+    try:
+        with portalocker.Lock(path, mode='r', timeout=timeout, encoding='utf-8') as f:
+            data = json.load(f)
+            return data
+    except Exception as e:
+        print(f"Lỗi load file {path}: {e}")
+        return {}
+
+def save_json(data, file_path, timeout=60):
+    # Sử dụng LOCK_EX (Độc quyền) để đảm bảo không ai đọc/ghi khi ta đang cập nhật
+    try:
+        with portalocker.Lock(file_path, mode='r+', timeout=timeout, encoding='utf-8') as f:
+            # 1. Đọc dữ liệu mới nhất trước khi cập nhật (Tránh ghi đè mất dữ liệu của tiến trình khác)
+            try:
+                current_data = json.load(f)
+            except:
+                current_data = {}
             
-        # Cập nhật dữ liệu mới vào cache hiện tại
-        current_cache.update(data)
+            # 2. Cập nhật
+            current_data.update(data)
+            
+            # 3. Ghi đè
+            f.seek(0)
+            f.truncate()
+            json.dump(current_data, f, ensure_ascii=False, indent=4)
+            # File sẽ tự động unlock khi thoát khỏi block 'with'
+    except Exception as e:
+        print(f"Không thể ghi file {file_path} sau {timeout}s: {e}")
         
-        # Ghi đè lại file
-        f.seek(0)
-        f.truncate()
-        json.dump(current_cache, f, ensure_ascii=False, indent=4)
+# def load_json(path):
+#     if not os.path.exists(path):
+#         # Nếu file không tồn tại, tạo file mới với nội dung {} để tránh lỗi lock file trống
+#         with open(path, "w", encoding="utf-8") as f:
+#             json.dump({}, f)
+#         return {}
+    
+#     with open(path, "r", encoding="utf-8") as f:
+#         # Khóa Shared (LOCK_SH): Nhiều người cùng đọc được, nhưng không ai được ghi
+#         portalocker.lock(f, portalocker.LOCK_SH)
+#         data = json.load(f)
+#         return data
+
+# def save_json(data, file_path):
+#     # Dùng chế độ "a+" hoặc "r+" để portalocker hoạt động tốt nhất trên mọi OS
+#     with open(file_path, 'r+', encoding='utf-8') as f:
+#         # Khóa Độc quyền (LOCK_EX): Chỉ 1 người được quyền truy cập (cả đọc và ghi)
+#         portalocker.lock(f, portalocker.LOCK_EX)
+        
+#         # Đọc dữ liệu mới nhất một lần nữa trước khi ghi 
+#         # (Phòng trường hợp tab kia vừa ghi xong một qidx khác)
+#         f.seek(0)
+#         try:
+#             current_cache = json.load(f)
+#         except:
+#             current_cache = {}
+            
+#         # Cập nhật dữ liệu mới vào cache hiện tại
+#         current_cache.update(data)
+        
+#         # Ghi đè lại file
+#         f.seek(0)
+#         f.truncate()
+#         json.dump(current_cache, f, ensure_ascii=False, indent=4)
         
         
 def extract_references(long_answer):
@@ -438,9 +516,9 @@ def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_typ
             prompt = prompt_zero_shot_medhop_wh(question)
             
         messages = [
-            {"role": "system", "content": "You are a biomedical expert. Your task is to answer questions accurately based on established scientific consensus and your internal medical knowledge. Always output in strict JSON format."},
             {"role": "user", "content": prompt}
-        ]  
+        ]
+        
         result_raw = request_api_o3(messages)
         
         try:
@@ -475,9 +553,44 @@ def load_pubmed_model():
     
 if __name__ == '__main__':
     # Khởi tạo model một lần duy nhất
-    global_model = load_pubmed_model()
+    # global_model = load_pubmed_model()
     mapping = load_json('data/mapping_answer_gol.json')
+    meta = load_json(r'data\metadata_medhop.json')
+    dict_golden = load_json(r'data\all_answer_golden_56_update.json')
     
-    # Giả sử có dữ liệu mẫu
-    # res = process_get_final_answer(q, cluster, mapping, global_model)
+    file_output = 'zero-shot-o3/direct/seq_parallel.json'
+    print(file_output)
+    
+    if os.path.exists(file_output):
+        output = load_json(file_output)
+    else:
+        output = {}
+        
+    for qidx, item in meta.items():
+        target_answer_type = item['target_answer_type']
+        question = item["original question"]
+        if qidx in output:
+            print("Bỏ qua")
+            continue
+        
+        if item['type_q'] == 'direct' or dict_golden[qidx]['True'] == []:
+            continue
+        
+        if target_answer_type == 'correctness':
+            prompt = prompt_zero_shot_medhop_correctness(question)            
+        else:
+            prompt = prompt_zero_shot_medhop_wh(question)
+            
+        messages = [
+            {"role": "user", "content": prompt}
+        ]
+        
+        result_raw = request_api_o3(messages)
+    
+        # Clean markdown nếu có
+        clean_json = re.sub(r"```json|```", "", result_raw).strip()
+        result_dict = json.loads(clean_json)
+        output[qidx] = result_dict
+        save_json(output, file_output)
+    save_json(output, file_output)
       

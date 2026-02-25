@@ -1,0 +1,39 @@
+{
+    "QIDX": "131544",
+    "original_question": "Which tissues or cells typically express the gene associated with paramyotonia congenita?",
+    "type_q": "sequence",
+    "key_entities": [
+        "paramyotonia congenita"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which tissues or cells typically express the gene associated with paramyotonia congenita?",
+            "short_answer": "Skeletal muscle fibers",
+            "long_answer": "Paramyotonia congenita is caused by mutations in the SCN4A gene, which encodes the Nav1.4 voltage-gated sodium channel. SCN4A expression is essentially restricted to mature skeletal muscle cells (myofibers), where Nav1.4 governs action-potential initiation and propagation in skeletal muscle tissue."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with paramyotonia congenita?",
+                "search_keyword": "gene associated with paramyotonia congenita",
+                "final_answer": {
+                    "short_answer": "Skeletal muscle",
+                    "long_answer": "Paramyotonia congenita is caused by mutations in the SCN4A gene encoding the NaV1.4 voltage-gated sodium channel. SCN4A expression is essentially restricted to adult skeletal muscle fibers, where the channel governs action-potential initiation and propagation, explaining the disorder’s muscle-specific symptoms."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Which tissues or cells typically express that gene?",
+                "search_keyword": "tissues cells express gene paramyotonia congenita",
+                "final_answer": {
+                    "short_answer": "Skeletal muscle fibers",
+                    "long_answer": "Paramyotonia congenita is caused by mutations in the SCN4A gene, which encodes the Nav1.4 voltage-gated sodium channel. SCN4A expression is essentially restricted to mature skeletal muscle cells (myofibers), where Nav1.4 governs action-potential initiation and propagation in skeletal muscle tissue."
+                },
+                "target_answer_type": "tissues or cells"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Paramyotonia congenita is caused by mutations in the SCN4A gene, which encodes the Nav1.4 voltage-gated sodium channel. SCN4A expression is essentially restricted to mature skeletal muscle cells (myofibers), where Nav1.4 governs action-potential initiation and propagation in skeletal muscle tissue.",
+        "short_answer": "Skeletal muscle fibers"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "QIDX": "281757",
+    "original_question": "Does the causal gene of Woodhouse-Sakati syndrome encode a nuclear transmembrane protein?",
+    "type_q": "sequence",
+    "key_entities": [
+        "nuclear transmembrane protein",
+        "Woodhouse-Sakati syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Does the causal gene of Woodhouse-Sakati syndrome encode a nuclear transmembrane protein?",
+            "short_answer": "no",
+            "long_answer": "Woodhouse-Sakati syndrome is caused by biallelic mutations in the DCAF17 gene (formerly called C2orf37) on chromosome 2. Biochemical studies and sequence analysis show that the DCAF17 product is a soluble nucleolar protein that associates with the DDB1–CUL4 E3-ubiquitin-ligase complex. It contains nucleolar localisation signals but lacks the hydrophobic stretches that define membrane-spanning domains, and it is not anchored in the nuclear envelope. Consequently, the causal gene for Woodhouse-Sakati syndrome does not encode a nuclear transmembrane protein."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is causal for Woodhouse-Sakati syndrome?",
+                "search_keyword": "causal gene Woodhouse-Sakati syndrome",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Woodhouse–Sakati syndrome is caused by loss-of-function mutations in the DCAF17 (C2orf37) gene. The DCAF17 protein localises to the nuclear envelope/nucleolus and contains two predicted transmembrane helices, classifying it as a nuclear transmembrane protein. Therefore, the causal gene indeed encodes a nuclear transmembrane protein."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Does that gene encode a nuclear transmembrane protein?",
+                "search_keyword": "gene encode nuclear transmembrane protein",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Woodhouse-Sakati syndrome is caused by biallelic mutations in the DCAF17 gene (formerly called C2orf37) on chromosome 2. Biochemical studies and sequence analysis show that the DCAF17 product is a soluble nucleolar protein that associates with the DDB1–CUL4 E3-ubiquitin-ligase complex. It contains nucleolar localisation signals but lacks the hydrophobic stretches that define membrane-spanning domains, and it is not anchored in the nuclear envelope. Consequently, the causal gene for Woodhouse-Sakati syndrome does not encode a nuclear transmembrane protein."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Woodhouse-Sakati syndrome is caused by biallelic mutations in the DCAF17 gene (formerly called C2orf37) on chromosome 2. Biochemical studies and sequence analysis show that the DCAF17 product is a soluble nucleolar protein that associates with the DDB1–CUL4 E3-ubiquitin-ligase complex. It contains nucleolar localisation signals but lacks the hydrophobic stretches that define membrane-spanning domains, and it is not anchored in the nuclear envelope. Consequently, the causal gene for Woodhouse-Sakati syndrome does not encode a nuclear transmembrane protein.",
+        "short_answer": "no"
+    }
+}

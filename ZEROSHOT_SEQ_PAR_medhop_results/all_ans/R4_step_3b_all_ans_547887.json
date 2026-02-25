@@ -1,0 +1,40 @@
+{
+    "QIDX": "547887",
+    "original_question": "Which subtype of Sanfilippo syndrome is associated with mutations in the gene encoding Heparan-α-glucosaminide N-acetyltransferase?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Heparan-α-glucosaminide N-acetyltransferase",
+        "Sanfilippo syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which subtype of Sanfilippo syndrome is associated with mutations in the gene encoding Heparan-α-glucosaminide N-acetyltransferase?",
+            "short_answer": "Sanfilippo type IIIC",
+            "long_answer": "Mutations in the HGSNAT gene, which encodes heparan-α-glucosaminide N-acetyltransferase, cause mucopolysaccharidosis type III C (Sanfilippo syndrome subtype C). Deficiency of this lysosomal enzyme blocks a step in heparan-sulfate degradation, producing the characteristic neurodegenerative phenotype of Sanfilippo type IIIC."
+        },
+        "0": {
+            "0": {
+                "question": "Which subtype of Sanfilippo syndrome is associated with mutations in the gene encoding Heparan-α-glucosaminide N-acetyltransferase?",
+                "search_keyword": "subtype Sanfilippo syndrome mutations gene Heparan-α-glucosaminide N-acetyltransferase",
+                "final_answer": {
+                    "short_answer": "Sanfilippo type C",
+                    "long_answer": "Sanfilippo syndrome type C (MPS IIIC) results from pathogenic variants in the HGSNAT gene, which encodes heparan-α-glucosaminide N-acetyltransferase; deficiency of this enzyme disrupts heparan sulfate degradation and causes the type C subtype."
+                },
+                "target_answer_type": "subtype"
+            },
+            "1": {
+                "question": "What is the gene that encodes Heparan-α-glucosaminide N-acetyltransferase?",
+                "search_keyword": "gene encoding Heparan-α-glucosaminide N-acetyltransferase",
+                "final_answer": {
+                    "short_answer": "Sanfilippo type IIIC",
+                    "long_answer": "Mutations in the HGSNAT gene, which encodes heparan-α-glucosaminide N-acetyltransferase, cause mucopolysaccharidosis type III C (Sanfilippo syndrome subtype C). Deficiency of this lysosomal enzyme blocks a step in heparan-sulfate degradation, producing the characteristic neurodegenerative phenotype of Sanfilippo type IIIC."
+                },
+                "target_answer_type": "gene"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Mutations in the HGSNAT gene, which encodes heparan-α-glucosaminide N-acetyltransferase, cause mucopolysaccharidosis type III C (Sanfilippo syndrome subtype C). Deficiency of this lysosomal enzyme blocks a step in heparan-sulfate degradation, producing the characteristic neurodegenerative phenotype of Sanfilippo type IIIC.",
+        "short_answer": "Sanfilippo type IIIC"
+    }
+}

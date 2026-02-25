@@ -1,0 +1,50 @@
+{
+    "QIDX": "637389",
+    "original_question": "Do juvenile idiopathic arthritis (JIA) and osteoarthritis share any symptoms?",
+    "type_q": "parallel",
+    "key_entities": [
+        "juvenile idiopathic arthritis",
+        "osteoarthritis",
+        "JIA"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What symptoms are associated with juvenile idiopathic arthritis (JIA)?",
+            "short_answer": "Joint pain, swelling, stiffness",
+            "long_answer": "Juvenile idiopathic arthritis typically presents with painful, swollen, and stiff joints—especially in the morning—with limited range of motion. Additional manifestations can include limping, growth disturbances, fatigue, fever, rash, and uveitis, but the core musculoskeletal symptoms are joint pain, swelling, and morning stiffness that persist for at least six weeks in a child under 16 years of age."
+        },
+        "0": {
+            "0": {
+                "question": "What symptoms are associated with juvenile idiopathic arthritis (JIA)?",
+                "search_keyword": "juvenile idiopathic arthritis JIA associated symptoms",
+                "final_answer": {
+                    "short_answer": "Joint pain, swelling, stiffness",
+                    "long_answer": "Juvenile idiopathic arthritis typically presents with painful, swollen, and stiff joints—especially in the morning—with limited range of motion. Additional manifestations can include limping, growth disturbances, fatigue, fever, rash, and uveitis, but the core musculoskeletal symptoms are joint pain, swelling, and morning stiffness that persist for at least six weeks in a child under 16 years of age."
+                },
+                "target_answer_type": "symptoms"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What symptoms are associated with osteoarthritis?",
+            "short_answer": "Joint pain and stiffness",
+            "long_answer": "The hallmark clinical manifestations of osteoarthritis are activity-related joint pain and morning or inactivity-related stiffness. As cartilage degenerates and subchondral bone remodels, nociceptive pathways are activated, producing pain, while loss of smooth articular surfaces and synovial inflammation lead to stiffness, crepitus, reduced range of motion, occasional swelling, and functional limitation."
+        },
+        "0": {
+            "0": {
+                "question": "What symptoms are associated with osteoarthritis?",
+                "search_keyword": "osteoarthritis associated symptoms",
+                "final_answer": {
+                    "short_answer": "Joint pain and stiffness",
+                    "long_answer": "The hallmark clinical manifestations of osteoarthritis are activity-related joint pain and morning or inactivity-related stiffness. As cartilage degenerates and subchondral bone remodels, nociceptive pathways are activated, producing pain, while loss of smooth articular surfaces and synovial inflammation lead to stiffness, crepitus, reduced range of motion, occasional swelling, and functional limitation."
+                },
+                "target_answer_type": "symptoms"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Both juvenile idiopathic arthritis (JIA) and osteoarthritis exhibit joint pain and stiffness as core symptoms. In JIA, the typical manifestations include joint pain, swelling, and morning stiffness that persist for at least six weeks, while osteoarthritis is primarily characterized by activity-related joint pain and morning or inactivity-related stiffness, often with some degree of swelling. Thus, they share common symptoms.",
+        "short_answer": "yes"
+    }
+}

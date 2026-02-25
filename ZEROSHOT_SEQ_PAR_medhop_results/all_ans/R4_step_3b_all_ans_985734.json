@@ -1,0 +1,41 @@
+{
+    "QIDX": "985734",
+    "original_question": "Which region of chromosome 5 contains the mutated gene associated with hereditary pulmonary alveolar proteinosis?",
+    "type_q": "sequence",
+    "key_entities": [
+        "hereditary pulmonary alveolar proteinosis",
+        "chromosome 5",
+        "mutated gene"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which region of chromosome 5 contains the mutated gene associated with hereditary pulmonary alveolar proteinosis?",
+            "short_answer": "5q31",
+            "long_answer": "The hereditary (autosomal-recessive) form of pulmonary alveolar proteinosis has been linked to mutations/deletions in the GM-CSF (CSF2) locus, which is situated on the long arm of chromosome 5 at band q31 (5q31). Loss of GM-CSF signalling from this 5q31 region prevents surfactant clearance by alveolar macrophages, producing the characteristic proteinosis."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is mutated and associated with hereditary pulmonary alveolar proteinosis?",
+                "search_keyword": "mutated gene hereditary pulmonary alveolar proteinosis",
+                "final_answer": {
+                    "short_answer": "5q31",
+                    "long_answer": "Hereditary pulmonary alveolar proteinosis can result from loss-of-function mutations in the CSF2 (granulocyte-macrophage colony-stimulating factor) gene. CSF2 lies in the cytokine gene cluster on the long arm of chromosome 5, band q31. Mutation of this 5q31 locus disrupts GM-CSF signalling to alveolar macrophages, preventing surfactant clearance and producing the proteinosis phenotype."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "1": {
+                "question": "Which region of chromosome 5 contains that mutated gene?",
+                "search_keyword": "region chromosome 5 mutated gene",
+                "final_answer": {
+                    "short_answer": "5q31",
+                    "long_answer": "The hereditary (autosomal-recessive) form of pulmonary alveolar proteinosis has been linked to mutations/deletions in the GM-CSF (CSF2) locus, which is situated on the long arm of chromosome 5 at band q31 (5q31). Loss of GM-CSF signalling from this 5q31 region prevents surfactant clearance by alveolar macrophages, producing the characteristic proteinosis."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The hereditary (autosomal-recessive) form of pulmonary alveolar proteinosis has been linked to mutations/deletions in the GM-CSF (CSF2) locus, which is situated on the long arm of chromosome 5 at band q31 (5q31). Loss of GM-CSF signalling from this 5q31 region prevents surfactant clearance by alveolar macrophages, producing the characteristic proteinosis.",
+        "short_answer": "5q31"
+    }
+}

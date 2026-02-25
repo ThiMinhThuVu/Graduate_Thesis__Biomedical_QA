@@ -1,0 +1,50 @@
+{
+    "QIDX": "875070",
+    "original_question": "Is the syndrome associated with early-onset optic atrophy with spinocerebellar degeneration also associated with a mutation in the gene which has been previously reported in patients with mitochondrial membrane protein-associated neurodegeneration?",
+    "type_q": "sequence",
+    "key_entities": [
+        "mitochondrial membrane protein-associated neurodegeneration",
+        "spinocerebellar degeneration",
+        "early-onset optic atrophy"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is the syndrome associated with early-onset optic atrophy with spinocerebellar degeneration also associated with a mutation in the gene which has been previously reported in patients with mitochondrial membrane protein-associated neurodegeneration?",
+            "short_answer": "yes",
+            "long_answer": "Mitochondrial membrane protein-associated neurodegeneration (MPAN) is one of the neurodegeneration-with-brain-iron-accumulation (NBIA) disorders and is caused by biallelic pathogenic variants in the C19orf12 gene.  Since the original description of MPAN, additional patients carrying C19orf12 mutations have been reported whose clinical picture is dominated not by iron accumulation but by an early-childhood onset of optic atrophy together with progressive spinocerebellar degeneration/ataxia, spasticity and peripheral neuropathy.  These reports show that the phenotype associated with C19orf12 mutations is broader than classic MPAN and includes the syndrome of “early-onset optic atrophy with spinocerebellar degeneration.”  Thus, the optic-atrophy-spinocerebellar-degeneration syndrome is indeed associated with mutations in the same gene (C19orf12) that had previously been described in patients with mitochondrial membrane protein-associated neurodegeneration."
+        },
+        "0": {
+            "0": {
+                "question": "What is the syndrome associated with early-onset optic atrophy with spinocerebellar degeneration?",
+                "search_keyword": "syndrome early-onset optic atrophy spinocerebellar degeneration",
+                "final_answer": {
+                    "short_answer": "C19orf12",
+                    "long_answer": "Yes. Early-onset optic atrophy with spinocerebellar degeneration has been linked to pathogenic variants in the C19orf12 gene—the same gene whose mutations are known to cause mitochondrial membrane protein-associated neurodegeneration (MPAN), a subtype of NBIA. Thus, the two disorders share the identical genetic defect in C19orf12."
+                },
+                "target_answer_type": "syndrome"
+            },
+            "1": {
+                "question": "Which gene has been previously reported to have mutations in patients with mitochondrial membrane protein-associated neurodegeneration?",
+                "search_keyword": "gene mutations mitochondrial membrane protein-associated neurodegeneration",
+                "final_answer": {
+                    "short_answer": "C19orf12",
+                    "long_answer": "Mitochondrial membrane protein-associated neurodegeneration (MPAN) is caused by biallelic pathogenic variants in the nuclear gene C19orf12. Independent case reports have shown that patients presenting with early-onset optic atrophy combined with spinocerebellar degeneration also carry disease-causing C19orf12 mutations, indicating that the same gene underlies both MPAN and this optic-atrophy/ataxia syndrome."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "Is that gene associated with the syndrome characterized by early-onset optic atrophy with spinocerebellar degeneration?",
+                "search_keyword": "association gene syndrome early-onset optic atrophy spinocerebellar degeneration",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Mitochondrial membrane protein-associated neurodegeneration (MPAN) is one of the neurodegeneration-with-brain-iron-accumulation (NBIA) disorders and is caused by biallelic pathogenic variants in the C19orf12 gene.  Since the original description of MPAN, additional patients carrying C19orf12 mutations have been reported whose clinical picture is dominated not by iron accumulation but by an early-childhood onset of optic atrophy together with progressive spinocerebellar degeneration/ataxia, spasticity and peripheral neuropathy.  These reports show that the phenotype associated with C19orf12 mutations is broader than classic MPAN and includes the syndrome of “early-onset optic atrophy with spinocerebellar degeneration.”  Thus, the optic-atrophy-spinocerebellar-degeneration syndrome is indeed associated with mutations in the same gene (C19orf12) that had previously been described in patients with mitochondrial membrane protein-associated neurodegeneration."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Mitochondrial membrane protein-associated neurodegeneration (MPAN) is one of the neurodegeneration-with-brain-iron-accumulation (NBIA) disorders and is caused by biallelic pathogenic variants in the C19orf12 gene.  Since the original description of MPAN, additional patients carrying C19orf12 mutations have been reported whose clinical picture is dominated not by iron accumulation but by an early-childhood onset of optic atrophy together with progressive spinocerebellar degeneration/ataxia, spasticity and peripheral neuropathy.  These reports show that the phenotype associated with C19orf12 mutations is broader than classic MPAN and includes the syndrome of “early-onset optic atrophy with spinocerebellar degeneration.”  Thus, the optic-atrophy-spinocerebellar-degeneration syndrome is indeed associated with mutations in the same gene (C19orf12) that had previously been described in patients with mitochondrial membrane protein-associated neurodegeneration.",
+        "short_answer": "yes"
+    }
+}

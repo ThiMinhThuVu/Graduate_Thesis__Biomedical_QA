@@ -1,0 +1,51 @@
+{
+    "QIDX": "341684",
+    "original_question": "Is it true that both generalized arterial calcification of infancy (GACI) and ossification of the posterior longitudinal ligament (OPLL) affect males and females equally?",
+    "type_q": "parallel",
+    "key_entities": [
+        "ossification of the posterior longitudinal ligament",
+        "generalized arterial calcification of infancy",
+        "GACI",
+        "OPLL"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Do both males and females equally experience generalized arterial calcification of infancy (GACI)?",
+            "short_answer": "yes",
+            "long_answer": "Generalized arterial calcification of infancy (GACI) is inherited in an autosomal-recessive manner, most commonly due to pathogenic variants in the ENPP1 or ABCC6 genes. Because the mutated genes are located on autosomes (non-sex chromosomes), the disorder shows no sex-linked pattern of inheritance. Epidemiologic case series and registry data report affected males and females in roughly equal numbers, and authoritative reviews state that there is no known gender predilection. Therefore, current scientific consensus holds that males and females experience GACI with essentially equal frequency."
+        },
+        "0": {
+            "0": {
+                "question": "Do both males and females equally experience generalized arterial calcification of infancy (GACI)?",
+                "search_keyword": "generalized arterial calcification of infancy GACI males females comparison",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Generalized arterial calcification of infancy (GACI) is inherited in an autosomal-recessive manner, most commonly due to pathogenic variants in the ENPP1 or ABCC6 genes. Because the mutated genes are located on autosomes (non-sex chromosomes), the disorder shows no sex-linked pattern of inheritance. Epidemiologic case series and registry data report affected males and females in roughly equal numbers, and authoritative reviews state that there is no known gender predilection. Therefore, current scientific consensus holds that males and females experience GACI with essentially equal frequency."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Do both males and females equally experience ossification of the posterior longitudinal ligament (OPLL)?",
+            "short_answer": "no",
+            "long_answer": "Epidemiological studies of ossification of the posterior longitudinal ligament (OPLL) consistently show a clear male predominance rather than equal sex distribution. Large population-based surveys from Japan, Korea, China, and multicenter series in North America report male-to-female ratios ranging roughly from 1.5:1 to 3:1. Although OPLL can certainly occur in women, the overall prevalence and incidence are higher in men. This sex difference is sufficiently robust that male sex is considered an independent risk factor for OPLL in multivariate analyses. Therefore, males and females do not experience OPLL equally."
+        },
+        "0": {
+            "0": {
+                "question": "Do both males and females equally experience ossification of the posterior longitudinal ligament (OPLL)?",
+                "search_keyword": "ossification posterior longitudinal ligament OPLL males females comparison",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Epidemiological studies of ossification of the posterior longitudinal ligament (OPLL) consistently show a clear male predominance rather than equal sex distribution. Large population-based surveys from Japan, Korea, China, and multicenter series in North America report male-to-female ratios ranging roughly from 1.5:1 to 3:1. Although OPLL can certainly occur in women, the overall prevalence and incidence are higher in men. This sex difference is sufficiently robust that male sex is considered an independent risk factor for OPLL in multivariate analyses. Therefore, males and females do not experience OPLL equally."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Generalized arterial calcification of infancy (GACI) affects both males and females equally because it is inherited in an autosomal recessive manner and does not show a sex-linked pattern, which is supported by epidemiologic case series and registry data. In contrast, ossification of the posterior longitudinal ligament (OPLL) consistently shows a male predominance in epidemiological studies, with male-to-female ratios ranging from 1.5:1 to 3:1. Therefore, it is not true that both conditions affect males and females equally.",
+        "short_answer": "no"
+    }
+}

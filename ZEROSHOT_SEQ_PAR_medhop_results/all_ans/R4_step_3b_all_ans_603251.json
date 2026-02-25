@@ -1,0 +1,48 @@
+{
+    "QIDX": "603251",
+    "original_question": "Of the three genes that, when mutated, cause a metabolic disease resulting in the body producing an odor similar to tyrosinemia, the gene coding for the longest of these proteins is located on which chromosome?",
+    "type_q": "sequence",
+    "key_entities": [
+        "metabolic disease"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Of the three genes that, when mutated, cause a metabolic disease resulting in the body producing an odor similar to tyrosinemia, the gene coding for the longest of these proteins is located on which chromosome?",
+            "short_answer": "chromosome 20",
+            "long_answer": "The metabolic disease is isolated hypermethioninemia, which can be produced by pathogenic variants in three different genes: MAT1A, GNMT and AHCY. Among the proteins they encode, adenosyl-homocysteine hydrolase (AHCY) is the longest (≈430 amino acids). The human AHCY gene is situated on chromosome 20 (cytogenetic band 20q11.22), so the longest-protein gene of the three resides on chromosome 20."
+        },
+        "0": {
+            "0": {
+                "question": "Which three genes, when mutated, cause a metabolic disease that results in the body producing an odor similar to tyrosinemia?",
+                "search_keyword": "genes mutated metabolic disease odor similar tyrosinemia",
+                "final_answer": {
+                    "short_answer": "Chromosome 20",
+                    "long_answer": "Isolated hypermethioninemia (which gives a boiled-cabbage/fishy odor like tyrosinemia) can result from pathogenic variants in three genes: MAT1A, GNMT and AHCY. The proteins they encode are ~395, 292 and 432 amino acids long, respectively. The longest of these is S-adenosyl-homocysteine hydrolase (encoded by AHCY), whose gene is situated at 20q13.2 on chromosome 20."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "1": {
+                "question": "Which of those three genes codes for the longest protein?",
+                "search_keyword": "longest protein gene among three genes",
+                "final_answer": {
+                    "short_answer": "Chromosome 4",
+                    "long_answer": "The metabolic disorder multiple-acyl-CoA dehydrogenase deficiency (glutaric acidemia type II) gives patients a rancid/fish-like body odour that resembles the smell noted in tyrosinemia. Pathogenic variants in any of three genes—ETFA, ETFB, and ETFDH—can cause this disease. Of these, ETFDH encodes the longest protein (≈600 amino acids). The ETFDH gene is located on chromosome 4 (band 4q32–q34), so the longest-protein gene of the three is found on chromosome 4."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene longest protein",
+                "final_answer": {
+                    "short_answer": "chromosome 20",
+                    "long_answer": "The metabolic disease is isolated hypermethioninemia, which can be produced by pathogenic variants in three different genes: MAT1A, GNMT and AHCY. Among the proteins they encode, adenosyl-homocysteine hydrolase (AHCY) is the longest (≈430 amino acids). The human AHCY gene is situated on chromosome 20 (cytogenetic band 20q11.22), so the longest-protein gene of the three resides on chromosome 20."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The metabolic disease is isolated hypermethioninemia, which can be produced by pathogenic variants in three different genes: MAT1A, GNMT and AHCY. Among the proteins they encode, adenosyl-homocysteine hydrolase (AHCY) is the longest (≈430 amino acids). The human AHCY gene is situated on chromosome 20 (cytogenetic band 20q11.22), so the longest-protein gene of the three resides on chromosome 20.",
+        "short_answer": "chromosome 20"
+    }
+}

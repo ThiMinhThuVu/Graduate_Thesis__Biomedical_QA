@@ -49,7 +49,7 @@ def prompt_zero_shot_medhop_wh(question):
     return prompt
 
 def prompt_zero_shot_medhop_correctness(question):
-    prompt = f"""You are a biomedical expert. Your task is to answer a question base on ONLY the provided context
+    prompt = f"""You are an expert in biomedical and scientific knowledge. Your task is to answer the following question based on established scientific consensus and your internal knowledge.
         ### INSTRUCTIONS:
         1. Analyze the input 'Question'. Identify key biomedical entities (e.g., drugs, proteins, diseases) and their relationships.
         2. Retrieve relevant medical facts and established scientific consensus regarding these entities.
@@ -424,51 +424,6 @@ def process_get_final_answer(qidx, question, qi, pathi, stepi, target_answer_typ
                 "cluster_score": None
             }
         
-        # cache_o3_ans = load_json(o3_cache_file) 
-        
-        # cached_res = cache_o3_ans.get(qidx, {}).get(qi, {}).get(pathi, {}).get(stepi)
-        
-        # if cached_res:
-        #     print("[Load Cache O3 Answer Zeroshot]")
-        #     return {
-        #         "short_answer": cached_res.get("short_answer"),
-        #         "long_answer": cached_res.get("long_answer"),
-        #         "selection_status": "zero-shot_fallback_cached",
-        #         "cluster_score": None
-        #     }
-                        
-        # if target_answer_type == 'correctness':
-        #     prompt = prompt_zero_shot_medhop_correctness(question)            
-        # else:
-        #     prompt = prompt_zero_shot_medhop_wh(question)
-            
-        # messages = [
-        #     {"role": "system", "content": "You are a biomedical expert. Your task is to answer a question base on ONLY the provided context"},
-        #     {"role": "user", "content": prompt}
-        # ]  
-        # result_raw = request_api_o3(messages)
-        
-        # try:
-        #     # Clean markdown nếu có
-        #     clean_json = re.sub(r"```json|```", "", result_raw).strip()
-        #     result_dict = json.loads(clean_json)
-        #     if qidx not in cache_o3_ans: cache_o3_ans[qidx] = {}
-        #     if qi not in cache_o3_ans[qidx]: cache_o3_ans[qidx][qi] = {}
-        #     if pathi not in cache_o3_ans[qidx][qi]: cache_o3_ans[qidx][qi][pathi] = {}
-            
-        #     cache_o3_ans[qidx][qi][pathi][stepi] = result_dict
-        #     save_json(cache_o3_ans ,o3_cache_file)
-            
-        #     # Đồng bộ cấu trúc trả về cho module ngoài dễ xử lý
-        #     return {
-        #         "short_answer": result_dict.get("short_answer"),
-        #         "long_answer": result_dict.get("long_answer"),
-        #         "selection_status": "zero-shot_fallback",
-        #         "cluster_score": None
-        #     }
-        # except Exception as e:
-        #     return {"error": f"JSON parsing failed: {str(e)}", "raw_content": result_raw}
-    
     return final_output
 
     

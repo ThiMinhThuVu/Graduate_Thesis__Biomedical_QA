@@ -1,0 +1,48 @@
+{
+    "QIDX": "674571",
+    "original_question": "On which chromosome is the GJB3 gene, known to cause Erythrokeratodermia variabilis, located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "GJB3 gene"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the GJB3 gene, known to cause Erythrokeratodermia variabilis, located?",
+            "short_answer": "Chromosome 1",
+            "long_answer": "The GJB3 gene, which encodes the gap-junction protein connexin 31 and whose mutations can cause Erythrokeratodermia variabilis, is mapped to the short arm of chromosome 1 (region 1p34)."
+        },
+        "0": {
+            "0": {
+                "question": "What is the GJB3 gene known to cause?",
+                "search_keyword": "GJB3 gene cause",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "The GJB3 gene, which encodes the gap-junction protein connexin 31 and whose mutations are a well-established cause of Erythrokeratodermia variabilis, is mapped to the short arm of chromosome 1 (cytogenetic band 1p34–p35)."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Which gene is known to cause Erythrokeratodermia variabilis?",
+                "search_keyword": "gene cause Erythrokeratodermia variabilis",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "GJB3 encodes the gap-junction protein connexin 31 and is mapped to cytogenetic band 1p34 on human chromosome 1. Pathogenic mutations in this locus disrupt epidermal cell–cell communication, producing the skin disorder Erythrokeratodermia variabilis."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location GJB3 gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "The GJB3 gene, which encodes the gap-junction protein connexin 31 and whose mutations can cause Erythrokeratodermia variabilis, is mapped to the short arm of chromosome 1 (region 1p34)."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The GJB3 gene, which encodes the gap-junction protein connexin 31 and whose mutations can cause Erythrokeratodermia variabilis, is mapped to the short arm of chromosome 1 (region 1p34).",
+        "short_answer": "Chromosome 1"
+    }
+}

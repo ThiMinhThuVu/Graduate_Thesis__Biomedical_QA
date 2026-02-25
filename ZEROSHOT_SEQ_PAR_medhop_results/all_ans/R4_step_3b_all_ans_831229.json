@@ -1,0 +1,49 @@
+{
+    "QIDX": "831229",
+    "original_question": "Which multinucleated fibers fail to form due to a gene mutation associated with Carey-Fineman-Ziter syndrome?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Carey-Fineman-Ziter syndrome",
+        "multinucleated fibers"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which multinucleated fibers fail to form due to a gene mutation associated with Carey-Fineman-Ziter syndrome?",
+            "short_answer": "Myotubes",
+            "long_answer": "Carey-Fineman-Ziter syndrome is caused by loss-of-function mutations in the MYMK (myomaker) gene. Myomaker is essential for the fusion of mononucleated myoblasts. When MYMK is mutated, the myoblasts cannot fuse, so the normal multinucleated skeletal muscle precursors—myotubes—do not form, leading to the congenital myopathy seen in the syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "What is Carey-Fineman-Ziter syndrome and what are its associated symptoms?",
+                "search_keyword": "Carey-Fineman-Ziter syndrome symptoms",
+                "final_answer": {
+                    "short_answer": "Skeletal muscle myofibers",
+                    "long_answer": "Carey-Fineman-Ziter syndrome is caused by loss-of-function mutations in the MYMK (myomaker) gene. MYMK is indispensable for the fusion of mononucleated myoblasts; without it, the normal developmental process that produces multinucleated skeletal muscle myofibers (myotubes) is blocked, so these multinucleated fibers fail to form."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Which gene mutation is associated with the symptoms of Carey-Fineman-Ziter syndrome?",
+                "search_keyword": "gene mutation Carey-Fineman-Ziter syndrome",
+                "final_answer": {
+                    "short_answer": "Myotubes",
+                    "long_answer": "Carey-Fineman-Ziter syndrome is caused by loss-of-function mutations in the MYMK (myomaker) gene, a fusogenic protein required for myoblast fusion. Without functional MYMK, individual myoblasts cannot merge, so the normal multinucleated muscle fibers called myotubes fail to form during skeletal muscle development."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "2": {
+                "question": "Which multinucleated fibers fail to form due to that gene mutation?",
+                "search_keyword": "multinucleated fibers fail to form gene mutation",
+                "final_answer": {
+                    "short_answer": "Myotubes",
+                    "long_answer": "Carey-Fineman-Ziter syndrome is caused by loss-of-function mutations in the MYMK (myomaker) gene. Myomaker is essential for the fusion of mononucleated myoblasts. When MYMK is mutated, the myoblasts cannot fuse, so the normal multinucleated skeletal muscle precursors—myotubes—do not form, leading to the congenital myopathy seen in the syndrome."
+                },
+                "target_answer_type": "fibers"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Carey-Fineman-Ziter syndrome is caused by loss-of-function mutations in the MYMK (myomaker) gene. Myomaker is essential for the fusion of mononucleated myoblasts. When MYMK is mutated, the myoblasts cannot fuse, so the normal multinucleated skeletal muscle precursors—myotubes—do not form, leading to the congenital myopathy seen in the syndrome.",
+        "short_answer": "Myotubes"
+    }
+}

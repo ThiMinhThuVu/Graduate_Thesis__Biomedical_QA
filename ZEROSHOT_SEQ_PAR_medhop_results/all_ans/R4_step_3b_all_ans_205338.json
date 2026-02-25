@@ -1,0 +1,37 @@
+{
+    "QIDX": "205338",
+    "original_question": "Is the gene that causes Kindler syndrome when mutated located on chromosome 2 in mice?",
+    "type_q": "sequence",
+    "key_entities": [],
+    "1": {
+        "final_qi": {
+            "question": "Is the gene that causes Kindler syndrome when mutated located on chromosome 2 in mice?",
+            "short_answer": "yes",
+            "long_answer": "Kindler syndrome is caused by loss-of-function mutations in the FERMT1 gene, which encodes the focal-adhesion protein kindlin-1.  In the human genome FERMT1 maps to chromosome 20p12.3.  The orthologous mouse gene is named Fermt1.  According to the Mouse Genome Informatics (MGI) database and Ensembl, Fermt1 is situated on mouse chromosome 2 (cytogenetic band 2 D).  Therefore, in mice the gene whose mutation phenocopies Kindler syndrome is indeed located on chromosome 2, so the statement is correct."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with Kindler syndrome when mutated?",
+                "search_keyword": "gene causes Kindler syndrome mutation",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Kindler syndrome is caused by loss-of-function mutations in the FERMT1 (KIND1) gene. The mouse ortholog of this gene, Fermt1, has been mapped to mouse chromosome 2 (around 100 cM). Therefore, in mice the disease-causing gene resides on chromosome 2."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Is that gene located on chromosome 2 in mice?",
+                "search_keyword": "gene location chromosome 2 mice",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Kindler syndrome is caused by loss-of-function mutations in the FERMT1 gene, which encodes the focal-adhesion protein kindlin-1.  In the human genome FERMT1 maps to chromosome 20p12.3.  The orthologous mouse gene is named Fermt1.  According to the Mouse Genome Informatics (MGI) database and Ensembl, Fermt1 is situated on mouse chromosome 2 (cytogenetic band 2 D).  Therefore, in mice the gene whose mutation phenocopies Kindler syndrome is indeed located on chromosome 2, so the statement is correct."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Kindler syndrome is caused by loss-of-function mutations in the FERMT1 gene, which encodes the focal-adhesion protein kindlin-1.  In the human genome FERMT1 maps to chromosome 20p12.3.  The orthologous mouse gene is named Fermt1.  According to the Mouse Genome Informatics (MGI) database and Ensembl, Fermt1 is situated on mouse chromosome 2 (cytogenetic band 2 D).  Therefore, in mice the gene whose mutation phenocopies Kindler syndrome is indeed located on chromosome 2, so the statement is correct.",
+        "short_answer": "yes"
+    }
+}

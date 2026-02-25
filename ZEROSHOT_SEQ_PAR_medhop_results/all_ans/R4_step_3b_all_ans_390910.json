@@ -1,0 +1,49 @@
+{
+    "QIDX": "390910",
+    "original_question": "Does the presence of an axillary lymph node measuring 13 mm without a fatty hilum suggest T-cell prolymphocytic leukemia?",
+    "type_q": "parallel",
+    "key_entities": [
+        "fatty hilum suggest T-cell prolymphocytic leukemia",
+        "axillary lymph node"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Does the presence of an axillary lymph node measuring 13 mm without a fatty hilum suggest T-cell prolymphocytic leukemia?",
+            "short_answer": "no",
+            "long_answer": "A 13-mm axillary lymph node lacking a fatty hilum is radiologically suspicious for malignancy, but it is a non-specific finding. Many conditions—reactive hyperplasia, metastatic solid tumors, B-cell or T-cell lymphomas, chronic lymphocytic leukemia, and other leukemias—can produce enlarged nodes without a fatty hilum. T-cell prolymphocytic leukemia (T-PLL) is a rare mature T-cell leukemia diagnosed primarily by marked peripheral blood lymphocytosis, characteristic cytomorphology, immunophenotyping, and specific chromosomal abnormalities (e.g., inv(14)(q11q32), t(14;14)). Imaging findings such as a single mildly enlarged axillary node are neither sensitive nor specific for T-PLL. Therefore, the mere presence of a 13-mm axillary lymph node without a fatty hilum does not, by itself, suggest T-cell prolymphocytic leukemia."
+        },
+        "0": {
+            "0": {
+                "question": "Does the presence of an axillary lymph node measuring 13 mm without a fatty hilum suggest T-cell prolymphocytic leukemia?",
+                "search_keyword": "axillary lymph node 13 mm fatty hilum T-cell prolymphocytic leukemia",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "A 13-mm axillary lymph node lacking a fatty hilum is radiologically suspicious for malignancy, but it is a non-specific finding. Many conditions—reactive hyperplasia, metastatic solid tumors, B-cell or T-cell lymphomas, chronic lymphocytic leukemia, and other leukemias—can produce enlarged nodes without a fatty hilum. T-cell prolymphocytic leukemia (T-PLL) is a rare mature T-cell leukemia diagnosed primarily by marked peripheral blood lymphocytosis, characteristic cytomorphology, immunophenotyping, and specific chromosomal abnormalities (e.g., inv(14)(q11q32), t(14;14)). Imaging findings such as a single mildly enlarged axillary node are neither sensitive nor specific for T-PLL. Therefore, the mere presence of a 13-mm axillary lymph node without a fatty hilum does not, by itself, suggest T-cell prolymphocytic leukemia."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What is the significance of an axillary lymph node measuring 13 mm without a fatty hilum in relation to T-cell prolymphocytic leukemia?",
+            "short_answer": "Malignant lymphadenopathy",
+            "long_answer": "A 13-mm axillary node that has lost its normal fatty hilum is considered pathologic; in a patient with T-cell prolymphocytic leukemia this finding most commonly signifies leukemic (malignant) infiltration of the lymph node, reflecting active disease or progression."
+        },
+        "0": {
+            "0": {
+                "question": "What is the significance of an axillary lymph node measuring 13 mm without a fatty hilum in relation to T-cell prolymphocytic leukemia?",
+                "search_keyword": "axillary lymph node 13 mm fatty hilum significance T-cell prolymphocytic leukemia",
+                "final_answer": {
+                    "short_answer": "Malignant lymphadenopathy",
+                    "long_answer": "A 13-mm axillary node that has lost its normal fatty hilum is considered pathologic; in a patient with T-cell prolymphocytic leukemia this finding most commonly signifies leukemic (malignant) infiltration of the lymph node, reflecting active disease or progression."
+                },
+                "target_answer_type": "significance"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Analyzing the provided information shows that a 13-mm axillary lymph node lacking a fatty hilum is a non-specific finding that is suspicious for malignancy in general but does not specifically indicate T-cell prolymphocytic leukemia. The diagnosis of T-PLL requires additional clinical and laboratory findings, including marked peripheral blood lymphocytosis, characteristic cytomorphology, immunophenotyping, and chromosomal abnormalities. Therefore, the imaging finding alone does not suggest T-PLL.",
+        "short_answer": "no"
+    }
+}

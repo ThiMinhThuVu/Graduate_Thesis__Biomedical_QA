@@ -1,0 +1,49 @@
+{
+    "QIDX": "528453",
+    "original_question": "Which gene encodes a protein providing a selective channel between the endoplasmic reticulum lumen and the cytosol, and is deficient in glycogen storage disease type Ib?",
+    "type_q": "sequence",
+    "key_entities": [
+        "glycogen storage disease type Ib",
+        "endoplasmic reticulum lumen"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene encodes a protein providing a selective channel between the endoplasmic reticulum lumen and the cytosol, and is deficient in glycogen storage disease type Ib?",
+            "short_answer": "SLC37A4",
+            "long_answer": "Glycogen storage disease type Ib results from loss-of-function mutations in the SLC37A4 gene. SLC37A4 encodes the glucose-6-phosphate translocase (G6PT), an endoplasmic reticulum membrane protein that forms a selective channel allowing glucose-6-phosphate to move from the cytosol into the ER lumen, where it is dephosphorylated by glucose-6-phosphatase. Deficiency of this transporter underlies the metabolic and clinical features of GSD Ib."
+        },
+        "0": {
+            "0": {
+                "question": "Which protein provides a selective channel between the endoplasmic reticulum lumen and the cytosol?",
+                "search_keyword": "protein selective channel endoplasmic reticulum cytosol",
+                "final_answer": {
+                    "short_answer": "SLC37A4",
+                    "long_answer": "Glycogen storage disease type Ib results from mutations in the SLC37A4 gene, which encodes the glucose-6-phosphate translocase (G6PT). This integral endoplasmic reticulum membrane protein forms a selective channel that shuttles glucose-6-phosphate between the ER lumen and the cytosol, a crucial step for glucose homeostasis. Loss-of-function variants in SLC37A4 eliminate this transport activity, producing the metabolic and neutropenic manifestations characteristic of GSD Ib."
+                },
+                "target_answer_type": "protein"
+            },
+            "1": {
+                "question": "Which gene encodes that protein?",
+                "search_keyword": "gene encodes protein selective channel",
+                "final_answer": {
+                    "short_answer": "SLC37A4",
+                    "long_answer": "Glycogen storage disease type Ib results from deficiency of the microsomal glucose-6-phosphate transporter (G6PT). This transporter forms a selective channel that moves glucose-6-phosphate from the cytosol into the lumen of the endoplasmic reticulum, where it can be hydrolyzed by glucose-6-phosphatase. The G6PT protein is encoded by the gene SLC37A4 (solute carrier family 37 member 4); mutations in SLC37A4 abolish transporter function and cause the clinical features of GSD Ib."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "Which gene is deficient in glycogen storage disease type Ib?",
+                "search_keyword": "gene deficiency glycogen storage disease type Ib",
+                "final_answer": {
+                    "short_answer": "SLC37A4",
+                    "long_answer": "Glycogen storage disease type Ib results from loss-of-function mutations in the SLC37A4 gene. SLC37A4 encodes the glucose-6-phosphate translocase (G6PT), an endoplasmic reticulum membrane protein that forms a selective channel allowing glucose-6-phosphate to move from the cytosol into the ER lumen, where it is dephosphorylated by glucose-6-phosphatase. Deficiency of this transporter underlies the metabolic and clinical features of GSD Ib."
+                },
+                "target_answer_type": "gene"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Glycogen storage disease type Ib results from loss-of-function mutations in the SLC37A4 gene. SLC37A4 encodes the glucose-6-phosphate translocase (G6PT), an endoplasmic reticulum membrane protein that forms a selective channel allowing glucose-6-phosphate to move from the cytosol into the ER lumen, where it is dephosphorylated by glucose-6-phosphatase. Deficiency of this transporter underlies the metabolic and clinical features of GSD Ib.",
+        "short_answer": "SLC37A4"
+    }
+}

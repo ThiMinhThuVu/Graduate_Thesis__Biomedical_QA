@@ -1,0 +1,40 @@
+{
+    "QIDX": "329737",
+    "original_question": "Which voltage-gated sodium channel subunit is mutated in the autosomal dominant disorder known as paramyotonia congenita, which is characterized by paradoxical myotonia?",
+    "type_q": "sequence",
+    "key_entities": [
+        "voltage-gated sodium channel subunit",
+        "autosomal dominant disorder"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which voltage-gated sodium channel subunit is mutated in the autosomal dominant disorder known as paramyotonia congenita, which is characterized by paradoxical myotonia?",
+            "short_answer": "SCN4A (NaV1.4 α-subunit)",
+            "long_answer": "Paramyotonia congenita is an autosomal-dominant skeletal-muscle channelopathy produced by missense mutations in the SCN4A gene, which encodes the α-subunit (NaV1.4) of the skeletal muscle voltage-gated sodium channel. These mutations impair fast inactivation of the channel, leading to the hallmark paradoxical myotonia that worsens with continued activity or cold exposure."
+        },
+        "0": {
+            "0": {
+                "question": "What is the autosomal dominant disorder characterized by paradoxical myotonia?",
+                "search_keyword": "autosomal dominant disorder paradoxical myotonia",
+                "final_answer": {
+                    "short_answer": "SCN4A",
+                    "long_answer": "Paramyotonia congenita is an autosomal-dominant muscle channelopathy caused by missense mutations in the skeletal-muscle voltage-gated sodium channel α-subunit gene SCN4A (Nav1.4). Defective inactivation of this α-subunit increases persistent Na⁺ current, producing the paradoxical myotonia that defines the disorder."
+                },
+                "target_answer_type": "disorder"
+            },
+            "1": {
+                "question": "Which voltage-gated sodium channel subunit is mutated in that disorder?",
+                "search_keyword": "voltage-gated sodium channel subunit mutation disorder",
+                "final_answer": {
+                    "short_answer": "SCN4A (NaV1.4 α-subunit)",
+                    "long_answer": "Paramyotonia congenita is an autosomal-dominant skeletal-muscle channelopathy produced by missense mutations in the SCN4A gene, which encodes the α-subunit (NaV1.4) of the skeletal muscle voltage-gated sodium channel. These mutations impair fast inactivation of the channel, leading to the hallmark paradoxical myotonia that worsens with continued activity or cold exposure."
+                },
+                "target_answer_type": "subunit"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Paramyotonia congenita is an autosomal-dominant skeletal-muscle channelopathy produced by missense mutations in the SCN4A gene, which encodes the α-subunit (NaV1.4) of the skeletal muscle voltage-gated sodium channel. These mutations impair fast inactivation of the channel, leading to the hallmark paradoxical myotonia that worsens with continued activity or cold exposure.",
+        "short_answer": "SCN4A (NaV1.4 α-subunit)"
+    }
+}

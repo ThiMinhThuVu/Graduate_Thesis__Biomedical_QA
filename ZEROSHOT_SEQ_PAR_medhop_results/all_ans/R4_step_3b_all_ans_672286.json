@@ -1,0 +1,41 @@
+{
+    "QIDX": "672286",
+    "original_question": "On which chromosome is the gene linked to anophthalmia, myopia, and microphthalmia located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "microphthalmia",
+        "anophthalmia",
+        "myopia"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene linked to anophthalmia, myopia, and microphthalmia located?",
+            "short_answer": "Chromosome 11",
+            "long_answer": "The PAX6 homeobox transcription-factor gene, located at cytogenetic band 11p13 on chromosome 11, is critical for ocular morphogenesis. Pathogenic variants in PAX6 are well documented to cause severe eye malformations such as anophthalmia and microphthalmia, and genetic association studies have also linked PAX6 variation to axial-length changes underlying myopia. Thus, the chromosome carrying the gene implicated in anophthalmia, myopia and microphthalmia is chromosome 11."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is linked to anophthalmia, myopia, and microphthalmia?",
+                "search_keyword": "gene linked anophthalmia myopia microphthalmia",
+                "final_answer": {
+                    "short_answer": "Chromosome 14",
+                    "long_answer": "Linkage studies have mapped the locus responsible for the ocular malformation spectrum that includes anophthalmia, microphthalmia and severe myopia (the ANOP1/MCOP1 locus) to chromosome 14, specifically the 14q32 region; therefore, the gene implicated in these conditions is located on chromosome 14."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 11",
+                    "long_answer": "The PAX6 homeobox transcription-factor gene, located at cytogenetic band 11p13 on chromosome 11, is critical for ocular morphogenesis. Pathogenic variants in PAX6 are well documented to cause severe eye malformations such as anophthalmia and microphthalmia, and genetic association studies have also linked PAX6 variation to axial-length changes underlying myopia. Thus, the chromosome carrying the gene implicated in anophthalmia, myopia and microphthalmia is chromosome 11."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The PAX6 homeobox transcription-factor gene, located at cytogenetic band 11p13 on chromosome 11, is critical for ocular morphogenesis. Pathogenic variants in PAX6 are well documented to cause severe eye malformations such as anophthalmia and microphthalmia, and genetic association studies have also linked PAX6 variation to axial-length changes underlying myopia. Thus, the chromosome carrying the gene implicated in anophthalmia, myopia and microphthalmia is chromosome 11.",
+        "short_answer": "Chromosome 11"
+    }
+}

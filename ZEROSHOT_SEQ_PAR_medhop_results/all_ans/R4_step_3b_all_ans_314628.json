@@ -1,0 +1,49 @@
+{
+    "QIDX": "314628",
+    "original_question": "Are mutations in genes on chromosome 2 associated with asphyxiating thoracic dysplasia?",
+    "type_q": "sequence",
+    "key_entities": [
+        "asphyxiating thoracic dysplasia",
+        "chromosome 2"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Are mutations in genes on chromosome 2 associated with asphyxiating thoracic dysplasia?",
+            "short_answer": "yes",
+            "long_answer": "Asphyxiating thoracic dysplasia (also called Jeune syndrome or short-rib thoracic dysplasia, SRTD) is a genetically heterogeneous ciliopathy. One of the disease-causing genes that has been firmly established is TTC21B, which encodes the intraflagellar transport protein IFT139 and is located on chromosome 2q24.3. Multiple independent studies (e.g., Davis et al., Nature Genetics 2011; Schmidts et al., Nat Genet 2013) have shown that biallelic pathogenic variants in TTC21B produce the classical clinical picture of asphyxiating thoracic dysplasia. Therefore, mutations in at least one gene residing on chromosome 2 are indeed associated with the disorder."
+        },
+        "0": {
+            "0": {
+                "question": "What is asphyxiating thoracic dysplasia?",
+                "search_keyword": "asphyxiating thoracic dysplasia definition",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Several genes situated on chromosome 2—including WDR35 (IFT121) at 2p24.1 and TTC21B at 2q24.3—have been conclusively shown to cause asphyxiating thoracic dysplasia (Jeune syndrome) when biallelic loss-of-function mutations are present. These findings establish that mutations in chromosome 2 genes are indeed associated with this disorder."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Which genes are located on chromosome 2?",
+                "search_keyword": "genes located on chromosome 2",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Several loci on chromosome 2 are implicated in Jeune asphyxiating thoracic dysplasia: pathogenic variants in IFT172 (2p23.3) and TTC21B (2q24.3) disrupt intraflagellar transport and ciliary function, producing the characteristic thoracic constriction and skeletal abnormalities of the disorder. Therefore, mutations in genes located on chromosome 2 are indeed associated with asphyxiating thoracic dysplasia."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "Are mutations in those genes associated with asphyxiating thoracic dysplasia?",
+                "search_keyword": "mutations genes chromosome 2 asphyxiating thoracic dysplasia association",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Asphyxiating thoracic dysplasia (also called Jeune syndrome or short-rib thoracic dysplasia, SRTD) is a genetically heterogeneous ciliopathy. One of the disease-causing genes that has been firmly established is TTC21B, which encodes the intraflagellar transport protein IFT139 and is located on chromosome 2q24.3. Multiple independent studies (e.g., Davis et al., Nature Genetics 2011; Schmidts et al., Nat Genet 2013) have shown that biallelic pathogenic variants in TTC21B produce the classical clinical picture of asphyxiating thoracic dysplasia. Therefore, mutations in at least one gene residing on chromosome 2 are indeed associated with the disorder."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Asphyxiating thoracic dysplasia (also called Jeune syndrome or short-rib thoracic dysplasia, SRTD) is a genetically heterogeneous ciliopathy. One of the disease-causing genes that has been firmly established is TTC21B, which encodes the intraflagellar transport protein IFT139 and is located on chromosome 2q24.3. Multiple independent studies (e.g., Davis et al., Nature Genetics 2011; Schmidts et al., Nat Genet 2013) have shown that biallelic pathogenic variants in TTC21B produce the classical clinical picture of asphyxiating thoracic dysplasia. Therefore, mutations in at least one gene residing on chromosome 2 are indeed associated with the disorder.",
+        "short_answer": "yes"
+    }
+}

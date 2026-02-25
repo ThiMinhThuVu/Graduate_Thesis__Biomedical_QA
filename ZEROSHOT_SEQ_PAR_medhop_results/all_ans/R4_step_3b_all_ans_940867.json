@@ -1,0 +1,40 @@
+{
+    "QIDX": "940867",
+    "original_question": "The gene that causes Myhre syndrome belongs to which family of proteins that modulate members of the TGFβ protein superfamily?",
+    "type_q": "sequence",
+    "key_entities": [
+        "TGFβ protein superfamily",
+        "Myhre syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "The gene that causes Myhre syndrome belongs to which family of proteins that modulate members of the TGFβ protein superfamily?",
+            "short_answer": "SMAD family",
+            "long_answer": "Myhre syndrome is caused by heterozygous gain-of-function mutations in the SMAD4 gene. SMAD4 encodes a member of the SMAD family, a group of intracellular signalling proteins that bind and modulate signals from ligands of the transforming growth factor-β (TGFβ) superfamily. Thus, the disease-causing gene belongs to the SMAD family of TGFβ signal modulators."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is known to cause Myhre syndrome?",
+                "search_keyword": "gene causes Myhre syndrome",
+                "final_answer": {
+                    "short_answer": "SMAD family",
+                    "long_answer": "Myhre syndrome is caused by gain-of-function mutations in the SMAD4 gene. SMAD4 is a member of the SMAD family of intracellular signal-transduction proteins, which act as modulators and transcriptional mediators for ligands of the transforming growth factor-β (TGFβ) superfamily."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "To which family of proteins does that gene belong that modulates members of the TGFβ protein superfamily?",
+                "search_keyword": "family of proteins modulate TGFβ superfamily",
+                "final_answer": {
+                    "short_answer": "SMAD family",
+                    "long_answer": "Myhre syndrome is caused by heterozygous gain-of-function mutations in the SMAD4 gene. SMAD4 encodes a member of the SMAD family, a group of intracellular signalling proteins that bind and modulate signals from ligands of the transforming growth factor-β (TGFβ) superfamily. Thus, the disease-causing gene belongs to the SMAD family of TGFβ signal modulators."
+                },
+                "target_answer_type": "protein family"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Myhre syndrome is caused by heterozygous gain-of-function mutations in the SMAD4 gene. SMAD4 encodes a member of the SMAD family, a group of intracellular signalling proteins that bind and modulate signals from ligands of the transforming growth factor-β (TGFβ) superfamily. Thus, the disease-causing gene belongs to the SMAD family of TGFβ signal modulators.",
+        "short_answer": "SMAD family"
+    }
+}

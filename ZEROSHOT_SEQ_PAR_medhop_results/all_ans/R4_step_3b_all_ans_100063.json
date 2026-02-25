@@ -1,0 +1,31 @@
+{
+    "QIDX": "100063",
+    "original_question": "Besides England, which other countries have reported cases of families affected by intellectual disability-spasticity-ectrodactyly (Jancar) syndrome in the medical literature?",
+    "type_q": "parallel",
+    "key_entities": [
+        "intellectual disability-spasticity-ectrodactyly (Jancar) syndrome",
+        "Besides England"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which countries besides England have reported cases of families affected by intellectual disability-spasticity-ectrodactyly (Jancar) syndrome in the medical literature?",
+            "short_answer": "France and Italy",
+            "long_answer": "Beyond the original English families described by Jancar, the only other pedigrees published with the characteristic triad of intellectual disability, spasticity and ectrodactyly have been reported from France and from Italy, so these are the two additional countries documented in the medical literature."
+        },
+        "0": {
+            "0": {
+                "question": "Which countries besides England have reported cases of families affected by intellectual disability-spasticity-ectrodactyly (Jancar) syndrome in the medical literature?",
+                "search_keyword": "countries reported intellectual disability spasticity ectrodactyly Jancar syndrome",
+                "final_answer": {
+                    "short_answer": "France and Italy",
+                    "long_answer": "Beyond the original English families described by Jancar, the only other pedigrees published with the characteristic triad of intellectual disability, spasticity and ectrodactyly have been reported from France and from Italy, so these are the two additional countries documented in the medical literature."
+                },
+                "target_answer_type": "country"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Beyond the original English families described by Jancar, the only other pedigrees published with the characteristic triad of intellectual disability, spasticity and ectrodactyly have been reported from France and from Italy, so these are the two additional countries documented in the medical literature.",
+        "short_answer": "France and Italy"
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "QIDX": "283531",
+    "original_question": "Are both porencephaly-cerebellar hypoplasia-internal malformations syndrome and holoprosencephaly-ectrodactyly-cleft lip/palate syndrome autosomal recessive?",
+    "type_q": "parallel",
+    "key_entities": [
+        "holoprosencephaly-ectrodactyly-cleft lip/palate syndrome autosomal recessive"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is porencephaly-cerebellar hypoplasia-internal malformations syndrome autosomal recessive?",
+            "short_answer": "yes",
+            "long_answer": "Porencephaly-cerebellar hypoplasia-internal malformations syndrome is an extremely rare, lethal multiple-congenital-anomaly disorder that has been described almost exclusively in siblings born to the same, phenotypically normal parents (several of the reported families were consanguineous).  Recurrence has been observed only among sibs and never across successive generations, and affected males and females are seen with equal frequency.  No cases of parent-to-child transmission, de-novo dominant mutation, or X-linked segregation have been documented.  On this basis the disorder is catalogued in OMIM (\"Porencephaly, cerebellar hypoplasia, and internal malformations; PCHIM\") as having autosomal-recessive inheritance, which is the prevailing view in the medical-genetics literature.  Therefore, the statement that the syndrome is autosomal recessive is supported by the established scientific consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Is porencephaly-cerebellar hypoplasia-internal malformations syndrome autosomal recessive?",
+                "search_keyword": "porencephaly cerebellar hypoplasia internal malformations syndrome autosomal recessive",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Porencephaly-cerebellar hypoplasia-internal malformations syndrome is an extremely rare, lethal multiple-congenital-anomaly disorder that has been described almost exclusively in siblings born to the same, phenotypically normal parents (several of the reported families were consanguineous).  Recurrence has been observed only among sibs and never across successive generations, and affected males and females are seen with equal frequency.  No cases of parent-to-child transmission, de-novo dominant mutation, or X-linked segregation have been documented.  On this basis the disorder is catalogued in OMIM (\"Porencephaly, cerebellar hypoplasia, and internal malformations; PCHIM\") as having autosomal-recessive inheritance, which is the prevailing view in the medical-genetics literature.  Therefore, the statement that the syndrome is autosomal recessive is supported by the established scientific consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is holoprosencephaly-ectrodactyly-cleft lip/palate syndrome autosomal recessive?",
+            "short_answer": "no",
+            "long_answer": "Holoprosencephaly-ectrodactyly-cleft lip/palate (Hartsfield) syndrome is most frequently produced by heterozygous (usually de novo) pathogenic variants in the FGFR1 gene and therefore shows an autosomal-dominant pattern of inheritance in the great majority of families.  A few patients with biallelic FGFR1 variants have been described, demonstrating that the disorder can also occur in an autosomal-recessive fashion, but this is uncommon.  Because the usual and best-established mode of transmission is autosomal dominant, the blanket statement that the syndrome is autosomal recessive is not correct."
+        },
+        "0": {
+            "0": {
+                "question": "Is holoprosencephaly-ectrodactyly-cleft lip/palate syndrome autosomal recessive?",
+                "search_keyword": "holoprosencephaly ectrodactyly cleft lip palate syndrome autosomal recessive",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Holoprosencephaly-ectrodactyly-cleft lip/palate (Hartsfield) syndrome is most frequently produced by heterozygous (usually de novo) pathogenic variants in the FGFR1 gene and therefore shows an autosomal-dominant pattern of inheritance in the great majority of families.  A few patients with biallelic FGFR1 variants have been described, demonstrating that the disorder can also occur in an autosomal-recessive fashion, but this is uncommon.  Because the usual and best-established mode of transmission is autosomal dominant, the blanket statement that the syndrome is autosomal recessive is not correct."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Porencephaly-cerebellar hypoplasia-internal malformations syndrome is confirmed to be autosomal recessive based on observations of the syndrome in siblings born to normal parents and segregation patterns. On the other hand, holoprosencephaly-ectrodactyly-cleft lip/palate syndrome is primarily inherited in an autosomal dominant manner due to heterozygous pathogenic variants in the FGFR1 gene, with rare autosomal recessive cases. Therefore, both syndromes are not autosomal recessive.",
+        "short_answer": "no"
+    }
+}

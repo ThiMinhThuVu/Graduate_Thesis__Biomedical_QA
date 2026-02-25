@@ -1,0 +1,41 @@
+{
+    "QIDX": "413785",
+    "original_question": "On which chromosome is the gene that is essential for forming the cytoskeletal structure responsible for separating sister chromatids during cell division, and whose mutations cause the rare autosomal recessive disease Filippi syndrome, located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "autosomal recessive disease Filippi syndrome",
+        "cytoskeletal structure",
+        "sister chromatids"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene that is essential for forming the cytoskeletal structure responsible for separating sister chromatids during cell division, and whose mutations cause the rare autosomal recessive disease Filippi syndrome, located?",
+            "short_answer": "Chromosome 2",
+            "long_answer": "Filippi syndrome is caused by loss-of-function mutations in the CKAP2L gene, which encodes a spindle‐associated protein required for assembling the mitotic apparatus that pulls sister chromatids apart. CKAP2L is mapped to chromosome 2 (band 2q14.1), so the disease--critical gene resides on chromosome 2."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is essential for forming the cytoskeletal structure responsible for separating sister chromatids during cell division?",
+                "search_keyword": "gene essential cytoskeletal structure separating sister chromatids",
+                "final_answer": {
+                    "short_answer": "Chromosome 20",
+                    "long_answer": "Filippi syndrome results from biallelic loss-of-function mutations in the CKAP2L gene. CKAP2L encodes a spindle-associated protein crucial for building the microtubule cytoskeleton that separates sister chromatids during mitosis. The CKAP2L gene is mapped to cytogenetic band 20p12.3, i.e., on chromosome 20."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Which chromosome is that gene located on?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 2",
+                    "long_answer": "Filippi syndrome is caused by loss-of-function mutations in the CKAP2L gene, which encodes a spindle‐associated protein required for assembling the mitotic apparatus that pulls sister chromatids apart. CKAP2L is mapped to chromosome 2 (band 2q14.1), so the disease--critical gene resides on chromosome 2."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Filippi syndrome is caused by loss-of-function mutations in the CKAP2L gene, which encodes a spindle‐associated protein required for assembling the mitotic apparatus that pulls sister chromatids apart. CKAP2L is mapped to chromosome 2 (band 2q14.1), so the disease--critical gene resides on chromosome 2.",
+        "short_answer": "Chromosome 2"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "QIDX": "616393",
+    "original_question": "On which chromosome is the Treacher Collins syndrome-related gene that interacts with CD3EAP, POLR1E, and POLR1D located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Treacher Collins syndrome-related gene",
+        "CD3EAP, POLR1E, and POLR1D"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the Treacher Collins syndrome-related gene that interacts with CD3EAP, POLR1E, and POLR1D located?",
+            "short_answer": "Chromosome 5",
+            "long_answer": "The gene is TCOF1, whose product Treacle binds the RNA-polymerase I subunits CD3EAP, POLR1E and POLR1D. TCOF1 is located on the long arm of human chromosome 5 (region 5q32-q33); thus, the relevant Treacher Collins syndrome gene resides on chromosome 5."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is related to Treacher Collins syndrome and interacts with CD3EAP, POLR1E, and POLR1D?",
+                "search_keyword": "gene Treacher Collins syndrome interacts CD3EAP POLR1E POLR1D",
+                "final_answer": {
+                    "short_answer": "Chromosome 5",
+                    "long_answer": "The Treacher-Collins syndrome protein‐coding gene TCOF1, which physically interacts with the RNA-polymerase I subunits CD3EAP (RPA34), POLR1E (RPA49) and POLR1D (RPA16), is mapped to the long arm of human chromosome 5 (cytogenetic band 5q32-q33)."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene Treacher Collins syndrome",
+                "final_answer": {
+                    "short_answer": "Chromosome 5",
+                    "long_answer": "The gene is TCOF1, whose product Treacle binds the RNA-polymerase I subunits CD3EAP, POLR1E and POLR1D. TCOF1 is located on the long arm of human chromosome 5 (region 5q32-q33); thus, the relevant Treacher Collins syndrome gene resides on chromosome 5."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The gene is TCOF1, whose product Treacle binds the RNA-polymerase I subunits CD3EAP, POLR1E and POLR1D. TCOF1 is located on the long arm of human chromosome 5 (region 5q32-q33); thus, the relevant Treacher Collins syndrome gene resides on chromosome 5.",
+        "short_answer": "Chromosome 5"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "QIDX": "357263",
+    "original_question": "Which Atlastin gene is associated with Strumpell-Lorrain disease, an inherited condition characterized by progressively increasing spasticity in the lower limbs?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Strumpell-Lorrain disease",
+        "Atlastin gene",
+        "lower limbs",
+        "spasticity"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which Atlastin gene is associated with Strumpell-Lorrain disease, an inherited condition characterized by progressively increasing spasticity in the lower limbs?",
+            "short_answer": "ATL1",
+            "long_answer": "Mutations in the ATL1 gene, which encodes the dynamin-like GTPase atlastin-1, cause the SPG3A form of hereditary spastic paraplegia (Strumpell-Lorrain disease). Altered ATL1 disrupts endoplasmic-reticulum network dynamics in corticospinal motor neurons, leading to the characteristic progressive spasticity of the lower limbs."
+        },
+        "0": {
+            "0": {
+                "question": "Which Atlastin gene is associated with Strumpell-Lorrain disease?",
+                "search_keyword": "Atlastin gene associated Strumpell-Lorrain disease",
+                "final_answer": {
+                    "short_answer": "ATL1 (Atlastin-1)",
+                    "long_answer": "Strumpell-Lorrain disease—also called autosomal-dominant hereditary spastic paraplegia type 3A—is most commonly caused by mutations in the ATL1 gene, which encodes the dynamin-like GTPase Atlastin-1. Defects in ATL1 impair endoplasmic-reticulum membrane fusion in long corticospinal neurons, leading to the progressive lower-limb spasticity characteristic of the disorder."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "What are the characteristics of Strumpell-Lorrain disease?",
+                "search_keyword": "Strumpell-Lorrain disease characteristics",
+                "final_answer": {
+                    "short_answer": "ATL1",
+                    "long_answer": "Mutations in the ATL1 gene, which encodes the dynamin-like GTPase atlastin-1, cause the SPG3A form of hereditary spastic paraplegia (Strumpell-Lorrain disease). Altered ATL1 disrupts endoplasmic-reticulum network dynamics in corticospinal motor neurons, leading to the characteristic progressive spasticity of the lower limbs."
+                },
+                "target_answer_type": "characteristics"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Mutations in the ATL1 gene, which encodes the dynamin-like GTPase atlastin-1, cause the SPG3A form of hereditary spastic paraplegia (Strumpell-Lorrain disease). Altered ATL1 disrupts endoplasmic-reticulum network dynamics in corticospinal motor neurons, leading to the characteristic progressive spasticity of the lower limbs.",
+        "short_answer": "ATL1"
+    }
+}

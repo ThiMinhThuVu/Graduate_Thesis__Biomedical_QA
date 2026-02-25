@@ -1,0 +1,41 @@
+{
+    "QIDX": "345808",
+    "original_question": "Which type of MPS-III Sanfilippo syndrome is caused by a mutation in the gene that encodes an enzyme responsible for degrading heparan sulfate by hydrolyzing terminal N-acetyl-D-glucosamine residues in N-acetyl-alpha-D-glucosaminides?",
+    "type_q": "sequence",
+    "key_entities": [
+        "N-acetyl-D-glucosamine residues",
+        "MPS-III Sanfilippo syndrome",
+        "heparan sulfate"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which type of MPS-III Sanfilippo syndrome is caused by a mutation in the gene that encodes an enzyme responsible for degrading heparan sulfate by hydrolyzing terminal N-acetyl-D-glucosamine residues in N-acetyl-alpha-D-glucosaminides?",
+            "short_answer": "MPS IIIB",
+            "long_answer": "Sanfilippo syndrome type B (MPS IIIB) results from mutations in the NAGLU gene, which encodes α-N-acetylglucosaminidase. This lysosomal hydrolase normally degrades heparan sulfate by cleaving terminal N-acetyl-D-glucosamine residues from N-acetyl-α-D-glucosaminides; loss of its function causes the accumulation of heparan sulfate characteristic of MPS-III type B."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene encodes the enzyme responsible for degrading heparan sulfate by hydrolyzing terminal N-acetyl-D-glucosamine residues in N-acetyl-alpha-D-glucosaminides?",
+                "search_keyword": "gene encodes enzyme degrading heparan sulfate N-acetyl-D-glucosamine",
+                "final_answer": {
+                    "short_answer": "MPS III type B",
+                    "long_answer": "Sanfilippo syndrome type B (MPS-III B) results from pathogenic variants in the NAGLU gene. NAGLU encodes α-N-acetylglucosaminidase, the lysosomal enzyme that degrades heparan sulfate by hydrolyzing terminal N-acetyl-D-glucosamine residues in N-acetyl-α-D-glucosaminides. Loss of this specific enzymatic step defines the type B subtype of MPS-III."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Which type of MPS-III Sanfilippo syndrome is caused by a mutation in that gene?",
+                "search_keyword": "type MPS-III Sanfilippo syndrome mutation gene",
+                "final_answer": {
+                    "short_answer": "MPS IIIB",
+                    "long_answer": "Sanfilippo syndrome type B (MPS IIIB) results from mutations in the NAGLU gene, which encodes α-N-acetylglucosaminidase. This lysosomal hydrolase normally degrades heparan sulfate by cleaving terminal N-acetyl-D-glucosamine residues from N-acetyl-α-D-glucosaminides; loss of its function causes the accumulation of heparan sulfate characteristic of MPS-III type B."
+                },
+                "target_answer_type": "condition"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Sanfilippo syndrome type B (MPS IIIB) results from mutations in the NAGLU gene, which encodes α-N-acetylglucosaminidase. This lysosomal hydrolase normally degrades heparan sulfate by cleaving terminal N-acetyl-D-glucosamine residues from N-acetyl-α-D-glucosaminides; loss of its function causes the accumulation of heparan sulfate characteristic of MPS-III type B.",
+        "short_answer": "MPS IIIB"
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "QIDX": "692671",
+    "original_question": "Which gene, associated with mutations in inherited primary aldosteronism, encodes the potassium channel protein mainly expressed in the adrenal gland and pituitary?",
+    "type_q": "sequence",
+    "key_entities": [
+        "inherited primary aldosteronism",
+        "potassium channel protein",
+        "adrenal gland"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene, associated with mutations in inherited primary aldosteronism, encodes the potassium channel protein mainly expressed in the adrenal gland and pituitary?",
+            "short_answer": "KCNJ5",
+            "long_answer": "Mutations in the gene KCNJ5 cause a monogenic form of inherited primary aldosteronism (familial hyperaldosteronism type III). KCNJ5 encodes the G-protein-activated inward-rectifier potassium channel Kir3.4, whose physiological mRNA and protein expression is highest in the adrenal zona glomerulosa and the pituitary gland. Pathogenic KCNJ5 variants alter channel ion selectivity, depolarize adrenal cortical cells, and drive excess aldosterone production, establishing KCNJ5 as the key gene implicated in this inherited endocrine disorder."
+        },
+        "0": {
+            "0": {
+                "question": "Which potassium channel protein is mainly expressed in the adrenal gland and pituitary and is associated with mutations in inherited primary aldosteronism?",
+                "search_keyword": "potassium channel protein adrenal gland pituitary inherited primary aldosteronism",
+                "final_answer": {
+                    "short_answer": "KCNJ5",
+                    "long_answer": "Mutations in the KCNJ5 gene cause Familial Hyperaldosteronism type III, an inherited form of primary aldosteronism. KCNJ5 encodes the G-protein-activated inward-rectifier potassium channel Kir3.4, which is predominantly expressed in steroidogenic tissues such as the adrenal cortex (especially the zona glomerulosa) and the pituitary. Pathogenic variants alter channel ion selectivity, leading to membrane depolarization, increased calcium influx, and excessive aldosterone synthesis."
+                },
+                "target_answer_type": "protein"
+            },
+            "1": {
+                "question": "Which gene encodes that potassium channel protein?",
+                "search_keyword": "gene encodes potassium channel protein",
+                "final_answer": {
+                    "short_answer": "KCNJ5",
+                    "long_answer": "Mutations in the gene KCNJ5 cause a monogenic form of inherited primary aldosteronism (familial hyperaldosteronism type III). KCNJ5 encodes the G-protein-activated inward-rectifier potassium channel Kir3.4, whose physiological mRNA and protein expression is highest in the adrenal zona glomerulosa and the pituitary gland. Pathogenic KCNJ5 variants alter channel ion selectivity, depolarize adrenal cortical cells, and drive excess aldosterone production, establishing KCNJ5 as the key gene implicated in this inherited endocrine disorder."
+                },
+                "target_answer_type": "gene"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Mutations in the gene KCNJ5 cause a monogenic form of inherited primary aldosteronism (familial hyperaldosteronism type III). KCNJ5 encodes the G-protein-activated inward-rectifier potassium channel Kir3.4, whose physiological mRNA and protein expression is highest in the adrenal zona glomerulosa and the pituitary gland. Pathogenic KCNJ5 variants alter channel ion selectivity, depolarize adrenal cortical cells, and drive excess aldosterone production, establishing KCNJ5 as the key gene implicated in this inherited endocrine disorder.",
+        "short_answer": "KCNJ5"
+    }
+}

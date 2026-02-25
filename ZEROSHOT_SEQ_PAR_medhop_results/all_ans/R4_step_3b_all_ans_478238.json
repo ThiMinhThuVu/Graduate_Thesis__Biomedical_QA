@@ -1,0 +1,39 @@
+{
+    "QIDX": "478238",
+    "original_question": "Mutations in which gene are responsible for the progressive overgrowth disorder named after the Greek sea god who could change his shape?",
+    "type_q": "sequence",
+    "key_entities": [
+        "progressive overgrowth disorder"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Mutations in which gene are responsible for the progressive overgrowth disorder named after the Greek sea god who could change his shape?",
+            "short_answer": "AKT1",
+            "long_answer": "Proteus syndrome — a progressive, mosaic overgrowth disorder named after the shape-shifting Greek sea god Proteus — is caused by a somatic activating mutation in the AKT1 gene (most commonly the c.49G>A, p.E17K substitution). This gain-of-function mutation hyperactivates the PI3K–AKT signaling pathway, leading to the asymmetric, segmental overgrowth characteristic of the condition."
+        },
+        "0": {
+            "0": {
+                "question": "What is the name of the progressive overgrowth disorder that is named after the Greek sea god who could change his shape?",
+                "search_keyword": "progressive overgrowth disorder Greek sea god",
+                "final_answer": {
+                    "short_answer": "AKT1",
+                    "long_answer": "Proteus syndrome—named after the shape-shifting sea god Proteus—is caused by a somatic activating mutation in the AKT1 gene (classically the c.49G>A, p.E17K variant). This mosaic AKT1 mutation hyperactivates the PI3K/AKT signaling pathway, driving the progressive, asymmetric tissue overgrowth characteristic of the disorder."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Which gene mutations are responsible for that progressive overgrowth disorder?",
+                "search_keyword": "gene mutations responsible progressive overgrowth disorder",
+                "final_answer": {
+                    "short_answer": "AKT1",
+                    "long_answer": "Proteus syndrome — a progressive, mosaic overgrowth disorder named after the shape-shifting Greek sea god Proteus — is caused by a somatic activating mutation in the AKT1 gene (most commonly the c.49G>A, p.E17K substitution). This gain-of-function mutation hyperactivates the PI3K–AKT signaling pathway, leading to the asymmetric, segmental overgrowth characteristic of the condition."
+                },
+                "target_answer_type": "gene mutation"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Proteus syndrome — a progressive, mosaic overgrowth disorder named after the shape-shifting Greek sea god Proteus — is caused by a somatic activating mutation in the AKT1 gene (most commonly the c.49G>A, p.E17K substitution). This gain-of-function mutation hyperactivates the PI3K–AKT signaling pathway, leading to the asymmetric, segmental overgrowth characteristic of the condition.",
+        "short_answer": "AKT1"
+    }
+}

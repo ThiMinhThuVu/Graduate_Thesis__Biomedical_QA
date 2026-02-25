@@ -1,0 +1,50 @@
+{
+    "QIDX": "889269",
+    "original_question": "Are both glycine encephalopathy and propionic acidemia rare autosomal recessive metabolic disorders?",
+    "type_q": "parallel",
+    "key_entities": [
+        "autosomal recessive metabolic disorders",
+        "glycine encephalopathy",
+        "propionic acidemia"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is glycine encephalopathy a rare autosomal recessive metabolic disorder?",
+            "short_answer": "yes",
+            "long_answer": "Glycine encephalopathy, also called non-ketotic hyperglycinemia (NKH), is an inborn error of metabolism caused by loss-of-function mutations in genes encoding components of the glycine-cleavage system (most commonly GLDC, AMT, or GCSH). The defective enzymatic complex cannot adequately break down glycine, leading to systemic and central-nervous-system accumulation of the amino acid. The disorder is inherited in an autosomal recessive manner: affected individuals have bi-allelic pathogenic variants, while parents are typically asymptomatic carriers. Fewer than one case per 60,000–250,000 live births is estimated worldwide, making it a rare disease by all major public-health definitions. Because it arises from a specific biochemical pathway defect and manifests with metabolic derangements (elevated glycine in blood, urine, and cerebrospinal fluid), it is classified as a rare autosomal recessive metabolic disorder. Therefore, the statement is accurate and consistent with established biomedical consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Is glycine encephalopathy a rare autosomal recessive metabolic disorder?",
+                "search_keyword": "glycine encephalopathy rare autosomal recessive metabolic disorder",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Glycine encephalopathy, also called non-ketotic hyperglycinemia (NKH), is an inborn error of metabolism caused by loss-of-function mutations in genes encoding components of the glycine-cleavage system (most commonly GLDC, AMT, or GCSH). The defective enzymatic complex cannot adequately break down glycine, leading to systemic and central-nervous-system accumulation of the amino acid. The disorder is inherited in an autosomal recessive manner: affected individuals have bi-allelic pathogenic variants, while parents are typically asymptomatic carriers. Fewer than one case per 60,000–250,000 live births is estimated worldwide, making it a rare disease by all major public-health definitions. Because it arises from a specific biochemical pathway defect and manifests with metabolic derangements (elevated glycine in blood, urine, and cerebrospinal fluid), it is classified as a rare autosomal recessive metabolic disorder. Therefore, the statement is accurate and consistent with established biomedical consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is propionic acidemia a rare autosomal recessive metabolic disorder?",
+            "short_answer": "yes",
+            "long_answer": "Propionic acidemia (propionic aciduria) is a metabolic disorder caused by deficiency of the mitochondrial enzyme propionyl-CoA carboxylase, resulting in accumulation of propionic acid and related metabolites. The condition is inherited in an autosomal recessive manner—the two genes involved, PCCA and PCCB, must both carry pathogenic variants for disease to manifest. Epidemiological studies place its incidence between roughly 1 in 50,000 to 1 in 250,000 live births worldwide, classifying it as a rare disease in virtually all jurisdictions. Therefore, the statement that propionic acidemia is a rare autosomal recessive metabolic disorder is consistent with established biomedical consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Is propionic acidemia a rare autosomal recessive metabolic disorder?",
+                "search_keyword": "propionic acidemia rare autosomal recessive metabolic disorder",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Propionic acidemia (propionic aciduria) is a metabolic disorder caused by deficiency of the mitochondrial enzyme propionyl-CoA carboxylase, resulting in accumulation of propionic acid and related metabolites. The condition is inherited in an autosomal recessive manner—the two genes involved, PCCA and PCCB, must both carry pathogenic variants for disease to manifest. Epidemiological studies place its incidence between roughly 1 in 50,000 to 1 in 250,000 live births worldwide, classifying it as a rare disease in virtually all jurisdictions. Therefore, the statement that propionic acidemia is a rare autosomal recessive metabolic disorder is consistent with established biomedical consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Both glycine encephalopathy and propionic acidemia are indeed rare autosomal recessive metabolic disorders, as supported by epidemiological data and genetic pathophysiology. Each disorder involves defects in specific metabolic pathways due to autosomal recessive inheritance, with clinical recognition as rare diseases.",
+        "short_answer": "yes"
+    }
+}

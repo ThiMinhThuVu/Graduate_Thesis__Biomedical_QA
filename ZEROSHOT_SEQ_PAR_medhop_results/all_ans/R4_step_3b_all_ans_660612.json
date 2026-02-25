@@ -1,0 +1,41 @@
+{
+    "QIDX": "660612",
+    "original_question": "On which chromosome is the BMP4 gene, which has been linked to anophthalmia and interacts with the Sonic hedgehog (SHH) pathway, located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Sonic hedgehog pathway",
+        "BMP4 gene",
+        "SHH"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the BMP4 gene, which has been linked to anophthalmia and interacts with the Sonic hedgehog (SHH) pathway, located?",
+            "short_answer": "Chromosome 14",
+            "long_answer": "In humans, the BMP4 (Bone Morphogenetic Protein 4) gene maps to chromosome 14, specifically the 14q22-q23 region. Mutations or deletions in this locus are associated with ocular malformations such as anophthalmia, and BMP4 signaling crosstalks with the Sonic hedgehog (SHH) pathway during embryonic development."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene has been linked to anophthalmia and interacts with the Sonic hedgehog (SHH) pathway?",
+                "search_keyword": "gene linked to anophthalmia interacts Sonic hedgehog pathway",
+                "final_answer": {
+                    "short_answer": "Chromosome 14",
+                    "long_answer": "The human BMP4 (bone morphogenetic protein 4) gene maps to cytogenetic band 14q22-q23 on chromosome 14. Mutations or deletions in this locus have been associated with congenital eye malformations such as anophthalmia, and BMP4 functions within developmental signaling cascades that intersect with the Sonic hedgehog (SHH) pathway."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that BMP4 gene located?",
+                "search_keyword": "chromosome location BMP4 gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 14",
+                    "long_answer": "In humans, the BMP4 (Bone Morphogenetic Protein 4) gene maps to chromosome 14, specifically the 14q22-q23 region. Mutations or deletions in this locus are associated with ocular malformations such as anophthalmia, and BMP4 signaling crosstalks with the Sonic hedgehog (SHH) pathway during embryonic development."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "In humans, the BMP4 (Bone Morphogenetic Protein 4) gene maps to chromosome 14, specifically the 14q22-q23 region. Mutations or deletions in this locus are associated with ocular malformations such as anophthalmia, and BMP4 signaling crosstalks with the Sonic hedgehog (SHH) pathway during embryonic development.",
+        "short_answer": "Chromosome 14"
+    }
+}

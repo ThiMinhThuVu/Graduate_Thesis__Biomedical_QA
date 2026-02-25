@@ -1,0 +1,40 @@
+{
+    "QIDX": "559693",
+    "original_question": "Which group of disorders, first described by Hyppocrates, arise from mutations that impair the enzymes necessary for producing an essential iron-containing molecule crucial for oxygen transport in the bloodstream?",
+    "type_q": "sequence",
+    "key_entities": [
+        "iron-containing molecule",
+        "oxygen transport"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which group of disorders, first described by Hyppocrates, arise from mutations that impair the enzymes necessary for producing an essential iron-containing molecule crucial for oxygen transport in the bloodstream?",
+            "short_answer": "Porphyrias",
+            "long_answer": "Porphyrias are a group of inherited (or occasionally acquired) metabolic disorders caused by mutations in the enzymes of the heme-biosynthetic pathway. These enzymatic defects hinder production of heme, the iron-containing molecule essential for oxygen transport in hemoglobin. First clinical descriptions trace back to Hippocrates, and the resulting accumulation of heme precursors leads to the characteristic neurovisceral and/or cutaneous manifestations of the porphyrias."
+        },
+        "0": {
+            "0": {
+                "question": "What are the disorders first described by Hippocrates that arise from mutations impairing enzymes necessary for producing an essential iron-containing molecule?",
+                "search_keyword": "disorders Hippocrates mutations enzymes iron-containing molecule",
+                "final_answer": {
+                    "short_answer": "Porphyrias",
+                    "long_answer": "Porphyrias are a group of inherited metabolic disorders first chronicled by Hippocrates. They result from germ-line mutations that reduce the activity of specific enzymes in the eight-step heme biosynthetic pathway. Because heme is the iron-containing prosthetic group vital for hemoglobin’s oxygen-transport function, impaired enzyme activity causes heme deficiency and leads to accumulation of porphyrin intermediates, producing the characteristic neurovisceral and/or photosensitive manifestations of porphyria."
+                },
+                "target_answer_type": "disorders"
+            },
+            "1": {
+                "question": "What is the essential iron-containing molecule crucial for oxygen transport in the bloodstream?",
+                "search_keyword": "essential iron-containing molecule oxygen transport bloodstream",
+                "final_answer": {
+                    "short_answer": "Porphyrias",
+                    "long_answer": "Porphyrias are a group of inherited (or occasionally acquired) metabolic disorders caused by mutations in the enzymes of the heme-biosynthetic pathway. These enzymatic defects hinder production of heme, the iron-containing molecule essential for oxygen transport in hemoglobin. First clinical descriptions trace back to Hippocrates, and the resulting accumulation of heme precursors leads to the characteristic neurovisceral and/or cutaneous manifestations of the porphyrias."
+                },
+                "target_answer_type": "molecule"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Porphyrias are a group of inherited (or occasionally acquired) metabolic disorders caused by mutations in the enzymes of the heme-biosynthetic pathway. These enzymatic defects hinder production of heme, the iron-containing molecule essential for oxygen transport in hemoglobin. First clinical descriptions trace back to Hippocrates, and the resulting accumulation of heme precursors leads to the characteristic neurovisceral and/or cutaneous manifestations of the porphyrias.",
+        "short_answer": "Porphyrias"
+    }
+}

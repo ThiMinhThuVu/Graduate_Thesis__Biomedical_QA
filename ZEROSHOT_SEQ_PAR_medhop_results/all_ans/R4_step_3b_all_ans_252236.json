@@ -1,0 +1,39 @@
+{
+    "QIDX": "252236",
+    "original_question": "Which genetic disorder of the connective tissue, caused by a mutation in the FBN1 gene, is associated with an acute cardiovascular condition that presents with a sudden onset of agonizing chest or back pain?",
+    "type_q": "sequence",
+    "key_entities": [
+        "connective tissue"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which genetic disorder of the connective tissue, caused by a mutation in the FBN1 gene, is associated with an acute cardiovascular condition that presents with a sudden onset of agonizing chest or back pain?",
+            "short_answer": "Marfan syndrome",
+            "long_answer": "Marfan syndrome is an autosomal-dominant connective-tissue disorder caused by pathogenic variants in the FBN1 gene encoding fibrillin-1. Patients with Marfan syndrome have weakness of the aortic media that predisposes them to acute aortic dissection, a cardiovascular emergency that classically presents with sudden, tearing chest or back pain."
+        },
+        "0": {
+            "0": {
+                "question": "Which genetic disorder of the connective tissue is caused by a mutation in the FBN1 gene?",
+                "search_keyword": "genetic disorder connective tissue mutation FBN1 gene",
+                "final_answer": {
+                    "short_answer": "Marfan syndrome",
+                    "long_answer": "Marfan syndrome is an inherited connective-tissue disorder produced by pathogenic variants in the FBN1 gene, which encodes fibrillin-1. Patients with Marfan syndrome have weakened elastic fibers in the aortic media, predisposing them to acute aortic dissection—a life-threatening cardiovascular emergency that classically presents with the sudden onset of tearing or agonizing chest or back pain."
+                },
+                "target_answer_type": "genetic disorder"
+            },
+            "1": {
+                "question": "What acute cardiovascular condition is associated with that genetic disorder and presents with sudden onset of agonizing chest or back pain?",
+                "search_keyword": "acute cardiovascular condition genetic disorder chest back pain",
+                "final_answer": {
+                    "short_answer": "Marfan syndrome",
+                    "long_answer": "Marfan syndrome is an autosomal-dominant connective-tissue disorder caused by pathogenic variants in the FBN1 gene encoding fibrillin-1. Patients with Marfan syndrome have weakness of the aortic media that predisposes them to acute aortic dissection, a cardiovascular emergency that classically presents with sudden, tearing chest or back pain."
+                },
+                "target_answer_type": "acute cardiovascular condition"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Marfan syndrome is an autosomal-dominant connective-tissue disorder caused by pathogenic variants in the FBN1 gene encoding fibrillin-1. Patients with Marfan syndrome have weakness of the aortic media that predisposes them to acute aortic dissection, a cardiovascular emergency that classically presents with sudden, tearing chest or back pain.",
+        "short_answer": "Marfan syndrome"
+    }
+}

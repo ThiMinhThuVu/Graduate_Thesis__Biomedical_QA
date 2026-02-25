@@ -1,0 +1,50 @@
+{
+    "QIDX": "305681",
+    "original_question": "Is hereditary lymphedema caused by mutations in the VEGFR3 gene, and is it associated with Rudolf Virchow?",
+    "type_q": "parallel",
+    "key_entities": [
+        "hereditary lymphedema",
+        "Rudolf Virchow",
+        "VEGFR3 gene"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is hereditary lymphedema caused by mutations in the VEGFR3 gene?",
+            "short_answer": "yes",
+            "long_answer": "One well-established form of hereditary (congenital) lymphedema—called Milroy disease or hereditary lymphedema type I—is caused by heterozygous loss-of-function mutations in the FLT4 gene, which encodes the vascular endothelial growth factor receptor-3 (VEGFR-3). VEGFR-3 is essential for normal lymphatic endothelial cell development; pathogenic variants impair lymphangiogenesis, leading to the chronic edema characteristic of hereditary lymphedema. Although other genes (e.g., FOXC2, GJC2, PIEZO1) can cause different genetic lymphedema syndromes, VEGFR-3/FLT4 mutations are a recognized and well-documented cause, so the statement is correct."
+        },
+        "0": {
+            "0": {
+                "question": "Is hereditary lymphedema caused by mutations in the VEGFR3 gene?",
+                "search_keyword": "hereditary lymphedema mutations VEGFR3 gene",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "One well-established form of hereditary (congenital) lymphedema—called Milroy disease or hereditary lymphedema type I—is caused by heterozygous loss-of-function mutations in the FLT4 gene, which encodes the vascular endothelial growth factor receptor-3 (VEGFR-3). VEGFR-3 is essential for normal lymphatic endothelial cell development; pathogenic variants impair lymphangiogenesis, leading to the chronic edema characteristic of hereditary lymphedema. Although other genes (e.g., FOXC2, GJC2, PIEZO1) can cause different genetic lymphedema syndromes, VEGFR-3/FLT4 mutations are a recognized and well-documented cause, so the statement is correct."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is hereditary lymphedema associated with Rudolf Virchow?",
+            "short_answer": "no",
+            "long_answer": "Hereditary (congenital) lymphedema is classically linked to William Forsythe Milroy, who in 1892 described the familial form now known as Milroy disease. A later juvenile-onset form was described by Henri Meige. Rudolf Virchow, although a towering figure in pathology and the study of lymphatic disorders in general, is not the eponymous or historically accepted authority for hereditary lymphedema. His name is attached to other findings—e.g., Virchow’s node, Virchow’s triad—but not to congenital or hereditary lymphedema. Therefore, associating hereditary lymphedema with Rudolf Virchow is not supported by established biomedical consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Is hereditary lymphedema associated with Rudolf Virchow?",
+                "search_keyword": "hereditary lymphedema Rudolf Virchow association",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Hereditary (congenital) lymphedema is classically linked to William Forsythe Milroy, who in 1892 described the familial form now known as Milroy disease. A later juvenile-onset form was described by Henri Meige. Rudolf Virchow, although a towering figure in pathology and the study of lymphatic disorders in general, is not the eponymous or historically accepted authority for hereditary lymphedema. His name is attached to other findings—e.g., Virchow’s node, Virchow’s triad—but not to congenital or hereditary lymphedema. Therefore, associating hereditary lymphedema with Rudolf Virchow is not supported by established biomedical consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Hereditary lymphedema, particularly the form known as Milroy disease, is caused by heterozygous loss-of-function mutations in the FLT4 gene, which encodes the vascular endothelial growth factor receptor-3 (VEGFR-3). This confirms that VEGFR-3 mutations lead to the impaired lymphangiogenesis seen in the disease. However, the condition is not associated with Rudolf Virchow; instead, it is historically linked to William Forsythe Milroy, with additional contributions from Henri Meige in describing juvenile-onset forms. Thus, while the genetic cause is validated, the attribution to Rudolf Virchow is not supported.",
+        "short_answer": "yes, no"
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "QIDX": "280793",
+    "original_question": "In limited systemic scleroderma, part of the CREST syndrome, what phenomenon involves the formation of calcium deposits in soft tissues and may also occur in conditions like kidney failure or infection?",
+    "type_q": "parallel",
+    "key_entities": [
+        "limited systemic scleroderma",
+        "calcium deposits",
+        "CREST syndrome",
+        "kidney failure",
+        "soft tissues",
+        "infection"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What phenomenon involves the formation of calcium deposits in soft tissues in limited systemic scleroderma?",
+            "short_answer": "Calcinosis cutis",
+            "long_answer": "In limited systemic scleroderma (the CREST variant), calcium salts can precipitate within skin and subcutaneous tissues, a process termed calcinosis cutis. This pathologic deposition of insoluble calcium leads to firm nodules or plaques, distinguishing the ‘C’ component of the CREST acronym."
+        },
+        "0": {
+            "0": {
+                "question": "What phenomenon involves the formation of calcium deposits in soft tissues in limited systemic scleroderma?",
+                "search_keyword": "calcium deposits soft tissues limited systemic scleroderma phenomenon",
+                "final_answer": {
+                    "short_answer": "Calcinosis cutis",
+                    "long_answer": "In limited systemic scleroderma (the CREST variant), calcium salts can precipitate within skin and subcutaneous tissues, a process termed calcinosis cutis. This pathologic deposition of insoluble calcium leads to firm nodules or plaques, distinguishing the ‘C’ component of the CREST acronym."
+                },
+                "target_answer_type": "phenomenon"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What phenomenon involves the formation of calcium deposits in soft tissues in kidney failure?",
+            "short_answer": "Metastatic calcification",
+            "long_answer": "In chronic kidney failure phosphate retention and secondary hyperparathyroidism raise the calcium–phosphate product, allowing calcium salts to precipitate in otherwise normal soft tissues such as blood vessels, skin, lungs and gastric mucosa. This systemic, abnormal deposition of calcium is termed metastatic calcification."
+        },
+        "0": {
+            "0": {
+                "question": "What phenomenon involves the formation of calcium deposits in soft tissues in kidney failure?",
+                "search_keyword": "calcium deposits soft tissues kidney failure phenomenon",
+                "final_answer": {
+                    "short_answer": "Metastatic calcification",
+                    "long_answer": "In chronic kidney failure phosphate retention and secondary hyperparathyroidism raise the calcium–phosphate product, allowing calcium salts to precipitate in otherwise normal soft tissues such as blood vessels, skin, lungs and gastric mucosa. This systemic, abnormal deposition of calcium is termed metastatic calcification."
+                },
+                "target_answer_type": "phenomenon"
+            }
+        }
+    },
+    "3": {
+        "final_qi": {
+            "question": "What phenomenon involves the formation of calcium deposits in soft tissues in infection?",
+            "short_answer": "Dystrophic calcification",
+            "long_answer": "Dystrophic calcification is the pathologic process in which calcium salts precipitate within necrotic or damaged soft tissues, such as those injured by infection. Serum calcium and phosphate levels remain normal; the calcification occurs locally at sites of tissue injury or inflammation (e.g., tuberculous granulomas, abscesses), producing visible calcium deposits in the affected soft tissue."
+        },
+        "0": {
+            "0": {
+                "question": "What phenomenon involves the formation of calcium deposits in soft tissues in infection?",
+                "search_keyword": "calcium deposits soft tissues infection phenomenon",
+                "final_answer": {
+                    "short_answer": "Dystrophic calcification",
+                    "long_answer": "Dystrophic calcification is the pathologic process in which calcium salts precipitate within necrotic or damaged soft tissues, such as those injured by infection. Serum calcium and phosphate levels remain normal; the calcification occurs locally at sites of tissue injury or inflammation (e.g., tuberculous granulomas, abscesses), producing visible calcium deposits in the affected soft tissue."
+                },
+                "target_answer_type": "phenomenon"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "In limited systemic scleroderma, which is part of the CREST syndrome, the phenomenon of calcium deposits in the skin and subcutaneous tissues is referred to as calcinosis cutis. Although conditions like kidney failure and infections also show calcium deposition, they occur via different mechanisms called metastatic calcification and dystrophic calcification, respectively, making calcinosis cutis the specific term used in the context of limited systemic scleroderma.",
+        "short_answer": "Calcinosis cutis"
+    }
+}

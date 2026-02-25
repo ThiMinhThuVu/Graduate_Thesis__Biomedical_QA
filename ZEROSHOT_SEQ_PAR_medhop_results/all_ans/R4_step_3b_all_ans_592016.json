@@ -1,0 +1,49 @@
+{
+    "QIDX": "592016",
+    "original_question": "Do the symptoms of ML I also occur in other inborn errors of metabolism?",
+    "type_q": "parallel",
+    "key_entities": [
+        "inborn errors of metabolism?",
+        "ML I"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Do the symptoms of ML I occur in other inborn errors of metabolism?",
+            "short_answer": "yes",
+            "long_answer": "Mucolipidosis type I (sialidosis) is one of the lysosomal storage disorders. Its clinical picture—coarse facial features, developmental delay, hypotonia, hepatosplenomegaly, bone changes resembling dysostosis multiplex, and especially the macular cherry-red spot and progressive neurological decline—is not unique to ML I. Very similar manifestations are seen in several other inborn errors of metabolism, including GM1 and GM2 gangliosidoses (e.g., Tay-Sachs, Sandhoff), Niemann-Pick disease, some forms of mucopolysaccharidosis, and other mucolipidoses. Because many lysosomal and related metabolic defects disrupt similar pathways of storage and clearance, their phenotypes overlap considerably. Thus, the symptoms observed in ML I occur in a number of other inherited metabolic diseases."
+        },
+        "0": {
+            "0": {
+                "question": "Do the symptoms of ML I occur in other inborn errors of metabolism?",
+                "search_keyword": "ML I symptoms inborn errors of metabolism",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Mucolipidosis type I (sialidosis) is one of the lysosomal storage disorders. Its clinical picture—coarse facial features, developmental delay, hypotonia, hepatosplenomegaly, bone changes resembling dysostosis multiplex, and especially the macular cherry-red spot and progressive neurological decline—is not unique to ML I. Very similar manifestations are seen in several other inborn errors of metabolism, including GM1 and GM2 gangliosidoses (e.g., Tay-Sachs, Sandhoff), Niemann-Pick disease, some forms of mucopolysaccharidosis, and other mucolipidoses. Because many lysosomal and related metabolic defects disrupt similar pathways of storage and clearance, their phenotypes overlap considerably. Thus, the symptoms observed in ML I occur in a number of other inherited metabolic diseases."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What are the symptoms of other inborn errors of metabolism?",
+            "short_answer": "Lethargy, vomiting, seizures, poor feeding",
+            "long_answer": "Most inborn errors of metabolism present with non-specific systemic and neurologic signs rather than a single pathognomonic feature. Accumulation of toxic substrates or energy deficiency in the newborn typically produces poor feeding and vomiting, progressing to somnolence/lethargy and seizures as cerebral edema or hyperammonemia develops. These shared manifestations—lethargy, vomiting, seizures, and feeding intolerance—are therefore characteristic ‘red-flag’ symptoms seen across many other metabolic disorders (e.g., urea-cycle defects, organic acidemias, fatty-acid oxidation defects)."
+        },
+        "0": {
+            "0": {
+                "question": "What are the symptoms of other inborn errors of metabolism?",
+                "search_keyword": "inborn errors of metabolism symptoms",
+                "final_answer": {
+                    "short_answer": "Lethargy, vomiting, seizures, poor feeding",
+                    "long_answer": "Most inborn errors of metabolism present with non-specific systemic and neurologic signs rather than a single pathognomonic feature. Accumulation of toxic substrates or energy deficiency in the newborn typically produces poor feeding and vomiting, progressing to somnolence/lethargy and seizures as cerebral edema or hyperammonemia develops. These shared manifestations—lethargy, vomiting, seizures, and feeding intolerance—are therefore characteristic ‘red-flag’ symptoms seen across many other metabolic disorders (e.g., urea-cycle defects, organic acidemias, fatty-acid oxidation defects)."
+                },
+                "target_answer_type": "symptoms"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The symptoms seen in Mucolipidosis type I (ML I), such as coarse facial features, developmental delay, and neurological decline, are not unique to this disorder. These features are shared by other inborn errors of metabolism including GM1 and GM2 gangliosidoses, Niemann-Pick disease, mucopolysaccharidoses, and other mucolipidoses, as many of these disorders disrupt similar lysosomal and metabolic pathways. As a result, overlapping clinical manifestations occur in various metabolic disorders.",
+        "short_answer": "yes"
+    }
+}

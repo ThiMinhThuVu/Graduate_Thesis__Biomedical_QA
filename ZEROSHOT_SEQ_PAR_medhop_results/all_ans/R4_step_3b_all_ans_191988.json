@@ -1,0 +1,42 @@
+{
+    "QIDX": "191988",
+    "original_question": "Which disorder, cystic fibrosis or campomelic dysplasia, is caused by mutations in a gene located on chromosome 7 at the q31.2 locus?",
+    "type_q": "sequence",
+    "key_entities": [
+        "campomelic dysplasia",
+        "cystic fibrosis",
+        "chromosome 7",
+        "q31.2 locus"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which disorder, cystic fibrosis or campomelic dysplasia, is caused by mutations in a gene located on chromosome 7 at the q31.2 locus?",
+            "short_answer": "Cystic fibrosis",
+            "long_answer": "Cystic fibrosis results from pathogenic variants in the CFTR gene, which is situated on chromosome 7 at the q31.2 locus. In contrast, campomelic dysplasia is typically caused by mutations in the SOX9 gene on chromosome 17q24–q25. Therefore, the disorder linked to a gene on 7q31.2 is cystic fibrosis."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is located on chromosome 7 at the q31.2 locus?",
+                "search_keyword": "gene chromosome 7 q31.2 locus",
+                "final_answer": {
+                    "short_answer": "Cystic fibrosis",
+                    "long_answer": "Cystic fibrosis results from pathogenic variants in the CFTR gene, which is situated on chromosome 7 at band q31.2. Mutations in this locus disrupt chloride channel function, leading to the characteristic pulmonary and pancreatic manifestations. In contrast, campomelic dysplasia is caused by mutations in SOX9 on chromosome 17q24-q25, not 7q31.2."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Which disorder is caused by mutations in that gene?",
+                "search_keyword": "disorder caused by mutations in gene",
+                "final_answer": {
+                    "short_answer": "Cystic fibrosis",
+                    "long_answer": "Cystic fibrosis results from pathogenic variants in the CFTR gene, which is situated on chromosome 7 at the q31.2 locus. In contrast, campomelic dysplasia is typically caused by mutations in the SOX9 gene on chromosome 17q24–q25. Therefore, the disorder linked to a gene on 7q31.2 is cystic fibrosis."
+                },
+                "target_answer_type": "disorder"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Cystic fibrosis results from pathogenic variants in the CFTR gene, which is situated on chromosome 7 at the q31.2 locus. In contrast, campomelic dysplasia is typically caused by mutations in the SOX9 gene on chromosome 17q24–q25. Therefore, the disorder linked to a gene on 7q31.2 is cystic fibrosis.",
+        "short_answer": "Cystic fibrosis"
+    }
+}

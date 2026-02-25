@@ -1,0 +1,41 @@
+{
+    "QIDX": "213436",
+    "original_question": "What is the name of the gene located on chromosome 13 that is associated with forms of dementia showing pathology similar to Alzheimer's disease?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Alzheimer's disease",
+        "chromosome 13",
+        "dementia"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What is the name of the gene located on chromosome 13 that is associated with forms of dementia showing pathology similar to Alzheimer's disease?",
+            "short_answer": "yes",
+            "long_answer": "A gene fitting that description does exist. The ITM2B gene (also called BRI2), located on chromosome 13q14, carries pathogenic mutations that cause Familial British Dementia and Familial Danish Dementia. These rare, autosomal-dominant disorders produce amyloid plaques and neurofibrillary tangles that are histopathologically very similar to those seen in Alzheimer’s disease. Therefore, the statement that a chromosome-13 gene is associated with dementia displaying Alzheimer-like pathology is supported by established scientific evidence."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with forms of dementia that show pathology similar to Alzheimer's disease?",
+                "search_keyword": "gene associated forms of dementia similar Alzheimer's disease",
+                "final_answer": {
+                    "short_answer": "ITM2B (BRI2)",
+                    "long_answer": "Mutations in the ITM2B gene, located on chromosome 13q14, cause Familial Danish and Familial British dementias. These inherited dementias are characterized by amyloid deposits and neuro-degenerative changes that closely mirror the pathology seen in Alzheimer’s disease, linking ITM2B to Alzheimer-like forms of dementia."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Is that gene located on chromosome 13?",
+                "search_keyword": "gene location chromosome 13",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "A gene fitting that description does exist. The ITM2B gene (also called BRI2), located on chromosome 13q14, carries pathogenic mutations that cause Familial British Dementia and Familial Danish Dementia. These rare, autosomal-dominant disorders produce amyloid plaques and neurofibrillary tangles that are histopathologically very similar to those seen in Alzheimer’s disease. Therefore, the statement that a chromosome-13 gene is associated with dementia displaying Alzheimer-like pathology is supported by established scientific evidence."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "A gene fitting that description does exist. The ITM2B gene (also called BRI2), located on chromosome 13q14, carries pathogenic mutations that cause Familial British Dementia and Familial Danish Dementia. These rare, autosomal-dominant disorders produce amyloid plaques and neurofibrillary tangles that are histopathologically very similar to those seen in Alzheimer’s disease. Therefore, the statement that a chromosome-13 gene is associated with dementia displaying Alzheimer-like pathology is supported by established scientific evidence.",
+        "short_answer": "yes"
+    }
+}

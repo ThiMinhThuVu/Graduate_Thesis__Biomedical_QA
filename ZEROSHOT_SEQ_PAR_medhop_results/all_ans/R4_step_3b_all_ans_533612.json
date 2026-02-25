@@ -1,0 +1,69 @@
+{
+    "QIDX": "533612",
+    "original_question": "Which form of parkinsonism is specifically associated with the 1919–1930 encephalitis lethargica epidemic, and how does it differ from idiopathic Parkinson's disease regarding age of onset and the absence of the pill-rolling tremor?",
+    "type_q": "parallel",
+    "key_entities": [
+        "1919–1930 encephalitis lethargica",
+        "idiopathic Parkinson's disease",
+        "parkinsonism",
+        "tremor"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What form of parkinsonism is specifically associated with the 1919–1930 encephalitis lethargica epidemic?",
+            "short_answer": "Post-encephalitic parkinsonism",
+            "long_answer": "Survivors of the 1919–1930 worldwide encephalitis lethargica (von Economo’s encephalitis) epidemic frequently developed a parkinsonian syndrome months to years after the acute illness. This entity, termed post-encephalitic parkinsonism, is distinct from idiopathic Parkinson’s disease and was the classic neurologic sequel specifically linked to that epidemic."
+        },
+        "0": {
+            "0": {
+                "question": "What form of parkinsonism is specifically associated with the 1919–1930 encephalitis lethargica epidemic?",
+                "search_keyword": "parkinsonism associated 1919 1930 encephalitis lethargica epidemic",
+                "final_answer": {
+                    "short_answer": "Post-encephalitic parkinsonism",
+                    "long_answer": "Survivors of the 1919–1930 worldwide encephalitis lethargica (von Economo’s encephalitis) epidemic frequently developed a parkinsonian syndrome months to years after the acute illness. This entity, termed post-encephalitic parkinsonism, is distinct from idiopathic Parkinson’s disease and was the classic neurologic sequel specifically linked to that epidemic."
+                },
+                "target_answer_type": "condition"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "How does the age of onset differ between the parkinsonism associated with the encephalitis lethargica epidemic and idiopathic Parkinson's disease?",
+            "short_answer": "Much younger onset",
+            "long_answer": "Post-encephalitic parkinsonism that followed the encephalitis lethargica epidemic typically appeared in childhood, adolescence, or early adulthood (often in the 20s–30s), whereas idiopathic Parkinson’s disease most often begins in late middle age or old age (around the 60s–70s). Thus, the encephalitis-related parkinsonism has a markedly earlier age of onset than idiopathic Parkinson’s disease."
+        },
+        "0": {
+            "0": {
+                "question": "How does the age of onset differ between the parkinsonism associated with the encephalitis lethargica epidemic and idiopathic Parkinson's disease?",
+                "search_keyword": "age of onset parkinsonism encephalitis lethargica idiopathic Parkinson's disease",
+                "final_answer": {
+                    "short_answer": "Much younger onset",
+                    "long_answer": "Post-encephalitic parkinsonism that followed the encephalitis lethargica epidemic typically appeared in childhood, adolescence, or early adulthood (often in the 20s–30s), whereas idiopathic Parkinson’s disease most often begins in late middle age or old age (around the 60s–70s). Thus, the encephalitis-related parkinsonism has a markedly earlier age of onset than idiopathic Parkinson’s disease."
+                },
+                "target_answer_type": "Undefined"
+            }
+        }
+    },
+    "3": {
+        "final_qi": {
+            "question": "How does the absence of the pill-rolling tremor differ between the parkinsonism associated with the encephalitis lethargica epidemic and idiopathic Parkinson's disease?",
+            "short_answer": "Absent in postencephalitic parkinsonism",
+            "long_answer": "In the parkinsonism that followed the 1916–1927 encephalitis lethargica epidemic (post-encephalitic parkinsonism), the classic pill-rolling resting tremor seen in idiopathic Parkinson’s disease was typically absent. Idiopathic Parkinson’s disease, by contrast, is characteristically marked by this resting tremor. The lack of the pill-rolling tremor therefore served as a clinical hallmark distinguishing post-encephalitic parkinsonism from idiopathic Parkinson’s disease."
+        },
+        "0": {
+            "0": {
+                "question": "How does the absence of the pill-rolling tremor differ between the parkinsonism associated with the encephalitis lethargica epidemic and idiopathic Parkinson's disease?",
+                "search_keyword": "pill-rolling tremor absence encephalitis lethargica parkinsonism idiopathic Parkinson's disease",
+                "final_answer": {
+                    "short_answer": "Absent in postencephalitic parkinsonism",
+                    "long_answer": "In the parkinsonism that followed the 1916–1927 encephalitis lethargica epidemic (post-encephalitic parkinsonism), the classic pill-rolling resting tremor seen in idiopathic Parkinson’s disease was typically absent. Idiopathic Parkinson’s disease, by contrast, is characteristically marked by this resting tremor. The lack of the pill-rolling tremor therefore served as a clinical hallmark distinguishing post-encephalitic parkinsonism from idiopathic Parkinson’s disease."
+                },
+                "target_answer_type": "Undefined"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The form of parkinsonism associated with the encephalitis lethargica epidemic is post-encephalitic parkinsonism. This condition typically appeared in younger individuals (childhood, adolescence, or early adulthood) compared to idiopathic Parkinson's disease, which usually has an onset in late middle or old age. Moreover, the hallmark pill-rolling resting tremor seen in idiopathic Parkinson's disease is typically absent in post-encephalitic parkinsonism.",
+        "short_answer": "Post-encephalitic parkinsonism"
+    }
+}

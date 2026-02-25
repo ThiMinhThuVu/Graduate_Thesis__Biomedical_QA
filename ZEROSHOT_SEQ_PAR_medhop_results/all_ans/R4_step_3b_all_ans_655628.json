@@ -1,0 +1,41 @@
+{
+    "QIDX": "655628",
+    "original_question": "Which gene mutation in a kinase associated with signaling by members of the type II cytokine receptor family is commonly linked to essential thrombocythemia?",
+    "type_q": "sequence",
+    "key_entities": [
+        "type II cytokine receptor family",
+        "essential thrombocythemia",
+        "kinase"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene mutation in a kinase associated with signaling by members of the type II cytokine receptor family is commonly linked to essential thrombocythemia?",
+            "short_answer": "JAK2 V617F",
+            "long_answer": "Essential thrombocythemia is most frequently driven by the V617F point mutation in the Janus kinase 2 (JAK2) gene. JAK2 is a non-receptor tyrosine kinase that associates with type I and type II cytokine receptors; the V617F substitution renders the kinase constitutively active, promoting uncontrolled megakaryocyte proliferation and elevated platelet counts characteristic of essential thrombocythemia."
+        },
+        "0": {
+            "0": {
+                "question": "Which kinase is associated with signaling by members of the type II cytokine receptor family?",
+                "search_keyword": "kinase signaling type II cytokine receptor family",
+                "final_answer": {
+                    "short_answer": "JAK2 V617F",
+                    "long_answer": "The JAK2 V617F point mutation in the Janus kinase 2 gene is the canonical driver lesion in essential thrombocythemia. JAK2 is a non-receptor tyrosine kinase that associates with multiple type II cytokine receptors, and the V617F substitution constitutively activates JAK-STAT signalling, leading to the thrombocytosis characteristic of this myeloproliferative neoplasm."
+                },
+                "target_answer_type": "kinase"
+            },
+            "1": {
+                "question": "Which gene mutation in that kinase is commonly linked to essential thrombocythemia?",
+                "search_keyword": "gene mutation kinase essential thrombocythemia",
+                "final_answer": {
+                    "short_answer": "JAK2 V617F",
+                    "long_answer": "Essential thrombocythemia is most frequently driven by the V617F point mutation in the Janus kinase 2 (JAK2) gene. JAK2 is a non-receptor tyrosine kinase that associates with type I and type II cytokine receptors; the V617F substitution renders the kinase constitutively active, promoting uncontrolled megakaryocyte proliferation and elevated platelet counts characteristic of essential thrombocythemia."
+                },
+                "target_answer_type": "gene mutation"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Essential thrombocythemia is most frequently driven by the V617F point mutation in the Janus kinase 2 (JAK2) gene. JAK2 is a non-receptor tyrosine kinase that associates with type I and type II cytokine receptors; the V617F substitution renders the kinase constitutively active, promoting uncontrolled megakaryocyte proliferation and elevated platelet counts characteristic of essential thrombocythemia.",
+        "short_answer": "JAK2 V617F"
+    }
+}

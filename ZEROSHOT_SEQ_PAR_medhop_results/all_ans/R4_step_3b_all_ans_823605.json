@@ -1,0 +1,50 @@
+{
+    "QIDX": "823605",
+    "original_question": "Are bacterial vaginosis and vaginal yeast infection both vaginal infections caused by the excessive growth of bacteria?",
+    "type_q": "parallel",
+    "key_entities": [
+        "vaginal yeast infection",
+        "bacterial vaginosis",
+        "vaginal infections"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is bacterial vaginosis a vaginal infection caused by the excessive growth of bacteria?",
+            "short_answer": "yes",
+            "long_answer": "Bacterial vaginosis (BV) is defined as a vaginal disorder in which the normal Lactobacillus-predominant flora is disrupted and replaced by an excessive growth of mixed anaerobic bacteria such as Gardnerella vaginalis, Atopobium vaginae, Mobiluncus spp., and others. This overgrowth leads to characteristic symptoms (thin gray discharge, fishy odor) and signs, and is clearly considered an infectious condition of the vagina. Thus, BV is indeed a vaginal infection that results from an overabundance of certain bacteria."
+        },
+        "0": {
+            "0": {
+                "question": "Is bacterial vaginosis a vaginal infection caused by the excessive growth of bacteria?",
+                "search_keyword": "bacterial vaginosis vaginal infection excessive growth bacteria",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Bacterial vaginosis (BV) is defined as a vaginal disorder in which the normal Lactobacillus-predominant flora is disrupted and replaced by an excessive growth of mixed anaerobic bacteria such as Gardnerella vaginalis, Atopobium vaginae, Mobiluncus spp., and others. This overgrowth leads to characteristic symptoms (thin gray discharge, fishy odor) and signs, and is clearly considered an infectious condition of the vagina. Thus, BV is indeed a vaginal infection that results from an overabundance of certain bacteria."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is vaginal yeast infection a vaginal infection caused by the excessive growth of bacteria?",
+            "short_answer": "no",
+            "long_answer": "A vaginal yeast infection (vulvovaginal candidiasis) is caused by the over-growth of Candida species, which are fungi, not bacteria. Excessive growth of bacteria in the vagina is characteristic of a different condition called bacterial vaginosis. Therefore, describing a vaginal yeast infection as being caused by excessive bacterial growth is factually incorrect."
+        },
+        "0": {
+            "0": {
+                "question": "Is vaginal yeast infection a vaginal infection caused by the excessive growth of bacteria?",
+                "search_keyword": "vaginal yeast infection caused by excessive growth of bacteria",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "A vaginal yeast infection (vulvovaginal candidiasis) is caused by the over-growth of Candida species, which are fungi, not bacteria. Excessive growth of bacteria in the vagina is characteristic of a different condition called bacterial vaginosis. Therefore, describing a vaginal yeast infection as being caused by excessive bacterial growth is factually incorrect."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Bacterial vaginosis is indeed a vaginal infection caused by an excessive growth of certain bacteria, while a vaginal yeast infection is caused by an excessive growth of Candida fungi. Since only bacterial vaginosis involves bacterial overgrowth, the statement that both infections are caused by excessive bacterial growth is incorrect.",
+        "short_answer": "no"
+    }
+}

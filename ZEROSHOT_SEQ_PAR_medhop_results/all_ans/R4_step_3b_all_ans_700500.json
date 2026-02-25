@@ -1,0 +1,39 @@
+{
+    "QIDX": "700500",
+    "original_question": "Which protein is encoded by the gene that is mutated in Norman-Roberts syndrome?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Norman-Roberts syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which protein is encoded by the gene that is mutated in Norman-Roberts syndrome?",
+            "short_answer": "Reelin",
+            "long_answer": "Norman-Roberts syndrome (also called lissencephaly type 2) is caused by loss-of-function mutations in the RELN gene located on chromosome 7q22. The RELN gene encodes reelin, a large secreted extracellular matrix glycoprotein that regulates neuronal migration and proper layering of the cerebral cortex and cerebellum. Thus, the mutated gene in Norman-Roberts syndrome produces the protein reelin."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is mutated in Norman-Roberts syndrome?",
+                "search_keyword": "gene mutated Norman-Roberts syndrome",
+                "final_answer": {
+                    "short_answer": "Reelin",
+                    "long_answer": "Norman-Roberts syndrome (lissencephaly with cerebellar hypoplasia) is caused by loss-of-function mutations in the RELN gene. RELN encodes reelin, a large secreted glycoprotein that guides neuronal migration and layering during brain development. Absence or reduction of reelin disrupts cortical and cerebellar architecture, producing the characteristic features of the syndrome."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "1": {
+                "question": "Which protein is encoded by that gene?",
+                "search_keyword": "protein encoded by gene",
+                "final_answer": {
+                    "short_answer": "Reelin",
+                    "long_answer": "Norman-Roberts syndrome (also called lissencephaly type 2) is caused by loss-of-function mutations in the RELN gene located on chromosome 7q22. The RELN gene encodes reelin, a large secreted extracellular matrix glycoprotein that regulates neuronal migration and proper layering of the cerebral cortex and cerebellum. Thus, the mutated gene in Norman-Roberts syndrome produces the protein reelin."
+                },
+                "target_answer_type": "protein"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Norman-Roberts syndrome (also called lissencephaly type 2) is caused by loss-of-function mutations in the RELN gene located on chromosome 7q22. The RELN gene encodes reelin, a large secreted extracellular matrix glycoprotein that regulates neuronal migration and proper layering of the cerebral cortex and cerebellum. Thus, the mutated gene in Norman-Roberts syndrome produces the protein reelin.",
+        "short_answer": "Reelin"
+    }
+}

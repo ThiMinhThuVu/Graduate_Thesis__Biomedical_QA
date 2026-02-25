@@ -1,0 +1,50 @@
+{
+    "QIDX": "383702",
+    "original_question": "Is it false that Sclerosteosis is caused by mutations in the SOST gene which affects the level of a member of the tumor necrosis factor (TNF) superfamily?",
+    "type_q": "sequence",
+    "key_entities": [
+        "tumor necrosis factor (TNF) superfamily",
+        "Sclerosteosis",
+        "SOST gene"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is it false that Sclerosteosis is caused by mutations in the SOST gene which affects the level of a member of the tumor necrosis factor (TNF) superfamily?",
+            "short_answer": "False",
+            "long_answer": "Sclerosteosis is indeed produced by loss-of-function mutations in the SOST gene, but the encoded protein sclerostin is a DAN-family Wnt inhibitor, not a tumor necrosis factor (TNF) superfamily member, nor is the disease mechanism centered on altering any TNF-family ligand or receptor. Therefore the claim that SOST mutations affect the level of a TNF-superfamily protein is incorrect, making the statement false."
+        },
+        "0": {
+            "0": {
+                "question": "What is Sclerosteosis and what causes it?",
+                "search_keyword": "Sclerosteosis causes",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Sclerosteosis is indeed produced by loss-of-function mutations in the SOST gene, but SOST encodes sclerostin, a cystine-knot protein of the DAN family that antagonises Wnt/BMP signalling. Sclerostin is NOT a member of the tumor necrosis factor (TNF) ligand or receptor superfamily. Therefore the claim that the disease involves altered levels of a TNF-superfamily member is incorrect, making the original statement false."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Which gene is associated with Sclerosteosis?",
+                "search_keyword": "gene associated with Sclerosteosis",
+                "final_answer": {
+                    "short_answer": "False",
+                    "long_answer": "Sclerosteosis results from loss-of-function mutations in the SOST gene, which encodes the Wnt antagonist sclerostin of the DAN protein family. Sclerostin is not part of the tumor necrosis factor (TNF) superfamily, nor is the pathogenesis of sclerosteosis primarily mediated through changes in any TNF-superfamily ligand. Hence, the claim that SOST mutations affect the level of a TNF-superfamily member is incorrect."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "How does the SOST gene affect the level of a member of the tumor necrosis factor (TNF) superfamily?",
+                "search_keyword": "SOST gene effect tumor necrosis factor superfamily",
+                "final_answer": {
+                    "short_answer": "False",
+                    "long_answer": "Sclerosteosis is indeed produced by loss-of-function mutations in the SOST gene, but the encoded protein sclerostin is a DAN-family Wnt inhibitor, not a tumor necrosis factor (TNF) superfamily member, nor is the disease mechanism centered on altering any TNF-family ligand or receptor. Therefore the claim that SOST mutations affect the level of a TNF-superfamily protein is incorrect, making the statement false."
+                },
+                "target_answer_type": "effect"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Sclerosteosis is indeed produced by loss-of-function mutations in the SOST gene, but the encoded protein sclerostin is a DAN-family Wnt inhibitor, not a tumor necrosis factor (TNF) superfamily member, nor is the disease mechanism centered on altering any TNF-family ligand or receptor. Therefore the claim that SOST mutations affect the level of a TNF-superfamily protein is incorrect, making the statement false.",
+        "short_answer": "False"
+    }
+}

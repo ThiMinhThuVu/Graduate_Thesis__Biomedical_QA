@@ -1283,7 +1283,7 @@ def old_prompt_gen_answer_medhop_step_3b(question, search_kw, key_entities, cont
 
         Response format (strict JSON):
         {{  
-            "short_answer": "short answer as per rules or 'Insufficient information'" if the answer not found in the provide context,
+            "short_answer": "short answer as per rules or 'Insufficient information'" if the answer not found in the provide context. The specific entity name (1–5 words),
             "long_answer": "[reference ID1], [reference ID2], ... Explanation: [Detailed explanation based on the information]"
         }}
         """
@@ -1327,7 +1327,7 @@ def old_prompt_gen_answer_medhop_step_3b(question, search_kw, key_entities, cont
 
             Response format (strict JSON):
             {{  
-                "short_answer": "short answer as per rules or 'Insufficient information'" if the answer not found in the provide context,
+                "short_answer": "short answer as per rules or 'Insufficient information'" if the answer not found in the provide context. The specific entity name (1–5 words),
                 "long_answer": "Reference: [[reference 1 from context], [reference 2 from context], ...]. Explanation: [Detailed explanation based on the information]"
             }}
             """

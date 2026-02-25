@@ -1,0 +1,39 @@
+{
+    "QIDX": "200636",
+    "original_question": "On which chromosome is the gene encoding desmoglein-1 located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "desmoglein-1"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene encoding desmoglein-1 located?",
+            "short_answer": "Chromosome 18",
+            "long_answer": "In the human genome the DSG1 gene, which encodes the desmosomal cadherin desmoglein-1, resides in the desmoglein gene cluster on chromosome 18 (band 18q12.1)."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene encodes desmoglein-1?",
+                "search_keyword": "gene encoding desmoglein-1",
+                "final_answer": {
+                    "short_answer": "Chromosome 18",
+                    "long_answer": "The desmoglein-1 gene (DSG1) maps to the long arm of human chromosome 18 (region 18q12), where it forms part of the desmoglein/cadherin gene cluster."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene desmoglein-1",
+                "final_answer": {
+                    "short_answer": "Chromosome 18",
+                    "long_answer": "In the human genome the DSG1 gene, which encodes the desmosomal cadherin desmoglein-1, resides in the desmoglein gene cluster on chromosome 18 (band 18q12.1)."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "In the human genome the DSG1 gene, which encodes the desmosomal cadherin desmoglein-1, resides in the desmoglein gene cluster on chromosome 18 (band 18q12.1).",
+        "short_answer": "Chromosome 18"
+    }
+}

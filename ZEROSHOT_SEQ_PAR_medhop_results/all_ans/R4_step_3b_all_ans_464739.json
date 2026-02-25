@@ -1,0 +1,50 @@
+{
+    "QIDX": "464739",
+    "original_question": "Does the gene mutation responsible for Triple-A syndrome result in reduced nuclear import of aprataxin and DNA ligase I, which are involved in DNA repair?",
+    "type_q": "sequence",
+    "key_entities": [
+        "aprataxin and DNA ligase I",
+        "Triple-A syndrome",
+        "nuclear"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Does the gene mutation responsible for Triple-A syndrome result in reduced nuclear import of aprataxin and DNA ligase I, which are involved in DNA repair?",
+            "short_answer": "yes",
+            "long_answer": "Triple-A (Allgrove) syndrome is caused by loss-of-function mutations in the AAAS gene, which encodes the nucleoporin ALADIN, a component of the nuclear pore complex. ALADIN is required for efficient nuclear import of specific cargo proteins. Experimental studies of patient-derived fibroblasts and AAAS-knock-down cell lines have shown that absence or malfunction of ALADIN leads to defective nuclear translocation of several DNA-repair factors, most prominently aprataxin (APTX) and DNA ligase I (LIG1). Both proteins normally participate in single-strand break repair and Okazaki fragment ligation, respectively. When ALADIN is mutated, they accumulate in the cytoplasm instead of the nucleus, resulting in reduced DNA repair capacity and increased cellular sensitivity to oxidative stress. Therefore, the gene mutation responsible for Triple-A syndrome indeed causes reduced nuclear import of aprataxin and DNA ligase I."
+        },
+        "0": {
+            "0": {
+                "question": "What is the gene mutation responsible for Triple-A syndrome?",
+                "search_keyword": "gene mutation responsible Triple-A syndrome",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Triple-A syndrome is caused by mutations in the AAAS gene, which encodes the nucleoporin ALADIN. Loss-of-function ALADIN disrupts the nuclear pore complex and specifically impairs the nuclear import of the DNA-repair proteins aprataxin and DNA ligase I. Patient-derived cells or ALADIN-deficient models show diminished nuclear accumulation of these enzymes, linking the AAAS mutation to defective DNA repair capacity."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "1": {
+                "question": "Does that gene mutation result in reduced nuclear import of aprataxin?",
+                "search_keyword": "gene mutation reduced nuclear import aprataxin",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Triple-A (Allgrove) syndrome is caused by loss-of-function mutations in the AAAS gene, which encodes the nuclear-pore-complex protein ALADIN. Several independent studies of fibroblasts and lymphoblasts obtained from patients with AAAS mutations have shown that absence or mis-localisation of ALADIN disrupts normal nuclear import of a subset of repair factors. Among the proteins whose import is markedly reduced are aprataxin (APTX) and DNA ligase I (LIG1), both of which are key components of single-strand break repair and Okazaki-fragment ligation. Immunofluorescence and biochemical fractionation experiments demonstrate that, in ALADIN-deficient cells, APTX and LIG1 accumulate in the cytoplasm and are depleted from the nucleus, leading to increased sensitivity to oxidative or replication stress. Thus the gene defect responsible for Triple-A syndrome indeed results in reduced nuclear import of aprataxin and DNA ligase I, supporting the statement."
+                },
+                "target_answer_type": "correctness"
+            },
+            "2": {
+                "question": "Does that gene mutation also result in reduced nuclear import of DNA ligase I, which is involved in DNA repair?",
+                "search_keyword": "gene mutation reduced nuclear import DNA ligase I",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Triple-A (Allgrove) syndrome is caused by loss-of-function mutations in the AAAS gene, which encodes the nucleoporin ALADIN, a component of the nuclear pore complex. ALADIN is required for efficient nuclear import of specific cargo proteins. Experimental studies of patient-derived fibroblasts and AAAS-knock-down cell lines have shown that absence or malfunction of ALADIN leads to defective nuclear translocation of several DNA-repair factors, most prominently aprataxin (APTX) and DNA ligase I (LIG1). Both proteins normally participate in single-strand break repair and Okazaki fragment ligation, respectively. When ALADIN is mutated, they accumulate in the cytoplasm instead of the nucleus, resulting in reduced DNA repair capacity and increased cellular sensitivity to oxidative stress. Therefore, the gene mutation responsible for Triple-A syndrome indeed causes reduced nuclear import of aprataxin and DNA ligase I."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Triple-A (Allgrove) syndrome is caused by loss-of-function mutations in the AAAS gene, which encodes the nucleoporin ALADIN, a component of the nuclear pore complex. ALADIN is required for efficient nuclear import of specific cargo proteins. Experimental studies of patient-derived fibroblasts and AAAS-knock-down cell lines have shown that absence or malfunction of ALADIN leads to defective nuclear translocation of several DNA-repair factors, most prominently aprataxin (APTX) and DNA ligase I (LIG1). Both proteins normally participate in single-strand break repair and Okazaki fragment ligation, respectively. When ALADIN is mutated, they accumulate in the cytoplasm instead of the nucleus, resulting in reduced DNA repair capacity and increased cellular sensitivity to oxidative stress. Therefore, the gene mutation responsible for Triple-A syndrome indeed causes reduced nuclear import of aprataxin and DNA ligase I.",
+        "short_answer": "yes"
+    }
+}

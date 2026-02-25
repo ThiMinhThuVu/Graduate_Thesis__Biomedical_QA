@@ -1,0 +1,41 @@
+{
+    "QIDX": "307739",
+    "original_question": "Which gene, located on the short arm of the X chromosome and encoding a protein implicated in controlling cell growth and differentiation, is associated with mutations that cause a disease described independently by its namesake doctors in 1966 and 1971 respectively?",
+    "type_q": "sequence",
+    "key_entities": [
+        "X chromosome",
+        "cell growth",
+        "short arm"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene, located on the short arm of the X chromosome and encoding a protein implicated in controlling cell growth and differentiation, is associated with mutations that cause a disease described independently by its namesake doctors in 1966 and 1971 respectively?",
+            "short_answer": "RPS6KA3",
+            "long_answer": "RPS6KA3 lies on Xp22.2-p22.1 and encodes the serine/threonine kinase RSK2, a component of the MAPK/ERK pathway that modulates cell growth and differentiation. Pathogenic mutations in RPS6KA3 give rise to Coffin–Lowry syndrome, a disorder first reported by Dr. G. S. Coffin in 1966 and independently by Dr. R. B. Lowry in 1971."
+        },
+        "0": {
+            "0": {
+                "question": "Which disease is associated with mutations described by doctors in 1966 and 1971?",
+                "search_keyword": "disease mutations doctors 1966 1971",
+                "final_answer": {
+                    "short_answer": "RPS6KA3",
+                    "long_answer": "Mutations in the RPS6KA3 gene, mapped to Xp22.2 on the short arm of the X chromosome, cause Coffin-Lowry syndrome. RPS6KA3 encodes the serine/threonine kinase RSK2, a component of the MAPK signalling cascade that regulates cell growth and differentiation. Coffin (1966) and Lowry (1971) independently described the characteristic clinical picture, and the disorder now bears their names."
+                },
+                "target_answer_type": "disease"
+            },
+            "1": {
+                "question": "Which gene is associated with that disease and is located on the short arm of the X chromosome?",
+                "search_keyword": "gene associated disease short arm X chromosome",
+                "final_answer": {
+                    "short_answer": "RPS6KA3",
+                    "long_answer": "RPS6KA3 lies on Xp22.2-p22.1 and encodes the serine/threonine kinase RSK2, a component of the MAPK/ERK pathway that modulates cell growth and differentiation. Pathogenic mutations in RPS6KA3 give rise to Coffin–Lowry syndrome, a disorder first reported by Dr. G. S. Coffin in 1966 and independently by Dr. R. B. Lowry in 1971."
+                },
+                "target_answer_type": "gene"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "RPS6KA3 lies on Xp22.2-p22.1 and encodes the serine/threonine kinase RSK2, a component of the MAPK/ERK pathway that modulates cell growth and differentiation. Pathogenic mutations in RPS6KA3 give rise to Coffin–Lowry syndrome, a disorder first reported by Dr. G. S. Coffin in 1966 and independently by Dr. R. B. Lowry in 1971.",
+        "short_answer": "RPS6KA3"
+    }
+}

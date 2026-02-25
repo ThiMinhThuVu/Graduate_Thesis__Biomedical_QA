@@ -1,0 +1,49 @@
+{
+    "QIDX": "121000",
+    "original_question": "Is one of the subunits of the electron-transferring flavoprotein, which is mutated in individuals with glutaric acidemia type 2, encoded by a gene localized on chromosome 19?",
+    "type_q": "sequence",
+    "key_entities": [
+        "glutaric acidemia type 2, encoded by a gene localized on chromosome 19?",
+        "electron-transferring flavoprotein"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is one of the subunits of the electron-transferring flavoprotein, which is mutated in individuals with glutaric acidemia type 2, encoded by a gene localized on chromosome 19?",
+            "short_answer": "yes",
+            "long_answer": "Electron-transferring flavoprotein (ETF) is a mitochondrial heterodimer composed of an α-subunit and a β-subunit. Mutations in either subunit cause multiple-acyl-CoA dehydrogenase deficiency, also called glutaric acidemia type II. The gene for the ETF β-subunit (ETFB) has been mapped cytogenetically to chromosome 19q13.3, whereas the α-subunit gene (ETFA) is on chromosome 15q24-q25. Because the β-subunit gene is indeed located on chromosome 19, the statement that one of the ETF subunits mutated in glutaric acidemia type II is encoded by a gene on chromosome 19 is correct."
+        },
+        "0": {
+            "0": {
+                "question": "Which subunit of the electron-transferring flavoprotein is mutated in individuals with glutaric acidemia type 2?",
+                "search_keyword": "subunit electron-transferring flavoprotein glutaric acidemia type 2",
+                "final_answer": {
+                    "short_answer": "ETFB",
+                    "long_answer": "Electron-transferring flavoprotein is a heterodimer composed of α (ETFA) and β (ETFB) subunits. The ETFB gene, which encodes the β-subunit mutated in many patients with glutaric acidemia type II (multiple acyl-CoA dehydrogenase deficiency), has been precisely mapped to chromosome 19q13.3. Thus, one of the ETF subunits is indeed encoded by a gene located on chromosome 19."
+                },
+                "target_answer_type": "subunit"
+            },
+            "1": {
+                "question": "Which gene encodes that subunit of the electron-transferring flavoprotein?",
+                "search_keyword": "gene encodes subunit electron-transferring flavoprotein",
+                "final_answer": {
+                    "short_answer": "ETFB",
+                    "long_answer": "Electron-transferring flavoprotein consists of α (ETFA) and β (ETFB) subunits. Pathogenic mutations in either subunit cause glutaric acidemia type 2. The gene for the β-subunit, ETFB, is mapped to chromosome 19 (19q13), confirming that one of the mutated subunits is indeed encoded on chromosome 19."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "Is that gene localized on chromosome 19?",
+                "search_keyword": "gene location chromosome 19",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Electron-transferring flavoprotein (ETF) is a mitochondrial heterodimer composed of an α-subunit and a β-subunit. Mutations in either subunit cause multiple-acyl-CoA dehydrogenase deficiency, also called glutaric acidemia type II. The gene for the ETF β-subunit (ETFB) has been mapped cytogenetically to chromosome 19q13.3, whereas the α-subunit gene (ETFA) is on chromosome 15q24-q25. Because the β-subunit gene is indeed located on chromosome 19, the statement that one of the ETF subunits mutated in glutaric acidemia type II is encoded by a gene on chromosome 19 is correct."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Electron-transferring flavoprotein (ETF) is a mitochondrial heterodimer composed of an α-subunit and a β-subunit. Mutations in either subunit cause multiple-acyl-CoA dehydrogenase deficiency, also called glutaric acidemia type II. The gene for the ETF β-subunit (ETFB) has been mapped cytogenetically to chromosome 19q13.3, whereas the α-subunit gene (ETFA) is on chromosome 15q24-q25. Because the β-subunit gene is indeed located on chromosome 19, the statement that one of the ETF subunits mutated in glutaric acidemia type II is encoded by a gene on chromosome 19 is correct.",
+        "short_answer": "yes"
+    }
+}

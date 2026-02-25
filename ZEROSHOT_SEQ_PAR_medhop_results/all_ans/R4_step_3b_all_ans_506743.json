@@ -1,0 +1,37 @@
+{
+    "QIDX": "506743",
+    "original_question": "Are the genes most commonly associated with Maffucci syndrome located on chromosome 2 and 13?",
+    "type_q": "sequence",
+    "key_entities": [],
+    "1": {
+        "final_qi": {
+            "question": "Are the genes most commonly associated with Maffucci syndrome located on chromosome 2 and 13?",
+            "short_answer": "Chromosomes 2 and 15",
+            "long_answer": "Maffucci syndrome is most frequently caused by somatic gain-of-function mutations in the isocitrate dehydrogenase genes IDH1 and IDH2. IDH1 is located on chromosome 2q34, while IDH2 resides on chromosome 15q26.1. There is no major gene for the disorder on chromosome 13, so the commonly implicated genes are on chromosomes 2 and 15, not 2 and 13."
+        },
+        "0": {
+            "0": {
+                "question": "Which genes are most commonly associated with Maffucci syndrome?",
+                "search_keyword": "genes associated Maffucci syndrome",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "Maffucci syndrome is most often caused by post-zygotic somatic mutations in the IDH1 gene on chromosome 2q33–34 and, less commonly, in the IDH2 gene on chromosome 15q26. It is not associated with genes on chromosome 13."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosomes are those genes located?",
+                "search_keyword": "chromosome location genes Maffucci syndrome",
+                "final_answer": {
+                    "short_answer": "Chromosomes 2 and 15",
+                    "long_answer": "Maffucci syndrome is most frequently caused by somatic gain-of-function mutations in the isocitrate dehydrogenase genes IDH1 and IDH2. IDH1 is located on chromosome 2q34, while IDH2 resides on chromosome 15q26.1. There is no major gene for the disorder on chromosome 13, so the commonly implicated genes are on chromosomes 2 and 15, not 2 and 13."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Maffucci syndrome is most frequently caused by somatic gain-of-function mutations in the isocitrate dehydrogenase genes IDH1 and IDH2. IDH1 is located on chromosome 2q34, while IDH2 resides on chromosome 15q26.1. There is no major gene for the disorder on chromosome 13, so the commonly implicated genes are on chromosomes 2 and 15, not 2 and 13.",
+        "short_answer": "Chromosomes 2 and 15"
+    }
+}

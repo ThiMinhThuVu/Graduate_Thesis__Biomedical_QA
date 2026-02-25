@@ -1,0 +1,40 @@
+{
+    "QIDX": "623929",
+    "original_question": "Does the gene associated with Papillon–Lefèvre syndrome (PLS) catalyze the excision of dipeptides from the C-terminus of proteins and peptides?",
+    "type_q": "sequence",
+    "key_entities": [
+        "dipeptides",
+        "C-terminus"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Does the gene associated with Papillon–Lefèvre syndrome (PLS) catalyze the excision of dipeptides from the C-terminus of proteins and peptides?",
+            "short_answer": "no",
+            "long_answer": "Papillon–Lefèvre syndrome is caused by loss-of-function mutations in the CTSC gene, which encodes the lysosomal cysteine protease cathepsin C (also called dipeptidyl-peptidase I). Cathepsin C is an exopeptidase that sequentially removes dipeptides from the free N-terminus of proteins and peptides. Its enzymatic activity is therefore N-terminal dipeptidyl peptidase activity, not C-terminal cleavage. Because the gene product does not excise dipeptides from the C-terminus, the statement is incorrect."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with Papillon–Lefèvre syndrome (PLS)?",
+                "search_keyword": "gene associated Papillon–Lefèvre syndrome",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "Papillon–Lefèvre syndrome is caused by mutations in the CTSC gene, which encodes cathepsin C (also called dipeptidyl-peptidase I). Cathepsin C is an exo-cysteine protease that sequentially removes dipeptides from the free N-terminus—not the C-terminus—of proteins and peptides. Therefore, the gene product does not catalyze excision of dipeptides from the C-terminus."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Does that gene catalyze the excision of dipeptides from the C-terminus of proteins and peptides?",
+                "search_keyword": "gene catalyze excision dipeptides C-terminus proteins peptides",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Papillon–Lefèvre syndrome is caused by loss-of-function mutations in the CTSC gene, which encodes the lysosomal cysteine protease cathepsin C (also called dipeptidyl-peptidase I). Cathepsin C is an exopeptidase that sequentially removes dipeptides from the free N-terminus of proteins and peptides. Its enzymatic activity is therefore N-terminal dipeptidyl peptidase activity, not C-terminal cleavage. Because the gene product does not excise dipeptides from the C-terminus, the statement is incorrect."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Papillon–Lefèvre syndrome is caused by loss-of-function mutations in the CTSC gene, which encodes the lysosomal cysteine protease cathepsin C (also called dipeptidyl-peptidase I). Cathepsin C is an exopeptidase that sequentially removes dipeptides from the free N-terminus of proteins and peptides. Its enzymatic activity is therefore N-terminal dipeptidyl peptidase activity, not C-terminal cleavage. Because the gene product does not excise dipeptides from the C-terminus, the statement is incorrect.",
+        "short_answer": "no"
+    }
+}

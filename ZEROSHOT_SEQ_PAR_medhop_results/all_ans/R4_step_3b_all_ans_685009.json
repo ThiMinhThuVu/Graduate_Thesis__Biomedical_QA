@@ -1,0 +1,40 @@
+{
+    "QIDX": "685009",
+    "original_question": "Which gene is mutated in the autosomal recessive disease lipoid proteinosis, characterized by symmetrical calcifications in the medial temporal lobes?",
+    "type_q": "sequence",
+    "key_entities": [
+        "autosomal recessive disease lipoid proteinosis",
+        "medial temporal lobes"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene is mutated in the autosomal recessive disease lipoid proteinosis, characterized by symmetrical calcifications in the medial temporal lobes?",
+            "short_answer": "ECM1",
+            "long_answer": "Lipoid proteinosis (Urbach–Wiethe disease) is an autosomal-recessive disorder caused by loss-of-function mutations in the ECM1 (extracellular matrix protein 1) gene on chromosome 1q21. Defective ECM1 disrupts extracellular matrix formation and cutaneous basement-membrane integrity, leading to the characteristic skin and mucosal thickening and to bilateral, symmetrical calcifications in the medial temporal lobes (especially the amygdala)."
+        },
+        "0": {
+            "0": {
+                "question": "What is the autosomal recessive disease characterized by symmetrical calcifications in the medial temporal lobes?",
+                "search_keyword": "autosomal recessive disease symmetrical calcifications medial temporal lobes",
+                "final_answer": {
+                    "short_answer": "ECM1",
+                    "long_answer": "Lipoid proteinosis (Urbach-Wiethe disease) is an autosomal-recessive disorder caused by loss-of-function mutations in the ECM1 gene, which encodes extracellular matrix protein 1 on chromosome 1q21. Deficiency of ECM1 leads to hyaline material deposition in skin and mucosa and produces the hallmark symmetrical calcifications of the medial temporal lobes (especially the amygdala) seen on neuroimaging."
+                },
+                "target_answer_type": "disease"
+            },
+            "1": {
+                "question": "Which gene is mutated in that disease?",
+                "search_keyword": "gene mutated lipoid proteinosis",
+                "final_answer": {
+                    "short_answer": "ECM1",
+                    "long_answer": "Lipoid proteinosis (Urbach–Wiethe disease) is an autosomal-recessive disorder caused by loss-of-function mutations in the ECM1 (extracellular matrix protein 1) gene on chromosome 1q21. Defective ECM1 disrupts extracellular matrix formation and cutaneous basement-membrane integrity, leading to the characteristic skin and mucosal thickening and to bilateral, symmetrical calcifications in the medial temporal lobes (especially the amygdala)."
+                },
+                "target_answer_type": "gene mutation"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Lipoid proteinosis (Urbach–Wiethe disease) is an autosomal-recessive disorder caused by loss-of-function mutations in the ECM1 (extracellular matrix protein 1) gene on chromosome 1q21. Defective ECM1 disrupts extracellular matrix formation and cutaneous basement-membrane integrity, leading to the characteristic skin and mucosal thickening and to bilateral, symmetrical calcifications in the medial temporal lobes (especially the amygdala).",
+        "short_answer": "ECM1"
+    }
+}

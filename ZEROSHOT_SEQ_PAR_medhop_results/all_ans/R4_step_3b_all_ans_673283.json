@@ -1,0 +1,40 @@
+{
+    "QIDX": "673283",
+    "original_question": "The structural protein affected by Stickler syndrome is the major protein that composes which inner structure of the eye?",
+    "type_q": "sequence",
+    "key_entities": [
+        "inner structure of the eye",
+        "structural protein"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "The structural protein affected by Stickler syndrome is the major protein that composes which inner structure of the eye?",
+            "short_answer": "Vitreous humor",
+            "long_answer": "Stickler syndrome is usually caused by mutations in the COL2A1 gene that encodes type II collagen. Type II collagen is the principal structural protein of the eye’s vitreous body (vitreous humor); disruption of this collagen explains the vitreous abnormalities and retinal detachments characteristic of the disorder."
+        },
+        "0": {
+            "0": {
+                "question": "Which structural protein is affected by Stickler syndrome?",
+                "search_keyword": "structural protein affected by Stickler syndrome",
+                "final_answer": {
+                    "short_answer": "Vitreous humor",
+                    "long_answer": "Stickler syndrome is caused by mutations in collagen genes, especially COL2A1 encoding type II collagen. Type II collagen is the principal structural protein of the vitreous humor (the vitreous body) within the eye, giving this gel-like inner ocular structure its form and stability."
+                },
+                "target_answer_type": "protein"
+            },
+            "1": {
+                "question": "What is the major protein that composes the inner structure of the eye?",
+                "search_keyword": "major protein inner structure of the eye",
+                "final_answer": {
+                    "short_answer": "Vitreous humor",
+                    "long_answer": "Stickler syndrome is usually caused by mutations in the COL2A1 gene that encodes type II collagen. Type II collagen is the principal structural protein of the eye’s vitreous body (vitreous humor); disruption of this collagen explains the vitreous abnormalities and retinal detachments characteristic of the disorder."
+                },
+                "target_answer_type": "protein"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Stickler syndrome is usually caused by mutations in the COL2A1 gene that encodes type II collagen. Type II collagen is the principal structural protein of the eye’s vitreous body (vitreous humor); disruption of this collagen explains the vitreous abnormalities and retinal detachments characteristic of the disorder.",
+        "short_answer": "Vitreous humor"
+    }
+}

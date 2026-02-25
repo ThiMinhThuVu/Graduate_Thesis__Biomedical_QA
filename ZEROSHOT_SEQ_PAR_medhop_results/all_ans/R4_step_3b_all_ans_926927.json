@@ -1,0 +1,41 @@
+{
+    "QIDX": "926927",
+    "original_question": "On which chromosome is the ryanodine receptor gene which mediates calcium release in cardiac muscle and can cause catecholaminergic polymorphic ventricular tachycardia when mutated?",
+    "type_q": "sequence",
+    "key_entities": [
+        "ryanodine receptor gene",
+        "calcium release",
+        "cardiac muscle"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the ryanodine receptor gene which mediates calcium release in cardiac muscle and can cause catecholaminergic polymorphic ventricular tachycardia when mutated?",
+            "short_answer": "Chromosome 1",
+            "long_answer": "The cardiac ryanodine receptor gene (RYR2) lies on chromosome 1 (band 1q43). Mutations in RYR2 disrupt calcium release from the sarcoplasmic reticulum in cardiomyocytes, predisposing to catecholaminergic polymorphic ventricular tachycardia."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene encodes the ryanodine receptor that mediates calcium release in cardiac muscle?",
+                "search_keyword": "ryanodine receptor gene calcium release cardiac muscle",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "The ryanodine receptor type-2 gene (RYR2), which controls sarcoplasmic-reticulum calcium release in cardiac muscle and whose mutations lead to catecholaminergic polymorphic ventricular tachycardia, is located on human chromosome 1 (cytogenetic band 1q43)."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that ryanodine receptor gene located?",
+                "search_keyword": "chromosome location ryanodine receptor gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "The cardiac ryanodine receptor gene (RYR2) lies on chromosome 1 (band 1q43). Mutations in RYR2 disrupt calcium release from the sarcoplasmic reticulum in cardiomyocytes, predisposing to catecholaminergic polymorphic ventricular tachycardia."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The cardiac ryanodine receptor gene (RYR2) lies on chromosome 1 (band 1q43). Mutations in RYR2 disrupt calcium release from the sarcoplasmic reticulum in cardiomyocytes, predisposing to catecholaminergic polymorphic ventricular tachycardia.",
+        "short_answer": "Chromosome 1"
+    }
+}

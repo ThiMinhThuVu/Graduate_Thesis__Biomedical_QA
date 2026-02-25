@@ -1,0 +1,42 @@
+{
+    "QIDX": "689083",
+    "original_question": "What rare hereditary sphingolipidosis results in the accumulation of the same compound that serves as the binding site for the toxin produced by a bacteria first described by Félix-Archimède Pouchet in 1849 as some kind of protozoa?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Félix-Archimède Pouchet",
+        "sphingolipidosis",
+        "binding site",
+        "toxin"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What rare hereditary sphingolipidosis results in the accumulation of the same compound that serves as the binding site for the toxin produced by a bacteria first described by Félix-Archimède Pouchet in 1849 as some kind of protozoa?",
+            "short_answer": "GM1 gangliosidosis",
+            "long_answer": "Vibrio cholerae, first reported by Félix-Archimède Pouchet in 1849 as a protozoan-like organism, produces cholera toxin whose cell-surface receptor is the ganglioside GM1.  In the rare hereditary sphingolipidosis GM1 gangliosidosis, deficiency of lysosomal β-galactosidase causes pathological accumulation of this same GM1 ganglioside in tissues.  Thus, GM1 gangliosidosis is the disease characterized by buildup of the molecule that also serves as the binding site for cholera toxin."
+        },
+        "0": {
+            "0": {
+                "question": "What rare hereditary sphingolipidosis results in the accumulation of a compound that serves as the binding site for a toxin produced by a bacteria?",
+                "search_keyword": "rare hereditary sphingolipidosis accumulation compound binding site toxin bacteria",
+                "final_answer": {
+                    "short_answer": "GM1 gangliosidosis",
+                    "long_answer": "GM1 gangliosidosis is a rare, autosomal-recessive sphingolipidosis caused by β-galactosidase deficiency. The enzymatic block leads to lysosomal accumulation of the ganglioside GM1. GM1 ganglioside is the high-affinity receptor on intestinal epithelial cells for cholera toxin produced by Vibrio cholerae—the bacterium that Félix-Archimède Pouchet misidentified as a protozoan in 1849. Thus the same compound that builds up in GM1 gangliosidosis serves as the binding site for the cholera toxin."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Which bacteria was first described by Félix-Archimède Pouchet in 1849 as some kind of protozoa?",
+                "search_keyword": "bacteria Félix-Archimède Pouchet 1849 protozoa",
+                "final_answer": {
+                    "short_answer": "GM1 gangliosidosis",
+                    "long_answer": "Vibrio cholerae, first reported by Félix-Archimède Pouchet in 1849 as a protozoan-like organism, produces cholera toxin whose cell-surface receptor is the ganglioside GM1.  In the rare hereditary sphingolipidosis GM1 gangliosidosis, deficiency of lysosomal β-galactosidase causes pathological accumulation of this same GM1 ganglioside in tissues.  Thus, GM1 gangliosidosis is the disease characterized by buildup of the molecule that also serves as the binding site for cholera toxin."
+                },
+                "target_answer_type": "bacteria"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Vibrio cholerae, first reported by Félix-Archimède Pouchet in 1849 as a protozoan-like organism, produces cholera toxin whose cell-surface receptor is the ganglioside GM1.  In the rare hereditary sphingolipidosis GM1 gangliosidosis, deficiency of lysosomal β-galactosidase causes pathological accumulation of this same GM1 ganglioside in tissues.  Thus, GM1 gangliosidosis is the disease characterized by buildup of the molecule that also serves as the binding site for cholera toxin.",
+        "short_answer": "GM1 gangliosidosis"
+    }
+}

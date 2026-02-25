@@ -1,0 +1,51 @@
+{
+    "QIDX": "426619",
+    "original_question": "Are both Mucolipidosis type I (ML I) and glycogen storage disease type II (Pompe disease) classified as lysosomal storage diseases?",
+    "type_q": "parallel",
+    "key_entities": [
+        "Mucolipidosis type I (ML I) and glycogen storage disease type II",
+        "Are both Mucolipidosis type I (ML I",
+        "Pompe disease",
+        "lysosomal"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is Mucolipidosis type I classified as a lysosomal storage disease?",
+            "short_answer": "yes",
+            "long_answer": "Mucolipidosis type I—also known as sialidosis—is caused by deficiency of the lysosomal enzyme neuraminidase (NEU1). The enzymatic defect leads to intralysosomal accumulation of sialyl-oligosaccharides and related substrates, producing the typical clinical and pathological features of a lysosomal storage disorder. Accordingly, it is universally grouped with other lysosomal storage diseases in standard medical genetics and metabolic-disease classifications."
+        },
+        "0": {
+            "0": {
+                "question": "Is Mucolipidosis type I classified as a lysosomal storage disease?",
+                "search_keyword": "Mucolipidosis type I lysosomal storage disease classification",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Mucolipidosis type I—also known as sialidosis—is caused by deficiency of the lysosomal enzyme neuraminidase (NEU1). The enzymatic defect leads to intralysosomal accumulation of sialyl-oligosaccharides and related substrates, producing the typical clinical and pathological features of a lysosomal storage disorder. Accordingly, it is universally grouped with other lysosomal storage diseases in standard medical genetics and metabolic-disease classifications."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is glycogen storage disease type II (Pompe disease) classified as a lysosomal storage disease?",
+            "short_answer": "yes",
+            "long_answer": "Pompe disease (glycogen storage disease type II) results from inherited deficiency of the lysosomal enzyme acid α-1,4-glucosidase (acid maltase). Because the metabolic defect is located in a lysosomal hydrolase and leads to intralysosomal accumulation of undegraded substrate (glycogen), it meets the defining criteria for a lysosomal storage disorder. In textbooks and authoritative reviews, Pompe disease is routinely listed alongside Gaucher, Fabry, Niemann-Pick, and other classic lysosomal storage diseases. Therefore, the classification of glycogen storage disease type II as a lysosomal storage disease is scientifically correct and consistent with established biomedical consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Is glycogen storage disease type II (Pompe disease) classified as a lysosomal storage disease?",
+                "search_keyword": "glycogen storage disease type II Pompe disease lysosomal storage disease classification",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Pompe disease (glycogen storage disease type II) results from inherited deficiency of the lysosomal enzyme acid α-1,4-glucosidase (acid maltase). Because the metabolic defect is located in a lysosomal hydrolase and leads to intralysosomal accumulation of undegraded substrate (glycogen), it meets the defining criteria for a lysosomal storage disorder. In textbooks and authoritative reviews, Pompe disease is routinely listed alongside Gaucher, Fabry, Niemann-Pick, and other classic lysosomal storage diseases. Therefore, the classification of glycogen storage disease type II as a lysosomal storage disease is scientifically correct and consistent with established biomedical consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The provided information states that Mucolipidosis type I is classified as a lysosomal storage disease due to a deficiency of lysosomal neuraminidase (NEU1), which causes accumulation of sialyl-oligosaccharides. It also confirms that glycogen storage disease type II (Pompe disease) is classified as a lysosomal storage disease because the deficiency of acid α-1,4-glucosidase results in lysosomal glycogen accumulation. Both diseases are included in standard lysosomal storage disorder classifications.",
+        "short_answer": "yes"
+    }
+}

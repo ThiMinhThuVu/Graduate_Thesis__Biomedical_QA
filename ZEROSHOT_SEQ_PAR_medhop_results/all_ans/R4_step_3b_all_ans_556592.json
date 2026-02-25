@@ -1,0 +1,51 @@
+{
+    "QIDX": "556592",
+    "original_question": "Is it false to say that primary hyperparathyroidism leads to elevated calcium levels, which can activate trypsinogen in the pancreas and cause pancreatitis?",
+    "type_q": "sequence",
+    "key_entities": [
+        "primary hyperparathyroidism",
+        "calcium levels",
+        "pancreatitis",
+        "trypsinogen"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is it false to say that primary hyperparathyroidism leads to elevated calcium levels, which can activate trypsinogen in the pancreas and cause pancreatitis?",
+            "short_answer": "No",
+            "long_answer": "Primary hyperparathyroidism produces sustained hypercalcaemia, and hypercalcaemia is an established, though uncommon, cause of acute pancreatitis. Experimental and clinical data show that excess calcium in pancreatic acinar cells can precipitate premature activation of trypsinogen to trypsin, initiating pancreatic autodigestion and inflammation. Therefore the statement that elevated calcium from primary hyperparathyroidism can activate trypsinogen and lead to pancreatitis is accurate, not false."
+        },
+        "0": {
+            "0": {
+                "question": "What is primary hyperparathyroidism and how does it affect calcium levels?",
+                "search_keyword": "primary hyperparathyroidism elevated calcium levels",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "Primary hyperparathyroidism characteristically produces hypercalcaemia. Excess extracellular calcium can enter pancreatic acinar cells and promote premature conversion of trypsinogen to trypsin, triggering autodigestion and acute pancreatitis. Although this complication is uncommon, the causal link is well documented in clinical and experimental studies, so the statement is accurate rather than false."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "How can elevated calcium levels activate trypsinogen in the pancreas?",
+                "search_keyword": "elevated calcium activate trypsinogen pancreas",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "The statement is true: primary hyperparathyroidism produces persistent hypercalcaemia, and excess calcium inside pancreatic acinar cells can prematurely convert trypsinogen to trypsin, initiating autodigestion and acute pancreatitis. Hypercalcaemia-induced pancreatitis, though uncommon, is a recognised complication of primary hyperparathyroidism."
+                },
+                "target_answer_type": "mechanism"
+            },
+            "2": {
+                "question": "What is the relationship between activated trypsinogen and pancreatitis?",
+                "search_keyword": "activated trypsinogen cause pancreatitis",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "Primary hyperparathyroidism produces sustained hypercalcaemia, and hypercalcaemia is an established, though uncommon, cause of acute pancreatitis. Experimental and clinical data show that excess calcium in pancreatic acinar cells can precipitate premature activation of trypsinogen to trypsin, initiating pancreatic autodigestion and inflammation. Therefore the statement that elevated calcium from primary hyperparathyroidism can activate trypsinogen and lead to pancreatitis is accurate, not false."
+                },
+                "target_answer_type": "relationship"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Primary hyperparathyroidism produces sustained hypercalcaemia, and hypercalcaemia is an established, though uncommon, cause of acute pancreatitis. Experimental and clinical data show that excess calcium in pancreatic acinar cells can precipitate premature activation of trypsinogen to trypsin, initiating pancreatic autodigestion and inflammation. Therefore the statement that elevated calcium from primary hyperparathyroidism can activate trypsinogen and lead to pancreatitis is accurate, not false.",
+        "short_answer": "No"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "QIDX": "286064",
+    "original_question": "What disease is caused by mutations in two genes that prevent the proper reabsorption of amino acids, leading to their accumulation in urine and the formation of kidney stones?",
+    "type_q": "sequence",
+    "key_entities": [
+        "kidney stones",
+        "amino acids"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What disease is caused by mutations in two genes that prevent the proper reabsorption of amino acids, leading to their accumulation in urine and the formation of kidney stones?",
+            "short_answer": "Cystinuria",
+            "long_answer": "Cystinuria is an inherited renal tubular disorder caused by mutations in either the SLC3A1 or SLC7A9 genes. These mutations disrupt the transporter responsible for reabsorbing dibasic amino acids—especially cystine—in the proximal renal tubule. As a result, cystine accumulates in the urine where it precipitates, leading to recurrent cystine kidney stones."
+        },
+        "0": {
+            "0": {
+                "question": "What are the two genes that, when mutated, prevent the proper reabsorption of amino acids?",
+                "search_keyword": "genes mutations prevent reabsorption amino acids",
+                "final_answer": {
+                    "short_answer": "Cystinuria",
+                    "long_answer": "Cystinuria is an inherited disorder caused by mutations in the SLC3A1 and SLC7A9 genes, which encode subunits of the renal amino-acid transporter responsible for reabsorbing cystine and other dibasic amino acids in the proximal tubule. Loss of transporter function allows these amino acids—especially the poorly soluble cystine—to accumulate in urine, where cystine precipitates into stones, leading to recurrent kidney stones characteristic of the disease."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "What disease is caused by mutations in those two genes that lead to amino acid accumulation in urine and kidney stones?",
+                "search_keyword": "disease caused by amino acid accumulation kidney stones",
+                "final_answer": {
+                    "short_answer": "Cystinuria",
+                    "long_answer": "Cystinuria is an inherited renal tubular disorder caused by mutations in either the SLC3A1 or SLC7A9 genes. These mutations disrupt the transporter responsible for reabsorbing dibasic amino acids—especially cystine—in the proximal renal tubule. As a result, cystine accumulates in the urine where it precipitates, leading to recurrent cystine kidney stones."
+                },
+                "target_answer_type": "disease"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Cystinuria is an inherited renal tubular disorder caused by mutations in either the SLC3A1 or SLC7A9 genes. These mutations disrupt the transporter responsible for reabsorbing dibasic amino acids—especially cystine—in the proximal renal tubule. As a result, cystine accumulates in the urine where it precipitates, leading to recurrent cystine kidney stones.",
+        "short_answer": "Cystinuria"
+    }
+}

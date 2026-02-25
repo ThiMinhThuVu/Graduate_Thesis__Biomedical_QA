@@ -1,0 +1,51 @@
+{
+    "QIDX": "792492",
+    "original_question": "Are the criteria for eosinophil counts in the diagnosis of hypereosinophilic syndrome (HES) and chronic eosinophilic leukemia (CEL) identical?",
+    "type_q": "parallel",
+    "key_entities": [
+        "chronic eosinophilic leukemia",
+        "hypereosinophilic syndrome",
+        "HES",
+        "CEL"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What are the criteria for eosinophil counts in the diagnosis of hypereosinophilic syndrome (HES)?",
+            "short_answer": "Persistent eosinophilia ≥1.5 × 10⁹/L for ≥6 months",
+            "long_answer": "Classical Chusid–criteria for hypereosinophilic syndrome require a sustained peripheral‐blood eosinophil count of at least 1.5 × 10⁹ cells per litre (≈1500 cells/µL) documented on repeated measurements and persisting for six months (or leading to earlier organ damage or death) in the absence of an alternative cause."
+        },
+        "0": {
+            "0": {
+                "question": "What are the criteria for eosinophil counts in the diagnosis of hypereosinophilic syndrome (HES)?",
+                "search_keyword": "eosinophil counts criteria diagnosis hypereosinophilic syndrome HES",
+                "final_answer": {
+                    "short_answer": "Persistent eosinophilia ≥1.5 × 10⁹/L for ≥6 months",
+                    "long_answer": "Classical Chusid–criteria for hypereosinophilic syndrome require a sustained peripheral‐blood eosinophil count of at least 1.5 × 10⁹ cells per litre (≈1500 cells/µL) documented on repeated measurements and persisting for six months (or leading to earlier organ damage or death) in the absence of an alternative cause."
+                },
+                "target_answer_type": "criteria"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What are the criteria for eosinophil counts in the diagnosis of chronic eosinophilic leukemia (CEL)?",
+            "short_answer": "≥1.5 × 10⁹/L eosinophils",
+            "long_answer": "According to WHO criteria, chronic eosinophilic leukemia (CEL) requires a sustained absolute eosinophil count in peripheral blood of at least 1.5 × 10⁹ cells per litre (≈1500 cells/µL), usually documented over time or together with clonal/marrow findings. This quantitative threshold is essential to distinguish CEL from reactive or transient eosinophilia."
+        },
+        "0": {
+            "0": {
+                "question": "What are the criteria for eosinophil counts in the diagnosis of chronic eosinophilic leukemia (CEL)?",
+                "search_keyword": "eosinophil counts criteria diagnosis chronic eosinophilic leukemia CEL",
+                "final_answer": {
+                    "short_answer": "≥1.5 × 10⁹/L eosinophils",
+                    "long_answer": "According to WHO criteria, chronic eosinophilic leukemia (CEL) requires a sustained absolute eosinophil count in peripheral blood of at least 1.5 × 10⁹ cells per litre (≈1500 cells/µL), usually documented over time or together with clonal/marrow findings. This quantitative threshold is essential to distinguish CEL from reactive or transient eosinophilia."
+                },
+                "target_answer_type": "criteria"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "While both HES and CEL require an eosinophil count threshold of ≥1.5 × 10⁹/L, the overall diagnostic criteria are not identical. HES requires the count to be persistent for six months (or accompanied by early organ damage or death) without another cause, whereas CEL usually documents the count over time along with additional clonal or marrow findings. Therefore, the criteria are not the same.",
+        "short_answer": "no"
+    }
+}

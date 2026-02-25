@@ -1,0 +1,49 @@
+{
+    "QIDX": "969689",
+    "original_question": "Are Primary Ciliary Dyskinesia (PCD) and Cystic Fibrosis (CF), both genetic disorders that impair normal mucus clearance from the lungs, associated with the same set of genes?",
+    "type_q": "parallel",
+    "key_entities": [
+        "Are Primary Ciliary Dyskinesia",
+        "PCD"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Are the same set of genes associated with Primary Ciliary Dyskinesia (PCD)?",
+            "short_answer": "no",
+            "long_answer": "Primary Ciliary Dyskinesia (PCD) is a highly genetically heterogeneous disorder. More than 45 different genes—coding for outer- and inner-dynein-arm components, radial-spoke proteins, central-pair apparatus proteins, cytoplasmic dynein assembly factors, and other ciliary structural or regulatory elements—have been shown to cause PCD when biallelic pathogenic variants are present. A given patient or family usually carries mutations in only one of these genes, and different patients commonly have mutations in entirely different genes. Consequently, there is no single or uniform “set of genes” that is always associated with PCD; instead, many different gene defects can lead to the same clinical syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "Are the same set of genes associated with Primary Ciliary Dyskinesia (PCD)?",
+                "search_keyword": "genes associated Primary Ciliary Dyskinesia PCD",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Primary Ciliary Dyskinesia (PCD) is a highly genetically heterogeneous disorder. More than 45 different genes—coding for outer- and inner-dynein-arm components, radial-spoke proteins, central-pair apparatus proteins, cytoplasmic dynein assembly factors, and other ciliary structural or regulatory elements—have been shown to cause PCD when biallelic pathogenic variants are present. A given patient or family usually carries mutations in only one of these genes, and different patients commonly have mutations in entirely different genes. Consequently, there is no single or uniform “set of genes” that is always associated with PCD; instead, many different gene defects can lead to the same clinical syndrome."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Are the same set of genes associated with Cystic Fibrosis (CF)?",
+            "short_answer": "yes",
+            "long_answer": "Cystic Fibrosis is, by definition, a monogenic disorder caused by pathogenic variants in a single gene: CFTR (cystic fibrosis transmembrane conductance regulator) located on chromosome 7q31. More than 2,000 different CFTR mutations have been catalogued worldwide, but they all affect the same gene. While additional “modifier” genes (e.g., TGF-β1, MBL2) can influence disease severity or specific complications, they are not required for a diagnosis of cystic fibrosis. The causal association is therefore consistently with the same gene, CFTR, across all affected individuals and populations."
+        },
+        "0": {
+            "0": {
+                "question": "Are the same set of genes associated with Cystic Fibrosis (CF)?",
+                "search_keyword": "genes associated Cystic Fibrosis CF",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Cystic Fibrosis is, by definition, a monogenic disorder caused by pathogenic variants in a single gene: CFTR (cystic fibrosis transmembrane conductance regulator) located on chromosome 7q31. More than 2,000 different CFTR mutations have been catalogued worldwide, but they all affect the same gene. While additional “modifier” genes (e.g., TGF-β1, MBL2) can influence disease severity or specific complications, they are not required for a diagnosis of cystic fibrosis. The causal association is therefore consistently with the same gene, CFTR, across all affected individuals and populations."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The evidence indicates that Primary Ciliary Dyskinesia (PCD) is caused by mutations in many different genes, making it a genetically heterogeneous disorder, while Cystic Fibrosis (CF) is caused exclusively by mutations in the CFTR gene. Thus, they are not associated with the same set of genes.",
+        "short_answer": "no"
+    }
+}

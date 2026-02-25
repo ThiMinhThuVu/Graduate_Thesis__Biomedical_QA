@@ -113,59 +113,66 @@ def extract_ner_original_q_with_spacy(ext_model_1, ext_model_2, ext_model_3, que
 
 
 if __name__ == "__main__":
-    # import spacy
-     # extractor_model = spacy.load("en_ner_bc5cdr_md")
-    # extractor_model_2 = spacy.load("en_ner_jnlpba_md")
-    # extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
+    import spacy
+    extractor_model = spacy.load("en_ner_bc5cdr_md")
+    extractor_model_2 = spacy.load("en_ner_jnlpba_md")
+    extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
     from tqdm import tqdm
 
     run = 1
     output = {}
-    fileoutput = f'data/ner/LLM/LLM_entity_9000q_{run}.json'
-    data = load_json(r'data\qidx_question_9000.json')
+    fileoutput = f'data/ner/SEQ/spacy_entity_1000q_{run}.json'
+    data = load_json(r'data\metadata_medhop.json')
 
-    # Hoặc cứ dùng enumerate như cũ:
-    for i, (qidx, original_question) in enumerate(tqdm(data.items(), desc="LLM Extracting NER")):
+    # for i, (qidx, original_question) in enumerate(tqdm(data.items(), desc="LLM Extracting NER")):
         
-        # Dừng hẳn khi đã xử lý xong 3000 câu để tiết kiệm thời gian
-        if i >= 3000:
-            break
+    #     # Dừng hẳn khi đã xử lý xong 500 câu để tiết kiệm thời gian
+    #     if i >= 500:
+    #         break
         
-        # Thực hiện trích xuất thực thể
-        ext_entities = extract_bio_entity_from_original_question(original_question)
-        output[qidx] = {
-            'id': qidx,
-            'question': original_question,
-            'extracted_entities': ext_entities
-        }
-
-        # Cứ mỗi 100 câu thì lưu một lần (i+1 vì i bắt đầu từ 0)
-        if (i + 1) % 100 == 0:
-            save_json(output, fileoutput)
-            # Dòng print này giúp bạn theo dõi tiến độ trong console
-            print(f"\n[Checkpoint] Đã lưu {i + 1} câu vào {fileoutput}")
-
-    # Lưu lần cuối để tránh sót những câu lẻ ở cuối (ví dụ câu thứ 3001-3005)
-    save_json(output, fileoutput)
-    print(f'\nFinished! Tổng số câu đã lưu: {len(output.keys())}')
-    print('Đường dẫn file: ', fileoutput)
-
-    # for i, (qidx, original_question) in enumerate(tqdm(data.items(), desc="Extracting NER")):
-    #     # ext_entities = extract_ner_original_q_with_spacy(extractor_model, extractor_model_2, extractor_model_3, original_question)
-    #     # output[qidx] = {
-    #     #     'original_question': original_question,
-    #     #     'entities_q': ext_entities
-    #     # }
-        
-    #     if i > 3000:
-    #         continue
-        
+    #     # Thực hiện trích xuất thực thể
     #     ext_entities = extract_bio_entity_from_original_question(original_question)
     #     output[qidx] = {
     #         'id': qidx,
     #         'question': original_question,
     #         'extracted_entities': ext_entities
     #     }
+
+    #     # Cứ mỗi 100 câu thì lưu một lần (i+1 vì i bắt đầu từ 0)
+    #     if (i + 1) % 100 == 0:
+    #         save_json(output, fileoutput)
+    #         # Dòng print này giúp bạn theo dõi tiến độ trong console
+    #         print(f"\n[Checkpoint] Đã lưu {i + 1} câu vào {fileoutput}")
+
+    # # Lưu lần cuối để tránh sót những câu lẻ ở cuối (ví dụ câu thứ 3001-3005)
+    # save_json(output, fileoutput)
+    # print(f'\nFinished! Tổng số câu đã lưu: {len(output.keys())}')
+    # print('Đường dẫn file: ', fileoutput)
+    seq_ner = load_json(r'data\ner\entity_extraction_1000_seq.json')
+    BASE = "medhop_preprocessing/step1/1"
+    for i, (qidx, item) in enumerate(tqdm(data.items(), desc="Extracting NER")):
+        if item['type_q'] != 'sequence':
+            continue
+        
+        file_seq = f"{BASE}/step_1_{qidx}.json"
+        sample = load_json(file_seq)
+        
+        for step, step_data in sample['0'].items():
+            ID = f"{qidx}|{step}"
+            
+            list_ner = list(seq_ner[ID]["extracted_entities"]["detail"].keys())
+            step_data['key_entity'] = list_ner
+            
+        save_json(sample, file_seq)
+        print(file_seq)
+            # subquestion = step_data['subquestion']
+            # ext_entities = extract_ner_original_q_with_spacy(extractor_model, extractor_model_2, extractor_model_3, subquestion)
+            
+            # output[ID] = {
+            #     'id': ID,
+            #     'question': subquestion,
+            #     'extracted_entities': ext_entities
+            # }
 
     # save_json(output, fileoutput)
     # print('save to file: ', fileoutput)

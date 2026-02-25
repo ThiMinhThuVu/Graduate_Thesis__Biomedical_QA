@@ -1,0 +1,40 @@
+{
+    "QIDX": "717741",
+    "original_question": "Which chromosome contains the HFE gene, responsible for hereditary hemochromatosis type 1?",
+    "type_q": "sequence",
+    "key_entities": [
+        "hereditary hemochromatosis type 1?",
+        "HFE gene"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which chromosome contains the HFE gene, responsible for hereditary hemochromatosis type 1?",
+            "short_answer": "Chromosome 6",
+            "long_answer": "The HFE gene, whose mutations cause autosomal-recessive hereditary hemochromatosis type 1, is located on the short arm of chromosome 6 at cytogenetic band 6p21.3, near the major histocompatibility complex region."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is responsible for hereditary hemochromatosis type 1?",
+                "search_keyword": "gene responsible hereditary hemochromatosis type 1",
+                "final_answer": {
+                    "short_answer": "Chromosome 6",
+                    "long_answer": "The HFE gene, whose mutations cause hereditary hemochromatosis type 1, is located on the short arm of chromosome 6 at band p22.2."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Which chromosome contains that gene?",
+                "search_keyword": "chromosome location HFE gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 6",
+                    "long_answer": "The HFE gene, whose mutations cause autosomal-recessive hereditary hemochromatosis type 1, is located on the short arm of chromosome 6 at cytogenetic band 6p21.3, near the major histocompatibility complex region."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The HFE gene, whose mutations cause autosomal-recessive hereditary hemochromatosis type 1, is located on the short arm of chromosome 6 at cytogenetic band 6p21.3, near the major histocompatibility complex region.",
+        "short_answer": "Chromosome 6"
+    }
+}

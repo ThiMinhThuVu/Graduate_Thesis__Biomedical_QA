@@ -1,0 +1,39 @@
+{
+    "QIDX": "640423",
+    "original_question": "What is the name of the condition caused by mutations in a gene that is also associated with a syndrome where affected individuals tend to be tall and thin, with long arms, legs, fingers, and toes?",
+    "type_q": "sequence",
+    "key_entities": [
+        "tall and thin syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What is the name of the condition caused by mutations in a gene that is also associated with a syndrome where affected individuals tend to be tall and thin, with long arms, legs, fingers, and toes?",
+            "short_answer": "Weill-Marchesani syndrome",
+            "long_answer": "Allelic variants in the FBN1 gene, which encodes the connective-tissue protein fibrillin-1, can cause more than one disorder. While many FBN1 mutations produce Marfan syndrome, whose hallmarks include tall stature and disproportionately long limbs, other mutations in the same gene give rise to Weill-Marchesani syndrome—a distinct condition characterized by short stature, brachydactyly, joint stiffness and microspherophakia. Therefore, the condition produced by mutations in the gene that is also implicated in the tall, thin Marfan phenotype is Weill-Marchesani syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "What is the name of the syndrome where affected individuals tend to be tall and thin, with long arms, legs, fingers, and toes?",
+                "search_keyword": "syndrome tall thin long arms legs fingers toes",
+                "final_answer": {
+                    "short_answer": "Weill-Marchesani syndrome",
+                    "long_answer": "Pathogenic variants in the FBN1 gene, which classically cause Marfan syndrome (tall, thin habitus with long limbs and digits), can also give rise to Weill-Marchesani syndrome. This distinct connective-tissue disorder results from different mutations in the same FBN1 gene and is therefore the condition asked for."
+                },
+                "target_answer_type": "syndrome"
+            },
+            "1": {
+                "question": "What is the name of the condition caused by mutations in a gene associated with that syndrome?",
+                "search_keyword": "condition caused by mutations gene associated syndrome",
+                "final_answer": {
+                    "short_answer": "Weill-Marchesani syndrome",
+                    "long_answer": "Allelic variants in the FBN1 gene, which encodes the connective-tissue protein fibrillin-1, can cause more than one disorder. While many FBN1 mutations produce Marfan syndrome, whose hallmarks include tall stature and disproportionately long limbs, other mutations in the same gene give rise to Weill-Marchesani syndrome—a distinct condition characterized by short stature, brachydactyly, joint stiffness and microspherophakia. Therefore, the condition produced by mutations in the gene that is also implicated in the tall, thin Marfan phenotype is Weill-Marchesani syndrome."
+                },
+                "target_answer_type": "condition"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Allelic variants in the FBN1 gene, which encodes the connective-tissue protein fibrillin-1, can cause more than one disorder. While many FBN1 mutations produce Marfan syndrome, whose hallmarks include tall stature and disproportionately long limbs, other mutations in the same gene give rise to Weill-Marchesani syndrome—a distinct condition characterized by short stature, brachydactyly, joint stiffness and microspherophakia. Therefore, the condition produced by mutations in the gene that is also implicated in the tall, thin Marfan phenotype is Weill-Marchesani syndrome.",
+        "short_answer": "Weill-Marchesani syndrome"
+    }
+}

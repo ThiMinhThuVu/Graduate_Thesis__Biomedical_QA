@@ -1,0 +1,41 @@
+{
+    "QIDX": "314081",
+    "original_question": "Is the gene that is responsible for Jansen's metaphyseal chondrodysplasia a member of the secretin family of G protein-coupled receptors?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Jansen's metaphyseal chondrodysplasia",
+        "G protein-coupled receptors",
+        "secretin family"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is the gene that is responsible for Jansen's metaphyseal chondrodysplasia a member of the secretin family of G protein-coupled receptors?",
+            "short_answer": "yes",
+            "long_answer": "Jansen’s metaphyseal chondrodysplasia is caused by constitutively activating mutations in the parathyroid hormone/parathyroid hormone-related peptide receptor gene (PTH1R). PTH1R is a class B (also called class II) G protein-coupled receptor. Class B GPCRs are collectively referred to as the secretin family because they include the receptors for secretin, glucagon, calcitonin, parathyroid hormone and related peptides. Therefore, the gene responsible for Jansen’s metaphyseal chondrodysplasia encodes a receptor that is indeed a member of the secretin family of GPCRs."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is responsible for Jansen's metaphyseal chondrodysplasia?",
+                "search_keyword": "gene responsible Jansen's metaphyseal chondrodysplasia",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Jansen’s metaphyseal chondrodysplasia is caused by activating mutations in the PTH1R gene, which encodes the parathyroid hormone/parathyroid hormone-related peptide receptor. PTH1R is a class B (secretin family) G protein-coupled receptor; therefore, the disease-causing gene is indeed a member of the secretin family of GPCRs."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Is that gene a member of the secretin family of G protein-coupled receptors?",
+                "search_keyword": "gene member secretin family G protein-coupled receptors",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Jansen’s metaphyseal chondrodysplasia is caused by constitutively activating mutations in the parathyroid hormone/parathyroid hormone-related peptide receptor gene (PTH1R). PTH1R is a class B (also called class II) G protein-coupled receptor. Class B GPCRs are collectively referred to as the secretin family because they include the receptors for secretin, glucagon, calcitonin, parathyroid hormone and related peptides. Therefore, the gene responsible for Jansen’s metaphyseal chondrodysplasia encodes a receptor that is indeed a member of the secretin family of GPCRs."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Jansen’s metaphyseal chondrodysplasia is caused by constitutively activating mutations in the parathyroid hormone/parathyroid hormone-related peptide receptor gene (PTH1R). PTH1R is a class B (also called class II) G protein-coupled receptor. Class B GPCRs are collectively referred to as the secretin family because they include the receptors for secretin, glucagon, calcitonin, parathyroid hormone and related peptides. Therefore, the gene responsible for Jansen’s metaphyseal chondrodysplasia encodes a receptor that is indeed a member of the secretin family of GPCRs.",
+        "short_answer": "yes"
+    }
+}

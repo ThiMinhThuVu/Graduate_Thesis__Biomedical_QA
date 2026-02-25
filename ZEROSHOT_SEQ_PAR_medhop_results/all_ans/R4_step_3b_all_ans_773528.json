@@ -1,0 +1,50 @@
+{
+    "QIDX": "773528",
+    "original_question": "Is microtia, a congenital ear deformity, caused by the same chromosomal abnormality responsible for Down syndrome?",
+    "type_q": "sequence",
+    "key_entities": [
+        "congenital ear deformity",
+        "Down syndrome",
+        "microtia"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is microtia, a congenital ear deformity, caused by the same chromosomal abnormality responsible for Down syndrome?",
+            "short_answer": "no",
+            "long_answer": "Down syndrome results from trisomy of chromosome 21. Microtia, while congenital, is typically sporadic or linked to a variety of other genetic syndromes (e.g., Treacher-Collins, Goldenhar, CHARGE) or environmental factors during early gestation; it is not produced by chromosome-21 trisomy. Therefore the chromosomal abnormality that causes Down syndrome is not the cause of microtia."
+        },
+        "0": {
+            "0": {
+                "question": "What is microtia and what are its causes?",
+                "search_keyword": "microtia congenital ear deformity causes",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "Down syndrome is caused by trisomy 21—an extra copy of chromosome 21—whereas isolated microtia most often arises sporadically or as part of other genetic syndromes and is not linked to trisomy 21. Therefore, the chromosomal abnormality responsible for Down syndrome does not underlie typical cases of microtia."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "What chromosomal abnormality is responsible for Down syndrome?",
+                "search_keyword": "chromosomal abnormality Down syndrome",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "Down syndrome is caused by trisomy 21 (an extra copy of chromosome 21). Microtia, however, is typically sporadic or associated with other genetic or environmental factors (e.g., 22q11.2 deletion, HOXA2 or TCOF1 mutations) and is not linked to trisomy 21. Therefore, the chromosomal abnormality that produces Down syndrome does not cause microtia."
+                },
+                "target_answer_type": "chromosomal abnormality"
+            },
+            "2": {
+                "question": "Is the chromosomal abnormality responsible for Down syndrome the same as the one that causes microtia?",
+                "search_keyword": "chromosomal abnormality microtia Down syndrome comparison",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Down syndrome results from trisomy of chromosome 21. Microtia, while congenital, is typically sporadic or linked to a variety of other genetic syndromes (e.g., Treacher-Collins, Goldenhar, CHARGE) or environmental factors during early gestation; it is not produced by chromosome-21 trisomy. Therefore the chromosomal abnormality that causes Down syndrome is not the cause of microtia."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Down syndrome results from trisomy of chromosome 21. Microtia, while congenital, is typically sporadic or linked to a variety of other genetic syndromes (e.g., Treacher-Collins, Goldenhar, CHARGE) or environmental factors during early gestation; it is not produced by chromosome-21 trisomy. Therefore the chromosomal abnormality that causes Down syndrome is not the cause of microtia.",
+        "short_answer": "no"
+    }
+}

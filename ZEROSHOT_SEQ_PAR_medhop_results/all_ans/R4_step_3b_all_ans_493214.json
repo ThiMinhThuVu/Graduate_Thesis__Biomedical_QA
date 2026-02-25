@@ -1,0 +1,41 @@
+{
+    "QIDX": "493214",
+    "original_question": "Which category of jaundice is commonly caused by a genetic mutation resulting in spherically-shaped red blood cells?",
+    "type_q": "sequence",
+    "key_entities": [
+        "spherically-shaped red blood cells",
+        "genetic mutation",
+        "jaundice"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which category of jaundice is commonly caused by a genetic mutation resulting in spherically-shaped red blood cells?",
+            "short_answer": "Hemolytic jaundice",
+            "long_answer": "A mutation in red-cell membrane proteins causes hereditary spherocytosis, producing fragile, sphere-shaped erythrocytes that are destroyed rapidly in the spleen. The resulting excess unconjugated bilirubin originates before hepatic processing, classifying the jaundice as the pre-hepatic or hemolytic type."
+        },
+        "0": {
+            "0": {
+                "question": "What is the genetic mutation that results in spherically-shaped red blood cells?",
+                "search_keyword": "genetic mutation spherically-shaped red blood cells",
+                "final_answer": {
+                    "short_answer": "Hemolytic jaundice",
+                    "long_answer": "Hereditary spherocytosis is due to mutations in red-cell membrane proteins (e.g., spectrin, ankyrin) that produce spherical erythrocytes prone to splenic destruction. The accelerated breakdown of these red blood cells raises unconjugated bilirubin levels, producing the pre-hepatic form known as hemolytic jaundice."
+                },
+                "target_answer_type": "genetic mutation"
+            },
+            "1": {
+                "question": "Which category of jaundice is commonly caused by that genetic mutation?",
+                "search_keyword": "category of jaundice caused by genetic mutation",
+                "final_answer": {
+                    "short_answer": "Hemolytic jaundice",
+                    "long_answer": "A mutation in red-cell membrane proteins causes hereditary spherocytosis, producing fragile, sphere-shaped erythrocytes that are destroyed rapidly in the spleen. The resulting excess unconjugated bilirubin originates before hepatic processing, classifying the jaundice as the pre-hepatic or hemolytic type."
+                },
+                "target_answer_type": "category"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "A mutation in red-cell membrane proteins causes hereditary spherocytosis, producing fragile, sphere-shaped erythrocytes that are destroyed rapidly in the spleen. The resulting excess unconjugated bilirubin originates before hepatic processing, classifying the jaundice as the pre-hepatic or hemolytic type.",
+        "short_answer": "Hemolytic jaundice"
+    }
+}

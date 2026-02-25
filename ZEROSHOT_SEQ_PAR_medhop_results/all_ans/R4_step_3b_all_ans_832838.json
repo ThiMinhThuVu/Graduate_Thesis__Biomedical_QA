@@ -1,0 +1,39 @@
+{
+    "QIDX": "832838",
+    "original_question": "What is the name of the disease associated with a mutation in a gene on chromosome 17 that encodes secreted signaling proteins, that are implicated in oncogenesis and in several developmental processes, including regulation of cell fate and patterning during embryogenesis?",
+    "type_q": "sequence",
+    "key_entities": [
+        "chromosome 17"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What is the name of the disease associated with a mutation in a gene on chromosome 17 that encodes secreted signaling proteins, that are implicated in oncogenesis and in several developmental processes, including regulation of cell fate and patterning during embryogenesis?",
+            "short_answer": "Tetra-amelia syndrome",
+            "long_answer": "Mutations in the WNT3 gene, located on chromosome 17 and encoding a secreted Wnt signaling protein crucial for cell-fate decisions and embryonic patterning and often implicated in oncogenic pathways, cause the congenital disorder known as tetra-amelia syndrome (absence of all four limbs with additional developmental defects)."
+        },
+        "0": {
+            "0": {
+                "question": "What is the name of the gene located on chromosome 17 that encodes secreted signaling proteins implicated in oncogenesis and developmental processes?",
+                "search_keyword": "gene chromosome 17 encodes secreted signaling proteins oncogenesis developmental processes",
+                "final_answer": {
+                    "short_answer": "Tetra-amelia syndrome",
+                    "long_answer": "Loss-of-function mutations in the WNT3 gene, located on chromosome 17q21, cause Tetra-amelia syndrome. WNT3 encodes a secreted Wnt signaling protein that governs cell fate determination and body patterning during embryogenesis, and aberrations in Wnt signaling are also linked to oncogenesis. Thus, the disease associated with mutation of this chromosome-17 secreted signaling protein gene is Tetra-amelia syndrome."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "What disease is associated with a mutation in that gene?",
+                "search_keyword": "disease associated mutation gene",
+                "final_answer": {
+                    "short_answer": "Tetra-amelia syndrome",
+                    "long_answer": "Mutations in the WNT3 gene, located on chromosome 17 and encoding a secreted Wnt signaling protein crucial for cell-fate decisions and embryonic patterning and often implicated in oncogenic pathways, cause the congenital disorder known as tetra-amelia syndrome (absence of all four limbs with additional developmental defects)."
+                },
+                "target_answer_type": "disease"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Mutations in the WNT3 gene, located on chromosome 17 and encoding a secreted Wnt signaling protein crucial for cell-fate decisions and embryonic patterning and often implicated in oncogenic pathways, cause the congenital disorder known as tetra-amelia syndrome (absence of all four limbs with additional developmental defects).",
+        "short_answer": "Tetra-amelia syndrome"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "QIDX": "215035",
+    "original_question": "Which vitamin is a key factor associated with a syndrome involving temporally graded retrograde amnesia?",
+    "type_q": "sequence",
+    "key_entities": [
+        "temporally graded retrograde amnesia"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which vitamin is a key factor associated with a syndrome involving temporally graded retrograde amnesia?",
+            "short_answer": "Thiamine (vitamin B1)",
+            "long_answer": "Temporally graded retrograde amnesia is a hallmark of Korsakoff’s syndrome, which results from deficiency of thiamine (vitamin B1). Chronic lack of thiamine—most often due to alcoholism or malnutrition—damages diencephalic and hippocampal circuits necessary for memory consolidation, producing severe anterograde amnesia and retrograde amnesia that is worse for recent than for remote events."
+        },
+        "0": {
+            "0": {
+                "question": "Which syndrome is associated with temporally graded retrograde amnesia?",
+                "search_keyword": "syndrome temporally graded retrograde amnesia",
+                "final_answer": {
+                    "short_answer": "Thiamine",
+                    "long_answer": "Deficiency of thiamine (vitamin B1) causes Wernicke–Korsakoff syndrome, a neurological condition characterized by severe anterograde memory loss and temporally graded retrograde amnesia; thus thiamine is the critical vitamin linked to this amnesic syndrome."
+                },
+                "target_answer_type": "syndrome"
+            },
+            "1": {
+                "question": "Which vitamin is a key factor associated with that syndrome?",
+                "search_keyword": "vitamin key factor syndrome",
+                "final_answer": {
+                    "short_answer": "Thiamine (vitamin B1)",
+                    "long_answer": "Temporally graded retrograde amnesia is a hallmark of Korsakoff’s syndrome, which results from deficiency of thiamine (vitamin B1). Chronic lack of thiamine—most often due to alcoholism or malnutrition—damages diencephalic and hippocampal circuits necessary for memory consolidation, producing severe anterograde amnesia and retrograde amnesia that is worse for recent than for remote events."
+                },
+                "target_answer_type": "vitamin"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Temporally graded retrograde amnesia is a hallmark of Korsakoff’s syndrome, which results from deficiency of thiamine (vitamin B1). Chronic lack of thiamine—most often due to alcoholism or malnutrition—damages diencephalic and hippocampal circuits necessary for memory consolidation, producing severe anterograde amnesia and retrograde amnesia that is worse for recent than for remote events.",
+        "short_answer": "Thiamine (vitamin B1)"
+    }
+}

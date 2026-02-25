@@ -1,0 +1,51 @@
+{
+    "QIDX": "662928",
+    "original_question": "Are psittacosis and the disease first identified during the 1976 American Legion convention in Philadelphia both classified as types of atypical pneumonia?",
+    "type_q": "parallel",
+    "key_entities": [
+        "atypical pneumonia",
+        "American Legion",
+        "Philadelphia",
+        "psittacosis"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is psittacosis classified as a type of atypical pneumonia?",
+            "short_answer": "yes",
+            "long_answer": "Psittacosis (ornithosis, “parrot-fever”) is caused by the intracellular bacterium Chlamydia psittaci. Pneumonia produced by Chlamydia species—including C. psittaci, C. pneumoniae, and C. trachomatis—is classically grouped under the heading of “atypical pneumonias” in infectious-disease and pulmonary textbooks. Atypical pneumonias are defined as community-acquired pneumonias caused by pathogens other than the common pyogenic bacteria (e.g., Streptococcus pneumoniae) and that usually present with a different clinical and radiologic pattern. Therefore, psittacosis is indeed classified as a form of atypical pneumonia by established medical consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Is psittacosis classified as a type of atypical pneumonia?",
+                "search_keyword": "psittacosis atypical pneumonia classification",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Psittacosis (ornithosis, “parrot-fever”) is caused by the intracellular bacterium Chlamydia psittaci. Pneumonia produced by Chlamydia species—including C. psittaci, C. pneumoniae, and C. trachomatis—is classically grouped under the heading of “atypical pneumonias” in infectious-disease and pulmonary textbooks. Atypical pneumonias are defined as community-acquired pneumonias caused by pathogens other than the common pyogenic bacteria (e.g., Streptococcus pneumoniae) and that usually present with a different clinical and radiologic pattern. Therefore, psittacosis is indeed classified as a form of atypical pneumonia by established medical consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is the disease first identified during the 1976 American Legion convention in Philadelphia classified as a type of atypical pneumonia?",
+            "short_answer": "yes",
+            "long_answer": "The outbreak that occurred among attendees of the 1976 American Legion convention in Philadelphia led to the discovery of Legionnaires’ disease, caused by the bacterium Legionella pneumophila. Clinically, infections with Legionella species produce a form of community-acquired pneumonia that differs in presentation, epidemiology, and microbiology from the classic “typical” pneumonias caused by organisms such as Streptococcus pneumoniae. For this reason, Legionnaires’ disease has long been placed in the category of “atypical pneumonia” together with pneumonias due to Mycoplasma, Chlamydophila, and certain viruses. This classification is recognized in standard infectious-disease and pulmonary textbooks and clinical guidelines. Hence, the disease first identified at the 1976 convention is indeed classified as an atypical pneumonia."
+        },
+        "0": {
+            "0": {
+                "question": "Is the disease first identified during the 1976 American Legion convention in Philadelphia classified as a type of atypical pneumonia?",
+                "search_keyword": "disease 1976 American Legion convention Philadelphia atypical pneumonia",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "The outbreak that occurred among attendees of the 1976 American Legion convention in Philadelphia led to the discovery of Legionnaires’ disease, caused by the bacterium Legionella pneumophila. Clinically, infections with Legionella species produce a form of community-acquired pneumonia that differs in presentation, epidemiology, and microbiology from the classic “typical” pneumonias caused by organisms such as Streptococcus pneumoniae. For this reason, Legionnaires’ disease has long been placed in the category of “atypical pneumonia” together with pneumonias due to Mycoplasma, Chlamydophila, and certain viruses. This classification is recognized in standard infectious-disease and pulmonary textbooks and clinical guidelines. Hence, the disease first identified at the 1976 convention is indeed classified as an atypical pneumonia."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Both psittacosis and Legionnaires’ disease (the disease first identified during the 1976 American Legion convention in Philadelphia) are classified as atypical pneumonia. Psittacosis is caused by Chlamydia psittaci and is recognized as a form of atypical pneumonia due to its clinical presentation and its nature as an atypical agent. Legionnaires’ disease, caused by Legionella pneumophila, is similarly classified as an atypical pneumonia because of its unique epidemiological and clinical features compared to typical pneumonia caused by common bacteria.",
+        "short_answer": "yes"
+    }
+}

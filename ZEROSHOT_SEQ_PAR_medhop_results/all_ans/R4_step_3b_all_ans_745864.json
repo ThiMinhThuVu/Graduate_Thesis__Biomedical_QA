@@ -1,0 +1,48 @@
+{
+    "QIDX": "745864",
+    "original_question": "Is familial amyloid polyneuropathy caused by mutations in genes located on the same chromosome as the genes associated with Erythropoietic protoporphyria?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Erythropoietic protoporphyria"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is familial amyloid polyneuropathy caused by mutations in genes located on the same chromosome as the genes associated with Erythropoietic protoporphyria?",
+            "short_answer": "yes",
+            "long_answer": "The classical and most common form of familial amyloid polyneuropathy (FAP) is produced by pathogenic variants in the transthyretin (TTR) gene, which is mapped to chromosome 18 (18q12.1).   \n\nErythropoietic protoporphyria (EPP) is most frequently caused by partial deficiency of ferrochelatase, encoded by the FECH gene. The FECH gene is also located on chromosome 18 (18q21.3).  \n\nThus, the principal genes responsible for these two disorders—TTR for FAP and FECH for EPP—reside on the same chromosome (chromosome 18), even though they occupy different loci along that chromosome. Therefore, the statement is in accord with established genetic knowledge."
+        },
+        "0": {
+            "0": {
+                "question": "What are the genes associated with familial amyloid polyneuropathy?",
+                "search_keyword": "genes associated familial amyloid polyneuropathy",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Familial amyloid polyneuropathy is most often caused by mutations in the transthyretin (TTR) gene, which is located on chromosome 18 (18q12.1). Erythropoietic protoporphyria is caused by mutations in the ferrochelatase (FECH) gene, also situated on chromosome 18 (18q21.31). Because both causal genes reside on chromosome 18, the disorders involve genes on the same chromosome."
+                },
+                "target_answer_type": "genes"
+            },
+            "1": {
+                "question": "What are the genes associated with Erythropoietic protoporphyria?",
+                "search_keyword": "genes associated Erythropoietic protoporphyria",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "The classic form of familial amyloid polyneuropathy is due to pathogenic variants in the transthyretin (TTR) gene, which is located on chromosome 18q12.1. Erythropoietic protoporphyria most commonly results from biallelic variants in the ferrochelatase (FECH) gene, situated on chromosome 18q21.3. Because both TTR and FECH reside on chromosome 18, the genes responsible for these two disorders are on the same chromosome."
+                },
+                "target_answer_type": "genes"
+            },
+            "2": {
+                "question": "Are the genes associated with familial amyloid polyneuropathy located on the same chromosome as the genes associated with Erythropoietic protoporphyria?",
+                "search_keyword": "chromosome location genes familial amyloid polyneuropathy Erythropoietic protoporphyria",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "The classical and most common form of familial amyloid polyneuropathy (FAP) is produced by pathogenic variants in the transthyretin (TTR) gene, which is mapped to chromosome 18 (18q12.1).   \n\nErythropoietic protoporphyria (EPP) is most frequently caused by partial deficiency of ferrochelatase, encoded by the FECH gene. The FECH gene is also located on chromosome 18 (18q21.3).  \n\nThus, the principal genes responsible for these two disorders—TTR for FAP and FECH for EPP—reside on the same chromosome (chromosome 18), even though they occupy different loci along that chromosome. Therefore, the statement is in accord with established genetic knowledge."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The classical and most common form of familial amyloid polyneuropathy (FAP) is produced by pathogenic variants in the transthyretin (TTR) gene, which is mapped to chromosome 18 (18q12.1).   \n\nErythropoietic protoporphyria (EPP) is most frequently caused by partial deficiency of ferrochelatase, encoded by the FECH gene. The FECH gene is also located on chromosome 18 (18q21.3).  \n\nThus, the principal genes responsible for these two disorders—TTR for FAP and FECH for EPP—reside on the same chromosome (chromosome 18), even though they occupy different loci along that chromosome. Therefore, the statement is in accord with established genetic knowledge.",
+        "short_answer": "yes"
+    }
+}

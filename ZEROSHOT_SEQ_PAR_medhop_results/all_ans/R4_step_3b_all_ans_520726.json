@@ -1,0 +1,51 @@
+{
+    "QIDX": "520726",
+    "original_question": "Although testosterone is critical for normal sperm production, do men with follicle-stimulating hormone (FSH) insensitivity typically have normal or abnormal testosterone levels?",
+    "type_q": "parallel",
+    "key_entities": [
+        "follicle-stimulating hormone",
+        "testosterone",
+        "sperm",
+        "FSH"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Do men with follicle-stimulating hormone (FSH) insensitivity typically have normal testosterone levels?",
+            "short_answer": "yes",
+            "long_answer": "Follicle-stimulating hormone (FSH) acts mainly on Sertoli cells and is required for normal spermatogenesis, while luteinizing hormone (LH) stimulates Leydig cells to produce testosterone. In genetic or acquired FSH-receptor inactivation (\"FSH insensitivity\") the Sertoli cells cannot respond to circulating FSH. Affected men therefore show impaired or absent spermatogenesis (often oligo- or azoospermia) and low/absent inhibin B, but their Leydig-cell LH pathway remains intact. Because LH secretion and LH receptor function are normal, testosterone production is generally within the normal male range and secondary sexual characteristics develop normally. Numerous case reports and small series of men with inactivating mutations in the FSH receptor or FSH-β subunit document normal serum testosterone levels despite high FSH and marked infertility. Hence, men with FSH insensitivity typically have normal testosterone concentrations."
+        },
+        "0": {
+            "0": {
+                "question": "Do men with follicle-stimulating hormone (FSH) insensitivity typically have normal testosterone levels?",
+                "search_keyword": "men follicle-stimulating hormone insensitivity normal testosterone levels",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Follicle-stimulating hormone (FSH) acts mainly on Sertoli cells and is required for normal spermatogenesis, while luteinizing hormone (LH) stimulates Leydig cells to produce testosterone. In genetic or acquired FSH-receptor inactivation (\"FSH insensitivity\") the Sertoli cells cannot respond to circulating FSH. Affected men therefore show impaired or absent spermatogenesis (often oligo- or azoospermia) and low/absent inhibin B, but their Leydig-cell LH pathway remains intact. Because LH secretion and LH receptor function are normal, testosterone production is generally within the normal male range and secondary sexual characteristics develop normally. Numerous case reports and small series of men with inactivating mutations in the FSH receptor or FSH-β subunit document normal serum testosterone levels despite high FSH and marked infertility. Hence, men with FSH insensitivity typically have normal testosterone concentrations."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Do men without follicle-stimulating hormone (FSH) insensitivity typically have normal testosterone levels?",
+            "short_answer": "yes",
+            "long_answer": "In adult males, circulating testosterone concentrations are regulated primarily by luteinizing hormone (LH) acting on Leydig cells, not by follicle-stimulating hormone (FSH). Men who have normal sensitivity to FSH (i.e., they do not have FSH-receptor mutations or other causes of FSH resistance) generally exhibit normal pituitary–gonadal feedback, with LH driving normal testosterone synthesis. Clinical and genetic studies show that even men who DO have isolated FSH-receptor defects usually maintain normal serum testosterone; therefore, men without such defects are expected to have normal testosterone levels under usual physiological conditions. Thus, the statement is consistent with established endocrinology knowledge."
+        },
+        "0": {
+            "0": {
+                "question": "Do men without follicle-stimulating hormone (FSH) insensitivity typically have normal testosterone levels?",
+                "search_keyword": "men follicle-stimulating hormone insensitivity normal testosterone levels",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "In adult males, circulating testosterone concentrations are regulated primarily by luteinizing hormone (LH) acting on Leydig cells, not by follicle-stimulating hormone (FSH). Men who have normal sensitivity to FSH (i.e., they do not have FSH-receptor mutations or other causes of FSH resistance) generally exhibit normal pituitary–gonadal feedback, with LH driving normal testosterone synthesis. Clinical and genetic studies show that even men who DO have isolated FSH-receptor defects usually maintain normal serum testosterone; therefore, men without such defects are expected to have normal testosterone levels under usual physiological conditions. Thus, the statement is consistent with established endocrinology knowledge."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Men with FSH insensitivity have Sertoli cell dysfunction affecting spermatogenesis but their Leydig cells remain intact and are stimulated normally by LH, resulting in normal testosterone production. This is confirmed by several case reports and studies showing normal testosterone concentrations despite impaired spermatogenesis.",
+        "short_answer": "normal"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "QIDX": "976949",
+    "original_question": "On which chromosome is the gene that encodes the major plasma protein produced by the yolk sac which is used to screen for spina bifida, located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "major plasma protein",
+        "spina bifida",
+        "yolk sac"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene that encodes the major plasma protein produced by the yolk sac which is used to screen for spina bifida, located?",
+            "short_answer": "Chromosome 4",
+            "long_answer": "The major yolk-sac–derived plasma protein used in prenatal screening for neural-tube defects such as spina bifida is α-fetoprotein (AFP). The human AFP gene is located on chromosome 4, specifically at band 4q13.3, within the albumin gene cluster. Hence, the chromosome carrying the AFP gene is chromosome 4."
+        },
+        "0": {
+            "0": {
+                "question": "Which major plasma protein is produced by the yolk sac and used to screen for spina bifida?",
+                "search_keyword": "major plasma protein yolk sac spina bifida screening",
+                "final_answer": {
+                    "short_answer": "Chromosome 4",
+                    "long_answer": "Alpha-fetoprotein (AFP) is the major plasma protein synthesized by the fetal yolk sac and liver, and elevated maternal serum AFP levels are used in prenatal screening for neural-tube defects such as spina bifida. The AFP gene that encodes this protein is mapped to the long arm of chromosome 4 (4q13.3)."
+                },
+                "target_answer_type": "protein"
+            },
+            "1": {
+                "question": "Which gene encodes that major plasma protein?",
+                "search_keyword": "gene encodes major plasma protein",
+                "final_answer": {
+                    "short_answer": "Chromosome 4",
+                    "long_answer": "The gene that encodes α-fetoprotein (AFP)—the major plasma protein synthesized by the fetal yolk sac and whose serum level is measured to screen for neural-tube defects such as spina bifida—is located on human chromosome 4 (band 4q13.3)."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 4",
+                    "long_answer": "The major yolk-sac–derived plasma protein used in prenatal screening for neural-tube defects such as spina bifida is α-fetoprotein (AFP). The human AFP gene is located on chromosome 4, specifically at band 4q13.3, within the albumin gene cluster. Hence, the chromosome carrying the AFP gene is chromosome 4."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The major yolk-sac–derived plasma protein used in prenatal screening for neural-tube defects such as spina bifida is α-fetoprotein (AFP). The human AFP gene is located on chromosome 4, specifically at band 4q13.3, within the albumin gene cluster. Hence, the chromosome carrying the AFP gene is chromosome 4.",
+        "short_answer": "Chromosome 4"
+    }
+}

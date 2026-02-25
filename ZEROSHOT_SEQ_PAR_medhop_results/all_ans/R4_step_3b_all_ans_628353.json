@@ -1,0 +1,40 @@
+{
+    "QIDX": "628353",
+    "original_question": "Which subunit of ATP synthase is encoded by the gene associated with NARP syndrome?",
+    "type_q": "sequence",
+    "key_entities": [
+        "NARP syndrome",
+        "ATP synthase"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which subunit of ATP synthase is encoded by the gene associated with NARP syndrome?",
+            "short_answer": "ATP synthase subunit 6",
+            "long_answer": "NARP (Neuropathy, Ataxia, and Retinitis Pigmentosa) syndrome is caused by pathogenic variants in the mitochondrial gene MT-ATP6. MT-ATP6 encodes the a-subunit (also called subunit 6) of the Fo sector of mitochondrial ATP synthase (complex V), which is essential for proton translocation and ATP production."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with NARP syndrome?",
+                "search_keyword": "gene associated NARP syndrome",
+                "final_answer": {
+                    "short_answer": "ATP synthase subunit a",
+                    "long_answer": "NARP (neuropathy, ataxia and retinitis pigmentosa) results from pathogenic variants in the mitochondrial gene MT-ATP6 (also called ATP6). This gene encodes ATP synthase subunit a, the proton-conducting component of the Fo sector of mitochondrial ATP synthase (complex V). Mutations in MT-ATP6 impair proton translocation through subunit a, compromising ATP production and leading to the clinical features of NARP."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "Which subunit of ATP synthase is encoded by that gene?",
+                "search_keyword": "subunit ATP synthase encoded by gene",
+                "final_answer": {
+                    "short_answer": "ATP synthase subunit 6",
+                    "long_answer": "NARP (Neuropathy, Ataxia, and Retinitis Pigmentosa) syndrome is caused by pathogenic variants in the mitochondrial gene MT-ATP6. MT-ATP6 encodes the a-subunit (also called subunit 6) of the Fo sector of mitochondrial ATP synthase (complex V), which is essential for proton translocation and ATP production."
+                },
+                "target_answer_type": "subunit"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "NARP (Neuropathy, Ataxia, and Retinitis Pigmentosa) syndrome is caused by pathogenic variants in the mitochondrial gene MT-ATP6. MT-ATP6 encodes the a-subunit (also called subunit 6) of the Fo sector of mitochondrial ATP synthase (complex V), which is essential for proton translocation and ATP production.",
+        "short_answer": "ATP synthase subunit 6"
+    }
+}

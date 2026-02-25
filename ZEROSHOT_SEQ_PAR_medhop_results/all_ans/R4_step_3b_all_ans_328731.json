@@ -1,0 +1,42 @@
+{
+    "QIDX": "328731",
+    "original_question": "Kindler syndrome is a rare congenital skin disease caused by a mutation in the KIND1 gene, which encodes a protein that is thought to be active in interactions between the extracellular matrix and which key cytoskeletal protein?",
+    "type_q": "sequence",
+    "key_entities": [
+        "cytoskeletal protein",
+        "extracellular matrix",
+        "Kindler syndrome",
+        "KIND1 gene"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Kindler syndrome is a rare congenital skin disease caused by a mutation in the KIND1 gene, which encodes a protein that is thought to be active in interactions between the extracellular matrix and which key cytoskeletal protein?",
+            "short_answer": "Actin",
+            "long_answer": "The KIND1 gene encodes kindlin-1, a focal-adhesion protein that associates with integrin receptors at the cell membrane and links them to the actin cytoskeleton. Thus, kindlin-1 mediates interactions between the extracellular matrix and the key cytoskeletal protein actin, explaining the tissue-adhesion defects seen in Kindler syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "Which key cytoskeletal protein is involved in interactions with the extracellular matrix and is affected by the KIND1 gene mutation in Kindler syndrome?",
+                "search_keyword": "key cytoskeletal protein extracellular matrix KIND1 gene Kindler syndrome",
+                "final_answer": {
+                    "short_answer": "Actin",
+                    "long_answer": "The KIND1 gene encodes kindlin-1, a focal adhesion protein that cooperates with integrins to couple extracellular-matrix ligands to the intracellular actin cytoskeleton; mutations perturb this integrin–actin linkage, producing the skin fragility of Kindler syndrome."
+                },
+                "target_answer_type": "protein"
+            },
+            "1": {
+                "question": "What is the function of that key cytoskeletal protein in relation to the extracellular matrix?",
+                "search_keyword": "function key cytoskeletal protein extracellular matrix",
+                "final_answer": {
+                    "short_answer": "Actin",
+                    "long_answer": "The KIND1 gene encodes kindlin-1, a focal-adhesion protein that associates with integrin receptors at the cell membrane and links them to the actin cytoskeleton. Thus, kindlin-1 mediates interactions between the extracellular matrix and the key cytoskeletal protein actin, explaining the tissue-adhesion defects seen in Kindler syndrome."
+                },
+                "target_answer_type": "function"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The KIND1 gene encodes kindlin-1, a focal-adhesion protein that associates with integrin receptors at the cell membrane and links them to the actin cytoskeleton. Thus, kindlin-1 mediates interactions between the extracellular matrix and the key cytoskeletal protein actin, explaining the tissue-adhesion defects seen in Kindler syndrome.",
+        "short_answer": "Actin"
+    }
+}

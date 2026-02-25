@@ -1,0 +1,51 @@
+{
+    "QIDX": "811227",
+    "original_question": "Are both choroidal neovascularization and serpiginous choroiditis associated with elevated levels of vascular endothelial growth factor (VEGF)?",
+    "type_q": "parallel",
+    "key_entities": [
+        "vascular endothelial growth factor",
+        "choroidal neovascularization",
+        "serpiginous choroiditis",
+        "VEGF"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is choroidal neovascularization associated with elevated levels of vascular endothelial growth factor (VEGF)?",
+            "short_answer": "yes",
+            "long_answer": "Choroidal neovascularization (CNV) is driven by an angiogenic cascade in which vascular endothelial growth factor (VEGF) is a central mediator. Histopathologic studies of eyes with CNV secondary to age-related macular degeneration, pathologic myopia, or ocular inflammation consistently show increased VEGF expression in the retinal pigment epithelium, choroid, and neovascular membranes. Experimental models in mice and primates demonstrate that VEGF up-regulation precedes and promotes the growth of choroidal new vessels, whereas genetic or pharmacologic blockade of VEGF markedly suppresses CNV formation. Clinically, intravitreal anti-VEGF drugs (e.g., ranibizumab, aflibercept, bevacizumab) are the first-line treatment for CNV, and their efficacy further confirms that elevated VEGF levels are causally linked to the disease. Therefore, the association between CNV and elevated VEGF is well established and reflects current scientific and clinical consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Is choroidal neovascularization associated with elevated levels of vascular endothelial growth factor (VEGF)?",
+                "search_keyword": "choroidal neovascularization vascular endothelial growth factor VEGF association",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Choroidal neovascularization (CNV) is driven by an angiogenic cascade in which vascular endothelial growth factor (VEGF) is a central mediator. Histopathologic studies of eyes with CNV secondary to age-related macular degeneration, pathologic myopia, or ocular inflammation consistently show increased VEGF expression in the retinal pigment epithelium, choroid, and neovascular membranes. Experimental models in mice and primates demonstrate that VEGF up-regulation precedes and promotes the growth of choroidal new vessels, whereas genetic or pharmacologic blockade of VEGF markedly suppresses CNV formation. Clinically, intravitreal anti-VEGF drugs (e.g., ranibizumab, aflibercept, bevacizumab) are the first-line treatment for CNV, and their efficacy further confirms that elevated VEGF levels are causally linked to the disease. Therefore, the association between CNV and elevated VEGF is well established and reflects current scientific and clinical consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "Is serpiginous choroiditis associated with elevated levels of vascular endothelial growth factor (VEGF)?",
+            "short_answer": "no",
+            "long_answer": "Serpiginous choroiditis is an inflammatory chorioretinal disease whose pathogenesis is thought to be autoimmune or infectious (e.g., tuberculosis-related). The established literature describes immune-mediated choroidal inflammation and, in a subset of eyes, the secondary development of choroidal neovascularization (CNV). Vascular endothelial growth factor (VEGF) is well known to be up-regulated in eyes with CNV of any cause, and anti-VEGF injections are therefore sometimes used when CNV complicates serpiginous choroiditis. However, outside the specific circumstance of CNV, there is no evidence that serpiginous choroiditis itself is characterized by systematically elevated intraocular or systemic VEGF levels, nor is VEGF elevation considered part of the disease’s diagnostic or pathogenic profile in the ophthalmic or rheumatologic consensus literature. Consequently, the general statement that serpiginous choroiditis is associated with elevated VEGF is not supported by current scientific consensus."
+        },
+        "0": {
+            "0": {
+                "question": "Is serpiginous choroiditis associated with elevated levels of vascular endothelial growth factor (VEGF)?",
+                "search_keyword": "serpiginous choroiditis vascular endothelial growth factor VEGF association",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "Serpiginous choroiditis is an inflammatory chorioretinal disease whose pathogenesis is thought to be autoimmune or infectious (e.g., tuberculosis-related). The established literature describes immune-mediated choroidal inflammation and, in a subset of eyes, the secondary development of choroidal neovascularization (CNV). Vascular endothelial growth factor (VEGF) is well known to be up-regulated in eyes with CNV of any cause, and anti-VEGF injections are therefore sometimes used when CNV complicates serpiginous choroiditis. However, outside the specific circumstance of CNV, there is no evidence that serpiginous choroiditis itself is characterized by systematically elevated intraocular or systemic VEGF levels, nor is VEGF elevation considered part of the disease’s diagnostic or pathogenic profile in the ophthalmic or rheumatologic consensus literature. Consequently, the general statement that serpiginous choroiditis is associated with elevated VEGF is not supported by current scientific consensus."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Choroidal neovascularization is clearly associated with elevated VEGF levels as evidenced by both experimental and clinical support indicating that VEGF plays a central role in its pathogenesis. In contrast, while serpiginous choroiditis may develop secondary CNV (which itself elevates VEGF), the underlying disease process of serpiginous choroiditis is not inherently characterized by elevated VEGF levels. Therefore, not both conditions are associated with elevated VEGF.",
+        "short_answer": "no"
+    }
+}

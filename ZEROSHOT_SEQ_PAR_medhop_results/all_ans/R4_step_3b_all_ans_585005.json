@@ -1,0 +1,41 @@
+{
+    "QIDX": "585005",
+    "original_question": "Which gene is associated with Urbach–Wiethe disease and encodes an extracellular protein containing motifs with a cysteine pattern?",
+    "type_q": "sequence",
+    "key_entities": [
+        "extracellular protein",
+        "Urbach–Wiethe disease",
+        "cysteine pattern"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene is associated with Urbach–Wiethe disease and encodes an extracellular protein containing motifs with a cysteine pattern?",
+            "short_answer": "ECM1",
+            "long_answer": "Urbach–Wiethe disease (lipoid proteinosis) is caused by loss-of-function mutations in the ECM1 gene, which encodes extracellular matrix protein 1. ECM1 is a secreted glycoprotein whose structure includes repeated motifs rich in cysteine residues arranged in a characteristic pattern, matching the description given."
+        },
+        "0": {
+            "0": {
+                "question": "Which disease is associated with a gene that encodes an extracellular protein containing motifs with a cysteine pattern?",
+                "search_keyword": "Urbach Wiethe disease gene extracellular protein cysteine pattern",
+                "final_answer": {
+                    "short_answer": "ECM1",
+                    "long_answer": "Urbach–Wiethe disease (lipoid proteinosis) is produced by loss-of-function mutations in the ECM1 gene on chromosome 1q21. ECM1 encodes extracellular matrix protein 1, a secreted glycoprotein whose sequence contains characteristic cysteine-rich repeat motifs (C-x(6)-C and other cysteine patterns). Defects in this gene disrupt the structure and function of the extracellular matrix, giving rise to the clinical features of the disease."
+                },
+                "target_answer_type": "disease"
+            },
+            "1": {
+                "question": "Which gene is associated with that disease?",
+                "search_keyword": "gene associated Urbach Wiethe disease",
+                "final_answer": {
+                    "short_answer": "ECM1",
+                    "long_answer": "Urbach–Wiethe disease (lipoid proteinosis) is caused by loss-of-function mutations in the ECM1 gene, which encodes extracellular matrix protein 1. ECM1 is a secreted glycoprotein whose structure includes repeated motifs rich in cysteine residues arranged in a characteristic pattern, matching the description given."
+                },
+                "target_answer_type": "gene"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Urbach–Wiethe disease (lipoid proteinosis) is caused by loss-of-function mutations in the ECM1 gene, which encodes extracellular matrix protein 1. ECM1 is a secreted glycoprotein whose structure includes repeated motifs rich in cysteine residues arranged in a characteristic pattern, matching the description given.",
+        "short_answer": "ECM1"
+    }
+}

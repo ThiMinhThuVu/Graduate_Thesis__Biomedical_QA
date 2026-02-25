@@ -1,0 +1,50 @@
+{
+    "QIDX": "151226",
+    "original_question": "On a macroscopic scale, can the contralateral kidney undergo hypertrophy as a result of dysplasia?",
+    "type_q": "parallel",
+    "key_entities": [
+        "contralateral kidney",
+        "hypertrophy",
+        "dysplasia"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Does the contralateral kidney undergo hypertrophy on a macroscopic scale as a result of dysplasia?",
+            "short_answer": "yes",
+            "long_answer": "In congenital or acquired renal dysplasia that significantly compromises the function or size of one kidney, the remaining contralateral kidney usually increases its workload to maintain overall glomerular filtration rate. This adaptive process produces compensatory (functional) hypertrophy that is readily appreciable on gross inspection or standard imaging studies (ultrasound, CT, MRI). Thus, macroscopic enlargement of the contralateral kidney is a well-documented and expected response to severe dysplasia of the opposite kidney."
+        },
+        "0": {
+            "0": {
+                "question": "Does the contralateral kidney undergo hypertrophy on a macroscopic scale as a result of dysplasia?",
+                "search_keyword": "contralateral kidney hypertrophy macroscopic dysplasia",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "In congenital or acquired renal dysplasia that significantly compromises the function or size of one kidney, the remaining contralateral kidney usually increases its workload to maintain overall glomerular filtration rate. This adaptive process produces compensatory (functional) hypertrophy that is readily appreciable on gross inspection or standard imaging studies (ultrasound, CT, MRI). Thus, macroscopic enlargement of the contralateral kidney is a well-documented and expected response to severe dysplasia of the opposite kidney."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What is the effect of dysplasia on the contralateral kidney's size on a macroscopic scale?",
+            "short_answer": "Compensatory hypertrophy",
+            "long_answer": "When one kidney is dysplastic and functionally deficient, the contralateral kidney increases its workload. To meet the higher functional demand, it undergoes compensatory hypertrophy, becoming macroscopically enlarged compared with normal renal size."
+        },
+        "0": {
+            "0": {
+                "question": "What is the effect of dysplasia on the contralateral kidney's size on a macroscopic scale?",
+                "search_keyword": "dysplasia contralateral kidney size macroscopic effect",
+                "final_answer": {
+                    "short_answer": "Compensatory hypertrophy",
+                    "long_answer": "When one kidney is dysplastic and functionally deficient, the contralateral kidney increases its workload. To meet the higher functional demand, it undergoes compensatory hypertrophy, becoming macroscopically enlarged compared with normal renal size."
+                },
+                "target_answer_type": "effect"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "From the information provided, in cases where one kidney suffers from dysplasia, it is well-documented that the contralateral kidney undergoes compensatory hypertrophy to maintain overall renal function. This hypertrophy is observable on a macroscopic scale through gross inspection and imaging modalities such as ultrasound, CT, or MRI. Therefore, the adaptive process results in an enlarged contralateral kidney, confirming that yes, it does undergo hypertrophy.",
+        "short_answer": "yes"
+    }
+}

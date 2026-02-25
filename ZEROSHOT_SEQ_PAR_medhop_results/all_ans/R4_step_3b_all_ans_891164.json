@@ -1,0 +1,40 @@
+{
+    "QIDX": "891164",
+    "original_question": "Which chromosome contains the gene whose homozygous mutation leads to a form of limb-girdle muscular dystrophy potentially responsive to mevalonolactone?",
+    "type_q": "sequence",
+    "key_entities": [
+        "limb-girdle muscular dystrophy",
+        "mevalonolactone"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which chromosome contains the gene whose homozygous mutation leads to a form of limb-girdle muscular dystrophy potentially responsive to mevalonolactone?",
+            "short_answer": "Chromosome 5",
+            "long_answer": "A recessive limb-girdle muscular dystrophy has been traced to homozygous loss-of-function mutations in the HMGCR gene, which encodes 3-hydroxy-3-methyl-glutaryl-CoA reductase. Because HMGCR produces mevalonate, patients may improve when given the downstream metabolite mevalonolactone. The HMGCR gene is situated at 5q13.3, meaning the responsible gene resides on chromosome 5."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene's homozygous mutation leads to a form of limb-girdle muscular dystrophy potentially responsive to mevalonolactone?",
+                "search_keyword": "gene homozygous mutation limb-girdle muscular dystrophy mevalonolactone",
+                "final_answer": {
+                    "short_answer": "Chromosome 5",
+                    "long_answer": "The recessive limb-girdle muscular dystrophy responsive to mevalonolactone is caused by homozygous loss-of-function mutations in HMGCR, the gene for 3-hydroxy-3-methyl-glutaryl-CoA reductase, a key enzyme of the mevalonate pathway. HMGCR is located at 5q13.3 on chromosome 5, so chromosome 5 contains the gene whose homozygous mutation produces this treatable LGMD phenotype."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "1": {
+                "question": "Which chromosome contains that gene?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 5",
+                    "long_answer": "A recessive limb-girdle muscular dystrophy has been traced to homozygous loss-of-function mutations in the HMGCR gene, which encodes 3-hydroxy-3-methyl-glutaryl-CoA reductase. Because HMGCR produces mevalonate, patients may improve when given the downstream metabolite mevalonolactone. The HMGCR gene is situated at 5q13.3, meaning the responsible gene resides on chromosome 5."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "A recessive limb-girdle muscular dystrophy has been traced to homozygous loss-of-function mutations in the HMGCR gene, which encodes 3-hydroxy-3-methyl-glutaryl-CoA reductase. Because HMGCR produces mevalonate, patients may improve when given the downstream metabolite mevalonolactone. The HMGCR gene is situated at 5q13.3, meaning the responsible gene resides on chromosome 5.",
+        "short_answer": "Chromosome 5"
+    }
+}

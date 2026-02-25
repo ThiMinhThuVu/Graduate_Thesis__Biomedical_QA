@@ -1,0 +1,40 @@
+{
+    "QIDX": "655179",
+    "original_question": "Mutations in the gene that encodes transcription factor FKH-14 cause a second set of which anatomical feature?",
+    "type_q": "sequence",
+    "key_entities": [
+        "transcription factor FKH-14",
+        "anatomical feature"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Mutations in the gene that encodes transcription factor FKH-14 cause a second set of which anatomical feature?",
+            "short_answer": "eyelashes",
+            "long_answer": "FOXC2, historically designated transcription factor FKH-14, is a forkhead family gene. Heterozygous FOXC2 mutations produce the lymphedema-distichiasis syndrome, whose characteristic feature is distichiasis—a second (accessory) row of eyelashes developing along the eyelid margin."
+        },
+        "0": {
+            "0": {
+                "question": "What anatomical feature is associated with mutations in the gene that encodes transcription factor FKH-14?",
+                "search_keyword": "anatomical feature mutations gene transcription factor FKH-14",
+                "final_answer": {
+                    "short_answer": "Eyelashes",
+                    "long_answer": "The gene FOXC2 (also known as forkhead transcription factor FKH-14) encodes a forkhead box transcription factor. Pathogenic FOXC2/​FKH-14 mutations cause lymphedema-distichiasis syndrome, whose defining ocular feature is distichiasis—a second row of eyelashes arising from the Meibomian glands of the eyelid."
+                },
+                "target_answer_type": "anatomical feature"
+            },
+            "1": {
+                "question": "What is the second set of that anatomical feature?",
+                "search_keyword": "second set anatomical feature",
+                "final_answer": {
+                    "short_answer": "eyelashes",
+                    "long_answer": "FOXC2, historically designated transcription factor FKH-14, is a forkhead family gene. Heterozygous FOXC2 mutations produce the lymphedema-distichiasis syndrome, whose characteristic feature is distichiasis—a second (accessory) row of eyelashes developing along the eyelid margin."
+                },
+                "target_answer_type": "anatomical feature"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "FOXC2, historically designated transcription factor FKH-14, is a forkhead family gene. Heterozygous FOXC2 mutations produce the lymphedema-distichiasis syndrome, whose characteristic feature is distichiasis—a second (accessory) row of eyelashes developing along the eyelid margin.",
+        "short_answer": "eyelashes"
+    }
+}

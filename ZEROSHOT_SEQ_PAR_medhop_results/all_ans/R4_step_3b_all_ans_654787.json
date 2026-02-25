@@ -1,0 +1,39 @@
+{
+    "QIDX": "654787",
+    "original_question": "On which chromosome is the gene responsible for causing Keratitis–ichthyosis–deafness (KID) syndrome located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Keratitis–ichthyosis–deafness (KID) syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene responsible for causing Keratitis–ichthyosis–deafness (KID) syndrome located?",
+            "short_answer": "Chromosome 13",
+            "long_answer": "Keratitis–ichthyosis–deafness (KID) syndrome is most often caused by missense mutations in the GJB2 gene, which encodes the gap-junction protein connexin 26. GJB2 is mapped to the long arm of chromosome 13 (13q11-q12). Pathogenic variants at this locus disrupt intercellular communication in epidermal and cochlear tissues, producing the triad of keratitis, skin ichthyosis-like changes, and sensorineural deafness characteristic of KID syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is responsible for causing Keratitis–ichthyosis–deafness (KID) syndrome?",
+                "search_keyword": "gene responsible Keratitis ichthyosis deafness KID syndrome",
+                "final_answer": {
+                    "short_answer": "Chromosome 13",
+                    "long_answer": "Keratitis–ichthyosis–deafness (KID) syndrome is most commonly caused by missense mutations in the GJB2 gene, which encodes the gap-junction protein connexin 26. The GJB2 gene is located on the long arm of chromosome 13 at band q12 (13q12.11). Therefore, the chromosome implicated in KID syndrome is chromosome 13."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 13",
+                    "long_answer": "Keratitis–ichthyosis–deafness (KID) syndrome is most often caused by missense mutations in the GJB2 gene, which encodes the gap-junction protein connexin 26. GJB2 is mapped to the long arm of chromosome 13 (13q11-q12). Pathogenic variants at this locus disrupt intercellular communication in epidermal and cochlear tissues, producing the triad of keratitis, skin ichthyosis-like changes, and sensorineural deafness characteristic of KID syndrome."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Keratitis–ichthyosis–deafness (KID) syndrome is most often caused by missense mutations in the GJB2 gene, which encodes the gap-junction protein connexin 26. GJB2 is mapped to the long arm of chromosome 13 (13q11-q12). Pathogenic variants at this locus disrupt intercellular communication in epidermal and cochlear tissues, producing the triad of keratitis, skin ichthyosis-like changes, and sensorineural deafness characteristic of KID syndrome.",
+        "short_answer": "Chromosome 13"
+    }
+}

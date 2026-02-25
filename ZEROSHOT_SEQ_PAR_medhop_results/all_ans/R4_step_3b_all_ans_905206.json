@@ -1,0 +1,39 @@
+{
+    "QIDX": "905206",
+    "original_question": "On which chromosome is the gene responsible for the production of Hemoglobin C located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Hemoglobin C"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene responsible for the production of Hemoglobin C located?",
+            "short_answer": "Chromosome 11",
+            "long_answer": "Hemoglobin C results from a point mutation in the β-globin gene (HBB). The HBB gene is situated on the short arm of chromosome 11 (11p15.4); therefore, the gene responsible for producing Hemoglobin C is located on chromosome 11."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is responsible for the production of Hemoglobin C?",
+                "search_keyword": "gene responsible production Hemoglobin C",
+                "final_answer": {
+                    "short_answer": "Chromosome 11",
+                    "long_answer": "Hemoglobin C results from a point mutation in the β-globin gene (HBB), which substitutes lysine for glutamic acid at amino acid 6 of the β chain. The HBB gene is located on the short arm of chromosome 11 (11p15.5); therefore, the gene responsible for producing Hemoglobin C resides on chromosome 11."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 11",
+                    "long_answer": "Hemoglobin C results from a point mutation in the β-globin gene (HBB). The HBB gene is situated on the short arm of chromosome 11 (11p15.4); therefore, the gene responsible for producing Hemoglobin C is located on chromosome 11."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Hemoglobin C results from a point mutation in the β-globin gene (HBB). The HBB gene is situated on the short arm of chromosome 11 (11p15.4); therefore, the gene responsible for producing Hemoglobin C is located on chromosome 11.",
+        "short_answer": "Chromosome 11"
+    }
+}

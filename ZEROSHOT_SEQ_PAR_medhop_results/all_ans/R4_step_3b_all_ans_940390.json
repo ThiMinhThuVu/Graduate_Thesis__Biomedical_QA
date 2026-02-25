@@ -1,0 +1,43 @@
+{
+    "QIDX": "940390",
+    "original_question": "Which broad blood disorder, characterized by a reduced ability to carry oxygen due to low level of red blood cells, is the cause for an excessive workload on the fetal heart, resulting in a condition in the fetus characterized by an accumulation of fluid in at least two fetal compartments?",
+    "type_q": "sequence",
+    "key_entities": [
+        "accumulation of fluid",
+        "red blood cells",
+        "blood disorder",
+        "fetal heart",
+        "oxygen"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which broad blood disorder, characterized by a reduced ability to carry oxygen due to low level of red blood cells, is the cause for an excessive workload on the fetal heart, resulting in a condition in the fetus characterized by an accumulation of fluid in at least two fetal compartments?",
+            "short_answer": "Anemia",
+            "long_answer": "Anemia – a broad blood disorder defined by a decreased red-cell mass and diminished oxygen-carrying capacity – can occur in the fetus (from causes such as Rh incompatibility, α-thalassemia, parvovirus B19 infection, etc.). The resulting fetal anemia forces the fetal heart to pump markedly increased cardiac output to maintain oxygen delivery. This high-output state ultimately overwhelms cardiac function, leading to generalized edema and effusions in at least two fetal compartments, the clinical picture known as hydrops fetalis."
+        },
+        "0": {
+            "0": {
+                "question": "What is the broad blood disorder characterized by a reduced ability to carry oxygen due to low levels of red blood cells?",
+                "search_keyword": "broad blood disorder reduced ability carry oxygen low red blood cells",
+                "final_answer": {
+                    "short_answer": "Anemia",
+                    "long_answer": "Anemia is defined by an abnormally low red-blood-cell mass and consequently reduced oxygen-carrying capacity. When anemia develops in the fetus, the heart must pump at a much higher output to deliver adequate oxygen, which can precipitate high-output cardiac failure. This cardiac strain leads to generalized edema and the accumulation of fluid in at least two fetal compartments, the clinical picture known as hydrops fetalis."
+                },
+                "target_answer_type": "blood disorder"
+            },
+            "1": {
+                "question": "What condition in the fetus is caused by excessive workload on the fetal heart due to that blood disorder, characterized by an accumulation of fluid in at least two fetal compartments?",
+                "search_keyword": "fetal condition excessive workload fetal heart accumulation fluid two compartments",
+                "final_answer": {
+                    "short_answer": "Anemia",
+                    "long_answer": "Anemia – a broad blood disorder defined by a decreased red-cell mass and diminished oxygen-carrying capacity – can occur in the fetus (from causes such as Rh incompatibility, α-thalassemia, parvovirus B19 infection, etc.). The resulting fetal anemia forces the fetal heart to pump markedly increased cardiac output to maintain oxygen delivery. This high-output state ultimately overwhelms cardiac function, leading to generalized edema and effusions in at least two fetal compartments, the clinical picture known as hydrops fetalis."
+                },
+                "target_answer_type": "condition"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Anemia – a broad blood disorder defined by a decreased red-cell mass and diminished oxygen-carrying capacity – can occur in the fetus (from causes such as Rh incompatibility, α-thalassemia, parvovirus B19 infection, etc.). The resulting fetal anemia forces the fetal heart to pump markedly increased cardiac output to maintain oxygen delivery. This high-output state ultimately overwhelms cardiac function, leading to generalized edema and effusions in at least two fetal compartments, the clinical picture known as hydrops fetalis.",
+        "short_answer": "Anemia"
+    }
+}

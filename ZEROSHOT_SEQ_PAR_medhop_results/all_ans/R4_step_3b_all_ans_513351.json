@@ -1,0 +1,50 @@
+{
+    "QIDX": "513351",
+    "original_question": "Which gene encodes the enzyme involved in carbamoyl phosphate production in the urea cycle and is associated with an autosomal recessive disorder leading to toxic ammonia levels in the blood?",
+    "type_q": "sequence",
+    "key_entities": [
+        "toxic ammonia levels",
+        "carbamoyl phosphate",
+        "urea cycle"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene encodes the enzyme involved in carbamoyl phosphate production in the urea cycle and is associated with an autosomal recessive disorder leading to toxic ammonia levels in the blood?",
+            "short_answer": "CPS1",
+            "long_answer": "The CPS1 gene encodes carbamoyl-phosphate synthetase I, the mitochondrial enzyme that catalyzes the first step of the urea cycle by producing carbamoyl phosphate from ammonia and bicarbonate. Autosomal-recessive mutations in CPS1 cause carbamoyl-phosphate synthetase I deficiency, a urea-cycle disorder characterized by life-threatening hyperammonemia due to impaired ammonia detoxification."
+        },
+        "0": {
+            "0": {
+                "question": "Which enzyme is involved in carbamoyl phosphate production in the urea cycle?",
+                "search_keyword": "enzyme involved carbamoyl phosphate production urea cycle",
+                "final_answer": {
+                    "short_answer": "CPS1",
+                    "long_answer": "The CPS1 gene encodes mitochondrial carbamoyl-phosphate synthetase 1, the enzyme that initiates the urea cycle by synthesizing carbamoyl phosphate from ammonia and bicarbonate. Loss-of-function mutations in CPS1 are inherited in an autosomal recessive manner and cause carbamoyl-phosphate synthetase 1 deficiency, leading to accumulation of toxic levels of ammonia (hyperammonemia) in the blood."
+                },
+                "target_answer_type": "enzyme"
+            },
+            "1": {
+                "question": "Which gene encodes that enzyme involved in carbamoyl phosphate production?",
+                "search_keyword": "gene encodes enzyme carbamoyl phosphate production",
+                "final_answer": {
+                    "short_answer": "CPS1",
+                    "long_answer": "The CPS1 gene encodes carbamoyl-phosphate synthetase I, the mitochondrial enzyme that catalyzes the first step of the urea cycle by producing carbamoyl phosphate from ammonia and bicarbonate. Loss-of-function mutations in CPS1 cause carbamoyl-phosphate synthetase I deficiency, an autosomal recessive disorder characterized by impaired ureagenesis and accumulation of toxic ammonia (hyperammonemia) in the blood."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "What autosomal recessive disorder is associated with toxic ammonia levels in the blood due to that gene?",
+                "search_keyword": "autosomal recessive disorder toxic ammonia blood gene",
+                "final_answer": {
+                    "short_answer": "CPS1",
+                    "long_answer": "The CPS1 gene encodes carbamoyl-phosphate synthetase I, the mitochondrial enzyme that catalyzes the first step of the urea cycle by producing carbamoyl phosphate from ammonia and bicarbonate. Autosomal-recessive mutations in CPS1 cause carbamoyl-phosphate synthetase I deficiency, a urea-cycle disorder characterized by life-threatening hyperammonemia due to impaired ammonia detoxification."
+                },
+                "target_answer_type": "disorder"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The CPS1 gene encodes carbamoyl-phosphate synthetase I, the mitochondrial enzyme that catalyzes the first step of the urea cycle by producing carbamoyl phosphate from ammonia and bicarbonate. Autosomal-recessive mutations in CPS1 cause carbamoyl-phosphate synthetase I deficiency, a urea-cycle disorder characterized by life-threatening hyperammonemia due to impaired ammonia detoxification.",
+        "short_answer": "CPS1"
+    }
+}

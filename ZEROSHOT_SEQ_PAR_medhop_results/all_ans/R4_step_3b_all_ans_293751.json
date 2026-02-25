@@ -1,0 +1,41 @@
+{
+    "QIDX": "293751",
+    "original_question": "Which gene, located on chromosome 12 and associated with pachyonychia congenita, has also been linked to the development of white patches on the oral mucosa that increase the risk of cancer?",
+    "type_q": "sequence",
+    "key_entities": [
+        "pachyonychia congenita",
+        "chromosome 12",
+        "oral mucosa"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene, located on chromosome 12 and associated with pachyonychia congenita, has also been linked to the development of white patches on the oral mucosa that increase the risk of cancer?",
+            "short_answer": "KRT6A",
+            "long_answer": "KRT6A (keratin 6A) lies in the keratin gene cluster on chromosome 12q13.13. Pathogenic variants in this gene are a well-established cause of pachyonychia congenita type 1. The same gene is expressed in oral stratified epithelium; mutations or dysregulated expression of KRT6A produce hereditary oral leukokeratosis/leukoplakia—white keratotic patches on the oral mucosa that are recognised precancerous lesions with an elevated risk of progression to squamous cell carcinoma."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with pachyonychia congenita and linked to the development of white patches on the oral mucosa that increase the risk of cancer?",
+                "search_keyword": "gene associated pachyonychia congenita white patches oral mucosa cancer risk",
+                "final_answer": {
+                    "short_answer": "KRT6A",
+                    "long_answer": "Keratin-6A (KRT6A) is a type II keratin gene situated in the keratin gene cluster on chromosome 12q13.13. Pathogenic mutations in KRT6A are a recognised cause of pachyonychia congenita. Separate studies have found that variants and up-regulation of KRT6A occur in oral leukoplakia—white plaques of the oral mucosa regarded as a premalignant lesion—thereby linking this gene to lesions that carry an elevated risk of oral squamous cell carcinoma."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene associated pachyonychia congenita",
+                "final_answer": {
+                    "short_answer": "KRT6A",
+                    "long_answer": "KRT6A (keratin 6A) lies in the keratin gene cluster on chromosome 12q13.13. Pathogenic variants in this gene are a well-established cause of pachyonychia congenita type 1. The same gene is expressed in oral stratified epithelium; mutations or dysregulated expression of KRT6A produce hereditary oral leukokeratosis/leukoplakia—white keratotic patches on the oral mucosa that are recognised precancerous lesions with an elevated risk of progression to squamous cell carcinoma."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "KRT6A (keratin 6A) lies in the keratin gene cluster on chromosome 12q13.13. Pathogenic variants in this gene are a well-established cause of pachyonychia congenita type 1. The same gene is expressed in oral stratified epithelium; mutations or dysregulated expression of KRT6A produce hereditary oral leukokeratosis/leukoplakia—white keratotic patches on the oral mucosa that are recognised precancerous lesions with an elevated risk of progression to squamous cell carcinoma.",
+        "short_answer": "KRT6A"
+    }
+}

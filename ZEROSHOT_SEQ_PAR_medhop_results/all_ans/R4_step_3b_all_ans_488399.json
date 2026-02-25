@@ -1,0 +1,41 @@
+{
+    "QIDX": "488399",
+    "original_question": "Which gene located on chromosome 1 is responsible for encoding an enzyme required for ketogenesis in the liver and for processing the amino acid leucine inside mitochondria?",
+    "type_q": "sequence",
+    "key_entities": [
+        "amino acid leucine inside",
+        "chromosome 1",
+        "mitochondria"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene located on chromosome 1 is responsible for encoding an enzyme required for ketogenesis in the liver and for processing the amino acid leucine inside mitochondria?",
+            "short_answer": "HMGCL",
+            "long_answer": "The HMGCL gene, located on chromosome 1p36, encodes mitochondrial 3-hydroxy-3-methylglutaryl-CoA lyase. This enzyme catalyzes the cleavage of HMG-CoA to acetoacetate and acetyl-CoA, the terminal step of hepatic ketogenesis, and performs the same reaction within the leucine degradation pathway in mitochondria. Thus, HMGCL is essential both for producing ketone bodies in the liver and for metabolizing the amino acid leucine."
+        },
+        "0": {
+            "0": {
+                "question": "Which enzyme is required for ketogenesis in the liver and for processing the amino acid leucine inside mitochondria?",
+                "search_keyword": "enzyme ketogenesis liver processing amino acid leucine mitochondria",
+                "final_answer": {
+                    "short_answer": "HMGCL",
+                    "long_answer": "The HMGCL gene, mapped to chromosome 1p36, encodes mitochondrial 3-hydroxy-3-methylglutaryl-CoA lyase. This enzyme catalyzes the cleavage of HMG-CoA to acetoacetate and acetyl-CoA—the terminal reaction of hepatic ketogenesis—and it performs the same step during the mitochondrial degradation of the amino acid leucine. Loss-of-function mutations in HMGCL impair both ketone-body formation and leucine catabolism, underscoring its essential dual role."
+                },
+                "target_answer_type": "enzyme"
+            },
+            "1": {
+                "question": "Which gene encodes that enzyme located on chromosome 1?",
+                "search_keyword": "gene encodes enzyme chromosome 1",
+                "final_answer": {
+                    "short_answer": "HMGCL",
+                    "long_answer": "The HMGCL gene, located on chromosome 1p36, encodes mitochondrial 3-hydroxy-3-methylglutaryl-CoA lyase. This enzyme catalyzes the cleavage of HMG-CoA to acetoacetate and acetyl-CoA, the terminal step of hepatic ketogenesis, and performs the same reaction within the leucine degradation pathway in mitochondria. Thus, HMGCL is essential both for producing ketone bodies in the liver and for metabolizing the amino acid leucine."
+                },
+                "target_answer_type": "gene"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The HMGCL gene, located on chromosome 1p36, encodes mitochondrial 3-hydroxy-3-methylglutaryl-CoA lyase. This enzyme catalyzes the cleavage of HMG-CoA to acetoacetate and acetyl-CoA, the terminal step of hepatic ketogenesis, and performs the same reaction within the leucine degradation pathway in mitochondria. Thus, HMGCL is essential both for producing ketone bodies in the liver and for metabolizing the amino acid leucine.",
+        "short_answer": "HMGCL"
+    }
+}

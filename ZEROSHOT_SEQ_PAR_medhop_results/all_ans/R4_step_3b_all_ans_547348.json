@@ -1,0 +1,49 @@
+{
+    "QIDX": "547348",
+    "original_question": "On which chromosome is the gene that encodes the protein secreted by malignant cells in an endodermal sinus tumor located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "endodermal sinus tumor",
+        "malignant cells"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene that encodes the protein secreted by malignant cells in an endodermal sinus tumor located?",
+            "short_answer": "Chromosome 4",
+            "long_answer": "Malignant cells in endodermal sinus (yolk sac) tumors characteristically secrete alpha-fetoprotein (AFP). The AFP protein is encoded by the AFP gene, which is mapped to the long arm of human chromosome 4 (region 4q13)."
+        },
+        "0": {
+            "0": {
+                "question": "Which protein is secreted by malignant cells in an endodermal sinus tumor?",
+                "search_keyword": "protein secreted malignant cells endodermal sinus tumor",
+                "final_answer": {
+                    "short_answer": "Chromosome 4",
+                    "long_answer": "Endodermal sinus (yolk-sac) tumors characteristically secrete the oncofetal protein α-fetoprotein (AFP). The human AFP gene is mapped to chromosome 4 (region 4q11-q13). Hence, the gene encoding the protein produced by malignant cells in an endodermal sinus tumor resides on chromosome 4."
+                },
+                "target_answer_type": "protein"
+            },
+            "1": {
+                "question": "Which gene encodes that protein?",
+                "search_keyword": "gene encodes protein secreted endodermal sinus tumor",
+                "final_answer": {
+                    "short_answer": "Chromosome 4",
+                    "long_answer": "Endodermal sinus (yolk-sac) tumors secrete alpha-fetoprotein (AFP). The AFP protein is encoded by the AFP gene, which is mapped to the long arm of chromosome 4 (region 4q13)."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 4",
+                    "long_answer": "Malignant cells in endodermal sinus (yolk sac) tumors characteristically secrete alpha-fetoprotein (AFP). The AFP protein is encoded by the AFP gene, which is mapped to the long arm of human chromosome 4 (region 4q13)."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Malignant cells in endodermal sinus (yolk sac) tumors characteristically secrete alpha-fetoprotein (AFP). The AFP protein is encoded by the AFP gene, which is mapped to the long arm of human chromosome 4 (region 4q13).",
+        "short_answer": "Chromosome 4"
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "QIDX": "694090",
+    "original_question": "Could a mutation in a gene encoding a transcription factor that is essential for self-renewal and pluripotency in embryonic stem cells result in microphthalmia?",
+    "type_q": "sequence",
+    "key_entities": [
+        "transcription factor",
+        "embryonic stem cells",
+        "self-renewal"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Could a mutation in a gene encoding a transcription factor that is essential for self-renewal and pluripotency in embryonic stem cells result in microphthalmia?",
+            "short_answer": "SOX2",
+            "long_answer": "SOX2 is a core pluripotency transcription factor required, together with OCT4 and NANOG, for the self-renewal of embryonic stem cells. Heterozygous loss-of-function mutations in the SOX2 gene disrupt early eye field specification and are the well-established cause of SOX2-anophthalmia/microphthalmia syndrome, in which affected individuals present with unilateral or bilateral microphthalmia. Thus, a mutation in SOX2 can indeed result in microphthalmia."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene encodes a transcription factor that is essential for self-renewal and pluripotency in embryonic stem cells?",
+                "search_keyword": "gene encoding transcription factor self-renewal pluripotency embryonic stem cells",
+                "final_answer": {
+                    "short_answer": "SOX2",
+                    "long_answer": "Yes. Heterozygous loss-of-function mutations in SOX2, a core transcription factor required for maintaining self-renewal and pluripotency of embryonic stem cells, are a well-established cause of anophthalmia-microphthalmia syndrome. Disruption of SOX2 impairs early eye development, leading to markedly small (microphthalmic) or absent eyes in affected individuals."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "What is the relationship between mutations in that gene and the condition microphthalmia?",
+                "search_keyword": "mutation gene microphthalmia relationship",
+                "final_answer": {
+                    "short_answer": "SOX2",
+                    "long_answer": "SOX2 is a core pluripotency transcription factor required, together with OCT4 and NANOG, for the self-renewal of embryonic stem cells. Heterozygous loss-of-function mutations in the SOX2 gene disrupt early eye field specification and are the well-established cause of SOX2-anophthalmia/microphthalmia syndrome, in which affected individuals present with unilateral or bilateral microphthalmia. Thus, a mutation in SOX2 can indeed result in microphthalmia."
+                },
+                "target_answer_type": "condition"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "SOX2 is a core pluripotency transcription factor required, together with OCT4 and NANOG, for the self-renewal of embryonic stem cells. Heterozygous loss-of-function mutations in the SOX2 gene disrupt early eye field specification and are the well-established cause of SOX2-anophthalmia/microphthalmia syndrome, in which affected individuals present with unilateral or bilateral microphthalmia. Thus, a mutation in SOX2 can indeed result in microphthalmia.",
+        "short_answer": "SOX2"
+    }
+}

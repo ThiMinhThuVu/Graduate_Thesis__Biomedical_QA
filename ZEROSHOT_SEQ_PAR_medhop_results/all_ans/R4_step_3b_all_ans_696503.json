@@ -1,0 +1,40 @@
+{
+    "QIDX": "696503",
+    "original_question": "Which gene encodes a protein with six coiled-coil domains, whose mutations cause Seckel syndrome?",
+    "type_q": "sequence",
+    "key_entities": [
+        "coiled-coil domains",
+        "Seckel syndrome"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which gene encodes a protein with six coiled-coil domains, whose mutations cause Seckel syndrome?",
+            "short_answer": "CEP63",
+            "long_answer": "Mutations in the CEP63 gene, which encodes the centrosomal protein of 63 kDa containing six predicted coiled-coil domains, have been shown to cause Seckel syndrome by disrupting centrosome integrity and impairing ATR-dependent DNA-damage signaling during neurodevelopment."
+        },
+        "0": {
+            "0": {
+                "question": "Which protein with six coiled-coil domains is associated with Seckel syndrome?",
+                "search_keyword": "protein six coiled-coil domains Seckel syndrome",
+                "final_answer": {
+                    "short_answer": "CENPJ",
+                    "long_answer": "The CENPJ gene (centromere protein J, also called CPAP) encodes a centrosomal protein that is composed of six predicted coiled-coil domains. Loss-of-function or missense mutations in CENPJ disrupt centrosome integrity and spindle formation, leading to the microcephaly, dwarfism and other features that define autosomal-recessive Seckel syndrome."
+                },
+                "target_answer_type": "protein"
+            },
+            "1": {
+                "question": "Which gene encodes that protein?",
+                "search_keyword": "gene encodes protein six coiled-coil domains",
+                "final_answer": {
+                    "short_answer": "CEP63",
+                    "long_answer": "Mutations in the CEP63 gene, which encodes the centrosomal protein of 63 kDa containing six predicted coiled-coil domains, have been shown to cause Seckel syndrome by disrupting centrosome integrity and impairing ATR-dependent DNA-damage signaling during neurodevelopment."
+                },
+                "target_answer_type": "gene"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Mutations in the CEP63 gene, which encodes the centrosomal protein of 63 kDa containing six predicted coiled-coil domains, have been shown to cause Seckel syndrome by disrupting centrosome integrity and impairing ATR-dependent DNA-damage signaling during neurodevelopment.",
+        "short_answer": "CEP63"
+    }
+}

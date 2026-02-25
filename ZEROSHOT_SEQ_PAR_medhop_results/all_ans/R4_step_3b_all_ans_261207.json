@@ -1,0 +1,41 @@
+{
+    "QIDX": "261207",
+    "original_question": "Is neonatal diabetes caused by mutations in an autosomal dominant gene that disrupt insulin production?",
+    "type_q": "sequence",
+    "key_entities": [
+        "autosomal dominant gene",
+        "insulin production",
+        "neonatal diabetes"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is neonatal diabetes caused by mutations in an autosomal dominant gene that disrupt insulin production?",
+            "short_answer": "yes",
+            "long_answer": "Neonatal diabetes mellitus is a monogenic form of diabetes that appears in the first 6 months of life. The most frequent causes are heterozygous (autosomal-dominant) activating mutations in the genes that encode the two subunits of the pancreatic β-cell ATP-sensitive K+ channel—KCNJ11 (Kir6.2) and ABCC8 (SUR1)—as well as dominant-negative mutations in the INS (insulin) gene itself. These mutations impair insulin synthesis and/or secretion, resulting in persistent hyperglycaemia in the newborn. Although some other, less-common forms of neonatal diabetes follow autosomal-recessive inheritance, the statement that neonatal diabetes can be caused by mutations in an autosomal dominant gene that disrupt insulin production is correct and is firmly supported by established biomedical evidence."
+        },
+        "0": {
+            "0": {
+                "question": "What are the mutations in genes that can cause neonatal diabetes?",
+                "search_keyword": "mutations genes cause neonatal diabetes",
+                "final_answer": {
+                    "short_answer": "Yes",
+                    "long_answer": "Neonatal diabetes often results from heterozygous (autosomal-dominant) mutations in genes such as KCNJ11, ABCC8, or INS. These mutations impair β-cell function—either by activating the KATP channel (KCNJ11, ABCC8) or by misfolding proinsulin (INS)—thereby reducing or preventing insulin secretion/production and causing hyperglycaemia in the first months of life."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "1": {
+                "question": "Is there an autosomal dominant gene among those mutations that disrupts insulin production?",
+                "search_keyword": "autosomal dominant gene disrupt insulin production neonatal diabetes",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Neonatal diabetes mellitus is a monogenic form of diabetes that appears in the first 6 months of life. The most frequent causes are heterozygous (autosomal-dominant) activating mutations in the genes that encode the two subunits of the pancreatic β-cell ATP-sensitive K+ channel—KCNJ11 (Kir6.2) and ABCC8 (SUR1)—as well as dominant-negative mutations in the INS (insulin) gene itself. These mutations impair insulin synthesis and/or secretion, resulting in persistent hyperglycaemia in the newborn. Although some other, less-common forms of neonatal diabetes follow autosomal-recessive inheritance, the statement that neonatal diabetes can be caused by mutations in an autosomal dominant gene that disrupt insulin production is correct and is firmly supported by established biomedical evidence."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Neonatal diabetes mellitus is a monogenic form of diabetes that appears in the first 6 months of life. The most frequent causes are heterozygous (autosomal-dominant) activating mutations in the genes that encode the two subunits of the pancreatic β-cell ATP-sensitive K+ channel—KCNJ11 (Kir6.2) and ABCC8 (SUR1)—as well as dominant-negative mutations in the INS (insulin) gene itself. These mutations impair insulin synthesis and/or secretion, resulting in persistent hyperglycaemia in the newborn. Although some other, less-common forms of neonatal diabetes follow autosomal-recessive inheritance, the statement that neonatal diabetes can be caused by mutations in an autosomal dominant gene that disrupt insulin production is correct and is firmly supported by established biomedical evidence.",
+        "short_answer": "yes"
+    }
+}

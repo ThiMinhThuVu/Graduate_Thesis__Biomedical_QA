@@ -1,0 +1,39 @@
+{
+    "QIDX": "478250",
+    "original_question": "On which chromosome is the gene associated with biliary atresia in Egyptian infants located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "biliary atresia"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene associated with biliary atresia in Egyptian infants located?",
+            "short_answer": "Chromosome 11",
+            "long_answer": "Studies in Egyptian infants with biliary atresia have shown a significant association with promoter polymorphisms of the interleukin-18 (IL18) gene. IL18 is mapped to the long arm of chromosome 11 (11q22-q23); hence the gene implicated in the Egyptian cohort resides on chromosome 11."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with biliary atresia in Egyptian infants?",
+                "search_keyword": "gene associated biliary atresia Egyptian infants",
+                "final_answer": {
+                    "short_answer": "Chromosome 10",
+                    "long_answer": "Genetic studies in Egyptian infants with biliary atresia identified risk variants in the ADD3 (adducin-3) gene. ADD3 maps to cytogenetic band 10q24.2 on chromosome 10, making chromosome 10 the locus associated with the disease in this population."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene biliary atresia",
+                "final_answer": {
+                    "short_answer": "Chromosome 11",
+                    "long_answer": "Studies in Egyptian infants with biliary atresia have shown a significant association with promoter polymorphisms of the interleukin-18 (IL18) gene. IL18 is mapped to the long arm of chromosome 11 (11q22-q23); hence the gene implicated in the Egyptian cohort resides on chromosome 11."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Studies in Egyptian infants with biliary atresia have shown a significant association with promoter polymorphisms of the interleukin-18 (IL18) gene. IL18 is mapped to the long arm of chromosome 11 (11q22-q23); hence the gene implicated in the Egyptian cohort resides on chromosome 11.",
+        "short_answer": "Chromosome 11"
+    }
+}

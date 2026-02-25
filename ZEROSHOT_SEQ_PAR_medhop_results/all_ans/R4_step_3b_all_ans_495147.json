@@ -1,0 +1,41 @@
+{
+    "QIDX": "495147",
+    "original_question": "Is it true that individuals affected by lymphedema-distichiasis syndrome exhibit mutations in a gene that belongs to the forkhead box (FOX) family of transcription factors and encodes a protein that is 504 amino acids long?",
+    "type_q": "sequence",
+    "key_entities": [
+        "lymphedema-distichiasis syndrome",
+        "forkhead box (FOX) family",
+        "transcription factors"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is it true that individuals affected by lymphedema-distichiasis syndrome exhibit mutations in a gene that belongs to the forkhead box (FOX) family of transcription factors and encodes a protein that is 504 amino acids long?",
+            "short_answer": "FOXC2",
+            "long_answer": "Yes. Lymphedema-distichiasis syndrome is caused by heterozygous mutations in the FOXC2 gene, a member of the forkhead box (FOX) family of transcription factors. The canonical human FOXC2 protein is approximately 500 amino acids in length (commonly annotated as 501–504 aa), matching the description provided."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with lymphedema-distichiasis syndrome and belongs to the forkhead box (FOX) family of transcription factors?",
+                "search_keyword": "gene lymphedema-distichiasis syndrome forkhead box family",
+                "final_answer": {
+                    "short_answer": "FOXC2",
+                    "long_answer": "Yes. Lymphedema-distichiasis syndrome is caused by heterozygous mutations in FOXC2 (Forkhead box C2), a member of the forkhead box (FOX) family of transcription factors. The canonical human FOXC2 polypeptide is approximately 500 amino acids long (commonly annotated as 501–505 aa, depending on the database); many reports cite 504 aa. Pathogenic variants in this single gene are consistently found in affected individuals, confirming the statement."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "What is the length of the protein encoded by that gene?",
+                "search_keyword": "length of protein encoded by gene",
+                "final_answer": {
+                    "short_answer": "FOXC2",
+                    "long_answer": "Yes. Lymphedema-distichiasis syndrome is caused by heterozygous mutations in the FOXC2 gene, a member of the forkhead box (FOX) family of transcription factors. The canonical human FOXC2 protein is approximately 500 amino acids in length (commonly annotated as 501–504 aa), matching the description provided."
+                },
+                "target_answer_type": "length"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Yes. Lymphedema-distichiasis syndrome is caused by heterozygous mutations in the FOXC2 gene, a member of the forkhead box (FOX) family of transcription factors. The canonical human FOXC2 protein is approximately 500 amino acids in length (commonly annotated as 501–504 aa), matching the description provided.",
+        "short_answer": "FOXC2"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "QIDX": "401433",
+    "original_question": "Which chromosome contains the gene whose mutation leads to Li-Fraumeni syndrome, a condition seen in 4% of women with breast cancer under the age of 30?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Li-Fraumeni syndrome",
+        "breast cancer"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which chromosome contains the gene whose mutation leads to Li-Fraumeni syndrome, a condition seen in 4% of women with breast cancer under the age of 30?",
+            "short_answer": "Chromosome 17",
+            "long_answer": "Li-Fraumeni syndrome is caused by germ-line mutations in the tumor suppressor gene TP53, which is located on the short arm of chromosome 17 (17p13.1). Loss or alteration of this gene predisposes carriers to multiple early-onset cancers, including breast cancer in young women."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene's mutation leads to Li-Fraumeni syndrome?",
+                "search_keyword": "gene mutation Li-Fraumeni syndrome",
+                "final_answer": {
+                    "short_answer": "Chromosome 17",
+                    "long_answer": "Li-Fraumeni syndrome is caused by germ-line mutations in the TP53 tumor-suppressor gene, which is situated on the short arm (p13.1) of chromosome 17."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 17",
+                    "long_answer": "Li-Fraumeni syndrome is caused by germ-line mutations in the tumor suppressor gene TP53, which is located on the short arm of chromosome 17 (17p13.1). Loss or alteration of this gene predisposes carriers to multiple early-onset cancers, including breast cancer in young women."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Li-Fraumeni syndrome is caused by germ-line mutations in the tumor suppressor gene TP53, which is located on the short arm of chromosome 17 (17p13.1). Loss or alteration of this gene predisposes carriers to multiple early-onset cancers, including breast cancer in young women.",
+        "short_answer": "Chromosome 17"
+    }
+}

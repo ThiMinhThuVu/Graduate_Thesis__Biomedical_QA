@@ -1,0 +1,40 @@
+{
+    "QIDX": "264925",
+    "original_question": "Which birth defect is associated with the same class of medications that leads to fetal trimethadione syndrome?",
+    "type_q": "sequence",
+    "key_entities": [
+        "fetal trimethadione syndrome",
+        "birth defect"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which birth defect is associated with the same class of medications that leads to fetal trimethadione syndrome?",
+            "short_answer": "Spina bifida",
+            "long_answer": "Trimethadione is an anticonvulsant; teratogenic effects from this class of anti-seizure drugs also include the well-known risk of neural tube defects, most characteristically spina bifida (e.g., with valproic acid or carbamazepine). Thus, spina bifida is the birth defect associated with the same medication class responsible for fetal trimethadione syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "What class of medications is associated with fetal trimethadione syndrome?",
+                "search_keyword": "class of medications fetal trimethadione syndrome",
+                "final_answer": {
+                    "short_answer": "Spina bifida",
+                    "long_answer": "Fetal trimethadione syndrome results from in-utero exposure to the anticonvulsant drug trimethadione. Teratogenic effects are a class problem of antiepileptic/anticonvulsant medications. Another well-recognized malformation linked to this same drug class—particularly with valproic acid and carbamazepine—is the neural tube defect spina bifida. Thus, spina bifida is the birth defect associated with the same class of medications responsible for fetal trimethadione syndrome."
+                },
+                "target_answer_type": "medications"
+            },
+            "1": {
+                "question": "Which birth defect is associated with that class of medications?",
+                "search_keyword": "birth defect associated class of medications",
+                "final_answer": {
+                    "short_answer": "Spina bifida",
+                    "long_answer": "Trimethadione is an anticonvulsant; teratogenic effects from this class of anti-seizure drugs also include the well-known risk of neural tube defects, most characteristically spina bifida (e.g., with valproic acid or carbamazepine). Thus, spina bifida is the birth defect associated with the same medication class responsible for fetal trimethadione syndrome."
+                },
+                "target_answer_type": "birth defect"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Trimethadione is an anticonvulsant; teratogenic effects from this class of anti-seizure drugs also include the well-known risk of neural tube defects, most characteristically spina bifida (e.g., with valproic acid or carbamazepine). Thus, spina bifida is the birth defect associated with the same medication class responsible for fetal trimethadione syndrome.",
+        "short_answer": "Spina bifida"
+    }
+}

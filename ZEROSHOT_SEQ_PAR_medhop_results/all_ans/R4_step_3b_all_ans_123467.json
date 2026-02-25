@@ -1,0 +1,40 @@
+{
+    "QIDX": "123467",
+    "original_question": "Are the two genes most commonly associated with Maffucci syndrome located on chromosome 2 and chromosome 14?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Maffucci syndrome",
+        "chromosome 14?"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Are the two genes most commonly associated with Maffucci syndrome located on chromosome 2 and chromosome 14?",
+            "short_answer": "No",
+            "long_answer": "The two genes most frequently found to carry somatic mutations in Maffucci syndrome are IDH1 and IDH2. IDH1 is located on chromosome 2q34, whereas IDH2 is located on chromosome 15q26.1—not on chromosome 14—so the premise of the question is incorrect."
+        },
+        "0": {
+            "0": {
+                "question": "Which two genes are most commonly associated with Maffucci syndrome?",
+                "search_keyword": "genes associated Maffucci syndrome",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "Maffucci syndrome is most often linked to somatic mutations in the IDH1 gene on chromosome 2q33.3 and the IDH2 gene on chromosome 15q26.1—not chromosome 14. Thus, only one of the two genes lies on chromosome 2, while the second is on chromosome 15."
+                },
+                "target_answer_type": "genes"
+            },
+            "1": {
+                "question": "On which chromosomes are those two genes located?",
+                "search_keyword": "chromosome location genes",
+                "final_answer": {
+                    "short_answer": "No",
+                    "long_answer": "The two genes most frequently found to carry somatic mutations in Maffucci syndrome are IDH1 and IDH2. IDH1 is located on chromosome 2q34, whereas IDH2 is located on chromosome 15q26.1—not on chromosome 14—so the premise of the question is incorrect."
+                },
+                "target_answer_type": "chromosomes"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The two genes most frequently found to carry somatic mutations in Maffucci syndrome are IDH1 and IDH2. IDH1 is located on chromosome 2q34, whereas IDH2 is located on chromosome 15q26.1—not on chromosome 14—so the premise of the question is incorrect.",
+        "short_answer": "No"
+    }
+}

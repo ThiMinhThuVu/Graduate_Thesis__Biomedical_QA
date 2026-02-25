@@ -1,0 +1,41 @@
+{
+    "QIDX": "236323",
+    "original_question": "On which chromosome is the gene that, when mutated, leads to adenosine monophosphate deaminase (myoadenylate deaminase) deficiency type 1 located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "myoadenylate deaminase deficiency type 1",
+        "adenosine monophosphate deaminase",
+        ") deficiency type 1 located"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene that, when mutated, leads to adenosine monophosphate deaminase (myoadenylate deaminase) deficiency type 1 located?",
+            "short_answer": "Chromosome 1",
+            "long_answer": "Myoadenylate deaminase (adenosine monophosphate deaminase) deficiency type 1 is caused by mutations in the AMPD1 gene, which is mapped to the short arm of chromosome 1 (region 1p13)."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene, when mutated, leads to adenosine monophosphate deaminase deficiency type 1?",
+                "search_keyword": "gene mutation adenosine monophosphate deaminase deficiency type 1",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "Myoadenylate deaminase (AMPD1) deficiency type 1 results from pathogenic variants in the AMPD1 gene. Cytogenetic mapping places AMPD1 at 1p13.1 on chromosome 1; thus chromosome 1 is the chromosomal location implicated in this disorder."
+                },
+                "target_answer_type": "gene mutation"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene adenosine monophosphate deaminase",
+                "final_answer": {
+                    "short_answer": "Chromosome 1",
+                    "long_answer": "Myoadenylate deaminase (adenosine monophosphate deaminase) deficiency type 1 is caused by mutations in the AMPD1 gene, which is mapped to the short arm of chromosome 1 (region 1p13)."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Myoadenylate deaminase (adenosine monophosphate deaminase) deficiency type 1 is caused by mutations in the AMPD1 gene, which is mapped to the short arm of chromosome 1 (region 1p13).",
+        "short_answer": "Chromosome 1"
+    }
+}

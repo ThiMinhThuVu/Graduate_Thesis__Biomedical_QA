@@ -1,0 +1,49 @@
+{
+    "QIDX": "894544",
+    "original_question": "Is it true that a form of ectodermal dysplasia is associated with mutations in gene that codes for an IgSF CAM protein?",
+    "type_q": "sequence",
+    "key_entities": [
+        "ectodermal dysplasia",
+        "IgSF CAM protein"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is it true that a form of ectodermal dysplasia is associated with mutations in gene that codes for an IgSF CAM protein?",
+            "short_answer": "yes",
+            "long_answer": "Certain well-characterised ectodermal-dysplasia syndromes are produced by mutations in genes that encode immunoglobulin-superfamily cell-adhesion molecules (IgSF CAMs).\n\nExamples:\n1. Mutations in the PVRL1 gene (also called NECL1/nectin-1-like 1) cause the cleft-lip/palate-ectodermal-dysplasia syndrome (CLPED1). PVRL1 encodes a Ca2+-independent cell-adhesion molecule that belongs to the poliovirus-receptor/nectin subgroup of the IgSF.\n2. Mutations in NECTIN4 (PVRL4) produce ectodermal-dysplasia–syndactyly syndrome (EDSS1). NECTIN4 is likewise an IgSF CAM required for proper adhesion between ectodermal cells during development.\n\nThus, there are established forms of ectodermal dysplasia that are definitively linked to loss-of-function mutations in genes encoding IgSF cell-adhesion molecules, confirming the statement is correct."
+        },
+        "0": {
+            "0": {
+                "question": "What is ectodermal dysplasia and what are its associated forms?",
+                "search_keyword": "ectodermal dysplasia forms",
+                "final_answer": {
+                    "short_answer": "PVRL4 (nectin-4)",
+                    "long_answer": "Yes. Ectodermal-dysplasia–syndactyly syndrome (EDSS1) is caused by loss-of-function mutations in the PVRL4 gene, which encodes nectin-4, an immunoglobulin superfamily cell-adhesion molecule (IgSF CAM). Defective nectin-4 disrupts cell-cell adhesion in ectoderm-derived tissues, producing the characteristic abnormalities of this ectodermal dysplasia subtype."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "Which gene codes for an IgSF CAM protein associated with that form of ectodermal dysplasia?",
+                "search_keyword": "gene codes IgSF CAM protein ectodermal dysplasia",
+                "final_answer": {
+                    "short_answer": "NECTIN4 (PVRL4)",
+                    "long_answer": "Yes. Ectodermal dysplasia-syndactyly syndrome type 1 is produced by loss-of-function mutations in the NECTIN4 (also known as PVRL4) gene. NECTIN4 encodes nectin-4, a cell-adhesion molecule that belongs to the immunoglobulin superfamily (IgSF CAMs). Thus, this form of ectodermal dysplasia is directly associated with mutations in a gene coding for an IgSF CAM protein."
+                },
+                "target_answer_type": "gene"
+            },
+            "2": {
+                "question": "Is there a known association between mutations in that gene and ectodermal dysplasia?",
+                "search_keyword": "mutations gene association ectodermal dysplasia",
+                "final_answer": {
+                    "short_answer": "yes",
+                    "long_answer": "Certain well-characterised ectodermal-dysplasia syndromes are produced by mutations in genes that encode immunoglobulin-superfamily cell-adhesion molecules (IgSF CAMs).\n\nExamples:\n1. Mutations in the PVRL1 gene (also called NECL1/nectin-1-like 1) cause the cleft-lip/palate-ectodermal-dysplasia syndrome (CLPED1). PVRL1 encodes a Ca2+-independent cell-adhesion molecule that belongs to the poliovirus-receptor/nectin subgroup of the IgSF.\n2. Mutations in NECTIN4 (PVRL4) produce ectodermal-dysplasia–syndactyly syndrome (EDSS1). NECTIN4 is likewise an IgSF CAM required for proper adhesion between ectodermal cells during development.\n\nThus, there are established forms of ectodermal dysplasia that are definitively linked to loss-of-function mutations in genes encoding IgSF cell-adhesion molecules, confirming the statement is correct."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Certain well-characterised ectodermal-dysplasia syndromes are produced by mutations in genes that encode immunoglobulin-superfamily cell-adhesion molecules (IgSF CAMs).\n\nExamples:\n1. Mutations in the PVRL1 gene (also called NECL1/nectin-1-like 1) cause the cleft-lip/palate-ectodermal-dysplasia syndrome (CLPED1). PVRL1 encodes a Ca2+-independent cell-adhesion molecule that belongs to the poliovirus-receptor/nectin subgroup of the IgSF.\n2. Mutations in NECTIN4 (PVRL4) produce ectodermal-dysplasia–syndactyly syndrome (EDSS1). NECTIN4 is likewise an IgSF CAM required for proper adhesion between ectodermal cells during development.\n\nThus, there are established forms of ectodermal dysplasia that are definitively linked to loss-of-function mutations in genes encoding IgSF cell-adhesion molecules, confirming the statement is correct.",
+        "short_answer": "yes"
+    }
+}

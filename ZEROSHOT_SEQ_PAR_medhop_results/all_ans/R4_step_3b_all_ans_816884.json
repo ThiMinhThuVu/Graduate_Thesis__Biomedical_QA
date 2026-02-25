@@ -1,0 +1,50 @@
+{
+    "QIDX": "816884",
+    "original_question": "Is protein S, associated with protein S deficiency, the same as the molecule that inhibits membrane attack complex insertion during complement activation?",
+    "type_q": "sequence",
+    "key_entities": [
+        "membrane attack complex",
+        "protein S deficiency",
+        "Is protein S"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Is protein S, associated with protein S deficiency, the same as the molecule that inhibits membrane attack complex insertion during complement activation?",
+            "short_answer": "no",
+            "long_answer": "The protein S whose deficiency causes an inherited thrombophilia is the vitamin-K–dependent anticoagulant cofactor encoded by the PROS1 gene. It circulates in plasma bound to C4b-binding protein and serves as a cofactor for activated protein C in the degradation of factors Va and VIIIa.\n\nThe molecule that binds the C5b-7 complex and prevents insertion of the membrane attack complex during complement activation is vitronectin, historically called “S-protein” in complement literature. It is encoded by the VTN gene, is not vitamin-K dependent, and plays roles in cell adhesion and complement regulation, not in the anticoagulant pathway.\n\nThus, the two proteins share a confusing historical nickname but are distinct entities with different genes, structures, and physiological functions. Protein S deficiency involves the anticoagulant protein, not vitronectin; therefore they are not the same molecule."
+        },
+        "0": {
+            "0": {
+                "question": "What is protein S and what role does it play in protein S deficiency?",
+                "search_keyword": "protein S role protein S deficiency",
+                "final_answer": {
+                    "short_answer": "Vitronectin",
+                    "long_answer": "No. The molecule that blocks membrane attack-complex insertion in the complement system is vitronectin, historically called \"S-protein.\" The anticoagulant Protein S involved in hereditary Protein S deficiency is a different vitamin K–dependent cofactor for activated protein C in the coagulation pathway. Thus the two proteins are distinct despite the similar nomenclature."
+                },
+                "target_answer_type": "condition"
+            },
+            "1": {
+                "question": "What is the molecule that inhibits membrane attack complex insertion during complement activation?",
+                "search_keyword": "molecule inhibits membrane attack complex complement activation",
+                "final_answer": {
+                    "short_answer": "Vitronectin",
+                    "long_answer": "No. The vitamin K–dependent anticoagulant Protein S involved in Protein S deficiency is distinct from the complement-regulatory molecule that prevents membrane-attack-complex insertion. That inhibitor is vitronectin (historically called S-protein), a completely different plasma glycoprotein unrelated in gene, structure, and function to the coagulation Protein S."
+                },
+                "target_answer_type": "molecule"
+            },
+            "2": {
+                "question": "Is protein S the same as the molecule that inhibits membrane attack complex insertion during complement activation?",
+                "search_keyword": "comparison protein S molecule inhibits membrane attack complex",
+                "final_answer": {
+                    "short_answer": "no",
+                    "long_answer": "The protein S whose deficiency causes an inherited thrombophilia is the vitamin-K–dependent anticoagulant cofactor encoded by the PROS1 gene. It circulates in plasma bound to C4b-binding protein and serves as a cofactor for activated protein C in the degradation of factors Va and VIIIa.\n\nThe molecule that binds the C5b-7 complex and prevents insertion of the membrane attack complex during complement activation is vitronectin, historically called “S-protein” in complement literature. It is encoded by the VTN gene, is not vitamin-K dependent, and plays roles in cell adhesion and complement regulation, not in the anticoagulant pathway.\n\nThus, the two proteins share a confusing historical nickname but are distinct entities with different genes, structures, and physiological functions. Protein S deficiency involves the anticoagulant protein, not vitronectin; therefore they are not the same molecule."
+                },
+                "target_answer_type": "correctness"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The protein S whose deficiency causes an inherited thrombophilia is the vitamin-K–dependent anticoagulant cofactor encoded by the PROS1 gene. It circulates in plasma bound to C4b-binding protein and serves as a cofactor for activated protein C in the degradation of factors Va and VIIIa.\n\nThe molecule that binds the C5b-7 complex and prevents insertion of the membrane attack complex during complement activation is vitronectin, historically called “S-protein” in complement literature. It is encoded by the VTN gene, is not vitamin-K dependent, and plays roles in cell adhesion and complement regulation, not in the anticoagulant pathway.\n\nThus, the two proteins share a confusing historical nickname but are distinct entities with different genes, structures, and physiological functions. Protein S deficiency involves the anticoagulant protein, not vitronectin; therefore they are not the same molecule.",
+        "short_answer": "no"
+    }
+}

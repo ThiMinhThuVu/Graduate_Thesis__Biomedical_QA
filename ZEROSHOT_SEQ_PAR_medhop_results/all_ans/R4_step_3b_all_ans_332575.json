@@ -1,0 +1,39 @@
+{
+    "QIDX": "332575",
+    "original_question": "On which chromosome is the gene associated with the production of Rosenthal fibers located?",
+    "type_q": "sequence",
+    "key_entities": [
+        "Rosenthal fibers"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "On which chromosome is the gene associated with the production of Rosenthal fibers located?",
+            "short_answer": "Chromosome 17",
+            "long_answer": "Rosenthal fibers are intracellular inclusions characteristic of Alexander disease and other astrocytic disorders. They form when mutations in the glial fibrillary acidic protein (GFAP) gene alter the intermediate filament network in astrocytes, leading to aggregation of GFAP and associated proteins. The GFAP gene is located on chromosome 17 (band 17q21), so the production of Rosenthal fibers is linked to this chromosomal locus."
+        },
+        "0": {
+            "0": {
+                "question": "Which gene is associated with the production of Rosenthal fibers?",
+                "search_keyword": "gene associated production Rosenthal fibers",
+                "final_answer": {
+                    "short_answer": "Chromosome 17",
+                    "long_answer": "Rosenthal fibers are astrocytic inclusions characteristically seen in Alexander disease and are composed mainly of glial fibrillary acidic protein (GFAP). The GFAP gene, whose overexpression or mutation leads to formation of Rosenthal fibers, is located on chromosome 17 (cytogenetic band 17q21.3)."
+                },
+                "target_answer_type": "gene"
+            },
+            "1": {
+                "question": "On which chromosome is that gene located?",
+                "search_keyword": "chromosome location gene",
+                "final_answer": {
+                    "short_answer": "Chromosome 17",
+                    "long_answer": "Rosenthal fibers are intracellular inclusions characteristic of Alexander disease and other astrocytic disorders. They form when mutations in the glial fibrillary acidic protein (GFAP) gene alter the intermediate filament network in astrocytes, leading to aggregation of GFAP and associated proteins. The GFAP gene is located on chromosome 17 (band 17q21), so the production of Rosenthal fibers is linked to this chromosomal locus."
+                },
+                "target_answer_type": "chromosome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Rosenthal fibers are intracellular inclusions characteristic of Alexander disease and other astrocytic disorders. They form when mutations in the glial fibrillary acidic protein (GFAP) gene alter the intermediate filament network in astrocytes, leading to aggregation of GFAP and associated proteins. The GFAP gene is located on chromosome 17 (band 17q21), so the production of Rosenthal fibers is linked to this chromosomal locus.",
+        "short_answer": "Chromosome 17"
+    }
+}

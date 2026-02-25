@@ -1,0 +1,42 @@
+{
+    "QIDX": "691881",
+    "original_question": "Which kinesin family gene that regulates the Hedgehog signaling pathway is mutated in the extremely rare autosomal recessive syndrome first described by Albert Schinzel in 1979?",
+    "type_q": "sequence",
+    "key_entities": [
+        "autosomal recessive syndrome",
+        "Hedgehog signaling pathway",
+        "kinesin family gene",
+        "Albert Schinzel"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "Which kinesin family gene that regulates the Hedgehog signaling pathway is mutated in the extremely rare autosomal recessive syndrome first described by Albert Schinzel in 1979?",
+            "short_answer": "KIF7",
+            "long_answer": "Acrocallosal syndrome, an extremely rare autosomal-recessive disorder first delineated by Albert Schinzel in 1979, is caused by loss-of-function mutations in the kinesin family member 7 gene (KIF7). KIF7 encodes a ciliary kinesin that modulates Hedgehog signal transduction by controlling GLI transcription factor processing, so its disruption underlies the developmental abnormalities seen in the syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "Which autosomal recessive syndrome was first described by Albert Schinzel in 1979?",
+                "search_keyword": "autosomal recessive syndrome Albert Schinzel 1979",
+                "final_answer": {
+                    "short_answer": "KIF7",
+                    "long_answer": "The acrocallosal syndrome that Albert Schinzel first delineated in 1979 is an autosomal-recessive ciliopathy. Disease-causing, biallelic mutations were later found in the kinesin family gene KIF7. KIF7 encodes a ciliary kinesin that modulates the activity and trafficking of GLI transcription factors, thereby acting as a crucial regulator of the Hedgehog signaling pathway. Loss-of-function variants in KIF7 disrupt Hedgehog signalling and underlie the characteristic brain, craniofacial and limb anomalies seen in acrocallosal syndrome."
+                },
+                "target_answer_type": "syndrome"
+            },
+            "1": {
+                "question": "Which kinesin family gene is mutated in that syndrome and regulates the Hedgehog signaling pathway?",
+                "search_keyword": "kinesin family gene mutated Hedgehog signaling pathway syndrome",
+                "final_answer": {
+                    "short_answer": "KIF7",
+                    "long_answer": "Acrocallosal syndrome, an extremely rare autosomal-recessive disorder first delineated by Albert Schinzel in 1979, is caused by loss-of-function mutations in the kinesin family member 7 gene (KIF7). KIF7 encodes a ciliary kinesin that modulates Hedgehog signal transduction by controlling GLI transcription factor processing, so its disruption underlies the developmental abnormalities seen in the syndrome."
+                },
+                "target_answer_type": "gene"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Acrocallosal syndrome, an extremely rare autosomal-recessive disorder first delineated by Albert Schinzel in 1979, is caused by loss-of-function mutations in the kinesin family member 7 gene (KIF7). KIF7 encodes a ciliary kinesin that modulates Hedgehog signal transduction by controlling GLI transcription factor processing, so its disruption underlies the developmental abnormalities seen in the syndrome.",
+        "short_answer": "KIF7"
+    }
+}

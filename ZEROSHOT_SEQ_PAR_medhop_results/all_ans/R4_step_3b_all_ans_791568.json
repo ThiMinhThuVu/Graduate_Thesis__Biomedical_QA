@@ -1,0 +1,42 @@
+{
+    "QIDX": "791568",
+    "original_question": "What syndrome, listed in a class of rare congenital anomalies characterized by microphthalmia along with other non-ocular malformations as one of the types, is caused by a gene encoding a POZ/zinc finger transcription repressor and is important for roof of mouth development?",
+    "type_q": "sequence",
+    "key_entities": [
+        "POZ/zinc finger transcription repressor",
+        "roof of mouth development",
+        "non-ocular malformations",
+        "congenital anomalies"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What syndrome, listed in a class of rare congenital anomalies characterized by microphthalmia along with other non-ocular malformations as one of the types, is caused by a gene encoding a POZ/zinc finger transcription repressor and is important for roof of mouth development?",
+            "short_answer": "Lenz microphthalmia syndrome",
+            "long_answer": "Lenz microphthalmia syndrome (syndromic microphthalmia type 2, MCOPS2) is produced by loss-of-function mutations in the BCOR gene. BCOR encodes the corepressor of the POZ/BTB zinc-finger transcription repressor BCL6 and is essential for craniofacial morphogenesis, including proper formation of the roof of the mouth (palate). Defects in BCOR therefore cause the characteristic microphthalmia together with cleft palate and other systemic malformations that define this rare congenital syndrome."
+        },
+        "0": {
+            "0": {
+                "question": "What is a class of rare congenital anomalies characterized by microphthalmia along with other non-ocular malformations?",
+                "search_keyword": "rare congenital anomalies microphthalmia non-ocular malformations",
+                "final_answer": {
+                    "short_answer": "Oculofaciocardiodental syndrome",
+                    "long_answer": "Oculofaciocardiodental (OFCD) syndrome – classified as Microphthalmia, syndromic 2 (MCOPS2) – results from loss-of-function mutations in the BCOR gene.  BCOR encodes the BCL6 corepressor, a protein that associates with BCL6, a POZ/BTB zinc-finger transcription repressor, to silence target genes.  This BCOR–BCL6 complex is required for normal eye formation and for development of the palate (roof of the mouth).  Consequently, BCOR defects produce the characteristic combination of microphthalmia and other systemic anomalies that define OFCD syndrome."
+                },
+                "target_answer_type": "anomaly"
+            },
+            "1": {
+                "question": "Which syndrome in that class is caused by a gene encoding a POZ/zinc finger transcription repressor important for roof of mouth development?",
+                "search_keyword": "syndrome caused by gene POZ zinc finger transcription repressor roof mouth development",
+                "final_answer": {
+                    "short_answer": "Lenz microphthalmia syndrome",
+                    "long_answer": "Lenz microphthalmia syndrome (syndromic microphthalmia type 2, MCOPS2) is produced by loss-of-function mutations in the BCOR gene. BCOR encodes the corepressor of the POZ/BTB zinc-finger transcription repressor BCL6 and is essential for craniofacial morphogenesis, including proper formation of the roof of the mouth (palate). Defects in BCOR therefore cause the characteristic microphthalmia together with cleft palate and other systemic malformations that define this rare congenital syndrome."
+                },
+                "target_answer_type": "syndrome"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "Lenz microphthalmia syndrome (syndromic microphthalmia type 2, MCOPS2) is produced by loss-of-function mutations in the BCOR gene. BCOR encodes the corepressor of the POZ/BTB zinc-finger transcription repressor BCL6 and is essential for craniofacial morphogenesis, including proper formation of the roof of the mouth (palate). Defects in BCOR therefore cause the characteristic microphthalmia together with cleft palate and other systemic malformations that define this rare congenital syndrome.",
+        "short_answer": "Lenz microphthalmia syndrome"
+    }
+}

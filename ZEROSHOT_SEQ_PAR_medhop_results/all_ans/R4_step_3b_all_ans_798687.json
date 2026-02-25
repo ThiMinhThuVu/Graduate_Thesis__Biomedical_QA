@@ -1,0 +1,50 @@
+{
+    "QIDX": "798687",
+    "original_question": "What muscular condition is primarily associated with CAPN3 mutations in Eurasia and FKRP mutations in northern Europe?",
+    "type_q": "parallel",
+    "key_entities": [
+        "muscular condition",
+        "Eurasia and FKRP",
+        "CAPN3"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What muscular condition is primarily associated with CAPN3 mutations in Eurasia?",
+            "short_answer": "Limb-girdle muscular dystrophy type 2A",
+            "long_answer": "Mutations in the CAPN3 gene, which encodes the muscle-specific protease calpain-3, are the established cause of limb-girdle muscular dystrophy type 2A (calpainopathy). This autosomal-recessive condition is the most prevalent form of LGMD across many Eurasian populations, where CAPN3 pathogenic variants lead to progressive weakness of the pelvic and shoulder girdle muscles."
+        },
+        "0": {
+            "0": {
+                "question": "What muscular condition is primarily associated with CAPN3 mutations in Eurasia?",
+                "search_keyword": "muscular condition CAPN3 mutations Eurasia",
+                "final_answer": {
+                    "short_answer": "Limb-girdle muscular dystrophy type 2A",
+                    "long_answer": "Mutations in the CAPN3 gene, which encodes the muscle-specific protease calpain-3, are the established cause of limb-girdle muscular dystrophy type 2A (calpainopathy). This autosomal-recessive condition is the most prevalent form of LGMD across many Eurasian populations, where CAPN3 pathogenic variants lead to progressive weakness of the pelvic and shoulder girdle muscles."
+                },
+                "target_answer_type": "condition"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What muscular condition is primarily associated with FKRP mutations in northern Europe?",
+            "short_answer": "Limb-girdle muscular dystrophy type 2I",
+            "long_answer": "Mutations in the FKRP gene, especially the founder mutation c.826C>A (p.Leu276Ile), are common in northern European populations and overwhelmingly present as limb-girdle muscular dystrophy type 2I (now LGMDR9). This autosomal-recessive dystroglycanopathy is characterized by progressive weakness of the shoulder and pelvic girdle muscles and represents the predominant FKRP-associated muscle disorder in that geographic region."
+        },
+        "0": {
+            "0": {
+                "question": "What muscular condition is primarily associated with FKRP mutations in northern Europe?",
+                "search_keyword": "muscular condition FKRP mutations northern Europe",
+                "final_answer": {
+                    "short_answer": "Limb-girdle muscular dystrophy type 2I",
+                    "long_answer": "Mutations in the FKRP gene, especially the founder mutation c.826C>A (p.Leu276Ile), are common in northern European populations and overwhelmingly present as limb-girdle muscular dystrophy type 2I (now LGMDR9). This autosomal-recessive dystroglycanopathy is characterized by progressive weakness of the shoulder and pelvic girdle muscles and represents the predominant FKRP-associated muscle disorder in that geographic region."
+                },
+                "target_answer_type": "condition"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "CAPN3 mutations in Eurasia are associated with Limb-girdle muscular dystrophy type 2A (calpainopathy), while FKRP mutations in northern Europe are associated with Limb-girdle muscular dystrophy type 2I (LGMDR9).",
+        "short_answer": "Limb-girdle muscular dystrophy type 2A, Limb-girdle muscular dystrophy type 2I"
+    }
+}

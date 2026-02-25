@@ -15,35 +15,51 @@ def save_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
-# output = {}
-# metadata = load_json(r'data\cache\mapping\url2hash.json')
-# for url, hashid in metadata.items():
-#     url = url.lower()
-#     output[url] = hashid
-        
-# save_json(output, r'data\cache\mapping\url2hash.json')
-
-data = load_json(r'data\cache\mapping\entity2wiki.json')
-for i in range(9):
-    filepath = fr'data\cache\mapping\entity\entity2wiki{i}.json'
-    data.update(load_json(filepath))
-    
-save_json(data, r'data\cache\mapping\entity2wiki_2.json')
-exit()
-     
-     
-metadata = load_json(r'data\ner\entity_extraction_merge_9000.json')
 output = {}
-for qidx, item in metadata.items():
-    output[qidx] = {
-        'QIDX': qidx,
-        'Question': item['original_question'],
-        'type_q': item['type_q'],
-        'entities_q': item['entities_q']
-    }
-    
-save_json(output, r'data/metadata_9000q.json')
+metadata = load_json(r'data\cache\mapping\url2hash.json')
+for url, hashid in metadata.items():
+    url = url.lower()
+    output[url] = hashid
+        
+save_json(output, r'data\cache\mapping\url2hash.json')
+print(len(output.keys()))
 exit()
+
+# data = load_json(r'data\cache\mapping\entity2wiki.json')
+# print(len(data.keys()))
+# # for i in range(9):
+# #     filepath = fr'data\cache\mapping\entity\entity2wiki{i}.json'
+# #     data.update(load_json(filepath))
+    
+# filepath = fr'data\cache\mapping\entity\entity2wiki9.json'
+# data.update(load_json(filepath))
+# print(len(data.keys()))
+
+# save_json(data, r'data\cache\mapping\entity2wiki_2.json')
+# exit()
+
+# data = load_json(r'data\cache\mapping\url2hash.json')
+# print(len(data.keys()))
+
+# filepath = fr'data\cache\mapping\entity\url2hash9.json'
+# data.update(load_json(filepath))
+# print(len(data.keys()))
+
+# save_json(data, r'data\cache\mapping\url2hash_2.json')
+# exit()
+     
+# metadata = load_json(r'data\ner\entity_extraction_merge_9000.json')
+# output = {}
+# for qidx, item in metadata.items():
+#     output[qidx] = {
+#         'QIDX': qidx,
+#         'Question': item['original_question'],
+#         'type_q': item['type_q'],
+#         'entities_q': item['entities_q']
+#     }
+    
+# save_json(output, r'data/metadata_9000q.json')
+# exit()
 # cache_url = load_json(r"data\cache\mapping\url2hash.json")
 
 # for i in range(6,1):

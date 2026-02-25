@@ -1,0 +1,49 @@
+{
+    "QIDX": "226024",
+    "original_question": "Is NPH estimated to have a higher prevalence rate among persons aged 65 or older compared to congenital hydrocephalus?",
+    "type_q": "parallel",
+    "key_entities": [
+        "congenital hydrocephalus",
+        "Is NPH"
+    ],
+    "1": {
+        "final_qi": {
+            "question": "What is the prevalence rate of NPH among persons aged 65 or older?",
+            "short_answer": "≈0.5%",
+            "long_answer": "Epidemiologic surveys in community-dwelling older adults show that idiopathic normal-pressure hydrocephalus is present in roughly one out of every 200 people aged 65 years or older, giving a prevalence of about 0.5 percent in this age group."
+        },
+        "0": {
+            "0": {
+                "question": "What is the prevalence rate of NPH among persons aged 65 or older?",
+                "search_keyword": "NPH prevalence rate persons aged 65 or older",
+                "final_answer": {
+                    "short_answer": "≈0.5%",
+                    "long_answer": "Epidemiologic surveys in community-dwelling older adults show that idiopathic normal-pressure hydrocephalus is present in roughly one out of every 200 people aged 65 years or older, giving a prevalence of about 0.5 percent in this age group."
+                },
+                "target_answer_type": "prevalence rate"
+            }
+        }
+    },
+    "2": {
+        "final_qi": {
+            "question": "What is the prevalence rate of congenital hydrocephalus among persons aged 65 or older?",
+            "short_answer": "≈0.04 % (≈4 per 10 000)",
+            "long_answer": "Population-based estimates from the U.S. National Health Interview Survey indicate that congenital hydrocephalus is reported in roughly 4 persons per 10 000 among adults aged ≥ 65 years, equivalent to about 0.04 % of that age group. This low prevalence reflects the rarity of the defect at birth and the limited proportion of affected individuals who survive into older adulthood."
+        },
+        "0": {
+            "0": {
+                "question": "What is the prevalence rate of congenital hydrocephalus among persons aged 65 or older?",
+                "search_keyword": "prevalence rate congenital hydrocephalus aged 65 or older",
+                "final_answer": {
+                    "short_answer": "≈0.04 % (≈4 per 10 000)",
+                    "long_answer": "Population-based estimates from the U.S. National Health Interview Survey indicate that congenital hydrocephalus is reported in roughly 4 persons per 10 000 among adults aged ≥ 65 years, equivalent to about 0.04 % of that age group. This low prevalence reflects the rarity of the defect at birth and the limited proportion of affected individuals who survive into older adulthood."
+                },
+                "target_answer_type": "prevalence rate"
+            }
+        }
+    },
+    "final_answer": {
+        "long_answer": "The prevalence of NPH in persons aged 65 or older is approximately 0.5% while the prevalence of congenital hydrocephalus in the same age group is approximately 0.04%. Since 0.5% is greater than 0.04%, NPH has a higher prevalence rate among this age group.",
+        "short_answer": "yes"
+    }
+}
