@@ -2,7 +2,7 @@ import requests
 import time
 import json
 
-from src.api_key import API_LIST_4O_mini, API_LIST_O3_mini,API_LIST_4_1_mini, API_SEARCH_1, API_LIST_O3
+from src.api_key import API_LIST_4O_mini, API_LIST_O3_mini,API_LIST_4_1_mini, API_SEARCH_1, API_LIST_O3, request_api_o3_mini
 
 API_URL = "https://cf.mnapi.com/v1/chat/completions"  
 
@@ -17,8 +17,10 @@ def request_api(messages, model, temperature=0):
         API_LIST = API_LIST_4O_mini
         max_tokens = 4096
     elif model == "o3-mini":
-        API_LIST = API_LIST_O3_mini
         max_tokens = 8192
+        return request_api_o3_mini(messages, max_completion_tokens=max_tokens)
+        API_LIST = API_LIST_O3_mini
+        
     elif model == "gpt-4.1-mini":
         API_LIST = API_LIST_4_1_mini
         max_tokens = 8192
