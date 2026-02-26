@@ -25,18 +25,20 @@ def save_json(data, file_path):
 
 # save_json(list(all_ner), 'data/ner/SEQ/spacy_entity_9000q_search_filter.json' )
 # exit()
-# output = {}
-# cache_url = load_json(r'data\cache\mapping\url2hash.json')
-# metadata = load_json(r'data\cache\mapping\entity\url2hash10.json')
-# cache_url.update(metadata)
+
+output = {}
+cache_url = load_json(r'data\cache\mapping\entity2wiki.json')
+metadata = load_json(r'data\cache\mapping\entity\entity2wiki12.json')
+cache_url.update(metadata)
         
-# save_json(cache_url, r'data\cache\mapping\url2hash.json')
-# print(len(cache_url.keys()))
-# exit()
+save_json(cache_url, r'data\cache\mapping\entity2wiki.json')
+print(len(cache_url.keys()))
+exit()
+
 
 # 1. Khai báo đường dẫn
 cache_path = r'data\cache\mapping\url2hash.json'
-metadata_path = r'data\cache\mapping\entity\url2hash11.json'
+metadata_path = r'data\cache\mapping\entity\url2hash12.json'
 
 # 2. Load dữ liệu
 cache_url = load_json(cache_path)
@@ -64,6 +66,8 @@ exit()
 # save_json(cache_url, r'data\cache\mapping\url2hash.json')
 # print(len(cache_url.keys()))
 # # exit()
+
+
 # output = {}
 # metadata = load_json(r'data\cache\mapping\url2hash.json')
 # for url, hashid in metadata.items():

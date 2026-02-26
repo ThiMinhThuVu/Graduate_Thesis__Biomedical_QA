@@ -279,15 +279,12 @@ if __name__ == "__main__":
         qidx = str(qidx)
         question = sample['Question']             
         type_q = sample['type_q']    
-        if cnt == 50:
-            print(cnt)
-            exit()
+    
         #CONFIG    
         if type_q != "sequence":# "sequence": # "parallel":
             continue
         else:
             cnt += 1
-        print(cnt)
         
         sample['type_q'] = type_q        
         if type_q in ['direct', 'parallel', 'comparison']:
