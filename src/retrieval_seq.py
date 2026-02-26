@@ -779,7 +779,7 @@ def compute_cluster_info(labels, docs, embed_docs):
 
     return cluster_data
 
-def cluster_per_qid_search_api(doc_sources, crawl_data_wikipedia, embeding_model_cluster, n_clusters=7, topk=5,method='euclidean'):
+def cluster_per_qid_search_api(doc_sources, crawl_data_wikipedia, embeding_model_cluster, n_clusters=7, topk=3,method='euclidean'):
     #embed doc search api
     all_embeddings = []
     for article in doc_sources:
