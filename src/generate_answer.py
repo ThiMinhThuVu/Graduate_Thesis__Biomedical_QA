@@ -45,27 +45,50 @@ def _generate_answer(question, search_kw, key_entities, relevant_info, dataset=N
     
     result_json = request_api(messages, model)
     
-    try:
-        result_dict = json.loads(result_json)
-    except Exception as e:
-        print(f"Error parsing JSON response: {e}")
-        print(f"Raw response: {result_json}")
+    # try:
+    #     result_dict = json.loads(result_json)
+    # except Exception as e:
+    #     print(f"Error parsing JSON response: {e}")
+    #     print(f"Raw response: {result_json}")
 
+    #     long_answer = ""
+    #     short_answer = ""
+        
+    #     if "long_answer" in result_json.lower() and "short_answer" in result_json.lower():
+    #         parts = result_json.split("long_answer")
+    #         if len(parts) > 1:
+    #             remaining = parts[1].strip()
+    #             if "short_answer" in remaining:
+    #                 answers = remaining.split("short_answer")
+    #                 long_answer = answers[0].strip().strip('":').strip()
+    #                 short_answer = answers[1].strip().strip('":').strip()
+    #     result_dict = {
+    #         "long_answer": long_answer,
+    #         "short_answer": short_answer
+    #     }
+    
+    clean_json = result_json.replace("```json", "").replace("```", "").strip()
+
+    try:
+        result_dict = json.loads(clean_json)
+    except Exception as e:
+        print(f"JSON vẫn lỗi: {e}. Đang bóc tách thủ công...")
+        
         long_answer = ""
         short_answer = ""
         
-        if "long_answer" in result_json.lower() and "short_answer" in result_json.lower():
-            parts = result_json.split("long_answer")
-            if len(parts) > 1:
-                remaining = parts[1].strip()
-                if "short_answer" in remaining:
-                    answers = remaining.split("short_answer")
-                    long_answer = answers[0].strip().strip('":').strip()
-                    short_answer = answers[1].strip().strip('":').strip()
-        result_dict = {
-            "long_answer": long_answer,
-            "short_answer": short_answer
-        }
+        if '"short_answer":' in clean_json:
+            tmp = clean_json.split('"short_answer":')[1]
+            short_answer = tmp.split(',')[0].replace('"', '').replace(':', '').strip()
+            
+        if '"long_answer":' in clean_json:
+            tmp = clean_json.split('"long_answer":')[1]
+            long_answer = tmp.rsplit('}', 1)[0].replace('"', '').replace(':', '').strip()
+
+    result_dict = {
+        "long_answer": long_answer,
+        "short_answer": short_answer
+    }
  
     return result_dict
 

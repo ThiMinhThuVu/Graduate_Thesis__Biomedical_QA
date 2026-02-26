@@ -58,8 +58,8 @@ def extract_quoted_strings(text: str):
 # data1 = load_json(r'data\ner\DIRECT1000\get_entity_from_question_spacy.json')
 # data2 = load_json(r'data\ner\DIRECT1000\entity_extraction_results.json')
 
-data1 = load_json(r'data\ner\SEQ\spacy_entity_9000q_1.json')
-data2 = load_json(r'data\ner\LLM\ner_llm_9000_seq.json')
+data1 = load_json(r'data\ner\SEQ\spacy_entity_1000q_1.json')
+data2 = load_json(r'data\ner\LLM\LLM_entity_1000q_1.json')
 
 data_search = []
 data_search_lower = []
@@ -98,7 +98,7 @@ for i, qidx in enumerate(list(data1.keys())):
     extracted_entities = []
     if qidx in data2:
         tmp = data2[qidx]
-        extracted_entities = tmp['entities']
+        extracted_entities = tmp['extracted_entities']
         for extract_entity in extracted_entities:
             if len(extract_entity.split(' ')) < 2 and extract_entity not in data1[qidx]["extracted_entities"]["detail"]:
                 continue
@@ -203,8 +203,8 @@ data_search_sorted = sorted(data_search, key=str.lower)
 search_spacy = list(load_json(r'data\cache\mapping\entity2wiki.json').keys())
 
 search_update = list(set(data_search_sorted)-set(search_spacy))
-save_json(search_update, r'data\ner\DIRECT1000\data_search_9000_seq.json')
+save_json(search_update, r'data\ner\DIRECT1000\data_search_1000_seq.json')
 
-save_json(merge_dict, r'data\ner\DIRECT1000\meta_entity_9000q_seq.json')
+save_json(merge_dict, r'data\ner\DIRECT1000\meta_entity_1000q_seq.json')
 
 print(f"✅ Done. Saved to {OUTPUT_TXT}")

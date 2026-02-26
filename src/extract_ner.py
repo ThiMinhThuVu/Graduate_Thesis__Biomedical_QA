@@ -122,8 +122,8 @@ if __name__ == "__main__":
     run = 1
     output = {}
     # fileoutput = f'data/ner/SEQ/spacy_entity_9000q_{run}.json'
-    data = load_json(r'data\metadata_9000q.json')
-    # data = load_json(r'data\metadata_entity.json')
+    # data = load_json(r'data\metadata_9000q.json')
+    data = load_json(r'data\metadata_entity.json')
 
     # for i, (qidx, original_question) in enumerate(tqdm(data.items(), desc="LLM Extracting NER")):
         
@@ -215,7 +215,7 @@ if __name__ == "__main__":
     # print(f'Saved search list to: {search_list_path}')
     
     cnt = 0
-    seq_ner = load_json(r'data\ner\SEQ\meta_entity_9000q_seq.json')
+    seq_ner = load_json(r'data\ner\DIRECT1000\meta_entity_1000q_seq.json')
     BASE = "medhop_preprocessing/step1/1"
     for i, (qidx, item) in enumerate(tqdm(data.items(), desc="Extracting NER")):
         if item['type_q'] != 'sequence':
