@@ -47,8 +47,8 @@ list_ner = load_json(r'data/ner/SEQ/spacy_entity_9000q_search.json')
 # save_json(cache_url, r'2wiki\cache\mapping\url2hash.json')
 
 
-cache_old =load_json(r'2wiki/crawl/crawl_wiki_2wiki_1.json')
-
+cache_old = load_json(r'2wiki/crawl/crawl_wiki_2wiki_1.json')
+# cache_old.update(load_json(r'2wiki/crawl/crawl_wiki_2wiki_2.json'))
 BASE = '2wiki/cache/IR_20'
 run = 2
 list_url_need = {}

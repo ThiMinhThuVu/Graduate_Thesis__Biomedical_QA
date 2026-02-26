@@ -18,9 +18,7 @@ def request_api(messages, model, temperature=0):
         max_tokens = 4096
     elif model == "o3-mini":
         max_tokens = 8192
-        return request_api_o3_mini(messages, max_completion_tokens=max_tokens)
         API_LIST = API_LIST_O3_mini
-        
     elif model == "gpt-4.1-mini":
         API_LIST = API_LIST_4_1_mini
         max_tokens = 8192

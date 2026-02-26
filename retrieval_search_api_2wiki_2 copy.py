@@ -1069,8 +1069,8 @@ if __name__ == "__main__":
     # cache_hashid = load_json(file_path_cache)    
 
     # input_data = load_json(r'2wiki\cache\dict_searchkw\compositional_dict_search_kw.json')
-    # input_data2 = load_json(r'2wiki\cache\dict_searchkw\comparison_dict_search_kw.json')
-    input_data = load_json(r'2wiki\cache\dict_searchkw\inference_dict_search_kw.json')
+    input_data = load_json(r'2wiki\cache\dict_searchkw\comparison_dict_search_kw.json')
+    # input_data3 = load_json(r'2wiki\cache\dict_searchkw\inference_dict_search_kw.json')
     # input_data4 = load_json(r'2wiki\cache\dict_searchkw\bridge_comparison_dict_search_kw.json')
     
     # input_data.update(input_data2)
@@ -1081,10 +1081,11 @@ if __name__ == "__main__":
     
     for i, (qidx, list_searchkw) in enumerate(tqdm(input_data.items(), desc="Processing")):
         
-        # if i < 9000 and i > 10000:
-        #     continue
+        if i < 2000:
+            continue
         
         for search_kw in list_searchkw:
+            # hashid, cache_hashid = register_query_cache(search_kw, cache_hashid)
             hashid = make_cache_filename(search_kw.lower())
             filepath = f"{cache_IR20}/{hashid}"
             if os.path.exists(filepath):
