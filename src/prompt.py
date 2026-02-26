@@ -2802,11 +2802,62 @@ Generate a BETTER decomposition plan that ends with finding a "{target_answer_ty
     else:
         return None
 
+# def load_entity_extraction_prompt(question):
+#    messages = [
+#        {
+#            "role": "system",
+#            "content": """## Role
+# You are an expert in biomedical entity extraction.
+
+# ## Task
+# Extract all specific biomedical-related entities (including persons, organizations, chemicals, diseases, genes, proteins, etc.) from the user's question.
+
+# ## Instructions
+# 1. **Identify Entities**: Locate distinct, specific biomedical entities.
+# 2. **Extract Exact Phrase**: Use the exact text segment *verbatim* from the 'Question'.
+# 3. **Negative Constraints (Do NOT Extract)**:
+#    - **Unknown/Vague Entities**: Do not extract pronouns or vague references (e.g., "those genes", "the patient", "this protein", "it").
+#    - **Counts & Quantities**: Do not extract numerical counts or measurements (e.g., "5 exons", "20mg", "three cases").
+#    - **General Verbs/Adjectives**: Avoid non-entity descriptive words unless they are part of a formal named entity.
+# 4. **Output Format**: Return a JSON list of strings.
+
+# ## Output Format (JSON)
+# ["Entity 1", "Entity 2", ...]
+# """
+#        },
+#        {
+#            "role": "user",
+#            "content": f"""## Examples
+
+# **Example 1**
+# Question: "How many of those genes contain 5 exons in the BRCA1 region?"
+# Output: ["BRCA1"]
+
+# **Example 2**
+# Question: "Which clotting factor deficiency causes hemophilia A?"
+# Output: ["clotting factor deficiency", "hemophilia A"]
+
+# **Example 3**
+# Question: "Did the World Health Organization (WHO) report on the SARS-CoV-2 mutation?"
+# Output: ["World Health Organization", "WHO", "SARS-CoV-2"]
+
+# ---
+
+# ## Input
+# Question: "{question}"
+
+# ## Task
+# Extract only specific, verbatim biomedical entity phrases. Exclude vague references and counts. Return as a JSON list of strings.
+# """
+#        }
+#    ]
+#    return messages
+
 def load_entity_extraction_prompt(question):
-   messages = [
-       {
-           "role": "system",
-           "content": """## Role
+    messages = [
+        {
+            "role": "system",
+            "content": """## Role
 You are an expert in biomedical entity extraction.
 
 ## Task
@@ -2815,31 +2866,32 @@ Extract all specific biomedical-related entities (including persons, organizatio
 ## Instructions
 1. **Identify Entities**: Locate distinct, specific biomedical entities.
 2. **Extract Exact Phrase**: Use the exact text segment *verbatim* from the 'Question'.
-3. **Negative Constraints (Do NOT Extract)**:
-   - **Unknown/Vague Entities**: Do not extract pronouns or vague references (e.g., "those genes", "the patient", "this protein", "it").
-   - **Counts & Quantities**: Do not extract numerical counts or measurements (e.g., "5 exons", "20mg", "three cases").
-   - **General Verbs/Adjectives**: Avoid non-entity descriptive words unless they are part of a formal named entity.
-4. **Output Format**: Return a JSON list of strings.
+3. **Negative Constraints**:
+    - Do NOT extract pronouns or vague references (e.g., "those genes", "it").
+    - Do NOT extract numerical counts or measurements (e.g., "5 exons", "20mg").
+4. **Output Format**: You MUST return a JSON object with a key named "entities" which contains a list of strings.
 
-## Output Format (JSON)
-["Entity 1", "Entity 2", ...]
+## Output Format (Example JSON)
+{
+  "entities": ["Entity 1", "Entity 2"]
+}
 """
-       },
-       {
-           "role": "user",
-           "content": f"""## Examples
+        },
+        {
+            "role": "user",
+            "content": f"""## Examples
 
 **Example 1**
 Question: "How many of those genes contain 5 exons in the BRCA1 region?"
-Output: ["BRCA1"]
+Output: {{"entities": ["BRCA1"]}}
 
 **Example 2**
 Question: "Which clotting factor deficiency causes hemophilia A?"
-Output: ["clotting factor deficiency", "hemophilia A"]
+Output: {{"entities": ["clotting factor deficiency", "hemophilia A"]}}
 
 **Example 3**
 Question: "Did the World Health Organization (WHO) report on the SARS-CoV-2 mutation?"
-Output: ["World Health Organization", "WHO", "SARS-CoV-2"]
+Output: {{"entities": ["World Health Organization", "WHO", "SARS-CoV-2"]}}
 
 ---
 
@@ -2847,11 +2899,10 @@ Output: ["World Health Organization", "WHO", "SARS-CoV-2"]
 Question: "{question}"
 
 ## Task
-Extract only specific, verbatim biomedical entity phrases. Exclude vague references and counts. Return as a JSON list of strings.
+Extract only specific, verbatim biomedical entity phrases. Return the result as a JSON object with the key "entities".
 """
-       }
-   ]
-   return messages
-
+        }
+    ]
+    return messages
 
 

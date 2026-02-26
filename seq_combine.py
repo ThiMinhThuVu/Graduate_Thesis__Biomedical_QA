@@ -111,9 +111,9 @@ def gen_combine_seq_answer(target_answer_type, original_question, context, model
     return json.loads(answer)
 
 if __name__ == "__main__":
-    RESULT_DIR = "CT2B_medhop_results_MINH/CT2B_medhop_results/all_ans"
-    output_file = "CT2B_medhop_results_MINH/CT2B_medhop_results/combine/seq_combine.json"
-    golden_data = load_json("data/all_answer_golden_56.json")
+    RESULT_DIR = "SEQ_medhop_results/all_ans"
+    output_file = "SEQ_medhop_results/seq_combine.json"
+    golden_data = load_json("data/all_answer_golden_56_update_v0.json")
     metadata = load_json(r'data\metadata_medhop.json')
     
     if os.path.exists(output_file):

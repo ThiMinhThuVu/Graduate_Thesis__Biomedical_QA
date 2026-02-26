@@ -55,16 +55,10 @@ def extract_quoted_strings(text: str):
     matches = re.findall(pattern, text)
     return [m[0] if m[0] else m[1] for m in matches]
 
-# data1 = load_json(r'data\get_entity_from_question_spacy_parallel_seq.json')
-# data2 = load_json(r'data\entity_extraction_results_LLM.json')
-
-data1 = load_json(r'data\ner\SEQ\spacy_entity_1000q_1.json')
-data2 = load_json(r'data\ner\SEQ\LLM_entity_1000q_1.json')
-# data3 = load_json(r'data\ner\LLM\LLM_entity_9000q_2.json')
-# data4 = load_json(r'data\ner\LLM\LLM_entity_9000q_3.json')
-# data2.update(data3)
-# data2.update(data4)
-
+data1 = load_json(r'data\ner\DIRECT1000\get_entity_from_question_spacy.json')
+data2 = load_json(r'data\ner\DIRECT1000\entity_extraction_results.json')
+# data1 = load_json(r'data\ner\SEQ\spacy_entity_9000q_1.json')
+# data2 = load_json(r'data\ner\LLM\ner_llm_9000_seq.json')
 
 data_search = []
 data_search_lower = []
@@ -74,25 +68,26 @@ result_dict = {}
 OUTPUT_TXT = "output_entities.txt"
 
 merge_dict = copy.copy(data1)
-for qidx in data1:
-    question = data1[qidx]["question"]
+for i, qidx in enumerate(list(data1.keys())):
+    # if qidx  != "556694|0":
+    #     continue
+        
+    question = data1[qidx]["original question"]
 
     arr = get_longest_capitalized_substrings(question)
-    # if len(arr) > 0:
-    #     print('hello')
-
+ 
     for tmp in get_longest_capitalized_substrings(question):
-        data1[qidx]["extracted_entities"]["detail"][tmp] = {
+        data1[qidx]["entities_q"]["detail"][tmp] = {
             "label": "new_1",
             "bio_type": None,
             "source": ['custom']
         }
     
-    # if len(get_longest_capitalized_substrings(question)) > 0:
-    #     print(get_longest_capitalized_substrings(question))
+    if len(get_longest_capitalized_substrings(question)) > 0:
+        print(get_longest_capitalized_substrings(question))
 
     for tmp in extract_quoted_strings(question):
-        data1[qidx]["extracted_entities"]["detail"][tmp] = {
+        data1[qidx]["entities_q"]["detail"][tmp] = {
             "label": "new_2",
             "bio_type": None,
             "source": ['custom']
@@ -100,29 +95,24 @@ for qidx in data1:
 
 
     extracted_entities = []
-    for qid, tmp in data2.items():
-        # print(qidx)
-        # print(tmp)
-        if str(qidx) == str(tmp['id']):
-            # extracted_entities = json.loads(tmp['extracted_entities'])
-            extracted_entities = tmp['extracted_entities']
-            for extract_entity in extracted_entities:
-                if len(extract_entity.split(' ')) < 2 and extract_entity not in data1[qidx]["extracted_entities"]["detail"]:
-                    continue
-                if extract_entity in data1[qidx]["extracted_entities"]["detail"]:
-                    continue
+    if qidx in data2:
+        tmp = data2[qidx]
+        extracted_entities = tmp['entities']
+        for extract_entity in extracted_entities:
+            if len(extract_entity.split(' ')) < 2 and extract_entity not in data1[qidx]["extracted_entities"]["detail"]:
+                continue
+            if extract_entity in data1[qidx]["entities_q"]["detail"]:
+                continue
 
-                data1[qidx]["extracted_entities"]["detail"][extract_entity] = {
-                    "label": "gpt",
-                    "bio_type": None,
-                    "source": ['gpt']
-                }
-            break
-    
+            data1[qidx]["entities_q"]["detail"][extract_entity] = {
+                "label": "gpt",
+                "bio_type": None,
+                "source": ['gpt']
+            }
 
     sorted_dict = dict(
         sorted(
-            data1[qidx]["extracted_entities"]["detail"].items(),
+            data1[qidx]["entities_q"]["detail"].items(),
             key=lambda x: len(x[0]),
             reverse=True
         )
@@ -133,7 +123,7 @@ for qidx in data1:
 
     cnt = 0
     cnt_gpt = 0
-    merge_dict[qidx]["extracted_entities"]["detail"] = {}
+    merge_dict[qidx]["entities_q"]["detail"] = {}
     
     for entity, info in sorted_dict.items():
         if cnt == 5 or cnt_gpt == 5:
@@ -195,27 +185,27 @@ for qidx in data1:
 
             printed_array.append(entity)
             if entity.lower() not in data_search_lower:
-                data_search.append(entity.lower())
+                data_search.append(entity)
                 data_search_lower.append(entity.lower())
                 type.append(info['label'])
                 
-                merge_dict[qidx]["extracted_entities"]["detail"][entity] = {
-                    'label': info['label'],
-                    'bio_type': info['bio_type'],
-                    'source': info['source']
-                }
+            merge_dict[qidx]["entities_q"]["detail"][entity] = {
+                'label': info['label'],
+                'bio_type': info['bio_type'],
+                'source': info['source']
+            }
 
 data_search_sorted = sorted(data_search, key=str.lower)
+
 search_spacy = list(load_json(r'data\cache\mapping\entity2wiki.json').keys())
 
 search_update = list(set(data_search_sorted)-set(search_spacy))
-save_json(search_update, r'data\ner\data_search_1000_seq.json')
+save_json(search_update, r'data\ner\DIRECT1000\data_search_1000.json')
 
-# save_json(data_search_sorted, r'data\ner\data_search_9000.json')
-
+# save_json(data_search_sorted, 'analysis/data_search.json')
 
 # save_json(result_dict, 'dict_filter_entity_extraction.json')
 
-save_json(merge_dict, r'data\ner\entity_extraction_1000_seq.json')
+save_json(merge_dict, r'data\ner\DIRECT1000\meta_entity_1000q_direct_parallel.json')
 
-# print(f"✅ Done. Saved to {OUTPUT_TXT}")
+print(f"✅ Done. Saved to {OUTPUT_TXT}")

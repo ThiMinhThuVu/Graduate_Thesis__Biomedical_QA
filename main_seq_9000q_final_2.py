@@ -241,25 +241,24 @@ def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
         print(f"\nSaved to {file_all_ans}")    
 
+
 if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)
     
     #edit config
-    KB="SEQ" # Answer2, ...
-    threads = [250, 500] 
+    KB="SEQUENCE_9000" # Answer2, ...
+    threads = [100, 200] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
-    model_path = configs['classification'][dataset]['model_path']
-    tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
+    # model_path = configs['classification'][dataset]['model_path']
+    # tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
     
     settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
-    raw_data_file = configs['dataset'][dataset][data_type]
-    raw_data = load_json(raw_data_file)
-        
+
     if dataset == "medhop":
         settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
         settings['normalize'] = True
@@ -268,60 +267,44 @@ if __name__ == "__main__":
     # reset_directory(r"data/cache/filter_ner_wikipedia")
     # reset_directory(r"data/cache/filter_wikipedia")
     load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
-    # ner_version = 4
+
     ner_version = "#3"
-    metadata = load_json('data/metadata_medhop.json')
-    meta_ner = load_json(r'data/metadata_entity.json') 
+    metadata = load_json('data/metadata_9000q.json')
     cnt = 0
     
 
-    for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
+    for idx, (qidx, sample) in enumerate(tqdm(metadata.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
-        
-        qidx = sample['QIDX']
-        question = sample['Question']
-     
-        # target_ans_type = metadata[qidx]['target_answer_type']
-        
-        # CONFIG YESNO
-        # check_yn = target_ans_type == 'correctness'
-        # if check_yn:
-        #     # continue
-        # else:
-        #     # continue
-        
-        type_q = metadata[qidx]['type_q']    
-        
+        qidx = str(qidx)
+        question = sample['Question']             
+        type_q = sample['type_q']    
+        if cnt == 50:
+            print(cnt)
+            exit()
         #CONFIG    
         if type_q != "sequence":# "sequence": # "parallel":
             continue
         else:
             cnt += 1
-    
+        print(cnt)
+        
         sample['type_q'] = type_q        
         if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False
         else:
             is_seq = True
 
-        if ner_version == 2:
-            question_type_to_ner = question_type_to_ner_2
-        elif ner_version == 3:
-            question_type_to_ner = question_type_to_ner_3
-        elif ner_version == 4:
-            question_type_to_ner = question_type_to_ner_4
-        elif ner_version == "#3":
-            question_type_to_ner = {} # để tất cả các type trả về là ["DISEASE", "CHEMICAL"]   
         
+        question_type_to_ner = {} # để tất cả các type trả về là ["DISEASE", "CHEMICAL"]   
         if type_q == 'sequence':
             list_ner_q = None
         else:
-            dict_ner_q = meta_ner[qidx]['entities_q'].get('detail', {})
+            dict_ner_q = sample['entities_q'].get('detail', {})
             list_ner_q = list(dict_ner_q.keys())
         
         file_cache_o3_zeroshot = configs['cache']['zeroshot'][type_q] # direct, sequence, parallel
-
+        
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
             using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=True,
             question_type_to_ner=question_type_to_ner, file_cache_o3_zeroshot=file_cache_o3_zeroshot,list_ner_q=list_ner_q, KB=KB)

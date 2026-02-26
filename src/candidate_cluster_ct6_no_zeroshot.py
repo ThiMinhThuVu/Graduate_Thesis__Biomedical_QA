@@ -69,89 +69,166 @@ def prompt_zero_shot_medhop_correctness(question):
     return prompt
 
 CACHE_PATH = 'data/cache/embed_candidate_ans_cluster.json'
-
-def load_embedding_cache(path):
+          
+def load_embedding_cache(path, timeout=60):
     if not os.path.exists(path):
-        # Đảm bảo thư mục tồn tại
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump({}, f)
         return {}
-    
-    with open(path, "r", encoding="utf-8") as f:
-        # Khóa Shared (LOCK_SH): Cho phép nhiều người đọc
-        portalocker.lock(f, portalocker.LOCK_SH)
-        try:
-            data = json.load(f)
-            # Convert list back to numpy array for calculation
-            return {k: np.array(v) for k, v in data.items()}
-        except (json.JSONDecodeError, ValueError):
-            return {}
 
-def save_embedding_cache(new_data, path):
-    """
-    new_data: dict chứa {text: ndarray} mới phát sinh
-    """
+    try:
+        with portalocker.Lock(path, mode='r', timeout=timeout, encoding='utf-8') as f:
+            data = json.load(f)
+            # Convert list ngược lại thành numpy array
+            return {k: np.array(v) for k, v in data.items()}
+    except Exception as e:
+        print(f"⚠️ Cache embedding lỗi hoặc trống: {e}")
+        return {}
+
+def save_embedding_cache(new_data, path, timeout=60):
     if not new_data:
         return
 
-    with open(path, 'r+', encoding='utf-8') as f:
-        # Khóa Độc quyền (LOCK_EX): Chỉ 1 người được ghi
-        portalocker.lock(f, portalocker.LOCK_EX)
+    try:
+        with portalocker.Lock(path, mode='r+', timeout=timeout, encoding='utf-8') as f:
+            # Đọc cache hiện tại
+            try:
+                f.seek(0)
+                current_cache = json.load(f)
+            except:
+                current_cache = {}
+
+            # Cập nhật dữ liệu mới (chỉ convert numpy sang list tại đây)
+            for text, emb in new_data.items():
+                if isinstance(emb, np.ndarray):
+                    current_cache[text] = emb.tolist()
+                else:
+                    current_cache[text] = emb
+
+            # Ghi lại
+            f.seek(0)
+            f.truncate()
+            json.dump(current_cache, f, ensure_ascii=False, indent=4)
+    except Exception as e:
+        print(f"Lỗi ghi embedding cache: {e}")
         
-        # 1. Đọc dữ liệu hiện tại
-        f.seek(0)
-        try:
-            current_cache = json.load(f)
-        except:
-            current_cache = {}
-            
-        # 2. Convert dữ liệu mới (ndarray -> list) và update
-        for text, emb in new_data.items():
-            if isinstance(emb, np.ndarray):
-                current_cache[text] = emb.tolist()
-            else:
-                current_cache[text] = emb
-        
-        # 3. Ghi đè lại file
-        f.seek(0)
-        f.truncate()
-        json.dump(current_cache, f, ensure_ascii=False, indent=4)
-          
-def load_json(path):
+def load_json(path, timeout=60):
     if not os.path.exists(path):
-        # Nếu file không tồn tại, tạo file mới với nội dung {} để tránh lỗi lock file trống
         with open(path, "w", encoding="utf-8") as f:
             json.dump({}, f)
         return {}
-    
-    with open(path, "r", encoding="utf-8") as f:
-        # Khóa Shared (LOCK_SH): Nhiều người cùng đọc được, nhưng không ai được ghi
-        portalocker.lock(f, portalocker.LOCK_SH)
-        data = json.load(f)
-        return data
 
-def save_json(data, file_path):
-    # Dùng chế độ "a+" hoặc "r+" để portalocker hoạt động tốt nhất trên mọi OS
-    with open(file_path, 'r+', encoding='utf-8') as f:
-        # Khóa Độc quyền (LOCK_EX): Chỉ 1 người được quyền truy cập (cả đọc và ghi)
-        portalocker.lock(f, portalocker.LOCK_EX)
-        
-        # Đọc dữ liệu mới nhất một lần nữa trước khi ghi 
-        # (Phòng trường hợp tab kia vừa ghi xong một qidx khác)
-        f.seek(0)
-        try:
-            current_cache = json.load(f)
-        except:
-            current_cache = {}
+    # Lock để đọc (LOCK_SH: nhiều người cùng đọc được)
+    try:
+        with portalocker.Lock(path, mode='r', timeout=timeout, encoding='utf-8') as f:
+            data = json.load(f)
+            return data
+    except Exception as e:
+        print(f"Lỗi load file {path}: {e}")
+        return {}
+
+def save_json(data, file_path, timeout=60):
+    # Sử dụng LOCK_EX (Độc quyền) để đảm bảo không ai đọc/ghi khi ta đang cập nhật
+    try:
+        with portalocker.Lock(file_path, mode='r+', timeout=timeout, encoding='utf-8') as f:
+            # 1. Đọc dữ liệu mới nhất trước khi cập nhật (Tránh ghi đè mất dữ liệu của tiến trình khác)
+            try:
+                current_data = json.load(f)
+            except:
+                current_data = {}
             
-        # Cập nhật dữ liệu mới vào cache hiện tại
-        current_cache.update(data)
+            # 2. Cập nhật
+            current_data.update(data)
+            
+            # 3. Ghi đè
+            f.seek(0)
+            f.truncate()
+            json.dump(current_data, f, ensure_ascii=False, indent=4)
+            # File sẽ tự động unlock khi thoát khỏi block 'with'
+    except Exception as e:
+        print(f"Không thể ghi file {file_path} sau {timeout}s: {e}")
         
-        # Ghi đè lại file
-        f.seek(0)
-        f.truncate()
-        json.dump(current_cache, f, ensure_ascii=False, indent=4)
+# def load_embedding_cache(path):
+#     if not os.path.exists(path):
+#         # Đảm bảo thư mục tồn tại
+#         os.makedirs(os.path.dirname(path), exist_ok=True)
+#         with open(path, "w", encoding="utf-8") as f:
+#             json.dump({}, f)
+#         return {}
+    
+#     with open(path, "r", encoding="utf-8") as f:
+#         # Khóa Shared (LOCK_SH): Cho phép nhiều người đọc
+#         portalocker.lock(f, portalocker.LOCK_SH)
+#         try:
+#             data = json.load(f)
+#             # Convert list back to numpy array for calculation
+#             return {k: np.array(v) for k, v in data.items()}
+#         except (json.JSONDecodeError, ValueError):
+#             return {}
+
+# def save_embedding_cache(new_data, path):
+#     """
+#     new_data: dict chứa {text: ndarray} mới phát sinh
+#     """
+#     if not new_data:
+#         return
+
+#     with open(path, 'r+', encoding='utf-8') as f:
+#         # Khóa Độc quyền (LOCK_EX): Chỉ 1 người được ghi
+#         portalocker.lock(f, portalocker.LOCK_EX)
+        
+#         # 1. Đọc dữ liệu hiện tại
+#         f.seek(0)
+#         try:
+#             current_cache = json.load(f)
+#         except:
+#             current_cache = {}
+            
+#         # 2. Convert dữ liệu mới (ndarray -> list) và update
+#         for text, emb in new_data.items():
+#             if isinstance(emb, np.ndarray):
+#                 current_cache[text] = emb.tolist()
+#             else:
+#                 current_cache[text] = emb
+        
+#         # 3. Ghi đè lại file
+#         f.seek(0)
+#         f.truncate()
+#         json.dump(current_cache, f, ensure_ascii=False, indent=4)
+          
+# def load_json(path):
+#     if not os.path.exists(path):
+#         # Nếu file không tồn tại, tạo file mới với nội dung {} để tránh lỗi lock file trống
+#         with open(path, "w", encoding="utf-8") as f:
+#             json.dump({}, f)
+#         return {}
+    
+#     with open(path, "r", encoding="utf-8") as f:
+#         # Khóa Shared (LOCK_SH): Nhiều người cùng đọc được, nhưng không ai được ghi
+#         portalocker.lock(f, portalocker.LOCK_SH)
+#         data = json.load(f)
+#         return data
+
+# def save_json(data, file_path):
+#     # Dùng chế độ "a+" hoặc "r+" để portalocker hoạt động tốt nhất trên mọi OS
+#     with open(file_path, 'r+', encoding='utf-8') as f:
+#         # Khóa Độc quyền (LOCK_EX): Chỉ 1 người được quyền truy cập (cả đọc và ghi)
+#         portalocker.lock(f, portalocker.LOCK_EX)
+        
+#         # Đọc dữ liệu mới nhất một lần nữa trước khi ghi 
+#         # (Phòng trường hợp tab kia vừa ghi xong một qidx khác)
+#         f.seek(0)
+#         try:
+#             current_cache = json.load(f)
+#         except:
+#             current_cache = {}
+            
+#         # Cập nhật dữ liệu mới vào cache hiện tại
+#         current_cache.update(data)
+        
+#         # Ghi đè lại file
+#         f.seek(0)
+#         f.truncate()
+#         json.dump(current_cache, f, ensure_ascii=False, indent=4)
         
         
 def extract_references(long_answer):

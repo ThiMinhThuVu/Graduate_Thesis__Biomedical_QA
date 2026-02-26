@@ -121,8 +121,9 @@ if __name__ == "__main__":
 
     run = 1
     output = {}
-    fileoutput = f'data/ner/SEQ/spacy_entity_1000q_{run}.json'
-    data = load_json(r'data\metadata_medhop.json')
+    # fileoutput = f'data/ner/SEQ/spacy_entity_9000q_{run}.json'
+    data = load_json(r'data\metadata_9000q.json')
+    # data = load_json(r'data\metadata_entity.json')
 
     # for i, (qidx, original_question) in enumerate(tqdm(data.items(), desc="LLM Extracting NER")):
         
@@ -131,7 +132,7 @@ if __name__ == "__main__":
     #         break
         
     #     # Thực hiện trích xuất thực thể
-    #     ext_entities = extract_bio_entity_from_original_question(original_question)
+    #     ext_entities = extract_ner_original_q_with_spacy(original_question)
     #     output[qidx] = {
     #         'id': qidx,
     #         'question': original_question,
@@ -148,7 +149,73 @@ if __name__ == "__main__":
     # save_json(output, fileoutput)
     # print(f'\nFinished! Tổng số câu đã lưu: {len(output.keys())}')
     # print('Đường dẫn file: ', fileoutput)
-    seq_ner = load_json(r'data\ner\entity_extraction_1000_seq.json')
+        
+    # seq_ner = load_json(r'data\ner\entity_extraction_1000_seq.json')
+    
+    
+    # output = {}
+    # all_ner = set() # Dùng set để lưu các thực thể duy nhất
+    # BASE = "medhop_preprocessing/step1/1"
+    # entity2wiki_path = r'data\cache\mapping\entity2wiki.json'
+    
+    # # 1. Duyệt qua dữ liệu để trích xuất NER
+    # for qidx, item in tqdm(data.items(), desc="Extracting NER with SpaCy"):
+    #     if item.get('type_q') != 'sequence':
+    #         continue
+        
+    #     file_seq = os.path.join(BASE, f"step_1_{qidx}.json")
+        
+    #     if not os.path.exists(file_seq):
+    #         continue
+            
+    #     sample = load_json(file_seq)
+        
+    #     # Duyệt qua các bước (steps) trong mỗi câu hỏi sequence
+    #     steps_dict = sample.get('0', {})
+    #     for step, step_data in steps_dict.items():
+    #         ID = f"{qidx}|{step}"
+    #         subquestion = step_data.get('subquestion', '')
+            
+    #         if not subquestion:
+    #             continue
+
+    #         # Trích xuất NER bằng hàm SpaCy của bạn
+    #         ext_entities = extract_ner_original_q_with_spacy(extractor_model, extractor_model_2, extractor_model_3, subquestion)
+            
+    #         output[ID] = {
+    #             'id': ID,
+    #             'question': subquestion,
+    #             'extracted_entities': ext_entities
+    #         }
+            
+    #         # Lấy danh sách keys từ ext_entities['detail']
+    #         # Dùng .update() thay vì .add() để đưa toàn bộ list vào set
+    #         if 'detail' in ext_entities:
+    #             entities_found = list(ext_entities['detail'].keys())
+    #             all_ner.update(entities_found)
+
+    # # Lưu kết quả mapping chi tiết
+    # save_json(output, fileoutput)
+    # print(f'\n[1] Saved mapping to: {fileoutput}')
+    # print(f'Total IDs processed: {len(output)}')
+    
+    # # 2. Xử lý danh sách thực thể chưa có URL (Wikipedia)
+    # if os.path.exists(entity2wiki_path):
+    #     all_url = load_json(entity2wiki_path)
+    #     # Loại bỏ những thực thể đã tồn tại trong file mapping wiki
+    #     new_entities = list(all_ner - set(all_url.keys()))
+    # else:
+    #     print(f"Warning: {entity2wiki_path} not found. Saving all discovered entities.")
+    #     new_entities = list(all_ner)
+
+    # print(f'[2] Total unique new entities to search: {len(new_entities)}')
+    
+    # search_list_path = 'data/ner/SEQ/spacy_entity_9000q_search.json'
+    # save_json(new_entities, search_list_path)
+    # print(f'Saved search list to: {search_list_path}')
+    
+    cnt = 0
+    seq_ner = load_json(r'data\ner\SEQ\meta_entity_9000q_seq.json')
     BASE = "medhop_preprocessing/step1/1"
     for i, (qidx, item) in enumerate(tqdm(data.items(), desc="Extracting NER")):
         if item['type_q'] != 'sequence':
@@ -156,24 +223,12 @@ if __name__ == "__main__":
         
         file_seq = f"{BASE}/step_1_{qidx}.json"
         sample = load_json(file_seq)
-        
+               
         for step, step_data in sample['0'].items():
             ID = f"{qidx}|{step}"
             
             list_ner = list(seq_ner[ID]["extracted_entities"]["detail"].keys())
             step_data['key_entity'] = list_ner
-            
         save_json(sample, file_seq)
         print(file_seq)
-            # subquestion = step_data['subquestion']
-            # ext_entities = extract_ner_original_q_with_spacy(extractor_model, extractor_model_2, extractor_model_3, subquestion)
-            
-            # output[ID] = {
-            #     'id': ID,
-            #     'question': subquestion,
-            #     'extracted_entities': ext_entities
-            # }
-
-    # save_json(output, fileoutput)
-    # print('save to file: ', fileoutput)
-    # print(len(output.keys()))
+    print(cnt)

@@ -113,62 +113,66 @@ def extract_ner_original_q_with_spacy(ext_model_1, ext_model_2, ext_model_3, que
 
 
 if __name__ == "__main__":
-    import spacy
-    extractor_model = spacy.load("en_ner_bc5cdr_md")
-    extractor_model_2 = spacy.load("en_ner_jnlpba_md")
-    extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
+   
     from tqdm import tqdm
 
     run = 1
     output = {}
-    fileoutput = f'data/ner/SEQ/LLM_entity_1000q_{run}.json'
-    data = load_json(r'data\metadata_medhop.json')
+    fileoutput = f'data/ner/SEQ/LLM_entity_9000q_{run}.json'
+    data = load_json(r'data\metadata_9000q.json')
+    
+    output_jsonl = r'src\batch_api\input\extract_entity_4omini.jsonl'
+    
+    BASE_DIR = "medhop_preprocessing/step1/1"
+    with open(output_jsonl, "w", encoding="utf-8") as out:
+        for qidx, item in tqdm(data.items(), desc="Processing Questions"):
+            if item.get('type_q') != 'sequence':
+                continue
+            
+            file_seq = os.path.join(BASE_DIR, f"step_1_{qidx}.json")
+            
+            if not os.path.exists(file_seq):
+                # print(f"Warning: File {file_seq} not found. Skipping.")
+                continue
+                
+            sample = load_json(file_seq)
+            
+            # Giả sử cấu trúc sample là {'0': { 'step1': {...}, 'step2': {...} }}
+            steps_data = sample.get('0', {})
+            
+            for step, step_content in steps_data.items():
+                ID = f"{qidx}|{step}"
+                subquestion = step_content.get('subquestion', '')
+                
+                if not subquestion:
+                    continue
 
-    # for i, (qidx, original_question) in enumerate(tqdm(data.items(), desc="LLM Extracting NER")):
-        
-    #     # Dừng hẳn khi đã xử lý xong 500 câu để tiết kiệm thời gian
-    #     if i >= 500:
-    #         break
-        
-    #     # Thực hiện trích xuất thực thể
-    #     ext_entities = extract_bio_entity_from_original_question(original_question)
-    #     output[qidx] = {
-    #         'id': qidx,
-    #         'question': original_question,
-    #         'extracted_entities': ext_entities
-    #     }
+                messages = load_entity_extraction_prompt(question=subquestion)
+                
+                # Cấu trúc record chuẩn cho Batch API
+                record = {
+                    "custom_id": ID, 
+                    "method": "POST",
+                    "url": "/v1/chat/completions",
+                    "body": {
+                        "model": "gpt-4o-mini",
+                        "messages": messages,
+                        "response_format": { "type": "json_object" }, # Bắt buộc Prompt trả về { }
+                        "max_tokens": 1000,
+                        "temperature": 0 # Thường để 0 cho tác vụ NER để kết quả ổn định
+                    }
+                }
 
-    #     # Cứ mỗi 100 câu thì lưu một lần (i+1 vì i bắt đầu từ 0)
-    #     if (i + 1) % 100 == 0:
-    #         save_json(output, fileoutput)
-    #         # Dòng print này giúp bạn theo dõi tiến độ trong console
-    #         print(f"\n[Checkpoint] Đã lưu {i + 1} câu vào {fileoutput}")
-
-    # # Lưu lần cuối để tránh sót những câu lẻ ở cuối (ví dụ câu thứ 3001-3005)
-    # save_json(output, fileoutput)
-    # print(f'\nFinished! Tổng số câu đã lưu: {len(output.keys())}')
-    # print('Đường dẫn file: ', fileoutput)
-
-    BASE = "medhop_preprocessing/step1/1"
-    for i, (qidx, item) in enumerate(tqdm(data.items(), desc="Extracting NER")):        
-        if item['type_q'] != 'sequence':
-            continue
-        
-        file_seq = f"{BASE}/step_1_{qidx}.json"
-        sample = load_json(file_seq)
-        
-        for step, step_data in sample['0'].items():
-            subquestion = step_data['subquestion']
-            ext_entities = extract_bio_entity_from_original_question(subquestion)
-            ID = f"{qidx}|{step}"
-            output[ID] = {
-                'id': ID,
-                'question': subquestion,
-                'extracted_entities': ext_entities
-            }
-            if i%100 == 0:
-                save_json(output, fileoutput)
-                print('save to file: ', fileoutput)
+                # Ghi duy nhất 1 dòng cho mỗi record
+                out.write(json.dumps(record, ensure_ascii=False) + "\n")
+                
+                output[ID] = {
+                    'id': ID,
+                    'question': subquestion
+                }
+    
     save_json(output, fileoutput)
-    print('save to file: ', fileoutput)
-    print(len(output.keys()))
+    print(f'\n--- Hoàn tất ---')
+    print(f'Đã lưu file JSONL: {output_jsonl}')
+    print(f'Đã lưu file Mapping: {fileoutput}')
+    print(f'Tổng số subquestions đã xử lý: {len(output)}')

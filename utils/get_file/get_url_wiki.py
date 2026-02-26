@@ -15,15 +15,64 @@ def save_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
-output = {}
-metadata = load_json(r'data\cache\mapping\url2hash.json')
-for url, hashid in metadata.items():
-    url = url.lower()
-    output[url] = hashid
+# data = load_json(r'data\cache\mapping\entity2wiki.json')
+# list_ner = load_json(r'data/ner/SEQ/spacy_entity_9000q_search.json')
+
+# all_ner = set()
+# for ner in list_ner:
+#     if ner.lower() not in data:
+#         all_ner.add(ner.lower())
+
+# save_json(list(all_ner), 'data/ner/SEQ/spacy_entity_9000q_search_filter.json' )
+# exit()
+# output = {}
+# cache_url = load_json(r'data\cache\mapping\url2hash.json')
+# metadata = load_json(r'data\cache\mapping\entity\url2hash10.json')
+# cache_url.update(metadata)
         
-save_json(output, r'data\cache\mapping\url2hash.json')
-print(len(output.keys()))
+# save_json(cache_url, r'data\cache\mapping\url2hash.json')
+# print(len(cache_url.keys()))
+# exit()
+
+# 1. Khai báo đường dẫn
+cache_path = r'data\cache\mapping\url2hash.json'
+metadata_path = r'data\cache\mapping\entity\url2hash11.json'
+
+# 2. Load dữ liệu
+cache_url = load_json(cache_path)
+metadata = load_json(metadata_path)
+
+print(f"Bắt đầu: {len(cache_url)} (cache) + {len(metadata)} (metadata)")
+
+# 3. Merge và Lowercase trong một bước
+# Sử dụng dictionary comprehension để vừa lowercase vừa gộp dữ liệu
+# Lưu ý: Nếu metadata có URL trùng với cache (sau khi lowercase), giá trị của metadata sẽ được ưu tiên
+output = {url.lower(): hashid for url, hashid in cache_url.items()}
+output.update({url.lower(): hashid for url, hashid in metadata.items()})
+
+# 4. Lưu kết quả cuối cùng
+save_json(output, cache_path)
+
+print(f"Hoàn tất: Đã lưu {len(output)} keys vào {cache_path}")
 exit()
+
+# output = {}
+# cache_url = load_json(r'data\cache\mapping\url2hash.json')
+# metadata = load_json(r'data\cache\mapping\entity\url2hash11.json')
+# cache_url.update(metadata)
+        
+# save_json(cache_url, r'data\cache\mapping\url2hash.json')
+# print(len(cache_url.keys()))
+# # exit()
+# output = {}
+# metadata = load_json(r'data\cache\mapping\url2hash.json')
+# for url, hashid in metadata.items():
+#     url = url.lower()
+#     output[url] = hashid
+        
+# save_json(output, r'data\cache\mapping\url2hash.json')
+# print(len(output.keys()))
+# exit()
 
 # data = load_json(r'data\cache\mapping\entity2wiki.json')
 # print(len(data.keys()))
@@ -147,6 +196,6 @@ print(len(cache_old.keys()))
 # save_json(list_url_need, f'data/ner/crawl_wiki_9000q_{run}.json')
                     
                 
-cache_url.update(cache_old)
-save_json(cache_url, r"data\cache\mapping\entity2wiki.json")   
-print(len(cache_url.keys()))
+# cache_url.update(cache_old)
+# save_json(cache_url, r"data\cache\mapping\entity2wiki.json")   
+# print(len(cache_url.keys()))

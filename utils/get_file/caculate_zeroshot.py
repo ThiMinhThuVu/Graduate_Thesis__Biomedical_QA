@@ -23,7 +23,8 @@ cnt = 0
 cnt_true = 0
 # BASE = "data/ALL_ROUND/medhop_results_ct6_r36_parallel_seq/parallel_decomp_new_ct6/all_ans"
 
-seq = load_json(r'data\ALL_ROUND\DECOMP_NEW_medhop_results\combine\seq_combine_zeroshot.json')
+# seq = load_json(r'data\ALL_ROUND\DECOMP_NEW_medhop_results\combine\seq_combine_zeroshot.json')
+seq = load_json(r'SEQ_medhop_results\seq_combine.json')
 
 BASE = "data/ALL_ROUND/DECOMP_NEW_medhop_results/all_ans"
 for ID, item in seq.items():

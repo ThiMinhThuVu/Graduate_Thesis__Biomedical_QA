@@ -247,7 +247,7 @@ if __name__ == "__main__":
     
     #edit config
     KB="SEQ" # Answer2, ...
-    threads = [50, 250] 
+    threads = [730, 750] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
