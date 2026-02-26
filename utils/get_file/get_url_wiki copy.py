@@ -26,55 +26,55 @@ def save_json(data, file_path):
 # save_json(list(all_ner), 'data/ner/SEQ/spacy_entity_9000q_search_filter.json' )
 # exit()
 
-output = {}
-cache_url = load_json(r'data\cache\mapping\entity2wiki.json')
-metadata = load_json(r'data\cache\mapping\entity\entity2wiki12.json')
+# output = {}
+# cache_url = load_json(r'data\cache\mapping\entity2wiki.json')
+# metadata = load_json(r'data\cache\mapping\entity\entity2wiki12.json')
+# cache_url.update(metadata)
+        
+# save_json(cache_url, r'data\cache\mapping\entity2wiki.json')
+# print(len(cache_url.keys()))
+# exit()
+
+
+# # 1. Khai báo đường dẫn
+# cache_path = r'data\cache\mapping\url2hash.json'
+# metadata_path = r'data\cache\mapping\entity\url2hash12.json'
+
+# # 2. Load dữ liệu
+# cache_url = load_json(cache_path)
+# metadata = load_json(metadata_path)
+
+# print(f"Bắt đầu: {len(cache_url)} (cache) + {len(metadata)} (metadata)")
+
+# # 3. Merge và Lowercase trong một bước
+# # Sử dụng dictionary comprehension để vừa lowercase vừa gộp dữ liệu
+# # Lưu ý: Nếu metadata có URL trùng với cache (sau khi lowercase), giá trị của metadata sẽ được ưu tiên
+# output = {url.lower(): hashid for url, hashid in cache_url.items()}
+# output.update({url.lower(): hashid for url, hashid in metadata.items()})
+
+# # 4. Lưu kết quả cuối cùng
+# save_json(output, cache_path)
+
+# print(f"Hoàn tất: Đã lưu {len(output)} keys vào {cache_path}")
+# exit()
+
+# output = {}
+metadata = load_json(r'data\cache\mapping\url2hash.json')
+cache_url = load_json(r'data\cache\hash_id_crawl_wiki.json')
 cache_url.update(metadata)
         
-save_json(cache_url, r'data\cache\mapping\entity2wiki.json')
+save_json(cache_url, r'data\cache\mapping\url2hash.json')
 print(len(cache_url.keys()))
 exit()
 
 
-# 1. Khai báo đường dẫn
-cache_path = r'data\cache\mapping\url2hash.json'
-metadata_path = r'data\cache\mapping\entity\url2hash12.json'
-
-# 2. Load dữ liệu
-cache_url = load_json(cache_path)
-metadata = load_json(metadata_path)
-
-print(f"Bắt đầu: {len(cache_url)} (cache) + {len(metadata)} (metadata)")
-
-# 3. Merge và Lowercase trong một bước
-# Sử dụng dictionary comprehension để vừa lowercase vừa gộp dữ liệu
-# Lưu ý: Nếu metadata có URL trùng với cache (sau khi lowercase), giá trị của metadata sẽ được ưu tiên
-output = {url.lower(): hashid for url, hashid in cache_url.items()}
-output.update({url.lower(): hashid for url, hashid in metadata.items()})
-
-# 4. Lưu kết quả cuối cùng
-save_json(output, cache_path)
-
-print(f"Hoàn tất: Đã lưu {len(output)} keys vào {cache_path}")
-exit()
-
 # output = {}
-# cache_url = load_json(r'data\cache\mapping\url2hash.json')
-# metadata = load_json(r'data\cache\mapping\entity\url2hash11.json')
-# cache_url.update(metadata)
-        
-# save_json(cache_url, r'data\cache\mapping\url2hash.json')
-# print(len(cache_url.keys()))
-# # exit()
-
-
-# output = {}
-# metadata = load_json(r'data\cache\mapping\url2hash.json')
+# metadata = load_json(r'data\cache\hash_id_crawl_wiki.json')
 # for url, hashid in metadata.items():
 #     url = url.lower()
 #     output[url] = hashid
         
-# save_json(output, r'data\cache\mapping\url2hash.json')
+# save_json(output, r'data\cache\hash_id_crawl_wiki.json')
 # print(len(output.keys()))
 # exit()
 

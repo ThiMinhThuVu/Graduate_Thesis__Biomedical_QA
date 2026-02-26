@@ -17,7 +17,40 @@ import traceback
 import wikipedia
 from wikipedia.exceptions import DisambiguationError, PageError
 
-def retrieval_google(search_kw, filepath, max_results=20):
+# def retrieval_google(search_kw, filepath, max_results=20):
+#     if os.path.exists(filepath):
+#         output = load_json(filepath)
+#         if 'google' in output:
+#             result = output['google']['search_results']
+#             if result == []:
+#                 print("[API SEARCH] HẾT LƯỢT SEARCHs")
+#                 print("Search kw: ", search_kw)
+#                 return None
+            
+#             print(f"Cache hit Google Search. Loading from file.")
+#             return result
+#     else:
+#         output = {}
+            
+#     max_retries = 3
+#     for attempt in range(max_retries):
+#         result = search_google(search_kw, max_results=max_results)
+#         if result != []:
+#             break
+#         else:
+#             print(f"[API SEARCH] HẾT LƯỢT SEARCHs (attempt {attempt+1}/{max_retries})")
+#             print("Search kw: ", search_kw)
+#             return None
+          
+#     output['google'] = {
+#         'search_kw': search_kw,
+#         "search_results": result                
+#     }
+  
+#     save_json(output, filepath)        
+#     return result
+
+def retrieval_google(search_kw, filepath, max_results=20, base_delay=2):
     if os.path.exists(filepath):
         output = load_json(filepath)
         if 'google' in output:
@@ -32,15 +65,25 @@ def retrieval_google(search_kw, filepath, max_results=20):
     else:
         output = {}
             
-    max_retries = 3
+    max_retries = 5
+    result = []
+
     for attempt in range(max_retries):
         result = search_google(search_kw, max_results=max_results)
+
         if result != []:
             break
         else:
             print(f"[API SEARCH] HẾT LƯỢT SEARCHs (attempt {attempt+1}/{max_retries})")
             print("Search kw: ", search_kw)
-            return None
+
+            # ===== Delay tăng dần =====
+            sleep_time = base_delay * (2 ** attempt)
+            print(f"Sleeping {sleep_time} seconds before retry...")
+            time.sleep(sleep_time)
+
+    if result == []:    
+        return None
           
     output['google'] = {
         'search_kw': search_kw,
@@ -49,6 +92,7 @@ def retrieval_google(search_kw, filepath, max_results=20):
   
     save_json(output, filepath)        
     return result
+
 
 def retrieval_wiki(search_kw, filepath, max_results=10):
     if os.path.exists(filepath):

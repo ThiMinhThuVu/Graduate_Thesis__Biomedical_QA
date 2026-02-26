@@ -236,7 +236,7 @@ if __name__ == "__main__":
     
     #edit config
     KB="DIRECT_9000" # Answer2, ...
-    threads = [1250, 1500] 
+    threads = [1270, 1300] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  

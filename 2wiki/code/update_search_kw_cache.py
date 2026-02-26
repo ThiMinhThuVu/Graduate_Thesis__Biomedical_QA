@@ -9,8 +9,8 @@ def save_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 # Path to the folder containing JSON files
-json_folder = os.path.join('2wiki', 'cache', 'IR_20')
-cache_file = os.path.join('2wiki', 'cache', 'hash_id.json')
+json_folder = os.path.join('data', 'cache', 'IR_20')
+cache_file = os.path.join('data', 'cache', 'mapping', 'hash_id.json')
 
 # Load existing cache if it exists
 # if os.path.exists(cache_file):
