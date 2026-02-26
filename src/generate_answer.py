@@ -85,10 +85,10 @@ def _generate_answer(question, search_kw, key_entities, relevant_info, dataset=N
             tmp = clean_json.split('"long_answer":')[1]
             long_answer = tmp.rsplit('}', 1)[0].replace('"', '').replace(':', '').strip()
 
-    result_dict = {
-        "long_answer": long_answer,
-        "short_answer": short_answer
-    }
+        result_dict = {
+            "long_answer": long_answer,
+            "short_answer": short_answer
+        }
  
     return result_dict
 
