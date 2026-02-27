@@ -112,7 +112,8 @@ def gen_combine_seq_answer(target_answer_type, original_question, context, model
 
 if __name__ == "__main__":
     RESULT_DIR = "SEQ_medhop_results/all_ans"
-    output_file = "SEQ_medhop_results/seq_combine.json"
+    # output_file = "SEQ_medhop_results/seq_combine.json"
+    output_file = "data/ALL_ROUND/1000/DECOMP_NEW_medhop_results/combine/seq_combine_zeroshot.json"
     golden_data = load_json("data/all_answer_golden_56_update_v0.json")
     metadata = load_json(r'data\metadata_medhop.json')
     
@@ -120,7 +121,7 @@ if __name__ == "__main__":
         dict_results = load_json(output_file)
     else:
         dict_results = {}
-        
+    cnt = 0
     for file_name in tqdm(os.listdir(RESULT_DIR)):
         filepath = os.path.join(RESULT_DIR, file_name)
 
@@ -134,9 +135,10 @@ if __name__ == "__main__":
         if type_q != "sequence":
             continue
         
-        golden = golden_data[qidx]["True"]
-        if len(golden) == 0:
-            continue
+        cnt += 1
+        # golden = golden_data[qidx]["True"]
+        # if len(golden) == 0:
+        #     continue
 
         # if qidx not in ["281682", "362372", "455108", "521164", "648793", "728328", "773528", "849453"]:
         #     continue

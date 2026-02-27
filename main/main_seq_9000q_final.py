@@ -2,10 +2,10 @@ import os
 import spacy
 from tqdm import tqdm
 from src.decomposition import decompose_question_parallel, decompose_question_sequential
-from src.retrieval import retrieve_evidence, remove_retrieve_evidence, remove_entity_evidence, remove_specific_references
+from src.retrieval_seq import retrieve_evidence, remove_retrieve_evidence, remove_entity_evidence, remove_specific_references
 from src.extract_ner import extract_entities_from_evidence
 from src.generate_answer import generate_combine_parallel_answers, _generate_answer
-from src.candidate_cluster_ct6_no_zeroshot import process_get_final_answer
+from src.candidate_cluster_ct6 import process_get_final_answer
 from utils.util import *
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.models import StaticEmbedding
@@ -23,7 +23,6 @@ extractor_model = None
 
 global cache_ner_filter
 cache_ner_filter = {}
-
 mapping_data_answer = load_json('data/mapping_answer_gol_add_seq.json')
 
 
@@ -48,15 +47,19 @@ def load_model(dataset, configs, using_embedding_model=False):
 
     print(configs['cache'])
     hash_id_cache = load_json(configs['type_run']['cache']['hash_id']['retrieval'])
-    hash_id_crawl_wiki_cache = load_json(configs['type_run']['cache']['hash_id']['crawl_wiki'])
+    # hash_id_crawl_wiki_cache = load_json(configs['type_run']['cache']['hash_id']['crawl_wiki'])
     
     if dataset == "medhop":
         # Biomedical NER
         extractor_model = spacy.load("en_ner_bc5cdr_md")
         # extractor_model_2 = spacy.load("en_ner_jnlpba_md")
-        # extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")  
-        extractor_model_2 = extractor_model_3 = None      
-     
+        # extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
+        extractor_model_2 = extractor_model_3 = None
+        
+        # Biomedical embedding
+        # embedding_model = AutoModel.from_pretrained("dmis-lab/biobert-base-cased-v1.1")
+        # embedding_model = AutoModel.from_pretrained("michiyasunaga/BioLinkBERT-base")  
+        # embedding_model = AutoModel.from_pretrained("microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext")
         embedding_model_cluster = SentenceTransformer(
             "pritamdeka/S-BioBert-snli-multinli-stsb",
             device='cpu'
@@ -78,9 +81,9 @@ def load_model(dataset, configs, using_embedding_model=False):
     else:
         raise ValueError(f"Unsupported dataset: {dataset}")
 
-def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, type_q=None,
+def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
             using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False,
-            question_type_to_ner=None, using_prompt_yn=False, file_cache_o3_zeroshot=None, KB=""):
+            question_type_to_ner=None, using_prompt_yn=False, file_cache_o3_zeroshot=None, list_ner_q=None, KB=""):
     
     sample_id = str(sample['QIDX']) 
     print("[ID]: ", sample_id)
@@ -112,6 +115,8 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
             "QIDX": sample_id,
             "original_question": original_question,
             "type_q": sample['type_q'],
+            # "focus_spacy_based_entity_label": focus_spacy_based_entity_label,
+            # "target_answer_type": target_ans_type,
             "key_entities": list_ner_q
         }
 
@@ -149,6 +154,9 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     search_kw_subq = item['search_keyword'] 
                     target_ans_type = item['target_answer_type']
                     
+                    if type_q == 'sequence':
+                        list_ner_q = item['key_entity']
+                        
                     if target_ans_type == 'correctness': # YES/NO
                         using_prompt_yn = True
                     else:
@@ -167,6 +175,7 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     
                     
                     if has_extract_ner: 
+                        # focus_spacy_based_entity_label = ['GENE_OR_GENE_PRODUCT'] #["DISEASE", "CHEMICAL"]
                         if target_ans_type in question_type_to_ner:
                             focus_spacy_based_entity_label = question_type_to_ner[target_ans_type]                                
                         else: #Other
@@ -179,8 +188,9 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         extracted_entities = ""
                         
                     # kmean doc search - found crawl wiki|ner docs
+                    # cluster_docs_ctx = retrieve_evidence(list_ner_q, sample, search_kw_subq_retrieval, settings,target_ans_type, embedding_model, embedding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache)
                     cluster_docs_ctx = retrieve_evidence(list_ner_q, sample, search_kw_subq_retrieval, settings,
-                                                                target_ans_type, embedding_model, embedding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache)  
+                                                                target_ans_type, embedding_model, embedding_model_cluster, hash_id_cache)  
                     cluster_output = {}
                     for cluster_label, sample_cluster in cluster_docs_ctx.items():
                         context = "\n".join(sample_cluster['docs']) + " " + "\n".join(sample_cluster['crawl_doc'])                                                             
@@ -204,7 +214,8 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     dict_ans[q_i][path_i][step]["focus_spacy_based_entity_label"] = focus_spacy_based_entity_label      
                     dict_ans[q_i][path_i][step]["cluster_genered_answer"] = cluster_output
                     dict_ans[q_i][path_i][step]["retrieval_information"] = cluster_docs_ctx
-           
+
+                    print(f"Final Answer - Step {step}: ", short_ans)
 
             dict_ans[q_i]['final_qi']["question"] = question
             dict_ans[q_i]['final_qi']["short_answer"] = short_ans
@@ -230,13 +241,14 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
         print(f"\nSaved to {file_all_ans}")    
 
+
 if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)
     
     #edit config
-    KB="DIRECT_9000" # Answer2, ...
-    threads = [1270, 1300] 
+    KB="SEQUENCE_9000" # Answer2, ...
+    threads = [2500, 3000] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -267,13 +279,13 @@ if __name__ == "__main__":
         qidx = str(qidx)
         question = sample['Question']             
         type_q = sample['type_q']    
-        
+    
         #CONFIG    
-        if type_q != "direct":# "sequence": # "parallel":
+        if type_q != "sequence":# "sequence": # "parallel":
             continue
         else:
             cnt += 1
-    
+        
         sample['type_q'] = type_q        
         if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False
@@ -282,15 +294,17 @@ if __name__ == "__main__":
 
         
         question_type_to_ner = {} # để tất cả các type trả về là ["DISEASE", "CHEMICAL"]   
-        
-        dict_ner_q = sample['entities_q'].get('detail', {})
-        list_ner_q = list(dict_ner_q.keys())
+        if type_q == 'sequence':
+            list_ner_q = None
+        else:
+            dict_ner_q = sample['entities_q'].get('detail', {})
+            list_ner_q = list(dict_ner_q.keys())
         
         file_cache_o3_zeroshot = configs['cache']['zeroshot'][type_q] # direct, sequence, parallel
         
-        preprocess_sample(list_ner_q, sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
+        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
             using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=True,
-            question_type_to_ner=question_type_to_ner, file_cache_o3_zeroshot=file_cache_o3_zeroshot, KB=KB)
+            question_type_to_ner=question_type_to_ner, file_cache_o3_zeroshot=file_cache_o3_zeroshot,list_ner_q=list_ner_q, KB=KB)
         
     print(cnt)
     

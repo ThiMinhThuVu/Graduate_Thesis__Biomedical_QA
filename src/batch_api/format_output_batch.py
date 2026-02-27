@@ -25,8 +25,9 @@ def parse_batch_output(input_jsonl_path, output_json_path):
                     
                     # Lưu vào dict kết quả với key là custom_id
                     final_results[custom_id] = {
-                        "id": custom_id,
-                        "entities": content_data.get("entities", []),
+                        "QIDX": custom_id,
+                        "short_answer": content_data.get("short_answer", []),
+                        "long_answer": content_data.get("long_answer", []),
                         # Bạn có thể lưu thêm usage nếu cần quản lý chi phí
                         "usage": response["body"].get("usage", {})
                     }
@@ -45,7 +46,7 @@ def parse_batch_output(input_jsonl_path, output_json_path):
 # Sử dụng
 if __name__ == "__main__":
     # Thay đường dẫn file thực tế của bạn vào đây
-    input_path = r"src\batch_api\output\ner_llm_9000.jsonl" 
-    output_path = r"src\batch_api\output\format\ner_llm_9000_seq.json"
+    input_path = r"src\batch_api\output\zeroshot_o3_v2_3500_9000.jsonl" 
+    output_path = r"src\batch_api\output\format\zeroshot_o3_v2_3500_9000.json"
     
     parse_batch_output(input_path, output_path)

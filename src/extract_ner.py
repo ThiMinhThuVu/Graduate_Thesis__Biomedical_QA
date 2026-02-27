@@ -214,21 +214,23 @@ if __name__ == "__main__":
     # save_json(new_entities, search_list_path)
     # print(f'Saved search list to: {search_list_path}')
     
-    cnt = 0
-    seq_ner = load_json(r'data\ner\DIRECT1000\meta_entity_1000q_seq.json')
-    BASE = "medhop_preprocessing/step1/1"
-    for i, (qidx, item) in enumerate(tqdm(data.items(), desc="Extracting NER")):
-        if item['type_q'] != 'sequence':
-            continue
+    # cnt = 0
+    # seq_ner = load_json(r'data\metadata_entity.json')
+    # BASE = "medhop_preprocessing/step1/1"
+    # for i, (qidx, item) in enumerate(tqdm(data.items(), desc="Extracting NER")):
+    #     if item['type_q'] != 'sequence':
+    #         continue
         
-        file_seq = f"{BASE}/step_1_{qidx}.json"
-        sample = load_json(file_seq)
+    #     file_seq = f"{BASE}/step_1_{qidx}.json"
+    #     sample = load_json(file_seq)
                
-        for step, step_data in sample['0'].items():
-            ID = f"{qidx}|{step}"
+    #     for step, step_data in sample['0'].items():
+    #         ID = f"{qidx}|{step}"
             
-            list_ner = list(seq_ner[ID]["extracted_entities"]["detail"].keys())
-            step_data['key_entity'] = list_ner
-        save_json(sample, file_seq)
-        print(file_seq)
-    print(cnt)
+    #         list_ner = list(seq_ner[ID]["extracted_entities"]["detail"].keys())
+    #         step_data['key_entity'] = list_ner
+    #     save_json(sample, file_seq)
+    #     print(file_seq)
+    # print(cnt)
+    
+    

@@ -10,6 +10,15 @@ def load_json(file_path):
 def save_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
+        
+data = load_json(r'data\metadata_entity.json')
+
+cnt = 0
+for qidx, item in data.items():
+    if item['type_q'] == 'parallel' and item['target_answer_type'] == 'correctness':
+        cnt += 1
+print(cnt)
+exit()
     
 dict_golden = load_json(r'data\all_answer_golden_56_update.json')
 miss_id = load_json(r'list_id_miss_ct.json')

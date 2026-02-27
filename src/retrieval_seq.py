@@ -50,7 +50,7 @@ from wikipedia.exceptions import DisambiguationError, PageError
 #     save_json(output, filepath)        
 #     return result
 
-def retrieval_google(search_kw, filepath, max_results=20, base_delay=2):
+def retrieval_google(search_kw, filepath, max_results=20, base_delay=5):
     if os.path.exists(filepath):
         output = load_json(filepath)
         if 'google' in output:

@@ -78,12 +78,16 @@ def prompt_zero_shot_medhop_correctness(question):
 import os
 def build_batch_jsonl(output_jsonl):
     data = load_json(r'data\metadata_9000q.json')
-    BASE = "data/ALL_ROUND/9000/DIRECT_9000_medhop_results/all_ans"
+    BASE = "DIRECT_9000_medhop_results/all_ans"
     cnt = 0
-    
+    evidence = 0
+    CACHE = load_json(r'src\batch_api\output\format\zeroshot_o3_v0_0_3500.json')
     with open(output_jsonl, "w", encoding="utf-8") as out:
         for i, (qidx, sample) in enumerate(data.items()):
             if sample['type_q'] != 'direct':
+                continue
+            
+            if qidx in CACHE:
                 continue
             
             filepath = f"{BASE}/R4_step_3b_all_ans_{qidx}.json"
@@ -93,6 +97,7 @@ def build_batch_jsonl(output_jsonl):
             item_data = load_json(filepath)
             status = item_data['1']['0']['0']['final_answer']['selection_status']
             if status == "selected":
+                evidence += 1
                 continue
             
             target_answer_type = item_data['1']['0']['0']['target_answer_type']
@@ -121,8 +126,9 @@ def build_batch_jsonl(output_jsonl):
 
             out.write(json.dumps(record, ensure_ascii=False) + "\n")
     print(cnt)
+    print(evidence, cnt + evidence)
     print(f"Saved batch input to {output_jsonl}")
 if __name__ == "__main__":
     build_batch_jsonl(
-        output_jsonl="src/batch_api/input/o3_direct_v1.jsonl"
+        output_jsonl="src/batch_api/input/o3_direct_v2.jsonl"
     )

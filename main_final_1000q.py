@@ -279,12 +279,12 @@ if __name__ == "__main__":
      
         # target_ans_type = metadata[qidx]['target_answer_type']
         
-        # CONFIG YESNO
-        # check_yn = target_ans_type == 'correctness'
-        # if check_yn:
-        #     # continue
-        # else:
-        #     # continue
+        CONFIG YESNO
+        check_yn = target_ans_type == 'correctness'
+        if check_yn:
+            # continue
+        else:
+            # continue
         
         type_q = metadata[qidx]['type_q']    
         
