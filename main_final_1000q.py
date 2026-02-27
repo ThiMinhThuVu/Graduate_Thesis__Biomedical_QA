@@ -241,8 +241,8 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    KB="DECOMP_NEW" # Answer2, ...
-    threads = [850, 900] 
+    KB="DIRECT_1000_LIFE" # Answer2, ...
+    threads = [0, 100] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -277,14 +277,14 @@ if __name__ == "__main__":
         qidx = sample['QIDX']
         question = sample['Question']
      
-        # target_ans_type = metadata[qidx]['target_answer_type']
+        target_ans_type = metadata[qidx]['target_answer_type']
         
-        CONFIG YESNO
-        check_yn = target_ans_type == 'correctness'
-        if check_yn:
-            # continue
-        else:
-            # continue
+        # CONFIG YESNO
+        # check_yn = target_ans_type == 'correctness'
+        # if check_yn:
+        #     # continue
+        # else:
+        #     # continue
         
         type_q = metadata[qidx]['type_q']    
         

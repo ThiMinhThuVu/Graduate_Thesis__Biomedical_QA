@@ -111,10 +111,10 @@ def gen_combine_seq_answer(target_answer_type, original_question, context, model
     return json.loads(answer)
 
 if __name__ == "__main__":
-    # RESULT_DIR = "SEQUENCE_9000_medhop_results/all_ans"
-    output_file = "SEQ_medhop_results/seq_combine.json"
+    RESULT_DIR = "SEQ_medhop_results/all_ans"
+    output_file = "SEQ_medhop_results/seq_combine_zeroshot.json"
     # output_file = r"SEQUENCE_9000_medhop_results\seq_combine[0_9000]_miss_qidx_375532.json"
-    golden_data = load_json("data/all_answer_golden_56_update_v0.json")
+    golden_data = load_json("data/all_answer_golden_56_update.json")
     metadata = load_json(r'data\metadata_medhop.json')
     
     if os.path.exists(output_file):
@@ -122,22 +122,19 @@ if __name__ == "__main__":
     else:
         dict_results = {}
     cnt = 0
+    
     # for file_name in tqdm(os.listdir(RESULT_DIR)):
     #     filepath = os.path.join(RESULT_DIR, file_name)
-    
-    
-
-        data = load_json(filepath)
-        qidx = data["QIDX"]
-        type_q = data["type_q"]
-        
-        if qidx != '375532':
-            continue
-        
+    for qidx, item in metadata.items():
+        # data = load_json(filepath)
+        # qidx = data["QIDX"]
+        # type_q = data["type_q"]
+        data = 
+               
         if qidx in dict_results:
             continue
 
-        if type_q != "sequence":
+        if item['type_q'] != "sequence":
             continue
         
         cnt += 1
@@ -148,9 +145,9 @@ if __name__ == "__main__":
         # if qidx not in ["281682", "362372", "455108", "521164", "648793", "728328", "773528", "849453"]:
         #     continue
 
-        original_question = data["original_question"]
+        original_question = item["original question"]
         context = collect_context(data)
-        target_ans_type = 'chromosome' # metadata[qidx]["target_answer_type"] #original question
+        # target_ans_type = 'chromosome' # metadata[qidx]["target_answer_type"] #original question
 
         final_answer = gen_combine_seq_answer(target_ans_type, original_question, context)
         dict_results[qidx] = final_answer

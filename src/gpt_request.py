@@ -69,7 +69,7 @@ def request_api(messages, model, temperature=0):
     raise RuntimeError("All APIs failed after multiple retries.")
 
 # def search_1_search_google(query):
-# def search_google(query, max_results=10):
+def search_google(query, max_results=10):
     max_retries = 10
     retry_delay = 2
    
@@ -116,49 +116,49 @@ conn = http.client.HTTPSConnection("scraperapi.thordata.com")
     
 API_search_scraperapi = '7b29596f5d6ce1f7c5b5aeeb96f60e72' #'fa1e1e5253fadc4cdaef9f5a4f7ea85e' #'f9d4ae75aaa264fcb318051f9fd17aff'
 # def scraperapi_search(query):
-def search_google(query, max_results=20):  
-    params = {
-        "engine": "google",
-        "q": query,
-        "json": "1",
-        "num": max_results  
-    }
+# def search_google(query, max_results=20):  
+    # params = {
+    #     "engine": "google",
+    #     "q": query,
+    #     "json": "1",
+    #     "num": max_results  
+    # }
 
-    payload = urlencode(params)
+    # payload = urlencode(params)
 
-    headers = {
-        'Authorization': f'Bearer {API_search_scraperapi}',
-        'Content-Type': 'application/x-www-form-urlencoded'
-    }
+    # headers = {
+    #     'Authorization': f'Bearer {API_search_scraperapi}',
+    #     'Content-Type': 'application/x-www-form-urlencoded'
+    # }
     
-    try:
-        conn.request("POST", "/request", payload, headers)
-        res = conn.getresponse()
+    # try:
+    #     conn.request("POST", "/request", payload, headers)
+    #     res = conn.getresponse()
 
-        if res.status in (401, 403):
-            print("API key không hợp lệ hoặc đã hết hạn (status:", res.status, ")")
-            return None
+    #     if res.status in (401, 403):
+    #         print("API key không hợp lệ hoặc đã hết hạn (status:", res.status, ")")
+    #         return None
 
-        data = res.read()
-        data = _json.loads(data.decode("utf-8"))
+    #     data = res.read()
+    #     data = _json.loads(data.decode("utf-8"))
 
-        output = []
+    #     output = []
 
-        # ===== LẤY TỐI ĐA max_results =====
-        organic_results = data.get('organic', [])[:max_results]
+    #     # ===== LẤY TỐI ĐA max_results =====
+    #     organic_results = data.get('organic', [])[:max_results]
 
-        for item in organic_results:
-            output.append({
-                "title": item.get('title', ''),
-                "link": item.get('link', ''),
-                "snippet": item.get('description', '')
-            })
+    #     for item in organic_results:
+    #         output.append({
+    #             "title": item.get('title', ''),
+    #             "link": item.get('link', ''),
+    #             "snippet": item.get('description', '')
+    #         })
 
-        return output
+    #     return output
 
-    except Exception as e:
-        print("search_google error:", e)
-        return None
+    # except Exception as e:
+    #     print("search_google error:", e)
+    #     return None
     
 if __name__ == "__main__":    
     # Ví dụ hỏi thủ đô của Pháp bằng model o3
