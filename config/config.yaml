@@ -22,8 +22,8 @@ type_run: {
           "wiki": 10,
           "wiki_crawl": 3,
           'ner_topk_article': 3,
-          "crawl_max_token": 300,
-          "crawl_max_token_ner": 300,
+          "crawl_max_token": 3500,
+          "crawl_max_token_ner": 3500,
           "wiki_abs": 3,
           "sparql_r_topk": 3, # wiki nên dùng 1-2, medhop: 3
           "sparql_r_retry_topk": 5, # wiki 3 là đủ dùng;  medhop:5

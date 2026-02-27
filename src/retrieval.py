@@ -258,8 +258,13 @@ def get_paragraphs_wiki_result(link, sample, subquestion, target_answer_type=Non
 
     for head, sec_text in res_output.items():
         res_paragraphs += f"Section: {head}\n"
-        res_paragraphs += f"{sec_text.strip()}\n"    
-    
+        res_paragraphs += f"{sec_text.strip()}\n"
+
+    # Count tokens (words) in res_paragraphs
+    token_count = len(res_paragraphs.split())
+    if token_count > max_docs_token:
+        return None
+
     return res_paragraphs
 
 

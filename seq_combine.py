@@ -125,6 +125,7 @@ if __name__ == "__main__":
     # for file_name in tqdm(os.listdir(RESULT_DIR)):
     #     filepath = os.path.join(RESULT_DIR, file_name)
     
+    
 
         data = load_json(filepath)
         qidx = data["QIDX"]
