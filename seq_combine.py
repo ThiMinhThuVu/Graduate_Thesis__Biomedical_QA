@@ -111,9 +111,9 @@ def gen_combine_seq_answer(target_answer_type, original_question, context, model
     return json.loads(answer)
 
 if __name__ == "__main__":
-    RESULT_DIR = "SEQ_medhop_results/all_ans"
-    # output_file = "SEQ_medhop_results/seq_combine.json"
-    output_file = "data/ALL_ROUND/1000/DECOMP_NEW_medhop_results/combine/seq_combine_zeroshot.json"
+    # RESULT_DIR = "SEQUENCE_9000_medhop_results/all_ans"
+    output_file = "SEQ_medhop_results/seq_combine.json"
+    # output_file = r"SEQUENCE_9000_medhop_results\seq_combine[0_9000]_miss_qidx_375532.json"
     golden_data = load_json("data/all_answer_golden_56_update_v0.json")
     metadata = load_json(r'data\metadata_medhop.json')
     
@@ -122,12 +122,16 @@ if __name__ == "__main__":
     else:
         dict_results = {}
     cnt = 0
-    for file_name in tqdm(os.listdir(RESULT_DIR)):
-        filepath = os.path.join(RESULT_DIR, file_name)
+    # for file_name in tqdm(os.listdir(RESULT_DIR)):
+    #     filepath = os.path.join(RESULT_DIR, file_name)
+    
 
         data = load_json(filepath)
         qidx = data["QIDX"]
         type_q = data["type_q"]
+        
+        if qidx != '375532':
+            continue
         
         if qidx in dict_results:
             continue
@@ -145,7 +149,7 @@ if __name__ == "__main__":
 
         original_question = data["original_question"]
         context = collect_context(data)
-        target_ans_type = metadata[qidx]["target_answer_type"] #original question
+        target_ans_type = 'chromosome' # metadata[qidx]["target_answer_type"] #original question
 
         final_answer = gen_combine_seq_answer(target_ans_type, original_question, context)
         dict_results[qidx] = final_answer

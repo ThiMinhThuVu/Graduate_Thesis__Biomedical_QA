@@ -705,7 +705,7 @@ def get_sparql_retrieval_context(list_ner_q, search_kw_subq, settings, embedding
 
 from scipy.spatial.distance import cdist
 
-def get_top_k_docs(centroid, crawl_data, topk=5, method='euclidean'): # lấy top k từ tâm cụm search    
+def get_top_k_docs(centroid, crawl_data, topk=3, method='euclidean'): # lấy top k từ tâm cụm search    
     if not crawl_data:
         print("⚠ Empty crawl_data")
         return [], [], []
@@ -789,7 +789,7 @@ def compute_cluster_info(labels, docs, embed_docs):
 
     return cluster_data
 
-def cluster_per_qid_search_api(doc_sources, crawl_data_wikipedia, embeding_model_cluster, n_clusters=7, topk=5,method='euclidean'):
+def cluster_per_qid_search_api(doc_sources, crawl_data_wikipedia, embeding_model_cluster, n_clusters=3, topk=3,method='euclidean'):
     #embed doc search api
     all_embeddings = []
     for article in doc_sources:
@@ -976,7 +976,7 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
             get_ner=True
         )
     
-        ctx_doc_search_fond_nbh = cluster_per_qid_search_api(list_article_search,crawl_wiki_context_embed+crawl_ner_wiki_embed, embeding_model_cluster)
+        ctx_doc_search_fond_nbh = cluster_per_qid_search_api(list_article_search,crawl_wiki_context_embed+crawl_ner_wiki_embed, embeding_model_cluster, n_clusters=3, topk=3)
 
         return ctx_doc_search_fond_nbh
     

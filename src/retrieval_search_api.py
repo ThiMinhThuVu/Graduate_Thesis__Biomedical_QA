@@ -97,7 +97,7 @@ def retrieval_wiki(search_kw, filepath, max_results=10):
 #                 exit()
 
 import shutil
-                
+from tqdm import tqdm
 if __name__ == "__main__":
     cache_IR20 = "E:/2wiki/2wiki/cache/IR_20"
     input_path = r'E:\2wiki\2wiki\cache\dict_searchkw\bridge_comparison_dict_search_kw.json'
@@ -117,7 +117,6 @@ if __name__ == "__main__":
     for i, (qidx, list_searchkw) in enumerate(tqdm(input_data.items(), desc="Processing & Copying")):
         for search_kw in list_searchkw:
             hashid = make_cache_filename(search_kw.lower())
-            # Nếu hashid chưa có đuôi .json thì bạn có thể thêm vào, ví dụ: hashid + ".json"
             source_filepath = os.path.join(cache_IR20, hashid)
             dest_filepath = os.path.join(dest_folder, hashid)
 

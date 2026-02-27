@@ -16,9 +16,9 @@ type_run: {
       
 
       "retrieval_topk": {
-          "max_results_search_api_gg": 20, 
+          "max_results_search_api_gg": 10, 
           "max_results_search_api_wiki": 10, 
-          "google":  20,
+          "google":  10,
           "wiki": 10,
           "wiki_crawl": 3,
           'ner_topk_article': 3,
