@@ -1,6 +1,6 @@
 import os
 import json
-from src.gpt_request import request_api
+from src.gpt_request import request_api, request_api_o3_mini
 from tqdm import tqdm
 
 def load_json(file_path):
@@ -111,11 +111,14 @@ def gen_combine_seq_answer(target_answer_type, original_question, context, model
     return json.loads(answer)
 
 if __name__ == "__main__":
-    RESULT_DIR = "SEQ_medhop_results/all_ans"
-    output_file = "SEQ_medhop_results/seq_combine_zeroshot.json"
+    
+    
+    RESULT_DIR = "E:/MAS_UETQuintet/ANNQ_SEQUENCE_LITE_1000_medhop_results/SEQUENCE_LITE_1000_medhop_results/all_ans" #"SEQ_medhop_results/all_ans"
+    # output_file = "SEQ_medhop_results/seq_combine_zeroshot.json"
     # output_file = r"SEQUENCE_9000_medhop_results\seq_combine[0_9000]_miss_qidx_375532.json"
+    output_file = "ANNQ_SEQUENCE_LITE_1000_medhop_results/SEQUENCE_LITE_1000_medhop_results/seq_combine_zeroshot.json"
     golden_data = load_json("data/all_answer_golden_56_update.json")
-    metadata = load_json(r'data\metadata_medhop.json')
+    metadata = load_json(r'data/metadata_medhop.json')
     
     if os.path.exists(output_file):
         dict_results = load_json(output_file)
@@ -135,7 +138,9 @@ if __name__ == "__main__":
         if item['type_q'] != "sequence":
             continue
         
-        filepath = f"SEQ_medhop_results/all_ans/R4_step_3b_all_ans_{qidx}.json"
+        filepath = f"{RESULT_DIR}/R4_step_3b_all_ans_{qidx}.json"
+        if not os.path.exists(filepath):
+            continue
         data = load_json(filepath)
         target_ans_type = item['target_answer_type']
         cnt += 1

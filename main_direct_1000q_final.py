@@ -242,7 +242,7 @@ if __name__ == "__main__":
     
     #edit config
     KB="DIRECT_1000_LIFE" # Answer2, ...
-    threads = [300, 600] 
+    threads = [600, 800] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  

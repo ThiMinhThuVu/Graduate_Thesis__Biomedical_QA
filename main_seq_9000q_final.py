@@ -2,7 +2,7 @@ import os
 import spacy
 from tqdm import tqdm
 from src.decomposition import decompose_question_parallel, decompose_question_sequential
-from src.retrieval_seq import retrieve_evidence, remove_retrieve_evidence, remove_entity_evidence, remove_specific_references
+from src.retrieval_seq import retrieve_evidence
 from src.extract_ner import extract_entities_from_evidence
 from src.generate_answer import generate_combine_parallel_answers, _generate_answer
 from src.candidate_cluster_ct6 import process_get_final_answer
