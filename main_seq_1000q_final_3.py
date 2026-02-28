@@ -2,7 +2,7 @@ import os
 import spacy
 from tqdm import tqdm
 from src.decomposition import decompose_question_parallel, decompose_question_sequential
-from src.retrieval import retrieve_evidence, remove_retrieve_evidence, remove_entity_evidence, remove_specific_references
+from src.retrieval_seq import retrieve_evidence, remove_retrieve_evidence, remove_entity_evidence, remove_specific_references
 from src.extract_ner import extract_entities_from_evidence
 from src.generate_answer import generate_combine_parallel_answers, _generate_answer
 from src.candidate_cluster_ct6 import process_get_final_answer
@@ -23,7 +23,7 @@ extractor_model = None
 
 global cache_ner_filter
 cache_ner_filter = {}
-mapping_data_answer = load_json('data/mapping_answer_gol.json')
+mapping_data_answer = load_json('data/mapping_answer_gol_add_seq.json')
 
 
 def reset_directory(dir_path: str):
@@ -47,14 +47,14 @@ def load_model(dataset, configs, using_embedding_model=False):
 
     print(configs['cache'])
     hash_id_cache = load_json(configs['type_run']['cache']['hash_id']['retrieval'])
-    hash_id_crawl_wiki_cache = load_json(configs['type_run']['cache']['hash_id']['crawl_wiki'])
+    # hash_id_crawl_wiki_cache = load_json(configs['type_run']['cache']['hash_id']['crawl_wiki'])
     
     if dataset == "medhop":
         # Biomedical NER
         extractor_model = spacy.load("en_ner_bc5cdr_md")
-        extractor_model_2 = spacy.load("en_ner_jnlpba_md")
-        extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
-        # extractor_model_2 = extractor_model_3 = None
+        # extractor_model_2 = spacy.load("en_ner_jnlpba_md")
+        # extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
+        extractor_model_2 = extractor_model_3 = None
         
         # Biomedical embedding
         # embedding_model = AutoModel.from_pretrained("dmis-lab/biobert-base-cased-v1.1")
@@ -81,9 +81,9 @@ def load_model(dataset, configs, using_embedding_model=False):
     else:
         raise ValueError(f"Unsupported dataset: {dataset}")
 
-def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, type_q=None,
+def preprocess_sample(sample, settings, is_seq=False, dataset=None, type_q=None,
             using_target_type = False, using_gen_old=False, has_extract_ner=False, using_decomp_new=False,
-            question_type_to_ner=None, using_prompt_yn=False, file_cache_o3_zeroshot=None, KB=""):
+            question_type_to_ner=None, using_prompt_yn=False, file_cache_o3_zeroshot=None, list_ner_q=None, KB=""):
     
     sample_id = str(sample['QIDX']) 
     print("[ID]: ", sample_id)
@@ -154,6 +154,9 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     search_kw_subq = item['search_keyword'] 
                     target_ans_type = item['target_answer_type']
                     
+                    if type_q == 'sequence':
+                        list_ner_q = item['key_entity']
+                        
                     if target_ans_type == 'correctness': # YES/NO
                         using_prompt_yn = True
                     else:
@@ -185,8 +188,9 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                         extracted_entities = ""
                         
                     # kmean doc search - found crawl wiki|ner docs
+                    # cluster_docs_ctx = retrieve_evidence(list_ner_q, sample, search_kw_subq_retrieval, settings,target_ans_type, embedding_model, embedding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache)
                     cluster_docs_ctx = retrieve_evidence(list_ner_q, sample, search_kw_subq_retrieval, settings,
-                                                                target_ans_type, embedding_model, embedding_model_cluster, hash_id_cache, hash_id_crawl_wiki_cache)  
+                                                                target_ans_type, embedding_model, embedding_model_cluster, hash_id_cache)  
                     cluster_output = {}
                     for cluster_label, sample_cluster in cluster_docs_ctx.items():
                         context = "\n".join(sample_cluster['docs']) + " " + "\n".join(sample_cluster['crawl_doc'])                                                             
@@ -210,7 +214,8 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
                     dict_ans[q_i][path_i][step]["focus_spacy_based_entity_label"] = focus_spacy_based_entity_label      
                     dict_ans[q_i][path_i][step]["cluster_genered_answer"] = cluster_output
                     dict_ans[q_i][path_i][step]["retrieval_information"] = cluster_docs_ctx
-           
+
+                    print(f"Final Answer - Step {step}: ", short_ans)
 
             dict_ans[q_i]['final_qi']["question"] = question
             dict_ans[q_i]['final_qi']["short_answer"] = short_ans
@@ -236,25 +241,26 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
         print(f"\nSaved to {file_all_ans}")    
 
+
 if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)
     
     #edit config
-    KB="DIRECT_1000_LIFE" # Answer2, ...
-    threads = [600,1000] 
+    KB="SEQUENCE_LITE_1000" # Answer2, ...
+    threads = [925, 1000] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
-    model_path = configs['classification'][dataset]['model_path']
-    tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
+    # model_path = configs['classification'][dataset]['model_path']
+    # tokenizer_dir = configs['classification'][dataset]['tokenizer_dir']
     
     settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
     raw_data_file = configs['dataset'][dataset][data_type]
     raw_data = load_json(raw_data_file)
-        
+
     if dataset == "medhop":
         settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
         settings['normalize'] = True
@@ -263,7 +269,7 @@ if __name__ == "__main__":
     # reset_directory(r"data/cache/filter_ner_wikipedia")
     # reset_directory(r"data/cache/filter_wikipedia")
     load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
-    # ner_version = 4
+
     ner_version = "#3"
     metadata = load_json('data/metadata_medhop.json')
     meta_ner = load_json(r'data/metadata_entity.json') 
@@ -278,18 +284,11 @@ if __name__ == "__main__":
         question = sample['Question']
      
         target_ans_type = metadata[qidx]['target_answer_type']
-        
-        # CONFIG YESNO
-        # check_yn = target_ans_type == 'correctness'
-        # if check_yn:
-        #     # continue
-        # else:
-        #     # continue
-        
+                
         type_q = metadata[qidx]['type_q']    
         
         #CONFIG    
-        if type_q != "direct":# "sequence": # "parallel":
+        if type_q != "sequence":# "sequence": # "parallel":
             continue
         else:
             cnt += 1
@@ -314,9 +313,9 @@ if __name__ == "__main__":
         
         file_cache_o3_zeroshot = configs['cache']['zeroshot'][type_q] # direct, sequence, parallel
         
-        preprocess_sample(list_ner_q, sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
+        preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
             using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=True,
-            question_type_to_ner=question_type_to_ner, file_cache_o3_zeroshot=file_cache_o3_zeroshot, KB=KB)
+            question_type_to_ner=question_type_to_ner, file_cache_o3_zeroshot=file_cache_o3_zeroshot, list_ner_q=list_ner_q, KB=KB)
         
     print(cnt)
     
