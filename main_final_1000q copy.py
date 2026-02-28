@@ -242,7 +242,7 @@ if __name__ == "__main__":
     
     #edit config
     KB="DIRECT_1000_LIFE" # Answer2, ...
-    threads = [100, 200] 
+    threads = [600,1000] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -289,7 +289,7 @@ if __name__ == "__main__":
         type_q = metadata[qidx]['type_q']    
         
         #CONFIG    
-        if type_q != "sequence":# "sequence": # "parallel":
+        if type_q != "direct":# "sequence": # "parallel":
             continue
         else:
             cnt += 1

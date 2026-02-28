@@ -129,14 +129,15 @@ if __name__ == "__main__":
         # data = load_json(filepath)
         # qidx = data["QIDX"]
         # type_q = data["type_q"]
-        data = 
-               
         if qidx in dict_results:
             continue
 
         if item['type_q'] != "sequence":
             continue
         
+        filepath = f"SEQ_medhop_results/all_ans/R4_step_3b_all_ans_{qidx}.json"
+        data = load_json(filepath)
+        target_ans_type = item['target_answer_type']
         cnt += 1
         # golden = golden_data[qidx]["True"]
         # if len(golden) == 0:
@@ -151,6 +152,7 @@ if __name__ == "__main__":
 
         final_answer = gen_combine_seq_answer(target_ans_type, original_question, context)
         dict_results[qidx] = final_answer
+        print(final_answer)
         
         save_json(dict_results,output_file)
         

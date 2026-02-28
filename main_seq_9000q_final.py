@@ -247,8 +247,8 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    KB="SEQUENCE_9000" # Answer2, ...
-    threads = [0,9000] 
+    KB="SEQUENCE_LITE_9000" # Answer2, ...
+    threads = [0,1] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -279,10 +279,7 @@ if __name__ == "__main__":
         qidx = str(qidx)
         question = sample['Question']             
         type_q = sample['type_q']    
-    
-        if qidx != '375532':
-            continue
-        
+            
         #CONFIG    
         if type_q != "sequence":# "sequence": # "parallel":
             continue
