@@ -2,7 +2,7 @@ import os
 import spacy
 from tqdm import tqdm
 from src.decomposition import decompose_question_parallel, decompose_question_sequential
-from src.retrieval_seq import retrieve_evidence, remove_retrieve_evidence, remove_entity_evidence, remove_specific_references
+from src.retrieval_seq import retrieve_evidence
 from src.extract_ner import extract_entities_from_evidence
 from src.generate_answer import generate_combine_parallel_answers, _generate_answer
 from src.candidate_cluster_ct6 import process_get_final_answer
@@ -247,8 +247,8 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    KB="SEQUENCE_LITE_1000" # Answer2, ...
-    threads = [825, 925] 
+    KB="SEQUENCE_LITE_9000" # Answer2, ...
+    threads = [4500, 5000] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -258,8 +258,6 @@ if __name__ == "__main__":
     
     settings = configs['type_run']   
     settings["dataset"] = f"{dataset}_"
-    raw_data_file = configs['dataset'][dataset][data_type]
-    raw_data = load_json(raw_data_file)
 
     if dataset == "medhop":
         settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
@@ -271,51 +269,42 @@ if __name__ == "__main__":
     load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
 
     ner_version = "#3"
-    metadata = load_json('data/metadata_medhop.json')
-    meta_ner = load_json(r'data/metadata_entity.json') 
+    metadata = load_json('data/metadata_9000q.json')
     cnt = 0
     
 
-    for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
+    for idx, (qidx, sample) in enumerate(tqdm(metadata.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
-        
-        qidx = sample['QIDX']
-        question = sample['Question']
-     
-        target_ans_type = metadata[qidx]['target_answer_type']
-                
-        type_q = metadata[qidx]['type_q']    
-        
+        qidx = str(qidx)
+        question = sample['Question']             
+        type_q = sample['type_q']    
+            
         #CONFIG    
         if type_q != "sequence":# "sequence": # "parallel":
             continue
         else:
             cnt += 1
-    
+        
         sample['type_q'] = type_q        
         if type_q in ['direct', 'parallel', 'comparison']:
             is_seq = False
         else:
             is_seq = True
 
-        if ner_version == 2:
-            question_type_to_ner = question_type_to_ner_2
-        elif ner_version == 3:
-            question_type_to_ner = question_type_to_ner_3
-        elif ner_version == 4:
-            question_type_to_ner = question_type_to_ner_4
-        elif ner_version == "#3":
-            question_type_to_ner = {} # để tất cả các type trả về là ["DISEASE", "CHEMICAL"]   
         
-        dict_ner_q = meta_ner[qidx]['entities_q'].get('detail', {})
-        list_ner_q = list(dict_ner_q.keys())
+        question_type_to_ner = {} # để tất cả các type trả về là ["DISEASE", "CHEMICAL"]   
+        if type_q == 'sequence':
+            list_ner_q = None
+        else:
+            dict_ner_q = sample['entities_q'].get('detail', {})
+            list_ner_q = list(dict_ner_q.keys())
         
         file_cache_o3_zeroshot = configs['cache']['zeroshot'][type_q] # direct, sequence, parallel
         
         preprocess_sample(sample, settings, is_seq=is_seq, dataset=dataset, type_q=type_q, 
             using_target_type=False, using_gen_old=True, has_extract_ner=True, using_decomp_new=True,
-            question_type_to_ner=question_type_to_ner, file_cache_o3_zeroshot=file_cache_o3_zeroshot, list_ner_q=list_ner_q, KB=KB)
+            question_type_to_ner=question_type_to_ner, file_cache_o3_zeroshot=file_cache_o3_zeroshot,list_ner_q=list_ner_q, KB=KB)
         
     print(cnt)
     

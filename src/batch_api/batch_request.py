@@ -29,7 +29,7 @@ from src.api_key import client
 # 🚀 Batch Job ID: batch_69a1023f28bc8190881d569636a2edab
 # Status: validating
 
-BATCH_ID = "batch_69a1023f28bc8190881d569636a2edab"   # <-- paste batch_id vào đây
+BATCH_ID = "batch_69a351e41c3c8190936ac95a8770ce1c"   # <-- paste batch_id vào đây
 
 batch = client.batches.retrieve(BATCH_ID)
 print("Batch status:", batch.status)
@@ -40,6 +40,6 @@ if batch.status != "completed":
 # Download output
 content = client.files.content(batch.output_file_id)
 
-content.write_to_file(r"src\batch_api\output\zeroshot_o3_v2_3500_9000.jsonl")
+content.write_to_file(r"src\batch_api\output\o3_seq_parallel_original_question_9000_DAT.jsonl")
 
-print("Downloaded src\batch_api\output\zeroshot_o3_v2_3500_9000.jsonl")
+print("Downloaded src\batch_api\output\o3_seq_parallel_original_question_9000_DAT.jsonl")

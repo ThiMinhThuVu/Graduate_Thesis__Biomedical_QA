@@ -46,7 +46,7 @@ def parse_batch_output(input_jsonl_path, output_json_path):
 # Sử dụng
 if __name__ == "__main__":
     # Thay đường dẫn file thực tế của bạn vào đây
-    input_path = r"src\batch_api\output\zeroshot_o3_v2_3500_9000.jsonl" 
-    output_path = r"src\batch_api\output\format\zeroshot_o3_v2_3500_9000.json"
+    input_path = r"src\batch_api\output\o3_direct_original_question_9000_DAT.jsonl" 
+    output_path = r"src\batch_api\output\format\o3_direct_original_question_9000_DAT.json"
     
     parse_batch_output(input_path, output_path)
