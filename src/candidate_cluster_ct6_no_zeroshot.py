@@ -5,28 +5,13 @@ import os
 import sys
 from collections import defaultdict
 from sklearn.cluster import AgglomerativeClustering
-from sentence_transformers import SentenceTransformer
-from sentence_transformers.models import StaticEmbedding
 from postprocessing import postprocessing
 import math
 from src.api_key import api_key_openai
 from openai import OpenAI
 import portalocker # Thêm thư viện này
 
-# ZERO SHOT
-client = OpenAI(
-    api_key = api_key_openai
-)
 
-
-def request_api_o3(messages, max_completion_tokens=8192):
-    response = client.chat.completions.create(
-        model="o3",
-        messages=messages,
-        max_completion_tokens=max_completion_tokens
-    )
-    return response.choices[0].message.content
-    
 def prompt_zero_shot_medhop_wh(question):
     prompt = f"""You are an expert in biomedical and scientific knowledge. Your task is to answer the following question based on established scientific consensus and your internal knowledge.
 
@@ -469,11 +454,14 @@ def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, D
                 "text": cand["text"],
                 "sources": set(cand.get("sources", [])),
                 "context": cand.get("context", ""),
-                "long_answer": cand.get('long_answer', "")
+                "long_answer": cand.get('long_answer', ""),
+                'list_cands': [idx]
             }
+            
         else:
             merged_in_cluster[norm_text]["sources"].update(cand.get("sources", []))
             merged_in_cluster[norm_text]["long_answer"] += cand['long_answer']
+            merged_in_cluster[norm_text]['list_cands'].append(idx)
 
     result = max(merged_in_cluster.values(), key=lambda x: len(x["sources"]))
     result["sources"] = list(result["sources"])

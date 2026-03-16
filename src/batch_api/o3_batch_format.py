@@ -81,14 +81,14 @@ def build_batch_jsonl(output_jsonl):
     BASE = "DIRECT_9000_medhop_results/all_ans"
     cnt = 0
     evidence = 0
-    CACHE = load_json(r'src\batch_api\output\format\zeroshot_o3_v0_0_3500.json')
+    # CACHE = load_json(r'src\batch_api\output\format\zeroshot_o3_v0_0_3500.json')
     with open(output_jsonl, "w", encoding="utf-8") as out:
         for i, (qidx, sample) in enumerate(data.items()):
             if sample['type_q'] != 'direct':
                 continue
             
-            if qidx in CACHE:
-                continue
+            # if qidx in CACHE:
+            #     continue
             
             filepath = f"{BASE}/R4_step_3b_all_ans_{qidx}.json"
             if not os.path.exists(filepath):

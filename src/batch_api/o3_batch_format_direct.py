@@ -81,29 +81,25 @@ def build_batch_jsonl(output_jsonl):
     BASE = "DIRECT_9000_medhop_results/all_ans"
     cnt = 0
     evidence = 0
+    metadata = load_json('data\sequence_target_answer_type.json')
+    metadata.update(load_json('data\parallel_target_answer_type.json'))
+    print(len(metadata.keys()))
     CACHE = load_json(r'data\exist_in_cache_qidx_O3_zeroshot.json')
     with open(output_jsonl, "w", encoding="utf-8") as out:
         for i, (qidx, sample) in enumerate(data.items()):
-            if sample['type_q'] != 'direct':
-                continue
             
-            if qidx in CACHE:
-                continue
-            
-            filepath = f"{BASE}/R4_step_3b_all_ans_{qidx}.json"
-            if not os.path.exists(filepath):
-                continue
-            
-            item_data = load_json(filepath)
-            # status = item_data['1']['0']['0']['final_answer']['selection_status']
-            # if status == "selected":
-            #     evidence += 1
-            #     continue
-            
-            target_answer_type = item_data['1']['0']['0']['target_answer_type']
-            
+            if sample['type_q'] == 'direct':
+                filepath = f"{BASE}/R4_step_3b_all_ans_{qidx}.json"
+                if not os.path.exists(filepath):
+                    continue
+                item_data = load_json(filepath)
+                target_answer_type = item_data['1']['0']['0']['target_answer_type']
+            else:
+                target_answer_type = metadata[qidx]
+                
             question = sample['Question']
             cnt += 1
+            
             if target_answer_type == 'correctness':
                 prompt = prompt_zero_shot_medhop_correctness(question)
             else:
@@ -118,7 +114,7 @@ def build_batch_jsonl(output_jsonl):
                 "method": "POST",
                 "url": "/v1/chat/completions", # Fix: Endpoint đúng cho chat
                 "body": {
-                    "model": "o3", 
+                    "model": "o3-mini", 
                     "messages": messages,
                     "response_format": { "type": "json_object" } # Khuyên dùng để o3 trả về JSON chuẩn
                 }
@@ -129,5 +125,5 @@ def build_batch_jsonl(output_jsonl):
     print(f"Saved batch input to {output_jsonl}")
 if __name__ == "__main__":
     build_batch_jsonl(
-        output_jsonl="src/batch_api/input/o3_direct_original_question_9000_DAT.jsonl"
+        output_jsonl="src/batch_api/input/o3_mini_9000q_zeroshot.jsonl"
     )

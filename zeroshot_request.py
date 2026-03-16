@@ -152,6 +152,33 @@ def run_zero_shot_seq_1000q():
         cnt += 1
         print(cnt, qidx, target_ans_type)
         
+
+
+def run_zero_shot_parallel_1000q():
+    metadata = load_json("data/metadata_medhop.json")
+    cache_filepath = "experiment_o3_ZEROSHOT/zero_shot_9981q.json"
+
+    if os.path.exists(cache_filepath):
+        cache = load_json(cache_filepath)
+    else:
+        cache = {}
+    cnt = 0
+    for qidx in tqdm(list(metadata.keys())):
+        if qidx in cache:
+            print(f"Skipping QIDX: {qidx}")
+            continue
+        
+        target_ans_type = metadata[qidx]['target_answer_type']
+        question = metadata[qidx]["original question"]
+        
+        final_answer = gen_zero_shot_answer_medhop(question=question, target_answer_type=target_ans_type)
+        cache[qidx] = final_answer
+
+        save_json(cache, cache_filepath)
+        cnt += 1
+        print(cnt, qidx, target_ans_type)
+        
+        
 if __name__ == "__main__":
     # run_zero_shot_seq_9000q()
     run_zero_shot_seq_1000q()

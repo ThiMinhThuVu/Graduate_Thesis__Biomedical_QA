@@ -2,7 +2,7 @@ import os
 import spacy
 from tqdm import tqdm
 from src.decomposition import decompose_question_parallel, decompose_question_sequential
-from src.retrieval import retrieve_evidence, remove_retrieve_evidence, remove_entity_evidence, remove_specific_references
+from src.retrieval_k_5 import retrieve_evidence # FULL MODEL
 from src.extract_ner import extract_entities_from_evidence
 from src.generate_answer import generate_combine_parallel_answers, _generate_answer
 from src.candidate_cluster_ct6 import process_get_final_answer
@@ -241,8 +241,8 @@ if __name__ == "__main__":
     configs = load_yaml(config_path)
     
     #edit config
-    KB="DIRECT_1000_LIFE" # Answer2, ...
-    threads = [600, 800] 
+    KB="DIRECT_500_COST" # Answer2, ...
+    threads = [0, 400] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
@@ -269,22 +269,17 @@ if __name__ == "__main__":
     meta_ner = load_json(r'data/metadata_entity.json') 
     cnt = 0
     
-
+    final_list_500 = load_json(r'data/500q_compute_cost.json')
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
         
         qidx = sample['QIDX']
         question = sample['Question']
+        if qidx not in final_list_500:
+            continue
      
         target_ans_type = metadata[qidx]['target_answer_type']
-        
-        # CONFIG YESNO
-        # check_yn = target_ans_type == 'correctness'
-        # if check_yn:
-        #     # continue
-        # else:
-        #     # continue
         
         type_q = metadata[qidx]['type_q']    
         

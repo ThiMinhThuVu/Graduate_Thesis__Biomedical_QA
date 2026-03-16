@@ -4,7 +4,7 @@ from src.api_key import client
 
 # 1. Upload file lên hệ thống của OpenAI
 file_response = client.files.create(
-    file=open("src/batch_api/input/o3_direct_original_question_9000_DAT.jsonl", "rb"),
+    file=open("post_llm_lite/Model_Lite/submission_lite_model_10000q_fix_duplicate.jsonl", "rb"),
     purpose="batch"
 )
 
@@ -17,19 +17,27 @@ batch_job = client.batches.create(
     endpoint="/v1/chat/completions",  # BẮT BUỘC phải là cái này cho Chat
     completion_window="24h",
     metadata={
-      "description": "ZERO SHOT DIRECT QUESTION ORIGINAL O3-9000"
+      "description": "POST LLM LITE MODEL"
     }
 )
 
 print(f"🚀 Batch Job ID: {batch_job.id}")
 print(f"Status: {batch_job.status}")
 
-# (env_py39) PS E:\MAS_UETQuintet> python -m src.batch_api.batch_request_direct
-# ✅ Input file ID: file-Ef7ViUS4e1hzvNNHqtRpcF
-# 🚀 Batch Job ID: batch_69a3517ecf8c8190b135c4e3c57ce713
+# (base) PS E:\MAS_UETQuintet> python -m src.batch_api.batch_request_direct
+# ✅ Input file ID: file-HaLiJiX31ebNzRQJSoa1rL
+# 🚀 Batch Job ID: batch_69a47a4a3efc8190a5fc1ffcb7576277
 # Status: validating
 
-# BATCH_ID = "batch_69a3517ecf8c8190b135c4e3c57ce713"   # <-- paste batch_id vào đây
+#FAIL l1
+# (base) PS E:\MAS_UETQuintet> python -m src.batch_api.batch_request_direct
+# ✅ Input file ID: file-LVrNEZZY7FnHu9xNM9An9i
+# 🚀 Batch Job ID: batch_69a4397de5f88190a3128bf12fbef058
+# Status: validating
+# (base) PS E:\MAS_UETQuintet> 
+
+
+# BATCH_ID = "batch_69a4397de5f88190a3128bf12fbef058"   # <-- paste batch_id vào đây
 
 # batch = client.batches.retrieve(BATCH_ID)
 # print("Batch status:", batch.status)

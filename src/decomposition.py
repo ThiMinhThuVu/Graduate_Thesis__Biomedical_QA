@@ -3,7 +3,7 @@ import json
 import os 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from src.gpt_request import request_api
+from src.gpt_request import request_api, request_api_o3_mini, request_api_4o_mini
 from src.prompt import load_prompt_gen_sub, prompt_split_parallel_question_medhop, prompt_split_parallel_question_wiki
 from src.split_question import split_comparison_question, split_bridge_comparison_fallback
 from utils.util import load_json, save_json
@@ -165,7 +165,9 @@ def decompose_question_sequential(question, sample_id, filepath, is_seq=True, da
         return output, n_path
     
     messages = load_prompt_gen_sub(question, is_seq=is_seq, dataset=dataset, type_q=type_q, using_decomp_new=using_decomp_new)
-    result_json = request_api(messages, model)
+    # result_json = request_api(messages, model)
+    # call opeani
+    result_json = request_api_4o_mini(messages)
     
     if not result_json or result_json.strip() == "":
         raise ValueError("Empty response from API")

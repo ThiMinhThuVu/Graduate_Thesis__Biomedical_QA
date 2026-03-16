@@ -111,12 +111,12 @@ def gen_combine_seq_answer(target_answer_type, original_question, context, model
     return json.loads(answer)
 
 if __name__ == "__main__":
-    
-    
-    RESULT_DIR = "E:/MAS_UETQuintet/ANNQ_SEQUENCE_LITE_1000_medhop_results/SEQUENCE_LITE_1000_medhop_results/all_ans" #"SEQ_medhop_results/all_ans"
+    RESULT_DIR = "SEQUENCE_LITE_1000_medhop_results/all_ans"
+    output_file = "SEQUENCE_LITE_1000_medhop_results/seq_lite_1000_combine.json"
+    # RESULT_DIR = "E:/MAS_UETQuintet/ANNQ_SEQUENCE_LITE_1000_medhop_results/SEQUENCE_LITE_1000_medhop_results/all_ans" #"SEQ_medhop_results/all_ans"
     # output_file = "SEQ_medhop_results/seq_combine_zeroshot.json"
     # output_file = r"SEQUENCE_9000_medhop_results\seq_combine[0_9000]_miss_qidx_375532.json"
-    output_file = "ANNQ_SEQUENCE_LITE_1000_medhop_results/SEQUENCE_LITE_1000_medhop_results/seq_combine_zeroshot.json"
+    # output_file = "ANNQ_SEQUENCE_LITE_1000_medhop_results/SEQUENCE_LITE_1000_medhop_results/seq_combine_zeroshot.json"
     golden_data = load_json("data/all_answer_golden_56_update.json")
     metadata = load_json(r'data/metadata_medhop.json')
     
@@ -128,13 +128,13 @@ if __name__ == "__main__":
     
     # for file_name in tqdm(os.listdir(RESULT_DIR)):
     #     filepath = os.path.join(RESULT_DIR, file_name)
-    for qidx, item in metadata.items():
+    for qidx in tqdm(list(metadata.keys())):
         # data = load_json(filepath)
         # qidx = data["QIDX"]
         # type_q = data["type_q"]
         if qidx in dict_results:
             continue
-
+        item = metadata[qidx]
         if item['type_q'] != "sequence":
             continue
         

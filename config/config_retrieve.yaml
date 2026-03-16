@@ -1,0 +1,89 @@
+run: #NHỚ SỬA LẠI MAX_CANDIDATES CHO cái multiplechoice
+  dataset: "medhop" #"medhop" #"wiki"
+  threads: [0, 1000]
+  data_split: "test"
+
+type_run: {
+      "dataset": "{dataset}_", 
+      "get_gg": True, #False #True
+      "get_wiki": True,
+      "get_crawl_wiki": True,    
+      "get_ner_wiki": True, 
+      "get_sparql_context": False, 
+      "get_abs_wiki": False,
+      "get_context_2wiki": False,      
+      "get_history_old_id": False, # only True with 2wiki
+      
+
+      "retrieval_topk": {
+          "max_results_search_api_gg": 20, 
+          "max_results_search_api_wiki": 10, 
+          "google":  20,
+          "wiki": 10,
+          "wiki_crawl": 5,
+          'ner_topk_article': 5,
+          "crawl_max_token": 300,
+          "crawl_max_token_ner": 300,
+          "wiki_abs": 3,
+          "sparql_r_topk": 3, # wiki nên dùng 1-2, medhop: 3
+          "sparql_r_retry_topk": 5, # wiki 3 là đủ dùng;  medhop:5
+          "k_percent": 0.5,
+      },
+
+    "cache": {
+        "retrieval": "data/cache/IR_20",
+        'crawl_wiki': "data/cache/wiki_pages_tool_1", #"data/cache/crawl_wikipedia",
+        'crawl_wiki_2':"data/cache/crawl_wikipedia_tool_2",
+        'ner_wiki': "data/cache/wiki_pages_tool_1", #wiki_pages", wiki_pages_tool_1
+        'filter_ner_wiki': "data/cache/filter_wikipedia", #"data/cache/filter_ner_wikipedia",
+        "filter_wiki": "data/cache/filter_wikipedia",
+        'crawl_wikidata': "data/cache/crawl_sparql_wikidata",
+        'embed_crawl': "data/cache/embeding_filter_crawl_TFIDF300.json",
+
+        "hash_id": {
+          'retrieval': "data/cache/mapping/hash_id.json",
+          'crawl_wiki': "data/cache/mapping/url2hash.json", #"data/cache/hash_id_crawl_wiki.json", # filter_wiki cũng dùng hash_id này: lấy url -> id
+          'crawl_ner': "data/cache/mapping/entity2wiki.json",
+          'url_ner_wiki': "data/cache/mapping/url2hash.json",
+          'crawl_wikidata': "data/cache/mapping/hash_id_sparql_wikidata.json"
+        },
+      },
+    "run": "R4", # TỰ ĐẶT RUN ĐỂ LƯU FILE
+    "normalize": False, # Tự đặt
+    "max_candidates": 1, # mcq: 3, not mcq: 1
+  }
+
+# R1: get_gg, get_wiki, get_crawl_wiki
+
+dataset:
+  wiki:
+    # test: "data/raw/wiki/test.json"
+    # dev: "data/raw/wiki/dev/dev_{question_type}.json"
+    test: "data/raw/wiki/test/test_compositional.json"
+
+  medhop:
+    test: "data/raw/medhop/test.json"
+    chrunk_mapping: "data/raw/medhop/shrunk_mapping.json"
+
+cache:
+  wiki_cache_data: "data/wikipedia_cache.pkl"
+  hash_id_cache: "data/cache/hash_id.json"
+  zeroshot: 
+    direct: "data/cache/O3_zeroshot_ans_cache_direct.json"
+    sequence: "data/cache/O3_zeroshot_ans_cache_sequence.json"
+    parallel: "data/cache/O3_zeroshot_ans_cache_parallel.json"
+
+classification:
+  wiki:
+    model_path: "classification/model/wiki/bert_classifier.pth"
+    tokenizer_dir: "classification/model/wiki/tokenizer"
+
+  medhop:
+    # model_path: "classification/model/medhop/cache/biolinkbert/best_model.pt"
+    # tokenizer_dir: "classification/model/medhop/cache/biolinkbert/biolinkbert_cache"
+
+    # model_path: "classification/model/medhop/cache/pubmedbert/best_model.pt"
+    # tokenizer_dir: "classification/model/medhop/cache/pubmedbert/pubmedbert_cache"
+
+    model_path: "classification/model/medhop/cache/biobert_v9/best_model.pt"
+    tokenizer_dir: "classification/model/medhop/cache/biobert_v9/biobert_cache"

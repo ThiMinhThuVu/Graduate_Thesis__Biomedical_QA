@@ -29,7 +29,7 @@ from src.api_key import client
 # 🚀 Batch Job ID: batch_69a1023f28bc8190881d569636a2edab
 # Status: validating
 
-BATCH_ID = "batch_69a351e41c3c8190936ac95a8770ce1c"   # <-- paste batch_id vào đây
+BATCH_ID = "batch_69a47a4a3efc8190a5fc1ffcb7576277"   # <-- paste batch_id vào đây
 
 batch = client.batches.retrieve(BATCH_ID)
 print("Batch status:", batch.status)
@@ -40,6 +40,25 @@ if batch.status != "completed":
 # Download output
 content = client.files.content(batch.output_file_id)
 
-content.write_to_file(r"src\batch_api\output\o3_seq_parallel_original_question_9000_DAT.jsonl")
+content.write_to_file(r"src\batch_api\output\lite\submission_lite_model_10000q_DONE.jsonl")
 
-print("Downloaded src\batch_api\output\o3_seq_parallel_original_question_9000_DAT.jsonl")
+print(r"Downloaded src\batch_api\output\lite\submission_lite_model_10000q_DONE.jsonl")
+
+
+# from src.api_key import client
+
+# # Thay ID của bạn vào đây
+# BATCH_ID = "batch_69a47a4a3efc8190a5fc1ffcb7576277" #"batch_69a4397de5f88190a3128bf12fbef058"
+
+# batch_job = client.batches.retrieve(BATCH_ID)
+
+# print(f"ID: {batch_job.id}")
+# print(f"Trạng thái hiện tại: {batch_job.status}")
+# print(f"Tiến độ: {batch_job.request_counts}")
+
+# if batch_job.status == "completed":
+#     print(f"Chúc mừng! File kết quả ID là: {batch_job.output_file_id}")
+#     # Bạn có thể dùng ID này để tải file về
+# elif batch_job.status == "failed":
+#     print("Job bị lỗi thật sự trên server OpenAI.")
+#     print(f"Lỗi: {batch_job.errors}")

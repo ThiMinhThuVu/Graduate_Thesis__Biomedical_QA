@@ -248,7 +248,7 @@ if __name__ == "__main__":
     
     #edit config
     KB="SEQUENCE_LITE_9000" # Answer2, ...
-    threads = [4000, 4500] 
+    threads = [0, 9000] 
     # configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  

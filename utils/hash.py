@@ -48,10 +48,11 @@ def register_query_cache_2(query: str, file_cache_index="data/cache/hash_id.json
     return filename
 
 if __name__ == "__main__":
-    query = "chromosome location gene responsible Carpenter syndrome MEGF8, RAB23"
-    cache_file = r"data\cache\hash_id copy.json"
-    cache_index = {}
-    cache_file, cache_index = register_query_cache(query, cache_index)
+    query = "human chromosome location gene PCDH15"
+    # cache_file = r"data\cache\hash_id copy.json"
+    # cache_index = {}
+    # cache_file, cache_index = register_query_cache(query, cache_index)
 
-    print(cache_file)
-    print(cache_index)
+    # print(cache_file)
+    # print(cache_index)
+    print(make_cache_filename(query.lower()))

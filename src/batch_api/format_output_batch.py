@@ -24,13 +24,14 @@ def parse_batch_output(input_jsonl_path, output_json_path):
                     content_data = json.loads(content_str)
                     
                     # Lưu vào dict kết quả với key là custom_id
-                    final_results[custom_id] = {
-                        "QIDX": custom_id,
-                        "short_answer": content_data.get("short_answer", []),
-                        "long_answer": content_data.get("long_answer", []),
-                        # Bạn có thể lưu thêm usage nếu cần quản lý chi phí
-                        "usage": response["body"].get("usage", {})
-                    }
+                    final_results[custom_id] = content_data
+                    # {
+                    #     "QIDX": custom_id,
+                    #     "short_answer": content_data.get("short_answer", []),
+                    #     "long_answer": content_data.get("long_answer", []),
+                    #     # Bạn có thể lưu thêm usage nếu cần quản lý chi phí
+                    #     "usage": response["body"].get("usage", {})
+                    # }
                 except json.JSONDecodeError:
                     print(f"❌ Lỗi parse JSON nội dung tại ID: {custom_id}")
             else:
@@ -46,7 +47,7 @@ def parse_batch_output(input_jsonl_path, output_json_path):
 # Sử dụng
 if __name__ == "__main__":
     # Thay đường dẫn file thực tế của bạn vào đây
-    input_path = r"src\batch_api\output\o3_direct_original_question_9000_DAT.jsonl" 
-    output_path = r"src\batch_api\output\format\o3_direct_original_question_9000_DAT.json"
+    input_path = r"src\batch_api\output\lite\submission_lite_model_10000q_DONE.jsonl" 
+    output_path = r"src\batch_api\output\format\submission_lite_model_llmpost_10000q.json"
     
     parse_batch_output(input_path, output_path)

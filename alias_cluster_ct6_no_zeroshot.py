@@ -248,42 +248,69 @@ def calculate_gini_adjusted_score(individual_ref_counts, W_MASS = 0.7, W_CONC = 
     return (W_MASS * r_sum) + (W_CONC * concentration)
 
 def cluster_and_selected_candidate_YN(cand_list, MIN_SCORE_THRESHOLD=2):
-    """Xử lý cho câu hỏi Yes/No (Correctness)"""
     if not cand_list:
-        return {"selection_status": "not selected", "stats": {"num_clusters": 0, "cluster_sizes": []}}
+        return {"selection_status": "not selected", "stats": {"num_clusters": 0, "cluster_sizes": [], "best_cluster_idx": None}}
 
-    # Group theo text chuẩn hóa
     clusters = defaultdict(list)
     for i, c in enumerate(cand_list):
         label = c["text"].strip().lower()
         clusters[label].append(i)
 
-    # Thống kê quy mô cluster
-    cluster_sizes = [len(idx_list) for idx_list in clusters.values()]
-    stats_info = {"num_clusters": len(clusters), "cluster_sizes": cluster_sizes}
-
+    cluster_labels = list(clusters.keys())
+    cluster_sizes = [len(clusters[lbl]) for lbl in cluster_labels]
+    
     raw_clusters = []
-    for label, indices in clusters.items():
-        individual_ref_counts = [len(cand_list[i]["sources"]) for i in indices]
+    for i, label in enumerate(cluster_labels):
+        indices = clusters[label]
+        individual_ref_counts = [len(cand_list[idx].get("sources", [])) for idx in indices]
         c_score = calculate_gini_adjusted_score(individual_ref_counts)
         raw_clusters.append({
-            "label": label, "indices": indices, "cluster_score": c_score
+            "label": label, 
+            "indices": indices, 
+            "cluster_score": c_score,
+            "internal_idx": i
         })
 
-    # Chọn cluster tốt nhất
     best_cluster_info = None
+    best_cluster_idx = None
     if raw_clusters:
         candidate_best = max(raw_clusters, key=lambda x: x["cluster_score"])
         if candidate_best["cluster_score"] >= MIN_SCORE_THRESHOLD:
             best_cluster_info = candidate_best
+            best_cluster_idx = candidate_best["internal_idx"]
+
+    stats_info = {
+        "num_clusters": len(clusters), 
+        "cluster_sizes": cluster_sizes,
+        "best_cluster_idx": best_cluster_idx
+    }
 
     if best_cluster_info is None:
         return {"selection_status": "not selected", "stats": stats_info}
 
+    # Merge logic tương tự WH
     chosen_indices = best_cluster_info["indices"]
-    best_idx = max(chosen_indices, key=lambda idx: len(cand_list[idx]["sources"]))
+    merged_in_cluster = {}
+    for idx in chosen_indices:
+        cand = cand_list[idx]
+        norm_text = cand["text"]
+        if norm_text not in merged_in_cluster:
+            merged_in_cluster[norm_text] = {
+                "text": cand["text"], 
+                "sources": set(cand.get("sources", [])),
+                "context": cand.get("context", ""), 
+                "long_answer": cand.get('long_answer', "")
+            }
+        else:
+            merged_in_cluster[norm_text]["sources"].update(cand.get("sources", []))
+            merged_in_cluster[norm_text]["long_answer"] += f" {cand.get('long_answer', '')}"
+
+    # Thống kê số lượng unique sau khi merge
+    stats_info["num_unique_in_best_cluster"] = len(merged_in_cluster)
     
-    result = cand_list[best_idx].copy()
+    # Chọn ứng viên có nhiều nguồn nhất trong cụm thắng cuộc
+    result = max(merged_in_cluster.values(), key=lambda x: len(x["sources"]))
+    result["sources"] = list(result["sources"])
     result.update({
         "short_answer": best_cluster_info["label"],
         "selection_status": "selected",
@@ -292,51 +319,53 @@ def cluster_and_selected_candidate_YN(cand_list, MIN_SCORE_THRESHOLD=2):
     })
     return result
 
-
 def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, DISTANCE_THRESHOLD=0.12, global_cache={}):
-    """Xử lý cho câu hỏi Open-domain (WH)"""
     if not cand_list:
-        return {"selection_status": "not selected", "stats": {"num_clusters": 0, "cluster_sizes": []}}
+        return {"selection_status": "not selected", "stats": {"num_clusters": 0, "cluster_sizes": [], "best_cluster_idx": None}}
 
+    # ... (giữ nguyên phần encode embedding) ...
     texts = [c["text"] for c in cand_list]
     unique_texts = list(set(texts))
     missing_texts = [t for t in unique_texts if t not in global_cache]
-    
     if missing_texts:
         new_embeddings = model.encode(missing_texts)
         global_cache.update(dict(zip(missing_texts, new_embeddings)))
-        
     embeddings = np.array([global_cache[t] for t in texts])
     
     cluster_sizes = []
     raw_clusters = []
 
-    # Thuật toán Clustering
     if len(cand_list) >= 2:
         labels = AgglomerativeClustering(
             n_clusters=None, distance_threshold=DISTANCE_THRESHOLD,
             metric="cosine", linkage="average"
         ).fit(embeddings).labels_
 
-        for lbl in set(labels):
-            indices = [i for i, l in enumerate(labels) if l == lbl]
+        unique_labels = sorted(list(set(labels)))
+        for i, lbl in enumerate(unique_labels):
+            indices = [idx for idx, l in enumerate(labels) if l == lbl]
             cluster_sizes.append(len(indices))
             
-            individual_ref_counts = [len(cand_list[i]["sources"]) for i in indices]
+            individual_ref_counts = [len(cand_list[idx]["sources"]) for idx in indices]
             c_score = calculate_gini_adjusted_score(individual_ref_counts)
-            raw_clusters.append({"indices": indices, "cluster_score": c_score})
+            raw_clusters.append({"indices": indices, "cluster_score": c_score, "internal_idx": i})
     else:
         cluster_sizes = [1]
-        raw_clusters.append({"indices": [0], "cluster_score": calculate_gini_adjusted_score([len(cand_list[0]["sources"])])})
+        raw_clusters.append({"indices": [0], "cluster_score": calculate_gini_adjusted_score([len(cand_list[0].get("sources", []))]), "internal_idx": 0})
 
-    stats_info = {"num_clusters": len(cluster_sizes), "cluster_sizes": cluster_sizes}
-
-    # Tìm cluster thắng cuộc
     best_cluster_info = None
+    best_cluster_idx = None
     if raw_clusters:
         candidate_best = max(raw_clusters, key=lambda x: x["cluster_score"])
         if candidate_best["cluster_score"] >= MIN_SCORE_THRESHOLD:
             best_cluster_info = candidate_best
+            best_cluster_idx = candidate_best["internal_idx"]
+
+    stats_info = {
+        "num_clusters": len(cluster_sizes), 
+        "cluster_sizes": cluster_sizes,
+        "best_cluster_idx": best_cluster_idx
+    }
 
     if best_cluster_info is None:
         return {"selection_status": "not selected", "stats": stats_info}
@@ -356,6 +385,11 @@ def cluster_and_selected_candidate_WH(cand_list, model, MIN_SCORE_THRESHOLD=2, D
             merged_in_cluster[norm_text]["sources"].update(cand.get("sources", []))
             merged_in_cluster[norm_text]["long_answer"] += f" {cand['long_answer']}"
 
+    # --- PHẦN CHỈNH SỬA: Thống kê số lượng sau khi merge ---
+    num_unique_candidates_in_best_cluster = len(merged_in_cluster)
+    stats_info["num_unique_in_best_cluster"] = num_unique_candidates_in_best_cluster
+    # ------------------------------------------------------
+    
     result = max(merged_in_cluster.values(), key=lambda x: len(x["sources"]))
     result["sources"] = list(result["sources"])
     result.update({

@@ -2644,7 +2644,8 @@
             "yes",
             "apocrine sweat gland ducts",
             "",
-            "apocrine sweat gland"
+            "apocrine sweat gland",
+            "chronic blockage of apocrine sweat gland ducts"
         ]
     },
     "988122": {
@@ -3640,7 +3641,8 @@
             "diastematomyelia and edwards syndrome",
             "",
             "kidney disease",
-            "renal diseases"
+            "renal diseases",
+            "hearing loss, congenital heart defect"
         ]
     },
     "857333": {
@@ -4430,7 +4432,9 @@
         ]
     },
     "766959": {
-        "True": [],
+        "True": [
+            "open"
+        ],
         "False": [
             "no",
             "neural tube defect",
@@ -5991,7 +5995,8 @@
             "yes"
         ],
         "False": [
-            ""
+            "",
+            "no"
         ]
     },
     "941574": {
@@ -6008,7 +6013,8 @@
             "no"
         ],
         "False": [
-            ""
+            "",
+            "yes"
         ]
     },
     "763753": {
@@ -6342,7 +6348,8 @@
             "no"
         ],
         "False": [
-            ""
+            "",
+            "yes"
         ]
     },
     "151226": {
