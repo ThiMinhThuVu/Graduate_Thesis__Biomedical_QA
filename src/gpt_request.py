@@ -162,7 +162,8 @@ API_search_scraperapi = '7b29596f5d6ce1f7c5b5aeeb96f60e72' #'fa1e1e5253fadc4cdae
     
 if __name__ == "__main__":    
     # Ví dụ hỏi thủ đô của Pháp bằng model o3
-    messages = [
-        {"role": "user", "content": "Thủ đô của Pháp là gì?"}
-    ]
-    print(request_api(messages, model="o3-mini"))
+    # messages = [
+    #     {"role": "user", "content": "Thủ đô của Pháp là gì?"}
+    # ]
+    # print(request_api(messages, model="o3-mini"))
+    print(search_google('Thủ đô của Việt Nam là gì?'))
