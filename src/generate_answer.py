@@ -43,10 +43,10 @@ def _generate_answer(question, search_kw, key_entities, relevant_info, dataset=N
             {"role": "user", "content": prompt}
         ]
     
-    # result_json = request_api(messages, model)
+    result_json = request_api(messages, model)
     
     #call openai
-    result_json = request_api_o3_mini(messages)
+    # result_json = request_api_o3_mini(messages)
     
     # try:
     #     result_dict = json.loads(result_json)

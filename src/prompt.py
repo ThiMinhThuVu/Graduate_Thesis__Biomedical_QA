@@ -1618,63 +1618,6 @@ Output: ["father", "father"]
 
     return messages
 
-# def prompt_split_parallel_question_medhop(question):
-#     system_prompt = """## Role
-# You are an expert in biomedical question decomposition
-
-# ## Task
-# Split a complex comparative question into independent subquestions based on the entities being compared
-
-# ## Constraints
-# - MUST: Output ONLY a valid array of strings in JSON format
-# - MUST NOT: Include any explanation, introductory text, or markdown formatting
-# - MUST NOT: Change the core entities or the relation being compared
-# - MUST: Ensure subquestions are complete and context-rich enough to be answered independently"""
-
-#     user_prompt = f"""## Task
-# Decompose the provided complex comparative question into retrieval-focused subquestions
-
-# ## Instructions
-# 1. Identify all primary entities being compared in the question
-# 2. Identify the specific attribute or property being compared
-# 3. Create independent questions that each ask for that attribute for each entity identified
-# 4. Format the final result as a simple array of strings
-
-# ## Information
-# Question: "{question}"
-
-# ## Examples
-# ---
-# **Example 1:**
-# Input: "Can patients exhibiting symptoms of either aniridia, genitourinary anomalies, or intellectual disability also be at an increased risk for developing nephroblastoma?"
-# Output:
-# [
-#     "Are patients with aniridia at an increased risk for developing nephroblastoma?",
-#     "Are patients with genitourinary anomalies at an increased risk for developing nephroblastoma?",
-#     "Are patients with intellectual disability at an increased risk for developing nephroblastoma?"
-# ]
-# ---
-# **Example 2:**
-# Input: "What genetic variations are linked to cardiovascular abnormalities, specifically are they found in MYH7 or TTN?"
-# Output:
-# [
-#     "Which genetic variations in MYH7 are linked to cardiovascular abnormalities?",
-#     "Which genetic variations in TTN are linked to cardiovascular abnormalities?"
-# ]
-# ---
-
-# ## Output Format (JSON)
-# ["sub_question_1", "sub_question_2", "..."]
-# """
-        
-#     messages = [
-#         {"role": "system", "content": system_prompt.strip()},
-#         {"role": "user", "content": user_prompt.strip()}
-#     ]
-         
-#     return messages
-
-
 def prompt_split_parallel_question_medhop(question):
     system_prompt = """## Role
 You are an expert in biomedical question decomposition
@@ -2801,57 +2744,6 @@ Generate a BETTER decomposition plan that ends with finding a "{target_answer_ty
         return messages
     else:
         return None
-
-# def load_entity_extraction_prompt(question):
-#    messages = [
-#        {
-#            "role": "system",
-#            "content": """## Role
-# You are an expert in biomedical entity extraction.
-
-# ## Task
-# Extract all specific biomedical-related entities (including persons, organizations, chemicals, diseases, genes, proteins, etc.) from the user's question.
-
-# ## Instructions
-# 1. **Identify Entities**: Locate distinct, specific biomedical entities.
-# 2. **Extract Exact Phrase**: Use the exact text segment *verbatim* from the 'Question'.
-# 3. **Negative Constraints (Do NOT Extract)**:
-#    - **Unknown/Vague Entities**: Do not extract pronouns or vague references (e.g., "those genes", "the patient", "this protein", "it").
-#    - **Counts & Quantities**: Do not extract numerical counts or measurements (e.g., "5 exons", "20mg", "three cases").
-#    - **General Verbs/Adjectives**: Avoid non-entity descriptive words unless they are part of a formal named entity.
-# 4. **Output Format**: Return a JSON list of strings.
-
-# ## Output Format (JSON)
-# ["Entity 1", "Entity 2", ...]
-# """
-#        },
-#        {
-#            "role": "user",
-#            "content": f"""## Examples
-
-# **Example 1**
-# Question: "How many of those genes contain 5 exons in the BRCA1 region?"
-# Output: ["BRCA1"]
-
-# **Example 2**
-# Question: "Which clotting factor deficiency causes hemophilia A?"
-# Output: ["clotting factor deficiency", "hemophilia A"]
-
-# **Example 3**
-# Question: "Did the World Health Organization (WHO) report on the SARS-CoV-2 mutation?"
-# Output: ["World Health Organization", "WHO", "SARS-CoV-2"]
-
-# ---
-
-# ## Input
-# Question: "{question}"
-
-# ## Task
-# Extract only specific, verbatim biomedical entity phrases. Exclude vague references and counts. Return as a JSON list of strings.
-# """
-#        }
-#    ]
-#    return messages
 
 def load_entity_extraction_prompt(question):
     messages = [

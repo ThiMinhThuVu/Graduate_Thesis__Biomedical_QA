@@ -161,4 +161,3 @@ if __name__ == "__main__":
         
         save_json(dict_results,output_file)
         
-save_json(dict_results,output_file)

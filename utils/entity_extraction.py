@@ -163,12 +163,6 @@ for i, qidx in enumerate(list(data1.keys())):
         if entity_in_entity:
             continue
 
-        # if (
-        #     entity.lower() == data1[qidx]["target_answer_type"].lower()
-        #     and len(entity.split(' ')) <= 1
-        # ):
-        #     continue
-
         choice = False
 
         if info['label'] == 'gpt' and cnt_gpt < 5:
@@ -180,9 +174,6 @@ for i, qidx in enumerate(list(data1.keys())):
             cnt += 1
             
         if choice:
-            # if len(get_longest_capitalized_substrings(question)) > 0:
-            #     print(f"{entity} --- {info['label']} {info['bio_type']} {info['source'][0]}\n")
-
             printed_array.append(entity)
             if entity.lower() not in data_search_lower:
                 data_search.append(entity)

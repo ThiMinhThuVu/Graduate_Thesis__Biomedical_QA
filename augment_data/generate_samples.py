@@ -22,13 +22,7 @@ from augment_data.synthetic_data_generator import (
 )
 from augment_data import mesh_entity_extractor as mesh
 
-# Direct API call - bypasses serpapi import issue
-try:
-    from src.api_key import API_LIST_4O, API_LIST_O3
-    HAS_API = True
-except ImportError as e:
-    print(f"Warning: No API keys - {e}")
-    HAS_API = False
+from src.api_key import API_LIST_4O, API_LIST_O3
 
 API_URL = "https://cf.mnapi.com/v1/chat/completions"
 _api_idx = 0
@@ -37,9 +31,6 @@ _api_idx = 0
 def call_llm(messages, model="gpt-4o-mini"):
     """Direct LLM API call - bypasses gpt_request.py serpapi issue."""
     global _api_idx
-    
-    if not HAS_API:
-        return None
     
     API_LIST = API_LIST_4O if "4o-mini" in model else API_LIST_O3
     

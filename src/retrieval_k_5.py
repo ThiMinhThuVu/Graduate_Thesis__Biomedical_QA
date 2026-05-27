@@ -143,7 +143,6 @@ def get_paragraphs_wiki_result(link, sample, subquestion, target_answer_type=Non
     else:
         similarity = find_most_relevant_doc(subquestion, list_para_text)
     
-    #THUVTM
     # Tính tổng số token của toàn bộ doc
     if percentage:
         total_tokens = sum(len(p.split()) for p in list_para_text)
@@ -239,7 +238,7 @@ def get_paragraphs_wiki_result(link, sample, subquestion, target_answer_type=Non
         if text_sec != "":
             res_output[head] = text_sec  
 
-    # THUVTM: DEFAULT: NẾU target_answer_type thì section thuộc wanted_sections sẽ luôn được thay thế bằng content gốc
+    # DEFAULT: NẾU target_answer_type thì section thuộc wanted_sections sẽ luôn được thay thế bằng content gốc
     if target_answer_type:        
         wanted_sections = get_sections_for_target_type(target_answer_type)
         if 'introduction' not in wanted_sections:
@@ -493,7 +492,6 @@ def crawl_wiki_page_general(
     list_doc_embed = []
 
     for article in article_iterable:
-
         hash_id = get_hash_id_func(article)
         link = get_link_func(article).lower()
         title = get_title_func(article)
@@ -510,7 +508,7 @@ def crawl_wiki_page_general(
         crawled_data = None
         raw_context = None
         filter_context = None
-        # print(file_crawl)
+
         if os.path.exists(file_crawl):
             crawl_wiki = load_json(file_crawl)
             crawled_data = crawl_wiki.get(
@@ -904,7 +902,6 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
     list_article_search = []
     
     if settings['get_context_2wiki']: #Only 2wiki dataset
-        # list_article_2wiki = retrieval_context_2wiki(search_kw_subq, sample, embedding_model)
         cluster_kmean_ctx_2wiki = kmean_context_2wiki(sample['context'], cache_ctx_2wiki_embed_doc, embeding_model_cluster, n_cluster=3)
         return cluster_kmean_ctx_2wiki
     
@@ -980,27 +977,9 @@ def retrieve_evidence(list_ner_q, sample, search_kw_subq, settings,target_answer
 
         return ctx_doc_search_fond_nbh
     
-    if settings["get_sparql_context"]: 
-        file_cache_hash_id_sparql = settings['cache']['hash_id']['crawl_wikidata']
-        # Load hoặc khởi tạo cache mapping cho SPARQL
-        if os.path.exists(file_cache_hash_id_sparql):
-            cache_hashid_sparql = load_json(file_cache_hash_id_sparql)
-        else:
-            cache_hashid_sparql = {}
+    
+    return ctx_doc_search_fond_nbh
 
-        # Gọi hàm tách riêng
-        sparql_info = get_sparql_retrieval_context(
-            list_ner_q=list_ner_q,
-            search_kw_subq=search_kw_subq,
-            settings=settings,
-            embedding_model=embedding_model,
-            retrieval_topk=retrieval_topk,
-            cache_hashid_sparql=cache_hashid_sparql,
-            file_cache_hash_id_sparql=file_cache_hash_id_sparql
-        )
-        
-    # return ctx_doc_search_fond_nbh
-    return cluster_kmean_ctx_2wiki
 
 def remove_retrieve_evidence(current_retrieval: str, current_short: str):
     if not isinstance(current_retrieval, str) or not isinstance(current_short, str):

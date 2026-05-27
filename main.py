@@ -11,6 +11,15 @@ from sentence_transformers import SentenceTransformer
 from sentence_transformers.models import StaticEmbedding
 from transformers import AutoModel
 import shutil
+from classification.classification_run import load_model_classification, classify_question
+
+
+from src.seq_combine import *
+from normalization import *
+import time
+
+import wikipedia
+import traceback
 
 global hash_id_cache
 global hash_id_crawl_wiki_cache
@@ -52,9 +61,9 @@ def load_model(dataset, configs, using_embedding_model=False):
     if dataset == "medhop":
         # Biomedical NER
         extractor_model = spacy.load("en_ner_bc5cdr_md")
-        extractor_model_2 = spacy.load("en_ner_jnlpba_md")
-        extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
-        # extractor_model_2 = extractor_model_3 = None
+        # extractor_model_2 = spacy.load("en_ner_jnlpba_md")
+        # extractor_model_3 = spacy.load("en_ner_bionlp13cg_md")
+        extractor_model_2 = extractor_model_3 = None
         
         # Biomedical embedding
         # embedding_model = AutoModel.from_pretrained("dmis-lab/biobert-base-cased-v1.1")
@@ -115,8 +124,6 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
             "QIDX": sample_id,
             "original_question": original_question,
             "type_q": sample['type_q'],
-            # "focus_spacy_based_entity_label": focus_spacy_based_entity_label,
-            # "target_answer_type": target_ans_type,
             "key_entities": list_ner_q
         }
 
@@ -226,24 +233,75 @@ def preprocess_sample(list_ner_q, sample, settings, is_seq=False, dataset=None, 
         save_json(dict_ans, file_all_ans)
         print(f"Final answer: {combine_parallel_ans['short_answer']}")
         print(f"\nSaved to {file_all_ans}")
-    else:
-        dict_ans['final_answer'] = {
-            'long_answer': dict_ans["1"]['final_qi']['long_answer'],
-            'short_answer': dict_ans["1"]['final_qi']['short_answer'],
-        }
-       
+    else:       
+        # combine sequence
+        if type_q == 'sequence':
+            dict_ans['no_combine_final_answer'] = {
+                'long_answer': dict_ans["1"]['final_qi']['long_answer'],
+                'short_answer': dict_ans["1"]['final_qi']['short_answer'],
+            }
+            
+            original_ans_type = sample['target_answer_type']
+            context = collect_context(dict_ans)
+            combine_final_answer = gen_combine_seq_answer(original_ans_type, original_question, context)
+            dict_ans['final_answer'] = combine_final_answer        
+        else:
+            dict_ans['final_answer'] = {
+                'long_answer': dict_ans["1"]['final_qi']['long_answer'],
+                'short_answer': dict_ans["1"]['final_qi']['short_answer'],
+            }
+                        
         save_json(dict_ans, file_all_ans)
         print(f"Final answer: {dict_ans['final_answer']['short_answer']}")
-        print(f"\nSaved to {file_all_ans}")    
+       
+    raw_final_short_ans = dict_ans['final_answer']['short_answer']
+    raw_final_long_ans = dict_ans['final_answer']['long_answer']
+                 
+    # Normalization with post
+    if raw_final_short_ans.lower() in ['yes', 'no', 'insufficient information']:
+        dict_ans['final_answer']['normalized_short_answer'] = raw_final_short_ans
+        dict_ans['final_answer']['wiki_titles'] = 'Not normalization'
+    else:
+        for attempt in range(50):
+            try:
+                query = str(raw_final_short_ans).strip()
+
+                wiki_titles = wikipedia.search(query)
+                wiki_titles = [wiki_title.lower() for wiki_title in wiki_titles]
+
+                # success -> thoát loop
+                break
+
+            except Exception as e:
+
+                print(f"[WARN] wikipedia.search failed (attempt {attempt + 1}/50): {raw_final_short_ans}")
+                print(f"[WARN] Error: {type(e).__name__}: {e}")
+
+                # chỉ sleep nếu chưa phải lần cuối
+                if attempt < 49:
+                    time.sleep(10)
+
+                wiki_titles = []
+
+        final_ans_norm = normalize_short_answer(question=original_question,
+                                                short_answer=raw_final_short_ans, 
+                                                context=raw_final_long_ans,
+                                                wiki_titles=wiki_titles)
+        
+        dict_ans['final_answer']['normalized_short_answer'] = final_ans_norm
+        dict_ans['final_answer']['wiki_titles'] = wiki_titles
+    
+    print(f"Norm final answer: {dict_ans['final_answer']['normalized_short_answer']}")
+    save_json(dict_ans, file_all_ans)
+    print(f"\nSaved to {file_all_ans}")  
 
 if __name__ == "__main__":
     config_path = "config/config.yaml"
     configs = load_yaml(config_path)
     
     #edit config
-    KB="DIRECT_500_COST" # Answer2, ...
-    threads = [0, 400] 
-    # configs['run']['threads'] 
+    KB="DEMO_CODE" # Answer2, ...
+    threads = configs['run']['threads'] 
     dataset = configs['run']['dataset']
     data_type = configs['run']['data_split']  
     
@@ -259,32 +317,28 @@ if __name__ == "__main__":
         settings['chrunk_mapping'] = load_json(configs['dataset'][dataset]['chrunk_mapping'])
         settings['normalize'] = True
         
-    #EDIT CONFIG VERSION NER
-    # reset_directory(r"data/cache/filter_ner_wikipedia")
-    # reset_directory(r"data/cache/filter_wikipedia")
+
+    model, tokenizer, device = load_model_classification(dataset, model_path, tokenizer_dir)      
     load_model(dataset, configs, using_embedding_model=False) #False = tfidf, true = embedding_model
-    # ner_version = 4
+
     ner_version = "#3"
     metadata = load_json('data/metadata_medhop.json')
     meta_ner = load_json(r'data/metadata_entity.json') 
     cnt = 0
     
-    final_list_500 = load_json(r'data/500q_compute_cost.json')
     for idx, (ID, sample) in enumerate(tqdm(raw_data.items(), desc="Processing")):
         if not (threads[0] <= idx < threads[1]):
             continue 
         
         qidx = sample['QIDX']
         question = sample['Question']
-        if qidx not in final_list_500:
-            continue
-     
+      
         target_ans_type = metadata[qidx]['target_answer_type']
-        
-        type_q = metadata[qidx]['type_q']    
-        
+                
+        type_q, probabilities = classify_question(dataset, model, tokenizer, device, question)
+
         #CONFIG    
-        if type_q != "direct":# "sequence": # "parallel":
+        if type_q != "sequence": # "direct", "sequence", "parallel"
             continue
         else:
             cnt += 1

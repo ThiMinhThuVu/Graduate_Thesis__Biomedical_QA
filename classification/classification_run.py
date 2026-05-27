@@ -67,7 +67,6 @@ def classify_question(model_type, model, tokenizer, device, question, max_length
     return label_map.get(pred_label, 'unknown'), probs_out
 
 if __name__ == "__main__":
-    # Đường dẫn tới file config.yaml
     config_path = os.path.join(os.path.dirname(__file__), '..', 'config', 'config.yaml')
     config = load_config(config_path)
 
@@ -79,7 +78,6 @@ if __name__ == "__main__":
 
     model, tokenizer, device = load_model_classification(model_type, model_path, tokenizer_dir)
 
-    # Ví dụ câu hỏi
     question = "What is a common risk factor for both ectopic pregnancy and endometriosis?"
     # question = "The disease that Pseudo-Hurler polydystrophy resembles is classified as a member of a class of diseases related to a type of polysaccharides. This group of polysaccharides is classified into how many types, based on their core disaccharide structures?"
 

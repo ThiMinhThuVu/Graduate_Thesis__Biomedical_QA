@@ -165,9 +165,9 @@ def decompose_question_sequential(question, sample_id, filepath, is_seq=True, da
         return output, n_path
     
     messages = load_prompt_gen_sub(question, is_seq=is_seq, dataset=dataset, type_q=type_q, using_decomp_new=using_decomp_new)
-    # result_json = request_api(messages, model)
+    result_json = request_api(messages, model)
     # call opeani
-    result_json = request_api_4o_mini(messages)
+    # result_json = request_api_4o_mini(messages)
     
     if not result_json or result_json.strip() == "":
         raise ValueError("Empty response from API")

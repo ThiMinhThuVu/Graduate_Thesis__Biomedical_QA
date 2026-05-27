@@ -7,12 +7,6 @@ from utils.util import load_json, save_json
 from src.prompt import load_entity_extraction_prompt
 from src.gpt_request import request_api
 
-WIKI_LABELS_LIST = ["PERSON", "WORK_OF_ART", "GPE", "ORG", "LOC", "EVENT", "CARDINAL", "NORP", "LANGUAGE"]
-# BIO_LABLES_1 = ["DISEASE", "CHEMICAL"]
-# BIO_LABLES_2 = ["DNA", "CELL_TYPE", "CELL_LINE", "RNA", "PROTEIN"]
-# BIO_LABLES_3 = ["AMINO_ACID", "ANATOMICAL_SYSTEM", "CANCER", "CELL", "CELLULAR_COMPONENT", "DEVELOPING_ANATOMICAL_STRUCTURE", "GENE_OR_GENE_PRODUCT", "IMMATERIAL_ANATOMICAL_ENTITY", "MULTI-TISSUE_STRUCTURE", "ORGAN", "ORGANISM", "ORGANISM_SUBDIVISION", "ORGANISM_SUBSTANCE", "PATHOLOGICAL_FORMATION", "SIMPLE_CHEMICAL", "TISSUE"]
-
-#NER #1
 BIO_LABLES_1 = ["DISEASE", "CHEMICAL"]
 BIO_LABLES_2 = ["DNA", "CELL_TYPE", "CELL_LINE", "RNA", "PROTEIN"]
 BIO_LABLES_3 = ["AMINO_ACID", "ANATOMICAL_SYSTEM", "CANCER", "CELL", "CELLULAR_COMPONENT", "GENE_OR_GENE_PRODUCT", "ORGAN", "ORGANISM", "SIMPLE_CHEMICAL", "TISSUE"]
@@ -20,8 +14,6 @@ BIO_LABLES_3 = ["AMINO_ACID", "ANATOMICAL_SYSTEM", "CANCER", "CELL", "CELLULAR_C
 def extract_with_models(query, target_labels, extractor_model, extractor_model_2, extractor_model_3):
     entities_set = set()
     lower_entites = set()
-
-    # labels_wiki = [label for label in target_labels if label in WIKI_LABELS_LIST]
                     
     labels_1 = [label for label in target_labels if label in BIO_LABLES_1]
     labels_2 = [label for label in target_labels if label in BIO_LABLES_2]

@@ -1,6 +1,6 @@
 run: #NHỚ SỬA LẠI MAX_CANDIDATES CHO cái multiplechoice
   dataset: "medhop" #"medhop" #"wiki"
-  threads: [0, 1000]
+  threads: [1, 2]
   data_split: "test"
 
 type_run: {
@@ -18,7 +18,7 @@ type_run: {
       "retrieval_topk": {
           "max_results_search_api_gg": 20, 
           "max_results_search_api_wiki": 10, 
-          "google":  10,
+          "google":  20,
           "wiki": 10,
           "wiki_crawl": 3,
           'ner_topk_article': 3,

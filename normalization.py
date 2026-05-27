@@ -4,7 +4,7 @@ import pandas as pd
 import wikipedia 
 import sys
 from tqdm import tqdm
-from src.gpt_request import request_api_o3_mini
+from src.gpt_request import request_api
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 def load_normalization_prompt(question, short_answer, context, wiki_titles):
@@ -79,7 +79,7 @@ def load_normalization_prompt(question, short_answer, context, wiki_titles):
 
 def normalize_short_answer(question, short_answer, context, wiki_titles):
     messages = load_normalization_prompt(question, short_answer, context, wiki_titles)
-    response = request_api_o3_mini(messages)
+    response = request_api(messages, model='o3-mini')
     # print("Raw GPT response:")
     # print(response)  # <--- in ra đây để xem GPT trả về gì
     # print("-" * 80)
@@ -101,76 +101,6 @@ def save_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
-# if __name__ == "__main__":
-#     ver = "_normalization"
-#     output_file = f"analysis/26-2/seq_combine{ver}.json"
-#     data = load_json("analysis/26-2/seq_combine.json")
-#     metadata = load_json("data/metadata_medhop.json")
-
-#     if os.path.exists(output_file):
-#         print("Loading existing result_dict.json...")
-#         result_dict = load_json(output_file)
-#     else:
-#         result_dict = {}
-
-#     total = 0
-#     # acc = 0
-
-#     for qidx in tqdm(data): 
-#         if qidx in result_dict:
-#             print(f"Skipping already processed QIDX: {qidx}")
-#             continue
-        
-#         # if qidx not in ["180573", "666699", "804444", "991013", "576547", "734312", "991013", "782966", "304370"]:
-#         #     continue
-
-#         # abstain = data[qidx]["abstain"]
-
-#         # if abstain:
-#         #     print("Skipping abstained QIDX:", qidx)
-#         #     continue
-
-#         target_ans_type = metadata[qidx]["target_answer_type"]
-#         type_q = metadata[qidx]["type_q"]
-
-#         if target_ans_type == "correctness":
-#             continue
-
-#         golden = golden_data[qidx]["True"]
-#         if len(golden) == 0:
-#             print("Skipping QIDX with empty golden true answers:", qidx)
-#             continue
-
-#         question = metadata[qidx]["original question"]
-#         ans = postprocessing(data[qidx]["short_answer"].lower())
-#         context = data[qidx]["long_answer"]
-
-#         # if ans in golden: 
-#         #     acc += 1
-
-#         wiki_titles = wikipedia.search(ans)
-#         wiki_titles = [wiki_title.lower() for wiki_title in wiki_titles]
-
-#         final_ans = normalize_short_answer(question=question, short_answer=ans, context=context, wiki_titles=wiki_titles)
-
-#         result_dict[qidx] = {
-#             "question": question,
-#             "original_short_answer": ans,
-#             "normalized_short_answer": final_ans,
-#             "golden_true": golden_data[qidx]["True"],
-#             "golden_false": golden_data[qidx]["False"],
-#             "wiki_titles": wiki_titles,
-#             "context": context
-#         }
-#         save_json(result_dict, output_file)
-#         continue
-        
-        # if total == 1:
-        #     break
-    
-    # save_json(result_dict, output_file)
-
-    # print(f"Total: {total}, Acc: {acc}")
     
 if __name__ == "__main__":
     threads = [1015, 1500]

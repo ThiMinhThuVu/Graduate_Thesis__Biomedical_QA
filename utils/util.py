@@ -392,28 +392,7 @@ def wiki_pre_processing(content):
             new_content['sections'][section] = content["sections"][section]
     else:
         new_content['sections'] = content["sections"]
-        
-    #BỎ
-    # for section in list(content["sections"].keys())[-2:]:
-    #     result = []
-    #     section_content = content["sections"][section]["content"]
-
-    #     infor_idxs = []
-    #     for idx, tmp in enumerate(section_content):
-    #         if "<info>" in tmp:
-    #             infor_idxs.append(idx)
-
-    #     for idx, tmp in enumerate(section_content):
-    #         if "<info>" not in tmp:
-    #             result.append(tmp)
-    #         else:
-    #             if len(infor_idxs) <= 15:
-    #                 result.append(tmp)
-
-    #     if len(result) > 0:
-    #         new_content['sections'][section] = {
-    #             "content": result
-    #         }
+    
     return new_content
 
 def wiki_pre_processing_tool_2(content):
