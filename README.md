@@ -54,8 +54,8 @@ The script reads the selected dataset and configuration from `config/config.yaml
 
 ## Publications
 
-- [Pub 1] Nguyen, Quoc An, Vu, Thi Minh Thu, Nguyen, Bich Dat, Tran, Dinh Quang Minh, and Le, Hoang Quynh. “UETQuintet at BioCreative IX–MedHopQA: Enhancing Biomedical QA with Selective Multi-hop Reasoning and Contextual Retrieval.” In Proceedings of the BioCreative IX Challenge and Workshop (BC9), International Joint Conference on Artificial Intelligence (IJCAI), 2025.
-- [Pub 2] Nguyen, Quoc An, Vu, Thi Minh Thu, Nguyen, Bich Dat, Tran, Dinh Quang Minh, and Le, Hoang Quynh. “Achieving Reliable Biomedical QA through Selective Multi-hop Reasoning and Contextual Evidence Retrieval.” Under revision at Database, The Journal of Biological Database and Curation, 2026.
+- [Pub 1] Nguyen, Quoc An, Vu, Thi Minh Thu, Nguyen, Bich Dat, Tran, Dinh Quang Minh, and Le, Hoang Quynh. “Achieving Reliable Biomedical QA through Selective Multi-hop Reasoning and Contextual Evidence Retrieval.” Accepted at Database, The Journal of Biological Database and Curation, 2026. Q1, IF: 2.7.
+- [Pub 2] Nguyen, Quoc An, Vu, Thi Minh Thu, Nguyen, Bich Dat, Tran, Dinh Quang Minh, and Le, Hoang Quynh. “UETQuintet at BioCreative IX–MedHopQA: Enhancing Biomedical QA with Selective Multi-hop Reasoning and Contextual Retrieval.” In Proceedings of the BioCreative IX Challenge and Workshop (BC9), International Joint Conference on Artificial Intelligence (IJCAI), 2025.
 - [Pub 3] Vu, Thi Minh Thu, Nguyen, Quoc An, Nguyen, Bich Dat, Tran, Dinh Quang Minh, and Le, Hoang Quynh. “HERF: Hybrid Evidence Retrieval Framework for Entity-Centric Question Answering.” In International Symposium on Information and Communication Technology (SOICT), 2025.
 - [Pub 4] Nguyen, Quoc An, Le, Xuan Hung, Vu, Thi Minh Thu, and Le, Hoang Quynh.
 “Beyond the Scientific Document: A Citation-Aware Multi-Granular Summa
